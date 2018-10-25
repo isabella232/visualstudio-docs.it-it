@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864731"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare classi LINQ to SQL tramite ereditarietà a tabella singola (O/R Designer)
 Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supporta l'ereditarietà a tabella singola come viene in genere implementato nei sistemi relazionali. Questa procedura dettagliata espande i passaggi generici specificati nel [procedura: configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) argomento e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Durante questa procedura dettagliata, si eseguono le attività seguenti:
 
--   Creazione di una tabella di database e aggiunta di dati ad essa.
+- Creazione di una tabella di database e aggiunta di dati ad essa.
 
--   Creazione di un'applicazione Windows Form.
+- Creazione di un'applicazione Windows Form.
 
--   Aggiunta di un file [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] a un progetto.
+- Aggiunta di un file [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] a un progetto.
 
--   Creazione di nuove classi di entità.
+- Creazione di nuove classi di entità.
 
--   Configurazione delle classi di entità per l'uso dell'ereditarietà.
+- Configurazione delle classi di entità per l'uso dell'ereditarietà.
 
--   Esecuzione di una query sulla classe ereditata.
+- Esecuzione di una query sulla classe ereditata.
 
--   Visualizzazione dei dati in un Windows Form.
+- Visualizzazione dei dati in un Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Creare una tabella da cui ereditare
  Per visualizzarne il funzionamento dell'ereditarietà, creare un piccolo `Person` tabelle, usarlo come una classe di base e quindi creare un `Employee` oggetto che eredita da esso.
@@ -55,7 +55,7 @@ Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-too
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
+    |**firstName**|**nvarchar(200)**|**False**|
     |**Cognome**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
 
@@ -74,7 +74,7 @@ Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-too
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**Cognome**|**Manager**|
+    |**ID**|**Type**|**firstName**|**Cognome**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -151,7 +151,7 @@ Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-too
 
 2.  Fare doppio clic sul form per creare un gestore dell'evento `Form1_Load`.
 
-3.  Aggiungere il codice seguente al gestore eventi `Form1_Load`:
+3.  Aggiungere il codice seguente al gestore eventi `Form1_Load` :
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -191,6 +191,6 @@ Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-too
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procedura dettagliata: Creazione di LINQ alle classi di SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Procedura: generare il modello a oggetti in Visual Basic o c#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

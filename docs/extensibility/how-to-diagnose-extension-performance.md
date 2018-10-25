@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934925"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurare l'impatto di estensione in avvio
 
@@ -169,11 +169,11 @@ Per l'esempio precedente alcuni interessano chiamata stack sarà:
 
 1. IO utilizzo `System.IO` classe: inclusivo costo di tali frame potrebbe non essere troppo costoso nella traccia, ma sono una potenziale causa di un problema poiché file velocità dei / o possono variare da computer a computer.
 
-  ![fotogrammi i/o di sistema](media/perfview-system-io-frames.png)
+   ![fotogrammi i/o di sistema](media/perfview-system-io-frames.png)
 
 2. Bloccare le chiamate in attesa di altre operazioni asincrone: In questo caso, al tempo inclusivo rappresenta l'ora in cui il thread principale è bloccato al completamento del lavoro asincrono.
 
-  ![frame di chiamata di blocco](media/perfview-blocking-call-frames.png)
+   ![frame di chiamata di blocco](media/perfview-blocking-call-frames.png)
 
 Una delle altre visualizzazioni nella traccia che si riveleranno utili per determinare l'impatto sarà il **serie di caricamento immagini**. È possibile applicare i medesimi filtri applicati agli **stack in fase di Thread** consente di visualizzare e individuare tutti gli assembly caricati a causa il codice eseguito dal pacchetto caricato automaticamente.
 

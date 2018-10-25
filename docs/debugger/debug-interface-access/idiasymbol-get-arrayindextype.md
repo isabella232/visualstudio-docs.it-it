@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexType | Documenti Microsoft
+title: Get_arrayindextype | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882405"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Recupera l'interfaccia di simbolo del tipo di indice di matrice del simbolo.  
@@ -43,14 +43,14 @@ HRESULT get_arrayIndexType (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Alcuni linguaggi è possono specificare il tipo utilizzato come indice per una matrice. Il simbolo restituito da questo metodo specifica di quel tipo.  
+ Alcuni linguaggi possono specificare il tipo utilizzato come indice per una matrice. Il simbolo restituito da questo metodo specifica tale tipo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

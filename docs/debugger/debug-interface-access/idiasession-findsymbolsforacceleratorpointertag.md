@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Documenti Microsoft
+title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df83017e60a9d3600c7e49bcf888c771a748cee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f53031bd29af50b90f88868a36f340ee460201a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915308"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Restituisce un'enumerazione dei simboli per la variabile che il valore del tag specificato corrisponde alla funzione stub di tasti di scelta rapida del padre.  
+Restituisce un'enumerazione dei simboli per la variabile che il valore di tag specificato corrisponde alla funzione stub tasti di scelta rapida del padre.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,10 +34,10 @@ HRESULT findSymbolsForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Parametri  
  `parent`  
- [in] Un IDiaSymbol che corrisponde alla funzione stub tasti di scelta rapida per eseguire la ricerca.  
+ [in] Un IDiaSymbol che corrisponde alla funzione di stub di tasti di scelta rapida da cercare.  
   
  `tagValue`  
- [in] Il valore del tag puntatore.  
+ [in] Il valore di tag del puntatore.  
   
  `ppResult`  
  [out] Un puntatore a un `IDiaEnumSymbols` puntatore a interfaccia che viene inizializzato con il risultato.  

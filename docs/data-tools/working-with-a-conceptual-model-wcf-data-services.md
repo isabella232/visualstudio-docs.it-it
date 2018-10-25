@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862972"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Usare un modello concettuale (WCF Data Services)
 
@@ -27,10 +27,11 @@ Quando si usa un modello concettuale per descrivere i dati in un database, è po
 
  È possibile utilizzare i modelli concettuali con le applicazioni Data Services WCF. Gli argomenti seguenti illustrano come eseguire query sui dati tramite un modello concettuale.
 
-|Argomento|Descrizione|
-|-----------|-----------------|
-|[Procedura: eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Viene illustrato come eseguire query su un servizio dati da un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dell'applicazione.|
-|[Procedura: proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati.|
+
+| Argomento | Descrizione |
+| - | - |
+| [Procedura: eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Viene illustrato come eseguire query su un servizio dati da un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dell'applicazione. |
+| [Procedura: proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
 
  Quando si usa un modello concettuale, è possibile definire il tipo di dati è valido nella lingua corrispondente al dominio. È possibile definire dati validi nel modello oppure è possibile aggiungere la convalida per le operazioni eseguite su un'entità o un servizio dati.
 

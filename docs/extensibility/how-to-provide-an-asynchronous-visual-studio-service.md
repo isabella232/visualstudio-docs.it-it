@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6139187ec619ac1825cc56f801035bc4f719854b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915672"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procedura: fornire un servizio asincrono di Visual Studio
 Se si vuole ottenere un servizio senza bloccare il thread dell'interfaccia utente, è necessario creare un servizio asincrono e caricare il pacchetto in un thread in background. A tale scopo è possibile usare un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anziché un <xref:Microsoft.VisualStudio.Shell.Package>, aggiungere il servizio con metodi asincroni speciale del pacchetto asincrona.
@@ -104,11 +104,11 @@ Se si vuole ottenere un servizio senza bloccare il thread dell'interfaccia utent
 ## <a name="register-a-service"></a>Registrare un servizio  
  Per registrare un servizio, aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al pacchetto che fornisce il servizio. Diversi per la registrazione di un servizio sincrone, è necessario assicurarsi che sia il pacchetto di servizio supporta il caricamento asincrono:
   
--   È necessario aggiungere il **AllowsBackgroundLoading = true** campo le <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> per garantire pacchetto può essere inizializzato in modo asincrono per ulteriori informazioni sul PackageRegistrationAttribute, vedere [registrare e annullare la registrazione di pacchetti VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+- È necessario aggiungere il **AllowsBackgroundLoading = true** campo le <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> per garantire pacchetto può essere inizializzato in modo asincrono per ulteriori informazioni sul PackageRegistrationAttribute, vedere [registrare e annullare la registrazione di pacchetti VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
--   È necessario aggiungere il **IsAsyncQueryable = true** campo il <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> per assicurarsi che l'istanza del servizio può essere inizializzato in modo asincrono.
+- È necessario aggiungere il **IsAsyncQueryable = true** campo il <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> per assicurarsi che l'istanza del servizio può essere inizializzato in modo asincrono.
 
- Di seguito è riportato un esempio di un `AsyncPackage` con una registrazione servizio asincrone:
+  Di seguito è riportato un esempio di un `AsyncPackage` con una registrazione servizio asincrone:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

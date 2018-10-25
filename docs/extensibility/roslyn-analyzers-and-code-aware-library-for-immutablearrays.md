@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907482"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Gli analizzatori di Roslyn e libreria con riconoscimento del codice per ImmutableArrays
 
@@ -82,7 +82,6 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Aprire una nuova riga in questo metodo e il tipo "contesto". Per visualizzare un elenco di completamento IntelliSense.  È possibile vedere nell'elenco di completamento sono disponibili molti `Register...` metodi per gestire vari tipi di eventi.  Ad esempio, il primo webhook `RegisterCodeBlockAction`, le chiamate al codice per un blocco, ovvero in genere codice tra parentesi graffe.  La registrazione per un blocco anche richiama il codice per l'inizializzatore di campo, il valore assegnato a un attributo o il valore di un parametro facoltativo.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Eliminare i membri derivati.** A questo punto, posizionare il cursore dell'editor nell'identificatore `CodeFixProvider` e premere **Ctrl**+**.** (punto) da sottoporre a stub di implementazione per questa classe base astratta.  Questo genera una proprietà e un metodo.

@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC | Documenti Microsoft
+title: JMC_CODE_SPEC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3abf59cb55bd64004750be7b24e00e42eb79d9e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b24c052bc3345443e8bcbe474f881906f420a74c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821708"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
-Questa struttura viene utilizzata per impostare le informazioni di JustMyCode per un modulo.  
+Questa struttura consente di impostare le informazioni di JustMyCode per un modulo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,13 +43,13 @@ public struct JMC_CODE_SPEC {
   
 ## <a name="members"></a>Membri  
  fIsUserCode  
- Diverso da zero (`TRUE`) se il modulo viene considerato codice utente; in caso contrario, zero (`FALSE`) se il modulo venga trattata come codice esterno e non deve essere sottoposto a debug.  
+ Diverso da zero (`TRUE`) se il modulo viene considerato codice utente; in caso contrario, zero (`FALSE`) se il modulo è da trattare come codice esterno e non da sottoporre a debug.  
   
  bstrModuleName  
  Nome del modulo in questione.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene passata come un elenco di tali strutture per la [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) metodo.  
+ Questa struttura viene passata come un elenco di tali strutture per la [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

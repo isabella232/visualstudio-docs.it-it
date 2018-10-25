@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937499"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Cenni preliminari sui controlli host e gli elementi host
   Gli elementi e i controlli host sono tipi che consentono di fornire il modello di programmazione per le soluzioni Office create tramite gli strumenti di sviluppo di Office in Visual Studio. Rendono l'interazione con i modelli a oggetti di Microsoft Office Word e Microsoft Office Excel, basati su COM, analoga all'interazione con gli oggetti gestiti, ad esempio i controlli Windows Form.  
@@ -54,21 +54,21 @@ ms.locfileid: "35671980"
 ## <a name="host-items"></a>Elementi host  
  Gli elementi host sono tipi che si trovano al livello più elevato delle gerarchie del modello a oggetti nei progetti di Office. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] definisce gli elementi host seguenti per le soluzioni Word ed Excel:  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Ognuno di questi tipi estende un oggetto presente a livello nativo nel modello a oggetti di Word o Excel, denominato *oggetto nativo di Office*. Ad esempio, l'elemento host <xref:Microsoft.Office.Tools.Word.Document> estende l'oggetto <xref:Microsoft.Office.Interop.Word.Document> , definito nell'assembly di interoperabilità primario per Word.  
+  Ognuno di questi tipi estende un oggetto presente a livello nativo nel modello a oggetti di Word o Excel, denominato *oggetto nativo di Office*. Ad esempio, l'elemento host <xref:Microsoft.Office.Tools.Word.Document> estende l'oggetto <xref:Microsoft.Office.Interop.Word.Document> , definito nell'assembly di interoperabilità primario per Word.  
   
- Gli elementi host hanno generalmente la stessa funzionalità di base degli oggetti Office corrispondenti, ma sono potenziati con le funzionalità seguenti:  
+  Gli elementi host hanno generalmente la stessa funzionalità di base degli oggetti Office corrispondenti, ma sono potenziati con le funzionalità seguenti:  
   
--   Possibilità di ospitare i controlli gestiti, inclusi i controlli host e quelli Windows Form.  
+- Possibilità di ospitare i controlli gestiti, inclusi i controlli host e quelli Windows Form.  
   
--   Modelli di eventi più ricchi. Alcuni eventi relativi a documenti, cartelle di lavoro e fogli di lavoro nei modelli a oggetti nativi di Word ed Excel vengono generati soltanto a livello di applicazione. Gli elementi host forniscono questi eventi a livello di documento, in modo che sia più semplice gestire gli eventi per un documento specifico.  
+- Modelli di eventi più ricchi. Alcuni eventi relativi a documenti, cartelle di lavoro e fogli di lavoro nei modelli a oggetti nativi di Word ed Excel vengono generati soltanto a livello di applicazione. Gli elementi host forniscono questi eventi a livello di documento, in modo che sia più semplice gestire gli eventi per un documento specifico.  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>Comprendere gli elementi host nei progetti a livello di documento  
  Nei progetti a livello di documento, gli elementi host forniscono un punto di ingresso per il codice e contengono finestre di progettazione che consentono di sviluppare la soluzione.  
@@ -85,35 +85,35 @@ ms.locfileid: "35671980"
  Dopo aver generato un elemento host, è possibile eseguire attività quali l'aggiunta di controlli ai documenti. Per altre informazioni, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="host-controls"></a>Controlli host  
- I controlli host estendono i vari oggetti dell'interfaccia utente nei modelli a oggetti Word ed Excel, ad esempio `Microsoft.Office.Interop.Word.ContentControl` e <xref:Microsoft.Office.Interop.Excel.Range> oggetti.  
+ I controlli host consentono di estendere vari oggetti dell'interfaccia utente nei modelli a oggetti di Word ed Excel, ad esempio gli oggetti `Microsoft.Office.Interop.Word.ContentControl` e <xref:Microsoft.Office.Interop.Excel.Range>.  
   
  Per i progetti Excel sono disponibili i controlli host seguenti:  
   
--   [Controllo Chart](../vsto/chart-control.md)  
+- [Controllo Chart](../vsto/chart-control.md)  
   
--   [ListObject (controllo)](../vsto/listobject-control.md)  
+- [ListObject (controllo)](../vsto/listobject-control.md)  
   
--   [NamedRange (controllo)](../vsto/namedrange-control.md)  
+- [NamedRange (controllo)](../vsto/namedrange-control.md)  
   
--   [Controllo XmlMappedRange](../vsto/xmlmappedrange-control.md)  
+- [Controllo XmlMappedRange](../vsto/xmlmappedrange-control.md)  
   
- Per i progetti Word sono disponibili i controlli host seguenti:  
+  Per i progetti Word sono disponibili i controlli host seguenti:  
   
--   [Bookmark (controllo)](../vsto/bookmark-control.md)  
+- [Bookmark (controllo)](../vsto/bookmark-control.md)  
   
--   [Controlli del contenuto](../vsto/content-controls.md)  
+- [Controlli del contenuto](../vsto/content-controls.md)  
   
--   [Controllo XMLNode](../vsto/xmlnode-control.md)  
+- [Controllo XMLNode](../vsto/xmlnode-control.md)  
   
--   [Controllo XMLNodes](../vsto/xmlnodes-control.md)  
+- [Controllo XMLNodes](../vsto/xmlnodes-control.md)  
   
- I controlli host aggiunti ai documenti di Office si comportano come gli oggetti nativi di Office, ma dispongono di funzionalità aggiuntive che includono eventi e funzionalità di data binding. Ad esempio, per acquisire gli eventi di un oggetto <xref:Microsoft.Office.Interop.Excel.Range> nativo in Excel, è necessario per prima cosa gestire l'evento di modifica del foglio di lavoro. Quindi, è necessario determinare se la modifica è avvenuta all'interno di <xref:Microsoft.Office.Interop.Excel.Range>. Il controllo host <xref:Microsoft.Office.Tools.Excel.NamedRange> contiene invece un evento <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> che è possibile gestire direttamente.  
+  I controlli host aggiunti ai documenti di Office si comportano come gli oggetti nativi di Office, ma dispongono di funzionalità aggiuntive che includono eventi e funzionalità di data binding. Ad esempio, per acquisire gli eventi di un oggetto <xref:Microsoft.Office.Interop.Excel.Range> nativo in Excel, è necessario per prima cosa gestire l'evento di modifica del foglio di lavoro. Quindi, è necessario determinare se la modifica è avvenuta all'interno di <xref:Microsoft.Office.Interop.Excel.Range>. Il controllo host <xref:Microsoft.Office.Tools.Excel.NamedRange> contiene invece un evento <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> che è possibile gestire direttamente.  
   
- La relazione tra un elemento host e controlli host è simile alla relazione tra un controlli Windows Form e Windows Form. Posizionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> esattamente come si posiziona un controllo casella di testo in un oggetto Windows Form. L'illustrazione seguente mostra la relazione tra elementi host e controlli host.  
+  La relazione tra un elemento host e controlli host è simile alla relazione tra un controlli Windows Form e Windows Form. Posizionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> esattamente come si posiziona un controllo casella di testo in un oggetto Windows Form. L'illustrazione seguente mostra la relazione tra elementi host e controlli host.  
   
- ![Relazione tra elementi host e controlli host](../vsto/media/hostitemscontrols.png "relazione tra elementi host e controlli host")  
+  ![Relazione tra elementi host e controlli host](../vsto/media/hostitemscontrols.png "relazione tra elementi host e controlli host")  
   
- È anche possibile usare i controlli Windows Form nelle soluzioni Office aggiungendoli direttamente nell'area del documento di Word ed Excel. Per altre informazioni, vedere [controlli Windows Form nella panoramica di documenti Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+  È anche possibile usare i controlli Windows Form nelle soluzioni Office aggiungendoli direttamente nell'area del documento di Word ed Excel. Per altre informazioni, vedere [controlli Windows Form nella panoramica di documenti Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
 >  L'aggiunta di controlli host o di controlli Windows Form a un documento secondario di Word non è supportata.  
@@ -121,31 +121,31 @@ ms.locfileid: "35671980"
 ### <a name="add-host-controls-to-your-documents"></a>Aggiungere controlli host ai documenti  
  Nei progetti a livello di documento è possibile aggiungere controlli host ai documenti di Word o ai fogli di lavoro di Excel in fase di progettazione nei modi seguenti:  
   
--   Aggiungere i controlli host a un documento in fase di progettazione nello stesso modo in cui si aggiunge un oggetto nativo.  
+- Aggiungere i controlli host a un documento in fase di progettazione nello stesso modo in cui si aggiunge un oggetto nativo.  
   
--   Trascinare i controlli host dalla **Casella degli strumenti** nei documenti e nei fogli di lavoro. I controlli host di Excel sono disponibili nella scheda **Controlli Excel** dei progetti Excel, mentre i controlli host di Word sono disponibili nella scheda **Controlli Word** dei progetti Word.  
+- Trascinare i controlli host dalla **Casella degli strumenti** nei documenti e nei fogli di lavoro. I controlli host di Excel sono disponibili nella scheda **Controlli Excel** dei progetti Excel, mentre i controlli host di Word sono disponibili nella scheda **Controlli Word** dei progetti Word.  
   
--   Trascinare i controlli host dalla finestra **Origini dati** nei documenti e nei fogli di lavoro. In questo modo è possibile aggiungere controlli già associati ai dati. Per altre informazioni, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+- Trascinare i controlli host dalla finestra **Origini dati** nei documenti e nei fogli di lavoro. In questo modo è possibile aggiungere controlli già associati ai dati. Per altre informazioni, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Nei progetti di componente aggiuntivo VSTO e a livello di documento è possibile aggiungere anche alcuni controlli host ai documenti in fase di esecuzione. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Nei progetti di componente aggiuntivo VSTO e a livello di documento è possibile aggiungere anche alcuni controlli host ai documenti in fase di esecuzione. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Per altre informazioni su come aggiungere i controlli host ai documenti, vedere gli argomenti seguenti:  
+  Per altre informazioni su come aggiungere i controlli host ai documenti, vedere gli argomenti seguenti:  
   
--   [Procedura: aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Procedura: aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Procedura: aggiungere controlli XMLMappedRange a fogli di lavoro](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Procedura: aggiungere controlli XMLMappedRange a fogli di lavoro](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Procedura: aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Procedura: aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Procedura: aggiungere contenuto controlli ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Procedura: aggiungere contenuto controlli ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Procedura: aggiungere controlli XMLNode ai documenti di Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Procedura: aggiungere controlli XMLNode ai documenti di Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Procedura: aggiungere controlli XMLNodes ai documenti di Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Procedura: aggiungere controlli XMLNodes ai documenti di Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Nomi dei controlli host  
  Quando si trascina un controllo host dalla **Casella degli strumenti** nel documento, il controllo viene automaticamente denominato usando il tipo del controllo con un numero incrementale alla fine. I segnalibri saranno, ad esempio, denominati **bookmark1**, **bookmark2**e così via. Se si usa la funzionalità nativa di Word o Excel per aggiungere il controllo, è possibile assegnare un nome specifico al momento della creazione. È anche possibile rinominare i controlli modificando il valore della proprietà **Name** nella finestra **Proprietà** .  

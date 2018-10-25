@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899929"
 ---
 # <a name="create-an-android-native-activity-app"></a>Creare un'app NativeActivity di Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
 #### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Aprire Visual Studio. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
+1. Aprire Visual Studio. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** , in **Modelli**, selezionare **Visual C++**, **Multipiattaforma**, quindi scegliere il modello **Applicazione NativeActivity (Android)** .  
+2. Nella finestra di dialogo **Nuovo progetto** , in **Modelli**, selezionare **Visual C++**, **Multipiattaforma**, quindi scegliere il modello **Applicazione NativeActivity (Android)** .  
   
-3.  Assegnare all'app un nome come `MyAndroidApp`e fare clic su **OK**.  
+3. Assegnare all'app un nome come `MyAndroidApp`e fare clic su **OK**.  
   
-     ![Creare un progetto NativeActivity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Creare un progetto NativeActivity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio crea la nuova soluzione e apre Esplora soluzioni.  
+    Visual Studio crea la nuova soluzione e apre Esplora soluzioni.  
   
-     ![Progetto NativeActivity in Esplora soluzioni](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Progetto NativeActivity in Esplora soluzioni](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- La nuova soluzione per app NativeActivity di Android include due progetti:  
+   La nuova soluzione per app NativeActivity di Android include due progetti:  
   
 -   **MyAndroidApp.NativeActivity** , che contiene i riferimenti e il codice glue per l'app da eseguire come NativeActivity in Android. L'implementazione dei punti di ingresso dal codice glue si trova nel file main.cpp. Le intestazioni precompilate sono invece in pch.h. Questo progetto di app NativeActivity viene compilato in un file di libreria condivisa (.so) che viene selezionato dal progetto di creazione del pacchetto.  
   

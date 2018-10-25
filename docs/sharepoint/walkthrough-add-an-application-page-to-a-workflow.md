@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866896"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro
   Questa procedura dettagliata illustra come aggiungere una pagina dell'applicazione che consente di visualizzare i dati derivati da un flusso di lavoro a un progetto di flusso di lavoro. Essendo basato su progetto descritto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
--   Aggiunta di una pagina ASPX applicazione a un progetto di flusso di lavoro di SharePoint.
+- Aggiunta di una pagina ASPX applicazione a un progetto di flusso di lavoro di SharePoint.
 
--   Recupero di dati dal progetto flusso di lavoro e la manipolazione.
+- Recupero di dati dal progetto flusso di lavoro e la manipolazione.
 
--   Visualizzazione dei dati in una tabella nella pagina dell'applicazione.
+- Visualizzazione dei dati in una tabella nella pagina dell'applicazione.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -305,23 +305,23 @@ ms.locfileid: "43774588"
 
 #### <a name="to-test-the-application-page"></a>Per testare la pagina dell'applicazione
 
-1.  Scegliere il **F5** tasto per eseguire e distribuire il progetto in SharePoint.
+1. Scegliere il **F5** tasto per eseguire e distribuire il progetto in SharePoint.
 
-2.  Scegliere il **casa** pulsante e quindi scegliere il **documenti condivisi** collegamento sulla barra Avvio veloce per visualizzare l'elenco di documenti condivisi nel sito di SharePoint.
+2. Scegliere il **casa** pulsante e quindi scegliere il **documenti condivisi** collegamento sulla barra Avvio veloce per visualizzare l'elenco di documenti condivisi nel sito di SharePoint.
 
-3.  Per rappresentare le spese per questo esempio, caricare alcuni nuovi documenti in elenco dei documenti, scegliendo la **documenti** sul collegamento il **Strumenti raccolta** scheda nella parte superiore della pagina e quindi scegliendo il  **Caricamento del documento** pulsante sulla barra multifunzione dello strumento.
+3. Per rappresentare le spese per questo esempio, caricare alcuni nuovi documenti in elenco dei documenti, scegliendo la **documenti** sul collegamento il **Strumenti raccolta** scheda nella parte superiore della pagina e quindi scegliendo il  **Caricamento del documento** pulsante sulla barra multifunzione dello strumento.
 
-4.  Dopo aver caricato alcuni documenti, creare un'istanza del flusso di lavoro scegliendo la **Library** sul collegamento il **Strumenti raccolta** scheda nella parte superiore della pagina e quindi scegliere il **impostazioni libreria**pulsante sulla barra multifunzione dello strumento.
+4. Dopo aver caricato alcuni documenti, creare un'istanza del flusso di lavoro scegliendo la **Library** sul collegamento il **Strumenti raccolta** scheda nella parte superiore della pagina e quindi scegliere il **impostazioni libreria**pulsante sulla barra multifunzione dello strumento.
 
-5.  Nel **impostazioni raccolta documenti** pagina, scegliere il **le impostazioni del flusso di lavoro** clic sul collegamento nella **autorizzazioni e gestione** sezione.
+5. Nel **impostazioni raccolta documenti** pagina, scegliere il **le impostazioni del flusso di lavoro** clic sul collegamento nella **autorizzazioni e gestione** sezione.
 
-6.  Nel **delle impostazioni del flusso di lavoro** pagina, scegliere il **aggiungere un flusso di lavoro** collegamento.
+6. Nel **delle impostazioni del flusso di lavoro** pagina, scegliere il **aggiungere un flusso di lavoro** collegamento.
 
-7.  Nel **aggiungere un flusso di lavoro** pagina, scegliere il **ExpenseReport - Workflow1** flusso di lavoro, immettere un nome per il flusso di lavoro, ad esempio **ExpenseTest**, quindi scegliere il **Successivo** pulsante.
+7. Nel **aggiungere un flusso di lavoro** pagina, scegliere il **ExpenseReport - Workflow1** flusso di lavoro, immettere un nome per il flusso di lavoro, ad esempio **ExpenseTest**, quindi scegliere il **Successivo** pulsante.
 
-     Viene visualizzato il form di associazione flusso di lavoro. Usarlo per segnalare l'importo del limite di spesa.
+    Viene visualizzato il form di associazione flusso di lavoro. Usarlo per segnalare l'importo del limite di spesa.
 
-8.  Nel form di associazione, immettere **1000** nel **limite di approvazione automatica** casella e quindi scegliere il **Associa flusso di lavoro** pulsante.
+8. Nel form di associazione, immettere **1000** nel **limite di approvazione automatica** casella e quindi scegliere il **Associa flusso di lavoro** pulsante.
 
 9. Scegliere il **domestica** per tornare alla home page di SharePoint.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774588"
 
 14. Ripetere i passaggi da 11 a 13 nell'elenco dei documenti condivisi altri documenti. (Il numero esatto di documenti non è importante.)
 
-15. Visualizzare la pagina di riepilogo dell'applicazione expense report aprendo l'URL seguente in un Web browser: **http://**_NomeSistema_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Visualizzare la pagina di riepilogo dell'applicazione expense report aprendo l'URL seguente in un Web browser: **http://**<em>NomeSistema</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      La pagina Riepilogo della nota spese Elenca tutte le note spese che supera la quantità allocata e la quantità per che è superato la quantità totale per tutti i report.
 

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916530"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Aggiungere che un usati di recente elenco a un sottomenu
 Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md)e viene illustrato come aggiungere un elenco dinamico di un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco più recente (MRU).  
@@ -38,9 +38,9 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
   
 ## <a name="create-an-extension"></a>Creare un'estensione  
   
--   Seguire le procedure descritte in [aggiunta di un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md) per creare il sottomenu che viene modificato nelle procedure seguenti.  
+- Seguire le procedure descritte in [aggiunta di un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md) per creare il sottomenu che viene modificato nelle procedure seguenti.  
   
- Le procedure descritte in questa procedura dettagliata si presuppongono che sia il nome del pacchetto VSPackage `TopLevelMenu`, che rappresenta il nome che viene utilizzato [aggiungere un menu alla barra dei menu di Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Le procedure descritte in questa procedura dettagliata si presuppongono che sia il nome del pacchetto VSPackage `TopLevelMenu`, che rappresenta il nome che viene utilizzato [aggiungere un menu alla barra dei menu di Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Creare un comando di elenco elemento dinamico  
   

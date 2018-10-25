@@ -15,12 +15,12 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e929f46ae6e7f1ef374c663242abb5b332ed4ffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828442"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Creare un'istanza di Editor principale con l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,34 +29,34 @@ L'editor è responsabile per la modifica funzioni, ad esempio inserimento, elimi
   
  È possibile creare un'istanza di un'istanza di editor principale in uno dei tre modi:  
   
--   Creare in modo esplicito un'istanza di base dell'editor in una finestra.  
+- Creare in modo esplicito un'istanza di base dell'editor in una finestra.  
   
--   Fornire una factory dell'editor che restituisce un'istanza dell'editor principale  
+- Fornire una factory dell'editor che restituisce un'istanza dell'editor principale  
   
--   Aprire un file dalla gerarchia di progetto.  
+- Aprire un file dalla gerarchia di progetto.  
   
- Le sezioni seguenti illustrano come usare l'API legacy per creare un'istanza di editor.  
+  Le sezioni seguenti illustrano come usare l'API legacy per creare un'istanza di editor.  
   
 ## <a name="explicitly-opening-a-core-editor-instance"></a>Apertura in modo esplicito un'istanza di Editor principale di  
  Quando si ottiene in modo esplicito un'istanza di editor principale:  
   
--   Ottenere un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> per contenere l'oggetto dati del documento in fase di modifica.  
+- Ottenere un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> per contenere l'oggetto dati del documento in fase di modifica.  
   
--   Creare una rappresentazione orientato alla riga dell'oggetto dati del documento tramite la creazione di un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> dell'interfaccia dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaccia.  
+- Creare una rappresentazione orientato alla riga dell'oggetto dati del documento tramite la creazione di un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> dell'interfaccia dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaccia.  
   
--   Impostare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> come oggetto dati del documento per un'istanza dell'implementazione predefinita del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> dell'interfaccia, usando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> (metodo).  
+- Impostare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> come oggetto dati del documento per un'istanza dell'implementazione predefinita del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> dell'interfaccia, usando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> (metodo).  
   
-     Host di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> dell'istanza in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaccia utilizzando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> (metodo).  
+   Host di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> dell'istanza in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaccia utilizzando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> (metodo).  
   
- A questo punto, la visualizzazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaccia fornisce una finestra che contiene un'istanza dell'editor principale.  
+  A questo punto, la visualizzazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaccia fornisce una finestra che contiene un'istanza dell'editor principale.  
   
- Tuttavia, ciò non è un'istanza molto utile, perché non dispone di tasti di scelta rapida o accedere alle funzionalità avanzate. Per ottenere accesso alle funzionalità avanzate e tasti di scelta rapida:  
+  Tuttavia, ciò non è un'istanza molto utile, perché non dispone di tasti di scelta rapida o accedere alle funzionalità avanzate. Per ottenere accesso alle funzionalità avanzate e tasti di scelta rapida:  
   
--   Usare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metodo per associare un servizio di linguaggio e l'oggetto dati del documento che usa l'editor.  
+- Usare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metodo per associare un servizio di linguaggio e l'oggetto dati del documento che usa l'editor.  
   
--   Creare i proprio tasti di scelta rapida oppure usare l'impostazione predefinita impostando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetti vengono visualizzati le proprietà. A tale scopo, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> metodo con il <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> proprietà.  
+- Creare i proprio tasti di scelta rapida oppure usare l'impostazione predefinita impostando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetti vengono visualizzati le proprietà. A tale scopo, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> metodo con il <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> proprietà.  
   
-     Per ottenere e utilizzare i tasti di scelta rapida non standard, crearli utilizzando il file con estensione vsct. Per altre informazioni, vedere [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+   Per ottenere e utilizzare i tasti di scelta rapida non standard, crearli utilizzando il file con estensione vsct. Per altre informazioni, vedere [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Come usare una factory dell'Editor per ottenere l'Editor principale di  
  Quando si implementa un editor principale con una factory editor usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metodo, seguire tutti i passaggi descritti nella sezione precedente per ospitare in modo esplicito un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> usando un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> dell'oggetto dati del documento, in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetto.  

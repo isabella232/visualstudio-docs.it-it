@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873701"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ NOTA]
   
  È possibile sviluppare applicazioni più velocemente usando la finestra **Elenco errori**. Ad esempio, è possibile effettuare le attività seguenti:  
   
--   Visualizzare gli errori, gli avvisi e i messaggi generati durante scrittura di codice.  
+- Visualizzare gli errori, gli avvisi e i messaggi generati durante scrittura di codice.  
   
--   Individuare gli errori di sintassi indicati da IntelliSense.  
+- Individuare gli errori di sintassi indicati da IntelliSense.  
   
--   Individuare errori di distribuzione, alcuni errori di analisi statica, nonché gli errori rilevati durante l'applicazione dei criteri di Modello Enterprise.  
+- Individuare errori di distribuzione, alcuni errori di analisi statica, nonché gli errori rilevati durante l'applicazione dei criteri di Modello Enterprise.  
   
--   Fare doppio clic su un messaggio di errore per aprire il file in cui è stato rilevato il problema e visualizzare il punto in cui si è verificato l'errore.  
+- Fare doppio clic su un messaggio di errore per aprire il file in cui è stato rilevato il problema e visualizzare il punto in cui si è verificato l'errore.  
   
--   Filtrare le voci e le colonne di informazioni visualizzate per ciascuna voce.  
+- Filtrare le voci e le colonne di informazioni visualizzate per ciascuna voce.  
   
--   Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.  
+- Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.  
   
- Per visualizzare l'**Elenco errori**, fare clic su**Visualizza/Elenco errori** o premere **CTRL+\\+E**.  
+  Per visualizzare l'**Elenco errori**, fare clic su**Visualizza/Elenco errori** o premere **CTRL+\\+E**.  
   
- È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.  
+  È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.  
   
- Per ordinare l'elenco, fare clic sull'intestazione di una colonna. Per ordinare nuovamente l'elenco in base a una colonna aggiuntiva, fare clic sull'intestazione di un'altra colonna tenendo premuto il tasto MAIUSC. Per selezionare le colonne da visualizzare e quelle da nascondere, scegliere **Mostra colonne** dal menu di scelta rapida. Per modificare l'ordine di visualizzazione delle colonne, trascinare l'intestazione di una colonna verso sinistra o verso destra.  
+  Per ordinare l'elenco, fare clic sull'intestazione di una colonna. Per ordinare nuovamente l'elenco in base a una colonna aggiuntiva, fare clic sull'intestazione di un'altra colonna tenendo premuto il tasto MAIUSC. Per selezionare le colonne da visualizzare e quelle da nascondere, scegliere **Mostra colonne** dal menu di scelta rapida. Per modificare l'ordine di visualizzazione delle colonne, trascinare l'intestazione di una colonna verso sinistra o verso destra.  
   
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, fare clic su **Strumenti/Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -63,18 +63,18 @@ NOTA]
   
  È possibile limitare l'ambito di ricerca per analizzare e agire sui gruppi di errori. Ad esempio, è possibile concentrarsi sugli errori principali che impediscono la compilazione di un progetto. Le opzioni di ambito includono:  
   
-1.  **Documenti aperti**: visualizza errori, avvisi e messaggi per i documenti aperti.  
+1. **Documenti aperti**: visualizza errori, avvisi e messaggi per i documenti aperti.  
   
-2.  **Progetto corrente**: visualizza errori, avvisi e messaggi presenti nel progetto del documento attualmente selezionato in **Editor** o nel progetto selezionato in **Esplora soluzioni**.  
+2. **Progetto corrente**: visualizza errori, avvisi e messaggi presenti nel progetto del documento attualmente selezionato in **Editor** o nel progetto selezionato in **Esplora soluzioni**.  
   
-    > [!NOTE]
-    >  L'elenco filtrato di errori, avvisi e messaggi verrà modificato se il progetto del documento attualmente selezionato è diverso dal progetto selezionato in **Esplora soluzioni**.  
+   > [!NOTE]
+   >  L'elenco filtrato di errori, avvisi e messaggi verrà modificato se il progetto del documento attualmente selezionato è diverso dal progetto selezionato in **Esplora soluzioni**.  
   
-3.  **Documento corrente**: visualizza errori, avvisi e messaggi per il documento attualmente selezionato in **Editor** o in **Esplora soluzioni**.  
+3. **Documento corrente**: visualizza errori, avvisi e messaggi per il documento attualmente selezionato in **Editor** o in **Esplora soluzioni**.  
   
- Se ai risultati della ricerca è applicato un filtro, il nome del filtro viene visualizzato nella barra del titolo **Elenco errori**. I pulsanti **Errori**, **Avvisi** e **Messaggi** visualizzano il numero di elementi filtrati insieme al numero totale di elementi; ad esempio, i pulsanti visualizzano x di y errori. Se nessun filtro viene applicato, la barra del titolo indica solo "Elenco errori".  
+   Se ai risultati della ricerca è applicato un filtro, il nome del filtro viene visualizzato nella barra del titolo **Elenco errori**. I pulsanti **Errori**, **Avvisi** e **Messaggi** visualizzano il numero di elementi filtrati insieme al numero totale di elementi; ad esempio, i pulsanti visualizzano x di y errori. Se nessun filtro viene applicato, la barra del titolo indica solo "Elenco errori".  
   
- L'elenco sul lato destro della barra degli strumenti specifica se visualizzare errori di compilazione (errori risultanti da un'operazione di compilazione) o di IntelliSense (errori rilevati prima di eseguire una compilazione) o di entrambi.  
+   L'elenco sul lato destro della barra degli strumenti specifica se visualizzare errori di compilazione (errori risultanti da un'operazione di compilazione) o di IntelliSense (errori rilevati prima di eseguire una compilazione) o di entrambi.  
   
 ## <a name="search"></a>Cerca  
  Usare la casella di testo **Elenco errori di ricerca** sul lato destro della barra degli strumenti **Elenco errori** per trovare errori specifici nell'elenco errori. È possibile cercare una colonna visibile nell'elenco errori e i risultati di ricerca vengono sempre ordinati in base alla colonna con priorità di ordinamento anziché alla query o al filtro applicato. Se si sceglie il tasto **Esc** mentre è attivo l'**Elenco errori**, è possibile cancellare il termine di ricerca e i risultati di ricerca filtrati. È anche possibile fare clic sulla **X** sul lato destro della casella di testo per cancellare il contenuto.  

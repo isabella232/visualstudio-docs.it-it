@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922198"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
   
 ## <a name="create-the-model"></a>Creare il modello  
   
-1.  Fare clic con il pulsante destro sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi &#124; nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale scegliere **ADO.NET Entity Data Model**.  
+1. Fare clic con il pulsante destro sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi &#124; nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale scegliere **ADO.NET Entity Data Model**.  
   
-     ![Entity Framework modello nuovo elemento di progetto](../data-tools/media/raddata-ef-new-project-item.png "raddata nuovo elemento di progetto Entity Framework")  
+    ![Entity Framework modello nuovo elemento di progetto](../data-tools/media/raddata-ef-new-project-item.png "raddata nuovo elemento di progetto Entity Framework")  
   
-2.  Chiamare il modello `Northwind_model` e scegliere OK. Verrà visualizzata la **procedura guidata Entity Data Model**. Scegli **Entity Framework Designer dal database** e quindi fare clic su **successivo**.  
+2. Chiamare il modello `Northwind_model` e scegliere OK. Verrà visualizzata la **procedura guidata Entity Data Model**. Scegli **Entity Framework Designer dal database** e quindi fare clic su **successivo**.  
   
-     ![Modello EF da Database](../data-tools/media/raddata-ef-model-from-database.png "raddata modello EF da Database")  
+    ![Modello EF da Database](../data-tools/media/raddata-ef-model-from-database.png "raddata modello EF da Database")  
   
-3.  Nella schermata successiva, scegliere di LocalDB Northwind connessione fare clic su **successivo**.  
+3. Nella schermata successiva, scegliere di LocalDB Northwind connessione fare clic su **successivo**.  
   
-4.  Nella pagina successiva della procedura guidata, è scegliere quali tabelle, stored procedure e altri oggetti di database da includere nel modello di Entity Framework. Espandere il nodo dbo nella visualizzazione albero e scegliere i clienti, ordini e dettagli dell'ordine. Lasciare le impostazioni predefinite selezionate e fare clic su **fine**.  
+4. Nella pagina successiva della procedura guidata, è scegliere quali tabelle, stored procedure e altri oggetti di database da includere nel modello di Entity Framework. Espandere il nodo dbo nella visualizzazione albero e scegliere i clienti, ordini e dettagli dell'ordine. Lasciare le impostazioni predefinite selezionate e fare clic su **fine**.  
   
-     ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png "raddata Scegli oggetti di Entity Framework")  
+    ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png "raddata Scegli oggetti di Entity Framework")  
   
-5.  La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Questi sono plain precedente le classi di c# e sono ciò che si eseguirà il metodo databind all'interfaccia utente WPF. Il file con estensione edmx vengono descritte le relazioni e altri metadati che associa le classi di oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che operano sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in Esplora soluzioni sotto il nodo Northwind_model:  
+5. La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Questi sono plain precedente le classi di c# e sono ciò che si eseguirà il metodo databind all'interfaccia utente WPF. Il file con estensione edmx vengono descritte le relazioni e altri metadati che associa le classi di oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che operano sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in Esplora soluzioni sotto il nodo Northwind_model:  
   
-     ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata i file del modello EF di Esplora soluzioni")  
+    ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata i file del modello EF di Esplora soluzioni")  
   
-     Area di progettazione per il file con estensione edmx consente di modificare alcune proprietà e relazioni nel modello. Non si intende utilizzare la finestra di progettazione in questa procedura dettagliata.  
+    Area di progettazione per il file con estensione edmx consente di modificare alcune proprietà e relazioni nel modello. Non si intende utilizzare la finestra di progettazione in questa procedura dettagliata.  
   
-6.  I file con estensione tt sono per utilizzo generico ed è necessario modificare uno di essi per lavorare con il Data Binding WPF, che richiede ObservableCollections.  In Esplora soluzioni espandere il nodo Northwind_model fino a individuare Northwind_model.tt. (Assicurarsi di essere **non** nel *. Contesto file con estensione tt che è direttamente sotto il file con estensione edmx).  
+6. I file con estensione tt sono per utilizzo generico ed è necessario modificare uno di essi per lavorare con il Data Binding WPF, che richiede ObservableCollections.  In Esplora soluzioni espandere il nodo Northwind_model fino a individuare Northwind_model.tt. (Assicurarsi di essere **non** nel *. Contesto file con estensione tt che è direttamente sotto il file con estensione edmx).  
   
-    -   Sostituire le due occorrenze della <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   -   Sostituire le due occorrenze della <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-    -   Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> intorno alla riga 51. Non sostituire la seconda occorrenza della HashSet  
+   -   Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> intorno alla riga 51. Non sostituire la seconda occorrenza della HashSet  
   
-    -   Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 334) con <xref:System.Collections.ObjectModel>.  
+   -   Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 334) con <xref:System.Collections.ObjectModel>.  
   
-7.  Premere **Ctrl + MAIUSC + B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili per la creazione guidata origine dati.  
+7. Premere **Ctrl + MAIUSC + B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili per la creazione guidata origine dati.  
   
- A questo punto siamo pronti collegare questo modello per la pagina XAML in modo che sia possibile visualizzare, esplorare e modificare i dati.  
+   A questo punto siamo pronti collegare questo modello per la pagina XAML in modo che sia possibile visualizzare, esplorare e modificare i dati.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>Metodo DataBind il modello per la pagina XAML  
  È possibile scrivere il codice di associazione dati, ma è molto più semplice consentire a Visual Studio di eseguire questa operazione automaticamente.  

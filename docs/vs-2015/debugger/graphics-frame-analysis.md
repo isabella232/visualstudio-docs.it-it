@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18b2143d46416ba339bffd4ff1b691c3a9e76fda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a12a6671df94e1ea477412f489fb349c28b60b9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891583"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 ## <a name="frame-analysis"></a>Analisi dei frame  
  L'analisi dei frame usa le stesse informazioni acquisite in un file di registro elementi grafici per finalità diagnostiche, ma le usa per riepilogare invece le prestazioni del rendering. Le informazioni sulle prestazioni non sono registrate nel registro durante l'acquisizione. Queste informazioni sono invece generate in un secondo momento, durante l'analisi dei frame, tramite la misurazione della durata degli eventi e la raccolta di statistiche durante la riproduzione del frame. Questo approccio presenta numerosi vantaggi rispetto alla registrazione delle informazioni sulle prestazioni durante l'acquisizione:  
   
--   L'analisi dei frame può usare i risultati di più riproduzioni dello stesso frame, in modo da assicurare la validità statistica del riepilogo delle prestazioni.  
+- L'analisi dei frame può usare i risultati di più riproduzioni dello stesso frame, in modo da assicurare la validità statistica del riepilogo delle prestazioni.  
   
--   L'analisi dei frame può generare informazioni sulle prestazioni per configurazioni hardware e dispositivi diversi da quello in cui sono state acquisite le informazioni.  
+- L'analisi dei frame può generare informazioni sulle prestazioni per configurazioni hardware e dispositivi diversi da quello in cui sono state acquisite le informazioni.  
   
--   Grazie all'analisi dei frame è anche possibile generare nuovi riepiloghi delle prestazioni da informazioni acquisite in precedenza, ad esempio quando i driver GPU sono ottimizzati o quando espongono funzionalità di debug aggiuntive.  
+- Grazie all'analisi dei frame è anche possibile generare nuovi riepiloghi delle prestazioni da informazioni acquisite in precedenza, ad esempio quando i driver GPU sono ottimizzati o quando espongono funzionalità di debug aggiuntive.  
   
- Oltre a questi vantaggi, è possibile usare l'analisi dei frame anche per modificare la modalità di esecuzione del rendering durante la riproduzione, in modo che sia possibile presentare informazioni sul possibile impatto delle modifiche sulle prestazioni di rendering di un'app. Queste informazioni permettono di scegliere tra potenziali strategie di ottimizzazione, senza doverle implementare tutte, e quindi di acquisire e confrontare tutti i risultati.  
+  Oltre a questi vantaggi, è possibile usare l'analisi dei frame anche per modificare la modalità di esecuzione del rendering durante la riproduzione, in modo che sia possibile presentare informazioni sul possibile impatto delle modifiche sulle prestazioni di rendering di un'app. Queste informazioni permettono di scegliere tra potenziali strategie di ottimizzazione, senza doverle implementare tutte, e quindi di acquisire e confrontare tutti i risultati.  
   
- Anche se l'analisi dei frame è stata progettata principalmente per permettere di ottenere prestazioni di rendering migliori, può anche aiutare a ottenere una qualità visiva superiore per una destinazione di prestazioni specifica o a ridurre il consumo di energia della GPU.  
+  Anche se l'analisi dei frame è stata progettata principalmente per permettere di ottenere prestazioni di rendering migliori, può anche aiutare a ottenere una qualità visiva superiore per una destinazione di prestazioni specifica o a ridurre il consumo di energia della GPU.  
   
- Per visualizzare una dimostrazione di ciò che è possibile eseguire l'analisi dei Frame per l'app, è possibile guardare il [Frame analisi grafica di Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video su Channel 9.  
+  Per visualizzare una dimostrazione di ciò che è possibile eseguire l'analisi dei Frame per l'app, è possibile guardare il [Frame analisi grafica di Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video su Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Uso dell'analisi dei frame  
  Prima di potere usare l'analisi dei frame è necessario acquisire informazioni sugli elementi grafici dall'app durante l'esecuzione, esattamente come si farebbe con gli altri strumenti di Analizzatore grafica. Nella finestra del documento (. vsglog) log della grafica, quindi scegliere il **analisi dei Frame** scheda.  
@@ -58,23 +58,23 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   
  Alcuni risultati indicano direttamente il modo in cui la variante influisce sulle prestazioni di rendering:  
   
--   Se la variante Filtraggio bilineare della trama ha mostrato miglioramenti nelle prestazioni, l'uso di questa variante nell'app permetterà di ottenere miglioramenti analoghi nelle prestazioni.  
+- Se la variante Filtraggio bilineare della trama ha mostrato miglioramenti nelle prestazioni, l'uso di questa variante nell'app permetterà di ottenere miglioramenti analoghi nelle prestazioni.  
   
--   Se la variante relativa al riquadro di visualizzazione 1x1 ha mostrato miglioramenti nelle prestazioni, la riduzione delle dimensioni delle destinazioni di rendering nell'app permetterà di migliorarne le prestazioni a livello di rendering.  
+- Se la variante relativa al riquadro di visualizzazione 1x1 ha mostrato miglioramenti nelle prestazioni, la riduzione delle dimensioni delle destinazioni di rendering nell'app permetterà di migliorarne le prestazioni a livello di rendering.  
   
--   Se la variante Compressione di trama a blocchi ha mostrato miglioramenti nelle prestazioni, l'uso di questa variante nell'app permetterà di ottenere miglioramenti analoghi nelle prestazioni.  
+- Se la variante Compressione di trama a blocchi ha mostrato miglioramenti nelle prestazioni, l'uso di questa variante nell'app permetterà di ottenere miglioramenti analoghi nelle prestazioni.  
   
--   Se le prestazioni della variante 2xMSAA sono quasi uguali a quelle della variante 0xMSAA, è possibile abilitare la variante 2xMSAA nell'app per migliorare la qualità di rendering senza influire negativamente sulle prestazioni.  
+- Se le prestazioni della variante 2xMSAA sono quasi uguali a quelle della variante 0xMSAA, è possibile abilitare la variante 2xMSAA nell'app per migliorare la qualità di rendering senza influire negativamente sulle prestazioni.  
   
- Altri risultati potrebbero suggerire implicazioni più profonde e complesse per le prestazioni dell'app:  
+  Altri risultati potrebbero suggerire implicazioni più profonde e complesse per le prestazioni dell'app:  
   
--   Se la variante relativa al riquadro di visualizzazione 1x1 mostra miglioramenti notevoli nelle prestazioni, è possibile che l'app usi una quantità di velocità di riempimento superiore a quella disponibile. Se questa variante non mostra alcun miglioramento nelle prestazioni, è possibile che l'app stia elaborando una quantità eccessiva di vertici.  
+- Se la variante relativa al riquadro di visualizzazione 1x1 mostra miglioramenti notevoli nelle prestazioni, è possibile che l'app usi una quantità di velocità di riempimento superiore a quella disponibile. Se questa variante non mostra alcun miglioramento nelle prestazioni, è possibile che l'app stia elaborando una quantità eccessiva di vertici.  
   
--   Se la variante Formato di destinazione di rendering 16bpp mostra miglioramenti notevoli nelle prestazioni, è possibile che l'app stia usando una larghezza di banda di memoria eccessiva.  
+- Se la variante Formato di destinazione di rendering 16bpp mostra miglioramenti notevoli nelle prestazioni, è possibile che l'app stia usando una larghezza di banda di memoria eccessiva.  
   
--   Se la variante Dimensioni trama - Metà/Quarto mostra miglioramenti significativi delle prestazioni, è possibile che le trame occupino una quantità di memoria eccessiva, usino troppa larghezza di banda o usino in modo non efficace la cache delle trame. Se questa variante non mostra alcun cambiamento nelle prestazioni, è probabilmente possibile usare trame più grandi e più dettagliate senza impatti negativi sulle prestazioni.  
+- Se la variante Dimensioni trama - Metà/Quarto mostra miglioramenti significativi delle prestazioni, è possibile che le trame occupino una quantità di memoria eccessiva, usino troppa larghezza di banda o usino in modo non efficace la cache delle trame. Se questa variante non mostra alcun cambiamento nelle prestazioni, è probabilmente possibile usare trame più grandi e più dettagliate senza impatti negativi sulle prestazioni.  
   
- Se sono disponibili contatori hardware, sarà possibile usarli per raccogliere informazioni molto dettagliate sulle possibili cause delle prestazioni di rendering negative dell'app. Tutti i dispositivi a livello di funzionalità 9.2 e versioni successive supportano le query relative all'occlusione di profondità (**pixel bloccati** contatore) e timestamp. È possibile che siano disponibili altri contatori hardware, a seconda se il fornitore di GPU ha implementato o meno i contatori hardware e li ha esposti nel proprio driver. Questi contatori possono essere usati per confermare la causa precisa dei risultati mostrati nella tabella Riepilogo. È ad esempio possibile determinare se il disegno eccessivo costituisce un problema esaminando la percentuale di pixel bloccati dal test di profondità.  
+  Se sono disponibili contatori hardware, sarà possibile usarli per raccogliere informazioni molto dettagliate sulle possibili cause delle prestazioni di rendering negative dell'app. Tutti i dispositivi a livello di funzionalità 9.2 e versioni successive supportano le query relative all'occlusione di profondità (**pixel bloccati** contatore) e timestamp. È possibile che siano disponibili altri contatori hardware, a seconda se il fornitore di GPU ha implementato o meno i contatori hardware e li ha esposti nel proprio driver. Questi contatori possono essere usati per confermare la causa precisa dei risultati mostrati nella tabella Riepilogo. È ad esempio possibile determinare se il disegno eccessivo costituisce un problema esaminando la percentuale di pixel bloccati dal test di profondità.  
   
 ### <a name="timeline-and-summary-table"></a>Sequenza temporale e tabella Riepilogo  
  Per impostazione predefinita, la sequenza temporale e la tabella Riepilogo sono visualizzate e le altre sezioni sono compresse.  
@@ -157,11 +157,11 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   
  Poiché nessuna GPU di computer attualmente offerta da Intel, AMD, o nVidia supporta in modo affidabile i contatori hardware della GPU, l'analisi dei frame non raccoglie i contatori corrispondenti. L'analisi dei frame, tuttavia, raccoglie i contatori hardware da queste GPU, che li supportano in modo affidabile:  
   
--   SOC Qualcomm (tutti quelli che supportano Windows Phone)  
+- SOC Qualcomm (tutti quelli che supportano Windows Phone)  
   
--   nVidia T40 (Tegra4).  
+- nVidia T40 (Tegra4).  
   
- Nessun'altra piattaforma che supporta l'analisi dei frame raccoglie i contatori hardware della GPU.  
+  Nessun'altra piattaforma che supporta l'analisi dei frame raccoglie i contatori hardware della GPU.  
   
 > [!NOTE]
 >  Poiché i contatori hardware GPU sono risorse hardware, è possibile che siano necessari più passaggi per raccogliere il set completo di contatori hardware per ogni variante di rendering. Di conseguenza, l'ordine in cui i contatori GPU vengono raccolti non è specificato.  

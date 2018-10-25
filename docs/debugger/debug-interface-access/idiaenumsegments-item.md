@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Item | Documenti Microsoft'
+title: Idiaenumsegments | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64089113f0ad5b0e3fea0189a5dc3bf680213158
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19d42e8bb2cdf950043b6a60a0db82706cf582ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896406"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
-Recupera un segmento di mezzo di un indice.  
+Recupera un segmento per mezzo di un indice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,9 +35,9 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parametri  
  indice  
- [in] Indice del [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) oggetto da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito dal [idiaenumsegments:: Get_count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) metodo.  
+ [in] Indice del [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) oggetto da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito dalle [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) (metodo).  
   
- segmento  
+ Segmento  
  [out] Restituisce un [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) oggetto che rappresenta il segmento desiderato.  
   
 ## <a name="return-value"></a>Valore restituito  

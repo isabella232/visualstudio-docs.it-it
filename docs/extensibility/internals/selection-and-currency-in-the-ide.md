@@ -1,5 +1,5 @@
 ---
-title: Selezione e la valuta nell'IDE | Documenti Microsoft
+title: Selezione e valuta nell'IDE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,55 +16,55 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f71a176d469a5cd71aa377c800516e743eb1cc15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840571"
 ---
-# <a name="selection-and-currency-in-the-ide"></a>Selezione e la valuta nell'IDE
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) gestisce informazioni degli utenti oggetti attualmente selezionati tramite selezione *contesto*. Con il contesto di selezione, VSPackage possono prendere parte valuta rilevamento in due modi:  
+# <a name="selection-and-currency-in-the-ide"></a>Selezione e valuta nell'IDE
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) gestisce le informazioni sugli utenti oggetti attualmente selezionati tramite selezione *contesto*. Con il contesto di selezione, i pacchetti VSPackage possono essere incluse nella valuta verifica in due modi:  
   
--   Mediante propagazione delle informazioni di valuta i VSPackage all'IDE.  
+-   Propagando le informazioni di valuta sui pacchetti VSPackage all'IDE.  
   
--   Monitorando le selezioni di attualmente attive degli utenti all'interno dell'IDE.  
+-   Monitorando selezioni attualmente attiva degli utenti all'interno dell'IDE.  
   
-## <a name="selection-context"></a>Contesto della selezione  
- Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globale tiene traccia della valuta IDE nel proprio oggetto di contesto di selezione globale. Nella tabella seguente sono mostrati gli elementi che costituiscono il contesto della selezione.  
+## <a name="selection-context"></a>Contesto di selezione  
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalmente tiene traccia della valuta IDE nel proprio oggetto di contesto di selezione globale. Nella tabella seguente mostra gli elementi che costituiscono il contesto di selezione.  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
 |Gerarchia corrente.|In genere il progetto corrente. una gerarchia corrente di NULL indica che la soluzione nel suo complesso è corrente.|  
-|ID elemento corrente|L'elemento selezionato all'interno della gerarchia corrente; Quando sono presenti più selezioni in una finestra del progetto, possono esserci più elementi correnti.|  
-|Corrente `SelectionContainer`|Contiene uno o più oggetti per cui la finestra proprietà deve essere visualizzato le proprietà.|  
+|ID dell'elemento corrente|L'elemento selezionato all'interno della gerarchia corrente; Quando sono presenti le selezioni multiple in una finestra del progetto, possono esserci più elementi correnti.|  
+|Corrente `SelectionContainer`|Contiene uno o più oggetti per cui la finestra Proprietà visualizzazione delle proprietà.|  
   
- Inoltre, l'ambiente gestisce due elenchi globali:  
+ Inoltre, l'ambiente mantiene due elenchi globali:  
   
--   Un elenco di identificatori di comando attivi dell'interfaccia utente  
+-   Un elenco di identificatori di comando dell'interfaccia utente attivi  
   
 -   Un elenco di tipi di elementi attualmente attivo.  
   
 ### <a name="window-types-and-selection"></a>Selezione e tipi di finestre  
- Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organizza windows in due tipi generali:  
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE windows sono organizzati in due tipi generali:  
   
--   Windows tipo di gerarchia  
+- Windows tipo di gerarchia  
   
--   Finestre cornice, ad esempio documenti e degli strumenti di windows  
+- Finestre cornice, ad esempio le finestre dei documenti e finestre  
   
- L'IDE tiene traccia valuta in modo diverso per ognuno di questi tipi di finestra.  
+  L'IDE rileva valuta in modo diverso per ognuno di questi tipi di finestra.  
   
- La finestra più comune di tipi di progetto è Esplora soluzioni, che controlla l'IDE. Tiene traccia di una finestra del tipo di progetto gerarchia globale e ItemID del contesto di selezione globale, e la finestra si basa sulla selezione dell'utente per determinare la gerarchia corrente. Per windows di tipo di progetto, l'ambiente fornisce il servizio globale <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, tramite cui VSPackage è possono monitorare i valori correnti per gli elementi aperti. Proprietà di navigazione nell'ambiente viene gestita da questo servizio globale.  
+  La finestra di tipo di progetto più comune è Esplora soluzioni, che controlla l'IDE. Tiene traccia di una finestra del tipo di progetto della gerarchia globale e l'ID dell'elemento del contesto di selezione globale e la finestra si basa sulla selezione dell'utente per determinare la gerarchia corrente. Per windows: tipo di progetto, l'ambiente fornisce il servizio globale <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, tramite quale VSPackage possono monitorare i valori correnti per gli elementi aperti. Proprietà nell'ambiente di esplorazione è determinata dal servizio globale.  
   
- Finestre cornice, d'altra parte, eseguire il DocObject all'interno della finestra cornice push il valore di SelectionContext (confrontarsi ItemID/gerarchia/SelectionContainer). . Finestre cornice utilizzano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> a questo scopo. Dell'oggetto documento push solo i valori per il contenitore di selezione, lasciando i valori locali per la gerarchia e ItemID invariato, come avviene per i documenti figlio MDI.  
+  Finestre cornice, utilizzano d'altra parte, dell'oggetto documento all'interno della finestra cornice per inserire il valore di SelectionContext (il trio di gerarchia/ID dell'elemento/SelectionContainer). . Finestre cornice usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> per questo scopo. Oggetto documento può effettuare il push solo i valori per il contenitore di selezione, lasciando i valori locali per la gerarchia e ItemID invariato, come avviene per i documenti figlio MDI.  
   
 ### <a name="events-and-currency"></a>Gli eventi e valuta  
  Due tipi di eventi possono verificarsi che influiscono sulla nozione dell'ambiente di valuta:  
   
--   Eventi che vengono propagati a livello globale e modificare il contesto della selezione finestra cornice. Esempi di questo tipo di evento di una finestra figlio MDI viene aperta una finestra di strumento globale in corso l'apertura o una finestra degli strumenti del tipo di progetto viene aperto.  
+-   Eventi che vengono propagati a livello globale e modificare il contesto di selezione finestra cornice. Esempi di questo tipo di evento includono una finestra figlio MDI viene aperta una finestra degli strumenti globale in corso l'apertura o una finestra degli strumenti del tipo di progetto in corso l'apertura.  
   
--   Eventi che modificano gli elementi tracciati all'interno del contesto di selezione cornice di finestra. Ad esempio la modifica di selezione all'interno di DocObject o la modifica della selezione in una finestra del tipo di progetto.  
+-   Eventi che modificano gli elementi viene tracciati nel contesto di selezione finestra cornice. Ad esempio la modifica di selezione all'interno di un DocObject o la modifica di selezione in una finestra del tipo di progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Selezione oggetti di contesto](../../extensibility/internals/selection-context-objects.md)   
+ [Oggetti di contesto di selezione](../../extensibility/internals/selection-context-objects.md)   
  [Commenti e suggerimenti per l'utente](../../extensibility/internals/feedback-to-the-user.md)

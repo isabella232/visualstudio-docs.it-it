@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest | Documenti Microsoft
+title: IDebugPort2::GetPortRequest | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6897c3085f14be785e4baaace0de7a4e92fea9ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433f9724a712620e86cb78ab64e1ce27e6151d30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920105"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-Ottiene la descrizione di una porta utilizzata per creare la porta (se disponibile).  
+Ottiene la descrizione di una porta che è stato precedentemente utilizzata per creare la porta (se disponibile).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,12 +41,12 @@ int GetPortRequest(
   
 #### <a name="parameters"></a>Parametri  
  `ppRequest`  
- [out] Restituisce un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) oggetto che rappresenta la richiesta è stata utilizzata per creare la porta.  
+ [out] Restituisce un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) oggetto che rappresenta la richiesta che è stata usata per creare la porta.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  Restituisce `E_PORT_NO_REQUEST` se una porta non è stata creata utilizzando un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) richiesta porta.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  Restituisce `E_PORT_NO_REQUEST` se non è stata creata una porta con un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) richiesta porta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
- [Aggiungi porta](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+ [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

@@ -46,39 +46,39 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca6d6d1e4a3ad6705890efdc40171857781e6d12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892935"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual C++ è possibile usare [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) nativi per rilevare errori di runtime comuni, ad esempio:  
   
--   Errori del puntatore dello stack.  
+- Errori del puntatore dello stack.  
   
--   Sovraccarichi di matrici locali.  
+- Sovraccarichi di matrici locali.  
   
--   Errori dello stack.  
+- Errori dello stack.  
   
--   Dipendenze da variabili locali non inizializzate.  
+- Dipendenze da variabili locali non inizializzate.  
   
--   Perdita di dati a causa dell'assegnazione a una variabile di lunghezza inferiore.  
+- Perdita di dati a causa dell'assegnazione a una variabile di lunghezza inferiore.  
   
- Se si usa l'opzione **/RTC** con una build ottimizzata (**/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.  
+  Se si usa l'opzione **/RTC** con una build ottimizzata (**/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.  
   
- Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per altre informazioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
+  Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per altre informazioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
   
- Nelle procedure riportate di seguito viene descritto come attivare i controlli runtime nativi in una build di debug e come modificare il comportamento di tali controlli.  
+  Nelle procedure riportate di seguito viene descritto come attivare i controlli runtime nativi in una build di debug e come modificare il comportamento di tali controlli.  
   
- Negli altri argomenti di questa sezione vengono fornite informazioni relative a:  
+  Negli altri argomenti di questa sezione vengono fornite informazioni relative a:  
   
--   [Personalizzazione dei controlli runtime nativi](../debugger/native-run-time-checks-customization.md)  
+- [Personalizzazione dei controlli runtime nativi](../debugger/native-run-time-checks-customization.md)  
   
--   [Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Per attivare i controlli runtime nativi in una build di debug  
   

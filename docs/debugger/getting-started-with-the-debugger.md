@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827558"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>: Esercitazione eseguire il debug usando Visual Studio
 
 Questo articolo presenta le funzionalità del debugger di Visual Studio in una procedura dettagliata. Se si desidera una visualizzazione di alto livello delle funzionalità di debug, vedere [Debugger Feature Tour](../debugger/debugger-feature-tour.md). Quando si *il debug dell'app*, in genere significa che si esegue l'applicazione con il debugger collegato. Quando si esegue questa operazione, il debugger fornisce diversi modi per ottenere informazioni sulle attività del codice mentre è in esecuzione. È possibile esaminare il codice ed esaminare i valori archiviati nelle variabili, è possibile impostare espressioni di controllo sulle variabili per vedere quando i valori cambiano, è possibile esaminare il percorso di esecuzione del codice, vedere se un ramo del codice è in esecuzione e così via. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sull'esecuzione del debug che illustra una procedura simile. |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sull'esecuzione del debug che illustra una procedura simile. |
 
 Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#.
 
@@ -329,8 +329,8 @@ In genere, usiamo i tasti di scelta rapida in questo caso, perché è un buon me
 
      ![Usare l'esecuzione a fare clic su funzionalità](../debugger/media/get-started-run-to-click.png "eseguire fa clic su")
 
-    >  [!NOTE]
-    > Il **Esegui fino al clic** pulsante è stato introdotto in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se non viene visualizzata sul pulsante freccia verde, usare **F11** in questo esempio invece di far avanzare il debugger nel posto giusto.
+   > [!NOTE]
+   > Il **Esegui fino al clic** pulsante è stato introdotto in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se non viene visualizzata sul pulsante freccia verde, usare **F11** in questo esempio invece di far avanzare il debugger nel posto giusto.
 
 6. Fare clic sul **Esegui fino al fare clic su** pulsante ![Esegui fino al fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -408,14 +408,14 @@ Funzionalità che consentono di controllare le variabili sono una delle funziona
 
 1. Durante la pausa il `foreach` ciclo (`for` ciclo in C++), fare clic sui **Stack di chiamate** finestra, per impostazione predefinita è aperto nel riquadro inferiore destro.
 
-1. Fare clic su **F11** alcune volte finché non viene visualizzato il debugger di sospendere le risorse nel `Circle.Draw` metodo nell'editor del codice. Esaminare i **Stack di chiamate** finestra.
+2. Fare clic su **F11** alcune volte finché non viene visualizzato il debugger di sospendere le risorse nel `Circle.Draw` metodo nell'editor del codice. Esaminare i **Stack di chiamate** finestra.
 
     ![Esaminare lo stack di chiamate](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     Il **Stack di chiamate** finestra Mostra l'ordine in cui vengono introduzione chiamate i metodi e le funzioni. La prima riga visualizza la funzione corrente (il `Circle.Draw` o `Circle::Draw` metodo nell'app). La seconda riga indica che `Circle.Draw` è stato chiamato dal `Main` metodo (`main` in C++) e così via.
 
-    >  [!NOTE]
-    > Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in alcuni ambienti di sviluppo integrato, ad esempio Eclipse.
+   > [!NOTE]
+   > Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in alcuni ambienti di sviluppo integrato, ad esempio Eclipse.
 
     Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
 

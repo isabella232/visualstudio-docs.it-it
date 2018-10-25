@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2053083ed5e39422deeeb87f34aaf9e13aff6e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891068"
 ---
 # <a name="processes-view"></a>Visualizzazione processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ La visualizzazione dei processi viene visualizzato un albero di tutti i processi
   
 #### <a name="to-open-the-processes-view"></a>Per aprire la visualizzazione dei processi  
   
-1.  Dal **Spy** menu, scegliere **processi**.  
+1. Dal **Spy** menu, scegliere **processi**.  
   
- ![Spy&#43; &#43; visualizzazione processi](../debugger/media/spy-processes.png "Spy + + _Processes")  
-Visualizzazione processi di Spy++  
+   ![Spy&#43; &#43; visualizzazione processi](../debugger/media/spy-processes.png "Spy + + _Processes")  
+   Visualizzazione processi di Spy++  
   
- La figura precedente mostra la visualizzazione dei processi con thread e processi nodi espansi.  
+   La figura precedente mostra la visualizzazione dei processi con thread e processi nodi espansi.  
   
 ### <a name="in-this-section"></a>In questa sezione  
  [La ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  

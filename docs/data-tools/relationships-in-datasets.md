@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864127"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
 I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati con il **configurazione guidata origine dati**, o il **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto per l'utente.
@@ -58,7 +58,7 @@ Come parte del vincolo di chiave esterna, è possibile specificare regole di int
 Le regole che è possibile apportare siano specificate nel <xref:System.Data.Rule> enumerazione ed elencate nella tabella seguente.
 
 |Regola del vincolo di chiave esterna|Operazione|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|È anche apportare la modifica (aggiornamento o eliminazione) apportata al record padre nei record correlati nella tabella figlio.|
 |<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nel record figlio è impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", vale a dire, non dispongono di alcuna relazione con i record padre. **Nota:** utilizzando questa regola può comportare dati non validi nella tabella figlio.|
 |<xref:System.Data.Rule.SetDefault>|La chiave esterna nei record figlio correlati è impostata sul valore predefinito (come stabilito in base alla colonna <xref:System.Data.DataColumn.DefaultValue%2A> proprietà).|

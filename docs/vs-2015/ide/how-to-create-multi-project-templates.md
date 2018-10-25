@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950849"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: creare modelli basati su più progetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ I modelli multiprogetto fungono da contenitori per due o più progetti. Quando u
   
  Un modello per più progetti deve includere gli elementi seguenti, compressi in un file con estensione zip:  
   
--   Un file radice con estensione vstemplate per l'intero modello per più progetti. Il file con estensione vstemplate contiene i metadati visualizzati dalla finestra di dialogo **Nuovo progetto** e specifica la posizione dei file con estensione vstemplate per i progetti del modello. Questo file deve trovarsi nella radice del file con estensione zip.  
+- Un file radice con estensione vstemplate per l'intero modello per più progetti. Il file con estensione vstemplate contiene i metadati visualizzati dalla finestra di dialogo **Nuovo progetto** e specifica la posizione dei file con estensione vstemplate per i progetti del modello. Questo file deve trovarsi nella radice del file con estensione zip.  
   
--   Una o più cartelle che contengono i file necessari per un modello di progetto completo. Sono inclusi tutti i file di codice per il progetto e un file con estensione vstemplate per il progetto.  
+- Una o più cartelle che contengono i file necessari per un modello di progetto completo. Sono inclusi tutti i file di codice per il progetto e un file con estensione vstemplate per il progetto.  
   
- Ad esempio, il file con estensione zip di un modello per più progetti con due progetti può includere i file e le directory seguenti:  
+  Ad esempio, il file con estensione zip di un modello per più progetti con due progetti può includere i file e le directory seguenti:  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- Il file radice con estensione vstemplate per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:  
+  Il file radice con estensione vstemplate per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:  
   
--   L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup`. Ad esempio:  
+- L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup`. Ad esempio:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione vstemplate dei progetti inclusi. Ad esempio:  
+- L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione vstemplate dei progetti inclusi. Ad esempio:  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- I modelli per più progetti si differenziano dai modelli normali anche nel comportamento. I modelli per più progetti presentano le caratteristiche specifiche seguenti:  
+  I modelli per più progetti si differenziano dai modelli normali anche nel comportamento. I modelli per più progetti presentano le caratteristiche specifiche seguenti:  
   
--   Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti tramite la finestra di dialogo **Nuovo progetto**. Usare l'attributo `ProjectName` nell'elemento `ProjectTemplateLink` per specificare il nome di ogni progetto. Per altre informazioni, vedere il primo esempio della sezione seguente.  
+- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti tramite la finestra di dialogo **Nuovo progetto**. Usare l'attributo `ProjectName` nell'elemento `ProjectTemplateLink` per specificare il nome di ogni progetto. Per altre informazioni, vedere il primo esempio della sezione seguente.  
   
--   I modelli per più progetti possono contenere progetti scritti in linguaggi diversi, ma l'intero modello può essere inserito in una sola categoria usando l'elemento `ProjectType`.  
+- I modelli per più progetti possono contenere progetti scritti in linguaggi diversi, ma l'intero modello può essere inserito in una sola categoria usando l'elemento `ProjectType`.  
   
 ### <a name="to-create-a-multi-project-template"></a>Per creare un modello per più progetti  
   

@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895210"
 ---
 # <a name="vspackage-state"></a>Stato di un pacchetto VSPackage
 Molti fattori determinano il set di valori persistenti o stato, di un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dell'applicazione.  
   
--   I progetti dispongono di proprietà di configurazione e progetto.  
+- I progetti dispongono di proprietà di configurazione e progetto.  
   
--   Le soluzioni hanno le proprietà.  
+- Le soluzioni hanno le proprietà.  
   
--   Impostazioni utente determinano le dimensioni e posizione delle finestre dei documenti, finestre degli strumenti, stato di ancoraggio e tasti di scelta rapida.  
+- Impostazioni utente determinano le dimensioni e posizione delle finestre dei documenti, finestre degli strumenti, stato di ancoraggio e tasti di scelta rapida.  
   
--   Le applicazioni possono contenere opzioni impostati da un utente.  
+- Le applicazioni possono contenere opzioni impostati da un utente.  
   
--   Gli oggetti che crea un'applicazione possono disporre di proprietà proprie.  
+- Gli oggetti che crea un'applicazione possono disporre di proprietà proprie.  
   
- Ecco alcuni dei metodi che un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lo stato dell'applicazione può essere gestito:  
+  Ecco alcuni dei metodi che un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lo stato dell'applicazione può essere gestito:  
   
--   Tramite le pagine di proprietà di progetto e soluzione.  
+- Tramite le pagine di proprietà di progetto e soluzione.  
   
--   Tramite il **importazione / esportazione guidata delle impostazioni**, che consente all'utente di spostare le impostazioni da un computer a un altro.  
+- Tramite il **importazione / esportazione guidata delle impostazioni**, che consente all'utente di spostare le impostazioni da un computer a un altro.  
   
--   Tramite il **opzioni** della finestra di dialogo che include le opzioni relative alle applicazioni.  
+- Tramite il **opzioni** della finestra di dialogo che include le opzioni relative alle applicazioni.  
   
--   Tramite il **proprietà** finestra, che espone le proprietà degli oggetti.  
+- Tramite il **proprietà** finestra, che espone le proprietà degli oggetti.  
   
--   Grazie all'automazione. Un'applicazione può accedere a VSPackage e l'oggetto proprietà che sono stati esposti all'automazione.  
+- Grazie all'automazione. Un'applicazione può accedere a VSPackage e l'oggetto proprietà che sono stati esposti all'automazione.  
   
- Lo stato dell'applicazione sottostante sono vari meccanismi di persistenza che abilitano lo stato dell'applicazione essere salvato e ripristinato.  
+  Lo stato dell'applicazione sottostante sono vari meccanismi di persistenza che abilitano lo stato dell'applicazione essere salvato e ripristinato.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Supporto per la persistenza dello stato](../misc/support-for-state-persistence.md)  

@@ -1,5 +1,5 @@
 ---
-title: Funzione SccUninitialize | Documenti Microsoft
+title: Funzione SccUninitialize | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb6b5cec0e0d9bb4c90cc284009ab7fc693912
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9d992428dd6358cee2b6a46efc0816e7840c449
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948031"
 ---
-# <a name="sccuninitialize-function"></a>SccUninitialize (funzione)
-Questa funzione pulisce le allocazioni o connessioni aperte create da una chiamata precedente al [SccInitialize](../extensibility/sccinitialize-function.md) in preparazione per l'arresto di plug-in controllo del codice sorgente.  
+# <a name="sccuninitialize-function"></a>Funzione SccUninitialize
+Questa funzione Elimina tutte le allocazioni o connessioni aperte create da una precedente chiamata ai [SccInitialize](../extensibility/sccinitialize-function.md) in preparazione per il plug-in del controllo del codice sorgente in corso l'arresto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,18 +35,18 @@ SCCRTN SccUninitialize (
   
 #### <a name="parameters"></a>Parametri  
  pvContext  
- [in] Il puntatore alla struttura contesto plug-in controllo di origine creati nel [SccInitialize](../extensibility/sccinitialize-function.md).  
+ [in] Il puntatore alla struttura di contesto del plug-in controllo di origine creato nel [SccInitialize](../extensibility/sccinitialize-function.md).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|La pulizia completata.|  
   
 ## <a name="remarks"></a>Note  
- Il plug-in controllo del codice sorgente è responsabile per la preparazione di arrestare il computer e per liberare la memoria allocata il plug-in per la struttura di contesto. La funzione viene chiamata una volta per ogni istanza specifica di un plug-in. Una chiamata al [SccInitialize](../extensibility/sccinitialize-function.md) precede questa chiamata. Nessun progetto è ancora possibile aprire al momento della chiamata a `SccUninitialize`.  
+ Il plug-in del controllo del codice sorgente è responsabile della preparazione per essere arrestata e per liberare memoria in cui è allocato il plug-in per la struttura scelta. La funzione viene chiamata una volta per ogni istanza specifica di un plug-in. Una chiamata per il [SccInitialize](../extensibility/sccinitialize-function.md) precede questa chiamata. Nessun progetto può essere ancora aperto al momento della chiamata a `SccUninitialize`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

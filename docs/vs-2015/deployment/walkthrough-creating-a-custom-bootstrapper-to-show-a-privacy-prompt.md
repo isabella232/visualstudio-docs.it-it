@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893392"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ ms.locfileid: "49217964"
   
 #### <a name="to-create-a-consent-dialog-box"></a>Per creare una finestra di dialogo di consenso  
   
-1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-2.  Nel **nuovo progetto** della finestra di dialogo fare clic su **Windows**, quindi fare clic su **WindowsFormsApplication**.  
+2. Nel **nuovo progetto** della finestra di dialogo fare clic su **Windows**, quindi fare clic su **WindowsFormsApplication**.  
   
-3.  Per il **Name**, digitare **ConsentDialog**, quindi fare clic su **OK**.  
+3. Per il **Name**, digitare **ConsentDialog**, quindi fare clic su **OK**.  
   
-4.  Nella finestra di progettazione, fare clic sul form.  
+4. Nella finestra di progettazione, fare clic sul form.  
   
-5.  Nel **delle proprietà** finestra Modifica il **testo** proprietà **della finestra di consenso di aggiornamento**.  
+5. Nel **delle proprietà** finestra Modifica il **testo** proprietà **della finestra di consenso di aggiornamento**.  
   
-6.  Nel **casella degli strumenti**, espandere **tutti i Windows Form**e trascinare un' **etichetta** controllo al form.  
+6. Nel **casella degli strumenti**, espandere **tutti i Windows Form**e trascinare un' **etichetta** controllo al form.  
   
-7.  Nella finestra di progettazione, fare clic sul controllo etichetta.  
+7. Nella finestra di progettazione, fare clic sul controllo etichetta.  
   
-8.  Nel **delle proprietà** finestra Modifica il **testo** proprietà sotto **aspetto** al seguente:  
+8. Nel **delle proprietà** finestra Modifica il **testo** proprietà sotto **aspetto** al seguente:  
   
-     L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su "Accetto", si autorizza l'applicazione per cercare e installare automaticamente gli aggiornamenti da Internet.  
+    L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su "Accetto", si autorizza l'applicazione per cercare e installare automaticamente gli aggiornamenti da Internet.  
   
 9. Nel **casella degli strumenti**, trascinare un **casella di controllo** controllo al centro del form.  
   
@@ -118,28 +118,28 @@ ms.locfileid: "49217964"
   
      Visual Basic solo per sviluppatori:  
   
-    1.  Nelle **Esplora soluzioni**, fare clic su **ConsentDialog**.  
+    1. Nelle **Esplora soluzioni**, fare clic su **ConsentDialog**.  
   
-    2.  Nel **Project** menu, fare clic su **Aggiungi modulo**e quindi fare clic su **Add**.  
+    2. Nel **Project** menu, fare clic su **Aggiungi modulo**e quindi fare clic su **Add**.  
   
-    3.  Nel file di codice Module1.vb, aggiungere il codice seguente.  
+    3. Nel file di codice Module1.vb, aggiungere il codice seguente.  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  Nel **progetto** menu, fare clic su **proprietà ConsentDialog**e quindi fare clic sul **applicazione** scheda.  
+    4. Nel **progetto** menu, fare clic su **proprietà ConsentDialog**e quindi fare clic sul **applicazione** scheda.  
   
-    5.  Deselezionare l'opzione **Abilita framework applicazione**.  
+    5. Deselezionare l'opzione **Abilita framework applicazione**.  
   
-    6.  Nel **oggetto di avvio** elenco a discesa dal menu **Module1**.  
+    6. Nel **oggetto di avvio** elenco a discesa dal menu **Module1**.  
   
-        > [!NOTE]
-        >  La disabilitazione di framework applicazione disattiva le funzionalità, ad esempio stili di Windows XP, gli eventi dell'applicazione, la schermata iniziale, un'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  La disabilitazione di framework applicazione disattiva le funzionalità, ad esempio stili di Windows XP, gli eventi dell'applicazione, la schermata iniziale, un'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Per Visual c# solo per gli sviluppatori:  
+       Per Visual c# solo per gli sviluppatori:  
   
-     Aprire il file di codice Program.cs e aggiungere il codice seguente.  
+       Aprire il file di codice Program.cs e aggiungere il codice seguente.  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. Nel **compilare** menu, fare clic su **BuildSolution**.  
   

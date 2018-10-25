@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Documenti Microsoft
+title: STEPKIND | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f28748914566162cbe070dd3d2e606eb8ce118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b69f90633c08eda3b27c0292be44743b2cd38509
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948369"
 ---
 # <a name="stepkind"></a>STEPKIND
 Specifica il tipo di passaggio per l'esecuzione di istruzioni.  
@@ -51,16 +51,16 @@ public enum enum_STEPKIND {
  Passaggi in una funzione.  
   
  STEP_OVER  
- Esegue una funzione.  
+ Istruzioni/routine di una funzione.  
   
  STEP_OUT  
- Passaggi di una funzione.  
+ Esce dalla funzione.  
   
  STEP_BACKWARDS  
- Operazioni con le versioni precedenti in una funzione.  
+ Procedura con le versioni precedenti in una funzione.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [passaggio](../../../extensibility/debugger/reference/idebugprocess3-step.md) metodo.  
+ Passato come argomento per il [passaggio](../../../extensibility/debugger/reference/idebugprocess3-step.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

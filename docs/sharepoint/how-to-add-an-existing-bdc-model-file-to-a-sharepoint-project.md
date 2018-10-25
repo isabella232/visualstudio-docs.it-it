@@ -22,31 +22,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f7508cf8c66343894c16da7ff840bd275abb65c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bda78d33a5b49d936fb632e78472c91ab1230ba5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922614"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint
   È possibile personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati (BDC) usando Visual Studio per aggiungere il file del modello (*bdcm*) a qualsiasi progetto farm di SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Per aggiungere un file del modello di integrazione applicativa dei dati a un progetto SharePoint  
   
-1.  Nelle **Esplora soluzioni**, scegliere la cartella per un progetto SharePoint.  
+1. Nelle **Esplora soluzioni**, scegliere la cartella per un progetto SharePoint.  
   
-2.  Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**.  
+2. Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**.  
   
-3.  Nel **Aggiungi elemento esistente** finestra di dialogo, selezionare il percorso del file di definizione del modello che si desidera aggiungere al progetto, scegliere il file e quindi scegliere il **Add** pulsante.  
+3. Nel **Aggiungi elemento esistente** finestra di dialogo, selezionare il percorso del file di definizione del modello che si desidera aggiungere al progetto, scegliere il file e quindi scegliere il **Add** pulsante.  
   
-     Se il modello non definisce una *sistema Line-of-Business (LOB) di tipo assembly .NET*, il **LobSystem di assembly .NET aggiungere** verrà visualizzata la finestra di dialogo.  
+    Se il modello non definisce una *sistema Line-of-Business (LOB) di tipo assembly .NET*, il **LobSystem di assembly .NET aggiungere** verrà visualizzata la finestra di dialogo.  
   
-4.  Se la finestra di dialogo viene visualizzata, effettuare una delle seguenti operazioni:  
+4. Se la finestra di dialogo viene visualizzata, effettuare una delle seguenti operazioni:  
   
-    -   Se si desidera scrivere codice personalizzato e usare una finestra di progettazione per definire i metadati per il modello importato, scegliere il **Yes** pulsante, assegnare un nome di sistema e quindi scegliere il **OK** pulsante.  
+   - Se si desidera scrivere codice personalizzato e usare una finestra di progettazione per definire i metadati per il modello importato, scegliere il **Yes** pulsante, assegnare un nome di sistema e quindi scegliere il **OK** pulsante.  
   
-    -   In caso contrario, scegliere il **No** pulsante e quindi scegliere il **OK** pulsante.  
+   - In caso contrario, scegliere il **No** pulsante e quindi scegliere il **OK** pulsante.  
   
      Il **Business Data Connectivity Model** elemento viene aggiunto al progetto.  
   

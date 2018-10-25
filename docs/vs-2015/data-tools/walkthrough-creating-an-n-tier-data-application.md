@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890179"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: creazione di un'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
   
  Durante questa procedura dettagliata, verranno eseguiti i passaggi seguenti:  
   
--   Creare una nuova soluzione a più livelli che contiene più progetti.  
+- Creare una nuova soluzione a più livelli che contiene più progetti.  
   
--   Aggiungere due progetti di libreria di classi alla soluzione a più livelli.  
+- Aggiungere due progetti di libreria di classi alla soluzione a più livelli.  
   
--   Creare un dataset tipizzato usando il **configurazione guidata origine dati**.  
+- Creare un dataset tipizzato usando il **configurazione guidata origine dati**.  
   
--   Separare il generato [TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e il codice di set di dati in progetti discreti.  
+- Separare il generato [TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e il codice di set di dati in progetti discreti.  
   
--   Creare un servizio Windows Communication Foundation (WCF) per effettuare chiamate nel livello di accesso ai dati.  
+- Creare un servizio Windows Communication Foundation (WCF) per effettuare chiamate nel livello di accesso ai dati.  
   
--   Creare funzioni nel servizio per recuperare i dati dal livello di accesso ai dati.  
+- Creare funzioni nel servizio per recuperare i dati dal livello di accesso ai dati.  
   
--   Creare un'applicazione Windows Form come livello di presentazione.  
+- Creare un'applicazione Windows Form come livello di presentazione.  
   
--   Creare i controlli Windows Form associati all'origine dati.  
+- Creare i controlli Windows Form associati all'origine dati.  
   
--   Scrivere il codice per popolare le tabelle dati.  
+- Scrivere il codice per popolare le tabelle dati.  
   
- ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") per una versione video di questo argomento, vedere [procedura Video: creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") per una versione video di questo argomento, vedere [procedura Video: creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  
@@ -144,17 +144,17 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Per separare gli oggetti TableAdapter dal dataset  
   
-1.  Fare doppio clic su **NorthwindDataSet. xsd** nelle **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.  
+1. Fare doppio clic su **NorthwindDataSet. xsd** nelle **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.  
   
-2.  Fare clic su un'area vuota della finestra di progettazione.  
+2. Fare clic su un'area vuota della finestra di progettazione.  
   
-3.  Individuare il **DataSetProject** nodo il **proprietà** finestra.  
+3. Individuare il **DataSetProject** nodo il **proprietà** finestra.  
   
-4.  Nel **DataSetProject** fare clic su **DataEntityTier**.  
+4. Nel **DataSetProject** fare clic su **DataEntityTier**.  
   
-5.  Scegliere **Compila soluzione** dal menu **Compila**.  
+5. Scegliere **Compila soluzione** dal menu **Compila**.  
   
- Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero dataset (DataAccessTier) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (DataEntityTier) contiene il set di dati tipizzato: NorthwindDataSet (o NorthwindDataSet.Dataset.Designer.cs).  
+   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero dataset (DataAccessTier) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (DataEntityTier) contiene il set di dati tipizzato: NorthwindDataSet (o NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), classi parziali del dataset presenti nel progetto non verranno spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  

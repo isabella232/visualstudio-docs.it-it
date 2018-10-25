@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_basetype | Documenti Microsoft'
+title: Get_basetype | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080c8872682f9c255eda77449cb24dd703cd9583
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901788"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-Recupera il tipo base per questo simbolo *.*  
+Recupera il tipo base per questo simbolo<em>.</em>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_baseType (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un valore di [BasicType (enumerazione)](../../debugger/debug-interface-access/basictype.md) enumerazione che specifica il tipo di base del simbolo.  
+ [out] Restituisce un valore di [enumerazione BasicType](../../debugger/debug-interface-access/basictype.md) enumerazione che specifica il tipo di base del simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -43,7 +43,7 @@ HRESULT get_baseType (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Ottenere innanzitutto il tipo del simbolo ed quindi l'interrogazione restituite per il tipo di base, è possibile determinare il tipo di base per un simbolo. Si noti che alcuni simboli non possono avere un tipo di base, ad esempio, un nome di struttura.  
+ Prima di tutto ottenere il tipo del simbolo ed quindi interrogazione che restituito per il tipo di base, è possibile determinare il tipo di base per un simbolo. Si noti che alcuni simboli potrebbero non avere un tipo di base, ad esempio, un nome di struttura.  
   
 ## <a name="example"></a>Esempio  
   
@@ -65,7 +65,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

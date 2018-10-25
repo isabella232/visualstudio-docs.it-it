@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasInlAsm | Documenti Microsoft
+title: Get_hasinlasm | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2410400bc18b461ea9dc9ba05cde1c1a3681
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c582e57a7cc2302d1afb9b9cfe4ac479bcdd0bdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847734"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Recupera un flag che specifica se la funzione contiene assembly inline.  
@@ -47,7 +47,7 @@ HRESULT get_hasInlAsm(
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Getenumdebugstreams | Documenti Microsoft'
+title: Getenumdebugstreams | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e604734b7dceb9c0edc1fc19aaae56655ee27f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 53eb0765b7a3d9ed5fb23c0b1d8880eeca390159
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818797"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
-Recupera una sequenza di debug di flussi di dati enumerata.  
+Recupera una sequenza enumerata di flussi di dati di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT getEnumDebugStreams (
   
 #### <a name="parameters"></a>Parametri  
  `ppEnumDebugStreams`  
- [out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un elenco di flussi di debug.  
+ [out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un elenco dei flussi di debug.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

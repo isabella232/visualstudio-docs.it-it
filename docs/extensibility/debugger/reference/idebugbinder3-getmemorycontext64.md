@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Documenti Microsoft
+title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ec9be314597f2f4fd7fa067db17028c1d8aee72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccfb34e03259e67eaca17e2cee7c824e62ce0393
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925909"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Converte un percorso dell'oggetto o un indirizzo di memoria a 64 bit in un contesto di memoria.  
+Converte un percorso di oggetto o un indirizzo di memoria a 64 bit in un contesto in memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ int GetMemoryContext64 (
   
 #### <a name="parameters"></a>Parametri  
  `pField`  
- [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi utilizzare `dwConstant` invece.  
+ [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.  
   
  `uConstant`  
  [in] Un indirizzo di memoria a 64 bit, ad esempio 0x50000000.  
@@ -56,7 +56,7 @@ int GetMemoryContext64 (
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente crea un oggetto che implementa il [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) l'interfaccia e Usa questo metodo per recuperare il contesto di memoria.  
+ Nell'esempio seguente crea un oggetto che implementa il [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) interfaccia e Usa questo metodo per recuperare il contesto di memoria.  
   
 ```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  

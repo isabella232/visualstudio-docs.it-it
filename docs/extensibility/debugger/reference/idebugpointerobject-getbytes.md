@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Documenti Microsoft
+title: IDebugPointerObject::GetBytes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1459a0f99dd4b0ea9c9e998404b1ffe1733cb3bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 106472037873045b0b30381e6ce901c89b342bae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916549"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Ottiene il valore a cui punta come una serie di byte consecutivi.  
+Ottiene il valore indicato come una serie di byte consecutivi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,22 +47,22 @@ int GetBytes(
   
 #### <a name="parameters"></a>Parametri  
  `dwStart`  
- [in] Offset, in byte, dall'inizio dell'oggetto a cui puntata.  
+ [in] Offset, in byte, dall'inizio dell'oggetto puntato.  
   
  `dwCount`  
  [in] Il numero di byte da recuperare.  
   
  `pBytes`  
- [in, out] Matrice che viene compilata con il valore come una serie di byte consecutivi, a partire dall'offset specificato dall'oggetto a cui punta.  
+ [in, out] Una matrice che viene compilata con il valore come una serie di byte consecutivi, iniziando in corrispondenza dell'offset specificato dall'oggetto puntato.  
   
  `pdwBytes`  
  [out] Restituisce il numero di byte effettivamente recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene utilizzato se il puntatore come rappresentato da questo [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o di una semplice matrice di tipi primitivi (ovvero, una matrice che può essere rappresentato da una semplice sequenza di byte).  
+ Questo metodo viene utilizzato se il puntatore come rappresentato da questo [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o di una semplice matrice di tipi primitivi (vale a dire, una matrice che può essere rappresentato da una semplice sequenza di byte).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   

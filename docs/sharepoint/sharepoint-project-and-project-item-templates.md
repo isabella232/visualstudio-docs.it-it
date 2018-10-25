@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896445"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Progetto SharePoint e i modelli di progetto
   Le sezioni seguenti descrivono il progetto SharePoint disponibili e i modelli e come vengono usati di elemento di progetto. 
@@ -41,7 +41,7 @@ ms.locfileid: "37118969"
  Per informazioni sui concetti fondamentali di SharePoint, vedere [blocchi predefiniti di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=179404). Gli utenti esperti possono creare progetto personalizzato e i modelli di progetto. Per altre informazioni, vedere [estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
   
 ## <a name="project-templates"></a>Modelli di progetto
- Seguito è riportato un elenco di modelli di progetto SharePoint. Per visualizzare i modelli di progetto SharePoint in Visual Studio nel **nuovo progetto** finestra di dialogo espandere il **SharePoint** nodo sotto **Visual c#** o  **Visual Basic**, quindi scegliere **2010**.  
+ Seguito è riportato un elenco di modelli di progetto SharePoint. Per visualizzare i modelli di progetto SharePoint in Visual Studio nel **nuovo progetto** finestra di dialogo espandere il **SharePoint** nodo sotto **Visual C#**  o  **Visual Basic**, quindi scegliere **2010**.  
   
 ### <a name="sharepoint-2010-project"></a>Progetto di SharePoint 2010
  Il contenuto di un *progetto SharePoint 2010* sono inclusi in ogni modello di progetto SharePoint. Contiene un progetto SharePoint 2010:  
@@ -95,17 +95,17 @@ ms.locfileid: "37118969"
 ### <a name="event-receiver"></a>Ricevitore di eventi
  *Ricevitori di eventi* gestire gli eventi per gli elementi nel sito di SharePoint, ad esempio quando un elemento viene aggiunto a un elenco, quando viene eliminato un elemento web o quando un flusso di lavoro avviato. Il modello di elemento del progetto ricevitore di eventi ti permette di gestire  
   
--   Elenco eventi  
+- Elenco eventi  
   
--   Eventi elementi elenco  
+- Eventi elementi elenco  
   
--   Elenco eventi di posta elettronica  
+- Elenco eventi di posta elettronica  
   
--   eventi Web  
+- eventi Web  
   
--   Elenco eventi di flusso di lavoro  
+- Elenco eventi di flusso di lavoro  
   
- L'elemento di progetto di ricevitore di eventi consente di creare un **ricevitore di eventi** cartella con un file di classe singola che contiene i gestori eventi per tutti gli eventi specificati quando si crea il progetto nel **personalizzazione di SharePoint Procedura guidata**. Classe del ricevitore di eventi può gestire eventi che si verificano nel sito di SharePoint quando gli elementi, ad esempio file, i campi, elementi, elenchi, allegati, le web part e flussi di lavoro vengono aggiunti, aggiornati, eliminati o rimosso. Per altre informazioni, vedere [procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md) e [blocco predefinito: gestione degli eventi](http://go.microsoft.com/fwlink/?LinkId=179416).  
+  L'elemento di progetto di ricevitore di eventi consente di creare un **ricevitore di eventi** cartella con un file di classe singola che contiene i gestori eventi per tutti gli eventi specificati quando si crea il progetto nel **personalizzazione di SharePoint Procedura guidata**. Classe del ricevitore di eventi può gestire eventi che si verificano nel sito di SharePoint quando gli elementi, ad esempio file, i campi, elementi, elenchi, allegati, le web part e flussi di lavoro vengono aggiunti, aggiornati, eliminati o rimosso. Per altre informazioni, vedere [procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md) e [blocco predefinito: gestione degli eventi](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
 ### <a name="list"></a>List  
  Un elenco è un'istanza di una base SharePoint elenco definizione riutilizzabile, ad esempio un calendario o di un elenco di attività. Dopo aver aggiunto un elenco per la soluzione, la finestra di progettazione di elenco consente di aggiungere le colonne del sito all'elenco e creare colonne elenco personalizzato. Ciò include le colonne del sito da tipi di contenuto. È possibile specificare il *vista* per un elenco, che determina le colonne che verranno visualizzati nell'elenco. Per altre informazioni, vedere [procedura dettagliata: creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [blocco predefinito: gli elenchi e raccolte documenti](http://go.microsoft.com/fwlink/?LinkId=179421).  
@@ -125,13 +125,13 @@ ms.locfileid: "37118969"
 ### <a name="site-definition-farm-solution-only"></a>Definizione di sito (solo soluzione farm)
  *Definizione sito* gli elementi di progetto contengono una cartella di definizione di sito che include i file seguenti:  
   
--   Una pagina aspx di impostazione predefinita, usata come pagina web predefinita per il sito.  
+- Una pagina aspx di impostazione predefinita, usata come pagina web predefinita per il sito.  
   
--   Un' *onet* file che definisce i componenti del sito.  
+- Un' *onet* file che definisce i componenti del sito.  
   
--   Un file xml webtemp che specifica le configurazioni di definizioni di sito visualizzati nella **selezione modello** sezione il **nuovo sito di SharePoint** pagina.  
+- Un file xml webtemp che specifica le configurazioni di definizioni di sito visualizzati nella **selezione modello** sezione il **nuovo sito di SharePoint** pagina.  
   
- Dopo aver aggiunto una definizione di sito, aggiungere codice e i file di introdurre funzionalità. Questo elemento del progetto è utilizzabile solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo per soluzioni farm. Per altre informazioni, vedere [creazione di site definitions per SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) e [definizioni di sito e le configurazioni](http://go.microsoft.com/fwlink/?LinkId=260554).  
+  Dopo aver aggiunto una definizione di sito, aggiungere codice e i file di introdurre funzionalità. Questo elemento del progetto è utilizzabile solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo per soluzioni farm. Per altre informazioni, vedere [creazione di site definitions per SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) e [definizioni di sito e le configurazioni](http://go.microsoft.com/fwlink/?LinkId=260554).  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>Flusso di lavoro macchina a stati (solo soluzione farm)
  Oggetto *lavoro macchina a stati* è un set di stati per la logica di business, transizioni e le azioni. La procedura descritta in un flusso di lavoro macchina non viene eseguita in sequenza. al contrario, vengono attivate da azioni e gli stati. Ad esempio un flusso di lavoro sequenza di flussi sono associati a elementi quali elenchi e documenti di SharePoint. Ancora una volta, è possibile creare flussi di lavoro (globale) a livello di sito o a livello di elenco (locale). È anche possibile selezionare se un flusso di lavoro viene avviata automaticamente o manualmente. Questo elemento del progetto è utilizzabile solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo per soluzioni farm. Per altre informazioni, vedere [soluzioni di flusso di lavoro di SharePoint creare](../sharepoint/creating-sharepoint-workflow-solutions.md), [flussi di lavoro in SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [What ' s New: miglioramenti del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=179418).  

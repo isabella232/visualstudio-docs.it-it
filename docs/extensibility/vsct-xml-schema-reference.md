@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915555"
 ---
 # <a name="vsct-xml-schema-reference"></a>Riferimento allo schema XML VSCT
 Fornisce una tabella di elementi dello schema di comando del compilatore di tabella, con l'elemento figlio consentito gli elementi e attributi per ognuna.  
@@ -36,11 +36,11 @@ Fornisce una tabella di elementi dello schema di comando del compilatore di tabe
   
  Tutti i valori GUID e ID devono essere definiti con nomi simbolici. Questi nomi possono essere definiti nel file di intestazione o nel VSCT \<simboli > sezioni. I nomi simbolici devono essere locali, inclusi attraverso \<inclusione > elementi, o fa \<Extern > elementi. Un nome simbolico viene importato da un file di intestazione specificato in un \<Extern > elemento se segue il modello semplice di #define il valore di simbolo. Il valore può essere un altro simbolo, purché tale simbolo è stato definito in precedenza. Le definizioni di GUID devono seguire nel formato OLE o C++. I valori di ID possono essere cifre decimali o esadecimali che sono preceduti da 0x, come illustrato nelle righe seguenti:  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, come risultato 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, come risultato 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- Commenti in formato XML può essere usati, ma potrebbero rimuovere tali strumenti dell'interfaccia utente grafica di andata e ritorno. Il contenuto di \<Annotation > gli elementi sono garantiti a essere gestito indipendentemente dal formato.  
+  Commenti in formato XML può essere usati, ma potrebbero rimuovere tali strumenti dell'interfaccia utente grafica di andata e ritorno. Il contenuto di \<Annotation > gli elementi sono garantiti a essere gestito indipendentemente dal formato.  
   
 ## <a name="schema-hierarchy"></a>Gerarchia dello schema  
  Un file con estensione vsct presenta gli elementi principali seguenti:  

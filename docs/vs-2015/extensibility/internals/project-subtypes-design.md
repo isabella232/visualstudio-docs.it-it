@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839427"
 ---
 # <a name="project-subtypes-design"></a>Progettazione di sottotipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Sottotipi di progetto consentono a pacchetti VSPackage di estendere i progetti b
 ## <a name="project-subtype-design"></a>Sottotipo di progetto  
  L'inizializzazione di un sottotipo di progetto viene ottenuta mediante l'aggregazione principale <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> oggetti. Questa aggregazione consente a un sottotipo di progetto eseguire l'override o migliorare la maggior parte delle funzionalità del progetto di base. Sottotipi di progetto ottenere la prima opportunità di gestire le proprietà usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, usando i comandi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>e gestione di elementi di progetto mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Sottotipi di progetto possono anche essere estesi:  
   
--   Gli oggetti di configurazione del progetto.  
+- Gli oggetti di configurazione del progetto.  
   
--   Oggetti dipendenti dalla configurazione.  
+- Oggetti dipendenti dalla configurazione.  
   
--   Oggetti indipendenti dalla configurazione Sfoglia.  
+- Oggetti indipendenti dalla configurazione Sfoglia.  
   
--   Gli oggetti di automazione del progetto.  
+- Gli oggetti di automazione del progetto.  
   
--   Raccolte delle proprietà di automazione del progetto.  
+- Raccolte delle proprietà di automazione del progetto.  
   
- Per altre informazioni sull'estensibilità dai sottotipi di progetto, vedere [delle proprietà e metodi estesi dai sottotipi di progetto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Per altre informazioni sull'estensibilità dai sottotipi di progetto, vedere [delle proprietà e metodi estesi dai sottotipi di progetto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>File dei criteri  
  Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente fornisce un esempio di estensione del sistema di progetto di base con un sottotipo di progetto nella propria implementazione di file dei criteri. Un file di criteri consente il data shaping della [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente gestendo le funzionalità che includono Esplora soluzioni **Aggiungi progetto** nella finestra di dialogo **Aggiungi nuovo elemento** nella finestra di dialogo e  **Proprietà** nella finestra di dialogo. Il sottotipo criteri esegue l'override e migliora tali funzionalità attraverso <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementazioni.  

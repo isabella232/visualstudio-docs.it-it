@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855989"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elemento di Visual Studio)
 Specifica un file che viene incluso nel modello di elemento.  
@@ -51,13 +51,13 @@ Specifica un file che viene incluso nel modello di elemento.
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`SubType`|Attributo facoltativo.<br /><br /> Specifica il sottotipo di un elemento in un modello di elemento a più file. Questo valore viene utilizzato per determinare l'editor che [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] userà per aprire l'elemento.|  
-|`CustomTool`|Attributo facoltativo.<br /><br /> Imposta il CustomTool per l'elemento nel file di progetto.|  
-|`ItemType`|Attributo facoltativo.<br /><br /> Imposta il tipo di elemento per l'elemento nel file di progetto.|  
-|`ReplaceParameters`|Attributo facoltativo.<br /><br /> Valore booleano che specifica se l'elemento contiene i valori dei parametri devono essere sostituiti quando viene creato un progetto dal modello. Il valore predefinito è `false`.|  
-|`TargetFileName`|Attributo facoltativo.<br /><br /> Specifica il nome dell'elemento che viene creato dal modello. Questo attributo è utile per l'uso di sostituzione dei parametri per creare un nome di elemento.|  
+| Attributo | Descrizione |
+|---------------------| - |
+| `SubType` | Attributo facoltativo.<br /><br /> Specifica il sottotipo di un elemento in un modello di elemento a più file. Questo valore viene utilizzato per determinare l'editor che [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] userà per aprire l'elemento. |
+| `CustomTool` | Attributo facoltativo.<br /><br /> Imposta il CustomTool per l'elemento nel file di progetto. |
+| `ItemType` | Attributo facoltativo.<br /><br /> Imposta il tipo di elemento per l'elemento nel file di progetto. |
+| `ReplaceParameters` | Attributo facoltativo.<br /><br /> Valore booleano che specifica se l'elemento contiene i valori dei parametri devono essere sostituiti quando viene creato un progetto dal modello. Il valore predefinito è `false`. |
+| `TargetFileName` | Attributo facoltativo.<br /><br /> Specifica il nome dell'elemento che viene creato dal modello. Questo attributo è utile per l'uso di sostituzione dei parametri per creare un nome di elemento. |
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  

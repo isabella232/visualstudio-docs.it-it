@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850813"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -478,12 +478,13 @@ Il formato della regola è semplice, in modo che in questa sezione vengono descr
 
 Il `PageTemplate` attributo definisce come la regola venga visualizzata nel **pagine delle proprietà** finestra di dialogo. L'attributo può avere uno dei valori seguenti:
 
-|Attributo|Descrizione|
-|-|-|
-`generic`|Tutte le proprietà vengono visualizzate in un'unica pagina sotto le intestazioni di categoria<br/>La regola può essere visibile per la `Project` e `PropertySheet` contesti, ma non `File`.<br/><br/> Esempio: `$(VCTargetsPath)` \\ *1033*\\*General*
-`tool`|Le categorie vengono visualizzate come pagine secondarie.<br/>La regola può essere visibile in tutti i contesti: `Project`, `PropertySheet` e `File`.<br/>La regola è visibile nelle proprietà del progetto solo se il progetto contiene elementi con il `ItemType` definito in `Rule.DataSource`, a meno che il nome della regola è inclusa nel `ProjectTools` gruppo di elementi.<br/><br/>Esempio: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|La pagina viene visualizzata come parte della pagina di debug.<br/>Le categorie vengono attualmente ignorate.<br/>Il nome della regola deve corrispondere l'oggetto di eseguire il Debug dell'utilità di avvio MEF `ExportDebugger` attributo.<br/><br/>Esempio: `$(VCTargetsPath)` \\ *1033*\\*debugger\_locale\_windows.xml*
-*custom*| Modello personalizzato. Il nome del modello deve corrispondere il `ExportPropertyPageUIFactoryProvider` attributo del `PropertyPageUIFactoryProvider` oggetto MEF. Visualizzare **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Esempio: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Attributo | Descrizione |
+|------------| - |
+| `generic` | Tutte le proprietà vengono visualizzate in un'unica pagina sotto le intestazioni di categoria<br/>La regola può essere visibile per la `Project` e `PropertySheet` contesti, ma non `File`.<br/><br/> Esempio: `$(VCTargetsPath)` \\ *1033*\\*General* |
+| `tool` | Le categorie vengono visualizzate come pagine secondarie.<br/>La regola può essere visibile in tutti i contesti: `Project`, `PropertySheet` e `File`.<br/>La regola è visibile nelle proprietà del progetto solo se il progetto contiene elementi con il `ItemType` definito in `Rule.DataSource`, a meno che il nome della regola è inclusa nel `ProjectTools` gruppo di elementi.<br/><br/>Esempio: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | La pagina viene visualizzata come parte della pagina di debug.<br/>Le categorie vengono attualmente ignorate.<br/>Il nome della regola deve corrispondere l'oggetto di eseguire il Debug dell'utilità di avvio MEF `ExportDebugger` attributo.<br/><br/>Esempio: `$(VCTargetsPath)` \\ *1033*\\*debugger\_locale\_windows.xml* |
+| *custom* | Modello personalizzato. Il nome del modello deve corrispondere il `ExportPropertyPageUIFactoryProvider` attributo del `PropertyPageUIFactoryProvider` oggetto MEF. Visualizzare **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Esempio: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Se la regola usa uno dei modelli basati su griglia di proprietà, è possibile utilizzare questi punti di estendibilità per le relative proprietà:
 

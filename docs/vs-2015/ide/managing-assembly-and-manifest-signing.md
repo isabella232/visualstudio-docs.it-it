@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909679"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ La firma con nome sicuro offre un'identità univoca globale per un componente so
 ## <a name="asset-types-and-signing"></a>Tipi di asset e firma  
  È possibile firmare gli assembly .NET e i manifesti dell'applicazione, tra cui:  
   
--   file eseguibili (.exe)  
+- file eseguibili (.exe)  
   
--   manifesti dell'applicazione (.exe.manifest)  
+- manifesti dell'applicazione (.exe.manifest)  
   
--   manifesti della distribuzione (.application)  
+- manifesti della distribuzione (.application)  
   
--   assembly di componenti condivisi (.dll)  
+- assembly di componenti condivisi (.dll)  
   
- È necessario firmare i seguenti tipi di asset:  
+  È necessario firmare i seguenti tipi di asset:  
   
-1.  assembly, se si vuole distribuirli alla Global Assembly Cache (GAC).  
+1. assembly, se si vuole distribuirli alla Global Assembly Cache (GAC).  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesti di applicazione e distribuzione. Visual Studio abilita la firma per impostazione predefinita per queste applicazioni.  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesti di applicazione e distribuzione. Visual Studio abilita la firma per impostazione predefinita per queste applicazioni.  
   
-3.  Assembly di interoperabilità primari, usati per l'interoperabilità COM. L'utilità TLBIMP attiva l'assegnazione di nomi sicuri quando crea un assembly di interoperabilità primario da una libreria di tipi COM.  
+3. Assembly di interoperabilità primari, usati per l'interoperabilità COM. L'utilità TLBIMP attiva l'assegnazione di nomi sicuri quando crea un assembly di interoperabilità primario da una libreria di tipi COM.  
   
- In generale è consigliabile non firmare i file eseguibili. Un componente con nome sicuro non può fare riferimento a un componente senza nome sicuro distribuito con l'applicazione. Visual Studio non firma gli eseguibili dell'applicazione, consente invece di firmare il manifesto dell'applicazione, che fa riferimento al file eseguibile con nome debole. Non è in genere consigliabile firmare i componenti privati dell'applicazione, perché la firma può rendere più difficile la gestione delle dipendenze.  
+   In generale è consigliabile non firmare i file eseguibili. Un componente con nome sicuro non può fare riferimento a un componente senza nome sicuro distribuito con l'applicazione. Visual Studio non firma gli eseguibili dell'applicazione, consente invece di firmare il manifesto dell'applicazione, che fa riferimento al file eseguibile con nome debole. Non è in genere consigliabile firmare i componenti privati dell'applicazione, perché la firma può rendere più difficile la gestione delle dipendenze.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Come firmare un assembly in Visual Studio  
  Per firmare un'applicazione o un componente, usare la scheda **Firma** della finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** o digitare **proprietà del progetto** nella finestra **Avvio veloce** oppure premere ALT+INVIO nella finestra **Esplora soluzioni**. Selezionare la scheda **Firma**, quindi la casella di controllo **Firma assembly**.  

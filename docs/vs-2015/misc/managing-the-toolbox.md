@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873422"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] consente a un pacchetto VSPackage, ad esempio un editor o una finestra di progettazione, di gestire l'appartenenza e l'aspetto della **casella degli strumenti**.  
@@ -50,29 +50,29 @@ ms.locfileid: "49254411"
   
  Ci sono diversi aspetti importanti da tenere presenti quando si usano queste interfacce:  
   
--   <xref:System.Drawing.Design.IToolboxService> è disponibile solo per pacchetti VSPackage basati sul framework di pacchetto gestito (MPF, Managed Package Framework).  
+- <xref:System.Drawing.Design.IToolboxService> è disponibile solo per pacchetti VSPackage basati sul framework di pacchetto gestito (MPF, Managed Package Framework).  
   
--   Controlli non possono essere aggiunti direttamente per la **casella degli strumenti** usando <xref:System.Drawing.Design.IToolboxService>.  
+- Controlli non possono essere aggiunti direttamente per la **casella degli strumenti** usando <xref:System.Drawing.Design.IToolboxService>.  
   
--   Un pacchetto VSPackage deve usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> per aggiungere controlli oppure ospitare il controllo in un controllo wrapper che deriva da <xref:System.Windows.Forms.AxHost>.  
+- Un pacchetto VSPackage deve usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> per aggiungere controlli oppure ospitare il controllo in un controllo wrapper che deriva da <xref:System.Windows.Forms.AxHost>.  
   
-     Visual Studio fornisce lo strumento `Aximp.exe` per l'automazione del wrapping di un controllo ActiveX in un controllo derivato da <xref:System.Windows.Forms.AxHost>. Per altre informazioni, vedere [Aximp.exe (Windows Form Control Importer di ActiveX)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio fornisce lo strumento `Aximp.exe` per l'automazione del wrapping di un controllo ActiveX in un controllo derivato da <xref:System.Windows.Forms.AxHost>. Per altre informazioni, vedere [Aximp.exe (Windows Form Control Importer di ActiveX)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sono interfacce basate su COM disponibili tramite gli assembly di interoperabilità.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sono interfacce basate su COM disponibili tramite gli assembly di interoperabilità.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> deriva da <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> e implementa tutti i relativi metodi.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> deriva da <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> e implementa tutti i relativi metodi.  
   
-     Gli oggetti ottengono solo un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
+   Gli oggetti ottengono solo un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> non deriva da <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e non implementa i relativi metodi.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> non deriva da <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e non implementa i relativi metodi.  
   
-     Gli oggetti che richiedono funzionalità in entrambe le interfacce devono ottenere le istanze di entrambe le interfacce dall'ambiente.  
+   Gli oggetti che richiedono funzionalità in entrambe le interfacce devono ottenere le istanze di entrambe le interfacce dall'ambiente.  
   
--   Quando si usano <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, le informazioni sui nomi canonici (non localizzati) delle schede vengono gestite dai metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A>.  
+- Quando si usano <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, le informazioni sui nomi canonici (non localizzati) delle schede vengono gestite dai metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A>.  
   
--   Quando si usa <xref:System.Drawing.Design.IToolboxService>, è responsabilità di chi esegue l'implementazione gestire le informazioni localizzate, ad esempio i nomi delle categorie.  
+- Quando si usa <xref:System.Drawing.Design.IToolboxService>, è responsabilità di chi esegue l'implementazione gestire le informazioni localizzate, ad esempio i nomi delle categorie.  
   
- Usare il meccanismo delle impostazioni per consentire agli utenti di salvare le impostazioni della **casella degli strumenti** a cui gli utenti accedono dal comando **Importa/Esporta impostazioni** , disponibile nel menu **Strumenti** dell'IDE. Per altre informazioni su come usare le impostazioni, vedere [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
+  Usare il meccanismo delle impostazioni per consentire agli utenti di salvare le impostazioni della **casella degli strumenti** a cui gli utenti accedono dal comando **Importa/Esporta impostazioni** , disponibile nel menu **Strumenti** dell'IDE. Per altre informazioni su come usare le impostazioni, vedere [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione della casella degli strumenti](../misc/extending-the-toolbox.md)

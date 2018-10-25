@@ -32,12 +32,12 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894027"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
   
  **È possibile eseguire il mapping delle dipendenze per il codice nei seguenti linguaggi**:  
   
--   Visual C# .NET o Visual Basic .NET in una soluzione o in assembly (con estensione dll o exe)  
+- Visual C# .NET o Visual Basic .NET in una soluzione o in assembly (con estensione dll o exe)  
   
--   Codice C o C++ nativo o gestito in progetti Visual C++, file di intestazione (.h o `#include`) o file binari  
+- Codice C o C++ nativo o gestito in progetti Visual C++, file di intestazione (.h o `#include`) o file binari  
   
--   Progetti X++ e assembly creati da moduli .NET per Microsoft Dynamics AX  
+- Progetti X++ e assembly creati da moduli .NET per Microsoft Dynamics AX  
   
- **Nota:** per progetti diversi da C# o Visual Basic .NET, sono disponibili meno opzioni per l'avvio di una mappa codice o per l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file da Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti.  
+  **Nota:** per progetti diversi da C# o Visual Basic .NET, sono disponibili meno opzioni per l'avvio di una mappa codice o per l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file da Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Per visualizzare tutte le dipendenze nella soluzione  
   
@@ -122,51 +122,51 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
   
 ###  <a name="OverviewSource"></a> Visualizzare le dipendenze nella soluzione  
   
-1.  Aprire il menu **Architettura** e scegliere **Genera mappa codici per la soluzione senza compilazione**.  
+1. Aprire il menu **Architettura** e scegliere **Genera mappa codici per la soluzione senza compilazione**.  
   
-     ![Generare un comando di mappa codice](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![Generare un comando di mappa codice](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     Viene visualizzata una mappa che mostra gli assembly di primo livello e i relativi collegamenti aggregati. A una maggiore ampiezza del collegamento aggregato corrisponde un maggior numero di dipendenze che rappresenta.  
+    Viene visualizzata una mappa che mostra gli assembly di primo livello e i relativi collegamenti aggregati. A una maggiore ampiezza del collegamento aggregato corrisponde un maggior numero di dipendenze che rappresenta.  
   
-2.  Usare il pulsante **Legenda** sulla barra degli strumenti del codice per visualizzare o nascondere l'elenco di icone del tipo di progetto (ad esempio Test, Web e Progetto per telefono), gli elementi di codice (ad esempio Classi, Metodi e Proprietà) e i tipi di relazione (ad esempio Eredita da, Implementa e Chiamate).  
+2. Usare il pulsante **Legenda** sulla barra degli strumenti del codice per visualizzare o nascondere l'elenco di icone del tipo di progetto (ad esempio Test, Web e Progetto per telefono), gli elementi di codice (ad esempio Classi, Metodi e Proprietà) e i tipi di relazione (ad esempio Eredita da, Implementa e Chiamate).  
   
-     ![Top&#45;grafico di dipendenze a livello di assembly](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![Top&#45;grafico di dipendenze a livello di assembly](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     Questa soluzione di esempio contiene cartelle della soluzione (**Test** e **Componenti**), progetti di test, progetti Web e assembly. Per impostazione predefinita, tutte le relazioni del contenitore vengono visualizzate come *gruppi*che è possibile espandere e comprimere. Il gruppo **Esterni** contiene qualsiasi elemento esterno alla soluzione, incluse le dipendenze della piattaforma. Gli assembly esterni mostrano solo gli elementi usati. Per impostazione predefinita, i tipi di base del sistema sono nascosti sulla mappa per evitare confusione.  
+    Questa soluzione di esempio contiene cartelle della soluzione (**Test** e **Componenti**), progetti di test, progetti Web e assembly. Per impostazione predefinita, tutte le relazioni del contenitore vengono visualizzate come *gruppi*che è possibile espandere e comprimere. Il gruppo **Esterni** contiene qualsiasi elemento esterno alla soluzione, incluse le dipendenze della piattaforma. Gli assembly esterni mostrano solo gli elementi usati. Per impostazione predefinita, i tipi di base del sistema sono nascosti sulla mappa per evitare confusione.  
   
-3.  Per eseguire il drill-down nella mappa, espandere i gruppi che rappresentano progetti e assembly. Per espandere tutti gli elementi premere **CTRL+A** per selezionare tutti i nodi e quindi scegliere **Gruppo**, **Espandi** dal menu di scelta rapida.  
+3. Per eseguire il drill-down nella mappa, espandere i gruppi che rappresentano progetti e assembly. Per espandere tutti gli elementi premere **CTRL+A** per selezionare tutti i nodi e quindi scegliere **Gruppo**, **Espandi** dal menu di scelta rapida.  
   
-     ![Espansione di tutti i gruppi in una mappa codici](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![Espansione di tutti i gruppi in una mappa codici](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  Tuttavia, questa operazione potrebbe non essere utile per una soluzione di grandi dimensioni. Infatti, per soluzioni complesse, i limiti di memoria potrebbero impedire di espandere tutti i gruppi. In alternativa, per visualizzare gli elementi all'interno di un singolo nodo, espanderlo. Spostare il puntatore del mouse sopra il nodo, quindi scegliere il pulsante con la freccia di espansione (freccia giù) quando viene visualizzato.  
+4. Tuttavia, questa operazione potrebbe non essere utile per una soluzione di grandi dimensioni. Infatti, per soluzioni complesse, i limiti di memoria potrebbero impedire di espandere tutti i gruppi. In alternativa, per visualizzare gli elementi all'interno di un singolo nodo, espanderlo. Spostare il puntatore del mouse sopra il nodo, quindi scegliere il pulsante con la freccia di espansione (freccia giù) quando viene visualizzato.  
   
-     ![Espansione di un nodo in una mappa codici](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![Espansione di un nodo in una mappa codici](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     In alternativa, usare la tastiera selezionando l'elemento e premendo il tasto più (**+**). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.  
+    In alternativa, usare la tastiera selezionando l'elemento e premendo il tasto più (**+**). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.  
   
-    > [!TIP]
-    >  Per altri dettagli di utilizzo del codice mappe mediante il mouse, tastiera e touch, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).  
+   > [!TIP]
+   >  Per altri dettagli di utilizzo del codice mappe mediante il mouse, tastiera e touch, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).  
   
-5.  Per semplificare la mappa e concentrarsi sulle singole parti, scegliere **Filtri** nella barra degli strumenti della mappa codice e selezionare solo i tipi di nodi e di collegamenti desiderati. Ad esempio, è possibile nascondere tutti i contenitori di Cartella soluzione e Assembly.  
+5. Per semplificare la mappa e concentrarsi sulle singole parti, scegliere **Filtri** nella barra degli strumenti della mappa codice e selezionare solo i tipi di nodi e di collegamenti desiderati. Ad esempio, è possibile nascondere tutti i contenitori di Cartella soluzione e Assembly.  
   
-     ![Semplificare la mappa filtrando i contenitori](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![Semplificare la mappa filtrando i contenitori](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     È anche possibile semplificare la mappa nascondendo o rimuovendo i singoli gruppi ed elementi dalla mappa, senza modificare il codice della soluzione sottostante.  
+    È anche possibile semplificare la mappa nascondendo o rimuovendo i singoli gruppi ed elementi dalla mappa, senza modificare il codice della soluzione sottostante.  
   
-6.  Per visualizzare le relazioni tra elementi, selezionarle nella mappa. I colori dei collegamenti indicano i tipi di relazione, come mostrato nel riquadro **Legenda** .  
+6. Per visualizzare le relazioni tra elementi, selezionarle nella mappa. I colori dei collegamenti indicano i tipi di relazione, come mostrato nel riquadro **Legenda** .  
   
-     ![Visualizzare le dipendenze nelle soluzioni](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![Visualizzare le dipendenze nelle soluzioni](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     In questo esempio, i collegamenti viola sono chiamate, i collegamenti punteggiati sono riferimenti e i collegamenti azzurro rappresentano l'accesso al campo. I collegamenti verdi possono essere ereditati o possono essere *collegamenti aggregati* che indicano più di un tipo di relazione (o *categoria*).  
+    In questo esempio, i collegamenti viola sono chiamate, i collegamenti punteggiati sono riferimenti e i collegamenti azzurro rappresentano l'accesso al campo. I collegamenti verdi possono essere ereditati o possono essere *collegamenti aggregati* che indicano più di un tipo di relazione (o *categoria*).  
   
-    > [!TIP]
-    >  Se viene visualizzato un collegamento verde, non necessariamente esiste solo una relazione di ereditarietà. Potrebbero essere presenti anche chiamate al metodo, nascoste dalla relazione di ereditarietà. Per visualizzare determinati tipi di collegamenti, usare le caselle di controllo del riquadro **Filtri** per nascondere i tipi cui non si è interessati.  
+   > [!TIP]
+   >  Se viene visualizzato un collegamento verde, non necessariamente esiste solo una relazione di ereditarietà. Potrebbero essere presenti anche chiamate al metodo, nascoste dalla relazione di ereditarietà. Per visualizzare determinati tipi di collegamenti, usare le caselle di controllo del riquadro **Filtri** per nascondere i tipi cui non si è interessati.  
   
-7.  Per altre informazioni su un elemento o un collegamento, spostare il puntatore su di esso finché non viene visualizzata una descrizione comando. In questo modo vengono mostrati i dettagli di un elemento di codice o delle categorie rappresentate da un collegamento.  
+7. Per altre informazioni su un elemento o un collegamento, spostare il puntatore su di esso finché non viene visualizzata una descrizione comando. In questo modo vengono mostrati i dettagli di un elemento di codice o delle categorie rappresentate da un collegamento.  
   
-     ![Mostrare le categorie di una relazione](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![Mostrare le categorie di una relazione](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  Per esaminare gli elementi e le dipendenze rappresentate da un collegamento di aggregazione, prima selezionare il collegamento, quindi aprire il relativo menu di scelta rapida. Scegliere **Mostra collegamenti partecipanti** (o **Mostra collegamenti partecipanti sulla nuova mappa codice**). I gruppi vengono espansi a entrambe le estremità del collegamento e vengono mostrati solo gli elementi e le dipendenze che partecipano al collegamento.  
+8. Per esaminare gli elementi e le dipendenze rappresentate da un collegamento di aggregazione, prima selezionare il collegamento, quindi aprire il relativo menu di scelta rapida. Scegliere **Mostra collegamenti partecipanti** (o **Mostra collegamenti partecipanti sulla nuova mappa codice**). I gruppi vengono espansi a entrambe le estremità del collegamento e vengono mostrati solo gli elementi e le dipendenze che partecipano al collegamento.  
   
 9. Per concentrarsi su parti specifiche della mappa, è possibile continuare a rimuovere gli elementi cui non si è interessati. Ad esempio, per analizzare la visualizzazione delle classi e dei membri, è sufficiente filtrare tutti i nodi dello spazio dei nomi nel riquadro **Filtri** .  
   
@@ -184,7 +184,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
   
      ![Selezionare gli elementi da visualizzare le relazioni](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- Vedere anche:  
+    Vedere anche:  
   
 -   [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -304,11 +304,11 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ###  <a name="Troubleshooting"></a> Risoluzione dei problemi relativi alle mappe per il codice C e C++  
  Gli elementi seguenti non sono supportati nel codice C e C++:  
   
--   I tipi di base non vengono visualizzati nelle mappe che includono la gerarchia padre.  
+- I tipi di base non vengono visualizzati nelle mappe che includono la gerarchia padre.  
   
--   La maggior parte delle voci di menu **Mostra** non è disponibile per il codice C e C++.  
+- La maggior parte delle voci di menu **Mostra** non è disponibile per il codice C e C++.  
   
- Questi problemi potrebbero verificarsi quando si creano mappe del codice per il codice C e C++:  
+  Questi problemi potrebbero verificarsi quando si creano mappe del codice per il codice C e C++:  
   
 |**Problema**|**Possibile causa**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  
@@ -324,23 +324,23 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ##  <a name="RenderMoreQuickly"></a> Accelerare il rendering delle mappe codice  
  Quando si genera una mappa per la prima volta, Visual Studio indicizza tutte le dipendenze trovate. Questo processo potrebbe richiedere molto tempo, soprattutto per le soluzioni di grandi dimensioni, ma ciò migliorerà le prestazioni successive. Se il codice viene modificato, Visual Studio reindicizza solo il codice aggiornato. Per ridurre al minimo il tempo necessario per completare il rendering della mappa, tenere presente quanto segue:  
   
--   [Eseguire il mapping solo delle dipendenze che interessano.](#SeeSpecificSource)  
+- [Eseguire il mapping solo delle dipendenze che interessano.](#SeeSpecificSource)  
   
--   Prima di generare la mappa per un'intera soluzione, ridurre l'ambito della soluzione.  
+- Prima di generare la mappa per un'intera soluzione, ridurre l'ambito della soluzione.  
   
--   Disattivare la compilazione automatica per la soluzione con il pulsante **Ignora compilazione** nella barra degli strumenti della mappa codice.  
+- Disattivare la compilazione automatica per la soluzione con il pulsante **Ignora compilazione** nella barra degli strumenti della mappa codice.  
   
--   Disattivare la compilazione automatica degli elementi padre con il pulsante **Includi padri** nella barra degli strumenti della mappa codice.  
+- Disattivare la compilazione automatica degli elementi padre con il pulsante **Includi padri** nella barra degli strumenti della mappa codice.  
   
--   Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+- Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![I pulsanti Skip Build e Includi padri](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![I pulsanti Skip Build e Includi padri](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- Sebbene Visual Studio sia in grado di funzionare con 1 GB di memoria, è consigliabile che il computer disponga di almeno 2 GB di memoria per evitare lunghi ritardi quando viene creato l'indice del codice e viene generata la mappa.  
+  Sebbene Visual Studio sia in grado di funzionare con 1 GB di memoria, è consigliabile che il computer disponga di almeno 2 GB di memoria per evitare lunghi ritardi quando viene creato l'indice del codice e viene generata la mappa.  
   
- La creazione di mappe o l'aggiunta di elementi a una mappa da Esplora soluzioni potrebbe richiedere più tempo quando la proprietà **Copia nella directory di output** di un elemento di progetto è impostata su **Copia sempre**. Ciò potrebbe causare problemi nelle compilazioni incrementali e in Visual Studio per ricompilare il progetto ogni volta. Per aumentare le prestazioni, impostare questa proprietà su **Copia se più recente** o su `PreserveNewest`. Vedere [Incremental Builds](../msbuild/incremental-builds.md).  
+  La creazione di mappe o l'aggiunta di elementi a una mappa da Esplora soluzioni potrebbe richiedere più tempo quando la proprietà **Copia nella directory di output** di un elemento di progetto è impostata su **Copia sempre**. Ciò potrebbe causare problemi nelle compilazioni incrementali e in Visual Studio per ricompilare il progetto ogni volta. Per aumentare le prestazioni, impostare questa proprietà su **Copia se più recente** o su `PreserveNewest`. Vedere [Incremental Builds](../msbuild/incremental-builds.md).  
   
- La mappa completata mostrerà le dipendenze solo per il codice compilato correttamente. Se si verificano errori di compilazione per determinati componenti, tali errori vengono visualizzati nella mappa. Assicurarsi quindi che un componente venga effettivamente compilato e contenga le dipendenze prima di prendere decisioni a livello di architettura in base alla mappa.  
+  La mappa completata mostrerà le dipendenze solo per il codice compilato correttamente. Se si verificano errori di compilazione per determinati componenti, tali errori vengono visualizzati nella mappa. Assicurarsi quindi che un componente venga effettivamente compilato e contenga le dipendenze prima di prendere decisioni a livello di architettura in base alla mappa.  
   
 ##  <a name="SavingExporting"></a> Condividere le mappe codice  
   

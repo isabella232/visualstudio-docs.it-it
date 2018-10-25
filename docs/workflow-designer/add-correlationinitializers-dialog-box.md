@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948954"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Finestra di dialogo Aggiungi inizializzatori di correlazione
 
@@ -33,7 +33,7 @@ Gli inizializzatori di correlazione della raccolta specificata con questa finest
 La tabella seguente descrive gli elementi dell'interfaccia utente di **Aggiungi inizializzatori di correlazione** nella finestra di dialogo:
 
 |Elemento dell'interfaccia utente|Descrizione|
-|----------------|-----------------|
+|-|-----------------|
 |**Aggiungi inizializzatore**|Scegliere il **initialize Aggiungi** casella per aggiungere un ulteriore inizializzatore alla raccolta.|
 |**Tipo di correlazione**|Consente di specificare il tipo di inizializzatore di correlazione. Sono disponibili quattro tipi:<br /><br /> 1. Un inizializzatore di correlazione di callback che consente di specificare un oggetto <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Un inizializzatore di correlazione di contesto che consente di specificare un oggetto <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Un inizializzatore di correlazione richiesta-risposta che consente di specificare un oggetto <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Un inizializzatore di correlazione query che consente di specificare un oggetto <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Per modificare il **CorrelationType**<br /><br /> 1. Scheda per la riga specifica il **Aggiungi inizializzatore** DataGrid.<br />2. Per impostare lo stato attivo **CorrelationTypeComboBox**, premere **Ctrl**+**scheda**.<br />3. Premere Alt + freccia giù per aprire la **ComboBox** e modificarlo.|
 |**Query XPath**|Una coppia chiave/valore che contiene le query usate per estrarre dati di correlazione dai messaggi in ingresso e in uscita. Questo elenco è valido solo in caso di utilizzo di tipi <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.|

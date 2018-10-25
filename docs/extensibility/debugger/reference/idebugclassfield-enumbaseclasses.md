@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Documenti Microsoft
+title: IDebugClassField::EnumBaseClasses | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b5210859115947115bce6525cd5b6cd15c4d59d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5938809aa7fcd2e913743fc778c66205e39988e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901099"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Crea un enumeratore per le classi di base di questa classe.  
@@ -44,10 +44,10 @@ int EnumBaseClasses(
  [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco delle classi base. Restituisce un valore null se esistono classi base.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK, restituisce S_SH_NO_BASE_CLASSES se esistono classi base (e `ppEnum` parametro è impostato su un valore null); in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK, restituisce S_SH_NO_BASE_CLASSES se esistono classi base (e `ppEnum` parametro è impostato su un valore null); in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Le classi di base dell'oggetto enumeratore vengono specificate nell'ordine della classe base in questione (o più derivata) alla classe di base più remota. Ad esempio, poiché le classi C++:  
+ Le classi di base dell'oggetto enumeratore vengono specificate nell'ordine della classe base più immediata (o più derivata) alla classe di base più remota. Si consideri, ad esempio, le classi C++ seguente:  
   
 ```  
 class Root { }  
@@ -56,7 +56,7 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- Enumerazione restituisce le classi di base nell'ordine `Level2`, `Level1`, `Root`.  
+ L'enumerazione restituisce le classi di base nell'ordine `Level2`, `Level1`, `Root`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

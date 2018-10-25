@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT | Documenti Microsoft
+title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ae1050b0324fcf2732bbeb0eb9d091878bef0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a953ae4ff100196ca6fc6174f3d81fcca139de1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913423"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
-Descrive il percorso di un punto di interruzione associato direttamente a un indirizzo nel programma sottoposto a debug.  
+Descrive la posizione di un punto di interruzione che è associato direttamente a un indirizzo nel programma sottoposto a debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,10 +35,10 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
   
 ## <a name="members"></a>Membri  
  pCodeContext  
- Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che identifica la posizione del punto di interruzione nel codice.  
+ Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è membro il [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
+ Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

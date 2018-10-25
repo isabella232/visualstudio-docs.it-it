@@ -18,12 +18,12 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ece8d5de78ff5910d2624479c2d79eaa827b4759
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861995"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi casi d'uso UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,31 +36,31 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  Con l'aiuto di un diagramma caso di utilizzo, è possibile discutere e comunicare:  
   
--   Gli scenari in cui il sistema o l'applicazione interagisce con persone, organizzazioni o sistemi esterni.  
+- Gli scenari in cui il sistema o l'applicazione interagisce con persone, organizzazioni o sistemi esterni.  
   
--   Gli obiettivi che gli attori sono aiutati a realizzare.  
+- Gli obiettivi che gli attori sono aiutati a realizzare.  
   
--   L'ambito del sistema.  
+- L'ambito del sistema.  
   
- Un diagramma caso di utilizzo non visualizza i dettagli dei casi di utilizzo: riepiloga solo alcune delle relazioni tra sistemi, attori e casi di utilizzo. In particolare, il diagramma non mostra l'ordine in cui vengono eseguiti i passaggi per realizzare gli obiettivi di ogni caso di utilizzo. È possibile descrivere tali dettagli in altri diagrammi e documenti, che è possibile collegare a ogni caso di utilizzo. Per altre informazioni, vedere [casi d'uso che descrive in dettaglio](#Details) in questo argomento.  
+  Un diagramma caso di utilizzo non visualizza i dettagli dei casi di utilizzo: riepiloga solo alcune delle relazioni tra sistemi, attori e casi di utilizzo. In particolare, il diagramma non mostra l'ordine in cui vengono eseguiti i passaggi per realizzare gli obiettivi di ogni caso di utilizzo. È possibile descrivere tali dettagli in altri diagrammi e documenti, che è possibile collegare a ogni caso di utilizzo. Per altre informazioni, vedere [casi d'uso che descrive in dettaglio](#Details) in questo argomento.  
   
- Le descrizioni fornite per i casi di utilizzo useranno vari termini correlati al dominio in cui il sistema funziona, ad esempio vendita, menu, clienti e così via. È importante definire chiaramente questi termini e le relative relazioni ed è possibile farlo con l'aiuto di un diagramma classi UML. Per altre informazioni, vedere [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md).  
+  Le descrizioni fornite per i casi di utilizzo useranno vari termini correlati al dominio in cui il sistema funziona, ad esempio vendita, menu, clienti e così via. È importante definire chiaramente questi termini e le relative relazioni ed è possibile farlo con l'aiuto di un diagramma classi UML. Per altre informazioni, vedere [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md).  
   
- I casi di utilizzo si occupano solo i requisiti funzionali per un sistema. Altri requisiti, ad esempio le regole di business, i requisiti di qualità del servizio e i vincoli di implementazione devono essere rappresentati separatamente. L'architettura e i dettagli interni devono anche essere descritti separatamente. Per altre informazioni su come definire i requisiti dell'utente, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
+  I casi di utilizzo si occupano solo i requisiti funzionali per un sistema. Altri requisiti, ad esempio le regole di business, i requisiti di qualità del servizio e i vincoli di implementazione devono essere rappresentati separatamente. L'architettura e i dettagli interni devono anche essere descritti separatamente. Per altre informazioni su come definire i requisiti dell'utente, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
- Gli esempi usati in questo argomento si riferiscono a un sito Web in cui i clienti possono ordinare pasti dai ristoranti locali.  
+  Gli esempi usati in questo argomento si riferiscono a un sito Web in cui i clienti possono ordinare pasti dai ristoranti locali.  
   
- ![Gli elementi in un diagramma caso di utilizzo](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
+  ![Gli elementi in un diagramma caso di utilizzo](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
   
--   Un' *attore* (1) è una classe di persona, organizzazione, dispositivi o componenti software esterni che interagiscono con il sistema. Sono esempi di attori **cliente**, **ristorante**, **sensore di temperatura**, **Authorizer di carta di credito.**  
+- Un' *attore* (1) è una classe di persona, organizzazione, dispositivi o componenti software esterni che interagiscono con il sistema. Sono esempi di attori **cliente**, **ristorante**, **sensore di temperatura**, **Authorizer di carta di credito.**  
   
--   Oggetto *caso d'uso* (2) rappresenta le azioni eseguite da uno o più attori per un obiettivo specifico. Sono esempi di casi d'uso **Ordinazione pasto**, **dal Menu di aggiornamento**, **elaborazione dei pagamenti**.  
+- Oggetto *caso d'uso* (2) rappresenta le azioni eseguite da uno o più attori per un obiettivo specifico. Sono esempi di casi d'uso **Ordinazione pasto**, **dal Menu di aggiornamento**, **elaborazione dei pagamenti**.  
   
-     In un diagramma caso di utilizzo, i casi di utilizzo vengono associati (3) con gli attori che li eseguono.  
+   In un diagramma caso di utilizzo, i casi di utilizzo vengono associati (3) con gli attori che li eseguono.  
   
--   I *sistema (4)* è l'elemento che sta sviluppando. Potrebbe essere un componente software di piccole dimensioni, in cui attori sono solo altri componenti software. Potrebbe essere un'applicazione completa oppure potrebbe essere un'ampia suite distribuita di applicazioni distribuite su molti computer e dispositivi. Sono esempi di sottosistemi **sito Web di Ordinazione pasto**, **azienda di consegna pasti**, **siti Web versione 2**.  
+- I *sistema (4)* è l'elemento che sta sviluppando. Potrebbe essere un componente software di piccole dimensioni, in cui attori sono solo altri componenti software. Potrebbe essere un'applicazione completa oppure potrebbe essere un'ampia suite distribuita di applicazioni distribuite su molti computer e dispositivi. Sono esempi di sottosistemi **sito Web di Ordinazione pasto**, **azienda di consegna pasti**, **siti Web versione 2**.  
   
-     Un diagramma caso di utilizzo è in grado di mostrare quali casi di utilizzo sono supportati dal sistema o dai relativi sottosistemi.  
+   Un diagramma caso di utilizzo è in grado di mostrare quali casi di utilizzo sono supportati dal sistema o dai relativi sottosistemi.  
   
 ##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi casi d'uso  
   
@@ -173,31 +173,31 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  ![Maiuscole e minuscole con molteplicità molti a molti](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
--   Per dichiarare che diversi attori della stessa classe possono partecipare a una singola occorrenza di un caso d'uso, impostare la molteplicità alla fine dell'associazione di attore **1..\*** .  
+- Per dichiarare che diversi attori della stessa classe possono partecipare a una singola occorrenza di un caso d'uso, impostare la molteplicità alla fine dell'attore dell'associazione a * * 1... \\***.  
   
-     Nell'illustrazione uno o più i ristoranti possono partecipare all'evasione della stessa ordinazione pasto.  
+   Nell'illustrazione uno o più i ristoranti possono partecipare all'evasione della stessa ordinazione pasto.  
   
--   Per mostrare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso d'uso, impostare la molteplicità alla fine dell'associazione al case usare **\***.  
+- Per mostrare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso d'uso, impostare la molteplicità alla fine dell'associazione al case usare * *\\* * *.  
   
-     Nella figura ogni ristorante può cercare di soddisfare più ordini alla volta.  
+   Nella figura ogni ristorante può cercare di soddisfare più ordini alla volta.  
   
 ##### <a name="to-set-multiplicities-on-an-association"></a>Per impostare le molteplicità in un'associazione  
   
-1.  Fare doppio clic sull'associazione e quindi fare clic su **proprietà**.  
+1. Fare doppio clic sull'associazione e quindi fare clic su **proprietà**.  
   
-2.  Espandere la **primo ruolo** oppure **secondo ruolo**.  
+2. Espandere la **primo ruolo** oppure **secondo ruolo**.  
   
-     *Ruolo* significa che l'elemento a un'estremità dell'associazione.  
+    *Ruolo* significa che l'elemento a un'estremità dell'associazione.  
   
-3.  Impostare la proprietà Molteplicità scegliendo dall'elenco:  
+3. Impostare la proprietà Molteplicità scegliendo dall'elenco:  
   
-    -   **1** per indicare che solo un'istanza di questo ruolo fa parte di ogni collegamento.  
+   - **1** per indicare che solo un'istanza di questo ruolo fa parte di ogni collegamento.  
   
-    -   **1..\***  per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.  
+   - **1..\\*** per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.  
   
-    -   **0..1** per indicare che la partecipazione è facoltativa.  
+   - **0..1** per indicare che la partecipazione è facoltativa.  
   
-    -   **\*** per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
+   - **\\*** per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
   
 > [!NOTE]
 >  Molti team non inseriscono informazioni sulla molteplicità nei diagrammi caso di utilizzo, lasciando le molteplicità impostate sul valore predefinito 1. Al contrario, forniscono informazioni in descrizioni separate dei casi di utilizzo. In questo caso, verranno nascoste tutte le molteplicità nei diagrammi caso di utilizzo.  
@@ -223,23 +223,23 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
 ##  <a name="Details"></a> Casi d'uso che descrive in dettaglio  
  Un caso di utilizzo rappresenta:  
   
--   Un obiettivo di un attore nell'utilizzo del sistema, ad esempio **acquista un pasto**; e  
+- Un obiettivo di un attore nell'utilizzo del sistema, ad esempio **acquista un pasto**; e  
   
--   Uno o più *scenari*, vale a dire le sequenze di passaggi eseguiti nel raggiungimento dell'obiettivo, ad esempio: {**Ordinazione pasto, pagamento, consegna**}. Oltre agli scenari di esito positivo, potrebbero esserci più eccezioni o scenari di errore, ad esempio **carta di credito rifiutata**.  
+- Uno o più *scenari*, vale a dire le sequenze di passaggi eseguiti nel raggiungimento dell'obiettivo, ad esempio: {**Ordinazione pasto, pagamento, consegna**}. Oltre agli scenari di esito positivo, potrebbero esserci più eccezioni o scenari di errore, ad esempio **carta di credito rifiutata**.  
   
- È possibile descrivere un caso di utilizzo in diversi livelli di dettaglio. Nella fase iniziale di progettazione, è sufficiente solo il nome nel diagramma caso di utilizzo.  In un secondo momento è possibile scrivere descrizioni più dettagliate degli scenari.  
+  È possibile descrivere un caso di utilizzo in diversi livelli di dettaglio. Nella fase iniziale di progettazione, è sufficiente solo il nome nel diagramma caso di utilizzo.  In un secondo momento è possibile scrivere descrizioni più dettagliate degli scenari.  
   
- In Visual Studio Ultimate è possibile descrivere un caso di utilizzo in diversi modi, che può essere usato insieme o separatamente:  
+  In Visual Studio Ultimate è possibile descrivere un caso di utilizzo in diversi modi, che può essere usato insieme o separatamente:  
   
--   Collegare il caso di utilizzo a un altro diagramma o ai diagrammi nel progetto.  
+- Collegare il caso di utilizzo a un altro diagramma o ai diagrammi nel progetto.  
   
-    -   Un diagramma di attività consente di illustrare un processo più complesso se sono presenti cicli, diramazioni e thread paralleli. Inoltre è possibile visualizzare il flusso di dati tra le parti del processo. Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Un diagramma di attività consente di illustrare un processo più complesso se sono presenti cicli, diramazioni e thread paralleli. Inoltre è possibile visualizzare il flusso di dati tra le parti del processo. Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
-    -   Un diagramma di sequenza consente di illustrare una serie complessa di interazioni tra diversi attori. È possibile anche usarlo per mostrare cosa succede all'interno del sistema in risposta a ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Un diagramma di sequenza consente di illustrare una serie complessa di interazioni tra diversi attori. È possibile anche usarlo per mostrare cosa succede all'interno del sistema in risposta a ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
--   Collegare il caso di utilizzo a una pagina, una sezione o un paragrafo OneNote in cui viene descritto in dettaglio il caso di utilizzo.  
+- Collegare il caso di utilizzo a una pagina, una sezione o un paragrafo OneNote in cui viene descritto in dettaglio il caso di utilizzo.  
   
--   Collegare il caso di utilizzo di un documento di Word, in cui si usano testo, schermate e così via per descrivere gli scenari del caso di utilizzo. Per altre informazioni, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
+- Collegare il caso di utilizzo di un documento di Word, in cui si usano testo, schermate e così via per descrivere gli scenari del caso di utilizzo. Per altre informazioni, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Per collegare un caso di utilizzo a un diagramma o a un file nella stessa soluzione  
   
@@ -333,13 +333,13 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  Notare le convenzioni di denominazione quando si usa un diagramma di attività:  
   
--   Il nome dell'intera attività corrisponde al caso di utilizzo di inclusione.  
+- Il nome dell'intera attività corrisponde al caso di utilizzo di inclusione.  
   
--   Le azioni nel diagramma di attività hanno nomi uguali a quelli dei casi di utilizzo inclusi.  
+- Le azioni nel diagramma di attività hanno nomi uguali a quelli dei casi di utilizzo inclusi.  
   
- Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+  Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
- ![Usare case passaggi illustrati nel diagramma di attività collegata](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
+  ![Usare case passaggi illustrati nel diagramma di attività collegata](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
 ###  <a name="Inheritance"></a> Condivisione degli obiettivi con generalizzazione  
  Usare una relazione generalizzazione per mostrare che un *specializzato* caso d'uso è un modo specifico per raggiungere gli obiettivi espressi da un altro *generali* caso d'uso. La freccia aperta deve puntare al caso di utilizzo più generale.  
@@ -383,26 +383,26 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 ##### <a name="to-separate-a-use-case-into-main-and-extending-parts"></a>Per separare un caso di utilizzo in parti principali e di estensione  
   
-1.  Creare e denominare il nuovo caso di utilizzo di estensione.  
+1. Creare e denominare il nuovo caso di utilizzo di estensione.  
   
-2.  Creare un **Estendi** relazione con la freccia rivolta al caso di utilizzo esteso.  
+2. Creare un **Estendi** relazione con la freccia rivolta al caso di utilizzo esteso.  
   
-    1.  Fare clic su **Estendi** della casella degli strumenti.  
+   1.  Fare clic su **Estendi** della casella degli strumenti.  
   
-    2.  Fare clic sul caso di utilizzo di estensione (**Registra nuovo utente** nell'esempio).  
+   2.  Fare clic sul caso di utilizzo di estensione (**Registra nuovo utente** nell'esempio).  
   
-    3.  Fare clic sul caso di utilizzo esteso (**account di accesso** nell'esempio).  
+   3.  Fare clic sul caso di utilizzo esteso (**account di accesso** nell'esempio).  
   
-        > [!NOTE]
-        >  Evitare di creare un ciclo di relazioni Estendi nel diagramma. Non è corretto che un caso di utilizzo sia un'estensione di se stesso.  
+       > [!NOTE]
+       >  Evitare di creare un ciclo di relazioni Estendi nel diagramma. Non è corretto che un caso di utilizzo sia un'estensione di se stesso.  
   
-3.  Se sono già stati creati gli scenari per il caso di utilizzo esteso, spostare i relativi passaggi nello scenario dell'estensione.  
+3. Se sono già stati creati gli scenari per il caso di utilizzo esteso, spostare i relativi passaggi nello scenario dell'estensione.  
   
-4.  La descrizione dell'estensione (**Registra nuovo utente** nell'esempio) deve includere i dettagli del punto in cui nella finestra di scenari dei casi d'uso principale può verificarsi in seguito e in quali circostanze. Considerare questa operazione come una modifica della descrizione del caso principale.  
+4. La descrizione dell'estensione (**Registra nuovo utente** nell'esempio) deve includere i dettagli del punto in cui nella finestra di scenari dei casi d'uso principale può verificarsi in seguito e in quali circostanze. Considerare questa operazione come una modifica della descrizione del caso principale.  
   
- Il caso di utilizzo di estensione rappresenta i passaggi dello scenario che altrimenti sarebbero parte degli scenari del caso di utilizzo principale. Lo scenario e l'obiettivo dell'estensione saranno sempre letti nel contesto del caso di utilizzo principale, di conseguenza non devono essere utili in modo indipendente.  
+   Il caso di utilizzo di estensione rappresenta i passaggi dello scenario che altrimenti sarebbero parte degli scenari del caso di utilizzo principale. Lo scenario e l'obiettivo dell'estensione saranno sempre letti nel contesto del caso di utilizzo principale, di conseguenza non devono essere utili in modo indipendente.  
   
- La separazione delle estensioni può risultare utile per descrivere tali situazioni:  
+   La separazione delle estensioni può risultare utile per descrivere tali situazioni:  
   
 -   Sono presenti attori aggiuntivi che sono coinvolti solo nel caso di utilizzo di estensione. Ad esempio, un amministratore deve approvare una registrazione di un cliente sul sito Web.  
   
@@ -415,17 +415,17 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 #### <a name="to-draw-a-subsystem-boundary"></a>Per creare un limite del sottosistema  
   
-1.  Nella casella degli strumenti, fare clic su **sottosistema**, quindi fare clic sul diagramma.  
+1. Nella casella degli strumenti, fare clic su **sottosistema**, quindi fare clic sul diagramma.  
   
-     Viene visualizzato un sottosistema nel diagramma.  
+    Viene visualizzato un sottosistema nel diagramma.  
   
-2.  Trascinare gli angoli del sottosistema per modificarne le dimensioni.  
+2. Trascinare gli angoli del sottosistema per modificarne le dimensioni.  
   
-3.  Trascinare i casi di utilizzo esistenti all'interno o all'esterno del sottosistema per modificarne il contenuto.  
+3. Trascinare i casi di utilizzo esistenti all'interno o all'esterno del sottosistema per modificarne il contenuto.  
   
- \- oppure -  
+   \- oppure -  
   
- Per creare un nuovo caso d'uso direttamente in un sottosistema, fare clic su **caso di utilizzo** nella casella degli strumenti, quindi fare clic all'interno del sottosistema.  
+   Per creare un nuovo caso d'uso direttamente in un sottosistema, fare clic su **caso di utilizzo** nella casella degli strumenti, quindi fare clic all'interno del sottosistema.  
   
 > [!NOTE]
 >  Il **soggetti** proprietà di un caso d'uso indica in quale sottosistema è contenuto all'interno.  

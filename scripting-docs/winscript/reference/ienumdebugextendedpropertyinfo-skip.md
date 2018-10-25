@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Skip | Documenti Microsoft
+title: IEnumDebugExtendedPropertyInfo::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7f686ccaa5a3195b82458cf3ee11f02be104f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 08abf4443932b81fd13601dd43a2111626b09382
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923511"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
 Ignora un numero specificato di `ExtendedDebugPropertyInfo` strutture in una sequenza di enumerazione.  
@@ -41,7 +41,7 @@ HRESULT Skip(
  [in] Il numero di `ExtendedDebugPropertyInfo` strutture nella sequenza di enumerazione da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un oggetto valido `HRESULT`, in genere `S_OK`. Restituisce `S_FALSE` e imposta la fine dell'enumerazione puntatore dell'elemento corrente se `celt` è maggiore del numero di elementi a sinistra nell'enumeratore.  
+ Restituisce un valore valido `HRESULT`, in genere `S_OK`. Restituisce `S_FALSE` e imposta il puntatore dell'elemento corrente alla fine dell'enumerazione se `celt` è maggiore del numero di elementi a sinistra nell'enumeratore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   

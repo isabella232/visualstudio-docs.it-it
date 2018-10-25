@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824165"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Procedura: eseguire il debug con codice sorgente di Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Per prepararsi all'esecuzione del debug con Code Center Premium  
   
-1.  Collegare il lettore SmartCard e inserire la scheda ottenuta dall'iniziativa Shared Source.  
+1. Collegare il lettore SmartCard e inserire la scheda ottenuta dall'iniziativa Shared Source.  
   
-2.  Avviare Visual Studio.  
+2. Avviare Visual Studio.  
   
-3.  Scegliere **Opzioni** dal menu **Strumenti**.  
+3. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-4.  Nel **le opzioni** finestra di dialogo, aprire il **debug** nodo e fare clic su **generali**.  
+4. Nel **le opzioni** finestra di dialogo, aprire il **debug** nodo e fare clic su **generali**.  
   
-5.  Cancella il **Abilita Just My Code (solo gestito)** casella di controllo.  
+5. Cancella il **Abilita Just My Code (solo gestito)** casella di controllo.  
   
-6.  Selezionare **Abilita il supporto di Server di origine**.  
+6. Selezionare **Abilita il supporto di Server di origine**.  
   
-7.  Deselezionare **richiede i file di origine a una corrispondenza esatta tra la versione originale**.  
+7. Deselezionare **richiede i file di origine a una corrispondenza esatta tra la versione originale**.  
   
-8.  Sotto il **Debugging** nodo, fare clic su **simboli**.  
+8. Sotto il **Debugging** nodo, fare clic su **simboli**.  
   
 9. Nel **File di simboli (PDB), percorsi** casella, il **Server dei simboli Microsoft** casella di controllo e aggiungere i percorsi seguenti:  
   
@@ -60,18 +60,18 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Assicurarsi di includere la barra finale**/** alla fine del percorso.  
+   > [!NOTE]
+   >  Assicurarsi di includere la barra finale<strong>/</strong> alla fine del percorso.  
   
      Spostare questi percorsi all'inizio dell'elenco per assicurarsi che questi simboli vengano caricati per primi.  
   
-    > [!NOTE]
-    >  Questi percorsi di Code Center Premium devono essere elencati per primi in modo che vengano caricati per primi. In Visual Studio 2010, è possibile spostare server sopra la **server dei simboli Microsoft** voce, ovvero il motivo per cui è necessario deselezionare la casella di controllo.  
-    >   
-    >  Per caricare simboli dai simboli Microsoft durante la sessione di debug, eseguire questa operazione:  
-    >   
-    >  1.  Nel **Debug** menu, scegliere **Windows** e quindi scegliere **moduli**.  
-    > 2.  Selezionare il modulo di cui si desidera caricare simboli, quindi aprire il menu di scelta rapida. Scegli **Carica simboli da** e quindi scegliere **server dei simboli Microsoft**.  
+   > [!NOTE]
+   >  Questi percorsi di Code Center Premium devono essere elencati per primi in modo che vengano caricati per primi. In Visual Studio 2010, è possibile spostare server sopra la **server dei simboli Microsoft** voce, ovvero il motivo per cui è necessario deselezionare la casella di controllo.  
+   > 
+   >  Per caricare simboli dai simboli Microsoft durante la sessione di debug, eseguire questa operazione:  
+   > 
+   > 1. Nel **Debug** menu, scegliere **Windows** e quindi scegliere **moduli**.  
+   >    2.  Selezionare il modulo di cui si desidera caricare simboli, quindi aprire il menu di scelta rapida. Scegli **Carica simboli da** e quindi scegliere **server dei simboli Microsoft**.  
   
 10. Nel **memorizza nella Cache i simboli dai server dei simboli in questa directory** casella, immettere un percorso, ad esempio `C:\symbols` in cui Code Center Premium può memorizzare nella cache di simboli. La memorizzazione nella cache dei simboli può contribuire a migliorare le prestazioni durante il debug.  
   
@@ -109,22 +109,22 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>Per eseguire il debug del codice sorgente da una soluzione esistente  
   
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per la soluzione e quindi scegliere **proprietà**.  
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per la soluzione e quindi scegliere **proprietà**.  
   
-2.  Nella finestra di dialogo Pagine delle proprietà di soluzione, scegliere **Esegui Debug dei file di origine** nel **proprietà comuni** nodo.  
+2. Nella finestra di dialogo Pagine delle proprietà di soluzione, scegliere **Esegui Debug dei file di origine** nel **proprietà comuni** nodo.  
   
-3.  Aggiungere il seguente percorso per il **directory contenenti file di origine** elenco:  
+3. Aggiungere il seguente percorso per il **directory contenenti file di origine** elenco:  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Assicurarsi di includere la barra finale**/** alla fine del percorso.  
+   > [!NOTE]
+   >  Assicurarsi di includere la barra finale<strong>/</strong> alla fine del percorso.  
   
-4.  Per ogni progetto gestito nella soluzione, eseguire quanto segue:  
+4. Per ogni progetto gestito nella soluzione, eseguire quanto segue:  
   
-    1.  In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
+   1.  In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
   
-    2.  Selezionare **Debug** e quindi scegliere **Abilita debug codice non gestito**.  
+   2.  Selezionare **Debug** e quindi scegliere **Abilita debug codice non gestito**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Per eseguire il debug della soluzione con l'origine Code Center Premium  
   

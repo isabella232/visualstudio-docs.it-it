@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::get_relativeVirtualAddressEnabled | Documenti Microsoft
+title: Get_relativevirtualaddressenabled | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25159556d44ca37d7938e67e67f1b9900a05010b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849086"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
-Indica se è abilitato il calcolo e l'utilizzo di indirizzi virtuali relativi (RVA).  
+Indica se il calcolo e l'utilizzo di indirizzi virtuali relativi (RVA) è abilitato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,15 +34,15 @@ HRESULT get_relativeVirtualAddressEnabled (
   
 #### <a name="parameters"></a>Parametri  
  pRetVal  
- [out] Restituisce `TRUE` se è abilitato il calcolo di RVA.  
+ [out] Restituisce `TRUE` se è abilitato il calcolo delle RVA.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- RVA viene abilitati se i segmenti sono state inizialmente caricati da un file PDB. L'utilizzo di RVA può essere disabilitata temporaneamente chiamando il [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metodo.  
+ RVA abilitati se i segmenti sono stati inizialmente caricati da un file PDB. L'uso di RVA può essere disabilitato temporaneamente chiamando il [Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) (metodo).  
   
- Inoltre, nuove intestazioni immagine possono essere stabilite chiamando il [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) metodo seguita da una chiamata al `put_relativeVirtualAddressEnabled` metodo per consentire l'utilizzo di RVA utilizzando nuove intestazioni di immagine.  
+ Inoltre, è possibile stabilire nuove intestazioni di immagine chiamando il [Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) metodo seguita da una chiamata al `put_relativeVirtualAddressEnabled` metodo per abilitare l'uso del RVA usando le nuove intestazioni di immagine.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

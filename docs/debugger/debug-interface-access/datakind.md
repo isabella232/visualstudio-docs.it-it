@@ -1,5 +1,5 @@
 ---
-title: DataKind | Documenti Microsoft
+title: DataKind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867624"
 ---
 # <a name="datakind"></a>DataKind
-Indica l'ambito di un valore di dati specifico.  
+Indica l'ambito specifico di un valore di dati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,7 +43,7 @@ enum DataKind {
   
 ## <a name="elements"></a>Elementi  
  DataIsUnknown  
- Impossibile determinare il simbolo dei dati.  
+ Non è possibile determinare il simbolo dei dati.  
   
  DataIsLocal  
  Elemento dati è una variabile locale.  
@@ -58,7 +58,7 @@ enum DataKind {
  Elemento dati è un puntatore a oggetto (`this`).  
   
  DataIsFileStatic  
- Elemento dati è una variabile con ambito file.  
+ Elemento di dati è una variabile con ambito file.  
   
  DataIsGlobal  
  Elemento dati è una variabile globale.  
@@ -67,13 +67,13 @@ enum DataKind {
  Elemento dati è una variabile membro oggetto.  
   
  DataIsStaticMember  
- Elemento dati è una variabile statica della classe.  
+ Elemento dati è una variabile di classe statici.  
   
  DataIsConstant  
  Elemento dati è un valore costante.  
   
 ## <a name="remarks"></a>Note  
- I valori di questa enumerazione sono restituiti dal [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) metodo.  
+ I valori di questa enumerazione vengono restituiti per il [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: cvconst.h  

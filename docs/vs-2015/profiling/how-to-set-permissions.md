@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905265"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- I membri del gruppo Users dovranno accedere alle cartelle e ai file presenti sul disco che vengono condivisi con altri membri del team. Nella seconda procedura, "Per concedere l'accesso ai file di progetto condivisi", viene descritto come garantire questo tipo di accesso.  
+  I membri del gruppo Users dovranno accedere alle cartelle e ai file presenti sul disco che vengono condivisi con altri membri del team. Nella seconda procedura, "Per concedere l'accesso ai file di progetto condivisi", viene descritto come garantire questo tipo di accesso.  
   
- I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene concesso loro di accedere al driver software per tali strumenti. L'ultima procedura, "Per concedere l'accesso al driver di profilatura", descrive come garantire l'accesso al driver in questione.  
+  I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene concesso loro di accedere al driver software per tali strumenti. L'ultima procedura, "Per concedere l'accesso al driver di profilatura", descrive come garantire l'accesso al driver in questione.  
   
 > [!NOTE]
 >  Per eseguire le operazioni previste da queste procedure sono necessarie autorizzazioni di amministratore.  
@@ -89,47 +89,47 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Per concedere l'accesso al driver di profilatura  
   
-1.  Aprire un prompt dei comandi come amministratore.  
+1. Aprire un prompt dei comandi come amministratore.  
   
-2.  Passare alla directory seguente:  
+2. Passare alla directory seguente:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Eseguire il comando seguente:  
+3. Eseguire il comando seguente:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Questo comando consente di installare e avviare il driver per gli strumenti di profilatura.  
+    Questo comando consente di installare e avviare il driver per gli strumenti di profilatura.  
   
-     Questo comando avvia il driver e il servizio di profilatura in modo che gli utenti non amministratori possano usare le funzionalità di profilatura disponibili nello spazio di processo utente. Solo un amministratore può eseguire il comando, che non avrà effetto se eseguito da utenti senza privilegi di amministratore.  
+    Questo comando avvia il driver e il servizio di profilatura in modo che gli utenti non amministratori possano usare le funzionalità di profilatura disponibili nello spazio di processo utente. Solo un amministratore può eseguire il comando, che non avrà effetto se eseguito da utenti senza privilegi di amministratore.  
   
-     Gli effetti derivanti dall'esecuzione di questa operazione vengono annullati dopo il riavvio del computer, a meno che non venga eseguito anche l'ultimo passaggio di questa procedura.  
+    Gli effetti derivanti dall'esecuzione di questa operazione vengono annullati dopo il riavvio del computer, a meno che non venga eseguito anche l'ultimo passaggio di questa procedura.  
   
-4.  Eseguire il comando per consentire a un utente o un gruppo che non dispone dell'accesso di amministratore al computer di accedere alla funzionalità del driver di profilatura:  
+4. Eseguire il comando per consentire a un utente o un gruppo che non dispone dell'accesso di amministratore al computer di accedere alla funzionalità del driver di profilatura:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Tramite questo comando all'account \<nome utente> o \<nome gruppo> viene concesso l'accesso agli strumenti di profilatura. L'opzione \<right> determina la funzionalità di profilatura alla quale l'utente può accedere. L'opzione \<right> può corrispondere a uno o più valori tra quelli riportati di seguito:  
+    Tramite questo comando all'account \<nome utente> o \<nome gruppo> viene concesso l'accesso agli strumenti di profilatura. L'opzione \<right> determina la funzionalità di profilatura alla quale l'utente può accedere. L'opzione \<right> può corrispondere a uno o più valori tra quelli riportati di seguito:  
   
-    -   FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.  
+   -   FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.  
   
-    -   SampleProfiling: consente l'accesso ai metodi di profilatura dei campioni.  
+   -   SampleProfiling: consente l'accesso ai metodi di profilatura dei campioni.  
   
-    -   CrossSession: consente l'accesso alla profilatura tra sessioni richiesta per la profilatura dei servizi.  
+   -   CrossSession: consente l'accesso alla profilatura tra sessioni richiesta per la profilatura dei servizi.  
   
-5.  (Facoltativo) Per conservare i risultati di uno dei passaggi precedenti dopo il riavvio del computer, eseguire il comando seguente:  
+5. (Facoltativo) Per conservare i risultati di uno dei passaggi precedenti dopo il riavvio del computer, eseguire il comando seguente:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Dopo aver effettuato l'accesso, gli utenti specificati saranno in grado di usare gli strumenti di profilatura senza autorizzazioni di amministratore.  
+   Dopo aver effettuato l'accesso, gli utenti specificati saranno in grado di usare gli strumenti di profilatura senza autorizzazioni di amministratore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  

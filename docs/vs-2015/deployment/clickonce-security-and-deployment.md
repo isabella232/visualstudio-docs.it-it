@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898174"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49232102"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione risolve tre problemi nella distribuzione:  
   
--   **Difficoltà di aggiornamento delle applicazioni.** Con la distribuzione di Microsoft Windows Installer, ogni volta che viene aggiornata un'applicazione, l'utente può installare un aggiornamento, un file msp e applicarlo al prodotto installato. con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, è possibile fornire gli aggiornamenti automaticamente. Vengono scaricate solo le parti dell'applicazione che sono stati modificati, e quindi l'intera applicazione aggiornata viene reinstallata da una nuova cartella side-by-side.  
+- **Difficoltà di aggiornamento delle applicazioni.** Con la distribuzione di Microsoft Windows Installer, ogni volta che viene aggiornata un'applicazione, l'utente può installare un aggiornamento, un file msp e applicarlo al prodotto installato. con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, è possibile fornire gli aggiornamenti automaticamente. Vengono scaricate solo le parti dell'applicazione che sono stati modificati, e quindi l'intera applicazione aggiornata viene reinstallata da una nuova cartella side-by-side.  
   
--   **Impatto sul computer dell'utente.** Con la distribuzione di Windows Installer, le applicazioni si basano spesso su componenti condivisi, con potenziali conflitti di versioni. con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, ogni applicazione è autonoma e non può interferire con altre applicazioni.  
+- **Impatto sul computer dell'utente.** Con la distribuzione di Windows Installer, le applicazioni si basano spesso su componenti condivisi, con potenziali conflitti di versioni. con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, ogni applicazione è autonoma e non può interferire con altre applicazioni.  
   
--   **Autorizzazioni di sicurezza.** Distribuzione di Windows Installer richiede autorizzazioni amministrative e consente solo installazione utente con limitazioni. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione consente agli utenti senza privilegi di amministratore installare e concede solo le autorizzazioni di sicurezza dall'accesso di codice necessarie per l'applicazione.  
+- **Autorizzazioni di sicurezza.** Distribuzione di Windows Installer richiede autorizzazioni amministrative e consente solo installazione utente con limitazioni. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione consente agli utenti senza privilegi di amministratore installare e concede solo le autorizzazioni di sicurezza dall'accesso di codice necessarie per l'applicazione.  
   
- In passato, questi problemi causati in alcuni casi gli sviluppatori a creare applicazioni Web invece di applicazioni basate su Windows, compromettere un'interfaccia utente avanzata per agevolare l'installazione. Tramite le applicazioni distribuite utilizzando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consente di ottenere il meglio di entrambe le tecnologie.  
+  In passato, questi problemi causati in alcuni casi gli sviluppatori a creare applicazioni Web invece di applicazioni basate su Windows, compromettere un'interfaccia utente avanzata per agevolare l'installazione. Tramite le applicazioni distribuite utilizzando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consente di ottenere il meglio di entrambe le tecnologie.  
   
 ## <a name="what-is-a-clickonce-application"></a>Che cos'è un'applicazione ClickOnce?  
  Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione è qualsiasi (con estensione xbap) di Windows Presentation Foundation, Windows Form (.exe), applicazione console (.exe) o soluzione Office (con estensione dll) pubblicato tramite [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tecnologia. È possibile pubblicare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da supporto, ad esempio un CD-ROM. Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione può essere installata nel computer dell'utente finale ed eseguita in locale anche quando il computer è offline oppure può essere eseguita in modalità solo online senza alcuna operazione di installazione in modo permanente nel computer dell'utente finale. Per altre informazioni, vedere [Scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  

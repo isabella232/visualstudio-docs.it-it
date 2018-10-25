@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851660"
 ---
 # <a name="creating-project-and-item-templates"></a>Creazione di modelli di progetti e di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ I modelli di progetto e di elemento di [!INCLUDE[vsprvs](../includes/vsprvs-md.m
 ## <a name="contents-of-a-template"></a>Contenuto di un modello  
  Tutti i modelli di progetto e i modelli di elemento, sia quelli installati con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sia quelli creati dall'utente, funzionano in base agli stessi principi e hanno contenuti simili. Tutti i modelli contengono gli elementi seguenti:  
   
--   I file da creare quando viene usato il modello, tra cui i file del codice sorgente, le risorse incorporate, i file di progetto e così via.  
+- I file da creare quando viene usato il modello, tra cui i file del codice sorgente, le risorse incorporate, i file di progetto e così via.  
   
--   Un file VSTEMPLATE. Questo file contiene i metadati che offrono a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le informazioni necessarie per visualizzare il modello nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** e per creare un progetto o un elemento dal modello. Per altre informazioni sui file con estensione vstemplate, vedere [Parametri di modello](../ide/template-parameters.md).  
+- Un file VSTEMPLATE. Questo file contiene i metadati che offrono a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le informazioni necessarie per visualizzare il modello nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** e per creare un progetto o un elemento dal modello. Per altre informazioni sui file con estensione vstemplate, vedere [Parametri di modello](../ide/template-parameters.md).  
   
- Quando questi file vengono compressi in un file ZIP e inseriti nella cartella corretta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] li visualizza automaticamente. I modelli di progetto sono disponibili nella sezione **Modelli personali** della finestra di dialogo **Nuovo progetto** e i modelli di elemento sono disponibili nella finestra di dialogo **Aggiungi nuovo elemento**. Per altre informazioni sulle cartelle dei modelli, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+  Quando questi file vengono compressi in un file ZIP e inseriti nella cartella corretta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] li visualizza automaticamente. I modelli di progetto sono disponibili nella sezione **Modelli personali** della finestra di dialogo **Nuovo progetto** e i modelli di elemento sono disponibili nella finestra di dialogo **Aggiungi nuovo elemento**. Per altre informazioni sulle cartelle dei modelli, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Starter kit  
  Gli starter kit sono modelli avanzati che possono essere condivisi con altri membri della community. Uno starter kit include esempi di codice compilabili, documentazione e altre risorse per facilitare l'apprendimento di nuovi strumenti e tecniche di programmazione durante la compilazione di applicazioni utili e reali. I contenuti e le procedure di base per gli starter kit sono identici a quelli dei modelli. Per altre informazioni, vedere [Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md).  
