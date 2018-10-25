@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908782"
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
   Quattro tipi di moduli possono essere utilizzati in un flusso di lavoro: associazione, avvio, attività e la modifica. Questi tipi di form possono basarsi su un form ASPX o un modulo di InfoPath. Il livello di supporto che [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce per un particolare modulo dipende da diversi fattori, che sono descritte nelle tabelle seguenti. Per altre informazioni sui tipi di modulo del flusso di lavoro, vedere [Cenni preliminari sui form del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=185228) sul sito Web MSDN.  
@@ -43,7 +43,7 @@ ms.locfileid: "36326080"
  La tabella seguente elenca [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] supporto per i tipi di modulo diversi nei form ASPX o InfoPath in SharePoint flussi di lavoro riutilizzabili che vengono importati nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 |Tipo di modulo|Flusso di lavoro riutilizzabile che dispone di un form ASPX importato da SharePoint Designer|Flusso di lavoro riutilizzabile che dispone di un modulo di InfoPath importato da SharePoint Designer|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |Associazione|-Il modulo fa riferimento il *Elements* file del flusso di lavoro.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
 |Avvio|-Il modulo fa riferimento il flusso di lavoro di *Elements* file del flusso di lavoro.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. **Nota:** regole e le proprietà devono essere aggiunte e modificate per questo scenario.|  
 |Attività|-Il modulo fa riferimento il *Elements* file del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. **Nota:** regole e le proprietà devono essere aggiunte e modificate per questo scenario.|  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_locationtype | Documenti Microsoft'
+title: Get_locationtype | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6bcd1c204a68f9e139c12341b722bebb28cba5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e5c98d604881ead29605c0831e154293abee84f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902386"
 ---
 # <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
-Recupera il tipo di posizione di un simbolo di dati.  
+Recupera il tipo di percorso di un simbolo di dati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_locationType (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un valore di [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md) enumerazione che specifica il tipo di posizione di un simbolo di dati, ad esempio `static` o `local`.  
+ [out] Restituisce un valore di [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) enumerazione che specifica il tipo di percorso di un simbolo di dati, ad esempio `static` o `local`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -44,4 +44,4 @@ HRESULT get_locationType (
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md)
+ [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

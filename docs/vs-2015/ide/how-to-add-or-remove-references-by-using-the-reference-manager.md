@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917556"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49258180"
   
 #### <a name="to-add-a-reference"></a>Per aggiungere un riferimento  
   
-1.  In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo Riferimenti e scegliere **Aggiungi riferimento**.  
+1. In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo Riferimenti e scegliere **Aggiungi riferimento**.  
   
-2.  Specificare i riferimenti da aggiungere e scegliere **OK**.  
+2. Specificare i riferimenti da aggiungere e scegliere **OK**.  
   
- Verrà visualizzata la finestra della **Gestione riferimenti** che elenca i riferimenti disponibili in base al gruppo. Il tipo di progetto determina quale dei seguenti gruppi vengono visualizzati:  
+   Verrà visualizzata la finestra della **Gestione riferimenti** che elenca i riferimenti disponibili in base al gruppo. Il tipo di progetto determina quale dei seguenti gruppi vengono visualizzati:  
   
 -   Assembly, con i sottogruppi Estensioni e Framework.  
   
@@ -69,29 +69,29 @@ ms.locfileid: "49258180"
   
  La scheda Assembly è costituita da due sottoschede:  
   
-1.  In Framework sono elencati tutti gli assembly che costituiscono il framework di destinazione.  
+1. In Framework sono elencati tutti gli assembly che costituiscono il framework di destinazione.  
   
-    -   Gli assembly annunciati sono nel Framework completo e vengono enumerati nell'elenco Framework quando il progetto è destinato a un profilo del framework di destinazione. Gli assembly annunciati appaiono in grigio per differenziarli dagli assembly presenti nel profilo del framework di destinazione del progetto. Ad esempio, se un progetto è destinato a .NET Framework 4 Client, nell'elenco Framework vengono mostrati gli assembly annunciati da .NET Framework 4. Quando un utente aggiunge un assembly annunciato, l'utente riceve una notifica indicante che, dopo la chiusura della finestra di dialogo **Gestione riferimenti**, il progetto verrà reindirizzato a .NET Framework 4 e l'assembly annunciato verrà aggiunto.  
+   -   Gli assembly annunciati sono nel Framework completo e vengono enumerati nell'elenco Framework quando il progetto è destinato a un profilo del framework di destinazione. Gli assembly annunciati appaiono in grigio per differenziarli dagli assembly presenti nel profilo del framework di destinazione del progetto. Ad esempio, se un progetto è destinato a .NET Framework 4 Client, nell'elenco Framework vengono mostrati gli assembly annunciati da .NET Framework 4. Quando un utente aggiunge un assembly annunciato, l'utente riceve una notifica indicante che, dopo la chiusura della finestra di dialogo **Gestione riferimenti**, il progetto verrà reindirizzato a .NET Framework 4 e l'assembly annunciato verrà aggiunto.  
   
-    -   I progetti per applicazioni di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contengono riferimenti a tutti gli assembly di [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] di destinazione per impostazione predefinita all'atto della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella Riferimenti di **Esplora soluzioni** indica il riferimento all'intero framework. Pertanto, nella scheda Framework non saranno enumerati gli assembly dal framework e verrà invece visualizzato il messaggio seguente: "Si è già fatto riferimento a tutti gli assembly del framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework". Per i progetti desktop, nella scheda Framework vengono enumerati gli assembly dal framework di destinazione e l'utente dovrà aggiungere i riferimenti necessari all'applicazione.  
+   -   I progetti per applicazioni di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contengono riferimenti a tutti gli assembly di [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] di destinazione per impostazione predefinita all'atto della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella Riferimenti di **Esplora soluzioni** indica il riferimento all'intero framework. Pertanto, nella scheda Framework non saranno enumerati gli assembly dal framework e verrà invece visualizzato il messaggio seguente: "Si è già fatto riferimento a tutti gli assembly del framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework". Per i progetti desktop, nella scheda Framework vengono enumerati gli assembly dal framework di destinazione e l'utente dovrà aggiungere i riferimenti necessari all'applicazione.  
   
-2.  In Estensioni sono elencati tutti gli assembly che i fornitori esterni di componenti e di controlli hanno sviluppato per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.  
+2. In Estensioni sono elencati tutti gli assembly che i fornitori esterni di componenti e di controlli hanno sviluppato per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.  
   
-    -   Estensioni viene popolata enumerando gli assembly che sono registrati nei seguenti percorsi:  
+   -   Estensioni viene popolata enumerando gli assembly che sono registrati nei seguenti percorsi:  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         Ad esempio, se un progetto è destinato a .NET Framework 4 in un computer a 32 bit, Estensioni enumera gli assembly che sono registrati in \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ e \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\.  
+        Ad esempio, se un progetto è destinato a .NET Framework 4 in un computer a 32 bit, Estensioni enumera gli assembly che sono registrati in \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ e \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\.  
   
- Alcuni componenti nell'elenco potrebbero non essere visualizzati, a seconda della versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] del progetto. Ciò può verificarsi nelle seguenti condizioni:  
+   Alcuni componenti nell'elenco potrebbero non essere visualizzati, a seconda della versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] del progetto. Ciò può verificarsi nelle seguenti condizioni:  
   
 -   Un componente che usa una versione recente di .NET Framework è incompatibile con un progetto destinato a una versione di .NET Framework precedente.  
   
@@ -108,35 +108,35 @@ ms.locfileid: "49258180"
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Per visualizzare un assembly nella finestra di dialogo Aggiungi riferimento  
   
--   Spostare o copiare l'assembly in una o più delle seguenti posizioni:  
+- Spostare o copiare l'assembly in una o più delle seguenti posizioni:  
   
-    -   La directory del progetto corrente. È possibile trovare questi assembly tramite la scheda **Sfoglia** .  
+  - La directory del progetto corrente. È possibile trovare questi assembly tramite la scheda **Sfoglia** .  
   
-    -   Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti**.  
+  - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti**.  
   
-     \- oppure -  
+    \- oppure -  
   
--   Impostare una chiave del Registro di sistema che specifica il percorso degli assembly da visualizzare:  
+- Impostare una chiave del Registro di sistema che specifica il percorso degli assembly da visualizzare:  
   
-     Per un sistema operativo a 32 bit, aggiungere una delle seguenti chiavi del Registro di sistema.  
+   Per un sistema operativo a 32 bit, aggiungere una delle seguenti chiavi del Registro di sistema.  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     Per un sistema operativo a 64 bit, aggiungere una delle seguenti chiavi del Registro di sistema in un hive del Registro di sistema a 32 bit.  
+    Per un sistema operativo a 64 bit, aggiungere una delle seguenti chiavi del Registro di sistema in un hive del Registro di sistema a 32 bit.  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     *VersionMinimum* corrisponde alla versione minima applicabile di .NET Framework. Se il valore di *VersionMinimum* è v3.0, le cartelle specificate in AssemblyFoldersEx si applicano ai progetti destinati a .NET Framework 3.0 e versioni successive.  
+    *VersionMinimum* corrisponde alla versione minima applicabile di .NET Framework. Se il valore di *VersionMinimum* è v3.0, le cartelle specificate in AssemblyFoldersEx si applicano ai progetti destinati a .NET Framework 3.0 e versioni successive.  
   
-     *AssemblyLocation* è la directory degli assembly che si vuole visualizzare nella finestra di dialogo **Aggiungi riferimento**, ad esempio C:\MyAssemblies\\.  
+    *AssemblyLocation* è la directory degli assembly che si vuole visualizzare nella finestra di dialogo **Aggiungi riferimento**, ad esempio C:\MyAssemblies\\.  
   
-     Se la chiave del Registro di sistema viene creata nel nodo HKEY_LOCAL_MACHINE, tutti gli utenti possono visualizzare gli assembly nel percorso specificato nella finestra di dialogo **Aggiungi riferimento**. Se la chiave del Registro di sistema viene creata nel nodo HKEY_CURRENT_USER, ha effetto solo sull'impostazione dell'utente corrente.  
+    Se la chiave del Registro di sistema viene creata nel nodo HKEY_LOCAL_MACHINE, tutti gli utenti possono visualizzare gli assembly nel percorso specificato nella finestra di dialogo **Aggiungi riferimento**. Se la chiave del Registro di sistema viene creata nel nodo HKEY_CURRENT_USER, ha effetto solo sull'impostazione dell'utente corrente.  
   
-     Aprire di nuovo la finestra di dialogo **Aggiungi riferimento**. Gli assembly dovrebbero essere visibili nella scheda **.NET**. In caso contrario, assicurarsi che gli assembly si trovino nella directory *AssemblyLocation* specificata, riavviare Visual Studio e riprovare.  
+    Aprire di nuovo la finestra di dialogo **Aggiungi riferimento**. Gli assembly dovrebbero essere visibili nella scheda **.NET**. In caso contrario, assicurarsi che gli assembly si trovino nella directory *AssemblyLocation* specificata, riavviare Visual Studio e riprovare.  
   
 ## <a name="com-tab"></a>Scheda COM  
  Nella scheda COM sono elencati tutti i componenti COM a cui è possibile fare riferimento. Se si desidera aggiungere un riferimento a una DLL COM registrata che contiene un manifesto interno, annullare prima di tutto la registrazione della DLL. In caso contrario, Visual Studio aggiungerà il riferimento all'assembly come controllo ActiveX e non come DLL nativa.  
@@ -159,11 +159,11 @@ ms.locfileid: "49258180"
   
  È possibile generare un file WinMD in Visual Studio in due modi:  
   
--   **Progetti gestiti per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: i progetti di app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] possono generare file binari WinMD impostando Proprietà progetto &#124; Output Type = WinMD File. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi A.B e A.B.C, i nomi possibili per il file WinMD generato saranno A.winmd e A.B.winmd. Se un utente immette un valore Proprietà progetti &#124; Nome assembly o Proprietà progetti &#124; Spazio dei nomi che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. I tipi che non esistono in uno spazio dei nomi secondario del nome file non potranno essere individuati in fase di esecuzione. In questo assembly, lo spazio dei nomi comune più piccolo è "CSWSClassLibrary1". Un progetto desktop Visual Basic o Visual C# può utilizzare solo file WinMD che sono generati utilizzando i [!INCLUDE[win8](../includes/win8-md.md)] SDK, noti come WinMD del produttore, e non può generare WinMD.  
+- **Progetti gestiti per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: i progetti di app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] possono generare file binari WinMD impostando Proprietà progetto &#124; Output Type = WinMD File. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi A.B e A.B.C, i nomi possibili per il file WinMD generato saranno A.winmd e A.B.winmd. Se un utente immette un valore Proprietà progetti &#124; Nome assembly o Proprietà progetti &#124; Spazio dei nomi che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. I tipi che non esistono in uno spazio dei nomi secondario del nome file non potranno essere individuati in fase di esecuzione. In questo assembly, lo spazio dei nomi comune più piccolo è "CSWSClassLibrary1". Un progetto desktop Visual Basic o Visual C# può utilizzare solo file WinMD che sono generati utilizzando i [!INCLUDE[win8](../includes/win8-md.md)] SDK, noti come WinMD del produttore, e non può generare WinMD.  
   
--   **Progetti nativi per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.  
+- **Progetti nativi per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.  
   
- La scheda Windows è costituita da due sottogruppi.  
+  La scheda Windows è costituita da due sottogruppi.  
   
 ### <a name="core-subgroup"></a>Sottogruppo di base  
  Nel Sottogruppo di base sono elencati tutti i file WinMD (per gli elementi Windows Runtime) nell'SDK per la versione di Windows di destinazione.  

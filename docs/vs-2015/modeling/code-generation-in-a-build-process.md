@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907924"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ Nel processo di compilazione, la trasformazione del testo si verifica prima dell
 
 In `AfterTransform`, è possibile fare riferimento a elenchi di file:
 
--   GeneratedFiles - un elenco di file scritti dal processo. Per quelli file che hanno sovrascritto file di sola lettura esistenti,% (GeneratedFiles.ReadOnlyFileOverwritten) sarà true. È possibile estrarre questi file dal controllo del codice sorgente.
+- GeneratedFiles - un elenco di file scritti dal processo. Per quelli file che hanno sovrascritto file di sola lettura esistenti,% (GeneratedFiles.ReadOnlyFileOverwritten) sarà true. È possibile estrarre questi file dal controllo del codice sorgente.
 
--   NonGeneratedFiles - un elenco di file di sola lettura che non sono stati sovrascritti.
+- NonGeneratedFiles - un elenco di file di sola lettura che non sono stati sovrascritti.
 
- Ad esempio, si definisce un'attività per estrarre GeneratedFiles.
+  Ad esempio, si definisce un'attività per estrarre GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath e OutputFileName
 
@@ -255,7 +255,6 @@ Modificare il file con estensione csproj o vbproj per definire una proprietà de
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 È possibile utilizzare la proprietà del progetto in un assembly e includere le direttive:

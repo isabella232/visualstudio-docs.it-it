@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908353"
 ---
 # <a name="actions-pane-overview"></a>Panoramica del riquadro azioni
   Un riquadro azioni è una personalizzabile **azioni documenti** riquadro attività che è collegato a un documento di Microsoft Office Word specifico o della cartella di lavoro di Microsoft Office Excel. Nel riquadro azioni è ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività incorporati, ad esempio la **origine XML** riquadro attività in Excel o il **stili e formattazione** riquadro attività in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.
@@ -48,16 +48,16 @@ ms.locfileid: "35673407"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Aggiungere più controlli al riquadro azioni  
  Quando si aggiungono più controlli al riquadro azioni, è consigliabile raggruppare i controlli in un controllo utente e quindi aggiungere il controllo utente per il <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà. Questo processo include i due passaggi seguenti:  
 
-1.  Creare l'interfaccia utente (UI) del riquadro azioni aggiungendo un **controllo riquadro azioni** oppure **controllo utente** elemento al progetto. Entrambi questi elementi includono una classe <xref:System.Windows.Forms.UserControl> personalizzata di Windows Form. Il **controllo riquadro azioni** e **controllo utente** gli elementi sono equivalenti; l'unica differenza è il relativo nome.  
+1. Creare l'interfaccia utente (UI) del riquadro azioni aggiungendo un **controllo riquadro azioni** oppure **controllo utente** elemento al progetto. Entrambi questi elementi includono una classe <xref:System.Windows.Forms.UserControl> personalizzata di Windows Form. Il **controllo riquadro azioni** e **controllo utente** gli elementi sono equivalenti; l'unica differenza è il relativo nome.  
 
-2.  Aggiungere controlli Windows Form a <xref:System.Windows.Forms.UserControl> usando la finestra di progettazione o scrivendo codice.  
+2. Aggiungere controlli Windows Form a <xref:System.Windows.Forms.UserControl> usando la finestra di progettazione o scrivendo codice.  
 
-    > [!NOTE]  
-    >  È anche possibile aggiungere controlli WPF al riquadro azioni aggiungendo un oggetto <xref:System.Windows.Controls.UserControl> all'oggetto <xref:System.Windows.Forms.UserControl> di Windows Form. Per altre informazioni, vedere [controlla l'uso WPF nelle soluzioni Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+   > [!NOTE]  
+   >  È anche possibile aggiungere controlli WPF al riquadro azioni aggiungendo un oggetto <xref:System.Windows.Controls.UserControl> all'oggetto <xref:System.Windows.Forms.UserControl> di Windows Form. Per altre informazioni, vedere [controlla l'uso WPF nelle soluzioni Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3.  Aggiungere un'istanza del controllo utente personalizzato ai controlli contenuti nel campo `ActionsPane` della classe `ThisWorkbook` (per Excel) o `ThisDocument` (per Word) nel progetto.  
+3. Aggiungere un'istanza del controllo utente personalizzato ai controlli contenuti nel campo `ActionsPane` della classe `ThisWorkbook` (per Excel) o `ThisDocument` (per Word) nel progetto.  
 
- Per esempi che illustrano questo processo in modo più dettagliato, vedere [procedura: aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+   Per esempi che illustrano questo processo in modo più dettagliato, vedere [procedura: aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Nascondere il riquadro azioni  
  Benché la classe <xref:Microsoft.Office.Tools.ActionsPane> includa un metodo <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> e una proprietà <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, non è possibile rimuovere il riquadro azioni dall'interfaccia utente usando membri della classe <xref:Microsoft.Office.Tools.ActionsPane> stessa. La chiamata il <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> impostazione o metodo il <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> proprietà **false** nascosti solo i controlli nel riquadro azioni; non li nasconde il riquadro attività.  

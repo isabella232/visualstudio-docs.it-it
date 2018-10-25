@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isStatic | Documenti Microsoft
+title: Get_isstatic | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ac087fbd967319d6b853a916c708a6f6a9a776
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a0cd30a8a1bcdab93f59c439cf27fce5049ebc09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899149"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
-Recupera un flag che specifica se il livello di funzione o thunk è stato contrassegnato come static.  
+Recupera un flag che specifica se il livello di funzione o thunk è stato contrassegnato come statico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ HRESULT get_isStatic(
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

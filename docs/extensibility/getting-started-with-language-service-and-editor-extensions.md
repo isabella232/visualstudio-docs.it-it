@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901320"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni di editor e servizio di linguaggio
 È possibile usare le estensioni dell'editor per aggiungere funzionalità del servizio linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e lampadine per il proprio linguaggio di programmazione o a qualsiasi tipo di contenuto. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio colore, i margini, le aree di controllo e altri elementi visivi come testo. È anche possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni testo in cui viene visualizzato il contenuto.  
@@ -44,17 +44,17 @@ ms.locfileid: "39498380"
   
  Di seguito sono riportati alcuni dei tipi di base di estensioni dell'editor:  
   
--   Le barre di scorrimento e i margini  
+- Le barre di scorrimento e i margini  
   
--   Tag  
+- Tag  
   
--   Aree di controllo  
+- Aree di controllo  
   
--   Opzioni  
+- Opzioni  
   
--   IntelliSense  
+- IntelliSense  
   
- Per altre informazioni sui punti di estensione di editor, vedere [punti di estensione del servizio e l'editor di linguaggio](../extensibility/language-service-and-editor-extension-points.md).  
+  Per altre informazioni sui punti di estensione di editor, vedere [punti di estensione del servizio e l'editor di linguaggio](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Distribuzione di estensioni di editor  
  In Visual Studio, si distribuisce le estensioni dell'editor mediante l'aggiunta di un file di metadati denominato *vsixmanifest* alla soluzione, la compilazione della soluzione e l'aggiunta di una copia dei file binari e il manifesto in una cartella nota per Visual Studio. Il file manifesto definisce le informazioni di base relativi all'estensione (ad esempio, nome, autore, versione e tipo di contenuto). Per altre informazioni su come distribuire le estensioni e il file manifesto VSIX, vedere [estensioni di Visual Studio Ship](../extensibility/shipping-visual-studio-extensions.md).  

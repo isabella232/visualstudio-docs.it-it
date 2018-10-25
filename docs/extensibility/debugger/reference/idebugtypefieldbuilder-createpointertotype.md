@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType | Documenti Microsoft
+title: IDebugTypeFieldBuilder::CreatePointerToType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 292a6ba67ca6508d19d6dc56abb012ec13197244
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 611534843fd02cfd35fe3707917c6399c893db60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910042"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crea un puntatore al tipo specificato.  
@@ -42,10 +42,10 @@ int CreatePointerToType(
   
 #### <a name="parameters"></a>Parametri  
  `pTypeField`  
- [in] Tipo da scegliere. È rappresentato dal [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.  
+ [in] Tipo in modo che punti. È rappresentato dal [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.  
   
  `pPtrToTypeField`  
- [out] Restituisce il puntatore rappresentato da un nuovo **IDebugField** oggetto.  
+ [out] Restituisce il puntatore rappresentato da una nuova **IDebugField** oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

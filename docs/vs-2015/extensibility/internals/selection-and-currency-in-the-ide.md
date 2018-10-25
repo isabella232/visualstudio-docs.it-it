@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902870"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selezione e valuta nell'IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 ### <a name="window-types-and-selection"></a>Selezione e tipi di finestre  
  Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE windows sono organizzati in due tipi generali:  
   
--   Windows tipo di gerarchia  
+- Windows tipo di gerarchia  
   
--   Finestre cornice, ad esempio le finestre dei documenti e finestre  
+- Finestre cornice, ad esempio le finestre dei documenti e finestre  
   
- L'IDE rileva valuta in modo diverso per ognuno di questi tipi di finestra.  
+  L'IDE rileva valuta in modo diverso per ognuno di questi tipi di finestra.  
   
- La finestra di tipo di progetto più comune è Esplora soluzioni, che controlla l'IDE. Tiene traccia di una finestra del tipo di progetto della gerarchia globale e l'ID dell'elemento del contesto di selezione globale e la finestra si basa sulla selezione dell'utente per determinare la gerarchia corrente. Per windows: tipo di progetto, l'ambiente fornisce il servizio globale <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, tramite quale VSPackage possono monitorare i valori correnti per gli elementi aperti. Proprietà nell'ambiente di esplorazione è determinata dal servizio globale.  
+  La finestra di tipo di progetto più comune è Esplora soluzioni, che controlla l'IDE. Tiene traccia di una finestra del tipo di progetto della gerarchia globale e l'ID dell'elemento del contesto di selezione globale e la finestra si basa sulla selezione dell'utente per determinare la gerarchia corrente. Per windows: tipo di progetto, l'ambiente fornisce il servizio globale <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, tramite quale VSPackage possono monitorare i valori correnti per gli elementi aperti. Proprietà nell'ambiente di esplorazione è determinata dal servizio globale.  
   
- Finestre cornice, utilizzano d'altra parte, dell'oggetto documento all'interno della finestra cornice per inserire il valore di SelectionContext (il trio di gerarchia/ID dell'elemento/SelectionContainer). . Finestre cornice usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> per questo scopo. Oggetto documento può effettuare il push solo i valori per il contenitore di selezione, lasciando i valori locali per la gerarchia e ItemID invariato, come avviene per i documenti figlio MDI.  
+  Finestre cornice, utilizzano d'altra parte, dell'oggetto documento all'interno della finestra cornice per inserire il valore di SelectionContext (il trio di gerarchia/ID dell'elemento/SelectionContainer). . Finestre cornice usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> per questo scopo. Oggetto documento può effettuare il push solo i valori per il contenitore di selezione, lasciando i valori locali per la gerarchia e ItemID invariato, come avviene per i documenti figlio MDI.  
   
 ### <a name="events-and-currency"></a>Gli eventi e valuta  
  Due tipi di eventi possono verificarsi che influiscono sulla nozione dell'ambiente di valuta:  

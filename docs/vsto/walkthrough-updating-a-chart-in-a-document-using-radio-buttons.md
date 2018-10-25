@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904674"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: Aggiornamento di un grafico in un documento mediante pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.  
@@ -30,15 +30,15 @@ ms.locfileid: "35258220"
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
--   Aggiunta di un grafico al documento di un progetto a livello di documento in fase di progettazione.  
+- Aggiunta di un grafico al documento di un progetto a livello di documento in fase di progettazione.  
   
--   Raggruppamento dei pulsanti di opzione aggiungendoli a un controllo utente.  
+- Raggruppamento dei pulsanti di opzione aggiungendoli a un controllo utente.  
   
--   Modifica dello stile del grafico quando si seleziona un'opzione.  
+- Modifica dello stile del grafico quando si seleziona un'opzione.  
   
- Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Word all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
+  Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Word all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  

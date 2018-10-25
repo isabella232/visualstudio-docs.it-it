@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913865"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Spostare i P/Invoke nella classe NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228877"
 ## <a name="rule-description"></a>Descrizione della regola
  I metodi di chiamata al sistema operativo, ad esempio quelli contrassegnati utilizzando il <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attributi o i metodi che vengono definiti usando il `Declare` parola chiave in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], accedere a codice non gestito. Questi metodi dovrebbero essere in una delle classi seguenti:
 
--   **NativeMethods** -questa classe non elimina i percorsi stack per l'autorizzazione al codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> non deve essere applicata a questa classe.) Questa classe è per i metodi che possono essere utilizzati ovunque, perché verrà eseguita un'analisi dello stack.
+- **NativeMethods** -questa classe non elimina i percorsi stack per l'autorizzazione al codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> non deve essere applicata a questa classe.) Questa classe è per i metodi che possono essere utilizzati ovunque, perché verrà eseguita un'analisi dello stack.
 
--   **SafeNativeMethods** -questa classe Elimina percorsi stack per l'autorizzazione al codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicata a questa classe.) Questa classe è per i metodi che sono sicuri per tutti gli utenti da chiamare. Ai chiamanti di questi metodi non sono necessarie per eseguire una revisione completa della sicurezza per assicurarsi che l'utilizzo è sicuro perché i metodi sono innocui per qualsiasi chiamante.
+- **SafeNativeMethods** -questa classe Elimina percorsi stack per l'autorizzazione al codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicata a questa classe.) Questa classe è per i metodi che sono sicuri per tutti gli utenti da chiamare. Ai chiamanti di questi metodi non sono necessarie per eseguire una revisione completa della sicurezza per assicurarsi che l'utilizzo è sicuro perché i metodi sono innocui per qualsiasi chiamante.
 
--   **UnsafeNativeMethods** -questa classe Elimina percorsi stack per l'autorizzazione al codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicata a questa classe.) Questa classe è per i metodi che sono potenzialmente pericolosi. Un chiamante qualsiasi di questi metodi è necessario eseguire una revisione completa della sicurezza per assicurarsi che l'utilizzo è sicuro perché non verrà eseguita alcuna analisi dello stack.
+- **UnsafeNativeMethods** -questa classe Elimina percorsi stack per l'autorizzazione al codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicata a questa classe.) Questa classe è per i metodi che sono potenzialmente pericolosi. Un chiamante qualsiasi di questi metodi è necessario eseguire una revisione completa della sicurezza per assicurarsi che l'utilizzo è sicuro perché non verrà eseguita alcuna analisi dello stack.
 
- Queste classi vengono dichiarate come `internal` (`Friend`, in Visual Basic) e si dichiara un costruttore privato per impedire la creazione di nuove istanze. I metodi delle classi devono essere `static` e `internal` (`Shared` e `Friend` in Visual Basic).
+  Queste classi vengono dichiarate come `internal` (`Friend`, in Visual Basic) e si dichiara un costruttore privato per impedire la creazione di nuove istanze. I metodi delle classi devono essere `static` e `internal` (`Shared` e `Friend` in Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, spostare il metodo appropriato **NativeMethods** classe. Per la maggior parte delle applicazioni, lo spostamento di P/Invoke a una nuova classe denominata **NativeMethods** è sufficiente.

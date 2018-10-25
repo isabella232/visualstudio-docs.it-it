@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908536"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di rendering.  
@@ -30,19 +30,19 @@ Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di renderi
 ## <a name="remarks"></a>Note  
  La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, generazione di mappe mip viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che è:  
   
--   Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
+- Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
   
--   Il membro Usage è impostato su D3D11_USAGE_DEFAULT o su D3D11_USAGE_IMMUTABLE.  
+- Il membro Usage è impostato su D3D11_USAGE_DEFAULT o su D3D11_USAGE_IMMUTABLE.  
   
--   Il membro CPUAccessFlags è impostato su 0 (nessun accesso alla CPU).  
+- Il membro CPUAccessFlags è impostato su 0 (nessun accesso alla CPU).  
   
--   Il membro Count del membro SampleDesc è impostato su 1 (nessun anti-aliasing multicampione).  
+- Il membro Count del membro SampleDesc è impostato su 1 (nessun anti-aliasing multicampione).  
   
--   Il membro MipLevels è impostato su 1 (nessuna mappa MIP esistente).  
+- Il membro MipLevels è impostato su 1 (nessuna mappa MIP esistente).  
   
- Quando i dati iniziali sono forniti dall'applicazione, il formato della trama deve supportare la generazione automatica di mappe MIP, come determinato da D3D11_FORMAT_SUPPORT_MIP_AUTOGEN, a meno che il formato non sia BC1, BC2 o BC3. In caso contrario, la trama non viene modificata e non vengono generate mappe MIP quando vengono forniti i dati iniziali.  
+  Quando i dati iniziali sono forniti dall'applicazione, il formato della trama deve supportare la generazione automatica di mappe MIP, come determinato da D3D11_FORMAT_SUPPORT_MIP_AUTOGEN, a meno che il formato non sia BC1, BC2 o BC3. In caso contrario, la trama non viene modificata e non vengono generate mappe MIP quando vengono forniti i dati iniziali.  
   
- Le mappe MIP sono state generate automaticamente per una trama, le chiamate a `ID3D11Device::CreateShaderResourceView` vengono modificate durante la riproduzione affinché usino la catena MIP durante il campionamento della trama.  
+  Le mappe MIP sono state generate automaticamente per una trama, le chiamate a `ID3D11Device::CreateShaderResourceView` vengono modificate durante la riproduzione affinché usino la catena MIP durante il campionamento della trama.  
   
 ## <a name="example"></a>Esempio  
  Il **generazione di mappe Mip** variante può essere riprodotta usando codice simile al seguente:  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Se si vuole fornire contenuto di livello MIP personalizzato anziché generarlo automaticamente, è necessario creare le proprie trame tramite un editor di immagini che supporta trame con mappe MIP, caricare il file e passare i livelli MIP a `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variante delle dimensioni della trama ridotte metà/quarto](half-quarter-texture-dimensions-variant.md)
+ [Variante delle dimensioni della trama ridotte a metà o un quarto](half-quarter-texture-dimensions-variant.md)

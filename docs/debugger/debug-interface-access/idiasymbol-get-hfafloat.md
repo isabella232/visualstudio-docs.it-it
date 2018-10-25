@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaFloat | Documenti Microsoft
+title: Get_hfafloat | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede9f02aa7fa4498e12382f22c43f4421342b669
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900241"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
-Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene omogenea aggregazione (HFA) dati a virgola mobile di tipo float.  
+Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene omogenei a virgola mobile (HFA) i dati aggregati di tipo float.  
   
 ## <a name="syntax"></a>Sintassi  
   

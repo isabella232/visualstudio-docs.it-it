@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE | Documenti Microsoft
+title: REFERENCE_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c30bb562784d9de0d9b44a2c3169b595bb4bd39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcbf8792cf2972c4b419b6309ba2f561b8308812
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127142"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906897"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Specifica il tipo di riferimento.  
@@ -44,15 +44,15 @@ public enum enum_REFERENCE_TYPE {
   
 ## <a name="members"></a>Membri  
  REF_TYPE_WEAK  
- Specifica un riferimento debole. Può essere combinato con `REF_TYPE_STRONG`.  
+ Specifica un riferimento debole. Non può essere combinato con `REF_TYPE_STRONG`.  
   
  REF_TYPE_STRONG  
- Specifica un riferimento sicuro. Può essere combinato con `REF_TYPE_WEAK`.  
+ Specifica un riferimento sicuro. Non può essere combinato con `REF_TYPE_WEAK`.  
   
 ## <a name="remarks"></a>Note  
- Utilizzato come il `dwRefType` appartenente il [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura.  
+ Utilizzato come il `dwRefType` membro della [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura.  
   
- Passato come parametro per il [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) metodo.  
+ Passato come parametro per il [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

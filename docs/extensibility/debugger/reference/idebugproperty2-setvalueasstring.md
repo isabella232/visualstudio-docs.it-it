@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Documenti Microsoft
+title: IDebugProperty2::SetValueAsString | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5fb55fb6f9a90cf39120be408428524f64463d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8f165ade12f6a4d8661ca4b0070efb1452ec09a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903036"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Imposta il valore di una proprietà da una stringa specificata.  
@@ -48,17 +48,17 @@ int SetValueAsString (
  [in] Stringa contenente il valore da impostare.  
   
  `nRadix`  
- [in] Radice da utilizzare per interpretare le informazioni numeriche. Può essere 0 per tentare di determinare automaticamente la radice.  
+ [in] Una radice da utilizzare nell'interpretare le informazioni numeriche. Ciò può essere 0 per tentare di determinare automaticamente la radice.  
   
  `dwTimeout`  
- [in] Specifica il tempo massimo, in millisecondi di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per un'attesa indefinita.  
+ [in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. La tabella seguente illustra gli altri valori possibili.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Nella tabella seguente mostra altri valori possibili.  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|La stringa non può essere convertita in un valore di proprietà oppure non è stato possibile impostare il valore della proprietà.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|La stringa non può essere convertita in un valore della proprietà oppure non è stato possibile impostare il valore della proprietà.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|La proprietà è in sola lettura.|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2039c1792a5e42c3181a01b10ff5bf271ea3bf2f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916361"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: definire e utilizzare delegati di attività in Progettazione del flusso di lavoro
 
@@ -23,54 +23,54 @@ ms.locfileid: "36755756"
 
 ## <a name="define-an-activity-delegate"></a>Definire un delegato dell'attività
 
-1.  In Visual Studio, selezionare **File** > **New** > **progetto**.
+1. In Visual Studio, selezionare **File** > **New** > **progetto**.
 
-1. Nel **nuovo progetto** finestra di dialogo, seleziona la **flusso di lavoro** categoria a sinistra e quindi selezionare il **applicazione Console flusso di lavoro** modello di progetto. Denominare il progetto (se lo si desidera) e fare clic su **accettabile**.
+2. Nel **nuovo progetto** finestra di dialogo, seleziona la **flusso di lavoro** categoria a sinistra e quindi selezionare il **applicazione Console flusso di lavoro** modello di progetto. Denominare il progetto (se lo si desidera) e fare clic su **accettabile**.
 
    > [!NOTE]
    > Se non viene visualizzato il **flusso di lavoro** category, installare prima il **Windows Workflow Foundation** componente di Visual Studio 2017. Per istruzioni dettagliate, vedere [installazione di Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-2.  Pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionare **Add** > **nuovo elemento**. Selezionare il **flusso di lavoro** categoria e quindi selezionare la **attività** modello di elemento. Denominare la nuova attività **Myforeach** e quindi selezionare **OK**.
+3. Pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionare **Add** > **nuovo elemento**. Selezionare il **flusso di lavoro** categoria e quindi selezionare la **attività** modello di elemento. Denominare la nuova attività **Myforeach** e quindi selezionare **OK**.
 
    L'attività viene aperto nella finestra di progettazione del flusso di lavoro.
 
-3.  Nella finestra di progettazione del flusso di lavoro, scegliere il **argomenti** scheda.
+4. Nella finestra di progettazione del flusso di lavoro, scegliere il **argomenti** scheda.
 
-4.  Fare clic su **Crea argomento**. Assegnare un nome al nuovo argomento **elementi**.
+5. Fare clic su **Crea argomento**. Assegnare un nome al nuovo argomento **elementi**.
 
-5.  Nel **tipo di argomento** colonna, selezionare **matrice di T []**.
+6. Nel **tipo di argomento** colonna, selezionare **matrice di T []**.
 
-6.  Nel browser dei tipi, selezionare **oggetti** e quindi selezionare **OK**.
+7. Nel browser dei tipi, selezionare **oggetti** e quindi selezionare **OK**.
 
-7.  Fare clic su **Crea argomento** nuovamente. Assegnare un nome al nuovo argomento **corpo**. Nel **direzione** colonna per il nuovo argomento, selezionare **proprietà**.
+8. Fare clic su **Crea argomento** nuovamente. Assegnare un nome al nuovo argomento **corpo**. Nel **direzione** colonna per il nuovo argomento, selezionare **proprietà**.
 
-8.  Nella colonna tipo di argomento, selezionare **Cerca tipi**
+9. Nella colonna tipo di argomento, selezionare **Cerca tipi**
 
-9. Nel browser dei tipi, immettere **ActivityAction** nel **nome tipo** campo. Selezionare **ActivityAction\<T >** nella visualizzazione albero. Selezionare **oggetti** nell'elenco a discesa che viene visualizzato per assegnare il tipo **ActivityAction\<oggetto >** all'argomento.
+10. Nel browser dei tipi, immettere **ActivityAction** nel **nome tipo** campo. Selezionare **ActivityAction\<T >** nella visualizzazione albero. Selezionare **oggetti** nell'elenco a discesa che viene visualizzato per assegnare il tipo **ActivityAction\<oggetto >** all'argomento.
 
-10. Trascinare un <xref:System.Activities.Statements.While> attività dal **flusso di controllo** sezione della casella degli strumenti all'area di progettazione.
+11. Trascinare un <xref:System.Activities.Statements.While> attività dal **flusso di controllo** sezione della casella degli strumenti all'area di progettazione.
 
-11. Selezionare il <xref:System.Activities.Statements.While> attività e selezionare il **variabili** scheda.
+12. Selezionare il <xref:System.Activities.Statements.While> attività e selezionare il **variabili** scheda.
 
-12. Selezionare **creare variabile**. Denominare la nuova variabile **indice**.
+13. Selezionare **creare variabile**. Denominare la nuova variabile **indice**.
 
-13. Nel **tipo di variabile** colonna, selezionare **Int32**. Lasciare il **ambito** come **mentre**e il **predefinito** colonna vuota.
+14. Nel **tipo di variabile** colonna, selezionare **Int32**. Lasciare il **ambito** come **mentre**e il **predefinito** colonna vuota.
 
-14. Impostare il **condizione** proprietà del <xref:System.Activities.Statements.While> attività **indice < Items.Length;**.
+15. Impostare il **condizione** proprietà del <xref:System.Activities.Statements.While> attività **indice < Items.Length;**.
 
-15. Trascinare un' <xref:System.Activities.Statements.InvokeDelegate> attività dal **primitive** sezione della casella degli strumenti per il **corpo** del <xref:System.Activities.Statements.While> attività.
+16. Trascinare un' <xref:System.Activities.Statements.InvokeDelegate> attività dal **primitive** sezione della casella degli strumenti per il **corpo** del <xref:System.Activities.Statements.While> attività.
 
-16. Selezionare **corpo** nell'elenco a discesa delegato.
+17. Selezionare **corpo** nell'elenco a discesa delegato.
 
-17. Nel **delle proprietà** griglia per il <xref:System.Activities.Statements.InvokeDelegate> attività, fare clic sui **...**  pulsante il **argomenti del delegato** proprietà.
+18. Nel **delle proprietà** griglia per il <xref:System.Activities.Statements.InvokeDelegate> attività, fare clic sui **...**  pulsante il **argomenti del delegato** proprietà.
 
-18. Nel **valore** colonna dell'argomento denominato **argomento**, immettere **Items [Index]**. Fare clic su **accettabile** per chiudere la **DelegateArguments** finestra di dialogo.
+19. Nel **valore** colonna dell'argomento denominato **argomento**, immettere **Items [Index]**. Fare clic su **accettabile** per chiudere la **DelegateArguments** finestra di dialogo.
 
-19. Trascinare un'attività di <xref:System.Activities.Statements.Assign> sulla riga orizzontale al di sotto dell'attività di <xref:System.Activities.Statements.InvokeDelegate>. Il <xref:System.Activities.Statements.Assign> creazione di attività e un <xref:System.Activities.Statements.Sequence> attività viene creato automaticamente per contenere le due attività nel **corpo** sezione del **MyForEach** attività. La sequenza è necessaria poiché il **corpo** sezione può contenere solo una singola attività. Creazione automatica di un nuovo <xref:System.Activities.Statements.Sequence> attività è una nuova funzionalità di .NET Framework 4.5.
+20. Trascinare un'attività di <xref:System.Activities.Statements.Assign> sulla riga orizzontale al di sotto dell'attività di <xref:System.Activities.Statements.InvokeDelegate>. Il <xref:System.Activities.Statements.Assign> creazione di attività e un <xref:System.Activities.Statements.Sequence> attività viene creato automaticamente per contenere le due attività nel **corpo** sezione del **MyForEach** attività. La sequenza è necessaria poiché il **corpo** sezione può contenere solo una singola attività. Creazione automatica di un nuovo <xref:System.Activities.Statements.Sequence> attività è una nuova funzionalità di .NET Framework 4.5.
 
-20. Impostare il **a** proprietà del <xref:System.Activities.Statements.Assign> attività **indice**. Impostare il **valore** proprietà del **assegnare** attività **index+1**.
+21. Impostare il **a** proprietà del <xref:System.Activities.Statements.Assign> attività **indice**. Impostare il **valore** proprietà del **assegnare** attività **index+1**.
 
-   L'oggetto personalizzato **MyForEach** attività richiama un'attività arbitraria una volta per ogni valore passato tramite il **elementi** insieme con i valori nella raccolta come input per l'attività.
+    L'oggetto personalizzato **MyForEach** attività richiama un'attività arbitraria una volta per ogni valore passato tramite il **elementi** insieme con i valori nella raccolta come input per l'attività.
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Usare l'attività personalizzata in un flusso di lavoro
 

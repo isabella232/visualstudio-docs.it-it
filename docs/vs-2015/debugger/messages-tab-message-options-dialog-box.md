@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912266"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Scheda Messaggi, Finestra di dialogo Opzioni messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Usare la **messaggi** pressione di tab per selezionare quali tipi di elenco nel 
  **Gruppi di messaggi**  
  Selezionare i gruppi di messaggi per la visualizzazione. Gruppi disponibili includono:  
   
--   WM_USER: con un codice maggiore di o uguale a WM_USER  
+- WM_USER: con un codice maggiore di o uguale a WM_USER  
   
--   Registrato: registrato con il **RegisterWindowMessage** chiamare  
+- Registrato: registrato con il **RegisterWindowMessage** chiamare  
   
--   Sconosciuto: messaggi sconosciuti nell'intervallo da 0 a (WM_USER – 1)  
+- Sconosciuto: messaggi sconosciuti nell'intervallo da 0 a (WM_USER – 1)  
   
- Si noti che questi **gruppi di messaggi** non eseguono il mapping alle voci specifiche sotto **messaggi da visualizzare**. Quando si seleziona un gruppo, la selezione viene applicata direttamente al flusso di messaggi.  
+  Si noti che questi **gruppi di messaggi** non eseguono il mapping alle voci specifiche sotto **messaggi da visualizzare**. Quando si seleziona un gruppo, la selezione viene applicata direttamente al flusso di messaggi.  
   
- All'interno di una casella di controllo disabilitata **gruppi di messaggi** indica che il **messaggi da visualizzare** casella di riepilogo è stata modificata per i messaggi in tale gruppo; non tutti i tipi di messaggio in tale gruppo vengono selezionati.  
+  All'interno di una casella di controllo disabilitata **gruppi di messaggi** indica che il **messaggi da visualizzare** casella di riepilogo è stata modificata per i messaggi in tale gruppo; non tutti i tipi di messaggio in tale gruppo vengono selezionati.  
   
- **Salvare le impostazioni come predefinito**  
- Salvare le impostazioni correnti per un utilizzo successivo come le opzioni di ricerca di messaggi. Queste impostazioni vengono salvate anche quando si esce da Spy + +.
+  **Salvare le impostazioni come predefinito**  
+  Salvare le impostazioni correnti per un utilizzo successivo come le opzioni di ricerca di messaggi. Queste impostazioni vengono salvate anche quando si esce da Spy + +.
 
 
 

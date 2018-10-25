@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2adc7125c79afc6b9ebc16b6c4b36f5c147bcdfb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ed7eb9c98ad8da45a50af79918480e74d76779e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908548"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -44,7 +44,7 @@ int GetHostMachineName_V7 (
 #### <a name="parameters"></a>Parametri
 
 `pbstrHostMachineName`  
-[out] Restituisce il nome del computer in cui è in esecuzione il programma.
+[out] Restituisce il nome del computer in cui viene eseguito il programma.
 
 ## <a name="return-value"></a>Valore restituito
 

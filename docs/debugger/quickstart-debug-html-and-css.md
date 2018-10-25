@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 563fed2a6622e56f76e604ead0da6c599e91b6db
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916686"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle App UWP in Visual Studio
   
@@ -41,13 +41,13 @@ ms.locfileid: "44281442"
   
  È possibile usare DOM Explorer per:  
   
--   Passare al sottoalbero di elementi DOM e controllare il codice HTML, CSS e JavaScript sottoposto a rendering.  
+- Passare al sottoalbero di elementi DOM e controllare il codice HTML, CSS e JavaScript sottoposto a rendering.  
   
--   Modificare dinamicamente gli attributi e gli stili CSS per gli elementi sottoposti a rendering e visualizzare immediatamente i risultati.  
+- Modificare dinamicamente gli attributi e gli stili CSS per gli elementi sottoposti a rendering e visualizzare immediatamente i risultati.  
   
--   Controllare l'applicazione degli stili CSS agli elementi della pagina e tenere traccia delle regole applicate.  
+- Controllare l'applicazione degli stili CSS agli elementi della pagina e tenere traccia delle regole applicate.  
   
- Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata**e **Layout**. Le app UWP supportano anche il **eventi** e **modifiche** schede. Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).  
+  Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata**e **Layout**. Le app UWP supportano anche il **eventi** e **modifiche** schede. Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Se la finestra DOM Explorer è chiusa, scegliere **Debug**>**Finestre** > **DOM Explorer** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
@@ -59,165 +59,165 @@ ms.locfileid: "44281442"
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Per eseguire il debug controllando il DOM attivo  
   
-1.  Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
+1. Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
   
-2.  Scegli **JavaScript** > **Windows Universal**, quindi scegliere **App WinJS**.  
+2. Scegli **JavaScript** > **Windows Universal**, quindi scegliere **App WinJS**.  
   
-3.  Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
+3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
   
-4.  Nell'elemento BODY di index. HTML, aggiungere questo codice:  
+4. Nell'elemento BODY di index. HTML, aggiungere questo codice:  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Aprire default.css e aggiungere il codice CSS seguente:  
+5. Aprire default.css e aggiungere il codice CSS seguente:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  Sostituire il codice nel file default.js con questo codice:  
+6. Sostituire il codice nel file default.js con questo codice:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
-            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
-            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
-        };  
+           pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+           pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+           pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     La figura seguente illustra ciò che si desidera vedere se si esegue questa app. Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.  
+    La figura seguente illustra ciò che si desidera vedere se si esegue questa app. Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.  
   
-     ![App FlipView che mostra i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
+    ![App FlipView che mostra i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Scegliere **computer locale** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante il **Debug** sulla barra degli strumenti:  
+7. Scegliere **computer locale** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante il **Debug** sulla barra degli strumenti:  
   
-     ![Elenco di destinazioni di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")  
+    ![Elenco di destinazioni di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8.  Scegliere **Debug** > **Avvia debug**o premere F5 per eseguire l'app in modalità debug.  
+8. Scegliere **Debug** > **Avvia debug**o premere F5 per eseguire l'app in modalità debug.  
   
-     Questo comando esegue l'app, ma vedrai una schermata per lo più vuota perché gli stili presentano alcuni bug in esso. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.  
+    Questo comando esegue l'app, ma vedrai una schermata per lo più vuota perché gli stili presentano alcuni bug in esso. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.  
   
-10. Passare a Visual Studio e scegliere la scheda **DOM Explorer** .  
+9. Passare a Visual Studio e scegliere la scheda **DOM Explorer** .  
   
-    > [!TIP]
-    >  È possibile premere ALT+TAB o F12 per passare da Visual Studio all'app in esecuzione.  
+   > [!TIP]
+   >  È possibile premere ALT+TAB o F12 per passare da Visual Studio all'app in esecuzione.  
   
-11. Nella finestra DOM Explorer selezionare l'elemento DIV per la sezione che presenta un ID `"fView"`. Usare i tasti di direzione per visualizzare e selezionare l'elemento DIV corretto. (Il tasto freccia destra consente di visualizzare gli elementi figlio di un elemento).  
+10. Nella finestra DOM Explorer selezionare l'elemento DIV per la sezione che presenta un ID `"fView"`. Usare i tasti di direzione per visualizzare e selezionare l'elemento DIV corretto. (Il tasto freccia destra consente di visualizzare gli elementi figlio di un elemento).  
   
      ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  È anche possibile selezionare l'elemento DIV nell'angolo inferiore sinistro della finestra JavaScript Console digitando `select(fView)` nel >> input prompt dei comandi e premere INVIO.  
+    >  È anche possibile selezionare l'elemento DIV nell'angolo in basso a sinistra della finestra Console JavaScript digitando `select(fView)` alla richiesta di input >>, quindi premere INVIO.  
   
      I valori visualizzati nelle schede sul lato destro della finestra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento corrente in DOM Explorer.  
   
-12. Scegliere la scheda **Calcolata** a destra.  
+11. Scegliere la scheda **Calcolata** a destra.  
   
      Questa scheda mostra il valore calcolato o finale di ogni proprietà dell'elemento DOM selezionato.  
   
-13. Aprire la regola CSS relativa all'altezza. Si noti che vi sia un stile inline impostato su 100px che appare non coerente con il valore dell'altezza del 100% impostata per il `#fView` selettore CSS. Il testo barrato per il selettore `#fView` indica che lo stile inline ha la precedenza su questo stile.  
+12. Aprire la regola CSS relativa all'altezza. Si noti che vi sia un stile inline impostato su 100px che appare non coerente con il valore dell'altezza del 100% impostata per il `#fView` selettore CSS. Il testo barrato per il selettore `#fView` indica che lo stile inline ha la precedenza su questo stile.  
   
      La figura seguente illustra la scheda **Calcolata** .  
   
      ![Scheda calcolato di DOM Explorer](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")  
   
-14. Nella finestra principale di DOM Explorer fare doppio clic sullo stile inline per l'altezza e la larghezza dell'elemento DIV `fView` . Ora è possibile modificare i valori qui. In questo scenario si vuole rimuoverli completamente.  
+13. Nella finestra principale di DOM Explorer fare doppio clic sullo stile inline per l'altezza e la larghezza dell'elemento DIV `fView` . Ora è possibile modificare i valori qui. In questo scenario si vuole rimuoverli completamente.  
   
-15. Nella finestra principale, fare doppio clic su `width: 100px;height: 100px;`, premere la **eliminare** e quindi premere **invio**. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nell'app, anche se non hai arrestato la sessione di debug.  
+14. Nella finestra principale, fare doppio clic su `width: 100px;height: 100px;`, premere la **eliminare** e quindi premere **invio**. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nell'app, anche se non hai arrestato la sessione di debug.  
   
     > [!IMPORTANT]
     >  Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata**e **Layout** . Per altre informazioni, vedi [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) e [Debug layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Passa all'app, selezionarlo o utilizzando Alt + Tab.  
+15. Passa all'app, selezionarlo o utilizzando Alt + Tab.  
   
      Il controllo `FlipView` sembra più grande delle dimensioni dello schermo del simulatore o dell'emulatore Windows Phone. Non si tratta del risultato desiderato. Per controllare, passare di nuovo a Visual Studio.  
   
-17. In DOM Explorer selezionare di nuovo la scheda **Calcolata** e aprire la regola dell'altezza. L'elemento fView Mostra ancora un valore pari a 100%, come previsto dal CSS, ma il valore calcolato è uguale all'altezza dello schermo dell'app (ad esempio 800px, 667,67px, o un altro valore), ovvero non è auspicabile per questa app. Esaminare, nei passaggi successivi è possibile rimuovere l'altezza e larghezza per il `fView` elemento DIV.  
+16. In DOM Explorer selezionare di nuovo la scheda **Calcolata** e aprire la regola dell'altezza. L'elemento fView Mostra ancora un valore pari a 100%, come previsto dal CSS, ma il valore calcolato è uguale all'altezza dello schermo dell'app (ad esempio 800px, 667,67px, o un altro valore), ovvero non è auspicabile per questa app. Esaminare, nei passaggi successivi è possibile rimuovere l'altezza e larghezza per il `fView` elemento DIV.  
   
-18. Nella scheda **Stili** deselezionare le proprietà height e width per il selettore CSS `#fView` .  
+17. Nella scheda **Stili** deselezionare le proprietà height e width per il selettore CSS `#fView` .  
   
      La scheda **Calcolata** mostra ora un'altezza di 400px. Le informazioni indicano che questo valore deriva dal selettore .win-flipview specificato in ui-dark.css, un file di piattaforma CSS.  
   
-19. Tornare all'app.  
+18. Tornare all'app.  
   
      Le cose sono migliorate. C'è ancora un problema da risolvere. I margini sembrano troppo grandi.  
   
-20. Per analizzare il problema, passare a Visual Studio e scegliere il **Layout** pressione di tab per esaminare il modello di riquadro dell'elemento.  
+19. Per analizzare il problema, passare a Visual Studio e scegliere il **Layout** pressione di tab per esaminare il modello di riquadro dell'elemento.  
   
      Nel **Layout** scheda, si noterà quanto segue:  
   
-    -   255px (Offset) e 255px (margine) o valori simili, a seconda della risoluzione del dispositivo. 
+    - 255px (Offset) e 255px (margine) o valori simili, a seconda della risoluzione del dispositivo. 
   
-     La figura seguente mostra come la **Layout** scheda Cerca se si usa un emulatore con 100px per offset e margine).  
+      La figura seguente mostra come la **Layout** scheda Cerca se si usa un emulatore con 100px per offset e margine).  
   
-     ![Scheda Layout di DOM Explorer](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
+      ![Scheda Layout di DOM Explorer](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
-     Ciò non sembra corretto. Anche la scheda **Calcolata** mostra gli stessi valori per i margini.  
+      Ciò non sembra corretto. Anche la scheda **Calcolata** mostra gli stessi valori per i margini.  
   
-21. Scegliere la scheda **Stili** e trovare il selettore CSS `#fView` . Per la proprietà **margin** il valore è 25%.  
+20. Scegliere la scheda **Stili** e trovare il selettore CSS `#fView` . Per la proprietà **margin** il valore è 25%.  
   
-22. Selezionare il 25%, impostarlo su 25px e premere Invio.  
+21. Selezionare il 25%, impostarlo su 25px e premere Invio.  
   
-23. Nella scheda **Stili** scegliere la regola relativa all'altezza per il selettore .win-flipview, modificare 400px in 500px e premere INVIO.  
+22. Nella scheda **Stili** scegliere la regola relativa all'altezza per il selettore .win-flipview, modificare 400px in 500px e premere INVIO.  
   
-24. Tornare all'app. Ora la posizione degli elementi viene visualizzata correttamente. Per apportare correzioni all'origine e aggiornare l'app senza arrestare e riavviare il debugger, vedere la routine riportata di seguito.  
+23. Tornare all'app. Ora la posizione degli elementi viene visualizzata correttamente. Per apportare correzioni all'origine e aggiornare l'app senza arrestare e riavviare il debugger, vedere la routine riportata di seguito.  
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Per aggiornare l'app durante il debug  
   
@@ -234,23 +234,23 @@ ms.locfileid: "44281442"
 ##  <a name="SelectingElements"></a> Selecting elements  
  È possibile selezionare gli elementi DOM in tre modi durante il debug di un'app:  
   
--   Facendo clic sugli elementi direttamente nella finestra di DOM Explorer oppure usando i tasti di direzione.  
+- Facendo clic sugli elementi direttamente nella finestra di DOM Explorer oppure usando i tasti di direzione.  
   
--   Usando il pulsante **Seleziona elemento** (CTRL+B).  
+- Usando il pulsante **Seleziona elemento** (CTRL+B).  
   
--   Usando il pulsante `select` , uno dei [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+- Usando il pulsante `select` , uno dei [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
- Quando si usa la finestra DOM Explorer per selezionare elementi e si posiziona il puntatore del mouse su un elemento, l'elemento corrispondente viene evidenziato nell'app in esecuzione. Fare clic sull'elemento in DOM Explorer per selezionarlo oppure usare i tasti freccia per evidenziare e selezionare elementi. La selezione di elementi in DOM Explorer può essere fatta anche tramite il pulsante **Seleziona elemento** . La figura seguente illustra il pulsante **Seleziona elemento** .  
+  Quando si usa la finestra DOM Explorer per selezionare elementi e si posiziona il puntatore del mouse su un elemento, l'elemento corrispondente viene evidenziato nell'app in esecuzione. Fare clic sull'elemento in DOM Explorer per selezionarlo oppure usare i tasti freccia per evidenziare e selezionare elementi. La selezione di elementi in DOM Explorer può essere fatta anche tramite il pulsante **Seleziona elemento** . La figura seguente illustra il pulsante **Seleziona elemento** .  
   
- ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+  ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
- Quando si fa clic su **Seleziona elemento** o si preme CTRL+B, la modalità di selezione cambia per consentire di selezionare un elemento in DOM Explorer facendo clic su di esso nell'app in esecuzione. La modalità torna alla modalità di selezione normale dopo un singolo clic. Quando si fa clic su **Seleziona elemento**, l'app passa in primo piano e il cursore cambia per riflettere la nuova modalità di selezione. Quando si fa clic sull'elemento con contorni, DOM Explorer ritorna in primo piano con l'elemento specificato selezionato.  
+  Quando si fa clic su **Seleziona elemento** o si preme CTRL+B, la modalità di selezione cambia per consentire di selezionare un elemento in DOM Explorer facendo clic su di esso nell'app in esecuzione. La modalità torna alla modalità di selezione normale dopo un singolo clic. Quando si fa clic su **Seleziona elemento**, l'app passa in primo piano e il cursore cambia per riflettere la nuova modalità di selezione. Quando si fa clic sull'elemento con contorni, DOM Explorer ritorna in primo piano con l'elemento specificato selezionato.  
   
- Prima di scegliere **Seleziona elemento**, è possibile specificare se evidenziare elementi nell'app in esecuzione attivando e disattivando il pulsante **Visualizza pagina Web in evidenza** . La figura seguente mostra questo pulsante. Le evidenziazioni vengono visualizzate per impostazione predefinita.  
+  Prima di scegliere **Seleziona elemento**, è possibile specificare se evidenziare elementi nell'app in esecuzione attivando e disattivando il pulsante **Visualizza pagina Web in evidenza** . La figura seguente mostra questo pulsante. Le evidenziazioni vengono visualizzate per impostazione predefinita.  
   
- ![Visualizza pagina web pulsante delle evidenziazioni](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
+  ![Visualizza pagina web pulsante delle evidenziazioni](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
   
- Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.  
+  Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.  
   
 > [!NOTE]
 >  L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.  
@@ -260,6 +260,6 @@ ms.locfileid: "44281442"
  [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Eseguire il debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Comandi della JavaScript Console](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Il debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Supporto tecnico e accessibilità](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

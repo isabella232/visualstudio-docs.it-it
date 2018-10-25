@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910628"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 
@@ -173,7 +173,7 @@ Se si scrive un evento che aggiorna l'archivio:
 Ogni tipo di evento corrisponde a una raccolta in Store.EventManagerDirectory. È possibile aggiungere o rimuovere i gestori eventi in qualsiasi momento, ma è normale per aggiungerle quando il documento viene caricato.
 
 |`EventManagerDirectory` Nome della proprietà|Eseguito quando|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Viene creata un'istanza di una classe di dominio, relazione di dominio, forma, connettore o diagramma.|
 |ElementDeleted|Un elemento del modello è stato rimosso dalla directory dell'elemento dell'archivio e non è più l'origine o la destinazione di una relazione. L'elemento non viene effettivamente eliminato dalla memoria, ma verrà mantenuto in caso di una futura operazione di annullamento.|
 |ElementEventsBegun|Richiamato al termine di una transazione esterna.|

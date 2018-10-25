@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcb5c985ed91ff5c838b6555307478113af0cc2c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e62eeb9e2f7bc7489418813975f753061c6d5611
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907573"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Varianti del filtro della trama a punti, bilineare, trilineare e anisotropico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,42 +29,42 @@ Esegue l'override della modalità di filtraggio sui campionatori di trame approp
 ## <a name="interpretation"></a>Interpretazione  
  Diversi metodi di campionamento delle trame presentano diversi livelli di impatto sulle prestazioni e sulla qualità dell'immagine. Le modalità di filtraggio, in ordine crescente di impatto e di qualità dell'immagine, sono le seguenti:  
   
-1.  Filtraggio punti (impatto minimo, livello minimo di qualità visiva)  
+1. Filtraggio punti (impatto minimo, livello minimo di qualità visiva)  
   
-2.  Filtraggio bilineare  
+2. Filtraggio bilineare  
   
-3.  Filtraggio trilineare  
+3. Filtraggio trilineare  
   
-4.  Filtraggio anisotropo (massimo impatto, massima qualità visiva)  
+4. Filtraggio anisotropo (massimo impatto, massima qualità visiva)  
   
- Se l'impatto sulle prestazioni di ogni variante è significativo o aumenta con l'applicazione di filtraggi più complessi, è possibile valutare un compromesso in base al miglioramento della qualità dell'immagine. In base alla valutazione, si potrebbe accettare un impatto aggiuntivo sulle prestazioni in cambio di un aumento della qualità visiva oppure si potrebbe decidere per una riduzione della qualità visiva in favore di un aumento di frequenza dei fotogrammi o del recupero di prestazioni, utilizzabili per altri scopi.  
+   Se l'impatto sulle prestazioni di ogni variante è significativo o aumenta con l'applicazione di filtraggi più complessi, è possibile valutare un compromesso in base al miglioramento della qualità dell'immagine. In base alla valutazione, si potrebbe accettare un impatto aggiuntivo sulle prestazioni in cambio di un aumento della qualità visiva oppure si potrebbe decidere per una riduzione della qualità visiva in favore di un aumento di frequenza dei fotogrammi o del recupero di prestazioni, utilizzabili per altri scopi.  
   
- Se l'impatto sulle prestazioni è trascurabile o invariato a prescindere dalla modalità di filtraggio, ad esempio quando la GPU di destinazione presenta un'abbondanza di velocità di shader e di larghezza di banda di memoria, considerare l'uso del filtraggio anisotropo per ottenere la migliore qualità di immagine per l'applicazione.  
+   Se l'impatto sulle prestazioni è trascurabile o invariato a prescindere dalla modalità di filtraggio, ad esempio quando la GPU di destinazione presenta un'abbondanza di velocità di shader e di larghezza di banda di memoria, considerare l'uso del filtraggio anisotropo per ottenere la migliore qualità di immagine per l'applicazione.  
   
 ## <a name="remarks"></a>Note  
  Queste varianti eseguono l'override degli stati del campionatore nelle chiamate a `ID3D11DeviceContext::PSSetSamplers` in cui la modalità di filtraggio del campionatore fornita dall'applicazione è una delle seguenti:  
   
--   `D3D11_FILTER_MIN_MAG_MIP_POINT`  
+- `D3D11_FILTER_MIN_MAG_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_MAG_POINT_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_MAG_POINT_MIP_LINEAR`  
   
--   `D3D11_FILTER_MIN_POINT_MAG_LINEAR_MIP_POINT`  
+- `D3D11_FILTER_MIN_POINT_MAG_LINEAR_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_POINT_MAG_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_POINT_MAG_MIP_LINEAR`  
   
--   `D3D11_FILTER_MIN_LINEAR_MAG_MIP_POINT`  
+- `D3D11_FILTER_MIN_LINEAR_MAG_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_LINEAR_MAG_POINT_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_LINEAR_MAG_POINT_MIP_LINEAR`  
   
--   `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`  
+- `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_MAG_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_MAG_MIP_LINEAR`  
   
--   `D3D11_FILTER_ANISOTROPIC`  
+- `D3D11_FILTER_ANISOTROPIC`  
   
- Nel **filtraggio punti della trama** variante, la modalità di filtraggio fornita dall'applicazione viene sostituita con `D3D11_FILTER_MIN_MAG_MIP_POINT`; nella **bilineare della trama** variant, viene sostituito con `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; e il **trilineare della trama** variant, viene sostituito con `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
+  Nel **filtraggio punti della trama** variante, la modalità di filtraggio fornita dall'applicazione viene sostituita con `D3D11_FILTER_MIN_MAG_MIP_POINT`; nella **bilineare della trama** variant, viene sostituito con `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; e il **trilineare della trama** variant, viene sostituito con `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
   
- Nel **anisotropo della trama** variant, la modalità di filtraggio fornita dall'applicazione viene sostituita con `D3D11_FILTER_ANISOTROPIC`, e il Max Anisotropy viene impostato su 16.  
+  Nel **anisotropo della trama** variant, la modalità di filtraggio fornita dall'applicazione viene sostituita con `D3D11_FILTER_ANISOTROPIC`, e il Max Anisotropy viene impostato su 16.  
   
 ## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
  In Direct3D la funzionalità di livello 9.1 specifica un'anisotropia massima di 2x. Poiché il **anisotropo della trama** variante tenta di utilizzare anisotropia 16x in modo esclusivo, la riproduzione non riesce quando viene eseguita l'analisi dei frame in un dispositivo 9.1 a livello di funzionalità. Tra i dispositivi contemporanei che sono interessati da questo limite ci sono i tablet Windows basati su ARM Surface RT e Surface 2. GPU più datate che potrebbero essere ancora presenti in alcuni computer possono anch'esse risultare interessate, ma si tratta di hardware generalmente considerato obsoleto e in rapida via di estinzione.  

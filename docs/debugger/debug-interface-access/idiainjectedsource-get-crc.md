@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_crc | Documenti Microsoft
+title: Get_crc | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa3aba392769465b03aecafc7e135a15e748879e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f99c48af26f2b40969ec818743ec8f4d220f8404
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900618"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
-Recupera un controllo di ridondanza ciclico (CRC) calcolato da byte del codice sorgente.  
+Recupera un controllo di ridondanza ciclico (CRC) calcolato a partire dal byte del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_crc (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il valore CRC calcolato da byte del codice sorgente.  
+ [out] Restituisce il CRC calcolato dai byte del codice sorgente.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

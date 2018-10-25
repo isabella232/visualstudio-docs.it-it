@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Documenti Microsoft
+title: IDebugBinder::GetMemoryContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18049e9f0800cc5c2bc0b53e53915a96eebb1718
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a94098a6645ef353ff3e18b17911c05d495fe8ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905441"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-Questo metodo converte il percorso di un oggetto o un indirizzo di memoria in un contesto di memoria.  
+Questo metodo converte una posizione di oggetto o un indirizzo di memoria in un contesto in memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,7 +45,7 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Parametri  
  `pField`  
- [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi utilizzare `dwConstant` invece.  
+ [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.  
   
  `dwConstant`  
  [in] Un indirizzo di memoria costante, ad esempio 0x5000.  

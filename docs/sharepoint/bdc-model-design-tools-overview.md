@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914502"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati
   È possibile progettare un modello di integrazione applicativa dei dati (BDC) usando la finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo BDC** finestra e il **Esplora integrazione applicativa dei dati**.  
@@ -43,13 +43,13 @@ ms.locfileid: "36326218"
 ## <a name="bdc-designer"></a>Finestra di progettazione integrazione applicativa dei dati
  La finestra di progettazione di integrazione applicativa dei dati ti permette di definire le entità nel modello e per disporre in modo visivo le relazioni tra loro. Utilizzare la finestra di progettazione di integrazione applicativa dei dati per eseguire le attività seguenti:  
   
--   Aggiungere le entità nel modello.  
+- Aggiungere le entità nel modello.  
   
--   Rimuovere entità dal modello.  
+- Rimuovere entità dal modello.  
   
--   Definire le relazioni tra entità.  
+- Definire le relazioni tra entità.  
   
- Per aprire la finestra di progettazione di integrazione applicativa dei dati, fare doppio clic il file del modello nel progetto o aprire il menu di scelta rapida per il file del modello e quindi scegliere **aprire**. Aggiungere un'entità nel modello trascinando o copiando un **Entity** dalle **della casella degli strumenti** nella finestra di progettazione. Per creare un'associazione tra due entità, scegliere il **Association** controllare nel **della casella degli strumenti**, scegliere la prima entità e quindi scegliere la seconda entità.  
+  Per aprire la finestra di progettazione di integrazione applicativa dei dati, fare doppio clic il file del modello nel progetto o aprire il menu di scelta rapida per il file del modello e quindi scegliere **aprire**. Aggiungere un'entità nel modello trascinando o copiando un **Entity** dalle **della casella degli strumenti** nella finestra di progettazione. Per creare un'associazione tra due entità, scegliere il **Association** controllare nel **della casella degli strumenti**, scegliere la prima entità e quindi scegliere la seconda entità.  
   
 ## <a name="bdc-method-details-window"></a>Finestra Dettagli metodo di integrazione applicativa dei dati
  Usare la **Dettagli metodo BDC** finestra per definire i parametri, le istanze e descrittori di filtro di un metodo.  

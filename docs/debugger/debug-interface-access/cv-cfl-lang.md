@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG | Documenti Microsoft
+title: CV_CFL_LANG | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909913"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Specifica il linguaggio del codice sorgente dell'applicazione o del modulo collegato.  
@@ -50,7 +50,7 @@ typedef enum CV_CFL_LANG {
   
 ## <a name="elements"></a>Elementi  
  CV_CFL_C  
- Lingua dell'applicazione è C.  
+ Lingua dell'applicazione è sufficiente.  
   
  CV_CFL_CXX  
  Lingua dell'applicazione è C++.  
@@ -74,10 +74,10 @@ typedef enum CV_CFL_LANG {
  Applicazione è un modulo generate dal linker.  
   
  CV_CFL_CVTRES  
- Applicazione è un modulo di risorse convertito lo strumento CVTRES.  
+ Applicazione è un modulo di risorse convertito con lo strumento CVTRES.  
   
  CV_CFL_CVTPGD  
- Applicazione è un modulo POGO ottimizzato generato con lo strumento CVTPGD.  
+ Applicazione è un modulo POGO ottimizzato generato con CVTPGD strumento.  
   
  CV_CFL_CSHARP  
  Lingua dell'applicazione è c#.  
@@ -86,22 +86,22 @@ typedef enum CV_CFL_LANG {
  Lingua dell'applicazione è Visual Basic.  
   
  CV_CFL_ILASM  
- Lingua dell'applicazione è l'assembly del linguaggio intermedio (vale a dire, assembly di Common Language Runtime (CLR)).  
+ Lingua dell'applicazione è l'assembly del linguaggio intermedio (vale a dire assembly Common Language Runtime (CLR)).  
   
  CV_CFL_JAVA  
- Lingua dell'applicazione è Java.  
+ Lingua dell'applicazione Java è.  
   
  CV_CFL_JSCRIPT  
- Lingua dell'applicazione è di tipo Jscript.  
+ Lingua dell'applicazione è Jscript.  
   
  CV_CFL_MSIL  
- Lingua dell'applicazione è un sconosciuto linguaggio MSIL (Microsoft Intermediate), probabilmente un derivanti dall'utilizzo di [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation) passare.  
+ Lingua dell'applicazione è un sconosciuto linguaggio MSIL (Microsoft Intermediate), probabilmente un risultato dell'uso di [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation) passare.  
   
  CV_CFL_HLSL  
- Lingua dell'applicazione è l'elevato livello di linguaggio.  
+ Lingua dell'applicazione è High Level Shader Language.  
   
 ## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti da una chiamata al [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) metodo.  
+ I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: cvconst.h  

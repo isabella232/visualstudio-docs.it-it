@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_targetOffset | Documenti Microsoft
+title: Get_targetoffset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2bafe81a58d1c80581dd4e2e6130bc36cd1988a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c044ba749c5fae425fab11cdedecc9eb361fffe3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904843"
 ---
 # <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
 Recupera la sezione di offset di una destinazione thunk.  

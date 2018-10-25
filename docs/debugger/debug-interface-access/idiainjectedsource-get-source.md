@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_source | Documenti Microsoft'
+title: Get_source | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331086fff33f247ab030e3736e1e598c3af477d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2966405dfe3bb7e6134f5ef35e55b30ef6c66c6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909908"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
-Recupera i byte di codice sorgente.  
+Recupera i byte del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ HRESULT get_source (
  [in] Il numero di byte che rappresenta le dimensioni del buffer di dati.  
   
  `pcbData`  
- [out] Restituisce il numero di byte che rappresenta i byte. Se `data` è `NULL`, quindi `pcbData` è disponibile il numero totale di byte di dati.  
+ [out] Restituisce il numero di byte che rappresenta i byte. Se `data` viene `NULL`, quindi `pcbData` è il numero totale di byte di dati disponibili.  
   
  `data[]`  
  [out] Un buffer che deve essere compilato con i byte di origine.  

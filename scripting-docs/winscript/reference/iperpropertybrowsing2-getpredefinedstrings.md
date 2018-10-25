@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings | Documenti Microsoft
+title: IPerPropertyBrowsing2::GetPredefinedStrings | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e07d52eca9434acc7e54f3b35b111cf12af0a871
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915964"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Consente al chiamante di inserire una casella di riepilogo con una matrice di puntatori di stringa che rappresentano i valori possibili per questa proprietà conteggiata.  
+Consente al chiamante da riempire una casella di riepilogo con una matrice calcolata di puntatori a stringhe che rappresentano i valori possibili per questa proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,16 +40,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>Parametri  
  `dispid`  
- [in] ID dispatch della proprietà per cui il chiamante richiede l'elenco di stringhe.  
+ [in] ID dispatch della proprietà per il quale il chiamante sta richiedendo l'elenco di stringhe.  
   
  `pCaStrings`  
- [out] Puntatore a una struttura di matrice allocata dal chiamante a conteggio che contiene il numero di elementi e l'indirizzo di una matrice allocata al metodo di puntatori di stringa. Se il metodo non riesce, non viene allocata memoria e il contenuto della struttura non è definito.  
+ [out] Puntatore a una struttura di matrice allocata dal chiamante a conteggio che contiene il numero di elementi e l'indirizzo di una matrice di puntatori di stringa allocata (metodo). Se il metodo ha esito negativo, viene allocata nessuna memoria e il contenuto della struttura è definito.  
   
  `pCaCookies`  
- [out] Puntatore alla struttura che contiene il numero di elementi e l'indirizzo di una matrice allocata al metodo di DWORD matrice allocata dal chiamante e conteggiato. Se il metodo non riesce, non viene allocata memoria e il contenuto della struttura non è definito.  
+ [out] Puntatore alla struttura di matrice allocata dal chiamante a conteggio che contiene il numero di elementi e l'indirizzo di una matrice di valori DWORD allocate (metodo). Se il metodo ha esito negativo, viene allocata nessuna memoria e il contenuto della struttura è definito.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un oggetto valido `HRESULT`, in genere `S_OK`.  
+ Restituisce un valore valido `HRESULT`, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

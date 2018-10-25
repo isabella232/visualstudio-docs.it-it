@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Documenti Microsoft
+title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90afe268a68d6a72e4444dd78a5748d30ddf7b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddd3f6f3fe06b0a02a1df992561428aa04895748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902516"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Recupera un elenco dei contesti di codice per una determinata posizione nel file di origine.  
@@ -43,7 +43,7 @@ int EnumCodeContexts(
   
 #### <a name="parameters"></a>Parametri  
  `pDocPos`  
- [in] Un [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta una posizione astratta in un file di origine noto all'IDE.  
+ [in] Un' [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta una posizione astratta in un file di origine noto all'IDE.  
   
  `ppEnum`  
  [out] Restituisce un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) oggetto che contiene un elenco dei contesti di codice.  
@@ -52,7 +52,7 @@ int EnumCodeContexts(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo consente il debug di sessione manager (SDM) o l'IDE per eseguire il mapping di una posizione del file di origine in una posizione di codice. Se l'origine genera più blocchi di codice (ad esempio, i modelli di C++), viene restituito più di un contesto del codice.  
+ Questo metodo consente il debug di sessione manager (SDM) o un IDE di eseguire il mapping di una posizione del file di origine in una posizione di codice. Se l'origine genera più blocchi di codice (ad esempio, i modelli di C++), viene restituito più di un contesto del codice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

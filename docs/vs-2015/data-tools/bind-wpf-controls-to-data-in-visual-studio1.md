@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914684"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ ms.locfileid: "49237016"
 ### <a name="datasets"></a>Dataset  
  Quando si trascina una tabella o una colonna dal **Zdroje dat** finestra di progettazione, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che esegue le operazioni seguenti:  
   
--   Aggiunge il dataset e un nuovo oggetto <xref:System.Windows.Data.CollectionViewSource> alle risorse del contenitore in cui è stato trascinato l'elemento. <xref:System.Windows.Data.CollectionViewSource> è un oggetto che può essere utilizzato per esplorare e visualizzare i dati nel dataset.  
+- Aggiunge il dataset e un nuovo oggetto <xref:System.Windows.Data.CollectionViewSource> alle risorse del contenitore in cui è stato trascinato l'elemento. <xref:System.Windows.Data.CollectionViewSource> è un oggetto che può essere utilizzato per esplorare e visualizzare i dati nel dataset.  
   
--   Crea un'associazione dati per un controllo. Se si trascina l'elemento in un controllo esistente della finestra di progettazione, XAML associa il controllo all'elemento. Se si trascina l'elemento in un contenitore, il XAML crea il controllo che è stato selezionato per l'elemento trascinato e associa il controllo all'elemento. Il controllo viene creato all'interno di un nuovo oggetto <xref:System.Windows.Controls.Grid>.  
+- Crea un'associazione dati per un controllo. Se si trascina l'elemento in un controllo esistente della finestra di progettazione, XAML associa il controllo all'elemento. Se si trascina l'elemento in un contenitore, il XAML crea il controllo che è stato selezionato per l'elemento trascinato e associa il controllo all'elemento. Il controllo viene creato all'interno di un nuovo oggetto <xref:System.Windows.Controls.Grid>.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apporta inoltre le modifiche seguenti al file code-behind:  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apporta inoltre le modifiche seguenti al file code-behind:  
   
--   Crea un gestore dell'evento <xref:System.Windows.FrameworkElement.Loaded> per l'elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] contenente il controllo. Il gestore dell'evento inserisce i dati nella tabella, recupera l'oggetto <xref:System.Windows.Data.CollectionViewSource> dalle risorse del contenitore, quindi imposta come elemento corrente il primo elemento di dati. Se un <xref:System.Windows.FrameworkElement.Loaded> gestore dell'evento esiste già, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiunge questo codice al gestore dell'evento esistente.  
+- Crea un gestore dell'evento <xref:System.Windows.FrameworkElement.Loaded> per l'elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] contenente il controllo. Il gestore dell'evento inserisce i dati nella tabella, recupera l'oggetto <xref:System.Windows.Data.CollectionViewSource> dalle risorse del contenitore, quindi imposta come elemento corrente il primo elemento di dati. Se un <xref:System.Windows.FrameworkElement.Loaded> gestore dell'evento esiste già, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiunge questo codice al gestore dell'evento esistente.  
   
 ### <a name="entity-data-models"></a>Entity data Model  
  Quando si trascina un'entità o una proprietà dell'entità dal **Zdroje dat** finestra di progettazione, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che esegue le operazioni seguenti:  
   
--   Aggiunge un nuovo oggetto <xref:System.Windows.Data.CollectionViewSource> alle risorse del contenitore in cui è stato trascinato l'elemento. <xref:System.Windows.Data.CollectionViewSource> è un oggetto che può essere utilizzato per esplorare e visualizzare i dati nell'entità.  
+- Aggiunge un nuovo oggetto <xref:System.Windows.Data.CollectionViewSource> alle risorse del contenitore in cui è stato trascinato l'elemento. <xref:System.Windows.Data.CollectionViewSource> è un oggetto che può essere utilizzato per esplorare e visualizzare i dati nell'entità.  
   
--   Crea un data binding per un controllo. Se si trascina l'elemento in un controllo esistente della finestra di progettazione, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] associa il controllo all'elemento. Se si trascina l'elemento in un contenitore, il [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] crea il controllo che è stato selezionato per l'elemento trascinato e associa il controllo all'elemento. Il controllo viene creato all'interno di un nuovo oggetto <xref:System.Windows.Controls.Grid>.  
+- Crea un data binding per un controllo. Se si trascina l'elemento in un controllo esistente della finestra di progettazione, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] associa il controllo all'elemento. Se si trascina l'elemento in un contenitore, il [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] crea il controllo che è stato selezionato per l'elemento trascinato e associa il controllo all'elemento. Il controllo viene creato all'interno di un nuovo oggetto <xref:System.Windows.Controls.Grid>.  
   
- Visual Studio apporta inoltre le modifiche seguenti al file code-behind:  
+  Visual Studio apporta inoltre le modifiche seguenti al file code-behind:  
   
--   Aggiunge un nuovo metodo che restituisce una query per l'entità trascinata nella finestra di progettazione (o per l'entità contenente la proprietà trascinata nella finestra di progettazione). Il nuovo metodo è Get*EntityName*Query, dove *EntityName* è il nome dell'entità.  
+- Aggiunge un nuovo metodo che restituisce una query per l'entità trascinata nella finestra di progettazione (o per l'entità contenente la proprietà trascinata nella finestra di progettazione). Il nuovo metodo è Get*EntityName*Query, dove *EntityName* è il nome dell'entità.  
   
--   Crea un gestore dell'evento <xref:System.Windows.FrameworkElement.Loaded> per l'elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] contenente il controllo. Il gestore eventi chiama Get*EntityName*metodo per inserire i dati, recupera le entità di Query di <xref:System.Windows.Data.CollectionViewSource> da risorse del contenitore, quindi rende i primo elemento di dati dell'elemento corrente. Se un <xref:System.Windows.FrameworkElement.Loaded> gestore dell'evento esiste già, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiunge questo codice al gestore dell'evento esistente.  
+- Crea un gestore dell'evento <xref:System.Windows.FrameworkElement.Loaded> per l'elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] contenente il controllo. Il gestore eventi chiama Get*EntityName*metodo per inserire i dati, recupera le entità di Query di <xref:System.Windows.Data.CollectionViewSource> da risorse del contenitore, quindi rende i primo elemento di dati dell'elemento corrente. Se un <xref:System.Windows.FrameworkElement.Loaded> gestore dell'evento esiste già, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiunge questo codice al gestore dell'evento esistente.  
   
 ### <a name="services"></a>Servizi  
  Quando si trascina un oggetto servizio o a una proprietà di **Zdroje dat** finestra di progettazione, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che crea un controllo con associazione a dati (o associa un controllo esistente all'oggetto o una proprietà). [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tuttavia, non genera il codice che inserisce i dati nell'oggetto servizio del proxy. È necessario scrivere questo codice manualmente. Per un esempio che illustra come eseguire questa operazione, vedere [WPF di associare controlli a un servizio dati WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  

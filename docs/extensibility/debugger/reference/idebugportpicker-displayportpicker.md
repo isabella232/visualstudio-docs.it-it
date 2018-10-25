@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker | Documenti Microsoft
+title: IDebugPortPicker::DisplayPortPicker | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb43ac1bdf173de8e7224f154ecb57cca53abd8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d05f49f8fa91a0b193be10169a4dcebcd561f92d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910576"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 Consente di visualizzare la finestra di dialogo specificata che consente all'utente di selezionare una porta.  
@@ -42,13 +42,13 @@ public int DisplayPortPicker(
   
 #### <a name="parameters"></a>Parametri  
  `hwndParentDialog`  
- [in] Handle di finestra di dialogo padre.  
+ [in] Handle per la finestra di dialogo padre.  
   
  `pbstrPortId`  
  [out] Stringa dell'identificatore di porta.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Valore restituito di `S_FALSE` (o valore restituito di `S_OK` con il `BSTR` impostato su `NULL`) indica che l'utente ha fatto clic **Annulla**.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Un valore restituito pari `S_FALSE` (o valore restituito di `S_OK` con il `BSTR` impostata su `NULL`) indica che l'utente ha fatto clic **Annulla**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)
