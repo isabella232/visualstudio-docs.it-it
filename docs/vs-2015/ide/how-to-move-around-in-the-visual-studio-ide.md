@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812856"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: spostarsi nell'IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Per spostarsi tra i file aperti in ordine di utilizzo  
   
--   Per attivare i documenti aperti, a partire da quello che è stato toccato per ultimo, premere CTRL + SEGNO MENO.  
+- Per attivare i documenti aperti, a partire da quello che è stato toccato per ultimo, premere CTRL + SEGNO MENO.  
   
--   Per attivare i documenti aperti in ordine inverso, premere CTRL + MAIUSC + SEGNO MENO.  
+- Per attivare i documenti aperti in ordine inverso, premere CTRL + MAIUSC + SEGNO MENO.  
   
-    > [!NOTE]
-    >  **Posizione precedente** e **Posizione successiva** sono disponibili anche nel menu **Visualizza**.  
+  > [!NOTE]
+  >  **Posizione precedente** e **Posizione successiva** sono disponibili anche nel menu **Visualizza**.  
   
- È anche possibile passare a un file specifico aperto nell'editor (indipendentemente dall'ultimo accesso) usando lo **strumento di spostamento dell'IDE**, l'elenco **File attivi** nell'editor oppure la finestra di dialogo **Windows**.  
+  È anche possibile passare a un file specifico aperto nell'editor (indipendentemente dall'ultimo accesso) usando lo **strumento di spostamento dell'IDE**, l'elenco **File attivi** nell'editor oppure la finestra di dialogo **Windows**.  
   
- Lo **strumento di spostamento dell'IDE** funziona in modo analogo allo strumento di selezione delle applicazioni di Windows. Non è disponibile dai menu. Per accedervi, è necessario utilizzare i tasti di scelta rapida. È possibile usare uno dei due comandi per accedere allo **strumento di spostamento dell'IDE** (illustrato di seguito) e passare da un file all'altro, in base all'ordine che si preferisce.  
+  Lo **strumento di spostamento dell'IDE** funziona in modo analogo allo strumento di selezione delle applicazioni di Windows. Non è disponibile dai menu. Per accedervi, è necessario utilizzare i tasti di scelta rapida. È possibile usare uno dei due comandi per accedere allo **strumento di spostamento dell'IDE** (illustrato di seguito) e passare da un file all'altro, in base all'ordine che si preferisce.  
   
- ![Strumento di spostamento dell'IDE di Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Strumento di spostamento dell'IDE di Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` consente di passare al file utilizzato più di recente, mentre `Window.NextDocumentWindowNav` consente di spostarsi in ordine inverso. Le impostazioni generali per lo sviluppo assegnano la combinazione CTRL + MAIUSC + TAB a `Window.PreviousDocumentWindowNav` e quella CTRL + TAB a `Window.NextDocumentWindowNav`.  
+  `Window.PreviousDocumentWindowNav` consente di passare al file utilizzato più di recente, mentre `Window.NextDocumentWindowNav` consente di spostarsi in ordine inverso. Le impostazioni generali per lo sviluppo assegnano la combinazione CTRL + MAIUSC + TAB a `Window.PreviousDocumentWindowNav` e quella CTRL + TAB a `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Se la combinazione di impostazioni in uso non dispone già di tasti di scelta rapida assegnati a questo comando, è possibile assegnare un comando personalizzato tramite la pagina **Tastiera** della finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861579"
 ---
 # <a name="refactor-python-code"></a>Effettuare il refactoring del codice Python
 
@@ -30,27 +30,27 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 ## <a name="rename"></a>Rinomina
 
 1. Fare clic con il pulsante destro del mouse sull'identificatore che si vuole rinominare e scegliere **Rinomina** oppure posizionare il cursore su tale identificatore e selezionare il comando di menu **Modifica** > **Refactoring** > **Rinomina** (**F2**).
-1. Nella finestra di dialogo **Rinomina** visualizzata immettere il nuovo nome per l'identificatore e selezionare **OK**:
+2. Nella finestra di dialogo **Rinomina** visualizzata immettere il nuovo nome per l'identificatore e selezionare **OK**:
 
-  ![Richiesta del nuovo nome di identificatore per la ridenominazione](media/code-refactor-rename-1.png)
+   ![Richiesta del nuovo nome di identificatore per la ridenominazione](media/code-refactor-rename-1.png)
 
-1. Nella finestra di dialogo successiva selezionare i file e le istanze nel codice a cui applicare la ridenominazione. Selezionare qualsiasi istanza singola per visualizzare in anteprima la modifica specifica:
+3. Nella finestra di dialogo successiva selezionare i file e le istanze nel codice a cui applicare la ridenominazione. Selezionare qualsiasi istanza singola per visualizzare in anteprima la modifica specifica:
 
-  ![Selezione delle posizioni in cui applicare le modifiche nella finestra di dialogo Rinomina](media/code-refactor-rename-2.png)
+   ![Selezione delle posizioni in cui applicare le modifiche nella finestra di dialogo Rinomina](media/code-refactor-rename-2.png)
 
-1. Selezionare **Applica** per apportare le modifiche nei file di codice sorgente. Questa azione può essere annullata.
+4. Selezionare **Applica** per apportare le modifiche nei file di codice sorgente. Questa azione può essere annullata.
 
 ## <a name="extract-method"></a>Estrai metodo
 
 1. Selezionare le righe di codice o l'espressione da estrarre in un metodo separato.
-1. Selezionare i comandi di menu **Modifica** > **Effettua refactoring** > **Estrai metodo** oppure digitare **CTRL**+**R** > **M**.
-1. Nella finestra di dialogo visualizzata immettere un nuovo nome di metodo, indicare la posizione in cui estrarlo e selezionare eventuali variabili di chiusura. Le variabili non selezionate per la chiusura vengono trasformate in argomenti del metodo:
+2. Selezionare i comandi di menu **Modifica** > **Effettua refactoring** > **Estrai metodo** oppure digitare **CTRL**+**R** > **M**.
+3. Nella finestra di dialogo visualizzata immettere un nuovo nome di metodo, indicare la posizione in cui estrarlo e selezionare eventuali variabili di chiusura. Le variabili non selezionate per la chiusura vengono trasformate in argomenti del metodo:
 
-  ![Finestra di dialogo Estrai metodo](media/code-refactor-extract-method-1.png)
+   ![Finestra di dialogo Estrai metodo](media/code-refactor-extract-method-1.png)
 
-1. Selezionare **OK** e il codice verrà modificato di conseguenza:
+4. Selezionare **OK** e il codice verrà modificato di conseguenza:
 
-  ![Effetto dell'estrazione di un metodo](media/code-refactor-extract-method-2.png)
+   ![Effetto dell'estrazione di un metodo](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Aggiungi importazione
 

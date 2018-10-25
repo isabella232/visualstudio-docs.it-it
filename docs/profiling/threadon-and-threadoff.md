@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a183b9285e53a93f6fe6e44c94f5dcd14957e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2aa23601ff1f85aa4e2d28be5664c4bccb8d2eff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828394"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
 In *VSPerfCmd.exe* i sottocomandi **ThreadOff** e **ThreadOn** sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione. **ThreadOff** e **ThreadOn** sospendono e riprendono la profilatura per il thread specificato. **ThreadOff** arresta la profilatura del thread e **ThreadOn** avvia la profilatura del thread.  
@@ -26,11 +26,11 @@ In *VSPerfCmd.exe* i sottocomandi **ThreadOff** e **ThreadOn** sono disponibili 
   
  I sottocomandi **ThreadOff** e **ThreadOn** influenzano anche il conteggio Start/Stop per i thread, gestito dalle funzioni API del profiler.  
   
--   **ThreadOff** imposta immediatamente il conteggio Start/Stop per i thread su 0 e sospende quindi la profilatura.  
+- **ThreadOff** imposta immediatamente il conteggio Start/Stop per i thread su 0 e sospende quindi la profilatura.  
   
--   **ThreadOn** imposta immediatamente il conteggio Start/Stop per i thread su 1 e riprende quindi la profilatura.  
+- **ThreadOn** imposta immediatamente il conteggio Start/Stop per i thread su 1 e riprende quindi la profilatura.  
   
- Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
+  Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintassi  
   

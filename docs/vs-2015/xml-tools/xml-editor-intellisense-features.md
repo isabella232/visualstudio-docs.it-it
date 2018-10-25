@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830745"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 ## <a name="intellisense-in-an-xslt-document"></a>IntelliSense in un documento XSLT  
  Dopo avere aggiunto un modello denominato o un attributo al documento XSLT, è possibile usare IntelliSense per inserire gli elementi seguenti:  
   
--   Nomi del set di attributi.  
+- Nomi del set di attributi.  
   
--   Modalità modello.  
+- Modalità modello.  
   
--   Nomi di modello.  
+- Nomi di modello.  
   
--   Nomi del parametro per una determinata modalità.  
+- Nomi del parametro per una determinata modalità.  
   
--   Nomi del parametro per un determinato modello denominato.  
+- Nomi del parametro per un determinato modello denominato.  
   
- Per altre informazioni, vedere [procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.  
+  Per altre informazioni, vedere [procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.  
   
 ## <a name="auto-completion"></a>Completamento automatico  
  L'editor XML, inoltre, semplifica la procedura di modifica del codice XML in quanto la sintassi XML richiesta viene inserita automaticamente. Ad esempio, se si digita il seguente tag di inizio:  
@@ -72,19 +72,19 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
   
  Analogamente, l'editor XML inserisce automaticamente anche la seguente sintassi XML:  
   
--   Termina un'istruzione di elaborazione: `?>`  
+- Termina un'istruzione di elaborazione: `?>`  
   
--   Termina un blocco CDATA: `]]>`  
+- Termina un blocco CDATA: `]]>`  
   
--   Termina un commento: `-->`  
+- Termina un commento: `-->`  
   
--   Termina una dichiarazione DTD: `>`  
+- Termina una dichiarazione DTD: `>`  
   
- L'editor XML, inoltre, è in grado di inserire automaticamente una dichiarazione dello spazio dei nomi se si seleziona un elemento o attributo completo dello spazio dei nomi proveniente da un elenco di IntelliSense e lo spazio dei nomi per quell'elemento o attributo non è ancora nell'ambito.  
+  L'editor XML, inoltre, è in grado di inserire automaticamente una dichiarazione dello spazio dei nomi se si seleziona un elemento o attributo completo dello spazio dei nomi proveniente da un elenco di IntelliSense e lo spazio dei nomi per quell'elemento o attributo non è ancora nell'ambito.  
   
- Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in cui il prefisso è associato allo spazio dei nomi `http://books` che non è stato dichiarato nel documento, l'editor XML inserirà automaticamente la dichiarazione dello spazio dei nomi richiesta. Di seguito è riportato il testo XML risultante:  
+  Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in cui il prefisso è associato allo spazio dei nomi `http://books` che non è stato dichiarato nel documento, l'editor XML inserirà automaticamente la dichiarazione dello spazio dei nomi richiesta. Di seguito è riportato il testo XML risultante:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe  
  Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È inoltre possibile usare il tasto di scelta rapida (CTRL+]) per passare da una parentesi graffa a quella corrispondente.  

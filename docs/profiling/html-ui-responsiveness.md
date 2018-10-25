@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834529"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -201,36 +201,36 @@ if (performance.mark && performance.measure) {
   
  Usare questo grafico per:  
   
--   Identificare aree problematiche generali.  
+- Identificare aree problematiche generali.  
   
--   Scegliere un periodo di tempo specifico da visualizzare nel grafico dei dettagli della cronologia. Fai clic su una parte del grafico e trascina il puntatore del mouse per effettuare la selezione di un periodo di tempo specifico.  
+- Scegliere un periodo di tempo specifico da visualizzare nel grafico dei dettagli della cronologia. Fai clic su una parte del grafico e trascina il puntatore del mouse per effettuare la selezione di un periodo di tempo specifico.  
   
--   Scegli il pulsante **Zoom avanti** per ottenere una visualizzazione più dettagliata di un periodo di tempo selezionato.  
+- Scegli il pulsante **Zoom avanti** per ottenere una visualizzazione più dettagliata di un periodo di tempo selezionato.  
   
- Per ulteriori informazioni sull'uso del grafico, vedi [Isolate a UI responsiveness problem](#Workflow) in questo argomento.  
+  Per ulteriori informazioni sull'uso del grafico, vedi [Isolate a UI responsiveness problem](#Workflow) in questo argomento.  
   
 ###  <a name="VisualThroughput"></a> Visualizzare la velocità effettiva visuale (FPS)  
  Il grafico della velocità effettiva visuale consente di identificare i periodi di tempo in cui la frequenza dei fotogrammi è diminuita. Mostra i fotogrammi al secondo (FPS) dell'app. Questo grafico risulta particolarmente utile per lo sviluppo di giochi e app multimediali avanzate.  
   
  Il valore FPS visualizzato potrebbe essere diverso dalla frequenza dei fotogrammi effettiva. Tieni presente queste informazioni durante l'esame dei dati del grafico:  
   
--   Il grafico mostra la frequenza dei fotogrammi che l'app è in grado di raggiungere in un dato momento. Quando l'app è inattiva, la frequenza dei fotogrammi è uguale alla frequenza di aggiornamento del monitor.  
+- Il grafico mostra la frequenza dei fotogrammi che l'app è in grado di raggiungere in un dato momento. Quando l'app è inattiva, la frequenza dei fotogrammi è uguale alla frequenza di aggiornamento del monitor.  
   
--   Il grafico mostra la frequenza dei fotogrammi effettiva se l'app esegue operazioni che richiedono aggiornamenti visivi.  
+- Il grafico mostra la frequenza dei fotogrammi effettiva se l'app esegue operazioni che richiedono aggiornamenti visivi.  
   
--   Il grafico mostra un valore zero se i fotogrammi vengono rimossi.  
+- Il grafico mostra un valore zero se i fotogrammi vengono rimossi.  
   
- Questo esempio mostra l'aspetto del grafico relativo alla velocità effettiva visuale:  
+  Questo esempio mostra l'aspetto del grafico relativo alla velocità effettiva visuale:  
   
- ![Grafico della velocità effettiva visuale](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Grafico della velocità effettiva visuale](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Usare il grafico della velocità effettiva visuale per:  
+  Usare il grafico della velocità effettiva visuale per:  
   
--   Identificare aree problematiche generali.  
+- Identificare aree problematiche generali.  
   
--   Scegliere un periodo di tempo specifico da visualizzare nel grafico dei dettagli della cronologia. Fai clic su una parte del grafico e trascina il puntatore del mouse per effettuare la selezione di un periodo di tempo specifico.  
+- Scegliere un periodo di tempo specifico da visualizzare nel grafico dei dettagli della cronologia. Fai clic su una parte del grafico e trascina il puntatore del mouse per effettuare la selezione di un periodo di tempo specifico.  
   
--   Scegli il pulsante **Zoom avanti** per ottenere una visualizzazione più dettagliata di un periodo di tempo selezionato.  
+- Scegli il pulsante **Zoom avanti** per ottenere una visualizzazione più dettagliata di un periodo di tempo selezionato.  
   
 ###  <a name="TimelineDetails"></a> Visualizzare i dettagli cronologia  
  Il grafico dei dettagli della sequenza temporale viene visualizzato nel riquadro inferiore del profiler della velocità di risposta dell'interfaccia utente. Fornisce informazioni sequenziali e gerarchiche sugli eventi che utilizzano la maggior quantità di tempo della CPU durante i periodi di tempo selezionati. Il grafico può aiutarti a determinare la causa un evento particolare e, per alcuni eventi, la modalità di mapping dell'evento al codice sorgente. Questo grafico è utile anche per determinare il tempo necessario per disegnare sullo schermo gli aggiornamenti visivi.  
@@ -307,23 +307,23 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler event reference  
  Gli eventi del profiler sono suddivisi in categorie e contraddistinti dal colore nel profiler della velocità di risposta dell'interfaccia utente. Ecco le categorie di eventi:  
   
--   **Attendere.** Indica il tempo impiegato per il recupero delle risorse dell'app e l'analisi di HTML e CSS al primo caricamento dell'app. Può includere le richieste di rete.  
+- **Attendere.** Indica il tempo impiegato per il recupero delle risorse dell'app e l'analisi di HTML e CSS al primo caricamento dell'app. Può includere le richieste di rete.  
   
--   **Scripting.** Indica il tempo impiegato per l'analisi e l'esecuzione di JavaScript. Include eventi DOM, timer, valutazione script e il lavoro dei frame di animazione. Include sia il codice utente che il codice di libreria.  
+- **Scripting.** Indica il tempo impiegato per l'analisi e l'esecuzione di JavaScript. Include eventi DOM, timer, valutazione script e il lavoro dei frame di animazione. Include sia il codice utente che il codice di libreria.  
   
--   **GC.** Indica il tempo impiegato nell'operazione di Garbage Collection.  
+- **GC.** Indica il tempo impiegato nell'operazione di Garbage Collection.  
   
--   **Stile.** Indica il tempo impiegato per l'analisi di CSS e il calcolo del layout e della presentazione dell'elemento.  
+- **Stile.** Indica il tempo impiegato per l'analisi di CSS e il calcolo del layout e della presentazione dell'elemento.  
   
--   **Rendering.** Indica il tempo impiegato per disegnare lo schermo.  
+- **Rendering.** Indica il tempo impiegato per disegnare lo schermo.  
   
--   **Decodifica immagine.** Indica il tempo impiegato per la decompressione e la decodifica delle immagini.  
+- **Decodifica immagine.** Indica il tempo impiegato per la decompressione e la decodifica delle immagini.  
   
- Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, è possibile usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per ulteriori informazioni, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
+  Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, è possibile usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per ulteriori informazioni, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
   
- Per le altre categorie di eventi, è possibile che si identifichino gli effetti collaterali della piattaforma che derivano dall'aggiunta di funzionalità all'app, ma in questi casi è possibile che non si riesca a risolvere i problemi di prestazioni specifici tramite il profiler della velocità di risposta dell'interfaccia utente.  
+  Per le altre categorie di eventi, è possibile che si identifichino gli effetti collaterali della piattaforma che derivano dall'aggiunta di funzionalità all'app, ma in questi casi è possibile che non si riesca a risolvere i problemi di prestazioni specifici tramite il profiler della velocità di risposta dell'interfaccia utente.  
   
- Questa tabella mostra gli eventi e le relative descrizioni:  
+  Questa tabella mostra gli eventi e le relative descrizioni:  
   
 |event|Categoria di eventi|Quando si verifica|  
 |-----------|--------------------|-----------------|  

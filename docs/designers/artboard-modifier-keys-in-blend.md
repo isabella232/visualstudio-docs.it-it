@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861111"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
 Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] per individuarli. La tabella seguente elenca i tasti di scelta rapida che modificano un'azione, ad esempio il ridimensionamento di un oggetto.
 
 |Per|Eseguire questa operazione|
-|-----------------------|-------------|
-|Selezionare temporaneamente **Selezione** mentre rimane selezionato uno strumento diverso (ciò consente di ridurre il numero di volte in cui è necessario fare clic su un elemento nel pannello **Strumenti**, passando da **Selezione** ad altri strumenti)|Tenere premuto **CTRL**|
+| - |-------------|
+|Selezionare temporaneamente **Selezione** mentre rimane selezionato uno strumento diverso (ciò consente di ridurre il numero di volte in cui è necessario fare clic su un elemento nel pannello **Strumenti**, passando da **Selezione** ad altri strumenti)|Tenere premuto **Ctrl**|
 |Spostare gli oggetti selezionati mentre è selezionato **Selezione**|Premere i tasti freccia|
 |Eseguire una panoramica della tavola da disegno|Tenere premuta la **BARRA SPAZIATRICE** e trascinare la tavola da disegno|
 |Eseguire uno zoom avanti o indietro della tavola da disegno|Ruotare la rotellina del mouse|
@@ -30,9 +30,9 @@ Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertant
 |Ridurre la visualizzazione della tavola da disegno|Tenere premuto **CTRL**+**ALT**+**BARRA SPAZIATRICE** mentre si fa clic in un punto qualsiasi della tavola da disegno|
 |Spostare la tavola da disegno verso sinistra e destra|Tenere premuto **MAIUSC** e ruotare la rotellina del mouse|
 |Spostare la tavola da disegno verso l'alto e il basso|Tenere premuto **CTRL** e ruotare la rotellina del mouse|
-|Mantenere le proporzioni degli oggetti disegnati o trasformati|Tenere premuto **MAIUSC**|
-|Ruotare un oggetto in incrementi di 15-gradi|Tenere premuto **MAIUSC**|
-|Duplicare un oggetto|Tenere premuto **ALT** e trascinare l'oggetto|
+|Mantenere le proporzioni degli oggetti disegnati o trasformati|Tenere premuto **Maiusc**|
+|Ruotare un oggetto in incrementi di 15-gradi|Tenere premuto **Maiusc**|
+|Duplicare un oggetto|Tenere premuto **Alt** e trascinare l'oggetto|
 |Assegnare un nuovo elemento padre a un oggetto|Trascinare l'oggetto su un pannello di layout e premere **ALT** prima di rilasciare il pulsante del mouse|
 |Selezionare più oggetti|Tenere premuto **CTRL** e selezionare ogni oggetto|
 |Selezionare più oggetti adiacenti|Tenere premuto **MAIUSC** e selezionare il primo e l'ultimo oggetto|

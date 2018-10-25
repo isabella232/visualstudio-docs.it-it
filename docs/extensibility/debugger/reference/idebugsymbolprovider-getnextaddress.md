@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Documenti Microsoft
+title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a682342410b32422bc87f180b00f017520322d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 927069dd3a62ffc56534f68179db2921ccc227f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849203"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Ottiene l'indirizzo di debug che segue un indirizzo di debug specificata in un metodo.  
+Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,16 +45,16 @@ int GetNextAddress(
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Dato l'indirizzo di debug.  
+ [in] Indirizzo di debug specificato.  
   
  `fStatementOnly`  
  [in] Se TRUE, limita gli indirizzi di debug per una singola istruzione.  
   
  `ppAddress`  
- [out] Restituisce l'indirizzo di debug successivo.  
+ [out] Restituisce l'indirizzo di debug successiva.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un oggetto valido `HRESULT`, in genere S_OK.  
+ Restituisce un valore valido `HRESULT`, in genere S_OK.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

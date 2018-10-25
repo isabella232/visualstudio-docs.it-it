@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855534"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 
@@ -31,7 +31,7 @@ Questo documento descrive come usare l'**editor dei modelli** di Visual Studio p
 L'**editor dei modelli** supporta diversi formati di modelli 3D usati nello sviluppo di app DirectX:
 
 |Nome del formato|Estensione nome del file|Operazioni supportate (visualizzazione, modifica, creazione)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |File di interscambio AutoDesk FBX|*.fbx*|Visualizzazione, modifica, creazione|
 |File Collada DAE|*.dae*|Visualizzazione, modifica (le modifiche ai file Collada DAE vengono salvate utilizzando il formato FBX).|
 |OBJ|*.obj*|Visualizzazione, modifica (le modifiche ai file OBJ vengono salvate utilizzando il formato FBX).|
@@ -254,7 +254,7 @@ A ognuno di questi materiali viene applicata una trama sulla superficie di un og
 Per modificare il modo in cui un determinato oggetto risponde alle differenti sorgenti di luce nella scena, è possibile modificare le proprietà di illuminazione del materiale indipendentemente dagli altri oggetti che lo utilizzano. In questa tabella vengono descritte le proprietà di illuminazione comuni.
 
 |Proprietà di illuminazione|Descrizione|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Di ambiente**|Descrive in che modo la superficie è interessata da luce ambientale.|
 |**Diffusa**|Descrive in che modo la superficie è interessata da luce direzionale e puntiforme.|
 |**Emissiva**|Descrive in che modo la superficie emette luce, indipendentemente da altre fonti di illuminazione.|
@@ -294,7 +294,7 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
 |Comando|Scelte rapide da tastiera|
-|-------------|------------------------|
+|-------------| - |
 |Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
 |Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
 |Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
@@ -339,5 +339,5 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Offre informazioni generali sugli strumenti disponibili in Visual Studio per usare gli asset grafici come trame, immagini, modelli 3D ed effetti shader.|
-|[Editor immagini](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|
+|[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|
 |[Finestra di progettazione shader](../designers/shader-designer.md)|Descrive come usare la progettazione shader di Visual Studio per lavorare con gli shader.|

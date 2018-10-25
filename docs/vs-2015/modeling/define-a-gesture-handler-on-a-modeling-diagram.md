@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812972"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Per creare un gestore movimenti nella relativa estensione VSIX  
   
-1.  Nella finestra di dialogo **Nuovo progetto** selezionare **Estensione movimento**in **Progetti di modellazione**.  
+1. Nella finestra di dialogo **Nuovo progetto** selezionare **Estensione movimento**in **Progetti di modellazione**.  
   
-2.  Aprire il file **.cs** nel nuovo progetto e modificare la classe `GestureExtension` per implementare il gestore movimenti.  
+2. Aprire il file **.cs** nel nuovo progetto e modificare la classe `GestureExtension` per implementare il gestore movimenti.  
   
-     Per altre informazioni, vedere [Implementazione del gestore movimenti](#Implementing).  
+    Per altre informazioni, vedere [Implementazione del gestore movimenti](#Implementing).  
   
-3.  Testare il gestore movimenti premendo F5. Per altre informazioni, vedere [Esecuzione del gestore movimenti](#Executing).  
+3. Testare il gestore movimenti premendo F5. Per altre informazioni, vedere [Esecuzione del gestore movimenti](#Executing).  
   
-4.  Installare il gestore movimenti in un altro computer copiando il file **bin\\\*\\\*VSIX** che viene compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).  
+4. Installare il gestore movimenti in un altro computer copiando il file **bin\\\*\\\*VSIX** che viene compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).  
   
- Ecco la procedura alternativa:  
+   Ecco la procedura alternativa:  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>Per creare un progetto di libreria di classi (DLL) separato per il gestore movimenti  
   
-1.  Creare un progetto Libreria di classi in una nuova soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o in una soluzione esistente.  
+1. Creare un progetto Libreria di classi in una nuova soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o in una soluzione esistente.  
   
-    1.  Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
+   1.  Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
   
-    2.  In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.  
+   2.  In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.  
   
-2.  Aggiungere i riferimenti seguenti al progetto.  
+2. Aggiungere i riferimenti seguenti al progetto.  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`: è necessario solo se si intende estendere i diagrammi livello. Per altre informazioni, vedere [estendere i diagrammi livello](../modeling/extend-layer-diagrams.md).  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`: è necessario solo se si intende estendere i diagrammi livello. Per altre informazioni, vedere [estendere i diagrammi livello](../modeling/extend-layer-diagrams.md).  
   
-3.  Aggiungere un file di classe al progetto e impostarne il contenuto sul codice seguente.  
+3. Aggiungere un file di classe al progetto e impostarne il contenuto sul codice seguente.  
   
-    > [!NOTE]
-    >  Modificare lo spazio dei nomi e il nome della classe nel modo desiderato.  
+   > [!NOTE]
+   >  Modificare lo spazio dei nomi e il nome della classe nel modo desiderato.  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     Per altre informazioni su cosa inserire nei metodi, vedere [Implementazione del gestore movimenti](#Implementing).  
+    Per altre informazioni su cosa inserire nei metodi, vedere [Implementazione del gestore movimenti](#Implementing).  
   
- È necessario aggiungere il comando di menu a un progetto VSIX, che funge da contenitore per l'installazione del comando. Se si desidera, è possibile includere altri componenti nello stesso progetto VSIX.  
+   È necessario aggiungere il comando di menu a un progetto VSIX, che funge da contenitore per l'installazione del comando. Se si desidera, è possibile includere altri componenti nello stesso progetto VSIX.  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Per aggiungere un gestore movimenti separato a un progetto VSIX  
   
@@ -238,25 +238,25 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 #### <a name="to-test-the-gesture-handler"></a>Per testare il gestore movimenti  
   
-1.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
+1. Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
+    Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+    **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
-    -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
+   -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+   -   In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione. Usare un diagramma appartenente a uno dei tipi elencati negli attributi della classe del gestore movimenti.  
+2. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione. Usare un diagramma appartenente a uno dei tipi elencati negli attributi della classe del gestore movimenti.  
   
-3.  Fare doppio clic in un punto qualsiasi del diagramma. Dovrebbe essere chiamato il gestore di doppio clic.  
+3. Fare doppio clic in un punto qualsiasi del diagramma. Dovrebbe essere chiamato il gestore di doppio clic.  
   
-4.  Trascinare un elemento da Esplora modelli UML nel diagramma. Dovrebbe essere chiamato il gestore di trascinamento.  
+4. Trascinare un elemento da Esplora modelli UML nel diagramma. Dovrebbe essere chiamato il gestore di trascinamento.  
   
- **Risoluzione dei problemi**: se il gestore movimenti non funziona, assicurarsi che:  
+   **Risoluzione dei problemi**: se il gestore movimenti non funziona, assicurarsi che:  
   
 -   Il progetto del gestore movimenti sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>Per disinstallare un'estensione  
   
-1.  Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.  
+1. Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.  
   
-2.  Espandere **Estensioni installate**.  
+2. Espandere **Estensioni installate**.  
   
-3.  Selezionare l'estensione e quindi scegliere **Disinstalla**.  
+3. Selezionare l'estensione e quindi scegliere **Disinstalla**.  
   
- Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:  
+   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:  
   
- *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [versione]**  
+   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [versione]**  
   
 ##  <a name="DragExample"></a> Esempio  
  L'esempio seguente mostra come creare linee di vita in un diagramma di sequenza in base alle parti e alle porte di un componente, trascinate da un diagramma dei componenti.  

@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861364"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
 ## <a name="inserting-a-code-snippet"></a>Inserimento di un frammento di codice  
  Per inserire un frammento di codice, aprire un file di codice C++ (file CPP o H), fare clic su un punto qualsiasi all'interno del file ed eseguire una delle seguenti operazioni:  
   
--   Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Inserisci frammento di codice**  
+- Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Inserisci frammento di codice**  
   
--   Nel menu**Modifica/IntelliSense** selezionare **Inserisci frammento di codice**  
+- Nel menu**Modifica/IntelliSense** selezionare **Inserisci frammento di codice**  
   
--   Usare i tasti di scelta rapida: **CTRL + K + X**  
+- Usare i tasti di scelta rapida: **CTRL + K + X**  
   
- Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si seleziona **#if** il codice seguente viene aggiunto al file:  
+  Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si seleziona **#if** il codice seguente viene aggiunto al file:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Uso di un frammento di codice per racchiudere il codice selezionato  
  Per usare un frammento di codice per racchiudere il codice selezionato, selezionare una riga (o più righe) ed eseguire una delle operazioni seguenti:  
   
-1.  Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Racchiudi tra**  
+1. Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Racchiudi tra**  
   
-2.  Nel menu**Modifica/IntelliSense** selezionare **Racchiudi tra**  
+2. Nel menu**Modifica/IntelliSense** selezionare **Racchiudi tra**  
   
-3.  Usare i tasti di scelta rapida: **CTRL + K + S**  
+3. Usare i tasti di scelta rapida: **CTRL + K + S**  
   
- Selezionare **#if**. Viene visualizzato un output simile al seguente:  
+   Selezionare **#if**. Viene visualizzato un output simile al seguente:  
   
 ```cpp  
 #if 0  

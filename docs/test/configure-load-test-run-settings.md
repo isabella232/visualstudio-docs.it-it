@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813860"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurare le impostazioni esecuzione test di carico
 
@@ -30,7 +30,7 @@ L'impostazione esecuzione test iniziale viene creata quando si crea un test di c
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-|
 |**Aggiungere altre impostazioni esecuzione test al test di carico:** oltre all'impostazione esecuzione test creata al momento dell'esecuzione della **Creazione guidata test di carico**, è possibile aggiungere altre impostazioni esecuzione al test di carico per poter eseguire il test in condizioni diverse.|-   [Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Specificare l'impostazione esecuzione test attiva da usare con il test di carico:** è possibile selezionare l'impostazione esecuzione test che si vuole usare con il test di carico tramite l'Editor test di carico. L'impostazione esecuzione test attiva è identificata dal suffisso "[Active]".|-   [Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Modificare le proprietà delle impostazioni esecuzione test:** è possibile modificare le proprietà delle impostazioni esecuzione test, quali le opzioni di registrazione (vedere più avanti), la determinazione della durata del test, la durata del riscaldamento, il numero massimo di dettagli degli errori riportati, la frequenza di campionamento, il modello di connessione (solo test delle prestazioni Web), il tipo di archiviazione dei risultati, il livello di convalida e la traccia SQL. Le impostazioni di esecuzione devono riflettere gli obiettivi del test di carico.|-   [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md)<br />-   [Modifica delle proprietà delle impostazioni di esecuzione](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

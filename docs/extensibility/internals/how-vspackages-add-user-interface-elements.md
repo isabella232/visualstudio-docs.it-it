@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839115"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esempio, i menu, barre degli strumenti e finestre degli strumenti di Visual Studio tramite il *vsct* file.  
@@ -90,15 +90,15 @@ Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esem
 #### <a name="menus"></a>Menu  
  Le voci di menu viene definito come un [Menu element](../../extensibility/menu-element.md) nel `Menus` sezione. Menu di scelta deve avere `guid`, `id`, e `priority` gli attributi e un `Parent` elemento e anche i seguenti attributi aggiuntivi e gli elementi figlio:  
   
--   Oggetto `type` attributo che specifica se il menu deve essere visualizzato nell'IDE come un tipo di menu o una barra degli strumenti.  
+- Oggetto `type` attributo che specifica se il menu deve essere visualizzato nell'IDE come un tipo di menu o una barra degli strumenti.  
   
--   Oggetto [elemento Strings](../../extensibility/strings-element.md) che contiene un [elemento ButtonText](../../extensibility/buttontext-element.md), che specifica il titolo del menu di scelta dell'IDE e un [elemento CommandName](../../extensibility/commandname-element.md), che consente di specificare il nome utilizzato nel **comando** finestra per accedere al menu.  
+- Oggetto [elemento Strings](../../extensibility/strings-element.md) che contiene un [elemento ButtonText](../../extensibility/buttontext-element.md), che specifica il titolo del menu di scelta dell'IDE e un [elemento CommandName](../../extensibility/commandname-element.md), che consente di specificare il nome utilizzato nel **comando** finestra per accedere al menu.  
   
--   Flag opzionale. Oggetto [elemento CommandFlag](../../extensibility/command-flag-element.md) può comparire in una definizione di menu per modificare il comportamento nell'IDE o l'aspetto.  
+- Flag opzionale. Oggetto [elemento CommandFlag](../../extensibility/command-flag-element.md) può comparire in una definizione di menu per modificare il comportamento nell'IDE o l'aspetto.  
   
- Ogni `Menu` elemento deve avere un gruppo come elemento padre, a meno che non è un elemento, ad esempio una barra degli strumenti ancorato. Un menu ancorato è il proprio padre. Per altre informazioni sui menu e i valori per il `type` dell'attributo, vedere la [Menu element](../../extensibility/menu-element.md) documentazione.  
+  Ogni `Menu` elemento deve avere un gruppo come elemento padre, a meno che non è un elemento, ad esempio una barra degli strumenti ancorato. Un menu ancorato è il proprio padre. Per altre informazioni sui menu e i valori per il `type` dell'attributo, vedere la [Menu element](../../extensibility/menu-element.md) documentazione.  
   
- L'esempio seguente mostra un menu che viene visualizzato nella barra dei menu di Visual Studio, accanto al **strumenti** menu.  
+  L'esempio seguente mostra un menu che viene visualizzato nella barra dei menu di Visual Studio, accanto al **strumenti** menu.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Casella combinata  
  Casella combinata è definiti nel `Combos` sezione. Ogni `Combo` elemento rappresenta una casella di riepilogo a discesa nell'IDE. La casella di riepilogo può o potrebbe non essere accessibile in scrittura da parte degli utenti, in base al valore di `type` attributo della casella combinata. Combos contengono gli stessi elementi e il comportamento che i pulsanti hanno e può anche avere i seguenti attributi aggiuntivi:  
   
--   Oggetto `defaultWidth` attributo che specifica la larghezza in pixel.  
+- Oggetto `defaultWidth` attributo che specifica la larghezza in pixel.  
   
--   Un `idCommandList` attributo che specifica un elenco che contiene gli elementi che vengono visualizzati nella casella di riepilogo. L'elenco dei comandi deve essere dichiarato nello stesso `GuidSymbol` nodo che contiene la casella combinata.  
+- Un `idCommandList` attributo che specifica un elenco che contiene gli elementi che vengono visualizzati nella casella di riepilogo. L'elenco dei comandi deve essere dichiarato nello stesso `GuidSymbol` nodo che contiene la casella combinata.  
   
- Nell'esempio seguente definisce un elemento di casella combinata.  
+  Nell'esempio seguente definisce un elemento di casella combinata.  
   
 ```xml  
 <Combos>  
@@ -192,8 +192,8 @@ priority="0x0100" type="Menu">
  Le regole seguenti determinano come un elemento può chiamare un altro elemento del relativo sito padre.  
   
 |Elemento|Definito in questa sezione della tabella comandi|Può essere contenuto (come un elemento padre, o dalla posizione nel `CommandPlacements` sezione o entrambi)|Può contenere (definito come padre)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
-|Gruppo|[Elemento Groups](../../extensibility/groups-element.md), l'IDE, altri pacchetti VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e i comandi|  
+|-------------| - | - | - |  
+|Raggruppa|[Elemento Groups](../../extensibility/groups-element.md), l'IDE, altri pacchetti VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e i comandi|  
 |Menu|[Elemento Menus](../../extensibility/menus-element.md), l'IDE, altri pacchetti VSPackage|1 per *n* gruppi|0 per *n* gruppi|  
 |ToolBar|[Elemento Menus](../../extensibility/menus-element.md), l'IDE, altri pacchetti VSPackage|L'elemento stesso|0 per *n* gruppi|  
 |MenuItem|[Elemento Buttons](../../extensibility/buttons-element.md), l'IDE, altri pacchetti VSPackage|1 per *n* dei gruppi, l'elemento stesso|-0 *n* gruppi|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Aspetto di elemento di interfaccia  
  Considerazioni per la selezione e posizionamento degli elementi di comando sono i seguenti:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] offre molti elementi dell'interfaccia utente che vengono visualizzati in modo diverso a seconda della selezione host.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] offre molti elementi dell'interfaccia utente che vengono visualizzati in modo diverso a seconda della selezione host.  
   
--   Un elemento dell'interfaccia utente che viene definito tramite il `DefaultInvisible` flag non verrà visualizzato nell'IDE a meno che non è visualizzato uno dalla relativa implementazione di VSPackage la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodo, o associato a un determinato contesto dell'interfaccia utente nel `VisibilityConstraints` sezione.  
+- Un elemento dell'interfaccia utente che viene definito tramite il `DefaultInvisible` flag non verrà visualizzato nell'IDE a meno che non è visualizzato uno dalla relativa implementazione di VSPackage la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodo, o associato a un determinato contesto dell'interfaccia utente nel `VisibilityConstraints` sezione.  
   
--   Anche un comando è stato posizionato potrebbe non essere visualizzato. Questo è perché l'IDE automaticamente nasconde o Visualizza alcuni comandi, a seconda delle interfacce che il pacchetto VSPackage è (o non abbia) implementato. Ad esempio, un'implementazione di VSPackage alcuni compilare interfacce voci di menu relative alla compilazione cause automaticamente da visualizzare.  
+- Anche un comando è stato posizionato potrebbe non essere visualizzato. Questo è perché l'IDE automaticamente nasconde o Visualizza alcuni comandi, a seconda delle interfacce che il pacchetto VSPackage è (o non abbia) implementato. Ad esempio, un'implementazione di VSPackage alcuni compilare interfacce voci di menu relative alla compilazione cause automaticamente da visualizzare.  
   
--   Applicando la `CommandWellOnly` flag nella definizione di elemento dell'interfaccia utente indica che il comando è possibile aggiungere solo dalla personalizzazione.  
+- Applicando la `CommandWellOnly` flag nella definizione di elemento dell'interfaccia utente indica che il comando è possibile aggiungere solo dalla personalizzazione.  
   
--   I comandi potrebbero essere disponibili solo in determinati contesti dell'interfaccia utente, ad esempio, solo quando una finestra di dialogo viene visualizzata quando l'IDE è in visualizzazione progettazione.  
+- I comandi potrebbero essere disponibili solo in determinati contesti dell'interfaccia utente, ad esempio, solo quando una finestra di dialogo viene visualizzata quando l'IDE è in visualizzazione progettazione.  
   
--   Per generare alcuni elementi dell'interfaccia utente da visualizzare nell'IDE, è necessario implementare una o più interfacce o scrivere codice.  
+- Per generare alcuni elementi dell'interfaccia utente da visualizzare nell'IDE, è necessario implementare una o più interfacce o scrivere codice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estendere i menu e comandi](../../extensibility/extending-menus-and-commands.md)

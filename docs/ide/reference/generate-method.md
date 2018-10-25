@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c06aa8820635c876c05c6ac73c7de4c3c6581aa2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: feabd8276f65bfe0576a052d0ab8172264a41e35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872941"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generare un metodo in Visual Studio
 
@@ -36,24 +36,24 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/method-highlight-cs.png)
+       ![Codice evidenziato C#](media/method-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato VB](media/method-highlight-vb.png)
+       ![Codice evidenziato VB](media/method-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
-    ![Anteprima della generazione del metodo](media/method-preview-cs.png)
+      ![Anteprima della generazione del metodo](media/method-preview-cs.png)
 
-1. Selezionare **Genera metodo** dal menu a discesa.
+3. Selezionare **Genera metodo** dal menu a discesa.
 
    > [!TIP]
    > Usare il collegamento **Anteprima modifiche** nella parte inferiore della finestra di anteprima [per visualizzare tutte le modifiche](../../ide/preview-changes.md) che verranno apportate prima di effettuare la selezione.
@@ -62,11 +62,11 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-      ![Risultato della generazione del metodo C#](media/method-result-cs.png)
+       ![Risultato della generazione del metodo C#](media/method-result-cs.png)
 
    - Visual Basic:
 
-      ![Risultato della generazione del metodo VB](media/method-result-vb.png)
+       ![Risultato della generazione del metodo VB](media/method-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

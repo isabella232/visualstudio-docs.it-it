@@ -15,12 +15,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50af6d65ad98c15506c4f7b015634a44455cd0aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815208"
 ---
 # <a name="how-to-implement-undo-management"></a>Procedura: implementare la gestione di annullamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,39 +47,39 @@ L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsof
   
 #### <a name="to-hook-your-undo-manager-into-the-environment"></a>Per associare il gestore di annullamento nell'ambiente  
   
-1.  Chiamare `QueryInterface` sull'oggetto restituito da <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> per `IID_IOleUndoManager`. Il puntatore per Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
+1. Chiamare `QueryInterface` sull'oggetto restituito da <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> per `IID_IOleUndoManager`. Il puntatore per Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
   
-2.  Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IOleCommandTarget`. Il puntatore per Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IOleCommandTarget`. Il puntatore per Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-3.  Inoltro del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> chiamate all'oggetto memorizzato `IOleCommandTarget` interfaccia per i comandi StandardCommandSet97 seguenti:  
+3. Inoltro del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> chiamate all'oggetto memorizzato `IOleCommandTarget` interfaccia per i comandi StandardCommandSet97 seguenti:  
   
-    -   cmdidUndo  
+   -   cmdidUndo  
   
-    -   cmdidMultiLevelUndo  
+   -   cmdidMultiLevelUndo  
   
-    -   cmdidRedo  
+   -   cmdidRedo  
   
-    -   cmdidMultiLevelRedo  
+   -   cmdidMultiLevelRedo  
   
-    -   cmdidMultiLevelUndoList  
+   -   cmdidMultiLevelUndoList  
   
-    -   cmdidMultiLevelRedoList  
+   -   cmdidMultiLevelRedoList  
   
-4.  Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IVsChangeTrackingUndoManager`. Il puntatore per Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
+4. Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IVsChangeTrackingUndoManager`. Il puntatore per Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
-     Usare il puntatore alla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> per chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>e il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metodi.  
+    Usare il puntatore alla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> per chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>e il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metodi.  
   
-5.  Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IVsLinkCapableUndoManager`.  
+5. Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IVsLinkCapableUndoManager`.  
   
-6.  Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> con il documento, che deve inoltre implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> interfaccia. Quando la chiusura del documento, chiamare `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
+6. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> con il documento, che deve inoltre implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> interfaccia. Quando la chiusura del documento, chiamare `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
   
-7.  Quando la chiusura del documento, chiamare `QueryInterface` nella gestione degli annullamenti per `IID_IVsLifetimeControlledObject`.  
+7. Quando la chiusura del documento, chiamare `QueryInterface` nella gestione degli annullamenti per `IID_IVsLifetimeControlledObject`.  
   
-8.  Chiamare il metodo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
+8. Chiamare il metodo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
   
 9. Quando vengono apportate modifiche al documento, chiamare <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> del gestore con un `OleUndoUnit` classe. Il <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> metodo mantiene un riferimento all'oggetto, generalmente si rilasciarlo subito dopo il <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
   
- Il `OleUndoManager` classe rappresenta un'istanza dello stack di singola operazione di annullamento. Pertanto, è disponibile un oggetto di gestione di annullamento per ogni entità di dati si tiene traccia di annullamento o ripristino.  
+   Il `OleUndoManager` classe rappresenta un'istanza dello stack di singola operazione di annullamento. Pertanto, è disponibile un oggetto di gestione di annullamento per ogni entità di dati si tiene traccia di annullamento o ripristino.  
   
 > [!NOTE]
 >  Anche se l'oggetto di gestore di annullamento è ampiamente utilizzato da editor di testo, è un componente generale che non dispone di alcun supporto specifico per l'editor di testo. Se si desidera supportare l'annullamento a più livelli o ripristino, è possibile utilizzare questa oggetto a tale scopo.  

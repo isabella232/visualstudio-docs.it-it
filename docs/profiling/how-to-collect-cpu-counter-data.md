@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813909"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 
@@ -31,9 +31,9 @@ Si verificano due tipi di eventi del contatore CPU:
 
 - Eventi piattaforma: eventi della CPU associati a un particolare tipo di CPU.
 
- Gli eventi portabili includono eventi generali, ad esempio le istruzioni ritirate e i cicli non interrotti, eventi del buffer della CPU, eventi di diramazione ed eventi della cache L2. I contatori degli eventi piattaforma disponibili sono determinati dal produttore del processore.
+  Gli eventi portabili includono eventi generali, ad esempio le istruzioni ritirate e i cicli non interrotti, eventi del buffer della CPU, eventi di diramazione ed eventi della cache L2. I contatori degli eventi piattaforma disponibili sono determinati dal produttore del processore.
 
- Le categorie di eventi possono essere condivise tra contatori portabili e di piattaforma. Ad esempio, le categorie di dati seguenti sono spesso comuni a entrambi i tipi:
+  Le categorie di eventi possono essere condivise tra contatori portabili e di piattaforma. Ad esempio, le categorie di dati seguenti sono spesso comuni a entrambi i tipi:
 
 - Eventi memoria.
 
@@ -41,7 +41,7 @@ Si verificano due tipi di eventi del contatore CPU:
 
 - Eventi di diramazione.
 
- Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due modi:
+  Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due modi:
 
 - Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.
 

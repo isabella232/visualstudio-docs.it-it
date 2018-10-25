@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a571b0eee0a0cdd4b6e232dc13bd8e8923da805
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9043b1dddcacc797c640252691d6bf393189cc4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876607"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Tempo di elaborazione CPU kernel eccessivo
+
 |||  
 |-|-|  
 |ID regola|TODO|  
@@ -29,14 +30,14 @@ ms.locfileid: "34750181"
 |Metodo di profilatura|Campionamento|  
 |Messaggio|È stato rilevato un elevato livello di tempo CPU in modalità kernel. Per determinare la causa, abilitare il campionamento SysCall.|  
 |Tipo regola|Informazioni|  
-  
+
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
-  
+
 ## <a name="cause"></a>Causa  
  Il tempo CPU proporzionale eseguito in modalità kernel ha superato la quantità di tempo trascorso in modalità utente. Per determinare la causa degli elevati tempi di esecuzione in modalità kernel, eseguire di nuovo la profilatura e abilitare il campionamento del numero di chiamate di sistema (syscalls).  
-  
+
 ## <a name="rule-description"></a>Descrizione della regola  
  La percentuale relativamente elevata del tempo impiegato dall'applicazione in modalità kernel può giustificare l'esecuzione di ulteriori analisi. Un'applicazione in modalità utente passa alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema. È possibile analizzare i tipi di chiamate di sistema effettuati dall'applicazione e le funzioni responsabili di tali chiamate selezionando l'opzione per raccogliere stack di chiamate campione in base alle chiamate di sistema.  
-  
+
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Per analizzare i tipi di chiamate di sistema effettuati dall'applicazione, eseguire nuovamente il profilo e selezionare l'opzione per raccogliere campioni in base alle chiamate al sistema. Se si eseguono gli strumenti di profilatura nell'IDE, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md) per altre informazioni. Se gli strumenti di profilatura vengono eseguiti dalla riga di comando, vedere la sezione **Opzioni dell'intervallo di campionamento** dell'articolo relativo a [VSPerfCmd](../profiling/vsperfcmd.md) nei riferimenti agli strumenti della riga di comando degli strumenti di profilatura.

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Documenti Microsoft
+title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930e806616ef5f4c30aa39b8c6e8ac156ab4a1ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51309f1af6a96663e9d2ad71348a5b56a0fab6f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855482"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Attiva o disattiva lo stato di abilitazione del punto di interruzione in sospeso.  
+Attiva/disattiva lo stato di abilitazione del punto di interruzione in sospeso.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,18 +42,18 @@ int Enable(
   
 #### <a name="parameters"></a>Parametri  
  `fEnable`  
- [in] Impostare su zero (`TRUE`) per abilitare un punto di interruzione in sospeso o a zero (`FALSE`) per disabilitare.  
+ [in] Impostare su diverso da zero (`TRUE`) per abilitare un punto di interruzione in sospeso o a zero (`FALSE`) per disabilitare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.  
   
 ## <a name="remarks"></a>Note  
- Quando un punto di interruzione in sospeso è abilitato o disabilitato, tutti i punti di interruzione associati da quest'ultimo vengono impostate nello stesso stato.  
+ Quando un punto di interruzione in sospeso è abilitato o disabilitato, tutti i punti di interruzione associati da quest'ultimo vengono impostati sullo stesso stato.  
   
- Questo metodo può essere chiamato come più volte, anche se il punto di interruzione è già abilitato o disabilitato.  
+ Questo metodo può essere chiamato tutte le volte in base alle esigenze, anche se il punto di interruzione è già abilitato o disabilitato.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per una semplice `CPendingBreakpoint` oggetto che espone il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CPendingBreakpoint` oggetto che espone il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    

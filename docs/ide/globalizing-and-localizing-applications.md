@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942468"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863596"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizzazione e localizzazione di applicazioni
 
@@ -40,7 +40,7 @@ Se si prevede di distribuire l'applicazione a un pubblico internazionale, è nec
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Suggerimenti per lo sviluppo di applicazioni internazionali](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Offre informazioni sulla programmazione per un pubblico internazionale.
+- [Suggerimenti per lo sviluppo di applicazioni internazionali](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) Offre informazioni sulla programmazione per un pubblico internazionale.
 - [Panoramica della libreria di classi](/dotnet/standard/class-library-overview) Introduce classi, interfacce e tipi di valore che rendono più rapido e ottimizzano il processo di sviluppo e offrono accesso alle funzionalità di sistema.
 - <xref:System.Globalization> Indica le classi di questo spazio dei nomi, che definiscono le informazioni relative alle impostazioni cultura, inclusi lingua, paese, calendario, formati per date, valute, numeri e il tipo di ordinamento delle stringhe.
 - <xref:System.Resources> Indica le classi e le interfacce di questo spazio dei nomi, che consentono agli sviluppatori di creare, archiviare e gestire diverse risorse specifiche delle impostazioni cultura usate in un'applicazione.

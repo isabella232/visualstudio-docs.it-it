@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836827"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -33,13 +33,13 @@ Se si è preoccupati per la privacy dei dati, non inserire informazioni che si v
 
 1. Nella segnalazione creata scegliere **Aggiungi commento** per creare una descrizione privata del problema.
 
-1. Nell'editor di risposta usare il controllo sotto i pulsanti **Invia** e **Annulla** per specificare chi potrà visualizzare la risposta. Scegliere **Viewable by moderators and the original poster** (Visualizzabile da moderatori e dall'autore originale del post) per limitare la visibilità ai dipendenti Microsoft e all'utente.
+2. Nell'editor di risposta usare il controllo sotto i pulsanti **Invia** e **Annulla** per specificare chi potrà visualizzare la risposta. Scegliere **Viewable by moderators and the original poster** (Visualizzabile da moderatori e dall'autore originale del post) per limitare la visibilità ai dipendenti Microsoft e all'utente.
 
    ![Controllo della privacy per la community degli sviluppatori](media/developer-community-privacy-control.png)
 
    Solo le persone specificate potranno visualizzare il commento e le immagini, i collegamenti o il codice inclusi nello stesso. Tutte le risposte riportate sotto il commento hanno la stessa visibilità del commento originale anche se il controllo della privacy nelle risposte non visualizza correttamente lo stato di visibilità limitata.
 
-1. Aggiungere la descrizione ed eventuali altre informazioni, immagini e allegati di file necessari per la procedura di riproduzione. Scegliere il pulsante **Invia** per inviare queste informazioni privatamente.
+3. Aggiungere la descrizione ed eventuali altre informazioni, immagini e allegati di file necessari per la procedura di riproduzione. Scegliere il pulsante **Invia** per inviare queste informazioni privatamente.
 
    > [!NOTE]
    > Esiste un limite di 2 GB per i file allegati e un massimo di 10 file. Se è necessario caricare un file di dimensioni maggiori, è possibile inviare una nuova segnalazione del problema o richiedere un URL di caricamento da un dipendente Microsoft in un commento privato.
@@ -82,8 +82,8 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
    - File dump
 
-   > [!NOTE]
-   > È possibile eliminare i dati di registrazione che non si vogliono inviare prima di inviare la segnalazione.
+    > [!NOTE]
+    > È possibile eliminare i dati di registrazione che non si vogliono inviare prima di inviare la segnalazione.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -30,12 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917000"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863569"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Classi specifiche delle impostazioni cultura per Windows Form e Web Form globali
 
@@ -46,7 +46,7 @@ Le impostazioni cultura hanno diverse convenzioni per la visualizzazione di date
 
 ## <a name="using-the-culture-setting"></a>Uso delle impostazioni cultura
 
-Usare le impostazioni cultura, archiviate nell'applicazione o nel pannello di controllo **Opzioni internazionali**, per determinare le convenzioni culturali in fase di runtime e formattare le informazioni di conseguenza. Per altre informazioni sulla definizione delle impostazioni cultura, vedere [Procedura: impostare le impostazioni cultura e le impostazioni cultura dell'interfaccia utente per la globalizzazione della pagina Web ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Le classi che formattano automaticamente le informazioni in base alle impostazioni cultura sono denominate *specifiche delle impostazioni cultura*. Alcuni metodi specifici delle impostazioni cultura sono
+Usare le impostazioni cultura, archiviate nell'applicazione o nel pannello di controllo **Opzioni internazionali**, per determinare le convenzioni culturali in fase di runtime e formattare le informazioni di conseguenza. Per altre informazioni sulla definizione delle impostazioni cultura, vedere [Procedura: impostare le impostazioni cultura e le impostazioni cultura dell'interfaccia utente per la globalizzazione della pagina Web ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Le classi che formattano automaticamente le informazioni in base alle impostazioni cultura sono denominate *specifiche delle impostazioni cultura*. Alcuni metodi specifici delle impostazioni cultura sono
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

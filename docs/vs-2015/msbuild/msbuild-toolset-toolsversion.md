@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851829"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 ## <a name="toolset-implementation"></a>Implementazione del set di strumenti  
  Per implementare un set di strumenti, selezionare i percorsi dei vari strumenti, destinazioni e attività che costituiscono il set di strumenti. Gli strumenti del set definito da MSBuild provengono dalle seguenti origini:  
   
--   Cartella di .NET Framework  
+- Cartella di .NET Framework  
   
--   Altri strumenti gestiti  
+- Altri strumenti gestiti  
   
- Gli strumenti gestiti includono ResGen.exe e TlbImp.exe.  
+  Gli strumenti gestiti includono ResGen.exe e TlbImp.exe.  
   
- MSBuild consente di accedere al set di strumenti in due modi:  
+  MSBuild consente di accedere al set di strumenti in due modi:  
   
--   Con le proprietà del set di strumenti  
+- Con le proprietà del set di strumenti  
   
--   Con i metodi <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
+- Con i metodi <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
- Le proprietà del set di strumenti specificano i percorsi degli strumenti. MSBuild usa il valore dell'attributo `ToolsVersion` nel file di progetto per individuare la chiave corrispondente del Registro di sistema e quindi usa le informazioni della chiave del Registro di sistema per impostare le proprietà del set di strumenti. Ad esempio, se `ToolsVersion` ha il valore `12.0`, MSBuild imposterà le proprietà del set di strumenti in base alla chiave del Registro di sistema HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Le proprietà del set di strumenti specificano i percorsi degli strumenti. MSBuild usa il valore dell'attributo `ToolsVersion` nel file di progetto per individuare la chiave corrispondente del Registro di sistema e quindi usa le informazioni della chiave del Registro di sistema per impostare le proprietà del set di strumenti. Ad esempio, se `ToolsVersion` ha il valore `12.0`, MSBuild imposterà le proprietà del set di strumenti in base alla chiave del Registro di sistema HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Le proprietà del set di strumenti sono:  
+  Le proprietà del set di strumenti sono:  
   
--   `MSBuildToolsPath` specifica il percorso dei file binari di MSBuild.  
+- `MSBuildToolsPath` specifica il percorso dei file binari di MSBuild.  
   
--   `SDK40ToolsPath` specifica il percorso di altri strumenti gestiti per MSBuild 4.x, ovvero 4.0 o 4.5.  
+- `SDK40ToolsPath` specifica il percorso di altri strumenti gestiti per MSBuild 4.x, ovvero 4.0 o 4.5.  
   
--   `SDK35ToolsPath` specifica il percorso di altri strumenti gestiti per MSBuild 3.5.  
+- `SDK35ToolsPath` specifica il percorso di altri strumenti gestiti per MSBuild 3.5.  
   
- In alternativa, è possibile determinare il set di strumenti a livello di codice chiamando i metodi della classe <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La classe include i seguenti metodi:  
+  In alternativa, è possibile determinare il set di strumenti a livello di codice chiamando i metodi della classe <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La classe include i seguenti metodi:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> restituisce il percorso della cartella di .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> restituisce il percorso della cartella di .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> restituisce il percorso di un file nella cartella di .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> restituisce il percorso di un file nella cartella di .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> restituisce il percorso della cartella degli strumenti gestiti.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> restituisce il percorso della cartella degli strumenti gestiti.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> restituisce il percorso di un file, che in genere si trova nella cartella degli strumenti gestiti.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> restituisce il percorso di un file, che in genere si trova nella cartella degli strumenti gestiti.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> restituisce il percorso degli strumenti di compilazione.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> restituisce il percorso degli strumenti di compilazione.  
   
 ### <a name="sub-toolsets"></a>Subset di strumenti  
  Come descritto precedentemente in questo argomento, MSBuild usa una chiave del Registro di sistema per specificare il percorso degli strumenti di base. Se la chiave ha una sottochiave, MSBuild la usa per specificare il percorso di un subset di strumenti che contiene ulteriori strumenti. In questo caso, il set di strumenti viene definito combinando le definizioni delle proprietà definite in entrambe le chiavi.  
@@ -107,19 +107,19 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
   
  I subset di strumenti diventano attivi in presenza della proprietà di compilazione `VisualStudioVersion`. Questa proprietà può accettare uno dei valori seguenti:  
   
--   "10.0" indica i subset di strumenti di .NET Framework 4  
+- "10.0" indica i subset di strumenti di .NET Framework 4  
   
--   "11.0" indica i subset di strumenti di .NET Framework 4.5  
+- "11.0" indica i subset di strumenti di .NET Framework 4.5  
   
--   "12.0" indica i subset di strumenti di .NET Framework 4.5.1  
+- "12.0" indica i subset di strumenti di .NET Framework 4.5.1  
   
- Con ToolsVersion 4.0 usare i subset di strumenti 10.0 e 11.0. Nelle versioni successive, la versione del subset di strumenti e ToolsVersion corrisponderanno.  
+  Con ToolsVersion 4.0 usare i subset di strumenti 10.0 e 11.0. Nelle versioni successive, la versione del subset di strumenti e ToolsVersion corrisponderanno.  
   
- Durante la compilazione MSBuild determina automaticamente un valore predefinito per la proprietà `VisualStudioVersion` e lo imposta, se tale proprietà non è stata già definita.  
+  Durante la compilazione MSBuild determina automaticamente un valore predefinito per la proprietà `VisualStudioVersion` e lo imposta, se tale proprietà non è stata già definita.  
   
- MSBuild fornisce gli overload dei metodi `ToolLocationHelper` che aggiungono come parametro un valore enumerato `VisualStudioVersion`.  
+  MSBuild fornisce gli overload dei metodi `ToolLocationHelper` che aggiungono come parametro un valore enumerato `VisualStudioVersion`.  
   
- I subset di strumenti sono stati introdotti in .NET Framework 4.5.  
+  I subset di strumenti sono stati introdotti in .NET Framework 4.5.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)   

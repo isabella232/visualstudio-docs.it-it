@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Next | Documenti Microsoft
+title: Idiaenumsymbols | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867481"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-Recupera un numero specificato di simboli nella sequenza di enumerazione.  
+Recupera un determinato numero di simboli nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT Next (
  [in] Il numero di simboli nell'enumeratore deve essere recuperato.  
   
  rgelt  
- [out] Matrice che deve essere compilato con la [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) gli oggetti che rappresentano i simboli desiderati.  
+ [out] Matrice che deve essere compilato con il [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) gli oggetti che rappresentano i simboli desiderati.  
   
  pceltFetched  
  [out] Restituisce il numero di simboli nell'enumeratore recuperata.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono non presenti sono più simboli. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori simboli. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="example"></a>Esempio  
   

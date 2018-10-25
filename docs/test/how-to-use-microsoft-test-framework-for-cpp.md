@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812452"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
@@ -28,20 +28,22 @@ In genere, il codice di test viene eseguito nel relativo progetto nella stessa s
 
 In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL, potrebbe essere necessario creare i test nello stesso progetto del programma che si sta testando. Per scrivere unit test nello stesso progetto:
 
-1.  Modificare le proprietà del progetto per includere le intestazioni e i file di libreria necessari per il testing unità.
+1. Modificare le proprietà del progetto per includere le intestazioni e i file di libreria necessari per il testing unità.
 
-    1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto del programma che si sta testando, quindi scegliere **Proprietà** > **Proprietà di configurazione** > **Directory di VC++**.
+   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto del programma che si sta testando, quindi scegliere **Proprietà** > **Proprietà di configurazione** > **Directory di VC++**.
 
-    3.  Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **<Edit>**:
+   2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **<Edit>**:
 
-        |Directory|Proprietà|
-        |-|-|
-        |**Directory di inclusione**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Directory delle librerie**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Aggiungere un file di unit test C++:
+      | Directory | Proprietà |
+      |-| - |
+      | **Directory di inclusione** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Directory delle librerie** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **Unit test C++**.
+
+2. Aggiungere un file di unit test C++:
+
+   -   Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **Unit test C++**.
 
 ## <a name="write-the-tests"></a>Scrivere i test
 
@@ -53,13 +55,13 @@ Usare i metodi statici nella classe [Assert](microsoft-visualstudio-testtools-cp
 
 ## <a name="run-the-tests"></a>Eseguire i test
 
-1.  Nel menu **Test** scegliere **Finestre** > **Esplora test**.
+1. Nel menu **Test** scegliere **Finestre** > **Esplora test**.
 2. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
 
-2.  In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
-3. Nel **finestra di output** scegliere **Test** nel menu a discesa per visualizzare i messaggi scritti dalla classe `Logger`:
+3. In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
+4. Nel **finestra di output** scegliere **Test** nel menu a discesa per visualizzare i messaggi scritti dalla classe `Logger`:
 
-  ![Finestra di output di C++ con messaggi di test](media/cpp-test-output-window.png)
+   ![Finestra di output di C++ con messaggi di test](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definire i tratti per abilitare il raggruppamento
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 I tratti predefiniti seguenti sono disponibili in `CppUnitTest.h`. Per altre informazioni, vedere le [informazioni di riferimento sulle API del framework di testing unità Microsoft per C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Descrizione|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|
 |`TEST_PRIORITY(priority)`|Usare il tratto Priority predefinito per assegnare priorità relative ai metodi di test.|

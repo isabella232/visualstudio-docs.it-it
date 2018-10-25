@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865966"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 
@@ -39,7 +39,7 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
  L'opzione della riga di comando **/warnaserror** del compilatore consente anche di specificare se gli avvisi vengono considerati come errori. È possibile aggiungere un elenco delimitato da virgole a questa opzione per specificare mediante i segni + o - gli avvisi da considerare come errori o come avvisi. La seguente tabella elenca le opzioni possibili.
 
 |Opzione della riga di comando|Specifica|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|Considera tutti gli avvisi come errori.|
 |`/warnsaserror`-|Non considera gli avvisi come errori. Questa è l'impostazione predefinita.|
 |`/warnaserror+:<warning list` `>`|Considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832108"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importare gli elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.  
@@ -41,40 +41,40 @@ ms.locfileid: "37118945"
   
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] non supporta l'importazione di soluzioni create nelle applicazioni seguenti:  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- Anche se spesso è possibile importare correttamente soluzioni create da queste applicazioni, la funzionalità non è stata testata e non è supportata.  
+  Anche se spesso è possibile importare correttamente soluzioni create da queste applicazioni, la funzionalità non è stata testata e non è supportata.  
   
 ## <a name="item-import-restrictions"></a>Limitazioni relative all'importazione di elementi
  Sebbene la maggior parte degli elementi di SharePoint possono essere importati da un oggetto esistente *wsp* file, gli elementi seguenti non sono supportati e potrebbero richiedere modifiche per funzionare correttamente:  
   
--   Entità BDC  
+- Entità BDC  
   
--   Elementi di associazione del flusso di lavoro di codice.  
+- Elementi di associazione del flusso di lavoro di codice.  
   
--   Flussi di lavoro di codice  
+- Flussi di lavoro di codice  
   
--   Web part visive (.ascx)  
+- Web part visive (.ascx)  
   
--   Servizi Web (*asmx*)  
+- Servizi Web (*asmx*)  
   
--   Associazioni al tipo di contenuto  
+- Associazioni al tipo di contenuto  
   
--   Ricevitori di eventi  
+- Ricevitori di eventi  
   
--   Definizioni di elenco (modelli)  
+- Definizioni di elenco (modelli)  
   
--   Definizioni di sito  
+- Definizioni di sito  
   
- Quando si esporta una soluzione dalla [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oppure [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], questi elementi vengono automaticamente esclusi dal *wsp* file. Tuttavia, altri *wsp* file generati da strumenti non supportati possono contenere questi elementi. Vedere "Soluzioni SharePoint supportate" più indietro in questo articolo.  
+  Quando si esporta una soluzione dalla [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oppure [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], questi elementi vengono automaticamente esclusi dal *wsp* file. Tuttavia, altri *wsp* file generati da strumenti non supportati possono contenere questi elementi. Vedere "Soluzioni SharePoint supportate" più indietro in questo articolo.  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>Cosa accade quando si importa una soluzione
  Quando si importa una soluzione con il modello Importa pacchetto di soluzione SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] copia tutto il contenuto del *wsp* file e prova a risolvere le differenze e mantenere tutte le associazioni e i riferimenti tra importati gli elementi e i relativi file possibili.  
@@ -112,7 +112,7 @@ ms.locfileid: "37118945"
  Quando si importano soluzioni, alcuni attributi di funzionalità facoltativi vengono omessi dal manifesto della funzionalità importate. Se si vuole ripristinare questi attributi nel nuovo file di funzionalità, identificare gli attributi mancanti confrontando il file delle funzionalità originale con il nuovo manifesto delle funzionalità e seguire le istruzioni nell'argomento [procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Il rilevamento dei conflitti di distribuzione non viene eseguita in istanze di elenco incorporate
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] non esegue il rilevamento dei conflitti di distribuzione in istanze di elenco incorporate (vale a dire, istanze di elenco predefinite fornite con SharePoint). Il rilevamento dei conflitti non viene eseguito per evitare di sovrascrivere le istanze di elenco incorporate su SharePoint. Le istanze di elenco incorporate vengono ancora distribuite o aggiornate, ma non vengono mai eliminate o sovrascritte. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Risolvere i problemi di SharePoint e distribuzione di pacchetti](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] non esegue il rilevamento dei conflitti di distribuzione sulle istanze di elenco incorporate, ovvero le istanze di elenco predefinite fornite con SharePoint. Il rilevamento dei conflitti non viene eseguito per evitare di sovrascrivere le istanze di elenco incorporate su SharePoint. Le istanze di elenco incorporate vengono ancora distribuite o aggiornate, ma non vengono mai eliminate o sovrascritte. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Risolvere i problemi di SharePoint e distribuzione di pacchetti](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="import-sharepoint-server-2010-workflows"></a>Importa i flussi di lavoro di SharePoint Server 2010
  Se si importa un flusso di lavoro creato in [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], non verrà eseguito correttamente dopo averlo distribuito. Tale flusso di lavoro non viene eseguito correttamente a causa della mancanza di alcuni assembly e della presenza nei flussi di lavoro di  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] di form InfoPath non attualmente supportati nelle soluzioni flusso di lavoro di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . È comunque possibile ottenere un funzionamento corretto dei flussi di lavoro di [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] importati dopo avere corretto alcuni elementi, ad esempio aggiungendo riferimenti agli assembly di [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] e riconnettendo i form InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Importazione di flussi di lavoro di SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).  

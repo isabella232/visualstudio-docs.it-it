@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e8f721b57ec3d7bde04deed167fa2d6461517
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875892"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procedura dettagliata: Visualizzazione di suggerimenti con lampadina
 Le lampadine sono icone nell'editor di Visual Studio che si espandono per visualizzare un set di azioni, ad esempio, correzioni dei problemi identificati dagli analizzatori di codice predefiniti o il refactoring del codice.  
   
  Negli editor di Visual c# e Visual Basic, è anche possibile usare .NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti personalizzati analizzatori di codice con le azioni che consentono di visualizzare le lampadine automaticamente. Per altre informazioni, vedere:  
   
--   [Procedura: Scrivere un codice c# di diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Procedura: Scrivere un codice c# di diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Procedura: Scrivere una diagnostica di Visual Basic e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Procedura: Scrivere una diagnostica di Visual Basic e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Altri linguaggi come C++ forniscono anche le lampadine per alcune azioni rapide, ad esempio, un suggerimento per creare un'implementazione stub della funzione.  
+  Altri linguaggi come C++ forniscono anche le lampadine per alcune azioni rapide, ad esempio, un suggerimento per creare un'implementazione stub della funzione.  
   
- Ecco come appare una lampadina. In un progetto Visual Basic o Visual c#, una sottolineatura ondulata rossa viene visualizzata sotto un nome di variabile quando non è valido. Se si passa il mouse sull'identificatore non valido, un indicatore lampadina viene visualizzata accanto al cursore.  
+  Ecco come appare una lampadina. In un progetto Visual Basic o Visual c#, una sottolineatura ondulata rossa viene visualizzata sotto un nome di variabile quando non è valido. Se si passa il mouse sull'identificatore non valido, un indicatore lampadina viene visualizzata accanto al cursore.  
   
- ![lampadina](../extensibility/media/lightbulb.png "a forma di lampadina")  
+  ![lampadina](../extensibility/media/lightbulb.png "a forma di lampadina")  
   
- Se si fa clic sulla freccia in giù per la lampadina, viene visualizzato un set di azioni consigliate, insieme a un'anteprima dell'azione selezionata. In questo caso, Mostra le modifiche apportate al codice se si esegue l'azione.  
+  Se si fa clic sulla freccia in giù per la lampadina, viene visualizzato un set di azioni consigliate, insieme a un'anteprima dell'azione selezionata. In questo caso, Mostra le modifiche apportate al codice se si esegue l'azione.  
   
- ![Anteprima lampadina](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Anteprima lampadina](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- È possibile usare le lampadine per fornire il proprio le azioni consigliate. Ad esempio, è possibile fornire azioni per spostare aprendo le parentesi graffe in una nuova riga o li sposta alla fine della riga precedente. Procedura dettagliata illustra come creare un indicatore lampadina che viene visualizzato sulla parola corrente, dispone di due azioni consigliate: **convertire in lettere maiuscole** e **Converti in minuscolo**.  
+  È possibile usare le lampadine per fornire il proprio le azioni consigliate. Ad esempio, è possibile fornire azioni per spostare aprendo le parentesi graffe in una nuova riga o li sposta alla fine della riga precedente. Procedura dettagliata illustra come creare un indicatore lampadina che viene visualizzato sulla parola corrente, dispone di due azioni consigliate: **convertire in lettere maiuscole** e **Converti in minuscolo**.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, Visual Studio SDK è non installare dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Creare un progetto Managed Extensibility Framework (MEF)  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `LightBulbTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `LightBulbTest`.  
   
 2.  Aggiungere un **classificatore Editor** modello di elemento al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -222,14 +222,14 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
   
 1.  Nel progetto, aggiungere un riferimento a *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll* e impostare **Copia localmente** a `False`.  
   
-2.  Creare due classi, il primo denominato `UpperCaseSuggestedAction` e il secondo denominato `LowerCaseSuggestedAction`. Entrambe le classi implementano <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2.  Creare due classi, denominate `UpperCaseSuggestedAction` e `LowerCaseSuggestedAction`. Entrambe le classi implementano <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Entrambe le classi sono simile ad eccezione del fatto che una chiama <xref:System.String.ToUpper%2A> e l'altra chiama <xref:System.String.ToLower%2A>. Anche se i passaggi seguenti descrivono solo la classe dell'azione per le maiuscole, è necessario implementarle entrambe. Usare i passaggi per l'implementazione dell'azione per le maiuscole come criterio per l'implementazione dell'azione per le minuscole.  
+     Le due classi sono simili, con l'unica eccezione che una chiama <xref:System.String.ToUpper%2A> e l'altra chiama <xref:System.String.ToLower%2A>. Anche se i passaggi seguenti descrivono solo la classe dell'azione per le maiuscole, è necessario implementarle entrambe. Usare i passaggi per l'implementazione dell'azione per le maiuscole come criterio per l'implementazione dell'azione per le minuscole.  
   
 3.  Aggiungere quanto segue usando istruzioni per queste classi:  
   
@@ -319,7 +319,7 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
     }  
     ```  
   
-9. Implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> metodo sostituendo il testo nel controllo span con l'equivalente in maiuscole.  
+9. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> sostituendo il testo nell'intervallo con l'equivalente in maiuscole.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

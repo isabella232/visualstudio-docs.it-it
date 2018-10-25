@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetDocumentContext | Documenti Microsoft
+title: IDebugCanStopEvent2::GetDocumentContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5b9bbd5127ac3cf7aef70744fc80ebc8372dfb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8a8b26ceca3390466f3300d3692a7ee887ebd91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861033"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Ottiene il contesto del documento che descrive il percorso di questo evento.  
+Ottiene il contesto del documento che descrive la posizione di questo evento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -49,7 +49,7 @@ int GetDocumentContext (
 ## <a name="remarks"></a>Note  
  In genere, il contesto del documento può essere considerato come una posizione in un file di origine.  
   
- Per ottenere il contesto del codice, che è orientato verso le istruzioni di codice, chiamare il [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) metodo.  
+ Per ottenere il contesto del codice, che è orientato verso le istruzioni di codice, chiamare il [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

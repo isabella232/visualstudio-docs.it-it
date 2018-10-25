@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863282"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
   
  Nell'esempio di informazioni rapide in questa procedura dettagliata vengono visualizzate le descrizioni comandi quando si sposta il puntatore del mouse su un nome di metodo. Questa progettazione è necessario implementare queste quattro interfacce:  
   
--   interfaccia di origine  
+- interfaccia di origine  
   
--   interfaccia del provider di origine  
+- interfaccia del provider di origine  
   
--   interfaccia del controller  
+- interfaccia del controller  
   
--   interfaccia del provider controller  
+- interfaccia del provider controller  
   
- I provider di origine e il controller vengono parti componente Managed Extensibility Framework (MEF) e sono responsabili per l'esportazione le classi di origine e il controller e l'importazione dei servizi e Broker, ad esempio il <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, che consente di creare il testo della descrizione comando buffer e il <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, che attiva la sessione di informazioni rapide.  
+  I provider di origine e il controller vengono parti componente Managed Extensibility Framework (MEF) e sono responsabili per l'esportazione le classi di origine e il controller e l'importazione dei servizi e Broker, ad esempio il <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, che consente di creare il testo della descrizione comando buffer e il <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, che attiva la sessione di informazioni rapide.  
   
- In questo esempio, l'origine di informazioni rapide Usa un elenco hardcoded di nomi di metodi e le descrizioni, ma in implementazioni complete, il servizio di linguaggio e la documentazione del linguaggio sono responsabili per fornire tale contenuto.  
+  In questo esempio, l'origine di informazioni rapide Usa un elenco hardcoded di nomi di metodi e le descrizioni, ma in implementazioni complete, il servizio di linguaggio e la documentazione del linguaggio sono responsabili per fornire tale contenuto.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

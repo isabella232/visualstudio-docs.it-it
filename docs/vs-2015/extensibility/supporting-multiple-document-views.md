@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826545"
 ---
 # <a name="supporting-multiple-document-views"></a>Supporto di più visualizzazioni documento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile fornire più di una visualizzazione di un documento tramite la creazione di dati del documento separata e oggetti di visualizzazione di documenti per l'editor. Alcuni casi in cui una visualizzazione del documento aggiuntivo potrebbe essere utile sono:  
   
--   Nuovo supporto di finestre: si desidera fornire due o più viste dello stesso tipo, l'editor in modo che un utente che dispone già di una finestra aprire nell'editor è possibile aprire una nuova finestra selezionando il **nuova finestra** dal **finestra** dal menu.  
+- Nuovo supporto di finestre: si desidera fornire due o più viste dello stesso tipo, l'editor in modo che un utente che dispone già di una finestra aprire nell'editor è possibile aprire una nuova finestra selezionando il **nuova finestra** dal **finestra** dal menu.  
   
--   Formato e il codice consente di visualizzare il supporto: si vuole che l'editor per fornire visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ad esempio, fornisce una visualizzazione form e una visualizzazione del codice.  
+- Formato e il codice consente di visualizzare il supporto: si vuole che l'editor per fornire visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ad esempio, fornisce una visualizzazione form e una visualizzazione del codice.  
   
- Per altre informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory.cs nel progetto editor personalizzato creato dal modello di pacchetto Visual Studio. Per altre informazioni su questo progetto, vedere [procedura dettagliata: creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Per altre informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory.cs nel progetto editor personalizzato creato dal modello di pacchetto Visual Studio. Per altre informazioni su questo progetto, vedere [procedura dettagliata: creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>La sincronizzazione delle viste  
  Quando si implementano visualizzazioni multiple, l'oggetto dati del documento è responsabilità di conservare tutte le visualizzazioni sincronizzate con i dati. È possibile usare l'evento di gestione delle interfacce su <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> per sincronizzare più visualizzazioni con i dati.  

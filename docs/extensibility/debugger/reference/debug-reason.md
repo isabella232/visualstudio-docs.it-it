@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Documenti Microsoft
+title: DEBUG_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47cfd171d23420396c6d7ab5416db32cc05511f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f3fccdd43b7d26a5bb2dcc5799d77afff6614d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868365"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
-Specifica i motivi per cui il processo è stato avviato per il debug.  
+Specifica il motivo per cui è stato avviato il processo per eseguire il debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,7 +50,7 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Parametri  
  DEBUG_REASON_ERROR  
- Si è verificato un errore non specifico (utilizzato come una condizione predefinita quando nessuno degli altri motivi di adattamento).  
+ Si è verificato un errore non specifico (usato come una condizione predefinita quando nessuno degli altri motivi adattamento).  
   
  DEBUG_REASON_USER_LAUNCHED  
  Il processo è stato avviato su richiesta dell'utente.  
@@ -62,10 +62,10 @@ public enum enum_DEBUG_REASON {
  Il processo è stato associato automaticamente al quando è stata avviata.  
   
  DEBUG_REASON_CAUSALITY  
- Il processo è stato avviato a causa di un *Just-In-Time* evento di debug (JIT).  
+ Il processo è stato avviato a causa dell'errore una *Just-In-Time* evento di debug (JIT).  
   
 ## <a name="remarks"></a>Note  
- Restituito dal [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metodo.  
+ Restituito dal [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

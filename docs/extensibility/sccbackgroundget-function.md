@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9ac53809a5735457d7604593e975bb764bbdf81
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 39550665c804aa971ba88ee76707bdd150f74ab0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811789"
 ---
 # <a name="sccbackgroundget-function"></a>Funzione SccBackgroundGet
 Questa funzione recupera dal controllo del codice sorgente ogni dei file specificati senza l'intervento dell'utente.  

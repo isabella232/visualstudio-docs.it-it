@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836437"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono i modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile ricevere errori quando il motore di trasformazione del modello al codice sorgente oppure durante la compilazione del codice generato. La procedura riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
@@ -25,15 +25,15 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language
  In questa procedura, si crea una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:
 
--   Nome: DebuggingTestLanguage
+- Nome: DebuggingTestLanguage
 
--   Modello di soluzione: linguaggio minimo
+- Modello di soluzione: linguaggio minimo
 
--   Estensione di file:. ddd
+- Estensione di file:. ddd
 
--   Nome della società: Fabrikam
+- Nome della società: Fabrikam
 
- Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Creazione di un modello di testo
  Aggiungere un modello di testo alla soluzione.

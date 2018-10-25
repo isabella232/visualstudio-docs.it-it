@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815481"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e strumenti che è possibile usare per compilare un progetto di applicazione. MSBuild include un set di strumenti standard, ma è anche possibile creare set di strumenti personalizzati. Per informazioni su come specificare un set di strumenti, vedere [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -27,7 +27,7 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
  MSBuild 15.0 include i set di strumenti standard seguenti:  
   
 |ToolsVersion|Percorso del set di strumenti (come specificato nella proprietà di compilazione MSBuildToolsPath o MSBuildBinPath)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|*Percorso di installazione di Windows>\<\Microsoft.NET\Framework\v2.0.50727\\*|  
 |3.5|*\<Percorso di installazione di Windows>\Microsoft.NET\Framework\v3.5\\*|  
 |4.0|*\<Percorso di installazione di Windows>\Microsoft.NET\Framework\v4.0.30319\\*|  
@@ -39,9 +39,9 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
   
 |Chiave del Registro di sistema|Nome della chiave|Valore della chiave della stringa|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 2.0**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 3.5**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 4**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 2.0**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 3.5**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 4**|  
   
 ### <a name="sub-toolsets"></a>Subset di strumenti  
  Se la chiave del Registro di sistema nella tabella precedente ha una sottochiave, MSBuild la usa per determinare il percorso di un subset di strumenti che sostituisce il percorso nel set di strumenti padre. Di seguito è riportato un esempio di sottochiave:  
@@ -91,11 +91,11 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
   
  Le seguenti proprietà sono specifiche per il valore di `ToolsVersion` usato nei progetti:  
   
--   **$(MSBuildBinPath)** è impostato sul valore `ToolsPath` specificato nel Registro di sistema o nel file di configurazione in cui è definito `ToolsVersion`. L'impostazione `$(MSBuildToolsPath)` nel Registro di sistema o nel file di configurazione specifica la posizione delle attività e delle destinazioni principali. Nel file di progetto viene eseguito il mapping alla proprietà $(MSBuildBinPath) e anche alla proprietà $(MSBuildToolsPath).  
+- **$(MSBuildBinPath)** è impostato sul valore `ToolsPath` specificato nel Registro di sistema o nel file di configurazione in cui è definito `ToolsVersion`. L'impostazione `$(MSBuildToolsPath)` nel Registro di sistema o nel file di configurazione specifica la posizione delle attività e delle destinazioni principali. Nel file di progetto viene eseguito il mapping alla proprietà $(MSBuildBinPath) e anche alla proprietà $(MSBuildToolsPath).  
   
--   `$(MSBuildToolsPath)` è una proprietà riservata definita dalla proprietà MSBuildToolsPath specificata nel file di configurazione. Questa proprietà sostituisce `$(MSBuildBinPath)`. Tuttavia, `$(MSBuildBinPath)` viene mantenuta per garantire la compatibilità. Un set di strumenti personalizzato deve definire `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` ma non entrambe, a meno che non abbiano lo stesso valore.  
+- `$(MSBuildToolsPath)` è una proprietà riservata definita dalla proprietà MSBuildToolsPath specificata nel file di configurazione. Questa proprietà sostituisce `$(MSBuildBinPath)`. Tuttavia, `$(MSBuildBinPath)` viene mantenuta per garantire la compatibilità. Un set di strumenti personalizzato deve definire `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` ma non entrambe, a meno che non abbiano lo stesso valore.  
   
- Si possono anche aggiungere al file di configurazione proprietà personalizzate specifiche di ToolsVersion, usando la stessa sintassi usata per aggiungere la proprietà MSBuildToolsPath. Per rendere disponibili per il file di progetto queste proprietà personalizzate, usare lo stesso nome del valore specificato nel file di configurazione. È possibile definire i set di strumenti ma non i subset di strumenti nel file di configurazione.  
+  Si possono anche aggiungere al file di configurazione proprietà personalizzate specifiche di ToolsVersion, usando la stessa sintassi usata per aggiungere la proprietà MSBuildToolsPath. Per rendere disponibili per il file di progetto queste proprietà personalizzate, usare lo stesso nome del valore specificato nel file di configurazione. È possibile definire i set di strumenti ma non i subset di strumenti nel file di configurazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

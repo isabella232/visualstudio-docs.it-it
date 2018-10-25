@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872070"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Aggiunta di dati di interazione tra livelli dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Esempio di profilatura di un'applicazione desktop di Windows  
   
-1.  Aprire una finestra del prompt dei comandi con privilegi di amministratore. Fare clic su **Start**, scegliere **Tutti i programmi** e quindi **Accessori**. Fare clic con il pulsante destro del mouse su **Prompt dei comandi**, quindi scegliere **Esegui come amministratore**.  
+1. Aprire una finestra del prompt dei comandi con privilegi di amministratore. Fare clic su **Start**, scegliere **Tutti i programmi** e quindi **Accessori**. Fare clic con il pulsante destro del mouse su **Prompt dei comandi**, quindi scegliere **Esegui come amministratore**.  
   
-2.  Inizializzare la profilatura .NET e le variabili di ambiente TIP. Digitare i comandi seguenti:  
+2. Inizializzare la profilatura .NET e le variabili di ambiente TIP. Digitare i comandi seguenti:  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  Avvia il profiler. Digitare il comando seguente:  
+3. Avvia il profiler. Digitare il comando seguente:  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  Avviare l'applicazione con VSPerfCmd. Digitare il comando seguente:  
+4. Avviare l'applicazione con VSPerfCmd. Digitare il comando seguente:  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  Usare l'applicazione per raccogliere i dati di profilatura e quindi chiuderla in modo normale.  
+5. Usare l'applicazione per raccogliere i dati di profilatura e quindi chiuderla in modo normale.  
   
-6.  Cancellare le variabili di ambiente TIP. Digitare il comando seguente:  
+6. Cancellare le variabili di ambiente TIP. Digitare il comando seguente:  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- Per altre informazioni, vedere [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Per altre informazioni, vedere [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Profilatura di servizi  
  Per eseguire la profilatura di servizi, incluse le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], usare l'opzione **VSPerfClrEnv /GlobalInteractionOn** per impostare le variabili di ambiente e l'opzione **VSPerfClrEnv /GlobalInteractionOff** per rimuoverle.  
@@ -95,33 +95,33 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ##### <a name="profiling-a-windows-service-example"></a>Esempio di profilatura di un servizio Windows  
   
-1.  Se necessario, installare il servizio.  
+1. Se necessario, installare il servizio.  
   
-2.  Aprire una finestra del prompt dei comandi con privilegi di amministratore. Fare clic su **Start**, scegliere **Tutti i programmi** e quindi **Accessori**. Fare clic con il pulsante destro del mouse su **Prompt dei comandi**, quindi scegliere **Esegui come amministratore**.  
+2. Aprire una finestra del prompt dei comandi con privilegi di amministratore. Fare clic su **Start**, scegliere **Tutti i programmi** e quindi **Accessori**. Fare clic con il pulsante destro del mouse su **Prompt dei comandi**, quindi scegliere **Esegui come amministratore**.  
   
-3.  Inizializzare le variabili di ambiente di profilatura .NET. Digitare il comando seguente:  
+3. Inizializzare le variabili di ambiente di profilatura .NET. Digitare il comando seguente:  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  Inizializzare le variabili di ambiente TIP. Digitare il comando seguente  
+4. Inizializzare le variabili di ambiente TIP. Digitare il comando seguente  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  Riavviare il computer per registrare le variabili di ambiente.  
+5. Riavviare il computer per registrare le variabili di ambiente.  
   
-6.  Aprire una finestra del prompt dei comandi con privilegi di amministratore.  
+6. Aprire una finestra del prompt dei comandi con privilegi di amministratore.  
   
-7.  Avvia il profiler. Digitare il comando seguente:  
+7. Avvia il profiler. Digitare il comando seguente:  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  Se necessario, avviare il servizio.  
+8. Se necessario, avviare il servizio.  
   
 9. Connettere il profiler al servizio. Digitare il comando seguente:  
   
@@ -143,11 +143,11 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 13. Riavviare il computer per registrare le variabili di ambiente cancellate.  
   
- Per altre informazioni, vedere uno degli argomenti seguenti:  
+    Per altre informazioni, vedere uno degli argomenti seguenti:  
   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)  
+    [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Aggiunta di dati di interazione tra livelli con VSPerfASPNETCmd  
  Lo strumento da riga di comando VSPerfASPNETCmd consente di eseguire facilmente la profilatura di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. A differenza dello strumento da riga di comando **VSPerfCmd**, le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è necessario riavviare il computer. Queste funzionalità di VSPerfASPNETCmd rendono molto facile la raccolta di dati di interazione tra livelli.  

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ba62fc129674bd25f97037efdfcdbf7396ea3a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824932"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica della grafica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 ## <a name="requirements"></a>Requisiti  
  Per usare Diagnostica della grafica in Visual Studio 2015 è necessario disporre di una di queste edizioni:  
   
--   Visual Studio 2015 Enterprise  
+- Visual Studio 2015 Enterprise  
   
--   Visual Studio 2015 Professional  
+- Visual Studio 2015 Professional  
   
--   Visual Studio 2015 Community  
+- Visual Studio 2015 Community  
   
- [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
+  [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Prerequisiti di Windows 10  
  La funzionalità Windows facoltativa *strumenti di grafica* fornisce l'infrastruttura di acquisizione e riproduzione richiesti dalla diagnostica grafica in Windows 10.  
@@ -54,17 +54,17 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Per installare Strumenti di grafica per Windows 10  
   
-1.  Nel **avviare** menu, scegliere **impostazioni**. Il **impostazioni** viene visualizzata la finestra.  
+1. Nel **avviare** menu, scegliere **impostazioni**. Il **impostazioni** viene visualizzata la finestra.  
   
-2.  Nel **le impostazioni** finestra di dialogo, scegliere **System**, quindi selezionare **le app installate** dall'elenco di impostazioni di sistema.  
+2. Nel **le impostazioni** finestra di dialogo, scegliere **System**, quindi selezionare **le app installate** dall'elenco di impostazioni di sistema.  
   
-3.  Sul lato destro del **le impostazioni** finestra di dialogo scegliere **Gestisci funzionalità facoltative** sotto **installata l'App e funzionalità**. Il **Gestisci funzionalità facoltative** viene visualizzata la finestra.  
+3. Sul lato destro del **le impostazioni** finestra di dialogo scegliere **Gestisci funzionalità facoltative** sotto **installata l'App e funzionalità**. Il **Gestisci funzionalità facoltative** viene visualizzata la finestra.  
   
-4.  Nel **Gestisci funzionalità facoltative** finestra di dialogo, scegliere **aggiungere una funzionalità**. Viene visualizzato un elenco di funzionalità facoltative che è possibile installare.  
+4. Nel **Gestisci funzionalità facoltative** finestra di dialogo, scegliere **aggiungere una funzionalità**. Viene visualizzato un elenco di funzionalità facoltative che è possibile installare.  
   
-5.  Selezionare **strumenti di grafica** nell'elenco delle funzionalità, quindi scegliere **installare**.  
+5. Selezionare **strumenti di grafica** nell'elenco delle funzionalità, quindi scegliere **installare**.  
   
- La funzionalità Strumenti di grafica viene inoltre installata automaticamente quando si installa Windows SDK 10.  
+   La funzionalità Strumenti di grafica viene inoltre installata automaticamente quando si installa Windows SDK 10.  
   
 > [!TIP]
 >  La funzionalità facoltativa strumenti di grafica di Windows 10 fornisce la funzionalità caricamento leggero di acquisizione e riproduzione, ad esempio il programma di acquisizione da riga di comando **dxcap.exe**, che può essere utilizzato nel supporto, test e scenari di diagnostica in macchine virtuali in cui non sono installati gli strumenti di sviluppo. Per altre informazioni, vedere la [strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md) argomento.  
@@ -75,11 +75,11 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 ### <a name="1---create-a-direct3d-app"></a>1 - Creare un'app Direct3D  
  Se si dispone già di un'app Direct3D con cui esplorare Diagnostica della grafica, passare al punto successivo. In caso contrario, si può usare uno degli esempi di Direct3D disponibili in Code Gallery.  
   
--   Per provare diagnostica della grafica con Direct3D 12 su Windows 10 usando Visual Studio 2015, provare il [esempio Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) per Windows 10.  
+- Per provare diagnostica della grafica con Direct3D 12 su Windows 10 usando Visual Studio 2015, provare il [esempio Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) per Windows 10.  
   
--   Per provare diagnostica della grafica con Direct3D 11 su Windows 10 o Windows 8.1, è possibile usare la **App DirectX (Windows universale)** oppure **App DirectX (Windows 8.1)** modelli di progetto. O, per operazioni più complesse, provare il [esempio di gioco marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) per Windows 8.1.  
+- Per provare diagnostica della grafica con Direct3D 11 su Windows 10 o Windows 8.1, è possibile usare la **App DirectX (Windows universale)** oppure **App DirectX (Windows 8.1)** modelli di progetto. O, per operazioni più complesse, provare il [esempio di gioco marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) per Windows 8.1.  
   
- Verificare che sia possibile compilare l'applicazione prima di andare avanti.  
+  Verificare che sia possibile compilare l'applicazione prima di andare avanti.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Avviare una sessione di Diagnostica della grafica  
  A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio, nel menu principale, scegliere **eseguire il Debug, grafica, avvia diagnostica**, oppure premere **ALT+F5**. L'app viene avviata in Diagnostica della grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.  
@@ -96,11 +96,11 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
   
 ##### <a name="to-capture-a-sequence-of-frames"></a>Per acquisire una sequenza di frame  
   
--   In Visual Studio, nella finestra della sessione di diagnostica, impostare **frame da acquisire** sul numero di frame da acquisire in sequenza, quindi acquisire la sequenza usando uno dei metodi descritti in precedenza per acquisire singoli frame.  
+- In Visual Studio, nella finestra della sessione di diagnostica, impostare **frame da acquisire** sul numero di frame da acquisire in sequenza, quindi acquisire la sequenza usando uno dei metodi descritti in precedenza per acquisire singoli frame.  
   
-     Per acquisire nuovamente singoli frame, impostare **frame da acquisire** a `1`.  
+   Per acquisire nuovamente singoli frame, impostare **frame da acquisire** a `1`.  
   
- Al termine dell'acquisizione dei frame sufficiente uscire dall'app o scegliere il **arrestare** pulsante dalla barra degli strumenti grafica o finestra sessione di diagnostica.  
+  Al termine dell'acquisizione dei frame sufficiente uscire dall'app o scegliere il **arrestare** pulsante dalla barra degli strumenti grafica o finestra sessione di diagnostica.  
   
 ### <a name="4--examine-captured-frames-in-the-graphics-analyzer"></a>4 - Esaminare i frame acquisiti in Analizzatore grafica  
  A questo punto si è pronti per esaminare i frame acquisiti. Per iniziare ad analizzare un frame, scegliere il numero del frame da esaminare nella finestra della sessione di diagnostica. Verrà aperto il frame nel **analizzatore grafica**, dove è possibile usare gli strumenti di diagnostica della grafica per esaminare come l'app Usa Direct3D per tenere traccia dei problemi di rendering oppure usare il **analisi dei Frame** dello strumento comprendere le prestazioni.  

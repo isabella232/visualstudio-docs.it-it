@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE | Documenti Microsoft
+title: BP_PASSCOUNT_STYLE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b238012a844016324bbdee4df3cc167051815f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f382c83813eb794fc48e33310ba8381030b424fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846122"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-Specifica la condizione associata con il punto di interruzione passaggio che fa sì che il punto di interruzione da attivare.  
+Specifica la condizione associata con il punto di interruzione pass che fa sì che il punto di interruzione da attivare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,19 +48,19 @@ public enum enum_BP_PASSCOUNT_STYLE {
   
 ## <a name="members"></a>Membri  
  BP_PASSCOUNT_NONE  
- Specifica nessuno stile di conteggio di passaggio di punto di interruzione.  
+ Specifica nessuno stile di punto di interruzione pass conteggio.  
   
  BP_PASSCOUNT_EQUAL  
- Imposta lo stile di conteggio di passaggio di punto di interruzione deve essere uguale a. Il punto di interruzione viene generato quando il numero di volte in cui che viene raggiunto il punto di interruzione è uguale al conteggio di passaggio.  
+ Imposta lo stile di conteggio pass punto di interruzione deve essere uguale a. Il punto di interruzione viene attivato quando il numero di volte in cui che viene raggiunto il punto di interruzione uguale al conteggio pass.  
   
  BP_PASSCOUNT_EQUAL_OR_GREATER  
- Imposta lo stile di conteggio di passaggio di punto di interruzione su uguale o maggiore. Il punto di interruzione viene generato quando il numero di volte in cui che viene raggiunto il punto di interruzione è uguale o maggiore del numero di passaggio.  
+ Imposta lo stile di punto di interruzione pass conteggio maggiore o uguale. Il punto di interruzione viene attivato quando il numero di volte in cui che viene raggiunto il punto di interruzione è uguale o maggiore del numero di pass.  
   
  BP_PASSCOUNT_MOD  
- Specifica un modulo di conteggio esecuzioni di test. Ad esempio, se il conteggio della sessione è di tipo `BP_PASSCOUNT_MOD` e passare il valore del conteggio è 4, il punto di interruzione di generato ogni volta che il numero di passaggi è un multiplo di 4.  
+ Specifica un modulo conteggio esecuzioni di test. Ad esempio, se il conteggio di pass è del tipo `BP_PASSCOUNT_MOD` e il valore del conteggio pass è 4, viene attivato ogni volta che il numero di passaggi è un multiplo di 4 il punto di interruzione.  
   
 ## <a name="remarks"></a>Note  
- Utilizzato per il `stylePassCount` appartenente il [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che a sua volta è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.  
+ Utilizzato per il `stylePassCount` membro del [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che a sua volta è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

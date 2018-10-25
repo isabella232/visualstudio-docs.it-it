@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87f50856439158d6d931b519fb35e98970ef7d58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949461"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedura: impostare le informazioni di configurazione per una soluzione Office
   È possibile utilizzare i file di configurazione per configurare le impostazioni specifiche per le soluzioni Office. È possibile specificare le impostazioni come criteri di associazione degli assembly, gli oggetti di .NET remoting, debug e le impostazioni di traccia.  
@@ -32,19 +32,19 @@ ms.locfileid: "35671914"
   
 ### <a name="to-add-a-configuration-file-to-your-office-project"></a>Per aggiungere un file di configurazione al progetto di Office  
   
-1.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
+1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
-2.  Nel **categorie** riquadro, fare clic su **generali**.  
+2. Nel **categorie** riquadro, fare clic su **generali**.  
   
-3.  Nel **modelli** riquadro, selezionare **File di configurazione dell'applicazione**.  
+3. Nel **modelli** riquadro, selezionare **File di configurazione dell'applicazione**.  
   
-4.  Nel **Name** , digitare lo stesso nome dell'assembly con l'estensione *config*. Ad esempio, un file di configurazione per assembly di un progetto denominato *ExcelWorkbook1.dll* verrebbe denominata *Excelworkbook1*.  
+4. Nel **Name** , digitare lo stesso nome dell'assembly con l'estensione *config*. Ad esempio, un file di configurazione per assembly di un progetto denominato *ExcelWorkbook1.dll* verrebbe denominata *Excelworkbook1*.  
   
-5.  Fare clic su **Aggiungi**.  
+5. Fare clic su **Aggiungi**.  
   
-6.  Creare il file di configurazione in base allo schema di file di configurazione dell'applicazione. Per altre informazioni, vedere [schema di file di configurazione per .NET Framework](/dotnet/framework/configure-apps/file-schema/index).  
+6. Creare il file di configurazione in base allo schema di file di configurazione dell'applicazione. Per altre informazioni, vedere [schema di file di configurazione per .NET Framework](/dotnet/framework/configure-apps/file-schema/index).  
   
- Non esistono considerazioni speciali per l'uso di file di configurazione con i progetti di Office.  
+   Non esistono considerazioni speciali per l'uso di file di configurazione con i progetti di Office.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Schema di file di configurazione per .NET Framework](/dotnet/framework/configure-apps/file-schema/index)   

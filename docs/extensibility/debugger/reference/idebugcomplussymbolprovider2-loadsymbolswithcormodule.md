@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Documenti Microsoft
+title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1529f1645adcd1aaa18b5f17448068de3da6efe4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6bde1c3aa8ced1b82d20af6d9e777a030d201a01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874605"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-Carica i simboli di debug di **ICorDebugModule** oggetto.  
+I simboli di debug carichi le **ICorDebugModule** oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -64,7 +64,7 @@ int LoadSymbolsWithCorModule(
  [in] Oggetto che contiene i metadati di simboli di debug.  
   
  `pUnkCorDebugModule`  
- [in] Oggetto che implementa il [interfaccia ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
  [in] Nome del modulo.  
@@ -76,7 +76,7 @@ int LoadSymbolsWithCorModule(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(  

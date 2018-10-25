@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876724"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio utilizza MSBuild, ma esso non dipende da Visual Studio. Richiamando *msbuild.exe* nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.
@@ -56,7 +56,7 @@ ms.locfileid: "44321242"
  Per eseguire [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] al prompt dei comandi, passare un file di progetto a *MSBuild.exe* con le opzioni appropriate della riga di comando. Le opzioni della riga di comando consentono di impostare proprietà, eseguire destinazioni specifiche e impostare altre opzioni che controllano il processo di compilazione. Ad esempio, per compilare il file *MyProj.proj* con la proprietà `Configuration` impostata su `Debug` si usa la sintassi della riga di comando seguente.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  Per altre informazioni sulle opzioni della riga di comando di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
@@ -170,19 +170,19 @@ Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargetin
 
 ## <a name="see-also"></a>Vedere anche
 
-|Titolo|Descrizione|
-|-----------|-----------------|
-|[Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo.|
-|[Procedura dettagliata: uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)|Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'IDE di Visual Studio.|
-|[Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)|Presenta i quattro blocchi predefiniti di MSBuild: proprietà, elementi, destinazioni e attività.|
-|[Elementi](../msbuild/msbuild-items.md)|Descrive i concetti generali su cui si basa il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e le interazioni fra le singole parti del formato.|
-|[Proprietà di MSBuild](../msbuild/msbuild-properties.md)|Introduce proprietà e raccolte di proprietà. Le proprietà sono coppie di chiave/valore che possono essere usate per configurare le compilazioni|
-|[Destinazioni](../msbuild/msbuild-targets.md)|Spiega come raggruppare le attività in un dato ordine e consentire che determinate sezioni del processo di compilazione vengano richiamate dalla riga di comando.|
-|[Attività](../msbuild/msbuild-tasks.md)|Mostra come creare un'unità di codice eseguibile che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può usare per eseguire operazioni di compilazione atomiche.|
-|[Condizioni](../msbuild/msbuild-conditions.md)|Descrive come usare l'attributo `Condition` in un elemento MSBuild.|
-|[Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)|Illustra la suddivisione in batch, l'esecuzione di trasformazioni, il multitargeting e altre tecniche avanzate.|
-|[Registrazione a MSBuild](../msbuild/logging-in-msbuild.md)|Descrive come registrare eventi, messaggi ed errori.|
-|[Risorse aggiuntive](../msbuild/additional-msbuild-resources.md)|Elenca risorse della community e di supporto che consentono di ottenere altre informazioni su MSBuild.|
+| Titolo | Descrizione |
+| - | - |
+| [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo. |
+| [Procedura dettagliata: uso di MSBuild](../msbuild/walkthrough-using-msbuild.md) | Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'IDE di Visual Studio. |
+| [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md) | Presenta i quattro blocchi predefiniti di MSBuild: proprietà, elementi, destinazioni e attività. |
+| [Elementi](../msbuild/msbuild-items.md) | Descrive i concetti generali su cui si basa il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e le interazioni fra le singole parti del formato. |
+| [Proprietà di MSBuild](../msbuild/msbuild-properties.md) | Introduce proprietà e raccolte di proprietà. Le proprietà sono coppie di chiave/valore che possono essere usate per configurare le compilazioni |
+| [Destinazioni](../msbuild/msbuild-targets.md) | Spiega come raggruppare le attività in un dato ordine e consentire che determinate sezioni del processo di compilazione vengano richiamate dalla riga di comando. |
+| [Attività](../msbuild/msbuild-tasks.md) | Mostra come creare un'unità di codice eseguibile che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può usare per eseguire operazioni di compilazione atomiche. |
+| [Condizioni](../msbuild/msbuild-conditions.md) | Descrive come usare l'attributo `Condition` in un elemento MSBuild. |
+| [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md) | Illustra la suddivisione in batch, l'esecuzione di trasformazioni, il multitargeting e altre tecniche avanzate. |
+| [Registrazione a MSBuild](../msbuild/logging-in-msbuild.md) | Descrive come registrare eventi, messaggi ed errori. |
+| [Risorse aggiuntive](../msbuild/additional-msbuild-resources.md) | Elenca risorse della community e di supporto che consentono di ottenere altre informazioni su MSBuild. |
 
 ## <a name="reference"></a>Riferimenti
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md) Collegamenti ad argomenti che contengono informazioni di riferimento.

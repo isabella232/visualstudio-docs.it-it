@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834285"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze
 
@@ -38,7 +38,7 @@ Inoltre, il file del foglio di calcolo può essere condiviso con gli stakeholder
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-|
 |**Creare un report di prestazioni e sovraccarico:** è possibile creare report relativi ai test di carico e delle prestazioni Web usando Microsoft Excel.|- [Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Creare manualmente un report di prestazioni e sovraccarico usando Microsoft Word:** è possibile creare manualmente report relativi ai test di carico e delle prestazioni Web copiando e incollando dati di riepilogo, tabelle e grafici in un documento Microsoft Word.|- [Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

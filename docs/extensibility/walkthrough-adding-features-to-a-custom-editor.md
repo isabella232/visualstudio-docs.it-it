@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873019"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: Aggiunta di funzionalità a un editor personalizzato
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.  
@@ -122,38 +122,38 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   
 13. Esporre un modello a oggetti da un editor di automazione tramite l'implementazione di `IDispatch` interfaccia.  
   
-     Per altre informazioni, vedere [aggiunta come contributo al modello di automazione](../extensibility/internals/contributing-to-the-automation-model.md).  
+     Per altre informazioni, vedere [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
   
--   L'istanza dell'editor viene creato quando si chiama l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> (metodo). Se l'editor supporta più visualizzazioni, `CreateEditorInstance` crea i dati del documento e gli oggetti di visualizzazione documento. Se l'oggetto dati del documento è già aperto, non null `punkDocDataExisting` valore viene passato a `IVsEditorFactory::CreateEditorInstance`. Implementazione della factory dell'editor deve determinare se un oggetto dati del documento esistente è compatibile eseguendo una query per le interfacce appropriate su di esso. Per altre informazioni, vedere [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+- L'istanza dell'editor viene creato quando si chiama l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> (metodo). Se l'editor supporta più visualizzazioni, `CreateEditorInstance` crea i dati del documento e gli oggetti di visualizzazione documento. Se l'oggetto dati del documento è già aperto, non null `punkDocDataExisting` valore viene passato a `IVsEditorFactory::CreateEditorInstance`. Implementazione della factory dell'editor deve determinare se un oggetto dati del documento esistente è compatibile eseguendo una query per le interfacce appropriate su di esso. Per altre informazioni, vedere [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
--   Se si usa l'approccio di incorporamento semplificato, implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia.  
+- Se si usa l'approccio di incorporamento semplificato, implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia.  
   
--   Se si decide di utilizzare l'attivazione sul posto, implementare le interfacce seguenti:  
+- Se si decide di utilizzare l'attivazione sul posto, implementare le interfacce seguenti:  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  Il `IOleInPlaceComponent` interfaccia viene utilizzata per evitare l'unione di menu OLE 2.  
+  > [!NOTE]
+  >  Il `IOleInPlaceComponent` interfaccia viene utilizzata per evitare l'unione di menu OLE 2.  
   
-     I `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **tagliare**, **copia**, e **Incolla**. Quando si implementa `IOleCommandTarget`, decidere se l'editor richiede un proprio *vsct* file per definire la propria struttura di menu comando o se è possibile implementare comandi standard definiti dalle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In genere, gli editor di usano ed estendono i menu dell'IDE e definiscono le proprie le barre degli strumenti. Tuttavia, è spesso necessario per un editor definire i proprio comandi specifici oltre all'utilizzo di set di comandi standard dell'IDE. L'editor deve dichiarare i comandi standard USA e quindi definire qualsiasi nuovi comandi, menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un *vsct* file. Se si crea un'attivazione sul posto dell'editor, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e barre degli strumenti per l'editor in un *vsct* file invece di usare l'unione di menu OLE 2.  
+   I `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **tagliare**, **copia**, e **Incolla**. Quando si implementa `IOleCommandTarget`, decidere se l'editor richiede un proprio *vsct* file per definire la propria struttura di menu comando o se è possibile implementare comandi standard definiti dalle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In genere, gli editor di usano ed estendono i menu dell'IDE e definiscono le proprie le barre degli strumenti. Tuttavia, è spesso necessario per un editor definire i proprio comandi specifici oltre all'utilizzo di set di comandi standard dell'IDE. L'editor deve dichiarare i comandi standard USA e quindi definire qualsiasi nuovi comandi, menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un *vsct* file. Se si crea un'attivazione sul posto dell'editor, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e barre degli strumenti per l'editor in un *vsct* file invece di usare l'unione di menu OLE 2.  
   
--   Per evitare di affollare nell'interfaccia utente di comando di menu, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. Comandi condivisi sono definiti nel *SharedCmdDef.vsct* e *ShellCmdDef.vsct*. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc del [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installazione.  
+- Per evitare di affollare nell'interfaccia utente di comando di menu, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. Comandi condivisi sono definiti nel *SharedCmdDef.vsct* e *ShellCmdDef.vsct*. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc del [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installazione.  
   
--   `ISelectionContainer` possibile esprimere una o più selezioni. Ogni oggetto selezionato viene implementato come un `IDispatch` oggetto.  
+- `ISelectionContainer` possibile esprimere una o più selezioni. Ogni oggetto selezionato viene implementato come un `IDispatch` oggetto.  
   
--   L'IDE implementa il `IOleUndoManager` come un servizio accessibile da un <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o come un oggetto che può essere creata un'istanza tramite <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. L'editor implementa il `IOleUndoUnit` per ogni interfaccia `Undo` azione.  
+- L'IDE implementa il `IOleUndoManager` come un servizio accessibile da un <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o come un oggetto che può essere creata un'istanza tramite <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. L'editor implementa il `IOleUndoUnit` per ogni interfaccia `Undo` azione.  
   
--   Esistono due posizioni un editor personalizzato può esporre gli oggetti di automazione:  
+- Esistono due posizioni un editor personalizzato può esporre gli oggetti di automazione:  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>Vedere anche  
  [Contribuire al modello di automazione](../extensibility/internals/contributing-to-the-automation-model.md)   

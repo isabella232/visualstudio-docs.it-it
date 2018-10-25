@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM | Documenti Microsoft
+title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4abc7e2eb8b29a0a7486264732778502c032f42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a8302d89bb90902f2a31a81545f14dd233bbe1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820538"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-Seleziona i diversi tipi di costruttori.  
+Consente di selezionare diversi tipi di costruttori.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,13 +48,13 @@ public enum ConstructorMatchOptions {
  Seleziona tutti i costruttori.  
   
  crNonStatic  
- Seleziona i costruttori non statico.  
+ Seleziona i costruttori non statici.  
   
  crStatic  
  Seleziona i costruttori statici.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) metodo.  
+ Passato come argomento per il [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

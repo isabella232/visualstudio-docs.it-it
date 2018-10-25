@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848787"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.  
@@ -51,21 +51,21 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
  Nelle organizzazioni più grandi, l'editore e il deployer sono in genere due entità separate:  
   
--   L'editore è il gruppo che crea l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
+- L'editore è il gruppo che crea l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
--   Il deployer è il gruppo, in genere del reparto IT, che distribuisce l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ai computer desktop aziendali.  
+- Il deployer è il gruppo, in genere del reparto IT, che distribuisce l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ai computer desktop aziendali.  
   
 Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione di applicazioni attendibili:  
   
-1.  Ottenere un certificato per l'editore.  
+1. Ottenere un certificato per l'editore.  
   
-2.  Aggiungere l'editore all'archivio Editori attendibili in tutti i client.  
+2. Aggiungere l'editore all'archivio Editori attendibili in tutti i client.  
   
-3.  Creare l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
+3. Creare l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
-4.  Firmare il manifesto della distribuzione con il certificato dell'editore.  
+4. Firmare il manifesto della distribuzione con il certificato dell'editore.  
   
-5.  Pubblicare la distribuzione dell'applicazione nei computer client.  
+5. Pubblicare la distribuzione dell'applicazione nei computer client.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Ottenere un certificato per il server di pubblicazione  
  I certificati digitali sono un componente principale del sistema di sicurezza e autenticazione Microsoft Authenticode. Authenticode è una parte standard del sistema operativo Windows. Tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] devono essere firmate con un certificato digitale, a prescindere se partecipano alla distribuzione di applicazioni attendibili. Per una spiegazione completa di come funziona Authenticode con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).  

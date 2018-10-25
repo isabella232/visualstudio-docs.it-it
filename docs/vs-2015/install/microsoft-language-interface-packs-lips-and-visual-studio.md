@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812881"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Pack (LIP) e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ Con un Windows Language Interface Pack (LIP) è possibile installare una version
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Per impostare la lingua usata per il testo dell'interfaccia utente in Visual Studio  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **le opzioni** finestra di dialogo espandere **ambiente** e quindi fare clic su **impostazioni internazionali**.  
+2. Nel **le opzioni** finestra di dialogo espandere **ambiente** e quindi fare clic su **impostazioni internazionali**.  
   
-3.  Nel **linguaggio** elencare, selezionare la lingua in cui deve essere visualizzato il testo dell'interfaccia utente nell'ambiente di sviluppo.  
+3. Nel **linguaggio** elencare, selezionare la lingua in cui deve essere visualizzato il testo dell'interfaccia utente nell'ambiente di sviluppo.  
   
-     Per ottenere il testo dell'interfaccia utente in corrispondenza dell'IDE impostando la lingua di visualizzazione del sistema operativo, selezionare **uguale a Microsoft Windows**.  
+    Per ottenere il testo dell'interfaccia utente in corrispondenza dell'IDE impostando la lingua di visualizzazione del sistema operativo, selezionare **uguale a Microsoft Windows**.  
   
- È anche possibile usare il comando devenv per impostare la lingua usata per l'interfaccia utente. Per altre informazioni, vedere [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
+   È anche possibile usare il comando devenv per impostare la lingua usata per l'interfaccia utente. Per altre informazioni, vedere [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Impostazioni internazionali, Ambiente, finestra di dialogo Opzioni](../ide/reference/international-settings-environment-options-dialog-box.md)

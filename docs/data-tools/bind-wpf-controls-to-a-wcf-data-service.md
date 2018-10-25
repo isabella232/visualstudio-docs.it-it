@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949383"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 
@@ -52,13 +52,13 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
--   WCF Data Services. Per altre informazioni, vedere [Panoramica](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- WCF Data Services. Per altre informazioni, vedere [Panoramica](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
--   Modelli di dati in [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
+- Modelli di dati in [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Cenni preliminari su Entity Framework](/dotnet/framework/data/adonet/ef/overview).
+- Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Cenni preliminari su Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
--   Data binding WPF. Per altre informazioni, vedere [Panoramica sul Data Binding](/dotnet/framework/wpf/data/data-binding-overview).
+- Data binding WPF. Per altre informazioni, vedere [Panoramica sul Data Binding](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Creare il progetto di servizio
 
@@ -171,23 +171,23 @@ Per visualizzare i dati dal servizio dati WCF, creare una nuova applicazione WPF
 
 Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Designer. Più avanti in questa procedura dettagliata, verrà aggiunto il codice che consente agli utenti di visualizzare e aggiornare i record delle vendite tramite questi pulsanti.
 
-1.  Nelle **Esplora soluzioni**, fare doppio clic su **MainWindow. XAML**.
+1. Nelle **Esplora soluzioni**, fare doppio clic su **MainWindow. XAML**.
 
-     La finestra verrà aperta in WPF Designer.
+    La finestra verrà aperta in WPF Designer.
 
-2.  Nella visualizzazione [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] della finestra di progettazione aggiungere il codice seguente tra i tag `<Grid>`:
+2. Nella visualizzazione [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] della finestra di progettazione aggiungere il codice seguente tra i tag `<Grid>`:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Compilare il progetto.
+3. Compilare il progetto.
 
 ## <a name="create-the-data-bound-controls"></a>Creare i controlli con associazione a dati
 

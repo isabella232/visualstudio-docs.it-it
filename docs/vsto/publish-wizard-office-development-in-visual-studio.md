@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811581"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
   Usare la **pubblicazione guidata** per copiare i file della soluzione in una posizione specificata, creare i file manifesto e creare un programma di installazione.  
@@ -41,13 +41,13 @@ ms.locfileid: "35672427"
   
  Digitare il percorso come un percorso su disco, una condivisione file, un sito FTP o URL del sito web o il **esplorare** per cercare il percorso. Il percorso può essere nei seguenti formati:  
   
--   Percorso relativo o assoluto nello standard Windows formato, ad esempio *C:\Deploy\MyApplication* oppure *\MyApplication*.  
+- Percorso relativo o assoluto nello standard Windows formato, ad esempio *C:\Deploy\MyApplication* oppure *\MyApplication*.  
   
--   Un percorso Universal Naming Convention (UNC), ad esempio  *\\\ServerName\MyApplication\\*.  
+- Un percorso Universal Naming Convention (UNC), ad esempio  *\\\ServerName\MyApplication\\*.  
   
--   Un URL di un sito web del sito, ad esempio http://www.microsoft.com/MyApplication.  
+- Un URL di un sito web del sito, ad esempio http://www.microsoft.com/MyApplication.  
   
- Per impostazione predefinita, è il percorso di pubblicazione *http://localhost/projectname/* se è installato IIS o la directory Publish \ se IIS non è installato.  
+  Per impostazione predefinita, è il percorso di pubblicazione *http://localhost/projectname/* se è installato IIS o la directory Publish \ se IIS non è installato.  
   
 > [!NOTE]  
 >  Se il computer di destinazione è in esecuzione Windows Vista, esistono ulteriori considerazioni. È necessario essere un amministratore nel computer Windows Vista per utilizzare l'opzione di pubblicazione locale. Inoltre, il percorso predefinito è sempre il *pubblicare\\*  directory, indipendentemente dal fatto che è installato IIS.  

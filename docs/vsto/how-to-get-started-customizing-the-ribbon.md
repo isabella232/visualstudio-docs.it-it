@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838348"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procedura: iniziare a personalizzare la barra multifunzione
   Per personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un **sulla barra multifunzione (finestra di progettazione visiva)** oppure **della barra multifunzione (XML)** elemento a un progetto di Office.  
@@ -32,45 +32,45 @@ ms.locfileid: "35254605"
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Per aggiungere una barra multifunzione a un progetto  
   
-1.  Nel **Project** Menu, fare clic su **Aggiungi nuovo elemento**.  
+1. Nel **Project** Menu, fare clic su **Aggiungi nuovo elemento**.  
   
-2.  Nel **Aggiungi nuovo elemento** finestra di dialogo **della barra multifunzione (finestra di progettazione visiva)** oppure **sulla barra multifunzione (XML)**. Per altre informazioni su tali modelli, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
+2. Nel **Aggiungi nuovo elemento** finestra di dialogo **della barra multifunzione (finestra di progettazione visiva)** oppure **sulla barra multifunzione (XML)**. Per altre informazioni su tali modelli, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
   
-3.  Nel **nome** , digitare un nome per l'elemento della barra multifunzione.  
+3. Nel **nome** , digitare un nome per l'elemento della barra multifunzione.  
   
-     I nomi non possono contenere i caratteri seguenti:  
+    I nomi non possono contenere i caratteri seguenti:  
   
-    -   Cancelletto (#)  
+   -   Cancelletto (#)  
   
-    -   Simbolo di percentuale (%)  
+   -   Simbolo di percentuale (%)  
   
-    -   E commerciale (&)  
+   -   E commerciale (&)  
   
-    -   Asterisco (*)  
+   -   Asterisco (*)  
   
-    -   Barra verticale (|)  
+   -   Barra verticale (|)  
   
-    -   Barra rovesciata (\\)  
+   -   Barra rovesciata (\\)  
   
-    -   Due punti (:)  
+   -   Due punti (:)  
   
-    -   Virgolette doppie (")  
+   -   Virgolette doppie (")  
   
-    -   Minore di (\<)  
+   -   Minore di (\<)  
   
-    -   Maggiore di (>)  
+   -   Maggiore di (>)  
   
-    -   Punto interrogativo (?)  
+   -   Punto interrogativo (?)  
   
-    -   Barra (/)  
+   -   Barra (/)  
   
-    -   Spazi iniziali o finali (' ')  
+   -   Spazi iniziali o finali (' ')  
   
-    -   Nomi riservati di Windows o DOS, ad esempio ("nul", "aux", "con", "com1", "lpt1" e così via)  
+   -   Nomi riservati di Windows o DOS, ad esempio ("nul", "aux", "con", "com1", "lpt1" e così via)  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
- L'elemento della barra multifunzione viene visualizzato nella **Esplora soluzioni**. Per informazioni sui passaggi successivi, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
+   L'elemento della barra multifunzione viene visualizzato nella **Esplora soluzioni**. Per informazioni sui passaggi successivi, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)   

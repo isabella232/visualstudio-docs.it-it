@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e4f3843b7f3f8f19f0f375d6880d5d8be10bbd2
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830431"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio
 
@@ -31,40 +31,40 @@ Per impostazione predefinita, Visual Studio continua a cercare gli aggiornamenti
 
 Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell’aggiornamento degli utenti. A tale scopo, attenersi alla seguente procedura:
 
- 1. Creare un layout offline:
-    ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
-    ```
- 2. Copiarlo nella condivisione file in cui si vuole inserirlo:
-    ```cmd
-    xcopy /e C:\vs2017offline \\server\share\VS2017
-    ```
- 3. Modificare il file response.json nel layout e cambiare il valore `channelUri` in modo che punti a una copia del file channelManifest.json controllato dall'amministratore.
+1. Creare un layout offline:
+   ```cmd
+   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   ```
+2. Copiarlo nella condivisione file in cui si vuole inserirlo:
+   ```cmd
+   xcopy /e C:\vs2017offline \\server\share\VS2017
+   ```
+3. Modificare il file response.json nel layout e cambiare il valore `channelUri` in modo che punti a una copia del file channelManifest.json controllato dall'amministratore.
 
-  Assicurarsi di usare le barre rovesciate come carattere di escape nel valore, come illustrato nell’esempio seguente:
+   Assicurarsi di usare le barre rovesciate come carattere di escape nel valore, come illustrato nell’esempio seguente:
 
-  ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-  ```
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
 
- Gli utenti finali possono ora eseguire l'installazione da questa condivisione per installare Visual Studio.
-    ```cmd
-    \\server\share\VS2017\vs_enterprise.exe
-    ```
+   Gli utenti finali possono ora eseguire l'installazione da questa condivisione per installare Visual Studio.
+   ```cmd
+   \\server\share\VS2017\vs_enterprise.exe
+   ```
 
 Quando un amministratore aziendale stabilisce che per gli utenti finali è il momento di eseguire l'aggiornamento a una versione più recente di Visual Studio, è possibile [aggiornare la posizione di layout](update-a-network-installation-of-visual-studio.md) in cui incorporare i file aggiornati, come segue.
 
- 1. Utilizzare un comando simile a quello che segue:
-    ```cmd
-    vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
-    ```
- 2. Verificare che il file response.json nel layout aggiornato contenga ancora le personalizzazioni, in particolare la modifica del valore channelUri, come segue:
-    ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-    ```
- Le installazioni esistenti di Visual Studio da questo layout eseguono la ricerca degli aggiornamenti in `\\server\share\VS2017\ChannelManifest.json`. Se il file channelManifest.json è più recente rispetto a quello installato dall'utente, Visual Studio informerà l'utente che è disponibile un aggiornamento.
+1. Utilizzare un comando simile a quello che segue:
+   ```cmd
+   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   ```
+2. Verificare che il file response.json nel layout aggiornato contenga ancora le personalizzazioni, in particolare la modifica del valore channelUri, come segue:
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
+   Le installazioni esistenti di Visual Studio da questo layout eseguono la ricerca degli aggiornamenti in `\\server\share\VS2017\ChannelManifest.json`. Se il file channelManifest.json è più recente rispetto a quello installato dall'utente, Visual Studio informerà l'utente che è disponibile un aggiornamento.
 
- Le nuove installazioni installano automaticamente la versione aggiornata di Visual Studio direttamente dal layout.
+   Le nuove installazioni installano automaticamente la versione aggiornata di Visual Studio direttamente dal layout.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Controllo delle notifiche nell'IDE di Visual Studio
 

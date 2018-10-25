@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842640"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Esplorare una sessione di debug in Visual Studio (Xaml e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
   
  Quando si esegue un'istruzione in una riga di codice, il debugger esegue una delle seguenti azioni:  
   
--   Se l'istruzione successiva non è una chiamata a una funzione nella soluzione, il debugger esegue l'istruzione, passa all'istruzione successiva e quindi sospende l'esecuzione.  
+- Se l'istruzione successiva non è una chiamata a una funzione nella soluzione, il debugger esegue l'istruzione, passa all'istruzione successiva e quindi sospende l'esecuzione.  
   
--   Se l'istruzione è una chiamata a una funzione nella soluzione, il debugger passa al punto di ingresso della funzione chiamata e quindi sospende l'esecuzione.  
+- Se l'istruzione è una chiamata a una funzione nella soluzione, il debugger passa al punto di ingresso della funzione chiamata e quindi sospende l'esecuzione.  
   
- Continuare a eseguire le istruzioni di Example1 fino a raggiungere il punto di uscita. Il debugger evidenzia la parentesi graffa di chiusura del metodo.  
+  Continuare a eseguire le istruzioni di Example1 fino a raggiungere il punto di uscita. Il debugger evidenzia la parentesi graffa di chiusura del metodo.  
   
- **Esaminare i valori delle variabili nei suggerimenti dati.** Quando si passa il puntatore del mouse su un nome di variabile, il nome, il valore e il tipo vengono visualizzati in un suggerimento dati.  
+  **Esaminare i valori delle variabili nei suggerimenti dati.** Quando si passa il puntatore del mouse su un nome di variabile, il nome, il valore e il tipo vengono visualizzati in un suggerimento dati.  
   
- ![Suggerimenti dati debugger](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Suggerimenti dati debugger](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Passare il mouse sulla variabile `a`. Notare il nome, il valore e il tipo di dati. Passare il mouse sulla variabile `methodTrack`. Anche in questo caso sono indicati il nome, il valore e il tipo di dati.  
+  Passare il mouse sulla variabile `a`. Notare il nome, il valore e il tipo di dati. Passare il mouse sulla variabile `methodTrack`. Anche in questo caso sono indicati il nome, il valore e il tipo di dati.  
   
- **Esaminare i valori delle variabili nella finestra Variabili locali.** Nella finestra di dialogo **Debug** dal menu **Debug**e quindi **Variabili locali**in questo argomento. (Tastiera: ALT+4).  
+  **Esaminare i valori delle variabili nella finestra Variabili locali.** Nella finestra di dialogo **Debug** dal menu **Debug**e quindi **Variabili locali**in questo argomento. (Tastiera: ALT+4).  
   
- ![Finestra variabili locali](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Finestra variabili locali](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- La finestra Variabili locali è una visualizzazione albero dei parametri e delle variabili della funzione. Le proprietà di una variabile oggetto sono nodi figlio dell'oggetto stesso. La variabile `this` è un parametro nascosto in ogni metodo dell'oggetto che rappresenta l'oggetto stesso. In questo caso rappresenta la classe MainPage. Poiché `methodTrack` è un membro della classe MainPage, il valore e il tipo di dati corrispondenti vengono elencati in una riga al di sotto di `this`. Espandere il nodo `this` per visualizzare le informazioni `methodTrack` .  
+  La finestra Variabili locali è una visualizzazione albero dei parametri e delle variabili della funzione. Le proprietà di una variabile oggetto sono nodi figlio dell'oggetto stesso. La variabile `this` è un parametro nascosto in ogni metodo dell'oggetto che rappresenta l'oggetto stesso. In questo caso rappresenta la classe MainPage. Poiché `methodTrack` è un membro della classe MainPage, il valore e il tipo di dati corrispondenti vengono elencati in una riga al di sotto di `this`. Espandere il nodo `this` per visualizzare le informazioni `methodTrack` .  
   
- **Aggiungere un'espressione di controllo per la variabile methodTrack.** La variabile `methodWatch` viene utilizzata in tutta la guida introduttiva per illustrare i metodi chiamati negli esempi. Per visualizzare più facilmente il valore della variabile, aggiungerla a una finestra Espressioni di controllo. Fare clic con il pulsante destro del mouse sul nome della variabile nella finestra Variabili locali e quindi scegliere **Aggiungi espressione di controllo**.  
+  **Aggiungere un'espressione di controllo per la variabile methodTrack.** La variabile `methodWatch` viene utilizzata in tutta la guida introduttiva per illustrare i metodi chiamati negli esempi. Per visualizzare più facilmente il valore della variabile, aggiungerla a una finestra Espressioni di controllo. Fare clic con il pulsante destro del mouse sul nome della variabile nella finestra Variabili locali e quindi scegliere **Aggiungi espressione di controllo**.  
   
- ![Finestra Espressioni di controllo](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![Finestra Espressioni di controllo](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- È possibile controllare più variabili in una finestra Espressioni di controllo. I valori delle variabili controllate, come i valori nelle finestre Variabili locali e Suggerimenti dati, vengono aggiornati a ogni sospensione dell'esecuzione. È inoltre possibile aggiungere variabili nella finestra Espressioni di controllo dall'editor di codice. Selezionare la variabile da controllare, fare clic con il pulsante destro del mouse e quindi scegliere **Aggiungi espressione di controllo**.  
+  È possibile controllare più variabili in una finestra Espressioni di controllo. I valori delle variabili controllate, come i valori nelle finestre Variabili locali e Suggerimenti dati, vengono aggiornati a ogni sospensione dell'esecuzione. È inoltre possibile aggiungere variabili nella finestra Espressioni di controllo dall'editor di codice. Selezionare la variabile da controllare, fare clic con il pulsante destro del mouse e quindi scegliere **Aggiungi espressione di controllo**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine dei metodi  
  A differenza dell'esecuzione di un'istruzione in un metodo chiamato da un metodo padre, l'esecuzione di un'istruzione/routine in un metodo comporta l'esecuzione del metodo figlio e la successiva sospensione dell'esecuzione nel metodo chiamante alla ripresa del metodo padre. Prima di eseguire un'istruzione/routine di un metodo, è opportuno avere acquisito familiarità con il funzionamento del metodo e avere la certezza che questa operazione non influisca sul problema che si sta analizzando.  

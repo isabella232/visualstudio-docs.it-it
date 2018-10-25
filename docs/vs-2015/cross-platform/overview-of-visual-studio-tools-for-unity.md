@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823528"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Panoramica di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual
 ## <a name="superior-debugging"></a>Debug di livello superiore  
  Connettere il potente debugger di Visual Studio al gioco Unity per eseguire il debug degli script e delle DLL C#, indipendentemente dal fatto che venga eseguito in modo autonomo o nell'editor di Unity. È possibile usare tutte le funzionalità di debug usate normalmente in Visual Studio.  
   
--   Punti di interruzione, anche condizionali.  
+- Punti di interruzione, anche condizionali.  
   
--   Valutazione di espressioni complesse nella finestra Espressioni di controllo.  
+- Valutazione di espressioni complesse nella finestra Espressioni di controllo.  
   
--   Controllo e modifica del valore di variabili e argomenti.  
+- Controllo e modifica del valore di variabili e argomenti.  
   
--   Drill down in strutture di dati e oggetti complessi.  
+- Drill down in strutture di dati e oggetti complessi.  
   
- È persino possibile completare il debug del gioco Unity mentre questo viene eseguito in un altro computer o nella rete.  
+  È persino possibile completare il debug del gioco Unity mentre questo viene eseguito in un altro computer o nella rete.  
   
 ## <a name="productivity"></a>Produttività  
  Oltre alla collaudata produttività di Visual Studio per la scrittura e il refactoring del codice in C#, Visual Studio Tools per Unity offre agli sviluppatori di Unity funzionalità aggiuntive per la produttività.  

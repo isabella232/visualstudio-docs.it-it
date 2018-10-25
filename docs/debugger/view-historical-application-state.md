@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846863"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Esaminare stati precedenti di app tramite tornare indietro di IntelliTrace in Visual Studio
 
@@ -106,17 +106,17 @@ L'impatto sulle prestazioni di debug passo a passo generale dipende dall'applica
 * Se si utilizza la modalità di eventi e snapshot IntelliTrace nelle versioni di Windows precedenti a Windows 10 Fall Creators Update (RS3) e se la piattaforma di destinazione di debug dell'applicazione è impostata su x86, IntelliTrace non registra snapshot.
 
     Soluzioni alternative:
-    * Se si è in Windows 10 Anniversary Update (RS1) e versioni precedenti di versione, 10.0.14393.2273 [installare KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Se si è in Windows 10 Creators Update (RS2) e versioni precedenti di versione, 10.0.15063.1112 [installare KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Installare o eseguire l'aggiornamento a Windows 10 Fall Creators Update (RS3). 
-    * In alternativa: 
-        1. Installare il componente Set di strumenti VC++ 2015.3 versione 140 per desktop (x86, x64) dal programma di installazione di Visual Studio.
-        2. Compilare l'applicazione di destinazione.
-        3. Dalla riga di comando, usare lo strumento editbin per impostare il `Largeaddressaware` flag per l'eseguibile di destinazione. Ad esempio, è possibile usare questo comando (dopo aver aggiornato il percorso): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Premere **F5** per avviare il debug. A questo punto, gli snapshot vengono creati i punti di interruzione e passaggi del debugger.
+  * Se si è in Windows 10 Anniversary Update (RS1) e versioni precedenti di versione, 10.0.14393.2273 [installare KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Se si è in Windows 10 Creators Update (RS2) e versioni precedenti di versione, 10.0.15063.1112 [installare KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Installare o eseguire l'aggiornamento a Windows 10 Fall Creators Update (RS3). 
+  * In alternativa: 
+    1. Installare il componente Set di strumenti VC++ 2015.3 versione 140 per desktop (x86, x64) dal programma di installazione di Visual Studio.
+    2. Compilare l'applicazione di destinazione.
+    3. Dalla riga di comando, usare lo strumento editbin per impostare il `Largeaddressaware` flag per l'eseguibile di destinazione. Ad esempio, è possibile usare questo comando (dopo aver aggiornato il percorso): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    4. Premere **F5** per avviare il debug. A questo punto, gli snapshot vengono creati i punti di interruzione e passaggi del debugger.
 
-        > [!Note]
-        > Il `Largeaddressaware` flag deve essere impostato ogni volta che il file eseguibile viene ricompilato con modifiche.
+       > [!Note]
+       > Il `Largeaddressaware` flag deve essere impostato ogni volta che il file eseguibile viene ricompilato con modifiche.
 
 * Quando viene creato uno snapshot del processo dell'applicazione in un'applicazione che usa un file mappato alla memoria persistente, il processo con lo snapshot mantiene un blocco esclusivo sul file mappato alla memoria (anche dopo che il processo padre ha rilasciato il blocco). Altri processi sono ancora in grado di leggere, ma non scrive, al file mappato alla memoria.
 
