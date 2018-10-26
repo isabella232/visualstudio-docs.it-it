@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812907"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Per definire l'interfaccia IDXGraphicsAnalysis  
   
--   Definire l'interfaccia IDXGraphicsAnalysis nello stesso file in cui sono stati inclusi i file di intestazione.  
+- Definire l'interfaccia IDXGraphicsAnalysis nello stesso file in cui sono stati inclusi i file di intestazione.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Per praticità, si possono eseguire questi passaggi in un nuovo file di intestazione e quindi includerlo nel punto dell'app in cui è necessario.  
+  Per praticità, si possono eseguire questi passaggi in un nuovo file di intestazione e quindi includerlo nel punto dell'app in cui è necessario.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Ottenere l'interfaccia IDXGraphicsAnalysis  
  Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ottenere l'interfaccia di debug DXGI.  
@@ -171,23 +171,23 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Per configurare il nome e il percorso del file del log di grafica  
   
--   Per evitare che il log di grafica venga scritto nella directory temporanea, prima della riga `#include <vsgcapture.h>` aggiungere quanto segue:  
+- Per evitare che il log di grafica venga scritto nella directory temporanea, prima della riga `#include <vsgcapture.h>` aggiungere quanto segue:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     È possibile definire questo valore in modo da scrivere il log di grafica in un percorso relativo alla directory di lavoro oppure in un percorso assoluto, se la definizione di `VSG_DEFAULT_RUN_FILENAME` è un percorso assoluto.  
+   È possibile definire questo valore in modo da scrivere il log di grafica in un percorso relativo alla directory di lavoro oppure in un percorso assoluto, se la definizione di `VSG_DEFAULT_RUN_FILENAME` è un percorso assoluto.  
   
--   Per salvare il log di grafica in un percorso diverso o assegnargli un nome file diverso, prima della riga `#include <vsgcapture.h>` aggiungere quanto segue:  
+- Per salvare il log di grafica in un percorso diverso o assegnargli un nome file diverso, prima della riga `#include <vsgcapture.h>` aggiungere quanto segue:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
+   Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
   
- Per la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] le app, il percorso della directory temporanea è specifico per ogni utente e dell'app e si trova in genere in un percorso, ad esempio C:\users\\*username*\AppData\Local\Packages\\ *nome famiglia pacchetto*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp.\\.  
+  Per la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] le app, il percorso della directory temporanea è specifico per ogni utente e dell'app e si trova in genere in un percorso, ad esempio C:\users\\*username*\AppData\Local\Packages\\ *nome famiglia pacchetto*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp.\\.  
   
 > [!NOTE]
 >  Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  
