@@ -2,7 +2,7 @@
 title: 'Esercitazione: Eseguire il Debug di codice gestito e nativo (modalità mista)'
 description: Informazioni su come eseguire il debug di una DLL nativa da un'app .NET Core o .NET Framework usando il debug in modalità mista
 ms.custom: ''
-ms.date: 04/27/2018
+ms.date: 10/24/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1f34f6af0a98e71f5feb910f84e8d67ada051ae9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 97ad3b6e112a05db817f7a522c3865893d439fd7
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057037"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050326"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Esercitazione: Eseguire il Debug di codice nativo e gestito in Visual Studio
+# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Esercitazione: Eseguire il Debug di codice gestito e nativo nella stessa sessione di debug
 
 Visual Studio consente di abilitare più di un tipo di debugger durante il debug, che viene chiamato il debug in modalità mista. In questa esercitazione, impostare le opzioni per eseguire il debug di codice nativo e gestito in una singola sessione di debug. Questa esercitazione illustra come eseguire il debug di codice nativo da un'app gestita, ma è anche possibile eseguire l'operazione inversa, e [eseguire il debug di codice gestito da un'app nativa](../debugger/how-to-debug-in-mixed-mode.md). Il debugger supporta anche altri tipi di debug in modalità mista, ad esempio il debug [Python e codice nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) e usando il debugger di script nei tipi di app, ad esempio ASP.NET.
 
@@ -40,9 +40,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
 * È necessario installare Visual Studio e il **sviluppo di applicazioni Desktop con C++** carico di lavoro.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+    Se è già stato installato Visual Studio, passare al [download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pagina per installarlo gratuitamente.
 
-    Se il carico di lavoro è già installato ed è necessario installare Visual Studio, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se il carico di lavoro è già installato ed è necessario installare Visual Studio, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
 
 * È necessario anche il **sviluppo desktop .NET** carico di lavoro o il **.NET Core lo sviluppo multipiattaforma** carico di lavoro installato, in base al tipo di app usata da creare.
 
@@ -50,26 +50,26 @@ In questa esercitazione si eseguono le attività seguenti:
 
 1. In Visual Studio, scegliere **File** > **New** > **progetto**.
 
-1. Nel **nuovo progetto** finestra di dialogo, scegliere **Visual C++**, **generali** dalla sezione dei modelli installati, quindi nel riquadro centrale selezionare **progetto vuoto** .
+1. Nel **nuovo progetto** finestra di dialogo, scegliere **Visual C++**, **altri** dalla sezione dei modelli installati, quindi nel riquadro centrale selezionare **progetto vuoto** .
 
-1. Nel **Name** , digitare **Mixed--debug in modalità** e fare clic su **OK**.
+1. Nel **Name** , digitare **Mixed_Mode_Debugging** e fare clic su **OK**.
 
     Visual Studio crea il progetto vuoto che viene visualizzato in Esplora soluzioni nel riquadro di destra.
 
-1. In Esplora soluzioni fare doppio clic il **file di origine** nodo in C++ del progetto e quindi scegliere **Add** > **nuovo elemento**e quindi selezionare **C++ file (. cpp)**. Assegnare al file il nome **Mixed Mode.cpp**, quindi scegliere **Add**.
+1. In Esplora soluzioni fare doppio clic il **file di origine** nodo in C++ del progetto e quindi scegliere **Add** > **nuovo elemento**e quindi selezionare **C++ file (. cpp)**. Assegnare al file il nome **Mixed_Mode.cpp**, quindi scegliere **Add**.
 
     Visual Studio aggiunge il nuovo file di C++.
 
-1. Copiare il codice seguente nel *Mixed Mode.cpp*:
+1. Copiare il codice seguente nel *Mixed_Mode.cpp*:
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. In Esplora soluzioni fare doppio clic il **file di intestazione** nodo in C++ del progetto e quindi scegliere **Add** > **nuovo elemento**e quindi selezionare  **File di intestazione (h)**. Assegnare al file il nome **Mixed Mode.h**, quindi scegliere **Add**.
+1. In Esplora soluzioni fare doppio clic il **file di intestazione** nodo in C++ del progetto e quindi scegliere **Add** > **nuovo elemento**e quindi selezionare  **File di intestazione (h)**. Assegnare al file il nome **Mixed_Mode.h**, quindi scegliere **Add**.
 
     Visual Studio aggiunge il nuovo file di intestazione.
 
-1. Copiare il codice seguente nel *Mixed Mode.h*:
+1. Copiare il codice seguente nel *Mixed_Mode.h*:
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -84,26 +84,29 @@ In questa esercitazione si eseguono le attività seguenti:
     #endif
     ```
 
-1. Nella barra degli strumenti di Debug, selezionare una **eseguire il Debug** configuration e **Any CPU** come piattaforma oppure per .NET Core, selezionare **x64** come piattaforma.
+1. Nella barra degli strumenti di Debug, selezionare una **eseguire il Debug** configuration e **x86** oppure **x64** come piattaforma (per .NET Core, che viene sempre eseguito in modalità a 64 bit, selezionare **x64**  come piattaforma).
 
-    > [!NOTE]
-    > In .NET Core, scegliere **x64** come piattaforma. .NET core viene sempre eseguito in modalità a 64 bit in modo che questa operazione è necessaria.
+1. In Esplora soluzioni fare doppio clic sul nodo del progetto (**Mixed_Mode_Debugging**) e scegliere **proprietà**.
 
-1. In Esplora soluzioni fare doppio clic sul nodo del progetto (**il debug in modalità mista**) e scegliere **proprietà**.
+    > [!IMPORTANT]
+    > Configurazione della proprietà C++ è per ogni piattaforma. Pertanto, se si passa da uno nell'altro (x86 a x64 o viceversa), è necessario anche impostare le proprietà per la nuova configurazione. (Nella pagina delle proprietà, verificare **x64** oppure **Win32** viene impostato come la piattaforma nella parte superiore della pagina.)
 
-1. Nel **delle proprietà** pagina, scegliere **delle proprietà di configurazione** > **Linker** > **avanzate**, e quindi nel **Nessun punto di ingresso** elenco a discesa, seleziona **NO**. Quindi, applicare le impostazioni.
+1. Nel **delle proprietà** pagina, scegliere **delle proprietà di configurazione** > **Linker** > **avanzate**, e quindi nel **Nessun punto di ingresso** elenco a discesa elenco, assicurarsi che **No** sia selezionata. Se è necessario modificare l'impostazione **No**, quindi scegliere **applica**.
 
 1. Nel **delle proprietà** pagina, scegliere **le proprietà di configurazione** > **generali**e quindi selezionare **libreria dinamica (. dll)** dal **tipo configurazione** campo. Quindi, applicare le impostazioni.
 
     ![Passare a una DLL nativa](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Fare clic sul progetto e scegliere **Debug** > **compilare**.
+1. Fare clic sul progetto e scegliere **compilazione**.
 
     Il progetto dovrebbe essere compilato senza errori.
 
 ## <a name="create-a-simple-net-framework-or-net-core-app-to-call-the-dll"></a>Creare un'app .NET Framework o .NET Core semplice per chiamare la DLL
 
 1. In Visual Studio, scegliere **File** > **New** > **progetto**.
+
+    > [!NOTE]
+    > Sebbene sia possibile aggiungere anche il nuovo progetto gestito per la soluzione con il progetto C++, anziché creare una nuova soluzione, non obiettivo che qui per supportare un set più ampio di scenari di debug.
 
 1. Scegliere un modello per il codice dell'applicazione.
 
@@ -128,9 +131,9 @@ In questa esercitazione si eseguono le attività seguenti:
             // Replace the file path shown here with the
             // file path on your computer. For .NET Core, the typical (default) path
             // for a 64-bit DLL might look like this:
-            // C:\Users\username\source\repos\Mixed-Mode-Debugging\x64\Debug\Mixed-Mode-Debugging.dll
-            // Here, we show a typical path for a DLL targeting the **Any CPU** option.
-            [DllImport(@"C:\Users\username\source\repos\Mixed-Mode-Debugging\Debug\Mixed-Mode-Debugging.dll", EntryPoint =
+            // C:\Users\username\source\repos\Mixed_Mode_Debugging\x64\Debug\Mixed_Mode_Debugging.dll
+            // Here, we show a typical path for a DLL targeting the **x86** option.
+            [DllImport(@"C:\Users\username\source\repos\Mixed_Mode_Debugging\Debug\Mixed_Mode_Debugging.dll", EntryPoint =
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
@@ -142,6 +145,8 @@ In questa esercitazione si eseguono le attività seguenti:
         }
     }
     ```
+
+1. Il nuovo codice, aggiornare il percorso del file nel percorso della DLL creata in precedenza (vedere i commenti del codice). Assicurarsi di sostituire il *username* segnaposto.
 
 ## <a name="configure-mixed-mode-debugging-net-framework"></a>Configurare la modalità mista, debug (.NET Framework)
 
