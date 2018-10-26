@@ -8,12 +8,12 @@ title: Documentazione sull'estendibilità di Visual Studio | Microsoft Docs
 description: Informazioni sull'estendibilità di Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3e5973cf0e5bd5ac87a14a167af24797c1b3d7dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842950"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentazione sull'estendibilità di Visual Studio
 
@@ -49,7 +49,7 @@ Visual Studio offre molte opzioni di estendibilità. È possibile estendere Visu
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Estendibilità della piattaforma del compilatore .NET ("Roslyn")</h3>
+                        <h3>Estendibilità di .NET Compiler Platform (&quot;Roslyn&quot;)</h3>
                     </div>
                 </div>
             </div>

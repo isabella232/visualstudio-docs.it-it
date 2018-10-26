@@ -2,7 +2,8 @@
 # [Panoramica sull'IDE](ide-tour.md)
 
 # [Installazione](installation.md)
-## [Anteprima dell'installazione](install-preview.md)
+## [Installare e usare un'istanza protetta da un firewall o un proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Installare una versione di anteprima](install-preview.md)
 ## [Aggiornamento](update.md)
 ## [Disinstallazione](uninstall.md)
 
