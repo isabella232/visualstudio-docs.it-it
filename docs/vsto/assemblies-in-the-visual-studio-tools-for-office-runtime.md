@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673615"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050209"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assembly in Visual Studio Tools per Office runtime
   Quando si crea un progetto di Office, in Visual Studio vengono automaticamente aggiunti riferimenti agli assembly [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usati per il tipo di progetto e .NET Framework di destinazione del progetto. Sono disponibili diversi assembly nelle estensioni di Office per .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per altre informazioni sulle estensioni di Office, vedere [Visual Studio Tools per Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -59,7 +59,7 @@ ms.locfileid: "35673615"
 |Microsoft.Office.Tools.Word.v9.0.dll|Fornisce gli elementi host e i controlli host per le soluzioni Word. Per altre informazioni, vedere [automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.v9.0.dll|Fornisce i seguenti tipi:<br /><br /> -il [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) (classe), che fornisce la funzionalità di data binding per le personalizzazioni a livello di documento i controlli host in.<br />-Altri tipi che fanno parte di Visual Studio Tools per l'infrastruttura di runtime di Office e non deve essere usato direttamente dal codice.|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Fornisce i seguenti tipi:<br /><br /> -il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attributo e <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> interfaccia, che è possibile usare per memorizzare gli oggetti dati in una personalizzazione a livello di documento. Per altre informazioni, vedere [memorizzare nella Cache dati](../vsto/caching-data.md).<br />-Le eccezioni che possono essere generate da Visual Studio Tools per Office runtime.<br />-Altri tipi che fanno parte di Visual Studio Tools per l'infrastruttura di runtime di Office e non deve essere usato direttamente dal codice.|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Fornisce l’interfaccia <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>, che è possibile implementare per eseguire ulteriori passaggi di installazione, come il passaggio finale del programma di installazione ClickOnce per una soluzione Office. Per altre informazioni, vedere [distribuzione di soluzioni Office Advanced](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02).|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Fornisce l'interfaccia <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>, che è possibile implementare per eseguire ulteriori passaggi di installazione, come il passaggio finale del programma di installazione ClickOnce per una soluzione Office. Per altre informazioni, vedere [distribuzione di soluzioni Office Advanced](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Fornisce i seguenti tipi:<br /><br /> -La <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> (classe), che è possibile usare a livello di programmazione collegare gli assembly di personalizzazione ai documenti e accedere ai dati memorizzati nella cache nei documenti. Per altre informazioni, vedere [gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Diverse classi che rappresentano la gerarchia dei dati in una personalizzazione a livello di documento memorizzati nella cache. Per altre informazioni, vedere [accedere ai dati dei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Fornisce i seguenti tipi:<br /><br /> -Le classi AddInSecurityEntry e Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList, che è possibile usare per creare le voci dell'elenco per concedere l'attendibilità a Office inclusione dell'utente soluzioni destinate a .NET Framework 3.5.<br />-Altri tipi che fanno parte di Visual Studio Tools per l'infrastruttura di runtime di Office e non deve essere usato direttamente dal codice.|  
   
