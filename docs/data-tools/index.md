@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948408"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Usare gli strumenti dati in Visual Studio per sviluppare soluzioni dati
 
@@ -33,7 +33,7 @@ Informazioni su come usare gli strumenti dati in Visual Studio per sviluppare e 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informazioni su Visual Studio e su strumenti e supporto API di .NET Framework per lo sviluppo di applicazioni dati</h3>
+                        <h3>Informazioni sul supporto di API e strumenti di .NET Framework e Visual Studio per lo sviluppo di applicazioni dati</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Informazioni su come usare gli strumenti dati in Visual Studio per sviluppare e 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informazioni sulla progettazione, distribuzione e manutenzione dei database con SQL Server Data Tools</h3>
+                        <h3>Informazioni su progettazione, distribuzione e gestione dei database con SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>
