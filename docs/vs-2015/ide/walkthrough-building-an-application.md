@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923095"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143177"
 ---
 # <a name="walkthrough-building-an-application"></a>Procedura dettagliata: compilazione di un'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 3.  Scegliere la pagina **Compilazione** e specificare il numero dell'avviso nella casella **Non visualizzare avvisi**`1762`.  
   
-     ![Pagina Compilazione, Creazione progetti](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![Pagina compilazione, creazione progetti](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      Per altre informazioni, vedere [Pagina Compilazione, Creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -162,7 +162,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 3. Nella pagina **Compilazione** selezionare la casella di controllo **Disabilita tutti gli avvisi**.  
   
-    ![Pagina Compilazione, Creazione progetti](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![Pagina compilazione, creazione progetti](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     Per altre informazioni, vedere [Configuring Warnings in Visual Basic](../ide/configuring-warnings-in-visual-basic.md) (Configurazione degli avvisi in Visual Basic).  
   
