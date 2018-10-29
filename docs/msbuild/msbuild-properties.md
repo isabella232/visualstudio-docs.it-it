@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080750"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879197"
 ---
 # <a name="msbuild-properties"></a>proprietà di MSBuild
 Le proprietà sono coppie nome-valore che possono essere usate per configurare le compilazioni. Le proprietà sono utili per passare i valori alle attività, valutare le condizioni e archiviare i valori a cui si farà riferimento nel file di progetto.  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>Proprietà globali  
- MSBuild consente di impostare le proprietà nella riga di comando usando l'opzione **/property** (o **/p**). Questi valori delle proprietà globali eseguono l'override dei valori delle proprietà impostati nel file di progetto. incluse le proprietà di ambiente, ma non le proprietà riservate, che non possono essere modificate.  
+ MSBuild permette di impostare le proprietà nella riga di comando usando l'opzione **-property** (o **-p**). Questi valori delle proprietà globali eseguono l'override dei valori delle proprietà impostati nel file di progetto. incluse le proprietà di ambiente, ma non le proprietà riservate, che non possono essere modificate.  
   
  L'esempio seguente imposta la proprietà `Configuration` globale su `DEBUG`.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  Le proprietà globali possono anche essere impostate o modificate per i progetti figlio in una compilazione a più progetti usando l'attributo `Properties` dell'attività di MSBuild. Le proprietà globali vengono anche inoltrate ai progetti figlio, a meno che l'attributo `RemoveProperties` dell'attività MSBuild non venga usato per specificare l'elenco di proprietà da non inoltrare. Per altre informazioni, vedere [Attività MSBuild](../msbuild/msbuild-task.md).

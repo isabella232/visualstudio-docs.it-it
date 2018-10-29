@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433302"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356743"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
@@ -32,6 +32,69 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
    Abilita l'analisi del codice per tutti i file nella soluzione e non solo per i file di codice aperti. Per altre informazioni, vedere [Analisi della soluzione completa](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
+## <a name="using-directives"></a>Direttive using
+
+- Inserisci prima le direttive 'System' durante l'ordinamento delle direttive using
+
+   Se selezionata, il comando **Rimuovi e ordina using** nel menu di scelta rapida ordina le direttive `using` e posiziona gli spazi dei nomi "System" all'inizio dell'elenco
+
+   Prima di ordinare:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   Dopo aver ordinato:
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+   
+- Separa gruppi di direttive using
+
+   Se selezionata, il comando **Rimuovi e ordina using** nel menu di scelta rapida separa le direttive `using` inserendo una riga vuota tra gruppi di direttive che hanno lo stesso spazio dei nomi radice.
+
+   Prima di ordinare:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   Dopo aver ordinato:
+   
+   ```csharp
+   using AutoMapper;
+   
+   using FluentValidation;
+   
+   using Newtonsoft.Json;
+   
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
+   
+- Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet 
+
+   Se selezionata, è disponibile un'[azione rapida](../quick-actions.md) per installare un pacchetto NuGet e aggiungere una direttiva `using` per i tipi senza riferimenti.
+
+   ![Azione rapida per installare il pacchetto NuGet in Visual Studio](media/nuget-lightbulb.png)
+  
 ## <a name="highlighting"></a>Evidenziazione
 
 - Evidenzia riferimenti a simbolo sotto il cursore

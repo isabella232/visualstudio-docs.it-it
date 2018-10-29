@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d35a8882654170b62ed3dc37de2361b86cbb1ea1
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813846"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -65,14 +65,15 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 
 Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto) Proprietà* . La finestra visualizzata riporta le proprietà del progetto:
 
-| Scheda | Proprietà | Descrizione |
-| --- | --- | --- |
-| Esegui | File di avvio | Il nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug > Avvia debug** o **Debug > Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. |
-| | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. |
-| | Percorso progetto remoto | Percorso di un'area di lavoro remota. |
-| | Trasferisci file durante l'esecuzione | Indica se i file di progetto, soggetti al filtro in **File da trasferire**, devono essere copiati in un'area di lavoro remota a ogni esecuzione. |
-| | File da trasferire | Nomi di file e caratteri jolly che indicano i file specifici da copiare un'area di lavoro remota se l'opzione **Trasferisci file durante l'esecuzione** è selezionata. |
-| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere un file di impostazioni al progetto usando il comando di menu **File** > **Aggiungi nuovo elemento**. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. |
+
+| Scheda | Proprietà | Descrizione | 
+| --- | --- | --- | 
+| Esegui | File di avvio | Nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug** > **Avvia debug** oppure **Debug** > **Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. | 
+| | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. | 
+| | Percorso progetto remoto | Percorso di un'area di lavoro remota. | 
+| | Trasferisci file durante l'esecuzione | Indica se i file di progetto, soggetti al filtro in **File da trasferire**, devono essere copiati in un'area di lavoro remota a ogni esecuzione. | 
+| | File da trasferire | Nomi di file e caratteri jolly che indicano i file specifici da copiare un'area di lavoro remota se l'opzione **Trasferisci file durante l'esecuzione** è selezionata. | 
+| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere un file di impostazioni al progetto usando il comando di menu **File** > **Aggiungi nuovo elemento**. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. | 
 
 ## <a name="r-specific-project-commands"></a>Comandi di progetto specifici di R
 

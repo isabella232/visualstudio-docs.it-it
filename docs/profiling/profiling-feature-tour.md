@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320839"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356795"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
@@ -34,7 +34,8 @@ Durante il debug è possibile usare la finestra **Strumenti di diagnostica** per
 
 La finestra **Strumenti di diagnostica** è spesso il modo migliore per profilare le app, ma per le build di versione è anche possibile effettuare un'analisi dopo che l'app è terminata. Per altre informazioni sui diversi approcci, vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Per informazioni sugli strumenti di profilatura supportati per i diversi tipi di app, vedere [Quale strumento si deve usare?](#which-tool-should-i-use).
 
-> ![NOTA] È possibile usare gli strumenti di relazione finale con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
+> [!NOTE]
+> È possibile usare gli strumenti di valutazione finale con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
 ## <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
@@ -119,7 +120,7 @@ Quando si seleziona un periodo di tempo nei grafici e si sceglie **Visualizza de
 
 È anche possibile usare i grafici per determinare se esistono colli di bottiglia delle prestazioni associati alla CPU o GPU.
 
-## <a name="analyze-performance-javascript"></a>Analizzare le prestazioni (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>Analizzare le prestazioni (JavaScript UWP)
 
 Per le app UWP è possibile usare lo strumento Memoria JavaScript e lo strumento Velocità di risposta interfaccia utente HTML.
 
@@ -155,8 +156,8 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
   
 |Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì| 
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
+|[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì| 
 |[Utilizzo GPU](../debugger/gpu-usage.md)|sì|sì|No| 
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|

@@ -9,12 +9,12 @@ description: Registrarsi per ricevere l'abbonamento a MSDN Magazine incluso nell
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941269"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Vantaggio MSDN Magazine nelle sottoscrizioni di Visual Studio
 
@@ -31,23 +31,24 @@ L'edizione digitale è disponibile per i membri di Visual Studio Dev Essentials.
 2.  Individuare il riquadro MSDN Magazine nella sezione Sviluppo professionale e fare clic su **Access** (Accedi).
 
 ### <a name="printed-edition"></a>Edizione stampata
-1.  Per iniziare a ricevere la sottoscrizione di MSDN Magazine, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2.  Individuare il riquadro MSDN Magazine nella sezione Sviluppo professionale e fare clic su **Sottoscrivi** nel riquadro per la sottoscrizione di MSDN Magazine. (Fare clic sul "!" nell'angolo inferiore destro del riquadro per accedere all'edizione digitale.)
-    > [!div class="mx-imgBorder"]
-    > ![Riquadro del vantaggio MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
+1. Per iniziare a ricevere la sottoscrizione di MSDN Magazine, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+2. Individuare il riquadro MSDN Magazine nella sezione Sviluppo professionale e fare clic su **Sottoscrivi** nel riquadro per la sottoscrizione di MSDN Magazine. (Fare clic sul "!" nell'angolo inferiore destro del riquadro per accedere all'edizione digitale.)
+   > [!div class="mx-imgBorder"]
+   > ![Riquadro del vantaggio MSDN Magazine](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  Nella pagina MSDN Magazine scegliere il tipo di abbonamento preferito.  È possibile scegliere l'edizione digitale gratuita indipendentemente dal luogo di residenza.  La versione stampata è disponibile gratuitamente per i residenti negli Stati Uniti.  Vengono applicate spese di spedizione per le versioni stampate inviate a indirizzi fuori dagli Stati Uniti.
-    > [!div class="mx-imgBorder"]
-    > ![Abbonamenti al vantaggio MSDN Magazine](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. Nella pagina MSDN Magazine scegliere il tipo di abbonamento preferito.  È possibile scegliere l'edizione digitale gratuita indipendentemente dal luogo di residenza.  La versione stampata è disponibile gratuitamente per i residenti negli Stati Uniti.  Vengono applicate spese di spedizione per le versioni stampate inviate a indirizzi fuori dagli Stati Uniti.
+   > [!div class="mx-imgBorder"]
+   > ![Abbonamenti al vantaggio MSDN Magazine](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  Specificare le informazioni di contatto richieste e fare clic su **Invia**.  La versione selezionata della rivista verrà visualizzata nella sezione Magazine Subscription (Abbonamento alla rivista).  Se è stata scelta l'edizione stampata, la prima opzione è **Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE** (Sì, voglio ricevere MSDN Magazine gratuitamente per 1 anno (12 numeri)).
-    > [!div class="mx-imgBorder"]
-    > ![Profilo del vantaggio MSDN Magazine](_img\vs-msdn\vs-msdn-profile.png)
+4. Specificare le informazioni di contatto richieste e fare clic su **Invia**.  La versione selezionata della rivista verrà visualizzata nella sezione Magazine Subscription (Abbonamento alla rivista).  Se è stata scelta l'edizione stampata, la prima opzione è **Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE** (Sì, voglio ricevere MSDN Magazine gratuitamente per 1 anno (12 numeri)).
+   > [!div class="mx-imgBorder"]
+   > ![Profilo del vantaggio MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  Questo è tutto.  A seconda della versione scelta della rivista, a partire dal numero successivo si inizieranno a ricevere riviste stampate o messaggi di posta elettronica con collegamenti alle versioni online più recenti.  Buona lettura.
+5. Questo è tutto.  A seconda della versione scelta della rivista, a partire dal numero successivo si inizieranno a ricevere riviste stampate o messaggi di posta elettronica con collegamenti alle versioni online più recenti.  Buona lettura.
 
 ## <a name="eligibility"></a>Idoneità
+
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato |Edizione stampata       |  No.  Disponibile solo per i nuovi sottoscrittori          |
@@ -59,9 +60,9 @@ L'edizione digitale è disponibile per i membri di Visual Studio Dev Essentials.
 
 <sup>1</sup>  *Edizione stampata: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
-*Edizione digitale: MCT Software & Services, Microsoft Valued Partner (Professional), Region Director (RD).*
+*Edizione digitale: MCT Software & Services, Microsoft Valued Professional (Professional), Region Director (RD).*
 
-*Esclude: Imagine (Standard), BizSpark, MCT Software & Services Developer*
+*Non include: Imagine (Standard), BizSpark, MCT Software & Services Developer*
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

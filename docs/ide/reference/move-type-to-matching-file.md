@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884149"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
 
@@ -35,32 +35,32 @@ Questo refactoring si applica a:
 
 ## <a name="how-to"></a>Procedura
 
-1. Evidenziare o posizionare il cursore del testo all'interno del nome del tipo da spostare:
+1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Ad esempio:
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. Eseguire quindi una delle operazioni seguenti:
+
+   - Premere **CTRL**+**.**
+   - Fare clic con il pulsante destro del mouse e scegliere **Azioni rapide e refactoring**
+
+1. Scegliere **Sposta il tipo in *TypeName*.cs** dal menu, dove *TypeName* è il nome del tipo selezionato.
+
+   Il tipo viene spostato in un nuovo file nel progetto che ha lo stesso nome del tipo.
 
    - C#:
 
-    ![Codice evidenziato - C#](media/movetype-highlight-cs.png)
+      ![Risultato inline - C#](media/movetype-result-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato - Visual Basic](media/movetype-highlight-vb.png)
-
-1. Eseguire quindi una delle operazioni seguenti:
-
-   - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sposta il tipo in *NomeTipo*.cs** dal popup della finestra di anteprima, dove *NomeTipo* è il nome del tipo selezionato.
-   - **Mouse**
-     - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Sposta il tipo in *NomeTipo*.cs** dal popup della finestra di anteprima, dove *NomeTipo* è il nome del tipo selezionato.
-
-   Il tipo viene spostato in un nuovo file con lo stesso nome, come parte della soluzione.
-
-   - C#:
-
-    ![Risultato inline - C#](media/movetype-result-cs.png)
-
-   - Visual Basic:
-
-    ![Risultato inline - Visual Basic](media/movetype-result-vb.png)
+      ![Risultato inline - Visual Basic](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

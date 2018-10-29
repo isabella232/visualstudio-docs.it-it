@@ -1,5 +1,5 @@
 ---
-title: Opzioni, Editor di testo, Base (Visual Basic)
+title: Opzioni, editor di testo, di base (Visual Basic), avanzato
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,6 +10,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic_Editor.Editor
 - VS.ToolsOptionsPages.Text_Editor.Basic.SimplifiedEditorPage
 - VS.ToolsOptionsPages.Text_Editor.Basic
+- VS.ToolsOptionsPages.Text_Editor.Basic.Advanced
 - VS.ToolsOptionsPages.Text_Editor.Basic.VB_Specific
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
@@ -19,17 +20,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27048b5d70674cd492227e96682f8401ed7160ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823879"
 ---
-# <a name="options-text-editor-basic-visual-basic"></a>Opzioni, Editor di testo, Base (Visual Basic)
+# <a name="options-text-editor-basic-visual-basic-advanced"></a>Opzioni, editor di testo, di base (Visual Basic), avanzato
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) contiene le proprietà seguenti:
 
- **Inserimento automatico di costrutti End** Quando si digita, ad esempio, la prima riga di una dichiarazione di routine, `Sub Main—`, e si preme INVIO, l'editor di testo aggiunge una riga `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.
+ **Abilita evidenziazione di riferimenti e parole chiave**
+
+L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra le parole chiave o i riferimenti evidenziati premendo **CTRL** + **MAIUSC** + **freccia GIÙ** o **CTRL** + **MAIUSC** + **freccia SU**.
+
+**Abilita modalità struttura**
+
+Quando si apre un file nell'editor del codice, è possibile visualizzare il documento in modalità struttura. Per altre informazioni, vedere [Struttura](../../ide/outlining.md). Quando questa opzione è selezionata, la funzionalità di struttura viene attivata all'apertura di un file.
+
+**Mostra separatori di riga routine**
+
+L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione *vb* del progetto nelle posizioni indicate nella tabella seguente:
+
+|Posizione nel file di origine vb|Esempio di posizione della linea|
+|---------------------------------|------------------------------|
+|Dopo la chiusura di un costrutto di dichiarazione di blocco|- Alla fine di una classe, struttura, modulo, interfaccia o enumerazione<br />- Dopo una proprietà, funzione o sub<br />- Non tra le clausole get e set in una proprietà|
+|Dopo un set di costrutti a riga singola|- Dopo le istruzioni di importazione, prima di una definizione di tipo in un file di classe<br />- Dopo le variabili dichiarate in una classe, prima di qualsiasi routine|
+|Dopo le dichiarazioni a riga singola (dichiarazioni non block-level)|- Dopo le istruzioni di importazione, le istruzioni inherits, le dichiarazioni di variabili, le dichiarazioni di eventi, le dichiarazioni di delegati e le istruzioni di dichiarazione di DLL|
 
  **Riformatta il listato di codice** Nell'editor di testo viene riformattato il codice nel modo appropriato. Quando questa opzione è selezionata, l'editor del codice:
 
@@ -47,9 +64,9 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
 
 -   Riformatta le date
 
-**Abilita modalità struttura**
+**Inserimento automatico di costrutti End**
 
-Quando si apre un file nell'editor del codice, è possibile visualizzare il documento in modalità struttura. Per altre informazioni, vedere [Struttura](../../ide/outlining.md). Quando questa opzione è selezionata, la funzionalità di struttura viene attivata all'apertura di un file.
+ Quando si digita, ad esempio, la prima riga di una dichiarazione di routine, `Sub Main—`, e si preme **INVIO**, l'editor di testo aggiunge una riga `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.
 
 **Inserimento automatico di membri Interface e MustOverride**
 
@@ -60,7 +77,7 @@ Quando si esegue il commit di un'istruzione `Implements` o di un'istruzione `Inh
 L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione vb del progetto nelle posizioni indicate nella tabella seguente:
 
 |Posizione nel file di origine vb|Esempio di posizione della linea|
-|---------------------------------|------------------------------|
+| - | - |
 |Dopo la chiusura di un costrutto di dichiarazione di blocco|- Alla fine di una classe, struttura, modulo, interfaccia o enumerazione<br />- Dopo una proprietà, funzione o sub<br />- Non tra le clausole get e set in una proprietà|
 |Dopo un set di costrutti a riga singola|- Dopo le istruzioni di importazione, prima di una definizione di tipo in un file di classe<br />- Dopo le variabili dichiarate in una classe, prima di qualsiasi routine|
 |Dopo le dichiarazioni a riga singola (dichiarazioni non block-level)|- Dopo le istruzioni di importazione, le istruzioni inherits, le dichiarazioni di variabili, le dichiarazioni di eventi, le dichiarazioni di delegati e le istruzioni di dichiarazione di DLL|
@@ -68,10 +85,6 @@ L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una line
 **Abilita suggerimenti per la correzione di errore**
 
 L'editor di testo può suggerire soluzioni agli errori comuni e consentire la sezione della correzione appropriata, che viene quindi applicata al codice.
-
-**Abilita evidenziazione di riferimenti e parole chiave**
-
-L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra le parole chiave o i riferimenti evidenziati premendo CTRL+MAIUSC+freccia GIÙ o CTRL+MAIUSC+freccia SU.
 
 ## <a name="see-also"></a>Vedere anche
 

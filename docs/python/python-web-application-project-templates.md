@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029027"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101004"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -34,7 +34,7 @@ Per creare un progetto da un modello selezionare **File** > **Nuovo** > **Proget
 
 Il modello **Progetto Web** generico, citato in precedenza, mette a disposizione solo un progetto Visual Studio vuoto senza codice e ipotesi diverse dall'essere un progetto di Python. Per informazioni dettagliate sul modello **Servizio Cloud Azure**, vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).
 
-Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e rientrano in tre categorie generali come descritto nelle sezioni seguenti. Le app create con uno di questi modelli contengono codice sufficiente per eseguire l'app in locale ed eseguirne il debug. Ognuno di essi fornisce inoltre l'[oggetto app WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) necessario per la [pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e rientrano in tre categorie generali come descritto nelle sezioni seguenti. Le app create con uno di questi modelli contengono codice sufficiente per eseguire l'app in locale ed eseguirne il debug. Ognuno di essi fornisce anche l'[oggetto app WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) necessario per l'uso con i server Web di produzione.
 
 ### <a name="blank-group"></a>Gruppo vuoto
 

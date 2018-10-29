@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837087"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
 
@@ -33,33 +33,33 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Per eseguire lo unit test usando Esplora test
 
-1.  Creare gli unit test che utilizzano i framework di test scelti.
+1. Creare gli unit test che utilizzano i framework di test scelti.
 
-     Ad esempio, per creare un test che utilizza il framework MSTest:
+    Ad esempio, per creare un test che utilizza il framework MSTest:
 
-    1.  Creare un progetto di test.
+   1.  Creare un progetto di test.
 
-         Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic** > **Visual C#** o **Visual C++** e quindi scegliere **Test**.
+        Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic** o **Visual C#** o **Visual C++** e quindi scegliere **Test**.
 
-         Selezionare **Progetto unit test**.
+        Selezionare **Progetto unit test**.
 
-    2.  Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]` .
+   2.  Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]` .
 
-2.  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+2. Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
-3.  Sulla barra dei menu scegliere **Test** > **Esegui unit test** > **Tutti i test**.
+3. Sulla barra dei menu scegliere **Test** > **Esegui unit test** > **Tutti i test**.
 
-     La soluzione verrà compilata e i test verranno eseguiti.
+    La soluzione verrà compilata e i test verranno eseguiti.
 
-     Esplora test aprirà e visualizzerà un riepilogo dei risultati.
+    Esplora test aprirà e visualizzerà un riepilogo dei risultati.
 
- **Per visualizzare un elenco completo dei test:** scegliere **Mostra tutto** in qualsiasi categoria.
+   **Per visualizzare un elenco completo dei test:** scegliere **Mostra tutto** in qualsiasi categoria.
 
- **Per visualizzare i dettagli dei risultati di un test:** selezionare il test in Esplora test per visualizzare dettagli quali messaggi di eccezione nell'apposito riquadro.
+   **Per visualizzare i dettagli dei risultati di un test:** selezionare il test in Esplora test per visualizzare dettagli quali messaggi di eccezione nell'apposito riquadro.
 
- **Per spostarsi all'interno del codice di un test:** fare doppio clic sul test in Esplora test o scegliere **Apri test** nel menu di scelta rapida.
+   **Per spostarsi all'interno del codice di un test:** fare doppio clic sul test in Esplora test o scegliere **Apri test** nel menu di scelta rapida.
 
- **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test, quindi scegliere **Debug test selezionati**.
+   **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test, quindi scegliere **Debug test selezionati**.
 
 > [!IMPORTANT]
 > I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.
@@ -74,61 +74,61 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 ### <a name="create-the-test-and-method"></a>Creare il test e il metodo
 
-1.  Creare un progetto di libreria di classi di Visual C#. Questo progetto conterrà il codice da produrre. In questo esempio è denominata `MyMath`.
+1. Creare un progetto di libreria di classi di Visual C#. Questo progetto conterrà il codice da produrre. In questo esempio è denominata `MyMath`.
 
-2.  Creare un progetto di test.
+2. Creare un progetto di test.
 
-    -   Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#** > **Test** e quindi scegliere **Progetto unit test**.
+   -   Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#** > **Test** e quindi scegliere **Progetto unit test**.
 
-         ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png)
+        ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png)
 
-3.  Scrivere un metodo di test di base. Verificare il risultato ottenuto con un input specifico:
+3. Scrivere un metodo di test di base. Verificare il risultato ottenuto con un input specifico:
 
-    ```csharp
+   ```csharp
 
-    [TestMethod]
-    public void BasicRooterTest()
-    {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Define a test input and output value:
-      double expectedResult = 2.0;
-      double input = expectedResult * expectedResult;
-      // Run the method under test:
-      double actualResult = rooter.SquareRoot(input);
-      // Verify the result:
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 100);
-    }
-    ```
+   [TestMethod]
+   public void BasicRooterTest()
+   {
+     // Create an instance to test:
+     Rooter rooter = new Rooter();
+     // Define a test input and output value:
+     double expectedResult = 2.0;
+     double input = expectedResult * expectedResult;
+     // Run the method under test:
+     double actualResult = rooter.SquareRoot(input);
+     // Verify the result:
+     Assert.AreEqual(expectedResult, actualResult,
+         delta: expectedResult / 100);
+   }
+   ```
 
-4.  Generare il metodo dal test.
+4. Generare il metodo dal test.
 
-    1.  Posizionare il cursore su `Rooter` e dal menu di scelta rapida scegliere **Genera** > **Nuovo tipo**.
+   1.  Posizionare il cursore su `Rooter` e dal menu di scelta rapida scegliere **Genera** > **Nuovo tipo**.
 
-    2.  Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.
+   2.  Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.
 
-    3.  Posizionare il cursore su `SquareRoot` e dal menu di scelta rapida scegliere **Genera** > **Stub metodo**.
+   3.  Posizionare il cursore su `SquareRoot` e dal menu di scelta rapida scegliere **Genera** > **Stub metodo**.
 
-5.  Eseguire lo unit test.
+5. Eseguire lo unit test.
 
-    1.  Dal menu **Test** scegliere **Esegui unit test** > **Tutti i test**.
+   1.  Dal menu **Test** scegliere **Esegui unit test** > **Tutti i test**.
 
-         La soluzione verrà compilata ed eseguita.
+        La soluzione verrà compilata ed eseguita.
 
-         Esplora test aprirà e visualizzerà i risultati.
+        Esplora test aprirà e visualizzerà i risultati.
 
-         Il test viene inserito in **Test non superati**.
+        Il test viene inserito in **Test non superati**.
 
-6.  Selezionare il nome del test.
+6. Selezionare il nome del test.
 
-     I dettagli del test vengono visualizzati nella parte inferiore di Esplora test.
+    I dettagli del test vengono visualizzati nella parte inferiore di Esplora test.
 
-7.  Selezionare gli elementi in **Traccia dello Stack** per visualizzare dove i test hanno avuto esito negativo.
+7. Selezionare gli elementi in **Traccia dello Stack** per visualizzare dove i test hanno avuto esito negativo.
 
- ![Esplora unit test con test non superato.](../test/media/unittestexplorerwalkthrough2.png)
+   ![Esplora unit test con test non superato.](../test/media/unittestexplorerwalkthrough2.png)
 
- A questo punto, si è creato un test e uno stub che verrà modificato in modo che il test possa essere superato.
+   A questo punto, si è creato un test e uno stub che verrà modificato in modo che il test possa essere superato.
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Dopo ogni modifica, tutti i test hanno esito positivo
 

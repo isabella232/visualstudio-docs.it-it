@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861917"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
@@ -29,118 +29,118 @@ ms.locfileid: "39380756"
 > [!TIP]
 > È inoltre possibile creare manualmente report di Microsoft Word copiando e incollando dati dalle visualizzazioni Riepilogo, Grafici e Tabelle. Vedere [Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
- Ciascun report può essere usato per condividere dati relativi alle prestazioni con gli stakeholder e mostrare se le prestazioni complessive e l'integrità del sistema stanno migliorando o peggiorando.
+Ciascun report può essere usato per condividere dati relativi alle prestazioni con gli stakeholder e mostrare se le prestazioni complessive e l'integrità del sistema stanno migliorando o peggiorando.
 
- Le definizioni del report vengono archiviate nel database del test di carico. Quando viene salvato un report, la definizione per il report viene salvata nel database e può essere utilizzata nuovamente in un secondo momento.
+Le definizioni del report vengono archiviate nel database del test di carico. Quando viene salvato un report, la definizione per il report viene salvata nel database e può essere utilizzata nuovamente in un secondo momento.
 
- Inoltre, la cartella di lavoro di Excel può essere condivisa con gli stakeholder in modo che questi non debbano connettersi al database per vedere il report.
+Inoltre, la cartella di lavoro di Excel può essere condivisa con gli stakeholder in modo che questi non debbano connettersi al database per vedere il report.
 
 > [!NOTE]
 > È possibile condividere la cartella di lavoro di Excel; tuttavia, solo gli utenti con computer in cui è installato Visual Studio saranno in grado di modificare i fogli di calcolo. Gli altri utenti non vedranno l'opzione **Rapporto test di carico** nella barra multifunzione di **Office**, ma saranno in grado di visualizzare la cartella di lavoro.
 
- Nella figura seguente è illustrato un esempio di report in cui viene mostrata una correlazione tra una riduzione della velocità della transazione di aggiornamento del carrello e l'alterazione del contatore di percentuale processore. Ciò indica un potenziale problema nel codice dell'applicazione, anziché nel database o nella rete, ed è una situazione adatta alla diagnosi tramite il profiler ASP.NET.
+Nella figura seguente è illustrato un esempio di report in cui viene mostrata una correlazione tra una riduzione della velocità della transazione di aggiornamento del carrello e l'alterazione del contatore di percentuale processore. Ciò indica un potenziale problema nel codice dell'applicazione, anziché nel database o nella rete, ed è una situazione adatta alla diagnosi tramite il profiler ASP.NET.
 
- ![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png)
+![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png)
 
- È possibile generare report di Excel nell'**Analizzatore test di carico** usando il pulsante **Crea rapporto Excel** nella barra degli strumenti oppure da Excel usando l'opzione **Rapporto test di carico** nella scheda **Test di carico** della barra multifunzione di **Office**.
+È possibile generare report di Excel nell'**Analizzatore test di carico** usando il pulsante **Crea rapporto Excel** nella barra degli strumenti oppure da Excel usando l'opzione **Rapporto test di carico** nella scheda **Test di carico** della barra multifunzione di **Office**.
 
 > [!NOTE]
 > Se si aggiungono commenti a un test di carico, verranno visualizzati nel report di Excel. Per altre informazioni, vedere [Procedura: Aggiungere commenti mentre si analizza un test di carico completato](../test/how-to-add-comments-on-a-completed-load-test.md).
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Per generare report di confronto di test di carico con Excel
 
-1.  Prima di generare un report, è necessario eseguire un test di carico.
+1. Prima di generare un report, è necessario eseguire un test di carico.
 
-2.  È possibile creare report del test di carico di Excel in due modi:
+2. È possibile creare report del test di carico di Excel in due modi:
 
-    1.  Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
+   - Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
 
-        > [!NOTE]
-        > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del **Visualizzatore risultati test prestazioni Web**, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
+      > [!NOTE]
+      > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del **Visualizzatore risultati test prestazioni Web**, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
 
-     Viene aperto Microsoft Excel con la procedura guidata **Genera un rapporto test di carico**.
+      Viene aperto Microsoft Excel con la procedura guidata **Genera un rapporto test di carico**.
 
-     oppure
+   **OPPURE**
 
-    1.  Aprire Microsoft Excel, selezionare la scheda **Test di carico** nella barra multifunzione di **Office**, quindi scegliere **Rapporto test di carico**.
+   1. Aprire Microsoft Excel, selezionare la scheda **Test di carico** nella barra multifunzione di **Office**, quindi scegliere **Rapporto test di carico**.
 
-         Viene visualizzata la procedura guidata **Genera un rapporto test di carico**.
+       Viene visualizzata la procedura guidata **Genera un rapporto test di carico**.
 
-    2.  Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
+   2. Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
 
-    3.  Nell'elenco a discesa **Databasename** selezionare il database contenente i risultati del test di carico.
+   3. Nell'elenco a discesa **Databasename** selezionare il database contenente i risultati del test di carico.
 
-3.  Nella pagina **Scegliere la modalità di generazione del rapporto** verificare che l'opzione **Crea rapporto** sia selezionata e scegliere **Avanti**.
+3. Nella pagina **Scegliere la modalità di generazione del rapporto** verificare che l'opzione **Crea rapporto** sia selezionata e scegliere **Avanti**.
 
-4.  Nella pagina **Tipo di report da generare** verificare che l'opzione **Esegui confronto** sia selezionata e scegliere **Avanti**.
+4. Nella pagina **Tipo di report da generare** verificare che l'opzione **Esegui confronto** sia selezionata e scegliere **Avanti**.
 
-5.  Nella pagina **Immettere i dettagli del rapporto test di carico** digitare un nome per il report in **Nome rapporto**.
+5. Nella pagina **Immettere i dettagli del rapporto test di carico** digitare un nome per il report in **Nome rapporto**.
 
-6.  Selezionare il test di carico per il quale generare il report e scegliere **Avanti**.
+6. Selezionare il test di carico per il quale generare il report e scegliere **Avanti**.
 
-7.  Nella pagina **Selezionare le esecuzioni per il rapporto**, in **Selezionare una o più esecuzioni da aggiungere al rapporto** selezionare due risultati del test di carico da confrontare nel report e scegliere **Avanti**.
+7. Nella pagina **Selezionare le esecuzioni per il rapporto**, in **Selezionare una o più esecuzioni da aggiungere al rapporto** selezionare due risultati del test di carico da confrontare nel report e scegliere **Avanti**.
 
-    > [!NOTE]
-    > È possibile generare un report di confronto solo per due risultati del test di carico. Se si selezionano un solo risultato o più di due risultati del test di carico, verrà visualizzato un messaggio di avviso.
+   > [!NOTE]
+   > È possibile generare un report di confronto solo per due risultati del test di carico. Se si selezionano un solo risultato o più di due risultati del test di carico, verrà visualizzato un messaggio di avviso.
 
-8.  Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto**, è disponibile un elenco espandibile di contatori per personalizzare il report. Selezionare i contatori che si vuole confrontare dalle due esecuzioni di test selezionate nel report e scegliere **Fine**.
+8. Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto**, è disponibile un elenco espandibile di contatori per personalizzare il report. Selezionare i contatori che si vuole confrontare dalle due esecuzioni di test selezionate nel report e scegliere **Fine**.
 
 9. Viene generato il report della cartella di lavoro di Excel che include i seguenti fogli di lavoro:
 
-    -   **Sommario**: visualizza il nome del report del test di carico e un sommario con collegamenti alle varie schede nel report.
+   - **Sommario**: visualizza il nome del report del test di carico e un sommario con collegamenti alle varie schede nel report.
 
-    -   **Esecuzioni**: visualizza i dettagli sulle due esecuzioni confrontate nel report.
+   - **Esecuzioni**: visualizza i dettagli sulle due esecuzioni confrontate nel report.
 
-    -   **Confronto test**: visualizza i dettagli del grafico a barre sulle regressioni e i miglioramenti delle prestazioni tra le due esecuzioni confrontate.
+   - **Confronto test**: visualizza i dettagli del grafico a barre sulle regressioni e i miglioramenti delle prestazioni tra le due esecuzioni confrontate.
 
-    -   **Confronto pagine**: visualizza dati di confronto delle prestazioni in percentuale e in un grafico a barre tra le due esecuzioni relativamente alle varie pagine nelle esecuzioni di test.
+   - **Confronto pagine**: visualizza dati di confronto delle prestazioni in percentuale e in un grafico a barre tra le due esecuzioni relativamente alle varie pagine nelle esecuzioni di test.
 
-    -   **Confronto computer**: visualizza i dati di confronto tra le due esecuzioni basate sui computer utilizzati.
+   - **Confronto computer**: visualizza i dati di confronto tra le due esecuzioni basate sui computer utilizzati.
 
-    -   **Confronto errore**: confronta i tipi di errore incontrati tra le due esecuzioni e il numero di occorrenze.
+   - **Confronto errore**: confronta i tipi di errore incontrati tra le due esecuzioni e il numero di occorrenze.
 
-    > [!TIP]
-    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
+     > [!TIP]
+     > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Per generare report sulla tendenza del test di carico con Excel
 
-1.  Prima di generare un report, è necessario eseguire un test di carico.
+1. Prima di generare un report, è necessario eseguire un test di carico.
 
-2.  È possibile creare report del test di carico di Excel in due modi:
+2. È possibile creare report del test di carico di Excel in due modi:
 
-    1.  Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
+   - Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
 
-        > [!NOTE]
-        > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del **Visualizzatore risultati test prestazioni Web**, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
+      > [!NOTE]
+      > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del **Visualizzatore risultati test prestazioni Web**, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
 
-     Viene aperto Microsoft Excel con la procedura guidata **Genera un rapporto test di carico**.
+      Viene aperto Microsoft Excel con la procedura guidata **Genera un rapporto test di carico**.
 
-     oppure
+   **OPPURE**
 
-    1.  Aprire Microsoft Excel, selezionare la scheda **Test di carico** nella barra multifunzione di **Office**, quindi scegliere **Rapporto test di carico**.
+   1. Aprire Microsoft Excel, selezionare la scheda **Test di carico** nella barra multifunzione di **Office**, quindi scegliere **Rapporto test di carico**.
 
-         Viene visualizzata la procedura guidata **Genera un rapporto test di carico**.
+       Viene visualizzata la procedura guidata **Genera un rapporto test di carico**.
 
-    2.  Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
+   2. Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
 
-    3.  Nell'elenco a discesa **Databasename** selezionare il database contenente i risultati del test di carico.
+   3. Nell'elenco a discesa **Databasename** selezionare il database contenente i risultati del test di carico.
 
-3.  Nella pagina **Scegliere la modalità di generazione del rapporto** verificare che l'opzione **Crea rapporto** sia selezionata e scegliere **Avanti**.
+3. Nella pagina **Scegliere la modalità di generazione del rapporto** verificare che l'opzione **Crea rapporto** sia selezionata e scegliere **Avanti**.
 
-4.  Nella pagina **Tipo di report da generare** verificare che l'opzione **Tendenza** sia selezionata e scegliere **Avanti**.
+4. Nella pagina **Tipo di report da generare** verificare che l'opzione **Tendenza** sia selezionata e scegliere **Avanti**.
 
-5.  Nella pagina **Immettere i dettagli del rapporto test di carico** digitare un nome per il report in **Nome rapporto**.
+5. Nella pagina **Immettere i dettagli del rapporto test di carico** digitare un nome per il report in **Nome rapporto**.
 
-6.  Selezionare il test di carico per il quale generare il report e scegliere **Avanti**.
+6. Selezionare il test di carico per il quale generare il report e scegliere **Avanti**.
 
-7.  Nella pagina **Selezionare le esecuzioni per il rapporto**, in **Selezionare una o più esecuzioni da aggiungere al rapporto** selezionare i risultati del test di carico da confrontare nel report e scegliere **Avanti**.
+7. Nella pagina **Selezionare le esecuzioni per il rapporto**, in **Selezionare una o più esecuzioni da aggiungere al rapporto** selezionare i risultati del test di carico da confrontare nel report e scegliere **Avanti**.
 
-8.  Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto**, è disponibile un elenco espandibile di contatori per personalizzare il report. Dalle esecuzioni dei test selezionate nel report, selezionare i contatori da confrontare per l'analisi delle tendenze e scegliere **Fine**.
+8. Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto**, è disponibile un elenco espandibile di contatori per personalizzare il report. Dalle esecuzioni dei test selezionate nel report, selezionare i contatori da confrontare per l'analisi delle tendenze e scegliere **Fine**.
 
-10. Il report viene generato con un sommario contenente collegamenti alle varie schede della cartella di lavoro di Excel generate nel report. I collegamenti sono basati sui contatori selezionati per il report della tendenza. Ad esempio, se sono stati lasciati i contatori predefiniti selezionati nel passaggio 7, il report genererà dati presentati in schede separate in Excel per ogni contatore elencato nel passaggio 7. I dati generati per ogni contatore vengono presentati in grafici dello stile tendenza.
+9. Il report viene generato con un sommario contenente collegamenti alle varie schede della cartella di lavoro di Excel generate nel report. I collegamenti sono basati sui contatori selezionati per il report della tendenza. Ad esempio, se sono stati lasciati i contatori predefiniti selezionati nel passaggio 7, il report genererà dati presentati in schede separate in Excel per ogni contatore elencato nel passaggio 7. I dati generati per ogni contatore vengono presentati in grafici dello stile tendenza.
 
-    > [!TIP]
-    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
+   > [!TIP]
+   > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)
 

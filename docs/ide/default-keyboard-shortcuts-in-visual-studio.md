@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854481"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -47,20 +47,20 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_analyze"></a> Analizza
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Analyze.NavigateBackward|**MAIUSC+ALT+3**|
 |Analyze.NavigateForward|**MAIUSC+ALT+4**|
 
 ###  <a name="bkmk_architecture"></a> Architettura
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Architecture.NewDiagram|**CTRL+\\, CTRL+N**|
 
 ###  <a name="bkmk_build"></a> Compila
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Build.BuildSolution|**CTRL+MAIUSC+B**|
 |Build.Cancel|**CTRL+INTERR**|
 |Build.Compile|**CTRL+F7**|
@@ -69,13 +69,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_classview"></a> Menu di scelta rapida Visualizzazione classi
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+INVIO**|
 
 ###  <a name="bkmk_debug"></a> Debug
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Debug.ApplyCodeChanges|**ALT+F10**|
 |Debug.Autos|**CTRL+ALT+V, A**|
 |Debug.BreakAll|**CTRL+ALT+INTERR**|
@@ -143,7 +143,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_debugger"></a> Debugger - Menu di scelta rapida
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |DebuggerContextMenus.BreakpointsWindow.Delete|**ALT+F9, D**|
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
@@ -151,7 +151,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_diagnostics"></a> Hub diagnostica
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |DiagnosticsHub.StopCollection|**CTRL+ALT+F2**|
 
 ###  <a name="bkmk_edit"></a> Modifica
@@ -216,25 +216,25 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_editorContext"></a> Menu di scelta rapida Editor
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**ALT+F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL+`**|
 |EditorContextMenus.CodeWindow.Execute|**CTRL+ALT+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**CTRL+M, CTRL+G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (lettera "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+K, S**|
 
 ###  <a name="bkmk_file"></a> File
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |File.Exit|**ALT + F4**|
 |File.NewFile|**CTRL+N**|
 |File.NewProject|**CTRL+MAIUSC+N**|
 |File.NewWebSite|**MAIUSC+ALT+N**|
-|File.OpenFile|**CTRL+O**|
-|File.OpenProject|**CTRL+MAIUSC+O**|
-|File.OpenWebSite|**MAIUSC+ALT+O**|
+|File.OpenFile|**CTRL+O** (lettera "O")|
+|File.OpenProject|**CTRL+MAIUSC+O** (lettera "O")|
+|File.OpenWebSite|**MAIUSC+ALT+O** (lettera "O")|
 |File.Print|**CTRL+P**|
 |File.SaveAll|**CTRL+MAIUSC+S**|
 |File.SaveSelectedItems|**CTRL+S**|
@@ -243,7 +243,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_help"></a> Guida
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Help.AddandRemoveHelpContent|**CTRL+ALT+F1**|
 |Help.F1Help|**F1**|
 |Help.ViewHelp|**CTRL+F1**|
@@ -252,88 +252,88 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_loadtest"></a> Test di carico
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |LoadTest.JumpToCounterPane|**CTRL+R, Q**|
 
 ###  <a name="bkmk_otherContext"></a> Altri menu di scelta rapida
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserisci**|
 
 ###  <a name="bkmk_project"></a> Progetto
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Project.AddExistingItem|**MAIUSC+ALT+A**|
 |Project.AddNewItem|**CTRL+MAIUSC+A**|
 |Project.ClassWizard|**CTRL+ MAIUSC+X**|
 |Project.Override|**CTRL+ALT+INS**|
-|Project.Previewchanges|**ALT+;, ALT+C**|
-|Project.Publishselectedfiles|**ALT+;, ALT+P**|
-|Project.Replaceselectedfilesfromserver|**ALT+;, ALT+R**|
+|Project.Previewchanges|**ALT+;** quindi **ALT+C**|
+|Project.Publishselectedfiles|**ALT+;** quindi **ALT+P**|
+|Project.Replaceselectedfilesfromserver|**ALT+;** quindi **ALT+R**|
 
 ###  <a name="bkmk_projectContext"></a> Menu di scelta rapida progetti e soluzioni
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+Freccia GIÙ**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+Freccia SU**|
 
 ###  <a name="bkmk_refactor"></a> Refactoring
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Refactor.EncapsulateField|**CTRL+R, CTRL+E**|
 |Refactor.ExtractInterface|**CTRL+R, CTRL+I**|
 |Refactor.ExtractMethod|**CTRL+R, CTRL+M**|
 |Refactor.RemoveParameters|**CTRL+R, CTRL+V**|
 |Refactor.Rename|**CTRL+R, CTRL+R**|
-|Refactor.ReorderParameters|**CTRL+R, CTRL+O**|
+|Refactor.ReorderParameters|**CTRL+R, CTRL+O** (lettera "O")|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Esplora soluzioni
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**CTRL+[, O**<br /><br /> oppure<br /><br /> **CTRL+[, CTRL+O**|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[, P**<br /><br /> oppure<br /><br /> **CTRL+[, CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[, S**<br /><br /> oppure<br /><br /> **CTRL+[, CTRL+S**|
+|--------------| - |
+|SolutionExplorer.OpenFilesFilter|**CTRL+[**, **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+O** (lettera "O")|
+|SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**|
 
 ###  <a name="bkmk_team"></a> Team
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
-|Team.Git.GoToGitBranches|**CTRL+0, CTRL+N**<br /><br /> oppure<br /><br /> **CTRL+0, N**|
-|Team.Git.GoToGitChanges|**CTRL+0, CTRL+G**<br /><br /> oppure<br /><br /> **CTRL+0, G**|
-|Team.Git.GoToGitCommits|**CTRL+0, CTRL+O**<br /><br /> oppure<br /><br /> **CTRL+0, O**|
+|--------------| - |
+|Team.Git.GoToGitBranches|**CTRL+0** (zero), **CTRL+N**<br /><br /> oppure<br /><br /> **CTRL+0, N**|
+|Team.Git.GoToGitChanges|**CTRL+0** (zero), **CTRL+G**<br /><br /> oppure<br /><br /> **CTRL+0, G**|
+|Team.Git.GoToGitCommits|**CTRL+0**, **CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+0, O**|
 |Team.TeamExplorerSearch|**CTRL+'**|
 
 ###  <a name="bkmk_TFcontext"></a> Menu di scelta rapida Team Foundation
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL+0, CTRL+B**<br /><br /> oppure<br /><br /> **CTRL+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL+0, CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL+0, CTRL+D**<br /><br /> oppure<br /><br /> **CTRL+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**CTRL+0, CTRL+H**<br /><br /> oppure<br /><br /> **CTRL+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL+0, CTRL+M**<br /><br /> oppure<br /><br /> **CTRL+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL+0, CTRL+P**<br /><br /> oppure<br /><br /> **CTRL+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**CTRL+0, CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL+0, CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0, CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0, CTRL+W**<br /><br /> oppure<br /><br /> **CTRL+0, W**|
+|--------------| - |
+|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL+0** (zero), **CTRL+B**<br /><br /> oppure<br /><br /> **CTRL+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL+0** (zero), **CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL+0** (zero), **CTRL+D**<br /><br /> oppure<br /><br /> **CTRL+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**CTRL+0** (zero), **CTRL+H**<br /><br /> oppure<br /><br /> **CTRL+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL+0** (zero), **CTRL+M**<br /><br /> oppure<br /><br /> **CTRL+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL+0** (zero), **CTRL+P**<br /><br /> oppure<br /><br /> **CTRL+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**CTRL+0** (zero), **CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL+0** (zero), **CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (zero), **CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (zero), **CTRL+W**<br /><br /> oppure<br /><br /> **CTRL+0, W**|
 
 ###  <a name="bkmk_test"></a> Test
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Test.UseCodedUITestBuilder|**CTRL+\\, CTRL+C**|
 |Test.UseExistingActionRecording|**CTRL+\\, CTRL+A**|
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> Esplora test
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |TestExplorer.DebugAllTests|**CTRL+R, CTRL+A**|
 |TestExplorer.DebugAllTestsInContext|**CTRL+R, CTRL+T**|
 |TestExplorer.RepeatLastRun|**CTRL+R, L**|
@@ -343,7 +343,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_tools"></a> Strumenti
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Tools.AttachtoProcess|**CTRL+ALT+P**|
 |Tools.CodeSnippetsManager|**CTRL+K, CTRL+B**|
 |Tools.ForceGC|**CTRL+MAIUSC+ALT+F12, CTRL+MAIUSC+ALT+F12**|
@@ -352,7 +352,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_view"></a> Visualizza
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |View.AllWindows|**MAIUSC+ALT+M**|
 |View.ArchitectureExplorer|**CTRL+\\, CTRL+R**|
 |View.Backward|**ALT+Freccia SINISTRA**|
@@ -379,7 +379,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.Notifications|**CTRL+W, N**<br /><br /> oppure<br /><br /> **CTRL+W, CTRL+N**|
 |View.ObjectBrowser|**CTRL+ALT+J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL+K, CTRL+R**|
-|View.Output|**CTRL+ALT+O**|
+|View.Output|**CTRL+ALT+O** (lettera "O")|
 |View.PopBrowseContex|**CTRL+MAIUSC+8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**MAIUSC+F4**|
@@ -401,7 +401,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_window"></a> Finestra
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC**|
 |Window.AddTabtoSelection|**CTRL+MAIUSC+ALT+BARRA SPAZIATRICE**|
 |Window.CloseDocumentWindow|**CTRL+F4**|
@@ -432,14 +432,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ###  <a name="bkmk_windowsazure"></a> Azure
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**CTRL+NUM \*, CTRL+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL+NUM \*, CTRL+D**|
 
 ##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**ALT+Freccia GIÙ**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**ALT+PGGIÙ**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**ALT+FINE**|
@@ -454,7 +454,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="class-diagram"></a>Diagramma classi
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |ClassDiagram.Collapse|**NUM -**|
 |ClassDiagram.Expand|**NUM +**|
 |Edit.Delete|**CTRL+CANC**|
@@ -466,7 +466,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="coded-ui-test-editor"></a>Editor di test codificati dell'interfaccia utente
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**CTRL+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**CTRL+ALT+D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**MAIUSC+ALT+L**|
@@ -477,14 +477,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="dataset-editor"></a>Editor DataSet
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Inserisci**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL+L**|
 
 ##  <a name="difference-viewer"></a>Visualizzatore differenze
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Diff.IgnoreTrimWhitespace|**CTRL+\\, CTRL+BARRA SPAZIATRICE**|
 |Diff.InlineView|**CTRL+\\, CTRL+1**|
 |Diff.LeftOnlyView|**CTRL+\\, CTRL+3**|
@@ -500,7 +500,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="dom-explorer"></a>DOM Explorer
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |DOMExplorer.Refresh|**F5**|
 |DOMExplorer.SelectElement|**CTRL+B**|
 |DOMExplorer.ShowLayout|**CTRL+MAIUSC+I**|
@@ -508,13 +508,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="f-interactive"></a>F# Interactive
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL+INTERR**|
 
 ##  <a name="graph-document-editor"></a>Editor di documento grafico
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Inserisci**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
@@ -526,13 +526,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="graphics-diagnostics"></a>Diagnostica della grafica
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Debug.Graphics.CaptureFrame|nessuno|
 |Graphics.MovePixelSelectionDown|**MAIUSC+ALT+Freccia GIÙ**|
 |Graphics.MovePixelSelectionLeft|**MAIUSC+ALT+Freccia SINISTRA**|
 |Graphics.MovePixelSelectionRight|**MAIUSC+ALT+Freccia DESTRA**|
 |Graphics.MovePixelSelectionUp|**MAIUSC+ALT+Freccia SU**|
-|Graphics.ZoomToActualSize|**MAIUSC+ALT+0**|
+|Graphics.ZoomToActualSize|**MAIUSC+ALT+0** (zero)|
 |Graphics.ZoomToFitInWindow|**MAIUSC+ALT+9**|
 |Graphics.ZoomIn|**MAIUSC+ALT+=**|
 |Graphics.ZoomOut|**MAIUSC+ALT+-**|
@@ -540,13 +540,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="html-editor"></a>Editor HTML
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
 
 ##  <a name="html-editor-design-view"></a>Visualizzazione Progettazione editor HTML
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**CTRL+Freccia GIÙ**|
 |Edit.MoveControlUp|**CTRL+Freccia SU**|
 |Format.Bold|**CTRL+B**|
@@ -569,7 +569,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="html-editor-source-view"></a>Visualizzazione origine editor HTML
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
 |View.NextView|**CTRL+PGGIÙ**|
 |View.SynchronizeViews|**CTRL+MAIUSC+Y**|
@@ -579,13 +579,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="layer-diagram"></a>Diagramma livello
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**MAIUSC+CANC**|
 
 ##  <a name="managed-resources-editor"></a>Editor risorse gestite
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Eliminazione**|
 |Edit.RemoveRow|**CTRL+CANC**|
@@ -600,7 +600,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="merge-editor-window"></a>Finestra editor merge
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**ALT+1**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
@@ -608,7 +608,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, confronto schema
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |SQL.SSDTSchemaCompareCompare|**MAIUSC+ALT+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**MAIUSC+ALT+G**|
 |SQL.SSDTSchemaCompareNextChange|**MAIUSC+ALT+.**|
@@ -619,7 +619,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, progettazione tabelle
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**MAIUSC+ALT+U**|
 |SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+E**|
 |SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+Q**|
@@ -630,7 +630,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**MAIUSC+ALT+U**|
 |SQL.ExecuteWithDebugger|**ALT+F5**|
 |SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+E**|
@@ -651,7 +651,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL PDW
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |SQL.TSqlEditorCancelQuery|**ALT+INTERR**|
 |SQL.TSqlEditorExecuteQuery|**CTRL+MAIUSC+E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL+D, F**|
@@ -666,13 +666,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="page-inspector"></a>Controllo pagina
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |PageInspector.Minimize|**F12**|
 
 ##  <a name="query-designer"></a>Progettazione query
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**CTRL+2**|
 |QueryDesigner.Diagram|**CTRL+1**|
@@ -685,7 +685,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="query-results"></a>Risultati delle query
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |SQL.QueryResultsNewRow|**ALT+FINE**|
 |SQL.QueryResultsRefresh|**MAIUSC+ALT+R**|
 |SQL.QueryResultsStop|**ALT+INTERR**|
@@ -693,7 +693,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="report-designer"></a>Progettazione report
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**INVIO**|
 |Edit.CharLeft|**Freccia sinistra**|
 |Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
@@ -719,14 +719,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="sequence-diagram"></a>Diagramma sequenza
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**MAIUSC+CANC**|
 
 ##  <a name="settings-designer"></a>Progettazione impostazioni
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.RemoveRow|**CTRL+CANC**|
 |Edit.SelectionCancel|**ESC**|
@@ -735,18 +735,18 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="solution-explorer"></a>Esplora soluzioni
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL+K, CTRL+G**|
 
 ##  <a name="team-explorer"></a>Team Explorer
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Eliminazione**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**ALT+HOME**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+Freccia GIÙ**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT+0** (zero)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**ALT+Freccia SU**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**ALT+1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**ALT+2**|
@@ -766,154 +766,154 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="test-explorer"></a>Esplora test
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
 ##  <a name="text-editor"></a>Editor di testo
 
-|Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
-|Edit.BreakLine|**INVIO**<br /><br /> oppure<br /><br /> **MAIUSC+INVIO**|
-|Edit.CharLeft|**Freccia sinistra**|
-|Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
-|Edit.CharLeftExtendColumn|**MAIUSC+ALT+Freccia SINISTRA**|
-|Edit.CharRight|**Freccia destra**|
-|Edit.CharRightExtend|**MAIUSC+Freccia DESTRA**|
-|Edit.CharRightExtendColumn|**MAIUSC+ALT+Freccia DESTRA**|
-|Edit.CharTranspose|**Ctrl+T**|
-|Edit.ClearBookmarks|**CTRL+K, CTRL+L**|
-|Edit.CollapseAllOutlining|**CTRL+M, CTRL+A**|
-|Edit.CollapseCurrentRegion|**CTRL+M, CTRL+S**|
-|Edit.CollapseTag|**CTRL+M, CTRL+T**|
-|Edit.CollapseToDefinitions|**CTRL+M, CTRL+O**|
-|Edit.CommentSelection|**CTRL+K, CTRL+C**|
-|Edit.CompleteWord|**CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA**|
-|Edit.CopyParameterTip|**CTRL+MAIUSC+ALT+C**|
-|Edit.DecreaseFilterLevel|**ALT+,**|
-|Edit.DeleteBackwards|**Backspace**<br /><br /> oppure<br /><br /> **MAIUSC+BACKSPACE**|
-|Edit.DeleteHorizontalWhiteSpace|**CTRL+K, CTRL+\**|
-|Edit.DocumentEnd|**CTRL+FINE**|
-|Edit.DocumentEndExtend|**CTRL+MAIUSC+FINE**|
-|Edit.DocumentStart|**CTRL+HOME**|
-|Edit.DocumentStartExtend|**CTRL+MAIUSC+HOME**|
-|Edit.ExpandAllOutlining|**CTRL+M, CTRL+X**|
-|Edit.ExpandCurrentRegion|**CTRL+M, CTRL+E**|
-|Edit.FormatDocument|**CTRL+K, CTRL+D**|
-|Edit.FormatSelection|**CTRL+K, CTRL+F**|
-|Edit.GotoBrace|**CTRL+]**|
-|Edit.GotoBraceExtend|**CTRL+MAIUSC+]**|
-|Edit.HideSelection|**CTRL+M, CTRL+H**|
-|Edit.IncreaseFilterLevel|**ALT+.**|
-|Edit.IncrementalSearch|**CTRL+I**|
-|Edit.InsertTab|**TAB**|
-|Edit.LineCut|**CTRL+L**|
-|Edit.LineDelete|**CTRL+MAIUSC+L**|
-|Edit.LineDown|**Freccia GIÙ**|
-|Edit.LineDownExtend|**MAIUSC+Freccia GIÙ**|
-|Edit.LineDownExtendColumn|**MAIUSC+ALT+Freccia GIÙ**|
-|Edit.LineEnd|**FINE**|
-|Edit.LineEndExtend|**MAIUSC+FINE**|
-|Edit.LineEndExtendColumn|**MAIUSC+ALT+FINE**|
-|Edit.LineOpenAbove|**CTRL+INVIO**|
-|Edit.LineOpenBelow|**CTRL+MAIUSC+INVIO**|
-|Edit.LineStart|**Home**|
-|Edit.LineStartExtend|**MAIUSC+HOME**|
-|Edit.LineStartExtendColumn|**MAIUSC+ALT+HOME**|
-|Edit.LineTranspose|**MAIUSC+ALT+T**|
-|Edit.LineUp|**Freccia SU**|
-|Edit.LineUpExtend|**MAIUSC+Freccia SU**|
-|Edit.LineUpExtendColumn|**MAIUSC+ALT+Freccia SU**|
-|Edit.ListMembers|**CTRL+J**|
-|Edit.MakeLowercase|**CTRL+U**|
-|Edit.MakeUppercase|**CTRL+ MAIUSC+U**|
-|Edit.MoveSelectedLinesDown|**ALT+Freccia GIÙ**|
-|Edit.MoveSelectedLinesUp|**ALT+Freccia SU**|
-|Edit.NextHighlightedReference|**CTRL+MAIUSC+Freccia GIÙ**|
-|Edit.OvertypeMode|**Inserisci**|
-|Edit.PageDown|**PGGIÙ**|
-|Edit.PageDownExtend|**MAIUSC+PGGIÙ**|
-|Edit.PageUp|**PGSU**|
-|Edit.PageUpExtend|**MAIUSC+PGSU**|
-|Edit.ParameterInfo|**CTRL+MAIUSC+BARRA SPAZIATRICE**|
-|Edit.PasteParameterTip|**CTRL+MAIUSC+ALT+P**|
-|Edit.PeekBackward|**CTRL+ALT+-**|
-|Edit.PeekDefinition|**ALT+F12**|
-|Edit.PeekForward|**CTRL+ALT+=**|
-|Edit.PreviousHighlightedReference|**CTRL+MAIUSC+Freccia SU**|
-|Edit.QuickInfo|**CTRL+K, CTRL+I**|
-|Edit.ReverseIncrementalSearch|**CTRL+MAIUSC+I**|
-|Edit.ScrollLineDown|**CTRL+Freccia GIÙ**|
-|Edit.ScrollLineUp|**CTRL+Freccia SU**|
-|Edit.SelectCurrentWord|**CTRL+W**|
-|Edit.SelectionCancel|**ESC**|
-|Edit.SelectToLastGoBack|**CTRL+=**|
-|Edit.ShowCodeLensMenu|**ALT+`**|
-|Edit.StopHidingCurrent|**CTRL+M, CTRL+U**|
-|Edit.StopOutlining|**CTRL+M, CTRL+P**|
-|Edit.SwapAnchor|**CTRL+K, CTRL+A**|
-|Edit.TabLeft|**MAIUSC+TAB**|
-|Edit.ToggleAllOutlining|**CTRL+M, CTRL+L**|
-|Edit.ToggleBookmark|**CTRL+K, CTRL+K**|
-|Edit.ToggleCompletionMode|**CTRL+ALT+BARRA SPAZIATRICE**|
-|Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M**|
-|Edit.ToggleTaskListShortcut|**CTRL+K, CTRL+H**|
-|Edit.ToggleWordWrap|**CTRL+E, CTRL+W**|
-|Edit.UncommentSelection|**CTRL+K, CTRL+U**|
-|Edit.ViewBottom|**CTRL+PGGIÙ**|
-|Edit.ViewBottomExtend|**CTRL+MAIUSC+PGGIÙ**|
-|Edit.ViewTop|**CTRL+PGSU**|
-|Edit.ViewTopExtend|**CTRL+MAIUSC+PGSU**|
-|Edit.ViewWhiteSpace|**CTRL+R, CTRL+W**|
-|Edit.WordDeleteToEnd|**CTRL+CANC**|
-|Edit.WordDeleteToStart|**CTRL+BACKSPACE**|
-|Edit.WordNext|**CTRL+Freccia DESTRA**|
-|Edit.WordNextExtend|**CTRL+MAIUSC+Freccia DESTRA**|
-|Edit.WordNextExtendColumn|**CTRL+MAIUSC+ALT+Freccia DESTRA**|
-|Edit.WordPrevious|**CTRL+Freccia SINISTRA**|
-|Edit.WordPreviousExtend|**CTRL+MAIUSC+Freccia SINISTRA**|
-|Edit.WordPreviousExtendColumn|**CTRL+MAIUSC+ALT+Freccia SINISTRA**|
-|Edit.WordTranspose|**CTRL+MAIUSC+T**|
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|**ALT+INVIO**|
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**ALT+'**|
-|OtherContextMenus.HTMLContext.ViewinPageInspector|**CTRL+K, CTRL+G**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**ALT+PGGIÙ**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**ALT+PGSU**|
+| Comandi: | Scelte rapide da tastiera |
+| - | - |
+| Edit.BreakLine | **INVIO**<br /><br /> oppure<br /><br /> **MAIUSC+INVIO** |
+| Edit.CharLeft | **Freccia sinistra** |
+| Edit.CharLeftExtend | **MAIUSC+Freccia SINISTRA** |
+| Edit.CharLeftExtendColumn | **MAIUSC+ALT+Freccia SINISTRA** |
+| Edit.CharRight | **Freccia destra** |
+| Edit.CharRightExtend | **MAIUSC+Freccia DESTRA** |
+| Edit.CharRightExtendColumn | **MAIUSC+ALT+Freccia DESTRA** |
+| Edit.CharTranspose | **Ctrl+T** |
+| Edit.ClearBookmarks | **CTRL+K, CTRL+L** |
+| Edit.CollapseAllOutlining | **CTRL+M, CTRL+A** |
+| Edit.CollapseCurrentRegion | **CTRL+M, CTRL+S** |
+| Edit.CollapseTag | **CTRL+M, CTRL+T** |
+| Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (lettera "O") |
+| Edit.CommentSelection | **CTRL+K, CTRL+C** |
+| Edit.CompleteWord | **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA** |
+| Edit.CopyParameterTip | **CTRL+MAIUSC+ALT+C** |
+| Edit.DecreaseFilterLevel | **ALT+,** |
+| Edit.DeleteBackwards | **Backspace**<br /><br /> oppure<br /><br /> **MAIUSC+BACKSPACE** |
+| Edit.DeleteHorizontalWhiteSpace | **CTRL+K, CTRL+\\** |
+| Edit.DocumentEnd | **CTRL+FINE** |
+| Edit.DocumentEndExtend | **CTRL+MAIUSC+FINE** |
+| Edit.DocumentStart | **CTRL+HOME** |
+| Edit.DocumentStartExtend | **CTRL+MAIUSC+HOME** |
+| Edit.ExpandAllOutlining | **CTRL+M, CTRL+X** |
+| Edit.ExpandCurrentRegion | **CTRL+M, CTRL+E** |
+| Edit.FormatDocument | **CTRL+K, CTRL+D** |
+| Edit.FormatSelection | **CTRL+K, CTRL+F** |
+| Edit.GotoBrace | **CTRL+]** |
+| Edit.GotoBraceExtend | **CTRL+MAIUSC+]** |
+| Edit.HideSelection | **CTRL+M, CTRL+H** |
+| Edit.IncreaseFilterLevel | **ALT+.** |
+| Edit.IncrementalSearch | **CTRL+I** |
+| Edit.InsertTab | **TAB** |
+| Edit.LineCut | **CTRL+L** |
+| Edit.LineDelete | **CTRL+MAIUSC+L** |
+| Edit.LineDown | **Freccia GIÙ** |
+| Edit.LineDownExtend | **MAIUSC+Freccia GIÙ** |
+| Edit.LineDownExtendColumn | **MAIUSC+ALT+Freccia GIÙ** |
+| Edit.LineEnd | **FINE** |
+| Edit.LineEndExtend | **MAIUSC+FINE** |
+| Edit.LineEndExtendColumn | **MAIUSC+ALT+FINE** |
+| Edit.LineOpenAbove | **CTRL+INVIO** |
+| Edit.LineOpenBelow | **CTRL+MAIUSC+INVIO** |
+| Edit.LineStart | **Home** |
+| Edit.LineStartExtend | **MAIUSC+HOME** |
+| Edit.LineStartExtendColumn | **MAIUSC+ALT+HOME** |
+| Edit.LineTranspose | **MAIUSC+ALT+T** |
+| Edit.LineUp | **Freccia SU** |
+| Edit.LineUpExtend | **MAIUSC+Freccia SU** |
+| Edit.LineUpExtendColumn | **MAIUSC+ALT+Freccia SU** |
+| Edit.ListMembers | **CTRL+J** |
+| Edit.MakeLowercase | **CTRL+U** |
+| Edit.MakeUppercase | **CTRL+ MAIUSC+U** |
+| Edit.MoveSelectedLinesDown | **ALT+Freccia GIÙ** |
+| Edit.MoveSelectedLinesUp | **ALT+Freccia SU** |
+| Edit.NextHighlightedReference | **CTRL+MAIUSC+Freccia GIÙ** |
+| Edit.OvertypeMode | **Inserisci** |
+| Edit.PageDown | **PGGIÙ** |
+| Edit.PageDownExtend | **MAIUSC+PGGIÙ** |
+| Edit.PageUp | **PGSU** |
+| Edit.PageUpExtend | **MAIUSC+PGSU** |
+| Edit.ParameterInfo | **CTRL+MAIUSC+BARRA SPAZIATRICE** |
+| Edit.PasteParameterTip | **CTRL+MAIUSC+ALT+P** |
+| Edit.PeekBackward | **CTRL+ALT+-** |
+| Edit.PeekDefinition | **ALT+F12** |
+| Edit.PeekForward | **CTRL+ALT+=** |
+| Edit.PreviousHighlightedReference | **CTRL+MAIUSC+Freccia SU** |
+| Edit.QuickInfo | **CTRL+K, CTRL+I** |
+| Edit.ReverseIncrementalSearch | **CTRL+MAIUSC+I** |
+| Edit.ScrollLineDown | **CTRL+Freccia GIÙ** |
+| Edit.ScrollLineUp | **CTRL+Freccia SU** |
+| Edit.SelectCurrentWord | **CTRL+W** |
+| Edit.SelectionCancel | **ESC** |
+| Edit.SelectToLastGoBack | **CTRL+=** |
+| Edit.ShowCodeLensMenu | **ALT+\`** |
+| Edit.StopHidingCurrent | **CTRL+M, CTRL+U** |
+| Edit.StopOutlining | **CTRL+M, CTRL+P** |
+| Edit.SwapAnchor | **CTRL+K, CTRL+A** |
+| Edit.TabLeft | **MAIUSC+TAB** |
+| Edit.ToggleAllOutlining | **CTRL+M, CTRL+L** |
+| Edit.ToggleBookmark | **CTRL+K, CTRL+K** |
+| Edit.ToggleCompletionMode | **CTRL+ALT+BARRA SPAZIATRICE** |
+| Edit.ToggleOutliningExpansion | **CTRL+M, CTRL+M** |
+| Edit.ToggleTaskListShortcut | **CTRL+K, CTRL+H** |
+| Edit.ToggleWordWrap | **CTRL+E, CTRL+W** |
+| Edit.UncommentSelection | **CTRL+K, CTRL+U** |
+| Edit.ViewBottom | **CTRL+PGGIÙ** |
+| Edit.ViewBottomExtend | **CTRL+MAIUSC+PGGIÙ** |
+| Edit.ViewTop | **CTRL+PGSU** |
+| Edit.ViewTopExtend | **CTRL+MAIUSC+PGSU** |
+| Edit.ViewWhiteSpace | **CTRL+R, CTRL+W** |
+| Edit.WordDeleteToEnd | **CTRL+CANC** |
+| Edit.WordDeleteToStart | **CTRL+BACKSPACE** |
+| Edit.WordNext | **CTRL+Freccia DESTRA** |
+| Edit.WordNextExtend | **CTRL+MAIUSC+Freccia DESTRA** |
+| Edit.WordNextExtendColumn | **CTRL+MAIUSC+ALT+Freccia DESTRA** |
+| Edit.WordPrevious | **CTRL+Freccia SINISTRA** |
+| Edit.WordPreviousExtend | **CTRL+MAIUSC+Freccia SINISTRA** |
+| Edit.WordPreviousExtendColumn | **CTRL+MAIUSC+ALT+Freccia SINISTRA** |
+| Edit.WordTranspose | **CTRL+MAIUSC+T** |
+| EditorContextMenus.CodeWindow.ExecuteInInteractive | **ALT+INVIO** |
+| EditorContextMenus.CodeWindow.ExecuteLineInInteractive | **ALT+'** |
+| OtherContextMenus.HTMLContext.ViewinPageInspector | **CTRL+K, CTRL+G** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+PGGIÙ** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+PGSU** |
 
 ##  <a name="uml-activity-diagram"></a>Diagramma attività UML
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**MAIUSC+CANC**|
 
 ##  <a name="uml-class-diagram"></a>Diagramma classi UML
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
 ##  <a name="uml-component-diagram"></a>Diagramma dei componenti UML
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
 ##  <a name="uml-use-case-diagram"></a>Diagramma caso di utilizzo UML
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
 ##  <a name="vc-accelerator-editor"></a>Editor tasti di scelta rapida VC
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.NewAccelerator|**Inserisci**|
 |Edit.NextKeyTyped|**CTRL+W**|
 
 ##  <a name="vc-dialog-editor"></a>Editor finestre di VC
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**Freccia GIÙ**|
 |Edit.MoveControlLeft|**Freccia sinistra**|
 |Edit.MoveControlRight|**Freccia destra**|
@@ -947,7 +947,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="vc-image-editor"></a>Editor di immagini di VC
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Image.AirBrushTool|**CTRL+A**|
 |Image.BrushTool|**CTRL+B**|
 |Image.CopyandOutlineSelection|**CTRL+ MAIUSC+U**|
@@ -989,13 +989,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="vc-string-editor"></a>Editor stringhe di VC
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.NewString|**Inserisci**|
 
 ##  <a name="view-designer"></a>Progettazione visualizzazioni
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**CTRL+2**|
 |QueryDesigner.Diagram|**CTRL+1**|
@@ -1008,13 +1008,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="visual-studio"></a>Visual Studio
 
 |Comando|Tasto di scelta rapida|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL+1**|
 
 ##  <a name="windows-forms-designer"></a>Progettazione Windows Form
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**INVIO**|
 |Edit.CharLeft|**Freccia sinistra**|
 |Edit.CharLeftExtend|**MAIUSC+Freccia SINISTRA**|
@@ -1043,7 +1043,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="work-item-editor"></a>Editor Elemento di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
@@ -1051,7 +1051,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="work-item-query-view"></a>Visualizzazione query elemento di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
 |Edit.Indent|**MAIUSC+ALT+Freccia DESTRA**|
 |Edit.Outdent|**MAIUSC+ALT+Freccia SINISTRA**|
@@ -1062,7 +1062,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="work-item-results-view"></a>Visualizzazione risultati elementi di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**MAIUSC+ALT+C**|
 |Edit.Indent|**MAIUSC+ALT+Freccia DESTRA**|
 |Edit.Outdent|**MAIUSC+ALT+Freccia SINISTRA**|
@@ -1075,7 +1075,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="workflow-designer"></a>Progettazione flussi di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CompleteWord|**CTRL+K, W**<br /><br /> oppure<br /><br /> **CTRL+K, CTRL+W**<br /><br /> oppure<br /><br /> **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA**|
 |Edit.DecreaseFilterLevel|**ALT+,**|
 |Edit.IncreaseFilterLevel|**ALT+.**|
@@ -1094,7 +1094,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |WorkflowDesigner.Restore|**CTRL+E, CTRL+R**<br /><br /> oppure<br /><br /> **CTRL+E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**CTRL+E, CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**CTRL+E, CTRL+I**<br /><br /> oppure<br /><br /> **CTRL+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**CTRL+E, CTRL+O**<br /><br /> oppure<br /><br /> **CTRL+E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**CTRL+E, CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**CTRL+E, CTRL+V**<br /><br /> oppure<br /><br /> **CTRL+E, V**|
 |WorkflowDesigner.ToggleSelection|**CTRL+E, CTRL+S**<br /><br /> oppure<br /><br /> **CTRL+E, S**|
 |WorkflowDesigner.ZoomIn|**CTRL+NUM +**|
@@ -1103,8 +1103,8 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="xaml-ui-designer"></a>XAML Designer
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
-|Design.FitAll|**CTRL+0**|
+|--------------| - |
+|Design.FitAll|**CTRL+0** (zero)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**CTRL+ALT+=**|
 |Design.ZoomOut|**CTRL+ALT+-**|
@@ -1125,14 +1125,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 ##  <a name="xml-text-editor"></a>Editor di testo XML
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |XML.StartXSLTDebugging|**ALT+F5**|
 |XML.StartXSLTWithoutDebugging|**CTRL+ALT+F5**|
 
 ##  <a name="xml-schema-designer"></a>Progettazione XML Schema
 
 |Comandi:|Scelte rapide da tastiera|
-|--------------|------------------------|
+|--------------| - |
 |GraphView.BottomtoTop|**ALT+Freccia SU**|
 |GraphView.LefttoRight|**ALT+Freccia DESTRA**|
 |GraphView.RighttoLeft|**ALT+Freccia SINISTRA**|

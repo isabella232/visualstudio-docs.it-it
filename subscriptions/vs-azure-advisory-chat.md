@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio di Azure Advisory Chat incluso nelle sot
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896003"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -38,14 +38,15 @@ L'uso di Azure Advisory Chat è semplice.
 
 ## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail   | Un anno      |  Yes          |
-| Visual Studio Professional (Standard, cloud annuale, cloud mensile)Visual Studio Enterprise (cloud mensile, NFR<sup>1</sup>) | Tutti                                      | Non disponibile                                                            |  No          |
-| Visual Studio Test Professional (Standard)                         | Tutti                                              | Non disponibile                                             |  No          |
-| MSDN Platforms (Standard)                                          | Tutti                                              |Non disponibile                                              |  No          |
-| Visual Studio Dev Essentials                                          | N/D                                              |Non disponibile                                              |  No          |
-<sup>1</sup>  *Include:  Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
+|                                                      Livello di sottoscrizione                                                      |     Canali      |    Vantaggio    | Rinnovabile? |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise (Standard, cloud annuale)                                       | VL, Azure, Retail |   Un anno    |    Yes     |
+| Visual Studio Professional (Standard, cloud annuale, cloud mensile)Visual Studio Enterprise (cloud mensile, NFR<sup>1</sup>) |        Tutti        | Non disponibile |     No     |
+|                                          Visual Studio Test Professional (Standard)                                          |        Tutti        | Non disponibile |     No     |
+|                                                  MSDN Platforms (Standard)                                                   |        Tutti        | Non disponibile |     No     |
+|                                                 Visual Studio Dev Essentials                                                 |        N/D        | Non disponibile |     No     |
+
+<sup>1</sup> *Include: Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 

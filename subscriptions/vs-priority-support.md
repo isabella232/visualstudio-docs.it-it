@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Supporto prioritario incluso nelle sotto
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866740"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Supporto prioritario nelle sottoscrizioni di Visual Studio
 
@@ -37,7 +37,7 @@ I sottoscrittori con sottoscrizioni di Visual Studio selezionate hanno diritto a
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Servizi cloud (Web e ruoli di lavoro)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Database SQL di Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Archiviazione di Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +229,7 @@ I sottoscrittori con sottoscrizioni di Visual Studio selezionate hanno diritto a
 
 
 ## <a name="eligibility"></a>Idoneità
+
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Included       |  Yes          |
@@ -238,7 +239,7 @@ I sottoscrittori con sottoscrizioni di Visual Studio selezionate hanno diritto a
 | Visual Studio Dev Essentials | N/D  | Included                                                            |Yes |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>  *Include: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine.  Esclude:  Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Microsoft Valued Partner (MVP), Region Director (RD).*
+<sup>1</sup>  *Include: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine.  Non include: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD).*
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 

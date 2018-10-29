@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776035"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100939"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
@@ -42,15 +42,10 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 | **Finestra WPF IronPython** | Finestra WPF costituita da due file side-by-side: un file *.xaml* che definisce un oggetto `<Window>` con un elemento `<Grid>` vuoto e un file *.py* associato che carica il file XAML usando la libreria `wpf`. Usato in genere in un progetto creato tramite uno dei modelli di progetto IronPython. Vedere [Gestire progetti Python - Modelli di progetto](managing-python-projects-in-visual-studio.md#project-templates). |
 | **File di supporto del ruolo Web** | Cartella *bin* nella radice del progetto (indipendentemente dalla cartella selezionata nel progetto). La cartella contiene uno script di distribuzione predefinito e un file *web.config* per i ruoli Web del servizio cloud di Azure. Il modello include anche un file *readme.html* che illustra i dettagli. |
 | **File di supporto del ruolo di lavoro** | Cartella *bin* nella radice del progetto (indipendentemente dalla cartella selezionata nel progetto). La cartella contiene uno script di distribuzione e avvio predefinito e un file *web.config* per i ruoli di lavoro del servizio cloud di Azure. Il modello include anche un file *readme.html* che illustra i dettagli. |
-| **web.config di Azure (FastCGI)** | File *web.config* che contiene le voci per le app in cui viene usato un oggetto [WSGI](https://wsgi.readthedocs.io/en/latest/) per gestire le connessioni in ingresso. Questo file viene in genere distribuito nella radice di un server Web che esegue IIS, ad esempio Servizio app di Azure. Per altre informazioni, vedere [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config di Azure (HttpPlatformHandler)** | File *web.config* che contiene le voci per le app in ascolto delle connessioni in ingresso su un socket. Questo file viene in genere distribuito nella radice di un server Web che esegue IIS, ad esempio Servizio app di Azure. Per altre informazioni, vedere [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config di file statici di Azure** | File *web.config* aggiunto in genere a una cartella *static* o a un'altra cartella contenente elementi statici, per disabilitare la gestione di Python per tale cartella. Questo file config funziona in combinazione con uno dei file config precedenti, FastCGI o HttpPlatformHandler. Per altre informazioni, vedere [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config di debug remoto di Azure** | File *web.config.debug* che consente il debug remoto tramite WebSockets, insieme a una libreria *Microsoft.PythonTools.WebRole.dll* e a una cartella *ptvsd* contenente i moduli da distribuire nel server per abilitare il debug remoto. In genere, si crea questo elemento nella stessa posizione del file *web.config*. Per altre informazioni, vedere [Debug remoto di codice Python in Azure](debugging-remote-python-code-on-azure.md). Vedere anche la nota seguente. |
-
-> [!Note]
-> Se si aggiunge il modello *web.config* di debug a un progetto e si intende usare il debug remoto di Python, è necessario pubblicare il sito nella configurazione **Debug**. Questa impostazione è diversa rispetto alla configurazione attiva corrente della soluzione ed è sempre contraddistinta dal valore predefinito **Versione**. Per cambiarla, aprire la scheda **Impostazioni** e usare la casella combinata **Configurazione** nella **Pubblicazione guidata**. Per altre informazioni sulla creazione e sulla distribuzione in App Web di Azure, vedere la [documentazione di Azure](https://azure.microsoft.com/develop/python/).
->
-> ![Modifica della configurazione di pubblicazione](media/template-web-publish-config.png)
+| **web.config di Azure (FastCGI)** | File *web.config* che contiene le voci per le app in cui viene usato un oggetto [WSGI](https://wsgi.readthedocs.io/en/latest/) per gestire le connessioni in ingresso. Questo file viene in genere distribuito nella radice di un server Web che esegue IIS. Per altre informazioni, vedere [Configurare un'app per IIS](configure-web-apps-for-iis-windows.md). |
+| **web.config di Azure (HttpPlatformHandler)** | File *web.config* che contiene le voci per le app in ascolto delle connessioni in ingresso su un socket. Questo file viene in genere distribuito nella radice di un server Web che esegue IIS, ad esempio Servizio app di Azure. Per altre informazioni, vedere [Configurare un'app per IIS](configure-web-apps-for-iis-windows.md). |
+| **web.config di file statici di Azure** | File *web.config* aggiunto in genere a una cartella *static* o a un'altra cartella contenente elementi statici, per disabilitare la gestione di Python per tale cartella. Questo file config funziona in combinazione con uno dei file config precedenti, FastCGI o HttpPlatformHandler. Per altre informazioni, vedere [Configurare un'app per IIS](configure-web-apps-for-iis-windows.md). |
+| **web.config di debug remoto di Azure** | Deprecato (usato per il debug remoto in Servizio app di Azure per Windows, che non è più supportato). |
 
 ## <a name="see-also"></a>Vedere anche
 

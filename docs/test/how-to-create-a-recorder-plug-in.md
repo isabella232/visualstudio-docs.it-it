@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909777"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
@@ -62,7 +62,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 9. Scrivere il codice per il plug-in di registrazione. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
+10. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -87,11 +87,11 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 ### <a name="deploy-the-recorder-plug-in"></a>Distribuire il plug-in di registrazione
 
-Dopo avere compilato il plug-in di registrazione, sarà necessario posizionare il file DLL risultante in uno dei due percorsi seguenti:
+Dopo avere compilato il plug-in di registrazione, posizionare il file DLL risultante in uno dei due percorsi seguenti:
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[versione]\\[edizione]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* versione *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [versione]\WebTestPlugins*
 
 > [!WARNING]
 > Dopo avere copiato il plug-in di registrazione in uno dei due percorsi, è necessario riavviare Visual Studio per completare la registrazione del plug-in.
@@ -113,8 +113,8 @@ Dopo avere compilato il plug-in di registrazione, sarà necessario posizionare i
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
-    > 1.  Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
-    > 2.  Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.
+    > 1. Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
+    > 2. Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.
 
 ## <a name="example"></a>Esempio
 
@@ -123,7 +123,7 @@ In questo esempio viene illustrato come creare un plug-in di registrazione del t
 > [!NOTE]
 > Un listato completo del codice di esempio è riportato alla fine di questo argomento.
 
- **Revisione del codice di esempio**
+**Revisione del codice di esempio**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Scorrere il risultato per trovare la prima pagina con ReportSession
 

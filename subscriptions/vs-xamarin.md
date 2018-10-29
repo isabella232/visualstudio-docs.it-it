@@ -9,12 +9,12 @@ description: Informazioni sulla sottoscrizione di training di Xamarin University
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: df8bc6abc23c4258872b0983b2443e757ca849db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838075"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio del training Xamarin University nelle sottoscrizioni di Visual Studio
 
@@ -67,6 +67,7 @@ I membri di Visual Studio Dev Essentials possono creare un account gratuito che 
     > ![Portale di Xamarin University](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Idoneità
+
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Yes |
@@ -76,7 +77,7 @@ I membri di Visual Studio Dev Essentials possono creare un account gratuito che 
 | Visual Studio Dev Essentials | N/D  | Piano gratuito                                             |  Yes        |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Partner (MVP), Region Director (RD).   Esclude: MCT Software & Services.*
+<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).   Non include: MCT Software & Services.*
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

@@ -9,12 +9,12 @@ description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f9e9c617ba64ca0502e50619c107f000b4f6ad5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830186"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
@@ -23,56 +23,57 @@ ms.locfileid: "44283158"
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
-1.  Per usare il vantaggio Parasoft Virtualize/SOAtest Professional Desktop accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Per usare il vantaggio Parasoft Virtualize/SOAtest Professional Desktop accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Individuare il riquadro Parasoft nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Si riceverà la notifica del recupero del codice.  Fare clic su **Attiva**.
+2. Individuare il riquadro Parasoft nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Si riceverà la notifica del recupero del codice.  Fare clic su **Attiva**.
+   > [!div class="mx-imgBorder"]
+   > ![Riquadro del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-tile.png)
+
+3. Verrà effettuato il reindirizzamento al sito Web Parasoft, in cui si creerà l'account.  È sufficiente specificare le informazioni di contatto e fare clic su **Submit** (Invia).
+   > [!div class="mx-imgBorder"]
+   > ![Creazione dell'account per il vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+
+
+4. Dopo che l'account è stato creato, viene visualizzata la notifica dell'invio di un messaggio di posta elettronica con le istruzioni per il download.  Se questo messaggio non compare nella posta in arrivo, ricordarsi di controllare la cartella Posta indesiderata.
+
+5. Aprire il messaggio di posta elettronica e copiare il **codice di attivazione** negli Appunti.
+
+6. Fare clic sul collegamento corrispondente al sistema operativo in uso.
+   > [!div class="mx-imgBorder"]
+   > ![Messaggio di benvenuto del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-email.png)
+
+7. A seconda del browser usato, la finestra di dialogo di esecuzione del programma di installazione può avere un aspetto diverso.  In Internet Explorer, ad esempio, viene visualizzato l'elenco dei download recenti con parasoft_soavirt_9.10.2_win32_x86_64.exe nella parte superiore dell'elenco. Fare clic su **Esegui** per avviare il programma di installazione.
+
+8. Nella finestra di dialogo Controllo dell'account utente visualizzata fare clic su **Sì**.
+
+9. Scegliere il linguaggio e fare clic su **OK**.
+
+10. Verrà avviata l'installazione guidata Parasoft SOAtest & Virtualize.  Scegliere **Avanti**.
     > [!div class="mx-imgBorder"]
-    > ![Riquadro del vantaggio Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
+    > ![Avvio dell'installazione del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png)
 
-2.  Verrà effettuato il reindirizzamento al sito Web Parasoft, in cui si creerà l'account.  È sufficiente specificare le informazioni di contatto e fare clic su **Submit** (Invia).
+11. Fare clic su **Accetto il contratto** e quindi fare clic su **Avanti**.
+
+12. Scegliere dove installare i file e fare clic su **Avanti**.
+
+13. È quindi possibile scegliere i componenti da installare. In alternativa, è possibile installarli tutti (impostazione predefinita).  Effettuare la selezione e fare clic su **Avanti**.
+
+14. Specificare dove creare il collegamento dell'applicazione installata e fare clic su **Avanti**.
+
+15. Per alcuni test funzionali all'interno di siti HTTPS è necessario il certificato della CA radice Web SOAtest.  Scegliere se installare il certificato della CA radice e fare clic su **Avanti**.
     > [!div class="mx-imgBorder"]
-    > ![Creazione dell'account per il vantaggio Parasoft](_img\vs-parasoft\vs-parasoft-account-cropped.png)
+    > ![Certificato CA radice del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
 
+16. Scegliere se creare un'icona sul desktop e l'icona di avvio rapido durante l'installazione e fare clic su **Avanti**.
 
-3.  Dopo che l'account è stato creato, viene visualizzata la notifica dell'invio di un messaggio di posta elettronica con le istruzioni per il download.  Se questo messaggio non compare nella posta in arrivo, ricordarsi di controllare la cartella Posta indesiderata.
-
-4.  Aprire il messaggio di posta elettronica e copiare il **codice di attivazione** negli Appunti.
-
-5.  Fare clic sul collegamento corrispondente al sistema operativo in uso.
+17. Confermare le opzioni selezionate e quindi fare clic su **Installa** per iniziare l'installazione del software.
     > [!div class="mx-imgBorder"]
-    > ![Messaggio di benvenuto del vantaggio Parasoft](_img\vs-parasoft\vs-parasoft-email.png)
+    > ![Vantaggio Parasoft pronto per l'installazione](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
-6.  A seconda del browser usato, la finestra di dialogo di esecuzione del programma di installazione può avere un aspetto diverso.  In Internet Explorer, ad esempio, viene visualizzato l'elenco dei download recenti con parasoft_soavirt_9.10.2_win32_x86_64.exe nella parte superiore dell'elenco. Fare clic su **Esegui** per avviare il programma di installazione.
-
-7.  Nella finestra di dialogo Controllo dell'account utente visualizzata fare clic su **Sì**.
-
-8.  Scegliere il linguaggio e fare clic su **OK**.
-
-9.  Verrà avviata l'installazione guidata Parasoft SOAtest & Virtualize.  Scegliere **Avanti**.
-    > [!div class="mx-imgBorder"]
-    >![Avvio dell'installazione del vantaggio Parasoft](_img\vs-parasoft\vs-parasoft-start-install.png)
-
-10. Fare clic su **Accetto il contratto** e quindi fare clic su **Avanti**.
-
-11. Scegliere dove installare i file e fare clic su **Avanti**.
-
-12. È quindi possibile scegliere i componenti da installare. In alternativa, è possibile installarli tutti (impostazione predefinita).  Effettuare la selezione e fare clic su **Avanti**.
-
-13. Specificare dove creare il collegamento dell'applicazione installata e fare clic su **Avanti**.
-
-14. Per alcuni test funzionali all'interno di siti HTTPS è necessario il certificato della CA radice Web SOAtest.  Scegliere se installare il certificato della CA radice e fare clic su **Avanti**.
-    > [!div class="mx-imgBorder"]
-    > ![Certificato CA radice del vantaggio Parasoft](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
-
-15. Scegliere se creare un'icona sul desktop e l'icona di avvio rapido durante l'installazione e fare clic su **Avanti**.
-
-16. Confermare le opzioni selezionate e quindi fare clic su **Installa** per iniziare l'installazione del software.
-    > [!div class="mx-imgBorder"]
-    > ![Vantaggio Parasoft pronto per l'installazione](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
-
-17. Al termine dell'installazione, fare clic su **Fine**. A questo punto è tutto pronto per iniziare a usare il vantaggio Parasoft Virtualize/SOAtest Professional Desktop.
+18. Al termine dell'installazione, fare clic su **Fine**. A questo punto è tutto pronto per iniziare a usare il vantaggio Parasoft Virtualize/SOAtest Professional Desktop.
 
 ## <a name="eligibility"></a>Idoneità
+
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Yes       |
@@ -82,7 +83,7 @@ ms.locfileid: "44283158"
 | Visual Studio Dev Essentials | N/D  | Non disponibile|N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>   *Include - Microsoft Partner Network (Enterprise).  Esclude:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Partner (MVP), Region Director (RD).  MCT Software & Services.*
+<sup>1</sup>   *Include - Microsoft Partner Network (Enterprise).  Non include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
 
 
 

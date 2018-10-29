@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6afc2acab36be88b4eb554d1900e6b314e395bd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849882"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 
@@ -41,44 +41,44 @@ Questo refactoring si applica a:
 
    - C#:
 
-    ![Codice evidenziato - C#](media/extractinterface-highlight-cs.png)
+       ![Codice evidenziato - C#](media/extractinterface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato - Visual Basic](media/extractinterface-highlight-vb.png)
+       ![Codice evidenziato - Visual Basic](media/extractinterface-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+R** e quindi **CTRL+I**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
+      - Premere **CTRL+R** e quindi **CTRL+I**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
    - **Mouse**
-     - Selezionare **Modifica > Refactoring - Estrai interfaccia**.
-     - Fare clic con il pulsante destro del mouse sul nome della classe, scegliere il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
+      - Selezionare **Modifica > Refactoring - Estrai interfaccia**.
+      - Fare clic con il pulsante destro del mouse sul nome della classe, scegliere il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
 
-1. Nella finestra di dialogo **Estrai interfaccia** visualizzata immettere le informazioni richieste:
+3. Nella finestra di dialogo **Estrai interfaccia** visualizzata immettere le informazioni richieste:
 
    ![Estrai interfaccia](media/extractinterface-dialog-cs.png)
 
+
    | Campo | Descrizione |
-   | --- | --- |
+   | - | - |
    | **Nome nuova interfaccia** | Nome dell'interfaccia da creare. Il nome predefinito è *NomeClasse*, dove *NomeClasse* è il nome della classe selezionata in precedenza. |
    | **Nome nuovo file** | Nome del file che verrà generato e conterrà l'interfaccia. Come per l'interfaccia, il nome predefinito è *NomeClasse*, dove *NomeClasse* è il nome della classe selezionata in precedenza. |
    | **Seleziona i membri pubblici per l'interfaccia** | Elementi da estrarre nell'interfaccia. È possibile selezionarne il numero desiderato. |
 
-1. Scegliere **OK**.
+
+4. Scegliere **OK**.
 
    L'interfaccia viene creata nel file con il nome specificato. Inoltre, la classe selezionata implementa tale interfaccia.
 
    - C#:
 
-    ![Classe risultante - C#](media/extractinterface-class-cs.png)
-    ![Interfaccia risultante - C#](media/extractinterface-interface-cs.png)
+      ![Classe risultante - C#](media/extractinterface-class-cs.png)![Interfaccia risultante - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-    ![Classe risultante - Visual Basic](media/extractinterface-class-vb.png)
-    ![Interfaccia risultante - Visual Basic](media/extractinterface-interface-vb.png)
+      ![Classe risultante - Visual Basic](media/extractinterface-class-vb.png)![Interfaccia risultante - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

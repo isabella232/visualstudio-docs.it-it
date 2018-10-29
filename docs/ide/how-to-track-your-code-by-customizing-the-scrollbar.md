@@ -1,60 +1,75 @@
 ---
-title: 'Procedura: Tenere traccia del codice personalizzando la barra di scorrimento'
-ms.date: 11/04/2016
+title: Modalità mappa e modalità barra della barra di scorrimento
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fca9b8dd8f4c3cd17ee6ca7f23b3622fc1a9e4ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897056"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procedura: Tenere traccia del codice personalizzando la barra di scorrimento
+# <a name="how-to-customize-the-scroll-bar"></a>Procedura: Personalizzare la barra di scorrimento
 
-Quando si usano file di codice lunghi, può risultare difficile tenere presente tutto il contenuto. È possibile personalizzare la barra di scorrimento della finestra del codice per ottenere una panoramica del contenuto del codice.
+Quando si usano file di codice di grandi dimensioni, può essere difficile tenere traccia di tutto il contenuto dei file. È possibile personalizzare la barra di scorrimento dell'editor di codice per ottenere una panoramica di cosa avviene nel codice.
 
-## <a name="to-show-annotations-on-the-scroll-bar"></a>Per mostrare le annotazioni sulla barra di scorrimento
+## <a name="annotations"></a>Annotazioni
 
-1. È possibile configurare la barra di scorrimento in modo da visualizzare le modifiche al codice, i punti di interruzione, gli errori e i segnalibri.
+È possibile specificare se la barra di scorrimento deve mostrare annotazioni, ad esempio modifiche al codice, punti di interruzione, segnalibri, errori e posizione del cursore.
 
-    Aprire la pagina Opzioni **Barra di scorrimento** scegliendo **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** o un linguaggio specifico, oppure digitando **barra di scorrimento** nella finestra **Avvio veloce**.
+   1. Aprire la pagina delle opzioni **Barre di scorrimento** scegliendo **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **Barre di scorrimento**.
 
-2. Selezionare **Mostra annotazioni su barra di scorrimento verticale** e quindi selezionare le annotazioni da visualizzare.
+   2. Selezionare **Mostra annotazioni su barra di scorrimento verticale** e quindi selezionare le annotazioni da visualizzare. Le annotazioni disponibili sono:
 
-    L'opzione **Contrassegni** include punti di interruzione e segnalibri.
+      - modifiche
+      - contrassegni
+      - errori
+      - posizione del cursore
 
-3. Provare ora a eseguire l'operazione. Aprire un file di codice di grandi dimensioni e sostituire un elemento presente in diversi punti nel file. La barra di scorrimento mostra l'effetto delle sostituzioni, pertanto è possibile annullare le modifiche se è stato sostituito qualche elemento che non doveva essere sostituito.
+      > [!TIP]
+      > L'opzione **Mostra contrassegni** include punti di interruzione e segnalibri.
 
-    Ecco l'aspetto della barra di scorrimento dopo la ricerca di una stringa. Si noti che vengono visualizzate tutte le istanze della stringa.
+È possibile provarla aprendo un file di codice di grandi dimensioni e sostituendo una stringa di testo presente in diverse posizioni nel file. La barra di scorrimento mostra l'effetto delle sostituzioni, pertanto è possibile annullare le modifiche se è stato sostituito qualche elemento che non doveva essere sostituito.
 
-    ![Barra di scorrimento dopo la ricerca di una stringa.](../ide/media/enhancedscrollbarsearch.png)
+Ecco l'aspetto della barra di scorrimento dopo la ricerca di una stringa. Si noti che tutte le istanze della stringa sono indicate nella barra di scorrimento.
 
-    Ecco la barra di scorrimento dopo la sostituzione di tutte le istanze della stringa. È possibile vedere immediatamente che l'operazione ha provocato alcuni problemi.
+![Barra di scorrimento di Visual Studio dopo la ricerca di una stringa](../ide/media/enhancedscrollbarsearch.png)
 
-    ![Barra di scorrimento dopo la sostituzione di una stringa con errori](../ide/media/enhancedscrollbarreplace.png)
+Ecco la barra di scorrimento dopo la sostituzione di tutte le istanze della stringa. I segni rossi nella barra di scorrimento indicano i punti in cui la sostituzione del testo ha introdotto errori.
 
-## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Per impostare la modalità di visualizzazione per la barra di scorrimento
+![Barra di scorrimento di Visual Studio dopo la sostituzione di una stringa con errori](../ide/media/enhancedscrollbarreplace.png)
 
-1. La barra di scorrimento ha due modalità: modalità barra (impostazione predefinita) e modalità mappa. La modalità barra consente di visualizzare solo gli indicatori delle annotazioni sulla barra di scorrimento. In modalità mappa sulla barra di scorrimento sono rappresentate le righe di codice. È possibile scegliere la larghezza delle righe e se visualizzare o meno il codice sottostante quando si posiziona il puntatore su di esse. Quando si fa clic su una posizione sulla barra di scorrimento, il cursore si sposta in tale posizione nel codice. Le aree compresse hanno un'ombreggiatura diversa e vengono espanse quando si fa doppio clic su di esse.
+## <a name="display-modes"></a>Modalità di visualizzazione
 
-    Nella pagina delle opzioni **Barra di scorrimento** selezionare **Usa modalità barra per barra di scorrimento verticale** o **Usa modalità mappa per barra di scorrimento verticale**. È possibile scegliere la larghezza nell'elenco a discesa **Panoramica origine**.
+La barra di scorrimento ha due modalità: modalità barra (impostazione predefinita) e modalità mappa.
 
-    Ecco come appare l'esempio di ricerca quando è attivata la modalità mappa e la larghezza viene impostata su **Media**:
+### <a name="bar-mode"></a>Modalità barra
 
-    ![Barra di scorrimento in modalità mappa](../ide/media/enhancedscrollbar.png)
+La *modalità barra* visualizza indicatori di annotazione sulla barra di scorrimento. Facendo clic sulla barra di scorrimento, è possibile scorrere la pagina verso l'alto o verso il basso, ma non passare alla posizione corrispondente nel file.
 
-2. In modalità mappa per abilitare le anteprime del codice quando si sposta il cursore verso l'alto e il basso nella barra di scorrimento, selezionare l'opzione **Mostra descrizione comando anteprima**. L'aspetto è il seguente:
+### <a name="map-mode"></a>Modalità mappa
 
-    ![Barra di scorrimento con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png)
+Quando in *modalità mappa* si fa clic su una posizione sulla barra di scorrimento, il cursore passa alla posizione nel file anziché scorrere semplicemente la pagina verso l'alto o verso il basso. Sulla barra di scorrimento vengono visualizzate, in miniatura, righe di codice. È possibile scegliere la larghezza della colonna della mappa selezionando un valore in **Panoramica origine**. Per abilitare un'anteprima di dimensioni maggiori del codice quando si posiziona il puntatore del mouse sulla mappa, selezionare l'opzione **Mostra descrizione comando anteprima**. Le aree compresse hanno un'ombreggiatura diversa e si espandono quando si fa doppio clic su di esse.
 
-    Se si vogliono mantenere il comportamento di scorrimento della modalità mappa e la descrizione comando anteprima ma non si vuole visualizzare la panoramica del codice sorgente, è possibile impostare **Panoramica origine** su **Off**.
+> [!TIP]
+> È possibile disattivare la visualizzazione del codice in miniatura in modalità mappa impostando **Panoramica origine** su **Disattivata**. Se l'opzione **Mostra descrizione comando anteprima** è selezionata, viene comunque visualizzata un'anteprima del codice in tale posizione quando si posiziona il puntatore del mouse sulla barra di scorrimento e il cursore passa comunque alla posizione nel file quando si fa clic.
+
+L'immagine seguente mostra l'esempio di ricerca quando è attiva la modalità mappa e la larghezza è impostata su **Media**:
+
+![Barra di scorrimento di Visual Studio in modalità mappa](../ide/media/enhancedscrollbar.png)
+
+La figura seguente mostra l'opzione **Mostra descrizione comando anteprima**:
+
+![Barra di scorrimento di Visual Studio con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 ## <a name="see-also"></a>Vedere anche
 

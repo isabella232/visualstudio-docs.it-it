@@ -1,26 +1,34 @@
 ---
 title: IntelliSense per C++
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124905"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879850"
 ---
 # <a name="visual-c-intellisense-features"></a>Funzionalità IntelliSense per Visual C++
 
 IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma alcune funzionalità di IntelliSense sono disponibili nei file con estensione *cpp* e *c* del progetto di codice condiviso, anche quando si opera in un contesto Android o iOS.
 
-Per accedere a IntelliSense, è possibile usare le voci di menu e i tasti di scelta rapida illustrati nella figura seguente:
+Questo articolo offre una panoramica delle funzionalità di IntelliSense per C++. Per informazioni su come configurare il progetto per IntelliSense e come risolvere eventuali problemi, vedere [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configurare un progetto C++ per IntelliSense).
+
+## <a name="intellisense-features-in-c"></a>Funzionalità IntelliSense in C++
+
+IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono essere abilitate o disabilitate nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Avanzate**. La finestra di dialogo **Opzioni** è accessibile dal menu **Strumenti** sulla barra dei menu.
+
+![Finestra di dialogo Strumenti/Opzioni](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Per accedere a IntelliSense, è possibile utilizzare le voci di menu e i tasti di scelta rapida illustrati nella figura seguente.
 
 ![Menu IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -32,7 +40,7 @@ Per un elenco delle icone e dei relativi significati, vedere [Icone di Visualizz
 
 ![Finestra Completa parola di Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-La prima volta che viene richiamato, l'elenco dei membri contiene solo i membri accessibili per il contesto corrente. Se successivamente si preme **CTRL**+**J**, vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare l'elenco dei membri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Generale** > **Elenco membri automatico**.
+La prima volta che viene richiamato, l'elenco dei membri mostra solo i membri accessibili per il contesto corrente. Se successivamente si preme **CTRL**+**J**, vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare l'elenco dei membri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Generale** > **Elenco membri automatico**.
 
 ![Elenco di membri di Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
@@ -100,4 +108,5 @@ Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono e
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare IntelliSense](../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configurare un progetto C++ per IntelliSense)

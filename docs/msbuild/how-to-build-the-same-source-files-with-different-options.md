@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897173"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate oppure è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], è possibile usare le proprietà e le condizioni per creare le diverse configurazioni della build.  
@@ -50,41 +50,41 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>Specificare le proprietà nella riga di comando  
- Dopo avere scritto il file di progetto in modo che accetti più configurazioni, è necessario poter modificare tali configurazioni ogni volta che si compila il progetto. A questo scopo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consente di specificare le proprietà nella riga di comando usando l'opzione **/property** o **/p**.  
+ Dopo avere scritto il file di progetto in modo che accetti più configurazioni, è necessario poter modificare tali configurazioni ogni volta che si compila il progetto. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permette di specificare le proprietà nella riga di comando usando l'opzione **-property** o **-p**.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Per impostare una proprietà del progetto nella riga di comando  
   
--   Usare l'opzione **/property** con la proprietà e il valore della proprietà. Ad esempio:  
+-   Usare l'opzione **-property** con la proprietà e il valore della proprietà. Ad esempio:  
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     oppure  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Per specificare più di una proprietà del progetto nella riga di comando  
   
--   Usare l'opzione **/property** o **/p** più volte con la proprietà e i valori della proprietà oppure usare una sola opzione **/property** o **/p** e separare più proprietà con il punto e virgola (;). Ad esempio:  
+- Usare l'opzione **-property** o **-p** più volte con la proprietà e i valori della proprietà oppure usare una sola opzione **-property** o **-p** e separare più proprietà con punti e virgola (;). Ad esempio:  
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug;Platform=x86  
+  ```  
   
-    oppure
+  oppure
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
+  ```  
   
- Anche le variabili di ambiente vengono considerate come proprietà e automaticamente incorporate da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Per altre informazioni sull'uso delle variabili di ambiente, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Anche le variabili di ambiente vengono considerate come proprietà e automaticamente incorporate da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Per altre informazioni sull'uso delle variabili di ambiente, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Il valore della proprietà specificato nella riga di comando ha la precedenza sui valori impostati per la stessa proprietà nel file di progetto e tale valore nel file di progetto ha la precedenza sul valore in una variabile di ambiente.  
+  Il valore della proprietà specificato nella riga di comando ha la precedenza sui valori impostati per la stessa proprietà nel file di progetto e tale valore nel file di progetto ha la precedenza sul valore in una variabile di ambiente.  
   
- È possibile modificare questo comportamento usando l'attributo `TreatAsLocalProperty` in un tag di progetto. Per i nomi di proprietà elencati con tale attributo, il valore della proprietà specificato nella riga di comando non ha la precedenza sul valore nel file di progetto. È possibile trovare un esempio più avanti in questo argomento.  
+  È possibile modificare questo comportamento usando l'attributo `TreatAsLocalProperty` in un tag di progetto. Per i nomi di proprietà elencati con tale attributo, il valore della proprietà specificato nella riga di comando non ha la precedenza sul valore nel file di progetto. È possibile trovare un esempio più avanti in questo argomento.  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente del progetto "Hello World" contiene due nuovi gruppi di proprietà che possono essere usati per creare una build di debug e una build di rilascio.  
@@ -92,13 +92,13 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
  Per compilare la versione di debug di questo progetto, digitare:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  Per compilare la versione finale di questo progetto, digitare:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  Per compilare il progetto, immettere il comando seguente:  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  

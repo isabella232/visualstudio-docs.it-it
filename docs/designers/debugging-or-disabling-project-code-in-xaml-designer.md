@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816796"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
 
@@ -86,6 +86,19 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
     > [!NOTE]
     > La disabilitazione del codice del progetto può determinare la perdita dei dati della fase di progettazione. In alternativa, è possibile eseguire il debug del codice in esecuzione nella finestra di progettazione.
+
+## <a name="control-display-options"></a>Opzioni di visualizzazione dei controlli
+
+> [!NOTE]
+> La funzionalità **Control Display Options** (Opzioni di visualizzazione controlli) è disponibile solo per le applicazioni per la piattaforma UWP (Universal Windows Platform) destinate a Windows 10 Fall Creators Update (build 16299) o versioni successive. La funzionalità **Control Display Options** (Opzioni di visualizzazione controlli) è disponibile in Visual Studio 2017 15.9 o versioni successive. 
+
+Nella finestra di progettazione XAML è possibile modificare le opzioni di visualizzazione dei controlli per visualizzare solo i controlli della piattaforma provenienti da Windows SDK. In questo modo, è possibile aumentare l'affidabilità della finestra di progettazione XAML.
+
+Per modificare le opzioni di visualizzazione dei controlli, fare clic sull'icona in basso a sinistra nella finestra di progettazione e quindi selezionare un'opzione in **Control Display Options** (Opzioni di visualizzazione controlli):
+
+![Opzioni di visualizzazione dei controlli](../designers/media/control_display_options.png)
+
+Quando si seleziona **Only Display Platform Controls** (Visualizza solo controlli piattaforma), tutti i controlli personalizzati provenienti dagli SDK, i controlli utente dei clienti e altri controlli non verranno visualizzati completamente. Questi controlli vengono invece sostituiti da controlli di fallback per mostrare le dimensioni e la posizione del controllo.
 
 ## <a name="see-also"></a>Vedere anche
 

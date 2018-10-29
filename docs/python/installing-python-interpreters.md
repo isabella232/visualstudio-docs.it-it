@@ -1,7 +1,7 @@
 ---
 title: Selezione e installazione di interpreti Python
 description: Elenco completo degli interpreti Python supportati in Visual Studio con brevi istruzioni su dove trovare i relativi programmi di installazione.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548966"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324977"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
 Per impostazione predefinita, l'installazione del carico di lavoro di sviluppo Python in Visual Studio 2017 installa anche Python 3 (a 64 bit). È possibile scegliere facoltativamente di installare le versioni a 32 bit e a 64 bit di Python 2, Python 3, Anaconda 2 e Anaconda 3, come descritto in [Installazione](installing-python-support-in-visual-studio.md).
 
-È anche possibile installare manualmente uno qualsiasi degli interpreti elencati nella tabella riportata di seguito al di fuori del programma di installazione di Visual Studio. Ad esempio, se Anaconda 3 è stato installato prima di installare Visual Studio, non è necessario eseguire nuovamente l'installazione tramite il programma di installazione di Visual Studio.
+È anche possibile installare manualmente uno qualsiasi degli interpreti elencati nella tabella riportata di seguito al di fuori del programma di installazione di Visual Studio. Ad esempio, se Anaconda 3 è stato installato prima di installare Visual Studio, non è necessario eseguire nuovamente l'installazione tramite il programma di installazione di Visual Studio. È anche possibile installare un interprete manualmente se, ad esempio, è disponibile una versione più recente che ancora non è visualizzata nel programma di installazione di Visual Studio.
 
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.
 

@@ -1,20 +1,20 @@
 ---
 title: Scrivere unit test per C/C++ in Visual Studio
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341372"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879226"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -31,6 +31,10 @@ Visual Studio include questi framework di test C++ senza richiedere download agg
 - CTest
 
 Oltre ai framework installati, è possibile scrivere adattatori di test personalizzati per qualsiasi framework che si desidera usare all'interno di Visual Studio. Un adattatore di test consente di integrare unit test nella finestra **Esplora test**. Sono disponibili vari adattatori di terze parti in [Visual Studio Marketplace](https://marketplace.visualstudio.com). Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 versione 15.7 (Professional ed Enterprise)**
+
+I progetti di unit test C++ supportano [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017 versione 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS e TEST_METHOD fanno parte del [framework di test nativo Microsoft](mi
 TEST_METHOD restituisce void. Per produrre un risultato di test, usare i metodi statici nella classe `Assert` per testare i risultati effettivi rispetto a quanto previsto. Nell'esempio seguente si presuppone che `MyClass` includa un costruttore che accetta `std::string`. È possibile verificare che il costruttore inizializzi la classe come previsto in questo modo:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 Nell'esempio precedente, il risultato della chiamata `Assert::AreEqual` determina l'esito positivo o negativo del test. La classe Assert contiene molti altri metodi per il confronto dei risultati previsti con quelli effettivi.
 
 È possibile aggiungere *tratti* ai metodi di test per specificare il proprietario, la priorità e altre informazioni per i test. È quindi possibile usare questi valori per ordinare e raggruppare i test in **Esplora test**. Per altre informazioni, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Per i test non superati, il messaggio include dettagli utili per diagnosticare l
 Per altre informazioni sull'uso di **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
 Per le procedure consigliate associate agli unit test, vedere [Nozioni fondamentali sugli unit test](unit-test-basics.md).
+
+## <a name="use-codelens"></a>Usare CodeLens
+
+**Visual Studio 2017 versione 15.7 solo edizioni Professional ed Enterprise**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permette di esaminare rapidamente lo stato di uno unit test senza uscire dall'editor di codice. È possibile inizializzare CodeLens per un progetto di unit test C++ in uno dei modi seguenti:
+
+- Modificare e compilare la soluzione o il progetto di test.
+- Ricompilare la soluzione o il progetto.
+- Eseguire i test dalla finestra **Esplora test**.
+
+Dopo l'inizializzazione di **CodeLens**, è possibile visualizzare le icone di stato dei test sopra ogni unit test.
+
+![Icone CodeLens C++](media/cpp-test-codelens-icons.png)
+
+ Fare clic sull'icona per altre informazioni o per eseguire lo unit test o eseguirne il debug:
+
+![Esecuzione e debug in CodeLens C++](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Vedere anche
 

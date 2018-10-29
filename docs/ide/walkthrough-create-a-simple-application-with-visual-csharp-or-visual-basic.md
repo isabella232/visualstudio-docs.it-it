@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008447"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788019"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Procedura dettagliata: Creare un'applicazione semplice con C# o Visual Basic
 
-Completando questa procedura dettagliata, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Sarà possibile creare una semplice applicazione "Hello, World", progettare l'interfaccia utente, aggiungere codice ed eseguire il debug degli errori, acquisendo al contempo altre informazioni su come lavorare nell'ambiente di sviluppo integrato (IDE).
+Completando questa procedura dettagliata, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Si creerà un' applicazione "Hello, World", si progetterà l'interfaccia utente, si aggiungerà il codice e si eseguirà il debug degli errori, apprendendo l'uso dell'ambiente di sviluppo integrato ([IDE](visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>Configurare IDE
 
@@ -48,9 +48,12 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 1. Scegliere **OK**.
 
-Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
+   Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
 
-![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png)
+   ![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > Per altre informazioni su XAML (eXtensible Application Markup Language), vedere la [panoramica di XAML per WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **Proprietà** (disponibile nel menu **Visualizzazione** ) è possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione.
 
@@ -84,7 +87,7 @@ La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
 ![Controllo TextBlock nel modulo di messaggi di apertura](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-Il markup XAML dovrebbe essere analogo a quello indicato di seguito.
+Il markup XAML sarà simile all'esempio seguente:
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -98,7 +101,7 @@ Il markup XAML dovrebbe essere analogo a quello indicato di seguito.
    Text="Select a message option and then choose the Display button."
    ```
 
-2. Se necessario, riallineare al centro il controllo TextBlock e salvare le modifiche premendo **CTRL**+**S** oppure usando la voce di menu **File**.
+2. Se necessario, riallineare al centro il controllo TextBlock e salvare le modifiche premendo **CTRL**+**S** o usando la voce di menu **File**.
 
 Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
 
@@ -130,7 +133,7 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Impostare un pulsante di opzione che deve essere selezionato per impostazione predefinita
 
-In questo passaggio il pulsante di opzione HelloButton viene impostato in modo che sia selezionato per impostazione predefinita. Uno dei due pulsanti di opzione sarà quindi sempre selezionato.
+In questo passaggio il pulsante di opzione HelloButton viene impostato in modo che sia selezionato per impostazione predefinita, così che uno dei due pulsanti di opzione sia sempre selezionato.
 
 Nella visualizzazione XAML individuare il markup per HelloButton e aggiungere un attributo **IsChecked**:
 

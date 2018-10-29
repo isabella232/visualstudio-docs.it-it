@@ -1,7 +1,7 @@
 ---
 title: Debug del codice Python
 description: Presentazione dettagliata delle funzionalità di debug in Visual Studio specifiche per il codice Python, inclusa l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'individuazione delle eccezioni e il debug nella finestra interattiva.
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626909"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101160"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -25,7 +25,6 @@ Visual Studio offre un'esperienza di debug completa per Python, che include il c
 Vedere anche gli articoli seguenti sul debug nei vari scenari:
 
 - [Debug remoto di Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Debug remoto di Azure](debugging-remote-python-code-on-azure.md)
 - [Debug in modalità mista di Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Simboli per il debug in modalità mista](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
@@ -227,9 +226,45 @@ Per gestire l'installazione di ptvsd:
 
 1. Se la versione è precedente a 4.1.1a9, ovvero la versione in bundle con Visual Studio, selezionare la **X** a destra del pacchetto per disinstallare la versione precedente. Visual Studio usa quindi la versione in bundle. È anche possibile eseguire la disinstallazione da PowerShell usando `pip uninstall ptvsd`.
 
-1. In alternativa, è possibile aggiornare il pacchetto ptvsd alla versione più recente. Immettere `ptvsd --upgrade -pre` nella casella di ricerca, quindi selezionare **Run command: pip install ptvsd --upgrade -pre** (Esegui il comando:pip install ptvsd --upgrade -pre). È anche possibile usare lo stesso comando di PowerShell.
+1. In alternativa, è possibile aggiornare il pacchetto ptvsd alla versione più recente seguendo le istruzioni nella sezione [Risoluzione dei problemi](#troubleshooting).
 
-    ![Dare il comando di aggiornamento nella finestra Ambienti Python](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+Se si verificano problemi con il debugger, aggiornare prima di tutto la versione di ptvsd come indicato di seguito:
+
+1. Passare alla scheda **Pacchetti** nella finestra **Ambienti Python**.
+
+1. Immettere `ptvsd --upgrade` nella casella di ricerca, quindi selezionare **Esegue il comando: pip install ptvsd --upgrade**. È anche possibile usare lo stesso comando di PowerShell.
+
+    ![Invio del comando di aggiornamento di ptvsd nella finestra Ambienti Python](media/debugging-experimental-upgrade-ptvsd.png)
+
+Se i problemi persistono, segnalare il problema nel [repository GitHub di PTVS](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Abilitare la registrazione del debugger
+
+Durante l'analisi di un problema del debugger, Microsoft potrebbe chiedere di abilitare e raccogliere i log del debugger utili per la diagnosi.
+
+La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
+
+1. Aprire una finestra di comando in Visual Studio usando il comando di menu **Visualizza** > **Altre finestre** > **Finestra di comando**.
+
+1. Immettere il comando seguente:
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Avviare il debug ed eseguire tutti i passaggi necessari per riprodurre il problema. Mentre si eseguono queste operazioni, i log del debug vengono visualizzati nella finestra **Output** in **Log dell'host dell'adattatore di debug**. È quindi possibile copiare i log da tale finestra e incollarli in una segnalazione in GitHub, un messaggio di posta elettronica e così via.
+
+    ![Output di registrazione del debugger nella finestra Output](media/debugger-logging-output.png)
+
+1. Se Visual Studio si blocca o non si è in grado di accedere alla finestra **Output**, riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Avviare il debug e riprodurre di nuovo il problema. I log del debugger sono disponibili in `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Vedere anche
 

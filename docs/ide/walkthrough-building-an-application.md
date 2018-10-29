@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942218"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Compilare un'applicazione
 
@@ -114,23 +114,23 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-1. Sulla barra dei menu scegliere **Visualizza** > **Pagine delle proprietà**.
+2. Sulla barra dei menu scegliere **Visualizza** > **Pagine delle proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
-1. Nella pagina **Compilazione** selezionare la casella di controllo **Disabilita tutti gli avvisi**.
+3. Nella pagina **Compilazione** selezionare la casella di controllo **Disabilita tutti gli avvisi**.
 
      ![Pagina Compila, Progettazione progetti](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Per altre informazioni, vedere [Configurare gli avvisi in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-1. Compilare la soluzione.
+4. Compilare la soluzione.
 
- Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
+   Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 
- ![Finestra di output, avvisi di compilazione di Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Finestra di output, avvisi di compilazione di Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- Per altre informazioni, vedere [Procedura: Non visualizzare avvisi del compilatore](../ide/how-to-suppress-compiler-warnings.md).
+   Per altre informazioni, vedere [Procedura: Non visualizzare avvisi del compilatore](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Visualizzare dettagli di compilazione aggiuntivi nella finestra di output
 
@@ -138,7 +138,6 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 > [!IMPORTANT]
 > Se si visualizzano maggiori informazioni, il completamento della compilazione richiederà più tempo.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Modificare la quantità di informazioni nella finestra Output
 
@@ -221,7 +220,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
 
    Il file eseguibile viene copiato nel percorso di rete specificato. Il percorso corrispondente sarà `\\myserver\builds\\FileName.exe`.
 
-Congratulazioni: questa procedura dettagliata è stata completata correttamente.
+La procedura è stata completata. Questa procedura dettagliata è stata completata correttamente.
 
 ## <a name="see-also"></a>Vedere anche
 
