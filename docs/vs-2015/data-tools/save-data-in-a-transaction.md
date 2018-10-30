@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874644"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219302"
 ---
 # <a name="save-data-in-a-transaction"></a>Salvare i dati in una transazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 2.  Denominare il progetto **SavingDataInATransactionWalkthrough**.  
   
-3.  Selezionare **applicazione di Windows**, quindi selezionare**OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il **SavingDataInATransactionWalkthrough** viene creato e aggiunto al progetto **Esplora soluzioni**.  
   
@@ -61,7 +61,7 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 2.  Nel **Zdroje dat** finestra, seleziona **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
   
-3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare**Next**.  
+3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare **Next**.  
   
 4.  Nel **scegliere la connessione dati**eseguire schermata una delle operazioni seguenti:  
   
@@ -71,13 +71,13 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
     -   Selezionare **nuova connessione** per avviare la **Aggiungi/Modifica connessione** dialogo casella e creare una connessione al database Northwind.  
   
-5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare**successivo**.  
+5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
   
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona**successivo**.  
+6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona **successivo**.  
   
 7.  Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.  
   
-8.  Selezionare il `Customers` e `Orders` tabelle e quindi selezionare**fine**.  
+8.  Selezionare il `Customers` e `Orders` tabelle e quindi selezionare **fine**.  
   
      Il **NorthwindDataSet** viene aggiunto al progetto e il `Customers` e `Orders` le tabelle vengono visualizzate nel **Zdroje dat** finestra.  
   
@@ -103,7 +103,7 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 1.  Nel **Project** dal menu**Aggiungi riferimento**.  
   
-2.  Selezionare **System. Transactions**(nelle **.NET** scheda), quindi selezionare**OK**.  
+2.  Selezionare **System. Transactions**(nelle **.NET** scheda), quindi selezionare **OK**.  
   
      Un riferimento a **System. Transactions** viene aggiunto al progetto.  
   
@@ -161,7 +161,7 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione  
   
--   Selezionare**F5** per eseguire l'applicazione.  
+-   Selezionare **F5** per eseguire l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

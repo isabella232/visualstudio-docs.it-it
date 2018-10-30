@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812712"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220043"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione di scelte rapide da tastiera a voci di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
   
 3. Nel **premere i tasti di scelta rapida** , digitare il tasto di scelta rapida che si desidera utilizzare.  
   
-    Se il collegamento è già usato in Visual Studio, il **tasti di scelta attualmente usato da** deve essere visualizzato il comando che chiama attualmente lo scelta rapida.  
+    Se il collegamento è già usato in Visual Studio, il **combinazione già utilizzata da** deve essere visualizzato il comando che chiama attualmente lo scelta rapida.  
   
 4. Provare diverse combinazioni di tasti per trovarne uno che non è mappata.  
   
    > [!NOTE]
-   >  Tasti di scelta rapida che utilizzano ALT possono aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **tasti di scelta attualmente usato da** casella può essere vuoto quando si digita un collegamento che include ALT. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
+   >  Tasti di scelta rapida che utilizzano ALT possono aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **combinazione già utilizzata da** casella può essere vuoto quando si digita un collegamento che include ALT. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
   
    La procedura seguente si presuppone che si dispone di un pacchetto VSPackage esistente con un comando di menu. Se occorre assistenza questa operazione, dare un'occhiata [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   

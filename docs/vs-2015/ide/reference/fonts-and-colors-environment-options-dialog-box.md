@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949435"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220235"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
 |**Parola chiave**|Parole chiave riservate per il linguaggio specificato. Ad esempio: class e namespace.|  
 |**Indirizzo di memoria**|Colore del testo usato per visualizzare la colonna dell'indirizzo all'interno della finestra **Memoria**.|  
 |**Memoria modificata**|Colore del testo usato per visualizzare i dati modificati all'interno della finestra **Memoria**.|  
-|**Dati memoria**|Colore del testo usato per visualizzare i dati all'interno della finestra **Memoria**.|  
+|**Dati memoria**|Il colore del testo usato per visualizzare i dati all'interno di **memoria** finestra.|  
 |**Memoria illeggibile**|Colore del testo usato per visualizzare le aree della memoria illeggibili all'interno della finestra **Memoria**.|  
 |**Numero**|Numero nel codice che rappresenta un valore numerico effettivo.|  
 |**Operator**|Operatori come +, - e !=.|  

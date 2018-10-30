@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195611"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220186"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.
   
 10. Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionSuffix`.  
   
-11. Fare doppio clic il **SmartCaptionExpression** e selezionare**Modify**.  
+11. Fare doppio clic il **SmartCaptionExpression** e selezionare **Modify**.  
   
 12. Immettere l'espressione regolare desidera che il **Zdroje dat** finestra da utilizzare.  
   
-13. Fare doppio clic il **SmartCaptionReplacement** e selezionare**Modify**.  
+13. Fare doppio clic il **SmartCaptionReplacement** e selezionare **Modify**.  
   
 14. Immettere la sostituzione stringa formattati nel modo desiderato visualizzare i modelli di corrispondenza nell'espressione regolare.  
   
-15. Fare doppio clic il **SmartCaptionSuffix** e selezionare**Modify**.  
+15. Fare doppio clic il **SmartCaptionSuffix** e selezionare **Modify**.  
   
 16. Immettere eventuali caratteri che si desidera venga visualizzato alla fine della didascalia.  
   
@@ -119,11 +119,11 @@ Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.
   
 10. Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionSuffix`.  
   
-11. Fare doppio clic il **SmartCaptionExpression** e selezionare**Modify**.  
+11. Fare doppio clic il **SmartCaptionExpression** e selezionare **Modify**.  
   
 12. Immettere `(.*)` per il valore. Ciò corrisponderà alla stringa intera.  
   
-13. Fare doppio clic il **SmartCaptionReplacement** e selezionare**Modify**.  
+13. Fare doppio clic il **SmartCaptionReplacement** e selezionare **Modify**.  
   
 14. Immettere `$1` per il valore. Ciò sostituisce la stringa con il valore corrispondente, ovvero l'intera stringa in modo che rimarrà invariata.  
   

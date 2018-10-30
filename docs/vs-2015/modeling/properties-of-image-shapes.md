@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843483"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219965"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "49843483"
   
 - .png  
   
-  Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse**cartella le **Dsl** progetto.  
+  Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse** cartella le **Dsl** progetto.  
   
   Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   

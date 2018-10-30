@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925502"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219523"
 ---
 # <a name="memory-windows"></a>Finestra Memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il **memoria** finestra permette di visualizzare lo spazio di memoria utilizzata dall'applicazione. Il **Watch** finestra **controllo immediato** della finestra di dialogo **Auto** finestra, e **variabili locali** finestra visualizzato il contenuto delle variabili, che sono archiviati in percorsi specifici in memoria. Ma il **memoria** finestra Mostra l'immagine su larga scala. Questa visualizzazione può essere opportuna quando si intende esaminare grandi porzioni di dati, ad esempio buffer o stringhe di notevoli dimensioni, che non vengono visualizzate adeguatamente nella altre finestre. Tuttavia, il **memoria** finestra non è limitata alla visualizzazione dei dati. Nella finestra Memoria viene visualizzato ogni tipo di contenuto dello spazio di memoria, sia che si tratti di dati, di codice o di contenuto eliminato e collocato casualmente in spazio di memoria non assegnato.  
   
- Il **memoria** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni**della finestra di dialogo**debug** nodo. Il **memoria** finestra non è disponibile per uno Script o SQL, i linguaggi che supportano il concetto di memoria.  
+ Il **memoria** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni** della finestra di dialogo**debug** nodo. Il **memoria** finestra non è disponibile per uno Script o SQL, i linguaggi che supportano il concetto di memoria.  
   
 ## <a name="opening-a-memory-window"></a>Apertura di una finestra Memoria  
   

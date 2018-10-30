@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926546"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220160"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandi i GUID e ID di Visual Studio
 I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio vengono definiti nei file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [definiti dall'IDE comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +57,7 @@ I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE)
   
 -   Voci di menu che includono un carattere sottolineato, ad esempio la **Print** comando il **File** dal menu in cui il *P* è sottolineato.  
   
-     Caratteri preceduti da una e commerciale (&) carattere in nomi di menu vengono visualizzate come sottolineato. Tuttavia *vsct* i file vengono scritti in formato XML, che usa il carattere e commerciale (&) per indicare i caratteri speciali e richiede che una e commerciale da visualizzare deve essere digitata come  *&amp;amp;*. Pertanto, in un *vsct* file, il **P**rint comando viene visualizzata come  *&amp;amp; Stampa*.  
+     Caratteri preceduti da una e commerciale (&) carattere in nomi di menu vengono visualizzate come sottolineato. Tuttavia *vsct* i file vengono scritti in formato XML, che usa il carattere e commerciale (&) per indicare i caratteri speciali e richiede che una e commerciale da visualizzare deve essere digitata come  *&amp;amp;*. Pertanto, in un *vsct* file, il **stampa** comando viene visualizzata come  *&amp;amp; Stampa*.  
   
 -   I comandi che hanno testo dinamico, ad esempio **salvare** \<Filename corrente\>e generato dinamicamente le voci di menu, ad esempio gli elementi nel **file recenti** elenco.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: applicare modifiche in modalità di interruzione con modifica e continuazione | Documenti Microsoft'
+title: 'Procedura: applicare modifiche in modalità di interruzione con modifica e continuazione | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,35 +24,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f031598e0c8f290907e759bcfceac85c1b063f5f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 263e4bf4505995a4c8eccbe7c33f59115412dda5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474193"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219510"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: applicare modifiche in modalità di interruzione con Modifica e continuazione
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.  
   
-Per le limitazioni sull'utilizzo di modifica e continuazione durante il debug, vedere [modifiche al codice supportate (c# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere [modifiche al codice supportate (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
   
 ### <a name="to-edit-code-in-break-mode"></a>Per modificare il codice in modalità di interruzione  
   
 1.  Attivare la modalità di interruzione in uno dei seguenti modi:  
   
-    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal **Debug** menu e attendere che l'applicazione raggiunga il punto di interruzione.  
+    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dalle **Debug** menu e attendere che l'applicazione raggiunga il punto di interruzione.  
   
          oppure  
   
-    -   Avviare il debug e quindi selezionare **Interrompi tutto** dal **Debug** menu.  
+    -   Avviare il debug e quindi selezionare **Interrompi tutto** dalle **Debug** menu.  
   
          oppure  
   
-    -   Quando si verifica un'eccezione, scegliere **Abilita modifica** sul**eccezioni**.  
+    -   Quando si verifica un'eccezione, scegliere **Abilita modifica** nel **informazioni sulle eccezioni**.  
   
-2.  Apportare le modifiche di codice desiderato e supportato.  
+2.  Apportare modifiche al codice supportate e come desiderato.  
   
-     Per ulteriori informazioni, vedere [modifiche al codice supportate (c# e Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Per altre informazioni, vedere [modifiche al codice supportate (C# e Visual Basic](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
@@ -62,5 +62,5 @@ Per le limitazioni sull'utilizzo di modifica e continuazione durante il debug, v
      Il codice verrà eseguito con le modifiche incorporate nel progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Modifiche al codice supportate (c# e Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Le modifiche al codice supportate (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

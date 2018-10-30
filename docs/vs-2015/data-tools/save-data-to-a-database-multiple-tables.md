@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234481"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218415"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 2.  Denominare il progetto `UpdateMultipleTablesWalkthrough`.  
   
-3.  Selezionare **applicazione di Windows**, quindi selezionare**OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il **UpdateMultipleTablesWalkthrough** viene creato e aggiunto al progetto **Esplora soluzioni**.  
   
@@ -81,7 +81,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 2.  Nel **Zdroje dat** finestra, seleziona**Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
   
-3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare**Next**.  
+3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare **Next**.  
   
 4.  Nel **scegliere la connessione dati**eseguire schermata una delle operazioni seguenti:  
   
@@ -91,9 +91,9 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
     -   Selezionare **nuova connessione** per aprire il **Aggiungi/Modifica connessione** nella finestra di dialogo.  
   
-5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare**successivo**.  
+5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
   
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**, selezionare**successivo**.  
+6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**, selezionare **successivo**.  
   
 7.  Nel **Scegli oggetti di Database**schermata, quindi espandere il **tabelle** nodo.  
   
@@ -127,7 +127,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
      Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un' [OrdersTableAdapter](../data-tools/tableadapter-overview.md) e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode per aggiornare il database  
- È possibile aggiornare il database chiamando il `Update` metodi del **clienti** e **ordini** TableAdapter. Per impostazione predefinita, un gestore eventi per il**salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.  
+ È possibile aggiornare il database chiamando il `Update` metodi del **clienti** e **ordini** TableAdapter. Per impostazione predefinita, un gestore eventi per il **salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.  
   
 > [!NOTE]
 >  Per maggiore chiarezza, questa procedura dettagliata non utilizza una transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che assicura che tutte le modifiche relative a un database vengano completate prima che eventuali modifiche vanno eseguito il commit. Per altre informazioni, vedere [transazioni e concorrenza](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione  
   
-1.  Selezionare**F5**.  
+1.  Selezionare **F5**.  
   
 2.  Apportare alcune modifiche ai dati di uno o più record di ogni tabella.  
   

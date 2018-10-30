@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865362"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219913"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnosticare i problemi dopo la distribuzione usando IntelliTrace
 
@@ -44,7 +44,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 Visual Studio 2017 non include il *buildinfo. config* file, che è stato deprecato e quindi rimosso. Per eseguire il debug di App web ASP.NET dopo la distribuzione, usare uno dei metodi seguenti:
 
-* Per la distribuzione in Azure, usare [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Per la distribuzione in Azure, usare [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Se si desidera utilizzare IntelliTrace, aprire il progetto in Visual Studio e caricare i file di simboli dalla compilazione corrisponda. È possibile caricare i file di simboli dal **moduli** finestra o configurando i simboli nel **Tools** > **opzioni** > **debug**   >  **Simboli**.
 

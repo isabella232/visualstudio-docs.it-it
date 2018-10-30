@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231666"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219484"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta l'associazione di dati di ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Quando si visualizzano dati nei Windows Form, è possibile scegliere i controlli
 3.  Scegliere **Compila soluzione** dal menu **Compila**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database  
- Questo passaggio viene creata un'origine dati usando il **configurazione dell'origine dati**procedura guidata, in base il `Customers` e `Orders` tabelle nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione di database di esempio Northwind, vedere [i database di esempio di installazione di SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+ Questo passaggio viene creata un'origine dati usando il **configurazione dell'origine dati** procedura guidata, in base il `Customers` e `Orders` tabelle nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione di database di esempio Northwind, vedere [i database di esempio di installazione di SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   

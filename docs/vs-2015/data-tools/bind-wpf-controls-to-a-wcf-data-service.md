@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812426"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220378"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 3.  Modificare il nome in `AdventureWorksModel.edmx`, fare clic su **Add**.  
   
-     Il **Entity Data Model**verrà visualizzata la procedura guidata.  
+     Il **Entity Data Model** verrà visualizzata la procedura guidata.  
   
 4.  Nel **Scegli contenuto Model** pagina, fare clic su **genera da database**, fare clic su **Avanti**.  
   
@@ -161,7 +161,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 6.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
   
-     Il **configurazione dell'origine dati**verrà visualizzata la procedura guidata.  
+     Il **configurazione dell'origine dati** verrà visualizzata la procedura guidata.  
   
 7.  Nel **scegliere un tipo di origine dati** pagina della procedura guidata, selezionare **servizio**, quindi fare clic su **Avanti**.  
   

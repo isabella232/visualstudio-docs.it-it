@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893000"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219796"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 2.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
   
-     Il **configurazione dell'origine dati**verrà visualizzata la procedura guidata.  
+     Il **configurazione dell'origine dati** verrà visualizzata la procedura guidata.  
   
 3.  Nel **scegliere un tipo di origine dati** pagina, selezionare **Database**, quindi fare clic su **successivo**.  
   
@@ -122,7 +122,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 2.  Nella finestra di progettazione, fare doppio clic il **Fill,GetData()** eseguire una query e selezionare **configura**.  
   
-     Il **TableAdapter configurazione**verrà visualizzata la procedura guidata.  
+     Il **TableAdapter configurazione** verrà visualizzata la procedura guidata.  
   
 3.  Nel **immettere un'istruzione SQL** pagina, aggiungere la clausola WHERE seguente dopo il `SELECT` istruzione nella casella di testo.  
   

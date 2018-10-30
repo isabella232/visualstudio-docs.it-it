@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220814"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219718"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 2.  Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Selezionare **applicazione di Windows**e thenselect**OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il **TableAdapterDbDirectMethodsWalkthrough** viene creato e aggiunto al progetto **Esplora soluzioni**.  
   
@@ -70,13 +70,13 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
-1.  Nel **Data** dal menu**Mostra origini dati**.  
+1.  Nel **Data** dal menu **Mostra origini dati**.  
   
 2.  Nel **Zdroje dat** finestra, seleziona **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
   
-3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare**Next**.  
+3.  Nel **scegliere un tipo di origine dati** schermata, seleziona **Database**e quindi selezionare **Next**.  
   
-4.  Nel **scegliere la connessione dati**schermata, effettuare una delle operazioni seguenti:  
+4.  Nel **scegliere la connessione dati** schermata, effettuare una delle operazioni seguenti:  
   
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
@@ -84,13 +84,13 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
     -   Selezionare **nuova connessione** per avviare la **Aggiungi/Modifica connessione** nella finestra di dialogo.  
   
-5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare**successivo**.  
+5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
   
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**schermata, seleziona **successivo**.  
+6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona **successivo**.  
   
-7.  Nel **Scegli oggetti di Database**schermata, quindi espandere il **tabelle** nodo.  
+7.  Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.  
   
-8.  Selezionare il `Region` tabella e quindi selezionare**fine**.  
+8.  Selezionare il `Region` tabella e quindi selezionare **fine**.  
   
      Il **NorthwindDataSet** viene aggiunto al progetto e il `Region` inclusa nella tabella di **Zdroje dat** finestra.  
   
@@ -117,7 +117,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Per aggiungere il codice per l'inserimento dei nuovi record nel database  
   
-1.  Selezionare**InsertButton** per creare un gestore eventi per l'evento clic e aprire il form nell'editor del codice.  
+1.  Selezionare **InsertButton** per creare un gestore eventi per l'evento clic e aprire il form nell'editor del codice.  
   
 2.  Sostituire il gestore eventi `InsertButton_Click` con il codice seguente:  
   
@@ -135,7 +135,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Per aggiungere il codice per eliminare record dal database  
   
-1.  Selezionare**DeleteButton** per creare un gestore eventi per l'evento clic e aprire il form nell'editor del codice.  
+1.  Selezionare **DeleteButton** per creare un gestore eventi per l'evento clic e aprire il form nell'editor del codice.  
   
 2.  Sostituire il gestore eventi `DeleteButton_Click` con il codice seguente:  
   
@@ -146,7 +146,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione  
   
--   Selezionare**F5** per eseguire l'applicazione.  
+-   Selezionare **F5** per eseguire l'applicazione.  
   
 -   Selezionare il **Inserisci** pulsante e verificare che il nuovo record venga visualizzato nella griglia.  
   

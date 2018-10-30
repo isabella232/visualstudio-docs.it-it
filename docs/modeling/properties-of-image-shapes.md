@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928711"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220108"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
+
 È possibile usare forme d'immagine per specificare l'aspetto delle classi di dominio in una finestra di progettazione generata. Definire una forma immagine impostando il `Image` proprietà della classe in un file di immagine predefinito. Sono supportati i formati seguenti:
 
 - .gif
@@ -38,11 +39,11 @@ ms.locfileid: "49928711"
 
 - .png
 
-  Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse**cartella le **Dsl** progetto.
+Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse** cartella le **Dsl** progetto.
 
-  Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Forme d'immagine hanno le proprietà elencate nella tabella seguente.
+Forme d'immagine hanno le proprietà elencate nella tabella seguente.
 
 |Proprietà|Descrizione|Impostazione predefinita|
 |-|-|-|
