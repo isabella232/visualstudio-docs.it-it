@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821110"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *microsoft.common.tasks*, un file *microsoft.common.targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.  
@@ -40,7 +40,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
   
  Quando in un file di progetto viene definito un valore dell'attributo `ToolsVersion`, MSBuild usa tale valore per determinare i valori delle proprietà del set di strumenti disponibili per il progetto. Una delle proprietà del set di strumenti è `$(MSBuildToolsPath)`, che specifica il percorso degli strumenti di .NET Framework. Solo tale proprietà del set di strumenti (o `$(MSBuildBinPath)`) è necessaria.  
   
- A partire da Visual Studio 2013, la versione del set di strumenti di MSBuild corrisponde al numero di versione di Visual Studio. Per impostazione predefinita, MSBuild usa questo set di strumenti all'interno di Visual Studio e sulla riga di comando, indipendentemente dalla versione del set di strumenti specificato nel file di progetto.  È possibile eseguire l'override di questo comportamento usando il flag /ToolsVersion. Per altre informazioni, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ A partire da Visual Studio 2013, la versione del set di strumenti di MSBuild corrisponde al numero di versione di Visual Studio. Per impostazione predefinita, MSBuild usa questo set di strumenti all'interno di Visual Studio e sulla riga di comando, indipendentemente dalla versione del set di strumenti specificato nel file di progetto.  È possibile eseguire l'override di questo comportamento usando il flag -ToolsVersion. Per altre informazioni, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
  Nell'esempio seguente, MSBuild trova il file *Microsoft.CSharp.targets* usando la proprietà riservata `MSBuildToolsPath`.  
   
@@ -61,9 +61,9 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 ## <a name="toolset-implementation"></a>Implementazione del set di strumenti  
  Per implementare un set di strumenti, selezionare i percorsi dei vari strumenti, destinazioni e attività che costituiscono il set di strumenti. Gli strumenti del set definito da MSBuild provengono dalle seguenti origini:  
   
--   Cartella di .NET Framework  
+- Cartella di .NET Framework  
   
--   Altri strumenti gestiti  
+- Altri strumenti gestiti  
   
   Gli strumenti gestiti includono *ResGen.exe* e *TlbImp.exe*.  
 

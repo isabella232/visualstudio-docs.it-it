@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224457"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228864"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Presentazione di Visual Studio per Mac
 
@@ -97,7 +97,7 @@ Visual Studio per Mac si integra con sistemi di controllo del codice sorgente Su
 
 ![Nome del ramo per indicare un progetto sottoposto a controllo del codice sorgente](media/ide-tour-image22.png)
 
-I file con modifiche di cui non è stato eseguito il commit presentano un'annotazione sulle icone nel riquadro della soluzione, come illustrato nell'immagine seguente:
+I file con modifiche non sottoposte a commit presentano un'annotazione nelle relative icone nel riquadro della soluzione, come illustrato nell'immagine seguente:
 
 ![File con modifiche non sottoposte a commit nel riquadro della soluzione](media/ide-tour-image23.png)
 

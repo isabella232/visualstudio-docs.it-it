@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812621"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -36,7 +36,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
 1. Nella cartella del progetto creare una cartella dell'app denominata `HelloFlask` facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando **Aggiungi** > **Nuova cartella**.
 
-1. Nella cartella *HelloFlask* creare un file denominato *\_\_init\_\_.py* con il contenuto seguente che crea l'istanza `Flask` e carica le visualizzazioni dell'app (create nel passaggio successivo):
+2. Nella cartella *HelloFlask* creare un file denominato *\_\_init\_\_.py* con il contenuto seguente che crea l'istanza `Flask` e carica le visualizzazioni dell'app (create nel passaggio successivo):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
     import HelloFlask.views
     ```
 
-1. Nella cartella *HelloFlask* creare un file denominato *views.py* con il contenuto seguente. Il nome *views.py* è importante perché si è usato `import HelloFlask.views` all'interno di *\_\_init\_\_.py*: se i nomi non corrispondono, verrà visualizzato un errore in fase di esecuzione.
+3. Nella cartella *HelloFlask* creare un file denominato *views.py* con il contenuto seguente. Il nome *views.py* è importante perché si è usato `import HelloFlask.views` all'interno di *\_\_init\_\_.py*: se i nomi non corrispondono, verrà visualizzato un errore in fase di esecuzione.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
     Oltre a rinominare la funzione e la route in `home`, questo codice contiene il codice di rendering della pagina proveniente da *app.py* e importa l'oggetto `app` dichiarato in *\_\_init\_\_.py*.
 
-1. In *HelloFlask* creare la sottocartella *templates*, che per il momento rimane vuota.
+4. In *HelloFlask* creare la sottocartella *templates*, che per il momento rimane vuota.
 
-1. Nella cartella radice del progetto rinominare *app.py* in *runserver.py* e fare in modo che il contenuto corrisponda al codice seguente:
+5. Nella cartella radice del progetto rinominare *app.py* in *runserver.py* e fare in modo che il contenuto corrisponda al codice seguente:
 
     ```python
     import os
@@ -77,17 +77,17 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
         app.run(HOST, PORT)
     ```
-1. La struttura del progetto avrà un aspetto simile all'immagine seguente:
+6. La struttura del progetto avrà un aspetto simile all'immagine seguente:
 
     ![Struttura del progetto dopo il refactoring del codice](media/flask/step02-project-structure.png)
 
-1. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
+7. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
 
-1. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione nelle prime righe di *runserver.py* e *HelloFlask\__init__.py* e nella riga `return "Hello Flask!"` in *views.py*. Quindi riavviare l'app (**Debug** > **Riavvia**, **CTRL**+**F5** o il pulsante della barra degli strumenti illustrato di seguito) e scorrere il codice (**F10**) o eseguirlo da ogni punto di interruzione premendo **F5**.
+8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione nelle prime righe di *runserver.py* e *HelloFlask\_* init_*.py* e nella riga `return "Hello Flask!"` in *views.py*. Quindi riavviare l'app (**Debug** > **Riavvia**, **CTRL**+**F5** o il pulsante della barra degli strumenti illustrato di seguito) e scorrere il codice (**F10**) o eseguirlo da ogni punto di interruzione premendo **F5**.
 
     ![Pulsante di riavvio sulla barra degli strumenti per il debug in Visual Studio](media/debugging-restart-toolbar-button.png)
 
-1. Al termine, arrestare l'app.
+9. Al termine, arrestare l'app.
 
 ### <a name="commit-to-source-control"></a>Eseguire il commit nel controllo del codice sorgente
 

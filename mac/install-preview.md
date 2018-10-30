@@ -1,5 +1,5 @@
 ---
-title: Installazione delle versioni di anteprima
+title: Installare una versione di anteprima
 description: Istruzioni per l'aggiornamento di Visual Studio per Mac e l'accesso a versioni di anteprima.
 author: conceptdev
 ms.author: crdun
@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224019"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991536"
 ---
-# <a name="installing-preview-releases"></a>Installazione delle versioni di anteprima
+# <a name="install-a-preview-release"></a>Installare una versione di anteprima
 
-Prima del rilascio ufficiale di una nuova versione di Visual Studio per Mac viene rilasciata un'anteprima. La versione di anteprima offre la possibilità di provare le nuove funzionalità e ricevere le correzioni dei bug più recenti prima che vengano completamente incorporati nel prodotto.
+Prima del rilascio ufficiale di una nuova versione di Visual Studio per Mac, viene rilasciata un'anteprima. La versione di anteprima offre la possibilità di provare le nuove funzionalità e ricevere le correzioni dei bug più recenti prima che vengano completamente incorporati nel prodotto.
 
 Le versioni di anteprima di Visual Studio per Mac vengono distribuite come aggiornamento anziché con un download separato. In Visual Studio per Mac sono presenti tre canali dello strumento di aggiornamento, come descritto nell'articolo sull'[aggiornamento](update.md): Stabile, Beta e Alfa.
 

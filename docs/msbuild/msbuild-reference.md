@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081784"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120383"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -31,7 +31,7 @@ ms.locfileid: "39081784"
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)  
  Descrive gli elementi XML che costituiscono il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)  
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
  Descrive alcune attività tipiche incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Condizioni](../msbuild/msbuild-conditions.md)  
@@ -71,25 +71,24 @@ ms.locfileid: "39081784"
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [MSBuild ](../msbuild/msbuild.md): offre una panoramica di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e i collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
+ [Panoramica di MSBuild](../msbuild/msbuild.md)     
+ Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e fornisce alcuni collegamenti agli argomenti che descrivono come usarlo per compilare progetti.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Contiene informazioni di riferimento sullo spazio dei nomi Conversion.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Contiene informazioni di riferimento sullo spazio dei nomi Evaluation.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Contiene informazioni di riferimento sullo spazio dei nomi Execution.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Contiene informazioni di riferimento sullo spazio dei nomi Framework.  
   
- <xref:Microsoft.Build.Logging>  
- Contiene informazioni di riferimento sullo spazio dei nomi Logging.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) Contiene informazioni di riferimento sullo spazio dei nomi Logging.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Contiene informazioni di riferimento sullo spazio dei nomi Tasks.  
   
- <xref:Microsoft.Build.Utilities>  
- Contiene informazioni di riferimento sullo spazio dei nomi Utilities.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) Contiene informazioni di riferimento sullo spazio dei nomi Utilities.

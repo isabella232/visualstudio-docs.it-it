@@ -1,5 +1,5 @@
 ---
-title: Onboarding nel portale di amministrazione delle sottoscrizioni di Visual Studio dopo la migrazione dell'organizzazione
+title: Eseguire l'onboarding nel portale di amministrazione delle sottoscrizioni di Visual Studio dopo la migrazione dell'organizzazione
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,55 +9,51 @@ Description: Learn how to successfully onboard your organization for Visual Stud
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 4052d04669327ab0383aba91de05e4d8b95db4c5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0740abb865856470b80d0706794f8e49423e72b2
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637455"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443519"
 ---
-# <a name="onboarding-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-was-migrated"></a>Onboarding nel portale di amministrazione delle sottoscrizioni di Visual Studio dopo la migrazione dell'organizzazione 
+# <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-was-migrated"></a>Eseguire l'onboarding nel portale di amministrazione delle sottoscrizioni di Visual Studio dopo la migrazione dell'organizzazione 
 
-Se l'utente ha gestito sottoscrizioni di Visual Studio in Volume Licensing Service Center (VLSC) e recentemente ha visitato il sito per gestire le sottoscrizioni, noterà che la gestione delle sottoscrizioni non è più disponibile in VLSC. Il processo per gestire le sottoscrizioni era simile al seguente:
+Se le sottoscrizioni di Visual Studio sono state gestite nel sito Microsoft Volume Licensing Service Center (VLSC) e di recente è stato visitato il sito per gestire le sottoscrizioni, si noterà che la gestione delle sottoscrizioni non è più disponibile in VLSC. Il processo per gestire le sottoscrizioni era simile al seguente:
 > [!div class="mx-imgBorder"]
-> ![Sottoscrizioni VLSC](_img/post-migration-onboarding/vlsc-subscriptions.png)
+> ![Screenshot di Microsoft VLSC, con la scheda relativa alle sottoscrizioni evidenziata](_img/post-migration-onboarding/vlsc-subscriptions.png)
 
-Quando si accede alla pagina delle sottoscrizioni, in genere si fa clic sul collegamento seguente. 
-> [!div class="mx-imgBorder"]
-> ![Collegamento di riepilogo della relazione](_img/post-migration-onboarding/relationship-summary-link.png)
+Tuttavia ora le sottoscrizioni vengono gestite tramite un nuovo portale chiamato portale di amministrazione delle sottoscrizioni di Visual Studio. In genere, questo processo viene eseguito dal contatto principale o dal contatto per le comunicazioni indicato nel contratto multilicenza dell'organizzazione. In caso contrario, le informazioni seguenti consentono di accedere per eseguire le operazioni di gestione delle sottoscrizioni. 
 
-Questa operazione in precedenza apriva la pagina in cui era possibile gestire le sottoscrizioni.   Tuttavia ora le sottoscrizioni vengono gestite tramite un nuovo portale chiamato portale di amministrazione delle sottoscrizioni di Visual Studio.  Il contatto principale o il contatto per le comunicazioni dell'organizzazione dovrà eseguire varie operazioni nel quadro del contratto multilicenza dell'organizzazione stessa. Se il contatto principale o per le comunicazioni dell'organizzazione non ha completato questa operazione o non è più disponibile, possono verificarsi diversi scenari. Le istruzioni elencate di seguito illustrano come accedere alla gestione delle sottoscrizioni. 
+Potrebbe verificarsi uno degli scenari seguenti:
+1.  [Il contatto principale non ha completato il processo di onboarding](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>. 
+2.  [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente erano elencate in VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
+3.  [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente non sono state indicate in VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
-È possibile riscontrare uno degli scenari seguenti:
-1.  [Il contatto principale non ha completato il processo di onboarding](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
-2.  [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore.  Le credenziali dell'utente erano elencate in VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
-3.  [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore e le credenziali non erano elencate in VLSC](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
+<sup>1</sup> Se si è il contatto principale o il contatto per le comunicazioni e non è stato completato l'onboarding, eseguire la procedura nello scenario 1 per la configurazione dell'organizzazione. 
 
-<sup>1</sup> Se l'utente è il contatto principale o il contatto per le comunicazioni e non ha completato l'onboarding, dovrà eseguire la procedura nello scenario 1 per configurare l'organizzazione. 
-
-Di seguito sono visualizzati esempi delle schermate che vengono visualizzate e i passaggi da eseguire per i diversi scenari. 
+Le sezioni seguenti forniscono altre informazioni dettagliate su ognuno di questi scenari. 
 
 ## <a name="onboarding-not-completed-by-primary-contact"></a>Onboarding non completato dal contatto principale
 
-Se il contatto principale non ha completato l'onboarding, è probabile che venga visualizzata la schermata seguente. Se è disponibile l'accesso a [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) è possibile completare il processo e accedere alla gestione delle sottoscrizioni. È necessario il numero [PCN (Public Customer Number)](find-pcn.md) dell'organizzazione, disponibile in VLSC. 
+Se il contatto principale non ha completato l'onboarding, viene visualizzata la schermata seguente. Se è possibile accedere a [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx), completare il processo per ottenere l'accesso per la gestione delle sottoscrizioni. È necessario il numero [PCN (Public Customer Number)](find-pcn.md) dell'organizzazione, disponibile in VLSC. 
 
-Se il contatto principale non ha completato il processo di onboarding, è sufficiente immettere il [PCN](find-pcn.md) nel campo e selezionare "Invia invito". 
+Nel campo relativo al numero PCN, immettere il numero [PCN](find-pcn.md)e selezionare **Send Invitation Email** (Invia invito per posta elettronica). 
 > [!div class="mx-imgBorder"]
-> ![Invia un messaggio di posta elettronica contenente l'invito](_img/post-migration-onboarding/send-invitation.png)
+> ![Screenshot del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/post-migration-onboarding/send-invitation.png)
 
-Dopo aver fatto clic sul pulsante per l'invio dell'invito si riceverà un messaggio di posta elettronica con un collegamento univoco per completare il processo di onboarding. Fare clic sul collegamento nel messaggio di posta elettronica, accedere con l'indirizzo di posta elettronica e, anche in questo caso, immettere il PCN. Il collegamento univoco nel messaggio di posta elettronica è l'elemento che consente l'accesso al portale di amministrazione delle sottoscrizioni di Visual Studio. Sarà quindi possibile accedere e gestire le sottoscrizioni. 
+Si riceverà un messaggio di posta elettronica con un collegamento univoco per completare il processo di onboarding. Fare clic sul collegamento nel messaggio di posta elettronica, accedere con l'indirizzo di posta elettronica e, anche in questo caso, immettere il numero PCN. Il collegamento univoco nel messaggio di posta elettronica è l'elemento che consente l'accesso al portale di amministrazione delle sottoscrizioni di Visual Studio. Sarà quindi possibile accedere e gestire le sottoscrizioni. 
 > [!div class="mx-imgBorder"]
-> ![Messaggio di posta elettronica per operazione completata](_img/post-migration-onboarding/email-success.png)
+> ![Screenshot della notifica di operazione riuscita](_img/post-migration-onboarding/email-success.png)
 
 
 ## <a name="primary-contact-did-not-provide-you-administrator-access"></a>Il contatto principale non ha fornito all'utente l'accesso come amministratore
 
-Se il contatto principale ha completato il processo di onboarding e le credenziali dell'utente si trovavano in VLSC, ma il contatto non ha fornito all'utente l'accesso come amministratore, durante l'accesso al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/) viene visualizzata la notifica seguente.  Per diventare un amministratore è necessario contattare uno degli amministratori con privilegi avanzati dell'organizzazione, elencati nella schermata.
+Se il contatto principale ha completato il processo di onboarding e le credenziali dell'utente erano presenti in VLSC in precedenza, ma il contatto non ha fornito all'utente l'accesso, viene visualizzata la notifica seguente. Per diventare un amministratore, contattare uno degli amministratori con privilegi avanzati dell'organizzazione, elencati nella notifica.
 > [!div class="mx-imgBorder"]
-> ![Elenco di amministratori](_img/post-migration-onboarding/admin-list.png)
+> ![Screenshot del portale di amministrazione delle sottoscrizioni di Visual Studio con un elenco degli amministratori con privilegi avanzati](_img/post-migration-onboarding/admin-list.png)
 
 ## <a name="your-credentials-were-not-listed-in-vlsc-prior-to-migration"></a>Le credenziali dell'utente non erano incluse in VLSC prima della migrazione
 
-Se il contatto principale ha completato il processo di onboarding ma non ha aggiunto le credenziali dell'utente e tali credenziali non erano presenti in VLSC, durante l'accesso al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/) viene visualizzata la notifica seguente. È necessario rivolgersi al [contatto principale](find-primary-contact.md) per ottenere l'accesso al portale. 
+Se il contatto principale ha completato il processo di onboarding ma non ha aggiunto l'utente e le sue credenziali non erano presenti in VLSC in precedenza, viene visualizzata la notifica seguente. Rivolgersi al [contatto principale](find-primary-contact.md) per ottenere l'accesso al portale. 
 > [!div class="mx-imgBorder"]
-> ![Utente non trovato](_img/post-migration-onboarding/cant-find-you.png)
+> ![Screenshot del portale di amministrazione delle sottoscrizioni di Visual Studio con una notifica che indica che non è possibile trovare l'utente](_img/post-migration-onboarding/cant-find-you.png)

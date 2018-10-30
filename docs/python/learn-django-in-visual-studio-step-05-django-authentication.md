@@ -1,4 +1,4 @@
----
+﻿---
 title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 5
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità di autenticazione fornite dai modelli di progetto Web Django.
 ms.date: 08/13/2018
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626669"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120355"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
@@ -198,9 +198,9 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Al termine, arrestare il server ed eseguire di nuovo il commit delle modifiche nel controllo del codice sorgente.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Domanda: Qual è lo scopo del tag {% csrf_token %} visualizzato negli elementi \>form\<?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Domanda: Qual è lo scopo del tag {% csrf_token %} visualizzato negli elementi \<form\>?
 
-Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersito false (csrf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
+Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersito false (crsf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

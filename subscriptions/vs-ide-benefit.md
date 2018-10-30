@@ -9,12 +9,12 @@ description: Informazioni su come scaricare e installare l'ambiente IDE di Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923563"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Uso del vantaggio di Visual Studio 2017
 
@@ -28,28 +28,28 @@ I sottoscrittori di Visual Studio hanno accesso all'ambiente IDE di Visual Studi
 Per scaricare l'ambiente IDE:
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il riquadro IDE di Visual Studio nella sezione Strumenti e fare clic sul collegamento **Download** nella parte inferiore del riquadro del vantaggio.  È anche possibile eseguire il download dalla pagina [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
-    > [!div class="mx-imgBorder"]
-    > ![Riquadro Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Riquadro Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3.  Si verrà reindirizzati alla pagina Scarica i risultati di Visual Studio Enterprise, dove è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
-4.  Nella scheda Dettagli della pagina Scarica i risultati:
-    - Selezionare l'architettura (x86, x64)
-    - Selezionare il linguaggio preferito.
-5.  Fare clic sul pulsante di download blu.
-    > [!div class="mx-imgBorder"]
-    > ![Dettagli del download di Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
-6.  Per eseguire subito l'installazione, fare clic su **Esegui**.
-7.  Nella finestra di dialogo Controllo dell'account utente fare clic su **Sì**.
-8.  Fare clic su **Continua** per accettare le condizioni di licenza.
-9.  Quando viene avviato il programma di installazione, scegliere i carichi di lavoro, i singoli componenti e i Language Pack scegliendoli nelle schede corrispondenti.
-    > [!div class="mx-imgBorder"]
-    > ![Personalizzare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+3. Si verrà reindirizzati alla pagina Scarica i risultati di Visual Studio Enterprise, dove è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
+4. Nella scheda Dettagli della pagina Scarica i risultati:
+   - Selezionare l'architettura (x86, x64)
+   - Selezionare il linguaggio preferito.
+5. Fare clic sul pulsante di download blu.
+   > [!div class="mx-imgBorder"]
+   > ![Dettagli del download di Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
+6. Per eseguire subito l'installazione, fare clic su **Esegui**.
+7. Nella finestra di dialogo Controllo dell'account utente fare clic su **Sì**.
+8. Fare clic su **Continua** per accettare le condizioni di licenza.
+9. Quando viene avviato il programma di installazione, scegliere i carichi di lavoro, i singoli componenti e i Language Pack scegliendoli nelle schede corrispondenti.
+   > [!div class="mx-imgBorder"]
+   > ![Personalizzare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10.  Fare clic su **Installa**.
+10. Fare clic su **Installa**.
 
 11. Dopo il completamento dell'installazione, è possibile scegliere se modificarla o se avviare Visual Studio.  Fare clic su **Avvia** per iniziare.
     > [!div class="mx-imgBorder"]
-    > ![Avviare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > ![Avviare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
 
 12. Accedere con l'account associato alla sottoscrizione di Visual Studio.
 
@@ -57,9 +57,10 @@ Per scaricare l'ambiente IDE:
 
 14. Verrà visualizzata la Pagina iniziale.  È tutto pronto per iniziare a usare Visual Studio.
     > [!div class="mx-imgBorder"]
-    > ![Iniziare a usare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>Idoneità
+
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuale, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Yes          |
@@ -68,7 +69,7 @@ Per scaricare l'ambiente IDE:
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Dev Essentials | N/D  | Community di Visual Studio |Yes |
 
-<sup>1</sup>  *include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Partner (MVP), Region Director (RD).  Esclude: MCT Software & Services.*
+<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  Non include: MCT Software & Services.*
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

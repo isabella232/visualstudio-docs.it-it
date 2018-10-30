@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828871"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
 I linguaggi di programmazione destinati a .NET Framework usano i file di progetto MSBuild per descrivere e controllare il processo di compilazione dell'applicazione. Quando si usa Visual Studio per creare un file di progetto MSBuild, il codice XML appropriato viene aggiunto automaticamente al file. Può tuttavia risultare utile comprendere l'organizzazione del codice XML e come è possibile modificarlo per controllare una compilazione.  
@@ -172,7 +172,7 @@ Le attività nella destinazione Build vengono eseguite in sequenza. In questo ca
   
 #### <a name="to-build-the-application"></a>Per compilare l'applicazione  
   
-1.  Al prompt dei comandi digitare **msbuild helloworld.csproj /t:Build**.  
+1.  Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.  
   
      La destinazione Build del file di progetto Helloworld verrà compilata richiamando il compilatore di Visual C# per creare l'applicazione Helloworld.  
   
@@ -183,7 +183,7 @@ Le attività nella destinazione Build vengono eseguite in sequenza. In questo ca
 > [!NOTE]
 >  Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", al prompt dei comandi digitare questo comando:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>Aggiungere proprietà di compilazione  
  Per aumentare il controllo della compilazione è possibile aggiungere proprietà di compilazione al file di progetto. Aggiungere le proprietà seguenti:  
@@ -259,7 +259,7 @@ Il file di progetto sarà ora simile al codice seguente:
   
 #### <a name="to-test-the-build-properties"></a>Per testare le proprietà di compilazione  
   
-1.  Al prompt dei comandi digitare **msbuild helloworld.csproj /t:Build**.  
+1.  Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.  
   
      Questo comando crea la cartella *\Bin\\* e quindi richiama il compilatore di Visual C# per creare l'applicazione *MSBuildSample* e inserirla nella cartella *\Bin\\*.  
   
@@ -334,9 +334,9 @@ Il file di progetto sarà ora simile al codice seguente:
   
 #### <a name="to-test-the-build-targets"></a>Per testare le destinazioni di compilazione  
   
-1.  Al prompt dei comandi digitare **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
+1.  Al prompt dei comandi digitare **msbuild helloworld.csproj -p:AssemblyName=Greetings**.  
   
-     Poiché non è stata usata l'opzione **/t** per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione predefinita Build. L'opzione **/p** esegue l'override della proprietà `AssemblyName` e le assegna il nuovo valore `Greetings`. In questo modo viene creata una nuova applicazione, *Greetings.exe* nella cartella *\Bin\\*.  
+     Poiché non è stata usata l'opzione **-t** per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione Build predefinita. L'opzione **-p** esegue l'override della proprietà `AssemblyName` e le assegna il nuovo valore `Greetings`. In questo modo viene creata una nuova applicazione, *Greetings.exe* nella cartella *\Bin\\*.  
   
 2.  Per verificare che la cartella *\Bin\\* contenga sia l'applicazione *MSBuildSample* che la nuova applicazione *Greetings*, digitare **dir Bin**.  
   
@@ -344,11 +344,11 @@ Il file di progetto sarà ora simile al codice seguente:
   
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .  
   
-4.  Eliminare l'applicazione MSBuildSample digitando **msbuild helloworld.csproj /t:clean**.  
+4.  Eliminare l'applicazione MSBuildSample digitando **msbuild helloworld.csproj -t:clean**.  
   
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore predefinito della proprietà `AssemblyName`, ovvero `MSBuildSample`.  
   
-5.  Eliminare l'applicazione Greetings digitando **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**.  
+5.  Eliminare l'applicazione Greetings digitando **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.  
   
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore specificato della proprietà **AssemblyName**, `Greetings`.  
   
@@ -382,11 +382,11 @@ Il file di progetto sarà ora simile al codice seguente:
     </Target>  
     ```  
   
-2.  Testare la destinazione Build digitando **msbuild /v:d** al prompt dei comandi.  
+2.  Testare la destinazione Build digitando **msbuild -v:d** al prompt dei comandi.  
   
      Tenere presente che *helloworld.csproj* è il file di progetto predefinito e che Build è la destinazione predefinita.  
   
-     L'opzione **/v:d** specifica che verrà fornita una descrizione dettagliata del processo di compilazione.  
+     L'opzione **-v:d** specifica che verrà fornita una descrizione dettagliata del processo di compilazione.  
   
      Verranno visualizzate le righe seguenti:  
   

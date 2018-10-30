@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028949"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859569"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Creare un'installazione offline di Visual Studio 2017
 
@@ -60,6 +60,9 @@ Iniziare scaricando il programma di bootstrap relativo all'edizione di Visual St
 ### <a name="step-2---create-a-local-install-cache"></a>Passaggio 2: Creare una cache di installazione locale
 
 Per completare questo passaggio è necessario avere una connessione Internet.
+
+> [!IMPORTANT]
+> Se si installa Visual Studio Community 2017, è necessario attivarlo entro 30 giorni dall'installazione. È necessaria una connessione Internet.
 
 Aprire un prompt dei comandi e usare uno dei comandi presenti negli esempi seguenti. Negli esempi qui elencati si presuppone che si stia usando Visual Studio Community Edition: modificare il comando in base all'edizione in uso.
 

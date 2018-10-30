@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204128"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443597"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere rappresentano file. I file sono specificati nell'attributo `Include`. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.  
@@ -35,7 +35,7 @@ Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere r
 </ItemGroup>  
 ```  
   
- L'elemento *file2.cs* non sostituisce l'elemento *file1.cs*. Il nome file viene invece aggiunto all'elenco di valori per il tipo di elemento `Compile`. Non è possibile rimuovere un elemento da un tipo di elemento durante la fase di valutazione di una compilazione.  
+ L'elemento *file2.cs* non sostituisce l'elemento *file1.cs*. Il nome file viene invece aggiunto all'elenco di valori per il tipo di elemento `Compile`.
   
  Il codice XML seguente crea lo stesso tipo di elemento dichiarando entrambi i file in un solo attributo `Include`. Si noti che i nomi file sono separati da punto e virgola.  
   
@@ -60,25 +60,26 @@ Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere r
  Per impostazione predefinita, gli elementi di un tipo di elemento vengono separati da punto e virgola (;) quando viene espanso. È possibile usare la sintassi @(\<ItemType>, '\<separator>') per specificare un separatore diverso da quello predefinito. Per altre informazioni, vedere [Procedura: Visualizzare un elenco di elementi separati da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Usare caratteri jolly per specificare gli elementi  
- È possibile usare i caratteri jolly **, \* e ? per specificare un gruppo di file come input per una compilazione invece di elencare ogni file separatamente.  
-  
--   Il carattere jolly ? corrisponde a un singolo carattere.  
-  
--   Il carattere jolly * corrisponde a zero o più caratteri.  
-  
--   La sequenza di caratteri jolly ** corrisponde a un percorso parziale.  
 
-È possibile, ad esempio, specificare tutti i file con estensione *cs* nella directory che contiene il file di progetto usando l'elemento seguente nel file di progetto.  
+È possibile usare i caratteri jolly `**`, `*` e `?` per specificare un gruppo di file come input per una compilazione anziché elencare ogni file separatamente.
+  
+- Il carattere jolly `?` corrisponde a un singolo carattere.
+- Il carattere jolly `*` corrisponde a zero o più caratteri.
+- La sequenza di caratteri jolly `**` corrisponde a un percorso parziale.
+
+Ad esempio, è possibile specificare tutti i file `.cs` nella directory che contiene il file di progetto usando l'elemento seguente nel file di progetto.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-L'elemento seguente seleziona tutti i file con estensione *vb* nell'unità *D:*:  
+L'elemento seguente seleziona tutti i file `.vb` nell'unità `D:`:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Se si desidera includere caratteri letterali `*` o `?` in un elemento privo di espansione di caratteri jolly, è necessario [aggiungere un carattere di escape ai caratteri jolly](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).  
 
@@ -180,7 +181,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
  A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi [ItemGroup](../msbuild/itemgroup-element-msbuild.md) che possono contenere elementi Item. Gli attributi in questa sezione sono validi quando vengono specificati per un elemento in un `ItemGroup` che si trova in una `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Rimuovere un attributo  
- Gli elementi in un `ItemGroup` di una destinazione possono contenere l'attributo `Remove`, che rimuove elementi (file) specifici dal tipo di elemento. Questo attributo è stato introdotto in .NET Framework 3.5.  
+ L'attributo `Remove` rimuove elementi (file) specifici dal tipo di elemento. Questo attributo è stato introdotto in .NET Framework 3.5, ma era supportato solo all'interno di destinazioni fino a MSBuild 15.0.
   
  L'esempio seguente rimuove tutti i file con estensione *config* dal tipo di elemento Compile.  
   

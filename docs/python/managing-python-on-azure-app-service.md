@@ -1,7 +1,7 @@
 ---
-title: Configurazione di Python in Servizio app di Azure
+title: Configurazione di Python in Servizio app di Azure (Windows)
 description: Come installare un interprete e librerie di Python in Servizio app di Azure e configurazione delle applicazioni Web per fare riferimento correttamente a tale interprete.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468715"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459868"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Come configurare un ambiente Python in Servizio app di Azure
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Come configurare un ambiente Python in Servizio app di Azure (Windows)
 
 > [!Important]
-> Microsoft intende deprecare le estensioni Python per il servizio App, come descritto in questo articolo, a favore di una distribuzione diretta al servizio app in Linux. Nel frattempo le estensioni continuano a funzionare. Per distribuire al servizio app in Linux, vedere [Distribuire un'app Web Python in app Web per contenitori](/azure/app-service/containers/quickstart-python).
+> Microsoft ha deprecato le estensioni Python per il servizio app in Windows, come descritto in questo articolo, a favore di una distribuzione diretta nel [servizio app in Linux](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 Il [servizio app di Azure](https://azure.microsoft.com/services/app-service/) è un'offerta di tipo piattaforma distribuita come servizio per le app Web, siano esse siti accessibili tramite un browser, API REST usate dai client o elaborazioni attivate da eventi. Il servizio app supporta pienamente l'uso di Python per implementare le app.
 

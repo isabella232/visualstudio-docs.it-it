@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947638"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915845"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
 
@@ -110,9 +110,9 @@ Nella barra di stato viene indicato quando sono disponibili aggiornamenti del co
 
 ### <a name="to-update-local-content"></a>Per aggiornare il contenuto locale
 
--   Nell'angolo inferiore destro della barra di stato scegliere il collegamento **Fare clic qui per scaricare ora**.
+- Nell'angolo inferiore destro della barra di stato scegliere il collegamento **Fare clic qui per scaricare ora**.
 
- I tempi di aggiornamento possono variare ma è possibile visualizzare lo stato di avanzamento dell'aggiornamento nella barra di stato.
+I tempi di aggiornamento possono variare ma è possibile visualizzare lo stato di avanzamento dell'aggiornamento nella barra di stato.
 
 ## <a name="move-local-content"></a>Spostare il contenuto locale
 

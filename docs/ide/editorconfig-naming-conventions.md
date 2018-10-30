@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626625"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443584"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -88,11 +88,14 @@ Per descrivere i modificatori dei simboli a cui si vuole applicare la regola di 
 
 L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
-- abstract o must_inherit
-- async
-- const
-- readonly
-- static o shared
+- `abstract` o `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` o `shared`
+
+   > [!NOTE]
+   > Se è presente una regola di denominazione per i simboli `static` o `shared`, la regola viene applicata anche ai simboli `const` perché sono statici in modo implicito. Se non si vuole che la regola di denominazione `static` venga applicata ai simboli `const`, creare una regola di denominazione separata per i simboli `const`.
 
 `required_modifiers` è una proprietà facoltativa. Se si omette questa proprietà, la regola di denominazione verrà applicata a tutti i modificatori.
 

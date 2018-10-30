@@ -9,12 +9,12 @@ description: Informazioni su come attivare il vantaggio Azure incluso nella sott
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862346"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -24,51 +24,52 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 
 ## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione/Programma                                 | Vantaggio                     | Rinnovabile?                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-| Visual Studio Enterprise (annuale)                              | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-| Visual Studio Enterprise (mensile)                             | Non disponibile               |                                                              |
-| Visual Studio Professional Standard                          | Credito mensile pari a 50 dollari USA          |   Yes                                                        |
-| Visual Studio Professional (annuale)                            | Credito mensile pari a 50 dollari USA          |   Yes                                                        |
-| Visual Studio Professional (mensile)                           | Non disponibile               |                                                              |
-| Visual Studio Test Pro                                       | Credito mensile pari a 50 dollari USA          |   Yes                                                        |
-| MSDN Platforms                                               | Credito mensile pari a 100 dollari USA         |   Yes                                                        |
-| Visual Studio Dev Essentials                                 | Servizi gratuiti + credito di 200 dollari USA | I servizi gratuiti sono perpetui.  Il credito di 200 dollari USA è unico.  |
-| Visual Studio Enterprise - NFR*                              | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-| Visual Studio Enterprise - FTE                               | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-| Visual Studio Enterprise - Microsoft Partner Network         | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-| Visual Studio Professional - Microsoft Partner Network       | Non disponibile               |                                                              |
-| Visual Studio Enterprise - Imagine (Standard)                | Non disponibile               |                                                              |
-| Visual Studio Enterprise - Imagine (Premium)                 | Non disponibile               |                                                              |
-| Visual Studio Enterprise - BizSpark                          | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-| Visual Studio Enterprise – MCT Software & Services           | Credito mensile pari a 100 dollari USA         |   Yes                                                        |
-| Visual Studio Enterprise - MCT Developer Software & Services | Credito mensile pari a 150 dollari USA         |   Yes                                                        |
-*Include Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
+|                 Livello di sottoscrizione/Programma                 |           Vantaggio           |                         Rinnovabile?                          |
+|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
+|              Visual Studio Enterprise Standard               |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|               Visual Studio Enterprise (annuale)                |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|               Visual Studio Enterprise (mensile)               |        Non disponibile        |                                                             |
+|             Visual Studio Professional Standard              |     Credito mensile pari a 50 dollari USA      |                             Yes                             |
+|              Visual Studio Professional (annuale)               |     Credito mensile pari a 50 dollari USA      |                             Yes                             |
+|              Visual Studio Professional (mensile)              |        Non disponibile        |                                                             |
+|                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Yes                             |
+|                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Yes                             |
+|                 Visual Studio Dev Essentials                 | Servizi gratuiti + credito di 200 dollari USA | I servizi gratuiti sono perpetui.  Il credito di 200 dollari USA è unico. |
+|               Visual Studio Enterprise - NFR\*               |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|                Visual Studio Enterprise - FTE                |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|     Visual Studio Enterprise - Microsoft Partner Network     |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|    Visual Studio Professional - Microsoft Partner Network    |        Non disponibile        |                                                             |
+|        Visual Studio Enterprise - Imagine (Standard)         |        Non disponibile        |                                                             |
+|         Visual Studio Enterprise - Imagine (Premium)         |        Non disponibile        |                                                             |
+|             Visual Studio Enterprise - BizSpark              |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|      Visual Studio Enterprise – MCT Software & Services      |     Credito mensile pari a 100 dollari USA     |                             Yes                             |
+| Visual Studio Enterprise - MCT Developer Software & Services |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+
+*Include Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
-1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Individuare il riquadro Azure nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
-    > [!div class="mx-imgBorder"]
-    > ![Riquadro Azure](_img\vs-azure\vs-azure-tile.png)
+2. Individuare il riquadro Azure nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
+   > [!div class="mx-imgBorder"]
+   > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png)
 
-3.  Compilare le informazioni richieste per creare la sottoscrizione di Azure, selezionare la casella di controllo per accettare termini e condizioni e fare clic su **Iscriviti**:
-    > [!div class="mx-imgBorder"]
-    > ![Registrazione di Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+3. Compilare le informazioni richieste per creare la sottoscrizione di Azure, selezionare la casella di controllo per accettare termini e condizioni e fare clic su **Iscriviti**:
+   > [!div class="mx-imgBorder"]
+   > ![Registrazione di Azure](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
-4.  Quando l'account è pronto, è possibile scegliere un piano di supporto di Azure (venduto separatamente) o iniziare la sottoscrizione di Azure.
-    > [!div class="mx-imgBorder"]
-    > ![Preparazione di Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+4. Quando l'account è pronto, è possibile scegliere un piano di supporto di Azure (venduto separatamente) o iniziare la sottoscrizione di Azure.
+   > [!div class="mx-imgBorder"]
+   > ![Preparazione di Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
 
-5.  Verrà caricato il dashboard di Azure. La prima volta che lo si usa, viene offerta la possibilità di seguire una panoramica.  La panoramica è costituita da una serie di descrizioni che indicano come eseguire una serie di attività e come trovare informazioni pertinenti.  Al termine della panoramica, o se la si chiude, viene visualizzato il dashboard di Azure.
+5. Verrà caricato il dashboard di Azure. La prima volta che lo si usa, viene offerta la possibilità di seguire una panoramica.  La panoramica è costituita da una serie di descrizioni che indicano come eseguire una serie di attività e come trovare informazioni pertinenti.  Al termine della panoramica, o se la si chiude, viene visualizzato il dashboard di Azure.
 
-6.  Creare un segnalibro per il [portale di Azure](https://portal.azure.com) per facilitare l'accesso in futuro.
-    > [!div class="mx-imgBorder"]
-    > ![Dashboard di Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+6. Creare un segnalibro per il [portale di Azure](https://portal.azure.com) per facilitare l'accesso in futuro.
+   > [!div class="mx-imgBorder"]
+   > ![Dashboard di Azure](_img/vs-azure/vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Domande frequenti
 

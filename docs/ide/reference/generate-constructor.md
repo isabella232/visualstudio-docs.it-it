@@ -1,5 +1,5 @@
 ---
-title: Generare un costruttore in Visual Studio
+title: Generare un'azione rapida costruttore
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926735"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -47,10 +47,10 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
 
    ![Anteprima della generazione di un costruttore](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
 
-     ![Anteprima della generazione di un costruttore](media/constructor2-preview-cs.png)
+      ![Anteprima della generazione di un costruttore](media/constructor2-preview-cs.png)
 
 1. Scegliere **Genera il costruttore 'NomeTipo(...)'** dal menu a discesa.
 
@@ -97,24 +97,24 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/constructor-highlight-cs.png)
+       ![Codice evidenziato C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato VB](media/constructor-highlight-vb.png)
+       ![Codice evidenziato VB](media/constructor-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
-    ![Anteprima della generazione di un costruttore](media/constructor-preview-cs.png)
+      ![Anteprima della generazione di un costruttore](media/constructor-preview-cs.png)
 
-1. Scegliere **Genera il costruttore in '*NomeTipo*'** dal menu a discesa.
+3. Scegliere **Genera il costruttore in '*NomeTipo*'** dal menu a discesa.
 
    > [!TIP]
    > Usare il collegamento **Anteprima modifiche** nella parte inferiore della finestra di anteprima [per visualizzare tutte le modifiche](../../ide/preview-changes.md) che verranno apportate prima di effettuare la selezione.
@@ -123,36 +123,38 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-      ![Risultato della generazione del metodo C#](media/constructor-result-cs.png)
+       ![Risultato della generazione del metodo C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Risultato della generazione del metodo VB](media/constructor-result-vb.png)
+       ![Risultato della generazione del metodo VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Aggiungere un parametro a un costruttore esistente (solo C#)
 
 1. Aggiungere un parametro a una chiamata di un costruttore esistente.
 
-1. Posizionare il cursore nella riga in cui è presente una sottolineatura ondulata rossa che indica che è stato usato un costruttore che non esiste ancora.
+2. Posizionare il cursore nella riga in cui è presente una sottolineatura ondulata rossa che indica che è stato usato un costruttore che non esiste ancora.
 
     ![Evidenziazione per generare un costruttore](media/constructor4-highlight-cs.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+3. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
-    ![Anteprima della generazione di un costruttore](media/constructor4-preview-cs.png)
+      ![Anteprima della generazione di un costruttore](media/constructor4-preview-cs.png)
 
-1. Scegliere **Aggiungi il parametro a 'NomeTipo(...)'** dal menu a discesa.
+4. Scegliere **Aggiungi il parametro a 'NomeTipo(...)'** dal menu a discesa.
 
    Il parametro viene aggiunto al costruttore, con il tipo dedotto dal relativo utilizzo.
 
    ![Risultato della generazione del costruttore](media/constructor4-result-cs.png)
+
+È anche possibile aggiungere un parametro a un metodo esistente. Per altre informazioni, vedere [Aggiungere un parametro a un metodo](add-parameter.md).
 
 ## <a id="create"></a> Creare e inizializzare un campo o una proprietà dal parametro di un costruttore (solo C#)
 
@@ -165,10 +167,10 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
 
    ![Anteprima della generazione di un costruttore](media/constructor5-preview-cs.png)
 

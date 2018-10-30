@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178518"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880149"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:
@@ -39,7 +39,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 
 2.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-3.  Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Applicazione Windows Form**. Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
+3.  Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
 
 4.    Scegliere **OK** per creare il file di progetto.
 
@@ -111,12 +111,12 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 3.  Salvare il file di progetto.
 
-L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e per informazioni sull'utilizzo, vedere [Informazioni di riferimento sull'attività](../msbuild/msbuild-task-reference.md).
+L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e informazioni sull'uso, vedere [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md).
 
 L'attività Message accetta il valore stringa dell'attributo Text come input e lo visualizza nel dispositivo di output. La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
 
 ## <a name="build-the-target"></a>Compilare la destinazione
- Eseguire MSBuild dal **prompt dei comandi di Visual Studio** per compilare la destinazione HelloWorld definita sopra. Usare le opzioni della riga di comando /target o /t per selezionare la destinazione.
+ Eseguire MSBuild dal **prompt dei comandi di Visual Studio** per compilare la destinazione HelloWorld definita sopra. Usare le opzioni della riga di comando -target o -t per selezionare la destinazione.
 
 > [!NOTE]
 >  Nelle sezioni successive il **prompt dei comandi di Visual Studio** sarà chiamato **finestra di comando**.
@@ -127,10 +127,10 @@ L'attività Message accetta il valore stringa dell'attributo Text come input e l
 
 2.  Dalla finestra di comando passare alla cartella contenete il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
 
-3.  Eseguire msbuild con l'opzione di comando /t: HelloWorld. La destinazione HelloWorld verrà selezionata e compilata:
+3.  Eseguire msbuild con l'opzione di comando -t: HelloWorld. La destinazione HelloWorld verrà selezionata e compilata:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output nella **finestra di comando**. Saranno visualizzate le due righe "Hello" e "World":
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Verranno visualizzate queste due righe (la versione di .NET Framework può variare):
@@ -231,14 +231,14 @@ $(PropertyName)
  È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Impostare le proprietà dalla riga di comando
- Le proprietà possono essere definite dalla riga di comando usando l'opzione della Proprietà /property o /p. I valori delle proprietà ricevuti dalla riga di comando eseguono l'override dei valori delle proprietà impostati nel file di progetto e nelle variabili di ambiente.
+ Le proprietà possono essere definite dalla riga di comando usando l'opzione della riga di comando -property o -p. I valori delle proprietà ricevuti dalla riga di comando eseguono l'override dei valori delle proprietà impostati nel file di progetto e nelle variabili di ambiente.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Per impostare un valore della proprietà dalla riga di comando
 
 1.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Esaminare l'output. Dovrebbe essere visualizzata questa riga:
@@ -267,7 +267,7 @@ MSBuild crea la proprietà Configuration e le assegna il valore "Release".
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Dovrebbe essere visualizzata questa riga:
@@ -329,7 +329,7 @@ Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Dovrebbe essere visualizzata questa lunga riga:
@@ -361,7 +361,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Dovrebbero essere visualizzate queste righe:
@@ -441,7 +441,7 @@ non esclude il file *Form1.cs*, aggiunto nell'elemento item precedente.
 4.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Esaminare l'output. Dovrebbe essere visualizzata questa riga:
@@ -482,7 +482,7 @@ non esclude il file *Form1.cs*, aggiunto nell'elemento item precedente.
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Dovrebbero essere visualizzate queste righe:
@@ -512,7 +512,7 @@ Si noti come la frase "Compile.DependentUpon" venga visualizzata più volte. L'u
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Dovrebbero essere visualizzate queste righe:
@@ -550,7 +550,7 @@ Ad esempio, un elenco di file di origine può essere trasformato in una raccolta
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Esaminare l'output. Dovrebbe essere visualizzata questa riga:

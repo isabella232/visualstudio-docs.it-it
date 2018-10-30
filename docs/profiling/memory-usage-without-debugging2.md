@@ -1,7 +1,7 @@
 ---
 title: Analizzare l'utilizzo della memoria senza il debugger di Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827733"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger di Visual Studio
 È possibile usare lo strumento **Utilizzo memoria** senza debug per eseguire le operazioni seguenti:  
   
--   Monitorare l'uso della memoria delle tue app direttamente in Visual Studio mentre sviluppi uno scenario.  
+- Monitorare l'uso della memoria delle tue app direttamente in Visual Studio mentre sviluppi uno scenario.  
   
--   Creare snapshot dettagliati dello stato della memoria dell'app.  
+- Creare snapshot dettagliati dello stato della memoria dell'app.  
   
--   Confrontare snapshot per trovare la causa principale dei problemi di memoria.  
+- Confrontare snapshot per trovare la causa principale dei problemi di memoria.  
   
- Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML UWP. Se si vuole analizzare l'uso della memoria nelle app UWP che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](../profiling/javascript-memory.md).  
+  Attualmente, per misurare l'utilizzo della memoria per un'app .NET Core, è necessario utilizzare lo strumento con il debugger collegato. Per altre app gestite e native, è possibile usare lo strumento con o senza il debugger collegato. Le schermate contenute in questo argomento mostrano un'app XAML UWP. Se si vuole analizzare l'uso della memoria nelle app UWP che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Avviare una sessione diagnostica di Utilizzo memoria  
   
@@ -69,13 +69,13 @@ ms.locfileid: "35668821"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Visualizzazioni snapshot dello strumento Utilizzo memoria  
  Usa le viste degli snapshot per aprire report dettagli in nuove finestre di Visual Studio. Esistono due tipi di viste degli snapshot:  
   
--   Un [rapporto dei dettagli degli snapshot](#snapshot-reports) mostra i tipi e le istanze in un solo snapshot.  
+- Un [rapporto dei dettagli degli snapshot](#snapshot-reports) mostra i tipi e le istanze in un solo snapshot.  
   
--   Un [rapporto delle differenze degli snapshot](#snapshot-difference-diff-reports) confronta i tipi e le istanze in due snapshot.  
+- Un [rapporto delle differenze degli snapshot](#snapshot-difference-diff-reports) confronta i tipi e le istanze in due snapshot.  
   
- ![Link della visualizzazione Snapshot](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Link della visualizzazione Snapshot](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Gli elementi numerati nell'immagine della vista dello snapshot sono link che aprono viste di report di Utilizzo memoria.  
+  Gli elementi numerati nell'immagine della vista dello snapshot sono link che aprono viste di report di Utilizzo memoria.  
   
 |||  
 |-|-|  

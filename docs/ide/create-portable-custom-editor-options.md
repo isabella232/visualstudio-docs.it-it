@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835904"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -22,8 +22,7 @@ In Visual Studio 2017 è possibile aggiungere un file [EditorConfig](http://edit
 
 Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e molti ambienti IDE, tra cui Visual Studio. Si tratta di un componente portatile che viene trasferito con il codice ed è in grado di imporre stili di codice anche all'esterno di Visual Studio.
 
-> [!NOTE]
-> Quando si aggiunge un file EditorConfig al progetto in Visual Studio, la formattazione del codice esistente non viene modificata a meno che non si formatti il documento: nel profilo predefinito selezionare **Modifica** > **Avanzate** > **Formatta documento** o **CTRL**+**K**, **CTRL**+**D**. Le nuove righe di codice vengono tuttavia formattate in base alle impostazioni del file EditorConfig. È possibile definire le impostazioni di EditorConfig che si desidera applicare con **Formatta documento** nella pagina delle opzioni [**Formattazione**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Quando si aggiunge un file EditorConfig al progetto in Visual Studio, la formattazione del codice esistente non viene modificata a meno che non si formatti il documento: nel profilo predefinito selezionare **Modifica** > **Avanzate** > **Formatta documento** o **CTRL**+**K**, **CTRL**+**D**. Le nuove righe di codice vengono tuttavia formattate in base alle impostazioni del file EditorConfig. È possibile definire le impostazioni di EditorConfig che si desidera applicare con **Formatta documento** nella pagina delle opzioni [**Formattazione**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Coerenza del codice
 
@@ -32,6 +31,9 @@ Le impostazioni nei file EditorConfig consentono di mantenere stili e impostazio
 Le convenzioni di codifica usate per i progetti personali possono essere diverse da quelle per i progetti del team. Si potrebbe ad esempio preferire che durante la scrittura di codice il rientro aggiunga un carattere di tabulazione. Il team, tuttavia, potrebbe preferire per il rientro quattro spazi anziché un carattere di tabulazione. I file di EditorConfig risolvono questo problema consentendo di predisporre una configurazione per ogni scenario.
 
 Dato che le impostazioni si trovano all'interno di un file nella codebase, seguono quest'ultima nei suoi spostamenti. Quando il file di codice viene aperto, le impostazioni dell'editor di testo vengono implementate, a condizione che l'editor sia compatibile con EditorConfig. Per altre informazioni sui file di EditorConfig, vedere il sito Web [EditorConfig.org](http://editorconfig.org/).
+
+> [!NOTE]
+> Attualmente non è possibile applicare convenzioni impostate in un file EditorConfig in una pipeline CI/CD come errori o avvisi di compilazione. Tutte le deviazioni di stile vengono visualizzate solo nell'editor di Visual Studio e in **Elenco errori**.
 
 ## <a name="supported-settings"></a>Impostazioni supportate
 
@@ -126,7 +128,7 @@ L'esempio seguente illustra lo stato dei rientri di un frammento di codice C# pr
 
 ![Impostazione della tabulazione dell'editor di testo](../ide/media/vside_editorconfig_tabsetting.png)
 
-Come previsto, premendo **TAB** sulla linea successiva la linea rientra con l'aggiunta di quattro caratteri spazio.
+Come previsto, premendo **TAB** nella riga successiva, viene impostato un rientro con l'aggiunta di altri quattro spazi vuoti.
 
 ![Il codice prima dell'uso di EditorConfig](../ide/media/vside_editorconfig_before.png)
 

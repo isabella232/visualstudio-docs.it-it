@@ -1,7 +1,7 @@
 ---
 title: Debug del codice Python in computer Linux remoti
 description: Come usare Visual Studio per il debug del codice Python in esecuzione in computer Linux remoti, inclusi i passaggi di configurazione necessari, la sicurezza e la risoluzione dei problemi.
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549311"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356769"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Eseguire il debug remoto di codice Python in Linux
 
@@ -74,10 +74,8 @@ Per informazioni dettagliate sulla creazione di una regola del firewall per una 
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   Il primo argomento passato a `enable_attach`, detto "segreto", limita l'accesso allo script in esecuzione e deve essere immesso quando si collega il debugger remoto. Non è consigliabile, ma è possibile consentire a chiunque di connettersi usando `enable_attach(secret=None)`.
 
 1. Salvare il file ed eseguire `python3 guessing-game.py`. La chiamata a `enable_attach` viene eseguita in background e attende connessioni in ingresso quando si interagisce in altro modo con il programma. Se richiesto, è possibile chiamare la funzione `wait_for_attach` dopo `enable_attach` per bloccare il programma fino al collegamento del debugger.
 
@@ -96,10 +94,7 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 
 1. Nella finestra di dialogo **Connetti a processo** visualizzata impostare **Tipo di connessione** su **Python remote (ptvsd)** (Python remoto). Nelle versioni precedenti di Visual Studio questi comandi sono denominati rispettivamente **Trasporto** e **Debug remoto Python**.
 
-1. Nel campo **Destinazione della connessione**, **Qualificatore** nelle versioni precedenti, immettere `tcp://<secret>@<ip_address>:5678`, dove `<secret>` è la stringa passata a `enable_attach` nel codice Python, `<ip_address>` è l'indirizzo IP del computer remoto, che può essere un indirizzo esplicito o un nome simile a myvm.cloudapp.net, e `:5678` è il numero di porta del debug remoto.
-
-    > [!Warning]
-    > Se si sta effettuando una connessione sulla rete Internet pubblica, è preferibile usare invece `tcps` e seguire l'istruzione seguente per [proteggere la connessione del debugger con SSL](#secure-the-debugger-connection-with-ssl).
+1. Nel campo **Destinazione della connessione** (**Qualificatore** nelle versioni precedenti) immettere `tcp://<ip_address>:5678` dove `<ip_address>` è l'indirizzo del computer remoto (che può essere un indirizzo esplicito o un nome come myvm.cloudapp.net) e `:5678` è il numero di porta per il debug remoto.
 
 1. Premere **INVIO** per compilare l'elenco dei processi ptvsd disponibili nel computer:
 
@@ -121,7 +116,7 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 1. Verificare che il segreto in **Destinazione della connessione** (o **Qualificatore**) corrisponda esattamente al segreto nel codice remoto.
 1. Verificare che l'indirizzo IP in **Destinazione della connessione** (o **Qualificatore**) corrisponda esattamente a quello del computer remoto.
 1. Verificare che la porta di debug remoto sia aperta nel computer remoto e che il suffisso di porta sia incluso nella destinazione di connessione, ad esempio `:5678`.
-    - Se è necessario usare un'altra porta, è possibile specificarla nella chiamata a `enable_attach` usando l'argomento `address`, come in `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. In questo caso, aprire quella porta specifica nel firewall.
+    - Se è necessario usare un'altra porta, è possibile specificarla nella chiamata a `enable_attach` usando l'argomento `address`, come in `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. In questo caso, aprire quella porta specifica nel firewall.
 1. Verificare nella tabella seguente che la versione di ptvsd installata nel computer remoto e restituita da `pip3 list` corrisponda a quella usata dalla versione degli strumenti Python in uso in Visual Studio. Se necessario, aggiornare ptvsd nel computer remoto.
 
     | Versione di Visual Studio | Versione di strumenti Python/ptvsd |
@@ -136,9 +131,15 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>Proteggere la connessione del debugger con SSL
+## <a name="using-ptvsd-3x"></a>Uso di ptvsd 3.x
 
-Per impostazione predefinita, la connessione al server di debug remoto di ptvsd è protetta solo dal segreto e tutti i dati vengono passati come testo normale. Per proteggere maggiormente la connessione, ptvsd supporta SSL, che deve essere impostato come indicato di seguito:
+Le informazioni seguenti si applicano solo al debug remoto con ptvsd 3.x, che contiene alcune funzionalità che sono state rimosse in ptvsd 4.x.
+
+1. Con ptvsd 3.x, la funzione `enable_attach` richiede il passaggio di un "segreto" come primo argomento, che limita l'accesso allo script in esecuzione. Si immette questo segreto quando si collega il debugger remoto. Sebbene non sia consigliabile, è possibile consentire a chiunque di eseguire la connessione usando `enable_attach(secret=None)`.
+
+1. L'URL di destinazione della connessione è `tcp://<secret>@<ip_address>:5678`, dove `<secret>` è la stringa passata a `enable_attach` nel codice Python.
+
+Per impostazione predefinita, la connessione al server di debug remoto di ptvsd 3.x è protetta solo dal segreto e tutti i dati vengono passati come testo normale. Per una connessione più sicura, ptvsd 3.x supporta SSL con il protocollo `tcsp`, che deve essere configurato come indicato di seguito:
 
 1. Nel computer remoto generare un certificato autofirmato separato e i file di chiave usando il comando openssl:
 
@@ -171,17 +172,12 @@ Per impostazione predefinita, la connessione al server di debug remoto di ptvsd 
 
     ![Scelta del trasporto di debug remoto con SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Avvisi
+1. Visual Studio segnala i potenziali problemi di certificato quando si esegue la connessione con SSL. È possibile ignorare gli avvisi e continuare, ma anche se il canale rimane crittografato per evitare intercettazioni, può comunque essere vulnerabile agli attacchi di tipo man-in-the-middle.
 
-Visual Studio chiede informazioni sui potenziali problemi di certificato durante la connessione con SSL, come descritto di seguito. È possibile ignorare gli avvisi e continuare, ma anche se il canale rimane crittografato per evitare intercettazioni, può comunque essere vulnerabile agli attacchi di tipo man-in-the-middle.
+    1. Se appare l'avviso **il certificato remoto non è attendibile**, significa che il certificato non è stato aggiunto correttamente alla CA radice attendibile. Verificare questi passaggi e riprovare.
 
-1. Se appare l'avviso **il certificato remoto non è attendibile**, significa che il certificato non è stato aggiunto correttamente alla CA radice attendibile. Verificare questi passaggi e riprovare.
+        ![Avviso su attendibilità del certificato SSL](media/remote-debugging-ssl-warning.png)
 
-    ![Avviso su attendibilità del certificato SSL](media/remote-debugging-ssl-warning.png)
+    1. Se appare l'avviso **il nome del certificato remoto non corrisponde al nome host**, significa che non è stato usato il nome host o l'indirizzo IP corretto come **nome comune** durante la creazione del certificato.
 
-1. Se appare l'avviso **il nome del certificato remoto non corrisponde al nome host**, significa che non è stato usato il nome host o l'indirizzo IP corretto come **nome comune** durante la creazione del certificato.
-
-    ![Avviso sul nome host del certificato SSL](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> Al momento Visual Studio 2017 si blocca se si ignorano questi avvisi. Assicurarsi di correggere tutti i problemi prima di tentare la connessione.
+        ![Avviso sul nome host del certificato SSL](media/remote-debugging-ssl-warning2.png)
