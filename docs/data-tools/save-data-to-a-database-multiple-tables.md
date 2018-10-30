@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174397"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220339"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazione di dati in un form in un'applicazione Windows, la modifica dei dati e l'invio dei dati aggiornati al database. In questa procedura dettagliata viene creato un form in cui sono visualizzati i dati di due tabelle correlate e viene illustrato come modificare i record e salvare le modifiche nel database. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind.
@@ -86,7 +86,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 1.  Nel **Data** dal menu **Mostra origini dati**.
 
-2.  Nel **Zdroje dat** finestra, seleziona**Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.
+2.  Nel **Zdroje dat** finestra, seleziona **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.
 
 3.  Nel **scegliere un tipo di origine dati** schermata, seleziona **Database**e quindi selezionare **Next**.
 
@@ -102,7 +102,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**, selezionare **successivo**.
 
-7.  Nel **Scegli oggetti di Database**schermata, quindi espandere il **tabelle** nodo.
+7.  Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.
 
 8.  Selezionare il **clienti** e **ordini** tabelle e quindi selezionare **fine**.
 

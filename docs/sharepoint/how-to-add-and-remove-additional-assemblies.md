@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756288"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219146"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Procedura: aggiungere e rimuovere assembly aggiuntivi
   Se un pacchetto di SharePoint dipende da altri assembly per dati o funzionalità, è possibile aggiungere gli assembly al pacchetto di soluzione (con estensione wsp). In questo modo, il server SharePoint assicura che siano installati assembly personalizzati con un pacchetto.  
@@ -66,7 +66,7 @@ ms.locfileid: "36756288"
   
 #### <a name="to-add-a-safe-control"></a>Per aggiungere un controllo sicuro  
   
-1.  Aprire il **modifica Assembly esistente** nella finestra di dialogo. A tale scopo, aprire la finestra di progettazione del pacchetto, scegliere il **avanzate** scheda, scegliere un assembly e quindi scegliere il **modificare**pulsante.  
+1.  Aprire il **modifica Assembly esistente** nella finestra di dialogo. A tale scopo, aprire la finestra di progettazione del pacchetto, scegliere il **avanzate** scheda, scegliere un assembly e quindi scegliere il **modificare** pulsante.  
   
 2.  Nel **controlli sicuri** riquadro, scegliere il **fare clic qui per aggiungere un nuovo elemento** pulsante.  
   

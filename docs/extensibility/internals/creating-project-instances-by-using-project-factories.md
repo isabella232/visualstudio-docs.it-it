@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833995"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219497"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creare istanze del progetto tramite le factory di progetto
 Tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usano un *factory progetto* per creare istanze di oggetti del progetto. È simile a una factory di classe standard per gli oggetti COM cocreatable una factory progetto. Oggetti del progetto non sono tuttavia cocreatable; possono essere creati solo mediante una factory progetto.  
@@ -27,8 +27,6 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
  Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE chiama la factory del progetto implementata nel pacchetto VSPackage quando un utente carica un progetto esistente o crea un nuovo progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Il nuovo oggetto di progetto fornisce l'IDE con le informazioni necessarie per popolare **Esplora soluzioni**. Il nuovo oggetto di progetto fornisce inoltre le interfacce necessarie per supportare tutte le azioni dell'interfaccia utente rilevante avviate dall'IDE.  
   
  È possibile implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia in una classe nel progetto. In genere, si trova in un proprio modulo.  
-  
- Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere *PrjFac.cpp*, in cui è contenuto il [progetto di base](https://www.microsoft.com/download/details.aspx?id=55984) directory degli esempi.  
   
  I progetti che supportano l'aggregazione da un proprietario devono mantenere una chiave del proprietario nel relativo file di progetto. Quando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metodo viene chiamato su un progetto con una chiave del proprietario, il progetto di proprietà converte la chiave del proprietario in una factory progetto GUID chiama quindi il `CreateProject` metodo factory del progetto per eseguire la creazione effettiva.  
   

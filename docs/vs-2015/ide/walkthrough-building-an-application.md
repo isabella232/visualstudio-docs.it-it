@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143177"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220206"
 ---
 # <a name="walkthrough-building-an-application"></a>Procedura dettagliata: compilazione di un'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 4. Nell'elenco **Piattaforma soluzione attiva** scegliere **Nuova**.  
   
-5. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.  
+5. Nel **nuova piattaforma soluzione** finestra di dialogo, scegliere **x64**e non copiare le impostazioni da x86 piattaforma.  
   
     ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   

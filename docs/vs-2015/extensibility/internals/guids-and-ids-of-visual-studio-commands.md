@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868579"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219835"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID e ID dei comandi di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE)
   
 -   Voci di menu che includono un carattere sottolineato, ad esempio la **Print** comando il **File** menu, in cui il P è sottolineato.  
   
-     I caratteri preceduti dal carattere '&' nei nomi di voce di menu sono visualizzati come sottolineato. Tuttavia, i file con estensione vsct sono scritti in XML, che usa il carattere '&' per indicare i caratteri speciali e richiede che deve essere digitata una e commerciale che deve essere visualizzato come&amp;'. Pertanto, in un file con estensione vsct, il **P**rint comando visualizzato come '&amp;Print'.  
+     I caratteri preceduti dal carattere '&' nei nomi di voce di menu sono visualizzati come sottolineato. Tuttavia, i file con estensione vsct sono scritti in XML, che usa il carattere '&' per indicare i caratteri speciali e richiede che deve essere digitata una e commerciale che deve essere visualizzato come&amp;'. Pertanto, in un file con estensione vsct, il **Print** comando è visualizzato come '&amp;Print'.  
   
 -   I comandi che hanno testo dinamico, ad esempio **salvare** *Filename corrente*e generato dinamicamente le voci di menu, ad esempio gli elementi nel **file recenti** elenco.  
   

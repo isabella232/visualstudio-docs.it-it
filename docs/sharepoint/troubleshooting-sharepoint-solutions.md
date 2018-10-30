@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928958"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219783"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi di soluzioni SharePoint
   Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per altre informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -136,7 +136,7 @@ ms.locfileid: "49928958"
   
 -   Installare [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Assicurarsi di avere accesso di amministratore per il sito Web di SharePoint. Per altre informazioni, vedere la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] articolo in linea [assegnare o rimuovere gli amministratori di applicazioni di servizio in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Assicurarsi di avere accesso di amministratore per il sito Web di SharePoint. Per altre informazioni, vedere la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] articolo in linea [assegnare o rimuovere gli amministratori di applicazioni di servizio in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Eventi web eliminazione sito non si verificano nel progetto ricevitore di eventi
  Quando si crea un progetto di ricevitore di eventi e si selezionano determinati eventi Web, ad esempio "un sito di eliminazione in corso", l'evento si verifica mai.  

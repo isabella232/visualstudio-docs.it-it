@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245856"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219614"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: utilizzare frammenti XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "49245856"
   
  Premere INVIO o ESC per annullare la modifica del campo e tornare alla visualizzazione normale dell'editor.  
   
- I colori predefiniti per i campi di frammento di codice modificabile possono essere modificati modificando l'impostazione del campo frammento di codice nel **tipi di carattere e colori** riquadro della finestra il **opzione**nella finestra di dialogo. Per altre informazioni, vedere [procedura: modificare tipi di carattere e colori nell'Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ I colori predefiniti per i campi di frammento di codice modificabile possono essere modificati modificando l'impostazione del campo frammento di codice nel **tipi di carattere e colori** riquadro della finestra il **opzioni** nella finestra di dialogo. Per altre informazioni, vedere [procedura: modificare tipi di carattere e colori nell'Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Frammenti di codice XML](../xml-tools/xml-snippets.md)   

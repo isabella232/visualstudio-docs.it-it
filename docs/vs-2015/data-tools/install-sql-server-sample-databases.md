@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213257"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217863"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installare SQL Server database di esempio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Per ripristinare un database da un file con estensione bak in Visual Studio  
   
-1.  Quando si esegue il backup di un database Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere l'estensione bak file utilizzabile nuovamente come un file di database, deve essere *ripristinato*. Nel menu principale, selezionare**View** > **Esplora oggetti di SQL Server**. Se non è visualizzata, è necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015 e scegliere il **modifica** pulsante. Nella finestra del programma di installazione venga visualizzato l'elenco dei componenti installati, selezionare la **Esplora oggetti di SQL Server**casella di controllo e quindi continuare con l'installazione.  
+1.  Quando si esegue il backup di un database Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere l'estensione bak file utilizzabile nuovamente come un file di database, deve essere *ripristinato*. Nel menu principale, selezionare **View** > **Esplora oggetti di SQL Server**. Se non è visualizzata, è necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015 e scegliere il **modifica** pulsante. Nella finestra del programma di installazione venga visualizzato l'elenco dei componenti installati, selezionare la **Esplora oggetti di SQL Server** casella di controllo e quindi continuare con l'installazione.  
   
 2.  In Esplora oggetti di SQL Server, fare doppio clic su qualsiasi motore di database di SQL Server (ad esempio, database locale) e selezionare**nuova Query**.  
   

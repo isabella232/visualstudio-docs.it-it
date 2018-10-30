@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812933"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220417"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 3.  Nel **modelli** riquadro, selezionare **applicazioni Windows**.  
   
-4.  Denominare il progetto `ConcurrencyWalkthrough`, quindi selezionare**OK**.  
+4.  Denominare il progetto `ConcurrencyWalkthrough`, quindi selezionare **OK**.  
   
      Visual Studio aggiunge il progetto **Esplora soluzioni** e visualizza un nuovo form nella finestra di progettazione.  
   
@@ -96,7 +96,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 5.  Espandere la **tabelle** nodo e selezionare il `Customers` tabella. Il nome predefinito per il set di dati deve essere `NorthwindDataSet`.  
   
-6.  Selezionare**fine** per aggiungere il set di dati al progetto.  
+6.  Selezionare **fine** per aggiungere il set di dati al progetto.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Creare un controllo DataGridView associato ai dati  
  In questa sezione si crea una <xref:System.Windows.Forms.DataGridView> trascinando la **clienti** articolo dal **Zdroje dat** finestra nei Form Windows.  
@@ -107,7 +107,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 2.  Nel **Zdroje dat** finestra, espandere il **NorthwindDataSet** nodo e quindi selezionare il **clienti** tabella.  
   
-3.  Selezionare la freccia rivolta verso il basso nel nodo della tabella e quindi selezionare **DataGridView**nell'elenco a discesa.  
+3.  Selezionare la freccia rivolta verso il basso nel nodo della tabella e quindi selezionare **DataGridView** nell'elenco a discesa.  
   
 4.  Trascinare la tabella in un'area vuota del form.  
   
@@ -118,7 +118,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 #### <a name="to-test-the-form"></a>Per testare il form  
   
-1.  Selezionare**F5** per eseguire l'applicazione  
+1.  Selezionare **F5** per eseguire l'applicazione  
   
      Viene visualizzato il form con un <xref:System.Windows.Forms.DataGridView> controllo su di esso viene riempita con i dati di `Customers` tabella.  
   
@@ -192,7 +192,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 #### <a name="to-test-the-form"></a>Per testare il form  
   
-1.  Selezionare**F5** per eseguire l'applicazione.  
+1.  Selezionare **F5** per eseguire l'applicazione.  
   
 2.  Una volta visualizzato il form, lascia in esecuzione e passare all'IDE di Visual Studio.  
   
@@ -215,8 +215,8 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
      Viene generato l'errore di concorrenza e viene visualizzata la finestra di messaggio.  
   
-10. Selezionando**No** Annulla l'aggiornamento e aggiorna il set di dati con i valori presenti nel database. Selezionando**Sì** scrive il valore proposto per il database.  
+10. Selezionando **No** Annulla l'aggiornamento e aggiorna il set di dati con i valori presenti nel database. Selezionando **Sì** scrive il valore proposto per il database.
   
-## <a name="see-also"></a>Vedere anche  
- [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Vedere anche
 
+- [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

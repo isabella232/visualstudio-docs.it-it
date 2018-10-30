@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823502"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218899"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
   
 1. Aprire il modulo in **Progettazione Windows Form**.  
   
-2. Nel **dati** dal menu**Aggiungi Query**oppure**Smart tag dati**.  
+2. Nel **dati** dal menu **Aggiungi Query** oppure **Smart tag dati**.  
   
    > [!NOTE]
-   >  Se **Aggiungi Query** non è disponibile nel **dati** menu, selezionare un controllo nel form che consente di visualizzare i dati di origine si desidera aggiungere la parametrizzazione. Ad esempio, se nel form i dati sono visualizzati in un controllo <xref:System.Windows.Forms.DataGridView>, selezionarlo. Se i dati del form sono visualizzati in controlli singoli, selezionare qualsiasi controllo associato a dati.  
+   > Se **Aggiungi Query** non è disponibile nel **dati** menu, selezionare un controllo nel form che consente di visualizzare i dati di origine si desidera aggiungere la parametrizzazione. Ad esempio, se nel form i dati sono visualizzati in un controllo <xref:System.Windows.Forms.DataGridView>, selezionarlo. Se i dati del form sono visualizzati in controlli singoli, selezionare qualsiasi controllo associato a dati.  
   
 3. Nel **tabella di origine dati selezionare** area, selezionare il tablethat che si desidera aggiungere la parametrizzazione per.  
   
@@ -82,7 +82,7 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
   
 5. Nel **testo della Query** , digitare una query che accetta parametri.  
   
-6. Selezionare**OK**.  
+6. Scegliere **OK**.  
   
     Un controllo per il parametro di input e un **Load** pulsante vengono aggiunti al form in un <xref:System.Windows.Forms.ToolStrip> controllo.  
   
@@ -105,7 +105,7 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
   
 1.  Nel **Progettazione Dataset**, selezionare la query TableAdapter che deve accettare i valori dei parametri null.  
   
-2.  Nel **delle proprietà** finestra, seleziona**parametri**. Premere quindi sui puntini di sospensione (**...** ) per aprire la **Editor delle raccolte Parameters**.  
+2.  Nel **delle proprietà** finestra, seleziona **parametri**. Premere quindi sui puntini di sospensione (**...** ) per aprire la **Editor delle raccolte Parameters**.  
   
 3.  Selezionare il parametro che consente valori null e impostare il **AllowDbNull** proprietà `true`.  
   

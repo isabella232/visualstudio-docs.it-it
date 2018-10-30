@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822105"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219640"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Eseguire l'associazione di scelte rapide da tastiera a voci di menu
 Per associare un tasto di scelta rapida per un comando di menu personalizzate, è sufficiente aggiungere una voce per il *vsct* file per il pacchetto. Questo argomento viene illustrato come eseguire il mapping di un tasto di scelta rapida per un pulsante personalizzato, voce di menu o comandi della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o limitati a un editor personalizzato.  
@@ -45,7 +45,7 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
 4. Provare diverse combinazioni di tasti per trovarne uno che non è mappata.  
   
    > [!NOTE]
-   >  Tasti di scelta rapida che usano **Alt** può aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **tasti di scelta attualmente utilizzato da** casella può essere vuoto quando si digita un collegamento che include **Alt**. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
+   >  Tasti di scelta rapida che usano **Alt** può aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **combinazione già utilizzata da** casella può essere vuoto quando si digita un collegamento che include **Alt**. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
   
    La procedura seguente si presuppone che si dispone di un pacchetto VSPackage esistente con un comando di menu. Se occorre assistenza questa operazione, dare un'occhiata [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -78,7 +78,7 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
   
    Nella maggior parte delle situazioni **MAIUSC** non deve essere utilizzato senza un modificatore secondo quanto ci si già fa sì che la maggior parte dei tasti alfanumerici in cui digitare una lettera maiuscola o un simbolo.  
   
-   Codici di tasti virtuali permettono di accedere tasti speciali che non è un carattere associato, ad esempio, le chiavi di funzione e il **Backspace** chiave. Per altre informazioni, vedere [codici tasto virtuale](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Codici di tasti virtuali permettono di accedere tasti speciali che non è un carattere associato, ad esempio, le chiavi di funzione e il **Backspace** chiave. Per altre informazioni, vedere [codici tasto virtuale](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Per rendere disponibile il comando in Visual Studio editor, impostare il `editor` dell'attributo `guidVSStd97`.  
   

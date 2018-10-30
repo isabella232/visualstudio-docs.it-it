@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7b9955cf71b1d8862274d4b3501cee35ddd080f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212383"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220534"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ End Sub
   
 3.  Aggiungere il codice per verificare che `e.ProposedValue` contiene dati che soddisfano i requisiti dell'applicazione. Se il valore proposto è inaccettabile, impostare la colonna a indicare che contiene un errore.  
   
-     Esempio di codice seguente consente di verificare che il **Quantity** colonna contiene più di 0. Se**Quantity** è minore o uguale a 0, la colonna è impostata su un errore. Il `Else` clausola risolve il problema se**Quantity** è maggiore di 0. Il codice nel gestore dell'evento di modifica delle colonne sarà simile al seguente:  
+     Esempio di codice seguente consente di verificare che il **Quantity** colonna contiene più di 0. Se **Quantity** è minore o uguale a 0, la colonna è impostata su un errore. Il `Else` clausola risolve il problema se **Quantity** è maggiore di 0. Il codice nel gestore dell'evento di modifica delle colonne sarà simile al seguente:  
   
     ```vb  
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then  
