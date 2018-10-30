@@ -1,4 +1,4 @@
----
+﻿---
 title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 5
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità di autenticazione fornite dai modelli di progetto Web Django.
 ms.date: 08/13/2018
