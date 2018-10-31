@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823879"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218925"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opzioni, editor di testo, di base (Visual Basic), avanzato
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) contiene le proprietà seguenti:
@@ -71,16 +71,6 @@ L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una line
 **Inserimento automatico di membri Interface e MustOverride**
 
 Quando si esegue il commit di un'istruzione `Implements` o di un'istruzione `Inherits` per una classe, l'editor di testo inserisce prototipi per i membri che devono essere rispettivamente implementati o sottoposti a override.
-
-**Mostra separatori di riga routine**
-
-L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione vb del progetto nelle posizioni indicate nella tabella seguente:
-
-|Posizione nel file di origine vb|Esempio di posizione della linea|
-| - | - |
-|Dopo la chiusura di un costrutto di dichiarazione di blocco|- Alla fine di una classe, struttura, modulo, interfaccia o enumerazione<br />- Dopo una proprietà, funzione o sub<br />- Non tra le clausole get e set in una proprietà|
-|Dopo un set di costrutti a riga singola|- Dopo le istruzioni di importazione, prima di una definizione di tipo in un file di classe<br />- Dopo le variabili dichiarate in una classe, prima di qualsiasi routine|
-|Dopo le dichiarazioni a riga singola (dichiarazioni non block-level)|- Dopo le istruzioni di importazione, le istruzioni inherits, le dichiarazioni di variabili, le dichiarazioni di eventi, le dichiarazioni di delegati e le istruzioni di dichiarazione di DLL|
 
 **Abilita suggerimenti per la correzione di errore**
 

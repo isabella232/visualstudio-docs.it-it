@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138924"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050365"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
 
@@ -33,9 +33,9 @@ Quando si installa Visual Studio 2017 da un prompt dei comandi, è possibile usa
 
 Insieme alle opzioni della riga di comando viene usato il programma di bootstrap dell'installazione, ovvero un file di dimensioni ridotte (circa 1 MB) che avvia il processo di download. Il programma di avvio automatico è il primo eseguibile che viene avviato quando si esegue il download dal sito di Visual Studio. Usare i collegamenti seguenti per accedere direttamente al programma di bootstrap della versione più recente per l'edizione del prodotto da installare:
 
-* [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
-* [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="list-of-command-line-parameters"></a>Elenco dei parametri della riga di comando
 
@@ -149,7 +149,7 @@ Durante ogni operazione nella directory `%TEMP%` vengono generati diversi file d
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Command-line parameter examples for Visual Studio 2017 installation](command-line-parameter-examples.md) (Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017)
-* [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md)
-* [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md)
+- [Command-line parameter examples for Visual Studio 2017 installation](command-line-parameter-examples.md) (Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017)
+- [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md)
+- [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d71a5eaaf37b5707ef8722399d33e96f1259e4f0
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277763"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220495"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione autonoma nativa (C/C++) in esecuzione e raccogliere dati sui conflitti di thread.  

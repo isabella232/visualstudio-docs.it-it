@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- vs.toolsoptionspages.text_editor.file_extension
+- VS.ToolsOptionsPages.Text_Editor.File_Extension
 helpviewer_keywords:
 - file extensions, associating to editor
 - Editing Experience
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5fc6249477cdab9a4c13608a260820a801e081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eacb43dfa414d29f614c1ee188c38467ba288b33
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945740"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218441"
 ---
 # <a name="options-text-editor-file-extension"></a>Opzioni, Editor di testo, Estensione file
 La finestra di dialogo Opzioni consente di specificare il modo in cui tutti i file con determinate estensioni verranno gestiti nell'ambiente di sviluppo integrato (IDE) di Visual Studio. Per ogni **estensione** è possibile selezionare uno strumento di modifica. In questo modo è possibile scegliere l'editor dell'IDE o la finestra di progettazione in cui verranno aperti i documenti di un determinato tipo. Per visualizzare queste opzioni, scegliere **Opzioni** dal **Strumenti**, espandere il nodo **Editor di testo** e selezionare **Estensione di file**.
