@@ -1,7 +1,7 @@
 ---
 title: Esercitazione sull'uso di Python, passaggio 4, debug
 description: Passaggio 4 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato a come eseguire il codice Python nel debugger.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b163a7e421e3713cb160f4d0274f736d5d977d7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513335"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220134"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: Eseguire il codice nel debugger
 

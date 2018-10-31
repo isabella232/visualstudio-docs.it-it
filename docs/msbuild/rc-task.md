@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7751a53430518df9ce80fd053be5414e015143d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151654"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219432"
 ---
 # <a name="rc-task"></a>RC (attività)
-Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows, *rc.exe*. L'attività **RC** compila le risorse, ad esempio cursori, icone, bitmap, finestre di dialogo e tipi di carattere, in un file di risorse *(RES)*. Per altre informazioni, vedere [-resource (opzioni del compilatore C#)](https://docs.microsoft.com/en-us/windows/desktop/menurc/resource-compiler).
+Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows, *rc.exe*. L'attività **RC** compila le risorse, ad esempio cursori, icone, bitmap, finestre di dialogo e tipi di carattere, in un file di risorse *(RES)*. Per altre informazioni, vedere [-resource (opzioni del compilatore C#)](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività RC. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  

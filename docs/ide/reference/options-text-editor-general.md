@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830665"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219159"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
 
@@ -94,14 +94,6 @@ Quando questa opzione è selezionata, viene visualizzato un margine verticale lu
 ### <a name="indicator-margin"></a>Margine indicatore
 
 Quando questa opzione è selezionata, viene visualizzato un margine verticale all'esterno del bordo sinistro dell'area di testo dell'editor. Quando si fa clic su questo margine vengono visualizzate un'icona e un tooltip relativi al testo. Ad esempio, nel margine indicatore vengono visualizzati punti di interruzione o collegamenti dell'Elenco attività. Le informazioni del margine indicatore non vengono stampate.
-
-### <a name="vertical-scroll-bar"></a>Barra di scorrimento verticale
-
-Quando questa opzione è selezionata, viene visualizzata una barra di scorrimento verticale che consente di scorrere verso l'alto e verso il basso per visualizzare gli elementi al di fuori dell'area di visualizzazione dell'editor. Se non sono disponibili barre di scorrimento verticali, per scorrere è possibile usare i tasti PGSU e PGGIÙ e i tasti di direzione.
-
-### <a name="horizontal-scroll-bar"></a>Barra di scorrimento orizzontale
-
-Quando questa opzione è selezionata, viene visualizzata una barra di scorrimento orizzontale che consente di scorrere da un lato all'altro per visualizzare gli elementi al di fuori dell'area di visualizzazione dell'editor. Se non sono disponibili barre di scorrimento orizzontali, per scorrere è possibile utilizzare i tasti di direzione.
 
 ### <a name="highlight-current-line"></a>Evidenzia riga corrente
 

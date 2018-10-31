@@ -28,15 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863855"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219809"
 ---
 # <a name="midl-task"></a>MIDL (attività)
-Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 ## <a name="parameters"></a>Parametri  
  Di seguito sono descritti i parametri dell'attività **MIDL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
@@ -47,7 +47,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Aggiunge una directory all'elenco di directory nelle quali viene effettuata la ricerca dei file IDL importati, inclusi i file di intestazione e i file di configurazione dell'applicazione.  
   
-     Per altre informazioni, vedere l'opzione **/I** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/I** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **AdditionalOptions**  
   
@@ -55,7 +55,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Elenco di opzioni della riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività MIDL.  
   
-     Per altre informazioni, vedere [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ApplicationConfigurationMode**  
   
@@ -63,7 +63,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, consente di usare alcune parole chiave dei file di configurazione dell'applicazione nel file IDL.  
   
-     Per altre informazioni, vedere l'opzione **/app_config** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/app_config** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ClientStubFile**  
   
@@ -71,7 +71,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome del file stub client per un'interfaccia RPC.  
   
-     Per altre informazioni, vedere l'opzione **/cstub** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **ServerStubFile** in questa tabella.  
+     Per altre informazioni, vedere l'opzione **/cstub** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **ServerStubFile** in questa tabella.  
   
 -   **CPreprocessOptions**  
   
@@ -79,7 +79,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica le opzioni da passare al preprocessore C/C++. Specificare un elenco di opzioni del preprocessore delimitate da spazio.  
   
-     Per altre informazioni, vedere l'opzione **/cpp_opt** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/cpp_opt** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **DefaultCharType**  
   
@@ -95,7 +95,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**Unsigned**|**/char unsigned**|  
     |**Ascii**|**/char ascii7**|  
   
-     Per altre informazioni, vedere l'opzione **/char** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/char** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **DllDataFileName**  
   
@@ -103,7 +103,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome file per il file *dlldata* generato per una DLL del proxy.  
   
-     Per altre informazioni, vedere l'opzione **/dlldata** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/dlldata** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **EnableErrorChecks**  
   
@@ -119,7 +119,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**EnableCustom**|**/error**|  
     |**All**|**/error all**|  
   
-     Per altre informazioni, vedere l'opzione **/error** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/error** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ErrorCheckAllocations**  
   
@@ -127,7 +127,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, verifica la presenza di errori di memoria insufficiente.  
   
-     Per altre informazioni, vedere l'opzione **/error allocation** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/error allocation** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ErrorCheckBounds**  
   
@@ -135,7 +135,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, controlla le dimensioni delle matrici variabili conformi e variabili rispetto alla specifica relativa alla durata delle trasmissioni.  
   
-     Per altre informazioni, vedere l'opzione **/error bounds_check** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/error bounds_check** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ErrorCheckEnumRange**  
   
@@ -151,7 +151,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, controlla che nessun puntatore di riferimento Null venga passato agli stub client.  
   
-     Per altre informazioni, vedere l'opzione **/error ref** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/error ref** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ErrorCheckStubData**  
   
@@ -159,7 +159,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, genera uno stub che acquisisce eccezioni di unmarshalling sul lato server e le propaga al client.  
   
-     Per altre informazioni, vedere l'opzione **/error stub_data** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/error stub_data** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **GenerateClientFiles**  
   
@@ -174,7 +174,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**None**|**/client none**|  
     |**Stub**|**/client stub**|  
   
-     Per altre informazioni, vedere l'opzione **/client** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/client** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **GenerateServerFiles**  
   
@@ -189,7 +189,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**None**|**/server none**|  
     |**Stub**|**/server stub**|  
   
-     Per altre informazioni, vedere l'opzione **/server** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/server** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **GenerateStublessProxies**  
   
@@ -197,7 +197,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, genera stub completamente interpretati con proxy senza stub per le interfacce degli oggetti.  
   
-     Per altre informazioni, vedere l'opzione **/Oicf** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/Oicf** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **GenerateTypeLibrary**  
   
@@ -205,7 +205,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, non viene generato un file di libreria dei tipi (file con estensione *tlb*).  
   
-     Per altre informazioni, vedere l'opzione **/notlb** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/notlb** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **HeaderFileName**  
   
@@ -213,7 +213,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome del file di intestazione generato.  
   
-     Per altre informazioni, vedere l'opzione **/h** oppure **/header** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/h** oppure **/header** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -221,7 +221,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, l'attività MIDL effettua la ricerca solo nelle directory specificate usando l'opzione **AdditionalIncludeDirectories** e ignora la directory corrente e le directory specificate dalla variabile di ambiente INCLUDE.  
   
-     Per altre informazioni, vedere l'opzione **/no_def_idir** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/no_def_idir** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **InterfaceIdentifierFileName**  
   
@@ -229,7 +229,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome del *file dell'identificatore di interfaccia* per un'interfaccia COM. Esegue l'override del nome predefinito ottenuto aggiungendo "_i.c" al nome file IDL.  
   
-     Per altre informazioni, vedere l'opzione **/iid** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/iid** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **LocaleID**  
   
@@ -237,7 +237,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica l'*identificatore delle impostazioni locali* che consente l'uso di caratteri internazionali in file di input, nomi file e percorsi di directory. Specificare un identificatore delle impostazioni locali decimale.  
   
-     Per altre informazioni, vedere l'opzione **/lcid** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [Identificatori delle impostazioni locali](https://docs.microsoft.com/en-us/windows/desktop/intl/locale-identifiers).  
+     Per altre informazioni, vedere l'opzione **/lcid** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [Identificatori delle impostazioni locali](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).  
   
 -   **MkTypLibCompatible**  
   
@@ -245,7 +245,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, è necessario che il formato dei file di input sia compatibile con *mktyplib.exe* versione 2.03.  
   
-     Per altre informazioni, vedere l'opzione **/mktyplib203** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [ODL file syntax](/previous-versions/windows/desktop/automat/odl-file-syntax) (Sintassi del file ODL) nel sito Web MSDN.  
+     Per altre informazioni, vedere l'opzione **/mktyplib203** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [ODL file syntax](/previous-versions/windows/desktop/automat/odl-file-syntax) (Sintassi del file ODL) nel sito Web MSDN.  
   
 -   **OutputDirectory**  
   
@@ -253,7 +253,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica la directory predefinita in cui l'attività MIDL scrive i file di output.  
   
-     Per altre informazioni, vedere l'opzione **/out** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/out** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **PreprocessorDefinitions**  
   
@@ -261,7 +261,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]*.  
   
-     Per altre informazioni, vedere l'opzione **/D** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.  
+     Per altre informazioni, vedere l'opzione **/D** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.  
   
 -   **ProxyFileName**  
   
@@ -269,7 +269,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome del file proxy di interfaccia per un'interfaccia COM.  
   
-     Per altre informazioni, vedere l'opzione **/proxy** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/proxy** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **RedirectOutputAndErrors**  
   
@@ -277,7 +277,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Reindirizza l'output, ad esempio messaggi di errore e avvisi, dall'output standard al file specificato.  
   
-     Per altre informazioni, vedere l'opzione **/o** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/o** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **ServerStubFile**  
   
@@ -285,7 +285,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome del file stub server per un'interfaccia RPC.  
   
-     Per altre informazioni, vedere l'opzione **/sstub** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **ClientStubFile** in questa tabella.  
+     Per altre informazioni, vedere l'opzione **/sstub** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **ClientStubFile** in questa tabella.  
   
 -   **Source**  
   
@@ -309,7 +309,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     Per altre informazioni, vedere l'opzione **/Zp** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). L'opzione **/Zp** equivale all'opzione **/pack** e all'opzione **/align** precedente.  
+     Per altre informazioni, vedere l'opzione **/Zp** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). L'opzione **/Zp** equivale all'opzione **/pack** e all'opzione **/align** precedente.  
   
 -   **SuppressCompilerWarnings**  
   
@@ -317,7 +317,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, elimina i messaggi di avviso dall'attività MIDL.  
   
-     Per altre informazioni, vedere l'opzione **/no_warn** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/no_warn** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **SuppressStartupBanner**  
   
@@ -325,7 +325,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.  
   
-     Per altre informazioni, vedere l'opzione **/nologo** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/nologo** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **TargetEnvironment**  
   
@@ -342,7 +342,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
   
-     Per altre informazioni, vedere l'opzione **/env** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/env** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **TrackerLogDirectory**  
   
@@ -363,7 +363,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     Per altre informazioni, vedere le opzioni **/newtlb** e **/oldtlb** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere le opzioni **/newtlb** e **/oldtlb** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **TypeLibraryName**  
   
@@ -371,7 +371,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specifica il nome del file di libreria dei tipi.  
   
-     Per altre informazioni, vedere l'opzione **/tlb** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere l'opzione **/tlb** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -379,7 +379,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Rimuove le definizioni precedenti di un nome passando il nome al preprocessore C come in base a una direttiva `#undefine`. Specificare uno o più nomi definiti in precedenza.  
   
-     Per altre informazioni, vedere l'opzione **/U** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **PreprocessorDefinitions** in questa tabella.  
+     Per altre informazioni, vedere l'opzione **/U** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **PreprocessorDefinitions** in questa tabella.  
   
 -   **ValidateAllParameters**  
   
@@ -387,7 +387,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, genera altre informazioni di controllo errore usate per eseguire controlli integrità in fase di esecuzione. Se `false`, le informazioni di controllo errore non vengono generate.  
   
-     Per altre informazioni, vedere le opzioni **/robust** e **/no_robust** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
+     Per altre informazioni, vedere le opzioni **/robust** e **/no_robust** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
   
 -   **WarnAsError**  
   
@@ -397,7 +397,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se il parametro dell'attività MIDL **WarningLevel** non viene specificato, gli avvisi a livello predefinito, ovvero il livello 1, vengono considerati come errori.  
   
-     Per altre informazioni, vedere l'opzione **/WX** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **WarningLevel** in questa tabella.  
+     Per altre informazioni, vedere l'opzione **/WX** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **WarningLevel** in questa tabella.  
   
 -   **WarningLevel**  
   
@@ -415,7 +415,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     Per altre informazioni, vedere l'opzione **/W** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **WarnAsError** in questa tabella.  
+     Per altre informazioni, vedere l'opzione **/W** in [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **WarnAsError** in questa tabella.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
