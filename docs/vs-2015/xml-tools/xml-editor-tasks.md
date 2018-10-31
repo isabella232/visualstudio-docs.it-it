@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241189"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244437"
 ---
 # <a name="xml-editor-tasks"></a>Attività dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Contenuto della sezione viene descritto come completare attività comuni con l'e
  Viene dimostrato come creare nuovi frammenti XML.  
   
  [Procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- Viene illustrato come usare la funzionalità XSLT IntelliSense.  
+ Illustra come usare la funzionalità XSLT IntelliSense.  
   
  [Procedura dettagliata: uso della gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Viene illustrato come eseguire il debug di un foglio di stile di riferimento.  
