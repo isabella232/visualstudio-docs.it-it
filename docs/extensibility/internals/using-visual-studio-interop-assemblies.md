@@ -51,7 +51,7 @@ Assembly di interoperabilità Visual Studio consentono alle applicazioni gestite
 > [!NOTE]
 >  Le eccezioni compromettono le prestazioni e servono per indicare condizioni anomale dei programmi. Le condizioni che si verificano spesso devono essere gestite inline, invece di generare un'eccezione.  
   
-## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown parametri passati come tipo void * *  
+## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown parametri passati come tipo void **  
  Cercare [i parametri definiti come tipo out] `void **` in COM interfaccia, ma che sono definiti come `[``iid_is``]` nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo del metodo assembly di interoperabilità.  
   
  In alcuni casi, un'interfaccia COM che genera un `IUnknown` oggetto e l'interfaccia COM passa quindi come tipo `void **`. Queste interfacce sono particolarmente importanti perché se la variabile viene definita come [out] nel file IDL, la `IUnknown` oggetto è con conteggio dei riferimenti con il `AddRef` metodo. Se l'oggetto non viene gestita correttamente, si verifica una perdita di memoria.  

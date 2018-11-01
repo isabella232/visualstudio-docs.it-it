@@ -90,7 +90,7 @@ Se Visual Studio non riesce a trovare un percorso di origine per un punto di int
 
 ## <a name="breakpoints-not-hit"></a>Mancato accesso ai punti di interruzione
 
-Verificare che lo script in uso sia caricato/usato correttamente nella scena Unity corrente. Chiudere Visual Studio e Unity, eliminare tutti i file generati, con estensione csproj e sln, e l'intera cartella della raccolta.
+Verificare che lo script in uso sia caricato/usato correttamente nella scena Unity corrente. Chiudere Visual Studio e Unity, eliminare tutti i file generati, con estensione \*.csproj e \*.sln, e l'intera cartella della raccolta.
 
 ## <a name="unable-to-debug-android-players"></a>Impossibile eseguire il debug dei lettori Android
 
