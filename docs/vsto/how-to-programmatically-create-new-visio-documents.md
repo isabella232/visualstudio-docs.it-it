@@ -16,41 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b5b66690d3856a2bf1fc6df417b60ab5e293127
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671560"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: creazione di nuovi documenti di Visio a livello di codice
-  Quando si crea un nuovo disegno di Microsoft Office Visio, viene aggiunto al `Microsoft.Office.Interop.Visio.Documents` raccolta di documenti di Visio aperti. Di conseguenza, il `Microsoft.Office.Interop.Visio.Documents.Add` metodo crea un nuovo documento di disegno di Visio. Per altre informazioni, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) .  
+  Quando si crea un nuovo disegno di Microsoft Office Visio, viene aggiunto alla raccolta `Microsoft.Office.Interop.Visio.Documents` di documenti di Visio aperti. Il metodo `Microsoft.Office.Interop.Visio.Documents.Add` crea quindi un nuovo documento di disegno di Visio. Per altre informazioni, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .  
   
 ## <a name="create-new-blank-documents"></a>Creare nuovi documenti vuoti  
   
 ### <a name="to-create-a-new-document"></a>Per creare un nuovo documento  
   
--   Usare il `Microsoft.Office.Interop.Visio.Documents.Add` metodo per creare un nuovo documento vuoto che non si basa su un modello.  
+-   Usare il metodo `Microsoft.Office.Interop.Visio.Documents.Add` per creare un nuovo documento vuoto che non si basa su un modello.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]  
   
 ## <a name="create-documents-copied-from-existing-documents"></a>Creazione di documenti copiati da documenti esistenti  
- Il `Microsoft.Office.Interop.Visio.Documents.Add` metodo può creare un nuovo documento che è una copia di un documento di Visio esistente. È necessario specificare il nome file e il percorso completo del diagramma.  
+ Il metodo `Microsoft.Office.Interop.Visio.Documents.Add` può creare un nuovo documento che è una copia di un documento di Visio esistente. È necessario specificare il nome file e il percorso completo del diagramma.  
   
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>Per creare un nuovo documento copiato da un documento esistente  
   
--   Chiamare il `Microsoft.Office.Interop.Visio.Documents.Add` (metodo) e specificare il percorso del diagramma di Visio.  
+-   Chiamare il metodo `Microsoft.Office.Interop.Visio.Documents.Add` e specificare il percorso del diagramma di Visio.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
 ## <a name="create-stencils-copied-from-existing-stencils"></a>Creazione di stencil copiati da stencil esistenti  
- Il metodo [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) può creare un nuovo stencil che è una copia di uno stencil di Visio esistente. È necessario specificare il nome file e il percorso completo dello stencil.  
+ Il metodo [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) può creare un nuovo stencil che è una copia di uno stencil di Visio esistente. È necessario specificare il nome file e il percorso completo dello stencil.  
   
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Per creare un nuovo stencil copiato da uno stencil esistente  
   
--   Chiamare il `Microsoft.Office.Interop.Visio.Documents.Add` (metodo) e specificare il percorso dello stencil.  
+-   Chiamare il metodo `Microsoft.Office.Interop.Visio.Documents.Add` e specificare il percorso dello stencil.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]  
@@ -60,7 +60,7 @@ ms.locfileid: "35256744"
   
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Per creare un nuovo documento basato su un modello esistente  
   
--   Chiamare il `Microsoft.Office.Interop.Visio.Documents.Add` (metodo) e specificare il percorso del modello.  
+-   Chiamare il metodo `Microsoft.Office.Interop.Visio.Documents.Add` e specificare il percorso del modello.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]  

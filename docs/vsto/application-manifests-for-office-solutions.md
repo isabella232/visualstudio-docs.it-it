@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673346"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744938"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesti dell'applicazione per le soluzioni Office
   Un manifesto dell'applicazione è un file XML che descrive gli assembly caricati in una soluzione Microsoft Office. Usano gli strumenti di sviluppo di Microsoft Office in Visual Studio il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schema manifesto dell'applicazione definito nel [manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest) riferimento.  
@@ -96,7 +96,7 @@ ms.locfileid: "35673346"
  È possibile modificare manualmente i manifesti dell'applicazione e di distribuzione nelle soluzioni Office. Successivamente, è necessario firmare nuovamente l'applicazione e manifesti della distribuzione tramite il Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*). Per altre informazioni, vedere [procedura: firmare manifesti dell'applicazione e distribuzione](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Posizione file  
- Un manifesto dell'applicazione è specifico per una singola versione di una soluzione. Per questo motivo, i manifesti dell'applicazione devono essere archiviati separatamente da quelli di distribuzione. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Posiziona i file specifici della versione in una sottodirectory denominata in base alla versione associata nella *i file dell'applicazione* sottodirectory nella cartella di pubblicazione.  
+ Un manifesto dell'applicazione è specifico per una singola versione di una soluzione. Per questo motivo, i manifesti dell'applicazione devono essere archiviati separatamente da quelli di distribuzione. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] posiziona i file specifici della versione in una sottodirectory denominata in base alla versione associata nella sottodirectory *File applicazione* nella cartella di pubblicazione.  
   
 ## <a name="file-name-syntax"></a>Sintassi del nome file  
  Il nome di un file manifesto dell'applicazione deve essere il nome completo e l'estensione dell'applicazione come identificati nel **assemblyIdentity** elemento, seguito dall'estensione *manifest*. Ad esempio, un manifesto dell'applicazione che si intende il *OutlookAddIn1.dll* personalizzazione utilizzerebbe la seguente sintassi del nome file.  

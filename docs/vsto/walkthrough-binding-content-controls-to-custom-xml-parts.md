@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673042"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procedura dettagliata: Associare controlli contenuto a parti XML personalizzate
   Questa procedura dettagliata illustra come associare i controlli contenuto in una personalizzazione a livello di documento per Word a dati XML archiviati nel documento.  
@@ -296,7 +296,7 @@ ms.locfileid: "49916751"
   
 9. Denominare il file **EmployeeControls**.  
   
-     Il **EmployeeControls. docx** documento viene salvato in formato Open XML. Rinominando questo documento con il *zip* estensione, è possibile esaminare il contenuto del documento. Per altre informazioni sul formato Open XML, vedere l'articolo tecnico [formati di presentazione di Office (2007) Open XML file](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     Il **EmployeeControls. docx** documento viene salvato in formato Open XML. Rinominando questo documento con il *zip* estensione, è possibile esaminare il contenuto del documento. Per altre informazioni sul formato Open XML, vedere l'articolo tecnico [formati di presentazione di Office (2007) Open XML file](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Aprire il **EmployeeControls** file.  
   

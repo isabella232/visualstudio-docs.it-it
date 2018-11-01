@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1db7f0ec9404b71bb9f7d71d83147e53ab2d17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671742"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Eseguire l'aggiornamento e la migrazione di soluzioni Office
   Se si dispone di un progetto di Microsoft Office che è stato creato in una versione precedente di Visual Studio, è necessario aggiornare il progetto per usarlo nella versione corrente di Visual Studio. Per aggiornare un progetto di Microsoft Office, aprirlo in una versione di Visual Studio che include Microsoft Office Developer Tools. Per altre informazioni sulle versioni di Visual Studio che includono Microsoft Office developer tools, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,7 +88,7 @@ ms.locfileid: "35673311"
  Se si vuole usare ClickOnce per distribuire il componente aggiuntivo VSTO, è possibile eliminare completamente il progetto di installazione o InstallShield Limited Edition. Per altre informazioni sulla distribuzione di componenti aggiuntivi VSTO usando ClickOnce, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: aggiornamento di Office solutions](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Procedura: aggiornamento di Office solutions](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Esegue l'aggiornamento, finestra di dialogo Opzioni progetto](../vsto/project-upgrade-options-dialog-box.md)  
   

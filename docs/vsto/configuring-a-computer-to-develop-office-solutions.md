@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671932"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672226"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurare un computer per sviluppare soluzioni Office
 
@@ -44,7 +44,7 @@ Se si installa una versione supportata di Visual Studio, .NET Framework e Micros
 
      Per assicurarsi che questi strumenti vengono installati, avviare il programma di installazione di Visual Studio e scegliere il **Modify** pulsante. Selezionare la casella di controllo **Microsoft Office Developer Tools** , quindi scegliere il pulsante **Aggiorna** .
 
-- Assicurarsi che non si esegue una versione di Office a portata di a portata di clic. Visualizzare [procedura: verificare se Outlook è un'applicazione a portata di clic in un computer](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Assicurarsi che non si esegue una versione di Office a portata di a portata di clic. Visualizzare [procedura: verificare se Outlook è un'applicazione a portata di clic in un computer](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Assicurarsi che si esegue solo una versione di Microsoft Office.
 

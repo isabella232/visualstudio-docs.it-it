@@ -29,13 +29,13 @@ ms.locfileid: "24632731"
 # <a name="access-is-denied"></a>Accesso negato
 Uno script ha cercato di accedere ai dati da un'origine diversa dall'host della pagina corrente. I criteri di corrispondenza dell'origine seguiti da Internet Explorer e da altri browser consentono agli script di accedere ai dati solo da origini con lo stesso schema, host e porta dell'URL della pagina corrente.  
   
- Ad esempio, se la pagina corrente è https://dipendenti.società.com, non è possibile accedere ai dati dagli URL seguenti:  
+ Ad esempio, se la pagina corrente è https://employees.mycompany.com , non è possibile accedere ai dati dagli URL seguenti:  
   
--   http://dati.contoso.com, perché usa HTTP invece di HTTPS.  
+-   [http://data.contoso.com](http://data.contoso.com), perché usa HTTP invece di HTTPS.  
   
--   https://originedati.com, perché è un dominio diverso.  
+-   [https://somedatasource.com](https://somedatasource.com), perché è un dominio diverso.  
   
--   https://dipendenti.società.com:8888, perché usa una porta diversa.  
+-   https://employees.mycompany.com:8888, perché usa una porta diversa.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673081"
 ---
 # <a name="create-outlook-form-regions"></a>Creare aree del modulo di Outlook
   È possibile usare aree del modulo per personalizzare i moduli di Microsoft Office Outlook. Visual Studio fornisce strumenti avanzati che semplificano la progettazione, lo sviluppo e il debug delle aree del modulo.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866428"
   
 - Visualizzare l'interfaccia utente personalizzata nel riquadro di lettura e nei controlli.  
   
-  Per altre informazioni, vedere [personalizzare le pagine di form e aree del modulo](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Per altre informazioni, vedere [personalizzare le pagine di form e aree del modulo](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Aggiungere un'area del modulo di Outlook al progetto  
  È possibile usare la **nuova area del modulo Outlook** guidata consente di progettare una nuova area del modulo o importare un'area del modulo progettata in Outlook. È anche possibile riutilizzare un'area del modulo esistente, precedentemente usata in un altro progetto di componente aggiuntivo VSTO di Outlook.  

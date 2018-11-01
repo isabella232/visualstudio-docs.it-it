@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672460"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funzionalità disponibili in base al tipo di progetto e applicazioni di Office
   In Visual Studio sono disponibili numerosi tipi di modelli di progetto che supportano scenari aziendali diversi per le applicazioni di Microsoft Office, inclusi i tipi seguenti:  
@@ -62,9 +62,9 @@ ms.locfileid: "49929855"
 |Esporre un oggetto in un componente aggiuntivo VSTO ad altre soluzioni Microsoft Office.|Progetti di componente aggiuntivo VSTO.|[Chiamare il codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |I controlli host seguenti:<br /><br /> -Grafico<br />-ListObject<br />-NamedRange<br />-Controlli contenuto<br />-Segnalibro|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO per Word ed Excel.|[Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)|  
 |I controlli host seguenti:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Progetti a livello di documento.|[Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)|  
-|Distribuzione di più progetti.|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO.|[Procedura dettagliata: Distribuire più soluzioni Office in un singolo programma di installazione di ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Distribuzione di più progetti.|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO.|[Procedura dettagliata: Distribuire più soluzioni Office in un singolo programma di installazione di ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Aree di modulo di Outlook.|Progetti di componente aggiuntivo VSTO per Outlook.|[Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Azioni di post-distribuzione.|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO.|[Procedura dettagliata: Copiare un documento al computer dell'utente finale dopo un'installazione di ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Azioni di post-distribuzione.|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO.|[Procedura dettagliata: Copiare un documento al computer dell'utente finale dopo un'installazione di ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Personalizzazioni della barra multifunzione.|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO per le applicazioni seguenti:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-PowerPoint<br />-Progetto<br />-Visio<br />-Word|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|  
 |Programma di creazione documenti visivi.|Progetti a livello di documento.|[Progetti di Office in ambiente di Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

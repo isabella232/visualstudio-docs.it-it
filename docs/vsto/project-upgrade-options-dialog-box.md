@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671937"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Esegue l'aggiornamento, finestra di dialogo Opzioni progetto
   Usare la pagina **Aggiornamento progetto** per specificare se Visual Studio modifica automaticamente progetti di componente aggiuntivo VSTO per usare la versione di Office installata nel computer di sviluppo.  
@@ -37,6 +37,6 @@ ms.locfileid: "35673706"
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire l'aggiornamento e la migrazione di soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Procedura: aggiornamento di Office solutions](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
+ [Procedura: aggiornamento di Office solutions](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

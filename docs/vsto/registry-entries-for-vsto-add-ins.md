@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673016"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del Registro di sistema per componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881781"
   
  Analogamente alle altre voci del Registro di sistema condivise da tutti i componenti aggiuntivi VSTO, Visual Studio crea le voci relative all'area del modulo nel computer di sviluppo durante la compilazione del progetto. Se si usa ClickOnce per distribuire il componente aggiuntivo VSTO, le voci del Registro di sistema vengono create automaticamente nel computer dell'utente finale. Se si usa Windows Installer per distribuire il componente aggiuntivo VSTO, è necessario configurare il progetto InstallShield Limited Edition per creare le voci del Registro di sistema nel computer dell'utente finale.  
   
- Per altre informazioni sulle voci del Registro di sistema area del modulo, vedere [specificare il percorso di un'area del modulo in un form personalizzato](http://msdn.microsoft.com/library/office/ff868998.aspx). Per altre informazioni sulle aree del modulo Outlook, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).  
+ Per altre informazioni sulle voci del Registro di sistema area del modulo, vedere [specificare il percorso di un'area del modulo in un form personalizzato](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Per altre informazioni sulle aree del modulo Outlook, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Valori di LoadBehavior  
  Il **LoadBehavior** voce sotto il *radice*\Software\Microsoft\Office\\*nome applicazione*\Addins\\*componente aggiuntivo ID* chiave contiene una combinazione bit per bit dei valori che specificano il comportamento in fase di esecuzione del componente aggiuntivo VSTO. Il bit di ordine più basso (valori 0 e 1) indica se il componente aggiuntivo VSTO è attualmente caricato o scaricato. Gli altri bit indicano quando l'applicazione tenta di caricare il componente aggiuntivo VSTO.  

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859369"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673068"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office usando ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è necessario considerare tramite Windows Installer (*file con estensione msi*) se la soluzione sarà eseguita da più di un utente nello stesso computer.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859369"
 9. Se la soluzione è destinata a .NET Framework 4.5, selezionare anche il **Visual Studio 2010 Tools per Office Runtime** casella di controllo.  
 
     > [!NOTE]  
-    >  Per impostazione predefinita, questa casella di controllo non viene visualizzato. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Visualizzare [creare un pacchetto di programma di avvio automatico per Office 2013 VSTO Add-in con Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Per impostazione predefinita, questa casella di controllo non viene visualizzato. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Visualizzare [creare un pacchetto di programma di avvio automatico per Office 2013 VSTO Add-in con Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).  
 
 10. Sotto **specificare il percorso di installazione dei prerequisiti**, scegliere una delle opzioni che vengono visualizzati e quindi scegliere il **OK** pulsante.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859369"
 |Codice di errore|Definizione|  
 |----------------|----------------|  
 |0|La soluzione è stata installata o disinstallata correttamente oppure è stata visualizzata la Guida di VSTOInstaller.|  
-|-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più volte. Per altre informazioni, immettere "vstoinstaller /?" oppure vedere [creare un programma di installazione personalizzato per una soluzione ClickOnce Office](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più volte. Per altre informazioni, immettere "vstoinstaller /?" oppure vedere [creare un programma di installazione personalizzato per una soluzione ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Una o più opzioni della riga di comando non è valido. Per altre informazioni, immettere "vstoinstaller /?".|  
 |-200|L'URI del manifesto di distribuzione non è valido. Per altre informazioni, immettere "vstoinstaller /?".|  
 |-201|Non è stato possibile installare la soluzione perché il manifesto di distribuzione non è valido. Visualizzare [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859369"
 ## <a name="see-also"></a>Vedere anche  
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
  [Pubblicare soluzioni Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Procedura: pubblicare una soluzione Office usando ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Procedura: installare una soluzione ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Creare un programma di installazione personalizzato per una soluzione office ClickOnce](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Procedura: pubblicare una soluzione Office usando ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Procedura: installare una soluzione ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Creare un programma di installazione personalizzato per una soluzione office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

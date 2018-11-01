@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670845"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità
   Gli strumenti di sviluppo di Office in Visual Studio forniscono classi e finestre di progettazione che gestiscono molti dettagli di implementazione quando vengono usate per creare riquadri attività personalizzati, personalizzazioni della barra multifunzione e aree del modulo di Outlook in un componente aggiuntivo VSTO. Tuttavia, se sono necessari requisiti speciali è anche possibile implementare *l'interfaccia di estendibilità* per ogni funzionalità.  
@@ -71,7 +71,7 @@ ms.locfileid: "49873974"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
-  Per altre informazioni sull'implementazione <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, vedere [creare riquadri attività personalizzati in Office system 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) nella documentazione di Microsoft Office.  
+  Per altre informazioni sull'implementazione <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, vedere [creare riquadri attività personalizzati in Office system 2007](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) nella documentazione di Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Esempio di override del metodo RequestService  
  L'esempio di codice seguente illustra come eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> per ottenere un'istanza della classe `TaskPaneHelper` dall'esempio di codice precedente. Viene verificato il valore del parametro *serviceGuid* per determinare l'interfaccia necessaria e quindi viene restituito un oggetto che implementa l'interfaccia.  
