@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671863"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671093"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure guidate di sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure guidate di sviluppo descritte in questo articolo.   Questo contribuisce a garantire:
@@ -39,12 +39,12 @@ Se la soluzione viene utilizzato .NET 4.0 o versione successiva, usare tipi di i
 Se la soluzione Usa una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'uso di .NET 4.0 o versione successiva. Uso di .NET 4.0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>Evitare a seconda delle specifiche versioni di Office  
-Se la soluzione Usa la funzionalità disponibile solo nelle versioni più recenti di Office, verificare che la funzionalità sia (se possibile, a livello di funzionalità) in fase di esecuzione (ad esempio, utilizzando l'eccezione gestione o dal controllo della versione). Convalidare le versioni minime, anziché a versioni specifiche, usando le API supportate nel modello a oggetti, ad esempio la [Application.Version proprietà](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Non è consigliabile si basano su Office binaria dei metadati, i percorsi di installazione o le chiavi del Registro di sistema poiché questi può cambiare tra versioni, ambienti e le installazioni.
+Se la soluzione Usa la funzionalità disponibile solo nelle versioni più recenti di Office, verificare che la funzionalità sia (se possibile, a livello di funzionalità) in fase di esecuzione (ad esempio, utilizzando l'eccezione gestione o dal controllo della versione). Convalidare le versioni minime, anziché a versioni specifiche, usando le API supportate nel modello a oggetti, ad esempio la [Application.Version proprietà](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Non è consigliabile si basano su Office binaria dei metadati, i percorsi di installazione o le chiavi del Registro di sistema poiché questi può cambiare tra versioni, ambienti e le installazioni.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Abilitazione dell'utilizzo di Office a 32 bit sia 64 bit   
 La destinazione predefinita build deve supportare sia (x86) 32 bit e a 64 bit (x64), a meno che la soluzione dipende dalle librerie che sono disponibili solo per un determinato numero di bit. La versione a 64 bit di Office è in aumento nell'adozione, soprattutto in ambienti big data. Supporting sia a 32 e 64 bit rende più semplice per gli utenti per la transizione tra le versioni a 32 e 64 bit di Office.
 
-Quando si scrive codice VBA, safe a 64 bit usare istruzioni declare e convertire le variabili come appropriato. Inoltre, assicurarsi che i documenti possono essere condivisi tra gli utenti che eseguono versioni a 32 o 64 bit di Office fornisce il codice per ogni numero di bit. Per altre informazioni, vedere [a 64 bit di Visual Basic per la panoramica delle applicazioni](https://msdn.microsoft.com/library/office/gg264421.aspx).
+Quando si scrive codice VBA, safe a 64 bit usare istruzioni declare e convertire le variabili come appropriato. Inoltre, assicurarsi che i documenti possono essere condivisi tra gli utenti che eseguono versioni a 32 o 64 bit di Office fornisce il codice per ogni numero di bit. Per altre informazioni, vedere [a 64 bit di Visual Basic per la panoramica delle applicazioni](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 ## <a name="support-restricted-environments"></a>Supporto degli ambienti con restrizioni   
 La soluzione non dovrebbe richiedere privilegi di amministratore o l'elevazione dei privilegi di Account utente. Inoltre, la soluzione non deve dipendere l'impostazione o modifica:

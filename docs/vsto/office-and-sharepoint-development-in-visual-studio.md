@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671703"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Sviluppo per Office e SharePoint in Visual Studio
   È possibile estendere Microsoft Office e SharePoint creando un'app leggera o un componente aggiuntivo che gli utenti scaricano da [Office Store](https://store.office.com/) o da un catalogo dell'organizzazione oppure creando una soluzione basata su.NET Framework che gli utenti installano in un computer.  
@@ -45,7 +45,7 @@ ms.locfileid: "35673679"
 ##  <a name="Apps"></a> Creare componenti aggiuntivi per Office e SharePoint  
  Office 2013 e SharePoint 2013 introducono un nuovo modello di componente aggiuntivo che consente di creare, distribuire e monetizzare i componenti aggiuntivi che estendono Office e SharePoint.  Questi componenti aggiuntivi possono essere eseguiti in Office o SharePoint Online e gli utenti possono interagire con i componenti aggiuntivi da molti dispositivi.  
   
- Scopri come usare le nuove [modello di componente aggiuntivo di Office](https://msdn.microsoft.com/library/office/jj220082.aspx) per estendere l'esperienza di Office per gli utenti.  
+ Scopri come usare le nuove [modello di componente aggiuntivo di Office](/office/dev/add-ins/overview/office-add-ins) per estendere l'esperienza di Office per gli utenti.  
   
  Questi componenti aggiuntivi hanno footprint di piccole dimensioni rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  Per iniziare, usare Office Developer Tools in Visual Studio o lo strumento leggero basato su Web, nome in codice Napa Office 365 Development Tools, che consente di creare progetti, scrivere codice ed eseguire i componenti aggiuntivi in un browser.  
   
@@ -64,8 +64,8 @@ ms.locfileid: "35673679"
   
 |A|Vedere|  
 |--------|---------|  
-|Altre informazioni sui componenti aggiuntivi per Office e sulla relativa creazione.|[Componenti aggiuntivi di Office](http://msdn.microsoft.com/office/dn448457)|  
-|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un'app o un componente aggiuntivo di Office.|[Guida di orientamento per componenti aggiuntivi di Office, VSTO e VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Altre informazioni sui componenti aggiuntivi per Office e sulla relativa creazione.|[Componenti aggiuntivi di Office](/office/dev/add-ins/publish/publish)|  
+|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un'app o un componente aggiuntivo di Office.|[Guida di orientamento per componenti aggiuntivi di Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Creare un componente aggiuntivo di SharePoint  
  Per estendere SharePoint per gli utenti, creare un componente aggiuntivo per SharePoint. Si tratta fondamentalmente di un'applicazione di piccole dimensioni, facile da usare, autonoma che risolve una necessità degli utenti o dell'azienda.  
@@ -80,9 +80,9 @@ ms.locfileid: "35673679"
   
 |A|Vedere|  
 |--------|---------|  
-|Altre informazioni sui componenti aggiuntivi per SharePoint e sulla relativa creazione.|[Componenti aggiuntivi di SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|Confrontare i componenti aggiuntivi per SharePoint con le soluzioni tradizionali di SharePoint.|[Componenti aggiuntivi di SharePoint rispetto alle soluzioni SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Scegliere se creare un componente aggiuntivo di SharePoint o una soluzione di SharePoint.|[Scelta tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Altre informazioni sui componenti aggiuntivi per SharePoint e sulla relativa creazione.|[Componenti aggiuntivi di SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|  
+|Confrontare i componenti aggiuntivi per SharePoint con le soluzioni tradizionali di SharePoint.|[Componenti aggiuntivi di SharePoint rispetto alle soluzioni SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
+|Scegliere se creare un componente aggiuntivo di SharePoint o una soluzione di SharePoint.|[Scelta tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> Creare un componente aggiuntivo VSTO  
  Creare un componente aggiuntivo VSTO per Office 2007 o Office 2010 oppure per estendere Office 2013 e Office 2016 oltre le possibilità con componenti aggiuntivi di Office. I componenti aggiuntivi VSTO vengono eseguiti solo sul desktop. Gli utenti devono installare componenti aggiuntivi VSTO, in modo che in genere più difficili da distribuire e supportare.  Tuttavia, un componente aggiuntivo VSTO può essere maggiormente integrato con Office. Ad esempio, può aggiungere schede e controlli alla barra multifunzione di Office ed eseguire attività di automazione avanzate come l'unione di documenti o la modifica di grafici. È possibile sfruttare .NET Framework e usare C# e Visual Basic per interagire con gli oggetti di Office.  
@@ -95,8 +95,8 @@ ms.locfileid: "35673679"
   
 |A|Lettura|  
 |--------|----------|  
-|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un componente aggiuntivo VSTO o un componente aggiuntivo di Office.|[Guida di orientamento per componenti aggiuntivi di Office, VSTO e VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Creare un componente aggiuntivo VSTO.|[Componenti aggiuntivi VSTO creati con Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un componente aggiuntivo VSTO o un componente aggiuntivo di Office.|[Guida di orientamento per componenti aggiuntivi di Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
+|Creare un componente aggiuntivo VSTO.|[Componenti aggiuntivi VSTO creati con Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|  
   
 ##  <a name="Solutions"></a> Creare una soluzione di SharePoint  
  Creare una soluzione di SharePoint per SharePoint Foundation 2010 e SharePoint Server 2010 oppure per estendere SharePoint 2013 e SharePoint 2016 oltre le possibilità offerte da un componente aggiuntivo di SharePoint.  
@@ -107,7 +107,7 @@ ms.locfileid: "35673679"
   
 |A|Vedere|  
 |--------|---------|  
-|Confrontare le soluzioni di SharePoint con i componenti aggiuntivi di SharePoint.|[Componenti aggiuntivi di SharePoint rispetto alle soluzioni SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|Confrontare le soluzioni di SharePoint con i componenti aggiuntivi di SharePoint.|[Componenti aggiuntivi di SharePoint rispetto alle soluzioni SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Creare una soluzione di SharePoint.|[Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
   
   

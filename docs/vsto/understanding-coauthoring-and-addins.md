@@ -1,5 +1,5 @@
 ---
-title: Comprendere creazione condivisa e componenti aggiuntivi
+title: Comprendere i componenti aggiuntivi e creazione condivisa
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 39098a56b3ff17b1e491c15f3b6119978a28a2ca
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671118"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Comprendere creazione condivisa e componenti aggiuntivi
+# <a name="understand-coauthoring-and-add-ins"></a>Comprendere i componenti aggiuntivi e creazione condivisa
 
-Creazione condivisa è una funzionalità di Excel per Windows desktop che consente di modificare una cartella di lavoro ospitato nel cloud (ovvero, OneDrive, OneDrive for Business o SharePoint Online) simultaneamente con altri utenti. Con l'aggiunta di questa funzionalità, è necessario apportare modifiche alla soluzione di Excel per assicurarsi che funzioni senza problemi anche quando gli utenti sono creazione condivisa. Vedere [sulle creazione condivisa in Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
+Creazione condivisa è una funzionalità del desktop di Excel per Windows che consente di modificare una cartella di lavoro ospitato nel cloud (vale a dire, OneDrive, OneDrive for Business o SharePoint Online) contemporaneamente con altri utenti. Con l'aggiunta di questa funzionalità, potrebbe essere necessario apportare modifiche alla soluzione di Excel per assicurarsi che funzioni in modo uniforme anche quando gli utenti sono creazione condivisa. Visualizzare [sulla creazione condivisa in Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Nota: Modifica condivisa per Windows Desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Gli utenti che hanno acquistato una licenza completa per Office 2016 o versioni precedenti non si dispone dell'accesso alla funzionalità di collaborazione. (Excel Online, in Excel per Android, Excel per iOS e dispositivi mobili di Excel in Windows Store supportano anche creazione condivisa).
+Nota: Creazione condivisa per Windows Desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Gli utenti che hanno acquistato una licenza perpetua per Office 2016 o versioni precedenti non sono attualmente disponibili per la funzionalità di modifica condivisa. (Excel Online, Excel per Android, in Excel per iOS e dispositivi mobili di Excel in di Windows Store supportano anche creazione condivisa).
 
 ## <a name="see-also"></a>Vedere anche
 [Soluzioni Excel](./excel-solutions.md)

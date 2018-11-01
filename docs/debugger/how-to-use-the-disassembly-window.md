@@ -1,7 +1,7 @@
 ---
 title: Visualizzare il Disassembly codice nel Debugger di Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 10/30/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -23,53 +23,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b4d9eb1b9484206d3a7d880ec13378693930a63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917323"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671144"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visualizzare il codice Disassembly del debugger di Visual Studio
-Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo il **le opzioni** della finestra di dialogo **debug** nodo. Non è invece disponibile per il debug di script o SQL.  
+# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visualizzare il codice disassembly del debugger di Visual Studio
+
+Il **Disassembly** finestra Mostra il codice assembly corrispondente alle istruzioni create dal compilatore. Se si esegue il debug di codice gestito, queste istruzioni di assembly corrispondono al codice nativo creato dal compilatore Just-in-Time (JIT), non il Microsoft intermediate language (MSIL) creato dal compilatore di Visual Studio.  
   
- Il **Disassembly** finestra Mostra il codice assembly corrispondente alle istruzioni create dal compilatore. Se si sta eseguendo il debug di codice gestito, tali istruzioni in linguaggio assembly corrispondono al codice nativo creato dal compilatore JIT (Just-In-Time), non al linguaggio MSIL (Microsoft Intermediate Language) generato dal compilatore di Visual Studio.  
+> [!NOTE]
+> Per sfruttare appieno le **Disassembly** finestra comprendere o nozioni di base [programmazione in linguaggio assembly](https://wikipedia.org/wiki/Assembly_language).
   
- Oltre alle istruzioni dell'assembly, il **Disassembly** finestra è possibile visualizzare le informazioni facoltative seguenti:  
+Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo. Non è disponibile per uno script o il debug SQL. 
+
+Oltre alle istruzioni dell'assembly, il **Disassembly** finestra è possibile visualizzare le informazioni facoltative seguenti:  
   
-- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per applicazioni native, si tratta dell'indirizzo di memoria effettivo. Per Visual Basic, C# o codice gestito, si tratta dell'offset dall'inizio della funzione.  
+- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per le applicazioni native, è l'indirizzo di memoria effettiva. Per Visual Basic, C#, o codice gestito, si tratta di un offset dall'inizio della funzione.  
   
 - Codice sorgente dal quale deriva il codice assembly.  
   
-- Byte del codice: rappresentazioni in byte delle effettive istruzioni in linguaggio macchina o MSIL.  
+- Il codice byte, vale a dire le rappresentazioni in byte del computer effettivo o istruzioni MSIL.  
   
 - Nomi di simboli per gli indirizzi di memoria.  
   
 - Numeri di riga corrispondenti al codice sorgente.  
   
-  Le istruzioni in linguaggio assembly sono costituite da elementi mnemonici, che sono abbreviazioni di nomi di istruzioni e simboli che rappresentano variabili, registri e costanti. Ogni istruzione in linguaggio macchina è rappresentata da un elemento mnemonico in linguaggio assembly, seguito in genere da una o più variabili, registri o costanti.  
+Le istruzioni in linguaggio assembly sono costituiti *mnemonici*, che sono abbreviazioni per i nomi di istruzioni, e *simboli* per variabili, registri e costanti. Ogni istruzione in linguaggio macchina è rappresentato da un elemento mnemonico in linguaggio assembly seguito facoltativamente da uno o più simboli.  
   
-  Se non si è in grado di leggere il linguaggio assembly e si desidera sfruttare appieno i vantaggi della finestra Disassembly, consultare un buon manuale sulla programmazione in linguaggio assembly. Tale argomento esula dallo scopo di questa breve introduzione alla finestra Disassembly.  
+Il codice assembly si basa principalmente sui registri del processore o, per il codice gestito, registri di common language runtime. È possibile usare la **Disassembly** finestra lungo con la **registra** finestra, che consente di esaminare il contenuto del registro.  
   
-  Dal momento che il codice assembly si basa in modo rilevante sui registri del processore o, nel caso di codice gestito, sui registri di Common Language Runtime, sarà particolarmente vantaggioso utilizzare la finestra Disassembly insieme alla finestra Registri, in cui può essere esaminato il contenuto dei registri.  
+Per visualizzare le istruzioni di codice macchina nel loro formato numerico non elaborato, anziché come linguaggio assembly, usare il **memoria** finestra o selezionare **byte del codice** dal menu di scelta rapida di **Disassembly**  finestra.  
   
-  È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
-  
+## <a name="use-the-disassembly-window"></a>Utilizzare la finestra Disassembly
+
+Per abilitare il **Disassembly** finestra, sotto **Tools** > **opzioni** (o **strumenti**  >  **Le opzioni**) > **Debugging**, selezionare **Abilita debug a livello di indirizzo**.
+
+Per aprire la **Disassembly** finestra durante il debug, seleziona **Windows** > **Disassembly** oppure premere **Alt** + **8**.
+
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-display-the-disassembly-window"></a>Per visualizzare la finestra Disassembly  
-  
--   Durante il debug, selezionare **Debug > Windows** e quindi fare clic su **Disassembly**.
-  
-### <a name="to-turn-optional-information-on-or-off"></a>Per attivare o disattivare la visualizzazione delle informazioni opzionali  
-  
--   Fare doppio clic il **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
-  
-     Una freccia gialla sul margine sinistro indica la posizione del punto di esecuzione corrente. Per il codice nativo la posizione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.  
-  
-     Per altre informazioni, vedere [spostamento verso l'alto o verso il basso nella memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
-  
+Per abilitare informazioni facoltative o disabilitare, fare doppio clic nella **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
+
+Una freccia gialla nel margine sinistro contrassegna il punto di esecuzione corrente. Per il codice nativo, il punto di esecuzione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.  
+
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
+
+* [Spostamento verso l'alto o verso il basso in memoria](../debugger/how-to-page-up-or-down-in-memory.md)
+* [Visualizzazione dei dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
+* [Procedura: usare la finestra registri](../debugger/how-to-use-the-registers-window.md)

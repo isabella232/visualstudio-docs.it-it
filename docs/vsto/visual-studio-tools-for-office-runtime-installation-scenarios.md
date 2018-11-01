@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670897"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools per scenari di installazione di Office runtime
   È possibile installare Visual Studio 2010 Tools per Office runtime in tre modi:  
@@ -60,14 +60,14 @@ ms.locfileid: "49857848"
   
  Le estensioni di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] vengono installate con Office. Gli utenti finali possono ottenere le estensioni di Office per [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] installando un aggiornamento di Windows.  
   
- Per assicurarsi che gli utenti abbiano le estensioni necessarie per usare l'applicazione, includere la versione più recente di Visual Studio 2010 Tools per Office runtime ridistribuibile come prerequisito per la soluzione. Per altre informazioni sui prerequisiti, vedere [prerequisiti per la distribuzione di soluzioni Office](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Per assicurarsi che gli utenti abbiano le estensioni necessarie per usare l'applicazione, includere la versione più recente di Visual Studio 2010 Tools per Office runtime ridistribuibile come prerequisito per la soluzione. Per altre informazioni sui prerequisiti, vedere [prerequisiti per la distribuzione di soluzioni Office](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>Installare il runtime tramite il runtime ridistribuibile  
  È possibile installare il runtime eseguendo Visual Studio 2010 Tools per Office runtime redistributable manualmente o includendo il pacchetto ridistribuibile come prerequisito quando si distribuisce una soluzione Office.  
   
  Quando si installa il runtime usando Visual Studio 2010 Tools per Office runtime redistributable, le estensioni di Office per .NET Framework 3.5 e le estensioni di Office per i [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o vengono installati in un secondo momento se le corrispondenti versioni di .NET Framework sono già presenti nel computer. Se nel computer manca una di queste versioni di .NET Framework quando è installato il runtime, le estensioni di Office per la versione mancante di .NET Framework al momento non vengono installate. Se si installa la versione mancante di .NET Framework in un secondo momento, il runtime installerà automaticamente le estensioni di Office corrispondenti alla successiva installazione (se il runtime è stato installato con una soluzione che è stata distribuita tramite ClickOnce) o al successivo caricamento (se il runtime è stato installato con una soluzione che è stata distribuita tramite Windows Installer) di una soluzione che richiede le estensioni.  
   
- Per altre informazioni sull'inclusione dei prerequisiti in una soluzione ClickOnce, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Per altre informazioni su come installare manualmente il runtime dal pacchetto ridistribuibile, vedere [procedura: installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Per altre informazioni sull'inclusione dei prerequisiti in una soluzione ClickOnce, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Per altre informazioni su come installare manualmente il runtime dal pacchetto ridistribuibile, vedere [procedura: installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio Tools per Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

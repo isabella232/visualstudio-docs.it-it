@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672301"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670988"
 ---
 # <a name="write-code-in-office-solutions"></a>Scrivere il codice nelle soluzioni Office
   Alcuni aspetti della scrittura del codice nei progetti di Office presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze riguardano la modalità di esposizione dei modelli a oggetti di Office al codice gestito. Le altre differenze sono correlate alla creazione di progetti di Office.  
@@ -62,7 +62,7 @@ ms.locfileid: "35672301"
  Gli assembly di interoperabilità primari di Office non sono richiesti per l'esecuzione di soluzioni Office sui computer degli utenti finali che dispongono di [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive. Per altre informazioni, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Usare i tipi negli assembly di interoperabilità primari  
- Gli assembly di interoperabilità primari di Office contengono una combinazione di tipi che espongono il modello a oggetti delle applicazioni di Office e i tipi aggiuntivi dell'infrastruttura che non possono essere usati direttamente nel codice. Per una panoramica dei tipi in assembly di interoperabilità primari di Office, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Gli assembly di interoperabilità primari di Office contengono una combinazione di tipi che espongono il modello a oggetti delle applicazioni di Office e i tipi aggiuntivi dell'infrastruttura che non possono essere usati direttamente nel codice. Per una panoramica dei tipi in assembly di interoperabilità primari di Office, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Poiché i tipi negli assembly di interoperabilità primari di Office corrispondono ai tipi nei modelli a oggetti COM, la modalità di utilizzo di questi tipi spesso è differente dagli altri tipi gestiti. Ad esempio, la modalità di chiamata dei metodi che hanno parametri facoltativi in un assembly di interoperabilità primario di Office varia in base al linguaggio di programmazione che si sta usando nel progetto. Per altre informazioni, vedere i seguenti argomenti:  
   

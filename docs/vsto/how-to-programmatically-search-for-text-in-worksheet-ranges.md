@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671963"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: eseguire ricerche a livello di codice per il testo negli intervalli del foglio di lavoro
-  Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo di <xref:Microsoft.Office.Interop.Excel.Range> consente di cercare testo all'interno dell'intervallo. Questo testo può anche essere una delle stringhe di errore che possono essere visualizzati in una cella di foglio di lavoro, ad esempio `#NULL!` o `#VALUE!`. Per altre informazioni sulle stringhe di errore, vedere [i valori di errore delle celle](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo di <xref:Microsoft.Office.Interop.Excel.Range> consente di cercare testo all'interno dell'intervallo. Questo testo può anche essere una delle stringhe di errore che possono essere visualizzati in una cella di foglio di lavoro, ad esempio `#NULL!` o `#VALUE!`. Per altre informazioni sulle stringhe di errore, vedere [i valori di errore delle celle](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
