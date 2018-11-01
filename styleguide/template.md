@@ -330,7 +330,7 @@ Il rendering sarà simile al seguente: ![Stili di avviso](../images/alerts.png)
 > [!div class="button"]
 [collegamenti con pulsanti](../docs/core/index.md)
 
-È possibile vedere un esempio di pulsanti in azione nella [documentazione di Intune](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+È possibile vedere un esempio di pulsanti in azione nella [documentazione di Intune](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
 
 ### <a name="selectors"></a>Selettori
 
@@ -338,7 +338,7 @@ Il rendering sarà simile al seguente: ![Stili di avviso](../images/alerts.png)
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-È possibile vedere un esempio di selettori in azione nella [documentazione di Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+È possibile vedere un esempio di selettori in azione nella [documentazione di Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### <a name="step-by-steps"></a>Procedure dettagliate
 
@@ -346,4 +346,4 @@ Il rendering sarà simile al seguente: ![Stili di avviso](../images/alerts.png)
 [Indietro](../docs/csharp/expression-trees-interpreting.md)
 [Avanti](../docs/csharp/expression-trees-translating.md)
 
-È possibile vedere un esempio di procedure dettagliate in azione nella [documentazione di Advanced Threat Analytics](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
+È possibile vedere un esempio di procedure dettagliate in azione nella [documentazione di Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
