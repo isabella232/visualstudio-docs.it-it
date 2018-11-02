@@ -21,20 +21,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1868d670458e204f6e503b132aaceab17f3da742
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757595"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750923"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrare e ordinare i dati in un'applicazione Windows Forms
+
 Per filtrare i dati, impostare il <xref:System.Windows.Forms.BindingSource.Filter%2A> proprietà da un'espressione stringa che restituisce i record desiderati.
 
- Per ordinare i dati, impostare il <xref:System.Windows.Forms.BindingSource.Sort%2A> proprietà sul nome di colonna in cui si desidera eseguire l'ordinamento; accodare `DESC` per ordinare in ordine decrescente, o aggiungere `ASC` per ordinare in ordine crescente.
+Per ordinare i dati, impostare il <xref:System.Windows.Forms.BindingSource.Sort%2A> proprietà sul nome di colonna in cui si desidera eseguire l'ordinamento; accodare `DESC` per ordinare in ordine decrescente, o aggiungere `ASC` per ordinare in ordine crescente.
 
 > [!NOTE]
->  Se l'applicazione non usa <xref:System.Windows.Forms.BindingSource> componenti, è possibile filtrare e ordinare i dati utilizzando <xref:System.Data.DataView> oggetti. Per altre informazioni, vedere [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Se l'applicazione non usa <xref:System.Windows.Forms.BindingSource> componenti, è possibile filtrare e ordinare i dati utilizzando <xref:System.Data.DataView> oggetti. Per altre informazioni, vedere [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Per filtrare i dati utilizzando un BindingSource (componente)
 

@@ -1,30 +1,30 @@
 ---
-title: 'Procedura: round trip estensioni per Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Come per le estensioni di round trip
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498685"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750732"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedura: rendere le estensioni compatibili con Visual Studio 2017 e Visual Studio 2015
 
-Questo documento viene illustrato come creare progetti di estendibilità round trip tra Visual Studio 2015 e Visual Studio 2017. Dopo aver completato l'aggiornamento, un progetto sarà in grado di aprire, compilare, installare ed eseguire in Visual Studio 2015 e Visual Studio 2017.  Come riferimento, sono disponibili alcune estensioni che è possono eseguire il round trip tra Visual Studio 2015 e Visual Studio 2017 [qui](https://github.com/Microsoft/VSSDK-Extensibility-Samples) negli esempi di estendibilità di Microsoft.
+Questo documento viene illustrato come creare progetti di estendibilità round trip tra Visual Studio 2015 e Visual Studio 2017. Dopo aver completato l'aggiornamento, un progetto sarà in grado di aprire, compilare, installare ed eseguire in Visual Studio 2015 e Visual Studio 2017. Come riferimento, alcune estensioni che è possono eseguire il round trip tra Visual Studio 2015 e Visual Studio 2017 sono disponibili i [esempi di estendibilità di Visual Studio SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Se si intende solo build in Visual Studio 2017, ma vuole che l'output VSIX per l'esecuzione in Visual Studio 2015 e Visual Studio 2017, quindi vedere il [documento di migrazione di estensione](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Nota:** a causa di modifiche in Visual Studio tra versioni diverse, alcune cose che ha lavorato in una versione non funzionerà un altro. Assicurarsi che le funzionalità che si sta provando ad accedere sono disponibili in entrambe le versioni, o l'estensione avranno risultati imprevisti.
+> [!NOTE]
+> A causa di modifiche in Visual Studio tra versioni diverse, alcune cose che ha lavorato in una versione non funzionano in un altro. Assicurarsi che le funzionalità che si sta provando ad accedere sono disponibili in entrambe le versioni o l'estensione avranno risultati imprevisti.
 
 Ecco un riepilogo della procedura che si farà in questo documento, eseguire il round trip di un progetto VSIX:
 
@@ -57,13 +57,13 @@ Più avanti in questo documento, si inserirà le istruzioni di importazione cond
 Se il progetto contiene un *Project. JSON* file:
 
 * Prendere nota dei riferimenti nel *Project. JSON*.
-* Dal **Esplora soluzioni**, eliminare il *Project. JSON* file dal progetto.
-    * Questa operazione eliminerà il *Project. JSON* file e lo rimuove dal progetto.
-* Aggiungere che i riferimenti NuGet nuovamente al progetto.
+* Dal **Esplora soluzioni**, eliminare il *Project. JSON* file dal progetto. Questa procedura elimina le *Project. JSON* file e lo rimuove dal progetto.
+* Aggiungere che i riferimenti NuGet nuovamente al progetto:
     * Fare clic sui **soluzione** e scegliere **Gestisci pacchetti NuGet per la soluzione**.
-    * Visual Studio crea automaticamente il *Packages. config* file per l'utente
+    * Visual Studio crea automaticamente il *Packages. config* file automaticamente.
 
->**Nota:** se il progetto contiene i pacchetti di EnvDTE, devono essere aggiunti con il pulsante destro facendo clic su **riferimenti** selezionando **aggiungere riferimento** e l'aggiunta del riferimento appropriato.  Uso di pacchetti NuGet può creare errori durante il tentativo di compilare il progetto.
+> [!NOTE]
+> Se il progetto contiene i pacchetti di EnvDTE, devono essere aggiunti con il pulsante destro facendo clic su **riferimenti** selezionando **aggiungere riferimento** e l'aggiunta del riferimento appropriato.  Uso di pacchetti NuGet può creare errori durante il tentativo di compilare il progetto.
 
 ## <a name="add-appropriate-build-tools"></a>Aggiungere gli strumenti di compilazione appropriato
 
@@ -113,7 +113,8 @@ Per eseguire questa operazione manualmente:
 
 * Salvare e chiudere il file.
 
->**Nota:** se si sceglie di effettuare questa operazione utilizzando Progettazione modelli di progetto VSIX in Visual Studio 2017, è necessario modificare manualmente la versione del prerequisito per assicurarsi che sia compatibile con tutte le versioni di Visual Studio 2017.  Questo avviene perché la finestra di progettazione inserisce la versione minima come la versione corrente di Visual Studio (ad esempio, 15.0.26208.0).  Tuttavia, poiché gli altri utenti potrebbero avere una versione precedente, si dovranno modificare manualmente questo 15.0.
+> [!NOTE]
+> Se si sceglie di effettuare questa operazione utilizzando Progettazione modelli di progetto VSIX in Visual Studio 2017, è necessario modificare manualmente la versione del prerequisito per assicurarsi che sia compatibile con tutte le versioni di Visual Studio 2017.  Questo avviene perché la finestra di progettazione inserisce la versione minima come la versione corrente di Visual Studio (ad esempio, 15.0.26208.0).  Tuttavia, poiché gli altri utenti potrebbero avere una versione precedente, si dovranno modificare manualmente questo 15.0.
 
 A questo punto, il file manifesto dovrebbe essere simile al seguente:
 
@@ -139,7 +140,8 @@ A questo punto, il file manifesto dovrebbe essere simile al seguente:
 
 * Aggiungere il seguente tag `<VsixType>v3</VsixType>` a un gruppo di proprietà.
 
->**Nota:** , è consigliabile aggiungere quanto segue sotto il `<OutputType></OutputType>` tag.
+> [!NOTE]
+> È consigliabile aggiungere quanto segue sotto il `<OutputType></OutputType>` tag.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Aggiungere le proprietà di debug
 
@@ -211,4 +213,5 @@ A questo punto, il progetto deve essere pronto a compilare un VSIXv3 che è poss
 
 ![Trovare un progetto VSIX](media/finding-a-VSIX-example.png)
 
->**Nota:** se si blocca il progetto con il messaggio **apertura del file**, forza arresto Visual Studio, passare alla directory del progetto, cartelle nascoste visualizzare ed eliminare il *VS* cartella.
+> [!NOTE]
+> Se si blocca il progetto con il messaggio **apertura del file**, forza arresto Visual Studio, passare alla directory del progetto, cartelle nascoste visualizzare ed eliminare il *VS* cartella.
