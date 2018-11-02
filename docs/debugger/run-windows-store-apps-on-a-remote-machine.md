@@ -1,7 +1,7 @@
 ---
-title: Eseguire App UWP in un computer remoto | Microsoft Docs
+title: Eseguire il debug di App UWP in computer remoti | Microsoft Docs
 ms.custom: ''
-ms.date: 01/05/2018
+ms.date: 10/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -15,94 +15,100 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2845057fe970299d249d580d97b557a5ed311fc0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38795972"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750709"
 ---
-# <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Eseguire App UWP in un computer remoto in Visual Studio
+# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Eseguire il debug di App UWP in un computer remoto da Visual Studio
   
-Per eseguire un'app UWP in un computer remoto, è necessario associare ad esso utilizzando Remote Tools per Visual Studio. Remote tools consente di eseguire, debug, profilatura e testare un'app UWP in esecuzione in un dispositivo da un secondo computer che esegue Visual Studio. In esecuzione in un dispositivo remoto può essere particolarmente efficiente quando il computer di Visual Studio non supporta funzionalità specifiche per le app UWP, ad esempio il tocco, georilevazione e orientamento fisico. In questo argomento vengono descritte le procedure per configurare e avviare una sessione remota.
+È possibile usare Visual Studio per eseguire, debug, profilatura e testare un'app Universal Windows Platform (UWP) in un altro computer o dispositivo. Esecuzione dell'app UWP in un computer remoto è particolarmente utile quando il computer di Visual Studio non supporta funzionalità specifiche della piattaforma UWP, ad esempio il tocco, georilevazione o orientamento fisico. 
 
-In alcuni scenari, gli strumenti remoti vengono installati automaticamente quando si distribuisce in un dispositivo remoto.
-
-- Per i PC Windows 10 che esegue Creators Update e versioni successive, Strumenti connessione remota verranno installati automaticamente.
-- Per i dispositivi Windows 10 Xbox, IOT e HoloLens, remote tools verrà installato automaticamente.
-- Per dispositivi mobili Windows 10, è necessario essere fisicamente connessi al telefono, è necessario abilitare [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development) ed è necessario selezionare **dispositivo** come destinazione di debug. Strumenti remoti non sono necessari né supportati.
-
-Per i PC Windows 10 che eseguono la versione di aggiornamento una pre-dell'autore di Windows, è necessario installare remote tools sul computer remoto manualmente il prima di eseguire il debug. Seguire le istruzioni in questo argomento. 
-  
 ##  <a name="BKMK_Prerequisites"></a> Prerequisiti  
- Per eseguire il debug su un dispositivo remoto:  
-  
-- Il dispositivo remoto e computer di Visual Studio deve essere connesso in rete o collegati direttamente tramite un cavo Ethernet o USB. Il debug tramite Internet non è supportato.  
 
-- È necessario abilitare [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development). 
+Eseguire il debug di un'app UWP in un computer remoto da Visual Studio:  
   
-- Per i PC Windows 10 che eseguono una versione precedente a Update Windows 10 Creators di Windows 10, devi [installare ed eseguire i componenti di debug remoti](#BKMK_download).
-  
-##  <a name="BKMK_Security"></a> Sicurezza  
-Per impostazione predefinita **universale (protocollo non crittografato)** viene usato in Windows 10. Questo protocollo deve essere utilizzato solo su reti attendibili. La connessione di debug è protetto da utenti malintenzionati in grado di intercettare e modificare i dati passati tra lo sviluppo e il computer remoto.
-  
-> [!WARNING]
->  Non vi è alcuna sicurezza di rete quando si imposta la modalità di autenticazione **universale (protocollo non crittografato)** oppure **None**. Scegliere queste modalità solo se si è certi che la rete non è a rischi derivanti da traffico ostile o dannoso.  
-  
-##  <a name="BKMK_DirectConnect"></a> Come connettersi direttamente tramite un cavo USB 
+- Il progetto di Visual Studio deve essere configurato per il debug remoto.
+- Nel computer remoto e il computer di Visual Studio deve essere connesso in rete o collegati direttamente tramite un cavo Ethernet o USB. Il debug tramite Internet non è supportato.  
+- È necessario [attivare la modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development) sia il computer di Visual Studio nel computer remoto. 
+- Computer remoto deve eseguire Remote Tools per Visual Studio. 
+  - Alcune versioni di Windows 10 aprire ed eseguono remote tools automaticamente. In caso contrario, [installare ed eseguire Remote Tools per Visual Studio](#BKMK_download).
+  - I dispositivi mobili Windows 10 non richiede o supporta remote tools. 
 
-In Windows 10, è possibile distribuire in un dispositivo USB-connected scegliendo **periferica** invece di **computer remoto** come destinazione di distribuzione (è possibile farlo nel **Standard** sulla barra degli strumenti o nella pagina delle proprietà Debug).
+##  <a name="BKMK_ConnectVS"></a> Configurare un progetto di Visual Studio per il debug remoto
+<a name="BKMK_DirectConnect"></a> Si usa il progetto **proprietà** per specificare il dispositivo remoto a cui connettersi. Le impostazioni variano a seconda del linguaggio di programmazione. 
 
-##  <a name="BKMK_ConnectVS"></a> Configurare il progetto di Visual Studio per il debug remoto  
- Specificare il dispositivo remoto a cui è possibile connettersi nelle proprietà del progetto. La procedura varia in base al linguaggio di programmazione. È possibile digitare il nome di rete del dispositivo remoto oppure è possibile selezionarlo dal **connessione remota** nella finestra di dialogo.  
-  
- ![Finestra di dialogo Seleziona connessione Debugger remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
-  
- Nella finestra di dialogo sono elencati solo i dispositivi che eseguono il debugger remoto presenti sulla subnet locale del computer con installato Visual Studio.  
-  
-> [!TIP]
->  In caso di problemi di connessione a un dispositivo remoto, provare a immettere l'indirizzo IP del dispositivo. Per determinare l'indirizzo IP di un dispositivo, aprire una finestra di comando e digitare **ipconfig**. L'indirizzo IP è indicato come **IPv4 Address**.  
-  
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Scegliere il dispositivo remoto per progetti c# e Visual Basic  
-  
-1.  In Esplora soluzioni seleziona il nome del progetto, quindi scegli **Proprietà** dal menu di scelta rapida.  
-  
-2.  Selezionare **Debug**.  
-  
-3.  Scegliere **Computer remoto** dall'elenco **Dispositivo di destinazione** .  
-  
-4.  Immettere il nome di rete del dispositivo remoto nella casella **Computer remoto** o selezionare **Trova** per scegliere il dispositivo nella finestra di dialogo **Seleziona connessione debugger remoto** . 
+> [!CAUTION]
+> Per impostazione predefinita, la pagina delle proprietà imposta **universale (protocollo non crittografato)** come la **tipo di autenticazione** per le connessioni remote di Windows 10. Potrebbe essere necessario impostare **Nessuna autenticazione** per connettersi al debugger remoto. **Universale (protocollo non crittografato)** e **Nessuna autenticazione** protocolli non dispongono di alcuna sicurezza di rete, in modo che i dati passati tra lo sviluppo e i computer remoti sono vulnerabili. Scegliere questi tipi di autenticazione solo per le reti attendibili che si sono certi non sono esposti da traffico ostile o dannoso. 
+>
+>Se si sceglie **Windows autenticazione** per il **tipo di autenticazione**, dovrai accedere al computer remoto durante il debug. Il debugger remoto deve essere eseguito anche con **Windows autenticazione** modalità con lo stesso account utente di nel computer di Visual Studio.
 
-    ![Proprietà del progetto per il debug remoto gestito](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
-  
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Scegliere il dispositivo remoto per progetti JavaScript e C++  
-  
-1.  In Esplora soluzioni seleziona il nome del progetto, quindi scegli **Proprietà** dal menu di scelta rapida.  
-  
-2.  Espandere il nodo **Proprietà di configurazione** , quindi selezionare **Debug**.  
-  
-3.  Scegliere **Debugger remoto** dall'elenco **Debugger da avviare** .  
-  
-4.  Immettere il nome di rete del dispositivo remoto nella casella **Nome computer** o selezionare la freccia in giù nella casella per scegliere il dispositivo nella finestra di dialogo **Seleziona connessione debugger remoto** .  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurare un C# o un progetto di Visual Basic per il debug remoto  
 
-    ![C&#43; &#43; le proprietà per il debug remoto di progetto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+1. Selezionare il C# o un progetto di Visual Basic in Visual Studio **Esplora soluzioni** e selezionare il **proprietà** icona, premere **Alt** +  **Immettere**, o fare clic e scegliere **proprietà**.
   
-## <a name="BKMK_download"></a> Scaricare e installare gli strumenti remoti (pre-Creators Update)
+1.  Selezionare la scheda **Debug**.  
+  
+1.  Sotto **dispositivo di destinazione**, selezionare **computer remoto** per un computer remoto, o **dispositivo** per un dispositivo Windows Mobile 10 connesso a direct.  
+  
+1.  Per un computer remoto, immettere il nome di rete o l'indirizzo IP nel **computer remoto** campo oppure selezionare **trovare** per cercare il dispositivo nel [nella finestra di dialogo connessioni Remote](#remote-connections). 
+    
+    ![Proprietà del progetto per il debug remoto gestito](../debugger/media/vsrun_managed_projprop_remote.png "le proprietà del progetto di Debug gestito")  
+    
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurare un progetto JavaScript o C++ per il debug remoto   
+  
+1.  Selezionare il progetto C++ o JavaScript in Visual Studio **Esplora soluzioni** e selezionare il **delle proprietà** icona, premere **Alt**+**invio** , o fare clic e scegliere **proprietà**.
+  
+1.  Selezionare il **debug** scheda.  
+  
+3.  Sotto **Debugger da avviare**, selezionare **computer remoto** per un computer remoto, o **dispositivo** per un dispositivo Windows Mobile 10 connesso a direct. 
+  
+1.  Per un computer remoto, immettere o selezionare il nome di rete o l'indirizzo IP nel **nome macchina** campo o drop verso il basso e selezionare **individua** per cercare il dispositivo nel [nella finestra di dialogo connessioni Remote ](#remote-connections). 
 
-Se si usa versioni di aggiornamento di una pre-dell'autore di Windows 10, quindi seguire queste istruzioni. In caso contrario, è possibile ignorare questa sezione.
+    ![Proprietà del progetto C++ per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "le proprietà del progetto di debug C++")
+    
+### <a name="remote-connections"></a> Utilizzare la finestra di dialogo connessioni Remote
+
+Nel **le connessioni Remote** nella finestra di dialogo è possibile cercare un indirizzo IP o un nome specifico del computer remoto o rileva automaticamente le connessioni selezionando l'icona di freccia arrotondato aggiornamento. La finestra di dialogo Cerca solo i dispositivi sulla subnet locale attualmente in esecuzione il debugger remoto. Non tutti i dispositivi possono essere rilevati nel **le connessioni Remote** nella finestra di dialogo. 
+
+ ![Finestra di dialogo di connessione remota](../debugger/media/vsrun_selectremotedebuggerdlg.png "finestra di dialogo connessioni Remote")  
+
+>[!TIP]
+>Se non è possibile connettersi a un dispositivo remoto in base al nome, provare a usare il relativo indirizzo IP. Per determinare l'indirizzo IP, sul dispositivo remoto, immettere **ipconfig** in una finestra di comando. L'indirizzo IP viene visualizzato come **indirizzo IPv4**.  
+    
+## <a name="BKMK_download"></a> Scaricare e installare Remote Tools per Visual Studio
+
+Per Visual Studio per il debug delle App in un computer remoto, il computer remoto deve eseguire Remote Tools per Visual Studio. 
+
+- I dispositivi mobili Windows 10 non richiedono né supporta remote tools. 
+- I PC Windows 10 che esegue Creators Update (versione 1703) e versioni successive, i dispositivi Windows 10 Xbox, IoT e HoloLens installare remote tools automaticamente quando si distribuisce l'app. 
+- Nei PC di pre-Creators Update Windows 10, manualmente è necessario scaricare, installare ed essere in esecuzione di remote tools sul computer remoto prima di avviare il debug.
+
+**Per scaricare e installare gli strumenti remoti:**
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a> Configurare il debugger remoto
+### <a name="BKMK_setup"></a> Configurare gli strumenti remoti
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a> Avviare una sessione di debug remota  
- È possibile avviare, arrestare ed esplorare una sessione di debug remoto come una sessione locale. Nelle versioni di pre-Creators Update di Windows 10, assicurarsi che Remote Debugging Monitor è in esecuzione nel dispositivo remoto.  
-  
- Scegliere quindi **Avvia debug** dal menu **Debug** (tastiera: F5). Il progetto viene ricompilato, quindi distribuito e avviato sul dispositivo remoto. Il debugger sospende l'esecuzione in corrispondenza dei punti di interruzione. Nel codice sarà possibile quindi eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine. Scegli **Termina debug** per terminare la sessione di debug e chiudere l'app remota.
+##  <a name="BKMK_RunRemoteDebug"></a> Il debug remoto di App UWP 
+
+Debug remoto funziona esattamente come il debug locale. 
+
+1. Nelle versioni di pre-Creators Update di Windows 10, assicurarsi che Remote Debugging Monitor (*msvsmon.exe*) è in esecuzione nel dispositivo remoto.  
+   
+1. Nel computer di Visual Studio, assicurarsi che la destinazione di debug corretta (**computer remoto** oppure **dispositivo**) viene visualizzato accanto alla freccia verde sulla barra degli strumenti. 
+   
+1. Avviare il debug scegliendo **Debug** > **Avvia debug**, premendo **F5**, o si seleziona la freccia verde sulla barra degli strumenti. 
+   
+   Il progetto viene ricompilata, quindi distribuisce e viene avviato sul dispositivo remoto. Il debugger sospende l'esecuzione nei punti di interruzione e può eseguire un'istruzione, failover e fuori dal codice. 
+   
+1. Se necessario, selezionare **Debug** > **Termina debug** oppure premere **MAIUSC**+**F5** per arrestare il debug e Chiudere l'app remota.
   
 ## <a name="see-also"></a>Vedere anche  
  [Opzioni avanzate di distribuzione remoto](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Test delle app UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Eseguire il debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+ [Eseguire il debug di app UWP in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

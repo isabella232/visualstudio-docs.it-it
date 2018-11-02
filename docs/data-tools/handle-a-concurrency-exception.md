@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582333"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750812"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -162,13 +162,13 @@ Quando si tenta di eseguire un aggiornamento e viene generata un'eccezione, in g
 
 1. Aggiungere il codice seguente sotto il `Form1_Load` metodo:
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. Sostituire il `CustomersBindingNavigatorSaveItem_Click` metodo da chiamare il `UpdateDatabase` metodo in modo che risulti simile al seguente:
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>Visualizzare le scelte per l'utente
 
@@ -176,8 +176,8 @@ Il codice sopra riportato consente le chiamate di `CreateMessage` procedura per 
 
 Creare il messaggio aggiungendo il codice seguente per il **Editor di codice**. Immettere il codice riportato di seguito il `UpdateDatabase` metodo:
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Elaborare la risposta dell'utente
 
@@ -185,8 +185,8 @@ Creare il messaggio aggiungendo il codice seguente per il **Editor di codice**. 
 
 Aggiungere il codice seguente sotto il codice che è stato aggiunto nella sezione precedente:
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Verificare il modulo
 
