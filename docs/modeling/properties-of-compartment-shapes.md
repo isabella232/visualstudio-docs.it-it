@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4a57e5abafd75751f48fb843b6f1a5f3be8ab727
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98013b53641efec6a088c1e89bf521613fc7659e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815468"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966570"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
 Forme raggruppamento sono una delle forme che è possibile usare per la visualizzazione di una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.
@@ -59,4 +59,4 @@ Forme raggruppamento sono una delle forme che è possibile usare per la visualiz
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

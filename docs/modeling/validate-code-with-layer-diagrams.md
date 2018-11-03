@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835709"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967285"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -173,7 +173,7 @@ Usare queste attività per gestire gli errori di convalida nel **elenco errori**
 
 ## <a name="validate-code-automatically"></a>Convalidare automaticamente il codice
 
-È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team Usa DevOps di Azure, è possibile eseguire la convalida dei livelli con archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild e usare i report di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team Usa DevOps di Azure, è possibile eseguire la convalida dei livelli con archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild e usare i report di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [TFVC l'archiviazione gestita](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Per convalidare automaticamente il codice durante una compilazione locale
 
@@ -237,6 +237,6 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Convalida delle dipendenze in tempo reale in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Convalida delle dipendenze in tempo reale in Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
 - [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

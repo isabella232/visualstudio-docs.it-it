@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942478"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967506"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -186,11 +186,11 @@ Per assicurarsi che non si verificano conflitti con la progettazione durante lo 
 
 Vedere:
 
-- [Definire il processo di compilazione](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [Utilizzare la finestra di progettazione visiva](/azure/devops/pipelines/get-started-designer)
 
-- [Utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC l'archiviazione gestita](/azure/devops/pipelines/build/triggers#gated)
 
-- [Personalizzare il modello del processo di compilazione](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [Compilare e rilasciare le attività](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Suggerimenti generali per la creazione e l'uso di modelli
 
@@ -220,7 +220,7 @@ Vedere:
 
 - [I grafici, dashboard e widget (servizi di Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Creare il backlog e le attività tramite Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Creare il backlog e le attività tramite Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> Test, convalida e archiviazione del codice
 
@@ -486,5 +486,5 @@ I diagrammi delle dipendenze consentono di:
 
 - [Visualizzare il codice](../modeling/visualize-code.md)
 - [Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)
-- [Usare i modelli in Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usare i modelli in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)

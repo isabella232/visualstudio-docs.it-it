@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9e1febd80c060d97ec9b533a3ec1b67d0427eab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2159a7954059eedb0d5100cb41a33b47f7577e93
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942179"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967259"
 ---
 # <a name="properties-of-geometry-shapes"></a>Proprietà delle forme geometriche
 Per specificare come vengono visualizzate le istanze delle classi di dominio in un linguaggio specifico di dominio, è possibile usare forme geometriche. Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -55,4 +55,4 @@ Per specificare come vengono visualizzate le istanze delle classi di dominio in 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

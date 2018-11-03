@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 25155615090ce627a4bf30a5fd0b54bd913fe2da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939762"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967025"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti di definiscono e usano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che è stato distribuito con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -76,7 +76,7 @@ ms.locfileid: "49939762"
    2.  Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.
 
        > [!NOTE]
-       >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+       >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Aggiornare il codice personalizzato nei progetti convertiti.
 

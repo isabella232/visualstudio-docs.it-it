@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409804"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967116"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
 
-[Trasformazione del testo](../modeling/code-generation-and-t4-text-templates.md) può essere richiamato durante il [processo di compilazione](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) di una soluzione di Visual Studio. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.
+[Trasformazione del testo](../modeling/code-generation-and-t4-text-templates.md) può essere richiamato durante il [processo di compilazione](/azure/devops/pipelines/index) di una soluzione di Visual Studio. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.
 
 Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere alle API di Visual Studio (EnvDTE) se il [hostspecific = "true"](../modeling/t4-template-directive.md) attributo è impostato. Ma ciò non accade quando si compila la soluzione dalla riga di comando o quando si avvia una server di compilazione tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4.
 
@@ -33,7 +33,7 @@ Per abilitare le attività di compilazione nel computer di sviluppo, installare 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Se [il server di compilazione](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) viene eseguita in un computer in cui non è installato Visual Studio, copiare i file seguenti nel computer di compilazione dal computer di sviluppo. Sostituire i numeri di versione più recente per ' *'.
+Se [il server di compilazione](/azure/devops/pipelines/agents/agents) viene eseguita in un computer in cui non è installato Visual Studio, copiare i file seguenti nel computer di compilazione dal computer di sviluppo. Sostituire i numeri di versione più recente per ' *'.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -236,7 +236,7 @@ In un modello di testo, impostare `hostspecific` nella direttiva del modello. Us
 The project folder is: <#= ProjectFolder #>
 ```
 
-In un processore di direttiva, è possibile chiamare [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+In un processore di direttiva, è possibile chiamare [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

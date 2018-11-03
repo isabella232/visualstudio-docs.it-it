@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836437"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966466"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono i modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile ricevere errori quando il motore di trasformazione del modello al codice sorgente oppure durante la compilazione del codice generato. La procedura riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
 
 > [!NOTE]
->  Per altre informazioni sul testo modelli in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per altre informazioni sul debug di modelli di testo, vedere [procedura dettagliata: debug di un modello di testo](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
+>  Per altre informazioni sul testo modelli in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per altre informazioni sul debug di modelli di testo, vedere [procedura dettagliata: debug di un modello di testo](debugging-a-t4-text-template.md).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language
  In questa procedura, si crea una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:
