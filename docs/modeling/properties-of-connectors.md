@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5f7896c2e65f5ff01307e50cdc03483f6843fa67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e26401247c2b6cefc3d86dbd5b6e80adfe473937
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881826"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967311"
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 I connettori rappresentano le relazioni di dominio in una finestra di progettazione generata.
@@ -52,4 +52,4 @@ I connettori rappresentano le relazioni di dominio in una finestra di progettazi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

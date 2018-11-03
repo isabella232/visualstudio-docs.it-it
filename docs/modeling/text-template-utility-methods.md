@@ -11,23 +11,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 802cd979160203baa36db3bc9945dd077146871c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d8101b3cd88b4cfa81e6d32327581de5336dcd1
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951203"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966508"
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
 
-Esistono diversi metodi che sono sempre disponibili quando si scrive codice in un modello di testo di Visual Studio. Questi metodi sono definiti in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Esistono diversi metodi che sono sempre disponibili quando si scrive codice in un modello di testo di Visual Studio. Questi metodi sono definiti <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 > [!TIP]
-> È inoltre possibile utilizzare altri metodi e i servizi forniti dall'ambiente host in un modello di testo (non pre-elaborato) regolare. Ad esempio, può risolvere i percorsi di file, registrare gli errori e ottenere servizi forniti da Visual Studio e qualsiasi pacchetto caricato. Per ulteriori informazioni, vedere [l'accesso a Visual Studio da un modello di testo](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+> È anche possibile usare altri metodi e i servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi dei file, registrare gli errori e ottenere servizi forniti da Visual Studio ed eventuali pacchetti caricati. Per altre informazioni, vedere [l'accesso a Visual Studio da un modello di testo](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
-## <a name="write-methods"></a>Metodi di scrittura
+## <a name="write-methods"></a>Scrivere metodi
 
-È possibile utilizzare il `Write()` e `WriteLine()` metodi per aggiungere testo all'interno di un blocco di codice standard, anziché utilizzare un blocco di codice di espressione. I seguenti blocchi di codice che seguono sono funzionalmente equivalenti.
+È possibile usare la `Write()` e `WriteLine()` metodi per aggiungere un testo in un blocco di codice standard, invece di usare un blocco di codice di espressione. I blocchi di codice seguenti sono funzionalmente equivalenti.
 
 ### <a name="code-block-with-an-expression-block"></a>Blocco di codice con un blocco di espressione
 
@@ -41,7 +41,7 @@ while (i-- > 0)
 #>
 ```
 
-### <a name="code-block-using-writeline"></a>Blocco di codice utilizzando WriteLine)
+### <a name="code-block-using-writeline"></a>Blocco di codice usando WriteLine)
 
 ```
 <#
@@ -53,9 +53,9 @@ while (i-- > 0)
 #>
 ```
 
-Potrebbe essere utile utilizzare uno di questi metodi di utilità anziché un blocco di espressione all'interno di un blocco di codice lunghi con strutture di controllo annidate.
+Potrebbe essere utile usare uno di questi metodi di utilità anziché un blocco di espressione all'interno di un blocco di codice lunghi con strutture di controllo annidate.
 
-Il `Write()` e `WriteLine()` metodi dispongono di due overload, uno che accetta un parametro stringa singolo e uno che accetta una matrice di oggetti da includere nella stringa di più di una stringa in formato composito (ad esempio il `Console.WriteLine()` (metodo)). I seguenti due utilizzi di `WriteLine()` sono funzionalmente equivalenti:
+Il `Write()` e `WriteLine()` metodi dispongono di due overload, uno che accetta un singolo parametro stringa e uno che accetta una stringa di formato composito oltre a una matrice di oggetti da includere nella stringa di (ad esempio il `Console.WriteLine()` (metodo)). I seguenti due utilizzi di `WriteLine()` sono funzionalmente equivalenti:
 
 ```
 <#
@@ -71,7 +71,7 @@ Il `Write()` e `WriteLine()` metodi dispongono di due overload, uno che accetta 
 
 ## <a name="indentation-methods"></a>Metodi di rientro
 
-È possibile utilizzare i metodi di rientro per formattare l'output del modello di testo. Il <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe dispone di un `CurrentIndent` proprietà stringa che mostra il rientro corrente nel modello di testo e un `indentLengths` campo che rappresenta un elenco dei rientri che sono stati aggiunti. È possibile aggiungere un rientro con il `PushIndent()` (metodo) e sottrazione di un rientro con il `PopIndent()` metodo. Se si desidera rimuovere tutti i rientri, utilizzare il `ClearIndent()` metodo. Blocco di codice seguente viene illustrato come utilizzare questi metodi:
+È possibile utilizzare i metodi di rientro per formattare l'output del modello di testo. Il <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe ha un `CurrentIndent` proprietà stringa che mostra il rientro corrente nel modello di testo e un `indentLengths` campo che rappresenta un elenco dei rientri che sono stati aggiunti. È possibile aggiungere un rientro con il `PushIndent()` metodo e ridurre un rientro con la `PopIndent()` (metodo). Se si desidera rimuovere tutti i rientri, usare il `ClearIndent()` (metodo). Blocco di codice seguente illustra l'uso di questi metodi:
 
 ```
 <#
@@ -87,7 +87,7 @@ Il `Write()` e `WriteLine()` metodi dispongono di due overload, uno che accetta 
 #>
 ```
 
-Questo blocco di codice produce il seguente output:
+Questo blocco di codice produce l'output seguente:
 
 ```
 Hello
@@ -97,9 +97,9 @@ Hello
         Hello
 ```
 
-## <a name="error-and-warning-methods"></a>Errore e i metodi di avviso
+## <a name="error-and-warning-methods"></a>Errori e i metodi di avviso
 
-Per aggiungere i messaggi per l'elenco di errori di Visual Studio, è possibile utilizzare metodi di utilità di avviso e di errore. Il codice seguente, ad esempio, aggiungerà un messaggio di errore per l'elenco degli errori.
+Per aggiungere messaggi a elenco di errori di Visual Studio, è possibile utilizzare metodi di utilità avviso e di errore. Il codice seguente, ad esempio, aggiungerà un messaggio di errore per l'elenco errori.
 
 ```
 <#
@@ -115,25 +115,25 @@ Per aggiungere i messaggi per l'elenco di errori di Visual Studio, è possibile 
 #>
 ```
 
-## <a name="access-to-host-and-service-provider"></a>Accesso all'Host e i Provider di servizi
+## <a name="access-to-host-and-service-provider"></a>Accesso a Host e Provider di servizi
 
-La proprietà `this.Host` può fornire l'accesso alle proprietà esposte dall'host che sta eseguendo il modello. Per utilizzare `this.Host`, è necessario impostare `hostspecific` attributo la `<@template#>` direttiva:
+La proprietà `this.Host` può fornire l'accesso alle proprietà esposte dall'host che sta eseguendo il modello. Per utilizzare `this.Host`, è necessario impostare `hostspecific` attributo il `<@template#>` direttiva:
 
 `<#@template ... hostspecific="true" #>`
 
-Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello di cui è in esecuzione in Visual Studio, è possibile eseguire il cast `this.Host` a `IServiceProvider` per accedere ai servizi, ad esempio l'IDE. Ad esempio:
+Il tipo di `this.Host` dipende dal tipo di host in cui viene eseguito il modello. In un modello che è in esecuzione in Visual Studio, è possibile eseguire il cast `this.Host` a `IServiceProvider` per accedere ai servizi, ad esempio l'IDE. Ad esempio:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
                        .GetService(typeof(EnvDTE.DTE));
 ```
 
-## <a name="using-a-different-set-of-utility-methods"></a>Utilizzo di un set diverso di metodi di utilità
+## <a name="using-a-different-set-of-utility-methods"></a>Usando un diverso set di metodi di utilità
 
-Come parte del processo di generazione del testo, il file del modello viene trasformato in una classe, che è sempre denominata `GeneratedTextTransformation`e che eredita da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se si desidera utilizzare un differente set di metodi, è possibile scrivere la propria classe e specificarlo nella direttiva del modello. La classe deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Come parte del processo di generazione di testo, il file del modello viene trasformato in una classe, che è sempre denominata `GeneratedTextTransformation`ed eredita da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se si desidera utilizzare un diverso set di metodi, è possibile scrivere una classe personalizzata e specificarlo nella direttiva del modello. La classe deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-Utilizzare il `assembly` direttiva per fare riferimento all'assembly di cui è possibile trovare la classe compilata.
+Usare il `assembly` direttiva per fare riferimento all'assembly di cui è possibile trovare la classe compilata.

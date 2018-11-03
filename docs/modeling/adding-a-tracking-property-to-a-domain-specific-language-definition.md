@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898720"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967480"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -28,7 +28,7 @@ Oggetto *rilevamento dominio* è una proprietà che può essere aggiornato dall'
 
 Ad esempio, in Domain-Specific Language Tools (strumenti DSL), il nome visualizzato proprietà di una classe di dominio ha un valore predefinito calcolato utilizzando il nome della classe di dominio, ma un utente può modificare il valore in fase di progettazione o ripristinare le impostazioni per il valore calcolato.
 
-In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL) che dispone di una proprietà che ha un valore predefinito in base alla proprietà Namespace predefinito del modello di rilevamento di Namespace. Per altre informazioni sulle proprietà di rilevamento, vedere [che definisce le proprietà di rilevamento](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL) che dispone di una proprietà che ha un valore predefinito in base alla proprietà Namespace predefinito del modello di rilevamento di Namespace. Per altre informazioni sulle proprietà di rilevamento, vedere [che definisce le proprietà di rilevamento](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
 - Il supporto degli strumenti DSL descrittori di proprietà di rilevamento. Tuttavia, la finestra di progettazione DSL non è utilizzabile per aggiungere una proprietà di rilevamento per una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.
 

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898551"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967519"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -298,7 +298,7 @@ In questo esempio, InPort è una sottoclasse di ComponentPort e ha una relazione
 Quando si scrive codice c# per questo modello, è possibile passare attraverso un collegamento in un unico passaggio usando la proprietà che la relazione genera su ciascuna delle classi che collega:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 È però necessario eseguire entrambi gli hop in modo esplicito nella sintassi del percorso. Questo requisito consente di accedere al collegamento intermedio più facilmente. Il codice seguente completa l'hop dal collegamento alla proprietà Component:
@@ -581,6 +581,6 @@ Le mappe dei connettori possono anche contenere mappe degli elementi Decorator.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)

@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885663"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967324"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
 Questo argomento illustra i concetti di base nella definizione e uso di un linguaggio specifico di dominio (DSL) creato con il SDK di modellazione per Visual Studio.
 
 > [!NOTE]
-> In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -112,7 +112,7 @@ Notare gli aspetti seguenti della nuova soluzione:
 1.  Fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti. La maggior parte del codice sorgente da Dsldefinition verrà rigenerato.
 
     > [!NOTE]
-    > Ogni volta che si modifica *Dsldefinition*, è necessario fare clic su **Trasforma tutti i modelli** prima della ricompilazione della soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+    > Ogni volta che si modifica *Dsldefinition*, è necessario fare clic su **Trasforma tutti i modelli** prima della ricompilazione della soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.
 

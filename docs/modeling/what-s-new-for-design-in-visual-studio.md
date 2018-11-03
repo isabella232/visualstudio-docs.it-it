@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820774"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966938"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novità relative alla progettazione in Visual Studio
 
@@ -40,7 +40,7 @@ Il **architettura** menu contiene ora un comando per creare direttamente un diag
 
 Noterete ora che l'impatto delle modifiche immediatamente nei risultati di analisi per il codice nella soluzione corrente ogni volta che si salva il diagramma. Non devi attendere più il completamento del comando "Convalida delle dipendenze".
 
-Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Sono state rimosse le finestre di progettazione UML
 
@@ -61,7 +61,7 @@ Tuttavia, il supporto per l'architettura di codice .NET e C++ la visualizzazione
 
 Se sei un utente significative delle finestre di progettazione UML, è possibile continuare a usare Visual Studio 2015 o versioni precedenti, anche se si decide in uno strumento alternativo per le esigenze di UML.
 
-Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

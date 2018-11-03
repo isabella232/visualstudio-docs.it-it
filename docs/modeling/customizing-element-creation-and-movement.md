@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4b584495ee4848a3c01ebe63ee30b5bc52b0ff34
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895639"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967428"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 
@@ -322,4 +322,4 @@ In un linguaggio DSL creata con il modello di diagramma componente, ad esempio, 
 
 - [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizzazione di strumenti e della casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md)
-- [Esempio di diagrammi circuito DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Esempio di diagrammi circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
