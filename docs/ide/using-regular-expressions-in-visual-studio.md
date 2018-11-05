@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945546"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050300"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -49,7 +49,8 @@ Ecco alcuni esempi:
 |Trovare la corrispondenza a zero o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile)|*?|`e.*?e` trova "ee" in "feeder" ma non "eede".|
 |Trovare la corrispondenza a una o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile)|+?|`e.+?e` trova "ente" e "erprise" in "enterprise", ma non l'intera parola "enterprise".|
 |Ancorare la stringa di corrispondenza all'inizio di una riga o stringa|^|`^car` trova la parola "car" solo quando viene visualizzata all'inizio di una riga.|
-|Ancorare la stringa di corrispondenza alla fine di una riga o stringa|\r?$|`End\r?$` trova "end" solo quando è visualizzato alla fine di una riga.|
+|Ancorare la stringa di corrispondenza alla fine di una riga o stringa|\r?$|`end\r?$` trova "end" solo quando è visualizzato alla fine di una riga.|
+|Ancorare la stringa di corrispondenza alla fine del file|$|`end$` trova "end" solo quando è visualizzato alla fine del file.|
 |Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]` trova "ba", "bb" e "bc".|
 |Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]` trova "bet" in "between", "ben" in "beneath" e "bes" in "beside", ma non "below".|
 |Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]".|
@@ -58,8 +59,8 @@ Ecco alcuni esempi:
 |Trovare la corrispondenza dell'espressione prima o dopo il simbolo.|&#124;|`(sponge\|mud) bath` trova "sponge bath" e "mud bath".|
 |Includere il carattere che segue la barra rovesciata usando una sequenza di escape| \\ |`\^` trova il carattere ^.|
 |Specificare il numero di occorrenze del gruppo o del carattere precedente|{x}, dove x è il numero di occorrenze|`x(ab){2}x` trova "xababx" e `x(ab){2,3}x` trova "xababx" e "xabababx" ma non "xababababx".|
-|Trovare la corrispondenza con un testo in una classe di caratteri Unicode, dove "X" è il numero Unicode. Per altre informazioni sulle classi di caratteri Unicode, vedere<br /><br /> [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` trova "T" e "D" in "Thomas Doe".|
-|Trovare la corrispondenza con un confine di parola|`\b` (all'esterno di una classe di caratteri \b specifica un confine di parola e all'interno di una classe di caratteri specifica un backspace).|`\bin` trova "in" in "inside" ma non "pinto".|
+|Trovare la corrispondenza con un testo in una classe di caratteri Unicode. Per altre informazioni sulle classi di caratteri Unicode, vedere<br /><br /> [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, dove "X" è il numero Unicode.|`\p{Lu}` trova "T" e "D" in "Thomas Doe".|
+|Trovare la corrispondenza con un confine di parola|\b (all'esterno di una classe di caratteri `\b` specifica un confine di parola e all'interno di una classe di caratteri `\b` specifica un backspace).|`\bin` trova "in" in "inside" ma non "pinto".|
 |Trovare la corrispondenza con un'interruzione di riga (ovvero un ritorno a capo seguito da una nuova riga).|\r?\n|`End\r?\nBegin` trova "End" e "Begin" solo quando "End" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva.|
 |Trovare la corrispondenza con qualsiasi carattere alfanumerico|\w|`a\wd` trova "add" e "a1d", ma non "a d".|
 |Trovare la corrispondenza con qualsiasi spazio vuoto.|(?([^\r\n])\s)|`Public\sInterface` trova la frase "Public Interface".|

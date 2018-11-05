@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3129df5ad051641499276fd5ee76fa0afde8a7d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fd6522f80a367be33830f02a30c056531593d9ac
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234446"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220430"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 Modificando queste opzioni è possibile modificare il comportamento correlato a IntelliSense e il database di esplorazione quando si programma in C o C++.
@@ -134,6 +134,12 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 
  Disabilita il controllo errori di ortografia durante la digitazione di IntelliSense. Le "righe rosse a zigzag" non vengono visualizzate nella finestra dell'editor, ma l'errore verrà comunque visualizzato nella finestra Elenco errori.
 
+ **Ottimizzare automaticamente il numero massimo di unità di conversione memorizzate nella cache**
+
+ Il numero massimo di unità di conversione che saranno mantenute attive alla volta per le richieste IntelliSense. Il valore deve essere compreso tra 2 e 15. Questo numero è direttamente correlato al numero massimo di processi VCPkgSrv.exe che verrà eseguito (per una determinata istanza di Visual Studio). Il valore predefinito è 2, ma in presenza di memoria disponibile è possibile aumentare questo valore e verosimilmente garantire prestazioni leggermente migliori in IntelliSense.
+
+ Per altre informazioni sulle unità di conversione, vedere [Phases of Translation](/cpp/preprocessor/phases-of-translation) (Fasi di conversione).
+
  **Disabilita completamento automatico #include**
 
  Disabilita il completamento automatico delle istruzioni `#include`.
@@ -141,16 +147,6 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
  **Usa barra in completamento automatico #include**
 
  Attiva il completamento automatico delle istruzioni `#include` quando viene usato il carattere "/". Il delimitatore predefinito è una barra rovesciata '\'. Il compilatore può accettarle entrambe, pertanto usare questa opzione per specificare il carattere usato dalla base codice.
-
- **Numero massimo di unità di conversione memorizzate nella cache**
-
- Il numero massimo di unità di conversione che saranno mantenute attive alla volta per le richieste IntelliSense. Il valore deve essere compreso tra 2 e 15. Questo numero è direttamente correlato al numero massimo di processi VCPkgSrv.exe che verrà eseguito (per una determinata istanza di Visual Studio). Il valore predefinito è 2, ma in presenza di memoria disponibile è possibile aumentare questo valore e verosimilmente garantire prestazioni leggermente migliori in IntelliSense.
-
- Per altre informazioni sulle unità di conversione, vedere [Phases of Translation](/cpp/preprocessor/phases-of-translation) (Fasi di conversione).
-
- **Abilita sostituzione punto con freccia per elenco di membri**
-
- sostituisce '.' con '->' quando applicabile per l'elenco membri.
 
  **Disabilita elenco di membri aggressivi**
 
@@ -164,21 +160,25 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 
  I frammenti di codice non vengono visualizzati nei suggerimenti degli elenchi di membri.
 
+ **Modalità filtro elenchi di membri**
+
+ Imposta il tipo di algoritmo di corrispondenza. **Fuzzy** consente di trovare le corrispondenze più probabili perché usa un algoritmo simile a un correttore ortografico per trovare corrispondenze simili ma non identiche. **Smart filtering** (Filtro intelligente) trova le corrispondenze nelle sottostringhe, anche se non sono all'inizio di una parola. **Prefisso** trova le corrispondenze solo in sottostringhe identiche all'inizio della parola.
+
  **Disabilita colorazione semantica**
 
  Disattiva tutte la colorazione del codice, ad eccezione di parole chiave del linguaggio, stringhe e commenti.
+
+ **Caratteri commit elenco membri**
+
+ Specifica i caratteri che causano il commit del suggerimento elenco membri attualmente evidenziato. È possibile aggiungere o rimuovere caratteri da questo elenco.
 
  **Commit elenco membri smart**
 
  Aggiunge una riga quando si sceglie INVIO alla fine di una parola digitata.
 
- **Modalità filtro elenchi di membri**
+ **Abilita sostituzione punto con freccia per elenco di membri**
 
- Imposta il tipo di algoritmo di corrispondenza. **Fuzzy** consente di trovare le corrispondenze più probabili perché usa un algoritmo simile a un correttore ortografico per trovare corrispondenze simili ma non identiche. **Smart filtering** (Filtro intelligente) trova le corrispondenze nelle sottostringhe, anche se non sono all'inizio di una parola. **Prefisso** trova le corrispondenze solo in sottostringhe identiche all'inizio della parola.
-
- **Caratteri commit elenco membri**
-
- Specifica i caratteri che causano il commit del suggerimento elenco membri attualmente evidenziato. È possibile aggiungere o rimuovere caratteri da questo elenco.
+ Sostituisce '.' con '->' quando applicabile per l'elenco membri.
 
 ## <a name="references"></a>Riferimenti
  **Disabilita risoluzione**
@@ -191,12 +191,14 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 
  **Disabilita evidenziazione riferimento**
 
+Per impostazione predefinita, quando si seleziona una parte di testo, tutte le istanze dello stesso testo vengono automaticamente evidenziate nel documento corrente. È possibile disabilitare questa funzionalità impostando **Disabilita evidenziazione riferimento** su **True**.
+
  ## <a name="text-editor"></a>Editor di testo
- **Abilita espansione degli ambiti**
+ **Abilita Racchiudi tra parentesi graffe**
 
  Se abilitata, è possibile racchiudere il testo selezionato tra parentesi graffe digitando '{' nell'editor di testo.
 
- **Abilita espansione della precedenza**
+ **Abilita Racchiudi tra parentesi**
 
  Se abilitata, è possibile racchiudere il testo selezionato tra parentesi digitando '(' nell'editor di testo.
 

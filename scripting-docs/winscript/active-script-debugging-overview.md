@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919364"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220222"
 ---
 # <a name="active-script-debugging-overview"></a>Panoramica di debug script ActiveX
 Le interfacce di debug di script ActiveX consentono un debug indipendente dal linguaggio e dall'host e supportano un'ampia gamma di ambienti di sviluppo.  
@@ -33,31 +33,30 @@ Figura 1
   
  Nelle sottosezioni riportate di seguito vengono descritti i singoli componenti chiave del debug ActiveX e le interfacce associate. Prima di procedere è tuttavia necessario definire alcuni concetti chiave del debug ActiveX:  
   
- applicazione host  
+ **Applicazione host**  
  Applicazione che ospita i motori script e offre un set di oggetti per la generazione di script (o "modello a oggetti").  
   
- modulo di gestione del linguaggio  
+ **Modulo di gestione del linguaggio**  
  Componente che offre astrazioni di analisi, esecuzione e debug per un determinato linguaggio.  
   
- ambiente di sviluppo integrato (IDE) debugger  
+ **IDE del debugger**  
  Applicazione che rende disponibile l'interfaccia utente di debug comunicando con l'applicazione host e i moduli del linguaggio.  
   
- gestione del debug del computer  
- Componente che gestisce un registro dei processi dell'applicazione dei quali è possibile eseguire il debug.  
+ **Gestione debug del computer** Componente che gestisce un registro dei processi dell'applicazione dei quali è possibile eseguire il debug.  
   
- gestione del debug dei processi  
+ **Gestione del debug dei processi**  
  Componente che gestisce l'albero dei documenti di cui è possibile eseguire il debug per una particolare applicazione, tiene traccia dei thread in esecuzione e così via.  
   
- contesto del documento  
+ **Contesto del documento**  
  Un contesto del documento è un'astrazione che rappresenta un intervallo specifico del codice sorgente di un documento host.  
   
- contesto del codice  
+ **Contesto del codice**  
  Un contesto del codice rappresenta una determinata posizione nel codice in esecuzione di un modulo di gestione del linguaggio (un "puntatore di istruzione virtuale").  
   
- contesto dell'espressione  
+ **Contesto dell'espressione**  
  Contesto specifico (ad esempio uno stack frame) nel quale le espressioni possono essere valutate da un modulo di gestione del linguaggio.  
   
- esplorazione di oggetti  
+ **Esplorazione di oggetti**  
  Rappresentazione strutturata indipendente dal linguaggio del nome, tipo, valore e degli oggetti secondari di un oggetto, adatta per implementare un'interfaccia utente di tipo "finestra espressioni di controllo".  
   
  Di seguito viene inclusa una panoramica dei componenti principali del debug Active X e delle interfacce associate corrispondenti, seguita dai dettagli relativi a tali interfacce.  

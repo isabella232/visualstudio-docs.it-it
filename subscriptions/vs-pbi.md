@@ -9,12 +9,12 @@ description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscriz
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894560"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219536"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -80,7 +80,7 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 | Visual Studio Dev Essentials | N/D  | Non disponibile |N/D|
 | Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
 
-<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Non include: Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Esclude:  Microsoft Partner Network (MPN), FTE, Imagine.*
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
@@ -92,9 +92,24 @@ R: il vantaggio è gratuito, ma l'attivazione usa lo stesso sistema usato per el
 - Carta di credito.  Se si specifica un numero di carta di credito, NON viene effettuato alcun addebitato sulla carta. 
 - Fattura.  Se si seleziona "Fattura" come tipo di pagamento, non è necessario indicare un numero di carta di credito.  È anche possibile impostare l'intervallo su "annuale".  In questo modo si riceverà un solo messaggio di posta elettronica che informa che la fattura è pronta.  L'importo della fattura sarà $ 0,00.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>D: è possibile usare il vantaggio Power BI Pro incluso nella sottoscrizione in un ambiente di produzione?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>D: è possibile usare il vantaggio Power BI Pro incluso nelle licenze della sottoscrizione in un ambiente di produzione?
 R: sì.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>D: durante il tentativo di attivare Power BI Pro viene visualizzato un messaggio che indica che si ha già un account di lavoro.  È ancora possibile usare il vantaggio?
+R: sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant di Office 365 attivi di cui non si è amministratore.  Per aggiungere Power BI Pro a un tenant, è necessario essere amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
+1.  Quando viene visualizzato il messaggio che indica che si ha già un account di lavoro, fare clic su **Creare nuovo account**.
+
+2.  Nella schermata successiva immettere le informazioni di contatto e fare clic su **Avanti**.
+
+3.  Creare l'ID utente e la password.  Per usare l'offerta gratuita, assicurarsi di selezionare **.onmicrosoft.com** come dominio. Fare clic su **Crea il mio account**.
+    > [!div class="mx-imgBorder"]
+    > ![Creazione dell'ID utente del tenant privato per il vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  I passaggi rimanenti del processo sono uguali a quelli descritti nell'articolo, a partire dal passaggio 6.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>D: in un dominio di un ente pubblico  è possibile usare il vantaggio? 
+R: no.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant in un dominio per enti pubblici. 
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con Power BI Pro?
@@ -103,3 +118,6 @@ R: sì.
     - Esplorare i problemi principali, ottenere assistenza dalla community o inviare un ticket di supporto nella [pagina del supporto tecnico](https://powerbi.microsoft.com/support/).
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Passaggi successivi
+Per attivare il vantaggio Power BI Pro, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

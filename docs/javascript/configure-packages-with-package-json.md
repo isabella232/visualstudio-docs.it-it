@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126639"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219095"
 ---
 # <a name="packagejson-configuration"></a>Configurazione di package.json
 
@@ -28,7 +28,7 @@ Il sistema di controllo delle versioni dei pacchetti npm si attiene a regole mol
 
     [major].[minor].[patch]
 
-Supponiamo che l'app contenga un pacchetto con una versione 5.2.1. 5 è il numero della versione principale, 2 è il numero della versione secondaria e 1 è il numero della patch.
+Supponiamo che l'app contenga un pacchetto con una versione 5.2.1. La versione principale è la 5, la versione secondaria è la 2 e la patch è la 1.
 
 * In un aggiornamento della versione principale il pacchetto include nuove funzionalità che non sono compatibili con le versioni precedenti. Si tratta di modifiche che causano un'interruzione.
 * In un aggiornamento della versione secondaria sono state aggiunte nuove funzionalità al pacchetto che sono compatibili con le versioni precedenti del pacchetto.

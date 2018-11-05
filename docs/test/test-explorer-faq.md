@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775104"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244385"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775104"
 **Nella casella di ricerca Esplora test non è più disponibile un filtro per il percorso file.**
 
 Il filtro per il percorso file nella casella di ricerca **Esplora test** è stato rimosso in Visual Studio 2017 versione 15.7 anteprima 3. Questa funzionalità era poco usata ed Esplora Test può recuperare i metodi di test più velocemente se la funzionalità viene esclusa. Se questa modifica interrompe il flusso di sviluppo di progetti in corso, comunicarlo aggiungendo un commento nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Rimuovere le interfacce non documentate
+**Alcune API correlate ai test non sono più presenti in Visual Studio 2019. Cosa è cambiato?**
+In Visual Studio 2019, verranno rimosse alcune API di finestra di test in precedenza contrassegnate come pubbliche, ma mai documentate ufficialmente. Sono state contrassegnate come "deprecate" in Visual Studio 2017 per avvisare tempestivamente chi gestisce le estensioni. In base a quanto osservato, sono pochissime le estensioni che hanno rilevato queste API e hanno dipendenze dalle stesse. Sono incluse `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se questa modifica interessa l'estensione in uso, segnalare un bug in [Developer Community](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Riferimento NuGet all'adattatore di test
 **In Visual Studio 2017 versione 15.8 i test vengono individuati, ma non eseguiti.**

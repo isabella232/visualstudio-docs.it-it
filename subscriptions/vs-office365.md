@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908392"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244463"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 nelle sottoscrizioni di Visual Studio
 
@@ -25,15 +25,24 @@ Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 3
 Attenersi alla procedura seguente per il download e l'attivazione di Office 365:
 1. Accedere alla sottoscrizione di Visual Studio Enterprise.  
 2. Fare clic sulla scheda **Download**.
-3. Verrà visualizzato un elenco di download consigliati. Nell'elenco di Office scegliere **Office Professional Plus 2019**
-0. Verranno visualizzati due elenchi.  Quello relativo a Office 365 è il secondo.  Verificare che nel primo e nell'ultimo elenco a discesa, che determinano l'architettura e il tipo di supporto, siano indicati, rispettivamente, **UNK** e **OTH**.   
-0. Per installare Office 365, è necessario un codice Product Key.  Fare clic sul collegamento **Get key** (Ottieni codice) sotto il secondo elenco.
-0. In una finestra a comparsa verranno indicati i codici già richiesti.  Per ottenere un nuovo codice, fare clic su **Claim key** (Richiedi codice).
+3. Verrà visualizzato un elenco di download consigliati. Nell'elenco di Office scegliere **Office 365**. 
+   > [!div class="mx-imgBorder"]
+   > ![Download per Office 365](_img/vs-office365/vs-office365-downloads.png)
+0. Per installare Office 365, è necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
+   > [!div class="mx-imgBorder"]
+   > ![Recupera codice di Office 365](_img/vs-office365/vs-office365-get-key.png)
+0. Una finestra visualizza i codici già recuperati e quelli disponibili.  Per ottenere un nuovo codice, fare clic su **Richiedi chiave** nell'elenco **Office Professional Plus 2019**.
+   > [!div class="mx-imgBorder"]
+   > ![Richiedi chiave di Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Prendere nota del codice appena richiesto. È sempre possibile tornare a questo elenco per visualizzarlo di nuovo.
 0. Chiudere la finestra a comparsa.
 0. Fare clic sul pulsante **Download**. 
+   > [!div class="mx-imgBorder"]
+   > ![Avvia download di Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Accedere con l'account Microsoft. Se è già stato eseguito l'accesso, fare clic su **Avanti**.
 0. Immettere il codice Product Key, il paese o l'area geografica e la lingua e quindi fare clic su **Avanti**.
+   > [!div class="mx-imgBorder"]
+   > ![Immettere il codice " Product Key" di Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Fare di nuovo clic su **Avanti**.
 0. Fare clic su **Installa** per installare le applicazioni di Office. 
 

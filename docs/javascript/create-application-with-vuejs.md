@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67b3a5a1a382b6768d25ce2b0550197fc09643fa
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8ffe7a2a730f10d0f29a13b5123fbd7f56beda13
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924781"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050157"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
@@ -37,7 +37,7 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
     > [!IMPORTANT]
     > Questo articolo richiede funzionalità disponibili solo a partire da Visual Studio 2017 versione 15.8 Preview 3.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  per installarlo gratuitamente.
 
     Se il carico di lavoro è già installato ed è necessario installare Visual Studio, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto** (selezionare **File** > **Nuovo** > **Progetto**). Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
@@ -79,7 +79,7 @@ In questo esempio si usa un'applicazione ASP.NET Core vuota (C#). È tuttavia po
 * Aprire il file *./Startup.cs*e aggiungere le righe seguenti al metodo Configure:
 
     ```csharp
-    app.UseDefaultFiles() // Enables default file mapping on the web root.
+    app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 

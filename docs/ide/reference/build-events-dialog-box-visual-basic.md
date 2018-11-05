@@ -18,29 +18,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ef3b173643c7bff0e1417ffc9ecfb431b06685
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944135"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219354"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Finestra di dialogo Eventi di compilazione (Visual Basic)
+
 Usare la finestra di dialogo **Eventi di compilazione** per specificare le istruzioni di configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti tutti gli eventi di pre-compilazione o post-compilazione. Per altre informazioni, vedere [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
- **Riga di comando dell'evento di pre-compilazione**Specifica i comandi da eseguire prima dell'avvio della compilazione. Per immettere comandi lunghi, fare clic su **Modifica pre-compilazione** per visualizzare la [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+**Riga di comando eventi pre-compilazione**
+
+Specifica i comandi da eseguire prima dell'avvio della compilazione. Per immettere comandi lunghi, fare clic su **Modifica pre-compilazione** per visualizzare la [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
 > [!NOTE]
 > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
 
+**Riga di comando eventi post-compilazione**
 
- **Riga di comando dell'evento di post-compilazione**Specifica i comandi da eseguire dopo l'avvio della compilazione. Per immettere comandi lunghi, fare clic su **Modifica post-compilazione** per visualizzare la **finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione**.
+Specifica i comandi da eseguire dopo il completamento della compilazione. Per immettere comandi lunghi, fare clic su **Modifica post-compilazione** per visualizzare la finestra di dialogo **Riga di comando eventi pre-compilazione/post-compilazione**.
 
 > [!NOTE]
 > Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
+**Esegui evento post-compilazione**
 
- **Eseguire l'evento di post-compilazione**Specifica le condizioni per l'esecuzione dell'evento di post-compilazione, come illustrato in questa tabella.
+Specifica le condizioni per l'evento che la post-compilazione deve eseguire, come illustrato nella tabella seguente.
 
 |Opzione|Risultato|
 |------------|------------|

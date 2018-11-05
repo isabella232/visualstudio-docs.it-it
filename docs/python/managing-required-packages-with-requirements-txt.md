@@ -1,7 +1,7 @@
 ---
 title: Uso di un file requirements.txt per gestire i requisiti dei pacchetti
-description: È possibile usare un file requirements.txt per gestire le dipendenze di un progetto. Se si riceve un progetto che contiene un file requirements.txt, è possibile installare facilmente tali dipendenze in un unico passaggio.
-ms.date: 06/27/2018
+description: Un file requirements.txt descrive le dipendenze di un progetto. Se si riceve un progetto che contiene un file requirements.txt, è possibile installare facilmente tali dipendenze in un unico passaggio.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100913"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218440"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gestire i pacchetti necessari con requirements.txt
 
-Se si condivide un progetto con altri utenti usando un sistema di compilazione oppure si prevede di distribuirlo in un'altra posizione dove è necessario ripristinare un ambiente, è necessario specificare i pacchetti esterni richiesti dal progetto. L'approccio consigliato prevede l'uso di un [file requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), che contiene un elenco dei comandi per pip e che consente di installare le versioni richieste di pacchetti dipendenti.
+Se si condivide un progetto con altri utenti usando un sistema di compilazione oppure si prevede di copiare il progetto in un'altra posizione dove deve essere ripristinato un ambiente, è necessario specificare i pacchetti esterni richiesti dal progetto. L'approccio consigliato prevede l'uso di un [file requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), che contiene un elenco dei comandi per pip e che consente di installare le versioni richieste di pacchetti dipendenti. Il comando più comune è `pip freeze > requirements.txt`, che registra l'elenco dei pacchetti correnti di un ambiente in *requirements.txt*.
 
 Dal punto di vista tecnico, per tenere traccia dei requisiti è possibile usare un qualsiasi nome file, usando `-r <full path to file>` quando si installa un pacchetto, ma Visual Studio fornisce supporto specifico per *requirements.txt*:
 
@@ -65,7 +65,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-### <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 
 - [Gestire ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)
