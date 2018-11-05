@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746126"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244476"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -31,7 +31,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Supporto della colorazione della sintassi, del completamento istruzioni e di Navigate To (Passa a)
 
-Alcune funzionalità dell'editor di Visual Studio, ad esempio la colorazione della sintassi, il completamento istruzioni e Navigate To (Passa a) consentono una maggiore facilità di lettura, creazione e modifica del codice. Lo screenshot seguente mostra un esempio di modifica di uno script Perl in Visual Studio. La sintassi viene colorata automaticamente. Ad esempio, i commenti nel codice sono di colore verde, il codice è nero, i percorsi sono rossi e le istruzioni sono blu. L'editor di Visual Studio applica automaticamente la colorazione della sintassi per qualsiasi linguaggio supportato. Oltre a questo, quando si inizia a immettere una parola chiave o un oggetto noto del linguaggio, la funzionalità di completamento istruzioni visualizza l'elenco delle istruzioni e degli oggetti possibili. Il completamento istruzioni consente di creare codice in modo più rapido e facile.
+Alcune funzionalità dell'editor di Visual Studio, ad esempio la colorazione della sintassi, il completamento istruzioni (chiamato anche IntelliSense) e _Passa a_ consentono una maggiore facilità di scrittura, lettura e modifica del codice. Lo screenshot seguente mostra un esempio di modifica di uno script Perl in Visual Studio. La sintassi viene colorata automaticamente. Ad esempio, i commenti nel codice sono di colore verde, il codice è nero, i percorsi sono rossi e le istruzioni sono blu. L'editor di Visual Studio applica automaticamente la colorazione della sintassi per qualsiasi linguaggio supportato. Oltre a questo, quando si inizia a immettere una parola chiave o un oggetto noto del linguaggio, la funzionalità di completamento istruzioni visualizza l'elenco delle istruzioni e degli oggetti possibili. Il completamento istruzioni consente di scrivere codice in modo più rapido e facile.
 
 ![Colorazione della sintassi in uno script Perl](../ide/media/vside_perledit.png)
 

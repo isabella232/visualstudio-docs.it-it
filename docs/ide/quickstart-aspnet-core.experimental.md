@@ -2,7 +2,7 @@
 title: Usare Visual Studio per creare un'app Web ASP.NET Core in C#
 description: Informazioni dettagliate su come creare un'app Web Hello World in Visual Studio con C# e ASP.NET Core.
 ms.custom: mvc
-ms.date: 09/23/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,22 +14,34 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: e85650f6671684f2d0ed313603f1af88e608e1d9
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028936"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244424"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
 In questa introduzione di 5-10 minuti che spiega come usare Visual Studio viene creata un'app Web "Hello World" semplice tramite un modello di progetto ASP.NET e il linguaggio di programmazione C#.
 
+## <a name="before-you-begin"></a>Prima di iniziare
+
+### <a name="install-visual-studio"></a>Installare Visual Studio
+
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+
+### <a name="update-visual-studio"></a>Aggiornare Visual Studio
+
+Se Visual Studio è già installato, verificare che si stia usando la versione più recente. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio 2017 alla versione più recente](../install/update-visual-studio.md).
+
+### <a name="choose-your-theme-optional"></a>Scegliere il tema (facoltativo)
+
+Questa esercitazione introduttiva include screenshot in cui viene usato il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](quickstart-personalize-the-ide.md).
 
 ## <a name="create-a-project"></a>Creare un progetto
 
-Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Ecco come fare.
+Per iniziare, creare un progetto di applicazione Web ASP.NET Core. Ecco come fare.
 
 1. Aprire Visual Studio 2017.
 
@@ -37,14 +49,17 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Ecco come
 
 1. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Denominare il file `HelloWorld` e scegliere **OK**.
 
-1. Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** verificare che **ASP.NET Core 2.0** venga visualizzato nel menu a discesa in alto. Scegliere quindi **Applicazione Web** e **OK**.
+1. Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** selezionare **ASP.NET Core 2.0** o versione successiva nel menu a discesa in alto e quindi selezionare **Applicazione Web**.
+
+   > [!NOTE]
+   > Se **ASP.NET Core 2.0** o versione successiva non è presente nel menu a discesa in alto, verificare che si stia usando la versione più recente di Visual Studio. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio 2017 alla versione più recente](../install/update-visual-studio.md).
 
    ![Visualizzare il file di immagine animata che illustra come creare un progetto ASP.NET Core C# in Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
    Dopo pochi istanti, Visual Studio apre il file di progetto.
 
    > [!NOTE]
-   > Se non viene visualizzata la categoria dei modelli di progetto **.NET Core** scegliere il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro.
+   > Se non viene visualizzata la categoria dei modelli di progetto **.NET Core** scegliere il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro. A seconda delle impostazioni di visualizzazione, potrebbe essere necessario scorrere la pagina per visualizzarla.
    >
    > ![Aprire Programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](../ide/media/open-visual-studio-installer.png)
    >
@@ -77,7 +92,7 @@ In seguito si procederà alla creazione e all'esecuzione dell'app Web "Hello Wor
    ![Visualizzare il file di immagine animata che illustra come creare ed eseguire un'app Web ASP.NET Core C# in Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
-   > Se viene visualizzato il messaggio di errore **Non è possibile connettersi al server Web 'IIS Express'**, chiudere Visual Studio e quindi aprirlo usando l'opzione **Esegui come amministratore** dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
+   > Se viene visualizzato il messaggio di errore **Impossibile connettersi al server Web "IIS Express"** o un messaggio di errore in cui viene indicato un certificato SSL, chiudere Visual Studio. Aprire quindi Visual Studio usando l'opzione **Esegui come amministratore** dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
 
 1. Nel Web browser verificare che la pagina **Informazioni su** includa il testo aggiornato.
 

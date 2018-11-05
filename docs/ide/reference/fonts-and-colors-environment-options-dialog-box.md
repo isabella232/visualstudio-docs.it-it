@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954229"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220261"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni** e quindi selezionare **Ambiente/Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.

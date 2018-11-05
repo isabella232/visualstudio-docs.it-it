@@ -8,18 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.New_Lines
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.Spacing
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cd4f166bc8b90db4012296c8d81c1d89e1b5eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800620"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219757"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opzioni, Editor di testo, JavaScript, Formattazione
 Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti**, **Opzioni** e quindi espandere **Editor di testo**, **JavaScript** e **Formattazione**.
@@ -48,7 +51,7 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
 |**Inserisci parentesi graffa aperta su nuova riga per le funzioni**|Quando questa opzione è selezionata, l'editor di codice sposta la parentesi graffa aperta associata a una funzione in una nuova riga.|
 |**Inserisci parentesi graffa aperta su nuova riga per i blocchi di controllo**|Quando questa opzione è selezionata, l'editor di codice sposta in una nuova riga la parentesi graffa aperta associata a un blocco di controllo, ad esempio ai blocchi `if` e `while`.|
 
-## <a name="spacing"></a>Spaziatura
+## <a name="spacing"></a>Spacing (Spaziatura)
  Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella visualizzazione **Origine**.
 
 ## <a name="uielement-list"></a>Elenco UIElement

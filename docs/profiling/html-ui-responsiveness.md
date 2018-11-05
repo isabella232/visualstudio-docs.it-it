@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834529"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220147"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -42,7 +42,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
 2.  Scegliere **Profiler prestazioni** dal menu **Debug**.  
   
-     Se si vuole modificare la destinazione di analisi del profiler, scegliere**Modifica destinazione**.  
+     Se si vuole modificare la destinazione di analisi per il profiler, scegliere **Modifica destinazione**.  
   
      ![Cambia destinazione analisi](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   

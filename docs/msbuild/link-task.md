@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081709"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220121"
 ---
 # <a name="link-task"></a>Link (attività)
 Esegue il wrapping dello strumento linker di Visual C++, *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).  
@@ -67,7 +67,7 @@ Esegue il wrapping dello strumento linker di Visual C++, *link.exe*. Lo strument
   
      Specifica gli attributi che verranno inseriti nella sezione `dependency` del file manifesto.  
   
-     Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vedere anche [Publisher Configuration Files](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files) (File di configurazione del server di pubblicazione).  
+     Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vedere anche [Publisher Configuration Files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (File di configurazione del server di pubblicazione).  
   
 -   **AdditionalOptions**  
   
@@ -187,7 +187,7 @@ Esegue il wrapping dello strumento linker di Visual C++, *link.exe*. Lo strument
   
      Specifica se verrà applicato **SuppressUnmanagedCodeSecurityAttribute** alle chiamate P/Invoke generate dal linker effettuate dal codice gestito in DLL native.  
   
-    Per altre informazioni, vedere [/CLRUNMANAGEDCODECHECK (Aggiunge SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Per altre informazioni, vedere [/CLRUNMANAGEDCODECHECK (Aggiungere SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   
@@ -926,4 +926,4 @@ Esegue il wrapping dello strumento linker di Visual C++, *link.exe*. Lo strument
      Per altre informazioni, vedere [/VERSION (informazioni sulla versione)](/cpp/build/reference/version-version-information).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

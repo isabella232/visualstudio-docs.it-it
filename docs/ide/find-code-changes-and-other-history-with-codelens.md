@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853519"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220300"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -127,7 +127,7 @@ Il team può essere costituito da più branch, ad esempio un branch principale e
 
 ### <a name="find-when-your-code-was-branched"></a>Individuare il punto in cui il codice è stato sottoposto a branching
 
-Per sapere quando il codice è stato sottoposto a branching, passare al codice nel branch figlio. Selezionare quindi l'indicatore delle **modifiche** o premere**ALT**+**6**:
+Per sapere quando il codice è stato sottoposto a branching, passare al codice nel branch figlio. Selezionare quindi l'indicatore delle **modifiche** o premere **ALT**+**6**:
 
 ![CodeLens: individuare il punto in cui è stato creato un ramo per il codice](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Per usare la tastiera:
 
 4. Premere **TAB** per passare all'elenco **Mostra impostazioni per**, quindi premere **Freccia GIÙ** per selezionare **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>D: È possibile spostare l'`head`s-up display CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>D: È possibile spostare l'heads-up display CodeLens?
 
 **R:** sì, scegliere l'![icona di ancoraggio](../ide/media/codelensdockwindow.png) per ancorare CodeLens come una finestra.
 

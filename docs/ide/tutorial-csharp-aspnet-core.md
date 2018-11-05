@@ -2,7 +2,7 @@
 title: Introduzione a C# e ad ASP.NET Core in Visual Studio
 description: Informazioni dettagliate su come creare un'app web ASP.NET Core in Visual Studio con C#.
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284050"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244489"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
 In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual Studio si creerà un'app Web ASP.NET Core in C#, si apporteranno modifiche, si esploreranno alcune funzionalità dell'ambiente IDE e quindi si eseguirà l'app.
 
+## <a name="before-you-begin"></a>Prima di iniziare
+
+### <a name="install-visual-studio"></a>Installare Visual Studio
+
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+
+### <a name="update-visual-studio"></a>Aggiornare Visual Studio
+
+Se Visual Studio è già installato, verificare che si stia usando la versione più recente. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio 2017 alla versione più recente](../install/update-visual-studio.md).
+
+### <a name="choose-your-theme-optional"></a>Scegliere il tema (facoltativo)
+
+Questa esercitazione include screenshot in cui viene usato il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](quickstart-personalize-the-ide.md).
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -46,7 +58,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opzione 1: usare la finestra di dialogo Nuovo progetto
 
-1. Selezionare il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
+1. Selezionare il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**. A seconda delle impostazioni di visualizzazione, potrebbe essere necessario scorrere la pagina per visualizzarla.
 
    ![Selezionare il collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 1. Verificare che **ASP.NET Core 2.1** venga visualizzato nel menu a discesa in alto. Scegliere quindi **OK**.
 
    ![Finestra di dialogo Nuova applicazione Web ASP.NET Core](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > Se **ASP.NET Core 2.0** o versione successiva non è presente nel menu a discesa in alto, verificare se si sta usando la versione più recente di Visual Studio. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio 2017 alla versione più recente](../install/update-visual-studio.md).
 
 ### <a name="about-your-solution"></a>Informazioni sulla soluzione
 

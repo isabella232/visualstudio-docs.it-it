@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922406"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220365"
 ---
 # <a name="cl-task"></a>attività CL
 Esegue il wrapping dello strumento del compilatore Visual C++, *cl.exe*. Il compilatore genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).  
@@ -52,7 +52,9 @@ Esegue il wrapping dello strumento del compilatore Visual C++, *cl.exe*. Il comp
   
    Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).  
   
-- **AdditionalUsingDirectories** Parametro String[] facoltativo.  
+- **AdditionalUsingDirectories**
+
+   Parametro String[] facoltativo.  
   
    Specifica una directory in cui il compilatore effettuerà la ricerca per risolvere i riferimenti di file passati alla direttiva **#using**.  
   
