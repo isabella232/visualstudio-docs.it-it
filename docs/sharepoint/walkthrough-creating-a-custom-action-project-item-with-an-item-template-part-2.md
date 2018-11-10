@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910966"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296242"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di elemento in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910966"
   
 13. Nel **Description** casella, immettere **apre il sito Web di SharePoint Developer Center**.  
   
-14. Nel **URL** immettere **http://msdn.microsoft.com/sharepoint/default.aspx**, quindi scegliere il **fine** pulsante.  
+14. Nel **URL** immettere **https://docs.microsoft.com/sharepoint/dev/**, quindi scegliere il **fine** pulsante.  
   
      Visual Studio aggiunge un elemento denominato **CustomAction1** al progetto e apre il *Elements* file nell'editor. Verificare che *Elements* contiene i valori specificati nella procedura guidata.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910966"
   
      Il **le impostazioni dell'elenco** verrà visualizzata la pagina.  
   
-4.  Sotto il **Communications** intestazione nella parte superiore della pagina, scegliere il **Centro per sviluppatori SharePoint** collegare, verificare che nel browser verrà aperto il sito Web http://msdn.microsoft.com/sharepoint/default.aspxe quindi chiudere il browser.  
+4.  Sotto il **Communications** intestazione nella parte superiore della pagina, scegliere il **Centro per sviluppatori SharePoint** collegare, verificare che nel browser verrà aperto il sito Web https://docs.microsoft.com/sharepoint/dev/e quindi chiudere il browser.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Pulizia dei computer di sviluppo
  Dopo aver completato l'elemento del progetto di test, rimuovere il modello di elemento di progetto dall'istanza sperimentale di Visual Studio.  

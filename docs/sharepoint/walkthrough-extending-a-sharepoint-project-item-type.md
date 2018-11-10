@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220326"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295722"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint
   È possibile usare la **Business Data Connectivity Model** elemento del progetto per creare un modello per il servizio di integrazione applicativa dei dati (BDC) in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È anche necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.  
@@ -164,7 +164,7 @@ ms.locfileid: "50220326"
   
 1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il file vsixmanifest nel progetto GenerateExternalDataLists e quindi scegliere **aprire**.  
   
-     Visual Studio apre il file nell'editor del manifesto. Il file vsixmanifest è che la base per il file extension vsixmanifest richiesto da tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio apre il file nell'editor del manifesto. Il file vsixmanifest è che la base per il file extension vsixmanifest richiesto da tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  Nel **Product Name** immettere **External Data elenco Generator**.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "50220326"
 6.  Nel **tipo** casella di riepilogo **MEFComponent**.  
   
     > [!NOTE]  
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   

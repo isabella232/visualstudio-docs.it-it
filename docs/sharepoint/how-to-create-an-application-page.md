@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eefbb12584cdff2bb32b9d4406c916969ec435c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118861"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296203"
 ---
 # <a name="how-to-create-an-application-page"></a>Procedura: creare una pagina applicazione
   È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint, queste pagine sono dette pagine dell'applicazione. A differenza di una pagina del sito, una pagina dell'applicazione contiene codice che viene eseguito dietro la pagina. Per altre informazioni, vedere [creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
@@ -46,7 +46,7 @@ ms.locfileid: "37118861"
   
      Visual Studio aggiunge diversi file e cartelle nel progetto. Per altre informazioni su questi file, vedere [creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
-     Nel **origine** visualizzazione della finestra di progettazione in Visual Web Developer, il file della pagina ASP.NET è disponibile. È possibile progettare la pagina aggiungendo i controlli dal **casella degli strumenti** e inserendoli nei segnaposti del contenuto. Per altre informazioni, vedere [visualizzazione origine, progettazione pagina Web](http://msdn.microsoft.com/en-us/5911396b-fe51-4150-9ff1-b085f812862f).  
+     Nel **origine** visualizzazione della finestra di progettazione in Visual Web Developer, il file della pagina ASP.NET è disponibile. È possibile progettare la pagina aggiungendo i controlli dal **casella degli strumenti** e inserendoli nei segnaposti del contenuto. Per altre informazioni, vedere [visualizzazione origine, progettazione pagina Web](/previous-versions/aspnet/ms178154\(v\=vs.100\)).  
   
 7.  Se si desidera gestire gli eventi di controllo, aggiungere il codice al file di codice per la pagina applicazione.  
   

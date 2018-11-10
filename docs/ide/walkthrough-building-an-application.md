@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143190"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672782"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Compilare un'applicazione
 
@@ -225,5 +225,5 @@ La procedura è stata completata. Questa procedura dettagliata è stata completa
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura dettagliata: Compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Procedura dettagliata: Usare MSBuild](../msbuild/walkthrough-using-msbuild.md)

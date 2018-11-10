@@ -1,24 +1,24 @@
 ---
-title: Creare una regola di analisi di codice personalizzato imposta in Visual Studio
-ms.date: 04/04/2018
+title: Creare un set di regole di analisi di codice personalizzato
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884186"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000216"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -69,6 +69,44 @@ Per creare una regola personalizzata set, è possibile aprire una set di regole 
    Il nuovo set di regole è selezionato nel **eseguire questo set di regole** elenco.
 
 6. Selezionare **aprire** per aprire il nuovo set di regole in editor set di regole.
+
+### <a name="rule-precedence"></a>Precedenza delle regole
+
+- Se la stessa regola è elencata due o più volte in una set di regole con diversi livelli di gravità, il compilatore genera un errore. Ad esempio:
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- Se la stessa regola è elencata due o più volte in una set di regole con il *stessi* gravità, si può vedere il seguente avviso nella **elenco errori**:
+
+   **CA0063: Impossibile caricare il file del set di regole '\[il] estensione ruleset ' o impostare una delle relative regole dipendenti file. Il file non è conforme allo schema del set di regole.**
+
+- Se il set di regole include una regola figlio impostata in un' **inclusione** tag e i set di regole padre e figlio entrambi elencare la stessa regola ma con gravità diversa, quindi il livello di gravità nel set di regole padre ha la precedenza. Ad esempio:
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
 
 ## <a name="name-and-description"></a>Nome e descrizione
 

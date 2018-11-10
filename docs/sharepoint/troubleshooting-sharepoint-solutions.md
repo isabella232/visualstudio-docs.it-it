@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219783"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296047"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi di soluzioni SharePoint
-  Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per altre informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per altre informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrizioni dei token nelle sandbox web part visive
  Tramite le web part visive nelle soluzioni create mediante sandbox non è possibile elaborare i token standard, ad esempio $SPUrl, supportati dal runtime di SharePoint. Di conseguenza, l'URL non viene risolto e non è possibile visualizzare in anteprima il contenuto nella visualizzazione Progettazione nella finestra di progettazione di web part visive se vi si fa riferimento direttamente in un elemento dello script, come nell'esempio seguente:  
@@ -105,7 +105,7 @@ ms.locfileid: "50219783"
  Nessuno.  
   
 ### <a name="resolution"></a>Risoluzione  
- Questo problema si verifica a causa di un valore non corretto nel **tracciato** file di proprietà per la configurazione della definizione sito webtemp, ad esempio *webtemp_SiteDefinitionProject1*. Nel **percorso** proprietà per il file webtemp, che si trova sotto il **percorso di distribuzione**, modificare le impostazioni locali 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Ad esempio, per usare le impostazioni locali giapponesi modificare il valore per 1041. Per altre informazioni, vedere [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) sul sito Web MSDN.  
+ Questo problema si verifica a causa di un valore non corretto nel **tracciato** file di proprietà per la configurazione della definizione sito webtemp, ad esempio *webtemp_SiteDefinitionProject1*. Nel **percorso** proprietà per il file webtemp, che si trova sotto il **percorso di distribuzione**, modificare le impostazioni locali 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Ad esempio, per usare le impostazioni locali giapponesi modificare il valore per 1041. Per altre informazioni, vedere [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Errore viene visualizzato quando un progetto di flusso di lavoro viene distribuito in un sistema pulito
  Questo problema si verifica se si distribuisce un progetto flusso di lavoro in un computer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con un sistema pulito. Un sistema pulito è un computer in cui è presente una nuova installazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e di SharePoint, ma non sono presenti progetti flusso di lavoro distribuiti.  

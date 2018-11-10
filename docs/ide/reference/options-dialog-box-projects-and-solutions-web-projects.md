@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c403aba7f758c0acf7ba8d2520f617b2afeba214
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 26625fad5435fa8d5088a59465612e15808a07c4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176398"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671237"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 
 Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per accedere a queste opzioni selezionare **Strumenti > Opzioni**, espandere **Progetti e soluzioni** e selezionare **Progetti Web**.
 
-Per impostazione predefinita, per l'esecuzione di un progetto Web in Visual Studio viene usato il Server di sviluppo Visual Studio. Per altre informazioni, vedere [Server Web in Visual Studio per progetti Web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
+Per impostazione predefinita, per l'esecuzione di un progetto Web in Visual Studio viene usato il Server di sviluppo Visual Studio. Per altre informazioni, vedere [Server Web in Visual Studio per progetti Web ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 
 > [!NOTE]
 > Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questa pagina della Guida è stata creata tenendo presenti le **Impostazioni Web**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

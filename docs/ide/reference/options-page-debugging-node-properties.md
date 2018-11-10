@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920898"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670833"
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
 Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate alla categoria **Debug**, `DTE.Properties("Debugging", <Property Page>)` della finestra di dialogo **Opzioni**.
@@ -81,10 +81,10 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Controllo delle impostazioni relative alle opzioni](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controllo delle impostazioni relative alle opzioni](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Generale, Debug, finestra di dialogo Opzioni](../../debugger/general-debugging-options-dialog-box.md)
-- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [JIT, Debug, Finestra di dialogo Opzioni](../../debugger/just-in-time-debugging-options-dialog-box.md)

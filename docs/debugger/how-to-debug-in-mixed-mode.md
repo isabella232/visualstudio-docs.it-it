@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug in modalità mista | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182676"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295475"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Procedura: eseguire il Debug in modalità mista
 Le procedure seguenti descrivono come abilitare il debug per codice gestito e nativo contemporaneamente, noto anche come in modalità mista di debug. Esistono due scenari di debug in modalità mista:  
@@ -58,9 +58,12 @@ Se non si ha accesso al progetto dell'app chiamante, è possibile eseguire il de
    
 1. Selezionare il **Debug** scheda e quindi selezionare **Abilita debug codice nativo**.
    
-1. Uso **File** > **Salva elementi selezionati** oppure **Ctrl + S** per salvare le modifiche.
+1. Chiudere la pagina delle proprietà per salvare le modifiche.
 
    ![Abilita debug codice nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Abilita debug codice nativo")
   
+>[!NOTE]
+>Nella maggior parte delle versioni di Visual Studio 2017, è necessario usare il *launchsettings. JSON* file anziché le proprietà del progetto per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per informazioni dettagliate, vedere [eseguire il Debug di codice gestito e nativo](../debugger/how-to-debug-managed-and-native-code.md).
+
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Eseguire il debug da un progetto DLL](../debugger/how-to-debug-from-a-dll-project.md)

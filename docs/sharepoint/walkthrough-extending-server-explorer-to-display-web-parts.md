@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915815"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296385"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: Estendere Esplora Server per visualizzare le web part
   In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata verrà illustrato come estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuna connessa sito di SharePoint.  
@@ -278,7 +278,7 @@ ms.locfileid: "49915815"
   
 1.  Nelle **Esplora soluzioni**, sotto il progetto WebPartNode, aprire il **vsixmanifest** file nell'editor del manifesto.  
   
-     Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  Nel **Product Name** casella, immettere **nodo di raccolta Web Part di Esplora Server**.  
   
@@ -293,7 +293,7 @@ ms.locfileid: "49915815"
 6.  Nel **tipo** casella di riepilogo **MEFComponent**.  
   
     > [!NOTE]  
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   
@@ -306,7 +306,7 @@ ms.locfileid: "49915815"
 10. Nel **tipo** casella, immettere **v4**.  
   
     > [!NOTE]  
-    >  Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [Asset Element (Schema di VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [Asset Element (Schema di VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
 11. Nel **origine** scegliere i **un progetto nella soluzione corrente** elemento dell'elenco.  
   
