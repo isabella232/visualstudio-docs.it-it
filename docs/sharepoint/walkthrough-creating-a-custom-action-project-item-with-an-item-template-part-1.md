@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878063"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296125"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1
   È possibile estendere il sistema di progetto SharePoint in Visual Studio tramite la creazione di tipi di elemento di un progetto. In questa procedura dettagliata, si creerà un elemento del progetto che può essere aggiunti a un progetto di SharePoint per creare un'azione personalizzata in un sito di SharePoint. L'azione personalizzata aggiunge una voce di menu per il **Azioni sito** menu del sito di SharePoint.  
@@ -298,7 +298,7 @@ ms.locfileid: "49878063"
   
 1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **vsixmanifest** nel progetto CustomActionProjectItem e quindi scegliere **aprire**.  
   
-     Visual Studio apre il file nell'editor del manifesto. Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio apre il file nell'editor del manifesto. Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  Nel **Product Name** casella, immettere **elemento di progetto azione personalizzata**.  
   
@@ -313,7 +313,7 @@ ms.locfileid: "49878063"
 6.  Nel **tipo** casella di riepilogo **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Questo valore corrisponde al `ItemTemplate` elemento nel file Extension. vsixmanifest. Questo elemento identifica la sottocartella nel pacchetto VSIX che contiene il modello di elemento di progetto. Per altre informazioni, vedere [elemento ItemTemplate (Schema VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
+    >  Questo valore corrisponde al `ItemTemplate` elemento nel file Extension. vsixmanifest. Questo elemento identifica la sottocartella nel pacchetto VSIX che contiene il modello di elemento di progetto. Per altre informazioni, vedere [elemento ItemTemplate (Schema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).  
   
 7.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "49878063"
 10. Nel **tipo** casella di riepilogo **MEFComponent**.  
   
     > [!NOTE]  
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   
@@ -420,7 +420,7 @@ ms.locfileid: "49878063"
     -   Nel `UrlAction` elemento, impostare il `Url` attributo come illustrato nell'esempio seguente:  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  Premere **F5**.  
@@ -430,7 +430,7 @@ ms.locfileid: "49878063"
     > [!NOTE]  
     >  Se il **debug degli Script disabilitato** verrà visualizzata la finestra di dialogo, scegliere il **Yes** per continuare il debug del progetto.  
   
-4.  Nel **Azioni sito** menu, scegliere **Centro per sviluppatori SharePoint**, verificare che nel browser verrà aperto il sito Web http://msdn.microsoft.com/sharepoint/default.aspxe quindi chiudere il browser web.  
+4.  Nel **Azioni sito** menu, scegliere **Centro per sviluppatori SharePoint**, verificare che nel browser verrà aperto il sito Web https://docs.microsoft.com/sharepoint/dev/e quindi chiudere il browser web.  
   
 ## <a name="clean-up-the-development-computer"></a>Pulire il computer di sviluppo
  Dopo aver completato l'elemento del progetto di test, rimuovere il modello di elemento di progetto dall'istanza sperimentale di Visual Studio.  

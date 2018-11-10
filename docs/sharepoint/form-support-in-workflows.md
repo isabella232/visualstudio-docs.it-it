@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908782"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296190"
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
-  Quattro tipi di moduli possono essere utilizzati in un flusso di lavoro: associazione, avvio, attività e la modifica. Questi tipi di form possono basarsi su un form ASPX o un modulo di InfoPath. Il livello di supporto che [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce per un particolare modulo dipende da diversi fattori, che sono descritte nelle tabelle seguenti. Per altre informazioni sui tipi di modulo del flusso di lavoro, vedere [Cenni preliminari sui form del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=185228) sul sito Web MSDN.  
+  Quattro tipi di moduli possono essere utilizzati in un flusso di lavoro: associazione, avvio, attività e la modifica. Questi tipi di form possono basarsi su un form ASPX o un modulo di InfoPath. Il livello di supporto che [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce per un particolare modulo dipende da diversi fattori, che sono descritte nelle tabelle seguenti. Per altre informazioni sui tipi di modulo del flusso di lavoro, vedere [Cenni preliminari sui form del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Refactoring di XML
  Quando si aggiunge un form di associazione o di avvio di ASPX per un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elemento del progetto flusso di lavoro, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automaticamente effettua il refactoring del codice XML in del flusso di lavoro *Elements* file per mantenere l'attributo che fa riferimento all'associazione o avvio sincronizzato ogni volta che il percorso di distribuzione o nome di modulo viene aggiornato il modulo o viene eliminato. Tuttavia, quando si usano altri tipi di modulo in un flusso di lavoro, ad esempio un modulo di attività o di modifica, la *Elements* file non viene effettuato il refactoring.  

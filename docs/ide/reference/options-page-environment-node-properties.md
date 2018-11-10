@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07031432218f2d4e0eb037582f2b1f5a76193cdb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672730"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
 Questo documento descrive le pagine, o raccolte di proprietà, associate alla categoria **Ambiente**, `DTE.Properties("Environment", <Property Page>)`, della finestra di dialogo **Opzioni**. Il titolo di ogni sottosezione rappresenta la chiamata usata per accedere alla raccolta Proprietà e la tabella di ogni sottosezione elenca le proprietà della raccolta.
@@ -161,8 +161,8 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Controllo delle impostazioni relative alle opzioni](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controllo delle impostazioni relative alle opzioni](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)

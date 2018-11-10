@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c2f096415ccfbadfe66f18a373642cf6a5de86b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065247"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672119"
 ---
 # <a name="step-8-customize-the-quiz"></a>Passaggio 8: Personalizzare il quiz
 Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per personalizzare il quiz ed espandere ciò che è stato appreso. Ad esempio, si consideri la modalità mediante la quale tramite il programma vengono creati problemi di divisione casuali per cui la risposta non è mai una frazione. Per esercitarsi ulteriormente, modificare il colore del controllo `timeLabel` e offrire un suggerimento all'utente.  
@@ -29,7 +29,7 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
   
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).  
+-   Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).  
   
 -   Per passare all'esercitazione successiva, vedere [Esercitazione 3: creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md).  
   

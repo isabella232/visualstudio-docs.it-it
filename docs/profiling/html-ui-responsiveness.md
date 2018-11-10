@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220147"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221048"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>Informazioni aggiuntive  
   
--   Guardare [il video](http://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 sul profiler della velocità di risposta dell'interfaccia utente.  
+-   Guardare [il video](https://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 sul profiler della velocità di risposta dell'interfaccia utente.  
   
--   Leggere i suggerimenti sulle prestazioni per le app UWP realizzate per Windows con JavaScript. Per altre informazioni, vedere [Procedure consigliate per le prestazioni delle app UWP scritte in JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Leggere i suggerimenti sulle prestazioni per le app UWP realizzate per Windows con JavaScript. Per altre informazioni, vedere [Procedure consigliate per le prestazioni delle app UWP scritte in JavaScript](/previous-versions/windows/apps/hh465194\(v\=win.10\)).  
   
--   Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](/previous-versions/windows/apps/hh781217\(v\=win.10\)).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

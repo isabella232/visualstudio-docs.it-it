@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008395"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672639"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
 
@@ -36,7 +36,7 @@ Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numer
 
 ## <a name="tutorial-links"></a>Collegamenti dell'esercitazione
 
-Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).
+Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).
 
 > [!NOTE]
 > In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.

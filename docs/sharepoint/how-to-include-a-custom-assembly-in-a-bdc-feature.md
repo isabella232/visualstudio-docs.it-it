@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118886"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294669"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
   Il progetto può fare riferimento agli assembly da altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly nel file di funzionalità del progetto usando il **assegnazione fa riferimento agli assembly di oggetti LobSystem** nella finestra di dialogo.  
@@ -45,7 +45,7 @@ ms.locfileid: "37118886"
 4.  Nel **selezionare un Assembly** scegliere l'assembly personalizzato.  
   
     > [!NOTE]  
-    >  Gli assembly vengono visualizzati solo nel **Assign fare riferimento agli assembly di oggetti LobSystem** finestra di dialogo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per altre informazioni, vedere [procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Gli assembly vengono visualizzati solo nel **Assign fare riferimento agli assembly di oggetti LobSystem** finestra di dialogo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per altre informazioni, vedere [procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 5.  Nel **le proprietà di riferimento** gruppo, aprire l'elenco visualizzato per il **ambito LobSystem** proprietà, scegliere il sistema LOB dei metodi che usano l'assembly personalizzato e quindi scegliere il **OK**  pulsante.  
   

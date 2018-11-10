@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f50a3c50156cbd932fc7a7247fd96c4c6c2834
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813212"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296255"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 1
   I progetti SharePoint sono contenitori per uno o più elementi di progetto SharePoint. È possibile estendere il sistema di progetto SharePoint in Visual Studio, creazione di propri tipi di elemento di progetto SharePoint e quindi associandoli con un modello di progetto. In questa procedura dettagliata, si definirà un tipo di elemento di progetto per la creazione di una colonna del sito e quindi si creerà un modello di progetto che può essere utilizzato per creare un nuovo progetto che contiene un elemento di progetto colonna del sito.  
@@ -642,7 +642,7 @@ ms.locfileid: "49813212"
   
 1.  Nelle **Esplora soluzioni**, nella **SiteColumnProjectItem** del progetto, aprire il file vsixmanifest nell'editor del manifesto.  
   
-     Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  Nel **Product Name** casella, immettere **colonna del sito**.  
   
@@ -657,7 +657,7 @@ ms.locfileid: "49813212"
 6.  Nel **tipo** casella di riepilogo **Microsoft.VisualStudio.ProjectTemplate**.  
   
     > [!NOTE]  
-    >  Questo valore corrisponde al `ProjectTemplate` elemento nel file Extension. vsixmanifest. Questo elemento identifica la sottocartella nel pacchetto VSIX che contiene il modello di progetto. Per altre informazioni, vedere [ProjectTemplate Element (Schema di VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1).  
+    >  Questo valore corrisponde al `ProjectTemplate` elemento nel file Extension. vsixmanifest. Questo elemento identifica la sottocartella nel pacchetto VSIX che contiene il modello di progetto. Per altre informazioni, vedere [ProjectTemplate Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).  
   
 7.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   
@@ -670,7 +670,7 @@ ms.locfileid: "49813212"
 10. Nel **tipo** casella di riepilogo **MEFComponent**.  
   
     > [!NOTE]  
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   

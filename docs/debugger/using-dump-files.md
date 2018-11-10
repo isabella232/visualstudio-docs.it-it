@@ -1,7 +1,7 @@
 ---
-title: Usare i file di Dump | Microsoft Docs
+title: Utilizzo di file di dump nel debugger di Visual Studio | Microsoft Docs
 ms.custom: H1HackMay2017
-ms.date: 03/08/2017
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -23,96 +23,99 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847853"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296138"
 ---
-# <a name="use-dump-files-with-visual-studio"></a>Usare i file di Dump con Visual Studio
-File dump con o senza heap; creare un file di dump. Aprire un file di dump. trovare i file binari del pdb e file di origine per un file di dump.
+# <a name="dump-files-in-the-visual-studio-debugger"></a>File di dump nel debugger di Visual Studio
 
-##  <a name="BKMK_What_is_a_dump_file_"></a> Che cos'è un file di dump?
- Oggetto *file di dump* è uno snapshot di un'app in corrispondenza del punto nel tempo viene impiegato il dump. Indica il processo in esecuzione e i moduli caricati. Se il dump è stato salvato con informazioni heap, contiene uno snapshot delle attività svolte nella memoria dell'app in quel momento. L'apertura di un file dump con un heap in Visual Studio è simile all'arresto in corrispondenza di un punto di interruzione in una sessione di debug. Sebbene non sia possibile continuare l'esecuzione, è possibile esaminare gli stack, i thread e i valori delle variabili dell'app al momento in cui si è verificato il dump.
+<a name="BKMK_What_is_a_dump_file_"></a> Oggetto *file di dump* è uno snapshot che illustra il processo che era in esecuzione e i moduli caricati per un'app in un punto nel tempo. A questo punto un dump con informazioni heap include anche uno snapshot della memoria dell'app. 
 
- I dump vengono utilizzati principalmente per il debug di problemi che si verificano nei computer che lo sviluppatore non ha accesso a. Ad esempio, è possibile usare un file di dump dal computer di un cliente quando non è possibile riprodurre l'arresto anomalo del sistema del cliente o di blocco nel computer. I dump vengono inoltre creati dai tester per salvare i dati relativi a un arresto anomalo o un blocco per eseguire altre verifiche nel computer di test. Il debugger di Visual Studio può salvare i file dump per il codice gestito o nativo. Il debugger può caricare i file dump creati da Visual Studio o da altri programmi che salvano i file nei *minidump* formato.
+Apertura di un file di dump con heap in Visual Studio è simile a interruzione in corrispondenza di un punto di interruzione in una sessione di debug. Anche se è possibile continuare l'esecuzione, è possibile esaminare il stack di thread e i valori delle variabili dell'app al momento del dump.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> File di dump, con o senza heap
- È possibile creare file dump con o senza informazioni heap.
+I dump vengono usati principalmente per il debug dei problemi dai computer che gli sviluppatori non hanno accesso a. È possibile usare un file di dump dal computer di un cliente quando non è possibile riprodurre un arresto anomalo o blocco nel proprio computer. Tester a creare anche i dump per salvare l'arresto anomalo del sistema o un blocco di dati da utilizzare per eseguire altre verifiche. 
 
--   **File dump con heap** contengono uno snapshot della memoria dell'app. Sono inclusi i valori delle variabili al momento della creazione del dump. Se si carica un file dump salvato con un heap, Visual Studio potrà caricare i simboli anche se il file binario dell'applicazione non è disponibile. Visual Studio salva inoltre i file binari dei moduli nativi caricati nel file dump, che possono semplificare il debug.
-
--   **File dump senza heap** sono molto più piccoli dei dump contenenti informazioni sull'heap. Il debugger deve tuttavia caricare i file binari dell'app per trovare informazioni sui simboli. I file binari devono corrispondere esattamente ai file binari utilizzati alla creazione del dump. Solo i valori delle variabili dello stack vengono salvati nei file dump senza dati dell'heap.
+Il debugger di Visual Studio può salvare i file dump per il codice gestito o nativo. È possibile eseguire il debug di file dump creati da Visual Studio o da altre App che salvano i file nei *minidump* formato.
 
 ##  <a name="BKMK_Requirements_and_limitations"></a> Requisiti e limitazioni
 
+-   Per eseguire il debug di file di dump da computer a 64 bit, è necessario eseguire Visual Studio in un computer a 64 bit.
+
+-   Visual Studio può eseguire il debug dei file dump delle app native di dispositivi ARM. Anche possibile eseguire il debug di dump di App gestite da dispositivi ARM, ma solo nel debugger nativo.
+
+-   Per eseguire il debug [in modalità kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) file di dump o utilizzare il [SOS. dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) debug estensione in Visual Studio, scaricare gli strumenti di debug per Windows nel [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+
+-   Visual Studio non è possibile eseguire il debug di file dump salvati nel precedente, [dump completi della modalità utente](/windows/desktop/wer/collecting-user-mode-dumps) formato. Un dump completo in modalità utente non è lo stesso come un dump con heap.
+
 -   Il debug di file dump del codice ottimizzato può generare confusione. Ad esempio, l'incorporamento di funzioni del compilatore può comportare stack di chiamate imprevisti e altre ottimizzazioni potrebbero modificare la durata delle variabili.
 
--   Il debug dei file dump di computer a 64 bit deve essere eseguito in un'istanza di Visual Studio in esecuzione in un computer a 64 bit.
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> File dump con o senza heap
 
--   Nelle versioni di Visual Studio precedenti a VS 2013, i dump delle app a 32 bit eseguite in computer a 64 bit raccolti da alcuni strumenti (ad esempio Gestione attività e WinDbg a 64 bit) potrebbero non essere aperti in Visual Studio. In VS 2013 questa limitazione è stata eliminata.
+I file di dump possono o non abbia le informazioni sull'heap.
 
--   Visual Studio può eseguire il debug dei file dump delle app native di dispositivi ARM. Visual Studio può inoltre eseguire il debug dei file dump di app gestite di dispositivi ARM, ma solo nel debugger nativo.
+-   **File dump con heap** contengono uno snapshot della memoria dell'app, inclusi i valori delle variabili, al momento del dump. Visual Studio salva inoltre i file binari dei moduli nativi caricati in un file di dump con heap, che può semplificare il debug. Visual Studio è possibile caricare i simboli da un file di dump con heap, anche se non è possibile trovare un'app binario. 
 
--   Per eseguire il debug [in modalità kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) file di dump, scaricare gli strumenti di debug per Windows che fa parte delle [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
-
--   Visual Studio non è possibile eseguire il debug di file dump salvati nel formato dump precedente noto come un [dump completi della modalità utente](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Si noti che un dump completo in modalità utente non corrisponde a un dump con heap.
-
--   Eseguire il debug con il [SOS. dll (estensione del debugger SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio, è necessario installare gli strumenti di debug per Windows che fa parte di [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)
+-   **File dump senza heap** sono molto più piccoli dei dump con heap, ma il debugger deve caricare i file binari dell'app per trovare le informazioni sui simboli. I file binari caricati devono corrispondere esattamente a quelli in esecuzione durante la creazione del dump. I file di dump senza heap salvare i valori delle variabili dello stack solo.
 
 ##  <a name="BKMK_Create_a_dump_file"></a> Creare un file dump
- Per creare un file dump con Visual Studio:
 
-- Durante il debug di un processo in Visual Studio, è possibile salvare un file dump quando il debugger è stato arrestato in corrispondenza di un'eccezione o di un punto di interruzione. Scegli **Debug**, quindi **Salva Dump con nome**, quindi **Debug**. Nel **Salva Dump con nome** nella finestra di dialogo il **Salva come tipo** elenco, è possibile selezionare **Minidump** oppure **Minidump con Heap** (predefinito).
+Durante il debug di un processo in Visual Studio, è possibile salvare un dump quando il debugger è interrotto in corrispondenza di un'eccezione o un punto di interruzione. 
 
-- Con [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md) abilitata, è possibile collegare il debugger a un processo arrestatosi in modo anomalo è in esecuzione all'esterno del debugger e salvare un file di dump. Vedere [collegare ai processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Con [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md) abilitata, è possibile collegare il debugger di Visual Studio a un processo arrestatosi in modo anomalo all'esterno di Visual Studio e quindi salvare un file di dump dal debugger. Visualizzare [Collega a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-  È inoltre possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, il **Procdump** utilità della riga di comando da [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) può creare file dump di arresto anomalo del processo basati su trigger o su richiesta. Visualizzare [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in questo argomento per ulteriori informazioni sull'uso di altri strumenti per creare file dump.
+**Per salvare un file di dump:**
+
+1. Durante l'arresto in corrispondenza di un errore o un punto di interruzione durante il debug, selezionare **Debug** > **Salva Dump con nome**. 
+
+1. Nel **Salva Dump con nome** nella finestra di dialogo **Salva come tipo**, selezionare **Minidump** oppure **Minidump con Heap** (predefinito).
+
+1. Selezionare un percorso e selezionare un nome per il file di dump, quindi **salvare**. 
+
+>[!NOTE]
+>È possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, il **Procdump** utilità della riga di comando da [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) può creare file dump di arresto anomalo del processo basati su trigger o su richiesta. Visualizzare [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) per informazioni sull'uso di altri strumenti per creare file dump.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Aprire un file dump
 
-1.  In Visual Studio, scegliere **File**, **Open**, **File**.
+1. In Visual Studio, selezionare **File** > **Open** > **File**.
 
-2.  Nel **Apri File** dialogo individuare e selezionare il file di dump. Il file dump in genere ha l'estensione dmp. Quindi scegliere **OK**.
+1. Nel **Apri File** dialogo individuare e selezionare il file di dump. In genere avrà un *dmp* estensione. Scegliere **OK**.
 
-3.  Il **riepilogo File Dump** verrà visualizzata la finestra. In questa finestra è possibile visualizzare informazioni di riepilogo sul debug del file dump, impostare il percorso dei simboli, avviare il debug e copiare le informazioni di riepilogo negli Appunti.
+   Il **riepilogo File Minidump** verrà visualizzato un riepilogo e il modulo informazioni per i file di dump e azioni da compiere.
 
-     ![Pagina di riepilogo minidump](../debugger/media/dbg_dump_summarypage.png "DBG_DUMP_SummaryPage")
+   ![Pagina di riepilogo minidump](../debugger/media/dbg_dump_summarypage.png "pagina di riepilogo Minidump")
 
-4.  Per avviare il debug, vedere il **azioni** sezione e scegliere **eseguire il Debug con solo gestito**, **eseguire il Debug con solo nativo** o **Esegui Debug con misto**.
+1. Sotto **azioni**:
+   - Per impostare il caricamento dei percorsi di simboli, selezionare **imposta percorsi dei simboli**.
+   - Per avviare il debug, selezionare **eseguire il Debug con solo gestito**, **eseguire il Debug con solo nativo**, **Esegui Debug con misto**, oppure **eseguire il Debug con memoria gestita**.
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Trovare i file binari, i file di simboli (PDB) e i file di origine
- Per utilizzare le funzionalità complete di Visual Studio per eseguire il debug di un file dump, è necessario accedere a:
+##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Trovare .exe, con estensione pdb e i file di origine
 
-- File exe per cui il dump è stato creato e altri file binari (DLL e così via) utilizzati nel processo del dump.
+Per usare le funzionalità in un file di dump di debug complete Visual Studio sono necessari:
 
-   Se si esegue il debug di un dump con dati dell'heap, Visual Studio può ovviare alla mancanza dei file binari per alcuni moduli, ma deve disporre dei file binari per un numero sufficiente di moduli per generare stack di chiamate validi. Visual Studio include i moduli nativi in un file dump con heap.
+- Il *.exe* della creazione del dump per file e altri file binari (DLL e così via) che utilizza il processo di dump.
+- Simboli (*PDB*) di file per il *.exe* e altri file binari.
+- Il *.exe* e *PDB* la creazione di file che corrispondono esattamente la versione e la compilazione dei file nel dump.
+- File di origine per i moduli pertinenti. Se non è possibile trovare i file di origine, è possibile usare il disassembly dei moduli.
 
-- File di simboli (con estensione pdb) per il file con estensione exe e altri binari.
+Se il dump contiene i dati di heap, Visual Studio può ovviare alla mancanza dei file binari per alcuni moduli, ma deve avere i file binari per numero sufficiente di moduli generare stack di chiamate validi. 
 
-- File di origine dei moduli a cui si è interessati.
+### <a name="search-paths-for-exe-files"></a>Percorsi di ricerca per i file .exe
 
-   I file eseguibili e i file con estensione pdb devono corrispondere esattamente alla versione e alla compilazione dei file utilizzati alla creazione del dump.
+Visual Studio cerca automaticamente questi percorsi *.exe* i file che non sono inclusi nel file di dump:
 
-   È possibile eseguire il debug utilizzando il disassembly dei moduli se non è possibile trovare i file di origine
+1. La cartella che contiene il file di dump.
+2. Il percorso del modulo specifica da file di dump, che è il percorso del modulo nel computer in cui raccolti il dump.
+3. I percorsi di simboli specificati nella **degli strumenti** (o **Debug**) > **opzioni** > **debug**  >  **Simboli**. È anche possibile aprire il **simboli** pagina dalle **azioni** riquadro del **riepilogo File Dump** finestra. In questa pagina, è possibile aggiungere più percorsi per la ricerca.
 
-  **Percorsi di ricerca predefinito per i file eseguibili**
+### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Usare le pagine Nessun binario, nessun simbolo o nessuna origine trovata
 
-  Visual Studio cerca automaticamente questi percorsi per i file eseguibili che non sono inclusi nel file di dump:
-
-1. Directory che contiene il file dump.
-
-2. Il percorso del modulo specificato nel file dump. Si tratta del percorso del modulo nel computer in cui è stato recuperato il dump.
-
-3. I percorsi di simboli specificati nella **Debugging**, **opzioni**, **simboli** pagina di Visual Studio **strumenti**, **opzioni**  nella finestra di dialogo. È possibile aggiungere più posizioni per effettuare la ricerca in questa pagina.
-
-   **Usando i binari di n > simbolo > pagine di origine**
-
-   Se Visual Studio non trova i file necessari per eseguire il debug di un modulo nel dump, visualizzata una pagina appropriata (**Nessun file binario trovato**, **Nessun simbolo trovato**, o **Nessuna origine trovata**). Queste pagine forniscono informazioni dettagliate sulla causa del problema e vengono forniti collegamenti ad azioni che consentono di identificare il percorso corretto dei file. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Se Visual Studio non trova i file è necessario eseguire il debug di un modulo nel dump, viene illustrato un **Nessun file binario trovato**, **Nessun simbolo trovato**, o **Nessuna origine trovata** pagina. Queste pagine forniscono informazioni dettagliate sulla causa del problema e forniscono collegamenti alle azioni che consentono di individuare i file. Visualizzare [specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Debug Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

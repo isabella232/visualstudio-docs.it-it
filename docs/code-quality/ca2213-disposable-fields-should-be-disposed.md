@@ -1,6 +1,6 @@
 ---
 title: 'CA2213: I campi Disposable devono essere eliminati'
-ms.date: 11/04/2016
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 143a094375871bf8073999f89d7fac5d6df01b4f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: be06c9bf38ec360cedc858d92a84b1f89c662856
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551860"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220632"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: I campi Disposable devono essere eliminati
 
@@ -33,26 +33,33 @@ ms.locfileid: "45551860"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> dichiara i campi di tipi che implementano anche <xref:System.IDisposable>. Il <xref:System.IDisposable.Dispose%2A> metodo del campo non viene chiamata dal <xref:System.IDisposable.Dispose%2A> metodo del tipo dichiarante.
+
+Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> dichiara i campi di tipi che implementano anche <xref:System.IDisposable>. Il <xref:System.IDisposable.Dispose%2A> metodo del campo non viene chiamata dal <xref:System.IDisposable.Dispose%2A> metodo del tipo dichiarante.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tipo è responsabile per l'eliminazione di tutte le risorse non gestite; Questa operazione viene eseguita implementando <xref:System.IDisposable>. Questa regola verifica se un tipo disposable `T` dichiara un campo `F` vale a dire un'istanza di un tipo disposable `FT`. Per ogni campo `F`, la regola tenta di individuare una chiamata a `FT.Dispose`. La regola cerca i metodi chiamati dalla `T.Dispose`e a un livello inferiore (i metodi chiamati dai metodi chiamati `FT.Dispose`).
+
+Un tipo è responsabile per l'eliminazione di tutte le relative risorse non gestite. Regola CA2213 controlla se un tipo disposable (vale a dire una che implementa <xref:System.IDisposable>) `T` dichiara un campo `F` che rappresenta un'istanza di un tipo disposable `FT`. Per ogni campo `F` che ha assegnato a un oggetto creato localmente all'interno di metodi o gli inizializzatori di tipo che lo contiene `T`, la regola tenta di individuare una chiamata a `FT.Dispose`. La regola cerca i metodi chiamati dalla `T.Dispose` e a un livello inferiore (vale a dire, i metodi chiamati dai metodi chiamati `FT.Dispose`).
+
+> [!NOTE]
+> CA2213 regola viene attivata solo per i campi che vengono assegnati a un oggetto eliminabile creato localmente all'interno di inizializzatori e i metodi del tipo contenitore. Se l'oggetto viene creato o assegnato di fuori di tipo `T`, la regola non viene generata. In questo modo si riduce il rumore nei casi in cui il tipo che lo contiene non è proprietario di responsabilità per l'eliminazione dell'oggetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, chiamare <xref:System.IDisposable.Dispose%2A> nei campi di tipi che implementano <xref:System.IDisposable> se si è responsabili allocando e rilasciando le risorse non gestite contenute in un campo.
+
+Per correggere una violazione di questa regola, chiamare <xref:System.IDisposable.Dispose%2A> nei campi di tipi che implementano <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se non si è responsabili per rilasciare le risorse contenute in un campo o se la chiamata a <xref:System.IDisposable.Dispose%2A> si verifica a un livello più profondo chiama rispetto ai controlli regola.
+
+È possibile eliminare un avviso da questa regola se non si è responsabili per rilasciare le risorse contenute in un campo o se la chiamata a <xref:System.IDisposable.Dispose%2A> si verifica a un livello più profondo chiama rispetto ai controlli regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo `TypeA` che implementa <xref:System.IDisposable> (`FT` nella spiegazione).
 
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
+Il frammento di codice seguente viene illustrato un tipo `TypeA` che implementa <xref:System.IDisposable>.
 
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo `TypeB` che violano questa regola dichiarando un campo `aFieldOfADisposableType` (`F` nella precedente discussione riguardo) come un tipo disposable (`TypeA`) e non chiamare <xref:System.IDisposable.Dispose%2A> sul campo. `TypeB` corrisponde a `T` nella precedente discussione.
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
 
- [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
+Il frammento di codice seguente viene illustrato un tipo `TypeB` dichiarando un campo che viola la regola CA2213 `aFieldOfADisposableType` come un tipo disposable (`TypeA`) e non chiamando <xref:System.IDisposable.Dispose%2A> sul campo.
+
+[!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
 
 ## <a name="see-also"></a>Vedere anche
 

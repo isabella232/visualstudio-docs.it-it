@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927346"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295585"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace
 
@@ -336,4 +336,4 @@ A questo punto è possibile visualizzare il file di log di IntelliTrace in Visua
 
 [Verificare ed eseguire il debug del codice di SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Procedura dettagliata: Verifica SharePoint codice tramite Unit test](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
+[Procedura dettagliata: Verifica SharePoint codice tramite Unit test](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

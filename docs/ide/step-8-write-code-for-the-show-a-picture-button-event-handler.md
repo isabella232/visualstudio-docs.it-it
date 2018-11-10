@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874670"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671807"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine
 
@@ -28,7 +28,7 @@ In questo passaggio si imposta il funzionamento del pulsante **Mostra immagine**
 
 Nell'IDE è disponibile uno strumento potente denominato IntelliSense che agevola la scrittura del codice. A mano a mano che si immette il codice, l'IDE apre una casella con completamenti suggeriti per le parole parziali immesse. Il programma tenta di determinare l'operazione successiva che l'utente desidera eseguire e passa automaticamente all'ultimo elemento che si sceglie dall'elenco. È possibile utilizzare le frecce su o giù per spostarsi nell'elenco oppure continuare a digitare lettere per limitare le scelte. Quando viene visualizzata la scelta desiderata, premere **TAB** per selezionarla. In alternativa, è possibile ignorare i suggerimenti, se non si ritengono necessari.
 
-![collegamento al video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx) (Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 4). In questo video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+![collegamento al video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx) (Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 4). In questo video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Per scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 
@@ -48,7 +48,7 @@ Nell'IDE è disponibile uno strumento potente denominato IntelliSense che agevol
 
     2.  Viene visualizzata la finestra di **IntelliSense** con **openFileDialog1**. Premere **TAB** per selezionarlo. In Visual Basic l'iniziale è maiuscola, pertanto viene visualizzato **OpenFileDialog1**. Assicurarsi che **OpenFileDialog1** sia selezionato.
 
-         Per altre informazioni su `OpenFileDialog`, vedere [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
+         Per altre informazioni su `OpenFileDialog`, vedere [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
     3.  Digitare un punto (`.`). Poiché è stato digitato un punto subito dopo **openFileDialog1**, viene visualizzata una finestra di **IntelliSense** contenente tutte le proprietà e i metodi del componente **OpenFileDialog**. Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si sceglie l'oggetto in **Progettazione Windows Form**. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).
 
@@ -63,7 +63,7 @@ Nell'IDE è disponibile uno strumento potente denominato IntelliSense che agevol
 
     4.  Iniziare a digitare `ShowDialog` (l'uso di maiuscole non viene considerato in IntelliSense). Il metodo `ShowDialog()` visualizzerà la finestra di dialogo **Apri file**. Dopo che nella finestra viene evidenziato **ShowDialog**, premere **TAB**. È anche possibile evidenziare "ShowDialog" e premere **F1** per ottenere informazioni.
 
-         Per altre informazioni sul metodo `ShowDialog()`, vedere [Metodo ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).
+         Per altre informazioni sul metodo `ShowDialog()`, vedere [Metodo ShowDialog](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
     5.  Quando si usa un metodo in un controllo o un componente, ovvero si effettua una *chiamata a un metodo*, è necessario aggiungere le parentesi. Immettere quindi le parentesi di apertura e chiusura immediatamente dopo la "g" di `ShowDialog`: `()` Viene visualizzato "openFileDialog1.ShowDialog()".
 
@@ -79,7 +79,7 @@ Nell'IDE è disponibile uno strumento potente denominato IntelliSense che agevol
 
     8.  Digitare un punto per aprire la finestra di **IntelliSense** del valore DialogResult. Immettere la lettera `O` e premere **TAB** per inserire **OK**.
 
-         Per altre informazioni su DialogResult, vedere [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).
+         Per altre informazioni su DialogResult, vedere [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
         >  La prima riga di codice è stata completata. Per Visual C#, il codice è analogo al seguente.

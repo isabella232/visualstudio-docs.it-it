@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929803"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220833"
 ---
 # <a name="summary-view"></a>Visualizzazione Riepilogo
 La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.  
@@ -52,8 +52,8 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 | **Mostra albero delle chiamate ridotto** | Visualizza i percorsi di esecuzione più dispendiosi nella visualizzazione Albero delle chiamate. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md). |
 | **Mostra righe critiche** | Non disponibile per i dati di profilatura raccolti tramite il metodo di strumentazione. Visualizza le righe di codice sorgente più dispendiose nella visualizzazione Righe. Per altre informazioni, vedere [Visualizzazione Righe](../profiling/lines-view.md). |
 | **Confronta report** | Visualizza la finestra di dialogo **Selezionare i file di analisi per il confronto** in cui è possibile specificare un altro file di dati di profilatura da confrontare con il file corrente. Per altre informazioni, vedere [Confrontare i file di dati delle prestazioni](../profiling/comparing-performance-data-files.md). |
-| **Esporta dati report** | Visualizza la finestra di dialogo **Esporta rapporto** in cui è possibile specificare una o più visualizzazioni del report da salvare come file delimitati da virgole (CSV) o file XML. Per altre informazioni, vedere [Procedura: Esportare i report degli strumenti di profilatura](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451). |
-| **Salva rapporto analizzato** | Salva il file di dati di profilatura corrente come file con estensione vsps, che può essere aperto più rapidamente nell'interfaccia per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Procedura: Salvare i file di dati di profilatura analizzati](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556). |
+| **Esporta dati report** | Visualizza la finestra di dialogo **Esporta rapporto** in cui è possibile specificare una o più visualizzazioni del report da salvare come file delimitati da virgole (CSV) o file XML. Per altre informazioni, vedere [Procedura: Esportare i report degli strumenti di profilatura](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
+| **Salva rapporto analizzato** | Salva il file di dati di profilatura corrente come file con estensione vsps, che può essere aperto più rapidamente nell'interfaccia per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Procedura: Salvare i file di dati di profilatura analizzati](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Filtra dati report** | Visualizza il riquadro per filtrare i report di profilatura in cui è possibile specificare criteri per limitare i dati nella visualizzazione del report. Per altre informazioni, vedere [Filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md). |
 | **Attiva/Disattiva schermo intero** | Disattiva la modalità schermo intero per la visualizzazione dei report. |
 
