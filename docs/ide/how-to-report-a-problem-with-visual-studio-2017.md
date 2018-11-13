@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755924"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000229"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Come segnalare un problema con Visual Studio 2017
 
@@ -125,7 +125,7 @@ A partire da Visual Studio 2017 versione 15.5, è presente un nuovo flusso di la
 
 Se non si vuole o non si può usare Visual Studio per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
 
-Se non si vuole segnalare un problema, ma fornire commenti o suggerimenti per il prodotto, esiste una pagina specifica anche per questi scopi. Per altre informazioni, vedere la pagina [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
+Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste una pagina specifica anche per questo. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Vedere anche
 

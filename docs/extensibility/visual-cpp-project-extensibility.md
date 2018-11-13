@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850813"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349676"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -434,7 +434,7 @@ Il sistema di progetto Visual C++ si basa sul [sistema di progetto di Visual Stu
 
 ### <a name="project-property-pages"></a>Pagine delle proprietà del progetto
 
-Per informazioni sulla progettazione generale, vedere [estendibilità della piattaforma - parte 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) e [estendibilità della piattaforma - parte 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Per informazioni sulla progettazione generale, vedere [estendibilità della piattaforma - parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) e [estendibilità della piattaforma - parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 In altre parole, le pagine delle proprietà presenti il **proprietà progetto** finestra di dialogo per un progetto C++ sono definiti dal *regola* file. Un file di regole specifica un set di proprietà da visualizzare nella pagina delle proprietà e come e dove devono essere salvati nel progetto di file. File di regole sono file con estensione XML che usano il formato Xaml. Sono descritti i tipi usati per serializzarle [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Per altre informazioni sull'uso dei file di regole nei progetti, vedere [file di regole XML pagina delle proprietà](/cpp/ide/property-page-xml-files).
 

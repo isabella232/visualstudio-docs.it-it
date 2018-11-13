@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672485"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
 
@@ -44,11 +44,9 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
 - Evidenzia le parti corrispondenti di voci dell'elenco di completamento
 
-- Mostra filtri per le voci di completamento
+- Mostra i filtri per le voci di completamento
 
-- Mostra suggerimenti per nomi
-
-### <a name="snippets-behavior"></a>Comportamento dei frammenti
+## <a name="snippets-behavior"></a>Comportamento dei frammenti
 
 - Non includere mai i frammenti
 
@@ -62,7 +60,7 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
    Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento quando si preme **?**+**TAB** dopo un identificatore.
 
-### <a name="enter-key-behavior"></a>Comportamento del tasto INVIO
+## <a name="enter-key-behavior"></a>Comportamento del tasto INVIO
 
 - Non aggiungere mai una nuova riga dopo INVIO
 
@@ -85,6 +83,10 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 - Aggiungi sempre una nuova riga dopo INVIO
 
    Specifica che se si digita *qualsiasi* carattere di una voce dell'elenco di completamento e quindi si preme **INVIO**, viene creata automaticamente una nuova riga e il cursore si sposta nella nuova riga.
+
+## <a name="show-name-suggestions"></a>Mostra suggerimenti per nomi
+
+   Esegue il completamento automatico dei nomi degli oggetti per i membri selezionati recentemente. 
 
 ## <a name="see-also"></a>Vedere anche
 

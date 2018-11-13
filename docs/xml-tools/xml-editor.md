@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e120d65c9336acaa509e74c79d9e538673cd256
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693786"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349322"
 ---
 # <a name="xml-editor"></a>Editor XML
 
-L'editor XML si basa sull'editor di testo di Visual Studio e include il supporto aggiuntivo per i linguaggi XML. L'editor XML include le funzionalità seguenti:
+L'editor XML è basato sull'editor di testo di Visual Studio e include supporto aggiuntivo per i linguaggi XML. L'editor XML include le funzionalità seguenti:
 
 - Verifica della sintassi XML 1.0.
 
@@ -40,11 +40,11 @@ L'editor XML si basa sull'editor di testo di Visual Studio e include il supporto
 
 - Integrazione con il [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Ciò fornisce una visualizzazione gerarchica degli schemi XML.
 
-L'editor XML viene richiamato per estensioni di file note, ad esempio *XML*, *XSD*, *XSL*, e *config*. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML. È anche possibile aprire qualsiasi file con l'editor XML tramite il **Apri con** opzione e selezionando editor XML dall'elenco.
+L'editor XML viene richiamato per estensioni di file note, ad esempio *. XML*, *XSD*, *XSL*, e *config*. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML. È anche possibile aprire qualsiasi file con l'editor XML tramite il **Apri con** opzione e selezionando editor XML dall'elenco.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) consente i nomi dei set di attributi di completamento automatico, le modalità modello e i nomi e i nomi dei parametri per una modalità specificata o un determinato modello denominato.
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) consente nomi di set di attributi di completamento automatico, modalità modello e i nomi e i nomi dei parametri per una modalità specificata o un determinato modello denominato.
 
 ## <a name="xslt-profiler"></a>Profiler XSLT
 
@@ -56,6 +56,6 @@ Il [strumento di gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.m
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Le funzionalità dell'editor di codice](../ide/writing-code-in-the-code-and-text-editor.md) vengono fornite informazioni sull'editor di testo.
-- [Riferimento per gli standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) vengono fornite informazioni sulle tecnologie XML, ad esempio XML, Strumentazione gestione Windows (DTD, Document Type Definition), XML Schema Definition language (XSD) e XSLT.
+- [Le funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md) fornisce informazioni sull'editor di testo.
+- [Riferimento agli standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornisce informazioni sulle tecnologie XML, tra cui XML, definizione DTD (Document Type Definition), XML Schema Definition language (XSD) e XSLT.
 - [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

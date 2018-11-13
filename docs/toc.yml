@@ -29,7 +29,7 @@ items:
       href: install/create-an-offline-installation-of-visual-studio.md
     - name: Installare i certificati necessari per l'installazione offline
       href: install/install-certificates-for-visual-studio-offline.md
-  - name: Cambiare i percorsi di installazione
+  - name: Selezionare i percorsi di installazione
     href: install/change-installation-locations.md
   - name: Risoluzione dei problemi di installazione
     href: install/troubleshooting-installation-issues.md
@@ -1097,9 +1097,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Comunicazioni con Microsoft
     href: ide/talk-to-us.md
-ms.openlocfilehash: f1fd877d75f4a771826c44b6992ecde6165b3f41
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 92828f8043c85d42349fde61442bc12a9604ef62
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671911"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349702"

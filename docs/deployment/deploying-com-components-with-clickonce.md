@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820462"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348747"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Distribuire i componenti COM con ClickOnce
 Distribuzione di componenti COM legacy è tradizionalmente difficile. I componenti devono essere registrati a livello globale e pertanto possono causare effetti collaterali indesiderati applicazioni sovrapposte. Questa situazione non è in genere un problema in applicazioni .NET Framework perché i componenti sono completamente isolati a un'applicazione o sono compatibili con side-by-side. Visual Studio consente di distribuire i componenti COM isolati nel Windows XP o versioni successive del sistema operativo.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornisce un meccanismo semplice e sicuro per la distribuzione di applicazioni .NET. Tuttavia, se le applicazioni usano i componenti COM legacy, è necessario eseguire passaggi aggiuntivi per la loro distribuzione. Questo argomento descrive come distribuire i componenti COM isolati e fanno riferimento a componenti nativi (ad esempio, da Visual Basic 6.0 o Visual C++).  
   
- Per altre informazioni sulla distribuzione di componenti COM isolati, vedere "Simplify App Deployment with [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM senza registrazione" nella [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Per altre informazioni sulla distribuzione di componenti COM isolati, vedere [Simplify App Deployment with ClickOnce and Registration-Free COM](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>Registration-free COM  
  COM senza registrazione è una nuova tecnologia per la distribuzione e attivazione di componenti COM isolati. Funziona inserendo la libreria dei tipi del componente e informazioni di registrazione che viene in genere installate nel Registro di sistema in un file XML denominato un manifesto, archiviato nella stessa cartella dell'applicazione.  

@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Formattazione
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd4f166bc8b90db4012296c8d81c1d89e1b5eae5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: aa846a25e1383c0c164dfb4747899f5e86237d32
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671053"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opzioni, Editor di testo, JavaScript, Formattazione
 Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti**, **Opzioni** e quindi espandere **Editor di testo**, **JavaScript** e **Formattazione**.
@@ -32,19 +32,20 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
 ## <a name="automatic-formatting"></a>Formattazione automatica
  Queste opzioni determinano quando viene applicata la formattazione nella visualizzazione **Origine**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco UIElement
 
 |Opzione|Descrizione|
 |------------|-----------------|
 |**Formatta riga completata dopo INVIO**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto INVIO.|
 |**Formatta istruzione completata dopo ;**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto punto e virgola.|
+|**Format opened block on {**(Formatta blocco aperto con {)|Se questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto parentesi graffa di apertura.|
 |**Formatta blocco completato dopo }**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto parentesi graffa di chiusura.|
 |**Formatta dopo Incolla**|Quando questa opzione è selezionata, l'editor di codice riformatta il codice incollato nell'editor. L'editor usa le regole di formattazione correntemente definite. Se questa opzione non è selezionata, l'editor usa la formattazione originale del codice incollato.|
 
 ## <a name="new-lines"></a>Nuove righe
  Queste opzioni determinano se l'editor di codice inserisce una parentesi graffa aperta per le funzioni e i blocchi di controllo in una nuova riga.
 
-## <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco UIElement
 
 |Opzione|Descrizione|
 |------------|-----------------|
@@ -54,7 +55,7 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
 ## <a name="spacing"></a>Spacing (Spaziatura)
  Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella visualizzazione **Origine**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco UIElement
 
 |Opzione|Descrizione|
 |------------|-----------------|

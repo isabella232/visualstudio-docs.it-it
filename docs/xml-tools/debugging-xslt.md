@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e48d777332c63859f84f56425c786b430018d1f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34547998"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348539"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 
@@ -30,7 +30,7 @@ Il [profiler XSLT](../xml-tools/xslt-profiler.md) è uno strumento che consente 
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Modifica dei fogli di stile XSLT](../xml-tools/editing-xslt-style-sheets.md) viene illustrato come usare l'Editor XML per modificare i fogli di stile.
-- [Considerazioni sulla sicurezza quando si lavora con dati XML](../xml-tools/security-considerations-when-working-with-xml-data.md) vengono illustrati i problemi di sicurezza che è necessario conoscere quando si utilizza l'Editor XML o il debugger XSLT.
+- [Modifica di fogli di stile XSLT](../xml-tools/editing-xslt-style-sheets.md) viene illustrato come usare l'Editor XML per modificare i fogli di stile.
+- [Considerazioni sulla sicurezza quando si lavora con dati XML](../xml-tools/security-considerations-when-working-with-xml-data.md) vengono illustrati i problemi di sicurezza che è necessario conoscere quando si usa l'Editor XML o il debugger XSLT.
 - [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md) introduce il debugger di Visual Studio.
-- [Riferimenti di XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) fornisce materiale di riferimento per elementi e funzioni XSLT.
+- [Riferimenti di XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) forniscono materiale di riferimento per gli elementi XSLT e funzioni.
