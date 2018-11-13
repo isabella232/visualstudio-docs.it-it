@@ -24,7 +24,7 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
   
  Questa è la finestra Stack di chiamate eventi:  
   
- ![Lo stack di chiamate che precede un evento DrawIndexed. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Lo stack di chiamate che precede un evento DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Nozioni di base sullo stack di chiamate eventi grafici  
  È possibile usare lo stack di chiamate eventi per esaminare il flusso di esecuzione che ha provocato un particolare evento Direct3D. Finestra stack di chiamate di Visual Studio, è simile ad eccezione del fatto che anziché visualizzare lo stack di chiamate corrente del thread corrente in un'app in esecuzione, Visualizza lo stack di chiamate come si presentava quando si è verificato l'evento Direct3D selezionato. Dallo stack di chiamate eventi è possibile passare al sito di chiamata dell'evento Direct3D selezionato per controllare il codice adiacente.  

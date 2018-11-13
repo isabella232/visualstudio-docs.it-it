@@ -1,5 +1,5 @@
 ---
-title: Opzioni della riga di comando di MSTest
+title: Opzioni della riga di comando di VSTest.Console.exe
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612662"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220970"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -41,10 +41,10 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 |**/Enablecodecoverage**|Abilita l'adapter dei dati di diagnostica CodeCoverage nell'esecuzione dei test.<br />Usare le impostazioni predefinite se non diversamente specificato usando un file di impostazioni.|
 |**/InIsolation**|Esegue i test in un processo isolato.<br />L'isolamento rende meno probabile l'arresto del processo *vstest.console.exe* in caso di errore nei test, ma questi ultimi potrebbero essere più lenti.|
 |**/UseVsixExtensions**|Questa opzione consente al processo *vstest.console.exe* di usare o ignorare le eventuali estensioni VSIX installate nell'esecuzione dei test.<br />Questa opzione è stata deprecata. È possibile che a partire dalla prossima versione principale di Visual Studio questa opzione venga rimossa. Passare all'uso delle estensioni rese disponibili come pacchetto NuGet.<br />Esempio: `/UseVsixExtensions:true`|
-|**/TestAdapterPath:[*percorso*]**|Impone al processo *vstest.console.exe* l'uso di adattatori di test personalizzati in un percorso specificato (se disponibili) nell'esecuzione dei test.<br />Esempio: `/TestAdapterPath:&lt;pathToCustomAdapters&gt;`|
+|**/TestAdapterPath:[*percorso*]**|Impone al processo *vstest.console.exe* l'uso di adattatori di test personalizzati in un percorso specificato (se disponibili) nell'esecuzione dei test.<br />Esempio: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo di piattaforma*]**|Architettura della piattaforma di destinazione da usare per l'esecuzione del test.<br />I valori validi sono x86, x64 e ARM.|
 |**/Framework: [*versione framework*]**|Versione .NET Framework di destinazione da usare per l'esecuzione dei test.<br />I valori validi sono Framework35, Framework40, Framework45 e FrameworkUap10.<br />Se il framework di destinazione è specificato come **Framework35**, i test vengono eseguiti in "modalità di compatibilità" CLR 4.0.<br />Esempio: `/Framework:framework40`|
-|**/TestCaseFilter:[*espressione*]**|Esegue test corrispondenti all'espressione specificata.<br /><Espressione\> è nel formato <proprietà\>=<valore\>[&#124;<Espressione\>].<br />Esempio: `/TestCaseFilter:"Priority=1"`<br />Esempio: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Non è possibile usare l'opzione della riga di comando **/TestCaseFilter** con l'opzione della riga di comando **/Tests**. <br />Per informazioni sulla creazione e sull'uso delle espressioni, vedere il [filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*espressione*]**|Esegue test corrispondenti all'espressione specificata.<br /><Expression\> è nel formato <property\>=<value\>[\|<Expression\>].<br />Esempio: `/TestCaseFilter:"Priority=1"`<br />Esempio: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Non è possibile usare l'opzione della riga di comando **/TestCaseFilter** con l'opzione della riga di comando **/Tests**. <br />Per informazioni sulla creazione e sull'uso delle espressioni, vedere il [filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Visualizza informazioni sull'utilizzo.|
 |**/Logger:[*uri/nome descrittivo*]**|Specifica un logger per i risultati dei test.<br />Ad esempio, per registrare i risultati in un file di Risultati test di Visual Studio (TRX), usare **/Logger:trx**.<br />Ad esempio, per pubblicare i risultati dei test in Team Foundation Server, usare TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<nome build\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Il valore predefinito è "Qualsiasi CPU">]**<br />**[;Flavor=<Il valore predefinito è "Debug">]**<br />**[;RunTitle=<titolo\>]**|
 |**/ListTests:[*nome file*]**|Elenca i test individuati dal contenitore di test specificato.|

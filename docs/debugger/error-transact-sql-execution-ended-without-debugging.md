@@ -1,7 +1,7 @@
 ---
 title: 'Errore: Esecuzione Transact-SQL terminata senza debug | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/08/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,38 +17,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc4de5e9ef0830f69b60d773a59411c4b691454
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894755"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349007"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
-Questo errore si verifica quando si tenta di eseguire il debug di una routine Transact-SQL o SQLCLR e il debugger non riceve messaggi di debug da SQL Server.  
+
+Questo errore si verifica quando si sta tentando di eseguire il debug di una Transact-SQL o una routine SQLCLR e il debugger non riceve i messaggi di debug da SQL Server.  
   
- L'errore può essere dovuto a problemi di rete o a problemi su SQL Server, ma con maggiore probabilità è dovuto a un problema di autorizzazioni.  
+Questo problema potrebbe essere a causa di problemi di rete o a problemi su SQL Server, ma la causa più probabile è un problema di autorizzazioni.  
   
- Questo problema riguarda due account:  
+Questo problema riguarda due account:  
   
 - L'account dell'applicazione è l'account utente utilizzato per l'esecuzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-- L'account di connessione è l'identità utilizzata per effettuare la connessione a SQL Server. Nel caso di una connessione con autenticazione SQL, questo account non corrisponde necessariamente all'identità utilizzata per l'esecuzione di Visual Studio.  
+- L'account di connessione è l'identità utilizzata per effettuare la connessione a SQL Server. Questo account non è necessariamente lo stesso come l'identità che esegue Visual Studio come se la connessione con autenticazione SQL.  
   
-  Per il debug SQL è necessario che l'account dell'applicazione corrisponda a quello di connessione oppure che sia sysadmin.  
+  Debug SQL è necessario che l'account dell'applicazione deve corrispondere all'account di connessione oppure essere un amministratore di sistema.  
   
-  Se si utilizza un account di accesso SQL quale sa, l'account dell'applicazione deve essere configurato su SQL Server come sysadmin. Per impostazione predefinita, gli amministratori del computer sul quale è in esecuzione SQL Server sono configurati come account sysadmin.  
+  Se si usa un nome dell'account SQL quale sa, l'applicazione account deve essere configurato in SQL Server come membri del ruolo sysadmin. Per impostazione predefinita, gli amministratori nel computer che esegue SQL server su sono gli amministratori di sistema di SQL Server.  
   
   Per correggere questo errore, è possibile:  
   
-- Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [procedura: impostare delle autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+  - Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [procedura: impostare delle autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
-- Assicurarsi che il debug SQL sia configurato correttamente.  
+  - Assicurarsi che il debug SQL sia configurato correttamente.  
   
-- Consultare l'amministratore della rete o del database.  
+  - Consultare l'amministratore della rete o del database.  
   
-## <a name="see-also"></a>Vedere anche  
- [Configurazione di debug SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
- [Procedura: impostare le autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>Vedere anche
+
+- [Configurazione di debug SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
+- [Procedura: impostare le autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Remote Debugging](../debugger/remote-debugging.md)

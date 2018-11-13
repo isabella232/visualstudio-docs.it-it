@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120679"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000726"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3807"></a>3.8.0.7
  Rilascio: 20 settembre 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Debugger:**
@@ -31,7 +31,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3806"></a>3.8.0.6
  Data di rilascio: 27 agosto 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Integrazione:**
@@ -40,7 +40,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3805"></a>3.8.0.5
  Data di rilascio: 20 agosto 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Integrazione:**
@@ -49,13 +49,13 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3804"></a>3.8.0.4
  Data di rilascio: 14 agosto 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Valutazione:**
 
     -   Aggiunta del supporto per i valori del puntatore.
-    
+
     -   Aggiunta del supporto per metodi generici.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
@@ -66,7 +66,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3803"></a>3.8.0.3
  Data di rilascio: 24 luglio 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Project Generation:**
@@ -75,24 +75,24 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Data di rilascio: 7 luglio 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Project Generation:**
 
     -   Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Data di rilascio: 26 giugno 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Debug:**
 
     -   Aggiunta del supporto per i comandi UserLog e UserBreak.
-    
+
     -   Aggiunta del supporto di tipo-caricamento lazy (ottimizzazione della latenza del carico di rete e della risposta del debugger).
-       
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Valutazione:**
@@ -101,19 +101,19 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="3800"></a>3.8.0.0
  Data di rilascio: 30 maggio 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Debug:**
 
     -   Aggiunta del supporto per la visualizzazione delle variabili nei costrutti asincroni.
-    
+
     -   Aggiunta del supporto per l'elaborazione di tipi nidificati quando si impostano i punti di interruzione, per impedire gli avvisi con i costrutti del compilatore.
-    
+
 -   **Integrazione:**
 
     -   Aggiunta del supporto per le grammatiche di TextMate per Shader (il carico di lavoro C++ non è più necessario per la colorazione del codice di Shader).
-    
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Project Generation:**
@@ -137,15 +137,15 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 -   **Debug:**
 
     -   Aggiunta del supporto per il debug orchestrato (debug di più lettori/editor con la stessa sessione di Visual Studio).
-    
+
     -   Aggiunta del supporto per il debug del lettore USB Android.
-    
+
     -   Aggiunta del supporto per il debug del lettore UWP/IL2CPP.
 
 -   **Valutazione:**
 
     -   Aggiunta del supporto per gli identificatori esadecimali.
-    
+
     -   Miglioramento dell'esperienza di valutazione della finestra delle espressioni di controllo.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
@@ -841,9 +841,9 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   Correzione della gestione dei temi di Visual Studio. Nelle versioni precedenti le finestre di dialogo su temi neri possono apparire vuote (problemi Connect [n. 932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) e [n. 936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Correzione della gestione dei temi di Visual Studio. Nelle versioni precedenti le finestre di dialogo su temi neri possono apparire vuote.
 
--   Correzione del blocco di Unity durante la connessione del debugger quando Unity è in fase di ricompilazione (problemi Connect [n. 947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) e [n. 969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Correzione del blocco di Unity durante la connessione del debugger quando Unity è in fase di ricompilazione.
 
 -   Correzione dei punti di interruzione durante il debug di editor o lettori remoti compilati su un altro sistema.
 
@@ -853,7 +853,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   Correzione della gestione dell'ambito delle variabili nel debugger per evitare variabili live indicate come esterne all'ambito.
 
--   Correzione della ricerca di membri statici nella valutazione di espressioni del debugger (problema Connect [n. 953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Correzione della ricerca di membri statici nella valutazione di espressioni del debugger.
 
 -   Correzione della visualizzazione dei tipi nella valutazione di espressioni del debugger in modo da mostrare proprietà e campi statici.
 

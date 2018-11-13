@@ -1,6 +1,6 @@
 ---
-title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
-ms.date: 07/17/2017
+title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903257"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220996"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 
 La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva per semplificare la progettazione di app per Windows e per il Web. È possibile creare interfacce utente per le app trascinando i controlli dalla **Casella degli strumenti** e impostando le proprietà nella finestra **Proprietà** . È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
 
@@ -108,6 +108,9 @@ Lo zoom di markup permette di ridimensionare la visualizzazione **XAML**. È pos
 
 ## <a name="device-window"></a>Finestra Dispositivo
 
+> [!NOTE]
+> Se la versione della piattaforma di destinazione (`TargetPlatformVersion`) di un'applicazione UWP è 10.0.16299.0 o successiva, la finestra **Dispositivo** non è disponibile.
+
 La finestra **Dispositivo** nella finestra di progettazione XAML consente di simulare in fase di progettazione diverse viste, visualizzazioni e opzioni di visualizzazione per il progetto. La finestra **Dispositivo** è disponibile nel menu **Progettazione** quando si usa la finestra di progettazione XAML e ha l'aspetto seguente:
 
 ![Finestra Dispositivo](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ La finestra **Proprietà** consente di impostare valori di proprietà sui contro
 
 ![Finestra Proprietà](../designers/media/xaml_editor_prop_window.png)
 
-Nella parte superiore della finestra **Proprietà** sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra **Proprietà** mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](http://go.microsoft.com/fwlink/?LinkID=247983)
+Nella parte superiore della finestra **Proprietà** sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra **Proprietà** mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Intro to controls and patterns](/windows/uwp/design/controls-and-patterns/controls-and-events-intro) (Introduzione a controlli e modelli)
 
 A destra di ogni valore di proprietà è presente un *marcatore della proprietà* , visualizzato sotto forma di simbolo di casella. L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
 

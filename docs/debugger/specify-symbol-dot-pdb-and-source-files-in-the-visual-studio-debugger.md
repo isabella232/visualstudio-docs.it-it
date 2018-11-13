@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850243"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349491"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
 
@@ -73,7 +73,7 @@ Inoltre, il debugger cerca i file di simboli nei percorsi seguenti:
    
    - Qualsiasi cartella della cache di simboli locale.  
   
-   - Rete specificata, internet, o i server di simboli locale e posizioni, ad esempio server dei simboli Microsoft se selezionato. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il `symsrv` protocollo. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) e il [strumenti di debug per Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sono due componenti che è possono utilizzare server dei simboli. 
+   - Rete specificata, internet, o i server di simboli locale e posizioni, ad esempio server dei simboli Microsoft se selezionato. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il `symsrv` protocollo. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) e il [strumenti di debug per Windows](/windows-hardware/drivers/debugger/index) sono due componenti che è possono utilizzare server dei simboli.
       
      È possibile utilizzare server dei simboli includono:  
       

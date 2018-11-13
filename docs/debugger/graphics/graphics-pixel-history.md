@@ -24,7 +24,7 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
  Questa è la finestra Cronologia pixel:  
   
- ![Un pixel con tre eventi Direct3D nella cronologia. ] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Un pixel con tre eventi Direct3D nella cronologia. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Informazioni sulla finestra Cronologia pixel  
  Con la Cronologia pixel è possibile analizzare come un pixel specifico della destinazione di rendering sia interessato dagli eventi Direct3D durante un frame. È possibile associare con precisione un problema di rendering a un evento specifico di Direct3D, anche quando gli eventi successivi, o le primitive successive nello stesso evento, continuano a modificare il valore del colore finale del pixel. Ad esempio, è possibile eseguire il rendering errato di un pixel che viene quindi nascosto da un altro pixel semitrasparente in modo che i loro colori vengano fusi insieme nel framebuffer. Questo tipo di problema sarebbe difficile da diagnosticare se si disponesse solo del contenuto finale della destinazione di rendering come indicazione.  
@@ -42,9 +42,9 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
 |Icona|Motivo dell'esclusione|  
 |----------|--------------------------|  
-|![Icona di errore test di profondità. ] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Pixel escluso poiché non ha superato il test di profondità.|  
-|![Icona di errore test di ritaglio. ] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Pixel escluso poiché non ha superato il test di ritaglio.|  
-|![Icona di errore test di stencil. ] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Pixel escluso poiché non ha superato il test di stencil.|  
+|![Icona di errore test di profondità. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Pixel escluso poiché non ha superato il test di profondità.|  
+|![Icona di errore test di ritaglio. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Pixel escluso poiché non ha superato il test di ritaglio.|  
+|![Icona di errore test di stencil. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Pixel escluso poiché non ha superato il test di stencil.|  
   
 ### <a name="draw-call-exclusion"></a>Esclusione di chiamata di disegno  
  Se tutte le primitive di una chiamata di disegno vengono escluse dall'influenzare la destinazione di rendering in quanto non superano un test, la chiamata di disegno non può essere espansa e accanto a tale chiamata viene visualizzata un'icona che corrisponde al motivo dell'esclusione. I motivi dell'esclusione della chiamata di disegno assomigliano a quelli dell'esclusione delle primitive e le relative icone sono simili.  

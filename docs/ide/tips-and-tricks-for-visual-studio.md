@@ -1,6 +1,6 @@
 ---
 title: Tasti di scelta rapida per Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321281"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220853"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida per Visual Studio
 
@@ -73,6 +73,11 @@ ms.locfileid: "44321281"
 
 |Comando|Collegamento|Disponibilità nelle versioni|
 |-|-|-|
+|Vai a tutti|**CTRL**+**T**|
+|Vai a file recenti|**CTRL**+**T**,**R**|
+|Più punti di inserimento|**CTRL**+**ALT**+**clic**|
+|Aggiungi selezione corrispondente in più punti di inserimento|**MAIUSC**+**ALT**+**INS**|
+|Formatta documento|**CTRL**+**K**,**D**|Visual Studio 2017 versione 15.8|
 |Modalità di suggerimento di IntelliSense|**CTRL**+**ALT**+**BARRA SPAZIATRICE** (Attiva/Disattiva)||
 |Forzare la visualizzazione di IntelliSense|**CTRL**+**J**||
 |Azioni rapide|**CTRL**+**.**||
@@ -95,6 +100,9 @@ ms.locfileid: "44321281"
 |Spostarsi tra più finestre Visualizza definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+**=**||
 |Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**||
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC**+**ESC**||
+|Vai a blocco di inclusione|**CTRL**+**ALT**+**FRECCIA SU**|
+|Passa a problema successivo/precedente|**ALT**+**PGSU**/**PGGIÙ**|
+|Menu di navigazione contestuale|**ALT**+**`**|
 
 ## <a name="toolbars"></a>Barre degli strumenti
 
@@ -128,4 +136,4 @@ ms.locfileid: "44321281"
 
 - [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
 - [Tasti di scelta rapida (Azure DevOps Services e TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Blog di suggerimenti e consigli di Visual Studio](https://blogs.msdn.com/b/zainnab)

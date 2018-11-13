@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274313"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349088"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Stringhe di visualizzazione in un visualizzatore di stringhe in Visual Studio
 
@@ -43,9 +43,9 @@ Per aprire il Visualizzatore stringhe, è necessario essere messo in pausa duran
 
 ## <a name="view-string-visualizer-data"></a>Visualizzare i dati del Visualizzatore di stringhe
 
-Nella finestra del Visualizzatore di stringa, il **espressione** campo Mostra la variabile o espressione passa il mouse, e il **valore** campo viene visualizzato il valore della stringa. 
+Nella finestra del Visualizzatore di stringa, il **espressione** campo Mostra la variabile o espressione passa il mouse, e il **valore** campo viene visualizzato il valore della stringa.
 
-Uno spazio vuoto **valore** significa che il Visualizzatore scelto non riconosce la stringa. Ad esempio, il **visualizzatore XML** Mostra un valore vuoto **valore** per una stringa di testo senza tag XML o una stringa JSON. 
+Uno spazio vuoto **valore** significa che il Visualizzatore scelto non riconosce la stringa. Ad esempio, il **visualizzatore XML** Mostra un valore vuoto **valore** per una stringa di testo senza tag XML o una stringa JSON.
 
 Per visualizzare le stringhe che il Visualizzatore scelto non è in grado di riconoscere, scegliere il **Visualizzatore testo**. Il **Visualizzatore testo** Mostra testo normale.
 
@@ -67,5 +67,7 @@ Verrà visualizzata una stringa HTML ben formata come se viene eseguito il rende
 
 ![Visualizzatore stringhe HTML](../debugger/media/dbg-string-visualizers-html.png "Visualizzatore stringhe HTML")
 
-## <a name="see-also"></a>Vedere anche  
- [Creazione di visualizzatori personalizzati (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Vedere anche
+
+- [Creazione di visualizzatori personalizzati (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations)

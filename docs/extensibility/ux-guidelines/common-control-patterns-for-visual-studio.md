@@ -73,9 +73,9 @@ La prima cosa da prendere in considerazione quando lo stile di controlli è se i
   
 -   I campi di input devono essere ridimensionati per adattarsi al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzati né arbitrariamente corrisponde alla lunghezza di un campo lungo, ad esempio un percorso. Lunghezza potrebbe essere un'indicazione all'utente di limitazioni per quanto riguarda il numero di caratteri è consentito nel campo.  
   
-     ![Lunghezza del campo di input non corretto: è improbabile che il nome sarà questa lunghezza. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Lunghezza del campo di input non corretto: è improbabile che il nome sarà questa lunghezza.
+     ![Lunghezza del campo di input non corretto: è improbabile che il nome sarà questa lunghezza. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Lunghezza del campo di input non corretto: è improbabile che il nome sarà questa lunghezza.
   
-     ![Correggere la lunghezza del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Correggere la lunghezza del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto.
+     ![Correggere la lunghezza del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Correggere la lunghezza del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Elenchi a discesa e caselle combinate  
 Per la modalità di interazione tipico, seguire le [linee guida per Windows Desktop per elenchi a discesa e caselle combinate](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Per la modalità di interazione tipico, seguire le [linee guida per Windows Desk
 #### <a name="layout"></a>Layout  
 Elenchi a discesa e caselle combinate deve essere ridimensionate per adattarla al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzati né arbitrariamente corrisponde alla lunghezza di un campo lungo, ad esempio un percorso.  
   
-![Corretto: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Corretto: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato.
+![Corretto: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Corretto: la larghezza dell'elenco a discesa è troppo lunga per il contenuto che verrà visualizzato.
   
-![Corretto: l'elenco a discesa viene ridimensionato per consentire la crescita di traduzione, ma non eccessivamente lunghe. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Corretto: l'elenco a discesa viene ridimensionato per consentire la crescita di traduzione, ma non eccessivamente lunghe. 
+![Corretto: l'elenco a discesa viene ridimensionato per consentire la crescita di traduzione, ma non eccessivamente lunghe. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Corretto: l'elenco a discesa viene ridimensionato per consentire la crescita di traduzione, ma non eccessivamente lunghe. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Caselle di controllo  
 Per la modalità di interazione tipico, seguire le [linee guida per Windows Desktop per le caselle di controllo](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Per la modalità di interazione tipico, seguire le [linee guida per Windows Desk
   
 -   Allineare le caselle di controllo con la linea di base della prima riga del testo.  
   
-     ![Corretto: la casella di controllo coincide con il testo. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Corretto: la casella di controllo coincide con il testo.
+     ![Corretto: la casella di controllo coincide con il testo. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Corretto: la casella di controllo coincide con il testo.
   
-     ![Corretto: la casella di controllo è allineata con la prima riga del testo. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Corretto: la casella di controllo è allineata con la prima riga del testo.
+     ![Corretto: la casella di controllo è allineata con la prima riga del testo. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Corretto: la casella di controllo è allineata con la prima riga del testo.
   
 ###  <a name="BKMK_RadioButtons"></a> Pulsanti di opzione  
 Per la modalità di interazione tipico, seguire le [linee guida per Windows Desktop per i pulsanti di opzione](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Controlli di visualizzazione albero dovrebbero essere conforme alla progettazion
 #### <a name="selection"></a>Selection  
 Quando si seleziona un nodo all'interno della visualizzazione struttura ad albero, è necessario espandere l'evidenziazione per l'intera larghezza del controllo di visualizzazione albero. Ciò consente agli utenti di identificare chiaramente quale elemento è stato selezionato. Selezione colori devono riflettere il tema di Visual Studio corrente.  
   
-![Corretto: evidenziazione del nodo selezionato appropriato per l'intera larghezza del controllo di visualizzazione albero. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Corretto: evidenziazione del nodo selezionato appropriato per l'intera larghezza del controllo di visualizzazione albero.
+![Corretto: evidenziazione del nodo selezionato appropriato per l'intera larghezza del controllo di visualizzazione albero. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Corretto: evidenziazione del nodo selezionato appropriato per l'intera larghezza del controllo di visualizzazione albero.
   
-![Non corretta: evidenziazione del nodo selezionato non si adatta l'intera larghezza del controllo di visualizzazione albero. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Non corretta: evidenziazione del nodo selezionato non si adatta l'intera larghezza del controllo di visualizzazione albero.
+![Non corretta: evidenziazione del nodo selezionato non si adatta l'intera larghezza del controllo di visualizzazione albero. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Non corretta: evidenziazione del nodo selezionato non si adatta l'intera larghezza del controllo di visualizzazione albero.
   
 #### <a name="icons"></a>Icone  
 Le icone devono essere utilizzate solo nei controlli di visualizzazione albero se è aiutare a identificare visivamente le differenze tra gli elementi. In generale, le icone devono essere usate solo in elenchi eterogenei in cui le icone contengono informazioni per distinguere i tipi di elementi. In un elenco omogeneo mediante icone spesso può essere considerata come il rumore e deve essere evitata. In questo caso l'icona di gruppo (padre) può indicare il tipo di elementi in esso contenuti. L'eccezione a questa regola può essere se l'icona è dinamico e viene utilizzato per indicare lo stato.  
@@ -356,14 +356,14 @@ Le icone devono essere utilizzate solo nei controlli di visualizzazione albero s
 #### <a name="scroll-bars"></a>Barre di scorrimento  
 Le barre di scorrimento devono essere sempre nascosto se il contenuto viene adattato all'interno del controllo di visualizzazione albero. È accettabile per le barre di scorrimento per essere nascosta o semi-trasparenti in una finestra scorrevole e vengono visualizzate quando la finestra contenente la visualizzazione struttura ad albero è attiva o al momento del passaggio del mouse della struttura ad albero visualizzare se stesso.  
   
-![Entrambe le barre di scorrimento orizzontale e verticale vengono visualizzate perché il contenuto ha superato i limiti del controllo di visualizzazione albero. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Entrambe le barre di scorrimento orizzontale e verticale vengono visualizzate perché il contenuto ha superato i limiti del controllo di visualizzazione albero.
+![Entrambe le barre di scorrimento orizzontale e verticale vengono visualizzate perché il contenuto ha superato i limiti del controllo di visualizzazione albero. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Entrambe le barre di scorrimento orizzontale e verticale vengono visualizzate perché il contenuto ha superato i limiti del controllo di visualizzazione albero.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Interazioni di visualizzazione albero  
   
 #### <a name="context-menus"></a>Menu di scelta rapida  
 Un nodo della visualizzazione struttura ad albero possa visualizzare le opzioni di sottomenu in un menu di scelta rapida. In genere, ciò si verifica quando un utente con pulsante destro del mouse di un elemento o ha premuto il tasto di Menu su una tastiera di Windows con l'elemento selezionato. È importante che il nodo Ottiene lo stato attivo e che sia selezionato. Ciò consente di identificare quale elemento a cui appartiene il sottomenu.  
   
-![L'elemento che ha generato il contesto menu riceve lo stato attivo per notificare all'utente quale elemento è stata selezionata. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />L'elemento che ha generato il contesto menu riceve lo stato attivo per notificare all'utente quale elemento è stata selezionata.
+![L'elemento che ha generato il contesto menu riceve lo stato attivo per notificare all'utente quale elemento è stata selezionata. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />L'elemento che ha generato il contesto menu riceve lo stato attivo per notificare all'utente quale elemento è stata selezionata.
   
 #### <a name="keyboard"></a>Tastiera  
 Visualizzazione albero dovrebbe offrono la possibilità di selezionare gli elementi ed Espandi/Comprimi nodi tramite la tastiera. Ciò garantisce che navigazione soddisfi i requisiti di accessibilità.  

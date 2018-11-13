@@ -1,6 +1,6 @@
 ---
-title: Application Page, Project Designer (Visual Basic)
-ms.date: 11/04/2016
+title: Pagina Applicazione delle proprietà del progetto VB
+ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800733"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670962"
 ---
-# <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
+# <a name="application-page-project-designer-visual-basic"></a>Pagina Applicazione, Creazione progetti (Visual Basic)
 
 Usare la pagina **Applicazione** di Creazione progetti per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Scegliere quindi **Progetto** > **Proprietà** sulla barra dei menu. Quando compare Creazione progetti, selezionare la scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Scegliere quindi **Progetto** > **Proprietà** sulla barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,7 +36,11 @@ Le opzioni seguenti consentono di configurare le impostazioni generali per un'ap
 
 ### <a name="assembly-name"></a>Nome assembly
 
-Specifica il nome del file di output che conterrà il manifesto dell'assembly. Se si modifica questa proprietà, viene modificata anche la proprietà **Nome output**. È anche possibile specificare il nome del file di output da un prompt dei comandi usando l'opzione del compilatore [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out). Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
+Specifica il nome del file di output che conterrà il manifesto dell'assembly. Se si modifica questa proprietà, viene modificata anche la proprietà **Nome output**.
+
+È anche possibile specificare il nome del file di output da un prompt dei comandi usando l'opzione del compilatore [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out).
+
+Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
 ### <a name="root-namespace"></a>Spazio dei nomi radice
 
@@ -45,7 +49,7 @@ Specifica lo spazio dei nomi di base per tutti i file nel progetto. Ad esempio, 
 Se si deseleziona **Spazio dei nomi radice**, è possibile specificare nel codice la struttura dello spazio dei nomi del progetto.
 
 > [!NOTE]
-> Se si usa la parola chiave Global in un'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona l'opzione **Spazio dei nomi radice**, `Global` diventa lo spazio dei nomi principale. Ciò elimina la necessità della parola chiave `Global` nelle istruzioni `Namespace`. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces) (Spazi dei nomi in Visual Basic).
+> Se si usa la parola chiave `Global` in un'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona l'opzione **Spazio dei nomi radice**, `Global` diventa lo spazio dei nomi principale. Ciò elimina la necessità della parola chiave `Global` nelle istruzioni `Namespace`. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces) (Spazi dei nomi in Visual Basic).
 
 Per informazioni su come creare spazi dei nomi nel codice, vedere [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement) (Istruzione Namespace).
 
@@ -66,20 +70,17 @@ Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](
 
 ### <a name="application-type"></a>Tipo di applicazione
 
-Specifica il tipo di applicazione da compilare. Per app Windows 8.x è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.
+Specifica il tipo di applicazione da compilare. I valori sono diversi a seconda del tipo di progetto. Ad esempio, per un progetto **App Windows Forms** è possibile specificare **Applicazione Windows Form**, **Libreria di classi**, **Applicazione console**, **Servizio Windows** o **Libreria di controlli Web**.
 
 Per il progetto di un'applicazione Web è necessario specificare **Libreria di classi**.
 
-Se si specifica l'opzione **File WinMD**, i tipi possono essere inseriti nel progetto in un qualsiasi linguaggio di programmazione Windows Runtime. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile codificare un'applicazione in più linguaggi e fare in modo che il codice interagisca come se fosse stato scritto tutto nello stesso linguaggio. È possibile usare l'opzione **File WinMD** per le soluzioni destinate alle librerie Windows Runtime, tra cui le app di [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Per altre informazioni, vedere [Creazione di componenti Windows Runtime in C# e Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).
-
-> [!NOTE]
-> Windows Runtime può fare in modo che i tipi appaiano come oggetti nativi in qualsiasi linguaggio siano usati. Ad esempio, le applicazioni JavaScript che interagiscono con Windows Runtime usano quest'ultimo come un set di oggetti JavaScript, mentre le applicazioni C# usano la libreria come una raccolta di oggetti .NET. Creando un pacchetto dell'output del progetto nel formato di file WinMD, è possibile sfruttare la stessa tecnologia usata da Windows Runtime.
-
 Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Per informazioni su come accedere a tale proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
-### <a name="icon"></a>Icona
+### <a name="auto-generate-binding-redirects"></a>Genera automaticamente reindirizzamenti di binding
 
-Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare  **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) o [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+I reindirizzamenti di binding vengono aggiunti al progetto se l'app o i relativi componenti fanno riferimento a più di una versione dello stesso assembly. Se si vuole definire manualmente i reindirizzamenti di binding nel file di progetto, deselezionare **Genera automaticamente reindirizzamenti di binding**. Questa casella di controllo è stata introdotta in Visual Studio 2017 versione 15.7.
+
+Per altre informazioni sul reindirizzamento, vedere [Reindirizzamento delle versioni di assembly](/dotnet/framework/configure-apps/redirect-assembly-versions).
 
 ### <a name="startup-form--startup-object--startup-uri"></a>Form di avvio/oggetto di avvio/URI di avvio
 
@@ -92,6 +93,10 @@ Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazion
 Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.
 
 **Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)**. Per altre informazioni, vedere [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+
+### <a name="icon"></a>Icona
+
+Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare  **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) o [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informazioni assembly
 
@@ -107,7 +112,7 @@ Se questa casella di controllo è deselezionata, l'applicazione userà la proced
 
 ### <a name="view-windows-settings"></a>Visualizza impostazioni di Windows
 
-Fare clic su questo pulsante per generare e aprire il file app.manifest. Visual Studio usa questo file per generare i dati del manifesto per l'applicazione. Impostare quindi il livello di esecuzione richiesto per Controllo dell'account utente modificando il tag `<requestedExecutionLevel>` in app.manifest come segue:
+Fare clic su questo pulsante per generare e aprire il file *app.manifest*. Visual Studio usa questo file per generare i dati del manifesto per l'applicazione. Impostare quindi il livello di esecuzione richiesto per Controllo dell'account utente modificando il tag `<requestedExecutionLevel>` in *app.manifest* come segue:
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -117,7 +122,10 @@ Per altre informazioni sulla generazione del manifesto, vedere [ClickOnce Deploy
 
 ## <a name="windows-application-framework-properties"></a>Proprietà framework applicazione Windows
 
-Le impostazioni seguenti sono disponibili nella sezione **Proprietà framework applicazione Windows**. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Nella sezione successiva sono descritte le impostazioni **Proprietà framework applicazione Windows**per le applicazioni Windows Presentation Foundation (WPF).
+Le impostazioni seguenti sono disponibili nella sezione **Proprietà framework applicazione Windows**. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata.
+
+> [!TIP]
+> Nella sezione successiva sono descritte le impostazioni **Proprietà framework applicazione Windows** specifiche per le app WPF (Windows Presentation Foundation).
 
 ### <a name="enable-xp-visual-styles"></a>Attiva stili di visualizzazione XP
 
@@ -153,13 +161,13 @@ Selezionare il modulo che si vuole usare come schermata iniziale. È necessario 
 
 Fare clic su questo pulsante per visualizzare un file di codice di eventi in cui è possibile scrivere gli eventi per `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` e `NetworkAvailabilityChanged` del framework applicazione . È anche possibile eseguire l'override di alcuni metodi del framework applicazione. Ad esempio, è possibile modificare il comportamento di visualizzazione della schermata iniziale eseguendo l'override di `OnInitialize`.
 
-## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Proprietà framework applicazione Windows per le applicazioni Windows Presentation Foundation (WPF)
+## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>Proprietà framework applicazione Windows per app WPF (Windows Presentation Foundation)
 
-Queste opzioni sono disponibili nella sezione **Proprietà framework applicazione Windows** quando il progetto riguarda un'applicazione Windows Presentation Foundation. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Le opzioni elencate in questa tabella sono disponibili solo per le applicazioni WPF o per le applicazioni browser WPF. Non sono disponibili per le librerie di controlli utente o di controlli personalizzati WPF.
+Queste impostazioni sono disponibili nella sezione **Proprietà framework applicazione Windows** quando il progetto è un'app WPF (Windows Presentation Foundation). Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Le opzioni elencate in questa tabella sono disponibili solo per le applicazioni WPF o browser WPF. Non sono disponibili per le librerie di controlli utente o di controlli personalizzati WPF.
 
 ### <a name="shutdown-mode"></a>Modalità di arresto
 
-Questa proprietà è valida solo per le applicazioni Windows Presentation Foundation.
+Questa proprietà è valida solo per le applicazioni WPF (Windows Presentation Foundation).
 
 Selezionare **Alla chiusura esplicita** per specificare che l'applicazione deve terminare quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>.
 
@@ -171,10 +179,10 @@ Per altre informazioni sull'uso di questa impostazione, vedere <xref:System.Wind
 
 ### <a name="edit-xaml"></a>Modifica XAML
 
-Fare clic su questo pulsante per aprire e modificare il file di definizione dell'applicazione (Application.xaml) nell'editor XAML. Quando si fa clic su questo pulsante, Application.xaml viene aperto in corrispondenza del nodo di definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
+Questo pulsante apre il file di definizione dell'applicazione (Application.xaml) nell'editor XAML. Quando si fa clic su questo pulsante, *Application.xaml* viene aperto in corrispondenza del nodo di definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
 
 ### <a name="view-application-events"></a>Visualizza eventi applicazione
 
-Fare clic su questo pulsante per visualizzare il file di classe parziale `Application` (Application.xaml.vb) in un editor di codice. Se il file non esiste, Creazione progetti ne crea uno con il nome della classe e dello spazio dei nomi appropriati.
+Questo pulsante apre il file di classe `Application` (*Application.xaml.vb*) in un editor di codice. Se il file non esiste, Creazione progetti ne crea uno con il nome della classe e dello spazio dei nomi appropriati.
 
 L'oggetto <xref:System.Windows.Application> genera eventi quando si verificano determinate modifiche di stato dell'applicazione (ad esempio, all'avvio o all'arresto dell'applicazione). Per un elenco completo degli eventi esposti da questa classe, vedere <xref:System.Windows.Application>. Questi eventi vengono gestiti nella sezione del codice utente della classe parziale `Application`.

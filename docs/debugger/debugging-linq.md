@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056695"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349426"
 ---
 # <a name="debugging-linq"></a>Debug di LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta il debug di codice LINQ (Language Integrated Query), con alcune limitazioni. La maggior parte delle funzionalità di debug è compatibile con le istruzioni LINQ, inclusa l'esecuzione di istruzioni, l'impostazione di punti di interruzione e la visualizzazione dei risultati nelle finestre del debugger. Questo argomento descrive le principali limitazioni del debug di codice LINQ.  
@@ -109,8 +109,9 @@ End Function
 ##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Modifica e continuazione non supportate per LINQ  
  Modifica e continuazione supporta modifiche alle query LINQ con limitazioni. Per informazioni dettagliate, vedere [EnC supportate modifiche](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
-## <a name="see-also"></a>Vedere anche  
- [Debug SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
- [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)   
- [Introduzione alle query LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)   
- [Introduzione a LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
+## <a name="see-also"></a>Vedere anche
+
+- [Debug SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
+- [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)
+- [Introduzione alle query LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
+- [Introduzione a LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
