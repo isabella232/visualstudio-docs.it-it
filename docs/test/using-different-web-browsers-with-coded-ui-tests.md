@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 088ae3f16e20234760194be3ed3d6ddb4beb98f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380717"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295618"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usare vari Web browser con test codificati dell'interfaccia utente
 
@@ -24,13 +24,13 @@ Per prima cosa, installare i [componenti Selenium per test codificati dell'inter
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Funzionalità supportate in tutti i Web browser
 
--   [Aggiungere il codice personalizzato per le funzionalità di controllo](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx), ad esempio waiter di riproduzione, ricerca e proprietà.
+-   [Aggiungere il codice personalizzato per le funzionalità di controllo](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), ad esempio waiter di riproduzione, ricerca e proprietà.
 
 -   Popup e finestre di dialogo
 
--   [Eseguire JavaScript di base senza tipo restituito](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [Eseguire JavaScript di base senza tipo restituito](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resilienza di ricerca (tramite la corrispondenza intelligente) e [miglioramenti delle prestazioni](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+-   Resilienza di ricerca (tramite la corrispondenza intelligente) e [miglioramenti delle prestazioni](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Perché usare i test codificati dell'interfaccia utente per più tipi di Web browser?
 

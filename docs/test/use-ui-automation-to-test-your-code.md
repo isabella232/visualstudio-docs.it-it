@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371082"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296073"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -402,7 +402,7 @@ Per ottenere e impostare valori di proprietà specifiche del controllo dell'inte
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Per ottenere e impostare proprietà direttamente dai controlli di test dell'interfaccia utente
 
-Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, ad esempio [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) o [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), è possibile ottenere o impostare direttamente i valori delle proprietà. Il codice seguente illustra alcuni esempi:
+Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, ad esempio [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) o [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), è possibile ottenere o impostare direttamente i valori delle proprietà. Il codice seguente illustra alcuni esempi:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +443,7 @@ Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UI
 
 - [Eseguire test nel processo di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Aggiunta del supporto per controlli personalizzati:** il framework dei test codificati dell'interfaccia utente non supporta ogni possibile interfaccia utente e potrebbe non supportare l'interfaccia utente da testare. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente per Microsoft Excel. Tuttavia, è possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
 
