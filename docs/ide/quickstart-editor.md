@@ -158,7 +158,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+> [Guida introduttiva: progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942946"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296476"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -62,7 +62,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Un'app ASP.NET Core crea un server Web nel metodo Main configurando e avviando un host tramite un'istanza di [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
+Un'app ASP.NET Core crea un server Web nel metodo Main configurando e avviando un host tramite un'istanza di [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `UseKestrel`: specifica il server Kestrel che verrà usato dall'app
 * `UseContentRoot(Directory.GetCurrentDirectory())`: usa la cartella radice del progetto Web come radice del contenuto dell'app quando quest'ultima viene avviata da questa cartella
@@ -108,7 +108,7 @@ La classe di avvio deve sempre rispettare le regole seguenti:
 
 Il metodo `ConfigureServices` consente di definire i servizi che verranno usati dall'app.
 
-Il metodo `Configure` consente di comporre pipeline delle richieste tramite [middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Si tratta di componenti usati all'interno delle pipeline delle applicazioni ASP.NET per la gestione delle richieste e delle risposte. La pipeline HTTP è costituita da un certo numero di delegati di richiesta, chiamati in sequenza. Ogni delegato può scegliere di gestire la richiesta o di passarla al delegato successivo.
+Il metodo `Configure` consente di comporre pipeline delle richieste tramite [middleware](/aspnet/core/fundamentals/middleware). Si tratta di componenti usati all'interno delle pipeline delle applicazioni ASP.NET per la gestione delle richieste e delle risposte. La pipeline HTTP è costituita da un certo numero di delegati di richiesta, chiamati in sequenza. Ogni delegato può scegliere di gestire la richiesta o di passarla al delegato successivo.
 
 È possibile configurare i delegati tramite i metodi `Run`,`Map` e `Use` in `IApplicationBuilder`. Il metodo `Run`, tuttavia, non chiama mai il delegato successivo e deve essere sempre usato alla fine della pipeline.
 
@@ -134,7 +134,7 @@ Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per 
 - **View** (Vista): visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
 - **Controller**: classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
 
-Per altre informazioni sull'uso dello schema MVC, vedere la guida [Overview of ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/overview) (Panoramica di MVC ASP.NET Core).
+Per altre informazioni sull'uso dello schema MVC, vedere la guida [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Panoramica di MVC ASP.NET Core).
 
 Per aggiungere un controller, eseguire le operazioni seguenti:
 
@@ -233,6 +233,6 @@ Per installare correttamente .NET Core, assicurarsi che tutti i quattro passaggi
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
 Per altre informazioni sui passaggi successivi, fare riferimento alle guide seguenti:
-- Documentazione di [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
-- [Creating Backend Services for Native Mobile Applications](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
+- Documentazione di [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).

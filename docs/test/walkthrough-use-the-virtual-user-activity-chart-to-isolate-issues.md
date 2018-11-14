@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382210"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295800"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procedura dettagliata: Uso del grafico attività utente virtuale per isolare i problemi
 
@@ -42,9 +42,9 @@ Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella vis
 
 -   Completare queste procedure:
 
-    -   [Registrare ed eseguire un test prestazioni Web](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef).
+    -   [Registrare ed eseguire un test prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Creare ed eseguire un test di carico](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [Creare ed eseguire un test di carico](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Aprire la soluzione ColorWebApp creata nelle procedure dettagliate precedenti
 

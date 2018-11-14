@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5cac2a21e15223d720089768db2f92892ec5cd43
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178534"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294162"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
 IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice. Vengono ad esempio analizzate le istruzioni `if`, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
@@ -157,4 +157,4 @@ Eseguire quindi IntelliTest per generare i singoli unit test nei relativi file c
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>D: È possibile reperire maggiori informazioni sulla modalità di generazione dei test?
 
-**R:** Sì, per ottenere una panoramica dettagliata, leggere questo [post di blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
+**R:** Sì, per ottenere una panoramica dettagliata, leggere questo [post di blog](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/).

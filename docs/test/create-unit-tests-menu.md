@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8f0f0aeab7256c15c423678de2cdc7e88b1eb2
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 55b6af26064edc3eecb942b70aa2b4f5bc5307fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135549"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296411"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
@@ -62,11 +62,11 @@ Le estensioni del framework di test sono disponibili in Visual Studio Marketplac
 
 ## <a name="when-should-i-use-this-feature"></a>Quando si deve usare questa funzionalità?
 
-Usare questa funzionalità ogni volta che è necessario creare unit test, ma in particolare quando si testa un codice esistente con poco o nessun code coverage del test e senza documentazione. In altre parole, dove la specifica del codice è limitata o inesistente. Implementa in modo efficace un approccio simile agli [unit test intelligenti](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) che caratterizzano il comportamento osservato del codice.
+Usare questa funzionalità ogni volta che è necessario creare unit test, ma in particolare quando si testa un codice esistente con poco o nessun code coverage del test e senza documentazione. In altre parole, dove la specifica del codice è limitata o inesistente. Implementa in modo efficace un approccio simile agli [unit test intelligenti](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) che caratterizzano il comportamento osservato del codice.
 
 Tuttavia, questa funzionalità può essere applicata anche alla situazione in cui lo sviluppatore inizia a scrivere e lo usa per l'avvio automatico della disciplina di unit test. All'interno del flusso di scrittura del codice, lo sviluppatore potrebbe voler creare rapidamente uno stub del metodo di unit test, con una classe di test e un progetto di test appropriati, per una parte specifica di codice.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare stub di metodo di unit test con il comando Crea unit test](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Creare stub di metodo di unit test con il comando Crea unit test](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Post di blog sul testing unità](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379774"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293447"
 ---
 # <a name="sample-code-for-testing"></a>Codice di esempio per i test
 
@@ -27,7 +27,7 @@ Questo codice di esempio contiene una classe, *BankAccount*, con vari metodi che
 Il codice viene usato nelle procedure dettagliate seguenti:
 
 - [Creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Questa procedura dettagliata descrive i passaggi per creare e personalizzare gli unit test, eseguirli ed esaminare i risultati dei test.
-- [Uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). In questa procedura dettagliata è possibile usare l'utilità della riga di comando *MSTest.exe* per eseguire test e visualizzare i risultati.
+- [Uso dell'utilità di test della riga di comando](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). In questa procedura dettagliata è possibile usare l'utilità della riga di comando *MSTest.exe* per eseguire test e visualizzare i risultati.
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -135,4 +135,4 @@ Per usare questo codice, creare prima un progetto apposito in Visual Studio. Seg
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Procedura dettagliata: Uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Procedura dettagliata: Uso dell'utilità di test della riga di comando](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

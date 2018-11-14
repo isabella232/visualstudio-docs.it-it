@@ -1,7 +1,7 @@
 ---
 title: Come definire comandi di menu personalizzati per i progetti Python
 description: Viene illustrato come modificare i file di progetto e targets per aggiungere comandi personalizzati al menu di scelta rapida per i progetti Python in Visual Studio. I comandi possono richiamare programmi eseguibili, script, moduli, frammenti di codice inline e pip.
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008323"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607848"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
