@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16c66ecf1f7bade9a81f6ef1fab50375c6acdb6f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39aa81216ad3b6e98162c68136734589b008873b
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936008"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645081"
 ---
 # <a name="get-a-port"></a>Ottenere una porta
 Una porta rappresenta una connessione a un computer in cui i processi in esecuzione. Tale computer potrebbe essere il computer locale o in un computer remoto (che potrebbe eventualmente essere con sistema operativo non basate su Windows, vedere [porte](../../extensibility/debugger/ports.md) per altre informazioni).  
@@ -66,7 +66,7 @@ HRESULT CDebugEngine::LaunchSuspended(/* omitted parameters */,
             if (SUCCEEDED(hr))  
             {  
                 // pass on the parameters we were given (omitted here)  
-                hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                hr = spPortEx->LaunchSuspended(/* omitted parameters */,ppDebugProcess)  
             }  
         }  
     }  
