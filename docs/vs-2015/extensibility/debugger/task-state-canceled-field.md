@@ -15,12 +15,12 @@ ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef127626cf59d2a66d7119faf8f65d4bfe973c18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9dccdeb9ebec3ce99557cb554ae3f19be3a7d12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278096"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730932"
 ---
 # <a name="taskstatecanceled-field"></a>Campo TASK_STATE_CANCELED
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
