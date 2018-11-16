@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855814"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780789"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Riferimenti su VSIX language pack schema 2.0
 
@@ -31,7 +31,7 @@ Lo schema del Language Pack VSIX fornisce informazioni sull'installazione locali
 
 L'elemento radice del file language pack è `<PackageLanguagePackManifest>`, con un attributo `Version`, ovvero la versione del formato language pack. Questo articolo descrive la versione 2.0 del formato language pack, che viene specificato nel manifesto impostando il `Version` sul valore dell'attributo `Version="2.0.0"`. L'elemento radice contiene esattamente un elemento figlio `<Metadata>` elemento.
 
-### <a name="packagelangaugepackmanifest-element"></a>Elemento PackageLangaugePackManifest
+### <a name="packagelanguagepackmanifest-element"></a>Elemento http://schemas.microsoft.com/Developer/VSX-schema/2011}}packagelanguagepackmanifest
 
 All'interno di `<PackageLanguagePackManifest>` elemento deve essere presente l'elemento seguente:
 
