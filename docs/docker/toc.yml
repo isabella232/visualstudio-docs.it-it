@@ -6,16 +6,14 @@ items:
     href: ../docker/vs-azure-tools-docker-edit-and-refresh.md
   - name: Distribuire un contenitore ASP.NET in un registro contenitori con Visual Studio
     href: ../docker/vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Creare host Docker in Azure con Docker Machine
-    href: ../docker/vs-azure-tools-docker-machine-azure-config.md
   - name: Configurare un host Docker con VirtualBox
     href: ../docker/vs-azure-tools-docker-setup.md
   - name: Risolvere i problemi di sviluppo di Visual Studio 2017 con Docker
     href: ../docker/vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: ac508684958e53e65694c3740c291efe4269e6e8
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d5d996815f1991edf0df1b4c0e3a694eae865bed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673146"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762596"
