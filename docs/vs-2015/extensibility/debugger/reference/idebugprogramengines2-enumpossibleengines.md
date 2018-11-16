@@ -17,12 +17,12 @@ ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d62edf5ce181779f4a5d607cdcf3908efe16ed3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61a82cf9df873073b8d08e8fe2ad4ef9b281659f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720543"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Restituisce il GUID per tutti i possibili motori di debug (DE) che è possono es
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp#  
-HRESULT EnumPossibleEngines(   
+HRESULT EnumPossibleEngines(   
    DWORD  celtBuffer,  
    GUID*  rgguidEngines,  
    DWORD* pceltEngines  
@@ -40,7 +40,7 @@ HRESULT EnumPossibleEngines(
 ```  
   
 ```csharp  
-int EnumPossibleEngines(   
+int EnumPossibleEngines(   
    uint      celtBuffer,  
    GUID[]    rgguidEngines,  
    ref DWORD pceltEngines  
@@ -58,7 +58,7 @@ int EnumPossibleEngines(
  [out] Restituisce il numero effettivo di GUID DE restituiti.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [c#] 0x8007007A se il buffer non è sufficientemente grande.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007A se il buffer non è sufficientemente grande.  
   
 ## <a name="remarks"></a>Note  
  Per determinare il numero di motori, chiamare questo metodo una volta con il `celtBuffer` parametro è impostato su 0 e il `rgguidEngines` parametro impostato su un valore null. Verranno restituite `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A per c#) e il `pceltEngines` parametro restituisce la dimensione del buffer necessaria.  
