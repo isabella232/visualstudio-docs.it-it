@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_backEndMinor method
 ms.assetid: 37f38d19-6685-440d-a477-7127c4f8699e
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4034abaec3538c4500bc978f2ed8e68f31d15b55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 80805bbac4f574b8f1f5cea28a299712801fbad0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941672"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770343"
 ---
 # <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera il numero di versione secondaria del back-end del compilatore.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp#  
-HRESULT get_backEndMinor (   
+HRESULT get_backEndMinor (   
    DWORD* pRetVal  
 );  
 ```  
