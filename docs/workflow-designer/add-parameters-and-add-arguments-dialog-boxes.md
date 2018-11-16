@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - aggiungere parametri e argomenti alle finestre di dialogo
+title: 'Progettazione del flusso di lavoro: aggiungere parametri e argomenti alle finestre di dialogo'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,24 +12,24 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 67e81423bbd14065249cf7fe91503ab280ec2d8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b01e08ee5579f5422e8e51562444302d685d58d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967638"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789044"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Aggiungere parametri e argomenti alle finestre di dialogo
 
-Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **aggiungere parametri** finestra di dialogo usata per il <xref:System.Activities.Statements.InvokeMethod> progettazione:
+La tabella seguente descrive gli elementi dell'interfaccia utente di **aggiungere parametri** utilizzato dalla finestra di dialogo il <xref:System.Activities.Statements.InvokeMethod> progettazione:
 
 |||
 |-|-|
 |**Direzione**|Specifica se il parametro rappresenta il flusso di dati nel metodo e/o al di fuori del metodo.|
 |**Type**|Nome tipo del nuovo parametro.|
-|**Valore**|Un'espressione VB usata per assegnare un valore predefinito al nuovo parametro|
+|**Valore**|Un'espressione Visual Basic che consente di assegnare un valore predefinito per il nuovo parametro|
 
-Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente il **aggiungere gli argomenti** finestra di dialogo usata per il <xref:System.Activities.Statements.InvokeDelegate> progettazione:
+La tabella seguente descrive gli elementi dell'interfaccia utente di **Aggiungi argomenti** utilizzato dalla finestra di dialogo il <xref:System.Activities.Statements.InvokeDelegate> progettazione:
 
 |||
 |-|-|
