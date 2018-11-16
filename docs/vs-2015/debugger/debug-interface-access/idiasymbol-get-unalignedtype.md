@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_unalignedType method
 ms.assetid: fdcb38fb-490e-4d15-b4e5-3770043a366c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76c5f57ef08f96bbd93f430299c25024262c5768
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9208791dd0611f3b7579fd4db092ecc5fefd74f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909011"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780178"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera un flag che specifica se il tipo di dati definito dall'utente non è al
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp#  
-HRESULT get_unalignedType (   
+HRESULT get_unalignedType (   
    BOOL* pRetVal  
 );  
 ```  

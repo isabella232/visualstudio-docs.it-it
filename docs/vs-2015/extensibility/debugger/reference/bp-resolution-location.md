@@ -17,12 +17,12 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a04b6b171cf2a0cf6a8759d56264c4d4201f681d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc70710ea0a811b75e6bad3098fbbc46dae0bd3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812413"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760756"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,21 +66,21 @@ public struct BP_RESOLUTION_LOCATION {
  [Solo C++] Un segnaposto.  
   
  `unionmember1`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember2`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember3`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember4`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
 ## <a name="remarks"></a>Note  
  Questa struttura è un membro del [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) strutture.  
   
- [Solo in c#] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpType` tra valore quindi per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling il `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare questa struttura in c#.  
+ [C# solo] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpType` tra valore quindi per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling il `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare questa struttura in c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
