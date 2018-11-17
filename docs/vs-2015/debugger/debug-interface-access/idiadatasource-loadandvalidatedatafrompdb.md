@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaDataSource::loadAndValidateDataFromPdb method
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40d25345853474b3d12f722dc0aa05cc6726d506
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: efd5641083bded6729a7c2c698b5a1164a280118
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856642"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767684"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Consente di aprire e verifica che il file di programma (PDB) del database corris
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp#  
-HRESULT loadAndValidateDataFromPdb (   
+HRESULT loadAndValidateDataFromPdb (   
    LPCOLESTR pdbPath,  
    GUID*     pcsig70,  
    DWORD     sig,  
