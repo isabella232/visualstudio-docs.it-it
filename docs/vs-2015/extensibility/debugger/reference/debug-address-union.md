@@ -17,12 +17,12 @@ ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a7bc7edf46533c377857a3aae85e8dc97da8012
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0bff5235224b0bc93ebe63b7b77b812bb54e0845
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827523"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754860"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -94,12 +94,12 @@ public struct DEBUG_ADDRESS_UNION {
  [Solo C++] Il nome dell'unione.  
   
  UnionMember  
- [Solo in c#] Questo valore deve essere sottoposto a marshalling per il tipo di struttura appropriata in base `dwKind`. Vedere la sezione Osservazioni per l'associazione tra `dwKind` e l'interpretazione dell'unione.  
+ [C# solo] Questo valore deve essere sottoposto a marshalling per il tipo di struttura appropriata in base `dwKind`. Vedere la sezione Osservazioni per l'associazione tra `dwKind` e l'interpretazione dell'unione.  
   
 ## <a name="remarks"></a>Note  
  Questa struttura è parte del [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) strutturare e rappresenta uno dei numerosi tipi diversi di indirizzi (le `DEBUG_ADDRESS` struttura viene compilata tramite una chiamata ai [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) (metodo)).  
   
- [Solo in c#] Nella tabella seguente viene illustrato come interpretare il `unionmember` membro per ogni tipo di indirizzo. Nell'esempio viene illustrato come questa operazione viene eseguita per un tipo di indirizzo.  
+ [C# solo] Nella tabella seguente viene illustrato come interpretare il `unionmember` membro per ogni tipo di indirizzo. Nell'esempio viene illustrato come questa operazione viene eseguita per un tipo di indirizzo.  
   
 |`dwKind`|`unionmember` interpretato come|  
 |--------------|----------------------------------|  
