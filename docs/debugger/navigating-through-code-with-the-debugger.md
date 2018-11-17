@@ -1,7 +1,7 @@
 ---
-title: Esplorare il codice con il Debugger di Visual Studio | Microsoft Docs
+title: Esplorare il codice con il debugger di Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2017
+ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,44 +16,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4091b929c20258d1a491082fcb7e50c24d0bbc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933768"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748676"
 ---
-# <a name="navigate-code-with-the-visual-studio-debugger"></a>Esplorare il codice con il Debugger di Visual Studio
-Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il codice nel debugger e in questo modo sarà più veloce e semplice trovare e risolvere i problemi nell'app. Mentre si sposta codice nel debugger, è possibile controllare lo stato dell'app o altre informazioni sul relativo flusso di esecuzione.  
+# <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger di Visual Studio
+
+Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  
   
-## <a name="start-debugging"></a>Avvia debug  
- Spesso, si avvia una sessione debug usando **F5** (**Debug** > **Avvia debug**). Questo comando avvia l'app con il debugger collegato.  
-  
- La freccia verde viene inoltre avviato il debugger (equivale **F5**).  
+## <a name="basic-debugging"></a>Debug di base  
+
+Per avviare l'app con il debugger collegato, premere **F5**, selezionare **Debug** > **Avvia debug**, oppure selezionare la freccia verde sulla barra degli strumenti di Visual Studio.  
   
  ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
- Alcuni altri metodi che è possibile avviare l'app con il debugger collegato comprendono **F11** ([istruzioni nel codice](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([Esegui istruzione/routine codice](#BKMK_Step_over_Step_out)), o da usando **Esegui fino al cursore**.  Vedere le altre sezioni in questo argomento per informazioni sulle funzionalità di queste opzioni.  
+Durante il debug, evidenziato in giallo indica la riga di codice che eseguirà successivo.  
   
- Quando esegue il debug, la linea gialla esempi di codice che verrà eseguita successivamente.  
+ ![DBG&#95;nozioni di base&#95;Break&#95;modalità](../debugger/media/dbg_basics_break_mode.png "modalità di interruzione")  
   
- ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
-  
- Durante il debug, è possibile spostarsi tra i comandi, ad esempio **F5**, **F11** e usare altre funzionalità descritte in questo argomento (ad esempio, i punti di interruzione) per accedere rapidamente al codice che si desidera esaminare.  
-  
- La maggior parte delle funzionalità del debugger, ad esempio visualizzando i valori delle variabili nella finestra variabili locali o la valutazione delle espressioni nella finestra Espressioni di controllo, sono disponibili solo mentre il debugger viene sospeso (chiamato anche *modalità di interruzione*). Quando il debugger viene sospesa, lo stato dell'app viene sospesa durante le funzioni, variabili e oggetti restano in memoria. In modalità di interruzione, è possibile esaminare la posizione degli elementi e gli stati per individuare le violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'app in modalità di interruzione. Per guardare un video che illustra queste funzionalità, vedere [Guida introduttiva con il Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
-  
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> L'istruzione nel codice, di una riga  
- Per arrestare in ogni riga del codice (ogni istruzione) durante il debug, usare il **F11** tasti di scelta rapida (o **Debug** > **Esegui istruzione** nel menu).  
-  
-> [!TIP]
->  Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzare i relativi valori oppure usare il [variabili locali](../debugger/autos-and-locals-windows.md) e [Watch](../debugger/autos-and-locals-windows.md) windows per verificare i relativi valori di passaggio.  
-  
- Ecco alcuni dettagli sul comportamento dei **Esegui istruzione**:  
-  
-- In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà eseguita la funzione annidata più interna. Se si usa **Esegui istruzione** con una chiamata del tipo `Func1(Func2())`, il debugger eseguirà l'istruzione della funzione `Func2`.  
-  
-- Il debugger esegue il codice un'istruzione alla volta anziché le righe fisiche. Ad esempio una clausola `if` può essere scritta in una riga:  
+Più finestre del debugger, ad esempio la **moduli** e **Watch** windows, sono disponibili solo durante l'esecuzione del debugger. Alcune funzionalità di debug, ad esempio per visualizzare i valori delle variabili di **variabili locali** finestra o la valutazione delle espressioni nel **Watch** finestra, sono disponibili solo mentre il debugger viene sospeso in un punto di interruzione, detto anche *modalità di interruzione*. 
+
+In modalità di interruzione, l'esecuzione di app viene sospesa durante le funzioni, variabili e oggetti restano in memoria. È possibile esaminare la posizione degli elementi e gli stati per individuare le violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'app in modalità di interruzione. Per un video che illustra queste funzionalità, vedere [Guida introduttiva con il Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+
+Se si interrompe nel codice che non dispone di origine o simboli (*PDB*) i file caricati, il debugger visualizza una **file di origine non trovati** o **simboli non trovati** pagina che può aiutarti Individuare e caricare i file. Visualizzare [specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile caricare i file di simboli o di origine, è possibile comunque eseguire il debug le istruzioni dell'assembly nel **Disassembly** finestra. 
+
+Non sempre è necessario avviare il debug eseguendo l'avvio di un'app all'inizio. È anche possibile premere **F11** al [istruzioni nel codice](#BKMK_Step_into__over__or_out_of_the_code), premere **F10** al [Esegui istruzione/routine di codice](#BKMK_Step_over_Step_out), o [eseguiti in un percorso specifico o funzione](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).    
+
+##  <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
+
+I comandi di passaggio del debugger consentono di controllare lo stato dell'app o altre informazioni sul flusso di esecuzione. 
+
+Se è necessario trovare il punto di ingresso nell'app, iniziare con **F10** oppure **F11**.  
+
+### <a name="BKMK_Step_into__over__or_out_of_the_code"></a> L'istruzione nel codice riga per riga  
+
+Per arrestare in ogni riga del codice o dell'istruzione durante il debug, usare **Debug** > **Esegui istruzione**, oppure premere **F11**.  
+
+Il debugger avanza tramite le istruzioni di codice, le righe non fisiche. Ad esempio, un `if` clausola può essere scritto in una sola riga:  
   
   ```csharp  
   int x = 42;  
@@ -61,130 +63,124 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   if( int x == 42) s = "Answered!";  
   ```  
   
-  ```VB  
+  ```vb  
   Dim x As Integer = 42  
   Dim s As String = "Not answered"  
   If x = 42 Then s = "Answered!"  
   ```  
+
+Tuttavia, quando esegue l'istruzione in questa riga, il debugger considera la condizione come un unico passaggio, di conseguenza come un altro. Nell'esempio precedente, la condizione è true.  
   
-   Quando si esegue l'istruzione in questa riga, il debugger esegue la condizione come un unico passaggio e la conseguenza come un altro (in questo esempio, la condizione è true).  
+In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà eseguita la funzione annidata più interna. Ad esempio, se si usa **Esegui istruzione** in una chiamata, ad esempio `Func1(Func2())`, il debugger eseguirà l'istruzione nella funzione `Func2`.  
+
+>[!TIP]
+>Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzare i relativi valori oppure usare il [variabili locali](autos-and-locals-windows.md) e [Watch](watch-and-quickwatch-windows.md) windows per verificare i valori di passaggio. Si può anche rilevare visivamente lo stack di chiamata durante l'esecuzione di funzioni. Visualizzare [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
+
+###  <a name="BKMK_Step_over_Step_out"></a> Esaminare il codice e ignorare alcune funzioni  
+
+Potrebbe non rilevante una funzione durante il debug o si conosce funziona, come il codice ben collaudato della libreria. È possibile usare i comandi seguenti da ignorare nel codice. Le funzioni eseguono comunque, ma li ignora il debugger.  
   
-  Per tracciare visivamente lo stack di chiamate durante l'esecuzione di funzioni, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
-  
-##  <a name="BKMK_Step_over_Step_out"></a> Esaminare il codice, ignorando le funzioni  
- Quando si esegue codice nel debugger, spesso si noterà che non è necessario comprendere cosa avviene in una particolare funzione (non è rilevante, o si conosce funziona, come il codice della libreria ben collaudato). Usare i comandi seguenti da ignorare tramite codice (le funzioni comunque possibile eseguirli, naturalmente, ma li ignora il debugger).  
-  
-|Comando di tasti|Comando di menu|Descrizione|  
+|Comando di tasti|Comando del menu Debug|Descrizione|  
 |----------------------|------------------|-----------------|  
-|**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione **Esegui istruzione/routine** esegue il codice quindi sospesa alla prima riga del codice dopo che la funzione chiamata viene restituita.|  
-|**MAIUSC+F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando la funzione corrente viene restituito (ignora il debugger tramite la funzione corrente).|  
-  
-> [!TIP]
->  Se è necessario trovare il punto di ingresso nell'app, iniziare con **F10** oppure **F11**. Questi comandi sono spesso utili quando si esaminare lo stato dell'app o il tentativo di ottenere maggiori informazioni sul relativo flusso di esecuzione.  
+|**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione **Esegui istruzione/routine** esegue il codice, quindi viene sospesa alla prima riga del codice dopo che la funzione chiamata viene restituita.|  
+|**MAIUSC**+**F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando termina la funzione corrente. Il debugger passa attraverso la funzione corrente.|  
   
 ##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire fino a un percorso specifico o (funzione)  
- Spesso il metodo preferito di debug del codice, questi metodi sono utili quando si sa esattamente quale codice si desidera controllare o almeno si conosce in cui si desidera avviare il debug.  
-  
--   **Impostare punti di interruzione nel codice**  
-  
-     Per impostare un punto di interruzione semplice nel codice, aprire il file di origine nell'editor di Visual Studio. Impostare il cursore sulla riga di codice in cui si desidera sospendere l'esecuzione e quindi fare doppio clic nella finestra del codice per visualizzare il menu di scelta rapida e scegliere **punto di interruzione > Inserisci punto di interruzione** (o premere **F9**). Il debugger sospende il diritto di esecuzione prima che venga eseguita la riga.  
-  
-     ![Impostare un punto di interruzione](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
-  
-     I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionalità aggiuntive, ad esempio punti di interruzione e punti di analisi condizionali. Visualizzare [usando i punti di interruzione](../debugger/using-breakpoints.md).  
-  
--   **Eseguire fino alla posizione del cursore.**  
-  
-     Per eseguire fino alla posizione del cursore, posizionare il cursore su una riga di codice eseguibile in una finestra di origine. Nel menu di scelta rapida dell'editor (pulsante destro del mouse nell'editor), scegliere **Esegui fino al cursore**. Si tratta, ad esempio impostando un punto di interruzione temporaneo.
 
--   **Esegui fino al clic** 
+È preferibile eseguire direttamente a una posizione specifica o una funzione quando si sa esattamente quale codice si desidera controllare o si conosce in cui si desidera avviare il debug.  
+  
+### <a name="run-to-a-breakpoint-in-code"></a>Eseguire un punto di interruzione nel codice  
+  
+Per impostare un punto di interruzione semplice nel codice, fare clic sul margine a sinistra accanto alla riga di codice in cui si desidera sospendere l'esecuzione. È anche possibile selezionare la riga e premere **F9**, selezionare **Debug** > **Attiva/Disattiva punto di interruzione**, o fare doppio clic e selezionare **puntodiinterruzione**  >  **Inserisci punto di interruzione**. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro accanto alla riga di codice. Il debugger sospende l'esecuzione prima dell'esecuzione di riga.
+  
+![Impostare un punto di interruzione](../debugger/media/dbg_basics_setbreakpoint.png "impostare un punto di interruzione")  
+  
+I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionalità aggiuntive, ad esempio punti di interruzione e punti di analisi condizionali. Per informazioni dettagliate, vedere [usando i punti di interruzione](../debugger/using-breakpoints.md).  
+  
+### <a name="run-to-a-function-breakpoint"></a>Eseguire un punto di interruzione (funzione)  
 
-    Per eseguire in un punto nel codice durante la pausa del debugger, selezionare la **usare l'esecuzione a qui** icona della freccia verde (l'icona viene visualizzata al passaggio del mouse su una riga di codice). Ciò consente di eliminare la necessità di impostare punti di interruzione temporanei.
+È possibile impostare il debugger per l'esecuzione finché non raggiunge una funzione specificata. È possibile specificare la funzione in base al nome oppure è possibile sceglierlo dallo stack di chiamate.  
+  
+**Per specificare il nome di un punto di interruzione (funzione)**
 
-    ![Esecuzione del debugger a clic](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+1. Selezionare **Debug** > **nuovo punto di interruzione** > **interruzione della funzione**
+   
+1. Nel **nuovo punto di interruzione di funzione** finestra di dialogo digitare il nome della funzione e selezionare la lingua.
+   
+   ![Finestra di dialogo Nuovo punto di interruzione di funzione](../debugger/media/dbg_execution_newbreakpoint.png "nuovo punto di interruzione (funzione)")  
+   
+1. Scegliere **OK**. 
 
-    > [!NOTE]
-    > **Esegui fino al clic** sono le novità [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+Se la funzione è sottoposta a overload o in più di uno spazio dei nomi, è possibile scegliere quello desiderato nel **i punti di interruzione** finestra.  
+
+![I punti di interruzione di funzione in overload](../debugger/media/dbg_execution_overloadedbreakpoints.png "i punti di interruzione di funzione in overload")  
   
--   **Inserire un'interruzione nel codice manualmente**  
+**Per selezionare un punto di interruzione di funzione dallo stack di chiamate** 
   
-     Per inserire un'interruzione nella successiva riga di codice disponibile in un'applicazione in esecuzione, scegliere **Debug**, **Interrompi tutto** (tastiera: **Ctrl+Alt+Break**). 
+1. Durante il debug, aprire il **Stack di chiamate** finestra selezionando **Debug** > **Windows** > **Stack di chiamate**. 
+   
+1. Nel **Stack di chiamate** finestra, fare doppio clic su una funzione e selezionare **Esegui fino al cursore**, oppure premere **Ctrl**+**F10**.  
+
+Per tracciare visivamente lo stack di chiamate, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-     Se si interrompe l'esecuzione del codice senza file (con estensione pdb) di simboli o di origine corrispondenti, il debugger visualizza una pagina **File di origine non trovati** o **Simboli non trovati** che consente di trovare i file appropriati. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile accedere ai file di supporto, è comunque possibile eseguire il debug delle istruzioni di assembly nella finestra Disassembly.  
+### <a name="run-to-a-cursor-location"></a>Esecuzione in una posizione del cursore  
+
+Per l'esecuzione alla posizione del cursore, nel codice sorgente o il **Stack di chiamate** finestra, selezionare la riga di cui si desidera un'interruzione in corrispondenza del mouse e scegliere **Esegui fino al cursore**, oppure premere **Ctrl** + **F10**. Selezionando **Esegui fino al cursore** corrisponde all'impostazione di un punto di interruzione temporaneo.
+
+### <a name="run-to-click"></a>Esegui fino alla riga selezionata 
+
+Durante la pausa del debugger, è possibile posizionarsi su un'istruzione nel codice sorgente o il **Disassembly** finestra e selezionare il **esecuzione qui** icona della freccia verde. Usando **Esegui fino al clic** Elimina la necessità di impostare un punto di interruzione temporaneo.
+
+![Esegui fino al clic](../debugger/media/dbg-run-to-click.png "eseguire fa clic su") 
+
+> [!NOTE]
+> **Esegui fino al clic** sono le novità [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
   
--   **Eseguire fino a una funzione nello stack di chiamate**  
+### <a name="manually-break-into-code"></a>Inserire un'interruzione nel codice manualmente  
   
-     Nel **Stack di chiamate** , disponibile durante il debug, finestra selezionare la funzione, pulsante destro del mouse e scegliere **Esegui fino al cursore**. Per tracciare visivamente lo stack di chiamate, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
-  
--   **Eseguire fino a una funzione specificata mediante il nome**  
-  
-     È possibile impostare il debugger per eseguire l'applicazione fino a quando non raggiunge una funzione specificata. È possibile specificare la funzione mediante il nome oppure sceglierla dallo stack di chiamate.  
-  
-     Per specificare una funzione mediante il nome, scegliere **Debug**, **Nuovo punto di interruzione**, **Interrompi alla funzione**, quindi immettere il nome della funzione e altre informazioni di identificazione.  
-  
-     ![Finestra di dialogo Nuovo punto di interruzione](../debugger/media/dbg_execution_newbreakpoint.png "DBG_Execution_NewBreakpoint")  
-  
-     Se la funzione è sottoposta a overload o è disponibile nello spazio dei nomi, è possibile scegliere le funzioni desiderate nella finestra di dialogo **Seleziona punti di interruzione** .  
-  
-     ![I punti di interruzione, finestra di dialogo Scegli](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
+Per inserire un'interruzione nella riga successiva disponibile di codice in un'app in esecuzione, selezionare **Debug** > **Interrompi tutto**, oppure premere **Ctrl**+**Alt**  + **Interrompi**. 
   
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Spostare il puntatore del mouse per modificare il flusso di esecuzione  
- Mentre il debugger è in pausa, è possibile spostare il puntatore all'istruzione per impostare la successiva istruzione di codice da eseguire. La posizione dell'istruzione successiva da eseguire è contrassegnata da una freccia gialla visualizzata sul margine di una finestra di origine o di una finestra Disassembly. Mediante lo spostamento della freccia, è possibile ignorare un segmento di codice oppure tornare a una riga eseguita precedentemente. È possibile usare questa opzione in alcune situazioni, ad esempio quando si desidera ignorare una sezione di codice che contiene un bug noto.  
+
+Quando il debugger viene sospeso, ovvero la freccia gialla nel margine del codice sorgente oppure **Disassembly** finestra contrassegna la posizione dell'istruzione successiva da eseguire. È possibile modificare l'istruzione successiva da eseguire tramite lo spostamento della freccia. È possibile ignorare un segmento di codice o tornare a una riga precedente. Spostando il puntatore è utile per le situazioni, ad esempio ignorare una sezione di codice che contiene un bug noto.  
+
+ ![Spostare il puntatore](../debugger/media/dbg_basics_example3.gif "spostare il puntatore del mouse")
   
- ![Spostare il puntatore del mouse](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
+Per modificare l'istruzione successiva da eseguire, il debugger deve essere in modalità di interruzione. Nel codice sorgente oppure **Disassembly** finestra, trascinare la freccia gialla in una riga diversa o fare doppio clic sulla riga di cui si desidera eseguire successivamente e selezionare **Imposta istruzione successiva**. 
+
+Il contatore del programma passa direttamente al nuovo percorso e istruzioni tra le esecuzioni precedenti e nuove punti non vengono eseguiti. Tuttavia, se si sposta il punto di esecuzione con le versioni precedenti, le istruzioni intermedi non sono annullate.  
+
+>[!CAUTION]
+>- Lo spostamento dell'istruzione successiva in corrispondenza di un'altra funzione o ambito provoca in genere un errore dello stack di chiamate e, conseguentemente, un errore o un'eccezione di runtime. Se si sposta l'istruzione successiva in corrispondenza di un altro ambito, verrà visualizzata una finestra di dialogo contenente un avviso e in cui si può scegliere di annullare l'operazione. 
+>- In Visual Basic non è possibile spostare l'istruzione successiva in corrispondenza di un altro ambito o di un'altra funzione.  
+>- Se in C++ nativo sono abilitati i controlli runtime, l'impostazione dell'istruzione successiva può causare la generazione di un'eccezione quando l'esecuzione raggiunge la fine del metodo.  
+>- Quando l'opzione Modifica e continuazione è abilitata, **Imposta istruzione successiva** avrà esito negativo se sono state effettuate modifiche per cui Modifica e continuazione non è immediatamente in grado di eseguire nuovamente il mapping. Ad esempio questo può accadere se è stato modificato del codice all'interno di un blocco catch. In questo caso, un messaggio di errore indica che l'operazione non è supportato.  
+>- Nel codice gestito, è possibile spostare l'istruzione successiva se:  
+>   - L'istruzione successiva è inclusa in un metodo diverso da quello dell'istruzione corrente.  
+>   - Il debug è stato avviato da Just-In-Time di debug.  
+>   - Uno svuotamento dello stack di chiamate è in corso.  
+>   - È stata generata un'eccezione System.StackOverflowException or System.Threading.ThreadAbortException.  
   
- Per impostare l'istruzione successiva da eseguire, utilizzare una di queste procedure:  
-  
--   In una finestra di origine trascinare la freccia gialla nella posizione in cui si desidera impostare l'istruzione successiva all'interno dello stesso file di origine.  
-  
--   In una finestra di origine, impostare il cursore sulla riga che si desidera eseguire successivamente, pulsante destro del mouse e scegliere **Imposta istruzione successiva**.  
-  
--   Nella finestra Disassembly impostare il cursore sull'istruzione dell'assembly che si desidera eseguire successivamente, fare doppio clic su un e scegliere **Imposta istruzione successiva**.  
-  
-> [!CAUTION]
->  Quando si imposta l'istruzione successiva, il contatore del programma passa direttamente alla nuova posizione. Usare questo comando con cautela:  
-> 
-> - Le istruzioni comprese tra il vecchio e il nuovo punto di esecuzione non verranno eseguite.  
->   -   Se si sposta all'indietro il punto di esecuzione, le istruzioni comprese tra questo e il vecchio punto di interruzione non verranno annullate.  
->   -   Lo spostamento dell'istruzione successiva in corrispondenza di un'altra funzione o ambito provoca in genere un errore dello stack di chiamate e, conseguentemente, un errore o un'eccezione di runtime. Se si sposta l'istruzione successiva in corrispondenza di un altro ambito, verrà visualizzata una finestra di dialogo contenente un avviso e in cui si può scegliere di annullare l'operazione. In Visual Basic non è possibile spostare l'istruzione successiva in corrispondenza di un altro ambito o di un'altra funzione.  
->   -   Se in C++ nativo sono abilitati i controlli runtime, l'impostazione dell'istruzione successiva può causare la generazione di un'eccezione quando l'esecuzione raggiunge la fine del metodo.  
->   -   Quando l'opzione Modifica e continuazione è abilitata, **Imposta istruzione successiva** avrà esito negativo se sono state effettuate modifiche per cui Modifica e continuazione non è immediatamente in grado di eseguire nuovamente il mapping. Ad esempio questo può accadere se è stato modificato del codice all'interno di un blocco catch. In questo caso, si noterà un messaggio di errore indicante che l'operazione non è supportata.  
-> 
+## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Eseguire il debug di codice non utente  
+
+Per impostazione predefinita, il debugger tenta di eseguire il debug solo il codice dell'app abilitando un'impostazione denominata *Just My Code*. Per altre informazioni dettagliate sul funzionamento di questa funzionalità per diversi tipi di progetto e linguaggi, e come è possibile personalizzare, vedere [Just My Code](../debugger/just-my-code.md). 
+
+Per esaminare il codice di framework, il codice della libreria di terze parti o le chiamate di sistema durante il debug, è possibile disabilitare Just My Code. In **degli strumenti** (o **Debug**) > **opzioni** > **debug**, deselezionare il **Abilita Just My Code** casella di controllo. Quando Just My Code è disabilitato, il codice non utente viene visualizzato nelle finestre del debugger e il debugger può eseguire il codice non utente.  
+
 > [!NOTE]
->  Nel codice gestito non è possibile spostare l'istruzione successiva in presenza delle seguenti condizioni:  
-> 
-> - L'istruzione successiva è inclusa in un metodo diverso da quello dell'istruzione corrente.  
->   -   Il debug è stato avviato utilizzando il debug JIT.  
->   -   È in corso la rimozione di uno stack di chiamate.  
->   -   È stata generata un'eccezione System.StackOverflowException or System.Threading.ThreadAbortException.  
+> Just My Code non è supportato per progetti per dispositivi.  
   
- Non è possibile impostare l'istruzione successiva mentre l'applicazione è in esecuzione. Per impostare l'istruzione successiva, è necessario che il debugger sia in modalità di interruzione.  
+### <a name="debug-system-code"></a>Il debug del codice di sistema
+
+Se si sono caricati simboli di debug per codice di sistema di Microsoft e disabilitato Just My Code, è possibile eseguire una chiamata di sistema esattamente come qualsiasi altra chiamata.  
   
-## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>L'istruzione nel codice non utente  
- Per impostazione predefinita, il debugger tenta di mostrare è solo il codice dell'app durante il debug, che viene determinato da un debugger denominata *Just My Code*. (Vedere [Just My Code](../debugger/just-my-code.md) per verificare il funzionamento per diversi tipi di progetto e i linguaggi e come è possibile personalizzare il comportamento.) Tuttavia, a volte durante il debug, si potrebbe voler esaminare il codice di framework, il codice della libreria di terze parti o le chiamate al sistema operativo (chiamate di sistema).  
+Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e le opzioni di caricamento](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options).  
   
- È possibile disattivare Just My Code visitando **strumenti** > **opzioni** > **debug** e deselezionare il **Abilita Just My Code** casella di controllo.  
+**Per caricare i simboli per un componente di sistema specifici:**
+
+1. Durante il debug, aprire il **moduli** finestra selezionando **Debug** > **Windows** > **moduli**, o premendo **Ctrl**+**Alt**+**U**.  
   
- Quando Just My Code è disabilitato, il debugger può eseguire istruzioni nel codice non utente e codice non utente viene visualizzato nelle finestre del debugger.  
-  
-> [!NOTE]
->  Just My Code non è supportato per progetti per dispositivi.  
-  
- **Eseguire le chiamate di sistema**  
-  
- Se sono stati caricati simboli di debug per codice di sistema e Just My Code non è abilitato, è possibile eseguire una chiamata di sistema esattamente come qualsiasi altra chiamata.  
-  
- Per accedere ai file di simboli Microsoft, vedere [utilizzare server dei simboli per trovare i file di simboli non nel computer locale](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) nel [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) argomento.  
-  
- Per caricare i simboli per un componente di sistema specifico durante il debug:  
-  
-1.  Aprire la finestra moduli (tastiera: **Ctrl + Alt + U**).  
-  
-2.  Selezionare il modulo per cui si desidera caricare i simboli.  
-  
-     I moduli con i simboli caricati sono presenti nella colonna **Stato simboli** .  
-  
-3.  Scegliere **Carica simboli** dal menu di scelta rapida.  
+1. Nel **moduli** finestra, è possibile indicare che i moduli disponibili simboli caricati nel **stato simboli** colonna. Fare clic sul modulo che si desidera caricare i simboli e selezionare **caricare i simboli**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito  
- Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di operatori o proprietà, scegliere **Debug** > **opzioni**. Nella pagina **Debug** > **Generale** deselezionare la casella di controllo **Esegui istruzione/routine di proprietà e operatori (solo gestito)** 
+ Per impostazione predefinita, il debugger esegue le istruzioni/routine delle proprietà e operatori nel codice gestito. L'esecuzione di istruzioni/routine delle proprietà e operatori in genere fornisce una migliore esperienza di debug. Per abilitare l'esecuzione di istruzioni di proprietà e operatori, in **degli strumenti** (o **Debug**) > **opzioni** > **debug**  >  **Generali**deselezionare la **Esegui istruzione/routine di proprietà e operatori (solo gestito)** casella di controllo.
