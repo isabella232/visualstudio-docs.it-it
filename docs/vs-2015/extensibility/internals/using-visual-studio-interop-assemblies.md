@@ -17,12 +17,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38d33733c9ab2c9b3a1b0eb44fad30b46ae3c029
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c47b709d38a9acf84810de7154b270e2b4557ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195626"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794647"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso degli assembly di interoperabilità di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Assembly di interoperabilità Visual Studio consentono alle applicazioni gestite
 > [!NOTE]
 >  Le eccezioni compromettono le prestazioni e servono per indicare condizioni anomale dei programmi. Le condizioni che si verificano spesso devono essere gestite inline, invece di generare un'eccezione.  
   
-## <a name="iunknown-parameters-passed-as-type-void"></a>I parametri di IUnknown passati come tipo void * *  
+## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown parametri passati come tipo void **  
  Cercare [i parametri che sono definiti come out] `void **` in COM interfaccia, ma che sono definite come `[``iid_is``]` nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prototipo di metodo di assembly di interoperabilità.  
   
  In alcuni casi, un'interfaccia COM genera un `IUnknown` oggetto e l'interfaccia COM quindi lo passa come tipo `void **`. Queste interfacce sono particolarmente importanti perché se la variabile viene definita come [out] nel file IDL, la `IUnknown` oggetto è conteggio dei riferimenti con il `AddRef` (metodo). Se l'oggetto non viene gestita correttamente, si verifica una perdita di memoria.  
