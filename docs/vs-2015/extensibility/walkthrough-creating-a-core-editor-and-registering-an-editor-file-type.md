@@ -15,12 +15,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a79bbcbba412c008d4f4641f01ff23c9c4f9952f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187304"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778709"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creazione di un Editor di base e la registrazione di un tipo di File dell'Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     ```  
   
     ```csharp  
-    [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
+    [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
 5.  Nella definizione della classe, aggiungere due variabili private per contenere il pacchetto padre e un provider di servizi.  
@@ -254,12 +254,12 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     ppunkDocView       = IntPtr.Zero;  
     ppunkDocData       = IntPtr.Zero;  
     pbstrEditorCaption = "";  
-    pguidCmdUI         = Guid.Empty;   
+    pguidCmdUI         = Guid.Empty;   
     pgrfCDW            = 0;  
   
     if ((grfCreateDoc & (VSConstants.CEF_OPENFILE |   
           VSConstants.CEF_SILENT)) == 0)  
-    {   
+    {   
         throw new ArgumentException("Only Open or Silent is valid");  
     }  
     if (punkDocDataExisting != IntPtr.Zero)  
@@ -268,7 +268,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     }  
   
     // Instantiate a text buffer of type VsTextBuffer.  
-    // Note: we only need an IUnknown (object) interface for   
+    // Note: we only need an IUnknown (object) interface for   
     // this invocation.  
     Guid clsidTextBuffer = typeof(VsTextBufferClass).GUID;  
     Guid iidTextBuffer   = VSConstants.IID_IUnknown;  
@@ -291,7 +291,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
         Guid clsidCodeWindow = typeof(VsCodeWindowClass).GUID;  
         Guid iidCodeWindow   = typeof(IVsCodeWindow).GUID;  
         IVsCodeWindow pCodeWindow =  
-        (IVsCodeWindow)this.parentPackage.CreateInstance(   
+        (IVsCodeWindow)this.parentPackage.CreateInstance(   
               ref clsidCodeWindow,  
               ref iidCodeWindow,  
               typeof(IVsCodeWindow));  
@@ -301,24 +301,24 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
             // We are giving up ownership of the text buffer!  
             pCodeWindow.SetBuffer((IVsTextLines)pTextBuffer);  
   
-            // Now tell the caller about all this new stuff   
+            // Now tell the caller about all this new stuff   
             // that has been created.  
             ppunkDocView = Marshal.GetIUnknownForObject(pCodeWindow);  
             ppunkDocData = Marshal.GetIUnknownForObject(pTextBuffer);  
   
-            // Specify the command UI to use so keypresses are   
+            // Specify the command UI to use so keypresses are   
             // automatically dealt with.  
             pguidCmdUI = VSConstants.GUID_TextEditorFactory;  
   
             // This caption is appended to the filename and  
-            // lets us know our invocation of the core editor   
+            // lets us know our invocation of the core editor   
             // is up and running.  
             pbstrEditorCaption = " [MyPackage]";  
   
             retval = VSConstants.S_OK;  
-        }   
-    }   
-    return retval;   
+        }   
+    }   
+    return retval;   
     ```  
   
 13. Compilare il progetto e assicurarsi che non siano presenti errori.  
