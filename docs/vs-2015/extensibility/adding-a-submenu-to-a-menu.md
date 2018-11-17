@@ -18,12 +18,12 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14ad9d2daf603dd2ca80a784251f19503fee1cba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199121"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738321"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Aggiunta di un sottomenu a un menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Questa procedura dettagliata si basa sulla dimostrazione [aggiunta di un Menu al
 1.  Aprire TestCommand.cs e aggiungere il seguente ID di comando dopo l'ID del comando.  
   
     ```csharp  
-    public const int cmdidTestSubCmd = 0x105;  
+    public const int cmdidTestSubCmd = 0x105;  
     ```  
   
 2.  Aggiungere il sottocomando. Trovare il costruttore di comando. Aggiungere le righe seguenti immediatamente dopo la chiamata al `AddCommand` (metodo).  
