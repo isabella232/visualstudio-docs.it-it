@@ -20,15 +20,15 @@ helpviewer_keywords:
 - performance tools, VSInstr tool
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70ebc816b5bf0b2b27805499ebd688f62431a87f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220287"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773327"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSInstr [/U] filename [/options]
 |**ExcludeSmallFuncs**|Esclude dalla strumentazione le funzioni piccole, ovvero funzioni brevi che non effettuano alcuna chiamata di funzione. L'opzione **ExcludeSmallFuncs** riduce il sovraccarico di strumentazione, aumentando la velocità di strumentazione.<br /><br /> L'esclusione delle piccole funzioni riduce inoltre la dimensione del file con estensione vsp e il tempo necessario per l'analisi.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Inserisce un contrassegno del profilo (un identificatore usato per delimitare i dati nei report) che è possibile usare per identificare l'inizio o la fine di un intervallo di dati nel file di report con estensione vsp.<br /><br /> **Before** - Subito prima dell'ingresso nella funzione di destinazione.<br /><br /> **After** - Subito dopo l'uscita dalla funzione di destinazione.<br /><br /> **Top** - Subito dopo l'ingresso nella funzione di destinazione.<br /><br /> **Bottom** - Subito prima di ogni restituzione del controllo nella funzione di destinazione.<br /><br /> `funcname` - Nome della funzione di destinazione.<br /><br /> `Markid` - Numero intero positivo (long) da usare come identificatore del contrassegno del profilo.|  
 |**Coverage**|Esegue la strumentazione di tipo code coverage. Può essere usato solo con le seguenti opzioni: **Verbose**, **OutputPath**, **Exclude** e **Logfile**.|  
-|**Verbose**|Il **Verbose** opzione viene usata per visualizzare informazioni dettagliate sul processo di strumentazione.|  
+|**Verbose**|L'opzione **Verbose** consente di visualizzare informazioni dettagliate sul processo di strumentazione.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Elimina tutti gli avvisi o avvisi specifici.<br /><br /> `Message Number` - Numero di avviso. Se `Message Number` viene omesso, vengono eliminati tutti gli avvisi.<br /><br /> Per altre informazioni, vedere [Avvisi di VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Specifica il livello di profilatura delle seguenti opzioni di controllo della raccolta dei dati di VSInstr:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** -Specifica le funzioni di controllo della raccolta dei dati a livello di thread. La profilatura viene avviata o arrestata solo per il thread corrente. Lo stato di profilatura degli altri thread non è interessato. Il valore predefinito è Thread.<br /><br /> **Process** -Specifica le funzioni di controllo della raccolta dei dati di profilatura a livello di processo. La profilatura viene avviata o arrestata per tutti i thread nel processo corrente. Lo stato di profilatura di altri processi non è interessato.<br /><br /> **Global** -Specifica le funzioni di controllo della raccolta dei dati (su diversi processi) a livello globale.<br /><br /> Se non si specifica il livello di profilatura, si verifica un errore.|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Limita la raccolta dei dati alla funzione di destinazione e alle funzioni figlio chiamate da tale funzione.<br /><br /> **Inside** - Inserisce la funzione StartProfile subito dopo l'ingresso nella funzione di destinazione. Inserisce la funzione StopProfile subito prima di ogni restituzione nella funzione di destinazione.<br /><br /> **Outside** - Inserisce la funzione StartProfile subito prima di ogni chiamata alla funzione di destinazione. Inserisce la funzione StopProfile subito dopo ogni chiamata alla funzione di destinazione.<br /><br /> `funcname` - Nome della funzione di destinazione.|  
