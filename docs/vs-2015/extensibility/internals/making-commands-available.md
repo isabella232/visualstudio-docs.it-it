@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883968"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783038"
 ---
 # <a name="making-commands-available"></a>Miglioramento della disponibilità dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia
 ## <a name="delayed-loading"></a>Il caricamento ritardato  
  Il modo consueto per abilitare il caricamento ritardato è progettare il pacchetto VSPackage in modo che i relativi comandi vengono visualizzati nell'interfaccia utente, ma non è possibile caricare il pacchetto stesso fino a quando un utente fa clic su uno dei comandi. A tale scopo, nel file vsct, creare i comandi non con alcun flag dei comandi.  
   
- Nell'esempio seguente illustra la definizione di un comando di menu da un file con estensione vsct. Questo è il comando che viene generato per il modello di pacchetto Visual Studio quando la **comando di Menu** scelto nel modello.  
+ Nell'esempio seguente illustra la definizione di un comando di menu da un file con estensione vsct. Questo è il comando che viene generato dal modello di pacchetto Visual Studio quando la **comando di Menu** scelto nel modello.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
