@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 98d0aa1be1ac30de74a226735ca90743474043b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000842"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807192"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro delle modifiche (Visual Studio Tools per Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -333,9 +333,9 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   Correzione della gestione dei temi di Visual Studio. In precedenza, le finestre di dialogo su temi neri possono apparire vuote.
+-   Correzione della gestione dei temi di Visual Studio. Nelle versioni precedenti le finestre di dialogo su temi neri possono apparire vuote.
 
--   Correggere il blocco di Unity durante la connessione del debugger quando Unity è la ricompilazione.
+-   Correzione del blocco di Unity durante la connessione del debugger quando Unity è in fase di ricompilazione.
 
 -   Correzione dei punti di interruzione durante il debug di editor o lettori remoti compilati su un altro sistema.
 
