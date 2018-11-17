@@ -21,15 +21,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 ms.assetid: 4f6dd6a3-850c-46a2-81a1-344b0e171b28
 caps.latest.revision: 13
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: 058bd3665c5c60a3e08888535116fdc825d163ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4174a9854dfb74033f408f4064c2ea9dcac74d6c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272116"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789473"
 ---
 # <a name="types-of-shapes-and-connectors---redirect"></a>Tipi di forme e di connettori (reindirizzamento)
 In questo argomento è stato unito con un altro. Vedi [personalizzazione presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).

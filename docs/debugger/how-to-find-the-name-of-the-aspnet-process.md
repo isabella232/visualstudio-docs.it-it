@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: trovare il nome del processo ASP.NET | Documenti Microsoft'
+title: Trovare il processo ASP.NET in esecuzione | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,41 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 899860baf5461eb798341cebf775ccde488915b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473819"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751775"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procedura: individuare il nome del processo ASP.NET
-Per connettersi a un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] in esecuzione, è necessario conoscere il nome del processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+# <a name="find-the-name-of-the-aspnet-process"></a>Trovare il nome del processo ASP.NET
 
--   Se si esegue ASP.NET Core in IIS o IIS Express, il nome del processo è dotnet.exe.
+Eseguire il debug di un in esecuzione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] app, il debugger di Visual Studio deve connettersi il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processi in base al nome.
 
--   Se si esegue ASP.NET in IIS 6.0 in un secondo momento, il nome sarà w3wp.exe.  
-  
--   Se si esegue ASP.NET in una versione precedente di IIS, il nome è aspnet_wp.exe.
+**Per scoprire quale processo è in esecuzione un'app ASP.NET:**
 
--   Se si esegue ASP.NET in IIS Express, il nome è iisexpress.exe.
-  
-Per le applicazioni compilate con le versioni di Visual Studio precedenti a Visual Studio 2012, la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] codice può risiedere nel file system ed essere il server di prova WebDev.WebServer.exe o WebDev.WebServer40.exe. In tal caso, è necessario allegare di WebDev.WebServer.exe o WebDev.WebServer40.exe anziché il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo. Questo scenario è valido solo per il debug locale.
-  
-Le applicazioni ASP più obsolete vengono eseguite nel processo IIS inetinfo.exe quando sono in esecuzione all'interno del processo.  
+1. Con l'app in esecuzione, in Visual Studio, selezionare **Debug** > **Connetti a processo**. 
+   
+1. Nel **Connetti a processo** finestra di dialogo, digitare le prime lettere del processo di nomi nell'elenco seguente o immetterli nella casella di ricerca. Quello che esegue è quella in esecuzione l'app ASP.NET. Connettersi a tale processo per eseguire il debug dell'app. 
+   
+    - *w3wp.exe* è IIS 6.0 e versioni successive. 
+    - *aspnet_wp.exe* sia le versioni precedenti di IIS.
+    - *IISExpress.exe* è IISExpress.
+    - *dotnet.exe* è ASP.NET Core.
+    - *Inetinfo.exe* è meno recente applicazioni ASP in esecuzione in-process. 
 
-### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Per determinare la versione di IIS in cui l'applicazione è in esecuzione  
+>[!NOTE]
+>Visual Studio 2012 e versioni precedente [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] codice può essere nel file system ed eseguito sul server di prova *WebDev.WebServer.exe* oppure *WebDev.WebServer40.exe*. In questo caso, per il debug locale, collegato a *WebDev.WebServer.exe* oppure *WebDev.WebServer40.exe* anziché il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo. 
 
-1.  Assicurarsi che l'applicazione è in esecuzione e quindi da Visual Studio, usare il [Connetti a processo](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) comando.
+**Vedere anche:**
 
-2.  Digitare la prima lettera del nome di un processo come w3wp.exe per trovare rapidamente i processi di **processi disponibili** elenco.
-
-    I processi disponibili in questo argomento nell'elenco indica le versioni di IIS sono disponibili, il processo che esegue l'applicazione.
-
-    > [!NOTE]
-    > A partire da Visual Studio 2017, è possibile utilizzare la casella di ricerca per cercare il nome del processo.
-  
-## <a name="see-also"></a>Vedere anche  
  [Connettersi a un processo in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Prerequisiti per il debug di applicazioni Web remoto](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [Prerequisiti per il debug remoto di applicazioni web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [Requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)   
- [Debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
