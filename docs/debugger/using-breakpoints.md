@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816684"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826843"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
-I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione.  
+I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
   
 ##  <a name="BKMK_Overview"></a> Impostare punti di interruzione nel codice sorgente  
  È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Nel seguente codice c#, ad esempio, è possibile impostare un punto di interruzione nella dichiarazione di variabile, il `for` ciclo o in qualsiasi codice all'interno di `for` ciclo. È possibile impostare un punto di interruzione, le dichiarazioni dello spazio dei nomi o una classe o nella firma del metodo.  
@@ -235,8 +235,8 @@ Quando si seleziona **espressione condizionale**, è possibile scegliere tra due
  >- Per il codice nativo, il debugger non considera la prima valutazione della condizione di una modifica, pertanto non viene raggiunto il punto di interruzione alla prima valutazione. 
  >- Per codice gestito, il debugger raggiunge il punto di interruzione alla prima valutazione dopo **quando modificato** sia selezionata.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Uso degli ID oggetto nelle espressioni condizionali (c# e F # solo)  
- Esistono situazioni quando si vuole osservare il comportamento di un oggetto specifico. Ad esempio, voler scoprire il motivo per cui un oggetto è stato inserito in una raccolta più volte. In c# e F #, è possibile creare ID oggetto per istanze specifiche dei [fanno riferimento ai tipi](/dotnet/csharp/language-reference/keywords/reference-types)e usarle nelle condizioni punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Uso degli ID oggetto nelle espressioni condizionali (C# e F# solo)  
+ Esistono situazioni quando si vuole osservare il comportamento di un oggetto specifico. Ad esempio, voler scoprire il motivo per cui un oggetto è stato inserito in una raccolta più volte. In C# e F#, è possibile creare ID oggetto per istanze specifiche dei [fanno riferimento ai tipi](/dotnet/csharp/language-reference/keywords/reference-types)e usarle nelle condizioni punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.  
 
 **Per creare un ID di oggetto:** 
   
@@ -305,5 +305,7 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 I punti di traccia vengono visualizzati come forma di rombo rosso nel margine sinistro del codice sorgente e **i punti di interruzione** windows. 
   
 ## <a name="see-also"></a>Vedere anche  
-[Risolvere i punti di interruzione nel debugger di Visual Studio](../debugger/troubleshooting-breakpoints.md)  
-[Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md)
+ [Ciò che sta eseguendo il debug?](../debugger/what-is-debugging.md)  
+ [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Presentazione di debug](../debugger/debugger-feature-tour.md)  
+ [Risolvere i punti di interruzione nel debugger di Visual Studio](../debugger/troubleshooting-breakpoints.md)  

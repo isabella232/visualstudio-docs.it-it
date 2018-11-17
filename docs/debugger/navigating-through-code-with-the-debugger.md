@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748676"
+ms.locfileid: "51826740"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger di Visual Studio
 
-Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  
+Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
   
 ## <a name="basic-debugging"></a>Debug di base  
 
@@ -183,4 +183,9 @@ Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e l
 1. Nel **moduli** finestra, è possibile indicare che i moduli disponibili simboli caricati nel **stato simboli** colonna. Fare clic sul modulo che si desidera caricare i simboli e selezionare **caricare i simboli**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito  
- Per impostazione predefinita, il debugger esegue le istruzioni/routine delle proprietà e operatori nel codice gestito. L'esecuzione di istruzioni/routine delle proprietà e operatori in genere fornisce una migliore esperienza di debug. Per abilitare l'esecuzione di istruzioni di proprietà e operatori, in **degli strumenti** (o **Debug**) > **opzioni** > **debug**  >  **Generali**deselezionare la **Esegui istruzione/routine di proprietà e operatori (solo gestito)** casella di controllo.
+ Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di operatori o proprietà, scegliere **Debug** > **opzioni**. Nel **Debugging** > **generali** pagina, deseleziona il **Esegui istruzione/routine di proprietà e operatori (solo gestito)** casella di controllo.
+
+## <a name="see-also"></a>Vedere anche
+ [Ciò che sta eseguendo il debug?](../debugger/what-is-debugging.md)  
+ [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Presentazione di debug](../debugger/debugger-feature-tour.md) 

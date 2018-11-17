@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561829"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826661"
 ---
 # <a name="what-is-debugging"></a>Che cos'è il debug?
 
@@ -49,7 +49,7 @@ Il debugger è uno strumento essenziale per trovare e correggere i bug nelle app
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questo articolo si sono appreso alcuni concetti fondamentali di debug generali. Successivamente, è possibile iniziare a imparare come eseguire il debug con Visual Studio e spiega come scrivere codice con meno bug.
+In questo articolo si sono appreso alcuni concetti fondamentali di debug generali. Successivamente, è possibile iniziare a imparare come eseguire il debug con Visual Studio e spiega come scrivere codice con meno bug. L'articolo seguente illustra C# esempi di codice, ma i concetti si applicano a tutte le lingue supportate da Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)
