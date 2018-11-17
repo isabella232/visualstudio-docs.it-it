@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84ade82822d5481d098fe98408a130ba93f68ee0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831758"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725716"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -413,7 +413,7 @@ protected override void Dispose(bool disposing)
   
 - **gestire gli eventi generati dal IDE** implementando il [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) interfaccia. L'IDE chiama il metodo appropriato dopo le modifiche apportate dall'utente della pagina tipi di carattere e colori. Ad esempio, chiama il [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) metodo se si seleziona un nuovo tipo di carattere.  
   
-  **OR**  
+  **OPPURE**  
   
 - **eseguire il polling per le modifiche IDE**. Questa operazione può essere eseguita tramite il sistema implementata [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaccia. Anche se principalmente per il supporto di persistenza, il [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metodo possibile ottenere informazioni di carattere e colori per gli elementi di visualizzazione. Per altre informazioni sulle impostazioni di carattere e colori, vedere l'articolo MSDN [l'accesso a tipi di carattere archiviate e le impostazioni dei colori](https://msdn.microsoft.com/library/bb166382.aspx).  
   

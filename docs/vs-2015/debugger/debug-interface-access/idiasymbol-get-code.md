@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_code method
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1489398d6aa46184e32d6a2dd68e45b86a4c57e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fe3dfc52fb39b1ab5a7b1f13356c93687866141
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910615"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794036"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera un flag che specifica se il simbolo relativo a un indirizzo di codice.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp#  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  
