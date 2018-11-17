@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830951"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771530"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Aggiunta di un controller di menu a una barra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,15 +122,15 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
 1.  In TWTestCommandPackageGuids.cs, aggiungere gli ID comando per le tre voci di menu dopo l'ID di comando esistenti.  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  In TWTestCommand.cs, aggiungere il codice seguente all'inizio della classe TWTestCommand.  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  Nel costruttore TWTestCommand, dopo l'ultima chiamata al `AddCommand` metodo, aggiungere il codice per instradare gli eventi per ogni comando tramite i gestori di eventi stesso.  
@@ -145,7 +145,7 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -157,7 +157,7 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
 4.  Aggiungere un gestore eventi alla classe TWTestCommand per contrassegnare il comando selezionato come selezionato.  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -170,7 +170,7 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
 5.  Aggiungere un gestore eventi che consente di visualizzare una finestra di messaggio quando l'utente seleziona un comando nel controller di menu:  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
