@@ -413,7 +413,7 @@ items:
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Preparazione al debug: servizi Windows'
           href: debugging-preparation-windows-services.md
-      - name: Messaggi diagnostici nella finestra di output
+      - name: Inviare messaggi alla finestra di output
         href: diagnostic-messages-in-the-output-window.md
       - name: Asserzioni nel codice gestito
         href: assertions-in-managed-code.md
@@ -836,9 +836,9 @@ items:
   items:
   - name: Novità relative al debugger di Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561686"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770462"
