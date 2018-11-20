@@ -2,7 +2,7 @@
 title: Informazioni su come eseguire il debug di applicazioni multithreading
 description: Eseguire il debug usando le finestre Espressioni di controllo parallelo e stack in parallelo in Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 08/01/2018
+ms.date: 11/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936859"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948985"
 ---
-# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Iniziare il debug di applicazioni multithreading in Visual Studio
-Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di familiarizzare con le funzionalità per il debug di applicazioni multithreading.
+# <a name="get-started-debugging-multithreaded-applications"></a>Iniziare il debug di applicazioni multithreading
+Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Il completamento di questa esercitazione consentirà di familiarizzare con le funzionalità di Visual Studio per il debug di applicazioni multithreading.
 
 | | |
 |---------|---------|
 | ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sul debug con multithreading che illustra una procedura simile. |
 
-Altri argomenti forniscono informazioni aggiuntive sull'uso di altri strumenti di debug con multithreading:
+Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strumenti di debug con multithreading:
 
-- Per un argomento simile che mostra come usare il **posizione di Debug** sulla barra degli strumenti e il **thread** finestra, vedere [procedura dettagliata: Debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
+- Usare la **posizione di Debug** sulla barra degli strumenti e il **thread** finestra, vedere [procedura dettagliata: eseguire il Debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
 
-- Per un argomento simile con un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [questa procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md). Per suggerimenti di debug generali applicabili a tipi di applicazioni più a thread multipli, leggere questo argomento sia l'argomento collegato.
+- Per un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [questa procedura dettagliata: eseguire il Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md). Per suggerimenti di debug generali applicabili a tipi di applicazioni più a thread multipli, leggere tale argomento sia presente uno.
   
-Prima di iniziare questa esercitazione, è necessario un progetto di applicazione a thread multipli. Per creare tale progetto, attenersi alla procedura qui indicata.  
+È necessario innanzitutto un progetto di applicazione a thread multipli. L'esempio seguente.  
   
-#### <a name="to-create-the-multithreaded-app-project"></a>Per creare il progetto di app a thread multipli  
+## <a name="create-a-multithreaded-app-project"></a>Creare un progetto di app a thread multipli  
   
-1.  Nel **File** menu, scegliere **New** e quindi fare clic su **progetto**.  
+1.  Nel menu **File** selezionare **Nuovo** > **Progetto**.  
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Fare clic sul linguaggio di propria scelta: **Visual c#**, **Visual C++**, o **Visual Basic**.  
+2.  Selezionare una lingua: **Visual C#** , **Visual C++**, o **Visual Basic**.  
   
 3.  Sotto **Desktop di Windows**, scegliere **App Console**.  
   
-4.  Nel **nome** casella, digitare il nome MyThreadWalkthroughApp.  
+4.  Nel **nome** immettere MyThreadWalkthroughApp.  
   
-5.  Fare clic su **OK**.  
+5.  Scegliere **OK**.  
   
-     Verrà visualizzato un nuovo progetto console. Dopo aver creato il progetto, viene visualizzato un file di origine. A seconda del linguaggio scelto, il file di origine potrebbe essere chiamato Module1.vb, Program.cs o MyThreadWalkthroughApp. cpp.  
+     Verrà visualizzato un nuovo progetto console. Dopo aver creato il progetto, viene visualizzato un file di origine. A seconda del linguaggio scelto, il file di origine potrebbe essere chiamato *Program.cs*, *MyThreadWalkthroughApp. cpp*, o *Module1.vb*.  
   
-6.  Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio illustrato di seguito.
+6.  Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio appropriato riportato di seguito.
 
     ```csharp
     using System;
@@ -194,11 +194,11 @@ Prima di iniziare questa esercitazione, è necessario un progetto di applicazion
     End Class
     ```
   
-7.  Nel **File** menu, fare clic su **Salva tutto**.  
+7.  Nel **File** dal menu **Salva tutto**.  
   
-#### <a name="to-begin-the-tutorial"></a>Per iniziare l'esercitazione  
+## <a name="debug-the-multithreaded-app"></a>Il debug dell'app a thread multipli  
   
--   Nell'editor del codice sorgente, cercare il codice seguente: 
+1. Nell'editor del codice sorgente, cercare uno dei frammenti di codice seguenti: 
   
     ```csharp  
     Thread.Sleep(3000);  
@@ -214,174 +214,137 @@ Prima di iniziare questa esercitazione, è necessario un progetto di applicazion
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
-  
-#### <a name="to-start-debugging"></a>Per avviare il debug  
-  
+
 1. Fare clic sul margine a sinistra del `Thread.Sleep` o `this_thread::sleep_for` istruzione per inserire un nuovo punto di interruzione.  
   
-    Nella barra di navigazione sul lato sinistro dell'editor del codice sorgente, viene visualizzato un cerchio rosso. che indica l'impostazione di un punto di interruzione in tale posizione. 
+    Nella barra di navigazione, un cerchio rosso indica che un punto di interruzione è impostato in questa posizione. 
   
-2. Nel **Debug** menu, fare clic su **Avvia debug** (**F5**).  
+2. Nel **Debug** dal menu **Avvia debug** (**F5**).  
   
     Visual Studio compila la soluzione, l'app viene avviata l'esecuzione con il debugger collegato e quindi l'app si arresta nel punto di interruzione.  
   
-   > [!NOTE]
-   > Se si passa lo stato attivo alla finestra della console, fare clic nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per restituire lo stato attivo alla finestra [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Nell'editor del codice sorgente, individuare la riga che contiene il punto di interruzione.
   
-3. Nell'editor del codice sorgente, individuare la riga che contiene il punto di interruzione:  
-  
-   ```csharp  
-   Thread.Sleep(3000);  
-   ```  
-  
-   ```C++  
-   this_thread::sleep_for(chrono::seconds(3)); 
-   ```
+### <a name="ShowThreadsInSource"></a>Individuare il marcatore del thread  
 
-   ```VB
-   Thread.Sleep(3000)
-   ```    
-  
-#### <a name="ShowThreadsInSource"></a>Per individuare il marcatore del thread  
-
-1.  Nella barra degli strumenti di Debug, scegliere il **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1.  Nella barra degli strumenti di Debug, selezionare la **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Premere **F11** una volta per far avanzare la riga di un debugger del codice.
   
-3.  All'estrema sinistra della finestra, In questa riga, si noterà una *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che due fili. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
+3.  All'estrema sinistra della finestra, In questa riga, si noterà una *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che è simile a due thread doppini intrecciati. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
 
-    Si noti che un marcatore del thread potrebbe essere parzialmente nascosta da un punto di interruzione. 
+    Un marcatore del thread potrebbe essere parzialmente nascosta da un punto di interruzione. 
   
-4.  Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati. in cui è indicato il nome e il numero ID di ciascun thread interrotto. In questo caso, il nome è probabilmente `<noname>`. 
+4.  Posizionare il puntatore del mouse sul marcatore del thread. Un suggerimento dati verrà visualizzato il numero di ID thread e nome di ciascun thread interrotto. In questo caso, il nome è probabilmente `<noname>`. 
   
-5.  Fare clic sul marcatore del thread per visualizzare le opzioni disponibili nel menu di scelta rapida.
+5.  Selezionare il marcatore del thread per visualizzare le opzioni disponibili nel menu di scelta rapida.
     
-## <a name="ParallelStacks"></a>Consente di visualizzare il percorso di thread
+### <a name="ParallelStacks"></a>Visualizzare le sedi di thread
 
 Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazione thread e (per la programmazione basata su attività) Visualizza le attività e si possono visualizzare informazioni sullo stack di chiamate per ogni thread. In questa app, è possibile usare la visualizzazione dei thread.
 
-1. Aprire il **stack in parallelo** finestra scegliendo **Debug > Windows > stack in parallelo**. Dovrebbe essere simile al seguente (le informazioni esatte sarà diverse a seconda della posizione corrente di ogni thread, l'hardware e il linguaggio di programmazione).
+1. Aprire il **stack in parallelo** finestra scegliendo **Debug** > **Windows** > **stack in parallelo**. Dovrebbe essere simile al seguente. Le informazioni esatte variano a seconda della posizione corrente di ogni thread, l'hardware e il linguaggio di programmazione.
 
     ![Finestra Stack in parallelo](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
-    In questo esempio, da sinistra a destra è ottenere queste informazioni per il codice gestito:
+    In questo esempio, da sinistra a destra viene visualizzato queste informazioni per il codice gestito:
     
-    - Il thread principale (lato sinistro) è stato arrestato sul `Thread.Start` (il punto di interruzione è indicato dall'icona marcatore thread ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
+    - Il thread principale (lato sinistro) è stato arrestato sul `Thread.Start`, in cui il punto di interruzione è indicato dall'icona marcatore thread ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker").
     - Due thread di avere immesso il `ServerClass.InstanceMethod`, uno dei quali è il thread corrente (freccia gialla), mentre l'altro thread è stato arrestato `Thread.Sleep`.
-    - È inoltre avviare un nuovo thread (sulla destra) (stato arrestato sul `ThreadHelper.ThreadStart`).
+    - Un nuovo thread (sulla destra) sta avviando anche ma è stato arrestato sul `ThreadHelper.ThreadStart`.
 
 2.  Mouse nel **stack in parallelo** finestra per visualizzare le opzioni disponibili nel menu di scelta rapida.
 
     È possibile eseguire varie azioni da questi menu di scelta rapida, ma per questa esercitazione verrà illustrato più di questi dettagli nel **espressioni di controllo parallela** finestra (sezioni).
 
     > [!NOTE]
-    > Se si è più interessati a visualizzare un elenco consente di visualizzare informazioni su ogni thread, usare il **thread** finestra invece. Visualizzare [procedura dettagliata: Debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
+    > Per visualizzare un elenco con informazioni su ogni thread, usare il **thread** finestra invece. Visualizzare [procedura dettagliata: Debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
 
-## <a name="set-a-watch-on-a-variable"></a>Impostare un'espressione di controllo in una variabile
+### <a name="set-a-watch-on-a-variable"></a>Impostare un'espressione di controllo in una variabile
 
-1. Aprire il **espressioni di controllo parallela** finestra scegliendo **Debug > Windows > espressioni di controllo parallela > parallele espressioni di controllo 1**.
+1. Aprire il **espressioni di controllo parallela** finestra selezionando **Debug** > **Windows** > **espressioni di controllo parallela**  >  **Espressioni di controllo 1 in parallelo**.
 
-2. Fare clic nella cella in cui vengono visualizzate le `<Add Watch>` testo o la cella di intestazione vuota nella colonna 4 °, tipo `data`, e premere INVIO.
+2. Selezionare la cella in cui vengono visualizzate le `<Add Watch>` testo (o la cella di intestazione vuota nella colonna 4 °) e immettere `data`.
 
     Nella finestra vengono visualizzati i valori per la variabile di dati per ogni thread.
 
-3. Fare nuovamente clic nella cella in cui vengono visualizzate le `<Add Watch>` testo (o la cella di intestazione vuota nella colonna 5), tipo `count`, quindi premere INVIO.
+3. Selezionare la cella in cui vengono visualizzate le `<Add Watch>` testo (o la cella di intestazione vuota nella colonna 5) e immettere `count`.
 
-    Nella finestra vengono visualizzati i valori per la variabile di conteggio per ogni thread. (Se non viene visualizzato ancora così tante informazioni, provare a premere F11 altre volte per passare l'esecuzione dei thread nel debugger.)
+    I valori per il `count` variabile per ogni thread vengono visualizzati nella finestra. Se non viene visualizzato ancora così tante informazioni, provare a premendo **F11** alcune volte per anticipare l'esecuzione dei thread nel debugger.
 
     ![Finestra Espressioni di controllo in parallelo](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
-4. Fare doppio clic su una delle righe della finestra per visualizzare le opzioni disponibili.
+4. Fare clic su una delle righe della finestra per visualizzare le opzioni disponibili.
 
-## <a name="flagging-and-unflagging-threads"></a>Impostazione e rimozione dei flag dei thread  
-È possibile contrassegnare i thread che si desidera prestare particolare attenzione. Contrassegnare i thread è un buon metodo per tenere traccia dei thread importanti e per ignorare i thread che non è rilevante.  
+### <a name="flag-and-unflag-threads"></a>Impostare e rimuovere i flag dei thread  
+È possibile contrassegnare i thread per tenere traccia dei thread importanti e ignorare gli altri thread.  
   
-#### <a name="to-flag-threads"></a>Per impostare i flag dei thread  
+1. Nel **espressioni di controllo parallela** finestra, tenendo premuto il tasto le **MAIUSC** , selezionare più righe.
 
-1. Nel **espressioni di controllo parallela** finestra, tenere premuto il tasto MAIUSC e selezionare più righe.
+2. Fare doppio clic e selezionare **Flag**.
 
-2. Pulsante destro del mouse e scegliere **Flag**.
-
-    A questo punto, tutti i thread selezionati vengono contrassegnati. A questo punto, è possibile filtrare per mostrare solo thread con flag.
+    Tutti i thread selezionati vengono contrassegnati. A questo punto, è possibile filtrare per mostrare solo thread con flag.
   
-3.  Nel **espressioni di controllo parallela** finestra, trovare il **Mostra solo thread con flag** pulsante ![Mostra thread con flag](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
+3.  Nel **espressioni di controllo parallela** finestra, seleziona la **Mostra solo thread con flag** pulsante ![Mostra thread con flag](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
   
-4.  Scegliere il **Mostra solo thread con flag** pulsante.  
-  
-    Nell'elenco viene visualizzato ora solo il thread con flag.
+    Solo i thread con flag visualizzato nell'elenco.
 
     > [!TIP]
-    > Quando si hanno alcuni thread con flag, è possibile fare doppio clic su una riga di codice nell'editor del codice e scegliere **eseguire i thread con flag fino al cursore** (assicurarsi che si sceglie di codice che tutti i thread con flag raggiungeranno). Questo verrà messo in pausa thread nella riga selezionata di codice, rendendo più semplice controllare l'ordine di esecuzione da [blocco e sblocco dei thread](#bkmk_freeze).
+    > Dopo che è stato applicato un contrassegno alcuni thread, è possibile fare doppio clic su una riga di codice nell'editor del codice e scegliere **eseguire i thread con flag fino al cursore**. Assicurarsi di scegliere raggiungerà codice che tutti i thread con flag. Visual Studio verrà messo in pausa thread nella riga selezionata di codice, rendendo più semplice controllare l'ordine di esecuzione da [blocco e sblocco dei thread](#bkmk_freeze).
 
-5.  Scegliere il **Mostra solo thread con flag** pulsante per tornare alla **Mostra tutti i thread** modalità.
+4.  Selezionare il **Mostra solo thread con flag** pulsante nuovo per passare di nuovo alla **Mostra tutti i thread** modalità.
     
-#### <a name="to-unflag-threads"></a>Per rimuovere i flag dei thread
+5. Per rimuovere i flag dei thread, fare doppio clic su uno o più thread con flag nel **espressioni di controllo parallela** finestra e selezionare **Rimuovi flag**.
 
-Per rimuovere i flag dei thread, è possibile fare doppio clic su uno o più thread con flag nel **espressioni di controllo parallela** finestra e scegliere **Rimuovi flag**.
-
-## <a name="bkmk_freeze"></a> Blocco e sblocco dell'esecuzione del thread 
+### <a name="bkmk_freeze"></a> Bloccare e sbloccare l'esecuzione di thread 
 
 > [!TIP]
 > È possibile bloccare e sbloccare (sospendere e riprendere) i thread per controllare l'ordine in cui i thread di eseguono operazioni. Ciò consente di risolvere i problemi di concorrenza, ad esempio i deadlock e race condition.
-  
-#### <a name="to-freeze-and-unfreeze-threads"></a>Per bloccare e sbloccare i thread  
-  
+   
 1.  Nel **espressioni di controllo parallela** finestra, con tutte le righe selezionate, pulsante destro del mouse e selezionare **Freeze**.
 
-    Nella seconda colonna, Sospendi a questo punto viene visualizzata un'icona per ogni riga. L'icona di sospensione indica che il thread è bloccato.
+    Nella seconda colonna, viene visualizzata un'icona di sospensione per ogni riga. L'icona di sospensione indica che il thread è bloccato.
 
-2.  Deselezionare le righe, fare clic su una sola riga.
+2.  Deselezionare tutte le altre righe selezionando una sola riga.
 
 3.  Fare doppio clic su una riga e selezionare **Sblocca**.
 
     L'icona di sospensione viene chiuso in questa riga, che indica che il thread non è più bloccato.
 
-4.  Passare all'editor del codice e fare clic su **F11**. Viene eseguito solo il thread non bloccato.
+4.  Passare all'editor di codice e premere **F11**. Viene eseguito solo il thread non bloccato.
 
-    L'app può anche creare un'istanza di alcuni nuovi thread. Si noti che tutti i nuovi thread senza flag e non sono bloccati.
+    L'app può anche creare un'istanza di alcuni nuovi thread. Tutti i nuovi thread sono flag e non sono bloccati.
 
-## <a name="bkmk_follow_a_thread"></a> Seguire un singolo Thread usando i punti di interruzione condizionale
+### <a name="bkmk_follow_a_thread"></a> Seguire un solo thread con punti di interruzione condizionali
 
-In alcuni casi, può essere utile seguire l'esecuzione di un singolo thread nel debugger. A tale scopo, è possibile bloccare i thread che non si sono interessati, ma in alcuni scenari è preferibile seguire un solo thread senza bloccare altri thread (per riprodurre il bug di un particolare, ad esempio). Per eseguire un thread senza bloccare altri thread, è necessario evitare l'interruzione del codice, ad eccezione nel thread in cui si è interessati. È possibile farlo impostando un [punto di interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+Può essere utile seguire l'esecuzione di un singolo thread nel debugger. Un modo per eseguire questa operazione è bloccando i thread che non si sono interessati. In alcuni scenari potrebbe essere necessario seguire un solo thread senza bloccare altri thread, ad esempio per riprodurre un bug specifico. Per eseguire un thread senza bloccare altri thread, è necessario evitare l'interruzione del codice, ad eccezione nel thread in cui si è interessati. È possibile farlo impostando un [punto di interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
-È possibile impostare i punti di interruzione in condizioni diverse, ad esempio il nome del thread o l'ID del thread. Un altro metodo che può essere utile consiste nell'impostare la condizione su dati che già conosci sarà univoca per ogni thread. Si tratta di uno scenario di debug comune, in cui è più interessati a un valore di dati specifico rispetto in qualsiasi thread specifico.
+È possibile impostare i punti di interruzione in condizioni diverse, ad esempio il nome del thread o l'ID del thread. Potrebbe essere utile consiste nell'impostare la condizione su dati che è univoco per ogni thread. Si tratta di uno scenario di debug comune, in cui è più interessati a un valore di dati specifico rispetto in qualsiasi thread specifico.
 
-#### <a name="to-follow-a-single-thread"></a>Per seguire un singolo thread
+1. Il pulsante destro del punto di interruzione creato in precedenza e selezionare **condizioni**.
 
-1. Il pulsante destro del punto di interruzione creato in precedenza e scegliere **condizioni**.
-
-2. Nel **impostazioni punto di interruzione** (finestra), tipo `data == 5` per l'espressione condizionale.
+2. Nel **impostazioni punto di interruzione** finestra immettere `data == 5` per l'espressione condizionale.
 
     ![Punto di interruzione condizionale](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > Se è più interessati a un thread specifico, usare un nome del thread o un ID di thread per la condizione. Per eseguire questa operazione **impostazioni punto di interruzione** finestra, seleziona **filtro** anziché **espressione condizionale**e seguire i suggerimenti di filtro. È possibile denominare i thread nel codice dell'app (perché gli ID thread cambiare al riavvio del debugger).
+    > Se è più interessati a un thread specifico, usare un nome del thread o un ID di thread per la condizione. Per eseguire questa operazione **impostazioni punto di interruzione** finestra, seleziona **filtro** anziché **espressione condizionale**e seguire i suggerimenti di filtro. È possibile denominare i thread nel codice dell'app, man mano che gli ID thread cambiano quando si riavvia il debugger.
 
 3. Chiudi il **impostazioni punto di interruzione** finestra.
 
-4. Fare clic su di riavvio ![App riavviare](../debugger/media/dbg-tour-restart.png "RestartApp") per riavviare la sessione di debug.
+4. Selezionare il riavvio ![App riavviare](../debugger/media/dbg-tour-restart.png "RestartApp") per riavviare la sessione di debug.
 
-    Interromperà nel codice sul thread per il quale la variabile di dati è 5. Cercare la freccia gialla (contesto del debugger corrente) **espressioni di controllo parallela** finestra per verificare che.
+    Esecuzione verrà interrotta nel codice sul thread in cui valore della variabile di dati è 5. Nel **espressioni di controllo parallela** finestra, cercare la freccia gialla che indica il contesto di debug corrente.
 
-5. A questo punto, è possibile saltare il codice (F10) e l'istruzione nel codice (F11) e seguire l'esecuzione del thread singolo.
+5. A questo punto, è possibile saltare il codice (**F10**) e istruzioni nel codice (**F11**) e seguire l'esecuzione del thread singolo.
 
-    Finché la condizione di punto di interruzione è univoca per il thread e il debugger non raggiungere qualsiasi altro punto di interruzione in altri thread (potrebbe essere necessario disabilitare le), è possibile saltare il codice e l'istruzione nel codice senza dover passare agli altri thread.
+    Purché la condizione di punto di interruzione è univoca per il thread e il debugger non raggiungere qualsiasi altro punto di interruzione in altri thread (potrebbe essere necessario disabilitare le), è possibile saltare il codice e l'istruzione nel codice senza dover passare agli altri thread.
 
     > [!NOTE]
     > Quando si arriva il debugger, verranno eseguiti tutti i thread. Tuttavia, il debugger non interrompe nel codice in altri thread, a meno che uno degli altri thread raggiunge un punto di interruzione. 
   
-## <a name="more-about-the-multithreaded-debugging-windows"></a>Informazioni sulle finestre di debug multithread 
-
-#### <a name="to-switch-to-another-thread"></a>Per passare a un altro thread 
-
-- Per passare a un altro thread, vedere [procedura: passare a un altro Thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
-
-#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Per altre informazioni sulle finestre Stack paralleli ed espressioni di controllo parallela  
-  
-- Vedere [procedura: usare la finestra Stack paralleli](../debugger/using-the-parallel-stacks-window.md) 
-
-- Vedere [procedura: utilizzare la finestra Espressioni di controllo parallela](../debugger/how-to-use-the-parallel-watch-window.md) 
-  
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+[Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
+[Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Procedura: usare la finestra Stack paralleli](../debugger/using-the-parallel-stacks-window.md)  
+[Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)  

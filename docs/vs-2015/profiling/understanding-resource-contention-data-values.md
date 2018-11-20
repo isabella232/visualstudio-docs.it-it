@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2955790cdd0f322c1a1df75b6586b7e08ce03367
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 64bad925b7d0ac6170a4ac581fc327450aa2dd04
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727366"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948114"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Informazioni sui valori dei dati su conflitti di risorse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
