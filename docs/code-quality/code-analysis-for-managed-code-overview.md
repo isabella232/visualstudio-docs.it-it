@@ -1,5 +1,5 @@
 ---
-title: Analisi del codice per il codice gestito in Visual Studio
+title: Analisi del codice statico per il codice gestito
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320815"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948426"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Panoramica dell'analisi codice per il codice gestito
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi codice statico per il codice gestito in Visual Studio
 
-Visual Studio 2017 consente di analizzare il codice gestito in due modi: con legacy *FxCop* analisi statica di assembly gestiti e con .NET Compiler Platform *analizzatori*. Questo argomento illustra l'analisi statica del codice di FxCop. Per altre informazioni su analisi del codice tramite gli analizzatori .NET Compiler Platform, vedere [analizzatori di panoramica di Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 è possibile eseguire analisi del codice del codice gestito in due modi: con *FxCop* analisi statica di assembly gestiti e con le altre modern *analizzatori di Roslyn*. Questo argomento illustra l'analisi statica del codice di FxCop. Per altre informazioni su analisi del codice tramite gli analizzatori di codice, vedere [analizzatori di panoramica di Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 L'analisi del codice gestito analizza gli assembly gestiti e fornisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.
 
@@ -75,7 +75,7 @@ A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione
 
 ## <a name="team-build-integration"></a>Integrazione di team build
 
-È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index?view=vsts).
+È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vedere anche
 

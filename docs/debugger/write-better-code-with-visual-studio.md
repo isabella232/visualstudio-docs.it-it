@@ -1,6 +1,6 @@
 ---
 title: Consentire a Guida di Visual Studio si scrive C# codice con meno bug
-description: Comprendere l'uso del debugger per il debug dell'app
+description: Informazioni su come scrivere codice migliore con meno bug
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561830"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948959"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Scrivere meglio C# del codice con Visual Studio
 
@@ -33,7 +33,7 @@ In questo articolo si parla sfruttando l'IDE per rendere più produttiva session
 
 * Quando usare il debugger
 
-Per dimostrare queste attività, abbiamo illustrato alcuni dei tipi più comuni degli errori e i bug che incontrano quando si tenta di eseguire il debug delle app. Anche se il codice di esempio è C#, le informazioni concettuali sono applicabili a livello generale a C++, Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#.
+Per dimostrare queste attività, abbiamo illustrato alcuni dei tipi più comuni degli errori e i bug che incontrano quando si tenta di eseguire il debug delle app. Anche se il codice di esempio è C#, le informazioni concettuali sono applicabili a livello generale a C++, Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in linguaggio C#.
 
 ## <a name="follow-along-using-the-sample-app"></a>Seguire la procedura usando l'app di esempio
 
@@ -42,7 +42,7 @@ Se si preferisce, è possibile creare un'app console .NET Core o .NET Framework 
 Per creare l'app, aprire Visual Studio e scegli **File > Nuovo progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**. Digitare un nome come **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto. Incollare il [esempi di codice](#sample-code) al progetto *Program.cs* file.
 
 > [!NOTE]
-> Se non viene visualizzato il **applicazione Console** modello di progetto, fare clic sul **aperto Visual Studio Installer** collegamento nel riquadro sinistro della finestra di **nuovo progetto** nella finestra di dialogo. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **sviluppo desktop .NET** oppure **lo sviluppo multipiattaforma .NET Core** carico di lavoro, quindi scegliere **Modify**.
+> Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **sviluppo desktop .NET** oppure **lo sviluppo multipiattaforma .NET Core** carico di lavoro, quindi scegliere **Modify**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Trovare le linee a zigzag rosse e verdi.
 
@@ -166,13 +166,13 @@ Ecco un paio di suggerimenti importanti per la gestione delle eccezioni:
     }
     ```
 
-* Per i metodi familiari incluse nell'app, vedere la documentazione per visualizzare le eccezioni che il metodo è potrebbe generare. Può trattarsi di informazioni critiche per la gestione degli errori corretta e di debug dell'app.
+* Per funzioni non note da includere nell'app, expecially quelli che interagiscono con i dati esterni (ad esempio, una richiesta web), consultare la documentazione per visualizzare le eccezioni che la funzione è potrebbe generare. Può trattarsi di informazioni critiche per la gestione degli errori corretta e di debug dell'app.
 
 Per le app di esempio, correggere la `SerializationException` nella `GetJsonData` metodo modificando `4o` a `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Chiarire le proprie intenzioni codice dall'uso di assert
 
-Fare clic sui **riavviare** ![riavviare App](../debugger/media/dbg-tour-restart.png "RestartApp") pulsante sulla barra degli strumenti Debug (**Ctrl** + **MAIUSC**   +  **F5**). L'app verrà riavviato in meno passaggi. Verrà visualizzato l'output seguente nella finestra della console.
+Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**). L'app verrà riavviato in meno passaggi. Verrà visualizzato l'output seguente nella finestra della console.
 
 ![Valore null nell'output](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ Aggiungendo `assert` istruzioni simile alle funzioni durante il processo di svil
 
 Specificando finalità in questo modo, si applicano i requisiti. Si tratta di un metodo semplice e pratico che è possibile usare per i bug di superficie durante lo sviluppo. (`assert` istruzioni possono essere usate anche come l'elemento principale di unit test.)
 
-Fare clic sui **riavviare** ![riavviare App](../debugger/media/dbg-tour-restart.png "RestartApp") pulsante sulla barra degli strumenti Debug (**Ctrl** + **MAIUSC**   +  **F5**).
+Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
 
 > [!NOTE]
 > Il `assert` codice non è attivo solo in una build di Debug.
@@ -217,7 +217,10 @@ Quando si riavvia, il debugger si sofferma sul `assert` istruzione, perché l'es
 
 ![L'asserzione viene risolta in false](../debugger/media/write-better-code-using-assert.png)
 
-Il `assert` errore indica che si verifica un problema che devi analizzare. `assert` può coprire molti scenari in cui non viene necessariamente visualizzata un'eccezione. In questo esempio, l'utente non verrà restituita un'eccezione (in altri scenari una `NullReferenceException` possono verificarsi) e una `null` valore viene aggiunto come `firstname` nel database. Ciò può causare problemi in un secondo momento (ad esempio vedere nell'output della console) e potrebbe essere difficile eseguire il debug.
+Il `assert` errore indica che si verifica un problema che devi analizzare. `assert` può coprire molti scenari in cui non viene necessariamente visualizzata un'eccezione. In questo esempio, l'utente non verrà restituita un'eccezione e un `null` valore viene aggiunto come `firstname` nell'elenco di record. Ciò può causare problemi in un secondo momento (ad esempio vedere nell'output della console) e potrebbe essere difficile eseguire il debug.
+
+> [!NOTE]
+> Negli scenari in cui si chiama un metodo per la `null` valore, un `NullReferenceException` risultati. In genere si vuole evitare di usare un `try/catch` blocca per un'eccezione, vale a dire, un'eccezione che non è associata alla funzione di libreria specifico. Puoi generare qualsiasi oggetto un `NullReferenceException`. Se non si è certi, consultare la documentazione per la funzione della libreria.
 
 Durante il processo di debug, è consigliabile mantenere una determinata `assert` istruzione fino a quando non si conosce è necessario sostituirlo con una correzione rapida per il codice effettivo. Si supponga che si decide che l'utente potrebbe incontrare l'eccezione in una build di rilascio dell'app. In tal caso, è necessario effettuare il refactoring di codice per assicurarsi che l'app non generare un'eccezione irreversibile o comportare un altro errore. Pertanto, per correggere questo codice, sostituire il codice seguente:
 
@@ -276,7 +279,7 @@ I bug di un altro tipo includono codice inefficiente che fa sì che l'app a esec
 
 ## <a name="sample-code"></a> Codice di esempio
 
-Il codice seguente contiene alcuni bug che è possibile correggere mediante l'IDE di Visual Studio. In questo caso l'app è una semplice app che simula recupero dei dati JSON da un'operazione, la deserializzazione di dati a un oggetto e l'aggiornamento di un database in memoria semplice con i nuovi dati.
+Il codice seguente contiene alcuni bug che è possibile correggere mediante l'IDE di Visual Studio. In questo caso l'app è una semplice app che simula recupero dei dati JSON da un'operazione, la deserializzazione di dati a un oggetto e l'aggiornamento di un elenco semplice con i nuovi dati.
 
 ```csharp
 using System;

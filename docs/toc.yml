@@ -607,9 +607,11 @@ items:
         href: ide/how-to-view-save-and-configure-build-log-files.md
       - name: Escludere progetti da una compilazione
         href: ide/how-to-exclude-projects-from-a-build.md
-      - name: Non visualizzare avvisi del compilatore
+      - name: Non visualizzare gli avvisi del compilatore
         href: ide/how-to-suppress-compiler-warnings.md
-    - name: Configurazioni di compilazione
+    - name: Azioni di compilazione
+      href: ide/build-actions.md
+    - name: Configurazioni della build
       href: ide/understanding-build-configurations.md
       items:
       - name: Creare e modificare le configurazioni
@@ -621,9 +623,9 @@ items:
     - name: Piattaforme di compilazione
       href: ide/understanding-build-platforms.md
       items:
-      - name: Configurare progetti per le piattaforme di destinazione
+      - name: Configurare progetti per una piattaforma di destinazione
         href: ide/how-to-configure-projects-to-target-platforms.md
-      - name: Configurare progetti per piattaforme di destinazione multiple
+      - name: Configurare progetti per più piattaforme di destinazione
         href: ide/how-to-configure-projects-to-target-multiple-platforms.md
     - name: MSBuild...
       href: msbuild/msbuild.md
@@ -633,7 +635,7 @@ items:
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: Specificare gli eventi di compilazione (C#)
       href: ide/how-to-specify-build-events-csharp.md
-    - name: Configurazione degli avvisi in Visual Basic
+    - name: Configurare gli avvisi in Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
     - name: 'Procedura dettagliata: Creare un ambiente di compilazione con più computer'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
@@ -1119,9 +1121,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Comunicazioni con Microsoft
     href: ide/talk-to-us.md
-ms.openlocfilehash: 02c451e03d36baf818dc504c79ee5576a91c9319
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 1347181f66b898b7fe862357a6a52c3552e2cd9c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826830"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001321"
