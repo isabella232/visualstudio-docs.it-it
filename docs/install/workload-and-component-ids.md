@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,16 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 1538a3c93088cf02bcfb040cfa8a349ef7756eb5
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 96332b767f2bc44561358880c392cb6d96db297b
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028910"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607471"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID dei carichi di lavoro e dei componenti di Visual Studio 2017
 
-**Aggiornato per la [versione 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Aggiornato per la [versione 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Fare clic sui nomi delle edizioni riportati nella tabella seguente per visualizzare gli ID dei carichi di lavoro e dei componenti disponibili necessari per installare Visual Studio tramite la riga di comando o per specificarli come dipendenza in un manifesto VSIX.
 

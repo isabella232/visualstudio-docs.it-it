@@ -9,16 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064545"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348696"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
 È possibile personalizzare Visual Studio in vari modi per supportare in modo ottimale stili e requisiti specifici per lo sviluppo. Molte impostazioni consentono di effettuare il roaming tra più istanze di Visual Studio&mdash;vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). Questo argomento descrive brevemente alcune personalizzazioni diverse e indica dove è possibile trovare altre informazioni.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Personalizzare l'IDE di Visual Studio per Mac](/visualstudio/mac/customizing-the-ide).
 
 ## <a name="general-environment-options"></a>Opzioni generali dell'ambiente
 
@@ -61,3 +64,4 @@ Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Pe
 
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
 - [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Personalizzare l'IDE di Visual Studio per Mac](/visualstudio/mac/customizing-the-ide)

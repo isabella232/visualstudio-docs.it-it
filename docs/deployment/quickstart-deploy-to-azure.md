@@ -14,47 +14,47 @@ ms.workload:
 - azure
 ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
 ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/30/2018
 ms.locfileid: "39341690"
 ---
-# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Pubblicare un'app Web nel servizio App di Azure con Visual Studio
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio
 
-È possibile usare la **pubblica** dello strumento per la pubblicazione di App ASP.NET, ASP.NET Core, Node. js e .NET Core in servizio App di Azure o il servizio App di Azure Linux (con contenitori). Per le app di Python, seguire i passaggi sullo [Python - pubblicazione in servizio App di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+È possibile usare lo strumento **Pubblica** per la pubblicazione di app ASP.NET, ASP.NET Core, Node.js e .NET Core nel Servizio app di Azure o nel Servizio app di Azure per Linux (con contenitori). Per le app Python seguire i passaggi in [Python - Eseguire la pubblicazione nel servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
 ## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 
-1. In Esplora soluzioni fare clic sul progetto e scegliere **Publish** (o utilizzare il **compilare** > **pubblica** voce di menu).
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
 
-    ![Il comando Pubblica nel menu di scelta rapida progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere pubblica")
+    ![Il comando Pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere Pubblica")
 
-1. Se sono stati configurati tutti i profili di pubblicazione, il **Publish** viene visualizzato il riquadro, in cui selezionare case **Crea nuovo profilo**.
+1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. In questo caso, selezionare **Crea nuovo profilo**.
 
-1. Nel **selezionare una destinazione di pubblicazione** finestra di dialogo, scegliere **servizio App**.
+1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** fare clic su **Servizio app**.
 
-    ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-azure.png "scegliere servizio App di Azure")
+    ![Scegliere Servizio app di Azure](../deployment/media/quickstart-publish-azure.png "Scegliere Servizio app di Azure")
 
-1. Selezionare **Pubblica**. Il **Crea servizio App** verrà visualizzata la finestra di dialogo. Accedere con è account Azure, se necessario, quindi le impostazioni predefinite del servizio app popolano i campi.
+1. Selezionare **Pubblica**. Viene visualizzata la finestra di dialogo **Crea servizio app**. Accedere con l'account Azure, se necessario. Le impostazioni predefinite del Servizio app popolano i campi.
 
-    ![Crea servizio App](../deployment/media/quickstart-publish-settings-app-service.png "Crea servizio App di Azure")
+    ![Crea Servizio app](../deployment/media/quickstart-publish-settings-app-service.png "Crea Servizio app di Azure")
 
-1. Scegliere **Crea**. Visual Studio distribuisce l'app in servizio App di Azure e carica l'app web nel browser. Le proprietà del progetto **pubblica** riquadro viene visualizzato l'URL del sito e altri dettagli.
+1. Scegliere **Crea**. Visual Studio distribuisce l'app al Servizio app di Azure e l'app Web viene caricata nel browser. Nel riquadro **Pubblica** delle proprietà del progetto viene visualizzato l'URL del sito con altri dettagli.
 
-    ![Riquadro delle proprietà con il riepilogo un profilo di pubblicazione](../deployment/media/quickstart-publish-app-service-summary.png)
+    ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="clean-up-resources"></a>Pulire le risorse
 
-Creato nei passaggi precedenti, le risorse di Azure in un gruppo di risorse. Se non si prevede di queste risorse sono necessarie in futuro, è possibile eliminarle eliminando il gruppo di risorse.
-Nel menu a sinistra nel portale di Azure, selezionare **gruppi di risorse** e quindi selezionare **myResourceGroup**.
-Nella pagina di gruppo di risorse, assicurarsi che le risorse elencate siano quelle da eliminare.
-Selezionare **eliminare**, digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
+Nei passaggi precedenti, sono state create delle risorse di Azure in un gruppo di risorse. Se non si prevede di usare queste in futuro, è possibile eliminarle eliminando il gruppo di risorse.
+Nel menu a sinistra nel portale di Azure selezionare **Gruppi di risorse** e quindi selezionare **myResourceGroup**.
+Nella pagina del gruppo di risorse assicurarsi che le risorse elencate siano quelle da eliminare.
+Selezionare **Elimina**, digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa Guida introduttiva è stato descritto come usare Visual Studio per creare un profilo di pubblicazione per la distribuzione in Azure. È anche possibile configurare una pubblicazione mediante l'importazione profilo impostazioni di pubblicazione da servizio App di Azure.
+In questa guida introduttiva è stato descritto come usare Visual Studio per creare un profilo di pubblicazione per la distribuzione in Azure. È anche possibile configurare un profilo di pubblicazione importando le impostazioni di pubblicazione da Servizio app di Azure.
 
 > [!div class="nextstepaction"]
 > [Importare impostazioni di pubblicazione e distribuzione in Azure](tutorial-import-publish-settings-azure.md)

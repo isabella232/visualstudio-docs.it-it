@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542494"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348337"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
 È possibile personalizzare e ottimizzare l'esperienza di sviluppo di Visual Studio se si imposta l'account di personalizzazione eseguendo l'accesso all'IDE.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Perché accedere a Visual Studio?
 
@@ -68,3 +71,5 @@ Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assi
 
 * [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+* [Accesso (Visual Studio per Mac)](/visualstudio/mac/signing-in)
+* [Attivazione (Visual Studio per Mac)](/visualstudio/mac/activation)

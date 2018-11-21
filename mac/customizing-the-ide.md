@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 9f33892dc4caef726763c6ab7513ac1e44e7e47e
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223944"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349611"
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
@@ -22,7 +22,7 @@ ms.locfileid: "43223944"
 
 Per cambiare tema in Visual Studio per Mac, scegliere **Visual Studio > Preferenze > Ambiente > Stile di visualizzazione** e selezionare il tema desiderato nell'elenco a discesa **Tema dell'interfaccia utente**, come illustrato nell'immagine seguente:
 
- ![Selezione del tema scuro](media/customizing-the-ide-image7b.png)
+![Selezione del tema scuro](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Localizzazione
 
@@ -45,29 +45,27 @@ Visual Studio per Mac è disponibile nelle 14 lingue seguenti ed è quindi acces
 
 Per cambiare la lingua visualizzata da Visual Studio per Mac, scegliere **Visual Studio > Preferenze > Ambiente > Stile di visualizzazione** e selezionare la lingua desiderata nell'elenco a discesa **Lingua dell'interfaccia utente**, come illustrato nell'immagine seguente:
 
-
 ![Selezione lingua](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Informazioni sull'autore
 
 Il pannello Informazioni sull'autore consente all'utente di aggiungere informazioni personali pertinenti manualmente, ad esempio il nome, l'indirizzo di posta elettronica, il titolare del copyright per il lavoro, la società e il marchio:
 
- ![Sezione di modifica delle informazioni sull'autore](media/customizing-the-ide-image9a.png)
+![Sezione di modifica delle informazioni sull'autore](media/customizing-the-ide-image9a.png)
 
 Queste informazioni vengono usate per popolare le intestazioni standard dei file, ad esempio le licenze, che è possibile aggiungere ai nuovi file:
 
- ![Opzioni per le intestazioni standard](media/customizing-the-ide-image8a.png)
-
+![Opzioni per le intestazioni standard](media/customizing-the-ide-image8a.png)
 
 I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono popolati, Visual Studio per Mac chiede di farlo quando si tenta di usare il controllo della versione.
 
 ## <a name="key-bindings"></a>Tasti di scelta rapida
 
-I tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo da rendere più efficienti gli spostamenti all'interno di Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (Windows), ReSharper, Visual Studio Code e Xcode.
+I tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo da rendere più efficienti gli spostamenti all'interno di Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (in Windows), ReSharper, Visual Studio Code e Xcode.
 
 Per impostare tasti di scelta rapida, passare a **Visual Studio > Preferenze > Ambiente > Tasti di scelta rapida**, come illustrato nell'immagine seguente:
 
- ![Impostare tasti di scelta rapida](media/customizing-the-ide-image10a.png)
+![Impostare tasti di scelta rapida](media/customizing-the-ide-image10a.png)
 
 Da qui è possibile cercare combinazioni di tasti di scelta rapida, visualizzare tasti di scelta rapida in conflitto, aggiungere nuovi tasti di scelta rapida e modificare quelli esistenti.
 
@@ -85,7 +83,7 @@ Quando si apre una nuova soluzione o un nuovo file in Visual Studio per Mac, è 
 
 Visual Studio per Mac offre alcuni riquadri contenenti informazioni e strumenti di lavoro e di esplorazione aggiuntivi. Per accedere a questi riquadri, scegliere **Vista > Riquadri** e selezionare il riquadro da aggiungere:
 
- ![Selezionare un nuovo riquadro](media/customizing-the-ide-image3a.png)
+![Selezionare un nuovo riquadro](media/customizing-the-ide-image3a.png)
 
 È anche possibile aprire i riquadri automaticamente tramite vari comandi, ad esempio **Cerca nei file** (Maiusc + Cmd + F), che apre un riquadro scollegato di risultati della ricerca.
 
@@ -99,7 +97,6 @@ I riquadri usati di frequente possono anche essere completamente scollegati dall
 
 I riquadri nascosti automaticamente sono ancorati ai lati dell'area di lavoro. Sono quindi facilmente accessibili quando necessario. Quando si posiziona il mouse su un riquadro nascosto, questo viene visualizzato nuovamente e viene nascosto quando lo stato attivo viene spostato altrove tramite il mouse o la tastiera.
 
-
 ### <a name="organizing-layouts"></a>Organizzazione dei layout
 
 I riquadri costantemente visualizzati variano a seconda del contesto. Se si usa la finestra di progettazione visiva, ad esempio, i riquadri casella degli strumenti e griglia delle proprietà sono i più importanti, mentre durante il debug i riquadri del debugger sono utili per visualizzare lo stack e le variabili locali.
@@ -109,7 +106,6 @@ Lo stato dei riquadri aperti è rappresentato da un *layout*. È possibile passa
 ![Selezione di nuovi layout](media/customizing-the-ide-image6b.png)
 
 C'è sempre un layout attivo e qualsiasi modifica eseguita in un layout, ad esempio l'aggiunta o il riposizionamento di un riquadro, modifica solo il layout attivo. Quando si esce da Visual Studio per Mac, le modifiche apportate non vengono salvate.
-
 
 È tuttavia possibile creare un nuovo layout tramite la voce di menu **Vista > Salva Layout**. Il layout corrente verrà aggiunto al menu e sarà possibile selezionarlo in qualsiasi momento:
 
@@ -121,12 +117,16 @@ Visual Studio per Mac consente di affiancare diversi editor di testo aperti o di
 
 È possibile abilitare la modalità a due colonne tramite la voce di menu Vista selezionando **Vista > Colonne editor > Due colonne** o trascinando una scheda dell'editor su uno dei bordi dell'area dell'editor:
 
- ![Modalità due colonne affiancate](media/customizing-the-ide-sbs.png)
+![Modalità due colonne affiancate](media/customizing-the-ide-sbs.png)
 
 Le schede dell'editor possono essere trascinate fuori dall'area del documento per creare una finestra dell'editor mobile. Anche la finestra mobile supporta editor affiancati e può contenere diverse schede dell'editor:
 
- ![Creare una nuova finestra](media/customizing-the-ide-sbs1.png)
+![Creare una nuova finestra](media/customizing-the-ide-sbs1.png)
 
- ![Due colonne affiancate con schede aggiuntive](media/customizing-the-ide-sbs2.png)
+![Due colonne affiancate con schede aggiuntive](media/customizing-the-ide-sbs2.png)
 
 Per tornare a un solo editor aperto, selezionare **Vista > Colonne editor > Una colonna**.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Personalizzare l'IDE di Visual Studio (in Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

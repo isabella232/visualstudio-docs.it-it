@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 244312646de83e935dfa84cde4a9b793eb01a76f
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835904"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349715"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -23,6 +23,9 @@ In Visual Studio 2017 è possibile aggiungere un file [EditorConfig](http://edit
 Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e molti ambienti IDE, tra cui Visual Studio. Si tratta di un componente portatile che viene trasferito con il codice ed è in grado di imporre stili di codice anche all'esterno di Visual Studio.
 
 Quando si aggiunge un file EditorConfig al progetto in Visual Studio, la formattazione del codice esistente non viene modificata a meno che non si formatti il documento: nel profilo predefinito selezionare **Modifica** > **Avanzate** > **Formatta documento** o **CTRL**+**K**, **CTRL**+**D**. Le nuove righe di codice vengono tuttavia formattate in base alle impostazioni del file EditorConfig. È possibile definire le impostazioni di EditorConfig che si desidera applicare con **Formatta documento** nella pagina delle opzioni [**Formattazione**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [EditorConfig in Visual Studio per Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Coerenza del codice
 
@@ -172,3 +175,4 @@ dir .editorconfig /s
 - [Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Funzionalità dell'editor del codice](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig (Visual Studio per Mac)](/visualstudio/mac/editorconfig)

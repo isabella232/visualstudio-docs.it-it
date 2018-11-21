@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856171"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349690"
 ---
 # <a name="install-visual-studio-2017"></a>Installare Visual Studio 2017
 
 In questo articolo viene presentato un nuovo modo per installare Visual Studio! Nella versione più recente è stata semplificata la procedura che consente di selezionare e installare solo le funzionalità necessarie. È anche stato ridotto il footprint minimo di Visual Studio in modo che possa essere installato più rapidamente, limitando l'impatto sul sistema.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Installare Visual Studio per Mac](/visualstudio/mac/installation).
 
 Per altre informazioni sulle novità in questa versione, vedere le [note sulla versione](/visualstudio/releasenotes/vs2017-relnotes) Microsoft.
 
@@ -149,4 +152,4 @@ Per altre informazioni, vedere la pagina [Cambiare i percorsi di installazione i
 * [Disinstallare Visual Studio 2017](uninstall-visual-studio.md)
 * [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Usare i parametri della riga di comando per installare Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Configurare e installare Visual Studio per Mac](/visualstudio/mac/installation)
+* [Installare Visual Studio per Mac](/visualstudio/mac/installation)

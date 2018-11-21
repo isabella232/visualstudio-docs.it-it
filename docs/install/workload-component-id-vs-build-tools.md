@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a3e0e89635c90585416745ae20b3c6b3b6e8ba
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138532"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607861"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Elenco dei componenti di Visual Studio Build Tools 2017
 
@@ -56,7 +56,8 @@ Microsoft.VisualStudio.Component.Azure.AuthoringTools | Strumenti di creazione d
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Librerie di Azure per .NET | 15.0.26208.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Strumenti di compilazione di Servizi cloud di Azure | 15.7.27617.1 | Obbligatorio
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Strumenti di sviluppo contenitori - Strumenti di compilazione | 15.7.27617.1 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
+Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | Obbligatorio
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Strumenti di compilazione sviluppo WCF | 15.6.27309.0 | Obbligatorio
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Strumenti di compilazione sviluppo Web | 15.8.27729.1 | Obbligatorio
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Consigliato
@@ -67,7 +68,6 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Strumenti di sviluppo per .NET Framework 4 - 4.6 | 15.6.27406.0 | Consigliato
 Microsoft.Net.Core.Component.SDK.2.1 | Strumenti di sviluppo per .NET Core 2.1 | 15.8.27924.0 | Consigliato
 Microsoft.VisualStudio.Component.AspNet45 | Funzionalità avanzate di ASP.NET | 15.7.27625.0 | Consigliato
-Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK | 15.0.27924.0 | Consigliato
 Microsoft.VisualStudio.Component.WebDeploy | Distribuzione Web | 15.8.27729.1 | Consigliato
 Microsoft.Net.Component.3.5.DeveloperTools | Strumenti di sviluppo per .NET Framework 3.5 | 15.6.27406.0 | Facoltativo
 Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Facoltativo
@@ -117,7 +117,7 @@ ID componente | nome | Versione | Tipo di dipendenza
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obbligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilatori Roslyn per C# e Visual Basic | 15.6.27309.0 | Obbligatorio
 Microsoft.Component.ClickOnce.MSBuild | Strumenti di compilazione di ClickOnce | 15.7.27617.1 | Consigliato
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Consigliato
@@ -172,7 +172,7 @@ ID componente | nome | Versione | Tipo di dipendenza
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.1 | Strumenti di sviluppo per .NET Core 2.1 | 15.8.27924.0 | Obbligatorio
 Microsoft.NetCore.BuildTools.ComponentGroup | Strumenti di compilazione .NET Core | 15.8.27906.1 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
 Microsoft.Net.Core.Component.SDK | Strumenti di sviluppo per .NET Core 2.0 | 15.6.27406.0 | Facoltativo
 Microsoft.Net.Core.Component.SDK.1x | Strumenti di sviluppo per .NET Core 1.0 - 1.1 | 15.6.27406.0 | Facoltativo
 
@@ -187,7 +187,7 @@ Microsoft.Net.Core.Component.SDK.1x | Strumenti di sviluppo per .NET Core 1.0 - 
 ID componente | nome | Versione | Tipo di dipendenza
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Supporto MSBuild per Node.js | 15.8.27825.0 | Obbligatorio
-Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27729.1 | Consigliato
+Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | Obbligatorio
 
 ## <a name="officesharepoint-build-tools"></a>Strumenti di compilazione Office/SharePoint
 
@@ -207,8 +207,8 @@ Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Ob
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Strumenti di sviluppo per .NET Framework 4.6.1 | 15.8.27825.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet | Gestione pacchetti NuGet | 15.8.27825.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet | Gestione pacchetti NuGet | 15.9.28016.0 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilatori Roslyn per C# e Visual Basic | 15.6.27309.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Strumenti di compilazione sviluppo Office/SharePoint | 15.8.27825.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Strumenti di compilazione Windows Workflow Foundation | 15.8.27906.1 | Obbligatorio
@@ -243,11 +243,11 @@ Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obbligatorio
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Obbligatorio
 Microsoft.Component.VC.Runtime.OSSupport | Runtime di Visual C++ per la piattaforma UWP | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilatori Roslyn per C# e Visual Basic | 15.6.27309.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Strumenti per analisi statica | 15.0.26208.0 | Obbligatorio
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilatori e librerie di Visual C++ per ARM | 15.8.27825.0 | Obbligatorio
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Strumenti VC++ 2017 versione 14.15 di Visual Studio 15.8 aggiornata alla versione più recente 141 | 15.8.27825.0 | Obbligatorio
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Strumenti VC++ 2017 versione 14.16 di Visual Studio 15.9 aggiornata alla versione più recente 141 | 15.9.28230.55 | Obbligatorio
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Prerequisiti di compilazione per la piattaforma UWP (Universal Windows Platform) | 15.8.27705.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Consigliato
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Facoltativo
@@ -276,7 +276,7 @@ ID componente | nome | Versione | Tipo di dipendenza
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Strumenti per analisi statica | 15.0.26208.0 | Obbligatorio
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Funzionalità di base per Visual C++ Build Tools | 15.8.27729.1 | Obbligatorio
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aggiornamento di Visual C++ 2017 Redistributable | 15.6.27406.0 | Obbligatorio
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Strumenti VC++ 2017 versione 14.15 di Visual Studio 15.8 aggiornata alla versione più recente 141 | 15.8.27825.0 | Obbligatorio
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Strumenti VC++ 2017 versione 14.16 di Visual Studio 15.9 aggiornata alla versione più recente 141 | 15.9.28230.55 | Obbligatorio
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Obbligatorio
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Funzionalità di base degli strumenti di test - Strumenti di compilazione | 15.7.27625.0 | Consigliato
 Microsoft.VisualStudio.Component.VC.CMake.Project | Strumenti Visual C++ per CMake | 15.8.27906.1 | Consigliato
@@ -290,7 +290,7 @@ Microsoft.VisualStudio.Component.VC.ATLMFC | MFC Visual C++ per x86 e x64 | 15.7
 Microsoft.VisualStudio.Component.VC.CLI.Support | Supporto C++/CLI | 15.6.27309.0 | Facoltativo
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduli per la libreria standard (sperimentale) | 15.6.27309.0 | Facoltativo
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilatori e librerie di Visual C++ per ARM | 15.8.27825.0 | Facoltativo
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilatori e librerie di Visual C++ per ARM64 | 15.6.27309.0 | Facoltativo
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilatori e librerie di Visual C++ per ARM64 | 15.9.28230.55 | Facoltativo
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Facoltativo
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Facoltativo
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Facoltativo
@@ -323,7 +323,7 @@ Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Ob
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Strumenti di sviluppo per .NET Framework 4.6.1 | 15.8.27825.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilatori Roslyn per C# e Visual Basic | 15.6.27309.0 | Obbligatorio
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Funzionalità di base di Visual Studio SDK Build Tools | 15.8.27924.0 | Obbligatorio
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Prerequisiti per lo sviluppo di estensioni di Visual Studio | 15.8.27729.1 | Obbligatorio
@@ -332,7 +332,7 @@ Microsoft.Component.VC.Runtime.OSSupport | Runtime di Visual C++ per la piattafo
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Strumenti per analisi statica | 15.0.26208.0 | Facoltativo
 Microsoft.VisualStudio.Component.VC.ATL | ATL Visual C++ per x86 e x64 | 15.7.27625.0 | Facoltativo
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC Visual C++ per x86 e x64 | 15.7.27625.0 | Facoltativo
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Strumenti VC++ 2017 versione 14.15 di Visual Studio 15.8 aggiornata alla versione più recente 141 | 15.8.27825.0 | Facoltativo
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Strumenti VC++ 2017 versione 14.16 di Visual Studio 15.9 aggiornata alla versione più recente 141 | 15.9.28230.55 | Facoltativo
 
 ## <a name="web-development-build-tools"></a>Strumenti di compilazione sviluppo Web
 
@@ -347,7 +347,8 @@ ID componente | nome | Versione | Tipo di dipendenza
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Strumenti di sviluppo per .NET Framework 4.6.1 | 15.8.27825.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
+Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | Obbligatorio
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Strumenti di compilazione sviluppo Web | 15.8.27729.1 | Obbligatorio
 Microsoft.Component.ClickOnce.MSBuild | Strumenti di compilazione di ClickOnce | 15.7.27617.1 | Consigliato
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Consigliato
@@ -360,7 +361,6 @@ Microsoft.Net.Core.Component.SDK.2.1 | Strumenti di sviluppo per .NET Core 2.1 |
 Microsoft.VisualStudio.Component.AspNet45 | Funzionalità avanzate di ASP.NET | 15.7.27625.0 | Consigliato
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Strumenti di sviluppo contenitori - Strumenti di compilazione | 15.7.27617.1 | Consigliato
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Funzionalità di base degli strumenti di test - Strumenti di compilazione | 15.7.27625.0 | Consigliato
-Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK | 15.0.27924.0 | Consigliato
 Microsoft.VisualStudio.Component.WebDeploy | Distribuzione Web | 15.8.27729.1 | Consigliato
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Strumenti di compilazione sviluppo WCF | 15.6.27309.0 | Consigliato
 Microsoft.Net.Component.3.5.DeveloperTools | Strumenti di sviluppo per .NET Framework 3.5 | 15.6.27406.0 | Facoltativo
@@ -392,10 +392,10 @@ ID componente | nome | Versione | Tipo di dipendenza
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obbligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.0.26919.1 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinazioni e attività di compilazione NuGet | 15.9.28016.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilatori Roslyn per C# e Visual Basic | 15.6.27309.0 | Obbligatorio
-Component.JavaJDK | Java SE Development Kit (8.0.1120.15) | 15.6.27406.0 | Consigliato
-Component.Android.SDK25 | Programma di installazione di Android SDK (livello API 25) | 15.6.27413.0 | Facoltativo
+Component.Android.SDK25 | Programma di installazione di Android SDK (livello API 25) | 15.9.28107.0 | Facoltativo
+Component.OpenJDK | Distribuzione Microsoft di OpenJDK | 15.9.28125.51 | Facoltativo
 
 ## <a name="unaffiliated-components"></a>Componenti non affiliati
 
@@ -408,8 +408,11 @@ Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.8.2772
 Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.7 | TypeScript 2.7 SDK | 15.0.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK | 15.0.27924.0
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM | ATL Visual C++ per ARM | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | ATL Visual C++ per ARM con mitigazioni Spectre | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | ATL Visual C++ per ARM64 | 15.7.27625.0
@@ -421,13 +424,14 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM | MFC Visual C++ per ARM | 15.7.2762
 Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | MFC Visual C++ per ARM con mitigazioni Spectre | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | MFC Visual C++ per ARM64 | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | Supporto MFC Visual C++ per ARM64 con mitigazioni Spectre | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | Librerie VC++ 2017 versione 14.15 di Visual Studio 15.8 per Spectre (ARM) | 15.8.27825.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | Librerie VC++ 2017 versione 14.15 di Visual Studio 15.8 per Spectre (ARM64) | 15.8.27825.0
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | Librerie VC++ 2017 versione 14.15 di Visual Studio 15.8 per Spectre (x86 e x64) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | Librerie VC++ 2017 versione 14.16 di Visual Studio 15.9 per Spectre (ARM) | 15.9.28230.55
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | Librerie VC++ 2017 versione 14.16 di Visual Studio 15.9 per Spectre (ARM64) | 15.9.28230.55
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | Librerie VC++ 2017 versione 14.16 di Visual Studio 15.9 per Spectre (x86 e x64) | 15.9.28230.55
 Microsoft.VisualStudio.Component.VC.Tools.14.11 | Set di strumenti di VC++ 2017 versione 14.11 di Visual Studio 15.4 | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.14.12 | Set di strumenti di VC++ 2017 versione 14.12 di Visual Studio 15.5 | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.14.13 | Set di strumenti di VC++ 2017 versione 14.13 di Visual Studio 15.6 | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.14.14 | Set di strumenti di VC++ 2017 versione 14.14 di Visual Studio 15.7 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.15 | Set di strumenti di VC++ 2017 versione 14.15 di Visual Studio 15.8 | 15.0.28230.55
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

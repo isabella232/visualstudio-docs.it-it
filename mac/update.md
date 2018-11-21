@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: e363d02c7d84d80a3a60d54e13ff2a5341145dc5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223900"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294403"
 ---
-# <a name="updating-visual-studio-for-mac"></a>Aggiornamento di Visual Studio per Mac
+# <a name="update-visual-studio-for-mac"></a>Aggiornare Visual Studio per Mac
 
 Visual Studio per Mac distribuisce gli aggiornamenti per l'ambiente di sviluppo integrato e framework supportati a intervalli regolari. Questi aggiornamenti possono essere sotto forma di nuove funzionalità, miglioramenti e correzioni di bug.
 
@@ -26,7 +26,7 @@ Visual Studio per Mac offre tre canali per ottenere le versioni più recenti:
 
 È possibile usare il riquadro dello **strumento di aggiornamento di Visual Studio** per verificare la presenza di nuovi aggiornamenti, modificare i canali e per scaricare e installare gli aggiornamenti.
 
-Per aprire lo **strumento di aggiornamento di Visual Studio**, spostarsi su **Visual Studio > Controlla aggiornamenti...**:
+Per aprire lo **strumento di aggiornamento di Visual Studio**, spostarsi su **Visual Studio > Controlla aggiornamenti**:
 
 ![Opzione Controlla aggiornamenti](media/update-image1.png)
 
@@ -51,3 +51,7 @@ Per avviare l'installazione degli aggiornamenti, selezionare il pulsante **Riavv
 ![Pulsante per avviare l'installazione degli aggiornamenti](media/update-image4.png)
 
 A seconda dei componenti da installare, può essere necessario accettare licenze aggiuntive o inserire nome utente e password dell'amministratore del computer.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Aggiornare Visual Studio (in Windows)](/visualstudio/install/update-visual-studio)

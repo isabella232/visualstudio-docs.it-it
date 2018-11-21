@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228864"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295683"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Presentazione di Visual Studio per Mac
 
@@ -56,13 +56,13 @@ In questa posizione i file per il codice sorgente, le risorse, l'interfaccia ute
 Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac, vedere l'articolo [Progetti e soluzioni](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Riferimenti dell'assembly
- 
+
 I riferimenti ad assembly per ogni progetto sono disponibili nella cartella Riferimenti:
 
 ![Cartella Riferimenti nel riquadro della soluzione](media/ide-tour-image19.png)
 
 È possibile aggiungere altri riferimenti usando la finestra di dialogo **Modifica riferimenti**, visualizzata facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
- 
+
 ![Finestra di dialogo Modifica riferimenti](media/ide-tour-image20.png)
 
 Per altre informazioni sull'uso dei riferimenti in Visual Studio per Mac, vedere l'articolo [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
@@ -93,7 +93,7 @@ Per altre informazioni sulle visualizzazioni dei dati del debugger, vedere l'art
 
 ## <a name="version-control"></a>Controllo della versione
 
-Visual Studio per Mac si integra con sistemi di controllo del codice sorgente Subversion e Git. I progetti sottoposti a controllo del codice sorgente sono contrassegnati con un ramo accanto al nome della soluzione: 
+Visual Studio per Mac si integra con sistemi di controllo del codice sorgente Subversion e Git. I progetti sottoposti a controllo del codice sorgente sono contrassegnati con un ramo accanto al nome della soluzione:
 
 ![Nome del ramo per indicare un progetto sottoposto a controllo del codice sorgente](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ I file con modifiche non sottoposte a commit presentano un'annotazione nelle rel
 ![File con modifiche non sottoposte a commit nel riquadro della soluzione](media/ide-tour-image23.png)
 
 Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](version-control.md).
+
+## <a name="see-also"></a>Vedere anche
+
+- [IDE di Visual Studio (in Windows)](/visualstudio/ide/visual-studio-ide)
