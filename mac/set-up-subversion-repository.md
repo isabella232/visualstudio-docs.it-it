@@ -5,14 +5,14 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 8e8e17f7787486e5f14fd94927278bb957439e81
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3995db4ef4609f68512dede454855da1f770141f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224178"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295553"
 ---
-# <a name="setting-up-a-subversion-repository"></a>Impostazione di un repository Subversion
+# <a name="set-up-a-subversion-repository"></a>Impostare un repository Subversion
 
 Subversion è un _sistema di controllo della versione_ centralizzato e ciò significa che vi è un unico server che contiene tutti i file e le revisioni da cui gli utenti possono estrarre qualsiasi versione di qualsiasi file. Quando i file vengono estratti da un repository Subversion remoto, l'utente riceve uno snapshot del repository in tale momento.
 
@@ -32,19 +32,19 @@ xcode-select --install
 
 Dopo aver installato Subversion nel computer, usare la procedura seguente per pubblicare il progetto in SVN.
 
-1. Creare un repository SVN gratuito online. In questo esempio è stato usato [Assembla](https://app.assembla.com/). Dopo la creazione, verrà reso disponibile un URL che consentirà di connettersi al repository: 
+1. Creare un repository SVN gratuito online. In questo esempio è stato usato [Assembla](https://app.assembla.com/). Dopo la creazione, verrà reso disponibile un URL che consentirà di connettersi al repository:
 
     ![copiare l'URL di SVN](media/version-control-subversion1-sml.png)
 
 2. Aprire o creare un progetto Visual Studio per Mac.
 
-3. Fare clic con il pulsante destro del mouse sul progetto e selezionare **Controllo della versione > Pubblica in controllo della versione...**: 
+3. Fare clic con il pulsante destro del mouse sul progetto e selezionare **Controllo della versione > Pubblica in controllo della versione...**:
 
     ![Avviare la pubblicazione del progetto](media/version-control-subversion2.png)
 
 4. Nella scheda **Connetti al repository** selezionare **Subversion** nell'elenco a discesa in alto.
 
-5. Inserire l'URL del passaggio 1. Dopo avere immesso l'URL, gli altri campi vengono compilati per impostazione predefinita: 
+5. Inserire l'URL del passaggio 1. Dopo avere immesso l'URL, gli altri campi vengono compilati per impostazione predefinita:
 
     ![Finestra di dialogo di selezione del repository e di immissione dei dettagli](media/version-control-subversion3.png)
 
@@ -56,3 +56,6 @@ Dopo aver installato Subversion nel computer, usare la procedura seguente per pu
 
 8.  Tutti i comandi di controllo della versione disponibili verranno visualizzati nel menu del controllo della versione.
 
+## <a name="see-also"></a>Vedere anche
+
+- [Uso di Subversion](working-with-subversion.md)

@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: df3fbccff1bd76954b153c4c3159e1d65527e90b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627115"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349295"
 ---
 # <a name="code-style-preferences"></a>Preferenze di stile per il codice
 
@@ -26,6 +26,9 @@ Per impostare preferenze di stile per il codice per i progetti C# e Visual Basic
 Quando viene selezionata, ogni voce dell'elenco visualizza un'anteprima della preferenza:
 
 ![Opzioni di stile di codice](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Comportamento dell'editor in Visual Studio per Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Preferenza e gravità
 
@@ -50,3 +53,4 @@ La prima volta che si attiva il comando **Formatta documento** in Visual Studio 
 
 - [Azioni rapide](../ide/quick-actions.md)
 - [Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Comportamento dell'editor (Visual Studio per Mac)](/visualstudio/mac/editor-behavior)

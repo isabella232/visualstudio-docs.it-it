@@ -1,7 +1,7 @@
 ---
 title: Come vengono applicati i percorsi di ricerca di Python
 description: Panoramica dell'uso dei percorsi di ricerca Python in Visual Studio per i progetti e gli ambienti.
-ms.date: 10/29/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219978"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607901"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Come vengono usati i percorsi di ricerca di Python Visual Studio
 
@@ -30,13 +30,19 @@ Visual Studio ignora tuttavia la variabile di ambiente del percorso di ricerca, 
 
 Visual Studio consente quindi di specificare direttamente i percorsi di ricerca sia negli ambienti che nei progetti. Il codice eseguito o sottoposto a debug in Visual Studio riceve i percorsi di ricerca nel valore di `PYTHONPATH` (e altre variabili equivalenti). Quando si aggiungono percorsi di ricerca, Visual Studio controlla le librerie in questi percorsi e crea i database di IntelliSense corrispondenti all'occorrenza (Visual Studio 2017 versione 15.5 e precedenti; la creazione dei database potrebbe richiedere tempo a seconda del numero di librerie).
 
-Per aggiungere un percorso di ricerca, fare clic con il pulsante destro del mouse sull'elemento **Percorsi di ricerca** in **Esplora soluzioni**, scegliere **Aggiungi cartella al percorso di ricerca** e selezionare la cartella da includere. Questo percorso viene usato per qualsiasi ambiente associato al progetto. (È possibile riscontrare errori se l'ambiente è basato su Python 3 e si tenta di aggiungere un percorso di ricerca per i moduli Python 2.7.)
+Per aggiungere un percorso di ricerca, passare a **Esplora soluzioni**, espandere il nodo del progetto, fare clic con il pulsante destro del mouse su **Percorsi di ricerca** e selezionare **Aggiungi cartella al percorso di ricerca**:
 
-È possibile aggiungere come percorsi di ricerca i file con estensione *.zip* o *.egg*, selezionando **Aggiungi archivio ZIP al percorso di ricerca**. Come con le cartelle, il contenuto di questi file viene analizzato e reso disponibile per IntelliSense.
+![Comando Aggiungi cartella al percorso di ricerca in Percorsi di ricerca di Esplora soluzioni](media/search-paths-command.png)
 
-Se si usa regolarmente gli stessi percorsi di ricerca e il contenuto non cambia spesso, può risultare più comodo eseguire l'installazione nella cartella dei pacchetti del sito. Il percorso di ricerca viene quindi analizzato e archiviato nel database di IntelliSense ed è sempre associato all'ambiente di destinazione indicato. Non è inoltre più necessario aggiungere un percorso di ricerca a ogni progetto.
+Questo comando visualizza un browser in cui è possibile selezionare la cartella da includere.
 
-### <a name="see-also"></a>Vedere anche
+Se la variabile di ambiente `PYTHONPATH` include già la cartella necessaria, usare il collegamento **Aggiungi PYTHONPATH al percorso di ricerca**.
+
+Dopo aver aggiunto le cartelle ai percorsi di ricerca, Visual Studio usa tali percorsi per tutti gli ambienti associati al progetto. (È possibile riscontrare errori se l'ambiente è basato su Python 3 e si tenta di aggiungere un percorso di ricerca per i moduli Python 2.7.)
+
+È possibile aggiungere come percorsi di ricerca i file con estensione *zip* o *egg*, selezionando il comando **Aggiungi archivio ZIP al percorso di ricerca**. Come con le cartelle, il contenuto di questi file viene analizzato e reso disponibile per IntelliSense.
+
+## <a name="see-also"></a>Vedere anche
 
 - [Gestire ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120355"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561647"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
@@ -152,24 +152,30 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Per controllare se l'utente autenticato è autorizzato ad accedere a determinate risorse, è necessario recuperare le autorizzazioni specifiche dell'utente dal database. Per altre informazioni, vedere [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Uso del sistema di autenticazione Django) nella documentazione di Django.
 
-1. L'utente con privilegi avanzati o amministratore, in particolare, è autorizzato ad accedere alle interfacce di amministrazione Django predefinite mediante gli URL relativi "/admin/" e "/ admin/doc /". Per abilitare queste interfacce, aprire il file *urls.py* del progetto Django e rimuovere i commenti dalle voci seguenti:
+1. L'utente con privilegi avanzati o amministratore, in particolare, è autorizzato ad accedere alle interfacce di amministrazione Django predefinite mediante gli URL relativi "/admin/" e "/ admin/doc /". Per abilitare queste interfacce, eseguire le operazioni seguenti:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Installare il pacchetto Python docutils nell'ambiente. È consigliabile aggiungere "docutils" al file *requirements.txt*, in **Esplora soluzioni** espandere il progetto, espandere il nodo **Ambienti Python**, quindi fare clic con il pulsante destro del mouse sull'ambiente in uso e selezionare **Installa da requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Aprire il file *urls.py* del progetto Django e rimuovere i commenti predefiniti dalle voci seguenti:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Quando si riavvia l'app, è possibile passare ad "/admin/" e "/ admin/doc /" ed eseguire attività come la creazione di altri account utente.
+    1. Nel file *settings.py* del progetto Django passare alla raccolta `INSTALLED_APPS` e aggiungere `'django.contrib.admindocs'`.
 
-    ![Interfaccia di amministrazione Django](media/django/step05-administrator-interface.png)
+    1. Quando si riavvia l'app, è possibile passare ad "/admin/" e "/ admin/doc /" ed eseguire attività come la creazione di account utente aggiuntivi.
+
+        ![Interfaccia di amministrazione Django](media/django/step05-administrator-interface.png)
 
 1. La parte finale per il flusso di autenticazione è la disconnessione. Come si può notare in *loginpartial.html*, il collegamento **Log off** (Disconnetti) invia semplicemente una richiesta POST all'URL relativo "/login", gestito dalla visualizzazione predefinita `django.contrib.auth.views.logout`. Questa visualizzazione non è dotata di un'interfaccia utente e si limita a passare alla home page, come illustrato in *urls.py* per il modello "^ logout$". Se si vuole visualizzare una pagina di disconnessione, modificare prima di tutto il modello di URL nel modo seguente per aggiungere una proprietà "template_name" e rimuovere la proprietà "next_page":
 

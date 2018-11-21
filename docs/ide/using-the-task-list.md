@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612701"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349398"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
 Usare **Elenco attività** per tenere traccia dei commenti di codice che usano token quali `TODO` e `HACK`, o token personalizzati, e per gestire i collegamenti che indirizzano direttamente a una posizione predefinita nel codice. Fare clic sull'elemento nell'elenco per passare alla relativa posizione nel codice sorgente.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Commenti dell'attività (Visual Studio per Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>Finestra Elenco attività
 
@@ -104,3 +107,4 @@ Per spostarsi tra i collegamenti nel codice, scegliere un collegamento nell'elen
 ## <a name="see-also"></a>Vedere anche
 
 - [Elenco attività, Ambiente, finestra di dialogo Opzioni](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Commenti dell'attività (Visual Studio per Mac)](/visualstudio/mac/task-comments)

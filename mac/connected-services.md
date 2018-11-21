@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224255"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295176"
 ---
 # <a name="connected-services-walkthrough"></a>Procedura dettagliata per Servizi connessi
 
@@ -18,8 +18,7 @@ Il flusso di lavoro Servizi connessi abilita il flusso di lavoro del portale di 
 
 La procedura dettagliata illustra come aggiungere un servizio back-end di Azure che offre archiviazione dei dati cloud, autenticazione e notifiche push a un'applicazione di libreria di classi portabile Xamarin.Forms multipiattaforma.
 
-
-1.  Per prima cosa fare doppio clic sul nodo **Servizi connessi** della soluzione. In questo modo verrà visualizzata la **Services Gallery** (Raccolta servizi).
+1. Per prima cosa fare doppio clic sul nodo **Servizi connessi** della soluzione. Viene visualizzata la **raccolta servizi**.
   Si tratta di un elenco di servizi disponibili per il tipo di applicazione. Fare clic su un servizio, come ad esempio **Back-end dispositivi mobili con Servizio app di Azure**, per selezionarlo.
 
     [![Nodo Servizi connessi in Visual Studio per Mac](media/connected-services-image001-sml.png "Nodo Servizi connessi in Visual Studio per Mac")](media/connected-services-image001.png#lightbox)
@@ -71,4 +70,8 @@ Il nuovo servizio richiede i parametri seguenti:
 -   **Gruppo di risorse**: un modo per organizzare tutte le risorse di Azure per un progetto. È possibile usarne uno esistente o crearne uno nuovo. Se si tratta del primo servizio di Azure, crearne uno nuovo.
 -   **Piano di servizio**: determina la posizione e il costo delle risorse che lo usano. È possibile usarne uno esistente o crearne uno nuovo. Se si tratta del primo servizio di Azure, usare quello predefinito o crearne uno nuovo al livello gratuito (F1).
 
-Per altre informazioni, vedere la [Documentazione del servizio app di Azure](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/).
+Per altre informazioni, vedere la [documentazione del servizio app di Azure](/azure/app-service-mobile/).
+
+## <a name="see-also"></a>Vedere anche
+
+- [Servizi connessi (Visual Studio in Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

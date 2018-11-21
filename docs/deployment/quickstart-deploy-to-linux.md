@@ -1,5 +1,5 @@
 ---
-title: Pubblicare nel servizio App in Linux
+title: Eseguire la pubblicazione nel Servizio app in Linux
 ms.custom: ''
 ms.date: 07/23/2018
 ms.technology: vs-ide-deployment
@@ -13,49 +13,49 @@ ms.workload:
 - azure
 ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
 ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/30/2018
 ms.locfileid: "39341748"
 ---
-# <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Pubblicare un'app ASP.NET Core in servizio App in Linux tramite Visual Studio
+# <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Eseguire la pubblicazione di un'app ASP.NET Core nel Servizio app in Linux con Visual Studio
 
-È possibile usare la **pubblica** dello strumento per la pubblicazione delle App ASP.NET Core in servizio App di Azure in Linux.
+È possibile usare lo strumento **Pubblica** per la pubblicazione di app ASP.NET Core nel Servizio app di Azure in Linux.
 
-Distribuzione nel servizio App in Linux mediante il **pubblica** lo strumento richiede Visual Studio 2017 versione 15.7.
+La distribuzione nel Servizio app in Linux mediante lo strumento **Pubblica** richiede Visual Studio 2017 versione 15.7.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
-## <a name="publish-to-app-service-on-linux"></a>Pubblicare nel servizio App in Linux
+## <a name="publish-to-app-service-on-linux"></a>Eseguire la pubblicazione nel Servizio app in Linux
 
-1. In Esplora soluzioni fare clic sul progetto e scegliere **Publish** (o utilizzare il **compilare** > **pubblica** voce di menu).
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
 
-    ![Il comando Pubblica nel menu di scelta rapida progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere pubblica")
+    ![Il comando Pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere Pubblica")
 
-1. Se sono stati configurati tutti i profili di pubblicazione, il **Publish** viene visualizzato il riquadro, in cui selezionare case **Crea nuovo profilo**.
+1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. In questo caso, selezionare **Crea nuovo profilo**.
 
-1. Nel **selezionare una destinazione di pubblicazione** finestra di dialogo, scegliere **servizio App Linux**.
+1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** fare clic su **Servizio app per Linux**.
 
-    ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-linux.png "scegliere servizio App di Azure")
+    ![Scegliere Servizio app di Azure](../deployment/media/quickstart-publish-linux.png "Scegliere Servizio app di Azure")
 
-1. Selezionare **Pubblica**. Il **Crea servizio App** verrà visualizzata la finestra di dialogo. Accedere con è account Azure, se necessario, quindi le impostazioni predefinite del servizio app popolano i campi.
+1. Selezionare **Pubblica**. Viene visualizzata la finestra di dialogo **Crea servizio app**. Accedere con l'account Azure, se necessario. Le impostazioni predefinite del Servizio app popolano i campi.
 
-    ![Crea servizio App](../deployment/media/quickstart-publish-settings-app-service-linux.png "Crea servizio App di Azure")
+    ![Crea Servizio app](../deployment/media/quickstart-publish-settings-app-service-linux.png "Crea Servizio app di Azure")
 
-1. Scegliere **Crea**. Visual Studio distribuisce l'app in servizio App di Azure e carica l'app web nel browser. Le proprietà del progetto **pubblica** riquadro viene visualizzato l'URL del sito e altri dettagli.
+1. Scegliere **Crea**. Visual Studio distribuisce l'app al Servizio app di Azure e l'app Web viene caricata nel browser. Nel riquadro **Pubblica** delle proprietà del progetto viene visualizzato l'URL del sito con altri dettagli.
 
-    ![Riquadro delle proprietà con il riepilogo un profilo di pubblicazione](../deployment/media/quickstart-publish-app-service-summary.png)
+    ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="clean-up-resources"></a>Pulire le risorse
 
-Creato nei passaggi precedenti, le risorse di Azure in un gruppo di risorse. Se non si prevede di queste risorse sono necessarie in futuro, è possibile eliminarle eliminando il gruppo di risorse.
-Nel menu a sinistra nel portale di Azure, selezionare **gruppi di risorse** e quindi selezionare **myResourceGroup**.
-Nella pagina di gruppo di risorse, assicurarsi che le risorse elencate siano quelle da eliminare.
-Selezionare **eliminare**, digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
+Nei passaggi precedenti, sono state create delle risorse di Azure in un gruppo di risorse. Se non si prevede di usare queste in futuro, è possibile eliminarle eliminando il gruppo di risorse.
+Nel menu a sinistra nel portale di Azure selezionare **Gruppi di risorse** e quindi selezionare **myResourceGroup**.
+Nella pagina del gruppo di risorse assicurarsi che le risorse elencate siano quelle da eliminare.
+Selezionare **Elimina**, digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa Guida introduttiva è stato descritto come usare Visual Studio per creare un profilo di pubblicazione per la distribuzione in servizio App in Linux. È possibile altre informazioni sulla pubblicazione in Linux tramite Azure.
+In questa guida introduttiva è stato descritto come usare Visual Studio per creare un profilo di pubblicazione per la distribuzione nel Servizio app in Linux. Sono disponibili altre informazioni per la pubblicazione in Linux tramite Azure.
 
 > [!div class="nextstepaction"]
 > [Servizio app di Linux](/azure/app-service/containers/app-service-linux-intro)

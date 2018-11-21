@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 33f88444d7bbdc0b0fe85bfa5efbdbbd794fa3e4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283470"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349393"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -80,3 +80,4 @@ Passare ora di nuovo a **Esplora server**, fare clic con il pulsante destro del 
 ## <a name="see-also"></a>Vedere anche
 
 - [Accedere a Visual Studio](signing-in-to-visual-studio.md)
+- [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in)

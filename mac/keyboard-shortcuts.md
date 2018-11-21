@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223938"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295111"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Tasti di scelta rapida comuni in Visual Studio per Mac
 
@@ -18,17 +18,17 @@ ms.locfileid: "43223938"
 
 Questo comando genera contestualmente il codice:
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![Viene visualizzato un pannello con le opzioni per la generazione di codice correlate al simbolo selezionato](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>Ricerca di file, simboli e comandi
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>Completamento automatico 
+## <a name="autocomplete"></a>Completamento automatico
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>Correzioni e azioni rapide
 
@@ -50,7 +50,7 @@ Consente di passare rapidamente da un file a un altro:
 
 ## <a name="move-lines-around-in-editor"></a>Spostamento di righe nell'editor
 
-`alt + up/down` 
+`alt + up/down`
 
 Usare il comando **ALT+freccia SU** per spostare verso l'alto la riga corrente o le righe selezionate e **ALT+freccia GIÙ** per spostare le righe verso il basso. Se il componente aggiuntivo per il linguaggio supporta questo comportamento, alle righe verrà applicato di nuovo il rientro in base al contesto quando vengono spostate nell'ambito e fuori da esso.
 
@@ -71,3 +71,7 @@ Sposta il cursore all'inizio o alla fine della riga:
 Espande parole, espressioni secondarie, istruzioni e membri di riga selezionati in modo logico:
 
 `alt + shift + up` per selezionare, `alt + shift + down` per deselezionare
+
+## <a name="see-also"></a>Vedere anche
+
+- [Tasti di scelta rapida in Visual Studio (in Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

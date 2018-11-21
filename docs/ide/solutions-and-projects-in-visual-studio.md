@@ -1,5 +1,5 @@
 ---
-title: Soluzioni e progetti in Visual Studio
+title: Soluzioni e progetti
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,14 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089659"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349309"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
+
+Questo articolo descrive i concetti di *progetto* e *soluzione* in Visual Studio. Spiega anche brevemente come creare un nuovo progetto e illustra la finestra degli strumenti **Esplora soluzioni**.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Progetti e soluzioni in Visual Studio per Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Progetti
 
@@ -62,7 +67,7 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 
-Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono quelli visualizzati nella finestra di dialogo **Nuovo progetto** o **Nuovo sito Web** quando si sceglie **File** > **Nuovo** > **Progetto** o **File** > **Nuovo** > **Sito Web**. Per altre informazioni, vedere [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md).
+Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono quelli visualizzati nella finestra di dialogo **Nuovo progetto** quando si sceglie **File** > **Nuovo** > **Progetto**. Per altre informazioni, vedere [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md).
 
 È inoltre possibile creare modelli di progetto e modelli di elemento personalizzati. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
@@ -75,3 +80,5 @@ Dopo aver creato un nuovo progetto, è possibile usare **Esplora soluzioni** per
 ## <a name="see-also"></a>Vedere anche
 
 - [IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [Progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/projects-and-solutions)
+- [Aggiungere e rimuovere elementi del progetto (Visual Studio per Mac)](/visualstudio/mac/add-and-remove-project-items)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: c1c5783134b39feac0ae89d6a1b2680b0668f815
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 0b63161781f281b08e7603b3fec4a58223b1f63e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223898"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294435"
 ---
 # <a name="block-selection"></a>Selezione blocco
 
@@ -18,4 +18,8 @@ Visual Studio per Mac rende più semplice selezionare, tagliare, copiare e incol
 
 Le selezioni blocco consentono di modificare testo su più righe contemporaneamente. Una selezione blocco di larghezza zero può essere usata per posizionare il cursore davanti a un grande numero di righe in una sola volta e digitare lo stesso testo su più righe:
 
- ![Selezione blocco e aggiunta di testo](media/source-editor-image16.png)
+![Selezione blocco e aggiunta di testo](media/source-editor-image16.png)
+
+# <a name="see-also"></a>Vedere anche
+
+- [Selezione di più punti di inserimento per Visual Studio (in Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

@@ -1,15 +1,15 @@
 
 1. Chiudere e riaprire la Console di gestione IIS per visualizzare le opzioni di configurazione aggiornate nell'interfaccia utente.
 
-2. In IIS, fare doppio clic il **sito Web predefinito**, scegliere **Distribuisci** > **configurare distribuzione pubblicazione sul Web**.
+2. In IIS fare clic con il pulsante destro del mouse su **Sito Web predefinito**, quindi scegliere **Distribuisci** > **Abilita pubblicazione Distribuzione Web**.
 
-    ![Impostare la configurazione di distribuzione Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+    ![Impostare la configurazione Distribuzione Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-3. Nel **configurare la distribuzione di pubblicazione sul Web** finestra di dialogo casella, esaminare le impostazioni.
+3. Nella finestra di dialogo **Abilita pubblicazione Distribuzione Web** esaminare le impostazioni.
 
-4. Fare clic su **programma di installazione**.
+4. Fare clic su **Imposta**.
 
-    Nel **risultati** pannello, l'output mostra che i diritti di accesso viene concesse all'utente specificato e che un file con un *con estensione publishsettings* estensione di file è stato generato nella posizione indicata nella finestra di dialogo casella.
+    Nel riquadro **Risultati** l'output indica che i diritti di accesso vengono concessi all'utente specificato e che è stato generato un file con estensione *publishsettings* nella posizione indicata nella finestra di dialogo.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -26,14 +26,14 @@
     </publishData>
     ```
 
-    A seconda della configurazione di Windows Server e IIS, noterete che valori diversi nei file XML. Di seguito sono riportati alcuni dettagli sui valori visualizzati:
+    A seconda della configurazione di Windows Server e IIS vengono visualizzati valori diversi nel file XML. Di seguito sono riportati alcuni dettagli sui valori visualizzati:
 
-   * Il *MSDeploy. axd* file cui fa riferimento il `publishUrl` attributo è un file di gestore HTTP generato dinamicamente per distribuzione Web. (Per scopi di test, `http://myhostname:8172` in genere è possibile usare anche.)
-   * Il `publishUrl` porta è impostata su porta 8172, ovvero il valore predefinito per la distribuzione Web.
-   * Il `destinationAppUrl` sia impostata sulla porta 80, ovvero l'impostazione predefinita per IIS.
-   * Se non si riesce a connettersi all'host remoto in Visual Studio usando il nome host (nei passaggi successivi), verificare l'indirizzo IP al posto del nome host.
+   * Il file *msdeploy.axd* al quale si fa riferimento nell'attributo `publishUrl` è un file gestore HTTP generato dinamicamente per Distribuzione Web. Ai fini dei test, in genere è possibile usare anche `http://myhostname:8172`.
+   * La porta `publishUrl` è impostata sulla porta 8172, il valore predefinito per Distribuzione Web.
+   * La porta `destinationAppUrl` è impostata sulla porta 80, il valore predefinito per IIS.
+   * Se non si riesce a connettersi all'host remoto in Visual Studio usando il nome host (nei passaggi successivi), provare con l'indirizzo IP al posto del nome host.
 
      > [!NOTE]
-     > Se esegue la pubblicazione in IIS in esecuzione in una VM di Azure, è necessario aprire le porte IIS e distribuzione Web nel gruppo di sicurezza di rete. Per informazioni dettagliate, vedere [installare e eseguire IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > Se si esegue la pubblicazione in IIS in esecuzione in una VM di Azure, è necessario aprire le porte Distribuzione Web e IIS nel gruppo Sicurezza di rete. Per informazioni dettagliate, vedere [Install and run IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic) (Installare ed eseguire IIS).
 
 5. Copiare questo file nel computer in cui si esegue Visual Studio.

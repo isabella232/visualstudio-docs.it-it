@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919741"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296437"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
@@ -44,12 +44,10 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Denominazione e creazione del progetto di funzione di Azure](media/azure-functions-lab-image2.png)
 
-5. Espandere i nodi nel **riquadro della soluzione**. Il modello di progetto predefinito include riferimenti NuGet a vari pacchetti di Processi Web di Azure e al pacchetto Newtonsoft.Json. 
+5. Espandere i nodi nel **riquadro della soluzione**. Il modello di progetto predefinito include riferimenti NuGet a vari pacchetti di Processi Web di Azure e al pacchetto Newtonsoft.Json.
 
-     Sono presenti anche tre file:  
-        - **host.json** per la descrizione delle opzioni di configurazione globali dell'host  
-        - **local.settings.json** per la configurazione delle impostazioni del servizio.  
-        - Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.  
+     Sono anche disponibili tre file: **host.json** per la descrizione delle opzioni di configurazione globale per l'host, **local.settings.json** per la configurazione delle impostazioni del servizio.
+        Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.
 
     Aprire **local.settings.json**. Per impostazione predefinita il file include due impostazioni stringa di connessione vuote.
 
@@ -58,7 +56,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Esercizio 2: Creazione di un account di archiviazione di Azure
 
 1. Accedere al proprio account Azure in [https://portal.azure.com](https://portal.azure.com).
- 
+
 1. Nella sezione **Preferiti** sul lato sinistro dello schermo, selezionare **Account di archiviazione**:
 
     ![Sezione Preferiti del portale di Azure con l'elemento Account di archiviazione](media/azure-functions-lab-image4.png)
@@ -121,8 +119,8 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
         return x + y;
     }
     ```
-1. Di seguito si analizzano in dettaglio le varie sezioni della definizione del metodo. 
-    
+1. Di seguito si analizzano in dettaglio le varie sezioni della definizione del metodo.
+
     Inizialmente viene visualizzato l'attributo **FunctionName**, che contrassegna questo metodo come funzione di Azure. L'attributo specifica il nome pubblico della funzione. Il nome dell'attributo non deve necessariamente corrispondere al nome del metodo.
 
     ![Nuovo metodo run con l'attributo FunctionName evidenziato](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![URL di API della funzione di Azure](media/azure-functions-lab-image20.png)
 
-1. Il punto di interruzione viene attivato immediatamente. La richiesta Web è stata inoltrata alla funzione e ora può essere sottoposta a debug. Portare il mouse sulla variabile **x** per visualizzarne il valore. 
+1. Il punto di interruzione viene attivato immediatamente. La richiesta Web è stata inoltrata alla funzione e ora può essere sottoposta a debug. Portare il mouse sulla variabile **x** per visualizzarne il valore.
 
     ![Punto di interruzione attivato](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Esercizio 5: Uso delle tabelle di archiviazione di Azure
 
-Spesso il servizio compilato è molto più complesso di quello creato fino a questo punto e la sua esecuzione può richiedere un'infrastruttura e tempi molto maggiori. In questi casi può risultare utile accettare le richieste che vengono messe in coda per l'elaborazione quando le risorse diventano disponibili. Le funzioni di Azure supportano questo approccio. In altri casi risulta più utile archiviare i dati in modo centralizzato. Le tabelle di Archiviazione di Azure consentono di eseguire questa operazione rapidamente. 
+Spesso il servizio compilato è molto più complesso di quello creato fino a questo punto e la sua esecuzione può richiedere un'infrastruttura e tempi molto maggiori. In questi casi può risultare utile accettare le richieste che vengono messe in coda per l'elaborazione quando le risorse diventano disponibili. Le funzioni di Azure supportano questo approccio. In altri casi risulta più utile archiviare i dati in modo centralizzato. Le tabelle di Archiviazione di Azure consentono di eseguire questa operazione rapidamente.
 
 1. Aggiungere la classe seguente a **Add.cs**. La classe deve essere inserita all'interno dello spazio dei nomi, ma all'esterno della classe esistente.
 
@@ -332,7 +330,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Tornare al browser per aggiornare la richiesta con lo stesso URL. Questa volta verrà visualizzato un errore dopo il metodo **Process**. Questo avviene perché il codice prova ad aggiungere una riga alla tabella di Archiviazione tabelle di Azure tramite una combinazione di partizione e chiave riga che esiste già.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 1. Tornare a **Visual Studio per Mac** e terminare la sessione di debug.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

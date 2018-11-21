@@ -1,13 +1,13 @@
 ## <a name="prerequisites"></a>Prerequisiti
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) installati con i carichi di lavoro appropriati per il linguaggio scelto:
-  * ASP.NET: **sviluppo ASP.NET e web**
-  * Python: **sviluppo Python**
-  * Node. js: **sviluppo Node. js**
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) installato con i carichi di lavoro appropriati per il linguaggio scelto:
+  * ASP.NET: **Sviluppo ASP.NET e Web**
+  * Python: **Sviluppo Python**
+  * Node.js: **Sviluppo Node.js**
 
-* Un progetto ASP.NET Core, .NET Core, Python o Node. js. Se si ha già un progetto, selezionare delle opzioni seguenti:
-  * ASP.NET: Seguire [Guida introduttiva: usare Visual Studio per creare la prima app web ASP.NET Core](../../ide/quickstart-aspnet-core.md), oppure utilizzare **File** > **nuovo progetto**selezionare  **Visual c#** > **.NET Core**, quindi selezionare **applicazione Web ASP.NET Core**. Quando richiesto, selezionare la **applicazione Web (Model-View-Controller)** modello, assicurarsi che **Nessuna autenticazione** sia selezionata e quindi selezionare **OK**.
-  * Python: Seguire [Guida introduttiva: creare la prima app web Python con Visual Studio](../../ide/quickstart-python.md), oppure utilizzare **File** > **nuovo progetto**selezionare **Python** , quindi selezionare **Flask Web Project**.
-  * Node. js: Seguire [Guida introduttiva: usare Visual Studio per creare la prima app Node. js](../../ide/quickstart-nodejs.md), oppure utilizzare **File** > **nuovo progetto**selezionare **JavaScript** , quindi selezionare **applicazione Web Node. js vuota**.
+* Un progetto ASP.NET Core, .NET Core, Python o Node.js. Se non è già presente un progetto, selezionare una delle opzioni seguenti:
+  * ASP.NET: seguire [Guida introduttiva: usare Visual Studio per creare la prima app Web ASP.NET Core](../../ide/quickstart-aspnet-core.md) oppure usare **File** > **Nuovo progetto**, selezionare **Visual C#** > **.NET Core**, quindi selezionare **Applicazione Web ASP.NET Core**. Quando richiesto, selezionare il modello **Applicazione Web (MVC)**, assicurarsi che sia selezionata **Nessuna autenticazione**, quindi selezionare **OK**.
+  * Python: seguire [Guida introduttiva: creare la prima app Web Python con Visual Studio](../../ide/quickstart-python.md) oppure usare **File** > **Nuovo progetto**, selezionare **Python** , quindi selezionare **Progetto Flask Web**.
+  * Node.js: seguire [Guida introduttiva: usare Visual Studio per creare la prima app Node.js](../../ide/quickstart-nodejs.md) oppure usare **File** > **Nuovo progetto**, selezionare **JavaScript**, quindi selezionare **Applicazione Web Node.js vuota**.
 
-* Assicurarsi di compilare il progetto utilizzando il **compilazione > Compila soluzione** comando di menu prima di seguire i passaggi di distribuzione.
+* Assicurarsi di compilare il progetto usando il comando di menu **Compila > Compila soluzione** prima di seguire i passaggi per la distribuzione.

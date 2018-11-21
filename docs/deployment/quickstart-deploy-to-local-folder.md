@@ -14,47 +14,47 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
 ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/11/2018
 ms.locfileid: "38781913"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Distribuire un'app in una cartella locale usando Visual Studio
 
-È possibile usare la **pubblica** dello strumento per la pubblicazione di App ASP.NET, ASP.NET Core, .NET Core e Python in una cartella locale da Visual Studio. Per Node. js, sono supportati i passaggi, ma l'interfaccia utente è diversa.
+È possibile usare lo strumento **Pubblica** per la pubblicazione di app ASP.NET, ASP.NET Core, .NET Core e Python in una cartella locale da Visual Studio. Per Node.js la procedura è supportata, ma l'interfaccia utente è diversa.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 ## <a name="deploy-to-a-local-folder"></a>Distribuire in una cartella locale
 
-1. In Esplora soluzioni fare clic sul progetto e scegliere **Publish** (o utilizzare il **compilare** > **pubblica** voce di menu).
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
 
-    ![Il comando Pubblica nel menu di scelta rapida progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere pubblica")
+    ![Il comando Pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere Pubblica")
 
-1. Se sono stati configurati tutti i profili di pubblicazione, il **pubblica** viene visualizzato il riquadro. Selezionare **Crea nuovo profilo**.
+1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Selezionare **Crea nuovo profilo**.
 
-1. Nel **selezionare una destinazione di pubblicazione** finestra di dialogo, scegliere **cartella**.
+1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** scegliere **Cartella**.
 
-    ![Scegliere la cartella locale come una destinazione di pubblicazione](../deployment/media/quickstart-publish-folder.png "Scegli cartella")
+    ![Scegliere la cartella locale come una destinazione per la pubblicazione](../deployment/media/quickstart-publish-folder.png "Scegli cartella")
 
-1. Immettere un percorso o selezionarne **esplorare** per specificare una cartella locale.
+1. Immettere un percorso o selezionare **Esplora** per specificare una cartella locale.
 
-1. Selezionare **Pubblica**. Visual Studio compila il progetto e lo pubblica nella cartella specificata. Le proprietà del progetto **pubblica** viene visualizzato il riquadro, con un profilo il riepilogo.
+1. Selezionare **Pubblica**. Visual Studio compila il progetto e lo pubblica nella cartella specificata. Viene visualizzato il riquadro **Pubblica** delle proprietà del progetto con un riepilogo del profilo.
 
-    ![Riquadro delle proprietà con il riepilogo un profilo di pubblicazione](../deployment/media/quickstart-publish-folder-summary.png)
+    ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Per configurare le impostazioni di distribuzione, selezionare **Configure** nel profilo del riepilogo e seleziona il **impostazioni** scheda.
+1. Per configurare le impostazioni di distribuzione, selezionare **Configura** nel riepilogo del profilo e selezionare la scheda **Impostazioni**.
 
-    ![Impostazioni del profilo](../deployment/media/quickstart-profile-settings.png "impostazioni del profilo")
+    ![Impostazioni del profilo](../deployment/media/quickstart-profile-settings.png "Impostazioni del profilo")
 
-1. Configurare le opzioni, ad esempio se si desidera distribuire una configurazione Debug o rilascio e quindi selezionare **salvare**.
+1. Configurare le opzioni, ad esempio se distribuire una configurazione di debug o di rilascio e selezionare **Salva**.
 
-1. Per pubblicare di nuovo, selezionare **pubblica**.
+1. Per pubblicare di nuovo, selezionare **Pubblica**.
 
-Distribuire i file pubblicati con il metodo desiderato. Ad esempio, è possibile creare un pacchetto in un *zip* file, usare un comando di copia semplice o distribuirli con qualsiasi pacchetto di installazione di propria scelta.
+Distribuire i file pubblicati con il metodo desiderato. È ad esempio possibile inserire i file in un file *zip*, usare un semplice comando di copia o distribuire i file con un pacchetto di installazione a scelta.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Distribuire un'applicazione .NET Core con lo strumento di pubblicazione](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Creare un pacchetto dell'applicazione desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Distribuire .NET Framework e applicazioni](/dotnet/framework/deployment/)
+- (.NET) [Distribuzione di .NET Framework e delle applicazioni](/dotnet/framework/deployment/)

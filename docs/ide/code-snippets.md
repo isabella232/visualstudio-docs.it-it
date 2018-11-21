@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117212"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348487"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
 I frammenti di codice sono piccoli blocchi di codice riutilizzabili che possono essere inseriti in un file di codice usando un comando di menu di scelta rapida o una combinazione di tasti di scelta rapida. In genere contengono blocchi di codice di uso comune, ad esempio blocchi `try-finally` o `if-else`, ma possono essere usati per inserire intere classi o metodi.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets).
 
 Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti installati disponibili per un linguaggio, aprire **Gestione frammenti di codice** dal menu **Strumenti** in Visual Studio e scegliere il linguaggio nel menu a discesa in alto.
 
@@ -103,3 +106,4 @@ Se si modifica `newPropertyValue` in `m_property`, tutte le istanze di `newPrope
 - [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)
 - [Frammenti di codice Visual C++](../ide/visual-cpp-code-snippets.md)
 - [Informazioni di riferimento sullo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
+- [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets)

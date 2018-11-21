@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626939"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607803"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
@@ -100,7 +100,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
    }
    ```
 
-   In questa fase non è necessario comprendere le operazioni eseguite dal codice. Se si vuole, è possibile eseguire il programma e verificare che visualizza la data corrente nella finestra della console o di output standard.
+   In questa fase non è necessario comprendere le operazioni eseguite dal codice. Se si vuole, è possibile eseguire il programma premendo **Ctrl**+**F5** e verificare che visualizza la data corrente nella finestra della console o di output standard.
 
 ## <a name="add-a-second-project"></a>Aggiungere un secondo progetto
 
@@ -148,7 +148,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Sotto alcune parti del codice viene visualizzata una linea rossa ondulata. Per risolvere l'errore si imposterà il progetto di test come [assembly Friend](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) del progetto **QuickDate**.
 
-1. Tornare al progetto **QuickDate**, aprire il file *Calendar.cs*, se non è già aperto, e usare la seguente [istruzione using](/dotnet/csharp/language-reference/keywords/using-statement) e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> per risolvere l'errore nel progetto di test.
+1. Tornare al progetto **QuickDate**, aprire il file *Calendar.cs*, se non è già aperto, e aggiungere la seguente [istruzione using](/dotnet/csharp/language-reference/keywords/using-statement) e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> all'inizio del file per risolvere l'errore nel progetto di test.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
 ## <a name="project-properties"></a>Proprietà di progetti
 
-La riga del file di codice C# contenente l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> fa riferimento al nome assembly, cioè al nome file, del progetto **QuickTest**. Il nome assembly può non corrispondere al nome del progetto. Per trovare il nome assembly di un progetto, aprire le proprietà del progetto.
+La riga del file *Calendar.cs* contenente l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> fa riferimento al nome assembly, cioè al nome file, del progetto **QuickTest**. Il nome assembly può non corrispondere al nome del progetto. Per trovare il nome assembly di un progetto, aprire le proprietà del progetto.
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**.
 
-   Le *pagine proprietà* del progetto vengono aperte nella scheda **Applicazione**. Le pagine proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test il nome del file eseguibile cambia da *QuickTest.exe* al nome scelto.
+   Le *pagine proprietà* del progetto vengono aperte nella scheda **Applicazione**. Le pagine proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
    ![Proprietà di progetti](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ La riga del file di codice C# contenente l'attributo <xref:System.Runtime.Compil
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per verificare che l'unit test funzioni scegliere **Test** > **Esegui** > **Tutti i test** nella barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+
+![Team Explorer in Visual Studio mostra che il test è stato superato](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> Se **Esplora Test** non si apre automaticamente, aprirlo scegliendo **Test** > **Windows** > **Esplora Test** dalla barra dei menu.
 
 ## <a name="see-also"></a>Vedere anche
 
