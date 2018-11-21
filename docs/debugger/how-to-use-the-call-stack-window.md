@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348891"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257238"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra Stack di chiamate nel debugger
 
-Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate di funzione o routine attualmente presenti nello stack. Il **Stack di chiamate** finestra Mostra l'ordine in cui vengono introduzione chiamate i metodi e le funzioni. Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
+Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate di funzione o routine attualmente presenti nello stack. La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati metodi e funzioni. Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
   
 Quando [i simboli di debug](#bkmk_symbols) non sono disponibili per una parte di uno stack di chiamate, la **Stack di chiamate** finestra potrebbe non essere in grado di visualizzare le informazioni corrette per tale parte dello stack di chiamate, visualizzazione invece:  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in alcuni ambienti di sviluppo integrato, ad esempio Eclipse. 
+> La finestra **Stack di chiamate** è simile alla prospettiva di debug di alcuni IDE come Eclipse. 
 > 
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, selezionare **Importa / Esporta impostazioni** nel **Tools** menu.  Visualizzare [personalizzazione dell'IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -103,7 +103,7 @@ In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice pe
 
 ![Mostra Stack di chiamate nella mappa del codice](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Visualizzare il codice disassembly per una funzione nello stack di chiamate  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Visualizzare il codice disassembly per una funzione nello stack di chiamate (C#, C++, Visual Basic, F#) 
   
 -   Nel **Stack di chiamate** finestra, pulsante destro del mouse la funzione cui disassembly del codice si desidera visualizzare e selezionare **Vai a Disassembly**.    
 
@@ -111,7 +111,8 @@ In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice pe
   
 -   Fare doppio clic nella **Stack di chiamate** finestra e impostare o deselezionare **mostrano \<**  _le informazioni che desidera_ **>**.  
   
-## <a name="bkmk_symbols"></a> Caricare i simboli per un modulo
+## <a name="bkmk_symbols"></a> Caricare i simboli per un modulo (C#, C++, Visual Basic, F#)
+
 Nel **Stack di chiamate** finestra, è possibile caricare i simboli per il codice che non dispone attualmente caricati i simboli di debug. Questi simboli possono essere .NET Framework o i simboli di sistema scaricati dai server dei simboli pubblici Microsoft o i simboli in un percorso dei simboli nel computer in cui si esegue il debug.  
   
 Visualizzare [specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

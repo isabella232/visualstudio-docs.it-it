@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349491"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257381"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
 Database di programma (*PDB*) i file, chiamati anche file di simboli, eseguire il mapping di identificatori e le istruzioni nel codice sorgente del progetto per gli identificatori corrispondenti e le istruzioni in compilate le app. 
 

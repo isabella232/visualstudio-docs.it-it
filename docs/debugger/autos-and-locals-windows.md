@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826711"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257212"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
 
 Il **Auto** e **variabili locali** finestre mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. Il **Auto** finestra Mostra le variabili usate attorno al punto di interruzione corrente. Il **variabili locali** finestra Mostra le variabili definite nell'ambito locale, ovvero in genere la funzione corrente o il metodo. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
+
+ Il **Auto** è disponibile per la finestra C#, codice di Visual Basic, C++ e Python, ma non per JavaScript o F#.
   
 Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**, oppure premere **Ctrl**+**Alt**+**V** > **A**.  
 
@@ -34,7 +36,7 @@ Per aprire la **variabili locali** finestra durante il debug, selezionare **Debu
 Se sono necessarie altre informazioni sul debug di base, vedere [Guida introduttiva con il Debugger](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
-> In questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
 
 ## <a name="use-the-autos-and-locals-windows"></a>Utilizzare le finestre Auto e variabili locali
 
@@ -71,9 +73,7 @@ Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il 
 
 ![Barra degli strumenti posizione di debug](../debugger/media/debuglocationtoolbar.png "barra degli strumenti posizione di Debug")
 
-## <a name="bkmk_whatvariables"></a> Variabili nella finestra Auto
-
- Il **Auto** è disponibile per la finestra C#, Visual Basic e C++ di codice, ma non per JavaScript o F#.
+## <a name="bkmk_whatvariables"></a> Le variabili nella finestra Auto (C#, C++, Visual Basic, Python)
 
  Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto** finestra.
 

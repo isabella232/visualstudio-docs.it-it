@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180178"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257199"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Eseguire il debug in fase di progettazione in Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug in fase di progettazione in Visual Studio (C#, C++, Visual Basic, F#)
 
 In alcuni scenari, è possibile eseguire il debug di codice in fase di progettazione anziché di tempo mentre l'applicazione è in esecuzione. È possibile farlo usando il **Immediate** finestra. Se si desidera eseguire il debug di codice XAML che interagisce con altro codice, ad esempio il codice di associazione dati, è possibile usare **Debug** > **Connetti a processo** a tale scopo.
   
@@ -32,7 +32,7 @@ In alcuni scenari, è possibile eseguire il debug di codice in fase di progettaz
 
 È possibile usare Visual Studio **Immediate** finestra per eseguire una funzione o subroutine mentre l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio si interromperà l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
 
-L'esempio seguente è in Visual Basic, ma il **Immediate** finestra è supportata anche nelle applicazioni c# e C++.
+Nell'esempio seguente è in Visual Basic. Usare la **controllo immediato** finestra in fase di progettazione è supportata anche in C#, C++, e F# delle applicazioni.
   
 1.  Incollare il codice seguente in un'applicazione console Visual Basic:  
   
