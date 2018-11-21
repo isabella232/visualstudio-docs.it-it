@@ -17,16 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447208"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349179"
 ---
 # <a name="outlining"></a>struttura
 
 È possibile scegliere di nascondere parti di codice comprimendo un'area di codice in modo che venga visualizzata sotto un segno più (**+**). Per espandere un'area compressa fare clic sul segno più. Se si preferisce usare la tastiera, per espandere e comprimere è possibile scegliere **CTRL**+**M**+**M**. È anche possibile comprimere un'area della struttura facendo doppio clic su qualsiasi riga nell'area a margine della struttura, che viene visualizzata a sinistra del codice. Il contenuto di un'area compressa può essere visualizzato come descrizione comando quando si passa il mouse sull'area compressa.
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor).
 
 Le aree nel margine della struttura vengono evidenziate anche quando si passa il mouse sul margine. Il valore predefinito del colore dell'evidenziazione può sembrare piuttosto debole in alcune configurazioni di colore. È possibile modificarlo in **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Area comprimibile**.
 
@@ -55,3 +58,4 @@ I comandi seguenti sono disponibili nel sottomenu **Modifica** > **Struttura**.
 ## <a name="see-also"></a>Vedere anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor)

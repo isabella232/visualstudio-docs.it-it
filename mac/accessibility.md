@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: eda5e78888a3d50c628033d9f4331ab3789b20c8
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224136"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296346"
 ---
 # <a name="accessibility"></a>Accessibilità
 
@@ -20,7 +20,7 @@ Oltre alle funzionalità e alle utilità in macOS, Visual Studio per Mac include
 - Opzioni per la dimensione del testo negli editor
 - Personalizzazione dei colori negli editor
 - Personalizzazione dei tasti di scelta rapida
-- Completamento del codice per metodi e parametri 
+- Completamento del codice per metodi e parametri
 
 Per altre informazioni sulle funzionalità di accessibilità in macOS, vedere il [sito Web di Apple](https://www.apple.com/accessibility/mac/).
 
@@ -36,11 +36,10 @@ Le funzionalità di accessibilità di Visual Studio per Mac sono disattivate per
 
 3. Fare clic sul pulsante **Restart Visual Studio** (Riavvia Visual Studio) per rendere effettive le funzionalità di accessibilità.
 
-
-In alternativa, è possibile usare la riga di comando per abilitare le funzionalità di accessibilità. A tale scopo, immettere il comando seguente nel terminale: 
+In alternativa, è possibile usare la riga di comando per abilitare le funzionalità di accessibilità. A tale scopo, immettere il comando seguente nel terminale:
 
 ```bash
-defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1 
+defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
 ```
 
 Dopo aver attivato l'accessibilità, è necessario riavviare Visual Studio.
@@ -49,12 +48,13 @@ Dopo aver attivato l'accessibilità, è necessario riavviare Visual Studio.
 
 La navigazione tramite tastiera può essere abilitata impostando l'opzione di accesso completo tramite tastiera in **Preferenze di Sistema > Tastiera > Abbreviazioni** su **Tutti i controlli**:
 
-  ![Pannello Preferenze di Sistema in macOS](media/accessibility-image2.png)
+![Pannello Preferenze di Sistema in macOS](media/accessibility-image2.png)
 
 L'impostazione dell'accesso completo tramite tastiera attiva il rettangolo di evidenziazione. È quindi possibile selezionare i controlli usando:
+
 - Tabulatore per spostarsi in avanti tra i controlli
 - Maiuscole-Tabulatore per spostarsi indietro tra i controlli
-- Tasti freccia per spostarsi tra i controlli nella direzione delle frecce. 
+- Tasti freccia per spostarsi tra i controlli nella direzione delle frecce.
 
 Premendo Barra spaziatrice viene attivato il controllo evidenziato.
 
@@ -66,13 +66,17 @@ Per spostarsi tra i comandi di VoiceOver dell'interfaccia utente, usare i comand
 
 - Spostare il cursore di VoiceOver tra i controlli: **CTRL+ALT+freccia SINISTRA/freccia DESTRA**
 
-VoiceOver pronuncia il nome dei controlli, alcuni dettagli e le operazioni che possono essere eseguite con il controllo evidenziato. 
+   VoiceOver pronuncia il nome dei controlli, alcuni dettagli e le operazioni che possono essere eseguite con il controllo evidenziato.
 
 - Entrare in gruppi e controlli (come il riquadro della soluzione, la casella degli strumenti e altri riquadri): **CTRL+ALT+MAIUSC+freccia GIÙ**
 
-Una volta all'interno di un controllo, è possibile usare **CTRL+ALT+frecce** per spostarsi all'interno. 
- 
+   Una volta all'interno di un controllo, è possibile usare **CTRL+ALT+frecce** per spostarsi all'interno.
+
 Per informazioni generali sull'uso di Voice over in macOS, fare riferimento alle guide seguenti:
 
 - [Guida Utente di VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
 - [VoiceOver commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (Comandi di VoiceOver in macOS)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Funzionalità di accessibilità di Visual Studio (in Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

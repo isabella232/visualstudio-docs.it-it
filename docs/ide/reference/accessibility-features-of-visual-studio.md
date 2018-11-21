@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943699"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348721"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
@@ -38,11 +38,13 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 
 -   Completamento automatico per metodi e parametri
 
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility).
+
 > [!IMPORTANT]
 > Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato al di fuori degli Stati Uniti, è possibile usare la scheda informativa complementare acclusa al pacchetto software oppure visitare la pagina [Contattaci del Supporto Tecnico Microsoft](http://support.microsoft.com/ContactUs) e fare clic sul collegamento **Individua le sedi Microsoft in tutto il mondo** nella parte inferiore della pagina. Questa pagina fornisce un elenco di numeri di telefono e di indirizzi dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.
 
-
- Per altre informazioni, vedere i seguenti argomenti:
+Per altre informazioni, vedere i seguenti argomenti:
 
 -   [Procedura: Impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 

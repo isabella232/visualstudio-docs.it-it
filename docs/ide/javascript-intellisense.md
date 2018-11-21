@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e34d891fe972bc5d8722598e4b8b1af6066384
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671027"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348124"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 
@@ -143,3 +143,4 @@ Se non si vuole usare l'acquisizione automatica, disattivarla mediante l'aggiunt
 ## <a name="see-also"></a>Vedere anche
 
 - [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [JavaScript support (Supporto per JavaScript) (Visual Studio per Mac)](/visualstudio/mac/javascript)

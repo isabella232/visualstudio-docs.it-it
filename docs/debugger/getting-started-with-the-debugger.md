@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561673"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826778"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Esercitazione: Informazioni sul debug tramite Visual Studio
 
@@ -39,7 +39,7 @@ In questa esercitazione si eseguono le attività seguenti:
 > * Avvio del debugger e raggiungimento dei punti di interruzione
 > * Uso dei comandi per esaminare il codice nel debugger
 > * Ispezione delle variabili nelle finestre dei suggerimenti dati e del debugger
-> * Analisi dello stack di chiamate
+> * Esaminare lo stack di chiamate
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -297,7 +297,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
     I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. 
 
-6. Premere **F5** o il pulsante **Avvia debug**. Viene avviata l'app e viene eseguito il debugger fino alla riga di codice in cui è impostato il punto di interruzione.
+2. Premere **F5** o il pulsante **Avvia debug**. Viene avviata l'app e viene eseguito il debugger fino alla riga di codice in cui è impostato il punto di interruzione.
 
     ![Impostare e raggiungere un punto di interruzione](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ## <a name="navigate-code-using-run-to-click"></a>Esplorare il codice con il pulsante per l'esecuzione fino alla riga selezionata dall'utente
 
-5. Nell'editor di codice scorrere verso il basso e passare il mouse sul metodo `Console.WriteLine` (`std::cout` in C++) nella classe `Triangle` fino a quando non viene visualizzato sulla sinistra il pulsante verde per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Nell'editor di codice scorrere verso il basso e passare il mouse sul metodo `Console.WriteLine` (`std::cout` in C++) nella classe `Triangle` fino a quando non viene visualizzato sulla sinistra il pulsante verde per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
      ![Usare la funzionalità di esecuzione fino alla riga selezionata dall'utente](../debugger/media/get-started-run-to-click.png "Esecuzione fino alla riga selezionata dall'utente")
 
    > [!NOTE]
    > Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è una nuova funzionalità di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se non viene visualizzato il pulsante freccia verde, usare **F11** in questo esempio invece di far avanzare il debugger fino alla posizione corretta.
 
-6. Fare clic sul pulsante per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Fare clic sul pulsante per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     L'uso di questo pulsante è simile all'impostazione di un punto di interruzione temporaneo. Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è uno strumento pratico per l'esplorazione rapida all'interno di un'area visibile del codice dell'app (è possibile fare clic in qualsiasi file aperto).
 
@@ -447,4 +447,4 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. Sono disponibili una panoramica delle funzionalità del debugger e collegamenti a ulteriori informazioni.
 
 > [!div class="nextstepaction"]
-> [Trucchi e suggerimenti per il debugger](../debugger/debugger-tips-and-tricks.md)
+> [Presentazione del debugger](../debugger/debugger-feature-tour.md)

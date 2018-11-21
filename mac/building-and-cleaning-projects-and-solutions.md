@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224276"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294240"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilazione e pulizia di progetti e soluzioni
 
@@ -32,17 +32,18 @@ Per compilare, ricompilare o pulire un'intera soluzione:
     * **Ricompila tutto**: pulisce la soluzione e quindi la compila.
     * **Pulisci tutto**: rimuove tutti i prodotti della compilazione dalla soluzione.
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>Per compilare o ricompilare un progetto singolo
 
 1. Selezionare il progetto nel riquadro Soluzione.
 
 2. Sulla barra dei menu scegliere Compila e quindi scegliere Compila[NomeProgetto], Ricompila[NomeProgetto] o Pulisci[NomeProgetto].
 
-
 ## <a name="to-stop-a-build"></a>Per interrompere una compilazione
 
 Per interrompere una compilazione, premere il quadrato rosso nell'area di stato:
 
- ![Premere il quadrato rosso per interrompere la compilazione](media/compiling-and-building-image3.png)
+![Premere il quadrato rosso per interrompere la compilazione](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Compilazione e pulizia di progetti e soluzioni (Visual Studio in Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

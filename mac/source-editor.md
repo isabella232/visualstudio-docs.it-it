@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 566a776b64cf649443292e1f11efa5a43c539357
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224176"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295696"
 ---
 # <a name="source-editor"></a>Editor standard
 
@@ -30,7 +30,7 @@ Visual Studio per Mac offre molte funzionalità potenti per rendere lo sviluppo 
 
 La riduzione del codice agevola la gestione di file di codice sorgente di grandi dimensioni consentendo agli sviluppatori di mostrare o nascondere intere sezioni di codice, ad esempio direttive, codice e commenti boilerplate e istruzioni #region. La riduzione del codice è disattivata per impostazione predefinita in Visual Studio per Mac
 
-Per attivare la riduzione del codice, spostarsi su **Visual Studio > Preferenze... > Editor di testo > Generale > Riduzione del codice**:
+Per attivare la riduzione del codice, spostarsi su **Visual Studio > Preferenze > Editor di testo > Generale > Riduzione del codice**:
 
 ![Opzioni di riduzione del codice](media/source-editor-image1.png)
 
@@ -38,11 +38,11 @@ Questo menu include anche l'opzione per ridurre #region e commenti per impostazi
 
 Per mostrare o nascondere sezioni, usare il widget di divulgazione accanto al numero di riga:
 
- ![Mostrare o nascondere sezioni nel codice](media/source-editor-image2.png)
+![Mostrare o nascondere sezioni nel codice](media/source-editor-image2.png)
 
-È anche possibile selezionare alternativamente se visualizzare o nascondere le riduzioni, usando la voce di menu **Visualizza > Riduzione> Toggle Fold / Toggle All Folds (Attiva riduzione / Attiva/disattiva tutte le riduzioni)**:
+È anche possibile selezionare alternativamente se visualizzare o nascondere le riduzioni, usando la voce di menu **Visualizza > Riduzione > Toggle Fold / Toggle All Folds (Attiva riduzione / Attiva/disattiva tutte le riduzioni)**:
 
- ![Voce di menu Riduzione](media/source-editor-image19.png)
+![Voce di menu Riduzione](media/source-editor-image19.png)
 
 Questa voce di menu può anche essere usata per abilitare o disabilitare la riduzione del codice.
 
@@ -50,23 +50,23 @@ Questa voce di menu può anche essere usata per abilitare o disabilitare la ridu
 
 Può essere necessario visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
 
-Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_ visualizzare i caratteri invisibili: mai, alla selezione o sempre:
+Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_  visualizzare i caratteri invisibili: mai, alla selezione o sempre:
 
- ![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
+![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
 
 È anche disponibile l'opzione per mostrare tabulazioni, spazi e terminazioni riga:
 
- ![Mostrare tabulazioni e spazi](media/source-editor-image4.png)
+![Mostrare tabulazioni e spazi](media/source-editor-image4.png)
 
- I caratteri invisibili vengono visualizzati come punti grigi, come illustrato nell'immagine seguente:
+I caratteri invisibili vengono visualizzati come punti grigi, come illustrato nell'immagine seguente:
 
- ![spazi vuoti visualizzati](media/source-editor-image22.png)
+![spazi vuoti visualizzati](media/source-editor-image22.png)
 
 ## <a name="ruler"></a>Righello
 
 Il righello per le colonne è utile per determinare le lunghezze delle righe, in particolare quando si lavora in un team che ha linee guida per tali lunghezze. Per attivare o disattivare il righello per le colonne, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli** e selezionare (o deselezionare) **Show Column ruler** (Mostra righello per le colonne), come illustrato nell'immagine seguente:
 
- ![Finestra di dialogo Preferenze con opzione "show column ruler" evidenziata](media/source-editor-image5.png)
+![Finestra di dialogo Preferenze con opzione "show column ruler" evidenziata](media/source-editor-image5.png)
 
  Verrà visualizzata una linea grigia verticale nell'editor standard.
 
@@ -79,3 +79,8 @@ Quando l'opzione "Highlight identifier references (Evidenzia riferimenti identif
 Anche il colore dell'evidenziazione è utile per indicare che qualcosa è assegnato o referenziato. Se qualcosa è assegnato, è evidenziato in rosso, se qualcosa è referenziato, è evidenziato in blu:
 
 ![esempio che illustra il colore dell'evidenziazione](media/source-editor-image7.png)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Funzionalità dell'editor del codice (Visual Studio in Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
+- [Struttura (Visual Studio in Windows)](/visualstudio/ide/outlining)

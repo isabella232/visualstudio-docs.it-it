@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220853"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348943"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida per Visual Studio
 
@@ -22,6 +22,9 @@ ms.locfileid: "51220853"
 
 > [!TIP]
 > I tasti di scelta rapida elencati di seguito sono solo un subset dei tasti di scelta rapida disponibili. Per un elenco completo, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Tasti di scelta rapida comuni in Visual Studio per Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Gestione delle finestre
 
@@ -136,4 +139,5 @@ ms.locfileid: "51220853"
 
 - [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
 - [Tasti di scelta rapida (Azure DevOps Services e TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog di suggerimenti e consigli di Visual Studio](https://blogs.msdn.com/b/zainnab)
+- [Blog di suggerimenti e consigli di Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Tasti di scelta rapida comuni in Visual Studio per Mac](/visualstudio/mac/keyboard-shortcuts)

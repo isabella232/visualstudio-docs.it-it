@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746312"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349244"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gestire le proprietà di progetti e soluzioni
 
@@ -25,6 +25,9 @@ Le proprietà dei progetti governano molti aspetti della compilazione, del debug
 I progetti .NET potrebbero anche avere un nodo di proprietà nell'albero del progetto.
 
 ![Nodo Proprietà nell'albero Esplora soluzioni](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Gestire le proprietà di progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Proprietà di progetti
 
@@ -56,3 +59,4 @@ Per accedere alle proprietà della soluzione, fare clic con il pulsante destro d
 ## <a name="see-also"></a>Vedere anche
 
 - [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Gestire le proprietà di progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/managing-solutions-and-project-properties)
