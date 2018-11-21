@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671144"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257043"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visualizzare il codice disassembly del debugger di Visual Studio
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly del debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
 Il **Disassembly** finestra Mostra il codice assembly corrispondente alle istruzioni create dal compilatore. Se si esegue il debug di codice gestito, queste istruzioni di assembly corrispondono al codice nativo creato dal compilatore Just-in-Time (JIT), non il Microsoft intermediate language (MSIL) creato dal compilatore di Visual Studio.  
   
@@ -41,7 +41,7 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
 
 Oltre alle istruzioni dell'assembly, il **Disassembly** finestra è possibile visualizzare le informazioni facoltative seguenti:  
   
-- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per le applicazioni native, è l'indirizzo di memoria effettiva. Per Visual Basic, C#, o codice gestito, si tratta di un offset dall'inizio della funzione.  
+- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per le applicazioni native, è l'indirizzo di memoria effettiva. Per Visual Basic o C#, si tratta di un offset dall'inizio della funzione.  
   
 - Codice sorgente dal quale deriva il codice assembly.  
   

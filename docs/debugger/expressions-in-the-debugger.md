@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926189"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257252"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.
   
- Le sezioni seguenti forniscono informazioni dettagliate sulle espressioni in linguaggi diversi.  
+ Le sezioni seguenti vengono descritte le limitazioni della valutazione dell'espressione per le lingue supportate da Visual Studio.
   
 ## <a name="f-expressions-are-not-supported"></a>Le espressioni F# non sono supportate  
  Le espressioni F# non sono riconosciute. Se si esegue il debug del codice F#, è necessario tradurre le espressioni nella sintassi C# prima di immetterle in una finestra o finestra di dialogo del debugger. Quando si traducono espressioni da F# a C#, tenere presente che C# usa l'operatore `==` per verificare l'uguaglianza, mentre F# usa il segno `=`singolo.  

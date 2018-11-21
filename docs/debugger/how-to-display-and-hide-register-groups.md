@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: visualizzare e nascondere gruppi di registri | Documenti Microsoft'
+title: 'Procedura: visualizzare e nascondere gruppi di registri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,24 +21,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a98927d0132402e2977d5d8f1f28cbba43da636c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474089"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257147"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Procedura: visualizzare e nascondere gruppi di registri
-Il **registra** è disponibile solo se il debug a livello di indirizzo è attivato nella finestra di **opzioni** nella finestra di dialogo **debug** nodo **generale**categoria.  
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedura: visualizzare e nascondere gruppi di registri (C#, C++, Visual Basic, F#)
+
+Il **registra** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni** della finestra di dialogo **debug** nodo, **generale**categoria.  
   
- Per evitare confusione, il **registra** finestra i registri sono organizzati in gruppi. Se si fa clic su di **registra** finestra, verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura seguente.  
+ Per evitare confusione, il **registra** finestra i registri sono organizzati in gruppi. Se facendo clic la **registra** finestra, verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.  
   
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ### <a name="to-display-or-hide-register-groups"></a>Per visualizzare o nascondere i gruppi di registri  
   
-1.  Fare doppio clic su di **registra** finestra.  
+1.  Fare doppio clic il **registra** finestra.  
   
 2.  Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.  
   

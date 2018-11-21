@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18689a82fe2ae7c66eb8e8d6ef9bd115e2950cac
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073993"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257225"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Impostazione del debug e rilascio delle configurazioni in Visual Studio
 
@@ -64,7 +64,7 @@ oppure
 
   ![le barre degli strumenti di configurazione della build](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
-## <a name="BKMK_symbols_release"></a>Generare i file di simboli (PDB) per una compilazione
+## <a name="BKMK_symbols_release"></a>Generare i file di simboli (PDB) per una compilazione (C#, C++, Visual Basic, F#)
 
 È possibile scegliere di generare file di simboli (PDB) e cosa includere informazioni di debug. Per la maggior parte dei tipi di progetto, il compilatore genera file di simboli per impostazione predefinita per il debug e build di rilascio, mentre altre impostazioni predefinite sono diversi dal tipo di progetto e la versione di Visual Studio.
 

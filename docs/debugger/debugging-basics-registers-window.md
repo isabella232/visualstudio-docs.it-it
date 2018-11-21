@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f43e8708573a2fdd11a1c667a69bc1767ecda3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278829"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257056"
 ---
-# <a name="about-the-registers-window-in-visual-studio"></a>Informazioni sulla finestra Registri in Visual Studio
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra Registri in Visual Studio (C#, C++, Visual Basic, F#)
+
 Il **registra** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni** della finestra di dialogo **debug** nodo.  
   
  I registri sono speciali posizioni interne a un processore (CPU) utilizzate per archiviare piccole porzioni di dati attualmente in uso da parte del processore. Durante la compilazione o l'interpretazione di codice sorgente vengono generate istruzioni che spostano dati dalla memoria ai registri e viceversa, secondo necessità. Poiché l'accesso ai dati contenuti nei registri è molto rapido se confrontato all'accesso ai dati in memoria, il codice che consente al processore la conservazione dei dati in un registro e l'accesso ripetuto ad essi tende a essere eseguito più velocemente rispetto al codice che impone al processore di caricare e scaricare continuamente i registri.	 Per facilitare la conservazione dei dati nei registri da parte del compilatore ed eseguire ulteriori ottimizzazioni è consigliabile evitare l'utilizzo di variabili globali e basarsi il più possibile su variabili locali. Il codice scritto in questo modo viene definito come dotato di un buon posizionamento dei riferimenti. In alcuni linguaggi, quali C/C++, il programmatore può dichiarare una variabile di registro, imponendo così al compilatore di conservare sempre, per quanto possibile, la variabile in un registro. Per altre informazioni, vedere [parola chiave Register](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  

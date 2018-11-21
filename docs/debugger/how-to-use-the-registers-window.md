@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551847"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257169"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Visualizzare i valori di registrare e usare la finestra registri nel Debugger di Visual Studio
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare i valori di registrare e usare la finestra registri nel Debugger di Visual Studio (C#, C++, Visual Basic, F#)
 La finestra Registri è disponibile solo se è abilitato il debug a livello di indirizzo nel **le opzioni** della finestra di dialogo **debug** nodo **generale** categoria.  
   
  Il **registra** finestra viene visualizzato il contenuto. Se si mantengono le **registra** finestra aperta durante l'esecuzione del programma, è possibile visualizzare le modifiche dei valori durante l'esecuzione di codice. I valori modificati di recente sono visualizzati in rosso. È possibile modificare i valori dei registri. Per altre informazioni, vedere [procedura: modificare un valore di registro](../debugger/how-to-edit-a-register-value.md).  

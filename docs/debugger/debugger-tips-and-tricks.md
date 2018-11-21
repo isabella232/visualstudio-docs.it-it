@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612727"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257355"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni su consigli e suggerimenti relativi alla produttività per il Debugger di Visual Studio
 
@@ -60,10 +60,10 @@ Con il debugger sospeso su una riga di codice, utilizzare il mouse per trascinar
 
 ![Spostare il puntatore di esecuzione](../debugger/media/dbg-tour-move-the-execution-pointer.gif "spostare il puntatore di esecuzione")
 
-Se si modifica il flusso di esecuzione, è possibile eseguire operazioni come percorsi di esecuzione di codice diversi di test o eseguire di nuovo codice senza riavviare il debugger.
+Modificando il flusso di esecuzione è possibile eseguire operazioni come testare percorsi di esecuzione del codice diversi o rieseguire il codice senza riavviare il debugger.
 
 > [!WARNING]
-> Spesso è necessario prestare attenzione con questa funzionalità, e viene visualizzato un avviso nella descrizione comando. È possibile visualizzare altri avvisi, troppo. Spostare il puntatore del mouse non è possibile ripristinare l'app a uno stato precedente dell'applicazione.
+> Spesso questa funzionalità deve essere usata con attenzione. Nella descrizione comando viene visualizzato un avviso. È anche possibile che vengano visualizzati altri avvisi. Spostare il puntatore del mouse non è possibile ripristinare l'app a uno stato precedente dell'applicazione.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Tenere traccia di un oggetto out-of-scope (c#, Visual Basic)
 
@@ -145,7 +145,7 @@ Selezionare un'operazione nella visualizzazione di riepilogo per visualizzare al
 
 Per altre informazioni, vedere [Utilizzo della rete](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Acquisire familiarità con la modalità con cui il debugger si connette all'App
+## <a name="modules_window"></a> Acquisire familiarità con la modalità con cui il debugger si connette all'App (C#, C++, Visual Basic, F#)
 
 Per collegare all'App in esecuzione, il debugger carica i file di simboli (PDB) generati per la stessa build dell'app che si sta tentando di eseguire il debug. In alcuni scenari, può essere utile conoscenza dei file di simboli. È possibile esaminare come Visual Studio carica il file di simboli tramite il **moduli** finestra.
 
