@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224199"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296450"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -24,7 +24,7 @@ L'immagine seguente illustra le opzioni offerte da Visual Studio per Mac dalla v
 
 ![Voce di menu Controllo della versione](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Push e pull 
+## <a name="push-and-pull"></a>Push e pull
 
 Push e pull sono due delle azioni utilizzate più di frequente in Git. Per sincronizzare le modifiche apportate da altri utenti nel repository remoto, è necessario eseguire il **Pull** da tale posizione. Questa operazione viene eseguita in Visual Studio per Mac selezionando **Controllo della versione > Aggiorna soluzione**.
 
@@ -54,11 +54,11 @@ Queste schede consentono le azioni seguenti:
 
     ![Scheda Log](media/version-control-gitLog.png)
 
-* **Unisci**: può essere usata in caso di un conflitto di unione quando si esegue il commit del lavoro. Mostra una rappresentazione visiva delle modifiche apportate dall'utente e dall'altro sviluppatore, per consentire di combinare correttamente entrambe le sezioni del codice. 
+* **Unisci**: può essere usata in caso di un conflitto di unione quando si esegue il commit del lavoro. Mostra una rappresentazione visiva delle modifiche apportate dall'utente e dall'altro sviluppatore, per consentire di combinare correttamente entrambe le sezioni del codice.
 
-## <a name="switching-branches"></a>Cambio di rami 
+## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è denominato ramo **Master**. Tecnicamente non vi è alcuna differenza tra il ramo master e l'altro ma il ramo master viene più frequentemente considerato come ramo "attivo" o di "produzione" dai team di sviluppo.
+Per impostazione predefinita, il primo ramo creato in un repository è denominato ramo  **Master** . Tecnicamente non vi è alcuna differenza tra il ramo master e l'altro ma il ramo master viene più frequentemente considerato come ramo "attivo" o di "produzione" dai team di sviluppo.
 
 È possibile creare una linea di sviluppo indipendente, creando una diramazione del ramo master (o di qualsiasi altro ramo). Questo offre una nuova versione del ramo master in un determinato punto nel tempo, consentendo lo sviluppo indipendente di ciò che è "attivo". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
@@ -80,7 +80,7 @@ Vedere il ramo corrente nel riquadro della soluzione, accanto al nome del proget
 
  ![Ramo corrente visualizzato nel riquadro soluzione](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Revisione e commit 
+## <a name="reviewing-and-committing"></a>Revisione e commit
 
 Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato precedentemente in questo argomento.
 
@@ -90,8 +90,12 @@ Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Contro
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file in un repository remoto, premere **Commit...**, inserire un messaggio di commit e confermare con il pulsante Commit:
+Per eseguire il commit di un file in un repository remoto, premere **Commit**, inserire un messaggio di commit e confermare con il pulsante Commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 
 Dopo aver eseguito il commit delle modifiche, eseguirne il push in un repository remoto per renderle visibili agli altri utenti.
+
+## <a name="see-also"></a>Vedere anche
+
+* [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017) (Condividere il codice con Visual Studio 2017 e Azure Repos Git)

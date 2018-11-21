@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224037"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349439"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni dati
 
@@ -19,43 +19,40 @@ Visual Studio per Mac include il supporto dell'interfaccia utente per il debugge
 
 I visualizzatori nel riquadro **Locale** per il debug possono essere avviati facendo clic sull'icona di anteprima visualizzata a destra del valore, quando si posiziona il puntatore del mouse sulla riga:
 
- ![Riquadro Locale](media/data-visualizations-image9.png)
+![Riquadro Locale](media/data-visualizations-image9.png)
 
 L'elenco seguente presenta molte delle nuove visualizzazioni per il debug in Visual Studio per Mac.
 
 ## <a name="point"></a>Punto
 Un oggetto Point/PointF o CGPoint in iOS e Mac viene visualizzato come tupla che mostra i valori X e Y nel riquadro del debug:
 
- ![Visualizzazione dei punti](media/data-visualizations-image10.png)
+![Visualizzazione dei punti](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>Dimensione
 Un oggetto Size/SizeF CGSize in iOS e Mac viene visualizzato come rettangolo. L'oggetto viene disegnato in modo da ridimensionarsi fino a 250 px e da questo momento in poi il rettangolo viene ridimensionato in base al valore massimo di 250px:
 
-![Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
-
+[Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>Rettangolo
 Un oggetto Rectangle/RectangleF o CGRect in iOS e Mac mostra le dimensioni e l'origine. Come per gli oggetti Size, l'oggetto viene disegnato in modo da ridimensionarsi, fino a 250 px:
 
- ![Visualizzazione dei rettangoli](media/data-visualizations-image12.png)
+![Visualizzazione dei rettangoli](media/data-visualizations-image12.png)
 
 ## <a name="coordinate"></a>Coordinate
 Le coordinate vengono tracciate su una mappa, aggiungendo la posizione al centro:
 
-![Visualizzazione delle coordinate](media/data-visualizations-image13.png)
+[Visualizzazione delle coordinate](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>Colore
 Visualizza le proprietà UIColor, CGColor e Color, indicando l'anteprima del colore, i componenti RGBA, i valori di tonalità-luminosità-saturazione e il valore esadecimale del colore:
 
 ![Visualizzazione dei colori](media/data-visualizations-image14.png)
 
-
 ## <a name="images"></a>Immagini
 
 Gli elementi multimediali vengono visualizzati in modo da ridimensionarsi fino a una dimensione massima di 250 px, quindi vengono ridimensionati in base allo spazio disponibile quando l'immagine supera 250 px:
 
- ![Visualizzazione delle immagini](media/data-visualizations-image15.png)
-
+![Visualizzazione delle immagini](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>Curve di Bézier
 
@@ -63,10 +60,9 @@ Il visualizzatore mostra un oggetto `NSBezierPath`:
 
 ![Visualizzazione delle curve di Bézier](media/data-visualizations-image16.png)
 
-
 ## <a name="string"></a>Stringa
 
-Una stringa di meno di 100 caratteri viene visualizzata completamente, senza anteprima. Le stringhe più lunghe vengono visualizzate completamente nell'anteprima. Le stringhe sono modificabili e il visualizzatore include un pulsante di modifica, che permette la modifica del valore della stringa nell'anteprima o nell'editor dei valori delle stringhe, mostrato di seguito:
+Una stringa di meno di 100 caratteri viene visualizzata completamente, senza anteprima. Le stringhe più lunghe verranno visualizzate completamente nell'anteprima. Le stringhe sono modificabili e il visualizzatore include un pulsante di modifica, che permette la modifica del valore della stringa nell'anteprima o nell'editor dei valori delle stringhe, mostrato di seguito:
 
 ![Visualizzazione delle stringhe](media/data-visualizations-image17.png)
 
@@ -78,7 +74,7 @@ Una stringa di meno di 100 caratteri viene visualizzata completamente, senza ant
 
 ### <a name="editor"></a>Editor:
 
- ![Visualizzazione nell'editor](media/data-visualizations-image21.png)
+![Visualizzazione nell'editor](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
@@ -90,7 +86,7 @@ IEnumerable enumera tutti i valori. I valori di ogni oggetto possono essere visu
 
 Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
- ![Altre visualizzazioni](media/data-visualizations-image23.png)
+![Altre visualizzazioni](media/data-visualizations-image23.png)
 
 *   **Primitives**
     *   Visualizza il valore non elaborato del tipo primitivo.
@@ -104,3 +100,8 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
     *   Mostra un collegamento ipertestuale su cui è possibile fare clic.
 *   **IntPtr**
     *   Visualizza una rappresentazione esadecimale di un oggetto IntPtr.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Esaminare le variabili nelle finestre Variabili locali e Auto](/visualstudio/debugger/autos-and-locals-windows)
+- [Visualizzare le stringhe in un visualizzatore (Visual Studio in Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

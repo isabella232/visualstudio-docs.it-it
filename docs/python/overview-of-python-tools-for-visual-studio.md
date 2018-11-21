@@ -1,7 +1,7 @@
 ---
 title: Panoramica del supporto di Python in Visual Studio in Windows
 description: Riepilogo delle funzionalità Python di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS).
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee6d8349887207a7c9eaf34ec2485d045acd4e47
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000874"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001334"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 

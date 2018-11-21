@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384240"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349101"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -93,6 +93,9 @@ Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati 
 
 ## <a name="multi-caret-selection"></a>Selezione di più punti di inserimento
 
+> [!NOTE]
+> Questa sezione si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Selezione blocco](/visualstudio/mac/block-selection).
+
 **Novità in Visual Studio 2017 versione 15.8**
 
 Usare la *selezione di più punti di inserimento* per apportare la stessa modifica apportata in due o più posizioni nello stesso momento. Ad esempio, è possibile inserire lo stesso testo o modificare il testo esistente in più posizioni nello stesso momento.
@@ -130,3 +133,4 @@ Alcuni comandi sono disponibili anche nel menu **Modifica**, in **Più punti di 
 
 - [Usare espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refactoring del codice in Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Selezione blocco (Visual Studio per Mac)](/visualstudio/mac/block-selection)

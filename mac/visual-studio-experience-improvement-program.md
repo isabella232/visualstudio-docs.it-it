@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223937"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294474"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
-Analisi utilizzo software di Visual Studio è un programma pensato per aiutare Microsoft a migliorare nel tempo Visual Studio per Mac. Il programma raccoglie informazioni sull'hardware del computer e sulle modalità d'uso di Visual Studio per Mac senza interrompere le attività dell'utente al computer. I dati raccolti consentono a Microsoft di identificare le funzionalità da migliorare. Questo documento illustra come acconsentire o rifiutare esplicitamente di partecipare al programma.
+Analisi utilizzo software di Visual Studio è un programma pensato per aiutare Microsoft a migliorare nel tempo Visual Studio per Mac. Il programma raccoglie informazioni sull'hardware del computer e sulle modalità d'uso di Visual Studio per Mac senza interrompere le attività dell'utente al computer. I dati raccolti consentono a Microsoft di identificare le funzionalità da migliorare. Questo articolo descrive come acconsentire o rifiutare esplicitamente di partecipare al programma.
 
-Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utilizzo software di Visual Studio, leggere l'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).  
+Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utilizzo software di Visual Studio, leggere l'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Scelta e controllo su Analisi utilizzo software di Visual Studio
 
@@ -34,6 +34,8 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 
 ## <a name="see-also"></a>Vedere anche
 
+* [Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program) (Analisi utilizzo software) (Visual Studio in Windows)
+* [Log generati dal sistema raccolti da Visual Studio (in Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Come segnalare un problema con Visual Studio per Mac](report-a-problem.md)
 * [Community degli sviluppatori Visual Studio per Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
 * [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)

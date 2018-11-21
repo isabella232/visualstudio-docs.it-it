@@ -6,12 +6,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: f02bd648f7e52a7ff82a2ab546f19e979eccf9e6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101121"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293614"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Come segnalare un problema in Visual Studio per Mac
 
@@ -29,7 +29,7 @@ Verrà visualizzata la pagina Web **Segnala un problema**. È possibile usare qu
 
 ![Pagina Web per la segnalazione di un problema](media/report-problem-image2.png)
 
-Fare clic sul pulsante **Segnala un problema** nella pagina Web. 
+Fare clic sul pulsante **Segnala un problema** nella pagina Web.
 
 Se non è già stato eseguito l'accesso all'applicazione Developer Community, verrà chiesto di farlo nella pagina seguente. Fare clic sul pulsante **Accetta** per autorizzare l'applicazione Developer Community per l'account Microsoft:
 
@@ -41,4 +41,9 @@ Specificare un titolo descrittivo per il problema insieme a eventuali informazio
 
 ## <a name="provide-a-suggestion"></a>Inviare un suggerimento
 
-Usare il collegamento **Invia un suggerimento** nella pagina iniziale per passare alla [pagina UserVoice di Visual Studio per Mac](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac). Qui è possibile aggiungere nuove richieste o votare richieste esistenti.
+Usare il collegamento **Invia un suggerimento** nella pagina iniziale per passare alla [pagina Suggerire una funzionalità di Visual Studio per Mac](https://developercommunity.visualstudio.com/content/idea/post.html?space=41). Qui è possibile aggiungere nuove richieste o votare richieste esistenti.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Segnalare un problema di Visual Studio (in Windows)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [Suggerire una funzionalità per Visual Studio](/visualstudio/ide/suggest-a-feature)

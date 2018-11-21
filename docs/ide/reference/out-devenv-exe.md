@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 623f4e8a8a2f6e275c42507aa3839106f3a1dd2f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704486"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948244"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Specifica un file per archiviare e visualizzare gli errori quando si esegue, compila, ricompila o distribuisce una soluzione.

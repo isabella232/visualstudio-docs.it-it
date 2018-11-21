@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Office 365 Developer incluso nella sotto
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758386"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Vantaggio dell'abbonamento a Office 365 Developer nelle sottoscrizioni di Visual Studio
 
@@ -28,19 +28,19 @@ I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise rice
 
 3. Dopo il completamento della procedura di accesso, viene visualizzata la pagina dei vantaggi per le sottoscrizioni.  Se si hanno più abbonamenti, è possibile passare dall'uno all'altro facendo clic sulla freccia dell'elenco a discesa nell'angolo superiore destro, sotto la barra multifunzione scura.  Il vantaggio Abbonamento a Office 365 Developer si trova nella categoria Strumenti.  Usare la freccia a destra della riga di riquadri per scorrere la pagina fino a rendere visibile il riquadro Office.
 
-4. Fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.   
+4. Fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
    > [!div class="mx-imgBorder"]
    > ![Riquadro del vantaggio Office 365 Developer](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5. Il passaggio successivo consiste nella creazione di un account.  Verranno visualizzati il nome e l'indirizzo e-mail di accesso.  
+5. Il passaggio successivo consiste nella creazione di un account.  Verranno visualizzati il nome e l'indirizzo e-mail di accesso.
 6. Scegliere il paese.
-7. Immettere il nome della società. 
-8. Fare clic sulla prima casella di controllo per accettare i termini e le condizioni. 
+7. Immettere il nome della società.
+8. Fare clic sulla prima casella di controllo per accettare i termini e le condizioni.
 9. Scegliere **Avanti**.
    > [!div class="mx-imgBorder"]
    > ![Registrazione a Office 365 Developer](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. Indicare le preferenze e le aree di interesse e fare clic su **Attiva sottoscrizione**.   
+10. Indicare le preferenze e le aree di interesse e fare clic su **Attiva sottoscrizione**.
     > [!div class="mx-imgBorder"]
     > ![Preferenze di Office 365 Developer](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -48,7 +48,7 @@ I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise rice
     > [!div class="mx-imgBorder"]
     > ![Nome utente e dominio di Office 365 Developer](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. Immettere il numero di telefono e fare clic su **Invia il codice**.  Ciò consente di assicurarsi che l'account venga creato da una persona reale. 
+12. Immettere il numero di telefono e fare clic su **Invia il codice**.  Ciò consente di assicurarsi che l'account venga creato da una persona reale.
     > [!div class="mx-imgBorder"]
     > ![Verifica telefonica di Office 365 Developer](_img/vs-office-dev/vs-office-dev-send-code.png)
 
@@ -56,13 +56,13 @@ I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise rice
     > [!div class="mx-imgBorder"]
     > ![Convalida codice di Office 365 Developer](_img/vs-office-dev/vs-office-dev-setup.png)
 
-La procedura è terminata.  Verrà visualizzata una pagina con le informazioni definite dalle preferenze.  
+La procedura è terminata.  Verrà visualizzata una pagina con le informazioni definite dalle preferenze.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Per accedere all'abbonamento per sviluppatori, visitare [office.com](https://www.office.com) e accedere con l'ID utente e password appena creati.
 
-Per altre informazioni sull'abbonamento a Office 365 Developer, vedere le [domande frequenti sul programma Office 365 Developer](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq). 
-
+Per altre informazioni sull'abbonamento a Office 365 Developer, vedere le [domande frequenti sul programma Office 365 Developer](/office/developer-program/office-365-developer-program-faq).
 
 ## <a name="eligibility"></a>Idoneità
 
@@ -79,9 +79,8 @@ Per altre informazioni sull'abbonamento a Office 365 Developer, vedere le [doman
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
-
-
 ## <a name="support-resources"></a>Risorse di supporto
+
 -  Serve aiuto con l'abbonamento a Office Developer? Vedere le risorse di [supporto](https://developer.microsoft.com/office/support) in [Office Dev Center](https://developer.microsoft.com/office).
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

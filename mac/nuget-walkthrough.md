@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: af10c9b6f5b2d2462d0dfd08bb8010c2bbe74e2f
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4c945af52f4d19a1966809e905119d491cfc7432
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224394"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295748"
 ---
-# <a name="including-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
+# <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
 NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET ed è integrato in Visual Studio per Mac e Visual Studio in Windows. È possibile cercare e aggiungere pacchetti nei progetti Xamarin.iOS e Xamarin.Android usando entrambi gli IDE.
 
-Questo documento esamina come includere un pacchetto NuGet in un progetto e illustra la catena di strumenti che rende facile il processo.
+Questo articolo descrive come includere un pacchetto NuGet in un progetto e illustra la catena di strumenti che rende facile il processo.
 
 ## <a name="nuget-in-visual-studio-for-mac"></a>NuGet in Visual Studio per Mac
 
@@ -34,7 +34,7 @@ Con il progetto aperto in Visual Studio per Mac, fare clic con il pulsante destr
 
 ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
-Verrà visualizzata la finestra _Aggiungi pacchetti_. Verificare che l'elenco a discesa Origine sia impostato su `nuget.org`:
+Verrà visualizzata la finestra **Aggiungi pacchetti**. Verificare che l'elenco a discesa Origine sia impostato su `nuget.org`:
 
 ![Elenco a discesa Origine](media/nuget-walkthrough-Source.png)
 
@@ -42,8 +42,7 @@ Quando la finestra viene visualizzata, carica un elenco di pacchetti dall'origin
 
 ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio `azure`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante **Aggiungi pacchetto** per avviare l'installazione.
-
+Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio  `azure`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante  **Aggiungi pacchetto**  per avviare l'installazione.
 
 [Aggiungere un pacchetto NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +56,7 @@ Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzi
 
 Dopo che il pacchetto NuGet è stato aggiunto e i riferimenti del progetto sono stati aggiornati, è possibile programmare usando le API come si farebbe con qualsiasi riferimento del progetto.
 
-Assicurarsi di aggiungere le direttive `using` necessarie all'inizio del file:
+Assicurarsi di aggiungere le direttive `using` necessarie all'inizio del file:
 
 ```csharp
 using Newtonsoft.Json;
@@ -81,7 +80,7 @@ Fare clic con il pulsante destro del mouse su **Pacchetti** per accedere al menu
 *   **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
 *   **Ripristina** - Scarica tutti i pacchetti mancanti (senza aggiornare i pacchetti esistenti alle versioni più recenti).
 
-Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e influiscono su tutti i progetti nella soluzione. 
+Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e influiscono su tutti i progetti nella soluzione.
 
 È anche possibile fare clic con il pulsante destro del mouse sui singoli pacchetti per accedere a un menu di scelta rapida:
 
@@ -91,12 +90,11 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 *   **Aggiorna** - Controlla il server di origine e scarica una versione più recente, se disponibile.
 *   **Rimuovi** - Rimuove il pacchetto dal progetto e gli assembly correlati dai riferimenti del progetto.
 
-
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 
 I pacchetti disponibili per l'installazione vengono recuperati inizialmente da nuget.org. È tuttavia possibile aggiungere in Visual Studio per Mac altri percorsi dei pacchetti. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
 
-In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale. 
+In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale.
 
 ![Origini dei pacchetti](media/nuget-walkthrough-PackageSource.png)
 
@@ -110,9 +108,12 @@ Quando si cercano i pacchetti è quindi possibile selezionare origini diverse:
 
 ## <a name="version-control"></a>Controllo della versione
 
-La documentazione di NuGet illustra come [usare NuGet senza eseguire il commit di pacchetti nel controllo del codice sorgente](https://docs.microsoft.com/nuget/consume-packages/packages-and-source-control). Se si preferisce non archiviare i file binari e le informazioni non usate nel controllo del codice sorgente, è possibile configurare Visual Studio per Mac per il ripristino automatico dei pacchetti dal server. Ciò significa che quando uno sviluppatore recupera il progetto dal controllo del codice sorgente per la prima volta, Visual Studio per Mac scarica e installa automaticamente i pacchetti richiesti.
+La documentazione di NuGet illustra come [usare NuGet senza eseguire il commit di pacchetti nel controllo del codice sorgente](/nuget/consume-packages/packages-and-source-control). Se si preferisce non archiviare i file binari e le informazioni non usate nel controllo del codice sorgente, è possibile configurare Visual Studio per Mac per il ripristino automatico dei pacchetti dal server. Ciò significa che quando uno sviluppatore recupera il progetto dal controllo del codice sorgente per la prima volta, Visual Studio per Mac scarica e installa automaticamente i pacchetti richiesti.
 
 ![Ripristino automatico dei pacchetti](media/nuget-walkthrough-AutoRestore.png)
 
 Vedere la documentazione relativa al controllo del codice sorgente specifico per informazioni dettagliate su come escludere la directory `packages` dal controllo.
 
+## <a name="see-also"></a>Vedere anche
+
+* [Installare e usare un pacchetto in Visual Studio (in Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

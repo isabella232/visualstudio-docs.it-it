@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33726d600cd4988fa3ad4a07aea9df10db70ea7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd6d9059f43b209e6430c806fe26286e046f8f0e
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942578"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948205"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 Visualizza una finestra di messaggio contenente tutte le opzioni `devenv` e una breve descrizione di ciascuna di esse.

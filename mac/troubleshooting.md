@@ -1,17 +1,17 @@
 ---
-title: Risoluzione dei problemi di Visual Studio per Mac
+title: Risolvere i problemi
 description: Problemi comuni e risoluzioni per Visual Studio per gli utenti Mac.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224453"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294643"
 ---
 # <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -27,7 +27,7 @@ Quando viene rilevata un'eccezione, viene visualizzato un fumetto. Per visualizz
 
 ![Visualizzare ulteriori dettagli su un'eccezione](media/troubleshooting-image2.png)
 
-Verrà visualizzata la finestra di dialogo **Mostra dettagli** che include ulteriori informazioni sull'eccezione:
+Viene visualizzata la finestra di dialogo **Mostra dettagli** che include ulteriori informazioni sull'eccezione:
 
 ![Finestra di dialogo Mostra dettagli](media/troubleshooting-image3.png)
 
@@ -45,4 +45,8 @@ Le sezioni importanti della finestra di dialogo numerate sopra sono descritte in
 10. Per impostazione predefinita, questa opzione è impostata in base a come è impostata l'opzione **Esegui solo il debug del codice del progetto** nelle impostazioni del debugger. Se si seleziona questa casella, si consentirà di comprimere tutto il codice non utente in una sola riga in StackTrace.
 11. Pulsante di copia che consente di copiare l'output di `exception.ToString()` negli Appunti.
 
-Notare che solo alcune sezioni saranno visibili quando l'eccezione ha un'eccezione Inner.
+Notare che alcune sezioni sono visibili solo quando l'eccezione ha un'eccezione interna.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Risorse per la risoluzione dei problemi relativi a errori IDE (Visual Studio in Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

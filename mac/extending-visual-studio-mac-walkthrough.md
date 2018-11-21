@@ -5,12 +5,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c7ae7fb3a2b96efc7ad4009f584baba6b80f66da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894677"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294305"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Procedura dettagliata per l'estensione di Visual Studio per Mac
 
@@ -135,3 +135,7 @@ Questo esempio usa Addin Maker. Addin Maker crea un nuovo modello di progetto e 
 15. Infine, eseguire il pacchetto di estensione per testarlo. Nella nuova istanza di Visual Studio per Mac selezionare **Modifica > Inserisci data**. La data e l'ora corrente vengono aggiunte nel punto di inserimento, come mostrato nello screenshot seguente:
 
     ![Screenshot dell'inserimento della data](media/extending-visual-studio-mac-addin12.png)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Create your first extension (Visual Studio in Windows)](/visualstudio/extensibility/extensibility-hello-world) (Creare la prima estensione)

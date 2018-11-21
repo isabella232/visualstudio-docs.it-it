@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928347"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645146"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -46,7 +46,7 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL**+**.** (o **ALT**+**INVIO** in profilo C# ) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
 | **Ctrl**+**D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **MAIUSC**+**ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
-| **CTRL** + **ALT** + **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
+| **MAIUSC** + **ALT** + **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 | **CTRL**+**Q** | Avvio veloce | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **CTRL**+**F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |

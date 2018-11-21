@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 79d96ac61bcec198c899d709677df775332db383
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224174"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295280"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
@@ -27,9 +27,9 @@ A qualsiasi progetto è anche possibile aggiungere riferimenti Web e riferimenti
 
 ## <a name="assembly-references"></a>Riferimenti ad assembly
 
-Ogni framework in Xamarin include più di una dozzina di assembly. Non a tutti i pacchetti di assembly viene fatto riferimento nel progetto per impostazione predefinita. 
+Ogni framework in Xamarin include più di una dozzina di assembly. Non a tutti i pacchetti di assembly viene fatto riferimento nel progetto per impostazione predefinita.
 
-Per modificare i pacchetti a cui viene fatto riferimento nel progetto, usare la finestra di dialogo _Modifica riferimenti_, che è possibile visualizzare facendo doppio clic sulla cartella Riferimenti oppure scegliendo Modifica riferimenti tra le azioni del menu di scelta rapida:
+Per modificare i pacchetti a cui viene fatto riferimento nel progetto, usare la finestra di dialogo **Modifica riferimenti**, che è possibile visualizzare facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
 
 ![Finestra di dialogo dei riferimenti ad assembly](media/projects-and-solutions-image11.png)
 
@@ -42,3 +42,8 @@ NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET. I
 A tale scopo, fare clic con il pulsante destro del mouse sulla cartella **Pacchetto** nel riquadro della soluzione e scegliere Aggiungi pacchetti.
 
 Per altre informazioni sull'uso di un pacchetto NuGet, vedere la procedura guidata [Inserimento di un pacchetto NuGet nel progetto](nuget-walkthrough.md).
+
+## <a name="see-also"></a>Vedere anche
+
+- [Gestire i riferimenti (Visual Studio in Windows)](/visualstudio/ide/managing-references-in-a-project)
+- [Aggiunta di riferimenti tramite NuGet o SDK di estensione (Visual Studio in Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

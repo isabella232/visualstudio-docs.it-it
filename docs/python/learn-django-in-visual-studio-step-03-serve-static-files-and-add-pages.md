@@ -1,7 +1,7 @@
 ---
 title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 3
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, come rendere disponibili file statici, aggiungere pagine all'app e usare l'ereditarietà dei modelli
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626945"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001295"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
