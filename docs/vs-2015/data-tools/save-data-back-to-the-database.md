@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829643"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281849"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 ## <a name="two-stage-updates"></a>Aggiornamenti in due fasi  
  Aggiornamento di un'origine dati è un processo in due passaggi. Il primo passaggio consiste nell'aggiornare il set di dati con i nuovi record, record modificati o i record eliminati. Se l'applicazione non invia mai le modifiche nuovamente all'origine dati, si è terminato con l'aggiornamento.  
   
- Se si inviano le modifiche nel database, quindi un secondo passaggio è obbligatorio. Se non si utilizzano i controlli con associazione a dati, quindi è necessario chiamare manualmente il metodo Update dell'oggetto TableAdapter stesso (o adattatore dati di) usato per popolare il set di dati. Tuttavia, è possibile utilizzare anche diverse schede, ad esempio, per spostare i dati da un'origine dati a un altro o per aggiornare più origini dati. Se si non si usa l'associazione dati e si salvano le modifiche per le tabelle correlate, è necessario creare manualmente un'istanza di una variabile della classe TableAdapterManager generato automaticamente e quindi chiamare il relativo metodo UdpateAll.  
+ Se si inviano le modifiche nel database, quindi un secondo passaggio è obbligatorio. Se non si utilizzano i controlli con associazione a dati, quindi è necessario chiamare manualmente il metodo Update dell'oggetto TableAdapter stesso (o adattatore dati di) usato per popolare il set di dati. Tuttavia, è possibile utilizzare anche diverse schede, ad esempio, per spostare i dati da un'origine dati a un altro o per aggiornare più origini dati. Se si non si usa l'associazione dati e si salvano le modifiche per le tabelle correlate, è necessario creare manualmente un'istanza di una variabile della classe TableAdapterManager generato automaticamente e quindi chiamare il relativo metodo UpdateAll.  
   
  ![Gli aggiornamenti di set di dati di Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiornamento ha esito positivo  

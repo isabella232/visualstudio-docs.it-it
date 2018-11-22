@@ -109,7 +109,7 @@ Usare quindi questo comando per eseguire l'installazione:
 | ----------------------- | --------------- |
 | cs-CZ | Ceco |
 | de-DE | Tedesco |
-| it-IT | Inglese |
+| en-US | Inglese |
 | es-ES | Spagnolo |
 | fr-FR | Francese |
 | it-IT | Italiano |
