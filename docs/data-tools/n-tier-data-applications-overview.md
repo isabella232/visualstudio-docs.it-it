@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089030"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281745"
 ---
 # <a name="n-tier-data-applications-overview"></a>Panoramica delle applicazioni dati a più livelli
 *A più livelli* le applicazioni di dati sono le applicazioni di dati che sono separate in più *livelli*. Noto anche come "applicazioni multilivello" e "applicazioni distribuite", le applicazioni a più livelli diversi in livelli discreti che vengono distribuite tra il client e server di elaborazione. Quando si sviluppano applicazioni che accedono ai dati, si deve avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
@@ -64,7 +64,7 @@ La figura seguente mostra le funzionalità e le tecnologie disponibili in Visual
 Il livello intermedio in genere si connette al livello dati tramite una connessione dati. Questa connessione dati viene in genere archiviata nel componente di accesso di dati.
 
 ## <a name="data-tier"></a>Livello dati
-Il *livello dati* è fondamentalmente il server che archivia i dati di un'applicazione (ad esempio, un server che esegue [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).
+Il *livello dati* è fondamentalmente il server che archivia i dati di un'applicazione (ad esempio, un server che esegue SQL Server).
 
 La figura seguente mostra le funzionalità e le tecnologie disponibili in Visual Studio e in cui che potrebbe essere appropriato per il livello di dati di un'applicazione a più livelli.
 
