@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219380"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766550"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testing unità in Node.js
 
@@ -33,7 +33,7 @@ I framework supportati sono:
 > [!WARNING]
 > Un problema in Tape attualmente impedisce l'esecuzione di test Tape. Se viene eseguito il merge della [richiesta pull n. 361](https://github.com/substack/tape/pull/361), il problema dovrebbe essere risolto.
 
-Se un framework non è supportato, vedere [Aggiungere il supporto per un framework di unit test](#addingFramework) per informazioni sull'aggiunta del supporto. 
+Se un framework non è supportato, vedere [Aggiungere il supporto per un framework di unit test](#addingFramework) per informazioni sull'aggiunta del supporto.
 
 ## <a name="write-unit-tests"></a>Scrivere unit test
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Se si verifica un errore che indica che è impossibile trovare *vstest.console.exe*, verificare di aver aperto il prompt dei comandi per gli sviluppatori e non un prompt dei comandi normale. 
+> Se si verifica un errore che indica che è impossibile trovare *vstest.console.exe*, verificare di aver aperto il prompt dei comandi per gli sviluppatori e non un prompt dei comandi normale.
 
 ## <a name="addingFramework"></a>Aggiungere il supporto per un framework di unit test
 
@@ -149,7 +149,7 @@ Per un buon esempio delle implementazioni `find_tests` e `run_tests`, vedere l'i
 L'individuazione dei framework di test disponibili avviene all'avvio di Visual Studio. Se un framework viene aggiunto mentre Visual Studio è in esecuzione, riavviare Visual Studio per rilevare il framework. Il riavvio non è tuttavia necessario quando si apportano modifiche all'implementazione.
 
 ## <a name="unit-tests-in-other-project-types"></a>Unit test in altri tipi di progetto
-È possibile scrivere unit test non solo nei progetti Node.js. Quando si aggiungono le proprietà TestFramework e TestRoot a un qualsiasi progetto C# o VB, tali test vengono enumerati e possono essere eseguiti tramite la finestra Esplora Test.
+È possibile scrivere unit test non solo nei progetti Node.js. Quando si aggiungono le proprietà TestFramework e TestRoot a un qualsiasi progetto C# o Visual Basic, questi test vengono enumerati e possono essere eseguiti tramite la finestra Esplora Test.
 
 A tale scopo, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni, scegliere **Scarica progetto**, quindi scegliere **Edit Project** (Modifica progetto). Nel file di progetto aggiungere i due elementi seguenti a un gruppo di proprietà.
 

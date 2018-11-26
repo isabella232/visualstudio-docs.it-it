@@ -1,7 +1,7 @@
 ---
 title: Esempi di parametri della riga di comando per l'installazione di Visual Studio
 description: Personalizzare questi esempi per creare la propria installazione da riga di comando di Visual Studio.
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b40b228ce04a83622f739d22b15c9ab126aade3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895485"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803812"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017
 
@@ -128,6 +128,39 @@ Questi parametri della riga di comando sono **una novità nella versione 15.7**.
 * Usando solo il percorso di installazione:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+
+## <a name="using-export"></a>Uso di export
+
+Questo comando dalla riga di comando è una **novità della versione 15.9**. Per altre informazioni, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+* Uso di export per salvare la selezione di un'installazione:
+
+```cmd
+vs_enterprise.exe export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* Uso di export per salvare una nuova selezione personalizzata:
+
+```cmd
+vs_enterprise.exe export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>Uso di --config
+
+Questo parametro della riga di comando è una **novità della versione 15.9**. Per altre informazioni, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+* Uso di --config per installare i carichi di lavoro e i componenti di un file di configurazione dell'installazione salvato in precedenza:
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* Uso di --config per aggiungere i carichi di lavoro e i componenti a un'installazione esistente:
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

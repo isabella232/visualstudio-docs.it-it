@@ -2,7 +2,7 @@
 title: Usare i parametri della riga di comando per installare Visual Studio
 description: Informazioni su come usare i parametri della riga di comando per controllare o personalizzare l'installazione di Visual Studio.
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768519"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
 
@@ -55,6 +55,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `update` | Aggiorna un prodotto installato. |
 | `repair` | Ripristina un prodotto installato. |
 | `uninstall` | Disinstalla un prodotto installato. |
+| `export` | **Novità della versione 15.9**: Esporta l'installazione selezionata in un file di configurazione di installazione. |
 
 | **Opzione di installazione** | **Descrizione** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--nickname <name>` | **Facoltativa**: definisce il nome alternativo da assegnare a un prodotto installato. La lunghezza del nome alternativo non può superare i 10 caratteri.  |
 | `--productKey` | **Facoltativa**: definisce il codice Product Key da usare per un prodotto installato. È composto da 25 caratteri alfanumerici in formato `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` o `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Visualizza una versione offline di questa pagina. |
+| `--config <path>` | **Facoltativo** e **novità della versione 15.9**: Durante un'installazione o un'operazione di modifica, determina i carichi di lavoro e i componenti da aggiungere in base a un file di configurazione di installazione precedentemente salvato. Questa operazione aggiunge elementi e non rimuove alcun carico di lavoro o componente se non è presente nel file. Inoltre, gli elementi che non si applicano al prodotto non verranno aggiunti. Durante un'operazione di esportazione, ciò determina la posizione in cui salvare il file di configurazione di installazione. |
 
 > Nota: quando si specificano più carichi di lavoro e componenti, è necessario ripetere l'opzione della riga di comando `--add` o `--remove` per ogni elemento.
 

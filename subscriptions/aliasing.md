@@ -9,12 +9,12 @@ description: Si possono verificare errori di accesso se si usano alias o nomi de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854468"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817438"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
@@ -24,7 +24,7 @@ A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili
 
 indica utenti che usano identità diverse per accedere a Windows (o al servizio Active Directory) e per accedere alla posta elettronica.
 
-L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per l'accesso alla directory, ad esempio JohnD@contoso.com, ma gli utenti accedono agli account di posta elettronica tramite alias o nomi descrittivi, ad esempio John.Doe@contoso.com.  Per molti clienti che gestiscono le sottoscrizioni tramite Volume Licensing Service Center (VLSC), questo può causare errori durante l'esperienza di accesso perché l'indirizzo di posta elettronica fornito (John.Doe@contoso.com) non corrisponde all'indirizzo della directory (JohnD@contoso.com) richiesto per completare l'autenticazione tramite l'opzione "Account aziendale o dell'istituto di istruzione".
+L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per l'accesso alla directory, ad esempio JohnD@contoso.com, ma gli utenti accedono agli account di posta elettronica tramite alias o nomi descrittivi, ad esempio John.Doe@contoso.com. Per molti clienti che gestiscono le sottoscrizioni tramite Volume Licensing Service Center (VLSC), questo può causare errori durante l'esperienza di accesso perché l'indirizzo di posta elettronica fornito (John.Doe@contoso.com) non corrisponde all'indirizzo della directory (JohnD@contoso.com) richiesto per completare l'autenticazione tramite l'opzione "Account aziendale o dell'istituto di istruzione".
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Opzioni per l'amministratore
 
@@ -33,15 +33,15 @@ Come amministratore esistono due opzioni per assicurarsi che l'esperienza di acc
 - La seconda opzione (meno sicura) prevede di consentire ai sottoscrittori di associare l'indirizzo di posta elettronica dell'account aziendale o dell'istituto di istruzione a un account personale (ovvero un account Microsoft o MSA). Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.
 
 > [!NOTE]
-> Dopo il completamento della migrazione dell'azienda al nuovo [portale di gestione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio, sarà possibile sfruttare la nuova esperienza di amministrazione che consente di specificare sia indirizzi di posta elettronica della directory che personali come parte del profilo del sottoscrittore.  Altre informazioni sulla [migrazione](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+> Dopo il completamento della migrazione dell'azienda al nuovo [portale di gestione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio, sarà possibile sfruttare la nuova esperienza di amministrazione che consente di specificare sia indirizzi di posta elettronica della directory che personali come parte del profilo del sottoscrittore. Altre informazioni sulla [migrazione](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Opzioni per i sottoscrittori
 
-Dal punto di vista dei sottoscrittori, è prima di tutto importante collaborare con l'amministratore per comprendere la configurazione delle identità della società.  Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale.  Prima di eseguire i passaggi per creare un account Microsoft, contattare l'amministratore per verificare se esistono criteri o problemi per questa azione.  Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.
+Dal punto di vista dei sottoscrittori, è prima di tutto importante collaborare con l'amministratore per comprendere la configurazione delle identità della società. Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale. Prima di eseguire i passaggi per creare un account Microsoft, contattare l'amministratore per verificare se esistono criteri o problemi per questa azione. Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account) in questo articolo per altri dettagli.
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>Assegnazione dei sottoscrittori a un account della directory
 
-In tutti i casi, il gestore delle sottoscrizioni all'interno di Volume Licensing Service Center (VLSC) dovrà usare l'indirizzo della directory per i nuovi sottoscrittori oppure aggiornare l'indirizzo di posta elettronica per i sottoscrittori esistenti.  È importante sottolineare che l'uso dell'indirizzo della directory comporta che i nuovi sottoscrittori non riceveranno un messaggio di posta elettronica di benvenuto e l'amministratore dovrà notificare il sottoscrittore dell'assegnazione di una sottoscrizione.  Dopo avere eseguito la procedura di seguito, è possibile usare il [modello](#notifying-your-subscribers-with-directory-addresses) di messaggio di posta elettronica per informare i sottoscrittori e facilitare il processo di accesso.
+In tutti i casi, il gestore delle sottoscrizioni all'interno di Volume Licensing Service Center (VLSC) dovrà usare l'indirizzo della directory per i nuovi sottoscrittori oppure aggiornare l'indirizzo di posta elettronica per i sottoscrittori esistenti. È importante sottolineare che l'uso dell'indirizzo della directory comporta che i nuovi sottoscrittori non riceveranno un messaggio di posta elettronica di benvenuto e l'amministratore dovrà notificare il sottoscrittore dell'assegnazione di una sottoscrizione. Dopo avere eseguito la procedura di seguito, è possibile usare il [modello](#notifying-your-subscribers-with-directory-addresses) di messaggio di posta elettronica per informare i sottoscrittori e facilitare il processo di accesso.
 
 ### <a name="adding-new-subscribers"></a>Aggiunta di nuovi sottoscrittori
 
@@ -88,7 +88,7 @@ Dato che il messaggio di posta elettronica di benvenuto non raggiungerà corrett
 
 Salve %NOME SOTTOSCRITTORE%
 
-È stata assegnata una sottoscrizione di Visual Studio.  Visitare https://my.visualstudio.com e accedere con l'indirizzo %INDIRIZZO DIRECTORY% per attivare la sottoscrizione e accedervi.
+È stata assegnata una sottoscrizione di Visual Studio. Visitare https://my.visualstudio.com e accedere con l'indirizzo %INDIRIZZO DIRECTORY% per attivare la sottoscrizione e accedervi.
 
 Se si verificano problemi, contattare il team di supporto (https://visualstudio.microsoft.com/subscriptions/support/).
 
@@ -99,8 +99,6 @@ Nella parte inferiore della pagina selezionare gli elementi seguenti:
    - Selezionare l'opzione di supporto assistito desiderata
 
 ----------- Fine copia -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definizione di un account aziendale o dell'istituto di istruzione come account personale
 

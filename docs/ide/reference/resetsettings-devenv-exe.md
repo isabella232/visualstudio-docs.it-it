@@ -1,6 +1,6 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 11/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3d3a6ef558b510cfde716716daf97a549fbba4
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703987"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948064"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
 Ripristina le impostazioni predefinite di Visual Studio e avvia in automatico IDE di Visual Studio. Facoltativamente, reimposta le impostazioni in un file con estensione *vssettings* specificato.
 
 Le impostazioni predefinite sono determinate dal profilo che è stato selezionato quando Visual Studio è stato avviato per la prima volta.
+
+> [!TIP]
+> Per informazioni su come reimpostare le impostazioni usando l'ambiente di sviluppo integrato (IDE), vedere [Reimpostare le impostazioni](../synchronized-settings-in-visual-studio.md#reset-settings).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,5 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Reimpostare le impostazioni](../synchronized-settings-in-visual-studio.md#reset-settings)
 - [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)

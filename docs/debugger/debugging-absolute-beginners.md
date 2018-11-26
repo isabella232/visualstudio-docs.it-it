@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612675"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257368"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -80,7 +80,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. È necessario avere installato Visual Studio e il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core**, a seconda del tipo di app che si vuole creare.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  per installarlo gratuitamente.
 
     Per installare il carico di lavoro avendo già Visual Studio, fare clic su **Strumenti** > **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
 
@@ -325,11 +325,11 @@ Dopo aver trovato l'area di codice con il problema, usare il debugger per analiz
 * Controllare se l'applicazione esegue il codice previsto. Nell'applicazione di esempio il codice per l'istruzione switch doveva ad esempio impostare il tipo di galassia su "Irregular", ma l'app ignorava il codice a causa di un errore di digitazione.
 
 > [!TIP]
-> Un debugger aiuta a trovare i bug. Uno strumento di debug sarà in grado di individuare i bug *automaticamente* solo se conosce la finalità del codice. Uno strumento può conoscere la finalità del codice solo se lo sviluppatore esprime tale finalità. Per farlo, occorre scrivere [unit test](../test/improve-code-quality.md).
+> Un debugger aiuta a trovare i bug. Uno strumento di debug sarà in grado di individuare i bug *automaticamente* solo se conosce la finalità del codice. Uno strumento può conoscere la finalità del codice solo se lo sviluppatore esprime tale finalità. Per farlo, occorre scrivere [unit test](../test/improve-code-quality.md). 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questo articolo si sono appresi alcuni concetti di debug generali. Nel prossimo articolo si può iniziare ad apprendere il debug con Visual Studio.
+In questo articolo si sono appresi alcuni concetti di debug generali. In seguito, è possibile apprendere di più sul debugger.
 
 > [!div class="nextstepaction"]
 > [Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)
