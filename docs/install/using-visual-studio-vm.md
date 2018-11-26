@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000123"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001217"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -34,14 +34,13 @@ In Azure Marketplace sono disponibili immagini per le versioni più recenti prin
 
 | Versione di rilascio                                              | Edizioni                     |     Versione del prodotto     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: versione più recente (versione 15.8)                    |    Enterprise, Community     |      Versione 15.8.7     |
-| Visual Studio 2017: versione di anteprima più recente (versione 15.9, Preview 5) |    Enterprise, Community     |      Versione 15.9       |
+| Visual Studio 2017: versione più recente (versione 15.9)                    |    Enterprise, Community     |      Versione 15.9.0     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versione 15.0.18    |
 |   Visual Studio 2015: versione più recente (Update 3)                      |    Enterprise, Community     |  Versione 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             nessuno             | (Scaduto per la manutenzione) |
 
 > [!NOTE]
-> In base i criteri per la manutenzione adottati da Microsoft, la versione rilasciata originariamente (RTW) di Visual Studio 2015 è scaduta per la manutenzione. Visual Studio 2015 Update 3 è l'unica versione rimanente disponibile per la linea di prodotti Visual Studio 2015.
+> In base i criteri per la manutenzione adottati da Microsoft, la versione rilasciata originariamente (RTW) di Visual Studio 2015 è scaduta per la manutenzione. Visual Studio 2015 Update 3 è l'unica versione rimanente disponibile per la linea di prodotti Visual Studio 2015.  Dopo il rilascio di Visual Studio 2017 versione 15.9 è stata sospesa anche la disponibilità delle immagini "anteprima più recente" che includevano anteprime della versione 15.9.
 
 Per altre informazioni, vedere i [criteri per la manutenzione di Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
 

@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295761"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257277"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di codice gestito e nativo nella stessa sessione di debug
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
 
 Visual Studio consente di abilitare più di un tipo di debugger in una sessione di debug, chiamata debug in modalità mista. In questa esercitazione viene illustrato come eseguire il debug di codice nativo e gestito in una singola sessione di debug. 
 

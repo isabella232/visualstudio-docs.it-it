@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907040"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948894"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -31,9 +31,9 @@ La riga di comando devenv consente di impostare varie opzioni per l'ambiente di 
 
 ## <a name="devenv-switch-syntax"></a>Sintassi delle opzioni devenv
 
-Per impostazione predefinita, i comandi devenv passano le opzioni all'utilità devenv.com. L'utilità devenv.com restituisce output tramite flussi di sistema standard, ad esempio `stdout` e `stderr`. L'utilità determina il reindirizzamento I/O appropriato durante l'acquisizione dell'output, ad esempio in un file con estensione txt.
+I comandi che iniziano con `devenv` vengono gestiti dall'utilità `devenv.com`, che restituisce l'output tramite flussi di sistema standard come `stdout` e `stderr`. L'utilità determina il reindirizzamento I/O appropriato durante l'acquisizione dell'output, ad esempio in un file con estensione txt.
 
-D'altra parte, i comandi che iniziano con `devenv.exe` possono usare le stesse opzioni, ma l'utilità devenv.com viene ignorata.
+D'altra parte i comandi che iniziano con `devenv.exe` possono usare le stesse opzioni, ma l'utilità `devenv.com` viene ignorata. L'uso di `devenv.exe` impedisce direttamente la visualizzazione dell'output nella console.
 
 Le regole di sintassi per le opzioni `devenv` sono simili a quelle di altre utilità della riga di comando DOS. Le regole di sintassi seguenti si applicano a tutte le opzioni `devenv` e ai relativi argomenti:
 
@@ -45,7 +45,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili a quelle di altre util
 
 - Se il primo argomento è un file che non è una soluzione o un progetto, tale file viene aperto nell'editor appropriato, in una nuova istanza dell'IDE.
 
-- Quando si specifica un nome di file di progetto anziché un nome di file di soluzione, un comando `devenv` cerca nella cartella padre del file di progetto un file di soluzione con lo stesso nome. Ad esempio, il comando `devenv /build myproject1.vbproj` cerca nella cartella padre un file di soluzione denominato "myproject1.sln".
+- Quando si specifica un nome di file di progetto anziché un nome di file di soluzione, un comando `devenv` cerca nella cartella padre del file di progetto un file di soluzione con lo stesso nome. Ad esempio, il comando `devenv myproject1.vbproj /build` cerca nella cartella padre un file di soluzione denominato "myproject1.sln".
 
     > [!NOTE]
     > Nella cartella padre deve trovarsi un solo e unico file che faccia riferimento a questo progetto. Se la cartella padre non contiene alcun file di soluzione che fa riferimento a questo progetto, o se la cartella padre contiene due o più file di soluzione che vi fanno riferimento, viene creato un file di soluzione temporaneo.
@@ -78,12 +78,12 @@ Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 
 |Switch della riga di comando|Descrizione|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Visualizza la guida per le opzioni devenv nella **finestra del prompt dei comandi**.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> **Devenv myproj.csproj /build**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina i file creati dal comando di compilazione, senza che ciò abbia effetto sui file di origine.<br /><br /> **Devenv myproj.csproj /clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Compila la soluzione, in base alla configurazione relativa, insieme ai file necessari per la distribuzione.<br /><br /> **Devenv myproj.csproj /deploy**|
+|[/?](../../ide/reference/q-devenv-exe.md)|Visualizza la guida per le opzioni devenv nella **finestra del prompt dei comandi**.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina i file creati dal comando di compilazione, senza che ciò abbia effetto sui file di origine.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Compila la soluzione, in base alla configurazione relativa, insieme ai file necessari per la distribuzione.<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|Confronta due file. Accetta quattro parametri, ovvero SourceFile, TargetFile, SourceDisplayName (facoltativo), TargetDisplayName (facoltativo).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Consente di specificare un file per la ricezione di errori durante la compilazione.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Consente di specificare un file per la ricezione di errori durante la compilazione.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Il progetto da compilare, pulire o distribuire. È possibile usare questa opzione solo se è stata specificata anche l'opzione /build, /rebuild, /clean o /deploy.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Specifica la configurazione del progetto da compilare o distribuire. È possibile usare questa opzione solo se è stata specificata anche l'opzione /project.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Pulisce e compila la soluzione o il progetto specificati in base alla configurazione relativa.|

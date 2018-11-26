@@ -1,7 +1,7 @@
 ---
 title: Introduzione agli strumenti per le prestazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0a1d3a305ca19b36358ab28fbb794d56df2aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576443"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948907"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introduzione agli strumenti per le prestazioni
-Questa sezione fornisce una panoramica dei concetti e delle attività applicabili in fase di raccolta, visualizzazione e analisi delle prestazioni del codice mediante gli strumenti per le prestazioni di Visual Studio.  
+
+Visual Studio include vari metodi per raccogliere, visualizzare e analizzare i dati sulle prestazioni del codice. In molti casi il modo migliore per iniziare a usare gli strumenti per le prestazioni è l'uso delle impostazioni predefinite della **Creazione guidata sessione di prestazioni**. La procedura guidata raccoglie le statistiche dell'app che possono indicare problemi di prestazioni nel codice.  
   
- Questi strumenti offrono diverse modalità per la raccolta e l'analisi dei dati relativi alle prestazioni. In molti casi, tuttavia, la procedura migliore per iniziare consiste nell'usare le impostazioni predefinite della Creazione guidata sessione di prestazioni, che consente di raccogliere statistiche dell'applicazione che possono indicare eventuali problemi di prestazioni nel codice.  
+- Gli avvisi di prestazioni che segnalano problemi di codifica comuni in Visual Studio vengono visualizzati nella finestra **Elenco errori**. È possibile passare dagli avvisi al codice sorgente e ad argomenti dettagliati della Guida che consentono di scrivere codice più efficiente.
+
+- I report delle prestazioni offrono visualizzazioni a diversi livelli della struttura dell'applicazione, delle righe di codice sorgente e dei processi. I report delle prestazioni visualizzano dati di esecuzione dell'app, dalle funzioni chiamanti e chiamate all'albero delle chiamate dell'intera app.  
   
--   Gli *avvisi di prestazioni* notificano i problemi comuni relativi alla codifica. Gli avvisi vengono visualizzati nella finestra Errori di Visual Studio. È possibile passare dall'avviso al codice sorgente e ad argomenti dettagliati della Guida che consentono di scrivere un codice più efficace.  
+Per profilare rapidamente un progetto, un'app o un sito Web ASP.NET selezionare **Debug** > **Profiler prestazioni** e quindi selezionare **Creazione guidata sessione di prestazioni**. Per istruzioni dettagliate, vedere [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-cpu-sampling.md) e [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+
+Per specificare e configurare manualmente una sessione di profilatura delle prestazioni, selezionare **Debug** > **Profiler** > **Esplora prestazioni**. Usare la cartella **Destinazioni** e le pagine **Proprietà** in **Esplora prestazioni** per configurare le sessioni. Per istruzioni, vedere [Procedura: Creare manualmente sessioni di prestazioni](../profiling/how-to-manually-create-performance-sessions.md).  
   
--   I rapporti di prestazioni offrono visualizzazioni dei diversi livelli della struttura dell'applicazione, dalle righe di codice sorgente ai processi, e dei dati di esecuzione dei programmi, dalle funzioni chiamanti e chiamate di una funzione specifica all'albero delle chiamate dell'intera applicazione.  
+**Vedere anche:**
   
-## <a name="common-tasks"></a>Attività comuni  
-  
-|Attività|Contenuto correlato|  
-|----------|---------------------|  
-|**Profilare in modo rapido un'applicazione o un sito Web:** usare la Creazione guidata sessione di prestazioni per configurare ed eseguire una sessione di profilatura per una soluzione Visual Studio o un sito Web.|-   [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Profilare un'applicazione senza la procedura guidata:** imparare a usare le pagine delle proprietà della sessione di prestazioni per creare una sessione di prestazioni.|-   [Procedura: Creare manualmente sessioni di prestazioni](../profiling/how-to-manually-create-performance-sessions.md)|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
+ [Panoramiche (strumenti per le prestazioni)](../profiling/overviews-performance-tools.md)   
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   
  [Uso di regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)   
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md) (Configurazione di sessioni di prestazioni)
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

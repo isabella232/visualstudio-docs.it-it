@@ -2,48 +2,70 @@
 title: Come segnalare un problema con Visual Studio per Mac
 description: Come fornire suggerimenti o segnalare problemi riscontrati durante l'uso di Visual Studio per Mac.
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
-ms.date: 10/11/2018
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: f02bd648f7e52a7ff82a2ab546f19e979eccf9e6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293614"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948829"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Come segnalare un problema in Visual Studio per Mac
 
-Se si verifica un problema con Visual Studio per Mac, è importante segnalarlo a Microsoft. Di seguito viene descritto come segnalare il problema alla [community degli sviluppatori](https://developercommunity.visualstudio.com/) in modo che Microsoft possa diagnosticarlo e risolverlo.
+Se si verifica un problema con Visual Studio per Mac, è importante segnalarlo a Microsoft. Di seguito viene descritto come segnalare il problema alla [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/41/index.html) in modo che Microsoft possa diagnosticarlo e risolverlo.
 
 ## <a name="how-to-report-a-problem"></a>Come segnalare un problema
+
+Per segnalare un problema relativo a Visual Studio per Mac, l'opzione migliore consiste nell'avviare la segnalazione da Visual Studio per Mac. La segnalazione tramite Visual Studio per Mac consente di includere automaticamente le informazioni di diagnostica nella segnalazione. Se non è possibile usare Visual Studio per Mac a causa, ad esempio, di un arresto anomalo del sistema, è possibile segnalare il problema direttamente nel sito della [community degli sviluppatori](https://developercommunity.visualstudio.com/content/problem/post.html?space=41).
 
 Per segnalare un problema con Visual Studio per Mac, selezionare **Aiuto > Segnala un problema** dalla barra dei menu:
 
 ![Collegamento Segnala un problema](media/report-problem-image1.png)
 
-È anche possibile usare il collegamento **Segnala un problema** disponibile nella pagina iniziale.
+1. Se non si è eseguito l'accesso, fare clic su **Accedi** sul lato destro dello strumento, come illustrato nello screenshot seguente. Seguire le istruzioni visualizzate per accedere.
 
-Verrà visualizzata la pagina Web **Segnala un problema**. È possibile usare questa pagina per visualizzare tutti i problemi esistenti, votare problemi simili e inviare soluzioni ai problemi segnalati da altri utenti:
+    ![Finestra di dialogo con il pulsante "Accedi"](media/report-problem-image2.png)
 
-![Pagina Web per la segnalazione di un problema](media/report-problem-image2.png)
+    Quando si accede, è possibile segnalare un problema che si verifica. È anche possibile votare o commentare qualsiasi altro problema pubblicato.
 
-Fare clic sul pulsante **Segnala un problema** nella pagina Web.
+1. Dopo l'accesso sarà possibile vedere i problemi segnalati e le soluzioni nella schermata **Followed problems and solutions** (Problemi e soluzioni seguiti)
 
-Se non è già stato eseguito l'accesso all'applicazione Developer Community, verrà chiesto di farlo nella pagina seguente. Fare clic sul pulsante **Accetta** per autorizzare l'applicazione Developer Community per l'account Microsoft:
+    ![Elenco di problemi segnalati](media/report-problem-image3.png)
 
-![Pagina Web per la segnalazione di un problema](media/report-problem-image3.png)
+1. Visual Studio per Mac offre un'interfaccia che consente di cercare un problema e vedere se è stato segnalato da altri utenti. Se è stato segnalato, è possibile fare clic sul titolo e "votarlo" per indicare che si è riscontrato lo stesso problema.
+   > [!NOTE]
+   > Per la ricerca, immettere i termini di ricerca nell'apposita casella e premere INVIO o fare clic sull'icona di ricerca.
 
-Specificare un titolo descrittivo per il problema insieme a eventuali informazioni aggiuntive sul problema che si ritiene potrebbero essere utili. Se possibile, specificare i passaggi per riprodurre il problema, in modo da aiutare Microsoft a comprendere e risolvere il problema il prima possibile.
+   ![Cercare e contrassegnare problemi simili](media/report-problem-image4.png)
 
-![Pagina Web per la segnalazione di un problema](media/report-problem-image4.png)
+1. Se il problema riscontrato non viene trovato, scegliere **Segnala un nuovo problema** sul lato della schermata.
 
-## <a name="provide-a-suggestion"></a>Inviare un suggerimento
+   > [!NOTE]
+   > Il pulsante **Segnala un nuovo problema** viene visualizzato solo nell'interfaccia di Visual Studio per Mac per la community degli sviluppatori. Non è possibile segnalare un problema direttamente nel sito Web della [community degli sviluppatori](https://developercommunity.visualstudio.com/).
 
-Usare il collegamento **Invia un suggerimento** nella pagina iniziale per passare alla [pagina Suggerire una funzionalità di Visual Studio per Mac](https://developercommunity.visualstudio.com/content/idea/post.html?space=41). Qui è possibile aggiungere nuove richieste o votare richieste esistenti.
+1. Creare un titolo descrittivo per il problema in modo da consentirne l'invio al team di Visual Studio per Mac corretto.
+
+1. Fornire eventuali dettagli aggiuntivi e, se possibile, descrivere la procedura per riprodurre il problema.
+
+   ![Segnalare un problema nuovo](media/report-problem-image5.png)
+
+1. Selezionare **Avanti** per passare alla scheda **Includi allegati**, dove è possibile acquisire la schermata corrente per inviarla a Microsoft. Per allegare file di log, fare clic sull'icona ![Allega log](media/report-problem-attach-logs.png) oppure per allegare screenshot aggiuntivi e altri file, fare clic sull'icona ![Allega file](media/report-problem-attach-file.png).
+
+   ![Allegare uno screenshot alla segnalazione di un problema di Visual Studio per Mac](media/report-problem-image6.png)
+
+1. Selezionare **Invia** per inviare la segnalazione insieme a eventuali immagini e file di log.
+
+   Per informazioni sui dati raccolti, vedere [Data we collect](/visualstudio/ide/developer-community-privacy.md#data-we-collect) (Dati raccolti).
+
+## <a name="search-for-solutions-or-provide-feedback"></a>Cercare soluzioni o fornire commenti e suggerimenti
+
+Se non si vuole o non si può usare Visual Studio per Mac per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+
+Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste una pagina specifica anche per questo. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Segnalare un problema di Visual Studio (in Windows)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
-- [Suggerire una funzionalità per Visual Studio](/visualstudio/ide/suggest-a-feature)

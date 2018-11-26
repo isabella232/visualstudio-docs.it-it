@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: a5b1175caf0ac7f6654fbe20b5300327679eccbc
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294292"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001178"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -28,3 +28,7 @@ Ecco alcune azioni di compilazione comuni per progetti C#:
 È possibile selezionare più file in Esplora soluzioni. Ciò consente di impostare l'azione di compilazione per più file in una sola volta.
 
 Sono anche disponibili azioni di compilazione per progetti specifici. Per i progetti Xamarin.iOS esiste l'azione di compilazione **BundleResource**, che aggiunge il file al bundle dell'app. Per informazioni sulle azioni di compilazione specifiche per Xamarin.Android, vedere la guida al [processo di compilazione](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+
+## <a name="see-also"></a>Vedere anche
+
+- [Azioni di compilazione (Visual Studio in Windows)](/visualstudio/ide/build-actions)

@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
 ms.topic: Get-Started-Article
-description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nella sottoscrizione di Visual Studio.
+description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912006"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826713"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -79,13 +79,13 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 |         Visual Studio Professional (Standard, cloud annuale)          | VL, Azure, Retail |   3 mesi    | Non<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 mesi    | Non<sup>2</sup> |
 |                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 mesi    | Non<sup>2</sup> |
-|                     Visual Studio Dev Essentials                     |        N/D         |   3 mesi    |       No       |
+|                     Visual Studio Dev Essentials                     |        N/D         |   1 mese    |       No       |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
 |             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
 
 <sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato. Vedere le domande frequenti qui di seguito per altri dettagli.  Dopo la scadenza delle sottoscrizioni Pluralsight, l'utente potrebbe essere idoneo a ricevere 12 mesi di accesso a 50 corsi Pluralsight selezionati in una delle tre aree di studio.*
+<sup>2</sup> *Il vantaggio Pluralsight è monouso e associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato. 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
@@ -105,9 +105,7 @@ R: sì, in qualità di sottoscrittore di Visual Studio l'utente può accedere ai
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>D: cosa accade alla scadenza della sottoscrizione di Pluralsight?
-R: al termine della sottoscrizione gratuita di Pluralsight, sono disponibili due opzioni:
-- Si riceve un accesso gratuito di 12 mesi (controllare nella [tabella Idoneità](#eligibility) se la sottoscrizione disponibile è idonea) a un set limitato di 50 corsi in una delle tre aree chiave: sviluppo di app nel cloud, intelligenza artificiale, apprendimento automatico e dati e DevOps nel cloud. Si riceverà un messaggio di posta elettronica da Pluralsight per richiedere l'accesso gratuito dopo la scadenza. È possibile visualizzare un [elenco dei corsi](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) disponibili in ogni libreria parziale.
-- È possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight con uno sconto del 10% che consente di accedere all'intero catalogo dei corsi.  Contattare [Pluralsight](http://www.pluralsight.com) per dettagli completi.
+R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight.  Contattare [Pluralsight](http://www.pluralsight.com) per dettagli completi.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>D: la mia azienda rinnova la sottoscrizione a Visual Studio attraverso un contratto Enterprise. Il vantaggio Pluralsight viene reimpostato?
 R: no.  Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato.  Questo vale per tutti i canali di acquisto, tra cui la vendita al dettaglio, il cloud e i contratti multilicenza.
@@ -116,3 +114,6 @@ R: no.  Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che i
 -  [Pluralsight Help Center](https://help.pluralsight.com/help) fornisce assistenza in merito all'esecuzione dei corsi Pluralsight o all'uso del sito Web di Pluralsight.
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Passaggi successivi
+Dopo aver creato l'account, si è pronti per iniziare il training.  Visitare [https://www.pluralsight.com](http://www.pluralsight.com) e toccare **Log in** (Accedi) nell'angolo superiore destro della pagina oppure tornare a un corso già in esecuzione. 

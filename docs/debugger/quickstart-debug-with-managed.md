@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637523"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257186"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug con C++ usando il debugger di Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Avvio rapido: eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 

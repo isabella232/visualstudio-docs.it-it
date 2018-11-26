@@ -13,38 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244450"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826804"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
 
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
-Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2017 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2017.
-
-Sono disponibili tre edizioni di Visual Studio 2017: Community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio2017](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
-
-Questo articolo descrive le funzionalità di base dell'IDE. Verranno esaminate alcune operazioni che è possibile eseguire con Visual Studio che comprendono la creazione di un progetto semplice, l'utilizzo di [IntelliSense](using-intellisense.md) come supporto per la creazione del codice e il debug di un'app per visualizzare il valore di una variabile durante l'esecuzione del programma. Vengono anche descritte le diverse finestre dello strumento.
-
-## <a name="install-the-visual-studio-ide"></a>Installare l'IDE di Visual Studio
-
-Per iniziare, [scaricare Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) e installarlo nel sistema.
-
-Il programma di installazione modulare consente di scegliere e installare specifici *carichi di lavoro*, ovvero gruppi di funzionalità necessarie per il linguaggio di programmazione o la piattaforma preferiti. Per seguire la procedura per la [creazione di un programma](#create-a-program) assicurarsi di selezionare il carico di lavoro **Sviluppo multipiattaforma .NET Core** durante l'installazione.
-
-![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../ide/media/dotnet-core-cross-platform-workload.png)
-
-Al primo avvio di Visual Studio, è possibile scegliere facoltativamente di [accedere](signing-in-to-visual-studio.md) con l'account Microsoft o con l'account aziendale o dell'istituto di istruzione.
-
-## <a name="tour-of-the-ide"></a>Presentazione dell'IDE
-
-Per offrire una panoramica visiva di Visual Studio ad alto livello, l'immagine seguente mostra Visual Studio con un progetto aperto e diverse finestre dei principali strumenti di uso comune:
-
 ![IDE di Visual Studio](../ide/media/visualstudioide.png)
+
+Questa immagine presenta Visual Studio con un progetto aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
 - [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](quickstart-projects-solutions.md).
 
@@ -54,7 +36,13 @@ Per offrire una panoramica visiva di Visual Studio ad alto livello, l'immagine s
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
-### <a name="popular-productivity-features"></a>Funzionalità di produttività più note
+## <a name="editions"></a>Edizioni
+
+Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2017 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2017.
+
+Sono disponibili tre edizioni di Visual Studio 2017: Community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio2017](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+
+## <a name="popular-productivity-features"></a>Funzionalità di produttività più note
 
 Le funzionalità più note di Visual Studio che offrono una maggiore produttività nello sviluppo del software includono:
 
@@ -106,9 +94,19 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Visualizza definizione](../ide/media/peek-definition.png)
 
+## <a name="install-the-visual-studio-ide"></a>Installare l'IDE di Visual Studio
+
+Questa panoramica illustra la creazione di un progetto semplice e alcune operazioni eseguibili con Visual Studio, ad esempio la modifica del tema colori, l'uso di [Intellisense](using-intellisense.md) per il supporto della creazione del codice e infine il debug di un'app per visualizzare il valore di una variabile durante l'esecuzione del programma. Per iniziare, [scaricare Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) e installarlo nel sistema.
+
+Il programma di installazione modulare consente di scegliere e installare specifici *carichi di lavoro*, ovvero gruppi di funzionalità necessarie per il linguaggio di programmazione o la piattaforma preferiti. Per seguire la procedura per la [creazione di un programma](#create-a-program) assicurarsi di selezionare il carico di lavoro **Sviluppo multipiattaforma .NET Core** durante l'installazione.
+
+![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../ide/media/dotnet-core-cross-platform-workload.png)
+
+Al primo avvio di Visual Studio, è possibile scegliere facoltativamente di [accedere](signing-in-to-visual-studio.md) con l'account Microsoft o con l'account aziendale o dell'istituto di istruzione.
+
 ## <a name="create-a-program"></a>Creare un programma
 
-In questa sezione viene descritta in dettaglio la procedura per creare un nuovo semplice programma.
+In questa sezione viene descritta in dettaglio la procedura per creare un programma semplice.
 
 1. Aprire Visual Studio. Scegliere **File** > **Nuovo** > **Progetto** dal menu.
 
