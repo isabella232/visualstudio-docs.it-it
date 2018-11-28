@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945896"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389416"
 ---
 # <a name="setting-language-specific-editor-options"></a>Impostazione delle opzioni dell'editor specifiche del linguaggio
 
@@ -56,6 +56,6 @@ Visual Studio offre numerose opzioni dell'editor di testo applicabili a linguagg
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Personalizzazione dell'editor](../../ide/customizing-the-editor.md)
+- [Personalizzare l'editor](../../ide/customizing-the-editor.md)
 - [Creare impostazioni personalizzate e portabili per l'editor con EditorConfig](../../ide/create-portable-custom-editor-options.md)
-- [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md) &mdash; Fornisce collegamenti ad argomenti in cui viene illustrato come personalizzare le impostazioni, i tasti di scelta rapida e altre funzionalità dell'ambiente di sviluppo integrato (IDE).
+- [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

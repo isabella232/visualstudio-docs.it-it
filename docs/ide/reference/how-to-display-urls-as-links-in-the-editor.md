@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177711"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388530"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 
@@ -31,12 +31,7 @@ ms.locfileid: "39177711"
 
 -   Tenta di aprire il sito Web indicato quando si **Ctrl**+**fare clic su** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
 
-> [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Routine
-
-### <a name="to-display-urls-as-links"></a>Per visualizzare gli URL come collegamenti
+## <a name="display-urls-as-links"></a>Visualizzare gli URL come collegamenti
 
 1.  Scegliere **Opzioni** dal menu **Strumenti**.
 

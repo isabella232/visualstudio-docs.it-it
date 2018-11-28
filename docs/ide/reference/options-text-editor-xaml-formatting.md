@@ -31,20 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f6939907681d5059580f9f7120d9beb76559e9a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672188"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388988"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
+
 Usare la pagina delle proprietà **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla finestra delle proprietà **Formattazione**, espandere **Editor di testo** > **XAML** > nodo **Formattazione**.
 
-> [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="auto-formatting-events"></a>Eventi di formattazione automatica
+
 La formattazione automatica può verificarsi quando vengono rilevati gli eventi seguenti.
 
 -   Completamento di un tag di fine o un tag semplice.
@@ -57,106 +56,124 @@ La formattazione automatica può verificarsi quando vengono rilevati gli eventi 
 
 È possibile specificare gli eventi che causano la formattazione automatica.
 
-**Al completamento del tag di fine o del tag semplice**  
+**Al completamento del tag di fine o del tag semplice**
+
 La formattazione automatica si verifica quando si finisce di digitare un tag di fine o un tag semplice. Un tag semplice non include attributi, ad esempio `<Button />`.
 
-**Al completamento del tag di inizio**  
+**Al completamento del tag di inizio**
+
 La formattazione automatica si verifica quando si finisce di digitare un tag di inizio.
 
-**All'inserimento degli Appunti**  
+**All'inserimento degli Appunti**
+
 La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.
 
 ## <a name="quotation-mark-style"></a>Stile virgolette
+
 Questa impostazione indica se i valori di attributo sono racchiusi tra virgolette singole o doppie. Il formattatore automatico e il completamento automatico IntelliSense usano questa impostazione.
 
 Dopo l'impostazione, questa opzione viene applicata solo agli attributi aggiunti successivamente usando la finestra di progettazione o manualmente nella visualizzazione XAML.
 
-**Virgolette doppie (")**  
-I valori di attributo sono racchiusi tra virgolette doppie.  
+**Virgolette doppie (")**
+
+I valori di attributo sono racchiusi tra virgolette doppie.
 `<Button Name="button1">Hello</Button>`
 
-**Virgolette singole (')**  
-I valori di attributo sono racchiusi tra virgolette singole.  
+**Virgolette singole (')**
+
+I valori di attributo sono racchiusi tra virgolette singole.
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>Ritorno a capo dei tag
+
 È possibile specificare una lunghezza di riga per il ritorno a capo dei tag. Quando il ritorno a capo dei tag è abilitato, verrà applicato il ritorno a capo appropriato a qualsiasi XAML aggiunto successivamente usando la finestra di progettazione.
 
-**Testo a capo per i tag che eccedono la lunghezza specificata**  
+**Testo a capo per i tag che eccedono la lunghezza specificata**
+
 Specifica se il ritorno a capo viene applicato alle righe alla lunghezza di riga specificata da **Lunghezza**.
 
-**Lunghezza**  
+**Lunghezza**
+
 Il numero di caratteri che una riga può contenere. Se necessario, alcune righe XAML possono superare la lunghezza di riga specificata.
 
 ## <a name="attribute-spacing"></a>Spaziatura attributi
+
 Usare questa impostazione per controllare la disposizione degli attributi nel documento XAML
 
-**Conserva i caratteri di fine riga e gli spazi tra gli attributi**  
+**Conserva i caratteri di fine riga e gli spazi tra gli attributi**
+
 La formattazione automatica non viene applicata ai caratteri di fine riga e agli spazi tra gli attributi.
 
 ```xml
-<Button Height="23"   Name="button1"  
+<Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Inserisci uno spazio singolo tra gli attributi**  
+**Inserisci uno spazio singolo tra gli attributi**
+
 Gli attributi occupano una riga, con uno spazio che separa gli attributi adiacenti. Vengono applicate le impostazioni di ritorno a capo dei tag.
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
 ```
 
-**Posiziona ogni attributo su una riga diversa**  
-Ogni attributo occupa una riga. Questo risulta utile quando sono presenti molti attributi.  
+**Posiziona ogni attributo su una riga diversa**
+
+Ogni attributo occupa una riga. Questo risulta utile quando sono presenti molti attributi.
 
 ```xml
-<Button  
-Height="23"  
-Name="button1"  
+<Button
+Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Posiziona il primo attributo sulla stessa riga del tag di inizio**  
-Se questa opzione è selezionata, il primo attributo viene visualizzato sulla stessa riga del tag di inizio dell'elemento.  
+**Posiziona il primo attributo sulla stessa riga del tag di inizio**
+
+Se questa opzione è selezionata, il primo attributo viene visualizzato sulla stessa riga del tag di inizio dell'elemento.
 
 ```xml
-<Button Height="23"  
-Name="button1"  
+<Button Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
 ## <a name="element-spacing"></a>Spaziatura elementi
+
 Usare questa impostazione per controllare la disposizione degli elementi nel documento XAML.
 
-**Conserva i caratteri di fine riga nel contenuto**  
-Le righe vuote nel contenuto dell'elemento non vengono rimosse.  
+**Conserva i caratteri di fine riga nel contenuto**
+
+Le righe vuote nel contenuto dell'elemento non vengono rimosse.
 
 ```xml
-<Grid>  
+<Grid>
 
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Comprimi più righe vuote nel contenuto in una sola riga**  
-Le righe vuote nel contenuto dell'elemento vengono compresse in una singola riga.  
+**Comprimi più righe vuote nel contenuto in una sola riga**
+
+Le righe vuote nel contenuto dell'elemento vengono compresse in una singola riga.
 
 ```xml
-<Grid>  
+<Grid>
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Rimuovi le righe vuote nel contenuto**  
-Tutte le righe vuote nel contenuto dell'elemento vengono rimosse.  
+**Rimuovi le righe vuote nel contenuto**
+
+Tutte le righe vuote nel contenuto dell'elemento vengono rimosse.
 
 ```xml
-<Grid>  
-<Button Name="button1">Hello</Button>  
+<Grid>
+<Button Name="button1">Hello</Button>
 </Grid>
 ```
 

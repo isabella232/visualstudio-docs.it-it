@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843991"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388949"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Pagina Progetti e soluzioni, finestra di dialogo Opzioni
 
 Consente di impostare il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni selezionare **Strumenti** > **Opzioni**, espandere **Progetti e soluzioni** e selezionare **Generale**.
 
 I percorsi predefiniti per le cartelle di progetti e modelli vengono impostati nella scheda **Percorsi** della stessa finestra di dialogo.
-
-> [!NOTE]
-> A seconda dalle impostazioni attive o dell'edizione,è possibile che le opzioni disponibili nell'interfaccia utente siano diverse rispetto a quanto descritto in questo articolo, che è stato scritto tenendo in considerazione le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Pagina Generale
 
