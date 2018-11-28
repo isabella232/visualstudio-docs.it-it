@@ -1,5 +1,5 @@
 ---
-title: Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
+title: Personalizzare le didascalie per controlli con associazione a dati
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758420"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305585"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
-Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md) in una finestra di progettazione, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono state trovate per essere concatenati tra loro. È possibile personalizzare il modo in cui vengono create queste etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** chiave del Registro di sistema.
+Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md#data-sources-window) in una finestra di progettazione, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono state trovate per essere concatenati tra loro. È possibile personalizzare il modo in cui vengono create queste etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** chiave del Registro di sistema.
 
 > [!NOTE]
 > Questa chiave del Registro di sistema non esiste fino a quando non si crea.
@@ -44,7 +44,7 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 |Elemento Registro di sistema|Valore predefinito|Descrizione|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Corrisponde a una lettera minuscola seguita da una lettera maiuscola o un carattere di sottolineatura.|
-|**SmartCaptionReplacement**|**$1 $2**|Il **1 dollaro** rappresenta tutti i caratteri corrispondenti nella prima delle parentesi dell'espressione e il **$2** rappresenta tutti i caratteri parentesi secondo una corrispondenza. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
+|**SmartCaptionReplacement**|"$1"|Il **1 dollaro** rappresenta tutti i caratteri corrispondenti nella prima delle parentesi dell'espressione e il **$2** rappresenta tutti i caratteri parentesi secondo una corrispondenza. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
 |**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, rende il suffisso `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 
 3.  Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-7.  Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+4.  Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
 
-8.  Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
+5.  Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Fare doppio clic il **SmartCaptionExpression** valore, quindi selezionare **Modify**.
+6. Fare doppio clic il **SmartCaptionExpression** valore, quindi selezionare **Modify**.
 
-12. Immettere l'espressione regolare desidera che il **Zdroje dat** finestra da utilizzare.
+7. Immettere l'espressione regolare desidera che il **Zdroje dat** finestra da utilizzare.
 
-13. Fare doppio clic il **SmartCaptionReplacement** valore, quindi selezionare **Modify**.
+8. Fare doppio clic il **SmartCaptionReplacement** valore, quindi selezionare **Modify**.
 
-14. Immettere la sostituzione stringa formattati nel modo desiderato visualizzare i modelli di corrispondenza nell'espressione regolare.
+9. Immettere la sostituzione stringa formattati nel modo desiderato visualizzare i modelli di corrispondenza nell'espressione regolare.
 
-15. Fare doppio clic il **SmartCaptionSuffix** valore, quindi selezionare **Modify**.
+10. Fare doppio clic il **SmartCaptionSuffix** valore, quindi selezionare **Modify**.
 
-16. Immettere eventuali caratteri che si desidera venga visualizzato alla fine della didascalia.
+11. Immettere eventuali caratteri che si desidera venga visualizzato alla fine della didascalia.
 
     La volta successiva che si trascinano elementi dal **Zdroje dat** finestra, le etichette della didascalia vengono create utilizzando i nuovi valori del Registro di sistema specificati.
 
@@ -90,21 +90,21 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 
 3.  Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-7.  Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+4.  Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
 
-8.  Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
+5.  Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Fare doppio clic il **SmartCaptionExpression** e selezionare **Modify**.
+6. Fare doppio clic il **SmartCaptionExpression** e selezionare **Modify**.
 
-12. Immettere `(.*)` per il valore. Ciò corrisponderà alla stringa intera.
+7. Immettere `(.*)` per il valore. Ciò corrisponderà alla stringa intera.
 
-13. Fare doppio clic il **SmartCaptionReplacement** e selezionare **Modify**.
+8. Fare doppio clic il **SmartCaptionReplacement** e selezionare **Modify**.
 
-14. Immettere `$1` per il valore. Ciò sostituisce la stringa con il valore corrispondente, ovvero l'intera stringa in modo che rimarrà invariata.
+9. Immettere `$1` per il valore. Ciò sostituisce la stringa con il valore corrispondente, ovvero l'intera stringa in modo che rimarrà invariata.
 
     La volta successiva che si trascinano elementi dal **Zdroje dat** finestra, le etichette della didascalia vengono create con sottotitoli in lingua originale non modificate.
 

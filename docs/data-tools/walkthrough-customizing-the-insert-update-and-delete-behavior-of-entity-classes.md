@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Personalizzazione di inserimento, aggiornamento ed eliminazione, il comportamento delle classi di entità'
+title: 'Procedura dettagliata: personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174978"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305533"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: Personalizzare l'insert, update e il comportamento di eliminazione delle classi di entità
 
-Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce una superficie di progettazione visiva per la creazione e modifica di LINQ alle classi di SQL (classi di entità) basate sugli oggetti in un database. Usando [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), è possibile usare la tecnologia LINQ per accedere ai database SQL. Per altre informazioni, vedere [LINQ (Language-Integrated query)](/dotnet/csharp/linq/).
+Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce una superficie di progettazione visiva per la creazione e modifica di LINQ alle classi di SQL (classi di entità) basate sugli oggetti in un database. Usando [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), è possibile usare la tecnologia LINQ per accedere ai database SQL. Per altre informazioni, vedere [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).
 
-Per impostazione predefinita, la logica per eseguire aggiornamenti avviene tramite il runtime LINQ to SQL. Il runtime crea predefinito `Insert`, `Update`, e `Delete` istruzioni basati sullo schema della tabella (definizioni di colonna e informazioni sulla chiave primarie). Quando non si desidera utilizzare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento e definire stored procedure specifiche per l'esecuzione di comandi di inserimento, aggiornamenti ed eliminazioni necessarie per lavorare con i dati nel database. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Inoltre, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure. Per altre informazioni, vedere [personalizzazione di operazioni utilizzando stored procedure](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Per impostazione predefinita, la logica per eseguire aggiornamenti avviene tramite il runtime LINQ to SQL. Il runtime crea predefinito `Insert`, `Update`, e `Delete` istruzioni basati sullo schema della tabella (definizioni di colonna e informazioni sulla chiave primarie). Quando non si desidera usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento e definire stored procedure specifiche per eseguire i comandi di inserimento, aggiornamento ed eliminazione necessari per l'uso dei dati nel database. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Inoltre, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure. Per altre informazioni, vedere [personalizzazione di operazioni utilizzando stored procedure](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
-> Questa procedura dettagliata richiede la disponibilità del **InsertCustomer**, **UpdateCustomer**, e **DeleteCustomer** stored procedure per il database Northwind.
+> In questa procedura dettagliata è richiesta la disponibilità delle stored procedure InsertCustomer **, UpdateCustomer** e DeleteCustomer** per il database Northwind.
 
 In questa procedura dettagliata vengono forniti i passaggi da completare per eseguire l'override del comportamento in fase di esecuzione LINQ to SQL predefinito per salvare i dati in un database usando stored procedure.
 
@@ -65,7 +65,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
        Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
 
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Creazione di un'applicazione e l'aggiunta di LINQ alle classi di SQL
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Creazione di un'applicazione e aggiunta di classi LINQ to SQL
 
 Poiché vengono utilizzate con LINQ alle classi di SQL e visualizzare i dati in un modulo di Windows, creare una nuova applicazione Windows Form e aggiungere un LINQ al file di classi di SQL.
 
@@ -75,17 +75,17 @@ Poiché vengono utilizzate con LINQ alle classi di SQL e visualizzare i dati in 
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
 4. Denominare il progetto **UpdatingWithSProcsWalkthrough**, quindi scegliere **OK**.
 
-     Il **UpdatingWithSProcsWalkthrough** progetto viene creato e aggiunto alla **Esplora soluzioni**.
+     Il progetto UpdatingwithSProcsWalkthrough viene creato e aggiunto a Esplora soluzioni **.
 
 4.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-5.  Fare clic sui **classi LINQ to SQL** modello e il tipo **Northwind. dbml** nel **nome** casella.
+5.  Fare clic sul modello Classi LINQ to SQL **e digitare Northwind.dbml nella casella Nome**.
 
 6.  Fare clic su **Aggiungi**.
 
@@ -101,24 +101,24 @@ Creare classi SQL che vengono eseguito il mapping alle tabelle di database trasc
 
 2.  Trascinare il **clienti** nodo dal **Esplora Server** o **Esplora Database** nel **O/R Designer* superficie.
 
-     Una classe di entità denominata **cliente** viene creato. che presenta proprietà corrispondenti alle colonne della tabella Customers. La classe di entità è denominata **cliente** (non **clienti**) perché rappresenta un singolo cliente della tabella Customers.
+     Viene creata una classe di entità denominata Customer **, che presenta proprietà corrispondenti alle colonne della tabella Customers. La classe di entità viene denominata Customer **(e non Customers**) perché rappresenta un solo cliente della tabella Customers.
 
     > [!NOTE]
-    > Viene chiamato questo comportamento di ridenominazione *pluralizzazione*. E può essere attivato o disattivare [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md). Per altre informazioni, vedere [procedura: attivare e disattivare (O/R Designer) la pluralizzazione](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Questo comportamento di ridenominazione viene definito pluralizzazione* E può essere attivato o disattivare [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md). Per altre informazioni, vedere [procedura: attivare e disattivare (O/R Designer) la pluralizzazione](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
-3.  Nel **compilare** menu, fare clic su **Compila UpdatingwithSProcsWalkthrough** per compilare il progetto.
+3.  Scegliere Compila UpdatingwithSProcsWalkthrough **dal menu Compila** per compilare il progetto.
 
-4.  Scegliere **Mostra origini dati** dal menu **Dati**.
+4.  Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
 
 5.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
-6.  Fare clic su **oggetto** nel **scegliere un tipo di origine dati** e quindi fare clic su **Avanti**.
+6.  Nella pagina Seleziona un tipo di origine dati **fare clic su Oggetto**, quindi su Avanti **.
 
-7.  Espandere la **UpdatingwithSProcsWalkthrough** nodo individuare e selezionare il **cliente** classe.
+7.  Espandere il nodo UpdatingwithSProcsWalkthrough **, quindi individuare e selezionare la classe Customer**.
 
     > [!NOTE]
-    > Se il **cliente** classe non è disponibile, annullare la procedura guidata, compilare il progetto e rieseguire la procedura guidata.
-8.  Fare clic su **Finish** per creare l'origine dati e aggiungere il **cliente** classe di entità per il **Zdroje dat** finestra.
+    > Se la classe Customer** non è disponibile, chiudere la procedura guidata, compilare il progetto ed eseguire nuovamente la procedura guidata.
+8.  Fare clic su Fine **per creare l'origine dati e aggiungere la classe di entità Customer** alla finestra Origini dati **.
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Creare un controllo DataGridView per visualizzare i dati del cliente in un Windows Form
 
@@ -126,14 +126,14 @@ Creare controlli associati alle classi di entità trascinando gli elementi di or
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Per aggiungere controlli associati alle classi di entità
 
-1.  Aprire **Form1** nella visualizzazione progettazione.
+1.  Aprire Form1** nella visualizzazione Progettazione.
 
-2.  Dal **Zdroje dat** finestra, trascinare il **Customer** nodo nello **Form1**.
+2.  Trascinare il nodo Customer **dalla finestra Origini dati** in Form1 **.
 
     > [!NOTE]
-    > Per visualizzare il **Zdroje dat** finestra, fare clic su **Mostra origini dati** sul **dati** menu.
+    > Per visualizzare la finestra Origini dati **, scegliere Mostra origini dati** dal menu Dati **.
 
-3.  Aprire **Form1** nell'Editor del codice.
+3.  Aprire Form1 nell'editor del codice.
 
 4.  Aggiungere il codice seguente al form, all'intero form, all'esterno di un metodo specifico, ma all'interno di `Form1` classe:
 
@@ -163,11 +163,11 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
 ### <a name="to-implement-save-functionality"></a>Per implementare la funzionalità di salvataggio
 
-1.  Aprire **Form1** nella visualizzazione progettazione.
+1.  Aprire Form1** nella visualizzazione Progettazione.
 
-2.  Selezionare Salva pulsante il **CustomerBindingNavigator** (il pulsante con icona del disco floppy).
+2.  Selezionare il pulsante Salva in CustomerBindingNavigator** (il pulsante con l'icona del disco floppy).
 
-3.  Nel **proprietà** impostare nella finestra di **Enabled** proprietà **True**.
+3.  Nella finestra Proprietà **impostare la proprietà Enabled** su True **.
 
 4.  Fare doppio clic sul pulsante Salva per creare un gestore eventi e passare all'editor del codice.
 
@@ -185,9 +185,9 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
 ### <a name="to-override-the-default-update-behavior"></a>Per eseguire l'override del comportamento di aggiornamento predefinito
 
-1.  Aprire il file LINQ to SQL nel **O/R Designer**. (Fare doppio clic il **Northwind. dbml** del file in **Esplora soluzioni**.)
+1.  Aprire il file LINQ to SQL nel **O/R Designer**. (fare doppio clic sul file Northwind.dbml **in Esplora soluzioni**).
 
-2.  Nelle **Esplora Server** oppure **Esplora Database**, espandere i database Northwind **Stored procedure** nodo e individuare il **InsertCustomers**, **UpdateCustomers**, e **DeleteCustomers** stored procedure.
+2.  In Esplora server **/Esplora database** espandere il nodo Stored procedure **dei database Northwind e individuare le stored procedure InsertCustomers**, UpdateCustomers **e DeleteCustomers**.
 
 3.  Trascinare tutte le tre stored procedure nel **O/R Designer**.
 
@@ -195,41 +195,41 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
 4.  Selezionare il **cliente** classe di entità la **O/R Designer**.
 
-5.  Nel **delle proprietà** finestra, seleziona il **Inserisci** proprietà.
+5.  Nella finestra Proprietà **selezionare la proprietà Insert**.
 
-6.  Fare clic sui puntini di sospensione (**...** ) accanto a **Usa fase di esecuzione** per aprire la **Configura comportamento** nella finestra di dialogo.
+6.  Fare clic sui puntini di sospensione accanto a Usa fase di esecuzione **per aprire la finestra di dialogo Configura comportamento**.
 
-7.  Selezionare **personalizzare**.
+7.  Selezionare Personalizza **.
 
-8.  Selezionare il **InsertCustomers** metodo le **Personalizza** elenco.
+8.  Selezionare il metodo InsertCustomers **nell'elenco Personalizza**.
 
-9. Fare clic su **applica** per salvare la configurazione per la classe e al comportamento selezionati.
-
-    > [!NOTE]
-    > È possibile continuare a configurare il comportamento per ogni combinazione classe/comportamento purché faccia clic su **applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, offrendo la possibilità di applicare le modifiche viene visualizzata una finestra di dialogo avviso.
-
-10. Selezionare **Update** nel **comportamento** elenco.
-
-11. Selezionare **personalizzare**.
-
-12. Selezionare il **UpdateCustomers** metodo le **Personalizza** elenco.
-
-     Esaminare l'elenco delle **gli argomenti del metodo** e **proprietà della classe** e notare che sono presenti due **gli argomenti del metodo** e due **proprietà della classe**per alcune colonne della tabella. In tal modo, vengono facilitati il rilevamento delle modifiche e la creazione di istruzioni che verifichino la presenza di eventuali violazioni di concorrenza.
-
-13. Mappa il **Original_CustomerID** argomento del metodo per il **CustomerID (Original)** proprietà della classe.
+9. Fare clic su Applica** per salvare la configurazione relativa alla classe e al comportamento selezionati.
 
     > [!NOTE]
-    > Per impostazione predefinita, verrà eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se i nomi delle proprietà vengono modificati e non è più corrispondenza tra la tabella e la classe di entità, è necessario selezionare la proprietà di classe equivalente a eseguire il mapping se il **O/R Designer** non è possibile determinare il mapping corretto. Inoltre, se gli argomenti del metodo non si dispone delle proprietà di classe valido per eseguire il mapping, è possibile impostare il **proprietà della classe** valore **(nessuno)**.
+    > È possibile continuare a configurare il comportamento per ogni combinazione di classe/comportamento purché si faccia clic su Applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, offrendo la possibilità di applicare le modifiche viene visualizzata una finestra di dialogo avviso.
 
-14. Fare clic su **applica** per salvare la configurazione per la classe e al comportamento selezionati.
+10. Selezionare Aggiorna **nell'elenco Comportamento**.
 
-15. Selezionare **eliminare** nel **comportamento** elenco.
+11. Selezionare Personalizza **.
 
-16. Selezionare **personalizzare**.
+12. Selezionare il metodo UpdateCustomers **nell'elenco Personalizza**.
 
-17. Selezionare il **DeleteCustomers** metodo le **Personalizza** elenco.
+     Controllare l'elenco di Argomenti metodo **e Proprietà classe** e notare che sono disponibili due Argomenti metodo **e due Proprietà classe** per alcune colonne nella tabella. In tal modo, vengono facilitati il rilevamento delle modifiche e la creazione di istruzioni che verifichino la presenza di eventuali violazioni di concorrenza.
 
-18. Mappa il **Original_CustomerID** argomento del metodo per il **CustomerID (Original)** proprietà della classe.
+13. Eseguire il mapping dell'argomento di metodo Original_CustomerID **alla proprietà di classe CustomerID (Original)**.
+
+    > [!NOTE]
+    > Per impostazione predefinita, verrà eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se i nomi di proprietà vengono modificati e non vi è più corrispondenza tra quelli della tabella e quelli della classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente a cui eseguire il mapping nel caso in cui Progettazione relazionale oggetti non sia in grado di determinare il mapping corretto. Inoltre, se per gli argomenti di metodo non sono disponibili proprietà di classe valide a cui eseguire il mapping, è possibile impostare il valore Proprietà classe **su (Nessuna)**.
+
+14. Fare clic su Applica** per salvare la configurazione relativa alla classe e al comportamento selezionati.
+
+15. Selezionare Elimina **nell'elenco Comportamento**.
+
+16. Selezionare Personalizza **.
+
+17. Selezionare il metodo DeleteCustomers **nell'elenco Personalizza**.
+
+18. Eseguire il mapping dell'argomento di metodo Original_CustomerID **alla proprietà di classe CustomerID (Original)**.
 
 19. Fare clic su **OK**.
 
@@ -238,30 +238,30 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
 ## <a name="test-the-application"></a>Testare l'applicazione
 
-Eseguire nuovamente l'applicazione per verificare che il **UpdateCustomers** stored procedure aggiorna correttamente il record del cliente nel database.
+Eseguire nuovamente l'applicazione per verificare che la stored procedure UpdateCustomers** aggiorni correttamente il record dei clienti nel database.
 
 1.  Premere **F5**.
 
-2.  Modificare un record nella griglia per testare il comportamento di aggiornamento.
+2.  Modificare un record nella griglia per testare il comportamento di Update.
 
-3.  Aggiungere un nuovo record per testare il comportamento di inserimento.
+3.  Aggiungere un nuovo record per testare il comportamento di Insert.
 
 4.  Fare clic sul pulsante Salva per salvare le modifiche nel database.
 
 5.  Chiudere il form.
 
-6.  Premere **F5** e verificare che il record aggiornato e il record appena inserito persistente.
+6.  Premere F5 e verificare che il record aggiornato e quello appena inserito siano stati salvati in modo permanente.
 
-7.  Eliminare il nuovo record creato nel passaggio 3 per testare il comportamento di eliminazione.
+7.  Eliminare il nuovo record creato nel passaggio 3 per testare il comportamento di Delete.
 
-8.  Fare clic su Salva per inviare le modifiche e rimuovere il record eliminato dal database.
+8.  Fare clic sul pulsante Salva per inviare le modifiche e rimuovere il record eliminato dal database.
 
 9. Chiudere il form.
 
-10. Premere **F5** e verificare che il record eliminato sia stato rimosso dal database.
+10. Premere F5 e verificare che il record eliminato sia stato rimosso dal database.
 
     > [!NOTE]
-    > Se l'applicazione Usa SQL Server Express Edition, in base al valore di **copia in Directory di Output** proprietà del file di database, le modifiche potrebbero non comparire quando si preme **F5** nel passaggio 10.
+    > Se l'applicazione usa SQL Server Express Edition, a seconda del valore della proprietà Copia nella directory di output** del file di database, è possibile che le modifiche non vengano visualizzate quando si preme F5 nel passaggio 10.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -269,7 +269,7 @@ A seconda dei requisiti dell'applicazione, esistono diverse operazioni che è po
 
 - Implementazione del controllo della concorrenza durante gli aggiornamenti. Per informazioni, vedere [la concorrenza ottimistica: Panoramica](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -277,4 +277,4 @@ A seconda dei requisiti dell'applicazione, esistono diverse operazioni che è po
 - [Metodi DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [Procedura: assegnare stored procedure per eseguire gli aggiornamenti, inserimenti ed eliminazioni](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Query LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)
+- [Query [LINQ to SQL]](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i dati correlati nelle applicazioni WPF
+title: Visualizzare dati correlati in applicazioni WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,41 +18,42 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
-ms.translationtype: MT
+ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746546"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304597"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>Visualizzare i dati correlati nelle applicazioni WPF
-In alcune applicazioni, si potrebbe voler lavorare con dati provenienti da più tabelle o entità che sono correlate tra loro in una relazione padre-figlio. Potrebbe ad esempio, si desidera visualizzare una griglia in cui vengono visualizzati i clienti da un `Customers` tabella. Quando l'utente seleziona un cliente specifico, in un'altra griglia vengono visualizzati gli ordini per cliente da un processo di `Orders` tabella.
+# <a name="display-related-data-in-wpf-applications"></a>Visualizzare dati correlati in applicazioni WPF
 
-È possibile creare controlli associati a dati che visualizzano dati correlati trascinando elementi dal **origini dati** finestra alla finestra di progettazione WPF.
+In alcune applicazioni, si potrebbe voler usare dati provenienti da più tabelle o entità sono correlate tra loro in una relazione padre-figlio. Potrebbe ad esempio, si desidera visualizzare una griglia in cui vengono visualizzati i clienti da un `Customers` tabella. Quando l'utente seleziona un cliente specifico, in un'altra griglia vengono visualizzati gli ordini per quel cliente da un processo di `Orders` tabella.
 
-## <a name="to-create-controls-that-display-related-records"></a>Per creare controlli che visualizzano i record correlati
+È possibile creare controlli associati a dati che visualizzano dati correlati trascinando elementi dal **Zdroje dat** finestra di progettazione WPF.
 
-1. Nel **dati** menu, fare clic su **Mostra origini dati** per aprire la **origini dati** finestra.
+## <a name="to-create-controls-that-display-related-records"></a>Per creare controlli che consentono di visualizzare i record correlati
 
-2. Fare clic su **Aggiungi nuova origine dati**e completare il **configurazione guidata origine dati** procedura guidata.
+1. Scegliere Mostra origini dati **dal menu Dati** per aprire la finestra Origini dati **.
 
-3. Aprire la finestra di progettazione WPF e assicurarsi che la finestra di progettazione contiene un contenitore che è una destinazione di rilascio validi per gli elementi di **origini dati** finestra.
+2. Fare clic su Aggiungi nuova origine dati **e completare la Configurazione guidata origine dati**.
 
-     Per ulteriori informazioni sulle destinazioni di rilascio validi, vedere [WPF di associare i controlli a dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+3. Aprire la finestra di progettazione WPF e assicurarsi che la finestra di progettazione contiene un contenitore che è un obiettivo di rilascio validi per gli elementi di **Zdroje dat** finestra.
 
-4. Nel **origini dati** finestra, espandere il nodo che rappresenta la tabella padre o l'oggetto nella relazione. La tabella padre o l'oggetto è sul lato "uno" di una relazione uno-a-molti.
+     Per altre informazioni sulle destinazioni di rilascio validi, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-5. Trascinare il nodo padre (o i singoli elementi nel nodo padre) di **origini dati** finestra su una destinazione di rilascio valide nella finestra di progettazione.
+4. Nel **Zdroje dat** finestra, espandere il nodo che rappresenta la tabella padre o dell'oggetto nella relazione. La tabella padre o l'oggetto è il lato "uno" di una relazione uno-a-molti.
 
-     Visual Studio genera XAML che crea i nuovi controlli associati a dati per ogni elemento che si trascina. Il codice XAML aggiunge inoltre un nuovo <xref:System.Windows.Data.CollectionViewSource> per l'oggetto per le risorse di destinazione o la tabella padre. Per alcune origini dati, Visual Studio genera inoltre il codice per caricare i dati in un oggetto o la tabella padre. Per ulteriori informazioni, vedere [WPF di associare i controlli a dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+5. Trascinare il nodo padre (o qualsiasi singoli elementi nel nodo padre) dal **Zdroje dat** finestra su un obiettivo di rilascio valido nella finestra di progettazione.
 
-6. Nel **origini dati** finestra, individuare la tabella figlio correlata o l'oggetto. Le tabelle figlio correlate e gli oggetti vengono visualizzati come nodi espandibili nella parte inferiore dell'elenco del nodo padre dei dati.
+     Visual Studio genera XAML che crea nuovi controlli associati a dati per ogni elemento trascinato. il XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> per oggetti per le risorse di destinazione di rilascio o la tabella padre. Per alcune origini dati, Visual Studio genera inoltre il codice per caricare i dati in un oggetto o la tabella padre. Per altre informazioni, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-7. Trascinare il nodo figlio (o i singoli elementi nel nodo figlio) di **origini dati** finestra su una destinazione di rilascio valide nella finestra di progettazione.
+6. Nel **Zdroje dat** finestra, individuare la tabella figlio correlata o l'oggetto. Le tabelle figlio correlate e gli oggetti vengono visualizzati come nodi espandibili nella parte inferiore dell'elenco del nodo padre dei dati.
 
-     Visual Studio genera XAML che crea nuovi controlli associati a dati per ognuno degli elementi trascinati. Il codice XAML aggiunge inoltre un nuovo <xref:System.Windows.Data.CollectionViewSource> per l'oggetto per le risorse dell'obiettivo di rilascio o una tabella figlio. Questa nuova <xref:System.Windows.Data.CollectionViewSource> è associato alla proprietà dell'oggetto trascinato nella finestra di progettazione o tabella padre. Per alcune origini dati, Visual Studio genera inoltre il codice per caricare i dati nella tabella figlio o nell'oggetto.
+7. Trascinare il nodo figlio (o qualsiasi singoli elementi del nodo figlio) dal **Zdroje dat** finestra su un obiettivo di rilascio valido nella finestra di progettazione.
 
-     La figura seguente illustra gli **ordini** tabella il **clienti** tabella in un set di dati nel **origini dati** finestra.
+     Visual Studio genera XAML che crea nuovi controlli associati a dati per ognuno degli elementi trascinati. il XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> per la tabella figlio o un oggetto alle risorse di destinazione di rilascio. Questa nuova <xref:System.Windows.Data.CollectionViewSource> è associato alla proprietà dell'oggetto che è stato appena trascinato nella finestra di progettazione o tabella padre. Per alcune origini dati, Visual Studio genera inoltre il codice per caricare i dati nella tabella figlio o nell'oggetto.
+
+     La figura seguente illustra i relativi **ordini** tabella del **clienti** tabella in un set di dati nel **Zdroje dat** finestra.
 
      ![Finestra Origini dati con visualizzazione delle relazioni](../data-tools/media/datasources2.gif)
 

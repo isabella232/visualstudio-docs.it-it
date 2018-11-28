@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750812"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388738"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -65,16 +65,13 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
        Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
 
-> [!NOTE]
-> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
 Iniziare creando una nuova applicazione Windows Forms:
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -88,7 +85,7 @@ Successivamente, creare un set di dati denominato **NorthwindDataSet**:
 
 1. Nel **Data** menu, scegliere **origine aggiungere nuovi dati**.
 
-   Apre la configurazione guidata origine dati.
+   Verrà avviata la Configurazione guidata origine dati.
 
 2. Nel **scegliere un tipo di origine dati** schermata, seleziona **Database**.
 
@@ -109,7 +106,7 @@ Successivamente, creare un set di dati denominato **NorthwindDataSet**:
 
 In questa sezione si crea una <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> trascinando la **clienti** articolo dal **Zdroje dat** finestra nei Form Windows.
 
-1. Nel **Data** menu, scegliere **Mostra origini dati** per aprire la **finestra Origini dati**.
+1. Per aprire la **Zdroje dat** finestra via il **Data** menu, scegliere **Mostra origini dati**.
 
 2. Nel **Zdroje dat** finestra, espandere il **NorthwindDataSet** nodo e quindi selezionare il **clienti** tabella.
 

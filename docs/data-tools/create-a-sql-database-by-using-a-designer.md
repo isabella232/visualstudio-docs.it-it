@@ -1,5 +1,5 @@
 ---
-title: Creare un file di database e usare Progettazione tabelle in Visual Studio
+title: Creare un file di database e usare Progettazione tabelle
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582372"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305325"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 
@@ -29,35 +29,35 @@ ms.locfileid: "39582372"
 
 Per completare questa procedura dettagliata, è necessario disporre di facoltativo **elaborazione ed archiviazione dati** carico di lavoro sia installato in Visual Studio. Per installarlo, aprire **programma di installazione di Visual Studio** e scegliere il **carichi di lavoro** scheda. Sotto **Web e Cloud**, scegliere **elaborazione ed archiviazione dati**. Scegliere il **Modify** pulsante per aggiungere il carico di lavoro per Visual Studio.
 
-## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un file di database locale
+## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un nuovo file di database locale.
 
-1.  Creare un progetto Windows Form denominato **SampleDatabaseWalkthrough**.
+1. Creare un progetto Windows Form denominato SampleDatabaseWalkthrough **.
 
-2.  Nella barra dei menu, selezionare **Project** > **Aggiungi nuovo elemento**.
+2. Nella barra dei menu, selezionare **Project** > **Aggiungi nuovo elemento**.
 
-3.  Nell'elenco dei modelli di elemento, scorrere verso il basso e selezionare **Database basato sul servizio**.
+3. Nell'elenco dei modelli di elemento, scorrere verso il basso e selezionare **Database basato sul servizio**.
 
      ![Finestra di dialogo Modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png)
 
-4.  Assegnare un nome del database **SampleDatabase**, quindi selezionare il **Add** pulsante.
+4. Assegnare un nome del database **SampleDatabase**, quindi selezionare il **Add** pulsante.
 
 ### <a name="to-add-a-data-source"></a>Per aggiungere un'origine dati
 
-5.  Se il **Zdroje dat** finestra non è aperta, aprirlo selezionando il **MAIUSC**+**Alt**+**1!d** chiavi o scegliere barra dei menu, selezionare **View** > **Other Windows** > **Zdroje dat**.
+1. Se il **Zdroje dat** finestra non è aperta, aprirla premendo **MAIUSC**+**Alt**+**1!d** o selezione **View** > **Other Windows** > **Zdroje dat** nella barra dei menu.
 
-6.  Nel **Zdroje dat** finestra, seleziona la **Aggiungi nuova origine dati** collegamento.
+1. Nel **Zdroje dat** finestra, seleziona la **Aggiungi nuova origine dati** collegamento.
 
-    Il **configurazione guidata origine dati** apre.
+   Verrà avviata la Configurazione guidata origine dati **.
 
-7. Nel **scegliere un tipo di origine dati** pagina, scegliere **Database** e quindi scegliere **Next**.
+1. Nel **scegliere un tipo di origine dati** pagina, scegliere **Database** e quindi scegliere **Next**.
 
-8. Nel **scegliere un modello di Database** pagina, scegliere **successivo** per accettare il valore predefinito (set di dati).
+1. Nel **scegliere un modello di Database** pagina, scegliere **successivo** per accettare il valore predefinito (set di dati).
 
-9. Nel **Seleziona connessione dati** pagina, selezionare la **SampleDatabase. mdf** file nell'elenco a discesa elenco e quindi scegliere **Avanti**.
+1. Nel **Seleziona connessione dati** pagina, selezionare la **SampleDatabase. mdf** file nell'elenco a discesa elenco e quindi scegliere **Avanti**.
 
-10. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, scegliere **successivo**.
+1. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, scegliere **successivo**.
 
-11. Uno di **Scegli oggetti di Database** pagina, verrà visualizzato un messaggio che indica il database che non contiene alcun oggetto. Scegliere **Fine**.
+1. Uno di **Scegli oggetti di Database** pagina, verrà visualizzato un messaggio che indica il database che non contiene alcun oggetto. Scegliere **Fine**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Per visualizzare le proprietà della connessione dati
 
@@ -73,13 +73,13 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
 
 ### <a name="to-create-the-customers-table"></a>Per creare la tabella Customers
 
-1.  Nella **Esplora Server** o **Esplora oggetti di SQL Server**, espandere il **connessioni dati** nodo, quindi espandere il **SampleDatabase. mdf**nodo.
+1. Nella **Esplora Server** o **Esplora oggetti di SQL Server**, espandere il **connessioni dati** nodo, quindi espandere il **SampleDatabase. mdf**nodo.
 
-2.  Aprire il menu di scelta rapida **tabelle**, quindi selezionare **Aggiungi nuova tabella**.
+2. Aprire il menu di scelta rapida **tabelle**, quindi selezionare **Aggiungi nuova tabella**.
 
-     Il **Progettazione tabelle** apre e visualizza una griglia con una riga predefinita, che rappresenta una singola colonna nella tabella che si sta creando. Aggiungendo righe alla griglia, vengono aggiunte colonne alla tabella.
+     Verrà aperta Progettazione tabelle** e verrà visualizzata una griglia con una riga predefinita, che rappresenta una singola colonna della tabella che si sta creando. Aggiungendo righe alla griglia, vengono aggiunte colonne alla tabella.
 
-3.  Nella griglia, aggiungere una riga per ognuna delle seguenti voci:
+3. Nella griglia, aggiungere una riga per ognuna delle seguenti voci:
 
     |Nome colonna|Tipo di dati|Consente valori null|
     |-----------------|---------------|-----------------|
@@ -88,11 +88,11 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
     |`ContactName`|`nvarchar (50)`|True (selezionato)|
     |`Phone`|`nvarchar (24)`|True (selezionato)|
 
-4.  Aprire il menu di scelta rapida per il `CustomerID` riga e quindi selezionare **Imposta chiave primaria**.
+4. Aprire il menu di scelta rapida per il `CustomerID` riga e quindi selezionare **Imposta chiave primaria**.
 
-5.  Aprire il menu di scelta rapida per la riga predefinita e quindi selezionare **Elimina**.
+5. Aprire il menu di scelta rapida per la riga predefinita e quindi selezionare **Elimina**.
 
-6.  Denominare la tabella Customers aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
+6. Denominare la tabella Customers aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
 
     ```sql
     CREATE TABLE [dbo].[Customers]
@@ -102,15 +102,15 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
 
     ![Progettazione tabelle](../data-tools/media/raddata-table-designer.png)
 
-7.  Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
+7. Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
 
-8.  Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
+8. Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
 
     Le modifiche vengono salvate nel file del database locale.
 
 ### <a name="to-create-the-orders-table"></a>Per creare la tabella Orders
 
-1.  Aggiungere un'altra tabella, quindi aggiungere una riga per ogni voce nella tabella seguente:
+1. Aggiungere un'altra tabella, quindi aggiungere una riga per ogni voce nella tabella seguente:
 
     |Nome colonna|Tipo di dati|Consente valori null|
     |-----------------|---------------|-----------------|
@@ -119,60 +119,60 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
     |`OrderDate`|`datetime`|True (selezionato)|
     |`OrderQuantity`|`int`|True (selezionato)|
 
-2.  Impostare **OrderID** come chiave primaria e quindi eliminare la riga predefinita.
+2. Impostare **OrderID** come chiave primaria e quindi eliminare la riga predefinita.
 
-3.  Denominare la tabella Orders aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
+3. Denominare la tabella Orders aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
 
     ```sql
     CREATE TABLE [dbo].[Orders]
     ```
 
-4.  Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
+4. Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
 
-5.  Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
+5. Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
 
     Le modifiche vengono salvate nel file del database locale.
 
 ### <a name="to-create-a-foreign-key"></a>Per creare una chiave esterna
 
-1.  Nel riquadro contesto sul lato destro della griglia, aprire il menu di scelta rapida **chiavi esterne**, quindi selezionare **Aggiungi nuova chiave esterna**, come illustrato di seguito.
+1. Nel riquadro contesto sul lato destro della griglia, aprire il menu di scelta rapida **chiavi esterne**, quindi selezionare **Aggiungi nuova chiave esterna**, come illustrato di seguito.
 
      ![Aggiunta di una chiave esterna in Progettazione tabelle](../data-tools/media/foreignkey.png)
 
-2.  Nella casella di testo che viene visualizzato, sostituire **ToTable** con **clienti**.
+2. Nella casella di testo visualizzata, sostituire ToTable **con Customers**.
 
-3.  Nel riquadro T-SQL, aggiornare l'ultima riga affinché corrisponda all'esempio seguente:
+3. Nel riquadro T-SQL, aggiornare l'ultima riga affinché corrisponda all'esempio seguente:
 
     ```sql
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
     ```
 
-4.  Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
+4. Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
 
-5.  Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
+5. Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
 
     Le modifiche vengono salvate nel file del database locale.
 
 ## <a name="populate-the-tables-with-data"></a>Popolare le tabelle con dati
 
-1.  Nelle **Esplora Server** oppure **Esplora oggetti di SQL Server**, espandere il nodo per il database di esempio.
+1. Nelle **Esplora Server** oppure **Esplora oggetti di SQL Server**, espandere il nodo per il database di esempio.
 
-2.  Aprire il menu di scelta rapida per il **tabelle** nodo, seleziona **aggiornare**, quindi espandere il **tabelle** nodo.
+2. Aprire il menu di scelta rapida per il **tabelle** nodo, seleziona **aggiornare**, quindi espandere il **tabelle** nodo.
 
-3.  Aprire il menu di scelta rapida per la tabella Customers e quindi selezionare **Mostra dati tabella**.
+3. Aprire il menu di scelta rapida per la tabella Customers e quindi selezionare **Mostra dati tabella**.
 
-4.  Aggiungere i dati desiderati per alcuni clienti.
+4. Aggiungere i dati desiderati per alcuni clienti.
 
     È possibile specificare tutti i cinque caratteri desiderati come ID cliente, ma sceglierne almeno uno da ricordare in un secondo momento per l'utilizzo in questa procedura.
 
-5.  Aprire il menu di scelta rapida per la tabella Orders e quindi selezionare **Mostra dati tabella**.
+5. Aprire il menu di scelta rapida per la tabella Orders e quindi selezionare **Mostra dati tabella**.
 
-6.  Aggiungere i dati per alcuni ordini.
+6. Aggiungere i dati per alcuni ordini.
 
     > [!IMPORTANT]
-    > Assicurarsi che tutti gli ID degli ordini e quantità degli ordini siano valori integer e che ogni ID cliente corrisponda a un valore specificato nella **CustomerID** colonna della tabella Customers.
+    > Verificare che tutti gli ID ordine e le quantità di ordini siano valori Integer e che ogni ID cliente corrisponda a un valore specificato nella colonna CustomerID della tabella Customers.
 
-7.  Nella barra dei menu, selezionare **File** > **Salva tutto**.
+7. Nella barra dei menu, selezionare **File** > **Salva tutto**.
 
 ## <a name="see-also"></a>Vedere anche
 

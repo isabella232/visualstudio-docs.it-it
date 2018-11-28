@@ -1,7 +1,7 @@
 ---
 title: Visualizzare le stringhe in un visualizzatore di stringhe | Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2018
+ms.date: 10/10/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349088"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388556"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Stringhe di visualizzazione in un visualizzatore di stringhe in Visual Studio
 
@@ -69,5 +69,5 @@ Verrà visualizzata una stringa HTML ben formata come se viene eseguito il rende
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di visualizzatori personalizzati (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Creazione di visualizzatori personalizzati (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations)
