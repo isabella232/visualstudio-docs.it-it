@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264662"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304872"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (sviluppo per Office in Visual Studio)
-  Il **appAddin** elemento del `vstov4` dello spazio dei nomi archivia le informazioni specifiche della personalizzazione per componenti aggiuntivi VSTO.  
+  Il **appAddin** dell'elemento il `vstov4` dello spazio dei nomi archivia le informazioni specifiche della personalizzazione per componenti aggiuntivi VSTO.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,32 +38,32 @@ ms.locfileid: "34264662"
 </appAddin>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
  Il **appAddin** elemento è obbligatorio e si trova il `vstov4` dello spazio dei nomi. È presente una sola **appAddin** elemento definito in un manifesto dell'applicazione.  
   
- Il **appAddin** elemento presenta gli attributi seguenti.  
+ Il **appAddin** elemento ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |**Applicazione**|Obbligatorio. Identifica l'applicazione di Microsoft Office. Il valore può essere uno dei seguenti: Excel, InfoPath, Outlook, PowerPoint, Project, Visio o Word.|  
-|**loadBehavior**|Facoltativo. Per impostazione predefinita, il **loadBehavior** è abilitato impostando questo valore su. Per il debug, il componente aggiuntivo VSTO può essere disabilitato impostando il valore su due. Per altre informazioni, vedere la tabella intitolata valori di LoadBehavior in [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**keyName**|Obbligatorio. Questo valore corrisponde al nome della chiave del Registro di sistema che verrà usata dall'applicazione per il caricamento del componente aggiuntivo VSTO. Per altre informazioni, vedere [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**LoadBehavior**|Facoltativo. Per impostazione predefinita, il **loadBehavior** viene abilitato impostando questo valore. Per il debug, il componente aggiuntivo VSTO può essere disabilitato impostando il valore su due. Per altre informazioni, vedere la tabella intitolata valori di LoadBehavior in [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Nome chiave**|Obbligatorio. Questo valore corrisponde al nome della chiave del Registro di sistema che verrà usata dall'applicazione per il caricamento del componente aggiuntivo VSTO. Per altre informazioni, vedere [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- Il **appAddin** elemento presenta gli elementi figlio seguenti.  
+ Il **appAddin** elemento ha i seguenti elementi figlio.  
   
 ### <a name="friendlyname"></a>friendlyName  
- Facoltativo. Il **friendlyName** elemento è descritto [ &#60;friendlyName&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il **friendlyName** elemento viene descritto [ &#60;friendlyName&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Descrizione  
- Facoltativo. Il **descrizione** elemento è descritto [ &#60;description&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il **description** elemento viene descritto [ &#60;descrizione&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Obbligatorio solo per i componenti aggiuntivi VSTO di Outlook che includono aree di modulo. Il **formRegions** elemento è descritto [ &#60;formRegions&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Obbligatorio solo per i componenti aggiuntivi VSTO di Outlook che includono aree di modulo. Il **formRegions** elemento viene descritto [ &#60;formRegions&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra **appAddin** elementi in una soluzione Outlook distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra **appAddin** elementi in una soluzione Outlook distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
