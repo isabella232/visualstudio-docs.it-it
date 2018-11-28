@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945988"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388936"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 Lo stato attivo di regole minime miste Microsoft ai problemi più critici dei progetti C++ che supportano Common Language Runtime, incluse potenziali lacune nella protezione e arresti anomali delle applicazioni. È necessario includere questo set di regole nel set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime.
@@ -96,7 +96,7 @@ Lo stato attivo di regole minime miste Microsoft ai problemi più critici dei pr
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
 |[C28217](../code-quality/c28217.md)|Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file|
-|[C28218](../code-quality/c28218.md)|Per il parametro della funzione, nell'annotazione, il numero di parametri dell'annotazione non corrisponde a quello trovato nel file|
+|[C28218](../code-quality/c28218.md)|Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
 |[C28219](../code-quality/c28219.md)|Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione|
 |[C28220](../code-quality/c28220.md)|Espressione integer prevista per l'annotazione del parametro nell'annotazione|
 |[C28221](../code-quality/c28221.md)|Prevista espressione di tipo String per il parametro nell'annotazione|

@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673220"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388634"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opzioni, Editor di testo, XAML, Varie
+
 Usare la pagina delle proprietà **Varie** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla pagina delle proprietà **Varie**, espandere l'**Editor di testo** > **XAML** > nodo **Varie**.
 
-> [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Inserimento automatico
- Usare questa impostazione per controllare la generazione automatica di tag e virgolette.
+
+Usare questa impostazione per controllare la generazione automatica di tag e virgolette.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Usare la pagina delle proprietà **Varie** per specificare la formattazione di e
 |**Virgole per separare i parametri di MarkupExtension**|Specifica se vengono generate le virgole quando si digita più di un parametro in un'estensione di markup.|
 
 ## <a name="errors-and-warnings"></a>Errori e avvisi
- Usare questa impostazione per controllare la generazione automatica di errori e avvisi. Per altre informazioni, vedere [Errori e avvisi XAML](../../designers/xaml-errors-warnings.md).
+
+Usare questa impostazione per controllare la generazione automatica di errori e avvisi. Per altre informazioni, vedere [Errori e avvisi XAML](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Vedere anche
 

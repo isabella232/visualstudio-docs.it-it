@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219159"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388796"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
 
 Questa finestra di dialogo consente di modificare le impostazioni globali di Visual Studio Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, selezionare **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi selezionare **Generale**.
-
-> [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Impostazioni
 
