@@ -21,29 +21,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a98927d0132402e2977d5d8f1f28cbba43da636c
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: abd617a1b787896f296976ba21f76d3eafbd13c4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257147"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388608"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedura: visualizzare e nascondere gruppi di registri (C#, C++, Visual Basic, F#)
 
-Il **registra** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni** della finestra di dialogo **debug** nodo, **generale**categoria.  
-  
- Per evitare confusione, il **registra** finestra i registri sono organizzati in gruppi. Se facendo clic la **registra** finestra, verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.  
-  
+La finestra Registri **è disponibile solo se il debug a livello di indirizzo è stato attivato nel nodo Debug** della categoria Generale **nella finestra di dialogo Opzioni**.
+
+Per evitare confusione, nella finestra Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra Registri** verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.
+
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-or-hide-register-groups"></a>Per visualizzare o nascondere i gruppi di registri  
-  
-1.  Fare doppio clic il **registra** finestra.  
-  
-2.  Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.  
-  
-     I gruppi di registri non supportati dall'hardware per il quale si sta eseguendo il debug sono disabilitati nel menu di scelta rapida e non possono essere selezionati.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+
+## <a name="display-or-hide-register-groups"></a>Visualizzare o nascondere i gruppi di registri
+
+1.  Fare clic con il pulsante destro del mouse sulla finestra Registri **.
+
+2.  Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.
+
+     I gruppi di registri non supportati dall'hardware per il quale si sta eseguendo il debug sono disabilitati nel menu di scelta rapida e non possono essere selezionati.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

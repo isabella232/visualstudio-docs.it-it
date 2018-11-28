@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908431"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389215"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
 ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura dettagliata, si crea un'applicazione Windows che carica i dati XML in un set di dati. Il set di dati viene quindi visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo. Infine, uno schema XML basato sul contenuto del file XML viene visualizzato in una casella di testo.
 
-> [!NOTE]
-> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-In questo passaggio si crea un progetto Visual Basic o Visual c#.
+In questo passaggio si crea un Visual Basic o l'oggetto visivo C# project.
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -54,7 +51,7 @@ In questo passaggio si crea un progetto Visual Basic o Visual c#.
 
 Poiché questa procedura dettagliata è incentrato sulla lettura dei dati XML in un set di dati, viene fornito il contenuto di un file XML.
 
-1. Nel **Project** dal menu **Aggiungi nuovo elemento**.
+1. Scegliere Aggiungi nuovo elemento**dal menu Progetto**.
 
 2. Selezionare **File XML**, denominare il file **authors**, quindi selezionare **Add**.
 
@@ -155,7 +152,7 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
     |Control|Proprietà|Impostazione|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**Barre di scorrimento**|**Verticale**|
+    ||ScrollBars|**Verticale**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**per**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ Il **Show Schema** consente di creare un <xref:System.IO.StringWriter> oggetto c
 
      Il **Editor di codice** viene aperto in corrispondenza di `ShowSchemaButton_Click` gestore dell'evento.
 
-3.  Incollare il codice seguente nel `ShowSchemaButton_Click` gestore dell'evento.
+3.  Incollare il codice seguente nel gestore eventi `ShowSchemaButton_Click`:
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -225,7 +222,7 @@ Il **Show Schema** consente di creare un <xref:System.IO.StringWriter> oggetto c
 
 Questa procedura dettagliata illustra le nozioni di base di lettura di un file XML in un set di dati, nonché la creazione di uno schema basato sul contenuto del file XML. Ecco alcune attività che è possibile eseguire successivamente:
 
--   Modificare i dati nel set di dati e riscriverli come XML. Per altre informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
+-   Modificare i dati nel set di dati e riscriverli come XML. Per ulteriori informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
 
 -   Modificare i dati nel set di dati e scriverlo in un database.
 

@@ -1,5 +1,5 @@
 ---
-title: Creare tabelle di ricerca nelle applicazioni WPF
+title: Creare tabelle di ricerca in applicazioni WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924200"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305481"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca nelle applicazioni WPF
+# <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
+
 Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) descrive un controllo che visualizza le informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella padre o dell'oggetto nel **Zdroje dat** finestra in un controllo che è già associato a una colonna o proprietà in una tabella figlio correlata.
 
 Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni record di `Orders` tabella include un `CustomerID` che indica il cliente che ha effettuato l'ordine. Il `CustomerID` è una chiave esterna che punta a un record del cliente nel `Customers` tabella. Quando si visualizza un elenco di ordini dal `Orders` tabella, è possibile visualizzare il nome del cliente effettivo anziché il `CustomerID`. Perché è il nome del cliente nel `Customers` tabella, è necessario creare una tabella di ricerca per visualizzare il nome del cliente. La tabella di ricerca utilizza il `CustomerID` valore di `Orders` registrare per spostarsi all'interno della relazione e restituire il nome del cliente.
@@ -38,21 +39,21 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
     -   WCF Data Service, servizio WCF o un servizio web. Per altre informazioni, vedere [procedura: connettersi ai dati in un servizio](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Oggetti. Per altre informazioni, vedere [associazione agli oggetti in Visual Studio](bind-objects-in-visual-studio.md).
+    -   Oggetti Per altre informazioni, vedere [associazione agli oggetti in Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Prima di creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come un'origine dati per il progetto.
+    > Prima di creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come un'origine dati per il progetto.
 
 2.  Aprire il **WPF Designer**e assicurarsi che la finestra di progettazione contiene un contenitore che è una destinazione di rilascio validi per gli elementi nel **Zdroje dat** finestra.
 
      Per altre informazioni sulle destinazioni di rilascio validi, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Nel **dati** menu, fare clic su **Mostra origini dati** per aprire il **Zdroje dat** finestra.
+3.  Scegliere Mostra origini dati **dal menu Dati** per aprire la finestra Origini dati **.
 
 4.  Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre o l'oggetto e la tabella figlio correlata o l'oggetto.
 
     > [!NOTE]
-    >  La tabella figlio correlata o l'oggetto è il nodo che viene visualizzato come nodo figlio espandibile sotto la tabella padre o l'oggetto.
+    > La tabella figlio correlata o l'oggetto è il nodo che viene visualizzato come nodo figlio espandibile sotto la tabella padre o l'oggetto.
 
 5.  Fare clic sul menu a discesa per il nodo figlio e selezionare **dettagli**.
 
@@ -67,12 +68,12 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
     -   **ListView**
 
         > [!NOTE]
-        >  Se il **ListBox** oppure **ListView** controllo non viene visualizzato nell'elenco, è possibile aggiungere questi controlli per l'elenco. Per informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Se il **ListBox** oppure **ListView** controllo non viene visualizzato nell'elenco, è possibile aggiungere questi controlli per l'elenco. Per informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   Qualsiasi controllo personalizzato che deriva da <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Per informazioni su come aggiungere controlli personalizzati per l'elenco dei controlli è possono selezionare per gli elementi di **Zdroje dat** finestra, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Per informazioni su come aggiungere controlli personalizzati per l'elenco dei controlli è possono selezionare per gli elementi di **Zdroje dat** finestra, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Trascinare il nodo figlio dal **Zdroje dat** finestra in un contenitore in WPF designer. (Nell'esempio precedente, il nodo figlio è il **ordini** nodo.)
 
@@ -93,4 +94,4 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visualizzare dati correlati in applicazioni WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md)
