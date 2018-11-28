@@ -20,17 +20,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], adding at runtime
 - helper methods [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941178"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305637"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Aggiungere controlli ai documenti di Office in fase di esecuzione
   È possibile aggiungere controlli a un documento di Microsoft Office Word e di una cartella di lavoro di Microsoft Office Excel in fase di esecuzione. È inoltre possibile rimuoverli in fase di esecuzione. I controlli che si aggiunge o rimuove in fase di esecuzione sono noti *controlli dinamici*.  

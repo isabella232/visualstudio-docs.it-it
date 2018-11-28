@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908353"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305676"
 ---
 # <a name="actions-pane-overview"></a>Panoramica del riquadro azioni
   Un riquadro azioni è una personalizzabile **azioni documenti** riquadro attività che è collegato a un documento di Microsoft Office Word specifico o della cartella di lavoro di Microsoft Office Excel. Nel riquadro azioni è ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività incorporati, ad esempio la **origine XML** riquadro attività in Excel o il **stili e formattazione** riquadro attività in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.
