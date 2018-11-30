@@ -27,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220261"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389263"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
+
 La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni** e quindi selezionare **Ambiente/Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
 
-> [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Le modifiche delle combinazioni colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
+**Mostra impostazioni per**
 
- Le modifiche delle combinazioni colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
-
- **Mostra impostazioni per** Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificare le combinazioni di tipi di carattere e colori. Dopo aver selezionato un elemento in questo elenco è possibile personalizzare le impostazioni dei colori per l'elemento selezionato in **Elementi visualizzati**.
+Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificare le combinazioni di tipi i carattere e colori. Dopo aver selezionato un elemento in questo elenco è possibile personalizzare le impostazioni dei colori per l'elemento selezionato in **Elementi visualizzati**.
 
 -   **Editor di testo**
 
@@ -54,7 +53,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per gli elementi Stampante influiscono sull'aspetto del testo nei documenti stampati.
 
     > [!NOTE]
-    >  Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.
+    > Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.
 
 -   **Completamento istruzioni**
 
@@ -73,21 +72,28 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.
 
     > [!NOTE]
-    >  Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
+    > Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
 
-**Valori predefiniti** Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenco selezionato in **Mostra impostazioni per**. Il pulsante **Usa** viene visualizzato quando sono disponibili per la selezione altre combinazioni di visualizzazione. Ad esempio, è possibile scegliere tra due combinazioni per l'elemento Stampante.
+**Valori predefiniti**
 
-**Carattere (tipi di carattere a larghezza fissa in grassetto)** Elenca tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
+Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenco selezionato in **Mostra impostazioni per**. Il pulsante **Usa** viene visualizzato quando sono disponibili per la selezione altre combinazioni di visualizzazione. Ad esempio, è possibile scegliere tra due combinazioni per l'elemento Stampante.
 
-**Dimensioni** Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.
+**Carattere (tipi di carattere a larghezza fissa in grassetto)**
 
-**Elementi visualizzati** Elenca gli elementi per cui è possibile modificare il colore di primo piano e sfondo.
+Elenca tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
+
+**Dimensione**
+
+Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.
+
+**Elementi visualizzati**
+
+Elenca gli elementi per cui è possibile modificare il colore di primo piano e sfondo.
 
 > [!NOTE]
 > L'elemento visualizzato predefinito è **Testo normale**. Di conseguenza, le proprietà assegnate a **Testo normale** verranno sostituite dalle proprietà assegnate ad altri elementi visualizzati. Se, ad esempio, si assegna il colore blu a **Testo normale** e il colore verde a **Identificatore**, tutti gli identificatori verranno visualizzati in verde. In questo esempio le proprietà di **Identificatore** sostituiscono le proprietà di **Testo normale**.
 
-
- Alcuni degli elementi visualizzati includono:
+Alcuni degli elementi visualizzati includono:
 
 |Elemento visualizzato|Descrizione|
 |------------------|-----------------|
@@ -198,29 +204,48 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
 |**Testo XML**|Contenuto dell'elemento in testo normale.|
 |**Parola chiave XSLT**|Nomi di elementi XSLT.|
 
- **Primo piano elemento** Elenca i colori disponibili che è possibile scegliere per il primo piano dell'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di primo piano modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
+**Primo piano elemento**
 
- **Automatico** Gli elementi possono ereditare il colore di primo piano da altri elementi visualizzati come **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
+Elenca i colori disponibili che è possibile scegliere per il primo piano dell'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di primo piano modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
- **Predefinito** Il colore visualizzato per l'elemento la prima volta che si avvia Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
+**Automatico**
 
- **Personalizza** Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
+Gli elementi possono ereditare il colore di primo piano da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
+
+**Default**
+
+Il colore visualizzato per l'elemento la prima volta che si avvia Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
+
+**Personalizzato**
+
+Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
 
 > [!NOTE]
 > La possibilità di definire colori personalizzati può essere limitata dalle impostazioni del colore per lo schermo del computer. Ad esempio, se il computer è impostato su 256 colori e si seleziona un colore personalizzato nella finestra di dialogo **Colore**, l'IDE userà per impostazione predefinita il **colore di base** più simile disponibile e visualizzerà il colore nero nella casella di anteprima **Colore**.
 
+**Sfondo elemento**
 
- **Primo piano elemento** Visualizza una tavolozza di colori da cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
+Visualizza una tavolozza di colori da cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
- **Automatico** Gli elementi possono ereditare il colore di sfondo da altri elementi visualizzati come **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
+**Automatico**
 
- **Predefinito** Il colore visualizzato per l'elemento la prima volta che si avvia Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
+Gli elementi possono ereditare il colore di sfondo da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
- **Personalizza** Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
+**Default**
 
- **Grassetto** Selezionare questa opzione per visualizzare in grassetto il testo dell'elemento selezionato in **Elementi visualizzati**. Il testo in grassetto è più facile da individuare nell'editor.
+Il colore visualizzato per l'elemento la prima volta che si avvia Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 
- **Esempio** Visualizza un esempio dello stile, della dimensione e della combinazione colori del carattere per le opzioni selezionate in **Mostra impostazioni per** ed **Elementi visualizzati**. È possibile usare questa casella per visualizzare in anteprima i risultati mentre si sperimentano diverse opzioni di formattazione.
+**Personalizzato**
+
+Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
+
+**Grassetto**
+
+Selezionare questa opzione per visualizzare in grassetto il testo dell'elemento selezionato in **Elementi visualizzati**. Il testo in grassetto è più facile da individuare nell'editor.
+
+**Esempio**
+
+Visualizza un esempio dello stile, della dimensione e della combinazione colori del carattere per le opzioni selezionate in **Mostra impostazioni per** ed **Elementi visualizzati**. È possibile usare questa casella per visualizzare in anteprima i risultati mentre si sperimentano diverse opzioni di formattazione.
 
 ## <a name="see-also"></a>Vedere anche
 

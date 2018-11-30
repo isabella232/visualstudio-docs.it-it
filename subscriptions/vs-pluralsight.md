@@ -9,12 +9,12 @@ description: Informazioni sulla sottoscrizione del training Pluralsight inclusa 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826713"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389111"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -39,11 +39,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
    > [!div class="mx-imgBorder"]
    > ![Attivazione dei vantaggi Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. L'utente verrà reindirizzato alla pagina Pluralsight per il vantaggio incluso con la sottoscrizione di Visual Studio.  In questo esempio verrà attivato il vantaggio offerto con l'appartenenza a Visual Studio Dev Essentials. Fare clic su **Activate your benefit** (Attiva il vantaggio).
-   > [!div class="mx-imgBorder"]
-   > ![Pagina di destinazione di Visual Studio Dev Essentials Pluralsight](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. Nella pagina di attivazione:
+3. L'utente verrà reindirizzato alla pagina Pluralsight per il vantaggio incluso con la sottoscrizione di Visual Studio.  
    - Specificare le informazioni di contatto richieste nel modulo
    - Fare clic sulla casella di controllo per accettare le condizioni per l'utilizzo e l'informativa sulla privacy
    - Fare clic su **I agree, activate benefit** (Accetto, attiva il vantaggio).
@@ -85,7 +81,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 
 <sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup> *Il vantaggio Pluralsight è monouso e associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato. 
+<sup>2</sup>  *Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato.*
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 

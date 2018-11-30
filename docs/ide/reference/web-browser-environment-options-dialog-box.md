@@ -24,32 +24,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671885"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389445"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
+
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.
 
-
 ## <a name="home-page"></a>Home page
- Consente di impostare la pagina visualizzata quando si apre il Web browser dell'IDE.
+
+Consente di impostare la pagina visualizzata quando si apre il Web browser dell'IDE.
 
 ## <a name="search-page"></a>Pagina Search
- Consente di definire una pagina di ricerca per il Web browser interno. Questo percorso può essere diverso dalla pagina di ricerca usata dalle istanze di Internet Explorer avviate all'esterno dell'ambiente di sviluppo integrato (IDE).
+
+Consente di definire una pagina di ricerca per il Web browser interno. Questo percorso può essere diverso dalla pagina di ricerca usata dalle istanze di Internet Explorer avviate all'esterno dell'ambiente di sviluppo integrato (IDE).
 
 ## <a name="view-source-in"></a>Visualizza origine in
- Consente di impostare l'editor usato per aprire una pagina Web quando si sceglie **Visualizza origine** nella pagina dal Web browser interno.
+
+Consente di impostare l'editor usato per aprire una pagina Web quando si sceglie **Visualizza origine** nella pagina dal Web browser interno.
 
 -   **Editor standard** Selezionare questa opzione per visualizzare l'origine nell'[editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
@@ -58,11 +60,11 @@ Consente di impostare le opzioni per il Web browser interno e per Internet Explo
 -   **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opzioni di Internet Explorer
+
 Selezionare questa opzione per modificare le opzioni di Internet Explorer nella finestra di dialogo **Proprietà Internet**. Le modifiche apportate in questa finestra di dialogo influiscono sul Web browser interno e sulle istanze di Internet Explorer avviate all'esterno dell'IDE di Visual Studio, ad esempio dal menu Start.
 
 > [!NOTE]
 > Usare la finestra di dialogo **Esplora con** per sostituire il Web browser di Visual Studio interno con un browser di propria scelta. È possibile accedere alla finestra di dialogo Esplora con ad esempio dal menu di scelta rapida di un file HTML nel progetto.
-
 
 ## <a name="see-also"></a>Vedere anche
 
