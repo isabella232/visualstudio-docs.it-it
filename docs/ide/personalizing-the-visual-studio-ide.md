@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348696"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388725"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
-È possibile personalizzare Visual Studio in vari modi per supportare in modo ottimale stili e requisiti specifici per lo sviluppo. Molte impostazioni consentono di effettuare il roaming tra più istanze di Visual Studio&mdash;vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). Questo argomento descrive brevemente alcune personalizzazioni diverse e indica dove è possibile trovare altre informazioni.
+È possibile personalizzare Visual Studio in vari modi per supportare in modo ottimale stili e requisiti specifici per lo sviluppo. Molte impostazioni consentono di effettuare il roaming tra più istanze di Visual Studio&mdash;vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). Questo articolo descrive brevemente alcune personalizzazioni e indica dove è possibile trovare altre informazioni.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Personalizzare l'IDE di Visual Studio per Mac](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Impostazioni predefinite
+
+È possibile scegliere una raccolta predefinita di impostazioni che consenta di ottimizzare Visual Studio per il tipo di sviluppo che si svolge abitualmente. Per altre informazioni, vedere [Impostazioni dell'ambiente](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Opzioni generali dell'ambiente
 
@@ -62,6 +66,7 @@ Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Pe
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Impostazioni dell'ambiente](environment-settings.md)
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
 - [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizzare l'IDE di Visual Studio per Mac](/visualstudio/mac/customizing-the-ide)
