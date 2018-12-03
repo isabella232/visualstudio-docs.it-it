@@ -2,7 +2,7 @@
 title: Consentire a Guida di Visual Studio si scrive C# codice con meno bug
 description: Informazioni su come scrivere codice migliore con meno bug
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948959"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389377"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Scrivere meglio C# del codice con Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Correggere i bug scrivendo meglio C# del codice con Visual Studio
 
 Debug del codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace. Un potente IDE come Visual Studio possa rendere molto più semplice il processo. Un IDE consente di eseguire il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è fornire una visione olistica del processo di debug, in modo da conoscere quando usare l'analizzatore di codice e su quando usare il debugger e quando utilizzare altri strumenti.
 
@@ -42,7 +42,7 @@ Se si preferisce, è possibile creare un'app console .NET Core o .NET Framework 
 Per creare l'app, aprire Visual Studio e scegli **File > Nuovo progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**. Digitare un nome come **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto. Incollare il [esempi di codice](#sample-code) al progetto *Program.cs* file.
 
 > [!NOTE]
-> Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **sviluppo desktop .NET** oppure **lo sviluppo multipiattaforma .NET Core** carico di lavoro, quindi scegliere **Modify**.
+> Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Trovare le linee a zigzag rosse e verdi.
 
@@ -81,7 +81,7 @@ Per correggere questo errore, modificare il `points` membro del `User` da questa
 internal string points;
 ```
 
-A questo scopo:
+a questo scopo:
 
 ```csharp
 [DataMember]
@@ -113,7 +113,7 @@ La sottolineatura a zigzag di colore verde andrà a sparire.
 
 Dopo aver risolto tutte le righe rosse a zigzag e risolti o almeno esaminare - tutte le sottolineature ondulate verdi, si è pronti per avviare il debugger ed eseguire l'app.
 
-Premere **F5** (**Debug > Avvia debug**) o nella **Avvia debug** pulsante ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug ") nella barra degli strumenti Debug.
+Premere **F5** (**Debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti Debug.
 
 A questo punto, l'app di esempio genera una `SerializationException` eccezione (un errore di runtime). Vale a dire, l'app riduce l'area dei dati tenta di serializzare. Poiché è stato avviato l'app in modalità di debug (debugger collegato), Helper eccezioni del debugger consente a destra il codice che ha generato l'eccezione e ti offre un messaggio di errore utili.
 
@@ -123,7 +123,7 @@ Il messaggio di errore indica che il valore `4o` non può essere analizzato come
 
 Quando si raggiunge un'eccezione, è necessario (e risposte) un paio di domande:
 
-* È semplicemente un bug che è possibile risolvere questa eccezione? In alternativa,
+* È semplicemente un bug che è possibile risolvere questa eccezione? Oppure
 
 * Questa eccezione è qualcosa che gli utenti possono incontrare?
 
@@ -172,7 +172,7 @@ Per le app di esempio, correggere la `SerializationException` nella `GetJsonData
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Chiarire le proprie intenzioni codice dall'uso di assert
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**). L'app verrà riavviato in meno passaggi. Verrà visualizzato l'output seguente nella finestra della console.
+Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "Riavvia app") nella barra degli strumenti di debug (**CTRL** + **MAIUSC** + **F5**). L'app verrà riavviato in meno passaggi. Verrà visualizzato l'output seguente nella finestra della console.
 
 ![Valore null nell'output](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ Aggiungendo `assert` istruzioni simile alle funzioni durante il processo di svil
 
 Specificando finalità in questo modo, si applicano i requisiti. Si tratta di un metodo semplice e pratico che è possibile usare per i bug di superficie durante lo sviluppo. (`assert` istruzioni possono essere usate anche come l'elemento principale di unit test.)
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
+Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "Riavvia app") nella barra degli strumenti di debug (**CTRL** + **MAIUSC** + **F5**).
 
 > [!NOTE]
 > Il `assert` codice non è attivo solo in una build di Debug.

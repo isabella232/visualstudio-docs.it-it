@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607627"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305312"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>Eseguire il debug di DLL in Visual Studio
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug di DLL in Visual Studio (C#, C++, Visual Basic, F#)
 
 Una DLL (libreria a collegamento dinamico) è una libreria che contiene codice e i dati che possono essere usati da più app. È possibile usare Visual Studio per creare, compilare, configurare e DLL di debug. 
 
@@ -35,11 +35,11 @@ Una DLL (libreria a collegamento dinamico) è una libreria che contiene codice e
 
 I seguenti modelli di progetto di Visual Studio possono creare DLL:
 
-- C#Libreria di classi Visual Basic o 
+- C#, Visual Basic, o F# libreria di classi 
 - C#o Visual Basic Windows Form libreria di controlli (WCF) 
 - Libreria di C++ collegamento dinamico (DLL)
 
-Per altre informazioni, vedere [tecniche di debug MFC](../debugger/mfc-debugging-techniques.md).
+Per altre informazioni, vedere [Tecniche di debug MFC](../debugger/mfc-debugging-techniques.md).
 
 Il debug di una libreria di WCF è simile al debug di una libreria di classi. Per informazioni dettagliate, vedere [Windows Forms Controls](/dotnet/framework/winforms/controls/index).  
 
@@ -50,9 +50,9 @@ In genere si chiama una DLL di un altro progetto. Quando si esegue il debug del 
 Quando si usa un modello di progetto di Visual Studio per creare un'app, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea automaticamente le impostazioni necessarie per le configurazioni della build di Debug e rilascio. Se necessario, è possibile modificare queste impostazioni. Per altre informazioni, vedere i seguenti articoli:
 
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Impostazioni di progetto C# configurazioni di debug](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Impostazioni di progetto per configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Impostazioni di progetto per una configurazione di debug di Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Procedura: impostare Debug e rilascio delle configurazioni](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>Impostare DebuggableAttribute C++
 
@@ -110,28 +110,27 @@ L'app che chiama una DLL può essere:
   
 - Un'app da un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto nello stesso o in una soluzione diversa dalla DLL.  
 - Un'app esistente già distribuito e in esecuzione in un computer di test o produzione.  
-- Che si trova sul web e si accede tramite un URL.  
+- Trovarsi sul Web ed essere accessibile tramite un URL.  
 - Un'app web con una pagina web che incorpora la DLL.  
   
-
 Per eseguire il debug di una DLL di un'app chiamante, è possibile:  
   
 - Aprire il progetto per app chiamante e avviare il debug scegliendo **Debug** > **Avvia debug** oppure premendo **F5**.  
 
   oppure  
 
-- Connettersi a un'app è già distribuito e in esecuzione in un computer di test o produzione. Utilizzare questo metodo per le DLL nei siti Web o nelle App web. Per altre informazioni, vedere [procedura: connettersi a un processo in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Connettersi a un'app è già distribuito e in esecuzione in un computer di test o produzione. Utilizzare questo metodo per le DLL nei siti Web o nelle App web. Per altre informazioni, vedere [Procedura: Eseguire la connessione a un processo in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Prima di avviare il debug di app chiamante, impostare un punto di interruzione nella DLL. Visualizzare [usando i punti di interruzione](../debugger/using-breakpoints.md). Quando viene raggiunto il punto di interruzione DLL, è possibile eseguire il codice, osservandone l'esecuzione in ogni riga. Per altre informazioni, vedere [esplorare il codice nel debugger](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante il debug, è possibile usare la **moduli** per verificare le DLL e *.exe* i file del caricamento dell'app. Per aprire la **moduli** finestra durante il debug, selezionare **Debug** > **Windows** > **moduli**. Per altre informazioni, vedere [procedura: usare la finestra moduli](../debugger/how-to-use-the-modules-window.md). 
+Durante il debug, è possibile usare la **moduli** per verificare le DLL e *.exe* i file del caricamento dell'app. Per aprire la **moduli** finestra durante il debug, selezionare **Debug** > **Windows** > **moduli**. Per altre informazioni, vedere [Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utilizzare la finestra controllo immediata  
 
 È possibile usare la **Immediate** finestra per la valutazione di metodi o funzioni di DLL in fase di progettazione. Il **Immediate** finestra svolge il ruolo di un'app chiamante. 
 
 >[!NOTE]
->È possibile usare la **Immediate** finestra in fase di progettazione con la maggior parte dei tipi di progetto. Attualmente non è supportato per .NET Core, SQL o i progetti web.
+>È possibile usare la **Immediate** finestra in fase di progettazione con la maggior parte dei tipi di progetto. Non è supportata per SQL, i progetti web o uno script.
 
 Ad esempio, per testare un metodo denominato `Test` nella classe `Class1`:
 
@@ -153,21 +152,21 @@ Ad esempio, per testare un metodo denominato `Test` nella classe `Class1`:
    
    Il risultato viene stampato nella **Immediate** finestra.  
    
-1. È possibile continuare a eseguire il debug `Test` inserendo un punto di interruzione all'interno e quindi valutare di nuovo la funzione.  
+1. Per continuare a eseguire il debug di `Test`, inserire un punto di interruzione nel metodo e valutare di nuovo la funzione.  
    
-   Il punto di interruzione verrà raggiunto ed è possibile avanzare `Test`. Dopo che l'esecuzione ha lasciato `Test`, nel debugger verrà nuovamente nella modalità progettazione.
+   Il punto di interruzione verrà raggiunto ed è possibile avanzare `Test`. Al termine dell'esecuzione di `Test`, nel debugger verrà ripristinata la modalità di progettazione.
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debug in modalità mista  
 
-È possibile scrivere un'app chiamante per una DLL nel codice gestito o nativo. Se l'app nativa chiama una DLL gestita e si vuole eseguire il debug di entrambi, è possibile abilitare entrambi i debugger nativi e gestiti nelle proprietà del progetto. Il processo esatto dipende dal fatto che si desidera avviare il debug dal progetto della DLL o del progetto di app chiamante. Per altre informazioni, vedere [procedura: eseguire il Debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md). 
+È possibile scrivere un'app chiamante per una DLL nel codice gestito o nativo. Se l'app nativa chiama una DLL gestita e si vuole eseguire il debug di entrambi, è possibile abilitare entrambi i debugger nativi e gestiti nelle proprietà del progetto. Il processo esatto dipende dal fatto che si desidera avviare il debug dal progetto della DLL o del progetto di app chiamante. Per altre informazioni, vedere [Procedura: Eseguire il debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md). 
 
 È anche possibile eseguire il debug di una DLL nativa da un progetto chiama gestito. Per altre informazioni, vedere [come eseguire il debug di codice gestito e nativo](how-to-debug-managed-and-native-code.md). 
 
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire il debug di codice gestito](../debugger/debugging-managed-code.md)   
+ [Eseguire il debug del codice gestito](../debugger/debugging-managed-code.md)   
  [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#, F#e tipi di progetto Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Impostazioni di progetto C# configurazioni di Debug](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Impostazioni di progetto per configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)

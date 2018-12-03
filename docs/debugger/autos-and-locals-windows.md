@@ -1,7 +1,7 @@
 ---
 title: Ispezione delle variabili nelle finestre variabili locali e Auto | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257212"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388517"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
 
@@ -33,7 +33,7 @@ Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Wind
 
 Per aprire la **variabili locali** finestra durante il debug, selezionare **Debug** > **Windows** > **variabili locali**, oppure premere **Alt**+**4**.
 
-Se sono necessarie altre informazioni sul debug di base, vedere [Guida introduttiva con il Debugger](../debugger/getting-started-with-the-debugger.md).
+Per altre informazioni sul debug di base, vedere [Introduzione al debugger](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
@@ -54,7 +54,7 @@ Per modificare i valori della maggior parte delle variabili nel **Auto** oppure 
 
 Si può immettere un'espressione al posto di un valore, ad esempio `a + b`. Il debugger accetta la maggior parte delle espressioni di linguaggio valide.
 
-Nel codice C++ nativo potrebbe essere necessario qualificare il contesto di un nome di variabile. Per altre informazioni, vedere [operatore di contesto (C++)](../debugger/context-operator-cpp.md).
+Nel codice C++ nativo potrebbe essere necessario qualificare il contesto di un nome di variabile. Per altre informazioni, vedere [Context Operator (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
 >Assicurarsi di che comprendere le conseguenze prima di modificare i valori ed espressioni. Alcuni dei problemi possibili sono:
@@ -77,7 +77,7 @@ Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il 
 
  Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto** finestra.
 
- - In C# e Visual Basic, il **Auto** finestra Visualizza tutte le variabili usate nella riga corrente o precedente. Ad esempio, in C# o Visual Basic del codice, dichiarare le variabili seguenti quattro:
+ - In C# e Visual Basic la finestra **Auto** visualizza tutte le variabili usate nella riga corrente o precedente. Ad esempio, in C# o Visual Basic del codice, dichiarare le variabili seguenti quattro:
 
    ```csharp
        public static void Main()
@@ -152,6 +152,6 @@ Per visualizzare i valori restituiti di `sumVars()` e `subtractVars()` chiamate 
   ![Valore restituito di Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto valore restituitoC#")  
   
 ## <a name="see-also"></a>Vedere anche  
- [Ciò che sta eseguendo il debug?](../debugger/what-is-debugging.md)  
+ [Che cos'è il debug?](../debugger/what-is-debugging.md)  
  [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Presentazione di debug](../debugger/debugger-feature-tour.md) [finestre del Debugger](../debugger/debugger-windows.md)

@@ -1,7 +1,7 @@
 ---
 title: Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice | Microsoft Docs
 ms.custom: ''
-ms.date: 07/14/2017
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,127 +19,116 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afb318c8aa327345b3cd76ee16b718db1e0386aa
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826741"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388160"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice
-I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
-  
-### <a name="to-display-a-datatip"></a>Per visualizzare un suggerimento dati  
-  
-1. Impostare un punto di interruzione e avviare il debug (premere **F5**).
 
-2. Dove la pausa nel debugger, posizionare il puntatore del mouse su una qualsiasi variabile nell'ambito corrente.
-  
-     Viene visualizzato un suggerimento dati.
-  
-3.  Il suggerimento dati scompare quando si rimuove il puntatore del mouse. Per bloccare il suggerimento dati, in modo che resti aperta, scegliere il **blocca a origine** icona o pulsante destro del mouse su una variabile, quindi fare clic su **blocca a origine**.
+I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nell'app durante il debug. 
 
-    ![L'aggiunta di un suggerimento dati](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+Se si tratta di debug per la prima volta, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di leggere questo articolo.
+  
+## <a name="work-with-datatips"></a>Lavorare con i suggerimenti dati
 
-    > [!NOTE]
-    > I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non nel punto in cui passa il cursore. Se si passa il puntatore su una variabile in un'altra funzione con lo stesso nome di una variabile presente nel contesto corrente, il valore della variabile nell'altra funzione viene visualizzato come valore della variabile nel contesto corrente.
+I suggerimenti dati vengono visualizzati solo in modalità di interruzione e solo in variabili che sono nell'ambito corrente di esecuzione.
+
+### <a name="display-a-datatip"></a>Visualizzare un suggerimento dati  
   
-### <a name="to-unpin-a-datatip-and-make-it-float"></a>Per sbloccare un suggerimento dati e far sì che scorra  
+1. Impostare un punto di interruzione nel codice e avviare il debug premendo **F5** o selezionando **Debug** > **Avvia debug**.
   
--   In un suggerimento dati bloccato, scegliere il **Sblocca da origine** icona.  
+1. Quando sospesa in corrispondenza del punto di interruzione, passare il mouse su una qualsiasi variabile nell'ambito corrente. Viene visualizzato un suggerimento dati, che mostra il nome e il valore corrente della variabile.
+
+### <a name="make-a-datatip-transparent"></a>Rendere trasparente un suggerimento dati  
+
+Per rendere un suggerimento dati è trasparente per visualizzare il codice che è di sotto di esso, mentre nel suggerimento dati, premere **Ctrl**. Il suggerimento dati rimane trasparente, purché si tiene premuto il **Ctrl** chiave. Questo non funziona per i suggerimenti dati bloccati o mobili.  
+### <a name="pin-a-datatip"></a>Aggiungi un suggerimento dati
+
+Per aggiungere un suggerimento dati, in modo che rimanga aperta, selezionare la puntina da disegno **blocca a origine** icona. 
+
+![Aggiungere un suggerimento dati](../debugger/media/dbg-tips-data-tips-pinned.png "aggiungere un suggerimento dati")
+
+È possibile spostare un suggerimento dati bloccato trascinandolo intorno alla finestra di codice. Viene visualizzata un'icona della puntina da disegno nella barra di navigazione accanto alla riga che viene aggiunto il suggerimento dati. 
+
+>[!NOTE]
+>I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non il cursore corrente o il percorso di suggerimento dati. Se passa il mouse su una variabile in un'altra funzione che ha lo stesso nome di una variabile nel contesto corrente, viene visualizzato il valore della variabile nel contesto corrente.
   
-     L'icona di blocco passa alla posizione sbloccata. Il suggerimento dati scorre ora nella parte superiore delle finestre aperte. Il suggerimento dati mobile verrà chiuso al termine della sessione di debug.  
+### <a name="unpin-a-datatip-from-source"></a>È possibile rimuovere un suggerimento dati dall'origine
+
+Per float un suggerimento dati bloccato, il suggerimento dati del mouse e selezionare l'icona della puntina da disegno dal menu di scelta rapida. 
+
+L'icona della puntina da disegno passa alla posizione sbloccata e il suggerimento dati ora viene spostata o possono essere trascinato sopra a tutte le finestre aperte. I suggerimenti dati a virgola mobile chiudono al termine della sessione di debug.  
   
-### <a name="to-repin-a-floating-datatip"></a>Per ribloccare un suggerimento dati mobile  
+### <a name="repin-a-datatip"></a>Ribloccare un suggerimento dati  
   
--   In un suggerimento dati fare clic sull'icona di blocco.  
+Per ribloccare un suggerimento dati mobile all'origine, passare il mouse su di esso nell'editor del codice e selezionare l'icona della puntina da disegno. L'icona della puntina da disegno passa alla posizione bloccata e il suggerimento dati anche in questo caso sia stato aggiunto solo alla finestra del codice. 
+
+Se un suggerimento dati è mobile rispetto a una finestra del codice non di origine, non è disponibile l'icona della puntina da disegno, e non può essere riaggiunto il suggerimento dati. Per accedere a puntina da disegno, restituire il suggerimento dati alla finestra dell'editor di codice per trascinarlo, o che lo stato attivo la finestra di codice. 
   
-     L'icona passa alla posizione bloccata. Se il suggerimento dati è al di fuori di una finestra di origine, l'icona di blocco è disabilitata e il suggerimento dati non può essere bloccato.  
+### <a name="close-a-datatip"></a>Chiudere un suggerimento dati  
   
-### <a name="to-close-a-datatip"></a>Per chiudere un suggerimento dati  
+Per chiudere un suggerimento dati, il suggerimento dati del mouse e selezionare il tipo di chiusura (**x**) icona dal menu di scelta rapida.  
   
--   Posizionare il puntatore del mouse su un suggerimento dati e quindi scegliere il **Chiudi** icona.  
+### <a name="close-all-datatips"></a>Chiudere tutti i suggerimenti dati  
   
-### <a name="to-close-all-datatips"></a>Per chiudere tutti i suggerimenti dati  
+Per chiudere tutti i suggerimenti dati, scegliere il **Debug** dal menu **Cancella tutti i suggerimenti dati**.  
   
--   Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati**.  
+### <a name="close-all-datatips-for-a-specific-file"></a>Chiudere tutti i suggerimenti dati per un file specifico  
   
-### <a name="to-close-all-datatips-for-a-specific-file"></a>Per chiudere tutti i suggerimenti dati di un file specifico  
-  
--   Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati bloccati a** *File*.  
+Per chiudere tutti i suggerimenti dati per un file specifico, scegliere il **Debug** dal menu **Cancella tutti i suggerimenti dati bloccati a \<nomefile >**.  
   
 ## <a name="expand-and-edit-information"></a>Espandere e modificare le informazioni  
- È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.  
+È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.  
   
-#### <a name="to-expand-a-variable-to-see-its-elements"></a>Per espandere una variabile per visualizzarne gli elementi  
-  
--   In un suggerimento dati posizionare il puntatore del mouse sul **+** sign che precede il nome della variabile.  
-  
-    La variabile si espande per visualizzare i relativi elementi in formato ad albero.
+### <a name="expand-a-variable"></a>Espandere una variabile
 
-    ![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "consente di visualizzare un suggerimento dati")
-  
-    Quando la variabile è espansa, è possibile utilizzare i tasti di direzione sulla tastiera per spostarsi verso l'alto e verso il basso. In alternativa, è possibile utilizzare il mouse.  
-  
-#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Per modificare il valore di una variabile utilizzando un suggerimento dati  
-  
-1.  In un suggerimento dati, fare clic sul valore. Questa opzione non è disponibile per i valori di sola lettura.  
-  
-2.  Digitare un nuovo valore e premere INVIO.  
-  
-## <a name="making-a-datatip-transparent"></a>Rendere trasparente un suggerimento dati  
- Per visualizzare il codice che sta dietro a un suggerimento dati, è possibile renderlo temporaneamente trasparente. Ciò non si applica a suggerimenti dati bloccati o mobili.  
-  
-#### <a name="to-make-a-datatip-transparent"></a>Per rendere trasparente un suggerimento dati  
-  
--   In un suggerimento dati, premere CTRL.  
-  
-     Il suggerimento dati resterà trasparente finché si terrà premuto il tasto CTRL.  
-  
+Per espandere un oggetto in un suggerimento dati per visualizzarne gli elementi, passare il mouse sulle frecce di espansione prima i nomi degli elementi da visualizzare gli elementi in formato ad albero. Per un suggerimento dati bloccato, selezionare la **+** prima che la variabile assegnare un nome e quindi espandere l'albero. 
+
+![Espandere un suggerimento dati](../debugger/media/dbg-tour-data-tips.png "espandere un suggerimento dati")
+
+È possibile utilizzare il mouse o i tasti di direzione sulla tastiera per spostarsi su e giù nella vista espansa. 
+
+È anche possibile aggiungere elementi espansi per il suggerimento dati bloccato al passaggio del mouse su di essi e selezionando le relative icone puntina da disegno. Gli elementi visualizzati quindi il suggerimento dati bloccato dopo la compressione dell'albero. 
+
+### <a name="edit-the-value-of-a-variable"></a>Modificare il valore di una variabile
+
+Per modificare il valore di una variabile o un elemento in un suggerimento dati, selezionare il valore, digitare un nuovo valore e premere **invio**. Selezione è disabilitata per i valori di sola lettura.  
+
 ## <a name="visualize-complex-data-types"></a>Visualizzare i tipi di dati complessi  
- Se viene visualizzata un'icona della lente di ingrandimento accanto al nome di una variabile in un suggerimento dati, uno o più [visualizzatori](../debugger/create-custom-visualizers-of-data.md), ad esempio le [i visualizzatori stringa](../debugger/string-visualizer-dialog-box.md), sono disponibili per le variabili di quel tipo di dati. È possibile utilizzare un visualizzatore per visualizzare le informazioni in un formato più significativo, generalmente grafico.
+
+Un'icona della lente di ingrandimento accanto a una variabile o un elemento in un suggerimento dati significa che uno o più [visualizzatori](../debugger/create-custom-visualizers-of-data.md), ad esempio le [Visualizzatore di testo](../debugger/string-visualizer-dialog-box.md), sono disponibili per la variabile. Visualizzatori di visualizzano le informazioni in modo più significativo, in alcuni casi con interfaccia grafico.
   
-#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Per visualizzare il contenuto di una variabile utilizzando un visualizzatore  
-  
--   Fare clic sull'icona della lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore") per selezionare il visualizzatore predefinito per il tipo di dati.  
-  
-     oppure  
-  
-     Fare clic sulla freccia popup accanto al visualizzatore per selezionare da un elenco di visualizzatori appropriati per il tipo di dati.  
-  
-     Un visualizzatore visualizzerà le informazioni.  
-  
-## <a name="add-information-to-a-watch-window"></a>Aggiungere informazioni a una finestra Espressioni di controllo  
- Se si desidera continuare a guardare una variabile in una visualizzazione elenco, è possibile aggiungere la variabile per il **Watch** finestra da un suggerimento dati.  
-  
-#### <a name="to-add-a-variable-to-the-watch-window"></a>Per aggiungere una variabile alla finestra Espressioni di controllo  
-  
--   Fare doppio clic su un suggerimento dati e quindi fare clic su **Aggiungi espressione di controllo**.  
-  
-     La variabile verrà aggiunta per il **Watch** finestra. Se si usa un'edizione che supporta più **Watch** windows, la variabile verrà aggiunta a **espressione di controllo 1.**  
+Per visualizzare l'elemento usando il visualizzatore predefinito per il tipo di dati, selezionare l'icona della lente di ingrandimento ![icona di Visualizzatore](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore"). Selezionare la freccia accanto all'icona della lente di ingrandimento per selezionare da un elenco di visualizzatori per il tipo di dati.  
+
+## <a name="add-a-variable-to-a-watch-window"></a>Aggiungere una variabile a una finestra Espressioni di controllo  
+
+Se si desidera continuare a guardare una variabile, è possibile aggiungerlo a un **Watch** finestra da un suggerimento dati. La variabile nel suggerimento dati e scegliere **Aggiungi espressione di controllo**. 
+
+La variabile viene visualizzata nel **Watch** finestra. Se l'edizione di Visual Studio supporta più di uno **Watch** finestra, la variabile viene visualizzata nella **Watch1**. 
   
 ## <a name="import-and-export-datatips"></a>Importare ed esportare suggerimenti dati  
- È possibile esportare suggerimenti dati in un file XML, per poi condividerlo con un collega o modificarlo mediante un editor di testo.  
+
+È possibile esportare suggerimenti dati in un file XML, che è possibile condividere o in un editor di testo di modifica. È anche possibile importare un file XML DataTip aver ricevuto o modificato. 
   
-#### <a name="to-export-datatips"></a>Per esportare suggerimenti dati  
+**Per esportare suggerimenti dati:** 
   
-1.  Nel menu Debug, fare clic su **Esporta suggerimenti dati**.  
+1. Selezionare **Debug** > **Esporta suggerimenti dati**.  
+   
+1. Nel **Esporta suggerimenti dati** della finestra di dialogo passare alla posizione in cui salvare il file XML, digitare un nome per il file e quindi selezionare **salvare**.  
   
-     Il **Esporta suggerimenti dati** verrà visualizzata la finestra di dialogo.  
+**Per importare suggerimenti dati:** 
   
-2.  Usare tecniche di file standard per passare al percorso in cui si desidera salvare il file XML, digitare un nome per il file nei **nomefile** casella e quindi fare clic su **OK**.  
-  
-#### <a name="to-import-datatips"></a>Per importare suggerimenti dati  
-  
-1.  Nel menu Debug, fare clic su **Importa suggerimenti dati**.  
-  
-     Il **Importa suggerimenti dati** verrà visualizzata la finestra di dialogo.  
-  
-2.  Utilizzare la finestra di dialogo per trovare il file XML che si desidera aprire e fare clic su **OK**.  
-  
+1. Selezionare **Debug** > **Importa suggerimenti dati**.  
+   
+1. Nel **Importa suggerimenti dati** finestra di dialogo, selezionare il file DataTips XML che si desidera aprire e quindi selezionare **aprire**.  
+
 ## <a name="see-also"></a>Vedere anche  
- [Ciò che sta eseguendo il debug?](../debugger/what-is-debugging.md)  
+ [Che cos'è il debug?](../debugger/what-is-debugging.md)  
  [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Presentazione di debug](../debugger/debugger-feature-tour.md) [visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Espressioni di controllo e controllo immediato Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Presentazione di debug](../debugger/debugger-feature-tour.md)   
+ [Visualizzare i dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)   
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   

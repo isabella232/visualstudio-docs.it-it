@@ -1,8 +1,8 @@
 ---
-title: Eseguire il debug di un'applicazione multithreading
+title: Debug di un'app multithread
 description: Eseguire il debug usando la finestra thread e la barra degli strumenti posizione di Debug in Visual Studio
 ms.custom: ''
-ms.date: 05/18/2017
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,245 +19,172 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219887"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389403"
 ---
-# <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Procedura dettagliata: Debug di un'applicazione multithreading in Visual Studio usando la finestra thread
-Visual Studio offre un' **thread** finestra e un'interfaccia utente gli elementi che consentono di eseguire il debug di applicazioni multithreading. Questa esercitazione illustra come usare il **thread** finestra e il **posizione di Debug** sulla barra degli strumenti. Per informazioni su altri strumenti, vedere [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md). Questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di familiarizzare con le funzionalità per il debug di applicazioni multithreading.   
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Procedura dettagliata: Debug di un'app con multithreading usando la finestra thread
+
+Diversi elementi dell'interfaccia utente di Visual Studio consentono di eseguire il debug delle App a thread multipli. Questo articolo presenta le funzionalità di debug con multithreading nella finestra editor di codice **posizione di Debug** sulla barra degli strumenti, e **thread** finestra. Per informazioni sugli altri strumenti per il debug di applicazioni multithreading, vedere [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md). 
   
-Prima di iniziare questa esercitazione, è necessario un progetto di applicazione a thread multipli. Per creare tale progetto, attenersi alla procedura qui indicata.  
+Il completamento di questa esercitazione richiede solo pochi minuti e consente di acquisire familiarità con le nozioni fondamentali di debug di applicazioni a thread multipli.
+
+## <a name="create-a-multithreaded-app-project"></a>Creare un progetto di app a thread multipli  
+
+Creare il progetto di app con multithreading seguenti da usare in questa esercitazione: 
   
-#### <a name="to-create-the-multithreaded-app-project"></a>Per creare il progetto di app a thread multipli  
+1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**.  
+   
+1. Nella finestra di dialogo **Nuovo progetto**:
+   - Per un C# app, selezionare **Visual C#**    >  **App Console (.NET Framework)**.  
+   - Per un'app C++, selezionare **Visual C++** > **applicazione Console Windows**.
+   
+1. Assegnare un nome MyThreadWalkthroughApp l'app e quindi selezionare **OK**.  
+   
+   Verrà visualizzato il nuovo progetto **Esplora soluzioni**, e un file di origine denominata *Program.cs* oppure *MyThreadWalkthroughApp. cpp* viene aperto nella finestra del codice sorgente.  
+   
+1. Sostituire il codice nel file di origine con il C# o codice di esempio di C++ da [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md).  
+   
+1. Selezionare **File** > **Salva tutto**.  
   
-1.  Nel **File** menu, scegliere **New** e quindi fare clic su **progetto**.  
-  
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
-  
-2.  Nel **tipi di progetto** , scegliere il linguaggio di propria scelta: **Visual Basic**, **Visual C#** , o **Visual C++**.  
-  
-3.  Sotto **Desktop di Windows**, scegliere **App Console**.  
-  
-4.  Nel **nome** casella, digitare il nome MyThreadWalkthroughApp.  
-  
-5.  Fare clic su **OK**.  
-  
-     Verrà visualizzato un nuovo progetto console. Dopo aver creato il progetto, viene visualizzato un file di origine. A seconda del linguaggio scelto, il nome del file di origine potrebbe essere Module1.vb, Program.cs o MyThreadWalkthroughApp.cpp  
-  
-6.  Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio che viene visualizzato nella sezione "Creazione di un Thread" dell'argomento [creazione di thread e passaggio di dati in fase di avvio](/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time).  
-  
-7.  Nel **File** menu, fare clic su **Salva tutto**.  
-  
-#### <a name="to-begin-the-tutorial"></a>Per iniziare l'esercitazione  
-  
--   Nell'editor del codice sorgente, cercare il codice seguente:  
-  
-    ```VB  
-    Thread.Sleep(3000)   
-    Console.WriteLine()
-    ```  
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
-    Thread::Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-#### <a name="to-start-debugging"></a>Per avviare il debug  
-  
-1. Fare clic sul margine a sinistra del `Console.WriteLine` istruzione per inserire un nuovo punto di interruzione.  
-  
-    Nella barra di navigazione sul lato sinistro dell'editor del codice sorgente, viene visualizzato un cerchio rosso. che indica l'impostazione di un punto di interruzione in tale posizione.  
-  
-2. Nel **Debug** menu, fare clic su **Avvia debug** (**F5**).  
-  
-    Viene avviato il debug e viene avviata l'esecuzione dell'applicazione che viene quindi interrotta in corrispondenza del punto di interruzione.  
-  
-3. Se a questo punto la finestra dell'applicazione console ha lo stato attivo, fare clic nella finestra di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per ripristinare lo stato attivo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-4. Nell'editor del codice sorgente, individuare la riga che contiene il codice seguente:  
-  
-   ```VB  
-   Thread.Sleep(5000)   
-   ```  
-  
+## <a name="start-debugging"></a>Avvia debug 
+
+1. Trovare le righe seguenti nel codice sorgente:  
+   
    ```csharp  
-   Thread.Sleep(3000);  
+   Thread.Sleep(3000); 
+   Console.WriteLine();
    ```  
-  
-   ```C++  
-   Thread::Sleep(3000);  
+   
+   ```C++ 
+   Thread::Sleep(3000); 
+   Console.WriteLine(); 
    ```
-  
-#### <a name="to-discover-the-thread-marker"></a>Per individuare il marcatore del thread  
+   
+1. Impostare un punto di interruzione per il `Console.WriteLine();` riga facendo clic nella barra di navigazione a sinistra, oppure selezionando la riga e premendo **F9**.  
+   
+   Il punto di interruzione viene visualizzato come un cerchio rosso nella barra di navigazione a sinistra accanto alla riga di codice.  
+   
+1. Selezionare **Debug** > **Avvia debug**, oppure premere **F5**.  
+   
+   L'app viene avviata in modalità di debug e si fermerà in corrispondenza del punto di interruzione.  
+   
+1. In modalità di interruzione, aprire il **thread** finestra selezionando **Debug** > **Windows** > **thread**. È necessario essere in una sessione di debug per aprire o vedere i **thread** e altre finestre di debug. 
+   
+## <a name="examine-thread-markers"></a>Esaminare i marcatori dei thread
 
-1.  Nella barra degli strumenti di Debug, scegliere il **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker"). 
-  
-2.  All'estrema sinistra della finestra, In questa riga, si noterà una *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che due fili. Il marcatore del thread indica l'interruzione di un thread in questa posizione.  
-  
-3.  Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati. in cui è indicato il nome e il numero ID di ciascun thread interrotto. In questo caso, l'interruzione si è verificata in un solo thread denominato `<noname>`.  
+1. Nel codice sorgente, individuare il `Console.WriteLine();` riga. 
+   
+   1. Fare doppio clic nella **thread** finestra e selezionare **Mostra thread nell'origine** ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dal menu di scelta.
+   
+   Barra accanto al codice sorgente riga verrà ora visualizzato un *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "marcatore del Thread"). Il marcatore del thread indica l'interruzione di un thread in questa posizione. Se è presente più di un thread interrotto in corrispondenza della posizione, la ![più thread](../debugger/media/dbg-multithreaded-show-threads.png "più thread") icona viene visualizzata.
+   
+1. Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati, che mostra il numero di ID thread e nome per il thread interrotto o thread. I nomi dei thread può essere `<No Name>`.  
 
-    > [!TIP]
-    > Si può risultare utile per identificare i thread senza nome rinominandoli. Nella finestra thread, scegliere **rinominare** dopo il pulsante destro del mouse sul **nome** colonna nella riga di thread.
+   >[!TIP]
+   >Per identificare i thread senza nome, è possibile rinominarle nel **thread** finestra. Il thread e scegliere **Rinomina**.
   
-4.  Fare clic sul marcatore del thread per visualizzare le opzioni disponibili nel menu di scelta rapida. 
-    
-  
-## <a name="flagging-and-unflagging-threads"></a>Impostazione e rimozione dei flag dei thread  
-È possibile contrassegnare i thread che si desidera prestare particolare attenzione. Contrassegnare i thread è un buon metodo per tenere traccia dei thread importanti e per ignorare i thread che non è rilevante.  
-  
-#### <a name="to-flag-threads"></a>Per impostare i flag dei thread   
+1. Fare clic sul marcatore del thread nel codice sorgente per visualizzare le opzioni disponibili nel menu di scelta rapida. 
 
-1.  Sul **View** dal menu **barre degli strumenti**.  
-  
-    Assicurarsi che il **posizione di Debug** sulla barra degli strumenti è selezionato.
+## <a name="flag-and-unflag-threads"></a>Impostare e rimuovere i flag dei thread 
 
-2.  Andare alla **posizione di Debug** sulla barra degli strumenti e fare clic sui **Thread** elenco.  
-  
-    > [!NOTE]
-    >  In questa barra degli strumenti sono presenti tre elenchi principali: **processo**, **Thread**, e **Stack Frame**.  
-  
-3.  Osservare il numero di thread visualizzati nell'elenco.  
-  
-4.  Tornare all'editor del codice sorgente e fare clic sul marcatore del thread ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") nuovamente.  
-  
-5.  Nel menu di scelta rapida, scegliere **Flag**, quindi scegliere il nome del thread e il numero di ID.  
-  
-6.  Tornare alla **posizione di debug** sulla barra degli strumenti e trovare il **Mostra solo thread con flag** icona ![Mostra thread con flag](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker") per il a destra il **Thread** elenco.  
-  
-    L'icona del flag del pulsante è stato visualizzato in grigio prima. A questo punto, si tratta di un pulsante attivo.  
-  
-7.  Scegliere il **Mostra solo thread con flag** icona.  
-  
-    Nell'elenco viene visualizzato ora solo il thread con flag. (È possibile fare clic sul pulsante singolo flag per passare al **Mostra tutti i thread** modalità.)
+È possibile contrassegnare i thread per tenere traccia dei thread che si desidera prestare particolare attenzione alla. 
 
-8. Aprire la finestra thread scegliendo **Debug > Windows > thread**.
+Impostare e rimuovere i flag dei thread da editor del codice sorgente o dal **thread** finestra. Scegliere se visualizzare solo con flag thread o tutti i thread, dal **posizione di Debug** oppure **thread** barre degli strumenti finestra. Le selezioni effettuate da qualsiasi posizione influiscono su tutte le posizioni. 
 
-    ![Finestra thread](../debugger/media/dbg-threads-window.png "ThreadsWindow")  
-  
-    Nel **thread** finestra, il thread con flag dispone di un'icona del flag rossa collegato a esso.
+### <a name="flag-and-unflag-threads-in-source-code"></a>Impostare e rimuovere i flag dei thread nel codice sorgente 
 
-    > [!TIP]
-    > Quando si hanno alcuni thread con flag, è possibile fare doppio clic su una riga di codice nell'editor del codice e scegliere **eseguire i thread con flag fino al cursore** (assicurarsi che si sceglie di codice che tutti i thread con flag raggiungeranno). Questo verrà messo in pausa thread nella riga selezionata di codice, rendendo più semplice controllare l'ordine di esecuzione da [blocco e sblocco dei thread](#bkmk_freeze).
-  
-11. Nell'editor del codice sorgente, fare clic sul marcatore del thread.  
-  
-     Osservare ora le scelte disponibili nel menu di scelta rapida. Invece di **Flag**, sarà ora disponibile **Rimuovi flag**. Non fare clic **Rimuovi flag**.  
+1. Aprire il **posizione di Debug** sulla barra degli strumenti selezionando **View** > **barre degli strumenti** > **posizione di Debug**. È anche possibile fare doppio clic nell'area della barra degli strumenti e selezionare **posizione di Debug**. 
+   
+1. Il **posizione di Debug** sulla barra degli strumenti dispone di tre campi: **processo**, **Thread**, e **Stack Frame**. Elenco a discesa la **Thread** elencare e sono il numero di thread. Nel **Thread** elenco, il thread attualmente in esecuzione è contrassegnato da un **>** simbolo. 
+   
+1. Nella finestra del codice sorgente, passare il mouse su un'icona di marcatore del thread nella barra di navigazione e selezionare l'icona del contrassegno (o una delle icone flag vuoti) nel suggerimento dati. L'icona del contrassegno diventa rosso. 
+   
+   È anche possibile fare doppio clic su un'icona di marcatore del thread, scegliere **Flag**e quindi selezionare un thread per contrassegnare il menu di scelta rapida.  
+   
+1. Nel **posizione di Debug** sulla barra degli strumenti, seleziona il **Mostra solo thread con flag** icona ![Mostra thread con flag](../debugger/media/dbg-threads-show-flagged.png "Mostra thread con flag")al a destra il **Thread** campo. L'icona è disabilitata, a meno che uno o più thread sono contrassegnate.  
+   
+   Solo i thread con flag sono ora inclusi i **Thread** elenco a discesa nella barra degli strumenti. Per visualizzare nuovamente tutti i thread, selezionare la **Mostra solo thread con flag** nuovamente clic sull'icona.
+   
+   >[!TIP]
+   >Dopo che è stato applicato un contrassegno alcuni thread, è possibile posizionare il cursore nell'editor di codice, pulsante destro del mouse e selezionare **eseguire i thread con flag fino al cursore**. Assicurarsi di scegliere raggiungerà codice che tutti i thread con flag. **Eseguire i thread con flag fino al cursore** sospenderà thread nella riga di codice, rendendo più semplice controllare l'ordine di esecuzione da selezionata [blocco e sblocco dei thread](#bkmk_freeze).
+   
+1. Per attivare o disattivare lo stato con flag o rimozione del flag del thread attualmente in esecuzione, selezionare il flag single **attiva/disattiva lo stato contrassegnati del Thread corrente** pulsante della barra degli strumenti, a sinistra del **Mostra solo thread con flag** pulsante. Quando si contrassegna il thread corrente è utile per individuare il thread corrente quando vengono visualizzati solo i thread con flag. 
+   
+1. Per rimuovere i flag un thread, passare il mouse sul marcatore del thread nel codice sorgente e selezionare l'icona di contrassegno rosso per cancellarla, o il marcatore del thread e scegliere **Rimuovi flag**.  
 
-     Per informazioni su come rimuovere i flag dei thread, passare alla procedura successiva.  
-  
-#### <a name="to-unflag-threads"></a>Per rimuovere i flag dei thread  
-  
-1.  Nel **thread** finestra, fare doppio clic sulla riga che corrisponde al thread con flag.  
-  
-     Verrà visualizzato un menu di scelta rapida. Sono disponibili le opzioni **Rimuovi flag** e **Rimuovi flag di tutti i thread**.  
-  
-2.  Per rimuovere i flag del thread, fare clic su **Rimuovi flag**.  
+### <a name="flag-and-unflag-threads-in-the-threads-window"></a>Impostare e rimuovere i flag dei thread nella finestra thread 
 
-    Esaminare i **posizione di debug** nuovamente sulla barra degli strumenti. Il **Mostra solo thread con flag** pulsante viene visualizzata nuovamente in grigio. È stato rimosso il flag dall'unico thread con flag. Poiché non esistono nessun thread con flag, la barra degli strumenti è tornata alla **Mostra tutti i thread** modalità. Scegliere il **Thread** elencare e verificare che è possibile visualizzare tutti i thread.  
-  
-5.  Tornare al **thread** finestra ed esaminare le colonne di informazioni.  
-  
-    Nella prima colonna, si noterà un'icona di contorno di contrassegno in ogni riga dell'elenco di thread. (Il contorno significa che il thread senza flag.)  
-  
-6.  Fare clic sul flag struttura icone per due thread, il secondo e terzo dalla fine dell'elenco. 
+Nel **thread** finestra thread con flag dispone red flag icone accanto agli durante il thread senza flag, se visualizzata, hanno icone vuote.
 
-    Le icone del flag con profili vuoti vengono sostituite da icone di colore rosso.  
+![Finestra thread](../debugger/media/dbg-threads-window.png "finestra thread")  
   
-7.  Fare clic sul pulsante nella parte superiore della colonna dei flag.  
-  
-    Quando si fa clic su questo pulsante, cambia l'ordine dell'elenco di thread visualizzando ora i thread con flag all'inizio.  
-  
-8.  Fare nuovamente clic sul pulsante nella parte superiore della colonna dei flag.  
-  
-    L'ordine cambia di nuovo.  
-  
-## <a name="more-about-the-threads-window"></a>Ulteriori informazioni sulla finestra Thread  
-  
-#### <a name="to-learn-more-about-the-threads-window"></a>Per ulteriori informazioni sulla finestra Thread  
-  
-1.  Nel **thread** finestra, esaminare la terza colonna da sinistra. Il pulsante nella parte superiore di questa colonna è **ID**.  
-  
-2.  Fare clic su **ID**.  
-  
-     L'elenco di thread viene ora ordinato in base al numero ID del thread.  
-  
-3.  Fare clic con il pulsante destro del mouse su un thread dell'elenco. Nel menu di scelta rapida, fare clic su **visualizzazione esadecimale**.  
-  
-     Il formato dei numeri ID del thread cambia.  
-  
-4.  Posizionare il puntatore del mouse sul **posizione** colonna per qualsiasi thread nell'elenco.  
-  
-     Verrà visualizzato un suggerimento dati con uno stack di chiamate parziale per il thread.
+Selezionare un'icona del flag di modifica dello stato di thread con flag o rimozione del flag, a seconda dello stato corrente. 
 
-     > [!TIP]
-     > Per visualizzare graficamente gli stack di chiamate per i thread, aprire il [stack in parallelo](../debugger/using-the-parallel-stacks-window.md) finestra (durante il debug, scegliere **eseguire il Debug / Windows / stack in parallelo**).  
-  
-5.  Osservare la quarta colonna da sinistra, contrassegnato **categoria**. I thread vengono classificati in categorie.  
-  
-     Il primo thread creato in un processo è denominato thread principale. Individuarlo nell'elenco di thread.  
-  
-6.  Fare doppio clic il thread principale e quindi fare clic su **passa al Thread**.  
-  
-     Oggetto **modalità interruzione** verrà visualizzata la finestra. Indica che il debugger non è attualmente in esecuzione qualsiasi codice che può visualizzare (poiché il thread principale).   
-  
-7.  Esaminare i **Stack di chiamate** finestra e il **posizione di Debug** sulla barra degli strumenti.  
-  
-     Il contenuto del **Stack di chiamate** finestra sono stati modificati. 
+È anche possibile fare doppio clic su una riga e selezionare **Flag**, **Rimuovi flag**, o **Rimuovi flag di tutti i thread** dal menu di scelta rapida. 
 
-## <a name="bkmk_freeze"></a> Blocco e sblocco dell'esecuzione del thread 
+Il **thread** sulla barra degli strumenti finestra ha anche una **Mostra solo con flag thread** pulsante, che è l'a destra una delle icone due flag. Lo stesso come il pulsante funziona sul **posizione di Debug** sulla barra degli strumenti e dei pulsanti determina la visualizzazione in entrambe le posizioni. 
 
-È possibile bloccare e sbloccare (sospendere e riprendere) i thread per controllare l'ordine in cui i thread di eseguono operazioni. Ciò consente di risolvere i problemi di concorrenza, ad esempio i deadlock e race condition.
+### <a name="other-threads-window-features"></a>Altre funzionalità di finestra thread
+
+Nel **thread** finestra, selezionare l'intestazione di ogni colonna per ordinare i thread in base alla colonna. Selezionare di nuovo per invertire l'ordinamento. Se vengono visualizzati tutti i thread, selezionando la colonna di icona di contrassegno Ordina i thread in base allo stato con flag o rimozione del flag. 
+
+Nella seconda colonna della **thread** finestra (con nessuna intestazione) è la **Thread corrente** colonna. Una freccia gialla in questa colonna contrassegna il punto di esecuzione corrente. 
+
+Il **posizione** Mostra colonna in cui ogni thread viene visualizzato nel codice sorgente. Selezionare la freccia di espansione accanto al **posizione** voce o al passaggio del mouse sopra la voce, per visualizzare uno stack di chiamate parziale per il thread. 
+
+>[!TIP]
+>Per visualizzare graficamente gli stack di chiamate per i thread, usare il [stack in parallelo](../debugger/using-the-parallel-stacks-window.md) finestra. Per aprire la finestra durante il debug, selezionare **Debug**> **Windows** > **stack in parallelo**.  
+
+Oltre a **Flag**, **Rimuovi flag**, e **Rimuovi flag di tutti i thread**, il menu di scelta rapida per **Thread** dispone di elementi della finestra:
+
+- Il **Mostra thread nell'origine** pulsante.
+- **Visualizzazione esadecimale**, quali modifiche il **ID Thread**s nel **thread** finestra da decimale in formato esadecimale. 
+- [Passare al Thread](#switch-to-another-thread), che attiva immediatamente l'esecuzione di tale thread. 
+- **Rinominare**, che consente di modificare il nome del thread. 
+- [Bloccare e sbloccare](#bkmk_freeze) comandi.
+
+## <a name="bkmk_freeze"></a> Bloccare e sbloccare l'esecuzione di thread 
+
+Puoi bloccare e sbloccare, o sospendere e riprendere, i thread per controllare l'ordine in cui i thread di eseguono operazioni. Il blocco e sblocco dei thread possono aiutarti a risolvere i problemi di concorrenza, quali i deadlock e race condition.
 
 > [!TIP]
-> Se si desidera seguire un solo thread senza bloccare altri thread (anche un comune scenario di debug), vedere [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
+> Per seguire un solo thread senza bloccare altri thread, che è anche uno scenario di debug comune, vedere [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
   
-#### <a name="to-freeze-and-unfreeze-threads"></a>Per bloccare e sbloccare i thread  
+**Per bloccare e sbloccare i thread:**  
   
-1.  Nel **thread** finestra, fare doppio clic su uno o più thread e quindi fare clic su **Freeze**.  
+1. Nel **thread** finestra, fare doppio clic su uno o più thread e quindi selezionare **Freeze**. Oggetto **pausa** icona nel **Thread corrente** colonna indica che il thread è bloccato.  
+   
+1. Selezionare **colonne** nel **thread** degli strumenti della finestra e quindi selezionare **numero sospesi** per visualizzare il **numero sospesi** colonna. È il valore del conteggio sospeso per thread bloccato **1**.  
+   
+1. Il thread bloccato di mouse e scegliere **Sblocca**.  
   
-2.  Esaminare la seconda colonna (la colonna del thread corrente). L'icona di sospensione viene visualizzata ora non esiste. Tali sospendere l'icona indica che il thread è bloccato.  
+   Il **pausa** icona scompare e il **numero sospesi** valore cambia in **0**. 
   
-3.  Mostra le **numero sospesi** colonna selezionandolo nel **colonne** elenco.
+## <a name="switch-to-another-thread"></a>Passare a un altro thread 
 
-    Il conteggio di sospensione per il thread ora è 1.  
+È possibile visualizzare un **l'applicazione è in modalità di interruzione** finestra quando si prova a passare a un altro thread. In questa finestra indica che il thread non dispone di qualsiasi codice in grado di visualizzare il debugger corrente. Ad esempio, si potrebbe essere il debug di codice gestito, ma il thread è il codice nativo. La finestra contiene suggerimenti per la risoluzione del problema. 
   
-4.  Fare clic sul thread bloccato e quindi fare clic su **Sblocca**.  
-  
-     La colonna del thread corrente e il **conteggio sospeso** modifica della colonna. 
-  
-## <a name="switching-the-to-another-thread"></a>Cambio del a un altro thread 
-  
-#### <a name="to-switch-threads"></a>Per passare da un thread all'altro  
-  
-1.  Nel **thread** finestra, esaminare la seconda colonna da sinistra (la colonna del thread corrente). Il pulsante all'inizio di questa colonna non presenta alcun testo o icona.
-  
-2.  Esaminare la colonna del thread corrente e si noti che un thread ha una freccia gialla. La freccia gialla indica che questo thread è il thread corrente (questo è il percorso corrente del puntatore di esecuzione).
-  
-    Prendere nota del numero di ID di thread in cui viene visualizzata l'icona di thread corrente. Si passerà l'icona del thread corrente a un altro thread, ma è necessario inserirlo nuovamente al termine. 
-  
-3.  Fare doppio clic su un altro thread e quindi fare clic su **passa al Thread**.  
-  
-4.  Esaminare i **Stack di chiamate** finestra nell'editor del codice sorgente. Il contenuto è cambiato.  
-  
-5.  Esaminare i **posizione di Debug** sulla barra degli strumenti. L'icona del thread corrente è stato modificato, troppo.  
-  
-6.  Andare alla **posizione di Debug** sulla barra degli strumenti. Selezionare un altro thread dal **Thread** elenco.  
-  
-7.  Esaminare i **thread** finestra. L'icona del thread corrente è stata modificata.  
-  
-8. Nell'editor del codice sorgente, fare doppio clic su un marcatore del thread. Nel menu di scelta rapida, scegliere **passa al Thread** e fare clic su un numero di nome/ID thread.  
-  
-     Sono stati analizzati tre modi per modificare l'icona del thread corrente a un altro thread: usando il **thread** finestra, il **Thread** nell'elenco il **posizione di Debug** barra degli strumenti e il marcatore del thread nell'editor del codice sorgente.  
-  
-     Con il marcatore del thread, è possibile passare solo ai thread che sono stati interrotti in quella determinata posizione. Tramite il **thread** finestra e **posizione di Debug** sulla barra degli strumenti, è possibile passare a uno o più thread.   
+**Per passare a un altro thread:**
+
+1. Nel **thread** finestra, prendere nota dell'ID del thread corrente, ovvero il thread con una freccia gialla nel **Thread corrente** colonna. È opportuno tornare a questo thread di continuare l'app. 
+   
+1. Fare doppio clic su un altro thread e selezionare **Switch per Thread** dal menu di scelta rapida.  
+   
+1. Osservare che è stato modificato il percorso di freccia gialla nel **thread** finestra. Il marcatore del thread corrente originale anche rimane, come una struttura. 
+   
+   Esaminare la descrizione comando sul marcatore del thread nell'editor del codice sorgente e nell'elenco il **Thread** elenco a discesa nel **posizione di Debug** sulla barra degli strumenti. Osservare che il thread corrente è inoltre stato modificato non esiste. 
+   
+1. Nel **posizione di Debug** sulla barra degli strumenti, selezionare un altro thread dalle **Thread** elenco. Si noti che il thread corrente cambia anche in altri due posizioni. 
+   
+1. Nell'editor del codice sorgente, fare doppio clic su un marcatore del thread, scegliere **Switch per Thread**e selezionare un altro thread dall'elenco. Osservare che il thread corrente cambia in tutti i tre posizioni.  
+   
+Con il marcatore del thread nel codice sorgente, è possibile passare solo ai thread che sono stati interrotti in quella posizione. Con la finestra **Thread** e la barra degli strumenti **Posizione di debug** è possibile passare a tutti i tipi di thread.   
+
+A questo punto, dopo aver appreso le nozioni fondamentali di debug di applicazioni a thread multipli. È possibile osservare, flag e rimuovere i flag e bloccare e sbloccare i thread con il **thread** finestra, il **Thread** nell'elenco il **posizione di Debug** sulla barra degli strumenti o i marcatori dei thread nel editor di codice sorgente.
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

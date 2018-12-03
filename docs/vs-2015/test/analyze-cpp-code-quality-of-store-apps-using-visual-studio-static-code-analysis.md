@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e140f2e1066f6e2025491517106d27f6955d871b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863789"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389098"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,18 +167,18 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                      [C28182](../code-quality/c28182.md)                       |         Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.          |
 |                      [C28202](../code-quality/c28202.md)                       |                                    Riferimento non valido a membro non statico                                     |
 |                      [C28203](../code-quality/c28203.md)                       |                                     Riferimento ambiguo al membro di classe.                                      |
-|                      [C28205](../code-quality/c28205.md)                       |                           \_Operazione riuscita\_ oppure \_On_failure\_ usato in un contesto non valido                            |
+|                      [C28205](../code-quality/c28205.md)                       |                           \_Success\_ o \_On_failure\_ usato in un contesto non valido                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   L'operando sinistro punta a uno struct. Utilizzare '->'                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       L'operando sinistro è uno struct. Utilizzare '.'                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                 Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 Previsto nome contesto statico per SAL_context                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  Prevista espressione del puntatore per l'annotazione                                   |
-|                      [C28213](../code-quality/c28213.md)                       | Il \_Use_decl_annotations\_ annotazione deve essere utilizzata per fare riferimento, senza alcuna modifica, una dichiarazione precedente. |
+|                      [C28213](../code-quality/c28213.md)                       | L'annotazione \_Use_decl_annotations\_ deve essere usata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente. |
 |                      [C28214](../code-quality/c28214.md)                       |                                   I nomi di parametro di attributo devono essere p1...p9                                   |
 |                      [C28215](../code-quality/c28215.md)                       |                    Impossibile applicare typefix a un parametro che già dispone di un typefix                    |
 |                      [C28216](../code-quality/c28216.md)                       |        L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file             |
-|                      [C28218](../code-quality/c28218.md)                       |             Per il parametro della funzione, nell'annotazione, il numero di parametri dell'annotazione non corrisponde a quello trovato nel file              |
+|                      [C28218](../code-quality/c28218.md)                       |             Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Espressione integer prevista per l'annotazione del parametro nell'annotazione                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Prevista espressione di tipo String per il parametro nell'annotazione                         |
@@ -216,22 +216,22 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                      [C28267](../code-quality/c28267.md)                       |                    Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione                     |
-|                      [C28275](../code-quality/c28275.md)                       |                                   Il parametro \_Macro_value\_ è null                                    |
+|                      [C28275](../code-quality/c28275.md)                       |                                   Il parametro per \_Macro_value\_ è null                                    |
 |                      [C28279](../code-quality/c28279.md)                       |                           Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'                            |
 |                      [C28280](../code-quality/c28280.md)                       |                           Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente                           |
 |                      [C28282](../code-quality/c28282.md)                       |                                    Le stringhe di formato devono essere nelle precondizioni                                    |
 |                      [C28285](../code-quality/c28285.md)                       |                                    Per la funzione, errore di sintassi nel parametro                                    |
 |                      [C28286](../code-quality/c28286.md)                       |                                    Per la funzione, errore di sintassi vicino alla fine                                    |
-|                      [C28287](../code-quality/c28287.md)                       |                Per una funzione, errore di sintassi nelle \_a\_annotazione () (nome parametro non riconosciuto)                |
-|                      [C28288](../code-quality/c28288.md)                       |                  Per una funzione, errore di sintassi nelle \_a\_annotazione () (nome parametro non valido)                   |
+|                      [C28287](../code-quality/c28287.md)                       |                Per la funzione, errore di sintassi nell'annotazione \_At\_() (nome parametro non riconosciuto)                |
+|                      [C28288](../code-quality/c28288.md)                       |                  Per la funzione, errore di sintassi nell'annotazione \_At\_() (nome parametro non valido)                   |
 |                      [C28289](../code-quality/c28289.md)                       |                Per la funzione: ReadableTo o WritableTo non disponeva di limit-spec come parametro                |
 |                      [C28290](../code-quality/c28290.md)                       |           L'annotazione per la funzione contiene un numero di riferimenti esterni maggiore del numero di parametri effettivi            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Il post null/notnull al livello deref 0 è privo di significato per la funzione.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandi dell'espressione di tipi incompatibili per l'operatore                             |
 |                      [C28301](../code-quality/c28301.md)                       |                               Nessuna annotazione per la prima dichiarazione di funzione.                               |
-|                      [C28302](../code-quality/c28302.md)                       |                             Un ulteriore \_Deref\_ operatore rilevato nell'annotazione.                              |
-|                      [C28303](../code-quality/c28303.md)                       |                           Un ambiguo \_Deref\_ operatore rilevato nell'annotazione.                            |
-|                      [C28304](../code-quality/c28304.md)                       |                     Un non correttamente posizionato \_Notref\_ operatore è stato trovato applicato al token.                      |
+|                      [C28302](../code-quality/c28302.md)                       |                             Operatore \_Deref\_ aggiuntivo rilevato nell'annotazione.                              |
+|                      [C28303](../code-quality/c28303.md)                       |                           Operatore \_Deref\_ ambiguo trovato nell'annotazione.                            |
+|                      [C28304](../code-quality/c28304.md)                       |                     Operatore \_Notref\_ non correttamente posizionato applicato al token.                      |
 |                      [C28305](../code-quality/c28305.md)                       |                                È stato individuato un errore durante l'analisi di un token.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  L'annotazione descrive una situazione non applicabile in modo condizionale.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).          |

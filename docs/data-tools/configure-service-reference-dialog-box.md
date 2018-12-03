@@ -1,5 +1,5 @@
 ---
-title: Configura riferimento a servizio (finestra di dialogo)
+title: Finestra di dialogo Configura riferimento a servizio
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,51 +16,48 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854078"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389500"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
 Il **Configura riferimento al servizio** nella finestra di dialogo consente di configurare il comportamento dei servizi Windows Communication Foundation (WCF).
 
-> [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
-Per l'accesso di **Configura riferimento al servizio** della finestra di dialogo scelta di un servizio fa riferimento nel **Esplora soluzioni** e scegliere **Configura riferimento al servizio**. È anche possibile accedere nella finestra di dialogo facendo clic la **avanzate** pulsante il **Add Service Reference Dialog Box**.
+Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.
 
 ## <a name="task-list"></a>Elenco attività
 
-- Per modificare l'indirizzo in cui è ospitato un servizio WCF, immettere il nuovo indirizzo nella **indirizzo** campo.
+- Per cambiare l'indirizzo al quale è ospitato il servizio WCF, immettere il nuovo indirizzo nel campo **Indirizzo**.
 
-- Per modificare il livello di accesso per le classi in un client WCF, selezionare una parola chiave a livello di accesso nel **livello di accesso per classi generate** elenco.
+- Per cambiare il livello di accesso alle classi in un client WCF, selezionare una parola chiave del livello di accesso nell'elenco **Livello di accesso per classi generate**.
 
-- Per chiamare i metodi di un servizio WCF in modo asincrono, selezionare la **Genera operazioni asincrone** casella di controllo.
+- Per chiamare i metodi di un servizio WCF in modo asincrono, selezionare la casella di controllo **Genera operazioni asincrone**.
 
-- Per generare i tipi di contratto di messaggio in un client WCF, selezionare la **genera sempre contratti di messaggio** casella di controllo.
+- Per generare i tipi di contratto di messaggio in un client WCF, selezionare la casella di controllo **Genera sempre contratti di messaggio**.
 
-- Per specificare i tipi di raccolta elenco o dizionario per un client WCF, selezionare i tipi dal **tipo di raccolta** e **tipo di raccolta dizionario** Elenca.
+- Per specificare i tipi di raccolta elenco o dizionario per un client WCF, selezionare i tipi dagli elenchi **Tipo di raccolta** e **Tipo di raccolta dizionario**.
 
-- Per disabilitare la condivisione dei tipi, deselezionare il **Riutilizza tipi negli assembly di riferimento** casella di controllo. Per abilitare la condivisione di tipi per un subset di assembly di riferimento, selezionare la **Riutilizza tipi negli assembly di riferimento** caselle di controllo **Riutilizza tipi negli assembly di riferimento specificati**e selezionare il valore desiderato fa riferimento nel **elenco di assembly di riferimento**.
+- Per disabilitare la condivisione dei tipi, deselezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**. Per abilitare la condivisione di tipi per un sottoinsieme di assembly di riferimento, selezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**, selezionare **Riutilizza tipi negli assembly di riferimento specificati** e selezionare i riferimenti desiderati nell'elenco **Assembly di riferimento**.
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
- **Indirizzo**
+ **Address**
 
  Aggiorna l'indirizzo web in cui un riferimento al servizio cerca un servizio. Ad esempio, durante lo sviluppo, il servizio può essere ospitato in un server di sviluppo e in seguito spostato in un server di produzione, è necessario eseguire un cambio di indirizzo.
 
 > [!NOTE]
-> L'elemento Address non è disponibile quando il **Configura riferimento al servizio** verrà visualizzata la finestra di dialogo dalle **Add Service Reference Dialog Box**.
+> L'elemento Address non è disponibile quando viene visualizzata la finestra di dialogo **Configura riferimento a servizio** dalla **finestra di dialogo Aggiungi riferimento al servizio**.
 
  **Livello di accesso per classi generate**
 
  Determina il livello di accesso del codice per le classi del client WCF.
 
 > [!NOTE]
-> Per i progetti di siti Web, questa opzione è impostata sempre su `Public` e non può essere modificata. Per altre informazioni, vedere [risoluzione dei riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
+> Per i progetti di siti Web, questa opzione è impostata sempre su `Public` e non può essere modificata. Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
 
  **Genera operazioni asincrone**
 
@@ -72,7 +69,7 @@ Per l'accesso di **Configura riferimento al servizio** della finestra di dialogo
 
  **Genera sempre contratti di messaggio**
 
- Determina se i tipi di contratto di messaggio sono generati per un client WCF. Per altre informazioni sui contratti di messaggio, vedere [tramite i contratti di messaggio](/dotnet/framework/wcf/feature-details/using-message-contracts).
+ Determina se i tipi di contratto di messaggio sono generati per un client WCF. Per altre informazioni sui contratti di messaggio, vedere [Uso dei contratti di messaggio](/dotnet/framework/wcf/feature-details/using-message-contracts).
 
  **Tipo di raccolta**
 
@@ -82,7 +79,7 @@ Per l'accesso di **Configura riferimento al servizio** della finestra di dialogo
 
  Specifica il tipo di raccolta dizionario per un client WCF. Il tipo predefinito è <xref:System.Collections.Generic.Dictionary%602>.
 
- **Riutilizza tipi negli assembly di riferimento**
+ **Riutilizza tipi in assembly di riferimento**
 
  Determina se un client WCF tenta di riutilizzare elementi esistenti in assembly di riferimento invece di generare nuovi tipi quando un servizio viene aggiunto o aggiornato. Per impostazione predefinita, questa opzione è selezionata.
 
@@ -94,21 +91,21 @@ Per l'accesso di **Configura riferimento al servizio** della finestra di dialogo
 
  Se selezionata, solo i tipi selezionati nel **elenco di assembly di riferimento** vengono riutilizzati.
 
- **Elenco assembly di riferimento**
+ **Elenco Assembly di riferimento**
 
  Contiene un elenco di assembly di riferimento per il progetto o sito Web. Quando si seleziona **Riutilizza tipi negli assembly di riferimento specificati**, è possibile selezionare o deselezionare singoli assembly.
 
  **Aggiungi riferimento Web**
 
- Consente di visualizzare il **Aggiungi riferimento Web** nella finestra di dialogo.
+ Visualizza la **finestra di dialogo Aggiungi riferimento Web**.
 
 > [!NOTE]
 > Questa opzione deve essere utilizzata solo per i progetti destinati alla versione 2.0 il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-> 
+>
 > [!NOTE]
 > Il **Aggiungi riferimento Web** pulsante è disponibile solo quando il **Configura riferimento al servizio** verrà visualizzata la finestra di dialogo dal **Add Service Reference Dialog Box**.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: aggiungere un riferimento a un servizio web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Procedura: Aggiungere un riferimento a un servizio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

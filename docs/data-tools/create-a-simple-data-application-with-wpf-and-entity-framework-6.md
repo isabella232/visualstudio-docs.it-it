@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822072"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305611"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -46,7 +46,7 @@ Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB
 
 ## <a name="configure-the-project"></a>Configurare il progetto
 
-1.  In Visual Studio, scegliere **File** > **New** > **progetto** e quindi creare una nuova applicazione WPF in c#.
+1.  In Visual Studio, scegliere **File** > **New** > **progetto** e quindi creare un nuovo C# applicazione WPF.
 
 2.  Successivamente, aggiungere il pacchetto NuGet di Entity Framework 6. Nelle **Esplora soluzioni**, selezionare il nodo del progetto. Nel menu principale, scegliere **Project** > **Gestisci pacchetti NuGet**.
 
@@ -60,11 +60,11 @@ Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB
 
 ## <a name="create-the-model"></a>Creare il modello
 
-1. Pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Add** > **nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale, scegliere **ADO.NET Entity Data Model**.
+1. Pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Add** > **nuovo elemento**. Nel riquadro sinistro, sotto il C# nodo, scegliere **Data** nel riquadro centrale, scegliere **ADO.NET Entity Data Model**.
 
    ![Entity Framework modello nuovo elemento di progetto](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Chiamare il modello `Northwind_model` e scegliere **OK**. Il **procedura guidata Entity Data Model** apre. Scegli **Entity Framework Designer dal database** e quindi fare clic su **successivo**.
+2. Chiamare il modello `Northwind_model` e scegliere **OK**. Verrà aperta la **Procedura guidata Entity Data Model**. Scegli **Entity Framework Designer dal database** e quindi fare clic su **successivo**.
 
    ![Modello EF da Database](../data-tools/media/raddata-ef-model-from-database.png)
 
@@ -74,7 +74,7 @@ Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB
 
     ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Le classi sono plain precedente le classi di c# e sono ciò databind all'interfaccia utente WPF. Il *edmx* file descrive le relazioni e altri metadati che associa le classi di oggetti nel database. Il *tt* file sono modelli T4 che generano il codice che opera sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in **Esplora soluzioni** sotto il nodo Northwind_model:
+5. La procedura guidata genera il C# le classi che rappresentano il modello di Entity Framework. Le classi sono plain old C# classi e sono ciò databind all'interfaccia utente WPF. Il *edmx* file descrive le relazioni e altri metadati che associa le classi di oggetti nel database. Il *tt* file sono modelli T4 che generano il codice che opera sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in **Esplora soluzioni** sotto il nodo Northwind_model:
 
       ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -116,7 +116,7 @@ A questo punto si è pronti per associare questo modello per la pagina XAML in m
         </Grid.RowDefinitions>
     ```
 
-5.  A questo punto aprire *MainWindow. XAML* in modo che è visualizzato nella finestra di progettazione. In questo modo, il **Zdroje dat** che venga visualizzata come opzione di Visual Studio margine della finestra accanto alla finestra la **della casella degli strumenti**. Fare clic sulla scheda per aprire la finestra, oppure premere else **Shift**+**Alt**+**1!d** oppure scegliere **visualizzazione**  >  **Altri Windows** > **Zdroje dat**. Si intende visualizzare ogni proprietà nella classe di clienti nella propria casella di testo singola. In primo luogo, fare clic sulla freccia nel **clienti** combinata casella e scegliere **dettagli**. Quindi, trascinare il nodo nella parte centrale dell'area di progettazione in modo che la finestra di progettazione che consente di passare nelle righe intermedie da informare. Se si smarrisce il, è possibile specificare la riga manualmente in seguito nel XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento griglia ma a questo punto, è possibile disporle nel modo desiderato del form. Ad esempio, potrebbe avere senso inserire il **nome** casella di testo nella parte superiore, sopra l'indirizzo. L'applicazione di esempio per questo articolo riordina i campi e li Riordina in due colonne.
+5.  A questo punto aprire *MainWindow. XAML* in modo che si sta visualizzando, nella finestra di progettazione. In questo modo, il **Zdroje dat** che venga visualizzata come opzione di Visual Studio margine della finestra accanto alla finestra la **della casella degli strumenti**. Fare clic sulla scheda per aprire la finestra, oppure premere else **Shift**+**Alt**+**1!d** oppure scegliere **visualizzazione**  >  **Altri Windows** > **Zdroje dat**. Si intende visualizzare ogni proprietà nella classe di clienti nella propria casella di testo singola. In primo luogo, fare clic sulla freccia nel **clienti** combinata casella e scegliere **dettagli**. Quindi, trascinare il nodo nella parte centrale dell'area di progettazione in modo che la finestra di progettazione che consente di passare nelle righe intermedie da informare. Se si smarrisce il, è possibile specificare la riga manualmente in seguito nel XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento griglia ma a questo punto, è possibile disporle nel modo desiderato del form. Ad esempio, potrebbe avere senso inserire il **nome** casella di testo nella parte superiore, sopra l'indirizzo. L'applicazione di esempio per questo articolo riordina i campi e li Riordina in due colonne.
 
      ![Associazione dell'origine dati ai clienti sui singoli controlli](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
