@@ -1,7 +1,7 @@
 ---
-title: Visualizzare i valori dei registri nel Debugger di Visual Studio | Microsoft Docs
+title: Visualizza i valori del registro nel debugger di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,35 +25,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257169"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389325"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare i valori di registrare e usare la finestra registri nel Debugger di Visual Studio (C#, C++, Visual Basic, F#)
-La finestra Registri è disponibile solo se è abilitato il debug a livello di indirizzo nel **le opzioni** della finestra di dialogo **debug** nodo **generale** categoria.  
-  
- Il **registra** finestra viene visualizzato il contenuto. Se si mantengono le **registra** finestra aperta durante l'esecuzione del programma, è possibile visualizzare le modifiche dei valori durante l'esecuzione di codice. I valori modificati di recente sono visualizzati in rosso. È possibile modificare i valori dei registri. Per altre informazioni, vedere [procedura: modificare un valore di registro](../debugger/how-to-edit-a-register-value.md).  
-  
- Per evitare confusione, il **registra** finestra i registri sono organizzati in gruppi, che variano in base alla piattaforma e del processore tipo. È possibile visualizzare o nascondere i gruppi desiderati. Per altre informazioni, vedere [procedura: visualizzare e nascondere gruppi di registri](../debugger/how-to-display-and-hide-register-groups.md).  
-  
- Per un'introduzione generale a concetti di base registri e la finestra registri, vedere [nozioni fondamentali di debug: finestra Registri](../debugger/debugging-basics-registers-window.md).  
-  
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizza i valori del registro nella finestra di registri (C#, C++, Visual Basic, F#)
+
+Il **registra** finestra consente di visualizzare il contenuto del registro durante il debug di Visual Studio. Per un'introduzione generale ai concetti alla base di registri e i **registra** finestra, vedere [nozioni fondamentali di debug: finestra Registri](../debugger/debugging-basics-registers-window.md).
+
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-the-registers-window"></a>Per visualizzare la finestra Registri  
-  
--   Nel **Debug** menu, scegliere **Windows**e quindi scegliere **registra** (oppure scegliere **Ctrl** + **Alt**   +  **G**).  
-  
-     Il debugger deve essere in esecuzione o in modalità di interruzione.  
-  
-    > [!NOTE]
-    >  Le informazioni relative ai registri non sono disponibili per le applicazioni SQL o script.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Nozioni fondamentali di debug: finestra Registri](../debugger/debugging-basics-registers-window.md)   
- [Visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Nozioni fondamentali di debug: finestra Registri](../debugger/debugging-basics-registers-window.md)
+> Informazioni di registro non sono disponibile per App SQL o script.
+
+Durante il debug, registrare valori modifica durante l'esecuzione di codice nell'app. I valori che sono stati modificati di recente vengono visualizzati in rosso nel **registra** finestra.
+
+Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi che variano secondo la piattaforma e il tipo di processore. È possibile visualizzare o nascondere i gruppi di registri. Per altre informazioni, vedere [Procedura: Visualizzare e nascondere gruppi di registri](../debugger/how-to-display-and-hide-register-groups.md).
+
+È possibile modificare i valori dei registri. Per altre informazioni, vedere [procedura: modificare un valore di registro](../debugger/how-to-edit-a-register-value.md).
+
+**Per aprire la finestra registri**
+
+1. Abilita debug a livello di indirizzo, selezionando **abilitare il debug a livello di indirizzo** in **Tools** (o **Debug**) > **opzioni**  >  **Debug**.
+
+1. Durante il debug è in esecuzione o in un punto di interruzione, selezionare **Debug** > **Windows** > **registra**, o premere **Alt** + **5**.
+
+>[!NOTE]
+>Finestre di dialogo e comandi di menu potrebbe essere diverso a seconda dell'edizione di Visual Studio o le impostazioni. Per modificare le impostazioni, selezionare **Importa / Esporta impostazioni** in Visual Studio **Tools** menu. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+
+### <a name="see-also"></a>Vedere anche
+
+- [Nozioni fondamentali di debug: finestra Registri](../debugger/debugging-basics-registers-window.md)
+- [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

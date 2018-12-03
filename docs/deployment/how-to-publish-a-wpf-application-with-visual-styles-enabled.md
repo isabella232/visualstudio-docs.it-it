@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830054"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388108"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: pubblicare un'applicazione WPF con gli stili visuali abilitati
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
 Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario attivarli manualmente. Abilitazione degli stili per un'applicazione WPF e quindi pubblicare la soluzione, tuttavia, provoca un errore. Questo argomento descrive come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per altre informazioni sugli stili di visualizzazione, vedere [panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview). Per altre informazioni sul messaggio di errore, vedere [risolvere i problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Per risolvere l'errore e pubblicare la soluzione, è necessario eseguire le attività seguenti:  
@@ -39,7 +39,11 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
      Per impostazione predefinita, gli stili di visualizzazione non sono abilitati.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Le procedure seguenti illustrano come aprire il file manifesto associato al progetto.  
@@ -54,7 +58,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
   
          Il file app. manifest verrà aperto nel **Editor di codice**.  
   
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Per aprire il file manifesto in un progetto c#  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Per aprire il file manifesto in un C# progetto  
   
     1.  Nella barra dei menu, scegliere **Project**, *NomeProgetto* **proprietà**, dove *NomeProgetto* è il nome del progetto WPF.  
   
@@ -65,7 +69,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
         > [!NOTE]
         >  Se **Incorpora manifesto con impostazioni predefinite** oppure **Crea applicazione senza manifesto** vengono visualizzati nel campo del manifesto, non sono abilitati gli stili di visualizzazione. Se il nome di un file manifesto viene visualizzato nel campo del manifesto, procedere al passaggio successivo in questa procedura.  
   
-    3.  Nelle **Esplora soluzioni**, scegliere **Mostra tutti i file**.  
+    3.  In **Esplora soluzioni** scegliere **Mostra tutti i file**.  
   
          Questo pulsante Mostra tutti gli elementi di progetto, inclusi quelli che sono stati esclusi e quelli che sono normalmente nascosti. Il file manifesto viene visualizzato come un elemento del progetto.  
   
@@ -78,7 +82,18 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
      Questo codice XML descrive l'assembly che contiene i controlli che supportano gli stili di visualizzazione.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  Nel blocco note, fare clic su **File**, quindi fare clic su **Salva con nome**.  
@@ -163,7 +178,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
   
 ## <a name="see-also"></a>Vedere anche
 
--[Risoluzione dei problemi relativi a errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Risoluzione di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview)
-- [Abilitazione degli stili](/windows/desktop/Controls/cookbook-overview)
+- [Enabling Visual Styles](/windows/desktop/Controls/cookbook-overview) (Abilitazione degli stili di visualizzazione)
 - [Prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs)

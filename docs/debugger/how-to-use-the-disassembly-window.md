@@ -23,40 +23,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: e9cf75915b3ca17df1ee9e2ef41040147c146ea8
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257043"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52387669"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly del debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
-Il **Disassembly** finestra Mostra il codice assembly corrispondente alle istruzioni create dal compilatore. Se si esegue il debug di codice gestito, queste istruzioni di assembly corrispondono al codice nativo creato dal compilatore Just-in-Time (JIT), non il Microsoft intermediate language (MSIL) creato dal compilatore di Visual Studio.  
-  
+Nella finestra **Disassembly** viene visualizzato il codice assembly corrispondente alle istruzioni create dal compilatore. Se si esegue il debug di codice gestito, queste istruzioni di assembly corrispondono al codice nativo creato dal compilatore Just-in-Time (JIT), non il Microsoft intermediate language (MSIL) creato dal compilatore di Visual Studio.
+
 > [!NOTE]
 > Per sfruttare appieno le **Disassembly** finestra comprendere o nozioni di base [programmazione in linguaggio assembly](https://wikipedia.org/wiki/Assembly_language).
-  
-Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo. Non è disponibile per uno script o il debug SQL. 
 
-Oltre alle istruzioni dell'assembly, il **Disassembly** finestra è possibile visualizzare le informazioni facoltative seguenti:  
-  
-- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per le applicazioni native, è l'indirizzo di memoria effettiva. Per Visual Basic o C#, si tratta di un offset dall'inizio della funzione.  
-  
-- Codice sorgente dal quale deriva il codice assembly.  
-  
-- Il codice byte, vale a dire le rappresentazioni in byte del computer effettivo o istruzioni MSIL.  
-  
-- Nomi di simboli per gli indirizzi di memoria.  
-  
-- Numeri di riga corrispondenti al codice sorgente.  
-  
-Le istruzioni in linguaggio assembly sono costituiti *mnemonici*, che sono abbreviazioni per i nomi di istruzioni, e *simboli* per variabili, registri e costanti. Ogni istruzione in linguaggio macchina è rappresentato da un elemento mnemonico in linguaggio assembly seguito facoltativamente da uno o più simboli.  
-  
-Il codice assembly si basa principalmente sui registri del processore o, per il codice gestito, registri di common language runtime. È possibile usare la **Disassembly** finestra lungo con la **registra** finestra, che consente di esaminare il contenuto del registro.  
-  
-Per visualizzare le istruzioni di codice macchina nel loro formato numerico non elaborato, anziché come linguaggio assembly, usare il **memoria** finestra o selezionare **byte del codice** dal menu di scelta rapida di **Disassembly**  finestra.  
-  
+Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo. Non è disponibile per uno script o il debug SQL.
+
+Oltre alle istruzioni in linguaggio assembly, nella finestra **Disassembly** è possibile visualizzare le informazioni facoltative seguenti:
+
+- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per le applicazioni native, è l'indirizzo di memoria effettiva. Per Visual Basic o C#, si tratta di un offset dall'inizio della funzione.
+
+- Codice sorgente dal quale deriva il codice assembly.
+
+- Il codice byte, vale a dire le rappresentazioni in byte del computer effettivo o istruzioni MSIL.
+
+- Nomi di simboli per gli indirizzi di memoria.
+
+- Numeri di riga corrispondenti al codice sorgente.
+
+Le istruzioni in linguaggio assembly sono costituiti *mnemonici*, che sono abbreviazioni per i nomi di istruzioni, e *simboli* per variabili, registri e costanti. Ogni istruzione in linguaggio macchina è rappresentato da un elemento mnemonico in linguaggio assembly seguito facoltativamente da uno o più simboli.
+
+Il codice assembly si basa principalmente sui registri del processore o, per il codice gestito, registri di common language runtime. È possibile usare la **Disassembly** finestra lungo con la **registra** finestra, che consente di esaminare il contenuto del registro.
+
+Per visualizzare le istruzioni di codice macchina nel loro formato numerico non elaborato, anziché come linguaggio assembly, usare il **memoria** finestra o selezionare **byte del codice** dal menu di scelta rapida di **Disassembly**  finestra.
+
 ## <a name="use-the-disassembly-window"></a>Utilizzare la finestra Disassembly
 
 Per abilitare il **Disassembly** finestra, sotto **Tools** > **opzioni** (o **strumenti**  >  **Le opzioni**) > **Debugging**, selezionare **Abilita debug a livello di indirizzo**.
@@ -64,14 +64,14 @@ Per abilitare il **Disassembly** finestra, sotto **Tools** > **opzioni** (o **st
 Per aprire la **Disassembly** finestra durante il debug, seleziona **Windows** > **Disassembly** oppure premere **Alt** + **8**.
 
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-Per abilitare informazioni facoltative o disabilitare, fare doppio clic nella **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
-Una freccia gialla nel margine sinistro contrassegna il punto di esecuzione corrente. Per il codice nativo, il punto di esecuzione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.  
+Per abilitare informazioni facoltative o disabilitare, fare doppio clic nella **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.
 
-## <a name="see-also"></a>Vedere anche  
+Una freccia gialla nel margine sinistro contrassegna il punto di esecuzione corrente. Per il codice nativo, il punto di esecuzione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.
 
-* [Spostamento verso l'alto o verso il basso in memoria](../debugger/how-to-page-up-or-down-in-memory.md)
-* [Visualizzazione dei dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
-* [Procedura: usare la finestra registri](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Vedere anche
+
+* [Procedura: Spostare verso l'alto o verso il basso una pagina di memoria](../debugger/how-to-page-up-or-down-in-memory.md)
+* [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
+* [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

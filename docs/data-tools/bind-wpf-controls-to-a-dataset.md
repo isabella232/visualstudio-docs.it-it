@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 43b262344965091cf7599a9e1b2c43d6bcdb94f2
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917522"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305728"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 
@@ -32,7 +32,7 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 - Creazione di un'applicazione WPF e di un set di dati generato dai dati nel database di esempio AdventureWorksLT.
 
-- Creazione di un set di controlli con associazione a dati trascinando una tabella di dati dal **Zdroje dat** finestra da una finestra in WPF Designer.
+- Creazione di un set di controlli associati a dati mediante il trascinamento di una tabella dati dalla finestra **Origini dati** a una finestra di WPF Designer.
 
 - Creazione di pulsanti per spostarsi avanti e indietro tra i record di prodotto.
 
@@ -62,9 +62,9 @@ Creare un nuovo progetto WPF per visualizzare i record di prodotto.
 
 2. Nel menu **File** selezionare **Nuovo** > **Progetto**.
 
-3. Espandere **Visual Basic** oppure **Visual c#**, quindi selezionare **Windows**.
+3. Espandere **Visual Basic** o **Visual C#**, quindi selezionare **Finestre**.
 
-4. Selezionare il **WPF Application** modello di progetto.
+4. Selezionare il modello di progetto **Applicazione WPF**.
 
 5. Nel **Name** casella, immettere **AdventureWorksProductsEditor** e quindi selezionare **OK**.
 
@@ -72,33 +72,33 @@ Creare un nuovo progetto WPF per visualizzare i record di prodotto.
 
 ## <a name="create-a-dataset-for-the-application"></a>Creare un set di dati per l'applicazione
 
-Prima di creare controlli associati a dati, è necessario definire un modello di dati per l'applicazione e aggiungere il **Zdroje dat** finestra. In questa procedura dettagliata viene creato un set di dati da usare come modello di dati.
+Prima di poter creare i controlli associati a dati, è necessario definire un modello di dati per l'applicazione e aggiungerlo alla finestra **Origini dati**. In questa procedura dettagliata viene creato un set di dati da usare come modello di dati.
 
-1.  Scegliere **Mostra origini dati** dal menu **Dati**.
+1. Scegliere **Mostra origini dati** dal menu **Dati**.
 
-     Il **Zdroje dat** verrà visualizzata la finestra.
+   Verrà visualizzata la finestra **Origini dati**.
 
-2.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
+2. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
-     Il **configurazione dell'origine dati** verrà visualizzata la procedura guidata.
+   Verrà avviata la **Configurazione guidata origine dati**.
 
-3.  Nel **scegliere un tipo di origine dati** pagina, selezionare **Database**, quindi fare clic su **successivo**.
+3. Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.
 
-4.  Nel **scegliere un modello di Database** pagina, selezionare **set di dati**, quindi fare clic su **successivo**.
+4. Nella pagina **Scegli modello database** selezionare **Dataset** e scegliere **Avanti**.
 
-5.  Nel **Seleziona connessione dati** pagina, selezionare una delle opzioni seguenti:
+5. Nella pagina **Seleziona connessione dati** selezionare una delle opzioni seguenti:
 
-    - Se una connessione dati al database AdventureWorksLT di esempio è disponibile nell'elenco a discesa, selezionarlo e quindi fare clic su **successivo**.
+   - Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente, quindi scegliere **Avanti**.
 
-    - Fare clic su **nuova connessione**e creare una connessione al database AdventureWorksLT.
+   - Fare clic su **Nuova connessione** e creare una connessione al database AdventureWorksLT.
 
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, selezionare la **Sì, Salva la connessione con nome** casella di controllo e quindi fare clic su **Avanti**.
+6. Nella pagina **Salva la stringa di connessione nel file di configurazione applicazione** selezionare la casella di controllo **Sì, salva la connessione con nome**, quindi fare clic su **Avanti**.
 
-7.  Nel **Scegli oggetti di Database** , espandere **tabelle**e quindi selezionare il **Product (SalesLT)** tabella.
+7. Nella pagina **Seleziona oggetti di database** espandere **Tables**, quindi selezionare la tabella **Product (SalesLT)**.
 
-8.  Scegliere **Fine**.
+8. Scegliere **Fine**.
 
-     Visual Studio aggiunge un nuovo `AdventureWorksLTDataSet.xsd` file per il progetto che aggiunge un che corrisponde **AdventureWorksLTDataSet** elemento per il **Zdroje dat** finestra. Il `AdventureWorksLTDataSet.xsd` file definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
+   Visual Studio aggiunge un nuovo `AdventureWorksLTDataSet.xsd` file per il progetto che aggiunge un che corrisponde **AdventureWorksLTDataSet** elemento per il **Zdroje dat** finestra. Il `AdventureWorksLTDataSet.xsd` file definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
 
 9. Compilare il progetto.
 
@@ -106,29 +106,29 @@ Prima di creare controlli associati a dati, è necessario definire un modello di
 
 Per riempire il set di dati con i dati, usare il metodo `Fill` dell'oggetto `ProductTableAdapter`. Per impostazione predefinita, il metodo `Fill` riempie `ProductDataTable` in `AdventureWorksLTDataSet` con tutte le righe di dati della tabella Product. È possibile modificare questo metodo in modo da restituire solo un subset di righe. Per questa procedura dettagliata, modificare il metodo `Fill` in modo da restituire solo di prodotti con foto.
 
-1.  Nelle **Esplora soluzioni**, fare doppio clic il *AdventureWorksLTDataSet* file.
+1. In **Esplora soluzioni** fare doppio clic sul file *AdventureWorksLTDataSet.xsd*.
 
      Viene aperto Progettazione DataSet.
 
-2.  Nella finestra di progettazione, fare doppio clic il **riempire**, **GetData ()** eseguire una query e selezionare **configura**.
+2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill**, **GetData()** e scegliere **Configura**.
 
-     Il **TableAdapter configurazione** verrà visualizzata la procedura guidata.
+     Verrà avviata la **Configurazione guidata TableAdapter**.
 
-3.  Nel **immettere un'istruzione SQL** pagina, aggiungere la clausola WHERE seguente dopo il `SELECT` istruzione nella casella di testo.
+3. Nella pagina **Immettere un'istruzione SQL** aggiungere la clausola WHERE seguente dopo l'istruzione `SELECT` nella casella di testo.
 
     ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4.  Scegliere **Fine**.
+4. Scegliere **Fine**.
 
 ## <a name="define-the-user-interface"></a>Definire l'interfaccia utente
 
 Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Designer. Più avanti in questa procedura dettagliata, verrà aggiunto il codice che consente agli utenti di scorrere e salvare le modifiche ai record di prodotti con questi pulsanti.
 
-1. Nelle **Esplora soluzioni**, fare doppio clic su *MainWindow. XAML*.
+1. In **Esplora soluzioni** fare doppio clic su *MainWindow.xaml*.
 
-    Viene visualizzata la finestra di **WPF Designer**.
+    La finestra verrà aperta in **WPF Designer**.
 
 2. Nella visualizzazione [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] della finestra di progettazione aggiungere il codice seguente tra i tag `<Grid>`:
 
@@ -148,11 +148,11 @@ Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Desig
 
 Creare controlli che visualizzano i record cliente trascinando il `Product` dalla tabella il **Zdroje dat** finestra di progettazione WPF.
 
-1.  Nel **Zdroje dat** finestra, fare clic sul menu a discesa per il **prodotto** nodo e selezionare **dettagli**.
+1. Nella finestra **Origini dati** fare clic sul menu a discesa del nodo **Product** e selezionare **Dettagli**.
 
-2.  Espandere la **prodotto** nodo.
+2. Espandere il nodo **Product**.
 
-3.  Per questo esempio, alcuni campi non verranno visualizzati, quindi fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **None**:
+3. Poiché per questo esempio alcuni campi non verranno visualizzati, fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **Nessuno**:
 
     - ProductCategoryID
 
@@ -164,53 +164,53 @@ Creare controlli che visualizzano i record cliente trascinando il `Product` dall
 
     - ModifiedDate
 
-4.  Fare clic sul menu di riepilogo a discesa accanto al **ThumbNailPhoto** nodo e selezionare **immagine**.
+4. Fare clic sul menu a discesa accanto al nodo **ThumbNailPhoto** e selezionare **Image**.
 
     > [!NOTE]
-    > Per impostazione predefinita, gli elementi di **Zdroje dat** finestra che rappresentano le immagini hanno il controllo predefinito impostato su **None**. dal momento che le immagini vengono archiviate come matrici di byte nei database e le matrici di byte possono contenere qualsiasi elemento, da una matrice semplice di byte al file eseguibile di un'applicazione di grandi dimensioni.
+    > Per impostazione predefinita, il controllo predefinito degli elementi nella finestra **Origini dati** che rappresentano immagini è impostato su **Nessuno**, dal momento che le immagini vengono archiviate come matrici di byte nei database e le matrici di byte possono contenere qualsiasi elemento, da una matrice semplice di byte al file eseguibile di un'applicazione di grandi dimensioni.
 
-5.  Dal **Zdroje dat** finestra, trascinare le **prodotto** nodo nella riga della griglia sotto la riga che contiene i pulsanti.
+5. Dalla finestra **Origini dati** trascinare il nodo **Product** nella riga della griglia sotto la riga contenente i pulsanti.
 
-     Visual Studio genera XAML che definisce un set di controlli associati ai dati di **prodotti** tabella. Genera inoltre il codice che carica i dati. Per altre informazioni sulle XAML e codice generato, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio genera il codice XAML che definisce un set di controlli associati a dati nella tabella **Products**. Genera inoltre il codice che carica i dati. Per altre informazioni sulle XAML e codice generato, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-6.  Nella finestra di progettazione, selezionare la casella di testo accanto al **ID prodotto** etichetta.
+6. Nella finestra di progettazione fare clic sulla casella di testo accanto all'etichetta **Product ID**.
 
-7.  Nel **delle proprietà** finestra, seleziona la casella di controllo accanto al **IsReadOnly** proprietà.
+7. Nella finestra **Proprietà** selezionare la casella di controllo accanto alla proprietà **IsReadOnly**.
 
 ## <a name="navigate-product-records"></a>Esplorare i record di prodotto
 
-Aggiungere il codice che consente agli utenti di scorrere i record di prodotto usando il **\<** e **>** pulsanti.
+Aggiungere il codice che consente agli utenti di scorrere i record di prodotto usando i pulsanti **\<** e **>**.
 
-1.  Nella finestra di progettazione, fare doppio clic il **<** pulsante nell'area della finestra.
+1. Nella finestra di progettazione fare doppio clic sul pulsante **<** nell'area della finestra.
 
-     Visual Studio apre il file code-behind e crea un nuovo `backButton_Click` gestore dell'evento per il <xref:System.Windows.Controls.Primitives.ButtonBase.Click> evento.
+     Visual Studio apre il file code-behind e crea un nuovo gestore eventi `backButton_Click` per l'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2.  Modificare il `Window_Loaded` gestore eventi, in modo che il `ProductViewSource`, `AdventureWorksLTDataSet`, e `AdventureWorksLTDataSetProductTableAdapter` dall'esterno del metodo e accessibili all'intero form. Dichiarare solo questi come globale al form e assegnarli all'interno di `Window_Loaded` gestore dell'evento simile al seguente:
+2. Modificare il gestore eventi `Window_Loaded` in modo che `ProductViewSource`, `AdventureWorksLTDataSet` e `AdventureWorksLTDataSetProductTableAdapter` siano esterni al metodo e accessibili all'intero form. Dichiarare solo questi come globale al form e assegnarli all'interno di `Window_Loaded` gestore dell'evento simile al seguente:
 
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
 
-3.  Aggiungere il codice seguente al gestore eventi `backButton_Click` :
+3. Aggiungere il codice seguente al gestore eventi `backButton_Click` :
 
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
 
-4.  Tornare alla finestra di progettazione e fare doppio clic il **>** pulsante.
+4. Tornare alla finestra di progettazione e fare doppio clic sul pulsante **>**.
 
-5.  Aggiungere il codice seguente al gestore eventi `nextButton_Click` :
+5. Aggiungere il codice seguente al gestore eventi `nextButton_Click` :
 
      [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
      [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
 
 ## <a name="save-changes-to-product-records"></a>Salvare le modifiche ai record di prodotto
 
-Aggiungere il codice che consente agli utenti di salvare le modifiche ai record di prodotto usando il **salvare le modifiche** pulsante.
+Aggiungere il codice che consente agli utenti di salvare le modifiche ai record di prodotto usando il pulsante **Salva modifiche**.
 
-1.  Nella finestra di progettazione, fare doppio clic il **salvare le modifiche** pulsante.
+1. Nella finestra di progettazione fare doppio clic sul pulsante **Salva modifiche**.
 
-     Visual Studio apre il file code-behind e crea un nuovo `saveButton_Click` gestore dell'evento per il <xref:System.Windows.Controls.Primitives.ButtonBase.Click> evento.
+     Visual Studio apre il file code-behind e crea un nuovo gestore eventi `saveButton_Click` per l'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2.  Aggiungere il codice seguente al gestore eventi `saveButton_Click` :
+2. Aggiungere il codice seguente al gestore eventi `saveButton_Click` :
 
      [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]
      [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]
@@ -222,29 +222,29 @@ Aggiungere il codice che consente agli utenti di salvare le modifiche ai record 
 
 Compilare ed eseguire l'applicazione. Verificare che sia possibile visualizzare e aggiornare i record di prodotto.
 
-1.  Premere **F5**.
+1. Premere **F5**.
 
      L'applicazione verrà compilata ed eseguita. Verificare quanto segue:
 
-    - Nelle caselle di testo vengono visualizzati i dati del primo record di prodotto contenente una foto. Questo prodotto include l'ID prodotto è 713 e il nome **Long-Sleeve Logo Jersey, S**.
+    - Nelle caselle di testo vengono visualizzati i dati del primo record di prodotto contenente una foto. L'ID prodotto è 713, mentre il nome è **Long-Sleeve Logo Jersey, S**.
 
-    - È possibile fare clic il **>** oppure **<** pulsanti per spostarsi tra gli altri record di prodotto.
+    - È possibile fare clic sui pulsanti **>** o **<** per spostarsi tra gli altri record di prodotto.
 
-2.  In uno dei record di prodotto, modificare il **dimensioni** valore e quindi fare clic su **salvare le modifiche**.
+2. In uno dei record di prodotto modificare il valore **Dimensione**, quindi fare clic su **Salva modifiche**.
 
-3.  Chiudere l'applicazione e quindi riavviare l'applicazione premendo **F5** in Visual Studio.
+3. Chiudere l'applicazione, quindi riavviarla premendo **F5** in Visual Studio.
 
-4.  Passare al record di prodotto modificato e verificare che la modifica sia presente.
+4. Passare al record di prodotto modificato e verificare che la modifica sia presente.
 
-5.  Chiudere l'applicazione.
+5. Chiudere l'applicazione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Dopo aver completato questa procedura dettagliata, è possibile provare le attività correlate seguenti:
 
-- Informazioni su come usare il **Zdroje dat** controlli finestra in Visual Studio per eseguire l'associazione WPF ad altri tipi di origini dati. Per altre informazioni, vedere [WPF di associare controlli a un servizio dati WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+- Imparare a usare la finestra **Origini dati** in Visual Studio per associare i controlli WPF ad altri tipi di origini dati. Per altre informazioni, vedere [WPF di associare controlli a un servizio dati WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Informazioni su come usare il **Zdroje dat** finestra in Visual Studio per visualizzare i dati correlati (vale a dire i dati in una relazione padre-figlio) nei controlli WPF. Per altre informazioni, vedere [procedura dettagliata: visualizzare dati correlati in un'app WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [procedura dettagliata: visualizzare dati correlati in un'app WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Vedere anche
 

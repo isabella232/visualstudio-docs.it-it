@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug con Just My Code il codice utente | Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050339"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389027"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Eseguire il debug con Just My Code solo il codice utente 
 
@@ -56,7 +56,7 @@ Nel **Stack di chiamate** oppure **attività** finestra, Just My Code consente d
 
 Fare doppio clic su una riga di codice esterno espanso nel **Stack di chiamate** finestra evidenzia la riga del codice chiamante in verde nel codice sorgente. Per le DLL o altri moduli non trovato o caricato, un simbolo o un'origine non trovato potrebbe aperta la pagina.
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Just My Code in .NET framework 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Just My Code in .NET Framework 
 
 Nei progetti .NET Framework, Just My Code Usa simboli (*PDB*) i file e ottimizzazioni del programma per classificare il codice utente e non utente. Il debugger di .NET Framework considera i file binari ottimizzati e non caricati *PDB* file di codice non utente.
   
@@ -117,7 +117,7 @@ Se il debugger raggiunge un'eccezione, si ferma sull'eccezione, se è in codice 
  Nei progetti C++, è possibile specificare le funzioni per eseguire failover elencandoli come codice non utente nei  *\*con estensione natstepfilter* file.  
   
 - Per specificare il codice non utente per tutti gli utenti di Visual Studio locali, aggiungere il *con estensione natstepfilter* del file per il *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.  
-- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natstepfilter* del file per il *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* cartella.  
+- Per specificare il codice non utente per un singolo utente, aggiungere il file con estensione *natstepfilter* alla cartella *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
   
 Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:  
   
@@ -148,8 +148,8 @@ Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:
 
 Per i progetti C++, è possibile specificare i moduli, i file di origine e le funzioni di **Stack di chiamate** trattata come codice non utente nella finestra specificandoli nei  *\*con estensione natjmc* file.  
   
--   Per specificare il codice non utente per tutti gli utenti del computer di Visual Studio, aggiungere il *con estensione natjmc* del file per il *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.  
--   Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natjmc* del file per il *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* cartella.  
+-   Per specificare il codice non utente per tutti gli utenti del computer che esegue Visual Studio, aggiungere il file con estensione *natjmc* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.  
+-   Per specificare il codice non utente per un singolo utente, aggiungere il file con estensione *natjmc* alla cartella *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
 
 Oggetto *con estensione natjmc* file è un file XML con questa sintassi:  
   
@@ -177,7 +177,7 @@ Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile usare i caratteri jolly di Windows `?` (zero o un carattere) e `*` (zero o più caratteri). Ad esempio,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli *\3rdParty\UtilLibs* in qualsiasi unità come codice esterno.|  
+|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile usare i caratteri jolly di Windows `?` (zero o un carattere) e `*` (zero o più caratteri). Ad esempio,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella *\3rdParty\UtilLibs* di qualsiasi unità come codice esterno.|  
 |`Company`|Facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|  
   
  **Attributi dell'elemento file**  
@@ -186,7 +186,7 @@ Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Percorso completo del file o dei file di codice sorgente da considerare come codice esterno. È possibile usare i caratteri jolly di Windows `?` e `*` quando si specifica il percorso.|  
   
- **Attributi dell'elemento (funzione)**  
+ **Attributi dell'elemento funzione**  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -196,7 +196,7 @@ Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> Just My Code in JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Just My Code determina l'esecuzione di istruzioni e chiamare visualizzazione stack suddividendo il codice in una delle classificazioni seguenti:  
+<a name="BKMK_JS_User_and_non_user_code"></a> Just My Code in JavaScript controlla l'esecuzione e la visualizzazione dello stack di chiamate suddividendo il codice in una delle classificazioni seguenti:  
 
 |||  
 |-|-|  
@@ -218,7 +218,7 @@ Il debugger JavaScript classifica codice come utente o non utente in questo ordi
   
 Ogni passaggio di classificazione esegue l'override dei passaggi precedenti. 
 
-Tutto l'altro codice viene classificato come **MyCode**.  
+Tutto il resto del codice viene classificato come **MyCode**.  
 
 È possibile modificare le classificazioni predefinite e classificare file specifici e gli URL come codice utente o non utente, aggiungendo un *. JSON* file denominato *mycode.json* nella cartella radice di un progetto di JavaScript. Visualizzare [personalizzare Just My Code in JavaScript](#BKMK_JS_Customize_Just_My_Code). 
 
@@ -226,7 +226,7 @@ Tutto l'altro codice viene classificato come **MyCode**.
 
 - Se il codice non utente, una funzione **Debug** > **Esegui istruzione** (o **F11**) si comporta come **Debug**  >  **Esegui istruzione/routine** (o **F10**).  
 - Se un'esecuzione inizia nel non utente (**LibraryCode** oppure **UnrelatedCode**) codice, l'esecuzione temporanea si comporta come se Just My Code non è abilitata. Quando si esegue nuovamente codice utente, Just My Code per il debug è abilitato nuovamente.  
-- Quando un utente codice passaggio comporta l'uscita dal contesto di esecuzione corrente, il debugger si arresta alla riga di codice utente eseguita successiva. Ad esempio, se eseguita una richiamata **LibraryCode** codice, il debugger continua finché non viene eseguita la riga di codice utente successiva.
+- Quando un utente codice passaggio comporta l'uscita dal contesto di esecuzione corrente, il debugger si arresta alla riga di codice utente eseguita successiva. Se ad esempio un callback viene eseguito nel codice **LibraryCode**, il debugger continua finché la riga di codice utente successiva non viene eseguita.
 - **Esci da istruzione /** (o **MAIUSC**+**F11**) si interrompe nella riga successiva del codice utente. 
 
 Se non è presente codice utente più, il debug continua finché non termina, raggiunge un altro punto di interruzione o viene generato un errore. 
@@ -242,7 +242,7 @@ Se si verifica un'eccezione non gestita nel **UnrelatedCode**, e **MyCode** oppu
   
 Se le eccezioni first-chance sono abilitate per l'eccezione e l'eccezione si verifica nelle **LibraryCode** oppure **UnrelatedCode**:  
   
--   Se l'eccezione gestita, il debugger non viene interrotta.  
+-   Se l'eccezione è gestita, il debugger non si interrompe.  
 -   Se l'eccezione non è gestita, il debugger si interrompe.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizzare Just My Code in JavaScript  
@@ -279,28 +279,28 @@ In questo file specifiche di eseguire l'override le classificazioni predefinite 
   
  **Eval, Function e ScriptBlock**  
   
- Il **Eval**, **funzione**, e **ScriptBlock** coppie chiave-valore determinano la modalità in modo dinamico viene classificato il codice generato:  
+ Le coppie chiave-valore **Eval**, **Function** e **ScriptBlock** determinano come viene classificato il codice generato dinamicamente:  
   
 |||  
 |-|-|  
 |**Eval**|Script eseguito passando una stringa alla funzione `eval` fornita dall'host. Per impostazione predefinita, lo script Eval viene classificato come **MyCode**.|  
 |**Function**|Script eseguito passando una stringa al costruttore `Function`. Per impostazione predefinita, lo script Function viene classificato come **LibraryCode**.|  
-|**Blocco di script**|Script eseguito passando una stringa alla funzione `setTimeout`, `setImmediate` o `setInterval`. Per impostazione predefinita, lo script ScriptBlock viene classificato come **UnrelatedCode**.|  
+|**ScriptBlock**|Script eseguito passando una stringa alla funzione `setTimeout`, `setImmediate` o `setInterval`. Per impostazione predefinita, lo script ScriptBlock viene classificato come **UnrelatedCode**.|  
   
  È possibile modificare il valore a una delle parole chiave seguenti:  
   
--   `MyCode`  Classifica lo script come **MyCode**.  
--   `Library`  Classifica lo script come **LibraryCode**.  
--   `Unrelated`  Classifica lo script come **UnrelatedCode**.  
+-   `MyCode` classifica lo script come **MyCode**.  
+-   `Library` classifica lo script come **LibraryCode**.  
+-   `Unrelated` classifica lo script come **UnrelatedCode**.  
   
   **MyCode, Libraries e Unrelated**  
   
- Il **MyCode**, **librerie**, e **Unrelated** coppie chiave-valore specificano gli URL o i file che si desidera includere in una classificazione:  
+ Le coppie chiave-valore **MyCode**, **Libraries** e **Unrelated** specificano gli URL o i file da includere in una classificazione:  
   
 |||  
 |-|-|  
 |**MyCode**|Matrice di URL o di file classificati come **MyCode**.|  
-|**Librerie**|Matrice di URL o di file classificati come **LibraryCode**.|  
-|**Non correlati**|Matrice di URL o di file classificati come **UnrelatedCode**.|  
+|**Libraries**|Matrice di URL o di file classificati come **LibraryCode**.|  
+|**Unrelated**|Matrice di URL o di file classificati come **UnrelatedCode**.|  
   
  La stringa URL o del file può contenere uno o più `*` caratteri, che corrispondono a zero o più caratteri. `*` equivale all'espressione regolare `.*`.

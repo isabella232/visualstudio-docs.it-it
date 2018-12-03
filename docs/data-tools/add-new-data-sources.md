@@ -1,6 +1,6 @@
 ---
 title: Aggiungere nuove origini dati
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666631"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304610"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 
-Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere disponibili i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **Zdroje dat** finestra. Questo tipo di origine dati può essere:
+Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere i dati disponibili a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **Zdroje dat** finestra. Questo tipo di origine dati può essere:
 
 - Una classe in un modello di Entity Framework che è associato a un tipo di database.
 
@@ -43,7 +43,16 @@ Per creare e modificare origini dati usando il **configurazione guidata origine 
 
 ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png)
 
-Dopo aver creato un'origine dati, viene visualizzato nei **Zdroje dat** finestra degli strumenti (**MAIUSC**+**Alt**+**1!d**oppure **View** > **altri Windows** > **Zdroj dat**). È possibile trascinare un'origine dati dal **Zdroje dat** finestra in un'area di progettazione form o controllo. In questo modo boilerplate generazione del codice che consente di visualizzare i dati dall'archivio dati. La figura seguente mostra un set di dati che è stato eliminato in un form di Windows. Se si seleziona **F5** nell'applicazione, i dati dal database sottostante vengono visualizzati nei controlli del form.
+## <a name="data-sources-window"></a>Finestra Origini dati
+
+Dopo aver creato un'origine dati, viene visualizzato nei **Zdroje dat** finestra degli strumenti.
+
+> [!TIP]
+> Per aprire la **Zdroje dat** finestra, assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d**oppure scegliere **View** > **Other Windows** > **Zdroje dat**.
+
+È possibile trascinare un'origine dati dal **Zdroje dat** finestra in un'area di progettazione form o controllo. In questo modo boilerplate generazione del codice che consente di visualizzare i dati dall'archivio dati.
+
+La figura seguente mostra un set di dati che è stato eliminato in un form di Windows. Se si seleziona **F5** nell'applicazione, i dati dal database sottostante vengono visualizzati nei controlli del form.
 
 ![Operazione di trascinamento sull'origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -86,7 +95,7 @@ Uno dei seguenti tipi di servizi, è possibile creare un'origine dati:
 - Servizi Web
 
     > [!NOTE]
-    > Gli elementi visualizzati nei **Zdroje dat** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per il **configurazione guidata origine dati** per creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
+    > Gli elementi visualizzati nei **Zdroje dat** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
 
 ## <a name="data-source-for-an-object"></a>Origine dati per un oggetto
 

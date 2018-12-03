@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di più processi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -21,187 +21,161 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2e91bfc9ed1cf555d24bed08466da69dad9f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910758"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305650"
 ---
-# <a name="debug-multiple-processes"></a>Procedura: eseguire il debug di più processi
-Di seguito viene illustrato come avviare il debug di processi, passare tra processi, interrompere e continuare l'esecuzione, esaminare l'origine, interrompere il debug e terminare o disconnettersi dai processi.  
-  
-##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Configurare il comportamento di esecuzione di più processi  
- Per impostazione predefinita, quando più processi sono in esecuzione nel debugger, i comandi del debugger di interruzione, esecuzione delle istruzioni e arresto di solito interessano tutti i processi. Ad esempio, quando un processo viene sospeso in corrispondenza di un punto di interruzione, viene sospesa anche l'esecuzione di tutti gli altri processi. È possibile modificare questo comportamento predefinito per ottenere un maggiore controllo sulle destinazioni dei comandi di esecuzione.  
-  
-1.  Fare clic su **Debug > Opzioni e impostazioni**.  
-  
-2.  Nel **Debugging**, **generali** pagina, deseleziona il **quando si interrompe un processo, interrompi tutti i processi** casella di controllo.  
-  
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Individuare l'origine e simboli (con estensione pdb)  
- Per esplorare il codice sorgente di un processo, il debugger deve accedere ai file di origine e di simboli del processo. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
- Se è Impossibile accedere ai file per un processo, è possibile spostarsi usando la finestra Disassembly. Vedere [procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)  
-  
-##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Avviare più processi in una soluzione VS, connettersi a un processo, avviare automaticamente un processo nel debugger  
-  
--   [Avviare il debug di più processi in una soluzione di Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)  
-  
--   [Modificare il progetto di avvio](#BKMK_Change_the_startup_project)  
-  
--   [Avviare un progetto specifico in una soluzione](#BKMK_Start_a_specific_project_in_a_solution)  
-  
--   [Avviare più progetti in una soluzione](#BKMK_Start_multiple_projects_in_a_solution)  
-  
--   [Connettersi a un processo](#BKMK_Attach_to_a_process)  
-  
--   [Avviare automaticamente un processo nel debugger](#BKMK_Automatically_start_an_process_in_the_debugger)  
-  
-> [!NOTE]
->  Il debugger non si connette automaticamente a un processo figlio che viene avviato da un processo sottoposto a debug, anche se il progetto figlio si trova nella stessa soluzione. Per eseguire il debug di un processo figlio:  
-> 
-> - Connettersi al processo figlio dopo averlo avviato.  
-> 
->   oppure  
->   -   Configurare Windows per avviare automaticamente il processo figlio in una nuova istanza del debugger.  
-  
-###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Avviare il debug di più processi in una soluzione di Visual Studio  
- Quando sono presenti più progetti in una soluzione Visual Studio che è possibile eseguire in modo indipendente (progetti eseguiti in processi distinti), è possibile selezionare quali progetti vengono avviati dal debugger.  
-  
- ![Modifica del tipo di avvio per un progetto](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
-  
-####  <a name="BKMK_Change_the_startup_project"></a> Modificare il progetto di avvio  
- Per modificare il progetto di avvio per una soluzione, selezionare il progetto in Esplora soluzioni e quindi scegliere **imposta come progetto di avvio** dal menu di scelta rapida.  
-  
-####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Avviare un progetto specifico in una soluzione  
- Per avviare un progetto per una soluzione senza modificare il progetto di avvio predefinito, selezionare il progetto in Esplora soluzioni e quindi scegliere **Debug** dal menu di scelta rapida. È quindi possibile scegliere **Avvia nuova istanza** oppure **Esegui istruzione nuova istanza**.  
-  
- ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [avviare più processi in una soluzione VS, connettersi a un processo, avviare automaticamente un processo nel debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
-####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Avviare più progetti in una soluzione  
-  
-1. Selezionare la soluzione in Esplora soluzioni e quindi scegliere **proprietà** nel menu di scelta rapida.  
-  
-2. Selezionare **proprietà comuni**, **progetto di avvio** sul **proprietà** nella finestra di dialogo.  
-  
-3. Per ogni progetto che si desidera modificare, scegliere **avviare**, **Avvia senza eseguire debug**, o **None**.  
-  
-   ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [avviare più processi in una soluzione VS, connettersi a un processo, avviare automaticamente un processo nel debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
+# <a name="debug-multiple-processes"></a>Eseguire il debug di più processi
+
+Visual Studio può eseguire il debug di una soluzione con più processi. È possibile avviare e passare tra processi, interrompere, continuare e passaggio origine, arrestare il debug e la fine o disconnettersi dai singoli processi.  
+
+##  <a name="start-debugging-with-multiple-processes"></a>Avviare il debug con più processi 
+
+Quando più di un progetto in una soluzione di Visual Studio è possibile eseguire in modo indipendente, è possibile selezionare il progetto di avvio del debugger. Il progetto di avvio corrente viene visualizzato grassetto nel **Esplora soluzioni**. 
+
+Per modificare il progetto di avvio, in **Esplora soluzioni**, fare doppio clic su un altro progetto e selezionare **imposta come progetto di avvio**.
+
+Per avviare il debug di un progetto dal **Esplora soluzioni** senza rendere il progetto di avvio, fare clic sul progetto e selezionare **Debug** > **Avvia nuova istanza** oppure **Esegui istruzione nuova istanza**. 
+
+**Per impostare il progetto di avvio o più progetti dalla soluzione proprietà:**
+
+1. Selezionare la soluzione in **Esplora soluzioni** e quindi selezionare la **delle proprietà** icona nella barra degli strumenti o scelta la soluzione e selezionare **proprietà**.  
+   
+1. Nel **delle proprietà** pagina, selezionare **proprietà comuni** > **progetto di avvio**.
+   
+   ![Modifica del tipo di avvio per un progetto](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
+   
+1. Selezionare **selezione corrente**, **progetto di avvio singolo** e un file di progetto, o **progetti di avvio multipli**. 
+
+   Se si seleziona **progetti di avvio multipli**, è possibile modificare l'ordine di avvio e l'azione da intraprendere per ogni progetto: **avviare**, **Avvia senza eseguire debug**, oppure **Nessuno**.  
+   
+1. Selezionare **Apply**, o **OK** per applicare e chiudere la finestra di dialogo. 
+
 ###  <a name="BKMK_Attach_to_a_process"></a> Connettersi a un processo  
- Il debugger può inoltre *collegare* a programmi in esecuzione in processi esterni a Visual Studio, inclusi i programmi in esecuzione in un dispositivo remoto. Dopo essersi connessi a un programma, è possibile usare i comandi di esecuzione del debugger, analizzare lo stato del programma e così via. La possibilità di analisi del programma dipende dall'eventualità che il programma sia stato generato con informazioni di debug, che si disponga dell'accesso al relativo codice sorgente e che il compilatore JIT di Common Language Runtime stia registrando informazioni di debug.  
+
+Il debugger può inoltre *collegare* alle App in esecuzione in processi esterni a Visual Studio, tra cui su dispositivi remoti. Dopo aver collegato a un'app, è possibile usare il debugger di Visual Studio. Le funzionalità di debug potrebbero essere limitata. Dipende se l'app è stata compilata con le informazioni di debug, se si ha accesso al codice sorgente dell'app e che il compilatore JIT stia registrando informazioni di debug.  
   
- Visualizzare [connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) per altre informazioni.  
+Per altre informazioni, vedere [Collega a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
- **Connettersi a un processo in esecuzione nel computer locale**  
+**Per connettersi a un processo in esecuzione:**  
   
- Fare clic su **Debug > Connetti a processo**. Nel **Connetti a processo** finestra di dialogo, selezionare il processo dalle **processi disponibili** elenco e quindi scegliere **Attach**.  
+1. Con l'app in esecuzione, selezionare **Debug** > **Connetti a processo**. 
+
+   ![Collegamento alla finestra di dialogo di processo](../debugger/media/dbg_attachtoprocessdlg.png "associare alla finestra di dialogo di processo")  
   
- ![Collegamento alla finestra di dialogo di processo](../debugger/media/dbg_attachtoprocessdlg.png "DBG_AttachToProcessDlg")  
+1. Nel **Connetti a processo** finestra di dialogo, selezionare il processo dalle **processi disponibili** elenco e quindi selezionare **Attach**.  
   
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Avviare automaticamente un processo nel debugger  
- In alcuni casi potrebbe essere necessario eseguire il debug del codice di avvio di un programma avviato da un altro processo. Può ad esempio trattarsi di servizi o operazioni di installazione personalizzate. In questi scenari è possibile avviare e connettere il debugger automaticamente all'avvio dell'applicazione.  
+>[!NOTE]
+>Il debugger non si connette automaticamente a un processo figlio che viene avviato da un processo sottoposto a debug, anche se il progetto figlio si trova nella stessa soluzione. Per eseguire il debug di un processo figlio, connettersi al processo figlio dopo l'avvio o configurare l'Editor del Registro di sistema di Windows per avviare il processo figlio in una nuova istanza del debugger.  
   
-1. Avviare l'Editor del Registro di sistema (**regedit.exe**).  
+###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Usare l'Editor del Registro di sistema per avviare automaticamente un processo nel debugger  
+
+In alcuni casi, potrebbe essere necessario eseguire il debug di codice di avvio di un'app che viene avviata da un altro processo. Può ad esempio trattarsi di servizi o operazioni di installazione personalizzate. Il debugger è possibile avviare e allegare automaticamente all'app. 
+
+1. Avviare l'Editor del Registro di sistema di Windows eseguendo *regedit.exe*.  
+   
+1. Nell'Editor del Registro di sistema passare a **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**.  
   
-2. Passare il **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options** cartella.  
+1. Selezionare la cartella dell'app da avviare nel debugger.  
+   
+   Se l'app non è elencato come cartella figlio, fare doppio clic su **Image File Execution Options**, selezionare **New** > **chiave**e digitare il nome dell'app. In alternativa, fare doppio clic la nuova chiave nell'albero della selezione **Rinomina**, quindi immettere il nome dell'app. 
+   
+1. Fare doppio clic la nuova chiave nella struttura ad albero e selezionare **New** > **valore stringa**.  
+   
+1. Modificare il nome del nuovo valore da **nuovo valore #1** a `debugger`.  
+   
+1. Fare doppio clic su **debugger** e selezionare **Modify**.  
+   
+   ![Dialogo Modifica stringa](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "nella finestra di dialogo Modifica stringa")  
+   
+1. Nel **Modifica stringa** finestra di dialogo, digitare `vsjitdebugger.exe` nel **dati valore** e quindi selezionare **OK**.  
+   
+   ![Voce di avvio automatico del debug Regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "voce di avvio automatico del debug Regedit.exe")  
+   
+##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Eseguire il debug con più processi 
+<a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> 
+
+Durante il debug di un'app con più processi, i comandi del debugger di interruzione, debug passo a passo e continui interessano tutti i processi per impostazione predefinita. Ad esempio, quando un processo viene sospeso in corrispondenza di un punto di interruzione, viene sospesa anche l'esecuzione di tutti gli altri processi. È possibile modificare questo comportamento predefinito per ottenere un maggiore controllo sulle destinazioni dei comandi di esecuzione.  
+
+**Per modificare la modalità di tutti i processi vengono sospese quando si interrompe un processo:**
+
+- Sotto **degli strumenti** (o **Debug**) > **opzioni** > **debug** > **generale**, selezionare o deselezionare le **quando si interrompe un processo, interrompi tutti i processi** casella di controllo.  
   
-3. Selezionare la cartella dell'app da avviare nel debugger.  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> Comandi per interrompere, eseguire le istruzioni e continuare  
   
-    Se il nome dell'app non è elencato come cartella figlio, selezionare **Image File Execution Options** e quindi scegliere **New**, **chiave** nel menu di scelta rapida. Selezionare la nuova chiave, scegliere **Rinomina** menu di scelta rapida, quindi immettere il nome dell'app.  
+Nella tabella seguente vengono descritti i comportamenti del debug comandi quando il **quando si interrompe un processo, interrompi tutti i processi** casella di controllo viene selezionata o deselezionata:
+
+|**Comando**|Selezionato|Deselezionato|  
+|-|-|-|  
+|**Eseguire il debug**  > **Interrompi tutto**|Interruzione di tutti i processi.|Interruzione di tutti i processi.|  
+|**Eseguire il debug** > **continuare**|Ripresa di tutti i processi.|Ripresa di tutti i processi sospesi.|  
+|**Eseguire il debug** > **eseguire l'istruzione**, **Esegui istruzione/routine**, o **Esci da istruzione**|Esecuzione di tutti i processi durante l'esecuzione delle istruzioni del processo corrente. <br />Successiva interruzione di tutti i processi.|Esecuzione delle istruzioni del processo corrente. <br />Ripresa dei processi sospesi. <br />Continuazione dei processi in esecuzione.|  
+|**Eseguire il debug** > **Esegui istruzione processo corrente**, **Esegui istruzione/routine processo corrente**, o **Esci da processo corrente**|N/D|Esecuzione delle istruzioni del processo corrente.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
+|Finestra di dialogo origine **punto di interruzione**|Interruzione di tutti i processi.|Interruzione solo del processo della finestra di origine.|  
+|Finestra di dialogo origine **Esegui fino al cursore**<br />La finestra di origine deve essere nel processo corrente.|Esecuzione di tutti i processi mentre il processo della finestra di origine viene eseguito fino al cursore e quindi interrotto.<br />Successiva interruzione di tutti gli altri processi.|Esecuzione del processo della finestra di origine fino al cursore.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
+|**I processi** finestra > **Interrompi processo**|N/D|Interruzione del processo selezionato.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
+|**I processi** finestra > **Continua processo**|N/D|Ripresa del processo selezionato.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
+
+###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Individuare i file di origine e di simboli (con estensione pdb)  
+Per esplorare il codice sorgente di un processo, il debugger deve accedere ai relativi file di origine e i file di simboli. Per altre informazioni, vedere [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-4. Nel menu di scelta rapida della cartella dell'app, scegliere **New**, **valore stringa**.  
-  
-5. Modificare il nome del nuovo valore da **nuovo valore** a `debugger`.  
-  
-6. Nel menu di scelta rapida della voce del debugger, scegliere **Modify**.  
-  
-7. Nella finestra di dialogo Modifica stringa digitare `vsjitdebugger.exe` nella **dati valore** casella.  
-  
-    ![Dialogo Modifica stringa](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
-  
-   ![Voce di avvio automatico del debug Regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "DBG_Execution_AutomaticStart_Result")  
-  
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Passare i processi, interrompere e continuare l'esecuzione, l'origine un'istruzione  
-  
--   [Passaggio tra processi](#BKMK_Switch_between_processes)  
-  
--   [Interrompere, passaggio e procedere con i comandi](#BKMK_Break__step__and_continue_commands)  
-  
+Se è Impossibile accedere ai file per un processo, è possibile spostarsi usando il **Disassembly** finestra. Per altre informazioni, vedere [procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md).  
+
 ###  <a name="BKMK_Switch_between_processes"></a> Passaggio tra processi  
- Nonostante durante il debug sia possibile connettersi a più processi, nel debugger è sempre attivo un solo processo in un dato momento. È possibile impostare attivo o *correnti* elaborare sulla barra degli strumenti posizione di Debug o nel **processi** finestra. Per passare da un processo all'altro, entrambi i processi devono essere in modalità di interruzione.  
+
+È possibile connettersi a più processi quando si esegue il debug, ma è attivo nel debugger di un solo processo in qualsiasi momento. È possibile impostare il processo attivo o *corrente* nella barra degli strumenti **Posizione di debug** o nella finestra **Processi**. Per passare da un processo all'altro, entrambi i processi devono essere in modalità di interruzione.  
   
- **Per impostare il processo corrente**  
+**Per impostare il processo corrente nella barra degli strumenti posizione di Debug:**  
   
-- Sulla barra degli strumenti posizione di Debug, scegli **processo** per visualizzare i **processo** casella di riepilogo. Selezionare il processo da designare come processo corrente.  
+1. Per aprire la **posizione di Debug** sulla barra degli strumenti, seleziona **View** > **barre degli strumenti** > **posizione di Debug**.  
+   
+1. Durante il debug, scegliere il **posizione di Debug** sulla barra degli strumenti, selezionare il processo di cui si desidera impostare come corrente dalle **processo** elenco a discesa.  
   
    ![Spostarsi tra i processi](../debugger/media/dbg_execution_switchbetweenmodules.png "DBG_Execution_SwitchBetweenModules")  
   
-   Se il **posizione di Debug** sulla barra degli strumenti non è visibile, sceglierla **Tools**, **Personalizza**. Nel **barre degli strumenti** scheda, scegliere **posizione di Debug**.  
+**Per impostare il processo corrente dalla finestra processi:**  
   
-- Aprire il **processi** finestra (scelta rapida **Ctrl + Alt + Z**), trovare il processo che si desidera impostare come corrente e fare doppio clic.  
+1. Per aprire la **processi** finestra durante il debug, selezionare **Debug** > **Windows** > **processi**. 
+
+1. Nel **processi** finestra, il processo corrente è contrassegnata da una freccia gialla. Fare doppio clic il processo di cui che si desidera impostare come corrente.  
   
    ![Finestra processi](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")  
+
+Il passaggio a un processo, lo imposta come processo corrente a scopo di debug. Finestre del debugger mostrano lo stato del processo corrente e i comandi di esecuzione di istruzioni interessano solo processo corrente.  
   
-   Il processo corrente è contrassegnato da una freccia gialla.  
+## <a name="stop-debugging-with-multiple-processes"></a>Arrestare il debug con più processi  
   
-  Quando si passa a un progetto esso viene impostato per il debug. In tutte le finestre del debugger visualizzate è mostrato lo stato del processo corrente e tutti i comandi per l'esecuzione di istruzioni interessano solo il processo corrente.  
+Per impostazione predefinita, quando si seleziona **Debug** > **arresta debug**, il debugger termina o disconnette tutti i processi. 
   
-  ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [passa i processi, interrompere e continuare l'esecuzione, l'origine un'istruzione](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
-  
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Interrompere, passaggio e procedere con i comandi  
-  
-> [!NOTE]
->  Per impostazione predefinita, i comandi del debugger per interrompere, continuare ed eseguire le istruzioni interessano tutti i processi sottoposti a debug. Per modificare questo comportamento, vedere [configurare il comportamento di esecuzione di più processi](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
-  
-|**Comando**|**Quando si interrompe un processo, interrompi tutti i processi**<br /><br /> Selezionato (impostazione predefinita)|**Quando si interrompe un processo, interrompi tutti i processi**<br /><br /> Deselezionato|  
-|-|-|-|  
-|**Eseguire il debug** menu:<br /><br /> -   **Interrompi tutto**|Interruzione di tutti i processi.|Interruzione di tutti i processi.|  
-|**Eseguire il debug** menu:<br /><br /> -   **Continuare**|Ripresa di tutti i processi.|Ripresa di tutti i processi sospesi.|  
-|**Eseguire il debug** menu:<br /><br /> -   **Eseguire l'istruzione**<br />-   **Esegui istruzione/routine**<br />-   **Esci da istruzione**|Esecuzione di tutti i processi durante l'esecuzione delle istruzioni del processo corrente.<br /><br /> Successiva interruzione di tutti i processi.|Esecuzione delle istruzioni del processo corrente.<br /><br /> Ripresa dei processi sospesi.<br /><br /> Continuazione dei processi in esecuzione.|  
-|**Eseguire il debug** menu:<br /><br /> -   **Esegui istruzione processo corrente**<br />-   **Esegui istruzione/routine processo corrente**<br />-   **Passaggio processo corrente**|N/D|Esecuzione delle istruzioni del processo corrente.<br /><br /> Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
-|Finestra di origine<br /><br /> -   **Punto di interruzione**|Interruzione di tutti i processi.|Interruzione solo del processo della finestra di origine.|  
-|Menu di scelta rapida della finestra di origine:<br /><br /> -   **Esegui fino al cursore**<br /><br /> La finestra di origine deve essere nel processo corrente.|Esecuzione di tutti i processi mentre il processo della finestra di origine viene eseguito fino al cursore e quindi interrotto.<br /><br /> Successiva interruzione di tutti gli altri processi.|Esecuzione del processo della finestra di origine fino al cursore.<br /><br /> Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
-|**Processi** menu di scelta rapida finestra:<br /><br /> -   **Interrompi processo**|N/D|Interruzione del processo selezionato.<br /><br /> Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
-|**Processi** menu di scelta rapida finestra:<br /><br /> -   **Continua processo**|N/D|Ripresa del processo selezionato.<br /><br /> Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
-  
- ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [passa i processi, interrompere e continuare l'esecuzione, l'origine un'istruzione](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
-  
-##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Arrestare il debug, terminare o disconnettersi dai processi  
-  
-- [Interrompere, terminare e disconnettere i comandi](#BKMK_Stop__terminate__and_detach_commands)  
-  
-  Per impostazione predefinita, quando si sceglie **Debug**, **arresta debug** quando più processi sono aperti nel debugger, il debugger termina o disconnette tutti i processi a seconda del modo in cui il processo è stato aperto nel debugger:  
-  
-- Se il processo corrente è stato avviato nel debugger, esso viene terminato.  
+- Se il processo corrente è stato avviato nel debugger, il processo viene terminato.  
   
 - Se il debugger è stato connesso al processo corrente, viene disconnesso e il processo rimane in esecuzione.  
   
-  Ad esempio, se si avvia il debug di un processo da una soluzione di Visual Studio, connettersi a un altro processo già in esecuzione e quindi scegliere **arresta debug**, la sessione di debug termina, il processo di cui è stato avviato in Visual Studio viene terminato, mentre il processo di cui è collegato viene lasciato in esecuzione. È possibile utilizzare le procedure seguenti per controllare la modalità di interruzione del debug.  
+Se si avvia il debug di un processo da una soluzione di Visual Studio, quindi collegare a un altro processo che è già in esecuzione e quindi scegliere **arresta debug**, il termine della sessione di debug. Termina il processo che è stato avviato in Visual Studio, mentre il processo a che sono stati collegati rimane in esecuzione. 
+
+Per controllare la modalità che **Termina debug** influisce su un singolo processo, il **processi** finestra, fare doppio clic su un processo e quindi selezionare o deselezionare il **Disconnetti al termine del debug arrestato** casella di controllo.  
   
-> [!NOTE]
->  Il **quando si interrompe un processo, interrompi tutti i processi** opzione influisce sull'interruzione del debug o chiusura e disconnessione dai processi.  
+>[!NOTE]
+>Il **quando si interrompe un processo, interrompi tutti i processi** debugger opzione non riguarda l'arresto, interruzione o disconnessione dai processi.  
   
- **Per modificare la modalità arresta debug influisce su un singolo processo**  
+###  <a name="stop-terminate-and-detach-commands"></a>Interrompere, terminare e disconnettere i comandi  
   
--   Aprire il **processi** finestra (scelta rapida **Ctrl + Alt + Z**). Selezionare un processo e quindi selezionare o deselezionare i **Disconnetti al termine del debug arrestato** casella di controllo.  
-  
-###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> Interrompere, terminare e disconnettere i comandi  
-  
+Nella tabella seguente vengono descritti i comportamenti dell'interruzione del debugger, terminare e disconnettere i comandi con più processi: 
+
 |**Comando**|**Descrizione**|  
 |-|-| 
-|**Eseguire il debug** menu:<br /><br /> -   **Arrestare il debug**|A meno che il comportamento è stato modificato da **processi** finestra **Disconnetti al termine del debug** opzione:<br /><br /> 1.  I processi avviati dal debugger vengono terminati.<br />2.  I processi connessi vengono disconnessi dal debugger.|  
-|**Eseguire il debug** menu:<br /><br /> -   **Termina tutto**|Tutti i processi vengono terminati.|  
-|**Eseguire il debug** menu:<br /><br /> -   **Disconnetti tutto**|Il debugger si disconnette da tutti i processi.|  
-|**Processi** menu di scelta rapida finestra:<br /><br /> -   **Disconnetti processo**|Il debugger si disconnette da tutti i processi selezionati.<br /><br /> Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
-|**Processi** menu di scelta rapida finestra:<br /><br /> -   **Termina il processo**|Il processo selezionato viene terminato.<br /><br /> Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
-|**Processi** menu di scelta rapida finestra:<br /><br /> -   **Disconnetti al termine del debug**|Attiva/disattiva il comportamento delle **Debug**, **arresta debug** per il processo selezionato:<br /><br /> -Checked: Il debugger si disconnette dal processo.<br />-Opzione deselezionata: Il processo viene terminato.|  
-  
- ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [interrompere il debug, terminare o disconnettersi dai processi](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
-  
+|**Eseguire il debug** > **interrompere il debug**|A meno che non viene modificato il comportamento nel **processi** finestra processi avviati dal debugger vengono terminati e processi connessi vengono disconnessi.|  
+|**Eseguire il debug** > **Termina tutto**|Tutti i processi vengono terminati.|  
+|**Eseguire il debug** > **Disconnetti tutto**|Il debugger si disconnette da tutti i processi.|  
+|**I processi** finestra > **Disconnetti processo**|Il debugger si disconnette da tutti i processi selezionati.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
+|**I processi** finestra > **Termina processo**|Il processo selezionato viene terminato.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|  
+|**I processi** finestra > **Disconnetti al termine del debug**|Se selezionato, **Debug** > **arresta debug** si disconnette dal processo selezionato. <br />Se non è selezionata **Debug** > **arresta debug** termina il processo selezionato. |  
 ## <a name="see-also"></a>Vedere anche  
- [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Collegamento a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)   
- [Debug Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
