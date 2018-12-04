@@ -20,7 +20,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 71b6cbc3f523b8f21b21b0e69b1d6e45e23acb0c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49915347"
@@ -44,7 +44,7 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
  > [!IMPORTANT]
  > A partire da Windows Server 2008 R2, è consigliabile usare la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
   
- Il nome del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Il nome del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni vedere [Procedura: individuare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
  È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)**. Per altre informazioni, vedere [procedura: eseguire il ruolo di lavoro processo con un Account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
