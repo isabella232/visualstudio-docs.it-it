@@ -681,6 +681,8 @@ items:
     items:
     - name: Tempo di avvio
       href: ide/optimize-visual-studio-startup-time.md
+    - name: Caricare una soluzione filtrata
+      href: ide/filtered-solutions.md
     - name: Suggerimenti
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: Gestire le funzionalità di accessibilità
@@ -694,7 +696,7 @@ items:
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-    - name: Risorse per la progettazione di applicazioni accessibili
+    - name: Risorse per la progettazione di app accessibili
       href: ide/reference/resources-for-designing-accessible-applications.md
   - name: Globalizzare e localizzare le app
     href: ide/globalizing-and-localizing-applications.md
@@ -1082,8 +1084,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Risorse
   items:
-  - name: Novità
+  - name: Novità di Visual Studio 2017
     href: ide/whats-new-in-visual-studio.md
+  - name: Novità di Visual Studio 2019
+    href: ide/whats-new-visual-studio-2019.md
   - name: Note sulla versione e requisiti di sistema
     items:
     - name: Note sulla versione corrente
@@ -1123,9 +1127,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Comunicazioni con Microsoft
     href: ide/talk-to-us.md
-ms.openlocfilehash: 4e8c6398d89f5db9f97b8ce61a17960a76e938cb
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389242"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895548"
