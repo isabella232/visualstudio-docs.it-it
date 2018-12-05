@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297596"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894534"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurare le porte per test controller e agenti di test
 
 È possibile modificare le porte in ingresso predefinite usate dal controller di test, dall'agente di test e dal client. Questa operazione potrebbe essere necessaria se si prova a usare insieme il controller di test, l'agente di test o il client con altro software che crea conflitti con le impostazioni della porta. Un altro motivo per il quale è necessaria la modifica delle porte è legato alla restrizione del firewall tra il controller di test e il client. In questo caso è possibile configurare manualmente la porta per abilitarla per un firewall in modo che sia possibile inviare i risultati al client tramite il controller di test.
 
- Nella figura seguente sono mostrati i punti di connessione tra il controller di test, l'agente di test e il client. Sono inoltre illustrate le porte che vengono usate per le connessioni in ingresso e in uscita e le restrizioni di sicurezza applicate a tali porte.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Porte e sicurezza del controller e dell'agente di test](../test/media/test-controller-agent-firewall.png)
+Nella figura seguente sono mostrati i punti di connessione tra il controller di test, l'agente di test e il client. Sono inoltre illustrate le porte che vengono usate per le connessioni in ingresso e in uscita e le restrizioni di sicurezza applicate a tali porte.
+
+![Porte e sicurezza del controller e dell'agente di test](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Connessioni in ingresso
 

@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928672"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896627"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
 Quando si visualizzano i risultati dell'esecuzione di un test di carico, è possibile aprire riquadri diversi che consentono di analizzare i dati in vari modi. ossia in un grafico, per rilevare le modifiche nel corso del tempo, oppure in tabelle dettagliate.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Per passare alla visualizzazione Tabelle, selezionare **Tabelle** sulla barra degli strumenti del **test di carico**. Per passare da una tabella all'altra usare l'elenco a discesa **Tabella** nella barra degli strumenti sopra la griglia della tabella. In visualizzazione tabella è possibile visualizzare fino a cinque tabelle alla volta. Per ulteriori informazioni, vedere [Affiancare tabelle di un test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in questo argomento.
 
@@ -41,14 +43,14 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
 > [!NOTE]
 > Le colonne denominate **Ultimo** sono disponibili solo durante l'esecuzione di un test di carico. Al termine del test di carico, non sono disponibili.
 
- È possibile ordinare la maggior parte delle tabelle scegliendo il titolo della colonna da usare come riferimento. Per impostazione predefinita, in alcune tabelle non vengono visualizzate tutte le colonne disponibili. È possibile aggiungere colonne alle tabelle, se sono disponibili. Per aggiungere colonne, fare clic con il pulsante destro del mouse sulla tabella e scegliere **Aggiungi/Rimuovi colonne**.
+È possibile ordinare la maggior parte delle tabelle scegliendo il titolo della colonna da usare come riferimento. Per impostazione predefinita, in alcune tabelle non vengono visualizzate tutte le colonne disponibili. È possibile aggiungere colonne alle tabelle, se sono disponibili. Per aggiungere colonne, fare clic con il pulsante destro del mouse sulla tabella e scegliere **Aggiungi/Rimuovi colonne**.
 
 > [!NOTE]
 > È possibile copiare i dati da una tabella in altre applicazioni come Excel per eseguire altre analisi.
 
 ## <a name="the-load-test-tables"></a>Tabelle di test di carico
 
- Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle esecuzioni di test di carico.
+Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle esecuzioni di test di carico.
 
 |Nome tabella|Descrizione|
 |-|-|

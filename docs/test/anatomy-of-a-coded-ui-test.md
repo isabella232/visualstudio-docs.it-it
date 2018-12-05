@@ -1,5 +1,5 @@
 ---
-title: Composizione di un test codificato dell'interfaccia utente in Visual Studio
+title: Composizione di un test codificato dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925216"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896588"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 
 Quando si crea un test codificato dell'interfaccia utente in un progetto di test codificato dell'interfaccia utente, vengono aggiunti alcuni file alla soluzione. In questo articolo vengono specificate informazioni su tali file.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="contents-of-a-coded-ui-test"></a>Contenuto di un test codificato dell'interfaccia utente
 

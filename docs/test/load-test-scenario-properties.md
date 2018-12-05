@@ -1,5 +1,5 @@
 ---
-title: Proprietà di uno scenario di test di carico in Visual Studio
+title: Proprietà di uno scenario di test di carico
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 235f5d7a686f431555f34e232f6cc1af8195cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890192"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894599"
 ---
 # <a name="load-test-scenario-properties"></a>Proprietà di uno scenario di test di carico
 
 Modificare le impostazioni delle proprietà di uno scenario di test di carico in Visual Studio per soddisfare i requisiti del test di carico. In questo articolo vengono elencate le diverse proprietà di uno scenario di test di carico, suddivise per categoria.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="general"></a>Generale
 
