@@ -10,22 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881703"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895236"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
 
 Visualizzare l'attività utente virtuale associata al test di carico usando il **Grafico attività utente virtuale**. Ogni riga del grafico rappresenta un singolo utente virtuale. Il **Grafico attività utente virtuale** mostra esattamente l'attività eseguita da ogni utente virtuale durante il test. È possibile visualizzare modelli dell'attività utente, modelli di carico, test non riusciti o lenti correlati e richieste con altre attività utente virtuale. Il **Grafico attività utente virtuale** è disponibile solo al termine dell'esecuzione del test di carico.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Nelle procedure descritte di seguito viene illustrato come visualizzare il **Grafico attività utente virtuale**, come esaminare un'attività utente specifica e come usare il filtro.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Per visualizzare il Grafico attività utente virtuale nei risultati del test di carico
 
-1.  Per visualizzare i dati utente virtuale, è necessario prima configurare l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** associata al test di carico. Eseguire quindi il test di carico. Per altre informazioni, vedere [Procedura: Configurare la raccolta di dettagli completi per abilitare il grafico attività utente virtuale](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Per visualizzare i dati utente virtuale, è necessario prima configurare l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** associata al test di carico. Eseguire quindi il test di carico.
 
 2.  Dopo l'esecuzione del test di carico, verrà visualizzata la pagina di riepilogo dei risultati del test. Scegliere il pulsante **Vai a dettagli utente** nella barra degli strumenti.
 

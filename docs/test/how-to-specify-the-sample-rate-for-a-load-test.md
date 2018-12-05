@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880117"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896783"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedura: Specificare la frequenza di campionamento per un'impostazione di esecuzione dei test di carico
 
 Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà in modo da soddisfare le necessità e gli obiettivi di test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Usando l'**Editor test di carico** è possibile modificare il valore della proprietà **Frequenza di campionamento** dell'impostazione di esecuzione test nella finestra **Proprietà**. Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione test di carico](../test/load-test-run-settings-properties.md).
 

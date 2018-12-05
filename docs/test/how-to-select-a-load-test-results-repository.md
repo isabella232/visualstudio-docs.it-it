@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371121"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895652"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procedura: Selezionare un repository dei risultati del test di carico
 
 La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. Gli agenti, insieme ai controller, consentono di generare un carico simulato maggiore rispetto a un singolo computer. Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
 I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui si vuole archiviare i risultati del test di carico usando la finestra di **amministrazione dei controller di test**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identificare un archivio dei risultati per i dati dei test di carico
 

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204076"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896192"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Procedura: Applicare la distribuzione al ritardo velocità per un modello di combinazione di test basato sulla velocità dell'utente
 
 Dopo aver creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'Editor test di carico per modificare le proprietà dello scenario in modo da soddisfare le necessità e gli obiettivi di test specifici.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 La proprietà **Applica distribuzione a ritardo velocità** viene impostata tramite la finestra **Proprietà**. Le proprietà degli scenari dei test di carico vengono modificate tramite l'Editor test di carico.
 

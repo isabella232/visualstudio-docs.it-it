@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812998"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895431"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
 Le regole di soglia sono associate a specifici contatori delle prestazioni e le violazioni indicano che un contatore ha superato o non ha raggiunto un valore impostato. Quando si esegue un test di carico, è possibile analizzare le violazioni che si verificano per le regole di soglia configurate in precedenza.
 
 Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di carico** viene visualizzato il collegamento ipertestuale **violazioni di soglia** e ne viene specificato il numero. Scegliere il collegamento ipertestuale per visualizzare la tabella delle violazioni di soglia. È anche possibile visualizzare tali violazioni di soglia nella finestra **Contatori** e sul grafico.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Visualizzare le violazioni di soglia nella tabella
 
@@ -67,8 +69,6 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
  Se lo si desidera, è possibile visualizzare le violazioni di soglia anche nel grafico. L'icona di soglia viene visualizzata nel grafico accanto al punto dati in cui si è verificata la violazione di soglia.
 
  Nella struttura ad albero di contatori l'icona relativa a una violazione di soglia viene propagata dal nodo del contatore specifico fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile nell'albero perché tale albero non è stato espanso.
-
- Per altre informazioni, vedere [Uso del pannello dei contatori nella visualizzazione Grafici e nella visualizzazione Tabelle](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Visualizzare le violazioni di soglia sul grafico
 

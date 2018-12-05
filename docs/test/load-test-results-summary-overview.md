@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380564"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895015"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
 Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico agli stakeholder. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png)
+![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Riepilogo del test di carico
 
@@ -127,7 +129,7 @@ La sezione relativa alle risorse controller e agenti contiene un elenco dei comp
 
 ## <a name="errors"></a>Errori
 
-La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori** ed esaminare altri dettagli sull'errore. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Procedura: Analizzare gli errori usando il pannello dei contatori](../test/how-to-analyze-errors-using-the-counters-panel.md).
+La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori** ed esaminare altri dettagli sull'errore. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.

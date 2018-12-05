@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381016"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895379"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procedura dettagliata: Creare ed eseguire un test di carico contenente unit test
 
 In questa procedura dettagliata viene creato un test di carico contenente unit test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Questa procedura descrive i passaggi necessari per la creazione e l'esecuzione di un test di carico tramite Visual Studio Enterprise. Un test di carico è un contenitore di test delle prestazioni Web e di unit test. È possibile creare test di carico con la **Creazione guidata test di carico**.
 

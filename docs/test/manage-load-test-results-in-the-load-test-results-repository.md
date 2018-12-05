@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950017"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895457"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gestire i risultati dei test di carico nel repository dei risultati del test di carico
 
 Quando si eseguono i test di carico, le informazioni raccolte durante l'esecuzione possono essere memorizzate nel *repository dei risultati del test di carico*, che è un database SQL. Il repository dei risultati del test di carico contiene i dati del contatore delle prestazioni e tutte le informazioni sugli errori registrati. Il database che funge da repository dei risultati viene creato durante l'installazione dei controller o automaticamente alla prima esecuzione locale di un test di carico. Per un'esecuzione locale, il database verrà creato automaticamente se lo schema del test di carico non è presente.
 
- Se si modifica la stringa di connessione del database dei risultati del controller per utilizzare un altro server, sarà necessario che sul nuovo server venga eseguito lo *script loadtestresultsrepository.sql* per creare lo schema.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise fornisce insiemi di contatori denominati che raccolgono contatori delle prestazioni comuni basati su una tecnologia. Tali insiemi sono utili quando si analizza un server IIS, un server ASP.NET o un server SQL. Tutti i dati raccolti con gli insiemi di contatori vengono memorizzati nel repository dei risultati del test di carico.
+Se si modifica la stringa di connessione del database dei risultati del controller per utilizzare un altro server, sarà necessario che sul nuovo server venga eseguito lo *script loadtestresultsrepository.sql* per creare lo schema.
+
+Visual Studio Enterprise fornisce insiemi di contatori denominati che raccolgono contatori delle prestazioni comuni basati su una tecnologia. Tali insiemi sono utili quando si analizza un server IIS, un server ASP.NET o un server SQL. Tutti i dati raccolti con gli insiemi di contatori vengono memorizzati nel repository dei risultati del test di carico.
 
 > [!IMPORTANT]
 > Esiste una differenza tra un insieme di contatori e i dati del contatore delle prestazioni. Un insieme di contatori rappresenta dei metadati. Definisce un gruppo di contatori delle prestazioni da raccogliere da un computer che sta eseguendo un determinato ruolo, come un server IIS o SQL Server. L'insieme di contatori fa parte della definizione del test di carico. I dati del contatore delle prestazioni vengono raccolti in base agli insiemi di contatori, al mapping dell'insieme dei contatori a un determinato computer e alla velocità di campionamento.

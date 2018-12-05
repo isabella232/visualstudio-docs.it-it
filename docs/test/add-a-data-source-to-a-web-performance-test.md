@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295098"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896107"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 
 Associare i dati per fornire valori diversi nello stesso test, ad esempio, per fornire valori diversi ai parametri Post 'per i form.
 
- ![Associazione di dati a un test prestazioni Web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Verrà usata un'applicazione ASP.NET di esempio, contenente tre pagine *ASPX*: la pagina predefinita, una pagina Red e una pagina Blue. La pagina predefinita contiene un pulsante di opzione per la scelta tra rosso e blu e un pulsante Submit. Le altre due pagine *ASPX* sono molto semplici. Una include un'etichetta denominata Red e l'altra un'etichetta denominata Blue. Quando si sceglie Submit nella pagina predefinita, viene visualizzata una delle altre pagine. È possibile scaricare l'esempio di [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o usare la propria applicazione Web.
+![Associazione di dati a un test prestazioni Web](../test/media/web_test_databinding_conceptual.png)
 
- ![Esecuzione dell'applicazione Web da testare](../test/media/web_test_databinding_runwebapp.png)
+Verrà usata un'applicazione ASP.NET di esempio, contenente tre pagine *ASPX*: la pagina predefinita, una pagina Red e una pagina Blue. La pagina predefinita contiene un pulsante di opzione per la scelta tra rosso e blu e un pulsante Submit. Le altre due pagine *ASPX* sono molto semplici. Una include un'etichetta denominata Red e l'altra un'etichetta denominata Blue. Quando si sceglie Submit nella pagina predefinita, viene visualizzata una delle altre pagine. È possibile scaricare l'esempio di [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o usare la propria applicazione Web.
 
- La soluzione deve inoltre includere un test delle prestazioni Web che scorra le pagine dell'applicazione Web.
+![Esecuzione dell'applicazione Web da testare](../test/media/web_test_databinding_runwebapp.png)
 
- ![Soluzione con test prestazioni Web](../test/media/web_test_databinding_solution.png)
+La soluzione deve inoltre includere un test delle prestazioni Web che scorra le pagine dell'applicazione Web.
+
+![Soluzione con test prestazioni Web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Creare un database SQL
 

@@ -1,5 +1,5 @@
 ---
-title: Modifica di uno scenario di test di carico in Visual Studio
+title: Scenari di test di carico
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837139"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896536"
 ---
 # <a name="edit-load-test-scenarios"></a>Modificare gli scenari di test di carico
 
 Uno *scenario* di test di carico consente di specificare il modello di carico, la combinazione di test, la combinazione di browser e la combinazione di reti. Gli scenari sono importanti perché consentono di configurare test con i quali simulare carichi di lavoro complessi e realistici.
 
 È possibile, ad esempio, testare un sito di e-commerce con un front-end Internet usato da centinaia di clienti contemporaneamente, con diverse velocità di connessione e browser differenti. Lo stesso sito potrebbe anche essere dotato di funzioni di amministrazione, usate dai dipendenti interni per aggiornare i prodotti e visualizzare le statistiche. Generalmente questi utenti interni accedono al sito mediante lo stesso browser e una connessione LAN ad alta velocità. Sarebbe utile incapsulare le proprietà di questi due diversi gruppi di utenti in scenari distinti. Ogni scenario può contenere un tipo di utente virtuale. In questo caso si può creare uno scenario di test di carico per rappresentare i clienti virtuali e un altro scenario per rappresentare gli utenti interni virtuali di un sito Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Componenti di uno scenario
 

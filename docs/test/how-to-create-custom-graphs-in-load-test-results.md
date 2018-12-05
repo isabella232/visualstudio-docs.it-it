@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381999"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895821"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedura: Creare grafici personalizzati nei risultati del test di carico
 
 È possibile progettare grafici che visualizzano specifiche informazioni sui risultati dei test di carico. Per progettare un grafico personalizzato, specificare i contatori del test di carico che verranno visualizzati sul grafico.
 
- È possibile eseguire la procedura descritta di seguito durante l'esecuzione di un test di carico o al termine dell'esecuzione.
+È possibile eseguire la procedura descritta di seguito durante l'esecuzione di un test di carico o al termine dell'esecuzione.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Per creare un grafico personalizzato dei risultati del test di carico
 

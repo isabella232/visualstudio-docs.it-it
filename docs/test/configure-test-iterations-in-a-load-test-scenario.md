@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176141"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896211"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurare le iterazioni di test in uno scenario di test di carico
 
 Per configurare le impostazioni delle iterazioni di test, modificare uno scenario di test di carico usando l'Editor test di carico e la finestra **Proprietà**. Per impostazione predefinita, un scenario di test di carico viene configurato senza specificare il numero massimo di iterazioni. Si ha l'opzione di configurare il numero massimo di iterazioni nello scenario e l'intervallo tra un'iterazione e l'altra.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Specificare il numero massimo di iterazioni di test per uno scenario
 

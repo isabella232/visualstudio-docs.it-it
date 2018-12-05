@@ -1,5 +1,5 @@
 ---
-title: Impostazioni esecuzione test di carico in Visual Studio
+title: Impostazioni di esecuzione dei test di carico
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817397"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895496"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 
 Le impostazioni di esecuzione di un test di carico determinano una serie di altre impostazioni, tra cui la durata del test, il livello di dettaglio della raccolta dei risultati e gli insiemi di contatori raccolti durante l'esecuzione del test. È possibile creare e archiviare più impostazioni di esecuzione per ogni test di carico e selezionare una determinata impostazioni da usare durante l'esecuzione del test. Quando si crea un test di carico usando la **Creazione guidata test di carico**, al test viene aggiunta un'impostazione esecuzione test iniziale.
 
- Nelle tabelle seguenti vengono descritte le varie proprietà per le impostazioni di esecuzione dei test di carico. È possibile modificare queste proprietà per soddisfare i requisiti specifici del test di carico.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md).
+Nelle tabelle seguenti vengono descritte le varie proprietà per le impostazioni di esecuzione dei test di carico. È possibile modificare queste proprietà per soddisfare i requisiti specifici del test di carico.
+
+Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Proprietà generali
 
@@ -42,7 +44,7 @@ Le impostazioni di esecuzione di un test di carico determinano una serie di altr
 |Proprietà|Definizione|
 |-|----------------|
 |**Numero massimo di log di test**|Specifica il numero massimo di log di test da salvare per il test di carico. Quando viene raggiunto il valore immesso per il numero massimo di log di test, il test di carico interrompe la raccolta di log. Pertanto, i log verranno raccolti all'inizio del test e non alla fine. L'esecuzione del test di carico continuerà fino al completamento.|
-|**Frequenza di salvataggio del log per i test completati**|Specifica la frequenza con la quale viene scritto il log di test. Il numero indica che nel log di test verrà salvato un test ogni numero di test corrispondente al numero immesso. Immettendo, ad esempio, il valore dieci, nel test di log vengono salvati il decimo, il ventesimo, il trentesimo test e così via. Se il valore viene impostato su 0, non verrà salvato alcun log di test.<br /><br /> Per altre informazioni, vedere [Procedura: Specificare la frequenza di salvataggio dei log di test](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Frequenza di salvataggio del log per i test completati**|Specifica la frequenza con la quale viene scritto il log di test. Il numero indica che nel log di test verrà salvato un test ogni numero di test corrispondente al numero immesso. Immettendo, ad esempio, il valore dieci, nel test di log vengono salvati il decimo, il ventesimo, il trentesimo test e così via. Se il valore viene impostato su 0, non verrà salvato alcun log di test.|
 |**Salva log su test non superati**|Valore booleano che determina se vengono salvati i log di test in caso di esito negativo di un test in un test di carico. Il valore predefinito è `True`.<br /><br /> Per altre informazioni, vedere [Procedura: Specificare se i test non superati vengono salvati in log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Per altre informazioni, vedere [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md).

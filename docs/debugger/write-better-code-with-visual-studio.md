@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389377"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621591"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Correggere i bug scrivendo meglio C# del codice con Visual Studio
 
-Debug del codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace. Un potente IDE come Visual Studio possa rendere molto più semplice il processo. Un IDE consente di eseguire il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è fornire una visione olistica del processo di debug, in modo da conoscere quando usare l'analizzatore di codice e su quando usare il debugger e quando utilizzare altri strumenti.
+Debug del codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace, ma un potente IDE come Visual Studio può rendere molto più semplice il processo. Un IDE consente di eseguire il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è fornire una visione olistica del processo di debug, in modo da conoscere quando usare l'analizzatore di codice e su quando usare il debugger e quando utilizzare altri strumenti.  
 
 In questo articolo si parla sfruttando l'IDE per rendere più produttiva sessioni di debug. Discussa marginalmente numerose attività, ad esempio:
 
