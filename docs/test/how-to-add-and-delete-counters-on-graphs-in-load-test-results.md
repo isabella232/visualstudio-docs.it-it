@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908802"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896523"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedura: aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
 
 Per aggiungere contatori delle prestazioni a un grafico, è possibile usare il riquadro **Contatori**.
 
- ![Contatore aggiunto a un grafico](../test/media/ltest_selectcounter.png)
+![Contatore aggiunto a un grafico](../test/media/ltest_selectcounter.png)
 
- **Considerazioni sull'intervallo di campionamento dei contatori delle prestazioni**
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Nelle impostazioni esecuzione test di carico scegliere un valore per la proprietà **Frequenza di campionamento** basato sulla lunghezza del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+**Considerazioni sull'intervallo di campionamento dei contatori delle prestazioni**
 
- Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
+Nelle impostazioni esecuzione test di carico scegliere un valore per la proprietà **Frequenza di campionamento** basato sulla lunghezza del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+
+Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 |Durata test di carico|Frequenza di campionamento consigliata|
 |-|-----------------------------|
@@ -39,11 +41,11 @@ Per aggiungere contatori delle prestazioni a un grafico, è possibile usare il r
 |8 - 24 ore|30 secondi|
 |> 24 ore|60 secondi|
 
- **Considerazioni per l'inclusione di dettagli dell'intervallo per la raccolta di dati percentili**
+**Considerazioni per l'inclusione di dettagli dell'intervallo per la raccolta di dati percentili**
 
- Nelle impostazioni esecuzione test dell'Editor test di carico è disponibile una proprietà denominata **Intervallo archiviazione dettagli**. Se la proprietà **Intervallo archiviazione dettagli** è abilitata, il tempo richiesto per eseguire ogni singolo test, transazione e pagina durante il test di carico verrà archiviato nel repository dei risultati del test di carico. Ciò consente di visualizzare i dati del novantesimo e del novantacinquesimo percentile nell'**Analizzatore test di carico**, nelle tabelle Test, Transazioni e Pagine.
+Nelle impostazioni esecuzione test dell'Editor test di carico è disponibile una proprietà denominata **Intervallo archiviazione dettagli**. Se la proprietà **Intervallo archiviazione dettagli** è abilitata, il tempo richiesto per eseguire ogni singolo test, transazione e pagina durante il test di carico verrà archiviato nel repository dei risultati del test di carico. Ciò consente di visualizzare i dati del novantesimo e del novantacinquesimo percentile nell'**Analizzatore test di carico**, nelle tabelle Test, Transazioni e Pagine.
 
- Per abilitare la proprietà **Intervallo archiviazione dettagli** nelle proprietà delle impostazioni esecuzione test sono disponibili due opzioni denominate **StatisticsOnly** e **AllIndividualDetails**. Con entrambe le opzioni viene determinato l'intervallo di tutti i singoli test, pagine e transazioni e dai singoli dati di intervallo vengono calcolati i dati percentili. La differenza per quanto riguarda l'opzione **StatisticsOnly** consiste nel fatto che i singoli dati di intervallo vengono eliminati dal repository dopo il calcolo dei dati percentili. In questo modo si riduce la quantità di spazio richiesta nel repository quando si usano i dettagli dell'intervallo. Gli utenti avanzati potrebbero tuttavia voler elaborare i dati dettaglio dell'intervallo in altri modi, usando strumenti SQL. In tal caso, è consigliabile usare l'opzione **AllIndividualDetails** in modo da rendere disponibili i dati dettaglio dell'intervallo per l'elaborazione. Se inoltre si imposta la proprietà su **AllIndividualDetails**, al termine dell'esecuzione del test di carico è possibile analizzare l'attività dell'utente virtuale usando **Grafico attività utente virtuale** nell'**Analizzatore test di carico**. Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Per abilitare la proprietà **Intervallo archiviazione dettagli** nelle proprietà delle impostazioni esecuzione test sono disponibili due opzioni denominate **StatisticsOnly** e **AllIndividualDetails**. Con entrambe le opzioni viene determinato l'intervallo di tutti i singoli test, pagine e transazioni e dai singoli dati di intervallo vengono calcolati i dati percentili. La differenza per quanto riguarda l'opzione **StatisticsOnly** consiste nel fatto che i singoli dati di intervallo vengono eliminati dal repository dopo il calcolo dei dati percentili. In questo modo si riduce la quantità di spazio richiesta nel repository quando si usano i dettagli dell'intervallo. Gli utenti avanzati potrebbero tuttavia voler elaborare i dati dettaglio dell'intervallo in altri modi, usando strumenti SQL. In tal caso, è consigliabile usare l'opzione **AllIndividualDetails** in modo da rendere disponibili i dati dettaglio dell'intervallo per l'elaborazione. Se inoltre si imposta la proprietà su **AllIndividualDetails**, al termine dell'esecuzione del test di carico è possibile analizzare l'attività dell'utente virtuale usando **Grafico attività utente virtuale** nell'**Analizzatore test di carico**. Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 La quantità di spazio richiesta nel repository dei risultati del test di carico per l'archiviazione dei dati dettaglio dell'intervallo potrebbe essere molto elevata, soprattutto per i test di carico a esecuzione prolungata. Inoltre, è necessario più tempo per archiviare questi dati nel repository dei risultati alla fine del test di carico, in quanto tali dati vengono archiviati negli agenti del test di carico fino al termine dell'esecuzione del test di carico. Quando il test di carico viene completato, i dati vengono archiviati nel repository. La proprietà **Intervallo archiviazione dettagli** è abilitata per impostazione predefinita. Se ciò costituisce un problema per l'ambiente di test, è consigliabile impostare **Intervallo archiviazione dettagli** su **Nessuno**.
 

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296086"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895470"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: Creare un'impostazione test per un test di carico distribuito
 
 Configurare le *impostazioni test* per i test di carico per consentirne la distribuzione tra più computer con agenti di test e test controller. È anche possibile configurare le impostazioni test per l'uso degli *adattatori dati di diagnostica* che specificano i tipi di dati da raccogliere o il funzionamento dei computer di test quando si eseguono i test di carico da Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Ad esempio, è possibile utilizzare l'adattatore dati di diagnostica del profiler di ASP.NET per raccogliere i dati suddivisi delle prestazioni del codice. È inoltre possibile utilizzare gli adattatori dati di diagnostica per simulare potenziali colli di bottiglia nel computer di test o per ridurre la memoria di sistema disponibile.
 

@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851608"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895314"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
 Per creare un *adattatore dati di diagnostica*, è necessario creare una libreria di classi mediante Visual Studio, quindi aggiungere le API dell'adattatore dati di diagnostica fornite da Visual Studio Enterprise alla libreria di classi. Inviare tutte le informazioni desiderate come flusso o come file a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> fornito dal framework, durante la gestione degli eventi che vengono generati durante l'esecuzione dei test. I flussi o i file inviati a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> vengono archiviati come allegati nei risultati del test al termine di quest'ultimo. Se si crea un bug da questi risultati o quando si usa [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], anche i file vengono collegati al bug.
 
- È possibile creare un adattatore dati di diagnostica che influisca sul computer in cui vengono eseguiti i test oppure su un computer che fa parte dell'ambiente in uso per eseguire l'applicazione sottoposta a test, ad esempio la raccolta di file nel computer in cui vengono eseguiti i test o la raccolta di file nel computer a cui è assegnato il ruolo di server Web per l'applicazione.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- È possibile assegnare all'adattatore dati di diagnostica un nome descrittivo che viene visualizzato durante la creazione delle impostazioni test mediante Microsoft Test Manager o usando Visual Studio. Le impostazioni di test consentono di definire con quale ruolo computer verranno eseguiti adattatori dati di diagnostica specifici nell'ambiente durante l'esecuzione dei test. È inoltre possibile configurare gli adattatori dati di diagnostica quando si creano le impostazioni di test. È ad esempio possibile creare un adattatore dati di diagnostica che raccolta log personalizzati dal server Web. Quando si creano le impostazioni di test, è possibile scegliere di eseguire questo adattatore dati di diagnostica nel computer o nei computer in cui viene eseguito questo ruolo del server Web ed è possibile modificare la configurazione per le impostazioni di test per raccogliere solo gli ultimi tre log creati. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+È possibile creare un adattatore dati di diagnostica che influisca sul computer in cui vengono eseguiti i test oppure su un computer che fa parte dell'ambiente in uso per eseguire l'applicazione sottoposta a test, ad esempio la raccolta di file nel computer in cui vengono eseguiti i test o la raccolta di file nel computer a cui è assegnato il ruolo di server Web per l'applicazione.
 
- Eventi vengono generati quando si eseguono i test in modo che l'adattatore dati di diagnostica sia in grado di eseguire attività nel punto specifico del test.
+È possibile assegnare all'adattatore dati di diagnostica un nome descrittivo che viene visualizzato durante la creazione delle impostazioni test mediante Microsoft Test Manager o usando Visual Studio. Le impostazioni di test consentono di definire con quale ruolo computer verranno eseguiti adattatori dati di diagnostica specifici nell'ambiente durante l'esecuzione dei test. È inoltre possibile configurare gli adattatori dati di diagnostica quando si creano le impostazioni di test. È ad esempio possibile creare un adattatore dati di diagnostica che raccolta log personalizzati dal server Web. Quando si creano le impostazioni di test, è possibile scegliere di eseguire questo adattatore dati di diagnostica nel computer o nei computer in cui viene eseguito questo ruolo del server Web ed è possibile modificare la configurazione per le impostazioni di test per raccogliere solo gli ultimi tre log creati. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+
+Eventi vengono generati quando si eseguono i test in modo che l'adattatore dati di diagnostica sia in grado di eseguire attività nel punto specifico del test.
 
 > [!IMPORTANT]
 > Questi eventi possono essere generati su thread differenti, specialmente quando si dispone di test in esecuzione in più computer. Pertanto, è necessario tenere presente i possibili problemi relativi al threading e non danneggiare inavvertitamente i dati interni dell'adattatore personalizzato. Verificare che l'adattatore dati di diagnostica sia thread-safe.
 
- Di seguito è riportato un elenco parziale di eventi chiave che è possibile utilizzare quando si crea l'adattatore dati di diagnostica. Per un elenco completo di eventi dell'adattatore dati di diagnostica, vedere la classe astratta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
+Di seguito è riportato un elenco parziale di eventi chiave che è possibile utilizzare quando si crea l'adattatore dati di diagnostica. Per un elenco completo di eventi dell'adattatore dati di diagnostica, vedere la classe astratta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
 |event|Descrizione|
 |-|-----------------|
@@ -44,9 +46,9 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 > [!NOTE]
 > Quando viene completato un test manuale, non vengono inviati altri eventi di raccolta dati all'adattatore dati di diagnostica. Quando un test viene rieseguito, gli viene assegnato un nuovo identificatore di test case. Se un utente reimposta un test durante un test, generando l'evento <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset>, oppure modifica il risultato di un passo del test, non viene inviato alcun evento di raccolta dei dati all'adattatore dati di diagnostica, ma l'identificatore del test case rimane lo stesso. Per determinare se un test case è stato reimpostato, è necessario tenere traccia dell'identificatore di test case nell'adattatore dati di diagnostica.
 
- Utilizzare la procedura seguente per creare un adattatore dati di diagnostica che consenta di raccogliere un file di dati basato sulle informazioni configurate alla creazione delle impostazioni di test.
+Utilizzare la procedura seguente per creare un adattatore dati di diagnostica che consenta di raccogliere un file di dati basato sulle informazioni configurate alla creazione delle impostazioni di test.
 
- Per un progetto di adattatore dati di diagnostica di esempio completo, incluso un editor di configurazione personalizzato, vedere [Esempio di progetto per creare un adattatore dati di diagnostica](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Per un progetto di adattatore dati di diagnostica di esempio completo, incluso un editor di configurazione personalizzato, vedere [Esempio di progetto per creare un adattatore dati di diagnostica](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Creare e installare un adattatore dati di diagnostica
 

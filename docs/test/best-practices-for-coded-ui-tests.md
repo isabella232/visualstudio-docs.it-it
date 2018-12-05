@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per i test codificati dell'interfaccia utente in Visual Studio
+title: Procedure consigliate per i test codificati dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283276"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896019"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedure consigliate per i test codificati dell'interfaccia utente
 
 Questo argomento illustra alcuni suggerimenti per lo sviluppo di test codificati dell'interfaccia utente.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>Procedure consigliate
 

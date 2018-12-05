@@ -1,5 +1,5 @@
 ---
-title: Uso dei controlli HTML5 nei test codificati dell'interfaccia utente in Visual Studio
+title: Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914489"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896191"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
 I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Requisiti**
 
@@ -27,15 +29,14 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 > [!WARNING]
 > Nelle versioni precedenti a Internet Explorer 10, è possibile eseguire test codificati dell'interfaccia utente con un livello di privilegi più alto rispetto a quello del processo di Internet Explorer. Quando si eseguono test codificati dell'interfaccia utente in Internet Explorer 10, sia il test codificato dell'interfaccia utente che il processo di Internet Explorer devono avere lo stesso livello di privilegi. Infatti le funzionalità di AppContainer sono più sicure in Internet Explorer 10.
 
-
 > [!WARNING]
 > Un test codificato dell'interfaccia utente creato in Internet Explorer 10 potrebbe non funzionare in Internet Explorer 9 o Internet Explorer 8. Questo perché Internet Explorer 10 include controlli HTML5 come audio, video, ProgressBar e dispositivo di scorrimento. Questi controlli HTML5 non sono riconosciuti da Internet Explorer 9 o da Internet Explorer 8. Analogamente, il test codificato dell'interfaccia utente creato in Internet Explorer 9 potrebbe includere alcuni controlli HTML5 non riconosciuti in Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Controllo audio
- **Controllo Audio**: le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.
 
- ![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
+**Controllo Audio**: le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.
+
+![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
 
 |Operazione|Registrazione|Codice generato|
 |-|---------------|-|

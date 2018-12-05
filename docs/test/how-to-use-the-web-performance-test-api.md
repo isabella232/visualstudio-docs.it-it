@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382305"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896458"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
 
 È possibile scrivere codice per i test Web. L'API del test delle prestazioni Web viene usata per creare test Web codificati, plug-in test Web, plug-in richiesta, richieste, regole di estrazione e regole di convalida. Le classi che compongono queste tipologie sono le classi di base in questa API. Gli altri tipi in questa API vengono utilizzati per supportare la creazione degli oggetti <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.WebTesting> consente di creare test delle prestazioni Web personalizzati.
 
- È anche possibile usare l'API del test Web per creare e salvare test Web dichiarativi a livello di codice. A tale scopo, utilizzare le classi <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+È anche possibile usare l'API del test Web per creare e salvare test Web dichiarativi a livello di codice. A tale scopo, utilizzare le classi <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
 
 > [!TIP]
 > Il visualizzatore oggetti consente di esaminare lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Gli editor Visual C# e Visual Basic forniscono il supporto IntelliSense per la codifica delle classi nello spazio dei nomi.
 
-
- È possibile creare anche plug-in per i test di carico. Per altre informazioni, vedere [Procedura: Usare l'API del test di carico](../test/how-to-use-the-load-test-api.md) e [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
+È possibile creare anche plug-in per i test di carico. Per altre informazioni, vedere [Procedura: Usare l'API del test di carico](../test/how-to-use-the-load-test-api.md) e [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Per utilizzare lo spazio dei nomi WebTesting
 

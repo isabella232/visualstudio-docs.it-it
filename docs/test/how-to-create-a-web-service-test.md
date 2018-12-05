@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380668"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894469"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
 I test web consentono di testare i servizi web. Tramite le opzioni **Inserisci richiesta** e **Inserisci richiesta servizio Web** è possibile personalizzare le singole richieste nell'**Editor test prestazioni Web** in modo da individuare le pagine di servizi Web. Solitamente queste pagine non vengono visualizzate nell'applicazione Web. Pertanto, per poter accedere alle pagine è necessario personalizzare la richiesta.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter Kit. È possibile scaricarlo da [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Requisiti**
+**Requisiti**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Per testare un servizio Web
 
@@ -69,7 +71,7 @@ Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter K
 12. Assegnare un nome e un valore al parametro della stringa di query. Nell'esempio precedente il nome è `op` e il valore è `CheckStatus`. Tramite il nome e il valore viene identificata l'operazione di servizio Web da eseguire.
 
     > [!NOTE]
-    > È possibile usare l'associazione dati nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
+    > È possibile usare il data binding nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
 
 13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Web browser. Verranno visualizzati l'XML restituito dal servizio Web e i risultati di tutte le operazioni.
 

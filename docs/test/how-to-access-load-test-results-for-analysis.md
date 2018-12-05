@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175673"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896445"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: Accedere ai risultati dei test di carico per l'analisi
 
@@ -29,9 +29,11 @@ Quando si esegue un test di carico dall'Editor test di carico, i risultati del t
 
 I risultati relativi al test di carico completato contengono gli esempi di contatori delle prestazioni e le informazioni sugli errori raccolti periodicamente dai computer sottoposti a test. Nel corso dell'esecuzione di un test di carico può essere raccolto un numero elevato di esempi di contatori delle prestazioni. La quantità di dati sulle prestazioni raccolti durante un test di carico dipende dalla durata dell'esecuzione del test, dall'intervallo di campionamento, dal numero di computer sottoposti a test, dal numero di contatori raccolti, dagli agenti di raccolta dati configurati e dai livelli di registrazione. Per un test di carico di grandi dimensioni, la quantità di dati sulle prestazioni raccolti può facilmente raggiungere diversi gigabyte. Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="to-access-a-load-test-result"></a>Per accedere ai risultati di un test di carico
 
-1.  Da un progetto di test di carico e prestazioni Web aprire un test di carico.
+1.  Da un progetto di test di carico e prestazioni web aprire un test di carico.
 
 2.  Nella barra degli strumenti dell'Editor test di carico scegliere il pulsante **Apri e gestisci risultati**.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645185"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895600"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -30,6 +30,8 @@ In alcuni siti Web vengono utilizzati parametri dinamici per elaborare alcune ri
 -   Valori di parametri dinamici che sono impostati come stringa di query o parametri Post per i form. Vengono gestiti usando il rilevamento dei parametri dinamici dopo la registrazione di un test delle prestazioni Web.
 
 Alcuni tipi di parametri dinamici non vengono rilevati. Un parametro dinamico non rilevato impedisce la riuscita dell'esecuzione del test delle prestazioni Web perché il valore dinamico cambia a ogni esecuzione del test. Per gestire correttamente questi parametri, è possibile aggiungere manualmente regole di estrazione ai parametri dinamici nei test delle prestazioni Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Creare ed eseguire un'applicazione Web con parametri dinamici
 

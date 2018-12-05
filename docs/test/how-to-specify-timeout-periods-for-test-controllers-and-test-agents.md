@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827935"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895691"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per controller e agenti di test
 
 Sia il controller di test che l'agente di test dispongono di diverse impostazioni di timeout che consentono di specificare il tempo che ognuno di essi deve attendere per le risposte dell'altro, o per quelle provenienti da un'origine dati, prima di generare un errore. In determinate circostanze potrebbe essere necessario modificare i valori di timeout per far fronte alle necessità della topologia o ad altre problematiche legate all'ambiente. Per cambiare i valori di timeout, modificare il file di configurazione XML associato al controller di test o all'agente di test, come illustrato nelle procedure riportate di seguito.
 
- Per modificare le varie impostazioni del timeout di un agente di test o controller di test, modificare i seguenti file di configurazione utilizzando i nomi di chiavi e i valori riportati di seguito nelle tabelle:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Per modificare le varie impostazioni del timeout di un agente di test o controller di test, modificare i seguenti file di configurazione utilizzando i nomi di chiavi e i valori riportati di seguito nelle tabelle:
 
 -   Controller di test: *QTController.exe.config*
 

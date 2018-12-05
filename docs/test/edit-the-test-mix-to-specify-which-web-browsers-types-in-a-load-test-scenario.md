@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176762"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896471"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali tipi di Web browser includere in uno scenario di test di carico
 
 La *combinazione di browser* consente di simulare il carico in maniera più realistica in uno scenario di test di carico. Il carico viene generato usando una combinazione eterogenea di Web browser anziché un singolo Web browser. Viene quindi creata una migliore approssimazione dei Web browser che saranno usati nelle applicazioni.
 
- Una combinazione di browser consente di specificare la probabilità che un utente virtuale esegua un determinato tipo di Web browser in uno scenario di test di carico. Quando si crea un test di carico, è possibile simulare che il carico venga generato da uno o più Web browser. Quando si aggiunge un tipo di Web browser alla combinazione dal set di Web browser forniti, a ciascuna richiesta HTTP inoltrata da un test delle prestazioni Web viene aggiunto un set di intestazioni associate relative ai Web browser selezionati.
+Una combinazione di browser consente di specificare la probabilità che un utente virtuale esegua un determinato tipo di Web browser in uno scenario di test di carico. Quando si crea un test di carico, è possibile simulare che il carico venga generato da uno o più Web browser. Quando si aggiunge un tipo di Web browser alla combinazione dal set di Web browser forniti, a ciascuna richiesta HTTP inoltrata da un test delle prestazioni Web viene aggiunto un set di intestazioni associate relative ai Web browser selezionati.
 
- La combinazione di browser ha le stesse modalità di altre opzioni di combinazioni. Un tipo di Web browser viene casualmente associato a un utente virtuale, in base alla combinazione di browser. I test di tale utente vengono eseguiti in un determinato Web browser, in base alla probabilità specificata nella combinazione.
+La combinazione di browser ha le stesse modalità di altre opzioni di combinazioni. Un tipo di Web browser viene casualmente associato a un utente virtuale, in base alla combinazione di browser. I test di tale utente vengono eseguiti in un determinato Web browser, in base alla probabilità specificata nella combinazione.
 
- Una volta specificata una combinazione di browser, sarà possibile in seguito aggiungere e rimuovere tipi di Web browser dalla combinazione. È inoltre possibile cambiare la distribuzione della combinazione di browser utilizzando il controllo combinazione. Il controllo combinazione consente di regolare facilmente la distribuzione dei browser in uno scenario.
+Una volta specificata una combinazione di browser, sarà possibile in seguito aggiungere e rimuovere tipi di Web browser dalla combinazione. È inoltre possibile cambiare la distribuzione della combinazione di browser utilizzando il controllo combinazione. Il controllo combinazione consente di regolare facilmente la distribuzione dei browser in uno scenario.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Aggiungere nuovi browser a uno scenario
 

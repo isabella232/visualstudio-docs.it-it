@@ -1,5 +1,5 @@
 ---
-title: Abilitare test codificati dell'interfaccia utente per i controlli in Visual Studio
+title: Abilitare il test codificato dell'interfaccia utente per i controlli
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153563"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895951"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare test codificati dell'interfaccia utente per i controlli
 
 È utile implementare il supporto del framework dei test codificati dell'interfaccia utente per facilitare i test dei controlli. È possibile aggiungere gradualmente livelli crescenti di supporto. Iniziare supportando la registrazione, la riproduzione e la convalida delle proprietà. Partendo da queste basi, abilitare il generatore di test codificato dell'interfaccia utente per riconoscere le proprietà personalizzate dei controlli. Specificare classi personalizzate per accedere a tali proprietà dal codice generato. È anche possibile consentire al generatore di test codificati dell'interfaccia utente di acquisire le azioni nella modalità che più si avvicina di più allo scopo dell'azione registrata.
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Supportare registrazione, riproduzione e convalida delle proprietà implementando l'accessibilità
 

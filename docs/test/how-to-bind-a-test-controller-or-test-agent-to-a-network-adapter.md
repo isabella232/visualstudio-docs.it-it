@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203963"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896050"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -30,6 +30,8 @@ Se un computer con installato il software del test controller o dell'agente di t
 > **Errore 8110. Impossibile connettersi al controller specificato o accedere all'oggetto controller**
 >
 > Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete. È anche possibile installare correttamente gli agenti e non riscontrare il problema finché non si tenta di eseguire un test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Associare un controller di test a una scheda di rete specifica
 

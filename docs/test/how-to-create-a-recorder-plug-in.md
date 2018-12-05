@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909777"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895834"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
 Il plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> consente di modificare un test delle prestazioni Web registrato. La modifica avviene dopo avere scelto **Interrompi** nella barra degli strumenti di **Registrazione test prestazioni Web** ma prima che il test venga salvato e presentato nell'Editor test prestazioni Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Un plug-in di registrazione consente di eseguire una correlazione personalizzata nei parametri dinamici. Grazie alla funzionalità di correlazione incorporata, i test delle prestazioni Web sono in grado di rilevare i parametri dinamici presenti nella registrazione Web dopo il completamento oppure quando si usa l'opzione **Promuovi parametri dinamici a parametri di test Web** disponibile nella barra degli strumenti dell'**Editor test prestazioni Web**. La funzionalità di rilevamento incorporata non è tuttavia sempre in grado di trovare tutti i parametri dinamici. Non troverebbe ad esempio un ID sessione, il cui valore viene in genere modificato ogni 5 - 30 minuti. Il processo di correlazione andrà pertanto eseguito manualmente.
 

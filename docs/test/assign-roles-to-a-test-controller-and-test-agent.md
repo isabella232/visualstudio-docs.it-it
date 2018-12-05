@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370731"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895340"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
 Questa procedura dettagliata descrive come creare e configurare un'impostazione test in cui vengono usati un controller di test e agenti di test per distribuire i test a diversi computer usando Visual Studio. Viene inoltre descritto come aggiungere adattatori dati e diagnostici all'impostazione di test.
 
-In questa procedura dettagliata, si completeranno le attività seguenti:
-
--   Creare un'impostazione di test.
-
--   Assegnare ruoli a un test controller e agli agenti di test.
-
--   Assegnare un adattatore dati e un adattatore diagnostico all'impostazione di test.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
 
