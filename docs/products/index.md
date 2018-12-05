@@ -5,12 +5,12 @@ title: Documentazione di Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
-ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52712880"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821357"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -160,6 +160,6 @@ ms.locfileid: "52712880"
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services è stato rinominato Azure DevOps Services e Team Foundation Server (TFS) è stato rinominato Azure DevOps Server. Vedere <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a> (Dove è finito Visual Studio Team Services?) e <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a> (Team Foundation Server è ora Azure DevOps Server).</p>
+        <p>Visual Studio Team Services è stato sostituito da Azure DevOps Services e Team Foundation Server (TFS) è stato rinominato Azure DevOps Server. Vedere <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a> (Dove è finito Visual Studio Team Services?) e <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a> (Team Foundation Server è ora Azure DevOps Server).</p>
     </div>
 </div>

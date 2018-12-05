@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257368"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821370"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -244,7 +244,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     ![Errore di sintassi](../debugger/media/beginners-no-definition.png)
 
-    Anche se ogni galassia è stata impostata con un oggetto di tipo `GType` (che include la proprietà `MGType`), il debugger non riconosce l'oggetto `theGalaxy` come oggetto di tipo `GType`. Cosa è successo? Esaminare tutto il codice che imposta il tipo di galassia. Durante questa operazione, si noterà che la classe `GType` include certamente una proprietà `MyGType`, ma qualcosa non va. Il messaggio di errore relativo a `object` è l'indizio; per l'interprete del linguaggio, il tipo è un oggetto di tipo `object` anziché un oggetto di tipo `GType`.
+    Anche se ogni galassia è stata impostata con un oggetto di tipo `GType` (che include la proprietà `MyGType`), il debugger non riconosce l'oggetto `theGalaxy` come oggetto di tipo `GType`. Cosa è successo? Esaminare tutto il codice che imposta il tipo di galassia. Durante questa operazione, si noterà che la classe `GType` include certamente una proprietà `MyGType`, ma qualcosa non va. Il messaggio di errore relativo a `object` è l'indizio; per l'interprete del linguaggio, il tipo è un oggetto di tipo `object` anziché un oggetto di tipo `GType`.
 
 1. Esaminando il codice relativo all'impostazione del tipo di galassia, si nota che la proprietà `GalaxyType` della classe `Galaxy` è specificata come `object` invece di `GType`.
 

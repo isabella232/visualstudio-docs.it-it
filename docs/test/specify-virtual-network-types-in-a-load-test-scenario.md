@@ -1,5 +1,5 @@
 ---
-title: Specifica dei tipi di rete virtuale in uno scenario di test di carico in Visual Studio
+title: Specifica dei tipi di rete virtuale in uno scenario di test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380228"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894677"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Specificare i tipi di rete virtuale in uno scenario di test di carico
 
 La *combinazione di reti* consente di simulare il carico in maniera più realistica in uno scenario di test di carico. Il carico viene generato usando una combinazione di reti eterogenea anziché un solo tipo di rete. Viene creata una maggiore approssimazione dell'interazione degli utenti finali con le applicazioni.
 
- Una combinazione di reti consente di specificare le probabilità che un utente virtuale esegua un determinato *profilo di rete*. Un profilo di rete è una simulazione di larghezza della banda della rete a livello dell'applicazione. Non viene simulata la latenza.
+Una combinazione di reti consente di specificare le probabilità che un utente virtuale esegua un determinato *profilo di rete*. Un profilo di rete è una simulazione di larghezza della banda della rete a livello dell'applicazione. Non viene simulata la latenza.
 
- Quando si crea un test di carico, è possibile simulare che il carico viene generato da uno o più tipi di connessione di reti. La combinazione di reti offre diversi tipi di rete. Le diverse reti sono simulate. Quando si sceglie un'opzione, ad esempio `Cable-DSL 1.5Mbps`, i tempi di attesa vengono inseriti nel test per simulare la larghezza di banda selezionata.
+Quando si crea un test di carico, è possibile simulare che il carico viene generato da uno o più tipi di connessione di reti. La combinazione di reti offre diversi tipi di rete. Le diverse reti sono simulate. Quando si sceglie un'opzione, ad esempio `Cable-DSL 1.5Mbps`, i tempi di attesa vengono inseriti nel test per simulare la larghezza di banda selezionata.
 
- La combinazione di reti ha le stesse modalità di altre opzioni di combinazioni. Un tipo di rete viene selezionato a caso e associato a un utente virtuale, in base alla combinazione di reti. I test di quell'utente vengono eseguiti utilizzando un determinato tipo di rete, in base alla probabilità specificata nella combinazione.
+La combinazione di reti ha le stesse modalità di altre opzioni di combinazioni. Un tipo di rete viene selezionato a caso e associato a un utente virtuale, in base alla combinazione di reti. I test di quell'utente vengono eseguiti utilizzando un determinato tipo di rete, in base alla probabilità specificata nella combinazione.
 
- Una volta specificata una combinazione di reti, sarà possibile aggiungere e rimuovere tipi di rete. È inoltre possibile cambiare la distribuzione della combinazione di reti utilizzando il controllo combinazione.
+Una volta specificata una combinazione di reti, sarà possibile aggiungere e rimuovere tipi di rete. È inoltre possibile cambiare la distribuzione della combinazione di reti utilizzando il controllo combinazione.
 
- Con il controllo combinazione è possibile regolare facilmente la distribuzione delle reti in uno scenario.
+Con il controllo combinazione è possibile regolare facilmente la distribuzione delle reti in uno scenario.
 
- Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Emulazione di rete reale
 
- Visual Studio usa l'emulazione di rete reale basata sul software per tutti i tipi di test, inclusi i test di carico. L'emulazione di rete reale simula le condizioni della rete tramite manipolazione diretta dei pacchetti di rete. L'emulatore di rete reale è in grado di emulare il comportamento di reti cablate e wireless tramite un collegamento fisico affidabile, ad esempio un cavo Ethernet. Gli attributi di rete seguenti sono incorporati nell'emulazione di rete reale:
+Visual Studio usa l'emulazione di rete reale basata sul software per tutti i tipi di test, inclusi i test di carico. L'emulazione di rete reale simula le condizioni della rete tramite manipolazione diretta dei pacchetti di rete. L'emulatore di rete reale è in grado di emulare il comportamento di reti cablate e wireless tramite un collegamento fisico affidabile, ad esempio un cavo Ethernet. Gli attributi di rete seguenti sono incorporati nell'emulazione di rete reale:
 
 -   Tempo di round trip nella rete (latenza)
 

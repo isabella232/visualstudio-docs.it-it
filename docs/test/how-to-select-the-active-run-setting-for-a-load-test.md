@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381911"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895327"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione di esecuzione test attiva per un test di carico
 
 Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 In un test di carico possono essere contenute una o più *impostazioni esecuzione test*, ovvero un set di proprietà che determinano la modalità di esecuzione del test di carico. Sono organizzate in categorie nella finestra **Proprietà**. Quando si esegue un test di carico, viene utilizzata l'impostazione esecuzione test impostata correntemente come attiva.
 
@@ -31,8 +33,6 @@ Se il test di carico contiene solo un nodo di impostazioni di esecuzione nella c
 Nell'**Editor test di carico** l'impostazione di esecuzione attiva è identificata dal suffisso "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Selezionare l'impostazione di esecuzione attiva
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Per selezionare l'impostazione di esecuzione test attiva in un test di carico
 
 1.  Aprire un test di carico.
 

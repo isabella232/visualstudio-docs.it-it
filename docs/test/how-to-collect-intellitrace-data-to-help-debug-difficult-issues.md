@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321151"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894638"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 
 È possibile configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia diagnostica specifiche in Visual Studio. Questo adattatore può essere utilizzato nei test per raccogliere eventi di diagnostica significativi per l'applicazione, che uno sviluppatore può utilizzare successivamente per la traccia del codice allo scopo di individuare la causa di un bug. L'adattatore dati di diagnostica per IntelliTrace può essere utilizzato per i test manuali o per quelli automatizzati.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > IntelliTrace funziona solo in un'applicazione scritta utilizzando codice gestito. Se si esegue il test di un'applicazione Web in cui viene utilizzato un browser come client, non è necessario abilitare IntelliTrace per il client nelle impostazioni di test in quanto non è disponibile codice gestito da tracciare. In questo caso, è possibile configurare un ambiente e raccogliere dati IntelliTrace in modalità remota nel server Web.
@@ -32,7 +34,7 @@ I dati di IntelliTrace vengono archiviati in un file con estensione *.iTrace*. Q
 > [!NOTE]
 > L'adattatore dati di diagnostica per IntelliTrace non crea un file di IntelliTrace per passi del test con esito positivo. Il file viene salvato solo in caso di errore del test case o quando si invia un bug.
 
- I dati raccolti nel file di IntelliTrace consentono di migliorare la produttività del debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Dal momento che è possibile condividere il file di IntelliTrace con altri utenti affinché possano riprodurre la sessione locale nei propri computer, si riducono le probabilità che un bug risulti non riproducibile.
+I dati raccolti nel file di IntelliTrace consentono di migliorare la produttività del debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Dal momento che è possibile condividere il file di IntelliTrace con altri utenti affinché possano riprodurre la sessione locale nei propri computer, si riducono le probabilità che un bug risulti non riproducibile.
 
 > [!NOTE]
 > Se si abilita IntelliTrace nelle impostazioni di test, raccolta di dati di code coverage non funzionerà.
@@ -40,7 +42,7 @@ I dati di IntelliTrace vengono archiviati in un file con estensione *.iTrace*. Q
 > [!WARNING]
 > L'adattatore dati di diagnostica per IntelliTrace funziona tramite strumentazione di un processo gestito, che deve essere eseguito dopo il caricamento dei test per l'esecuzione dei test. Se il processo che si desidera monitorare è già stato avviato, non verrà raccolto alcun file di IntelliTrace perché il processo è già in esecuzione. Per ovviare a questo inconveniente, assicurarsi che il processo venga arrestato prima del caricamento dei test. Quindi, una volta caricati i test o avviato il primo test, avviare il processo.
 
- Nella procedura seguente viene descritto come configurare i dati IntelliTrace che si desidera raccogliere. La procedura è valida sia per l'editor di configurazione in Microsoft Test Manager che per la finestra di dialogo Impostazioni test in Visual Studio.
+Nella procedura seguente viene descritto come configurare i dati IntelliTrace che si desidera raccogliere. La procedura è valida sia per l'editor di configurazione in Microsoft Test Manager che per la finestra di dialogo Impostazioni test in Visual Studio.
 
 > [!NOTE]
 > L'account utente per l'agente di test utilizzato per raccogliere dati IntelliTrace deve essere un membro del gruppo Administrators. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
@@ -101,7 +103,7 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 11. (Facoltativo) Scegliere la scheda **Avanzate**. Scegliere quindi la freccia accanto a **Quantità massima di spazio su disco per ogni registrazione** e selezionare la dimensione massima utilizzabile dal file IntelliTrace.
 
     > [!NOTE]
-    > Se si aumenta la dimensione della registrazione, si potrebbe verificare un problema di timeout quando si salva la registrazione con i risultati test. Per altre informazioni su come aumentare i valori di timeout per gli adattatori dati di diagnostica, vedere [Procedura: Impedire i timeout per gli adattatori dati di diagnostica](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Se si aumenta la dimensione della registrazione, si potrebbe verificare un problema di timeout quando si salva la registrazione con i risultati test.
 
 12. Se si usa Microsoft Test Manager, scegliere **Salva**. Se si usa Visual Studio, scegliere **OK**. Le impostazioni di IntelliTrace saranno quindi configurate e salvate per le impostazioni di test.
 
