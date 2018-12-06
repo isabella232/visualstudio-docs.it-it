@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826791"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621643"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Controllare le variabili con finestre Espressioni di controllo e controllo immediato 
 
 Durante il debug, è possibile usare **Watch** windows e **controllo immediato** per controllare variabili ed espressioni. Le finestre sono disponibili solo durante una sessione di debug.
 
 **Espressioni di controllo** windows può visualizzare più variabili in un momento durante il debug. Il **controllo immediato** finestra di dialogo Visualizza una singola variabile alla volta e deve essere chiuso prima di proseguire con il debug.
+
+Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Osservare le variabili con una finestra Espressioni di controllo
 
@@ -142,11 +144,11 @@ Solo una volta, quando si immette lo prima di tutto, viene valutata un'espressio
 
 Un modo per impedire la designazione di effetti collaterali consiste nel disattivare la valutazione automatica della funzione. Nelle **degli strumenti** > **opzioni** > **debug** > **generale**, deselezionare **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**.
 
-Per C# , solo quando la valutazione delle proprietà o chiamate di funzione implicite è disattivata, è possibile imporla aggiungendo il **ac** modificatore di formato a una variabile **nome** nel **espressioni di controllo**  finestra. Visualizzare [Format specifiers in c#](../debugger/format-specifiers-in-csharp.md).
+Per C# , solo quando la valutazione delle proprietà o chiamate di funzione implicite è disattivata, è possibile imporla aggiungendo il **ac** modificatore di formato a una variabile **nome** nel **espressioni di controllo**  finestra. Vedere [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md).
 
 ## <a name="bkmk_objectIds"></a> Usare gli ID oggetto nella finestra Espressioni di controllo (C# e Visual Basic)
 
-A volte si vuole osservare il comportamento di un oggetto specifico. Ad esempio, è possibile tenere traccia di un oggetto a cui fa riferimento una variabile locale dopo la variabile esce dall'ambito. In C# e Visual Basic, è possibile creare ID oggetto per istanze specifiche dei tipi di riferimento e usarle nel **Watch** finestra e nelle condizioni punto di interruzione. L'ID oggetto viene generato da servizi di debug di common language runtime (CLR) e associato all'oggetto.
+A volte si vuole osservare il comportamento di un oggetto specifico. Ad esempio, è possibile tenere traccia di un oggetto a cui fa riferimento una variabile locale dopo la variabile esce dall'ambito. In C# e Visual Basic è possibile creare ID oggetto per istanze specifiche dei tipi di riferimento e usarle nella finestra **Espressioni di controllo** e nelle condizioni del punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.
 
 > [!NOTE]
 > ID oggetto creano riferimenti deboli che non impediscano l'oggetto venga sottoposto a garbage collection. Sono validi solo per la sessione di debug corrente.
@@ -217,7 +219,7 @@ Per aggiornare **visualizzazione dinamica** valori, selezionare la [icona di agg
 
 Per visualizzare solo le **visualizzazione dinamica** per un oggetto, aggiungere un **dinamica** identificatore di formato dopo il nome dell'oggetto dinamico nel **Watch** finestra:
 
-- Per c#: `ObjectName, dynamic`
+- Per C#: `ObjectName, dynamic`
 - Per Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
@@ -278,6 +280,6 @@ Per osservare il `a` variabile,
 1. Continuare il debug. È possibile osservare la variabile nel **Watch** finestra.
 
 ## <a name="see-also"></a>Vedere anche
- [Ciò che sta eseguendo il debug?](../debugger/what-is-debugging.md)  
- [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Che cos'è il debug?](../debugger/what-is-debugging.md)  
+ [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)  
  [Presentazione di debug](../debugger/debugger-feature-tour.md) [finestre del Debugger](../debugger/debugger-windows.md)

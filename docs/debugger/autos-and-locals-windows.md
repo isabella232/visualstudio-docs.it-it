@@ -16,24 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388517"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621471"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
 
-Il **Auto** e **variabili locali** finestre mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. Il **Auto** finestra Mostra le variabili usate attorno al punto di interruzione corrente. Il **variabili locali** finestra Mostra le variabili definite nell'ambito locale, ovvero in genere la funzione corrente o il metodo. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
+Il **Auto** e **variabili locali** finestre mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. Il **Auto** finestra Mostra le variabili usate attorno al punto di interruzione corrente. Il **variabili locali** finestra Mostra le variabili definite nell'ambito locale, ovvero in genere la funzione corrente o il metodo. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
  Il **Auto** è disponibile per la finestra C#, codice di Visual Basic, C++ e Python, ma non per JavaScript o F#.
   
 Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**, oppure premere **Ctrl**+**Alt**+**V** > **A**.  
 
 Per aprire la **variabili locali** finestra durante il debug, selezionare **Debug** > **Windows** > **variabili locali**, oppure premere **Alt**+**4**.
-
-Per altre informazioni sul debug di base, vedere [Introduzione al debugger](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
@@ -153,5 +151,5 @@ Per visualizzare i valori restituiti di `sumVars()` e `subtractVars()` chiamate 
   
 ## <a name="see-also"></a>Vedere anche  
  [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)  
  [Presentazione di debug](../debugger/debugger-feature-tour.md) [finestre del Debugger](../debugger/debugger-windows.md)
