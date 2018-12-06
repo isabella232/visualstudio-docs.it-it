@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826740"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621526"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger di Visual Studio
 
-Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
+Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
   
 ## <a name="basic-debugging"></a>Debug di base  
 
 Per avviare l'app con il debugger collegato, premere **F5**, selezionare **Debug** > **Avvia debug**, oppure selezionare la freccia verde sulla barra degli strumenti di Visual Studio.  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;nozioni di base&#95;Start&#95;debug](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 Durante il debug, evidenziato in giallo indica la riga di codice che eseguirà successivo.  
   
@@ -41,7 +41,7 @@ Più finestre del debugger, ad esempio la **moduli** e **Watch** windows, sono d
 
 In modalità di interruzione, l'esecuzione di app viene sospesa durante le funzioni, variabili e oggetti restano in memoria. È possibile esaminare la posizione degli elementi e gli stati per individuare le violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'app in modalità di interruzione. Per un video che illustra queste funzionalità, vedere [Guida introduttiva con il Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Se si interrompe nel codice che non dispone di origine o simboli (*PDB*) i file caricati, il debugger visualizza una **file di origine non trovati** o **simboli non trovati** pagina che può aiutarti Individuare e caricare i file. Visualizzare [specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile caricare i file di simboli o di origine, è possibile comunque eseguire il debug le istruzioni dell'assembly nel **Disassembly** finestra. 
+Se si interrompe nel codice che non dispone di origine o simboli (*PDB*) i file caricati, il debugger visualizza una **file di origine non trovati** o **simboli non trovati** pagina che può aiutarti Individuare e caricare i file. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile caricare i file di simboli o di origine, è possibile comunque eseguire il debug le istruzioni dell'assembly nel **Disassembly** finestra. 
 
 Non sempre è necessario avviare il debug eseguendo l'avvio di un'app all'inizio. È anche possibile premere **F11** al [istruzioni nel codice](#BKMK_Step_into__over__or_out_of_the_code), premere **F10** al [Esegui istruzione/routine di codice](#BKMK_Step_over_Step_out), o [eseguiti in un percorso specifico o funzione](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).    
 
@@ -55,7 +55,7 @@ Se è necessario trovare il punto di ingresso nell'app, iniziare con **F10** opp
 
 Per arrestare in ogni riga del codice o dell'istruzione durante il debug, usare **Debug** > **Esegui istruzione**, oppure premere **F11**.  
 
-Il debugger avanza tramite le istruzioni di codice, le righe non fisiche. Ad esempio, un `if` clausola può essere scritto in una sola riga:  
+Il debugger avanza tramite le istruzioni di codice, le righe non fisiche. Ad esempio, una clausola `if` può essere scritta in una riga:  
   
   ```csharp  
   int x = 42;  
@@ -93,13 +93,13 @@ Potrebbe non rilevante una funzione durante il debug o si conosce funziona, come
   
 Per impostare un punto di interruzione semplice nel codice, fare clic sul margine a sinistra accanto alla riga di codice in cui si desidera sospendere l'esecuzione. È anche possibile selezionare la riga e premere **F9**, selezionare **Debug** > **Attiva/Disattiva punto di interruzione**, o fare doppio clic e selezionare **puntodiinterruzione**  >  **Inserisci punto di interruzione**. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro accanto alla riga di codice. Il debugger sospende l'esecuzione prima dell'esecuzione di riga.
   
-![Impostare un punto di interruzione](../debugger/media/dbg_basics_setbreakpoint.png "impostare un punto di interruzione")  
+![Impostare un punto di interruzione](../debugger/media/dbg_basics_setbreakpoint.png "Impostare un punto di interruzione")  
   
 I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionalità aggiuntive, ad esempio punti di interruzione e punti di analisi condizionali. Per informazioni dettagliate, vedere [usando i punti di interruzione](../debugger/using-breakpoints.md).  
   
 ### <a name="run-to-a-function-breakpoint"></a>Eseguire un punto di interruzione (funzione)  
 
-È possibile impostare il debugger per l'esecuzione finché non raggiunge una funzione specificata. È possibile specificare la funzione in base al nome oppure è possibile sceglierlo dallo stack di chiamate.  
+È possibile impostare il debugger per l'esecuzione finché non raggiunge una funzione specificata. È possibile specificare la funzione inserendo il nome oppure sceglierla dallo stack di chiamate.  
   
 **Per specificare il nome di un punto di interruzione (funzione)**
 
@@ -131,7 +131,7 @@ Per l'esecuzione alla posizione del cursore, nel codice sorgente o il **Stack di
 
 Durante la pausa del debugger, è possibile posizionarsi su un'istruzione nel codice sorgente o il **Disassembly** finestra e selezionare il **esecuzione qui** icona della freccia verde. Usando **Esegui fino al clic** Elimina la necessità di impostare un punto di interruzione temporaneo.
 
-![Esegui fino al clic](../debugger/media/dbg-run-to-click.png "eseguire fa clic su") 
+![Esegui fino alla riga selezionata](../debugger/media/dbg-run-to-click.png "Esegui fino alla riga selezionata") 
 
 > [!NOTE]
 > **Esegui fino al clic** sono le novità [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -183,9 +183,9 @@ Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e l
 1. Nel **moduli** finestra, è possibile indicare che i moduli disponibili simboli caricati nel **stato simboli** colonna. Fare clic sul modulo che si desidera caricare i simboli e selezionare **caricare i simboli**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito  
- Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di operatori o proprietà, scegliere **Debug** > **opzioni**. Nel **Debugging** > **generali** pagina, deseleziona il **Esegui istruzione/routine di proprietà e operatori (solo gestito)** casella di controllo.
+ Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di operatori o proprietà, scegliere **Debug** > **opzioni**. Nella pagina **Debug** > **Generale** deselezionare la casella di controllo **Esegui istruzione/routine di proprietà e operatori (solo gestito)**.
 
 ## <a name="see-also"></a>Vedere anche
- [Ciò che sta eseguendo il debug?](../debugger/what-is-debugging.md)  
- [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Che cos'è il debug?](../debugger/what-is-debugging.md)  
+ [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)  
  [Presentazione di debug](../debugger/debugger-feature-tour.md) 

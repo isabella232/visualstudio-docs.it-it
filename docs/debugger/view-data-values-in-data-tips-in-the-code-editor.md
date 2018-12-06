@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388160"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621539"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice
 
-I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nell'app durante il debug. 
+I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
 Se si tratta di debug per la prima volta, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di leggere questo articolo.
   
@@ -127,8 +127,8 @@ La variabile viene visualizzata nel **Watch** finestra. Se l'edizione di Visual 
 
 ## <a name="see-also"></a>Vedere anche  
  [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Presentazione di debug](../debugger/debugger-feature-tour.md)   
- [Visualizzare i dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)  
+ [Presentazione di debug](../debugger/debugger-feature-tour.md) [visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)   
- [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+
