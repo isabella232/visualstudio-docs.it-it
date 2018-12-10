@@ -1,20 +1,21 @@
 ---
 layout: LandingPage
-title: Profilatura delle app con Visual Studio | Microsoft Docs
+title: Misurazione delle prestazioni delle app tramite la profilatura | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267686"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065545"
 ---
-# <a name="profiling-in-visual-studio"></a>Profilatura in Visual Studio
+# <a name="measure-app-performance-in-visual-studio"></a>Misurare le prestazioni delle app in Visual Studio
 
 Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizzo della memoria e della CPU e altri problemi a livello di applicazione. Con questi strumenti è possibile accumulare i dati, ad esempio i valori delle variabili, le chiamate di funzione e gli eventi, in base al tempo di esecuzione dell'applicazione nel debugger. È possibile visualizzare lo stato dell'applicazione in punti diversi durante l'esecuzione del codice. 
 
