@@ -1,16 +1,17 @@
 ---
 layout: HubPage
-title: Documentazione sugli strumenti di sviluppo contenitori
+title: Documentazione sugli strumenti di sviluppo contenitori Docker
 description: Informazioni su come compilare e gestire app e servizi basati su contenitori. Ottenere la documentazione, il codice di esempio, le esercitazioni e altro ancora.
 ms.topic: hub-page
+ms.custom: seodec18
 featureFlags:
 - clicktale
-ms.openlocfilehash: fceea4bbdd3f0964c95cd5d94a3b6a1fbe78c1bc
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: a8d4f46c733ba9518a1c53d83e676ff955b59b71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000191"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067233"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -134,7 +135,7 @@ ms.locfileid: "51000191"
                                                 <div class="cardText">
                                                     <h3>Altri siti</h3>
                                                     <ul class="noBullet">
-                                                        <li><a class="barLink" href="http://wwww.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Docker per Windows</a></li>
+                                                        <li><a class="barLink" href="http://www.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Docker per Windows</a></li>
                                                         <li><a class="barLink" href="https://kubernetes.io"><img src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" alt="">Kubernetes</a></li>
                                                         <li><a class="barLink" href="https://helm.sh"><img src="media/helm-logo.png" alt="">Helm</a></li>
                                                     </ul>
