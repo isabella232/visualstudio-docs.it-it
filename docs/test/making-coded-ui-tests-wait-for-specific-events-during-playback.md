@@ -1,5 +1,5 @@
 ---
-title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici in Visual Studio
+title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295124"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894768"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
 Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A tale scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato, come descritto nella tabella seguente. Per un esempio di test codificato dell'interfaccia utente in cui si attende che un controllo venga abilitato usando il metodo <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vedere [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requisiti**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Requisiti**
+
+Visual Studio Enterprise
 
 > [!TIP]
 > È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**Metodi UITestControl.WaitForControlXXX()**
 
- **Metodi UITestControl.WaitForControlXXX()**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Attende che il controllo sia pronto ad accettare l'input di tastiera e mouse. Il motore chiama in modo implicito questa API per tutte le azioni, in modo da attendere che il controllo sia pronto prima di eseguire qualsiasi operazione. Tuttavia, in scenari particolari, potrebbe essere necessaria una chiamata esplicita.
 
- Attende che il controllo sia pronto ad accettare l'input di tastiera e mouse. Il motore chiama in modo implicito questa API per tutte le azioni, in modo da attendere che il controllo sia pronto prima di eseguire qualsiasi operazione. Tuttavia, in scenari particolari, potrebbe essere necessaria una chiamata esplicita.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Attende che il controllo venga abilitato quando la procedura guidata esegue una convalida asincrona dell'input effettuando chiamate al server. Ad esempio, è possibile fare in modo che un metodo attenda che il pulsante **Next** della procedura guidata venga abilitato (). Per un esempio di questo metodo, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Attende che il controllo venga abilitato quando la procedura guidata esegue una convalida asincrona dell'input effettuando chiamate al server. Ad esempio, è possibile fare in modo che un metodo attenda che il pulsante **Next** della procedura guidata venga abilitato (). Per un esempio di questo metodo, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Attende che il controllo venga visualizzato nell'interfaccia utente. Ad esempio, è prevista una finestra di dialogo di errore dopo che l'applicazione ha eseguito la convalida dei parametri. Il tempo impiegato per la convalida è variabile. È possibile usare questo metodo per attendere la finestra di dialogo di errore.
 
- Attende che il controllo venga visualizzato nell'interfaccia utente. Ad esempio, è prevista una finestra di dialogo di errore dopo che l'applicazione ha eseguito la convalida dei parametri. Il tempo impiegato per la convalida è variabile. È possibile usare questo metodo per attendere la finestra di dialogo di errore.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Attende che il controllo venga rimosso dall'interfaccia utente. Ad esempio, è possibile attendere che l'indicatore di stato venga rimosso.
 
- Attende che il controllo venga rimosso dall'interfaccia utente. Ad esempio, è possibile attendere che l'indicatore di stato venga rimosso.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Attende che alla proprietà specificata del controllo venga assegnato il valore indicato. Ad esempio, si attende che il testo dello stato diventi **Done**.
 
- Attende che alla proprietà specificata del controllo venga assegnato il valore indicato. Ad esempio, si attende che il testo dello stato diventi **Done**.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Attende che alla proprietà specificata del controllo venga assegnato il valore contrario a quello specificato. Ad esempio, si attende che la casella di modifica sia non di sola lettura, ovvero sia modificabile.
 
- Attende che alla proprietà specificata del controllo venga assegnato il valore contrario a quello specificato. Ad esempio, si attende che la casella di modifica sia non di sola lettura, ovvero sia modificabile.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Attende che il predicato specificato restituisca `true`. Può essere usato per un'operazione di attesa complessa (ad esempio, una condizione OR) su un determinato controllo. Ad esempio, è possibile attendere finché il testo dello stato non diventa **Succeeded** o **Failed**, come mostrato nel codice seguente:
+Attende che il predicato specificato restituisca `true`. Può essere usato per un'operazione di attesa complessa (ad esempio, una condizione OR) su un determinato controllo. Ad esempio, è possibile attendere finché il testo dello stato non diventa **Succeeded** o **Failed**, come mostrato nel codice seguente:
 
 ```csharp
 

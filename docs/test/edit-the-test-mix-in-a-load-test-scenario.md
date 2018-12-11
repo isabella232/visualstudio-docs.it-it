@@ -1,5 +1,5 @@
 ---
-title: Combinazione di test per uno scenario di test di carico in Visual Studio
+title: Combinazione di test per uno scenario di test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179515"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895990"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 
 La *combinazione di test* di uno scenario è una combinazione della selezione di test delle prestazioni Web e unit test contenuti nello scenario e della distribuzione di questi test nello scenario. La distribuzione è un'impostazione che è possibile specificare in relazione alla probabilità che un determinato test venga selezionato da un utente virtuale durante l'esecuzione di un test di carico.
 
- Dopo che un set di test è stato aggiunto a un test di carico, la *combinazione di test* ha le stesse modalità di altre opzioni di combinazione. Un utente virtuale seleziona casualmente un test in base alla probabilità specificata nella combinazione. Se, ad esempio, sono disponibili due test, ognuno con un valore del 50% nella combinazione, un nuovo utente virtuale sceglierà di eseguire il primo test circa metà delle volte. In una combinazione 50/50, se un test è lungo e l'altro è corto, il carico maggiore sarà prodotto dal test più lungo.
+Dopo che un set di test è stato aggiunto a un test di carico, la *combinazione di test* ha le stesse modalità di altre opzioni di combinazione. Un utente virtuale seleziona casualmente un test in base alla probabilità specificata nella combinazione. Se, ad esempio, sono disponibili due test, ognuno con un valore del 50% nella combinazione, un nuovo utente virtuale sceglierà di eseguire il primo test circa metà delle volte. In una combinazione 50/50, se un test è lungo e l'altro è corto, il carico maggiore sarà prodotto dal test più lungo.
 
- Dopo aver aggiunto test alla combinazione, è possibile rimuoverli. È inoltre possibile modificare la distribuzione della combinazione di test utilizzando il controllo combinazione. Il controllo combinazione consente di regolare facilmente la distribuzione dei test in uno scenario.
+Dopo aver aggiunto test alla combinazione, è possibile rimuoverli. È inoltre possibile modificare la distribuzione della combinazione di test utilizzando il controllo combinazione. Il controllo combinazione consente di regolare facilmente la distribuzione dei test in uno scenario.
 
 > [!NOTE]
 > La distribuzione è una misura della probabilità che un determinato test sarà selezionato da un utente virtuale durante l'esecuzione di un test di carico. La distribuzione viene espressa sotto forma di percentuale. Pertanto, la somma dei numeri della distribuzione per tutti i test contenuti in uno scenario è pari a 100. Se ad esempio uno scenario contiene un solo test, la distribuzione per quel test è 100%.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Aggiungere nuovi test a una combinazione di test in uno scenario esistente
 

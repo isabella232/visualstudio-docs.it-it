@@ -1,5 +1,5 @@
 ---
-title: Tempi di interazione utente per i test di carico in Visual Studio
+title: Tempi di interazione utente per i test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 236b6dffa3885928b48b7d6ea044f2494e7d7b28
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175982"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895912"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificare i tempi di interazione utente per simulare i ritardi di interazione umana con i siti Web in scenari di test di carico
 
 Il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test Web e tra le interazioni test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate. È possibile scegliere se i tempi interazione utente devono essere usati o ignorati nei test di carico. Scegliere se usare i tempi interazione utente nei test di carico nell'**Editor test di carico**.
 
- Il *profilo interazione utente* è un'impostazione che si applica a uno scenario in un test di carico. L'impostazione determina se i tempi interazione utente salvati nei singoli test Web vengono usati durante il test di carico. Se si vuole usare i tempi interazione utente in alcuni test Web ma non in altri, è necessario inserirli in scenari diversi. Per altre informazioni sugli scenari, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md).
+Il *profilo interazione utente* è un'impostazione che si applica a uno scenario in un test di carico. L'impostazione determina se i tempi interazione utente salvati nei singoli test Web vengono usati durante il test di carico. Se si vuole usare i tempi interazione utente in alcuni test Web ma non in altri, è necessario inserirli in scenari diversi. Per altre informazioni sugli scenari, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md).
 
- Inizialmente, è necessario scegliere se usare i tempi di interazione utente nei test di carico quando si crea il test di carico con la **Creazione guidata test di carico**. Per altre informazioni, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md).
+Inizialmente, è necessario scegliere se usare i tempi di interazione utente nei test di carico quando si crea il test di carico con la **Creazione guidata test di carico**. Per altre informazioni, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md).
 
- Le opzioni del profilo **interazione utente** sono descritte nell'elenco seguente:
+Le opzioni del profilo **interazione utente** sono descritte nell'elenco seguente:
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 

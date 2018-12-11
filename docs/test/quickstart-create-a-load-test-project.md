@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: f2e0f06eddee4acd500e6bf4a8094dde4efc0d14
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320956"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896289"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
 In questa Guida introduttiva di 10 minuti si apprenderà come creare ed eseguire un progetto di test di carico e prestazioni Web in Visual Studio. I test di carico eseguono prestazioni Web o unit test per simulare l'accesso di molti utenti a un server nello stesso momento.
 
-> [!IMPORTANT]
-> I progetti di test di carico e prestazioni Web sono disponibili solo nell'edizione Enterprise di Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>Requisiti software
+
+I progetti di test di carico e prestazioni Web sono disponibili solo nell'edizione Enterprise di Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Installare il componente di test di carico
 

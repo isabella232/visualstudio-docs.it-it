@@ -1,5 +1,5 @@
 ---
-title: Testare applicazioni SharePoint con test codificati dell'interfaccia utente in Visual Studio
+title: Testare applicazioni SharePoint con test codificati dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379712"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895444"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testare applicazioni SharePoint con test codificati dell'interfaccia utente
 
 Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoint è possibile verificare che l'intera applicazione, inclusi i controlli per l'interfaccia utente, siano correttamente funzionanti. I test codificati dell'interfaccia utente possono inoltre convalidare i valori e la logica dell'interfaccia utente.
 
 Per altre informazioni sui vantaggi derivanti dall'uso di test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Requisiti**
 

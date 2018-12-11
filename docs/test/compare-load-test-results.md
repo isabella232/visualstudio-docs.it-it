@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834285"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895028"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze
 
-È possibile generare report del test di carico di Microsoft Excel basati su due o più risultati del test. Sono disponibili due tipi di report del test di carico:
+È possibile generare report del test di carico di Microsoft Excel basati su due o più risultati del test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Sono disponibili due tipi di report del test di carico:
 
 - Esegui confronto&mdash;questo report è in realtà costituito da due report in cui sono visualizzati dati di confronto affiancati usando tabelle e grafici a barre.
 
@@ -33,7 +37,7 @@ Le definizioni del report vengono archiviate nel database del test di carico. Qu
 Inoltre, il file del foglio di calcolo può essere condiviso con gli stakeholder in modo che questi non debbano connettersi al database per vedere il rapporto.
 
 > [!NOTE]
-> Se si aggiungono commenti a un test di carico, verranno visualizzati nel report di Excel. Per altre informazioni, vedere [Procedura: Aggiungere commenti mentre si analizza un test di carico completato](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Se si aggiungono commenti a un test di carico, vengono visualizzati nel report di Excel.
 
 ## <a name="tasks"></a>Attività
 

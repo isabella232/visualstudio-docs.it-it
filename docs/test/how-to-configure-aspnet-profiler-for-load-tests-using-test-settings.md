@@ -10,19 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379806"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895197"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test in Visual Studio
 
 È possibile usare l'adattatore dati di diagnostica del profiler ASP.NET per raccogliere le informazioni sul profiler ASP.NET. Questo adattatore dati di diagnostica consente di raccogliere dati relativi alle prestazioni per le applicazioni ASP.NET.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
-> Questo adattatore dati di diagnostica non può essere usato per test eseguiti usando Microsoft Test Manager. È possibile usare l'adattatore di diagnostica del profiler ASP.NET con test di carico usando solo siti Web che richiedono Visual Studio Enterprise.
+> Questo adattatore dati di diagnostica non può essere usato per test eseguiti usando Microsoft Test Manager. È possibile usare l'adattatore di diagnostica del profiler ASP.NET con test di carico usando solo siti Web, che richiedono Visual Studio Enterprise.
 
 L'adattatore dati di diagnostica del profiler ASP.NET consente di raccogliere i dati del profiler ASP.NET dal livello applicazione quando si esegue un test di carico. Non è consigliabile eseguire il profiler per test di carico lunghi, ad esempio test di carico eseguiti per più di un'ora, in quanto le dimensioni del file del profiler possono aumentare anche fino a raggiungere centinaia di megabyte. Eseguire, al contrario, i test di carico più brevi tramite il profiler ASP.NET che offrirà comunque il vantaggio di ottenere una diagnosi approfondita dei problemi di prestazioni.
 
@@ -31,13 +33,9 @@ L'adattatore dati di diagnostica del profiler ASP.NET consente di raccogliere i 
 
 Per altre informazioni, vedere [Procedura: Creare un'impostazione test per un test di carico distribuito](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-Nella procedura seguente viene illustrato come configurare l'adattatore dati di diagnostica per il profiler ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Per configurare il profiler ASP.NET per le impostazioni di test
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Configurare il profiler ASP.NET per le impostazioni di test
 
 Prima di eseguire i passaggi di questa procedura, è necessario aprire le impostazioni test da Visual Studio e selezionare la pagina **Dati e diagnostica**.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Per configurare il profiler ASP.NET per le impostazioni di test
 
 1.  Selezionare il ruolo da usare per raccogliere i dati del profiler ASP.NET.
 
