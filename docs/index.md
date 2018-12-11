@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Documentazione di Visual Studio | Microsoft Docs
+titleSuffix: ''
 description: Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.topic: hub-page
-ms.openlocfilehash: 961d9f46d78b23fa976b3a8cdc774d219445c8b1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.custom: seodec18
+ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000283"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160101"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,7 +91,7 @@ ms.locfileid: "51000283"
                                             <div class="cardText">
                                                 <h3>Informazioni su come usare Visual Studio</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Avviare una presentazione guidata</a></li>
+                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Avviare una presentazione guidata</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Scrivere e modificare il codice</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Compilare il codice</a></li>
                                                     <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Eseguire il debug del codice</a></li>
