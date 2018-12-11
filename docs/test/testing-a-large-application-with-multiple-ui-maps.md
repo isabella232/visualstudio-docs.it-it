@@ -1,5 +1,5 @@
 ---
-title: Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente in Visual Studio
+title: Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891024"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895132"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 
 In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia utente per il test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente.
 
- **Requisiti**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**Requisiti**
 
 - Visual Studio Enterprise
 
-  Quando si crea un nuovo test codificato dell'interfaccia utente, per impostazione predefinita il framework di test di Visual Studio genera il codice per il test in una classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
+Quando si crea un nuovo test codificato dell'interfaccia utente, per impostazione predefinita il framework di test di Visual Studio genera il codice per il test in una classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
 
-  Il codice generato per la mappa dell'interfaccia utente contiene una classe per ogni oggetto con cui il test interagisce. Per ogni metodo generato, viene generata una classe complementare per i parametri del metodo appositamente per quel metodo. Se l'applicazione contiene un numero elevato di oggetti, pagine, moduli e controlli, la mappa dell'interfaccia utente può raggiungere dimensioni significative. Inoltre, se più persone stanno operando sui test, l'applicazione può diventare difficile da gestire se è presente un solo file di mappa dell'interfaccia utente di grandi dimensioni.
+Il codice generato per la mappa dell'interfaccia utente contiene una classe per ogni oggetto con cui il test interagisce. Per ogni metodo generato, viene generata una classe complementare per i parametri del metodo appositamente per quel metodo. Se l'applicazione contiene un numero elevato di oggetti, pagine, moduli e controlli, la mappa dell'interfaccia utente può raggiungere dimensioni significative. Inoltre, se più persone stanno operando sui test, l'applicazione può diventare difficile da gestire se è presente un solo file di mappa dell'interfaccia utente di grandi dimensioni.
 
-  L'uso di più file di mappa dell'interfaccia utente può offrire i vantaggi seguenti:
+L'uso di più file di mappa dell'interfaccia utente può offrire i vantaggi seguenti:
 
 - Ogni mappa può essere associata a un subset logico dell'applicazione per semplificare la gestione delle modifiche.
 

@@ -1,5 +1,5 @@
 ---
-title: Includere le registrazioni dello schermo e della voce durante i test tramite le impostazioni test in Visual Studio
+title: Registrare lo schermo e la voce durante i test
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321073"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894413"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
@@ -25,6 +25,8 @@ Dall'editor di configurazione in Visual Studio è possibile configurare l'adatta
 > Le registrazioni dello schermo e della voce non supportano configurazioni con più monitor.
 
 La funzionalità di registrazione dello schermo e della voce può essere utilizzata con i test manuali o automatizzati. Ad esempio, se si esegue un test codificato dell'interfaccia utente in modalità remota è necessario registrare il desktop per visualizzare il test nel corso dell'esecuzione. Per altre informazioni su come acquisire una registrazione dello schermo e della voce in modalità remota, vedere [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Per configurare la registrazione dello schermo e della voce per le impostazioni di test
 

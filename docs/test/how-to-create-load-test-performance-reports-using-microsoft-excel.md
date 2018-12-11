@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861917"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896562"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
-È possibile generare report del test di carico di Microsoft Excel basati su due o più risultati del test. Sono disponibili due tipi di report del test di carico:
+È possibile generare report del test di carico di Microsoft Excel basati su due o più risultati del test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Sono disponibili due tipi di report del test di carico:
 
 -   **Esegui confronto** Consente di creare un set di report per il confronto dei dati di due risultati del test di carico tramite tabelle e grafici a barre.
 
@@ -45,7 +49,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
 È possibile generare report di Excel nell'**Analizzatore test di carico** usando il pulsante **Crea rapporto Excel** nella barra degli strumenti oppure da Excel usando l'opzione **Rapporto test di carico** nella scheda **Test di carico** della barra multifunzione di **Office**.
 
 > [!NOTE]
-> Se si aggiungono commenti a un test di carico, verranno visualizzati nel report di Excel. Per altre informazioni, vedere [Procedura: Aggiungere commenti mentre si analizza un test di carico completato](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Se si aggiungono commenti a un test di carico, vengono visualizzati nel report di Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Per generare report di confronto di test di carico con Excel
 

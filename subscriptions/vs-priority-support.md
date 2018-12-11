@@ -1,26 +1,24 @@
 ---
-title: Vantaggio Supporto prioritario nella sottoscrizione di Visual Studio | Microsoft Docs
+title: Vantaggio Developer Community nella sottoscrizione di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Informazioni sul vantaggio Supporto prioritario incluso nelle sottoscrizioni di Visual Studio.
+description: Informazioni sul vantaggio Developer Community incluso nelle sottoscrizioni di Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866740"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896653"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Supporto prioritario nelle sottoscrizioni di Visual Studio
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Supporto per Developer Community nelle sottoscrizioni di Visual Studio
 
-Il vantaggio Supporto prioritario consente di accedere a un'ampia gamma di forum della community di supporto in cui è possibile effettuare ricerche nei post esistenti o porre nuove domande.  Se la community non risponde alla domanda entro due giorni, il team di supporto Microsoft invierà una risposta.
-
-I sottoscrittori con sottoscrizioni di Visual Studio selezionate hanno diritto a ricevere supporto prioritario tramite numerosi forum dedicati a svariati argomenti.  Fare clic su uno dei collegamenti seguenti per passare direttamente al forum.  
+Il vantaggio Developer Community consente di accedere a un'ampia gamma di forum della community di supporto in cui è possibile effettuare ricerche nei post esistenti o porre nuove domande. Fare clic su uno dei collegamenti seguenti per passare direttamente al forum.  
 
 ## <a name="included-forums"></a>Forum inclusi
 

@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821838"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895262"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
 Il tempo richiesto per il caricamento di ogni pagina web è definito *tempo di risposta*. Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Se il test web viene eseguito sotto stress in un test di carico, sarà possibile analizzare le seguenti informazioni per ogni pagina:
 
@@ -36,8 +38,6 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 -   Analisi dei tempi di risposta della pagina web nella visualizzazione Grafici
 
 ## <a name="view-response-time-data-in-a-table"></a>Visualizzare i dati sul tempo di risposta in una tabella
-
-### <a name="to-view-response-time-data-in-a-table"></a>Per visualizzare i dati sul tempo di risposta in una tabella
 
 1. Nell'**Analizzatore test di carico** scegliere **Tabelle** nella barra degli strumenti per assicurarsi che venga visualizzata la griglia della tabella.
 
@@ -70,7 +70,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 È anche possibile visualizzare i dati sul tempo di risposta in un grafico, per rilevare le modifiche nel corso del tempo durante il test di carico. Questa opzione è particolarmente utile se il modello di carico aumenta durante l'esecuzione del test, ad esempio se si usa il modello di carico per passaggio. Per altre informazioni, vedere [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>Per visualizzare i dati sul tempo di risposta in un grafico
+Per visualizzare i dati sul tempo di risposta in un grafico:
 
 1. Nell'**Analizzatore test di carico** scegliere **Grafici** nella barra degli strumenti per assicurarsi che venga visualizzato il grafico.
 
