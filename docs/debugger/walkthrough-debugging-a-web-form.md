@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: Debug di un Form Web | Microsoft Docs'
-ms.custom: ''
+title: Eseguire il debug di un modulo Web | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,20 +24,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389604"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055154"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: debug di un Web Form
+# <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: Debug di un Web Form
 Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], noto anche come Web Form. Viene spiegato come avviare e arrestare l'esecuzione, impostare punti di interruzione ed esaminare le variabili nella finestra **Espressioni di controllo**.
 
 > [!NOTE]
 > Per completare la procedura dettagliata, è necessario disporre di privilegi di amministratore per il computer server. Per impostazione predefinita, il processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], aspnet_wp.exe o w3wp.exe viene eseguito come processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per eseguire il debug di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], è necessario disporre dei privilegi di amministratore per il computer in cui [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] viene eseguito. Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).
 
-Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-create-the-web-form"></a>Per creare il Web Form
 
@@ -69,7 +69,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 11. Fare doppio clic sul controllo Button rilasciato.
 
-     Verrà visualizzata la tabella codici: Default.aspx.cs per C# o Default.aspx.vb per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Il cursore dovrebbe trovarsi in corrispondenza della funzione `Button1_Click`.
+     Ciò consente di visualizzare la tabella codici: Default.aspx.cs per C# o default per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Il cursore dovrebbe trovarsi in corrispondenza della funzione `Button1_Click`.
 
 12. Nella funzione `Button1_Click` aggiungere il codice seguente:
 

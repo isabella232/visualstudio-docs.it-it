@@ -1,14 +1,9 @@
 ---
-title: Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio | Microsoft Docs
-ms.custom: ''
+title: App Store di analisi statica del codice C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
@@ -16,88 +11,75 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389098"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064154"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
- Lo strumento di analisi del codice disponibile nelle edizioni di Visual Studio Express esamina il codice alla ricerca di un set di errori comuni e di violazioni delle procedure di programmazione ottimali. Gli avvisi di analisi del codice sono diversi rispetto agli errori e agli avvisi del compilatore in quanto durante l'analisi del codice vengono cercati modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che usano il codice. L'analisi del codice può inoltre trovare difetti all'interno del codice che di solito sono difficili da individuare tramite l'esecuzione di test. L'esecuzione dello strumento di analisi del codice a intervalli regolari durante il processo di sviluppo può migliorare la qualità dell'app completata.  
+ Lo strumento di analisi del codice disponibile nelle edizioni di Visual Studio Express esamina il codice alla ricerca di un set di errori comuni e di violazioni delle procedure di programmazione ottimali. Gli avvisi di analisi del codice sono diversi rispetto agli errori e agli avvisi del compilatore in quanto durante l'analisi del codice vengono cercati modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che usano il codice. L'analisi del codice può inoltre trovare difetti all'interno del codice che di solito sono difficili da individuare tramite l'esecuzione di test. L'esecuzione dello strumento di analisi del codice a intervalli regolari durante il processo di sviluppo può migliorare la qualità dell'app completata.
 
 > [!NOTE]
->  In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi usare le funzionalità complete degli strumenti di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](http://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.  
+> In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi usare le funzionalità complete degli strumenti di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](http://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
 
-## <a name="in-this-topic"></a>Contenuto dell'argomento  
- Puoi acquisire informazioni su:  
+##  <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice
+ Per eseguire l'analisi del codice nella soluzione di Visual Studio:
 
- [Esecuzione dell'analisi del codice](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)  
+- Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.
 
- [Analizzare e risolvere gli avvisi di analisi del codice](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)  
+  Per eseguire automaticamente l'analisi codice ogni volta che compili un progetto:
 
- [Eliminazione degli avvisi di analisi del codice](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Suppress)  
+1. In Esplora soluzioni scegliere il nome del progetto, quindi scegliere **Proprietà**.
 
- [Ricerca e filtro dei risultati dell'analisi del codice](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Search)  
+2. Nella pagina delle proprietà del progetto scegliere **Analisi codice**, quindi **Attiva analisi codice per C/C++ in fase di compilazione**.
 
- [Avvisi di analisi del codice C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#Warnings)  
+   La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.
 
-##  <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice  
- Per eseguire l'analisi del codice nella soluzione di Visual Studio:  
+   ![Finestra Analisi codice](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-- Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.  
+##  <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
+ Per analizzare un avviso specifico, scegliere il titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema. Quando possibile, l'analisi del codice mostra il numero di riga e la logica dell'analisi che ha portato all'avviso.
 
-  Per eseguire automaticamente l'analisi codice ogni volta che compili un progetto:  
+ ![Avviso di analisi del codice espanso](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
-1. In Esplora soluzioni scegliere il nome del progetto, quindi scegliere **Proprietà**.  
+ Quando espandi un avviso, le righe di codice che hanno provocato l'avviso sono evidenziate nell'editor di Visual Studio Code.
 
-2. Nella pagina delle proprietà del progetto scegliere **Analisi codice**, quindi **Attiva analisi codice per C/C++ in fase di compilazione**.  
+ ![Codice sorgente evidenziato](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
-   La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.  
-
-   ![Finestra Analisi codice](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")  
-
-##  <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice  
- Per analizzare un avviso specifico, scegliere il titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema. Quando possibile, l'analisi del codice mostra il numero di riga e la logica dell'analisi che ha portato all'avviso.  
-
- ![Avviso di analisi del codice espanso](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")  
-
- Quando espandi un avviso, le righe di codice che hanno provocato l'avviso sono evidenziate nell'editor di Visual Studio Code.  
-
- ![Codice sorgente evidenziato](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")  
-
- Dopo aver compreso il problema, è possibile risolverlo nel codice. Eseguire quindi di nuovo l'analisi del codice per verificare che l'avviso non venga più visualizzato nella finestra Analisi codice e che la correzione non generi nuovi avvisi.  
+ Dopo aver compreso il problema, è possibile risolverlo nel codice. Eseguire quindi di nuovo l'analisi del codice per verificare che l'avviso non venga più visualizzato nella finestra Analisi codice e che la correzione non generi nuovi avvisi.
 
 > [!TIP]
->  Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il pulsante **Analizza**, quindi scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.  
+>  Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il pulsante **Analizza**, quindi scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.
 
-##  <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice  
- In alcuni casi potresti decidere di non correggere un avviso di analisi del codice. Puoi decidere che risolvere il problema richiede un'eccessiva ricodificazione relativamente alla probabilità che il problema si ripresenti in qualsiasi implementazione realistica del codice. Oppure potresti ritenere che l'analisi utilizzata nell'avviso sia inadeguata per il contesto specifico. Puoi eliminare gli avvisi in modo che non vengano più visualizzati nella finestra Analisi codice.  
+##  <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice
+ In alcuni casi potresti decidere di non correggere un avviso di analisi del codice. Puoi decidere che risolvere il problema richiede un'eccessiva ricodificazione relativamente alla probabilità che il problema si ripresenti in qualsiasi implementazione realistica del codice. Oppure potresti ritenere che l'analisi utilizzata nell'avviso sia inadeguata per il contesto specifico. Puoi eliminare gli avvisi in modo che non vengano più visualizzati nella finestra Analisi codice.
 
- Per eliminare un avviso:  
+ Per eliminare un avviso:
 
-1. Se le informazioni dettagliate non sono visualizzate, espandi il titolo dell'avviso.  
+1. Se le informazioni dettagliate non sono visualizzate, espandi il titolo dell'avviso.
 
-2. Scegliere il collegamento **Azioni** nella parte inferiore dell'avviso.  
+2. Scegliere il collegamento **Azioni** nella parte inferiore dell'avviso.
 
-3. Scegliere **Elimina messaggio** e quindi scegliere **In origine**.  
+3. Scegliere **Elimina messaggio** e quindi scegliere **In origine**.
 
-   L'eliminazione di un messaggio inserisce un `#pragma(warning:`*WarningId*`)` che elimina l'avviso per la riga di codice.  
+   L'eliminazione di un messaggio inserisce un `#pragma(warning:`*WarningId*`)` che elimina l'avviso per la riga di codice.
 
-##  <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice  
- Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.  
+##  <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
+ Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
- ![Finestra di ricerca e filtro dell'analisi del codice](../test/media/ca-searchfilter.png "CA_SearchFilter")  
+ ![Finestra di ricerca e filtro dell'analisi del codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Avvisi di analisi del codice C++  
- L'analisi del codice genera gli avvisi seguenti per il codice C++:  
+##  <a name="Warnings"></a> Avvisi di analisi del codice C++
+ L'analisi del codice genera gli avvisi seguenti per il codice C++:
 
 
-|                                      Regola                                      |                                                  Descrizione                                                  |
+|                                      Regola                                      |                                                  Description                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          Utilizzo di memoria non inizializzata                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          Dereferenziazione del puntatore Null                                           |
@@ -135,7 +117,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null su non puntatore                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck su nullo                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Dimensioni buffer su non puntatore o matrice                                      |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Errata corrispondenza null al livello di dereferenziazione zero                                       |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Errata corrispondenza null al livello di dereferenziazione zero                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Accesso in scrittura a costante                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Restituzione utilizzati in precondizione                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        Null terminato su non puntatore                                         |
@@ -146,13 +128,13 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                       [C6516](../code-quality/c6516.md)                        |                                          Nessuna proprietà su attributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Dimensioni valide su buffer non leggibile                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Dimensioni scrivibili su buffer non scrivibile                                      |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Annotazione non valida: il valore della proprietà 'NeedsRelease' deve essere Yes o No                   |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Deferenziazione stringa dimensioni non valida                                        |
+| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Annotazione non valida: il valore della proprietà 'NeedsRelease' deve essere Yes o No                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Deferenziazione stringa dimensioni non valida                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo stringa dimensioni non valida                                            |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Percorso irraggiungibile stringa dimensioni non valida                                    |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Stile stringa formato non riconosciuto                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Specifica di dimensione non valida: espressione non analizzabile                              |
@@ -212,7 +194,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() non è supportato nelle annotazioni                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Errore di sintassi nell'annotazione condizionale rilevato nell'oggetto annotazione intrinseco                 |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    I valori degli elenchi di risultati devono essere costanti.                                     |
+| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    I valori degli elenchi di risultati devono essere costanti.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione                     |
@@ -235,4 +217,3 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                      [C28305](../code-quality/c28305.md)                       |                                È stato individuato un errore durante l'analisi di un token.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  L'annotazione descrive una situazione non applicabile in modo condizionale.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).          |
-

@@ -1,6 +1,6 @@
 ---
 title: Il debug in tempo reale delle app di Azure ASP.NET
-ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
+description: Informazioni su come impostare punti di ancoraggio e visualizzare gli snapshot con il Debugger di Snapshot.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b9162b1e0cc6b1e4e0a5292825dbdebfeff1ae5f
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821422"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056918"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Il debug in tempo reale delle app di Azure ASP.NET usando il Debugger di Snapshot
 

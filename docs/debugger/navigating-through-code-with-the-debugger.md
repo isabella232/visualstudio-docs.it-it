@@ -1,6 +1,6 @@
 ---
-title: Esplorare il codice con il debugger di Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Esplorare il codice con il debugger | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621526"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068273"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger di Visual Studio
 
@@ -80,7 +80,7 @@ In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà es
 
 Potrebbe non rilevante una funzione durante il debug o si conosce funziona, come il codice ben collaudato della libreria. È possibile usare i comandi seguenti da ignorare nel codice. Le funzioni eseguono comunque, ma li ignora il debugger.  
   
-|Comando di tasti|Comando del menu Debug|Descrizione|  
+|Comando di tasti|Comando del menu Debug|Description|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione **Esegui istruzione/routine** esegue il codice, quindi viene sospesa alla prima riga del codice dopo che la funzione chiamata viene restituita.|  
 |**MAIUSC**+**F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando termina la funzione corrente. Il debugger passa attraverso la funzione corrente.|  

@@ -1,10 +1,11 @@
 ---
 title: Novità di Visual Studio 2019 Preview
+titleSuffix: ''
 description: Informazioni sulle nuove funzionalità della versione di anteprima di Visual Studio 2019.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897243"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159750"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Novità di Visual Studio 2019 Preview
 
@@ -86,7 +87,7 @@ Con Visual Studio 2019 Preview, questo servizio viene installato per impostazion
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Gestire le richieste pull (PR) dall'IDE
 
-È ora possibile scaricare una nuova estensione da usare con Visual Studio 2019 Preview. Questa nuova estensione consente di esaminare, eseguire e addirittura eseguire il debug delle richieste pull del team senza uscire dall'[ambiente di sviluppo integrato](../ide/visual-studio-ide.md) (IDE) di Visual Studio. Il codice è attualmente supportato in Azure Repos, ma è previsto anche il supporto in GitHub per un miglioramento dell'esperienza complessiva.
+È ora possibile scaricare una nuova estensione da usare con Visual Studio 2019 Preview. Questa nuova estensione consente di esaminare, eseguire e addirittura eseguire il debug delle richieste pull del team senza uscire dall'[ambiente di sviluppo integrato](../get-started/visual-studio-ide.md) (IDE) di Visual Studio. Il codice è attualmente supportato in Azure Repos, ma è previsto anche il supporto in GitHub per un miglioramento dell'esperienza complessiva.
 
 Per iniziare subito, scaricare l'estensione [Richieste pull per Visual Studio](https://aka.ms/pr4vs) da Visual Studio Marketplace.
 

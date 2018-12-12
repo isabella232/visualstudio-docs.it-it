@@ -1,5 +1,5 @@
 ---
-title: Comandi di Visual Studio
+title: 'Comandi:'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879011"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063461"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
+
 I comandi di Visual Studio consentono di richiamare un comando dalla finestra **Comando** , dalla finestra **Comando immediato** o dalla casella **Trova/Comando** . In ogni caso, per indicare che deve essere eseguito un comando anziché un'operazione di ricerca o di debug, viene usato il segno di maggiore (`>`).
 
- È possibile trovare l'elenco completo dei comandi e la relativa sintassi nella finestra di dialogo **Opzioni** con le voci Tastiera, Ambiente selezionate.
+È possibile trovare l'elenco completo dei comandi e la relativa sintassi nella finestra di dialogo **Opzioni** con le voci Tastiera, Ambiente selezionate.
 
- Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato.
+L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato.
 
- Nelle versioni localizzate dell'IDE, i nomi di comandi possono essere immessi sia nella lingua locale dell'IDE sia in lingua inglese. È possibile ad esempio digitare `File.NewFile` o `Fichier.NouveauFichier` nell'IDE francese per eseguire lo stesso comando.
+Nelle versioni localizzate dell'IDE, i nomi di comandi possono essere immessi sia nella lingua locale dell'IDE sia in lingua inglese. È possibile ad esempio digitare `File.NewFile` o `Fichier.NouveauFichier` nell'IDE francese per eseguire lo stesso comando.
 
- A molti comandi sono associati alias. Per un elenco di alias di comando, vedere [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
+A molti comandi sono associati alias. Per un elenco di alias di comando, vedere [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
 
- I comandi seguenti accettano argomenti e/o opzioni.
+I comandi seguenti accettano argomenti e/o opzioni.
 
-
-| Nome comando | Descrizione |
+| Nome comando | Description |
 | - | - |
 | [Aggiungi elemento esistente](../../ide/reference/add-existing-item-command.md) | Aggiunge un file esistente alla soluzione corrente e lo apre. |
 | [Aggiungi progetto esistente](../../ide/reference/add-existing-project-command.md) | Aggiunge un progetto esistente alla soluzione corrente. |

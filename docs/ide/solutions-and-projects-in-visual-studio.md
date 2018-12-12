@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349309"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159672"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -60,7 +60,7 @@ Un progetto è contenuto all'interno di una *soluzione*. Una soluzione contiene 
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
-|Estensione|nome|Descrizione|
+|Estensione|nome|Description|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
@@ -79,6 +79,6 @@ Dopo aver creato un nuovo progetto, è possibile usare **Esplora soluzioni** per
 
 ## <a name="see-also"></a>Vedere anche
 
-- [IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/projects-and-solutions)
 - [Aggiungere e rimuovere elementi del progetto (Visual Studio per Mac)](/visualstudio/mac/add-and-remove-project-items)
