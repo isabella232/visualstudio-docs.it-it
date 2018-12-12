@@ -1,5 +1,5 @@
 ---
-title: Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
+title: Mappare i metodi sullo stack di chiamate durante il debug
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856184"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067398"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
-Creare una mappa codici per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.
+Creare una mappa del codice per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.
 
  ![Debug con stack di chiamate nelle mappe del codice](../debugger/media/debuggermap_overview.png)
 
@@ -80,7 +80,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      La mappa si aggiornerà automaticamente durante il debug. Visualizzare [aggiornare la mappa con lo stack di chiamate successivo](#UpdateMap).
 
-## <a name="MakeNotes"></a> Aggiungere appunti sul codice
+## <a name="MakeNotes"></a> Aggiungere note sul codice
  Aggiungere commenti per tenere traccia di ciò che avviene nel codice. Per aggiungere una nuova riga in un commento, premere **MAIUSC + INVIO**.
 
  ![Aggiungere un commento allo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_addcomment.png)
@@ -121,7 +121,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
  ![Aggiungere un altro stack di chiamate alla mappa del codice](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
- Tutte le azioni dell'utente nella mappa chiamano `Repaint`, tranne `undo`. Ciò potrebbe spiegare il motivo `undo` non funziona nell'immediato.
+ Tutte le azioni dell'utente nella mappa chiamano `Repaint`, tranne `undo`. Ciò potrebbe spiegare per quale motivo `undo` non funziona nell'immediato.
 
  Dopo aver corretto il bug e continuato a eseguire il programma, la mappa aggiungerà la nuova chiamata da `undo` in `Repaint`:
 

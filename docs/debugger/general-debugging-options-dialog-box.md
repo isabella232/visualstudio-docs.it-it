@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4b5711b90e2b160f48c05835ae833bfbe7cd29fe
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51730667"
@@ -125,10 +125,10 @@ Disattiva tutte le personalizzazioni di visualizzazione della struttura degli og
 **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)**:  
 Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per altre informazioni, vedere [JIT debug e ottimizzazione](../debugger/jit-optimization-and-debugging.md).
 
-**Abilita il debug di JavaScript per ASP.NET (Chrome, Edge e Internet Explorer)**:  
+**Abilita il debug di JavaScript per ASP.NET (Chrome, Microsoft Edge e Internet Explorer)**:  
 Consente al debugger di script per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato. Disabilitare questa opzione per ripristinare il comportamento legacy.
 
-**Abilita strumenti di sviluppo Edge per App JavaScript della piattaforma UWP (sperimentale)**:  
+**Abilita strumenti di sviluppo Microsoft Edge per App JavaScript della piattaforma UWP (sperimentale)**:  
 Abilita strumenti di sviluppo per le app UWP JavaScript in Microsoft Edge.
 
 **Abilitare il debugger di Chrome JavaScript legacy per ASP.NET**:  

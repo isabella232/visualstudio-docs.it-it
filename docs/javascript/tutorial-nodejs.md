@@ -192,7 +192,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
-1. Selezionare la destinazione di debug sulla barra degli strumenti Debug, ad esempio Edge o Chrome.
+1. Selezionare la destinazione di debug sulla barra degli strumenti Debug, ad esempio Microsoft Edge o Chrome.
 
     ![Selezione della destinazione di debug](../javascript/media/tutorial-nodejs-deploy-target.png)
 
