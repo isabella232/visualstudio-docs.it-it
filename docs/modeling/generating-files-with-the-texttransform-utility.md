@@ -1,5 +1,5 @@
 ---
-title: Generazione di file con l'utilità TextTransform in Visual Studio
+title: Generazione di file con l'utilità TextTransform
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6572ef97027466fa97c254664327f2f77b4ea7f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 554ed126aa46b15148b902b901d8e9b664e3cdbd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967080"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062296"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generare file con l'utilità TextTransform
 

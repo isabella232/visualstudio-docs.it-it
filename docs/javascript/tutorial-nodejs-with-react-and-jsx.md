@@ -378,7 +378,7 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
 
     ![Associa a processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Se DOM Explorer e la console JavaScript Console si aprono in Visual Studio, il debugger è stato associato correttamente. Questi strumenti di debug sono simili agli strumenti Chrome Developer Tools e agli Strumenti F12 per Edge.
+    Se DOM Explorer e la console JavaScript Console si aprono in Visual Studio, il debugger è stato associato correttamente. Questi strumenti di debug sono simili agli strumenti Chrome Developer Tools e agli Strumenti F12 per Microsoft Edge.
 
     > [!NOTE]
     > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Operazione non valida nello stato corrente." Usare Gestione attività per chiudere tutte le istanze di Chrome prima di avviare Chrome in modalità di debug. Se sono in esecuzione estensione di Chrome, la modalità di debug complete potrebbe essere impedita.
