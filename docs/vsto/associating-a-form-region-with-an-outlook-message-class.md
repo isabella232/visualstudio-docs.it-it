@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050262"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248033"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
   È possibile specificare quali elementi di Microsoft Office Outlook visualizzano un'area del modulo associando l'area del modulo con la classe messaggio di ogni elemento. Ad esempio, se si desidera aggiungere un'area del modulo nella parte inferiore di un elemento di posta elettronica, è possibile associare l'area del modulo con il `IPM.Note` classe message.  
@@ -48,7 +48,7 @@ ms.locfileid: "50050262"
  È anche possibile specificare i nomi delle classi messaggio personalizzate. Classi messaggio personalizzate identificano i moduli personalizzati definiti in Outlook.  
   
 > [!NOTE]  
->  Per aree del modulo di sostituzione e sostituzione, è possibile specificare un nuovo nome della classe messaggio personalizzata. Non devi usare il nome della classe messaggio di un modulo personalizzato esistente. Il nome della classe messaggio personalizzata deve essere univoco. Un modo per assicurarsi che il nome sia univoco consiste nell'utilizzare una convenzione di denominazione simile al seguente: \< *StandardMessageClassName*>.\< *Società*>.\< *MessageClassName*> (ad esempio: `IPM.Note.Contoso.MyMessageClass`).  
+>  Per aree del modulo di sostituzione e sostituzione, è possibile specificare un nuovo nome della classe messaggio personalizzata. Non devi usare il nome della classe messaggio di un modulo personalizzato esistente. Il nome della classe messaggio personalizzata deve essere univoco. Un modo per assicurarsi che il nome sia univoco è usare una convenzione di denominazione simile al seguente: \<*StandardMessageClassName*>.\< *Società*>.\< *MessageClassName*> (ad esempio: `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook  
  Esistono due modi per associare un'area del modulo a una classe messaggio:  
@@ -60,7 +60,7 @@ ms.locfileid: "50050262"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Utilizzare la procedura guidata nuova area del modulo di Outlook  
  Nella pagina finale della **nuova area del modulo Outlook** procedura guidata, è possibile selezionare le classi messaggio standard e digitare i nomi delle classi messaggio personalizzate che si desidera associare l'area del modulo.  
   
- Le classi messaggio standard non sono disponibili se l'area del modulo è progettato per sostituire l'intero form o la pagina predefinita di un form. È possibile specificare i nomi delle classi messaggio standard solo per i moduli che consentono di aggiungere una nuova pagina a un form o che vengono aggiunti alla parte inferiore della forma. Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ Le classi messaggio standard non sono disponibili se l'area del modulo è progettato per sostituire l'intero form o la pagina predefinita di un form. È possibile specificare i nomi delle classi messaggio standard solo per i moduli che consentono di aggiungere una nuova pagina a un form o che vengono aggiunti alla parte inferiore della forma. Per altre informazioni, vedere [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  Per includere uno o più classi messaggio personalizzate, digitare i nomi nella **le classi messaggio personalizzate che visualizzerà l'area del modulo?** casella.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "50050262"
   
 - Non superare i 256 caratteri per ogni nome di classe messaggio.  
   
-- Se l'area del modulo sostituisce l'intero form o la pagina predefinita di un modulo non includono i nomi delle classi messaggio standard. È possibile specificare i nomi delle classi messaggio standard solo per i moduli che consentono di aggiungere una nuova pagina a un form o che vengono aggiunti alla parte inferiore della forma. Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- Se l'area del modulo sostituisce l'intero form o la pagina predefinita di un modulo non includono i nomi delle classi messaggio standard. È possibile specificare i nomi delle classi messaggio standard solo per i moduli che consentono di aggiungere una nuova pagina a un form o che vengono aggiunti alla parte inferiore della forma. Per altre informazioni, vedere [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
   Visual Studio convalida il formato dei nomi di classe messaggio quando si compila il progetto.  
   
@@ -109,7 +109,7 @@ ms.locfileid: "50050262"
 ## <a name="see-also"></a>Vedere anche  
  [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)   
  [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
- [Procedura dettagliata: Progettazione di un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Linee guida per creare aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Nome del modulo e classi messaggio Panoramica](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
  [Interagiscono tra gli elementi e i moduli di Outlook](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  

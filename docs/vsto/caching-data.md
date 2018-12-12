@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846889"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248121"
 ---
 # <a name="cache-data"></a>Dati della cache
   È possibile memorizzare nella cache di oggetti dati in una personalizzazione a livello di documento in modo che i dati siano accessibili in modalità offline o senza l'apertura di Microsoft Office Word o Microsoft Office Excel. Per memorizzare nella cache un oggetto, l'oggetto deve avere un tipo di dati che soddisfano determinati requisiti. Molti tipi di dati comune in .NET Framework soddisfano questi requisiti, incluse <xref:System.String>, <xref:System.Data.DataSet>, e <xref:System.Data.DataTable>.  
@@ -31,9 +31,9 @@ ms.locfileid: "49846889"
   
  Esistono due modi per aggiungere un oggetto alla cache dei dati:  
   
-- Per aggiungere un oggetto alla cache dei dati durante la compilazione della soluzione, applicare il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> dell'attributo di dichiarazione dell'oggetto. Per altre informazioni, vedere [procedura: memorizzare nella Cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+- Per aggiungere un oggetto alla cache dei dati durante la compilazione della soluzione, applicare il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> dell'attributo di dichiarazione dell'oggetto. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
-- Per aggiungere a livello di codice un oggetto alla cache dei dati in fase di esecuzione, usare il `StartCaching` metodo di un host di elemento, ad esempio il `ThisDocument` o `ThisWorkbook` classi. Per altre informazioni, vedere [procedura: memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+- Per aggiungere a livello di codice un oggetto alla cache dei dati in fase di esecuzione, usare il `StartCaching` metodo di un host di elemento, ad esempio il `ThisDocument` o `ThisWorkbook` classi. Per altre informazioni, vedere [Procedura: Memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
   Dopo aver aggiunto un oggetto alla cache dei dati, è possibile accedere e modificare i dati memorizzati nella cache senza avviare Word o Excel. Per altre informazioni, vedere [accedere ai dati dei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
@@ -79,7 +79,7 @@ ms.locfileid: "49846889"
 ## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Rendere persistenti le modifiche ai dati memorizzati nella cache i documenti protetti da password  
  Se si memorizza nella cache gli oggetti dati in un documento protetto con una password, non vengono salvate le modifiche ai dati memorizzati nella cache. È possibile salvare le modifiche apportate ai dati memorizzati nella cache eseguendo l'override di due metodi. Eseguire l'override di questi metodi per rimuovere temporaneamente la protezione quando il documento viene salvato e quindi riapplicare la protezione dopo il salvataggio operazione è stata completata.  
   
- Per altre informazioni, vedere [procedura: memorizzare nella Cache i dati in un documento protetto da password](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+ Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati in un documento protetto da password](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Evitare perdite di dati durante l'aggiunta di valori null per la cache dei dati  
  Quando si aggiungono oggetti alla cache dei dati, tutti gli oggetti memorizzati nella cache deve essere inizializzati a non -**null** valore prima che il documento viene salvato e chiuso. Se un oggetto memorizzato nella cache contiene un **null** valore quando il documento viene salvato e chiuso, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rimuoverà automaticamente tutti gli oggetti memorizzati nella cache dalla cache dei dati.  
@@ -87,9 +87,9 @@ ms.locfileid: "49846889"
  Se si aggiunge un oggetto con un **null** valore alla cache dei dati tramite il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attributo in fase di progettazione, è possibile usare il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> gli oggetti classe per inizializzare i dati memorizzati nella cache prima che il documento viene aperto. Ciò è utile se si desidera inizializzare i dati memorizzati nella cache in un server senza Word o Excel, prima che il documento viene aperto da un utente finale. Per altre informazioni, vedere [accedere ai dati dei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: memorizzare nella Cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Procedura: memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Procedura: memorizzare nella Cache i dati in un documento protetto da password](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Procedura: Memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Procedura: Dati della cache in un documento protetto da password](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   
