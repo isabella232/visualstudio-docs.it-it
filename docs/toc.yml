@@ -4,7 +4,7 @@ items:
 - name: Panoramica
   items:
   - name: Informazioni su Visual Studio 2017
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: Informazioni sull'editor del codice
     href: get-started/tutorial-editor.md
   - name: Informazioni su progetti e soluzioni
@@ -81,7 +81,7 @@ items:
         href: install/tools-for-managing-visual-studio-instances.md
     - name: Gestire le sottoscrizioni
       items:
-      - name: "Sottoscrizioni di Visual Studio: panoramica per l'amministratore"
+      - name: "Sottoscrizioni di Visual Studio: Panoramica dell'amministratore"
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Guida dell'amministratore di Help Viewer
       href: ide/help-viewer-administrator-guide.md
@@ -130,21 +130,21 @@ items:
   items:
   - name: Orientamento di Visual Studio
     href: ide/quickstart-ide-orientation.md
-  - name: "C++: creare un'app console"
+  - name: "C++: Creare un'applicazione console"
     href: ide/getting-started-with-cpp-in-visual-studio.md
-  - name: "Python: creare un'app Web"
+  - name: "Python: Creare un'app Web"
     href: ide/quickstart-python.md
-  - name: "Node.js: creare un'app Web"
+  - name: "Node.js: Creare un'app Web"
     href: ide/quickstart-nodejs.md
   - name: 'F#: Creare un servizio Web'
     href: ide/quickstart-fsharp.md
-  - name: "C#: creare un'app Web"
+  - name: "C#: Creare un'app Web"
     href: ide/quickstart-aspnet-core.md
-  - name: "C#: creare un'app UWP"
+  - name: "C#: Creare un'app UWP"
     href: ide/quickstart-uwp-csharp.md
-  - name: "C#: creare un'app console"
+  - name: "C#: Creare un'applicazione console"
     href: ide/quickstart-csharp-console.md
-  - name: "Visual Basic: creare un'app console"
+  - name: "Visual Basic: Creare un'applicazione console"
     href: ide/quickstart-visual-basic-console.md
 - name: Esercitazioni
   items:
@@ -158,9 +158,9 @@ items:
     href: javascript/tutorial-nodejs.md
   - name: C# in Visual Studio
     items:
-    - name: "C#: creare un'app Web"
+    - name: "C#: Creare un'app Web"
       href: ide/tutorial-csharp-aspnet-core.md
-    - name: "C#: creare un'app console"
+    - name: "C#: Creare un'applicazione console"
       href: ide/tutorial-csharp-console.md
   - name: Visual Basic in Visual Studio
     href: ide/tutorial-visual-basic-console.md
@@ -523,67 +523,67 @@ items:
         - name: 'Esercitazione 1: Creare un visualizzatore di immagini (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: 'Passaggio 1: creare un progetto di applicazione Windows Form'
+          - name: 'Passaggio 1: Creare un progetto di Windows Forms Application'
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: 'Passaggio 2: eseguire il programma'
+          - name: 'Passaggio 2: Eseguire il programma'
             href: ide/step-2-run-your-program.md
-          - name: 'Passaggio 3: impostare le proprietà del form'
+          - name: 'Passaggio 3: Impostare le proprietà del modulo'
             href: ide/step-3-set-your-form-properties.md
-          - name: 'Passaggio 4: creare il layout del form con un controllo TableLayoutPanel'
+          - name: 'Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel'
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: 'Passaggio 5: aggiungere controlli al form'
+          - name: 'Passaggio 5: Aggiungere controlli al modulo'
             href: ide/step-5-add-controls-to-your-form.md
-          - name: 'Passaggio 6: assegnare un nome ai pulsanti'
+          - name: 'Passaggio 6: Assegnare un nome ai pulsanti'
             href: ide/step-6-name-your-button-controls.md
-          - name: 'Passaggio 7: aggiungere componenti di finestra di dialogo al form'
+          - name: 'Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo'
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: "Passaggio 8: scrivere il codice per il gestore dell'evento del pulsante Visualizza immagine"
+          - name: "Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine"
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: 'Passaggio 9: esaminare, commentare e testare il codice'
+          - name: 'Passaggio 9: Esaminare, commentare e testare il codice'
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: 'Passaggio 10: scrivere codice per pulsanti aggiuntivi e una casella di controllo'
+          - name: 'Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi'
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: 'Passaggio 11: eseguire il programma e provare altre funzionalità'
+          - name: 'Passaggio 11: Eseguire il programma e provare altre funzionalità'
             href: ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Esercitazione 2: Creare un quiz matematico a tempo (C#)'
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: 'Passaggio 1: creare un progetto e aggiungere etichette al form'
+          - name: 'Passaggio 1: Creare un progetto e aggiungere etichette al modulo'
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: 'Passaggio 2: creare un problema di addizione casuale'
+          - name: 'Passaggio 2: Creare un problema di addizione casuale'
             href: ide/step-2-create-a-random-addition-problem.md
-          - name: 'Passaggio 3: aggiungere un timer per il conto alla rovescia'
+          - name: 'Passaggio 3: Aggiungere un timer per il conto alla rovescia'
             href: ide/step-3-add-a-countdown-timer.md
-          - name: 'Passaggio 4: aggiungere il metodo CheckTheAnswer()'
+          - name: 'Passaggio 4: Aggiungere il metodo CheckTheAnswer()'
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: 'Passaggio 5: aggiungere gestori di eventi Enter per i controlli NumericUpDown'
+          - name: "Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown"
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: 'Passaggio 6: aggiungere un problema di sottrazione'
+          - name: 'Passaggio 6: Aggiungere un problema di sottrazione'
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: 'Passaggio 7: aggiungere problemi di moltiplicazione e divisione'
+          - name: 'Passaggio 7: Aggiungere problemi di moltiplicazione e divisione'
             href: ide/step-7-add-multiplication-and-division-problems.md
-          - name: 'Passaggio 8: personalizzare il quiz'
+          - name: 'Passaggio 8: Personalizzare il quiz'
             href: ide/step-8-customize-the-quiz.md
         - name: 'Esercitazione 3: Creare un gioco di abbinamenti (C#)'
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: 'Passaggio 1: creare un progetto e aggiungere una tabella al form'
+          - name: 'Passaggio 1: Creare un progetto e aggiungere una tabella al modulo'
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: 'Passaggio 2: aggiungere un oggetto casuale e un elenco di icone'
+          - name: 'Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone'
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: "Passaggio 3: assegnare un'icona casuale a ogni etichetta"
+          - name: "Passaggio 3: Assegnare un'icona casuale a ogni etichetta"
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: 'Passaggio 4: aggiungere un gestore degli eventi Click a ogni etichetta'
+          - name: "Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta"
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
-          - name: 'Passaggio 5: aggiungere riferimenti alle etichette'
+          - name: 'Passaggio 5: Aggiungere riferimenti alle etichette'
             href: ide/step-5-add-label-references.md
-          - name: 'Passaggio 6: aggiungere un timer'
+          - name: 'Passaggio 6: Aggiungere un timer'
             href: ide/step-6-add-a-timer.md
-          - name: 'Passaggio 7: mantenere le coppie visibili'
+          - name: 'Passaggio 7: Mantenere le coppie visibili'
             href: ide/step-7-keep-pairs-visible.md
-          - name: 'Passaggio 8: aggiungere un metodo per verificare se il giocatore ha vinto'
+          - name: 'Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto'
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-          - name: 'Passaggio 9: provare altre funzionalità'
+          - name: 'Passaggio 9: Provare altre funzionalità'
             href: ide/step-9-try-other-features.md
   - name: Accedere ai dati...
     href: data-tools/accessing-data-in-visual-studio.md
@@ -592,7 +592,7 @@ items:
   - name: Compilare
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: "Procedura dettagliata: Compilare un'applicazione"
+    - name: "Procedura dettagliata: Creare un'applicazione"
       href: ide/walkthrough-building-an-application.md
     - name: Compilare e pulire progetti e soluzioni
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
@@ -660,7 +660,7 @@ items:
   - name: Personalizzare l'IDE
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 'Guida introduttiva: Personalizzare il tema e i colori del testo'
+    - name: 'Avvio rapido: Personalizzare tema e colori del testo'
       href: ide/quickstart-personalize-the-ide.md
     - name: Impostazioni dell'ambiente
       href: ide/environment-settings.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Comunicazioni con Microsoft
     href: ide/talk-to-us.md
-ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027445"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160075"
