@@ -1,6 +1,6 @@
 ---
-title: Usare i punti di interruzione nel debugger di Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Usare i punti di interruzione nel debugger | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389137"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068448"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
@@ -220,7 +220,7 @@ I punti di interruzione con set di condizioni vengono visualizzati con un **+** 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Espressione condizionale
 
-Quando si seleziona **espressione condizionale**, è possibile scegliere tra due condizioni: **vale** oppure **quando modificato**. Scegliere **vale** per interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure **quando modificato** per interrompere l'esecuzione quando viene modificato il valore dell'espressione.  
+Quando si seleziona **espressione condizionale**, è possibile scegliere tra due condizioni: **Vale** oppure **quando modificato**. Scegliere **vale** per interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure **quando modificato** per interrompere l'esecuzione quando viene modificato il valore dell'espressione.  
   
  Nell'esempio seguente viene raggiunto il punto di interruzione solo quando il valore di `testInt` viene **4**:  
   
