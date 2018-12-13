@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: specificare una versione di .NET Framework per il debug | Microsoft Docs'
-ms.custom: ''
+title: Specificare una versione di .NET Framework per eseguire il debug | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15792a8ecbc538bdbf5516d480abde4903fbd8d3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304884"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056008"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Procedura: specificare una versione di .NET Framework per il debug (C#, Visual Basic, F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Procedura: Specificare una versione di .NET Framework per il debug (C#, Visual Basic, F#)
 
 Il debugger di Visual Studio supporta il debug di versioni precedenti di Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , nonché la versione corrente. Se un'applicazione viene avviata da Visual Studio, il debugger è sempre in grado di identificare la versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] corretta per l'applicazione di cui è in corso il debug. Tuttavia, se l'applicazione è già in esecuzione e si avvia il debug usando **Collega a**, il debugger potrebbe non essere sempre in grado di identificare una versione precedente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. In questo caso, verrà visualizzato un messaggio di errore simile al seguente:  
 
@@ -47,7 +47,7 @@ In rari casi in cui viene visualizzato questo errore, è possibile impostare una
   
 3. Nell'**editor del Registro di sistema** aprire la cartella HKEY_LOCAL_MACHINE.  
   
-4. Passare a: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Passa a. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     Se la chiave non esiste, fare clic con il pulsante destro del mouse su HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine e scegliere **Nuova chiave**. Denominare la nuova chiave `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   

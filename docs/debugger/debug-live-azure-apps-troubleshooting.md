@@ -1,5 +1,6 @@
 ---
-title: Risoluzione dei problemi e problemi noti per il debug di snapshot | Microsoft Docs
+title: Risoluzione dei problemi di debug snapshot | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059827"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
@@ -32,7 +33,7 @@ Eseguire questi passaggi:
 
 1. Assicurarsi di avere la stessa versione del codice sorgente che è stato usato per compilare e distribuire il app.isua1. Assicurarsi che si siano caricando i simboli corretti per la distribuzione. A tale scopo, visualizzare il **moduli** finestra durante il debug di Snapshot e verificare la colonna del File di simboli viene illustrato un file con estensione pdb caricato per il modulo si esegue il debug. Il Debugger di Snapshot tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: I simboli non vengono caricati quando si apre uno Snapshot
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Simboli non vengono caricati quando si apre uno Snapshot
 
 Se verrà visualizzata la seguente finestra, i simboli non è stato caricato.
 
@@ -48,14 +49,14 @@ Eseguire questi passaggi:
 
 - In alternativa, se l'organizzazione Usa un server di simboli o Elimina i simboli in un percorso diverso, usare le impostazioni dei simboli per caricare i simboli corretti per la distribuzione.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: non è possibile visualizzare l'opzione "Collegare Snapshot Debugger" in Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: Non è possibile visualizzare l'opzione "Collegare Snapshot Debugger" in Cloud Explorer
 
 Eseguire questi passaggi:
 
 - Verificare che sia installato il componente Debugger di Snapshot. Aprire l'installazione di Visual Studio e verificare i **Snapshot Debugger** componente del carico di lavoro di Azure.
 - Assicurarsi che l'app sia supportato. Attualmente, solo ASP.NET (4.6.1+) e le app ASP.NET Core (2.0 +) distribuite in servizi App di Azure sono supportate.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: è visibile solo gli snapshot limitato in strumenti di diagnostica
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: È visibile solo gli snapshot limitato in strumenti di diagnostica
 
 ![Punto di ancoraggio limitate](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitate punto di ancoraggio")
 
