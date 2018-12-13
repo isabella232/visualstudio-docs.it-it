@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936047"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307707"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti di Windows Form
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (Visual Studio SDK) consente di creare un controllo che viene aggiunto automaticamente per il **casella degli strumenti** quando l'estensione viene installata. In questo argomento viene illustrato come usare il modello per creare un controllo di un contatore semplice che è possibile distribuire ad altri utenti.  
@@ -54,7 +54,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 5.  Nel **proprietà** finestra, impostare i valori seguenti per i controlli nell'area di progettazione.  
   
-    |Control|Proprietà|Valore|  
+    |Control|Proprietà|Value|  
     |-------------|--------------|-----------|  
     |`Label1`|**per**|""|  
     |`Button1`|**Name**|btnReset|  
@@ -77,16 +77,16 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
 3.  Creare le seguenti dichiarazioni di proprietà pubblica.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
 4.  Inserire il codice seguente nel `Load` evento per il controllo.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
 5.  Creare il metodo pubblico seguente per incrementare il contatore.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
 6.  Aggiungere una dichiarazione per il `Incremented` eventi alla classe del controllo.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      I chiamanti possono aggiungere gestori all'evento per rispondere alle modifiche del valore del contatore.  
@@ -131,7 +131,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
 7.  Tornare alla visualizzazione progettazione e fare doppio clic sui **reimpostare** pulsante per generare il `btnReset_Click` gestore eventi e quindi compilare in come illustrato nell'esempio seguente.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Testare il controllo  
@@ -209,7 +209,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
      Reimposta il contatore **0**.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nel <em>\bin\debug\* cartella del progetto. È possibile distribuire il controllo caricando con l'estensione VSIX</em> file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* file per il [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) del sito Web in modo che gli utenti potranno trovarlo cercando il **strumenti**  >  **Estensioni e aggiornamenti** finestra di dialogo.  
+ Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il *VSIX* file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* del file ai [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) in modo che gli utenti potranno trovarlo cercando il **strumenti**  >   **Estensioni e aggiornamenti** finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

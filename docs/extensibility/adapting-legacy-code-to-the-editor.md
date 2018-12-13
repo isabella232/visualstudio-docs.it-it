@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078600"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307791"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Adatta il codice legacy per l'editor
 Editor di Visual Studio offre numerose funzionalità che è possibile accedere da componenti di codice esistenti. Le istruzioni seguenti illustrano come adattare il componente non MEF, ad esempio, un pacchetto VSPackage, usare la funzionalità dell'editor. Le istruzioni illustrano anche come utilizzare gli adapter per ottenere i servizi dell'editor di codice gestito e non gestito.  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>Per ottenere un oggetto IVxTextBuffer  
   
-1.  Le definizioni per le interfacce IVx * sono nel *VSEditor.h* del file nei *\..\VisualStudioIntegration\Common\Inc\\* cartella l'installazione di Visual Studio SDK.  
+1.  Le definizioni per il IVx\* interfacce sono nel *VSEditor.h* del file nei *\..\VisualStudioIntegration\Common\Inc\\* cartella di Visual Studio Installazione del SDK.  
   
 2.  Il codice seguente crea un'istanza di un buffer di testo usando il `IVsUserData->GetData()` (metodo). Nel codice seguente, `pData` è un puntatore a un `IVsUserData` oggetto.  
   

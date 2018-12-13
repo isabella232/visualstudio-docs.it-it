@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874618"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307752"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Distribuire un'estensione del modello di livello
 
@@ -49,7 +49,7 @@ Server di Team Foundation Server non è in genere installato Visual Studio e per
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Per installare l'estensione del livello in un server Team Foundation Server
 
-1.  Copia il **VSIX** file dal computer di sviluppo nel computer di Team Foundation Server (TFS).
+1.  Copia il. *vsix* file dal computer di sviluppo nel computer di Team Foundation Server (TFS).
 
      Inserire il file VSIX in uno dei percorsi seguenti:
 
