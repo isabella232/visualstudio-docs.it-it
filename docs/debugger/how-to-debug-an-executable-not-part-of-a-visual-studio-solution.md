@@ -1,6 +1,7 @@
 ---
-title: "Procedura: eseguire il Debug di un'app che non fa parte di una soluzione di Visual Studio | Microsoft Docs"
-ms.custom: ''
+title: Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 993af0d15245ef6391f2c9c4eb0e755e24920fe3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 8c408ca42f82c0419c6570068e2a83e97f2371e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388582"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066613"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio (C++, C#, Visual Basic, F#)
 
@@ -69,6 +70,6 @@ In queste situazioni, è possibile creare un progetto EXE di Visual Studio per l
 1. Con il nuovo file selezionato, avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dalle **Debug** menu.    
   
 ### <a name="see-also"></a>Vedere anche  
- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)   
+ [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [File DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))
