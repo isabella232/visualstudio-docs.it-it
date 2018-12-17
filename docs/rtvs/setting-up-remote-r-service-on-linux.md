@@ -158,7 +158,7 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 
 1. Per connettersi al contenitore da RTVS, usare il percorso `https://localhost:5444`, il nome utente `<<unix>>\ruser1` e la password `foobar`. Se il contenitore è in esecuzione in un computer remoto, usare invece il percorso `https://remote-host-name:5444`. La porta può essere modificata aggiornando */etc/rtvs/rtvsd.config.json*.
 
-### <a name="container-running-on-azure-container-instances"></a>Contenitore in esecuzione in istanze di contenitore di Azure
+### <a name="container-running-on-azure-container-instances"></a>Contenitore in esecuzione in Istanze di Azure Container
 
 1. Seguire le istruzioni in [Contenitore Docker locale o remoto (compilazione pulita)](#local-or-remote-docker-container-clean-build) per creare l'immagine.
 1. Eseguire il push del contenitore nell'hub Docker o in Azure Container Repository.

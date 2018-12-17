@@ -189,7 +189,7 @@ Dopo avere creato un'immagine, è possibile eseguirla in un contenitore per eseg
    docker run -it buildtools2017
    ```
 
-Per usare questa immagine per il flusso di lavoro CI/CD, è possibile pubblicarla nel proprio [Registro contenitori di Azure](https://azure.microsoft.com/services/container-registry) o in un altro [registro Docker](https://docs.docker.com/registry/deploying) interno, in modo che i server possano semplicemente eseguirne il pull.
+Per usare questa immagine per il flusso di lavoro CI/CD, è possibile pubblicarla nel proprio [Registro Azure Container](https://azure.microsoft.com/services/container-registry) o in un altro [registro Docker](https://docs.docker.com/registry/deploying) interno, in modo che i server possano semplicemente eseguirne il pull.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
