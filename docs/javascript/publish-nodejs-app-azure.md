@@ -24,7 +24,7 @@ ms.locfileid: "50750767"
 
 Questa esercitazione illustra l'attività di creazione di una semplice applicazione Node.js e della pubblicazione in Azure.
 
-Nella pubblicazione di un'applicazione Node.js in Azure, sono disponibili diverse opzioni, tra cui il Servizio app di Azure, una macchina virtuale con un sistema operativo scelto dall'utente, il servizio contenitore di Azure (AKS) per la gestione con Kubernetes, un'istanza di contenitore con Docker e altro ancora. Per altre informazioni su ognuna di queste opzioni, vedere [Calcolo](https://azure.microsoft.com/product-categories/compute/).
+Nella pubblicazione di un'applicazione Node.js in Azure, sono disponibili diverse opzioni, tra cui il Servizio app di Azure, una macchina virtuale con un sistema operativo scelto dall'utente, il servizio Azure Container per la gestione con Kubernetes, un'istanza di contenitore con Docker e altro ancora. Per altre informazioni su ognuna di queste opzioni, vedere [Calcolo](https://azure.microsoft.com/product-categories/compute/).
 
 Per questa esercitazione, l'app viene distribuita nel [Servizio app Linux](/azure/app-service/containers/app-service-linux-intro).
 Il Servizio app Linux consente di distribuire un contenitore Docker di Linux per eseguire l'applicazione Node.js (anziché il Servizio app di Windows, che esegue le app Node.js su IIS in Windows).
