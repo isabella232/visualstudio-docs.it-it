@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280597"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159529"
 ---
 # <a name="access-data-in-visual-studio"></a>Accedere ai dati in Visual Studio
 
@@ -37,32 +37,35 @@ La maggior parte dei altri SQL e NoSQL database prodotti sono elencati di seguit
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|Database SQL|Azure Cosmos DB|Archiviazione (BLOB, tabelle, code, file)|
-|SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
-
-E molto altro ancora.
+- Database SQL
+- Azure Cosmos DB
+- Archiviazione (BLOB, tabelle, code, file)
+- SQL Data Warehouse
+- SQL Server Stretch Database
+- StorSimple
+- E molto altro ancora.
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005-2016, tra cui LocalDB ed Express|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
-|SQLite|||
-
-E molto altro ancora.
+- SQL Server 2005-2016 (include Express e database locale)
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- E molto altro ancora.
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|NDatabase|OrientDB|RavenDB|
-|VelocityDB|||
-
-E molto altro ancora.
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- NDatabase
+- OrientDB |
+- RavenDB
+- VelocityDB
+- E molto altro ancora.
 
 Molti fornitori di database e di terze parti supportano l'integrazione di Visual Studio per i pacchetti NuGet. È possibile esplorare le offerte in nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**degli strumenti** > **Gestione pacchetti NuGet** > **Gestisci NuGet Pacchetti per la soluzione**). Altri prodotti di database si integrano con Visual Studio come un'estensione. È possibile esplorare queste offerte in Visual Studio Marketplace, passare a **Tools**, **estensioni e aggiornamenti** e quindi selezionando **Online** nel riquadro sinistro della finestra di finestra di dialogo. Per altre informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -73,9 +76,9 @@ Molti fornitori di database e di terze parti supportano l'integrazione di Visual
 
 Tutti gli accessi di dati .NET, incluso in .NET Core sono basato su ADO.NET, un set di classi che definisce un'interfaccia per l'accesso a qualsiasi tipo di origine dati, relazionali e non relazionali. Visual Studio include diversi strumenti e finestre di progettazione che funzionano con ADO.NET per eseguire la connessione ai database, modificare i dati e presentarli all'utente. La documentazione in questa sezione descrive come usare questi strumenti. È anche possibile programmare direttamente usando gli oggetti comando ADO.NET. Per altre informazioni sulla chiamata ADO.NET APIs direttamente, vedere [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Per la documentazione di accesso ai dati correlata ad ASP.NET, vedere [utilizzo di dati](http://www.asp.net/web-forms/overview/presenting-and-managing-data) sul sito ASP.NET. Per un'esercitazione sull'uso di Entity Framework con MVC ASP.NET, vedere [Introduzione a Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Per la documentazione di accesso ai dati correlata ad ASP.NET, vedere [utilizzo di dati](https://www.asp.net/web-forms/overview/presenting-and-managing-data) sul sito ASP.NET. Per un'esercitazione sull'uso di Entity Framework con MVC ASP.NET, vedere [Introduzione a Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Universal Windows Platform (UWP) le App in c# o Visual Basic possono usare Microsoft Azure SDK per .NET per accedere all'archiviazione di Azure e altri servizi di Azure. La classe Windows.Web.HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per altre informazioni, vedere [come connettersi a un server HTTP utilizzando consente](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+App universali di Windows Platform (UWP) in C# o Visual Basic possono usare Microsoft Azure SDK per .NET per accedere all'archiviazione di Azure e altri servizi di Azure. La classe Windows.Web.HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per altre informazioni, vedere [come connettersi a un server HTTP utilizzando consente](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
 Per l'archiviazione dei dati nel computer locale, l'approccio consigliato consiste nell'utilizzare SQLite, che viene eseguito nello stesso processo dell'app. Se è necessario un livello di mapping relazionale a oggetti (ORM), è possibile usare Entity Framework. Per altre informazioni, vedere [DAS](/windows/uwp/data-access/index) nel Centro sviluppatori Windows.
 
@@ -103,9 +106,9 @@ Le applicazioni C++ che si connettono a SQL Server devono usare la [Microsoft® 
 
 I programmi C++ che usano servizi REST è possono usare la [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
-I programmi C++ che funzionano con archiviazione di Microsoft Azure possono usare la [il Client di archiviazione di Microsoft Azure](http://www.nuget.org/packages/wastorage).
+I programmi C++ che funzionano con archiviazione di Microsoft Azure possono usare la [il Client di archiviazione di Microsoft Azure](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP).
 
-Modellazione dei dati&mdash;Visual Studio non fornisce un livello ORM per C++. [ODB](http://www.codesynthesis.com/products/odb/) è un prodotto ORM open source più diffusi per C++.
+Modellazione dei dati&mdash;Visual Studio non fornisce un livello ORM per C++. [ODB](https://www.codesynthesis.com/products/odb/) è un prodotto ORM open source più diffusi per C++.
 
 Per altre informazioni sulla connessione ai database da app C++, vedere [Visual Studio data tools per C++](../data-tools/visual-studio-data-tools-for-cpp.md). Per altre informazioni sulle tecnologie di accesso ai dati legacy Visual C++, vedere [DAS](/cpp/data/data-access-in-cpp).
 
@@ -135,11 +138,11 @@ Installare [supporto di Python in Visual Studio](../python/overview-of-python-to
 
 [ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;viene descritto come creare applicazioni di dati che consentono agli sviluppatori di programmare sulla base di un modello concettuale anziché direttamente in un database relazionale.
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati nel web o in una rete intranet che implementano il [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati nel web o in una rete intranet che implementano il [Open Data Protocol (OData)](https://www.odata.org/).
 
 [I dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)&mdash;contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;descrive le funzionalità di query incorporate in c# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, i set di dati e raccolte in memoria.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;descrive le funzionalità di query incorporate in C# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, i set di dati e raccolte in memoria.
 
 [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;illustra l'uso di funzionalità XML di .NET Framework i dati, debug XSLT, XML e l'architettura di Query XML.
 

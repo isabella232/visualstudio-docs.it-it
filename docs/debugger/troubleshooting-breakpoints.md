@@ -1,6 +1,6 @@
 ---
-title: Risolvere i punti di interruzione nel Debugger di Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Risolvere i punti di interruzione nel debugger | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/23/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b285fd77c7e1ee25e6c82fc3f8c0ce48b4429e8b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155399"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052851"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Risolvere i punti di interruzione nel Debugger di Visual Studio
 
@@ -24,7 +24,7 @@ Durante il debug, un punto di interruzione ha due possibili stati di visualizzaz
 
 Le due sezioni seguenti descrivono gli avvisi principali e come risolverli. 
 
-### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Simboli non caricati per questo documento" 
+### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nessun simbolo è stato caricato per questo documento" 
 
 Andare alla **moduli** finestra (**Debug** > **Windows** > **moduli**) e controllare se il modulo è caricato.  
 * Se il modulo viene caricato, controllare la **stato simboli** colonna per verificare se sono stati caricati i simboli. 
@@ -36,7 +36,7 @@ Andare alla **moduli** finestra (**Debug** > **Windows** > **moduli**) e control
 
 * Se non viene caricato un modulo, verificare quanto segue per individuare la causa: 
   * Confermare che si esegue il debug del processo appropriato. 
-  * Verificare che si esegue il debug del tipo appropriato di codice. È possibile scoprire che tipo di debugger è configurato per eseguire il debug nel codice il **processi** finestra (**Debug** > **Windows**  >  **Processi**). Ad esempio, se si sta provando a eseguire il debug di codice c#, verificare che il debugger sia configurato per il tipo appropriato di .NET Framework (ad esempio, gestito (v4\*) e gestito (v2\*/v3\*) e gestito (CoreCLR)). 
+  * Verificare che si esegue il debug del tipo appropriato di codice. È possibile scoprire che tipo di debugger è configurato per eseguire il debug nel codice il **processi** finestra (**Debug** > **Windows**  >  **Processi**). Ad esempio, se si sta tentando di eseguire il debug C# del codice, verificare che il debugger sia configurato per il tipo appropriato di .NET Framework (ad esempio, gestito (v4\*) e gestito (v2\*/v3\*) e gestito (CoreCLR)) . 
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… il codice sorgente corrente è diverso da quello della versione compilata in..." 
 
@@ -54,7 +54,7 @@ In questa sezione fornisce informazioni per risolvere i problemi quando il debug
 
 Ecco alcuni aspetti da controllare: 
 1. Se il codice viene eseguito nel processo più di una o più computer, assicurarsi che il debug viene eseguito il giusto processo o computer.  
-2. Verificare che il codice sia in esecuzione. Per verificare che il codice sia in esecuzione, aggiungere una chiamata a `System.Diagnostics.Debugger.Break` (C# /VB) o `__debugbreak` (C++) per la riga di codice in cui si sta tentando di impostare il punto di interruzione e quindi ricompilare il progetto. 
+2. Verificare che il codice sia in esecuzione. Per verificare che il codice sia in esecuzione, aggiungere una chiamata a `System.Diagnostics.Debugger.Break` (C#/VB) o `__debugbreak` (C++) per la riga di codice in cui si sta tentando di impostare il punto di interruzione e quindi ricompilare il progetto. 
 3. Se si esegue il debug del codice ottimizzato, assicurarsi che la funzione in cui è impostato il punto di interruzione non è in corso resa inline in un'altra funzione. Il `Debugger.Break` test descritto nel controllo di precedenti possono essere usati per testare anche il problema. 
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Un punto di interruzione è stato eliminato ma si continua a raggiungerlo quando si avvia nuovamente il debug 

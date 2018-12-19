@@ -1,6 +1,6 @@
 ---
-title: 'Preparazione al debug: Servizi di Windows | Documenti Microsoft'
-ms.custom: ''
+title: Preparazione al debug di servizi di Windows | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed27902be01868955618970d376a4615627d05dc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 86a80c6c24fdba594a5bfb5c11650b69eb2de693
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479903"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065012"
 ---
 # <a name="debugging-preparation-windows-services"></a>Preparazione al debug: servizi Windows
-Un servizio Windows è un programma che viene eseguito in background in Microsoft Windows. Ne sono un esempio il servizio Telnet e il Time Service di Windows che aggiorna l'orologio visualizzato sul computer. I servizi Windows non possono essere eseguiti dall'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'esecuzione deve avvenire nel contesto di Gestione controllo servizi. Per ulteriori informazioni, vedere [creazione di servizi Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [il debug di applicazioni di servizio Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), e [applicazioni di servizio Windows](/dotnet/framework/windows-services/index).  
+Un servizio Windows è un programma che viene eseguito in background in Microsoft Windows. Ne sono un esempio il servizio Telnet e il Time Service di Windows che aggiorna l'orologio visualizzato sul computer. I servizi Windows non possono essere eseguiti dall'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'esecuzione deve avvenire nel contesto di Gestione controllo servizi. Per altre informazioni, vedere [Creare servizi Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [Eseguire il debug di applicazioni di servizio per Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) e [Applicazioni di servizi Windows](/dotnet/framework/windows-services/index).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   

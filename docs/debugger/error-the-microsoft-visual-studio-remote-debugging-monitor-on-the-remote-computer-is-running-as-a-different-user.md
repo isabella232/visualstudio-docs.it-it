@@ -1,6 +1,7 @@
 ---
-title: 'Errore: Microsoft Visual Studio Remote Debugging Monitor nel computer remoto è in esecuzione come utente diverso | Documenti Microsoft'
-ms.custom: ''
+title: 'Errore: Microsoft Visual Studio Remote Debugging Monitor è in esecuzione sul computer remoto come utente diverso'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2bdc731b65a8d451b6882914e8bed1abca2139b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1cb477cf852d0e07bf14f344b3dc27b20a56de59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482022"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067733"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor è in esecuzione sul computer remoto come utente diverso
 Quando si tenta di eseguire il debug remoto, potrebbe essere visualizzato il seguente messaggio di errore:  
@@ -37,11 +38,11 @@ Quando si tenta di eseguire il debug remoto, potrebbe essere visualizzato il seg
  Questo messaggio viene visualizzato quando si esegue il debug in modalità Nessuna autenticazione e l'utente che ha avviato msvsmon non è lo stesso che esegue Visual Studio.  
   
 ## <a name="solution"></a>Soluzione  
- La soluzione ottimale, anche dal punto di vista della sicurezza, consiste nell'eseguire Remote Debugging Monitor (msvsmon.exe) utilizzando lo stesso account utente di Visual Studio. Se non è, è possibile eseguire Remote Debugging Monitor utilizzando l'altro account con il **consentire agli utenti di eseguire il debug** opzione selezionata in Remote Debugging Monitor **opzioni** la finestra di dialogo.  
+ La soluzione ottimale, anche dal punto di vista della sicurezza, consiste nell'eseguire Remote Debugging Monitor (msvsmon.exe) utilizzando lo stesso account utente di Visual Studio. Se non è possibile, eseguire Remote Debugging Monitor utilizzando l'altro account con l'opzione **Consenti di eseguire il debug a qualunque utente** nella finestra di dialogo **Opzioni** di Remote Debugging Monitor.  
   
 > [!CAUTION]
->  Se si concede ad altri utenti l'autorizzazione per la connessione, è possibile che si verifichino problemi di connessione alla sessione di debug remoto errata. Debug in **Nessuna autenticazione** modalità non è sicura e deve essere utilizzata con cautela.
+>  Se si concede ad altri utenti l'autorizzazione per la connessione, è possibile che si verifichino problemi di connessione alla sessione di debug remoto errata. Il debug in modalità **Nessuna autenticazione** non offre alcun livello di sicurezza e deve essere usato con cautela.
   
 ## <a name="see-also"></a>Vedere anche  
- [Risoluzione dei problemi e gli errori di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Debug remoto](../debugger/remote-debugging.md)
+ [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

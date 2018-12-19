@@ -1,6 +1,6 @@
 ---
-title: Come attivare sospensione, ripresa e background eventi durante il debug di App UWP | Microsoft Docs
-ms.custom: ''
+title: Trigger di sospensione, ripresa e background eventi durante il debug di UWP | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280012"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054661"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospensione, ripresa e background eventi durante il debug di App UWP in Visual Studio
 Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) controlla lo stato di esecuzione dell'app, cioè avvio, sospensione, ripresa e terminazione, in risposta alle azioni dell'utente e allo stato del dispositivo. Quando esegui il debug, Windows disabilita questi eventi di attivazione. In questo argomento viene descritto come generare tali eventi nel debugger.  
   
  Viene inoltre descritto come eseguire il debug di **attività in background**. Le attività in background consentono di eseguire determinate operazioni in un processo in background, anche quando l'app non è in esecuzione. Puoi utilizzare il debugger per attivare la modalità di debug dell'app, quindi avviare l'attività in background ed eseguire il debug, senza avviare l'interfaccia utente.  
   
- Per altre informazioni sulle attività di Process Lifetime Management e in background, vedere [Launching, resuming e multitasking](/windows/uwp/launch-resume/index).  
+ Per ulteriori informazioni su Process Lifetime Management e le attività in background, vedi [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Attivare gli eventi di Process Lifetime Management  
  Windows può sospendere l'app quando l'utente passa a un'altra visualizzazione o quando viene attivata la modalità basso consumo. Puoi rispondere all'evento `Suspending` per salvare i dati utente e dell'app rilevanti in un archivio permanente e per liberare risorse. Quando un'app viene riattivata dallo stato **Sospeso** , passa allo stato **In esecuzione** e continua dal punto in cui si trovava al momento della sospensione. Puoi rispondere all'evento `Resuming` per ripristinare o aggiornare lo stato dell'app e recuperare le risorse.  
@@ -48,7 +48,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
      Nota che **Sospendi e termina** chiude l'app e termina la sessione di debug.  
   
 ##  <a name="BKMK_Trigger_background_tasks"></a> Attivare attività in background  
- Qualsiasi app può registrare un'attività in background per rispondere a determinati eventi di sistema, anche quando l'app non è in esecuzione. Le attività in background non possono eseguire codice che aggiorna direttamente l'interfaccia utente. Visualizzano invece informazioni all'utente con aggiornamenti di riquadri, aggiornamenti di notifiche e notifiche di tipo avviso popup. Per altre informazioni, vedere [che supportano l'app con le attività in background](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
+ Qualsiasi app può registrare un'attività in background per rispondere a determinati eventi di sistema, anche quando l'app non è in esecuzione. Le attività in background non possono eseguire codice che aggiorna direttamente l'interfaccia utente. Visualizzano invece informazioni all'utente con aggiornamenti di riquadri, aggiornamenti di notifiche e notifiche di tipo avviso popup. Per altre informazioni, vedere [Supporting your app with background tasks](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).  
   
  Puoi attivare eventi che avviano attività in background per l'app dal debugger.  
   
@@ -99,18 +99,18 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
  Una volta caricata l'app nel debugger, puoi utilizzare una qualsiasi tra le procedure descritte sopra.  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostica degli errori di attivazione di attività in background  
- I log di diagnostica nel Visualizzatore eventi di Windows per l'infrastruttura in background contiene informazioni dettagliate che è possibile usare per diagnosticare e risolvere gli errori di attività in background. Per visualizzare il log:  
+ I log di diagnostica nel Visualizzatore eventi di Windows per l'infrastruttura in background includono informazioni dettagliate che è possibile usare per diagnosticare e risolvere gli errori delle attività in background. Per visualizzare il log:  
   
 1.  Aprire l'applicazione Visualizzatore eventi.  
   
 2.  Nel riquadro **Azioni** scegli **Visualizza** e verificare che **Visualizza registri analitici e di debug** sia selezionata.  
   
-3.  Nel **Visualizzatore eventi (locale)** struttura ad albero, espandere i nodi **registri applicazioni e servizi** > **Microsoft** > **Windows**   >  **BackgroundTasksInfrastructure**.  
+3.  Sulla barra degli strumenti **Visualizzatore eventi (locale)** espandi i nodi **Registri applicazioni e servizi** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.  
   
 4.  Scegli il log **Diagnostica** .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Test delle app UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Application Lifecycle Management](/windows/uwp/launch-resume/app-lifecycle)   
- [L'avvio, ripresa e multitasking](/windows/uwp/launch-resume/index)
+ [Ciclo di vita dell'applicazione](/windows/uwp/launch-resume/app-lifecycle)   
+ [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

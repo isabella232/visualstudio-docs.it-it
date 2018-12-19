@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: scrivere una funzione di segnalazione degli errori di Run-Time | Microsoft Docs'
-ms.custom: ''
+title: Scrivere una funzione di segnalazione degli errori di runtime | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057873"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051503"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Procedura: scrivere una funzione per la segnalazione degli errori di runtime
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Procedura: Scrivere una funzione per la segnalazione degli errori di runtime
 Una funzione personalizzata per la segnalazione degli errori di runtime deve avere la stessa dichiarazione di `_CrtDbgReportW` e deve restituire al debugger il valore 1.  
   
  Nell'esempio riportato di seguito viene illustrato come definire una funzione personalizzata per la segnalazione degli errori.  
@@ -108,7 +108,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>Esempio  
- Per installare questa funzione personalizzata al posto di `_RTC_SetErrorFuncW`, utilizzare `_CrtDbgReportW`. Per altre informazioni, vedere [RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). Il valore restituito da `_RTC_SetErrorFuncW` è la funzione di segnalazione precedente, che può essere salvata e ripristinata in caso di necessità.  
+ Per installare questa funzione personalizzata al posto di `_RTC_SetErrorFuncW`, utilizzare `_CrtDbgReportW`. Per altre informazioni, vedere [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). Il valore restituito da `_RTC_SetErrorFuncW` è la funzione di segnalazione precedente, che può essere salvata e ripristinata in caso di necessità.  
   
 ```cpp
 #include <rtcapi.h>  

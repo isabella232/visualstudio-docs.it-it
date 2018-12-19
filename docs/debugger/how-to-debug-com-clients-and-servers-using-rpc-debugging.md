@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: eseguire il Debug di client e server mediante il debug RPC COM | Documenti Microsoft'
-ms.custom: ''
+title: Eseguire il debug di client e server mediante il debug RPC COM | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,25 +27,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473738"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049022"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedura: eseguire il debug di client e server COM mediante il debug RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedura: Eseguire il debug di client e server COM usando il debug RPC
 È possibile utilizzare il debug RPC (Remote Procedure Call, chiamata a procedura remota) per eseguire il debug delle applicazioni client/server COM. Per utilizzare tale debug, è necessario attivarlo. Quando si chiama il server dal client con il debug RPC attivato, il debugger si connette al server e consente di eseguire il debug del codice. Una volta stabilita la connessione al server, è possibile utilizzare tutte le funzionalità del debugger per i processi del client e del server.  
   
 ### <a name="to-enable-rpc-debugging"></a>Per attivare il debug RPC  
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **opzioni** la finestra di dialogo, fare clic su di **debug** cartella.  
+2.  Nella finestra di dialogo **Opzioni** fare clic sulla cartella **Debug**.  
   
-3.  Fare clic su di **nativo** pagina.  
+3.  Fare clic sulla pagina **Nativo**.  
   
-4.  Selezionare il **il debug RPC** casella di controllo.  
+4.  Selezionare la casella di controllo **Debug RPC**.  
   
     > [!NOTE]
     >  Per eseguire il debug delle chiamate RPC, è necessario disporre dei privilegi di tipo Administrator o Power User.  

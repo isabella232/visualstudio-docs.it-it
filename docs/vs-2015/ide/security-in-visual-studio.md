@@ -1,5 +1,5 @@
 ---
-title: Sicurezza in Visual Studio | Microsoft Docs
+title: Sicurezza
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,35 +17,28 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 17f34f3bdef587b679789d4ebb34a4b15bd4cf63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: ae5db15fda1914d52be192a516d70704d2ad3cf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198172"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061746"
 ---
 # <a name="security-in-visual-studio"></a>Sicurezza in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È opportuno includere considerazioni sulla sicurezza in tutti gli aspetti dello sviluppo di applicazioni, dalla progettazione alla distribuzione. Iniziare eseguendo Visual Studio nel modo più sicuro possibile. Vedere [Autorizzazioni utente](../ide/user-permissions-and-visual-studio.md).  
-  
- Per sviluppare applicazioni efficacemente sicure, è necessario acquisire familiarità con i concetti e le funzionalità relative alla sicurezza delle piattaforme per le quali si sviluppano le applicazioni. È inoltre necessario comprendere le tecniche di sicurezza del codice.  
-  
-## <a name="understanding-security"></a>Informazioni sulla sicurezza  
- [Sicurezza](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6)  
- Vengono descritte la sicurezza dall'accesso di codice, la sicurezza basata sui ruoli e i criteri e gli strumenti di sicurezza di .NET Framework.  
-  
- [Defend Your Code with Top Ten Security Tips Every Developer Must Know](http://go.microsoft.com/fwlink/?LinkId=72877) (Dieci suggerimenti principali per la protezione del codice che ogni sviluppatore dovrebbe conoscere)  
- Vengono descritte le problematiche da tenere in considerazione per non compromettere i dati o il sistema.  
-  
-## <a name="coding-for-security"></a>Creazione di codice per la sicurezza  
- La maggior parte degli errori di codifica che determinano vulnerabilità nella sicurezza si verificano perché gli sviluppatori compiono valutazioni errate rispetto all'input degli utenti o non hanno una comprensione globale della piattaforma per la quale sviluppano le applicazioni.  
-  
- [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)  
- Vengono fornite indicazioni per la classificazione dei componenti finalizzata a risolvere i problemi di sicurezza.  
-  
- [Procedure di sicurezza consigliate](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
- Vengono presi in esame i sovraccarichi del buffer e viene fornita una sintesi completa della funzionalità di controllo della sicurezza di Microsoft Visual C++ resa disponibile dal flag /GS della fase di compilazione.
+È opportuno includere considerazioni sulla sicurezza in tutti gli aspetti dello sviluppo di applicazioni, dalla progettazione alla distribuzione. Iniziare eseguendo Visual Studio nel modo più sicuro possibile. Vedere [Autorizzazioni utente](../ide/user-permissions-and-visual-studio.md).
 
+ Per sviluppare applicazioni efficacemente sicure, è necessario acquisire familiarità con i concetti e le funzionalità relative alla sicurezza delle piattaforme per le quali si sviluppano le applicazioni. È inoltre necessario comprendere le tecniche di sicurezza del codice.
 
+## <a name="understanding-security"></a>Informazioni sulla sicurezza
+ [Sicurezza](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6) Vengono descritte la sicurezza dall'accesso di codice, la sicurezza basata sui ruoli e i criteri e gli strumenti di sicurezza di .NET Framework.
 
+ [Defend Your Code with Top Ten Security Tips Every Developer Must Know](http://go.microsoft.com/fwlink/?LinkId=72877) (Dieci suggerimenti principali per la protezione del codice che ogni sviluppatore dovrebbe conoscere) Vengono descritte le problematiche da tenere in considerazione per non compromettere i dati o il sistema.
+
+## <a name="coding-for-security"></a>Creazione di codice per la sicurezza
+ La maggior parte degli errori di codifica che determinano vulnerabilità nella sicurezza si verificano perché gli sviluppatori compiono valutazioni errate rispetto all'input degli utenti o non hanno una comprensione globale della piattaforma per la quale sviluppano le applicazioni.
+
+ [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) Vengono fornite indicazioni per la classificazione dei componenti finalizzata a risolvere i problemi di sicurezza.
+
+ [Procedure consigliate per la sicurezza](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Vengono presi in esame i sovraccarichi del buffer e viene fornita una sintesi completa della funzionalità di controllo della sicurezza di Microsoft Visual C++ resa disponibile dal flag /GS della fase di compilazione.

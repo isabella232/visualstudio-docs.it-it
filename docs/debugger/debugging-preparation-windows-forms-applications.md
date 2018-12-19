@@ -1,6 +1,6 @@
 ---
-title: 'Preparazione al debug: Applicazioni Windows Forms | Microsoft Docs'
-ms.custom: ''
+title: Preparare il debug delle app di Windows Form | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951067"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066418"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Preparazione al debug: applicazioni Windows Forms
+# <a name="debugging-preparation-windows-forms-applications"></a>Preparazione al debug: Applicazioni Windows Form
 Il modello di progetto Windows Forms consente di creare un'applicazione Windows Forms. Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è una procedura molto semplice. Per altre informazioni, vedere [creazione di un progetto di applicazione Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
- Quando si crea un progetto di Windows Form mediante il modello di progetto, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono definite automaticamente le impostazioni necessarie per le configurazioni di debug e di rilascio. Se necessario, è possibile modificare tali impostazioni. Queste impostazioni possono essere modificate nel  **\<nome progetto > pagine delle proprietà** nella finestra di dialogo (**progetto personale** in Visual Basic).  
+ Quando si crea un progetto di Windows Form mediante il modello di progetto, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono definite automaticamente le impostazioni necessarie per le configurazioni di debug e di rilascio. Se necessario, è possibile modificare tali impostazioni. Queste impostazioni possono essere modificate nella finestra di dialogo **Pagine delle proprietà di \<nome progetto>** (**Progetto** in Visual Basic).  
   
  Per altre informazioni, vedere [impostazioni di proprietà consigliate](../debugger/managed-debugging-recommended-property-settings.md).  
   
@@ -39,9 +39,9 @@ Il modello di progetto Windows Forms consente di creare un'applicazione Windows 
   
 ### <a name="configuration-properties-in-debug-tab"></a>Proprietà di configurazione disponibili nella scheda Debug  
   
-|**Nome della proprietà**|**Impostazione**|  
+|**Nome proprietà**|**Impostazione**|  
 |-----------------------|-----------------|  
-|**Azione di avvio**|-Impostare su **progetto di avvio,** la maggior parte dei casi. Impostare su **Avvia programma esterno** se si desidera avviare un altro eseguibile quando si avvia il debug (in genere per il debug di DLL).|  
+|**Azione di avvio**|Nella maggior parte dei casi, impostare questa proprietà su **Avvia progetto**. Impostare questa proprietà su **Avvia programma esterno** se si vuole avviare un altro eseguibile quando si inizia il debug (in genere per il debug di DLL).|  
   
  È possibile eseguire il debug di applicazioni Windows Forms dall'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oppure stabilendo una connessione a un'applicazione già in esecuzione. Per altre informazioni sul collegamento, vedere [connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
@@ -61,15 +61,15 @@ Il modello di progetto Windows Forms consente di creare un'applicazione Windows 
   
       Per altre informazioni, vedere [Creazione di gestori eventi in Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
   
-3. Nel **Debug** menu, fare clic su **avviare**.  
+3. Nel menu **Debug** fare clic su **Avvia**.  
   
 4. Eseguire il debug usando le tecniche descritte in [nozioni fondamentali di debug](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
  [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Procedura: Set di configurazioni di Debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)   
  [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Collegamento a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows Form](/dotnet/framework/winforms/index)

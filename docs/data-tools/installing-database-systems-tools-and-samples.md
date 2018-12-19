@@ -1,5 +1,5 @@
 ---
-title: Compatibilità del database di Visual Studio
+title: Compatibilità del database
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089195"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049560"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemi di database compatibili per Visual Studio
 
@@ -58,4 +58,4 @@ Firebird è un sistema di database SQL open source. È possibile scaricarlo dal 
 ## <a name="see-also"></a>Vedere anche
 
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Come determinare la versione ed edizione di SQL Server e i relativi componenti](http://support.microsoft.com/kb/321185)
+- [Come determinare la versione e l'edizione di SQL Server e dei relativi componenti](http://support.microsoft.com/kb/321185)

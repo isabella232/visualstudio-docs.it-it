@@ -1,6 +1,8 @@
 ---
-title: Eseguire il Debug remoto, un progetto c# o Visual Basic in Visual Studio | Microsoft Docs
-ms.custom: remotedebugging
+title: Eseguire il Debug remoto un C# o un progetto di Visual Basic | Microsoft Docs
+ms.custom:
+- remotedebugging"=
+- seodec18
 ms.date: 08/14/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d6bd68f5e94e04cab01dcb7bafd7dcc3cf3c17d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 82873b29a173209739497087a4dfe5b293123e2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936123"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055660"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di un progetto c# o Visual Basic in Visual Studio
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto un C# o un progetto di Visual Basic in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -39,7 +41,7 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) 
 > [!NOTE]
 > Non è supportato tra due computer connessi tramite un proxy di debug. Debug tramite una latenza elevata o una connessione di larghezza di banda ridotta, ad esempio Internet, accesso remoto o la rete Internet tra paesi non è consigliabile e può avere esito negativo o essere inaccettabile.
   
-## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare remote tools
+## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare Remote Tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -64,19 +66,19 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
   
 3. In Esplora soluzioni fare clic sul progetto e scegliere **proprietà**.  
   
-4. Nel **delle proprietà** pagina, scegliere il **Debug** scheda.  
+4. Nella pagina **Proprietà** scegliere la scheda **Debug**.  
   
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5. Assicurarsi che il **directory di lavoro** casella di testo è vuota.  
+5. Verificare che la casella di testo **Directory di lavoro** sia vuota.  
   
 6. Scegli **Usa computer remoto**e il tipo **MJO-DL:4022** nella casella di testo. (4022 è il numero di porta visualizzato nella finestra del debugger remoto. Il numero della porta incrementa 2 in ogni versione di Visual Studio).
   
-7. Verificare che l'opzione **Abilita debug codice nativo** non è selezionata.  
+7. Assicurarsi che l'opzione **Attiva il debug di codice nativo** non sia selezionata.  
   
 8. Compilare il progetto.  
   
-9. Creare una cartella nel computer remoto che è lo stesso percorso come il **Debug** cartella nel computer Visual Studio:  **\<percorso di origine > \MyWPF\MyWPF\bin\Debug**.  
+9. Creare una cartella nel computer remoto con lo stesso percorso della cartella **Debug** nel computer di Visual Studio: **\<percorso di origine>\MyWPF\MyWPF\bin\Debug**.  
   
 10. Copiare il file eseguibile appena compilato dal computer di Visual Studio alla nuova cartella nel computer remoto.
   
@@ -89,19 +91,19 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
   
      ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
-12. In Visual Studio, avviare il debug (**Debug > Avvia debug**, o **F5**).  
+12. Avviare il debug in Visual Studio (**Debug > Avvia debug** o **F5**).  
   
 13. Se richiesto, immettere le credenziali di rete per la connessione al computer remoto.  
   
      Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. In un computer di dominio, ad esempio, è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio <strong>MJO-DL\name@something.com</strong>, con password non corretta.
 
-     Si noterà che finestra principale dell'applicazione WPF è aperta nel computer remoto.
+     La finestra principale dell'applicazione WPF apparirà aperta nel computer remoto.
   
 14. Se necessario, intervenire per raggiungere il punto di interruzione. Il punto di interruzione dovrebbe essere attivo. In caso contrario, non sono stati caricati i simboli per l'applicazione. Riprova e se il problema persiste, ottenere informazioni sul caricamento dei simboli e come risolvere i problemi di averli [file dei simboli e Visual Studio le impostazioni dei simboli](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.
   
-    Se si dispone di tutti i file non di codice che devono essere utilizzate dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi > nuova cartella**). Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Aggiungi > elemento esistente**, quindi selezionare i file). Nel **delle proprietà** pagina per ogni file, impostare **copia in Directory di Output** a **Copia sempre**.
+    Se si dispone di tutti i file non di codice che devono essere utilizzate dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (in **Esplora soluzioni** fare clic su **Aggiungi > Nuova cartella**). Aggiungere i file alla cartella (in **Esplora soluzioni** fare clic su **Aggiungi > Elemento esistente**, quindi selezionare i file). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti 
 
@@ -110,7 +112,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/index.md)  
  [Debugger Feature Tour](../debugger/debugger-feature-tour.md)  (Tour delle funzionalità del debugger)  
- [Configurare il Firewall di Windows per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

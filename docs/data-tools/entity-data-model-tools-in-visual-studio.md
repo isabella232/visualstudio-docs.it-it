@@ -1,5 +1,5 @@
 ---
-title: Strumenti di Entity Framework in Visual Studio
+title: Strumenti di Entity Framework
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819095"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066798"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Strumenti di Entity Framework in Visual Studio
+
 Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di utilizzare dati relazionali mediante oggetti specifici di dominio. In questo modo la maggior parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere non è più necessaria. Entity Framework è il consigliato object relational mapping (ORM) modellazione tecnologia per le nuove applicazioni .NET.
 
 Strumenti di Entity Framework sono progettati per la compilazione di applicazioni Entity Framework (EF). La documentazione completa per Entity Framework è qui: [EF Core ed Entity Framework 6](/ef/).
 
 Con strumenti di Entity Framework, è possibile creare un *del modello concettuale* da un oggetto esistente del database e quindi graficamente visualizzare e modificare il modello concettuale. È inoltre possibile creare prima graficamente un modello concettuale e successivamente generare un database di supporto al modello. In entrambi i casi, è possibile aggiornare automaticamente il modello quando viene modificato il database sottostante e generare automaticamente codice del livello oggetti per l'applicazione. La generazione del database e del codice del livello oggetti è personalizzabile.
 
-Strumenti di Entity Framework vengono installati come parte di **elaborazione ed archiviazione dati** carico di lavoro in Visual Studio Installer. È inoltre possibile installarli come componente singoli con il **SDK, librerie e Framework** categoria.
+Strumenti di Entity Framework vengono installati come parte di **elaborazione ed archiviazione dati** carico di lavoro in Visual Studio Installer. È inoltre possibile installarli come componente singolo sotto il **SDK, librerie e Framework** categoria.
 
 Questi sono gli strumenti specifici che costituiscono gli strumenti di Entity Framework in Visual Studio:
 
@@ -37,7 +38,7 @@ Questi sono gli strumenti specifici che costituiscono gli strumenti di Entity Fr
 - È possibile usare la **procedura guidata Aggiorna modello** per aggiornare il modello concettuale, un modello di archiviazione e un mapping quando sono state apportate modifiche al database sottostante.
 
   > [!NOTE]
-  >  A partire da Visual Studio 2010, strumenti di Entity Framework non supportano [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > A partire da Visual Studio 2010, strumenti di Entity Framework non supportano [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Gli strumenti generano o modificano un' *edmx* file. Ciò *edmx* file contiene informazioni che descrivono il modello concettuale, il modello di archiviazione e i mapping tra di essi. Per altre informazioni, vedere [EDMX](https://docs.microsoft.com/ef/ef6/).
 
@@ -45,7 +46,7 @@ Gli strumenti generano o modificano un' *edmx* file. Ciò *edmx* file contiene i
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-| Titolo | Descrizione |
+| Titolo | Description |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Viene descritto come utilizzare [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] strumenti di cui [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fornisce, per creare applicazioni. |
 | [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Fornisce collegamenti e informazioni per l'utilizzo di dati utilizzati dalle applicazioni compilate in [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |

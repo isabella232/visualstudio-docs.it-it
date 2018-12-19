@@ -1,6 +1,5 @@
 ---
 title: Configurare Windows Firewall per debug remoto | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: HT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750936"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058597"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per debug remoto
 
@@ -56,8 +55,8 @@ Per eseguire il debug remoto, le porte seguenti devono essere aperte nel compute
 
 |**Porte**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|   
 |-|-|-|-|
-|4022|In ingresso|TCP|Per Visual Studio 2017. La porta numero aumenta di 2 per ogni versione di Visual Studio. Per altre informazioni, vedere [assegnazioni di porta del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
-|4023|In ingresso|TCP|Per Visual Studio 2017. La porta numero aumenta di 2 per ogni versione di Visual Studio. Questa porta viene solo usata per remote debug di un processo a 32 bit da una versione a 64 bit del debugger remoto. Per altre informazioni, vedere [assegnazioni di porta del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
+|4022|In ingresso|TCP|Per Visual Studio 2017. La porta numero aumenta di 2 per ogni versione di Visual Studio. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
+|4023|In ingresso|TCP|Per Visual Studio 2017. La porta numero aumenta di 2 per ogni versione di Visual Studio. Questa porta viene solo usata per remote debug di un processo a 32 bit da una versione a 64 bit del debugger remoto. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
 |3702|In uscita|UDP|(Facoltativo) Richiesto per remote debugger discovery.|    
   
 Se si seleziona **utilizza modalità di compatibilità gestita** sotto **Tools** > **opzioni** > **debug**, aprire Queste porte aggiuntivi del debugger remoto. Modalità di compatibilità gestita debugger consente una legacy, la versione di Visual Studio 2010 del debugger. 
@@ -72,7 +71,7 @@ Se i criteri del dominio richiedono la comunicazione di rete deve essere eseguit
 |**Porte**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|  
 |-|-|-|-|  
 |500, 4500|In uscita|UDP|Necessario se i criteri del dominio richiedono che la comunicazione di rete avvenga tramite IPSec.|  
-|80|In uscita|TCP|Obbligatorio per il debug del server web.|
+|80|In uscita|TCP|Richiesto per il debug di server Web.|
 
 Per autorizzare App specifiche attraverso il firewall di Windows, vedere [Configura debug remoto attraverso Windows Firewall](#configure-remote-debugging-through-windows-firewall). 
 

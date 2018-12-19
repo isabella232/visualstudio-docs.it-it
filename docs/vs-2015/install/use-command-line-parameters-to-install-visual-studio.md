@@ -1,6 +1,6 @@
 ---
-title: Usare i parametri della riga di comando per installare Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Usare i parametri della riga di comando per installare Visual Studio 2015 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -18,52 +18,52 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c4ce23be968f0717eb498a496482519e600065c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772580"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059139"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio"></a>Utilizzare i parametri della riga di comando per installare Visual Studio
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente di Visual Studio 2017, vedere [usare i parametri della riga di comando per installare Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
-Quando si installa Visual Studio 2015 da un prompt dei comandi, è possibile utilizzare i seguenti parametri della riga di comando (detti anche opzioni).  
-  
+Quando si installa Visual Studio 2015 da un prompt dei comandi è possibile usare i seguenti parametri della riga di comando, chiamati anche opzioni.
+
 > [!NOTE]
->  Assicurarsi di usare il programma di installazione effettivo e non il file di programma di avvio automatico. Ad esempio, assicurarsi che usi **`vs_enterprise.exe`** anziché vs_enterprise_*GUID*.exe. È possibile scaricare un programma di installazione dal [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).  
-  
-## <a name="list-of-command-line-parameters"></a>Elenco dei parametri della riga di comando  
- Per i parametri della riga di comando di Visual Studio non si fa distinzione tra maiuscole e minuscole.  
-  
-|Parametro|Descrizione|  
-|---------------|-----------------|  
-|**/?**<br /><br /> **/help**<br /><br /> **/h**|Visualizza i parametri della riga di comando.|  
-|**/ AddRemoveFeatures**|Specifica le funzionalità da aggiungere o rimuovere dal prodotto installato.|  
-|**/ AdminFile** *Admindeployment*|Installa Visual Studio tramite il file di dati specificato per l'installazione amministrativa.|  
-|**/ /Chainingpackage** *BundleName*|Specifica quale bundle è concatenato a questo bundle. Può anche essere usato per specificare una coorte nel programma Analisi utilizzo software.|  
-|**/Createadminfile \<nomefile >**|Specifica il percorso per creare un file di controllo che può essere usato con /AdminFile|  
-|**/ /Custominstallpath** *DirectoryInstallazione*|Installa tutti i pacchetti con destinazione modificabile nella directory specificata.|  
-|**/ ForceRestart**|Riavvia sempre il computer dopo l'installazione.|  
-|**/ completa**|Installa tutte le funzionalità del prodotto.|  
-|**/Installselectableitems \<nome dell'elemento 1 > [;\< nome dell'elemento 2 >]**|Elenco di elementi dell'albero per la selezione da controllare nella schermata di selezione dell'installazione guidata.|  
-|**/l**<br /><br /> **/ Accedere** *nomefile*|Specifica un percorso per il file di log.|  
-|**/layout** *directory*|Copia i file sul supporto di installazione nella directory specificata.|  
-|**/ NoCacheOnlyMode**|Impedisce il prepopolamento della cache del pacchetto.|  
-|**/ NoRefresh**|Impedisce il controllo nelle versioni più recenti di questo prodotto della disponibilità di versioni aggiornate richieste o consigliate.|  
-|**/norestart**|Impedisce il riavvio dell'applicazione di installazione dal computer durante o dopo l'installazione. Vedere la sezione di codici restituiti del [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md) per i codici restituiti da cercare.|  
-|**/noweb.**|Impedisce l'installazione da Internet.|  
-|**/Overridefeeduri \<percorso file del feed >**|Percorso di un feed esterno locale che descrive gli elementi software|  
-|**/ ProductKey**<br /><br /> *ProductKey*|Imposta un codice Product Key personalizzato che non includa trattini e non contenga più di 25 caratteri.|  
-|**/ PromptRestart**|Richiede una conferma all'utente prima di riavviare il computer.|  
-|**/q**<br /><br /> **/quiet**<br /><br /> **/s**<br /><br /> **/silent**|Elimina l'interfaccia utente (UI) per l'applicazione di installazione. Se Visual Studio è già installato e non vengono specificati altri parametri tranne questo, l'applicazione di installazione viene eseguita in modalità di manutenzione.|  
-|**/qb**<br /><br /> **/passive**|Mostra l'avanzamento ma non attende l'input dell'utente.|  
-|**/repair**|Ripristina Visual Studio.|  
-|**/ SuppressRefreshPrompt**|Impedisce la visualizzazione della finestra di dialogo che informa della disponibilità dell'aggiornamento. In tal modo, l'installazione guidata accetterà automaticamente eventuali versioni aggiornate richieste o consigliate.|  
-|**/u**<br /><br /> **/ Disinstallazione**|Disinstalla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|**/Uninstall /Force**<br /><br /> **/u /force**|Disinstalla Visual Studio e tutte le funzionalità condivise con altri prodotti. **Avviso:** se si usa questo parametro, altri prodotti installati nello stesso computer potrebbero smettere di funzionare correttamente.|  
-  
-## <a name="see-also"></a>Vedere anche  
+>  Assicurarsi di usare il programma di installazione effettivo e non il file di programma di avvio automatico. Ad esempio, assicurarsi che usi **`vs_enterprise.exe`** anziché vs_enterprise_*GUID*.exe. È possibile scaricare un programma di installazione dal [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+
+## <a name="list-of-command-line-parameters"></a>Elenco dei parametri della riga di comando
+ Per i parametri della riga di comando di Visual Studio non si fa distinzione tra maiuscole e minuscole.
+
+|Parametro|Description|
+|---------------|-----------------|
+|**/?**<br /><br /> **/help**<br /><br /> **/h**|Visualizza i parametri della riga di comando.|
+|**/ AddRemoveFeatures**|Specifica le funzionalità da aggiungere o rimuovere dal prodotto installato.|
+|**/ AdminFile** *Admindeployment*|Installa Visual Studio tramite il file di dati specificato per l'installazione amministrativa.|
+|**/ /Chainingpackage** *BundleName*|Specifica quale bundle è concatenato a questo bundle. Può anche essere usato per specificare una coorte nel programma Analisi utilizzo software.|
+|**/Createadminfile \<nomefile >**|Specifica il percorso per creare un file di controllo che può essere usato con /AdminFile|
+|**/ /Custominstallpath** *DirectoryInstallazione*|Installa tutti i pacchetti con destinazione modificabile nella directory specificata.|
+|**/ForceRestart**|Riavvia sempre il computer dopo l'installazione.|
+|**/full**|Installa tutte le funzionalità del prodotto.|
+|**/Installselectableitems \<nome dell'elemento 1 > [;\< nome dell'elemento 2 >]**|Elenco di elementi dell'albero per la selezione da controllare nella schermata di selezione dell'installazione guidata.|
+|**/l**<br /><br /> **/ Accedere** *nomefile*|Specifica un percorso per il file di log.|
+|**/layout** *directory*|Copia i file sul supporto di installazione nella directory specificata.|
+|**/NoCacheOnlyMode**|Impedisce il prepopolamento della cache del pacchetto.|
+|**/NoRefresh**|Impedisce il controllo nelle versioni più recenti di questo prodotto della disponibilità di versioni aggiornate richieste o consigliate.|
+|**/norestart**|Impedisce il riavvio dell'applicazione di installazione dal computer durante o dopo l'installazione. Per i codici restituiti da cercare, vedere la sezione della [Guida per l'amministratore di Visual Studio](../install/visual-studio-administrator-guide.md).|
+|**/noweb**|Impedisce l'installazione da Internet.|
+|**/Overridefeeduri \<percorso file del feed >**|Percorso di un feed esterno locale che descrive gli elementi software|
+|**/ProductKey**<br /><br /> *ProductKey*|Imposta un codice Product Key personalizzato che non includa trattini e non contenga più di 25 caratteri.|
+|**/PromptRestart**|Richiede una conferma all'utente prima di riavviare il computer.|
+|**/q**<br /><br /> **/quiet**<br /><br /> **/s**<br /><br /> **/silent**|Elimina l'interfaccia utente (UI) per l'applicazione di installazione. Se Visual Studio è già installato e non vengono specificati altri parametri tranne questo, l'applicazione di installazione viene eseguita in modalità di manutenzione.|
+|**/qb**<br /><br /> **/passive**|Mostra l'avanzamento ma non attende l'input dell'utente.|
+|**/repair**|Ripristina Visual Studio.|
+|**/SuppressRefreshPrompt**|Impedisce la visualizzazione della finestra di dialogo che informa della disponibilità dell'aggiornamento. In tal modo, l'installazione guidata accetterà automaticamente eventuali versioni aggiornate richieste o consigliate.|
+|**/u**<br /><br /> **/Uninstall**|Disinstalla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|**/Uninstall /Force**<br /><br /> **/u /force**|Disinstalla Visual Studio e tutte le funzionalità condivise con altri prodotti. **Avviso:**  Se si usa questo parametro, altri prodotti installati nello stesso computer potrebbero smettere di funzionare correttamente.|
+
+## <a name="see-also"></a>Vedere anche
  [Guida di Visual Studio Administrator](../install/visual-studio-administrator-guide.md)

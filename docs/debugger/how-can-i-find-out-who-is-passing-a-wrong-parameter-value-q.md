@@ -1,6 +1,6 @@
 ---
-title: Come è possibile individuare chi passa un valore di parametro errato? | Microsoft Docs
-ms.custom: ''
+title: Individuare chi passa un valore di parametro errato | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284172"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059366"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Come è possibile individuare chi passa un valore di parametro errato?
 ## <a name="problem-description"></a>Descrizione del problema  
@@ -40,19 +40,19 @@ ms.locfileid: "44284172"
   
 1.  Impostare un punto di interruzione del percorso all'inizio della funzione.  
   
-2.  Il punto di interruzione e scegliere **condizione**.  
+2.  Fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere **Condizione**.  
   
-3.  Nel **condizione punto di interruzione** finestra di dialogo, fare clic sui **condizione** casella di controllo. Visualizzare [punti di interruzione avanzati](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  Nella finestra di dialogo **Condizione punto di interruzione** selezionare la casella di controllo **Condizione**. Visualizzare [punti di interruzione avanzati](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Nella casella di testo immettere un'espressione, ad esempio `Var==3`, in cui `Var` è il nome del parametro che contiene il valore errato e `3` il valore errato passato.  
   
-5.  Selezionare il **è impostata su True** pulsante di opzione e fare clic sui **OK** pulsante.  
+5.  Selezionare il pulsante di opzione **è true**, quindi scegliere **OK**.  
   
 6.  Eseguire nuovamente il programma. Il punto di interruzione causa l'arresto del programma all'inizio della funzione, quando il parametro `Var` ha valore `3`.  
   
-7.  Utilizzare la finestra Stack di chiamate per individuare la funzione chiamante e passare al relativo codice sorgente. Per altre informazioni, vedere [procedura: usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Utilizzare la finestra Stack di chiamate per individuare la funzione chiamante e passare al relativo codice sorgente. Per altre informazioni, vedere [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Domande frequenti sul codice nativo debug](../debugger/debugging-native-code-faqs.md)   
+ [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)   
  [Punti di interruzione](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Debug del codice nativo](../debugger/debugging-native-code.md)

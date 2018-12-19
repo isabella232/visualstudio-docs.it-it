@@ -1,6 +1,7 @@
 ---
-title: Visualizzare i file eseguibili e DLL nella finestra moduli | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Visualizzare i file eseguibili e DLL
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257290"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066782"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Visualizzare i file eseguibili e DLL nella finestra moduli (C#, C++, Visual Basic, F#)
  
@@ -43,7 +44,7 @@ Durante il debug di Visual Studio, il **moduli** finestra elenca e Visualizza in
 
 Per aprire la finestra moduli, durante il debug, selezionare **Debug** > **Windows** > **moduli**. 
   
-Per impostazione predefinita, il **moduli** finestra sono ordinati in base all'ordine di caricamento. Per ordinare in base a qualsiasi colonna di finestra, selezionare l'intestazione nella parte superiore della colonna.  
+Per impostazione predefinita, nella finestra **Moduli** i moduli sono ordinati in base all'ordine di caricamento. Per ordinare in base a qualsiasi colonna di finestra, selezionare l'intestazione nella parte superiore della colonna.  
   
 ## <a name="load-symbols"></a>Caricare i simboli  
 
@@ -63,7 +64,7 @@ Il **stato simboli** colonna il **moduli** finestra Mostra quali moduli sono car
 
 **Per modificare le impostazioni del comportamento di caricamento dei simboli:**  
 
-1. Nel **moduli** finestra, fare doppio clic su qualsiasi modulo MSIL.  
+1. Nella finestra **Moduli** fare clic con il pulsante destro del mouse su un modulo.  
    
 1. Selezionare **delle impostazioni dei simboli**.  
   
@@ -73,11 +74,11 @@ Il **stato simboli** colonna il **moduli** finestra Mostra quali moduli sono car
   
 **Per modificare il comportamento per un modulo specifico di caricamento dei simboli:**  
 
-1.  Nel **moduli** finestra, fare clic sul modulo.  
+1.  Nella finestra **Moduli** fare clic con il pulsante destro del mouse sul modulo.  
 
 1.  Nel menu di scelta rapida, selezionare o deselezionare **Carica sempre automaticamente**. Le modifiche effettive nella sessione di debug successiva.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interruzione dell'esecuzione](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
- [Visualizzazione dei dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

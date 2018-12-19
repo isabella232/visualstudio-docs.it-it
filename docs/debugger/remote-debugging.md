@@ -1,6 +1,8 @@
 ---
-title: Debug remoto in Visual Studio | Microsoft Docs
-ms.custom: remotedebugging
+title: Debug remoto | Microsoft Docs
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872434"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065506"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -38,13 +40,13 @@ Per istruzioni dettagliate sul debug remoto, vedere questi argomenti.
 |Macchina virtuale Azure|[Eseguire il debug remoto di ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Eseguire il debug di un'applicazione Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[ASP.NET Core eseguire il debug remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) o [Remote Debug ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|In c# o Visual Basic|[Eseguire il debug remoto di un progetto C# o Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C# o Visual Basic|[Eseguire il debug remoto di un progetto C# o Visual Basic](../debugger/remote-debugging-csharp.md)|
 |C++|[Eseguire il debug remoto di un progetto C++](../debugger/remote-debugging-cpp.md)|
 |App di Windows universale (UWP)|[Eseguire App UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) o [il Debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md)|
 
 Se sufficiente da scaricare e installare il debugger remoto e non sono necessarie le istruzioni aggiuntive per lo scenario, seguire i passaggi descritti in questo articolo.
 
-## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare remote tools
+## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare Remote Tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -103,7 +105,7 @@ Per il debug in ASP.NET e altri ambienti server, si deve eseguire il debugger re
 
 4. Aggiungere il nome dell'account utente e la password.
 
-    Potrebbe essere necessario aggiungere il **Accedi come servizio** utente direttamente a questo account (trovare **criteri di sicurezza locali** (secpol. msc) nella **avviare** pagina o nella finestra (o tipo  **secpol** un prompt dei comandi). Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente**e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente per il **delle proprietà** finestra e fare clic su **OK**). Scegliere **Avanti**.
+    Potrebbe essere necessario aggiungere il **Accedi come servizio** utente direttamente a questo account (trovare **criteri di sicurezza locali** (secpol. msc) nella **avviare** pagina o nella finestra (o tipo  **secpol** un prompt dei comandi). Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente**e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente alla finestra **Proprietà** e fare clic su **OK**. Scegliere **Avanti**.
 
 5. Selezionare il tipo di rete con cui si vuole che Remote Tools comunichi. Almeno un tipo di rete deve essere selezionato. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, è necessario scegliere il secondo o il terzo elemento. Scegliere **Avanti**.
 
@@ -111,9 +113,9 @@ Per il debug in ASP.NET e altri ambienti server, si deve eseguire il debugger re
 
 7. Scegliere **Fine**.
 
-   A questo punto il debugger remoto è in esecuzione come servizio. È possibile verificarlo passando **Pannello di controllo > servizi** e cercando **Visual Studio 2015 Remote Debugger**.
+   A questo punto il debugger remoto è in esecuzione come servizio. Per verificarlo, passare a **Pannello di controllo > Servizi** e cercare **Visual Studio 2015 Remote Debugger**.
 
-   È possibile arrestare e avviare il servizio debugger remoto da **Pannello di controllo > servizi**.
+   È possibile arrestare e avviare il servizio del debugger remoto da **Pannello di controllo > Servizi**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti
 
