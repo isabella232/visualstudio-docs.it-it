@@ -1,6 +1,6 @@
 ---
-title: Distribuire le app UWP da Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Distribuire le app UWP | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726318"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056811"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
 
@@ -29,7 +29,7 @@ La funzionalità di distribuzione di Visual Studio compila e registra le app UWP
 
 - Quando la destinazione è un dispositivo remoto, Visual Studio copia i file necessari nel computer remoto e registra l'app su questo dispositivo.
 
-Distribuzione avviene automaticamente quando si esegue il debug dell'app da Visual Studio usando il **Avvia debug** opzione (tastiera: F5) o il **Avvia senza eseguire debug** opzione (tastiera: CTRL + F5). Puoi distribuire l'app anche manualmente. Ecco gli scenari in cui la distribuzione manuale può essere utile:
+La distribuzione avviene automaticamente quando esegui il debug dell'app da Visual Studio usando l'opzione Avvia debug** (tastiera: F5) o la **Avvia senza eseguire debug** opzione (tastiera: CTRL+F5 Puoi distribuire l'app anche manualmente. Ecco gli scenari in cui la distribuzione manuale può essere utile:
 
 - Test ad hoc su un computer locale o remoto.
 
@@ -117,6 +117,6 @@ Per configurare la distribuzione in modo da avviare automaticamente una sessione
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Opzioni avanzate di distribuzione remoto](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Opzioni di distribuzione remota avanzata](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md)
 - [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

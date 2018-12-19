@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: applicare modifiche in modalità di interruzione con modifica e continuazione | Microsoft Docs'
-ms.custom: ''
+title: Applicare modifiche in modalità di interruzione con modifica e continuazione | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257072"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063726"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedura: applicare modifiche in modalità di interruzione con modifica e continuazione (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione (Visual Basic)
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.  
   
 Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere [modifiche al codice supportate (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
@@ -40,11 +40,11 @@ Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere
   
 1.  Attivare la modalità di interruzione in uno dei seguenti modi:  
   
-    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dalle **Debug** menu e attendere che l'applicazione raggiunga il punto di interruzione.  
+    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal menu **Debug** e attendere che l'applicazione raggiunga il punto di interruzione.  
   
-         oppure  
+         -oppure-  
   
-    -   Avviare il debug e quindi selezionare **Interrompi tutto** dalle **Debug** menu.  
+    -   Avviare il debug, quindi scegliere **Interrompi tutto** dal menu **Debug**.  
   
          oppure  
   
@@ -57,7 +57,7 @@ Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere
     > [!NOTE]
     >  Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
   
-3.  Nel **Debug** menu, fare clic su **continua** per riprendere l'esecuzione.  
+3.  Scegliere **Continua** dal menu **Debug** per riprendere l'esecuzione.  
   
      Il codice verrà eseguito con le modifiche incorporate nel progetto.  
   

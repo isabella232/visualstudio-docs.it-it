@@ -1,5 +1,5 @@
 ---
-title: Creare un'applicazione dati semplice tramite ADO.NET in Visual Studio
+title: Creare un'applicazione dati semplice tramite ADO.NET
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891011"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064872"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
-Quando si crea un'applicazione che modifica i dati in un database, eseguire le attività di base, ad esempio che definisce le stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di una semplice applicazione "Form over data" di Windows Forms con Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.
+Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di un'applicazione semplice Windows Form "Form over data" utilizzando l'oggetto visivo C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.
 
 Questo articolo illustra un modo semplice per ottenere dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplice e aggiornare il database, è consigliabile mediante Entity Framework e l'uso di data binding per la sincronizzazione automatica controlli dell'interfaccia utente per le modifiche nei dati sottostanti.
 
 > [!IMPORTANT]
-> Per semplificare il codice, poiché non è inclusa la gestione delle eccezioni di produzione.
+> Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -35,9 +35,9 @@ Per creare l'applicazione, è necessario disporre di:
 
 -   Visual Studio.
 
--   SQL Server Express LocalDB. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+-   LocalDB di SQL Server Express. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Forms, aggiungere form al progetto, inserire i pulsanti e altri controlli nei form, impostare le proprietà dei controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) argomento prima di iniziare questa procedura dettagliata.
+Questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Forms, aggiungere form al progetto, inserire i pulsanti e altri controlli nei form, impostare le proprietà dei controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) argomento prima di iniziare questa procedura dettagliata.
 
 ## <a name="set-up-the-sample-database"></a>Impostare il database di esempio
 
@@ -61,15 +61,15 @@ Creare il database di esempio seguendo questa procedura:
 
 7. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
 
-     Dopo un breve periodo di tempo, termina l'esecuzione di query e vengono creati gli oggetti di database. Il database contiene due tabelle: clienti e ordini. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere i dati quando si esegue l'applicazione che verrà creata. Il database contiene inoltre quattro stored procedure semplici.
+     Dopo un breve periodo di tempo, termina l'esecuzione di query e vengono creati gli oggetti di database. Il database contiene due tabelle: Clienti e ordini. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere i dati quando si esegue l'applicazione che verrà creata. Il database contiene inoltre quattro stored procedure semplici.
 
 ## <a name="create-the-forms-and-add-controls"></a>Creare i form e aggiungere i controlli
 
-1. Creare un progetto per un'applicazione Windows Forms e denominarlo **SimpleDataApp**.
+1. Creare un progetto per Windows Forms Application e denominarlo **SimpleDataApp**.
 
     Visual Studio crea il progetto e diversi file, tra cui un form Windows vuoto denominato **Form1**.
 
-2. Aggiungere due form Windows al progetto in modo che includa tre formati seguenti e quindi assegnare loro i nomi seguenti:
+2. Aggiungere due form Windows al progetto in modo da disporre di tre form e assegnare i nomi seguenti:
 
    -   **Navigazione**
 
@@ -82,7 +82,7 @@ Creare il database di esempio seguendo questa procedura:
    > [!NOTE]
    > La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.
 
-   **Form navigazione**
+   **Form Navigazione**
 
    ![Finestra di dialogo Navigazione](../data-tools/media/simpleappnav.png)
 
@@ -126,7 +126,7 @@ Creare il database di esempio seguendo questa procedura:
 
  È possibile trovare la stringa di connessione facendo clic sui **vendite** connessione dati in **Esplora Server** e scegliendo **proprietà**. Individuare il **ConnectionString** proprietà, quindi usare **Ctrl**+**oggetto**, **Ctrl**+**C**  per selezionare e copiare la stringa negli Appunti.
 
-1.  Se si usa c#, in **Esplora soluzioni**, espandere il **delle proprietà** nodo sotto il progetto e quindi aprire il **innanzi** file.
+1.  Se si usa C#, in **Esplora soluzioni**, espandere il **proprietà** nodo sotto il progetto e quindi aprire il **innanzi** file.
     Se si usa Visual Basic, in **Esplora soluzioni**, fare clic su **Mostra tutti i file**, espandere il **My Project** nodo e quindi aprire il **innanzi** file.
 
 2.  Nel **Name** colonna, immettere `connString`.
@@ -146,11 +146,11 @@ Questa sezione include brevi descrizioni generali delle operazioni eseguite da o
 
 ### <a name="navigation-form"></a>Form Navigazione
 
-Quando si esegue l'applicazione, verrà visualizzato il form Navigazione. Il **aggiungere un account** pulsante consente di aprire il form NewCustomer. Il **riempimento o annullare gli ordini** pulsante consente di aprire il form FillOrCancel. Il **Exit** pulsante chiude l'applicazione.
+Quando si esegue l'applicazione, verrà visualizzato il form Navigazione. Il pulsante **Aggiungi un account** consente di aprire il form NewCustomer. Il pulsante **Completare o annullare gli ordini** consente di aprire il form FillOrCancel. Il pulsante **Esci** consente di chiudere l'applicazione.
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Impostare il form Navigazione come form di avvio
 
-Se si usa c#, in **Esplora soluzioni**, aprire **Program.cs**, quindi modificare il `Application.Run` riga al seguente: `Application.Run(new Navigation());`
+Se si usa C#, in **Esplora soluzioni** aprire **Program.cs** e modificare la riga `Application.Run` nel seguente modo: `Application.Run(new Navigation());`
 
 Se si usa Visual Basic, in **Esplora soluzioni**, aprire il **delle proprietà** finestra, seleziona il **applicazione** scheda e quindi selezionare  **Simpledataapp. Navigation** nella **form di avvio** elenco.
 
@@ -231,7 +231,7 @@ Per completare la logica di form FillOrCancel, seguire questa procedura.
 
 ## <a name="test-your-application"></a>Eseguire il test dell'applicazione
 
-Selezionare il **F5** per compilare e testare l'applicazione dopo ogni evento Click, codice e quindi dopo aver fine scrittura di codice.
+Premere il tasto **F5** per compilare e testare l'applicazione dopo aver inserito il codice in ogni gestore dell'evento Click e quindi dopo aver completato la scrittura del codice.
 
 ## <a name="see-also"></a>Vedere anche
 

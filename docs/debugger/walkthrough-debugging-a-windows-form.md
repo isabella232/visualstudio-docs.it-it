@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: Debug di un Form di Windows | Microsoft Docs'
-ms.custom: ''
+title: Debug di un Windows Form | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349166"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066756"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
-Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.  
+# <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
+Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata Usa Visual Basic, C#, o C++.  
   
  In primo luogo, è necessario chiudere eventuali soluzioni aperte.  
   
@@ -40,7 +40,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
 -   Se già aperto una soluzione aperta, chiuderla. (Nelle **File** dal menu **Chiudi soluzione**.)  
   
-## <a name="create-a-new-windows-form"></a>Creare un nuovo modulo di Windows  
+## <a name="create-a-new-windows-form"></a>Creare un nuovo Windows Form  
  Successivamente, si creerà un nuovo modulo di Windows.  
   
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Per creare il modulo di Windows per questa procedura dettagliata  
@@ -49,9 +49,9 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual c#**, o **Visual C++** nodo, quindi  
+2.  Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual C#** , o **Visual C++** nodo, quindi  
   
-    1.  Per Visual Basic o Visual c#, selezionare **Desktop di Windows** > **App di Windows Form**.  
+    1.  Per Visual Basic o l'oggetto visivo C#, selezionare **Desktop di Windows** > **App di Windows Form**.  
   
     2.  Per Visual C++, selezionare **alle applicazioni Desktop Windows**.  
   
@@ -73,7 +73,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
      Verrà visualizzata la tabella codici. Il cursore deve trovarsi in `button1_Click`.  
   
-10. Nella funzione `button1_Click`., aggiungere il codice seguente:  
+10. Nella funzione `button1_Click`. aggiungere il codice seguente:  
   
     ```vb  
     textBox1.Text = "Button was clicked!"
@@ -110,12 +110,12 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Per altre informazioni, vedere [i punti di interruzione](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug.  
+     Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Per altre informazioni, vedere [Punti di interruzione](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug.  
   
     > [!NOTE]
     >  È anche possibile fare doppio clic su qualsiasi riga di codice, scegliere **punto di interruzione**, quindi fare clic su **Inserisci punto di interruzione** per aggiungere un punto di interruzione sulla riga.  
   
-2.  ON la **Debug** menu, scegliere **avviare**.  
+2.  Scegliere **Avvia** dal menu **Debug**.  
   
      Il modulo di Windows viene avviata l'esecuzione.  
   
@@ -125,13 +125,13 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
 4.  Nel **Debug** menu, scegliere **Windows**, quindi **Watch**e fare clic su **espressione di controllo1**.  
   
-5.  Nel **espressione di controllo1** finestra, fare clic su una riga vuota. Nel **Name** colonna, digitare `textBox1.Text` (se si usa Visual Basic o Visual c#) o `textBox1->Text` (se si usa C++), quindi premere INVIO.  
+5.  Nel **espressione di controllo1** finestra, fare clic su una riga vuota. Nel **Name** colonna, digitare `textBox1.Text` (se si usa Visual Basic o Visual C#) o `textBox1->Text` (se si usa C++), quindi premere INVIO.  
   
      Il **espressione di controllo1** finestra verrà visualizzato il valore di questa variabile tra virgolette come:  
   
     `""`  
  
-6.  Nel **Debug** menu, scegliere **Esegui istruzione**.  
+6.  Scegliere **Esegui istruzione** dal menu **Debug**.  
   
      Il valore di textBox1.Text viene modificato nel **espressione di controllo1** finestra per:  
   
@@ -147,7 +147,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
      Ciò consente di rimuovere il punto di interruzione dal codice.  
   
-10. Nel **Debug** menu, scegliere **arresta debug**.  
+10. Scegliere **Termina debug** dal menu **Debug**.  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>Collegamento all'applicazione Windows Form per il debug  
  È possibile connettere il debugger di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] a un processo in esecuzione. Se si usa una versione Express Edition, questa funzionalità non è supportata.  

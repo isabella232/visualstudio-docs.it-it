@@ -1,6 +1,6 @@
 ---
-title: Gestire le eccezioni con il debugger di Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Gestire le eccezioni con il debugger | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881690"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057918"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
@@ -47,7 +47,7 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
 
 Fornire gestori che rispondono alle eccezioni più importanti. Anche informazioni su come configurare il debugger per interrompere sempre l'esecuzione per alcune eccezioni.
 
-Quando si verifica un'eccezione, il debugger visualizza un messaggio di eccezione per il **Output** finestra. Il debugger può interrompere l'esecuzione nel seguente casi:
+Quando si verifica un'eccezione, il debugger scrive un messaggio di eccezione nella finestra **Output**. Il debugger può interrompere l'esecuzione nel seguente casi:
 
 - Viene generata un'eccezione non gestita.
 - Il debugger è configurato per l'esecuzione si interrompe prima che venga richiamato qualsiasi gestore.
@@ -59,7 +59,7 @@ Quando si verifica un'eccezione, il debugger visualizza un messaggio di eccezion
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> In un'applicazione Visual Basic, il debugger gestisce tutti gli errori come eccezioni, anche se si usa sui gestori di errori di stile di errore.
+> In un'applicazione Visual Basic il debugger gestisce tutti gli errori come eccezioni, anche se si usano gestori degli errori di tipo On Error.
 
 ## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Impostare il debugger per interrompere l'esecuzione quando viene generata un'eccezione
 
@@ -74,7 +74,7 @@ Nel **impostazioni eccezioni** finestra (**Debug > Windows > Impostazioni eccezi
 
 Se si seleziona un'eccezione nel **impostazioni eccezioni** finestra, esecuzione del debugger interromperà ogni volta che viene generata l'eccezione, indipendentemente dal fatto che viene gestito. L'eccezione viene ora chiamato un'eccezione first-chance. Di seguito vengono riportati un paio di scenari di esempio:
 
-- Nell'esempio c# applicazione console, il metodo Main genera un' **AccessViolationException** all'interno di un `try/catch` blocco.
+- Nell'applicazione console C# seguente il metodo Main genera un'eccezione **AccessViolationException** all'interno di un blocco `try/catch`.
 
   ```csharp
   static void Main(string[] args)
@@ -101,7 +101,7 @@ Se si seleziona un'eccezione nel **impostazioni eccezioni** finestra, esecuzione
 
   ma non vengono visualizzati il `here` riga.
 
-- Un'applicazione console c# fa riferimento a una libreria di classi con una classe che dispone di due metodi. Un metodo genera un'eccezione e gestisce, mentre un secondo metodo, genera la stessa eccezione ma non la gestisce.
+- Oggetto C# applicazione console fa riferimento a una libreria di classi con una classe che dispone di due metodi. Un metodo genera un'eccezione e gestisce, mentre un secondo metodo, genera la stessa eccezione ma non la gestisce.
 
   ```csharp
   public class Class1
@@ -125,7 +125,7 @@ Se si seleziona un'eccezione nel **impostazioni eccezioni** finestra, esecuzione
   }
   ```
 
-  Ecco il metodo Main () dell'applicazione console:
+  Il metodo seguente è il metodo Main() dell'applicazione console:
 
   ```csharp
   static void Main(string[] args)
@@ -181,9 +181,9 @@ Per aggiungere un'eccezione:
 Per aggiungere un'eccezione per le eccezioni di accesso a memoria GPU, eccezioni di Runtime JavaScript o categorie di eccezioni Win32, includere il codice di errore e la descrizione.
 
 > [!TIP]
-> Controllare l’ortografia. Il **impostazioni eccezioni** finestra non verifica l'esistenza di un'eccezione aggiunta. Pertanto, se digita **Sytem**, si otterrà una voce per tale eccezione (e non per **uritemplatematchexception**).
+> Controllare l’ortografia. La finestra **Impostazioni eccezioni** non verifica l'esistenza di un'eccezione aggiunta. Pertanto, se si digita **Sytem.UriTemplateMatchException**, si ottiene una voce per l'eccezione e non per **System.UriTemplateMatchException**.
 
-Impostazioni eccezioni sono persistenti nel file con estensione suo della soluzione, quindi vengono applicate a una particolare soluzione. È possibile riutilizzare impostazioni di eccezioni specifiche nelle soluzioni. A questo punto vengono mantenute solo le eccezioni aggiunte non sono le eccezioni eliminate. È possibile aggiungere un'eccezione, chiudere e riaprire la soluzione e l'eccezione sarà ancora disponibile. Ma se si elimina un'eccezione e si chiude e si riapre la soluzione, l'eccezione viene visualizzata nuovamente.
+Poiché sono persistenti nel file con estensione suo della soluzione, le impostazioni delle eccezioni si applicano a una soluzione specifica. Non è possibile riutilizzare impostazioni di eccezioni specifiche in tutte le soluzioni. A questo punto vengono mantenute solo le eccezioni aggiunte non sono le eccezioni eliminate. È possibile aggiungere un'eccezione, chiudere e riaprire la soluzione e l'eccezione sarà ancora disponibile. Ma se si elimina un'eccezione e si chiude e si riapre la soluzione, l'eccezione viene visualizzata nuovamente.
 
 La finestra **Impostazioni eccezioni** supporta tipi di eccezioni generiche in C#, ma non in Visual Basic. Per interrompere l’esecuzione in corrispondenza di eccezioni come `MyNamespace.GenericException<T>`, è necessario aggiungere l'eccezione come **MyNamespace.GenericException'1**. Vale a dire, se è stata creata un'eccezione a questo codice:
 
@@ -225,6 +225,6 @@ Per aggiungere le eccezioni condizionale:
 
 [Continuare l'esecuzione dopo un'eccezione](../debugger/continuing-execution-after-an-exception.md)<br/>
 [Procedura: Esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Procedura: Usare controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Usare i controlli runtime senza la libreria run-time di C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[: Esercitazione eseguire il debug usando Visual Studio](../debugger/getting-started-with-the-debugger.md)
+[Procedura: Usare i controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)<br/>
+[Usare i controlli di runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[Esercitazione: Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)

@@ -1,6 +1,8 @@
 ---
-title: ASP.NET in un Computer remoto con IIS eseguire il Debug remoto | Microsoft Docs
-ms.custom: remotedebugging
+title: Eseguire il debug remoto di ASP.NET in un computer IIS
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826507"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065559"
 ---
-# <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Debug remoto di ASP.NET in un Computer remoto con IIS
+# <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -47,7 +49,7 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creazione di ASP.NET 4.5.2 dell'applicazione nel computer di Visual Studio
   
-1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare <strong>Visual C# > Web > applicazione Web ASP.NET. In **ASP.NET 4.5.2</strong> sezione di modelli, selezionare **MVC**. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
+1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare <strong>Visual C# > Web > applicazione Web ASP.NET. Nella sezione modelli ASP.NET 4.5.2 selezionare MVC</strong>. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
 
 2. Aprire il file HomeController.cs e impostare un punto di interruzione nel metodo `About()` .
 
@@ -62,7 +64,7 @@ Se sicurezza avanzata è abilitata in Internet Explorer (è abilitata per impost
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- IIS.NET
+- iis.net
 
 Quando si scarica il software, è possibile ricevere le richieste di concedere l'autorizzazione per caricare vari script del sito web e risorse. Alcune di queste risorse non sono necessarie, ma per semplificare il processo, fare clic su **Add** quando richiesto.
 
@@ -70,7 +72,7 @@ Quando si scarica il software, è possibile ricevere le richieste di concedere l
 
 Se si desiderano informazioni più dettagliate per installare ASP.NET in IIS, vedere [IIS 8.0 Using ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-1. Nel riquadro sinistro di Server Manager, selezionare **IIS**. Fare doppio clic su server e selezionare **Internet Information Services (IIS) Manager**.
+1. Nel riquadro sinistro di Server Manager, selezionare **IIS**. Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
 
 1. Usare l'installazione guidata piattaforma Web (WebPI) per installare ASP.NET 4.5 (dal nodo del Server in Windows Server 2012 R2, scegliere **Ottieni nuovi componenti della piattaforma Web** e quindi cercare ASP.NET)
 
@@ -79,9 +81,9 @@ Se si desiderano informazioni più dettagliate per installare ASP.NET in IIS, ve
     > [!NOTE]
     > Se si usa Windows Server 2008 R2, installare ASP.NET 4 invece con il seguente comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - runtime di integrazione**
 
-2. Riavviare il sistema (o eseguire **net stop was /y** aggiungendo **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema).
+2. Riavviare il sistema o eseguire **net stop was /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema.
 
 ## <a name="choose-a-deployment-option"></a>Scegliere un'opzione di distribuzione
 
@@ -102,7 +104,7 @@ Se si serve aiuto per distribuire l'app in IIS, prendere in considerazione quest
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file di impostazioni di pubblicazione in IIS in Windows Server
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file delle impostazioni di pubblicazione in IIS in Windows Server
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
@@ -110,7 +112,7 @@ Se si serve aiuto per distribuire l'app in IIS, prendere in considerazione quest
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Dopo che l'app distribuisce correttamente, viene avviata automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS.
+Quando la distribuzione è completata, l'app viene avviata automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS.
 
 1. Nel **le impostazioni** della finestra di dialogo Abilita il debug facendo clic **successivo**, scegliere un **Debug** configurazione e quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto la **pubblicare File** opzioni.
 
@@ -127,7 +129,7 @@ Dopo che l'app distribuisce correttamente, viene avviata automaticamente. Se non
 
 1. Aprire l'Explorer di Windows e creare una nuova cartella denominata **C:\Publish**, in cui in seguito si distribuirà il progetto ASP.NET.
 
-2. Se non è già aperto, aprire il **Internet Information Services (IIS) Manager**. (Nel riquadro sinistro di Server Manager, selezionare **IIS**. Fare doppio clic su server e selezionare **Internet Information Services (IIS) Manager**.)
+2. Se non è già aperto, aprire il **Internet Information Services (IIS) Manager**. (Nel riquadro sinistro di Server Manager, selezionare **IIS**. Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
 
 3. Sotto **connessioni** nel riquadro a sinistra, passare alla **siti**.
 
@@ -183,9 +185,9 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P). 
+    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P 
 
-3. Impostare il campo qualificatore  **\<nome del computer remoto >: 4022**.
+3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.
     Nella finestra **Processi disponibili** verranno visualizzati alcuni processi.
 
@@ -196,16 +198,16 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-7. Fare clic su **collegare**
+7. Fare clic su **Connetti**.
 
-8. Aprire il sito Web del computer remoto. In un browser, passare a **http://\<nome del computer remoto >**.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
     
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **sulle** pagina.
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-## <a name="bkmk_openports"></a> Risoluzione dei problemi: Aprire le porte necessarie in Windows Server
+## <a name="bkmk_openports">Risoluzione dei problemi</a> Aprire le porte necessarie in Windows Server
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, devi verificare che le porte siano aperte.
 
