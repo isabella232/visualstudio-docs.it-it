@@ -1,6 +1,6 @@
 ---
-title: Il debugger di Windows in Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Finestre del debugger | Microsoft Docs
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178306"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065151"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Informazioni su Debugger Windows in Visual Studio
 
-È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione si arresta, fare clic su **Debug > Windows**.
+È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione si arresta, fare clic su **Debug > Finestre**.
 
 ||||
 |-|-|-|
@@ -34,9 +34,9 @@ ms.locfileid: "39178306"
 |Stack di chiamate|CTRL+ALT+C|[Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md)|
 |Controllo immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|
 |Stack in parallelo|CTRL+MAIUSC+D, S|[Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
-|Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Ottenere avviato il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Thread|CTRL+ALT+H|[Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
-|Moduli|CTRL+ALT+U|[Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
+|Moduli|CTRL+ALT+U|[Procedura: Utilizzare la finestra moduli](../debugger/how-to-use-the-modules-window.md)|
 |Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
 |Debug interattivo di Python|MAIUSC+ALT+I|[Finestra REPL interattiva di Python](../python/python-interactive-repl-in-visual-studio.md)|
@@ -46,8 +46,8 @@ ms.locfileid: "39178306"
 |Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Processi|CTRL+ALT+Z|[Debug di thread e processi](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Finestra Memoria](../debugger/memory-windows.md)|
-|Disassembly|CTRL+ALT+D|[Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
-|Registri|CTRL+ALT+G|[Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|
+|Disassembly|CTRL+ALT+D|[Procedura: Utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
+|Registri|CTRL+ALT+G|[Procedura: Utilizzare la finestra registri](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Vedere anche
 

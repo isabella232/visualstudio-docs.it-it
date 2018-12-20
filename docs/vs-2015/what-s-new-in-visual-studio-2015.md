@@ -1,6 +1,6 @@
 ---
-title: Cosa&#39;s novità di Visual Studio 2015 | Microsoft Docs
-ms.custom: ''
+title: Novità di Visual Studio 2015 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,14 +17,14 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000258"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062438"
 ---
-# <a name="what39s-new-in-visual-studio-2015"></a>Cosa&#39;s novità di Visual Studio 2015
+# <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
 
 Visual Studio 2015 è una famiglia integrata di strumenti di produttività per sviluppatori, servizi cloud ed estensioni che consentono all'utente e al team di creare app e giochi di grande impatto per il Web, Windows Store, per il desktop, Android e iOS.
@@ -53,7 +53,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  Naturalmente, anche il supporto per le applicazioni desktop classiche è ulteriormente migliorato, con numerosi perfezionamenti a livello di linguaggi, librerie e strumenti.
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>App per dispositivi mobili multipiattaforma in C# con Xamarin per Visual Studio
- Xamarin è un framework per dispositivi mobili che consente di scrivere codice in C# con binding nativo alle API iOS e Android. Microsoft ha collaborato attivamente con Xamarin su questa versione di Xamarin per Visual Studio, un'estensione che abilita lo sviluppo per Android, iOS e Windows Phone in una singola soluzione con codice condiviso. Con Xamarin, si utilizzerà una lingua e un codice di base con minime delta tra le piattaforme.  Xamarin per Visual Studio è supportato in Visual Studio 2010 e versioni successive. La starter edition di Xamarin è incluso in Visual Studio 2015. Per iniziare, vedere [compilare le app con interfaccia utente nativa con Xamarin in Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).
+ Xamarin è un framework per dispositivi mobili che consente di scrivere codice in C# con binding nativo alle API iOS e Android. Microsoft ha collaborato attivamente con Xamarin su questa versione di Xamarin per Visual Studio, un'estensione che abilita lo sviluppo per Android, iOS e Windows Phone in una singola soluzione con codice condiviso. Con Xamarin, si utilizzerà una lingua e un codice di base con minime delta tra le piattaforme.  Xamarin per Visual Studio è supportato in Visual Studio 2010 e versioni successive. La versione Starter Edition di Xamarin è inclusa in Visual Studio 2015. Per iniziare, vedere [compilare le app con interfaccia utente nativa con Xamarin in Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>App per dispositivi mobili multipiattaforma in HTML/JavaScript con Apache Cordova
  Visual Studio Tools per Apache Cordova è il risultato di una stretta collaborazione tra Microsoft e la community open source di Apache Cordova. Gli strumenti consentono lo sviluppo per dispositivi mobili multipiattaforma usando HTML, CSS e JavaScript (o TypeScript). È possibile sviluppare per Android, iOS e Windows con una singola codebase e sfruttare le molteplici funzionalità dell'IDE di Visual Studio, quali JavaScript IntelliSense, DOM Explorer, Console JavaScript, punti di interruzione, espressioni di controllo, variabili locali, Just My Code e molte altre.  Con Visual Studio Tools per Apache Cordova le app possono accedere alle funzionalità native dei dispositivi su tutte le piattaforme tramite plug-in che forniscono un'API JavaScript comune. Per iniziare, vedere [Introduzione a Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
@@ -144,7 +144,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diversi tipi di diagnosi e di analisi nel codice:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per un'introduzione, vedere il post relativo a [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per iniziare, vedere [PerfTips: informazioni sulle prestazioni in immediate durante il debug in Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Elenco errori
  L'elenco errori ora supporta l'applicazione del filtro su qualsiasi colonna. Consente inoltre di visualizzare in tempo reale errori, avvisi e analisi di codice nell'intera soluzione C# o Visual Basic mentre si digita, anche quando una modifica del codice produce migliaia di avvisi. Il nuovo Elenco errori è compatibile con la modalità d'uso esistente. Per altre informazioni, vedere [Error List Window](./ide/reference/error-list-window.md).
@@ -160,13 +160,13 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 ## <a name="enjoy-these-additional-ide-improvements"></a>Altri miglioramenti dell'IDE
 
 ### <a name="synchronized-settings-roaming-settings"></a>Impostazioni sincronizzate (impostazioni di roaming)
- In Visual Studio 2013 viene introdotta la funzionalità Impostazioni sincronizzate per alcune delle impostazioni configurate più di frequente, come Editor di testo, KeyBindings, Tema, tipi di carattere e colori, Avvio e Alias di ambiente.  Visual Studio 2015 migliora questa esperienza sincronizzando più impostazioni. La sincronizzazione delle impostazioni viene estesa alla famiglia di applicazioni di Visual Studio, quali Professional, Enterprise, SKU di Express e Blend. Quando si accede a Visual Studio 2015 per la prima volta con lo stesso account usato in Visual Studio 2013, vengono visualizzate le impostazioni sincronizzate applicate in Visual Studio 2013. È possibile accedere alle impostazioni digitando "Sincronizza" in **avvio veloce**, o passando a **strumenti > Opzioni > ambiente > Impostazioni sincronizzate**.
+ In Visual Studio 2013 viene introdotta la funzionalità Impostazioni sincronizzate per alcune delle impostazioni configurate più di frequente, come Editor di testo, KeyBindings, Tema, tipi di carattere e colori, Avvio e Alias di ambiente.  Visual Studio 2015 migliora questa esperienza sincronizzando più impostazioni. La sincronizzazione delle impostazioni viene estesa alla famiglia di applicazioni di Visual Studio, quali Professional, Enterprise, SKU di Express e Blend. Quando si accede a Visual Studio 2015 per la prima volta con lo stesso account usato in Visual Studio 2013, vengono visualizzate le impostazioni sincronizzate applicate in Visual Studio 2013. È possibile accedere alle impostazioni digitando "sincronizza" in **Avvio veloce** o passando a **Strumenti > Opzioni > Ambiente > Impostazioni sincronizzate**.
 
 ### <a name="automatic-extension-updates"></a>Aggiornamenti automatici delle estensioni
  Le estensioni di Visual Studio installate, ora verranno aggiornate automaticamente non appena si rende disponibile una nuova versione su Visual Studio Gallery. Vedere [Ricerca e utilizzo di estensioni di Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) per informazioni dettagliate su come personalizzare gli aggiornamenti di estensione automatica.
 
 ### <a name="title-case-menus"></a>Menu Tutte Iniziali Maiuscole
- In base al feedback degli utenti, i menu di Visual Studio hanno di nuovo tutte le iniziali maiuscole per impostazione predefinita. Tuttavia, se si preferisce lo stile tutte maiuscole, è possibile configurarlo nel menu start o nel **strumenti > Opzioni > Generale** pagina delle proprietà:
+ In base al feedback degli utenti, i menu di Visual Studio hanno di nuovo tutte le iniziali maiuscole per impostazione predefinita. Se tuttavia si preferisce lo stile TUTTE MAIUSCOLE, è possibile impostarlo all'avvio o nella pagina delle proprietà **Strumenti > Opzioni > Generale**:
 
  ![Visual Studio 2015 Title Case comandi del Menu principale](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
@@ -183,18 +183,18 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 ### <a name="notification-hub"></a>Hub di notifica
  L'interfaccia utente per l'hub di notifica è stata semplificata per consentire di eseguire facilmente un'analisi rapida. Sono stati aggiunti altri tipi di notifiche tra cui quelle per problemi di prestazioni, problemi di rendering e arresti anomali del sistema e ora è possibile scegliere di non visualizzare più una notifica. Per altre informazioni, vedere [Notifiche di Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: cercare informazioni sul codice (solo Enterprise e Professional Edition)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Individuare che cosa è successo al codice (solo edizioni Enterprise e Professional)
  CodeLens consente di rimanere concentrati sulle proprie attività mentre si cercano informazioni sul codice senza uscire dall'editor. È possibile esaminare le modifiche e altri riferimenti della cronologia per elementi di lavoro, bug, revisioni del codice e così via per il codice archiviato in Visual Studio Team Services (VSTS) o in Team Foundation Server (TFS).
 
  In Visual Studio Enterprise e Visual Studio Professional ora è possibile:
 
 - Ottenere la cronologia per un intero file di codice nell'editor di Visual Studio.
 
-   ![CodeLens: ottenere i dettagli sul file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens Ottieni dettagli dei file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Visualizzare un grafico che mostra le persone che hanno modificato il codice. consentendo di individuare i criteri delle modifiche del team e di valutarne l'impatto.
 
-   ![CodeLens: visualizzare la cronologia delle modifiche del codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
+   ![CodeLens Vedere cronologia delle modifiche di codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
 
 - Individuare facilmente la data delle ultime modifiche apportate al codice.
 
@@ -203,7 +203,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
   Vedere [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).
 
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Strumenti di architettura e modellazione (solo edizione Enterprise)
- **Le mappe codici e grafici delle dipendenze**
+ **Mappe codici e grafici delle dipendenze**
 
  In Visual Studio Enterprise, per comprendere le dipendenze specifiche nel codice, visualizzarle creando mappe codici. È quindi possibile esplorare queste relazioni tramite la mappa, visualizzata accanto al codice. Le mappe codici consentono di tenere traccia della propria posizione nel codice mentre si usa o si esegue il debug del codice, per cui una parte minore di codice verrà letta mentre si acquisiscono altre informazioni sulla progettazione del codice.
 
@@ -269,7 +269,8 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  In primo luogo, inviare un commento con faccia imbronciata come descritto in precedenza. Nella finestra di dialogo visualizzata è possibile classificare i propri commenti e suggerimenti aggiungendo uno dei tag predefiniti o creandone uno nuovo. I tag facilitano l'inoltro dei commenti al team della funzionalità appropriata. Nell'elenco a discesa **Scegliere una categoria** selezionare l'opzione che rappresenta il problema segnalato, quindi eseguire la procedura per riprodurre il problema. Sono anche disponibili procedure dettagliate su come usare Visual Studio per segnalare problemi. Per altre informazioni, vedere [Visual Studio invia un'istruzioni Smile](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Vedere anche
-* [Crea App multipiattaforma con Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+
+* [Creare app multipiattaforma con Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Creare app con interfaccia utente nativa con Xamarin in Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Creare app multipiattaforma con Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Generare unit test per il codice con IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)

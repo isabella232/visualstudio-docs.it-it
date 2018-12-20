@@ -1,6 +1,6 @@
 ---
-title: Impostazioni di Project per una configurazione di debug C++ | Microsoft Docs
-ms.custom: ''
+title: Impostazioni di progetto per una configurazione di debug C++
+ms.custom: seodec18
 ms.date: 11/26/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b333dca8f717cbd8e1172ed00b4a044aafeed857
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389656"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066901"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 È possibile modificare le impostazioni di progetto per una configurazione di debug C o Visual C++ nel **pagine delle proprietà** finestra di dialogo, come descritto in [come: impostazione del debug e rilascio delle configurazioni](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
@@ -143,7 +143,7 @@ ms.locfileid: "52389656"
 | **Nome server remoto** (debugger Windows remoto) | Specifica il nome di un computer (diverso dal computer in uso) nel quale si desidera eseguire il debug di un'applicazione.<br /><br /> La macro di compilazione RemoteMachine viene impostata sul valore di questa proprietà. Per altre informazioni, vedere [Macro per comandi e proprietà di compilazione](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Connessione** (debugger Windows remoto) | Consente di passare tra tipi di connessione standard e senza autenticazione per il debug remoto. Specificare il nome di un computer remoto nella casella **Nome server remoto**. I tipi di connessione includono:<br /><br /> -   **Remoto con autenticazione di Windows**<br />-   **Remoto senza autenticazione**<br /><br /> **Nota** Il debug remoto senza autenticazione può rendere vulnerabile il computer remoto alle violazioni della sicurezza. La modalità di autenticazione Windows garantisce un maggiore livello di sicurezza.<br /><br /> Per altre informazioni, vedere [Configurazione del debug remoto](../debugger/remote-debugging.md). |
 | **URL HTTP** (debugger servizi Web e debugger Web browser) | Specifica l'URL in cui si trova il progetto di cui si esegue il debug. |
-| **Tipo di debugger** | Specifica il tipo di debugger da usare: **Solo nativo**, **Solo gestito**, **Solo GPU**, **Misto**, **Automatico** (impostazione predefinita) o **Script**.<br /><br /> -   **Solo nativo** è destinato a codice C++ non gestito.<br />-   **Solo gestito** è destinato a codice eseguibile in Common Language Runtime (codice gestito).<br />-   **Misto** richiama debugger sia per codice gestito che per codice non gestito.<br />-   **Automatico** determina il tipo di debugger in base alle informazioni del compilatore e del file EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** è destinato al codice AMP C++ eseguibile in un dispositivo GPU o nell'unità di rasterizzazione dei riferimenti DirectX. Visualizzare [codice debug GPU](../debugger/debugging-gpu-code.md). |
+| **Tipo di debugger** | Specifica il tipo di debugger da usare: **Solo nativo**, **solo gestito**, **solo GPU**, **Mixed**, **automatico** (impostazione predefinita), o **Script**.<br /><br /> -   **Solo nativo** è destinato a codice C++ non gestito.<br />-   **Solo gestito** è destinato a codice eseguibile in Common Language Runtime (codice gestito).<br />-   **Misto** richiama debugger sia per codice gestito che per codice non gestito.<br />-   **Automatico** determina il tipo di debugger in base alle informazioni del compilatore e del file EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** è destinato al codice AMP C++ eseguibile in un dispositivo GPU o nell'unità di rasterizzazione dei riferimenti DirectX. Visualizzare [codice debug GPU](../debugger/debugging-gpu-code.md). |
 | **Ambiente** (Debugger Windows locale e Debugger Windows remoto) | Specifica le variabili di ambiente per il programma di cui si esegue il debug. Usare la sintassi di variabili di ambiente standard (ad esempio, `PATH="%SystemRoot%\..."`). Queste variabili eseguono l'override dell'ambiente di sistema oppure ne viene eseguito il merge con l'ambiente di sistema in base all'impostazione **Esegui merge ambiente**. Quando fa clic su nella colonna impostazioni, un "modifica..." viene visualizzato. Selezionare questo collegamento per modificare le variabili di ambiente. |
 | **Esegui merge ambiente** (debugger Windows locale) | Determina se verrà eseguito il merge delle variabili specificate nella casella **Ambiente** con l'ambiente definito dal sistema operativo. L'impostazione predefinita è Sì. |
 | **Debug SQL** (tutti ad eccezione del debugger cluster MPI) | Attiva il debug delle procedure SQL dall'applicazione [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. L'impostazione predefinita è No. |
@@ -156,19 +156,19 @@ ms.locfileid: "52389656"
   
 ## <a name="cc-folder-general-category"></a>Cartella C/C++ (categoria Generale)  
   
-|Impostazione|Descrizione|  
+|Impostazione|Description|  
 |-------------|-----------------|  
 |**Formato informazioni di debug** ([/Z7, /Zd, Zi, /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|Specifica il tipo di informazioni di debug da creare per il progetto.<br /><br /> In base all'opzione predefinita (/ZI), viene creato un database di programma (PDB) in un formato compatibile con la funzionalità Modifica e continuazione. Per altre informazioni, vedere [/Z7, /Zd, /Zi, /ZI (Formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format).|  
   
 ## <a name="cc-folder-optimization-category"></a>Cartella C/C++ (categoria Ottimizzazione)  
   
-|Impostazione|Descrizione|  
+|Impostazione|Description|  
 |-------------|-----------------|  
 |**Optimization**|Specifica se il codice generato dal compilatore deve essere ottimizzato. Per effetto dell'ottimizzazione, il codice eseguito viene modificato. Codice ottimizzato non corrisponde più al codice sorgente, che rende più difficile il debug.<br /><br /> In base all'opzione predefinita (**Disabilitato (/0d)**), l'ottimizzazione non viene eseguita. È possibile disattivare l'ottimizzazione durante la fase di sviluppo e attivarla quando si crea la versione di produzione del codice.|  
   
 ## <a name="linker-folder-debugging-category"></a>Cartella Linker (categoria Debug)  
   
-|Impostazione|Descrizione|  
+|Impostazione|Description|  
 |-------------|-----------------|  
 |**Genera informazioni di debug** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|Comunica al linker di includere informazioni di debug con il formato specificato da [/Z7, /Zd, Zi, or /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format).|  
 |**Genera file del database di programma** ([/PDB:nome](/cpp/build/reference/pdb-use-program-database))|Specificare il nome di un programma (PDB) del file di database in questa casella. Selezionare ZI o /Zi per Formato informazioni di debug.|  
