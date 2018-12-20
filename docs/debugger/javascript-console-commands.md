@@ -1,6 +1,6 @@
 ---
-title: Comandi della JavaScript Console in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Comandi della JavaScript Console | Microsoft Docs
+ms.custom: seodec18
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823749"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052222"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
   
- È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
+ È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: Eseguire il debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "49823749"
 > [!TIP]
 >  Le versioni precedenti di Visual Studio non supportano il set completo di comandi. Usare IntelliSense sull'oggetto console per ottenere informazioni rapide sui comandi supportati.  
   
-|Comando|Descrizione|Esempio|  
+|Comando|Description|Esempio|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|Invia un messaggio quando `expression` restituisce **false**.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|Cancella i messaggi dalla finestra della console, inclusi i messaggi di errore di script, e cancella inoltre lo script visualizzato nella finestra della console. Non cancella lo script immesso nella richiesta di input della console.|`console.clear();`|  
@@ -64,7 +64,7 @@ ms.locfileid: "49823749"
 ## <a name="miscellaneous-commands"></a>Comandi vari  
  Questi comandi sono disponibili anche nella finestra della console JavaScript (non sono disponibili dal codice).  
   
-|Comando|Descrizione|Esempio|  
+|Comando|Description|Esempio|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Restituisce l'elemento specificato nella finestra della console. `$0` restituisce l'elemento attualmente selezionato in DOM Explorer, `$1` restituisce l'elemento selezionato in precedenza in DOM Explorer e così via, fino al quarto elemento selezionato in precedenza.|$3|  
 |`$(id)`|Restituisce un elemento in base all'ID. Si tratta di un comando di scelta rapida per `document.getElementById(id)`, dove `id` è una stringa che rappresenta l'ID dell'elemento.|`$("contenthost")`|  
@@ -86,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Esame degli oggetti nella finestra della console JavaScript  
  È possibile interagire con qualsiasi oggetto all'interno dell'ambito quando si usa la finestra della console JavaScript. Per controllare un oggetto esterno all'ambito nella finestra della console, usare `console.log` , `console.dir`o altri comandi del codice. In alternativa, è possibile interagire con l'oggetto dalla finestra della console mentre si trova nell'ambito impostando un punto di interruzione nel codice (**Punto di interruzione** > **Insert Punto di interruzione**).  
   
-##  <a name="ConsoleLog"></a> Formattazione dell'output di console. log  
+##  <a name="ConsoleLog"></a> Formattazione dell'output di console.log  
  Se si passano più argomenti a `console.log`, la console li considererà come una matrice e concatenerà l'output.  
   
 ```javascript  
@@ -132,4 +132,4 @@ console.log("%s is %f years old!", user.first, user.age);
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida introduttiva: Eseguire il Debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
