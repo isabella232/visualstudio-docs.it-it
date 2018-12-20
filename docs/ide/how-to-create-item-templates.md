@@ -1,5 +1,5 @@
 ---
-title: Creare modelli di elemento per Visual Studio
+title: Creare modelli di elementi
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954662"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062457"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -123,10 +123,10 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 1. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**. I file selezionati verranno compressi in un file con estensione *zip*.
 
-1. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2017 la directory predefinita è *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elementi](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2017 la directory predefinita è *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)
+- [Procedura: Creare modelli di elemento a più file](../ide/how-to-create-multi-file-item-templates.md)
 - [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)

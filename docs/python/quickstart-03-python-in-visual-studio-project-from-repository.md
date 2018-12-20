@@ -1,24 +1,25 @@
 ---
 title: 'Guida rapida: Clonare un repository di codice Python'
 description: In questa guida introduttiva viene creato un progetto Python in Visual Studio tramite la clonazione del repository koans Python con Visual Studio Team Explorer.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281689"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068393"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida introduttiva: Clonare un repository di codice Python in Visual Studio
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Avvio rapido: Clonare un repository del codice Python in Visual Studio
 
 Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-python-support-in-visual-studio.md), è possibile aggiungere l'estensione GitHub per Visual Studio. L'estensione consente di clonare facilmente un repository di codice Python e di creare un progetto da quest'ultimo dall'interno dell'IDE. Rimane comunque possibile clonare i repository dalla riga di comando e utilizzarli in Visual Studio.
 
@@ -57,7 +58,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-py
 
 1. Premere **CTRL**+**F5** o selezionare **Debug** > **Avvia senza eseguire debug** per eseguire il programma. Se viene visualizzato un errore **FileNotFoundError** per il file *koans.txt*, controllare l'impostazione della directory di lavoro come descritto nel passaggio precedente.
 
-1. Quando il programma viene eseguito correttamente, viene visualizzato un errore di asserzione alla riga 17 del file *python3/koans/about_asserts.py*. È intenzionale: il programma è progettato per fare in modo che gli errori intenzionali siano corretti. (Per altri dettagli, vedere [Ruby Koans](http://rubykoans.com/) da cui è stato ideato Python Koans.)
+1. Quando il programma viene eseguito correttamente, viene visualizzato un errore di asserzione alla riga 17 del file *python3/koans/about_asserts.py*. È intenzionale: il programma è progettato per fare in modo che gli errori intenzionali siano corretti. (Per altri dettagli, vedere [Ruby Koans](https://rubykoans.com/) da cui è stato ideato Python Koans.)
 
     ![Primo output del programma di Python koans](media/koans-output.png)
 

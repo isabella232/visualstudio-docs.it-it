@@ -1,7 +1,7 @@
 ---
-title: Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy | Microsoft Docs
+title: Installare e usare prodotti protetti da un firewall o un server proxy
 description: Verificare le URL di dominio, le porte e i protocolli da aggiungere in un elenco di elementi consentiti o aprire se l'organizzazione usa un firewall o un server proxy
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349569"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160166"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
 Se un utente o un'organizzazione usa misure di sicurezza come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere in un elenco di elementi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
 
-* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere in un elenco di elementi consentiti in modo da poter accedere a tutti i componenti e i carichi di lavoro richiesti.
+* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere a un elenco di elementi consentiti in modo da poter accedere a tutti i componenti e i carichi di lavoro necessari.
 
-* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere in un elenco di elementi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e i servizi richiesti.
+* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere a un elenco di elementi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e a tutti i servizi necessari.
 
 > [!NOTE]
 > Questo articolo è stato scritto per Visual Studio in Windows, ma alcune informazioni sono applicabili anche all'[installazione di Visual Studio per Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) dietro un firewall o un server proxy.
@@ -55,7 +55,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 | visualstudio.microsoft.com | Percorso della documentazione |
 | docs.microsoft.com | Percorso della documentazione |
 | msdn.microsoft.com | Percorso della documentazione |
-| www.microsoft.com | Percorso della documentazione |
+| www\.microsoft.com | Percorso della documentazione |
 | \*.windows.net | Percorso di accesso |
 | \*.microsoftonline.com | Percorso di accesso |
 | \*.live.com | Percorso di accesso |
@@ -72,9 +72,9 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 | download.unity3d.com | Sviluppo di giochi con Unity (Unity) |
 | netstorage.unity3d.com | Sviluppo di giochi con Unity (Unity) |
 | dl.google.com | Sviluppo per dispositivi mobili con JavaScript (Android SDK e NDK, emulatore) <br /><br />Sviluppo per dispositivi mobili con .NET (Android SDK e NDK, emulatore) |
-| www.incredibuild.com | Sviluppo di giochi con C++ (IncrediBuild) |
+| www\.incredibuild.com | Sviluppo di giochi con C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Sviluppo di giochi con C++ (IncrediBuild) |
-| www.python.org | Sviluppo Python (Python) <br /><br />Applicazioni analitiche e di analisi scientifica dei dati (Python) |
+| www\.python.org | Sviluppo Python (Python) <br /><br />Applicazioni analitiche e di analisi scientifica dei dati (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usare Visual Studio e i servizi di Azure
@@ -83,7 +83,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere all'elenco degli elementi consentiti e le porte e i protocolli che è possibile aprire.
 
-| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Descrizione |
+| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Description |
 | - | - | - | - | - |
 | URL<br>risoluzione | go.microsoft.com<br><br>aka.ms | | | Usato per abbreviare gli URL, risolti quindi in URL più lunghi |
 | Pagina iniziale | vsstartpage.blob.core.windows.net | | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale in Visual Studio |
@@ -121,7 +121,7 @@ Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quan
 | Snapshot <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dipendente dalla versione di Visual Studio) | 1. File di query con estensione json per le dimensioni dello SKU del servizio app <br>2. Varie chiamate di Azure RM <br>3. Chiamata di riscaldamento del sito tramite  <br>4. Endpoint Kudu del servizio app di destinazione del cliente <br>5. Versione dell'estensione del sito query pubblicata in nuget.org <br>6. Canale di debug remoto |
 | Analisi di flusso di Azure <br><br>HDInsight | Management.azure.com | https | 443 | Usato per visualizzare, inviare, eseguire e gestire i processi ASA <br><br> Usato per esplorare i cluster HDI e inviare, diagnosticare ed eseguire il debug di processi HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Usato per compilare, inviare, visualizzare, diagnosticare ed eseguire il debug di processi; usato per visualizzare file ADLS; usato per caricare e scaricare file |
-| Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | I domini \*.npmjs.org, \*.nuget.org e \*.nodejs.org sono necessari solo per determinati scenari di attività di compilazione, ad esempio il programma di installazione dello strumento NuGet o il programma di installazione dello strumento Node, o se si prevede di usare upstream pubblici con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
+| Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org e \*.nodejs.org sono necessari solo per alcuni scenari di attività di compilazione, ad esempio Programma di installazione strumento NuGet e Programma di installazione strumento Node, o se si prevede di usare upstream pubblici con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Usato per la connessione con Azure DevOps Services |
 | | | | | |
 

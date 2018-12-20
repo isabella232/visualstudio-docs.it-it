@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513400"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160140"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -60,21 +60,21 @@ I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per
 
 I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri. In C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:
 
-- **Interfacce e classi di base**: IntelliSense rimuove automaticamente le voci dagli elenchi di completamento per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi di base dall'elenco di completamento perché C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.
+- **Interfacce e classi di base**: Vengono rimosse le voci dagli elenchi di completamento IntelliSense per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi di base dall'elenco di completamento perché C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.
 
-- **Attributi**: quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo i tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.
+- **Attributi**: Quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo quei tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.
 
 - **Clausole catch**
 
-- **Inizializzatori di oggetto**: solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.
+- **Inizializzatori di oggetti**: Solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.
 
-- **Nuova parola chiave**: quando si digita `new` e si preme la **BARRA SPAZIATRICE**, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.
+- **Parola chiave new**: Quando si digita `new` e poi si preme la **Barra spaziatrice**, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.
 
-- **Parola chiave di enumerazione**: quando si preme la **BARRA SPAZIATRICE** dopo il segno di uguale per un'assegnazione di enumerazione, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Dopo aver digitato la parola chiave return e quando si crea una dichiarazione, ad esempio, le voci nell'elenco di completamento vengono selezionate automaticamente.
+- **Parola chiave enum**: Quando si preme la **Barra spaziatrice** dopo il segno di uguale per un'assegnazione enum, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Dopo aver digitato la parola chiave return e quando si crea una dichiarazione, ad esempio, le voci nell'elenco di completamento vengono selezionate automaticamente.
 
-- **Operatori as e is**: quando si preme la **BARRA SPAZIATRICE** dopo aver digitato la parola chiave `as` o `is` viene visualizzato automaticamente un elenco di completamento filtrato.
+- **Operatori as e is**: Quando si preme la **Barra spaziatrice** dopo aver digitato la parola chiave `as` o `is`, viene visualizzato automaticamente un elenco di completamento.
 
-- **Eventi**: quando si digita la parola chiave `event` l'elenco di completamento contiene solo tipi delegati.
+- **Eventi**: Quando si digita la parola chiave `event` l'elenco di completamento contiene solo tipi delegati.
 
 - Il **parametro help** consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.
 
@@ -116,7 +116,7 @@ Il comando Implementa interfaccia genera il numero minimo di stub di metodo nece
 
 IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe di base astratta mentre si usa l'editor del codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Usando IntelliSense, dopo aver digitato il nome di una classe di base astratta in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente i metodi della classe di base.
 
-Gli stub di metodo generati con la funzionalità **Implementare una classe di base astratta** vengono modellati in base al frammento di codice definito nel file *MethodStub.snippet*. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
+Gli stub di metodo generati con la funzionalità **Implementare una classe di base astratta** vengono modellati in base al frammento di codice definito nel file *MethodStub.snippet*. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generazione dall'utilizzo
 
@@ -165,4 +165,4 @@ Se si preme **TAB**, IntelliSense associa automaticamente un metodo con la firma
 ## <a name="see-also"></a>Vedere anche
 
 - [Usare IntelliSense](../ide/using-intellisense.md)
-- [IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [IDE di Visual Studio](../get-started/visual-studio-ide.md)

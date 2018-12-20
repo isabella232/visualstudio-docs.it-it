@@ -1,6 +1,6 @@
 ---
 title: Debug del codice Python
-description: Presentazione dettagliata delle funzionalità di debug in Visual Studio specifiche per il codice Python, inclusa l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'individuazione delle eccezioni e il debug nella finestra interattiva.
+description: Visual Studio offre funzionalità di debug avanzate per il codice Python, tra cui l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'analisi delle eccezioni e il debug nella finestra interattiva.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101160"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068435"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -54,7 +55,7 @@ Il flusso di lavoro del debug di base include l'impostazione dei punti di interr
 
 Con i punti di interruzione l'esecuzione del codice viene arrestata in corrispondenza di un punto contrassegnato per consentire il controllo dello stato del programma. Per impostare punti di interruzione, fare clic sul margine sinistro dell'editor del codice oppure fare clic con il pulsante destro del mouse su una riga di codice e scegliere **Punto di interruzione** > **Inserisci punto di interruzione**. Accanto a ogni riga con un punto di interruzione verrà visualizzato un punto rosso.
 
-![Punti di interruzione in Visual Studio](media/debugging-breakpoints.png)
+![Punti di interruzione visualizzati in Visual Studio](media/debugging-breakpoints.png)
 
 Per rimuovere il punto di interruzione, fare clic sul punto rosso oppure fare clic con il pulsante destro del mouse sulla riga di codice e scegliere **Punto di interruzione** > **Elimina punto di interruzione**. È anche possibile usare il comando **Punto di interruzione** > **Disabilita punto di interruzione** per disabilitare il punto di interruzione senza rimuoverlo.
 
@@ -71,7 +72,7 @@ Quando si impostano le condizioni, è anche possibile impostare un'**azione** e 
 
 Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di interruzione, sono disponibili varie opzioni per eseguire il codice istruzione per istruzione oppure eseguire blocchi di codice prima di una nuova interruzione. Questi comandi sono disponibili in diverse posizioni, tra cui la barra degli strumenti di debug superiore, il menu **Debug**, il menu di scelta rapida nell'editor del codice e tramite i tasti di scelta rapida, tenendo presente però che non tutti i comandi sono accessibili da tutte le posizioni:
 
-| Funzionalità | Tasto o combinazione di tasti | Descrizione |
+| Funzionalità | Tasto o combinazione di tasti | Description |
 | --- | --- | --- |
 | **Continue** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
 | **Esegui istruzione** | **F11** | Esegue l'istruzione successiva e si arresta. Se l'istruzione successiva è una chiamata a una funzione, il debugger si arresta in corrispondenza della prima riga della funzione chiamata. |
@@ -87,27 +88,27 @@ Quando il debugger non è in esecuzione, è possibile controllare e modificare i
 
 Per visualizzare un valore usando i **suggerimenti dati**, è sufficiente passare il puntatore del mouse su una qualsiasi variabile nell'editor. È possibile fare clic sul valore per modificarlo:
 
-![Suggerimenti dati nel debugger](media/debugging-quick-tips.png)
+![Suggerimenti dati nel debugger di Visual Studio](media/debugging-quick-tips.png)
 
 La finestra **Auto** (**Debug** > **Finestre** > **Auto**) contiene variabili ed espressioni vicine all'istruzione corrente. È possibile fare doppio clic nella colonna del valore oppure selezionare e premere **F2** per modificare il valore:
 
-![Finestra Auto nel debugger](media/debugging-autos-window.png)
+![Finestra Auto nel debugger di Visual Studio](media/debugging-autos-window.png)
 
 La finestra **Variabili locali** (**Debug** > **Finestre** > **Variabili locali**) visualizza tutte le variabili presenti nell'ambito corrente che è possibile modificare nuovamente:
 
-![Finestra Variabili locali nel debugger](media/debugging-locals-window.png)
+![Finestra Variabili locali nel debugger di Visual Studio](media/debugging-locals-window.png)
 
 Per altre informazioni sull'uso di **Auto** e **Variabili locali**, vedere [Controllare le variabili nelle finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md).
 
 Le finestre **Espressioni di controllo** (**Debug** > **Finestre** > **Espressioni di controllo** > **Espressione di controllo 1-4**) consentono di immettere espressioni Python arbitrarie e di visualizzare i risultati. Le espressioni vengono valutate nuovamente per ogni passaggio:
 
-![Finestra Espressioni di controllo nel debugger](media/debugging-watch-window.png)
+![Finestra Espressioni di controllo nel debugger di Visual Studio](media/debugging-watch-window.png)
 
 Per altre informazioni sull'uso di **Espressioni di controllo**, vedere [Impostare un'espressione di controllo nelle variabili usando le finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md).
 
 Durante il controllo di un valore stringa (a questo scopo `str`, `unicode`, `bytes` e `bytearray` sono tutti considerati stringhe), a destra del valore compare l'icona di una lente di ingrandimento. Se si fa clic sull'icona, il valore stringa senza virgolette viene visualizzato in una finestra di dialogo popup con wrapping e scorrimento, funzioni utili in caso di stringhe lunghe. In più, se si fa clic sulla freccia giù sull'icona è possibile scegliere tra le visualizzazioni testo normale, HTML, XML e JSON:
 
-![Visualizzatori di stringa](media/debugging-string-visualizers.png)
+![Visualizzatori di stringa nel debugger di Visual Studio](media/debugging-string-visualizers.png)
 
 Le visualizzazioni HTML, XML e JSON sono disponibili in finestre popup separate, che supportano visualizzazioni albero ed evidenziazione della sintassi.
 
@@ -115,13 +116,13 @@ Le visualizzazioni HTML, XML e JSON sono disponibili in finestre popup separate,
 
 Se si verifica un errore nel programma durante il debug e non si dispone di un gestore di eccezioni per risolverlo, l'esecuzione del debugger si interrompe in corrispondenza del punto in cui si è verificata l'eccezione:
 
-![Popup dell'eccezione](media/debugging-exception-popup.png)
+![Popup delle eccezioni nel debugger di Visual Studio](media/debugging-exception-popup.png)
 
 A questo punto è possibile controllare lo stato del programma, incluso lo stack di chiamate. Se tuttavia si prova a eseguire il codice istruzione per istruzione, l'eccezione continua a essere generata fino a quando non viene gestita o il programma non viene chiuso.
 
 Il comando di menu **Debug** > **Finestre** > **Impostazioni eccezioni** consente di visualizzare una finestra in cui è possibile espandere **Eccezioni Python**:
 
-![Finestra Eccezioni](media/debugging-exception-settings.png)
+![Finestra delle eccezioni nel debugger di Visual Studio](media/debugging-exception-settings.png)
 
 La casella di controllo relativa alle singole eccezioni consente di controllare se l'esecuzione del debugger deve essere *sempre* interrotta quando viene generata l'eccezione. Selezionare questa casella se si vuole interrompere più spesso l'esecuzione per una particolare eccezione.
 
@@ -133,11 +134,11 @@ Per configurare un'eccezione che non compare nell'elenco, fare clic sul pulsante
 
 Per impostazione predefinita, il debugger avvia il programma con l'utilità di avvio standard di Python, senza argomenti della riga di comando e altri percorsi o condizioni speciali. È possibile modificare le opzioni di avvio tramite le proprietà di debug del progetto. Per accedere alle proprietà, fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni**, scegliere **Proprietà** e quindi fare clic sulla scheda **Debug**.
 
-![Proprietà di debug del progetto](media/debugging-project-properties.png)
+![Proprietà di debug del progetto nel debugger di Visual Studio](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Opzioni di Modalità di avvio
 
-| Opzione | Descrizione |
+| Opzione | Description |
 | --- | --- |
 | **Utilità di avvio Python standard** | Usa il codice di debug scritto in Python portabile che è compatibile con CPython, IronPython e varianti quali Stackless Python. Offre un'esperienza ottimale per il debug di codice Python puro. Si tratta dell'utilità di avvio usata quando ci si collega a un processo *python.exe* in esecuzione. Questa utilità di avvio include anche il [debug in modalità mista](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) per CPython, che consente di passare in modo trasparente dal codice C/C++ al codice Python e viceversa. |
 | **Utilità di avvio Web** | Esegue il browser predefinito all'avvio e consente di eseguire il debug di modelli. Per altre informazioni, vedere la sezione [Web template debugging](python-web-application-project-templates.md#debugging) (Debug di modelli Web). |
@@ -146,7 +147,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opzioni di esecuzione (percorsi di ricerca, argomenti di avvio e variabili di ambiente)
 
-| Opzione | Descrizione |
+| Opzione | Description |
 | --- | --- |
 | **Percorsi di ricerca** | Questi valori corrispondono a quanto visualizzato nel nodo **Percorsi di ricerca** del progetto in **Esplora soluzioni**. È possibile modificare qui questo valore, ma è più facile usare **Esplora soluzioni** che consente di sfogliare le cartelle e converte automaticamente i percorsi nel formato relativo. |
 | **Argomenti dello script** | Questi argomenti vengono aggiunti al comando usato per avviare lo script e vengono visualizzati dopo il nome del file di script. Il primo elemento definito qui risulta disponibile per lo script come `sys.argv[1]`, il secondo come `sys.argv[2]`e così via. |
@@ -166,7 +167,7 @@ La finestra **Debug interattivo Python** (**Debug** > **Finestre** > **Debug int
 
 La finestra **Debug interattivo** supporta speciali metacomandi in aggiunta ai [comandi REPL standard](python-interactive-repl-in-visual-studio.md#meta-commands):
 
-| Comando | Argomenti | Descrizione |
+| Comando | Argomenti | Description |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Avvia l'esecuzione del programma a partire dall'istruzione corrente. |
 | `$down`, `$d` | Sposta il frame corrente di un livello verso il basso nell'analisi dello stack. |

@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio
+title: Risoluzione dei problemi correlati alla rete o al proxy
 description: Trovare soluzioni per gli errori correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
 ms.custom: ''
 ms.date: 02/12/2018
@@ -18,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672314"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047616"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio
 
 Esistono soluzioni per la maggiore parte degli errori tipici correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
 
-## <a name="error-proxy-authorization-required"></a>Errore: "Autorizzazione del proxy richiesta"
+## <a name="error-proxy-authorization-required"></a>Errore: "Necessaria autorizzazione proxy"
 
 Generalmente questo errore si verifica quando gli utenti sono connessi a Internet tramite un server proxy e quest'ultimo blocca le chiamate di Visual Studio ad alcune risorse di rete.
 

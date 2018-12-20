@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione delle definizioni dei tipi in Visual Studio
+title: Visualizzazione delle definizioni dei tipi
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745763"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062082"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -52,7 +52,7 @@ Premere quindi **Ctrl** (o il tasto di modifica selezionato in **Opzioni**) e fa
 
 Se viene visualizzata una definizione diversa da quella della finestra popup, è possibile seguire un percorso di navigazione usando i cerchi e le frecce visualizzati sopra la finestra popup.
 
-Per altre informazioni, vedere [How to: View and edit Code by using Peek Definition (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) (Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (ALT+F12)).
+Per altre informazioni, vedere [Procedura: Visualizzare e modificare il codice tramite la finestra Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Visualizzare i metadati come codice sorgente (C#)
 
@@ -79,4 +79,4 @@ Una novità di Visual Studio 2017 versione 15.6 consente di impostare un'opzione
 ## <a name="see-also"></a>Vedere anche
 
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)
-- [Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Procedura: Visualizzare e modificare il codice tramite la finestra Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

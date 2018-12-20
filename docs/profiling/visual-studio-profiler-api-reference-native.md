@@ -1,6 +1,7 @@
 ---
-title: Riferimenti per le API del profiler di Visual Studio (native) | Microsoft Docs
-ms.custom: ''
+title: Riferimenti per le API del profiler di Visual Studio (native)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572098"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062998"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Riferimenti per le API del profiler di Visual Studio (native)
 Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, è necessario includere il file di intestazione *VSPerf.h* e aggiungere il file *VSPerf.lib* nel progetto.  
@@ -47,4 +48,4 @@ Le API del profiler di Visual Studio consentono di controllare a livello di codi
   
 ## <a name="see-also"></a>Vedere anche  
  [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)   
- [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)
+ [Procedura dettagliata: uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)

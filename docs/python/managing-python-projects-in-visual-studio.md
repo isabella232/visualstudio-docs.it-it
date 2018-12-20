@@ -1,6 +1,6 @@
 ---
-title: Gestione dei progetti per applicazioni Python
-description: Lo scopo dei progetti in Visual Studio, come creare e gestire i progetti per il codice Python e i diversi modelli di progetto disponibili per Python.
+title: Gestire progetti di applicazioni Python
+description: I progetti in Visual Studio gestiscono le dipendenze tra i file e la complessità delle relazioni in un'applicazione.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220469"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068286"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -38,7 +39,7 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 |   |   |
 |---|---|
 | ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) per un'introduzione ai progetti Python (2m 17s). |
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Vedere anche [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Approfondimenti: usare il controllo del codice sorgente con i progetti Python) su youtube.com (8m e 55s). |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Vedere anche [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Approfondimenti: usare il controllo del codice sorgente con i progetti Python) su youtube.com, 8 minuti e 55 secondi. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Aggiungere file, assegnare un file di avvio e impostare gli ambienti
 
@@ -65,7 +66,7 @@ In Visual Studio sono disponibili diverse opzioni per configurare un progetto Py
 
 La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 (non tutti i modelli sono disponibili nelle versioni precedenti):
 
-| Modello | Descrizione |
+| Modello | Description |
 | --- | --- |
 | [**Da codice Python esistente**](#create-project-from-existing-files) | Crea un progetto di Visual Studio da codice Python esistente in una struttura di cartelle.  |
 | **Applicazione Python** | Struttura di progetto di base per una nuova applicazione Python che contiene un solo file di origine vuoto. Per impostazione predefinita, il progetto viene eseguito nell'interprete della console dell'ambiente globale predefinito, che è possibile modificare [assegnando un altro ambiente](selecting-a-python-environment-for-a-project.md). |
@@ -92,7 +93,7 @@ La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 (non t
 
 ## <a name="linked-files"></a>File collegati
 
-Per file collegati si intendono i file importati in un progetto, ma che in genere si trovano all'esterno delle cartelle di progetto dell'applicazione. Tali file vengono visualizzati in **Esplora soluzioni** come file normali contraddistinti da un'icona di collegamento sovrapposta: ![icona file collegati](media/projects-linked-file-icon.png)
+Per file collegati si intendono i file importati in un progetto, ma che in genere si trovano all'esterno delle cartelle di progetto dell'applicazione. Questi file vengono visualizzati in **Esplora soluzioni** come file normali contraddistinti da un'icona di collegamento sovrapposta: ![Icona di file collegato](media/projects-linked-file-icon.png)
 
 Questi file collegati vengono specificati nel file con estensione *pyproj* usando l'elemento `<Compile Include="...">`. I file collegati sono impliciti se usano un percorso relativo al di fuori della struttura di directory o espliciti se usano i percorsi all'interno di **Esplora soluzioni**:
 

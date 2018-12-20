@@ -1,5 +1,5 @@
 ---
-title: Scrivere unit test per C/C++ in Visual Studio
+title: Scrivere unit test per C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879226"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053744"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -73,7 +73,7 @@ Nel file con estensione *cpp* dell'unit test aggiungere quindi una direttiva `#i
 ### <a name="write-test-methods"></a>Scrivere i metodi di test
 
 > [!NOTE]
-> Questa sezione mostra la sintassi per il framework di testing unità Microsoft per C/C++. La documentazione è disponibile in [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Per la documentazione di Google Test, vedere [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per Boost.Test, vedere [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Libreria di test Boost: framework di unit test).
+> Questa sezione mostra la sintassi per il framework di testing unità Microsoft per C/C++. È documentata di seguito: [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Per la documentazione di Google Test, vedere [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per Boost.Test, vedere [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Libreria di test Boost: framework di unit test).
 
 Il file con estensione *cpp* nel progetto di test include una classe stub e un metodo definiti come esempio per la scrittura del codice di test. Si noti che le firme usano le macro TEST_CLASS e TEST_METHOD, che rendono individuabili i metodi dalla finestra **Esplora test**.
 
@@ -119,7 +119,7 @@ Per le procedure consigliate associate agli unit test, vedere [Nozioni fondament
 
 ## <a name="use-codelens"></a>Usare CodeLens
 
-**Visual Studio 2017 versione 15.7 solo edizioni Professional ed Enterprise**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permette di esaminare rapidamente lo stato di uno unit test senza uscire dall'editor di codice. È possibile inizializzare CodeLens per un progetto di unit test C++ in uno dei modi seguenti:
+**Visual Studio 2017 versione 15.7 (solo edizioni Professional ed Enterprise)**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) consente di visualizzare rapidamente lo stato di uno unit test senza uscire dall'editor di codice. È possibile inizializzare CodeLens per un progetto di unit test C++ in uno dei modi seguenti:
 
 - Modificare e compilare la soluzione o il progetto di test.
 - Ricompilare la soluzione o il progetto.

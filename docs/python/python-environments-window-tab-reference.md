@@ -1,22 +1,23 @@
 ---
 title: Informazioni di riferimento sulla finestra Ambienti Python
 description: Dettagli su ognuna delle schede visualizzate nella finestra Ambienti Python in Visual Studio.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996077"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051429"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -35,7 +36,7 @@ Include informazioni di base e comandi per l'ambiente:
 
 ![Scheda Panoramica di Ambienti Python](media/environments-overview-tab.png)
 
-| Comando | Descrizione |
+| Comando | Description |
 | --- | --- |
 | **Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti)** | Imposta l'ambiente attivo, facendo sì che Visual Studio (2017 versione 15.5 e precedenti) non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
 | **Visit the distributor's website (Visita il sito Web del server di distribuzione)** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
@@ -61,7 +62,7 @@ Se disponibile, contiene i dettagli descritti nella tabella seguente. Se questa 
 
 ![Scheda Configura di Ambienti Python](media/environments-configure-tab.png)
 
-| Campo | Descrizione |
+| Campo | Description |
 | --- | --- |
 | **Descrizione** | Nome da assegnare all'ambiente. |
 | **Percorso di prefisso** | Percorso della cartella di base dell'interprete. Se si compila questo valore e si fa clic su **Rilevamento automatico**, Visual Studio prova a compilare automaticamente gli altri campi. |
@@ -102,7 +103,7 @@ Durante l'installazione di pacchetti in un ambiente che si trova in un'area prot
 
 ![Richiesta di elevazione dei privilegi per l'installazione del pacchetto](media/environments-pip-elevate.png)
 
-**Eleva ora** concede privilegi di amministratore per pip per un'unica operazione, subordinatamente anche a qualunque richiesta di permessi del sistema operativo. Se si seleziona **Continua senza privilegi di amministratore** viene tentata l'installazione del pacchetto, ma pip ha esito negativo quando cerca di creare delle cartelle con un output come **errore: impossibile creare 'C:\Programmi\Anaconda3\Lib\site-packages\png.py': Autorizzazione negata**.
+**Eleva ora** concede privilegi di amministratore per pip per un'unica operazione, subordinatamente anche a qualunque richiesta di permessi del sistema operativo. Se si seleziona **Continua senza privilegi di amministratore** viene tentata l'installazione del pacchetto, ma pip ha esito negativo quando prova a creare cartelle con un output simile a **Errore: impossibile creare "C:\Programmi\Anaconda3\Lib\site-packages\png.py". Autorizzazione negata.**
 
 Selezionando **Eleva sempre quando si installano o rimuovono pacchetti** si impedisce la visualizzazione della finestra di dialogo per l'ambiente in questione. Per visualizzare nuovamente la finestra di dialogo, passare a **Strumenti** > **Opzioni** > **Strumenti Python** > **Generale** e selezionare il pulsante **Ripristina tutte le finestre di dialogo nascoste in modo permanente**.
 

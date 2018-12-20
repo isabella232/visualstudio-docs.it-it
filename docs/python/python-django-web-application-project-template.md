@@ -1,6 +1,6 @@
 ---
 title: Modello di progetto Web Django per Python
-description: Panoramica dei modelli di Visual Studio per le applicazioni Web scritte in Python con il framework Django.
+description: Visual Studio offre un modello completo per creare rapidamente applicazioni Web Django con Python.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607432"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066522"
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 
@@ -50,19 +51,19 @@ Visual Studio offre anche [supporto completo per il debug](debugging-python-in-v
 
 - **Apri shell Django**: apre una shell nel contesto dell'applicazione che consente di modificare i modelli:
 
-    ![Console](media/template-django-console-shell.png)
+    ![Risultati del comando Open Django Shell](media/template-django-console-shell.png)
 
 - **DB sincronizzazione Django**: esegue `manage.py syncdb` in una finestra **Interattiva**:
 
-    ![Console](media/template-django-console-sync-db.png)
+    ![Risultato del comando Django Sync DB](media/template-django-console-sync-db.png)
 
 - **Raccogli file statici**: esegue `manage.py collectstatic --noinput` per copiare tutti i file statici nel percorso specificato da `STATIC_ROOT` nel file *settings.py*.
 
-    ![Console](media/template-django-console-collect-static.png)
+    ![Risultato del comando Collect Staticd](media/template-django-console-collect-static.png)
 
 - **Convalida**: esegue `manage.py validate`, che restituisce tutti gli errori di convalida presenti nei modelli installati specificati da `INSTALLED_APPS` nel file *settings.py*:
 
-    ![Console](media/template-django-console-validate.png)
+    ![Risultato del comando Validate](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Vedere anche
 

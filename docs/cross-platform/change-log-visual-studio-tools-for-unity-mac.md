@@ -1,24 +1,45 @@
 ---
 title: Registro modifiche (Visual Studio Tools per Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775187"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027237"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="1700"></a>1.7.0.0
+ Data di rilascio: 13 novembre 2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Debugger:**
+
+    -   Aggiunta di altre informazioni sul client (IP, nome del computer) nella finestra di dialogo di connessione.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Debugger:**
+
+     -   Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento di "Collega a Unity" o al riavvio del gioco.
+     
+-   **Integrazione:**
+
+     -   Correzione dell'attivazione del plug-in Unity quando veniva selezionato un altro editor predefinito.
+     
+     -   Correzione della creazione di un modello di file Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Data di rilascio: 24 luglio 2018

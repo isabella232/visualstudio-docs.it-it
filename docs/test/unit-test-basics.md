@@ -1,5 +1,5 @@
 ---
-title: Unit test in Visual Studio
+title: Nozioni di base sugli unit test
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935315"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053169"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -34,7 +34,7 @@ Per un'introduzione agli unit test che mostra direttamente la creazione di codic
 
 - [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Guida introduttiva: Sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Scrivere unit test per C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -219,7 +219,7 @@ La barra degli strumenti di **Esplora test** consente di individuare, organizzar
 
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
 
-È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un set di test, nella parte inferiore della finestra **Esplora test** viene visualizzato il riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
+È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un set di test, nella parte inferiore della finestra **Esplora test** viene visualizzato il riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri test** dal menu di scelta rapida (da tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
 
 Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -228,7 +228,7 @@ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsi
 > [!WARNING]
 > L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.
 
-|Button|Descrizione|
+|Button|Description|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** nella barra degli strumenti di **Esplora test**.|
 
@@ -238,7 +238,7 @@ In presenza di un numero elevato di test, è possibile digitare nella casella di
 
 ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png)
 
-|Button|Descrizione|
+|Button|Description|
 |-|-|
 |![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
 

@@ -1,5 +1,5 @@
 ---
-title: Uso della legenda della visualizzazione Grafici per analizzare i test di carico in Visual Studio
+title: Utilizzo della legenda della visualizzazione Grafici per analizzare i test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e379cd3f05063424a7db9905611fa86467bee2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896081"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067194"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usare la legenda della visualizzazione Grafici per analizzare i test di carico
 
@@ -30,7 +30,7 @@ Nella legenda sono contenute le informazioni seguenti:
 
 -   **Visualizzazione nel grafico:** usare le caselle di controllo per specificare se la linea relativa a un particolare contatore, ad esempio **Carico utente** o **Errori/sec**, viene tracciata sul grafico. Selezionare una casella di controllo se si desidera che la relativa riga venga tracciata nel grafico. Per rimuovere una linea del tracciato dal grafico, deselezionare la relativa casella di controllo. Quando viene rimossa una linea del tracciato, le statistiche per il contatore continuano ad essere visualizzate nella legenda.
 
--   **Intervallo:** in questa colonna viene visualizzato l'intervallo dell'asse y del contatore delle prestazioni. Per impostazione predefinita, questo valore verrà regolato automaticamente secondo le modifiche all'intervallo dei dati di esempio. Un intervallo regolato automaticamente sarà sempre maggiore di una potenza di 10 rispetto al valore Max. Ciò include potenze di 10 negative. Un grafico può contenere una varietà di contatori, ciascuno con un intervallo diverso. Pertanto, l'asse y non è identificato da nessun intervallo specifico, ma è identificato da valori da 0 a 100 che rappresentano una percentuale dell'intervallo totale per ciascun contatore. Per un contatore con un intervallo di 1000, ad esempio, un punto dati di 60 sull'asse y corrisponderebbe a un valore di 600 per il contatore.
+-   **Intervallo:** in questa colonna viene visualizzato l'intervallo dell'asse Y del contatore delle prestazioni. Per impostazione predefinita, questo valore verrà regolato automaticamente secondo le modifiche all'intervallo dei dati di esempio. Un intervallo regolato automaticamente sarà sempre maggiore di una potenza di 10 rispetto al valore Max. Ciò include potenze di 10 negative. Un grafico può contenere una varietà di contatori, ciascuno con un intervallo diverso. Pertanto, l'asse y non è identificato da nessun intervallo specifico, ma è identificato da valori da 0 a 100 che rappresentano una percentuale dell'intervallo totale per ciascun contatore. Per un contatore con un intervallo di 1000, ad esempio, un punto dati di 60 sull'asse y corrisponderebbe a un valore di 600 per il contatore.
 
     > [!NOTE]
     > È possibile disabilitare la regolazione automatica del valore di intervallo bloccando l'intervallo su un valore specifico. Quando viene bloccato l'intervallo, qualsiasi valore che lo superi verrà visualizzato come valore massimo specificato all'inizio del grafico. Usare la finestra di dialogo **Opzioni tracciato** per bloccare l'intervallo su un valore specifico.

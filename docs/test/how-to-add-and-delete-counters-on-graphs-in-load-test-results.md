@@ -1,5 +1,5 @@
 ---
-title: Aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico in Visual Studio
+title: Aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896523"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049943"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedura: aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedura: Aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
 
 Per aggiungere contatori delle prestazioni a un grafico, è possibile usare il riquadro **Contatori**.
 
@@ -49,7 +49,7 @@ Per abilitare la proprietà **Intervallo archiviazione dettagli** nelle propriet
 
 La quantità di spazio richiesta nel repository dei risultati del test di carico per l'archiviazione dei dati dettaglio dell'intervallo potrebbe essere molto elevata, soprattutto per i test di carico a esecuzione prolungata. Inoltre, è necessario più tempo per archiviare questi dati nel repository dei risultati alla fine del test di carico, in quanto tali dati vengono archiviati negli agenti del test di carico fino al termine dell'esecuzione del test di carico. Quando il test di carico viene completato, i dati vengono archiviati nel repository. La proprietà **Intervallo archiviazione dettagli** è abilitata per impostazione predefinita. Se ciò costituisce un problema per l'ambiente di test, è consigliabile impostare **Intervallo archiviazione dettagli** su **Nessuno**.
 
-Per altre informazioni, vedere [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Per altre informazioni, vedere [Procedura: Specificare la proprietà relativa all'intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Per visualizzare un determinato contatore delle prestazioni su un grafico del test di carico
 

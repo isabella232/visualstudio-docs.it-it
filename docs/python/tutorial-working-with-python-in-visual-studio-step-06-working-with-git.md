@@ -1,5 +1,6 @@
 ---
-title: Esercitazione sull'uso di Python, passaggio 6, uso di Git
+title: Esercitazione sull'uso di Python in Visual Studio, passaggio 6, usare Git
+titleSuffix: ''
 description: Passaggio 6 di un'esercitazione di base per l'uso di Python in Visual Studio, dedicato alle funzionalità di Visual Studio correlate a Git.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e958046bb5574cb1a9b9799482fa3c96c203b013
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6c23a1d9835b7b065f24536c89a8f0befb03717c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219406"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054476"
 ---
-# <a name="step-6-work-with-git"></a>Passaggio 6: Utilizzo di Git
+# <a name="step-6-work-with-git"></a>Passaggio 6: usare Git
 
-**Passaggio precedente: [ Installare i pacchetti e gestire l'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Passaggio precedente: [installare pacchetti e gestire l'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio offre l'integrazione diretta con repository Git locali e repository remoti di servizi quali GitHub e Azure Repos. L'integrazione include la clonazione di un repository, le modifiche di esecuzione del commit e la gestione dei rami.
 
@@ -54,7 +56,7 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
 ## <a name="go-deeper"></a>Approfondimento
 
-Per una breve panoramica sulla creazione di un progetto da un repository Git remoto, vedere [Guida introduttiva: Clonare un repository di codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Per una breve panoramica sulla creazione di un progetto da un repository Git remoto, vedere [Avvio rapido: clonare un repository di codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 Per un'esercitazione molto più completa, comprendente la gestione dei conflitti di unione, la revisione di codice con richieste pull, la riassegnazione e il cherry-pick delle modifiche tra rami, vedere [Get started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio) (Introduzione a Git e Azure Repos).
 

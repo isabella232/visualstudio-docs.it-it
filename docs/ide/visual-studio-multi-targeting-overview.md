@@ -1,5 +1,5 @@
 ---
-title: Usare .NET Framework in Visual Studio
+title: Definire .NET Framework come destinazione
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425089"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058298"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Panoramica del multitargeting di Visual Studio
 
@@ -68,13 +68,13 @@ Quando si crea un progetto, selezionare la versione di .NET Framework di destina
 
 ![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](media/vside-newproject-framework.png)
 
-In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Risolvere i riferimenti ad assembly di sistema e utente
 
 Per impostare come destinazione una versione di .NET Framework, è necessario prima installare i riferimenti dell'assembly appropriato. È possibile scaricare Developer Pack per versioni diverse di .NET Framework dalla pagina [.NET downloads](https://www.microsoft.com/net/download/windows) (Download di .NET).
 
-La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in modo che non possano essere aggiunti a un progetto inavvertitamente. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] del progetto su una in cui sia incluso il riferimento.  Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in modo che non possano essere aggiunti a un progetto inavvertitamente. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] del progetto su una in cui sia incluso il riferimento.  Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 

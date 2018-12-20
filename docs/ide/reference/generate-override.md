@@ -1,5 +1,5 @@
 ---
-title: Generare un override di metodo in Visual Studio
+title: Generare un override di metodo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919065"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063642"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generare un override in Visual Studio
 
@@ -26,9 +26,9 @@ Questa generazione di codice si applica a:
 
 **Cosa:** consente di generare immediatamente il codice per qualsiasi metodo che può essere sottoposto a override da una classe di base.
 
-**Quando:** si vuole eseguire l'override di un metodo della classe di base e generare automaticamente la firma.
+**Quando:** si vuole eseguire l'override di un metodo della classe di base e generare la firma automaticamente.
 
-**Perché:** è possibile scrivere la firma del metodo manualmente, ma questa funzionalità la genera automaticamente.
+**Perché?:** è possibile scrivere la firma del metodo manualmente, ma questa funzionalità la genera automaticamente.
 
 ## <a name="how-to"></a>Procedura
 

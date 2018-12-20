@@ -1,5 +1,5 @@
 ---
-title: Eliminare gli avvisi del compilatore in Visual Studio per progetti e pacchetti NuGet
+title: Eliminare gli avvisi del compilatore per progetti e pacchetti NuGet
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948561"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060365"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
@@ -133,6 +133,6 @@ In alcuni casi, può essere necessario escludere gli avvisi del compilatore NuGe
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
+- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

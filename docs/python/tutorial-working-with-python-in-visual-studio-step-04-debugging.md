@@ -1,5 +1,6 @@
 ---
-title: Esercitazione sull'uso di Python, passaggio 4, debug
+title: Esercitazione sull'uso di Python in Visual Studio, passaggio 4, esecuzione del debug
+titleSuffix: ''
 description: Passaggio 4 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato a come eseguire il codice Python nel debugger.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220134"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060420"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: Eseguire il codice nel debugger
+# <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: eseguire il codice nel debugger
 
-**Passaggio precedente: [Usare la finestra Interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Passaggio precedente: [usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di modifica completa e la finestra **Interattiva**, Visual Studio offre il debug completo per il codice Python. Nel debugger, è possibile eseguire il codice in dettaglio, incluse le interazioni di un ciclo. È anche possibile sospendere il programma ogni volta che vengono soddisfatte determinate condizioni. Quando il programma viene sospeso nel debugger, è possibile esaminare in qualsiasi momento lo stato dell'intero programma e modificare il valore di variabili. Tali azioni sono essenziali per individuare i bug del programma e offrire supporto per seguire attentamente il flusso esatto del programma.
 

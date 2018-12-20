@@ -1,5 +1,5 @@
 ---
-title: Uso di C++ e Python
+title: Scrivere estensioni C++ per Python
 description: Procedura dettagliata per la creazione di un'estensione C++ per Python con Visual Studio, CPython e PyBind11, incluso il debug in modalità mista.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 237d3dcbe3f6413d2a68f25af3ac6eb6357e3bf8
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001308"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053477"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
 
@@ -121,7 +122,7 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici den
 
 1. Impostare le proprietà specifiche, come descritto nella tabella seguente e quindi selezionare **OK**.
 
-    | Scheda | Proprietà | Valore |
+    | Scheda | Proprietà | Value |
     | --- | --- | --- |
     | **Generale** | **Generale** > **Nome di destinazione** | Specificare il nome del modulo quando si vuole fare riferimento a esso da Python in istruzioni `from...import`. Questo stesso nome viene usato in C++ quando si definisce il modulo per Python. Se si vuole usare il nome del progetto come nome del modulo, lasciare il valore predefinito di **$(ProjectName)**. |
     | | **Generale** > **Estensione di destinazione** | **.pyd** |
@@ -135,7 +136,7 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici den
     > Se la scheda C/C++ non è visualizzata nelle proprietà del progetto, il progetto non include alcun file identificato come file di origine C/C++. Questa condizione può verificarsi se si crea un file di origine senza un'estensione *c* o *cpp*. Ad esempio, se viene digitato per errore `module.coo` invece di `module.cpp` nella precedente finestra di dialogo del nuovo elemento, Visual Studio crea il file ma non imposta il tipo di file su "Codice C/C+," che attiva la scheda delle proprietà C/C++. Tale errore di identificazione permane anche se si rinomina il file con l'estensione `.cpp`. Per impostare correttamente il tipo di file, fare clic con il pulsante destro del mouse sul file in **Esplora soluzioni**, scegliere **Proprietà** e quindi impostare **Tipo di file** su **Codice C/C++**.
 
     > [!Warning]
-    > Impostare sempre l'opzione **C/C++** > **Generazione codice** > **Libreria di runtime** su **DLL multithread (/MD)**, anche per una configurazione di debug, poiché questa è l'impostazione usata per compilare i file binari Python non di debug. Se si imposta l'opzione **DLL di debug multithread (/MDd)** e si compila una configurazione di **Debug**, viene generato l'errore **C1189: Py_LIMITED_API non è compatibile con Py_DEBUG, Py_TRACE_REFS e Py_REF_DEBUG**. In aggiunta, se si rimuove `Py_LIMITED_API` per evitare l'errore di compilazione, l'esecuzione di Python si arresta in modo anomalo quando prova a importare il modulo. L'arresto anomalo del sistema si verifica all'interno della chiamata della DLL a `PyModule_Create`, come descritto più avanti, con il messaggio di output **Fatal Python error: PyThreadState_Get: no current thread** (Errore irreversibile di Python: PyThreadState_Get: nessun thread corrente).
+    > Impostare sempre l'opzione **C/C++** > **Generazione codice** > **Libreria di runtime** su **DLL multithread (/MD)**, anche per una configurazione di debug, poiché questa è l'impostazione usata per compilare i file binari Python non di debug. Se si imposta l'opzione **DLL di debug multithread (/MDd)**, la creazione di una configurazione **Debug** genera l'errore **C1189: Py_LIMITED_API non è compatibile con Py_DEBUG, Py_TRACE_REFS, e Py_REF_DEBUG**. In aggiunta, se si rimuove `Py_LIMITED_API` per evitare l'errore di compilazione, l'esecuzione di Python si arresta in modo anomalo quando prova a importare il modulo. L'arresto anomalo del sistema si verifica all'interno della chiamata della DLL a `PyModule_Create`, come descritto più avanti, con il messaggio di output **Fatal Python error: PyThreadState_Get: no current thread** (Errore irreversibile di Python: PyThreadState_Get: nessun thread corrente).
     >
     > L'opzione /MDd viene usata per compilare file binari di debug di Python (ad esempio *python_d.exe*), ma la selezione di questa opzione per una DLL di estensione causa sempre un errore di compilazione con `Py_LIMITED_API`.
 
@@ -265,7 +266,7 @@ Se è stata completata la procedura della sezione precedente, si sarà notato l'
 
 La compilazione del modulo C++ potrebbe non riuscire per i motivi seguenti:
 
-- Non è possibile individuare *Python.h* (**E1696: Impossibile aprire il file di origine "Python.h"** e/o **C1083: Impossibile aprire il file di inclusione "Python.h": file o directory non esistente**): verificare che il percorso in **C/C++** > **Generale** > **Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella*include* dell'installazione di Python in uso. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
+- Impossibile individuare *Python.h* (**E1696: cannot open source file "Python.h"** (E1696: impossibile aprire il file di origine) e/o **C1083: Cannot open include file: "Python.h": No such file or directory** (Impossibile aprire il file di inclusione "Python.h: directory del file inesistente): verificare che il percorso in **C/C++** > **Generale** > **Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella *di inclusione* dell'installazione di Python. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
 
 - Non è possibile individuare le librerie Python: verificare che il percorso in **Linker** > **Generale** > **Directory librerie aggiuntive** nelle proprietà del progetto punti alla cartella *libs* dell'installazione di Python in uso. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-projects).
 
@@ -404,7 +405,7 @@ Esistono svariati modi per creare estensioni di Python, come descritto nella tab
 | --- | --- | --- | --- | --- |
 | Moduli di estensione C/C++ per CPython | 1991 | Libreria standard | [Documentazione ampia ed esercitazioni](https://docs.python.org/3/c-api/). Controllo totale. | Compilazione, portabilità, gestione dei riferimenti. Conoscenza elevata di C. |
 | [PyBind11](https://github.com/pybind/pybind11) (scelta consigliata per C++) | 2015 |  | Libreria leggera, di sola intestazione per la creazione di associazioni Python di codice C++ esistente. Poche dipendenze. Compatibilità PyPy. | Più recente, meno maturo. Uso intenso di funzionalità C++11. Breve elenco di compilatori supportati (Visual Studio è incluso). |
-| Cython (consigliato per C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Simile a Python. Altamente maturo. Prestazioni elevate. | Compilazione, nuova sintassi, nuova toolchain. |
+| Cython (consigliato per C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Simile a Python. Altamente maturo. Prestazioni elevate. | Compilazione, nuova sintassi, nuova toolchain. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funziona con quasi tutti i compilatori C++. | Gruppo di librerie complesso e di grandi dimensioni. Contiene molte soluzioni alternative per i compilatori non recenti. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nessuna compilazione, ampia disponibilità. | Accesso e modifica di strutture C complesse e soggette a errori. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Genera associazioni per molte lingue contemporaneamente. | Sovraccarico eccessivo se Python è l'unica destinazione. |

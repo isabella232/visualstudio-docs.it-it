@@ -1,8 +1,9 @@
 ---
-title: Aggiornare un'installazione di rete di Visual Studio
+title: Aggiornare un'installazione di rete
 description: Informazioni su come aggiornare un'installazione di Visual Studio basata su rete tramite il comando --layout
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 736f8dc9c79faa5c81055296c9fbf534c512f6fa
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138828"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159490"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
+# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aggiornare un'installazione di rete di Visual Studio 2017
 
 È possibile aggiornare un layout di installazione di rete di Visual Studio con gli ultimi aggiornamenti di prodotto in modo che possa essere usato sia come punto di installazione per l'aggiornamento più recente di Visual Studio sia per gestire installazioni già distribuite in workstation client.
 

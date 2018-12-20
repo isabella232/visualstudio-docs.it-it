@@ -1,5 +1,5 @@
 ---
-title: Effettuare il refactoring della firma di un metodo in Visual Studio
+title: Refactoring della firma di un metodo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842287"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062336"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -34,7 +34,7 @@ Questo refactoring si applica a:
 
 **Quando:** si vuole spostare o rimuovere un parametro di un metodo usato in varie posizioni.
 
-**Motivo:** è possibile rimuovere e riordinare manualmente i parametri, per poi cercare tutte le chiamate al metodo e modificarle una alla volta, ma si tratta di un processo soggetto a errori.  Questo strumento di refactoring eseguirà l'attività automaticamente.
+**Perché?:** è possibile rimuovere e riordinare manualmente i parametri, per poi cercare tutte le chiamate al metodo e modificarle una alla volta, ma si tratta di un processo soggetto a errori.  Questo strumento di refactoring eseguirà l'attività automaticamente.
 
 ## <a name="how-to"></a>Procedura
 
@@ -62,7 +62,7 @@ Questo refactoring si applica a:
 
    ![Finestra di dialogo Cambia firma](media/changesignature-dialog-cs.png)
 
-   | Button | Descrizione
+   | Button | Description
    | ------ | ---
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
    | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco

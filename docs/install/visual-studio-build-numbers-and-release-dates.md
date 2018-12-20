@@ -1,30 +1,50 @@
 ---
-title: Numeri di build e date di rilascio di Visual Studio 2017
-description: Elenco aggiornato delle versioni rilasciate e dei numeri di build per Visual Studio 2017, in ordine di data.
+title: Numeri di build e date di rilascio di Visual Studio
+titleSuffix: ''
+description: Elenco aggiornato delle versioni rilasciate e dei numeri di build per Visual Studio 2017 e versioni successive, in ordine di data.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 09/20/2018
+ms.date: 12/11/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e176c7094a303560f1d7cb81732bfd7b62f1d9
-ms.sourcegitcommit: a2d8a662601e61614ac5332391e64ee011fba28a
+ms.openlocfilehash: 47c51b1f4f5ce168e679027a704ffb2b23482817
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46501156"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248257"
 ---
-# <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio 2017
+# <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
+
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.4 | Rilascio | 11 dicembre 2018 | 15.9.28307.222 |
+| 15.0.20 | Rilascio | 11 dicembre 2018 | 15.0.26228.64 |
+| 15.9.3 | Preview 1 | 28 novembre 2018 | 15.9.28307.145 |
+| 15.9.3 | Rilascio | 28 novembre 2018 | 15.9.28307.145 |
+| 15.9.2 | Rilascio | 19 novembre 2018 | 15.9.28307.108 |
+| 15.9.1 | Rilascio | 15 novembre 2018 | 15.9.28307.105 |
+| 15.9.0 | Rilascio | 13 novembre 2018 | 15.9.28307.53 |
+| 15.9.0 Preview 6 | Anteprima | 13 novembre 2018 | 15.9.28307.53 |
+| 15.9.0 Preview 5 | Anteprima | 6 novembre 2018 | 15.9.28302.56 |
+| 15.8.9 | Rilascio | 2 novembre 2018 | 15.8.28010.2050 |
+| 15.8.8 | Rilascio | 24 ottobre 2018 | 15.8.28010.2048 |
+| 15.9.0 Preview 4 | Anteprima | 23 ottobre 2018 | 15.9.28219.56 |
+| 15.8.7 | Rilascio | 10 ottobre 2018 | 15.8.28010.2046 |
+| 15.0.19 | Rilascio | 10 ottobre 2018 | 15.0.26228.57 |
+| 15.9.0 Preview 3 | Anteprima | 2 ottobre 2018 | 15.9.28128.56 |
+| 15.8.6 | Rilascio | 2 ottobre 2018 | 15.8.28010.2041 |
 | 15.8.5 | Rilascio | 20 settembre 2018 | 15.8.28010.2036 |
 | 15.9.0 Preview 2 | Anteprima | 11 settembre 2018 | 15.9.28107.0 |
 | 15.8.4 | Rilascio | 11 settembre 2018 | 15.8.28010.2026 |
@@ -72,35 +92,35 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.6.0 Preview 7 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 6 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
 | 15.0.10 | Rilascio | 21 febbraio 2018 | 15.0.26228.28 |
-| 15.5.7 | Rilascio | 20 febbraio 2018 | 15.5.27130.2036 |
+| 15.5.7 | Rilascio | 20 febbraio 2018 | 15.0.27130.2036 |
 | 15.6.0 Preview 5 | Anteprima | 14 febbraio 2018 | 15.6.27413.0 |
 | 15.6.0 Preview 4 | Anteprima | 7 febbraio 2018 | 15.6.27406.0 |
 | 15.0.9 | Rilascio | 2 febbraio 2018 | 15.0.26228.23 |
-| 15.5.6 | Rilascio | 29 gennaio 2018 | 15.5.27130.2027 |
-| 15.5.5 | Rilascio | 25 gennaio 2018 | 15.5.27130.2026 |
+| 15.5.6 | Rilascio | 29 gennaio 2018 | 15.0.27130.2027 |
+| 15.5.5 | Rilascio | 25 gennaio 2018 | 15.0.27130.2026 |
 | 15.6.0 Preview 3 | Anteprima | 25 gennaio 2018 | 15.6.27323.2 |
-| 15.5.4 | Rilascio | 16 gennaio 2018 | 15.5.27130.2024 |
+| 15.5.4 | Rilascio | 16 gennaio 2018 | 15.0.27130.2024 |
 | 15.6.0 Preview 2 | Anteprima | 10 gennaio 2018 | 15.6.27309.0 |
-| 15.5.3 | Rilascio |  9 gennaio 2018 | 15.5.27130.2020 |
+| 15.5.3 | Rilascio |  9 gennaio 2018 | 15.0.27130.2020 |
 | 15.0.8 | Rilascio |  9 gennaio 2018 | 15.0.26228.21 |
-| 15.5.2 | Rilascio | 14 dicembre 2017 | 15.5.27130.2010 |
+| 15.5.2 | Rilascio | 14 dicembre 2017 | 15.0.27130.2010 |
 | 15.6.0 Preview 1 | Anteprima | 14 dicembre 2017 | 15.6.27205.2004 |
-| 15.5.1 | Rilascio | 7 dicembre 2017 | 15.5.27130.2003 |
+| 15.5.1 | Rilascio | 7 dicembre 2017 | 15.0.27130.2003 |
 | 15.6.0 Preview 1 | Anteprima | 7 dicembre 2017 | 15.6.27205.0 |
 | 15.0.7 | Rilascio | 6 dicembre 2017 | 15.0.26228.18 |
-| 15.5 | Rilascio | 4 dicembre 2017 | 15.5.27130.0 |
-| 15.5.0 Preview 5 | Anteprima | 30 novembre 2017 | 15.5.27128.1 |
-| 15.4.5 | Rilascio | 27 novembre 2017 | 15.4.27004.2010 |
-| 15.5.0 Preview 4 | Anteprima | 14 novembre 2017 | 15.5.27110.0 |
-| 15.4.4 | Rilascio | 14 novembre 2017 | 15.4.27004.2009 |
+| 15.5 | Rilascio | 4 dicembre 2017 | 15.0.27130.0 |
+| 15.5.0 Preview 5 | Anteprima | 30 novembre 2017 | 15.0.27128.1 |
+| 15.4.5 | Rilascio | 27 novembre 2017 | 15.0.27004.2010 |
+| 15.5.0 Preview 4 | Anteprima | 14 novembre 2017 | 15.0.27110.0 |
+| 15.4.4 | Rilascio | 14 novembre 2017 | 15.0.27004.2009 |
 | 15.0.6 | Rilascio | 14 novembre 2017 | 15.0.26228.17 |
-| 15.4.3 | Rilascio | 8 novembre 2017 | 15.4.27004.2008 |
-| 15.5.0 Preview 3 | Anteprima | 6 novembre 2017 | 15.5.27102.0 |
-| 15.4.2 | Rilascio | 31 ottobre 2017 | 15.4.27004.2006 |
-| 15.5.0 Preview 2 | Anteprima | 23 ottobre 2017 | 15.5.27019.1 |
-| 15.4.1 | Rilascio | 19 ottobre 2017 | 15.4.27004.2005 |
+| 15.4.3 | Rilascio | 8 novembre 2017 | 15.0.27004.2008 |
+| 15.5.0 Preview 3 | Anteprima | 6 novembre 2017 | 15.0.27102.0 |
+| 15.4.2 | Rilascio | 31 ottobre 2017 | 15.0.27004.2006 |
+| 15.5.0 Preview 2 | Anteprima | 23 ottobre 2017 | 15.0.27019.1 |
+| 15.4.1 | Rilascio | 19 ottobre 2017 | 15.0.27004.2005 |
 | 15.5 Preview 1 | Anteprima | 11 ottobre 2017 | 15.0.27009.1 |
-| 15.4 | Rilascio | 9 ottobre 2017 | 15.0.27004.20002 |
+| 15.4 | Rilascio | 9 ottobre 2017 | 15.0.27004.2002 |
 | 15.4 Preview 6 | Anteprima | 9 ottobre 2017| 15.0.27004.20002 |
 | 15.4 Preview 5 | Anteprima | 6 ottobre 2017 | 15.0.27004.2000 |
 | 15.4 Preview 4 | Anteprima | 2 ottobre 2017 | 15.0.26929.2 |
@@ -115,7 +135,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.3.1 | Rilascio | 18 agosto 2017 | 15.0.26730.08 |
 | 15.3.1 Preview 1 | Anteprima | 18 agosto 2017 | 15.0.26730.08 |
 | 15.3.1  | Rilascio | 18 agosto 2017 | 15.0.26730.08 |
-| 15.4 Preview 1 | Anteprima | 24 agosto 2017 | 15.4.26823.1 |
+| 15.4 Preview 1 | Anteprima | 24 agosto 2017 | 15.0.26823.1 |
 | 15.3 | Rilascio | 14 agosto 2017 | 15.0.26730.3 |
 | 15.3 Preview 7.1 | Anteprima | 11 agosto 2017 | 15.0.26730.3 |
 | 15.3 Preview 7 | Anteprima | 1 agosto 2017 | 15.0.26730.0 |
@@ -149,6 +169,15 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.1  | Rilascio | 14 marzo 2017 | 15.0.26228.9 |
 | 15.1 Preview 1 | Anteprima | 7 marzo 2017 | 15.0.26304.0 |
 | 15.0.0 | Rilascio | 7 marzo 2017 | 15.0.26228.4 |
+
+## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Preview
+
+La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019 Preview.
+
+| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Preview 1.1 | 10 dicembre 2018 | 16.0.28408.50 |
+| 16.0.0 | Preview 1 | 4 dicembre 2018 | 16.0.28329.73 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

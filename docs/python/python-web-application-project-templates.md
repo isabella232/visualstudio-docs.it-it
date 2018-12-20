@@ -1,6 +1,6 @@
 ---
 title: Modelli di applicazione Web per Python
-description: Panoramica dei modelli di Visual Studio per applicazioni Web scritte con Python mediante i framework Bottle, Flask e Django, incluse le configurazioni di debug e la pubblicazione in Servizio app di Azure.
+description: Visual Studio offre modelli per applicazioni Web Python usando i framework Bottle, Flask e Django. Sono supportate le configurazioni di debug e la pubblicazione in Servizio app di Azure.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349336"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068328"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -34,23 +35,23 @@ Per creare un progetto da un modello selezionare **File** > **Nuovo** > **Proget
 
 Il modello **Progetto Web** generico, citato in precedenza, mette a disposizione solo un progetto Visual Studio vuoto senza codice e ipotesi diverse dall'essere un progetto di Python. Per informazioni dettagliate sul modello **Servizio Cloud Azure**, vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).
 
-Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e rientrano in tre categorie generali come descritto nelle sezioni seguenti. Le app create con uno di questi modelli contengono codice sufficiente per eseguire l'app in locale ed eseguirne il debug. Ognuno di essi fornisce anche l'[oggetto app WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) necessario per l'uso con i server Web di produzione.
+Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e rientrano in tre categorie generali come descritto nelle sezioni seguenti. Le app create con uno di questi modelli contengono codice sufficiente per eseguire l'app in locale ed eseguirne il debug. Ognuno di essi fornisce anche l'[oggetto app WSGI](https://www.python.org/dev/peps/pep-3333/) (python.org) necessario per l'uso con i server Web di produzione.
 
 ### <a name="blank-group"></a>Gruppo vuoto
 
 Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una quantità minima più o meno grande di codice boilerplate e le dipendenze necessarie dichiarate in un file *requirements.txt*.
 
-| Modello | Descrizione |
+| Modello | Description |
 | --- | --- |
 | **Progetto Web Bottle vuoto** | Genera un'app minima in *app.py* con una home page per `/` e una pagina `/hello/<name>` che restituisce `<name>` usando un modello di pagina inline molto breve. |
 | **Progetto Web Django vuoto** | Genera un progetto Django con la struttura fondamentale del sito Django ma nessuna app Django. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 1 dell'esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Progetto Web Flask vuoto** | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato che si ottiene seguendo i passaggi dettagliati nella [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vedere anche [Informazioni su Flask, passaggio 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Progetto Web Flask vuoto** | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato dei passaggi dettagliati in [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vedere anche [Informazioni su Flask, passaggio 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Gruppo Web
 
 Tutti i modelli **Progetto Web \<framework>** creano un'app Web di base con una struttura identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
 
-| Modello | Descrizione |
+| Modello | Description |
 | --- | --- |
 | **Progetto Web Bottle** | Genera un'app i cui file statici sono contenuti nella cartella *static* e gestiti tramite codice in *app.py*. Il routing per le singole pagine è specificato in *routes.py* e la cartella *views* contiene i modelli di pagina.|
 | **Progetto Web Django** | Genera un progetto Django e un'app Django con tre pagine, il supporto dell'autenticazione e un database SQLite (ma nessun modello dati). Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 4 dell'esercitazione su Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -61,7 +62,7 @@ Tutti i modelli **Progetto Web \<framework>** creano un'app Web di base con una 
 
 I modelli **Progetto Web \<framework> di sondaggi** creano un'app Web di base attraverso la quale gli utenti possono votare domande di sondaggi diversi. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
 
-| Modello | Descrizione |
+| Modello | Description |
 | --- | --- |
 | **Progetto Web Bottle di sondaggi** | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli di dati e il codice dell'archivio dati sono contenuti nella cartella *models* e il file *settings.py* contiene codice per determinare l'archivio dati usato. |
 | **Progetto Web Django di sondaggi** | Genera un progetto Django e un'app Django con tre pagine e un database SQLite. Include le personalizzazioni per l'interfaccia amministrativa Django che consentono a un amministratore autenticato di creare e gestire i sondaggi. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 6 dell'esercitazione su Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
@@ -123,7 +124,7 @@ L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da riga di comando `pcreate`. L'app creata può quindi essere importata usando il modello [**Da codice Python esistente**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Successivamente, selezionare la personalizzazione **Progetto Web generico** per configurare le opzioni. In queste impostazioni si presuppone che Pyramid sia installato in un ambiente virtuale nel percorso `..\env`.
 
 - Gruppo **Debug**:
-  - **Porta server**: 6543 (o qualunque altra sia configurata nei file con estensione *ini*)
+  - **Porta server**: 6543 (o qualunque altra porta configurata nei file con estensione *ini*)
 
 - Gruppo **Comando esegui server**:
   - Comando: `..\env\scripts\pserve-script.py` (script)

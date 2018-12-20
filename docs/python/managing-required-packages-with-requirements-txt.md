@@ -1,5 +1,5 @@
 ---
-title: Uso di un file requirements.txt per gestire i requisiti dei pacchetti
+title: Gestire le dipendenze di pacchetto con un file requirements.txt
 description: Un file requirements.txt descrive le dipendenze di un progetto. Se si riceve un progetto che contiene un file requirements.txt, è possibile installare facilmente tali dipendenze in un unico passaggio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +8,20 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218440"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066172"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gestire i pacchetti necessari con requirements.txt
 
-Se si condivide un progetto con altri utenti usando un sistema di compilazione oppure si prevede di copiare il progetto in un'altra posizione dove deve essere ripristinato un ambiente, è necessario specificare i pacchetti esterni richiesti dal progetto. L'approccio consigliato prevede l'uso di un [file requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), che contiene un elenco dei comandi per pip e che consente di installare le versioni richieste di pacchetti dipendenti. Il comando più comune è `pip freeze > requirements.txt`, che registra l'elenco dei pacchetti correnti di un ambiente in *requirements.txt*.
+Se si condivide un progetto con altri utenti usando un sistema di compilazione oppure si prevede di copiare il progetto in un'altra posizione dove deve essere ripristinato un ambiente, è necessario specificare i pacchetti esterni richiesti dal progetto. L'approccio consigliato prevede l'uso di un [file requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), che contiene un elenco dei comandi per pip e che consente di installare le versioni richieste di pacchetti dipendenti. Il comando più comune è `pip freeze > requirements.txt`, che registra l'elenco dei pacchetti correnti di un ambiente in *requirements.txt*.
 
 Dal punto di vista tecnico, per tenere traccia dei requisiti è possibile usare un qualsiasi nome file, usando `-r <full path to file>` quando si installa un pacchetto, ma Visual Studio fornisce supporto specifico per *requirements.txt*:
 

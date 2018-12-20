@@ -1,5 +1,5 @@
 ---
-title: Associare un test controller o un agente di test a una scheda di rete in Visual Studio
+title: Associare un test controller o un agente di test a una scheda di rete
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896050"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065947"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -51,7 +51,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2.  Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Visual Studio Test Controller** e quindi scegliere **Arresta**.
 
-     oppure
+     -oppure-
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
@@ -97,7 +97,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2.  Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Agente di test di Visual Studio** e quindi scegliere **Arresta**.
 
-     oppure
+     -oppure-
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
@@ -135,5 +135,5 @@ Se un computer con installato il software del test controller o dell'agente di t
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
 - [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Procedura: Impostare la dimensione massima per il file di log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Procedura: Specificare i periodi di timeout per controller e agenti di test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Procedura: Specificare le dimensioni massime del file di log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Procedura: Specificare i periodi di timeout per test controller e agenti di test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

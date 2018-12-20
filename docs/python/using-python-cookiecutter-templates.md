@@ -1,5 +1,5 @@
 ---
-title: Estensione CookieCutter per Python
+title: Usare modelli CookieCutter con Python
 description: Visual Studio supporta l'estensione grafica Cookiecutter per individuare modelli per il codice Python e creare progetti da tali modelli.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219692"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057191"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
@@ -36,7 +37,7 @@ L'uso di Cookiecutter include la ricerca e la selezione di un modello, la clonaz
 
 Nella home page di Cookiecutter viene visualizzato un elenco di modelli tra cui scegliere, organizzati nei gruppi seguenti:
 
-| Gruppo | Descrizione |
+| Gruppo | Description |
 | --- | --- |
 | **Installato** | Modelli installati nel computer locale. Quando si usa un modello online, il repository corrispondente viene clonato automaticamente in una sottocartella di file *~/.cookiecutter*. È possibile eliminare un modello installato selezionato premendo **CANC**. |
 | **Consigliati** | Modelli caricati dal feed consigliato. Il feed predefinito è a cura di Microsoft. Vedere [Opzioni di Cookiecutter](#cookiecutter-options) di seguito per altri dettagli sulla personalizzazione del feed. |
@@ -80,7 +81,7 @@ Le opzioni di Cookiecutter sono disponibili tramite **Strumenti** > **Opzioni** 
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
-| Opzione | Descrizione |
+| Opzione | Description |
 | --- | --- |
 | **URL del feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Visualizza la Guida** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
@@ -91,15 +92,15 @@ Per informazioni di base sulla creazione di un modello di Cookiecutter, vedere l
 
 Il rendering predefinito delle variabili di un modello dipende dal tipo di dati (stringa o elenco):
 
-- Stringa: etichetta del nome della variabile, casella di testo per l'immissione del valore e filigrana che mostra il valore predefinito. Descrizione comando per la casella di testo che mostra il valore predefinito.
-- Elenco: etichetta del nome della variabile, casella combinata per la sezione di un valore. Descrizione comando per la casella combinata che mostra il valore predefinito.
+- Stringa: etichetta per il nome della variabile, casella di testo per l'immissione del valore e filigrana che visualizza il valore predefinito. Descrizione comando per la casella di testo che mostra il valore predefinito.
+- Elenco: etichetta per il nome della variabile, casella combinata per la selezione di un valore. Descrizione comando per la casella combinata che mostra il valore predefinito.
 
 È possibile migliorare il rendering specificando metadati aggiuntivi nel file *cookiecutter.json* specifico per Visual Studio (ignorato dall'interfaccia della riga di comando di Cookiecutter). Tutte le proprietà sono facoltative:
 
-| Proprietà | Descrizione |
+| Proprietà | Description |
 | --- | --- |
 | Label | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
-| Descrizione | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
+| Description | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
 | URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Facendo clic sul collegamento ipertestuale, il browser predefinito dell'utente verrà aperto su tale URL. |
 | Selector | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: casella di testo con un pulsante **...** che consente di visualizzare una finestra di dialogo per la connessione a un database.</li></ul> |
 

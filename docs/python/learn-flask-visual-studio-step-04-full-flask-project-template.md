@@ -1,5 +1,6 @@
 ---
-title: Esercitazione - Informazioni su Flask in Visual Studio, passaggio 4
+title: Informazioni sull'esercitazione Flask in Visual Studio, passaggio 4, modelli di progetto Web
+titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità offerte dai modelli Progetto Web Flask e Progetto Web Flask/Jade.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775958"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051701"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -76,7 +78,7 @@ Il modello "Progetto Web Flask" crea la struttura riportata di seguito. Il conte
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Domanda: È possibile condividere un ambiente virtuale tra progetti di Visual Studio?
 
-Risposta: Sì, ma tenere presente che diversi progetti probabilmente usano pacchetti diversi nel tempo e di conseguenza un ambiente virtuale condiviso deve contenere tutti i pacchetti per tutti i progetti che lo usano.
+Risposta: Sì, ma considerare che diversi progetti probabilmente nel tempo useranno pacchetti diversi e di conseguenza un ambiente virtuale condiviso deve contenere tutti i pacchetti per tutti i progetti che lo usano.
 
 Ciononostante, per usare un ambiente virtuale esistente, eseguire le operazioni seguenti:
 
@@ -235,4 +237,4 @@ Provare a usare entrambe le sintassi, Jinja e Jade, per vedere quale delle due �
 
 - [Writing your first Flask app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (Scrittura della prima app Flask - moduli e visualizzazioni generiche) (docs.djangoproject.com)
 - [Jade su GitHib (documentazione)](https://github.com/liuliqiang/pyjade) (github.com)
-- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -1,6 +1,6 @@
 ---
-title: Panoramica della profilatura - Visual Studio | Microsoft Docs
-ms.custom: mvc
+title: Panoramica degli strumenti per la misurazione delle prestazioni | Microsoft Docs
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844120"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059535"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Panoramica della profilatura in Visual Studio
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Panoramica degli strumenti per la misurazione delle prestazioni in Visual Studio
 
 Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizzo della memoria e della CPU e altri problemi a livello di applicazione. Con questi strumenti è possibile accumulare i dati, ad esempio i valori delle variabili, le chiamate di funzione e gli eventi relativi a un periodo di tempo, ad esempio, il tempo di esecuzione dell'applicazione. È possibile visualizzare lo stato dell'applicazione in momenti diversi durante l'esecuzione del codice o eseguire un'analisi finale delle prestazioni dell'applicazione.
 
