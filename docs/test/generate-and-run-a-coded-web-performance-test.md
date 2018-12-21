@@ -1,5 +1,5 @@
 ---
-title: Test codificati delle prestazioni Web in Visual Studio
+title: Test delle prestazioni Web codificati
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895509"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067842"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -94,7 +94,7 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 
  Quando si esegue un test codificato con un 'origine dati, può venire visualizzato il messaggio di errore seguente:
 
- **Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato su un'istanza di un oggetto.**
+ **Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato a un'istanza di un oggetto.**
 
  Questo errore può verificarsi perché per la classe di test è definito un oggetto DataSourceAttribute senza un oggetto DataBindingAttribute corrispondente. Per risolvere questo errore, aggiungere un oggetto DataBindingAttribute appropriato, eliminarlo oppure impostarlo come commento nel codice.
 
