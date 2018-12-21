@@ -1,5 +1,6 @@
 ---
-title: Esercitazione sull'uso di Python, passaggio 1, creare un progetto
+title: Esercitazione sull'uso di Python in Visual Studio, passaggio 1, creare un progetto
+titleSuffix: ''
 description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,29 +9,30 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220082"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049853"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: Uso di Python in Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: usare Python in Visual Studio
 
 Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Il linguaggio supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, script e calcolo scientifico. Viene usato in molte università, nonché da scienziati, sviluppatori professionisti e non professionisti.
 
 Visual Studio offre un supporto dei linguaggi di prima classe per Python. Completare le fasi dell'esercitazione indicate di seguito:
 
-- [Passaggio 0: Installazione](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Passaggio 1: Creare un progetto di Python (questo articolo)](#step-1-create-a-new-python-project)
-- [Passaggio 2: Scrivere ed eseguire codice per visualizzare Visual Studio IntelliSense al lavoro](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Passaggio 3: Creare altro codice nella finestra Interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Passaggio4: Eseguire un programma nel debugger di Visual Studio.](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Passaggio 5: Installare pacchetti e gestire gli ambienti Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [Passaggio 6: Usare Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [Passaggio 0: installazione](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Passaggio 1: creare un progetto Python (questo articolo)](#step-1-create-a-new-python-project)
+- [Passaggio 2: scrivere ed eseguire codice per usare Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Passaggio 3: creare altro codice nella finestra Interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Passaggio 4: eseguire il programma completo nel debugger di Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Passaggio 5: installare pacchetti e gestire gli ambienti Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Passaggio 6: usare Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 

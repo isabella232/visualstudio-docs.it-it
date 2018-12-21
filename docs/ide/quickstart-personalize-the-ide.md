@@ -1,5 +1,5 @@
 ---
-title: Impostare il tema colori e i tipi di carattere in Visual Studio
+title: Impostare il tema colori e i tipi di carattere
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626972"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159412"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio
 
@@ -100,4 +100,4 @@ Sono stati presentati solo un paio di modi per personalizzare i colori in Visual
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'editor](../ide/customizing-the-editor.md)
-- [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)

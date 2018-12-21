@@ -1,5 +1,5 @@
 ---
-title: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico in Visual Studio
+title: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c351079f0a29176ded3172d6e0e26893a1163354
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894105"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048489"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
@@ -38,9 +38,9 @@ Se si assegna il valore del parametro di contesto Webserver1 a `http://Corporate
 
 Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo stesso nome nelle diverse impostazioni di esecuzione del test di carico, è possibile eseguire il test di carico in ambienti diversi:
 
-- Impostazione di esecuzione server Web aziendale di gestione temporanea: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
+- Impostazione di esecuzione test del server Web di gestione temporanea aziendale: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
 
-- Impostazione di esecuzione server Web aziendale di produzione: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
+- Impostazione di esecuzione test del server Web di produzione aziendale: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
 
   **Modifica dell'impostazione di esecuzione test dalla riga di comando**
 

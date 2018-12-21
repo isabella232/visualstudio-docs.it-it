@@ -1,5 +1,5 @@
 ---
-title: Aggiungere un'origine dati a un test delle prestazioni Web in Visual Studio
+title: Aggiungere un'origine dati a un test delle prestazioni Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065207"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 
@@ -124,9 +124,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 ## <a name="q--a"></a>Domande e risposte
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>D. Quali database è possibile utilizzare come origine dati?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>D: Quali database è possibile usare come origine dati?
 
-**R.** È possibile usare:
+**R:** È possibile usare:
 
 - Microsoft SQL Azure.
 
@@ -140,9 +140,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 - Oracle 7.3, 8i, 9i o 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>D. È possibile utilizzare un file di testo CSV (con valori delimitati da virgole) come origine dati?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>D: È possibile usare un file di testo CSV (con valori delimitati da virgole) come origine dati?
 
-**R.** Ecco come fare:
+**R:** Ecco come:
 
 1. Creare una cartella per organizzare gli artefatti del database dei progetti e aggiungere un elemento.
 
@@ -164,9 +164,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![Immettere un nome e scegliere un file CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>D. Quali operazioni si devono eseguire se il file CSV esistente non contiene intestazioni di colonna?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>D: Quali operazioni si devono eseguire se il file CSV esistente non contiene intestazioni di colonna?
 
-**R.** Se non è possibile aggiungere intestazioni di colonna, usare un file di descrizione dello schema per gestire il file CSV come database.
+**R:** Se non è possibile aggiungere intestazioni di colonna, usare un file di descrizione dello schema per gestire il file CSV come database.
 
 1. Aggiungere un nuovo file di testo denominato *schema.ini*.
 
@@ -215,7 +215,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![L'origine dati aggiunta al test](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>D. Come si utilizza un file XML come origine dati?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>D: Come si usa un file XML come origine dati?
 
 **R:** Sì.
 
@@ -247,9 +247,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![Immettere un nome e scegliere un file XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>D. È possibile aggiungere un data binding a una richiesta di servizio Web che utilizza SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>D: È possibile aggiungere un data binding a una richiesta di servizio Web che usa SOAP?
 
-**R.** Sì, è necessario modificare manualmente il codice XML SOAP.
+**R:** Sì, è necessario modificare manualmente il codice XML SOAP.
 
 1. Scegliere la richiesta di servizio Web nell'albero delle richieste e nella finestra Proprietà scegliere il pulsante con i puntini di sospensione (...) nella proprietà Corpo stringa.
 

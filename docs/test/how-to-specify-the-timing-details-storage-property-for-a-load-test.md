@@ -1,5 +1,5 @@
 ---
-title: Proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione test di carico in Visual Studio
+title: Proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione del test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895223"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054584"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedura: Specificare la proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione test di carico
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedura: Specificare la proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione del test di carico
 
 Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le impostazioni in modo da soddisfare le necessità e gli obiettivi di test.
 
@@ -26,14 +26,14 @@ Dopo avere creato il test di carico mediante la **Creazione guidata test di cari
 
 Usando l'Editor test di carico, è possibile modificare un valore della proprietà **Intervallo archiviazione dettagli** di un'impostazione di esecuzione nella finestra **Proprietà**. È possibile impostare la proprietà **Intervallo archiviazione dettagli** su una delle opzioni seguenti:
 
-- **Tutti i singoli dettagli:** vengono raccolti e archiviati dati di intervallo individuali per i singoli test, transazioni e pagine emessi nel corso del test.
+- **Tutti i singoli dettagli:** vengono raccolti e archiviati i dati di intervallo singoli per ogni test, transazione e pagina emessi nel corso del test.
 
   > [!NOTE]
   > È necessario selezionare l'opzione **Tutti i singoli dettagli** per abilitare le informazioni sui dati degli utenti virtuali nei risultati del test di carico. Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-- **Nessuno:** non vengono raccolti dettagli di intervallo individuali. Sono tuttavia disponibili i valori medi.
+- **Nessuno:** non vengono raccolti dettagli di intervallo. Sono tuttavia disponibili i valori medi.
 
-- **Solo statistiche:** vengono archiviati dati di intervallo individuali, ma solo come dati percentili. In questo modo, è possibile risparmiare spazio.
+- **Solo statistiche:** vengono archiviati dati di intervallo singoli, ma solo come dati percentili. In questo modo, è possibile risparmiare spazio.
 
   **Considerazioni per la proprietà Intervallo archiviazione dettagli**
 
@@ -59,7 +59,7 @@ Usando l'Editor test di carico, è possibile modificare un valore della propriet
 
 5.  Nella categoria **Risultati** scegliere la proprietà **Intervallo archiviazione dettagli** e selezionare **Tutti i singoli dettagli**.
 
-     Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il **Grafico attività utente virtuale**. Per altre informazioni, vedere [Procedura: Analizzare le attività degli utenti virtuali durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il **Grafico attività utente virtuale**. Per altre informazioni, vedere [Procedura: Analizzare le attività utente virtuale durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Vedere anche
 

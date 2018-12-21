@@ -1,5 +1,5 @@
 ---
-title: Creare un plug-in di test prestazioni Web per Visual Studio
+title: Creare un plug-in di test delle prestazioni Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894521"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067654"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test prestazioni Web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test delle prestazioni Web
 
 I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test delle prestazioni web. Un plug-in test delle prestazioni web personalizzato consente di chiamare parte del codice durante l'esecuzione del test delle prestazioni web. Il plug-in test delle prestazioni web viene eseguito una sola volta per ogni iterazione di test. Inoltre, se si esegue l'override del metodo PreRequest o PostRequest nel plug-in test, i plug-in di tali richieste verranno eseguiti rispettivamente prima e dopo ciascuna richiesta.
 
@@ -111,7 +111,7 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
     > [!WARNING]
     > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: Eccezione in \<plug-in> event: Impossibile caricare il file o l'assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
+    > **Richiesta non riuscita: Eccezione nell'evento \<plug-in>: Non è stato possibile caricare il file o l'assembly '\<"file .dll Nome plug-in" Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >

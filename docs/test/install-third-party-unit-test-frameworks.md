@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379638"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954084"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Installare framework di unit test di terze parti
+# <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
 Esplora test di Visual Studio può eseguire qualsiasi framework di unit test che ha sviluppato un'interfaccia di adattatore per Esplora test. Il programma di installazione del framework installa i file binari e aggiunge modelli di progetto di Visual Studio per i linguaggi supportati. Quando si crea un progetto con il modello, il framework viene registrato con Esplora test. Una soluzione di Visual Studio può includere progetti unit test che usano diversi framework e fanno riferimento a diversi linguaggi. Esplora test li esegue tutti.
 
-## <a name="acquire-third-party-frameworks"></a>Acquisire framework di terze parti
+[MSTest](getting-started-with-unit-testing.md) è il framework di test offerto da Visual Studio che viene installato con Visual Studio per impostazione predefinita.
 
-È possibile scaricare e installare molti framework di unit test di terze parti usando Gestione estensioni di Visual Studio o da Visual Studio Marketplace. I framework sono disponibili per il download anche da altri siti, ad esempio il sito Web specifico del framework.
+## <a name="acquire-frameworks"></a>Acquisire framework
+
+È possibile scaricare e installare framework di unit test di terze parti usando Gestione estensioni di Visual Studio o da [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). I framework sono disponibili per il download anche da altri siti, ad esempio il sito Web specifico del framework.
 
 ### <a name="install-from-visual-studio"></a>Installare da Visual Studio
 
@@ -64,7 +66,7 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
 1. Aprire Gestione pacchetti NuGet per la soluzione passando a **Strumenti** > **Gestione pacchetti NuGet** > **Gestisci pacchetti NuGet per la soluzione**.
 
-2. Fare clic sulla scheda **Aggiornamenti** e cercare gli adattatori di test NUnit o xUnit installati.
+2. Fare clic sulla scheda **Aggiornamenti** e cercare gli adattatori di test MSTest, NUnit o xUnit installati.
 
 3. Selezionare ogni adattatore di test e quindi selezionare la versione stabile più recente nel menu a discesa.
 

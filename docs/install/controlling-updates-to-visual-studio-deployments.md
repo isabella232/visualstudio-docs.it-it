@@ -1,8 +1,9 @@
 ---
-title: Controllare gli aggiornamenti delle distribuzioni di Visual Studio
+title: Controllare gli aggiornamenti delle distribuzioni
 description: Informazioni sulla procedura di modifica della posizione in cui Visual Studio cerca un aggiornamento durante l'installazione da una rete.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6f5170b0838e51fb03e17c2f627665c7e64dfd7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830431"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159763"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio
 

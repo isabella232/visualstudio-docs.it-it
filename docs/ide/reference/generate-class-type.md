@@ -1,5 +1,5 @@
 ---
-title: Generare una classe o un tipo in Visual Studio
+title: Generare una classe o un tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296281"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065474"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -33,7 +33,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si introduce una nuova classe o un nuovo tipo e si vuole dichiararlo in modo corretto, automaticamente.
 
-**Perché:** si potrebbe dichiarare la classe o il tipo prima dell'uso, tuttavia questa funzionalità genera la classe o il tipo automaticamente.
+**Perché?:** è possibile dichiarare la classe o il tipo prima dell'uso, ma questa funzionalità genera la classe o il tipo automaticamente.
 
 ## <a name="how-to"></a>Procedura
 
@@ -72,7 +72,7 @@ Questa generazione di codice si applica a:
 
    ![Genera tipo](media/class-newtype-cs.png)
 
-   Selection | Descrizione
+   Selection | Description
    --- | ---
    Accedi a | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Kind | Può essere impostato come *classe* o *struct*.

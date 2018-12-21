@@ -1,5 +1,5 @@
 ---
-title: Organizzare i modelli in Visual Studio
+title: Organizzare i modelli
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948730"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066288"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare modelli di progetto e modelli di elementi
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare modelli di progetti ed elementi
 
 I file di modello devono essere inseriti in un percorso riconosciuto da Visual Studio per poter essere visualizzati nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento**. È anche possibile creare sottocategorie personalizzate nel percorso dei modelli utente e le categorie vengono visualizzate nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento**.
 

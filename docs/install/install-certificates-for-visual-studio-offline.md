@@ -1,8 +1,9 @@
 ---
-title: Installare i certificati necessari per l'installazione offline di Visual Studio | Microsoft Docs
+title: Installare i certificati necessari per un'installazione offline
 description: Informazione sulla procedura di installazione dei certificati per un'installazione offline di Visual Studio.
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78e37097aa4181bec86ca901ab29dffa52b4d010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886292"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158892"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -35,7 +36,7 @@ Sono disponibili tre opzioni per l'installazione o aggiornamento dei certificati
 
 Quando si crea un layout di rete, i certificati necessari vengono scaricati nella cartella Certificates. È quindi possibile installare manualmente i certificati facendo doppio clic su ogni file di certificato e seguendo la procedura guidata del gestore di certificati. Se viene richiesto di immettere una password, lasciare il campo vuoto.
 
-**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, è possibile installare manualmente i certificati: fare clic su ognuno dei file di certificato con il pulsante destro del mouse, scegliere Installa certificato e quindi eseguire i vari passaggi della procedura guidata di Gestione certificati.
+**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive è possibile installare i certificati manualmente. A questo scopo, fare clic con il pulsante destro del mouse su ogni file di certificato, selezionare Installa certificato e quindi eseguire la procedura guidata Gestione certificati.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opzione 2: distribuire certificati radice trusted in un ambiente aziendale
 
@@ -62,7 +63,7 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
-   **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, creare il file batch con i comandi seguenti:
+   **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive creare il file batch con i comandi seguenti:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -94,7 +95,7 @@ I tre file con estensione P12 in questa cartella contengono ognuno un certificat
     * Certificato radice: **Microsoft Root Certificate Authority**
         * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 
-**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione solo dei certificati radice nel sistema.
+**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Perché i certificati della cartella Certificates non vengono installati automaticamente?
 

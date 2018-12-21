@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Spostarsi nell'IDE di Visual Studio"
+title: "Procedura: Spostarsi all'interno dell'IDE"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,14 +19,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdfae0808ff5daa10f8faa621e6af293543bce66
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747131"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060252"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: Spostarsi nell'IDE di Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: Spostarsi all'interno dell'IDE di Visual Studio
 
 L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'utente di passare da una finestra a un'altra e da un file a un altro in modi differenti, in base a preferenze o requisiti di progetto. È possibile scorrere tra file aperti nell'editor oppure scorrere tra tutte le finestre degli strumenti attive nell'IDE. È anche possibile passare direttamente a qualsiasi file aperto nell'editor, indipendentemente dall'ordine di accesso. Queste funzionalità consentono di aumentare la produttività, quando si utilizza l'IDE.
 

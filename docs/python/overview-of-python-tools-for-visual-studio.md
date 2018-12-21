@@ -1,5 +1,6 @@
 ---
-title: Panoramica del supporto di Python in Visual Studio in Windows
+title: Supporto di Python in Visual Studio in Windows
+titleSuffix: ''
 description: Riepilogo delle funzionalità Python di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS).
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001334"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068539"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -43,7 +45,7 @@ Usare il comando **Apri finestra interattiva** per eseguire in modo interattivo 
 
 Per ulteriori informazioni:
 
-- Video (2 minuti 35 secondi): [Manage Python environments](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Gestire gli ambienti Python)
+- Video (2 minuti, 35 secondi): [Gestire gli ambienti Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Documentazione: [Gestire gli ambienti Python](managing-python-environments-in-visual-studio.md)
 - Documentazione: [Informazioni di riferimento su Ambienti Python](python-environments-window-tab-reference.md)
 
@@ -55,12 +57,12 @@ Visual Studio mette a disposizione un editor Python di prima classe, con funzion
 
 Per ulteriori informazioni:
 
-- Video (2 minuti 30 secondi): [Edit Python code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Modificare il codice Python)
+- Video (2 minuti, 30 secondi): [Edit Python code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Modificare il codice Python)
 - Documentazione: [Modificare il codice Python](editing-python-code-in-visual-studio.md)
-- Documentazione: [Formattare il codice](formatting-python-code.md)
+- Documentazione: [Codice formato](formatting-python-code.md)
 - Documentazione: [Effettuare il refactoring del codice](refactoring-python-code.md)
 - Documentazione: [Usare un linter](linting-python-code.md)
-- Documenti generali sulle funzionalità di Visual Studio: [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- Documentazione generale sulle funzionalità di Visual Studio: [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Finestra Interattiva
 
@@ -74,9 +76,9 @@ Visual Studio supporta anche IPython/Jupyter nel ciclo REPL, compresi tracciati 
 
 Per ulteriori informazioni:
 
-- Video (2 minuti 22 secondi): [Python Interactive window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Finestra interattiva di Python)
-- Documenti: [Finestra Interattiva](python-interactive-repl-in-visual-studio.md)
-- Documenti: [IPython in Visual Studio](interactive-repl-ipython.md)
+- Video (2 minuti, 22 secondi): [Python Interactive window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Finestra interattiva di Python)
+- Documentazione: [Finestra Interattiva](python-interactive-repl-in-visual-studio.md)
+- Documentazione: [IPython in Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Sistema del progetto e modelli di progetto e di elemento
 
@@ -90,12 +92,12 @@ Grazie ai modelli di progetto e di elemento, è possibile automatizzare il proce
 
 Per ulteriori informazioni:
 
-- Documenti: [Gestire i progetti Python](managing-python-projects-in-visual-studio.md)
-- Documenti: [Riferimento ai modelli di elemento](python-item-templates.md)
-- Documenti: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Documenti: [Usare C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
-- Documenti generali sulle funzionalità di Visual Studio: [Modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Documenti generali sulle funzionalità di Visual Studio: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Documentazione: [Gestire i progetti Python](managing-python-projects-in-visual-studio.md)
+- Documentazione: [Riferimento ai modelli di elemento](python-item-templates.md)
+- Documentazione: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Documentazione: [Usare C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documentazione generale sulle funzionalità di Visual Studio: [Modelli di progetti ed elementi](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Documentazione generale sulle funzionalità di Visual Studio: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Debug con funzionalità complete
 
@@ -106,10 +108,10 @@ Uno dei punti di forza di Visual Studio è un debugger avanzato. Specificamente 
 Per ulteriori informazioni:
 
 - Video: [Debugging Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Debug di Python), 3 minuti, 32 secondi
-- Documentazione: [Eseguire il debug di Python](debugging-python-in-visual-studio.md)
-- Documenti: [Debug in modalità mista Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Documenti: [Debug remoto in Linux](debugging-python-code-on-remote-linux-machines.md)
-- Documenti generali sulle funzionalità di Visual Studio: [Presentazione delle funzionalità del debugger di Visual Studio](../debugger/debugger-feature-tour.md)
+- Documentazione: [Debug del codice Python](debugging-python-in-visual-studio.md)
+- Documentazione: [Debug in modalità mista di Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Documentazione: [Debug remoto in Linux](debugging-python-code-on-remote-linux-machines.md)
+- Documentazione generale sulle funzionalità di Visual Studio: [Presentazione del debugger di Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Strumenti di profilatura con funzionalità complete di creazione di report
 
@@ -120,8 +122,8 @@ La profilatura esplora come viene impiegato il tempo all'interno dell'applicazio
 Per ulteriori informazioni:
 
 - Video: [Profiling Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567) (Profilatura di Python), 3 minuti, 00 secondi
-- Documenti: [Strumenti di profilatura di Python](profiling-python-code-in-visual-studio.md)
-- Documenti generali sulle funzionalità di Visual Studio: [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md) (non tutte le funzionalità di profilatura di Visual Studio sono disponibili per Python).
+- Documentazione: [Strumenti di profilatura di Python](profiling-python-code-in-visual-studio.md)
+- Documentazione generale sulle funzionalità di Visual Studio: [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md). (non tutte le funzionalità di profilatura di Visual Studio sono disponibili per Python).
 
 ## <a name="unit-testing-tools"></a>Strumenti per unit test
 
@@ -132,8 +134,8 @@ Consentono di individuare, eseguire e gestire i test in **Esplora test** di Visu
 Per ulteriori informazioni:
 
 - Video: [Testing Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Test di Python), 2 minuti, 31 secondi
-- Documenti: [Strumenti di esecuzione di unit test per Python](unit-testing-python-in-visual-studio.md)
-- Documenti generali sulle funzionalità di Visual Studio: [Eseguire unit test del codice](../test/unit-test-your-code.md).
+- Documentazione: [Strumenti di esecuzione di unit test per Python](unit-testing-python-in-visual-studio.md)
+- Documentazione generale sulle funzionalità di Visual Studio: [Eseguire unit test del codice](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK per Python
 

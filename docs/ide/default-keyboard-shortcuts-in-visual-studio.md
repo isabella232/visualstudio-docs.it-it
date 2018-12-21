@@ -1,5 +1,5 @@
 ---
-title: Tasti di scelta rapida predefiniti in Visual Studio
+title: Tasti di scelta rapida predefiniti
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854481"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061513"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
-Per altre informazioni sull'accessibilità dalla tastiera, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Per altre informazioni sull'accessibilità dalla tastiera, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: Usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Per accedere a vari controlli e finestre in Visual Studio, è possibile selezionare il tasto di scelta rapida appropriato. In questo argomento vengono elencati i tasti di scelta rapida predefiniti per il profilo di sviluppo generale, che potrebbe essere stato selezionato durante l'installazione di Visual Studio. Indipendentemente dal profilo scelto, è possibile identificare il tasto di scelta rapida per un comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**. È anche possibile personalizzare i tasti di scelta rapida assegnandone uno diverso per ciascun comando.
 

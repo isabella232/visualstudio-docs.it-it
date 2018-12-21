@@ -1,5 +1,5 @@
 ---
-title: Implementare una classe astratta in Visual Studio
+title: Implementare una classe astratta
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294696"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047603"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementare una classe astratta in Visual Studio
 
@@ -28,7 +28,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si vuole ereditare da una classe astratta.
 
-**Perché:** è possibile implementare manualmente tutti i membri astratti, uno alla volta, tuttavia questa funzionalità genera automaticamente tutte le firme dei metodi.
+**Perché?:** è possibile implementare manualmente tutti i membri astratti, uno alla volta, tuttavia questa funzionalità genera automaticamente tutte le firme dei metodi.
 
 ## <a name="how-to"></a>Procedura
 
@@ -49,7 +49,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
    ![Anteprima dell'implementazione della classe](media/abstract-preview-cs.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Sostituire una variabile temporanea con il relativo valore in Visual Studio
+title: Sostituire una variabile temporanea con il valore corrispondente
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb6fc6888e33b2cc0d210e9cb1e1aababe304f2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6fea50f3cceb907cb014d29bb46988ab07dad6c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916764"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066863"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactoring con variabile temporanea inline
 
@@ -27,11 +27,11 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** consente di rimuovere una variabile temporanea e sostituirla con il relativo valore.
+**Cosa:** consente di rimuovere una variabile temporanea e sostituirla con il valore corrispondente.
 
 **Quando:** l'uso della variabile temporanea rende più difficile la comprensione del codice.
 
-**Perché:** la rimozione di una variabile temporanea può migliorare la leggibilità del codice.
+**Perché?:** la rimozione di una variabile temporanea può migliorare la leggibilità del codice.
 
 ## <a name="how-to"></a>Procedura
 

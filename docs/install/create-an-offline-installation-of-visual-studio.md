@@ -1,7 +1,7 @@
 ---
-title: Creare un'installazione offline di Visual Studio
+title: Creare un'installazione offline
 description: Informazioni su come installare Visual Studio offline quando la connessione Internet non è affidabile o la larghezza di banda è ridotta.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 08/28/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29c364bdd5fc0ea5d08a9862a71d7697197b438
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 37d218893ab16a8d0907e608ebeb3b02ab944385
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826739"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159984"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Creare un'installazione offline di Visual Studio 2017
 
 Visual Studio 2017 è stato progettato per funzionare correttamente in un'ampia gamma di configurazioni di computer e reti. Sebbene sia consigliabile provare il [programma di installazione Web di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), che è un file di piccole dimensioni e consente di rimanere aggiornati con tutte le correzioni e funzionalità più recenti, è comprensibile che non tutti gli utenti abbiano questa possibilità.
 
-Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza di banda disponibile limitata. In questi casi è possibile usare la nuova funzionalità "Scarica tutto, quindi installa" per scaricare i file prima di installare oppure è possibile usare la riga di comando per creare una cache locale dei file.
+Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza di banda disponibile limitata. In questi casi, è possibile usare la nuova funzionalità "Scarica tutto, quindi installa" per scaricare i file prima di installarli oppure è possibile usare la riga di comando per creare una cache locale dei file.
 
 > [!NOTE]
 > Gli amministratori dell'organizzazione che vogliono distribuire Visual Studio 2017 in una rete di workstation client protette da Internet tramite firewall possono vedere le pagine [Creare un'installazione di rete di Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) e [Installare i certificati necessari per l'installazione offline di Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
@@ -35,7 +35,7 @@ Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza 
 ## <a name="use-the-download-all-then-install-feature"></a>Usare la funzionalità "Scarica tutto, quindi installa"
 
 [**Novità della versione 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): dopo aver scaricato il programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installare** nel programma di installazione di Visual Studio. Continuare quindi con l'installazione.
+): dopo aver scaricato il programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installa** nel programma di installazione di Visual Studio. Continuare quindi con l'installazione.
 
    ![Opzione "Scarica tutto, quindi installa"](media/download-all-then-install.png)
 
@@ -78,7 +78,7 @@ Aprire un prompt dei comandi e usare uno dei comandi presenti negli esempi segue
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US```
 
-- Per creare un layout locale completo con tutte le funzionalità (dato l'elevato numero di funzionalità, questa operazione richiederà molto tempo), eseguire:
+- Per creare un layout locale completo con tutte le funzionalità (dato l'_elevato_ numero di funzionalità, questa operazione richiederà molto&mdash; tempo), eseguire:
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 

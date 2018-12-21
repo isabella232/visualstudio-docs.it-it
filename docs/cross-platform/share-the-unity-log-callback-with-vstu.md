@@ -5,17 +5,17 @@ ms.date: 07/26/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 3bf25ed2764078f2d3e0424ab34f4e4a8e470ff5
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.openlocfilehash: aa8a4a229102a6a9439ffb36582cd03e322a086b
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310020"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027198"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Condividere il callback di log di Unity con VSTU
 Visual Studio Tools per Unity registra un callback di log con Unity in modo da poter eseguire la console di Unity in Visual Studio. Se anche gli script di editor registrano un callback di log con Unity, il callback di VSTU potrebbe interferire con questo. Per evitare questa eventualità, usare l'evento `VisualStudioIntegration.LogCallback` per cooperare con VSTU.
@@ -49,4 +49,4 @@ public class LogCallbackHook
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Esempio: generazione di file di progetto](../cross-platform/customize-project-files-created-by-vstu.md)
+ [Esempio: Generazione dei file di progetto](../cross-platform/customize-project-files-created-by-vstu.md)

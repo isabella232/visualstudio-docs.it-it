@@ -1,5 +1,5 @@
 ---
-title: Convertire il metodo Get in proprietà e convertire una proprietà in un metodo Get in Visual Studio
+title: Convertire il metodo Get in proprietà e una proprietà in un metodo Get
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35836e18e9cf8ffa33056b6bd93959d8debcc43a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896024"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056347"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refactoring per convertire il metodo Get in proprietà o una proprietà in metodo Get
 
@@ -29,9 +29,9 @@ Questi refactoring si applicano a:
 
 ## <a name="convert-get-method-to-property"></a>Convertire il metodo Get in proprietà
 
-**Cosa:** consente di convertire un metodo Get in una proprietà (e facoltativamente il metodo Set).
+**Cosa:** consente di convertire un metodo Get (e facoltativamente il metodo Set) in una proprietà.
 
-**Quando:** si ha un metodo Get che non contiene alcuna logica.
+**Quando:** si ha un metodo Get che non contiene logica.
 
 ### <a name="how-to"></a>Procedura
 
@@ -72,7 +72,7 @@ public int MyValue
 
 **Cosa:** consente di convertire una proprietà in un metodo Get
 
-**Quando:** è presente una proprietà con maggiori requisiti rispetto all'impostazione e al recupero immediati di un valore
+**Quando:** è presente una proprietà con maggiori esigenze rispetto all'impostazione e al recupero immediati di un valore
 
 ### <a name="how-to"></a>Procedura
 

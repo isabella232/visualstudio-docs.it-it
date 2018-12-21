@@ -1,5 +1,5 @@
 ---
-title: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
+title: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896063"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068341"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
@@ -39,7 +39,7 @@ Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazio
 Creare o aprire una soluzione non di produzione con la quale sperimentare che contenga un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web con uno o più test delle prestazioni Web per l'applicazione Web ASP.NET.
 
 > [!NOTE]
-> È possibile creare un'applicazione Web ASP.NET e un progetto di test prestazioni Web e di carico che contiene test prestazioni Web seguendo le procedure in [Procedura: Creare un test di servizio Web](../test/how-to-create-a-web-service-test.md) e [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
+> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web contenente test delle prestazioni Web seguendo le procedure descritte in [ Procedura: Creare un test di servizio Web](../test/how-to-create-a-web-service-test.md) e [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Creare un componente aggiuntivo per Visual Studio
 

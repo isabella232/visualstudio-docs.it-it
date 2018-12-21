@@ -1,5 +1,5 @@
 ---
-title: Creazione di un test codificato dell'interfaccia utente basato sui dati in Visual Studio
+title: Creazione di un test codificati dell'interfaccia utente basato sui dati
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896141"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068487"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -65,7 +65,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL**+**R**,**T**).
+5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasti di scelta rapida: **CTRL**+**R**,**T**).
 
     Nella finestra **Esplora test** viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **Finestre** dal menu **Test** e quindi **Esplora test**.
 
@@ -94,7 +94,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL**+**R**,**T**).
+9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasti di scelta rapida: **CTRL**+**R**,**T**).
 
      A questo punto, tutti i valori dei parametri sono definiti nei relativi metodi come costanti. Ora verrà creato un set di dati in modo che il test sia basato sui dati.
 
@@ -232,7 +232,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap.Designer?
 
-**R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente, ovvero *CodedUITest1.cs*.
+**R:** Le modifiche del codice apportate nel file *UIMapDesigner.cs* vengono sovrascritte ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente, ovvero *CodedUITest1.cs*.
 
 Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file *UIMapDesigner.cs*. È necessario rimuovere il riferimento al metodo originale nel file Coded *UITest.cs* e sostituirlo con il nome del metodo rinominato.
 

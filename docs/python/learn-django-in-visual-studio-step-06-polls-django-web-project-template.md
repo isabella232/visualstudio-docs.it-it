@@ -1,5 +1,6 @@
 ---
-title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 6
+title: Informazioni sull'esercitazione Django in Visual Studio, passaggio 6, modello di progetto di sondaggi
+titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità del modello Progetto Web Django di sondaggi, come la personalizzazione dell'area di amministrazione.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001256"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062496"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
@@ -196,9 +198,9 @@ Risposta: Se i modelli non corrispondono al contenuto nel database, in Django si
 
 ![Errore visualizzato quando non è stata eseguita la migrazione di una modifica del modello](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Domanda: Perché Esplora soluzioni non mostra gli script appena generati dopo l'esecuzione del comando Creazione migrazioni Django?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Domanda: Perché Esplora soluzioni non visualizza gli script appena generati dopo l'esecuzione del comando Django Make Migrations (Crea migrazioni Django)?
 
-Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Migrazione Django**, non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il comando di menu **Progetto** > **Mostra tutti i file** oppure il pulsante della barra degli strumenti evidenziato nella figura seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
+Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Django Migrate** (Migrazione Django), non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il comando di menu **Progetto** > **Mostra tutti i file** oppure il pulsante della barra degli strumenti evidenziato nella figura seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
 
 ![Comando Includi nel progetto in Esplora soluzioni](media/django/step06-include-migrations-script-in-project.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire gli ambienti e gli interpreti Python
 description: Usare la finestra Ambienti Python per gestire ambienti globali, virtuali e Conda, installare pacchetti e interpreti Python e assegnare gli ambienti ai progetti di Visual Studio.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349361"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063212"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -57,7 +57,9 @@ In entrambi i casi, la finestra **Ambienti Python** viene visualizzata accanto a
 
 Visual Studio cerca gli ambienti globali installati usando il Registro di sistema (in base a [PEP 514](https://www.python.org/dev/peps/pep-0514/)), oltre agli ambienti virtuali e agli ambienti Conda (vedere [Tipi di ambienti](#types-of-environments)). Se l'elenco non include un ambiente previsto, vedere [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
 
-Quando si seleziona un ambiente nell'elenco, vengono visualizzati vari comandi e proprietà per l'ambiente nella scheda **Panoramica**. Nell'immagine precedente si può ad esempio vedere che il percorso dell'interprete è *C:\Python36-32*. Usare l'elenco a discesa disponibile sotto l'elenco degli ambienti per spostarsi tra le diverse schede, ad esempio **Pacchetti** e **IntelliSense**. Queste schede sono descritte in [Informazioni di riferimento sulle schede della finestra Ambienti Python](python-environments-window-tab-reference.md).
+Quando si seleziona un ambiente nell'elenco, vengono visualizzati vari comandi e proprietà per l'ambiente nella scheda **Panoramica**. Nell'immagine precedente si può ad esempio vedere che il percorso dell'interprete è *C:\Python36-32*. Ognuno dei quattro comandi nella parte inferiore della scheda **Panoramica** apre un prompt dei comandi con l'interprete in esecuzione. Per altre informazioni, vedere [Informazioni di riferimento sulle schede della finestra Ambienti Python - Panoramica](python-environments-window-tab-reference.md#overview-tab).
+
+Usare l'elenco a discesa disponibile sotto l'elenco degli ambienti per spostarsi tra le diverse schede, ad esempio **Pacchetti** e **IntelliSense**. Queste schede sono descritte anche in [Informazioni di riferimento sulle schede della finestra Ambienti Python](python-environments-window-tab-reference.md).
 
 La selezione di un ambiente non cambia la relazione dell'ambiente con eventuali progetti. L'ambiente predefinito, visualizzato in grassetto nell'elenco, è quello che Visual Studio usa per i nuovi progetti. Per usare un altro ambiente con i nuovi progetti, usare il comando **Imposta come ambiente predefinito per i nuovi progetti**. Nel contesto di un progetto è sempre possibile selezionare un ambiente specifico. Per altre informazioni, vedere [Selezionare un ambiente per un progetto](selecting-a-python-environment-for-a-project.md).
 

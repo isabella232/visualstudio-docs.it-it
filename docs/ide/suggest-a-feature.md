@@ -1,5 +1,5 @@
 ---
-title: 'Panoramica: Suggerire una funzionalità per Visual Studio'
+title: Suggerire una funzionalità
 description: Descrive i suggerimenti disponibili in Developer Community, come immettere un suggerimento e come vengono usati i suggerimenti da Microsoft nella roadmap per Visual Studio
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826692"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160036"
 ---
 # <a name="overview-suggest-a-feature"></a>Panoramica: Suggerire una funzionalità
 
 È stata introdotta una nuovissima esperienza per suggerire funzionalità insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com). Si tratta di un nuovo modo di interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
 
-Fino a ora, gli utenti di Visual Studio hanno usato il forum User Voice per proporre le proprie idee riguardo a nuove funzionalità. L'esperienza per il *suggerimento di una funzionalità* in Developer Community permette di passare dal forum User Voice a una singola piattaforma per tutti i commenti e suggerimenti che interagisce direttamente con i team dei prodotti Visual Studio.  
+Fino a ora, gli utenti di Visual Studio hanno usato il forum User Voice per proporre le proprie idee riguardo a nuove funzionalità. L'esperienza per il *suggerimento di una funzionalità* in Developer Community permette di passare dal forum User Voice a una singola piattaforma per tutti i commenti e suggerimenti che interagisce direttamente con i team dei prodotti Visual Studio.
 
 È stata eseguita la migrazione di un set iniziale di idee dal forum User Voice a Developer Community. La migrazione è stata eseguita in base all'impatto sulla community dei commenti e suggerimenti e delle priorità della roadmap dei prodotti. Chi si aspettava di trovare un suggerimento che non è stato incluso, può aggiungerlo liberamente in Developer Community.
 
 ## <a name="votes"></a>Voti
 
-Il sistema di voto in User Voice funziona diversamente da quello in Developer Community. Per mantenere l'integrità dei conteggi di voti di Developer Community e per evitare che i dati vengano falsati, i conteggi di voti di User Voice vengono visualizzati prevalentemente come tag accanto a ogni suggerimento di funzionalità. Passando a votare i suggerimenti nel sito Developer Community migliorato, i nuovi conteggi di voti verranno visualizzati separatamente dai conteggi di voti di User Voice.  
+Il sistema di voto in User Voice funziona diversamente da quello in Developer Community. Per mantenere l'integrità dei conteggi di voti di Developer Community e per evitare che i dati vengano falsati, i conteggi di voti di User Voice vengono visualizzati prevalentemente come tag accanto a ogni suggerimento di funzionalità. Passando a votare i suggerimenti nel sito Developer Community migliorato, i nuovi conteggi di voti verranno visualizzati separatamente dai conteggi di voti di User Voice.
 
 ## <a name="user-voice"></a>User Voice
 
@@ -77,7 +77,7 @@ Un suggerimento di funzionalità contrassegnato come **Servono altre info** indi
 
 - - -
 
-![Stato Chiuso - Informazioni insufficienti per i suggerimenti in Developer Community](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Stato Chiuso - Informazioni insufficienti per i suggerimenti in Developer Community](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Chiuso - Informazioni insufficienti** indica che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere a pieno il suggerimento della funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
 

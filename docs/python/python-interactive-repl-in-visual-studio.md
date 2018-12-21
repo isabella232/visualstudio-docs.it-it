@@ -1,6 +1,6 @@
 ---
 title: Finestra interattiva di Python (REPL)
-description: Come usare la finestra interattiva (REPL) per il codice Python in Visual Studio per lo sviluppo rapido di codice.
+description: Usare la finestra interattiva (REPL) per lo sviluppo rapido di codice Python in Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8146e43a51e4d1634cbba78d789a3ef8cff99f95
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3c3a3a6cd3694a0affa6ca1d5cfabac58b124ec9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219926"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055715"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -26,7 +27,7 @@ In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per
 
 In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
-| REPL | Descrizione | Modifica | Debug | Immagini |
+| REPL | Description | Modifica | Debug | Immagini |
 | --- | --- | --- | --- | --- |
 | Standard | REPL predefinito, comunica direttamente con Python | Modifica standard (su più righe e così via). | Sì, tramite `$attach` | No |
 | Debug | REPL predefinito, comunica con il processo Python di cui è in corso il debug | Modifica standard | Solo debug | No |
@@ -35,7 +36,7 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
 Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Usare la finestra REPL in modalità IPython](interactive-repl-ipython.md).
 
-Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione - Passaggio 3: Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione, passaggio 3: usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
 |   |   |
 |---|---|
@@ -78,7 +79,7 @@ L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per cr
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
-| Metacomando | Descrizione |
+| Metacomando | Description |
 | --- | --- |
 | `$$` | Inserisce un commento ed è quindi utile per aggiungere commenti al codice durante la sessione. |
 | `$attach` | Collega il debugger di Visual Studio al processo della finestra REPL per abilitare il debug. |

@@ -1,5 +1,5 @@
 ---
-title: Codifica e caratteri di interruzione di riga in Visual Studio
+title: Codifica e caratteri di interruzione di riga
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,26 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117095"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052009"
 ---
 # <a name="encodings-and-line-endings"></a>Codifiche e interruzioni di riga
 
 I caratteri seguenti vengono interpretati come interruzioni di riga in Visual Studio:
 
-- CR LF: ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A
+- CR LF: Ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A
 
-- LF: avanzamento riga, carattere Unicode 000A
+- LF: Avanzamento riga, carattere Unicode 000A
 
-- NEL:rRiga successiva, carattere Unicode 0085
+- NEL: Riga successiva, carattere Unicode 0085
 
-- LF: separatore di riga, carattere Unicode 2028
+- LS: Separatore di riga, carattere Unicode 2028
 
-- PS: separatore di paragrafo, carattere Unicode 2029
+- PS: Separatore di paragrafo, carattere Unicode 2029
 
 Il testo che viene copiato da altre applicazioni mantiene la codifica e i caratteri originali dell'interruzione di riga. Ad esempio, quando il testo viene copiato da Blocco note e incollato in un file di testo in Visual Studio, il testo mantiene le stesse impostazioni che aveva in Blocco note.
 

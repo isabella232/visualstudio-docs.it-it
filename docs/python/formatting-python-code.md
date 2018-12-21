@@ -1,6 +1,6 @@
 ---
-title: Formattazione del codice Python
-description: Come riformattare automaticamente codice Python in Visual Studio inclusi spaziatura, istruzioni, ritorno a capo e commenti.
+title: Formattare il codice Python
+description: Visual Studio è in grado di riformattare automaticamente il codice Python, inclusi spaziatura, istruzioni, ritorno a capo e commenti.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219549"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052193"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
@@ -29,7 +30,7 @@ Le opzioni vengono impostate tramite **Strumenti** > **Opzioni** > **Editor di t
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
-Per impostazione predefinita, le opzioni di formattazione sono impostate in modo corrispondente a un superset della [guida di stile PEP 8](http://www.python.org/dev/peps/pep-0008/). La scheda **Generale** determina quando viene applicata la formattazione. Le impostazioni per le altre tre schede sono descritte in questo articolo.
+Per impostazione predefinita, le opzioni di formattazione sono impostate in modo corrispondente a un superset della [guida di stile PEP 8](https://www.python.org/dev/peps/pep-0008/). La scheda **Generale** determina quando viene applicata la formattazione. Le impostazioni per le altre tre schede sono descritte in questo articolo.
 
 Il [supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md) aggiunge anche l'utile comando [**Riempi paragrafo di commento**](#fill-comment-paragraph-command) al menu **Modifica** > **Avanzate** come descritto in una sezione successiva.
 

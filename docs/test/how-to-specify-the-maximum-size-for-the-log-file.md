@@ -1,5 +1,5 @@
 ---
-title: Dimensione del file di log per i test di carico in Visual Studio
+title: Dimensioni del file di log per i test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22cc77426abca46a95fd12c8954fd0965a194f5e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894430"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067275"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Procedura: Specificare la dimensione massima del file di log per i test di carico
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Procedura: Specificare le dimensioni massime del file di log per i test di carico
 
 Per impostazione predefinita, la dimensione massima del file di log utilizzata per i test di carico è impostata su 20 megabyte. È possibile modificare questo valore modificando il file di configurazione associato al servizio controller.
 

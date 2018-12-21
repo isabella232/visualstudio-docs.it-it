@@ -1,5 +1,6 @@
 ---
-title: Esercitazione sull'uso di Python, passaggio 5, installare i pacchetti
+title: Esercitazione sull'uso di Python in Visual Studio, passaggio 5, installare pacchetti
+titleSuffix: ''
 description: Passaggio 5 della procedura dettagliata di base sulle funzionalità di Visual Studio, che illustra le funzionalità di Visual Studio per la gestione dei pacchetti in un ambiente Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82cb54eb64d0864ba3b1d326d68f7303d3f2d882
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220508"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067288"
 ---
-# <a name="step-5-install-packages-in-your-python-environment"></a>Passaggio 5: Installare i pacchetti nell'ambiente Python
+# <a name="step-5-install-packages-in-your-python-environment"></a>Passaggio 5: installare pacchetti nell'ambiente Python
 
-**Passaggio precedente: [Eseguire il codice nel debugger](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**Passaggio precedente: [eseguire il codice nel debugger](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 La community degli sviluppatori di Python produce migliaia di pacchetti utili che è possibile incorporare nei propri progetti. Visual Studio offre un'interfaccia utente per gestire i pacchetti nei propri ambienti Python.
 
