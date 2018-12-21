@@ -1,5 +1,6 @@
 ---
-title: Creazione di un'interfaccia utente usando Blend per Visual Studio
+title: Creare un'interfaccia utente - Blend per Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890143"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059860"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 
@@ -46,7 +47,7 @@ Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti al
 |![Strumenti per gli asset](../designers/media/b1_5.png)|**Strumenti per gli asset** Consente di accedere al pannello **Assets** e visualizzare l'ultimo asset usato nella libreria.|![Callout E](../designers/media/b5_label_e.png)|**Controlli testo**|
 |||![Callout F](../designers/media/b5_label_f.png)|**Controlli comuni**|
 
-**Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [The Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4) (Barra degli strumenti).
+**Breve video:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [The Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4) (Barra degli strumenti).
 
 ## <a name="tour-of-the-assets-panel"></a>Panoramica del pannello Asset
 
@@ -60,7 +61,7 @@ Tutti i controlli sono disponibili nel pannello **Assets**, che è simile alla *
 |![Modalità griglia e modalità elenco](../designers/media/b1_2.png)|**Modalità griglia e Modalità elenco** Consente di passare dalla visualizzazione **Modalità griglia** alla visualizzazione **Modalità elenco** e viceversa.|
 |![Categorie di asset](../designers/media/b1_3.png)|**Categorie di asset** Fare clic su una categoria o sottocategoria per visualizzare l'elenco di asset corrispondente.|
 |![Stili](../designers/media/b1_4.png)|**Stili** Consente di visualizzare tutti gli stili disponibili nel dizionario risorse.|
-|![Descrizione](../designers/media/b1_5.png)|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
+|![Description](../designers/media/b1_5.png)|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>Panoramica del pannello Oggetti e sequenza temporale
 
@@ -115,7 +116,7 @@ Usare questo pannello per visualizzare e modificare le proprietà di un oggetto.
 |![Callout 16](../designers/media/b5_label_16.png)|**Cursore sfumatura** Viene visualizzato solo se è selezionato un pennello sfumato.|
 |![Mostra proprietà avanzate](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostra proprietà avanzate** Consente di visualizzare le categorie di proprietà che vengono usate meno.|
 
-**Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [Properties panel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7) (Pannello Proprietà).
+**Breve video:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [Properties panel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7) (Pannello Proprietà).
 
 ## <a name="see-also"></a>Vedere anche
 

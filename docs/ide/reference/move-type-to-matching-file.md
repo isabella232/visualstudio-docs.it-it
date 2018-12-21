@@ -1,5 +1,5 @@
 ---
-title: Refactoring con spostamento di un tipo in un file corrispondente in Visual Basic
+title: Refactoring con spostamento di un tipo in un file corrispondente
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884149"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059639"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
 
@@ -31,7 +31,7 @@ Questo refactoring si applica a:
 
 **Quando:** sono presenti più classi, struct, interfacce e così via nello stesso file e si vuole separarli.
 
-**Perché:** l'inserimento di più tipi nello stesso file può rendere difficile l'individuazione di questi tipi. Con lo spostamento dei tipi in file con lo stesso nome, il codice diventa più leggibile e la navigazione più semplice.
+**Perché?:** l'inserimento di più tipi nello stesso file può rendere difficile l'individuazione di questi tipi. Con lo spostamento dei tipi in file con lo stesso nome, il codice diventa più leggibile e la navigazione più semplice.
 
 ## <a name="how-to"></a>Procedura
 

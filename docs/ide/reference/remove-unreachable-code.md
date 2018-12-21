@@ -1,5 +1,5 @@
 ---
-title: Refactoring con rimozione del codice non eseguibile in Visual Studio
+title: Refactoring con rimozione del codice non eseguibile
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 65dc8a9318c679743030a86c94ad39b3681dc0ad
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896341"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059311"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactoring con rimozione del codice non eseguibile
 
@@ -26,9 +26,9 @@ Questo refactoring si applica a:
 
 **Cosa:** consente di rimuovere il codice che non verrà mai eseguito.
 
-**Quando:** il programma non include un percorso a un frammento di codice, rendendo il frammento di codice superfluo.
+**Quando:** il programma non include un percorso a un frammento di codice e rende quindi superfluo tale frammento.
 
-**Motivo:** migliorare leggibilità e facilità di gestione con la rimozione di codice superfluo che non verrà mai eseguito.
+**Perché?:** migliorare leggibilità e facilità di gestione con la rimozione di codice superfluo che non verrà mai eseguito.
 
 ## <a name="how-to"></a>Procedura
 

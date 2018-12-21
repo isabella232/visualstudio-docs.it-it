@@ -1,5 +1,5 @@
 ---
-title: Estrarre un metodo in Visual Studio
+title: Estrarre un metodo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294540"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064614"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring con estrazione di un metodo
 
@@ -33,7 +33,7 @@ Questo refactoring si applica a:
 
 **Quando:** si dispone di un frammento di codice esistente in un metodo che deve essere chiamato da un altro metodo.
 
-**Perché:** è possibile copiare e incollare il codice, ma ciò potrebbe causare la duplicazione. Una soluzione migliore consiste nell'effettuare il refactoring del frammento nel relativo metodo, che può essere chiamato liberamente da qualsiasi altro metodo.
+**Perché?:** è possibile copiare e incollare il codice, ma ciò potrebbe causarne la duplicazione. Una soluzione migliore consiste nell'effettuare il refactoring del frammento nel relativo metodo, che può essere chiamato liberamente da qualsiasi altro metodo.
 
 ## <a name="how-to"></a>Procedura
 

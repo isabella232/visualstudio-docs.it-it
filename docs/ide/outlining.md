@@ -1,5 +1,5 @@
 ---
-title: Comprimere ed espandere le aree di codice in Visual Studio
+title: Comprimere ed espandere le aree di codice
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349179"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064705"
 ---
 # <a name="outlining"></a>struttura
 
@@ -53,7 +53,7 @@ I comandi seguenti sono disponibili nel sottomenu **Modifica** > **Struttura**.
 |Comprimi blocco:\<limite logico>|(Visual C++) Consente di comprimere un'area nella funzione contenente il punto di inserimento. Ad esempio, se il punto di inserimento si trova all'interno di un ciclo, il ciclo è nascosto.|
 |Comprimi tutto in:\<strutture logiche>|(Visual C++) Comprime tutte le strutture all'interno della funzione.|
 
-È anche possibile usare Visual Studio SDK per definire le aree di testo che si intende espandere o comprimere. Vedere [Walkthrough: Outlining](../extensibility/walkthrough-outlining.md) (Procedura dettagliata: struttura).
+È anche possibile usare Visual Studio SDK per definire le aree di testo che si intende espandere o comprimere. Vedere [Procedura dettagliata: Struttura](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Vedere anche
 

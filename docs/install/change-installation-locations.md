@@ -1,8 +1,9 @@
 ---
-title: Selezionare i percorsi di installazione in Visual Studio 2017
-description: Informazioni su come ridurre il footprint di installazione nell'unità di sistema modificando il percorso della Download Cache, dei componenti condivisi, degli SDK e degli strumenti in unità diverse.
+title: Selezionare i percorsi di installazione
+description: Informazioni su come ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema indicando un percorso in unità diverse per Download Cache, componenti condivisi, SDK e strumenti.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +16,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295033"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159841"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selezionare i percorsi di installazione in Visual Studio 2017
 
-**Novità della versione 15.7**: è possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema modificando il percorso di alcuni file di Visual Studio. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
+**Novità della versione 15.7**: è possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema cambiando il percorso di alcuni file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
 
    > [!NOTE]
    > Esistono alcuni strumenti e SDK con regole diverse riguardo al percorso di installazione. Questi strumenti e SDK vengono installati nell'unità di sistema anche se si sceglie un altro percorso.

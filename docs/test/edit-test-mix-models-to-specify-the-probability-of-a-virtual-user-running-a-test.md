@@ -1,5 +1,5 @@
 ---
-title: Modifica di modelli di combinazione di test in Visual Studio
+title: Modifica di modelli di combinazione di test
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acb786a4182a79a4133e2d94000ab5f7693bade3
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894664"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057113"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modificare i modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test
 
@@ -28,21 +28,21 @@ Il *modello di combinazione di test* specifica la probabilità che un utente vir
 
 È possibile specificare una delle seguenti opzioni relative al modello di combinazione di test per lo scenario di test di carico:
 
--   **In base al numero totale di test:** determina quali test delle prestazioni Web o unit test vengono eseguiti quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui un determinato test è stato eseguito corrisponde alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione.
+-   **In base al numero totale di test:** determina quale test delle prestazioni Web o quale unit test viene eseguito quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui un determinato test è stato eseguito corrisponde alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione.
 
--   **In base al numero di utenti virtuali:** determina la percentuale di utenti virtuali che eseguiranno un determinato test delle prestazioni Web o unit test. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde alla distribuzione assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulla percentuale di utenti che sta eseguendo un determinato test.
+-   **In base al numero di utenti virtuali:** determina la percentuale di utenti virtuali che eseguiranno un test delle prestazioni Web o uno unit test specifico. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde alla distribuzione assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulla percentuale di utenti che sta eseguendo un determinato test.
 
--   **In base alla velocità dell'utente:** nel corso del test di carico ogni test delle prestazioni Web o unit test viene eseguito un numero specificato di volte per utente all'ora. Usare questo modello di combinazione di test quando si vuole che gli utenti virtuali eseguano il test a un ritmo determinato durante il test di carico.
+-   **In base alla velocità dell'utente:** nel corso del test di carico, ogni test delle prestazioni Web o unit test viene eseguito un numero specificato di volte per utente all'ora. Usare questo modello di combinazione di test quando si vuole che gli utenti virtuali eseguano il test a un ritmo determinato durante il test di carico.
 
--   **In base all'ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico.
+-   **In base a ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico.
 
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Specifica della combinazione di test per il test di carico:** quando si crea un test di carico è possibile specificarne le impostazioni nella **Creazione guidata test di carico**. La **Creazione guidata test di carico** consente anche di scegliere test Web e unit test esistenti da aggiungere allo scenario iniziale. Dopo aver aggiunto test allo scenario, si specifica la combinazione di test per lo scenario.<br /><br /> È possibile usare le opzioni di modellazione del carico per prevedere più accuratamente l'uso reale di un sito Web o un'applicazione sottoposti a test di carico. Tale procedura è importante perché un test di carico che non si basa su un modello di carico accurato può generare risultati fuorvianti.|-   [Emulazione dell'uso reale previsto di un'applicazione o un sito Web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Indicazione della combinazione di test per il test di carico:** quando si crea un test di carico è possibile specificarne le impostazioni nella **Creazione guidata test di carico**. La **Creazione guidata test di carico** consente anche di scegliere test Web e unit test esistenti da aggiungere allo scenario iniziale. Dopo aver aggiunto test allo scenario, si specifica la combinazione di test per lo scenario.<br /><br /> È possibile usare le opzioni di modellazione del carico per prevedere più accuratamente l'uso reale di un sito Web o un'applicazione sottoposti a test di carico. Tale procedura è importante perché un test di carico che non si basa su un modello di carico accurato può generare risultati fuorvianti.|-   [Emulazione dell'uso reale previsto di un'applicazione o un sito Web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Modifica del modello di combinazione di test:** tramite l'**Editor test di carico** è possibile modificare lo scenario di un test di carico in modo da usare uno dei modelli di combinazione di test.||
-|**Configurazione del ritardo velocità per un modello di combinazione di test basato sulla velocità utente:** se lo scenario del test di carico è configurato in modo da usare il **modello di combinazione di test in base alla velocità dell'utente**, è possibile specificare la modalità di configurazione del ritardo velocità della distribuzione.|-   [Procedura: Applicare la distribuzione al ritardo velocità quando si usa un modello di combinazione di test basato sulla velocità dell'utente](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Configurazione del ritardo velocità per un modello di combinazione di test basato sulla velocità utente:** se lo scenario del test di carico è configurato in modo da usare il **modello di combinazione di test In base alla velocità dell'utente**, è possibile specificare la modalità di configurazione del ritardo velocità della distribuzione.|-   [Procedura: Applicare la distribuzione al ritardo velocità quando si usa un modello di combinazione di test basato sulla velocità dell'utente](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Modificare il modello di combinazione di test in uno scenario
 

@@ -1,6 +1,6 @@
 ---
-title: Modifica del codice Python
-description: Per la modifica di codice Python in Visual Studio sono disponibili IntelliSense, frammenti di codice e funzionalità di navigazione, oltre a formattazione, lint e refactoring.
+title: Modificare il codice Python
+description: Per Python, Visual Studio offre funzionalità IntelliSense avanzate, frammenti di codice e funzionalità di navigazione, nonché formattazione, rilevamento di errori con Lint e refactoring.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,21 +8,22 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001269"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062816"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
 Poiché si passa molto tempo nell'editor di codice, il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione.
 
-L'editor è anche integrato con la finestra **interattiva** in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Vedere [Passaggio 3: Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usare la finestra interattiva - Comando per inviare codice alla finestra interattiva](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) per informazioni dettagliate.
+L'editor è anche integrato con la finestra **interattiva** in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Per i dettagli, vedere il [Passaggio 3 dell'esercitazione: Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usare la finestra interattiva - Comando Invia a finestra interattiva](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 |   |   |
 |---|---|
@@ -44,7 +45,7 @@ Per migliorare le prestazioni, IntelliSense in **Visual Studio 2017 versione 15.
 
 I completamenti vengono visualizzati come istruzioni, identificatori e altre parole che possono essere immessi in modo corretto nella posizione corrente nell'editor. Il contenuto dell'elenco dipende dal contesto e viene filtrato per omettere opzioni non corrette o fonte di distrazione. I completamenti vengono spesso attivati digitando istruzioni (ad esempio `import`) e operatori (incluso un punto) diversi, ma è possibile visualizzarli in qualsiasi momento digitando **CTRL**+**J** > **BARRA SPAZIATRICE**.
 
-![Completamento dei membri](media/code-editing-completions-simple.png)
+![Completamento dei membri nell'editor di Visual Studio](media/code-editing-completions-simple.png)
 
 Quando viene aperto un elenco di completamento, è possibile cercare il completamento desiderato usando i tasti di direzione, il mouse oppure continuando a digitare. Digitando altre lettere l'elenco viene ulteriormente filtrato per mostrare i completamenti probabili. È anche possibile usare i tasti di scelta rapida, ad esempio:
 
@@ -54,27 +55,27 @@ Quando viene aperto un elenco di completamento, è possibile cercare il completa
 
 Ecco alcuni esempi:
 
-![Completamento dei membri con filtro](media/code-editing-completion-filtering.png)
+![Completamento dei membri con i filtri nell'editor di Visual Studio](media/code-editing-completion-filtering.png)
 
 I completamenti dei membri appaiono automaticamente quando si digita un punto dopo una variabile o un valore, insieme ai metodi e agli attributi dei tipi potenziali. Se una variabile può avere più di un tipo, l'elenco include tutte le possibilità per tutti i tipi, con informazioni aggiuntive per indicare quali tipi supportano ogni completamento. Nel caso un completamento sia supportato da tutti i tipi possibili, viene visualizzato senza annotazione.
 
-![Completamento dei membri per più tipi](media/code-editing-completion-types.png)
+![Completamento dei membri su più tipi nell'editor di Visual Studio](media/code-editing-completion-types.png)
 
 Per impostazione predefinita, non vengono visualizzati i cosiddetti membri "dunder", il cui nome inizia e termina con un doppio carattere di sottolineatura. In generale, non si deve accedere direttamente a tali membri. Se tuttavia è necessario un membro di questo tipo, digitando un doppio carattere di sottolineatura iniziale i seguenti completamenti vengono aggiunti all'elenco:
 
-![Completamento dei membri privati](media/code-editing-completion-dunder.png)
+![Completamento dei membri privati nell'editor di Visual Studio](media/code-editing-completion-dunder.png)
 
 Le istruzioni `import` e `from ... import` visualizzano un elenco dei moduli che possono essere importati. Con `from ... import`, l'elenco include i membri che possono essere importati dal modulo specificato.
 
-![Completamento per le importazioni](media/code-editing-completion-import.png)
+![Completamento dell'importazione nell'editor di Visual Studio](media/code-editing-completion-import.png)
 
 Per le istruzioni `raise` e `except` vengono visualizzati gli elenchi di classi che probabilmente sono tipi di errore. L'elenco può non includere tutte le eccezioni definite dall'utente, ma consente di trovare rapidamente le eccezioni predefinite appropriate:
 
-![Completamento per le eccezioni](media/code-editing-completion-exception.png)
+![Completamento delle eccezioni nell'editor di Visual Studio](media/code-editing-completion-exception.png)
 
 È possibile digitare @ per iniziare un elemento Decorator e visualizzare gli elementi Decorator potenziali. Molti di questi elementi non possono essere usati come elementi Decorator. Consultare la documentazione della libreria per determinare quali usare.
 
-![Completamento per gli elementi Decorator](media/code-editing-completion-decorator.png)
+![Completamento di elementi Decorator nell'editor di Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > È possibile configurare il comportamento dei completamenti tramite **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Avanzate**. Tra le opzioni disponibili, **Filtra elenco in base alla stringa di ricerca** consente di applicare il filtro ai suggerimenti per il completamento durante la digitazione. Questa opzione è selezionata per impostazione predefinita. L'opzione **Il completamento dei membri visualizza l'intersezione dei membri** consente di visualizzare solo i completamenti supportati da tutti i tipi possibili (deselezionata per impostazione predefinita). Vedere [Opzioni - Risultati del completamento](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ Se si usa il comando **Esegui Mypy** su questo codice, viene generato l'errore s
 
 Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. Per visualizzare queste informazioni è anche possibile usare **CTRL**+**MAIUSC**+**BARRA SPAZIATRICE** all'interno di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
 
-![Supporto per la firma](media/code-editing-signature-help.png)
+![Guida per la firma nell'editor di Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Per disabilitare le informazioni della Guida per le firme, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Generale** e deselezionare **Completamento istruzioni** > **Informazioni parametri**.
@@ -132,17 +133,17 @@ Se si scrive codice che chiama una funzione, la guida per la firma digitale appa
 
 Al passaggio del mouse su un identificatore viene visualizzata una descrizione comando delle informazioni rapide. In base all'identificatore, le informazioni rapide possono visualizzare i valori o i tipi potenziali, eventuale documentazione disponibile, i tipi restituiti e i percorsi delle definizioni:
 
-![Informazioni rapide](media/code-editing-quick-info.png)
+![Informazioni rapide nell'editor di Visual Studio](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Colorazione del codice
 
 La funzionalità di colorazione del codice usa le informazioni dall'analisi del codice per colorare variabili, istruzioni e altre parti del codice. Ad esempio, le variabili che fanno riferimento a moduli o classi possono essere visualizzate in un colore diverso rispetto alle funzioni o altri valori e i nomi dei parametri vengono visualizzati in un colore diverso rispetto alle variabili locali o globali. Le funzioni non appaiono in grassetto per impostazione predefinita:
 
-![Colorazione del codice](media/code-editing-code-coloring.png)
+![Colorazione del codice e della sintassi nell'editor di Visual Studio](media/code-editing-code-coloring.png)
 
 Per personalizzare i colori, accedere a **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** e modificare le voci per **Python** nell'elenco **Elementi visualizzati**:
 
-![Opzioni Tipi di carattere e colori](media/code-editing-customize-colors.png)
+![Opzioni di Tipi di carattere e colori in Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Per disabilitare la colorazione del codice, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Avanzate** e deselezionare **Opzioni varie** > **Nomi dei colori in base ai tipi**. Vedere [Opzioni - Miscellaneous options (Opzioni varie)](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,7 +182,7 @@ Se si seleziona questo codice e si sceglie il comando **Racchiudi tra**, viene v
 
 È possibile visualizzare i frammenti di codice disponibili in **Gestione frammenti di codice**. A tale scopo, usare il comando di menu **Strumenti** > **Gestione frammenti di codice** e quindi selezionare **Python** come linguaggio:
 
-![Gestione frammenti di codice](media/code-editing-code-snippets-manager.png)
+![Gestione frammenti di codice in Visual Studio](media/code-editing-code-snippets-manager.png)
 
 Per creare frammenti personalizzati, vedere [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
 
@@ -195,7 +196,7 @@ Il supporto di Python in Visual Studio offre diversi strumenti per spostarsi rap
 
 La barra di spostamento viene visualizzata nella parte superiore di ogni finestra dell'editor e include un elenco di definizioni su due livelli. L'elenco a discesa a sinistra contiene le definizioni di classi e funzioni di primo livello nel file corrente. L'elenco a discesa a destra visualizza un elenco di definizioni all'interno dell'ambito indicato a sinistra. Spostandosi nell'editor, gli elenchi vengono aggiornati in modo da indicare il contesto corrente ed è anche possibile selezionare una voce dagli elenchi per passarvi direttamente.
 
-![Barra di spostamento](media/code-editing-navigation-bar.png)
+![Barra di navigazione] nell'editor di Visual Studio(media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Per nascondere la barra di spostamento, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Generale** e deselezionare **Impostazioni** > **Barra di spostamento**.
@@ -204,7 +205,7 @@ La barra di spostamento viene visualizzata nella parte superiore di ogni finestr
 
 Il comando **Vai a definizione** consente di passare velocemente dall'uso di un identificatore (ad esempio, un nome di funzione, una classe o una variabile) al codice sorgente in cui è definito. Per chiamare questo comando, è possibile fare clic con il pulsante destro del mouse su un identificatore e selezionare **Vai a definizione** oppure posizionare il punto di inserimento nell'identificatore e premere **F12**. Il comando viene applicato a tutto il codice e alle librerie esterne, a condizione che sia disponibile il codice sorgente. Se il codice sorgente della libreria non è disponibile, il comando **Vai a definizione** passa all'istruzione `import` pertinente per un riferimento al modulo o visualizza un errore.
 
-![Vai a definizione](media/code-editing-go-to-definition.png)
+![Comando Vai a definizione in Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Passa a
 
@@ -212,7 +213,7 @@ Il comando **Modifica** > **Passa a** (**CTRL**+**,**) consente di visualizzare 
 
 Per passare alla definizione dell'identificatore, fare doppio clic su qualsiasi nome oppure selezionarlo con i tasti di direzione e premere **INVIO**.
 
-![Passa a](media/code-editing-navigate-to.png)
+![Comando Passa a in Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Trova tutti i riferimenti
 

@@ -1,8 +1,10 @@
 ---
 title: Uso di Visual Studio in una macchina virtuale di Azure
+titleSuffix: ''
 description: Informazioni su come usare Visual Studio in una macchina virtuale di Azure
 ms.date: 09/12/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895847"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159971"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -35,9 +37,9 @@ In Azure Marketplace sono disponibili immagini per le versioni più recenti prin
 | Versione di rilascio                                              | Edizioni                     |     Versione del prodotto      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
 |   Visual Studio 2019: Preview (Preview 1)                   |           Enterprise         | Versione 16.0.0 Preview 1 |
-| Visual Studio 2017: versione più recente (versione 15.9)                    |    Enterprise, Community     |      Versione 15.9.0      |
+| Visual Studio 2017: Versione più recente (15.9)                    |    Enterprise, Community     |      Versione 15.9.0      |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versione 15.0.18     |
-|   Visual Studio 2015: versione più recente (Update 3)                      |    Enterprise, Community     |  Versione 14.0.25431.01   |
+|   Visual Studio 2015: Versione più recente (Update 3)                      |    Enterprise, Community     |  Versione 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             nessuno             | (Scaduto per la manutenzione)  |
 
 > [!NOTE]
@@ -99,7 +101,7 @@ Per altre informazioni, vedere [Accedere a Visual Studio](../ide/signing-in-to-v
 
 La gamma di possibili configurazioni degli ambienti di sviluppo è enorme e i costi sostenuti per la preparazione degli ambienti più complessi sono tutt'altro che irrilevanti. Indipendentemente dalla configurazione dell'ambiente, è possibile salvare, o acquisire, la macchina virtuale configurata come "immagine di base" per usi futuri o per altri membri del team. In questo modo, quando si avvia una nuova macchina virtuale è possibile eseguirne il provisioning dall'immagine di base anziché dall'immagine di Azure Marketplace.
 
-Riepilogo rapido: usare l'utilità preparazione sistema (Sysprep) e arrestare la macchina virtuale in esecuzione, quindi acquisire *(figura 1)* la macchina virtuale come immagine tramite l'interfaccia utente nel portale di Azure. Azure salva il file `.vhd` che contiene l'immagine nell'account di archiviazione di propria scelta. La nuova immagine viene quindi visualizzata come risorsa Immagine nell'elenco di risorse della sottoscrizione.
+Riepilogo rapido: usare l'utilità preparazione sistema (Sysprep), arrestare la macchina virtuale in esecuzione e quindi acquisire *(Figura 1)* la macchina virtuale sotto forma di immagine tramite l'interfaccia utente nel portale di Azure. Azure salva il file `.vhd` che contiene l'immagine nell'account di archiviazione di propria scelta. La nuova immagine viene quindi visualizzata come risorsa Immagine nell'elenco di risorse della sottoscrizione.
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Figura 1) Acquisire un'immagine tramite l'interfaccia utente del portale di Azure.*</center>
 

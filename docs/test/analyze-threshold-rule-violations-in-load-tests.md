@@ -1,5 +1,5 @@
 ---
-title: Analisi delle violazioni delle regole di soglia nei test di carico in Visual Studio
+title: Analisi delle violazioni delle regole di soglia nei test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895431"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061811"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -36,13 +36,13 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
 
  Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabella seguente contiene queste colonne:
 
-|Colonna|Descrizione|Visibile per impostazione predefinita|
+|Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
-|Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Yes|
-|Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:** questo nome è importante quando i test di carico vengono eseguiti in rig.|Yes|
+|Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
+|Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:**  Questo nome è importante quando i test di carico vengono eseguiti in rig.|Yes|
 |Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
-|Counter|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
-|Istanza|L'istanza del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
+|Counter|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
+|Istanza|L'istanza del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
 |Messaggio|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Yes|
 
 > [!NOTE]

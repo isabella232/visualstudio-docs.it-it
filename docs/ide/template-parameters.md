@@ -1,5 +1,5 @@
 ---
-title: Parametri dei modelli di progetti ed elementi di Visual Studio
+title: Parametri dei modelli di progetti ed elementi
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178634"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067669"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -49,7 +49,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 Nella tabella seguente sono elencati i parametri di modello riservati che possono essere usati da qualsiasi modello.
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
 |guid[1-10]|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1`.|

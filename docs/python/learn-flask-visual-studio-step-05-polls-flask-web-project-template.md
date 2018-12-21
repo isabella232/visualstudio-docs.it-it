@@ -1,5 +1,6 @@
 ---
-title: Esercitazione - Informazioni su Flask in Visual Studio, passaggio 5
+title: Informazioni sull'esercitazione Flask in Visual Studio, passaggio 5, modello di progetto di sondaggi
+titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità dei modelli Progetto Web Flask di sondaggi e Progetto Web Flask/Jade di sondaggi.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143203"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065999"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello di progetto Web Flask di sondaggi
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello Progetto Web Flask di sondaggi
 
 **Passaggio precedente: [Usare il modello Progetto Web Flask completo](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -232,9 +234,9 @@ La chiamata a `repository.add_sample_polls()` termina in una delle implementazio
 
 Al termine del processo, l'istruzione `redirect('/')` nel metodo `seed` torna alla home page. Poiché `repository.get_polls` ora restituisce un oggetto dati, i tag condizionali in *templates\index.html* eseguono il rendering di una tabella che contiene i sondaggi.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Domanda: come si aggiungono nuovi sondaggi all'app?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Domanda: Come si aggiungono nuovi sondaggi all'app?
 
-Risposta: l'app disponibile attraverso il modello di progetto non include una funzionalità per l'aggiunta o la modifica dei sondaggi. È possibile modificare *models\samples.json* per creare nuovi dati di inizializzazione, ma tale operazione comporterebbe la reimpostazione dell'archivio dati. Per implementare le funzionalità di modifica, è necessario estendere l'interfaccia della classe `Repository` con metodi per la creazione delle istanze `Choice` e `Poll` necessarie, quindi implementare un'interfaccia utente in altre pagine che usano quei metodi.
+Risposta: L'app disponibile attraverso il modello di progetto non include una funzionalità per l'aggiunta o la modifica dei sondaggi. È possibile modificare *models\samples.json* per creare nuovi dati di inizializzazione, ma tale operazione comporterebbe la reimpostazione dell'archivio dati. Per implementare le funzionalità di modifica, è necessario estendere l'interfaccia della classe `Repository` con metodi per la creazione delle istanze `Choice` e `Poll` necessarie, quindi implementare un'interfaccia utente in altre pagine che usano quei metodi.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Passaggio 5-4: Comprendere i dettagli dei sondaggi e le visualizzazioni risultati
 

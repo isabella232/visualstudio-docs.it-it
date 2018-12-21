@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813846"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248283"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -39,13 +39,13 @@ Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente n
 
 Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto specifiche di R non altrimenti gestite da Visual Studio:
 
-| Proprietà | Impostazione predefinita | Descrizione |
+| Proprietà | Impostazione predefinita | Description |
 | --- | --- | --- |
 | Versione | 1.0 | La versione di R Tools per Visual Studio usata per creare il progetto. |
 | RestoreWorkspace | Impostazione predefinita | Carica automaticamente le variabili precedenti dell'area di lavoro dal file `.RData` nella directory del progetto. |
 | SaveWorkspace | Impostazione predefinita | Salva le variabili correnti dell'area di lavoro per il file `.RData` nella directory del progetto quando quest'ultimo viene chiuso. |
 | AlwaysSaveHistory | Impostazione predefinita | Salva la cronologia corrente della finestra interattiva per il file `.RHistory` nella directory del progetto quando quest'ultimo viene chiuso. |
-| EnableCodeIndexing | Yes | Determina se eseguire un'attività di indicizzazione in background per velocizzare le ricerche di codice. |
+| EnableCodeIndexing | Sì | Determina se eseguire un'attività di indicizzazione in background per velocizzare le ricerche di codice. |
 | UseSpacesForTab | Yes | Determina se inserire spazi (Sì) o un carattere di tabulazione (No) quando viene premuto **TAB** nell'editor. |
 | NumSpacesForTab | 2 | Il numero di spazi da inserire se UseSpacesForTab è impostato su Sì. |
 | Codifica | UTF-8 | La codifica predefinita per i file `.R`. |
@@ -63,10 +63,10 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 
 ## <a name="project-properties"></a>Proprietà di progetti
 
-Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto) Proprietà* . La finestra visualizzata riporta le proprietà del progetto:
+Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto)** . La finestra visualizzata riporta le proprietà del progetto:
 
 
-| Scheda | Proprietà | Descrizione | 
+| Scheda | Proprietà | Description | 
 | --- | --- | --- | 
 | Esegui | File di avvio | Nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug** > **Avvia debug** oppure **Debug** > **Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. | 
 | | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. | 
@@ -79,7 +79,7 @@ Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante de
 
 I progetti di Visual Studio supportano diversi comandi generali sia tramite il menu di scelta rapida che tramite il menu **Progetto**. Per i dettagli su queste funzionalità generali, vedere [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Si ricorda però che per i progetti R, R Tools per Visual Studio (RTVS) aggiunge diversi comandi specifici al menu di scelta rapida nonché file e cartelle all'interno del progetto.
 
-| Comando | Descrizione |
+| Comando | Description |
 | --- | --- |
 | Imposta directory di lavoro qui | Imposta la directory di lavoro della finestra interattiva R sulla cartella del progetto, che può essere usata anche in qualsiasi sottocartella all'interno di un progetto. |
 | Apri cartella superiore | Apre Esplora risorse in corrispondenza del percorso del file selezionato. |
@@ -94,7 +94,7 @@ RTVS include diversi modelli per tipi di file specifici. È possibile accedere a
 > [!Note]
 > I comandi **Aggiungi** > **Nuovo elemento** visualizzano anche tipi di file generici non elencati nella tabella, mentre con **File** > **Nuovo** > **File**, tali tipi si trovano nella scheda **Generale**.
 
-| Tipo di file | Descrizione |
+| Tipo di file | Description |
 | --- | --- |
 | Script R | Un file di testo che contiene gli stessi comandi che è possibile immettere nella riga di comando R. |
 | R Markdown | File contenente un documento [R Markdown](rmarkdown-with-r-in-visual-studio.md). |

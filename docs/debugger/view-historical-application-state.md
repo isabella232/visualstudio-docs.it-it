@@ -1,7 +1,7 @@
 ---
-title: Visualizzare lo stato precedente dell'applicazione con IntelliTrace
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+title: Visualizzare lo stato precedente dell'app con IntelliTrace
+description: Informazioni su come creare e visualizzare snapshot e visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846863"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060145"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Controllare gli stati precedenti delle app usando la funzionalità per tornare indietro di IntelliTrace in Visual Studio
 
@@ -96,9 +96,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
 In modalità solo eventi IntelliTrace consente di attivare il debug cronologico per passaggi e punti di interruzione del debugger. Tuttavia IntelliTrace acquisisce i dati nelle finestre **Variabili locali** e **Auto** solo se le finestre sono aperte e acquisisce solo i dati che appaiono espansi nella visualizzazione. In modalità solo eventi spesso non si ha una visione completa delle variabili e degli oggetti complessi. Inoltre, la valutazione delle espressioni e la visualizzazione dei dati nella finestra **Espressioni di controllo** non sono supportate. 
 
-Nella modalità eventi e snapshot IntelliTrace acquisisce l'intero snapshot del processo dell'applicazione, inclusi gli oggetti complessi. In corrispondenza di una riga di codice è possibile vedere le stesse informazioni che appaiono se ci si ferma in un punto di interruzione, a prescindere dal fatto che le informazioni siano state espanse in precedenza. Anche la valutazione dell'espressione è supportata durante la visualizzazione di uno snapshot.  
+Nella modalità eventi e snapshot IntelliTrace acquisisce l'intero snapshot del processo dell'applicazione, inclusi gli oggetti complessi. In corrispondenza di una riga di codice è possibile vedere le stesse informazioni che appaiono se ci si ferma in un punto di interruzione, a prescindere dal fatto che le informazioni siano state espanse in precedenza. Anche la valutazione dell'espressione è supportata durante la visualizzazione di uno snapshot.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual è l'impatto sulle prestazioni di questa funzionalità? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual è l'impatto sulle prestazioni di questa funzionalità? 
 
 L'impatto sulle prestazioni generali dell'esecuzione delle istruzioni dipende dall'applicazione. Il sovraccarico per l'acquisizione di uno snapshot è circa 30 ms. Quando viene acquisito uno snapshot, viene creata una copia con fork del processo e tale copia viene sospesa. Quando si visualizza uno snapshot, Visual Studio si connette alla copia creata con fork del processo. Per ogni snapshot, Visual Studio copia solo la tabella della pagina e imposta le pagine per la copia su scrittura. Se gli oggetti sull'heap cambiano tra i passaggi del debugger con snapshot associati, viene copiata la tabella della pagina corrispondente e il costo in termini di memoria è minimo. Se Visual Studio rileva che non vi è memoria sufficiente per creare uno snapshot, non ne acquisisce uno.
  
@@ -112,7 +112,7 @@ L'impatto sulle prestazioni generali dell'esecuzione delle istruzioni dipende da
   * In alternativa: 
     1. Installare il componente Set di strumenti VC++ 2015.3 versione 140 per desktop (x86, x64) dal programma di installazione di Visual Studio.
     2. Compilare l'applicazione di destinazione.
-    3. Dalla riga di comando usare lo strumento editbin per impostare il flag `Largeaddressaware` per il file eseguibile di destinazione. Ad esempio, si potrebbe usare questo comando (dopo aver aggiornato il percorso): "C:\Programmi (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    3. Dalla riga di comando usare lo strumento editbin per impostare il flag `Largeaddressaware` per il file eseguibile di destinazione. È ad esempio possibile usare questo comando (dopo aver aggiornato il percorso): "C:\Programmi (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Premere **F5** per avviare il debug. Da questo punto in poi gli snapshot vengono creati in corrispondenza di passaggi e punti di interruzione del debugger.
 
        > [!Note]

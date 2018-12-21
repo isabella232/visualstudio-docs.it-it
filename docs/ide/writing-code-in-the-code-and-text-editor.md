@@ -1,5 +1,5 @@
 ---
-title: Funzionalità dell'editor del codice in Visual Studio
+title: Funzionalità dell'editor del codice
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349075"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160114"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -60,8 +60,8 @@ Diverse funzionalità avanzate sono disponibili nel menu **Modifica** > **Avanza
 |Rimuovi tabulazione da righe selezionate|Cambia le tabulazioni iniziali in spazi. Per convertire tutti gli spazi nel file in tabulazioni (o tutte le tabulazioni in spazi), è possibile usare i comandi `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Questi comandi non vengono visualizzati nei menu di Visual Studio, ma possono essere richiamati dalla finestra di **accesso rapido** o dalla finestra di comando.|
 |Maiuscole|Converte in maiuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in maiuscolo il carattere nel punto di inserimento.|
 |Minuscole|Converte in minuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in minuscolo il carattere nel punto di inserimento.|
-|Sposta in alto righe selezionate|Sposta la riga selezionata di una riga verso l'alto. Scelta rapida: **ALT**+**freccia SU**.|
-|Sposta in basso righe selezionate|Sposta la riga selezionata di una riga verso il basso. Scelta rapida: **ALT**+**freccia GIÙ**.|
+|Sposta in alto righe selezionate|Sposta la riga selezionata di una riga verso l'alto. Collegamento: **Alt**+**Freccia SU**.|
+|Sposta in basso righe selezionate|Sposta la riga selezionata di una riga verso il basso. Collegamento: **Alt**+**Freccia GIÙ**.|
 |Elimina spazio vuoto superfluo|Elimina le tabulazioni o gli spazi alla fine della riga corrente.|
 |Mostra/Nascondi spazi|Visualizza gli spazi sotto forma di punti mediani e le tabulazioni sotto forma di frecce. La fine di un file viene visualizzata come un glifo rettangolare. Se è selezionata l'opzione **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **A capo automatico** > **Mostra icone per ritorno a capo automatico**, viene visualizzato anche il glifo.|
 |A capo automatico|Rende visibili tutte le righe di un documento nella finestra del codice. È possibile attivare e disattivare il ritorno a capo nelle impostazioni **Tutti i linguaggi dell'editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**).|
@@ -91,7 +91,7 @@ Per altre informazioni sulla personalizzazione dell'editor, vedere [Personalizza
 ## <a name="see-also"></a>Vedere anche
 
 - [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor)
-- [IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Introduzione a C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Introduzione a C# e ad ASP.NET Core in Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Introduzione a Python in Visual Studio](../ide/quickstart-python.md)

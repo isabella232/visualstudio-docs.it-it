@@ -1,6 +1,6 @@
 ---
-title: Generare unit test per il codice con IntelliTest in Visual Studio
-ms.date: 2015-10-05
+title: Generare unit test per il codice con IntelliTest
+ms.date: 10/05/2015
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4aefb4aebe65503620f866955f7cbd62e33b3940
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294162"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052357"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
+
 IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice. Vengono ad esempio analizzate le istruzioni `if`, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
 
- Quando si esegue IntelliTest, è possibile visualizzare facilmente i test non superati e aggiungere l'eventuale codice necessario per correggerli. È possibile scegliere quali dei test generati salvare in un progetto di test per fornire un gruppo di regressione. Quando si modifica il codice, eseguire nuovamente IntelliTest per mantenere i test generati sincronizzati con le modifiche apportate al codice.
+Quando si esegue IntelliTest, è possibile visualizzare facilmente i test non superati e aggiungere l'eventuale codice necessario per correggerli. È possibile scegliere quali dei test generati salvare in un progetto di test per fornire un gruppo di regressione. Quando si modifica il codice, eseguire nuovamente IntelliTest per mantenere i test generati sincronizzati con le modifiche apportate al codice.
 
 ## <a name="availability-and-extensions"></a>Disponibilità ed estensioni
 
@@ -36,7 +37,8 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 * Non supportano la configurazione x64.
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Esplorare: usare IntelliTest per esplorare il codice e generare unit test
- Per generare unit test, i tipi devono essere pubblici. In caso contrario, [creare unit test](#NoRun) prima di generarli.
+
+Per generare unit test, i tipi devono essere pubblici. In caso contrario, [creare unit test](#NoRun) prima di generarli.
 
 1.  Aprire la soluzione in Visual Studio. Aprire quindi il file di classe contenente i metodi da testare.
 
@@ -54,7 +56,7 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
      Per i test che vengono superati verificare che i risultati indicati nella colonna dei risultati corrispondano a quanto previsto per il codice. Per i test che non vengono superati correggere il codice nel modo appropriato. Eseguire quindi di nuovo IntelliTest per verificare le correzioni.
 
-## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Rendere persistenti: salvare gli unit test come gruppo di regressione
+## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Rendere persistente: salvare gli unit test come gruppo di regressione
 
 1.  Selezionare le righe dei dati da salvare con lo unit test con parametri in un progetto di test.
 
@@ -68,7 +70,7 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
      Se il codice del metodo viene modificato, eseguire di nuovo IntelliTest per mantenere gli unit test sincronizzati con le modifiche apportate.
 
-## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Fornire assistenza: usare IntelliTest per concentrarsi sull'esplorazione del codice
+## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Offrire assistenza: usare IntelliTest per concentrarsi sull'esplorazione del codice
 
 1.  In presenza di codice più complesso, IntelliTest consente di concentrarsi sull'esplorazione del codice. Se ad esempio si ha un metodo che contiene un'interfaccia come parametro ed è presente più di una classe che implementa tale interfaccia, IntelliTest trova tali classi e segnala un avviso.
 
@@ -94,7 +96,7 @@ Specificare la relazione generale tra input e output da verificare con gli unit 
 
 ##  <a name="q--a"></a>Domande e risposte
 
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per il codice non gestito?
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per codice non gestito?
 
 **R:** No, IntelliTest funziona solo con codice gestito.
 
@@ -130,7 +132,7 @@ Specificare la relazione generale tra input e output da verificare con gli unit 
 
 ###  <a name="NoRun"></a> D: È possibile generare unit test con parametri senza eseguire prima IntelliTest?
 
-**R:** Sì, fare clic con il pulsante destro del mouse nella classe o nel metodo, quindi scegliere **Crea IntelliTest**.
+**R:** Sì, fare clic con il pulsante destro del mouse nella classe o nel metodo e scegliere **Crea IntelliTest**.
 
  ![Fare clic con il pulsante destro del mouse sull'editor e scegliere Crea IntelliTest](../test/media/pexcreateintellitest.png)
 

@@ -1,5 +1,6 @@
 ---
-title: Esercitazione - Informazioni su Flask in Visual Studio, passaggio 2
+title: Informazioni sull'esercitazione Flask in Visual Studio, passaggio 2, visualizzazioni e modelli
+titleSuffix: ''
 description: Procedura dettagliata dei concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra in particolare i passaggi della creazione di un'app e dell'uso di visualizzazioni e modelli.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812621"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052945"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -198,9 +200,9 @@ Poiché il valore restituito per la visualizzazione è una stringa, è possibile
 
 Risposta: Anche se i modelli vengono in genere mantenuti in file HTML separati, è possibile usare anche un modello inline. L'uso di un file distinto è l'opzione consigliata, tuttavia, per mantenere una netta separazione tra il markup e il codice.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione file html?
 
-Risposta: L'estensione *html* per i file di modello di pagina è del tutto facoltativa, perché il percorso relativo esatto del file viene sempre identificato nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
+Risposta: L'estensione *html* per i file di modello di pagina è completamente facoltativa, perché è sempre possibile identificare esattamente il percorso relativo del file nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
 
 In realtà, quando si lavora a un progetto Flask, Visual Studio rileva automaticamente se il file HTML che si sta modificando è un modello Flask e offre alcune funzionalità di completamento automatico. Ad esempio, quando si inizia a digitare un commento in un modello di pagina Flask, `{#`, Visual Studio suggerisce automaticamente i caratteri di chiusura `#}`. Anche i comandi **Commenta selezione** e **Rimuovi commento selezione** (nel menu **Modifica** > **Avanzate** e sulla barra degli strumenti) usano i commenti dei modelli anziché i commenti HTML.
 
@@ -208,7 +210,7 @@ In realtà, quando si lavora a un progetto Flask, Visual Studio rileva automatic
 
 Risposta: Se vengono visualizzati errori che indicano che non è possibile trovare il modello, verificare di aver aggiunto l'app al file *settings.py* del progetto Flask nell'elenco `INSTALLED_APPS`. Senza questa voce, Flask non sa di dover cercare nella cartella *templates* dell'app.
 
-### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Domanda: I modelli possono essere organizzati in ulteriori sottocartelle?
+### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Domanda: I modelli possono essere organizzati in altre sottocartelle?
 
 Risposta: Sì, è possibile usare sottocartelle e quindi fare riferimento al percorso relativo in *templates* nelle chiamate a `render_template`. In questo modo si possono creare in modo efficace gli spazi dei nomi per i modelli.
 
@@ -220,4 +222,4 @@ Risposta: Sì, è possibile usare sottocartelle e quindi fare riferimento al per
 ## <a name="go-deeper"></a>Approfondimento
 
 - [Flask Quickstart - Rendering Templates](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (Avvio rapido di Flask - Rendering dei modelli) (flask.pocoo.org)
-- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

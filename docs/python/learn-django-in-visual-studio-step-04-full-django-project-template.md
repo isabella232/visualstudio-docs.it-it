@@ -1,5 +1,6 @@
 ---
-title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 4
+title: Informazioni sull'esercitazione Django in Visual Studio, passaggio 4, modello di progetto Web
+titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità del modello Progetto Web Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001204"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065461"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Passaggio 4: Usare il modello di progetto Web Django completo
 
@@ -77,7 +79,7 @@ Al livello più ampio il modello "Progetto Web Django" crea la struttura seguent
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Domanda: È possibile condividere un ambiente virtuale tra progetti di Visual Studio?
 
-Risposta: Sì, ma tenere presente che diversi progetti probabilmente usano pacchetti diversi nel tempo e di conseguenza un ambiente virtuale condiviso deve contenere tutti i pacchetti per tutti i progetti che lo usano.
+Risposta: Sì, ma considerare che diversi progetti probabilmente nel tempo useranno pacchetti diversi e di conseguenza un ambiente virtuale condiviso deve contenere tutti i pacchetti per tutti i progetti che lo usano.
 
 Ciononostante, per usare un ambiente virtuale esistente, eseguire le operazioni seguenti:
 
@@ -219,4 +221,4 @@ Risposta: La mancanza del carattere '$' finale nell'espressione regolare è una 
 
 - [Distribuire l'app Web nel Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (Scrittura della prima app Django, parte 4 - Visualizzazioni) (docs.djangoproject.com)
-- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

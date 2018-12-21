@@ -1,5 +1,5 @@
 ---
-title: Identificare e personalizzare i tasti di scelta rapida in Visual Studio
+title: Identificare e personalizzare i tasti di scelta rapida
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747229"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062973"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificare e personalizzare i tasti di scelta rapida in Visual Studio
 
@@ -69,7 +69,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
 2. Espandere la cartella **Ambiente** e scegliere **Tastiera**.
 
-3. Facoltativo: filtrare l'elenco di comandi immettendo il nome del comando in tutto o in parte, senza spazi, nella casella **Mostra comandi contenenti**.
+3. Facoltative: Filtrare l'elenco di comandi immettendo tutto il nome del comando o parte di esso, senza spazi, nella casella **Mostra comandi contenenti**.
 
 4. Nell'elenco scegliere il comando a cui si desidera assegnare un tasto di scelta rapida.
 
@@ -78,7 +78,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
     Ad esempio, scegliere **Globale** se il tasto di scelta rapida deve funzionare in tutti i contesti. È possibile utilizzare qualsiasi tasto di scelta rapida non mappato come globale in un altro editor. In caso contrario, la specifica dell'editor avrà la precedenza.
 
     > [!NOTE]
-    > Non è possibile assegnare i seguenti tasti come tasti di scelta rapida in **Globale**: STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, TAB, BLOC MAIUSC, INS, HOME, FINE, PGSU, PGGIÙ, il tasto logo di Windows, il tasto MENU SCELTA RAPIDA, i tasti Freccia oppure INVIO; BLOC NUM, CANC o CANC sul tastierino numerico o la combinazione CTRL+ALT+CANC.
+    > Non è possibile assegnare i tasti seguenti nei tasti di scelta rapida in **Globale**: STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, TAB, BLOC MAIUSC, INS, HOME, FINE, PGSU, PGGIÙ, il tasto WINDOWS, il tasto MENU SCELTA RAPIDA, i tasti Freccia oppure INVIO, BLOC NUM, CANC o CANC sul tastierino numerico o la combinazione di tasti CTRL+ALT+CANC.
 
 6. Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 

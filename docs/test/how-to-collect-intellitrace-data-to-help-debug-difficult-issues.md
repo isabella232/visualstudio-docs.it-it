@@ -1,5 +1,5 @@
 ---
-title: Dati di IntelliTrace in Visual Studio
+title: Dati di IntelliTrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894638"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064757"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 
@@ -75,7 +75,7 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 5.  Scegliere la scheda **Generale**. Selezionare **Solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante i test.
 
-     oppure
+     -oppure-
 
      Selezionare **Eventi IntelliTrace e informazioni sulle chiamate** per registrare eventi di diagnostica e traccia a livello di metodo in cui vengono mostrate le informazioni sulle chiamate. Questo livello di traccia potrebbe avere un impatto sulle prestazioni quando si eseguono i test.
 
@@ -92,7 +92,7 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 8.  Scegliere la scheda **Processi**. Selezionare **Raccogli dati da tutti i processi tranne i seguenti** e usare **Aggiungi** per aggiungere processi all'elenco e **Rimuovi** per rimuovere i processi. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
 
-     oppure
+     -oppure-
 
      Selezionare **Raccogli dati solo dai processi specificati** e usare **Aggiungi** per aggiungere processi all'elenco e **Rimuovi** per rimuovere i processi. Questa opzione consente di specificare esattamente i processi desiderati.
 

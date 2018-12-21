@@ -1,5 +1,5 @@
 ---
-title: Fare zoom avanti nei grafici dei risultati dei test di carico in Visual Studio
+title: Ingrandire i grafici dei risultati dei test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895886"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064893"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Ingrandire un'area del grafico dei risultati del test di carico
 
 Al termine di un test di carico, è possibile utilizzare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.
 
@@ -59,7 +59,7 @@ Per visualizzare i grafici:
 
      \- oppure -
 
-     Visualizzare i dettagli di un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
+     Visualizzare i dettagli di un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Scegliere **Grafici** se i grafici non sono visualizzati.
 

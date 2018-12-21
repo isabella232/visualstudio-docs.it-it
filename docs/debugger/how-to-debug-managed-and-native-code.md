@@ -1,7 +1,7 @@
 ---
-title: 'Esercitazione: eseguire il debug di codice gestito e nativo in modalità mista'
+title: 'Esercitazione: eseguire il debug di codice C# e C++ (modalità mista)'
 description: Informazioni su come eseguire il debug di una DLL nativa da un'app .NET Core o .NET Framework con il debug in modalità mista
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257277"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051451"
 ---
-# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di C# e C++ nella stessa sessione di debug
 
 Visual Studio consente di abilitare più di un tipo di debugger in una sessione di debug, chiamata debug in modalità mista. In questa esercitazione viene illustrato come eseguire il debug di codice nativo e gestito in una singola sessione di debug. 
 

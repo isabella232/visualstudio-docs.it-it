@@ -1,5 +1,5 @@
 ---
-title: Sviluppo basato su test con Esplora test in Visual Studio
+title: Sviluppo basato su test con Esplora test
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837087"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062904"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva: Sviluppo basato su test con Esplora test
 
 Si consiglia di creare unit test per garantire il corretto funzionamento del codice attraverso i vari passaggi incrementali dello sviluppo. Esistono diversi framework che possono essere utilizzati per scrivere unit test, tra i quali alcuni sviluppati da terze parti. Alcuni framework di test sono specializzati per il testing in diversi linguaggi o piattaforme. Esplora test fornisce una singola interfaccia per gli unit test per uno qualsiasi di questi framework. Gli adattatori sono disponibili per i framework comunemente più utilizzati ed è possibile scrivere i propri adattatori per altri framework.
 
@@ -53,13 +53,13 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
     Esplora test aprirà e visualizzerà un riepilogo dei risultati.
 
-   **Per visualizzare un elenco completo dei test:** scegliere **Mostra tutto** in qualsiasi categoria.
+   **Per visualizzare un elenco completo di test:** scegliere **Mostra tutto** in qualsiasi categoria.
 
-   **Per visualizzare i dettagli dei risultati di un test:** selezionare il test in Esplora test per visualizzare dettagli quali messaggi di eccezione nell'apposito riquadro.
+   **Per visualizzare i dettagli dei risultati di un test:** selezionare il test in Esplora test per visualizzare dettagli come i messaggi di eccezione nell'apposito riquadro.
 
    **Per spostarsi all'interno del codice di un test:** fare doppio clic sul test in Esplora test o scegliere **Apri test** nel menu di scelta rapida.
 
-   **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test, quindi scegliere **Debug test selezionati**.
+   **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test e quindi scegliere **Esegui debug test selezionati**.
 
 > [!IMPORTANT]
 > I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.

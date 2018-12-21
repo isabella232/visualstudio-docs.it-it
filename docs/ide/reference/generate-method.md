@@ -1,5 +1,5 @@
 ---
-title: Generare un metodo in Visual Studio
+title: Generare un metodo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6d7d17810e53de80bfecff697e960613dc06a6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295852"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057178"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generare un metodo in Visual Studio
 
@@ -28,7 +28,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si introduce un nuovo metodo e si vuole dichiararlo in modo corretto, automaticamente.
 
-**Perché:** si potrebbero dichiarare il metodo e i parametri prima dell'uso, tuttavia questa funzionalità genera la dichiarazione automaticamente.
+**Perché?:** è possibile dichiarare il metodo e i parametri prima dell'uso, ma questa funzionalità genera la dichiarazione automaticamente.
 
 ## <a name="how-to"></a>Procedura
 

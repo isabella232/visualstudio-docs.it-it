@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione di modelli di progetto e modelli di elemento in Visual Studio
+title: Personalizzazione di modelli di progetto e modelli di elementi
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ab2707de0b82d7e3af151c79ea5ee60e5869bfab
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571877"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051756"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalizzare modelli di progetto e modelli di elemento
 
@@ -27,7 +27,7 @@ Ad esempio, è possibile effettuare le attività seguenti:
 
 - Modificare ed esportare un modello esistente come modello utente.
 
-   Per altre informazioni, vedere [Procedura: Aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md).
+   Per altre informazioni, vedere [Procedura: Aggiornare i modelli esistenti](../ide/how-to-update-existing-templates.md).
 
 - Passare parametri personalizzati in un modello per sostituire i valori esistenti.
 

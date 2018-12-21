@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459959"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248205"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Pubblicazione in Servizio app di Azure in Windows
 
@@ -80,7 +81,7 @@ Dopo aver creato un servizio app con un'app Web vuota in esecuzione nella propri
 
 Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 vengono copiati solo i file del progetto nel server. Per questa ragione. è necessario creare i file per configurare l'ambiente del server.
 
-1. In Visual Studio in **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e selezionare **Aggiungi > Nuovo elemento...*. Nella finestra di dialogo visualizzata selezionare il modello "Azure web.config (Fast CGI)" e scegliere OK. Viene creato un file `web.config` nella radice del progetto.
+1. In **Esplora soluzioni** di Visual Studio fare clic con il pulsante destro del mouse sul progetto e selezionare **Aggiungi > Nuovo elemento...**. Nella finestra di dialogo visualizzata selezionare il modello "Azure web.config (Fast CGI)" e scegliere OK. Viene creato un file `web.config` nella radice del progetto.
 
 1. Modificare la voce `PythonHandler` in `web.config` in modo che il percorso corrisponda a quello dell'installazione Python nel server (vedere [Riferimento alla configurazione di IIS](https://www.iis.net/configreference) (iis.net) per tutti i dettagli). Ad esempio, per Python 3.6.1 x64 la voce sarà la seguente:
 
@@ -110,7 +111,7 @@ Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 vengono
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: per i progetti Django sono necessarie due modifiche a `web.config`. Modificare innanzitutto il valore`WSGI_HANDLER` in `django.core.wsgi.get_wsgi_application()` (l'oggetto è incluso nel file `wsgi.py`):
+    - **Django**: per i progetti Django è necessario apportare due modifiche a `web.config`. Modificare innanzitutto il valore`WSGI_HANDLER` in `django.core.wsgi.get_wsgi_application()` (l'oggetto è incluso nel file `wsgi.py`):
 
         ```xml
         <!-- Django apps only -->
@@ -123,7 +124,7 @@ Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 vengono
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Solo app Django**: nel file `settings.py` del progetto Django aprire e aggiungere il dominio dell'URL del sito in `ALLOWED_HOSTS` come illustrato di seguito, sostituendo 'vspython-test-02.azurewebsites.net' con il proprio URL:
+1. **Solo app Django**: nel file `settings.py` del progetto Django aggiungere il dominio dell'URL del sito in `ALLOWED_HOSTS` come illustrato di seguito, sostituendo 'vspython-test-02.azurewebsites.net' con l'URL:
 
     ```python
     # Change the URL to your specific site

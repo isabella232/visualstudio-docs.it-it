@@ -1,22 +1,23 @@
 ---
 title: Debug del codice Python in computer Linux remoti
-description: Come usare Visual Studio per il debug del codice Python in esecuzione in computer Linux remoti, inclusi i passaggi di configurazione necessari, la sicurezza e la risoluzione dei problemi.
-ms.date: 10/15/2018
+description: Usare Visual Studio per eseguire il debug del codice Python in esecuzione in computer Linux remoti, inclusi i passaggi di configurazione necessari, la sicurezza e la risoluzione dei problemi.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356769"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067946"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Eseguire il debug remoto di codice Python in Linux
 
@@ -26,7 +27,7 @@ Quando si usa ptvsd, il codice Python di cui si esegue il debug ospita il server
 
 |   |   |
 |---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Per un'introduzione al debug remoto, vedere [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Approfondimento: il debug multipiattaforma) (youtube.com, 6m22s), applicabile sia a Visual Studio 2015 che a Visual Studio 2017. |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Per un'introduzione al debug remoto, vedere [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (Approfondimento: debug remoto multipiattaforma), youtube.com, 6 minuti e 22 secondi, applicabile a Visual Studio 2015 e 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Impostare un computer Linux
 
@@ -106,7 +107,7 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 
 1. Visual Studio passa quindi in modalità di debug mentre lo script continua l'esecuzione nel computer remoto, rendendo disponibili tutte le consuete funzionalità di [debug](debugging-python-in-visual-studio.md). Ad esempio, impostare un punto di interruzione sulla riga `if guess < number:`, quindi passare al computer remoto e immettere un'altra proposta. Al termine dell'operazione, Visual Studio si arresta nel computer locale in corrispondenza di tale punto di interruzione, indica le variabili locali e così via:
 
-    ![Punto di interruzione raggiunto](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio sospende il debug quando viene raggiunto il punto di interruzione](media/remote-debugging-breakpoint-hit.png)
 
 1. Quando si arresta il debug, Visual Studio si disconnette dal programma, che rimane in esecuzione nel computer remoto. Ptvsd rimane in ascolto del collegamento di debugger, quindi è possibile eseguire di nuovo la connessione al processo in qualsiasi momento.
 

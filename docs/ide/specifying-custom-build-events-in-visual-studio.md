@@ -1,5 +1,5 @@
 ---
-title: Specificare gli eventi di compilazione personalizzati in Visual Studio
+title: Specificare eventi di compilazione personalizzati
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908742"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055128"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Specificare gli eventi di compilazione personalizzati in Visual Studio
 
@@ -25,9 +25,9 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
  Per informazioni specifiche sul linguaggio di programmazione in uso, vedere gli argomenti seguenti:
 
--   Visual Basic: [Procedura: specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# e F#: [Procedura: Specificare eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   C# e F#: [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++: [Specificare gli eventi di compilazione](/cpp/ide/specifying-build-events).
 
@@ -61,4 +61,4 @@ Gli eventi di compilazione seguono la stessa sintassi dei comandi DOS, ma è pos
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md)
-- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
+- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)

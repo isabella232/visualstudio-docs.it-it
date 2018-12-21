@@ -1,5 +1,5 @@
 ---
-title: Panoramica sul riepilogo dei risultati dei test di carico in Visual Studio
+title: Cenni preliminari sul riepilogo dei risultati dei test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895015"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062609"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
-Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico agli stakeholder. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
+Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico agli stakeholder. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png)
 
@@ -72,7 +72,7 @@ La sezione relativa ai risultati complessivi contiene i risultati di riepilogo d
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>Statistica: le prime 5 pagine più lente
 
-La sezione contiene informazioni sulle prime cinque pagine più lente del test di carico. Per ogni pagina sono visualizzati l'URL e il tempo medio di caricamento. Le pagine sono elencate in ordine decrescente. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per altre informazioni, vedere [Procedura: Visualizzare la risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La sezione contiene informazioni sulle prime cinque pagine più lente del test di carico. Per ogni pagina sono visualizzati l'URL e il tempo medio di caricamento. Le pagine sono elencate in ordine decrescente. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per altre informazioni, vedere [Procedura: Visualizzare il tempo di risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 Il valore percentile per il rapporto **Tempo pagina 95% (sec)** indica che il 95% delle pagine è stato completato in meno di questo intervallo in secondi.
 
@@ -95,7 +95,7 @@ La sezione relativa ai risultati del test contiene un elenco di tutti i test e d
 
 ## <a name="page-results"></a>Risultati della pagina
 
-La sezione relativa ai risultati di pagina contiene un elenco di tutte le pagine Web del test di carico. Sono visualizzati l'URL, lo scenario, il nome del test, il tempo medio e il conteggio delle pagine. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per altre informazioni, vedere [Procedura: Visualizzare la risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La sezione relativa ai risultati di pagina contiene un elenco di tutte le pagine Web del test di carico. Sono visualizzati l'URL, lo scenario, il nome del test, il tempo medio e il conteggio delle pagine. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per altre informazioni, vedere [Procedura: Visualizzare il tempo di risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.

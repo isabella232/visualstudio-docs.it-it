@@ -1,6 +1,6 @@
 ---
-title: Analizzare l'utilizzo della rete nelle app UWP in Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Analizzare l'utilizzo della rete nelle app UWP
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220788"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062244"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -74,7 +74,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
- [Blog di Visual Studio: Introducing Visual Studio's network inspector (Introduzione al controllo di rete di Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Video di Channel 9: Strumenti di diagnostica di Visual Studio - Nuovo Profiler di rete](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Blog di Visual Studio: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022) (Introduzione al controllo di rete di Visual Studio)   
+ [Video di Channel 9: VS diagnostics tools - new Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Strumenti di diagnostica di Visual Studio - Nuovo profiler di rete)  
  [Profilatura in Visual Studio](../profiling/index.md)  
  [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

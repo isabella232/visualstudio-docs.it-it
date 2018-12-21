@@ -1,5 +1,5 @@
 ---
-title: Insiemi di contatori e regole di soglia per i test di carico in Visual Studio
+title: Insiemi di contatori e regole di soglia per il test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894508"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057418"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -41,10 +41,10 @@ Per impostazione predefinita i contatori di prestazioni sono raccolti sul contro
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Gestire gli insiemi di contatori per il test di carico:** dopo aver creato un test di carico, è possibile modificare l'insieme di contatori nell'Editor test di carico. La gestione degli insiemi di contatori implica la scelta del gruppo di computer da cui raccogliere i dati sulle prestazioni e l'assegnazione di una serie di insiemi di contatori da raccogliere da ogni singolo computer. I contatori vengono gestiti nell'Editor test di carico.|-   [Procedura: Gestire insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**Aggiungere insiemi di contatori al test di carico:** quando si crea un test di carico con la **Creazione guidata test di carico** si aggiunge un insieme di contatori iniziale. Ciò offre una serie di insiemi di contatori predefiniti per il test di carico. Dopo aver creato un test di carico, è possibile aggiungere i nuovi contatori agli insiemi di contatori esistenti utilizzando l'Editor test di carico.|-   [Procedura: Aggiungere contatori agli insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Procedura: Aggiungere insiemi di contatori personalizzati](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**Specificare una regola di soglia usando i contatori per il test di carico:** una regola di soglia è una regola impostata per un singolo contatore delle prestazioni per monitorare l'uso delle risorse di sistema durante un test di carico. Le definizioni degli insiemi di contatori contengono regole di soglia predefinite per molti contatori di prestazioni principali. Le regole di soglia nei test di carico consentono di confrontare il valore di un contatore delle prestazioni con il valore di una costante o di un altro contatore delle prestazioni.|-   [Procedura: Aggiungere una regola di soglia](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Assegnare nomi descrittivi ai computer ai quali sono mappati gli insiemi di contatori:** è possibile aggiungere tag computer che consentono di applicare un nome facilmente riconoscibile a un computer. I tag vengono visualizzati nel nodo **Mapping insiemi di contatori** nella struttura ad albero dell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono agli stakeholder di identificare il ruolo del computer nel test di carico, ad esempio "Web Server1 in lab2" o "SQL Server2 in Phoenix office".<br /><br /> Per altre informazioni, vedere [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).||
+|**Gestire gli insiemi di contatori per il test di carico:** dopo aver creato il test di carico, è possibile modificare l'insieme di contatori nell'Editor test di carico. La gestione degli insiemi di contatori implica la scelta del gruppo di computer da cui raccogliere i dati sulle prestazioni e l'assegnazione di una serie di insiemi di contatori da raccogliere da ogni singolo computer. I contatori vengono gestiti nell'Editor test di carico.|-   [Procedura: Gestire insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**Aggiungere insiemi di contatori al test di carico:** Quando si crea un test di carico usando la **Creazione guidata test di carico**, è necessario aggiungere un insieme di contatori iniziale. Ciò offre una serie di insiemi di contatori predefiniti per il test di carico. Dopo aver creato un test di carico, è possibile aggiungere i nuovi contatori agli insiemi di contatori esistenti utilizzando l'Editor test di carico.|-   [Procedura: Aggiungere contatori a insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Procedura: Aggiungere insieme di contatori personalizzati](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**Specificare una regola di soglia usando i contatori per il test di carico:** La regola di soglia è una regola impostata su un singolo contatore delle prestazioni che monitora l'uso delle risorse di sistema durante un test di carico. Le definizioni degli insiemi di contatori contengono regole di soglia predefinite per molti contatori di prestazioni principali. Le regole di soglia nei test di carico consentono di confrontare il valore di un contatore delle prestazioni con il valore di una costante o di un altro contatore delle prestazioni.|-   [Procedura: Aggiungere una regola di soglia](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**Assegnare nomi descrittivi ai computer ai quali viene eseguito il mapping degli insiemi di contatori:** È possibile aggiungere tag computer che consentono di applicare a un computer un nome facilmente riconoscibile. I tag vengono visualizzati nel nodo **Mapping insiemi di contatori** nella struttura ad albero dell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono agli stakeholder di identificare il ruolo del computer nel test di carico, ad esempio "Web Server1 in lab2" o "SQL Server2 in Phoenix office".<br /><br /> Per altre informazioni, vedere [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Usare gli insiemi di contatori
 

@@ -1,5 +1,6 @@
 ﻿---
-title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 5
+title: Informazioni sull'esercitazione Django in Visual Studio, passaggio 5, autenticazione
+titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità di autenticazione fornite dai modelli di progetto Web Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001230"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064073"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
-**Passaggio precedente: [Usare il modello Progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Passaggio precedente: [Usare il modello di progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Il modello "Progetto Web Django di sondaggi", presentato nel passaggio 6 di questa esercitazione include lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel file *settings.py* del progetto Django.
 
@@ -216,4 +218,4 @@ Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersit
 ## <a name="go-deeper"></a>Approfondimento
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Autenticazione utente in Django) (docs.djangoproject.com)
-- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

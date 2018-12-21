@@ -1,5 +1,5 @@
 ---
-title: Supporto a 64 bit per l'IDE di Visual Studio
+title: Supporto a 64 bit
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27553fe0fdac8378f8d4b1158902394f0704880c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa48de77bdf5ba283068f3dfcc492a76ae3576c0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425738"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063341"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Supporto a 64 bit per l'IDE di Visual Studio
 
@@ -30,7 +30,7 @@ In [Prerequisiti per la distribuzione di applicazioni a 64 bit](../deployment/de
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Configurare progetti come applicazioni a 64 bit
 
-In [Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md) viene illustrata la configurazione di progetti da compilare come applicazioni a 64 bit.
+[Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md) viene illustrata la configurazione di progetti da compilare come applicazioni a 64 bit.
 
 ## <a name="debug-a-64-bit-application"></a>Eseguire il debug di un'applicazione a 64 bit
 

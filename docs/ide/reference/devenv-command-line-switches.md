@@ -1,5 +1,5 @@
 ---
-title: Opzioni della riga di comando devenv in Visual Studio
+title: Opzioni della riga di comando devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948894"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063396"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -60,7 +60,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili a quelle di altre util
 
 Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed eseguire l'attività descritta.
 
-|Switch della riga di comando|Descrizione|
+|Switch della riga di comando|Description|
 | - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Avvia l'IDE ed esegue il comando specificato.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Carica un eseguibile C++ sotto il controllo del debugger. Questa opzione non è disponibile per gli eseguibili Visual Basic o C#. Per altre informazioni, vedere [Automatically start a process in the debugger](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger) (Avviare automaticamente un processo nel debugger).|
@@ -76,13 +76,13 @@ Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed es
 
 Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 
-|Switch della riga di comando|Descrizione|
+|Switch della riga di comando|Description|
 | - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Visualizza la guida per le opzioni devenv nella **finestra del prompt dei comandi**.<br /><br /> `devenv /?`|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina i file creati dal comando di compilazione, senza che ciò abbia effetto sui file di origine.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Compila la soluzione, in base alla configurazione relativa, insieme ai file necessari per la distribuzione.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|Confronta due file. Accetta quattro parametri, ovvero SourceFile, TargetFile, SourceDisplayName (facoltativo), TargetDisplayName (facoltativo).|
+|[/Diff](../../ide/reference/diff.md)|Confronta due file. Accetta quattro parametri: SourceFile, TargetFile, SourceDisplayName (facoltativo), TargetDisplayName (facoltativo).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Consente di specificare un file per la ricezione di errori durante la compilazione.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Il progetto da compilare, pulire o distribuire. È possibile usare questa opzione solo se è stata specificata anche l'opzione /build, /rebuild, /clean o /deploy.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Specifica la configurazione del progetto da compilare o distribuire. È possibile usare questa opzione solo se è stata specificata anche l'opzione /project.|

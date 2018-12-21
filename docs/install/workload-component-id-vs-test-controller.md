@@ -1,5 +1,6 @@
 ---
 title: ID dei carichi di lavoro e dei componenti di Visual Studio Test Controller 2017
+titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per distribuire testi automatizzati su più computer
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: de9dae76799080baf773600cea7155162c9fe618
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607527"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048447"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Elenco dei componenti di Visual Studio Test Controller 2017
 
@@ -35,7 +36,7 @@ Tenere presenti anche le note seguenti relative alla pagina:
 * È anche possibile scegliere di installare i componenti di tipo **Consigliato** e **Facoltativo**.
 * È stata anche aggiunta una sezione con l'elenco dei componenti aggiuntivi non affiliati ad alcun carico di lavoro.
 
-Quando si impostano le dipendenze nel manifesto VSIX, è necessario specificare solo gli ID dei componenti. Usare le tabelle in questa pagina per determinare le dipendenze minime dei componenti. In alcuni scenari, ciò potrebbe portare alla specifica di un solo componente da un carico di lavoro. In altri scenari è possibile che vengano specificati più componenti da un singolo carico di lavoro o più componenti da più carichi di lavoro. Per altre informazioni, vedere la pagina [Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Quando si impostano le dipendenze nel manifesto VSIX, è necessario specificare solo gli ID dei componenti. Usare le tabelle in questa pagina per determinare le dipendenze minime dei componenti. In alcuni scenari, ciò potrebbe portare alla specifica di un solo componente da un carico di lavoro. In altri scenari è possibile che vengano specificati più componenti da un singolo carico di lavoro o più componenti da più carichi di lavoro. Per altre informazioni, vedere la pagina [ Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Per altre informazioni su come usare questi ID, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Per un elenco di ID di componenti e carichi di lavoro per altri prodotti, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md).
 
@@ -43,7 +44,7 @@ Per altre informazioni su come usare questi ID, vedere la pagina [Usare i parame
 
 **ID:** Microsoft.VisualStudio.Workload.TestController
 
-**Descrizione:** consente di distribuire i test automatizzati in più computer
+**Descrizione:** Consente di distribuire i test automatizzati in più computer
 
 ### <a name="components-included-by-this-workload"></a>Componenti inclusi per questo carico di lavoro
 

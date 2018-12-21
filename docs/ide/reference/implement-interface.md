@@ -1,5 +1,5 @@
 ---
-title: Implementare un'interfaccia in Visual Studio
+title: Implementare un'interfaccia
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9abc1d5fde69127f796dcfcd4c7c09cf8743c915
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295423"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068474"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 
@@ -28,7 +28,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si vuole ereditare da un'interfaccia.
 
-**Perché:** è possibile implementare manualmente tutte le interfacce, una alla volta, tuttavia questa funzionalità genera automaticamente tutte le firme dei metodi.
+**Perché?:** è possibile implementare manualmente tutte le interfacce, una alla volta. Questa funzionalità, tuttavia, genera automaticamente tutte le firme dei metodi.
 
 ## <a name="how-to"></a>Procedura
 
@@ -49,7 +49,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
 3. Scegliere **Implementa interfaccia** dal menu a discesa.
 

@@ -1,5 +1,5 @@
 ---
-title: Aggiungere una regola di soglia per i test di carico in Visual Studio
+title: Aggiungere una regola di soglia per i test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896328"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063370"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedura: Aggiungere una regola di soglia usando l'Editor test di carico
 
@@ -38,7 +38,7 @@ Le regole di soglia nei test di carico consentono di confrontare il valore di un
 
      Viene visualizzata la finestra di dialogo **Aggiungi regola di soglia**.
 
-5.  È possibile scegliere tra due tipi di regole: **Confronta costante** e **Confronta contatori**. Selezionare il tipo appropriato e impostare i valori.
+5.  È possibile scegliere tra due tipi di regole: **Confronta costante** e **Confronta Contatori**. Selezionare il tipo appropriato e impostare i valori.
 
     > [!NOTE]
     > Impostare la proprietà **Avvisa se supera** su **True** per indicare che il superamento della soglia è un problema oppure su **False** per indicare che il non raggiungimento della soglia è un problema.

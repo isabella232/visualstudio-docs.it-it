@@ -1,5 +1,6 @@
 ---
-title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 3
+title: Informazioni sull'esercitazione Django in Visual Studio, passaggio 3, file statici e pagine
+titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, come rendere disponibili file statici, aggiungere pagine all'app e usare l'ereditarietà dei modelli
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001295"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066080"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
@@ -101,7 +103,7 @@ Risposta: La riga `{% load staticfiles %}` è necessaria prima di fare riferimen
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Domanda: Ci sono convenzioni per organizzare i file statici?
 
-Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* come si vuole. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file). In ogni caso, ricordarsi di includere tali sottocartelle nel percorso relativo del file nei riferimenti `{% static %}`.
+Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* a propria discrezione. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file). In ogni caso, ricordarsi di includere tali sottocartelle nel percorso relativo del file nei riferimenti `{% static %}`.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Passaggio 3-3: Aggiungere una pagina all'app
 
@@ -164,7 +166,7 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloDjangoApp", 
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare il server.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Domanda: Se si cerca usare "index" per il collegamento alla home page, non funziona. Perché?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Domanda: Se si cerca di usare "index" per il collegamento alla home page, non funziona. Perché?
 
 Risposta: Anche se la funzione di visualizzazione in *views.py* è denominata `index`, i modelli di routing degli URL nel file *urls.py* del progetto Django non contengono un'espressione regolare che trova la corrispondenza con la stringa "index". Per trovare la corrispondenza con tale stringa, è necessario aggiungere un'altra voce per il modello `^index$`.
 
@@ -283,4 +285,4 @@ I passaggi seguenti illustrano l'ereditarietà:
 - [Writing your first Django app, part 3 (views)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Scrittura della prima app Django, parte 3 - visualizzazioni) (docs.djangoproject.com)
 - Per altre funzionalità dei modelli Django, ad esempio il flusso di controllo, vedere [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Linguaggio dei modelli Django) (docs.djangoproject.com)
 - Per informazioni dettagliate sull'uso del tag `{% url %}`, vedere la sezione [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) in [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Filtri e tag dei modelli predefiniti per i riferimenti dei modelli Django) (docs.djangoproject.com)
-- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
