@@ -1,5 +1,5 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: impostare punti di interruzione nei flussi di lavoro'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: Impostare punti di interruzione in flussi di lavoro'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7dcb437a77bd91c8dbb3360a33c7260fabb91
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 96db38e8a69d0b8b9ee042420647851aa1fbf0c0
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755239"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684249"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: impostare punti di interruzione nei flussi di lavoro
+# <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: Impostare punti di interruzione in flussi di lavoro
 
 Quando si utilizza Progettazione flussi di lavoro, è possibile impostare i punti di interruzione su flussi di lavoro grafici come si farebbe nel codice Visual Basic o c#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
 
-Un punto di interruzione ha tre stati: *in sospeso*, *associato*, e *errore*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
+Un punto di interruzione ha tre stati: *In sospeso*, *associato*, e *errore*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
 
 > [!NOTE]
 > L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.
@@ -42,6 +42,5 @@ Un punto di interruzione ha tre stati: *in sospeso*, *associato*, e *errore*. Qu
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Richiamare il debugger del flusso di lavoro](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 - [Debug dei flussi di lavoro mediante Progettazione flussi di lavoro](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [Procedura: Debug di XML mediante Progettazione flussi di lavoro](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [Procedura: Eseguire il debug di XAML con la finestra di progettazione del flusso di lavoro](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

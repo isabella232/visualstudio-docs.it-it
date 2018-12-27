@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5aaf0cdff2795ff0726ca2de36e794179f2d924
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673055"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648768"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Distribuire una soluzione Office tramite Windows Installer
 Informazioni su come creare un file di Windows Installer per la soluzione Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -528,7 +528,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 
 9. Nella barra dei menu, scegliere **compilare** > **compila OfficeAddInSetup**.  
 
-   Dopo il completamento della compilazione, è possibile individuare il *setup.exe* file del **OfficeAddInSetup** progetto nel percorso seguente: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   Dopo il completamento della compilazione, è possibile individuare il *setup.exe* file del **OfficeAddInSetup** progetto nel percorso seguente: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
 ## <a name="see-also"></a>Vedere anche  

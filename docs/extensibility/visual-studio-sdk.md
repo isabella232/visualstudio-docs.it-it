@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906026"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739161"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o integrare le nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti, oltre che per Visual Studio Marketplace. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:  
@@ -78,8 +78,8 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o inte
   
 ## <a name="see-also"></a>Vedere anche  
  [Creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Procedura: eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [DOMANDE FREQUENTI: Conversione di componenti aggiuntivi in estensioni VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Gestire più thread in codice gestito](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Estendere i menu e comandi](../extensibility/extending-menus-and-commands.md)   
  [Aggiungere comandi alle barre degli strumenti](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o inte
  [Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Uso e fornitura di servizi](../extensibility/using-and-providing-services.md)   
  [Gestire i pacchetti VSPackage](../extensibility/managing-vspackages.md)   
- [Visual Studio isolata shell](../extensibility/visual-studio-isolated-shell.md)   
+ [Visual Studio isolata shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Fornire estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [All'interno di Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Supporto per Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   

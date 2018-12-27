@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c80e7421569804f6d6781b117522dd1ef1dea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885888"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738793"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Risoluzione dei problemi di analisi codice
 L'argomento contiene informazioni sulla risoluzione dei problemi seguenti relativi all'analisi del codice di Visual Studio.
@@ -32,4 +32,4 @@ L'argomento contiene informazioni sulla risoluzione dei problemi seguenti relati
 3. Riaprire il set di regole, annullare la modifica e salvare nuovamente il set di regole.
 
 ## <a name="see-also"></a>Vedere anche
- [L'analisi della qualità delle applicazioni](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [usando regole imposta per raggruppare regole di analisi codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+ [L'analisi della qualità delle applicazioni](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [analisi della qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md) [usando regole imposta per raggruppare regole di analisi codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere controlli segnalibro ai documenti di Word'
+title: 'Procedura: Aggiungere controlli segnalibro ai documenti di Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878609"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647790"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Procedura: aggiungere controlli segnalibro ai documenti di Word
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Procedura: Aggiungere controlli segnalibro ai documenti di Word
   Nei progetti a livello di documento, è possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli al documento nel progetto in fase di progettazione o in fase di esecuzione. Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli a qualsiasi documento aperto in fase di esecuzione.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -135,6 +135,6 @@ ms.locfileid: "49878609"
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)   
- [Procedura: ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)  
+ [Procedura: Ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)  
   
   

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: esporre il codice a VBA in un progetto Visual c#'
-ms.custom: ''
+title: 'Procedura: Esporre il codice a VBA in un C# progetto'
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,29 +13,29 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], exposing code in document-level customizations
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f0b3f004f6aebed6426238a081369c7d50e15f5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873487"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648509"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Procedura: esporre il codice a VBA in un progetto Visual c#
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Procedura: Esporre il codice a VBA in un oggetto visivo C# progetto
   Se si desidera che i due tipi di codice per interagire tra loro, è possibile esporre codice in un progetto Visual c# in Visual Basic Applications Edition (VBA).  
   
- Il processo di Visual c# è diverso dal processo di Visual Basic. Per altre informazioni, vedere [procedura: esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
+ Il processo di Visual c# è diverso dal processo di Visual Basic. Per altre informazioni, vedere [Procedura: Esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 ## <a name="expose-code-in-a-visual-c-project"></a>Esporre il codice in un progetto Visual c#  
  Per consentire al codice VBA chiamare codice in un progetto Visual c#, modificare il codice in modo da essere reso visibile a COM e quindi impostare il **ReferenceAssemblyFromVbaProject** proprietà **True** nella finestra di progettazione.  
   
- Per una procedura dettagliata che illustra come chiamare un metodo in un progetto Visual c# da VBA, vedere [procedura dettagliata: chiamata di codice da VBA in un Visual C&#35; progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Per una procedura dettagliata che illustra come chiamare un metodo in un oggetto visivo C# progetto da VBA, vedere [procedura dettagliata: Chiamare il codice da VBA in un Visual C&#35; project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Per esporre il codice in un progetto Visual c# da VBA  
   
@@ -104,10 +104,10 @@ ms.locfileid: "49873487"
 12. Compilare il progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Combinazione di VBA e le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)   
- [Procedura dettagliata: Chiamata di codice da VBA in un Visual C&#35; progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Procedura: esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Procedura dettagliata: Chiamare il codice da VBA in un Visual C&#35; progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Procedura: Esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

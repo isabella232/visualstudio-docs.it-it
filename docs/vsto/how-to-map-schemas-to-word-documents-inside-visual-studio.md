@@ -1,6 +1,7 @@
 ---
-title: 'Procedura: mappare schemi a documenti di Word in Visual Studio'
-ms.custom: ''
+title: 'Procedura: Mappare schemi a documenti di Word in Visual Studio'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,19 +13,19 @@ helpviewer_keywords:
 - XML schemas [Office development in Visual Studio], mapping
 - mappings [Office development in Visual Studio], XML schemas to Word documents
 - Word [Office development in Visual Studio], mapping XML schemas
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e3bec0437fb9bcd55821e27b22b118430024f751
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fb9d7831a3238766c12722ef3eb67729d9282b32
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255431"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647278"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Procedura: mappare schemi a documenti di Word in Visual Studio
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Procedura: Mappare schemi a documenti di Word in Visual Studio
   **Importante** le informazioni definite in questo argomento relative a Microsoft Word sono presentati in modo esclusivo per il vantaggio e uso di singoli utenti e le organizzazioni che si trovano di fuori degli Stati Uniti e dei relativi territori o che usano o lo sviluppo i programmi eseguiti su, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft prima di gennaio del 2010 quando Microsoft ha rimosso un'implementazione di una funzionalità specifica correlato a XML personalizzata da Microsoft Word. Queste informazioni relative a Microsoft Word non possono essere lette o utilizzate dagli singoli individui o organizzazioni negli Stati Uniti o relativo territori che usano o lo sviluppo di programmi in esecuzione in, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft dopo il 10 gennaio 2010 ; tali prodotti non si comporterà come prodotti concessi in licenza prima di tale data o acquistati e concesso in licenza per l'utilizzo di fuori degli Stati Uniti.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -40,7 +41,7 @@ ms.locfileid: "35255431"
 3.  Sulla barra multifunzione, fare clic sui **sviluppatore** scheda.  
   
     > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  Nel **XML** gruppo, fare clic su **Schema**.  
   
@@ -65,7 +66,7 @@ ms.locfileid: "35255431"
 10. Trascinare gli elementi dal **struttura XML** finestra per le posizioni all'interno del documento in cui si desidera corrispondenti controlli da creare.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [Procedura: Mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [XML schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

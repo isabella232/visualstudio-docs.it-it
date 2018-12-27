@@ -2,9 +2,8 @@
 title: Riferimenti dello Schema dei modelli di Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 0774cdbba791c62a5794c7f837d6ce6b32c49432
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586339"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561827"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Riferimenti dello schema di modelli di Visual Studio
 In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* file, che sono file che archiviano i metadati per i modelli di progetto, modelli di elementi e gli Starter Kit.
@@ -36,7 +35,7 @@ In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* fi
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
 |[CustomDataSignature](../extensibility/customdatasignature-element-visual-studio-templates.md)|--|--|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|nome<br /><br /> Valore|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|nome<br /><br /> Value|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
 |[Descrizione](../extensibility/description-element-visual-studio-templates.md)|--|Pacchetto<br /><br /> Id|
@@ -50,7 +49,7 @@ In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* fi
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[Nome](../extensibility/name-element-visual-studio-templates.md)|--|Pacchetto<br /><br /> Id|
+|[Name](../extensibility/name-element-visual-studio-templates.md)|--|Pacchetto<br /><br /> Id|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Progetto](../extensibility/project-element-visual-studio-templates.md)|Cartella<br /><br /> ProjectItem|File<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
@@ -62,7 +61,7 @@ In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* fi
 |[Tipoprogetto](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
-|[Reference](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
+|[Riferimento](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
 |[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Riferimenti|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Versione|
@@ -74,7 +73,7 @@ In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* fi
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Progetto<br /><br /> Riferimenti<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Progetto<br /><br /> Riferimenti<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|nome<br /><br /> Descrizione<br /><br /> Icona<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|

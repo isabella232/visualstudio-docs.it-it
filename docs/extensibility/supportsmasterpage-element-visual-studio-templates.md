@@ -1,10 +1,9 @@
 ---
-title: Elemento SupportsMasterPage (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento SupportsMasterPage (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94d7db9c00e75b255f5cfe1486b45a5d9460faac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c3eb9a421e6a2678405bcedc95d835990c3a7d9
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138434"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561304"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelli di Visual Studio)
-Specifica se la non di **Seleziona pagina Master** casella di controllo è stato attivato il **Aggiungi nuovo elemento** la finestra di dialogo.  
+Specifica se la non la **Seleziona pagina Master** casella di controllo è abilitato nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,17 +48,17 @@ Specifica se la non di **Seleziona pagina Master** casella di controllo è stato
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Specifica i dati che classificano il modello e definisce la modalità di visualizzazione per il **nuovo progetto** o **nuovo elemento** la finestra di dialogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Specifica i dati che classificano il modello e definisce la modalità di visualizzazione per il **nuovo progetto** oppure **nuovo elemento** nella finestra di dialogo.|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, a indicare o meno il **Seleziona pagina Master** casella di controllo è stato attivato il **Aggiungi nuovo elemento** la finestra di dialogo.  
+ Il testo deve essere `true` oppure `false`, che indica o meno la **Seleziona pagina Master** casella di controllo è abilitato nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
 ## <a name="remarks"></a>Note  
  `SupportsMasterPage` è un elemento facoltativo. Il valore predefinito è `false`.  
   
- Il `SupportsMasterPage` elemento è disponibile solo per modelli di elementi di Web.  
+ Il `SupportsMasterPage` elemento è disponibile solo per i modelli di elemento di Web.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente vengono illustrati i metadati per un progetto Web che include il supporto per una pagina master.  

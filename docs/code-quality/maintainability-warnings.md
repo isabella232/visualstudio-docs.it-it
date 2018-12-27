@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d57df4223cab134ef5cf46180dd1a8c552c08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1169ee28b461367a28c7095758290c2a95e1517
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887150"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739773"
 ---
 # <a name="maintainability-warnings"></a>avvisi di manutenibilità
 
@@ -34,10 +34,10 @@ Avvisi di manutenibilità supportano la manutenzione di libreria e applicazione.
 | [CA1500: I nomi delle variabili non devono corrispondere ai nomi dei campi](../code-quality/ca1500-variable-names-should-not-match-field-names.md) | Un metodo di istanza dichiara un parametro o una variabile locale il cui nome corrisponde a un campo di istanza del tipo dichiarante, generando errori. |
 | [CA1501: Evitare ereditarietà eccessiva](../code-quality/ca1501-avoid-excessive-inheritance.md) | Un tipo si trova oltre il quarto livello di annidamento nella gerarchia di ereditarietà. Le gerarchie di tipi eccessivamente annidate possono comportare difficoltà di comprensione e gestione. |
 | [CA1502: Evitare complessità eccessiva](../code-quality/ca1502-avoid-excessive-complexity.md) | Questa regola misura il numero di percorsi linearmente indipendenti tramite il metodo, determinato dal numero e dalla complessità di rami condizionali. |
-| [CA1504: Controllare i nomi dei campi fuorvianti](../code-quality/ca1504-review-misleading-field-names.md) | Il nome di un campo di istanza inizia con "s _", o il nome di un valore statico (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo inizia con "m _". |
-| [CA1505: evitare codice non gestibile](../code-quality/ca1505-avoid-unmaintainable-code.md) | Un tipo o metodo presenta un valore di indice di gestibilità basso. Un indice di manutenibilità basso indica che un tipo o un metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione. |
-| [CA1506: Evitare un numero eccessivo di accoppiamenti di classi](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
+| [CA1504: Esaminare i nomi dei campi fuorvianti](../code-quality/ca1504-review-misleading-field-names.md) | Il nome di un campo di istanza inizia con "s _", o il nome di un valore statico (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo inizia con "m _". |
+| [CA1505: Evitare codice non gestibile](../code-quality/ca1505-avoid-unmaintainable-code.md) | Un tipo o metodo presenta un valore di indice di gestibilità basso. Un indice di manutenibilità basso indica che un tipo o un metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione. |
+| [CA1506: Evitare l'accoppiamento di classe eccessivo](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)

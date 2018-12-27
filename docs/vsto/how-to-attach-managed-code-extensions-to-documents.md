@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: associare estensioni di codice ai documenti gestito'
+title: 'Procedura: Associare estensioni di codice gestito a documenti'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257043"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646893"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: associare estensioni di codice ai documenti gestito
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: Associare estensioni di codice gestito a documenti
   È possibile collegare un assembly di personalizzazione in un documento esistente di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file che è supportato per i progetti di Microsoft Office e gli strumenti di sviluppo in Visual Studio. Per altre informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35257043"
 > [!NOTE]  
 >  La personalizzazione non verrà caricato se il codice prevede che i controlli che non hanno il documento specificato.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come ricerca per categorie: collegare o scollegare un assembly VSTO da un documento di Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Collegare o scollegare un assembly VSTO da un documento di Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Per associare estensioni di codice gestito a un documento  
   
@@ -55,6 +55,6 @@ ms.locfileid: "35257043"
   
 ## <a name="see-also"></a>Vedere anche  
  [Gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Procedura: rimuovere estensioni di codice gestito dai documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Procedura: Rimuovere estensioni di codice gestito dai documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

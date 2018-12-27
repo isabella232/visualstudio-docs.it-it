@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], guidelines
 - icons [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535ab0329412b261b06fb2d04daefe817299dbe9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2a052cbad69f87c5b25005ff21959841af55f68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892012"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648755"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Linee guida per creare aree del modulo di Outlook
   Le informazioni seguenti consentono di ottimizzare le aree del modulo ed evitare potenziali problemi:  
@@ -92,8 +92,8 @@ ms.locfileid: "49892012"
 ## <a name="see-also"></a>Vedere anche  
  [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)   
  [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
- [Procedura dettagliata: Progettazione di un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283236"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740075"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Crea o aggiorna i criteri di controllo dell'analisi del codice Standard
 
 È possibile richiedere che l'analisi del codice deve essere eseguito in tutti i progetti di codice in un progetto Azure DevOps usando i criteri di controllo dell'analisi codice. Richiedere l'analisi del codice, è possibile migliorare la qualità del codice che viene archiviata nella codebase.
 
@@ -71,4 +71,4 @@ Per altre informazioni su come creare ed implementare una regola di criteri di a
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare e usare criteri di controllo dell'analisi del codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Creare e usare criteri di controllo dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

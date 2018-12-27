@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], getting started
 - add-ins [Office development in Visual Studio], getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858888"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648681"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Introduzione a programming VSTO Add-ins
   È possibile usare componenti aggiuntivi VSTO per automatizzare le applicazioni di Microsoft Office, estendere le funzionalità dell'applicazione e personalizzare l'interfaccia utente dell'applicazione. Per informazioni sulle differenze tra componenti aggiuntivi VSTO per altri tipi di soluzioni Office è possibile creare tramite Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -33,7 +33,7 @@ ms.locfileid: "49858888"
 ## <a name="create-vsto-add-in-projects"></a>Creare progetti di componente aggiuntivo VSTO  
  Creare progetti di componente aggiuntivo VSTO usando uno dei modelli di progetto del componente aggiuntivo VSTO nella finestra di **nuovo progetto** nella finestra di dialogo. Questi modelli includono riferimenti dell'assembly e file di progetto necessari. Visual Studio offre modelli di progetto di componente aggiuntivo VSTO per la maggior parte delle applicazioni di Office.  
   
- Per altre informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per altre informazioni sui modelli di progetto, vedere [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md).  
+ Per altre informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [come: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per altre informazioni sui modelli di progetto, vedere [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md).  
   
 ## <a name="develop-vsto-add-in-projects"></a>Sviluppare progetti di componente aggiuntivo VSTO  
  Quando si crea un progetto di componente aggiuntivo VSTO, Visual Studio crea automaticamente un *ThisAddIn. vb* (nella [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) oppure *ThisAddIn.cs* (in c#) i file di codice. Questo file contiene il `ThisAddIn` (classe), che fornisce le basi per il componente aggiuntivo VSTO. È possibile usare i membri di questa classe per eseguire il codice quando il componente aggiuntivo VSTO viene caricato o scaricato, per accedere al modello a oggetti dell'applicazione host e per estendere le funzionalità dell'applicazione. Per altre informazioni, vedere [programma VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
@@ -90,7 +90,7 @@ ms.locfileid: "49858888"
   Per un elenco di argomenti che illustrano alcune delle attività comuni nei progetti di Office, vedere [attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   

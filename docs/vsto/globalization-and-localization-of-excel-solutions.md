@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567457"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647778"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizzazione e localizzazione di soluzioni di Excel
   Questa sezione contiene considerazioni speciali per le soluzioni Microsoft Office Excel eseguite in computer che hanno impostazioni di Windows non in inglese. Gli aspetti da considerare per la globalizzazione e la localizzazione di soluzioni Microsoft Office sono gli stessi implicati negli altri tipi di soluzioni create con Visual Studio. Per informazioni generali, vedere [Globalize e localizzazione di applicazioni](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567457"
   
  Anche se si usa il formato inglese (Stati Uniti) per i dati passati o modificati da codice gestito, Excel interpreta e visualizza i dati correttamente in base alle impostazioni locali dell'utente finale. In Excel i dati vengono formattati in maniera corretta perché il codice gestito passa l'ID delle impostazioni locali 1033 insieme ai dati, a indicare che i dati sono nel formato inglese (Stati Uniti) e quindi devono essere riformattati in modo da corrispondere alle impostazioni locali dell'utente.  
   
- Se ad esempio le opzioni internazionali degli utenti finali sono impostate sulle impostazioni locali per la lingua tedesca (Germania), ci si aspetta che la data 29 giugno 2005 sia formattata come segue: 29.06.2005. Tuttavia, se la soluzione passa la data a Excel sotto forma di stringa, è necessario formattare la data in base al formato inglese (Stati Uniti): 6/29/2005. Se la cella viene formattata come una cella di data, Excel visualizzerà la data nel formato della lingua tedesca (Germania).  
+ Ad esempio, se gli utenti finali hanno le opzioni internazionali impostare le impostazioni locali lingua tedesca (Germania), si aspettano la data 29 giugno 2005 sia formattato in questo modo: 29.06.2005. Tuttavia, se la soluzione passa la data a Excel sotto forma di stringa, è necessario formattare la data in base al formato inglese (Stati Uniti): 6/29 o 2005. Se la cella viene formattata come una cella di data, Excel visualizzerà la data nel formato della lingua tedesca (Germania).  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passare gli altri ID delle impostazioni locali per il modello a oggetti Excel  
  Common Language Runtime (CLR) passa automaticamente l'ID delle impostazioni locali 1033 a tutti i metodi e le proprietà nel modello a oggetti di Excel che accettano i dati dipendenti dalle impostazioni locali. Non è possibile modificare automaticamente questo comportamento per tutte le chiamate nel modello a oggetti. Tuttavia, è possibile passare un ID delle impostazioni locali diverso a un metodo specifico usando <xref:System.Type.InvokeMember%2A> per chiamare il metodo e passando l'ID delle impostazioni locali al parametro *culture* del metodo.  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  Anche il codice che apre o usa in altro modo dati esterni, ad esempio file che includono valori separati da virgole (CSV) esportati da un sistema legacy, può essere interessato se tali file vengono esportati in un altro formato diverso da en-US. L'accesso al database potrebbe non essere influenzato, in quanto si presuppone che tutti i valori siano in formato binario, a meno che il database non archivi date sotto forma di stringhe o esegua operazioni che non usano il formato binario. Inoltre, se si creano query SQL mediante i dati di Excel, a seconda della funzione usata potrebbe essere necessario verificare che siano in formato en-US.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: interfaccia utente multilingue di Office di destinazione](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Procedura: Destinazione dell'interfaccia utente multilingue di Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
   

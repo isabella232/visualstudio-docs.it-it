@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672964"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425864"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Aggiungere un'estensione del protocollo di Server di linguaggio
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -242,8 +242,8 @@ Fare clic su Nuovo per creare un nuovo Asset:
 
 ![definire asset MEF](media/lsp-define-asset.png)
 
-* **Tipo**: MefComponent
-* **Origine**: un progetto nella soluzione corrente
+* **Tipo**: Microsoft.VisualStudio.MefComponent
+* **Origine**: Un progetto nella soluzione corrente
 * **Progetto**: [progetto]
 
 ### <a name="content-type-definition"></a>Definizione del tipo di contenuto

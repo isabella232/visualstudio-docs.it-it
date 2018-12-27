@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966531"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425773"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica codice
+# <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica codice
 
 È possibile generare risultati metrica codice per uno o più progetti o un'intera soluzione. Metrica del codice è disponibile all'interno dell'ambiente di sviluppo interattivo (IDE) di Visual Studio e, per C# e i progetti Visual Basic, nella riga di comando.
 
-Inoltre, è possibile installare una [pacchetto NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) che include la metrica del codice di quattro [analizzatore](roslyn-analyzers-overview.md) regole: CA1501, CA1502, CA1505 e CA1506. Queste regole sono disabilitate per impostazione predefinita, ma è possibile abilitarle dal **Esplora soluzioni** o in un [set di regole](using-rule-sets-to-group-code-analysis-rules.md) file.
+Inoltre, è possibile installare un [mobileengagement](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) che include la metrica del codice di quattro [analizzatore](roslyn-analyzers-overview.md) regole: CA1501 CA1502, CA1505 e CA1506. Queste regole sono disabilitate per impostazione predefinita, ma è possibile abilitarle dal **Esplora soluzioni** o in un [set di regole](using-rule-sets-to-group-code-analysis-rules.md) file.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Metrica del codice di Visual Studio IDE
 
@@ -68,7 +68,7 @@ Per generare il file eseguibile *Metrics.exe*, seguire questa procedura:
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Un eseguibile denominato *Metrics.exe* viene generato nel *i file binari* directory sotto la radice del repository.
+   Un eseguibile denominato *Metrics.exe* viene generato nel *artifacts\bin* directory sotto la radice del repository.
 
    > [!TIP]
    > Per compilare *Metrics.exe* nelle [modalità legacy](#legacy-mode), eseguire il comando seguente:

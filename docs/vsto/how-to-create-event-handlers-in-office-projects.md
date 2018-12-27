@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare gestori eventi nei progetti di Office'
+title: 'Procedura: Creare i gestori eventi nei progetti di Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - event handlers [Office development in Visual Studio]
 - Visual C# [Office development in Visual Studio], event handlers
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b7e55ee7f094ad104d9c8eb6ef3057621bcccee
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254244"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648600"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Procedura: creare gestori eventi nei progetti di Office
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Procedura: Creare i gestori eventi nei progetti di Office
   Esistono diversi modi per creare gestori eventi in Visual Basic e c#. Nella visualizzazione progettazione, è possibile creare il valore predefinito di gestori di eventi per i controlli facendo doppio clic sul controllo o utilizzare il riquadro eventi della **proprietà** finestra per creare gestori per qualsiasi evento del controllo. Se si è nella visualizzazione codice, tuttavia, non è necessario passare alla visualizzazione di progettazione per creare un gestore eventi.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  

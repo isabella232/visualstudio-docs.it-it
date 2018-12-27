@@ -14,17 +14,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], controls
 - controls [Office development in Visual Studio]
 - documents [Office development in Visual Studio], controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d33c89973124e2bae8e34aca3fc99096ac02ef6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263137"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441470"
 ---
 # <a name="controls-on-office-documents"></a>Controlli nei documenti di Office
   È possibile usare gli strumenti di sviluppo di Office inclusi in Visual Studio per aggiungere controlli Windows Form e *controlli host* ai documenti Word e ai fogli di lavoro di Excel. I controlli host rappresentano oggetti che estendono i vari oggetti dell'interfaccia utente nei modelli a oggetti di Word ed Excel.  
@@ -36,7 +36,7 @@ ms.locfileid: "34263137"
  Quando si sviluppano progetti a livello di documento per Excel o Word, è possibile aggiungere questi controlli a livello di codice in fase di esecuzione oppure è possibile usare la finestra di progettazione di Visual Studio per aggiungere questi controlli nel documento o nella cartella di lavoro nel progetto in fase di creazione.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
- [Elementi host e Cenni preliminari sui controlli host](../vsto/host-items-and-host-controls-overview.md)  
+ [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)  
  In questo articolo vengono descritte le funzionalità di elementi host e controlli host, ad esempio, la programmazione per eventi, i controlli di associazione a dati. Inoltre, viene descritto in che modo i controlli differiscono rispetto agli oggetti nativi.  
   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
@@ -52,7 +52,7 @@ ms.locfileid: "34263137"
  [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)  
  In questo articolo vengono fornite informazioni sui vari modi di personalizzare l'interfaccia utente delle applicazioni di Microsoft Office usando Visual Studio.  
   
- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  In questo articolo viene descritto come visualizzare dati nei documenti di Word e di Excel mediante l'associazione di dati ai controlli host all'interno del documento.  
   
   

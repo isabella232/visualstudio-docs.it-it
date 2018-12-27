@@ -1,6 +1,7 @@
 ---
 title: '&lt;Descrizione&gt; elemento (sviluppo per Office in Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: secdec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - description element
 - <description> element
 - application manifests [Office development in Visual Studio], <description> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fcd9525c5e1f4e075acdcadc94cfcd7fe0650c1c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265115"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648339"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Descrizione&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `description` dello spazio dei nomi `vstov4` archivia la descrizione della soluzione Office che viene visualizzata nella finestra di dialogo dei componenti aggiuntivi COM delle applicazioni di Microsoft Office.  
@@ -34,7 +35,7 @@ ms.locfileid: "34265115"
 </description>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
  Facoltativo. L'elemento `description` si trova nello spazio dei nomi `vstov4` . Contiene la descrizione del componente aggiuntivo che viene visualizzata nella finestra di dialogo dei componenti aggiuntivi COM delle applicazioni di Microsoft Office.  
   
  L'elemento `description` è privo di attributi o elementi.  
@@ -42,7 +43,7 @@ ms.locfileid: "34265115"
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra l'elemento `description` in una soluzione a livello di applicazione distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra l'elemento `description` in una soluzione a livello di applicazione distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   

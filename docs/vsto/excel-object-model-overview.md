@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880793"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647525"
 ---
 # <a name="excel-object-model-overview"></a>Cenni preliminari sul modello a oggetti di Excel
   Per sviluppare soluzioni che utilizzano Microsoft Office Excel, è possibile interagire con gli oggetti forniti dal modello a oggetti di Excel. In questo argomento vengono introdotti gli oggetti più importanti:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880793"
   
   In questo argomento viene illustrato brevemente il modello a oggetti di Excel. Per le risorse in cui altre informazioni sull'intero modello a oggetti Excel, vedere [usare la documentazione del modello a oggetti Excel](#ExcelOMDocumentation).  
   
-  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [How do i: utilizzare i gestori di eventi in Excel 2007 componente aggiuntivo?](http://go.microsoft.com/fwlink/?LinkID=130291), e [procedura ricerca per categorie: utilizzare le forme per creare un grafico a bolle in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare i gestori eventi in Excel 2007 componente aggiuntivo? ](http://go.microsoft.com/fwlink/?LinkID=130291), e [ricerca per categorie Usare le forme per creare un grafico a bolle in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Accedere agli oggetti in un progetto di Excel  
  Quando si crea un nuovo progetto di componente aggiuntivo VSTO per Excel, Visual Studio crea automaticamente un *ThisAddIn. vb* oppure *ThisAddIn.cs* file di codice. È possibile accedere all'oggetto applicazione tramite `Me.Application` o `this.Application`.  
@@ -106,7 +106,7 @@ ms.locfileid: "49880793"
  Per informazioni complete sul modello a oggetti di Excel, è possibile utilizzare il riferimento di assembly di interoperabilità primario di Excel e il riferimento del modello a oggetti VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario  
- Nella documentazione di riferimento dell’assembly di interoperabilità primario di Excel vengono descritti i tipi dell'assembly di interoperabilità primario per Excel. Questa documentazione è disponibile dal percorso seguente: [riferimento all'assembly di interoperabilità primario di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+ Nella documentazione di riferimento dell’assembly di interoperabilità primario di Excel vengono descritti i tipi dell'assembly di interoperabilità primario per Excel. Questa documentazione è disponibile dal percorso seguente: [Riferimento all'assembly di interoperabilità primario di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Per altre informazioni sulla progettazione dei PIA Excel, ad esempio le differenze tra classi e interfacce nell'assembly di interoperabilità primario e sull'implementazione degli eventi nell'assembly di interoperabilità primario, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primaridiOffice](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

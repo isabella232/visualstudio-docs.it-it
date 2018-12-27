@@ -1,10 +1,9 @@
 ---
-title: Elemento TemplateGroupID (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento TemplateGroupID (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68e89b0211c64dcee61507afc15c50bd8e5e85d2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560652"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelli di Visual Studio)
-Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `false`. Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `true`, un modello di elemento è disponibile in tutti i tipi di progetto.  
+Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostata su `false`. Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostata su `true`, un modello di elemento è disponibile in tutti i tipi di progetto.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -59,7 +58,7 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
 ## <a name="remarks"></a>Note  
  `TemplateGroupID` è un elemento.  
   
- Il valore di `TemplateGroupID` elemento viene utilizzato la registrazione del sistema del progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numero di versione >* \Projects\\) per filtrare i modelli visualizzati nel **Aggiungi nuovo elemento** la finestra di dialogo.  
+ Il valore della `TemplateGroupID` elemento viene usato con la registrazione nel sistema di progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numero di versione >* \Projects\\) per i modelli di filtro che vengono visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
 |Valore di Visual C++|Significato|  
 |------------------------|-------------|  

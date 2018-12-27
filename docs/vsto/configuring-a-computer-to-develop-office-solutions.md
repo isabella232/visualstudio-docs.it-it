@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a0e6f44b923bf515977c07bbfec69b9c8e58593c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672226"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441418"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurare un computer per sviluppare soluzioni Office
 
@@ -30,9 +30,9 @@ Per creare componenti aggiuntivi VSTO e personalizzazioni per Microsoft Office, 
 |--------------|------------------------|
 |Visual Studio 2017| Tutte le edizioni con il **sviluppo per Office/SharePoint** carico di lavoro.|
 |.NET Framework|-.NET Framework 4 o versione successivo.|
-|Microsoft Office|<ul><li>Qualsiasi edizione di Office incluso Office Professional Plus per Office 365.</li><li>Qualsiasi applicazione autonoma tra le seguenti:<br /><br /> <ul><li>Excel</li><li>InfoPath (solo Office 2013 e Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Progetto</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic, Applications Edition (VBA) deve essere installato unitamente a Office. **Importante:** non sono supportate le versioni a portata di clic delle applicazioni di Office 2010.|
+|Microsoft Office|<ul><li>Qualsiasi edizione di Office incluso Office Professional Plus per Office 365.</li><li>Qualsiasi applicazione autonoma tra le seguenti:<br /><br /> <ul><li>Excel</li><li>InfoPath (solo Office 2013 e Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Progetto</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic, Applications Edition (VBA) deve essere installato unitamente a Office. **Importante:** Le versioni A portata di clic delle applicazioni di Office 2010 non sono supportate.|
 
-Per i passaggi di installazione dettagliate, vedere [procedura: configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
+Per i passaggi di installazione dettagliate, vedere [come: Configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
 ## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Se non vengono visualizzati i modelli di progetto o non funzionano in Visual Studio
 
@@ -44,7 +44,7 @@ Se si installa una versione supportata di Visual Studio, .NET Framework e Micros
 
      Per assicurarsi che questi strumenti vengono installati, avviare il programma di installazione di Visual Studio e scegliere il **Modify** pulsante. Selezionare la casella di controllo **Microsoft Office Developer Tools** , quindi scegliere il pulsante **Aggiorna** .
 
-- Assicurarsi che non si esegue una versione di Office a portata di a portata di clic. Visualizzare [procedura: verificare se Outlook è un'applicazione a portata di clic in un computer](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
+- Assicurarsi che non si esegue una versione di Office a portata di a portata di clic. Vedere [Procedura: Verificare se Outlook è un'applicazione a portata di clic in un computer](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Assicurarsi che si esegue solo una versione di Microsoft Office.
 
@@ -53,7 +53,7 @@ Se si continua a verificarsi problemi, vedere [supporto aggiuntivo per gli error
 ## <a name="see-also"></a>Vedere anche
 
 [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Procedura: configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Procedura: installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Procedura: assembly di interoperabilità primari di installazione di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Procedura: Configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Procedura: Installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
 [Funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md)

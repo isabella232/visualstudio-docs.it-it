@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636974"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740247"
 ---
 # <a name="localizing-vsix-packages"></a>Localizzazione di pacchetti VSIX
 
@@ -106,6 +106,6 @@ L'esempio seguente illustra le parti pertinenti di un *Extension. vsixmanifest* 
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Riferimenti allo schema 2.0 dei Language Pack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Un language pack VSIX descrive le informazioni di localizzazione di un file di distribuzione VSIX.|
+|[Riferimenti allo schema 2.0 dei Language Pack VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Un language pack VSIX descrive le informazioni di localizzazione di un file di distribuzione VSIX.|
 |[Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Descrive la struttura e contenuto di un pacchetto vsix.|
 |[Localizzare i comandi di menu](../extensibility/localizing-menu-commands.md)|Mostra come localizzare altre risorse di testo in un'estensione.|

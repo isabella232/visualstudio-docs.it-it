@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere controlli ListObject a fogli di lavoro'
+title: 'Procedura: Aggiungere controlli ListObject a fogli di lavoro'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949253"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646971"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: aggiungere controlli ListObject a fogli di lavoro
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: Aggiungere controlli ListObject a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,7 +41,7 @@ ms.locfileid: "49949253"
   Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [controllo ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Aggiungere controlli ListObject in fase di progettazione  
- Esistono diversi modi per aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: da Excel, dalla **casella degli strumenti**di Visual Studio e dalla finestra **Origini dati** .  
+ Esistono diversi modi per aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: Da Excel, Visual Studio **casella degli strumenti**e dal **Zdroje dat** finestra.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -95,7 +95,7 @@ ms.locfileid: "49949253"
  [ListObject (controllo)](../vsto/listobject-control.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
- [Procedura: ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Procedura: Ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

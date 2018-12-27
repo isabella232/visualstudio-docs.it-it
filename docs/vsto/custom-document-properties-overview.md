@@ -15,21 +15,21 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671521"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441444"
 ---
 # <a name="custom-document-properties-overview"></a>Cenni preliminari sulle proprietà personalizzate dei documenti
 
-Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate al documento nel progetto: \_AssemblyLocation e \_AssemblyName. Quando un utente apre un documento, l'applicazione Microsoft Office controlla per queste proprietà personalizzate dei documenti. Se sono presenti nel documento, l'applicazione carica il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], che avvia la personalizzazione. Per altre informazioni, vedere [soluzioni di architettura di Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate per il documento nel progetto: \_AssemblyLocation e \_AssemblyName. Quando un utente apre un documento, l'applicazione Microsoft Office controlla per queste proprietà personalizzate dei documenti. Se sono presenti nel documento, l'applicazione carica il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], che avvia la personalizzazione. Per altre informazioni, vedere [soluzioni di architettura di Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -58,5 +58,5 @@ Questa proprietà contiene una stringa che fornisce dettagli sul manifesto di di
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)
 - [Manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Procedura: pubblicare una soluzione Office usando ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Procedura: creare e modificare le proprietà personalizzate dei documenti](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Procedura: Distribuire una soluzione Office usando ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Procedura: Creare e modificare le proprietà personalizzate dei documenti](../vsto/how-to-create-and-modify-custom-document-properties.md)

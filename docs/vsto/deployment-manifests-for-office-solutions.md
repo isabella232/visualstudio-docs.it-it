@@ -13,31 +13,31 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - manifests [Office development in Visual Studio], deployment
 - Office development in Visual Studio, deployment manifests
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4404b9469aef465a2a105d037b3474855ed3bb68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263490"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647165"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesti della distribuzione per le soluzioni Office
-  Un manifesto di distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione dell'applicazione corrente.  
+  Un manifesto della distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione dell'applicazione corrente.  
   
- Sviluppo per Office in Visual Studio Usa il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schema del manifesto di distribuzione definito nel [manifesto della distribuzione ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) riferimento.  
+ Lo sviluppo di Office in Visual Studio Usa la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schema del manifesto di distribuzione definito nel [manifesto della distribuzione ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) riferimento.  
   
 ## <a name="remarks"></a>Note  
- Il file manifesto di distribuzione per le soluzioni Office, identifica la versione corrente e altre impostazioni di distribuzione. Fa riferimento il manifesto dell'applicazione e viene descritta la versione corrente della soluzione e tutti i file all'interno della soluzione.  
+ Il file manifesto di distribuzione per le soluzioni Office, identifica la versione corrente e altre impostazioni di distribuzione. Si fa riferimento il manifesto dell'applicazione e viene descritta la versione corrente della soluzione e tutti i file all'interno della soluzione.  
   
 ## <a name="file-name-syntax"></a>Sintassi del nome file  
- Il nome di un file manifesto di distribuzione deve terminare con il *VSTO* estensione. Anche se è uno standard [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifesto della distribuzione, l'estensione differisce per abilitare gli strumenti Visual Studio per Office runtime di gestire il file.  
+ Il nome di un file manifesto di distribuzione deve terminare con il *VSTO* estensione. Anche se è uno standard [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifesto della distribuzione, l'estensione è diverso per consentire agli strumenti Visual Studio per Office runtime gestire il file.  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente viene illustrato un manifesto di distribuzione per un Visual Studio Tools per la soluzione Office.  
+ Esempio di codice seguente illustra un manifesto di distribuzione per un Visual Studio Tools per la soluzione Office.  
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  

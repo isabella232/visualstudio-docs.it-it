@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671093"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648907"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure guidate di sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure guidate di sviluppo descritte in questo articolo.   Questo contribuisce a garantire:
@@ -28,13 +28,13 @@ ms.locfileid: "50671093"
 -  Minore complessità di distribuzione componente aggiuntivo per gli utenti e amministratori IT.
 -  Non si verificano errori di installazione che di esecuzione imprevisti del componente aggiuntivo.
 
->Nota: Tramite il [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare COM, VSTO o VBA componente aggiuntivo per il Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti il Windows Store o di Office Store. 
+>Nota: Usando il [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare COM, VSTO o VBA componente aggiuntivo per il Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti il Windows Store o di Office Store. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Non selezionare durante l'installazione per Office  
  Non è consigliabile che il componente aggiuntivo rileva se Office viene installato durante il processo di installazione del componente aggiuntivo. Se non è installato Office, è possibile installare il componente aggiuntivo e l'utente sarà in grado di accedere, dopo l'installazione di Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Usare tipi di interoperabilità incorporati (NoPIA)  
-Se la soluzione viene utilizzato .NET 4.0 o versione successiva, usare tipi di interoperabilità incorporati (NoPIA) invece che a seconda di Office primario Interop Assembly (PIA) redistributable. Tramite l'incorporamento dei tipi riduce le dimensioni dell'installazione della soluzione e assicura la compatibilità futura. Office 2010 è stata l'ultima versione di Office forniti assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [procedura dettagliata: incorporamento delle informazioni da assembly di Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
+Se la soluzione viene utilizzato .NET 4.0 o versione successiva, usare tipi di interoperabilità incorporati (NoPIA) invece che a seconda di Office primario Interop Assembly (PIA) redistributable. Tramite l'incorporamento dei tipi riduce le dimensioni dell'installazione della soluzione e assicura la compatibilità futura. Office 2010 è stata l'ultima versione di Office forniti assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [Procedura dettagliata: Incorporamento di informazioni sui tipi da assembly di Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
 
 Se la soluzione Usa una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'uso di .NET 4.0 o versione successiva. Uso di .NET 4.0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
   

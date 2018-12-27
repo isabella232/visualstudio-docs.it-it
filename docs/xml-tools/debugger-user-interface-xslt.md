@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561918"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
@@ -92,15 +92,15 @@ Per altre informazioni, vedere la [riferimento all'interfaccia utente di debug](
 
 -   Non sono consentite funzioni definite dall'utente.
 
-Per altre informazioni, vedere [procedura: valutare un'espressione XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Per altre informazioni, vedere [Procedura: Valutare un'espressione XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Disassembly (finestra)
  Nella finestra Disassembly viene visualizzato il codice di assembly generato dal compilatore XSLT. Questa finestra può essere usata nello stesso modo in cui si usano tutte le altre finestre Disassembly di Visual Studio.
 
- Per altre informazioni, [procedura: utilizzare la finestra disassembly](../debugger/how-to-use-the-disassembly-window.md).
+ Per altre informazioni, [come: Utilizzare la finestra disassembly](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)
-- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)
+- [Presentazione del debugger](../debugger/debugger-feature-tour.md)   
 - [Esaminare le variabili nelle finestre Auto e variabili locali in Visual Studio](../debugger/autos-and-locals-windows.md)

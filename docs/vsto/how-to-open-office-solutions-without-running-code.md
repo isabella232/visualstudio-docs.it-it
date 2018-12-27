@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: soluzioni Open Office senza eseguire codice'
+title: 'Procedura: Aprire soluzioni Office senza eseguire codice'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254988"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646906"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Procedura: soluzioni Open Office senza eseguire codice
+# <a name="how-to-open-office-solutions-without-running-code"></a>Procedura: Aprire soluzioni Office senza eseguire codice
   Una soluzione di Microsoft Office creata con le estensioni di codice gestito viene eseguito anche se l'impostazione di sicurezza nell'applicazione Office dell'utente finale è impostato sul livello più alto. Questo avviene perché la protezione di codice degli assembly .NET è gestita da Microsoft .NET Framework, non da Microsoft Office.  
   
  Tuttavia, esistono volte quando si potrebbe desiderare di aprire un documento senza eseguire il codice. Ad esempio, il codice eseguito all'apertura del documento potrebbe alterare il contenuto, ma si desidera aggiornare l'aspetto il documento prima le modifiche al codice è. Oppure si potrebbe voler inviare il documento con determinate informazioni in esso a un utente e non si desidera il codice per eseguire e possibilmente modificare il contenuto.  

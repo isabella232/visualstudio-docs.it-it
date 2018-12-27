@@ -1,5 +1,5 @@
 ---
-title: 'CA1903: Utilizzare solo API della versione di .NET Framework di destinazione'
+title: "CA1903: Usare l'API solo framework di destinazione"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822813"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738872"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Utilizzare solo API della versione di .NET Framework di destinazione
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usare l'API solo framework di destinazione
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822813"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/D|
 
- Per modificare il framework di destinazione del progetto, vedere [come destinazione una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Per modificare il framework di destinazione del progetto, vedere [come destinazione una versione specifica di .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per rimuovere la dipendenza dal service pack, rimuovere tutti gli utilizzi del nuovo membro o tipo. Se si tratta di una dipendenza intenzionale, eliminare l'avviso o disattivare questa regola.
@@ -69,4 +69,4 @@ ms.locfileid: "49822813"
 ## <a name="see-also"></a>Vedere anche
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Sviluppo per una versione specifica di .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

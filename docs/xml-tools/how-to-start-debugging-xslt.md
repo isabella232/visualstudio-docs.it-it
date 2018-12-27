@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: avvio del debug XSLT'
+title: 'Procedura: del debug di XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178348"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561866"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Procedura: avvio del debug XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procedura: Avvio del debug XSLT
 
 Il debugger XSLT può essere usato per eseguire il debug di un foglio di stile o di un'applicazione XSLT. Durante il debug è possibile eseguire il codice una riga alla volta eseguendo le istruzioni, ignorandole o eseguendole al di fuori del codice. I comandi per usare la funzionalità di esecuzione del codice riga per riga sono uguali a quelli del debugger XSLT e degli altri debugger di Visual Studio. Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visualizzazione del documento di input e dell'output XSLT.
 
@@ -93,5 +93,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)
+- [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Presentazione del debugger](../debugger/debugger-feature-tour.md)   

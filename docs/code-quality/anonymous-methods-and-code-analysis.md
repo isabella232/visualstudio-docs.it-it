@@ -1,5 +1,5 @@
 ---
-title: Metodi anonimi e analisi del codice
+title: Avvisi dell'analisi del codice di metodo anonimo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -9,44 +9,48 @@ helpviewer_keywords:
 - code analysis, anonymous methods
 - anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
+dev_langs:
+- CSharp
+- VB
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e069976badeffbce04b2f245277426441d3df2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f8bfbf6100eed54589e4ea17a88807f9dd3cca2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31892703"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739400"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Metodi anonimi e analisi del codice
-Un *metodo anonimo* è un metodo che non ha nome. Metodi anonimi vengono utilizzati principalmente per passare un blocco di codice come un parametro del delegato.
 
- Questo argomento illustra la modalità di gestione di avvisi e la metrica che sono associata ai metodi anonimi analisi del codice.
+Un' *metodo anonimo* è un metodo che non ha nome. Metodi anonimi vengono spesso usati per passare un blocco di codice come un parametro del delegato. Questo articolo illustra come l'analisi del codice gestisce gli avvisi e metriche per i metodi anonimi.
 
 ## <a name="anonymous-methods-declared-in-a-member"></a>Metodi anonimi dichiarati In un membro
- Gli avvisi e le metriche per un metodo anonimo che viene dichiarato in un membro, ad esempio un metodo o una funzione di accesso, sono associate al membro che dichiara il metodo. Non sono associate con il membro che chiama il metodo.
 
- Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione di **anonymousMethod** deve essere generato in base **Method1** e non **Method2**.
+Gli avvisi e metriche per un metodo anonimo che viene dichiarato in un membro, ad esempio un metodo o una funzione di accesso, associati con il membro che dichiara il metodo. Non sono associati al membro che chiama il metodo.
+
+Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione della **anonymousMethod** deve essere generato in base **Method1** e non **Method2**.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
 
-      Delegate Function ADelegate(ByVal value As Integer) As Boolean
 Class AClass
-
     Sub Method1()
         Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5
         Method2(anonymousMethod)
-    End SubSub Method2(ByVal anonymousMethod As ADelegate)
+    End Sub
+    Sub Method2(ByVal anonymousMethod As ADelegate)
         anonymousMethod(10)
-    End SubEnd Class
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     void Method1()
@@ -66,25 +70,27 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Metodi anonimi inline
- Gli avvisi e le metriche per un metodo anonimo che è dichiarato come un'assegnazione inline a un campo sono associate al costruttore. Se il campo viene dichiarato come `static` (`Shared` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), avvisi e le metriche vengono associati al costruttore di classe; in caso contrario, sono associate con il costruttore di istanza.
 
- Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione di **anonymousMethod1** verrà generato in base al costruttore predefinito generato in modo implicito di **classe**. Mentre quelli rilevati **anonymousMethod2** verranno applicate in base al costruttore di classe generato in modo implicito.
+Gli avvisi e metriche per un metodo anonimo che viene dichiarato come un'assegnazione di inline a un campo sono associate al costruttore. Se il campo viene dichiarato come `static` (`Shared` in Visual Basic), le metriche e avvisi associati con il costruttore della classe. In caso contrario, sono associate con il costruttore di istanza.
+
+Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione della **anonymousMethod1** verrà generato in base al costruttore predefinito generato in modo implicito dei **classe**. Gli avvisi che si trovano nella **anonymousMethod2** verranno applicate in base al costruttore di classe generato in modo implicito.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
+Class AClass
+    Dim anonymousMethod1 As ADelegate = Function(ByVal value As Integer) value > 5
+    Shared anonymousMethod2 As ADelegate = Function(ByVal value As Integer) value > 5
 
-  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass
-Dim anonymousMethod1 As ADelegate = Function(ByVal value As    Integer) value > 5
-Shared anonymousMethod2 As ADelegate = Function(ByVal value As     Integer) value > 5
-
-Sub Method1()
-    anonymousMethod1(10)
-    anonymousMethod2(10)
-End SubEnd Class
+    Sub Method1()
+        anonymousMethod1(10)
+        anonymousMethod2(10)
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     Delegate anonymousMethod1 = delegate()
@@ -105,27 +111,32 @@ class Class
 }
 ```
 
- Una classe può contenere un metodo anonimo inline che assegna un valore a un campo che contiene più costruttori. In questo caso, gli avvisi e le metriche sono associate a tutti i costruttori, a meno che tale costruttore sia concatenato a un altro costruttore nella stessa classe.
+Una classe può contenere un metodo anonimo inline che assegna un valore a un campo che contiene più costruttori. In questo caso, le metriche e avvisi associati con tutti i costruttori, a meno che tale costruttore concatenato a un altro costruttore nella stessa classe.
 
- Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione di **anonymousMethod** deve essere generato in base **Class (int)** e **Class (String)** ma non in base a **Class ()**.
+Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione della **anonymousMethod** deve essere generato in base **Class (int)** e **Class (String)**, ma non rispetto **Class ()**.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
 
-  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass
+Class AClass
 
-Dim anonymousMethod As ADelegate = Function(ByVal value As Integer)
-value > 5
+    Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5
 
-SubNew()
-    New(CStr(Nothing))
-End SubSub New(ByVal a As Integer)
-End SubSub New(ByVal a As String)
-End SubEnd Class
+    SubNew()
+        New(CStr(Nothing))
+    End Sub
+
+    Sub New(ByVal a As Integer)
+    End Sub
+
+    Sub New(ByVal a As String)
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     Delegate anonymousMethod = delegate()
@@ -147,9 +158,13 @@ class Class
 }
 ```
 
- Anche se ciò potrebbe sembrare imprevisto, questo errore si verifica perché il compilatore genera un metodo univoco per ogni costruttore che non è concatenato a un altro costruttore. A causa di questo comportamento, qualsiasi violazione che si verifica **anonymousMethod** deve essere eliminata separatamente. Ciò significa anche che se è un nuovo costruttore introdotto, gli avvisi che sono stati eliminati in precedenza su **Class (int)** e **Class (String)** devono essere soppressi anche in base al nuovo costruttore.
+Gli avvisi vengono generati per i costruttori perché il compilatore genera un metodo univoco per ogni costruttore che non è collegato a un altro costruttore. A causa di questo comportamento, qualsiasi violazione che si verifica nelle **anonymousMethod** deve essere eliminato separatamente. Ciò significa anche che se un nuovo costruttore viene introdotta, gli avvisi che sono stati eliminati in precedenza contro **Class (int)** e **Class (String)** deve anche essere eliminati in base al nuovo costruttore.
 
- È possibile risolvere questo problema in uno dei due modi. È possibile dichiarare **anonymousMethod** in un costruttore comune che concatenati tutti i costruttori. Oppure è possibile dichiararla in un metodo di inizializzazione che viene chiamato da tutti i costruttori.
+È possibile risolvere questo problema in uno dei due modi:
+
+- Dichiarare **anonymousMethod** in un costruttore comune che concatenati tutti i costruttori.
+- Dichiarare **anonymousMethod** in un metodo di inizializzazione che viene chiamato da tutti i costruttori.
 
 ## <a name="see-also"></a>Vedere anche
- [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+
+- [Analisi della qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)

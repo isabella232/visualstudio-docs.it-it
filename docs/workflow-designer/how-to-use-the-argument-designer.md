@@ -1,5 +1,5 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: usare la finestra di progettazione argomenti'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: Usare la finestra di progettazione argomenti'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755522"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684600"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Procedura: utilizzare la finestra di progettazione argomenti
+# <a name="how-to-use-the-argument-designer"></a>Procedura: Usare la finestra di progettazione argomenti
 
 Rispetto alle versioni precedenti di .NET Framework, la finestra di progettazione argomenti semplifica dati da e verso un'attività del flusso. Viene visualizzata la finestra di progettazione facendo il **argomenti** pulsante nell'angolo inferiore sinistro dell'area di progettazione. La finestra di progettazione contiene un elenco di argomenti che vengono visualizzati in un formato tabulare e possono essere ordinati per ognuna delle intestazioni di colonna, tranne per il **il valore predefinito** colonna. Ogni argomento include un nome, una direzione per la proprietà in/out/in-out, un tipo e un valore di espressione predefinito (se presente). Il nome e il valore di espressione predefinito sono campi di testo modificabili, mentre il tipo e la direzione sono elenchi a discesa. Per altre informazioni, vedere [variabili e argomenti (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
@@ -37,5 +37,5 @@ Rispetto alle versioni precedenti di .NET Framework, la finestra di progettazion
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso di Progettazione flussi di lavoro](../workflow-designer/using-the-workflow-designer.md)
+- [Uso di Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
 - [Variabili e argomenti](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
