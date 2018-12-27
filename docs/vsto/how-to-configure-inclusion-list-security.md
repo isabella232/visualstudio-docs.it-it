@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: configurare la sicurezza di elenco di inclusione'
+title: 'Procedura: Configurare la sicurezza di elenco di inclusione'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255837"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647735"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Procedura: configurare la sicurezza di elenco di inclusione
+# <a name="how-to-configure-inclusion-list-security"></a>Procedura: Configurare la sicurezza di elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali è data la possibilità di installare le soluzioni Office mediante il salvataggio di una decisione di attendibilità per l'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [soluzioni di Office Trust usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -55,7 +55,7 @@ ms.locfileid: "35255837"
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Valore|  
+    |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**Siti non attendibili**|**Disabilitato**|  
@@ -114,7 +114,7 @@ ms.locfileid: "35255837"
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Valore|  
+    |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
     |**Siti non attendibili**|**Disabilitato**|  
     |**Internet**|**AuthenticodeRequired**|  
@@ -171,7 +171,7 @@ ms.locfileid: "35255837"
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Valore|  
+    |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
     |**Siti non attendibili**|**Disabilitato**|  
     |**Internet**|**Disabilitato**|  

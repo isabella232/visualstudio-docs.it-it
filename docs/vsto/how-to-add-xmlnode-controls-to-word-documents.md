@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere controlli XMLNode ai documenti di Word'
+title: 'Procedura: Aggiungere controlli XMLNode ai documenti di Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - XMLNode control, adding to documents
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eccdeab67840873a9b40fe52986bd0d4d0b31767
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 567c9e148b039cbabac08f5e62a953ed8d68b40d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254975"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648713"
 ---
-# <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Procedura: aggiungere controlli XMLNode ai documenti di Word
+# <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Procedura: Aggiungere controlli XMLNode ai documenti di Word
   **Importante** le informazioni definite in questo argomento relative a Microsoft Word sono presentati in modo esclusivo per il vantaggio e uso di singoli utenti e le organizzazioni che si trovano di fuori degli Stati Uniti e dei relativi territori o che usano o lo sviluppo i programmi eseguiti su, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft prima di gennaio del 2010 quando Microsoft ha rimosso un'implementazione di una funzionalità specifica correlato a XML personalizzata da Microsoft Word. Queste informazioni relative a Microsoft Word non possono essere lette o utilizzate dagli singoli individui o organizzazioni negli Stati Uniti o relativo territori che usano o lo sviluppo di programmi in esecuzione in, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft dopo il 10 gennaio 2010 ; tali prodotti non si comporterà come prodotti concessi in licenza prima di tale data o acquistati e concesso in licenza per l'utilizzo di fuori degli Stati Uniti.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Quando si esegue il mapping di un elemento di schema non ripetuto XML a un documento di Microsoft Office Word, Visual Studio aggiunge automaticamente un <xref:Microsoft.Office.Tools.Word.XMLNode> controllo al documento. Per informazioni sul mapping di elementi ripetuti di XML schema, vedere [procedura: aggiungere XMLNodes controlli ai documenti di Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md).  
+ Quando si esegue il mapping di un elemento di schema non ripetuto XML a un documento di Microsoft Office Word, Visual Studio aggiunge automaticamente un <xref:Microsoft.Office.Tools.Word.XMLNode> controllo al documento. Per informazioni sul mapping di elementi ripetuti di XML schema, vedere [come: Aggiungere controlli XMLNodes ai documenti Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Il <xref:Microsoft.Office.Tools.Word.XMLNode> controllo non è disponibile il **della casella degli strumenti** o il **Zdroje dat** finestra che non è possibile creare a livello di codice.  
@@ -40,7 +40,7 @@ ms.locfileid: "35254975"
 1.  Nel documento nella finestra di progettazione di Visual Studio, sulla barra multifunzione, fare clic sui **sviluppatore** scheda.  
   
     > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 2.  Nel **XML** gruppo, fare clic su **Schema**.  
   

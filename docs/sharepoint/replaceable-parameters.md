@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879298"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684691"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
-  Parametri sostituibili, oppure *token*, può essere usato nei file di progetto per fornire valori per elementi di soluzione SharePoint con i valori effettivi non sono noti in fase di progettazione. Si tratta di una funzione simile allo standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token del modello. Per altre informazioni, vedere [parametri di modello](/visualstudio/ide/template-parameters).  
+  Parametri sostituibili, oppure *token*, può essere usato nei file di progetto per fornire valori per elementi di soluzione SharePoint con i valori effettivi non sono noti in fase di progettazione. Si tratta di una funzione simile allo standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token del modello. Per altre informazioni, vedere [parametri di modello](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Formato del token
  Token iniziano e terminano con un simbolo di dollaro ($). Nella distribuzione, eventuali token usati vengono sostituiti con i valori effettivi quando viene incluso nel pacchetto di un progetto in un pacchetto di soluzione SharePoint (*wsp* file). Ad esempio, il token **$SharePoint.Package.Name$** potrebbe essere risolto per la stringa "Test SharePoint Package".  
@@ -111,4 +111,3 @@ ms.locfileid: "49879298"
   
 ## <a name="see-also"></a>Vedere anche
  [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

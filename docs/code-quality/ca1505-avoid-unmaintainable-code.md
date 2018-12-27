@@ -1,5 +1,5 @@
 ---
-title: 'CA1505: evitare codice non manutenibile'
+title: 'CA1505: Evitare codice non gestibile'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7678b0f6b435929c9e53a40062155842e273bbdc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546915"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740312"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: evitare codice non manutenibile
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitare codice non gestibile
 
 |||
 |-|-|
@@ -36,7 +36,7 @@ ms.locfileid: "45546915"
  Un tipo o metodo presenta un valore di indice di gestibilità basso.
 
 ## <a name="rule-description"></a>Descrizione della regola
- L'indice di manutenibilità viene calcolato usando le metriche seguenti: righe di codice, il volume del programma e complessità ciclomatica. Il volume del programma è una misura della difficoltà di comprensione di un tipo o metodo che si basa sul numero di operatori e operandi nel codice. Complessità ciclomatica è una misura della complessità strutturale del tipo o metodo. Altre informazioni sulla metrica del codice in [misurazione della complessità e manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ L'indice di manutenibilità viene calcolato usando le metriche seguenti: righe di codice, il volume del programma e complessità ciclomatica. Il volume del programma è una misura della difficoltà di comprensione di un tipo o metodo che si basa sul numero di operatori e operandi nel codice. Complessità ciclomatica è una misura della complessità strutturale del tipo o metodo. Altre informazioni sulla metrica del codice in [misurazione della complessità e manutenibilità del codice gestito](../code-quality/code-metrics-values.md).
 
  Un indice di manutenibilità basso indica che un tipo o metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione.
 
@@ -49,4 +49,4 @@ ms.locfileid: "45546915"
 ## <a name="see-also"></a>Vedere anche
 
 - [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)
-- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)

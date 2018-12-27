@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672325"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647900"
 ---
 # <a name="debug-office-projects"></a>Eseguire il debug di progetti di Office
   È possibile eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che si usano per altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Le funzionalità del debugger di[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , ad esempio la possibilità di inserire punti di interruzione e visualizzare le variabili nella finestra **Variabili locali** , sono disponibili anche quando si esegue il debug di progetti di Office. Per altre informazioni sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di debug, vedere [eseguire il Debug in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35672325"
  Eseguire il debug di un progetto documento di Word basato sul documento di Word 97-2003 (*/* doc *) formato, è necessario aggiungere la cartella del progetto all'elenco delle cartelle attendibili. Per altre informazioni su come eseguire questa operazione, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Debug disabilitato componenti aggiuntivi  
- Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Un'applicazione di Microsoft Office disabilita i componenti aggiuntivi VSTO per impedire che il codice con errori venga caricato ogni volta che viene avviata l'applicazione. Tuttavia, è anche facile causare un comportamento imprevisto durante il normale debug. Per informazioni su come abilitare nuovamente i componenti aggiuntivi VSTO, vedere [procedura: riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Un'applicazione di Microsoft Office disabilita i componenti aggiuntivi VSTO per impedire che il codice con errori venga caricato ogni volta che viene avviata l'applicazione. Tuttavia, è anche facile causare un comportamento imprevisto durante il normale debug. Per informazioni su come abilitare nuovamente i componenti aggiuntivi VSTO, vedere [come: Riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  Esistono due tipi di disabilitazione usati dalle applicazioni di Microsoft Office per i componenti aggiuntivi VSTO: disabilitazione che causa la chiusura imprevista dell'applicazione e disabilitazione che non causa la chiusura imprevista dell'applicazione.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35672325"
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
- [Procedura: riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Procedura: Riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Può &#39; dispone di &#39; continuare &#39; di fuori di ciclo | Documenti Microsoft
+title: Impossibile utilizzare 'continue' all'esterno del ciclo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633301"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531245"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Può &#39; dispone di &#39; continuare &#39; all'esterno del ciclo
-Si è tentato di utilizzare il **continuare** istruzione all'esterno di un ciclo. Il **continuare** istruzione può essere utilizzata solo all'interno del corpo di un oggetto:  
+# <a name="cant-have-continue-outside-of-loop"></a>Impossibile utilizzare 'continue' all'esterno di un ciclo
+Si è provato a usare il **continuare** istruzione di fuori di un ciclo. Il **continuare** istruzione può essere utilizzata solo all'interno del corpo di un oggetto:  
   
--   `do-while`ciclo,  
+-   `do-while` ciclo,  
   
--   `while`ciclo,  
+-   `while` ciclo,  
   
 -   **per** ciclo,  
   
@@ -40,17 +40,17 @@ Si è tentato di utilizzare il **continuare** istruzione all'esterno di un ciclo
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare che il **continuare** verrà visualizzata l'istruzione all'interno del corpo di un oggetto:  
+-   Assicurarsi che il **continuare** verrà visualizzata l'istruzione all'interno del corpo di un oggetto:  
   
-    -   `do-while`ciclo,  
+    -   `do-while` ciclo,  
   
-    -   `while`ciclo,  
+    -   `while` ciclo,  
   
     -   **per** ciclo,  
   
     -   **per/in** ciclo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Istruzione continue](../../javascript/reference/continue-statement-javascript.md)   
+ [continue (istruzione)](../../javascript/reference/continue-statement-javascript.md)   
  [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)   
  [Risoluzione dei problemi relativi agli script](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

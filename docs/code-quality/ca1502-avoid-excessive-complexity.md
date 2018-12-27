@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819303"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740325"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitare complessità eccessiva
 
@@ -50,7 +50,7 @@ in cui un nodo rappresenta un punto di branch per la logica e una rete perimetra
 
 La regola genera una violazione quando la complessità ciclomatica è più di 25.
 
-Altre informazioni sulla metrica del codice in [misurazione della complessità e manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Altre informazioni sulla metrica del codice in [misurazione della complessità e manutenibilità del codice gestito](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -108,4 +108,4 @@ Gli esempi seguenti illustrano i metodi che hanno complessità ciclomatica diver
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere controlli XMLMappedRange a fogli di lavoro'
+title: 'Procedura: Aggiungere controlli XMLMappedRange a fogli di lavoro'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,25 +11,25 @@ dev_langs:
 helpviewer_keywords:
 - XMLMappedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55b6c83624c3ccb6c28701cd97753ea155e37288
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9d7cc26c0170c2a20e27026ebcbc6d8705d34ce2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263980"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646716"
 ---
-# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procedura: aggiungere controlli XMLMappedRange a fogli di lavoro
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procedura: Aggiungere controlli XMLMappedRange a fogli di lavoro
   Quando si esegue il mapping di un elemento XML a una cella in Microsoft Office Excel, Visual Studio aggiunge automaticamente un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo al foglio di lavoro.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo non è disponibile nel **della casella degli strumenti** o **origini dati** finestra. Inoltre, è possibile creare <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controlli a livello di codice.  
+>  Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo non è disponibile nel **casella degli strumenti** o il **Zdroje dat** finestra. Inoltre, non è possibile creare <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controlla a livello di codice.  
   
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Per aggiungere un controllo XMLMappedRange a un foglio di lavoro  
   
@@ -37,26 +37,26 @@ ms.locfileid: "34263980"
   
 2.  Aprire il foglio di lavoro in cui si desidera aggiungere il controllo.  
   
-3.  Nel **Developer** scheda, fare clic su **origine**.  
+3.  Nel **sviluppatore** scheda, fare clic su **origine**.  
   
     > [!NOTE]  
-    >  Se il **Developer** scheda non è visibile sulla barra multifunzione, è necessario abilitarlo. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppatore nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se il **sviluppatore** scheda non è visibile sulla barra multifunzione, è necessario abilitarla. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-     Il **origine XML** verrà visualizzato il riquadro attività.  
+     Il **origine XML** viene visualizzato il riquadro attività.  
   
-4.  Nel **origine XML** riquadro attività fare clic su **mapping XML**.  
+4.  Nel **origine XML** del riquadro attività, fare clic su **XML Maps**.  
   
-5.  Nel **mapping XML** la finestra di dialogo, fare clic su **Aggiungi**.  
+5.  Nel **XML Maps** della finestra di dialogo fare clic su **Add**.  
   
-     Il **origine XML** viene visualizzata la finestra di dialogo.  
+     Il **origine XML** verrà visualizzata la finestra di dialogo.  
   
-6.  Selezionare uno schema XML dal **origine XML** la finestra di dialogo e fare clic su **aprire**.  
+6.  Selezionare uno schema XML dal **origine XML** finestra di dialogo e fare clic su **Open**.  
   
-     Lo schema viene aggiunto per il **mapping XML** la finestra di dialogo.  
+     Lo schema viene aggiunto per il **esegue il mapping XML** nella finestra di dialogo.  
   
-7.  Nel **mapping XML** la finestra di dialogo, fare clic su **OK**.  
+7.  Nel **XML Maps** finestra di dialogo, fare clic su **OK**.  
   
-8.  Trascinare un elemento di **origine XML** riquadro attività a una cella del foglio di lavoro.  
+8.  Trascinare un elemento dal **origine XML** riquadro attività a una cella del foglio di lavoro.  
   
      Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> viene creato e aggiunto al progetto.  
   
@@ -64,10 +64,10 @@ ms.locfileid: "34263980"
     >  Se si trascina un elemento padre di **origine XML** riquadro attività, un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo viene creato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [XmlMappedRange (controllo)](../vsto/xmlmappedrange-control.md)   
+ [Controllo XmlMappedRange](../vsto/xmlmappedrange-control.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
- [Elementi host e Cenni preliminari sui controlli host](../vsto/host-items-and-host-controls-overview.md)   
+ [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Procedura: mappare schemi a fogli di lavoro all'interno di Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
+ [Procedura: Mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

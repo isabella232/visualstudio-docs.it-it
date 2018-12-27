@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf7c9c5348e7a7c31fa7e1d65b7fa6047d05d565
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755654"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685705"
 ---
 # <a name="workflow-project-templates"></a>Modelli di progetto del flusso di lavoro
 
@@ -72,12 +72,12 @@ Se si sceglie la **libreria di attività** modello, Visual Studio crea una defin
 
 Se si sceglie la **libreria ActivityDesigner** modello, Visual Studio crea una definizione dell'ActivityDesigner in un file di implementazione code-behind e XAML. La finestra di progettazione del flusso di lavoro apre e visualizza l'area di disegno per l'ActivityDesigner. Trascinare Windows Presentation Foundation (WPF) dei controlli **casella degli strumenti** all'area di progettazione per usarli nell'ActivityDesigner personalizzati.
 
-Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [procedura: creare un ActivityDesigner personalizzato](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [come: Creare un ActivityDesigner personalizzato](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
 > Gli ActivityDesigner personalizzati sono utilizzabile per le attività personalizzate e per attività predefinite di .NET Framework.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzare la finestra di progettazione del flusso di lavoro](../workflow-designer/using-the-workflow-designer.md)
+- [Utilizzare la finestra di progettazione del flusso di lavoro](developing-applications-with-the-workflow-designer.md)
 - [Progettazione flussi di lavoro (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

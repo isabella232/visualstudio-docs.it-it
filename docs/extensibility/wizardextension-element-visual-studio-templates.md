@@ -1,10 +1,9 @@
 ---
-title: Elemento WizardExtension (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento WizardExtension (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561149"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelli di Visual Studio)
 Contiene gli elementi di registrazione per la creazione guidata modello di personalizzazione.  
@@ -49,7 +48,7 @@ Contiene gli elementi di registrazione per la creazione guidata modello di perso
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Specifica il nome o un nome sicuro di un assembly nella global assembly cache. Deve essere presente almeno un `Assembly` elemento in un `WizardExtension` elemento.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Specifica il nome o un nome sicuro di un assembly che viene visualizzato nella global assembly cache. Deve essere presente almeno un `Assembly` elemento in un `WizardExtension` elemento.|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Il nome completo della classe che implementa il `IWizard` interfaccia. Deve essere presente almeno un `FullClassName` elemento in un `WizardExtension` elemento.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
@@ -95,4 +94,4 @@ Contiene gli elementi di registrazione per la creazione guidata modello di perso
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

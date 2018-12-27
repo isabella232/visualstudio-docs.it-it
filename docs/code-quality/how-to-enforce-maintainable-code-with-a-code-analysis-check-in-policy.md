@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Applicare codice di facile manutenibilità con criteri di archiviazione dell'analisi del codice"
+title: "Procedura: Imporre codice di facile manutenibilità con criteri di controllo dell'analisi codice"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892091"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739379"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice di facile manutenibilità con criteri di controllo dell'analisi codice
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Imporre codice di facile manutenibilità con criteri di controllo dell'analisi codice
 
 Gli sviluppatori possono usare lo strumento di metrica codice per misurare la complessità e della manutenibilità del codice, ma non è possibile richiamare la metrica del codice come parte di un criterio di controllo. Tuttavia, è possibile abilitare le regole di analisi del codice che consentono di verificare la conformità del codice con standard della metrica del codice e applicare le regole tramite i criteri di archiviazione. Per altre informazioni sulla metrica del codice, vedere [i valori delle metriche del codice](../code-quality/code-metrics-values.md).
 
@@ -47,13 +47,13 @@ Gli amministratori di controllo della versione di Team Foundation possono aggiun
 
 2. Selezionare le caselle di controllo per le regole seguenti:
 
-   - Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: più di 5 livelli di avviso
+   - Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: Più di 5 livelli di avviso
 
-   - Complessità: **AvoidExcessiveComplexity CA1502** -soglia: avviso in più di 25
+   - Complessità: **CA1502 AvoidExcessiveComplexity** -soglia: Avviso in più di 25
 
-   - Indice di manutenibilità: **CA1505 AvoidUnmaintainableCode** -soglia: avviso per meno di 20
+   - Indice di manutenibilità: **CA1505 AvoidUnmaintainableCode** -soglia: Avviso per meno di 20
 
-   - Accoppiamento di classe: **AvoidExcessiveClassCoupling CA1506** -soglia: avviso più di 80 per una classe e più di 30 per un metodo
+   - Accoppiamento di classe: **CA1506 AvoidExcessiveClassCoupling** -soglia: Avviso più di 80 per una classe e più di 30 per un metodo
 
      Inoltre, se si desidera che una violazione delle regole per impedire una compilazione corretta, selezionare la **trattare avvisi come errori** casella di controllo accanto alla descrizione della regola.
 
@@ -62,4 +62,4 @@ Gli amministratori di controllo della versione di Team Foundation possono aggiun
 ## <a name="see-also"></a>Vedere anche
 
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)
-- [Creazione e utilizzo di criteri di controllo dell'analisi del codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Creazione e utilizzo di criteri di controllo dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

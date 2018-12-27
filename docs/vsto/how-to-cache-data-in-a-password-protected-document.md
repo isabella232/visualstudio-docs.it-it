@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: memorizzare nella Cache i dati in un documento protetto da password'
+title: 'Procedura: Dati della cache in un documento protetto da password'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255343"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647291"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: memorizzare nella Cache i dati in un documento protetto da password
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: Dati della cache in un documento protetto da password
   Se si aggiungono dati alla cache dei dati in un documento o cartella di lavoro è protetto con una password, è possibile che le modifiche ai dati memorizzati nella cache non vengono salvate automaticamente. È possibile salvare le modifiche apportate ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -78,7 +78,7 @@ ms.locfileid: "35255343"
   
 ## <a name="see-also"></a>Vedere anche  
  [Dati della cache](../vsto/caching-data.md)   
- [Procedura: memorizzare nella Cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Procedura: memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+ [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Procedura: Memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

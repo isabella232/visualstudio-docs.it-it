@@ -22,17 +22,17 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], about VBA and document-level customizations
 - managed code [Office development in Visual Studio], Visual Basic for Applications and
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878076"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441717"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinazione di VBA e le personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.  
@@ -118,7 +118,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
   3.  Impostare la proprietà **ReferenceAssemblyFromVbaProject** di una qualsiasi classe di elementi host nel progetto su **True**. In questo modo, la libreria dei tipi dell'assembly di personalizzazione viene incorporata nell'assembly e viene aggiunto un riferimento alla libreria dei tipi al progetto VBA nel documento.  
   
-  Per istruzioni dettagliate, vedere [procedura: esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) e [procedura: esporre il codice a VBA in un Visual C#&#35; progetto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+  Per istruzioni dettagliate, vedere [come: Esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) e [come: Esporre il codice a VBA in un Visual C&#35; project](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
   Le proprietà **EnableVbaCallers** e **ReferenceAssemblyFromVbaProject** sono disponibili nella finestra **Proprietà** solo in fase di progettazione; non possono essere usate in fase di esecuzione. Per visualizzare le proprietà, aprire la finestra di progettazione per un elemento host in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni sulle attività specifiche eseguite da Visual Studio quando si impostano queste proprietà, vedere [attività eseguite dalle proprietà degli elementi host](#PropertyTasks).  
   
@@ -253,10 +253,10 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Dopo avere rinominato l'assembly di personalizzazione, il codice VBA che effettua chiamate nell'assembly di personalizzazione smette di funzionare.|Se si modifica il nome dell'assembly di personalizzazione dopo averlo esposto al codice VBA, il collegamento tra il progetto VBA nel documento e l'assembly di personalizzazione viene interrotto. Per correggere questo problema, impostare la proprietà **ReferenceFromVbaAssembly** nel progetto su **False** e poi di nuovo su **True**, quindi sostituire qualsiasi riferimento al nome dell'assembly precedente nel codice VBA con il nome del nuovo assembly.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Procedura: esporre il codice a VBA in un Visual C&#35; progetto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Procedura dettagliata: Chiamata di codice da VBA in un progetto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Procedura dettagliata: Chiamata di codice da VBA in un Visual C&#35; progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Procedura: Esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Procedura: Esporre il codice a VBA in un Visual C&#35; progetto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Procedura dettagliata: Chiamare il codice da VBA in un progetto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [Procedura dettagliata: Chiamare il codice da VBA in un Visual C&#35; progetto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Soluzioni VBA e Office in Visual Studio rispetto](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)  

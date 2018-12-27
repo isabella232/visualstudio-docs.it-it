@@ -1,10 +1,9 @@
 ---
-title: Elemento SupportsCodeSeparation (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento SupportsCodeSeparation (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561382"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelli di Visual Studio)
-Specifica o meno il **inserire il codice in file separato** casella di controllo è abilitata nel **Aggiungi nuovo elemento** la finestra di dialogo.  
+Specifica o meno il **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,22 +48,22 @@ Specifica o meno il **inserire il codice in file separato** casella di controllo
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce la modalità di visualizzazione per il **nuovo progetto** o **nuovo elemento** la finestra di dialogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce la modalità di visualizzazione per il **nuovo progetto** o il **nuovo elemento** nella finestra di dialogo.|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, a indicare o meno il **inserire il codice in file separato** casella di controllo è abilitata nel **Aggiungi nuovo elemento** la finestra di dialogo.  
+ Il testo deve essere `true` o `false`, che indica o meno la **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
 ## <a name="remarks"></a>Note  
  `SupportsCodeSeparation` è un elemento facoltativo. Il valore predefinito è `false`.  
   
- Il `SupportsCodeSeparation` elemento è disponibile solo per modelli di elementi di Web.  
+ Il `SupportsCodeSeparation` elemento è disponibile solo per i modelli di elemento di Web.  
   
- Separazione del codice o il modello di pagina code-behind, consente di mantenere il markup in un file e il codice di programmazione in un altro file. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e altri linguaggi .NET utilizzano questo modello.  
+ Separazione del codice o il modello di pagina code-behind, consente di mantenere il markup in un file e il codice di programmazione in un altro file. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e altri linguaggi .NET usano questo modello.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente specifica per visualizzare il **inserire il codice in file separato** opzione.  
+ L'esempio seguente specifica per visualizzare il **Inserisci codice in file separati** opzione.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

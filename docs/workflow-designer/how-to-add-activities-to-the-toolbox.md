@@ -1,5 +1,5 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: aggiungere attività alla casella degli strumenti'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: Aggiungere attività nella casella degli strumenti'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118213"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684561"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
+# <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: Aggiungere attività nella casella degli strumenti
 
 Le attività possono essere aggiunte per il **casella degli strumenti** nella soluzione in diversi modi. È possibile aggiungerli dall'interno il progetto corrente oppure fare riferimento a essi da un progetto diverso o da un assembly diverso.
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Per aggiungere un'attività dall'interno del progetto corrente
 
-1.  Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. Per altre informazioni sull'aggiunta di una nuova attività personalizzata al progetto, vedere [procedura: aggiungere un nuovo elemento a un progetto di flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1.  Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. Per altre informazioni sull'aggiunta di una nuova attività personalizzata al progetto, vedere [come: Aggiungere un nuovo elemento a un progetto di flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2.  Aggiungere la logica personalizzata all'attività.
 
@@ -62,4 +62,4 @@ Le attività possono essere aggiunte per il **casella degli strumenti** nella so
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso di Progettazione flussi di lavoro](../workflow-designer/using-the-workflow-designer.md)
+- [Uso di Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)

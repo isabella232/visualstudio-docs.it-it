@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248137"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739267"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Creare un'estensione con un comando di menu
 Questa procedura dettagliata illustra come creare un'estensione con un comando di menu che consente di avviare Blocco note.  
@@ -126,4 +126,4 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
   
 5. Aggiungere pagine delle proprietà e le opzioni e impostazioni utente per l'estensione: [Estendere le proprietà e la finestra delle proprietà](../extensibility/extending-properties-and-the-property-window.md) e [estendere Ooptions e impostazioni utente](../extensibility/extending-user-settings-and-options.md)  
   
-   Altri tipi di estensioni richiedono un po' più operazioni, ad esempio creare un nuovo tipo di progetto ([estendere i progetti](../extensibility/extending-projects.md)), creare un nuovo tipo di editor ([per creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md)), o l'implementazione di estensione in una shell isolata: [Visual Studio isolata shell](../extensibility/visual-studio-isolated-shell.md)
+   Altri tipi di estensioni richiedono un po' più operazioni, ad esempio creare un nuovo tipo di progetto ([estendere i progetti](../extensibility/extending-projects.md)), creare un nuovo tipo di editor ([per creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md)), o l'implementazione di estensione in una shell isolata: [Visual Studio isolata shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

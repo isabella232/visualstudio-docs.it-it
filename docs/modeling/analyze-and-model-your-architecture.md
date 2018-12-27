@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348878"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740445"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizzare e modellare l'architettura
 
@@ -49,13 +49,13 @@ Assicurarsi che l'app soddisfi i requisiti dell'architettura usando l'architettu
 
 * Creare modelli con diversi livelli di dettaglio in tutto il ciclo di vita dell'applicazione nel contesto del processo di sviluppo.
 
-Visualizzare [Scenario: modificare la progettazione mediante visualizzazione e modellazione](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
+Vedere [Scenario: Modificare la progettazione mediante visualizzazione e modellazione](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
 ## <a name="to"></a>A
 
 |||
 |-|-|
-|**Visualizzare il codice**:<br /><br /> -Vedere organizzazione e le relazioni nel codice creando mappe codici. Visualizzare le dipendenze tra assembly, spazi dei nomi, classi, metodi e così via.<br />-Vedere la struttura di classi e membri per un progetto specifico tramite la creazione di diagrammi classi dal codice.<br />-Trovare conflitti tra il codice e la progettazione creando diagrammi delle dipendenze per convalidare il codice.|-   [Visualizzare il codice](../modeling/visualize-code.md)<br />-   [Uso di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Comprendere la progettazione dal codice con le mappe codice di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Visualizzare il codice**:<br /><br /> -Vedere organizzazione e le relazioni nel codice creando mappe codici. Visualizzare le dipendenze tra assembly, spazi dei nomi, classi, metodi e così via.<br />-Vedere la struttura di classi e membri per un progetto specifico tramite la creazione di diagrammi classi dal codice.<br />-Trovare conflitti tra il codice e la progettazione creando diagrammi delle dipendenze per convalidare il codice.|-   [Visualizzare il codice](../modeling/visualize-code.md)<br />-   [Uso di classi e altri tipi (Progettazione classi)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Video: Comprendere la progettazione dal codice con le mappe codice di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Definire l'architettura**:<br /><br /> : Consente di definire e applicare vincoli sulle dipendenze tra i componenti del codice creando diagrammi delle dipendenze.|-   [Video: Convalidare le dipendenze dell'architettura con Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Convalidare il sistema con i requisiti e la progettazione desiderata**<br /><br /> -Verificare le dipendenze del codice con diagrammi delle dipendenze che descrivono l'architettura desiderata e impedire le modifiche che potrebbe essere in conflitto con la progettazione.|-   [Video: Convalidare le dipendenze dell'architettura con Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Personalizzare modelli e diagrammi**:<br /><br /> -Creare i proprio domain-specific Language.|-   [Modeling SDK per Visual Studio - Domain-Specific Language](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -90,7 +90,7 @@ I diagrammi delle dipendenze consentono di definire la struttura di un'applicazi
 **Vedere:**
 
 -   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+-   [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
 -   [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Linguaggio specifico di dominio (DSL)

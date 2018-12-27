@@ -2,9 +2,8 @@
 title: Elemento ProjectTemplateLink (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495973"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561499"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelli di Visual Studio)
 Specifica il percorso per il *vstemplate* file di un progetto in un modello multiprogetto.  
@@ -30,7 +29,7 @@ Specifica il percorso per il *vstemplate* file di un progetto in un modello mult
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
-oppure  
+-oppure-  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
@@ -71,7 +70,7 @@ oppure
  Questo testo specifica il percorso per il *vstemplate* file del modello.  
   
 ## <a name="remarks"></a>Note  
- I modelli multiprogetto fungono da contenitori per due o più progetti. Il `ProjectTemplateLink` elemento viene usato per specificare il percorso del *vstemplate* file per uno dei progetti nel modello. Il *vstemplate* file di un modello multiprogetto contiene un `ProjectTemplateLink` (elemento) per ogni progetto del modello. Per altre informazioni sui modelli multiprogetto, vedere [procedura: creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md).  
+ I modelli multiprogetto fungono da contenitori per due o più progetti. Il `ProjectTemplateLink` elemento viene usato per specificare il percorso del *vstemplate* file per uno dei progetti nel modello. Il *vstemplate* file di un modello multiprogetto contiene un `ProjectTemplateLink` (elemento) per ogni progetto del modello. Per altre informazioni sui modelli multiprogetto, vedere [come: Creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Esempio  
  Questo esempio mostra una radice multiprogetto semplice *vstemplate* file. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` nell'elemento `ProjectTemplateLink` imposta il nome per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da assegnare a questo progetto. Se il `ProjectName` attributo non esiste, il nome del *vstemplate* file viene usato come nome del progetto.  
@@ -101,4 +100,4 @@ oppure
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creare modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
- [Procedura: creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md)
+ [Procedura: Creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md)
