@@ -1,5 +1,5 @@
 ---
-title: Possono&#39;ha &#39;break&#39; all'esterno del ciclo | Microsoft Docs
+title: Impossibile utilizzare 'break' all'esterno del ciclo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb23f1bc3de087515cad9ba4910cf2ebaf640353
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928555"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802407"
 ---
-# <a name="can39t-have-39break39-outside-of-loop"></a>Possono&#39;ha &#39;break&#39; all'esterno del ciclo
+# <a name="cant-have-break-outside-of-loop"></a>Impossibile utilizzare 'break' all'esterno di un ciclo
 Si è provato a usare il **interruzione** (parola chiave) all'esterno di un ciclo. Il **INTERR** parola chiave viene usata per interrompere un ciclo o `switch` istruzione. Deve essere incorporato nel corpo di un ciclo o `switch` istruzione. Tuttavia, un **etichetta** possibile seguire la parola chiave break.  
   
 ```  

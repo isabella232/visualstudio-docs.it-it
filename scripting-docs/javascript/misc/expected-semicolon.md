@@ -1,5 +1,5 @@
 ---
-title: Previsto &#39; &#39; | Documenti Microsoft
+title: Previsto ';' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54fbd2eb72f6e6401eca85f61b0651a3ead4900
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632791"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804338"
 ---
-# <a name="expected-3939"></a>Previsto &#39; &#39;
-Si è tentato di inserire più di un'istruzione in una riga non separarli con punti e virgola. Per terminare le istruzioni viene utilizzato i punti e virgola. Sebbene sia possibile inserire più istruzioni in una singola riga, ciascuna di esse deve essere delimitato dal successivo con un punto e virgola.  
+# <a name="expected-"></a>Previsto ';'
+Si è tentato di inserire più di un'istruzione su una riga non è necessario separarli con punti e virgola. Un punto e virgola viene usato per terminare le istruzioni. Sebbene sia possibile inserire molte istruzioni in una singola riga, ognuno di essi deve essere delimitato dal successivo con un punto e virgola.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Contrassegnare la fine di ogni istruzione con un punto e virgola.  
+-   Contrassegnare la fine di ogni istruzione SELECT con un punto e virgola.  
   
--   Verificare che le chiamate di funzione di utilizzare le parentesi in modo corretto.  
+-   Assicurarsi che le chiamate di funzione usano le parentesi in modo corretto.  
   
--   Assicurarsi che non si è stato omesso i punti e virgola nell'intestazione di un **per** ciclo.  
+-   Assicurarsi che non omesso di un punto e virgola all'interno dell'intestazione di una **per** ciclo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrittura di codice JavaScript](../../javascript/writing-javascript-code.md)

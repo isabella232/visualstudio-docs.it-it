@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295585"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804286"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Eseguire il debug di un'applicazione SharePoint tramite IntelliTrace
 
 Con IntelliTrace, è più facilmente possibile eseguire il debug di soluzioni di SharePoint. I debugger tradizionali offrono solo uno snapshot di una soluzione nel momento attuale. Tuttavia, è possibile utilizzare IntelliTrace per esaminare eventi passati che si sono verificati all'interno della soluzione e il contesto in cui si è verificato e passare al codice.
 
  Questa procedura dettagliata illustra come eseguire il debug di un progetto SharePoint 2010 o SharePoint 2013 in Visual Studio usando Microsoft Monitoring Agent per raccogliere dati IntelliTrace dalle applicazioni distribuite. Per analizzare i dati, è necessario usare Visual Studio Enterprise. Questo progetto include un ricevitore di funzionalità che, quando questa caratteristica è attivata, aggiunge un'attività all'elenco di attività e un annuncio all'elenco degli annunci. Quando questa caratteristica è disattivata, l'attività viene contrassegnata come completata e un annuncio secondo viene aggiunto all'elenco degli annunci. Tuttavia, la procedura contiene un errore di logico che impedisce che il progetto in esecuzione correttamente. Con IntelliTrace, si sarà individuare e correggere l'errore.
 
- **Si applica a:** le informazioni contenute in questo argomento si applicano alle soluzioni SharePoint 2010 e SharePoint 2013 sono state create in Visual Studio.
+ **Si applica a:** Le informazioni contenute in questo argomento si applicano alle soluzioni SharePoint 2010 e SharePoint 2013 sono state create in Visual Studio.
 
  Questa procedura dettagliata illustra le attività seguenti:
 
@@ -206,7 +206,7 @@ Successivamente, aggiungere codice a due metodi nel ricevitore di funzionalità:
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ Ora che il codice viene aggiunto al ricevitore di funzionalità e l'agente di ra
 
 2. Visualizzare il contenuto degli elenchi di attività e gli annunci.
 
-     L'elenco di annunci deve avere un nuovo annuncio denominato **funzionalità attivata: IntelliTraceTest_Feature1**, e l'elenco attività deve avere una nuova attività denominata **Disattiva funzionalità: IntelliTraceTest_ Feature1**. Se uno di questi elementi è mancante, verificare se la funzionalità è attivata. Se non è attivato, attivarlo.
+     L'elenco di annunci deve avere un nuovo annuncio denominato **funzionalità attivata: IntelliTraceTest_Feature1**, e l'elenco attività deve avere una nuova attività denominata **Disattiva funzionalità: IntelliTraceTest_Feature1**. Se uno di questi elementi è mancante, verificare se la funzionalità è attivata. Se non è attivato, attivarlo.
 
 3. Disattivare la funzionalità attenendosi alla procedura seguente:
 
@@ -280,9 +280,9 @@ Ora che il codice viene aggiunto al ricevitore di funzionalità e l'agente di ra
 Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è possibile eseguire il debug di soluzioni di SharePoint utilizzando i dati più specifico rispetto alle informazioni generiche che IntelliTrace restituisce. L'agente funziona all'esterno di Visual Studio usando i cmdlet di PowerShell per acquisire le informazioni di debug durante l'esecuzione di soluzioni di SharePoint.
 
 > [!NOTE]
-> Le informazioni di configurazione in questa sezione sono specifiche per questo esempio. Per altre informazioni sulle altre opzioni di configurazione, vedere [usando l'agente di raccolta autonomo IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> Le informazioni di configurazione in questa sezione sono specifiche per questo esempio. Per altre informazioni sulle altre opzioni di configurazione, vedere [usando l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-1. Nel computer che esegue SharePoint, [configurare Microsoft Monitoring Agent e iniziare a monitorare la tua soluzione](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. Nel computer che esegue SharePoint, [configurare Microsoft Monitoring Agent e iniziare a monitorare la tua soluzione](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Disattivare la funzionalità:
 
@@ -310,7 +310,7 @@ A questo punto è possibile visualizzare il file di log di IntelliTrace in Visua
 
 2. Scegliere il **Debug eccezione** pulsante.
 
-     Se richiesto, caricare i file di simboli. Nel **IntelliTrace** finestra, l'eccezione è evidenziato come "generata: si è verificato un errore grave!".
+     Se richiesto, caricare i file di simboli. Nel **IntelliTrace** finestra, l'eccezione è evidenziato come "generata: Si è verificato un errore grave! ".
 
      Nella finestra di IntelliTrace, scegliere l'eccezione per visualizzare il codice che non è riuscita.
 
@@ -334,6 +334,6 @@ A questo punto è possibile visualizzare il file di log di IntelliTrace in Visua
 
 ## <a name="see-also"></a>Vedere anche
 
-[Verificare ed eseguire il debug del codice di SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Procedura dettagliata: Verifica SharePoint codice tramite Unit test](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Verificare ed eseguire il debug del codice di SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [Procedura dettagliata: Verificare SharePoint codice tramite Unit test](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

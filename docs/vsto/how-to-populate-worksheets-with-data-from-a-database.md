@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e63a95635c57c3fa344d7d9197436a2e0e744621
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 53267cdd429b9a4d8848026e460776359b55c023
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648191"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802874"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedura: Popolare fogli di lavoro con i dati da un database
 
@@ -56,7 +56,7 @@ Uno dei seguenti controlli viene creato nel foglio di lavoro:
 
 Oltre al controllo, gli oggetti relativi ai dati seguenti vengono aggiunti automaticamente al progetto:
 
--   Un set di dati tipizzato che incapsula le tabelle dati a cui ci si è connessi nel database. Per altre informazioni, vedere [strumenti di set di dati in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+-   Un set di dati tipizzato che incapsula le tabelle dati a cui ci si è connessi nel database. Per altre informazioni, vedere [strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 -   Un oggetto <xref:System.Windows.Forms.BindingSource> che connette il controllo al set di dati tipizzato. Per altre informazioni, vedere [Cenni preliminari sul componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 

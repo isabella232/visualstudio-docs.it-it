@@ -18,105 +18,104 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f28da1a564196833adff530c3c7d31eb9ea9bb4e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e6e6ffe216d800a58a34696c8577ff08adc94b0f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648652"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804429"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punto di ingresso&gt; elemento (sviluppo per Office in Visual Studio)
-  Ogni elemento `entryPoint` dello spazio dei nomi `vstav3` identifica un assembly di personalizzazione che deve essere eseguito quando l'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] è installata.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<entryPoint class>  
-    <assemblyIdentity />  
-</entryPoint>  
-```  
-  
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
- L'elemento `entryPoint` è obbligatorio e si trova nello spazio dei nomi `vstav3` .  
-  
- Ogni elemento `entryPoint` può contenere solo un assembly di personalizzazione. Possono essere definiti più elementi `entryPoint` in un manifesto dell'applicazione.  
-  
- L'elemento `entryPoint` presenta gli attributi seguenti.  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`class`|Obbligatorio. Identifica un assembly di personalizzazione da eseguire. La sintassi per questo attributo è *NamespaceName.ClassName*.|  
-  
- `entryPoint` presenta l'elemento seguente:  
-  
-### <a name="assemblyidentity"></a>assemblyIdentity  
- Obbligatorio. L'elemento `assemblyIdentity` nello spazio dei nomi `vstav3` si riferisce a un elemento `assemblyIdentity` esistente nel manifesto dell'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .  
-  
- Il ruolo del `assemblyIdentity` e relativi attributi sono definiti [ &#60;assemblyIdentity&#62; elemento &#40;applicazione ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
-  
-## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento  
-  
-### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra elementi `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Codice  
-  
-```xml  
-<vstav3:entryPoint   
-  class="ContosoExcelWorkbook.ThisWorkbook">  
-  <assemblyIdentity   
-    name="ContosoExcelWorkbook"   
-    version="1.0.0.0"   
-    language="neutral"   
-    processorArchitecture="msil" />  
-</vstav3:entryPoint>  
-<vstav3:entryPoint   
-  class="ContosoExcelWorkbook.Sheet1">  
-  <assemblyIdentity   
-    name="ContosoExcelWorkbook"   
-    version="1.0.0.0"   
-    language="neutral"   
-    processorArchitecture="msil" />  
-</vstav3:entryPoint>  
-<vstav3:entryPoint   
-  class="ContosoExcelWorkbook.Sheet2">  
-  <assemblyIdentity   
-    name="ContosoExcelWorkbook"   
-    version="1.0.0.0"   
-    language="neutral"   
-    processorArchitecture="msil" />  
-</vstav3:entryPoint>  
-<vstav3:entryPoint   
-  class="ContosoExcelWorkbook.Sheet3">  
-  <assemblyIdentity   
-    name="ContosoExcelWorkbook"   
-    version="1.0.0.0"   
-    language="neutral"   
-    processorArchitecture="msil" />  
-</vstav3:entryPoint>  
-```  
-  
-## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO  
-  
-### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra un elemento `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Codice  
-  
+  Ogni elemento `entryPoint` dello spazio dei nomi `vstav3` identifica un assembly di personalizzazione che deve essere eseguito quando l'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] è installata.
+
+## <a name="syntax"></a>Sintassi
+
 ```xml
-<vstav3:entryPoint   
-  class="ContosoOutlookAddIn.ThisAddIn">  
-  <assemblyIdentity   
-    name="ContosoOutlookAddIn"   
-    version="1.0.0.0"   
-    language="neutral"   
-    processorArchitecture="msil" />  
-</vstav3:entryPoint>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+<entryPoint class>
+    <assemblyIdentity />
+</entryPoint>
+```
+
+## <a name="elements-and-attributes"></a>Gli elementi e attributi
+ L'elemento `entryPoint` è obbligatorio e si trova nello spazio dei nomi `vstav3` .
+
+ Ogni elemento `entryPoint` può contenere solo un assembly di personalizzazione. Possono essere definiti più elementi `entryPoint` in un manifesto dell'applicazione.
+
+ L'elemento `entryPoint` presenta gli attributi seguenti.
+
+|Attributo|Descrizione|
+|---------------|-----------------|
+|`class`|Obbligatorio. Identifica un assembly di personalizzazione da eseguire. La sintassi per questo attributo è *NamespaceName.ClassName*.|
+
+ `entryPoint` presenta l'elemento seguente:
+
+### <a name="assemblyidentity"></a>assemblyIdentity
+ Obbligatorio. L'elemento `assemblyIdentity` nello spazio dei nomi `vstav3` si riferisce a un elemento `assemblyIdentity` esistente nel manifesto dell'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
+
+ Il ruolo del `assemblyIdentity` e relativi attributi sono definiti [ &#60;assemblyIdentity&#62; elemento &#40;applicazione ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+
+## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
+
+### <a name="description"></a>Descrizione
+ L'esempio di codice seguente illustra elementi `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Codice
+
+```xml
+<vstav3:entryPoint
+  class="ContosoExcelWorkbook.ThisWorkbook">
+  <assemblyIdentity
+    name="ContosoExcelWorkbook"
+    version="1.0.0.0"
+    language="neutral"
+    processorArchitecture="msil" />
+</vstav3:entryPoint>
+<vstav3:entryPoint
+  class="ContosoExcelWorkbook.Sheet1">
+  <assemblyIdentity
+    name="ContosoExcelWorkbook"
+    version="1.0.0.0"
+    language="neutral"
+    processorArchitecture="msil" />
+</vstav3:entryPoint>
+<vstav3:entryPoint
+  class="ContosoExcelWorkbook.Sheet2">
+  <assemblyIdentity
+    name="ContosoExcelWorkbook"
+    version="1.0.0.0"
+    language="neutral"
+    processorArchitecture="msil" />
+</vstav3:entryPoint>
+<vstav3:entryPoint
+  class="ContosoExcelWorkbook.Sheet3">
+  <assemblyIdentity
+    name="ContosoExcelWorkbook"
+    version="1.0.0.0"
+    language="neutral"
+    processorArchitecture="msil" />
+</vstav3:entryPoint>
+```
+
+## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
+
+### <a name="description"></a>Descrizione
+ L'esempio di codice seguente illustra un elemento `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Codice
+
+```xml
+<vstav3:entryPoint
+  class="ContosoOutlookAddIn.ThisAddIn">
+  <assemblyIdentity
+    name="ContosoOutlookAddIn"
+    version="1.0.0.0"
+    language="neutral"
+    processorArchitecture="msil" />
+</vstav3:entryPoint>
+```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

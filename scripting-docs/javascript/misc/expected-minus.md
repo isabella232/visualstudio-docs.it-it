@@ -1,5 +1,5 @@
 ---
-title: Previsto &#39;-&#39; | Microsoft Docs
+title: Previsto '-' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283275"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804760"
 ---
-# <a name="expected-39-39"></a>Previsto &#39;-&#39;
+# <a name="expected--"></a>Previsto '-'
 Si ha provato a creare un'espressione regolare letterali, ma non include una delle barre (/). Come vengono scritti valori letterali stringa come caratteri all'interno di una coppia di virgolette doppie, valori letterali di espressioni regolari sono espressi come caratteri all'interno di una coppia di caratteri di barra (/).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  

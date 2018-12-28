@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere a livello di codice le intestazioni e piè di pagina ai documenti'
+title: 'Procedura: A livello di codice aggiungere le intestazioni e piè di pagina ai documenti'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding headers
 - documents [Office development in Visual Studio], adding footers
 - footers, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849907"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803376"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procedura: aggiungere a livello di codice le intestazioni e piè di pagina ai documenti
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procedura: A livello di codice aggiungere le intestazioni e piè di pagina ai documenti
   È possibile aggiungere testo alle intestazioni e ai piè di pagina del documento usando la proprietà <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> e la proprietà <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> di <xref:Microsoft.Office.Interop.Word.Section>. Ogni sezione di un documento contiene tre intestazioni e piè di pagina:  
   
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
@@ -73,7 +73,7 @@ ms.locfileid: "49849907"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)   
- [Procedura: estendere a livello di programmazione gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Procedura: scorrere gli elementi trovati nei documenti a livello di codice in ciclo](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
+ [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Procedura: A livello di programmazione estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Procedura: Ciclo a livello di programmazione tramite gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
    

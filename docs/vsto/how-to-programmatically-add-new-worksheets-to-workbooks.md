@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: a livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro'
+title: 'Procedura: A livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,26 +13,26 @@ helpviewer_keywords:
 - workbooks, creating worksheets
 - worksheets, creating
 - worksheets, adding to workbooks
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80e3ddaa3edd4520e16c8733d3310497ab4ea5af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255011"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805026"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedura: a livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedura: A livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro
   È possibile creare un foglio di lavoro a livello di codice, quindi aggiungerlo alla raccolta di fogli di lavoro nella cartella di lavoro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>Per aggiungere un nuovo foglio di lavoro a una cartella di lavoro in una personalizzazione a livello di documento  
   
-1.  Usare il metodo <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Excel.Sheets> .  
+1.  Usare il metodo <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Excel.Sheets>.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#15)]  
@@ -51,8 +51,8 @@ ms.locfileid: "35255011"
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
- [Procedura: eliminare a livello di programmazione i fogli di lavoro dalle cartelle di lavoro](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Procedura: a livello di codice selezionare fogli di lavoro](../vsto/how-to-programmatically-select-worksheets.md)   
+ [Procedura: A livello di codice eliminare fogli di lavoro dalle cartelle di lavoro](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Procedura: A livello di codice selezionare fogli di lavoro](../vsto/how-to-programmatically-select-worksheets.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  

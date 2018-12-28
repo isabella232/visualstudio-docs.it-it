@@ -1,5 +1,5 @@
 ---
-title: Previsto &#39;] &#39; | Documenti Microsoft
+title: Previsto ']' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31975b80764773f16eb4009322b712c06a4ff4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632751"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804351"
 ---
-# <a name="expected-3939"></a>Previsto &#39;] &#39;
-Creato un riferimento a un elemento di matrice, ma non include la parentesi quadra chiusa. Qualsiasi espressione che fa riferimento a un elemento di matrice deve includere sia di apertura e chiusura tra parentesi quadre.  
+# <a name="expected-"></a>Previsto ']'
+Si farà un riferimento a un elemento di matrice, ma non include la parentesi quadra chiusa. Qualsiasi espressione che fa riferimento a un elemento della matrice deve includere sia di apertura e chiusura tra parentesi quadre.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Aggiungere le parentesi all'espressione che fa riferimento all'elemento della matrice.  
+-   Aggiungere la parentesi quadra chiusa per l'espressione che fa riferimento all'elemento della matrice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilizzo di matrici](../../javascript/advanced/using-arrays-javascript.md)   

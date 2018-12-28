@@ -18,41 +18,40 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f59433c2c7dfcdcea4ab6f5d7fd620542ea20dc1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f1209460448b02cfb05329c8c3f487f6ef444649
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648794"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802611"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; elemento (sviluppo per Office in Visual Studio)
-  Il `customHostSpecified` elemento indica che questa soluzione non è un'applicazione autonoma. Le soluzioni Office contengono componenti che sono ospitati all'interno delle applicazioni Microsoft Office.  
-  
-## <a name="syntax"></a>Sintassi  
-  
+  Il `customHostSpecified` elemento indica che questa soluzione non è un'applicazione autonoma. Le soluzioni Office contengono componenti che sono ospitati all'interno delle applicazioni Microsoft Office.
+
+## <a name="syntax"></a>Sintassi
+
 ```xml
-<customHostSpecified />  
-```  
-  
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
- Il `customHostSpecified` elemento è obbligatorio per le soluzioni Office. Questo elemento è presente il `co.v1` dello spazio dei nomi e specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.  
-  
- Questo elemento è figlio del primo `<entrypoint>` elemento nel manifesto dell'applicazione. Non può esistere alcun altri elementi figlio in quanto `<entrypoint>` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] genererà un errore di convalida durante l'installazione.  
-  
- Questo elemento è non sono presenti attributi ed elementi figlio.  
-  
-## <a name="example"></a>Esempio  
- L'esempio di codice seguente illustra il `customHostSpecified` elemento in un manifesto dell'applicazione per una soluzione Office. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
-  
+<customHostSpecified />
+```
+
+## <a name="elements-and-attributes"></a>Gli elementi e attributi
+ Il `customHostSpecified` elemento è obbligatorio per le soluzioni Office. Questo elemento è presente il `co.v1` dello spazio dei nomi e specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.
+
+ Questo elemento è figlio del primo `<entrypoint>` elemento nel manifesto dell'applicazione. Non può esistere alcun altri elementi figlio in quanto `<entrypoint>` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] genererà un errore di convalida durante l'installazione.
+
+ Questo elemento è non sono presenti attributi ed elementi figlio.
+
+## <a name="example"></a>Esempio
+ L'esempio di codice seguente illustra il `customHostSpecified` elemento in un manifesto dell'applicazione per una soluzione Office. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+
 ```xml
-<entryPoint>  
-    <co.v1:customHostSpecified />  
-</entryPoint>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+<entryPoint>
+    <co.v1:customHostSpecified />
+</entryPoint>
+```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

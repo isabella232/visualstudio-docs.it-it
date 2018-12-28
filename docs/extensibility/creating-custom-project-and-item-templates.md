@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739825"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802735"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creare modelli di progetto ed elemento personalizzati
 
@@ -29,7 +29,7 @@ I modelli di creazione modello consentono di includere i modelli nelle estension
 Per scenari di creazione modello di base, è consigliabile usare la **Esporta modello** wizard, che invia l'output in un file compresso. Per altre informazioni sulla creazione del modello di base, vedere [creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md).
 
 > [!NOTE]
-> A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i modelli di elemento verrà non sarà più eseguita. Al contrario, l'estensione deve fornire i file manifesto che descrivono il percorso di installazione di questi modelli. È possibile usare Visual Studio 2017 per aggiornare le estensioni VSIX. Se si distribuisce l'estensione usando un file MSI, è necessario generare manualmente i file manifesto del modello. Per altre informazioni, vedere [aggiornamento per progetti ed elementi di modelli personalizzati per Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schema del modello di manifesto è documentato in [riferimenti dello schema del manifesto dei modelli di Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
+> A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i modelli di elemento verrà non sarà più eseguita. Al contrario, l'estensione deve fornire i file manifesto che descrivono il percorso di installazione di questi modelli. È possibile usare Visual Studio 2017 per aggiornare le estensioni VSIX. Se si distribuisce l'estensione usando un file MSI, è necessario generare manualmente i file manifesto del modello. Per altre informazioni, vedere [l'aggiornamento di modelli di progetto ed elemento personalizzati per Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schema del modello di manifesto è documentato in [riferimenti dello schema del manifesto dei modelli di Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="create-a-project-template"></a>Creare un modello di progetto
 

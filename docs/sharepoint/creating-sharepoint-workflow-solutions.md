@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739426"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802498"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creare soluzioni di flusso di lavoro di SharePoint
 
@@ -127,7 +127,7 @@ Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and 
 ## <a name="debug-a-sharepoint-workflow-template"></a>Eseguire il debug di un modello di flusso di lavoro di SharePoint
  Eseguire il debug di un progetto di flusso di lavoro SharePoint lo stesso quando si esegue il debug di altri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti basati su Web. Quando si avvia il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono utilizzate le impostazioni specificate nella **Personalizzazione guidata SharePoint** per aprire il sito Web di SharePoint appropriato e associare automaticamente il modello di flusso di lavoro con la libreria appropriata o elenco. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Associa anche il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del debugger per il [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo denominato *w3wp.exe*.
 
- Per testare il flusso di lavoro, è necessario avviarlo manualmente. Per altre informazioni, vedere la sezione "Il debug dei flussi di lavoro" in [debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Per altre informazioni sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debug delle applicazioni Web, vedere [eseguire il Debug di script e applicazioni web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
+ Per testare il flusso di lavoro, è necessario avviarlo manualmente. Per altre informazioni, vedere la sezione "Il debug dei flussi di lavoro" in [debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Per altre informazioni sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debug delle applicazioni Web, vedere [eseguire il Debug di script e applicazioni web](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Distribuire un modello di flusso di lavoro di SharePoint
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Distribuire progetti di flusso di lavoro di SharePoint come qualsiasi altro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti SharePoint. Per altre informazioni, vedere [soluzioni del pacchetto e distribuire SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
