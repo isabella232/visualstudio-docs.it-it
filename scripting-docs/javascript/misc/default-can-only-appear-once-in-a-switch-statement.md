@@ -1,5 +1,5 @@
 ---
-title: '&#39; predefinito &#39; può apparire una sola volta in un &#39; commutatore &#39; istruzione | Documenti Microsoft'
+title: "'default' può apparire solo una volta in un'istruzione 'switch' | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633101"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803883"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; predefinito &#39; può apparire una sola volta in un &#39; commutatore &#39; istruzione
-Si è tentato di utilizzare il **predefinito** istruzione più volte all'interno di un'istruzione switch. Il valore predefinito è sempre l'ultima istruzione case in un'istruzione switch (è il caso di passaggio).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' può apparire una sola volta in un'istruzione 'switch'
+Si è provato a usare il **predefinito** istruzione più volte all'interno di un'istruzione switch. Nel caso predefinito è sempre l'ultima istruzione case in un'istruzione switch (è il caso di FallThrough).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Rimuovere qualsiasi elemento aggiuntivo **predefinito** caso le istruzioni dal `switch` istruzione (utilizzare la maggior parte delle istruzione case a un valore predefinito nell'istruzione switch).  
+-   Rimuovere qualsiasi elemento aggiuntivo **predefinito** caso le istruzioni dal `switch` istruzione (usare la maggior parte delle istruzione case a un valore predefinito nell'istruzione switch).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Istruzione switch](../../javascript/reference/switch-statement-javascript.md)   

@@ -1,5 +1,5 @@
 ---
-title: Previsto &#39; durante la &#39; | Documenti Microsoft
+title: Previsto 'while' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633031"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801976"
 ---
-# <a name="expected-39while39"></a>Previsto &#39; durante la &#39;
-Non è stato incluso il `while` condizione una `do...while` ciclo. Oggetto **si** istruzione deve includere un corrispondente `while` alla fine del blocco di codice di test.  
+# <a name="expected-while"></a>Previsto 'while'
+Non sono inclusi i `while` condizione un `do...while` ciclo. Oggetto **scopo** istruzione deve corrispondere un `while` alla fine del blocco di codice di test.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672327"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804864"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procedura dettagliata: Inserire dati in una cartella di lavoro in un server
   Questa procedura dettagliata illustra come inserire dati in un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -57,9 +57,9 @@ ms.locfileid: "50672327"
 
 -   Accesso a un'istanza in esecuzione di Microsoft SQL Server o Microsoft SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
 
-    -   Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [procedura: collegare un database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [come: Collegare un database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Per collegare un database tramite la riga di comando, vedere [procedura: allegare un file di database a SQL Server Express](/previous-versions/sql/).
+    -   Per collegare un database tramite la riga di comando, vedere [come: Collegare un file di database a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Creare un progetto di libreria di classi che definisce un set di dati
  Per usare lo stesso set di dati in un progetto cartella di lavoro di Excel e un'applicazione console, è necessario definire il set di dati in un assembly separato a cui viene fatto riferimento da entrambi questi progetti. Per questa procedura dettagliata, definire il set di dati in un progetto di libreria di classi.
@@ -89,7 +89,7 @@ ms.locfileid: "50672327"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definire un set di dati nel progetto libreria di classi
  Definire un set di dati tipizzato che contiene i dati dal database AdventureWorksLT per SQL Server 2005. Più avanti in questa procedura dettagliata, si farà riferimento questo set di dati da un progetto cartella di lavoro di Excel e un progetto applicazione console.
 
- Il set di dati è un *dataset tipizzato* che rappresenta i dati nella tabella Product del database AdventureWorksLT. Per altre informazioni sui dataset tipizzati, vedere [strumenti di set di dati in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Il set di dati è un *dataset tipizzato* che rappresenta i dati nella tabella Product del database AdventureWorksLT. Per altre informazioni sui dataset tipizzati, vedere [strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Per definire un set di dati tipizzato nel progetto libreria di classi
 
@@ -103,7 +103,7 @@ ms.locfileid: "50672327"
 
 5. Se si dispone di una connessione esistente al database AdventureWorksLT, selezionarla e fare clic su **successivo**.
 
-    In caso contrario, scegliere **Nuova connessione**e usare la finestra di dialogo **Aggiungi connessione** per creare la nuova connessione. Per altre informazioni, vedere [procedura: connettersi ai dati in un database](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    In caso contrario, scegliere **Nuova connessione**e usare la finestra di dialogo **Aggiungi connessione** per creare la nuova connessione. Per altre informazioni, vedere [Procedura: Connettersi ai dati in un database](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** scegliere **Avanti**.
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672327"
 
 2.  Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
-     Il **configurazione guidata origine dati** apre.
+     Viene avviata la **Configurazione guidata origine dati**.
 
 3.  Fare clic su **oggetti**, quindi fare clic su **successivo**.
 
@@ -293,8 +293,8 @@ ms.locfileid: "50672327"
 
 Altre informazioni sull'uso dei dati memorizzati nella cache gli argomenti seguenti:
 
--   La modifica dei dati in un set di dati memorizzati nella cache senza avviare Excel. Per altre informazioni, vedere [procedura dettagliata: modifica memorizzato nella cache i dati in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+-   La modifica dei dati in un set di dati memorizzati nella cache senza avviare Excel. Per altre informazioni, vedere [Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Modifica dei dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

@@ -1,5 +1,5 @@
 ---
-title: Previsto &#39;]&#39; nell'espressione regolare (JavaScript) | Microsoft Docs
+title: Previsto ']' nell'espressione regolare (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283717"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804416"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Previsto &#39;]&#39; nell'espressione regolare (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>Prevista ']' nell'espressione regolare (JavaScript)
 Si ha provato a creare una classe di caratteri per trovare una corrispondenza di espressione regolare, ma non include la parentesi quadra chiusa. Le combinazioni di caratteri letterali singoli possono essere assemblate in classi di caratteri, posizionandoli all'interno di parentesi quadre. Una classe di caratteri corrisponde a qualsiasi carattere che contiene. Ad esempio, / [lettere abc] corrisponde a una qualsiasi lettera "a", "b" o "c".  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  

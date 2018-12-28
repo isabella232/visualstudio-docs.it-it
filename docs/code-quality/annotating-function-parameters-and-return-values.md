@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924824"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805107"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e i puntatori alle strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di uso comune per le annotazioni. Per le annotazioni aggiuntive che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)
@@ -495,4 +495,12 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
  [Blog del Team di analisi del codice](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Vedere anche
- [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [comprensione SAL](../code-quality/understanding-sal.md) [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md) [annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md) [ Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md) [specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funzioni intrinseche](../code-quality/intrinsic-functions.md) [procedure consigliate ed esempi](../code-quality/best-practices-and-examples-sal.md)
+
+- [Uso delle annotazioni SAL per ridurre gli errori del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Informazioni su SAL](../code-quality/understanding-sal.md)
+- [Annotazione del comportamento delle funzioni](../code-quality/annotating-function-behavior.md)
+- [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)
+- [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)
+- [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funzioni intrinseche](../code-quality/intrinsic-functions.md)
+- [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)

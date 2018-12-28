@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9994111f5be4e71a63cfa24d719d736a20a11a3b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739523"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804458"
 ---
 # <a name="document-lock-holder-management"></a>Gestione dei detentori di blocchi documento
 La tabella documenti in esecuzione (RDT) mantiene un conteggio di documenti aperti e dispongono di eventuali blocchi di modifica. Quando viene modificata a livello di codice in background senza visualizzare un documento aperto in una finestra del documento, è possibile inserire un blocco di modifica in un documento nella RDT. Questa funzionalità viene spesso usata dagli strumenti di progettazione che modificano più file tramite un'interfaccia utente grafica.
@@ -36,11 +36,13 @@ La tabella documenti in esecuzione (RDT) mantiene un conteggio di documenti aper
 - Se il file "b" è aperto in modo non compatibile, è possibile consentire l'apertura del file "b" effettuata è fallita dall'editor "A" hanno esito negativo oppure è possibile consentire la visualizzazione associata all'editor "A" parzialmente apre e visualizza un messaggio di errore appropriato. Il messaggio di errore dovrebbe indicare all'utente per chiudere il file "b" nell'editor non compatibile e quindi aprire nuovamente file "a" tramite editor "A". È anche possibile implementare il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> per richiedere all'utente di chiudere il file "b" che viene aperto nell'editor non compatibile. Se l'utente chiude il file "b", l'apertura del file "a" nell'editor "A" continua normalmente.
 
 ## <a name="additional-document-edit-lock-considerations"></a>Considerazioni sul blocco di modifica del documento aggiuntivo
- Si verifica un comportamento diverso se editor "A" è l'unico editor che ha un documento di modifica blocco sul file "b", quello che si avrebbe se editor "B" contiene anche un documento di modifica blocco sul file "b". Nelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Progettazione classi** è riportato un esempio di una finestra di progettazione visiva che non viene mantenuto un blocco di modifica il file di codice associato. Vale a dire, se l'utente ha un diagramma classi aperto in visualizzazione progettazione e contemporaneamente aprire il file di codice associato, e se l'utente modifica il file di codice, ma non salvare le modifiche, le modifiche sono inoltre perse al file di diagramma (. CD) della classe. Se il **Progettazione classi** ha il solo documento Modifica blocco sul file di codice, all'utente non è richiesto per salvare le modifiche quando si chiude il file di codice. L'IDE chiede all'utente di salvare le modifiche solo dopo che l'utente chiude il **Progettazione classi**. Le modifiche salvate vengono riflesse in entrambi i file. Se entrambi i **Progettazione classi** l'editor di file di codice mantenuti attivi i blocchi di modifica del documento nel file di codice, quindi l'utente viene richiesto di salvare durante la chiusura del file di codice o del form. A questo punto le modifiche salvate vengono riflesse in forma e il file di codice. Per altre informazioni sui diagrammi classi, vedere [utilizzo dei diagrammi classi (Progettazione classi)](../ide/class-designer/working-with-class-diagrams.md).
+ Si verifica un comportamento diverso se editor "A" è l'unico editor che ha un documento di modifica blocco sul file "b", quello che si avrebbe se editor "B" contiene anche un documento di modifica blocco sul file "b". Nelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Progettazione classi** è riportato un esempio di una finestra di progettazione visiva che non viene mantenuto un blocco di modifica il file di codice associato. Vale a dire, se l'utente ha un diagramma classi aperto in visualizzazione progettazione e contemporaneamente aprire il file di codice associato, e se l'utente modifica il file di codice, ma non salvare le modifiche, le modifiche sono inoltre perse al file di diagramma (. CD) della classe. Se il **Progettazione classi** ha il solo documento Modifica blocco sul file di codice, all'utente non è richiesto per salvare le modifiche quando si chiude il file di codice. L'IDE chiede all'utente di salvare le modifiche solo dopo che l'utente chiude il **Progettazione classi**. Le modifiche salvate vengono riflesse in entrambi i file. Se entrambi i **Progettazione classi** l'editor di file di codice mantenuti attivi i blocchi di modifica del documento nel file di codice, quindi l'utente viene richiesto di salvare durante la chiusura del file di codice o del form. A questo punto le modifiche salvate vengono riflesse in forma e il file di codice. Per altre informazioni sui diagrammi classi, vedere [utilizzo dei diagrammi classi (Progettazione classi)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
 
  Si noti che se è necessario inserire un blocco di modifica in un documento per un editor diverso, è necessario implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> interfaccia.
 
  Numero di volte una progettazione interfaccia utente che modifica i file di codice a livello di codice apporta modifiche a più di un file. In questi casi il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> metodo gestisce il salvataggio di uno o più documenti tramite il **si desidera salvare le modifiche apportate agli elementi seguenti?** nella finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
- [Tabella documenti in esecuzione](../extensibility/internals/running-document-table.md) [persistenza e la tabella documenti in esecuzione](../extensibility/internals/persistence-and-the-running-document-table.md)
+
+- [tabella documenti in esecuzione](../extensibility/internals/running-document-table.md)
+- [Persistenza e la tabella documenti in esecuzione](../extensibility/internals/persistence-and-the-running-document-table.md)

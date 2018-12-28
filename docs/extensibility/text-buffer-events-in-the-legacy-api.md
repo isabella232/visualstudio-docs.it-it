@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080608"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804065"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventi nel buffer di testo nell'API legacy
 Oggetto del buffer di testo genera vari eventi diversi che consentono di rispondere a situazioni diverse.  
   
- Quando si usa l'API legacy, è necessario implementare le interfacce seguenti per ricevere la notifica delle modifiche al buffer di testo. Espone le interfacce per il buffer di testo tramite il `IConnectionPointContainer` interfaccia nel buffer di testo per ricevere la notifica della linea viene modificato dal buffer. Per altre informazioni, vedere [procedura: registrarsi per gli eventi nel buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Nel caso del `IVsTextStreamEvents` o `IVsTextLinesEvents` interfacce, le modifiche vengono restituite in entrambi unidimensionale o due coordinate, rispettivamente.  
+ Quando si usa l'API legacy, è necessario implementare le interfacce seguenti per ricevere la notifica delle modifiche al buffer di testo. Espone le interfacce per il buffer di testo tramite il `IConnectionPointContainer` interfaccia nel buffer di testo per ricevere la notifica della linea viene modificato dal buffer. Per altre informazioni, vedere [Procedura: Registrarsi per gli eventi nel buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Nel caso del `IVsTextStreamEvents` o `IVsTextLinesEvents` interfacce, le modifiche vengono restituite in entrambi unidimensionale o due coordinate, rispettivamente.  
   
 ## <a name="text-buffer-interfaces"></a>Interfacce di buffer di testo  
  Di seguito sono le interfacce implementate dall'oggetto del buffer di testo.  
@@ -53,4 +53,6 @@ Oggetto del buffer di testo genera vari eventi diversi che consentono di rispond
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Notifica ai client l'ultimo movimento di commit per attivare l'evento e fornisce l'intervallo di testo modificato. Il `IVsFinalTextChangeCommitEvents` interfaccia non viene generata in risposta a annullare o ripristinare i comandi. Gli eventi vengono attivati solo per i buffer che dispongono di un gestore di annullamento. `IVsFinalTextChangeCommitEvents` deve essere utilizzato solo da servizi di linguaggio o altri oggetti che detengono il controllo completo sulla modifica. Il pacchetto VSPackage deve monitorare uno il `IVsPreliminaryTextChangeCommitEvents` interfaccia o `IVsFinalTextChangeCommitEvents` interfaccia, ma non entrambi.|  
   
 ## <a name="see-also"></a>Vedere anche
- [Accedere al buffer di testo usando l'API legacy](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [procedura: registrarsi per gli eventi nel buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [Accedere al buffer di testo usando l'API legacy](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [Procedura: Eseguire la registrazione per gli eventi nel buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
