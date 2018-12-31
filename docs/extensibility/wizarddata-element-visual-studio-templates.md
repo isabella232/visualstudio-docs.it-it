@@ -1,10 +1,9 @@
 ---
-title: Elemento WizardData (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento WizardData (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6685c09e463b50f1fd856c65eadc09555a6dedb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a7f024c1ca9840b2dcde181d772bf18af99e603
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561291"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Elemento WizardData (modelli di Visual Studio)
-Specifica XML personalizzate  
+Specifica il formato XML personalizzate  
   
  \<VSTemplate >  
  \<WizardData >  
@@ -56,12 +55,12 @@ Specifica XML personalizzate
 ## <a name="text-value"></a>Valore di testo  
  Il valore di testo è facoltativo.  
   
- Tale testo specifica il codice XML personalizzato per passare all'estensione della creazione guidata personalizzata specificata nel [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.  
+ Tale testo specifica il codice XML personalizzato da passare per l'estensione della creazione guidata personalizzata specificata nel [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.  
   
 ## <a name="remarks"></a>Note  
- In questo elemento, è possibile specificare qualsiasi codice XML. Il codice XML verrà passato come parametro per l'estensione della creazione guidata personalizzata, consentendo l'estensione da utilizzare il contenuto di questo elemento. Viene eseguita alcuna convalida sui dati.  
+ Qualsiasi XML può essere specificato in questo elemento. Il codice XML verrà passato come parametro per l'estensione della creazione guidata personalizzata, che consente l'estensione da utilizzare il contenuto di questo elemento. In merito ai dati viene eseguita alcuna convalida.  
   
- Il contenuto del `WizardData` elemento vengono passati invariati come parametro all'interno di dizionario di stringhe di parametri di `IWizard.RunStarted` (metodo). Il parametro è denominato $WizardData$.  
+ Il contenuto del `WizardData` elemento vengono passati, senza variazioni, come un parametro all'interno di dizionario di stringhe dei parametri in di `IWizard.RunStarted` (metodo). Il parametro è denominato $WizardData$.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.  
@@ -101,4 +100,4 @@ Specifica XML personalizzate
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Elemento WizardExtension (modelli di Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
