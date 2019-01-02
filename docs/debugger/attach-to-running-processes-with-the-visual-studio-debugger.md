@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561642"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
 
 È possibile usare **Connetti a processo** per eseguire il debug delle App in esecuzione su computer locali o remoti, eseguire il debug di più processi contemporaneamente, il debug delle App che non sono state create in Visual Studio o il debug di qualsiasi app non è stato avviato da Visual Studio con il debugger collegato. Ad esempio, se si sta eseguendo un'app senza il debugger e verificata un'eccezione, si può quindi collegare il debugger al processo di esecuzione dell'app e iniziare il debug.
 
-Per informazioni sul debug di base in Visual Studio, vedere [Guida introduttiva con il debugger](../debugger/getting-started-with-the-debugger.md).
+Per informazioni sul debug di base in Visual Studio, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Non si è sicuri se usare **Connetti a processo** per lo scenario di debug? Visualizzare [comuni scenari di debug](#BKMK_Scenarios). 
@@ -162,7 +162,7 @@ Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visu
 |Il debug remoto di ASP.NET 4 o 4.5 in un server IIS|Utilizzare gli strumenti remoti e **Connetti a processo**|*w3wp.exe*|Vedere [Remote Debug ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Debug remoto di ASP.NET Core in un server IIS|Utilizzare gli strumenti remoti e **Connetti a processo**|*dotnet.exe*|Per la distribuzione di app, vedere [pubblicazione su IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per eseguire il debug, vedere [Remote Debug ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Eseguire il debug di script sul lato client in un server IIS locale, per tipi di app supportati |Usare **Connetti a processo**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debug degli script deve essere abilitato. Per Chrome, è necessario eseguire anche Chrome in modalità di debug e selezionare **Webkit code** nel **collegare a** campo.|
-|Il debug di un C#, Visual Basic o C++ app nel computer locale|Usare uno [debug standard](../debugger/getting-started-with-the-debugger.md) o **Connetti a processo**|*\<NomeApp > .exe*|Nella maggior parte degli scenari, usare il debug standard e non **Connetti a processo**.|
+|Il debug di un C#, Visual Basic o C++ app nel computer locale|Usare uno [debug standard](../debugger/debugger-feature-tour.md) o **Connetti a processo**|*\<NomeApp > .exe*|Nella maggior parte degli scenari, usare il debug standard e non **Connetti a processo**.|
 |Debug remoto di un'app desktop di Windows|Remote tools|N/D| Vedere [eseguire il debug remoto un C# o un'app Visual Basic](../debugger/remote-debugging-csharp.md) oppure [remoto il debug di un'app C++](../debugger/remote-debugging-cpp.md)|
 |Eseguire il debug di un'app ASP.NET nel computer locale dopo avere avviato l'app senza il debugger|Usare **Connetti a processo**|*iiexpress.exe*|Questo potrebbe essere utile per rendere l'app di caricare più veloce, ad esempio, ad esempio, la profilatura. |
 |Eseguire il debug di altri tipi di app supportati in un processo del server|Se il server è remoto, utilizzare gli strumenti remoti, e **Connetti a processo**|*Chrome.exe*, *iexplore.exe*, o di altri processi|Se necessario, è possibile utilizzare Monitoraggio risorse per semplificare l'identificazione del processo. Vedere [Debug remoto](../debugger/remote-debugging.md).|

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b431e8223c0cacf28d5e8251b655e2d86769e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935705"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647323"
 ---
 # <a name="introducing-spy"></a>Introduzione a Spy++
 Spy++ consente di eseguire le attività seguenti:  
@@ -39,14 +39,14 @@ Spy++ consente di eseguire le attività seguenti:
   In diverse finestre di Spy++ è possibile fare clic con il pulsante destro del mouse per visualizzare un menu di scelta rapida dei comandi usati di frequente. I comandi visualizzati dipendono dalla posizione del puntatore. Se, ad esempio, si fa clic con il pulsante destro del mouse su una voce nella visualizzazione finestra e la finestra selezionata è visibile, è sufficiente scegliere **Evidenzia** dal menu di scelta rapida per fare in modo che il bordo della finestra selezionata lampeggi e sia così più facilmente identificabile.  
   
 > [!NOTE]
->  Sono disponibili altre due utilità simili a Spy++, ossia PView, che mostra i dettagli relativi a processi e thread, e DDESPY.EXE, che consente di monitorare i messaggi di DDE (Dynamic Data Exchange).  
+>  Esistono altre due utilità simili a Spy + +: PView, che mostra i dettagli sui processi e thread e DDESPY. EXE, che consente di monitorare i messaggi di Dynamic Data Exchange (DDE).  
   
 ## <a name="64-bit-operating-systems"></a>Sistemi operativi a 64 bit  
- Sono disponibili due versioni di Spy++. La prima, denominata Spy++ (spyxx.exe), è stata progettata per visualizzare i messaggi inviati a una finestra in esecuzione in un processo a 32 bit. Ad esempio, Visual Studio viene eseguito in un processo a 32 bit. Pertanto, è possibile usare Spy++ per visualizzare i messaggi inviati a **Esplora soluzioni**. Poiché la configurazione predefinita per la maggior parte delle build in Visual Studio deve essere eseguito in un processo a 32 bit, questa prima versione di Spy + + è quella che è [disponibile nel **Tools** menu](../debugger/how-to-start-spy-increment.md) in Visual Studio.  
+ Sono disponibili due versioni di Spy++. La prima, denominata Spy++ (spyxx.exe), è stata progettata per visualizzare i messaggi inviati a una finestra in esecuzione in un processo a 32 bit. Ad esempio, Visual Studio viene eseguito in un processo a 32 bit. Pertanto, è possibile usare Spy++ per visualizzare i messaggi inviati a **Esplora soluzioni**. Poiché la configurazione predefinita per la maggior parte delle build in Visual Studio deve essere eseguito in un processo a 32 bit, questa prima versione di Spy + + è quella disponibile nel **Tools** menu in Visual Studio, se [componenti necessari installato](../debugger/how-to-start-spy-increment.md). 
   
  La seconda versione, denominata Spy++ (64 bit) (spyxx_amd64.exe), è stata progettata per visualizzare i messaggi inviati a una finestra in esecuzione in un processo a 64 bit. Ad esempio, in un sistema operativo a 64 bit, il Blocco note viene eseguito in un processo a 64 bit. Pertanto, è possibile usare Spy++ (64 bit) per visualizzare i messaggi inviati al Blocco note. Spy++ (64 bit) si trova in genere in  
   
- .. \\ *Cartella di installazione di visual Studio*\Common7\Tools\spyxx_amd64.exe..  
+ ..\\*Cartella di installazione di Visual Studio*\Common7\Tools\spyxx_amd64.exe.  
   
  È possibile eseguire entrambe le versioni di Spy++ direttamente dalla riga di comando.  
   
@@ -54,7 +54,7 @@ Spy++ consente di eseguire le attività seguenti:
 >  Anche se il nome del file di Spy++ (64 bit) contiene "amd", viene eseguito in qualsiasi sistema operativo Windows x64.  
   
 ## <a name="see-also"></a>Vedere anche 
- [Procedura: avviare Spy + +](../debugger/how-to-start-spy-increment.md)   
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md)   
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md)   
+ [Procedura: Avviare Spy++](../debugger/how-to-start-spy-increment.md)   
+ [Uso di Spy++](../debugger/using-spy-increment.md)   
+ [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)

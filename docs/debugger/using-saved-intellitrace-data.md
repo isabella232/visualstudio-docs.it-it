@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912968"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685006"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.
@@ -110,7 +110,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 3.  Espandere tale chiamata per rivedere tutte le chiamate e i valori di parametri annidati registrati in quel momento.
 
-     Tastiera: per visualizzare o nascondere una chiamata annidata, premere rispettivamente **Freccia DESTRA** o **Freccia SINISTRA** . Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .
+     (Tastiera: Per mostrare o nascondere una chiamata annidata, premere il **freccia destra** oppure **freccia sinistra** rispettivamente. Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .
 
      Avviare il debug dalla chiamata.
 
@@ -207,7 +207,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     ![Log di IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Per informazioni dettagliate, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+   Per informazioni dettagliate, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Elenco dei thread
  Esaminare i thread registrati che sono stati eseguiti nel processo di destinazione. È possibile avviare il debug dal primo evento IntelliTrace valido in un thread selezionato.
@@ -225,7 +225,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Colonna**|**Mostra**|
 |----------------|-------------------|
 |**ID**|Numero ID del thread|
-|**Name**|Nome del thread. Thread senza nome vengono visualizzati come "\<Nessun nome >".|
+|**Name**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|
 |**Ora di inizio**|Ora di creazione del thread|
 |**Ora di fine**|Ora di completamento del thread|
 
@@ -258,7 +258,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |----------------|-------------------|
 |**Nome modulo**|Nome del file di modulo|
 |**Percorso modulo**|Posizione sul disco in cui è stato caricato il modulo|
-|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Finding symbol (.pdb) files and source files](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?
  [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Materiale sussidiario
- [Test per il recapito continuo con Visual Studio 2012 - capitolo 6: una casella degli strumenti di test](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Esecuzione di test per il recapito continuo con Visual Studio 2012 - capitolo 6: Una casella degli strumenti di test](http://go.microsoft.com/fwlink/?LinkID=255203)

@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561970"
 ---
 # <a name="debugging-native-code"></a>Debug del codice nativo
-In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di uso del debugger di Visual Studio, vedere [orientamento al Debugger](../debugger/getting-started-with-the-debugger.md).  
+In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di uso del debugger di Visual Studio, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md)  
@@ -60,8 +60,8 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
  [Procedura: Eseguire il debug di codice inserito](../debugger/how-to-debug-injected-code.md)  
  Viene fornito materiale sussidiario sul debug del codice che utilizza gli attributi. Sono incluse istruzioni per l'attivazione del codice sorgente, la visualizzazione del codice inserito e del codice disassembly in corrispondenza del punto di esecuzione corrente.  
   
- [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Viene descritto come utilizzare il **attività in parallelo** e **stack in parallelo** finestre degli strumenti di debug di un'applicazione parallela.  
+ [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  

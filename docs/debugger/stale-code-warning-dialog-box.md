@@ -22,19 +22,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e212602b317127cfd14adcd246a23cdd92ed86
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3a2f7f1817b562b555a8ac026e165712bb81f912
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281793"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684730"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Avviso di codice non aggiornato (finestra di dialogo)
-Questa finestra di dialogo viene visualizzata quando sono state apportate modifiche al codice nativo che **modifica e continuazione** non può applicare immediatamente. Di conseguenza, il codice nativo nello stack frame corrente non sarà più aggiornato. Per altre informazioni, vedere [procedura: utilizzare codice non aggiornato](/visualstudio/debugger/edit-and-continue-visual-cpp#bkmk_how_to_work_with_stale_code).  
-  
- **Non visualizzare più questa finestra di dialogo**  
- Se si seleziona questa casella di controllo, la modalità Modifica e continuazione applicherà le modifiche al codice senza chiedere l'autorizzazione. È possibile attivare questo avviso anche in questo caso passando al **opzioni** finestra di dialogo, aprire il **debug** cartella, fare clic sui **modifica e continuazione** , quindi selezionare **Avvisa in codice non aggiornato**.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Modifiche al codice supportate (C++)](../debugger/supported-code-changes-cpp.md)   
- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](/visualstudio/debugger/edit-and-continue)
+
+Questa finestra di dialogo viene visualizzata quando vengono apportate modifiche al codice nativo che la modalità **Modifica e continuazione** non può applicare immediatamente. Di conseguenza, il codice nativo nello stack frame corrente non sarà più aggiornato. Per altre informazioni, vedere [Modifica e continuazione (C++)](edit-and-continue-visual-cpp.md).
+
+**Non visualizzare più questo messaggio**
+
+Se si seleziona questa casella di controllo, la modalità Modifica e continuazione applicherà le modifiche al codice senza chiedere l'autorizzazione. Per riattivare questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Avvisa in caso di codice non aggiornato**.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Modifiche al codice supportate (C++)](supported-code-changes-cpp.md)
+- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](edit-and-continue.md)
