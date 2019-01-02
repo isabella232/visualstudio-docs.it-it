@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561525"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
@@ -227,4 +227,4 @@ Per aggiungere le eccezioni condizionale:
 [Procedura: Esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [Procedura: Usare i controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)<br/>
 [Usare i controlli di runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Esercitazione: Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)
+[Presentazione del debugger](../debugger/debugger-feature-tour.md)

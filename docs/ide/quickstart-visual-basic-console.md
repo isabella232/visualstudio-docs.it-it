@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159607"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684470"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic
 
@@ -91,4 +91,4 @@ Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input
 La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di Visual Basic e dell'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente.
 
 > [!div class="nextstepaction"]
-> [Introduzione a Visual Basic in Visual Studio](tutorial-visual-basic-console.md)
+> [Introduzione a Visual Basic in Visual Studio](../get-started/visual-basic/tutorial-console.md)

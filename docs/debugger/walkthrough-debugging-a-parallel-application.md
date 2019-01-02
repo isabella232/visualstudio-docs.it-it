@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562100"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Procedura dettagliata: Debug di un'applicazione parallela in Visual Studio
 In questa procedura dettagliata viene illustrato come usare le finestre **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento di runtime del codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o nella [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Una volta interrotta l'esecuzione del codice, viene illustrato come esaminarlo usando le finestre **Attività in parallelo** e **Stack in parallelo**.  
@@ -298,7 +298,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)   
+ [Presentazione del debugger](../debugger/debugger-feature-tour.md)  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
  [Programmazione parallela](/dotnet/standard/parallel-programming/index)   
  [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime)   

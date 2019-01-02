@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159737"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739971"
 ---
 # <a name="install-visual-studio-2017"></a>Installare Visual Studio 2017
 
@@ -142,7 +142,7 @@ Per altre informazioni, vedere la pagina [Cambiare i percorsi di installazione i
 
    Ad esempio, per [compilare un'app C++](../ide/getting-started-with-cpp-in-visual-studio.md), fare clic su **Installati**, espandere **Visual C++** e selezionare il tipo di progetto C++ che si vuole compilare.
 
-   Per [compilare un'app C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), fare clic su **Installati**, espandere **Visual C#** e selezionare il tipo di progetto C# che si vuole compilare.
+   Per [compilare un'app C#](../get-started/csharp/tutorial-wpf.md), fare clic su **Installati**, espandere **Visual C#** e selezionare il tipo di progetto C# che si vuole compilare.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

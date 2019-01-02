@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 182f020ee5ca8132eb19647fc9f24c834544ac2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159997"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684353"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -156,5 +156,5 @@ La guida introduttiva è stata completata.
 ## <a name="see-also"></a>Vedere anche
 
 - [Uso dell'IDE di Visual Studio per lo sviluppo di applicazioni desktop C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Procedura dettagliata: Creare un'applicazione semplice con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Procedura dettagliata: Creare un'applicazione semplice con C# o Visual Basic](../get-started/csharp/tutorial-wpf.md)
 - [Suggerimenti relativi alla produttività per Visual Studio](../ide/productivity-tips-for-visual-studio.md)

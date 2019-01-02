@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561512"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -332,4 +332,4 @@ Dopo aver trovato l'area di codice con il problema, usare il debugger per analiz
 In questo articolo si sono appresi alcuni concetti di debug generali. In seguito, è possibile apprendere di più sul debugger.
 
 > [!div class="nextstepaction"]
-> [Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Presentazione del debugger](../debugger/debugger-feature-tour.md)

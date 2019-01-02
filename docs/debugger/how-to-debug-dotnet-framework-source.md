@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: codice sorgente di Debug .NET Framework | Microsoft Docs'
+title: 'Procedura: Eseguire il debug di codice sorgente di .NET Framework | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389280"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443912"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug del codice sorgente di .NET Framework
 
@@ -55,7 +55,7 @@ Per eseguire il debug di codice sorgente di .NET Framework, è necessario:
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Per caricare i simboli dalla Stack di chiamate o moduli di windows  
   
-1. Durante il debug, aprire la finestra selezionando **Debug** > **Windows** > **moduli** oppure **Stack di chiamate** . 
+1. Durante il debug, aprire la finestra selezionando **Debug** > **Windows** > **moduli** (o premere **Ctrl + Alt + U**) oppure **Debug** > **Windows** > **Stack di chiamate** (**Ctrl + Alt + C**). 
    
 1. Fare doppio clic su un modulo per il quale non sono stati caricati i simboli. Nel **moduli** della finestra, lo stato di caricamento dei simboli: il **stato simboli** colonna. Nel **Stack di chiamate** della finestra, stato: il **stato Frame** colonna e il frame è grigio. 
    

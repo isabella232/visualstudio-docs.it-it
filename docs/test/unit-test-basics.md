@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053169"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740351"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -257,7 +257,7 @@ Per altre informazioni, vedere [Eseguire unit test con Esplora test](../test/run
 
 2.  In **Esplora test** selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
-Altre informazioni dettagliate sul [debug di unit test](../debugger/debugging-in-visual-studio.md).
+Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-feature-tour.md).
 
 **D: Se si usa lo sviluppo basato su test, come è possibile generare codice dai test?**
 

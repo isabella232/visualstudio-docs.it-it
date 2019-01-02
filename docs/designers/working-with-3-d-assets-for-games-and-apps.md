@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fd9aa8cc571ba58964346ca85a62b7ec311a744a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079474"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803662"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
@@ -44,14 +44,14 @@ Questo documento descrive gli strumenti di Visual Studio che è possibile usare 
  È possibile usare la progettazione shader di Visual Studio, ovvero uno strumento di progettazione shader basato su grafico, per creare effetti visivi personalizzati senza conoscere la programmazione HLSL.
 
 > [!NOTE]
-> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Per altre informazioni su come eseguire il debug di un'app DirectX, vedere [Diagnostica della grafica (Debug grafica DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Per altre informazioni su come eseguire il debug di un'app DirectX, vedere [Diagnostica della grafica (Debug grafica DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilità tra versioni DirectX
  Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per altre informazioni su WARP, vedere [Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) (Guida per Windows Advanced Rasterization Platform).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare Visual Studio per lavorare con immagini e trame.|
 |[Uso di modelli 3D](../designers/working-with-3-d-models.md)|Viene descritto come usare Visual Studio per lavorare con i modelli 3D.|

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120383"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739838"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -61,7 +61,7 @@ ms.locfileid: "48120383"
  [File di risposta](../msbuild/msbuild-response-files.md)  
  Illustra i file con estensione *rsp* contenenti opzioni della riga di comando.  
   
- [Risorse aggiuntive](../msbuild/additional-resources-for-msbuild.md)  
+ [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Contiene i collegamenti ai siti Web e ai newsgroup [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  

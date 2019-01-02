@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561749"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -84,7 +84,7 @@ Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di 
 
 ### <a name="inspect-and-modify-values"></a>Esaminare e modificare i valori
 
-Quando il debugger non è in esecuzione, è possibile controllare e modificare i valori delle variabili. È anche possibile usare la finestra **Espressioni di controllo** per monitorare singole variabili oltre a espressioni personalizzate. Per informazioni di carattere generale, vedere [Controllare le variabili](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows).
+Quando il debugger non è in esecuzione, è possibile controllare e modificare i valori delle variabili. È anche possibile usare la finestra **Espressioni di controllo** per monitorare singole variabili oltre a espressioni personalizzate. Per informazioni di carattere generale, vedere [Controllare le variabili](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows).
 
 Per visualizzare un valore usando i **suggerimenti dati**, è sufficiente passare il puntatore del mouse su una qualsiasi variabile nell'editor. È possibile fare clic sul valore per modificarlo:
 

@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068448"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425851"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
@@ -61,7 +60,7 @@ In C# code, punto di interruzione e le righe di esecuzione correnti vengono auto
   
  ![Esecuzione punto di interruzione arrestata](../debugger/media/breakpointexecution.png "esecuzione punto di interruzione")  
   
- Quando il debugger si arresta nel punto di interruzione, è possibile esaminare lo stato corrente dell'app, inclusi i valori delle variabili e lo stack di chiamate. Per altre informazioni sullo stack di chiamate, vedere [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
+ Quando il debugger si arresta nel punto di interruzione, è possibile esaminare lo stato corrente dell'app, inclusi i valori delle variabili e lo stack di chiamate. Per altre informazioni sullo stack di chiamate, vedere [come: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Il punto di interruzione è un elemento toggle. È possibile selezionarlo, premere **F9**, oppure utilizzare **Debug** > **Attiva/Disattiva punto di interruzione** eliminare o reinserirla.
   
@@ -89,7 +88,7 @@ Il punto di interruzione dello stack di chiamate viene visualizzato nei **i punt
 
 Il debugger si interrompe all'istruzione.  
 
-Per altre informazioni sullo stack di chiamate, vedere [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md). 
+Per altre informazioni sullo stack di chiamate, vedere [come: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md). 
 
 Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -306,8 +305,9 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 I punti di traccia vengono visualizzati come forma di rombo rosso nel margine sinistro del codice sorgente e **i punti di interruzione** windows. 
   
-## <a name="see-also"></a>Vedere anche  
- [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Presentazione di debug](../debugger/debugger-feature-tour.md)  
- [Risolvere i punti di interruzione nel debugger di Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Vedere anche
+
+- [Che cos'è il debug?](../debugger/what-is-debugging.md)
+- [Scrivere meglio C# del codice con Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Presentazione di debug](../debugger/debugger-feature-tour.md)
+- [Risolvere i punti di interruzione nel debugger di Visual Studio](../debugger/troubleshooting-breakpoints.md)
