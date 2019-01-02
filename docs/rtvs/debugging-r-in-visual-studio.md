@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1f0f37be96603ed5d1e53c5ef36ea011d636dcaa
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235310"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804851"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
-Strumenti R per Visual Studio (RTVS) si integra con l'esperienza di debug completa di Visual Studio (vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md) (Debug in Visual Studio). Questo supporto include punti di interruzione, collegamento a processi in esecuzione, esame e controllo delle variabili ed esame dello stack di chiamate. In questo articolo vengono quindi esaminati gli aspetti del debug che sono univoci per R e RTVS.
+Strumenti R per Visual Studio (RTVS) si integra con l'esperienza di debug completa di Visual Studio (vedere [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour) (Debug in Visual Studio). Questo supporto include punti di interruzione, collegamento a processi in esecuzione, esame e controllo delle variabili ed esame dello stack di chiamate. In questo articolo vengono quindi esaminati gli aspetti del debug che sono univoci per R e RTVS.
 
 Avviare il debugger per il file di avvio R in un progetto R è un'operazione identica a quella per altri tipi di progetto: usare **Debug** > **Avvia debug**, **F5** o il **file di avvio di origine** nella barra degli strumenti di debug: 
 
@@ -55,7 +55,7 @@ Quando il debugger si arresta, viene arrestato anche il prompt del browser di am
 
 Il browser ambiente supporta un numero di comandi speciali:
 
-| Comando | Descrizione |
+| Comando | Description |
 | --- | --- |
 | n | next: esegue l'istruzione successiva nel file di codice (uguale a step over). |
 | s | step into: esegue l'istruzione successiva nel file di codice, passando all'ambito della funzione se l'istruzione successiva è una chiamata di funzione. |

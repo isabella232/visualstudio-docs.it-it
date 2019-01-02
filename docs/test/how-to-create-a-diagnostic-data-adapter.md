@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068302"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802579"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
@@ -48,7 +48,7 @@ Di seguito è riportato un elenco parziale di eventi chiave che è possibile uti
 
 Utilizzare la procedura seguente per creare un adattatore dati di diagnostica che consenta di raccogliere un file di dati basato sulle informazioni configurate alla creazione delle impostazioni di test.
 
-Per un progetto di adattatore dati di diagnostica di esempio completo, incluso un editor di configurazione personalizzato, vedere [Esempio di progetto per creare un adattatore dati di diagnostica](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Per un progetto di adattatore dati di diagnostica di esempio completo, incluso un editor di configurazione personalizzato, vedere [Esempio di progetto per creare un adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Creare e installare un adattatore dati di diagnostica
 
@@ -224,7 +224,7 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
      Questi file sono allegati ai risultati del test. Se si crea un bug da questi risultati o quando si utilizza [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], i file vengono allegati anche al bug.
 
-     Se si vuole usare il proprio editor per raccogliere i dati da usare nelle impostazioni di test, vedere [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+     Se si vuole usare il proprio editor per raccogliere i dati da usare nelle impostazioni di test, vedere [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md).
 
 11. Per raccogliere un file di log quando un test viene completato in base alla configurazione effettuata dall'utente nelle impostazioni di test, è necessario creare un file *App.config* e aggiungerlo alla soluzione. Questo file ha il formato seguente e deve contenere l'URI affinché l'adattatore dati di diagnostica lo identifichi. Sostituire i valori reali a "Company/ProductName/Version".
 
@@ -261,11 +261,11 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
      Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Per altre informazioni sull'installazione del file di configurazione, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     Per altre informazioni sull'installazione del file di configurazione, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/quickstart-create-a-load-test-project.md)
 
 12. Compilare la soluzione per creare l'assembly dell'adattatore dati di diagnostica.
 
-13. Per informazioni sull'installazione dell'editor personalizzato, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+13. Per informazioni sull'installazione dell'editor personalizzato, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/quickstart-create-a-load-test-project.md).
 
 14. Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
@@ -289,4 +289,4 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md)

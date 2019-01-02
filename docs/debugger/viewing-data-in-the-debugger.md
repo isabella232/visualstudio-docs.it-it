@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59e6c1879d5463682ee41d60e3928fce85c74a8d
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561853"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Creare viste personalizzate dei dati nel debugger di Visual Studio
 Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger fornisce molti strumenti per analizzare e modificare lo stato del programma. La maggior parte di questi strumenti è utilizzabile solo in modalità di interruzione.
@@ -38,6 +38,5 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger fornisce m
  Visualizzatori consentono inoltre di visualizzare il contenuto di un oggetto o una variabile in modo significativo. Nel debugger di Visual Studio, un visualizzatore si riferisce alle diverse finestre che è possibile aprire usando la lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore") icona. Ad esempio, il visualizzatore HTML viene illustrato come verrebbe interpretata e visualizzata in un browser una stringa HTML. I visualizzatori sono accessibili da suggerimenti dati, il **Watch** finestra, il **Auto** finestra e il **variabili locali** finestra. Il **controllo immediato** nella finestra di dialogo fornisce anche un visualizzatore. Per altre informazioni, vedere [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md).
   
 ## <a name="see-also"></a>Vedere anche  
- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)   
- [Finestra di comando](../ide/reference/command-window.md)   
+ [Esaminare innanzitutto il debugger](../debugger/debugger-feature-tour.md) [finestra di comando](../ide/reference/command-window.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)

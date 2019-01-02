@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062988"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803072"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Progettare XAML in Visual Studio
 
@@ -42,7 +42,7 @@ Per attività più semplici l'IDE per Visual Studio e Blend per Visual Studio co
 
 - **IntelliSense XAML:** entrambi gli IDE supportano tutte le funzionalità comuni che ci si aspettano da IntelliSense, tra cui completamento istruzioni, supporto di operazioni quali aggiunta di commenti e formattazione di codice e possibilità di spostarsi tra risorse, binding e codice.
 
-- **Funzionalità di debug di base:** è ora possibile eseguire il debug in Blend, con la possibilità di usare l'impostazione di punti di interruzione nel codice per il debug dell'app in esecuzione. Per garantire un'esperienza di debug coerente con Visual Studio, Blend per Visual Studio include la maggior parte delle finestre di debug e le barre degli strumenti di Visual Studio. Avanzate funzionalità di debug, ad esempio la diagnostica e l’analisi del codice sono disponibili solo in Visual Studio. Vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
+- **Funzionalità di debug di base:** è ora possibile eseguire il debug in Blend, con la possibilità di usare l'impostazione di punti di interruzione nel codice per il debug dell'app in esecuzione. Per garantire un'esperienza di debug coerente con Visual Studio, Blend per Visual Studio include la maggior parte delle finestre di debug e le barre degli strumenti di Visual Studio. Avanzate funzionalità di debug, ad esempio la diagnostica e l’analisi del codice sono disponibili solo in Visual Studio. Vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md).
 
 - **Esperienza di ricaricamento file:** è possibile modificare i file XAML in Blend per Visual Studio o in Visual Studio e ricaricare automaticamente i file modificati quando si passa dall'uno all'altro. Per ridurre al minimo le interruzioni di flusso di lavoro, è ora possibile impostare le preferenze di ricaricamento file nella finestra Ricarica file.
 

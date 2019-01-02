@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a389fdafb6167fb132578111c7a8b5d02c8495
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068052"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684236"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -122,4 +122,4 @@ Esercitazioni:
 - [Distribuzione in Visual C++](/cpp/ide/deployment-in-visual-cpp)
 - [Distribuire app per la piattaforma UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Pubblicare un'app Node.js in Azure con Distribuzione Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Pubblicare un'app Python nel Servizio app di Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Pubblicare un'app Python nel Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 127e858b913f49810eae166681b313622e6840ea
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160114"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684884"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -93,5 +93,5 @@ Per altre informazioni sulla personalizzazione dell'editor, vedere [Personalizza
 - [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor)
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Introduzione a C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
-- [Introduzione a C# e ad ASP.NET Core in Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
+- [Introduzione a C# e ad ASP.NET Core in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Introduzione a Python in Visual Studio](../ide/quickstart-python.md)

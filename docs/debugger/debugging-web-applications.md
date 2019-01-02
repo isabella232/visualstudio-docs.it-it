@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561629"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
 In questa sezione viene illustrato come eseguire il debug di diversi tipi di applicazioni Web.  
@@ -41,6 +41,5 @@ In questa sezione viene illustrato come eseguire il debug di diversi tipi di app
 ## <a name="see-also"></a>Vedere anche  
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)   
- [Debug in Visual Studio](../debugger/index.md)  
+ [Esaminare innanzitutto il debugger](../debugger/debugger-feature-tour.md) [debug in Visual Studio](../debugger/index.md)  
  [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066418"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561447"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparazione al debug: Applicazioni Windows Form
 Il modello di progetto Windows Forms consente di creare un'applicazione Windows Forms. Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è una procedura molto semplice. Per altre informazioni, vedere [creazione di un progetto di applicazione Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
@@ -63,7 +63,7 @@ Il modello di progetto Windows Forms consente di creare un'applicazione Windows 
   
 3. Nel menu **Debug** fare clic su **Avvia**.  
   
-4. Eseguire il debug usando le tecniche descritte in [nozioni fondamentali di debug](../debugger/getting-started-with-the-debugger.md).  
+4. Eseguire il debug usando le tecniche descritte in [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   

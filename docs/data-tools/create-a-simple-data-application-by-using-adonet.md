@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064872"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740101"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
@@ -37,7 +37,7 @@ Per creare l'applicazione, è necessario disporre di:
 
 -   LocalDB di SQL Server Express. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Forms, aggiungere form al progetto, inserire i pulsanti e altri controlli nei form, impostare le proprietà dei controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) argomento prima di iniziare questa procedura dettagliata.
+Questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Forms, aggiungere form al progetto, inserire i pulsanti e altri controlli nei form, impostare le proprietà dei controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual C# e Visual Basic](../ide/quickstart-visual-basic-console.md) argomento prima di iniziare questa procedura dettagliata.
 
 ## <a name="set-up-the-sample-database"></a>Impostare il database di esempio
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921717"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803494"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione *targets* compresi con MSBuild.  
@@ -34,7 +34,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
   
 ## <a name="list-of-common-properties-and-parameters"></a>Elenco delle proprietà e dei parametri comuni  
   
-| Nome della proprietà o del parametro | Descrizione |
+| Nome della proprietà o del parametro | Description |
 |------------------------------------| - |
 | AdditionalLibPaths | Specifica le cartelle aggiuntive nelle quali i compilatori devono cercare gli assembly di riferimento. |
 | AddModules | Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questa proprietà è equivalente all'opzione del compilatore `/addModules`. |
@@ -56,10 +56,10 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | CscToolPath | Percorso di *csc.exe*, il compilatore di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nome di un file di progetto o file delle destinazioni che deve essere importato automaticamente prima dell'importazione delle destinazioni comuni. |
 | DebugSymbols | Valore booleano che indica se i simboli sono generati dalla compilazione.<br /><br /> L'impostazione di **-p:DebugSymbols=false** nella riga di comando disabilita la generazione di file di simboli (con estensione *pdb*) del database di programma. |
+| DebugType | Definisce il livello di informazioni di debug da generare. I valori validi sono "full", "pdbonly" e "none". |
 | DefineConstants | Definisce le costanti del compilatore condizionali. Le coppie simbolo/valore sono separate da punti e virgola e vengono specificate mediante la seguente sintassi:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> La proprietà è equivalente all'opzione del compilatore `/define`. |
 | DefineDebug | Valore booleano che indica se la costante DEBUG deve essere definita. |
 | DefineTrace | Valore booleano che indica se la costante TRACE deve essere definita. |
-| DebugType | Definisce il livello di informazioni di debug da generare. I valori validi sono "full", "pdbonly" e "none". |
 | DelaySign | Valore booleano che indica se apporre una firma ritardata all'assembly anziché quella completa. |
 | Deterministico | Un valore booleano che indica se il compilatore deve produrre assembly identici per input identici. Questo parametro corrisponde all'opzione `/deterministic` dei compilatori *vbc.exe* e *csc.exe*. |
 | DisabledWarnings | Non visualizza gli avvisi specificati. È necessario specificare solo la parte numerica dell'identificatore di avviso. Se si specificano più avvisi, usare il punto e virgola per separarli. Questo parametro corrisponde all'opzione `/nowarn` del compilatore *vbc.exe*. |

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066782"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443925"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Visualizzare i file eseguibili e DLL nella finestra moduli (C#, C++, Visual Basic, F#)
  
@@ -42,7 +42,7 @@ Durante il debug di Visual Studio, il **moduli** finestra elenca e Visualizza in
   
 ## <a name="use-the-modules-window"></a>Utilizzare la finestra moduli
 
-Per aprire la finestra moduli, durante il debug, selezionare **Debug** > **Windows** > **moduli**. 
+Per aprire la finestra moduli, durante il debug, selezionare **Debug** > **Windows** > **moduli** (o premere **Ctrl + Alt + U** ). 
   
 Per impostazione predefinita, nella finestra **Moduli** i moduli sono ordinati in base all'ordine di caricamento. Per ordinare in base a qualsiasi colonna di finestra, selezionare l'intestazione nella parte superiore della colonna.  
   
