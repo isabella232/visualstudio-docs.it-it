@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561694"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug di DLL in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -52,7 +52,7 @@ Quando si usa un modello di progetto di Visual Studio per creare un'app, [!INCLU
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Impostazioni di progetto per configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Impostazioni di progetto per una configurazione di debug di Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>Impostare DebuggableAttribute C++
 
@@ -102,7 +102,7 @@ Assicurarsi di chiamare la DLL nella posizione corretta. Ciò potrebbe sembrare 
 
 Per eseguire il debug di una DLL, è possibile [avviare il debug dell'App chiamante](#vxtskdebuggingdllprojectsthecallingapplication), o [eseguire il debug dal progetto di DLL](how-to-debug-from-a-dll-project.md) specificando le app chiamante. È anche possibile usare il debugger [finestra controllo immediato](#vxtskdebuggingdllprojectstheimmediatewindow) per valutare i metodi o funzioni di DLL in fase di progettazione senza usare un'app chiamante.
 
-Per altre informazioni, vedere [iniziare con il debugger](getting-started-with-the-debugger.md).
+Per altre informazioni, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Avviare il debug dell'App chiamante
 
@@ -119,11 +119,11 @@ Per eseguire il debug di una DLL di un'app chiamante, è possibile:
 
   oppure  
 
-- Connettersi a un'app è già distribuito e in esecuzione in un computer di test o produzione. Utilizzare questo metodo per le DLL nei siti Web o nelle App web. Per altre informazioni, vedere [Procedura: Eseguire la connessione a un processo in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Connettersi a un'app è già distribuito e in esecuzione in un computer di test o produzione. Utilizzare questo metodo per le DLL nei siti Web o nelle App web. Per altre informazioni, vedere [Procedura: Connettersi a un processo in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Prima di avviare il debug di app chiamante, impostare un punto di interruzione nella DLL. Visualizzare [usando i punti di interruzione](../debugger/using-breakpoints.md). Quando viene raggiunto il punto di interruzione DLL, è possibile eseguire il codice, osservandone l'esecuzione in ogni riga. Per altre informazioni, vedere [esplorare il codice nel debugger](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante il debug, è possibile usare la **moduli** per verificare le DLL e *.exe* i file del caricamento dell'app. Per aprire la **moduli** finestra durante il debug, selezionare **Debug** > **Windows** > **moduli**. Per altre informazioni, vedere [Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md). 
+Durante il debug, è possibile usare la **moduli** per verificare le DLL e *.exe* i file del caricamento dell'app. Per aprire la **moduli** finestra durante il debug, selezionare **Debug** > **Windows** > **moduli**. Per altre informazioni, vedere [Procedura: Utilizzare la finestra moduli](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utilizzare la finestra controllo immediata  
 

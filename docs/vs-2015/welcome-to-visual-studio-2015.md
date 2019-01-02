@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 1898d437cb7d3f439e92b88a45e7b543e8bbd0f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058480"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805146"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Benvenuti in Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -61,11 +61,11 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
 
 2.  [Apache Cordova con Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Una codebase comune per HTML, CSS e JavaScript o Typescript
 
-3.  [Visual Studio Tools per Unity](./cross-platform/visual-studio-tools-for-unity.md): sviluppo di giochi 2D e 3D inC#
+3.  [Visual Studio Tools per Unity](./cross-platform/visual-studio-tools-for-unity.md): sviluppo di giochi 2D/3D in C#.
 
 4.  [C++ per lo sviluppo Cross-Platform](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Librerie di codice condiviso e le App in C++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: eseguire il Debug e testare le applicazioni Android indipendentemente dall'IDE
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Emulatore di Visual Studio per Android: eseguire il debug e testare le applicazioni Android indipendentemente dall'IDE
 
 ## <a name="connect-your-apps-to-services"></a>Connettere le app ai servizi
  È possibile connettersi a questi servizi automaticamente (supponendo di avere un account per ogni servizio):
@@ -100,7 +100,7 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
 |||||
 |-|-|-|-|
 |[Novità di Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novità in Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novità in .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novità in ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Novità in C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novità in Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novità in JavaScript](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/what-s-new-in-javascript.md)||
+|[Novità in C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novità in Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novità in JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>Contenuto della sezione

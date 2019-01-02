@@ -10,17 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7b45a8673685dce5eabd0459f470525e5e2d99a
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905064"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443873"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:  
 
-- Visual Studio 2017:4022
+- Visual Studio 2019: 4024
+
+- Visual Studio 2017: 4022
 
 - Visual Studio 2015: 4020  
   
@@ -31,23 +33,23 @@ Visual Studio Remote Debugger può essere eseguito come applicazione o come serv
   In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. È possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 32 bit  
- TCP 4022 (in Visual Studio 2017) è la porta principale, mentre è obbligatorio per tutti gli scenari. Può essere configurata dalla riga di comando o nella finestra del debugger remoto.  
+ TCP 4022 (in Visual Studio 2017) è la porta principale ed è necessaria per tutti gli scenari. Può essere configurata dalla riga di comando o nella finestra del debugger remoto.  
   
- Nella finestra del debugger remoto, fare clic su **strumenti > Opzioni**e impostare il numero di porta TCP/IP.  
+ Nella finestra del debugger remoto fare clic su **Strumenti > opzioni** e impostare il numero di porta TCP/IP.  
   
- Nella riga di comando, avviare il debugger remoto con la **porta/** switch: **msvsmon /port \<il numero di porta >**.  
+ Nella riga di comando avviare il debugger remoto con l'opzione **/port**: **msvsmon /port \<numero porta>**.  
   
- È possibile trovare tutto il debugger remoto opzioni della riga di comando nella Guida al debug remota (premere **F1** oppure fare clic su **Guida > utilizzo** nella finestra del debugger remoto).  
+ Tutte le opzioni della riga di comando del debugger remoto sono reperibili nella Guida al debug remoto (premere **F1** o fare clic su **Guida > Utilizzo** nella finestra del debugger remoto).  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 64 bit  
- Quando viene avviata la versione a 64 bit del debugger remoto, per impostazione predefinita Usa la porta 4022.  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4023. Se si esegue il debugger remoto a 32 bit, Usa 4022 e 4023 non viene utilizzato.  
+ Quando viene avviata la versione a 64 bit del debugger remoto, principale Usa la porta (4022) per impostazione predefinita.  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4023 (il numero di porta principale incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.  
   
- Questa porta è configurabile dalla riga di comando: **Msvsmon /wow64port \<il numero di porta >**.  
+ Questa porta è configurabile dalla riga di comando: **Msvsmon /wow64port \<numero porta >**.  
   
 ## <a name="the-discovery-port"></a>Porta di individuazione  
  La porta UDP 3702 viene usata per individuare le istanze in esecuzione del debugger remoto sulla rete, ad esempio la finestra di dialogo **Trova** nella finestra di dialogo **Connetti a processo** . Viene usata solo per l'individuazione di un computer che esegue il debugger remoto, pertanto è facoltativa se si ha altro un modo per conoscere il nome del computer o l'indirizzo IP del computer di destinazione. Si tratta di una porta standard per l'individuazione, quindi non è possibile configurare il numero di porta.  
   
- Se non si vuole attivare l'individuazione, è possibile avviare msvsmon dalla riga di comando con l'individuazione disabilitata:  **Msvsmon /nodiscovery**.  
+ Se non si desidera abilitare l'individuazione, è possibile avviare msvsmon dalla riga di comando con l'individuazione disabilitata:  **Msvsmon /nodiscovery**.  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Porte del debugger remoto in Azure  
  Il debugger remoto in Azure usa le porte indicate di seguito. Le porte del servizio cloud sono mappate alle porte nelle singole macchine virtuali. Tutte le porte sono TCP.  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872655"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802618"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering e catene di scambio.  
@@ -45,7 +45,7 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
   
 - Il dispositivo supporta il conteggio dei campioni (0, 2 o 4) e la qualità degli stessi (0) necessari per il formato della destinazione di rendering richiesta (membro D3D11_TEXTURE2D_DESC::Format), così come determinato da `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Se il membro D3D11_TEXTURE2D_DESC::BindFlags ha il flag D3D_BIND_SHADER_RESOUCE o D3D11_BIND_UNORDERED_ACCESS impostato, vengono create due versioni della trama: la prima con tre flag deselezionati per l'uso come destinazione di rendering, mentre l'altra è una trama non MSAA che presenta i flag intatti in modo da agire come buffer di risoluzione per la prima versione. Ciò è necessario perché l'uso di una trama MSAA come risorsa shader o per l'accesso non ordinato difficilmente sarà valido. Uno shader che agisce su di essa genererebbe ad esempio risultati non corretti perché si prevederebbe una trama non MSAA. Se la variante ha creato la trama secondaria non MSAA, quando la destinazione di rendering MSAA viene annullata dal contesto del dispositivo, il relativo contenuto viene risolto nella trama non MSAA. Analogamente, quando la destinazione di rendering MSAA si trova impegnata come risorsa condivisa o viene usata in una visualizzazione con accesso non ordinato, verrà associata la trama non MSAA risolta.  
+  Se il membro D3D11_TEXTURE2D_DESC::BindFlags ha il flag D3D_BIND_SHADER_RESOURCE o D3D11_BIND_UNORDERED_ACCESS impostato, vengono create due versioni della trama: la prima con tre flag deselezionati per l'uso come destinazione di rendering, mentre l'altra è una trama non MSAA che presenta i flag intatti in modo da agire come buffer di risoluzione per la prima versione. Ciò è necessario perché l'uso di una trama MSAA come risorsa shader o per l'accesso non ordinato difficilmente sarà valido. Uno shader che agisce su di essa genererebbe ad esempio risultati non corretti perché si prevederebbe una trama non MSAA. Se la variante ha creato la trama secondaria non MSAA, quando la destinazione di rendering MSAA viene annullata dal contesto del dispositivo, il relativo contenuto viene risolto nella trama non MSAA. Analogamente, quando la destinazione di rendering MSAA si trova impegnata come risorsa condivisa o viene usata in Unordered Access View, verrà associata la trama non MSAA risolta.  
   
   Queste varianti eseguono anche l'override delle impostazioni MSAA su tutte le catene di scambio create tramite `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` e `ID3D11CreateDeviceAndSwapChain`.  
   
