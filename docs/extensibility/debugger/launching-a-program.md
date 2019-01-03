@@ -1,9 +1,6 @@
 ---
 title: Avvio di un programma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab4432eed95fd042bd35d34b6a42d3cd036fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862153"
 ---
 # <a name="launch-a-program"></a>Avviare un programma
 Gli utenti che desiderano eseguire il debug di un programma possono premere **F5** di eseguire il debugger dall'IDE. Questo passaggio inizia una serie di eventi che risultano dell'IDE per la connessione a un motore di debug (DE), che a sua volta connesso, o collegato, per il programma come indicato di seguito:  
@@ -28,7 +25,7 @@ Gli utenti che desiderano eseguire il debug di un programma possono premere **F5
   
 2. Se viene specificato un CRI, la Germania chiama il sistema operativo per avviare il programma. Di conseguenza l'avvio del programma, viene caricato nell'ambiente in fase di esecuzione del programma. Ad esempio, se un programma viene scritto in codice MSIL, common language runtime verrà richiamato per eseguire il programma.  
   
-    oppure  
+    -oppure-  
   
     Se non viene specificato un CRI, la porta chiama il sistema operativo per avviare il programma, che fa sì che l'ambiente del programma in fase di esecuzione da caricare.  
   

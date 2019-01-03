@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: chiudere a livello di codice le cartelle di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione chiudere cartelle di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0e9cb0402894bc09ff287db1ee42001ee005678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893195"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Procedura: chiudere a livello di codice le cartelle di lavoro
+# <a name="how-to-programmatically-close-workbooks"></a>Procedura: A livello di programmazione chiudere cartelle di lavoro
   È possibile chiudere la cartella di lavoro attiva o specificare una cartella di lavoro da chiudere.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -57,10 +54,8 @@ ms.locfileid: "35673234"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)   
- [Procedura: a livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)   
- [Procedura: aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Procedura: A livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Procedura: A livello di codice aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

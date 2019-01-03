@@ -1,8 +1,6 @@
 ---
 title: Interfaccia utente delle proprietà del progetto | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
@@ -14,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fdaeb87966f051c134d7c2d2354c0f5a3e725da
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 56e2045459af33e04c728cf5e8324c44a35b6774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874057"
 ---
 # <a name="project-property-user-interface"></a>Interfaccia utente delle proprietà del progetto
 Un sottotipo di progetto è possibile usare gli elementi nel progetto **pagine delle proprietà** nella finestra di dialogo come vengono forniti dal progetto di base, nascondere o rendere intere pagine e controlli di sola lettura, come fornito o aggiungere pagine specifici del sottotipo di progetto per il **Pagine delle proprietà** nella finestra di dialogo.

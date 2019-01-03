@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugAddresses::Reset | Documenti Microsoft
-ms.custom: ''
+title: IEnumDebugAddresses::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugAddresses::Reset
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a7cd9b20dc550db8f2543fe7e214885c0544333
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 241b1aa3ea0496580182665f44405e9e98776e6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861877"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
-Questo metodo reimposta l'enumerazione al primo elemento.  
+Questo metodo reimposta l'enumerazione sul primo elemento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,13 +33,13 @@ int Reset();
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Nessuno  
+ nessuno  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Dopo che questo metodo viene chiamato, la chiamata successiva a [Avanti](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) restituisce il primo elemento dell'enumerazione.  
+ Dopo che questo metodo viene chiamato, la chiamata successiva a [successivo](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) restituisce il primo elemento dell'enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   

@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_CODE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_CODE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e8295187087915feb8b0766e363f0d4883d56d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925287"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 Descrive la posizione di un punto di interruzione del codice.  
@@ -28,13 +25,13 @@ Descrive la posizione di un punto di interruzione del codice.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-typedef struct _BP_RESOLUTION_CODE {   
+typedef struct _BP_RESOLUTION_CODE {   
    IDebugCodeContext2* pCodeContext;  
 } BP_RESOLUTION_CODE;  
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_CODE {   
+public struct BP_RESOLUTION_CODE {   
    public IDebugCodeContext2 pCodeContext;  
 };  
 ```  
@@ -49,7 +46,7 @@ public struct BP_RESOLUTION_CODE {
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: a livello di codice compilare tabelle di Word con le proprietà documento'
-ms.custom: ''
+title: 'Procedura: A livello di codice compilare tabelle di Word con le proprietà documento'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b996a8d66ceb4947d35dbbba7323b70c21c065fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeb4d61211f6b65bf700adf1a52ee4b17ed36008
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893892"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: a livello di codice compilare tabelle di Word con le proprietà documento
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: A livello di codice compilare tabelle di Word con le proprietà documento
   L'esempio seguente crea una tabella di Microsoft Office Word nella parte superiore del documento e la popola con le proprietà del documento host.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -97,9 +94,7 @@ ms.locfileid: "49900397"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creazione di tabelle di Word a livello di codice](../vsto/how-to-programmatically-create-word-tables.md)   
- [Procedura: aggiungere a livello di codice di testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Procedura: a livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Procedura: A livello di codice, creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

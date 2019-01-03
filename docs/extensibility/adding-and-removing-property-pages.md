@@ -1,9 +1,6 @@
 ---
 title: Aggiunta e rimozione di pagine delle proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885317"
 ---
 # <a name="add-and-remove-property-pages"></a>Aggiungere e rimuovere le pagine delle proprietà
 Progettazione progetti fornisce una posizione centralizzata per la gestione delle proprietà del progetto, le impostazioni e le risorse in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Viene visualizzato come un'unica finestra di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo (IDE) integrato e contiene un numero di riquadri che sono accessibili tramite le schede sulla sinistra a destra. I riquadri disponibili (noto anche come pagine delle proprietà) in Creazione progetti variano in base alla lingua e tipo di progetto. Creazione progetti, è possibile accedervi tramite il **delle proprietà** comando il **progetto** menu.  

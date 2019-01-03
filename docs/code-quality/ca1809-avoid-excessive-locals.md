@@ -2,7 +2,6 @@
 title: 'CA1809: Evitare un numero eccessivo di variabili locali'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1809
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0135241e81fb020d5f5107bcb76e37bad16fb56d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0824517aa7d5dc05f9a0297ca44cd235f5800653
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904016"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitare un numero eccessivo di variabili locali
 
@@ -45,4 +44,4 @@ ms.locfileid: "49828507"
  È sicuro per eliminare un avviso da questa regola, o disabilitare la regola, se le prestazioni non sono un problema.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)

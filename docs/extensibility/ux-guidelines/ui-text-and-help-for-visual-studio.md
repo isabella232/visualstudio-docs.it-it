@@ -1,9 +1,6 @@
 ---
 title: Testo dell'interfaccia utente e la Guida di Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907166"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e la Guida di Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Testo dell'interfaccia utente e terminologia  
@@ -262,7 +259,7 @@ ms.locfileid: "49842235"
   
 |Good|non valido|  
 |----------|---------|  
-|"Il numero composto non è più nel servizio. Verificare il numero e Riprova o comporre 0 per l'operatore."|-"Errore (449): numero non valido"<br />-"Questo errore di eccezione non gestita indica che l'operazione completata".<br /><br /> ![Messaggio di errore non valido in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
+|"Il numero composto non è più nel servizio. Verificare il numero e Riprova o comporre 0 per l'operatore."|-"Errore (449): Numero non valido"<br />-"Questo errore di eccezione non gestita indica che l'operazione completata".<br /><br /> ![Messaggio di errore non valido in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
   
 ## <a name="accessing-help"></a>Accedere alla Guida  
   

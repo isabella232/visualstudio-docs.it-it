@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907826"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -55,7 +54,7 @@ Per assicurarsi che non entrino in conflitto con la progettazione codice, è pos
 
 Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-È possibile convalidare il codice manualmente da un diagramma di dipendenze open in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare codice automaticamente quando si eseguono compilazioni locali o le pipeline di Azure Build. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
+È possibile convalidare il codice manualmente da un diagramma di dipendenze open in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare codice automaticamente quando si eseguono compilazioni locali o le pipeline di Azure Build. Vedere [Video di Channel 9: Progettare e convalidare l'architettura utilizzando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Se si desidera eseguire la convalida dei livelli tramite Team Foundation Server (TFS), è necessario installare anche la stessa versione di Visual Studio nel server di compilazione.
@@ -228,12 +227,12 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 
 | **Sintassi errore** | **Descrizione dell'errore** |
 |-|-|
-| DV0001: **dipendenza non valida** | Questo problema viene segnalato quando un elemento di codice (spazio dei nomi, tipo, membro) mappato a un riferimento di livello un elemento di codice mappato a un altro livello, ma non vi è alcuna freccia di dipendenza tra questi livelli nel diagramma di convalida delle dipendenze che contiene questo livelli. Si tratta di una violazione di vincolo di dipendenza. |
-| DV1001: **nome spazio dei nomi non valido** | Questo problema viene segnalato in un elemento di codice associato a un livello che la proprietà "Consentito Namespace Names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la sintassi di "Consentiti nomi Namespace" deve essere un elenco di punti e virgola degli spazi dei nomi in cui il codice gli elementi associati sono livello sono consentite da definire. |
-| DV1002: **dipendenza sullo spazio dei nomi spazi** | Questo problema viene segnalato in un elemento di codice associati a un livello e che fanno riferimento a un altro elemento di codice definito in uno spazio dei nomi che viene definito nella proprietà "Namespace spazi" del livello. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Spazi dei nomi" è definita come un elenco separato da punti e virgola degli spazi dei nomi che non deve essere fatto riferimento negli elementi di codice associati a questo livello. |
-| DV1003: **nome spazio dei nomi non consentito** | Questo problema viene segnalato in un elemento di codice associato a un livello che "Non consentiti nomi Namespace" proprietà contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Nome spazio dei nomi non consentito" è definita come un elenco separato da punti e virgola degli spazi dei nomi in cui il codice non devono essere definiti gli elementi associati a questo livello. |
-| DV3001: **collegamento mancante** | Livello '*nomelivello*'Collega a'*artefatto*' che non viene trovato. Probabilmente manca un riferimento a un assembly. |
-| DV9001: **trovata dall'analisi dell'architettura errori interni** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
+| DV0001: **Dipendenza non valida** | Questo problema viene segnalato quando un elemento di codice (spazio dei nomi, tipo, membro) mappato a un riferimento di livello un elemento di codice mappato a un altro livello, ma non vi è alcuna freccia di dipendenza tra questi livelli nel diagramma di convalida delle dipendenze che contiene questo livelli. Si tratta di una violazione di vincolo di dipendenza. |
+| DV1001: **Nome dello spazio dei nomi non valido** | Questo problema viene segnalato in un elemento di codice associato a un livello che la proprietà "Consentito Namespace Names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la sintassi di "Consentiti nomi Namespace" deve essere un elenco di punti e virgola degli spazi dei nomi in cui il codice gli elementi associati sono livello sono consentite da definire. |
+| DV1002: **Dipendenza da spazi dello spazio dei nomi** | Questo problema viene segnalato in un elemento di codice associati a un livello e che fanno riferimento a un altro elemento di codice definito in uno spazio dei nomi che viene definito nella proprietà "Namespace spazi" del livello. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Spazi dei nomi" è definita come un elenco separato da punti e virgola degli spazi dei nomi che non deve essere fatto riferimento negli elementi di codice associati a questo livello. |
+| DV1003: **Nome dello spazio dei nomi non consentito** | Questo problema viene segnalato in un elemento di codice associato a un livello che "Non consentiti nomi Namespace" proprietà contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Nome spazio dei nomi non consentito" è definita come un elenco separato da punti e virgola degli spazi dei nomi in cui il codice non devono essere definiti gli elementi associati a questo livello. |
+| DV3001: **Collegamento mancante** | Livello '*nomelivello*'Collega a'*artefatto*' che non viene trovato. Probabilmente manca un riferimento a un assembly. |
+| DV9001: **Analisi dell'architettura trovati gli errori interni** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
 
 ## <a name="see-also"></a>Vedere anche
 

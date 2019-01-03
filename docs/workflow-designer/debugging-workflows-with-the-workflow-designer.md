@@ -3,7 +3,6 @@ title: Debug dei flussi di lavoro mediante Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923428"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Eseguire il debug dei flussi di lavoro con la finestra di progettazione del flusso di lavoro
 
@@ -32,16 +31,16 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 
 - Premere **F5** per avviare l'esecuzione di un'istanza del flusso di lavoro o per continuare a eseguire dopo aver raggiunto un punto di interruzione.
 
-- Usare debug remoto. Per informazioni sul debug remoto, vedere [procedura: abilitare il debug remoto](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
+- Usare debug remoto. Per informazioni sul debug remoto, vedere [come: Abilitare il debug remoto](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 
    > [!NOTE]
    > Se l'applicazione del flusso di lavoro ha come destinazione x86 architettura ed è contenuta in un computer che eseguono un sistema operativo a 64 bit, il debug remoto non funzionerà a meno che non è installato Visual Studio nel computer remoto o la destinazione per l'applicazione del flusso di lavoro viene modificata in  **Qualsiasi CPU**.
 
-## <a name="step-through-code"></a>Esaminare il codice
+## <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
 
-- **Esegui istruzione**: passaggio in un'attività premendo **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione.
+- **Passaggio**: Passaggio in un'attività premendo **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione.
 
-- **Esci:** uscire da un'attività premendo **MAIUSC**+**F11**. Uscendo da un'istruzione/routine di un'attività, l'attività corrente e tutte le relative attività di pari livello vengono eseguite fino al completamento. Il debugger reimposta quindi il padre dell'attività corrente. Uscendo da un gestore del codice, il debugger reimposta l'attività alla quale è associato il gestore.
+- **Esci da istruzione:** Uscire da un'attività premendo **Shift**+**F11**. Uscendo da un'istruzione/routine di un'attività, l'attività corrente e tutte le relative attività di pari livello vengono eseguite fino al completamento. Il debugger reimposta quindi il padre dell'attività corrente. Uscendo da un gestore del codice, il debugger reimposta l'attività alla quale è associato il gestore.
 
 - **Esegui istruzione/routine**: Esegui istruzione/routine di un'attività premendo **F10**. Quando viene eseguita l'istruzione/routine di un oggetto CompositeActivity, il debugger reimposta il primo figlio eseguibile del CompositeActivity. Quando viene eseguita l'istruzione/routine di un attività diversa da CompositeActivity, ad esempio <xref:System.Activities.Statements.Assign>, il debugger esegue l'attività e i gestori ad essa associati e reimposta l’attività successiva. Se l'attività eseguita è l'ultima attività figlio di un oggetto CompositeActivity, dopo l'esecuzione il debugger reimposterà l'attività padre.
 

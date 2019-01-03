@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessQueryProperties | Documenti Microsoft
-ms.custom: ''
+title: IDebugProcessQueryProperties | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessQueryProperties
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac071afd9f9ce7d45a05408aeec32117776832f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b74b410e64cd6f57b828947d829461bc9d490776
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905491"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 Questa interfaccia è implementata da un'interfaccia di estensione [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) i responsabili dell'implementazione. Consente all'implementatore ottenere informazioni sull'ambiente dei processi di debug.  
@@ -41,12 +38,12 @@ IDebugProcessQueryProperties: IUnknown
 |[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Query per i valori delle proprietà.|  
   
 ## <a name="remarks"></a>Note  
- Questa interfaccia viene implementata raramente.  
+ Questa interfaccia viene raramente implementata.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

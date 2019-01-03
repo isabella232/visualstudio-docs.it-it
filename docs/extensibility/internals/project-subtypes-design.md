@@ -1,9 +1,6 @@
 ---
 title: Progettazione i sottotipi di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9032da4a8884c940973865016bf0bbec955ebb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bf1b3f57fe82a4f5f6747c2667e0849f6ce6456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858023"
 ---
 # <a name="project-subtypes-design"></a>Progettazione di sottotipi di progetto
 Sottotipi di progetto consentono a pacchetti VSPackage di estendere i progetti basati su Microsoft Build Engine (MSBuild). L'uso di aggregazione consente di riutilizzare la maggior parte del sistema del progetto core gestite implementata in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ma comunque personalizzare il comportamento per un determinato scenario.  

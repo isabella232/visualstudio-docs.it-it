@@ -1,13 +1,8 @@
 ---
 title: 'Procedura dettagliata: Creazione di una pagina di applicazione di SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867839"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Procedura dettagliata: Creare una pagina dell'applicazione SharePoint
  
@@ -78,7 +73,7 @@ Per creare una pagina applicazione, aggiungere un' **pagina dell'applicazione** 
 
 L'elemento pagina applicazione consente di usare una finestra di progettazione per aggiungere i controlli ASP.NET alla pagina dell'applicazione. Questa finestra di progettazione è la stessa finestra di progettazione utilizzato in Visual Web Developer. Aggiungere un'etichetta, un elenco di pulsanti di opzione e una tabella per la **origine** visualizzazione della finestra di progettazione e quindi impostare le proprietà come si farebbe quando si progetta di qualsiasi pagina ASP.NET standard.
 
-1. Nella barra dei menu, scegliere **View** > **casella degli strumenti**.
+1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
 
 2. Nel nodo Standard della **casella degli strumenti**, effettuare una delle operazioni seguenti:
 
@@ -108,7 +103,7 @@ Gestire i controlli in una pagina dell'applicazione esattamente come si farebbe 
 
      File di codice della pagina applicazione verrà aperto nell'Editor del codice.
 
-2. Aggiungere il metodo seguente alla classe `SearchItems`. Questo codice gestisce il <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> eventi del <xref:System.Web.UI.WebControls.DropDownList> chiamando un metodo che verrà creato più avanti in questa procedura dettagliata.
+2. Aggiungere il metodo seguente alla classe `SearchItems` . Questo codice gestisce il <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> eventi del <xref:System.Web.UI.WebControls.DropDownList> chiamando un metodo che verrà creato più avanti in questa procedura dettagliata.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -118,12 +113,12 @@ Gestire i controlli in una pagina dell'applicazione esattamente come si farebbe 
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Aggiungere il metodo seguente alla classe `SearchItems`. Questo metodo scorre tutti i siti nella server farm e ricerca gli elementi creati o modificati dall'utente corrente.
+4. Aggiungere il metodo seguente alla classe `SearchItems` . Questo metodo scorre tutti i siti nella server farm e ricerca gli elementi creati o modificati dall'utente corrente.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Aggiungere il metodo seguente alla classe `SearchItems`. Questo metodo consente di visualizzare gli elementi creati o modificati dall'utente corrente nella tabella.
+5. Aggiungere il metodo seguente alla classe `SearchItems` . Questo metodo consente di visualizzare gli elementi creati o modificati dall'utente corrente nella tabella.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -158,5 +153,5 @@ Ulteriori informazioni su come progettare contenuto pagina di SharePoint tramite
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)  
+[Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)  
 [Tipo di pagina applicazione layouts](http://go.microsoft.com/fwlink/?LinkID=169274)

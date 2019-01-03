@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: proteggere a livello di codice le cartelle di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione proteggere cartelle di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900775"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Procedura: proteggere a livello di codice le cartelle di lavoro
+# <a name="how-to-programmatically-protect-workbooks"></a>Procedura: A livello di programmazione proteggere cartelle di lavoro
   È possibile proteggere una cartella di lavoro di Microsoft Office Excel in modo che gli utenti non possono aggiungere o eliminare fogli di lavoro e anche rimuovere la protezione della cartella di lavoro a livello di codice. È facoltativamente possibile specificare una password, indicare se si desidera proteggere (in modo che gli utenti non possono spostare i fogli) la struttura e indicare se si vuole windows della cartella di lavoro protetti.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- La protezione di una cartella di lavoro non impedisce agli utenti di modificare le celle. Per proteggere i dati, è necessario proteggere i fogli di lavoro. Per altre informazioni, vedere [procedura: proteggere i fogli di lavoro a livello di programmazione](../vsto/how-to-programmatically-protect-worksheets.md).  
+ La protezione di una cartella di lavoro non impedisce agli utenti di modificare le celle. Per proteggere i dati, è necessario proteggere i fogli di lavoro. Per altre informazioni, vedere [Procedura: Proteggere i fogli di lavoro a livello di programmazione](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Gli esempi di codice seguente usano una variabile per contenere una password ottenuta dall'utente.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35671911"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)   
- [Procedura: proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Procedura: nascondere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Procedura: Nascondere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

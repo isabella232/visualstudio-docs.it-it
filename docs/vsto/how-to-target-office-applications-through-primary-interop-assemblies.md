@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari'
-ms.custom: ''
+title: 'Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845902"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari
   Quando si crea un nuovo progetto di Office, in Visual Studio vengono aggiunti automaticamente riferimenti agli assembly di interoperabilità primari (PIA) di Microsoft Office necessari per la compilazione del progetto. È necessario aggiungere riferimenti agli altri assembly di interoperabilità primari (PIA) negli scenari seguenti:  
   
 - Si vuole usare funzionalità di altre applicazioni di Microsoft Office nel progetto, ad esempio, funzionalità di Microsoft Office Excel in un progetto per Microsoft Office Word.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863750"
  [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)   
- [Procedura: assembly di interoperabilità primari di installazione di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

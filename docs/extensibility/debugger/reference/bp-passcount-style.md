@@ -1,9 +1,6 @@
 ---
 title: BP_PASSCOUNT_STYLE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_PASSCOUNT_STYLE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f382c83813eb794fc48e33310ba8381030b424fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e10c1c2f97e56a1ff24aa09a956b628b646985f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864375"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Specifica la condizione associata con il punto di interruzione pass che fa sì che il punto di interruzione da attivare.  
@@ -28,7 +25,7 @@ Specifica la condizione associata con il punto di interruzione pass che fa sì c
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-enum enum_BP_PASSCOUNT_STYLE {   
+enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
@@ -38,7 +35,7 @@ typedef DWORD BP_PASSCOUNT_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_PASSCOUNT_STYLE {   
+public enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
@@ -65,7 +62,7 @@ public enum enum_BP_PASSCOUNT_STYLE {
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

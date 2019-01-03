@@ -1,9 +1,6 @@
 ---
 title: Voci del Registro di sistema per componenti aggiuntivi VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909112"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del Registro di sistema per componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.  
@@ -74,12 +71,12 @@ ms.locfileid: "50673016"
   
  Nella tabella seguente sono elencate le voci presenti in questa chiave del Registro di sistema.  
   
-|Voce|Tipo|Valore|  
+|Voce|Tipo|Value|  
 |-----------|----------|-----------|  
 |**Descrizione**|REG_SZ|Obbligatorio. Breve descrizione del componente aggiuntivo VSTO.<br /><br /> Questa descrizione viene visualizzata quando l'utente seleziona il componente aggiuntivo VSTO nel riquadro **Componenti aggiuntivi** della finestra di dialogo **Opzioni** nell'applicazione di Microsoft Office.|  
 |**FriendlyName**|REG_SZ|Obbligatorio. Nome descrittivo del componente aggiuntivo VSTO visualizzato nella finestra di dialogo **Componenti aggiuntivi COM** dell'applicazione di Microsoft Office. Il valore predefinito è l'ID del componente aggiuntivo VSTO.|  
-|**LoadBehavior**|REG_DWORD|Obbligatorio. Valore che specifica quando l'applicazione tenta di caricare il componente aggiuntivo VSTO e lo stato corrente del componente aggiuntivo VSTO (caricato o scaricato).<br /><br /> Per impostazione predefinita, questo valore è impostato su 3, a indicare che il componente aggiuntivo VSTO viene caricato all'avvio. Per altre informazioni, vedere [valori di LoadBehavior](#LoadBehavior). **Nota:** se un utente disabilita il componente aggiuntivo VSTO, tale azione Modifica **LoadBehavior** valore il **HKEY_CURRENT_USER** hive del Registro di sistema. Per ogni utente, il valore della **LoadBehavior** nell'hive HKEY_CURRENT_USER ha la precedenza il valore predefinito **LoadBehavior** definito nel **HKEY_LOCAL_MACHINE** hive.|  
-|**Manifest**|REG_SZ|Obbligatorio. Percorso completo del manifesto della distribuzione del componente aggiuntivo VSTO. Può essere un percorso contenuto nel computer locale, una condivisione di rete (UNC) o un server Web (HTTP).<br /><br /> Se si usa Windows Installer per distribuire la soluzione, è necessario aggiungere il prefisso **file:///** al percorso di **manifesto** . È anche necessario accodare la stringa  **&#124;vstolocal** (ovvero, il carattere di barra verticale **&#124;** seguita da **vstolocal**) alla fine di questo percorso. Il suffisso garantisce che la soluzione venga caricata dalla cartella di installazione e non dalla cache ClickOnce. Per altre informazioni, vedere [distribuire una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:** quando si compila un componente aggiuntivo VSTO nel computer di sviluppo, Visual Studio aggiunge automaticamente il  **&#124;vstolocal** stringa per questa voce del Registro di sistema.|  
+|**LoadBehavior**|REG_DWORD|Obbligatorio. Valore che specifica quando l'applicazione tenta di caricare il componente aggiuntivo VSTO e lo stato corrente del componente aggiuntivo VSTO (caricato o scaricato).<br /><br /> Per impostazione predefinita, questo valore è impostato su 3, a indicare che il componente aggiuntivo VSTO viene caricato all'avvio. Per altre informazioni, vedere [valori di LoadBehavior](#LoadBehavior). **Nota:**  Se un utente disabilita il componente aggiuntivo VSTO, tale azione Modifica **LoadBehavior** nel valore di **HKEY_CURRENT_USER** hive del Registro di sistema. Per ogni utente, il valore della **LoadBehavior** nell'hive HKEY_CURRENT_USER ha la precedenza il valore predefinito **LoadBehavior** definito nel **HKEY_LOCAL_MACHINE** hive.|  
+|**Manifest**|REG_SZ|Obbligatorio. Percorso completo del manifesto della distribuzione del componente aggiuntivo VSTO. Può essere un percorso contenuto nel computer locale, una condivisione di rete (UNC) o un server Web (HTTP).<br /><br /> Se si usa Windows Installer per distribuire la soluzione, è necessario aggiungere il prefisso **file:///** al percorso di **manifesto** . È anche necessario accodare la stringa  **&#124;vstolocal** (ovvero, il carattere di barra verticale **&#124;** seguita da **vstolocal**) alla fine di questo percorso. Il suffisso garantisce che la soluzione venga caricata dalla cartella di installazione e non dalla cache ClickOnce. Per altre informazioni, vedere [distribuire una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:**  Quando si compila un componente aggiuntivo VSTO nel computer di sviluppo, Visual Studio aggiunge automaticamente il  **&#124;vstolocal** stringa di questa voce del Registro di sistema.|  
   
 ###  <a name="OutlookEntries"></a> Voci del Registro di sistema per le aree del modulo di Outlook  
  Se si crea un'area del modulo personalizzata in un componente aggiuntivo VSTO per Outlook, vengono usate voci aggiuntive del Registro di sistema per registrare l'area con Outlook. Queste voci vengono create in una chiave del Registro di sistema diversa per ogni classe di messaggio supportata dall'area. Queste chiavi del Registro di sistema si trovano nel percorso seguente, dove *radice* viene **HKEY_CURRENT_USER** oppure **HKEY_LOCAL_MACHINE**.  
@@ -112,5 +109,3 @@ ms.locfileid: "50673016"
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
-  
-  

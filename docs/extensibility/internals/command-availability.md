@@ -1,8 +1,6 @@
 ---
 title: Comando disponibilità | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915870"
 ---
 # <a name="command-availability"></a>Disponibilità dei comandi
 
@@ -30,17 +28,17 @@ I contesti dei comandi seguenti sono i più comuni:
 
 - IDE: I comandi forniti dall'IDE sono sempre disponibili.
 
-- VSPackage: I pacchetti VSPackage possono definire quando i comandi devono essere visualizzate o nascoste.
+- Pacchetto di Visual Studio: I VSPackage possono definire quando i comandi devono essere visualizzate o nascoste.
 
-- Progetto: Progetto comandi vengono visualizzati solo per il progetto attualmente selezionato.
+- Progetto: I comandi di progetto vengono visualizzati solo per il progetto attualmente selezionato.
 
-- Editor: Editor solo uno può essere attivo contemporaneamente. Sono disponibili comandi dall'editor attivo. Un editor collabora con un servizio di linguaggio. Il servizio di linguaggio deve elaborare i relativi comandi nel contesto dell'editor associata.
+- Editor: Solo un editor può essere attivo alla volta. Sono disponibili comandi dall'editor attivo. Un editor collabora con un servizio di linguaggio. Il servizio di linguaggio deve elaborare i relativi comandi nel contesto dell'editor associata.
 
-- Tipo di file: un editor può caricare più di un tipo di file. I comandi disponibili possono variare a seconda del tipo di file.
+- Tipo di file: Un editor può caricare più di un tipo di file. I comandi disponibili possono variare a seconda del tipo di file.
 
-- Finestra attiva: l'ultima finestra di documento attivo imposta il contesto dell'interfaccia utente per i tasti di scelta rapida. Tuttavia, una finestra degli strumenti con una tabella di chiave di associazione che è simile al web browser interno è stato possibile impostare anche il contesto dell'interfaccia utente. Per le finestre di documento a più schede, ad esempio l'editor HTML, ogni scheda ha un contesto di comandi diversi GUID. Dopo aver registrata una finestra degli strumenti, è sempre disponibile nel **vista** menu.
+- Finestra attiva: L'ultima finestra di documento attivo imposta il contesto dell'interfaccia utente per i tasti di scelta rapida. Tuttavia, una finestra degli strumenti con una tabella di chiave di associazione che è simile al web browser interno è stato possibile impostare anche il contesto dell'interfaccia utente. Per le finestre di documento a più schede, ad esempio l'editor HTML, ogni scheda ha un contesto di comandi diversi GUID. Dopo aver registrata una finestra degli strumenti, è sempre disponibile nel **vista** menu.
 
-- Contesto dell'interfaccia utente: contesti dell'interfaccia utente sono identificati da valori del <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> classe, ad esempio <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> quando viene compilata la soluzione, o <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> quando il debugger è attivo. Più contesti dell'interfaccia utente possono essere attivi contemporaneamente.
+- Contesto dell'interfaccia utente: Contesti dell'interfaccia utente sono identificati da valori del <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> classe, ad esempio <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> quando viene compilata la soluzione, o <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> quando il debugger è attivo. Più contesti dell'interfaccia utente possono essere attivi contemporaneamente.
 
 ## <a name="define-custom-context-guids"></a>Definire i GUID di contesto personalizzato
 

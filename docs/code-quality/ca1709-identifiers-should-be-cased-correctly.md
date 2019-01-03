@@ -1,8 +1,7 @@
 ---
-title: 'CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole'
+title: 'CA1709: Gli identificatori devono essere digitati correttamente'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881727"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "49891349"
 
  Questa regola suddivide il nome in base alle maiuscole e minuscole di parole e controlla le parole di due lettere rispetto a un elenco di parole di due lettere comuni, ad esempio "In" o "My". Se non viene trovata una corrispondenza, la parola è considerata un acronimo. Inoltre, questa regola presuppone che è stata rilevata l'acronimo quando il nome contiene quattro lettere maiuscole in una riga o tre lettere maiuscole in una riga alla fine del nome.
 
- Per convenzione, gli acronimi di due lettere usano lettere maiuscole e gli acronimi di tre o più caratteri utilizzano la convenzione Pascal maiuscole e minuscole. Gli esempi seguenti usano questa convenzione di denominazione: 'DB', 'CR', 'Cpa' e 'Ecma'. Negli esempi seguenti violano la convenzione: 'Io', 'XML' e 'DoD' e per i nomi non di parametro, "xp" e "cpl".
+ Per convenzione, gli acronimi di due lettere usano lettere maiuscole e gli acronimi di tre o più caratteri utilizzano la convenzione Pascal maiuscole e minuscole. Gli esempi seguenti usano questa convenzione di denominazione: 'DB', 'CR', 'Cpa' e 'Ecma'. Negli esempi seguenti non rispettano la convenzione: 'Io', 'XML' e 'DoD' e per i nomi non di parametro, "xp" e "cpl".
 
  'ID' è maiuscole/minuscole speciale per causare una violazione della regola. 'ID' non è un acronimo bensì l'abbreviazione di 'identification'.
 
@@ -60,7 +59,7 @@ ms.locfileid: "49891349"
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  È possibile eliminare questo avviso se si dispone di proprie convenzioni di denominazione oppure se l'identificatore rappresenta un nome appropriato, ad esempio, il nome di una società o una tecnologia.
 
- È anche possibile aggiungere condizioni specifiche, le abbreviazioni e gli acronimi che a un dizionario personalizzato di analisi del codice. I termini specificati nel dizionario personalizzato non genererà le violazioni di questa regola. Per altre informazioni, vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ È anche possibile aggiungere condizioni specifiche, le abbreviazioni e gli acronimi che a un dizionario personalizzato di analisi del codice. I termini specificati nel dizionario personalizzato non genererà le violazioni di questa regola. Per altre informazioni, vedere [Procedura: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

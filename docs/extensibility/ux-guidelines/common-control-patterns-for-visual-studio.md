@@ -1,9 +1,6 @@
 ---
 title: Pattern di controllo comuni per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832635"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Pattern di controllo comuni per Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Controlli comuni  
@@ -49,7 +46,7 @@ La prima cosa da prendere in considerazione quando lo stile di controlli è se i
   
 -   **Le finestre di dialogo standard (utilità):** non a tema. Non reimpostare come modelli. Usare i valori predefiniti di stile di controllo di base.  
   
--   **Strumento windows, editor di documenti, le aree di progettazione e finestre di dialogo con tema:** usare specializzato aspetto a tema usando il servizio di colore.  
+-   **Finestre degli strumenti, editor di documenti, le aree di progettazione e finestre di dialogo con tema:** Usare specializzato aspetto a tema usando il servizio di colore.  
   
 ###  <a name="BKMK_Scrollbars"></a> Barre di scorrimento  
  Le barre di scorrimento devono seguire [barre di scorrimento comuni modelli di interazione per Windows](/windows/desktop/Controls/about-scroll-bars) a meno che non si è ampliate con informazioni sul contenuto, come illustrato nell'editor del codice.  
@@ -69,7 +66,7 @@ La prima cosa da prendere in considerazione quando lo stile di controlli è se i
   
 -   Necessari i campi devono avere  **\<necessarie >** come filigrane al loro interno. Non è necessario modificare il colore di sfondo tranne in rare situazioni.  
   
--   Convalida degli errori: vedere [notifiche e avanzamento per Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Convalida degli errori: Vedere [notifiche e avanzamento per Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   I campi di input devono essere ridimensionati per adattarsi al contenuto, non per adattarsi alla larghezza della finestra in cui vengono visualizzati né arbitrariamente corrisponde alla lunghezza di un campo lungo, ad esempio un percorso. Lunghezza potrebbe essere un'indicazione all'utente di limitazioni per quanto riguarda il numero di caratteri è consentito nel campo.  
   
@@ -299,7 +296,7 @@ Linee guida per il pulsante:
 #### <a name="graphical-buttons"></a>Pulsanti con interfaccia grafici  
 Alcuni pulsanti devono sempre usare un'immagine grafica e testo per liberare spazio ed evitare problemi di localizzazione non includere mai. Questi vengono spesso usati in altri elenchi ordinabili e selezioni di campo.  
   
-> **Nota:** gli utenti debbano premere tab per questi pulsanti (non sono presenti chiavi di accesso), quindi, inserirli in un ordine ragionevole. Mappa di `name` proprietà del pulsante per l'azione che richiede in modo che gli screen reader interpretare correttamente l'azione sul pulsante.  
+> **Nota:** Gli utenti devono premere tab per questi pulsanti (non sono presenti chiavi di accesso), quindi, inserirli in un ordine ragionevole. Mappa di `name` proprietà del pulsante per l'azione che richiede in modo che gli screen reader interpretare correttamente l'azione sul pulsante.  
   
 | Funzione | Button |  
 | --- | --- |  
@@ -371,23 +368,23 @@ Visualizzazione albero dovrebbe offrono la possibilità di selezionare gli eleme
 ##### <a name="tree-view-control"></a>Controllo di visualizzazione albero  
 Controlli dell'albero di Visual Studio devono seguire la navigazione da tastiera comuni:  
   
--   **Freccia verso l'alto:** spostando verso l'alto dell'albero per selezionare elementi  
+-   **Freccia su:** Selezionare gli elementi spostando l'alto nell'albero  
   
--   **Freccia giù:** spostando verso il basso l'albero per selezionare elementi  
+-   **Freccia giù:** Selezionare gli elementi spostando verso il basso la struttura ad albero  
   
--   **Freccia destra:** espandere un nodo dell'albero  
+-   **Freccia destra:** Espandere un nodo dell'albero  
   
--   **Freccia sinistra:** comprimere un nodo dell'albero  
+-   **Freccia sinistra:** Comprimere un nodo dell'albero  
   
--   **Immettere chiave:** avviare, caricare, eseguire l'elemento selezionato  
+-   **Immettere la chiave:** Avviare, caricare ed eseguire l'elemento selezionato  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Albero (visualizzazione struttura ad albero e griglia)  
 Un controllo albero è un controllo complesso che contiene una visualizzazione struttura ad albero all'interno di una griglia. Espansione e compressione di esplorazione dell'albero deve rispettare gli stessi comandi da tastiera in una visualizzazione ad albero, con le aggiunte seguenti:  
   
--   **Freccia destra:** espandere un nodo. Dopo aver espanso il nodo, deve continuare passando alla colonna più vicina a destra. Navigazione deve essere interrotta alla fine della riga.  
+-   **Freccia destra:** Espandere un nodo. Dopo aver espanso il nodo, deve continuare passando alla colonna più vicina a destra. Navigazione deve essere interrotta alla fine della riga.  
   
--   **Scheda:** consente di passare alla più vicina cella a destra.  Alla fine della riga, navigazione continua alla riga successiva.  
+-   **Scheda:** Consente di passare alla più vicina cella a destra.  Alla fine della riga, navigazione continua alla riga successiva.  
   
--   **Maiusc + Tab:** consente di passare per la cella più vicina a sinistra.  All'inizio della riga, navigazione continua nella cella più a destra nella riga precedente.  
+-   **Maiusc + Tab:** Consente di spostarsi nella cella più vicino a sinistra.  All'inizio della riga, navigazione continua nella cella più a destra nella riga precedente.  
   
 ![Un controllo albero in Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Un controllo albero in Visual Studio

@@ -1,9 +1,6 @@
 ---
 title: Servizio di linguaggio e punti di estensione dell'Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907962"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione del servizio e l'editor di linguaggio
 L'editor fornisce punti di estensione che è possibile estendere come parti componente Managed Extensibility Framework (MEF), tra cui la maggior parte delle funzionalità del servizio linguaggio. Ecco le categorie di punto di estensione principale:  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associata a un'area di controllo.  
   
   > [!NOTE]
-  >  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione HighlightWordTag [questa procedura dettagliata: evidenziazione testo](../extensibility/walkthrough-highlighting-text.md).  
+  >  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione di HighlightWordTag nella [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associati con aree che possono essere espansi o compressi nella struttura.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Per applicare la definizione del formato di un tag, fare riferimento al nome che è impostato nell'attributo nome della classe (non il nome visualizzato).  
   
 > [!NOTE]
->  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition nello [questa procedura dettagliata: evidenziazione testo](../extensibility/walkthrough-highlighting-text.md).  
+>  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition in [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Estendere le aree di controllo  
  Le aree di controllo definiscono gli effetti visivi che possono essere aggiunti al testo che viene visualizzato in una visualizzazione di testo o al testo della visualizzazione stessa. È possibile definire la propria area di controllo come qualsiasi tipo di <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome dell'area di controllo.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordinamento dell'area di controllo per quanto riguarda gli altri livelli dell'area di controllo. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definisce quattro livelli predefinito: selezione, struttura, punto di inserimento e testo.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordinamento dell'area di controllo per quanto riguarda gli altri livelli dell'area di controllo. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definisce quattro livelli predefiniti: Selezione, la modalità struttura, punto di inserimento e il testo.  
   
   Nell'esempio seguente illustra gli attributi di esportazione su una definizione del livello di area di controllo.  
   
@@ -546,11 +543,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Per altre informazioni sull'implementazione di origini di IntelliSense, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Visualizzazione rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procedura dettagliata: Visualizzare le descrizioni comando informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Procedura dettagliata: Aggiunta di supporto per la firma](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Procedura dettagliata: Visualizzare la Guida di firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procedura dettagliata: Visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procedura dettagliata: visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implement-an-intellisense-controller"></a>Implementare un controller IntelliSense  
  Per personalizzare un controller, è necessario implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> interfaccia. Inoltre, è necessario implementare un provider di controller insieme gli attributi seguenti:  
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Per altre informazioni sull'uso di controller IntelliSense, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Visualizzazione rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Procedura dettagliata: Visualizzare le descrizioni comando informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

@@ -1,9 +1,6 @@
 ---
 title: Modulo di supporto nei flussi di lavoro | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857971"
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
   Quattro tipi di moduli possono essere utilizzati in un flusso di lavoro: associazione, avvio, attività e la modifica. Questi tipi di form possono basarsi su un form ASPX o un modulo di InfoPath. Il livello di supporto che [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce per un particolare modulo dipende da diversi fattori, che sono descritte nelle tabelle seguenti. Per altre informazioni sui tipi di modulo del flusso di lavoro, vedere [Cenni preliminari sui form del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=185228).  
@@ -34,8 +31,8 @@ ms.locfileid: "51296190"
   
 |Tipo di modulo|Flusso di lavoro creato in Visual Studio con un Form ASPX|Flusso di lavoro creato in Visual Studio usando un modulo di InfoPath|  
 |---------------|---------------------------------------------------------|-----------------------------------------------------------------|  
-|Associazione|-Un form di associazione ASPX può essere aggiunto al flusso di lavoro usando il **Form di associazione del flusso di lavoro** modello di elemento.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene aggiunto, rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.<br />-Per altre informazioni, vedere [procedura dettagliata: creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Non è presente alcun modello di modulo InfoPath associazione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Non è prevista alcuna integrazione tra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e progettazione di InfoPath.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
-|Avvio|-Un form di avvio di ASPX può essere aggiunto al flusso di lavoro usando il **Form di avvio del flusso di lavoro** modello di elemento.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene aggiunto, rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.<br />-Per altre informazioni, vedere [procedura dettagliata: creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Non è presente alcun modello di modulo InfoPath associazione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Non è prevista alcuna integrazione tra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e progettazione di InfoPath.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
+|Associazione|-Un form di associazione ASPX può essere aggiunto al flusso di lavoro usando il **Form di associazione del flusso di lavoro** modello di elemento.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene aggiunto, rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.<br />-Per altre informazioni, vedere [procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Non è presente alcun modello di modulo InfoPath associazione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Non è prevista alcuna integrazione tra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e progettazione di InfoPath.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
+|Avvio|-Un form di avvio di ASPX può essere aggiunto al flusso di lavoro usando il **Form di avvio del flusso di lavoro** modello di elemento.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene aggiunto, rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.<br />-Per altre informazioni, vedere [procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Non è presente alcun modello di modulo InfoPath associazione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Non è prevista alcuna integrazione tra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e progettazione di InfoPath.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
 |Attività|-Nessun modello di form ASPX attività è disponibile in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. È necessario creare una pagina dell'applicazione e aggiungervi codice.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.<br />-Per altre informazioni, vedere [moduli delle attività del flusso di lavoro (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187674)|-Non è presente alcun modello di modulo InfoPath task in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Non è prevista alcuna integrazione tra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e progettazione di InfoPath.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
 |Modifica|-Nessun modello di modulo di modifica di ASPX è disponibile in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per aggiungere un modulo di modifica, è necessario creare una pagina dell'applicazione e aggiungervi codice.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. È necessario modificare manualmente come appropriato.<br />-Per altre informazioni, vedere [form di modifica del flusso di lavoro (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187675)|-Non è presente alcun modello di modulo InfoPath modifica in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Non è prevista alcuna integrazione tra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e progettazione di InfoPath.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
   
@@ -45,13 +42,11 @@ ms.locfileid: "51296190"
 |Tipo di modulo|Flusso di lavoro riutilizzabile che dispone di un form ASPX importato da SharePoint Designer|Flusso di lavoro riutilizzabile che dispone di un modulo di InfoPath importato da SharePoint Designer|  
 |---------------|-------------------------------------------------------------------------------| - |  
 |Associazione|-Il modulo fa riferimento il *Elements* file del flusso di lavoro.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|  
-|Avvio|-Il modulo fa riferimento il flusso di lavoro di *Elements* file del flusso di lavoro.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. **Nota:** regole e le proprietà devono essere aggiunte e modificate per questo scenario.|  
-|Attività|-Il modulo fa riferimento il *Elements* file del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. **Nota:** regole e le proprietà devono essere aggiunte e modificate per questo scenario.|  
+|Avvio|-Il modulo fa riferimento il flusso di lavoro di *Elements* file del flusso di lavoro.<br />-il *Elements* refactoring del file del flusso di lavoro quando il form viene rinominato o eliminato oppure quando viene modificato il relativo percorso di distribuzione.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. **Nota:**  Le regole e le proprietà devono essere aggiunte e modificate per questo scenario.|  
+|Attività|-Il modulo fa riferimento il *Elements* file del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring.|-Il modulo viene importato, ma non viene fatto riferimento nel *Elements* del flusso di lavoro.<br />-il *Elements* file del flusso di lavoro non viene effettuato il refactoring. **Nota:**  Le regole e le proprietà devono essere aggiunte e modificate per questo scenario.|  
 |Modifica|Non applicabile. Non è possibile creare form modifica ASPX in SharePoint Designer.|Non applicabile. I moduli di InfoPath modifica non è possibile creare in SharePoint Designer, ad eccezione di flusso di lavoro SharePoint Server incorporato, che non è incluso nel file con estensione wsp quando viene esportato il flusso di lavoro.|  
   
 ## <a name="see-also"></a>Vedere anche
  [Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Creare soluzioni di flusso di lavoro di SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Importare gli elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
-  
-  

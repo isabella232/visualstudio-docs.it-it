@@ -1,9 +1,6 @@
 ---
 title: I modelli di applicazione per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898576"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interazioni di finestra  
@@ -186,13 +183,13 @@ Esistono diversi tipi di base differenti degli editor di documento e ognuna ha u
 
 -   **Nell'area di progettazione:** WPF, Progettazione Windows Form  
 
--   **Editor finestra di dialogo-style:** progettazione manifesto, proprietà del progetto  
+-   **Editor finestra di dialogo-style:** Progettazione manifesto, proprietà del progetto  
 
 -   **Progettazione modelli:** Progettazione flussi di lavoro, codemap, diagramma dell'architettura, progressione  
 
 Esistono anche diversi tipi non di editor che usano anche il documento. Anche se essi non modificare i documenti autonomamente, è necessario eseguire interazioni standard per le finestre dei documenti.  
 
--   **I report:** IntelliTrace report, Hyper-V, report del profiler  
+-   **Report:** Report di IntelliTrace, report di Hyper-V, report del profiler  
 
 -   **Dashboard:** Hub diagnostica  
 
@@ -427,9 +424,9 @@ Esistono vantaggi e svantaggi in metodi diversi di sovrapposizione dell'interfac
 
 | Meccanismo di passaggio a un'altra | Vantaggi e uso appropriato | Uso inappropriato e svantaggi |  
 | --- | --- | --- |  
-| Controllo Tab | Raggruppare in modo logico le pagine della finestra in insiemi correlati<br /><br />Utile per meno di cinque, o il numero di schede che rientrano in una riga tra la finestra di dialogo, pagine di controlli correlati nella finestra di dialogo<br /><br />Le etichette delle schede deve essere breve: uno o due parole in grado di identificare facilmente il contenuto<br /><br />Uno stile di finestra di dialogo di sistema comuni<br /><br />Esempio: **Esplora File &gt; le proprietà degli elementi** | L'impostazione di etichette descrittive brevi può risultare difficile<br /><br />In genere non supporta la scalabilità oltre cinque schede in una finestra di dialogo<br /><br />Non appropriato se sono presenti troppi schede per una riga (usare una tecnica alternativa dei livelli)<br /><br />Non è estendibile |  
+| Controllo Tab | Raggruppare in modo logico le pagine della finestra in insiemi correlati<br /><br />Utile per meno di cinque, o il numero di schede che rientrano in una riga tra la finestra di dialogo, pagine di controlli correlati nella finestra di dialogo<br /><br />Le etichette delle schede deve essere breve: uno o due parole in grado di identificare facilmente il contenuto<br /><br />Uno stile di finestra di dialogo di sistema comuni<br /><br />Esempio: **Esplora file &gt; le proprietà degli elementi** | L'impostazione di etichette descrittive brevi può risultare difficile<br /><br />In genere non supporta la scalabilità oltre cinque schede in una finestra di dialogo<br /><br />Non appropriato se sono presenti troppi schede per una riga (usare una tecnica alternativa dei livelli)<br /><br />Non è estendibile |  
 | Navigazione nella barra laterale | Dispositivo per lo scambio semplice in grado di soddisfare più categorie rispetto a schede<br /><br />Elenco completo delle categorie (senza gerarchia)<br /><br />Estendibile<br /><br />Esempio: **Personalizza... &gt; Comando Aggiungi** | Non è un utilizzo corretto di spazio orizzontale se sono presenti meno di tre gruppi<br /><br />Attività potrebbe essere più adatti per un elenco a discesa |  
-| Controllo Tree | Consente di categorie senza limite<br /><br />Consente di raggruppamento e/o gerarchia delle categorie<br /><br />Estendibile<br /><br />Esempio: **strumenti &gt; opzioni** | Gerarchie molto annidate possono causare un numero eccessivo di scorrimento orizzontale<br /><br />Visual Studio include un eccesso di visualizzazioni dell'albero |  
+| Controllo Tree | Consente di categorie senza limite<br /><br />Consente di raggruppamento e/o gerarchia delle categorie<br /><br />Estendibile<br /><br />Esempio: **Strumenti &gt; opzioni** | Gerarchie molto annidate possono causare un numero eccessivo di scorrimento orizzontale<br /><br />Visual Studio include un eccesso di visualizzazioni dell'albero |  
 | Wizard | Consente il completamento dell'operazione per guidare l'utente tramite i passaggi sequenziali, basato su attività: la procedura guidata rappresenta un'attività di alto livello e i pannelli singole rappresentano le sottoattività necessarie per eseguire l'attività complessiva<br /><br />Utile quando l'attività supera i limiti dell'interfaccia utente, come quando l'utente sarebbe altrimenti necessario usare più editor e finestre per completare l'attività degli strumenti<br /><br />Utile quando l'attività richiede la creazione di rami<br /><br />Utile quando l'attività contiene le dipendenze tra i vari passaggi<br /><br />Utile quando più attività simili con fork una decisione può essere presentata in una finestra di dialogo per ridurre il numero di diverse finestre di dialogo simile | Non è appropriato per qualsiasi attività che non richiede un flusso di lavoro sequenza<br /><br />Gli utenti possono diventare sovraccaricato e confusi da una procedura guidata con un numero eccessivo di passaggi<br /><br />Procedure guidate non dispongono intrinsecamente sullo schermo |  
 
 ##### <a name="hallways-or-dashboards"></a>Corridoi o nei dashboard  
@@ -470,11 +467,11 @@ In genere classificare se stessi come basato sul riferimento (in modo permanente
 
 Da una prospettiva di trascinamento e rilascio, le caratteristiche seguenti devono applicare a ogni tipo di progetto all'interno di **Esplora soluzioni**:  
 
--   **In base al riferimento di progetto:** il punto chiave è che il progetto sta trascinando intorno a un riferimento a un elemento nell'archivio. Quando un progetto basato sul riferimento agisce come origine per un'operazione di spostamento, è necessario rimuovere solo il riferimento all'elemento dal progetto. L'elemento non deve effettivamente eliminato dal disco rigido. Quando un progetto basato sul riferimento agisce come una destinazione per un'operazione (copia o spostamento), opportuno aggiungere un riferimento all'elemento di origine originale senza creare una copia privata dell'elemento.  
+-   **In base al riferimento progetto:** Il punto chiave è che il progetto sta trascinando intorno a un riferimento a un elemento nell'archivio. Quando un progetto basato sul riferimento agisce come origine per un'operazione di spostamento, è necessario rimuovere solo il riferimento all'elemento dal progetto. L'elemento non deve effettivamente eliminato dal disco rigido. Quando un progetto basato sul riferimento agisce come una destinazione per un'operazione (copia o spostamento), opportuno aggiungere un riferimento all'elemento di origine originale senza creare una copia privata dell'elemento.  
 
--   **Progetto basato su directory:** da un punto di vista di trascinamento e rilascio, il progetto sta trascinando tutto l'elemento fisico anziché un riferimento. Quando un progetto basato su directory agisce come origine per un'operazione di spostamento, deve finire eliminazione dell'elemento fisico dal disco rigido, oltre a rimuoverlo dal progetto. Quando un progetto basato su directory agisce come una destinazione per un'operazione (copia o spostamento), consigliabile eseguire una copia dell'elemento di origine nel relativo percorso di destinazione.  
+-   **Directory in base al progetto:** Da un punto di vista di trascinamento e rilascio, il progetto sta trascinando tutto l'elemento fisico anziché un riferimento. Quando un progetto basato su directory agisce come origine per un'operazione di spostamento, deve finire eliminazione dell'elemento fisico dal disco rigido, oltre a rimuoverlo dal progetto. Quando un progetto basato su directory agisce come una destinazione per un'operazione (copia o spostamento), consigliabile eseguire una copia dell'elemento di origine nel relativo percorso di destinazione.  
 
--   **Progetto di destinazione mista:** da un punto di vista di trascinamento e rilascio, il comportamento di questo tipo di progetto è basato sulla natura dell'elemento trascinato (un riferimento a un elemento nello spazio di memorizzazione) o l'elemento stesso. Il comportamento corretto per i riferimenti e gli elementi fisici sono descritti in precedenza.  
+-   **Progetto di destinazione mista:** Da un punto di vista di trascinamento e rilascio, il comportamento di questo tipo di progetto è basato sulla natura dell'elemento trascinato (un riferimento a un elemento nello spazio di memorizzazione) o l'elemento stesso. Il comportamento corretto per i riferimenti e gli elementi fisici sono descritti in precedenza.  
 
 Se si sono verificati solo un tipo di progetto nel **Esplora soluzioni**, operazioni di trascinamento e rilascio sarà molto semplice. Poiché ogni sistema del progetto ha la possibilità di definire il comportamento di trascinamento e rilascio, alcune linee guida (basati sul comportamento di trascinamento e rilascio di Windows Explorer) deve essere seguita per garantire un'esperienza utente prevedibile:  
 
@@ -508,7 +505,7 @@ L'utente deve sempre essere in grado di determinare l'effetto di un'operazione d
 #### <a name="reference-based-projects"></a>Progetti in base al riferimento  
  Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché le operazioni Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine premuto per i progetti di destinazione basati su cui viene fatto riferimento:  
 
-| Modificatore | Category | Elemento di origine: / collegamento di riferimento | Elemento di origine: elemento o il file system fisico (`CF_HDROP`) |  
+| Modificatore | Category | Elemento di origine: Collegamento/riferimento | Elemento di origine: Elemento o il file system fisico (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Nessun modificatore | Operazione | Move | Collegamento |  
 | Nessun modificatore | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
@@ -540,7 +537,7 @@ L'utente deve sempre essere in grado di determinare l'effetto di un'operazione d
 Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché le operazioni Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine premuto per i progetti basati su directory di destinazione:  
 
 
-| Modificatore | Category | Elemento di origine: / collegamento di riferimento | Elemento di origine: elemento o il file system fisico (`CF_HDROP`) |
+| Modificatore | Category | Elemento di origine: Collegamento/riferimento | Elemento di origine: Elemento o il file system fisico (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Nessun modificatore | Operazione | Move | Move |
 | Nessun modificatore | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |
@@ -566,7 +563,7 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilasci
 #### <a name="mixed-target-projects"></a>Progetti di destinazione mista  
 Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché le operazioni Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine premuto per i progetti di destinazione mista:  
 
-| Modificatore | Category | Elemento di origine: / collegamento di riferimento | Elemento di origine: elemento o il file system fisico (`CF_HDROP`) |  
+| Modificatore | Category | Elemento di origine: Collegamento/riferimento | Elemento di origine: Elemento o il file system fisico (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Nessun modificatore | Operazione | Move | Move |
 | Nessun modificatore | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |

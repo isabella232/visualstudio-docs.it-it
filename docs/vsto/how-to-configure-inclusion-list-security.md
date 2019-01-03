@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Configurare la sicurezza di elenco di inclusione'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895577"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: Configurare la sicurezza di elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali è data la possibilità di installare le soluzioni Office mediante il salvataggio di una decisione di attendibilità per l'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [soluzioni di Office Trust usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -114,7 +111,7 @@ ms.locfileid: "53647735"
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Value|  
+    |Sottochiave del valore stringa|Valore|  
     |-------------------------|-----------|  
     |**Siti non attendibili**|**Disabilitato**|  
     |**Internet**|**AuthenticodeRequired**|  
@@ -171,7 +168,7 @@ ms.locfileid: "53647735"
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Value|  
+    |Sottochiave del valore stringa|Valore|  
     |-------------------------|-----------|  
     |**Siti non attendibili**|**Disabilitato**|  
     |**Internet**|**Disabilitato**|  
@@ -213,5 +210,3 @@ ms.locfileid: "53647735"
 ## <a name="see-also"></a>Vedere anche  
  [Trust di soluzioni Office mediante elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)  
-  
-  

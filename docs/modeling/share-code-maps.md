@@ -1,32 +1,31 @@
 ---
-title: Esportare e salvare le mappe del codice
+title: Esportare e salvare le mappe codice
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: abfe8d6160d023a99e9a49480baada9acb0c8243
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c80c99effebab8d2dffa53621af8f7c60bcad629
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900808"
 ---
 # <a name="share-code-maps"></a>Condividere le mappe codice
 
 È possibile salvare mappe del codice come parte di un progetto di Visual Studio, come un'immagine o come file XPS.
 
-## <a name="share-a-code-map-with-other-visual-studio-users"></a>Condividere una mappa del codice con altri utenti di Visual Studio
+## <a name="share-a-code-map-with-other-visual-studio-users"></a>Condividere una mappa codice con altri utenti di Visual Studio
 
 Usare il menu **File** per salvare la mappa.
 
-oppure
+-oppure-
 
-Per salvare la mappa come parte del progetto specifico, sulla barra degli strumenti della mappa, scegliere **condivisione** > **spostare \<nome mappa codice > DGML in**e quindi scegliere il progetto in cui si desidera salvare il eseguire il mapping.
+Per salvare la mappa come parte del progetto specifico, sulla barra degli strumenti della mappa, scegliere **Share** > **spostare \<nome mappa codice > DGML in**e quindi scegliere il progetto in cui si desidera salvare il eseguire il mapping.
 
 ![Spostare una mappa in un altro progetto](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,22 +42,22 @@ Visual Studio salva l'oggetto map come un *DGML* file che è possibile condivide
 
 ## <a name="export-a-code-map-as-an-image"></a>Esportare una mappa del codice come immagine
 
-Quando si esporta una mappa del codice sotto forma di immagine, è possibile copiarlo in altre applicazioni, ad esempio Microsoft Word o PowerPoint.
+Quando si esporta una mappa del codice come un'immagine, è possibile copiarlo in altre applicazioni, ad esempio Microsoft Word o PowerPoint.
 
-1. Sulla barra degli strumenti della mappa del codice, scegliere **condivisione** > **posta elettronica come immagine** oppure **Copia immagine**.
+1. Sulla barra degli strumenti della mappa del codice, scegliere **Share** > **messaggio di posta elettronica come immagine** oppure **Copia immagine**.
 
 2. Incollare l'immagine in un'altra applicazione.
 
 ## <a name="export-the-map-as-an-xps-file"></a>Esportare la mappa come file XPS
 
-Quando si esporta una mappa del codice come file XPS, è possibile visualizzarla in visualizzatori XAML o XML come Internet Explorer.
+Quando si esporta una mappa del codice come file XPS, è possibile visualizzarlo nei visualizzatori XAML o XML come Internet Explorer.
 
-1. Sulla barra degli strumenti della mappa del codice, scegliere **condivisione** > **Invia come Portable XPS** oppure **Salva come Portable XPS**.
+1. Sulla barra degli strumenti della mappa del codice, scegliere **Share** > **Invia come Portable XPS** oppure **Salva come Portable XPS**.
 
 2. Scegliere la posizione in cui salvare il file.
 
-3. Assegnare un nome alla mappa codice. Assicurarsi che il **Salva come** casella viene impostata su **file XPS (\*XPS)**. Scegliere **Salva**.
+3. Assegnare un nome alla mappa codice. Assicurarsi che il **Salva come tipo** casella viene impostata su **file XPS (\*XPS)**. Scegliere **Salva**.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Mappare le dipendenze con le mappe del codice](../modeling/map-dependencies-across-your-solutions.md)
+- [Mappare le dipendenze con le mappe codici](../modeling/map-dependencies-across-your-solutions.md)

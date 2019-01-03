@@ -1,9 +1,6 @@
 ---
 title: La struttura del File [Content_types] XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - content_types
@@ -16,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909895"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio Usa il file [Content_Types] XML per installare il pacchetto, ma non installa il file stesso.  
   
 > [!NOTE]
->  Sebbene in questo argomento si applica solo a [Content_Types]. XML file che vengono usati nei pacchetti VSIX, il tipo di file [Content_Types] XML fa parte di *Open Packaging Conventions (OPC)* standard. Per altre informazioni, vedere [OPC: un nuovo Standard per la creazione di pacchetti di dati](http://go.microsoft.com/fwlink/?LinkID=148207) sul sito Web MSDN.  
+>  Sebbene in questo argomento si applica solo a [Content_Types]. XML file che vengono usati nei pacchetti VSIX, il tipo di file [Content_Types] XML fa parte di *Open Packaging Conventions (OPC)* standard. Per altre informazioni, vedere [OPC: Un nuovo Standard per la creazione di pacchetti dati](http://go.microsoft.com/fwlink/?LinkID=148207) sul sito Web MSDN.  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
  Le sezioni seguenti descrivono l'elemento radice e i relativi attributi ed elementi figlio.  
@@ -46,7 +43,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
   
 ### <a name="attribute-name-attribute"></a>{Nome dell'attributo} Attributo  
   
-| Valore | Descrizione |
+| Value | Descrizione |
 | - | - |
 | http://schemas.openformats.org/package/2006/content-types | Il percorso dello schema di tipi di contenuto. |
   

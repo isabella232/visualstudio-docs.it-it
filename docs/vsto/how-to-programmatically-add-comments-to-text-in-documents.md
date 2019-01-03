@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: A livello di codice aggiungere commenti al testo nei documenti'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857027"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: A livello di codice aggiungere commenti al testo nei documenti
   La proprietà commenti della classe documento aggiunge un commento a un intervallo di testo in un documento di Microsoft Office Word.  
@@ -52,5 +49,3 @@ ms.locfileid: "53804604"
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: A livello di codice rimuovere tutti i commenti dai documenti](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Elemento host Document](../vsto/document-host-item.md)  
-  
-  

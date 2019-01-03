@@ -1,9 +1,6 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832554"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creare un sistema di progetto di base, parte 1
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse. I progetti vengono visualizzati come figli di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.  
@@ -559,7 +556,7 @@ Templates
      Si noti che i parametri del modello $nameSpace$ e $ $className$ non è nuovi valori. Si apprenderà come implementare la sostituzione dei parametri di modello nella sezione successiva.  
   
 ## <a name="substitute-template-parameters"></a>Sostituire i parametri di modello  
- In una sezione precedente, è registrato il modello di progetto in Visual Studio usando il `ProvideProjectFactory` attributo. Registrare il percorso di una cartella di modello in questo modo consente di abilitare la sostituzione dei parametri di modello di base viene sottoposto a override ed espandendo il `ProjectNode.AddFileFromTemplate` classe. Per altre informazioni, vedere [nuova generazione progetto: dietro le quinte, parte 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ In una sezione precedente, è registrato il modello di progetto in Visual Studio usando il `ProvideProjectFactory` attributo. Registrare il percorso di una cartella di modello in questo modo consente di abilitare la sostituzione dei parametri di modello di base viene sottoposto a override ed espandendo il `ProjectNode.AddFileFromTemplate` classe. Per altre informazioni, vedere [nuova generazione progetto: Dietro le quinte, parte 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  A questo punto aggiungere il codice di sostituzione per il `AddFileFromTemplate` classe.  
   

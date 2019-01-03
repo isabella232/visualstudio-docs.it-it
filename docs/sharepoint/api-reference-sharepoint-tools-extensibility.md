@@ -1,9 +1,6 @@
 ---
 title: Riferimento all'API (estensibilità degli strumenti di SharePoint) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 202ddd802978c54c7ba773919ed3fd66a406cc05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987246"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Riferimento all'API (estensibilità degli strumenti di SharePoint)
   In questa sezione contiene la documentazione di riferimento API per l'estensione strumenti di SharePoint in Visual Studio.  
@@ -66,4 +63,3 @@ ms.locfileid: "36325794"
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Estendere la distribuzione e creazione di pacchetti di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  

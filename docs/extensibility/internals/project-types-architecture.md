@@ -1,9 +1,6 @@
 ---
-title: Architettura di tipi di progetto | Documenti Microsoft
-ms.custom: ''
+title: Architettura di tipi di progetto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef7fe6fbf4a8899606dca35c10745e68e3cbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea8273c1db662d5184d1afb71b5cd39789d6794
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130609"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929306"
 ---
-# <a name="project-types-architecture"></a>Architettura di tipi di progetto
+# <a name="project-types-architecture"></a>Architettura dei tipi di progetto
 In questa sezione contiene informazioni dettagliate sull'architettura dei tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="in-this-section"></a>In questa sezione  
@@ -28,17 +25,17 @@ In questa sezione contiene informazioni dettagliate sull'architettura dei tipi d
  Elenca i servizi che può utilizzare un tipo di progetto e le interfacce che deve implementare.  
   
  [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)  
- Descrive le interfacce, tipi di progetto devono implementare sia possono implementare facoltativamente per fornire funzionalità aggiuntive.  
+ Descrive le interfacce di tipi di progetto devono implementare sia possono implementare facoltativamente per fornire funzionalità aggiuntive.  
   
  [Quando creare tipi di progetto](../../extensibility/internals/when-to-create-project-types.md)  
- Consente di decidere quando è necessario creare un progetto di tipo e quando si utilizza un altro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità di estendibilità, ad esempio un editor e pacchetti VSPackage per ottenere lo stesso obiettivo.  
+ Consente di decidere quando è necessario creare un progetto di tipo e quando è possibile usare un altro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità di estendibilità, ad esempio editor e i pacchetti VSPackage per ottenere lo stesso scopo.  
   
  [Gerarchie e selezione](../../extensibility/internals/hierarchies-and-selection.md)  
- Viene descritto come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizza gerarchie e il contesto di selezione per fornire un'esperienza utente semplice e coerente.  
+ Viene descritto come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Usa le gerarchie e il contesto di selezione per offrire un'esperienza utente coerente e semplificata.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)  
- Viene illustrato come sottotipi di progetto consentono di personalizzare il comportamento dei sistemi di progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
+ Viene spiegato come sottotipi di progetto consentono di personalizzare il comportamento dei sistemi di progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
   
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
- Fornisce una panoramica dei progetti come blocchi predefiniti di base di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Vengono forniti collegamenti ad argomenti aggiuntivi che illustrano come progetti consentono di controllare la creazione e compilazione di codice.
+ Viene fornita una panoramica di progetti come blocchi predefiniti di base del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Vengono forniti collegamenti ad argomenti aggiuntivi che illustrano come progetti consentono di controllare la creazione e compilazione di codice.

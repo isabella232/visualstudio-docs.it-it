@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::SetValueAsString | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::SetValueAsString
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f165ade12f6a4d8661ca4b0070efb1452ec09a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22e4ccb3f02bcc98d13977553cbf9e6d6c32843b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871583"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Imposta il valore di una proprietà da una stringa specificata.  
@@ -28,7 +25,7 @@ Imposta il valore di una proprietà da una stringa specificata.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    UINT      nRadix,  
    DWORD     dwTimeout  
@@ -36,7 +33,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   nRadix,  
    uint   dwTimeout  
@@ -56,7 +53,7 @@ int SetValueAsString (
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Nella tabella seguente mostra altri valori possibili.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|La stringa non può essere convertita in un valore della proprietà oppure non è stato possibile impostare il valore della proprietà.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|La proprietà è in sola lettura.|  

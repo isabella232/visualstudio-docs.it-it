@@ -1,9 +1,6 @@
 ---
 title: Elemento SafeControls | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe8b3c026b7386d89ef04d0a966eccad425f1629
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e08b414858db389e507dc9395d218807c9530db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875968"
 ---
 # <a name="safecontrols-element"></a>SafeControls (elemento)
   Raccolta di controlli ASPX e Web part che sono designate come protette per tutti gli utenti accedere in qualsiasi pagina ASPX nel sito di SharePoint.  
@@ -66,4 +63,3 @@ ms.locfileid: "37119901"
 ## <a name="see-also"></a>Vedere anche
  [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  

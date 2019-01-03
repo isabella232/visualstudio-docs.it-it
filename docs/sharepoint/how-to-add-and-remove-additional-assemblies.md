@@ -1,15 +1,10 @@
 ---
-title: 'Procedura: aggiungere e rimuovere assembly aggiuntivi | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere e rimuovere assembly aggiuntivi | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887010"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Procedura: aggiungere e rimuovere assembly aggiuntivi
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Procedura: Aggiungere e rimuovere assembly aggiuntivi
   Se un pacchetto di SharePoint dipende da altri assembly per dati o funzionalità, è possibile aggiungere gli assembly al pacchetto di soluzione (con estensione wsp). In questo modo, il server SharePoint assicura che siano installati assembly personalizzati con un pacchetto.  
   
  È anche possibile aggiungere e modificare i controlli sicuri e i file di risorse di classe associati con gli assembly.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219146"
   
 #### <a name="to-add-an-existing-assembly"></a>Per aggiungere un assembly esistente  
   
-1.  Aprire il **Progettazione pacchetti**. Per altre informazioni, vedere [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Aprire il **Progettazione pacchetti**. Per altre informazioni, vedere [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Scegliere il **avanzate** scheda.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219146"
   
 1.  Aprire il **Progettazione pacchetti**.  
   
-     Per altre informazioni, vedere [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Per altre informazioni, vedere [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Scegliere il **avanzate** scheda.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219146"
   
 #### <a name="to-delete-an-existing-assembly"></a>Per eliminare un assembly esistente  
   
-1.  Aprire il **Progettazione pacchetti**. Per altre informazioni, vedere [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Aprire il **Progettazione pacchetti**. Per altre informazioni, vedere [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Scegliere il **avanzate** scheda.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219146"
   
 ## <a name="see-also"></a>Vedere anche
  [Creare funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Procedura: personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Procedura: aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [Procedura: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Procedura: Aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

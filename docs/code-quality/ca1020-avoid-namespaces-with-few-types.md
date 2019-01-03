@@ -1,8 +1,7 @@
 ---
-title: "CA1020: Evitare l'utilizzo di spazi dei nomi con un numero ridotto di tipi"
+title: 'CA1020: Evitare gli spazi dei nomi con alcuni tipi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1020
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7a691cb5c5626ea096046e277ec3d1655db0b6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a1d7d6b8e8c215fcbd045ac51cf21428aa892651
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924722"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare l'utilizzo di spazi dei nomi con un numero ridotto di tipi
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare gli spazi dei nomi con alcuni tipi
 
 |||
 |-|-|

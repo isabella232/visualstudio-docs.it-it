@@ -2,7 +2,6 @@
 title: Set di regole minime native
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd988bae2f9fd2776785202a1e632735f989f7ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845486"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.
@@ -70,7 +69,7 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C6518](../code-quality/c6518.md)|Dimensioni scrivibili su buffer non scrivibile|
 |[C6522](../code-quality/c6522.md)|Tipo stringa dimensioni non valida|
 |[C6525](../code-quality/c6525.md)|Percorso irraggiungibile stringa dimensioni non valida|
-|[C6527](../code-quality/c6527.md)|Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void|
+|[C6527](../code-quality/c6527.md)|Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void|
 |[C6530](../code-quality/c6530.md)|Stile stringa formato non riconosciuto|
 |[C6540](../code-quality/c6540.md)|L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec|
 |[C6551](../code-quality/c6551.md)|Specifica di dimensione non valida: espressione non analizzabile|
@@ -145,16 +144,16 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|
 |[C28285](../code-quality/c28285.md)|Per la funzione, errore di sintassi nel parametro|
 |[C28286](../code-quality/c28286.md)|Per la funzione, errore di sintassi vicino alla fine|
-|[C28287](../code-quality/c28287.md)|Per una funzione, errore di sintassi nelle \_a\_annotazione () (nome parametro non riconosciuto)|
-|[C28288](../code-quality/c28288.md)|Per una funzione, errore di sintassi nelle \_a\_annotazione () (nome parametro non valido)|
+|[C28287](../code-quality/c28287.md)|Per la funzione, errore di sintassi nell'annotazione \_At\_() (nome parametro non riconosciuto)|
+|[C28288](../code-quality/c28288.md)|Per la funzione, errore di sintassi nell'annotazione \_At\_() (nome parametro non valido)|
 |[C28289](../code-quality/c28289.md)|Per la funzione: ReadableTo o WritableTo non disponeva di limit-spec come parametro|
 |[C28290](../code-quality/c28290.md)|L'annotazione per la funzione contiene un numero di riferimenti esterni maggiore del numero di parametri effettivi|
 |[C28291](../code-quality/c28291.md)|Il post null/notnull al livello deref 0 è privo di significato per la funzione.|
 |[C28300](../code-quality/c28300.md)|Operandi dell'espressione di tipi incompatibili per l'operatore|
 |[C28301](../code-quality/c28301.md)|Nessuna annotazione per la prima dichiarazione di funzione.|
-|[C28302](../code-quality/c28302.md)|Un ulteriore \_Deref\_ operatore rilevato nell'annotazione.|
-|[C28303](../code-quality/c28303.md)|Un ambiguo \_Deref\_ operatore rilevato nell'annotazione.|
-|[C28304](../code-quality/c28304.md)|Un non correttamente posizionato \_Notref\_ operatore è stato trovato applicato al token.|
+|[C28302](../code-quality/c28302.md)|Operatore \_Deref\_ aggiuntivo rilevato nell'annotazione.|
+|[C28303](../code-quality/c28303.md)|Operatore \_Deref\_ ambiguo trovato nell'annotazione.|
+|[C28304](../code-quality/c28304.md)|Operatore \_Notref\_ non correttamente posizionato applicato al token.|
 |[C28305](../code-quality/c28305.md)|È stato individuato un errore durante l'analisi di un token.|
 |[C28350](../code-quality/c28350.md)|L'annotazione descrive una situazione non applicabile in modo condizionale.|
 |[C28351](../code-quality/c28351.md)|L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).|

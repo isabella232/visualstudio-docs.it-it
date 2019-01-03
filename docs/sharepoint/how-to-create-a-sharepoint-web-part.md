@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: creare una Web Part di SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare una Web Part di SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6437620b4215726ba48ea3234e37c76e77d21ebe
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858423"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Procedura: creare una web part di SharePoint
-  È possibile creare e personalizzare una web part aggiungendo un **Web Part** voce a qualsiasi progetto SharePoint e quindi modificando il file di codice per la web part o tramite una finestra di progettazione. Per altre informazioni, vedere [procedura: creare una web part di SharePoint usando una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+# <a name="how-to-create-a-sharepoint-web-part"></a>Procedura: Creare una web part di SharePoint
+  È possibile creare e personalizzare una web part aggiungendo un **Web Part** voce a qualsiasi progetto SharePoint e quindi modificando il file di codice per la web part o tramite una finestra di progettazione. Per altre informazioni, vedere [Procedura: Creare una web part di SharePoint usando una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ### <a name="to-create-a-sharepoint-web-part"></a>Per creare una web part di SharePoint
   
@@ -50,12 +45,10 @@ ms.locfileid: "37119841"
   
 7.  Nel file di codice aggiungere controlli al metodo <xref:System.Web.UI.Control.CreateChildControls%2A>.  
   
-     Per un esempio, vedere [procedura dettagliata: creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
+     Per un esempio, vedere [procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
   
 ## <a name="see-also"></a>Vedere anche
  [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Procedura: creare una web part di SharePoint usando una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Procedura: Creare una web part di SharePoint usando una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
  [Procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
  [Procedura dettagliata: Creare una web part per SharePoint tramite una finestra di progettazione](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  

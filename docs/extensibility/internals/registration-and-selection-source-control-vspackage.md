@@ -1,9 +1,6 @@
 ---
 title: Registrazione e selezione (VSPackage di controllo codice sorgente) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930713"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e selezione (VSPackage di controllo del codice sorgente)
 Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice sorgente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se più di un controllo del codice sorgente VSPackage è registrato, l'utente può selezionare quale VSPackage da caricare in momenti appropriati. Visualizzare [VSPackage](../../extensibility/internals/vspackages.md) per altre informazioni sui pacchetti VSPackage e come registrarle.  
@@ -38,7 +35,7 @@ Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice
   
 - Controllo del codice sorgente GUID: Questo è un GUID per il controllo del codice sorgente consente di registrare con lo Stub di controllo di Visual Studio origine pacchetto VSPackage e viene usato anche come un GUID di contesto dell'interfaccia utente comandi. Il GUID del servizio di controllo sorgente è registrato sotto il controllo del codice sorgente GUID. Nell'esempio, il controllo del codice sorgente GUID viene chiamato ID_SccProvider.  
   
-- GUID del servizio di controllo di origine: si tratta del servizio privato GUID utilizzato da Visual Studio (detti SID_SccPkgService in questa sezione). Inoltre, il pacchetto del controllo codice sorgente deve definire altri GUID per i pacchetti VSPackage, finestre degli strumenti e così via.  
+- GUID del servizio di controllo di origine: Si tratta del servizio privato GUID utilizzato da Visual Studio (detti SID_SccPkgService in questa sezione). Inoltre, il pacchetto del controllo codice sorgente deve definire altri GUID per i pacchetti VSPackage, finestre degli strumenti e così via.  
   
   Da un pacchetto VSPackage di controllo di origine, è necessario effettuare le seguenti voci del Registro di sistema:  
   

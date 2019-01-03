@@ -1,9 +1,6 @@
 ---
 title: Esposizione di tipi di finestre di progettazione visiva | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f1820b3df61dd8029ac9404eb7f4a09e44707ac
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 713b44c9ccf360af04086b32c121f7e26c0e67d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859370"
 ---
 # <a name="expose-types-to-visual-designers"></a>Esporre i tipi di finestre di progettazione visiva
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve avere accesso alle definizioni di classe e il tipo in fase di progettazione per visualizzare una finestra di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set completo delle dipendenze del progetto corrente (riferimenti e le relative dipendenze). Potrebbe essere necessario anche per finestre di progettazione visiva per accedere alle classi e tipi definiti nei file generati da strumenti personalizzati.  

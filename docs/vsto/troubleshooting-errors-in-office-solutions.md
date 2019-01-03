@@ -1,9 +1,6 @@
 ---
 title: Risolvere gli errori nelle soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919024"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle soluzioni Office
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:  
@@ -57,9 +54,9 @@ ms.locfileid: "50672951"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Errori quando si crea un progetto di cartella di lavoro di Excel basato su una cartella di lavoro esistente  
  Se si crea un nuovo progetto cartella di lavoro di Excel basato su una cartella di lavoro esistente, è possibile visualizzare una combinazione dei seguenti errori.  
   
- Da Excel: "Avviso per la privacy: questo documento contiene macro, controlli ActiveX, informazioni del pacchetto di espansione XML o componenti Web. Potrebbero essere presenti informazioni personali che non possono essere rimosse tramite Controllo documento."  
+ Da Excel: "Avviso per la privacy: Questo documento contiene macro, controlli ActiveX, informazioni del pacchetto espansione XML o componenti Web. Potrebbero essere presenti informazioni personali che non possono essere rimosse tramite Controllo documento."  
   
- Da Visual Studio: "Impossibile caricare correttamente la finestra di progettazione."  
+ Da Visual Studio: "Finestra di progettazione non è stato possibile caricare in modo corretto."  
   
  Questi errori possono verificarsi quando si cerca di creare un progetto basato su una cartella di lavoro in cui le informazioni personali sono state rimosse tramite Controllo documento. Per evitare questo errore, eseguire la procedura seguente prima di creare il progetto.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Questo codice genera gli errori di compilazione seguenti:  
   
-- Visual Basic: "riferimento alla classe 'DocumentClass' non è consentito quando l'assembly è collegato in modalità No-PIA."  
+- Visual Basic: "Riferimento alla classe 'DocumentClass' non è consentito quando l'assembly è collegato in modalità No-PIA."  
   
-- Visual c#: "tipo di interoperabilità 'Microsoft.Office.Interop.Word.DocumentClass' non può essere incorporato. Utilizzare l'interfaccia applicabile."  
+- Visual C#: "Tipo di interoperabilità 'Microsoft.Office.Interop.Word.DocumentClass' non può essere incorporato. Utilizzare l'interfaccia applicabile."  
   
   Per risolvere l'errore, modificare il codice in modo che faccia riferimento all'interfaccia corrispondente. Ad esempio, anziché fare riferimento a un oggetto <xref:Microsoft.Office.Interop.Word.DocumentClass>, fare riferimento a un'istanza dell'interfaccia <xref:Microsoft.Office.Interop.Word.Document>.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Risolvere i problemi di soluzioni Office](../vsto/troubleshooting-office-solutions.md)   
  [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
  [Risolvere i problemi di distribuzione di soluzioni Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

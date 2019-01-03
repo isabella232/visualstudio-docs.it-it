@@ -1,9 +1,6 @@
 ---
 title: Controllo Glyph (VSPackage di controllo codice sorgente) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - glyphs, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c791647e9718686c5a6c7cf250ca84c74aabbfcc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 2e432e045a55593f0967c7805323785cfc6acaa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870047"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Controllo Glyph (VSPackage controllo del codice sorgente)
 Parte della stretta integrazione disponibile per pacchetti VSPackage di controllo del codice sorgente è la possibilità di visualizzare le proprie icone per indicare lo stato degli elementi nel controllo del codice sorgente.  

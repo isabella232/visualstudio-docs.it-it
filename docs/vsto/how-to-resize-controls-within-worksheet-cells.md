@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: ridimensionare i controlli nelle celle di un foglio di lavoro'
-ms.custom: ''
+title: 'Procedura: Ridimensionare i controlli nelle celle di un foglio di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927350"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: ridimensionare i controlli nelle celle di un foglio di lavoro
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: Ridimensionare i controlli nelle celle di un foglio di lavoro
   Quando si ridimensiona colonne o righe in un foglio di lavoro, tutti i controlli host all'interno delle celle viene ridimensionato automaticamente per l'altezza o la larghezza della cella che è stata ridimensionata. Controlli Windows Form non vengono ridimensionano automaticamente per impostazione predefinita.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35672895"
   
 ## <a name="see-also"></a>Vedere anche  
  [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)   
- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Procedura: nascondere i controlli nei fogli di lavoro durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Procedura: Aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Procedura: Nascondere controlli nei fogli di lavoro durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

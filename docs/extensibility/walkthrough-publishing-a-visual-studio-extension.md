@@ -1,9 +1,6 @@
 ---
 title: "Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852453"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'estensione di Visual Studio
 
@@ -71,9 +68,9 @@ Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono vali
 
 6. Scegliere il server di pubblicazione da usare per caricare l'estensione. È possibile modificare i server di pubblicazione facendo clic sui nomi di server di pubblicazione elencati a sinistra. Fare clic su **nuova estensione** e selezionare **Visual Studio**.
 
-7. Nelle **1: caricare l'estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o è sufficiente aggiungere un collegamento al proprio sito Web. In questo esempio, l'estensione *TestPublish.vsix* viene caricato. Trascinare l'estensione oppure usare il **fare clic su** collegamento per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Scegliere **Continua**.
+7. In **1: Carica estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o è sufficiente aggiungere un collegamento al proprio sito Web. In questo esempio, l'estensione *TestPublish.vsix* viene caricato. Trascinare l'estensione oppure usare il **fare clic su** collegamento per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Scegliere **Continua**.
 
-8. Nelle **2: fornire i dettagli dell'estensione**, alcuni campi sono popolati automaticamente dal *vsixmanifest* dall'estensione di file. Per informazioni dettagliate su ognuna di seguito:
+8. In **2: Fornire i dettagli dell'estensione**, alcuni campi sono popolati automaticamente dal *vsixmanifest* dall'estensione di file. Per informazioni dettagliate su ognuna di seguito:
 
     * **Nome interno** viene usato nell'URL della pagina dei dettagli dell'estensione. Per un esempio, la pubblicazione di un'estensione con il nome del server di pubblicazione "myname" e specificando il nome interno per essere "my extension" i risultati in un URL di "marketplace.visualstudio\.com/items?itemName=myname.myextension" per i dettagli dell'estensione pagina.
     
@@ -123,13 +120,13 @@ Marketplace supporta la concessione di autorizzazioni aggiuntive agli utenti per
 
 3. È quindi possibile specificare l'indirizzo di posta elettronica dell'utente che si desidera aggiungere e concedere il corretto livello di accesso nel **selezionare un ruolo**.  È possibile scegliere una delle opzioni seguenti:
 
-   * **Creatore**: l'utente può pubblicare estensioni, ma non è possibile visualizzare o gestire estensioni pubblicate da altri utenti.
+   * **Creatore**: L'utente può pubblicare estensioni, ma non è possibile visualizzare o gestire estensioni pubblicate da altri utenti.
   
-   * **Lettore**: l'utente può visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
+   * **Lettore**: L'utente può visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
   
-   * **Collaboratore**: l'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di pubblicazione o gestire l'accesso.
+   * **Collaboratore**: L'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di pubblicazione o gestire l'accesso.
   
-   * **Proprietario**: l'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
+   * **Proprietario**: L'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione da Visual Studio Marketplace
 

@@ -1,9 +1,6 @@
 ---
-title: IDebugPropertyCreateEvent2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugPropertyCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyCreateEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc599480b148e85dd8d70c45282ef52d08b8eabf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b86ac1ba81a7d203177afdde302e8f32599ea698
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854971"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
-Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando viene creata una proprietà che è associata a un documento specifico.  
+Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) durante la creazione di una proprietà che è associata a un documento specifico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,25 +29,25 @@ IDebugPropertyCreateEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- La Germania implementa questa interfaccia per segnalare che è stata creata una proprietà. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata sullo stesso oggetto di questa interfaccia. Usa il SDM [QueryInterface](/cpp/atl/queryinterface) per l'accesso di `IDebugEvent2` interfaccia. Questa interfaccia viene implementata, se la Germania ha creato una proprietà associata a uno script che è stato caricato o creato e se lo script deve essere visualizzato nell'IDE.  
+ La Germania implementa questa interfaccia per segnalare che una proprietà sia stata creata. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](/cpp/atl/queryinterface) per l'accesso di `IDebugEvent2` interfaccia. Questa interfaccia viene implementata se la Germania ha creato una proprietà associata a uno script che è stato caricato o creato e se lo script deve essere visualizzato nell'IDE.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- La Germania crea e invia l'oggetto evento di report che è stata creata una proprietà. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito dal suo SDM quando è associato al programma in fase di debug.  
+ La Germania crea e invia l'oggetto evento al report che è stata creata una proprietà. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando è associato al programma in fase di debug.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente viene illustrato il metodo di `IDebugPropertyCreateEvent2` interfaccia.  
+ La tabella seguente illustra il metodo di `IDebugPropertyCreateEvent2` interfaccia.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Ottiene la nuova proprietà.|  
   
 ## <a name="remarks"></a>Note  
- Se una proprietà dispone di un documento specifico o script associato, la Germania può inviare l'evento per il SDM per aggiornare il **documenti Script** finestra con il nome del documento. Chiamerà il SDM [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) con l'argomento `guidDocument` per recuperare un `VARIANT` contenente un [IUnknown](/cpp/atl/iunknown) puntatore. Chiamerà il SDM [QueryInterface](/cpp/atl/queryinterface) su questo puntatore per recuperare il [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaccia che viene utilizzato per aggiornare il **documenti Script** finestra.  
+ Se una proprietà ha un documento specifico o script associati, la Germania possa inviare questo evento per il modello SDM per aggiornare il **documenti Script** finestra con il nome del documento. Il modello SDM chiamerà [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) con l'argomento `guidDocument` per recuperare un `VARIANT` contenenti un [IUnknown](/cpp/atl/iunknown) puntatore. Il modello SDM chiamerà [QueryInterface](/cpp/atl/queryinterface) su questo puntatore per recuperare il [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaccia che consente di aggiornare il **documenti Script** finestra.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

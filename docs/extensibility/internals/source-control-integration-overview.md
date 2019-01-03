@@ -1,9 +1,6 @@
 ---
 title: Panoramica dell'integrazione di controllo di origine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902991"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 Questa sezione Confronta i due modi per integrare nel controllo del codice sorgente Visual Studio; un controllo del codice sorgente del plug-in e un pacchetto VSPackage che fornisce una soluzione di controllo del codice sorgente e vengono evidenziate le nuove funzionalità di controllo di origine. Visual Studio consente il passaggio manuale tra controllo del codice sorgente pacchetti VSPackage e plug-in controllo codice sorgente, nonché basati su soluzioni un passaggio automatico.  
@@ -35,7 +32,7 @@ Questa sezione Confronta i due modi per integrare nel controllo del codice sorge
   
 1. Creare una DLL che implementa le funzioni specificate nei [Plug-in controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrare la DLL, rendendo le voci del Registro di sistema (descritto nella [procedura: installare un plug-in controllo origine](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrare la DLL, rendendo le voci del Registro di sistema (descritto in [come: Installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Creare un file di supporto dell'interfaccia utente e la visualizzazione quando viene richiesto dal pacchetto di scheda di controllo di origine (il componente di Visual Studio che gestisce la funzionalità di controllo sorgente tramite plug-in controllo codice sorgente)  
   

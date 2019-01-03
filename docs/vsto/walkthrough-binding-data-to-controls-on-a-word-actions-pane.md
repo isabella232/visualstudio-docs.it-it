@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926450"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word
   Questa procedura dettagliata viene descritta l'associazione dati a controlli in un riquadro azioni di Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.  
@@ -61,7 +58,7 @@ ms.locfileid: "49873890"
   
 1.  Creare un progetto documento di Word con il nome **My Word Actions Pane**. Nella procedura guidata, selezionare **creare un nuovo documento**.  
   
-     Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **My Word Actions Pane** progetto al **Esplora soluzioni**.  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49873890"
      [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  In c#, è necessario collegare il gestore eventi per il <xref:System.Windows.Forms.UserControl.Load> evento. È possibile inserire il codice nel `ActionsControl` costruttore, dopo la chiamata a `InitializeComponent`. Per altre informazioni su come creare gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  In c#, è necessario collegare il gestore eventi per il <xref:System.Windows.Forms.UserControl.Load> evento. È possibile inserire il codice nel `ActionsControl` costruttore, dopo la chiamata a `InitializeComponent`. Per altre informazioni su come creare gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
@@ -234,13 +231,11 @@ ms.locfileid: "49873890"
 ## <a name="next-steps"></a>Passaggi successivi  
  Questa procedura dettagliata illustra le nozioni di base di associazione dati a controlli in un riquadro azioni in Word. Ecco alcune possibili attività successive:  
   
--   Associazione dati a controlli in Excel. Per altre informazioni, vedere [procedura dettagliata: associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Associazione dati a controlli in Excel. Per altre informazioni, vedere [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
 -   La distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)   
- [Procedura: aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Procedura: Aggiungere un riquadro azioni ai documenti Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

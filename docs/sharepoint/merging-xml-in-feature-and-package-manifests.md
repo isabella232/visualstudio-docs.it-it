@@ -1,9 +1,6 @@
 ---
 title: Unione di codice XML delle funzionalità e pacchetto manifesti | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914436"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Unire i dati XML nei manifesti di funzionalità e pacchetto
   Le funzionalità e i pacchetti sono definiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Questi manifesti di pacchetto sono una combinazione dei dati generati da finestre di progettazione e custom [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] immesso nel modello di manifesto da parte degli utenti. In fase di creazione dei pacchetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unisce l'oggetto personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni con la finestra di progettazione fornito dal [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in modo da formare il pacchetto [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Gli elementi simili, con le eccezioni riportate più avanti in eccezioni di tipo Merge, vengono uniti per evitare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] gli errori di convalida dopo aver distribuito i file in SharePoint e per rendere il manifesto i file più piccoli e più efficiente.  
   
 ## <a name="modify-the-manifests"></a>Modificare i manifesti
- Fino a quando non si disabilita le finestre di progettazione di funzionalità o un pacchetto, è possibile modificare direttamente i file manifesto nel pacchetto. Tuttavia, è possibile aggiungere manualmente custom [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi al modello di manifesto tramite le finestre di progettazione di funzionalità e pacchetto o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Per altre informazioni, vedere [procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+ Fino a quando non si disabilita le finestre di progettazione di funzionalità o un pacchetto, è possibile modificare direttamente i file manifesto nel pacchetto. Tuttavia, è possibile aggiungere manualmente custom [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi al modello di manifesto tramite le finestre di progettazione di funzionalità e pacchetto o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Per altre informazioni, vedere [Procedura: Personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [come: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Funzionalità e pacchetti del manifesto del processo di merge
  Quando si combinano gli elementi personalizzati insieme a elements fornita da progettazione, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procede come segue. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verifica se ogni elemento ha un valore di chiave univoco. Se un elemento non dispone di valori di chiave univoci, viene aggiunto al file manifesto inserito nel pacchetto. Analogamente, gli elementi che dispongono di più chiavi non possono essere sottoposti a merge. Di conseguenza, questi vengono aggiunti al file manifesto.  
@@ -83,5 +80,4 @@ ms.locfileid: "37119174"
   
 ## <a name="see-also"></a>Vedere anche
  [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
- [Compilare ed eseguire il debug di soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
+ [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

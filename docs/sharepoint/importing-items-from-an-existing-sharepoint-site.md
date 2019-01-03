@@ -1,17 +1,12 @@
 ---
 title: Importazione di elementi da un sito di SharePoint esistente | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918154"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importare gli elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.  
@@ -96,20 +91,20 @@ ms.locfileid: "49832108"
   
  Ad esempio, se si importa la definizione di elenco ExpenseForms, una definizione di elenco con lo stesso nome verrà visualizzato sotto il **elencare le definizioni** cartella nella **Esplora soluzioni** insieme a relativo  *Elements. XML* e *schema* file. Tuttavia, i form ASPX e HTML associati possono essere inseriti in una cartella denominata **ExpenseForms** nella cartella **Altri file importati** . Per completare l'importazione, spostare i file nella definizione di elenco ExpenseForms in **Esplora soluzioni** e modificare la proprietà **DeploymentType** per ogni file da **NoDeployment** a **ElementFile**.  
   
- Quando si importano i ricevitori di eventi, il *Elements* file viene copiato nella posizione corretta, ma è necessario includere manualmente l'assembly nel pacchetto della soluzione in modo che venga distribuito con la soluzione. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] come eseguire questa operazione, vedere [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Quando si importano i ricevitori di eventi, il *Elements* file viene copiato nella posizione corretta, ma è necessario includere manualmente l'assembly nel pacchetto della soluzione in modo che venga distribuito con la soluzione. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] come eseguire questa operazione, vedere [come: Aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Quando si importano i flussi di lavoro, i moduli di InfoPath vengono copiati nella cartella **Altri file importati** . Se il *wsp* file contiene un modello Web, viene impostato come pagina di avvio nella **Esplora soluzioni**.  
   
 ## <a name="import-fields-and-property-bags"></a>I contenitori delle proprietà e campi per l'importazione
  Quando si importa una soluzione con più campi, tutte le definizioni di campo vengono unite in un'unica *Elements* file in un nodo **Esplora soluzioni** chiamato **campi** . Analogamente, tutte le relative voci dell'elenco proprietà vengono unite in un' *Elements* file in un nodo chiamato **PropertyBags**.  
   
- I campi in SharePoint sono colonne di un determinato tipo di dati, ad esempio testo, booleano o ricerca. Per altre informazioni, vedere [Blocco predefinito: Colonne e tipi di campo](http://go.microsoft.com/fwlink/?LinkId=182304). I contenitori delle proprietà consentono di aggiungere proprietà in vari oggetti in SharePoint, da una farm a un elenco in un sito di SharePoint. I contenitori delle proprietà vengono implementati come tabella hash di nomi di proprietà e valori. Per altre informazioni, vedere la pagina relativa alla [gestione della configurazione di SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) oppure quella relativa alle [impostazioni del contenitore delle proprietà di SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
+ I campi in SharePoint sono colonne di un determinato tipo di dati, ad esempio testo, booleano o ricerca. Per altre informazioni, vedere [blocco predefinito: Le colonne e tipi di campo](http://go.microsoft.com/fwlink/?LinkId=182304). I contenitori delle proprietà consentono di aggiungere proprietà in vari oggetti in SharePoint, da una farm a un elenco in un sito di SharePoint. I contenitori delle proprietà vengono implementati come tabella hash di nomi di proprietà e valori. Per altre informazioni, vedere la pagina relativa alla [gestione della configurazione di SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) oppure quella relativa alle [impostazioni del contenitore delle proprietà di SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
   
 ## <a name="delete-items-in-the-project"></a>Eliminare gli elementi del progetto
  La maggior parte degli elementi nelle soluzioni di SharePoint ha uno o più elementi dipendenti. Ad esempio, le istanze di elenco dipendono dai tipi di contenuto e i tipi di contenuto dipendono dai campi. Dopo avere importato una soluzione di SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non notifica i problemi relativi ai riferimenti se si elimina un elemento nella soluzione ma non i relativi elementi dipendenti, fino a quando non si tenta di distribuire la soluzione. Ad esempio, se una soluzione importata include un'istanza di elenco che dipende da un tipo di contenuto che viene eliminato, è possibile che si verifichi un errore al momento della distribuzione. L'errore si verifica quando l'elemento dipendente non è presente nel server SharePoint. Analogamente, se un elemento eliminato dispone anche di un elenco proprietà correlato, eliminare tali voci di contenitore delle proprietà dal **PropertyBags** *Elements* file. Di conseguenza, se si eliminano tutti gli elementi da una soluzione importata e vengono generati errori di distribuzione, verificare se devono essere eliminati anche tutti gli elementi dipendenti.  
   
 ## <a name="restore-missing-feature-attributes"></a>Ripristinare gli attributi di funzionalità mancanti
- Quando si importano soluzioni, alcuni attributi di funzionalità facoltativi vengono omessi dal manifesto della funzionalità importate. Se si vuole ripristinare questi attributi nel nuovo file di funzionalità, identificare gli attributi mancanti confrontando il file delle funzionalità originale con il nuovo manifesto delle funzionalità e seguire le istruzioni nell'argomento [procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Quando si importano soluzioni, alcuni attributi di funzionalità facoltativi vengono omessi dal manifesto della funzionalità importate. Se si vuole ripristinare questi attributi nel nuovo file di funzionalità, identificare gli attributi mancanti confrontando il file delle funzionalità originale con il nuovo manifesto delle funzionalità e seguire le istruzioni nell'argomento [come: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Il rilevamento dei conflitti di distribuzione non viene eseguita in istanze di elenco incorporate
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] non esegue il rilevamento dei conflitti di distribuzione sulle istanze di elenco incorporate, ovvero le istanze di elenco predefinite fornite con SharePoint. Il rilevamento dei conflitti non viene eseguito per evitare di sovrascrivere le istanze di elenco incorporate su SharePoint. Le istanze di elenco incorporate vengono ancora distribuite o aggiornate, ma non vengono mai eliminate o sovrascritte. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Risolvere i problemi di SharePoint e distribuzione di pacchetti](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
@@ -141,5 +136,5 @@ ms.locfileid: "49832108"
 ## <a name="see-also"></a>Vedere anche
  [Procedura dettagliata: Importare gli elementi da un sito di SharePoint esistente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Linee guida per l'importazione di flussi di lavoro riutilizzabili](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
- [Procedura dettagliata: Importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Procedura dettagliata: Importa un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
+ [Procedura: Aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

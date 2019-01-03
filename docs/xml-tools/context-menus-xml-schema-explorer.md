@@ -2,7 +2,6 @@
 title: Menu di scelta rapida in XML Schema Explorer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898896"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu di scelta rapida (XML Schema Explorer)
 
 Le seguenti voci di menu di scelta rapida sono usate per eseguire ricerche specifiche dello schema nonché altre operazioni.
 
-## <a name="node-type-schema-set"></a>Tipo di nodo: set di schemi
+## <a name="node-type-schema-set"></a>Tipo di nodo: Set di schemi
 
 Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del set di schemi.
 
@@ -32,7 +31,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Mostra elementi globali**|Consente di individuare ed evidenziare tutti gli elementi globali nel set di schemi.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
-## <a name="node-type-namespace"></a>Tipo di nodo: Namespace
+## <a name="node-type-namespace"></a>Tipo di nodo: Spazio dei nomi
  Nella tabella seguente vengono descritte le opzioni disponibili per un nodo dello spazio dei nomi.
 
 |Opzione|Descrizione|
@@ -65,7 +64,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in XML Schema Explorer sarà selezionato anche nell'editor XML.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
-## <a name="node-type-element"></a>Tipo di nodo: elemento
+## <a name="node-type-element"></a>Tipo di nodo: Elemento
  Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta rapida per i nodi dell'elemento dispone delle opzioni seguenti:
 
 |Opzione|Descrizione|
@@ -77,7 +76,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Elementi head dei gruppi di sostituzione Show**|Per gli elementi globali membri di un gruppo di sostituzione, consente di inviduare ed evidenziare tutte le intestazioni dirette e indirette per l'elemento selezionato, come le seguenti:<br /><br /> -Intestazione un gruppo di sostituzione specificata nell'elemento selezionato.<br />-Intestazione un gruppo di sostituzione specificata nell'elemento head.|
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
 
-## <a name="node-type-global-types"></a>Tipo di nodo: tipi globali
+## <a name="node-type-global-types"></a>Tipo di nodo: Tipi globali
  Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta rapida per i nodi del tipo globale dispone delle opzioni seguenti:
 
 |Opzione|Descrizione|
@@ -87,7 +86,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Mostra tutti i tipi derivati**|Consente di individuare ed evidenziare tutti i tipi che sono direttamente o indirettamente derivati dal tipo selezionato.|
 |**Mostra tutti i predecessori**|Mostra tutti i tipi padre (di base).|
 
-## <a name="node-type-attribute"></a>Tipo di nodo: attributo
+## <a name="node-type-attribute"></a>Tipo di nodo: Attributo
  Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta rapida per i nodi dell'attributo dispone delle opzioni seguenti:
 
 |Opzione|Descrizione|
@@ -96,7 +95,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Vai all'attributo originale**|Per i riferimenti agli attributi consente di passare alla definizione effettiva dell'attributo.|
 |**Mostra tutti i riferimenti**|Per gli attributi globali, consente di individuare ed evidenziare tutti i riferimenti (altri attributi con `ref="selectedAttribute"`) all'attributo selezionato.|
 
-## <a name="node-type-attribute-group"></a>Tipo di nodo: gruppo di attributi
+## <a name="node-type-attribute-group"></a>Tipo di nodo: Gruppo di attributi
  Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta rapida per i nodi del gruppo di attributi dispone delle opzioni seguenti:
 
 |Opzione|Descrizione|
@@ -105,7 +104,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Mostra tutti i membri**|Consente di individuare ed evidenziare tutti i membri del gruppo di attributi.|
 |**Mostra tutti i riferimenti**|Consente di individuare ed evidenziare tutti i riferimenti (gruppi di attributi con `ref="selectedAttributeGroup"`) al gruppo di attributi selezionato.|
 
-## <a name="node-type-named-group"></a>Tipo di nodo: gruppo denominato
+## <a name="node-type-named-group"></a>Tipo di nodo: Gruppo denominato
  Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta rapida per i nodi del gruppo denominato dispone delle opzioni seguenti:
 
 |Opzione|Descrizione|

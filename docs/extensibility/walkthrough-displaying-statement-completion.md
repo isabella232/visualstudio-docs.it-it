@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione del completamento istruzioni | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986635"
 ---
-# <a name="walkthrough-display-statement-completion"></a>Questa procedura dettagliata: Completamento istruzioni visualizzazione
+# <a name="walkthrough-display-statement-completion"></a>Procedura dettagliata: Visualizzare il completamento delle istruzioni
 È possibile implementare il completamento delle istruzioni basata sul linguaggio definendo gli identificatori per il quale si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e quindi visualizzare il completamento per solo tale tipo. In alternativa, è possibile attivare il completamento di un tipo di contenuto esistente, ad esempio, "normale". Questa procedura dettagliata illustra come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", ovvero il tipo di contenuto dei file di testo. Il tipo di contenuto "text" è il predecessore di tutti gli altri tipi contenuti, inclusi file XML e codice.  
   
  Completamento delle istruzioni viene in genere attivato digitando determinati caratteri, ad esempio, digitando l'inizio di un identificatore, ad esempio "using". Viene chiuso in genere premendo il **barra spaziatrice**, **della scheda**, o **invio** chiave per eseguire il commit di una selezione. È possibile implementare le funzionalità di IntelliSense che attivano quando si digita un carattere con un gestore di comandi per le sequenze di tasti (il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e un provider del gestore che implementa il <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaccia. Per creare l'origine di completamento, ovvero l'elenco degli identificatori che fanno parte di completamento, implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfaccia e un provider di origine di completamento (il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). I provider sono parti componente Managed Extensibility Framework (MEF). Sono responsabili per importare servizi e Broker ed esportare le classi di origine e il controller, ad esempio, il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, che consente la navigazione nel buffer di testo e il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, che attiva la sessione di completamento.  
@@ -205,4 +202,4 @@ ms.locfileid: "49879324"
 4.  Mentre si digita prima di tutto "a" e quindi "d", dovrebbe visualizzato un elenco che contiene "addition" e "personalizzazione". Si noti che sia selezionata l'addizione. Quando si digita un'altra "d", l'elenco deve contenere solo "addition," che viene ora selezionato. È possibile eseguire il commit "addition" premendo la **barra spaziatrice**, **della scheda**, o **invio** chiave o ignorare l'elenco digitando Esc o qualsiasi altra chiave.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

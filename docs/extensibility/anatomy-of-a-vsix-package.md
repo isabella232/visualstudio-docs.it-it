@@ -1,9 +1,6 @@
 ---
 title: Anatomia di un pacchetto VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921484"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia di un pacchetto VSIX
 Un pacchetto VSIX non è un *VSIX* file che contiene uno o più estensioni di Visual Studio, insieme ai metadati Visual Studio viene utilizzato per classificare e installare le estensioni. Tali metadati sono contenuti nel manifesto VSIX e il *[Content_Types] XML* file. Un pacchetto VSIX può anche contenere uno o più *vsixlangpack* file per fornire il testo di programma di installazione localizzato e può contenere pacchetti VSIX aggiuntivi per installare le dipendenze.  
@@ -60,4 +57,4 @@ Un pacchetto VSIX non è un *VSIX* file che contiene uno o più estensioni di Vi
 ## <a name="contenttypesxml"></a>[Content_Types] XML  
  Il *[Content_Types] XML* file identifica i tipi di file in espansi *VSIX* file. Visual Studio Usa questo file durante l'installazione del pacchetto, ma non viene installato il file stesso. Per altre informazioni su questo file, vedere [la struttura del file [Content_types] XML](the-structure-of-the-content-types-dot-xml-file.md).  
   
- Oggetto *[Content_Types] XML* file è richiesto dallo standard Open Packaging Conventions (OPC). Per altre informazioni su OPC, vedere [OPC: un nuovo standard per comprimere i dati](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) sul sito Web MSDN.
+ Oggetto *[Content_Types] XML* file è richiesto dallo standard Open Packaging Conventions (OPC). Per altre informazioni su OPC, vedere [OPC: Un nuovo standard per comprimere i dati](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) sul sito Web MSDN.

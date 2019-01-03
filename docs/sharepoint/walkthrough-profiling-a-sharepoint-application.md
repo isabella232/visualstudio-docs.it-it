@@ -1,9 +1,6 @@
 ---
 title: "Procedura dettagliata: Profilatura di un'applicazione di SharePoint | Microsoft Docs"
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913817"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: Profilatura di un'applicazione SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: Profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più onerosa (esecuzione più lenta) del progetto, noto anche come il *percorso ad accesso frequente*.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
@@ -280,4 +277,3 @@ ms.locfileid: "49852751"
  [Panoramica delle sessioni di prestazioni](/visualstudio/profiling/performance-session-overview)   
  [Guida per principianti alla profilatura delle prestazioni](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Trovare i colli di bottiglia dell'applicazione con Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

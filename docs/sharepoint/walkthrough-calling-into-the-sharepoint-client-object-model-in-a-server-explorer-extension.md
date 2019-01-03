@@ -1,9 +1,6 @@
 ---
-title: "Procedura dettagliata: Chiamata nel modello a oggetti Client di SharePoint in un'estensione di Esplora Server | Microsoft Docs"
-ms.custom: ''
+title: "Procedura dettagliata: La chiamata nel modello a oggetti Client di SharePoint in un'estensione di Esplora Server | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918888"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: Chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: La chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server
   Questa procedura dettagliata illustra come chiamare il modello a oggetti client SharePoint da un'estensione per il **connessioni di SharePoint** nodo **Esplora Server**. Per altre informazioni su come usare il modello a oggetti client SharePoint, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
@@ -39,7 +36,7 @@ ms.locfileid: "51296034"
 -   Il debug e l'estensione per il testing.  
   
 > [!NOTE]  
->  L'estensione create in questa procedura dettagliata è simile all'estensione creati in [procedura dettagliata: estensione di Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tale procedura dettagliata Usa il modello a oggetti SharePoint server, ma questa procedura dettagliata esegue le stesse attività usando il modello a oggetti client.  
+>  L'estensione create in questa procedura dettagliata è simile all'estensione che crea in [procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tale procedura dettagliata Usa il modello a oggetti SharePoint server, ma questa procedura dettagliata esegue le stesse attività usando il modello a oggetti client.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  

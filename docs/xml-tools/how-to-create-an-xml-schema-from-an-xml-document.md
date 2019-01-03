@@ -1,8 +1,7 @@
 ---
-title: 'Procedura: creare uno schema XML da un documento XML'
+title: 'Procedura: di uno schema XML da un documento XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915205"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: creare uno schema XML da un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: Creare uno schema XML da un documento XML
 
 L'editor XML consente di creare uno schema XSD (XML Schema Definition Language) da un documento XML. Il documento di istanza XML determina come viene generato lo schema nel seguente modo:
 
@@ -29,20 +28,20 @@ L'editor XML consente di creare uno schema XSD (XML Schema Definition Language) 
 
 Gli schemi creati vengono quindi usati per fornire IntelliSense al documento XML.
 
-Per ulteriori informazioni sul motore di inferenza dello schema, vedere [deduzione di uno schema XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
+Per altre informazioni sul motore di inferenza dello schema, vedere [inferenza di uno schema XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
 ## <a name="to-create-an-xml-schema"></a>Per creare uno schema XML
 
 1.  Caricare un documento di istanza XML nell'editor XML.
 
-2.  Fare clic su di **Create Schema** pulsante il **barra degli strumenti**.
+2.  Fare clic sui **Create Schema** pulsante il **sulla barra degli strumenti**.
 
      Viene creato e aperto un documento di schema XML per ogni spazio dei nomi rilevato nel documento di istanza XML. Ogni schema viene aperto come file esterno temporaneo.
 
      Gli schemi possono essere salvati su disco, aggiunti al progetto oppure eliminati.
 
     > [!NOTE]
-    >  Il **Create Schema** comando è disponibile dal menu di scelta rapida dell'Editor XML e in anche il **XML** menu.
+    >  Il **Create Schema** comando è anche disponibile tramite il menu di scelta rapida dell'Editor XML e nel **XML** menu.
 
 ## <a name="see-also"></a>Vedere anche
 

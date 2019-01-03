@@ -1,9 +1,6 @@
 ---
 title: Risoluzione dei problemi relativi a pacchetti VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835971"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage e suggerimenti per risolvere i problemi.  
@@ -53,7 +50,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 5. Esaminare il log attività.  
   
-    Per altre informazioni, vedere [procedura: usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
+    Per altre informazioni, vedere [Procedura: Usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Per altre informazioni sulle eccezioni generate dall'IDE, fare clic su **eccezioni** nel **Debug** menu per abilitare le eccezioni. Nel **eccezioni** nella finestra di dialogo selezionare i tipi di eccezioni intorno al quale si desiderano altre informazioni.  
   
@@ -92,7 +89,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 2.  Usare il log attività.  
   
-     Tracciare il comportamento di VSPackage scrivendo informazioni nel log attività in punti chiave. Questa tecnica è particolarmente utile quando si esegue un pacchetto VSPackage in un ambiente di vendita al dettaglio. Per altre informazioni, vedere [procedura: usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
+     Tracciare il comportamento di VSPackage scrivendo informazioni nel log attività in punti chiave. Questa tecnica è particolarmente utile quando si esegue un pacchetto VSPackage in un ambiente di vendita al dettaglio. Per altre informazioni, vedere [Procedura: Usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Usare i simboli pubblici.  
   

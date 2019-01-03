@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Aggiungere controlli NamedRange a fogli di lavoro'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d9515f5a42d37d73a95460fa458090992c488aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928659"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procedura: Aggiungere controlli NamedRange a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.NamedRange> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.  
@@ -104,5 +101,3 @@ ms.locfileid: "53648368"
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Procedura: Ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

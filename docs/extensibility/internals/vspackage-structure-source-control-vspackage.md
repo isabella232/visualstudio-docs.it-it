@@ -1,9 +1,6 @@
 ---
 title: Struttura VSPackage (VSPackage di controllo codice sorgente) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d36e31db9c47325e62fe759cd5030c5f24fb73be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 83e8207ffb52fd41c82eac896611f7454bd7379d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874680"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struttura VSPackage (VSPackage di controllo del codice sorgente)
 
@@ -78,4 +75,4 @@ Per un elenco completo di interfacce che debba prendere in considerazione un pac
 ## <a name="see-also"></a>Vedere anche
 
 - [Elementi di progettazione](../../extensibility/internals/source-control-vspackage-design-elements.md)
-- [Interfacce e i servizi correlati](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
+- [Interfacce e servizi correlati](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

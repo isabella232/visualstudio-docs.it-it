@@ -1,8 +1,7 @@
 ---
-title: 'Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team'
+title: 'Procedura: Sincronizzare i set di regole di progetto di codice con i criteri di controllo del progetto Team'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883243"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: sincronizzare set di regole di progetto di codice con un criterio di controllo aggiuntivo progetto DevOps di Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: Sincronizzare i set di regole di progetto di codice con un criterio di controllo aggiuntivo progetto DevOps di Azure
 
 Specificando un set di regole che contiene almeno le regole specificate nel set di regole per i criteri di controllo è sincronizzare le impostazioni di analisi codice per progetti di codice per i criteri di controllo per il progetto DevOps di Azure. Il responsabile per gli sviluppatori può dare è il nome e la posizione del set di regole per i criteri di controllo. Assicurarsi che l'analisi del codice per il progetto usi il set di regole corretto, è possibile usare una delle opzioni seguenti:
 
@@ -55,7 +54,7 @@ Specificando un set di regole che contiene almeno le regole specificate nel set 
 
 1.  Seguire una delle procedure riportate in precedenza in questo argomento per selezionare i criteri di controllo del progetto DevOps di Azure nella pagina analisi del codice della finestra di dialogo Impostazioni di progetto.
 
-2.  Fare clic su **aperto**.
+2.  Fare clic su **Apri**.
 
 3.  Aggiungere o rimuovere le regole tramite le [editor set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 

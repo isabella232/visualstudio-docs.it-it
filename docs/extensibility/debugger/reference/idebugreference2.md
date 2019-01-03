@@ -1,9 +1,6 @@
 ---
-title: IDebugReference2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugReference2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb5d5d8b3ab6e608a2454847fc9ec27e384777bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df5eb1558cf2d93866eaa50e3a480ba70f904fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855244"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
-Questa interfaccia rappresenta un riferimento a una proprietà di frame dello stack o un'altra proprietà.  
+Questa interfaccia rappresenta un riferimento a una proprietà frame dello stack o un'altra proprietà.  
   
 > [!NOTE]
 >  `IDebugReference2` è riservato per utilizzi futuri e tutti i relativi metodi devono restituire `E_NOTIMPL`.  
@@ -46,32 +43,32 @@ IDebugReference2 : IUnknown
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Ottiene il [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura che descrive questo riferimento.|  
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Imposta il valore di questo riferimento da una stringa.|  
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Imposta il valore del riferimento da una stringa.|  
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Imposta il valore di questo riferimento da un altro riferimento.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Enumera gli elementi figlio di questo riferimento.|  
 |[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Ottiene l'elemento padre di questo riferimento.|  
-|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Ottiene il riferimento più derivato di questo riferimento.|  
+|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Ottiene il riferimento della Guida di riferimento più derivato.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Ottiene i byte di memoria a cui fa riferimento questo riferimento.|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Ottiene il contesto di memoria per questo riferimento.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Ottiene le dimensioni, in byte, della Guida di riferimento.|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Ottiene un contesto in memoria per questo riferimento.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Ottiene la dimensione, espressa in byte, della Guida di riferimento.|  
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Imposta il tipo di riferimento.|  
 |[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Confronta questo riferimento con un altro.|  
   
 ## <a name="remarks"></a>Note  
   
 > [!NOTE]
->  Questo utilizzo di "proprietà" non deve essere confuso con una variabile membro di una classe, che pertanto anche se un `IDebugReference2` può rappresentare tale entità.  
+>  Questo uso di "property" non deve essere confuso con tale vale a dire una variabile membro di una classe, anche se un `IDebugReference2` può rappresentare tale entità.  
   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) rappresenta una proprietà, mentre `IDebugReference2` rappresenta un riferimento a una proprietà, in genere un riferimento a un oggetto del programma sottoposto a debug.  
+ [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) rappresenta una proprietà, mentre `IDebugReference2` rappresenta un riferimento a una proprietà, in genere un riferimento a un oggetto del programma in fase di debug.  
   
- La differenza principale tra una proprietà e un riferimento è che una proprietà fa riferimento a un'istanza denominata di un oggetto, mentre un riferimento si riferisce a un'istanza senza nome. Ad esempio, una proprietà può fare riferimento a un oggetto nell'heap del programma da `"a.b"`. Un'altra proprietà può fare riferimento allo stesso oggetto come `"c.d"`. Il modo di fare riferimento a questa proprietà è necessario che `"a.b"` o `"c.d"` nell'ambito. Un riferimento all'oggetto stesso è senza nome; l'oggetto può essere indicato per fino a quando la memoria per l'oggetto è valida.  
+ La differenza principale tra una proprietà e un riferimento è che una proprietà fa riferimento a un'istanza denominata di un oggetto, mentre un riferimento è relativo a un'istanza senza nome. Ad esempio, una proprietà può fare riferimento a un oggetto nell'heap del programma da `"a.b"`. Un'altra proprietà può fare riferimento allo stesso oggetto come `"c.d"`. Il modo di fare riferimento a questa proprietà è necessario che `"a.b"` o `"c.d"` nell'ambito. Un riferimento all'oggetto stesso è senza nome; l'oggetto può essere indicato, purché la memoria per l'oggetto è valida.  
   
- Un `IDebugProperty2` interfaccia può essere considerata come un valore con un nome, un tipo e un indirizzo. Un `IDebugReference2`, d'altra parte, può essere considerato come un tipo e un indirizzo.  
+ Un `IDebugProperty2` interfaccia può essere considerata un valore con un nome, un tipo e un indirizzo. Un `IDebugReference2`, da altra parte, può essere considerato un tipo e un indirizzo.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -79,4 +76,4 @@ IDebugReference2 : IUnknown
  [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [getReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
+ [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

@@ -2,7 +2,6 @@
 title: Set di regole Regole base delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: gewarren
@@ -10,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 66c67c9c1a395c0684567acfed78c207422b59ba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54169ea373c87e731410492954773dcc575e20c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844902"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
-È possibile utilizzare il set di concentrarsi su come rendere più facile da comprendere e usare il codice di regole regole base delle linee guida di progettazione Microsoft. È necessario includere questo set di regole se il progetto contiene codice di libreria o se si desidera applicare le procedure consigliate per il codice che è facile da gestire.
+È possibile usare il set di concentrarsi su come rendere più facile da comprendere e usare il codice di regole regole base delle linee guida di progettazione Microsoft. È consigliabile includere questo set di regole se il progetto contiene codice di libreria o se si desidera applicare le procedure consigliate per il codice che è facile da gestire.
 
- Le regole base delle linee guida di progettazione includono tutte le regole nel set di regole regole minime consigliate Microsoft. Per un elenco di regole minime, vedere [set di regole alle regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+ Le regole base delle linee guida di progettazione includono tutte le regole nel set di regole regole minime consigliate Microsoft. Per un elenco di regole minime, vedere [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
  Nella tabella seguente vengono descritte tutte le regole nel set di regole regole base delle linee guida di progettazione Microsoft.
 
@@ -29,22 +28,22 @@ ms.locfileid: "31902272"
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi disposable devono essere disposable|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Dichiarare correttamente i gestori eventi|
 |[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Contrassegnare gli assembly con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Metodi di interfaccia devono essere richiamabili dai tipi figlio|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Tipi di risorse native devono essere disposable|
+|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
+|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|I tipi proprietari di risorse native devono essere disposable|
 |[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Spostare i P/Invoke nella classe NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Non nascondere i metodi della classe base|
+|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Non nascondere metodi della classe base|
 |[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Implementare IDisposable correttamente|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Non generare eccezioni in posizioni|
+|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Non generare eccezioni in posizioni impreviste|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitare tasti di scelta rapida duplicati|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Punti di ingresso P/Invoke devono esistere|
+|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|I punti di ingresso P/Invoke devono esistere|
 |[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invoke non devono essere visibili|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|I tipi layout automatici non devono essere visibile a COM|
+|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|I tipi layout automatici non devono essere visibili a COM|
 |[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Chiamare GetLastError immediatamente dopo P/Invoke|
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Tipi di base di tipo visibile a COM devono essere visibili a COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Metodi di registrazione COM devono corrispondere|
+|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campi dei tipi di valore devono essere portabili|
+|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|I campi di tipo di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Esaminare le query SQL per le vulnerabilità di sicurezza|
@@ -56,31 +55,31 @@ ms.locfileid: "31902272"
 |[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|I metodi APTCA devono chiamare solo metodi APTCA|
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|I tipi APTCA devono estendere solo tipi di base APTCA|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Non esporre in modo indiretto metodi con richieste di collegamento|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Le richieste di collegamento di override devono essere identiche a base|
+|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Le richieste di collegamento di override devono essere identiche a di base|
 |[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Incapsulamento vulnerabile delle clausole finally in esterno try|
 |[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Le richieste di collegamento necessarie richieste di ereditarietà|
 |[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|I tipi SecurityCritical possono non partecipare all'equivalenza del tipo|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Costruttori predefiniti devono essere critici almeno come i costruttori predefiniti del tipo di base|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Delegati devono essere associati ai metodi con trasparenza consistente|
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|I costruttori predefiniti devono essere critici almeno come i costruttori predefiniti del tipo di base|
+|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|I delegati devono essere associati ai metodi con trasparenza consistente|
 |[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|I metodi devono conservare trasparenza consistente durante l'override dei metodi base|
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|I metodi Transparent devono contenere solo IL verificabile|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
+|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|I metodi Transparent non devono chiamare metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Il codice Transparent non deve fare riferimento a elementi SecurityCritical|
 |[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare i LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|I tipi devono essere critici almeno come le interfacce e i relativi tipi di base|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|I metodi Transparent non possono utilizzare sicurezza asserzioni|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|I metodi Transparent non devono chiamare in codice nativo|
+|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|I metodi Transparent non possono usare la sicurezza delle asserzioni|
+|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|
 |[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Eseguire il rethrow per conservare i dettagli dello stack|
 |[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Non eliminare oggetti più volte|
 |[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Inizializzare i campi statici del tipo di valore inline|
 |[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Non contrassegnare componenti serviti con WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|I campi Disposable devono essere eliminati.|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|I campi Disposable devono essere eliminati|
 |[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Non chiamare metodi sottoponibili a override nei costruttori|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|I tipi eliminabili devono dichiarare un finalizzatore|
+|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|I tipi Disposable devono dichiarare un finalizzatore|
 |[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|I finalizzatori devono chiamare il finalizzatore di classe di base|
 |[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implementare costruttori di serializzazione|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Overload dell'operatore è uguale all'override di ValueType. Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Punti di ingresso contrassegno Windows Form con STAThread|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Operatore di overload di equals all'override di ValueType. Equals|
+|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Punti di ingresso di Mark Windows Form con STAThread|
 |[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Contrassegnare tutti i campi non serializzabili|
 |[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Chiamare metodi della classe di base su tipi ISerializable|
 |[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Contrassegnare i tipi ISerializable con SerializableAttribute|
@@ -90,16 +89,16 @@ ms.locfileid: "31902272"
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Testare i valori NaN in modo corretto|
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Non dichiarare membri statici su tipi generici|
 |[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|Non esporre elenchi generici|
-|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Utilizzare istanze di gestori eventi generici|
-|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Metodi generici devono fornire parametri di tipo|
+|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Usare istanze di gestori eventi generici|
+|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|I metodi generici devono fornire parametri di tipo|
 |[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Evitare un numero eccessivo di parametri nei tipi generici|
 |[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Non annidare tipi generici nelle firme dei membri|
 |[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Utilizzare generics dove appropriato|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Gli enum devono avere valore zero|
+|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Le enumerazioni devono avere valore zero|
 |[CA1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|Le raccolte devono implementare l'interfaccia generica|
 |[CA1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|Considerare il passaggio di tipi di base come parametri|
 |[CA1012](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|I tipi astratti non devono avere costruttori|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Overload di operatore equals all'overload di addizione e sottrazione|
+|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Overload di operatore equals all'overload degli operatori di addizione e sottrazione|
 |[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|Contrassegnare gli assembly con CLSCompliantAttribute|
 |[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|Contrassegnare gli assembly con ComVisibleAttribute|
 |[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|Contrassegnare gli attributi con AttributeUsageAttribute|
@@ -107,7 +106,7 @@ ms.locfileid: "31902272"
 |[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|Gli indicizzatori non devono essere multidimensionali|
 |[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|Utilizzare proprietà dove appropriato|
 |[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|Sostituire gli argomenti ripetitivi con una matrice di parametri|
-|[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|Non utilizzare i parametri predefiniti|
+|[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|Non usare i parametri predefiniti|
 |[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|Contrassegnare le enumerazioni con FlagsAttribute|
 |[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|Archivio di enum deve essere Int32|
 |[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|Utilizzare eventi dove appropriato|
@@ -119,7 +118,7 @@ ms.locfileid: "31902272"
 |[CA1038](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)|Gli enumeratori devono essere fortemente tipizzati|
 |[CA1039](../code-quality/ca1039-lists-are-strongly-typed.md)|Gli elenchi sono fortemente tipizzati|
 |[CA1041](../code-quality/ca1041-provide-obsoleteattribute-message.md)|Fornire una proprietà ObsoleteAttribute. message|
-|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|Utilizzare argomento di stringa o integrale per gli indicizzatori|
+|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|Usare l'argomento di stringa o integrale per gli indicizzatori|
 |[CA1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|Proprietà non devono essere in sola scrittura|
 |[CA1046](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)|Non eseguire l'overload dell'operatore di uguaglianza sui tipi di riferimento|
 |[CA1047](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|Non dichiarare membri protetti nei tipi sealed|
@@ -130,22 +129,22 @@ ms.locfileid: "31902272"
 |[CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|I tipi statici non devono avere costruttori|
 |[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|I parametri URI non devono essere stringhe|
 |[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI restituiscono valori non devono essere stringhe|
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Proprietà URI non devono essere stringhe|
+|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Le proprietà URI non devono essere stringhe|
 |[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Stringa chiamano gli overload System. Uri|
-|[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Tipi non devono estendere tipi di base specifici|
+|[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|I tipi non devono estendere tipi di base specifici|
 |[CA1059](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|I membri non devono esporre tipi concreti specifici|
 |[CA1064](../code-quality/ca1064-exceptions-should-be-public.md)|Le eccezioni devono essere pubbliche|
-|[CA1500](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|I nomi delle variabili non devono corrispondere i nomi dei campi|
+|[CA1500](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|I nomi delle variabili non devono corrispondere ai nomi dei campi|
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Evitare complessità eccessiva|
-|[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Gli identificatori non devono limitarsi di maiuscole e minuscole|
+|[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Gli identificatori devono differenziarsi minuscole|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Gli identificatori non devono corrispondere a parole chiave|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|Rivedere i parametri inutilizzati|
+|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|Controllare i parametri inutilizzati|
 |[CA1804](../code-quality/ca1804-remove-unused-locals.md)|Rimuovere locali non utilizzati|
 |[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|Evitare un numero eccessivo di variabili locali|
 |[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Inizializzare i campi statici del tipo di riferimento inline|
 |[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|Evitare il codice privato|
 |[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Evitare classi interne prive di istanze|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Evitare attributi non sealed|
+|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Evitare attributi unsealed|
 |[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Preferire matrici di matrici multidimensionali|
 |[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Override di equals e dell'operatore è uguale a sui tipi di valore|
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Proprietà non devono restituire matrici|
@@ -154,14 +153,14 @@ ms.locfileid: "31902272"
 |[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|Evitare campi privati non utilizzati|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Non generare tipi di eccezione riservati|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Utilizzare equivalenti gestiti dell'API Win32|
-|[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Creare istanze di eccezioni di argomento correttamente|
+|[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Creare un'istanza di eccezioni di argomento correttamente|
 |[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|I campi non costanti non devono essere visibili|
 |[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|Non contrassegnare le enumerazioni con FlagsAttribute|
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|Non generare eccezioni in clausole di eccezione|
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|I finalizzatori devono essere protetti.|
+|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|I finalizzatori devono essere protetti|
 |[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Non diminuire la visibilità di membri ereditati|
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Membri devono limitarsi al tipo restituito più di|
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Override di equals all'overload dell'operatore uguale a|
+|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|I membri devono limitarsi al tipo restituito|
+|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Override di equals all'overload dell'operatore è uguale a|
 |[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Overload degli operatori hanno alternative con nome|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Gli operatori devono avere overload simmetrici|
 |[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Le proprietà della raccolta devono essere di sola lettura|

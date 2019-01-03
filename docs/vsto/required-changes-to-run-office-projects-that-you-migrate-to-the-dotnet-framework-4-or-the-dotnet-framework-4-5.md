@@ -1,9 +1,6 @@
 ---
 title: Modifiche necessarie per eseguire i progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 819a3f1c0ea4541bee55dca2402cac6dbf9848cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917618"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifiche necessarie per eseguire i progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5
   Se il framework di destinazione di un progetto di Office viene modificato per il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o in un secondo momento da una versione precedente di .NET Framework, è necessario eseguire le attività seguenti per assicurarsi che la soluzione possa essere eseguita nel computer di sviluppo e nei computer degli utenti finali:  
@@ -67,12 +64,10 @@ ms.locfileid: "50670793"
 ## <a name="update-the-prerequisites-for-deployment"></a>Aggiornare i prerequisiti per la distribuzione  
  Quando si destina un progetto di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario aggiornare anche il prerequisito di.NET Framework corrispondente nel **prerequisiti** nella finestra di dialogo. In caso contrario, i controlli di progetto limited di InstallShield la distribuzione ClickOnce o per e installa una versione precedente di .NET Framework.  
   
- Per altre informazioni sull'aggiornamento dei prerequisiti per la distribuzione nei computer dell'utente finale, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Per altre informazioni sull'aggiornamento dei prerequisiti per la distribuzione nei computer dell'utente finale, vedere [come: Installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Reinstallare le soluzioni nei computer degli utenti finali  
  Se si usa ClickOnce per distribuire una soluzione Office destinata a .NET Framework 3.5 e quindi si modifica la destinazione del progetto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, gli utenti finali devono disinstallare la soluzione e reinstallarla dopo averla ripubblicata. Se si pubblica nuovamente la soluzione ridestinata e la soluzione viene aggiornata nei computer dell'utente finale, gli utenti finali riceveranno un <xref:System.Runtime.InteropServices.COMException> quando si esegue la soluzione aggiornata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
-  
-  
