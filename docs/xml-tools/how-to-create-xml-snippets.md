@@ -1,8 +1,7 @@
 ---
-title: 'Procedura: creare frammenti XML'
+title: 'Procedura: di frammenti di codice XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829102"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
+# <a name="how-to-create-xml-snippets"></a>Procedura: Creare frammenti XML
 
 L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'editor comprende un frammento di codice XML, denominato "Snippet", ovvero un frammento standard per la creazione di nuovi frammenti di codice XML.
 
@@ -121,5 +120,5 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 ## <a name="see-also"></a>Vedere anche
 
 - [Frammenti di codice XML](../xml-tools/xml-snippets.md)
-- [Procedura: utilizzare XML frammenti di codice](../xml-tools/how-to-use-xml-snippets.md)
-- [Procedura: generare un frammento XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Procedura: Usare frammenti XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedura: Generare un frammento XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

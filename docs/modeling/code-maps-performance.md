@@ -1,26 +1,25 @@
 ---
-title: Le mappe del codice sono particolarmente lunghi
+title: Le mappe codici sono lente
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dece1e63fffdba67678422ad9241babc63b7abd
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 5a7892e8e0bc347c4a22dd1a2ae2ee4b01882d6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905059"
 ---
-# <a name="improve-performance-for-code-maps"></a>Migliorare le prestazioni per le mappe del codice
+# <a name="improve-performance-for-code-maps"></a>Migliorare le prestazioni per le mappe codice
 
-Quando si genera una mappa per la prima volta, Visual Studio indicizza tutte le dipendenze trovate. Questo processo potrebbe richiedere del tempo, soprattutto per soluzioni di grandi dimensioni, ma migliora le prestazioni delle successive. Se il codice viene modificato, Visual Studio reindicizza solo il codice aggiornato. Per ridurre al minimo il tempo impiegato per la mappa terminare il rendering, prendere in considerazione i suggerimenti seguenti:
+Quando si genera una mappa per la prima volta, Visual Studio indicizza tutte le dipendenze trovate. Questo processo potrebbe richiedere molto tempo, in particolare per soluzioni di grandi dimensioni, ma consente di migliorare le prestazioni successive. Se il codice viene modificato, Visual Studio reindicizza solo il codice aggiornato. Per ridurre al minimo il tempo impiegato per la mappa terminare il rendering, prendere in considerazione i suggerimenti seguenti:
 
-- [Eseguire il mapping di tutte le dipendenze che interessano.](#create-a-code-map-to-see-specific-dependencies)
+- [Eseguire il mapping solo delle dipendenze che interessano.](#create-a-code-map-to-see-specific-dependencies)
 
 - Prima di generare la mappa per un'intera soluzione, ridurre l'ambito della soluzione.
 
@@ -32,6 +31,6 @@ Quando si genera una mappa per la prima volta, Visual Studio indicizza tutte le 
 
 - Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-Potrebbe richiedere più tempo per creare mappe o aggiungere elementi a una mappa da **Esplora soluzioni** quando un elemento di progetto **copia in Directory di Output** è impostata su **Copia sempre**. Per aumentare le prestazioni, impostare questa proprietà su **Copia se più recente** o su `PreserveNewest`. Vedere [compilazioni incrementali](../msbuild/incremental-builds.md).
+Potrebbe essere necessario più tempo alla creazione di mappe o aggiungere elementi a una mappa dal **Esplora soluzioni** quando un elemento di progetto **Copy to Output Directory** viene impostata su **Copia sempre**. Per aumentare le prestazioni, impostare questa proprietà su **Copia se più recente** o su `PreserveNewest`. Visualizzare [le compilazioni incrementali](../msbuild/incremental-builds.md).
 
-La mappa completata Mostra dipendenze solo per codice compilato correttamente. Se si verificano errori di compilazione per determinati componenti, tali errori vengono visualizzati nella mappa. Assicurarsi quindi che un componente venga effettivamente compilato e contenga le dipendenze prima di prendere decisioni a livello di architettura in base alla mappa.
+La mappa completata Mostra le dipendenze solo per codice compilato correttamente. Se si verificano errori di compilazione per determinati componenti, tali errori vengono visualizzati nella mappa. Assicurarsi quindi che un componente venga effettivamente compilato e contenga le dipendenze prima di prendere decisioni a livello di architettura in base alla mappa.

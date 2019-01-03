@@ -1,9 +1,6 @@
 ---
 title: Modelli compositi per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14d9f233d41638092d1a722094cb0c86f368a748
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866907"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Pattern compositi combinano gli elementi di interazione e progettazione di configurazioni distinte. Alcuni dei modelli compositi più importanti in Visual Studio per quanto riguarda la coerenza includono:  
@@ -242,7 +239,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
     -   **Comando esplicita:** presenter inline  
 
-    -   **Fare doppio clic sull'indicatore di ambiente:** finestra popup CodeLens  
+    -   **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens  
 
 -   **Sempre** ignorare il contenuto di dettaglio ogni volta che l'utente preme il tasto Esc.  
 

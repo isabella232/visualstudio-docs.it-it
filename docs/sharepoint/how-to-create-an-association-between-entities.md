@@ -1,15 +1,10 @@
 ---
-title: "Procedura: creare un'associazione tra entità | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Creare un'associazione tra entità | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -26,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51527092332f1fa82019f1abf9251a8b44aedf06
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: eaaa3f86cc0751b0b80d61555a69aa6bfecda2f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878247"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>Procedura: creare un'associazione tra entità
+# <a name="how-to-create-an-association-between-entities"></a>Procedura: Creare un'associazione tra entità
   È possibile definire relazioni tra entità nel modello di integrazione applicativa dei dati (BDC) mediante la creazione di associazioni. Visual Studio genera i metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.  
   
  È possibile creare due tipi di associazioni nella finestra di progettazione integrazione applicativa dei dati: associazioni basate sulle chiavi esterne e associazioni senza chiave esterna. Per altre informazioni, vedere [creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md).  
@@ -69,14 +64,13 @@ ms.locfileid: "37118922"
 ## <a name="see-also"></a>Vedere anche
  [Creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md)   
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
- [Procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
+ [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
-  

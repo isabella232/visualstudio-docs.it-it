@@ -1,9 +1,6 @@
 ---
 title: Attacco basato su avvio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 518a3f804298df6c0af98a6e5d2a6d851b645aee
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 10a9767ac95093b6cfa777c52441be4676d2fe25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888114"
 ---
 # <a name="launch-based-attachment"></a>Attacco basato su avvio
 Basato su avvio allegato a un programma è automatica. Quando il processo che ospita il programma viene avviato per il modello SDM, basato su avvio degli allegati segue un percorso simile a quella del metodo allegato manuale. Per informazioni, vedere [collegare al programma](../../extensibility/debugger/attaching-to-the-program.md).  

@@ -1,13 +1,8 @@
 ---
 title: Progettazione di un Business Data Connectivity Model | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858383"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Progettare un modello di integrazione applicativa dei dati business
   È possibile sviluppare un modello per il servizio di integrazione applicativa dei dati (BDC) mediante l'aggiunta di metodi e le entità in un file di modello. Un'entità descrive una raccolta di campi di dati. Ad esempio, un'entità può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio aggiungendo, eliminando o aggiornando dati rappresentati dall'entità. Per altre informazioni, vedere [integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="add-entities"></a>Aggiungi entità
- È possibile aggiungere un'entità trascinando o copiando un **Entity** Visual Studio **della casella degli strumenti** nella finestra di progettazione integrazione applicativa dei dati. Per altre informazioni, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ È possibile aggiungere un'entità trascinando o copiando un **Entity** Visual Studio **della casella degli strumenti** nella finestra di progettazione integrazione applicativa dei dati. Per altre informazioni, vedere [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Definire i campi dell'entità in una classe. Ad esempio, è possibile aggiungere un campo denominato `Address` a un `Customer` classe. È possibile aggiungere una nuova classe al progetto o utilizzare una classe esistente creata tramite altri strumenti, ad esempio il Object Relational Designer (O/R Designer). Il nome dell'entità e il nome della classe che rappresenta l'entità non è in modo che corrispondano. La classe viene correlata all'entità quando si definiscono i metodi nel modello.  
   
@@ -38,28 +33,28 @@ ms.locfileid: "36327242"
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|Finder|Restituisce una raccolta di istanze di entità. Chiamato quando l'utente apre l'elenco o una Web Part. Per altre informazioni, vedere [procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md).|  
-|Finder specifico|Restituisce un'istanza di entità specifico. Chiamato quando un utente visualizza i dettagli di un elemento specifico in un elenco. Per altre informazioni, vedere [procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md).|  
-|Creator|Aggiunge nuovi dati all'origine dati di un'entità. Chiamato quando gli utenti scelgono il **nuovo elemento** pulsante della barra multifunzione di un elenco che si basa sul modello. Per altre informazioni, vedere [procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).|  
-|Updater|Modifica i dati in un elenco. Chiamato quando gli utenti aggiornano le informazioni in un elenco. Per altre informazioni, vedere [procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md).|  
-|Deleter|Rimuove i dati. Chiamato quando gli utenti di eliminare un elemento dall'elenco. Per altre informazioni, vedere [procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).|  
+|Finder|Restituisce una raccolta di istanze di entità. Chiamato quando l'utente apre l'elenco o una Web Part. Per altre informazioni, vedere [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md).|  
+|Finder specifico|Restituisce un'istanza di entità specifico. Chiamato quando un utente visualizza i dettagli di un elemento specifico in un elenco. Per altre informazioni, vedere [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md).|  
+|Creator|Aggiunge nuovi dati all'origine dati di un'entità. Chiamato quando gli utenti scelgono il **nuovo elemento** pulsante della barra multifunzione di un elenco che si basa sul modello. Per altre informazioni, vedere [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).|  
+|Updater|Modifica i dati in un elenco. Chiamato quando gli utenti aggiornano le informazioni in un elenco. Per altre informazioni, vedere [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md).|  
+|Deleter|Rimuove i dati. Chiamato quando gli utenti di eliminare un elemento dall'elenco. Per altre informazioni, vedere [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).|  
   
 ## <a name="define-method-parameters"></a>Definire i parametri del metodo
- Quando si crea un metodo, Visual Studio aggiunge i parametri di input e outpui appropriati per il tipo del metodo. Questi parametri sono semplicemente segnaposto. Nella maggior parte dei casi, è necessario modificare i parametri in modo da passare o restituire il tipo di dati corretto. Ad esempio, per impostazione predefinita, un metodo Finder restituisce una stringa. Nella maggior parte dei casi, si desidera modificare il parametro restituito del metodo Finder in modo che restituisca una raccolta di entità. È possibile eseguire tale operazione modifica il descrittore di tipo del parametro. Un descrittore di tipo è una raccolta di attributi che descrive il tipo di dati di un parametro. Per altre informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Quando si crea un metodo, Visual Studio aggiunge i parametri di input e outpui appropriati per il tipo del metodo. Questi parametri sono semplicemente segnaposto. Nella maggior parte dei casi, è necessario modificare i parametri in modo da passare o restituire il tipo di dati corretto. Ad esempio, per impostazione predefinita, un metodo Finder restituisce una stringa. Nella maggior parte dei casi, si desidera modificare il parametro restituito del metodo Finder in modo che restituisca una raccolta di entità. È possibile eseguire tale operazione modifica il descrittore di tipo del parametro. Un descrittore di tipo è una raccolta di attributi che descrive il tipo di dati di un parametro. Per altre informazioni, vedere [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Visual Studio consente agli utenti di copiare i descrittori di tipo tra parametri del modello. Ad esempio, è possibile definire un descrittore di tipo denominato `CustomerTD` per il parametro restituito di `GetCustomer` (metodo). È possibile copiare il `CustomerTD` nel descrittore di tipo i **Esplora integrazione applicativa dei dati**e quindi incollare tale descrittore di tipo per il parametro di input del `CreateCustomer` (metodo). Ciò impedisce all'utente di dover definire più di una volta il descrittore di tipo stesso.  
   
 ## <a name="method-instances"></a>Istanze (metodo)
- Quando si crea un metodo, Visual Studio aggiunge un'istanza del metodo predefinito. Un'istanza del metodo è un riferimento a un metodo con i valori predefiniti per i parametri. Un singolo metodo può avere più istanze di metodo. Ogni istanza è una combinazione di firma del metodo e un set di valori predefiniti. Per altre informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Quando si crea un metodo, Visual Studio aggiunge un'istanza del metodo predefinito. Un'istanza del metodo è un riferimento a un metodo con i valori predefiniti per i parametri. Un singolo metodo può avere più istanze di metodo. Ogni istanza è una combinazione di firma del metodo e un set di valori predefiniti. Per altre informazioni, vedere [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Quando si esegue il progetto, le istanze di metodo vengono visualizzate in un elenco di riepilogo a discesa sopra l'elenco di SharePoint. Gli utenti possono scegliere istanze del metodo per visualizzare i dati.  
   
  Per aggiungere i valori predefiniti per l'istanza del metodo, è necessario modificare direttamente il codice XML del modello. Per altre informazioni, vedere [DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279).  
   
 ## <a name="add-filter-descriptors"></a>Aggiungere i descrittori di filtro
- I consumer del modello potrebbe essere necessario recuperare le istanze di un'entità che corrispondono a certi criteri. Per abilitare questa funzionalità, è possibile aggiungere un descrittore di filtro a un metodo. Descrittori di filtro consentono ai consumer del modello filtrare il set di risultati di metodo passando i valori per i metodi prima che vengano eseguiti. Per altre informazioni, vedere [procedura: aggiungere parametri di filtro alle operazioni per limitare le istanze dal sistema esterno](http://go.microsoft.com/fwlink/?LinkID=169267).  
+ I consumer del modello potrebbe essere necessario recuperare le istanze di un'entità che corrispondono a certi criteri. Per abilitare questa funzionalità, è possibile aggiungere un descrittore di filtro a un metodo. Descrittori di filtro consentono ai consumer del modello filtrare il set di risultati di metodo passando i valori per i metodi prima che vengano eseguiti. Per altre informazioni, vedere [Procedura: Aggiungere i parametri di filtro alle operazioni per limitare le istanze dal sistema esterno](http://go.microsoft.com/fwlink/?LinkID=169267).  
   
- SharePoint fornisce diverse funzionalità che consentono agli utenti di fornire i valori di filtro. Web part dei dati di Business, ad esempio, fornire una casella di testo filtro. Gli utenti possono limitare i dati in un elenco immettendo un valore nella casella di testo. Per altre informazioni su come aggiungere un descrittore di filtro a un metodo, vedere [procedura: aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
+ SharePoint fornisce diverse funzionalità che consentono agli utenti di fornire i valori di filtro. Web part dei dati di Business, ad esempio, fornire una casella di testo filtro. Gli utenti possono limitare i dati in un elenco immettendo un valore nella casella di testo. Per altre informazioni su come aggiungere un descrittore di filtro a un metodo, vedere [come: Aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
   
 ### <a name="filter-descriptor-properties"></a>Proprietà del descrittore di filtro
  È necessario impostare il valore della **descrittore di tipi associato**, **nome**, e **tipo** le proprietà di un descrittore di filtro. Tutte le altre proprietà sono facoltative.  
@@ -71,7 +66,7 @@ ms.locfileid: "36327242"
  Per altre informazioni sulle proprietà di un descrittore di filtro, vedere [FilterDescriptor](http://go.microsoft.com/fwlink/?LinkID=169280).  
   
 ### <a name="provide-default-values"></a>Fornire valori predefiniti
- In alcuni casi, l'utente potrebbe non fornire un valore di filtro. È possibile fornire un valore predefinito mediante l'aggiunta di un valore predefinito per l'istanza del metodo oppure impostando il valore predefinito nel codice del metodo. Per altre informazioni su come aggiungere un valore predefinito per l'istanza del metodo, vedere [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282). Per un esempio di come impostare il valore predefinito di un parametro di input nel codice del metodo, vedere [procedura: aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
+ In alcuni casi, l'utente potrebbe non fornire un valore di filtro. È possibile fornire un valore predefinito mediante l'aggiunta di un valore predefinito per l'istanza del metodo oppure impostando il valore predefinito nel codice del metodo. Per altre informazioni su come aggiungere un valore predefinito per l'istanza del metodo, vedere [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282). Per un esempio di come impostare il valore predefinito di un parametro di input nel codice del metodo, vedere [come: Aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
   
 ## <a name="validate-the-model"></a>Convalidare il modello
  È possibile convalidare il modello durante lo sviluppo. Visual Studio identifica i problemi che impediscono il modello si comporta come previsto. Questi problemi vengono visualizzati in Visual Studio **elenco errori**.  
@@ -83,9 +78,9 @@ ms.locfileid: "36327242"
 ## <a name="debug-the-solution-that-contains-the-model"></a>Il debug della soluzione che contiene il modello
  Come per qualsiasi codice in Visual Studio, è possibile eseguire il debug del codice. Per eseguire il debug del codice, impostare i punti di interruzione in qualsiasi punto nel codice e quindi avviare il debugger. Visual Studio apre il sito di SharePoint. In SharePoint, creare un elenco o una Web Part che utilizza i dati aziendali. Quindi, è possibile esaminare il codice. Per altre informazioni sul debug di progetti SharePoint, vedere [risolvere i problemi di SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
- È anche possibile eseguire il debug di codice negli assembly personalizzati che aggiungono al progetto. Tuttavia, per eseguire il debug di codice in un assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, vedere [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ È anche possibile eseguire il debug di codice negli assembly personalizzati che aggiungono al progetto. Tuttavia, per eseguire il debug di codice in un assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
- Per altre informazioni sull'aggiunta di un assembly personalizzato al progetto, vedere [procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md).  
+ Per altre informazioni sull'aggiunta di un assembly personalizzato al progetto, vedere [come: Includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md).  
   
 ### <a name="configure-bdc-security"></a>Configurare la sicurezza di integrazione applicativa dei dati
  Potrebbe essere necessario modificare le impostazioni di sicurezza in SharePoint, è possibile eseguire il debug, la soluzione. Per modificare queste impostazioni, aprire l'applicazione di servizio Business Data Connectivity nel sito Web di SharePoint 2010 Central Administration. Nel **impostare le autorizzazioni di Store metadati** nella finestra di dialogo Aggiungi account utente e quindi selezionare una delle opzioni seguenti:  
@@ -119,18 +114,17 @@ ms.locfileid: "36327242"
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)|Vengono descritti gli strumenti che è possibile utilizzare per progettare visivamente un modello per l'integrazione applicativa dei dati.|  
-|[Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)|Illustra come aggiungere tipi di contenuto esterno, o entità, al modello.|  
-|[Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)|Illustra come aggiungere un metodo che consente agli utenti di visualizzare un elenco di entità in un elenco o una Web Part.|  
-|[Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)|Illustra come aggiungere un metodo che consente agli utenti di visualizzare i dettagli di un'entità specifica.|  
-|[Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)|Illustra come aggiungere un metodo che consente agli utenti di aggiungere record a un'origine dati direttamente da un elenco o una Web Part.|  
-|[Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)|Illustra come aggiungere un metodo che consente agli utenti di rimuovere i dati da un'origine dati utilizzando le opzioni di interfaccia utente (UI) di un elenco o una Web Part.|  
-|[Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)|Illustra come aggiungere un metodo che consente agli utenti di modificare i record di dati in un'origine dati direttamente da un elenco o una Web Part.|  
-|[Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Illustra come usare la finestra dei dettagli del metodo in Visual Studio per aggiungere parametri di input e restituiti a un metodo.|  
-|[Procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Illustra come definire i tipi di dati di parametro nel modello.|  
-|[Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)|Illustra come creare un'istanza di un metodo che esegue l'integrazione applicativa dei dati.|  
-|[Procedura: aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Illustra come consentire agli utenti di limitare il numero di istanze restituite da un metodo Finder.|  
+|[Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)|Illustra come aggiungere tipi di contenuto esterno, o entità, al modello.|  
+|[Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)|Illustra come aggiungere un metodo che consente agli utenti di visualizzare un elenco di entità in un elenco o una Web Part.|  
+|[Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)|Illustra come aggiungere un metodo che consente agli utenti di visualizzare i dettagli di un'entità specifica.|  
+|[Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)|Illustra come aggiungere un metodo che consente agli utenti di aggiungere record a un'origine dati direttamente da un elenco o una Web Part.|  
+|[Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)|Illustra come aggiungere un metodo che consente agli utenti di rimuovere i dati da un'origine dati utilizzando le opzioni di interfaccia utente (UI) di un elenco o una Web Part.|  
+|[Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)|Illustra come aggiungere un metodo che consente agli utenti di modificare i record di dati in un'origine dati direttamente da un elenco o una Web Part.|  
+|[Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Illustra come usare la finestra dei dettagli del metodo in Visual Studio per aggiungere parametri di input e restituiti a un metodo.|  
+|[Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Illustra come definire i tipi di dati di parametro nel modello.|  
+|[Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)|Illustra come creare un'istanza di un metodo che esegue l'integrazione applicativa dei dati.|  
+|[Procedura: Aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Illustra come consentire agli utenti di limitare il numero di istanze restituite da un metodo Finder.|  
 |[Creazione di un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md)|Viene descritto come definire le relazioni tra entità nel modello. Web part dei dati di business, gli elenchi esterni e applicazioni personalizzate è possono visualizzare tali relazioni tra i dati in un'interfaccia utente (UI).|  
-|[Procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md)|Illustra come definire le relazioni tra entità nel modello.|  
+|[Procedura: Creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md)|Illustra come definire le relazioni tra entità nel modello.|  
 |[Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Vengono fornite istruzioni dettagliate che illustrano come creare e testare un modello che consente di visualizzare i contatti in un elenco esterno di SharePoint.|  
 |[Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Viene fornita una panoramica della creazione e la progettazione di modelli per il servizio di integrazione applicativa dei dati.|  
-  

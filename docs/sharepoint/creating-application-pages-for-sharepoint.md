@@ -1,13 +1,8 @@
 ---
 title: Creazione di pagine dell'applicazione per SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ed9c17d68e2386b7a5b5077ee4a7d1764ea5aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876406"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Creare le pagine dell'applicazione per SharePoint
   Un' *pagina dell'applicazione* è una pagina Web ASP.NET è progettata per l'uso in un sito Web di SharePoint. Le pagine dell'applicazione sono un tipo specializzato di pagina ASP.NET. La differenza principale tra una pagina dell'applicazione e una pagina ASP.NET standard è che una pagina dell'applicazione contiene il contenuto che viene unito a una pagina master di SharePoint. Una pagina master consente alle pagine di applicazione condividere lo stesso aspetto e comportamento delle altre pagine in un sito.  
@@ -80,4 +75,3 @@ ms.locfileid: "49853142"
  [Sviluppo per SharePoint Foundation in profondità](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [Panoramica di ASP.NET](/aspnet/overview)   
  [ASP.NET Web Pages](/aspnet/web-pages/index)   
-  

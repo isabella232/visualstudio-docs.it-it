@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creare un ricevitore di eventi | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un ricevitore di eventi | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861572"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Procedura: creare un ricevitore di eventi
+# <a name="how-to-create-an-event-receiver"></a>Procedura: Creare un ricevitore di eventi
   Creando *ricevitori di eventi*, è possibile rispondere quando un utente interagisce con gli elementi di SharePoint, ad esempio elenchi o elementi di elenco. Ad esempio, il codice in un ricevitore di eventi può essere attivato quando un utente modifica il calendario o elimina un nome da un elenco di contatti. Seguendo questo argomento, è possibile informazioni su come aggiungere un ricevitore di eventi a un'istanza di elenco.
 
- Per completare questi passaggi, è necessario aver installato [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e le edizioni supportate di Windows e SharePoint. Poiché in questo esempio richiede un progetto SharePoint, è anche necessario avere completato la procedura nell'argomento [procedura dettagliata: creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+ Per completare questi passaggi, è necessario aver installato [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e le edizioni supportate di Windows e SharePoint. Poiché in questo esempio richiede un progetto SharePoint, è anche necessario avere completato la procedura nell'argomento [procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 ## <a name="adding-an-event-receiver"></a>Aggiunta di un ricevitore di eventi
- Il progetto creato nella [procedura dettagliata: creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) include le colonne del sito personalizzato, un elenco personalizzato e un tipo di contenuto. Nella procedura seguente, si sarà espandere questo progetto aggiungendo un gestore di evento semplice (un ricevitore di eventi) a un'istanza di elenco per mostrare come gestire gli eventi che si verificano negli elementi di SharePoint, ad esempio gli elenchi.
+ Il progetto creato in [procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) include le colonne del sito personalizzato, un elenco personalizzato e un tipo di contenuto. Nella procedura seguente, si sarà espandere questo progetto aggiungendo un gestore di evento semplice (un ricevitore di eventi) a un'istanza di elenco per mostrare come gestire gli eventi che si verificano negli elementi di SharePoint, ad esempio gli elenchi.
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Per aggiungere un ricevitore di eventi per l'istanza di elenco
 
-1.  Aprire il progetto creato nella [procedura dettagliata: creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1.  Aprire il progetto creato in [procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 2.  Nelle **Esplora soluzioni**, scegliere il nodo di progetto SharePoint, chiamata ScriptHelpers **Clinic**.
 

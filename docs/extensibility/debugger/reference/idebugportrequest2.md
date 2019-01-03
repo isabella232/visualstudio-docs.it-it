@@ -1,9 +1,6 @@
 ---
-title: IDebugPortRequest2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugPortRequest2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortRequest2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5af5ef2f4371350529d1e5fa60fb5ad1539aa87
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a05f84d685ac33203461dfc1b0f515cb45f67c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876929"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
-Questa interfaccia descrive una porta. Questa descrizione viene utilizzata per aggiungere la porta a un fornitore di porta.  
+Questa interfaccia viene descritta una porta. Questa descrizione viene usata per aggiungere la porta a un fornitore di porte.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +29,10 @@ IDebugPortRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Visual Studio è in genere implementa questa interfaccia nel processo di recupero di una porta di debug da un fornitore di porta.  
+ Visual Studio implementa in genere questa interfaccia nel processo di recupero di una porta di debug da un fornitore di porte.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Questa interfaccia viene passata in [Aggiungi porta](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) per creare una porta di debug. Una chiamata a [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) restituisce questa interfaccia, che rappresenta la richiesta utilizzata per creare la porta in primo luogo.  
+ Questa interfaccia viene passata [Aggiungi porta](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) per creare una porta di debug. Una chiamata a [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) restituisce questa interfaccia, che rappresenta la richiesta utilizzata per creare la porta in primo luogo.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugPortRequest2`.  
@@ -45,12 +42,12 @@ IDebugPortRequest2 : IUnknown
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Ottiene il nome della porta da creare.|  
   
 ## <a name="remarks"></a>Note  
- In genere, un motore di debug non interagisce con un fornitore di porta e non disporrà di alcuna utilità per l'interfaccia.  
+ In genere, un motore di debug non interagisce con un fornitore di porte e non disporrà di alcun uso per questa interfaccia.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

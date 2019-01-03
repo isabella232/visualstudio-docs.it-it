@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere un gestore di trascinamento della selezione'
+title: 'Procedura: Aggiungere un gestore di trascinamento della selezione'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876393"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: Aggiungere un gestore di trascinamento della selezione
 
 È possibile aggiungere gestori per gli eventi di trascinamento e rilascio per il linguaggio DSL, in modo che gli utenti potranno trascinare gli elementi sul diagramma da altri diagrammi o da altre parti di Visual Studio. È possibile aggiungere gestori anche per eventi come il doppio clic. Insieme, i gestori di trascinamento e rilascio e fare doppio clic sono noti come *gestori movimenti*.
 
@@ -70,7 +69,7 @@ Nel nuovo file definire una classe parziale per la forma o la classe del diagram
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Questo metodo viene chiamato quando l'utente fa doppio clic sulla forma o diagramma.
 
-     Per altre informazioni, vedere [procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Per altre informazioni, vedere [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Definire `IsAcceptableDropItem(e)` per determinare se l'elemento trascinato sia accettabile e ProcessDragDropItem(e) per aggiornare il modello quando l'elemento viene rilasciato. Questi metodi devono prima estrarre l'elemento dagli argomenti dell'evento. Per informazioni su come eseguire questa operazione, vedere [come ottenere un riferimento all'elemento trascinato](#extracting).
 
@@ -322,7 +321,7 @@ Le proprietà `Data` e `Prototype` degli argomenti dell'evento contengono solo u
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Uso delle azioni del mouse: trascinamento di elementi raggruppamento
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Uso delle azioni del Mouse: Trascinamento di elementi raggruppamento
 
 È possibile scrivere un gestore che intercetta le azioni del mouse nei campi della forma. Nell'esempio seguente consente all'utente di riordinare gli elementi in un raggruppamento trascinando con il mouse.
 

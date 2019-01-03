@@ -1,9 +1,6 @@
 ---
 title: Pagine delle proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837888"
 ---
 # <a name="property-pages"></a>Pagine delle proprietà
 Gli utenti possono visualizzare e modificare proprietà dipendenti dalla configurazione e - indipendente usando le pagine delle proprietà del progetto. Oggetto **pagine delle proprietà** pulsante è abilitato nel **proprietà** finestra o nella barra degli strumenti Esplora soluzioni per gli oggetti che forniscono una visualizzazione di pagina di proprietà dell'oggetto selezionato. Pagine delle proprietà vengono creati dall'ambiente e sono disponibili per i progetti e soluzioni. Possono, tuttavia, anche essere resi disponibili per gli elementi di progetto che fanno usano di proprietà dipendenti dalla configurazione. Questa funzionalità può essere usata quando i file all'interno di un progetto richiedono le impostazioni dell'opzione del compilatore diverse compilare correttamente.  

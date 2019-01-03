@@ -1,9 +1,6 @@
 ---
-title: Funzione SccGetVersion | Documenti Microsoft
-ms.custom: ''
+title: Funzione SccGetVersion | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879627"
 ---
-# <a name="sccgetversion-function"></a>SccGetVersion (funzione)
-Questa funzione Ottiene il numero di versione dell'API di plug-in controllo di origine supportata dal plug-in controllo del codice sorgente.  
+# <a name="sccgetversion-function"></a>Funzione SccGetVersion
+Questa funzione Ottiene il numero di versione dell'API di plug-in controllo di origine supportate per il plug-in del controllo del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +32,7 @@ LONG SccGetVersion(void);
  Nessuno.  
   
 ## <a name="return-value"></a>Valore restituito  
- Oggetto `LONG` tipo di dati che contiene il numero di versione dell'API di plug-in controllo di origine supportata:  
+ Oggetto `LONG` tipo di dati che contiene il numero di versione dell'API di plug-in controllo di origine supportati:  
   
 |WORD|Descrizione|  
 |----------|-----------------|  
@@ -43,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Versione secondaria|  
   
 ## <a name="remarks"></a>Note  
- Ad esempio, se un plug-in controllo del codice sorgente supporta la versione 1.3 dell'API plug-in controllo di origine, questa funzione restituirà 0x0103.  
+ Ad esempio, se un controllo del codice sorgente del plug-in supporta la versione 1.3 dell'API dei plug-in controllo di origine, questa funzione restituirà 0x0103.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

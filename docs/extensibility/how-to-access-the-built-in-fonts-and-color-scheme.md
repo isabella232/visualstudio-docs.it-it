@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: accedere ai tipi di carattere incorporati e combinazione di colori | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874602"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedura: accedere ai tipi di carattere incorporati e ccheme dei colori
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedura: I tipi di carattere incorporati di accesso e il colore ccheme
 L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.
 
  Per usare lo schema di colori e tipi di carattere predefiniti, un pacchetto VSPackage deve:

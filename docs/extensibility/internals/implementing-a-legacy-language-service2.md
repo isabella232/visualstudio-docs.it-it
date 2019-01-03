@@ -1,9 +1,6 @@
 ---
 title: Implementazione di un tipo di linguaggio legacy2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8158a8eaf4b0ee85858cc81e93fbb7e4fa0b9f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893775"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementazione di un servizio di linguaggio Legacy
 Per implementare un servizio di linguaggio tramite il framework di pacchetto gestito (MPF), è necessario derivare una classe dalla classe di <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i seguenti metodi astratti e le proprietà:  

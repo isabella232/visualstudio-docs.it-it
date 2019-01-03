@@ -1,9 +1,6 @@
 ---
 title: Personalizzazione di Windows di codice usando l'API Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883039"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Personalizzare le finestre di codice usando l'API legacy
 Una finestra del codice è un oggetto finestra di documento che supporta uno o più visualizzazioni di testo. Esattamente le stesse funzionalità di una finestra del codice dipendono dal servizio di linguaggio associato. In modalità interfaccia a documenti multipli (MDI), la finestra del codice è la cornice figlio MDI.  
@@ -36,10 +33,10 @@ Finestra del codice
  `Customizing Code Windows by Using the Legacy API`  
  Viene illustrato come personalizzare le finestre di codice usando l'API legacy.  
   
- [Procedura: ospitare un editor in un altro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Procedura: Ospitare un editor in un altro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Viene illustrato come ospitare un editor secondo all'interno di una finestra dell'editor.  
   
- [Procedura: generare eventi quando l'editor perde lo stato attivo](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Procedura: Generare gli eventi quando l'editor perde lo stato attivo](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Spiega come collegare una visualizzazione del documento a un oggetto dati del documento.  
   
 ## <a name="see-also"></a>Vedere anche  
