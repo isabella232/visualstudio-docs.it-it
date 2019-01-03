@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un Server remoto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un Server remoto | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835672"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire soluzioni di SharePoint al sistema locale, è possibile pubblicare soluzioni create mediante sandbox di SharePoint a siti remoti o i siti SharePoint locali. Le copie di processo di pubblicazione remoto il *wsp* file nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione di soluzioni di SharePoint remota dopo aver apportato modifiche a esso.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Per pubblicare una soluzione creata mediante sandbox di SharePoint in un server SharePoint remoto  
@@ -78,8 +75,7 @@ ms.locfileid: "37118927"
      La versione precedente della soluzione è disattivata, la nuova versione della soluzione viene aggiornata con dati gestiti dalla soluzione precedente e la nuova soluzione viene attivata in SharePoint.  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [Procedura: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Creare pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

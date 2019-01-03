@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: eseguire la ricerca a livello di codice per il testo negli intervalli del foglio di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di codice cercare testo negli intervalli del foglio di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826127"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: eseguire ricerche a livello di codice per il testo negli intervalli del foglio di lavoro
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: A livello di codice cercare testo negli intervalli del foglio di lavoro
   Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo di <xref:Microsoft.Office.Interop.Excel.Range> consente di cercare testo all'interno dell'intervallo. Questo testo può anche essere una delle stringhe di errore che possono essere visualizzati in una cella di foglio di lavoro, ad esempio `#NULL!` o `#VALUE!`. Per altre informazioni sulle stringhe di errore, vedere [i valori di errore delle celle](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671963"
 > [!NOTE]  
 >  Il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> ricerca del metodo esegue il wrapping all'inizio dell'intervallo di ricerca quando viene raggiunta la fine dell'intervallo. Il codice deve verificare che la ricerca non è possibile disporre tutto in un ciclo infinito. La procedura di esempio illustra un modo per gestire questo problema mediante i <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> proprietà.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [How do i: usare il metodo di ricerca in un componente aggiuntivo di Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare il metodo di ricerca in un componente aggiuntivo di Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Per cercare testo in un intervallo di foglio di lavoro  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671963"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con intervalli](../vsto/working-with-ranges.md)   
- [Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Procedura: fare riferimento a livello di programmazione agli intervalli di foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

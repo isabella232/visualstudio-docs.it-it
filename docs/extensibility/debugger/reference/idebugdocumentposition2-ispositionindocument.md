@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentPosition2::IsPositionInDocument
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3941ac45ea70b5ccb7e546c0b9f298fa12798ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 12c7399c85b4ad4f1bc84ae9c400c04be23837ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892040"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Determina se la posizione del documento è contenuta nel documento specificato.  
@@ -28,13 +25,13 @@ Determina se la posizione del documento è contenuta nel documento specificato.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT IsPositionInDocument(   
+HRESULT IsPositionInDocument(   
    IDebugDocument2* pDoc  
 );  
 ```  
   
 ```csharp  
-int IsPositionInDocument(   
+int IsPositionInDocument(   
    IDebugDocument2 pDoc  
 );  
 ```  

@@ -1,8 +1,7 @@
 ---
-title: Guida introduttiva all'analisi del codice per C/C++
+title: 'Avvio rapido: Analisi codice per C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825201"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Guida introduttiva: Analisi codice per C/C++
 
@@ -111,9 +110,9 @@ Per eliminare un avviso:
 
 Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
-- **Per filtrare gli avvisi per titolo o id avviso**: immettere la parola chiave nella casella di ricerca.
+- **Per filtrare gli avvisi per titolo o id avviso**: Immettere la parola chiave nella casella di ricerca.
 
-- **Per filtrare gli avvisi per gravità**: per impostazione predefinita, ai messaggi di analisi codice viene assegnato un livello di gravità **avviso**. È possibile assegnare la gravità di una o più messaggi come **errore** in una regola personalizzata impostata. Nel **gravità** della colonna della **elenco errori**, scegliere la freccia a discesa e quindi sull'icona del filtro. Scegli **avviso** oppure **errore** per visualizzare solo i messaggi che vengono assegnati il rispettivo livello di gravità. Scegli **Seleziona tutto** per visualizzare tutti i messaggi.
+- **Per filtrare gli avvisi per gravità**: Per impostazione predefinita, ai messaggi di analisi codice viene assegnato un livello di gravità **avviso**. È possibile assegnare la gravità di una o più messaggi come **errore** in una regola personalizzata impostata. Nel **gravità** della colonna della **elenco errori**, scegliere la freccia a discesa e quindi sull'icona del filtro. Scegli **avviso** oppure **errore** per visualizzare solo i messaggi che vengono assegnati il rispettivo livello di gravità. Scegli **Seleziona tutto** per visualizzare tutti i messaggi.
 
 ## <a name="see-also"></a>Vedere anche
 

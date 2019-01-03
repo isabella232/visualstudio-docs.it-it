@@ -1,9 +1,6 @@
 ---
 title: Elemento FeatureProperty | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3dc58683d2cff7e6c25493924b63666c390cdffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991188"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Rappresenta una proprietà personalizzata che è inclusa in una funzione quando viene distribuito in SharePoint. Dopo aver distribuita una funzionalità, è possibile accedere alla proprietà nel codice.  
@@ -66,5 +63,3 @@ ms.locfileid: "36325982"
 ## <a name="see-also"></a>Vedere anche
  [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  

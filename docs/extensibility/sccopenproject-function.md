@@ -1,9 +1,6 @@
 ---
 title: Funzione SccOpenProject | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 928c1d63451dc49fabf01503e8cb7f6789b98998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fde4a8e59fb64e12b78eacc14406fdf5020b64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856475"
 ---
 # <a name="sccopenproject-function"></a>Funzione SccOpenProject
 Questa funzione consente di aprire un progetto di controllo di origine esistente o ne crea uno nuovo.  
@@ -72,7 +69,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Esito positivo nell'apertura del progetto.|  
 |SCC_E_INITIALIZEFAILED|Progetto non è stato possibile inizializzare.|  

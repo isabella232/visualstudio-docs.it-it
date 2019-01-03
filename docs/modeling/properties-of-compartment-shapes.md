@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 98013b53641efec6a088c1e89bf521613fc7659e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 6a15432e170c814a6e80aebb86a9db31d073a98b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835221"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
 Forme raggruppamento sono una delle forme che è possibile usare per la visualizzazione di una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.

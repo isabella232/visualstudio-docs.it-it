@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821041"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 
@@ -91,7 +90,7 @@ Gli utenti possono anche incollare gli elementi su altri elementi.
 
    1.  Nelle **DSL Explorer**, espandere **classi di dominio**. Fare doppio clic su `ExampleElement` e quindi fare clic su **Aggiungi nuova direttiva di unione**.
 
-   2.  Assicurarsi che il **dettagli DSL** finestra è aperta, in modo che è possibile visualizzare i dettagli di EMD di nuovo. (Menu: **View**, **altri Windows**, **dettagli DSL**.)
+   2.  Assicurarsi che il **dettagli DSL** finestra è aperta, in modo che è possibile visualizzare i dettagli di EMD di nuovo. (Menu: **Consente di visualizzare**, **altri Windows**, **dettagli DSL**.)
 
 3. Impostare il **classe di indicizzazione** nella finestra Dettagli DSL per definire la classe di elementi può essere unita nel `ExampleElement` oggetti.
 

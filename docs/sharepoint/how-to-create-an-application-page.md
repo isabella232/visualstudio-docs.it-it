@@ -1,13 +1,8 @@
 ---
-title: "Procedura: creare una pagina dell'applicazione | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Creare una pagina dell'applicazione | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820225"
 ---
-# <a name="how-to-create-an-application-page"></a>Procedura: creare una pagina applicazione
+# <a name="how-to-create-an-application-page"></a>Procedura: Creare una pagina applicazione
   È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint, queste pagine sono dette pagine dell'applicazione. A differenza di una pagina del sito, una pagina dell'applicazione contiene codice che viene eseguito dietro la pagina. Per altre informazioni, vedere [creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Per creare una pagina dell'applicazione  
@@ -50,9 +45,8 @@ ms.locfileid: "51296203"
   
 7.  Se si desidera gestire gli eventi di controllo, aggiungere il codice al file di codice per la pagina applicazione.  
   
-     Il file di codice viene visualizzato se si espande il nodo per il file della pagina ASP.NET e ha un *cs* oppure *vb* estensione, a seconda del linguaggio del progetto. Per un esempio end-to-end di come creare una pagina applicazione, vedere [procedura dettagliata: creare una pagina dell'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
+     Il file di codice viene visualizzato se si espande il nodo per il file della pagina ASP.NET e ha un *cs* oppure *vb* estensione, a seconda del linguaggio del progetto. Per un esempio end-to-end di come creare una pagina applicazione, vedere [procedura dettagliata: Creare una pagina dell'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
   
 ## <a name="see-also"></a>Vedere anche
  [Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Procedura dettagliata: Creare una pagina dell'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

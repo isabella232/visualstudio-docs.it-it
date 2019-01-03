@@ -1,9 +1,6 @@
 ---
 title: All'interno di Visual Studio SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821145"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 In questa sezione fornisce informazioni approfondite sulle estensioni di Visual Studio, tra cui architettura di Visual Studio, componenti, servizi, schemi, utilità e simili.
@@ -31,13 +28,13 @@ In questa sezione fornisce informazioni approfondite sulle estensioni di Visual 
  ![Rappresentazione grafica dell'architettura di ambiente](../../extensibility/internals/media/environment.gif "ambiente") generalizzato di vista dell'architettura di Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
- I VSPackage sono moduli software che compongono ed estendono Visual Studio con elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione. I VSPackage rappresentano l'unità centrale dell'architettura di Visual Studio. Per altre informazioni, vedere [VSPackage](../../extensibility/internals/vspackages.md).
+ I VSPackage sono moduli software che compongono ed estendono Visual Studio con elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione. I VSPackage rappresentano l'unità centrale dell'architettura di Visual Studio. Per altre informazioni, vedere [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  La shell di Visual Studio fornisce funzionalità di base e supportare la comunicazione incrociata tra il componente VSPackage ed estensioni MEF. Per altre informazioni, vedere [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Linee guida sull'esperienza utente
- Se si prevede di nuove funzionalità di progettazione per Visual Studio, è necessario dare un'occhiata a queste linee guida per i suggerimenti di progettazione e l'usabilità: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Se si prevede di nuove funzionalità di progettazione per Visual Studio, si dovrebbe dare un'occhiata a queste linee guida per la progettazione e l'usabilità suggerimenti: [Linee guida sull'esperienza utente di Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Comandi:
  I comandi sono funzioni che eseguono attività, ad esempio la stampa di un documento, l'aggiornamento di una visualizzazione o la creazione di un nuovo file.
@@ -103,7 +100,7 @@ In questa sezione fornisce informazioni approfondite sulle estensioni di Visual 
  Per altre informazioni, vedere [aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Proprietà e le opzioni
- Il **delle proprietà** finestra vengono visualizzate le proprietà di uno o più elementi selezionati: [estensione di proprietà](../../extensibility/internals/extending-properties.md) pagine Opzioni contengono set di opzioni che si riferiscono a un determinato componente, ad esempio un linguaggio di programmazione o un pacchetto VSPackage: [opzioni e le pagine di opzioni](../../extensibility/internals/options-and-options-pages.md). Le impostazioni sono le funzionalità in genere correlati dell'interfaccia utente che possono essere importate ed esportate: [supporto per le impostazioni utente](../../extensibility/internals/support-for-user-settings.md).
+ Il **proprietà** finestra vengono visualizzate le proprietà di uno o più elementi selezionati: [Estensione delle proprietà](../../extensibility/internals/extending-properties.md) pagine Opzioni contengono set di opzioni che si riferiscono a un determinato componente, ad esempio un pacchetto VSPackage o un linguaggio di programmazione: [Opzioni e le pagine di opzioni](../../extensibility/internals/options-and-options-pages.md). Le impostazioni sono le funzionalità in genere correlati dell'interfaccia utente che possono essere importate ed esportate: [Supporto per le impostazioni utente](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Servizi di Visual Studio
  Un servizio fornisce un set specifico di interfacce per i componenti da utilizzare. Visual Studio offre un set di servizi che può essere utilizzato da tutti i componenti, incluse le estensioni. Ad esempio, servizi Visual Studio abilitare finestre degli strumenti per essere visualizzato o nascosto in modo dinamico, abilitare l'accesso alla Guida in linea, barra di stato o eventi dell'interfaccia utente. Editor di Visual Studio fornisce anche servizi che possono essere importati tramite le estensioni dell'editor. Per altre informazioni, vedere [sull'utilizzo e la fornitura di servizi](../../extensibility/using-and-providing-services.md).

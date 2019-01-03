@@ -1,9 +1,6 @@
 ---
 title: Creazione di un'associazione tra entità | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Association_Dialog
@@ -24,18 +21,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842979"
 ---
 # <a name="create-an-association-between-entities"></a>Creare un'associazione tra entità
   È possibile definire relazioni tra entità nel modello di integrazione applicativa dei dati (BDC) mediante la creazione di associazioni. Visual Studio genera i metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.  
   
 ## <a name="create-an-association"></a>Creare un'associazione
- Creare un'associazione, scegliere il **Association** controllo in Visual Studio **della casella degli strumenti**, scegliendo la prima entità (entità di origine denominata) e quindi scegliendo la seconda entità (denominato il entità di destinazione). È possibile definire i dettagli dell'associazione nel **Editor di associazione**. Per altre informazioni, vedere [procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md).  
+ Creare un'associazione, scegliere il **Association** controllo in Visual Studio **della casella degli strumenti**, scegliendo la prima entità (entità di origine denominata) e quindi scegliendo la seconda entità (denominato il entità di destinazione). È possibile definire i dettagli dell'associazione nel **Editor di associazione**. Per altre informazioni, vedere [Procedura: Creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md).  
   
 ## <a name="association-methods"></a>Metodi di associazione
  Le applicazioni, ad esempio web part di SharePoint aziendale dati usano le associazioni chiamando i metodi nella classe del servizio di un'entità. È possibile aggiungere metodi alla classe del servizio di un'entità, selezionandoli nel **Editor di associazione**.  
@@ -81,6 +78,4 @@ ms.locfileid: "36325463"
   
 ## <a name="see-also"></a>Vedere anche
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md)  
-  
- 
+ [Procedura: Creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md)  

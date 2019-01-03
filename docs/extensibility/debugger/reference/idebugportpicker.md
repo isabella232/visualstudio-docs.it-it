@@ -1,9 +1,6 @@
 ---
-title: IDebugPortPicker | Documenti Microsoft
-ms.custom: ''
+title: IDebugPortPicker | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortPicker interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9a5a830d6b3b0d191b5eae84bf625ffdb3b695
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5546895231415cdf8092dcadd1dce7a65e72707a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914251"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 Rappresenta un'interfaccia utente personalizzata per la selezione della porta.  
@@ -30,7 +27,7 @@ IDebugPortPicker : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia è implementata da fornitori di porte. Un fornitore di porta definisce la selezione della porta esporlo come CLSID e scegliendo il `metricPortPickerCLSID` metrica al CLSID esposto.  
+ Questa interfaccia viene implementata da fornitori di porte. Un fornitore di porte viene definito il selettore porta esporlo come CLSID e scegliendo il `metricPortPickerCLSID` metrica a CLSID esposto.  
   
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono illustrati i metodi di `IDebugPortPicker`.  
@@ -43,6 +40,6 @@ IDebugPortPicker : IUnknown
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

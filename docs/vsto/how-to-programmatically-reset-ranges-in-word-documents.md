@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: reimpostare a livello di programmazione gli intervalli nei documenti di Word'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione reimpostare gli intervalli nei documenti di Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0da42b0e6ad6f8761e474292532728beb3987c57
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7cb0b4ec52d948b321733a56f14ebc51a9cbb42f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821730"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Procedura: reimpostare a livello di programmazione gli intervalli nei documenti di Word
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Procedura: A livello di programmazione reimpostare gli intervalli nei documenti di Word
   Usare il metodo <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> per ridimensionare un intervallo esistente in un documento di Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -66,9 +63,7 @@ ms.locfileid: "35672367"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: estendere a livello di programmazione gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Procedura: recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Procedura: a livello di programmazione comprimere intervalli o selezioni in documenti](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  
-  
-  
+ [Procedura: A livello di programmazione estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Procedura: Recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Procedura: A livello di programmazione comprimere intervalli o selezioni in documenti](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  

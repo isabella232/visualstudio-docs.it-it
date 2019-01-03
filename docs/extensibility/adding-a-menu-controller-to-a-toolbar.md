@@ -1,9 +1,6 @@
 ---
 title: Aggiunta di un Controller di Menu per una barra degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13a1fbd07498f77cde5004dc23df9a2edbfb2e92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852992"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Aggiungere un controller di menu per una barra degli strumenti
 Questa procedura dettagliata si basa sulle [aggiungere una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) procedura dettagliata e viene illustrato come aggiungere un controller di menu per la finestra degli strumenti. I passaggi illustrati in questo caso è possibile applicare anche alla barra degli strumenti che viene creato nel [aggiungere una barra degli strumenti](../extensibility/adding-a-toolbar.md) procedura dettagliata.  
@@ -116,15 +113,15 @@ Questa procedura dettagliata si basa sulle [aggiungere una barra degli strumenti
 1.  Nelle *TWTestCommandPackageGuids.cs*, aggiungere gli ID comando per le tre voci di menu dopo l'ID di comando esistenti.  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  Nelle *TWTestCommand.cs*, aggiungere il codice seguente all'inizio del `TWTestCommand` classe.  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  Nel costruttore TWTestCommand, dopo l'ultima chiamata al `AddCommand` metodo, aggiungere il codice per instradare gli eventi per ogni comando tramite i gestori di eventi stesso.  
@@ -139,7 +136,7 @@ Questa procedura dettagliata si basa sulle [aggiungere una barra degli strumenti
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -151,7 +148,7 @@ Questa procedura dettagliata si basa sulle [aggiungere una barra degli strumenti
 4.  Aggiungere un gestore eventi per il **TWTestCommand** classe per contrassegnare il comando selezionato come selezionato.  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -164,7 +161,7 @@ Questa procedura dettagliata si basa sulle [aggiungere una barra degli strumenti
 5.  Aggiungere un gestore eventi che consente di visualizzare una finestra di messaggio quando l'utente seleziona un comando nel controller di menu:  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  

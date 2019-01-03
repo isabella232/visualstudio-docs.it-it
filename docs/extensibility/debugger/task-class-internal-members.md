@@ -1,9 +1,6 @@
 ---
 title: Classe Task - membri interni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e9bbf6bbf42b8008850b540a59fa2b5d75b199
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 34c8da8d661dcb0a8096576617403209a0a70c56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872791"
 ---
 # <a name="task-class---internal-members"></a>Classe Task - membri interni
 Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.Task?displayProperty=fullName> classi che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.Task> articolo di riferimento.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in *mscorlib. dll*)  
   

@@ -2,7 +2,6 @@
 title: 'CA2104: Non dichiarare tipi di riferimento modificabili in sola lettura'
 ms.date: 11/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f1c4f19349d94cb7dedfd22a82dc86b6f33b5b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844210"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Non dichiarare tipi di riferimento modificabili in sola lettura
 
@@ -51,7 +50,7 @@ Il modificatore di sola lettura ([readonly](/dotnet/csharp/language-reference/ke
 
 Questa regola potrebbe inavvertitamente mostrano una violazione per un tipo che sia in realtà, non modificabile. In tal caso, è possibile eliminare l'avviso.
 
-I campi di matrici di sola lettura sono esclusi da questa regola, ma invece causare una violazione del [CA2105: i campi di matrici non devono essere solo lettura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) regola.
+I campi di matrici di sola lettura sono esclusi da questa regola, ma invece causare una violazione del [CA2105: I campi di matrici non devono essere solo lettura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

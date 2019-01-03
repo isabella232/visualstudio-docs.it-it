@@ -2,7 +2,6 @@
 title: Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4c39ef2c70108eabb3c3d87dc7ab5af17dccd9f8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ab2c4e61eca64917a032d9dfd80c5eca71c09ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873795"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 

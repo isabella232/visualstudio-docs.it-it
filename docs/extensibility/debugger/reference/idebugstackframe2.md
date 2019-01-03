@@ -1,9 +1,6 @@
 ---
-title: IDebugStackFrame2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugStackFrame2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: efa6c917e5a59c291d07757b52fab4fe8aa7b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdb0c34f873e7f8dce5b771ece2d3620da4deb19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990240"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-Questa interfaccia rappresenta un frame di stack singolo in uno stack di chiamate in un particolare thread.  
+Questa interfaccia rappresenta un singolo stack frame in uno stack di chiamate in un particolare thread.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +32,7 @@ IDebugStackFrame2 : IUnknown
  Il motore di debug (DE) implementa questa interfaccia per rappresentare uno stack frame.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) per recuperare un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia. Chiamare [Avanti](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) per recuperare un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura che contiene il `IDebugStackFrame2` interfaccia.  
+ Chiamare [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) per recuperare un' [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia. Chiamare [successivo](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) per recuperare un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura che contiene il `IDebugStackFrame2` interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugStackFrame2`.  
@@ -43,23 +40,23 @@ IDebugStackFrame2 : IUnknown
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ottiene il contesto del codice per questo stack frame.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Ottiene il contesto di documento per lo stack frame.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Ottiene il contesto di documento per questo stack frame.|  
 |[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Ottiene il nome del frame dello stack.|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Ottiene una descrizione del frame dello stack.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Ottiene una rappresentazione dipendenti dal computer dell'intervallo di indirizzi fisici associati a uno stack frame.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Ottiene un contesto di valutazione per l'esecuzione di valutazione dell'espressione di un frame dello stack e un thread all'interno del contesto corrente.|  
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Ottiene una rappresentazione dipende dal computer dell'intervallo di indirizzi fisici associati a uno stack frame.|  
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Ottiene un contesto di valutazione per eseguire l'operazione di valutazione dell'espressione nel contesto corrente di un frame dello stack e thread.|  
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Ottiene la lingua associata a uno stack frame.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Ottiene una descrizione delle proprietà associata a uno stack frame.|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumeratore per lo stack di proprietà di frame.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Ottiene una descrizione delle proprietà associati a uno stack frame.|  
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumeratore per lo stack frame proprietà.|  
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Ottiene il thread associato a uno stack frame.|  
   
 ## <a name="remarks"></a>Note  
- Questa interfaccia viene ottenuta solo quando il programma in fase di debug è stato arrestato in un punto di interruzione (sia causato da un punto di interruzione impostato dall'utente o un'eccezione). Da questa interfaccia, è possibile ottenere un contesto di espressione per valutare le espressioni, può essere restituito un elenco di registri o possibile ottenuto ed esaminare lo stack di chiamate.  
+ Questa interfaccia viene ottenuta solo quando il programma sottoposto a debug è stato arrestato a un punto di interruzione (sia causato da un punto di interruzione impostato dall'utente o un'eccezione). Da questa interfaccia, è possibile ottenere un contesto di espressione per valutare le espressioni, può essere restituito un elenco di registri o possibile ottenuto ed esaminare lo stack di chiamate.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

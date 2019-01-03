@@ -1,9 +1,6 @@
 ---
 title: Creazione di pagine per SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859815"
 ---
 # <a name="create-pages-for-sharepoint"></a>Creazione di pagine per SharePoint
   È possibile creare le pagine dell'applicazione, le pagine del sito, le pagine master e layout di pagina per un sito di SharePoint.  
@@ -44,7 +41,7 @@ ms.locfileid: "36326050"
 |Pagine master|Creare una pagina master se si vuole definire una struttura comune per le pagine del sito e le pagine dell'applicazione.|  
 |Layout di pagina|Layout di pagina sono specifiche di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] e consentono di definire una struttura comune per le pagine del sito e le pagine dell'applicazione.|  
   
- Per una panoramica di ogni tipo di pagina, vedere [blocco predefinito: le pagine e l'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095), e [layout di pagina e pagine Master](http://go.microsoft.com/fwlink/?LinkID=182096).  
+ Per una panoramica di ogni tipo di pagina, vedere [blocco predefinito: Le pagine e l'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095), e [pagina layout e pagine Master](http://go.microsoft.com/fwlink/?LinkID=182096).  
   
 ## <a name="create-application-pages"></a>Creare le pagine dell'applicazione
  È possibile creare le pagine dell'applicazione in Visual Studio mediante l'aggiunta di un **pagina dell'applicazione** elemento a un progetto SharePoint. È possibile aggiungere controlli alla pagina e quindi gestire gli eventi di controllo aggiungendo il codice.  
@@ -61,13 +58,12 @@ ms.locfileid: "36326050"
   
  È possibile aggiungere questi file alla soluzione direttamente oppure è possibile importarli. In entrambi i casi, è necessario creare le cartelle mappate appropriate per ogni elemento che si aggiunge. Per altre informazioni su come creare una cartella mappata, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
- Per altre informazioni sulla creazione di fogli di stile CSS, vedere [utilizzo della classe fogli di stile CSS in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Per altre informazioni sulla creazione di file JavaScript e JScript per una soluzione di SharePoint, vedere [impostazione di una pagina ASPX di base per ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Per altre informazioni sui temi, vedere [blocco predefinito: le pagine e l'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095).  
+ Per altre informazioni sulla creazione di fogli di stile CSS, vedere [utilizzo della classe fogli di stile CSS in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Per altre informazioni sulla creazione di file JavaScript e JScript per una soluzione di SharePoint, vedere [impostazione di una pagina ASPX di base per ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Per altre informazioni sui temi, vedere [blocco predefinito: Le pagine e l'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095).  
   
 ## <a name="related-topics"></a>Argomenti correlati
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Viene descritto come aggiungere le pagine di applicazioni: *aspx* contenuto che viene unito a una pagina master di SharePoint.|  
-|[Procedura: creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)|Illustra come creare pagine ASP.NET eseguite in un sito di SharePoint.|  
+|[Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)|Illustra come creare pagine ASP.NET eseguite in un sito di SharePoint.|  
 |[Procedura dettagliata: Creare una pagina dell'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Illustra come progettare ed eseguire il debug di una pagina Web ASP.NET per un sito di SharePoint.|  
-  

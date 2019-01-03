@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier2::CanAddPort
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f4494aa41613f93396389176436dcf0c40be53
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18d728f762a9e4dd16930e4634c9cb0ca47b2bc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853905"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 Verifica che un fornitore di porte può aggiungere nuove porte.  
@@ -28,8 +25,8 @@ Verifica che un fornitore di porte può aggiungere nuove porte.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT CanAddPort(   
-   void   
+HRESULT CanAddPort(   
+   void   
 );  
 ```  
   

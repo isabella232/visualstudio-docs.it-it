@@ -1,15 +1,10 @@
 ---
-title: 'Procedura: modificare una configurazione di distribuzione di SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Modificare una configurazione di distribuzione di SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843593"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: modificare una configurazione di distribuzione di SharePoint
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: Modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, si potrebbe eseguire un singolo passaggio o modificare l'ordine dei passaggi del processo di distribuzione. È possibile creare o modificare le configurazioni di distribuzione poiché non è possibile modificare le configurazioni predefinite e a livello di codice aggiunte.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Creare una configurazione di distribuzione di SharePoint  
@@ -58,4 +53,3 @@ ms.locfileid: "43774794"
   
 ## <a name="see-also"></a>Vedere anche
  [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

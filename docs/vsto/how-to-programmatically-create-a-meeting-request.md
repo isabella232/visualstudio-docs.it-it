@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creazione di una convocazione riunione a livello di codice'
-ms.custom: ''
+title: 'Procedura: Creazione di una convocazione riunione a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5cada5d337eb4f72caf9077afc9bcd42706b21d1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c99f67c1bf445fe33a45292f29205e3eb53537f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890495"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>Procedura: creazione di una convocazione riunione a livello di codice
+# <a name="how-to-programmatically-create-a-meeting-request"></a>Procedura: Creazione di una convocazione riunione a livello di codice
   In questo esempio viene creata una convocazione riunione in Microsoft Office Outlook e viene inviata la convocazione a un partecipante richiesto.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -36,5 +33,3 @@ ms.locfileid: "35257371"
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con gli elementi del calendario](../vsto/working-with-calendar-items.md)   
  [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

@@ -1,6 +1,5 @@
 ---
 title: Indirizzamento Problemi2 DPI | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875167"
 ---
 # <a name="address-dpi-issues"></a>Problemi DPI
 Un numero crescente di dispositivi è distribuiti con "schermi". Queste schermate hanno in genere più di 200 pixel per pollice (PPID). Per lavorare con un'applicazione in tali computer sarà necessario il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire dal 2014, la destinazione principale per schermi ad alta densità è mobile computing dispositivi (Tablet, computer portatili conchiglia e telefoni).  
@@ -174,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Per abilitare l'interfaccia utente per usare questa scalabilità doppia, markup XAML per la visualizzazione di ogni elemento di immagine devono essere modificate. Gli esempi seguenti illustrano come usare la scalabilità double in WPF in Visual Studio usando la libreria di DpiHelper e Shell.12/14.  
   
- Passaggio 1: Prescale 300% l'immagine in 200% e così via usando NearestNeighbor.  
+ Passaggio 1: Prescale l'immagine da % 200, 300% e così via usando NearestNeighbor.  
   
  Prescale l'immagine utilizzando un convertitore di applicare un'associazione, o con un'estensione di markup XAML. Ad esempio:  
   

@@ -1,7 +1,6 @@
 ---
 title: 'Procedura: Usare procedure guidate con modelli di progetto'
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57a24f8c7b01a0c6df3803e95c49d1eb34ca1fe1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7bcc1485834209133897c776fcb52ed5c600d9ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837407"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare le procedure guidate con modelli di progetto
 

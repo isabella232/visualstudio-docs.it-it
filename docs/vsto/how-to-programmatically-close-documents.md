@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: chiudere i documenti a livello di codice'
-ms.custom: ''
+title: 'Procedura: Chiudere i documenti a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a846aded5d24f84fdaeac79a1bad6c61a3f5570
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930224"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Procedura: chiudere i documenti a livello di codice
+# <a name="how-to-programmatically-close-documents"></a>Procedura: Chiudere i documenti a livello di codice
   È possibile chiudere il documento attivo oppure specificare un documento da chiudere.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -65,9 +62,8 @@ ms.locfileid: "35257774"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Procedura: salvare i documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)   
+ [Procedura: A livello di codice aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Procedura: Salvare i documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

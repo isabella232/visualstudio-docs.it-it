@@ -1,9 +1,6 @@
 ---
 title: Configurazione del progetto per gestire la distribuzione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, managing deployment
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3f632f7b271e3272a38dd79653b4c2ff238220
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02b7f04afc666fb842414c8a46793eb3178fe404
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852586"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configurazione del progetto per la gestione della distribuzione
 La distribuzione è l'atto di spostano fisicamente gli elementi di output da un processo di compilazione nella posizione prevista per il debug e l'installazione. Ad esempio, un'applicazione Web potrebbe essere compilata in un computer locale e quindi inserita nel server.  

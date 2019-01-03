@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831888"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Excel
   Questa procedura dettagliata introduttiva descrive come creare un componente aggiuntivo a livello di applicazione per Microsoft Office Excel. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali cartelle di lavoro siano aperte.  
@@ -121,17 +118,17 @@ ms.locfileid: "49949903"
 ## <a name="next-steps"></a>Passaggi successivi  
  Dopo aver creato un componente aggiuntivo VSTO di base per Excel, è possibile visualizzare altre informazioni su come sviluppare componenti aggiuntivi VSTO in questi argomenti:  
   
--   Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Attività di programmazione specifici di componenti aggiuntivi VSTO per Excel: [soluzioni Excel](../vsto/excel-solutions.md).  
+-   Programmazione di attività specifici di componenti aggiuntivi VSTO per Excel: [Soluzioni Excel](../vsto/excel-solutions.md).  
   
--   Usando il modello a oggetti di Excel: [Cenni preliminari sul modello a oggetti di Excel](../vsto/excel-object-model-overview.md).  
+-   Usando il modello a oggetti di Excel: [Panoramica del modello a oggetti Excel](../vsto/excel-object-model-overview.md).  
   
--   Personalizzazione dell'interfaccia utente (UI) di Excel, ad esempio, per l'aggiunta di una scheda personalizzata alla barra multifunzione o creando un riquadro attività personalizzato: [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
+-   Personalizzazione dell'interfaccia utente (UI) di Excel, ad esempio, aggiungendo una scheda personalizzata alla barra multifunzione o creando un riquadro attività personalizzato: [Personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
   
--   Compilazione e debug di componenti aggiuntivi VSTO per Excel: [soluzioni Office compilare](../vsto/building-office-solutions.md).  
+-   Compilazione e debug di componenti aggiuntivi VSTO per Excel: [Creazione di soluzioni Office](../vsto/building-office-solutions.md).  
   
--   Distribuzione di componenti aggiuntivi VSTO per Excel: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
+-   Distribuzione di componenti aggiuntivi VSTO per Excel: [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -142,5 +139,3 @@ ms.locfileid: "49949903"
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
  [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)  
-  
-  

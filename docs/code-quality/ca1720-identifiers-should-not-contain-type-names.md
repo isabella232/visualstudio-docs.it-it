@@ -2,7 +2,6 @@
 title: 'CA1720: Gli identificatori non devono contenere nomi di tipo'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912269"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 
@@ -35,7 +34,7 @@ ms.locfileid: "50143125"
 ## <a name="cause"></a>Causa
  Il nome di un parametro in un membro visibile esternamente contiene un nome di tipo di dati.
 
- oppure
+ -oppure-
 
  Il nome di un membro visibile esternamente contiene un nome di tipo di dati specifico del linguaggio.
 
@@ -141,9 +140,9 @@ Inoltre, i nomi di parametro sono anche confrontati con i nomi dei tipi di dati 
  Uso occasionale di nomi di parametri e membri in base al tipo potrebbe essere appropriato. Tuttavia, per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui si deve eliminare un avviso da questa regola. Per le librerie fornite in precedenza, potrebbe essere necessario eliminare un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Gli identificatori non devono contenere caratteri di sottolineatura](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 

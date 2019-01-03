@@ -1,8 +1,6 @@
 ---
 title: Accessibilità nei progetti di Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833326"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
-  Microsoft Visual Studio e Microsoft Office include molte funzionalità di accessibilità che consentono di creare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard. Microsoft pubblica le linee guida per l'accesso facilitato sul Web. Per informazioni dettagliate, vedere la [sito Web di accessibilità](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- Nella maggior parte dei casi, i progetti di Office in Visual Studio riunisce accessibilità standard o espone proprietà che è possibile impostare per rendere accessibili le soluzioni. Esistono tuttavia alcune funzionalità che non dispongono di accessibilità.
+Microsoft Visual Studio e Microsoft Office include molte funzionalità di accessibilità che consentono di creare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard. Microsoft pubblica le linee guida per l'accesso facilitato sul Web. Per informazioni dettagliate, vedere la [sito Web di accessibilità](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+Nella maggior parte dei casi, i progetti di Office in Visual Studio riunisce accessibilità standard o espone proprietà che è possibile impostare per rendere accessibili le soluzioni. Esistono tuttavia alcune funzionalità che non dispongono di accessibilità.
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Accessibilità in fase di progettazione
 

@@ -1,9 +1,6 @@
 ---
 title: Visualizzare i dati del documento e documento negli editor personalizzati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818875"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>I dati del documento e visualizzazione documento negli editor personalizzati
 Un editor personalizzato è costituita da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggeriscono i nomi, l'oggetto dati del documento rappresenta i dati di testo da visualizzare. Analogamente, l'oggetto visualizzazione del documento (o "visualizzazione") rappresenta una o più finestre in cui visualizzare l'oggetto dati del documento.  
@@ -42,7 +39,7 @@ Un editor personalizzato è costituita da due parti: un oggetto dati del documen
 ## <a name="see-also"></a>Vedere anche  
  [Supportare più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md)   
  [Incorporamento semplificato](../extensibility/simplified-embedding.md)   
- [Procedura: collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Procedura: Collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md)   
  [Gestione dei detentori di blocchi documento](../extensibility/document-lock-holder-management.md)   
  [Viste a schede singole e multiple](../extensibility/single-and-multi-tab-views.md)   
  [Salvare un documento standard](../extensibility/internals/saving-a-standard-document.md)   

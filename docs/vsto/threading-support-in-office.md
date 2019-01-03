@@ -1,9 +1,6 @@
 ---
 title: Supporto del threading in Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857893"
 ---
 # <a name="threading-support-in-office"></a>Supporto del threading in Office
   Questo articolo fornisce informazioni sul supporto di threading nel modello a oggetti Microsoft Office. Il modello a oggetti Office non è thread-safe, ma è possibile lavorare con più thread in una soluzione Office. Le applicazioni di Office sono server modello COM (Component Object). COM consente ai client di chiamare server COM in thread arbitrario. Per i server COM che non sono thread-safe, COM fornisce un meccanismo per la serializzazione di chiamate simultanee, in modo che solo un thread logico viene eseguito nel server in qualsiasi momento. Questo meccanismo è noto come il modello di apartment a thread singolo (STA). Poiché le chiamate vengono serializzate, i chiamanti potrebbero essere bloccati per periodi di tempo mentre il server è occupato o sta gestendo altre chiamate in un thread in background.  
@@ -79,5 +76,3 @@ ms.locfileid: "49871109"
  [Threading (c#)](/dotnet/csharp/programming-guide/concepts/threading/index) [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [Uso thread e threading](/dotnet/standard/threading/using-threads-and-threading)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

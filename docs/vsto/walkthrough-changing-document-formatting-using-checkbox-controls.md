@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox'
-ms.custom: ''
+title: 'Procedura dettagliata: Modificare la formattazione dei documenti mediante controlli CheckBox'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913869"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modificare la formattazione dei documenti mediante controlli CheckBox
   Questa procedura dettagliata illustra come usare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "49863932"
   
 1.  Creare un progetto documento di Word con il nome **formattazione in Word**. Nella procedura guidata, selezionare **creare un nuovo documento**.  
   
-     Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **My Word Formatting** progetto al **Esplora soluzioni**.  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49863932"
   
 3.  Nella finestra **Proprietà** modificare le seguenti proprietà:  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**applyBoldFont**|  
     |**per**|**Grassetto**|  
@@ -79,7 +76,7 @@ ms.locfileid: "49863932"
   
 5.  Aggiungere una seconda casella di controllo al documento riportato di seguito il `ApplyBoldFont` casella di controllo e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**applyItalicFont**|  
     |**per**|**Corsivo**|  
@@ -137,7 +134,7 @@ ms.locfileid: "49863932"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  In C#, è necessario aggiungere i gestori eventi per le caselle di testo per il <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Per informazioni su come creare gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  In C#, è necessario aggiungere i gestori eventi per le caselle di testo per il <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Per informazioni su come creare gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863932"
 ## <a name="next-steps"></a>Passaggi successivi  
  Questa procedura dettagliata illustra le nozioni di base usando le caselle di controllo e a livello di programmazione cambiando il testo, formattazione nei documenti di Word. Ecco alcune possibili attività successive:  
   
--   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [procedura dettagliata: visualizzazione di testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [procedura dettagliata: aggiornamento di un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 
 ## <a name="see-also"></a>Vedere anche  
@@ -165,5 +162,3 @@ ms.locfileid: "49863932"
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

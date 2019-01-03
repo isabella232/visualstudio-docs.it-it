@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: usare un File di risorse per specificare nomi localizzati, proprietà e autorizzazioni | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare un File di risorse per specificare nomi localizzati, proprietà e autorizzazioni | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c54aa87f09d4821f9fde5cceb95e6ec3a8e089fa
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c61e996380ff2cca6ddc3c60ad4c6d13d10c93f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819464"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni
+# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procedura: Usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni
   Utilizzando un file di risorse, è possibile fornire nomi localizzati, definire proprietà e applicare autorizzazioni per oggetti definiti in un modello di integrazione applicativa dei dati. Per specificare queste informazioni, si aggiunge un **risorse di integrazione applicativa dei dati aziendali** elemento a un progetto che contiene un **Business Data Connectivity Model** elemento. Specificare nomi, proprietà e autorizzazioni modificando l'XML del file di risorse.  
   
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Per aggiungere un file di risorse di integrazione applicativa dei dati a un progetto SharePoint  
@@ -53,9 +48,8 @@ ms.locfileid: "37118910"
      Per informazioni su come definire questi elementi, vedere [modello e i file di risorse](http://go.microsoft.com/fwlink/?LinkID=169283).  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [Procedura: Aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)   
- [Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Procedura: Creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Procedura: Includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrazione di dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  

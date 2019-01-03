@@ -1,9 +1,6 @@
 ---
 title: Panoramica del protocollo Server Language | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828225"
 ---
 # <a name="language-server-protocol"></a>Protocollo di server di linguaggio
 
@@ -52,13 +49,13 @@ Di seguito è riportato un esempio per la modalità di comunicazione durante una
 
 ![diagramma di flusso di Layered Service Provider](media/lsp-flow-diagram.png)
 
-* **L'utente apre un file (definito come un documento) nello strumento**: lo strumento di notifica al server di linguaggio che viene aperto un documento (' textDocument/didOpen'). D'ora in poi la verità in merito il contenuto del documento non è più nel file system ma mantenga lo strumento in memoria.
+* **L'utente apre un file (definito come un documento) nello strumento**: Lo strumento di notifica al server di linguaggio che viene aperto un documento (' textDocument/didOpen'). D'ora in poi la verità in merito il contenuto del documento non è più nel file system ma mantenga lo strumento in memoria.
 
-* **L'utente effettua modifiche**: lo strumento di notifica al server sulla modifica del documento (' textDocument/didChange') e le informazioni semantiche del programma viene aggiornate dal server di linguaggio. Come in questo caso, il server di linguaggio analizza queste informazioni e invia una notifica lo strumento con gli errori e gli avvisi (' textDocument/publishDiagnostics').
+* **L'utente effettua modifiche**: Lo strumento di notifica al server sulla modifica del documento (' textDocument/didChange') e le informazioni semantiche del programma viene aggiornate dal server di linguaggio. Come in questo caso, il server di linguaggio analizza queste informazioni e invia una notifica lo strumento con gli errori e gli avvisi (' textDocument/publishDiagnostics').
 
-* **L'utente esegue "Vai a definizione" su un simbolo nell'editor**: lo strumento invia una richiesta di ' textDocument/definizione' con due parametri: (1) l'URI del documento e (2) la posizione del testo da dove Vai a nella richiesta della definizione è stato avviato nel server. Il server risponde con l'URI del documento e la posizione della definizione del simbolo all'interno del documento.
+* **L'utente esegue "Vai a definizione" su un simbolo nell'editor**: Lo strumento invia una richiesta di ' textDocument/definizione' con due parametri: (1) l'URI del documento e (2) la posizione del testo da dove Vai a nella richiesta della definizione è stato avviato nel server. Il server risponde con l'URI del documento e la posizione della definizione del simbolo all'interno del documento.
 
-* **L'utente chiude il documento (file)**: viene inviata una notifica di ' textDocument/didClose' dallo strumento, per informare il server di linguaggio che il documento è ora non è più in memoria e che il contenuto corrente è ora aggiornata nel file system.
+* **L'utente chiude il documento (file)**: Viene inviata una notifica di ' textDocument/didClose' dallo strumento, per informare il server di linguaggio che il documento è ora non è più in memoria e che il contenuto corrente è ora aggiornata nel file system.
 
 Questo esempio viene illustrato come il protocollo comunica con il server di linguaggio al livello di funzionalità dell'editor, ad esempio "Vai a definizione", "Trova tutti i riferimenti". I tipi di dati utilizzati dal protocollo sono editor o ambiente IDE "tipi di dati", ad esempio il documento di testo aperto e la posizione del cursore. I tipi di dati non sono a livello di un linguaggio dominio del modello di programmazione che in genere fornisce gli alberi della sintassi astratta e simboli di compilazione (ad esempio, risolvere i tipi, spazi dei nomi,...). Questo semplifica notevolmente il protocollo.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: archiviare e recuperare valori di data in intervalli di Excel a livello di codice'
-ms.custom: ''
+title: 'Procedura: Archiviare e recuperare valori di data in intervalli di Excel a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a28a357aa6a01615d269c6fba41c690f41c7b93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863904"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procedura: archiviare e recuperare valori di data in intervalli di Excel a livello di codice
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procedura: Archiviare e recuperare valori di data in intervalli di Excel a livello di codice
   È possibile archiviare e recuperare i valori in un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -87,8 +84,6 @@ ms.locfileid: "35672850"
  [Lavorare con intervalli](../vsto/working-with-ranges.md)   
  [Cenni preliminari sul modello a oggetti di Excel](../vsto/excel-object-model-overview.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
- [Procedura: fare riferimento a livello di programmazione agli intervalli di foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Procedura: Aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

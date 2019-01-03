@@ -1,9 +1,6 @@
 ---
 title: Limitazioni sulle lunghezze di stringa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
@@ -13,19 +10,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b3552a88f5a78b627e72e877758cf6b7d12de95
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5bb973a1f50bb29cc605ab63916d8e75b17d1853
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852716"
 ---
 # <a name="restrictions-on-string-lengths"></a>Limitazioni sulle lunghezze di stringa
 L'API dei plug-in del controllo origine limita la lunghezza delle stringhe usate nelle varie funzioni.  
   
 ## <a name="string-length-values"></a>Valori di lunghezza stringa  
   
-|Costante|Valore|  
+|Costante|Value|  
 |--------------|-----------|  
 |`SCC_NAME_LEN`|31|  
 |`SCC_AUXLABEL_LEN`|31|  

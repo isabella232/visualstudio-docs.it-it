@@ -1,9 +1,6 @@
 ---
-title: DisplayKind | Documenti Microsoft
-ms.custom: ''
+title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - DisplayKind enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8890d8a949e59827b45d3a2933116294562023e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd75220c202d65c11ac695e4fa27e736595cbc86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828878"
 ---
 # <a name="displaykind"></a>DisplayKind
 Enumera i valori validi che rappresentano i tipi di informazioni da eseguire da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) dell'oggetto e visualizzare all'utente.  
@@ -52,12 +49,12 @@ public enum enum_DisplayKind
  Nome del campo.  
   
  DisplayKind_Type  
- Tipo del campo.  
+ Tipo di campo.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Ee.h  
+ Intestazione: EE.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

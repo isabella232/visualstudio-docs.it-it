@@ -1,9 +1,6 @@
 ---
 title: Eseguire soluzioni in versioni diverse di Microsoft Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed8a9b7cc78b0605b7fcc3931a7ee8992360125b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843398"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Eseguire soluzioni in versioni diverse di Microsoft Office
     
@@ -61,8 +58,6 @@ ms.locfileid: "35671995"
 ## <a name="see-also"></a>Vedere anche  
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio Tools per Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio Tools per scenari di installazione di Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [Configurare un computer per sviluppare soluzioni Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
-  
-  

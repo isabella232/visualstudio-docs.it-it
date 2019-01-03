@@ -1,9 +1,6 @@
 ---
 title: Interfacce di fornitore di porte necessarie | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers, required interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c727cb39b480d72a3e0aa2083ca795bb65ac0ff
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 79991880b244165f6041903c2f71188a25d910cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850817"
 ---
 # <a name="required-port-supplier-interfaces"></a>Porta richiesta supplier interfacce
 Un fornitore di porte deve implementare il [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
@@ -57,7 +54,7 @@ Un fornitore di porte deve implementare il [IDebugPortSupplier2](../../extensibi
   
     -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
-    -   [Metodo GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
     -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   

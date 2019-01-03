@@ -8,13 +8,12 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820238"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando i controlli delle linee guida di base di C++
 Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. I controlli delle linee guida di base vengono installati per impostazione predefinita in Visual Studio 2017 e vengono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
@@ -55,11 +54,11 @@ int main()
 
 Questo esempio illustra alcuni degli avvisi che è possono trovare le regole C++ Core controllare:
 
-- C26494 è regola Type.5: inizializzare sempre un oggetto.
+- C26494 è regola Type.5: Inizializzare sempre un oggetto.
 
-- C26485 è regola Bounds.3: decay non-matrice di puntatori.
+- C26485 è regola Bounds.3: Decadimento non-matrice di puntatori.
 
-- C26481 è regola Bounds.1: non usare l'aritmetica dei puntatori. In alternativa, usare `span`.
+- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, usare `span`.
 
 Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:
 

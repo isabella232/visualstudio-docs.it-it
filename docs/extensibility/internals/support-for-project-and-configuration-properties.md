@@ -1,9 +1,6 @@
 ---
 title: Supporto per il progetto e le proprietà di configurazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2f61bce5b54dc877117af71b07dc0bfc1fdd8b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893526"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto
 Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di configurazione e progetto. È possibile fornire una pagina delle proprietà per il proprio tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.  
   
- Selezionando un nodo del progetto in **Esplora soluzioni** e quindi facendo clic su **delle proprietà** sul **progetto** menu, è possibile aprire una finestra di dialogo che include configurazione e progetto proprietà. Nelle [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]e tipi derivati da questi linguaggi, questa finestra di dialogo viene visualizzata come una pagina a schede nel progetto di [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). Per altre informazioni, vedere [non incluso nella Build: procedura dettagliata: esposizione di progetto e le proprietà di configurazione (c#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Selezionando un nodo del progetto in **Esplora soluzioni** e quindi facendo clic su **delle proprietà** sul **progetto** menu, è possibile aprire una finestra di dialogo che include configurazione e progetto proprietà. Nelle [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]e tipi derivati da questi linguaggi, questa finestra di dialogo viene visualizzata come una pagina a schede nel progetto di [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). Per altre informazioni, vedere [non incluso nella Build: Procedura dettagliata: Esposizione di proprietà di configurazione e progetto (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Il Framework di pacchetto gestito per progetti (MPFProj) fornisce classi helper per la creazione e la gestione di nuovo sistema di progetto. È possibile trovare l'origine istruzioni di compilazione e codice in [MPF per i progetti - Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).  
   

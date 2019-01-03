@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: utilizzare a livello di programmazione le finestre di dialogo di Word in modalità nascosta'
-ms.custom: ''
+title: 'Procedura: A livello di codice usare le finestre di dialogo di Word in modalità nascosta'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819627"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedura: utilizzare a livello di programmazione le finestre di dialogo di Word in modalità nascosta
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedura: A livello di codice usare le finestre di dialogo di Word in modalità nascosta
   È possibile eseguire operazioni complesse con una chiamata al metodo richiamando le finestre di dialogo predefinite in Microsoft Office Word senza che vengano visualizzate all'utente. Tale scopo, è possibile utilizzare il <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodo per il <xref:Microsoft.Office.Interop.Word.Dialog> oggetti senza chiamare il <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> (metodo).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35672810"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: utilizzare a livello di programmazione le finestre di dialogo predefinite in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Procedura: A livello di codice usare finestre di dialogo predefinite in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)   
  [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

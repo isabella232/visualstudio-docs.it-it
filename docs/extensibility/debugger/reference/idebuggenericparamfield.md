@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericParamField | Documenti Microsoft
-ms.custom: ''
+title: IDebugGenericParamField | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericParamField interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4072908a8f6690e3d3b00d8c43690be62083242d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c42c9b19e52511097953cf658b3a5ce0decd5e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871612"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 Rappresenta un parametro per un tipo generico di codice gestito.  
@@ -30,10 +27,10 @@ IDebugGenericParamField : IDebugField
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Usato per il supporto dei generics.  
+ Utilizzato per il supporto dei generics.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, implementa i metodi seguenti:  
+ Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, questa interfaccia implementa i metodi seguenti:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -47,6 +44,6 @@ IDebugGenericParamField : IDebugField
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

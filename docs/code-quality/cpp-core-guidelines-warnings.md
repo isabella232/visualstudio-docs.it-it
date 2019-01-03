@@ -7,15 +7,14 @@ author: mblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926278"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando i controlli delle linee guida di base di C++
 
@@ -62,11 +61,11 @@ int main()
 
 Questo esempio illustra alcuni degli avvisi che è possono trovare le regole C++ Core controllare:
 
-- C26494 è regola Type.5: inizializzare sempre un oggetto.
+- C26494 è regola Type.5: Inizializzare sempre un oggetto.
 
-- C26485 è regola Bounds.3: decay non-matrice di puntatori.
+- C26485 è regola Bounds.3: Decadimento non-matrice di puntatori.
 
-- C26481 è regola Bounds.1: non usare l'aritmetica dei puntatori. In alternativa, usare `span`.
+- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, usare `span`.
 
 Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:
 

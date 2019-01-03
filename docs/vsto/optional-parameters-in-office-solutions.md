@@ -1,9 +1,6 @@
 ---
 title: Parametri facoltativi nelle soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34f19c7fa27893b071251f61d01f2dd9c9809d3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905098"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametri facoltativi nelle soluzioni Office
   Molti dei metodi nei modelli a oggetti delle applicazioni di Microsoft Office accettano parametri facoltativi. Se si utilizza Visual Basic per sviluppare una soluzione Office in Visual Studio, non è necessario passare un valore per i parametri facoltativi. Infatti, per ogni parametro mancante vengono utilizzati automaticamente i valori predefiniti. Nella maggior parte dei casi, è anche possibile omettere i parametri facoltativi nei progetti Visual c#. Tuttavia, non è possibile omettere facoltativo **ref** i parametri del `ThisDocument` classi nei progetti di Word a livello di documento.  
@@ -74,5 +71,3 @@ ms.locfileid: "49882574"
 ## <a name="see-also"></a>Vedere anche  
  [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

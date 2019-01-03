@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: copiare e incollare forme in un documento di Visio a livello di codice'
-ms.custom: ''
+title: 'Procedura: Copiare e incollare forme in un documento di Visio a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856488"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procedura: copiare e incollare forme in un documento di Visio a livello di codice
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procedura: Copiare e incollare forme in un documento di Visio a livello di codice
   È possibile copiare a livello di codice forme contenute in una pagina di un documento e quindi incollarle in una nuova pagina dello stesso documento. Le forme possono essere incollate nella posizione predefinita (ovvero il centro della finestra attiva) o nelle stesse coordinate occupate nella pagina originale.  
   
 ## <a name="copy-and-paste-shapes"></a>Copiare e incollare le forme  
@@ -52,6 +49,4 @@ ms.locfileid: "50671495"
  [Soluzioni Visio](../vsto/visio-solutions.md)   
  [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)   
  [Lavorare con le forme di Visio](../vsto/working-with-visio-shapes.md)   
- [Procedura: a livello di codice aggiungere forme a un documento di Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [Procedura: A livello di codice aggiungere forme a un documento di Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

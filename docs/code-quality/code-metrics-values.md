@@ -2,7 +2,6 @@
 title: Calcola metrica codice
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855572"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -24,7 +23,7 @@ La maggiore complessità delle applicazioni software moderne aumenta anche la di
 
 Gli sviluppatori possono utilizzare Visual Studio per generare dati di metrica del codice che consentono di misurare la complessità e della manutenibilità del codice gestito. Dati di metrica codice possono essere generati per un'intera soluzione o un singolo progetto.
 
-Per informazioni su come generare dati di metrica codice in Visual Studio, vedere [procedura: generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md).
+Per informazioni su come generare dati di metrica codice in Visual Studio, vedere [come: Generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Misurazioni di software
 
@@ -57,5 +56,5 @@ Codice generato per i moduli di Windows non viene ignorato, poiché si tratta di
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Procedura: generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md)
+- [Procedura: Generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md)
 - [Utilizzare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)

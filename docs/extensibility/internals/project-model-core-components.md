@@ -1,9 +1,6 @@
 ---
 title: Componenti di base del modello di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 91a2d4b1a1457938af9c65a91254b44245eb7824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990360"
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano una breve descrizione di interfacce e servizi identificati nel modello e le interfacce e i servizi associati a oggetti specifici. Inoltre, le tabelle in dettaglio le altre interfacce facoltative la creazione del progetto e di manutenzione a seconda dei requisiti del tipo di progetto specifico.  
@@ -105,6 +102,6 @@ Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano una
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Non incluso nella Build: utilizzo delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Non incluso nella Build: Uso delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Supporto di strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)

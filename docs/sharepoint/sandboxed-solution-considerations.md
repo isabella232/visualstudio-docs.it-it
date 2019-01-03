@@ -1,16 +1,11 @@
 ---
 title: Considerazioni sulle soluzioni create mediante sandbox | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862101"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerazioni sulle soluzioni create mediante sandbox
   *Soluzioni create mediante sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti di raccolta siti caricare le proprie soluzioni di codice personalizzato. Una soluzione creata mediante sandbox comune è utenti di caricare le proprie Web part.  
@@ -145,4 +140,3 @@ ms.locfileid: "49890036"
 ## <a name="see-also"></a>Vedere anche
  [Differenze tra modalità sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

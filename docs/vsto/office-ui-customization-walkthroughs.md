@@ -1,9 +1,6 @@
 ---
 title: Procedure dettagliate di personalizzazione dell'interfaccia utente di Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826585"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procedure dettagliate di personalizzazione dell'interfaccia utente di Office
   Le procedure dettagliate seguenti mostrano come personalizzare l'interfaccia utente delle applicazioni di Microsoft Office usando le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.  
@@ -42,10 +39,10 @@ ms.locfileid: "35672858"
  [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
  Mostra come creare un riquadro attività personalizzato che contiene un controllo che, quando viene selezionato dall'utente, automatizza l'applicazione host.  
   
- [Procedura dettagliata: Sincronizzazione di un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
+ [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
  Mostra come creare un riquadro attività personalizzato che gli utenti possono visualizzare o nascondere facendo clic su un interruttore nella barra multifunzione.  
   
- [Procedura dettagliata: Visualizzazione di riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
  Mostra come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica creato o aperto in Outlook.  
   
 ## <a name="ribbon-walkthroughs"></a>Procedure dettagliate della barra multifunzione  
@@ -62,26 +59,26 @@ ms.locfileid: "35672858"
  [Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
  Illustra come aggiungere controlli a un documento mediante un componente aggiuntivo VSTO.  
   
- [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
+ [Procedura dettagliata: Modificare la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Mostra come modificare la formattazione in un documento Word usando le caselle di controllo in una personalizzazione a livello di documento.  
   
- [Procedura dettagliata: Visualizzazione di testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Illustra come usare i pulsanti e le caselle di testo nei documenti Word.  
   
- [Procedura dettagliata: Aggiornamento di un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Illustra come modificare gli stili del grafico in un documento Word usando i pulsanti di opzione in una personalizzazione a livello di documento.  
   
 ## <a name="controls-on-excel-worksheets"></a>Controlli nei fogli di lavoro di Excel  
  [Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
  Mostra come aggiungere controlli a un foglio di lavoro mediante un componente aggiuntivo VSTO.  
   
- [Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
+ [Procedura dettagliata: La modifica del foglio di lavoro della formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  Fornisce le nozioni di base sull'uso di caselle di controllo in un foglio di lavoro di Excel per modificare la formattazione.  
   
- [Procedura dettagliata: Visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
+ [Procedura dettagliata: Testo visualizzato in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Fornisce le nozioni di base sull'uso di pulsanti e caselle di testo in fogli di lavoro di Excel.  
   
- [Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [Procedura dettagliata: Aggiornare un grafico in un foglio di lavoro mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  Illustra i dati principali relativi alla modifica degli stili dei grafici tramite i pulsanti di opzione in un foglio di lavoro Excel.  
   
 ## <a name="see-also"></a>Vedere anche  
@@ -92,5 +89,3 @@ ms.locfileid: "35672858"
  [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

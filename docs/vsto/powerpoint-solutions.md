@@ -1,9 +1,6 @@
 ---
 title: Soluzioni PowerPoint
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906046"
 ---
 # <a name="powerpoint-solutions"></a>Soluzioni PowerPoint
   Visual Studio fornisce modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office PowerPoint. È possibile usare i componenti aggiuntivi VSTO per automatizzare PowerPoint, estenderne le funzionalità o personalizzarne l'interfaccia utente.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906559"
 > [!NOTE]  
 >  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [procedura: creazione di un componente aggiuntivo per Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Creare un componente aggiuntivo per Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Automazione di PowerPoint usando il modello a oggetti PowerPoint  
  Il modello a oggetti di PowerPoint espone molti tipi che è possibile usare per automatizzare PowerPoint. Questi tipi consentono di scrivere il codice per eseguire attività comuni:  
@@ -56,7 +53,7 @@ ms.locfileid: "49906559"
  Per informazioni complete sul modello a oggetti di PowerPoint, è possibile usare il riferimento di assembly di interoperabilità primario (PIA) di PowerPoint e il riferimento del modello a oggetti VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario  
- Nella documentazione di riferimento dell'assembly di interoperabilità primario (PIA) di PowerPoint sono descritti i tipi di assembly di interoperabilità primario per PowerPoint. Questa documentazione è disponibile dal percorso seguente: [riferimento all'assembly di interoperabilità primario di PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ Nella documentazione di riferimento dell'assembly di interoperabilità primario (PIA) di PowerPoint sono descritti i tipi di assembly di interoperabilità primario per PowerPoint. Questa documentazione è disponibile dal percorso seguente: [Riferimento all'assembly di interoperabilità primario di PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Per altre informazioni sulla progettazione di PowerPoint assembly di interoperabilità primario, ad esempio le differenze tra classi e interfacce nell'assembly di interoperabilità primario e sull'implementazione degli eventi nell'assembly di interoperabilità primario, vedere [panoramica delle classi e interfacce negli assembly di interoperabilità primari di Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -72,7 +69,7 @@ ms.locfileid: "49906559"
 |----------|--------------------------|  
 |Creare un riquadro attività personalizzato.|[Riquadri attività personalizzati](../vsto/custom-task-panes.md)|  
 |Aggiungere schede personalizzate alla barra multifunzione.|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|  
-|Aggiungere gruppi personalizzati a una scheda incorporata nella barra multifunzione.|[Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Aggiungere gruppi personalizzati a una scheda incorporata nella barra multifunzione.|[Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  Per altre informazioni sulla personalizzazione dell'interfaccia utente di PowerPoint e altre applicazioni Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
   
@@ -81,11 +78,9 @@ ms.locfileid: "49906559"
  [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Panoramica dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)   
  [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 nello sviluppo per Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

@@ -1,8 +1,7 @@
 ---
-title: "CA1026: Evitare l'utilizzo di parametri predefiniti"
+title: 'CA1026: Non usare i parametri predefiniti'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1026
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4a248be45489eafcbd208329a52cfc06d8237f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 30a925d685a327499f426bc3e6d060b897dd90c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839677"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'utilizzo di parametri predefiniti
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Non usare i parametri predefiniti
 
 |||
 |-|-|

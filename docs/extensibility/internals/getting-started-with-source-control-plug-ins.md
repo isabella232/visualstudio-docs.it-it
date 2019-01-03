@@ -1,9 +1,6 @@
 ---
 title: Introduzione a Plug-in controllo codice sorgente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f1eb4f76616f6a5f6791cbcd1b8a5770d1dcabb
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 829bf676a407fd166eda252cb4e6e2fbdb93fa41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854503"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Introduzione a plug-in controllo codice sorgente
 Per creare un controllo del codice sorgente del plug-in, è necessario creare una DLL che implementa le funzioni definite nell'API di plug-in controllo di origine, quindi per registrare la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per renderlo disponibile per l'utilizzo nel controllo di versione del codice sorgente.  
@@ -27,7 +24,7 @@ Per creare un controllo del codice sorgente del plug-in, è necessario creare un
  Tre versioni dell'API dei plug-in controllo di origine (versioni 1.1, 1.2 e 1.3) sono disponibili per plug-in controllo codice sorgente. L'API dei plug-in del controllo origine documentati qui è la versione 1.3. È stato progettato per essere completamente compatibili con plug-in controllo codice sorgente che supporta le versioni 1.1 e 1.2. Il [nuove funzionalità di plug-in origine controllo API versione 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) sezione illustra nel dettaglio le nuove funzionalità supportate nella versione più recente dell'API dei plug-in controllo di origine.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
- [Procedura: installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ [Procedura: Installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  Viene descritto come rendere le voci del Registro di sistema necessari per inserire un controllo del codice sorgente DLL.  
   
  [Quali sono le novità nella versione 1.3 di origine controllo plug-in di API](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  

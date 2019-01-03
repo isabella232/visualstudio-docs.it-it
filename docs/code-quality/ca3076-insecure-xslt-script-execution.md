@@ -1,22 +1,21 @@
 ---
-title: 'CA3076: Esecuzione di script XSLT non protetta'
+title: 'CA3076: Esecuzione di Script XSLT non protetta'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d711aad69dbdf3295ca7b2962a2e2022bd259059
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891047"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Esecuzione di script XSLT non protetta
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Esecuzione di Script XSLT non protetta
 
 |||
 |-|-|
@@ -31,7 +30,7 @@ Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazi
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-**XSLT** è uno standard di World Wide Web Consortium (W3C) per la trasformazione dei dati XML. XSLT è in genere utilizzato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo di lunghezza fissa, testo delimitato da virgole o un altro formato XML. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
+**XSLT** è uno standard W3C (World Wide Web Consortium) per la trasformazione dei dati XML. XSLT è in genere utilizzato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo di lunghezza fissa, testo delimitato da virgole o un altro formato XML. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
 
 Per assicurarsi che non si espone una superficie di attacco, questa regola viene attivata ogni volta che il XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> istanze di combinazione non protetta di riceve <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, che consente l'elaborazione di uno script dannoso.
 

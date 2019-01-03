@@ -1,9 +1,6 @@
 ---
 title: 'Elenco di controllo: Creazione di un servizio di linguaggio Legacy | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba21cf1830f389acbcd72d5e10a688f009871b25
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821114"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Elenco di controllo: Creare un servizio di linguaggio legacy
 Elenco di controllo seguente sono riepilogati i passaggi di base è necessario eseguire per creare un servizio di linguaggio per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principale. Integrare il servizio di linguaggio in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario creare un analizzatore di espressioni di debug. Per altre informazioni, vedere [scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) nel [estendibilità del debugger Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -112,7 +109,7 @@ Elenco di controllo seguente sono riepilogati i passaggi di base è necessario e
   
 -   struttura  
   
-     Sono disponibili diverse opzioni per il supporto della struttura. Ad esempio, è possibile supportare le **Comprimi alle definizioni** comando, forniscono aree della struttura controllata dall'editor o supportare le aree di gestito dal client. Per altre informazioni, vedere [procedura: fornire supporto per la struttura espanso in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+     Sono disponibili diverse opzioni per il supporto della struttura. Ad esempio, è possibile supportare le **Comprimi alle definizioni** comando, forniscono aree della struttura controllata dall'editor o supportare le aree di gestito dal client. Per altre informazioni, vedere [Procedura: Fornire supporto per la struttura espanso in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 -   Registrazione del servizio di linguaggio  
   

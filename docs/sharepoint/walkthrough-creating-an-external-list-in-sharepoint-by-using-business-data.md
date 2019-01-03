@@ -1,13 +1,8 @@
 ---
-title: 'Procedura dettagliata: Creazione di un elenco esterno in SharePoint utilizzando i dati aziendali | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione di un elenco esterno in SharePoint con i dati aziendali | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918784"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business
 
@@ -125,7 +120,7 @@ Il **Business Data Connectivity Model** progetto aggiunge un'entità predefinita
 
 Aggiungere un'entità nel modello. È possibile aggiungere le entità da Visual Studio **casella degli strumenti** nella finestra di progettazione integrazione applicativa dei dati.
 
-1. Nella barra dei menu, scegliere **View** > **casella degli strumenti**.
+1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
 
 2. Nel **BusinessDataConnectivity** scheda della finestra del **della casella degli strumenti**, aggiungere un' **entità** nella finestra di progettazione integrazione applicativa dei dati.
 
@@ -275,9 +270,9 @@ Quando si esegue il progetto, viene aperto il sito di SharePoint e Visual Studio
 
 Altre informazioni su come progettare modelli per il servizio di integrazione applicativa dei dati in SharePoint, vedere gli argomenti seguenti:
 
-- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).
-- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md).
-- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).
+- [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).
+- [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md).
+- [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,9 +1,6 @@
 ---
-title: Contesto del progetto | Documenti Microsoft
-ms.custom: ''
+title: Contesto del progetto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f52260d63088d7673322f3c42d43d00184a9af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92a0f875e51b0cb9ff968bf93b8a0877b14149c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990149"
 ---
-# <a name="project-context"></a>Contesto del progetto
-Quando l'utente aggiunge o funziona con i progetti ed elementi di progetto, l'IDE Usa il concetto di contesto del progetto per determinare come le varie operazioni devono essere eseguite.  
+# <a name="project-context"></a>Contesto di progetto
+Quando l'utente aggiunge o si funziona con i progetti ed elementi del progetto, l'IDE Usa il concetto di contesto del progetto per determinare come le varie operazioni devono essere eseguite.  
   
- In genere, i file sono gli oggetti di progetto standard creati dall'utente in modo esplicito selezionando il **nuovo progetto** comando o messo a disposizione selezionando il **Apri progetto** comando il  **File** menu. In questi casi, i file vengono creati e aperto nel contesto di un progetto e il tipo di progetto definisce il contesto per la modifica del documento.  
+ In genere, i file sono gli oggetti di progetto standard che l'utente crea in modo esplicito selezionando il **nuovo progetto** comando o rende disponibile selezionando il **aprire il progetto** comando il  **File** menu. In questi casi, i file vengono creati e aperti nel contesto di un progetto e il tipo di progetto definisce il contesto per la modifica del documento.  
   
- Alcuni progetti forniscono un contesto molto dettagliato. Ad esempio, il progetto gestisce un spazio dei nomi con ambito di progetto a livello di codice o una connessione con ambito di progetto di database per l'associazione dati. L'utente può spesso aprire file o le connessioni al database direttamente tramite un oggetto di progetto specifico, ad esempio un elemento di progetto visualizzato in Esplora soluzioni.  
+ Alcuni progetti forniscono un contesto molto avanzato. Ad esempio, il progetto gestisce una connessione di database con ambito di progetto per il data binding o dello spazio dei nomi con ambito di progetto a livello di codice. L'utente può spesso aprire i file o le connessioni al database direttamente tramite un oggetto particolare progetto, ad esempio un elemento del progetto visualizzato in Esplora soluzioni.  
   
- In altri casi, il contesto dell'elemento non viene specificato in modo esplicito. Ad esempio, il contesto di un elemento non è disponibile quando l'utente apre un file selezionando il **aprire i File esistenti** comando il **File** menu quando il debugger viene eseguito su un file, o quando l'utente fa clic il **Cerca nei file** comando il **Trova e sostituisci** la finestra di dialogo. Per gestire queste situazioni, le chiamate IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> per gestire il processo di individuazione il progetto migliore per aprire un documento.  
+ In altri momenti, il contesto del progetto di un elemento non è specificato in modo esplicito. Ad esempio, il contesto di un elemento non è disponibile quando l'utente apre un file, selezionare il **aprire il File esistente** comando il **File** menu, durante il debug viene eseguito in un file o quando l'utente fa clic di **Cerca nei file** comando le **Trova e sostituisci** nella finestra di dialogo. Per gestire queste situazioni, le chiamate IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> per gestire il processo di individuazione il migliore progetto per aprire un documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Priorità del progetto](../../extensibility/internals/project-priority.md)   

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: utilizzare a livello di programmazione le finestre di dialogo predefinite in Word'
-ms.custom: ''
+title: 'Procedura: A livello di codice usare finestre di dialogo predefinite in Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829063"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procedura: utilizzare a livello di programmazione le finestre di dialogo predefinite in Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procedura: A livello di codice usare finestre di dialogo predefinite in Word
   Quando si lavora con Microsoft Office Word, esistono casi è necessario per visualizzare le finestre di dialogo per l'input utente. È possibile crearne uno, è opportuno anche di adottare l'approccio dell'uso di finestre di dialogo predefinite in Word, esposti nel <xref:Microsoft.Office.Interop.Word.Dialogs> raccolta del <xref:Microsoft.Office.Interop.Word.Application> oggetto. In questo modo è possibile accedere a oltre 200 delle finestre di dialogo predefinite, rappresentati come enumerazioni.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35672430"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: utilizzare a livello di programmazione le finestre di dialogo di Word in modalità nascosta](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Procedura: A livello di codice usare le finestre di dialogo di Word in modalità nascosta](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Istruzione Option strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

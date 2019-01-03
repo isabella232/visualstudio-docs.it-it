@@ -1,9 +1,6 @@
 ---
 title: Valutazione di un'espressione di finestra Espressioni di controllo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822703"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Valutare un'espressione di finestra Espressioni di controllo
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232103"
 7.  Le chiamate di Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) per ottenere il valore dell'espressione che viene quindi visualizzato nell'elenco di espressioni di controllo.  
   
 ## <a name="parse-then-evaluate"></a>Analizzare e valutare  
- Poiché l'analisi di un'espressione complessa può richiedere molto più lunga della valutazione, il processo di valutazione di un'espressione è suddiviso in due passaggi: 1) analisi dell'espressione e 2) valuta l'espressione analizzata. In questo modo, la valutazione può verificarsi più volte, ma l'espressione deve essere analizzata una sola volta. L'espressione analizzata intermedia viene restituito dal motore di esecuzione in un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) che a sua volta è incapsulato e restituito dal DE come un' [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) oggetto. Il `IDebugExpression` oggetto rinvia valutazione di tutti i `IDebugParsedExpression` oggetto.  
+ Poiché l'analisi di un'espressione complessa può richiedere molto più lunga della valutazione, il processo di valutazione di un'espressione è suddiviso in due passaggi: 1) analisi l'espressione e 2) valuta l'espressione analizzata. In questo modo, la valutazione può verificarsi più volte, ma l'espressione deve essere analizzata una sola volta. L'espressione analizzata intermedia viene restituito dal motore di esecuzione in un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) che a sua volta è incapsulato e restituito dal DE come un' [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) oggetto. Il `IDebugExpression` oggetto rinvia valutazione di tutti i `IDebugParsedExpression` oggetto.  
   
 > [!NOTE]
 >  Non è necessario per un EE essere conformi a questo processo in due passaggi anche se Visual Studio presuppone che questa classe. l'analizzatore di Espressioni può analizzare e valutare nello stesso passaggio quando [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) viene chiamato (si tratta MyCEE funzionamento del campione, ad esempio). Se la lingua può formare espressioni complesse, è possibile separare la fase di analisi del passaggio di valutazione. Ciò può migliorare le prestazioni nel debugger di Visual Studio quando molte espressioni di controllo vengono riprodotti.  

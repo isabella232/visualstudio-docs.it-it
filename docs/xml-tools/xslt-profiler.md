@@ -2,7 +2,6 @@
 title: Profiler XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 784d8f6499c1fb87b082122c08c5ea23834a45b5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 18776904fcf02ccf35a0ae73027a22e903056661
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872820"
 ---
 # <a name="xslt-profiler"></a>Profiler XSLT
 
@@ -30,4 +29,4 @@ Il Profiler XSLT è parte di Visual Studio ed è disponibile dal **XML** menu.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md)
+- [Procedura dettagliata: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

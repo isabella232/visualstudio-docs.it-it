@@ -1,13 +1,8 @@
 ---
 title: 'Procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824736"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio
   Questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenza base che incorpora l'utilizzo dei form di associazione e di avvio. Questi sono i form ASPX che abilitano i parametri per essere aggiunti a un flusso di lavoro quando è associato prima di tutto dall'amministratore di SharePoint (form di associazione) e quando il flusso di lavoro viene avviato dall'utente (form di avvio).  
@@ -453,4 +448,3 @@ ms.locfileid: "49873877"
 ## <a name="see-also"></a>Vedere anche
  [Creare soluzioni di flusso di lavoro di SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  

@@ -1,13 +1,8 @@
 ---
 title: 'Procedura dettagliata: Distribuzione di una definizione di elenco attività di progetto | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826624"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procedura dettagliata: Distribuire una definizione di elenco attività di progetto
 
@@ -143,7 +138,7 @@ Dopo aver compilato e testare l'elenco di attività di progetto, è possibile di
 
 Nella barra dei menu di Visual Studio, scegliere **compilare** > **Distribuisci soluzione**.
 
-Visual Studio viene riciclato il pool di applicazioni IIS, viene ritratta qualsiasi versione della soluzione esistente, copia il pacchetto della soluzione (*wsp*) file in SharePoint e quindi attiva le relative funzionalità. È ora possibile usare la soluzione in SharePoint. Per altre informazioni sui passaggi di configurazione di distribuzione, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio viene riciclato il pool di applicazioni IIS, viene ritratta qualsiasi versione della soluzione esistente, copia il pacchetto della soluzione (*wsp*) file in SharePoint e quindi attiva le relative funzionalità. È ora possibile usare la soluzione in SharePoint. Per altre informazioni sui passaggi di configurazione di distribuzione, vedere [come: Modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Per distribuire l'elenco di attività di progetto in un sistema remoto
 
@@ -175,7 +170,7 @@ Altre informazioni su come personalizzare e distribuire soluzioni di SharePoint 
 
 - [Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
+- [Procedura: Creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Windows PowerShell per SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 

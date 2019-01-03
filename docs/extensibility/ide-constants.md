@@ -1,8 +1,6 @@
 ---
 title: Costanti dell'IDE | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
@@ -18,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 337d5dd0e8a167bd4e49f084d819eb4c1145c6a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837472"
 ---
 # <a name="ide-constants"></a>Costanti dell'IDE
 
@@ -31,7 +29,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 
 ## <a name="logical-and-physical-views"></a>Visualizzazioni logiche e fisiche
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` i gestori devono passare il valore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere il **aperta con** finestra di dialogo, in questo caso le visualizzazioni di codice possibili.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` i gestori di passano questo valore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere il **Apri con** finestra di dialogo, in questo caso popolata con eventuali <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> visualizzazioni che eseguono il mapping alla stessa visualizzazione di debug <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|
@@ -51,7 +49,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 
 ## <a name="visual-studio-errors"></a>Errori di Visual Studio
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Costante restituita dalle interfacce al comportamento asincrono quando l'oggetto in questione in già in uso|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Un errore HRESULT specifico di Visual Studio per "dati del documento incompatibili".|
@@ -94,7 +92,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 ## <a name="vsselelemid"></a>VSSELELEMID
  Costanti usate per indicare un nuovo stato di selezione.
 
-|Costante|Valore|
+|Costante|Value|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|

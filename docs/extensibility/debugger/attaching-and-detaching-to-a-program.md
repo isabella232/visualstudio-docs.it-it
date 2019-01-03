@@ -1,9 +1,6 @@
 ---
 title: Collegamento e scollegamento da un programma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd47e214492f0888d7780f8aef5944cdcdeb2591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7576b3c80ff80ec0c26234cf43682aca19a96a7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841599"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Collegamento e scollegamento da un programma
 Per collegare il debugger richiede l'invio di sequenza corretta di metodi ed eventi con gli attributi appropriati.  

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: visualizzare a livello di programmazione commenti in un foglio di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione visualizzare commenti in un foglio di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831563"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Procedura: visualizzare a livello di programmazione commenti in un foglio di lavoro
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Procedura: A livello di programmazione visualizzare commenti in un foglio di lavoro
   A livello di codice è possibile visualizzare e nascondere i commenti nei fogli di lavoro di Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,7 +41,5 @@ ms.locfileid: "35257686"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: aggiungere ed eliminare commenti in foglio di lavoro a livello di codice](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
+ [Procedura: Aggiungere ed eliminare commenti in foglio di lavoro a livello di codice](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

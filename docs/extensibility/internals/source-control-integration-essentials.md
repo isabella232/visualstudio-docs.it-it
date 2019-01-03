@@ -1,9 +1,6 @@
 ---
 title: Origine controllo integrazione Essentials | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4533cac0ba6cbbcf5cf4354afdb29eefc5b2b726
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f73ac76c8b6b8cf96e447d072b7d8b73611bb6e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828368"
 ---
 # <a name="source-control-integration-essentials"></a>Nozioni fondamentali sull'integrazione del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di integrazione del controllo codice sorgente: un controllo del codice sorgente del plug-in che fornisce funzionalità di base e viene creato usando l'API dei plug-in del controllo origine (precedentemente noto come API MSSCCI) e una soluzione di integrazione del controllo codice sorgente basato sul pacchetto VSPackage che fornisce la funzionalità più affidabili.  
@@ -32,7 +29,7 @@ ms.locfileid: "49879168"
   
 1. Creare una DLL che implementa le funzioni specificate nei [Plug-in controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrare la DLL, rendendo le voci del Registro di sistema appropriato, come descritto in [procedura: installare un plug-in controllo sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Registrare la DLL, rendendo le voci del Registro di sistema appropriato, come descritto in [come: Installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
 3. Creare un helper dell'interfaccia utente e visualizzarlo quando richiesto dal pacchetto di scheda di controllo di origine (il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componente che gestisce la funzionalità di controllo sorgente tramite plug-in controllo codice sorgente).  
   

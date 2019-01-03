@@ -1,9 +1,6 @@
 ---
 title: Funzione SccCheckin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccCheckin
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e63c9d8875bb222bf0ab1c161b4437de7466dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d86530497620dfab79490e6128cff29cb2fb2d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822862"
 ---
 # <a name="scccheckin-function"></a>Funzione SccCheckin
 Questa funzione controlla nei file precedentemente estratti al sistema di controllo di origine, le modifiche e la creazione di una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.  
@@ -71,7 +68,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico. File non è stato archiviato.|  
 |SCC_E_NOTCHECKEDOUT|L'utente non è estratto il file, in modo che non è possibile eseguirne l'archiviazione.|  
-|SCC_E_CHECKINCONFLICT|Check-in non può essere eseguita perché:<br /><br /> -Un altro utente è stata archiviata direttamente e `bAutoReconcile` fosse falsa.<br /><br /> oppure<br /><br /> -Il merge automatico non può essere eseguito (ad esempio, quando i file sono: binari).|  
+|SCC_E_CHECKINCONFLICT|Check-in non può essere eseguita perché:<br /><br /> -Un altro utente è stata archiviata direttamente e `bAutoReconcile` fosse falsa.<br /><br /> -oppure-<br /><br /> -Il merge automatico non può essere eseguito (ad esempio, quando i file sono: binari).|  
 |SCC_E_VERIFYMERGE|File è stata unita automatico ma non è stato archiviato attesa di verifica dell'utente.|  
 |SCC_E_FIXMERGE|File è stata unita automatico ma non è stato archiviato a causa di un conflitto di merge che deve essere risolti manualmente.|  
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|  

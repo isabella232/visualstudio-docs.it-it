@@ -1,9 +1,6 @@
 ---
 title: Importazioni dell'editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893931"
 ---
 # <a name="editor-imports"></a>Importazioni dell'editor
 È possibile importare un numero di servizi di editor, le factory e Broker che forniscono l'estensione con diversi tipi di accesso per l'editor principale. Ad esempio, è possibile importare il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> per un determinato tipo di contenuto. (Questo strumento di spostamento consente che eseguire diversi tipi di ricerche in un buffer di testo).  
@@ -45,19 +42,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Per altri esempi dell'uso di importazioni, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Creazione di un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Procedura dettagliata: Creare un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [Procedura dettagliata: Personalizzare la visualizzazione di testo](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Procedura dettagliata: Evidenziazione testo](../extensibility/walkthrough-highlighting-text.md)  
+ [Procedura dettagliata: Testo evidenziato](../extensibility/walkthrough-highlighting-text.md)  
   
- [Procedura dettagliata: Visualizzazione rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procedura dettagliata: Visualizzare le descrizioni comando informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Procedura dettagliata: Aggiunta di supporto per la firma](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Procedura dettagliata: Visualizzare la Guida di firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procedura dettagliata: Visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procedura dettagliata: visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Procedura dettagliata: Visualizzazione di suggerimenti con lampadina](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [Procedura dettagliata: Visualizzare suggerimenti con lampadina](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="import-the-service-provider"></a>Importare il provider di servizi  
  È anche possibile importare un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (trovato nell'assembly Microsoft.VisualStudio.Shell.Immutable.10.0) nello stesso modo per ottenere l'accesso ai servizi di Visual Studio:  
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Visualizzare [procedura dettagliata: accedere all'oggetto DTE da un'estensione dell'editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) per altre informazioni.  
+ Vedere [Procedura dettagliata: Accedere all'oggetto DTE da un'estensione dell'editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) per altre informazioni.  
   
 ## <a name="services"></a>Servizi  
  Editor servizi sono in genere singole entità che forniscono un servizio e vengono condivise tra più componenti.  

@@ -2,7 +2,6 @@
 title: 'CA1715: Gli identificatori devono contenere il prefisso corretto'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1715
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad2e867b40bd8fc05215e7bb1d905a7d079eecf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c7abdaa2356bdf622f0892e9b027047fc021096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912925"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 
@@ -39,7 +38,7 @@ ms.locfileid: "49879845"
 ## <a name="cause"></a>Causa
  Il nome di un'interfaccia visibile esternamente non inizia con una "I" maiuscola.
 
- oppure
+ -oppure-
 
  Il nome di un parametro di tipo generico su un tipo visibile esternamente o un metodo non inizia con una maiuscola l ' '.
 

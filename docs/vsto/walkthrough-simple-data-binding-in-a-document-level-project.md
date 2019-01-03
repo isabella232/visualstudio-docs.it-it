@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Data binding semplice in un progetto a livello di documento'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895493"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding semplice in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding in un progetto a livello di documento. Un singolo campo dati in un database di SQL Server è associato a un intervallo denominato in Microsoft Office Excel. La procedura dettagliata illustra inoltre come aggiungere i controlli che consentono di scorrere tutti i record nella tabella.  
@@ -57,7 +54,7 @@ ms.locfileid: "49824379"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1. Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding semplice**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding semplice**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Data Binding semplice** progetto al **Esplora soluzioni**.  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824379"
 ## <a name="next-steps"></a>Passaggi successivi  
  Questa procedura dettagliata illustra le nozioni di base di associazione di un intervallo denominato a un campo in un database. Ecco alcune possibili attività successive:  
   
--   Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [procedura: memorizzare nella Cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Associare le celle a più colonne in una tabella, invece di un singolo campo. Per altre informazioni, vedere [procedura dettagliata: data binding complesso in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Associare le celle a più colonne in una tabella, invece di un singolo campo. Per altre informazioni, vedere [Procedura dettagliata: Data binding complesso in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Usare un <xref:System.Windows.Forms.BindingNavigator> per scorrere i record di controllo. Per altre informazioni, vedere [procedura: esplorare i dati con il controllo BindingNavigator di Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Usare un <xref:System.Windows.Forms.BindingNavigator> per scorrere i record di controllo. Per altre informazioni, vedere [Procedura: Esplorare i dati con il controllo BindingNavigator di Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)   
  [Procedura dettagliata: Data binding complesso in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

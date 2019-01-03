@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Dati della cache in un documento protetto da password'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968417"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: Dati della cache in un documento protetto da password
   Se si aggiungono dati alla cache dei dati in un documento o cartella di lavoro è protetto con una password, è possibile che le modifiche ai dati memorizzati nella cache non vengono salvate automaticamente. È possibile salvare le modifiche apportate ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.  
@@ -80,5 +77,3 @@ ms.locfileid: "53647291"
  [Dati della cache](../vsto/caching-data.md)   
  [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Procedura: Memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
-  
-  

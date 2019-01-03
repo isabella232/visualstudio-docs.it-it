@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 2 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913936"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di elemento in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.  
   
- In questa procedura dettagliata si aggiungerà una procedura guidata per l'elemento di progetto azione personalizzata che è illustrata nel [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando un utente aggiunge un elemento di progetto azione personalizzata a un progetto SharePoint, la procedura guidata raccoglie informazioni sull'azione personalizzata (ad esempio la posizione e l'URL a cui passare quando un utente finale sceglie) e aggiunge queste informazioni per il *Elements. XML* file nel nuovo elemento di progetto.  
+ In questa procedura dettagliata si aggiungerà una procedura guidata per l'elemento di progetto azione personalizzata che viene illustrata in [procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando un utente aggiunge un elemento di progetto azione personalizzata a un progetto SharePoint, la procedura guidata raccoglie informazioni sull'azione personalizzata (ad esempio la posizione e l'URL a cui passare quando un utente finale sceglie) e aggiunge queste informazioni per il *Elements. XML* file nel nuovo elemento di progetto.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296242"
 >  È possibile scaricare un esempio dal [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) che mostra come creare attività personalizzate per un flusso di lavoro.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per eseguire questa procedura dettagliata, è innanzitutto necessario creare la soluzione CustomActionProjectItem completando [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Per eseguire questa procedura dettagliata, è innanzitutto necessario creare la soluzione CustomActionProjectItem completando [procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Sono inoltre necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296242"
   
   Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
-- Procedure guidate per i modelli di progetto ed elemento in Visual Studio. Per altre informazioni, vedere [procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.  
+- Procedure guidate per i modelli di progetto ed elemento in Visual Studio. Per altre informazioni, vedere [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.  
   
 - Azioni personalizzate in SharePoint. Per altre informazioni, vedere [l'azione personalizzata](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Creare il progetto della procedura guidata
- Per completare questa procedura dettagliata, è necessario aggiungere un progetto alla soluzione creata in CustomActionProjectItem [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Si implementeranno i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia e definire la procedura guidata dell'interfaccia utente in questo progetto.  
+ Per completare questa procedura dettagliata, è necessario aggiungere un progetto alla soluzione creata in CustomActionProjectItem [procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Si implementeranno i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia e definire la procedura guidata dell'interfaccia utente in questo progetto.  
   
 #### <a name="to-create-the-wizard-project"></a>Per creare il progetto della procedura guidata  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296242"
   
 2.  Nel **Progettazione progetti**, assicurarsi che il framework di destinazione sia impostato su .NET Framework 4.5.  
   
-     Per i progetti Visual c#, è possibile impostare questo valore sul **applicazione** scheda. Per i progetti Visual Basic, è possibile impostare questo valore sul **Compile** scheda. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Per i progetti Visual c#, è possibile impostare questo valore sul **applicazione** scheda. Per i progetti Visual Basic, è possibile impostare questo valore sul **Compile** scheda. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  Nel **ItemTemplateWizard** del progetto, aggiungere un **finestra (WPF)** elemento al progetto e quindi denominare l'elemento **nome WizardWindow**.  
   
@@ -349,6 +346,5 @@ ms.locfileid: "51296242"
  [Definire tipi di elemento di progetto SharePoint personalizzati](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creare modelli di elementi e modelli di progetto per elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Riferimenti allo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Gli ID e i percorsi predefiniti azione personalizzata](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

@@ -1,8 +1,7 @@
 ---
-title: 'Procedura dettagliata: eseguire il debug di un foglio di stile XSLT'
+title: 'Procedura dettagliata: debug di un foglio di stile XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e8f8700690a2ae74fcc91384fb77b238ea33
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e1b568f89172701bf31806f693d1d1fd95d64310
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902519"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: Debug di un foglio di stile XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT
 
 Nei passaggi della procedura dettagliata viene illustrato come usare il debugger XSLT. I passaggi comprendono la visualizzazione delle variabili, l'impostazione dei punti di interruzione e l'esecuzione del codice un'istruzione alla volta. Nel foglio di stile vengono elencati tutti i libri con prezzo inferiore a quello del libro medio.
 
@@ -31,25 +30,25 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
 
 ### <a name="to-start-debugging"></a>Per avviare il debug
 
-1.  Dal **File** dal menu **aprire**, fare clic su **File**.
+1.  Dal **File** dal menu **Open**, fare clic su **File**.
 
-2.  Individuare il *belowAvg* del file e fare clic su **Apri**.
+2.  Individuare il *belowAvg* del file e fare clic su **Open**.
 
      Il foglio di stile viene aperto nell'editor XML.
 
-3.  Fare clic sul pulsante Sfoglia (**...** ) nei **Input** campo della finestra delle proprietà del documento.
+3.  Fare clic sul pulsante Sfoglia (**...** ) sul **Input** campo della finestra delle proprietà del documento.
 
-4.  Individuare il *Books* del file e fare clic su **Apri**.
+4.  Individuare il *books. XML* del file e fare clic su **Open**.
 
      In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.
 
-5.  Fare doppio clic su di `xsl:if` tag di inizio, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.
+5.  Fare doppio clic il `xsl:if` tag di inizio, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.
 
-6.  Fare clic su di **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.
+6.  Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.
 
 Verrà avviato il processo di debug e verranno aperte diverse nuove finestre usate dal debugger.
 
-In due finestre vengono visualizzati il documento di input e il foglio di stile. Il debugger usa queste finestre per mostrare lo stato di esecuzione corrente Il debugger è posizionato in corrispondenza di `xsl:if` elemento del foglio di stile e sul primo nodo libro nel *Books* file.
+In due finestre vengono visualizzati il documento di input e il foglio di stile. Il debugger usa queste finestre per mostrare lo stato di esecuzione corrente Il debugger è posizionato in corrispondenza di `xsl:if` elemento del foglio di stile e nel primo nodo libro nel *books. XML* file.
 
 Il **variabili locali** finestra Visualizza tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
 
@@ -59,15 +58,15 @@ Il **Output XSL** finestra Visualizza l'output della trasformazione XSL. Questa 
 
 ### <a name="to-use-the-watch-window"></a>Per usare la finestra Espressioni di controllo
 
-1.  Dal **Debug** dal menu **Windows**, scegliere **espressioni di controllo**, fare clic su **controllo1**.
+1.  Dal **Debug** dal menu **Windows**, scegliere **Watch**e fare clic su **Watch1**.
 
-     In questo modo, il **controllo1** finestra visibile.
+     In questo modo il **espressioni di controllo 1** finestra visibile.
 
-2.  Tipo di `$bookAverage` nella **nome** campo e premere **invio**.
+2.  Tipo di `$bookAverage` nella **Name** campo e premere **invio**.
 
      Il valore della variabile `$bookAverage` viene visualizzato nella finestra.
 
-3.  Tipo di `self::node()` nella **nome** campo e premere **invio**.
+3.  Tipo di `self::node()` nella **Name** campo e premere **invio**.
 
      `self::node()` è un'espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.
 
@@ -82,15 +81,15 @@ Il **Output XSL** finestra Visualizza l'output della trasformazione XSL. Questa 
 
 1.  Premere **F5** per continuare.
 
-     Poiché il primo nodo libro soddisfatti il `xsl:if` condizione, il nodo libro viene aggiunto per il **Output XSL** finestra. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul secondo nodo libro nel *Books* file.
+     Poiché il primo nodo libro soddisfatti il `xsl:if` condizione, il nodo libro viene aggiunto per il **Output XSL** finestra. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul secondo nodo libro nel *books. XML* file.
 
-     Nel **controllo1** finestra di `self::node()` valore viene modificato nel secondo nodo libro. Analizzando il valore dell'elemento prezzo, è possibile determinare che il prezzo è maggiore del prezzo medio e che pertanto la condizione `xsl:if` non dovrebbe essere eseguita correttamente.
+     Nel **Watch1** finestra di `self::node()` cambia di valore nel secondo nodo libro. Analizzando il valore dell'elemento prezzo, è possibile determinare che il prezzo è maggiore del prezzo medio e che pertanto la condizione `xsl:if` non dovrebbe essere eseguita correttamente.
 
 2.  Premere **F5** per continuare.
 
-     Poiché il secondo nodo libro non soddisfa il `xsl:if` condizione, il nodo libro non viene aggiunto per il **Output XSL** finestra. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul terzo `book` nodo il *Books* file.
+     Poiché il secondo nodo libro non soddisfa il `xsl:if` condizione, il nodo libro non viene aggiunto per il **XSL Output** finestra. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul terzo `book` nodo il *books. XML* file.
 
-     Nel **controllo1** finestra di `self::node()` valore viene modificato nel terzo nodo libro. Analizzando il valore dell'elemento `price`, è possibile determinare che il prezzo è inferiore al prezzo medio e che pertanto la condizione `xsl:if` dovrebbe essere eseguita correttamente.
+     Nel **Watch1** finestra di `self::node()` valore viene modificato nel terzo nodo libro. Analizzando il valore dell'elemento `price`, è possibile determinare che il prezzo è inferiore al prezzo medio e che pertanto la condizione `xsl:if` dovrebbe essere eseguita correttamente.
 
 3.  Premere **F5** per continuare.
 

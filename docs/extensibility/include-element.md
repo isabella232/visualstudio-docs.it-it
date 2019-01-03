@@ -1,9 +1,6 @@
 ---
 title: L'elemento di inclusione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Include
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed632610f0d6bcbf8da6e7788add001740ea446
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830336"
 ---
 # <a name="include-element"></a>L'elemento di inclusione
 L'elemento di inclusione specifica un file che può essere individuato fornito percorso per l'inserimento nel file corrente di inclusione.  Tutti i simboli e i tipi definiti diventerà parte del risultato compilato.  

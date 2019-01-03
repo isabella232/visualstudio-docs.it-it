@@ -1,9 +1,6 @@
 ---
 title: Estensione delle proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846585"
 ---
 # <a name="extend-properties"></a>Estendere le proprietà
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **delle proprietà** finestra è un visualizzatore proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. Il **delle proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
@@ -66,4 +63,4 @@ Finestra Proprietà
  Viene spiegato come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce in modo efficiente gli elementi, ad esempio i riferimenti, le connessioni dati, cartelle e file necessari per l'attività di sviluppo tramite soluzioni e progetti.  
   
  [Estendere altre parti di Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Viene illustrato come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per creare elementi dell'interfaccia utente che corrispondono al resto dei servizi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Spiega come usare i servizi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per creare elementi dell'interfaccia utente che corrispondono al resto di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

@@ -1,9 +1,6 @@
 ---
-title: Information rights management e Cenni preliminari sulle estensioni di codice gestito
-ms.custom: ''
+title: Information rights management e panoramica sulle estensioni di codice gestito
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,33 +17,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35a118774d50bcc697cd3ff5663fc26d8580ac88
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a2020221ee086b23a8621112122acffb11beef62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823830"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Information rights management e Cenni preliminari sulle estensioni di codice gestito
-  Microsoft Office Word e Microsoft Office Excel forniscono Information Rights Management (IRM), una funzionalità che consentono di evitare che utenti non autorizzati di visualizzare o modificare le informazioni riservate. Per informazioni dettagliate sul funzionamento di Information Rights Management, vedere la Guida dell'applicazione di Office specifica.  
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Information rights management e panoramica sulle estensioni di codice gestito
+  Microsoft Office Word e Microsoft Office Excel forniscono Information Rights Management (IRM), una funzionalità che contribuisce di evitare che utenti non autorizzati di visualizzare o modificare le informazioni riservate. Per informazioni dettagliate sul funzionamento di Information Rights Management, vedere la Guida nell'applicazione di Office specifiche.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 ## <a name="run-code-behind-documents-with-restricted-permissions"></a>Eseguire il codice sottostante i documenti con autorizzazioni limitate  
- Se la soluzione contiene un documento o una cartella di lavoro che utilizza IRM, per impostazione predefinita, Word ed Excel che consentono di eseguire qualsiasi codice. Se l'autore del documento o di accesso controllo completo, è possibile modificare il valore predefinito in modo che la soluzione funzioni. Per altre informazioni, vedere [procedura: consentire potrebbe eseguire codice sottostante i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+ Se la soluzione contiene un documento o cartella di lavoro che utilizza il servizio IRM, per impostazione predefinita, Word ed Excel che consentono di eseguire qualsiasi codice. Se l'autore del documento o di accesso con controllo completo, è possibile modificare il valore predefinito in modo che la soluzione funzioni. Per altre informazioni, vedere [Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
- IRM impedisce l'uso di <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> per recuperare o modificare i dati memorizzati nella cache del documento.  
+ Impedisce l'uso di IRM <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> da recuperare o modificare i dati memorizzati nella cache del documento.  
   
 ## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Agli utenti finali di limitare le autorizzazioni per documenti che usano le estensioni di codice gestito  
- Chiunque abbia accesso completo alla cartella di lavoro o al documento nella soluzione possa utilizzare IRM per limitare le autorizzazioni. Ad esempio, se un utente finale del reparto contabilità Usa una soluzione che popola automaticamente un foglio di lavoro con i dati da un database, potrebbe essere che l'utente consentire la modifica accesso solo agli utenti del proprio reparto e accesso in lettura ad altri utenti. Quando l'utente aggiunge le autorizzazioni limitate, per impostazione predefinita, non è possibile eseguire il code-behind del foglio di lavoro e il foglio di lavoro non verrà popolato con dati.  
+ Chiunque abbia accesso controllo completo per il documento o la cartella di lavoro della soluzione può usare IRM per limitare le autorizzazioni. Ad esempio, se un utente finale nel reparto contabilità Usa una soluzione che popola automaticamente un foglio di lavoro con i dati da un database, che l'utente potrebbe essere necessario consentire la modifica accesso solo agli utenti del proprio reparto e accesso in lettura ad altri utenti. Quando l'utente aggiunge le autorizzazioni limitate, per impostazione predefinita, non è possibile eseguire il code-behind del foglio di lavoro e il foglio di lavoro non viene popolato con i dati.  
   
- Per risolvere il problema, un utente con accesso completo alla cartella di lavoro o al documento necessario modificare le impostazioni di autorizzazione predefinita per consentire l'accesso programmatico al modello a oggetti. Per altre informazioni, vedere [procedura: consentire potrebbe eseguire codice sottostante i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+ Per risolvere il problema, un utente con accesso con controllo completo al documento o cartella di lavoro è necessario modificare le impostazioni di autorizzazione predefiniti per consentire l'accesso a livello di codice per il modello a oggetti. Per altre informazioni, vedere [Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
- [Protezione con password nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
+ [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
+ [Password di protezione nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  
+ [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  

@@ -2,7 +2,6 @@
 title: 'CA1823: Evitare campi privati non utilizzati'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedPrivateFields
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9ef0e63e13ab6e05025ef1a24c4032feb5eacd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5610e97b623c21a7a0f380e9f2e070400e0aefc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873236"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitare campi privati non utilizzati
 
@@ -47,8 +46,8 @@ ms.locfileid: "49923706"
 ## <a name="related-rules"></a>Regole correlate
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Controllare i parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitare il codice privato](../code-quality/ca1811-avoid-uncalled-private-code.md)

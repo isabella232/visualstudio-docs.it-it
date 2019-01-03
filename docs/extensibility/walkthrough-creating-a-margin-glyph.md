@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creazione di un glifo del margine | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac8d70c401d543afe73ac14d6f8617e5f375482
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851352"
 ---
-# <a name="walkthrough-create-a-margin-glyph"></a>Procedura dettagliata: Creazione di un glifo del margine
+# <a name="walkthrough-create-a-margin-glyph"></a>Procedura dettagliata: Creare un glifo del margine
 È possibile personalizzare l'aspetto dei margini dell'editor tramite le estensioni dell'editor personalizzato. Questa procedura dettagliata inserisce un'icona personalizzata sul margine indicatore ogni volta che viene visualizzata la parola "todo" in un commento del codice.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -28,7 +25,7 @@ ms.locfileid: "39497817"
   
 ## <a name="create-a-mef-project"></a>Creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `TodoGlyphTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `TodoGlyphTest`.  
   
 2.  Aggiungere un elemento di progetto di classificatore Editor. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -39,7 +36,7 @@ ms.locfileid: "39497817"
   
 ### <a name="to-define-the-glyph"></a>Per definire il glifo  
   
-1.  Aggiungere un file di classe e denominarla `TodoGlyphFactory`.  
+1.  Aggiungere un file di classe e assegnargli il nome `TodoGlyphFactory`.  
   
 2.  Aggiungere quanto segue usando dichiarazioni.  
   

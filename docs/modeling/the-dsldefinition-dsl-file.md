@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869255"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -97,7 +96,7 @@ In genere, lo spazio dei nomi dell'elemento a cui viene fatto riferimento (in qu
 
 Il sistema dei moniker richiede elementi di pari livello con nomi distinti nell'albero XML. Per questo motivo, se si tenta di salvare una definizione di linguaggio specifico di dominio che ha ad esempio due classi con lo stesso nome, si verificano errori di convalida. È sempre necessario correggere gli errori di nome duplicato prima di salvare il file DslDefinition.dsl per poterlo ricaricare senza errori in seguito.
 
-Ogni tipo ha un moniker specifico: DomainClassMoniker, DomainRelationshipMoniker e così via.
+Ogni tipo ha un proprio tipo del moniker: DomainClassMoniker, DomainRelationshipMoniker e così via.
 
 ## <a name="types"></a>Tipi
 
@@ -228,7 +227,7 @@ La relazione Connection collega ad esempio i membri della classe OutPort a quell
 
 Ogni relazione contiene ruoli di origine e di destinazione con i seguenti attributi:
 
--   L'attributo `RolePlayer` fa riferimento alla classe di dominio delle istanze collegate: OutPort per l'origine e InPort per la destinazione.
+-   Il `RolePlayer` attributo fa riferimento alla classe di dominio delle istanze collegate: OutPort per l'origine, InPort per la destinazione.
 
 -   L'attributo `Multiplicity` ha quattro valori possibili: ZeroMany, ZeroOne, One e OneMany. Questo attributo fa riferimento al numero di collegamenti di questa relazione che possono essere associati a un assegnatario di ruolo.
 

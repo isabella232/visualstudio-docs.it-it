@@ -1,9 +1,6 @@
 ---
-title: IDebugEvent2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff8be869bd65def16ca0519f7c87ea82320bb99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870164"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Questa interfaccia viene utilizzata per comunicare le informazioni di debug critici, ad esempio l'interruzione in corrispondenza di un punto di interruzione sia le informazioni non critiche, ad esempio un messaggio di debug.  
+Questa interfaccia viene utilizzata per comunicare informazioni di debug critiche, ad esempio l'interruzione in corrispondenza di un punto di interruzione sia informazioni non critiche, ad esempio un messaggio di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +29,10 @@ IDebugEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il motore di debug (DE) e un fornitore di porta personalizzato implementare questa interfaccia per l'oggetto stesso come tutte le altre interfacce di eventi.  
+ Il motore di debug (DE) e il fornitore di porte personalizzato implementare questa interfaccia nello stesso oggetto come tutte le altre interfacce di eventi.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Tramite l'interfaccia argomento ID (IID) specificato per [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) o [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), gestore di sessione di debug (SDM) chiama [QueryInterface](/cpp/atl/queryinterface) sul `IDebugEvent2` interfaccia da ottenere l'interfaccia di eventi appropriata.  
+ Usando l'interfaccia argomento ID (IID) assegnato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) o [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), gestore di sessione di debug (SDM) chiama [QueryInterface](/cpp/atl/queryinterface) nel `IDebugEvent2` interfaccia per ottenere l'interfaccia di eventi appropriato.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugEvent2`.  
@@ -45,12 +42,12 @@ IDebugEvent2 : IUnknown
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Ottiene gli attributi per questo evento di debug.|  
   
 ## <a name="remarks"></a>Note  
- Interfacce dell'evento più specifico, ad esempio [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), non derivano dall'interfaccia IDebugEvent2 ma vengono invece implementate come un'interfaccia separata sullo stesso oggetto come `IDebugEvent2`.  
+ Interfacce dell'evento più specifico, ad esempio [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), non derivano dall'interfaccia IDebugEvent2 ma vengono invece implementati come un'interfaccia separata sullo stesso oggetto come `IDebugEvent2`.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

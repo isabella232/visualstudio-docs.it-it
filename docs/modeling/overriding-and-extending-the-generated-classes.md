@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929280"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Override ed estensione delle classi generate
 
@@ -92,6 +91,6 @@ L'archivio di modellazione fornisce un meccanismo di eventi che è possibile usa
 
 È possibile sottoscrivere alcuni eventi sulle forme. Ad esempio, è possibile restare in ascolto per clic del mouse su una forma. È necessario scrivere codice che sottoscrive l'evento per ogni oggetto. Questo codice può essere scritto in un override di InitializeInstanceResources().
 
-Alcuni eventi vengono generati su ShapeFields, che consentono di disegnare gli elementi Decorator su una forma. Per un esempio, vedere [procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Alcuni eventi vengono generati su ShapeFields, che consentono di disegnare gli elementi Decorator su una forma. Per un esempio, vedere [come: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 In genere non si verificano tali eventi in una transazione. È necessario creare una transazione se si desidera apportare modifiche nell'archivio.

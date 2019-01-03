@@ -1,9 +1,6 @@
 ---
 title: Aggiunta dinamica di voci di Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69a6b50702f444064715e08b31a1b014f8a1028f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ddbab3be089d022b85383cb123734546249b376e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823354"
 ---
 # <a name="dynamically-add-menu-items"></a>Aggiungere dinamicamente le voci di menu
 È possibile aggiungere voci di menu in fase di esecuzione, specificando il `DynamicItemStart` flag in una definizione del pulsante segnaposto nella tabella comandi di Visual Studio di comando (*vsct*) file e quindi definendo (in codice) il numero di voci di menu da visualizzare e gestione di comandi. Quando il VSPackage viene caricato, il segnaposto viene sostituito con le voci di menu dinamico.  

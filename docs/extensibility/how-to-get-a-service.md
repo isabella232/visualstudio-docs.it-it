@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: ottenere un servizio | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Ottenere un servizio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990029"
 ---
-# <a name="how-to-get-a-service"></a>Procedura: ottenere un servizio
+# <a name="how-to-get-a-service"></a>Procedura: Ottenere un servizio
 È spesso necessario ottenere i servizi di Visual Studio per accedere alle funzionalità diverse. In generale, un servizio di Visual Studio fornisce una o più interfacce che è possibile usare. È possibile ottenere la maggior parte dei servizi da un pacchetto VSPackage.  
   
  Qualsiasi pacchetto VSPackage che deriva da <xref:Microsoft.VisualStudio.Shell.Package> e che è stato individuato correttamente può richiedere qualsiasi servizio globale. Poiché il `Package` classe implementa <xref:System.IServiceProvider>, qualsiasi pacchetto VSPackage che deriva da `Package` è anche un provider di servizi.  
@@ -42,7 +39,7 @@ ms.locfileid: "49951379"
   
    ```  
   
-    Questo codice ottiene un servizio SVsActivityLog e ne esegue il cast a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaccia, che può essere usato per scrivere nel log attività. Per un esempio, vedere [procedura: usare il log attività](../extensibility/how-to-use-the-activity-log.md).  
+    Questo codice ottiene un servizio SVsActivityLog e ne esegue il cast a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaccia, che può essere usato per scrivere nel log attività. Per un esempio, vedere [come: Usare il log attività](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49951379"
   
  Il metodo statico <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodo si basa su un provider di servizi memorizzato nella cache che viene inizializzato al primo qualsiasi pacchetto VSPackage è derivato da <xref:Microsoft.VisualStudio.Shell.Package> viene individuato.  
   
- Poiché il costruttore di VSPackage viene chiamato prima che il VSPackage viene individuato, servizi globali vengono in genere non sono disponibili all'interno del costruttore di VSPackage. Visualizzare [procedura: risolvere i problemi di servizi](../extensibility/how-to-troubleshoot-services.md) per una soluzione alternativa.  
+ Poiché il costruttore di VSPackage viene chiamato prima che il VSPackage viene individuato, servizi globali vengono in genere non sono disponibili all'interno del costruttore di VSPackage. Vedere [Procedura: Risolvere i problemi di servizi](../extensibility/how-to-troubleshoot-services.md) per una soluzione alternativa.  
   
  Di seguito è riportato un esempio della modalità per ottenere un servizio in una finestra degli strumenti o un altro elemento non VSPackage.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Di seguito viene illustrato come ottenere un servizio dall'oggetto DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: fornire un servizio](../extensibility/how-to-provide-a-service.md)   
+ [Procedura: Fornire un servizio](../extensibility/how-to-provide-a-service.md)   
  [Usare e forniscono i servizi](../extensibility/using-and-providing-services.md)   
  [Nozioni fondamentali sui servizi](../extensibility/internals/service-essentials.md)
