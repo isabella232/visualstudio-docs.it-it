@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: eliminare a livello di programmazione i contatti di Outlook'
-ms.custom: ''
+title: 'Procedura: A livello di codice eliminare contatti di Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ada08de2259554c8371170214a1e00c2d928774
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5309b0ae8710d28dbdbb2a45ad1a4620d068a4d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924904"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: eliminare a livello di programmazione i contatti di Outlook
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: A livello di codice eliminare contatti di Outlook
   In questo esempio viene eliminato un contatto. L'esempio presuppone che un contatto denominato "Armando Pinto" esista nella cartella **Contatti** .  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,7 +31,5 @@ ms.locfileid: "35257170"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)   
- [Procedura: eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Procedura: accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)  
-  
-  
+ [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Procedura: Accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: a livello di codice il controllo ortografico nei fogli di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di codice il controllo ortografico nei fogli di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ea589f30c026ddf946cb43811818b54d3df9b2e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899970"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedura: a livello di codice il controllo ortografico nei fogli di lavoro
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedura: A livello di codice il controllo ortografico nei fogli di lavoro
   A livello di codice è possibile eseguire il controllo ortografico delle parole in un foglio di lavoro. La finestra di dialogo **Controllo ortografia** viene visualizzata automaticamente se si sono parole formulate in modo non corretto nel foglio di lavoro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -46,8 +43,6 @@ ms.locfileid: "35672322"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: eseguire calcoli in Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Procedura: Eseguire calcoli in Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

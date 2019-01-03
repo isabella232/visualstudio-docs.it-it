@@ -1,29 +1,28 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: definire e usare delegati di attività'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: Definire e usare delegati di attività'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916361"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908462"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: definire e utilizzare delegati di attività in Progettazione del flusso di lavoro
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: Definire e usare delegati di attività in Progettazione flussi di lavoro
 
 .NET framework 4.5 include una finestra di progettazione di out-of-box per il <xref:System.Activities.Statements.InvokeDelegate> attività. Questa finestra di progettazione può essere usata per assegnare i delegati all'attività che derivano da <xref:System.Activities.ActivityDelegate>, come <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Definire un delegato dell'attività
 
-1. In Visual Studio, selezionare **File** > **New** > **progetto**.
+1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**.
 
 2. Nel **nuovo progetto** finestra di dialogo, seleziona la **flusso di lavoro** categoria a sinistra e quindi selezionare il **applicazione Console flusso di lavoro** modello di progetto. Denominare il progetto (se lo si desidera) e fare clic su **accettabile**.
 

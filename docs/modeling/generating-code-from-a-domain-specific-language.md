@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883159"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generazione di codice da un linguaggio specifico di dominio
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente strumento per generare codice, documenti, file di configurazione e altri artefatti da dati rappresentati nei modelli. Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], è possibile creare un set di classi che rappresentano i dati, è possibile scrivere modelli di testo nelle classi i cui nomi e le proprietà riflettono i dati.
@@ -40,11 +39,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente st
 
  Fornisce informazioni di base che fa riferimento al linguaggio specifico di dominio nei modelli di testo.
 
- [Procedura dettagliata: debug di un modello di testo che accede a un modello](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [Procedura dettagliata: Debug di un modello di testo che accede a un modello](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  Viene descritto come eseguire la risoluzione dei problemi e debug su un modello di testo che fa riferimento a un linguaggio specifico di dominio.
 
- [Procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [Procedura dettagliata: Connessione di un Host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  Viene descritto come connettere un host personalizzato a un processore di direttiva generato.
 

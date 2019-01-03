@@ -1,9 +1,6 @@
 ---
 title: Funzione SccPopulateList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73cc3886fe486498f7d0fbe89d0b68cf873c9d0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b41cea5b06022764e2f05ddd32f1ed476934f691
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887776"
 ---
 # <a name="sccpopulatelist-function"></a>Funzione SccPopulateList
 Questa funzione aggiorna un elenco di file per un comando di controllo di origine specifica e fornisce lo stato del controllo origine su tutti i file specificati.  
@@ -68,7 +65,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Operazione completata.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|  

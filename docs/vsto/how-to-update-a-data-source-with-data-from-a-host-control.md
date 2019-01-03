@@ -1,9 +1,6 @@
 ---
-title: "Procedura: aggiornare un'origine dati con dati provenienti da un controllo host"
-ms.custom: ''
+title: "Procedura: Aggiornare un'origine dati con dati provenienti da un controllo host"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933022"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: aggiornare un'origine dati con dati provenienti da un controllo host
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: Aggiornare un'origine dati con dati provenienti da un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:  
   
 1. Aggiornare l'origine dati in memoria con i dati modificati nel controllo. In genere, l'origine dati in memoria è un oggetto <xref:System.Data.DataSet>, <xref:System.Data.DataTable>o un altro oggetto dati.  
@@ -119,10 +116,8 @@ ms.locfileid: "49839765"
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Salvare i dati nel database](../data-tools/save-data-back-to-the-database.md)    
  [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Procedura: scorrere i record di database in un foglio di lavoro](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [Procedura: popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Procedura: popolare documenti con dati provenienti da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
+ [Procedura: Scorrere i record di database in un foglio di lavoro](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Procedura: Popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Procedura: Popolare documenti con dati provenienti da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)  

@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerObject3 | Documenti Microsoft
-ms.custom: ''
+title: IDebugPointerObject3 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPointerObject3 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe58df189ebfbc8519d45fab1011b691f50d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53ade07e2a252260cf687c9bce361f692d5ed741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889397"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestiti esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Rappresenta un puntatore in un albero di analisi ed estende il **IDebugPointerObject** interfaccia.  
+ Rappresenta un puntatore in un albero di analisi ed estende la **IDebugPointerObject** interfaccia.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,18 +30,18 @@ IDebugPointerObject3 : IDebugPointerObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia viene implementata un analizzatore di espressioni (Java EE).  
+ Un analizzatore di espressioni (EE) implementa questa interfaccia.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi nel [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) interfaccia, implementa i metodi seguenti:  
+ Oltre ai metodi nel [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) interfaccia, questa interfaccia implementa i metodi seguenti:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|Recupera l'indirizzo del puntatore.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Ee.h  
+ Intestazione: EE.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

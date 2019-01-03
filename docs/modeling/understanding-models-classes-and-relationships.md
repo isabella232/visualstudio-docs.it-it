@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908644"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 Un linguaggio specifico di dominio (DSL) è definito dal relativo file di definizione DSL, insieme a qualsiasi codice programma personalizzato che è possibile scrivere. La maggior parte del codice del programma nella soluzione DSL viene generato da questo file.
@@ -54,9 +53,9 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
 
  ![Relazioni di incorporamento e riferimento](../modeling/media/music_classes.png)
 
- L'illustrazione mostra quattro classi di dominio: musica, Album, artisti e brano. Le classi di dominio definiscono le proprietà di dominio, ad esempio nome, titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.
+ L'illustrazione mostra quattro classi di dominio: Musica, Album, artisti e brano. Le classi di dominio definiscono le proprietà di dominio, ad esempio nome, titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.
 
- Tra le classi sono le relazioni di dominio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs e Artistaapparsoneglialbum. Le relazioni dispongono di molteplicità, ad esempio 1..1, 0.. *. Ogni brano, ad esempio, deve essere correlato a esattamente un Album attraverso la relazione AlbumHasSongs. Ogni Album può avere un numero qualsiasi di brani.
+ Tra le classi sono le relazioni di dominio: MusicHasAlbums MusicHasArtists, AlbumbHasSongs e Artistaapparsoneglialbum. Le relazioni dispongono di molteplicità, ad esempio 1..1, 0.. *. Ogni brano, ad esempio, deve essere correlato a esattamente un Album attraverso la relazione AlbumHasSongs. Ogni Album può avere un numero qualsiasi di brani.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Ridisposizione il diagramma di definizione DSL
  Si noti che una classe di dominio può venire visualizzato diverse volte nel diagramma di definizione DSL, così come dell'Album in questa immagine. È sempre presente un'unica visualizzazione principale, e possono essere presenti alcuni *riferimento* viste.

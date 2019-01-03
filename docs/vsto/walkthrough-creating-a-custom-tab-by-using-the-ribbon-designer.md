@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917592"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione
   Usando la finestra di progettazione della barra multifunzione è possibile creare una scheda personalizzata per aggiungervi e posizionarvi controlli.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808872"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Per creare un progetto cartella di lavoro di Excel  
   
--   Creare un progetto cartella di lavoro di Excel con il nome **MyExcelRibbon**. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Creare un progetto cartella di lavoro di Excel con il nome **MyExcelRibbon**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio verrà visualizzata la nuova cartella di lavoro nella finestra di progettazione e aggiunge il **MyExcelRibbon** progetto al **Esplora soluzioni**.  
   
@@ -159,17 +156,15 @@ ms.locfileid: "38808872"
   
 -   Aggiunta di un'interfaccia utente basata sul contesto a una personalizzazione a livello di documento. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).  
   
--   Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [procedura dettagliata: progettazione di un'area del modulo Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area del modulo Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
  [Personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Procedura: modificare la posizione di una scheda della barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)   
- [Procedura: aggiungere controlli alla visualizzazione backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Procedura: Modificare la posizione di una scheda della barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Procedura: Aggiungere controlli alla visualizzazione backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md)  
-  
-  

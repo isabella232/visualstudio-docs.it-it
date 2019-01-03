@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: elencare a livello di codice tutti i fogli di lavoro in una cartella di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione elencare tutti i fogli di lavoro in una cartella di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb82b26fedce0590c5c2fe9cfa1b321fef5dbf19
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2cab3547bb23aa563e2c6b5bfe6a82a93fd5e29e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928724"
 ---
-# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedura: elencare a livello di codice tutti i fogli di lavoro in una cartella di lavoro
+# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedura: A livello di programmazione elencare tutti i fogli di lavoro in una cartella di lavoro
   La classe <xref:Microsoft.Office.Interop.Excel.Workbook> fornisce un oggetto <xref:Microsoft.Office.Interop.Excel.Worksheets>. Questo oggetto contiene una raccolta di tutti gli oggetti <xref:Microsoft.Office.Interop.Excel.Worksheet> presenti nella cartella di lavoro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,8 +41,6 @@ ms.locfileid: "35257761"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: a livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Procedura: A livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Procedura: A livello di programmazione spostare fogli di lavoro all'interno di cartelle di lavoro](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
  [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

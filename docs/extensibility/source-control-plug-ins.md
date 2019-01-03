@@ -1,9 +1,6 @@
 ---
 title: Plug-in del controllo di origine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923640"
 ---
 # <a name="source-control-plug-ins"></a>Plug-in del controllo del codice sorgente
 La sezione di riferimento SDK dei plug-in controllo di origine contiene la specifica completa dell'interfaccia che consente ai sistemi di controllo di origine per l'integrazione con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Specifica la sintassi e semantica dei vari tipi di dati e funzioni che il plug-in del controllo del codice sorgente deve implementare per interfacciarsi con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE).  
@@ -57,7 +54,7 @@ La sezione di riferimento SDK dei plug-in controllo di origine contiene la speci
  [Glossario](../extensibility/source-control-plug-in-glossary.md)  
  Fornisce utili termini e le relative definizioni per leggere la documentazione del SDK dei plug-in controllo di origine.  
   
- [Procedura: Disabilitare gli avvisi di compatibilità per i plug-in del controllo del codice sorgente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Procedura: Disattivare gli avvisi di compatibilità per Plug-in controllo codice sorgente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Viene descritto come disabilitare gli avvisi.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

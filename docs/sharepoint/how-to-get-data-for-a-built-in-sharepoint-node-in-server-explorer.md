@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: recuperare dati per un nodo SharePoint incorporato in Esplora Server | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Ottenere i dati per un nodo SharePoint incorporato in Esplora Server | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898973"
 ---
-# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Procedura: recuperare dati per un nodo SharePoint incorporato in Esplora Server
+# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Procedura: Ottenere i dati per un nodo SharePoint incorporato in Esplora Server
   Per ogni nodo SharePoint incorporato in **Esplora Server**, è possibile ottenere dati per il componente di SharePoint sottostante rappresentata dal nodo. Per altre informazioni, vedere [estendere del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="example"></a>Esempio  
@@ -34,7 +31,7 @@ ms.locfileid: "37119821"
   
  In questo esempio Usa il servizio di progetto SharePoint per ottenere il <xref:EnvDTE.DTE> oggetto che consente di aprire elenchi in Visual Studio. Per altre informazioni sul servizio di progetto SharePoint, vedere [usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
   
- Per altre informazioni sulle attività di base per creare un'estensione per un nodo SharePoint, vedere [procedura: estendere un nodo SharePoint in Esplora Server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+ Per altre informazioni sulle attività di base per creare un'estensione per un nodo SharePoint, vedere [come: Estendere un nodo SharePoint in Esplora Server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
 ## <a name="compile-the-code"></a>Compilare il codice  
  In questo esempio vengono richiesti riferimenti agli assembly seguenti:  
@@ -52,7 +49,6 @@ ms.locfileid: "37119821"
   
 ## <a name="see-also"></a>Vedere anche
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Procedura: estendere un nodo SharePoint in Esplora Server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Procedura: Estendere un nodo SharePoint in Esplora Server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Distribuire le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

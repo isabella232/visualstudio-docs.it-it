@@ -1,9 +1,6 @@
 ---
 title: Comando elemento Commandflag | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c963592fd286273e18a0bdf15905693f9f9cf1ce
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836988"
 ---
 # <a name="command-flag-eelement"></a>Flag di comando Eelement
 Modifica il relativo elemento padre.  
@@ -38,7 +35,7 @@ Modifica il relativo elemento padre.
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |AllowParams|Indica che gli utenti possono immettere i parametri di comando in di **comando** finestra quando l'utente digita il nome canonico del comando.<br /><br /> Valido per: `Button`|  
 |AlwaysCreate|Menu viene creato anche se non contiene né gruppi di pulsanti.<br /><br /> Valido per: `Menu`|  

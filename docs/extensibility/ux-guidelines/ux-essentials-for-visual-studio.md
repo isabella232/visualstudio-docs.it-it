@@ -1,9 +1,6 @@
 ---
 title: Fondamentali sull'esperienza utente per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874871"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fondamentali sull'esperienza utente per Visual Studio
 ## <a name="best-practices"></a>Procedure consigliate  
@@ -63,7 +60,7 @@ ms.locfileid: "49848592"
  - Altezza iniziale della finestra deve essere **inferiore a 700 pixel**, in modo che rientri nella risoluzione minima del frame IDE 96 DPI.
   
 ### <a name="high-density-displays"></a>Display ad alta densità  
- Interfaccia utente in Visual Studio deve funzionare correttamente in tutti i valori DPI fattori che Windows supportate per impostazione predefinita di scalabilità: 150%, 200% e % 250.  
+ Interfaccia utente in Visual Studio deve funzionare correttamente in tutti i fattori di scala DPI che Windows supportate per impostazione predefinita: 150%, 200% e % a 250.  
   
 ## <a name="anti-patterns"></a>Anti-modelli  
  Visual Studio contiene molti esempi dell'interfaccia utente che seguono le linee guida e procedure consigliate. Favorire la coerenza, gli sviluppatori spesso prestito da modelli di progettazione dell'interfaccia utente del prodotto simili a ciò che sta creando. Anche se questo è un buon approccio che consente di noi maggiore coerenza nella progettazione visiva e l'interazione dell'utente, in alcuni casi messa a disposizione le funzionalità con alcuni dettagli che non soddisfa le linee guida a causa dei vincoli di pianificazione o l'esclusione di assegnazione delle priorità. In questi casi, non vogliamo ai team di copiare uno di questi "anti-modelli" poiché essi proliferare dell'interfaccia utente non valido o non coerente nell'ambiente di Visual Studio.  
@@ -79,7 +76,7 @@ ms.locfileid: "49848592"
 #### <a name="anti-pattern-solution"></a>Soluzione anti-pattern  
  Non appena l'utente ha avviato un'azione e prima che è stata completata l'attività, inserire immediatamente arresto critico icone accanto alle aree che richiedono una configurazione.  
   
-#### <a name="example-manifest-designer-declarations"></a>Esempio: Le dichiarazioni di progettazione manifesto  
+#### <a name="example-manifest-designer-declarations"></a>Esempio: Dichiarazioni di progettazione manifesto  
  Aggiunta di una dichiarazione all'elenco immediatamente, lo inserisce in uno stato di errore, che persiste fino a quando l'utente imposta le proprietà necessarie.  
   
  In questo caso, è presente una preoccupazione aggiuntiva perché l'icona utilizzata per l'avviso contiene un "&times;" sull'icona, non è possibile usare l'icona Rimuovi comuni accanto a esso. Di conseguenza, l'interfaccia utente usa un pulsante Rimuovi, un controllo più difficili.  
@@ -120,15 +117,15 @@ L'utente leggere testo esplicativo prima dell'eliminazione dell'interfaccia uten
 ### <a name="using-command-bars-for-settings"></a>Utilizzo di barre dei comandi per le impostazioni  
  **Figura A** rappresenta questo antipattern: inserimento di un'impostazione di sotto di un pulsante di comando che si applica solo al comando. In questo esercizio sono disponibili comandi oltre a Avvia debug, ovvero come visualizzazione nel Browser, Avvia senza eseguire debug ed Esegui istruzione, che verrà rispettata l'impostazione selezionata.  
 
-  ![Figura a: comando della barra di anti-pattern](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Figura a: anti-pattern barra dei comandi
+  ![Figura a: Anti-pattern barra dei comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Figura a: Anti-pattern barra dei comandi
   
  Scherzo leggermente migliore, ma è ancora, è inserire le impostazioni di questo tipo nelle barre degli strumenti, come illustrato nella **Figura B**. Anche se i pulsanti di suddivisione richiede meno spazio e sono pertanto un miglioramento su elenchi a discesa, entrambi i progetti siano ancora usando una barra degli strumenti per promuovere un elemento che non è davvero un comando.  
  
- ![Figura b: migliore, ma comunque un anti-pattern della barra di comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Figura b: migliore, ma comunque un anti-pattern della barra di comandi
+ ![Figura b: Migliore, ma comunque un anti-pattern della barra di comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Figura b: Migliore, ma comunque un anti-pattern della barra di comandi
  
   L'approccio corretto illustrato nella **figura C**, l'impostazione è collegata a una serie di comandi. È disponibile alcuna impostazione globale viene impostata e si passa semplicemente tra quattro comandi. Si tratta dell'unica situazione in cui i comandi sulla barra degli strumenti sono accettabili. 
 
- ![Figura c: uso di pattern della barra dei comandi di Visual Studio di correggere](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Figura c: corretto utilizzo di pattern della barra dei comandi di Visual Studio
+ ![Figura c: Correzione uso di pattern della barra dei comandi di Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Figura c: Uso corretto del pattern della barra dei comandi di Visual Studio
    
 ### <a name="control-anti-patterns"></a>Anti-pattern di controllo  
  Alcuni anti-modelli sono utilizzo semplicemente non corretto o la presentazione di un controllo o un gruppo di controlli.  
@@ -156,7 +153,7 @@ L'utente leggere testo esplicativo prima dell'eliminazione dell'interfaccia uten
   
    ![Ignorando il servizio di colore e l'utilizzo di "Informazioni" per i collegamenti ipertestuali sono anti-modelli di Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Ignorando il servizio di colore e l'utilizzo di "Informazioni" per i collegamenti ipertestuali sono anti-modelli di Visual Studio.  
   
-   **Migliore soluzione:** porre la domanda sarebbe chiedere all'utente, selezionando il collegamento.  
+   **Soluzione migliore:** Porre la domanda che sarebbe chiedere all'utente, selezionando il collegamento.  
   
 -   Come funzionano i servizi di Azure?  
   
@@ -165,6 +162,6 @@ L'utente leggere testo esplicativo prima dell'eliminazione dell'interfaccia uten
 #### <a name="using-click-here-for-links"></a>Utilizzando "Fare clic qui" per i collegamenti  
  I collegamenti ipertestuali dovrebbero essere autodescrittivi. È un antipattern usare "Fare clic qui" o qualsiasi variazione simili.  
   
- **Cattivi:** "Fare clic qui per istruzioni su come creare un nuovo progetto."
+ **Non valido:** "Fare clic qui per istruzioni su come creare un nuovo progetto."
   
- **Good:** "Come si crea un nuovo progetto?"
+ **Buona:** "Come si crea un nuovo progetto?"

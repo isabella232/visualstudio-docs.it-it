@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplier2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4aa26aa37b40c0e483342e6eb93cbac15bbbfc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9cb8c38ed3fde6706fa59a76f17090557455c827
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861001"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Questa interfaccia fornisce porte al gestore di sessione di debug (SDM).  
@@ -32,10 +29,10 @@ IDebugPortSupplier2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un fornitore di porta personalizzato implementa questa interfaccia per rappresentare un fornitore di porta.  
+ Un fornitore di porte personalizzato implementa questa interfaccia per rappresentare un fornitore di porte.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Una chiamata a `CoCreateInstance` con un fornitore di porta `GUID` restituisce questa interfaccia (questo è il modo consueto per ottenere questa interfaccia). Ad esempio:  
+ Una chiamata a `CoCreateInstance` con un fornitore di porte `GUID` restituisce questa interfaccia (questo è il modo consueto per ottenere questa interfaccia). Ad esempio:  
   
 ```cpp  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
@@ -52,34 +49,34 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }  
 ```  
   
- Una chiamata a [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) restituisce questa interfaccia, che rappresenta il fornitore della porta corrente utilizzato da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ Una chiamata a [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) restituisce questa interfaccia, che rappresenta il fornitore della porta corrente usato da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) restituisce questa interfaccia, che rappresenta il fornitore della porta che ha creato la porta.  
   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) rappresenta un elenco di `IDebugPortSupplier` interfacce (il `IEnumDebugPortSuppliers` interfaccia viene ottenuta dalla [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), che rappresenta tutti i fornitori di porta registrato con [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) rappresenta un elenco di `IDebugPortSupplier` interfacce (il `IEnumDebugPortSuppliers` interfaccia viene ottenuta dal [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), che rappresentano tutti i fornitori di porte registrate con [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
   
- Un motore di debug in genere non interagiscono con un fornitore di porta.  
+ Un motore di debug in genere non interagisce con un fornitore di porte.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugPortSupplier2`.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Ottiene il nome della porta fornitore.|  
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Ottiene l'identificatore fornitore porta.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Ottiene una porta da un fornitore di porta.|  
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Enumera le porte che esistono già.|  
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Verifica che un fornitore della porta supporta l'aggiunta di nuove porte.|  
-|[Aggiungi porta](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Aggiunge una porta.|  
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Ottiene il nome fornitore della porta.|  
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Ottiene l'identificatore fornitore di porte.|  
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Ottiene una porta da un fornitore di porte.|  
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Enumera le porte già esistenti.|  
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Verifica che un fornitore di porte supporta l'aggiunta di nuove porte.|  
+|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Aggiunge una porta.|  
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Rimuove una porta.|  
   
 ## <a name="remarks"></a>Note  
- Un fornitore di porta può identificarsi per nome e ID, aggiungere e rimuovere le porte ed enumerare tutte le porte che fornisce il fornitore della porta.  
+ Un fornitore di porte può identificarsi per nome e ID, aggiungere e rimuovere le porte ed enumerare tutte le porte che fornisce il fornitore della porta.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

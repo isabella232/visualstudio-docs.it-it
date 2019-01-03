@@ -1,9 +1,6 @@
 ---
 title: Creazione di un Editor di base e la registrazione di un tipo di File dell'Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e00b96d1f5361d3d5260296532be47636f430d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6bd1cbf23bf56a6d475f6afa3db5a6225dc75de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896019"
 ---
-# <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file editor
+# <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file dell'editor
 Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage che inizia il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale quando un file con il *.myext* estensione del nome file viene caricato.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -37,7 +34,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
 ### <a name="to-create-the-vspackage"></a>Per creare il pacchetto VSPackage  
   
-- Avviare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e creare un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage denominato `MyPackage`, come descritto in [procedura dettagliata: creare un comando di menu, VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Avviare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e creare un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage denominato `MyPackage`, come descritto in [procedura dettagliata: Creare un comando di menu, VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Per aggiungere la factory dell'editor  
   
@@ -250,12 +247,12 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     ppunkDocView       = IntPtr.Zero;  
     ppunkDocData       = IntPtr.Zero;  
     pbstrEditorCaption = "";  
-    pguidCmdUI         = Guid.Empty;   
+    pguidCmdUI         = Guid.Empty;   
     pgrfCDW            = 0;  
   
     if ((grfCreateDoc & (VSConstants.CEF_OPENFILE |   
           VSConstants.CEF_SILENT)) == 0)  
-    {   
+    {   
         throw new ArgumentException("Only Open or Silent is valid");  
     }  
     if (punkDocDataExisting != IntPtr.Zero)  
@@ -264,7 +261,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     }  
   
     // Instantiate a text buffer of type VsTextBuffer.  
-    // Note: we only need an IUnknown (object) interface for   
+    // Note: we only need an IUnknown (object) interface for   
     // this invocation.  
     Guid clsidTextBuffer = typeof(VsTextBufferClass).GUID;  
     Guid iidTextBuffer   = VSConstants.IID_IUnknown;  
@@ -287,7 +284,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
         Guid clsidCodeWindow = typeof(VsCodeWindowClass).GUID;  
         Guid iidCodeWindow   = typeof(IVsCodeWindow).GUID;  
         IVsCodeWindow pCodeWindow =  
-        (IVsCodeWindow)this.parentPackage.CreateInstance(   
+        (IVsCodeWindow)this.parentPackage.CreateInstance(   
               ref clsidCodeWindow,  
               ref iidCodeWindow,  
               typeof(IVsCodeWindow));  
@@ -297,24 +294,24 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
             // We are giving up ownership of the text buffer!  
             pCodeWindow.SetBuffer((IVsTextLines)pTextBuffer);  
   
-            // Now tell the caller about all this new stuff   
+            // Now tell the caller about all this new stuff   
             // that has been created.  
             ppunkDocView = Marshal.GetIUnknownForObject(pCodeWindow);  
             ppunkDocData = Marshal.GetIUnknownForObject(pTextBuffer);  
   
-            // Specify the command UI to use so keypresses are   
+            // Specify the command UI to use so keypresses are   
             // automatically dealt with.  
             pguidCmdUI = VSConstants.GUID_TextEditorFactory;  
   
             // This caption is appended to the filename and  
-            // lets us know our invocation of the core editor   
+            // lets us know our invocation of the core editor   
             // is up and running.  
             pbstrEditorCaption = " [MyPackage]";  
   
             retval = VSConstants.S_OK;  
-        }   
-    }   
-    return retval;   
+        }   
+    }   
+    return retval;   
     ```  
   
 13. Compilare il progetto e assicurarsi che non siano presenti errori.  

@@ -1,9 +1,6 @@
 ---
 title: Elemento combo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43a7799c1c2b6d3fed965f6039aa01b7fd29e937
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926252"
 ---
 # <a name="combo-element"></a>Elemento combo
-Definisce i comandi che vengono visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.  
+Definisce i comandi che vengono visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo DynamicCombo, IndexCombo e MRUCombo.  
   
 ## <a name="syntax"></a>Sintassi  
   

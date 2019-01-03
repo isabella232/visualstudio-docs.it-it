@@ -1,9 +1,6 @@
 ---
 title: Estensione di proprietà, elenco attività, Output e opzioni Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922325"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estendere le finestre delle proprietà, elenco attività, Output e opzioni
 È possibile accedere a qualsiasi finestra degli strumenti in Visual Studio. Questa procedura dettagliata illustra come integrare informazioni sulla finestra degli strumenti in una nuova **opzioni** pagina e una nuova impostazione sul **proprietà** pagina, nonché come scrivere il **elenco attività** e **Output** windows.  

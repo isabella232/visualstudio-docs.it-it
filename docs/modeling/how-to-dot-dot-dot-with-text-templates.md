@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a29f9c8813950cda5907b7f0f96141d00d562fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887763"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 Modelli di testo in Visual Studio forniscono un modo utile per la generazione di testo di qualsiasi tipo. È possibile usare i modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare alcuni di codice del progetto. Questo argomento vengono riepilogati più di frequente frequenti "Ricerca per categorie...?" domande.

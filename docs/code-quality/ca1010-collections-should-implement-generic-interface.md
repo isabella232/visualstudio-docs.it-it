@@ -1,8 +1,7 @@
 ---
-title: "CA1010: Le raccolte devono implementare un'interfaccia generica"
+title: "CA1010: Le raccolte devono implementare l'interfaccia generica"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1010
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5264292e6dc1e8cf86a64d41dc15154d836a8444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c52bbd46d36923245a4df09eed7304074fa96115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880247"
 ---
-# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Le raccolte devono implementare un'interfaccia generica
+# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Le raccolte devono implementare l'interfaccia generica
 
 |||
 |-|-|
@@ -87,7 +86,7 @@ ms.locfileid: "49915282"
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1005: Evitare un uso eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005: Evitare un numero eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
  [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
@@ -95,11 +94,11 @@ ms.locfileid: "49915282"
 
  [CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: I metodi generici devono specificare parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: I metodi generici devono fornire parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
  [CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Usare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Utilizzare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vedere anche
  [Generics](/dotnet/csharp/programming-guide/generics/index)

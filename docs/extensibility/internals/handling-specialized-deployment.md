@@ -1,9 +1,6 @@
 ---
 title: Gestione distribuzione specializzata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3c73b118f7e137847c1342fb9949c3d7dd6dd0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82fb87d2837179c97d4f6aeac884ab90898e2481
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897969"
 ---
 # <a name="handle-specialized-deployment"></a>Gestione della distribuzione specializzata
 Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un **Smart Device** progetto supporta una distribuzione per copiare delle applicazioni al dispositivo di destinazione. Sottotipi di progetto possono fornire il comportamento della distribuzione specializzata implementando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia. Questa interfaccia definisce un set completo di operazioni di distribuzione:  

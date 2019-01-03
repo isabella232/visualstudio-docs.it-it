@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creazione di tabelle di Word a livello di codice'
-ms.custom: ''
+title: 'Procedura: A livello di codice, creare tabelle di Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a65c42f19602929b546bf105f148bf80e2d9b2db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 639fa67599cfee71d3d41fa6512ca609aa4d099a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902019"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>Procedura: creazione di tabelle di Word a livello di codice
+# <a name="how-to-programmatically-create-word-tables"></a>Procedura: A livello di codice, creare tabelle di Word
   La raccolta <xref:Microsoft.Office.Interop.Word.Tables> è un membro delle classi <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, pertanto è possibile creare una tabella in ognuno di questi contenuti. Usare il metodo <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Tables> per aggiungere una tabella nell'intervallo specificato.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -95,9 +92,7 @@ ms.locfileid: "49914190"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: aggiungere a livello di codice di testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Procedura: a livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Procedura: a livello di codice compilare tabelle di Word con le proprietà documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
+ [Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Procedura: A livello di codice compilare tabelle di Word con le proprietà documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

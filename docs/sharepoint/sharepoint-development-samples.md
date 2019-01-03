@@ -1,13 +1,8 @@
 ---
 title: Esempi di sviluppo di SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f1e41056fd0cbadb863a918182bc76ad2c91c29
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 21cfe0af20b2cb7f1aab413fbc6412975ecc9ed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871506"
 ---
 # <a name="sharepoint-development-samples"></a>Esempi di sviluppo di SharePoint
   È possibile usare Visual Studio per scaricare e installare esempi di applicazioni di SharePoint dal [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).  
@@ -33,4 +28,3 @@ ms.locfileid: "37118874"
  [Creare soluzioni di SharePoint](../sharepoint/create-sharepoint-solutions.md)   
  [Visual Studio Samples](http://go.microsoft.com/fwlink/?LinkId=150928)  (Esempi di Visual Studio)  
  [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)  
-  

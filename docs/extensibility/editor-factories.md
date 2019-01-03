@@ -1,9 +1,6 @@
 ---
 title: Factory dell'editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887357"
 ---
 # <a name="editor-factories"></a>Factory dell'editor
 Una factory dell'editor crea gli oggetti di editor e li inserisce in una cornice di finestra, nota come una visualizzazione fisica. Crea i dati del documento e oggetti di visualizzazione di documenti che sono necessari per creare gli editor e finestre di progettazione. Una factory dell'editor deve creare l'editor principale di Visual Studio e un editor standard. È possibile creare un editor personalizzato anche facoltativamente con una factory dell'editor.  

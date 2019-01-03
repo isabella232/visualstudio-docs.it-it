@@ -1,9 +1,6 @@
 ---
 title: Risolvere i problemi di soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926554"
 ---
 # <a name="troubleshoot-office-solutions"></a>Risolvere i problemi di soluzioni Office
   Questa sezione contiene suggerimenti per la risoluzione di problemi comuni che si potrebbero incontrare quando si creano soluzioni usando gli strumenti di sviluppo per Office in Visual Studio.  
@@ -31,7 +28,7 @@ ms.locfileid: "35671884"
  [Risolvere gli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Descrive i problemi comuni che potrebbero verificarsi durante la progettazione, l'esecuzione e il test di soluzioni Office in Visual Studio.  
   
- [Procedura: riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Procedura: Riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Descrive come riabilitare un componente aggiuntivo in VSTO che è stato disabilitato hardware o software.  
   
  [Supporto aggiuntivo per gli errori nelle soluzioni Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35671884"
   
  [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)  
  Elenca domande frequenti sulla programmazione di soluzioni Office e fornisce collegamenti che possono consentire la risoluzione di problemi comuni.  
-  
-  

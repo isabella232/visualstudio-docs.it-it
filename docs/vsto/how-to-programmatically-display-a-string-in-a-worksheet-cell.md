@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: visualizzare a livello di codice una stringa in una cella di foglio di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione visualizzare una stringa in una cella di foglio di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 336ab67cd5c63a912d72b0fce3fa73c9fca5184f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849768"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Procedura: visualizzare a livello di codice una stringa in una cella di foglio di lavoro
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Procedura: A livello di programmazione visualizzare una stringa in una cella di foglio di lavoro
   In questo esempio viene illustrato come visualizzare il testo in una cella a livello di codice. Per visualizzare il testo nella cella, usare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -54,5 +51,3 @@ ms.locfileid: "35256819"
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

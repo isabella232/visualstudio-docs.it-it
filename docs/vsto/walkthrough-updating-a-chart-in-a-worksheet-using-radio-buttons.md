@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione'
-ms.custom: ''
+title: 'Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891939"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione
   Questa procedura dettagliata illustra le nozioni di base dell'uso di pulsanti di opzione in un foglio di lavoro di Microsoft Office Excel per consentire all'utente un modo per passare rapidamente tra le opzioni. In questo caso, le opzioni di modificare lo stile di un grafico.  
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -96,7 +93,7 @@ ms.locfileid: "49866441"
 
 1.  Creare un progetto cartella di lavoro di Excel con il nome **My Chart Excel**. Nella procedura guidata, selezionare **copia un documento esistente**.  
 
-     Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Scegliere il **esplorare** pulsante e passare alla cartella di lavoro è stato creato in precedenza in questa procedura dettagliata.  
 
@@ -111,7 +108,7 @@ ms.locfileid: "49866441"
 
 1.  Selezionare il <xref:Microsoft.Office.Tools.Excel.Chart> nella finestra di progettazione e modificare le proprietà seguenti nella **proprietà** finestra.  
 
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**dataChart**|  
     |**HasLegend**|**false**|  
@@ -136,7 +133,7 @@ ms.locfileid: "49866441"
 2. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare un **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.  
 
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |----------|------------------|
    | **Name** | **Istogramma** |
    | **per** | **Istogramma a colonne** |
@@ -154,7 +151,7 @@ ms.locfileid: "49866441"
 4. Aggiungere un terzo pulsante di opzione nel controllo utente e modificare le proprietà seguenti.  
 
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |----------|----------------|
    | **Name** | **lineChart** |
    | **per** | **Grafico a linee** |
@@ -162,7 +159,7 @@ ms.locfileid: "49866441"
 
 5. Aggiungere un quarto pulsante di opzione nel controllo utente e modificare le proprietà seguenti.  
 
-   |Proprietà|Valore|  
+   |Proprietà|Value|  
    |--------------|-----------|  
    |**Name**|**opzione areaBlockChart**|  
    |**per**|**Grafico ad area**|  
@@ -203,7 +200,7 @@ ms.locfileid: "49866441"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]  
 
-5.  In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni su come creare gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni su come creare gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]  
 
@@ -234,7 +231,7 @@ ms.locfileid: "49866441"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]  
 
-2.  In c#, è necessario aggiungere un gestore eventi per il controllo utente per il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, come illustrato di seguito. Per informazioni su come creare gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  In c#, è necessario aggiungere un gestore eventi per il controllo utente per il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, come illustrato di seguito. Per informazioni su come creare gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866441"
 
 -   La distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
 
--   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [procedura dettagliata: visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
 
--   Modificare la formattazione in un foglio di lavoro usando le caselle di controllo. Per altre informazioni, vedere [procedura dettagliata: modifica del foglio di lavoro formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Modificare la formattazione in un foglio di lavoro usando le caselle di controllo. Per altre informazioni, vedere [Procedura dettagliata: Modificare la formattazione del foglio di lavoro mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
 
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)  
-

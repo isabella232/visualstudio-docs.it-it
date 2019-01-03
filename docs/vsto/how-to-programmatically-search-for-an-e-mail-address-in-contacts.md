@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti'
-ms.custom: ''
+title: 'Procedura: Eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7b9c4c7d02f3cd1564e6733c46cb821eade7f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 767c75bff42bc19b70d4b6dcd35da16c4bb4c099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893354"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procedura: eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procedura: Eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti
   Questo esempio cerca una cartella Contatti per i contatti con il nome dominio **example.com** nei relativi indirizzi di posta elettronica.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35673703"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)   
- [Procedura: programmare l'invio di posta elettronica](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Procedura: accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Procedura: aggiungere a livello di codice una voce ai contatti di Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
-  
-  
+ [Procedura: A livello di codice Invia messaggio di posta elettronica](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Procedura: Accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Procedura: A livello di codice aggiungere una voce ai contatti di Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  

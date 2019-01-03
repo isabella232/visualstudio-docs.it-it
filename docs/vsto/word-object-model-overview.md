@@ -1,9 +1,6 @@
 ---
 title: Panoramica del modello a oggetti di Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922273"
 ---
 # <a name="word-object-model-overview"></a>Panoramica del modello a oggetti di Word
   Quando si sviluppano soluzioni Word in Visual Studio, si interagisce con il modello a oggetti di Word. Questo modello a oggetti è costituito da classi e interfacce fornite nell'assembly di interoperabilità primario per Word ed è definito nello spazio dei nomi <xref:Microsoft.Office.Interop.Word> .  
@@ -122,7 +119,7 @@ ms.locfileid: "49878011"
  Per informazioni complete sul modello a oggetti di Word, è possibile usare il riferimento dell'assembly di interoperabilità primario (PIA) di Word e il riferimento del modello a oggetti Visual Basic, Applications Edition (VBA).  
   
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario  
- Nella documentazione di riferimento dell'assembly di interoperabilità primario dell'assembly di interoperabilità primario (PIA) di Word vengono descritti i tipi dell'assembly di interoperabilità primario per Word. Questa documentazione è disponibile dal percorso seguente: [riferimento all'assembly di interoperabilità primario di Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ Nella documentazione di riferimento dell'assembly di interoperabilità primario dell'assembly di interoperabilità primario (PIA) di Word vengono descritti i tipi dell'assembly di interoperabilità primario per Word. Questa documentazione è disponibile dal percorso seguente: [Riferimento all'assembly di interoperabilità primario di Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Per altre informazioni sulla progettazione dei PIA di Word, ad esempio le differenze tra classi e interfacce nell'assembly di interoperabilità primario e sull'implementazione degli eventi nell'assembly di interoperabilità primario, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primaridiOffice](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878011"
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

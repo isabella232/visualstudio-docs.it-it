@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: usare la gestione di annullamento collegato | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare la gestione di annullamento collegato | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255ad8de79b13a74816b2abd28281ac5de6f1932
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 639b95909f5d0cf91721760cac27768cb64e477a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874193"
 ---
-# <a name="how-to-use-linked-undo-management"></a>Procedura: usare collegato gestione dell'annullamento
+# <a name="how-to-use-linked-undo-management"></a>Procedura: Usare la gestione di annullamento collegato
 Fase di rollback collegata consente all'utente di annullare contemporaneamente le stesse modifiche in più file. Ad esempio, le modifiche simultanee testo su più file di programma, ad esempio un file di intestazione e un file di Visual C++, è una transazione di annullamento collegata. Funzionalità di annullamento collegata è incorporata nell'implementazione dell'ambiente di gestione degli annullamenti, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> consente di modificare questa funzionalità. Fase di rollback collegata è implementata da un'unità di annullamento padre che è possibile collegare gli stack di annullamento separato insieme deve essere considerata come una sola unità di annullamento. La procedura per l'uso di annullamento collegata è descritta in dettaglio nella sezione seguente.  
   
 ## <a name="to-use-linked-undo"></a>Per usare l'operazione di annullamento collegato  
@@ -32,10 +29,10 @@ Fase di rollback collegata consente all'utente di annullare contemporaneamente l
 3.  Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> per implementare tutte le unità di annullamento collegato come uno.  
   
     > [!NOTE]
-    >  Per implementare la gestione di annullamento collegato in un editor, aggiungere la gestione di annullamento. Per altre informazioni sull'implementazione della gestione dell'annullamento collegato, vedere [procedura: gestione dell'annullamento implementare](../extensibility/how-to-implement-undo-management.md).  
+    >  Per implementare la gestione di annullamento collegato in un editor, aggiungere la gestione di annullamento. Per altre informazioni sull'implementazione della gestione dell'annullamento collegato, vedere [come: Implementare la gestione di annullamento](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
  [Interfaccia IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
- [Procedura: gestione dell'annullamento implementare](../extensibility/how-to-implement-undo-management.md)
+ [Procedura: Gestione dell'annullamento implementare](../extensibility/how-to-implement-undo-management.md)

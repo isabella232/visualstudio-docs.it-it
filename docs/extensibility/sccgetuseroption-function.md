@@ -1,9 +1,6 @@
 ---
 title: Funzione SccGetUserOption | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetUserOption
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f73eff3f1be51045381c0eaa76d5d3914d8e9ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869268"
 ---
 # <a name="sccgetuseroption-function"></a>Funzione SccGetUserOption
 Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.  
@@ -28,10 +25,10 @@ Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
+SCCRTN SccGetUserOption(  
+   LPVOID pContext,  
+   LONG nOption,  
+   LPLONG lpVal  
 );  
 ```  
   
@@ -48,7 +45,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Opzione è stato recuperato correttamente.|  
 |SCC_E_OPNOTSUPPORTED|Opzione non è supportata.|  

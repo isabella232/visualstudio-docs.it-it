@@ -1,26 +1,25 @@
 ---
-title: 'Procedura: utilizzare i punti di interruzione con XSLT'
+title: 'Procedura: dei punti di interruzione con XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 430b7f14f35506b45fe73be47d056cdd7b6a9c95
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 72a22937792cc06bcac18f70a2bd4c53be98f7fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894889"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Procedura: utilizzare i punti di interruzione con XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Procedura: Usare i punti di interruzione con XSLT
 
 È possibile impostare punti di interruzione in un foglio di stile XSLT o nel documento di origine XML. Se si imposta un punto di interruzione su un tag, all'avvio dell'esecuzione il punto di interruzione si sposterà all'istruzione successiva che dispone di informazioni sulla riga del codice sorgente.
 
-Per altre informazioni, vedere [nozioni fondamentali di debug: i punti di interruzione](../debugger/using-breakpoints.md).
+Per altre informazioni, vedere [nozioni fondamentali di debug: I punti di interruzione](../debugger/using-breakpoints.md).
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Impostare un punto di interruzione in un foglio di stile
 
@@ -30,15 +29,15 @@ Per altre informazioni, vedere [nozioni fondamentali di debug: i punti di interr
 
 1.  Aprire un foglio di stile nell'editor XML.
 
-2.  Posizionare il cursore sulla posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.
+2.  Posizionare il cursore in corrispondenza della posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.
 
-3.  Fare clic sul pulsante Sfoglia (**...** ) nei **Input** campo della finestra delle proprietà del documento.
+3.  Fare clic sul pulsante Sfoglia (**...** ) sul **Input** campo della finestra delle proprietà del documento.
 
-4.  Individuare il documento di origine XML e fare clic su **aprire**.
+4.  Individuare il documento di origine XML e fare clic su **aperto**.
 
      In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.
 
-5.  Fare clic su di **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.
+5.  Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.
 
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Impostare un punto di interruzione in un documento di origine XML
 
@@ -48,16 +47,16 @@ Per altre informazioni, vedere [nozioni fondamentali di debug: i punti di interr
 
 1.  Aprire il documento XML nell'editor XML.
 
-2.  Posizionare il cursore sulla posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.
+2.  Posizionare il cursore in corrispondenza della posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.
 
-3.  Fare clic sul pulsante Sfoglia (**...** ) nei **Stylesheet** campo della finestra delle proprietà del documento.
+3.  Fare clic sul pulsante Sfoglia (**...** ) sul **Stylesheet** campo della finestra delle proprietà del documento.
 
-4.  Individuare il documento di origine XML e fare clic su **aprire**.
+4.  Individuare il documento di origine XML e fare clic su **aperto**.
 
      In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.
 
-5.  Fare clic su di **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.
+5.  Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

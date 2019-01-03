@@ -1,9 +1,6 @@
 ---
 title: Azioni personalizzate nelle aree del modulo di Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869519"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree del modulo di Outlook
   Azioni di visualizzano i pulsanti che consentono agli utenti di rispondere a un elemento di Microsoft Office Outlook. Ad esempio, per rispondere a un elemento di posta elettronica, gli utenti fanno clic la **Reply**, **Rispondi a tutti**, o **inoltrare** pulsanti di azione. Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento utilizzando le informazioni dell'elemento originale.  
@@ -58,5 +55,3 @@ ms.locfileid: "53441660"
  [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
  [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Applicare il colore a intervalli di Excel a livello di codice'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcd48caa95b2dca1391582ce91156fb6e4859b99
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 4cd8a9528b0bcd360fd00f700172899f1480d0ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868024"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore a intervalli di Excel a livello di codice
   Per applicare un colore di testo all'interno di un intervallo di celle, usare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.  
@@ -60,5 +57,3 @@ ms.locfileid: "53802316"
  [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

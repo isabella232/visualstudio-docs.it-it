@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Visualizzazione di riquadri attività personalizzati con messaggi di posta elettronica in Outlook'
-ms.custom: ''
+title: 'Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926586"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: Visualizzazione di riquadri attività personalizzati con messaggi di posta elettronica in Outlook
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook
   Questa procedura dettagliata viene illustrato come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica che viene creato o aperto. Gli utenti possono visualizzare o nascondere il riquadro attività personalizzato usando un pulsante nella barra multifunzione di ogni messaggio di posta elettronica.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -60,14 +57,14 @@ ms.locfileid: "49828468"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.  
   
-  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [How do i: usare i riquadri attività in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare i riquadri attività in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Creare il progetto  
  I riquadri attività personalizzati vengono implementati nei componenti aggiuntivi VSTO. Iniziare creando un progetto di componente aggiuntivo VSTO per Outlook.  
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto di **componente aggiuntivo di Outlook** denominato **OutlookMailItemTaskPane**. Usare il modello di progetto per il **componente aggiuntivo di Outlook** . Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto di **componente aggiuntivo di Outlook** denominato **OutlookMailItemTaskPane**. Usare il modello di progetto per il **componente aggiuntivo di Outlook** . Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice *ThisAddIn.cs* o *ThisAddIn.vb* e aggiunge il progetto **OutlookMailItemTaskPane** a **Esplora soluzioni**.  
   
@@ -267,17 +264,15 @@ ms.locfileid: "49828468"
   
 -   Creare un riquadro attività personalizzato in un componente aggiuntivo VSTO per un'altra applicazione. Per altre informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  
   
--   Automatizzare un'applicazione di Microsoft Office usando un riquadro attività personalizzato. Per altre informazioni, vedere [procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatizzare un'applicazione di Microsoft Office usando un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Creare un pulsante della barra multifunzione in Excel da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [procedura dettagliata: sincronizzazione di un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Creare un pulsante della barra multifunzione in Excel da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riquadri attività personalizzati](../vsto/custom-task-panes.md)   
- [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Procedura dettagliata: Sincronizzazione di un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)   
  [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

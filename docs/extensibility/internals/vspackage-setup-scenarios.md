@@ -1,9 +1,6 @@
 ---
 title: Scenari di installazione di pacchetti VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
@@ -12,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932944"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenari di installazione di pacchetti VSPackage
 
@@ -50,7 +47,7 @@ Come illustrato nella figura, i componenti condivisi diventano parte della funzi
 > [!NOTE]
 > Impostazione colonna da visualizzare una funzionalità su 0 per nasconderlo. Un valore di colonna di livello basso, ad esempio 1, garantisce che sarà sempre installata. Per altre informazioni, vedere [proprietà INSTALLLEVEL](/windows/desktop/Msi/installlevel) e [tabella delle funzionalità](/windows/desktop/Msi/feature-table).
 
-## <a name="scenario-2-shared-vspackage-update"></a>Scenario 2: Aggiornamento di VSPackage condivisi
+## <a name="scenario-2-shared-vspackage-update"></a>Scenario 2: Update Package VS condivisi
 
 In questo scenario, è disponibile una versione aggiornata del programma di installazione pacchetto VSPackage nello scenario 1. Ai fini di discussione, l'aggiornamento aggiunge il supporto per Visual Studio, ma potrebbe anche essere una patch di sicurezza più semplice o correzione di bug del Service pack. Le regole del programma di installazione di Windows per l'installazione dei componenti più recenti richiedono che i componenti invariati nel sistema è già non vengono ricopiati. In questo caso, un sistema con la versione 1.0 sono già presenti sovrascriverà il componente aggiornato Comp_MyVSPackage.dll e consentire agli utenti di scegliere di aggiungere la nuova funzionalità Feat_VS2005 al relativo componente Comp_VS2005_Reg.
 
@@ -61,7 +58,7 @@ In questo scenario, è disponibile una versione aggiornata del programma di inst
 
 Questo scenario presenta un nuovo pacchetto VSPackage programma di installazione, sfruttando i vantaggi del supporto del programma di installazione di Windows per gli aggiornamenti secondari. Gli utenti installano la versione 1.1 e viene aggiornato alla versione 1.0. Non è tuttavia necessario avere la versione 1.0 nel sistema. Lo stesso di installazione installerà la versione 1.1 in un sistema senza versione 1.0. Il vantaggio di fornire gli aggiornamenti secondari in questo modo è che non è necessario passare attraverso il lavoro dello sviluppo di un programma di installazione aggiornamento e un programma di installazione completa del prodotto. Un programma di installazione esegue entrambi i processi. Una correzione di sicurezza o di un servizio di tipo pack potrebbe invece sfruttare le patch di Windows Installer. Per altre informazioni, vedere [applicazione di patch e aggiornamenti](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Scenario 3: Side-by-Side VSPackage
+## <a name="scenario-3-side-by-side-vspackage"></a>Scenario 3: VSPackage side-by-Side
 
 Questo scenario presenta due programmi di installazione del pacchetto VSPackage, ovvero uno per ogni versione di Visual Studio .NET 2003 e Visual Studio. Ogni programma di installazione installa un side-by-side privati, VSPackage (quello che viene compilato e installato per una particolare versione di Visual Studio in modo specifico). Ogni pacchetto VSPackage è nel proprio componente. Di conseguenza, ogni eseguire singolarmente la manutenzione con le patch o manutenzione rilascia. Poiché la DLL di VSPackage è ora specifici della versione, è consigliabile includere le informazioni di registrazione nel componente stesso come DLL.
 
@@ -69,7 +66,7 @@ Questo scenario presenta due programmi di installazione del pacchetto VSPackage,
 
 Ogni programma di installazione include anche codice che verrà condivisi tra i due programmi di installazione. Se il codice condiviso viene installato in un percorso comune, entrambi i file con estensione msi di installazione installerà il codice condiviso una sola volta. Il programma di installazione secondo incrementa semplicemente un conteggio dei riferimenti del componente. Il conteggio dei riferimenti garantisce che se uno dei VSPackage viene disinstallato, il codice condiviso rimarrà per altri VSPackage. Se viene disinstallato anche il pacchetto VSPackage secondario, verrà rimosso il codice condiviso.
 
-## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenario 4: Side-by-Side package VS Update
+## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenario 4: Aggiornamento pacchetto VSPackage side-by-Side
 
 In questo scenario, il pacchetto VSPackage per Visual Studio non ha una vulnerabilità di sicurezza e si desidera eseguire un aggiornamento. Come nello scenario 2, è possibile creare un nuovo file con estensione msi che aggiorna un'installazione esistente per includere la correzione di sicurezza, nonché di distribuire le nuove installazioni con la correzione di sicurezza già presenti.
 

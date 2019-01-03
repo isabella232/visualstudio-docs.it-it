@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e9f4c77f06e1a899cd6490479802ef300bea4256
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 4e3f767eeb6ed79aed3281cbe88b1eb1fe46738d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847488"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilizzo di soluzioni per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato utilizzando una soluzione di Visual Studio. In questa sezione viene illustrato come configurare e personalizzare la soluzione.
@@ -28,14 +27,14 @@ Un linguaggio specifico di dominio (DSL) viene creato utilizzando una soluzione 
 
  [Scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md) viene spiegato come scegliere un modello per avviare il progetto DSL.
 
- [Procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md) vengono descritti i passaggi per configurare un linguaggio DSL.
+ [Procedura: Creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md) vengono descritti i passaggi per configurare un linguaggio DSL.
 
  [Lavora sul diagramma di definizione DSL](../modeling/working-with-the-dsl-definition-diagram.md) vengono illustrate le parti del diagramma.
 
  [Utilizzo di Esplora linguaggi specifici di dominio di](../modeling/working-with-the-domain-specific-language-explorer.md) illustra il contenuto della finestra di esplorazione
 
- [Procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) nel codice è generare da un linguaggio DSL è presente uno spazio dei nomi che è impostato quando si avvia la soluzione, ma è possibile modificarlo in un secondo momento.
+ [Procedura: Modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) nel codice è generare da un linguaggio DSL è presente uno spazio dei nomi che è impostato quando si avvia la soluzione, ma è possibile modificarlo in un secondo momento.
 
- [Procedura: estendere la finestra di progettazione Domain-Specific Language](../modeling/how-to-extend-the-domain-specific-language-designer.md) è possibile personalizzare la finestra di progettazione DSL con comandi di menu.
+ [Procedura: Estendere la finestra di progettazione Domain-Specific Language](../modeling/how-to-extend-the-domain-specific-language-designer.md) è possibile personalizzare la finestra di progettazione DSL con comandi di menu.
 
  [Come automatizzare Trasforma tutti i modelli](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)) per evitare di fare clic su Trasforma tutti i modelli, è possibile renderlo una parte della compilazione automatica.

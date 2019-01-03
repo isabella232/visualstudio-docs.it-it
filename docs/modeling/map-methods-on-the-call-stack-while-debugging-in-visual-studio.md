@@ -2,7 +2,6 @@
 title: Mappare i metodi sullo stack di chiamate durante il debug
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889241"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 Creare una mappa del codice per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.
@@ -70,7 +69,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 1.  Avviare il debug. (Tastiera: **F5**)
 
-2.  Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, scegli **mappa codice**. (Tastiera: **Ctrl** + **MAIUSC** + **`**)
+2.  Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, scegli **mappa codice**. (Tastiera: **CTRL** + **MAIUSC** + **`**)
 
      ![Scegliere la mappa del codice per avviare il mapping dello stack di chiamate](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -93,7 +92,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 ## <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
  Ora hai una mappa - che cosa successivamente? Se si lavora con c# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di ciò che avviene nel codice.
 
- Fare doppio clic su un metodo per visualizzarne la definizione del codice o usare il menu di scelta rapida del metodo. (Tastiera: selezionare il metodo nella mappa e premere **F12**)
+ Fare doppio clic su un metodo per visualizzarne la definizione del codice o usare il menu di scelta rapida del metodo. (Tastiera: Selezionare il metodo nella mappa e premere **F12**)
 
  ![Passare alla definizione del codice per un metodo nella mappa del codice](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -143,7 +142,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
    La modifica della mappa non influenza sul codice in alcun modo. È possibile rinominare, spostare o rimuovere qualsiasi elemento nella mappa.
 
-- **Che cosa significa questo messaggio: "il diagramma potrebbe essere basato su una versione precedente del codice"?**
+- **Che cosa significa questo messaggio: "Il diagramma potrebbe essere basato su una versione precedente del codice?"**
 
    È possibile che il codice sia stato modificato dopo l'ultimo aggiornamento della mappa. Ad esempio, nel codice potrebbe non essere più disponibile una chiamata alla mappa. Chiudere il messaggio, quindi provare a ricompilare la soluzione prima di aggiornare di nuovo la mappa.
 

@@ -1,9 +1,6 @@
 ---
 title: Funzione SccRename | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccRename
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92c19e47f680d4feb6c4a4acd6de358c1a6191ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: efd86fcfa728e9dfad05d9feb934bc2b54e5272b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896136"
 ---
 # <a name="sccrename-function"></a>Funzione SccRename
 Questa funzione consente di rinominare un file nel sistema di controllo di origine.  
@@ -52,7 +49,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'operazione di ridenominazione completata correttamente.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto nel controllo del codice sorgente.|  

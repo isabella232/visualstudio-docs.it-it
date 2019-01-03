@@ -1,9 +1,6 @@
 ---
 title: I colori e stili per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914608"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 
@@ -82,7 +79,7 @@ Prima di usare colori condivisi comuni, assicurarsi di comprendere come usarli i
 
 ### <a name="user-customizable-colors"></a>Colori personalizzabili dall'utente
 
-Vedere: [esponendo i colori per gli utenti finali](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+Vedere: [Esposizione di colori per gli utenti finali](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
 In alcuni casi, è opportuno consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o l'area di progettazione. Personalizzabili componenti dell'interfaccia utente sono disponibili nel **i tipi di carattere e colori** sezione del **Tools &gt; opzioni** finestra di dialogo in cui gli utenti possono scegliere di modificare il colore primo piano, il colore di sfondo o entrambi.
 
@@ -287,7 +284,7 @@ Solo un numero limitato di colori di sistema può essere utilizzato per temi a c
 
 ### <a name="system-color-set"></a>Set di colori di sistema
 
-La tabella nel [Blog del Team WPF: riferimento SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica il set completo di nomi di colori di sistema e le corrispondenti tonalità visualizzate in ogni tema.
+La tabella in [Blog del Team WPF: Riferimento SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica il set completo di nomi di colori di sistema e le corrispondenti tonalità visualizzate in ogni tema.
 
 Quando si applica questo set di colori per l'interfaccia utente, limitato *è previsto che perderai dettagli che erano presenti nei temi "normali"*. Ecco un esempio dell'interfaccia utente con colori grigi meno evidenti che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Quando viene utilizzata con la stessa finestra visualizzata in modalità a contrasto elevato, si noterà che tutti gli sfondi siano la stessa tonalità e i bordi di tali aree sono indicati dal bordo autonomo:
 

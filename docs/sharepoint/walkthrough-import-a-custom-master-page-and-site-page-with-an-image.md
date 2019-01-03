@@ -1,9 +1,6 @@
 ---
-title: "Procedura dettagliata: Importazione di una pagina Master personalizzata e pagina del sito con un'immagine | Microsoft Docs"
-ms.custom: ''
+title: "Procedura dettagliata: Importare una pagina Master personalizzata e pagina del sito con un'immagine | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904153"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procedura dettagliata: Importare una pagina master personalizzata e una pagina del sito con un'immagine
   Questa procedura dettagliata illustra come importare una pagina master personalizzata di SharePoint e una pagina del sito con un'immagine in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.  
@@ -179,10 +176,9 @@ ms.locfileid: "49890991"
 
 7. Aprire il sito di SharePoint per visualizzare gli elementi distribuiti.  
 
-   Un modo alternativo per importare i file in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirle in SharePoint consiste nell'aggiungere i file nei moduli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Procedura: importare una pagina master o un tema](../sharepoint/how-to-import-a-master-page-or-theme.md) e [usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+   Un modo alternativo per importare i file in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirle in SharePoint consiste nell'aggiungere i file nei moduli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Come si fa: Importare una pagina master o un tema](../sharepoint/how-to-import-a-master-page-or-theme.md) e [usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
 
 ## <a name="see-also"></a>Vedere anche
  [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

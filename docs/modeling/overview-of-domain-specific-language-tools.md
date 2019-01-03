@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892303"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Domain-Specific Language Tools (strumenti DSL), che sono ospitati in Visual Studio, consentono di progettare un linguaggio specifico di dominio e quindi generare tutte le operazioni che gli utenti devono disporre per creare modelli basati sulla lingua.
@@ -66,7 +65,7 @@ Domain-Specific Language Tools (strumenti DSL), che sono ospitati in Visual Stud
 ## <a name="validation-in-dsl-tools"></a>Convalida in strumenti DSL
  Linguaggio specifico di dominio fornisce un livello di convalida per assicurarsi che il modello di dominio soddisfi i requisiti di base per la generazione di codice. In genere, quando si crea il proprio linguaggio specifico di dominio, è necessario aggiungere il proprio convalida per esprimere le regole per la logica di business. Per altre informazioni sulla convalida personalizzata, vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
 
- È consigliabile convalidare il linguaggio specifico di dominio spesso quando si progettano. Se il linguaggio specifico di dominio presenta errori di convalida, è possibile generare codice sorgente. Viene eseguito il processo di generazione di codice sorgente dai modelli facendo **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni. Ogni volta che si modifica la definizione del linguaggio, assicurarsi anche di **Trasforma tutti i modelli**. Per altre informazioni, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ È consigliabile convalidare il linguaggio specifico di dominio spesso quando si progettano. Se il linguaggio specifico di dominio presenta errori di convalida, è possibile generare codice sorgente. Viene eseguito il processo di generazione di codice sorgente dai modelli facendo **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni. Ogni volta che si modifica la definizione del linguaggio, assicurarsi anche di **Trasforma tutti i modelli**. Per altre informazioni, vedere [Procedura: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personalizzazione degli strumenti DSL
  È possibile fornire codice aggiuntivo per perfezionare il comportamento del modello e per definire i vincoli per la lingua. Se necessario, è possibile apportare modifiche significative modificando i modelli di testo.

@@ -1,9 +1,6 @@
 ---
 title: ATTACH_REASON | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - ATTACH_REASON
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f40958cabdf1da8aa44cd7e226ed7219429af2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931226"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Specifica il motivo per il motore di debug (DE) da associare a un nodo di programma.  
@@ -28,7 +25,7 @@ Specifica il motivo per il motore di debug (DE) da associare a un nodo di progra
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-enum enum_ATTACH_REASON {   
+enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
    ATTACH_REASON_AUTO   = 0x0003  
@@ -37,7 +34,7 @@ typedef DWORD ATTACH_REASON;
 ```  
   
 ```csharp  
-public enum enum_ATTACH_REASON {   
+public enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
    ATTACH_REASON_AUTO   = 0x0003  
@@ -60,7 +57,7 @@ public enum enum_ATTACH_REASON {
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

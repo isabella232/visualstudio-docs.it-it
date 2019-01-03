@@ -1,8 +1,7 @@
 ---
-title: "CA1028: L'archivio di enum deve essere Int32"
+title: 'CA1028: Archivio di enum deve essere Int32'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1028
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2d768c5ee98c5bff62dd58c33eb97396088bf978
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868274"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: L'archivio di enum deve essere Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Archivio di enum deve essere Int32
 
 |||
 |-|-|
@@ -66,7 +65,7 @@ ms.locfileid: "45547828"
  [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1008: Gli enum devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008: Le enumerazioni devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
  [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
@@ -74,7 +73,7 @@ ms.locfileid: "45547828"
 
  [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 
- [CA1712: Non usare nomi di tipo come prefisso nei valori di enumerazione](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712: Prefisso nei valori di enumerazione con il nome di tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Vedere anche
 

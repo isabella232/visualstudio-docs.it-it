@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: modificare a livello di codice la formattazione nelle righe del foglio di lavoro contenenti celle selezionate'
-ms.custom: ''
+title: 'Procedura: A livello di codice modificare la formattazione nelle righe del foglio di lavoro contenenti celle selezionate'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891800"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedura: modificare a livello di codice la formattazione nelle righe del foglio di lavoro contenenti celle selezionate
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedura: A livello di codice modificare la formattazione nelle righe del foglio di lavoro contenenti celle selezionate
   È possibile modificare il tipo di carattere di un'intera riga che contiene una cella selezionata in modo che il testo è in grassetto.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891284"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Procedura: copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Procedura: Copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

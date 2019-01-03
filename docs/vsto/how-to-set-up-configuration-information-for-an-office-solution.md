@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: impostare le informazioni di configurazione per una soluzione Office'
-ms.custom: ''
+title: 'Procedura: Impostare le informazioni di configurazione per una soluzione Office'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916640"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedura: impostare le informazioni di configurazione per una soluzione Office
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedura: Impostare le informazioni di configurazione per una soluzione Office
   È possibile utilizzare i file di configurazione per configurare le impostazioni specifiche per le soluzioni Office. È possibile specificare le impostazioni come criteri di associazione degli assembly, gli oggetti di .NET remoting, debug e le impostazioni di traccia.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "49949461"
  [Schema di file di configurazione per .NET Framework](/dotnet/framework/configure-apps/file-schema/index)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
-  
-  

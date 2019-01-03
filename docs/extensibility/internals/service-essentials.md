@@ -1,9 +1,6 @@
 ---
 title: Servizio Essentials | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867277"
 ---
 # <a name="service-essentials"></a>Nozioni fondamentali sui servizi
 Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage fornisce un set specifico di interfacce per un altro VSPackage da utilizzare. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è a sua volta una raccolta di VSPackage che fornisce servizi per gli altri pacchetti VSPackage.  
   
- Ad esempio, è possibile utilizzare il servizio SVsActivityLog per ottenere un'interfaccia IVsActivityLog, che è possibile usare per scrivere nel log attività. Per altre informazioni, vedere [procedura: usare il Log attività](../../extensibility/how-to-use-the-activity-log.md).  
+ Ad esempio, è possibile utilizzare il servizio SVsActivityLog per ottenere un'interfaccia IVsActivityLog, che è possibile usare per scrivere nel log attività. Per altre informazioni, vedere [Procedura: Usare il Log attività](../../extensibility/how-to-use-the-activity-log.md).  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce anche alcuni servizi predefiniti che non sono registrati. Pacchetti VSPackage possono sostituire incorporati o altri servizi, fornendo un override del servizio. Sostituzione di un solo servizio è consentito per qualsiasi servizio.  
   
@@ -39,7 +36,7 @@ Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage 
   
 - I servizi o le sostituzioni di servizio, vengono caricate su richiesta, vale a dire, il provider del servizio viene caricato quando il servizio che fornisce è richiesto da un altro pacchetto VSPackage.  
   
-- Per supportare il caricamento su richiesta, un provider del servizio registra i suoi servizi globali con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [procedura: fornire un servizio](../../extensibility/how-to-provide-a-service.md).  
+- Per supportare il caricamento su richiesta, un provider del servizio registra i suoi servizi globali con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Procedura: Fornire un servizio](../../extensibility/how-to-provide-a-service.md).  
   
 - Dopo aver ottenuto un servizio, usare [QueryInterface](/cpp/atl/queryinterface) (codice non gestito) o al cast (codice gestito) per ottenere l'interfaccia desiderata, ad esempio:  
   
@@ -63,7 +60,7 @@ Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage 
   
 ## <a name="use-getglobalservice"></a>Usare GetGlobalService  
   
-In alcuni casi potrebbe essere necessario ottenere un servizio da una finestra degli strumenti o controllo contenitore che non è stato individuato, altrimenti è stato individuato con un provider di servizi che non conosce il servizio desiderato. Ad esempio, è possibile scrivere nel log attività all'interno di un controllo. Per altre informazioni su questi e altri scenari, vedere [procedura: risolvere i problemi di servizi](../../extensibility/how-to-troubleshoot-services.md).  
+In alcuni casi potrebbe essere necessario ottenere un servizio da una finestra degli strumenti o controllo contenitore che non è stato individuato, altrimenti è stato individuato con un provider di servizi che non conosce il servizio desiderato. Ad esempio, è possibile scrivere nel log attività all'interno di un controllo. Per altre informazioni su questi e altri scenari, vedere [come: Risolvere i problemi di servizi](../../extensibility/how-to-troubleshoot-services.md).  
   
 È possibile ottenere la maggior parte dei servizi di Visual Studio tramite la chiamata al metodo statico <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> (metodo).  
   
@@ -92,7 +89,7 @@ Fortunatamente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 
     End If
     ```  
     
-    Questo codice ottiene un servizio SVsActivityLog e ne esegue il cast a un'interfaccia IVsActivityLog, che può essere usata per scrivere nel log attività. Per un esempio, vedere [procedura: usare il Log attività](../../extensibility/how-to-use-the-activity-log.md).  
+    Questo codice ottiene un servizio SVsActivityLog e ne esegue il cast a un'interfaccia IVsActivityLog, che può essere usata per scrivere nel log attività. Per un esempio, vedere [come: Usare il Log attività](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Elenco dei servizi disponibili](../../extensibility/internals/list-of-available-services.md)   

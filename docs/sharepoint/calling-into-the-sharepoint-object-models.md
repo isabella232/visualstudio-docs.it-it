@@ -1,9 +1,6 @@
 ---
 title: La chiamata ai modelli a oggetti di SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df55347ea08bfcb243f37aaee111066106da49ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914527"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chiamare i modelli a oggetti SharePoint
   Quando si creano estensioni per gli strumenti di SharePoint in Visual Studio, è necessario chiamare APIs di SharePoint per eseguire determinate attività. Ad esempio, se si crea un passaggio di distribuzione personalizzato per progetti SharePoint, potrebbe essere necessario chiamare APIs per eseguire alcune attività per distribuire soluzioni di SharePoint.  
@@ -41,7 +38,7 @@ ms.locfileid: "49853431"
   
 - Usando il modello a oggetti client nelle estensioni di strumenti di SharePoint deve funzionare nella maggior parte dei casi, si potrebbero verificarsi alcuni scenari in cui le chiamate al modello a oggetti client non funzionano come previsto. Il modello a oggetti client è progettato per essere utilizzato nelle applicazioni client per effettuare chiamate nei siti di SharePoint su un server remoto o una farm. Gli strumenti di SharePoint in Visual Studio funzionano solo con un'installazione di SharePoint locale nel computer di sviluppo. Pertanto, quando si usa il modello a oggetti client in un'estensione degli strumenti di SharePoint, chiamare in un sito di SharePoint nel computer locale, ovvero non modo in cui il modello a oggetti client è stato progettato per essere utilizzato.  
   
-  Per una procedura dettagliata che illustra come usare il modello a oggetti client in un'estensione degli strumenti di SharePoint in Visual Studio, vedere [procedura dettagliata: chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+  Per una procedura dettagliata che illustra come usare il modello a oggetti client in un'estensione degli strumenti di SharePoint in Visual Studio, vedere [procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Usare il modello a oggetti server nei progetti di estensione
  Il modello a oggetti server è un superset del modello a oggetti client. Quando si usa il modello a oggetti server, è possibile usare tutte le funzionalità che [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] espongono a livello di codice.  
@@ -50,15 +47,14 @@ ms.locfileid: "49853431"
   
  Se si desidera utilizzare il modello a oggetti server in un'estensione degli strumenti di SharePoint, è necessario creare una classe personalizzata *comando SharePoint* per chiamare l'API. Definire il comando di SharePoint in un assembly secondario che può chiamare direttamente nel modello a oggetti server. Nel progetto di estensione, viene chiamato il comando di SharePoint indirettamente tramite il metodo ExecuteCommand di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> oggetto.  
   
- Per altre informazioni sulla creazione e utilizzo dei comandi di SharePoint, vedere [procedura: creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md) e [procedura: eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md). Per informazioni su come distribuire i comandi di SharePoint, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Per altre informazioni sulla creazione e utilizzo dei comandi di SharePoint, vedere [come: Creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md) e [come: Eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md). Per informazioni su come distribuire i comandi di SharePoint, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
- Per esercitazioni dettagliate che illustrano come creare e usare i comandi di SharePoint, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) e [procedura dettagliata: estensione di Esplora Server per visualizzare le web part ](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Per esercitazioni dettagliate che illustrano come creare e usare i comandi di SharePoint, vedere [procedura dettagliata: Creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) e [procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Comprendere come vengono eseguiti i comandi di SharePoint
  Gli assembly che definiscono i comandi di SharePoint vengono caricati in un processo host a 64 bit denominato *vssphost4.exe*. Dopo aver chiamato un comando di SharePoint in un'estensione degli strumenti di SharePoint, il comando viene eseguito dal *vssphost4.exe* anziché al processo di Visual Studio a 32 bit (*devenv.exe*). È possibile controllare alcuni aspetti del modo in cui i comandi di SharePoint vengono eseguiti impostando i valori del Registro di sistema. Per altre informazioni, vedere [eseguire il Debug delle estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [Procedura: eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Procedura: Creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Procedura: Eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  

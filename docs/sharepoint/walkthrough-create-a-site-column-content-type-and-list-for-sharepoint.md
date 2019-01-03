@@ -1,17 +1,12 @@
 ---
 title: 'Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852531"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint
   Le procedure seguenti illustrano come creare colonne personalizzate del sito di SharePoint, oppure *campi*, oltre a un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che usa il nuovo tipo di contenuto.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900124"
     </Field>  
     ```  
   
-4.  Con la stessa procedura, aggiungere altre due colonne del sito al progetto: **ID paziente** (tipo = "Integer") e **Dottor nome** (tipo = "Text"). Impostare i valore di gruppo **colonne del sito Clinic**.  
+4.  Con la stessa procedura, aggiungere altre due colonne del sito per il progetto: **ID dei pazienti** (tipo = "Integer") e **Dottor nome** (tipo = "Text"). Impostare i valore di gruppo **colonne del sito Clinic**.  
   
 ## <a name="create-a-custom-content-type"></a>Creare un tipo di contenuto personalizzato
  Successivamente, creare un tipo di contenuto, ovvero in base al tipo di contenuto di contatti, che include le colonne del sito che è stato creato nella procedura precedente. È possibile basare un tipo di contenuto su un tipo di contenuto esistente, per risparmiare tempo perché il tipo di contenuto base fornisce diverse colonne del sito da utilizzare nel nuovo tipo di contenuto.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900124"
   
      Questa operazione consente di accedere alle altre colonne del sito potenzialmente utile nel tipo di contenuto contatto, oltre alle colonne del sito definita in precedenza.  
   
-6.  Dopo il tipo di contenuto Progettazione progetti, nelle **colonne** scheda, aggiungere le tre colonne definiti in precedenza del sito: **nome Patient**, **ID paziente**e **Dottor nome**. Per aggiungere tali colonne, scegliere la prima casella di riepilogo nell'elenco le colonne del sito sotto **nome visualizzato**e quindi ogni colonna del sito in elenco una alla volta.  
+6.  Dopo il tipo di contenuto Progettazione progetti, nelle **colonne** scheda, aggiungere le tre colonne definiti in precedenza del sito: **Nome dei pazienti**, **ID paziente**, e **Dottor nome**. Per aggiungere tali colonne, scegliere la prima casella di riepilogo nell'elenco le colonne del sito sotto **nome visualizzato**e quindi ogni colonna del sito in elenco una alla volta.  
   
     > [!TIP]  
     >  Per scegliere le colonne del sito più rapidamente, filtrare l'elenco immettendo le prime lettere del nome della colonna.  
@@ -229,7 +224,6 @@ ms.locfileid: "49900124"
 ## <a name="see-also"></a>Vedere anche
  [Creare colonne del sito, i tipi di contenuto ed elenchi per SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Procedura: creare un tipo di campo personalizzato](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Procedura: Creare un tipo di campo personalizzato](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Tipi di contenuto](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Colonne](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

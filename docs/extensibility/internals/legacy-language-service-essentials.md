@@ -1,9 +1,6 @@
 ---
 title: Nozioni fondamentali sui servizi di linguaggio legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847204"
 ---
 # <a name="legacy-language-service-essentials"></a>Nozioni fondamentali sui servizi di linguaggio legacy
 È necessario fornire un servizio di linguaggio per integrare un linguaggio di programmazione in Visual Studio. In questo argomento illustra le funzionalità disponibili in servizi di linguaggio legacy.  
@@ -50,4 +47,3 @@ ms.locfileid: "49850177"
 |-----------------------| - |
 | Analizzatori di espressioni | Supporta il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger convalidando i punti di interruzione e specificando un elenco di espressioni da visualizzare nella **Auto** finestra di debug.<br /><br /> Per altre informazioni, vedere [supporto per il debug del servizio linguaggio](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Strumenti di esplorazione dei simboli | Supporta **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate**, e **risultati ricerca simbolo**. |
-

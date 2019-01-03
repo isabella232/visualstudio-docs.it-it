@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Eseguire il mapping delle colonne ListObject ai dati'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 508a0fa8df58e70eb216f722ee96395c7a9c21ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899983"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Procedura: Eseguire il mapping delle colonne ListObject ai dati
   Quando si associa un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> a un oggetto <xref:System.Data.DataTable>, è possibile che non si voglia visualizzare tutte le colonne in un elenco o che alcune colonne non siano associate a dati. È possibile mappare le colonne da visualizzare nel <xref:Microsoft.Office.Tools.Excel.ListObject> quando si chiama il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .  
@@ -69,5 +66,3 @@ ms.locfileid: "53646838"
  [Procedura: Riempire controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject (controllo)](../vsto/listobject-control.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Programmazione per eventi di un controllo NamedRange'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910818"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procedura dettagliata: Programmazione per eventi di un controllo NamedRange
   Questa procedura dettagliata illustra come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di lavoro di Microsoft Office Excel e un programma per i relativi eventi usando gli strumenti di sviluppo per Office in Visual Studio.  
@@ -54,7 +51,7 @@ ms.locfileid: "49812518"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto cartella di lavoro di Excel con il nome **My Events intervallo denominato**. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto cartella di lavoro di Excel con il nome **My Events intervallo denominato**. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **eventi di intervallo denominato My** progetto al **Esplora soluzioni**.  
   
@@ -108,7 +105,7 @@ ms.locfileid: "49812518"
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
   
-3.  In c#, è necessario aggiungere i gestori eventi per l'intervallo denominato, come illustrato nella <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> eventi riportato di seguito. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  In c#, è necessario aggiungere i gestori eventi per l'intervallo denominato, come illustrato nella <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> eventi riportato di seguito. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]  
   
@@ -162,9 +159,7 @@ ms.locfileid: "49812518"
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
- [Procedura: ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Procedura: Ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Procedura: Aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  
-  
-  
+ [Procedura: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  

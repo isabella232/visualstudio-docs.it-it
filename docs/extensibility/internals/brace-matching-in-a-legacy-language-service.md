@@ -1,9 +1,6 @@
 ---
 title: Corrispondenza parentesi graffe in un servizio di linguaggio Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910035"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Corrispondenza parentesi graffe in un servizio di linguaggio legacy
 Corrispondenza delle parentesi graffe consente allo sviluppatore di tenere traccia di elementi del linguaggio che si verificano insieme, ad esempio le parentesi tonde e parentesi graffe devono. Quando uno sviluppatore immette una parentesi graffa di chiusura, parentesi graffa di apertura viene evidenziata.  
   
  È possibile associare due o tre elementi che si verificano contemporaneamente, denominate coppie e Triple. Triple sono set di tre elementi che si verificano contemporaneamente. Ad esempio, in c#, il `foreach` istruzione costituisce una tripla: `foreach()`, `{`, e `}`. I tre elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.  
   
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare corrispondenza parentesi graffe, vedere [procedura dettagliata: visualizzazione di parentesi graffe corrispondenti](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare corrispondenza parentesi graffe, vedere [procedura dettagliata: Visualizzare le parentesi graffe corrispondenti](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
 >  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  

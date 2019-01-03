@@ -1,9 +1,6 @@
 ---
 title: Procedure dettagliate ed esempi di sviluppo office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909788"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Procedure dettagliate ed esempi di sviluppo office
   In questa sezione contiene le applicazioni di esempio, codice di esempio e istruzioni dettagliate che illustrano la sintassi, struttura e le tecniche usate per compilare soluzioni di Microsoft Office.  
@@ -60,5 +57,3 @@ ms.locfileid: "35672866"
 |[Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)|Elenca le domande frequenti sulla programmazione con sviluppo per Office in Visual Studio e fornisce collegamenti ad argomenti che consentono di risolvere i problemi comuni.|  
 |[Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)|Vengono forniti collegamenti a informazioni su come creare soluzioni Microsoft Office e sul ruolo degli assembly nella soluzione.|  
 |[Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)|Viene fornita una panoramica del riquadro attività a livello di documento denominato nel riquadro azioni.|  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: A livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0c5cfd48cf65ea8eed18606377cde2092ddaf302
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867670"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedura: A livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro
   È possibile creare un foglio di lavoro a livello di codice, quindi aggiungerlo alla raccolta di fogli di lavoro nella cartella di lavoro.  
@@ -56,5 +53,3 @@ ms.locfileid: "53805026"
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

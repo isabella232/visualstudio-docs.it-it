@@ -1,9 +1,6 @@
 ---
 title: Funzione SccQueryChanges | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccQueryChanges
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b3a9454daa0f2e3c5cf91a9dc483afe1f635a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6fabc1108f82c1cd2b43bf740e58c4ea9bb613e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910883"
 ---
 # <a name="sccquerychanges-function"></a>Funzione SccQueryChanges
 Questa funzione enumera un elenco di file, che fornisce informazioni sulle modifiche ai nomi per ogni file tramite una funzione di callback.  
@@ -28,7 +25,7 @@ Questa funzione enumera un elenco di file, che fornisce informazioni sulle modif
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-SCCRTN SccQueryChanges(  
+SCCRTN SccQueryChanges(  
    LPVOID           pContext,  
    LONG             nFiles,  
    LPCSTR*          lpFileNames,  
@@ -56,7 +53,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Il processo di query completato.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è stata aperta nel controllo del codice sorgente.|  

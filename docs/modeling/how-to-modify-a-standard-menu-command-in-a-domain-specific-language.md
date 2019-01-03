@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio'
+title: 'Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870190"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio
 
 È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare **Taglia** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Se si desidera creare i propri comandi di menu, vedere [procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Se si desidera creare i propri comandi di menu, vedere [come: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 ## <a name="what-commands-can-you-modify"></a>Comandi modificabili
 
@@ -71,7 +70,7 @@ Creare un nuovo file contenente una dichiarazione parziale della classe di set d
 
 ## <a name="override-the-command-methods"></a>Eseguire l'override dei metodi dei comandi
 
-La maggior parte dei comandi sono associati due metodi: il metodo con un nome, ad esempio `ProcessOnStatus`... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.
+La maggior parte dei comandi sono associati due metodi: Il metodo con un nome, ad esempio `ProcessOnStatus`... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Per cambiare la situazione in cui il comando viene visualizzato in un menu
 
@@ -148,7 +147,7 @@ Per altre informazioni su come passare da un elemento a altro e su come creare o
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Procedura: Aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimenti sullo schema XML VSCT](../extensibility/vsct-xml-schema-reference.md)

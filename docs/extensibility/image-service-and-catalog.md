@@ -1,6 +1,5 @@
 ---
 title: Immagine di servizio e catalogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899704"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigliate per adottare il catalogo di immagini introdotto in Visual Studio 2015 e Visual Studio Image Service.  
@@ -47,7 +46,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 ## <a name="how-it-works"></a>Come funziona
  Il servizio immagini può fornire un'immagine bitmap adatta per qualsiasi framework dell'interfaccia utente supportate:  
   
-- WPF: BitmapSource  
+- WPF: Oggetto BitmapSource  
   
 - Windows Form: System.Drawing.Bitmap  
   
@@ -166,7 +165,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 |-|-|  
 |**Attributo**|**Definizione**|  
 |URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) utilizzando l'applicazione: / / / autorità<br />-Riferimento a una risorsa un componente assoluto<br />-Un percorso di un file contenente una risorsa nativa|  
-|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Illuminazione:* l'origine può essere usata su uno sfondo chiaro.<br /><br /> *Scuro:* l'origine può essere usata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere usata su qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere usata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere usata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se si omette l'attributo in Background, l'origine sono utilizzabili in qualsiasi dello sfondo.<br /><br /> Se è in Background *Light*, *scuro*, *HighContrastLight*, oppure *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o impostato su sfondo *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
+|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se si omette l'attributo in Background, l'origine sono utilizzabili in qualsiasi dello sfondo.<br /><br /> Se è in Background *Light*, *scuro*, *HighContrastLight*, oppure *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o impostato su sfondo *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
 
 |||  
   
@@ -175,7 +174,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|\<Dimensioni >|Valore|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
+|\<Dimensioni >|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
 |\<SizeRange >|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
 |\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini della larghezza specificata e dell'altezza (espressa in unità di dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima per la larghezza/altezza massima (in unità di dispositivo), inclusi.|  

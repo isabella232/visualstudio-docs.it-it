@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: visualizzare la scheda sviluppo nella barra multifunzione'
-ms.custom: ''
+title: 'Procedura: Visualizzare la scheda sviluppo nella barra multifunzione'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906800"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedura: visualizzare la scheda sviluppo nella barra multifunzione
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedura: Visualizzare la scheda sviluppo nella barra multifunzione
   Per l'accesso di **sviluppatore** scheda della barra multifunzione di un'applicazione di Office, è necessario configurare in modo da visualizzare tale scheda, perché non viene visualizzato per impostazione predefinita. Ad esempio, è necessario visualizzare tale scheda per aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalizzazione a livello di documento per Word.  
   
 > [!NOTE]  
->  Questo materiale sussidiario si applica solo alle applicazioni di Office 2010 o versioni successive. Se si desidera visualizzare questa scheda in Microsoft Office System 2007, vedere la seguente versione di questo argomento [procedura: visualizzare la scheda sviluppo nella barra multifunzione](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+>  Questo materiale sussidiario si applica solo alle applicazioni di Office 2010 o versioni successive. Se si desidera visualizzare questa scheda in Microsoft Office System 2007, vedere la seguente versione di questo argomento [come: Visualizzare la scheda sviluppo nella barra multifunzione](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -69,5 +66,3 @@ ms.locfileid: "51349624"
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)  
-  
-  

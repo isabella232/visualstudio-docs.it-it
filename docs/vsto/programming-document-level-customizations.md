@@ -1,9 +1,6 @@
 ---
 title: Programmazione delle personalizzazioni a livello di documento
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Sheet3
@@ -30,12 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9c7fa658c24caa65b3c955002ffeeaff6573c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925446"
 ---
 # <a name="program-document-level-customizations"></a>Programmazione delle personalizzazioni a livello di documento
   Quando si estende Microsoft Office Word o Microsoft Office Excel usando una personalizzazione a livello di documento è possibile eseguire le attività seguenti:  
@@ -149,7 +146,7 @@ Globals.ThisDocument.Save();
   
 - Aggiungere gruppi personalizzati a una scheda incorporata nella barra multifunzione.  
   
-   Per altre informazioni, vedere [procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md).  
+   Per altre informazioni, vedere [Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md).  
   
   Per altre informazioni sulla personalizzazione di applicazioni dell'interfaccia utente di Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
   
@@ -175,5 +172,3 @@ Globals.ThisDocument.Save();
  [Combinazione di VBA e le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

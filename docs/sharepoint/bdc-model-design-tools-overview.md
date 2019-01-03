@@ -1,17 +1,12 @@
 ---
 title: Cenni preliminari sugli strumenti di progettazione di modelli di integrazione applicativa dei dati | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923335"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati
   È possibile progettare un modello di integrazione applicativa dei dati (BDC) usando la finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo BDC** finestra e il **Esplora integrazione applicativa dei dati**.  
@@ -76,20 +71,18 @@ ms.locfileid: "49914502"
 > [!NOTE]  
 >  Le modifiche a un descrittore di tipo originale non influiscono le copie che del descrittore di tipo.  
   
- Per altre informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Per altre informazioni, vedere [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)   
- [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Procedura: Creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md)   
  [Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [Creazione di un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Progettazione di un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 

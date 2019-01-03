@@ -1,9 +1,6 @@
 ---
 title: Panoramica del modello a oggetti Visio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848467"
 ---
 # <a name="visio-object-model-overview"></a>Panoramica del modello a oggetti Visio
   Per sviluppare soluzioni Office per Microsoft Office Visio è possibile interagire con il modello a oggetti di Visio. Questo modello a oggetti è costituito da classi e interfacce fornite nell'assembly di interoperabilità primario per Visio ed è definito nello spazio dei nomi `Microsoft.Office.Interop.Visio`.  
@@ -83,5 +80,3 @@ ms.locfileid: "50671404"
  [Soluzioni Visio](../vsto/visio-solutions.md)   
  [Lavorare con i documenti di Visio](../vsto/working-with-visio-documents.md)   
  [Lavorare con le forme di Visio](../vsto/working-with-visio-shapes.md)  
-  
-  

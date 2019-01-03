@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creare una. File Vsct | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare una. File Vsct | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885330"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Procedura: creare un file con estensione vsct  
+# <a name="how-to-create-a-vsct-file"></a>Procedura: Creare un file con estensione vsct  
   
 Esistono diversi modi per creare una configurazione di tabella comandi di Visual Studio basate su XML (*vsct*) file.  
   
@@ -56,7 +53,7 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: creare un File con estensione vsct da un file CTC esistente  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare un File con estensione vsct da un file CTC esistente  
   
 È possibile creare un XML basato *vsct* file da una tabella esistente di comando *CTC* file di origine. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (VSCT).  
   
@@ -87,7 +84,7 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procedura: creare un file con estensione vsct da un file CTO esistente  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procedura: Creare un file con estensione vsct da un file CTO esistente  
   
 È possibile creare un XML basato *vsct* file da un file binario esistente *CTO* file. Questa operazione consente di sfruttare il nuovo formato di compilatore della tabella comandi. Questo processo funziona anche se il *CTO* file è stato compilato da un *CTC* file. È possibile modificare e compilare il *vsct* file in un altro file CTO.  
   

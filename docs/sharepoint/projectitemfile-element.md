@@ -1,9 +1,6 @@
 ---
 title: Elemento ProjectItemFile | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b66849f9df9ed4de7725bca842c38f4f5a52582
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f2c4446d8c0e3beff59a08cfbe6c0a6c9e5294d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883915"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (elemento)
   Rappresenta un file di SharePoint, ad esempio file di elemento di funzionalità, da includere con l'elemento del progetto quando viene distribuito in SharePoint.  
@@ -70,4 +67,3 @@ ms.locfileid: "37119892"
   
 ## <a name="see-also"></a>Vedere anche
  [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

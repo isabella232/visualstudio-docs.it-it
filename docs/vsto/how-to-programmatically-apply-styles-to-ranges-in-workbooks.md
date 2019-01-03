@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4c0129319e1d979efd924d9d2bef57f0ef5dbf1a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876419"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro
   È possibile applicare stili denominati alle aree nelle cartelle di lavoro. Excel fornisce alcuni stili predefiniti:  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,5 +71,3 @@ ms.locfileid: "35672415"
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

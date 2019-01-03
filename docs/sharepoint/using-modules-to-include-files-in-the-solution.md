@@ -1,9 +1,6 @@
 ---
 title: Uso dei moduli per includere i file nella soluzione | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0773d9c167a0a799b7d9bc8ddd2b52afc9bc6f2
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921549"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Usare i moduli per includere file nella soluzione
   Potrebbe esserci situazioni quando si vuole distribuire i file nel server di SharePoint indipendentemente dal loro tipo di file, ad esempio nuove pagine master. A tale scopo, è possibile usare *moduli* (non deve essere confusa con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione di SharePoint. Quando si distribuisce la soluzione, i file nel modulo vengono copiati nelle cartelle specificate nel server SharePoint.  
@@ -60,9 +57,8 @@ ms.locfileid: "37118904"
  Ogni file che si desidera distribuire richiede un oggetto separato `<File>` voce elemento nel *Elements*.  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: includere file mediante un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)   
- [Procedura: effettuare il provisioning di un file](http://go.microsoft.com/fwlink/?LinkID=144271)   
+ [Procedura: Includere file mediante un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)   
+ [Come si fa: Effettuare il provisioning di un file](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

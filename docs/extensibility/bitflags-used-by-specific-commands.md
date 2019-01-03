@@ -1,9 +1,6 @@
 ---
 title: Flag di bit usati da comandi specifici | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875420"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit usati da comandi specifici
 Il comportamento di un numero di funzioni nell'API dei plug-in controllo di origine può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. I vari flag di bit usati dall'API dei plug-in controllo di origine sono descritte in dettaglio in questo caso, raggruppati per la funzione che li Usa.  
@@ -37,7 +34,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|È previsto il plug-in del controllo del codice sorgente per rilevare automaticamente se il file è di tipo testo o binario.|  
 |`SCC_FILETYPE_TEXT`|0x01|Tipo di file è testo.|  
-|`SCC_FILETYPE_BINARY`|0x04|Tipo di file è binario. **Nota:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` flag si escludono a vicenda.   Impostare uno o nessuno.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo di file è binario. **Nota:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` flag si escludono a vicenda. Impostare uno o nessuno.|  
 |`SCC_ADD_STORELATEST`|0x02|Store solo l'ultima versione (non i delta).|  
   
 ## <a name="diff-flags"></a>Flag diff  
@@ -46,7 +43,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 |Flag|Valore|Descrizione|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignora le maiuscole.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorare le differenze di spazio vuoto. **Nota:** il `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` flag sono facoltativi flag di bit.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorare le differenze di spazio vuoto. **Nota:**  Il `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` flag sono facoltativi flag di bit.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|PC confrontando l'intero contenuto del file.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|PC da checksum.|  
 |`SCC_DIFF_QD_TIME`|0x0040|Profondità coda per un timbro data/ora di file.|  
@@ -62,7 +59,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 ## <a name="populatedirlist-flags"></a>Flag PopulateDirList  
  Questi flag vengono utilizzati per il [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) nel `fOptions` parametro.  
   
-|Valore dell'opzione|Valore|Descrizione|  
+|Valore dell'opzione|Value|Descrizione|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Esaminare un solo livello di directory per le directory (questo è il valore predefinito).|  
 |SCC_PDL_RECURSIVE|0x0001|In modo ricorsivo, esaminare tutte le directory in ogni directory specificata.|  
@@ -71,7 +68,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 ## <a name="openproject-flags"></a>Flag OpenProject  
  Questi flag vengono utilizzati per il [SccOpenProject](../extensibility/sccopenproject-function.md) nel `dwFlags` parametro.  
   
-|Valore dell'opzione|Valore|Descrizione|  
+|Valore dell'opzione|Value|Descrizione|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Se il progetto non esiste nel controllo del codice sorgente, è necessario crearla. Se questo flag non è impostato, richiesta utente per il progetto da creare (a meno che non `SCC_OP_SILENTOPEN` flag è specificato).|  
 |SCC_OP_SILENTOPEN|0x00000002L|Non chiedere conferma all'utente di creare un progetto. semplicemente restituire `SCC_E_UNKNOWNPROJECT`.|  
@@ -81,8 +78,8 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
   
 |Flag|Valore|Descrizione|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|L'IDE passa le directory, non i file: ottenere tutti i file in tali directory.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|L'IDE passa le directory: introduzione di queste directory e tutte le sottodirectory.|  
+|`SCC_GET_ALL`|0x00000001L|L'IDE passa le directory, non file: Ottenere tutti i file in tali directory.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|L'IDE passa le directory: Ottenere queste directory e tutte le sottodirectory.|  
   
 ## <a name="noption-values"></a>valori nOption  
  Questi flag vengono utilizzati per il [SccSetOption](../extensibility/sccsetoption-function.md) nel `nOption` parametro.  

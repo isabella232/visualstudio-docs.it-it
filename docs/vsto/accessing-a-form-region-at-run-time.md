@@ -1,8 +1,6 @@
 ---
 title: Accedere a un'area del modulo in fase di esecuzione
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875433"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Accedere a un'area del modulo in fase di esecuzione
 
@@ -71,17 +69,17 @@ ms.locfileid: "52304480"
 
  Per consentire l'accesso a un controllo dall'esterno del file di codice dell'area del modulo, creare una proprietà in tale file di codice per la restituzione del controllo.  
 
- Per altre informazioni su come creare proprietà in C#, vedere [procedura: dichiarare e usare leggere scrivere le proprietà &#40;C&#35; Guida alla programmazione&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Per altre informazioni su come creare proprietà in C#, vedere [procedura: Dichiarare e usare leggere scrivere le proprietà &#40;C&#35; Guida alla programmazione di&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Per altre informazioni su come creare proprietà in Visual Basic, vedere [procedura: creare una proprietà (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Per altre informazioni su come creare proprietà in Visual Basic, vedere [come: Creare una proprietà (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>Vedere anche  
  [Linee guida per creare aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Procedura dettagliata: Progettazione di un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Azioni personalizzate nelle aree del modulo di Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Procedura dettagliata: Importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Procedura: impedire la visualizzazione di un'area del modulo di Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Procedura: Impedire la visualizzazione di un'area del modulo di Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
  [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)  

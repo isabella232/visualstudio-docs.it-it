@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915426"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Richiamo della trasformazione del testo in un'estensione VS
 Se si sta scrivendo un'estensione di Visual Studio, ad esempio un comando di menu o [linguaggio specifico di dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), è possibile usare il servizio del modello di testo per trasformare i modelli di testo. Ottenere il servizio <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> ed eseguirne il cast su <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
@@ -135,8 +134,8 @@ Sample text.
  È possibile passare i valori da un modello di testo tramite una classe di parametri derivata da <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Argomenti correlati
- Per generare testo da un modello di testo pre-elaborato: chiamare il `TransformText()` metodo della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Per generare testo da un modello di testo pre-elaborato: Chiamare il metodo `TransformText()` della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Per generare testo all'esterno di un'estensione di Visual Studio: definire un host personalizzato. Per altre informazioni, vedere [elaborazione di modelli di testo tramite un Host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Per generare testo all'esterno di un'estensione di Visual Studio: Definire un host personalizzato. Per altre informazioni, vedere [elaborazione di modelli di testo tramite un Host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Per generare il codice di origine che in un secondo momento può essere compilato ed eseguito: chiama il `t4.PreprocessTemplate()` metodo <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento: Chiamare il metodo `t4.PreprocessTemplate()` di <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

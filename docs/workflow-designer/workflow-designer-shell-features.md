@@ -3,7 +3,6 @@ title: Funzionalità della shell di Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880676"
 ---
 # <a name="workflow-designer-shell-features"></a>Funzionalità della shell di Progettazione flussi di lavoro
 
-Finestra di progettazione del flusso di lavoro è costituito da tre principali aree dell'interfaccia utente: l'area di progettazione, la barra di navigazione superiore e la shell di sotto di essa. La barra di navigazione, posizionata nella parte superiore dello schermo, viene usata per visualizzare l'elenco di predecessori dell'attività radice corrente. Per altre informazioni, vedere [procedura: utilizzo dello spostamento Breadcrumb](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'area della finestra di progettazione, posizionata al centro dello schermo, viene usata per creare flussi di lavoro. La shell, posizionata nella parte inferiore dello schermo, contiene alcuni pulsanti per la gestione della visualizzazione corrente.
+Finestra di progettazione del flusso di lavoro è costituito da tre principali aree dell'interfaccia utente: l'area di progettazione, la barra di navigazione superiore e la shell di sotto di essa. La barra di navigazione, posizionata nella parte superiore dello schermo, viene usata per visualizzare l'elenco di predecessori dell'attività radice corrente. Per altre informazioni, vedere [Procedura: Usare la struttura di spostamento](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'area della finestra di progettazione, posizionata al centro dello schermo, viene usata per creare flussi di lavoro. La shell, posizionata nella parte inferiore dello schermo, contiene alcuni pulsanti per la gestione della visualizzazione corrente.
 
 ## <a name="shell-features"></a>Caratteristiche della shell
  La shell presenta dei pulsanti sul lato destro della barra che è possibile usare per eseguire lo zoom avanti o indietro del flusso di lavoro, adattare il contenuto del flusso di lavoro alla dimensione dello schermo e mostrare o nascondere la carta panoramica. È possibile eseguire lo zoom avanti o indietro di un flusso di lavoro usando i tasti di scelta rapida CTRL++ e CTRL+ -.

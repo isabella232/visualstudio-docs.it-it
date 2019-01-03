@@ -1,8 +1,7 @@
 ---
-title: Estendere i diagrammi di dipendenza
+title: Estendere i diagrammi delle dipendenze
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
@@ -12,21 +11,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304e1fe6356768ae5243ae38748d920444be41e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a467366ca470c17c0f52bd72ae17e766bcb284d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889319"
 ---
-# <a name="extend-dependency-diagrams"></a>Estendere i diagrammi di dipendenza
-È possibile scrivere codice per creare e aggiornare i diagrammi di dipendenza e per convalidare la struttura del codice programma in base ai diagrammi di dipendenza in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
+# <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
+È possibile scrivere codice per creare e aggiornare i diagrammi delle dipendenze e per convalidare la struttura del codice programma in base ai diagrammi delle dipendenze in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
 
- Per ulteriori informazioni sui diagrammi di dipendenza, vedere:
+ Per altre informazioni sui diagrammi delle dipendenze, vedere:
 
--   [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+-   [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
 
--   [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
 
 -   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -39,15 +38,15 @@ ms.locfileid: "31949280"
 
 -   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
--   SDK di modellazione per Visual Studio
+-   Modeling SDK per Visual Studio
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 
- È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello. Per ulteriori informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).
+ È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello. Per altre informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).
 
- Per le versioni di Visual Studio che supportano i diagrammi di dipendenza, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per le versioni di Visual Studio che supportano i diagrammi delle dipendenze, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-section"></a>In questa sezione
  [Aggiungere comandi e movimenti ai diagrammi delle dipendenze](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
@@ -64,7 +63,7 @@ ms.locfileid: "31949280"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
-- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 - [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)

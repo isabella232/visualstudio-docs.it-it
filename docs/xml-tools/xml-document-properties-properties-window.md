@@ -2,7 +2,6 @@
 title: Proprietà dei documenti XML, finestra Proprietà
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913310"
 ---
-# <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, finestra proprietà
+# <a name="xml-document-properties-properties-window"></a>Proprietà di documento XML, finestra proprietà
 
 Il **proprietà** finestra fornisce informazioni di base relative al documento attivo nell'Editor XML. Le proprietà disponibili variano in base al tipo di documento XML correntemente attivo.
 
@@ -30,7 +29,7 @@ Il **proprietà** finestra fornisce informazioni di base relative al documento a
 
  **Input**
 
- Il documento di input associato al foglio di stile XSLT. Viene utilizzato per il **ShowXSLT Output** comando. È possibile selezionare un documento utilizzando Sfoglia (**...** ) pulsante.
+ Il documento di input associato al foglio di stile XSLT. Viene usato per il **ShowXSLT Output** comando. Un documento può essere selezionato utilizzando il pulsante Sfoglia (**...** ) pulsante.
 
  Questa proprietà è visibile solo quando il file XSLT è correntemente attivo nella finestra dell'editor.
 
@@ -42,15 +41,15 @@ Il **proprietà** finestra fornisce informazioni di base relative al documento a
 
  **Schemi**
 
- Gli schemi da usare per la convalida. Il pulsante viene aperta la **schemi XSD** nella finestra di dialogo consente di selezionare gli schemi da utilizzare.
+ Gli schemi da usare per la convalida. Il pulsante apre il **schemi XSD** nella finestra di dialogo può essere usata per selezionare gli schemi da usare.
 
  È possibile anche immettere il percorso degli schemi. Se vengono specificati più schemi, ogni singolo percorso di schema deve essere racchiuso tra virgolette.
 
  **Foglio di stile**
 
- Il file XSLT utilizzato per trasformare il documento quando la **Mostra l'Output XSLT** comando viene utilizzato. Se questo campo è vuoto quando il **Mostra l'Output XSLT** comando viene utilizzato, l'editor utilizzerà il valore fornito nel `xml-stylesheet` istruzione di documento o di elaborazione chiesto di immettere il nome del file.
+ Il file XSLT utilizzato per trasformare il documento quando la **Mostra l'Output XSLT** comando viene utilizzato. Se questo campo è vuoto quando il **Mostra l'Output XSLT** comando viene utilizzato, l'editor utilizzerà il valore fornito nel `xml-stylesheet` istruzione del documento o di elaborazione richiede il nome del file.
 
- Quando si modifica un file XSLT, questa proprietà può essere utilizzata per specificare che un foglio di stile deve essere utilizzato quando il **Mostra l'Output XSLT** o **Debug XSLT** comando selezionato. Ad esempio, è possibile eseguire tale operazione quando si modifica un foglio di stile incluso in un foglio di stile padre.
+ Quando si modifica un file XSLT, questa proprietà può essere utilizzata per specificare che deve essere un foglio di stile utilizzato quando la **Mostra l'Output XSLT** o **Debug XSLT** comando selezionato. Ad esempio, è possibile eseguire tale operazione quando si modifica un foglio di stile incluso in un foglio di stile padre.
 
 ## <a name="see-also"></a>Vedere anche
 

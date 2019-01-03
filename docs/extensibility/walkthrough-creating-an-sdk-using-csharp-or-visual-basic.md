@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Creazione di un SDK tramite c# o Visual Basic | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione di un SDK tramite C# o Visual Basic | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921653"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creare un SDK tramite c# o Visual Basic
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creare un SDK tramite C# o Visual Basic
 In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
   
 -   [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -136,7 +133,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 22. Nelle **Esplora soluzioni**, scegliere **SimpleMath.winmd**.  
   
-23. Nella barra dei menu, scegliere **vista** > **delle proprietà** (tastiera: scegliere la **F4** chiave).  
+23. Nella barra dei menu, scegliere **View** > **proprietà** (tastiera: Scegliere il **F4** key).  
   
 24. Nel **delle proprietà** finestra Modifica il **azione di compilazione** proprietà **contenuto**e quindi modificare il **Includi in VSIX** proprietà  **True**.  
   

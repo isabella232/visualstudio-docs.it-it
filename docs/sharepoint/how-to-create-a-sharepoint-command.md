@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creare un comando di SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un comando di SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117137"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894850"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Procedura: creare un comando di SharePoint
+# <a name="how-to-create-a-sharepoint-command"></a>Procedura: Creare un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti server in un'estensione degli strumenti di SharePoint, è necessario creare una classe personalizzata *comando SharePoint* per chiamare l'API. Il comando è definito in un assembly che è possibile chiamare direttamente nel modello a oggetti server.  
   
  Per altre informazioni sullo scopo dei comandi di SharePoint, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -31,9 +28,9 @@ ms.locfileid: "37117137"
   
 1.  Creare un progetto di libreria di classi con la configurazione seguente:  
   
-    -   È destinato a .NET Framework 3.5. Per altre informazioni sulla selezione del framework di destinazione, vedere [procedura: destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+    -   È destinato a .NET Framework 3.5. Per altre informazioni sulla selezione del framework di destinazione, vedere [come: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-    -   Ha come destinazione il AnyCPU o x64 piattaforma. Per impostazione predefinita, la piattaforma di destinazione per i progetti libreria di classi è AnyCPU. Per altre informazioni sulla selezione della piattaforma di destinazione, vedere [procedura: configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).  
+    -   Ha come destinazione il AnyCPU o x64 piattaforma. Per impostazione predefinita, la piattaforma di destinazione per i progetti libreria di classi è AnyCPU. Per altre informazioni sulla selezione della piattaforma di destinazione, vedere [come: Configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).  
   
     > [!NOTE]  
     >  Non è possibile implementare un comando di SharePoint nello stesso progetto che definisce un'estensione degli strumenti di SharePoint, perché i comandi di SharePoint hanno come destinazione la destinazione di estensioni di strumenti .NET Framework 3.5 e SharePoint il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. È necessario definire i comandi di SharePoint che vengono utilizzati per l'estensione in un progetto separato. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
@@ -60,7 +57,7 @@ ms.locfileid: "37117137"
   
 4.  Applicare il <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> al metodo. Questo attributo specifica un identificatore univoco per il comando. Questo identificatore non deve corrispondere al nome di metodo.  
   
-     Quando si chiama il comando dall'estensione strumenti di SharePoint, è necessario specificare lo stesso identificatore univoco. Per altre informazioni, vedere [procedura: eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).  
+     Quando si chiama il comando dall'estensione strumenti di SharePoint, è necessario specificare lo stesso identificatore univoco. Per altre informazioni, vedere [Procedura: Eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente illustra un comando di SharePoint con l'identificatore `Contoso.Commands.UpgradeSolution`. Questo comando Usa le API nel modello a oggetti server per eseguire l'aggiornamento a una soluzione distribuita.  
@@ -68,7 +65,7 @@ ms.locfileid: "37117137"
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]  
   
- Oltre al primo implicito <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parametro, questo comando ha anche un parametro di stringa personalizzata che contiene il percorso completo del file con estensione wsp che viene aggiornato al sito di SharePoint. Per informazioni su questo codice nel contesto di un esempio più esaustivo, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Oltre al primo implicito <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parametro, questo comando ha anche un parametro di stringa personalizzata che contiene il percorso completo del file con estensione wsp che viene aggiornato al sito di SharePoint. Per informazioni su questo codice nel contesto di un esempio più esaustivo, vedere [procedura dettagliata: Creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ## <a name="compiling-the-code"></a>Compilazione del codice  
  In questo esempio vengono richiesti riferimenti agli assembly seguenti:  
@@ -82,6 +79,5 @@ ms.locfileid: "37117137"
   
 ## <a name="see-also"></a>Vedere anche
  [Chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Procedura: eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Procedura: Eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  

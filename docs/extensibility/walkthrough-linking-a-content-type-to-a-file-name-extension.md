@@ -1,9 +1,6 @@
 ---
 title: "Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926187"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file
 È possibile definire il proprio tipo di contenuto e un collegamento un'estensione di file tramite le estensioni di editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione è già definito da un servizio di linguaggio. Tuttavia, per usarlo con MEF, è necessario comunque collegarlo a un tipo di contenuto.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -28,13 +25,13 @@ ms.locfileid: "39566753"
   
 ## <a name="create-a-mef-project"></a>Creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `ContentTypeTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `ContentTypeTest`.  
   
 2.  Nel **vsixmanifest** file, andare alla **asset** e impostare il **tipo** campo **MEFComponent**, il **sorgente** campo **un progetto nella soluzione corrente**e la **progetto** campo per il nome del progetto.  
   
 ## <a name="define-the-content-type"></a>Definire il tipo di contenuto  
   
-1.  Aggiungere un file di classe e denominarla `FileAndContentTypes`.  
+1.  Aggiungere un file di classe e assegnargli il nome `FileAndContentTypes`.  
   
 2.  Aggiungere riferimenti agli assembly riportati di seguito:  
   
@@ -93,7 +90,7 @@ ms.locfileid: "39566753"
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Aggiungere il tipo di contenuto per un'esportazione dell'editor  
   
-1.  Creare un'estensione dell'editor. Ad esempio, è possibile usare l'estensione di glifo di margine descritto nella [procedura dettagliata: creazione di un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Creare un'estensione dell'editor. Ad esempio, è possibile usare l'estensione di glifo di margine descritto in [procedura dettagliata: Creare un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Aggiungere la classe che è definita in questa procedura.  
   

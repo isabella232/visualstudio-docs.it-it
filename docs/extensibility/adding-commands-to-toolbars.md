@@ -1,9 +1,6 @@
 ---
 title: Aggiunta di comandi alle barre degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6bf8e8dffde406b3c11ebf043246f5b277446d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a5c815ebdbe91413df7694fefdff547c2d6c966b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901967"
 ---
 # <a name="add-commands-to-toolbars"></a>Aggiungere comandi alle barre degli strumenti
 Una barra degli strumenti è visualizzata una striscia orizzontale o verticale che contiene i pulsanti associati a comandi. È possibile aggiungere i propri comandi alle barre degli strumenti di molte diverse finestre in Visual Studio: la finestra principale di Visual Studio, Esplora soluzioni e finestre degli strumenti personalizzata.  

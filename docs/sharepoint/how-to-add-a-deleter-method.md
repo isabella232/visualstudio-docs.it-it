@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: aggiungere un metodo Deleter | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere un metodo Deleter | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0bc47da90356149e3fe2e1d1b888bf5ac6a877e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924176"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Procedura: aggiungere un metodo Deleter
+# <a name="how-to-add-a-deleter-method"></a>Procedura: Aggiungere un metodo Deleter
   È possibile abilitare un utente finale eliminare un record di dati da un elenco esterno in un sito di SharePoint tramite l'aggiunta di un metodo Deleter per il modello. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Per creare un metodo Deleter  
@@ -73,12 +68,10 @@ ms.locfileid: "49842677"
   
 ## <a name="see-also"></a>Vedere anche
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)  

@@ -1,9 +1,6 @@
 ---
 title: Funzionalità disponibili in base al tipo di progetto e applicazioni di Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986401"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funzionalità disponibili in base al tipo di progetto e applicazioni di Office
   In Visual Studio sono disponibili numerosi tipi di modelli di progetto che supportano scenari aziendali diversi per le applicazioni di Microsoft Office, inclusi i tipi seguenti:  
@@ -77,5 +74,3 @@ ms.locfileid: "53648152"
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Dati memorizzati nella cache nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creare a livello di programmazione un elemento di posta elettronica'
-ms.custom: ''
+title: 'Procedura: A livello di codice crea un elemento di posta elettronica'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b6b1dac69199ff7431eacbe05d8a17a1734763
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5b665a5ed281cafaf19017d2cf65a6ab1dd80b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869719"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Procedura: creare a livello di programmazione un elemento di posta elettronica
+# <a name="how-to-programmatically-create-an-email-item"></a>Procedura: A livello di codice crea un elemento di posta elettronica
   Questo esempio crea un messaggio di posta elettronica in Microsoft Office Outlook.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -35,5 +32,3 @@ ms.locfileid: "35256598"
 ## <a name="see-also"></a>Vedere anche  
  [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)   
  [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

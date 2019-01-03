@@ -1,9 +1,6 @@
 ---
 title: assembly di interoperabilità primari di Office
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926735"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -82,7 +79,7 @@ Gli assembly di interoperabilità primari di Office non sono richiesti per l'ese
 
 Ogni modello di progetto di Office in Visual Studio è progettato per funzionare con una singola applicazione di Microsoft Office. Per usare le funzionalità in più applicazioni di Microsoft Office oppure per usare funzionalità in un'applicazione o un componente che non ha un progetto in Visual Studio, è necessario aggiungere un riferimento agli assembly di interoperabilità primari richiesti.  
   
-Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità primari installati da Visual Studio sotto la `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Queste versioni degli assembly saranno visualizzate nella **Framework** scheda della finestra di **gestione riferimenti** nella finestra di dialogo. Per altre informazioni, vedere [procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità primari installati da Visual Studio sotto la `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Queste versioni degli assembly saranno visualizzate nella **Framework** scheda della finestra di **gestione riferimenti** nella finestra di dialogo. Per altre informazioni, vedere [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Se sono stati installati e registrati gli assembly di interoperabilità primari nella Global Assembly Cache, queste versioni appariranno nella scheda **COM** della finestra di dialogo **Gestione riferimenti** . Evitare di aggiungere riferimenti a queste versioni degli assembly, perché possono verificarsi alcuni problemi di sviluppo durante il loro uso. Ad esempio, se sono state registrate versioni differenti degli assembly di interoperabilità primari nella Global Assembly Cache, il progetto verrà automaticamente associato all'ultima versione registrata dell'assembly, anche se è stata specificata una versione differente nella scheda **COM** della finestra di dialogo **Gestione riferimenti** .  
   
@@ -113,7 +110,7 @@ Nella tabella seguente sono elencati gli assembly di interoperabilità primari d
 |Libreria oggetti di Microsoft Publisher 14.0<br /><br /> Libreria oggetti di Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|  
 |Libreria riferimenti a oggetti Web di Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Libreria riferimenti a oggetti pagina di Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Libreria dei tipi Microsoft Smart Tags 2.0 **Nota:** Smart tag sono deprecati in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0 libreria dei tipi **Nota:**  Gli smart tag sono deprecati in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
 |Libreria dei tipi Microsoft Visio 14.0<br /><br /> Libreria dei tipi Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|  
 |Libreria dei tipi Salva come pagina Web Microsoft Visio 14.0<br /><br /> Libreria dei tipi Salva come pagina Web Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Libreria dei tipi controlli disegno di Microsoft Visio 14.0<br /><br /> Libreria dei tipi controlli disegno di Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Quando si installano e registrano gli assembly di interoperabilità primari di O
 
 Quando ad esempio una soluzione che fa riferimento a un assembly di interoperabilità primario di [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] viene eseguita in un computer in cui è installata la versione [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dello stesso assembly, l'assembly di reindirizzamento delle associazioni indica al runtime di [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i caricare la versione [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dell'assembly di interoperabilità primario. 
 
-Per altre informazioni, vedere [procedura: abilitare e disabilitare il reindirizzamento di associazione automatico](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+Per altre informazioni, vedere [Procedura: Abilitare e disabilitare il reindirizzamento di associazione automatico](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Vedere anche  
 
-- [Procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Cenni preliminari sul modello a oggetti di Excel](../vsto/excel-object-model-overview.md)   
 - [Soluzioni InfoPath](../vsto/infopath-solutions.md)   
 - [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Per altre informazioni, vedere [procedura: abilitare e disabilitare il reindiriz
 - [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)   
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)   
 - [Riferimento generale &#40;sviluppo per Office in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

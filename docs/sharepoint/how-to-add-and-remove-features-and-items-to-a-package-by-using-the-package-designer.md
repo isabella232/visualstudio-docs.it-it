@@ -1,15 +1,10 @@
 ---
-title: 'Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando la finestra di progettazione del pacchetto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando la finestra di progettazione del pacchetto | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerDesign
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60a1de6a499b033f99844280c3d2aa73b6ed8ba6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 5b28db9329debba9e46606d0f57117e4f01a8f26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906917"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti
   Quando si crea una soluzione di SharePoint, Visual Studio aggiunge le funzionalità di SharePoint predefinito per il pacchetto della soluzione. Prima della distribuzione definitiva, è possibile aggiungere e rimuovere elementi di progetto SharePoint e funzionalità per modificare il pacchetto di SharePoint.  
   
- In alternativa, è possibile usare Esplora pacchetti per aggiungere e rimuovere elementi di progetto SharePoint. È anche possibile visualizzare e modificare la gerarchia delle funzionalità che vengono inserite nel pacchetto (con estensione wsp) e gli elementi di progetto SharePoint. Per altre informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ In alternativa, è possibile usare Esplora pacchetti per aggiungere e rimuovere elementi di progetto SharePoint. È anche possibile visualizzare e modificare la gerarchia delle funzionalità che vengono inserite nel pacchetto (con estensione wsp) e gli elementi di progetto SharePoint. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ## <a name="add-features-to-a-sharepoint-package"></a>Aggiungere funzionalità a un pacchetto di SharePoint  
  È possibile utilizzare la finestra di progettazione di pacchetti per aggiungere funzionalità a un pacchetto di SharePoint.  
@@ -38,7 +33,7 @@ ms.locfileid: "51294968"
   
 1. Aprire il **Progettazione pacchetti**.  
   
-    Per altre informazioni, vedere [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+    Per altre informazioni, vedere [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2. Aggiungere una o più funzionalità di SharePoint mediante l'esecuzione di uno o più delle operazioni seguenti:  
   
@@ -63,6 +58,5 @@ ms.locfileid: "51294968"
   
 ## <a name="see-also"></a>Vedere anche
  [Creare pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Procedura: creare un pacchetto](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
+ [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Procedura: Creare un pacchetto](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  

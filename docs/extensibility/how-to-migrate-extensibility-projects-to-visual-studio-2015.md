@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2015 | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915335"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
 Ecco come eseguire l'aggiornamento dell'estensione.  
   
 > [!IMPORTANT]

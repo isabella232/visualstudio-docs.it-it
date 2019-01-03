@@ -1,8 +1,7 @@
 ---
-title: Creare e modificare un File di Schema XSD
+title: Creare e modificare un file di schema XSD
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
@@ -10,24 +9,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 015523e35f3593523ee362faeb6aa544139e1103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855507"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procedura: creare e modificare un file di schema XSD
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procedura: Creare e modificare un file di schema XSD
 
 In questo argomento viene descritto come creare un nuovo file XML Schema (XSD) e quindi aggiungervi contenuto.
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Per creare un nuovo file XML Schema
 
-1. In Visual Studio, aprire il **File** dal menu **New** > **File**. In alternativa, usare il **Ctrl**+**N** tasto di scelta rapida.
+1. In Visual Studio, aprire il **File** dal menu **New** > **File**. In alternativa, usare il **Ctrl**+**N** tasti di scelta rapida.
 
-2. Nel **nuovo File** finestra di dialogo **XML Schema** e quindi selezionare **aperta**.
+2. Nel **nuovo File** finestra di dialogo **XML Schema** e quindi selezionare **Open**.
 
-   Verrà creato un nuovo file. La visualizzazione iniziale e un oggetto vuoto **XML Schema Explorer** finestra vengono visualizzate in Visual Studio.
+   Verrà creato un nuovo file. La visualizzazione iniziale e un oggetto vuoto **XML Schema Explorer** visualizzata la finestra in Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Per modificare un file
 
@@ -41,4 +40,4 @@ In questo argomento viene descritto come creare un nuovo file XML Schema (XSD) e
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzo di dati XML](../xml-tools/working-with-xml-data.md)
+- [Uso dei dati XML](../xml-tools/working-with-xml-data.md)

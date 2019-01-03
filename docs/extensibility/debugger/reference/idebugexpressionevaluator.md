@@ -1,9 +1,6 @@
 ---
-title: IDebugExpressionEvaluator | Documenti Microsoft
-ms.custom: ''
+title: IDebugExpressionEvaluator | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator
@@ -15,16 +12,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a4b7061b5de50162bd04e033a983987ab4f35f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5b66c13b202e4f0b4838565f4ee5816f0dbdeb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846360"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestiti esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Questa interfaccia rappresenta l'analizzatore di espressioni.  
   
@@ -38,7 +35,7 @@ IDebugExpressionEvaluator : IUnknown
  L'analizzatore di espressioni deve implementare questa interfaccia.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Per ottenere questa interfaccia, creare un'istanza dell'analizzatore di espressioni tramite il `CoCreateInstance` (metodo) con ID di classe (CLSID) dell'analizzatore. Vedere l'esempio.  
+ Per ottenere questa interfaccia, creare un'istanza dell'analizzatore di espressioni tramite il `CoCreateInstance` metodo tramite la classe ID (CLSID) dell'analizzatore. Vedere l'esempio.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugExpressionEvaluator`.  
@@ -48,23 +45,23 @@ IDebugExpressionEvaluator : IUnknown
 |[Analisi](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Converte una stringa di espressione in un'espressione analizzata.|  
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Ottiene le variabili locali, argomenti e altre proprietà di un metodo.|  
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Converte un percorso di metodo e l'offset in un indirizzo di memoria.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Determina la lingua da utilizzare per creare risultati stampabili.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Imposta la radice del Registro di sistema. Usato per il debug side-by-side.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Determina la lingua da usare per creare risultati stampabili.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Imposta la radice del Registro di sistema. Utilizzato per eseguire il debug side-by-side.|  
   
 ## <a name="remarks"></a>Note  
- In una situazione tipica, il motore di debug (DE) crea un'istanza dell'analizzatore di espressioni (Java EE) in seguito a una chiamata a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Poiché la Germania conosce la lingua e il fornitore dell'amministratore che desidera utilizzare, la Germania Ottiene CLSID del motore di esecuzione dal Registro di sistema (il [SDK helper per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funzione `GetEEMetric`, risulta utile con l'operazione di recupero).  
+ In una situazione tipica, il motore di debug (DE) crea un'istanza dell'analizzatore di espressioni (EE) come risultato una chiamata a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Poiché la Germania riconosce che la lingua e il fornitore della libreria l'analizzatore di Espressioni da usare, la Germania Ottiene CLSID del motore di esecuzione dal Registro di sistema (la [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funzione `GetEEMetric`, aiuta a con l'operazione di recupero).  
   
- Dopo l'analizzatore di Espressioni viene creata un'istanza, la Germania chiama [analizzare](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per analizzare l'espressione e archiviarlo in un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto. In un secondo momento, una chiamata a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) valuta l'espressione.  
+ Dopo che l'analizzatore di Espressioni viene creata un'istanza, chiama la Germania [analizzare](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per analizzare l'espressione e archiviarlo in un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto. In un secondo momento, una chiamata a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) valuta l'espressione.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come creare un'istanza dell'analizzatore di espressioni specificato un provider di simboli e un indirizzo nel codice sorgente. In questo esempio viene utilizzata una funzione, `GetEEMetric`, dal [SDK helper per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) library, dbgmetric.lib.  
+ In questo esempio viene illustrato come creare un'istanza dell'analizzatore di espressioni ha un provider di simboli e un indirizzo nel codice sorgente. Questo esempio Usa una funzione, `GetEEMetric`, dal [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) library, dbgmetric.lib.  
   
 ```cpp  
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,  

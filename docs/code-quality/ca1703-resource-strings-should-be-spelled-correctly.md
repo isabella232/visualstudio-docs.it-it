@@ -2,7 +2,6 @@
 title: 'CA1703: Le stringhe di risorsa devono essere digitate correttamente'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ResourceStringsShouldBeSpelledCorrectly
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8103353fc5d2e0d74b5355259f0e2bc77ddd974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890589"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Le stringhe di risorsa devono essere digitate correttamente
 
@@ -38,28 +37,28 @@ Una stringa di risorsa contiene una o più parole che non sono riconosciute dall
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola analizza la stringa di risorsa in parole (suddivisione in token le parole composte) e controlla l'ortografia di ciascuna parola/token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Questa regola analizza la stringa di risorsa in parole (suddivisione in token le parole composte) e controlla l'ortografia di ciascuna parola/token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, utilizzare le parole complete che siano state digitate correttamente o aggiungere le parole a un dizionario personalizzato. Per informazioni sull'utilizzo di dizionari personalizzati, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Per correggere una violazione di questa regola, usare parole complete che siano state digitate correttamente o aggiungere le parole in un dizionario personalizzato. Per informazioni su come usare i dizionari personalizzati, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Modificare la lingua di dizionario
 
-Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Se si desidera modificare la lingua del correttore ortografico, è possibile effettuare questa operazione aggiungendo uno dei seguenti attributi per il *AssemblyInfo.cs* oppure *AssemblyInfo. vb* file:
+Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Se si desidera modificare la lingua del correttore ortografico, è possibile farlo mediante l'aggiunta di uno dei seguenti attributi per il *AssemblyInfo.cs* oppure *AssemblyInfo* file:
 
-- Utilizzare <xref:System.Reflection.AssemblyCultureAttribute> per specificare le impostazioni cultura, se le risorse si trovano in un assembly satellite.
-- Uso <xref:System.Resources.NeutralResourcesLanguageAttribute> per specificare il *lingua* dell'assembly se le risorse sono nello stesso assembly del codice.
+- Usare <xref:System.Reflection.AssemblyCultureAttribute> specificare le impostazioni cultura, se le risorse si trovano in un assembly satellite.
+- Uso <xref:System.Resources.NeutralResourcesLanguageAttribute> per specificare il *delle impostazioni cultura neutre* dell'assembly se le risorse sono nello stesso assembly del codice.
 
 > [!IMPORTANT]
-> Se si imposta le impostazioni cultura su un valore diverso da delle impostazioni cultura basate su inglese, questa regola di analisi codice invisibile all'utente è disabilitata.
+> Se si imposta le impostazioni cultura su un valore qualsiasi diverso da una cultura basata su inglese, questa regola di analisi del codice viene disabilitata automaticamente.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-Non escludere un avviso da questa regola. Correttamente ortografia consente di ridurre il tempo necessario per l'apprendimento delle nuove librerie di software.
+Non escludere un avviso da questa regola. Parole formulate correttamente riducono il tempo necessario per l'apprendimento di nuove librerie software.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: Valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

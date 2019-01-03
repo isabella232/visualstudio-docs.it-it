@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 2 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829907"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.  
   
- In questa procedura dettagliata si aggiungerà una procedura guidata per il modello di progetto colonna del sito che è illustrato nel [procedura dettagliata: creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Quando un utente crea un progetto colonna del sito, la procedura guidata raccoglie le informazioni relative alla colonna di sito (ad esempio il tipo di base e gruppo) e aggiunge queste informazioni per il *Elements* file nel nuovo progetto.  
+ In questa procedura dettagliata si aggiungerà una procedura guidata per il modello di progetto colonna del sito che viene illustrato in [procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Quando un utente crea un progetto colonna del sito, la procedura guidata raccoglie le informazioni relative alla colonna di sito (ad esempio il tipo di base e gruppo) e aggiunge queste informazioni per il *Elements* file nel nuovo progetto.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942075"
 > Per una serie di flussi di lavoro di esempio, vedere [esempi di flusso di lavoro di SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per eseguire questa procedura dettagliata, è necessario innanzitutto creare la soluzione SiteColumnProjectItem completando [procedura dettagliata: creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+ Per eseguire questa procedura dettagliata, è necessario innanzitutto creare la soluzione SiteColumnProjectItem completando [procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  Sono inoltre necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942075"
   
   Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
-- Procedure guidate per i modelli di progetto ed elemento in Visual Studio. Per altre informazioni, vedere [procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.  
+- Procedure guidate per i modelli di progetto ed elemento in Visual Studio. Per altre informazioni, vedere [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.  
   
 - Colonne del sito in SharePoint. Per altre informazioni, vedere [colonne](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942075"
 |SharePoint (comandi)|Questi sono metodi che vengono utilizzati dal modello di dati guidata per effettuare chiamate nel sito di SharePoint locale, mentre è in esecuzione la procedura guidata. Poiché i comandi di SharePoint devono destinati a .NET Framework 3.5, questi comandi vengono implementati in un assembly diverso rispetto al resto del codice della procedura guidata.|  
   
 ## <a name="create-the-projects"></a>Creare i progetti
- Per completare questa procedura dettagliata, è necessario aggiungere più progetti alla soluzione creata in SiteColumnProjectItem [procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ Per completare questa procedura dettagliata, è necessario aggiungere più progetti alla soluzione creata in SiteColumnProjectItem [procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Un progetto WPF. Si implementeranno i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia e definire la procedura guidata dell'interfaccia utente in questo progetto.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942075"
   
 3.  Assicurarsi che il framework di destinazione sia impostato su .NET Framework 4.5, non .NET Framework 4.5 Client Profile.  
   
-     Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Aprire il menu di scelta rapida per il **ProjectTemplateWizard** del progetto, scegliere **Add**, quindi scegliere **nuovo elemento**.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942075"
   
 13. Se si sta sviluppando un progetto Visual Basic, importare lo spazio dei nomi ProjectTemplateWizard nel progetto usando il **Progettazione progetti**.  
   
-     Per altre informazioni, vedere [procedura: aggiungere o rimuovere spazi dei nomi importati &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere spazi dei nomi importati &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Per configurare il progetto SharePointcommands
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942075"
 1.  Nella barra dei menu scegliere **Compila** > **Compila soluzione**.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Rimozione del file snk dal modello di progetto
- Nelle [procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), il modello di progetto creato contiene un file snk utilizzato per firmare ogni istanza di progetto colonna del sito. Questo file snk è più necessario perché la procedura guidata genera ora un nuovo file snk per ogni progetto. Rimuovere il file snk dal modello di progetto e rimuovere i riferimenti a questo file.  
+ In [procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), il modello di progetto creato contiene un file snk utilizzato per firmare ogni istanza di progetto colonna del sito. Questo file snk è più necessario perché la procedura guidata genera ora un nuovo file snk per ogni progetto. Rimuovere il file snk dal modello di progetto e rimuovere i riferimenti a questo file.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Per rimuovere il file snk dal modello di progetto  
   
@@ -546,5 +543,4 @@ ms.locfileid: "49942075"
  [Definire tipi di elemento di progetto SharePoint personalizzati](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creazione di modelli di elementi e modelli di progetto per elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Riferimenti allo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)  

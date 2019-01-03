@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Associare estensioni di codice gestito a documenti'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6e54e8f4b2cb4e94a83446497c24f9f808210f7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849794"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: Associare estensioni di codice gestito a documenti
   È possibile collegare un assembly di personalizzazione in un documento esistente di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file che è supportato per i progetti di Microsoft Office e gli strumenti di sviluppo in Visual Studio. Per altre informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).  
@@ -57,4 +54,3 @@ ms.locfileid: "53646893"
  [Gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Procedura: Rimuovere estensioni di codice gestito dai documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  

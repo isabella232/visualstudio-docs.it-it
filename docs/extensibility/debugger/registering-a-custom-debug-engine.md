@@ -1,9 +1,6 @@
 ---
 title: La registrazione di un oggetto personalizzato di motore di Debug | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 493a3ee8ee6b4f1a5dd62bd205831b99b79ca48a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896097"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrare un motore di debug personalizzato
 Il motore di debug deve registrarsi come una class factory e le convenzioni COM seguenti, nonché registrare con Visual Studio tramite la sottochiave del Registro di sistema di Visual Studio.  
   
 > [!NOTE]
->  È possibile trovare un esempio di come registrare un motore di debug nell'esempio TextInterpreter, che viene compilato come parte di [esercitazione: creazione di un motore di debug tramite ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  È possibile trovare un esempio di come registrare l'esempio TextInterpreter, che viene compilato come parte di un motore di debug di [esercitazione: Creazione di un motore di debug tramite ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>Processo server DLL  
  Un motore di debug è in genere configurato in un proprio DLL come un server COM. Di conseguenza, il motore di debug prima necessario registrare il CLSID della relativa class factory con COM Visual Studio possono accedervi. Quindi, il motore di debug deve eseguire la registrazione con Visual Studio per stabilire le proprietà, in caso contrario, noti come le metriche, il debug supporta del motore. La scelta delle metriche scritte nella sottochiave del Registro di sistema di Visual Studio dipende dalle funzionalità che supporta il motore di debug.  

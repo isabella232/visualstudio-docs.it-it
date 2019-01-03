@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Recuperare i dati memorizzati nella cache da una cartella di lavoro in un server'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1972b18588cc90621c71c1ce68d2046509dec4ee
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0c64ed8606a1c6fec4562048c517bdb883c61320
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888127"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procedura dettagliata: Recuperare i dati memorizzati nella cache da una cartella di lavoro in un server
   Questa procedura dettagliata illustra come recuperare i dati da un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.

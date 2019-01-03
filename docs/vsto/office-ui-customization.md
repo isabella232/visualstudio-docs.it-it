@@ -1,9 +1,6 @@
 ---
 title: Personalizzazione dell'interfaccia utente di Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924827"
 ---
 # <a name="office-ui-customization"></a>Personalizzazione dell'interfaccia utente di Office
   È possibile personalizzare l'interfaccia utente (UI) delle applicazioni Microsoft Office mediante gli strumenti di sviluppo di Office in Visual Studio. Questo argomento descrive le funzionalità dell'interfaccia utente che è possibile personalizzare nelle sezioni seguenti:  
@@ -96,7 +93,7 @@ ms.locfileid: "49836767"
  Per altre informazioni, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md) e [Windows Form controlli nella panoramica di documenti Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menu di scelta rapida  
- Quando si preme il pulsante destro del mouse in un documento o in una finestra dell'applicazione, viene visualizzato un menu di scelta rapida. È possibile impostare un menu di scelta rapida in modo che venga visualizzato dopo un evento, ad esempio quando un utente fa clic con il pulsante destro del mouse su un documento, una cartella di lavoro o un controllo host. È possibile aggiungere diversi comandi o controlli di menu a a un menu di scelta rapida. Creare menu di scelta rapida utilizzando XML. Se si aggiunge un **sulla barra multifunzione (XML)** elemento al progetto di Office, è possibile aggiungere XML al file XML della barra multifunzione per creare menu di scelta rapida. Per altre informazioni sull'utilizzo di XML per creare menu di scelta rapida, vedere [procedura: aggiungere comandi a menu di scelta rapida](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Quando si preme il pulsante destro del mouse in un documento o in una finestra dell'applicazione, viene visualizzato un menu di scelta rapida. È possibile impostare un menu di scelta rapida in modo che venga visualizzato dopo un evento, ad esempio quando un utente fa clic con il pulsante destro del mouse su un documento, una cartella di lavoro o un controllo host. È possibile aggiungere diversi comandi o controlli di menu a a un menu di scelta rapida. Creare menu di scelta rapida utilizzando XML. Se si aggiunge un **sulla barra multifunzione (XML)** elemento al progetto di Office, è possibile aggiungere XML al file XML della barra multifunzione per creare menu di scelta rapida. Per altre informazioni sull'utilizzo di XML per creare menu di scelta rapida, vedere [come: Aggiungere comandi a menu di scelta rapida](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836767"
  [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
  [Riquadri attività personalizzati](../vsto/custom-task-panes.md)   
  [Usare i controlli WPF nelle soluzioni Office](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Procedura: il componente aggiuntivo Mostra errori dell'interfaccia utente](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Procedura: Mostra errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [Procedura dettagliata: Raccogliere i dati di utilizzo di un modulo di Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  

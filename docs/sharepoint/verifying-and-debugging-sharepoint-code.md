@@ -1,9 +1,6 @@
 ---
 title: Verifica e debug del codice di SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb462c01b1c4809a192d432ad1364dcaa58e0277
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1705e77472ba9b8fa7a01d047c0aadaf342b7932
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916835"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Verificare ed eseguire il debug del codice di SharePoint
 Con IntelliTrace e il testing unità è possibile eseguire più facilmente il debug delle soluzioni SharePoint, nonché garantire il corretto funzionamento di ogni singolo metodo in esse. È possibile usare queste funzionalità per i progetti di SharePoint in Visual Studio, seguire le stesse procedure utilizzate per altri tipi di progetti.

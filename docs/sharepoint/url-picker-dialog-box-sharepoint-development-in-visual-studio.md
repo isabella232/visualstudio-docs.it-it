@@ -1,9 +1,6 @@
 ---
 title: Finestra di dialogo Selezione URL (sviluppo per SharePoint in Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.VWD.URLPicker
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffeca5bf0149ce5a36e5abb77eab673e87f36dc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925901"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Finestra di dialogo Selezione URL (sviluppo per SharePoint in Visual Studio)
   Nella finestra di dialogo di selezione URL è possibile scegliere i file come file di pagina master o file di immagine posizionati nel progetto o nel server locale in cui è in esecuzione SharePoint.  
@@ -46,7 +43,7 @@ ms.locfileid: "49950758"
   
   Espandere la **Server** nodo per scegliere i file che si trovano nel server locale in cui è in esecuzione SharePoint. Deve essere visualizzato come selezionabili nella finestra di dialogo, questi file devono soddisfare i criteri seguenti:  
   
-- Il file deve trovarsi in uno dei seguenti cartelle mappate: **immagini**, **layout**, o **ControlTemplates**.  
+- Il file deve trovarsi in uno dei seguenti cartelle mappate: **Le immagini**, **layout**, o **ControlTemplates**.  
   
 - Il file non può trovarsi nel database del contenuto di SharePoint.  
   
@@ -62,4 +59,3 @@ ms.locfileid: "49950758"
  [Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  

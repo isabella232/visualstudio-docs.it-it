@@ -1,13 +1,8 @@
 ---
 title: 'Procedura dettagliata: Creazione di una Web Part per SharePoint tramite una finestra di progettazione | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870912"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: Creare una web part per SharePoint tramite una finestra di progettazione
 
@@ -74,7 +69,7 @@ Progettare la web part aggiungendo i controlli dal **casella degli strumenti** n
 
 1. Nella finestra di progettazione in Visual Web Developer, scegliere il **progettazione** pressione di tab per passare alla visualizzazione progettazione.
 
-2. Nella barra dei menu, scegliere **View** > **casella degli strumenti**.
+2. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
 
 3. Nel **Standard** nodo delle **della casella degli strumenti**, scegliere il **CheckBoxList** controllare e quindi effettuare una delle operazioni seguenti:
 
@@ -193,5 +188,5 @@ Gli eventi da tutti i calendari specificati vengono visualizzati nella visualizz
 ## <a name="see-also"></a>Vedere anche
 
 [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Procedura: creare una web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Procedura: Creare una web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [Procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

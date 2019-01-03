@@ -1,15 +1,10 @@
 ---
-title: 'Procedura: aggiungere una proprietà personalizzata | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere una proprietà personalizzata | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913297"
 ---
-# <a name="how-to-add-a-custom-property"></a>Procedura: aggiungere una proprietà personalizzata
+# <a name="how-to-add-a-custom-property"></a>Procedura: Aggiungere una proprietà personalizzata
   È possibile aggiungere proprietà personalizzate per il modello usando il **Editor di proprietà**. È possibile accedere a queste proprietà nel codice per recuperare informazioni quali le stringhe di connessione e altri dati in fase di esecuzione.  
   
 ### <a name="to-add-a-custom-property"></a>Per aggiungere una proprietà personalizzata  
@@ -53,5 +48,3 @@ ms.locfileid: "36756230"
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: Soluzioni | Documenti Microsoft
-ms.custom: ''
+title: Soluzioni | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869479"
 ---
 # <a name="solutions"></a>Soluzioni
-Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione. Le informazioni di stato e di progetto relativi alla soluzione vengono archiviati in due file di soluzione, un file di soluzione basata su testo (con estensione sln) e un file di soluzione binario utente opzione (suo Solution).  
+Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione. Le informazioni di progetto e lo stato relativi alla soluzione vengono archiviati in due file di soluzione, un file di soluzione basata su testo (con estensione sln) e un file di soluzione binario utente opzione (con estensione suo).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Panoramica](../../extensibility/internals/solutions-overview.md)  

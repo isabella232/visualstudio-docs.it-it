@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: recuperare una cartella a livello programmatico in base al nome'
-ms.custom: ''
+title: 'Procedura: Recuperano una cartella in base al nome'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622ad7057b50f73dbd74108e3d9619017c354b86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872674"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: recuperare una cartella a livello programmatico in base al nome
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: Recuperano una cartella in base al nome
   Questo esempio Ottiene un riferimento a una cartella personalizzata denominata e quindi Visualizza il contenuto della cartella.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35672340"
   
 ## <a name="see-also"></a>Vedere anche  
  [Con le cartelle di lavoro](../vsto/working-with-folders.md)   
- [Procedura: eseguire la ricerca a livello di codice all'interno di una cartella specifica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Procedura: eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Procedura: creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Procedura: Eseguire la ricerca a livello di codice all'interno di una cartella specifica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Procedura: A livello di programmazione creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md)  

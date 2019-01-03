@@ -1,9 +1,6 @@
 ---
 title: Aggiunta di un elenco a un sottomenu ultima usata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f436a9c0589f1661e9ad41c76fbd0cf641cc8496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858182"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Aggiungere che un usati di recente elenco a un sottomenu
 Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md)e viene illustrato come aggiungere un elenco dinamico di un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco più recente (MRU).  
@@ -49,8 +46,8 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
 2.  Nel `Symbols` nella sezione di `GuidSymbol` nodo denominato guidTestCommandPackageCmdSet, aggiungere il simbolo per il `MRUListGroup` gruppo e il `cmdidMRUList` comando, come indicato di seguito.  
   
     ```csharp  
-    <IDSymbol name="MRUListGroup" value="0x1200"/>  
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
+    <IDSymbol name="MRUListGroup" value="0x1200"/>  
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
 3.  Nel `Groups` sezione, aggiungere il gruppo dichiarato dopo le voci di gruppo esistente.  
@@ -89,7 +86,7 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
-    public const uint cmdidMRUList = 0x200;  
+    public const uint cmdidMRUList = 0x200;  
     ```  
   
 2.  Nelle *TestCommand.cs* aggiungere la seguente istruzione using.  
@@ -151,7 +148,7 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
 6.  Dopo il `InitMRUMenu` metodo, aggiungere il codice seguente `OnMRUQueryStatus` (metodo). Questo è il gestore che imposta il testo per ogni elemento MRU.  
   
     ```csharp  
-    private void OnMRUQueryStatus(object sender, EventArgs e)  
+    private void OnMRUQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -159,7 +156,7 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
             }  
         }  
     }  
@@ -168,7 +165,7 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
 7.  Dopo il `OnMRUQueryStatus` metodo, aggiungere il codice seguente `OnMRUExec` (metodo). Questo è il gestore per la selezione di un elemento MRU. Questo metodo consente di spostare l'elemento selezionato nella parte superiore dell'elenco e quindi Visualizza l'elemento selezionato in una finestra di messaggio.  
   
     ```csharp  
-    private void OnMRUExec(object sender, EventArgs e)  
+    private void OnMRUExec(object sender, EventArgs e)  
     {  
         var menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -176,7 +173,7 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiungere un sottomen
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                string selection = this.mruList[MRUItemIndex] as string;  
+                string selection = this.mruList[MRUItemIndex] as string;  
                 for (int i = MRUItemIndex; i > 0; i--)  
                 {  
                     this.mruList[i] = this.mruList[i - 1];  

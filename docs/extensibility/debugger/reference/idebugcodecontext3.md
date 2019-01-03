@@ -1,9 +1,6 @@
 ---
-title: IDebugCodeContext3 | Documenti Microsoft
-ms.custom: ''
+title: IDebugCodeContext3 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugCodeContext3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 451e61ab7d6f74c83898987cdbecad2a9e13b06c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4632e2a616bbc5c93cd6fb6ed2375217d4fd2b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927402"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
-Estende il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) interfaccia per abilitare il recupero delle interfacce di modulo e processo.  
+Estende la [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) interfaccia per abilitare il recupero delle interfacce di modulo e processo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -30,10 +27,10 @@ IDebugCodeContext3 : IDebugCodeContext2
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Implementata dai motori di debug e utilizzato per il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacchetto di Debug.  
+ Implementata dai motori di debug e utilizzato dal [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacchetto di Debug.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi nel `IDebugCodeContext2` interfaccia, implementa i metodi seguenti:  
+ Oltre ai metodi nel `IDebugCodeContext2` interfaccia, questa interfaccia implementa i metodi seguenti:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -41,11 +38,11 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera un riferimento all'interfaccia del processo di debug.|  
   
 ## <a name="remarks"></a>Note  
- Si tratta di un'interfaccia facoltativa che in genere non deve essere implementato.  
+ Si tratta di un'interfaccia opzionale che in genere non deve essere implementato.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

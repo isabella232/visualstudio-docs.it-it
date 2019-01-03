@@ -8,16 +8,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 464616a70d1c6779b2dd370933acc4a56300d17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7886a42466e0840c45ae0063a69b049ef7582b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900743"
 ---
 # <a name="properties-of-model-elements"></a>Proprietà degli elementi del modello
-In questa sezione sono elencate le proprietà visualizzate nella finestra Proprietà quando si seleziona un elemento del diagramma della definizione DSL o in Esplora DSL.
+In questa sezione sono elencate le proprietà visualizzate nella finestra Proprietà quando si seleziona un elemento nel diagramma di definizione DSL o in DSL Explorer.
 
  In alcuni casi, le proprietà aggiuntive sono disponibili nella finestra Dettagli DSL.
 

@@ -1,9 +1,6 @@
 ---
 title: Associazione tardiva nelle soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,59 +15,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847256"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associazione tardiva nelle soluzioni Office
-  Alcuni tipi nei modelli a oggetti delle applicazioni di Office forniscono le funzionalità disponibili tramite le funzionalità di associazione tardiva. Ad esempio, alcuni metodi e proprietà può restituire diversi tipi di oggetti a seconda del contesto dell'applicazione di Office e alcuni tipi possono esporre metodi o proprietà in contesti diversi.  
+  Alcuni tipi nei modelli a oggetti delle applicazioni di Office offrono funzionalità che è disponibile tramite le funzionalità di associazione tardiva. Ad esempio, alcuni metodi e proprietà può restituire diversi tipi di oggetti a seconda del contesto dell'applicazione di Office e alcuni tipi possono esporre diversi metodi o proprietà in contesti diversi.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Progetti di Visual Basic dove **Option Strict** è disattivato e progetti Visual c# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] può lavorare direttamente con i tipi che utilizzano queste funzionalità di associazione tardiva.  
+ Progetti Visual Basic, dove **Option Strict** è disattivato e Visual C# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o il [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] può lavorare direttamente con i tipi che utilizzano queste funzionalità di associazione tardiva.  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>I valori restituiti implicito ed esplicito eseguire il cast dell'oggetto  
- Numerosi metodi e proprietà di restituire assembly di interoperabilità primari (PIA) di Microsoft Office <xref:System.Object> valori, poiché possono restituire diversi tipi di oggetti. Ad esempio, il <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> proprietà restituisce un <xref:System.Object> perché il relativo valore restituito può essere un <xref:Microsoft.Office.Interop.Excel.Worksheet> o <xref:Microsoft.Office.Interop.Excel.Chart> oggetto, a seconda del foglio attivo.  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>I valori restituiti implicite ed esplicite cast dell'oggetto  
+ Numerosi metodi e proprietà di Microsoft Office assembly di interoperabilità primari (PIA) restituiscono <xref:System.Object> valori, perché possono restituire diversi tipi di oggetti. Ad esempio, il <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> proprietà restituisce un <xref:System.Object> perché il relativo valore restituito può essere una <xref:Microsoft.Office.Interop.Excel.Worksheet> o <xref:Microsoft.Office.Interop.Excel.Chart> oggetto, a seconda che cos'è il foglio attivo.  
   
- Quando una proprietà o metodo restituisce un <xref:System.Object>, è necessario convertire in modo esplicito (in Visual Basic) l'oggetto nel tipo corretto nei progetti Visual Basic in cui **Option Strict** si trova in. Non è necessario eseguire il cast esplicito <xref:System.Object> restituiscono valori nei progetti Visual Basic in cui **Option Strict** è disattivata.  
+ Quando un metodo o la proprietà restituisce un <xref:System.Object>, è necessario convertire in modo esplicito (in Visual Basic) l'oggetto nel tipo corretto nei progetti Visual Basic in cui **Option Strict** si trova in. Non è necessario eseguire il cast esplicito <xref:System.Object> restituire i valori nei progetti Visual Basic in cui **Option Strict** è disattivata.  
   
- Nella maggior parte dei casi, la documentazione di riferimento vengono elencati i possibili tipi di valore restituito per un membro che restituisce un <xref:System.Object>. La conversione o il cast dell'oggetto Abilita IntelliSense per l'oggetto nell'Editor di codice.  
+ Nella maggior parte dei casi, la documentazione di riferimento vengono elencati i possibili tipi di valore restituito per un membro che restituisce un <xref:System.Object>. La conversione o il cast dell'oggetto Abilita IntelliSense per l'oggetto nell'Editor del codice.  
   
- Per informazioni sulla conversione in Visual Basic, vedere [conversioni implicite ed esplicite &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [CType (funzione) &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Per informazioni sulla conversione in Visual Basic, vedere [conversioni implicite ed esplicite &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [CType function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Esempi  
- Esempio di codice riportato di seguito viene illustrato come eseguire il cast di un oggetto a un tipo specifico in un progetto di Visual Basic in cui **Option Strict** si trova in. In questo tipo di progetto, è necessario eseguire il cast esplicito di <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> proprietà per un <xref:Microsoft.Office.Interop.Excel.Range>. In questo esempio è richiesto un progetto di Excel a livello di documento con una classe foglio di lavoro denominata `Sheet1`.  
+ Esempio di codice seguente viene illustrato come eseguire il cast di un oggetto a un tipo specifico in un progetto Visual Basic in cui **Option Strict** si trova in. In questo tipo di progetto, è necessario il cast esplicito di <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> proprietà su un <xref:Microsoft.Office.Interop.Excel.Range>. Questo esempio richiede un progetto di Excel a livello di documento con una classe del foglio di lavoro denominata `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]  
   
- Esempio di codice riportato di seguito viene illustrato come eseguire il cast implicito un oggetto a un tipo specifico in un progetto di Visual Basic in cui **Option Strict** è disattivato o in un progetto Visual c# che utilizza il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In questi tipi di progetti, il <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> per eseguire il cast implicito proprietà una <xref:Microsoft.Office.Interop.Excel.Range>. In questo esempio è richiesto un progetto di Excel a livello di documento con una classe foglio di lavoro denominata `Sheet1`.  
+ Esempio di codice seguente viene illustrato come eseguire il cast implicito un oggetto a un tipo specifico in un progetto Visual Basic in cui **Option Strict** sia disattivato o in un oggetto visivo C# progetto che usi il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In questi tipi di progetti, la <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> proprietà viene eseguito il cast implicito a un <xref:Microsoft.Office.Interop.Excel.Range>. Questo esempio richiede un progetto di Excel a livello di documento con una classe del foglio di lavoro denominata `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>Accedere ai membri che sono disponibili solo tramite l'associazione tardiva  
- Alcune proprietà e metodi nell'assembly di interoperabilità primari di Office sono disponibili solo tramite l'associazione tardiva. Nei progetti Visual Basic dove **Option Strict** è attiva o nei progetti Visual c# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], è possibile utilizzare le funzionalità di associazione tardiva nelle lingue seguenti per accedere ai membri ad associazione tardiva. Nei progetti Visual Basic dove **Option Strict** è attivo, è necessario usare la reflection per accedere a questi membri.  
+ Alcune proprietà e metodi in assembly di interoperabilità primari di Office sono disponibili solo tramite l'associazione tardiva. Nei progetti Visual Basic dove **Option Strict** sia disattivato o nell'oggetto visivo C# progetti destinati il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o il [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], è possibile usare le funzionalità di associazione tardiva nelle lingue seguenti per accedere ai membri di associazione tardiva. Nei progetti Visual Basic dove **Option Strict** è on, è necessario usare la reflection per accedere a questi membri.  
   
 ### <a name="examples"></a>Esempi  
- Esempio di codice riportato di seguito viene illustrato come accedere ai membri ad associazione tardiva in un progetto di Visual Basic in cui **Option Strict** è disattivato o in un progetto Visual c# che utilizza il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Questo esempio si accede l'associazione tardiva **nome** proprietà del **Apri File** nella finestra di dialogo di Word. Per usare questo esempio, eseguirlo dal `ThisDocument` o `ThisAddIn` classe in un progetto di Word.  
+ Esempio di codice seguente viene illustrato come accedere ai membri di associazione tardiva in un progetto Visual Basic in cui **Option Strict** sia disattivato o in un oggetto visivo C# progetto che usi il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. L'esempio accede l'associazione tardiva **Name** proprietà del **Apri File** finestra di dialogo di Word. Per usare questo esempio, eseguirlo dal `ThisDocument` o `ThisAddIn` classe in un progetto di Word.  
   
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- Esempio di codice riportato di seguito viene illustrato come utilizzare la reflection per eseguire la stessa attività in un progetto di Visual Basic in cui **Option Strict** si trova in.  
+ Esempio di codice seguente viene illustrato come usare la reflection per eseguire la stessa attività in un progetto Visual Basic in cui **Option Strict** si trova in.  
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Utilizzo del tipo dinamico &#40;C&#35; Guida alla programmazione&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Uso del tipo dinamico &#40;C&#35; Guida alla programmazione&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Istruzione Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  
+ [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  

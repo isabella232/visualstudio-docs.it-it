@@ -1,9 +1,6 @@
 ---
 title: Comando, gruppo e il posizionamento della barra degli strumenti predefiniti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
@@ -18,20 +15,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da5716460c428098b2b6cc3bb78a51c3831201b2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4292ff0a3760c412d0c12961ad7b34ad18f607
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850979"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posizione di comando, il gruppo e sulla barra degli strumenti predefinita
 Per prodotto uniformità e stabilità, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] includono le definizioni dei comandi e i gruppi di comandi. I VSPackage possono anche usare i comandi standard e i gruppi di comandi.  
   
- I gruppi di comandi predefiniti possono essere suddivise in tre categorie: IDE comandi, i comandi di prodotto e i comandi dell'editor.  
+ I gruppi di comandi predefiniti possono essere suddivise in tre categorie: Comandi dell'IDE, comandi di prodotto e i comandi dell'editor.  
   
 ## <a name="default-ide-commands"></a>Comandi predefiniti dell'IDE  
- La barra degli strumenti dell'IDE predefinito include i comandi condivisi da tutti i prodotti contenuti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sono inclusi i comandi relativi alle operazioni del progetto generico, ad esempio la **salvare** comando e il **Aggiungi elemento** comando. I pacchetti VSPackage non devono aggiungere o sottrarre da questa barra degli strumenti, con una sola eccezione: se il prodotto o un pacchetto VSPackage aggiunge una nuova finestra degli strumenti, quindi la finestra deve essere aggiunto all'elenco di finestre degli strumenti disponibili nel **vista** menu. Nuovi prodotti o i pacchetti VSPackage possono aggiungere i propri sulla barra degli strumenti.  
+ La barra degli strumenti dell'IDE predefinito include i comandi condivisi da tutti i prodotti contenuti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sono inclusi i comandi relativi alle operazioni del progetto generico, ad esempio la **salvare** comando e il **Aggiungi elemento** comando. I pacchetti VSPackage devono non aggiungere o sottrarre da questa barra degli strumenti, con una sola eccezione: Se il prodotto o un pacchetto VSPackage aggiunge una nuova finestra degli strumenti, quindi la finestra deve essere aggiunto all'elenco di finestre degli strumenti disponibili nel **vista** menu. Nuovi prodotti o i pacchetti VSPackage possono aggiungere i propri sulla barra degli strumenti.  
   
 ## <a name="default-product-commands"></a>Comandi predefinito del prodotto  
  Ogni prodotto può fornire l'IDE con la propria barra degli strumenti predefinita che contiene importanti e comandi utilizzati di frequente. È consigliabile, tuttavia, per utilizzare i menu e barre degli strumenti ogni volta che è possibile esistenti e integrare con altre barre degli strumenti attività specifiche in base alle esigenze.  

@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861624"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mappare le dipendenze con le mappe codici
 
@@ -240,7 +239,7 @@ Si supponga di che avere una revisione del codice da eseguire in alcuni file con
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Video: comprendere la progettazione dal codice con le mappe codice di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Video: Comprendere la progettazione dal codice con le mappe codice di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Eseguire il mapping dei metodi nello stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
