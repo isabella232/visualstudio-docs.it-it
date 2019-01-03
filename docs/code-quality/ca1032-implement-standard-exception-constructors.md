@@ -2,7 +2,6 @@
 title: 'CA1032: Implementare costruttori di eccezioni standard'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1032
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6cd6922cae5e2d182a279e2d1637a19f8572468
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881231"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementare costruttori di eccezioni standard
 
@@ -34,37 +33,37 @@ ms.locfileid: "34454752"
 
 ## <a name="cause"></a>Causa
 
-Un tipo estende <xref:System.Exception?displayProperty=fullName> ma non vengono dichiarati tutti i costruttori necessari.
+Estende un tipo <xref:System.Exception?displayProperty=fullName> ma non si dichiara tutti i costruttori necessari.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
 Tipi di eccezione devono implementare i tre costruttori seguenti:
 
-- NewException() pubblica
+- NewException() pubblico
 
-- NewException(string) pubblica
+- NewException(string) pubblico
 
 - pubblica NewException (string, eccezione)
 
-Inoltre, se si esegue l'analisi statica del codice FxCop legacy come anziché [basate su Roslyn FxCop analizzatori](../code-quality/roslyn-analyzers-overview.md), l'assenza di un quarto costruttore genera inoltre una violazione di:
+Inoltre, se si esegue l'analisi statica del codice di FxCop legacy come anziché [analizzatori basati su Roslyn FxCop](../code-quality/roslyn-analyzers-overview.md), l'assenza di un quarto costruttore genera anche una violazione:
 
-- NewException protetto o privato (SerializationInfo, StreamingContext)
+- NewException protetti o privati (SerializationInfo, StreamingContext)
 
-Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Ad esempio, il costruttore con la firma `NewException(string, Exception)` viene utilizzato per creare le eccezioni causate da altre eccezioni. Senza questo costruttore, è possibile creare e generare un'istanza di eccezione personalizzata che contiene un'eccezione (annidata) interna, è necessario eseguire l'operazione per il codice gestito in una situazione di questo tipo.
+Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Ad esempio, il costruttore con la firma `NewException(string, Exception)` viene usato per creare le eccezioni sono causate da altri tipi di eccezioni. Senza questo costruttore, è possibile creare e generare un'istanza di eccezione personalizzata contenente un'eccezione (annidata) interna, è necessario eseguire l'operazione per il codice gestito in tale situazione.
 
-I primo tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto nelle classi non sealed e privato nelle classi sealed. Per altre informazioni, vedere [CA2229: implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)
+I primi tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto nelle classi unsealed e private in classi sealed. Per altre informazioni, vedere [CA2229: Implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere i costruttori mancanti all'eccezione e assicurarsi che dispongano di accessibilità corretta.
+Per correggere una violazione di questa regola, aggiungere i costruttori mancanti per l'eccezione e assicurarsi che abbiano l'accessibilità corretto.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-È possibile eliminare un avviso da questa regola quando è causata la violazione di tramite un livello di accesso diversi per i costruttori pubblici. Inoltre, è possibile eliminare l'avviso per il `NewException(SerializationInfo, StreamingContext)` costruttore se si sta creando una libreria di classe portabile (PCL).
+È possibile eliminare un avviso da questa regola quando la violazione è causata dall'utilizzo di un livello di accesso diversi per i costruttori pubblici. Inoltre, è possibile eliminare l'avviso per il `NewException(SerializationInfo, StreamingContext)` costruttore se si sta creando una libreria di classi portabile (PCL).
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente contiene un tipo di eccezione che viola la regola e un tipo di eccezione che viene implementato correttamente.
+Nell'esempio seguente contiene un tipo di eccezione che violano questa regola e un tipo di eccezione che viene implementato in modo corretto.
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 

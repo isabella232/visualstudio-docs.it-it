@@ -1,6 +1,5 @@
 ---
 title: Elemento CustomDataSignature (modelli di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eddff64680dd41637f78f33c46fe78f32bbc3a85
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c3b62a8d88efbddaaf4032bf290730507bc62f3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832112"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Elemento CustomDataSignature (modelli di Visual Studio)
 Specifica la firma di testo per individuare i dati personalizzati.  

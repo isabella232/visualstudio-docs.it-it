@@ -1,9 +1,6 @@
 ---
 title: Panoramica del modello a oggetti di Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821769"
 ---
 # <a name="excel-object-model-overview"></a>Cenni preliminari sul modello a oggetti di Excel
   Per sviluppare soluzioni che utilizzano Microsoft Office Excel, è possibile interagire con gli oggetti forniti dal modello a oggetti di Excel. In questo argomento vengono introdotti gli oggetti più importanti:  
@@ -123,5 +120,3 @@ ms.locfileid: "53647525"
 |[Lavorare con intervalli](../vsto/working-with-ranges.md)|Vengono forniti esempi che illustrano come eseguire attività comuni con gli intervalli.|  
 |[Usare i fogli di lavoro](../vsto/working-with-worksheets.md)|Vengono forniti esempi che illustrano come eseguire attività comuni con i fogli di lavoro.|  
 |[Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)|Vengono forniti esempi che illustrano come eseguire attività comuni con le cartelle di lavoro.|  
-  
-  

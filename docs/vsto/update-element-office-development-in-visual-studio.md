@@ -1,9 +1,6 @@
 ---
 title: '&lt;aggiornare&gt; elemento (sviluppo per Office in Visual Studio)'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec520c140dedf3a5bb93ebd5f17f8751687abcac
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 661aa9c0c1a590e78d20e52b6321294d59e70c63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988988"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;aggiornare&gt; elemento (sviluppo per Office in Visual Studio)
   Il `update` elemento specifica l'intervallo in corrispondenza del quale la soluzione controllerà gli aggiornamenti.

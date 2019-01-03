@@ -1,5 +1,5 @@
 ---
-title: 'Diagrammi delle dipendenze: linee guida'
+title: 'Diagrammi delle dipendenze: Indicazioni'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924423"
 ---
 # <a name="dependency-diagrams-guidelines"></a>I diagrammi delle dipendenze: linee guida
 
-Descrivere l'architettura dell'app ad alto livello creando *diagrammi delle dipendenze* in Visual Studio. Assicurarsi che il codice rimanga coerenza con la progettazione convalidando il codice con un diagramma delle dipendenze. È anche possibile includere la convalida dei livelli nel processo di compilazione. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
+Descrivere l'architettura dell'app ad alto livello creando *diagrammi delle dipendenze* in Visual Studio. Assicurarsi che il codice rimanga coerenza con la progettazione convalidando il codice con un diagramma delle dipendenze. È anche possibile includere la convalida dei livelli nel processo di compilazione. Vedere [Video di Channel 9: Progettare e convalidare l'architettura utilizzando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -32,7 +31,7 @@ Per informazioni su quali edizioni di Visual Studio supportano questa funzionali
 
 ## <a name="what-is-a-dependency-diagram"></a>Che cos'è un diagramma delle dipendenze?
 
-Ad esempio un diagramma architettura tradizionale, un diagramma delle dipendenze identifica i componenti principali o unità funzionali della progettazione e le relative interdipendenze. Ogni nodo nel diagramma, denominato un *layer*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri elementi. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Visualizzare [diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md).
+Ad esempio un diagramma architettura tradizionale, un diagramma delle dipendenze identifica i componenti principali o unità funzionali della progettazione e le relative interdipendenze. Ogni nodo nel diagramma, denominato un *layer*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri elementi. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Vedere [diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Come progettare o aggiornare l'app con i diagrammi delle dipendenze
 
@@ -125,7 +124,7 @@ Se ciò non avviene, il codice sarà più difficile da modificare per tutta la v
 
 Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo progetto, è possibile tracciare livelli e dipendenze per semplificare l'identificazione dei componenti principali prima di iniziare a sviluppare il codice.
 
--   **Visualizzare i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma di dipendenza che descrive un'applicazione desktop può includere livelli quali presentazione, logica di dominio e Data Store. Un diagramma di dipendenza che riguarda una singola funzionalità all'interno di un'applicazione può includere livelli quali modello, visualizzazione e Controller. Per altre informazioni su tali modelli, vedere [modelli e procedure: architettura dell'applicazione](http://go.microsoft.com/fwlink/?LinkId=145794).
+-   **Visualizzare i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma di dipendenza che descrive un'applicazione desktop può includere livelli quali presentazione, logica di dominio e Data Store. Un diagramma di dipendenza che riguarda una singola funzionalità all'interno di un'applicazione può includere livelli quali modello, visualizzazione e Controller. Per altre informazioni su tali modelli, vedere [Patterns & Practices: Architettura dell'applicazione](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 -   **Creare un elemento di codice per ogni livello** come spazio dei nomi, classe o componente. In questo modo sarà più semplice seguire il codice e collegare gli artefatti di codice ai livelli. Non appena si crea ogni artefatto, collegarlo al livello appropriato.
 
@@ -176,5 +175,5 @@ Per garantire che le modifiche future nel codice siano conformi ai diagrammi del
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)

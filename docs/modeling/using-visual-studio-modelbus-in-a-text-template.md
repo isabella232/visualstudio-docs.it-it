@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 69884d3dd52f2aaab04dac8f32f18d286f5929af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828238"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilizzo di ModelBus di Visual Studio in un modello di testo
 Se si scrivono modelli di testo che leggono un modello che contiene i riferimenti ModelBus di Visual Studio, è possibile risolvere i riferimenti per accedere ai modelli di destinazione. In tal caso, è necessario adattare i modelli di testo e i riferimento linguaggi specifici di dominio (DSL):

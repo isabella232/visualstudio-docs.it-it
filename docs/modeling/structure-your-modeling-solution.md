@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831537"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 
@@ -36,7 +35,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 2. Creare una soluzione di Visual Studio, che chiameremo soluzione Architecture. Questa soluzione verrà usata per creare la progettazione complessiva del sistema. Conterrà modelli ma non il codice.
 
-   Aggiungere un diagramma delle dipendenze per questa soluzione. Nel diagramma delle dipendenze, tracciare l'architettura che si è scelto per l'applicazione. Ad esempio, il diagramma potrebbe mostrare i seguenti livelli con le reciproche dipendenze: presentazione, logica di business e dati.
+   Aggiungere un diagramma delle dipendenze per questa soluzione. Nel diagramma delle dipendenze, tracciare l'architettura che si è scelto per l'applicazione. Ad esempio, il diagramma potrebbe mostrare questi livelli e le dipendenze tra di essi: File della presentazione. Logica di Business; e i dati.
 
 4. Creare una soluzione di Visual Studio separata per ogni livello nel diagramma delle dipendenze dell'architettura.
 
@@ -76,7 +75,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. Nella **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, scegliere **Add**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
 
-2. Nel modello condiviso, creare un pacchetto per ogni livello: nelle **Esplora soluzioni**, selezionare il progetto di modellazione. Nelle **Esplora modelli UML**, fare clic sul nodo radice del modello, scegliere **Add**, quindi fare clic su **pacchetto**.
+2. Nel modello condiviso, creare un pacchetto per ogni livello: Nelle **Esplora soluzioni**, selezionare il progetto di modellazione. Nelle **Esplora modelli UML**, fare clic sul nodo radice del modello, scegliere **Add**, quindi fare clic su **pacchetto**.
 
    Ogni pacchetto conterrà i diagrammi che descrivono i requisiti e la progettazione del livello corrispondente.
 

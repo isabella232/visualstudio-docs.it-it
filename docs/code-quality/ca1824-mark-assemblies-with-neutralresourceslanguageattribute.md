@@ -2,7 +2,6 @@
 title: 'CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute'
 ms.date: 03/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1824
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beaef23dd5b3047d1d65b90fdd984dfdedd7e145
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db780257c83c42f97500a83f1843332cae0ecea3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825176"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute
 
@@ -38,35 +37,35 @@ Un assembly contiene un **ResX**-risorsa basata su ma non dispone di <xref:Syste
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Il <xref:System.Resources.NeutralResourcesLanguageAttribute> attributo informa il gestore delle risorse di impostazioni cultura predefinite dell'app. Se le risorse di impostazioni cultura predefinite vengono incorporate nell'assembly principale dell'app, e <xref:System.Resources.ResourceManager> deve recuperare le risorse che appartengono alle stesse impostazioni cultura come le impostazioni cultura predefinite, il <xref:System.Resources.ResourceManager> utilizza automaticamente le risorse che si trovano nell'assembly principale invece di cercare un assembly satellite. Questa operazione consente di ignorare il probe assembly normale, migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set.
+Il <xref:System.Resources.NeutralResourcesLanguageAttribute> attributi informa il gestore di risorse delle impostazioni cultura predefinite dell'app. Se l'impostazione predefinita le risorse di lingua sono incorporate nell'assembly principale dell'app, e <xref:System.Resources.ResourceManager> è recuperare le risorse che appartengono alle stesse impostazioni cultura le impostazioni cultura predefinite, il <xref:System.Resources.ResourceManager> usa automaticamente le risorse che si trovano nell'assembly principale invece di cercare un assembly satellite. Ciò consente di ignorare il probe di assembly normale, migliora le prestazioni della ricerca per la prima risorsa caricata e riduce il working set.
 
 > [!TIP]
-> Vedere [creazione di pacchetti e distribuzione delle risorse](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) per il processo che <xref:System.Resources.ResourceManager> viene utilizzato per verificare la presenza di file di risorse.
+> Visualizzare [creazione di pacchetti e distribuzione delle risorse](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) per il processo che <xref:System.Resources.ResourceManager> Usa per verificare la presenza di file di risorse.
 
 ## <a name="fix-violations"></a>Correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly, specificare la lingua delle risorse della lingua.
+Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly e specificare la lingua delle risorse delle impostazioni cultura neutre.
 
 ### <a name="to-specify-the-neutral-language-for-resources"></a>Per specificare la lingua neutra per le risorse
 
-1. In **Esplora soluzioni**destro del mouse sul progetto e quindi selezionare **proprietà**.
+1. Nelle **Esplora soluzioni**mouse sul progetto e quindi selezionare **proprietà**.
 
-2. Selezionare il **applicazione** scheda e quindi selezionare **informazioni sull'Assembly**.
+2. Selezionare il **Application** scheda e quindi selezionare **informazioni sugli Assembly**.
 
    > [!NOTE]
-   > Se il progetto è un progetto .NET Standard o .NET Core, selezionare il **pacchetto** scheda.
+   > Se il progetto è un progetto .NET Core o .NET Standard, selezionare la **pacchetto** scheda.
 
 3. Selezionare la lingua dal **lingua neutra** oppure **lingua neutra Assembly** elenco a discesa.
 
 4. Scegliere **OK**.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-È consentito escludere un avviso da questa regola. Tuttavia, potrebbero influire negativamente sulle prestazioni di avvio.
+È possibile eliminare un avviso da questa regola. Tuttavia, potrebbero compromettere le prestazioni di avvio.
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
-- [Risorse nelle applicazioni desktop (.NET)](/dotnet/framework/resources/)
+- [Risorse nelle App desktop (.NET)](/dotnet/framework/resources/)
 - [CA1703: le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 - stringa di risorsa parole composte devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: stringa di risorsa parole composte devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

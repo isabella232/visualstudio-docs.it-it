@@ -1,13 +1,8 @@
 ---
 title: Creazione di controlli utente riutilizzabili per Web part o pagine di applicazione | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a621bb8c0f14cfb2c1869b98bb8bdbdd9c2d30bb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 7d042c42bae59c6dbf92f0e381444cc011b40db0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327274"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842823"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Creare controlli utente riutilizzabili per web part o pagine applicazione
   In Visual Studio è possibile creare controlli riutilizzabili personalizzati che possono essere utilizzati dalle pagine applicazione e dalle Web part eseguite in SharePoint. Questi controlli sono denominati controlli utente. Un controllo utente è un tipo di controllo composito che funziona in modo analogo a una pagina Web ASP.NET, è possibile aggiungere controlli server Web esistenti e il markup per un controllo utente e definire le proprietà e metodi per il controllo. È quindi possibile incorporarli nelle pagine Web ASP.NET, in cui vengono usate come un'unità.  
   
 ## <a name="create-a-user-control"></a>Creare un controllo utente
- Per creare un controllo utente, aggiungere un **UserControl** a un **progetto SharePoint vuoto**. Per altre informazioni, vedere [procedura: creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
+ Per creare un controllo utente, aggiungere un **UserControl** a un **progetto SharePoint vuoto**. Per altre informazioni, vedere [Procedura: Creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
   
  Quando si aggiunge un **controllo utente** item, Visual Studio crea una cartella nel progetto e quindi vengono aggiunti alcuni file nella cartella. La tabella seguente descrive ogni file.  
   
@@ -65,5 +60,4 @@ ms.locfileid: "36327274"
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Illustra come creare controlli personalizzati riutilizzabili che possono essere utilizzati dalle pagine dell'applicazione e dalle Web part eseguite in SharePoint.|  
-  
+|[Procedura: Creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Illustra come creare controlli personalizzati riutilizzabili che possono essere utilizzati dalle pagine dell'applicazione e dalle Web part eseguite in SharePoint.|  

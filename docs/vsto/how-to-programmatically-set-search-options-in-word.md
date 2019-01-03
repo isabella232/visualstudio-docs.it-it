@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: impostare a livello di codice le opzioni di ricerca in Word'
-ms.custom: ''
+title: 'Procedura: A livello di codice impostare le opzioni di ricerca in Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec5b2f797371d19fea1b4fedc2064ab355ffac10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853386"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>Procedura: impostare a livello di codice le opzioni di ricerca in Word
+# <a name="how-to-programmatically-set-search-options-in-word"></a>Procedura: A livello di codice impostare le opzioni di ricerca in Word
   Esistono due modi per impostare le opzioni di ricerca per le selezioni in documenti di Microsoft Office Word:  
   
 - Impostare singole proprietà di un <xref:Microsoft.Office.Interop.Word.Find> oggetto.  
@@ -56,8 +53,6 @@ ms.locfileid: "49853948"
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Procedura: scorrere gli elementi trovati nei documenti a livello di codice in ciclo](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Procedura: ripristino a livello di codice le selezioni dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)  
-  
-  
+ [Procedura: Cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Procedura: Ciclo a livello di programmazione tramite gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Procedura: A livello di programmazione ripristinare le selezioni dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)  

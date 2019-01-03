@@ -1,9 +1,6 @@
 ---
 title: Procedure dettagliate con Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e496797d45b008531182571d4a96958433a7b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: cf70d0c87a089292caf07f39f54b52f5cfaa13aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823037"
 ---
 # <a name="walkthroughs-using-excel"></a>Procedure dettagliate con Excel
   Le procedure dettagliate seguenti descrivono come usare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per automatizzare Microsoft Office Excel e personalizzare l'interfaccia utente.  
@@ -36,10 +33,10 @@ ms.locfileid: "35258187"
  [Procedura dettagliata: Raccogliere i dati utilizzando un Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
  Illustra l'uso di Windows Form per raccogliere input utente e quindi inviarlo a una cella in un foglio di lavoro di Excel.  
   
- [Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
+ [Procedura dettagliata: La modifica del foglio di lavoro della formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  Fornisce le nozioni di base sull'uso di caselle di controllo in un foglio di lavoro di Excel per modificare la formattazione.  
   
- [Procedura dettagliata: Visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
+ [Procedura dettagliata: Testo visualizzato in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Fornisce le nozioni di base sull'uso di pulsanti e caselle di testo in fogli di lavoro di Excel.  
   
  [Procedura dettagliata: Programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)  
@@ -54,7 +51,7 @@ ms.locfileid: "35258187"
  [Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Illustra la creazione di una relazione master/dettaglio in un foglio di lavoro e la memorizzazione dei dati nella cache in modo che la soluzione possa essere usata offline.  
   
- [Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [Procedura dettagliata: Aggiornare un grafico in un foglio di lavoro mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  Fornisce le nozioni di base sulla modifica degli stili dei grafici mediante pulsanti di opzione in un foglio di lavoro di Excel.  
   
  [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
@@ -67,13 +64,11 @@ ms.locfileid: "35258187"
  [Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione nel progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
  Mostra come aggiungere controlli a un foglio di lavoro mediante un componente aggiuntivo VSTO.  
   
- [Procedura dettagliata: Chiamata di codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)  
+ [Procedura dettagliata: Chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)  
  Mostra come esporre un oggetto in un componente aggiuntivo VSTO al codice VBA in una cartella di lavoro.  
   
- [Procedura dettagliata: Sincronizzazione di un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
+ [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
  Mostra come creare un riquadro attività personalizzato che gli utenti possono visualizzare o nascondere facendo clic su un interruttore nella barra multifunzione.  
   
  [Procedura dettagliata: Data binding complesso in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  Mostra come associare una tabella in un database di SQL Server a un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> in un componente aggiuntivo VSTO per Excel.  
-  
-  

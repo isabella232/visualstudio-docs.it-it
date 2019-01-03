@@ -1,8 +1,7 @@
 ---
-title: 'CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole'
+title: 'CA1702: LE Le parole composte devono essere digitate correttamente'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4703c43c81df13432f45fb4ba519a02b39a839e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829576"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: LE Le parole composte devono essere digitate correttamente
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzione quando viene generato per gli assembly.<br /><br /> Non sostanziale - Quando generato su parametri di tipo.|
+|Modifica importante|Rilievo-when generato su assembly.<br /><br /> Non sostanziale - Quando viene attivato su parametri di tipo.|
 
 ## <a name="cause"></a>Causa
 
@@ -38,17 +37,17 @@ Il nome di un identificatore contiene più parole, fra cui almeno una che sembra
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Il nome dell'identificatore è suddiviso in parole che si basano le maiuscole e minuscole. Ogni combinazione di due parole contigui viene controllata dalla libreria del correttore ortografico Microsoft. Se viene riconosciuto, l'identificatore produce una violazione della regola. Esempi di parole composte che causano una violazione sono "CheckSum" e "MultiPart", devono essere digitati "Checksum" e "Multipart", rispettivamente. A causa di uso comune precedente, nella regola sono incluse diverse eccezioni e vengono contrassegnate singole parole diverse, ad esempio "Toolbar" e "Nomefile", che devono essere digitati due parole (in questo caso, "ToolBar" e "Nomefile").
+Il nome dell'identificatore è suddiviso in parole che si basano le maiuscole e minuscole. Ogni combinazione di due parole contigui viene controllata dalla libreria del correttore ortografico Microsoft. Se è riconosciuta, l'identificatore genera una violazione della regola. Sono esempi di parole composte che causano una violazione "CheckSum" e "MultiPart", che devono essere digitati "Checksum" e "Multipart", rispettivamente. A causa di uso comune precedente, numerose eccezioni sono incorporate nella regola, e sono contrassegnate molte parole singole, ad esempio "Toolbar" e "Filename", che devono essere digitati due parole di distinte (in questo caso, "ToolBar" e "FileName").
 
-Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la confidenza di clienti che la libreria è stata sviluppata da un utente che ha esperienza nello sviluppo di codice gestito.
+Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Modificare il nome in modo che si è maiuscole e minuscole.
+Modificare il nome in modo che viene maiuscole e minuscole.
 
 ## <a name="language"></a>Linguaggio
 
-Il correttore ortografico attualmente controlla solo a dizionari le impostazioni cultura basate su inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto, aggiungendo il **CodeAnalysisCulture** elemento.
+Il correttore ortografico attualmente verifica solo a dizionari le impostazioni cultura basate su inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto, aggiungendo il **CodeAnalysisCulture** elemento.
 
 Ad esempio:
 
@@ -59,17 +58,17 @@ Ad esempio:
 ```
 
 > [!IMPORTANT]
-> Se si imposta le impostazioni cultura su un valore diverso da delle impostazioni cultura basate su inglese, questa regola di analisi codice invisibile all'utente è disabilitata.
+> Se si imposta le impostazioni cultura su un valore qualsiasi diverso da una cultura basata su inglese, questa regola di analisi del codice viene disabilitata automaticamente.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta riconosciute dal dizionario e si desidera utilizzare due parole.
+È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta sono riconosciute dal dizionario ortografici e l'intento consiste nell'usare due parole.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,8 +1,6 @@
 ---
-title: "Procedura: registrare i tipi di File dell'Editor | Microsoft Docs"
+title: "Procedura: Registrare i tipi di File dell'Editor | Microsoft Docs"
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857802"
 ---
-# <a name="how-to-register-editor-file-types"></a>Procedura: registrare i tipi di file dell'editor
+# <a name="how-to-register-editor-file-types"></a>Procedura: Registrare i tipi di file dell'editor
 Il modo più semplice per registrare i tipi di file editor consiste nell'usare gli attributi di registrazione forniti come parte di [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] classi framework (MPF) del pacchetto gestito. Se si implementa il pacchetto in native [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], è anche possibile scrivere uno script del Registro di sistema che si registra un editor e agli interni associati.
 
 ## <a name="registration-using-mpf-classes"></a>Registrazione tramite le classi MPF

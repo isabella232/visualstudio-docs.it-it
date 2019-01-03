@@ -1,9 +1,6 @@
 ---
 title: All'interno l'Editor principale | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828524"
 ---
 # <a name="inside-the-core-editor"></a>All'interno dell'editor di base
 Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale Ã¨ un set di numerosi componenti che consentono di modificare ed eseguire query su informazioni testuali. Se l'editor principale Ã¨ stata personalizzata tramite l'API legacy, Ã¨ possibile continuare a usare queste personalizzazioni, verranno instradate tramite schede dell'editor. Si consiglia, tuttavia, che Ã¨ adattare le personalizzazioni per il nuovo editor delle API.  
@@ -47,7 +44,7 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale Ã
  [Eventi nel buffer di testo nell'API legacy](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Fornisce un elenco delle interfacce utilizzate per la notifica degli eventi del buffer di testo.  
   
- [Procedura: registrarsi per gli eventi nel buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Procedura: Eseguire la registrazione per gli eventi nel buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Descrive come informare gli eventi nel buffer di testo.  
   
  [Usare la gestione di testo per monitorare le impostazioni globali](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -66,7 +63,7 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale Ã
  Descrive la creazione di istanze di un servizio di linguaggio per le decorazioni di codice di controllo.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file dell'editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Vengono fornite istruzioni dettagliate su come avviare l'editor principale dal codice gestito.  
   
  [Barra di riepilogo a discesa](../extensibility/drop-down-bar.md)  
@@ -75,8 +72,8 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale Ã
  [Usare marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Viene illustrato il concetto di marcatori di testo e su come vengono usati nell'editor principale ed elenca le interfacce che consentono di accedere e gestire i marcatori di testo.  
   
- [Procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)  
+ [Procedura: Aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)  
  Vengono fornite istruzioni dettagliate su come creare un marcatore di testo e come aggiungere un comando personalizzato a un menu di scelta rapida.  
   
- [Procedura: creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)  
+ [Procedura: Creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)  
  Vengono fornite istruzioni dettagliate su come creare un marcatore di testo personalizzato e su come specificare il tipo di marcatore come servizio.

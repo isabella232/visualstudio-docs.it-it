@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818326"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: Creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild
   È possibile compilare, pulire e convalidare un pacchetto di SharePoint (*wsp*) usando le attività della riga di comando di MSBuild in un computer di sviluppo. È anche possibile usare questi comandi per automatizzare il processo di compilazione mediante Team Foundation Server in un computer di compilazione.  
   
 ## <a name="build-a-sharepoint-package"></a>Creare un pacchetto di SharePoint  
@@ -112,5 +107,5 @@ ms.locfileid: "37118856"
   
 ## <a name="see-also"></a>Vedere anche
  [Creare funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Procedura: personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Procedura: aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
+ [Procedura: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Procedura: Aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

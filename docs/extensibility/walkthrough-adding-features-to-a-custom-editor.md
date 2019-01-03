@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Aggiunta di funzionalità in un Editor personalizzato | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850401"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: Aggiunta di funzionalità a un editor personalizzato
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: Aggiungere funzionalità a un editor personalizzato
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>Per creare un editor per un pacchetto VSPackage  
   
 1.  Creare un editor personalizzato usando il modello di progetto di pacchetto di Visual Studio.  
   
-     Per altre informazioni, vedere [procedura dettagliata: creare un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Per altre informazioni, vedere [Procedura dettagliata: Creare un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Decidere se l'editor per supportare una singola visualizzazione o più visualizzazioni.  
   
@@ -118,7 +115,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   
 12. Implementare il supporto della Guida sensibile al contesto.  
   
-     Questo passaggio consente di fornire supporto della Guida F1 e finestra Guida dinamica per gli elementi nell'editor. Per altre informazioni, vedere [procedura: fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  
+     Questo passaggio consente di fornire supporto della Guida F1 e finestra Guida dinamica per gli elementi nell'editor. Per altre informazioni, vedere [Procedura: Fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Esporre un modello a oggetti da un editor di automazione tramite l'implementazione di `IDispatch` interfaccia.  
   
@@ -157,4 +154,4 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   
 ## <a name="see-also"></a>Vedere anche  
  [Contribuire al modello di automazione](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Procedura: fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md)
+ [Procedura: Fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md)

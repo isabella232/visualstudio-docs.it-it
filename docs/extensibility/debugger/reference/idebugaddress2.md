@@ -1,9 +1,6 @@
 ---
-title: IDebugAddress2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugAddress2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 588b2d3e338080a086fee421deb17760496a268f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8755aae5d349fcb463d7ff2be51ca4015449ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843976"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
-Questa interfaccia fornisce accesso all'ID del processo a cui appartiene l'oggetto il cui indirizzo è rappresentato da questa interfaccia.  
+Questa interfaccia fornisce l'accesso all'ID del processo a cui appartiene l'oggetto il cui indirizzo è rappresentato da questa interfaccia.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,13 +29,13 @@ IDebugAddress2 : IDebugAddress
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia. Questa interfaccia fornisce l'accesso all'ID del processo a cui appartiene l'oggetto che è correlato a questo indirizzo.  
+ Un provider di simboli implementa questa interfaccia nello stesso oggetto che implementa il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia. Questa interfaccia fornisce l'accesso all'ID del processo a cui appartiene l'oggetto correlato a questo indirizzo.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Utilizzare [QueryInterface](/cpp/atl/queryinterface) per questa interfaccia da ottenere il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
+ Uso [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia dalle [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable  
- Oltre ai metodi ereditati dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia, implementa il metodo seguente:  
+ Oltre ai metodi ereditati dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia, questa interfaccia implementa il metodo seguente:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -47,7 +44,7 @@ IDebugAddress2 : IDebugAddress
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

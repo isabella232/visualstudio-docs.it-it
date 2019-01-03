@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Aggiungere un riquadro azioni ai documenti Word o le cartelle di lavoro di Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4630834f1673e1c96ca67b90a8bb329951f53de1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827020"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedura: Aggiungere un riquadro Azioni ai documenti Word o alle cartelle di lavoro Excel
   Per aggiungere un riquadro azioni a un documento di Microsoft Office Word o una cartella di lavoro di Microsoft Excel, creare innanzitutto un controllo utente Windows Form. Quindi, aggiungere il controllo utente per il <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.  
@@ -83,5 +80,3 @@ ms.locfileid: "53648239"
  [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Procedura: Gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

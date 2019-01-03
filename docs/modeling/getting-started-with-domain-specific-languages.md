@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872398"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -23,7 +22,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
 > [!NOTE]
 > In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Cosa può fare con un linguaggio specifico di dominio?
 
@@ -386,7 +385,7 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 ## <a name="validation-and-commands"></a>Convalida e comandi
  È possibile sviluppare ulteriormente questo linguaggio DSL aggiungendo i vincoli di convalida. Questi vincoli sono metodi che è possibile definire, assicurarsi che il modello è in uno stato corretto. Ad esempio, è possibile definire un vincolo per assicurarsi che la data di nascita di un elemento figlio è successiva a quella dei relativi elementi padre. La funzionalità di convalida viene visualizzato un avviso se l'utente DSL tenta di salvare un modello che causa l'interruzione di uno qualsiasi dei vincoli. Per altre informazioni, vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
 
- È anche possibile definire comandi di menu che l'utente può richiamare. I comandi è possono modificare il modello. È anche possibile interagire con altri modelli di Visual Studio e con risorse esterne. Per altre informazioni, vedere [procedura: modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ È anche possibile definire comandi di menu che l'utente può richiamare. I comandi è possono modificare il modello. È anche possibile interagire con altri modelli di Visual Studio e con risorse esterne. Per altre informazioni, vedere [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Distribuzione DSL
  Per consentire ad altri utenti di usare il linguaggio specifico di dominio, si distribuisce un file di Visual Studio Extension (VSIX). Viene creato quando si compila la soluzione DSL.

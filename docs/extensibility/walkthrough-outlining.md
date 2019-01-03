@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Struttura | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827523"
 ---
-# <a name="walkthrough-outlining"></a>Procedura dettagliata: definizione della struttura
+# <a name="walkthrough-outlining"></a>Procedura dettagliata: struttura
 Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, o definire il tipo di contenuto e l'estensione di nome file e applicare la definizione dell'area a solo a quel tipo o applicare le definizioni di area a un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -30,7 +27,7 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
   
 ### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto VSIX. Denominare la soluzione `OutlineRegionTest`.  
+1.  Creare un progetto VSIX. Assegnare alla soluzione il nome `OutlineRegionTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -43,7 +40,7 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
   
 ### <a name="to-implement-an-outlining-tagger"></a>Per implementare un tagger della struttura  
   
-1.  Aggiungere un file di classe e denominarla `OutliningTagger`.  
+1.  Aggiungere un file di classe e assegnargli il nome `OutliningTagger`.  
   
 2.  Importare gli spazi dei nomi seguenti.  
   
@@ -135,4 +132,4 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
 4.  Deve essere presente un'area della struttura che include entrambe le parentesi quadre. È necessario essere in grado di fare clic sul segno meno a sinistra della parentesi quadra aperta per comprimere l'area della struttura. Quando l'area viene compressa, il simbolo di puntini di sospensione (*...* ) deve apparire a sinistra dell'area compressa e una finestra popup contenente il testo **passare il puntatore di testo** deve essere visualizzato quando si sposta il puntatore sui puntini di sospensione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

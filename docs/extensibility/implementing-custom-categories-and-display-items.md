@@ -1,9 +1,6 @@
 ---
 title: Implementazione di categorie personalizzate e elementi visualizzati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908436"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementare le categorie personalizzate e visualizzare gli elementi
 Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del testo per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) tramite le categorie personalizzate e di elementi visualizzati.
@@ -116,7 +113,7 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 
      L'IDE chiama il metodo appropriato dopo le modifiche apportate dall'utente del **Fonts and Colors** pagina. Ad esempio, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metodo se si seleziona un nuovo tipo di carattere.
 
-     oppure
+     -oppure-
 
 -   L'IDE per le modifiche di polling.
 
@@ -135,5 +132,5 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Ottenere le informazioni di carattere e colori per la colorazione del testo](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Accesso archiviate le impostazioni di carattere e colori](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Procedura: accedere ai tipi di carattere incorporati e combinazione di colori](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Panoramica di carattere e colori](../extensibility/font-and-color-overview.md)

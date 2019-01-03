@@ -1,13 +1,8 @@
 ---
 title: Creazione di definizioni di sito per SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868326"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Creare definizioni di sito per SharePoint
   Il progetto di definizione del sito di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ti permette di creare un *definizione sito*, che funge da base per un nuovo sito di SharePoint. Queste definizioni determinano non solo l'aspetto e il comportamento del sito di SharePoint, ma anche il contenuto predefinito e funzionalità. Nella definizione è possibile inserire elenchi preconfigurati, tipi di contenuto, ricevitori di eventi, immagini e altri elementi. In SharePoint sono incluse alcune definizioni di sito come BLOG, ad esempio. Quando si crea un sito basato sulla definizione di sito BLOG, il sito contiene gli elenchi, le Web part e altri elementi richiesti da un sito blog.  
@@ -51,8 +46,8 @@ ms.locfileid: "36325342"
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Procedura dettagliata: creare un progetto di definizione di sito di base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Illustra la procedura dettagliata tramite la creazione di un progetto di definizione sito di base in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Procedura: creare una definizione di sito personalizzato e configurazione](http://go.microsoft.com/fwlink/?LinkId=183309)|Viene descritto come creare una definizione di sito personalizzato in SharePoint copiando una definizione di sito esistente e quindi modificando la copia.|  
+|[Procedura dettagliata: Creare un progetto di definizione sito di base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Illustra la procedura dettagliata tramite la creazione di un progetto di definizione sito di base in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Procedura: Creare una definizione di sito personalizzato e configurazione](http://go.microsoft.com/fwlink/?LinkId=183309)|Viene descritto come creare una definizione di sito personalizzato in SharePoint copiando una definizione di sito esistente e quindi modificando la copia.|  
 |[*Webtemp*](http://go.microsoft.com/fwlink/?LinkId=183310)|Descrive il file originale che specifica le definizioni del sito disponibile nel **selezione modello** sezione il **nuovo sito di SharePoint** pagina.|  
 |[Localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Viene descritto come preparare le soluzioni di SharePoint per l'utilizzo globale.|  
 |[Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Viene descritto come creare parti di una pagina di SharePoint che gli utenti possono modificare.|  
@@ -64,6 +59,4 @@ ms.locfileid: "36325342"
 |[Programmazione di Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Viene descritto come utilizzare il modello a oggetti gestito che viene fornito in [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
 ## <a name="see-also"></a>Vedere anche
- [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 
+ [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

@@ -1,9 +1,6 @@
 ---
 title: Comportamento nuovo o modificato con schede dell'Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901610"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento nuovo o modificato con schede editor
 Se si sta aggiornando il codice che è stato scritto in versioni precedenti dell'editor principale di Visual Studio e si prevede di usare l'editor schede (o gli shim) invece di usare la nuova API, è necessario considerare le seguenti differenze nel comportamento delle schede dell'editor Per quanto riguarda l'editor principale precedente.  

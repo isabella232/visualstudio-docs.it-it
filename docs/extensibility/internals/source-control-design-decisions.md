@@ -1,9 +1,6 @@
 ---
-title: Decisioni di progettazione di controllo dell'origine | Documenti Microsoft
-ms.custom: ''
+title: Decisioni di progettazione di controllo di origine | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0385d5feb7baf7fe60e253616c8db0f326932e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd1ffa27a8dfa7c1d98e7242d71f7cfe83c319d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883185"
 ---
-# <a name="source-control-design-decisions"></a>Decisioni di progettazione di controllo di origine
-Durante l'implementazione di controllo del codice sorgente, è necessario considerare le seguenti decisioni di progettazione per i progetti.  
+# <a name="source-control-design-decisions"></a>Decisioni di progettazione relative al controllo del codice sorgente
+Le seguenti decisioni di progettazione devono essere considerate per i progetti durante l'implementazione di controllo del codice sorgente.  
   
 ## <a name="will-information-be-shared-or-private"></a>Informazioni sarà condiviso o privato?  
- La decisione di progettazione più importante, che è possibile apportare è quali informazioni sono condivisibili e cosa è privata. Ad esempio, l'elenco di file per il progetto è condiviso, ma all'interno dell'elenco di file, alcuni utenti potrebbero essere necessario disporre di file privati. Le impostazioni del compilatore sono condivisi, ma il progetto di avvio è in genere privato. Le impostazioni sono puramente condiviso, condiviso con un override o esclusivamente privati. Per impostazione predefinita, gli elementi personali, ad esempio utente soluzione opzioni file (suo Solution), non vengono controllati in [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Assicurarsi di archiviare informazioni riservate nel file privati, ad esempio il file con estensione suo, o un file privato specifico, ad esempio, creare un. file csproj per Visual c# o. vbproj per Visual Basic.  
+ La più importante decisione di progettazione che è possibile rendere è quali informazioni sono condivisibile e What ' s privata. Ad esempio, l'elenco dei file per il progetto è condivisa, ma all'interno dell'elenco di file, alcuni utenti potrebbero essere necessario disporre di file privati. Le impostazioni del compilatore sono condivisi, ma il progetto di avvio è in genere privato. Le impostazioni sono puramente condivisi, condivisi con un override o puramente privato. Per impostazione predefinita, gli elementi privati, ad esempio i file (con estensione suo), delle opzioni utente soluzione non vengono controllati in [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Assicurarsi di archiviare informazioni private nel file privati, ad esempio il file con estensione suo, o un file privato specifico, ad esempio, crea una. file csproj per Visual c# o. vbproj per Visual Basic.  
   
- Questa decisione è gratis e può essere fatta in un singolo elemento per elemento.  
+ Questa decisione non è gratis e può essere fatta in un singolo elemento per elemento.  
   
-## <a name="will-the-project-include-special-files"></a>Il progetto includerà file speciali?  
- Un'altra importante decisione di progettazione è che la struttura del progetto utilizzi file speciali. File speciali sono nascosti i file che sono visibili in Esplora soluzioni e di archiviazione ed estrazione finestre sottostanti. Se si utilizzano file speciali, attenersi alle seguenti indicazioni:  
+## <a name="will-the-project-include-special-files"></a>Il progetto includerà i file speciali?  
+ Un'altra importante decisione di progettazione è che la struttura del progetto usi file speciali. File speciali sono i file nascosti sottostanti i file che sono finestre di dialogo di estrazione e visibile in Esplora soluzioni e il check-in. Se si utilizzano file speciali, seguire queste linee guida:  
   
-1.  Non associare file speciale con il nodo radice del progetto, vale a dire, con il progetto file stesso. File di progetto deve essere un singolo file.  
+1.  Non associare file speciali con il nodo radice del progetto, vale a dire, con il progetto file stesso. File di progetto deve essere un singolo file.  
   
-2.  Quando di aggiunto, rimosso o rinominati in un progetto, i file speciali <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> eventi devono essere generati con il set di flag che indica i file sono file speciali. Questi eventi vengono chiamati dall'ambiente in risposta al progetto chiamata appropriata <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metodi.  
+2.  Quando i file speciali sono aggiunto, rimosso o rinominati in un progetto appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> eventi devono essere generati con il set di flag che indica i file sono file speciali. Questi eventi vengono chiamati dall'ambiente in risposta al progetto chiamando appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metodi.  
   
-3.  Quando il progetto o un editor chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> per un file, i file speciali associati a tale file non sono automaticamente estratti. Passare i file speciali in insieme al file padre. L'ambiente rileverà la relazione tra tutti i file che vengono passati e nascondere in modo appropriato i file speciali nell'interfaccia utente di estrazione.  
+3.  Quando il progetto o l'editor chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> per un file, i file speciali associati a tale file non vengono archiviati automaticamente. Passare i file speciali nell'insieme al file padre. L'ambiente rileverà la relazione tra tutti i file che vengono passati e nascondere in modo appropriato i file speciali nell'interfaccia utente di estrazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

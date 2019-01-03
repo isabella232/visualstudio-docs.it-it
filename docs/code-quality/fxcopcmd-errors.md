@@ -2,7 +2,6 @@
 title: errori di FxCopCmd
 ms.date: 10/19/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -12,28 +11,28 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e650f9244fb97d4990e04a60b9e1f93794af4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34ec1b04e10b874d6f8373b5eb0e6c2e5c6d70e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844080"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errori di FxCopCmd strumento
 
-FxCopCmd non considera tutti gli errori irreversibili. Se FxCopCmd dispone di informazioni sufficienti per eseguire un'analisi parziale, esegue l'analisi e segnala gli errori che si sono verificati. Il codice di errore è un intero a 32 bit, contiene una combinazione bit per bit di valori numerici che corrispondono agli errori.
+FxCopCmd non considera tutti gli errori irreversibili. Se FxCopCmd sono disponibili informazioni sufficienti per eseguire un'analisi parziale, esegue l'analisi e segnala gli errori che si sono verificati. Il codice di errore che è un integer a 32 bit, contiene una combinazione bit per bit di valori numerici corrispondenti a errori.
 
 Nella tabella seguente vengono descritti i codici di errore restituiti da FxCopCmd:
 
 |Error|Valore numerico|
 |-----------|-------------------|
-|Senza errori|0x0|
+|Nessun errore|0x0|
 |Errore di analisi|0x1|
-|Eccezioni alle regole|0x2|
+|Eccezioni alla regola|0x2|
 |Errore di caricamento progetto|0x4|
 |Errore di caricamento assembly|0x8|
-|Errore durante il caricamento della libreria regola|0x10|
-|Errore durante il caricamento report importazione|0x20|
+|Errore di caricamento della libreria di regola|0x10|
+|Errore di caricamento di report di importazione|0x20|
 |Errore di output|0x40|
 |Errore di opzione della riga di comando|0x80|
 |Errore di inizializzazione|0x100|
@@ -41,18 +40,18 @@ Nella tabella seguente vengono descritti i codici di errore restituiti da FxCopC
 |BuildBreakingMessage|0x400|
 |Errore sconosciuto|0x1000000|
 
-**Errore di analisi** viene restituito per gli errori irreversibili. Indica che l'analisi non riuscita. Quando applicabile, il codice di errore contiene anche la causa dell'errore irreversibile. Le condizioni seguenti generano errori irreversibili:
+**Errore di analisi** viene restituito per gli errori irreversibili. Indica che non è stato possibile completare l'analisi. Quando applicabile, il codice di errore contiene anche la causa sottostante dell'errore irreversibile. Le condizioni seguenti generano errori irreversibili:
 
 - L'analisi potrebbe non essere eseguita a causa di input insufficienti.
 
-- L'analisi ha generato un'eccezione non gestita da FxCopCmd.
+- L'analisi ha generato un'eccezione non gestita dal FxCopCmd.
 
 - Il file di progetto specificato non è stato trovato o è danneggiato.
 
-- Non è stata specificata l'opzione di output o il file non è stato scritto.
+- L'opzione di output non è stato specificato o non è stato possibile scrivere il file.
 
 > [!NOTE]
-> Codice restituito di FxCopCmd **Assembly fa riferimento all'errore** 0x200 da se stessa è un avviso anziché un errore. Questo codice restituito indica che mancano i riferimenti indiretti, ma che FxCopCmd è stato in grado di gestirle. L'avviso indica che è possibile che alcuni dei risultati dell'analisi potrebbero essere stata compromessa. Considerare **Assembly fa riferimento all'errore** come un errore quando viene combinato con qualsiasi altro codice restituito.
+> Codice restituito di FxCopCmd **Assembly fa riferimento all'errore** 0x200 per sé è un avviso anziché un errore. Questo codice restituito indica che mancano i riferimenti indiretti, ma tale FxCopCmd è stata in grado di gestirle. Il messaggio di avviso indica che è possibile che alcuni dei risultati dell'analisi potrebbero essere stati compromessi. Considerare **Assembly fa riferimento all'errore** come un errore quando viene combinato con qualsiasi altro codice.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: A livello di codice aggiungere le immagini e WordArt ai documenti'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ac57f54d7ba925a7189dfa0bf94e1b951c5ba7fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854204"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: A livello di codice aggiungere le immagini e WordArt ai documenti
   È possibile aggiungere immagini e oggetti disegno ai documenti in fase di progettazione o in fase di esecuzione. WordArt consente di aggiungere testo decorativo ai documenti di Microsoft Office Word. Questi effetti di testo speciali sono oggetti disegno che è possibile personalizzare e inserire nel documento.  
@@ -108,5 +105,3 @@ ms.locfileid: "53804838"
  [Procedura: A livello di programmazione ripristinare le selezioni dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Procedura: Salvare i documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

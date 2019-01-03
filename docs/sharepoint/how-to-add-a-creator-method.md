@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: aggiungere un metodo Creator | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere un metodo Creator | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925420"
 ---
-# <a name="how-to-add-a-creator-method"></a>Procedura: aggiungere un metodo Creator
+# <a name="how-to-add-a-creator-method"></a>Procedura: Aggiungere un metodo Creator
   Un metodo Creator aggiunge nuovi dati all'origine dati di un'entità. Il servizio di integrazione applicativa dei dati (BDC) chiama questo metodo quando gli utenti scelgono il **nuovo elemento** pulsante il **della barra multifunzione** di un elenco che si basa sul modello. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Per aggiungere un metodo Creator  
@@ -70,12 +65,10 @@ ms.locfileid: "49897342"
   
 ## <a name="see-also"></a>Vedere anche
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)  

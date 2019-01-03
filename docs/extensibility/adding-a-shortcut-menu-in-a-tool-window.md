@@ -1,9 +1,6 @@
 ---
 title: Aggiunta di un Menu di scelta rapida in una finestra degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909801"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Aggiungere un menu di scelta rapida in una finestra degli strumenti
 Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra degli strumenti. Un menu di scelta rapida è un menu che viene visualizzato quando l'utente fa clic sul pulsante, casella di testo un sfondo della finestra. I comandi in un menu di scelta rapida si comportano come i comandi su altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nella *vsct* file e visualizzarli in risposta al pulsante destro del mouse del mouse.  
@@ -119,10 +116,10 @@ Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra 
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Questi sono gli stessi ID di comando che sono definiti nella sezione Symbols del *ShortcutMenuPackage.vsct* file. Il gruppo di contesto non è incluso qui perché è necessaria solo il *vsct* file.  
@@ -211,7 +208,7 @@ Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra 
 7.  Nelle *ShortcutMenuControl.xaml.cs*, aggiungere uno stub per il gestore dell'evento.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

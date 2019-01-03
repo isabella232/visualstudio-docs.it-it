@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: aggiungere un parametro a un metodo | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere un parametro a un metodo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 196ac37cc9bc4f53cfa886b92c62c7a301c3451a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866257"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Procedura: aggiungere un parametro a un metodo
+# <a name="how-to-add-a-parameter-to-a-method"></a>Procedura: Aggiungere un parametro a un metodo
   Usare un parametro per passare le informazioni nel metodo o per restituire informazioni da un metodo. Tutti i metodi devono avere almeno un parametro. Per altre informazioni su come progettare un parametro per supportare il tipo di metodo che si desidera creare, vedere [progettare un Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Quando si aggiunge un parametro a un metodo, Visual Studio aggiunge l'elemento del parametro al codice XML del file modello nel progetto. Per altre informazioni sugli attributi di un elemento di parametro, vedere [parametro](http://go.microsoft.com/fwlink/?LinkId=169284).  
@@ -56,12 +51,11 @@ ms.locfileid: "36756311"
   
      Per altre informazioni sulla direzione in cui scegliere per il metodo del tipo che si sta creando, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-8.  Modificare il descrittore di tipo del parametro. Per altre informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+8.  Modificare il descrittore di tipo del parametro. Per altre informazioni, vedere [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Vedere anche
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
+ [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

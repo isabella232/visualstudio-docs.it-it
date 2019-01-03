@@ -1,9 +1,6 @@
 ---
 title: soluzioni Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856854"
 ---
 # <a name="excel-solutions"></a>soluzioni Excel
   Visual Studio fornisce modelli di progetto che è possibile usare per creare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per Microsoft Office Excel. È possibile usare queste soluzioni per automatizzare Excel, estenderne le funzionalità e personalizzarne l'interfaccia utente. Per altre informazioni sulle differenze tra personalizzazioni a livello di documento e componenti aggiuntivi VSTO, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -122,4 +119,3 @@ ms.locfileid: "53647945"
 | [Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione nel progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Viene illustrato come aggiungere un pulsante Windows Form, un <xref:Microsoft.Office.Tools.Excel.NamedRange>e un <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di esecuzione usando un componente aggiuntivo VSTO. |
 | [Comprendere la creazione condivisa e componenti aggiuntivi](./understanding-coauthoring-and-addins.md) | Descrive le regolazioni che potrebbe essere necessario apportare alle soluzioni per supportare creazione condivisa. |
 | [Excel 2010 nello sviluppo per Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Fornisce collegamenti ad articoli e documentazione di riferimento sullo sviluppo di soluzioni Excel. Gli articoli non sono specifici per lo sviluppo di Office usando Visual Studio. |
-

@@ -1,9 +1,6 @@
 ---
 title: Soluzioni VBA e Office in Visual Studio rispetto
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5a0031133c6713320a0377098d096fa60748de6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 09c5fdeb37fa09595cdfda99aba06b9546c5f696
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820083"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Soluzioni VBA e Office in Visual Studio rispetto
   In Microsoft Visual Basic, Applications Edition (VBA) viene usato codice non gestito che è strettamente integrato con le applicazioni di Office. I progetti di Microsoft Office creati tramite Visual Studio consentono di sfruttare gli strumenti di progettazione di Visual Studio e .NET Framework.  
@@ -53,8 +50,6 @@ ms.locfileid: "35672298"
  [Chiamare il codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Combinazione di VBA e le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)   
- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)   
  [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-  
-  

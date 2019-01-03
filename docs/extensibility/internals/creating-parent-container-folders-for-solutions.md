@@ -1,9 +1,6 @@
 ---
 title: Creazione di cartelle contenitore padre per le soluzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889098"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Creare cartelle dei contenitori per le soluzioni padre
 Origine controllo plug-in API versione 1.2, un utente può specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti web all'interno della soluzione. Questa singola radice viene chiamata una radice unificata con privilegi elevati (SUR).  
@@ -52,7 +49,7 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è consigliabil
 |Funzionalità|API del plug-in versione 1.1 di controllo del codice sorgente|Versione 1.2 dell'API del plug-in controllo del codice sorgente|  
 |-------------| - | - |  
 |Aggiungi soluzione al controllo del codice sorgente|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Aggiungi progetto alla soluzione di controllo del codice sorgente|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Nota:** Visual Studio presuppone che una soluzione è un figlio diretto del sur la.|  
+|Aggiungi progetto alla soluzione di controllo del codice sorgente|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Nota:**  Visual Studio presuppone che una soluzione è un figlio diretto del sur la.|  
   
 ## <a name="examples"></a>Esempi  
  Nella tabella seguente sono elencati due esempi. In entrambi i casi, il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utente viene richiesto un percorso di destinazione per la soluzione nel controllo del codice sorgente finché il *user_choice* viene specificato come destinazione. Quando viene specificato il user_choice, senza chiedere conferma all'utente per le destinazioni di controllo di origine vengono aggiunti alla soluzione e due progetti.  

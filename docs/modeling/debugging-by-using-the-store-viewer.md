@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 79e995393c02f96561d3283f4181b3a7159f0832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856449"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Esecuzione del debug utilizzando il Visualizzatore di archivio
 Con il Visualizzatore Store, è possibile esaminare lo stato di un *archiviare* usato da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Il Visualizzatore Store consente di visualizzare tutti gli elementi di modello di dominio appartenenti a un negozio specifico, con le proprietà degli elementi e collegamenti tra elementi.

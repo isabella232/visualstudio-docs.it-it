@@ -1,9 +1,6 @@
 ---
 title: "Area di test 3: Estrarre o annullare l'estrazione | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, checkout
@@ -16,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d4c91f3904afbd677bc8359e633bf5a1735fceb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cfb1b2ff397fad1d8a4e74ef21cbb85805d1b1cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827033"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: Estrarre / Annulla estrazione
+# <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: Check-Out / Annulla estrazione
 Quest'area del plug-in test di controllo del codice sorgente illustra gli elementi di modifica e di ripristino dall'archivio delle versioni tramite il **Estrai** e **Annulla estrazione** comandi.  
 
-**Check Out**: segni di un elemento nell'archivio delle versioni come estratti, modifica la copia locale su lettura/scrittura.  
+**Scopri**: Contrassegni estratto un elemento nell'archivio delle versioni come, modifica la copia locale su lettura/scrittura.  
 
-**Annulla estrazione**: contrassegnare gli elementi nell'archivio delle versioni come Check-in, viene ripristinata la copia locale allo stato di check-out (a seconda delle opzioni).
+**Annulla estrazione**: Segni di un elemento nell'archivio delle versioni come Check-in, viene ripristinato la copia locale allo stato di check-out (a seconda delle opzioni).
 
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
 
@@ -42,7 +39,7 @@ Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei te
   
 -   Menu di scelta rapida **Estrai**.  
   
--   Annullamento estrazione: **File**, **controllo del codice sorgente**, **Annulla estrazione**.  
+-   Annulla estrazione: **File**, **controllo del codice sorgente**, **Annulla estrazione**.  
   
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune  
   
@@ -56,7 +53,7 @@ Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei te
 
 Di seguito sono specifici test case per l'area di test di estrazione/annullamento dell'estrazione.  
   
-### <a name="case-3a-check-out"></a>Caso 3: estrarre
+### <a name="case-3a-check-out"></a>Case 3a: Estrai
 
 Questa sezione è incentrata sull'operazione del comando estrazione.  
   
@@ -65,9 +62,9 @@ Questa sezione è incentrata sull'operazione del comando estrazione.
 |Controllare Out esclusivo (COE) un progetto client|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrae l'intero progetto in modo esclusivo (**File**, **Estrai**).|Si verifica l'estrazione.|  
 |Estrazione esclusiva (COE) un File System o un progetto Web IIS locale|1.  Impostazione connessione di Server Web di condivisione nel File **degli strumenti**, **opzioni**, **progetti**, **impostazioni Web**.<br />2.  Creare un progetto Web.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Estrae l'intero progetto in modo esclusivo (**File**, **controllo del codice sorgente**, **Check Out**).|Si verifica l'estrazione.|  
 |Estrae gli elementi della soluzione in una soluzione (nuovo metodo per la gestione di altri file)|1.  Creare una soluzione vuota.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre la soluzione.<br />4.  Aggiungere alcuni elementi di soluzione.<br />5.  Archiviare tutti gli elementi appena aggiunti.<br />6.  Selezionare più elementi di soluzione.<br />7.  Estrae gli elementi selezionati (Menu di scelta rapida **Estrai**).|I file selezionati sono stati estratti.|  
-|Estrai versione locale (se questa funzionalità supporta i plug-in sottoposta a test)|1.  L'utente 1: Creare un progetto client.<br />2.  L'utente 1: Aggiungere la soluzione al controllo del codice sorgente.<br />3.  L'utente 2: Aprire la soluzione dal controllo del codice sorgente in un altro percorso.<br />4.  L'utente 2: Estrarre un file.<br />5.  L'utente 2: Modificare il file.<br />6.  L'utente 2: Archiviare il file.<br />7.  Utente 1: Estrarre la versione locale del file (verificare i **Estrai versione locale** nell'opzione avanzata **Check Out** nella finestra di dialogo).|Versione locale del file è estratto.<br /><br /> Le modifiche apportate dall'utente 2 non vengono applicate ai file di 1 utente.|  
+|Estrai versione locale (se questa funzionalità supporta i plug-in sottoposta a test)|1.  1 utente: Creare un progetto client.<br />2.  1 utente: Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Utente 2: Aprire la soluzione dal controllo del codice sorgente in un altro percorso.<br />4.  Utente 2: Estrarre un file.<br />5.  Utente 2: Modificare il file.<br />6.  Utente 2: Archiviare il file.<br />7.  1 utente: Estrai versione locale del file (verificare i **Estrai versione locale** nell'opzione avanzata **Check Out** nella finestra di dialogo).|Versione locale del file è estratto.<br /><br /> Le modifiche apportate dall'utente 2 non vengono applicate ai file di 1 utente.|  
   
-### <a name="case-3b-disconnected-check-out"></a>Caso 3b: disconnessa Check-out
+### <a name="case-3b-disconnected-check-out"></a>Case 3b: Estrazione disconnesso
 
 Funziona in modalità disconnessa consente agli utenti un certo livello di supporto per il controllo origine continua se non è collegato direttamente a un archivio delle versioni. Ciò avviene memorizzando localmente nella cache tutte le informazioni rilevanti sui progetti e soluzioni integrate.  
   
@@ -87,7 +84,7 @@ Quando l'utente si riconnette alla versione archiviare, gli stati di estrazione 
 |------------|----------------|--------------------------------|  
 |Durante la disconnessione, estrarre un file e quindi connettersi per la sincronizzazione|1.  Disconnettere un progetto controllato presente nella finestra di dialogo Modifica controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />2.  Estrarre un file.<br />3.  Fare clic su Estrai (disconnesso) nella finestra di dialogo di avviso.<br />4.  Modificare il file.<br />5.  Connettersi tramite la finestra di dialogo Modifica controllo del codice sorgente.<br />6.  Ottenere la versione più recente del file modificato.|Comportamento previsto comune|  
   
-### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3c: Query di modifica/Query salvare (QEQS)  
+### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3C: Query Edit/Query Save (QEQS)  
  Gli elementi nel controllo del codice sorgente vengono tenuta traccia per le modifiche, le modifiche, e consente di risparmiare per consentire agli utenti con facilità gestiscono i file. Quando viene modificato un elemento controllato che è "archiviato", QEQS intercetta la modifica effettuata è fallita e chiede all'utente se desidera estrarre il file per modificarlo. A seconda **degli strumenti**, **opzioni** impostazioni, l'utente è costretto a controllare estrarre il file per modificare o possono essere autorizzati a modificare una copia in memoria ed estrarre in un secondo momento. Se l'utente **degli strumenti**, **opzioni** impostazione non è impostata per visualizzare la finestra di dialogo di estrazione e di appena estrarlo, quindi come l'utente apporta la modifica, il file estrae automaticamente, laddove possibile.  
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
@@ -124,7 +121,7 @@ Quando l'utente si riconnette alla versione archiviare, gli stati di estrazione 
 |Estrazione invisibile all'utente per un file|1.  Impostare **Tools**, **opzioni**, **controllo del codice sorgente** al **Esegui checkout dei file automaticamente dal menu Modifica**.<br />2.  Creare un nuovo progetto con un file.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Estrarre il file.|File estratto automaticamente (senza interfaccia utente).|  
 |Estrazione invisibile all'utente per un progetto|1.  Impostare **Tools**, **opzioni**, **controllo del codice sorgente** al **Esegui checkout dei file automaticamente dal menu Modifica**.<br />2.  Creare un nuovo progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Estrarre il progetto.|File estratto automaticamente (senza interfaccia utente).|  
   
-### <a name="case-3e-undo-check-out"></a>Caso 3e: Annulla estrazione  
+### <a name="case-3e-undo-check-out"></a>Case 3e: Annulla estrazione  
  **Annulla estrazione** viene usato per annullare un file estratto lo stato e di evitare di archiviare le modifiche apportate al file.  
   
 #### <a name="expected-behavior"></a>Comportamento previsto  

@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierDescription2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15facb38037272dcf2cef4f06d84d835b874012
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6387708232c97a25ea11fc554d250e14e6b66e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818339"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Consente di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente per visualizzare il testo all'interno di **informazioni sul trasporto** sezione del **Connetti a processo** la finestra di dialogo.  
+Consente il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente per visualizzare il testo all'interno di **informazioni sul trasporto** sezione del **Connetti a processo** nella finestra di dialogo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -30,18 +27,18 @@ IDebugPortSupplierDescription2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia è implementata da fornitori di porte.  
+ Questa interfaccia viene implementata da fornitori di porte.  
   
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono illustrati i metodi di `IDebugPortSupplierDescription2`.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera la descrizione e i metadati di descrizione per il fornitore della porta.|  
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera la descrizione e una descrizione dei metadati per il fornitore della porta.|  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

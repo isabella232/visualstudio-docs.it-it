@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e72814b34790dd133f09e0fb16c594e12ea8147c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: def47ec9f58db8d1a4cd1497d5c4611369167bb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832230"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 
@@ -27,7 +26,7 @@ ModelBus consente di creare un riferimento univoco a un modello o a un elemento 
 
 Per altre informazioni e per il codice di esempio, vedere:
 
--   [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
 -   [Modeling SDK per Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
 
@@ -520,6 +519,6 @@ Quando si con il pulsante destro fare clic sul diagramma di definizione DSL, far
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aprire un modello da File nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Uso di ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

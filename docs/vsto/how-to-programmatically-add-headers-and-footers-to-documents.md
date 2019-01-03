@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: A livello di codice aggiungere le intestazioni e piè di pagina ai documenti'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848454"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procedura: A livello di codice aggiungere le intestazioni e piè di pagina ai documenti
   È possibile aggiungere testo alle intestazioni e ai piè di pagina del documento usando la proprietà <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> e la proprietà <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> di <xref:Microsoft.Office.Interop.Word.Section>. Ogni sezione di un documento contiene tre intestazioni e piè di pagina:  
@@ -76,4 +73,3 @@ ms.locfileid: "53803376"
  [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)   
  [Procedura: A livello di programmazione estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Procedura: Ciclo a livello di programmazione tramite gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   

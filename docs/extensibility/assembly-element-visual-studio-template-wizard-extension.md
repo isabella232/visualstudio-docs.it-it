@@ -1,6 +1,5 @@
 ---
 title: Elemento assembly (estensione della creazione guidata modello di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828186"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento assembly (estensione della creazione guidata modello di Visual Studio)
 Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` interfaccia.  
@@ -61,7 +60,7 @@ Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` int
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.  
   
-```  
+```xml
 <VSTemplate Version="3.0.0" Type="Item"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,9 +86,10 @@ Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` int
         <FullClassName>MyWizard.CustomWizard</FullClassName>  
     </WizardExtension>  
 </VSTemplate>  
-```  
+```
   
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
- [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+## <a name="see-also"></a>Vedere anche
+
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

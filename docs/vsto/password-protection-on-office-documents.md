@@ -1,9 +1,6 @@
 ---
 title: Password di protezione nei documenti di Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857001"
 ---
 # <a name="password-protection-on-office-documents"></a>Password di protezione nei documenti di Office
   È possibile impostare una password per i documenti di Microsoft Office Word e cartelle di lavoro di Microsoft Office Excel in modo che non può essere aperto da chi non conosce la password. Questa opzione, detta **Password all'apertura**.  
@@ -43,7 +40,5 @@ ms.locfileid: "35671833"
 ## <a name="see-also"></a>Vedere anche  
  [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
  [Information rights management e panoramica sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Procedura: consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

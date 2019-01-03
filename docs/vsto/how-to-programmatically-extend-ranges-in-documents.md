@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: estendere a livello di programmazione gli intervalli nei documenti'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione estendere gli intervalli nei documenti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919664"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Procedura: estendere a livello di programmazione gli intervalli nei documenti
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Procedura: A livello di programmazione estendere gli intervalli nei documenti
   Una volta definito un oggetto <xref:Microsoft.Office.Interop.Word.Range> in un documento di Microsoft Office Word, è possibile modificare i punti iniziale e finale usando i metodi <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . I metodi <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> accettano gli stessi due argomenti, *Unit* e *Count*. I metodi *Count* rappresenta il numero di unità da spostare, mentre l'argomento *Unit* può rappresentare uno dei seguenti valori <xref:Microsoft.Office.Interop.Word.WdUnits> :  
   
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
@@ -52,7 +49,7 @@ ms.locfileid: "49888671"
   
 ## <a name="to-extend-a-range"></a>Per estendere un intervallo  
   
-1.  Definire un intervallo di caratteri. Per altre informazioni, vedere [procedura: definire e selezionare intervalli nei documenti a livello di programmazione](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
+1.  Definire un intervallo di caratteri. Per altre informazioni, vedere [Procedura: Definire e selezionare intervalli nei documenti a livello di programmazione](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
      L'esempio di codice seguente può essere usato in una personalizzazione a livello di documento.  
   
@@ -93,9 +90,8 @@ ms.locfileid: "49888671"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: reimpostare a livello di programmazione gli intervalli nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Procedura: a livello di programmazione comprimere intervalli o selezioni in documenti](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Procedura: recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Procedura: escludere i segni di paragrafo a livello di programmazione durante la creazione di intervalli](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
+ [Procedura: A livello di programmazione reimpostare gli intervalli nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Procedura: A livello di programmazione comprimere intervalli o selezioni in documenti](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Procedura: Recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Procedura: A livello di programmazione escludere i segni di paragrafo durante la creazione di intervalli](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

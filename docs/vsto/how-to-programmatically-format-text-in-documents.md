@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: formattazione del testo nei documenti a livello di codice'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione formattare il testo nei documenti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: baf6f49b0347aa4a770b4f7a47c7fa8195d5ede5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2e0cc5c9e42d3de2b0b5ed34664639b70b31abb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835276"
 ---
-# <a name="how-to-programmatically-format-text-in-documents"></a>Procedura: formattazione del testo nei documenti a livello di codice
+# <a name="how-to-programmatically-format-text-in-documents"></a>Procedura: A livello di programmazione formattare il testo nei documenti
   È possibile usare l'oggetto <xref:Microsoft.Office.Interop.Word.Range> per formattare il testo in un documento di Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,8 +47,6 @@ ms.locfileid: "35257410"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Procedura: a livello di programmazione inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Procedura: cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)  
-  
-  
+ [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Procedura: A livello di programmazione inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Procedura: Cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)  

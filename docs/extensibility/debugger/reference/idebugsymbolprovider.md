@@ -1,9 +1,6 @@
 ---
-title: IDebugSymbolProvider | Documenti Microsoft
-ms.custom: ''
+title: IDebugSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de77e30f0e9f52af10eef1757048a078d6d4a583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 419712760d6920874fa89e0da80cc1529f767f1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840369"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-Questa interfaccia rappresenta un provider di simboli che fornisce tipi, che vengono restituiti come campi e simboli.  
+Questa interfaccia rappresenta un provider di simboli che fornisce i simboli e i tipi, che vengono restituiti come campi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +29,10 @@ IDebugSymbolProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un provider di simboli debba implementare questa interfaccia per fornire i simboli e informazioni sui tipi per un analizzatore di espressioni.  
+ Un provider di simboli debba implementare questa interfaccia per fornire simboli e informazioni sui tipi per un analizzatore di espressioni.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Questa interfaccia viene ottenuta tramite COM `CoCreateInstance` funzione (per i provider di simboli non gestito) o caricando appropriata gestiti assembly di codice e creazione di provider il simbolo basato le informazioni contenute in tale assembly. Il motore di debug crea un'istanza di provider di simboli per lavorare insieme con l'analizzatore di espressioni. Vedere l'esempio per un approccio alla creazione di istanze di questa interfaccia.  
+ Questa interfaccia viene ottenuta tramite COM `CoCreateInstance` (funzione) (per i provider di simboli non gestito) o caricando appropriato gestiti assembly di codice e creazione di provider di simboli sulla base delle informazioni disponibili in tale assembly. Crea un'istanza di motore di debug al provider di simboli di lavorare insieme con l'analizzatore di espressioni. Vedere l'esempio per uno degli approcci per creare un'istanza di questa interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugSymbolProvider`.  
@@ -46,16 +43,16 @@ IDebugSymbolProvider : IUnknown
 |`Uninitialize`|Deprecato. Non usare.|  
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Ottiene il campo che contiene l'indirizzo di debug.|  
 |`GetField`|Deprecato. Non usare.|  
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Esegue il mapping di una posizione del documento in una matrice di indirizzi di debug.|  
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Esegue il mapping di una posizione di documento in una matrice di indirizzi di debug.|  
 |[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Esegue il mapping di un contesto di documento in una matrice di indirizzi di debug.|  
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Esegue il mapping di un indirizzo di debug in un contesto di documento.|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Ottiene la lingua utilizzata per compilare il codice in corrispondenza dell'indirizzo di debug.|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Ottiene il linguaggio utilizzato per compilare il codice in corrispondenza dell'indirizzo di debug.|  
 |`GetGlobalContainer`|Deprecato. Non usare.|  
 |[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Ottiene il campo che rappresenta un nome di metodo completo.|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Ottiene il tipo di campo di classe che rappresenta un nome completo della classe.|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Ottiene il tipo di campo di classe che rappresenta il nome completo della classe.|  
 |[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crea un enumeratore per gli spazi dei nomi associato all'indirizzo di debug.|  
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Nome di un simbolo viene eseguito il mapping a un tipo di simbolo.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Ottiene l'indirizzo di debug che segue un indirizzo di debug specificata in un metodo.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.|  
   
 ## <a name="remarks"></a>Note  
  Questa interfaccia viene eseguito il mapping delle posizioni di documento in indirizzi di debug e viceversa.  
@@ -63,12 +60,12 @@ IDebugSymbolProvider : IUnknown
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come creare un'istanza del provider di simboli, dato il relativo GUID (motore di debug deve conoscere questo valore).  
+ In questo esempio viene illustrato come creare un'istanza del provider di simboli, dato il relativo GUID (un motore di debug deve conoscere questo valore).  
   
 ```cpp  
 // A debug engine uses its own symbol provider and would know the GUID  

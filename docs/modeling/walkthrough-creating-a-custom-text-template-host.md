@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: creazione di un host del modello di testo personalizzato'
+title: 'Procedura dettagliata: Creazione di un host del modello di testo personalizzato'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840765"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un host del modello di testo personalizzato
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un Host del modello di testo personalizzato
 
 Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore oppure *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
@@ -718,7 +717,7 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
 
 4. Per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo, aprire il **Project** dal menu **proprietà CustomHost**. Nel **oggetto di avvio** fare clic su **CustomHost**.
 
-5. Nel **File** menu, fare clic su **Salva tutto**.
+5. Nel menu **File** fare clic su **Salva tutto**.
 
 6. Scegliere **Compila soluzione** dal menu **Compila**.
 
@@ -821,7 +820,7 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per altre informazioni, vedere [procedura dettagliata: connessione di un Host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per altre informazioni, vedere [Procedura dettagliata: Connessione di un Host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,15 +1,10 @@
 ---
-title: 'Procedura: aggiungere e rimuovere cartelle mappate | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere e rimuovere cartelle mappate | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823928"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Procedura: aggiungere e rimuovere cartelle mappate
   Alcune cartelle utilizzate comunemente in SharePoint, ad esempio immagini e layout di annidamento nella gerarchia dei file. È possibile eseguire il mapping di queste cartelle in un progetto di SharePoint per accedervi più facilmente. Cartelle mappate sono cartelle nel progetto di SharePoint che corrispondono al percorso fisico dei file nell'installazione di SharePoint Server.  
@@ -40,7 +35,7 @@ ms.locfileid: "36757648"
   
 1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.  
   
-2.  Nel **nuovo progetto** finestra di dialogo espandere uno il **Visual Basic** o **Visual c#** nodo, espandere il **Office/SharePoint** nodo e quindi Scegliere il **soluzioni SharePoint** nodo.  
+2.  Nel **nuovo progetto** finestra di dialogo espandere uno il **Visual Basic** o **Visual C#**  nodo, espandere il **Office/SharePoint** nodo, quindi scegliere il **soluzioni SharePoint** nodo.  
   
 3.  Nell'elenco dei modelli di progetto, scegliere il **Web Part visiva di SharePoint 2013** modello.  
   
@@ -84,5 +79,4 @@ ms.locfileid: "36757648"
 3.  Per rimuovere una cartella mappata dal progetto, aprire il menu di scelta rapida, scegliere **eliminare**, quindi scegliere il **OK** pulsante nella finestra di dialogo per confermare la rimozione.  
   
 ## <a name="see-also"></a>Vedere anche
- [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

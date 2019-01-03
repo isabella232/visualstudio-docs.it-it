@@ -1,9 +1,6 @@
 ---
 title: Scelta di una strategia di implementazione del motore di Debug | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 058e3d3087a46de4bb3c5d9b721d3c9111b77526
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 97b3c82a59736b72a58237f1e53ff39e9e3b86b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818352"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Scegliere una strategia di implementazione del motore di debug
 Utilizzare l'architettura di runtime per determinare la strategia di implementazione (DE) del motore di debug. È possibile creare il debug del motore in-process per il programma di che debug. Creare il debug del motore in-process per la gestione di debug di Visual Studio sessione (SDM). In alternativa, creare il debug del motore out-of-process per entrambi i sistemi operativi. Le linee guida seguenti consentono di scegliere tra queste tre strategie.  

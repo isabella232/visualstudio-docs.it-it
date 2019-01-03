@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::Bind
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 916addd046bc804f7ef796b7c1218f7e5d007df2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819466"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 Associa il punto di interruzione in sospeso a uno o più percorsi di codice.  
@@ -29,8 +26,8 @@ Associa il punto di interruzione in sospeso a uno o più percorsi di codice.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT Bind(   
-   void   
+HRESULT Bind(   
+   void   
 );  
 ```  
   

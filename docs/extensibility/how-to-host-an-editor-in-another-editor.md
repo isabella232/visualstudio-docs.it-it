@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: ospitare un Editor in un altro Editor | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Ospitare un Editor in un altro Editor | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53b4f02135b18c4641d4e802df3d1124a5d06b47
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6a9de111a1747e9f5451bff2c8bd3e5edf171d9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833607"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Procedura: ospitare un editor in un altro editor
+# <a name="how-to-host-an-editor-in-another-editor"></a>Procedura: Ospitare un editor in un altro editor
 
 In Visual Studio, è possibile ospitare un editor all'interno di un altro, specificando la finestra di hosting come finestra padre. A tale scopo, impostare i parametri <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd> e <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame> nella cornice della finestra figlio.
 

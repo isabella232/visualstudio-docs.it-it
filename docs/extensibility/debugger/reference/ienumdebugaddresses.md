@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugAddresses | Documenti Microsoft
-ms.custom: ''
+title: IEnumDebugAddresses | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugAddresses
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfed705253a03ec550e7533f7e2ab323b7ead62a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0958ddb9aca23da5f73bd2686f86d8a0ccd826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920485"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Questa interfaccia rappresenta una raccolta di oggetti che implementano il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
@@ -32,7 +29,7 @@ IEnumDebugAdresses : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia viene implementata dal provider di simboli per fornire i set di oggetti che implementano il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia. Si noti che questo non è un'enumerazione standard COM a causa della presenza del [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) metodo.  
+ Questa interfaccia viene implementata dal provider di simboli per specificare set di oggetti che implementano il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia. Si noti che questo non è un'enumerazione standard COM a causa della presenza del [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) (metodo).  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
  Questa interfaccia viene restituita da [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) e [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).  
@@ -43,18 +40,18 @@ IEnumDebugAdresses : IUnknown
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[avanti](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Recupera il set successivo di [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetti dall'enumerazione.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignora un numero specificato di voci.|  
-|[Reimpostazione](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Reimposta l'enumerazione per la prima voce.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignora un determinato numero di voci.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Reimposta l'enumerazione per la prima voce.|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera una copia dell'enumerazione corrente.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera il numero di voci dell'enumerazione.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera il numero di voci nell'enumerazione.|  
   
 ## <a name="remarks"></a>Note  
- Questa interfaccia viene generalmente utilizzata dal motore di debug per determinare l'indirizzo appropriato per consentire l'analizzatore di espressioni.  
+ Questa interfaccia viene in genere utilizzata dal motore di debug per consentire di determinare l'indirizzo appropriato per consentire l'analizzatore di espressioni.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

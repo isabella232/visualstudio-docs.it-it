@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823649"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache
   Questa procedura dettagliata illustra la creazione di una relazione master/dettaglio in un foglio di lavoro e la memorizzazione nella cache i dati in modo che la soluzione possa essere usata offline.  
@@ -57,7 +54,7 @@ ms.locfileid: "49933157"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1. Creare un progetto cartella di lavoro di Excel con il nome **My Master-Detail**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Creare un progetto cartella di lavoro di Excel con il nome **My Master-Detail**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Master-Detail** progetto al **Esplora soluzioni**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933157"
  [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)   
  [Dati della cache](../vsto/caching-data.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

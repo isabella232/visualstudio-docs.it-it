@@ -2,7 +2,6 @@
 title: 'CA2217: Non contrassegnare le enumerazioni con FlagsAttribute'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852479"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Non contrassegnare le enumerazioni con FlagsAttribute
 
@@ -42,25 +41,25 @@ Un'enumerazione visibile esternamente è contrassegnata con <xref:System.FlagsAt
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un'enumerazione deve disporre di <xref:System.FlagsAttribute> presente solo se ogni valore definito nell'enumerazione è una potenza di due o una combinazione di valori definiti.
+Un'enumerazione deve avere <xref:System.FlagsAttribute> presente solo se ogni valore definiti nell'enumerazione è una potenza di due o una combinazione di valori definiti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rimuovere <xref:System.FlagsAttribute> dall'enumerazione.
+Per correggere una violazione di questa regola, rimuovere <xref:System.FlagsAttribute> ricavato dall'enumerazione.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Non escludere un avviso da questa regola.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Esempio in cui non deve avere l'attributo
+## <a name="example-that-should-not-have-the-attribute"></a>Esempio che non deve avere l'attributo
 
-L'esempio seguente mostra un'enumerazione, `Color`, che contiene il valore 3. 3 non è una potenza di due o una combinazione di uno qualsiasi dei valori specificati. Il `Color` enumerazione non deve essere contrassegnato con <xref:System.FlagsAttribute>.
+Nell'esempio seguente viene illustrata un'enumerazione, `Color`, che contiene il valore 3. 3 non è una potenza di due o una combinazione di uno qualsiasi dei valori definiti. Il `Color` enumerazione non deve essere contrassegnato con <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Esempio in cui dovrebbe avere l'attributo
+## <a name="example-that-should-have-the-attribute"></a>Esempio che deve avere l'attributo
 
 L'esempio seguente mostra un'enumerazione `Days`, che soddisfa i requisiti per essere contrassegnata con <xref:System.FlagsAttribute>.
 

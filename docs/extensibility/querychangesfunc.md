@@ -1,9 +1,6 @@
 ---
 title: QUERYCHANGESFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b5241a14ebaecb05db36a9ab4e1b808917afa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a50de0f08f5e31404a6dbe2cbf3a268ee53cc69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855010"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Si tratta di una funzione di callback utilizzata per la [SccQueryChanges](../extensibility/sccquerychanges-function.md) operazione per enumerare una raccolta di nomi di file e determinare lo stato di ogni file.  
@@ -47,7 +44,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Valore restituito  
  Nell'IDE viene restituito un codice di errore appropriato:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Continuare l'elaborazione.|  
 |SCC_I_OPERATIONCANCELED|Arrestare l'elaborazione.|  

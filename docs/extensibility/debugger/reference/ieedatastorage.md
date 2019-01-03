@@ -1,9 +1,6 @@
 ---
-title: IEEDataStorage | Documenti Microsoft
-ms.custom: ''
+title: IEEDataStorage | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeb98c4c4d3b544616412b3cf5cf8a162fddbd6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0db1dc01c67c93c5cabfb40af8acf55b34ad660
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820147"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Questa interfaccia rappresenta una matrice di byte.  
@@ -32,10 +29,10 @@ IEEDataStorage : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- L'analizzatore di espressioni (Java EE) implementa questa interfaccia per rappresentare una matrice di byte (utilizzato per i visualizzatori di tipo per recuperare e modificare dati tramite il [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface). In genere, l'analizzatore di Espressioni implementa questa interfaccia per supportare i visualizzatori di tipo esterno.  
+ L'analizzatore di espressioni (EE) implementa questa interfaccia per rappresentare una matrice di byte (usato da visualizzatori di tipi per recuperare e modificare i dati tramite il [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface). In genere, l'analizzatore di Espressioni implementa questa interfaccia per supportare i visualizzatori di tipo esterno.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- I metodi di `IPropertyProxyEESide` interfaccia tutte restituito questa interfaccia. Chiamare [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) per ottenere il [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaccia. Chiamare [QueryInterface](/cpp/atl/queryinterface) su un [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia per ottenere il [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) interfaccia.  
+ I metodi sul `IPropertyProxyEESide` interfaccia tutte restituire questa interfaccia. Chiamare [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) per ottenere il [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaccia. Chiamare [QueryInterface](/cpp/atl/queryinterface) in un [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia per ottenere il [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Il `IEEDataStorage` interfaccia implementa i metodi seguenti:  
@@ -46,14 +43,14 @@ IEEDataStorage : IUnknown
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Recupera il numero di byte di dati disponibili.|  
   
 ## <a name="remarks"></a>Note  
- Questa interfaccia viene utilizzata da un visualizzatore di tipo per accedere a dati mantenuti da un oggetto specifico. I dati viene considerati come una matrice di byte, consentendo al Visualizzatore di tipo per modificarlo nel modo necessario presentare all'utente.  
+ Questa interfaccia viene utilizzata da un visualizzatore di tipi per accedere a dati mantenuti da un oggetto specifico. I dati vengono considerati come una matrice di byte, consentendo il Visualizzatore di tipi di modificarla in base alle impostazioni è necessario presentare all'utente.  
   
- Un visualizzatore personalizzato inoltre possibile utilizzare questa interfaccia, se si desidera, sebbene in genere, un visualizzatore personalizzato utilizzerà un'interfaccia personalizzata, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) o [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (per orientato alla stringa di dati).  
+ Un visualizzatore personalizzato possa anche usare questa interfaccia, se si desidera, sebbene in genere, un visualizzatore personalizzato utilizzerà un'interfaccia personalizzata, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) oppure [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (per i dati con nome orientato alla stringa).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

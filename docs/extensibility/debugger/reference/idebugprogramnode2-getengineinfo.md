@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2::GetEngineInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 687ae8207fac97dde84b803fb01477d53114ad6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f461bf24df12732085416c12f60219973163d819
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848009"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un programma.  
@@ -28,7 +25,7 @@ Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un progra
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT GetEngineInfo (   
+HRESULT GetEngineInfo (   
    BSTR* pbstrEngine,  
    GUID* pguidEngine  
 );  

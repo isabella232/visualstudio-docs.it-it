@@ -1,9 +1,6 @@
 ---
 title: Gli strumenti personalizzati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, custom tools
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306173876d0fd7c4d1da76d1b5432ecd5358c425
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce8b18ee5c1c84b8e6480ffa9f91f739796f0991
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834412"
 ---
 # <a name="custom-tools"></a>Strumenti personalizzati
 *Gli strumenti personalizzati* consentono di associare uno strumento a un elemento in un progetto ed eseguire tale strumento ogni volta che viene salvato il file. Alcuni strumenti personalizzati, anche detta *generatori di file singoli*, vengono spesso usati per implementare i traduttori che generano codice dai dati e viceversa. Ad esempio, creano i generatori di file singolo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] out del codice sorgente il *Settings* e *resx* file. Il codice sorgente generato fornisce accesso fortemente tipizzato ai dati di *Settings* e *resx* file. Il [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipi di progetto supportano gli strumenti personalizzati; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] non li supportano tipi di progetto. Tipi di progetto personalizzati possono anche supportare gli strumenti personalizzati.  
@@ -54,4 +51,4 @@ ms.locfileid: "39500239"
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Estendere i progetti](../../extensibility/extending-projects.md)  
- Viene descritto come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti e soluzioni per organizzare i file di codice e i file di risorse e come implementare il codice sorgente.
+ Descrive come usare i progetti e le soluzioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per organizzare file di codice e file di risorse e come implementare il controllo del codice sorgente.

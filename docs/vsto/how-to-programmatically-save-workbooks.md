@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: a livello di programmazione salvare cartelle di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione salvare cartelle di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fc715518f31031c65667a2480d7e14111105202
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829171"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Procedura: a livello di programmazione salvare cartelle di lavoro
+# <a name="how-to-programmatically-save-workbooks"></a>Procedura: A livello di programmazione salvare cartelle di lavoro
   Una cartella di lavoro può essere salvata in più modi, ad esempio senza modificare il percorso. Se si tratta del primo salvataggio della cartella di lavoro, è necessario specificare un percorso. Se non viene specificato un percorso esplicito, Microsoft Office Excel salva il file nella cartella corrente con il nome assegnato al momento della creazione. È anche possibile salvare una copia della cartella di lavoro senza modificare la cartella di lavoro aperta in memoria.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -33,7 +30,7 @@ ms.locfileid: "35672719"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Per salvare una cartella di lavoro associata a una personalizzazione a livello di documento  
   
-1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> della classe `ThisWorkbook`.  
+1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> della classe `ThisWorkbook` .  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]  
@@ -88,9 +85,7 @@ ms.locfileid: "35672719"
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)   
  [Elemento host Workbook](../vsto/workbook-host-item.md)   
- [Procedura: chiudere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Procedura: A livello di programmazione chiudere cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

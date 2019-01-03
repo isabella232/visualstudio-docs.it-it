@@ -2,7 +2,6 @@
 title: Visualizzazione iniziale di Progettazione XML Schema
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857906"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 
@@ -27,7 +26,7 @@ La visualizzazione iniziale contiene due sezioni principali, il *filigrana* e il
 
 ## <a name="watermark"></a>Filigrana
 
-Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni Progettazione XSD, Editor XML, e **XML Schema Explorer**. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
+Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni Progettazione XSD, Editor XML, e **XML Schema Explorer**. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".
 
 ## <a name="schema-set-details"></a>Dettagli del set di schemi
 
@@ -43,9 +42,9 @@ I seguenti pulsanti sono abilitati nella barra degli strumenti di Progettazione 
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla visualizzazione iniziale. In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**2**.|
-|**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**3**.|
+|**Mostra visualizzazione iniziale**|Passa alla visualizzazione iniziale. In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**1**.|
+|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**2**.|
+|**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**3**.|
 
 ## <a name="see-also"></a>Vedere anche
 

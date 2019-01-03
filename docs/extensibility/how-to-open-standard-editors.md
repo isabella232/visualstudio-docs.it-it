@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: aprire gli editor Standard | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aprire gli editor Standard | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e740cdbb04a9b20ddb5a9d0465434333dd29264
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820345"
 ---
-# <a name="how-to-open-standard-editors"></a>Procedura: aprire gli editor standard
+# <a name="how-to-open-standard-editors"></a>Procedura: Apri editor standard
 Quando si apre un editor standard, è consentire l'IDE di determinare un editor standard per un tipo di file, anziché specificare un editor specifico del progetto per il file.  
   
  Completare la procedura seguente per implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> (metodo). Si aprirà un file di progetto in un editor standard.  
@@ -55,6 +52,6 @@ Quando si apre un editor standard, è consentire l'IDE di determinare un editor 
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Aprire e salvare elementi del progetto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Procedura: aprire gli editor specifici del progetto](../extensibility/how-to-open-project-specific-editors.md)   
- [Procedura: aprire gli editor di documenti aperti](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Procedura: Apri editor specifici del progetto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Procedura: Aprire gli editor di documenti aperti](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Visualizzare i file usando il comando Apri File](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

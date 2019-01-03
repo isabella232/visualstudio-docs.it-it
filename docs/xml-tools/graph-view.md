@@ -2,7 +2,6 @@
 title: Visualizzazione del grafico di Progettazione XML Schema
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826994"
 ---
 # <a name="graph-view"></a>Visualizzazione Grafico
 
@@ -37,7 +36,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  ![Progettazione XSD; Visualizzazione del grafico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
+ Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".
 
 ## <a name="breadcrumb-bar"></a>Barra di navigazione
 
@@ -103,16 +102,16 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Consente di attivare i [avvio della vista](../xml-tools/start-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**1**.|
-|**Mostra visualizzazione modello di contenuto**|Consente di attivare i [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**2**.|
-|**Mostra visualizzazione grafico**|Consente di attivare i [visualizzazione grafico](../xml-tools/graph-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**3**.|
+|**Mostra visualizzazione iniziale**|Consente di attivare i [avvio della vista](../xml-tools/start-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**1**.|
+|**Mostra visualizzazione modello di contenuto**|Consente di attivare i [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**2**.|
+|**Mostra visualizzazione grafico**|Consente di attivare i [visualizzazione grafico](../xml-tools/graph-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**3**.|
 |**Cancella l'area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovere dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|
-|**Zleva Doprava**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt**+**freccia destra**.|
-|**Zprava Doleva**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt**+**freccia sinistra**.|
-|**Dall'alto verso il basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt**+**freccia giù**.|
-|**Basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt**+**freccia**.|
+|**Zleva Doprava**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT**+**freccia destra**.|
+|**Zprava Doleva**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT**+**freccia sinistra**.|
+|**Dall'alto verso il basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT**+**freccia giù**.|
+|**Basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT**+**freccia**.|
 
 ## <a name="panscroll"></a>Panoramica/scorrimento
 

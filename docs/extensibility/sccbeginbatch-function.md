@@ -1,9 +1,6 @@
 ---
 title: Funzione SccBeginBatch | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccBeginBatch
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9593496f36fba4a56334a206cf39e9a6ad96ad2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c2e0ae1dd4d01018d9637e5722d8079222afbf3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869125"
 ---
 # <a name="sccbeginbatch-function"></a>Funzione SccBeginBatch
 Questa funzione avvia una sequenza di batch di operazioni di controllo codice sorgente. Il [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch non possono essere annidati.  
@@ -37,7 +34,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Batch di operazioni completata è stata avviata.|  
 |SCC_E_UNKNOWNERROR|Errore non specifico.|  

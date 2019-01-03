@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846165"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
@@ -53,7 +52,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 
 4.  Nelle **Aggiungi a progetto di modello**, individuare e selezionare un progetto di modellazione esistente nella soluzione.
 
-     oppure
+     -oppure-
 
      Scegli **creare un nuovo progetto di modellazione** per aggiungere un nuovo progetto di modellazione alla soluzione.
 
@@ -89,9 +88,9 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 
 |**Per**|**Seguire questi passaggi**|
 |-|-|
-|Creare un livello per un solo artefatto|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'artefatto.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:** si trascinano file binari per il diagramma delle dipendenze non vengono aggiunti automaticamente i riferimenti al progetto di modellazione. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modellazione. **Per aggiungere i file binari al progetto di modellazione** <ol><li>Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente**.</li><li>Nel **Aggiungi elemento esistente** della finestra di dialogo selezionare i file binari, selezionarli e quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>Nelle **Esplora soluzioni**, scegliere un file binario che aggiunto e quindi premere **F4** per aprire il **proprietà** finestra.</li><li>Per ogni file binario, impostare il **Build Action** proprietà **Validate**.</li></ol>|
+|Creare un livello per un solo artefatto|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'artefatto.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Si trascinano file binari per il diagramma delle dipendenze non vengono aggiunti automaticamente i riferimenti al progetto di modellazione. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modellazione. **Per aggiungere i file binari al progetto di modellazione** <ol><li>Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente**.</li><li>Nel **Aggiungi elemento esistente** della finestra di dialogo selezionare i file binari, selezionarli e quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>Nelle **Esplora soluzioni**, scegliere un file binario che aggiunto e quindi premere **F4** per aprire il **proprietà** finestra.</li><li>Per ogni file binario, impostare il **Build Action** proprietà **Validate**.</li></ol>|
 |Creare un solo livello per tutti gli artefatti selezionati|Trascinare tutti gli artefatti nel diagramma delle dipendenze nello stesso momento.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli artefatti.|
-|Creare un livello per ogni artefatto selezionato|Premere e tenere premuto il **MAIUSC** mentre si trascinano contemporaneamente tutti gli elementi nel diagramma delle dipendenze. **Nota:** se si usano i **MAIUSC** chiave per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli artefatti. Premerlo e tenerlo premuto nuovamente quando si trascinano gli artefatti nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
+|Creare un livello per ogni artefatto selezionato|Premere e tenere premuto il **MAIUSC** mentre si trascinano contemporaneamente tutti gli elementi nel diagramma delle dipendenze. **Nota:**  Se si usa la **MAIUSC** chiave per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli artefatti. Premerlo e tenerlo premuto nuovamente quando si trascinano gli artefatti nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
 |Aggiungere un elemento a un livello|Trascinare l'elemento sul livello.|
 |Creare un nuovo livello non collegato|Nel **della casella degli strumenti**, espandere il **diagramma delle dipendenze** sezione e quindi trascinare un' **livello** nel diagramma delle dipendenze.<br /><br /> Per aggiungere più livelli, fare doppio clic sullo strumento. Al termine, scegliere il **puntatore** degli strumenti oppure premere la **ESC** chiave.<br /><br /> -oppure-<br /><br /> Aprire il menu di scelta rapida per il diagramma delle dipendenze, scegliere **Add**, quindi scegliere **Layer**.|
 |Creare livelli annidati|Trascinare un livello esistente su un altro livello.<br /><br /> -oppure-<br /><br /> Aprire il menu di scelta rapida per un livello, scegliere **Add**, quindi scegliere **Layer**.|
@@ -161,7 +160,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 ## <a name="see-also"></a>Vedere anche
 
 - [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
-- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
 - [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualizzare il codice](../modeling/visualize-code.md)

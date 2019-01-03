@@ -2,7 +2,6 @@
 title: 'CA2120: Proteggere i costruttori di serializzazione'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899684"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteggere i costruttori di serializzazione
 

@@ -1,6 +1,5 @@
 ---
-title: "Procedura: usare il contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Usare il contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824288"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedura: usare contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedura: Usare regole in base al contesto dell'interfaccia utente per le estensioni di Visual Studio
 Visual Studio consente il caricamento di VSPackage durante determinati noto <xref:Microsoft.VisualStudio.Shell.UIContext>s vengono attivati. Tuttavia, questi contesti dell'interfaccia utente non sono bene più capillare, che non lascia gli autori delle estensioni nessuna scelta ma per il prelievo di un contesto dell'interfaccia utente disponibili che viene attivato prima del punto di lo desiderano VSPackage da caricare. Per un elenco di contesti dell'interfaccia utente ben noti, vedere <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Caricamento dei pacchetti può avere un impatto sulle prestazioni e caricarli prima di quanto necessario non è la procedura consigliata. Visual Studio 2015 ha introdotto il concetto dei contesti di interfaccia utente basata su regole, un meccanismo che consente agli autori di estensioni definire le condizioni precise in cui viene attivato un contesto dell'interfaccia utente e vengono caricati i pacchetti VSPackage associati.  
@@ -44,7 +43,7 @@ Visual Studio consente il caricamento di VSPackage durante determinati noto <xre
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
    ```  
   
-    Per gli attributi, aggiungere i seguenti valori: (i dettagli di questi attributi verranno spiegati più avanti)  
+    Per gli attributi, aggiungere i valori seguenti: (Dettagli di questi attributi verranno spiegati più avanti)  
   
    ```csharp  
    [ProvideAutoLoad(TestPackage.UIContextGuid)]      

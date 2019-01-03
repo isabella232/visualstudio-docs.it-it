@@ -1,9 +1,6 @@
 ---
-title: Cenni preliminari sul servizio di linguaggio legacy | Documenti Microsoft
-ms.custom: ''
+title: Panoramica del servizio di linguaggio legacy | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
@@ -13,56 +10,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29d98bd0e474a503b84cb21a1bca25cb2836a433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989595"
 ---
-# <a name="legacy-language-service-overview"></a>Cenni preliminari sul servizio di linguaggio legacy
-Un servizio di linguaggio fornisce il supporto di editor che consente di implementare determinati [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio del file system distribuito (MPF, Managed Package Framework) forniscono il supporto completo per le funzionalità di frequente e supporto parziale per altre funzionalità.  
+# <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
+Un servizio di linguaggio fornisce supporto dell'editor che consente di implementare determinati [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio linguaggio Framework di pacchetto gestito (MPF) offrono il supporto completo per le funzionalità usati di frequente e un supporto parziale per le altre funzionalità.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Funzionalità completamente supportate in MPF  
- Le classi del servizio di linguaggio MPF supportano le funzionalità seguenti:  
+ Le classi del servizio del linguaggio MPF supportano le funzionalità seguenti:  
   
 -   Evidenziazione della sintassi  
   
 -   struttura  
   
--   Blocchi di commenti di codice  
+-   Aggiunta di commenti blocchi di codice  
   
 -   Corrispondenza parentesi graffe  
   
 -   Frammenti di codice  
   
--   Proprietà personalizzate del documento  
+-   Proprietà personalizzate dei documenti  
   
 -   Informazioni sui parametri di IntelliSense  
   
 -   Informazioni rapide di IntelliSense  
   
--   Completamento di IntelliSense membro  
+-   Completamento dei membri IntelliSense  
   
--   Completa parola di IntelliSense  
+-   Completamento delle parole IntelliSense  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>Funzionalità parzialmente supportate in MPF  
- Il Framework MPF supporta solo parzialmente per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi che vengono chiamati dal MPF.  
+ MPF supporta parzialmente solo per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.  
   
--   La formattazione di codice. Specificare il codice che implementa la riformattazione.  
+-   Riformattazione del codice. Si fornisce il codice che implementa la riformattazione.  
   
--   Convalida i punti di interruzione identificando gli intervalli di codice valido. Specificare il codice che identifica le estensioni di codice.  
+-   Esegue la convalida dei punti di interruzione identificando gli intervalli di codice valido. Si fornisce il codice che identifica gli intervalli di codice.  
   
--   Supporto del debugger **Auto** finestra per la visualizzazione delle variabili. Specificare il codice che determina gli elementi da visualizzare nella finestra.  
+-   Supporto del debugger **Auto** finestra per la visualizzazione di variabili. Si fornisce il codice che determina gli elementi da visualizzare nella finestra.  
   
--   Supporto di **barra di spostamento** per la navigazione rapida tra i tipi e membri. Implementare e restituire una classe helper che consente di popolare gli elenchi presenti nel **barra di spostamento** caselle combinate.  
+-   Che supportano il **sulla barra di navigazione** per la navigazione rapida tra tipi e membri. Si implementa e restituire una classe helper che consente di popolare gli elenchi nel **sulla barra di navigazione** caselle combinate.  
   
 ## <a name="implementation"></a>Implementazione  
- È necessario completare diversi passaggi per implementare il servizio di linguaggio stesso e le funzionalità del linguaggio che si desidera supportare per la propria lingua. I singoli passaggi sono descritti negli argomenti seguenti:  
+ È necessario completare diversi passaggi per implementare il servizio di linguaggio stesso e le funzionalità di servizio di linguaggio che si desidera supportare per la propria lingua. Questi passaggi sono descritti negli argomenti seguenti:  
   
--   [Implementazione di un servizio di linguaggio Legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [Registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [Registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
 -   [Colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
@@ -84,7 +81,7 @@ Un servizio di linguaggio fornisce il supporto di editor che consente di impleme
   
 -   [Completamento dei membri in un servizio di linguaggio legacy](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
--   [Informazioni sul parametro in un servizio di linguaggio Legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+-   [Informazioni sui parametri in un servizio di linguaggio legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
 -   [Informazioni rapide in un servizio di linguaggio legacy](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   

@@ -1,8 +1,7 @@
 ---
-title: 'Procedura: selezionare gli schemi XML da utilizzare'
+title: 'Procedura: Selezionare gli XML Schema da usare'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824392"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da usare
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: Selezionare gli schemi XML da usare
 
 L'Editor XML fornisce una cache degli schemi situata nella *%InstallDir%\Xml\Schemas.* directory. La cache degli schemi include schemi XML noti che vengono usati per IntelliSense e per la convalida di documenti XML.
 
@@ -40,7 +39,7 @@ Gli schemi specificati vengono salvati nel file delle opzioni utente nascosto so
 
    - Selezionare uno schema elencato nella **schemi XML** finestra di dialogo, fare clic sul **utilizzare** colonna e quindi selezionare **utilizzano questo schema**.
 
-     oppure
+     -oppure-
 
    - Selezionare più schemi elencati nella **schemi XML** finestra di dialogo, pulsante destro del mouse e scegliere **utilizzano questo schema**.
 
@@ -58,7 +57,7 @@ Gli schemi specificati vengono salvati nel file delle opzioni utente nascosto so
 
 3.  Individuare e selezionare gli schemi da aggiungere alla cache degli schemi.
 
-4.  Fare clic su **aperto**.
+4.  Fare clic su **Apri**.
 
      Gli schemi vengono aggiunti allo schema di memorizzare nella cache ed è il **utilizzo** il valore di colonna è impostato su **utilizzano questo schema**.
 

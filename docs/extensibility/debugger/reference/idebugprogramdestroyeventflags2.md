@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramDestroyEventFlags2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6b57206159ce00fbb79e9f9af1a6353588df76c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3d0385af4ec795608672d8d7cbdb4b188246dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825854"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Consente di eseguire l'override del comportamento predefinito di un motore di debug di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente quando si termina una sessione di debug.  
+Consente a un motore di debug eseguire l'override del comportamento predefinito del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente quando si termina una sessione di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -30,21 +27,21 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia è implementata dai motori di debug. È utile per gli host che potrebbero creare e distruggere più programmi in base alla durata di un processo.  
+ Questa interfaccia viene implementata dai motori di debug. È utile per gli host che potrebbero creare ed eliminare più programmi in base alla durata di un processo.  
   
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono illustrati i metodi di `IDebugProgramDestroyEventFlags2`.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera il programma destroy flag.|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera il programma di eliminare definitivamente i flag.|  
   
 ## <a name="remarks"></a>Note  
- Il comportamento predefinito del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente è per tornare alla modalità progettazione dopo che tutti i programmi sono inviate a un programma evento eliminazione. Questa interfaccia consente a un motore di debug per modificare questo comportamento.  
+ Il comportamento predefinito del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente consiste nel tornare alla modalità progettazione dopo che tutti i programmi sono inviate a un programma un evento di eliminazione. Questa interfaccia consente a un motore di debug modificare tale comportamento.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

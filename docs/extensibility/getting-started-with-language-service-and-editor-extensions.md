@@ -1,9 +1,6 @@
 ---
 title: Introduzione a servizio di linguaggio e le estensioni dell'Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831758"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni di editor e servizio di linguaggio
 È possibile usare le estensioni dell'editor per aggiungere funzionalità del servizio linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e lampadine per il proprio linguaggio di programmazione o a qualsiasi tipo di contenuto. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio colore, i margini, le aree di controllo e altri elementi visivi come testo. È anche possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni testo in cui viene visualizzato il contenuto.  
@@ -85,7 +82,7 @@ ms.locfileid: "49901320"
   
  È anche possibile creare editor di componenti MEF da un'estensione del pacchetto di Visual Studio. Le procedure dettagliate seguenti per informazioni dettagliate, vedere:  
   
--   [Procedura dettagliata: Uso di un comando della shell con un'estensione dell'editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [Procedura dettagliata: Utilizzo di un comando della shell con un'estensione dell'editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
 -   [Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   

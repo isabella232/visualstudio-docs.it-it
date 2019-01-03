@@ -1,17 +1,12 @@
 ---
 title: Che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SafeControlEntries
 - VS.SharePointTools.Project.ProjectOutputReference
 - VS.SharePointTools.Project.FeatureProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -29,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec29871cc6e5062f2d44fb8938872b5f0531f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843021"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto
   Tutti gli elementi di progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile usare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:  
@@ -65,17 +60,17 @@ ms.locfileid: "49893299"
  Aggiungere le proprietà della funzionalità direttamente il file di funzionalità (*feature*), chiamare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] metodo modello a oggetti SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Se si usa questo metodo, tenere presente che la stessa regola sull'aggiunta di valori di proprietà di funzionalità identiche nelle proprietà della funzionalità si applica anche alle proprietà aggiunte direttamente al file di funzionalità.  
   
 ## <a name="feature-receiver"></a>Ricevitore di funzionalità
- Ricevitori di funzionalità sono codice eseguito quando si verificano determinati eventi a un elemento del progetto che contiene funzionalità. Ad esempio, è possibile definire i ricevitori di funzionalità che vengono eseguite quando la funzionalità è installata, attivata o aggiornata. Per aggiungere un ricevitore di funzionalità consiste nell'aggiungerlo direttamente a una funzionalità, come descritto in [procedura dettagliata: aggiungere ricevitori di eventi di funzionalità](../sharepoint/walkthrough-add-feature-event-receivers.md). È inoltre possibile fare riferimento a un nome di classe ricevitore di funzionalità e un assembly nel **ricevitore di funzionalità** proprietà.  
+ Ricevitori di funzionalità sono codice eseguito quando si verificano determinati eventi a un elemento del progetto che contiene funzionalità. Ad esempio, è possibile definire i ricevitori di funzionalità che vengono eseguite quando la funzionalità è installata, attivata o aggiornata. Per aggiungere un ricevitore di funzionalità consiste nell'aggiungerlo direttamente a una funzionalità, come descritto in [procedura dettagliata: Aggiungere ricevitori di eventi di funzionalità](../sharepoint/walkthrough-add-feature-event-receivers.md). È inoltre possibile fare riferimento a un nome di classe ricevitore di funzionalità e un assembly nel **ricevitore di funzionalità** proprietà.  
   
 ### <a name="direct-method"></a>Metodo diretto
  Quando si aggiunge un ricevitore di funzionalità a una funzionalità direttamente, un file di codice viene inserito sotto il **funzionalità** nodo in Esplora soluzioni. Quando si compila la soluzione di SharePoint, il codice viene compilato in un assembly e della distribuzione in SharePoint. Per impostazione predefinita, le proprietà della funzionalità **Assembly del ricevitore** e **classe del ricevitore** facciano riferimento al nome della classe e assembly.  
   
 ### <a name="reference-method"></a>Reference (metodo)
- Un altro modo per aggiungere un ricevitore di funzionalità consiste nell'usare la **ricevitore di funzionalità** proprietà di un elemento di progetto per fare riferimento a un assembly del ricevitore di funzionalità. Il valore della proprietà ricevitore di funzionalità presenta due sottoproprietà: **assieme** e **Class Name**. L'assembly deve usare il nome completo, nome "avanzato" e il nome della classe deve essere il nome completo del tipo. Per altre informazioni, vedere [Assembly con nomi sicuri](http://go.microsoft.com/fwlink/?LinkID=169573). Dopo aver distribuito la soluzione in SharePoint, la funzionalità utilizza il ricevitore di funzionalità di cui viene fatto riferimento per gestire gli eventi di funzionalità.  
+ Un altro modo per aggiungere un ricevitore di funzionalità consiste nell'usare la **ricevitore di funzionalità** proprietà di un elemento di progetto per fare riferimento a un assembly del ricevitore di funzionalità. Il valore della proprietà ricevitore di funzionalità presenta due sottoproprietà: **Assembly** e **Class Name**. L'assembly deve usare il nome completo, nome "avanzato" e il nome della classe deve essere il nome completo del tipo. Per altre informazioni, vedere [Assembly con nomi sicuri](http://go.microsoft.com/fwlink/?LinkID=169573). Dopo aver distribuito la soluzione in SharePoint, la funzionalità utilizza il ricevitore di funzionalità di cui viene fatto riferimento per gestire gli eventi di funzionalità.  
   
  Soluzione a fase di compilazione, la funzionalità di valori di proprietà ricevitore nella funzionalità e i relativi progetti unire tra loro per impostare gli attributi vengono e ReceiverClass dell'elemento Feature nel manifesto della funzionalità della soluzione SharePoint (*wsp* ) file. Pertanto, se vengono specificati entrambi i valori delle proprietà Assembly e il nome di classe di un elemento di progetto e una funzionalità, devono corrispondere i valori delle proprietà progetto elemento e funzionalità. Se i valori non corrispondono, si riceverà un errore di convalida. Se si desidera che un elemento di progetto per fare riferimento a un assembly del ricevitore di funzionalità diverso da quello utilizzato dalla relativa funzionalità, spostarlo in un'altra funzionalità.  
   
- Se si fa riferimento a un assembly del ricevitore di funzionalità che non sia già nel server, è necessario includere anche il file di assembly nel pacchetto; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non verrà aggiunto automaticamente. Quando si distribuisce la funzionalità, viene copiato il file di assembly a che il sistema [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] o la cartella Bin nella directory fisica SharePoint. Per altre informazioni, vedere Procedura: [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Se si fa riferimento a un assembly del ricevitore di funzionalità che non sia già nel server, è necessario includere anche il file di assembly nel pacchetto; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non verrà aggiunto automaticamente. Quando si distribuisce la funzionalità, viene copiato il file di assembly a che il sistema [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] o la cartella Bin nella directory fisica SharePoint. Per altre informazioni, vedere Procedura: [Procedura: Aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Per altre informazioni sui ricevitori di funzionalità, vedere [ricevitore di eventi](http://go.microsoft.com/fwlink/?LinkID=169574) e [eventi di funzionalità](http://go.microsoft.com/fwlink/?LinkID=169575).  
   
@@ -84,14 +79,14 @@ ms.locfileid: "49893299"
   
  Riferimenti all'output del progetto sono in genere gli assembly, ma in alcuni casi (ad esempio, i progetti Silverlight) possono essere altri tipi di file.  
   
- Per altre informazioni, vedere [procedura: aggiungere un riferimento all'output del progetto](../sharepoint/how-to-add-a-project-output-reference.md).  
+ Per altre informazioni, vedere [Procedura: Aggiungere un riferimento all'output del progetto](../sharepoint/how-to-add-a-project-output-reference.md).  
   
 ## <a name="safe-control-entries"></a>Voci di controllo sicure
- SharePoint fornisce un meccanismo di sicurezza, denominato voci di controllo sicure, per limitare l'accesso degli utenti non attendibili di determinati controlli. Per impostazione predefinita, SharePoint consente agli utenti non attendibili caricare e creare le pagine ASPX nel server SharePoint. Per impedire questi utenti di aggiungere il codice unsafe per le pagine ASPX, SharePoint l'accesso al limitato *controlli sicuri*. Controlli sicuri sono controlli ASPX e Web part designata come protetto e che può essere utilizzato da altri utenti nel sito. Per altre informazioni, vedere [passaggio 4: aggiungere la Web Part di elenco di controlli sicuri](http://go.microsoft.com/fwlink/?LinkID=171014).  
+ SharePoint fornisce un meccanismo di sicurezza, denominato voci di controllo sicure, per limitare l'accesso degli utenti non attendibili di determinati controlli. Per impostazione predefinita, SharePoint consente agli utenti non attendibili caricare e creare le pagine ASPX nel server SharePoint. Per impedire questi utenti di aggiungere il codice unsafe per le pagine ASPX, SharePoint l'accesso al limitato *controlli sicuri*. Controlli sicuri sono controlli ASPX e Web part designata come protetto e che può essere utilizzato da altri utenti nel sito. Per altre informazioni, vedere [passaggio 4: Aggiungere la Web Part all'elenco di controlli sicuri](http://go.microsoft.com/fwlink/?LinkID=171014).  
   
- Ogni elemento del progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ha una proprietà denominata **voci di controllo sicure** che presenta due sottoproprietà booleane: **provvisoria** e **sicurezza Script**. Con la proprietà Sicuro viene specificato se gli utenti non attendibili possono accedere a un controllo. La proprietà di sicurezza Script consente di specificare se gli utenti non attendibili possono visualizzare e modificare le proprietà di un controllo.  
+ Ogni elemento del progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ha una proprietà denominata **voci di controllo sicure** che presenta due sottoproprietà booleane: **-Safe** e **sicurezza Script**. Con la proprietà Sicuro viene specificato se gli utenti non attendibili possono accedere a un controllo. La proprietà di sicurezza Script consente di specificare se gli utenti non attendibili possono visualizzare e modificare le proprietà di un controllo.  
   
- Le voci di controllo sicura vengono fatto riferimento in base all'assembly. Per aggiungere le voci di controllo sicuro all'assembly del progetto inserendole in dell'elemento del progetto **voci di controllo sicure** proprietà. Tuttavia, è possibile aggiungere le voci di controllo sicuro all'assembly di un progetto tramite il **avanzate** scheda le **Progettazione pacchetti** quando si aggiunge un assembly aggiuntivo per il pacchetto. Per altre informazioni, vedere [procedura: contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md) oppure [registrazione di un Assembly della Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkID=171013).  
+ Le voci di controllo sicura vengono fatto riferimento in base all'assembly. Per aggiungere le voci di controllo sicuro all'assembly del progetto inserendole in dell'elemento del progetto **voci di controllo sicure** proprietà. Tuttavia, è possibile aggiungere le voci di controllo sicuro all'assembly di un progetto tramite il **avanzate** scheda le **Progettazione pacchetti** quando si aggiunge un assembly aggiuntivo per il pacchetto. Per altre informazioni, vedere [Procedura: Contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md) oppure [la registrazione di un Assembly della Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkID=171013).  
   
 ### <a name="xml-entries-for-safe-controls"></a>Voci XML per i controlli sicuri
  Quando si aggiunge una voce di controllo sicura a un elemento del progetto o assembly del progetto, viene scritto un riferimento al manifesto del pacchetto nel formato seguente:  

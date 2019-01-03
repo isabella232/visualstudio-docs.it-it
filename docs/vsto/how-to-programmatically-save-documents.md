@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: salvare i documenti a livello di codice'
-ms.custom: ''
+title: 'Procedura: Salvare i documenti a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821594"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Procedura: salvare i documenti a livello di codice
+# <a name="how-to-programmatically-save-documents"></a>Procedura: Salvare i documenti a livello di codice
   Esistono diversi modi per salvare i documenti di Microsoft Office Word. È possibile salvare un documento senza modificare il nome del documento, oppure è possibile salvare un documento con un nuovo nome.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883477"
 -   Per salvare un documento con un nuovo nome, una directory denominata *Test* deve esistere nell'unità C.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)   
- [Procedura: aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Procedura: Chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)   
+ [Procedura: A livello di codice aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Elemento host Document](../vsto/document-host-item.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

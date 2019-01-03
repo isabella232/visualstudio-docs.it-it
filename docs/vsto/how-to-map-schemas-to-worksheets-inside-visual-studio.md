@@ -3,8 +3,6 @@ title: 'Procedura: Mappare schemi a fogli di lavoro in Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1be044131ab7248e971e5030f0d35467773587e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849928"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedura: Mappare schemi a fogli di lavoro in Visual Studio
   È possibile eseguire il mapping di un XML schema a un foglio di lavoro mentre il foglio di lavoro è aperta in Visual Studio. Si usano gli stessi strumenti di Microsoft Office Excel che usano quando la cartella di lavoro viene aperto all'esterno di Visual Studio. Il progetto di Office consente di creare gli stessi oggetti se lo schema è mappato al foglio di lavoro prima o dopo aver creato la soluzione di Excel.  
@@ -70,5 +68,3 @@ ms.locfileid: "53646654"
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Mappare schemi a documenti di Word in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [XML schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
-  
-  

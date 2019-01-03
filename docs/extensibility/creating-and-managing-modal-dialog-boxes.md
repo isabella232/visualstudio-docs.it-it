@@ -1,9 +1,6 @@
 ---
 title: Creazione e gestione delle finestre di dialogo modali | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f6d7366fe2cce030f47d4bbd78b4baf6e5fff81d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847662"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Creare e gestire le finestre di dialogo modale
-Quando si crea una finestra di dialogo modale in Visual Studio, è necessario assicurarsi che la finestra padre della finestra di dialogo è disabilitata mentre viene visualizzata la finestra di dialogo, quindi abilitare nuovamente la finestra padre si chiude la finestra di dialogo. Se non si esegue questa operazione, potrebbe essere visualizzato l'errore: *Microsoft Visual Studio non è arrestato perché è attiva una finestra di dialogo modale. Chiudere la finestra di dialogo attiva e riprovare.*  
+Quando si crea una finestra di dialogo modale in Visual Studio, è necessario assicurarsi che la finestra padre della finestra di dialogo è disabilitata mentre viene visualizzata la finestra di dialogo, quindi abilitare nuovamente la finestra padre si chiude la finestra di dialogo. Se non si esegue in modo che venga visualizzato l'errore: *Microsoft Visual Studio non è chiusa perché è attiva una finestra di dialogo modale. Chiudere la finestra di dialogo attiva e riprovare.*  
   
  Esistono due modi di questa operazione. Il metodo consigliato, se si dispone di una finestra di dialogo WPF, è necessario derivare da <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, quindi chiamare <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> per visualizzare la finestra di dialogo. In questo caso, non devi gestire lo stato modale della finestra padre.  
   

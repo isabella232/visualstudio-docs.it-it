@@ -1,9 +1,6 @@
 ---
 title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MODULE_SYMBOL_SEARCH_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9deadc13f8cbe3678282bb2d9ac619959ecd26b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6bf29280345e1029a0732d36666ceba78ba2ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826666"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 Contiene informazioni sullo stato sui percorsi di ricerca dei simboli che sono stati cercati.  
@@ -69,7 +66,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

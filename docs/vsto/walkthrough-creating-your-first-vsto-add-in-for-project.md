@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare il primo aggiuntivo VSTO per Project'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931255"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procedura dettagliata: Creare il primo aggiuntivo VSTO per Project
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office Project. Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente dai progetti aperti. Per altre informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -123,13 +120,13 @@ ms.locfileid: "50671417"
 ## <a name="next-steps"></a>Passaggi successivi  
  Dopo aver creato un componente aggiuntivo VSTO di base per Project, vedere gli argomenti seguenti per altre informazioni su come sviluppare componenti aggiuntivi VSTO:  
   
--   Attività di programmazione generali che è possibile eseguire in componenti aggiuntivi VSTO per Project: [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Attività di programmazione generali che è possibile eseguire in componenti aggiuntivi VSTO per Project: [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Usando il modello a oggetti del progetto: [soluzioni del progetto](../vsto/project-solutions.md).  
+-   Usando il modello a oggetti del progetto: [Soluzioni del progetto](../vsto/project-solutions.md).  
   
--   Compilazione e debug di componenti aggiuntivi VSTO per Project: [soluzioni Office compilare](../vsto/building-office-solutions.md).  
+-   Compilazione e debug di componenti aggiuntivi VSTO per Project: [Creazione di soluzioni Office](../vsto/building-office-solutions.md).  
   
--   Distribuzione di componenti aggiuntivi VSTO per Project: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
+-   Distribuzione di componenti aggiuntivi VSTO per Project: [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671417"
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
  [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Associare controlli contenuto a parti XML personalizzate'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899652"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procedura dettagliata: Associare controlli contenuto a parti XML personalizzate
   Questa procedura dettagliata illustra come associare i controlli contenuto in una personalizzazione a livello di documento per Word a dati XML archiviati nel documento.  
@@ -36,19 +33,19 @@ ms.locfileid: "35673303"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Aggiunta di controlli contenuto al documento di Word presente in un progetto a livello di documento in fase di progettazione.  
+- Aggiunta di controlli contenuto al documento di Word presente in un progetto a livello di documento in fase di progettazione.  
   
--   Creazione di un file di dati XML e di uno schema XML che definisce gli elementi da associare ai controlli contenuto.  
+- Creazione di un file di dati XML e di uno schema XML che definisce gli elementi da associare ai controlli contenuto.  
   
--   Associazione dello schema XML al documento in fase di progettazione.  
+- Associazione dello schema XML al documento in fase di progettazione.  
   
--   Aggiunta del contenuto del file XML a una parte XML personalizzata nel documento in fase di esecuzione.  
+- Aggiunta del contenuto del file XML a una parte XML personalizzata nel documento in fase di esecuzione.  
   
--   Binding dei controlli contenuto a elementi nella parte XML personalizzata.  
+- Binding dei controlli contenuto a elementi nella parte XML personalizzata.  
   
--   Binding di <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a un set di valori definiti nello schema XML.  
+- Associazione di <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a un set di valori definiti nello schema XML.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -62,7 +59,7 @@ ms.locfileid: "35673303"
   
 ### <a name="to-create-a-new-word-document-project"></a>Per creare un progetto di documento di Word  
   
-1.  Creare un progetto documento di Word con il nome **EmployeeControls**. Creare un nuovo documento per la soluzione. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto documento di Word con il nome **EmployeeControls**. Creare un nuovo documento per la soluzione. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **EmployeeControls** progetto al **Esplora soluzioni**.  
   
@@ -71,36 +68,36 @@ ms.locfileid: "35673303"
   
 ### <a name="to-add-content-controls-to-the-document"></a>Per aggiungere controlli contenuto al documento  
   
-1.  Nel documento di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, sulla barra multifunzione, scegliere il **Inserisci** scheda.  
+1. Nel documento di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, sulla barra multifunzione, scegliere il **Inserisci** scheda.  
   
-2.  Nel **tabelle** gruppo, scegliere **tabella**e inserire una tabella con 2 colonne e 3 righe.  
+2. Nel **tabelle** gruppo, scegliere **tabella**e inserire una tabella con 2 colonne e 3 righe.  
   
-3.  Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
+3. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
   
-    ||  
-    |-|  
-    |**Nome del dipendente**|  
-    |**Data di assunzione**|  
-    |**Titolo**|  
+   ||  
+   |-|  
+   |**Nome del dipendente**|  
+   |**Data di assunzione**|  
+   |**Titolo**|  
   
-4.  Nella seconda colonna della tabella, scegliere la prima riga (accanto a **Employee Name**).  
+4. Nella seconda colonna della tabella, scegliere la prima riga (accanto a **Employee Name**).  
   
-5.  Sulla barra multifunzione scegliere la **sviluppatore** scheda.  
+5. Sulla barra multifunzione scegliere la **sviluppatore** scheda.  
   
-    > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Nel **controlli** gruppo, scegliere il **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
+6. Nel **controlli** gruppo, scegliere il **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
   
-7.  Nella seconda colonna della tabella, scegliere la seconda riga (accanto a **Data assunzione**).  
+7. Nella seconda colonna della tabella, scegliere la seconda riga (accanto a **Data assunzione**).  
   
-8.  Nel **controlli** gruppo, scegliere il **Date Picker** pulsante ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> alla seconda cella.  
+8. Nel **controlli** gruppo, scegliere il **Date Picker** pulsante ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> alla seconda cella.  
   
 9. Nella seconda colonna della tabella, selezionare la terza riga (accanto a **titolo**).  
   
 10. Nel **controlli** gruppo, scegliere il **elenco a discesa** pulsante ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") da aggiungere un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> all'ultima cella.  
   
- È l'intera interfaccia utente per questo progetto. Se si esegue il progetto a questo punto, è possibile digitare un testo nella prima riga e selezionare una data nella seconda riga. Il passaggio successivo consiste nell'allegare i dati che si vogliano visualizzare al documento in un file XML.  
+    È l'intera interfaccia utente per questo progetto. Se si esegue il progetto a questo punto, è possibile digitare un testo nella prima riga e selezionare una data nella seconda riga. Il passaggio successivo consiste nell'allegare i dati che si vogliano visualizzare al documento in un file XML.  
   
 ## <a name="create-the-xml-data-file"></a>Creare il file di dati XML  
  In genere, si ottengono dati XML da archiviare in una parte XML personalizzata da un'origine esterna, ad esempio un file o un database. In questa procedura dettagliata è possibile creare un file XML che contiene i dati del dipendente, contrassegnati da elementi che verranno associati ai controlli contenuto del documento. Per rendere disponibili i dati in fase di esecuzione, incorporare il file XML come risorsa nell'assembly di personalizzazione.  
@@ -189,7 +186,7 @@ ms.locfileid: "35673303"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Allegare lo schema XML al documento  
  È necessario allegare lo schema XML al documento per associare <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ai valori validi dell'elemento `title`.  
   
-### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Per allegare lo schema XML al documento ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Per allegare lo schema XML al documento ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Attivare **EmployeeControls. docx** nella finestra di progettazione.  
   
@@ -296,7 +293,7 @@ ms.locfileid: "35673303"
   
 9. Denominare il file **EmployeeControls**.  
   
-     Il **EmployeeControls. docx** documento viene salvato in formato Open XML. Rinominando questo documento con il *zip* estensione, è possibile esaminare il contenuto del documento. Per altre informazioni sul formato Open XML, vedere l'articolo tecnico [formati di presentazione di Office (2007) Open XML file](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     Il **EmployeeControls. docx** documento viene salvato in formato Open XML. Rinominando questo documento con il *zip* estensione, è possibile esaminare il contenuto del documento. Per altre informazioni sul formato Open XML, vedere l'articolo tecnico [formati di presentazione di Office (2007) Open XML file](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Aprire il **EmployeeControls** file.  
   
@@ -313,19 +310,17 @@ ms.locfileid: "35673303"
 ## <a name="next-steps"></a>Passaggi successivi  
  Per altre informazioni sull'utilizzo dei controlli contenuto, vedere gli argomenti seguenti:  
   
--   Usare tutti i controlli contenuto disponibili per creare un modello. Per altre informazioni, vedere [procedura dettagliata: creare un modello mediante controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Usare tutti i controlli contenuto disponibili per creare un modello. Per altre informazioni, vedere [Procedura dettagliata: Creare un modello mediante controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Modificare i dati nella parte XML personalizzata mentre il documento è chiuso. Alla successiva apertura del documento, i controlli contenuto associati agli elementi XML visualizzeranno i nuovi dati.  
   
--   Usare i controlli contenuto per proteggere parti di un documento. Per altre informazioni, vedere [procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Usare i controlli contenuto per proteggere parti di un documento. Per altre informazioni, vedere [Procedura: Proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   
  [Controlli del contenuto](../vsto/content-controls.md)   
- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Procedura: Proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

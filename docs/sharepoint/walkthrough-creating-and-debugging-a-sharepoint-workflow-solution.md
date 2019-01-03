@@ -1,16 +1,11 @@
 ---
 title: 'Procedura dettagliata: Creazione e debug di una soluzione del flusso di lavoro di SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912990"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: Creare ed eseguire il debug di una soluzione del flusso di lavoro di SharePoint
   Questa procedura dettagliata viene illustrato come creare un modello di base del flusso di lavoro sequenziale. Il flusso di lavoro controlla una proprietà di una raccolta documenti condivisa per determinare se un documento è stato rivisto. Se il documento è stato rivisto, il flusso di lavoro termina.  
@@ -127,7 +122,7 @@ ms.locfileid: "42626488"
      Questa pagina consente di specificare quando viene avviato il flusso di lavoro. Per impostazione predefinita, il flusso di lavoro si avvia quando un utente avvia manualmente in SharePoint o quando viene creato un elemento a cui è associato il flusso di lavoro.  
   
 ## <a name="create-workflow-activities"></a>Creare le attività del flusso di lavoro
- I flussi di lavoro contengono uno o più *attività* che rappresentano le azioni da eseguire. Usare la finestra di progettazione del flusso di lavoro per organizzare le attività per un flusso di lavoro. In questa procedura, si aggiungeranno due attività nel flusso di lavoro: HandleExternalEvent e OnWorkFlowItemChanged. Queste attività consentono di monitorare lo stato di revisione di documenti nel **documenti condivisi** elenco  
+ I flussi di lavoro contengono uno o più *attività* che rappresentano le azioni da eseguire. Usare la finestra di progettazione del flusso di lavoro per organizzare le attività per un flusso di lavoro. In questa procedura, si aggiungeranno due attività nel flusso di lavoro: Attività HandleExternalEventActivity e OnWorkFlowItemChanged. Queste attività consentono di monitorare lo stato di revisione di documenti nel **documenti condivisi** elenco  
   
 #### <a name="to-create-workflow-activities"></a>Per creare le attività del flusso di lavoro  
   
@@ -167,7 +162,7 @@ ms.locfileid: "42626488"
   
 12. Nel **proprietà** finestra, impostare le proprietà come illustrato nella tabella seguente.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**elemento correlationToken**|**workflowToken**|  
     |**Richiamato**|**onWorkflowItemChanged**|  
@@ -187,7 +182,7 @@ ms.locfileid: "42626488"
     Boolean workflowPending = true;  
     ```  
   
-2.  Aggiungere il metodo seguente alla classe `Workflow1`. Questo metodo controlla il valore della `Document Status` proprietà dell'elenco dei documenti per determinare se il documento è stato rivisto. Se il `Document Status` è impostata su `Review Complete`, il `checkStatus` metodo imposta la `workflowPending` campo **false** per indicare che il flusso di lavoro è pronto essere terminato.  
+2.  Aggiungere il metodo seguente alla classe `Workflow1` . Questo metodo controlla il valore della `Document Status` proprietà dell'elenco dei documenti per determinare se il documento è stato rivisto. Se il `Document Status` è impostata su `Review Complete`, il `checkStatus` metodo imposta la `workflowPending` campo **false** per indicare che il flusso di lavoro è pronto essere terminato.  
   
     ```vb  
     Private Sub checkStatus()  
@@ -296,4 +291,3 @@ ms.locfileid: "42626488"
  [Creare soluzioni di flusso di lavoro di SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Progetto SharePoint e i modelli di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

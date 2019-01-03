@@ -1,9 +1,6 @@
 ---
 title: Introduzione a pacchetti VSPackage di controllo di origine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98edacd71132e9290cb339f3b3741a0afc25888
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849726"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Introduzione a controllo del codice sorgente pacchetti VSPackage
 Un VSPackage di controllo del codice sorgente è un'alternativa più avanzata per il plug-in del controllo del codice sorgente. Per altre informazioni sui plug-in controllo codice sorgente, vedere [creare plug-in un controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md). Controllo completo sul modello di controllo di origine, funzionalità e interfaccia utente (UI) consente a un VSPackage di controllo del codice sorgente e integra il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente come un pacchetto VSPackage.  

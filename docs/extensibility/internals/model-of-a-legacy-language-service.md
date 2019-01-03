@@ -1,9 +1,6 @@
 ---
 title: Modello di un servizio di linguaggio Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 381c5b37cdc5d8a166003bdf7dd931dd95e6dcb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4478ef31c107fcf437a452a857eabe2cd015734
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943089"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819900"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio legacy
 Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene usato per fornire l'editor con informazioni specifiche per tale lingua. Ad esempio, l'editor deve conoscere gli elementi e le parole chiave del linguaggio per supportare la colorazione della sintassi.  
