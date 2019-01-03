@@ -4,16 +4,15 @@ title: Misurazione delle prestazioni delle app tramite la profilatura | Microsof
 description: Informazioni su come usare Visual Studio 2017 per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886449"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Misurare le prestazioni delle app in Visual Studio
 
