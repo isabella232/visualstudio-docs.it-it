@@ -1,8 +1,7 @@
 ---
-title: 'CA2126: Per le richieste di collegamento dei tipi sono necessarie richieste di ereditarietà'
+title: 'CA2126: Le richieste di collegamento necessarie richieste di ereditarietà'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2126
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 834f120994070e055fe5ac417d1fb39830c7bcef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904140"
 ---
-# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Per le richieste di collegamento dei tipi sono necessarie richieste di ereditarietà
+# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Le richieste di collegamento necessarie richieste di ereditarietà
 
 |||
 |-|-|
@@ -56,13 +55,13 @@ ms.locfileid: "45548400"
  [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2108: Controllare la sicurezza dichiarativa sui tipi di valori](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+ [CA2108: Controllare la sicurezza dichiarativa sui tipi di valore](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
  [CA2112: I tipi protetti non devono esporre campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
  [CA2122: Non esporre in modo indiretto metodi con richieste di collegamento](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: Le richieste di collegamento negli override devono essere identiche a quelle nei metodi di base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+ [CA2123: Le richieste di collegamento di override devono essere identiche a di base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Vedere anche
 

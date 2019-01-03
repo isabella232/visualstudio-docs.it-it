@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: fda89444e0451b5d562aff37beffc2d7a97c0123
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 263df1391fcc9795b08a21a7e56b1113ef1fb82e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895675"
 ---
 # <a name="writing-user-commands-and-actions"></a>Scrittura di azioni e comandi utente
 È possibile personalizzare un linguaggio specifico di dominio aggiungendo comandi al diagramma e rispondendo a movimenti quali gli eventi di trascinamento della selezione, scelta e doppio clic.
 
 ## <a name="user-actions"></a>Azioni dell'utente
 
--   [Procedura: modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -è possibile personalizzare il comportamento dei comandi, ad esempio copia e stampa.
+-   [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -è possibile personalizzare il comportamento dei comandi come la copia e stampa.
 
--   [Procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -creare comandi personalizzati in grado di aggiornare il modello o risorse esterne.
+-   [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -creare comandi personali che è possono aggiornare il modello o a risorse esterne.
 
--   [Procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) -consente di spostare gli elementi da un diagramma a un'altra, tra cui diagrammi UML. È possibile archiviare riferimenti a un modello in un altro.
+-   [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) -consente all'utente di spostare gli elementi da un diagramma a un altro, inclusi i diagrammi UML. È possibile archiviare riferimenti a un modello in un altro.
 
--   [Procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -consentire all'utente di fare clic sulle diverse da un elemento a un altro elemento a cui fa riferimento.
+-   [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -consente all'utente tramite clic da un elemento a un altro elemento a cui fa riferimento.
 
 -   [Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)
 

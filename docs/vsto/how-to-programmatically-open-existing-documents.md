@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: aprire documenti esistenti'
-ms.custom: ''
+title: 'Procedura: A livello di codice aprire documenti esistenti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2163ddc7db3f0fbcf32abaa8c845b3838e9d2c98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932155"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Procedura: aprire documenti esistenti
+# <a name="how-to-programmatically-open-existing-documents"></a>Procedura: A livello di codice aprire documenti esistenti
   Il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo apre il documento di Microsoft Office Word esistente, specificato da un nome di file e percorso completo. Questo metodo restituisce un <xref:Microsoft.Office.Interop.Word.Document> che rappresenta il documento aperto.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -48,8 +45,6 @@ ms.locfileid: "35258723"
 -   Un documento denominato *NewDocument. doc* deve essere presente in una directory denominata *Test* nell'unità C.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)   
- [Procedura: chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)   
+ [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Procedura: Chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Panoramica delle soluzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97070a3c47f5e102ce974e0d7eeeea0380beff57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874589"
 ---
 # <a name="solutions-overview"></a>Panoramica delle soluzioni
 Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione. Le informazioni di progetto e lo stato relativi alla soluzione vengono archiviati in due file di soluzione diversa. Il file di soluzione (sln) è basata su testo e possono essere sottoposti a controllo del codice sorgente e condivisi dagli utenti. Il file (con estensione suo) opzione utente della soluzione è binario. Di conseguenza, il file con estensione suo non può essere inserito nel controllo del codice sorgente e contiene informazioni specifiche dell'utente.  

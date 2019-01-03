@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Visualizzazione di testo in una casella di testo in un documento tramite un pulsante'
-ms.custom: ''
+title: 'Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910139"
 ---
-# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: Visualizzazione di testo in una casella di testo in un documento tramite un pulsante
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante
   Questa procedura dettagliata illustra come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -49,7 +46,7 @@ ms.locfileid: "49822561"
   
 1.  Creare un progetto documento di Word con il nome **My Word Button**. Nella procedura guidata, selezionare **creare un nuovo documento**.  
   
-     Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **My Word Button** progetto al **Esplora soluzioni**.  
   
@@ -71,7 +68,7 @@ ms.locfileid: "49822561"
   
 5. Trascinare un **pulsante** al documento e modificare le proprietà seguenti.  
   
-   |Proprietà|Valore|  
+   |Proprietà|Value|  
    |--------------|-----------|  
    |**Name**|**insertText**|  
    |**per**|**Inserisci testo**|  
@@ -90,7 +87,7 @@ ms.locfileid: "49822561"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]  
   
-3.  In C# è necessario aggiungere un gestore eventi per il pulsante all'evento <xref:Microsoft.Office.Tools.Word.Document.Startup>. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  In C# è necessario aggiungere un gestore eventi per il pulsante all'evento <xref:Microsoft.Office.Tools.Word.Document.Startup>. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
@@ -108,15 +105,13 @@ ms.locfileid: "49822561"
 ## <a name="next-steps"></a>Passaggi successivi  
  Questa procedura dettagliata illustra i concetti di base relativi all'uso di pulsanti e caselle di testo nei documenti di Word. Ecco alcune possibili attività successive:  
   
--   Uso di una casella combinata per modificare la formattazione. Per altre informazioni, vedere [procedura dettagliata: modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Uso di una casella combinata per modificare la formattazione. Per altre informazioni, vedere [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [procedura dettagliata: aggiornamento di un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controlli Windows Form in panoramica di documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)   
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Procedura: Aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

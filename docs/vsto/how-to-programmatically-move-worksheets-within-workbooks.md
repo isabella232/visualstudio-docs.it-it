@@ -1,9 +1,6 @@
 ---
-title: "Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro"
-ms.custom: ''
+title: "Procedura: A livello di programmazione spostare fogli di lavoro all'interno di cartelle di lavoro"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5075008e3b6b2b6f9ae087c0cfe962f2a1191f52
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4df9f10872283cf8f8b38ba29a9ea140646aa16f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898934"
 ---
-# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro
+# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Procedura: A livello di programmazione spostare fogli di lavoro all'interno di cartelle di lavoro
   A livello di codice è possibile modificare la posizione dei fogli di lavoro rispetto ad altri fogli in una cartella di lavoro. Se non si specifica una posizione per il foglio spostato, Excel crea una nuova cartella di lavoro per contenerlo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,9 +41,7 @@ ms.locfileid: "35671857"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: nascondere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Procedura: eliminare a livello di programmazione i fogli di lavoro dalle cartelle di lavoro](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Procedura: proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Procedura: Nascondere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Procedura: A livello di codice eliminare fogli di lavoro dalle cartelle di lavoro](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

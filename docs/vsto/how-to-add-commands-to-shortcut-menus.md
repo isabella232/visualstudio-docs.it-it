@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Aggiungere comandi a menu di scelta rapida'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d046692ecacc108aa3ded15f7724cc5baad739f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930635"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: Aggiungere comandi a menu di scelta rapida
   In questo argomento viene illustrato come aggiungere comandi a un menu di scelta rapida in un'applicazione di Office usando un componente aggiuntivo VSTO.  
@@ -87,4 +84,3 @@ ms.locfileid: "53648429"
  [Procedura dettagliata: Creare i menu di scelta rapida per segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Personalizzare i menu di scelta rapida in Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
-  

@@ -2,7 +2,6 @@
 title: 'CA1412: Contrassegnare le interfacce ComSource come IDispatch'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkComSourceInterfacesAsIDispatch
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b992f546582fbd5b8bd82732b19ec4d72a6afd25
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 43891cad047b2740944d98f05c1d420fa9639715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912062"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Contrassegnare le interfacce ComSource come IDispatch
 
@@ -60,7 +59,7 @@ Nell'esempio seguente viene illustrata una classe in cui una delle interfacce vi
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1408: Non usare AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408: Non utilizzare AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925550"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando viene apportata una modifica a qualsiasi elemento nella finestra di Store, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio aggiungendo un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o i diagrammi. Molte funzionalità incorporate sono definite da regole: ad esempio, le regole di assicurano che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.
@@ -134,7 +133,7 @@ namespace ExampleNamespace
   | Classe base | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Questa procedura guidata consente di rilevare relazioni nuove, oltre a nuovi elementi. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando l'elemento predefinito `AbsoluteBounds` le modifiche alle proprietà, se la forma viene spostata.<br /><br /> In molti casi, risulta più semplice eseguire l'override `OnValueChanged` o `OnValueChanging` nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguito alla fine della transazione. Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** questa regola non viene generata quando viene creato o eliminato un collegamento. Invece di scrivere un' `AddRule` e un `DeleteRule` della relazione di dominio. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando l'elemento predefinito `AbsoluteBounds` le modifiche alle proprietà, se la forma viene spostata.<br /><br /> In molti casi, risulta più semplice eseguire l'override `OnValueChanged` o `OnValueChanging` nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguito alla fine della transazione. Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Questa regola non viene generata quando viene creato o eliminato un collegamento. Invece di scrivere un' `AddRule` e un `DeleteRule` della relazione di dominio. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Attivato quando un elemento o un collegamento sta per essere eliminato. La proprietà ModelElement.IsDeleting vale fino alla fine della transazione. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Eseguito quando un elemento o un collegamento è stato eliminato. La regola viene eseguita dopo che sono state eseguite tutte le altre regole, tra cui DeletingRules. ModelElement.IsDeleting è false e ModelElement.IsDeleted è true. Per consentire una successiva operazione di annullamento, l'elemento non viene effettivamente rimosso dalla memoria, ma viene rimosso dal Store.ElementDirectory. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento viene spostato da un archivio di partizione a altra.<br /><br /> Si noti che questo non è correlato alla posizione di una forma grafica. |

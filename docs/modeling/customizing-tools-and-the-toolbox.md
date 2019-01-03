@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919599"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
@@ -71,15 +70,15 @@ Il **generatore di connessioni** proprietà di uno strumento di connessione fa r
 
 3.  Impostare il **icona casella degli strumenti** proprietà per fare riferimento a una bitmap 16 x 16.
 
-     Se si desidera definire una nuova icona, creare un file bitmap in Esplora soluzioni nel **Dsl\Resources** cartella. Il file deve avere i valori delle proprietà seguenti: **Build Action** = **contenuto**; **Copia in Directory di Output** = **non copiare**.
+     Se si desidera definire una nuova icona, creare un file bitmap in Esplora soluzioni nel **Dsl\Resources** cartella. Il file deve avere i valori delle proprietà seguenti: **Azione di compilazione** = **contenuto**; **Copia in Directory di Output** = **non copiare**.
 
-4.  **Per uno strumento elemento:** impostare la **classe** proprietà dello strumento per fare riferimento a una classe di dominio concreta mappata a una forma.
+4.  **Per uno strumento elemento:** Impostare il **classe** proprietà dello strumento per fare riferimento a una classe di dominio concreta mappata a una forma.
 
-     **Per uno strumento di connessione:** impostare la **generatore di connessioni** proprietà dello strumento da uno degli elementi che sono disponibili nell'elenco a discesa. I generatori di connessione vengono creati automaticamente quando si mappa un connettore a una relazione di dominio. Se di recente si è creato un connettore, normalmente si selezionerà il generatore di connessioni associato.
+     **Per uno strumento di connessione:** Impostare il **generatore di connessioni** proprietà dello strumento da uno degli elementi che sono disponibili nell'elenco a discesa. I generatori di connessione vengono creati automaticamente quando si mappa un connettore a una relazione di dominio. Se di recente si è creato un connettore, normalmente si selezionerà il generatore di connessioni associato.
 
 5.  Per testare il linguaggio DSL, premere F5 o CTRL+F5 e nell'istanza sperimentale di Visual Studio, aprire un file di modello di esempio. Il nuovo strumento verrà visualizzato nella casella degli strumenti. Trascinarlo sul diagramma per verificare che crei un nuovo elemento.
 
-     Se lo strumento non viene visualizzata, arrestare l'istanza sperimentale di Visual Studio. Nella finestra di Windows **avviare** menu, eseguire **ripristinare Microsoft Visual Studio 2010 istanza sperimentale**. Nel **compilare** menu, fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
+     Se lo strumento non viene visualizzata, arrestare l'istanza sperimentale di Visual Studio. Nella finestra di Windows **avviare** menu, eseguire **ripristinare Microsoft Visual Studio 2010 istanza sperimentale**. Nel menu **Compila** fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
 
 ## <a name="customizing"></a> Personalizzazione di strumenti elemento
  Per impostazione predefinita, lo strumento creerà una singola istanza della classe specificata, ma è possibile scegliere tra due alternative:
@@ -238,6 +237,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)
-- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Esempio di diagrammi circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

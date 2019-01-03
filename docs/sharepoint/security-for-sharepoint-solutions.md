@@ -1,9 +1,6 @@
 ---
 title: Sicurezza per le soluzioni SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904903"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per le soluzioni SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora le funzionalità seguenti che consentono di migliorare la sicurezza delle applicazioni di SharePoint.
@@ -37,7 +34,7 @@ ms.locfileid: "49878765"
  L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi soluzione di SharePoint che viene distribuito non in cache assembly globali del sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Ad esempio soluzioni create mediante sandbox o soluzioni distribuite nella directory Bin dell'applicazione SharePoint. Per altre informazioni, vedere [modifiche della sicurezza versione 1 per Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) e [distribuzione di Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Proprietà sicurezza script
- *Creare uno script injection* consiste nell'inserimento di codice potenzialmente dannoso in controlli o le pagine Web. Per proteggersi dagli attacchi script injection i siti di SharePoint 2010, i collaboratori non è possibile visualizzare o modificare le Web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo di SafeControl denominato SafeAgainstScript. Nelle [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], impostare questo attributo in un elemento di progetto **voci di controllo sicure** sottoproprietà **sicurezza Script**. Per altre informazioni, vedere [fornire le informazioni del pacchetto e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [procedura: contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+ *Creare uno script injection* consiste nell'inserimento di codice potenzialmente dannoso in controlli o le pagine Web. Per proteggersi dagli attacchi script injection i siti di SharePoint 2010, i collaboratori non è possibile visualizzare o modificare le Web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo di SafeControl denominato SafeAgainstScript. Nelle [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], impostare questo attributo in un elemento di progetto **voci di controllo sicure** sottoproprietà **sicurezza Script**. Per altre informazioni, vedere [fornire le informazioni del pacchetto e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [come: Contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista e Windows 7 User Account Control
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporare una funzionalità di sicurezza nota come controllo Account utente (UAC). Per sviluppare soluzioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sul [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemi, controllo dell'account utente richiede l'esecuzione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come amministratore di sistema. Dal **avviare** menu, aprire il menu di scelta rapida per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], quindi scegliere **Esegui come amministratore**.
@@ -78,13 +75,13 @@ ms.locfileid: "49878765"
 
 -   [Protezione delle Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Protezione delle applicazioni Web miglioramento: Minacce e contromisure](http://go.microsoft.com/fwlink/?LinkID=140080)
+-   [Miglioramento della sicurezza delle applicazioni Web: Minacce e contromisure](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Sicurezza generale
 
 -   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Creazione di applicazioni ASP.NET protette: Autenticazione, autorizzazione e comunicazioni protette](http://go.microsoft.com/fwlink/?LinkId=177494)
+-   [Creazione di applicazioni ASP.NET protette: L'autenticazione, autorizzazione e comunicazioni protette](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Vedere anche
 

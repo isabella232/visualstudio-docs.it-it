@@ -1,9 +1,6 @@
 ---
 title: Concedere l'attendibilità ai documenti
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912348"
 ---
 # <a name="grant-trust-to-documents"></a>Concedere l'attendibilità ai documenti
   Un progetto a livello di documento presenta gli stessi requisiti di sicurezza dei progetti a livello di applicazione, ovvero la firma dei manifesti con un certificato o la risposta, tramite clic, a una richiesta di attendibilità. Inoltre, il documento o la cartella di lavoro si deve trovare in una directory definita come percorso attendibile.  
@@ -50,5 +47,3 @@ ms.locfileid: "53648836"
  [Concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)   
  [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)  
-  
-  

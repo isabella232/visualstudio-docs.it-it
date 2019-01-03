@@ -1,9 +1,6 @@
 ---
-title: IDebugStackFrame3 | Documenti Microsoft
-ms.custom: ''
+title: IDebugStackFrame3 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame3
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635b53bf63eb83cc868e4bf9b7d5fbb31fe5aa08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 376807a2963e93b3713d85b2d166c741671079bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932772"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Questa interfaccia estende [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) per gestire le eccezioni intercettate.  
@@ -32,7 +29,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il motore di debug (DE) implementa questa interfaccia sullo stesso oggetto che implementa il [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfaccia per supportare le eccezioni intercettate.  
+ Il motore di debug (DE) implementa questa interfaccia nello stesso oggetto che implementa il [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfaccia per supportare le eccezioni intercettate.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
  Chiamare [QueryInterface](/cpp/atl/queryinterface) su un `IDebugStackFrame2` interfaccia per ottenere questa interfaccia.  
@@ -42,25 +39,25 @@ IDebugStackFrame3 : IDebugStackFrame2
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Gestisce un'eccezione per lo stack frame corrente prima di eventuali eccezioni regolare.|  
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Restituisce un contesto di codice se si verificasse uno svuotamento dello stack.|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Gestisce un'eccezione per lo stack frame corrente prima la gestione delle eccezioni regolari.|  
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Restituisce un contesto di codice se si verifica uno svuotamento dello stack.|  
   
 ## <a name="remarks"></a>Note  
- Un'eccezione intercettata significa che un debugger può elaborare un'eccezione prima di qualsiasi routine di gestione delle eccezioni normale vengono chiamati dal runtime. Intercettazione di un'eccezione in pratica significa la fase di esecuzione si supponga che sia presente anche quando non vi è un gestore di eccezioni.  
+ Un'eccezione intercettata significa che un debugger può elaborare un'eccezione prima di qualsiasi routine di gestione delle eccezioni normale vengono chiamati dal runtime. Intercettare un'eccezione essenzialmente significa mettere in fase di esecuzione fingendo che vi sia un gestore di eccezioni presente anche quando non esiste.  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) viene chiamato durante tutti gli eventi di callback di eccezione normale (è l'unica eccezione a questa se si esegue il debug in modalità mista di codice gestito e codice non gestito, nel qual caso non è possibile intercettare l'eccezione durante il Last-chance callback). Se non implementa la Germania `IDebugStackFrame3`, o la Germania restituisce un errore da IDebugStackFrame3::`InterceptCurrentException` (ad esempio `E_NOTIMPL`), quindi il debugger gestirà in genere l'eccezione.  
+ [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) viene chiamato durante tutti gli eventi di callback di eccezione normale (l'unica eccezione è se si esegue il debug in modalità mista di codice gestito e codice non gestito, nel qual caso non è possibile intercettare l'eccezione durante il ultima callback). Se non implementa la Germania `IDebugStackFrame3`, o la Germania restituisce un errore da IDebugStackFrame3::`InterceptCurrentException` (ad esempio `E_NOTIMPL`), quindi il debugger l'eccezione verrà gestita normalmente.  
   
- Mediante l'intercettazione di un'eccezione, il debugger può consentire all'utente di apportare modifiche allo stato del programma sottoposto a debug e quindi riprendere l'esecuzione nel punto in cui è stata generata l'eccezione.  
+ Mediante l'intercettazione di un'eccezione, il debugger può consentire all'utente di apportare modifiche allo stato del programma in fase di debug e riprendere l'esecuzione nel punto in cui è stata generata l'eccezione.  
   
 > [!NOTE]
->  Eccezioni intercettate sono consentite solo nel codice gestito, vale a dire, in un programma che è in esecuzione in Common Language Runtime (CLR).  
+>  Le eccezioni intercettate sono consentite solo nel codice gestito, vale a dire, in un programma che viene eseguito in Common Language Runtime (CLR).  
   
- Un motore di debug indica che supporta le eccezioni di intercettazione impostando "metricExceptions" su un valore pari a 1 in fase di esecuzione utilizzando il `SetMetric` (funzione). Per ulteriori informazioni, vedere [SDK helper per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Un motore di debug indica che lo supporta intercettazione delle eccezioni tramite l'impostazione "metricExceptions" su un valore pari a 1 in fase di esecuzione usando il `SetMetric` (funzione). Per altre informazioni, vedere [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

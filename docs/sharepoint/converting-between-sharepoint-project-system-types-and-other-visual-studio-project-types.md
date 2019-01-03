@@ -1,9 +1,6 @@
 ---
 title: Conversione tra tipi di sistema di progetto SharePoint e altri tipi di progetto di Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5010a4cfba970f63cfa887f4c3be943cbdde731
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 145f080812356a4387401ef47adbd48fe783e60b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920618"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Eseguire la conversione tra tipi di sistema di progetto SharePoint e altri tipi di progetto di Visual Studio
   In alcuni casi potrebbe essere un oggetto nel sistema del progetto SharePoint e si desidera usare le funzionalità di un oggetto corrispondente nel modello oggetto di automazione di Visual Studio o nel modello oggetto di integrazione, o viceversa. In questi casi, è possibile usare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metodo del servizio di progetto SharePoint per convertire l'oggetto in un modello a oggetti diversi.
@@ -47,11 +44,10 @@ ms.locfileid: "36326179"
 
 -   Un'estensione del sistema del progetto SharePoint che contiene un riferimento per la *EnvDTE* assembly. Per altre informazioni, vedere [estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
--   Codice che registra il `projectService_ProjectAdded` metodo per gestire i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventi di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto. Per un esempio, vedere [procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+-   Codice che registra il `projectService_ProjectAdded` metodo per gestire i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventi di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto. Per un esempio, vedere [come: Creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Procedura: recuperare il servizio di progetto SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Procedura: Recuperare il servizio di progetto SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
 - [Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-

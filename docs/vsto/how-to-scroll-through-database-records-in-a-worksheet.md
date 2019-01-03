@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: scorrere i record di database in un foglio di lavoro'
-ms.custom: ''
+title: 'Procedura: Scorrere i record di database in un foglio di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897470"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: scorrere i record di database in un foglio di lavoro
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: Scorrere i record di database in un foglio di lavoro
   La procedura seguente viene illustrato come utilizzare la finestra di progettazione per visualizzare un singolo campo da una tabella di database in un foglio di lavoro di Microsoft Office Excel, con i controlli che consentono all'utente di scorrere tutti i record.  
   
- È possibile usare la finestra di progettazione solo nei progetti a livello di documento. Tuttavia, è possibile aggiungere controlli e associarli ai dati a livello di codice in fase di esecuzione. Per altre informazioni, vedere [procedura dettagliata: data binding semplice in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ È possibile usare la finestra di progettazione solo nei progetti a livello di documento. Tuttavia, è possibile aggiungere controlli e associarli ai dati a livello di codice in fase di esecuzione. Per altre informazioni, vedere [Procedura dettagliata: Data binding semplice in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35672882"
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: Visualizzazioni singole e multi-scheda | Documenti Microsoft
-ms.custom: ''
+title: Viste a schede singole e multiple | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
@@ -13,52 +10,52 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23feeaee14e6a149ad385c9f5e4a0c4b41be1e86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54486835fd2e5ee511e1ccdaa1fa179bbf23d7cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913243"
 ---
-# <a name="single-and-multi-tab-views"></a>Singole e multi-scheda viste
-Un editor è possibile creare diversi tipi di viste. Un esempio è una finestra dell'editor di codice, un altro è una finestra di progettazione del form.  
+# <a name="single-and-multi-tab-views"></a>Visualizzazioni a schede singole e multiple
+Un editor è possibile creare diversi tipi di viste. Un esempio è una finestra dell'editor di codice, un vantaggio è un progettista di moduli.  
   
- Una visualizzazione a schede è una vista che è presenti più schede. Ad esempio, l'editor HTML è disponibili due schede nella parte inferiore: **progettazione** e **origine**, ognuna una vista logica. Visualizzazione Progettazione consente di visualizzare una pagina web, mentre l'altro consente di visualizzare il codice HTML che include la pagina web.  
+ Una vista a più schede è una vista che è presenti più schede. Ad esempio, l'editor HTML include due schede nella parte inferiore: **Progettazione** e **origine**, ognuna una vista logica. La visualizzazione di progettazione viene visualizzata una pagina web sottoposta a rendering, mentre l'altra consente di visualizzare il codice HTML che include la pagina web.  
   
-## <a name="accessing-physical-views"></a>L'accesso a visualizzazioni fisiche  
- Le visualizzazioni fisiche ospitano gli oggetti di visualizzazione di documenti, ognuno dei quali rappresenta una visualizzazione dei dati nel buffer, ad esempio di codice o un form. Di conseguenza, ogni oggetto visualizzazione del documento dispone di una visualizzazione fisica (identificato da un elemento noto come una stringa di visualizzazione fisica) e in genere una singola visualizzazione logica.  
+## <a name="accessing-physical-views"></a>Accesso alle visualizzazioni fisiche  
+ Le visualizzazioni fisiche ospitano gli oggetti di visualizzazione di documenti, ognuno dei quali rappresenta una visualizzazione dei dati nel buffer, ad esempio di codice o un modulo. Di conseguenza, ogni oggetto visualizzazione del documento ha una visualizzazione fisica (identificato da un elemento noto come una stringa di visualizzazione fisica) e in genere una singola visualizzazione logica.  
   
- In alcuni casi, tuttavia, una visualizzazione fisica può avere due o più visualizzazioni logiche. Alcuni esempi sono un editor che dispone di una finestra divisa con viste side-by-side o una finestra di progettazione di form che dispone di una visualizzazione grafica/progettazione e una codice-behind-di-visualizzazione form.  
+ In alcuni casi, tuttavia, una visualizzazione fisica può avere due o più viste logiche. Alcuni esempi sono un editor che ha una finestra divisa con le visualizzazioni side-by-side, o una finestra di progettazione di form che dispone di una visualizzazione di progettazione/interfaccia utente grafica e una visualizzazione di code-behind-the-modulo.  
   
- Per attivare l'editor accedere a tutte le visualizzazioni fisiche disponibili, è necessario creare una stringa di visualizzazione fisica univoco per ogni tipo di oggetto visualizzazione del documento che è possibile creare il factory editor. Ad esempio, il [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] factory editor può creare documento gli oggetti di visualizzazione per una finestra del codice e una finestra di progettazione del form.  
+ Per abilitare l'editor per accedere a tutte le visualizzazioni fisiche disponibili, è necessario creare una stringa di visualizzazione fisica univoco per ogni tipo di oggetto visualizzazione del documento che è possibile creare la factory dell'editor. Ad esempio, il [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] factory dell'editor creare documento oggetti di visualizzazione per una finestra del codice e una finestra di progettazione form.  
   
-## <a name="creating-multi-tabbed-views"></a>Creazione di viste a schede  
- Se un oggetto visualizzazione del documento deve essere associato a una visualizzazione fisica tramite una stringa di visualizzazione fisica univoco, è possibile inserire più schede all'interno della visualizzazione fisica per attivare la visualizzazione dei dati in modi diversi. In questa configurazione di più schede, tutte le schede sono associate con la stessa stringa di visualizzazione fisica, ma ogni scheda viene fornita una vista logica diversi GUID.  
+## <a name="creating-multi-tabbed-views"></a>Creazione di schede e viste  
+ Anche se un oggetto visualizzazione del documento deve essere associato a una visualizzazione fisica tramite una stringa di visualizzazione fisica univoco, è possibile inserire più schede all'interno della visualizzazione fisica per consentire la visualizzazione dei dati in modi diversi. In questa configurazione a più schede, tutte le schede sono associate con la stessa stringa di visualizzazione fisica, ma ogni scheda ha una visualizzazione logica diversi GUID.  
   
- Per creare una visualizzazione a schede per un editor, implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> interfaccia e quindi associare una vista logica diversi GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) con ogni scheda è creare.  
+ Per creare una vista a più schede per un editor, implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> l'interfaccia e quindi associare una visualizzazione logica diversi GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) con ogni scheda è creare.  
   
- L'editor di Visual Studio HTML è un esempio di un editor con una visualizzazione di multi-scheda. Ha **progettazione** e **origine** schede. A tale scopo, è associata a ogni scheda, una vista logica diversa `LOGICALVIEWID_TextView` per il **progettazione** scheda e `LOGICALVIEWID_Code` per il **origine** scheda.  
+ L'editor HTML di Visual Studio è un esempio di un editor con una visualizzazione di multi-scheda. Dispone **Design** e **origine** schede. A tale scopo, è associata a ogni scheda, una vista logica diversa `LOGICALVIEWID_TextView` per il **Design** scheda e `LOGICALVIEWID_Code` per il **origine** scheda.  
   
- Specificando una vista logica appropriata, un pacchetto VSPackage può accedere alla visualizzazione che corrisponde a uno scopo specifico, ad esempio si progetta un modulo, la modifica del codice o il debug di codice. Tuttavia, una delle finestre deve essere identificata dalla stringa NULL e deve corrispondere alla vista logica primaria (`LOGVIEWID_Primary`).  
+ Specificando la visualizzazione logica appropriata, un pacchetto VSPackage può accedere alla visualizzazione che corrisponde a uno scopo specifico, ad esempio si progetta un modulo, la modifica del codice o il debug del codice. Tuttavia, una delle finestre, deve essere identificata dalla stringa NULL e deve corrispondere alla visualizzazione logica primaria (`LOGVIEWID_Primary`).  
   
- Nella tabella seguente sono elencati i valori di visualizzazione logica disponibile e il relativo utilizzo.  
+ Nella tabella seguente sono elencati i valori di visualizzazione logica disponibili e il relativo utilizzo.  
   
-|GUID LOGVIEWID|Utilizzo consigliato|  
+|GUID LOGVIEWID|Uso consigliato|  
 |--------------------|---------------------|  
-|`LOGVIEWID_Primary`|Visualizzazione predefinita o primario di factory dell'editor.<br /><br /> Tutte le factory editor devono supportare questo valore. Questa vista è necessario utilizzare la stringa NULL come stringa di visualizzazione fisica. A questo valore, è necessario impostare almeno una vista logica.|  
-|`LOGVIEWID_Debugging`|Visualizzazione di debug. In genere, `LOGVIEWID_Debugging` esegue il mapping alla stessa vista come `LOGVIEWID_Code`.|  
-|`LOGVIEWID_Code`|Visualizzazione avviata per il **Visualizza codice** comando.|  
-|`LOGVIEWID_Designer`|Visualizzazione avviata per il **Visualizza modulo** comando.|  
-|`LOGVIEWID_TextView`|Visualizzazione dell'editor di testo. Si tratta della visualizzazione che restituisce <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, da cui è possibile accedere a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|`LOGVIEWID_UserChooseView`|Richiede all'utente di scegliere quale visualizzazione per usare.|  
-|`LOGVIEWID_ProjectSpecificEditor`|Passato per il **Apri con** finestra di dialogo<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Quando l'utente sceglie la voce "(editor predefinito progetto)".|  
+|`LOGVIEWID_Primary`|Visualizzazione predefinita/primaria della factory dell'editor.<br /><br /> Tutte le factory dell'editor deve supportare questo valore. In questa vista è necessario usare la stringa NULL come stringa di visualizzazione fisica. Almeno una visualizzazione logica deve essere impostata su questo valore.|  
+|`LOGVIEWID_Debugging`|Visualizzazione di debug. In genere `LOGVIEWID_Debugging` esegue il mapping alla stessa visualizzazione `LOGVIEWID_Code`.|  
+|`LOGVIEWID_Code`|Visualizzazione avviata per la **Visualizza codice** comando.|  
+|`LOGVIEWID_Designer`|Visualizzazione avviata per la **Visualizza modulo** comando.|  
+|`LOGVIEWID_TextView`|Visualizzazione dell'editor di testo. Si tratta della visualizzazione che restituisce <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, da cui è possibile accedere <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
+|`LOGVIEWID_UserChooseView`|Chiede all'utente di scegliere quale visualizzazione usare.|  
+|`LOGVIEWID_ProjectSpecificEditor`|Passato per il **aperta con** finestra di dialogo<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Quando l'utente sceglie la voce "(editor predefinito progetto)".|  
   
- Anche se la vista logica GUID sono estendibili, è possibile utilizzare solo i GUID di visualizzazione logica definiti nel pacchetto VSPackage.  
+ Sebbene la visualizzazione logica GUID sono estendibili, è possibile usare solo i GUID della visualizzazione logica definiti nel pacchetto VSPackage.  
   
- Al momento della chiusura, Visual Studio consente di mantenere il GUID del factory dell'editor e le stringhe di visualizzazione fisica associate alla finestra di documento in modo che può essere utilizzato per aprire nuovamente le finestre di documento quando la soluzione viene riaperto. Solo le finestre che risultano aperte al momento della chiusura di una soluzione vengono rese persistenti nel file di soluzione (con estensione suo). Questi valori corrispondono al `VSFPROPID_guidEditorType` e `VSFPROPID_pszPhysicalView` valori passati il `propid` parametro il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> (metodo).  
+ Al momento della chiusura, Visual Studio consente di mantenere il GUID della factory dell'editor e le stringhe di visualizzazione fisica associate alla finestra di documento in modo che può essere utilizzato per aprire nuovamente le finestre dei documenti quando la soluzione viene riaperta. Solo le finestre che risultano aperte al momento della chiusura di una soluzione vengono rese persistenti nel file di soluzione (con estensione suo). Questi valori corrispondono al `VSFPROPID_guidEditorType` e `VSFPROPID_pszPhysicalView` valori passati i `propid` parametro nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> (metodo).  
   
 ## <a name="example"></a>Esempio  
- Questo frammento viene illustrato come la <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> oggetto viene utilizzato per accedere a una vista che implementa `IVsCodeWindow`. In questo caso, il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> servizio viene utilizzato per chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> e richiesta `LOGVIEWID_TextView`, quale ottiene un puntatore a una cornice di finestra. Un puntatore all'oggetto documento view viene ottenuto chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> e specificando un valore di `VSFPROPID_DocView`. Dall'oggetto visualizzazione documento, `QueryInterface` viene chiamato per `IVsCodeWindow`. La previsione è in questo caso che viene restituito un editor di testo e pertanto l'oggetto visualizzazione del documento restituito nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodo è una finestra del codice.  
+ Questo frammento di codice viene illustrato come la <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> oggetto viene usato per accedere a una visualizzazione che implementa `IVsCodeWindow`. In questo caso, il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> servizio viene usato per chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> richiesta e `LOGVIEWID_TextView`, che ottiene un puntatore alla cornice della finestra. Un puntatore all'oggetto visualizzazione del documento viene ottenuto chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> e specificando il valore `VSFPROPID_DocView`. Dall'oggetto di visualizzazione del documento `QueryInterface` viene chiamato per `IVsCodeWindow`. Si prevede in questo caso è che viene restituito un editor di testo e quindi l'oggetto visualizzazione del documento restituito nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodo è una finestra del codice.  
   
 ```cpp  
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)  
@@ -116,6 +113,6 @@ Error:
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Supporta più viste di documento](../extensibility/supporting-multiple-document-views.md)   
- [Procedura: collegare viste per documentare i dati](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Supporto di più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md)   
+ [Procedura: Collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md)   
  [Creazione di finestre di progettazione ed editor personalizzati](../extensibility/creating-custom-editors-and-designers.md)

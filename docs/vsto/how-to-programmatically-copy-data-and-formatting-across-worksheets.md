@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro'
-ms.custom: ''
+title: 'Procedura: Copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a4cce083bee8b57ff37276ae909799a9a6791d7
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9995b347fdfcb60acf72c79b0e1bddc20bab717b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924865"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procedura: copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procedura: Copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro
   È possibile copiare dati da un intervallo di un foglio in tutti gli altri fogli in una cartella di lavoro utilizzando il <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> (metodo). Specificare un intervallo, e se si desidera copiare i dati, formattare o entrambi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35256682"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: a livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Procedura: modificare a livello di codice la formattazione nelle righe del foglio di lavoro contenenti celle selezionate](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
+ [Procedura: A livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Procedura: A livello di codice modificare la formattazione nelle righe del foglio di lavoro contenenti celle selezionate](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

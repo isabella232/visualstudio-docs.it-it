@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: stampare i documenti a livello di codice'
-ms.custom: ''
+title: 'Procedura: A livello di codice stampa documenti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c1e34e723618d24870d76dd961e7f4c484bc6fd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: da618b4b972c8f49d98118d26b5f0a4aa47cfde0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917358"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Procedura: stampare i documenti a livello di codice
+# <a name="how-to-programmatically-print-documents"></a>Procedura: A livello di codice stampa documenti
   È possibile stampare un intero documento di Microsoft Office Word o parte di un documento sulla stampante predefinita.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -32,7 +29,7 @@ ms.locfileid: "35671878"
   
 ### <a name="to-print-the-entire-document"></a>Per stampare l'intero documento  
   
-1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> della classe `ThisDocument` nel progetto per stampare l'intero documento. Per usare questo esempio, eseguire il codice dalla classe `ThisDocument` .  
+1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> della classe `ThisDocument` nel progetto per stampare l'intero documento. Per usare questo esempio, eseguire il codice dalla classe `ThisDocument`.  
   
      [!code-vb[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#11)]
      [!code-csharp[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#11)]  
@@ -62,5 +59,3 @@ ms.locfileid: "35671878"
   
 ## <a name="see-also"></a>Vedere anche  
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

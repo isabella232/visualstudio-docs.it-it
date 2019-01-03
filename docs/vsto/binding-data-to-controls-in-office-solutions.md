@@ -1,8 +1,6 @@
 ---
 title: Associare dati a controlli nelle soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898635"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associare dati a controlli nelle soluzioni Office
   È possibile associare i controlli Windows Form e i *controlli host* in un documento di Microsoft Office Word o in un foglio di lavoro di Microsoft Office Excel a un'origine dati in modo da visualizzare automaticamente i dati. È possibile associare dati ai controlli nei progetti a livello di applicazione e a livello di documento.  
@@ -111,5 +109,3 @@ ms.locfileid: "53248020"
  [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Dati della cache](../vsto/caching-data.md)   
  [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)  
-  
-  

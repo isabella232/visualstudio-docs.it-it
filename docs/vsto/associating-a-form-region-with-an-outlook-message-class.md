@@ -1,8 +1,6 @@
 ---
 title: Associare un'area del modulo a una classe messaggio di Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923348"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
   È possibile specificare quali elementi di Microsoft Office Outlook visualizzano un'area del modulo associando l'area del modulo con la classe messaggio di ogni elemento. Ad esempio, se si desidera aggiungere un'area del modulo nella parte inferiore di un elemento di posta elettronica, è possibile associare l'area del modulo con il `IPM.Note` classe message.  
@@ -113,5 +111,3 @@ ms.locfileid: "53248033"
  [Linee guida per creare aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Nome del modulo e classi messaggio Panoramica](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
  [Interagiscono tra gli elementi e i moduli di Outlook](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
-  
-  

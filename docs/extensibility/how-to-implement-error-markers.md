@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: implementare gli indicatori di errore | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Implementare i marcatori di errore | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931502"
 ---
-# <a name="how-to-implement-error-markers"></a>Procedura: implementare gli indicatori di errore
+# <a name="how-to-implement-error-markers"></a>Procedura: Implementare i marcatori di errore
 Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili le personalizzazioni dell'editor di testo per implementare. Tuttavia, i vantaggi che offrono agli utenti di un VSPackage possono di gran lunga i costi per fornire loro. Gli indicatori di errore leggermente contrassegnano testo che il parser del linguaggio che considera non corretto con una riga rossa ondulata o una sottolineatura ondulata. Questo indicatore consente ai programmatori visualizzando visivamente il codice non corretto.  
   
  Usare marcatori di testo per implementare la sottolineatura ondulata rossa. Di norma, servizi di linguaggio aggiungere ondulate di colore rosso per il buffer di testo come sessione in background, in fase di inattività o in un thread in background.  
@@ -29,11 +26,11 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
   
 1. Selezionare il testo in cui si desidera posizionare la sottolineatura ondulata rossa.  
   
-2. Creare un indicatore del tipo `MARKER_CODESENSE_ERROR`. Per altre informazioni, vedere [procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
+2. Creare un indicatore del tipo `MARKER_CODESENSE_ERROR`. Per altre informazioni, vedere [Procedura: Aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Successivamente, passare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> puntatore a interfaccia.  
   
-   Questo processo consente anche di creare testo della descrizione comando o un menu di scelta rapida speciali su un marcatore specificato. Per altre informazioni, vedere [procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
+   Questo processo consente anche di creare testo della descrizione comando o un menu di scelta rapida speciali su un marcatore specificato. Per altre informazioni, vedere [Procedura: Aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
   
    Gli oggetti seguenti sono necessari prima di visualizzare gli indicatori di errore.  
   
@@ -58,6 +55,6 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Procedura: creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)   
- [Procedura: utilizzare marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Procedura: Aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Procedura: Creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)   
+ [Procedura: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md)

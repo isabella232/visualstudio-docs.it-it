@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare un componente aggiuntivo di VSTO per PowerPoint'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c9bef0c76f0c01c620670bf67882fd90e2e1ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875498"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procedura dettagliata: Creare un componente aggiuntivo di VSTO per PowerPoint
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per altre informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -139,5 +136,3 @@ ms.locfileid: "49882591"
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
  [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)  
-  
-  

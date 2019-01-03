@@ -1,8 +1,7 @@
 ---
-title: 'CA1065: Non generare eccezioni in posizioni non previste'
+title: 'CA1065: Non generare eccezioni in posizioni impreviste'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1065
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 824f257c19b219f78d226a82469cffb315f3069a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881617"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni impreviste
 
 |||
 |-|-|

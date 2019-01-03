@@ -1,9 +1,6 @@
 ---
 title: Layout per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898752"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Mentre Visual Studio viene spostato alla relativa interfaccia utente di aggiornamento, alcune delle finestre di dialogo più evidenti sono una nuova progettazione che stabilisce le esperienze di definizione del prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto a tema.  
@@ -68,7 +65,7 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
   
   ![Allineamento di base dei pulsanti](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
-  **08.01 figura c: Allineamento di base dei pulsanti**  
+  **Figura 08.01-c: Allineamento di base dei pulsanti**  
   
 #### <a name="labels"></a>Etichette  
   
@@ -85,7 +82,7 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
   
  ![Distanza tra i controlli consigliati](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **Figura 08.01-d: Indicazioni per la distanza tra i controlli**  
+ **Figura 08.01-d: Raccomandazioni per la distanza tra i controlli**  
   
 #### <a name="control-indentation"></a>Rientro di controllo  
  Quando i controlli sono nidificati, allineare i controlli interni in senso orizzontale con il bordo sinistro del controllo precedente, in genere l'etichetta.  
@@ -114,7 +111,7 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
   
   ![Pulsanti OK e Annulla orizzontali](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **Figura 08.01-f: I pulsanti interno verticale con OK/Annulla orizzontale**  
+  **Figura 08.01-f: Pulsanti interni verticali con OK/Annulla orizzontale**  
   
   ![Pulsanti OK e Annulla verticali](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
@@ -155,7 +152,7 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
   
  ![I colori di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
- **Figura 08.01-k: Finestra di dialogo con tema - i colori**  
+ **Figura 08.01-k: Finestra di dialogo con tema - colori**  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modelli di applicazione per Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

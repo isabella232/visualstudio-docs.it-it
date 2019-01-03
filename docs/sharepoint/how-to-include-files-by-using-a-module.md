@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: includere file mediante un modulo | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Includere file mediante un modulo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923495"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Procedura: includere file mediante un modulo
+# <a name="how-to-include-files-by-using-a-module"></a>Procedura: Includere file mediante un modulo
   *I moduli* (non deve essere confusa con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli) sono contenitori che consentono di distribuire i file, ad esempio le pagine master ASPX, file di testo o immagini in SharePoint.  
   
  È possibile distribuire un file in una raccolta documenti o come un normale file (ad esempio default. aspx) all'esterno di una raccolta documenti. Per aggiungere un file in una raccolta documenti, specificare `Type="GhostableInLibrary"` come attributo nel **File** elemento. Questa impostazione indica a SharePoint per creare un elemento di elenco per passare con il file quando viene aggiunto alla raccolta. Per distribuire un file all'esterno di una raccolta documenti, specificare `Type="Ghostable"` oppure omettere semplicemente il **tipo** attributo.  
@@ -71,4 +66,3 @@ ms.locfileid: "37118862"
 ## <a name="see-also"></a>Vedere anche
  [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

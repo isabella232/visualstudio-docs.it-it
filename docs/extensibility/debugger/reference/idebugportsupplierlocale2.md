@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierLocale2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1cd0160b1ec5b1c9d86c277f2b47011d1b7610c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c41d3bf89403344d80659074f0f486a90f089c55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915981"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Fornisce il supporto delle impostazioni locali per un fornitore di porta.  
+Fornisce il supporto delle impostazioni locali per un fornitore di porte.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -30,7 +27,7 @@ IDebugPortSupplierLocale2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un fornitore di porta personalizzato implementa questa interfaccia per definire le impostazioni locali.  
+ Un fornitore di porte personalizzato implementa questa interfaccia per definire le impostazioni locali.  
   
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono illustrati i metodi di **IDebugPortSupplierLocale2**.  
@@ -42,7 +39,7 @@ IDebugPortSupplierLocale2 : IUnknown
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

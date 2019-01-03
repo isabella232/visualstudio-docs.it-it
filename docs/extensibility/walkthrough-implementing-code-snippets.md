@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Implementazione di frammenti di codice | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902188"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Questa procedura dettagliata: I frammenti di codice implementazione
+# <a name="walkthrough-implement-code-snippets"></a>Procedura dettagliata: Implementare i frammenti di codice
 È possibile creare frammenti di codice e includerli in un'estensione dell'editor in modo che gli utenti dell'estensione possono aggiungere il proprio codice.  
   
  Un frammento di codice è un frammento di codice o altro testo che può essere incorporato in un file. Per visualizzare tutti i frammenti di codice che sono stati registrati per determinati linguaggi di programmazione, sul **degli strumenti** menu, fare clic su **Gestione frammenti di codice**. Per inserire un frammento di codice in un file di scelta rapida in cui si desidera che il frammento di codice, fare clic su Inserisci frammento di codice, o **Racchiudi**, individuare il frammento di codice desiderato e quindi fare doppio clic. Premere **della scheda** oppure **MAIUSC**+**scheda** per modificare le parti pertinenti del frammento di codice e quindi premere **invio** o**Esc** ad accettarla. Per altre informazioni, vedere [frammenti di codice](../ide/code-snippets.md).  
@@ -33,7 +30,7 @@ ms.locfileid: "49921992"
   
 3. Implementare l'espansione del frammento.  
   
-   Questa esercitazione si basa sul [procedura dettagliata: visualizzare il completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Questa procedura dettagliata è basata su [procedura dettagliata: Visualizzare il completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, Visual Studio SDK è non installare dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -112,7 +109,7 @@ ms.locfileid: "49921992"
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Per registrare i frammenti di codice per un GUID specifico  
   
-1.  Aprire il **CompletionTest** progetto. Per informazioni su come creare il progetto, vedere [procedura dettagliata: visualizzare il completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Aprire il **CompletionTest** progetto. Per informazioni su come creare il progetto, vedere [procedura dettagliata: Visualizzare il completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  Nel progetto, aggiungere riferimenti agli assembly seguenti:  
   

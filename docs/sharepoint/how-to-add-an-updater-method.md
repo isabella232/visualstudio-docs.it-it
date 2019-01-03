@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: aggiungere un metodo Updater | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere un metodo Updater | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872518"
 ---
-# <a name="how-to-add-an-updater-method"></a>Procedura: aggiungere un metodo Updater
+# <a name="how-to-add-an-updater-method"></a>Procedura: Aggiungere un metodo Updater
   È possibile abilitare gli utenti aggiornare i dati di business in un elenco di SharePoint esterno tramite la creazione di un' *Updater* (metodo). Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Per creare un metodo Updater  
@@ -48,7 +43,7 @@ ms.locfileid: "49951418"
   
    - Un parametro di input per il metodo.  
   
-   - Un descrittore di tipo per il parametro. Per impostazione predefinita, Visual Studio Usa il descrittore di tipo di entità definiti per il metodo Finder (ad esempio: Contact).  
+   - Un descrittore di tipo per il parametro. Per impostazione predefinita, Visual Studio Usa il descrittore di tipo di entità definiti per il metodo Finder (ad esempio: Contatto).  
   
    - Un'istanza del metodo per il metodo.  
   
@@ -71,13 +66,11 @@ ms.locfileid: "49951418"
   
 ## <a name="see-also"></a>Vedere anche
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 
+ [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)  

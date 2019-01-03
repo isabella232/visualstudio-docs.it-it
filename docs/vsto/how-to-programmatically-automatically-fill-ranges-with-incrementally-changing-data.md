@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: riempire a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale'
-ms.custom: ''
+title: 'Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4fff7eb59ff2fe5e17ddf500bf546502492634d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a704fd0cdc18802aff487b5d66b72044303ce2dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895584"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: riempire a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale
   Il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo del <xref:Microsoft.Office.Interop.Excel.Range> consente di inserire automaticamente un intervallo in un foglio di lavoro con i valori. In genere, il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo viene usato per archiviare in modo incrementale aumentando o diminuendo i valori in un intervallo. È possibile specificare il comportamento, fornendo una costante facoltativa dal <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumerazione.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,10 +53,8 @@ ms.locfileid: "35256403"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con intervalli](../vsto/working-with-ranges.md)   
- [Procedura: fare riferimento a livello di programmazione agli intervalli di foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Procedura: eseguire calcoli in Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Procedura: Eseguire calcoli in Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

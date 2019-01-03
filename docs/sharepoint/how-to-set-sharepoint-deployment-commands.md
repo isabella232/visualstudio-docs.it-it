@@ -1,13 +1,8 @@
 ---
 title: 'Procedura: Set SharePoint Deployment Commands | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920365"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: Set SharePoint i comandi di distribuzione
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: Impostare i comandi di distribuzione di SharePoint
   È possibile personalizzare il processo di distribuzione, impostare i comandi di pre e post-distribuzione. Questi comandi vengono eseguiti prima e dopo altre azioni di distribuzione durante il debug di soluzioni di SharePoint da Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Per aggiungere un comando di pre-distribuzione  
@@ -49,4 +44,3 @@ ms.locfileid: "37119971"
   
 ## <a name="see-also"></a>Vedere anche
  [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

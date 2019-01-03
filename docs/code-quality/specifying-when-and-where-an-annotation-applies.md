@@ -2,7 +2,6 @@
 title: Specificare dove e quando applicare un'annotazione
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Group_
@@ -15,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc4d00d8c6b1f6b876700066d93b552b7fe5996
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 4ebdc8592d26c124f98ff9d390e173b6675f09d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863303"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Specificare dove e quando applicare un'annotazione
 Quando un'annotazione condizionale, potrebbe essere necessario altre annotazioni per specificare che per l'analizzatore.  Ad esempio, se una funzione dispone di una variabile che può essere sincrone o asincrone, il comportamento della funzione come indicato di seguito: Nel caso sincrono sempre alla fine ha esito positivo, ma nel caso asincrono segnala un errore se potrebbe non riuscire immediatamente. Quando la funzione viene chiamata in modo sincrono, controllando il valore di risultato non fornisce alcun valore per l'analizzatore di codice perché potrebbe non avere restituita.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, può verificarsi un errore grave. In questo esempio illustra una situazione in cui è possibile usare il `_When_` annotazione, descritto più avanti in questo articolo, abilitare il controllo.

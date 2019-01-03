@@ -1,9 +1,6 @@
 ---
-title: IDebugContainerField | Documenti Microsoft
-ms.custom: ''
+title: IDebugContainerField | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugContainerField
@@ -15,30 +12,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bee04d21e3181d4590f26b64c794164ab1a84b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51b88bf0302c404883ccbc3d476cb0262eb1e948
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910310"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
-Questa interfaccia rappresenta un simbolo o un tipo che è un contenitore per altri tipi o i simboli.  
+Questa interfaccia rappresenta un simbolo o del tipo che è un contenitore per altri tipi o i simboli.  
   
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-IDebugContainerField : IDebugField  
+IDebugContainerField : IDebugField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia. Questa interfaccia è anche la classe base per tutte le interfacce che rappresentano i contenitori.  
+ Un provider di simboli implementa questa interfaccia nello stesso oggetto che implementa il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia. Questa interfaccia è anche la classe base per tutte le interfacce che rappresentano i contenitori.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Molti metodi su interfacce restituiscono questa interfaccia. Poiché si tratta di una classe di base per tutti i contenitori, le interfacce più specializzate può ottenuto da questa interfaccia utilizzando [QueryInterface](/cpp/atl/queryinterface). Tali interfacce includono [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), e [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
+ Molti metodi sul numero di interfacce restituiscono questa interfaccia. Poiché si tratta di una classe di base per tutti i contenitori, interfacce più specializzate può ottenuto da questa interfaccia mediante [QueryInterface](/cpp/atl/queryinterface). Tali interfacce includono [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), e [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, implementa il metodo seguente:  
+ Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, questa interfaccia implementa il metodo seguente:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -50,7 +47,7 @@ IDebugContainerField : IDebugField
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

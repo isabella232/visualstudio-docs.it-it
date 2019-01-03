@@ -1,9 +1,6 @@
 ---
-title: Progetti Web | Documenti Microsoft
-ms.custom: ''
+title: Progetti Web | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761ad53669d45bc95769c8d81632068101a6e04c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929750"
 ---
 # <a name="web-projects"></a>Progetti Web
-Un sistema di progetto Web è un sistema di progetto che consente di creare progetti Web. Progetti Web consentono di creare applicazioni Web. È possibile programmare una pagina Web con linguaggi di programmazione tradizionali, ad esempio [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], per raccogliere ed elaborare le informazioni da un utente, archiviarlo in un database e così via. Pagine Web con codice associato vengono chiamate smart pagine Web.  
+Un sistema di progetto Web è un sistema di progetto che consente di creare progetti Web. I progetti Web consentono di creare applicazioni Web. È possibile programmare una pagina Web usando linguaggi di programmazione tradizionali, ad esempio [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], per raccogliere ed elaborare informazioni dall'utente, archiviarlo in un database e così via. Pagine Web con codice associate vengono chiamate smart pagine Web.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ [Nozioni fondamentali](../../extensibility/internals/web-project-essentials.md)  
  Visualizza gli elementi importanti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti Web.  
   
  [Supporto per siti Web](../../extensibility/internals/web-site-support.md)  
- Viene presentata una panoramica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti di siti Web. Un progetto di sito Web genera un file eseguibile per ogni pagina Web smart. File eseguibile aggiuntivi vengono generati dal file di codice sorgente nella cartella /App_Code.  
+ Viene presentata una panoramica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti di siti Web. Un progetto sito Web genera un file eseguibile per ogni pagina Web intelligente. File eseguibile aggiuntivi vengono generati da file di codice sorgente nella cartella /App_Code.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Progetti](../../extensibility/internals/projects.md)  

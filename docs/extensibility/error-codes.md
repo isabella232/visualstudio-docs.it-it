@@ -1,9 +1,6 @@
 ---
 title: Codici di errore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931973"
 ---
 # <a name="error-codes"></a>Codici di errore
 Quando una funzione API dei plug-in del controllo origine restituisce un errore, si dovrà essere uno dei seguenti codici di errore. Tutti gli errori sono negativi, sono positivi, avvisi o i codici di errore informativo e operazioni riuscite sono 0.  
   
-|Codice di errore|Valore|Descrizione|  
+|Codice di errore|Value|Descrizione|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Plug-in supporta l'aggiunta di file dal controllo del codice sorgente in due passaggi. Per altre informazioni, vedere [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|Il file locale è diverso dal file nel database di controllo di origine (ad esempio, [SccDiff](../extensibility/sccdiff-function.md) può restituire questo valore).|  
