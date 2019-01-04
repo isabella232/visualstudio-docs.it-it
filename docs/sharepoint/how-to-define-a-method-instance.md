@@ -1,13 +1,8 @@
 ---
-title: "Procedura: definire un'istanza del metodo | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Definire un'istanza del metodo | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e6dd6c0d7676c6b3c2071f0fcb07e8073313633
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84a03fe6066911b12ba0e5a413ea3521033bc283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952563"
 ---
-# <a name="how-to-define-a-method-instance"></a>Procedura: definire un'istanza del metodo
+# <a name="how-to-define-a-method-instance"></a>Procedura: Definire un'istanza del metodo
   Nel modello, è necessario definire almeno un'istanza di metodo per ogni metodo.  
   
  Aggiungere un'istanza del metodo usando il **Dettagli metodo BDC** finestra. Quando si aggiunge l'istanza del metodo, Visual Studio aggiunge un `<MethodInstance>` elemento al codice XML del file modello nel progetto. Per altre informazioni sugli attributi di un `<MethodInstance>` elemento, vedere [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
@@ -46,8 +41,7 @@ ms.locfileid: "37118850"
   
 ## <a name="see-also"></a>Vedere anche
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

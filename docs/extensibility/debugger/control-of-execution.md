@@ -1,9 +1,6 @@
 ---
 title: Controllo di esecuzione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a95e01a44236d4f98f55f50a56cf28473ad575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5617849b1dbd8e3857818fb762f562502b89386
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947426"
 ---
 # <a name="control-of-execution"></a>Controllo dell'esecuzione
 Il motore di debug (DE) in genere uno dei seguenti eventi Invia come l'ultimo evento di avvio:  
@@ -42,11 +39,11 @@ Il motore di debug (DE) in genere uno dei seguenti eventi Invia come l'ultimo ev
   
 5. Se si sceglie di eseguire, ignorare o da una funzione, l'IDE si comporta la sessione di debug per chiamare il programma `Step` (metodo). L'IDE passa quindi l'unità del passaggio (istruzione, istruzione o riga) e il tipo di passaggio (se eseguire le istruzioni in, failover o la funzione). Una volta completato il passaggio, la Germania invia un evento di completamento del passaggio per la sessione di debug, che è un evento di arresto.  
   
-    oppure  
+    -oppure-  
   
     Se si sceglie di continuare l'esecuzione dal puntatore dell'istruzione corrente, l'IDE si comporta la sessione di debug per chiamare il programma **Execute** (metodo). Il programma riprende l'esecuzione finché non viene rilevata la condizione di interruzione successiva.  
   
-    oppure  
+    -oppure-  
   
     Se la sessione di debug ignorare un evento di arresto particolare, la sessione di debug viene chiamato il programma **continuazione** (metodo). Se il programma è stato l'esecuzione di istruzioni in, failover o da una funzione quando rilevata la condizione di interruzione, quindi continua il passaggio.  
   

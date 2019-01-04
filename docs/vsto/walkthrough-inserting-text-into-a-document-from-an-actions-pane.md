@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Inserire testo in un documento da un riquadro azioni'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943090"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: Inserire testo in un documento da un riquadro azioni
   Questa procedura dettagliata illustra come creare un riquadro azioni in un documento di Microsoft Office Word. Nel riquadro azioni contiene due controlli per la raccolta di input e quindi inviano il testo al documento.  
@@ -51,7 +48,7 @@ ms.locfileid: "51948725"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto documento di Word con il nome **My Basic Actions Pane**. Nella procedura guidata, selezionare **creare un nuovo documento**. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto documento di Word con il nome **My Basic Actions Pane**. Nella procedura guidata, selezionare **creare un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **My Basic Actions Pane** progetto al **Esplora soluzioni**.  
   
@@ -66,7 +63,7 @@ ms.locfileid: "51948725"
   
     **Name**  
   
-    **Indirizzo**  
+    **Address**  
   
     **Questo è un esempio di un riquadro azioni di base in Word.**  
   
@@ -112,7 +109,7 @@ ms.locfileid: "51948725"
   
 4.  Aggiungere un **Textbox** al controllo del riquadro azioni e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**GetName**|  
     |**Dimensione**|**130, 20**|  
@@ -130,7 +127,7 @@ ms.locfileid: "51948725"
   
 7.  Aggiungere un **pulsante** al controllo del riquadro azioni e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**addText**|  
     |**per**|**Inserisci**|  
@@ -145,7 +142,7 @@ ms.locfileid: "51948725"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  In c#, è necessario aggiungere un gestore eventi per il clic del pulsante. È possibile inserire il codice nel `InsertTextControl` dopo la chiamata al costruttore `InitializeComponent`. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  In c#, è necessario aggiungere un gestore eventi per il clic del pulsante. È possibile inserire il codice nel `InsertTextControl` dopo la chiamata al costruttore `InitializeComponent`. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
@@ -178,15 +175,13 @@ ms.locfileid: "51948725"
 ## <a name="next-steps"></a>Passaggi successivi  
  Ecco alcune possibili attività successive:  
   
--   Creare un riquadro azioni in Excel. Per altre informazioni, vedere [procedura: aggiungere un riquadro azioni a cartelle di lavoro di Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
+-   Creare un riquadro azioni in Excel. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro azioni a cartelle di lavoro di Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
--   Associare dati a controlli in un riquadro azioni. Per altre informazioni, vedere [procedura dettagliata: associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Associare dati a controlli in un riquadro azioni. Per altre informazioni, vedere [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)   
- [Procedura: aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Procedura: aggiungere un riquadro azioni a cartelle di lavoro di Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [Procedura: gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Procedura: Aggiungere un riquadro azioni ai documenti Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Procedura: Aggiungere un riquadro azioni a cartelle di lavoro di Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
+ [Procedura: Gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark (controllo)](../vsto/bookmark-control.md)  
-  
-  

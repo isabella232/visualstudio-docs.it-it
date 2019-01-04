@@ -1,9 +1,6 @@
 ---
 title: Funzione SccRunScc | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccRunScc
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40c9ced01c16315840194e770a05ba34df4a9321
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f9798f280d271299037c001e71f9c9f5ed1940f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956472"
 ---
 # <a name="sccrunscc-function"></a>Funzione SccRunScc
 Questa funzione richiama lo strumento di amministrazione di controllo di origine.  
@@ -67,10 +64,10 @@ SCCRTN SccRunScc(
   
  Questa funzione viene chiamata con un conteggio e una matrice di nomi di file per i file attualmente selezionati. Se lo strumento di amministrazione lo supporta, l'elenco dei file è utilizzabile per preselezionerà file nell'interfaccia di amministrazione; in caso contrario, l'elenco può essere ignorato.  
   
- Questa funzione viene richiamata in genere quando l'utente seleziona il **avvio veloce \<Source Control Server >** dal **File** -> **controllo del codice sorgente** menu di scelta. Ciò **avviare** opzione di menu può essere sempre disabilitata o persino nascosto impostando una voce del Registro di sistema. Visualizzare [procedura: installare un plug-in controllo origine](../extensibility/internals/how-to-install-a-source-control-plug-in.md) per informazioni dettagliate. Questa funzione viene chiamata solo se [SccInitialize](../extensibility/sccinitialize-function.md) restituisce il `SCC_CAP_RUNSCC` bit funzionalità (vedere [flag funzionalità](../extensibility/capability-flags.md) per informazioni dettagliate su questo e gli altri bit funzionalità).  
+ Questa funzione viene richiamata in genere quando l'utente seleziona il **avvio veloce \<Source Control Server >** dal **File** -> **controllo del codice sorgente** menu di scelta. Ciò **avviare** opzione di menu può essere sempre disabilitata o persino nascosto impostando una voce del Registro di sistema. Vedere [Procedura: Installare un plug-in controllo sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) per informazioni dettagliate. Questa funzione viene chiamata solo se [SccInitialize](../extensibility/sccinitialize-function.md) restituisce il `SCC_CAP_RUNSCC` bit funzionalità (vedere [flag funzionalità](../extensibility/capability-flags.md) per informazioni dettagliate su questo e gli altri bit funzionalità).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [Procedura: installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Procedura: Installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Flag funzionalità](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

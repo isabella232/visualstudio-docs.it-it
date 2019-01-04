@@ -3,7 +3,6 @@ title: Finestra di progettazione del flusso di lavoro, ActivityDesigner InvokeMe
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946939"
 ---
 # <a name="invokemethod-activity-designer"></a>ActivityDesigner InvokeMethod
 
@@ -57,7 +56,7 @@ L'algoritmo per la registrazione dei parametri in <xref:System.Activities.Activi
 
 3.  Scorrere la raccolta <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> e registrare ogni argomento.
 
-L'eccezione risultante è di tipo <xref:System.Activities.InvalidWorkflowException> e presenta il messaggio seguente: 'InvokeMethod': Esiste già una variabile, RuntimeArgument o DelegateArgument con il nome 'TargetObject'. I nomi devono essere univoci in un ambito di ambiente.
+L'eccezione risultante è di tipo <xref:System.Activities.InvalidWorkflowException> con messaggio analogo al seguente: 'InvokeMethod': Una variabile, RuntimeArgument o DelegateArgument già esiste con il nome 'TargetObject'. I nomi devono essere univoci in un ambito di ambiente.
 
 Questa restrizione non si applica a <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> e <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Che non si è gli argomenti del flusso di lavoro e pertanto non sono registrati nel <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> raccolta del <xref:System.Activities.Statements.InvokeMethod> attività nel <xref:System.Activities.Activity.CacheMetadata%2A> (metodo).
 

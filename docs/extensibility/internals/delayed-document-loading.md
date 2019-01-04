@@ -1,9 +1,6 @@
 ---
 title: Caricamento dei documenti ritardato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940362"
 ---
 # <a name="delayed-document-loading"></a>Caricamento dei documenti ritardato
 Quando un utente riapre una soluzione di Visual Studio, è possibile che la maggior parte dei documenti associati non vengono caricata contemporaneamente. La cornice della finestra documento viene creata in uno stato in sospeso-initialization, e un documento di segnaposto (denominato frame dello stub) viene inserito nella tabella documenti in esecuzione (RDT).  
@@ -59,7 +56,7 @@ L'intervallo di stub e un documento completamente vengono inizializzati quando l
 - In caso contrario, è possibile sottoscrivere <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
   
 
- L'esempio seguente è uno scenario di accesso documento ipotetico: estensione di Visual Studio A desidera visualizzare alcune informazioni sui documenti aperti, ad esempio la modifica blocco count e qualche informazione sui dati del documento. Enumera i documenti nella RDT utilizzando <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, quindi chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> per ogni documento per poter recuperare i dati di conteggio e documento di blocco modifica. Se il documento è nello stato in sospeso-initialization, che richiede i dati del documento ne determina inutilmente da inizializzare.  
+ L'esempio seguente è lo scenario di accesso un ipotetico documento: Visual Studio estensione desidera visualizzare alcune informazioni sui documenti aperti, ad esempio la modifica è bloccare count e qualche informazione sui dati del documento. Enumera i documenti nella RDT utilizzando <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, quindi chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> per ogni documento per poter recuperare i dati di conteggio e documento di blocco modifica. Se il documento è nello stato in sospeso-initialization, che richiede i dati del documento ne determina inutilmente da inizializzare.  
   
  Un modo più efficace dell'accesso a un documento consiste nell'usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> per ottenere il conteggio dei blocchi di modifica e quindi usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> per determinare se il documento è stato inizializzato. Se non includono i flag <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, il documento è già stato inizializzato e che richiede i dati del documento con <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> non fa in modo che tutte le inizializzazioni non necessarie. Se si include il flag <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, l'estensione deve evitare di richiedere i dati del documento fino a quando non viene inizializzato il documento. Questa inizializzazione può essere rilevata nel `OnAfterAttributeChange(Ex)` gestore dell'evento.  
   

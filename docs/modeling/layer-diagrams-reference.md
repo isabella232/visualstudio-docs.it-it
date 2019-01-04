@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948394"
 ---
 # <a name="dependency-diagrams-reference"></a>I diagrammi delle dipendenze: riferimenti
 
@@ -50,7 +49,7 @@ Usare un diagramma delle dipendenze per eseguire le attività seguenti:
 
 -   Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.
 
-In questo argomento vengono descritti gli elementi che è possibile usare in un diagramma di dipendenza. Per altre informazioni su come creare e disegnare i diagrammi delle dipendenze, vedere [diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md). Per altre informazioni sui modelli di livello, visitare il [sito Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+In questo argomento vengono descritti gli elementi che è possibile usare in un diagramma di dipendenza. Per altre informazioni su come creare e disegnare i diagrammi delle dipendenze, vedere [diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md). Per altre informazioni sui modelli di livello, visitare il [sito Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Leggere i diagrammi delle dipendenze
 
@@ -78,7 +77,7 @@ Nella tabella seguente vengono descritti gli elementi che è possibile usare in 
 
 Per altre informazioni sul collegamento di livelli ed elementi, vedere:
 
--   [I diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
 
 -   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ Nel diagramma delle dipendenze, aprire il menu di scelta rapida per uno o più l
 |-|-|
 |**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
 |**Livello**|Livello collegato all'elemento|
-|**Supporta la convalida**|Se **True**, quindi il processo di convalida dei livelli può verificare che il progetto sia conforme alla dipendenze da o verso questo elemento.<br /><br /> Se **False**, quindi il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md).|
+|**Supporta la convalida**|Se **True**, quindi il processo di convalida dei livelli può verificare che il progetto sia conforme alla dipendenze da o verso questo elemento.<br /><br /> Se **False**, quindi il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md).|
 |**Identificatore**|Riferimento all'elemento collegato|
 
 ## <a name="see-also"></a>Vedere anche

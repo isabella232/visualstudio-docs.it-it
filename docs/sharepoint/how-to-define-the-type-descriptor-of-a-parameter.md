@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: definire il descrittore di tipo di parametro | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Definire il descrittore di tipo di parametro | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953157"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedura: definire il descrittore di tipo di parametro
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedura: Definire il descrittore di tipo di parametro
   Un descrittore di tipo contiene proprietà che descrivono il tipo di dati di un parametro. Può definire un campo, un'entità o una raccolta di entità. Per altre informazioni, vedere [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Definire il descrittore di tipo di un parametro  
@@ -50,7 +45,7 @@ ms.locfileid: "51294981"
   
 ### <a name="to-define-an-entity"></a>Per definire un'entità  
   
-1.  Nel **proprietà** impostare nella finestra di **nome** proprietà a un nome che descriva l'entità (ad esempio: **contatto**).  
+1.  Nel **proprietà** impostare nella finestra di **nome** proprietà a un nome che descriva l'entità (ad esempio: **Contatto**).  
   
 2.  Impostare il **TypeName** proprietà per specificare il nome completo del tipo che rappresenta l'entità. Questo tipo può essere una classe nel progetto, un tipo definito in un assembly cui viene fatto riferimento nella soluzione o un tipo definito nel modello a oggetti di integrazione applicativa dei dati.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294981"
   
 2. Nella barra dei menu, scegliere **View**, **finestra proprietà**.  
   
-3. Nel **proprietà** impostare nella finestra di **nome** proprietà a un nome che descriva l'entità (ad esempio: **contatti**).  
+3. Nel **proprietà** impostare nella finestra di **nome** proprietà a un nome che descriva l'entità (ad esempio: **Contatta**).  
   
 4. Impostare il **IsCollection** proprietà **True**. Ciò indica che il descrittore di tipo è una raccolta di entità.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294981"
   
 ## <a name="see-also"></a>Vedere anche
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
- [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
+ [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

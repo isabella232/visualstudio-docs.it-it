@@ -1,9 +1,6 @@
 ---
 title: Metodo SetNotificationForWaitCompletion | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c5bca56bc46c0b8124fbfaf7ca046c2c1e59ec
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 4b488bcfb37696f4e18c8f32741e8f3ef861aed8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986115"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Metodo SetNotificationForWaitCompletion
 Imposta o Cancella il bit di stato TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in *mscorlib. dll*)  
   

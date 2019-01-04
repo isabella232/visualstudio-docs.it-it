@@ -1,9 +1,6 @@
 ---
 title: Cosa&#39;novità di Visual Studio 2017 SDK s | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952209"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Cosa&#39;s novità di Visual Studio 2017 SDK
 
@@ -41,7 +38,7 @@ Per altre informazioni su queste modifiche, vedere gli argomenti seguenti:
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 
-Per informazioni su come aggiornare i progetti di estendibilità e i manifesti VSIX a Visual Studio 2017, vedere [procedura: eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Per informazioni su come aggiornare i progetti di estendibilità e i manifesti VSIX a Visual Studio 2017, vedere [come: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Modelli di progetto ed elemento personalizzati
 
@@ -49,4 +46,4 @@ A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i model
 
 ## <a name="updated-extension-performance-guidelines"></a>Linee guida sulle prestazioni di estensione aggiornato
 
-C'è un nuovo [procedura: diagnosticare le prestazioni delle estensioni](how-to-diagnose-extension-performance.md) sotto l'articolo [gestire i pacchetti VSPackage](managing-vspackages.md) per mostrare come rilevare e analizzare l'impatto di estensione in Visual Studio avvio e soluzione tempi di caricamento.
+C'è un nuovo [come: Diagnosticare le prestazioni delle estensioni](how-to-diagnose-extension-performance.md) sotto l'articolo [gestire i pacchetti VSPackage](managing-vspackages.md) per mostrare come rilevare e analizzare l'impatto di estensione in Visual Studio avvio e soluzione tempi di caricamento.

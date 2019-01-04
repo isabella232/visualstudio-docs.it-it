@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: eseguire un comando di SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire un comando di SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce195dd34c7c0b509f9de4cbe2cfd14d9a477f87
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953118"
 ---
-# <a name="how-to-execute-a-sharepoint-command"></a>Procedura: eseguire un comando di SharePoint
+# <a name="how-to-execute-a-sharepoint-command"></a>Procedura: Eseguire un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti server in un'estensione degli strumenti di SharePoint, è necessario creare una classe personalizzata *comando SharePoint* per chiamare l'API. Dopo aver definito il comando e distribuirlo con l'estensione strumenti di SharePoint, l'estensione può eseguire il comando per effettuare chiamate nel modello a oggetti server SharePoint. Per eseguire il comando, usare uno dei metodi di ExecuteCommand un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> oggetto.  
   
  Per altre informazioni sullo scopo dei comandi di SharePoint, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -55,12 +52,12 @@ ms.locfileid: "37119912"
     |Il comando ha due parametri e un valore restituito.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente viene illustrato come utilizzare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> overload per chiamare il `Contoso.Commands.UpgradeSolution` comando descritto in [come: creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
+ Esempio di codice seguente viene illustrato come utilizzare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> overload per chiamare il `Contoso.Commands.UpgradeSolution` comando descritto in [come: Creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]  
   
- Il `Execute` metodo illustrato in questo esempio è un'implementazione del <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> metodo il <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interfaccia in un passaggio di distribuzione personalizzato. Per informazioni su questo codice nel contesto di un esempio più esaustivo, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Il `Execute` metodo illustrato in questo esempio è un'implementazione del <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> metodo il <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interfaccia in un passaggio di distribuzione personalizzato. Per informazioni su questo codice nel contesto di un esempio più esaustivo, vedere [procedura dettagliata: Creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
  Notare i seguenti dettagli relativi alla chiamata al <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> metodo:  
   
@@ -75,6 +72,5 @@ ms.locfileid: "37119912"
   
 ## <a name="see-also"></a>Vedere anche
  [Chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Procedura: creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Procedura: Creare un comando di SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  

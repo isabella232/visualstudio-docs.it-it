@@ -2,7 +2,6 @@
 title: Formattazione, XML, Editor di testo, finestra di dialogo Opzioni
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,22 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938592"
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formattazione, XML, editor di testo, finestra di dialogo Opzioni
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Opzioni di formattazione, XML, editor di testo, finestra di dialogo
 
-Questa finestra di dialogo consente di specificare le impostazioni di formattazione dell'editor XML. È possibile accedere il **opzioni** dalla finestra di dialogo di **strumenti** menu.
+Questa finestra di dialogo consente di specificare le impostazioni di formattazione dell'editor XML. È possibile accedere la **le opzioni** dalla finestra di dialogo il **strumenti** menu.
 
 > [!NOTE]
-> Queste impostazioni sono disponibili quando si seleziona il **Editor di testo** cartella, il **XML** cartella, quindi il **formattazione** opzione il **opzioni** la finestra di dialogo.
+> Queste impostazioni sono disponibili quando si seleziona il **Editor di testo** cartella, la **XML** cartella e quindi il **formattazione** opzione il **opzioni** finestra di dialogo.
 
 ## <a name="attributes"></a>Attributi
- **Mantenere la formattazione manuale degli attributi**
+ **Mantieni la formattazione manuale degli attributi**
 
  Gli attributi non vengono riformattati. Questa è l'impostazione predefinita.
 
@@ -52,7 +51,7 @@ Questa finestra di dialogo consente di specificare le impostazioni di formattazi
 
  Riformatta l'elemento quando il tag di fine è completato.
 
-## <a name="mixed-content"></a>Contenuto misto
+## <a name="mixed-content"></a>contenuto misto
  **Mantieni contenuto misto per impostazione predefinita**
 
  Determina se l'editor riformatta o meno il contenuto misto. Per impostazione predefinita l'editor tenta di riformattare il contenuto misto, a meno che il contenuto non venga rilevato in un ambito `xml:space="preserve"`.
@@ -68,5 +67,5 @@ Questa finestra di dialogo consente di specificare le impostazioni di formattazi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proprietà del documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)
+- [Proprietà di documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)
 - [Componenti dell'Editor XML](../xml-tools/xml-editor-components.md)
