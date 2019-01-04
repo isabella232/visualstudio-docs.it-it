@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: localizzare il Markup ASPX | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Localizzare il Markup ASPX | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68e74f743c1c00bb940a89039e4fd5cfcf8e63e4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959864"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Procedura: localizzare il markup ASPX
+# <a name="how-to-localize-aspx-markup"></a>Procedura: Localizzare il markup ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine (con estensione aspx) usano in genere i valori di stringa hardcoded. Per queste stringhe da localizzare, sostituirli con espressioni che fanno riferimento alle risorse localizzate.  
   
 ## <a name="localize-aspx-markup"></a>Localizzare il markup ASPX  
@@ -81,7 +76,6 @@ ms.locfileid: "37118993"
   
 ## <a name="see-also"></a>Vedere anche
  [Localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Procedura: localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)   
- [Procedura: aggiungere un file di risorse](../sharepoint/how-to-add-a-resource-file.md)   
- [Procedura: localizzare il codice](../sharepoint/how-to-localize-code.md)  
-  
+ [Procedura: Localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)   
+ [Procedura: Aggiungere un file di risorse](../sharepoint/how-to-add-a-resource-file.md)   
+ [Procedura: Localizzare il codice](../sharepoint/how-to-localize-code.md)  

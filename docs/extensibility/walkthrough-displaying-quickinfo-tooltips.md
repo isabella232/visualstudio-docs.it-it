@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Visualizzazione delle descrizioni comando informazioni rapide | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Visualizzazione di descrizioni comandi informazioni rapide | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965804"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>Procedura dettagliata: Visualizzazione rapide
+# <a name="walkthrough-display-quickinfo-tooltips"></a>Procedura dettagliata: Visualizzare le descrizioni comando informazioni rapide
 Informazioni rapide è una funzionalità di IntelliSense che consente di visualizzare le firme dei metodi e le descrizioni quando l'utente sposta il puntatore sul nome di un metodo. È possibile implementare funzionalità basata sul linguaggio, ad esempio informazioni rapide che definisce gli identificatori per il quale si desidera fornire descrizioni Informazionibase, e quindi creando una descrizione comando in cui visualizzare il contenuto. È possibile definire QuickInfo nel contesto di un servizio di linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e visualizzare le informazioni rapide per solo tale tipo o è possibile visualizzare informazioni rapide per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come visualizzare informazioni rapide per il tipo di contenuto "text".  
   
  Nell'esempio di informazioni rapide in questa procedura dettagliata vengono visualizzate le descrizioni comandi quando si sposta il puntatore del mouse su un nome di metodo. Questa progettazione è necessario implementare queste quattro interfacce:  
@@ -178,4 +175,4 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
 4.  Spostare il puntatore del mouse su una delle occorrenze di "Aggiungi". La firma e la descrizione del `add` metodo deve essere visualizzato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

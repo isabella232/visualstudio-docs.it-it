@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: importare una pagina Master o un tema | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Importare una pagina Master o un tema | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952908"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>Procedura: importare una pagina master o un tema
-  È possibile assegnare le pagine nel sito di SharePoint un aspetto coerente creando e usando i temi e le pagine master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [blocco predefinito: interfaccia utente e le pagine](http://go.microsoft.com/fwlink/?LinkID=182095) del sito Web Microsoft.  
+# <a name="how-to-import-a-master-page-or-theme"></a>Procedura: Importare una pagina master o un tema
+  È possibile assegnare le pagine nel sito di SharePoint un aspetto coerente creando e usando i temi e le pagine master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [blocco predefinito: Interfaccia utente e le pagine](http://go.microsoft.com/fwlink/?LinkID=182095) del sito Web Microsoft.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Per importare una pagina master o un tema  
   
@@ -51,7 +48,7 @@ ms.locfileid: "37119902"
 8.  Se si aggiunge una pagina master, modificare relativi **risoluzione dei conflitti di distribuzione** se si imposta su **automatica** nelle proprietà del modulo.  
   
     > [!NOTE]  
-    >  Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: importare una pagina master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
+    >  Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: Importare una pagina master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
   
 9. Nel modulo, aprire *Elements*.  
   
@@ -97,4 +94,3 @@ ms.locfileid: "37119902"
  [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Creazione di pagine per SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
  [Usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

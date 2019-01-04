@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: connessione di un host a un processore di direttiva generato'
+title: 'Procedura dettagliata: Connessione di un Host a un processore di direttiva generato'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3340c9e820103cc286915fe50f105d202eb8c8f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988793"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connettere un host a un processore di direttiva generato
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connettere un Host a un processore di direttiva generato
 
-È possibile scrivere il proprio host che elabora i modelli di testo. Un host personalizzato di base è illustrato nel [procedura dettagliata: creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md). È possibile estendere tale host per aggiungere le funzioni, ad esempio la generazione di più file di output.
+È possibile scrivere il proprio host che elabora i modelli di testo. Un host personalizzato basic viene illustrato in [procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md). È possibile estendere tale host per aggiungere le funzioni, ad esempio la generazione di più file di output.
 
 In questa procedura dettagliata, si espande l'host personalizzato, in modo che supporti i modelli di testo che chiamano processori di direttiva. Quando si definisce un linguaggio specifico di dominio, viene generato un *processore di direttiva* per il modello di dominio. Il processore di direttiva rende più semplice per gli utenti di scrivere modelli di accedere al modello, riducendo la necessità di scrivere assembly e importare le direttive nei modelli.
 
 > [!NOTE]
-> Questa procedura dettagliata si basa sul [procedura dettagliata: creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md). Eseguire innanzitutto tale procedura dettagliata.
+> Questa procedura dettagliata si basa su [procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md). Eseguire innanzitutto tale procedura dettagliata.
 
 In questa procedura dettagliata sono incluse le attività seguenti:
 
@@ -52,7 +51,7 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Inoltre, è necessario disporre di trasformazione del modello testo personalizzato creata nella [procedura dettagliata: creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Inoltre, è necessario disporre di trasformazione del modello testo personalizzato creata in [procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 ## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Usare gli strumenti Domain-Specific Language per generare un processore di direttiva
 
@@ -62,13 +61,13 @@ In questa procedura dettagliata, è utilizzare la procedura guidata finestra di 
 
    -   Nome: DSLMinimalTest
 
-   -   Modello di soluzione: linguaggio minimo
+   -   Modello di soluzione: Linguaggio minimo
 
    -   Estensione di file: min
 
    -   Nome della società: Fabrikam
 
-   Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [come: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Scegliere **Compila soluzione** dal menu **Compila**.
 
@@ -89,7 +88,7 @@ In questa procedura dettagliata, è utilizzare la procedura guidata finestra di 
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Connettersi a un Host del modello di testo personalizzato a un processore di direttiva
 
-Dopo aver generato il processore di direttiva, si connette il processore di direttiva e l'host del modello di testo personalizzato creato nella [procedura dettagliata: creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Dopo aver generato il processore di direttiva, si connette il processore di direttiva e l'host del modello di testo personalizzato creato nel [procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 1.  Aprire la soluzione CustomHost.
 
@@ -231,7 +230,7 @@ Dopo aver generato il processore di direttiva, si connette il processore di dire
             }
     ```
 
-7.  Nel **File** menu, fare clic su **Salva tutto**.
+7.  Nel menu **File** fare clic su **Salva tutto**.
 
 8.  Scegliere **Compila soluzione** dal menu **Compila**.
 
@@ -365,4 +364,4 @@ Per testare l'host del modello di testo personalizzato, è innanzitutto necessar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md)
