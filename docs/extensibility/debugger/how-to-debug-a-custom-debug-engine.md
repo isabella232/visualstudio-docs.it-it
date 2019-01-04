@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: Eseguire il Debug di un motore di Debug personalizzato | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug di un motore di Debug personalizzato | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdc01eec9982f7e3a03cd84424bc56b031846a7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962389"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: Eseguire il Debug di un motore di debug personalizzato
+# <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: Eseguire il debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (metodo). Ciò significa che viene avviata la Germania sotto il controllo dell'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controllo del tipo di progetto. Tuttavia, tale istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è possibile eseguire il debug di DE. Di seguito sono i passaggi che consentono di eseguire il debug di DE personalizzato.  
   
 > [!NOTE]
->  : Nella procedura "Eseguire il Debug di un motore di debug personalizzato", è necessario attendere il DE avviare prima di collegare ad esso. Se si inserisce una finestra di messaggio verso l'inizio del DE che viene visualizzato quando viene avviata la Germania, è possibile collegare a questo punto e quindi deselezionare la casella di messaggio per continuare. In questo modo, è possibile intercettare tutti gli eventi DE.  
+>  :     Nella procedura "Eseguire il Debug di un motore di debug personalizzato", è necessario attendere il DE avviare prima di collegare ad esso. Se si inserisce una finestra di messaggio verso l'inizio del DE che viene visualizzato quando viene avviata la Germania, è possibile collegare a questo punto e quindi deselezionare la casella di messaggio per continuare. In questo modo, è possibile intercettare tutti gli eventi DE.  
   
 > [!WARNING]
 >  È necessario che il debug remoto installato prima di provare le procedure seguenti. Visualizzare [debug remoto](../../debugger/remote-debugging.md) per informazioni dettagliate.  

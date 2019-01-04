@@ -1,9 +1,6 @@
 ---
 title: Combinazione di VBA e le personalizzazioni a livello di documento
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987888"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinazione di VBA e le personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Soluzioni VBA e Office in Visual Studio rispetto](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: Stringhe elemento | Documenti Microsoft
-ms.custom: ''
+title: Elemento di stringhe | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5994144f07b8af84f61d7833737f45593c551b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a57fa611f157fa588158225cece8d38da2babd0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967883"
 ---
-# <a name="strings-element"></a>Elemento di stringhe
-L'elemento di stringhe deve contenere almeno un **ButtonText** elemento figlio. Tutti gli altri elementi figlio sono facoltativi. I caratteri XML non valido, ad esempio '&' e ' <' devono essere codificati come entità ('&amp;'e'&lt;' e così via).  
+# <a name="strings-element"></a>Elemento Strings
+L'elemento di stringhe deve contenere almeno un **ButtonText** elemento figlio. Tutti gli elementi figlio sono facoltativi. I caratteri XML non validi, come '&' e ' <' devono essere codificati come entità ('&amp;'e'&lt;' e così via).  
   
  Una e commerciale nella stringa di testo specifica il tasto di scelta rapida per il comando.  
   
@@ -48,12 +45,12 @@ L'elemento di stringhe deve contenere almeno un **ButtonText** elemento figlio. 
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|ButtonText|Questo campo e i cinque campi di testo seguente in una definizione di comando consentono di specificare il testo visualizzato in diversi menu. Per impostazione predefinita, il `ButtonText` campo viene visualizzato nel controller di menu. Il `ButtonText` campo viene inoltre impostato il valore predefinito se gli altri campi di testo sono vuoti. Il `ButtonText` campo non può essere vuoto, anche se sono specificati gli altri campi di testo.|  
+|ButtonText|Questo campo e i cinque campi di testo seguente in una definizione di comando consentono di specificare il testo visualizzato nei vari menu. Per impostazione predefinita, il `ButtonText` campo viene visualizzato nel controller di menu. Il `ButtonText` campo diventa l'impostazione predefinita anche se gli altri campi di testo sono vuoti. Il `ButtonText` campo non può essere vuoto anche se vengono specificati gli altri campi di testo.|  
 |ToolTipText|Il `ToolTipText` campo specifica il testo visualizzato nella descrizione comando per una voce di menu.<br /><br /> Se il `ToolTipText` campo è vuoto, il `ButtonText` campo viene usato.|  
-|MenuText|Il `MenuText` campo specifica il testo visualizzato per un comando se è presente nel menu principale, una barra degli strumenti in un menu di scelta rapida o in un sottomenu. Se il `MenuText` campo è vuoto, utilizza l'ambiente di sviluppo integrato (IDE) di `ButtonText` campo. Il `MenuText` campo può essere usato anche per la localizzazione.<br /><br /> Per i menu di scelta rapida, il `MenuText` campo è il nome visualizzato nella barra degli strumenti di menu di scelta rapida, che consente la personalizzazione di menu di scelta rapida nell'IDE. Pertanto, essere specifico in ciò che si assegna il nome del menu di scelta rapida. ad esempio, utilizzare "Menu di scelta rapida pacchetto Widget" anziché "Collegamento".<br /><br /> Se il `MenuText` campo non è specificato, il `ButtonText` campo viene usato.|  
-|CommandName|Il `CommandName` campo specifica il testo visualizzato nella categoria tastiera di **comandi** nella scheda il **Personalizza** la finestra di dialogo (disponibile facendo clic **Personalizza**sul **strumenti** menu).|  
-|canonicalName|La lingua inglese `CanonicalName` campo specifica il nome del comando nel testo in lingua inglese che può essere immesse nel **comando** finestra per eseguire la voce di menu. L'IDE consente di rimuovere i caratteri che non sono lettere, numeri, caratteri di sottolineatura o punti. Questo testo viene quindi concatenato per il `ButtonText` campo per definire il comando. Ad esempio, **nuovo progetto** sul **File** menu diventa il comando, il file. NewProject.<br /><br /> Se la lingua inglese `CanonicalName` campo non è specificato, l'IDE Usa il `ButtonText` campo e strisce tutte tranne lettere, cifre, caratteri di sottolineatura e punti. Ad esempio, il testo del pulsante "& definire comandi …" diventa DefineCommands, in cui vengono rimossi i puntini di sospensione, lo spazio e la e commerciale.<br /><br /> Se il `TextChanges` flag specificato e il testo del comando viene modificato, il comando corrispondente riconosciuto dal **comando** finestra non viene modificata; la forma canonica dell'originale rimane `ButtonText` o inglese `CanonicalName` campi.|  
-|LocCanonicalName|Il `LocCanonicalName` campo si comporta come la lingua inglese `CanonicalName` campo ma consente di testo del comando localizzata specificare. È possibile specificare entrambi i campi canonici. Poiché l'IDE analizza solo il testo immesso nella **comando** finestra e lo associa con un comando, in inglese e il testo in lingua inglese non può essere associato lo stesso comando.|  
+|MenuText|Il `MenuText` campo specifica il testo visualizzato per un comando se si tratta del menu principale, una barra degli strumenti, in un menu di scelta rapida o in un sottomenu. Se il `MenuText` campo è vuoto, utilizza l'ambiente di sviluppo integrato (IDE) di `ButtonText` campo. Il `MenuText` campo può essere usato anche per la localizzazione.<br /><br /> Per i menu di scelta rapida di `MenuText` campo è il nome che viene visualizzato sulla barra degli strumenti, menu di scelta rapida che consente la personalizzazione del menu di scelta rapida nell'IDE. Pertanto, essere specifico in ciò che è denominare il menu di scelta rapida; ad esempio, usare "Menu di scelta rapida pacchetto Widget" anziché "Shortcut".<br /><br /> Se il `MenuText` campo non viene specificato, il `ButtonText` campo viene usato.|  
+|commandName|Il `CommandName` campo specifica il testo visualizzato nella categoria della tastiera la **comandi** scheda la **Personalizza** nella finestra di dialogo (disponibili facendo clic **Personalizza**su di **strumenti** menu).|  
+|CanonicalName|La lingua inglese `CanonicalName` campo specifica il nome del comando nel testo inglese che può essere immesse nel **comando** finestra per eseguire la voce di menu. L'IDE rimuove qualsiasi caratteri che non sono lettere, cifre, caratteri di sottolineatura o punti incorporati. Questo testo viene quindi concatenato per il `ButtonText` campo per definire il comando. Ad esempio, **nuovo progetto** nel **File** menu diventa il comando, il file. NewProject.<br /><br /> Se la lingua inglese `CanonicalName` campo non viene specificato, l'IDE Usa il `ButtonText` campo e consente di eliminare i tutte tranne lettere, cifre, caratteri di sottolineatura e punti incorporati. Ad esempio, il testo del pulsante "e definire i comandi..." diventa DefineCommands, in cui vengono rimosse la e commerciale, lo spazio e sui puntini di sospensione.<br /><br /> Se il `TextChanges` flag è specificato e il testo del comando viene modificato, il comando corrispondente riconosciuto dal **comandi** finestra resta invariata e la forma canonica dell'originale rimane `ButtonText` o inglese `CanonicalName` campi.|  
+|LocCanonicalName|Il `LocCanonicalName` campo si comporta esattamente come l'inglese `CanonicalName` campo Abilita ma testo del comando localizzata specificare. È possibile specificare entrambi i campi canonici. Poiché l'IDE appena analizza il testo immesso nella **comando** finestra e la associa con un comando, in inglese e testo non in lingua inglese può essere associato lo stesso comando.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   

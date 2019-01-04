@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Estensione di Esplora Server per visualizzare le Web part | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957897"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: Estendere Esplora Server per visualizzare le web part
   In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata verrà illustrato come estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuna connessa sito di SharePoint.  
@@ -43,7 +40,7 @@ ms.locfileid: "51296385"
 -   Il debug e l'estensione per il testing.  
   
 > [!NOTE]  
->  Per una versione alternativa di questa procedura dettagliata che usa il modello a oggetti client di SharePoint anziché il modello a oggetti server, vedere [procedura dettagliata: chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Per una versione alternativa di questa procedura dettagliata che usa il modello a oggetti client di SharePoint anziché il modello a oggetti server, vedere [procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
@@ -374,7 +371,6 @@ ms.locfileid: "51296385"
   
 ## <a name="see-also"></a>Vedere anche
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Procedura dettagliata: Chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [Procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Image Editor for Icons](/cpp/windows/image-editor-for-icons)  (Editor di immagini per icone)  
  [Creazione di un'icona o un'altra immagine &#40;Image Editor for Icons&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

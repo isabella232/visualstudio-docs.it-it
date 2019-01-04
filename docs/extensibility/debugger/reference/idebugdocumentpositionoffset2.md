@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentPositionOffset2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugDocumentPositionOffset2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08b278d75068351d6d65511f74209c7208024cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eeedd1038b577be8a0e0cac46359cf0b05f0dc70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948287"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
-Rappresenta una posizione in un file di origine come un offset di carattere.  
+Rappresenta una posizione in un file di origine da un offset di carattere.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,15 +34,15 @@ IDebugDocumentPositionOffset2 : IUnknown
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Recupera l'intervallo per la posizione del documento corrente.|  
+|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Recupera l'intervallo per la posizione corrente del documento.|  
   
 ## <a name="remarks"></a>Note  
- Restituisce le stesse informazioni [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ma in `char` viene eseguito l'offset dall'inizio del documento. Ad esempio sarebbe infatti disponibile su un disco, vale a dire una matrice unidimensionale di caratteri, anziché le informazioni di riga e colonna che viene restituito in genere, questo presenta il documento.  
+ Restituisce le stesse informazioni [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ma in `char` viene eseguito l'offset dall'inizio del documento. Questo presenta il documento, ad esempio che esisterebbe in un disco, vale a dire, una matrice unidimensionale di caratteri, anziché le informazioni di riga e colonna che viene in genere restituito.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

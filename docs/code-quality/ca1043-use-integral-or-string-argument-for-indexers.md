@@ -1,8 +1,7 @@
 ---
-title: 'CA1043: Utilizzare argomento di tipo stringa o integrale per gli indicizzatori'
+title: "CA1043: Usare l'argomento di stringa o integrale per gli indicizzatori"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1043
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8781b205da07c1c075e2638716cfc139491d07
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987595"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Utilizzare argomento di tipo stringa o integrale per gli indicizzatori
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Usare l'argomento di stringa o integrale per gli indicizzatori
 
 |||
 |-|-|
@@ -58,4 +57,4 @@ ms.locfileid: "45550583"
 ## <a name="related-rules"></a>Regole correlate
  [CA1023: Gli indicizzatori non devono essere multidimensionali](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024: Usare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Utilizzare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)

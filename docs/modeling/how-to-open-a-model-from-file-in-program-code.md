@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aprire un modello da file nel codice del programma'
+title: 'Procedura: Aprire un modello da file nel codice del programma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938069"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: Aprire un modello da file nel codice del programma
 È possibile aprire modelli di linguaggio specifico di dominio in qualsiasi applicazione.
 
  Da un'estensione di Visual Studio, è possibile usare ModelBus per questo scopo. ModelBus fornisce un meccanismo standard per fare riferimento a un modello o elementi in un modello e per trovare il modello se è stato spostato. Per altre informazioni, vedere [l'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).

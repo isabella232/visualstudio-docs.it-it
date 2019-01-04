@@ -1,9 +1,6 @@
 ---
 title: Registrazione di verbi per estensioni di File | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55b6e8d450a298b6d35079998863a9394ec7d70d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949732"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per estensioni di file
 L'associazione di un'estensione di file a un'applicazione ha in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Preferibile utilizzare l'azione è collegata a un verbo, ad esempio open, che corrisponde all'azione.  

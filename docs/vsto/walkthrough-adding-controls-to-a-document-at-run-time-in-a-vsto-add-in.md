@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954896"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi documento di Microsoft Office Word aperto usando un componente aggiuntivo VSTO. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti di aggiungere un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.  
 
- **Si applica a:** le informazioni contenute in questo argomento si applicano ai progetti di componente aggiuntivo VSTO per Word 2010. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Si applica a:** Le informazioni contenute in questo argomento si applicano ai progetti di componente aggiuntivo VSTO per Word 2010. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).  
 
  Questa procedura dettagliata illustra le attività seguenti:  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951587"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO per Word.  
 
-1.  Creare un progetto di componente aggiuntivo VSTO per Word con il nome **WordDynamicControls**. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto di componente aggiuntivo VSTO per Word con il nome **WordDynamicControls**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Aggiungere un riferimento all'assembly **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Tale riferimento è necessario per aggiungere un controllo Windows Form a livello di codice al documento più avanti in questa procedura dettagliata.  
 
@@ -82,7 +79,7 @@ ms.locfileid: "49951587"
 8. Nella finestra **Proprietà** modificare le seguenti proprietà:  
 
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **Etichetta** | **Pulsante Aggiungi** |
@@ -91,7 +88,7 @@ ms.locfileid: "49951587"
 9. Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.  
 
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Etichetta** | **Add Rich Text Control** |
@@ -187,13 +184,12 @@ ms.locfileid: "49951587"
 
 -   Per un esempio che illustra come aggiungere molti altri tipi di controlli a un documento in fase di esecuzione e ricreare i controlli quando il documento viene riaperto, vedere il Word componente aggiuntivo controlli di esempio dinamici all'indirizzo [esempi di sviluppo per Office e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md).  
 
--   Per una procedura dettagliata che illustra come aggiungere controlli a un foglio di lavoro usando un componente aggiuntivo VSTO per Excel, vedere [procedura dettagliata: aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
+-   Per una procedura dettagliata che illustra come aggiungere controlli a un foglio di lavoro usando un componente aggiuntivo VSTO per Excel, vedere [procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
 
 ## <a name="see-also"></a>Vedere anche  
  [Soluzioni Word](../vsto/word-solutions.md)   
  [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Rendere persistenti i controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Procedura: Aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

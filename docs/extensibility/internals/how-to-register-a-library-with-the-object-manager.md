@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: registrare una libreria con il gestore oggetti | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Registrare una libreria con il gestore oggetti | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61976fbc63efd4c15e5ed88a159ea8e73bdf38f3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0ed3913b8031283b20589a670c5d2da6e51a8dec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941979"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Procedura: registrare una libreria con il gestore oggetti
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Procedura: Registrare una libreria con il gestore oggetti
 I simboli per l'esplorazione strumenti, ad esempio **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **risultati ricerca simbolo**, consentono di visualizzare simboli nel progetto o nei componenti esterni. I simboli includono gli spazi dei nomi, classi, interfacce, metodi e altri elementi del linguaggio. Le librerie di tenere traccia di questi simboli ed esporle al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti che popolano gli strumenti con i dati.  
   
  Object manager tiene traccia di tutte le librerie disponibili. Ogni libreria è necessario registrare con il gestore oggetti prima di fornire i simboli per gli strumenti di esplorazione dei simboli.  
@@ -170,4 +167,4 @@ I simboli per l'esplorazione strumenti, ad esempio **Visualizzazione classi**, *
 ## <a name="see-also"></a>Vedere anche  
  [Estensibilità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Supporto di strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Procedura: esporre gli elenchi dei simboli forniti dalla libreria per la gestione degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Procedura: Esporre gli elenchi dei simboli forniti dalla libreria per la gestione degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

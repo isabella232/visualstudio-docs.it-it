@@ -1,8 +1,6 @@
 ---
 title: Creazione di soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -29,12 +27,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00df7bded676fdae89dc6fb44e9e89fac814504e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8733c4e068bd7c4be2674e302707b81cc180cfd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963243"
 ---
 # <a name="build-office-solutions"></a>Creazione di soluzioni Office
   I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come creare applicazioni, vedere [compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

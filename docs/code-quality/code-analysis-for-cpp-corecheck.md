@@ -2,7 +2,6 @@
 title: Riferimento di controllo linee guida per la base di C++
 ms.date: 03/22/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -12,16 +11,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11386dcd742e64737a4b06f2db9f55145f535d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959483"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Riferimento di controllo linee guida per la base di C++
 
-In questa sezione elenca gli avvisi di controllo di linee guida di base di C++. Per informazioni sull'analisi del codice, vedere [/analyze (analisi codice)](/cpp/build/reference/analyze-code-analysis) e [avvio rapido: analisi del codice per C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+In questa sezione elenca gli avvisi di controllo di linee guida di base di C++. Per informazioni sull'analisi del codice, vedere [/analyze (analisi codice)](/cpp/build/reference/analyze-code-analysis) e [avvio rapido: Analisi del codice per C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Alcuni avvisi appartengono a più di un gruppo e non tutti gli avvisi sono un argomento di riferimento completa.
@@ -97,23 +96,23 @@ Espressione '% expr %': Nessun impatto della matrice sul puntatore. Visualizzare
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) inizializzatore globale accede all'oggetto extern '% simbolo %'. Visualizzare [linee guida di base di C++ I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) evitare senza nome oggetti con costruzione e distruzione personalizzate. Visualizzare [ES.84: non (provare a) dichiarare una variabile locale senza nome](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) evitare senza nome oggetti con costruzione e distruzione personalizzate. Vedere [ES.84: Non (provare a) dichiarare una variabile locale senza nome](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="class-group"></a>Gruppo di classi
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) se si definisce o elimina qualsiasi operazione predefinita nel tipo '% simbolo %', definirle o eliminarle tutte. Visualizzare [linee guida di base di C++ C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) funzione '% % symbol' deve essere contrassegnata con 'override'. Visualizzare [C.128: funzioni virtuali devono specificare esattamente uno dei virtuale, override, o l'ultimo](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) funzione '% % symbol' deve essere contrassegnata con 'override'. Vedere [C.128: Funzioni virtuali devono specificare esattamente uno dei virtuale, override, o l'ultimo](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
 [C26434 DONT_HIDE_METHODS](C26434.md) funzione '% symbol_1% ' nasconde una funzione non virtuale '% symbol_2% '. Visualizzare [linee guida di base di C++ C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funzione '% % symbol' deve specificare esattamente uno di 'virtual', 'override' o 'final'. Visualizzare [C.128: funzioni virtuali devono specificare esattamente uno dei virtuale, override, o l'ultimo](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funzione '% % symbol' deve specificare esattamente uno di 'virtual', 'override' o 'final'. Vedere [C.128: Funzioni virtuali devono specificare esattamente uno dei virtuale, override, o l'ultimo](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) il tipo '% simbolo % con una funzione virtual deve entrambi distruttore non virtuale pubblico, virtuale o protetto. Visualizzare [linee guida di base di C++ C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) distruttore di override non deve usare identificatori 'virtuali' o 'override' esplicito. Visualizzare [C.128: funzioni virtuali devono specificare esattamente uno dei virtuale, override, o l'ultimo](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) distruttore di override non deve usare identificatori 'virtuali' o 'override' esplicito. Vedere [C.128: Funzioni virtuali devono specificare esattamente uno dei virtuale, override, o l'ultimo](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 ## <a name="type-group"></a>TIPO di gruppo
@@ -131,7 +130,7 @@ Espressione '% expr %': Nessun impatto della matrice sul puntatore. Visualizzare
 [C26440 DECLARE_NOEXCEPT](C26440.md) funzione '% simbolo %' può essere dichiarata `noexcept`. Visualizzare [linee guida di base di C++ F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) la funzione viene dichiarata **noexcept** ma chiama una funzione che potrebbe generare eccezioni.
-Visualizzare [linee guida di base di C++: F.6: se la funzione non può generare, dichiararla come noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Vedere [linee guida di base di C++:  F.6: Se la funzione non può generare, dichiararla come noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 ## <a name="concurrency-group"></a>Gruppo di concorrenza
 
@@ -141,7 +140,7 @@ Visualizzare [linee guida di base di C++: F.6: se la funzione non può generare,
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) l'argomento di riferimento '% argomento %' per la funzione '% % di funzione' può essere contrassegnato come `const`. Visualizzare [con.3 linee guida di base di C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): l'argomento di puntatore 'argomento % %' per la funzione '% % di funzione' può essere contrassegnato come un puntatore a `const`. Visualizzare [con.3 linee guida di base di C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): L'argomento di puntatore 'argomento % %' per la funzione '% % di funzione' può essere contrassegnato come un puntatore a `const`. Visualizzare [con.3 linee guida di base di C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) solo una volta assegnato il valore a cui fa riferimento '% variabile %', contrassegnarlo come puntatore a `const`. Visualizzare [con.4 linee guida di base di C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
@@ -185,7 +184,7 @@ Visualizzare [linee guida di base di C++: F.6: se la funzione non può generare,
 
 ## <a name="bounds-group"></a>Gruppo di limiti
 
-[C26446 USE_GSL_AT](c26446.md) preferiscono usare `gsl::at()` anziché l'operatore di indice è deselezionata. Visualizzare [linee guida di base di C++: Bounds.4: non usare le funzioni di libreria standard e tipi che non sono al controllo dei limiti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) preferiscono usare `gsl::at()` anziché l'operatore di indice è deselezionata. Vedere [linee guida di base di C++:  Bounds.4: Non usare le funzioni di libreria standard e tipi che non sono al controllo dei limiti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
 Non usare l'aritmetica dei puntatori. In alternativa, usare span. Vedere [Bounds.1 linee guida di base di C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -199,14 +198,14 @@ Non usare l'aritmetica dei puntatori. In alternativa, usare span. Vedere [Bounds
 ## <a name="gsl-group"></a>Gruppo GSL
 
 [C26445 NO_SPAN_REF](c26445.md) un riferimento a `gsl::span` o `std::string_view` potrebbe essere un'indicazione di un problema di durata.
-Vedere [gsl linee guida di base di C++: visualizzazioni](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+Vedere [gsl linee guida di base di C++: Visualizzazioni](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md) preferiscono usare `gsl::at()` anziché l'operatore di indice è deselezionata. Visualizzare [linee guida di base di C++: Bounds.4: non usare le funzioni di libreria standard e tipi che non sono al controllo dei limiti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) preferiscono usare `gsl::at()` anziché l'operatore di indice è deselezionata. Vedere [linee guida di base di C++:  Bounds.4: Non usare le funzioni di libreria standard e tipi che non sono al controllo dei limiti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) provare a usare `gsl::finally` se azione finale è intenzionale. Visualizzare [linee guida di base di C++: gsl: utilità](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY ](c26448.md) provare a usare `gsl::finally` se azione finale è intenzionale. Vedere [linee guida di base di C++:  Gsl: Le utilità](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` o `std::string_view` creato da una variabile temporanea non saranno validi quando il file temporaneo viene invalidato. Visualizzare [linee guida di base di C++: gsl: visualizzazioni](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` o `std::string_view` creato da una variabile temporanea non saranno validi quando il file temporaneo viene invalidato. Vedere [linee guida di base di C++: Gsl: Viste](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 
 ## <a name="deprecated-warnings"></a>Avvisi deprecati

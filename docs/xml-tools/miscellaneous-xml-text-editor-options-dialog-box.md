@@ -2,7 +2,6 @@
 title: Varie, XML, editor di testo, finestra di dialogo Opzioni
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
@@ -10,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941401"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varie, XML, Editor di testo, finestra di dialogo Opzioni
 
-Questa finestra di dialogo consente di modificare le impostazioni di completamento automatico e dello schema per l'editor XML. È possibile accedere il **opzioni** dalla finestra di dialogo di **strumenti** menu.
+Questa finestra di dialogo consente di modificare le impostazioni di completamento automatico e dello schema per l'editor XML. È possibile accedere la **le opzioni** dalla finestra di dialogo il **strumenti** menu.
 
 > [!NOTE]
-> Queste impostazioni sono disponibili quando si seleziona il **Editor di testo** cartella, il **XML** cartella, quindi il **varie** opzione il **opzioni** la finestra di dialogo.
+> Queste impostazioni sono disponibili quando si seleziona il **Editor di testo** cartella, la **XML** cartella e quindi il **varie** opzione il **opzioni** finestra di dialogo.
 
 
 ## <a name="auto-insert"></a>Inserimento automatico
@@ -51,7 +50,7 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
  Selezionato per impostazione predefinita.
 
 ## <a name="network"></a>Rete
- **Scarica automaticamente DTD e schemi**
+ **Scarica automaticamente le DTD e gli schemi**
 
  Gli schemi e le DTD (Document Type Definitions) vengono scaricati automaticamente dalle posizioni HTTP. Questa funzionalità usa System.Net con il rilevamento automatico dei server proxy abilitato.
 
@@ -67,9 +66,9 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
 ## <a name="caching"></a>Memorizzazione nella cache
  **Schemi**
 
- Specifica il percorso della cache degli schemi. Pulsante Sfoglia (**...** ) consente di aprire il **Directory Sfoglia** la finestra di dialogo nella posizione corrente della cache dello schema. È possibile selezionare una directory diversa, oppure è possibile selezionare una cartella nella finestra di dialogo, mouse e scegliere **aprire** per visualizzare il contenuto nella directory.
+ Specifica il percorso della cache degli schemi. Il pulsante Sfoglia (**...** ) consente di aprire la **Sfoglia Directory** finestra di dialogo nella posizione corrente dello schema della cache. È possibile selezionare una directory diversa, oppure è possibile selezionare una cartella nella finestra di dialogo, pulsante destro del mouse, scegliere **aperto** per visualizzare gli elementi nella directory.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proprietà del documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)
+- [Proprietà di documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)
 - [Componenti dell'editor XML](../xml-tools/xml-editor-components.md)

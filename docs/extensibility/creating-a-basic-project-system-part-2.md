@@ -1,9 +1,6 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967774"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creare un sistema di progetto di base, parte 2
 La prima procedura dettagliata in questa serie [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Reimpostare l'istanza sperimentale di Visual Studio SDK.  
   
-    Sul [!INCLUDE[win7](../debugger/includes/win7_md.md)]: nel **avviare** menu, trovare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare il Microsoft sperimentale di Visual Studio istanza**.  
+    In [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Nel **avviare** menu, trovare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare l'istanza di Microsoft Visual Studio sperimentale**.  
   
-    Nelle versioni successive di Windows: sul **avviare** digitare **ripristinare Microsoft Visual Studio \<versione > istanza sperimentale**.  
+    Nelle versioni successive di Windows: Nel **avviare** digitare **ripristinare Microsoft Visual Studio \<versione > istanza sperimentale**.  
   
 2. Viene visualizzata una finestra del prompt dei comandi. Quando vengono visualizzate le parole **premere un tasto qualsiasi per continuare**, fare clic su **invio**. Dopo aver chiuso la finestra, aprire Visual Studio.  
   

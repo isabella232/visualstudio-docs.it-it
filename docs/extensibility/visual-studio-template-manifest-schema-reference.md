@@ -1,6 +1,5 @@
 ---
 title: Modello di Visual Studio Manifest Schema Reference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961955"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimento dello schema del manifesto di modello di Visual Studio
 Questo schema viene descritto il formato del manifesto del modello di Visual Studio (*con estensione vstman*) i file che vengono generati per i modelli di progetto o un elemento di Visual Studio. Lo schema descrive anche la posizione e altre informazioni rilevanti relative al modello.  
   
- : Perché sono presenti elementi separati e le directory di progetto, un manifesto mai deve avere una combinazione di modelli di progetto ed elemento.  
+ : Poiché esistono elemento separato e le directory di progetto, un manifesto mai deve avere una combinazione di modelli di progetto ed elemento.  
   
 > [!IMPORTANT]
 >  Questo manifesto è disponibile a partire da Visual Studio 2017.  
@@ -29,9 +28,9 @@ Questo schema viene descritto il formato del manifesto del modello di Visual Stu
   
 ### <a name="attributes"></a>Attributi  
   
--   **Versione**: una stringa che rappresenta la versione del manifesto del modello. Obbligatorio.  
+-   **Versione**: Stringa che rappresenta la versione del manifesto del modello. Obbligatorio.  
   
--   **Impostazioni locali**: una stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli. È necessario usare un manifesto separato per ogni impostazione locale. Facoltativo.  
+-   **Impostazioni locali**: Stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli. È necessario usare un manifesto separato per ogni impostazione locale. Facoltativo.  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -46,13 +45,13 @@ Questo schema viene descritto il formato del manifesto del modello di Visual Stu
  Il contenitore del modello di manifesto elementi. Un contenitore di modello per ogni modello che definisce un manifesto.  
   
 ### <a name="attributes"></a>Attributi  
- **VSTemplateType**: un valore stringa che specifica il tipo del modello (`"Project"`, `"Item"`, o `"ProjectGroup"`). Obbligatorio  
+ **VSTemplateType**: Valore stringa che specifica il tipo del modello (`"Project"`, `"Item"`, o `"ProjectGroup"`). Obbligatorio  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
--   **RelativePathOnDisk**: il percorso relativo del file del modello su disco. Questo percorso definisce anche la posizione del modello nell'albero del modello illustrato nella **nuovo progetto** oppure **nuovo elemento** finestra di dialogo. Per i modelli distribuiti come una directory e i singoli file, questo percorso fa riferimento alla directory contenente i file di modello. Per i modelli distribuiti come un *zip* file, questo percorso deve essere il percorso per il *zip* file.  
+-   **RelativePathOnDisk**:  Il percorso relativo del file del modello su disco. Questo percorso definisce anche la posizione del modello nell'albero del modello illustrato nella **nuovo progetto** oppure **nuovo elemento** finestra di dialogo. Per i modelli distribuiti come una directory e i singoli file, questo percorso fa riferimento alla directory contenente i file di modello. Per i modelli distribuiti come un *zip* file, questo percorso deve essere il percorso per il *zip* file.  
   
--   * * VSTemplateHeader: Una [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.  
+-   * * VSTemplateHeader: Oggetto [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.  
   
 ### <a name="parent-element"></a>Elemento padre  
  **VSTemplateManifest**  
@@ -67,13 +66,13 @@ Questo schema viene descritto il formato del manifesto del modello di Visual Stu
   
 ### <a name="child-elements"></a>Elementi figlio  
   
--   **RelativePath**: il percorso del modello. Può esistere solo una voce per ogni percorso, il primo avrà la precedenza per tutti i manifesti.  
+-   **RelativePath**: Il percorso del modello. Può esistere solo una voce per ogni percorso, il primo avrà la precedenza per tutti i manifesti.  
   
--   **LocalizedName**: un' **NameDescriptionIcon** elemento che specifica il nome localizzato. Facoltativo.  
+-   **LocalizedName**: Oggetto **NameDescriptionIcon** elemento che specifica il nome localizzato. Facoltativo.  
   
--   **SortOrder**: una stringa che specifica l'ordinamento. Facoltativo.  
+-   **SortOrder**: Stringa che specifica l'ordinamento. Facoltativo.  
   
--   **ParentFolderOverrideName**: il nome della cartella padre sottoposte a override. Facoltativo. Questo elemento dispone di un **nome** attributo, ovvero un valore stringa che specifica il nome.  
+-   **ParentFolderOverrideName**: Nome stato eseguito l'override della cartella padre. Facoltativo. Questo elemento dispone di un **nome** attributo, ovvero un valore stringa che specifica il nome.  
   
 ### <a name="parent-element"></a>Elemento padre  
  **VSTemplateManifest**  
@@ -83,9 +82,9 @@ Questo schema viene descritto il formato del manifesto del modello di Visual Stu
   
 ### <a name="attributes"></a>Attributi  
   
--   **Pacchetto**: un valore stringa che specifica il pacchetto. Facoltativo.  
+-   **Pacchetto**: Valore stringa che specifica il pacchetto. Facoltativo.  
   
--   **ID**: un valore stringa che specifica l'ID. Facoltativo.  
+-   **ID**: Valore stringa che specifica l'ID. Facoltativo.  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  

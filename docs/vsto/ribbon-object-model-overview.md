@@ -1,9 +1,6 @@
 ---
 title: Panoramica del modello a oggetti della barra multifunzione
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961309"
 ---
 # <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
   Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] espone un modello a oggetti fortemente tipizzati che è possibile usare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione. Ad esempio, è possibile in modo dinamico popola i controlli menu, o mostrare e nascondere controlli in base al contesto. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima della barra multifunzione viene caricata dall'applicazione di Office. Per informazioni, vedere [impostare le proprietà che diventano di sola lettura](#SettingReadOnlyProperties).  
@@ -190,13 +187,12 @@ ms.locfileid: "49910589"
 ## <a name="see-also"></a>Vedere anche  
  [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
- [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
  [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)   
- [Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Procedura: il componente aggiuntivo Mostra errori dell'interfaccia utente](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Procedura: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Procedura: Mostra errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: rimuovere estensioni di codice gestito dai documenti'
-ms.custom: ''
+title: 'Procedura: Rimuovere estensioni di codice gestito dai documenti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964773"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Procedura: rimuovere estensioni di codice gestito dai documenti
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Procedura: Rimuovere estensioni di codice gestito dai documenti
   È possibile rimuovere l'assembly di personalizzazione a livello di codice da un documento o cartella di lavoro che fa parte di una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. Gli utenti possono quindi aprire i documenti e visualizzare il contenuto, ma non verrà visualizzata un'interfaccia utente personalizzata (UI) è aggiungere ai documenti e non verrà eseguito il codice.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  È possibile rimuovere l'assembly di personalizzazione utilizzando uno dei `RemoveCustomization` metodi forniti dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Il metodo da adottare dipende dal fatto che si desidera rimuovere la personalizzazione in fase di esecuzione (vale a dire, l'esecuzione di codice nella personalizzazione quando la parola documento o cartella di lavoro di Excel è aperto), o se si desidera rimuovere la personalizzazione da un documento chiuso o un documento che i s in un server che non è installato Microsoft Office.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come ricerca per categorie: si collega o scollega un Assembly di VSTO da un documento di Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [procedura: Collegare o scollegare un Assembly VSTO da un documento di Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Per rimuovere l'assembly di personalizzazione in fase di esecuzione  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35673218"
   
 ## <a name="see-also"></a>Vedere anche  
  [Gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Procedura: collegare gestito estensioni ai documenti di codice](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Procedura: Associare estensioni di codice gestito a documenti](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

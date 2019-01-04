@@ -2,7 +2,6 @@
 title: 'CA1806: Non ignorare i risultati dei metodi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1806
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 - VB
 manager: douge
-ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 865c4d26758021b0f0200f7834d02cd34f22bc8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954198"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Non ignorare i risultati dei metodi
 
@@ -55,7 +54,7 @@ Ignorando HRESULT o codice di errore può causare un comportamento imprevisto in
 
  Se il metodo chiama il metodo B, ma non usa la nuova istanza di stringa restituita dal metodo B. Passare l'istanza come argomento a un altro metodo, assegnare l'istanza a una variabile. Oppure rimuovere la chiamata se non è necessaria.
 
- oppure
+ -oppure-
 
  Se il metodo chiama il metodo B, ma non usa il valore HRESULT o codice di errore che il metodo restituisce. Usare il risultato in un'istruzione condizionale, assegnare il risultato a una variabile oppure passarlo come argomento a un altro metodo.
 

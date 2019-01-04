@@ -1,9 +1,6 @@
 ---
 title: Elementi di un modello di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eab0627184ac887aacfdfb2f275f0e8d9d30df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962610"
 ---
 # <a name="elements-of-a-project-model"></a>Elementi di un modello di progetto
 Le interfacce e implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] condividono una struttura di base: il modello di progetto per il tipo di progetto. Nel modello di progetto che è il pacchetto VSPackage si sta sviluppando, è creare oggetti conformi alle decisioni di progettazione e funziona con la funzionalità globale fornita dall'IDE. Anche se si controllano come viene mantenuto un elemento del progetto, ad esempio, non si controlla la notifica che un file deve essere persistente. Quando un utente inserisce lo stato attivo su un elemento di progetto aperto e sceglie **salvare** nel **File** menu nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barra, il codice del tipo di progetto devono intercettare il comando dall'IDE, il file della e Invia notifica all'IDE che non sono più viene modificato il file.  
   
- Il pacchetto VSPackage interagisce con l'IDE tramite i servizi che forniscono l'accesso alle interfacce di IDE. Ad esempio, tramite il servizio specifico, di monitoraggio e la route comandi e si forniscono informazioni sul contesto per le selezioni effettuate nel progetto. Tutte le funzionalità IDE globale necessari per il pacchetto VSPackage sono fornita da servizi. Per altre informazioni sui servizi, vedere [procedura: ottenere un servizio](../../extensibility/how-to-get-a-service.md).  
+ Il pacchetto VSPackage interagisce con l'IDE tramite i servizi che forniscono l'accesso alle interfacce di IDE. Ad esempio, tramite il servizio specifico, di monitoraggio e la route comandi e si forniscono informazioni sul contesto per le selezioni effettuate nel progetto. Tutte le funzionalità IDE globale necessari per il pacchetto VSPackage sono fornita da servizi. Per altre informazioni sui servizi, vedere [come: Ottenere un servizio](../../extensibility/how-to-get-a-service.md).  
   
  Altre considerazioni sull'implementazione:  
   
@@ -49,5 +46,5 @@ Le interfacce e implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../../c
  [Utilizzare HierUtil7 progetto classi per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)   
  [Creare istanze del progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [Procedura: ottenere un servizio](../../extensibility/how-to-get-a-service.md)   
+ [Procedura: Ottenere un servizio](../../extensibility/how-to-get-a-service.md)   
  [Creare tipi di progetto](../../extensibility/internals/creating-project-types.md)

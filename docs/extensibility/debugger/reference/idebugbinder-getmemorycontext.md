@@ -1,9 +1,6 @@
 ---
 title: IDebugBinder::GetMemoryContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBinder::GetMemoryContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a94098a6645ef353ff3e18b17911c05d495fe8ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a613efac19f9b84cc5b74cd502854892fa43694
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952368"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Questo metodo converte una posizione di oggetto o un indirizzo di memoria in un contesto in memoria.  
@@ -28,7 +25,7 @@ Questo metodo converte una posizione di oggetto o un indirizzo di memoria in un 
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT GetMemoryContext(   
+HRESULT GetMemoryContext(   
    IDebugField*           pField,  
    DWORD                  dwConstant,  
    IDebugMemoryContext2** ppMemCxt  

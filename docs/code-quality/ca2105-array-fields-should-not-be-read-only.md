@@ -1,8 +1,7 @@
 ---
-title: 'CA2105: I campi di matrici non devono essere di sola lettura'
+title: 'CA2105: I campi di matrici non devono essere solo lettura'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937976"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: I campi di matrici non devono essere di sola lettura
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: I campi di matrici non devono essere solo lettura
 
 |||
 |-|-|
@@ -40,7 +39,7 @@ Un campo pubblico o protetto che contiene una matrice viene dichiarato di sola l
 
 Quando si applica il `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modificatore a un campo che contiene una matrice, il campo non può essere modificato per fare riferimento a una matrice diversa. È tuttavia possibile modificare gli elementi della matrice archiviati in un campo in sola lettura. Il codice che prende decisioni o esegue le operazioni che si basano sugli elementi di una matrice di sola lettura che è possibile accedere pubblicamente potrebbe contenere una vulnerabilità di sicurezza sfruttabili.
 
-Si noti che anche la presenza di un campo pubblico viola la regola di progettazione [CA1051: non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Si noti che anche la presenza di un campo pubblico viola la regola di progettazione [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -50,7 +49,7 @@ Per risolvere le vulnerabilità di sicurezza che è identificato da questa regol
 
 - Sostituire il campo pubblico con un metodo che restituisce un clone di una matrice privata. Poiché il codice non richiede il clone, non vi è alcun rischio se gli elementi vengono modificati.
 
-Se si sceglie il secondo approccio, non sostituire il campo con una proprietà. le proprietà che restituiscono matrici influisce negativamente sulle prestazioni. Per altre informazioni, vedere [CA1819: le proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md).
+Se si sceglie il secondo approccio, non sostituire il campo con una proprietà. le proprietà che restituiscono matrici influisce negativamente sulle prestazioni. Per altre informazioni, vedere [CA1819: Proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 

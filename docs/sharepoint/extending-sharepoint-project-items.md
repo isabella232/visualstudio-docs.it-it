@@ -1,9 +1,6 @@
 ---
 title: Estensione di elementi di progetto SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,31 +14,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b83d5f92a54d58aae2d4c7860e6648920615d63f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d02871b991c999c490aac8aaeafc677711c95266
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959972"
 ---
 # <a name="extend-sharepoint-project-items"></a>Estendere gli elementi di progetto SharePoint
   Creare un'estensione di elemento di progetto quando si desidera aggiungere funzionalità a un tipo di elemento di progetto SharePoint che è già installato in Visual Studio. Ad esempio, è possibile creare un'estensione per l'oggetto incorporato **ricevitore di eventi** oppure **definizione elenco** gli elementi di progetto in Visual Studio oppure è possibile creare un'estensione per un tipo di elemento di progetto personalizzato. È anche possibile creare un'estensione per tutti i tipi di elementi di progetto SharePoint.  
   
 ## <a name="tasks-for-extending-sharepoint-project-items"></a>Attività per l'estensione di elementi di progetto SharePoint
- Per estendere un elemento del progetto, creare un assembly di estensioni di Visual Studio che implementa il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfaccia. Per altre informazioni, vedere [procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Per estendere un elemento del progetto, creare un assembly di estensioni di Visual Studio che implementa il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfaccia. Per altre informazioni, vedere [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
  Quando si estende un elemento del progetto, è anche possibile aggiungere le funzionalità seguenti all'elemento del progetto:  
   
-- Aggiungere una voce di menu di scelta rapida per l'elemento del progetto. La voce di menu viene visualizzato quando si apre il menu di scelta rapida per l'elemento del progetto in **Esplora soluzioni**. Si apre il menu di scelta rapida facendo clic con l'elemento del progetto o facendo clic su di esso e scegliendo quindi il **Shift**+**F10** chiavi. Per altre informazioni, vedere [procedura: aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
+- Aggiungere una voce di menu di scelta rapida per l'elemento del progetto. La voce di menu viene visualizzato quando si apre il menu di scelta rapida per l'elemento del progetto in **Esplora soluzioni**. Si apre il menu di scelta rapida facendo clic con l'elemento del progetto o facendo clic su di esso e scegliendo quindi il **Shift**+**F10** chiavi. Per altre informazioni, vedere [Procedura: Aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
   
-- Aggiungere una proprietà personalizzata per l'elemento del progetto. La proprietà viene visualizzata nel **delle proprietà** finestra quando si sceglie l'elemento del progetto in **Esplora soluzioni**. Per altre informazioni, vedere [procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
+- Aggiungere una proprietà personalizzata per l'elemento del progetto. La proprietà viene visualizzata nel **delle proprietà** finestra quando si sceglie l'elemento del progetto in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
-  Per una procedura dettagliata che illustra come creare, distribuire e testare un'estensione di elemento di progetto, vedere [procedura dettagliata: estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
+  Per una procedura dettagliata che illustra come creare, distribuire e testare un'estensione di elemento di progetto, vedere [procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Comprendere la relazione tra estensioni dell'elemento del progetto e le istanze di elemento di progetto
  Quando si crea un'estensione di elemento di progetto, Visual Studio carica l'estensione quando viene aggiunto un elemento di progetto del tipo associato a un progetto SharePoint. Ad esempio, se si crea un'estensione per i **ricevitore di eventi** gli elementi di progetto Visual Studio carica l'estensione quando un utente aggiunge un **ricevitore di eventi** elemento del progetto a un progetto. Visual Studio Usa la stessa istanza dell'estensione per tutte le istanze del tipo di elemento di progetto associato. Nell'esempio precedente, se l'utente aggiunge un secondo **ricevitore di eventi** elemento di progetto al progetto, la stessa istanza dell'estensione viene usata per personalizzare il secondo elemento di progetto.  
   
- Per accedere a un'istanza specifica del tipo di elemento di progetto si estende, gestire uno dei <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> eventi del *projectItemType* parametri nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> (metodo). Ad esempio, per determinare quando viene aggiunto un elemento di progetto del tipo si estende a un progetto, gestiscono il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> evento. Per altre informazioni, vedere [procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Per accedere a un'istanza specifica del tipo di elemento di progetto si estende, gestire uno dei <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> eventi del *projectItemType* parametri nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> (metodo). Ad esempio, per determinare quando viene aggiunto un elemento di progetto del tipo si estende a un progetto, gestiscono il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> evento. Per altre informazioni, vedere [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identificatori per gli elementi di progetto SharePoint
  Ogni elemento di progetto SharePoint è un identificatore di stringa corrispondente. È necessario conoscere l'identificatore per un elemento del progetto se si desidera eseguire le attività seguenti:  
@@ -68,9 +65,8 @@ ms.locfileid: "49823632"
 |Form di associazione del flusso di lavoro|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Procedura: aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
- [Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Procedura: Aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Procedura: Aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [Estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
-  

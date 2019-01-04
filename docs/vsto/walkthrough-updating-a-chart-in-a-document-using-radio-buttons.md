@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Aggiornamento di un grafico in un documento mediante pulsanti di opzione'
-ms.custom: ''
+title: 'Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943236"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: Aggiornamento di un grafico in un documento mediante pulsanti di opzione
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49904674"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto documento di Word con il nome **My Chart Options**. Nella procedura guidata, selezionare **creare un nuovo documento**. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto documento di Word con il nome **My Chart Options**. Nella procedura guidata, selezionare **creare un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **My Chart Options** progetto al **Esplora soluzioni**.  
   
@@ -93,7 +90,7 @@ ms.locfileid: "49904674"
   
 2.  Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare il primo **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**Istogramma**|  
     |**per**|**Istogramma a colonne**|  
@@ -164,7 +161,7 @@ ms.locfileid: "49904674"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
@@ -211,13 +208,11 @@ ms.locfileid: "49904674"
 ## <a name="next-steps"></a>Passaggi successivi  
  Ecco alcune possibili attività successive:  
   
--   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [procedura dettagliata: visualizzazione di testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Modificare la formattazione selezionando uno stile da una casella combinata. Per altre informazioni, vedere [procedura dettagliata: modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Modificare la formattazione selezionando uno stile da una casella combinata. Per altre informazioni, vedere [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)   
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

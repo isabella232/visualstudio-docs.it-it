@@ -1,6 +1,5 @@
 ---
 title: Editor dei colori VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13f2633895e1bf0f228f9984ade99b01f6e0cc12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bbe9e98d4a30def296f395b7175e871a71383437
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960472"
 ---
 # <a name="vsix-color-editor"></a>Editor dei colori VSIX
 Lo strumento Editor colore di estensione di Visual Studio possa creare e modificare i colori personalizzati per Visual Studio. Lo strumento può anche generare le chiavi di risorsa del tema in modo che i colori possono essere usati nel codice. Questo strumento è utile per rendere i colori per un'estensione di Visual Studio che supporta i temi. Questo strumento può aprire file con estensione pkgdef e XML. Visual Studio temi (file .vstheme) possono essere utilizzati con l'Editor colore di Visual Studio estensione modificando l'estensione di file in. Xml. Inoltre, .vstheme file possono essere importati in un file con estensione XML corrente.  
@@ -29,13 +28,13 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
  Un token di colore è costituito da quattro elementi:  
   
--   **Nome della categoria:** un raggruppamento logico per un set di colori. Usare un nome di categoria esistente se sono già presenti colori specifici per l'elemento dell'interfaccia utente desiderata, o il gruppo di elementi dell'interfaccia utente.  
+-   **Nome della categoria:** Un raggruppamento logico per un set di colori. Usare un nome di categoria esistente se sono già presenti colori specifici per l'elemento dell'interfaccia utente desiderata, o il gruppo di elementi dell'interfaccia utente.  
   
--   **Nome token:** un nome descrittivo per il token di colore e il set di token. Set includono sfondo e i nomi di token di primo piano (testo), nonché tutti i relativi stati e devono essere denominati in modo che risulti semplice identificare gli Stati che si applicano a e le coppie.  
+-   **Nome token:** Un nome descrittivo per il token di colore e il set di token. Set includono sfondo e i nomi di token di primo piano (testo), nonché tutti i relativi stati e devono essere denominati in modo che risulti semplice identificare gli Stati che si applicano a e le coppie.  
   
--   **Colore i valori (o scure):** necessari per ogni tema colorato. Creare sempre sfondo e testo i valori di colore in coppie. I colori vengono abbinati per sfondo/primo piano in modo che il colore del testo (primo piano) è sempre leggibile il colore di sfondo in cui disegnarlo. Tali colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non è previsto per l'uso con il testo, non si definisce un colore di primo piano.  
+-   **I valori di colore (o scure):** Necessaria per ogni tema colorato. Creare sempre sfondo e testo i valori di colore in coppie. I colori vengono abbinati per sfondo/primo piano in modo che il colore del testo (primo piano) è sempre leggibile il colore di sfondo in cui disegnarlo. Tali colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non è previsto per l'uso con il testo, non si definisce un colore di primo piano.  
   
--   **Nome di colore di sistema:** per l'uso nelle visualizzazioni a contrasto elevato.  
+-   **Nome di colore di sistema:** Per l'uso nelle visualizzazioni a contrasto elevato.  
   
 ## <a name="how-to-use-the-tool"></a>Come usare lo strumento  
  Quanto più possibile, e laddove appropriato, i colori di Visual Studio esistenti devono essere riutilizzati anziché lasciare che quelli nuovi. Tuttavia, per i casi in cui non sono definiti colori appropriati, colori personalizzati devono essere creati per mantenere un'applicazione di temi estensione compatibile.  
@@ -54,7 +53,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
 5. Testare le modifiche in Visual Studio.  
   
-   **Passaggio 1: Determinare la categoria e i nomi di token per il nuovo token di colore.**  
+   **Passaggio 1: Determinare i nomi di categoria e il token per il nuovo token di colore.**  
   
    La denominazione preferita schema per è un VSColor **[Category] [tipo di interfaccia utente] [stato]**. Non usare la parola "color" nei nomi VSColor, perché è ridondante.  
   
@@ -126,7 +125,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
   Per i componenti che non sono necessario per visualizzare il testo, immettere il valore di un solo colore: il colore di sfondo. In caso contrario, immettere i valori per il colore di sfondo e di testo, separato da una barra rovesciata.  
   
-  Quando si immettono valori per il contrasto elevato, immettere i nomi dei colori di sistema Windows validi. Non immettere valori ARGB hardcoded. È possibile visualizzare un elenco di nomi di colori di sistema valido selezionando "Sfondo: sistema" o "In primo piano: sistema" dai menu a discesa valore colore. Durante la creazione di elementi che contengono componenti di testo, usare la coppia di colore di sistema in background/testo corretto o potrebbe essere Impossibile leggere il testo.  
+  Quando si immettono valori per il contrasto elevato, immettere i nomi dei colori di sistema Windows validi. Non immettere valori ARGB hardcoded. È possibile visualizzare un elenco di nomi di colori di sistema valido selezionando "in Background: System"o" in primo piano: Sistema"dai menu a discesa valore colore. Durante la creazione di elementi che contengono componenti di testo, usare la coppia di colore di sistema in background/testo corretto o potrebbe essere Impossibile leggere il testo.  
   
   Dopo la creazione, l'impostazione e modifica i token di colore, salvarle nel formato con estensione pkgdef o. XML desiderato. I token di colore con uno sfondo a nessuno dei due né un set di primo piano verrà salvato come colori vuoti in formato XML, ma eliminato, con formato con estensione pkgdef. Una finestra di dialogo avviserà l'utente della potenziale perdita di colore se si prova a salvare colori vuoti in un file con estensione pkgdef.  
   

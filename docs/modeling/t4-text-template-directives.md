@@ -15,13 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c01bea709d551e970ed8c44ec861ff348c7081ad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3bf8248a7a68b914d6276e3e6f37261fb6137efc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939252"
 ---
 # <a name="t4-text-template-directives"></a>Direttive di modello di testo T4
 Le direttive forniscono istruzioni al motore di trasformazione del modello di testo.
@@ -71,4 +70,4 @@ Le direttive forniscono istruzioni al motore di trasformazione del modello di te
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
- È inoltre possibile creare direttive personalizzate. Per ulteriori informazioni, vedere [creazione personalizzata T4 testo modello processori di direttive](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.
+ È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.

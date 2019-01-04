@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: gestire una raccolta privata mediante le impostazioni del Registro di sistema | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Gestire una raccolta privata mediante le impostazioni del Registro di sistema | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986973"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: gestire una raccolta privata mediante le impostazioni del Registro di sistema
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: Gestire una raccolta privata mediante le impostazioni del Registro di sistema
 Se sei un amministratore o lo sviluppatore di un'estensione della Shell isolata, è possibile controllare l'accesso per i controlli, modelli e strumenti di Visual Studio Gallery, la raccolta di esempi o raccolte private. Per configurare una raccolta disponibile o non disponibile, creare un *pkgdef* file che descrive le chiavi del Registro di sistema modificato e i relativi valori.  
   
 ## <a name="manage-private-galleries"></a>Gestire raccolte private  
@@ -29,7 +26,7 @@ Se sei un amministratore o lo sviluppatore di un'estensione della Shell isolata,
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  

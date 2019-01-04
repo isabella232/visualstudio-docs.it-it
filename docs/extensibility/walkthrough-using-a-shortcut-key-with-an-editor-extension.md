@@ -1,9 +1,6 @@
 ---
 title: "Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'Editor | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953011"
 ---
-# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'editor
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Usare i tasti di scelta rapida con un'estensione dell'editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. Procedura dettagliata illustra come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo tramite un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo usando il carattere +.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -80,7 +77,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
 3.  La classe denominata KeyBindingCommandFilter deve ereditare da <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  Aggiungere campi privati per la visualizzazione di testo, il comando successivo nella catena di comando e un flag che rappresentano se è già stato aggiunto il filtro di comando.  
@@ -88,8 +85,8 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  Aggiungere un costruttore che imposta la visualizzazione di testo.  

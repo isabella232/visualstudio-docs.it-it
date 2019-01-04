@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: localizzare il codice | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Localizzare il codice | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d170906a66ffaaa0e73d4d7d236c8f41290abe55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990792"
 ---
-# <a name="how-to-localize-code"></a>Procedura: localizzare il codice
+# <a name="how-to-localize-code"></a>Procedura: Localizzare il codice
   Codice non localizzato Usa i valori di stringa hardcoded. Per localizzare le stringhe di codice, sostituirli con chiamate a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, ovvero un metodo che fa riferimento a risorse localizzate.  
   
 ## <a name="localize-code"></a>Localizzare il codice  
@@ -75,7 +70,6 @@ ms.locfileid: "37119173"
   
 ## <a name="see-also"></a>Vedere anche
  [Localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Procedura: localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)   
- [Procedura: localizzare il markup ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Procedura: aggiungere un file di risorse](../sharepoint/how-to-add-a-resource-file.md)  
-
+ [Procedura: Localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)   
+ [Procedura: Localizzare il markup ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Procedura: Aggiungere un file di risorse](../sharepoint/how-to-add-a-resource-file.md)  

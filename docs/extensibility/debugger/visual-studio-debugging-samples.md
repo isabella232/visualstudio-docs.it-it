@@ -1,9 +1,6 @@
 ---
 title: Esempi di debug di Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - sample applications [Debugging SDK]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c422dc47ab7bf74c4a16e81efb4ed85d6b87b520
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3eb2fd3e5e2c6c7e2c3e43a8caaf52fa6e4cc7d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960404"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
 Due esempi mostrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

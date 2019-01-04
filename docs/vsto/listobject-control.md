@@ -1,9 +1,6 @@
 ---
 title: ListObject (controllo)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945184"
 ---
 # <a name="listobject-control"></a>ListObject (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> è un elenco che espone gli eventi e può essere associato a dati. Quando si aggiunge un elenco a un foglio di lavoro, Visual Studio crea un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> su cui è possibile programmare direttamente senza dover passare attraverso il modello a oggetti di Microsoft Office Excel.  
@@ -34,7 +31,7 @@ ms.locfileid: "35672759"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>Creare il controllo  
- Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli ai fogli di lavoro solo in fase di esecuzione. Per altre informazioni, vedere [procedura: aggiungere ListObject i controlli ai fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli ai fogli di lavoro solo in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -49,7 +46,7 @@ ms.locfileid: "35672759"
   
  Poiché i dati sono separati rispetto all'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject>, è necessario aggiungere e rimuovere dati tramite il set di dati associato e non direttamente tramite <xref:Microsoft.Office.Tools.Excel.ListObject>. Se i dati nel set di dati associato vengono aggiornati con qualsiasi meccanismo, il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> rispecchia automaticamente le modifiche. Per altre informazioni, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- È possibile riempire rapidamente un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associando <xref:Microsoft.Office.Tools.Excel.ListObject> a un'origine dati. Se si modificano i dati in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject>associato a dati, le modifiche vengono apportate automaticamente anche all'origine dati. Se si vuole riempire un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> e quindi consentire all'utente di modificare i dati in <xref:Microsoft.Office.Tools.Excel.ListObject> senza modificare l'origine dati, è possibile usare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> per scollegare <xref:Microsoft.Office.Tools.Excel.ListObject> dall'origine dati. Per altre informazioni, vedere [procedura: riempire ListObject controlla i dati](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ È possibile riempire rapidamente un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associando <xref:Microsoft.Office.Tools.Excel.ListObject> a un'origine dati. Se si modificano i dati in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject>associato a dati, le modifiche vengono apportate automaticamente anche all'origine dati. Se si vuole riempire un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> e quindi consentire all'utente di modificare i dati in <xref:Microsoft.Office.Tools.Excel.ListObject> senza modificare l'origine dati, è possibile usare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> per scollegare <xref:Microsoft.Office.Tools.Excel.ListObject> dall'origine dati. Per altre informazioni, vedere [Procedura: Riempire controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 > [!NOTE]  
 >  Il data binding non è supportato nei controlli <xref:Microsoft.Office.Tools.Excel.ListObject> sovrapposti.  
@@ -58,7 +55,7 @@ ms.locfileid: "35672759"
  La lettura di un file XML in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati tende a essere lenta se si associa prima il controllo e quindi si chiama <xref:System.Data.DataSet.ReadXml%2A> per riempire il set di dati. Per migliorare le prestazioni, chiamare <xref:System.Data.DataSet.ReadXml%2A> prima di associare il controllo.  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>Disconnessione di controlli ListObject dall'origine dati  
- Dopo aver riempito un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> con dati associandolo a un'origine dati, è possibile disconnetterlo affinché le modifiche apportate ai dati nell'oggetto elenco non influiscano sull'origine dati. Per altre informazioni, vedere [procedura: riempire ListObject controlla i dati](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Dopo aver riempito un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> con dati associandolo a un'origine dati, è possibile disconnetterlo affinché le modifiche apportate ai dati nell'oggetto elenco non influiscano sull'origine dati. Per altre informazioni, vedere [Procedura: Riempire controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 ### <a name="restore-column-and-row-order"></a>Ripristinare l'ordine delle righe e colonne  
  Quando si associano dati a un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> che è stato aggiunto a un documento in fase di progettazione, Visual Studio tiene traccia dell'ordine delle righe e delle colonne ogni volta che la cartella di lavoro viene salvata. Se un utente si sposta il <xref:Microsoft.Office.Tools.Excel.ListObject> colonne o righe durante la fase di esecuzione, il nuovo ordine verrà conservato alla successiva apertura della cartella di lavoro e <xref:Microsoft.Office.Tools.Excel.ListObject> controllo viene associato all'origine dati anche in questo caso.  
@@ -72,7 +69,7 @@ ms.locfileid: "35672759"
  Manualmente è possibile aggiungere o rimuovere colonne in un controllo con associazione a dati <xref:Microsoft.Office.Tools.Excel.ListObject> controllo in fase di esecuzione. Se un utente finale tenta di eliminare una colonna, si viene immediatamente ripristinato e le eventuali colonne aggiunte vengono rimosse. È quindi importante scrivere codice per spiegare agli utenti perché non possono eseguire queste azioni su un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati. Visual Studio fornisce diversi eventi su un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> correlati al data binding. Ad esempio, si può usare l'evento <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> per avvertire gli utenti che i dati che hanno tentato di eliminare non possono essere eliminati e sono stati ripristinati.  
   
 ## <a name="add-and-remove-rows-at-runtime"></a>Aggiungere e rimuovere le righe in fase di esecuzione  
- È possibile aggiungere e rimuovere righe manualmente in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati, purché l'origine dati consenta di aggiungere nuove righe e non sia di sola lettura. È possibile scrivere codice per eventi come <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> per convalidare i dati. Per altre informazioni, vedere [procedura: convalidare dati quando viene aggiunta una nuova riga a un controllo ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ È possibile aggiungere e rimuovere righe manualmente in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati, purché l'origine dati consenta di aggiungere nuove righe e non sia di sola lettura. È possibile scrivere codice per eventi come <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> per convalidare i dati. Per altre informazioni, vedere [Procedura: Convalidare i dati quando viene aggiunta una nuova riga a un controllo ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  In alcuni casi la relazione tra l'oggetto elenco e l'origine dati provoca errori di routine. Ad esempio, è possibile mappare le colonne da visualizzare in <xref:Microsoft.Office.Tools.Excel.ListObject>, quindi se si omettono le colonne con restrizioni, ad esempio un campo che non accetta valori null, vengono generati errori ogni volta che viene creata una riga. È possibile scrivere codice per aggiungere i valori mancanti in un gestore eventi per l'evento <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> .  
   
@@ -112,17 +109,15 @@ ms.locfileid: "35672759"
   
 ## <a name="see-also"></a>Vedere anche  
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
- [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Procedura: ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Procedura: convalidare dati quando viene aggiunta una nuova riga a un controllo ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Procedura: colonne di mappa ListObject ai dati](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Procedura: controlli riempimento ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Procedura: Aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Procedura: Ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Procedura: Convalidare i dati quando viene aggiunta una nuova riga a un controllo ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Procedura: Eseguire il mapping delle colonne ListObject ai dati](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Procedura: Riempire controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)   
  [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Procedura: popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Procedura: Popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

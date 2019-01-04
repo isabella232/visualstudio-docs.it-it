@@ -1,9 +1,6 @@
 ---
-title: Supporto di controllo del codice sorgente | Documenti Microsoft
-ms.custom: ''
+title: Supporto di controllo del codice sorgente | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
@@ -13,48 +10,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ae3590a5d02c2b3f1d4b67f724d0177f671f7d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 523c7de972958eff9224896d3a59543163eb7b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936815"
 ---
-# <a name="supporting-source-control"></a>Supporto di controllo del codice sorgente
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta file estrazioni archiviazioni e altre operazioni di controllo per il progetto o un editor. Come un client di controllo del codice sorgente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è progettato per interagire con un pacchetto di controllo di origine, ad esempio [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], che fornisce l'archiviazione, il controllo delle versioni e funzionalità di controllo per un set di file definito dinamicamente.  
+# <a name="supporting-source-control"></a>Supporto del controllo del codice sorgente
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta estrazioni di file, le archiviazioni e altre operazioni di controllo per il progetto o un editor. Come un client, controllo codice sorgente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è progettato per interagire con un pacchetto di controllo del codice sorgente, ad esempio [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], che fornisce l'archiviazione, il controllo delle versioni e funzionalità di controllo per un set di file definito dinamicamente.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Modello per i pacchetti del controllo del codice sorgente](../../extensibility/internals/model-for-source-control-packages.md)  
- Vengono descritte le interfacce di un tipo di progetto deve implementare per supportare controllo del codice sorgente.  
+ Vengono descritte le interfacce deve implementare un tipo di progetto per il supporto di controllo del codice sorgente.  
   
- [Decisioni di progettazione](../../extensibility/internals/source-control-design-decisions.md)  
- Fornisce le domande cui risposte modifica modalità di implementazione di un tipo di progetto.  
+ [Decisioni sulla progettazione](../../extensibility/internals/source-control-design-decisions.md)  
+ Fornisce le domande con risposte cambiare modalità di implementazione un tipo di progetto.  
   
- [Dettagli di configurazione](../../extensibility/internals/source-control-configuration-details.md)  
- Viene descritto come supporto di controllo del codice sorgente cambia l'implementazione di un tipo di progetto.  
+ [Dettagli configurazione](../../extensibility/internals/source-control-configuration-details.md)  
+ Viene descritto il supporto di controllo del codice sorgente come cambia l'implementazione di un tipo di progetto.  
   
- [Ulteriori linee guida per gli editor e progetti](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
- Illustra le procedure consigliate per i tipi di progetto e di editor.  
+ [Linee guida aggiuntive per progetti ed editor](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
+ Illustra le procedure consigliate per i tipi di progetto ed editor.  
   
- [Dettagli di runtime](../../extensibility/internals/source-control-runtime-details.md)  
+ [Dettagli del runtime](../../extensibility/internals/source-control-runtime-details.md)  
  Viene descritto come registrare un progetto quando un utente viene aggiunto a un sistema di controllo del codice sorgente.  
   
 ## <a name="reference"></a>Riferimenti  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- Indica all'ambiente o pacchetto di controllo di origine che un file sta per essere modificato in memoria o salvata.  
+ Indica all'ambiente o pacchetto controllo del codice sorgente che un file sta per essere modificato in memoria o salvato.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- Consente di progetti e le gerarchie di registrarsi con controllo del codice sorgente e ottenere informazioni sullo stato di controllo di origine.  
+ Consente ai progetti e le gerarchie di registrarsi con controllo del codice sorgente e ottenere informazioni sullo stato di controllo di origine.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- Implementata in un sistema di progetto per fornire il codice sorgente per il file di progetto e gli elementi di progetto.  
+ Implementata in un sistema di progetto per fornire controllo del codice sorgente per i file di progetto ed elementi del progetto.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- Utilizzato dai progetti per l'ambiente per l'autorizzazione aggiungere, rimuovere o rinominare un file o directory in una soluzione di query.  
+ Utilizzato dai progetti per l'ambiente per l'autorizzazione per aggiungere, rimuovere o rinominare un file o directory in una soluzione di query.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
- Notifica ai client delle modifiche apportate al file di progetto o directory.  
+ Notifica ai client le modifiche apportate ai file di progetto o alle directory.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
- Fornisce una panoramica dei progetti come blocchi predefiniti di base di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Vengono forniti collegamenti ad argomenti aggiuntivi che illustrano come progetti consentono di controllare la creazione e compilazione di codice.
+ Viene fornita una panoramica di progetti come blocchi predefiniti di base del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Vengono forniti collegamenti ad argomenti aggiuntivi che illustrano come progetti consentono di controllare la creazione e compilazione di codice.

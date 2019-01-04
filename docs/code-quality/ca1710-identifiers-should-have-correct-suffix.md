@@ -2,7 +2,6 @@
 title: 'CA1710: Gli identificatori devono contenere il suffisso corretto'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263870511715757c8771b0b596e443d82be91525
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944710"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Gli identificatori devono contenere il suffisso corretto
 
@@ -95,7 +94,7 @@ Per altri suffissi, non escludere un avviso da questa regola. Il suffisso consen
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1711: Gli identificatori non devono contenere un suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: Gli identificatori non devono contenere il suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
 

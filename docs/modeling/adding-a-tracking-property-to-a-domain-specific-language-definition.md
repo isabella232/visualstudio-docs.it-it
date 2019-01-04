@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946042"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -719,7 +718,7 @@ Aggiungere codice per supportare il comportamento postcaricamento personalizzato
 
 Il passaggio successivo è compilare ed eseguire la finestra di progettazione DSL in una nuova istanza della [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in modo che sia possibile verificare che funzioni correttamente, la proprietà di rilevamento.
 
-1. Nel **compilare** menu, fare clic su **Ricompila soluzione**.
+1. Nel menu **Compila** fare clic su **Ricompila soluzione**.
 
 2. Scegliere **Avvia debug** dal menu **Debug**.
 
@@ -762,4 +761,4 @@ Se si prevede di usare rilevamento più di una proprietà o implementare proprie
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Procedura: Creare una soluzione per un linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Procedura: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md)
