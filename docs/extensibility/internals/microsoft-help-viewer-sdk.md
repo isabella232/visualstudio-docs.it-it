@@ -1,9 +1,6 @@
 ---
 title: Microsoft Help Viewer SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987051"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -142,7 +139,7 @@ Il corpo (senza includere l'intestazione e piè di pagina) dell'argomento contie
 
 4.  Aggiungere un frammento di codice:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Aggiungere testo specifico del linguaggio del codice: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` si noti che `devLangnu=` consente di immettere altri linguaggi. Ad esempio, `devLangnu="Fortran"` Visualizza Fortran quando il frammento di codice DisplayLanguage = Fortran
+5.  Aggiungere testo specifico del linguaggio del codice:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Si noti che `devLangnu=` consente di immettere altri linguaggi. Ad esempio, `devLangnu="Fortran"` Visualizza Fortran quando il frammento di codice DisplayLanguage = Fortran
 
 6.  Aggiungere collegamenti della pagina: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -285,11 +282,11 @@ Quando l'origine del contenuto della Guida predefinito Help Viewer è impostata 
 
 -   Le funzionalità di Visual Studio Partner (VSP) generano un valore per il contenitore delle proprietà F1 (prefix.keyword contenitore delle proprietà e l'URL in linea per il prefisso trovato nel Registro di sistema): F1 invia un URL VSP + parametri al browser.
 
--   Funzionalità di Visual Studio (editor di linguaggio, voci di menu specifiche di Visual Studio e così via): F1 invia un URL di Visual Studio al browser.
+-   Funzionalità di Visual Studio (editor di linguaggio, voci di menu specifiche di Visual Studio e così via):  F1 invia un URL di Visual Studio al browser.
 
 Quando l'origine del contenuto della Guida predefinito Help Viewer è impostata su Guida locale (Avvia in Help Viewer):
 
--   Funzionalità VSP in cui parola chiave corrispondenti tra il contenitore delle proprietà F1 e indice dell'archivio locale (vale a dire il prefix.keyword contenitore delle proprietà = valore trovato nell'indice archivio locale): F1 esegue il rendering di argomento nel Visualizzatore della Guida.
+-   Funzionalità VSP in cui parola chiave corrispondenti tra il contenitore delle proprietà F1 e indice dell'archivio locale (vale a dire il prefix.keyword contenitore delle proprietà = valore trovato nell'indice archivio locale):  F1 esegue il rendering di argomento nel Visualizzatore della Guida.
 
 -   Funzionalità di Visual Studio (alcuna opzione per eseguire l'override di contenitore di proprietà generato dalla funzionalità di Visual Studio VSP): F1 esegue il rendering di un argomento di Visual Studio nel Visualizzatore della Guida.
 
@@ -325,7 +322,7 @@ Impostare i valori del Registro di sistema seguenti per abilitare F1 Fallback pe
 
 **Basare l'analisi nativa Namespace**
 
-Per abilitare l'analisi di base dello spazio dei nomi nativo, nel Registro di sistema aggiungere un nuovo valore DWORD dal nome del: BaseNativeNamespaces e impostarne il valore su 1 (sotto la chiave di catalogo che desiderano supportare).  Ad esempio, se si desidera usare il catalogo di Visual Studio, è Impossibile aggiungere la chiave nel percorso:
+Per abilitare l'analisi di spazio dei nomi nativo base, aggiungere un nuovo valore DWORD dal nome nel Registro di sistema: BaseNativeNamespaces e impostarne il valore su 1 (sotto la chiave di catalogo che desiderano supportare).  Ad esempio, se si desidera usare il catalogo di Visual Studio, è Impossibile aggiungere la chiave nel percorso:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ Un utente quindi possibile registrare CustomLibrary come lo spazio dei nomi nell
 
 Aggiungere la seguente chiave del Registro di sistema e il valore:
 
-Chiave della Guida HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Output di Debug visualizzato nel valore delle vendite al dettaglio: Sì
+Chiave della Guida HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Output di Debug visualizzato nel valore delle vendite al dettaglio: SÌ
 
 Nell'IDE, sotto la voce di menu della Guida, selezionare "Debug contesto Guida in linea"
 
@@ -374,7 +371,7 @@ La versione di Visual Studio include un numero di diversi prodotti Visual Studio
 
 Personalizzazione dei pacchetti vengono installati per il prodotto che contiene il Visualizzatore della Guida.  Per i prodotti Visual Studio:
 
--   Un pacchetto di personalizzazione di fallback (Branding_\<delle impostazioni locali > mshc) viene installato nella directory radice dell'app di Guida Viewer 2.3 (esempio: C:\Program Files (x86) \Microsoft Help Viewer\v2.3) per il language pack di Help Viewer.  Viene utilizzato per i casi in cui entrambi il prodotto della personalizzazione del pacchetto non è installato (nessun contenuto è stato installato) o in cui il pacchetto di personalizzazione installato è danneggiato.  Gli elementi di Visual Studio (logo e commenti e suggerimenti) vengono ignorati quando viene usato il pacchetto dell'app principale fallback della personalizzazione.
+-   Un pacchetto di personalizzazione di fallback (Branding_\<delle impostazioni locali >. mshc) viene installato nella directory radice dell'app di Guida Viewer 2.3 (esempio: C:\Programmi\Microsoft file (x86) \Microsoft Help Viewer\v2.3) per il language pack di Help Viewer.  Viene utilizzato per i casi in cui entrambi il prodotto della personalizzazione del pacchetto non è installato (nessun contenuto è stato installato) o in cui il pacchetto di personalizzazione installato è danneggiato.  Gli elementi di Visual Studio (logo e commenti e suggerimenti) vengono ignorati quando viene usato il pacchetto dell'app principale fallback della personalizzazione.
 
 -   Quando il contenuto di Visual Studio viene installato dal servizio di pacchetto di contenuto, viene installato anche un pacchetto del marchio (per il primo scenario di installazione del contenuto di tempo).  Se è presente un aggiornamento per il pacchetto di personalizzazione, l'aggiornamento viene installato quando si verifica il successivo aggiornamento del contenuto o l'azione di installazione del pacchetto aggiuntivi.
 
@@ -445,7 +442,7 @@ Nota: le variabili indicate da "{n}" sono le dipendenze del codice, rimozione o 
 | ExpandText | Expand |
 | CollapseText | Comprimi |
 | Funzionalità: | **CodeSnippet** |
-| Utilizza: | Testo del controllo dei frammenti di codice.  Nota: Contenuto di frammento di codice con spazio "Non sostanziale" verrà modificato in spazio. |
+| Utilizza: | Testo del controllo dei frammenti di codice.  Nota: Contenuto frammento di codice con spazio "Non sostanziale" verrà modificato per lo spazio. |
 | **Elemento** | **Valore** |
 | CopyToClipboard | Copia negli Appunti |
 | ViewColorizedText | Visualizza colorati |
@@ -615,7 +612,7 @@ Il nome del MSHA, ai fini di queste nozioni di base, è HelpContentSetup. msha (
 
 Nota: nell'esempio di implementazione seguente, è stato incluso il pacchetto di personalizzazione. Questo è fondamentale da includere per ottenere i necessari elementi di rendering del contenuto di Visual Studio e i comportamenti del contenuto.
 
-File helpcontentsetup esempio: (sostituire "nome 1 set di contenuto" e "content set nome 2" e così via con nomi di file.)
+File helpcontentsetup. msha di esempio: (Sostituire "nome 1 set di contenuto" e "content set nome 2" e così via con nomi di file.)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Definire l'archivio del contenuto nel Registro di sistema. Per la Shell integrat
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   Chiave: Valore di stringa LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   Legenda: Valore stringa LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-us
 
-   Chiave: Valore di stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentazione
+   Legenda: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione
 
 **Creare il progetto**
 
@@ -806,7 +803,7 @@ Per testare questo come se distribuita:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-Stati Uniti
 
-    Chiave: Valore di stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentazione. Per ISO Shell, si tratta del nome del catalogo.
+    Legenda: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione. Per ISO Shell, si tratta del nome del catalogo.
 
 8. Copiare il contenuto (file CAB o MSHC e MSHA) in una cartella locale.
 

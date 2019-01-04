@@ -1,9 +1,6 @@
 ---
 title: Tipo di carattere e colore Panoramica | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966496"
 ---
 # <a name="font-and-color-overview"></a>Panoramica di carattere e colori
 Questo argomento vengono illustrate le impostazioni testo di carattere e colori nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Introduce anche i concetti di categorie e di elementi visualizzati e descrive come i pacchetti VSPackage e l'editor principale di utilizzare gli attributi di testo.  
@@ -74,7 +71,7 @@ Questo argomento vengono illustrate le impostazioni testo di carattere e colori 
   
 - La possibilità di entrambi utilizzano gli oggetti di visualizzazione predefinite della **EditorCategory testo** e di estenderle.  
   
-   Per altre informazioni, vedere [procedura: usare elementi colorabili incorporati](../extensibility/internals/how-to-use-built-in-colorable-items.md) e [elementi colorabili personalizzati](../extensibility/internals/custom-colorable-items.md).  
+   Per altre informazioni, vedere [Procedura: Usare elementi colorabili incorporati](../extensibility/internals/how-to-use-built-in-colorable-items.md) e [elementi colorabili personalizzati](../extensibility/internals/custom-colorable-items.md).  
   
 - Salvataggio permanente automatico dell'oggetto corrente dello stato di entrambi incorporati e personalizzati visualizzare gli elementi con il **Editor di testo** categoria.  
   

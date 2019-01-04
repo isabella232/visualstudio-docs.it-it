@@ -1,9 +1,6 @@
 ---
 title: Menu e comandi per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933799"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu e comandi per Visual Studio
 ## <a name="command-usage"></a>Uso del comando  
@@ -52,7 +49,7 @@ ms.locfileid: "49937954"
  È utile posizionare i comandi in stretta vicinanza all'area di interesse dell'utente. Un modo per eseguire questa operazione consiste nel creare una barra degli strumenti incorporata nella parte superiore del documento o finestra degli strumenti editor. I comandi posizionati nella barra degli strumenti devono essere specifici per l'area del contenuto all'interno della finestra. Non corrispondenti a comandi condivisi in queste barre degli strumenti. Mai inserire, ad esempio, un'icona "Salva" all'interno di una barra degli strumenti incorporata.  
   
 ### <a name="content-and-command-visibility"></a>Visibilità del contenuto e comando  
- I comandi presenti negli ambiti seguenti: **ambiente**, **gerarchia**, e **documento**. Conoscere ogni ambito per avere la certezza di posizionamento del comando.  
+ I comandi sono disponibili negli ambiti seguenti: **Ambiente**, **gerarchia**, e **documento**. Conoscere ogni ambito per avere la certezza di posizionamento del comando.  
   
  I comandi di **ambiente** ambito stabilire contesto principale e vengono condivise tra più contesti. Modificano la visibilità o la disposizione dei documenti e finestre degli strumenti. Tra i comandi nell'ambiente di ambito sono **nuovo progetto**, **Connetti al Server**, **Connetti processo**, **Taglia**,  **Copia**, **incollare**, **trovare**, **opzioni**, **personalizzare**, **nuova finestra**, e **visualizzare la Guida**.  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937954"
   
 - **Attenersi alle linee guida di Windows per determinare quali modificatore tasti da adottare.** Usare le combinazioni di tasti Ctrl per i comandi che hanno effetti su larga scala, ad esempio i comandi che si applicano a un intero documento. Usare le combinazioni di tasti MAIUSC per i comandi che estendono o integrano le azioni del tasto di scelta rapida standard. Non usare le combinazioni di Ctrl + Alt.  
   
-- **Rimuovere i collegamenti estranei.** Se si dispone di una funzionalità legacy, provare a rimuovere i collegamenti che vengono usati con estrema infrequency (meno di 10 volte dai dati di analisi utilizzo software) o con gravità moderata infrequency (meno di 100 volte dai dati di analisi utilizzo software) se una chiave di accesso consente di accedere rapidamente al comando stesso. Ad esempio: C Alt, H, verrà aperto il sommario della Guida /.  
+- **Rimuovere i collegamenti estranei.** Se si dispone di una funzionalità legacy, provare a rimuovere i collegamenti che vengono usati con estrema infrequency (meno di 10 volte dai dati di analisi utilizzo software) o con gravità moderata infrequency (meno di 100 volte dai dati di analisi utilizzo software) se una chiave di accesso consente di accedere rapidamente al comando stesso. Ad esempio: C ALT, H, verrà aperto il sommario della Guida /.  
   
   Non esiste un modo semplice per verificare la disponibilità di scelta rapida. Se si desidera aggiungere un collegamento, seguire questa procedura:  
   

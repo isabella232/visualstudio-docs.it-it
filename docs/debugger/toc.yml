@@ -20,11 +20,11 @@ items:
 - name: Esercitazioni
   items:
   - name: Informazioni su come eseguire il debug di C#
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Informazioni su come eseguire il debug di C#++
     href: getting-started-with-the-debugger-cpp.md
   - name: Informazioni su come eseguire il debug di Visual Basic
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Esecuzione del codice Python nel debugger...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Eseguire il debug di un'app Azure attiva
@@ -189,7 +189,7 @@ items:
           href: how-to-debug-from-a-dll-project.md
         - name: Eseguire il debug in modalità mista
           href: how-to-debug-in-mixed-mode.md
-      - name: 'Preparazione al debug: progetti console'
+      - name: 'Debug della preparazione: Progetti di console'
         href: debugging-preparation-console-projects.md
       - name: Eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio
         href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -214,9 +214,9 @@ items:
         items:
         - name: Architettura del visualizzatore
           href: visualizer-architecture.md
-        - name: 'Procedura dettagliata: scrivere un visualizzatore in C#'
+        - name: 'Procedura dettagliata: Scrivere un visualizzatore in C#'
           href: walkthrough-writing-a-visualizer-in-csharp.md
-        - name: 'Procedura dettagliata: scrivere un visualizzatore in Visual Basic'
+        - name: 'Procedura dettagliata: Scrivere un visualizzatore in Visual Basic'
           href: walkthrough-writing-a-visualizer-in-visual-basic.md
         - name: Installare un visualizzatore
           href: how-to-install-a-visualizer.md
@@ -265,7 +265,7 @@ items:
       - name: Accertarsi che DNS sia correttamente configurato nel computer di destinazione
         href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
       - name: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.
-        href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
+        href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
       - name: Impossibile connettersi al Remote Debugging Monitor di Microsoft Visual Studio
         href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
       - name: Impossibile iniziare la comunicazione DCOM
@@ -314,9 +314,9 @@ items:
         href: how-to-use-the-gpu-threads-window.md
     - name: Eseguire il debug di più processi
       href: debug-multiple-processes.md
-    - name: 'Procedura dettagliata: eseguire il debug con la finestra Thread'
+    - name: 'Procedura dettagliata: Eseguire il debug con la finestra Thread'
       href: how-to-use-the-threads-window.md
-    - name: "Procedura dettagliata: eseguire il debug di un'applicazione parallela"
+    - name: "Procedura dettagliata: Debug di un'applicazione parallela"
       href: walkthrough-debugging-a-parallel-application.md
     - name: Passare a un altro thread durante il debug
       href: how-to-switch-to-another-thread-while-debugging.md
@@ -408,14 +408,14 @@ items:
     - name: Eseguire il debug del codice gestito
       href: debugging-managed-code.md
       items:
-      - name: 'Preparazione al debug: tipi di progetto C#, F# e Visual Basic'
+      - name: 'Debug della preparazione: Tipi di progetto C#, F# e Visual Basic'
         href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
         items:
-        - name: 'Debug gestito: impostazioni consigliate delle proprietà'
+        - name: 'Debug gestito: Impostazioni consigliate delle proprietà'
           href: managed-debugging-recommended-property-settings.md
-        - name: 'Preparazione al debug: Windows Forms Application'
+        - name: 'Debug della preparazione: applicazioni Windows Form'
           href: debugging-preparation-windows-forms-applications.md
-        - name: 'Preparazione al debug: servizi Windows'
+        - name: 'Debug della preparazione: Servizi Windows'
           href: debugging-preparation-windows-services.md
       - name: Inviare messaggi alla finestra di output
         href: diagnostic-messages-in-the-output-window.md
@@ -423,7 +423,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Istruzioni Stop in Visual Basic
         href: stop-statements-in-visual-basic.md
-      - name: 'Procedura dettagliata: debug di un Windows Form'
+      - name: 'Procedura dettagliata: Debug di un Windows Form'
         href: walkthrough-debugging-a-windows-form.md
       - name: Eseguire il debug del metodo OnStart
         href: how-to-debug-the-onstart-method.md
@@ -449,7 +449,7 @@ items:
     - name: Eseguire il debug di codice nativo
       href: debugging-native-code.md
       items:
-      - name: 'Preparazione al debug: tipi di progetto Visual C++'
+      - name: 'Debug della preparazione: Tipi di progetto Visual C++'
         href: debugging-preparation-visual-cpp-project-types.md
       - name: Eseguire il debug di codice ottimizzato
         href: how-to-debug-optimized-code.md
@@ -546,14 +546,14 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: Eseguire il debug di applicazioni Web distribuite
         href: debugging-deployed-web-applications.md
-      - name: 'Procedura dettagliata: debug di un Web Form'
+      - name: 'Procedura dettagliata: Debug di un Web Form'
         href: walkthrough-debugging-a-web-form.md
       - name: Eseguire il debug di eccezioni ASP.NET
         href: how-to-debug-aspnet-exceptions.md
-      - name: 'Eseguire il debug di applicazioni Web: errori e risoluzione dei problemi'
+      - name: 'Eseguire il debug di applicazioni Web: Errori e risoluzione dei problemi'
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: 'Eseguire il debug di applicazioni Web: risoluzione dei problemi'
+        - name: 'Eseguire il debug di applicazioni Web: Risoluzione dei problemi'
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: Verificare le impostazioni delle proprietà IIS
@@ -588,7 +588,7 @@ items:
         - name: Associare a script
           href: how-to-attach-to-script.md
           items:
-          - name: 'Avviso: debug degli script disabilitato'
+          - name: 'Avviso: Debug degli script disabilitato'
             href: warning-script-debugging-disabled.md
     - name: Eseguire il debug di servizi WCF
       href: debugging-wcf-services.md
@@ -679,9 +679,9 @@ items:
         href: error-user-could-not-execute-stored-procedure-sp-enable-sql-debug.md
       - name: La condivisione di file di Windows è stata configurata...
         href: error-windows-file-sharing-has-been-configured-dot-dot-dot.md
-      - name: 'Avviso di sicurezza: la connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo'
+      - name: 'Avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo'
         href: security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md
-      - name: 'Avviso di sicurezza: il debugger deve eseguire un comando non attendibile'
+      - name: 'Avviso di sicurezza: Il debugger deve eseguire un comando non attendibile'
         href: security-warning-debugger-must-execute-untrusted-command.md
       - name: Avviso di sicurezza del server di origine
         href: source-server-security-alert.md
@@ -840,9 +840,9 @@ items:
   items:
   - name: Novità relative al debugger di Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947478"

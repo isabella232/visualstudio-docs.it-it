@@ -1,9 +1,6 @@
 ---
 title: Panoramica delle parti XML personalizzata
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b0cc9e30cbc55164e8ee993930c6d5fca639a318
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942443"
 ---
 # <a name="custom-xml-parts-overview"></a>Panoramica delle parti XML personalizzata
   È possibile incorporare i dati XML nei documenti per alcune applicazioni di Microsoft Office. Quando si incorporano i dati XML in un documento, i dati vengono denominati una *parte XML personalizzata*.  

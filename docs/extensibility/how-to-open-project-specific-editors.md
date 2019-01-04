@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: aprire gli editor specifici del progetto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aprire Editor specifici del progetto | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45967d2312a7693130126612c7fd052c54e17ce2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934414"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Procedura: aprire gli editor specifici del progetto
+# <a name="how-to-open-project-specific-editors"></a>Procedura: Apri editor specifici del progetto
 Se un file di elemento che viene aperto da un progetto è intrinsecamente associato all'editor specifico per il progetto, il progetto deve aprire il file usando un editor specifico del progetto. Il file non può essere delegato al meccanismo dell'IDE per la selezione di un editor. Ad esempio, invece di usare un editor di bitmap standard, è possibile utilizzare questa opzione dell'editor specifiche del progetto per specificare un editor di bitmap specifico che riconosce le informazioni nel file univoco per il progetto.  
   
  Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodo quando determina che un file deve essere aperto da un progetto specifico. Per altre informazioni, vedere [visualizzare i file usando il comando Apri File](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Usare le linee guida seguenti per implementare il `OpenItem` metodo per il progetto aperto un file usando un editor specifico del progetto.  
@@ -56,5 +53,5 @@ Se un file di elemento che viene aperto da un progetto è intrinsecamente associ
   
 ## <a name="see-also"></a>Vedere anche  
  [Aprire e salvare elementi del progetto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Procedura: aprire gli editor standard](../extensibility/how-to-open-standard-editors.md)   
- [Procedura: aprire gli editor di documenti aperti](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Procedura: Apri editor standard](../extensibility/how-to-open-standard-editors.md)   
+ [Procedura: Aprire gli editor di documenti aperti](../extensibility/how-to-open-editors-for-open-documents.md)

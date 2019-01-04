@@ -1,9 +1,6 @@
 ---
 title: Controllo XmlMappedRange
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9cf21ceda64fe79996e05426a3379972c3c4be33
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f19bf36b145a5f2c1b4e841a96cdd485a0fb6ac1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946704"
 ---
 # <a name="xmlmappedrange-control"></a>Controllo XmlMappedRange
   Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo è un intervallo che viene creato solo quando un elemento dello schema non ripetuto viene eseguito il mapping a una cella in Microsoft Office Excel. Ad esempio, quando il `maxOccurs` attributo di un elemento dello schema è uguale a 1. Dopo che Visual Studio crea l'intervallo mappato XML, è possibile programmare contrastarla direttamente senza dover passare attraverso il modello a oggetti Excel. È possibile eliminare solo un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo all'interno di Excel quando viene rimosso il mapping dell'elemento.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [modo in cui eseguire il mapping di ricerca per categorie: utilizzare XML in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare il mapping XML in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## <a name="bind-data-to-the-control"></a>Associare dati al controllo  
  Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo supporta l'associazione a un singolo campo di dati (data binding semplice). Il <xref:Microsoft.Office.Tools.Excel.ListObject> può controllo supporta l'associazione di dati complessi e viene creato automaticamente quando un elemento ripetuto dello schema è mappato a una cella. Per altre informazioni, vedere [ListObject control](../vsto/listobject-control.md).  
@@ -62,9 +59,7 @@ ms.locfileid: "35673050"
   
 ## <a name="see-also"></a>Vedere anche  
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
- [Procedura: aggiungere controlli XMLMappedRange a fogli di lavoro](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [Procedura: Aggiungere controlli XMLMappedRange a fogli di lavoro](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Procedura: mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [Procedura: Mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

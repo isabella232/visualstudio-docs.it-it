@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667015"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804079"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Uso di R in Visual Studio
 
@@ -33,7 +33,7 @@ Per sperimentare R in Visual Studio:
 
 Usare i collegamenti seguenti per saperne di più sulle funzionalità correlate a R, nonché sulle funzionalità generali di Visual Studio.
 
-| Funzionalità | Descrizione | Documentazione generale su Visual Studio |
+| Funzionalità | Description | Documentazione generale su Visual Studio |
 | --- | --- | --- |
 | [Sistema del progetto di Visual Studio](r-projects-in-visual-studio.md) | È possibile organizzare e gestire i file correlati in una pratica struttura e sfruttare gli utili modelli per elementi quali il codice R, la documentazione R e R Markdown, nonché per le query SQL e le stored procedure. È inoltre possibile sfruttare la funzionalità di [gestione pacchetti](r-package-manager-in-visual-studio.md) e l'[integrazione con SQL Server](integrating-sql-server-with-r.md).  | [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Area di lavoro](r-workspaces-in-visual-studio.md) | RTVS supporta l'associazione ad aree di lavoro locali e remote, consentendo all'utente di sviluppare localmente codice R con set di dati di dimensioni ridotte e quindi di eseguire facilmente tale codice su computer più potenti basati su cloud con set di dati molto più grandi. | N/D |
@@ -43,7 +43,7 @@ Usare i collegamenti seguenti per saperne di più sulle funzionalità correlate 
 | [Finestra interattiva](interactive-repl-for-r-in-visual-studio.md) | Fornisce un'esperienza completa di REPL per R con la possibilità di eseguire facilmente il codice in un file di origine nella finestra interattiva. | N/D |
 | [Visualizzazione dei dati](visualizing-data-with-r-in-visual-studio.md) | La creazione di tracciati è parte integrante dell'esperienza R e RTVS supporta diverse finestre dei tracciati indipendenti, ciascuna delle quali con la propria cronologia e la possibilità di spostare tracciati da una finestra all'altra. I tracciati possono essere salvati in bitmap e file PDF oppure copiati negli Appunti come bitmap o metafile.  | N/D |
 | [Variable Explorer](variable-explorer.md) | Consente di esaminare le variabili in ambiti globali o specifici del pacchetto, con la possibilità di visualizzare tabelle ordinabili ed eseguire l'esportazione in CSV. | N/D |
-| [Debug con funzionalità complete](debugging-r-in-visual-studio.md) | Include l'integrazione con la finestra interattiva. | [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Debug con funzionalità complete](debugging-r-in-visual-studio.md) | Include l'integrazione con la finestra interattiva. | [Debug in Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
 
 Vedere anche [Domande frequenti](faq.md).
 
@@ -53,8 +53,8 @@ Vedere anche [Domande frequenti](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Inviateci i vostri commenti!
 
-1. **Problemi GitHub**: il modo migliore per contattare il team RTVS è [segnalare un problema in GitHub](https://github.com/Microsoft/RTVS/issues) o usare il menu **R Tools** > **Feedback**.
+1. **Problemi di GitHub**: Il modo migliore per contattare il team RTVS è [segnalare un problema in GitHub](https://github.com/Microsoft/RTVS/issues) o usare il menu **R Tools** > **Feedback**.
 
-1. **Invia smile/Invia faccia imbronciata**: il menu **R Tools** > **Feedback** è un modo rapido per inviare commenti e suggerimenti e allegare file di log RTVS per facilitare la diagnosi del problema. I log vengono scritti in *%temp%/RTVSlogs.zip*, nel caso li si voglia inviare separatamente. La registrazione è disabilitata se si è scelto di disattivare la telemetria di Visual Studio durante l'installazione oppure usando il comando di menu **Guida** > **Feedback** > **Impostazioni**.
+1. **Invia smile/Invia faccia imbronciata**: Il menu **R Tools** > **Feedback** è un modo rapido per inviare commenti e suggerimenti e allegare file di log RTVS per facilitare la diagnosi del problema. I log vengono scritti in *%temp%/RTVSlogs.zip*, nel caso li si voglia inviare separatamente. La registrazione è disabilitata se si è scelto di disattivare la telemetria di Visual Studio durante l'installazione oppure usando il comando di menu **Guida** > **Feedback** > **Impostazioni**.
 
-1. **Messaggio di posta elettronica**: è possibile inviare commenti e suggerimenti direttamente al team all'indirizzo *rtvsuserfeedback (at) microsoft.com*.
+1. **Messaggio di posta elettronica**: È possibile inviare commenti e suggerimenti direttamente al team all'indirizzo *rtvsuserfeedback (at) microsoft.com*.

@@ -171,7 +171,7 @@ items:
         href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
       - name: 'CA1002: Non esporre elenchi generici'
         href: ca1002-do-not-expose-generic-lists.md
-      - name: 'Ca1003: Utilizzare istanze di gestori eventi generici'
+      - name: 'CA1003: Usare istanze di gestori eventi generici'
         href: ca1003-use-generic-event-handler-instances.md
       - name: 'CA1004: I metodi generici devono fornire parametri di tipo'
         href: ca1004-generic-methods-should-provide-type-parameter.md
@@ -181,15 +181,15 @@ items:
         href: ca1006-do-not-nest-generic-types-in-member-signatures.md
       - name: 'CA1007: Utilizzare generics dove appropriato'
         href: ca1007-use-generics-where-appropriate.md
-      - name: 'CA1008: Gli enum devono avere valore zero'
+      - name: 'CA1008: Le enumerazioni devono avere valore zero'
         href: ca1008-enums-should-have-zero-value.md
       - name: 'CA1009: Dichiarare correttamente i gestori eventi'
         href: ca1009-declare-event-handlers-correctly.md
       - name: "CA1010: Le raccolte devono implementare un'interfaccia generica"
         href: ca1010-collections-should-implement-generic-interface.md
-      - name: 'CA1011: Considerare il passaggio di tipi di base come parametri'
+      - name: 'CA1011: Provare a passare tipi di base come parametri'
         href: ca1011-consider-passing-base-types-as-parameters.md
-      - name: 'CA1012: I tipi astratti non devono avere costruttori'
+      - name: 'CA1012: I tipi astratti non devono includere costruttori'
         href: ca1012-abstract-types-should-not-have-constructors.md
       - name: "CA1013: Eseguire l'overload dell'operatore \"uguale a\" all'overload degli operatori di addizione e sottrazione"
         href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
@@ -211,13 +211,13 @@ items:
         href: ca1023-indexers-should-not-be-multidimensional.md
       - name: 'CA1024: Utilizzare proprietà dove appropriato'
         href: ca1024-use-properties-where-appropriate.md
-      - name: 'Ca1025: Sostituire gli argomenti ripetitivi con una matrice di parametri'
+      - name: 'CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri'
         href: ca1025-replace-repetitive-arguments-with-params-array.md
       - name: "CA1026: Evitare l'utilizzo di parametri predefiniti"
         href: ca1026-default-parameters-should-not-be-used.md
       - name: 'CA1027: Contrassegnare le enumerazioni con FlagsAttribute'
         href: ca1027-mark-enums-with-flagsattribute.md
-      - name: "CA1028: L'archivio di enum deve essere Int32"
+      - name: "CA1028: Le risorse di archiviazione dell'enumerazione devono essere Int32"
         href: ca1028-enum-storage-should-be-int32.md
       - name: 'CA1030: Utilizzare eventi dove appropriato'
         href: ca1030-use-events-where-appropriate.md
@@ -225,7 +225,7 @@ items:
         href: ca1031-do-not-catch-general-exception-types.md
       - name: 'CA1032: Implementare costruttori di eccezioni standard'
         href: ca1032-implement-standard-exception-constructors.md
-      - name: 'CA1033: I metodi di interfaccia devono essere richiamabili dai tipi figlio'
+      - name: 'CA1033: Deve essere possibile chiamare i metodi di interfaccia dai tipi figlio'
         href: ca1033-interface-methods-should-be-callable-by-child-types.md
       - name: 'CA1034: I tipi annidati non devono essere visibili'
         href: ca1034-nested-types-should-not-be-visible.md
@@ -249,11 +249,11 @@ items:
         href: ca1045-do-not-pass-types-by-reference.md
       - name: "CA1046: Non eseguire l'overload dell'operatore \"uguale a\" per i tipi di riferimento"
         href: ca1046-do-not-overload-operator-equals-on-reference-types.md
-      - name: 'CA1047: Non dichiarare membri protetti nei tipi sealed'
+      - name: 'CA1047: Non dichiarare membri protected nei tipi sealed'
         href: ca1047-do-not-declare-protected-members-in-sealed-types.md
       - name: 'CA1048: Non dichiarare membri virtuali nei tipi sealed'
         href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
-      - name: 'CA1049: I tipi delle risorse native devono essere Disposable'
+      - name: 'CA1049: I tipi delle risorse native devono essere disposable'
         href: ca1049-types-that-own-native-resources-should-be-disposable.md
       - name: 'CA1050: Dichiarare i tipi negli spazi dei nomi'
         href: ca1050-declare-types-in-namespaces.md
@@ -275,7 +275,7 @@ items:
         href: ca1058-types-should-not-extend-certain-base-types.md
       - name: 'CA1059: I membri non devono esporre tipi concreti specifici'
         href: ca1059-members-should-not-expose-certain-concrete-types.md
-      - name: 'CA1060: Spostare P-Invoke nella classe NativeMethods'
+      - name: 'CA1060: Spostare i P/Invoke nella classe NativeMethods'
         href: ca1060-move-p-invokes-to-nativemethods-class.md
       - name: 'CA1061: Non nascondere i metodi di una classe base'
         href: ca1061-do-not-hide-base-class-methods.md
@@ -312,20 +312,20 @@ items:
         href: ca1308-normalize-strings-to-uppercase.md
       - name: 'CA1309: Utilizza StringComparison ordinale'
         href: ca1309-use-ordinal-stringcomparison.md
-      - name: 'CA2101: Specificare il marshalling per argomenti di stringa P-Invoke'
+      - name: 'CA2101: Specificare il marshalling per gli argomenti di stringa P/Invoke'
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-    - name: avvisi di interoperabilità
+    - name: Avvisi di interoperabilità
       href: interoperability-warnings.md
       items:
-      - name: 'CA1400: I punti di ingresso P-Invoke devono esistere'
+      - name: 'CA1400: I punti di ingresso P/Invoke devono esistere'
         href: ca1400-p-invoke-entry-points-should-exist.md
-      - name: 'CA1401: I P-Invoke non devono essere visibili'
+      - name: 'CA1401: I P/Invoke non devono essere visibili'
         href: ca1401-p-invokes-should-not-be-visible.md
       - name: 'CA1402: Evitare gli overload nelle interfacce visibili a COM'
         href: ca1402-avoid-overloads-in-com-visible-interfaces.md
       - name: 'CA1403: I tipi layout automatici non devono essere visibili a COM'
         href: ca1403-auto-layout-types-should-not-be-com-visible.md
-      - name: 'CA1404: Chiamare GetLastError immediatamente dopo P-Invoke'
+      - name: 'CA1404: Chiamare GetLastError immediatamente dopo P/Invoke'
         href: ca1404-call-getlasterror-immediately-after-p-invoke.md
       - name: 'CA1405: I tipi di base del tipo visibile a COM devono essere visibili a COM'
         href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -345,11 +345,11 @@ items:
         href: ca1412-mark-comsource-interfaces-as-idispatch.md
       - name: 'CA1413: Evitare i campi non pubblici nei tipi valore visibili a COM'
         href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-      - name: 'CA1414: Contrassegnare argomenti P-Invoke booleani con MarshalAs'
+      - name: 'CA1414: Contrassegnare gli argomenti P/Invoke booleani con MarshalAs'
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-      - name: 'CA1415: Dichiarare correttamente P-Invoke'
+      - name: 'CA1415: Dichiarare correttamente i P/Invoke'
         href: ca1415-declare-p-invokes-correctly.md
-    - name: avvisi di manutenibilità
+    - name: Avvisi di manutenibilità
       href: maintainability-warnings.md
       items:
       - name: 'CA1500: I nomi delle variabili non devono corrispondere ai nomi dei campi'
@@ -360,18 +360,18 @@ items:
         href: ca1502-avoid-excessive-complexity.md
       - name: 'CA1504: Controllare i nomi dei campi fuorvianti'
         href: ca1504-review-misleading-field-names.md
-      - name: 'CA1505: evitare codice non manutenibile'
+      - name: 'CA1505: Evitare codice non gestibile'
         href: ca1505-avoid-unmaintainable-code.md
       - name: 'CA1506: Evitare un numero eccessivo di accoppiamenti di classi'
         href: ca1506-avoid-excessive-class-coupling.md
-    - name: avvisi di mobilità
+    - name: Avvisi di mobilità
       href: mobility-warnings.md
       items:
       - name: 'CA1600: Non impostare la priorità del processo su Inattivo'
         href: ca1600-do-not-use-idle-process-priority.md
       - name: 'CA1601: Non utilizzare i timer che impediscono le modifiche allo stato di potenza'
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-    - name: avvisi di denominazione
+    - name: Avvisi di denominazione
       href: naming-warnings.md
       items:
       - name: "CA1700: Non denominare 'Reserved' i valori di enumerazione"
@@ -420,14 +420,14 @@ items:
         href: ca1724-type-names-should-not-match-namespaces.md
       - name: 'CA1726: Utilizzare termini preferiti'
         href: ca1726-use-preferred-terms.md
-    - name: avvisi di prestazioni
+    - name: Avvisi di prestazioni
       href: performance-warnings.md
       items:
       - name: 'CA1800: Non eseguire il cast inutilmente'
         href: ca1800-do-not-cast-unnecessarily.md
       - name: 'CA1802: Utilizza valori letterali dove appropriato'
         href: ca1802-use-literals-where-appropriate.md
-      - name: 'CA1804: rimuovere locali non utilizzati'
+      - name: 'CA1804: Rimuovere locali non utilizzati'
         href: ca1804-remove-unused-locals.md
       - name: 'CA1809: Evitare un numero eccessivo di variabili locali'
         href: ca1809-avoid-excessive-locals.md
@@ -437,7 +437,7 @@ items:
         href: ca1811-avoid-uncalled-private-code.md
       - name: 'CA1812: Evitare classi interne prive di istanze'
         href: ca1812-avoid-uninstantiated-internal-classes.md
-      - name: 'CA1813: Evitare attributi non sealed'
+      - name: 'CA1813: Evitare attributi unsealed'
         href: ca1813-avoid-unsealed-attributes.md
       - name: 'CA1814: Preferire matrici di matrici rispetto a matrici multidimensionali'
         href: ca1814-prefer-jagged-arrays-over-multidimensional.md
@@ -455,19 +455,19 @@ items:
         href: ca1823-avoid-unused-private-fields.md
       - name: 'CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute'
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-    - name: avvisi di portabilità
+    - name: Avvisi di portabilità
       href: portability-warnings.md
       items:
       - name: 'CA1900: I campi dei tipi di valore devono essere portabili'
         href: ca1900-value-type-fields-should-be-portable.md
-      - name: 'CA1901: Le dichiarazioni P-Invoke devono essere portabili'
+      - name: 'CA1901: Le dichiarazioni P/Invoke devono essere portabili'
         href: ca1901-p-invoke-declarations-should-be-portable.md
       - name: 'CA1903: Utilizzare solo API della versione di .NET Framework di destinazione'
         href: ca1903-use-only-api-from-targeted-framework.md
-    - name: avvisi di affidabilità
+    - name: Avvisi di affidabilità
       href: reliability-warnings.md
       items:
-      - name: "CA2000: Eliminare gli oggetti prima di perdere l'ambito"
+      - name: "CA2000: Elimina gli oggetti prima che siano esterni all'ambito"
         href: ca2000-dispose-objects-before-losing-scope.md
       - name: 'CA2001: Evitare le chiamate a metodi problematici'
         href: ca2001-avoid-calling-problematic-methods.md
@@ -482,15 +482,15 @@ items:
     - name: Avvisi di sicurezza
       href: security-warnings.md
       items:
-      - name: 'CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL'
+      - name: "CA2100: Controllare l'eventuale vulnerabilità di sicurezza delle query SQL"
         href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-      - name: 'CA2102: Individuare le eccezioni non conformi a CLS nei gestori generali'
+      - name: 'CA2102: Individuare le eccezioni non CLSCompliant nei gestori generali'
         href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
       - name: 'CA2103: Controllare la sicurezza imperativa'
         href: ca2103-review-imperative-security.md
       - name: 'CA2104: Non dichiarare tipi di riferimento modificabili in sola lettura'
         href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-      - name: 'CA2105: I campi di matrici non devono essere di sola lettura'
+      - name: 'CA2105: I campi di matrici non devono essere in sola lettura'
         href: ca2105-array-fields-should-not-be-read-only.md
       - name: 'CA2106: Asserzioni protette'
         href: ca2106-secure-asserts.md
@@ -522,7 +522,7 @@ items:
         href: ca2121-static-constructors-should-be-private.md
       - name: 'CA2122: Non esporre in modo indiretto metodi con richieste di collegamento'
         href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-      - name: 'CA2123: Le richieste di collegamento negli verrine devono essere identiche a quelle nei metodi di base'
+      - name: 'CA2123: Le richieste di collegamento negli override devono essere identiche a quelle nei metodi di base'
         href: ca2123-override-link-demands-should-be-identical-to-base.md
       - name: 'CA2124: Eseguire il wrapping delle clausole finally vulnerabili in un try esterno'
         href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
@@ -538,7 +538,7 @@ items:
         href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
       - name: "CA2134: I metodi devono conservare trasparenza consistente durante l'override dei metodi base"
         href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-      - name: 'CA2135: Gli assembly di livello 2 non devono contenere LinkDemands'
+      - name: 'CA2135: Gli assembly di livello 2 non devono contenere LinkDemand'
         href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
       - name: 'CA2136: I membri non devono avere annotazioni di trasparenza in conflitto'
         href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
@@ -566,11 +566,11 @@ items:
         href: ca2147-transparent-methods-may-not-use-security-asserts.md
       - name: 'CA2149: I metodi Transparent non devono effettuare chiamate nel codice nativo'
         href: ca2149-transparent-methods-must-not-call-into-native-code.md
-      - name: 'CA2151: I campi con tipi critici devono essere SecurityCritical'
+      - name: 'CA2151: I campi con tipi critici devono essere critici per la sicurezza'
         href: ca2151-fields-with-critical-types-should-be-security-critical.md
       - name: 'CA5122: Le dichiarazioni P-Invoke non devono essere SafeCritical'
         href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-      - name: 'CA2153: Evitare la gestione delle eccezioni in stato danneggiato'
+      - name: 'CA2153: Evitare di gestire le eccezioni stato danneggiato'
         href: ca2153-avoid-handling-corrupted-state-exceptions.md
       - name: 'CA3075: Elaborazione DTD non protetta'
         href: ca3075-insecure-dtd-processing.md
@@ -580,10 +580,10 @@ items:
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
       - name: 'CA3147: Contrassegnare i gestori di verbi con ValidateAntiForgeryToken'
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-    - name: avvisi di utilizzo
+    - name: Avvisi di utilizzo
       href: usage-warnings.md
       items:
-      - name: 'CA1801: Rivedere i parametri inutilizzati'
+      - name: 'CA1801: Controllare i parametri inutilizzati'
         href: ca1801-review-unused-parameters.md
       - name: 'CA1806: Non ignorare i risultati dei metodi'
         href: ca1806-do-not-ignore-method-results.md
@@ -593,27 +593,27 @@ items:
         href: ca2200-rethrow-to-preserve-stack-details.md
       - name: 'CA2201: Non generare tipi di eccezione riservati'
         href: ca2201-do-not-raise-reserved-exception-types.md
-      - name: 'CA2202: Non eliminare oggetti più volte'
+      - name: 'CA2202: Non eliminare gli oggetti più volte'
         href: ca2202-do-not-dispose-objects-multiple-times.md
-      - name: 'CA2204: I valori letterali devono essere digitati in modo corretto'
+      - name: 'CA2204: I valori letterali devono essere digitati correttamente'
         href: ca2204-literals-should-be-spelled-correctly.md
       - name: "CA2205: Utilizzare equivalenti gestiti dell'API Win32"
         href: ca2205-use-managed-equivalents-of-win32-api.md
       - name: 'CA2207: Inizializzare i campi statici dei tipi di valore inline'
         href: ca2207-initialize-value-type-static-fields-inline.md
-      - name: 'CA2208: Creare istanze di eccezioni di argomento correttamente'
+      - name: 'CA2208: Creare istanze di eccezioni di argomento corrette'
         href: ca2208-instantiate-argument-exceptions-correctly.md
       - name: 'CA2211: I campi non costanti non devono essere visibili'
         href: ca2211-non-constant-fields-should-not-be-visible.md
       - name: 'CA2212: Non contrassegnare componenti serviti con WebMethod'
         href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-      - name: 'CA2213: I campi Disposable devono essere eliminati'
+      - name: 'CA2213: I campi eliminabili devono essere eliminati'
         href: ca2213-disposable-fields-should-be-disposed.md
       - name: 'CA2214: Non chiamare metodi sottoponibili a override nei costruttori'
         href: ca2214-do-not-call-overridable-methods-in-constructors.md
-      - name: 'CA2215: I metodi Dispose devono chiamare il metodo Dispose della classe base'
+      - name: 'CA2215: I metodi Dispose devono chiamare Dispose della classe di base'
         href: ca2215-dispose-methods-should-call-base-class-dispose.md
-      - name: 'CA2216: I tipi Disposable devono dichiarare un finalizzatore'
+      - name: 'CA2216: I tipi eliminabili devono dichiarare un finalizzatore'
         href: ca2216-disposable-types-should-declare-finalizer.md
       - name: 'CA2217: Non contrassegnare le enumerazioni con FlagsAttribute'
         href: ca2217-do-not-mark-enums-with-flagsattribute.md
@@ -621,7 +621,7 @@ items:
         href: ca2218-override-gethashcode-on-overriding-equals.md
       - name: 'CA2219: Non generare eccezioni in clausole di eccezione'
         href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-      - name: 'CA2220: I finalizzatori devono chiamare il finalizzatore della classe base'
+      - name: 'CA2220: I finalizzatori devono chiamare il finalizzatore della classe di base'
         href: ca2220-finalizers-should-call-base-class-finalizer.md
       - name: 'CA2221: I finalizzatori devono essere protetti'
         href: ca2221-finalizers-should-be-protected.md
@@ -629,7 +629,7 @@ items:
         href: ca2222-do-not-decrease-inherited-member-visibility.md
       - name: 'CA2223: La differenza tra membri non deve limitarsi al tipo restituito'
         href: ca2223-members-should-differ-by-more-than-return-type.md
-      - name: "CA2224: Eseguire l'override di Equals all'override dell'operatore"
+      - name: "CA2224: Eseguire l'override di Equals all'override dell'operatore \"uguale a\""
         href: ca2224-override-equals-on-overloading-operator-equals.md
       - name: 'CA2225: Gli overload degli operatori hanno alternative con nome'
         href: ca2225-operator-overloads-have-named-alternates.md
@@ -653,7 +653,7 @@ items:
         href: ca2234-pass-system-uri-objects-instead-of-strings.md
       - name: 'CA2235: Contrassegnare tutti i campi non serializzabili'
         href: ca2235-mark-all-non-serializable-fields.md
-      - name: 'CA2236: Chiamare metodi della classe base su tipi ISerializable'
+      - name: 'CA2236: Chiamare metodi della classe di base su tipi ISerializable'
         href: ca2236-call-base-class-methods-on-iserializable-types.md
       - name: 'CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute'
         href: ca2237-mark-iserializable-types-with-serializableattribute.md
@@ -663,7 +663,7 @@ items:
         href: ca2239-provide-deserialization-methods-for-optional-fields.md
       - name: 'CA2240: Implementare ISerializable in modo corretto'
         href: ca2240-implement-iserializable-correctly.md
-      - name: 'CA2241: Fornire argomenti corretti ai metodi di formattazione'
+      - name: 'CA2241: Fornire gli argomenti corretti ai metodi di formattazione'
         href: ca2241-provide-correct-arguments-to-formatting-methods.md
       - name: 'CA2242: Testare i valori NaN in modo corretto'
         href: ca2242-test-for-nan-correctly.md
@@ -708,10 +708,16 @@ items:
       href: C26417.md
     - name: C26418
       href: C26418.md
+    - name: C26426
+      href: C26426.md
+    - name: C26427
+      href: C26427.md
     - name: C26429
       href: C26429.md
     - name: C26430
       href: C26430.md
+    - name: C26431
+      href: C26431.md
     - name: C26432
       href: C26432.md
     - name: C26433
@@ -756,6 +762,10 @@ items:
       href: C26453.md
     - name: C26454
       href: C26454.md
+    - name: C26455
+      href: C26455.md
+    - name: C26456
+      href: C26456.md
     - name: C26460
       href: C26460.md
     - name: C26461
@@ -780,10 +790,26 @@ items:
       href: C26474.md
     - name: C26475
       href: C26475.md
+    - name: C26476
+      href: C26476.md
+    - name: C26477
+      href: C26477.md
+    - name: C26481
+      href: C26481.md
     - name: C26482
       href: C26482.md
     - name: C26483
       href: C26483.md
+    - name: C26485
+      href: C26485.md
+    - name: C26486
+      href: C26486.md
+    - name: C26487
+      href: C26487.md
+    - name: C26488
+      href: C26488.md
+    - name: C26489
+      href: C26489.md
     - name: C26490
       href: C26490.md
     - name: C26491
@@ -1434,9 +1460,9 @@ items:
       href: ca0505.md
     - name: errori di FxCopCmd
       href: fxcopcmd-errors.md
-ms.openlocfilehash: ec61163b70d1e76abc4b387eb645eb9b11e36374
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 3b48cf2bd9f292a379eee34e3928698e33145893
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135672"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648178"

@@ -1,9 +1,8 @@
 ---
-title: "Finestra di progettazione del flusso di lavoro - procedura: utilizzare l'Editor espressioni"
+title: 'Finestra di progettazione del flusso di lavoro - procedura: Usare l’editor espressioni'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 63fca3051ce50f728cf83976f6ef6a5204ad35b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956244"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
+# <a name="how-to-use-the-expression-editor"></a>Procedura: Usare l’editor espressioni
 
 L'Editor espressioni è un controllo di finestra di progettazione del flusso di lavoro che viene usato in molte attività del flusso di lavoro per immettere e valutare le espressioni. L'Editor espressioni fornisce un IDE completa la modifica di esperienza, tra cui IntelliSense, colorazione, paraminfo, controllo ortografia durante la digitazione, errore tra le altre funzionalità. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor di espressioni** nella finestra di dialogo.
 
