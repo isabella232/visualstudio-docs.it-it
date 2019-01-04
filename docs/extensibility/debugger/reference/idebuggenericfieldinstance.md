@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericFieldInstance | Documenti Microsoft
-ms.custom: ''
+title: IDebugGenericFieldInstance | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0abc75fa59f19d61ee95194905be678336808b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c265591d1836594b9190e031c1bfe3ab5a93813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990977"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Rappresenta un'istanza di un campo per un tipo generico di codice gestito.  
@@ -40,6 +37,6 @@ IDebugGenericFieldInstance : IUnknown
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

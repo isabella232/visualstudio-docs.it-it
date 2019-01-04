@@ -1,9 +1,6 @@
 ---
 title: "Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro | Microsoft Docs"
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938199"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro
-  Questa procedura dettagliata illustra come aggiungere una pagina dell'applicazione che consente di visualizzare i dati derivati da un flusso di lavoro a un progetto di flusso di lavoro. Essendo basato su progetto descritto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+  Questa procedura dettagliata illustra come aggiungere una pagina dell'applicazione che consente di visualizzare i dati derivati da un flusso di lavoro a un progetto di flusso di lavoro. Essendo basato su progetto descritto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866896"
 
 -   Visual Studio.
 
--   Inoltre necessario aver completato il progetto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+-   Inoltre necessario aver completato il progetto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend il codice del flusso di lavoro
  In primo luogo, aggiungere una riga di codice per il flusso di lavoro per impostare il valore della colonna risultato all'importo della nota spese. Questo valore viene usato in un secondo momento nel calcolo delle spese report riepilogo.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Per impostare il valore della colonna risultato nel flusso di lavoro
 
-1.  Caricare il progetto completato nell'argomento [procedura dettagliata: creazione di un flusso di lavoro con form di avvio e associazione](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1.  Caricare il progetto completato dall'argomento [procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2.  Aprire il codice per *Workflow1.cs* oppure *Workflow1.vb* (a seconda del linguaggio di programmazione).
 
@@ -353,6 +350,6 @@ ms.locfileid: "49866896"
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Procedura: creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)
+- [Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)
 - [Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

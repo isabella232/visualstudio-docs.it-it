@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: afc2915a5d1bfb6cf361a4b84a0235db296bac67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938290"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Trovare problemi potenziali usando gli analizzatori di mappe codice
 
@@ -38,9 +37,9 @@ Sulla barra degli strumenti della mappa, scegliere **Layout** > **analizzatori**
 
 |**Analizzatore**|**Per identificare i nodi che**|
 |-|-|
-|**Analizzatore Riferimenti circolari**|Hanno dipendenze circolari tra loro. **Nota:** dipendenze circolari che sono nel **Generics** gruppo non vengono visualizzati sulla mappa quando si espande il gruppo.|
+|**Analizzatore Riferimenti circolari**|Hanno dipendenze circolari tra loro. **Nota:**  Dipendenze circolari che sono nel **Generics** gruppo non vengono visualizzati sulla mappa quando si espande il gruppo.|
 |**Analizzatore Trova hub**|Rientrano nel primo 25% dei nodi con connessione elevata<br /><br /> **Per nascondere tutti gli altri nodi nella mappa**<br /><br /> -Aprire il menu di scelta rapida per la mappa, scegliere **avanzate**, **seleziona**, **Nascondi non selezionati**.<br />     La mappa consente di nascondere i nodi non selezionati e l'analizzatore identifica nuovi nodi come hub.|
-|**Analizzatore Nodi senza riferimenti**|Non contengono riferimenti da altri nodi. **Attenzione:** verificare ognuno di questi casi prima supponendo che il codice non viene utilizzato. Non è possibile trovare alcune dipendenze, ad esempio le dipendenze XAML e di runtime, in modo statico nel codice.|
+|**Analizzatore Nodi senza riferimenti**|Non contengono riferimenti da altri nodi. **Attenzione:**  Verificare ognuno di questi casi prima di presupporre che il codice non venga usato. Non è possibile trovare alcune dipendenze, ad esempio le dipendenze XAML e di runtime, in modo statico nel codice.|
 
 Gli analizzatori di mappe codice continueranno l'esecuzione una volta applicati. Se si modifica la mappa, eventuali analizzatori applicati automaticamente rielaboreranno la mappa aggiornata. Per interrompere l'esecuzione di un analizzatore, sulla barra degli strumenti della mappa, scegliere **Layout** > **analizzatori**. Disattivare l'analizzatore selezionato.
 

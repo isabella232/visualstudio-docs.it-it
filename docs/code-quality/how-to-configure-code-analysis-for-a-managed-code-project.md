@@ -2,7 +2,6 @@
 title: Configura analisi codice
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939760"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procedura: Configurare l'analisi codice per un progetto di codice gestito
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procedura: Configura analisi codice per un progetto di codice gestito
 
 In Visual Studio, è possibile scegliere da un elenco di analisi del codice [set di regole](../code-quality/rule-set-reference.md)) da applicare a un progetto di codice gestito. Per impostazione predefinita, il **Microsoft regole minime** set di regole è selezionato, ma è possibile applicare una regola diversa se si desidera impostare. Set di regole possono essere applicati a uno o più progetti in una soluzione.
 
 > [!TIP]
-> Per informazioni su come configurare una set di regole per le applicazioni web ASP.NET, vedere [procedura: applicazione web Configura analisi codice per un ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Per informazioni su come configurare una set di regole per le applicazioni web ASP.NET, vedere [come: Configura analisi codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Per configurare una set di regole per un progetto .NET Framework
 
@@ -77,4 +76,4 @@ Per impostazione predefinita, tutti i progetti gestiti di una soluzione vengono 
 ## <a name="see-also"></a>Vedere anche
 
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)
-- [Procedura: configurare l'analisi codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Procedura: Configura analisi codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

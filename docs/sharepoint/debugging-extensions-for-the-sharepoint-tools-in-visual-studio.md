@@ -1,9 +1,6 @@
 ---
 title: Debug delle estensioni per gli strumenti di SharePoint in Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950816"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Eseguire il debug delle estensioni per gli strumenti di SharePoint in Visual Studio
   È possibile eseguire il debug di estensioni degli strumenti di SharePoint nell'istanza sperimentale o nell'istanza normale di Visual Studio. Se è necessario risolvere i problemi il comportamento di un'estensione, è inoltre possibile modificare i valori del Registro di sistema per visualizzare informazioni aggiuntive sull'errore e per configurare la modalità di esecuzione dei comandi di SharePoint in Visual Studio.
@@ -34,13 +31,13 @@ ms.locfileid: "36326095"
 
 -   [Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [Procedura dettagliata: Creare l'elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+-   [Procedura dettagliata: Crea elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
 -   [Procedura dettagliata: Creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
 -   [Procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Procedura dettagliata: Chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [Procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Eseguire il debug delle estensioni nell'istanza di regolare di Visual Studio
  Se si desidera eseguire il debug del progetto di estensione nell'istanza di regolare di Visual Studio, prima di tutto installare l'estensione nell'istanza di regolare. Quindi, collegare il debugger a un secondo processo di Visual Studio. Dopo aver completato, è possibile rimuovere l'estensione in modo che venga non caricato non è più nel computer di sviluppo.
@@ -122,7 +119,7 @@ ms.locfileid: "36326095"
 
  Se l'estensione include un comando di SharePoint, è possibile creare e impostare valori aggiuntivi per consentire di risolvere il comando. Nella tabella seguente vengono descritti questi valori.
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|REG_DWORD che specifica se visualizzare una finestra di dialogo che consente di connettere il debugger *vssphost4.exe* , non appena viene avviato. Ciò è utile se il comando che si desidera eseguire il debug viene eseguito da vssphost.exe immediatamente dopo l'avvio e non esiste un tempo sufficiente per collegare manualmente il debugger prima dell'esecuzione del comando. Per visualizzare la finestra di dialogo *vssphost4.exe* chiama il <xref:System.Diagnostics.Debugger.Break%2A> metodo all'avvio.<br /><br /> Per abilitare questo comportamento, impostare questo valore su 1. Per disattivare questo comportamento, impostare questo valore su 0 o eliminare questo valore.<br /><br /> Se si imposta questo valore su 1, è anche possibile aumentare il valore HostProcessStartupTimeout per consentire un tempo sufficiente per collegare il debugger prima di Visual Studio si presuppone *vssphost4.exe* per segnalare che è stato avviato correttamente.|
 |ChannelOperationTimeout|REG_DWORD che specifica il tempo, in secondi, da Visual Studio eseguire un comando di SharePoint. Se il comando non viene eseguito nel tempo, un <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> viene generata un'eccezione.<br /><br /> Il valore predefinito è 120 secondi.|

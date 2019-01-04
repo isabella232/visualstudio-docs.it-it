@@ -2,7 +2,6 @@
 title: Funzionalità IntelliSense dell'editor XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986206"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'Editor XML
 
@@ -45,7 +44,7 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 
 -   Nomi del parametro per un determinato modello denominato.
 
-Per altre informazioni, vedere [procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.
+Per altre informazioni, vedere [Procedura dettagliata: Uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.
 
 ## <a name="auto-completion"></a>Completamento automatico
  L'editor XML, inoltre, semplifica la procedura di modifica del codice XML in quanto la sintassi XML richiesta viene inserita automaticamente. Ad esempio, se si digita il seguente tag di inizio:
@@ -122,4 +121,4 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 - [Editor XML](../xml-tools/xml-editor.md)
 - [Utilizzo di IntelliSense](../ide/using-intellisense.md)
-- [Procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Procedura dettagliata: Uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

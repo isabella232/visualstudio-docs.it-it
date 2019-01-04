@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956842"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Quando l'utente esegue un'operazione di controllo codice sorgente all'interno dell'ambiente di sviluppo integrato (IDE), il plug-in del controllo del codice sorgente potrebbe essere necessario trasmettere i messaggi di stato o di errore relativi al funzionamento. Il plug-in può visualizzare il proprio le finestre di messaggio per questo scopo. Tuttavia, per più facile integrazione, il plug-in possono passare stringhe all'IDE, che quindi li visualizza in modo nativo per la visualizzazione di informazioni sullo stato. Il meccanismo per questo è il `LPTEXTOUTPROC` puntatore a funzione. L'IDE implementa questa funzione (descritta in dettaglio più avanti) per la visualizzazione di errore e stato.  
@@ -48,14 +45,14 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  Tipo di messaggio. La tabella seguente elenca i valori supportati per questo parametro.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Il messaggio è considerato informazioni, avviso o errore.|  
 |`SCC_MSG_STATUS`|Il messaggio Mostra lo stato e può essere visualizzato nella barra di stato.|  
 |`SCC_MSG_DOCANCEL`|Con nessuna stringa di messaggio inviato.|  
 |`SCC_MSG_STARTCANCEL`|Inizia la visualizzazione di un **annullare** pulsante.|  
 |`SCC_MSG_STOPCANCEL`|Non verrà più visualizzato una **annullare** pulsante.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Chiede IDE se l'operazione in background deve essere annullata: restituisce IDE `SCC_MSG_RTN_CANCEL` se l'operazione è stata annullata; in caso contrario, restituisce `SCC_MSG_RTN_OK`. Il `display_string` parametro viene eseguito il cast come un [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struttura, che viene fornito per il plug-in del controllo del codice sorgente.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Chiede IDE se l'operazione in background deve essere annullata: Restituisce IDE `SCC_MSG_RTN_CANCEL` se l'operazione è stata annullata; in caso contrario, restituisce `SCC_MSG_RTN_OK`. Il `display_string` parametro viene eseguito il cast come un [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struttura, che viene fornito per il plug-in del controllo del codice sorgente.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Indica all'IDE relative a un file prima che vengano recuperati dal controllo della versione. Il `display_string` parametro viene eseguito il cast come un [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) struttura, che viene fornito per il plug-in del controllo del codice sorgente.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indica all'IDE relative a un file dopo che è stato recuperato dal controllo della versione. Il `display_string` parametro viene eseguito il cast come un [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) struttura, che viene fornito per il plug-in del controllo del codice sorgente.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indica all'IDE dello stato corrente di un'operazione in background. Il `display_string` parametro viene eseguito il cast come un [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) struttura, che viene fornito per il plug-in del controllo del codice sorgente.|  

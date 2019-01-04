@@ -1,9 +1,6 @@
 ---
 title: I metodi correlati al punto di interruzione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947283"
 ---
 # <a name="breakpoint-related-methods"></a>Metodi correlati al punto di interruzione
 Un motore di debug (DE) deve supportare l'impostazione di punti di interruzione. Debug in Visual Studio supporta i seguenti tipi di punti di interruzione:  
@@ -42,10 +39,10 @@ Un motore di debug (DE) deve supportare l'impostazione di punti di interruzione.
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Determina se un oggetto in sospeso punto di interruzione è possibile associare a un percorso di codice.|  
-|[Eseguire l'associazione](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Associa un oggetto specificato in sospeso punto di interruzione in uno o più percorsi di codice.|  
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Associa un oggetto specificato in sospeso punto di interruzione in uno o più percorsi di codice.|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Ottiene lo stato di un punto di interruzione in sospeso.|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Ottiene la richiesta del punto di interruzione consente di creare un punto di interruzione in sospeso.|  
-|[abilitare](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Attiva/disattiva lo stato di abilitazione di un punto di interruzione in sospeso.|  
+|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Attiva/disattiva lo stato di abilitazione di un punto di interruzione in sospeso.|  
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Enumera tutti i punti di interruzione associati da un punto di interruzione in sospeso.|  
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera tutti i punti di interruzione di errore risultanti da un punto di interruzione in sospeso.|  
 |[Eliminazione](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina un punto di interruzione in sospeso e tutti i punti di interruzione associati da quest'ultimo.|  
@@ -59,7 +56,7 @@ Un motore di debug (DE) deve supportare l'impostazione di punti di interruzione.
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Ottiene il punto di interruzione in sospeso che contiene un punto di interruzione.|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Ottiene lo stato di un punto di interruzione associato.|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Ottiene la risoluzione di punto di interruzione che descrive un punto di interruzione.|  
-|[abilitare](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Abilita o disabilita un punto di interruzione.|  
+|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Abilita o disabilita un punto di interruzione.|  
 |[Eliminazione](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Elimina un punto di interruzione associato.|  
   
  Risoluzione e richiedere informazioni richiedono l'implementazione delle operazioni seguenti [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) metodi.  

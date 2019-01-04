@@ -1,13 +1,8 @@
 ---
 title: Integrazione di dati aziendali in SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934440"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrare i dati aziendali in SharePoint
   È possibile integrare i dati aziendali in SharePoint. I dati aziendali possono provenire da applicazioni server back-end, ad esempio [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel e SAP, o un servizio Web. Gli utenti possono visualizzare, aggiungere, aggiornare o eliminare i dati aziendali usando gli elenchi esterni o Web part dei dati aziendali in SharePoint.  Gli utenti possono accedere anche questi dati in un'applicazione Microsoft Office, ad esempio Microsoft Outlook. Per altre informazioni, vedere [dove possibile è visualizzazione dei dati esterni](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -61,4 +56,3 @@ ms.locfileid: "37119921"
 |[Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)|Mostra si come creare un nuovo modello o si importa un modello esportato da SharePoint.|  
 |[Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)|Viene illustrato come progettare gli elementi di un modello usando gli strumenti di progettazione di Visual Studio.|  
 |[Quando Visual Studio di utilizzare SharePoint Designer. Soluzioni di Visual Studio per la compilazione tramite BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Consente di decidere se usare Visual Studio o utilizzare SharePoint Designer per creare un modello per l'integrazione applicativa dei dati.|  
-  

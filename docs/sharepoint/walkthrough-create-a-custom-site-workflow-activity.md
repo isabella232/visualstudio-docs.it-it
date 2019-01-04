@@ -1,13 +1,8 @@
 ---
 title: "Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzato | Microsoft Docs"
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951813"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzata
   Questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (I flussi di lavoro a livello di sito si applicano all'intero sito, non solo un elenco nel sito). L'attività personalizzata consente di creare un elenco di annunci di backup e quindi copia il contenuto dell'elenco di annunci al suo interno.  
@@ -128,6 +123,5 @@ ms.locfileid: "49894170"
 5.  Nella barra Avvio veloce scegliere il **annunci Backup** collegamento. Si noti che tutti gli annunci che sono contenuti nel **annunci** elenco sono stati copiati in questo nuovo elenco.  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Procedura: Creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)   
  [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

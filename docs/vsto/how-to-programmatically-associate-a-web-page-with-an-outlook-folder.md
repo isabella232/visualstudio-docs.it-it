@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: associare a livello di codice una pagina web a una cartella di Outlook'
-ms.custom: ''
+title: 'Procedura: A livello di programmazione associare una pagina web a una cartella di Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2cb1ef525917288dc44609b899611db884da9073
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1950a75eeee6f99a03346dde53317b30824a35f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990659"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Procedura: associare a livello di codice una pagina web a una cartella di Outlook
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Procedura: A livello di programmazione associare una pagina web a una cartella di Outlook
   Questo esempio viene verificata una cartella denominata `HtmlView` in Microsoft Office Outlook. Se la cartella non esiste, il codice crea la cartella e la assegna a una pagina Web a. Se la cartella esiste, il codice visualizza il contenuto della cartella.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,7 +31,5 @@ ms.locfileid: "35256465"
   
 ## <a name="see-also"></a>Vedere anche  
  [Con le cartelle di lavoro](../vsto/working-with-folders.md)   
- [Procedura: recuperare una cartella a livello programmatico in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Procedura: creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Procedura: Recuperano una cartella in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Procedura: A livello di programmazione creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md)  

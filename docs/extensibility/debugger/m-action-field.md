@@ -1,9 +1,6 @@
 ---
 title: Campo m_action | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_action field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ed825569809568269726e6ba592118f8b03c80b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b41c5d0ae7733a2a9256882852b9016d8e05e0bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944457"
 ---
 # <a name="maction-field"></a>campo m_action
 Delegato che rappresenta il codice da eseguire nel <xref:System.Threading.Tasks.Task> oggetto.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in *mscorlib. dll*)  
   

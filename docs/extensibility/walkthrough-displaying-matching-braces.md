@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956583"
 ---
-# <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: Visualizzazione delle parentesi graffe corrispondenti
+# <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: Visualizzare le parentesi graffe corrispondenti
 Implementare funzionalità basata sul linguaggio, ad esempio, parentesi graffa corrispondente definizione di una corrispondenza parentesi graffe e aggiungendo un tag del marcatore di testo per le parentesi graffe corrispondenti quando il cursore si trova su una delle parentesi graffe. È possibile definire le parentesi graffe nel contesto di una lingua, definire il proprio estensione di file e il tipo di contenuto e applicare i tag semplicemente digitare o applicano i tag per un tipo di contenuto esistente (ad esempio "text"). Procedura dettagliata illustra come applicare i tag per il tipo di contenuto "text" corrispondenza tra parentesi graffe.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -30,7 +27,7 @@ Implementare funzionalità basata sul linguaggio, ad esempio, parentesi graffa c
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto di classificatore editor. Denominare la soluzione `BraceMatchingTest`.  
+1.  Creare un progetto di classificatore editor. Assegnare alla soluzione il nome `BraceMatchingTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -126,4 +123,4 @@ Implementare funzionalità basata sul linguaggio, ad esempio, parentesi graffa c
 4.  Quando si posiziona il cursore prima di una parentesi graffa aperta, sia la parentesi graffa e la parentesi graffa di chiusura corrispondente dovrebbe essere evidenziata. Quando si posiziona il cursore subito dopo la parentesi graffa di chiusura, sia la parentesi graffa e la parentesi graffa di apertura corrisponda dovrebbe essere evidenziata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

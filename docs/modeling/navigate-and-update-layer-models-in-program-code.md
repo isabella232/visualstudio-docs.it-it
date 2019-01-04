@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948654"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Esplorare e aggiornare i modelli di livello nel codice del programma
 
-Questo articolo descrive gli elementi e relazioni nei modelli di livello, che è possibile esplorare e aggiornare usando codice programma. Per altre informazioni sui diagrammi di dipendenza dal punto di vista dell'utente, vedere [diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md) e [diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md).
+Questo articolo descrive gli elementi e relazioni nei modelli di livello, che è possibile esplorare e aggiornare usando codice programma. Per altre informazioni sui diagrammi di dipendenza dal punto di vista dell'utente, vedere [diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md) e [diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md).
 
 Il <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> il modello descritto in questo argomento rappresenta un aspetto di un più generale <xref:Microsoft.VisualStudio.GraphModel> modello. Se si sta scrivendo un [estensione di menu comandi o movimenti](../modeling/add-commands-and-gestures-to-layer-diagrams.md), usare il `Layer` modello. Se si sta scrivendo un [estensione di convalida dei livelli](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), è più facile da usare il `GraphModel`.
 
@@ -136,5 +135,5 @@ public void ... (...)
 - [Aggiungere comandi e movimenti ai diagrammi delle dipendenze](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
-- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)

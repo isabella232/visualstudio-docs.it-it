@@ -1,8 +1,7 @@
 ---
-title: 'CA1811: Evitare il codice privato non chiamato'
+title: 'CA1811: Evitare il codice privato'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUncalledPrivateCode
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8c71c7dc549c980be8ae7a2241629774f32150
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e40ea8d8168d557374e509a3e93b263ef1fe5724
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986778"
 ---
-# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitare il codice privato non chiamato
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitare il codice privato
 
 |||
 |-|-|
@@ -57,6 +56,6 @@ ms.locfileid: "49822972"
 ## <a name="related-rules"></a>Regole correlate
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Controllare i parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)

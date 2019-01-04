@@ -1,9 +1,6 @@
 ---
 title: Estensione e personalizzazione di Windows lo strumento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949836"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Estendi e Personalizza finestre degli strumenti
 Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio il **delle proprietà** finestra, il **Output** finestra e il **elenco attività** finestra sono tipi di finestre degli strumenti.  
@@ -37,11 +34,11 @@ Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti
   
  Le finestre degli strumenti possono essere ancorate, mobili o a schede nella cornice del documento. La cornice della finestra degli strumenti viene fornita dall'IDE ed è usata per controllare le dimensioni, la posizione, lo stato di ancoraggio e altre proprietà persistenti. Il riquadro della finestra degli strumenti visualizza il contenuto. Le dimensioni e la posizione predefinite vengono applicate solo alla prima apertura della finestra degli strumenti. Successivamente, lo stato della finestra viene salvato in modo permanente.  
   
- I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override di <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> proprietà per restituire l'handle del controllo ospitato.  
+ I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override della proprietà <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> per restituire l'handle del controllo ospitato.  
   
- È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [aggiungere una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [aggiungere un menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [Aggiungi ricerca di una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).  
+ È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [Aggiungere una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [Aggiungere un menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [Aggiungi ricerca di una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).  
   
- È possibile sottoscrivere gli eventi di finestra degli strumenti: [sottoscrive un evento](../extensibility/subscribing-to-an-event.md).  
+ È possibile sottoscrivere gli eventi di finestra degli strumenti: [Sottoscrivere un evento](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extend-existing-tool-windows"></a>Estendere finestre degli strumenti esistenti  
  È possibile aggiungere informazioni sulla finestra degli strumenti a una nuova **opzioni** pagina e una nuova impostazione sul **delle proprietà** pagina, scrivere il **elenco attività** e **Output**  windows. Per altre informazioni, vedere [estendere le finestre delle proprietà, elenco attività, Output e le opzioni](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) e [estendere le finestre delle proprietà, elenco attività, Output e opzioni](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  

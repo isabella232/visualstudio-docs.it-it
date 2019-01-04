@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: diagnosticare le prestazioni delle estensioni | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Diagnosticare le prestazioni delle estensioni | Microsoft Docs'
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943421"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurare l'impatto di estensione in avvio
 
@@ -31,7 +28,7 @@ Per consentire agli utenti comprendere tale impatto, abbiamo aggiunto una nuova 
 Questo documento è destinato agli sviluppatori di estensioni descrivendo la modalità di calcolo impatto di estensione. Questo documento descrive anche come impatto di estensione può essere analizzato in locale. In locale l'analisi impatto estensione determina se un'estensione può essere visualizzata come alcun impatto sull'estensione delle prestazioni.
 
 > [!NOTE]
-> Questo documento è incentrato sull'impatto delle estensioni nel carico di avvio e di soluzione. Estensioni di incidere sulle prestazioni di Visual Studio quando e far sì che l'interfaccia utente smette di rispondere. Per altre informazioni su questo argomento, vedere [procedura: ritardi di diagnosi dell'interfaccia utente causati dalle estensioni](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Questo documento è incentrato sull'impatto delle estensioni nel carico di avvio e di soluzione. Estensioni di incidere sulle prestazioni di Visual Studio quando e far sì che l'interfaccia utente smette di rispondere. Per altre informazioni su questo argomento, vedere [come: Interfaccia utente di diagnosticare i ritardi causati dalle estensioni](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Estensioni del possibile impatto avvio
 
@@ -51,11 +48,11 @@ Sono state aggiunte molte funzionalità a partire da Visual Studio 2015. Queste 
 
 È possibile trovare altre informazioni su queste funzionalità nei documenti seguenti:
 
-[Contesti dell'interfaccia utente basata su regole](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un motore basato su regole più avanzato basato su contesti dell'interfaccia utente consente di creare contesti personalizzati basati sui tipi di progetto, versioni e gli attributi. Contesti personalizzati utilizzabile per caricare un pacchetto durante gli scenari più specifici. Questi scenari specifici includono la presenza di un progetto con una funzionalità specifica invece di avvio. Contesti personalizzati consentono inoltre [visibilità essere associato a un contesto personalizzato di comando](visibilityconstraints-element.md) basato su componenti del progetto o altre condizioni disponibili. Questa funzionalità Elimina la necessità di caricare un pacchetto per registrare un gestore di query dello stato comando.
+[Contesti dell'interfaccia utente basata su regole](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Un motore basato su regole più avanzato basato su contesti dell'interfaccia utente consente di creare contesti personalizzati basati su attributi, tipi e i tipi di progetto. Contesti personalizzati utilizzabile per caricare un pacchetto durante gli scenari più specifici. Questi scenari specifici includono la presenza di un progetto con una funzionalità specifica invece di avvio. Contesti personalizzati consentono inoltre [visibilità essere associato a un contesto personalizzato di comando](visibilityconstraints-element.md) basato su componenti del progetto o altre condizioni disponibili. Questa funzionalità Elimina la necessità di caricare un pacchetto per registrare un gestore di query dello stato comando.
 
-[Supporto per il pacchetto asincrona](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): la nuova classe di base AsyncPackage in Visual Studio 2015 consente pacchetti di Visual Studio da caricare in background in modo asincrono se il caricamento del pacchetto è stato richiesto da un attributo di caricamento automatico o una query del servizio asincrona . Il caricamento in background consente all'IDE di prestare attenzione. L'IDE è reattiva anche quando l'estensione viene inizializzato in background e gli scenari critici, ad esempio avvio e soluzione di carico non risultare peggiorati.
+[Supporto per il pacchetto asincrona](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): La nuova classe di base AsyncPackage in Visual Studio 2015 consente pacchetti di Visual Studio essere caricate in background in modo asincrono se caricamento del pacchetto è stato richiesto da un attributo di caricamento automatico o una query asincrona al servizio. Il caricamento in background consente all'IDE di prestare attenzione. L'IDE è reattiva anche quando l'estensione viene inizializzato in background e gli scenari critici, ad esempio avvio e soluzione di carico non risultare peggiorati.
 
-[Servizi asincroni](how-to-provide-an-asynchronous-visual-studio-service.md): con il supporto asincrono del pacchetto, è inoltre aggiunto il supporto per l'esecuzione di query i servizi in modo asincrono e la possibilità di registrare i servizi asincroni. Aspetto ancora più importante stiamo lavorando sulla conversione di servizi di Visual Studio di base per supportare query asincrona in modo che la maggior parte del lavoro in una query asincrona si verifica nel thread in background. SComponentModel (host MEF di Visual Studio) è uno dei servizi principali che supporta ora la query asincrona per consentire le estensioni per supportare completamente il caricamento asincrono.
+[Servizi asincroni](how-to-provide-an-asynchronous-visual-studio-service.md): Con supporto per il pacchetto asincrona, è inoltre aggiunto il supporto per l'esecuzione di query i servizi in modo asincrono e la possibilità di registrare i servizi asincroni. Aspetto ancora più importante stiamo lavorando sulla conversione di servizi di Visual Studio di base per supportare query asincrona in modo che la maggior parte del lavoro in una query asincrona si verifica nel thread in background. SComponentModel (host MEF di Visual Studio) è uno dei servizi principali che supporta ora la query asincrona per consentire le estensioni per supportare completamente il caricamento asincrono.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Ridurre l'impatto di auto caricare le estensioni
 
@@ -167,11 +164,11 @@ A questo punto la vista mostrerà solo i costi associati con gli assembly correl
 
 Per l'esempio precedente alcuni interessano chiamata stack sarà:
 
-1. IO utilizzo `System.IO` classe: inclusivo costo di tali frame potrebbe non essere troppo costoso nella traccia, ma sono una potenziale causa di un problema poiché file velocità dei / o possono variare da computer a computer.
+1. IO utilizzo `System.IO` classe: Inclusivo costo di tali frame potrebbe non essere troppo costoso nella traccia, ma sono una potenziale causa di un problema poiché file velocità dei / o possono variare da computer a computer.
 
    ![fotogrammi i/o di sistema](media/perfview-system-io-frames.png)
 
-2. Bloccare le chiamate in attesa di altre operazioni asincrone: In questo caso, al tempo inclusivo rappresenta l'ora in cui il thread principale è bloccato al completamento del lavoro asincrono.
+2. Bloccare le chiamate in attesa di altre operazioni asincrone: In questo caso, al tempo inclusivo rappresenta l'ora in cui che il thread principale è bloccato al completamento del lavoro asincrono.
 
    ![frame di chiamata di blocco](media/perfview-blocking-call-frames.png)
 

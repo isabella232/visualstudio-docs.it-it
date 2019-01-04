@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare una scheda personalizzata utilizzando XML della barra multifunzione'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955227"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: Creare una scheda personalizzata utilizzando XML della barra multifunzione
   Questa procedura dettagliata viene illustrato come creare una scheda della barra multifunzione personalizzata usando il **sulla barra multifunzione (XML)** elemento.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808924"
   
 1.  Creare un **componente aggiuntivo di Word** con il nome progetto **MyRibbonAddIn**.  
   
-     Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre la **ThisAddIn.cs** o **ThisAddIn. vb** file di codice e aggiunge i **MyRibbonAddIn** progetto al **Esplora soluzioni**.  
   
@@ -74,7 +71,7 @@ ms.locfileid: "38808924"
   
 4.  Nelle **Esplora soluzioni**, fare doppio clic su **ThisAddin.cs** oppure **ThisAddIn. vb**, quindi fare clic su **Visualizza codice**.  
   
-5.  Aggiungere il codice seguente alla classe **ThisAddIn** . Questo codice esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce la classe XML della barra multifunzione all'applicazione Office.  
+5.  Aggiungere il codice seguente alla classe **ThisAddIn** . Questo codice esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce la classe XML della barra multifunzione all'applicazione di Office.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
@@ -115,12 +112,12 @@ ms.locfileid: "38808924"
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  Aggiungere il metodo seguente alla classe `MyRibbon`. Si tratta di un metodo di callback per il **Insert Text** pulsante che aggiunge una stringa al documento attivo nella posizione corrente del cursore.  
+3.  Aggiungere il metodo seguente alla classe `MyRibbon` . Si tratta di un metodo di callback per il **Insert Text** pulsante che aggiunge una stringa al documento attivo nella posizione corrente del cursore.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  Aggiungere il metodo seguente alla classe `MyRibbon`. Si tratta di un metodo di callback per il **Inserisci tabella** pulsante che aggiunge una tabella al documento attivo nella posizione corrente del cursore.  
+4.  Aggiungere il metodo seguente alla classe `MyRibbon` . Si tratta di un metodo di callback per il **Inserisci tabella** pulsante che aggiunge una tabella al documento attivo nella posizione corrente del cursore.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
@@ -155,11 +152,9 @@ ms.locfileid: "38808924"
   
 -   Creare un riquadro azioni personalizzato. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).  
   
--   Personalizzare l'interfaccia utente di Microsoft Office Outlook usando le aree del modulo di Outlook. Per altre informazioni, vedere [procedura dettagliata: progettazione di un'area del modulo Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Personalizzare l'interfaccia utente di Microsoft Office Outlook usando le aree del modulo di Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area del modulo Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [XML della barra multifunzione](../vsto/ribbon-xml.md)   
  [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

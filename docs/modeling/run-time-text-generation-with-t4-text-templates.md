@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939927"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
@@ -300,7 +299,7 @@ La direttiva include è utilizzabile in un punto qualsiasi all'interno del testo
 
 È possibile condividere il contenuto tra i modelli in fase di esecuzione mediante la scrittura di un modello di classe di base che può essere astratto. Usare la `inherits` parametro del `<@#template#>` direttiva per fare riferimento a un'altra classe di modello di runtime.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modello di ereditarietà: frammenti nei metodi di Base
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modello di ereditarietà: Frammenti nei metodi di Base
 
 Nel modello usato nell'esempio seguente, si noti quanto riportato di seguito:
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Modelli in fase di progettazione: se si desidera usare un modello per generare il codice che diventa parte dell'applicazione, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Modelli in fase di progettazione: Se si desidera usare un modello per generare il codice che diventa parte dell'applicazione, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Modelli in fase di esecuzione possono essere usati in qualsiasi applicazione in cui i modelli e il relativo contenuto sono determinati in fase di compilazione. Ma se si vuole scrivere un'estensione di Visual Studio che generi il testo dai modelli che cambiano in fase di esecuzione, vedere [richiamo di trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

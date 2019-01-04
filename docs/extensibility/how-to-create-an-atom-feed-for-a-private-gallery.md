@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creare un Atom per una raccolta privata di Feed | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un Atom per una raccolta privata di Feed | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fc3aef8605f5c3343bcc6aca86513d631cace35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941690"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un feed Atom per una raccolta privata
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: Creare un feed Atom per una raccolta privata
 È possibile creare un Atom (RSS) feed da un percorso intranet che contiene le estensioni e aggiunta il feed a **estensioni e aggiornamenti** come una raccolta privata. Per altre informazioni, vedere [raccolte Private](../extensibility/private-galleries.md).  
   
 ## <a name="create-an-atom-feed"></a>Creare un feed Atom  

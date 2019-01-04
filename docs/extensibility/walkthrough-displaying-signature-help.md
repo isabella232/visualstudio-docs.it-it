@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Visualizzazione di supporto per la firma | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Visualizzazione della Guida firma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986726"
 ---
-# <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: Aggiunta di supporto per la firma
+# <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: Visualizzare la Guida di firma
 Supporto per la firma (detta anche *le informazioni sul parametro*) consente di visualizzare la firma di un metodo in una descrizione comando quando un utente digita il carattere iniziale dell'elenco parametri (in genere una parentesi di apertura). Com'è digitati un parametro e il separatore di parametro (in genere una virgola), la descrizione comando viene aggiornato per mostrare il parametro successivo in grassetto. È possibile definire supporto firma nei modi seguenti: nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e visualizzare la Guida di firma per il solo tipo o visualizzare la Guida di firma per un tipo di contenuto esistente (ad esempio, "text"). Questa procedura dettagliata viene illustrato come visualizzare la Guida di firma per il tipo di contenuto "text".  
   
  Supporto per la firma viene in genere attivato digitando un carattere specifico, ad esempio, "(" (parentesi di apertura) e verrà eliminato digitando un altro carattere, ad esempio, ")" (la parentesi di chiusura). Funzionalità di IntelliSense che vengono attivate digitando un carattere può essere implementata usando un gestore di comandi per le sequenze di tasti (il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e un provider del gestore che implementa il <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaccia. Per creare l'origine supporto firma, ovvero l'elenco di firme che fanno parte di supporto firma, implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> interfaccia e un provider di origine che esegue il <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> interfaccia. I provider sono parti componente Managed Extensibility Framework (MEF) e sono responsabili per le classi di origine e il controller di esportazione e importazione di servizi e Broker, ad esempio, il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, che consente di passare nel buffer di testo e il <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, che attiva la sessione di supporto firma.  
@@ -34,7 +31,7 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `SignatureHelpTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `SignatureHelpTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -57,7 +54,7 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Per implementare le firme di supporto firma e i parametri  
   
-1.  Aggiungere un file di classe e denominarla `SignatureHelpSource`.  
+1.  Aggiungere un file di classe e assegnargli il nome `SignatureHelpSource`.  
   
 2.  Aggiungere le istruzioni import seguenti.  
   
@@ -248,4 +245,4 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 4.  Dopo aver digitato la parentesi di apertura, si dovrebbe essere una descrizione comando che visualizza un elenco di due firme per i `add()` (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

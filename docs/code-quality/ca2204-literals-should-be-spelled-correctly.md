@@ -1,8 +1,7 @@
 ---
-title: 'CA2204: I valori letterali devono essere digitati in modo corretto'
+title: 'CA2204: Valori letterali devono essere digitati correttamente'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - Literals should be spelled correctly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f86658978a105c1fa4f3c4602b5c838f4c80726
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e23ab1c1c245a03e88b05fb15259193bb508b69a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944311"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: I valori letterali devono essere digitati in modo corretto
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Valori letterali devono essere digitati correttamente
 
 |||
 |-|-|
@@ -34,23 +33,23 @@ ms.locfileid: "31918423"
 
 ## <a name="cause"></a>Causa
 
-Una valore letterale stringa viene passata come argomento per un parametro localizzabile, o a una proprietà localizzabile, e la stringa contiene uno o più parole che non sono riconosciute dalla libreria del correttore ortografico Microsoft.
+Una valore letterale stringa viene passata come argomento per un parametro localizzabile, o a una proprietà localizzabile e la stringa contiene uno o più parole che non sono riconosciute dalla libreria del correttore ortografico Microsoft.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola consente di controllare una stringa letterale che viene passata come un valore per un parametro o una proprietà quando uno o più delle seguenti condizioni sono true:
+Questa regola consente di controllare una stringa letterale che viene passata come un valore per un parametro o una proprietà quando per uno o più delle seguenti condizioni sono true:
 
-- Il <xref:System.ComponentModel.LocalizableAttribute> attributo di parametro o la proprietà è impostata su true.
+- Il <xref:System.ComponentModel.LocalizableAttribute> attributi del parametro o della proprietà sono impostato su true.
 
-- Il nome di parametro o la proprietà contiene "Text", "Messaggio" o "Didascalia".
+- Il nome di parametro o una proprietà contiene "Text", "Messaggio" o "Caption".
 
 - Il nome della variabile di stringa che viene passato a un <xref:System.Console.Write%2A> o <xref:System.Console.WriteLine> è "value" o "format".
 
-Questa regola analizza la stringa letterale in parole, suddivisione in token le parole composte e controlla l'ortografia di ogni parola o token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Questa regola analizza la stringa letterale in parole, suddivisione in token le parole composte e controlla l'ortografia di ogni parola o il token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="language"></a>Linguaggio
 
-Il correttore ortografico attualmente controlla solo a dizionari le impostazioni cultura basate su inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto, aggiungendo il **CodeAnalysisCulture** elemento.
+Il correttore ortografico attualmente verifica solo a dizionari le impostazioni cultura basate su inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto, aggiungendo il **CodeAnalysisCulture** elemento.
 
 Ad esempio:
 
@@ -61,13 +60,13 @@ Ad esempio:
 ```
 
 > [!IMPORTANT]
-> Se si imposta le impostazioni cultura su un valore diverso da delle impostazioni cultura basate su inglese, questa regola di analisi codice invisibile all'utente è disabilitata.
+> Se si imposta le impostazioni cultura su un valore qualsiasi diverso da una cultura basata su inglese, questa regola di analisi del codice viene disabilitata automaticamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, correggere l'ortografia della parola o aggiungere la parola al dizionario personalizzato. Per informazioni sull'utilizzo di dizionari personalizzati, vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Per correggere una violazione di questa regola, correggere l'ortografia del termine o aggiungere la parola al dizionario personalizzato. Per informazioni su come usare i dizionari personalizzati, vedere [come: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Non escludere un avviso da questa regola. Correttamente ortografia consente di ridurre la curva di apprendimento necessaria per le nuove librerie software.
 

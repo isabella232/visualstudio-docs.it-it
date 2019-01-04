@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante controlli CheckBox'
-ms.custom: ''
+title: 'Procedura dettagliata: La modifica del foglio di lavoro della formattazione mediante controlli CheckBox'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935099"
 ---
-# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante controlli CheckBox
+# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: La modifica del foglio di lavoro della formattazione mediante controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base dell'uso di caselle di controllo in un foglio di lavoro di Microsoft Office Excel per modificare la formattazione. Si userà gli strumenti di sviluppo per Office in Visual Studio per creare e aggiungere codice al progetto. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49843535"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto cartella di lavoro di Excel con il nome **formattazione in Excel**. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto cartella di lavoro di Excel con il nome **formattazione in Excel**. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **formattazione in Excel** progetto al **Esplora soluzioni**.  
   
@@ -76,14 +73,14 @@ ms.locfileid: "49843535"
   
 5.  Trascinare una seconda casella di controllo in o accanto alla cella **B4** e modificare le proprietà seguenti:  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**applyItalicFont**|  
     |**per**|**Corsivo**|  
   
 6.  Trascinare una terza casella di controllo in o accanto alla cella **B6** e modificare le proprietà seguenti:  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
     |**per**|**Carattere di sottolineatura**|  
@@ -113,7 +110,7 @@ ms.locfileid: "49843535"
   
 5. Assicurarsi che **NamedRange1** è visibile nella casella di riepilogo Nome oggetto del **proprietà** finestra e modificare le proprietà seguenti:  
   
-   |Proprietà|Valore|  
+   |Proprietà|Value|  
    |--------------|-----------|  
    |**Name**|**textFont**|  
    |**Value2**|**Fare clic su una casella di controllo per modificare la formattazione del testo.**|  
@@ -142,7 +139,7 @@ ms.locfileid: "49843535"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
   
-5.  In c#, è necessario aggiungere i gestori eventi per le caselle di controllo per il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, come illustrato di seguito. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In c#, è necessario aggiungere i gestori eventi per le caselle di controllo per il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, come illustrato di seguito. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
@@ -161,10 +158,9 @@ ms.locfileid: "49843535"
  Questa procedura dettagliata illustra le nozioni di base usando le caselle di controllo e la formattazione del testo in fogli di lavoro di Excel. Ecco alcune possibili attività successive:  
   
 -   La distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
--   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [procedura dettagliata: visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

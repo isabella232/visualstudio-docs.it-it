@@ -1,9 +1,6 @@
 ---
 title: Elenco dei servizi disponibili | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964637"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e Visual Studio SDK supportano i servizi seguenti. Alcuni pacchetti offrono i propri servizi non elencati qui, ad esempio, servizi di linguaggio non è un GUID del singolo servizio. È necessario utilizzare il nome del linguaggio per trovare il GUID del servizio di linguaggio nel Registro di sistema.  

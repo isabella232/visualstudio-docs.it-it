@@ -1,9 +1,6 @@
 ---
 title: Scanner e Parser servizio di linguaggio legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941849"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanner e parser dei servizi di linguaggio legacy
 Il parser è il cuore del servizio di linguaggio. Le classi di lingua di Framework di pacchetto gestito (MPF) richiedono un parser del linguaggio per selezionare le informazioni sul codice di visualizzazione. Un parser separa il testo in token lessicale e quindi identifica i token dal tipo e funzionalità.  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. Operazione eseguita.  
   
 ### <a name="summary"></a>Riepilogo  
- L'operazione di parentesi graffe corrispondenti è in genere limitata alle semplici coppie di elementi del linguaggio. Gli elementi più complessi, come la corrispondenza Triple ("`if(...)`","`{`"e"`}`", o "`else`","`{`"e"`}`"), potrebbe essere evidenziato come parte di un'operazione di completamento delle parole. Ad esempio, la parola "else" termine, la corrispondenza "`if`" istruzione potrebbe essere evidenziata. Se si sono verificati una serie di `if` / `else if` (istruzioni), tutti gli elementi potrebbe essere evidenziato usando lo stesso meccanismo come le parentesi graffe corrispondenti. Il <xref:Microsoft.VisualStudio.Package.Source> classe di base supporta già questa operazione, come indicato di seguito: lo scanner deve restituire il valore del token trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinato con il valore trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> per il token che precede la posizione del cursore.  
+ L'operazione di parentesi graffe corrispondenti è in genere limitata alle semplici coppie di elementi del linguaggio. Gli elementi più complessi, come la corrispondenza Triple ("`if(...)`","`{`"e"`}`", o "`else`","`{`"e"`}`"), potrebbe essere evidenziato come parte di un'operazione di completamento delle parole. Ad esempio, la parola "else" termine, la corrispondenza "`if`" istruzione potrebbe essere evidenziata. Se si sono verificati una serie di `if` / `else if` (istruzioni), tutti gli elementi potrebbe essere evidenziato usando lo stesso meccanismo come le parentesi graffe corrispondenti. Il <xref:Microsoft.VisualStudio.Package.Source> classe di base supporta già questa operazione, come indicato di seguito: Lo scanner deve restituire il valore del token di trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinato con il valore trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> per il token che precede la posizione del cursore.  
   
  Per altre informazioni, vedere [corrispondenza delle parentesi graffe in un servizio di linguaggio Legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   

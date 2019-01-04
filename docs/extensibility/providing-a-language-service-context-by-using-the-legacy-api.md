@@ -1,9 +1,6 @@
 ---
 title: Fornire un contesto del servizio linguaggio con l'API Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940258"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fornire un contesto del servizio linguaggio con l'API legacy
 Sono disponibili due opzioni per un servizio di linguaggio fornire contesto utente utilizzando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale: fornire il contesto di marcatore di testo o forniscono tutto il contesto utente. Di seguito vengono illustrate le differenze tra ogni.  
   
- Per altre informazioni sulla capacità di fornire contesto a un servizio di linguaggio che è connesso a un editor personalizzato, vedere [procedura: fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  
+ Per altre informazioni sulla capacità di fornire contesto a un servizio di linguaggio che è connesso a un editor personalizzato, vedere [come: Fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Fornire il contesto di marcatore di testo nell'editor  
  Per fornire il contesto per gli errori del compilatore indicati da marcatori di testo nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor di base, implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaccia. In questo scenario, il servizio di linguaggio fornisce il contesto solo quando il cursore si trova su un marcatore di testo. In questo modo l'editor fornire la parola chiave in corrispondenza del cursore per la **Guida dinamica** finestra senza attributi.  

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: a livello di codice aprire i file di testo come cartelle di lavoro'
-ms.custom: ''
+title: 'Procedura: A livello di codice aprire i file di testo come cartelle di lavoro'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7bc7caa5dbceb727394b8543b7659cc43e64a36
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f45eef21448ecbc0ee4e866d15ea746f098f2aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964189"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedura: a livello di codice aprire i file di testo come cartelle di lavoro
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedura: A livello di codice aprire i file di testo come cartelle di lavoro
   È possibile aprire un file di testo come cartella di lavoro. È necessario passare il nome del file di testo che si desidera aprire. È possibile specificare diversi parametri facoltativi, ad esempio il numero di riga per iniziare l'analisi e il formato della colonna dei dati nel file.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35257647"
   
 ## <a name="see-also"></a>Vedere anche  
  [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)   
- [Procedura: aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md)   
- [Procedura: creare nuove cartelle di lavoro](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Procedura: a livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)   
- [Procedura: chiudere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Procedura: A livello di codice aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Procedura: A livello di codice crea nuove cartelle di lavoro](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [Procedura: A livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Procedura: A livello di programmazione chiudere cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  
