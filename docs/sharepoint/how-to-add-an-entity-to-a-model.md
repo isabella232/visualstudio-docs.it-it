@@ -1,15 +1,10 @@
 ---
-title: "Procedura: aggiungere un'entità a un modello | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Aggiungere un'entità a un modello | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - EntityTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 347728ac4f096359f06ca7823adfcd1b25ff527a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964034"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>Procedura: aggiungere un'entità a un modello
+# <a name="how-to-add-an-entity-to-a-model"></a>Procedura: Aggiungere un'entità a un modello
   Per creare un'entità, aggiungere un controllo dell'entità da Visual Studio **casella degli strumenti** nella finestra di progettazione integrazione applicativa dei dati (BDC).  
   
 ### <a name="to-add-an-entity-to-the-model"></a>Per aggiungere un'entità al modello  
@@ -53,10 +48,8 @@ ms.locfileid: "36757715"
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)  
-  
- 
+ [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)  

@@ -1,9 +1,6 @@
 ---
 title: Tipi di carattere e formattazione per Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989043"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -104,122 +101,122 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
   
 #### <a name="375-environment-font--light"></a>Tipo di carattere ambiente 375% + Light  
- **Viene visualizzato come:** pt 34 Segoe UI Light  
+ **Viene visualizzata come:** pt 34 Segoe UI Light  
  **Utilizzo per:** (raro) univoco con marchio dell'interfaccia utente, ad esempio nella pagina iniziale
 
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato.  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>Tipo di carattere ambiente 310% + Light  
- **Viene visualizzato come:** pt 28 Segoe UI Light   
+ **Viene visualizzata come:** 28 pt Segoe UI Light   
  **Utilizzo per:** titoli di finestra di dialogo firma di grandi dimensioni, nel report principali  
   
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato.  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>Tipo di carattere ambiente 200% + Semilight  
- **Viene visualizzato come:** 18 pt Segoe UI Semilight    
+ **Viene visualizzata come:** 18 pt Segoe UI Semilight    
  **Utilizzo per:** sottotitoli, titoli nelle finestre di dialogo di piccole e medie dimensioni  
   
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza: 
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza: 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato:  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
 #### <a name="155-environment-font"></a>Tipo di carattere ambiente 155%  
- **Viene visualizzato come:** 14pt Segoe interfaccia utente    
+ **Viene visualizzata come:** 14pt Segoe interfaccia utente    
  **Utilizzo per:** intestazioni di sezione nel documento e dell'interfaccia utente o i report  
   
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato:  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
 #### <a name="133-environment-font"></a>Tipo di carattere ambiente 133%  
- **Viene visualizzato come:** 12 pt Segoe interfaccia utente    
+ **Viene visualizzata come:** 12 pt Segoe interfaccia utente    
  **Utilizzo per:** più piccole sezioni in finestre di dialogo firma e documenti e dell'interfaccia utente  
   
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato:  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>Tipo di carattere ambiente 122%  
- **Viene visualizzato come:** 11 pt Segoe interfaccia utente    
+ **Viene visualizzata come:** 11 pt Segoe interfaccia utente    
  **Utilizzo per:** sezione intestazioni nelle finestre di dialogo firma, dall'alto nodi nella visualizzazione ad albero, navigazione tramite tabulazione verticale  
   
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato:  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Viene visualizzato come:** in grassetto pt 9 Segoe interfaccia utente    
  **Utilizzo per:** etichette e sottotitoli nel documento, report e le finestre di dialogo firma anche l'interfaccia utente  
   
- **Codice procedurale:** in cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
+ **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:** impostare lo stile del controllo TextBlock o Label, come illustrato:  
+ **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -316,7 +313,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Titoli di finestra di dialogo|Etichette|  
 |Caselle di gruppo|Caselle di controllo|  
 |Voci di menu|Pulsanti di opzione|  
-|Voci di menu di scelta rapida|Elementi casella di riepilogo|  
+|Voci del menu di scelta rapida|Elementi casella di riepilogo|  
 |Pulsanti|Barre di stato|  
 |In una tabella pivot||  
 |Intestazioni di colonna||  
@@ -325,9 +322,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Iniziali maiuscole  
  Iniziali maiuscole sono uno stile in cui sono in maiuscolo le prime lettere della maggior parte o tutte le parole all'interno di una frase. In Visual Studio, tutte iniziali maiuscole viene usata per molti elementi, tra cui:  
   
-- **Descrizioni comandi.** Esempio: "anteprima di elementi selezionati"  
+- **Descrizioni comandi.** Esempio: "Anteprima elementi selezionati"  
   
-- **Intestazioni di colonna.** Esempio: "risposta di sistema"  
+- **Intestazioni di colonna.** Esempio: "Risposta di sistema"  
   
 - **Voci di menu.** Esempio: "Salva tutto"  
   
@@ -356,7 +353,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Maiuscola  
  Maiuscola è il metodo di utilizzo delle maiuscole standard per la scrittura in cui ha iniziale maiuscola solo la prima parola della frase, insieme a eventuali nomi propri e il Pronome "I". In generale, maiuscola è più semplice per un gruppo di destinatari in tutto il mondo per la lettura, in particolare quando il contenuto verrà convertito da un computer. Usare maiuscola per:  
   
-1.  **Messaggi della barra di stato.** Queste sono semplici, short e fornire solo informazioni sullo stato. Esempio: "caricamento dei file di progetto"  
+1.  **Messaggi della barra di stato.** Queste sono semplici, short e fornire solo informazioni sullo stato. Esempio: "Caricamento dei file di progetto"  
   
 2.  **Tutti gli altri elementi dell'interfaccia utente**, tra cui le etichette, caselle di controllo, pulsanti di opzione ed elencare elementi casella. Esempio: "Seleziona tutti gli elementi nell'elenco"  
   
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilizzo:** rari. Univoco personalizzato solo interfaccia utente.<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />: Viene sempre utilizzato leggero<br /><br /> **Non:**<br /><br /> -Usare per l'interfaccia utente diversa da firma dell'interfaccia utente, ad esempio pagina iniziale<br />-Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzato come:** pt 34 Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> *Attualmente non usato. Possono essere utilizzati nella pagina iniziale.*|  
+|**Utilizzo:** Rari. Univoco personalizzato solo interfaccia utente.<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />: Viene sempre utilizzato leggero<br /><br /> **Non:**<br /><br /> -Usare per l'interfaccia utente diversa da firma dell'interfaccia utente, ad esempio pagina iniziale<br />-Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** pt 34 Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> *Attualmente non usato. Possono essere utilizzati nella pagina iniziale.*|  
   
 #### <a name="310-environment-font--light"></a>Tipo di carattere ambiente 310% + Light  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Intestazione maggiori nelle finestre di dialogo firma<br />-Intestazione di report principale<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />: Viene sempre utilizzato leggero<br /><br /> **Non:**<br /><br /> -Usare per l'interfaccia utente diversa da firma dell'interfaccia utente, ad esempio pagina iniziale<br />-Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzato come:** pt 28 Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente 310% &#43; intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**Utilizzo:**<br /><br /> -Intestazione maggiori nelle finestre di dialogo firma<br />-Intestazione di report principale<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />: Viene sempre utilizzato leggero<br /><br /> **Non:**<br /><br /> -Usare per l'interfaccia utente diversa da firma dell'interfaccia utente, ad esempio pagina iniziale<br />-Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 28 pt Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente 310% &#43; intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Tipo di carattere ambiente 200% + Semilight  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Sottotitoli<br />-Titoli nelle finestre di dialogo di piccole e medie dimensioni<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />-Sempre usare il peso Semilight<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzato come:** 18 pt Segoe UI Semillight<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
+|**Utilizzo:**<br /><br /> -Sottotitoli<br />-Titoli nelle finestre di dialogo di piccole e medie dimensioni<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />-Sempre usare il peso Semilight<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 18 pt Segoe UI Semillight<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>Tipo di carattere ambiente 155%  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Intestazioni di sezione nel documento e dell'interfaccia utente<br />-Report<br /><br /> **Eseguire:** frase caso d'uso<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzato come:** 14pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**Utilizzo:**<br /><br /> -Intestazioni di sezione nel documento e dell'interfaccia utente<br />-Report<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 14pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Tipo di carattere ambiente 133%  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Più piccole sezioni in finestre di dialogo firma<br />-Sottotitoli inferiori nel documento e dell'interfaccia utente<br /><br /> **Eseguire:** frase caso d'uso<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzato come:** 12 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**Utilizzo:**<br /><br /> -Più piccole sezioni in finestre di dialogo firma<br />-Sottotitoli inferiori nel documento e dell'interfaccia utente<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 12 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Tipo di carattere ambiente 122%  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Intestazioni di sezione nelle finestre di dialogo firma<br />-Primi nodi nella visualizzazione ad albero<br />-Navigazione tramite tabulazione verticale<br /><br /> **Eseguire:** frase caso d'uso<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzato come:** 11 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Utilizzo:**<br /><br /> -Intestazioni di sezione nelle finestre di dialogo firma<br />-Primi nodi nella visualizzazione ad albero<br />-Navigazione tramite tabulazione verticale<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 11 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Tipo di carattere ambiente + grassetto  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilizzo:** qualsiasi altro testo<br /><br /> **Eseguire:** frase caso d'uso<br /><br /> **Non:** corsivo o grassetto corsivo|**Viene visualizzato come:** pt 9 Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**Utilizzo:** Qualsiasi altro testo<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:** Corsivo in grassetto o corsivo|**Viene visualizzata come:** pt 9 Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Spaziatura interna e la spaziatura  
  Intestazioni richiedono spazio attorno a esse per concedere loro l'enfasi appropriato. Questo spazio varia a seconda delle dimensioni del punto e cos'altro è in prossimità di intestazione, ad esempio una regola orizzontale o di una riga di testo nel tipo di carattere ambiente.  
@@ -466,5 +463,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Testo del carattere di ambiente in grassetto deve seguire la spaziatura interna e spaziatura altezza riga predefinita.  
   
 ## <a name="see-also"></a>Vedere anche  
- [MSDN: I tipi di carattere (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Tipi di carattere (Windows)](/windows/desktop/uxguide/vis-fonts)   
  [MSDN: Testo dell'interfaccia utente (Windows)](/windows/desktop/uxguide/text-ui)

@@ -2,7 +2,6 @@
 title: 'CA1403: I tipi layout automatici non devono essere visibili a COM'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d84fdd4f352a823614832cc8d5d1b9e57c7a9dfb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1f713ac012509dd36d483ca354630e125066360b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954539"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: I tipi layout automatici non devono essere visibili a COM
 
@@ -62,7 +61,7 @@ Nell'esempio seguente viene illustrato un tipo che viola la regola e un tipo che
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1408: Non usare AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408: Non utilizzare AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,9 +1,6 @@
 ---
-title: "Procedura: creare un'estensione di elemento di progetto SharePoint | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Creare un'estensione di elemento di progetto SharePoint | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956192"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Procedura: creare un'estensione di elemento di progetto SharePoint
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Procedura: Creare un'estensione di elemento di progetto SharePoint
   Creare un'estensione di elemento di progetto quando si desidera aggiungere funzionalità a un elemento di progetto SharePoint che è già installato in Visual Studio. Per altre informazioni, vedere [elementi di progetto SharePoint estendere](../sharepoint/extending-sharepoint-project-items.md).  
   
 ### <a name="to-create-a-project-item-extension"></a>Per creare un'estensione di elemento di progetto  
@@ -68,5 +65,3 @@ ms.locfileid: "37119872"
 ## <a name="see-also"></a>Vedere anche
  [Estendere gli elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

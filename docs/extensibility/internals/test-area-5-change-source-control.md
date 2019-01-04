@@ -1,9 +1,6 @@
 ---
 title: 'Area di test 5: Modifica controllo del codice sorgente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7093d50290c4c0612faf6c7691f90e62a08267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942632"
 ---
-# <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
+# <a name="test-area-5-change-source-control"></a>Area di test 5: Modifica controllo del codice sorgente
 Quest'area del plug-in test di controllo del codice sorgente illustra la modifica il controllo del codice sorgente tramite il **Modifica controllo del codice sorgente** comando.  
 
  **Modifica controllo del codice sorgente** comando fornisce quattro funzioni di base per l'utente:  
@@ -36,7 +33,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 
 - **Connettere/disconnettere:**  
 
-  Attiva o disattiva la stato connesso o non in linea della soluzione controllato, come illustrato nella zona 3. Per altre informazioni, vedere [Test zona 3: estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Attiva o disattiva la stato connesso o non in linea della soluzione controllato, come illustrato nella zona 3. Per altre informazioni, vedere [Test zona 3: Check-Out / annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
 
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
  Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] percorso menu ambiente di sviluppo integrato è utilizzato nei test case.  
@@ -46,7 +43,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per il **Modifica controllo del codice sorgente** comando area di test.  
 
-### <a name="case-5a-bind"></a>Caso 5a: eseguire l'associazione  
+### <a name="case-5a-bind"></a>Case 5a: Eseguire l'associazione  
  Binding consente all'utente di aggiungere le informazioni sul controllo codice sorgente per i progetti selezionati e le soluzioni. L'utente è in genere viene richiesto di identificare un progetto nel controllo del codice sorgente in cui questi devono essere aggiunti. L'utente non può creare un nuovo progetto nel controllo del codice sorgente come parte di questa operazione (a contrasto elevato con Aggiungi al controllo del codice sorgente).  
 
 
@@ -58,7 +55,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 | Associare soluzione mai sotto il controllo del codice sorgente | 1.  Creare una cartella vuota nel controllo del codice sorgente.<br />2.  Creare un progetto client.<br />3.  Aprire **Modifica controllo del codice sorgente** finestra di dialogo (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />4.  Associare la soluzione in un percorso vuoto nel controllo del codice sorgente.<br />5.  Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />6.  Fare clic su **ontinua con le associazioni** nella finestra di dialogo di conferma.<br />7.  Fare clic su **OK** nella finestra di dialogo di avviso se viene visualizzato. | Soluzione viene aggiunta al controllo del codice sorgente.<br /><br /> Soluzioni e progetti sono stati estratti. |
 | Annullare l'associazione | 1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire la finestra di dialogo Modifica controllo del codice sorgente.<br />4.  Dissocia tutti.<br />5.  Fare clic su **OK** per chiudere la finestra di dialogo. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />6.  Riaprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />7.  Eseguire l'associazione alla posizione non correlati.<br />8.  Fare clic su **annullare**. | `Result from Step 5:`<br /><br /> La soluzione non è più in controllo del codice sorgente<br /><br /> `Result from Step 8:`<br /><br /> Soluzione è ancora non in controllo del codice sorgente. |
 
-### <a name="case-5b-unbind"></a>Caso 5b: separazione  
+### <a name="case-5b-unbind"></a>Case 5b: annullamento del binding  
  Dissocia le informazioni sul controllo codice sorgente rimuove da progetti e la propria soluzione. La soluzione e progetti interessati si basano su una combinazione di selezione dell'utente e come gli elementi sono stati aggiunti al controllo del codice sorgente.  
 
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -66,7 +63,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 |Annullamento del binding soluzione contenente un unico File System o progetto Web IIS locale e il progetto client|1.  Creare un File System o un progetto Web IIS locale.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto di client per la soluzione.<br />4.  Se richiesto, accettare controllare della soluzione.<br />5.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />6.  Fare clic su **disassociare**.<br />7.  Fare clic su **OK** per chiudere la finestra di dialogo.<br />8.  Tenta di estrarre soluzioni, progetti, elementi di soluzione, gli elementi del progetto.|Soluzioni e progetti non sono sotto controllo del codice sorgente.<br /><br /> Non vengono visualizzati i comandi di menu di controllo di origine.|  
 |Annullare l'associazione Cancel|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />4.  Fare clic su **disassociare tutti**.<br />5.  Fare clic su **annullare**.|Soluzione consiste nel controllo del codice sorgente.|  
 
-### <a name="case-5c-rebind"></a>Caso 5C: Rebind  
+### <a name="case-5c-rebind"></a>Caso 5C: riassociazione  
  Riassociazione è semplicemente una combinazione di separazione e bind, ovvero il processo di progetto o soluzione che era in precedenza nel controllo del codice sorgente ed è stato dissociato la riassociazione.  
 
 |Operazione|Passi del test|Per verificare i risultati previsti|  

@@ -1,8 +1,6 @@
 ---
 title: Architettura dei componenti aggiuntivi VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dccfd3a3344ef9bde46b0b1e6bed50294d832acb
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 0a7453ad957b5f3da0907ac6887524d6523ac2c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945886"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architettura dei componenti aggiuntivi VSTO
   I componenti aggiuntivi VSTO creati mediante gli strumenti di sviluppo per Office disponibili in Visual Studio hanno caratteristiche correlate all'architettura che accentuano stabilità e sicurezza e che ne permettono l'integrazione con Microsoft Office. Questo argomento descrive gli aspetti seguenti dei componenti aggiuntivi VSTO:  
@@ -115,5 +113,3 @@ ms.locfileid: "53248163"
  [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)   
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
-  
-  

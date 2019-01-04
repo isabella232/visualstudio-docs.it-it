@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e085cc144c35c59a50ec7c46f8087ccbae46fcd7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 683ea72b7bb40ac4b6ff3a739ff650db2abb260a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938355"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Questa interfaccia consente a un motore di debug (DE) o fornitori di porte personalizzato per registrare i programmi per il debug.  
@@ -54,7 +51,7 @@ IDebugProgramPublisher2 : IUnknown
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987340"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile personalizzare l'aspetto e il comportamento della finestra Proprietà. Nella definizione DSL, si definiscono le proprietà di dominio in ogni classe di dominio. Per impostazione predefinita, quando si seleziona un'istanza della classe, in un diagramma o in Esplora modelli, ogni proprietà di dominio è elencato nella finestra Proprietà. Ciò consente di visualizzare e modificare i valori delle proprietà di dominio, anche se non li mappata a campi della forma nel diagramma.
@@ -41,7 +40,7 @@ Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile persona
 
  Sulle forme è possibile esporre il **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** e **FillGradientMode** proprietà. Informazioni sui connettori, è possibile esporre il **colore**`,`**TextColor**, **DashStyle**, e **spessore** proprietà. Nei diagrammi, è possibile esporre il **FillColor** e **TextColor** proprietà.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>L'inoltro: Visualizzazione delle proprietà degli elementi correlati
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Inoltro: Visualizzazione delle proprietà degli elementi correlati
  Quando l'utente del linguaggio DSL seleziona un elemento in un modello, le proprietà dell'elemento vengono visualizzate nella finestra Proprietà. Tuttavia, è inoltre possibile visualizzare le proprietà degli elementi correlati specificati. Ciò è utile se è stato definito un gruppo di elementi che lavorano in combinazione. Ad esempio, è possibile definire un principale e un elemento facoltativo del plug-in. Se l'elemento principale viene eseguito il mapping a una forma e l'altro non lo è, è utile visualizzare tutte le relative proprietà come se fossero per un solo elemento.
 
  Questo effetto è denominato *inoltro proprietà*, e ciò avviene automaticamente in molte situazioni. In altri casi, è possibile ottenere proprietà di inoltro mediante la definizione di un descrittore di tipi di dominio.

@@ -2,7 +2,6 @@
 title: 'CA2239: Fornire metodi di deserializzazione per i campi facoltativi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2239
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b8adb3454b7309eefa49ded129ce899c3cf58
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 572bf56c63e8fcbf9d78738d7cdffcf9540df158
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988964"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Fornire metodi di deserializzazione per i campi facoltativi
 
@@ -54,7 +53,7 @@ ms.locfileid: "45548582"
  [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2236: Chiamare metodi della classe base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Chiamare metodi della classe di base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementare ISerializable in modo corretto](../code-quality/ca2240-implement-iserializable-correctly.md)
 

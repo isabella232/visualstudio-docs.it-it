@@ -1,9 +1,6 @@
 ---
 title: "Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice"
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949336"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice
   È possibile usare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o cartella di lavoro. Per impostazione predefinita, il codice dietro a un documento con limitazioni di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel non è consentito per l'esecuzione. È possibile modificare l'impostazione predefinita, in modo che le estensioni di codice gestito possono accedere il modello a oggetti e la soluzione funzionerà.  
@@ -56,5 +53,3 @@ ms.locfileid: "53648626"
  [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
-  
-  

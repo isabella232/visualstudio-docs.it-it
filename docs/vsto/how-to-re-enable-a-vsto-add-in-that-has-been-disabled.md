@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: riabilitare un VSTO Add-in è stato disabilitato'
-ms.custom: ''
+title: 'Procedura: Riabilitare un VSTO Add-in è stato disabilitato'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939398"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: riabilitare un VSTO Add-in è stato disabilitato
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: Riabilitare un VSTO Add-in è stato disabilitato
   Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Se un'applicazione non carica un componente aggiuntivo VSTO quando si tenta di eseguirne il debug, il componente aggiuntivo VSTO potrebbe essere stato disabilitato dall'applicazione in seguito alla chiusura dell'applicazione (disabilitazione di tipo "hard") o a un errore del componente (disabilitazione di tipo "soft").  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35673226"
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
  [Eseguire il debug di progetti di Office](../vsto/debugging-office-projects.md)   
  [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)  
-  
-  

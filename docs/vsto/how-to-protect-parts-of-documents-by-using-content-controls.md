@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: proteggere parti di documenti mediante controlli contenuto'
-ms.custom: ''
+title: 'Procedura: Proteggere parti di documenti mediante controlli contenuto'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989257"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: proteggere parti di documenti mediante controlli contenuto
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: Proteggere parti di documenti mediante controlli contenuto
   Quando si protegge parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto in quella parte del documento. È possibile proteggere parti di un documento di Microsoft Office Word usando i controlli contenuto in diversi modi.  
   
 - È possibile proteggere un controllo del contenuto.  
@@ -40,7 +37,7 @@ ms.locfileid: "49850360"
 ##  <a name="EditDeleteControl"></a> Proteggere un controllo del contenuto  
  È possibile impedire agli utenti di modificare o eliminare un controllo contenuto impostando le proprietà del controllo in un progetto a livello di documento in fase di progettazione o in fase di esecuzione.  
   
- È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 ### <a name="to-protect-a-content-control-at-design-time"></a>Per proteggere un controllo del contenuto in fase di progettazione  
   
@@ -85,7 +82,7 @@ ms.locfileid: "49850360"
 2.  Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
   
     > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  Nel **controlli** gruppo, fare clic sui **gruppo** pulsante elenco a discesa e quindi fare clic su **gruppo**.  
   
@@ -108,8 +105,7 @@ ms.locfileid: "49850360"
 ## <a name="see-also"></a>Vedere anche  
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   
  [Controlli del contenuto](../vsto/content-controls.md)   
- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

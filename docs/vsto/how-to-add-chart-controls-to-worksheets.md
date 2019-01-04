@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Aggiungere controlli Chart a fogli di lavoro'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4f1c5cd15710e3886e3e8b0ed7483ba3776cef15
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967466"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procedura: Aggiungere controlli Chart a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nelle personalizzazioni a livello di documento. È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli in fase di esecuzione nei componenti aggiuntivi VSTO.  
@@ -93,5 +90,3 @@ ms.locfileid: "53648933"
  [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

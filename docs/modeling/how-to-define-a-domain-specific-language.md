@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959495"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 Per definire un linguaggio specifico di dominio (DSL), creare una soluzione di Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
-Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Selezione di una soluzione di modello
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
@@ -169,9 +168,9 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
 |Come viene visualizzato l'elemento|Classe padre (di incorporamento)|Esempio nel modello di soluzione DSL|
 |-|-|-|
-|Forma in un diagramma.<br /><br /> Corsia.|Classe radice di DSL.|Linguaggio minimo.<br /><br /> Flusso attività: classe Actor.|
-|Forma in una corsia.|Classe di dominio di elementi visualizzati come corsie.|Flusso attività: classe Task.|
-|Elemento in un elenco in una forma, dove l'elemento viene eliminato se viene eliminato il contenitore.<br /><br /> Porta sul bordo di una forma.|Classe di dominio mappata alla forma contenitore.|Diagramma classi: classe Attribute.<br /><br /> Diagramma componenti: classe Port.|
+|Forma in un diagramma.<br /><br /> Corsia.|Classe radice di DSL.|Linguaggio minimo.<br /><br /> Flusso attività: Classe Actor.|
+|Forma in una corsia.|Classe di dominio di elementi visualizzati come corsie.|Flusso attività: Classe dell'attività.|
+|Elemento in un elenco in una forma, dove l'elemento viene eliminato se viene eliminato il contenitore.<br /><br /> Porta sul bordo di una forma.|Classe di dominio mappata alla forma contenitore.|Diagramma di classi: Classe di attributi.<br /><br /> Diagramma dei componenti: Classe porta.|
 |Elemento in un elenco, non eliminato se viene eliminato il contenitore.|Classe radice di DSL.<br /><br /> L'elenco visualizza i collegamenti di riferimento.||
 |Non visualizzato direttamente.|La classe di cui costituisce una parte.||
 
@@ -187,7 +186,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 >  L'incorporamento è diverso dall'ereditarietà. I figli in una relazione di incorporamento non ereditano le funzionalità dai padri.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Aggiungere le proprietà di dominio a ogni classe di dominio
- Nelle proprietà di dominio vengono archiviati i valori. Esempi: Nome, Titolo, Data di pubblicazione.
+ Nelle proprietà di dominio vengono archiviati i valori. Esempi sono: Nome, titolo, data di pubblicazione.
 
  Fare clic su **delle proprietà di dominio** nella classe, premere il tasto INVIO e quindi digitare il nome di una proprietà. Il tipo predefinito di una proprietà di dominio è String. Se si desidera modificare il tipo, selezionare la proprietà di dominio e impostare il **tipo** nel **proprietà** finestra. Se il tipo desiderato non è presente nell'elenco a discesa scegliere, vedere [aggiunta di tipi di proprietà](#addTypes).
 
@@ -409,7 +408,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
    Dopo aver testato un connettore, potrebbe essere necessario modificarne alcune proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a> Definizione di forme che contengono elenchi: forme raggruppamento
+## <a name="compartments"></a> Definizione di forme che contengono elenchi: Forme raggruppamento
  Una forma raggruppamento contiene uno o più elenchi di elementi. Ad esempio, in un linguaggio DSL di una raccolta musicale, è possibile usare forme raggruppamento per rappresentare gli album musicali. In ogni album c'è un elenco di brani.
 
  ![Forma Raggruppamento](../modeling/media/compartmentshape.png)
@@ -605,7 +604,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Tenere quindi presente che, quando si cambiano alcune relazioni nella definizione DSL, non è insolito che vengano segnalati errori quando si salva la definizione o quando si trasformano tutti i modelli. La maggior parte di questi errori è facile da correggere. Fare doppio clic sul report errori per vedere la posizione dell'errore.
 
- Vedere anche [procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Vedere anche [Procedura: Modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Risoluzione dei problemi
  La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estensibilità degli strumenti di visualizzazione](http://go.microsoft.com/fwlink/?LinkId=186074).
@@ -619,8 +618,8 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 | È stata creata una classe di dominio, ma non è possibile creare le istanze nella finestra di esplorazione linguaggio. | Ogni classe di dominio, tranne quella radice, deve essere la destinazione di una relazione di incorporamento. |
 | Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo. | Nella definizione DSL, selezionare una proprietà di dominio della classe e nelle proprietà della finestra, impostare **è nome elemento** su true. |
 | Il linguaggio DSL si apre sempre nell'editor XML. | Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic sull'elemento del progetto, fare clic su **Apri con** e selezionare * Linguaggioutente ***progettazione (impostazione predefinita)**. |
-| La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly. | Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** per altre informazioni, vedere [procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione. | Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In Windows il menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta l'istanza Microsoft Visual Studio sperimentale**.<br />2.  Nel **compilare** menu, fare clic su **Ricompila soluzione**. |
+| La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly. | Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** per altre informazioni, vedere [come: Modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione. | Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In Windows il menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta l'istanza Microsoft Visual Studio sperimentale**.<br />2.  Nel menu **Compila** fare clic su **Ricompila soluzione**. |
 
 ## <a name="see-also"></a>Vedere anche
 

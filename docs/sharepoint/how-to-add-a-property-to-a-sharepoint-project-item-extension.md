@@ -1,9 +1,6 @@
 ---
-title: "Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Aggiungere una proprietà a un'estensione di elemento di progetto SharePoint | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1af848f432183153707b2debfed563f3a00d4156
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950186"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Procedura: Aggiungere una proprietà a un'estensione di elemento di progetto SharePoint
   È possibile utilizzare un'estensione di elemento di progetto per aggiungere una proprietà in qualsiasi elemento di progetto SharePoint che è già installato in Visual Studio. La proprietà viene visualizzata nel **delle proprietà** finestra quando l'elemento del progetto viene selezionato in **Esplora soluzioni**.  
   
- I passaggi seguenti presuppongono che un'estensione di elemento di progetto è già stato creato. Per altre informazioni, vedere [procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ I passaggi seguenti presuppongono che un'estensione di elemento di progetto è già stato creato. Per altre informazioni, vedere [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Per aggiungere una proprietà a un'estensione di elemento di progetto  
   
@@ -72,9 +69,7 @@ ms.locfileid: "36758099"
  Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Procedura: aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Procedura: Aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Estendere gli elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

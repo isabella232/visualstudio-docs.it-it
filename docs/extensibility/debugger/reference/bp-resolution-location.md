@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954513"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Specifica la struttura del percorso di risoluzione dei punti di interruzione.  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [Solo C++] Un segnaposto.  
   
  `unionmember1`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember2`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember3`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember4`  
- [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
+ [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
   
 ## <a name="remarks"></a>Note  
  Questa struttura è un membro del [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) strutture.  
   
- [Solo in c#] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpType` tra valore quindi per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling il `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare questa struttura in c#.  
+ [C# solo] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpType` tra valore quindi per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling il `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare questa struttura in c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -116,7 +113,7 @@ namespace MyPackage
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

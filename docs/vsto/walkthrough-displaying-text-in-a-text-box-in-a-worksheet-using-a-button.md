@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante'
-ms.custom: ''
+title: 'Procedura dettagliata: Testo visualizzato in una casella di testo in un foglio di lavoro tramite un pulsante'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d7cf32019d3bfa1e6690512f4f348728a409bbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941610"
 ---
-# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procedura dettagliata: Visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante
+# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procedura dettagliata: Testo visualizzato in una casella di testo in un foglio di lavoro tramite un pulsante
   Questa procedura dettagliata illustra le nozioni di base dell'uso di pulsanti e caselle di testo in fogli di lavoro di Microsoft Office Excel e come creare progetti di Excel con strumenti di sviluppo per Office in Visual Studio. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -53,7 +50,7 @@ ms.locfileid: "49840285"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto cartella di lavoro di Excel con il nome **My Button Excel**. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto cartella di lavoro di Excel con il nome **My Button Excel**. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Button Excel** progetto al **Esplora soluzioni**.  
   
@@ -72,7 +69,7 @@ ms.locfileid: "49840285"
   
 5. Trascinare un **sul pulsante** sul controllo `Sheet1` e modificare le proprietà seguenti:  
   
-   |Proprietà|Valore|  
+   |Proprietà|Value|  
    |--------------|-----------|  
    |**Name**|**insertText**|  
    |**per**|**Inserisci testo**|  
@@ -91,7 +88,7 @@ ms.locfileid: "49840285"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  In c#, è necessario aggiungere un gestore eventi per il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, come illustrato di seguito. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  In c#, è necessario aggiungere un gestore eventi per il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, come illustrato di seguito. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
@@ -111,11 +108,9 @@ ms.locfileid: "49840285"
   
 -   La distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
--   Usando le caselle di controllo per modificare la formattazione. Per altre informazioni, vedere [procedura dettagliata: modifica del foglio di lavoro formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Usando le caselle di controllo per modificare la formattazione. Per altre informazioni, vedere [Procedura dettagliata: Modificare la formattazione del foglio di lavoro mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Procedura: Aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)   
  [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

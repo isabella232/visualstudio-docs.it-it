@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960037"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in corrispondenza del quale è possibile definire gli strumenti di modellazione:
@@ -57,13 +56,13 @@ Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in co
 |Mantenere il layout di forme e appaiono sulla copia e trascinare.|Aggiungere le forme e connettori per l'insieme copiato `ElementGroupPrototype`. È il metodo più semplice per eseguire l'override `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Visualizzare [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
 |Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.|Eseguire l'override `ClipboardCommandSet.ProcessOnCopy()` usare la versione del percorso specifica `ElementOperations.Merge().` vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
 |Creare collegamenti aggiuntivi quando si incolla|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|Abilita il trascinamento da questo diagramma, altri linguaggi specifici di dominio e Windows elementi|Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Abilita il trascinamento da questo diagramma, altri linguaggi specifici di dominio e Windows elementi|Vedere [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Consentire una forma o dello strumento è possibile trascinare una forma figlio, ad esempio una porta, come se si sono stato trascinato l'elemento padre.|Definire una direttiva di unione elementi nella classe di oggetto di destinazione, per inoltrare l'oggetto rilasciato per l'elemento padre. Visualizzare [personalizzazione di spostamento e la creazione dell'elemento](../modeling/customizing-element-creation-and-movement.md).|
 |Consentire una forma o lo strumento è possibile trascinare una forma e collegamenti aggiuntivi o gli oggetti creati. Ad esempio, per consentire a trascinare un elemento a cui è possibile collegare un commento.|Definire una direttiva di unione elementi nella classe di dominio di destinazione e i collegamenti da generare. In scenari complessi, è possibile aggiungere codice personalizzato. Visualizzare [personalizzazione di spostamento e la creazione dell'elemento](../modeling/customizing-element-creation-and-movement.md).|
 |Creare un gruppo di elementi con uno degli strumenti. Ad esempio, un componente con un set fisso di porte.|Eseguire l'override del metodo di inizializzazione della casella degli strumenti in ToolboxHelper.cs. Creare un prototipo di gruppo elemento (EGP) che contiene gli elementi e i relativi collegamenti di relazione. Visualizzare [personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Includere le forme dell'entità e la porte in EGP oppure definire BoundsRules per posizionare le forme porta quando viene creata un'istanza di EGP. Visualizzare [(BoundsRules) vincolano posizione e dimensione](../modeling/boundsrules-constrain-shape-location-and-size.md).|
 |Usare uno strumento di connessione per creare un'istanza di diversi tipi di relazione.|Aggiungere direttive di connessione collegamento (LCD) per il generatore di connessione che viene richiamato dallo strumento. Il monitor LCD a determinare il tipo della relazione tra i tipi dei due elementi. Per semplificare questa dipendono gli stati degli elementi, è possibile aggiungere codice personalizzato. Visualizzare [personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md).|
 |Sticky strumenti - l'utente può fare doppio clic su qualsiasi strumento per creare molte forme o connettori in successione.|In Esplora DSL, selezionare il `Editor` nodo. Nella finestra Proprietà impostare **Usa permanenti gli elementi della casella degli strumenti**.|
-|Definire i comandi di menu|Vedere [procedura: modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Definire i comandi di menu|Vedere [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Vincolare il modello con le regole di convalida|Vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)|
 |Generare codice, i file di configurazione o documenti da un linguaggio DSL.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Personalizzare la modalità con cui i modelli vengono salvati in file.|Vedere [personalizzazione dell'archiviazione di File e serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

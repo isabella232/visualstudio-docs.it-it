@@ -1,9 +1,6 @@
 ---
-title: 'Procedura dettagliata: Creare menu di scelta rapida per segnalibri'
-ms.custom: ''
+title: 'Procedura dettagliata: Creare i menu di scelta rapida per segnalibri'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940553"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procedura dettagliata: Creare menu di scelta rapida per segnalibri
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procedura dettagliata: Creare i menu di scelta rapida per segnalibri
   Questa procedura dettagliata viene illustrato come creare i menu di scelta rapida per <xref:Microsoft.Office.Tools.Word.Bookmark> controlli in una personalizzazione a livello di documento per Word. Quando un utente fa clic il testo in un segnalibro, un menu di scelta rapida viene visualizzata e fornisce le opzioni utente per la formattazione del testo.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49884082"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
--   Creare un progetto documento di Word con il nome **risorse del Menu di scelta rapida di segnalibro**. Nella procedura guidata, selezionare **creare un nuovo documento**. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Creare un progetto documento di Word con il nome **risorse del Menu di scelta rapida di segnalibro**. Nella procedura guidata, selezionare **creare un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **risorse del Menu di scelta rapida di segnalibro** progetto al **Esplora soluzioni**.  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884082"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Per aggiungere comandi al menu di scelta rapida  
   
-1.  Aggiungere un **XML della barra multifunzione** elemento al progetto. Per altre informazioni, vedere [procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Aggiungere un **XML della barra multifunzione** elemento al progetto. Per altre informazioni, vedere [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  Nelle **Esplora soluzioni**, selezionare **ThisDocument.cs** oppure **ThisDocument. vb**.  
   
@@ -169,7 +166,7 @@ ms.locfileid: "49884082"
     > [!NOTE]  
     >  È necessario scrivere codice per gestire il caso in cui si sovrappongono segnalibri. In caso contrario, per impostazione predefinita, il codice verrà chiamato per tutti i segnalibri nella selezione.  
   
-5.  In c#, è necessario aggiungere i gestori eventi per i controlli segnalibro di <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Per informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In c#, è necessario aggiungere i gestori eventi per i controlli segnalibro di <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
@@ -191,9 +188,9 @@ ms.locfileid: "49884082"
 ## <a name="next-steps"></a>Passaggi successivi  
  Ecco alcune possibili attività successive:  
   
--   Scrivere codice per rispondere agli eventi dei controlli host di Excel. Per altre informazioni, vedere [procedura dettagliata: programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+-   Scrivere codice per rispondere agli eventi dei controlli host di Excel. Per altre informazioni, vedere [Procedura dettagliata: Programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Usare una casella di controllo per modificare la formattazione in un segnalibro. Per altre informazioni, vedere [procedura dettagliata: modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Usare una casella di controllo per modificare la formattazione in un segnalibro. Per altre informazioni, vedere [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884082"
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   
  [Bookmark (controllo)](../vsto/bookmark-control.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

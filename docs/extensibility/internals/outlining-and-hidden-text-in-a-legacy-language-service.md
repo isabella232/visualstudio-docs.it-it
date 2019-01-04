@@ -1,9 +1,6 @@
 ---
-title: Testo della struttura e nascosto in un servizio di linguaggio Legacy | Documenti Microsoft
-ms.custom: ''
+title: Struttura e testo nascosto in un servizio di linguaggio Legacy | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining, supporting in native code
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 509b2a27444847fd5ae20dbf0ecee89e05357456
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c63ba54a8dd35f884b07d9d7cf676c5477d6ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966927"
 ---
-# <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Testo della struttura e nascosto in un servizio di linguaggio Legacy
-Struttura consente di comprimere una sequenza di righe di testo in una singola riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che può essere visualizzato o nascosto.  
+# <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Definizione della struttura e testo nascosto in un servizio di linguaggio legacy
+La struttura rende possibile comprimere una sequenza di righe di testo in una singola riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Testo nascosto è la sequenza di righe di testo che può essere visualizzato o nascosto.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Fornire il supporto per la struttura in un servizio di linguaggio legacy](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
+ [Procedura: Supporta la struttura in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  Viene illustrato come implementare  
   
- [Procedura: Fornire il supporto per il testo nascosto in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Procedura: Fornire il supporto di testo nascosto in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Viene illustrato lo scopo di un'area di testo nascosto e vengono fornite istruzioni su come implementare un'area di testo nascosto.  
   
- [Procedura: Fornire il supporto per la struttura espansa in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Vengono descritte le due opzioni che estendono il supporto della struttura per il linguaggio oltre, supportando il *Comprimi alle definizioni* comando.
+ [Procedura: Fornire supporto per la struttura espanso in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ Illustra le due opzioni che estendono il supporto della struttura per il linguaggio oltre, supportando il *Comprimi alle definizioni* comando.

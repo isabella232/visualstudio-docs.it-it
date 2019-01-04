@@ -1,12 +1,8 @@
 ---
 title: Parametri sostituibili | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989164"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   Parametri sostituibili, oppure *token*, può essere usato nei file di progetto per fornire valori per elementi di soluzione SharePoint con i valori effettivi non sono noti in fase di progettazione. Si tratta di una funzione simile allo standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token del modello. Per altre informazioni, vedere [parametri di modello](../ide/template-parameters.md).  

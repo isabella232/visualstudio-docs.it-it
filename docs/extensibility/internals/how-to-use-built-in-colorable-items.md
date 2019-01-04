@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: usare elementi colorabili incorporati | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare elementi colorabili incorporati | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b537c28f34faff1eff0502642236413f2ade2da1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0884ecd265522b2b0f2a222e12cb01c34c7e8c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947296"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Procedura: usare elementi colorabili incorporati
+# <a name="how-to-use-built-in-colorable-items"></a>Procedura: Usare elementi colorabili incorporati
 Prima di usare gli elementi colorabili incorporati, è necessario prima segnalare all'ambiente di sviluppo integrato (IDE) che non si specifica i proprio elementi colorabili personalizzati, che in questo caso sarebbe <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> oggetti. Eseguire questa operazione impostando una voce del Registro di sistema per il servizio di linguaggio.  
   
 ## <a name="to-use-built-in-colorable-items"></a>Usare elementi colorabili incorporati  

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: utilizzare le transazioni per aggiornare il modello'
+title: 'Procedura: Usare le transazioni per aggiornare il modello'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 97eb050bb99c522f5c5e97ea3355f3146086c29e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938342"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
+# <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: Usare le transazioni per aggiornare il modello
 Le transazioni assicurarsi che le modifiche apportate all'archivio siano considerate come un gruppo. Le modifiche che sono raggruppate possono essere eseguito il commit o rollback come unità singola.
 
  Ogni volta che il codice del programma modifica, aggiunge o elimina qualsiasi elemento di Store in Visual Studio Visualization and Modeling SDK, è necessario farlo in una transazione. Deve esistere un'istanza attiva del <xref:Microsoft.VisualStudio.Modeling.Transaction> associata con il Store quando avviene la modifica. Questo vale per tutti gli elementi del modello, relazioni, forme, diagrammi e le relative proprietà.

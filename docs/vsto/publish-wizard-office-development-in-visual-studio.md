@@ -1,9 +1,6 @@
 ---
 title: Pubblicazione guidata (sviluppo per Office in Visual Studio)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965921"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
   Usare la **pubblicazione guidata** per copiare i file della soluzione in una posizione specificata, creare i file manifesto e creare un programma di installazione.  
@@ -53,7 +50,7 @@ ms.locfileid: "50672749"
 >  Se il computer di destinazione è in esecuzione Windows Vista, esistono ulteriori considerazioni. È necessario essere un amministratore nel computer Windows Vista per utilizzare l'opzione di pubblicazione locale. Inoltre, il percorso predefinito è sempre il *pubblicare\\*  directory, indipendentemente dal fatto che è installato IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Che cos'è il percorso di installazione predefinito sul computer degli utenti finali?  
- Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [procedura: modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [come: Modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  Il percorso di installazione è la directory da cui l'utente finale installerà la personalizzazione. È anche il percorso usato dalla soluzione per controllare la disponibilità di aggiornamenti. Il **pubblicazione guidata** distribuisce la soluzione in questa posizione, a meno che il percorso è identico a quello immesso nella **specificare il percorso per pubblicare l'applicazione** casella sulla pagina precedente.  
   
@@ -72,5 +69,3 @@ ms.locfileid: "50672749"
  [Distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Pagina pubblica, creazione progetti &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
-  
-  

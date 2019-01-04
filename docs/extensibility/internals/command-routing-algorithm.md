@@ -1,9 +1,6 @@
 ---
 title: Algoritmo di Routing di comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11b7d08821be981254162f930251968773a7c54
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e2a99fc6e87e59bf4cc0008c20905f9dc145102b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965577"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo di routing di comandi
 In Visual Studio i comandi vengono gestiti da un numero di componenti diversi. I comandi sono indirizzati da un contesto più interno, basata sulla selezione corrente, nel contesto più esterno (noto anche come globale). Per altre informazioni, vedere [comando disponibilità](../../extensibility/internals/command-availability.md).  
@@ -27,19 +24,19 @@ In Visual Studio i comandi vengono gestiti da un numero di componenti diversi. I
 ## <a name="order-of-command-resolution"></a>Ordine di risoluzione di comando  
  I comandi vengono passati attraverso i livelli di contesto del comando seguenti:  
   
-1.  Componenti aggiuntivi: L'ambiente offre prima di tutto il comando per i componenti aggiuntivi che sono presenti.  
+1.  Componenti aggiuntivi: In primo luogo, l'ambiente offre il comando per i componenti aggiuntivi che sono presenti.  
   
-2.  I comandi di priorità: questi comandi vengono registrati tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>. Quando vengono chiamate per ogni comando in Visual Studio e vengono chiamati nell'ordine in cui sono stati registrati.  
+2.  Comandi di priorità: Questi comandi vengono registrati tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>. Quando vengono chiamate per ogni comando in Visual Studio e vengono chiamati nell'ordine in cui sono stati registrati.  
   
-3.  Comandi di menu di scelta rapida: un comando che si trova in un menu di scelta rapida prima di tutto viene offerto alla destinazione del comando che viene fornita per il menu di scelta rapida e in seguito al routing tipico.  
+3.  Comandi di menu di scelta rapida: Un comando che si trova in un menu di scelta rapida prima di tutto viene offerto alla destinazione del comando che viene fornita per il menu di scelta rapida e in seguito al routing tipico.  
   
-4.  Sulla barra degli strumenti imposta destinazioni dei comandi: queste destinazioni di comando vengono registrate quando si chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>. Il `pCmdTarget` parametro può essere `null`. Se non è `null`, questa destinazione del comando viene usato per aggiornare tutti i comandi che si trova sulla barra degli strumenti che si sta impostando. Se la shell sta configurando la barra degli strumenti, quindi passa la cornice della finestra di `pCmdTarget` in modo che tutti gli aggiornamenti per i comandi al flusso della barra degli strumenti tramite cornice della finestra, anche quando non è in stato attivo.  
+4.  Sulla barra degli strumenti imposta destinazioni dei comandi: Queste destinazioni di comando vengono registrate quando si chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>. Il `pCmdTarget` parametro può essere `null`. Se non è `null`, questa destinazione del comando viene usato per aggiornare tutti i comandi che si trova sulla barra degli strumenti che si sta impostando. Se la shell sta configurando la barra degli strumenti, quindi passa la cornice della finestra di `pCmdTarget` in modo che tutti gli aggiornamenti per i comandi al flusso della barra degli strumenti tramite cornice della finestra, anche quando non è in stato attivo.  
   
-5.  Finestra degli strumenti: strumento windows, che in genere implementano la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> l'interfaccia, deve implementare anche il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia in modo che Visual Studio è possibile ottenere la destinazione del comando quando la finestra degli strumenti è la finestra attiva. Tuttavia, se la finestra degli strumenti con stato attivo si trova il **progetto** finestra, quindi il comando viene instradato al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia padre comune degli elementi selezionati. Se questa selezione si estende su più progetti, il comando viene indirizzato il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> gerarchia. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia contiene il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metodi che sono analoghi per i corrispondenti comandi il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.  
+5.  Finestra degli strumenti: Strumento windows, che in genere implementano la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> l'interfaccia, deve implementare anche il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia in modo che Visual Studio è possibile ottenere la destinazione del comando quando la finestra degli strumenti è la finestra attiva. Tuttavia, se la finestra degli strumenti con stato attivo si trova il **progetto** finestra, quindi il comando viene instradato al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia padre comune degli elementi selezionati. Se questa selezione si estende su più progetti, il comando viene indirizzato il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> gerarchia. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia contiene il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metodi che sono analoghi per i corrispondenti comandi il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.  
   
-6.  Finestra del documento: se il comando ha il `RouteToDocs` flag impostato nel relativo *vsct* file di Visual Studio cerca una destinazione del comando nell'oggetto visualizzazione del documento, vale a dire un'istanza di un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia o un'istanza di un oggetto del documento (in genere un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaccia o un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interface). Se l'oggetto visualizzazione del documento non supporta il comando, Visual Studio consente di indirizzare il comando per il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia restituita. (Questa è un'interfaccia facoltativa per oggetti dati documenti).  
+6.  Finestra del documento: Se il comando ha il `RouteToDocs` flag impostato nel relativo *vsct* file di Visual Studio cerca una destinazione del comando nell'oggetto visualizzazione del documento, vale a dire un'istanza di un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia o un'istanza di un documento oggetto ( in genere un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaccia o un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interface). Se l'oggetto visualizzazione del documento non supporta il comando, Visual Studio consente di indirizzare il comando per il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia restituita. (Questa è un'interfaccia facoltativa per oggetti dati documenti).  
   
-7.  Gerarchia corrente: la gerarchia corrente può essere il progetto a cui appartiene la finestra del documento attivo o la gerarchia selezionata nel **Esplora soluzioni**. Visual Studio cerca il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia implementata sulla gerarchia attiva o corrente. La gerarchia deve supportare i comandi che sono validi, ogni volta che la gerarchia è attiva, anche se una finestra del documento di un elemento del progetto ha lo stato attivo. Tuttavia, i comandi che si applicano solo quando **Esplora soluzioni** ha lo stato attivo deve essere supportato usando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia e la relativa <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metodi.  
+7.  Gerarchia corrente: La gerarchia corrente può essere il progetto a cui appartiene la finestra del documento attivo o la gerarchia selezionata nel **Esplora soluzioni**. Visual Studio cerca il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia implementata sulla gerarchia attiva o corrente. La gerarchia deve supportare i comandi che sono validi, ogni volta che la gerarchia è attiva, anche se una finestra del documento di un elemento del progetto ha lo stato attivo. Tuttavia, i comandi che si applicano solo quando **Esplora soluzioni** ha lo stato attivo deve essere supportato usando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia e la relativa <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metodi.  
   
      **Tagliare**, **copia**, **Incolla**, **eliminare**, **rinominare**, **immettere**e **DoubleClick** comandi richiedono una gestione speciale. Per informazioni su come gestire **eliminare** e **rimuovere** comandi nelle gerarchie, vedere il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfaccia.  
   

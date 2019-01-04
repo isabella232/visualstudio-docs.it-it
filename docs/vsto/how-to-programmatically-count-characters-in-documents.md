@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: contare i caratteri nei documenti a livello di codice'
-ms.custom: ''
+title: 'Procedura: Contare i caratteri nei documenti a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 46ead2f1774d779706e8aa6eeb3f1e9c6b1d0ce1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c86eade90d36ca62ad361c757660bcada71a6a4c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960761"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Procedura: contare i caratteri nei documenti a livello di codice
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Procedura: Contare i caratteri nei documenti a livello di codice
   Il primo carattere in un documento è nella posizione del carattere 0, che rappresenta il punto di inserimento. La posizione dell'ultimo carattere è uguale al numero totale di caratteri nel documento. È possibile determinare il numero di caratteri in un documento usando la proprietà <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Characters> .  
   
  Tutti i caratteri del documento vengono contati, inclusi gli spazi, i segni di paragrafo e altri caratteri che sono normalmente nascosti. Anche un nuovo documento vuoto restituisce un numero di un solo carattere perché contiene un segno di paragrafo.  
@@ -56,7 +53,5 @@ ms.locfileid: "35672727"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
-  
-  
+ [Procedura: Recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
