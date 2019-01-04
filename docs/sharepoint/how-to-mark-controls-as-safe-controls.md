@@ -1,13 +1,8 @@
 ---
-title: 'Procedura: contrassegnare i controlli come controlli sicuri | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Contrassegnare i controlli come controlli sicuri | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989374"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: contrassegnare i controlli come controlli sicuri
+# <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: Contrassegnare i controlli come controlli sicuri
   Per la sicurezza, SharePoint consente di distinguere tra i controlli Web che sono protetti dagli attacchi script injection e Web che non sono. Protetto (controlli), oppure *controlli sicuri*, sono accessibili da utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà di un elemento di progetto SharePoint o in voci di controllo sicure le **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere  
   
  [Modifica delle impostazioni Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [la registrazione di un Assembly della Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkId=171013).  
@@ -107,7 +102,7 @@ ms.locfileid: "37119812"
   
 15. Immettere i valori per le proprietà contenute nella tabella seguente.  
   
-    |Nome proprietà|Valore|  
+    |Nome proprietà|Value|  
     |-------------------|-----------|  
     |Spazio dei nomi|Il nome completo dello spazio dei nomi per il controllo, ad esempio **BdcModelProject1.VisualWebPart1**.|  
     |Nome tipo|TextBox1|  
@@ -120,4 +115,3 @@ ms.locfileid: "37119812"
 ## <a name="see-also"></a>Vedere anche
  [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

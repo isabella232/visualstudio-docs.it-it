@@ -125,42 +125,42 @@ items:
       href: editor-imports.md
     - name: Supporto di EditorConfig
       href: supporting-editorconfig.md
-    - name: "Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione"
+    - name: "Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione"
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-    - name: 'Procedura dettagliata: creazione di un glifo di margine'
+    - name: 'Procedura dettagliata: Creazione di un glifo del margine'
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 'Procedura dettagliata: personalizzazione della visualizzazione di testo'
+    - name: 'Procedura dettagliata: Personalizzazione della visualizzazione di testo'
       href: walkthrough-customizing-the-text-view.md
-    - name: "Procedura dettagliata: creazione di un'area di controllo di visualizzazione, di comandi e impostazioni (guide di colonne)"
+    - name: "Procedura dettagliata: Creazione di un'area di controllo di visualizzazione, di comandi e impostazioni (guide di colonne)"
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'Procedura dettagliata: evidenziazione del testo'
+    - name: 'Procedura dettagliata: Evidenziazione del testo'
       href: walkthrough-highlighting-text.md
-    - name: 'Procedura dettagliata: definizione della struttura'
+    - name: 'Procedura dettagliata: struttura'
       href: walkthrough-outlining.md
-    - name: 'Procedura dettagliata: visualizzazione della corrispondenza parentesi graffe'
+    - name: 'Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe'
       href: walkthrough-displaying-matching-braces.md
-    - name: 'Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase'
+    - name: 'Procedura dettagliata: Visualizzazione delle descrizioni comando di InformazioniBase'
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 'Procedura dettagliata: visualizzazione della Guida per la firma'
+    - name: 'Procedura dettagliata: Visualizzazione della funzionalità di supporto alla firma'
       href: walkthrough-displaying-signature-help.md
-    - name: 'Procedura dettagliata: visualizzazione del completamento istruzioni'
+    - name: 'Procedura dettagliata: Visualizzazione del completamento di istruzioni'
       href: walkthrough-displaying-statement-completion.md
-    - name: 'Procedura dettagliata: implementazione di frammenti di codice'
+    - name: 'Procedura dettagliata: Implementazione di frammenti di codice'
       href: walkthrough-implementing-code-snippets.md
-    - name: 'Procedura dettagliata: visualizzazione dei suggerimenti delle icone lampadina'
+    - name: 'Procedura dettagliata: Visualizzazione dei suggerimenti delle icone lampadina'
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: "Procedura dettagliata: uso di un comando della shell con un'estensione dell'editor"
+    - name: "Procedura dettagliata: Uso di un comando della shell con un'estensione dell'editor"
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: "Procedura dettagliata: uso di una combinazione di tasti con un'estensione dell'editor"
+    - name: "Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'editor"
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-    - name: "Procedura dettagliata: accesso all'oggetto DTE da un'estensione dell'editor"
+    - name: "Procedura dettagliata: Accesso all'oggetto DTE da un'estensione dell'editor"
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: Creazione di finestre di progettazione ed editor personalizzati
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 'Procedura dettagliata: creazione di un editor personalizzato'
+    - name: 'Procedura dettagliata: Creazione di un editor personalizzato'
       href: walkthrough-creating-a-custom-editor.md
-    - name: 'Procedura dettagliata: aggiunta di funzionalità in un editor personalizzato'
+    - name: 'Procedura dettagliata: Aggiunta di funzionalità in un editor personalizzato'
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: Inizializzazione della finestra di progettazione e configurazione dei metadati
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Elemento Assembly (estensione della Creazione guidata modelli di Visual Studio)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (modelli di Visual Studio)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: BuildOnLoad (attributo ed elemento) (modelli di Visual Studio)
+      href: buildonload-visual-studio-templates.md
+    - name: Elemento BuildProjectOnload (modelli di Visual Studio)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (modelli di Visual Studio)
       href: createinplace-visual-studio-templates.md
     - name: Elemento CreateNewFolder (modelli di Visual Studio)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: Elemento RequiredFrameworkVersion (modelli di Visual Studio)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: Elemento RequiredPlatformVersion (modelli di Visual Studio)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: Elemento SDKReference (modelli di Visual Studio)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (modelli di Visual Studio)
       href: showbydefault-visual-studio-templates.md
     - name: Elemento SolutionFolder (modelli di Visual Studio)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: Elemento SupportsMasterPage (modelli di Visual Studio)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: Elemento TargetPlatformName (Modelli di Visual Studio)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: Elemento TemplateContent (modelli di Visual Studio)
       href: templatecontent-element-visual-studio-templates.md
     - name: Elemento TemplateData (modelli di Visual Studio)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: Elemento WizardExtension (modelli di Visual Studio)
       href: wizardextension-element-visual-studio-templates.md
-    - name: Elemento BuildProjectOnload (modelli di Visual Studio)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: Elemento RequiredPlatformVersion (modelli di Visual Studio)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: Elemento SDKReference (modelli di Visual Studio)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: Elemento TargetPlatformName (Modelli di Visual Studio)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Informazione di riferimento sullo schema del manifesto dei modelli di Visual Studio
     href: visual-studio-template-manifest-schema-reference.md
 - name: Estensione di opzioni e impostazioni utente
@@ -365,13 +365,13 @@ items:
   - name: Creazione di una pagina iniziale personalizzata
     href: creating-a-custom-start-page.md
     items:
-    - name: 'Procedura dettagliata: aggiunta di codice XAML personalizzato nella pagina iniziale'
+    - name: 'Procedura dettagliata: Aggiunta di codice XAML personalizzato nella pagina iniziale'
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: Aggiunta di un controllo utente nella pagina iniziale
       href: adding-user-control-to-the-start-page.md
     - name: Aggiunta di comandi di Visual Studio in una pagina iniziale
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 'Procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale'
+    - name: 'Procedura dettagliata: Salvataggio delle impostazioni utente in una pagina iniziale'
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: Distribuzione di pagine iniziali personalizzate
       href: deploying-custom-start-pages.md
@@ -426,7 +426,7 @@ items:
     href: vsix-project-template.md
   - name: Introduzione al modello di progetto VSIX
     href: getting-started-with-the-vsix-project-template.md
-  - name: "Procedura dettagliata: pubblicazione di un'estensione di Visual Studio"
+  - name: "Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio"
     href: walkthrough-publishing-a-visual-studio-extension.md
   - name: "Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio tramite la riga di comando"
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
@@ -728,11 +728,11 @@ items:
 - name: Creazione di un Software Development Kit
   href: creating-a-software-development-kit.md
   items:
-  - name: 'Procedura dettagliata: creazione di un SDK con C# o Visual Basic'
+  - name: 'Procedura dettagliata: Creazione di un SDK con C# o Visual Basic'
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-  - name: 'Procedura dettagliata: creazione di un SDK con C++'
+  - name: 'Procedura dettagliata: Creazione di un SDK con C++'
     href: walkthrough-creating-an-sdk-using-cpp.md
-  - name: 'Procedura dettagliata: creazione di un SDK con JavaScript'
+  - name: 'Procedura dettagliata: Creazione di un SDK con JavaScript'
     href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Estendibilità della piattaforma del compilatore .NET ("Roslyn")
   href: dotnet-compiler-platform-roslyn-extensibility.md
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Informazioni di riferimento sulle versioni dei pacchetti Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562360"

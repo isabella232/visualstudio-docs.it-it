@@ -1,9 +1,6 @@
 ---
 title: 'Procedura: Accedere a livello di codice ai contatti di Outlook'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 662190d3db9c3d384d60f4953ea3809cb726f76c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3b02ecc421c2e6c5876061821c8d87e180a4d9a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965382"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Procedura: Accedere a livello di codice ai contatti di Outlook
   Questo esempio vengono trovati tutti i contatti il cui cognome contengano una stringa di ricerca specificato.  
@@ -43,5 +40,3 @@ ms.locfileid: "53801723"
  [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
  [Procedura: Eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
  [Procedura: A livello di codice eliminare contatti di Outlook](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
-  
-  

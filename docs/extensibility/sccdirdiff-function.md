@@ -1,9 +1,6 @@
 ---
 title: Funzione SccDirDiff | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDirDiff
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eea561b82b06d44dfbc787172e7ae063b421e2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b335feeeb1f2b67bb36fb31b0f6966e8a4c3ea93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956855"
 ---
 # <a name="sccdirdiff-function"></a>Funzione SccDirDiff
 Questa funzione consente di visualizzare le differenze tra la directory corrente del disco di client e il progetto corrispondente nel controllo del codice sorgente.  

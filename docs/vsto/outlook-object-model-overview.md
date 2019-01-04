@@ -1,9 +1,6 @@
 ---
 title: Cenni preliminari sul modello a oggetti di Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945353"
 ---
 # <a name="outlook-object-model-overview"></a>Cenni preliminari sul modello a oggetti di Outlook
   Per sviluppare componenti aggiuntivi VSTO per Microsoft Office Outlook, è possibile interagire con gli oggetti forniti dal modello a oggetti di Outlook. Il modello a oggetti di Outlook fornisce classi e interfacce che rappresentano elementi nell'interfaccia utente. Ad esempio, l'oggetto <xref:Microsoft.Office.Interop.Outlook.Application> rappresenta l'intera applicazione, l'oggetto <xref:Microsoft.Office.Interop.Outlook.Folder> rappresenta una cartelle che contiene messaggi di posta elettronica o altri elementi e l'oggetto <xref:Microsoft.Office.Interop.Outlook.MailItem> rappresenta un messaggio di posta elettronica.  
@@ -35,7 +32,7 @@ ms.locfileid: "49941191"
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [How do i: usare Outlook per creare una relazione attività personalizzata?](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare Outlook per creare una relazione attività personalizzata? ](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## <a name="access-objects-in-an-outlook-project"></a>Accedere agli oggetti in un progetto di Outlook  
  Outlook offre numerosi oggetti con cui è possibile interagire. Per usare in modo efficace il modello a oggetti, è necessaria una familiarità con gli oggetti principali seguenti:  
@@ -99,17 +96,17 @@ ms.locfileid: "49941191"
   
  OlDefaultFolders. olFolderInbox corrispondente per il **posta in arrivo** cartella in Outlook.  
   
- Per un esempio che illustra come accedere a un valore predefinito <xref:Microsoft.Office.Interop.Outlook.Folder> e creare un nuovo <xref:Microsoft.Office.Interop.Outlook.Folder>, vedere [procedura: creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md).  
+ Per un esempio che illustra come accedere a un valore predefinito <xref:Microsoft.Office.Interop.Outlook.Folder> e creare un nuovo <xref:Microsoft.Office.Interop.Outlook.Folder>, vedere [come: A livello di programmazione creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md).  
   
 ### <a name="mailitem-object"></a>Oggetto MailItem  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.MailItem> rappresenta un messaggio di posta elettronica. Gli oggetti<xref:Microsoft.Office.Interop.Outlook.MailItem> si trovano in genere nelle cartelle, ad esempio **Posta in arrivo**, **Posta inviata**e **Posta in uscita**. <xref:Microsoft.Office.Interop.Outlook.MailItem> espone proprietà e metodi che possono essere usati per creare e inviare messaggi di posta elettronica.  
   
- Per un esempio che illustra come creare un messaggio di posta elettronica, vedere [procedura: creare a livello di programmazione un elemento di posta elettronica](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
+ Per un esempio che illustra come creare un messaggio di posta elettronica, vedere [come: A livello di codice crea un elemento di posta elettronica](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
   
 ### <a name="appointmentitem-object"></a>Oggetto AppointmentItem  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> rappresenta una riunione, un appuntamento singolo o un appuntamento o riunione ricorrente nella cartella **Calendario** . L'oggetto <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> include metodi che eseguono azioni, quali la risposta o l'inoltro di una convocazione riunione, e proprietà che specificano i dettagli della riunione, ad esempio luogo e ora.  
   
- Per un esempio che illustra come creare un appuntamento, vedere [procedura: creare una convocazione riunione](../vsto/how-to-programmatically-create-a-meeting-request.md).  
+ Per un esempio che illustra come creare un appuntamento, vedere [come: A livello di codice, creare una convocazione riunione](../vsto/how-to-programmatically-create-a-meeting-request.md).  
   
 ### <a name="taskitem-object"></a>Oggetto TaskItem  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.TaskItem> rappresenta un'attività da eseguire entro un intervallo di tempo specificato. Gli oggetti<xref:Microsoft.Office.Interop.Outlook.TaskItem> si trovano nella cartella **Attività** .  
@@ -119,7 +116,7 @@ ms.locfileid: "49941191"
 ### <a name="contactitem-object"></a>Oggetto ContactItem  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.ContactItem>rappresenta un contatto nella cartella **Contatti** . Gli oggetti<xref:Microsoft.Office.Interop.Outlook.ContactItem> contengono diverse informazioni di contatto per le persone rappresentate, ad esempio via e numero civico, indirizzo di posta elettronica e numeri di telefono.  
   
- Per un esempio che illustra come creare un nuovo contatto, vedere [procedura: aggiungere a livello di codice una voce ai contatti di Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Per un esempio che illustra come cercare un contatto esistente, vedere [procedura: eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
+ Per un esempio che illustra come creare un nuovo contatto, vedere [come: A livello di codice aggiungere una voce ai contatti di Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Per un esempio che illustra come cercare un contatto esistente, vedere [come: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
   
 ##  <a name="refdoc"></a> Uso della documentazione sul modello a oggetti di Outlook  
  Per informazioni complete sul modello a oggetti di Outlook, è possibile usare il riferimento di assembly di interoperabilità primario di Outlook e il riferimento del modello a oggetti VBA.  
@@ -142,5 +139,4 @@ ms.locfileid: "49941191"
 |[Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)|Fornisce argomenti che illustrano come eseguire attività con gli elementi di posta elettronica.|  
 |[Con le cartelle di lavoro](../vsto/working-with-folders.md)|Fornisce argomenti che illustrano come eseguire attività con le cartelle.|  
 |[Lavorare con gli elementi del calendario](../vsto/working-with-calendar-items.md)|Fornisce argomenti che illustrano come eseguire attività con gli elementi di calendario.|  
-|[Procedura: determinare a livello di codice elemento Outlook corrente](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Illustra come visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato.|  
-  
+|[Procedura: Determinare a livello di codice elemento Outlook corrente](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Illustra come visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato.|  
