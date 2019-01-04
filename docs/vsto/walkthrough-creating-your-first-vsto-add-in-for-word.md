@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948972"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Word
   Questa procedura dettagliata introduttiva illustra come creare un componente aggiuntivo VSTO per Microsoft Office Word. Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente da quali documenti vengano aperti.  
@@ -124,17 +121,17 @@ ms.locfileid: "49940970"
 ## <a name="next-steps"></a>Passaggi successivi  
  Ora che è stato creato un componente aggiuntivo VSTO di base per Word, è possibile acquisire altre informazioni sullo sviluppo di componenti aggiuntivi VSTO in questi argomenti:  
   
--   Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Attività di programmazione specifici di componenti aggiuntivi VSTO per Word: [soluzioni di Word](../vsto/word-solutions.md).  
+-   Programmazione di attività specifici di componenti aggiuntivi VSTO per Word: [Soluzioni di Word](../vsto/word-solutions.md).  
   
--   Usando il modello a oggetti di Word: [Cenni preliminari sul modello a oggetti di Word](../vsto/word-object-model-overview.md).  
+-   Usando il modello a oggetti di Word: [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md).  
   
--   Personalizzazione dell'interfaccia utente di Word, ad esempio, per l'aggiunta di una scheda personalizzata alla barra multifunzione o creando un riquadro attività personalizzato: [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
+-   Personalizzazione dell'interfaccia utente di Word, ad esempio, tramite l'aggiunta di una scheda personalizzata alla barra multifunzione oppure creando un riquadro attività personalizzato: [Personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
   
--   Compilazione e debug di componenti aggiuntivi VSTO per Word: [soluzioni Office compilare](../vsto/building-office-solutions.md).  
+-   Compilazione e debug di componenti aggiuntivi VSTO per Word: [Creazione di soluzioni Office](../vsto/building-office-solutions.md).  
   
--   Distribuzione di componenti aggiuntivi VSTO per Word: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
+-   Distribuzione di componenti aggiuntivi VSTO per Word: [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940970"
  [Creazione di soluzioni Office](../vsto/building-office-solutions.md)   
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
  [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Elemento di simboli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeeaff19eb0eb479cdb7faa441c2cde8f60f52d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965895"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
 Definisce i GUID e gli ID usati da altri elementi VSCT. Per codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati da [elemento Extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento simboli per definire queste informazioni.  
   
- Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento di simboli. Per altre informazioni, vedere [procedura: creare una. File Vsct da un oggetto esistente. File CTO](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
+ Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento di simboli. Per altre informazioni, vedere [Procedura: Creare una. File Vsct da un oggetto esistente. File CTO](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
   
  L'elemento di simboli non deve essere confuso con il [definire elemento](../extensibility/define-element.md), che definisce le coppie nome-valore per l'utilizzo dal preprocessore.  
   

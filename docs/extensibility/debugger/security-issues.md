@@ -1,9 +1,6 @@
 ---
 title: Problemi di sicurezza | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd4d07721f202169ca0689882ac1a41045a4d61
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 387c00fa9440bd8a6ffdc862e9b91110dadcfd69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940759"
 ---
 # <a name="security-issues"></a>Problemi di sicurezza
 Per eseguire il debug di un programma che Usa Visual Studio, le sole autorizzazioni necessite sono uguali a quelle necessarie a eseguire il programma di uno sviluppatore. Sono inclusi il debug remoto per la maggior parte delle situazioni. Alcune situazioni, che includono altri servizi, ad esempio il servizio di informazioni Internet, potrebbero richiedere un livello superiore di autorizzazioni.  

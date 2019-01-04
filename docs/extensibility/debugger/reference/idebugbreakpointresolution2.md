@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointResolution2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugBreakpointResolution2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointResolution2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79ffdc3af15a9b18ca022e4234b4e6d97742387
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a67fe4d63fc135f19ed8aed6c45f3d753166320
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991032"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Questa interfaccia rappresenta le informazioni che descrivono un punto di interruzione associato.  
@@ -43,12 +40,12 @@ IDebugBreakpointResolution2 : IUnknown
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Ottiene il tipo del punto di interruzione rappresentato da questa soluzione.|  
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Ottiene le informazioni sulla risoluzione di punto di interruzione che descrive il punto di interruzione.|  
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Ottiene le informazioni di risoluzione dei punti di interruzione che descrive il punto di interruzione.|  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

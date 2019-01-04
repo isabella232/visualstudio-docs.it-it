@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity | Documenti Microsoft
-ms.custom: ''
+title: IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967956"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` viene implementato da un fornitore di porta per avvisare l'utente che connessione al processo non sicura.  
+`IDebugProcessSecurity` viene implementato da un fornitore di porte per avvisare l'utente che connessione al processo non sicura.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,16 +31,16 @@ IDebugProcessSecurity : IUnknown
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Ottiene il nome utente dal fornitore porta.|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Ottiene il nome utente dal fornitore della porta.|  
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Un utente viene avvisato che la connessione al processo di debug è unsafe.|  
   
 ## <a name="remarks"></a>Note  
- Implementare questa interfaccia per visualizzare un avviso e consentire all'utente di annullare il processo a cui si sta associando può essere considerato non sicuro.  
+ Implementare questa interfaccia viene visualizzato un avviso e consentire all'utente di annullare se il processo a cui si sta associando può essere considerato non sicuro.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

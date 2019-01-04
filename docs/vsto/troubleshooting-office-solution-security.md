@@ -1,9 +1,6 @@
 ---
 title: Risolvere i problemi di sicurezza delle soluzioni Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 105e28398b3ee5119ba66e2a666856e9edd4755c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955659"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Risolvere i problemi di sicurezza delle soluzioni Office
   In questo argomento contiene suggerimenti per la risoluzione di problemi comuni che possono verificarsi quando si lavora con sicurezza delle soluzioni Office.  
@@ -45,7 +42,7 @@ ms.locfileid: "49862931"
   Se il percorso del manifesto della distribuzione è stato assegnato all'area siti con restrizioni, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non installa la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Le soluzioni non possono essere installate da condivisioni file di rete o percorsi web quando si installa la funzionalità sicurezza avanzata di Internet Explorer o Internet Explorer 7  
- Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, consente di limitare in modo significativo la capacità degli utenti per accedere a Internet. Quando gli utenti provano a installare le soluzioni Office da un percorso di condivisione o web file rete, che venga visualizzato il messaggio di errore seguente: "la funzionalità di personalizzazione in questa applicazione non funzionerà perché il certificato usato per firmare il manifesto di distribuzione per *SolutionName* non è attendibile. Contattare l'amministratore per ottenere assistenza."  
+ Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, consente di limitare in modo significativo la capacità degli utenti per accedere a Internet. Quando gli utenti tentano di installare soluzioni Office da un file di rete condividono o percorso web, che venga visualizzato il messaggio di errore seguente: "Funzionalità personalizzate di questa applicazione non funzionerà perché il certificato usato per firmare il manifesto di distribuzione per *SolutionName* non è attendibile. Contattare l'amministratore per ottenere assistenza."  
   
  Con IEESC e Internet Explorer 7 e versioni successive, se l'URL del manifesto della distribuzione è stato categorizzato nell'area Internet, il manifesto deve avere un certificato da un autore attendibile o non è possibile installare la soluzione. Senza IEESC, il comportamento predefinito è per richiedere all'utente finale per prendere una decisione di attendibilità.  
   
@@ -53,5 +50,3 @@ ms.locfileid: "49862931"
   
 ## <a name="see-also"></a>Vedere anche  
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)  
-  
-  

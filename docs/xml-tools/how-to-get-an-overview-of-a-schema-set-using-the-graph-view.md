@@ -1,8 +1,7 @@
 ---
-title: 'Procedura: ottenere una panoramica di un Set di schemi tramite la visualizzazione grafico in XML Schema della finestra di progettazione'
+title: 'Procedura: Panoramica di un Set di schemi tramite la visualizzazione grafico in XML Schema della finestra di progettazione'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed088de37bba8bfc7d74339d822e5ee0f6c058b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948836"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedura: ottenere una panoramica di uno schema impostato tramite la visualizzazione grafico
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedura: Panoramica di uno schema impostato tramite la visualizzazione grafico
 
 In questo argomento viene descritto come utilizzare il [visualizzazione grafico](../xml-tools/graph-view.md) per ottenere una visualizzazione di alto livello dei nodi in un set di schemi e le relazioni tra i nodi.
 

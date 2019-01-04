@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938186"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. Visual Studio deve essere già installato nel computer di destinazione.
@@ -24,7 +23,7 @@ ms.locfileid: "49931545"
 
 |Metodo|Vantaggi|
 |-|-|
-|VSX (estensione di Visual Studio)|Molto semplice da distribuire: copia ed eseguire la **VSIX** file dal progetto DslPackage.<br /><br /> Per altre informazioni, vedere [installazione e disinstallazione di un linguaggio DSL utilizzando il VSX](#Installing).|
+|VSX (estensione di Visual Studio)|Molto semplice da distribuire: Copiare ed eseguire la **VSIX** file dal progetto DslPackage.<br /><br /> Per altre informazioni, vedere [installazione e disinstallazione di un linguaggio DSL utilizzando il VSX](#Installing).|
 |Identità del servizio gestito (file di programma di installazione)|-Consente all'utente di aprire Visual Studio facendo doppio clic su un file DSL.<br />-Consente di associare un'icona con il tipo di file DSL nel computer di destinazione.<br />-Associa uno schema XSD (XML schema) con il tipo di file DSL. Ciò consente di evitare gli avvisi quando i file verrà caricato in Visual Studio.<br /><br /> È necessario aggiungere un progetto di installazione alla soluzione per creare un file MSI.<br /><br /> Per altre informazioni, vedere [distribuzione di un linguaggio DSL utilizzando un file MSI](#msi).|
 
 ## <a name="Installing"></a> Installazione e disinstallazione di un linguaggio DSL utilizzando il VSX

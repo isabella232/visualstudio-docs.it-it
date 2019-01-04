@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: creazione di un processore di direttiva personalizzato'
+title: 'Procedura dettagliata: Creazione di un processore di direttiva personalizzato'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951826"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
@@ -603,7 +602,7 @@ End Property
 
 4. Solo per Visual Basic, aprire il **Project** dal menu **proprietà CustomDP**. Nel **Application** nella scheda **spazio dei nomi radice**, eliminare il valore predefinito, `CustomDP`.
 
-5. Nel **File** menu, fare clic su **Salva tutto**.
+5. Nel menu **File** fare clic su **Salva tutto**.
 
 6. Scegliere **Compila soluzione** dal menu **Compila**.
 

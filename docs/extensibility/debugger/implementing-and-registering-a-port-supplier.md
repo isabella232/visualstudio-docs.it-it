@@ -1,9 +1,6 @@
 ---
 title: Implementazione e registrazione di un fornitore di porte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e68f06cde3cd562b145bd64f94581c65f7d7f6
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 189f524ff96c8ad353425820e9f3931364951774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990269"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementare e registrare un fornitore di porte
 Il ruolo di un fornitore di porte consiste nel tenere traccia e specificare le porte, che a sua volta la gestione dei processi. Quando è necessario creare una porta, il fornitore della porta viene creata un'istanza usando CoCreate con GUID del fornitore della porta (gestore di sessione di debug [SDM] utilizzerà il fornitore della porta che l'utente ha selezionato o il fornitore della porta specificato dal sistema del progetto). Chiama quindi il modello SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) per vedere se è possono aggiungere tutte le porte. Se è possibile aggiungere una porta, viene richiesta una nuova porta chiamando [Aggiungi porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) e passando un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) che descrive la porta. `AddPort` Restituisce una nuova porta rappresentata da un' [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia.  

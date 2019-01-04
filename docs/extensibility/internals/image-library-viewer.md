@@ -1,6 +1,5 @@
 ---
 title: Visualizzatore della libreria di immagini | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968670"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare e cercare i manifesti dell'immagine, consentendo all'utente di modificarli in modo identico a Visual Studio. L'utente potrà modificare in background, dimensioni, DPI, contrasto elevato e altre impostazioni. Inoltre, lo strumento visualizza le informazioni di caricamento per ogni manifesto di immagini e Visualizza informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:  
@@ -132,7 +131,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |-|-|  
 |**Attributo**|**Definizione**|  
 |URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) utilizzando l'applicazione: / / / autorità<br /><br /> -Riferimento a una risorsa un componente assoluto<br /><br /> -Un percorso di un file contenente una risorsa nativa|  
-|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: l'origine può essere usata su uno sfondo chiaro.<br /><br /> - *Scuro*: l'origine può essere usata su uno sfondo scuro.<br /><br /> - *Contrasto elevato*: l'origine può essere usata su qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: l'origine può essere usata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: l'origine può essere usata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
+|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> - *Contrasto elevato*: L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
   
  Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:  
   
@@ -225,7 +224,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
   
 ## <a name="notes"></a>Note  
   
--   Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) tipo: KnownMonikers  
+-   Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) digitare: KnownMonikers  
   
 -   Lo strumento tenta di avvio per caricare tutti i manifesti di immagine che trova, in modo che potrebbe richiedere alcuni secondi per l'applicazione viene effettivamente visualizzata. È possibile anche lenta o che non risponde durante il caricamento dei manifesti.  
   
