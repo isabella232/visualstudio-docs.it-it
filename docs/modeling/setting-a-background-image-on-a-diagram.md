@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887867"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 In Visual Studio Visualization and Modeling SDK, è possibile impostare l'immagine di sfondo per una finestra di progettazione generata tramite codice personalizzato.
@@ -45,7 +44,7 @@ In Visual Studio Visualization and Modeling SDK, è possibile impostare l'immagi
 
 11. Se Resources.Designer.cs non è presente, fare clic sul file resources. resx nel **Esplora soluzioni**.
 
-12. Nel **le proprietà** impostare nella finestra di `Custom Tool` proprietà `ResXFileCodeGenerator`.
+12. Nella finestra **Proprietà** impostare la proprietà `Custom Tool` su `ResXFileCodeGenerator`.
 
 13. Nelle **Esplora soluzioni**, fare clic sul progetto Dsl, scegliere **Add**, fare clic su **nuova cartella**.
 
