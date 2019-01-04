@@ -1,9 +1,6 @@
 ---
 title: Interfacce (VSPackage di controllo di origine) e servizi correlati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940625"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
 In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in controllo di origine al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Il controllo del codice sorgente pacchetto VSPackage implementa alcune di queste interfacce e usato da altri utenti per eseguire attività di controllo di origine.  
@@ -33,7 +30,7 @@ In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in
   
  Le interfacce sono:  
   
--   Richiesto: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.  
+-   Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.  
   
 -   Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.  
   

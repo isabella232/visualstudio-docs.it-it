@@ -1,6 +1,5 @@
 ---
 title: Estensibilità di progetto Visual C++
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986986"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -481,10 +480,10 @@ Il `PageTemplate` attributo definisce come la regola venga visualizzata nel **pa
 
 | Attributo | Descrizione |
 |------------| - |
-| `generic` | Tutte le proprietà vengono visualizzate in un'unica pagina sotto le intestazioni di categoria<br/>La regola può essere visibile per la `Project` e `PropertySheet` contesti, ma non `File`.<br/><br/> Esempio: `$(VCTargetsPath)` \\ *1033*\\*General* |
-| `tool` | Le categorie vengono visualizzate come pagine secondarie.<br/>La regola può essere visibile in tutti i contesti: `Project`, `PropertySheet` e `File`.<br/>La regola è visibile nelle proprietà del progetto solo se il progetto contiene elementi con il `ItemType` definito in `Rule.DataSource`, a meno che il nome della regola è inclusa nel `ProjectTools` gruppo di elementi.<br/><br/>Esempio: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
-| `debugger` | La pagina viene visualizzata come parte della pagina di debug.<br/>Le categorie vengono attualmente ignorate.<br/>Il nome della regola deve corrispondere l'oggetto di eseguire il Debug dell'utilità di avvio MEF `ExportDebugger` attributo.<br/><br/>Esempio: `$(VCTargetsPath)` \\ *1033*\\*debugger\_locale\_windows.xml* |
-| *custom* | Modello personalizzato. Il nome del modello deve corrispondere il `ExportPropertyPageUIFactoryProvider` attributo del `PropertyPageUIFactoryProvider` oggetto MEF. Visualizzare **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Esempio: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
+| `generic` | Tutte le proprietà vengono visualizzate in un'unica pagina sotto le intestazioni di categoria<br/>La regola può essere visibile per la `Project` e `PropertySheet` contesti, ma non `File`.<br/><br/> Esempio: `$(VCTargetsPath)`\\*1033*\\*General* |
+| `tool` | Le categorie vengono visualizzate come pagine secondarie.<br/>La regola può essere visibile in tutti i contesti: `Project`, `PropertySheet` e `File`.<br/>La regola è visibile nelle proprietà del progetto solo se il progetto contiene elementi con il `ItemType` definito in `Rule.DataSource`, a meno che il nome della regola è inclusa nel `ProjectTools` gruppo di elementi.<br/><br/>Esempio: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | La pagina viene visualizzata come parte della pagina di debug.<br/>Le categorie vengono attualmente ignorate.<br/>Il nome della regola deve corrispondere l'oggetto di eseguire il Debug dell'utilità di avvio MEF `ExportDebugger` attributo.<br/><br/>Esempio: `$(VCTargetsPath)`\\*1033*\\*debugger\_locale\_windows.xml* |
+| *custom* | Modello personalizzato. Il nome del modello deve corrispondere il `ExportPropertyPageUIFactoryProvider` attributo del `PropertyPageUIFactoryProvider` oggetto MEF. Visualizzare **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Esempio: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Se la regola usa uno dei modelli basati su griglia di proprietà, è possibile utilizzare questi punti di estendibilità per le relative proprietà:
 
@@ -500,7 +499,7 @@ Se si desidera utilizzare una regola esistente, ma necessario aggiungere o rimuo
 
 Si supponga il set di strumenti per usare la maggior parte delle regole predefinite di progetto, ma per sostituire uno solo o alcune di esse. Pronunciare, ad esempio, che si vuole solo modificare la regola di C/C++ per visualizzare le opzioni del compilatore diverse. È possibile fornire una nuova regola con lo stesso nome e nome visualizzato della regola esistente e includerlo nel `PropertyPageSchema` gruppo di elementi dopo l'importazione di destinazioni predefinite cpp. Solo una regola con un nome specificato viene utilizzata nel progetto e quella più recente inclusa nel `PropertyPageSchema` elemento wins gruppo.
 
-#### <a name="project-items"></a>Elementi del progetto
+#### <a name="project-items"></a>Elementi di progetto
 
 Il *Projectitemsschema* file cpp definisce la `ContentType` e `ItemType` i valori per gli elementi che vengono considerati come elementi di progetto e definisce `FileExtension` gli elementi per determinare quale gruppo di elementi di un nuovo file viene aggiunto a.
 
@@ -530,7 +529,7 @@ Quindi nel file di destinazioni, aggiungere:
 </ItemGroup>
 ```
 
-Esempio: `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+Esempio: `$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>Debugger
 

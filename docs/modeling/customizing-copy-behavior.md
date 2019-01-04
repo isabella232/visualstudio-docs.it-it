@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885627"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio di specifico di dominio (DSL) creato con la visualizzazione e Visual Studio Modeling SDK, è possibile modificare cosa accade quando l'utente copia e Incolla gli elementi.
@@ -88,7 +87,7 @@ Eseguire l'override *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` nel
 Eseguire l'override *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.
 
  **Conservare il layout della forma tramite copia e Incolla.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è dimostrata nell'esempio nella [VMSDK: esempio elettrici](http://go.microsoft.com/fwlink/?LinkId=213879).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è dimostrata nell'esempio a [VMSDK: Esempio di diagrammi circuito](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Per ottenere questo effetto, aggiungere le forme e i connettori all'elemento ElementGroupPrototype copiato. Il metodo più conveniente per l'override è ElementOperations.CreateElementGroupPrototype(). Per eseguire questa operazione, aggiungere il codice seguente al progetto DSL:
 
@@ -144,7 +143,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Incollare le forme in una posizione prescelta, ad esempio la posizione corrente del cursore.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è dimostrata nell'esempio nella [VMSDK: esempio elettrici](http://go.microsoft.com/fwlink/?LinkId=213879).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è dimostrata nell'esempio a [VMSDK: Esempio di diagrammi circuito](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Per ottenere questo effetto, eseguire l'override di `ClipboardCommandSet.ProcessOnMenuPasteCommand()` per usare la versione di `ElementOperations.Merge()` specifica per il percorso. Per eseguire questa operazione, aggiungere il codice seguente al progetto DslPackage:
 
@@ -211,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **Consentire all'utente di trascinamento della selezione di elementi.**
-Visualizzare [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Vedere [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a> Personalizzazione del comportamento di Copia collegamento
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione DSL, selezionare un ruolo a un lato della relazione e nella finestra Proprietà impostare il **propaga copia** valore.
@@ -282,7 +281,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Ricezione di elementi trascinati da altri modelli
- È anche possibile usare ElementOperations per definire il comportamento per copia, spostamento, eliminazione e trascinamento. A dimostrazione dell'uso di ElementOperations, nell'esempio seguente viene definito un comportamento di trascinamento personalizzato. A tale scopo è tuttavia possibile considerare l'approccio alternativo descritto in [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md), che risulta maggiormente estendibile.
+ È anche possibile usare ElementOperations per definire il comportamento per copia, spostamento, eliminazione e trascinamento. A dimostrazione dell'uso di ElementOperations, nell'esempio seguente viene definito un comportamento di trascinamento personalizzato. A tale scopo è tuttavia possibile considerare l'approccio alternativo descritto in [come: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md), che risulta maggiormente estendibile.
 
  Definire due metodi nella classe ElementOperations:
 
@@ -367,7 +366,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Comportamento di copia standard
  Il codice in questa sezione mostra metodi di cui è possibile eseguire l'override per modificarne il comportamento di copia. Per aiutare a stabilire come ottenere le proprie personalizzazioni, questa sezione mostra del codice che esegue l'override dei metodi relativi alle operazioni di copia, senza però modificare il comportamento standard
 
- Quando l'utente preme CTRL+C o usa il comando di menu Copia, viene chiamato il metodo <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. È possibile visualizzare come questa opzione viene impostata **DslPackage\Generated Code\CommandSet.cs**. Per altre informazioni sul modo in cui i comandi vengono impostati, vedere [procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Quando l'utente preme CTRL+C o usa il comando di menu Copia, viene chiamato il metodo <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. È possibile visualizzare come questa opzione viene impostata **DslPackage\Generated Code\CommandSet.cs**. Per altre informazioni sul modo in cui i comandi vengono impostati, vedere [come: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  È possibile eseguire l'override di ProcessOnMenuCopyCommand aggiungendo una definizione di classe parziale *MyDsl* `ClipboardCommandSet` nel progetto DslPackage.
 
@@ -557,8 +556,8 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md)
-- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)
-- [Campione: VMSDK esempio](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Esempio: VMSDK esempio](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
