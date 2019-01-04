@@ -1,9 +1,6 @@
 ---
-title: Strumento di Windows nel Registro di sistema | Documenti Microsoft
-ms.custom: ''
+title: Strumento Windows nel Registro di sistema | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234a3f50865e77f2c6b5a4057e6766b26d7ff521
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f49a7d4298dbd387a2fb6a91d5030002eaec8a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956491"
 ---
-# <a name="tool-windows-in-the-registry"></a>Finestre degli strumenti nel Registro di sistema
-Pacchetti VSPackage che forniscono le finestre degli strumenti è necessario registrare con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] come strumento di provider di finestra. Finestre degli strumenti create utilizzando il modello di pacchetto di Visual Studio per tale scopo, per impostazione predefinita. Provider di finestra di strumento dispone di chiavi di registro di sistema che specificano gli attributi di visibilità, ad esempio dimensione predefinita della finestra dello strumento e la posizione, il GUID della finestra che viene utilizzato come il riquadro della finestra dello strumento e lo stile di ancoraggio.  
+# <a name="tool-windows-in-the-registry"></a>Strumento Windows nel Registro di sistema
+Pacchetti VSPackage che forniscono finestre degli strumenti è necessario registrare con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] come strumento di provider di finestra. Finestre degli strumenti create utilizzando il modello di pacchetto di Visual Studio per eseguire questa operazione per impostazione predefinita. I provider di finestra degli strumenti hanno chiavi del Registro di sistema che specificano gli attributi di visibilità, ad esempio dimensioni della finestra degli strumenti predefinita e la posizione, il GUID della finestra che viene utilizzato come il riquadro della finestra degli strumenti e lo stile di ancoraggio.  
   
- Durante lo sviluppo, il provider di finestra degli strumenti gestita registra le finestre degli strumenti aggiungendo attributi al codice sorgente e quindi eseguire l'utility RegPkg.exe sull'assembly risultante. Per ulteriori informazioni, vedere [la registrazione di una finestra degli strumenti](../extensibility/registering-a-tool-window.md).  
+ Durante lo sviluppo, i provider di finestra degli strumenti gestita registrare finestre degli strumenti aggiungendo attributi al codice sorgente e quindi eseguendo l'utilità RegPkg.exe sull'assembly risultante. Per altre informazioni, vedere [la registrazione di una finestra degli strumenti](../extensibility/registering-a-tool-window.md).  
   
-## <a name="registering-unmanaged-tool-window-providers"></a>Registrazione dei provider di finestra dello strumento non gestito  
- Provider di finestra dello strumento non gestito è necessario registrare con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nella sezione ToolWindows del Registro di sistema. Nel seguente frammento di file con estensione reg Mostra come potrebbe essere registrata una finestra degli strumenti dinamiche:  
+## <a name="registering-unmanaged-tool-window-providers"></a>Registrazione dei provider di finestra degli strumenti non gestito  
+ Provider di finestra degli strumenti non gestito è necessario registrare con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nella sezione ToolWindows del Registro di sistema. Il frammento di file con estensione reg seguente mostra come potrebbe essere registrata una finestra degli strumenti dinamica:  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\<version number>\ToolWindows\{f0e1e9a1-9860-484d-ad5d-367d79aabf55}]  
@@ -39,9 +36,9 @@ Pacchetti VSPackage che forniscono le finestre degli strumenti è necessario reg
 "{f1536ef8-92ec-443c-9ed7-fdadf150da82}"=dword:00000000  
 ```  
   
- La prima chiave nell'esempio precedente, il numero di versione è la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ad esempio 7.1 o 8.0, la sottochiave {f0e1e9a1-9860-484d-ad5d-367d79aabf55} è il GUID del riquadro della finestra dello strumento (DynamicWindowPane) e il {di valore predefinito 01069cdd-95ce-4620-ac21-ddff6c57f012} è il GUID del pacchetto VSPackage che fornisce la finestra degli strumenti. Per una spiegazione delle sottochiavi Float e DontForceCreate, vedere [finestra strumento di configurazione](../extensibility/tool-window-display-configuration.md).  
+ La prima chiave nell'esempio precedente, numero di versione è la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ad esempio 7.1 o 8.0, la sottochiave {f0e1e9a1-9860-484d-ad5d-367d79aabf55} è il GUID del riquadro della finestra degli strumenti (DynamicWindowPane) e {il valore predefinito 01069cdd-95ce-4620-ac21-ddff6c57f012} è il GUID del pacchetto VSPackage per consentire la finestra degli strumenti. Per una spiegazione delle sottochiavi di tipo Float e DontForceCreate, vedere [configurazione visualizzazione della finestra degli strumenti](../extensibility/tool-window-display-configuration.md).  
   
- La seconda chiave facoltativa, ToolWindows\Visibility, specifica il GUID di comandi che richiedono la finestra degli strumenti deve essere reso visibile. In questo caso, sono non disponibili i comandi specificati. Per ulteriori informazioni, vedere [finestra strumento di configurazione](../extensibility/tool-window-display-configuration.md).  
+ La seconda chiave facoltativa, ToolWindows\Visibility, specifica il GUID dei comandi che richiedono la finestra degli strumenti deve essere reso visibile. In questo caso, non esistono Nessun comando specificato. Per altre informazioni, vedere [configurazione visualizzazione della finestra degli strumenti](../extensibility/tool-window-display-configuration.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

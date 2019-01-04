@@ -1,9 +1,6 @@
 ---
 title: Modello di progetto VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b54fef4e3662783ee7927eb049058c8245ce91c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943408"
 ---
 # <a name="vsix-project-template"></a>Modello di progetto VSIX
 È possibile usare il modello di progetto VSIX per eseguire il wrapping di uno o più estensioni di Visual Studio in un progetto VSIX e quindi pubblicare il pacchetto nel [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) sito Web.  
