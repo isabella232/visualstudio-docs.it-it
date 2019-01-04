@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: determinare a livello di codice elemento Outlook corrente'
-ms.custom: ''
+title: 'Procedura: Determinare a livello di codice elemento Outlook corrente'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 93d1d565664e9851310e9138fef7f6d14041c865
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945951"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: determinare a livello di codice elemento Outlook corrente
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: Determinare a livello di codice elemento Outlook corrente
   Questo esempio viene usato il `Explorer.SelectionChange` evento per visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice consente di visualizzare l'elemento selezionato.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -41,7 +38,5 @@ ms.locfileid: "35257047"
   
 ## <a name="see-also"></a>Vedere anche  
  [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)   
- [Procedura: recuperare una cartella a livello programmatico in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Procedura: eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
-  
-  
+ [Procedura: Recuperano una cartella in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: creare i marcatori di testo personalizzato | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare i marcatori di testo personalizzato | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965220"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Procedura: creare i marcatori di testo personalizzato
+# <a name="how-to-create-custom-text-markers"></a>Procedura: Creare i marcatori di testo personalizzato
 Se si desidera creare un marcatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire i passaggi seguenti:  
   
 - Registrare il marcatore di testo nuovo, in modo che altri strumenti possano accedervi.  
@@ -29,7 +26,7 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
   
 - Creare un servizio che può essere utilizzato da altri processi per rendere utilizzare del marcatore di testo.  
   
-  Per informazioni dettagliate su come applicare un marcatore di testo a un'area di codice, vedere [procedura: utilizzare marcatori di testo](../extensibility/how-to-use-text-markers.md).  
+  Per informazioni dettagliate su come applicare un marcatore di testo a un'area di codice, vedere [come: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Per registrare un marcatore personalizzato  
   
@@ -92,6 +89,6 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Procedura: implementare gli indicatori di errore](../extensibility/how-to-implement-error-markers.md)   
- [Procedura: utilizzare marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Procedura: Aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Procedura: Implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
+ [Procedura: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Procedura dettagliata: Data binding complesso in un progetto a livello di documento'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964059"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding complesso in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding complesso in un progetto a livello di documento. È possibile associare più celle in un foglio di lavoro di Microsoft Office Excel a campi nel database Northwind di SQL Server.  
@@ -58,7 +55,7 @@ ms.locfileid: "49841884"
   
 1.  Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding complesso**. Nella procedura guidata, selezionare **creare un nuovo documento**.  
   
-     Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Data Binding complesso** progetto al **Esplora soluzioni**.  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841884"
 ## <a name="next-steps"></a>Passaggi successivi  
  Questa procedura dettagliata illustra le nozioni di base di associazione di una tabella in un database a un oggetto elenco. Ecco alcune possibili attività successive:  
   
--   Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [procedura: memorizzare nella Cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Distribuire la soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
--   Creare una relazione master/dettaglio tra un campo e una tabella. Per altre informazioni, vedere [procedura dettagliata: creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Creare una relazione master/dettaglio tra un campo e una tabella. Per altre informazioni, vedere [Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)   
  [Procedura dettagliata: Data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  

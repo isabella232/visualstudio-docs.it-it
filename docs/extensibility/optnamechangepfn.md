@@ -1,9 +1,6 @@
 ---
 title: OPTNAMECHANGEPFN | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - OPTNAMECHANGEPFN
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b8f6eb441eb9ca65cbdf2215363af48c65bfa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8054094083b39a8f71ae9fe6fcb908b7af29a7a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962769"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Si tratta di una funzione di callback specificata in una chiamata ai [SccSetOption](../extensibility/sccsetoption-function.md) (tramite opzione `SCC_OPT_NAMECHANGEPFN`) e viene usato per comunicare modifiche ai nomi effettuate dal controllo del codice sorgente del plug-in dell'IDE di.  

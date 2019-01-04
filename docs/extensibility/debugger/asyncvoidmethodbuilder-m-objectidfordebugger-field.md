@@ -1,9 +1,6 @@
 ---
 title: Campo asyncvoidmethodbuilder. M_objectidfordebugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e9b0fc96eca5582be01745f4fe934cfe812bc65
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d24affabaf22f44e56b7e3c818b302ea6bd3b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944418"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Campo asyncvoidmethodbuilder. M_objectidfordebugger
 Rappresenta l'oggetto inizializzato in modo differito usato dal debugger per identificare in modo univoco questo generatore.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in mscorlib. dll)  
   

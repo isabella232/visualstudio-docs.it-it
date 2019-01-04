@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: ordinare i dati nei fogli di lavoro a livello di codice'
-ms.custom: ''
+title: 'Procedura: Ordinare i dati nei fogli di lavoro a livello di codice'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960589"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedura: ordinare i dati nei fogli di lavoro a livello di codice
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedura: Ordinare i dati nei fogli di lavoro a livello di codice
   È possibile ordinare i dati contenuti negli elenchi e negli intervalli del foglio di lavoro in fase di esecuzione. Il codice seguente ordina un intervallo a più colonne denominato `Fruits` in base ai dati nella prima colonna e quindi ai dati nella seconda colonna.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -66,11 +63,9 @@ ms.locfileid: "49914216"
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: riempire a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Procedura: fare riferimento a livello di programmazione agli intervalli di foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [ListObject (controllo)](../vsto/listobject-control.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

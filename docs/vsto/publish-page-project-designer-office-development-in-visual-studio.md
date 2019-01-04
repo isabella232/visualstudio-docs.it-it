@@ -1,9 +1,6 @@
 ---
 title: Pagina pubblica, creazione progetti (sviluppo per Office in Visual Studio)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 66cb2c4cb15dfad2fa9d3a0508bd2d023360ee90
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 63094c3bdf8bd2787f11dd6fd6818ea265d781f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965999"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina pubblica, creazione progetti (sviluppo per Office in Visual Studio)
   La pagina **Pubblica** di **Creazione progetti** viene usata per configurare le proprietà per la distribuzione.

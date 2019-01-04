@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: generare modelli da modelli utilizzando sequenze di escape'
+title: 'Procedura: Generare modelli da modelli usando sequenze di escape'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 13ca6a9aef2f0944ba1f42c849d9f8079a56a82b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8aa0d2203db6080260bc702429758fbd7f6b1a4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938147"
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: generare modelli da modelli utilizzando sequenze di escape
-È possibile creare un modello di testo che consente di creare un altro modello di testo come output testo generato. A tale scopo, è necessario utilizzare sequenze di escape per delineare i tag di modello di testo. Se non si utilizzano le sequenze di escape, il modello di testo generato avrà un significato predefinito. Per ulteriori informazioni sull'utilizzo di sequenze di escape nei modelli di testo, vedere [utilizzando le sequenze di Escape nei modelli di testo](../modeling/using-escape-sequences-in-text-templates.md).
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: Generare modelli da modelli usando sequenze di escape
+È possibile creare un modello di testo che crea un altro modello di testo come output testo generato. A tale scopo, è necessario utilizzare le sequenze di escape per delineare i tag di modello di testo. Se non si utilizza le sequenze di escape, il modello di testo generato avrà un significato predefinito. Per altre informazioni sull'uso di sequenze di escape in modelli di testo, vedere [usando le sequenze di Escape in modelli di testo](../modeling/using-escape-sequences-in-text-templates.md).
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Per generare un modello di testo all'interno di un modello di testo
 
--   Utilizzare la barra rovesciata (\\) come carattere di escape per produrre il tag di markup necessari all'interno del modello di testo per le direttive, istruzioni, espressioni e classe funzionalità in un file di modello di testo.
+-   Usare la barra rovesciata (\\) come carattere di escape per produrre il tag di markup necessari all'interno del modello di testo per le direttive, istruzioni, espressioni e funzionalità in un file di modello di testo separato di classe.
 
     ```
     \<#@ directive \#>

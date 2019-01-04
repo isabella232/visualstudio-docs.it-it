@@ -2,7 +2,6 @@
 title: Uso delle annotazioni SAL per ridurre gli errori del codice C/C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -14,49 +13,49 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a48bca7afb59fa83e489c6f5cd96d115d8c872
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954332"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Uso delle annotazioni SAL per ridurre gli errori del codice C/C++
-SAL è il linguaggio di annotazione Microsoft del codice sorgente. Utilizzando le annotazioni di codice sorgente, è possibile rendere lo scopo dietro il codice esplicito. Queste annotazioni abilitare anche gli strumenti di analisi statica automatizzati analizzare il codice in modo più accurato, con un numero decisamente inferiore di falsi positivi e falsi negativi.
+SAL è il linguaggio di annotazione Microsoft source code. Utilizzando le annotazioni di codice sorgente, è possibile rendere l'intento dietro il codice esplicito. Queste annotazioni anche abilitare strumenti di analisi statica automatizzata da analizzare in modo più accurato, il codice con un numero decisamente inferiore di falsi positivi e falsi negativi.
 
- Gli articoli in questa sezione della documentazione vengono descritti aspetti di SAL, forniscono di riferimento per la sintassi SAL e fornire esempi di utilizzo.
+ Gli articoli in questa sezione della documentazione illustrano gli aspetti di SAL forniscono riferimento per la sintassi SAL e offrono esempi del relativo utilizzo.
 
 -   [Informazioni su SAL](../code-quality/understanding-sal.md)
 
-     Fornisce informazioni ed esempi che illustrano il nucleo annotazioni SAL.
+     Fornisce informazioni ed esempi che illustrano il nucleo delle annotazioni SAL.
 
 -   [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)
 
-     Elenca le annotazioni SAL per funzioni e parametri di funzione.
+     Elenca le annotazioni SAL per le funzioni e parametri della funzione.
 
 -   [Annotazione del comportamento delle funzioni](../code-quality/annotating-function-behavior.md)
 
-     Elenca le annotazioni SAL per funzioni e comportamento della funzione.
+     Elenca le annotazioni SAL per le funzioni e comportamento della funzione.
 
 -   [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)
 
-     Elenca le annotazioni SAL per strutture e classi.
+     Elenca le annotazioni SAL per le strutture e classi.
 
 -   [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)
 
-     Viene illustrato come utilizzare le annotazioni SAL con i meccanismi di blocco.
+     Viene illustrato come usare le annotazioni SAL con meccanismi di blocco.
 
 -   [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     Elenca le annotazioni SAL che specificano la condizione o un ambito (posizione) di altre annotazioni SAL.
+     Elenca le annotazioni SAL che specificano la condizione o l'ambito (posizione) di altre annotazioni SAL.
 
 -   [Funzioni intrinseche](../code-quality/intrinsic-functions.md)
 
      Elenca le annotazioni SAL intrinseche.
 
--   [Esempi e procedure consigliate](../code-quality/best-practices-and-examples-sal.md)
+-   [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)
 
-     Vengono forniti esempi che illustrano come utilizzare le annotazioni SAL. Illustra anche i problemi comuni.
+     Vengono forniti esempi che illustrano come usare le annotazioni SAL. Viene inoltre spiegato alcuni errori comuni.
 
 ## <a name="related-resources"></a>Risorse correlate
  [Blog del Team di analisi del codice](http://go.microsoft.com/fwlink/?LinkId=251197)

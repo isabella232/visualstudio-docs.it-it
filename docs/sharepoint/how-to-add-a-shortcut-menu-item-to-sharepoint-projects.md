@@ -1,9 +1,6 @@
 ---
-title: 'Procedura: aggiungere una voce di Menu di scelta rapida ai progetti SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere una voce di Menu di scelta rapida ai progetti SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a2fbc9d71684bc44e01a1d53f5d53f35c8d7311
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964137"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procedura: aggiungere una voce di menu di scelta rapida ai progetti SharePoint
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procedura: Aggiungere una voce di menu di scelta rapida ai progetti SharePoint
   È possibile aggiungere una voce di menu di scelta rapida per qualsiasi progetto SharePoint. La voce di menu viene visualizzato quando l'utente fa clic in un nodo del progetto **Esplora soluzioni**.  
   
- I passaggi seguenti presuppongono che un'estensione di progetto è già stato creato. Per altre informazioni, vedere [procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ I passaggi seguenti presuppongono che un'estensione di progetto è già stato creato. Per altre informazioni, vedere [Procedura: Creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Per aggiungere una voce di menu di scelta rapida ai progetti SharePoint  
   
@@ -55,6 +52,5 @@ ms.locfileid: "36757572"
   
 ## <a name="see-also"></a>Vedere anche
  [Estendere i progetti SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
+ [Procedura: Creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Procedura: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  

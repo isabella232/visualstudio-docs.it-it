@@ -1,9 +1,6 @@
 ---
 title: Creazione di una categoria di impostazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935619"
 ---
 # <a name="create-a-settings-category"></a>Creare una categoria di impostazioni
 
-In questa procedura dettagliata si crea una categoria di impostazioni di Visual Studio e lo usano per salvare i valori e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzati come un "punto di impostazioni personalizzate"; vale a dire come una casella di controllo nel **Importa / Esporta impostazioni** procedura guidata. (È possibile trovarlo nel **strumenti** menu.) Le impostazioni vengono salvate o ripristinate come una categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [delle impostazioni di ambiente](../ide/environment-settings.md).
+In questa procedura dettagliata si crea una categoria di impostazioni di Visual Studio e lo usano per salvare i valori e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzati come un "punto di impostazioni personalizzate"; vale a dire come una casella di controllo nel **Importa / Esporta impostazioni** procedura guidata. (È possibile trovarlo nel **strumenti** menu.) Le impostazioni vengono salvate o ripristinate come una categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [Impostazioni dell'ambiente](../ide/environment-settings.md).
 
 Si crea una categoria di impostazioni mediante la derivazione da di <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.
 
@@ -40,7 +37,7 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
 
 2.  Aprire il *VSPackage.resx* file e aggiungere le risorse di queste tre stringhe:
 
-    |nome|Valore|
+    |nome|Value|
     |----------|-----------|
     |106|La categoria|
     |107|Impostazioni personali|
@@ -101,7 +98,7 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
 
 4.  Modificare il valore della **OptionFloat** a 3,1416 e **OptionInteger** a 12. Fare clic su **OK**.
 
-5.  Nel **degli strumenti** menu, fare clic su **Importa / Esporta impostazioni**.
+5.  Scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**.
 
      Il **Importa / Esporta impostazioni** procedura guidata viene visualizzata.
 

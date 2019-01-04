@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetContainerField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac7acc5d12ecce72119f19a51b1f4313a1aabe08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ec37cbc6c4ce2201a83ab78e5cac25964e09c91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956231"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Questo metodo ottiene il campo che contiene l'indirizzo di debug.  
@@ -28,7 +25,7 @@ Questo metodo ottiene il campo che contiene l'indirizzo di debug.
 ## <a name="syntax"></a>Sintassi  
   
 ```cpp  
-HRESULT GetContainerField(   
+HRESULT GetContainerField(   
    IDebugAddress*         pAddress,  
    IDebugContainerField** ppContainerField  
 );  

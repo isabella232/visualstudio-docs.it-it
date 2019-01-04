@@ -2,7 +2,6 @@
 title: Set di regole delle Regole di globalizzazione per codice gestito
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: gewarren
@@ -10,21 +9,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f260a46d26bfec8af61a39ba8c54910a45772c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0c0eb4edfb58d740692f2afff187659a665b234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936984"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Set di regole delle Regole di globalizzazione per codice gestito
-È possibile utilizzare il Microsoft globalizzazione set di regole di concentrarsi sui problemi che potrebbero impedire che i dati nell'applicazione vengano visualizzati correttamente in diverse lingue, impostazioni locali e le impostazioni cultura. È necessario includere questo set di regole se l'applicazione è localizzata, globalizzata o entrambi.
+È possibile usare le regole di globalizzazione Microsoft set di regole per concentrarsi sui problemi che potrebbero compromettere i dati nell'applicazione vengano visualizzati correttamente nel, le impostazioni locali, lingue e culture diverse. È consigliabile includere questo set di regole se l'applicazione sia localizzata, globalizzato, o entrambi.
 
 |Regola|Descrizione|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Specificare MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitare tasti di scelta rapida duplicati|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Non impostare come hardcoded le stringhe specifiche delle impostazioni locali|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Non impostare come hardcoded le stringhe delle impostazioni locali|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Non passare valori letterali come parametri localizzati|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|Specificare CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|Specificare IFormatProvider|

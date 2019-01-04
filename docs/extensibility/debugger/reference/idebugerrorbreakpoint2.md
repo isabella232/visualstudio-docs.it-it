@@ -1,9 +1,6 @@
 ---
-title: IDebugErrorBreakpoint2 | Documenti Microsoft
-ms.custom: ''
+title: IDebugErrorBreakpoint2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugErrorBreakpoint2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98aea1158b6c9bc3af1c417c9c5d55c5fc37dcb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd26a84ef9fc3df6d1850d729e4ff52cef55161c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962269"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
-Questa interfaccia rappresenta un errore o un punto di interruzione di avviso, ad esempio i motivi per cui il punto di interruzione in sospeso non è stato associato (codice caricato non ancora, e così via), un'espressione non valida o un percorso non valido.  
+Questa interfaccia rappresenta un errore o un punto di interruzione di avviso, ad esempio un percorso non valido, non è valida o i motivi per cui il punto di interruzione in sospeso non è stato associato (codice caricato non ancora, e così via).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +29,10 @@ IDebugErrorBreakpoint2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia viene utilizzata per segnalare problemi con l'associazione di un punto di interruzione.  
+ Un motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia viene utilizzata per segnalare problemi con un punto di interruzione di binding.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Una chiamata a [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) ottiene questa interfaccia. Questa interfaccia può essere restituita anche (come parte di un elenco rappresentato da un [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) interface) da una chiamata a [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).  
+ Una chiamata a [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) ottiene questa interfaccia. Questa interfaccia può anche essere restituita (come parte di un elenco rappresentato da un [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) interfaccia) da una chiamata a [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) oppure [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugErrorBreakpoint2`.  
@@ -48,7 +45,7 @@ IDebugErrorBreakpoint2 : IUnknown
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

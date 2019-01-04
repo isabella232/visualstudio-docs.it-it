@@ -1,9 +1,6 @@
 ---
 title: Estensioni degli strumenti di associazione di dati personalizzati con SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951040"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associare dati personalizzati con le estensioni degli strumenti di SharePoint
   È possibile aggiungere dati personalizzati a determinati oggetti nelle estensioni di strumenti di SharePoint. Ciò è utile quando sono presenti dati in una parte dell'estensione che si desidera accedere in seguito da altro codice nella propria estensione. Anziché implementare un modo personalizzato per archiviare e accedere ai dati, è possibile associare i dati a un oggetto nella propria estensione e quindi recuperare i dati dallo stesso oggetto in un secondo momento.  
@@ -77,7 +74,7 @@ ms.locfileid: "49939497"
   
 - <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Questo metodo restituisce i dati oggetto, se presente, oppure **null** se non esiste. È possibile utilizzare questo metodo solo per recuperare le istanze dei tipi di riferimento.  
   
-  Esempio di codice seguente determina se un determinato oggetto dati è già associato a un elemento del progetto. Se l'oggetto dati non è già associato con l'elemento del progetto, quindi il codice aggiunge l'oggetto per il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'elemento del progetto. Per questo esempio nel contesto di un esempio più esaustivo, vedere [procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+  Esempio di codice seguente determina se un determinato oggetto dati è già associato a un elemento del progetto. Se l'oggetto dati non è già associato con l'elemento del progetto, quindi il codice aggiunge l'oggetto per il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'elemento del progetto. Per questo esempio nel contesto di un esempio più esaustivo, vedere [come: Aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
@@ -86,7 +83,5 @@ ms.locfileid: "49939497"
  [Concetti di programmazione e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Procedura dettagliata: Estensione di Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-   
- 
+ [Procedura: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Procedura: Aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)

@@ -1,7 +1,6 @@
 ---
 title: Bookmark (controllo)
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 242a4692bc75715e661244dc8f513d30cc9480ed
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960417"
 ---
 # <a name="bookmark-control"></a>Bookmark (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è un segnalibro con un nome univoco che espone gli eventi e può essere associato ai dati. Può essere usato come segnaposto per contrassegnare un elemento o una posizione in un documento di Microsoft Office Word. Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è una combinazione degli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> e <xref:Microsoft.Office.Interop.Word.Range> .

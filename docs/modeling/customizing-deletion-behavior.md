@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940953"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizzazione del comportamento di eliminazione
 L'eliminazione di un elemento in genere determina l'eliminazione anche degli elementi correlati. Tutte le relazioni a esso connesse ed eventuali elementi figlio vengono eliminati. Questo comportamento è definito *propagazione eliminazioni*. È possibile personalizzare la propagazione dell'eliminazione, ad esempio per fare in modo che vengano eliminati altri elementi correlati. Scrivendo codice programma, è possibile far dipendere la propagazione dell'eliminazione dallo stato del modello. È inoltre possibile fare in modo che un'eliminazione comporti altre modifiche.
@@ -140,7 +139,7 @@ partial class MusicLibDeleteClosure
 
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> è chiamato quando l'elemento è stato eliminato. Resta nell'heap CLR, quindi è possibile eseguire un'operazione di annullamento, se necessario, ma viene scollegato da altri elementi e rimosso da `store.ElementDirectory`. Per le relazioni, ancora riferimento ai ruoli gli assegnatari di ruolo precedente.`IsDeleted` è true.
 
-3. OnDeleting e OnDeleted vengono chiamati quando l'utente richiama l'annullamento dopo aver creato un elemento e quando una precedente eliminazione viene ripetuta nell'operazione di ripristino. In questi casi, usare `this.Store.InUndoRedoOrRollback` per evitare l'aggiornamento degli elementi dell'archivio. Per altre informazioni, vedere [procedura: usare transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. OnDeleting e OnDeleted vengono chiamati quando l'utente richiama l'annullamento dopo aver creato un elemento e quando una precedente eliminazione viene ripetuta nell'operazione di ripristino. In questi casi, usare `this.Store.InUndoRedoOrRollback` per evitare l'aggiornamento degli elementi dell'archivio. Per altre informazioni, vedere [Procedura: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Ad esempio, il codice seguente elimina un album quando l'ultimo brano figlio viene eliminato:
 
