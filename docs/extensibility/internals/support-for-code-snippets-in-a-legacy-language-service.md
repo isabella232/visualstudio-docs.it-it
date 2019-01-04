@@ -1,9 +1,6 @@
 ---
 title: Supporto per i frammenti di codice in un servizio di linguaggio Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
@@ -15,19 +12,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852953"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è un frammento di codice che viene inserito nel file di origine. Il frammento di codice è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo il frammento di codice viene inserito e può avere valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Immediatamente dopo l'inserimento del frammento, il servizio di linguaggio possibile formattare il frammento di codice.  
   
  Il frammento di codice viene inserito in una modalità di modifica speciale che consente i campi del frammento di codice per spostarsi utilizzando il tasto TAB. I campi possono supportare i menu di IntelliSense in stile elenco a discesa. L'utente esegue il commit del frammento nel file di origine digitando l'invio o ESC. Per altre informazioni sui frammenti di codice, vedere [frammenti di codice](../../ide/code-snippets.md).  
   
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [procedura dettagliata: implementazione di frammenti di codice](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [procedura dettagliata: Implementazione di frammenti di codice](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
 >  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
@@ -51,7 +48,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 ### <a name="installing-the-snippet-files"></a>Installazione dei file di frammento di codice  
  Tutti i frammenti di codice per una lingua vengono archiviati come modelli in file XML, in genere un modello di frammento di codice per ogni file. Per informazioni dettagliate sullo schema XML usato per il modello di frammento di codice, vedere [riferimento dello Schema dei frammenti di codice](../../ide/code-snippets-schema-reference.md). Ogni modello di frammento di codice viene identificato con un ID lingua. Questo linguaggio ID viene specificato nel Registro di sistema e viene inserita la il `Language` attributo del \<codice > tag nel modello.  
   
- In genere esistono due posizioni in cui sono archiviati i file di modello di frammento di codice: 1) in cui è stato installato il linguaggio e 2) nella cartella dell'utente. Questi percorsi vengono aggiunti al Registro di sistema in modo che Visual Studio **Gestione frammenti di codice** possibile trovare i frammenti di codice. La cartella dell'utente è in cui sono archiviati frammenti di codice creati dall'utente.  
+ In genere esistono due posizioni in cui sono archiviati i file di modello di frammento di codice: 1) in cui è stata installata la lingua e 2) nella cartella dell'utente. Questi percorsi vengono aggiunti al Registro di sistema in modo che Visual Studio **Gestione frammenti di codice** possibile trovare i frammenti di codice. La cartella dell'utente è in cui sono archiviati frammenti di codice creati dall'utente.  
   
  Il layout cartella tipica per i file di modello di frammento di codice installati aspetto simile al seguente: *[elemento InstallRoot]*\\ *[TestLanguage]* \snippets.\\ *[LCID]* \Snippets.  
   
@@ -223,7 +220,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Inserimento di un frammento di codice tramite un collegamento  
  Implementazione di un collegamento da un elenco di completamento è molto più complessa rispetto all'implementazione di un comando di menu. È innanzitutto necessario aggiungere collegamenti dei frammenti di all'elenco di completamento IntelliSense word. È quindi necessario rilevare quando un nome di scelta rapida del frammento di codice è stato inserito come risultato di completamento. Infine, è necessario ottenere il titolo di frammento di codice e il percorso usando il nome del collegamento e passare tali informazioni per il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo su di <xref:Microsoft.VisualStudio.Package.ExpansionProvider> (metodo).  
   
- Per aggiungere collegamenti dei frammenti per l'elenco di completamento di word, aggiungerli per il <xref:Microsoft.VisualStudio.Package.Declarations> dell'oggetto nel <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe. È necessario assicurarsi che è possibile identificare il collegamento come nome di frammento di codice. Per un esempio, vedere [procedura dettagliata: ottenere un elenco di installato frammenti di codice (implementazione Legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Per aggiungere collegamenti dei frammenti per l'elenco di completamento di word, aggiungerli per il <xref:Microsoft.VisualStudio.Package.Declarations> dell'oggetto nel <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe. È necessario assicurarsi che è possibile identificare il collegamento come nome di frammento di codice. Per un esempio, vedere [procedura dettagliata: Come ottenere un elenco di installato i frammenti di codice (implementazione Legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
  È possibile rilevare l'inserimento del collegamento del frammento di codice nel <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> metodo di <xref:Microsoft.VisualStudio.Package.Declarations> classe. Poiché il nome del frammento di codice è già stato inserito nel file di origine, è necessario innanzitutto rimuoverlo quando viene inserita l'espansione. Il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo accetta un intervallo che descrive il punto di inserimento per il frammento di codice; se l'intervallo include il nome intero frammento di codice nel file di origine, tale nome viene sostituito dal frammento.  
   
@@ -338,7 +335,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   Per altre informazioni su come ottenere un elenco di frammenti di codice installati per il servizio di linguaggio, vedere [procedura dettagliata: ottenere un elenco di installato frammenti di codice (implementazione Legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Per altre informazioni su come ottenere un elenco di frammenti di codice installati per il servizio di linguaggio, vedere [procedura dettagliata: Come ottenere un elenco di installato i frammenti di codice (implementazione Legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementazione della classe ExpansionFunction  
  Una funzione di espansione è una funzione denominata che viene incorporata in un modello di frammento e restituisce uno o più valori da inserire in un campo. Per supportare le funzioni di espansione nel servizio di linguaggio, è necessario derivare una classe dalla classe la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe e implementare il <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> (metodo). È quindi necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> metodo nella <xref:Microsoft.VisualStudio.Package.LanguageService> classe per restituire un'istanza nuova della versione del <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe per ogni funzione di espansione è supportare. Se si supporta un elenco di valori possibili da una funzione di espansione, è inoltre necessario sostituire il <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> nel metodo il <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe per restituire un elenco di tali valori.  
@@ -395,4 +392,4 @@ namespace TestLanguagePackage
  [Funzionalità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)   
  [La registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Frammenti di codice](../../ide/code-snippets.md)   
- [Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [Procedura dettagliata: Come ottenere un elenco di frammenti di codice installati (implementazione Legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

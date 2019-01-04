@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877562"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in una forma in un linguaggio specifico di dominio (DSL). È possibile visualizzare l'elemento decorator e scompaiano a seconda dello stato delle proprietà nel modello. In una forma che rappresenta una persona, ad esempio, si potrebbero hanno icone diverse che vengono visualizzati in base alla relativa al sesso dell'utente, numero di elementi figlio e così via.
@@ -84,7 +83,7 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
 
 4.  Fare clic su **Compila soluzione** nel **compilazione** menu.
 
-5.  Fare doppio clic sulla segnalazione di errori che è apparsa: "*ClasseUtente* non contiene una definizione per GetDecoratorControlValue...".
+5.  Fare doppio clic la segnalazione di errori che è apparsa: "*ClasseUtente* non contiene una definizione per GetDecoratorControlValue...".
 
      Consente di aprire l'editor di testo in dsl\generatedcode\domainclasses.cs. Il messaggio di errore evidenziato precedente è un commento che viene chiesto di aggiungere un metodo.
 
