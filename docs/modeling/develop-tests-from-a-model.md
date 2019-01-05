@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958813"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -52,7 +51,7 @@ ms.locfileid: "49919340"
 
     -   Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.
 
--   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, il test di una funzione aritmetica semplice, può essere: Input 4; verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input; moltiplicare l'output per se stesso e verificare che il risultato sia l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.
+-   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.
 
 #### <a name="linking-tests-to-use-cases"></a>Collegamento di test ai casi di utilizzo
  Se si usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] per progettare ed eseguire i test, è possibile organizzare i test in elementi di lavoro storia utente requisito o caso d'uso. È possibile collegare questi elementi di lavoro ai casi di utilizzo del modello, in modo da tenere traccia rapidamente delle modifiche dei requisiti nei test, oltre che dello stato di avanzamento di ogni caso di utilizzo.
@@ -117,7 +116,7 @@ Assert (countAfter == countBefore = 1);
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.
 
 ### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolare i componenti con interfacce fornite e richieste
- È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste. Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
+ È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste.  Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
 
  Un vantaggio costituito da questa separazione è la possibilità di eseguire il test del componente sostituendo i servizi usati generalmente con oggetti fittizi. Si tratta di componenti configurati a scopo di test. Un componente fittizio fornisce l'interfaccia richiesta dal componente, rispondendo alle query con dati simulati. I componenti fittizi fanno parte di un test harness completo che è possibile connettere a tutte le interfacce del componente.
 
