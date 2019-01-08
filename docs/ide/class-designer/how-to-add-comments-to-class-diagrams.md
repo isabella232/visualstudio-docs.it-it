@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere commenti a diagrammi classi (Progettazione classi)'
+title: 'Procedura: Aggiungere commenti a diagrammi classi (Progettazione classi)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: afa0bc954e2812cb4c0149bfeef623195540e2a3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957106"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684574"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Procedura: Aggiungere commenti a diagrammi classi
 
@@ -39,5 +39,5 @@ Un commento risiede nella visualizzazione del diagramma classi in **Progettazion
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso di diagrammi classi](working-with-class-diagrams.md)
-- [Procedura: Personalizzare i diagrammi classi](how-to-customize-class-diagrams.md)
+- [Uso di diagrammi classi](designing-and-viewing-classes-and-types.md)
+- [Procedura: Personalizzare diagrammi classi](how-to-customize-class-diagrams.md)

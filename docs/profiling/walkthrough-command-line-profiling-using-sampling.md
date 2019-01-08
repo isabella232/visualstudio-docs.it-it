@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
+title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815256"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592430"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 
@@ -43,7 +43,7 @@ In questa procedura dettagliata vengono illustrate le operazioni seguenti:
 Il campionamento è un metodo di profilatura mediante il quale viene eseguito periodicamente il polling di un processo specifico per determinare la funzione attiva. I dati risultanti forniscono un conteggio della frequenza con cui la funzione si trovava all'inizio dello stack di chiamate quando è stato eseguito il campionamento del processo.
 
 > [!NOTE]
-> Gli strumenti da riga di comando degli Strumenti di profilatura si trovano nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di Visual Studio. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra Prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax è un'applicazione a 32 bit.
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.  
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Per eseguire la profilatura dell'applicazione PeopleTrax tramite il metodo di campionamento
 

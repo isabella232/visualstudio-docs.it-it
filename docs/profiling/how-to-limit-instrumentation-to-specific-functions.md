@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Limitare la strumentazione a specifiche funzioni | Microsoft Docs'
+title: 'Procedura: Limitare la strumentazione a funzioni specifiche | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ef6ef7a562f03f84184a86944a93f99c1d13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e145a50c3fdb643affb67989ae11346bf7e30f9
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815156"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592859"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a funzioni specifiche
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a specifiche funzioni
 È possibile limitare la strumentazione e la raccolta dei dati a una o più funzioni impostando le opzioni nella pagina **Avanzate** di **Sessione prestazioni** o nelle pagine delle proprietà del file binario di destinazione:  
   
 - Se si specificano le funzioni nella pagina delle proprietà della sessione di prestazioni, solo tali funzioni vengono instrumentate in tutti i file binari instrumentati della sessione.  
@@ -46,7 +46,7 @@ ms.locfileid: "49815156"
     `FuncSpec` è il nome dello spazio dei nomi e della funzione in questo formato `Namespace`**::**`FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.  
   
    > [!NOTE]
-   >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (in genere, la directory \Team Tools\Performance Tools nella directory di installazione di [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]) e quindi digitare **vsinstr /DumpFuncs**  
+   >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Per limitare la strumentazione a specifiche funzioni in un file binario  
   
@@ -65,7 +65,7 @@ ms.locfileid: "49815156"
     `FuncSpec` è il nome dello spazio dei nomi e della funzione in questo formato `Namespace`**::**`FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.  
   
    > [!NOTE]
-   >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (in genere, la directory \Team Tools\Performance Tools nella directory di installazione di [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]) e quindi digitare **vsinstr /DumpFuncs**  
+   >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllare la raccolta dati](../profiling/controlling-data-collection.md)   

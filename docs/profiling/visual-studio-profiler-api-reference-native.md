@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062998"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592768"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Riferimenti per le API del profiler di Visual Studio (native)
 Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, è necessario includere il file di intestazione *VSPerf.h* e aggiungere il file *VSPerf.lib* nel progetto.  
   
 > [!NOTE]
->  Per impostazione predefinita, *VSPerf.h* e *VSPerf.lib* si trovano in una cartella denominata *PerfSDK*. Ad esempio, la directory *\<unità>:\Programmi\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK*.  
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

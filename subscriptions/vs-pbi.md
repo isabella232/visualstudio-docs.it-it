@@ -3,18 +3,18 @@ title: Vantaggio Power BI Pro nelle sottoscrizioni di Visual Studio | Microsoft 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219536"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739643"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -73,30 +73,33 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Yes|
-| Visual Studio Professional (Standard, cloud annuale, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Sì|
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |N/D         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Yes|
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Sì|
 | Visual Studio Dev Essentials | N/D  | Non disponibile |N/D|
 | Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
 
-<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Esclude:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Non include:  Microsoft Partner Network (MPN), FTE, Imagine.*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>D: se il vantaggio è gratuito, perché è necessario indicare un numero di carta di credito?
-R: il vantaggio è gratuito, ma l'attivazione usa lo stesso sistema usato per elaborare gli ordini a pagamento.  Sono disponibili due tipi di pagamento. 
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>D:  Se il vantaggio è gratuito, perché è necessario indicare un numero di carta di credito?
+R:  Il vantaggio è gratuito, ma l'attivazione usa lo stesso sistema usato per elaborare gli ordini a pagamento.  Sono disponibili due tipi di pagamento. 
 - Carta di credito.  Se si specifica un numero di carta di credito, NON viene effettuato alcun addebitato sulla carta. 
 - Fattura.  Se si seleziona "Fattura" come tipo di pagamento, non è necessario indicare un numero di carta di credito.  È anche possibile impostare l'intervallo su "annuale".  In questo modo si riceverà un solo messaggio di posta elettronica che informa che la fattura è pronta.  L'importo della fattura sarà $ 0,00.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>D: è possibile usare il vantaggio Power BI Pro incluso nelle licenze della sottoscrizione in un ambiente di produzione?
-R: sì.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>D:  È possibile usare il vantaggio Power BI Pro incluso nelle licenze della sottoscrizione in un ambiente di produzione?
+R:  Sì.  
 
-### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>D: durante il tentativo di attivare Power BI Pro viene visualizzato un messaggio che indica che si ha già un account di lavoro.  È ancora possibile usare il vantaggio?
-R: sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant di Office 365 attivi di cui non si è amministratore.  Per aggiungere Power BI Pro a un tenant, è necessario essere amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>D:  Durante il tentativo di attivare Power BI Pro viene visualizzato un messaggio che indica che si ha già un account di lavoro.  È comunque possibile usare il vantaggio?
+R:  Sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant di Office 365 attivi di cui non si è amministratore.  Per aggiungere Power BI Pro a un tenant, è necessario essere amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
 1.  Quando viene visualizzato il messaggio che indica che si ha già un account di lavoro, fare clic su **Creare nuovo account**.
 
 2.  Nella schermata successiva immettere le informazioni di contatto e fare clic su **Avanti**.
@@ -108,8 +111,8 @@ R: sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant 
 4.  I passaggi rimanenti del processo sono uguali a quelli descritti nell'articolo, a partire dal passaggio 6.
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>D: in un dominio di un ente pubblico  è possibile usare il vantaggio? 
-R: no.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant in un dominio per enti pubblici. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>D:  In un tenant di un ente pubblico  è possibile usare il vantaggio? 
+R:  No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pubblici. 
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con Power BI Pro?

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: visualizzare un'associazione di raccolte (Progettazione classi)"
+title: "Procedura: Visualizzare un'associazione di raccolte (Progettazione classi)"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f2957492224f4d69a9536b4dfd6f47c136f72b0c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995881"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684064"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procedura: Visualizzare un'associazione di raccolte in Progettazione classi
 
@@ -42,4 +42,3 @@ La proprietà o il campo viene visualizzato come una linea di associazione che s
 
 - [Procedura: Creare associazioni tra tipi](how-to-create-associations-between-types.md)
 - [Progettazione di classi e tipi](designing-and-viewing-classes-and-types.md)
-- [Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)

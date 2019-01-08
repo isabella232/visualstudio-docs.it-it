@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876724"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739945"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio utilizza MSBuild, ma esso non dipende da Visual Studio. Richiamando *msbuild.exe* nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.
@@ -29,7 +29,7 @@ ms.locfileid: "49876724"
 
  Negli esempi seguenti viene illustrato quando è possibile eseguire le compilazioni tramite la riga di comando di MSBuild, anziché l'IDE di Visual Studio.
 
--   Visual Studio non è installato.
+-   Visual Studio non è installato. ([download di MSBuild senza Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools))
 
 -   Si desidera usare la versione a 64 bit di MSBuild. Questa versione di MSBuild non è solitamente necessaria, ma consente l'accesso di MSBuild a una maggiore quantità di memoria.
 
@@ -67,7 +67,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ##  <a name="project-file"></a>File di progetto
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa un formato di file di progetto basato su XML chiaro ed estensibile. Il formato del file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consente agli sviluppatori di descrivere gli elementi da compilare nonché la relativa modalità di compilazione per sistemi operativi e configurazioni di vario tipo. Gli sviluppatori hanno inoltre la possibilità di creare regole di compilazione riutilizzabili che possono essere organizzate in file separati. Ciò consente di eseguire in modo coerente le compilazioni relative ai vari progetti del prodotto.
 
- Nelle sezioni seguenti vengono descritti alcuni elementi di base del formato di file dei progetti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Per un'esercitazione su come creare un file di progetto di base, vedere [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Nelle sezioni seguenti vengono descritti alcuni elementi di base del formato di file dei progetti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Per un'esercitazione sulla creazione di un file di progetto di base, vedere [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ###  <a name="BKMK_Properties"></a> Proprietà
  Le proprietà sono coppie di chiave/valore che possono essere usate per configurare le compilazioni. Per dichiarare le proprietà, è necessario creare un elemento con lo stesso nome della proprietà, come figlio di un elemento [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Tramite il codice seguente, ad esempio, viene creata una proprietà denominata `BuildDir` con un valore `Build`.
@@ -170,10 +170,10 @@ Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargetin
 
 ## <a name="see-also"></a>Vedere anche
 
-| Titolo | Descrizione |
+| Titolo | Description |
 | - | - |
 | [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo. |
-| [Procedura dettagliata: uso di MSBuild](../msbuild/walkthrough-using-msbuild.md) | Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'IDE di Visual Studio. |
+| [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md) | Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'IDE di Visual Studio. |
 | [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md) | Presenta i quattro blocchi predefiniti di MSBuild: proprietà, elementi, destinazioni e attività. |
 | [Elementi](../msbuild/msbuild-items.md) | Descrive i concetti generali su cui si basa il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e le interazioni fra le singole parti del formato. |
 | [Proprietà di MSBuild](../msbuild/msbuild-properties.md) | Introduce proprietà e raccolte di proprietà. Le proprietà sono coppie di chiave/valore che possono essere usate per configurare le compilazioni |
@@ -182,7 +182,7 @@ Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargetin
 | [Condizioni](../msbuild/msbuild-conditions.md) | Descrive come usare l'attributo `Condition` in un elemento MSBuild. |
 | [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md) | Illustra la suddivisione in batch, l'esecuzione di trasformazioni, il multitargeting e altre tecniche avanzate. |
 | [Registrazione a MSBuild](../msbuild/logging-in-msbuild.md) | Descrive come registrare eventi, messaggi ed errori. |
-| [Risorse aggiuntive](../msbuild/additional-msbuild-resources.md) | Elenca risorse della community e di supporto che consentono di ottenere altre informazioni su MSBuild. |
+| [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Elenca risorse della community e di supporto che consentono di ottenere altre informazioni su MSBuild. |
 
 ## <a name="reference"></a>Riferimenti
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md) Collegamenti ad argomenti che contengono informazioni di riferimento.

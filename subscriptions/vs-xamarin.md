@@ -2,30 +2,36 @@
 title: Vantaggio Xamarin University nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 05/16/2018
+manager: lank
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni sulla sottoscrizione di training di Xamarin University inclusa nella sottoscrizione di Visual Studio selezionata.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df8bc6abc23c4258872b0983b2443e757ca849db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 524b3743f5489dfab0de52276c4162316dbed540
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838075"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740377"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio del training Xamarin University nelle sottoscrizioni di Visual Studio
 
 Compilare app iOS e Android native in C# con training avanzato da esperti di sviluppo per dispositivi mobili.
 
-I sottoscrittori di Visual Studio Enterprise ricevono sei mesi di accesso illimitato al catalogo Xamarin University completo.  I sottoscrittori di Visual Studio Professional ricevono tre mesi di accesso.
+Il contenuto di Xamarin University verrà trasferito in [Microsoft Learn](http://microsoft.com/learn), una nuova piattaforma di formazione interattiva che rappresenta il futuro dell'apprendimento in Microsoft. I vantaggi Xamarin University per i sottoscrittori di Visual Studio Enterprise e Professional, pertanto, non saranno più validi a partire dal 28 dicembre 2018, ultima data utile per richiedere il vantaggio. 
 
-I membri di Visual Studio Dev Essentials possono creare un account gratuito che include l'accesso a una selezione di corsi gratuiti, lezioni di ospiti, due classi live, registrazioni Lightning Lecture e altro ancora.
+Se è stato attivato il vantaggio di 3 o 6 mesi, tenere presente che il sito di Xamarin University verrà chiuso a giugno 2019. Le sessioni svolte durante l'orario di ufficio e i corsi con istruttore resteranno disponibili fino al 1° maggio 2019 per consentire di completare eventuali certificazioni Xamarin in corso. Dopo il 1° maggio, questi programmi, compresi gli esami di certificazione Xamarin, non saranno più disponibili. Dopo la chiusura del programma sarà possibile usare Microsoft Learn per continuare a migliorare le proprie competenze di sviluppo in Xamarin. 
+
+Se non si riesce ad attivare il vantaggio entro i tempi consentiti, tenere presente che all'inizio del 2019 Xamarin University trasferirà la maggior parte delle certificazioni e dei corsi Xamarin.Forms nel portale di [apprendimento in autonomia](https://elearning.xamarin.com) e che questi saranno assolutamente gratuiti. Per accedere a questi corsi è sufficiente [creare un account Xamarin University gratuito](https://university.xamarin.com/createfreeaccount). Nei prossimi mesi, tutti i corsi di formazione in autonomia verranno trasferiti in Microsoft Learn. La chiusura definitiva di Xamarin University è prevista per la fine di giugno 2019. Il resto del contenuto destinato ai soli sottoscrittori, inclusi laboratori e video di lezioni tenute da relatori esterni e lezioni rapide, verrà reso disponibile pubblicamente altrove. 
+
+Vedere [Xamarin University FAQ](https://university.xamarin.com/faq) (Domande frequenti su Xamarin University) per i dettagli.
+
+Fino al 28 dicembre 2018, i sottoscrittori di Visual Studio Enterprise ricevono sei mesi di accesso illimitato al catalogo Xamarin University completo.  I sottoscrittori di Visual Studio Professional ricevono tre mesi di accesso.
 
 
-## <a name="activation-steps"></a>Procedura di attivazione
+## <a name="activation-steps-valid-until-december-28-2018"></a>Passaggi di attivazione (validi fino al 28 dicembre 2018)
 1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Individuare il riquadro Xamarin University Training nella sezione Sviluppo professionale e fare clic sul collegamento **Activate** (Attiva) nella parte inferiore del riquadro del vantaggio.
     > [!div class="mx-imgBorder"]
@@ -70,23 +76,29 @@ I membri di Visual Studio Dev Essentials possono creare un account gratuito che 
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Yes |
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | 3 mesi       |  Yes |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Sì |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi       |  Sì |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D        |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                             |  N/D        |
-| Visual Studio Dev Essentials | N/D  | Piano gratuito                                             |  Yes        |
+| Visual Studio Dev Essentials | N/D  | Piano gratuito                                             |  Sì        |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).   Non include: MCT Software & Services.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).   Non include: MCT Software & Services.*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
-
-## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--what-happens-when-my-free-subscription-expires"></a>D: cosa accade quando scade la sottoscrizione gratuita?
-R: l'account di Xamarin University e lo stato della formazione rimarranno invariati, ma la sottoscrizione passerà a un account gratuito, che ha accesso limitato al materiale. Se si vuole continuare a mantenere tutti i vantaggi di una sottoscrizione, è possibile [acquistare una sottoscrizione mensile](https://aka.ms/buy-xamarin-university).
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con Xamarin University?  È possibile trovare numerose risorse di supporto all'indirizzo [https://university.xamarin.com/support](https://university.xamarin.com/support).
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="frequently-asked-questions"></a>Domande frequenti
+### <a name="q--if-ive-already-activated-my-xamarin-university-benefit-by-december-28-2018-what-happens-after-that-date"></a>D:  Se il vantaggio Xamarin University è stato già attivato entro il 28 dicembre 2018, cosa accade dopo questa data?
+R: Se il vantaggio è stato attivato prima del 28 dicembre o se è attualmente attivo, sarà possibile accedere alla sottoscrizione per la relativa durata.
+
+## <a name="next-steps"></a>Passaggi successivi
+Assicurarsi di attivare il vantaggio Xamarin University prima del 28 dicembre 2018.

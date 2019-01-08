@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce12c390de68a4554bd18686e7db0de28b9820ee
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067045"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592846"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione autonoma nativa (C/C++) in esecuzione e raccogliere dati sui conflitti di thread.  
   
 > [!NOTE]
->  Gli strumenti da riga di comando degli Strumenti di profilatura si trovano nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di Visual Studio. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra **Prompt dei comandi** oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specifica del percorso degli strumenti da riga di comando degli strumenti di profilatura](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.  
+ 
  Mentre il profiler è connesso all'applicazione, è possibile sospendere e riprendere la raccolta dei dati. Per terminare una sessione di profilatura, il profiler non deve essere più connesso all'applicazione e deve essere arrestato in modo esplicito.  
   
 ## <a name="attach-the-profiler-to-a-running-native-application"></a>Connettere il profiler a un'applicazione nativa in esecuzione  

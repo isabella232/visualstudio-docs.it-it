@@ -31,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1141c8d54bf545983c89e13ddbf17ffd41e5011
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938799"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684941"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
@@ -60,7 +60,7 @@ ms.locfileid: "49938799"
 |Attività|Contenuto di supporto|
 |----------| - |
 |**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|- [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Creare e modificare i membri dei tipi:** è possibile creare nuovi membri, modificare membri esistenti e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Aprire la finestra Dettagli classe
 
@@ -209,7 +209,7 @@ Le righe dei parametri contengono i seguenti elementi:
 
      L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-Nella finestra **Proprietà** vengono visualizzate le stesse proprietà dei parametri riportate nella finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
+Nella finestra **Proprietà** vengono visualizzate le stesse proprietà di parametro della finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
 
 > [!NOTE]
 > Per aggiungere un parametro a un delegato, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +320,5 @@ Il codice C++ nativo non può essere modificato tramite Progettazione classi o l
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visualizzazione dei tipi e delle relazioni](viewing-types-and-relationships.md)
+- [Visualizzazione dei tipi e delle relazioni](designing-and-viewing-classes-and-types.md)
 - [Refactoring di classi e tipi](refactoring-classes-and-types.md)

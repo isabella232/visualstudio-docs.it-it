@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068380"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803740"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
@@ -27,7 +27,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   **Integrazione:**
 
-    -   Correzione di problemi di ricaricamento dei progetti e IntelliSense durante l'aggiunta o la rimozione degli script che si trovano nel primissimo progetto.
+    -   Correzione di problemi di ricaricamento dei progetti e di IntelliSense durante l'aggiunta o la rimozione degli script che si trovano nel primissimo progetto.
 
 ## <a name="3902"></a>3.9.0.2
  Data di rilascio: 19 novembre 2018

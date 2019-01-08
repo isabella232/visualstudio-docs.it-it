@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57d56564b7be9051efb1a5d153a2a797fcc2211
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820005"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592911"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione usando la riga di comando
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.  
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 1.  Se si eseguono gli strumenti di profilatura in un computer in cui è installato Visual Studio, una finestra di comando di Visual Studio imposta i percorsi corretti. Nel menu **Strumenti** scegliere **prompt dei comandi di VS**.  
 
 > [!NOTE]
->  Gli strumenti da riga di comando degli Strumenti di profilatura si trovano nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di Visual Studio. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra Prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.  
 
 ## <a name="start-the-application-with-the-profiler"></a>Avviare l'applicazione con il profiler  
  Per avviare un'applicazione di destinazione tramite il profiler, usare le opzioni VSPerfCmd **/start** e **/launch** per inizializzare il profiler e avviare l'applicazione. È possibile specificare **/start** e **/launch** e le relative opzioni in un'unica riga di comando.  
@@ -51,7 +51,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.  
 
-   | Opzione | Descrizione |
+   | Opzione | Description |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
@@ -62,14 +62,14 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     È possibile usare una o più opzioni tra le seguenti con l'opzione **/launch**.  
 
-   |Opzione|Descrizione|  
+   |Opzione|Description|  
    |------------|-----------------|  
    |[/args](../profiling/args.md) **:** `Arguments`|Specifica una stringa che contiene gli argomenti della riga di comando da passare all'applicazione di destinazione.|  
    |[/console](../profiling/console.md)|Avvia l'applicazione della riga di comando di destinazione in una finestra separata.|  
 
     Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa una volta ogni 10 secondi su un processore da 1 GHz. È possibile specificare una delle opzioni seguenti per modificare l'intervallo dei cicli di clock o per specificare un evento di campionamento diverso.  
 
-   |Evento di campionamento|Descrizione|  
+   |Evento di campionamento|Description|  
    |------------------|-----------------|  
    |[/timer](../profiling/timer.md) **:** `Interval`|Imposta l'intervallo di campionamento sul numero di cicli di clock non interrotti specificato da `Interval`.|  
    |[/pf](../profiling/pf.md)[**:**`Interval`]|Imposta l'evento di campionamento sugli errori di pagina. Se si specifica `Interval`, imposta il numero di errori di pagina tra campioni. Il valore predefinito è 10.|  
@@ -83,7 +83,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 -   Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
@@ -98,7 +98,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     -   Chiudere l'applicazione di destinazione.  
 
-         oppure  
+         -oppure-  
 
     -   Digitare **VSPerfCmd /detach**  
 

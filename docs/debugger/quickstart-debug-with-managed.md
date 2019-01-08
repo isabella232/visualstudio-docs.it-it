@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257186"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562074"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Avvio rapido: eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
@@ -151,7 +151,7 @@ Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra 
 
 L'app riprende l'esecuzione, esegue la chiamata a `doWork` e si blocca sulla riga di codice in cui si è fatto clic.
 
-I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F11**. Per ottenere istruzioni più dettagliate, vedere la [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
+I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F11**. Per altre istruzioni dettagliate, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Esaminare le variabili in un suggerimento dati
 

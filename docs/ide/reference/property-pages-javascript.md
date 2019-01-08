@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: eabc82926c821fb5a8d83637fb9118bc25df82bc
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220030"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684993"
 ---
 # <a name="property-pages-javascript"></a>Pagine proprietà, JavaScript
 L'opzione **Pagine delle proprietà** permette di accedere alle impostazioni del progetto. È possibile usare le pagine visualizzate in **Pagine delle proprietà** per modificare le proprietà del progetto.
@@ -39,11 +39,11 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
 
  **Configurazione**
 
- Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Release**, **Tutte le configurazioni** o una configurazione definita dall'utente. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Release**, **Tutte le configurazioni** o una configurazione definita dall'utente. Per altre informazioni, vedere [Procedura: Impostare le configurazioni Debug e Release in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Piattaforma**
 
- Specifica le impostazioni della piattaforma da visualizzare o modificare. Le impostazioni sono **Qualsiasi CPU** (impostazione predefinita per le app [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una piattaforma definita dall'utente. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Specifica le impostazioni della piattaforma da visualizzare o modificare. Le impostazioni sono **Qualsiasi CPU** (impostazione predefinita per le app [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una piattaforma definita dall'utente. Per altre informazioni, vedere [Procedura: Impostare le configurazioni Debug e Release in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Pagina Generale
  Usare le opzioni seguenti per impostare le proprietà generali del progetto.
@@ -73,7 +73,7 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
 
  Specifica l'host predefinito per il debugger.
 
--   Selezionare **Computer locale** per avviare l'applicazione nel computer host di Visual Studio. Per altre informazioni, vedere [Esecuzione di app nel computer locale](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Selezionare **Computer locale** per avviare l'applicazione nel computer host di Visual Studio. Per altre informazioni, vedere [Esecuzione di app nel computer locale](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Selezionare **Simulatore** per avviare l'applicazione nel simulatore. Per altre informazioni, vedere [Esecuzione di app nel simulatore](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

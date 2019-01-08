@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019 Preview
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità della versione di anteprima di Visual Studio 2019.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159750"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647764"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Novità di Visual Studio 2019 Preview
 
@@ -50,6 +50,8 @@ La prima cosa che si nota quando si apre Visual Studio 2019 è la nuova finestra
    ![Nuova finestra iniziale in Visual Studio 2019](../ide/media/start-window.png)
 
 Questa nuova finestra iniziale offre una serie di opzioni per clonare o estrarre il codice, aprire un progetto o una soluzione, aprire una cartella locale o creare un nuovo progetto. Il fatto che queste opzioni siano immediatamente disponibili in una finestra di dialogo semplice consente sia ai principianti che agli utenti avanzati di Visual Studio di creare codice rapidamente.
+
+Per altre informazioni, vedere il post di blog [Get to code: How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Vai al codice: come è stata progettata la nuova finestra iniziale di Visual Studio).
 
 ### <a name="better-search"></a>Ricerca migliorata
 
@@ -82,6 +84,8 @@ Probabilmente la finestra Espressioni di controllo è già stata usata in preced
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) è un servizio per sviluppatori che consente di condividere una codebase e il relativo contesto con un collega e ottenere collaborazione bidirezionale immediata direttamente all'interno di Visual Studio. Con Live Share un collega può leggere, esplorare, modificare ed eseguire il debug di un progetto condiviso da un altro utente, in modo facile e sicuro.
 
 Con Visual Studio 2019 Preview, questo servizio viene installato per impostazione predefinita.
+
+Per altre informazioni, vedere il post di blog [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share per revisioni del codice in tempo reale e formazione interattiva).
 
 ## <a name="modern-development-support"></a>Supporto per lo sviluppo moderno
 
@@ -122,7 +126,7 @@ Per la versione di anteprima dell'estensione IntelliCode per Visual Studio è st
 
 Per chi usa C#, è stata inoltre aggiunta la possibilità di eseguire il training di un modello personalizzato nel proprio codice.
 
-Per altre informazioni sull'estensione e come scaricarla, vedere la pagina della [versione di anteprima di Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
+Per altre informazioni sugli aggiornamenti recenti, vedere il post di blog [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode supporta più lingue e apprende dal codice creato dall'utente). E per altre informazioni sull'estensione e su come scaricarla, vedere la pagina della [versione di anteprima di Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Commenti e suggerimenti
 
@@ -135,4 +139,5 @@ Per altre informazioni sull'estensione e come scaricarla, vedere la pagina della
 ## <a name="see-also"></a>Vedere anche
 
 * [Note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
 * [Novità di Visual Studio 2017](whats-new-in-visual-studio.md)

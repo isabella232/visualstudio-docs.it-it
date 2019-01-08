@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861631"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805159"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Presentazione della distribuzione in Visual Studio
 
@@ -41,7 +41,7 @@ Per istruzioni dettagliate per la distribuzione, vedere le guide introduttive e 
 
 La distribuzione in una cartella locale viene di solito usata a scopo di test o per iniziare una pre-distribuzione quando viene usato un altro strumento per la distribuzione finale.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e .**NET Core**: usare lo strumento Pubblicazione per eseguire la distribuzione in una cartella locale. Le opzioni disponibili variano a seconda del tipo di app. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è quindi necessario fare clic su **Crea nuovo profilo**. Quindi scegliere **Cartella**. Per altre informazioni, vedere [Distribuire in una cartella locale](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e **.NET Core**: usare lo strumento Pubblicazione per la distribuzione in una cartella locale. Le opzioni disponibili variano a seconda del tipo di app. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è quindi necessario fare clic su **Crea nuovo profilo**. Quindi scegliere **Cartella**. Per altre informazioni, vedere [Distribuire in una cartella locale](quickstart-deploy-to-local-folder.md).
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
@@ -55,7 +55,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
     In Visual Studio 2017 versione 15.7 e successive, è possibile distribuire app ASP.NET Core nel **Servizio app per Linux**.
 
-    Per le app Python, vedere anche [Python: pubblicazione nel Servizio app di Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Per le app Python, vedere anche [Python: pubblicazione nel Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Per una rapida introduzione, vedere [Pubblicare in Azure](quickstart-deploy-to-azure.md) e [Pubblicare in Linux](quickstart-deploy-to-linux.md). Vedere anche [Pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione tramite Git, vedere [Distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +66,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Pubblicare nel Web o distribuire in una condivisione di rete
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: è possibile usare lo strumento Pubblicazione per eseguire la distribuzione in un sito Web tramite FTP o Distribuzione Web. Per altre informazioni, vedere [Distribuire in un sito Web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: è possibile usare lo strumento Pubblicazione per distribuire un sito Web con FTP o Distribuzione Web. Per altre informazioni, vedere [Distribuire in un sito Web](quickstart-deploy-to-a-web-site.md).
 
     In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è quindi necessario fare clic su **Crea nuovo profilo**. Nello strumento Pubblicazione scegliere l'opzione da usare e seguire la procedura di configurazione.
 

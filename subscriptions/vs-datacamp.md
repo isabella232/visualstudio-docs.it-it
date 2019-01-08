@@ -3,18 +3,18 @@ title: Migliorare subito le competenze di data science con il vantaggio DataCamp
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863908"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802148"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 
@@ -42,12 +42,9 @@ La durata del vantaggio DataCamp varia a seconda della sottoscrizione di Visual 
     - Python per data science
     - Sviluppo dell'insieme di competenze di data science
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Per iniziare è sufficiente fare clic sul percorso scelto.
+   > [!div class="mx-imgBorder"]
+   > ![Scelta del percorso DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione, oppure fare clic su **I am not sure.  Show me all career paths** (Non so. Mostrami tutti i percorsi di carriera) per creare un percorso più ampio.
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Just click on your chosen path to get started.
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile                                              |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Dev Essentials | N/D  | 2 mesi | No. Disponibile solo per i nuovi sottoscrittori |
-| Visual Studio Enterprise (Standard, cloud annuale)  | NFR<sup>1</sup> |Non disponibile  | N/D |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 
 
 
-<sup>1</sup> *Include: Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Include:  Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

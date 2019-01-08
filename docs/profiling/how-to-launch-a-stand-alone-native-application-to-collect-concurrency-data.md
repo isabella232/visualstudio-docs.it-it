@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27c2969286d61738ed059e3973b09843bebc5153
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: a144462902ec13d116a083c3475b6ec3f8f01a8a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592580"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma nativa e raccogliere dati di concorrenza di thread e processi.  
@@ -29,8 +29,8 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 -   Arresto della sessione di profilatura  
   
 > [!NOTE]
->  Gli strumenti da riga di comando degli strumenti di profilatura sono disponibili nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare il profiler da un prompt dei comandi, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra **Prompt dei comandi** oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+
 ## <a name="start-the-application-with-the-profiler"></a>Avviare l'applicazione con il profiler  
  Per avviare un'applicazione di destinazione con il profiler, usare le opzioni [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** e **/launch** per inizializzare il profiler e avviare l'applicazione. È possibile specificare **/start** e **/launch** e le relative opzioni. È anche possibile aggiungere l'opzione **/globaloff** per sospendere la raccolta dei dati all'avvio dell'applicazione di destinazione. Usare quindi **/globalon** per iniziare a raccogliere i dati.  
   
@@ -44,7 +44,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
   
      È possibile usare una qualsiasi delle opzioni nella tabella seguente con l'opzione **/start:concurrency**.  
   
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500.|  
@@ -56,7 +56,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
   
      È possibile usare una qualsiasi delle opzioni nella tabella seguente con l'opzione **/launch**.  
   
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/args](../profiling/args.md) **:** `Arguments`|Specifica una stringa che contiene gli argomenti della riga di comando da passare all'applicazione di destinazione.|  
     |[/console](../profiling/console.md)|Avvia l'applicazione della riga di comando di destinazione in una finestra separata.|  
@@ -69,7 +69,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
   
 -   Le coppie di opzioni nella tabella seguente consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
   
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  

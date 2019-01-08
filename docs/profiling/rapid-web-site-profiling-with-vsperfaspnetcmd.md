@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ccff5ef0575eea9d35239cab7bf3ffa47a11b315
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592664"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 
@@ -29,7 +29,7 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
  In alcuni scenari, quali la raccolta di dati di concorrenza o la sospensione e la ripresa della profilatura, **VSPerfCmd** costituisce il metodo di profilatura preferito.
 
 > [!NOTE]
-> Gli strumenti da riga di comando degli Strumenti di profilatura si trovano nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di Visual Studio. Nei computer a 64 bit usare lo strumento VSPerfASPNETCmd disponibile nella directory *\Team Tools\Performance Tools* 32 bit. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.  
 
 ## <a name="profile-an-aspnet-application"></a>Profiling di un'applicazione ASP.NET
 
@@ -100,7 +100,7 @@ Per terminare la profilatura:
 
 È possibile aggiungere una qualsiasi delle opzioni seguenti ai comandi elencati in precedenza in questa sezione, ad eccezione del comando **vsperfaspnetcmd /shutdown**.
 
-|Opzione|Descrizione|
+|Opzione|Description|
 |------------|-----------------|
 |**/Output:** `VspFile`|Per impostazione predefinita, il file dei dati di profilatura (con estensione *vsp*) viene creato nella directory corrente con il nome file **PerformanceReport.vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|
 |**/PackSymbols:Off**|Per impostazione predefinita, VsPerfASPNETCmd incorpora simboli (nomi di funzione e di parametro e così via) nel file con estensione *vsp*. L'incorporamento di simboli può aumentare notevolmente le dimensioni del file di dati di profilatura. Se quando si analizzano i dati si ha accesso ai file con estensione *pdb* contenenti i simboli, usare l'opzione /packsymbols:off per disabilitare l'incorporamento dei simboli.|

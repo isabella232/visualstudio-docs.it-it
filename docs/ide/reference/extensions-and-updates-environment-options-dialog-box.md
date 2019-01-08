@@ -12,27 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35bf9d72ba62210fb83d950fea2bd2f6f90cb34
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2ff9cc6ea88aa7a8e7c7e69c2fd51c8f7997a98
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943306"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684277"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Estensioni e aggiornamenti, Ambiente, finestra di dialogo Opzioni
+
 Usare questa pagina per impostare le opzioni relative alla modalità di esecuzione degli aggiornamenti da parte di Visual Studio e della modalità di aggiornamento e individuazione delle estensioni.
 
-### <a name="automatically-check-for-updates"></a>Controlla automaticamente la disponibilità di aggiornamenti
- Se selezionato, verrà controllata periodicamente la disponibilità di aggiornamenti per Visual Studio, per SDK e gli strumenti installati e per le estensioni e verranno visualizzate le notifiche nella barra dei menu quando sono disponibili gli aggiornamenti. Per altre informazioni, vedere [Notifiche](../../ide/visual-studio-notifications.md).
+## <a name="automatically-check-for-updates"></a>Controlla automaticamente la disponibilità di aggiornamenti
 
-### <a name="automatically-update-extensions"></a>Aggiorna automaticamente le estensioni
- Quando selezionato, gli aggiornamenti alle estensioni vengono eseguiti senza richiesta di conferma. Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Se selezionato, verrà controllata periodicamente la disponibilità di aggiornamenti per Visual Studio, per SDK e gli strumenti installati e per le estensioni e verranno visualizzate le notifiche nella barra dei menu quando sono disponibili gli aggiornamenti. Per altre informazioni vedere [Aggiornare Visual Studio](../../install/update-visual-studio.md).
 
-### <a name="load-user-extensions-when-running-as-administrator"></a>Carica estensioni per utente se eseguite come amministratore
- Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+## <a name="automatically-update-extensions"></a>Aggiorna automaticamente le estensioni
 
-### <a name="additional-extension-galleries"></a>Raccolte di estensioni aggiuntive
- Una funzionalità Enterprise che abilita il supporto per gallerie di estensioni proprietarie. Per altre informazioni, vedere [Private Galleries](../../extensibility/private-galleries.md) (Raccolte private).
+Quando selezionato, gli aggiornamenti alle estensioni vengono eseguiti senza richiesta di conferma. Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+
+## <a name="load-user-extensions-when-running-as-administrator"></a>Carica estensioni per utente se eseguite come amministratore
+
+Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+
+## <a name="additional-extension-galleries"></a>Raccolte di estensioni aggiuntive
+
+Una funzionalità Enterprise che abilita il supporto per gallerie di estensioni proprietarie. Per altre informazioni, vedere [Private Galleries](../../extensibility/private-galleries.md) (Raccolte private).
 
 ## <a name="see-also"></a>Vedere anche
 

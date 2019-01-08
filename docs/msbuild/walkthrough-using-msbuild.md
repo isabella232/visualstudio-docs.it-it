@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Uso di MSBuild | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 12/18/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880149"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648920"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:
@@ -116,24 +116,28 @@ L'attività Message è una delle tante disponibili in MSBuild. Per un elenco com
 L'attività Message accetta il valore stringa dell'attributo Text come input e lo visualizza nel dispositivo di output. La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
 
 ## <a name="build-the-target"></a>Compilare la destinazione
- Eseguire MSBuild dal **prompt dei comandi di Visual Studio** per compilare la destinazione HelloWorld definita sopra. Usare le opzioni della riga di comando -target o -t per selezionare la destinazione.
+ Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **prompt dei comandi per gli sviluppatori** per Visual Studio. Usare le opzioni della riga di comando -target o -t per selezionare la destinazione.
 
 > [!NOTE]
->  Nelle sezioni successive il **prompt dei comandi di Visual Studio** sarà chiamato **finestra di comando**.
+>  Nelle sezioni successive il **prompt dei comandi per gli sviluppatori** verrà chiamato **finestra di comando**.
 
 #### <a name="to-build-the-target"></a>Per compilare la destinazione
 
-1.  Fare clic su **Start**, quindi su **Tutti i programmi**. Individuare e fare clic sul **prompt dei comandi di Visual Studio** nella cartella **Strumenti di Visual Studio**.
+1. Aprire la **finestra di comando**.
 
-2.  Dalla finestra di comando passare alla cartella contenete il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
+   (Windows 10) Nella casella di ricerca della barra delle applicazioni iniziare a digitare il nome dello strumento, ad esempio `dev` o `developer command prompt`. Verrà visualizzato un elenco di app installate che corrispondono ai criteri di ricerca.
 
-3.  Eseguire msbuild con l'opzione di comando -t: HelloWorld. La destinazione HelloWorld verrà selezionata e compilata:
+   Se è necessario cercarlo manualmente, il file, *LaunchDevCmd.bat*, si trova nella cartella *<visualstudio installation folder>\<versione>\Common7\Tools*.
+
+2. Dalla finestra di comando passare alla cartella contenete il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
+
+3. Eseguire msbuild con l'opzione di comando -t: HelloWorld. La destinazione HelloWorld verrà selezionata e compilata:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Esaminare l'output nella **finestra di comando**. Saranno visualizzate le due righe "Hello" e "World":
+4. Esaminare l'output nella **finestra di comando**. Saranno visualizzate le due righe "Hello" e "World":
 
     ```
     Hello
@@ -225,7 +229,7 @@ $(PropertyName)
  Quasi tutti gli elementi di MSBuild possono avere un attributo Condition. Per altre informazioni sull'uso dell'attributo Condition, vedere [Condizioni](../msbuild/msbuild-conditions.md).
 
 ### <a name="reserved-properties"></a>Proprietà riservate
- In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Variabili di ambiente
  È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).

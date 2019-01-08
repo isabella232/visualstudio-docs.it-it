@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae6711ae49de037fd04039f1e07b09264fdce1b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f79584d5ebb3e83431bcb8f819f5a5e67d23111
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592170"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma .NET Framework e raccogliere dati di memoria.  
@@ -29,7 +29,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 -   Arresto della sessione di profilatura.  
 
 > [!NOTE]
->  Gli strumenti da riga di comando degli strumenti di profilatura sono disponibili nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
 ## <a name="start-the-application-with-the-profiler"></a>Avviare l'applicazione con il profiler  
  Per avviare un'applicazione di destinazione tramite il profiler, usare le opzioni **VSPerfCmd.exe/start** e **/launch** per inizializzare il profiler e avviare l'applicazione. È possibile specificare **/start** e **/launch** e le relative opzioni in una riga di comando.  
@@ -50,7 +50,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.  
 
-   | Opzione | Descrizione |
+   | Opzione | Description |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
@@ -62,14 +62,14 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
    - L'opzione [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword` è obbligatoria per raccogliere i dati di memoria .NET Framework. Il parametro keyword specifica se raccogliere i dati sull'allocazione di memoria o se raccogliere sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.  
 
-     |Parola chiave|Descrizione|  
+     |Parola chiave|Description|  
      |-------------|-----------------|  
      |**allocation**|Raccoglie solo i dati sull'allocazione di memoria.|  
      |**lifetime**|Raccoglie sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.|  
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/launch**.  
 
-   |Opzione|Descrizione|  
+   |Opzione|Description|  
    |------------|-----------------|  
    |[/args](../profiling/args.md) **:** `Arguments`|Specifica una stringa che contiene gli argomenti della riga di comando da passare all'applicazione di destinazione.|  
    |[/console](../profiling/console.md)|Avvia l'applicazione della riga di comando di destinazione in una finestra separata.|  
@@ -83,7 +83,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 -   Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
@@ -100,7 +100,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     -   Chiudere l'applicazione di destinazione.  
 
-         oppure  
+         -oppure-  
 
     -   Digitare **VSPerfCmd /detach**  
 

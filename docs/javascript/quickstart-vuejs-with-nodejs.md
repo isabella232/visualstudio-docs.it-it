@@ -15,12 +15,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058951"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441483"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Vue.js
 
@@ -41,7 +41,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
-1. Nella finestra di dialogo **Nuovo progetto**, in corrispondenza di **JavaScript** > **Node.js** oppure di **TypeScript** > **Node.js**, scegliere **Applicazione Web Vue.js di base**, immettere un nome di progetto e quindi fare clic su **OK**.
+1. Nella finestra di dialogo **Nuovo progetto**, in corrispondenza di **JavaScript** > **Node.js** oppure di **TypeScript** > **Node.js**, scegliere **Applicazione Web Vue.js di base**. Immettere un nome di progetto e fare clic su **OK**.
 
      ![Modello Vue.js](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Aggiungere un file con estensione vue al progetto
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse su una cartella, ad esempio la cartella *src*, quindi scegliere **Aggiungi** > **Nuovo elemento**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse su una cartella, ad esempio la cartella *src/components*, quindi scegliere **Aggiungi** > **Nuovo elemento**.
 
 1. Selezionare **Componente file singoli Vue JavaScript** oppure **Componente file singoli Vue TypeScript**, quindi fare clic su **Aggiungi**.
 
@@ -85,7 +85,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. (Solo per progetti TypeScript) Da Visual Studio scegliere **Compila** > **Pulisci soluzione**.
 
-1. In seguito, scegliere **Compila** > **Compila soluzione** per compilare il progetto. Controllare la finestra **Output** per vedere i risultati della compilazione.
+1. In seguito, scegliere **Compila** > **Compila soluzione** per compilare il progetto. Controllare i risultati della compilazione nella finestra **Output** e scegliere **Compila** dall'elenco **Mostra output di**.
 
     Il modello di progetto Vue.js usa lo script npm `build` tramite la configurazione di un evento di post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto (*\<projectname\>.njsproj*) da Esplora risorse e individuare la seguente riga di codice:
 
@@ -105,7 +105,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. Chiudere il Web browser.
 
-La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per iniziare ad apprendere l'uso dell'IDE di Visual Studio con Vue.js. Se si vuole approfondire la conoscenza relativa alle funzionalità, continuare con un'esercitazione nella sezione del sommario relativa alle **esercitazioni**.
+La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per iniziare ad apprendere l'uso dell'IDE di Visual Studio con Vue.js. Se si vuole approfondire la conoscenza relativa alle funzionalità, scegliere un'esercitazione nella sezione del sommario relativa alle **esercitazioni**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

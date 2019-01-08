@@ -2,23 +2,24 @@
 title: Introduzione a progetti e soluzioni
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4967f687f214e544aa65526144803ce31e99d7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159334"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441743"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
-Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e un *progetto* in Visual Studio. Una soluzione è un contenitore che consente di organizzare uno o più progetti di codice correlati, ad esempio, una libreria di classi e il progetto di test corrispondente. Si esaminano le proprietà di un progetto e alcuni dei file che può contenere. Verrà anche creato un riferimento da un progetto a un altro.
+Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e un *progetto* in Visual Studio. Una soluzione è un contenitore che consente di organizzare uno o più progetti di codice correlati, ad esempio, un progetto di libreria di classi e il progetto di test corrispondente. Si esaminano le proprietà di un progetto e alcuni dei file che può contenere. Verrà anche creato un riferimento da un progetto a un altro.
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
@@ -29,7 +30,7 @@ Una soluzione e un progetto verranno creati da zero, in un esercizio didattico c
 
 ## <a name="solutions-and-projects"></a>Soluzioni e progetti
 
-Le soluzioni sono contenitori usati da Visual Studio per organizzare uno o più progetti correlati. Quando si apre una soluzione in Visual Studio, tutti i progetti contenuti al suo interno vengono caricati automaticamente.
+Nonostante il nome, una soluzione non è una "risposta". Una soluzione è semplicemente un contenitore usato da Visual Studio per organizzare uno o più progetti correlati. Quando si apre una soluzione in Visual Studio, tutti i progetti contenuti al suo interno vengono caricati automaticamente.
 
 ### <a name="create-a-solution"></a>Creare una soluzione
 

@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7e28c3a09197fd3fe0b45d40a3402f484ab867d7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748475"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684902"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
-IntelliSense è lo strumenti di completamento del codice che include numerose funzionalità: Elenca membri, Informazioni sul parametro, Informazioni rapide e Completa parola. Queste funzionalità consentono di acquisire altre informazioni sul codice in uso, tengono traccia dei parametri che si digitano e aggiungono le chiamate a proprietà e metodi con poche sequenze di tasti.
+IntelliSense è uno strumento di completamento del codice che include una serie di funzionalità: Elenca membri, Informazioni sul parametro, Informazioni rapide e Completa parola. Queste funzionalità consentono di acquisire altre informazioni sul codice in uso, tengono traccia dei parametri che si digitano e aggiungono le chiamate a proprietà e metodi con poche sequenze di tasti.
 
 Molti aspetti di IntelliSense sono specifici del linguaggio. Per altre informazioni su IntelliSense per linguaggi diversi, vedere gli argomenti elencati nella sezione [Vedere anche](#see-also).
 
@@ -54,7 +54,7 @@ Il parametro in grassetto indica il parametro successivo richiesto durante la di
 
 ![Informazioni sul parametro](../ide/media/vs2015_param_info.png)
 
-Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](../ide/supplying-xml-code-comments.md).
+Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md).
 
 È possibile richiamare manualmente le informazioni sul parametro scegliendo **Modifica** > **IntelliSense** > **Informazioni sul parametro**, premendo **CTRL**+**MAIUSC**+**BARRA SPAZIATRICE** oppure scegliendo il pulsante **Informazioni sul parametro** sulla barra degli strumenti dell'editor.
 
@@ -104,4 +104,4 @@ MessageBox( hWnd, "String literal|")
 - [IntelliSense per C#](../ide/visual-csharp-intellisense.md)
 - [IntelliSense per JavaScript](../ide/javascript-intellisense.md)
 - [Codice di scrittura e refactoring (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Inserire commenti XML per la generazione di documentazione](../ide/supplying-xml-code-comments.md)
+- [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md)

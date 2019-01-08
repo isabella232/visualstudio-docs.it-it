@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939516"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740407"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -55,7 +55,7 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
-|Button|Descrizione|
+|Button|Description|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -99,9 +99,9 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
-|Gruppo|Descrizione|
+|Gruppo|Description|
 |-|-----------------|
-|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
@@ -114,7 +114,7 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 
  Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
 
-|Tratto|Descrizione|
+|Tratto|Description|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
@@ -142,7 +142,7 @@ Per filtrare in base a un criterio diverso:
 > [!NOTE]
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
-|Qualificatore|Descrizione|
+|Qualificatore|Description|
 |-|-----------------|
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
@@ -150,7 +150,7 @@ Per filtrare in base a un criterio diverso:
 |**Percorso file**|Cerca le corrispondenze nel nome file completo dei file di origine test.|
 |**Nome completo**|Cerca le corrispondenze nel nome file completo di spazi dei nomi, classi e metodi di test.|
 |**Output**|Cerca nei messaggi di errore definiti dall'utente che vengono scritti in stdout (standard output) o stderr (stderr). La sintassi per specificare i messaggi di output è definita dal framework di unit test.|
-|**Risultato**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Risultato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
 
 Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:
 
@@ -187,7 +187,7 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
-   Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
 

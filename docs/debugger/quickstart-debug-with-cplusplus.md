@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639776"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561762"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug con C++ usando il debugger di Visual Studio
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C++ usando il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
@@ -76,7 +76,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 
 ## <a name="set-a-breakpoint"></a>Imposta punto di interruzione
 
-Un *punto di interruzione* indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. È la più semplice funzionalità di debug.
+Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. È la più semplice funzionalità di debug.
 
 1. Per impostare il punto di interruzione, fare clic nella barra di navigazione a sinistra della chiamata di funzione `doWork` o selezionare la riga di codice e premere **F9**.
 
@@ -103,7 +103,7 @@ Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra 
 
 L'app riprende l'esecuzione, esegue la chiamata a `doWork` e si blocca sulla riga di codice in cui si è fatto clic.
 
-I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F11**. Per ottenere istruzioni più dettagliate, vedere la [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
+I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F11**. Per altre istruzioni dettagliate, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Esaminare le variabili in un suggerimento dati
 

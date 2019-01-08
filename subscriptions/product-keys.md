@@ -9,12 +9,12 @@ description: Informazioni su come ottenere e gestire i codici Product Key in sot
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900852"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803824"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -32,7 +32,7 @@ Se sono stati richiesti tutti i codici Product Key aggiuntivi disponibili e sono
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versioni di prodotti per attivazione singola e per contratti multilicenza
 Le sottoscrizioni di Visual Studio offrono una selezione di versioni di prodotti Microsoft per attivazione singola o per contratti multilicenza. Determinati prodotti vengono resi disponibili in Download solo nella versione per attivazione singola o solo nella versione per contratti multilicenza. Alcuni di essi, tuttavia, sono disponibili in entrambe le versioni. I prodotti che richiedono attivazione, come Windows, Windows Server e i prodotti client di Office, vengono generalmente offerti solo nella versione per attivazione singola tramite Download.
 
-I clienti con contratti multilicenza possono anche scaricare prodotti software dal Centro servizi per contratti multilicenza per ottenere versioni di prodotti con contratti multilicenza (e i relativi codici Product Key).  L'accesso al Centro servizi per contratti multilicenza è gestito da amministratori designati all'interno dell'organizzazione del cliente.
+I clienti con contratti multilicenza possono anche scaricare prodotti software dal Volume Licensing Service Center per ottenere versioni di prodotti con contratti multilicenza e i relativi codici Product Key.  L'accesso al Centro servizi per contratti multilicenza è gestito da amministratori designati all'interno dell'organizzazione del cliente.
 
 ## <a name="daily-product-key-claim-limits"></a>Limiti giornalieri per le richieste di codici Product Key
 Microsoft si impegna a proteggere l'integrità del programma di sottoscrizione di Visual Studio, nonché il valore del software e dei vantaggi che i sottoscrittori legittimi del programma ricevono dopo l'acquisto. Per supportare tale impegno, Microsoft ha implementato limiti giornalieri per le richieste di codici per le sottoscrizioni di Visual Studio. I limiti giornalieri impongono restrizioni al numero di codici che è possibile richiedere in un giorno per singola sottoscrizione.
@@ -58,7 +58,7 @@ Alcuni codici vengono specificati automaticamente, ad esempio quelli "statici", 
 
 ### <a name="product-key-types"></a>Tipi di codici Product Key
 
-|    Tipo di codice           |    Descrizione                                                                                                                                                                                                           |
+|    Tipo di codice           |    Description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicabile                    |    Per installare questo prodotto non è necessario alcun codice.                                                       |
 |    Attivazione singola                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |

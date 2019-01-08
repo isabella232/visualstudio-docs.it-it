@@ -1,9 +1,10 @@
 ---
 title: Accedi a Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159854"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348393"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -27,7 +28,7 @@ ms.locfileid: "53159854"
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Perché accedere a Visual Studio?
 
-Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempio, dopo aver effettuato l'accesso, tra le tante funzionalità, è possibile sincronizzare le impostazioni tra i dispositivi, estendere una versione di prova gratuita e connettersi automaticamente al servizio Azure.
+Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempio, dopo aver eseguito l'accesso, tra le tante funzionalità, è possibile [sincronizzare le impostazioni](synchronized-settings-in-visual-studio.md) tra i dispositivi, estendere una versione di prova e connettersi automaticamente a un servizio di Azure.
 
 Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
 

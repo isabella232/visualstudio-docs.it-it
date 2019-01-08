@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220805"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592937"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
@@ -65,7 +65,7 @@ Queste funzionalità e opzioni di profilatura non sono supportate quando si prof
 
 Per raccogliere dati di profilatura nei dispositivi Windows 8 e Windows Server 2012, inclusi i dispositivi privi di installazione di Visual Studio, si usano due strumenti da riga di comando:
 
-|Nome dello strumento|Descrizione|
+|Nome dello strumento|Description|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Raccoglie i dati di profilatura dalle app UWP e raccoglie campioni di dati di profilatura dalle applicazioni Windows 8 Desktop e Windows Server 2012.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Raccoglie i dati di profilatura della strumentazione, della concorrenza e dell'interazione tra livelli dalle applicazioni in esecuzione su Windows 8 Desktop o Windows Server 2012. Raccoglie tutti i tipi di dati di profilatura dalle versioni precedenti di Windows.|
@@ -76,7 +76,7 @@ Per profilare le applicazioni sui dispositivi in cui non è installato Visual St
 
 - Scaricare gli strumenti come parte di Remote Tools per Visual Studio dal [sito Web MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Copiare ed eseguire il programma di installazione dei profiler autonomi dal computer con Visual Studio. I programmi di installazione si trovano nella cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Scegliere il programma di installazione per il sistema operativo (x86/x64) del computer remoto.
+- Copiare ed eseguire il programma di installazione dei profiler autonomi dal computer con Visual Studio. Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Scegliere il programma di installazione per il sistema operativo (x86/x64) del computer remoto.
 
 > [!NOTE]
 > Per raccogliere i dati di profilatura TIP, è necessario installare il profiler autonomo dal computer con Visual Studio nel computer remoto.
