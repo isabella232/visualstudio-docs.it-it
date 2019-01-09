@@ -1,10 +1,8 @@
 ---
 title: Attività ZipDirectory | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fffaa61a494c507aedf22238d22c861ba9f11bc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 320fd3a62c3283b0c442f0f7bbc3df5512eb7bcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930960"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
 Crea un archivio con estensione *zip* dal contenuto di una directory.
@@ -40,7 +38,7 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `ZipDirectory` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`DestinationFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio<br /><br /> Percorso completo del primo file con estensione *zip* da creare.|
 |`Overwrite`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il file di destinazione, se disponibile, verrà sovrascritto. Il valore predefinito è `false`.|

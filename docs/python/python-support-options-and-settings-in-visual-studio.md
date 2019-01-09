@@ -3,7 +3,6 @@ title: Opzioni e impostazioni per Python
 description: Informazioni di riferimento per le varie impostazioni di Visual Studio correlate al codice e ai progetti Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -19,12 +18,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7223d2b39630ab76c915b9e1db68967e3777fd24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889137"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -41,7 +40,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 (**Strumenti** > **Opzioni** > **scheda Python**)
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Mostra la finestra di output durante la creazione degli ambienti virtuali**| Attivato | Deselezionare per impedire che venga visualizzata la **finestra di output**. |
 | **Mostra la finestra di output durante l'installazione o la rimozione di pacchetti** | Attivato | Deselezionare per impedire che venga visualizzata la **finestra di output**. |
@@ -60,7 +59,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 (**Strumenti** > **Opzioni** > **Python** > **scheda Debug**)
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Chiedi conferma prima dell'esecuzione quando sono presenti errori** | Attivato | Se impostato, viene chiesto di confermare che si desidera eseguire il codice contenente errori. Deselezionare questa opzione per disabilitare l'avviso. |
 | **Attendi input quando il processo viene chiuso in modo anomalo**<br/><br/>**Attendi input quando il processo viene chiuso normalmente** | Attivato (per entrambi) | Un programma Python avviato da Visual Studio viene eseguito nella propria finestra della console. Per impostazione predefinita, la finestra attende che venga premuto un tasto prima di chiudere il programma, indipendentemente dalla modalità con cui viene chiuso il programma. Per rimuovere il prompt e chiudere la finestra automaticamente, deselezionare una o entrambe le opzioni. |
@@ -74,7 +73,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 (**Strumenti** > **Opzioni** > **Python** > **scheda Diagnostica**)
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Includi log di analisi** | Attivato | Include log dettagliati relativi all'analisi di ambienti Python installati durante il salvataggio della diagnostica in un file o la copia negli Appunti tramite i pulsanti. Questa opzione può aumentare notevolmente le dimensioni del file generato, ma spesso è necessaria per diagnosticare problemi di IntelliSense. |
 | Pulsante **Salva diagnostica nel file** | N/D | Richiede un nome di file, quindi salva il log in un file di testo. |
@@ -86,7 +85,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 (**Strumenti** > **Opzioni** > **Python** > **scheda Finestre interattive**)
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Script** | N/D | Specifica una cartella generale per gli script di avvio valida per le finestre **interattive** per tutti gli ambienti. Vedere [Script di avvio](python-environments-window-tab-reference.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
 | **Spostarsi nella cronologia con le frecce su/giù** | Attivato | Usare i tasti freccia per spostarsi nella cronologia nella finestra **interattiva**. Deselezionare questa impostazione per usare i tasti freccia per spostarsi invece all'interno dell'output della finestra **interattiva**. |
@@ -101,7 +100,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 ### <a name="completion-results"></a>Risultati del completamento
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Il completamento dei membri visualizza l'intersezione dei membri** | Disattivato | Se l'opzione è impostata, vengono visualizzati solo i completamenti supportati da tutti i tipi possibili. |
 | **Filtra elenco in base alla stringa di ricerca** | Attivato | Applica il filtro dei suggerimenti di completamento durante la digitazione (l'opzione è selezionata per impostazione predefinita). |
@@ -109,7 +108,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 ### <a name="selection-in-completion-list"></a>Selezione negli elenchi di completamento
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Commit alla digitazione dei caratteri seguenti** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
 | **Immetti completamento corrente dei commit** | Attivato | Se questa opzione è impostata, il tasto **INVIO** sceglie e applica il completamento attualmente selezionato in modo analogo ai caratteri riportati sopra e poiché non esiste un carattere per il tasto **INVIO**, non è stato possibile includerlo direttamente nell'elenco. |
@@ -117,7 +116,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 
 ### <a name="miscellaneous-options"></a>Altre opzioni
 
-| Opzione | Impostazione predefinita | Descrizione |
+| Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Attiva modalità struttura all'apertura del file** | Attivato | Attiva automaticamente la funzionalità di struttura nell'editor di Visual Studio all'apertura di un file di codice Python. |
 | **L'operazione Incolla rimuove i prompt REPL** | Attivato | Rimuove **>>>** e **...** dal testo incollato, consentendo il trasferimento agevole del codice dalla finestra **interattiva** all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |

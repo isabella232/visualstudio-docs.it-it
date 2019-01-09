@@ -1,8 +1,6 @@
 ---
 title: Core logici nella visualizzazione Core | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.logicalcores
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb50f0a1a16a8b6a72862a3441cf1e72697042ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2409f7be9913f74d71e0d4d2c63dac947ac0b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876471"
 ---
 # <a name="cores-view-logical-cores"></a>Core logici nella visualizzazione Core
 Ogni nome di canale rappresenta uno dei core logici che esistono nel sistema profilato. Per la denominazione il conteggio viene eseguito da 0 fino al numero totale di core logici. Ad esempio, un sistema di quattro core esegue il conteggio dal core logico 0 al core logico 3.  

@@ -1,8 +1,6 @@
 ---
 title: Eseguire la pubblicazione nel Servizio app in Linux
-ms.custom: ''
 ms.date: 07/23/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 6bec894c6968498c185364e917904295f76422a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873778"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Eseguire la pubblicazione di un'app ASP.NET Core nel Servizio app in Linux con Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: Canali (visualizzazione Thread) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b1baeec4543cb56d1e2320f26c9457dd7aac80
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d3ab6254ba56337e3e47379f1f4df800a73c67f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870927"
 ---
 # <a name="channels-threads-view"></a>Canali (visualizzazione Thread)
 Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thread, canali di disco, canali di indicatore e canali GPU.  

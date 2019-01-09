@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875271"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
 
@@ -31,7 +30,7 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
 2.  Dopo l'esecuzione del test di carico, verrà visualizzata la pagina di riepilogo dei risultati del test. Scegliere il pulsante **Vai a dettagli utente** nella barra degli strumenti.
 
-     oppure
+     -oppure-
 
      Aprire la visualizzazione Grafici scegliendo il pulsante **Grafici** nella barra degli strumenti. Fare clic con il pulsante destro del mouse su un grafico e scegliere **Vai a dettagli utente**.
 

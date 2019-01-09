@@ -1,9 +1,8 @@
 ---
 title: Installare e usare prodotti protetti da un firewall o un server proxy
 description: Verificare le URL di dominio, le porte e i protocolli da aggiungere in un elenco di elementi consentiti o aprire se l'organizzazione usa un firewall o un server proxy
-ms.custom: seodec18
 ms.date: 07/10/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 55234231855761e0ad0206bdd96dfffcdb52690a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879517"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 

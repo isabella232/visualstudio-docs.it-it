@@ -3,19 +3,18 @@ title: Usare come destinazione versioni precedenti di .NET Framework per F#
 description: Informazioni sull'uso di una versione precedente di .NET Framework come destinazione quando si usa F# in Visual Studio.
 ms.date: 07/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cb32f37bde0a55da081105cbee52a8744db2b88
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888075"
 ---
 # <a name="target-older-versions-of-net-f"></a>Usare come destinazione versioni precedenti di .NET (F#)
 

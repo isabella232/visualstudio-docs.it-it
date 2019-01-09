@@ -1,10 +1,8 @@
 ---
 title: Attività Unzip | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f633e741cf72596708963d89973eb039b18b4e88
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 386e0e76161982a4bedf6bb188381314d47e42e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882747"
 ---
 # <a name="unzip-task"></a>Attività Unzip
 Decomprime un archivio con estensione *zip* nella posizione specificata.
@@ -40,7 +38,7 @@ Decomprime un archivio con estensione *zip* nella posizione specificata.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `Unzip` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio<br /><br /> Specifica la cartella di destinazione in cui decomprimere il file.|
 |`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, sovrascrive i file di sola lettura. Il valore predefinito è `false`.|

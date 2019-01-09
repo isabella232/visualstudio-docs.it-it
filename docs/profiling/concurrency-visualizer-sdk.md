@@ -1,8 +1,6 @@
 ---
 title: SDK del visualizzatore di concorrenza | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a9898037e7dc6beae5d984856ff5c12b74183049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884970"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).(Introduzione all'SDK del visualizzatore di concorrenza).  
@@ -123,7 +121,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
   
 ## <a name="see-also"></a>Vedere anche  
   
-|Titolo|Descrizione|  
+|Titolo|Description|  
 |-----------|-----------------|  
 |[Riferimento alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|  
 |[Riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|  
