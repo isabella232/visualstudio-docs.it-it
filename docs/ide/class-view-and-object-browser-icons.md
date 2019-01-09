@@ -2,7 +2,6 @@
 title: Icone di Visualizzazione classi e Visualizzatore oggetti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844392"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
 In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate le icone che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili. Nella tabella seguente vengono illustrate e descritte le icone.
 
-|Icona|Descrizione|Icona|Descrizione|
+|Icona|Description|Icona|Description|
 |----------|-----------------|----------|-----------------|
 |![Simbolo dello spazio dei nomi](../ide/media/vxnamespace_icon.gif)|Spazio dei nomi|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Metodo o funzione|
 |![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
@@ -49,7 +48,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 
 Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne indicano l'accessibilità.
 
-|Icona|Descrizione|
+|Icona|Description|
 |----------|-----------------|
 |\<Nessuna icona di segnalazione>|Pubblico. Accessibile ovunque in questo componente e da qualsiasi componente che vi fa riferimento.|
 |![Simbolo segnale protetto](../ide/media/vxsignal_icon_key.gif)|Protetto. Accessibile dalla classe o dal tipo contenitore o da quelli da essi derivati.|

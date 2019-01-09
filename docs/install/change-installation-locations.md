@@ -2,7 +2,6 @@
 title: Selezionare i percorsi di installazione
 description: Informazioni su come ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema indicando un percorso in unità diverse per Download Cache, componenti condivisi, SDK e strumenti.
 ms.date: 11/07/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: ce04592b6de6be16047baf3736e020c2ba71536a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837615"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selezionare i percorsi di installazione in Visual Studio 2017
 

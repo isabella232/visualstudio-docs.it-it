@@ -14,16 +14,15 @@ author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833857"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
@@ -329,7 +328,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | always | Preferisce che vengano specificati i modificatori dell'accessibilità |
 | for\_non\_interface_members | Preferisce modificatori dell'accessibilità da dichiarare, fatta eccezione per i membri di interfaccia pubblica. È lo stesso di **always** ed è stato aggiunto per correzioni future se C# aggiunge metodi di interfaccia predefiniti. |
@@ -994,7 +993,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i metodi |
 | when_on_single_line | Preferisce membri con corpo di espressione per i metodi quando sono a riga singola |
@@ -1014,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i costruttori |
 | when_on_single_line | Preferisce membri con corpo di espressione per i costruttori quando sono a riga singola |
@@ -1034,7 +1033,7 @@ public Customer(int age) { Age = age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli operatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli operatori quando sono a riga singola |
@@ -1056,7 +1055,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le proprietà |
 | when_on_single_line | Preferisce membri con corpo di espressione per le proprietà quando sono a riga singola |
@@ -1076,7 +1075,7 @@ public int Age { get { return _age; }}
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli indicizzatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli indicizzatori quando sono a riga singola |
@@ -1096,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le funzioni di accesso |
 | when_on_single_line | Preferisce membri con corpo di espressione per le funzioni di accesso quando sono a riga singola |
@@ -1485,7 +1484,7 @@ Nella tabella seguente sono riportati i nomi delle regole relative alla "nuova r
 
 Questa regola riguarda il posizionamento di una parentesi graffa di apertura `{` nella stessa riga del codice precedente o in una nuova riga. Per questa regola, non specificare **true** o **false**. Specificare invece **all**, **none** oppure uno o più elementi di codice, ad esempio **methods** o **properties**, per definire quando applicare questa regola. L'elenco completo dei valori consentiti è riportato nella tabella seguente:
 
-| Valore | Descrizione
+| Value | Description
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>Per più tipi di valore, separarli con ",". | Richiede le parentesi graffe in una nuova riga per gli elementi di codice specificati (anche noto come stile "Allman") |
 | tutti | Richiede le parentesi graffe in una nuova riga per tutte le espressioni (stile "Allman") |
@@ -1750,7 +1749,7 @@ default:
 
 Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
 
-| Valore | Descrizione |
+| Valore | Description |
 | ----- |:----------- |
 | flush_left | Le etichette vengono posizionate nella colonna più a sinistra |
 | one_less_than_current | Le etichette vengono posizionate con un rientro minore rispetto al contesto corrente |
@@ -1893,7 +1892,7 @@ MyMethod(argument);
 
 Questa regola accetta uno o più valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:------------|
 | control_flow_statements | Inserisce uno spazio tra le parentesi delle istruzioni del flusso di controllo |
 | espressioni | Inserisce uno spazio tra le parentesi delle espressioni |
@@ -1980,7 +1979,7 @@ class C :I
 
 La regola accetta un solo valore della tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:------------|
 | before_and_after | Inserire uno spazio prima e dopo l'operatore binario |
 | none | Rimuovere gli spazi prima e dopo l'operatore binario |
