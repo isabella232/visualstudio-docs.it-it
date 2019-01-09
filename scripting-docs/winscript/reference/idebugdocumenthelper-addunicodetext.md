@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddUnicodeText | Documenti Microsoft
+title: 'Idebugdocumenthelper:: Addunicodetext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f387142675b0def99fb2cc0695bd3f9416d66809
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 190df1f621b450c6d3b34c339d21f947f48636f2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726241"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093522"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
-Aggiunge una stringa Unicode alla fine di questo documento.  
+Aggiunge una stringa Unicode al fine di questo documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT AddUnicodeText(  
    LPCOLESTR  pszText  
 );  
@@ -38,12 +38,12 @@ HRESULT AddUnicodeText(
   
 #### <a name="parameters"></a>Parametri  
  `pszText`  
- [in] Puntatore a una stringa con terminazione null contenente il testo.  
+ [in] Puntatore a una stringa con terminazione null che contiene il testo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Il metodo è riuscito ad aggiungere i caratteri.|  
@@ -56,5 +56,5 @@ HRESULT AddUnicodeText(
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper:: Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Interfaccia IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

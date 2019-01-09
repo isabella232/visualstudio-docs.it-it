@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Documenti Microsoft
+title: IDebugApplication::HandleRuntimeError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725791"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097318"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Causa il blocco del thread corrente e invia una notifica dell'errore per il debugger IDE.  
+Fa sì che il thread corrente bloccare e invia una notifica dell'errore per l'IDE di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -45,16 +45,16 @@ HRESULT HandleRuntimeError(
  [in] Errore verificatosi.  
   
  `pScriptSite`  
- [in] Il sito di script del thread.  
+ [in] Il sito dello script del thread.  
   
  `pbra`  
  [out] Azione da intraprendere quando il debugger consente di riprendere l'applicazione.  
   
  `perra`  
- [out] Azione da intraprendere quando il debugger consente di riprendere l'applicazione se si verifica un errore.  
+ [out] Azione da intraprendere quando il debugger consente di riprendere l'applicazione se si è verificato un errore.  
   
  `pfCallOnScriptError`  
- [out] Flag che è `TRUE` se il motore deve chiamare il `IActiveScriptSite::OnScriptError` metodo.  
+ [out] Flag che è `TRUE` se il motore deve chiamare il `IActiveScriptSite::OnScriptError` (metodo).  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -64,10 +64,10 @@ HRESULT HandleRuntimeError(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Un motore di linguaggio chiama questo metodo nel contesto di un thread che causa un errore di run-time. Questo metodo comporta il blocco del thread corrente e invia una notifica di errore da inviare al debugger IDE. Quando il debugger IDE riprende l'applicazione, questo metodo restituisce con l'azione da intraprendere.  
+ Un motore del linguaggio chiama questo metodo nel contesto di un thread che comporta un errore di run-time. Questo metodo fa sì che il thread corrente bloccare e invia una notifica di errore da inviare al debugger di IDE. Quando l'IDE di debug viene ripresa l'applicazione, questo metodo restituisce con l'azione da intraprendere.  
   
 > [!NOTE]
->  Mentre nell'errore in fase di esecuzione, il motore di lingua può essere chiamato dal thread di eseguire tali attività come enumerare gli stack frame o valutare le espressioni.  
+>  Mentre nell'errore in fase di esecuzione, il motore del linguaggio può essere chiamato dal thread di eseguire tali attività come enumerare gli stack frame o valutare le espressioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

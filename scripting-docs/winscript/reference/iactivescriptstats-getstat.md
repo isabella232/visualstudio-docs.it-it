@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Documenti Microsoft
+title: IActiveScriptStats::GetStat | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725231"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095394"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 Restituisce una delle statistiche script standard.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -44,7 +44,7 @@ HRESULT GetStat(
   
 |Costante|Valore|Descrizione|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Restituisce il numero di istruzioni eseguite dallo script di avvio o la reimpostazione delle statistiche.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Restituisce il numero di istruzioni eseguite perché lo script avviato o le statistiche sono state reimpostate.|  
   
  `pluHi`  
  [out] 32 bit alti di un intero senza segno a 64 bit che rappresenta la statistica.  

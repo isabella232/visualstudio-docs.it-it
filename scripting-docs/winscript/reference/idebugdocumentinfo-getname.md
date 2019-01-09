@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetName | Documenti Microsoft
+title: IDebugDocumentInfo::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da369c328c2f92915c60b1c50517938bf76d5202
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3ecde4fbde1a265596a01d7f0f953763363e797
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726591"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097695"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
 Restituisce il nome del documento specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetName(  
    DOCUMENTNAMETYPE  dnt,  
    BSTR*             pbstrName  

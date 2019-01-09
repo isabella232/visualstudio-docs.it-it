@@ -1,5 +1,5 @@
 ---
-title: 'Metodo iactivescripttraceinfo:: Stopscripttracing | Documenti Microsoft'
+title: 'Metodo iactivescripttraceinfo:: Stopscripttracing | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3fb0f77ff84453eaf202d09d05cd926cf0e7c2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74e776d066d99a351d8dfe49a21df929ab10a996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724951"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089011"
 ---
 # <a name="iactivescripttraceinfostopscripttracing-method"></a>Metodo IActiveScriptTraceInfo::StopScriptTracing
-Analisi di script viene arrestata.  
+Traccia degli script si arresta.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT StopScriptTracing(void); }  
 ```  
   
@@ -32,8 +32,8 @@ HRESULT StopScriptTracing(void); }
  Questo metodo non ha parametri.  
   
 ## <a name="return-value"></a>Valore restituito  
- I possibili valori restituiti per questo metodo sono come segue:  
+ I valori restituiti possibili per questo metodo sono come segue:  
   
-1.  S_OK: esito positivo.  
+1.  S_OK: Operazione completata.  
   
 2.  E_NOTIMPL: Non implementato.
