@@ -3,19 +3,18 @@ title: Suggerire una funzionalità
 description: Descrive i suggerimenti disponibili in Developer Community e spiega come immettere un suggerimento e come vengono usati i suggerimenti da Microsoft nella roadmap per Visual Studio.
 ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 60fce2b9fb14ffcb0975b91991595d1a4a429cb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910581"
 ---
 # <a name="overview-suggest-a-feature"></a>Panoramica: Suggerire una funzionalità
 

@@ -1,8 +1,6 @@
 ---
 title: Attività CreateCSharpManifestResourceName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb8610a7a4d94cc51ef81e2261ff6191fba01c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18f2ea8db1e3f68ef20db09b8b129a50272e44f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966385"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>Attività CreateCSharpManifestResourceName
 Crea un nome di manifesto nello stile di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.  
@@ -32,7 +30,7 @@ Crea un nome di manifesto nello stile di [!INCLUDE[csprcs](../data-tools/include
  La tabella seguente descrive i parametri dell'[attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 | - | - |
 | `ManifestResourceNames` | Parametro <xref:Microsoft.Build.Framework.ITaskItem> `[]` di output di sola lettura.<br /><br /> Nomi di manifesto risultanti. |
 | `ResourceFiles` | Parametro `String` obbligatorio.<br /><br /> Nome del file di risorse da cui creare il nome del manifesto [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |

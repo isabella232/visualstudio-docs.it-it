@@ -1,8 +1,6 @@
 ---
 title: Attività GenerateApplicationManifest | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9526c2c62d9ace81127c61ef313cf55971fc1692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900691"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (attività)
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.  
@@ -35,7 +33,7 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
  La tabella seguente descrive i parametri dell'attività `GenerateApplicationManifest`.  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |---------------------------------| - |
 | `AssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Name` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, il nome viene dedotto dal parametro `EntryPoint` o `InputManifest`. Se non è possibile creare alcun nome, l'attività genera un errore. |
 | `AssemblyVersion` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Version` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, viene usato il valore predefinito "1.0.0.0". |
@@ -76,7 +74,7 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
 
 ## <a name="item-metadata"></a>Metadati degli elementi  
 
-|Nome dei metadati|Descrizione|  
+|Nome dei metadati|Description|  
 |-------------------|-----------------|  
 |`DependencyType`|Indica se la dipendenza è pubblicata e installata con l'applicazione o un prerequisito. Questi metadati sono validi per tutte le dipendenze, ma non vengono usati per i file. I valori disponibili per questi metadati sono:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install è il valore predefinito.|  
 |`AssemblyType`|Indica se la dipendenza è un assembly gestito o nativo. Questi metadati sono validi per tutte le dipendenze, ma non vengono usati per i file. I valori disponibili per questi metadati sono:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` è il valore predefinito, che indica che il generatore del manifesto determina automaticamente il tipo di assembly.|  

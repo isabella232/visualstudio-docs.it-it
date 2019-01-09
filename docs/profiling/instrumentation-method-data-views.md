@@ -1,8 +1,6 @@
 ---
 title: Visualizzazioni dei dati del metodo di strumentazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 266f342253fd19098f9d889faa10f6df1bf38c78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932246"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.  
@@ -27,10 +25,10 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  [Visualizzazione Riepilogo](../profiling/summary-view-instrumentation-data.md)  
  Elenca le funzioni che hanno richiesto la maggiore quantità di tempo e le funzioni che hanno eseguito la maggior parte del lavoro individuale.  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.  
   
- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)  
+ [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)  
  Organizza i dati di profilatura per modulo e li elenca per le funzioni nel modulo.  
   
  [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)  
