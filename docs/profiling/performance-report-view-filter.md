@@ -1,8 +1,6 @@
 ---
 title: Filtro delle visualizzazioni dei rapporti di prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
@@ -13,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939885"
 ---
 # <a name="performance-report-view-filter"></a>Filtro delle visualizzazioni dei rapporti di prestazioni
 La finestra del **filtro delle visualizzazioni dei rapporti del profiler** si trova nella parte superiore della finestra **Report prestazioni**. Se non è visibile, fare clic sul pulsante **Mostra filtro**.  
   
  È possibile modificare ogni clausola filtro per perfezionare i risultati. Nel generatore di filtri sono disponibili le colonne seguenti.  
   
-|Elemento del filtro|Descrizione|  
+|Elemento del filtro|Description|  
 |-----------------|-----------------|  
 |E/O|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|  
 |Campo|Selezionare il campo da usare nella clausola filtro dall'elenco dei campi dati disponibili nel file di rapporto corrente.|  
