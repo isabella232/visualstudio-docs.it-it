@@ -1,9 +1,7 @@
 ---
 title: Visualizzare snapshot con IntelliTrace
 description: Usare la funzionalità per tornare indietro di IntelliTrace per esaminare lo stato cronologico dell'applicazione
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - IntelliTrace step-back
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e262dc4b5b141bb5e02ed58854f55e879f39a07e
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915575"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Visualizzare snapshot con la funzionalità per tornare indietro di IntelliTrace (Visual Studio Enterprise)
 

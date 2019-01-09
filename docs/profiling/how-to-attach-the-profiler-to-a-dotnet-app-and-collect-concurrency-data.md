@@ -2,7 +2,6 @@
 title: Connettere il profiler a un'app .NET per raccogliere dati di concorrenza | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: fdd41576-797e-4312-8520-fee7bb767e4a
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e680cc5e7d3130100f0627241b02fc07ccea440c
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 4d87c57ecd83ada45bddcbfba4b743d9c147c856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53593041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908957"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati sulla concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione NET Framework autonoma in esecuzione (client) e raccogliere dati sulla concorrenza di processi e thread.  
@@ -79,7 +78,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
   
     -   Digitare **VSPerfCmd /detach**  
   
-         -oppure-  
+         oppure  
   
     -   Chiudere l'applicazione di destinazione.  
   
