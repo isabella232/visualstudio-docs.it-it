@@ -1,8 +1,6 @@
 ---
 title: VSPerfMon | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPerfMon tool
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9754d4f324c178c117e14ff5949bd6c8ef352e9
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6be37dc46b603d8193e45b8aa11d9b0cd78d9891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841067"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 È possibile usare lo strumento VSPerfMon per raccogliere dati sulle prestazioni per un'applicazione. In genere, questo strumento viene avviato da *VSPerfCmd.exe*. VSPerfMon visualizza informazioni aggiuntive sul collegamento o lo scollegamento di processi che non sono disponibili tramite lo strumento VSPerfCmd. Per visualizzare queste informazioni, avviare VSPerfMon in una finestra separata. Per richiamare VSPerfMon, usare la sintassi seguente:  
@@ -34,7 +32,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
  Nella tabella seguente vengono descritte le opzioni dello strumento VSPerfMon:  
   
-|Opzioni|Descrizione|  
+|Opzioni|Description|  
 |-------------|-----------------|  
 |**U**|L'output di console reindirizzato viene scritto come Unicode.  Deve essere la prima opzione specificata.|  
 |**OUTPUT:** `<` *nome file* `>`|Reindirizza l'output nel nome file specificato.|  

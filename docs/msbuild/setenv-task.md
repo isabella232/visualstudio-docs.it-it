@@ -1,8 +1,6 @@
 ---
 title: Attività SetEnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/05/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.setenv
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3024a0477193647a6949eeaa4d8d40d4d965f940
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a6e0a0e4feaaa3aca4a1f6bfb367644bbfabac5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844145"
 ---
 # <a name="setenv-task"></a>Attività SetEnv
 Imposta o elimina il valore di una variabile di ambiente specificata.  
@@ -34,7 +32,7 @@ Imposta o elimina il valore di una variabile di ambiente specificata.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **SetEnv**.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|  
 |**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|  

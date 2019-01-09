@@ -1,8 +1,6 @@
 ---
 title: Informazioni di riferimento sullo schema del file di progetto di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ed3fd3fc60e6c263d7363047ed36b2f0d891a76
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ea993233409f7df9f99b345184634e4de6e59618
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852427"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Informazioni di riferimento sullo schema del file di progetto di MSBuild
 Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con gli attributi e gli elementi figlio disponibili.  
@@ -58,7 +56,7 @@ Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbui
 |[Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)|Scegliere<br /><br /> ItemGroup<br /><br /> PropertyGroup|Condizione|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Attività MSBuild](../msbuild/msbuild-task-reference.md)   
  [Condizioni](../msbuild/msbuild-conditions.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)
