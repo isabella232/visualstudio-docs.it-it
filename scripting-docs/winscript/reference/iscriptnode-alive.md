@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Alive | Documenti Microsoft
+title: IScriptNode::Alive | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0631690cbd961273175cf8dfbe35550980d4994d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23f0e804cbbbe6683b89f7b629b9677c7b92c64f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728661"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089557"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
 Indica se un oggetto è ancora attivo.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Alive();  
 ```  
   
@@ -42,7 +42,7 @@ HRESULT Alive();
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|`S_OK`|Il nodo di script è ancora attivo.|  
+|`S_OK`|Il nodo dello script è ancora attivo.|  
   
 ## <a name="remarks"></a>Note  
  Se l'oggetto non è attivo, il modello COM (Component Object) restituisce un errore dal proxy di marshalling per le chiamate a questo metodo.  

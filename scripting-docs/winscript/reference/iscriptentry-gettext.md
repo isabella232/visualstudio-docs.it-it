@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetText | Documenti Microsoft
+title: IScriptEntry::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 548b26be48766fa4eb6c6eba16ae3bca2847a322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7a01d6df1281a32fee435c80465f148fcc7436a3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729061"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096421"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
-Restituisce il testo che corrisponde alla `IScriptEntry` blocco di script o il codice sorgente che è contenuto nel `IScriptScriptlet` gestore dell'evento.  
+Restituisce il testo che corrisponde alla `IScriptEntry` blocco di script o codice sorgente che è contenuto nel `IScriptScriptlet` gestore dell'evento.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetText(  
    BSTR               *pbstr  
 );  
@@ -38,12 +38,12 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parametri  
  `pbstr`  
- [out] Il testo di `IScriptEntry` blocco di script o il codice sorgente che è contenuto nel `IScriptScriptlet` gestore dell'evento.  
+ [out] Il testo nel `IScriptEntry` blocco di script o codice sorgente che è contenuto nel `IScriptScriptlet` gestore dell'evento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

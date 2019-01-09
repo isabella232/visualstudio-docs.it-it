@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise | Documenti Microsoft
+title: ISimpleConnectionPoint::Unadvise | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733901"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089267"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 Termina una connessione consultiva precedentemente stabilita tramite `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Parametri  
  `dwCookie`  
- [in] Token di connessione per terminare, come restituito dal `ISimpleConnectionPoint::Advise`.  
+ [in] Token della connessione per terminare, come restituito da `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -48,7 +48,7 @@ HRESULT Unadvise(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Quando una connessione consultiva è terminata, il punto di connessione chiamate di `Release` metodo sul puntatore che è stato salvato per la connessione durante il `ISimpleConnectionPoint::Advise` metodo. Che chiamano inverte il `AddRef` che è stata eseguita durante il `ISimpleConnectionPoint::Advise` quando il punto di connessione chiama il sink consultivo `QueryInterface`.  
+ Quando una connessione consultiva è terminata, il punto di connessione chiama il `Release` metodo sul puntatore che è stato salvato per la connessione durante il `ISimpleConnectionPoint::Advise` (metodo). Che chiamano inverte le `AddRef` che è stata eseguita durante il `ISimpleConnectionPoint::Advise` quando il punto di connessione chiama il sink consultivo `QueryInterface`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

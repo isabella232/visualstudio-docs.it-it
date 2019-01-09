@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugdatatarget:: Createstackframeenumerator | Documenti Microsoft'
+title: 'Metodo ijsdebugdatatarget:: Createstackframeenumerator | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91c67dc3eb14217ffcdc41f0877df6837fcb0230
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 399d66b9f21146f66df86bad0c151722f2893fc8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727501"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097747"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>Metodo IJsDebugDataTarget::CreateStackFrameEnumerator
 Crea un enumeratore per gli stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CreateStackFrameEnumerator(  
    DWORD threadId,  
    IEnumJsStackFrames **ppEnumerator  
@@ -40,12 +40,12 @@ HRESULT CreateStackFrameEnumerator(
  [in] Thread in esecuzione nel processo di destinazione.  
   
  `ppEnumerator`  
- [out] L'enumeratore per gli stack frame.  
+ [out] Enumeratore per gli stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

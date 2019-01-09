@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Documenti Microsoft
+title: IScriptEntry::GetRange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729041"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088738"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Restituisce la posizione iniziale e una lunghezza di una voce.  
+Restituisce la posizione iniziale e la lunghezza di una voce.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -48,14 +48,14 @@ HRESULT GetRange(
  `pcch`  
  [out] Per `IScriptEntry` oggetti che specificano un blocco di script, restituisce la lunghezza del testo.  
   
- Per `IScriptEntry` oggetti che specificano un oggetto funzione, restituisce la lunghezza della definizione della funzione.  
+ Per `IScriptEntry` oggetti che specificano un oggetto funzione, restituisce la lunghezza della definizione di funzione.  
   
  Per `IScriptScriptlet` gli oggetti, restituisce la lunghezza della voce.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

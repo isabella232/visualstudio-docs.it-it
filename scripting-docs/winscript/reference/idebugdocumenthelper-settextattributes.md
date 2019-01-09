@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes | Documenti Microsoft
+title: IDebugDocumentHelper::SetTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef4ae1ccff730d6865e00174ec73e991245bd43
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726391"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096499"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
 Imposta gli attributi in un intervallo di testo, si esegue l'override di altri attributi nel testo.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT SetTextAttributes(  
    ULONG              ulCharOffset,  
    ULONG              cChars,  
@@ -51,16 +51,16 @@ HRESULT SetTextAttributes(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- È un errore di chiamare `SetTextAttributes` su un intervallo di testo prima che il testo viene aggiunto al documento. Chiamare il `AddDBCSText`, `AddUnicodeText`, o `AddDeferredText` metodi per aggiungere testo al documento.  
+ Si tratta di un errore chiamare `SetTextAttributes` su un intervallo di testo prima che il testo viene aggiunto al documento. Chiamare il `AddDBCSText`, `AddUnicodeText`, o `AddDeferredText` metodi per aggiungere testo al documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper:: Addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

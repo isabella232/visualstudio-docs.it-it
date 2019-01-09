@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StopProfiling | Documenti Microsoft
+title: IActiveScriptProfilerControl::StopProfiling | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63d837b0f7a59b1e3efc832c4d98cb7dcab5447c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b65c536c303a9bc0da7d0e29992315c05a61de52
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724511"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092482"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Arresta la profilatura sul motore di scripting. Questo metodo chiama [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) sull'oggetto di profiler e poi lo rilascia.  
+Arresta la profilatura sul motore di scripting. Questo metodo chiama [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) sull'oggetto del profiler e lo rilascia.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT StopProfiling(  
     [in] HRESULT hrShutdownReason);  
 ```  
@@ -38,7 +38,7 @@ HRESULT StopProfiling(
  [in] Il valore HRESULT deve essere passato come parametro per il [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) metodo dell'oggetto del profiler.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore HRESULT. I valori possibili sono i seguenti:  
+ Restituisce un HRESULT. I valori possibili sono i seguenti:  
   
 |Valore restituito|Significato|  
 |------------------|-------------|  

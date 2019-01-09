@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::SetNextStatement | Documenti Microsoft
+title: IRemoteDebugApplicationThread::SetNextStatement | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb23fa643f9a2333e17239a74d0da2f75e1ea791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f79fa7114892e378c51a9cccf51ac6804c4adabf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729151"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096382"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-Forza proseguimento dell'esecuzione più vicino possibile al contesto di codice fornito, nel contesto del frame specificato.  
+Forza continuare l'esecuzione più vicino possibile al contesto di codice specificato, nel contesto del frame specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT SetNextStatement(  
    IDebugStackFrame*   pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -39,10 +39,10 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parametri  
  `pStackFrame`  
- [in] L'oggetto stack frame. Questo argomento può essere NULL, che implica che lo stack frame corrente deve essere utilizzato.  
+ [in] L'oggetto stack frame. Questo argomento può essere NULL, il che implica che lo stack frame corrente deve essere utilizzato.  
   
  `pCodeContext`  
- [in] Il contesto del codice. Questo argomento può essere NULL, che implica che il contesto del codice corrente deve essere utilizzato.  
+ [in] Il contesto del codice. Questo argomento può essere NULL, il che implica che il contesto codice corrente deve essere utilizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -52,7 +52,7 @@ HRESULT SetNextStatement(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo impone l'esecuzione di continuare il più vicino possibile al contesto del codice specificato dal `pCodeContext`, nel contesto del frame specificato da `pStackFrame`. Questi argomenti può essere `NULL`, che rappresenta il frame corrente o il contesto.  
+ Questo metodo forza l'esecuzione più vicino possibile al contesto di codice specificato dal continuare `pCodeContext`, nel contesto del frame specificato da `pStackFrame`. Uno di questi argomenti può essere `NULL`, che rappresenta il contesto o il frame corrente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

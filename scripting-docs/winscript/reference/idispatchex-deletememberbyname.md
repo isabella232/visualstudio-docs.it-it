@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName | Documenti Microsoft
+title: IDispatchEx::DeleteMemberByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728131"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096434"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Elimina un membro in base al nome.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -42,12 +42,12 @@ HRESULT DeleteMemberByName(
  Nome del membro da eliminare.  
   
  `grfdex`  
- Determina se il nome del membro viene fatta distinzione tra maiuscole e minuscole. Può trattarsi di uno dei valori seguenti:  
+ Determina se il nome del membro viene fatta distinzione tra maiuscole e minuscole. Ciò può essere uno dei valori seguenti:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Richieste di effettuare la ricerca del nome in minuscolo. Può essere ignorato dall'oggetto che non supportano la ricerca tra maiuscole e minuscole.|  
-|fdexNameCaseInsensitive|Richieste di effettuare la ricerca del nome in minuscole. Può essere ignorato dall'oggetto che non supportano la ricerca tra maiuscole e minuscole.|  
+|fdexNameCaseSensitive|Richieste che si eseguire la ricerca del nome in modo distinzione maiuscole/minuscole. Può essere ignorato dall'oggetto che non supporta la ricerca tra maiuscole e minuscole.|  
+|fdexNameCaseInsensitive|Richieste che si eseguire la ricerca del nome in modo tra maiuscole e minuscole. Può essere ignorato dall'oggetto che non supporta la ricerca tra maiuscole e minuscole.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -60,11 +60,11 @@ HRESULT DeleteMemberByName(
 ## <a name="remarks"></a>Note  
  Se il membro viene eliminato, deve rimanere valido per il DISPID `GetNextDispID`.  
   
- Se un membro con un nome specificato viene eliminato e successivamente viene ricreato a un membro con lo stesso nome, il DISPID deve essere lo stesso. (Se i membri che differiscono solo per i casi sono "stesso" è dipendente dall'oggetto).  
+ Se un membro con un nome specificato viene eliminato e ricreato in un secondo momento un membro con lo stesso nome, il DISPID deve essere lo stesso. (Se i membri che differiscono solo per i casi sono "uguali" è dipendente dall'oggetto.)  
   
 ## <a name="example"></a>Esempio  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   

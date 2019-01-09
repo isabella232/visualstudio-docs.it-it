@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Documenti Microsoft
+title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd26ab1cf36378c0f037d78a3c079c58e004006d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb198f56e5ff73561fe7b42a25b019dfb0e3817c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727411"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094562"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-Notifica al profiler di oggetto che lo script del motore terminata l'esecuzione di una chiamata di funzione di Strumentazione gestione Windows (DOM, Document Object Model).  
+Notifica al profiler che la creazione di script del motore ha terminato l'esecuzione di una chiamata di funzione di modello DOM (Document Object).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT OnFunctionExitByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -35,16 +35,16 @@ HRESULT OnFunctionExitByName(
   
 #### <a name="parameters"></a>Parametri  
  `pwszFunctionName`  
- [in] Il nome della funzione che il motore di script termina l'esecuzione.  
+ [in] Il nome della funzione che il motore di scripting completamento dell'esecuzione.  
   
  `scriptType`  
- [in] Il tipo della funzione. Per le descrizioni dei valori validi, vedere [enumerazione PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] Il tipo della funzione. Per una descrizione dei valori validi, vedere [enumerazione PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Valore restituito  
- Il valore restituito di questo metodo viene ignorato dal motore di scripting.  
+ Il valore restituito di questo metodo viene ignorato dal motore di script.  
   
 ## <a name="remarks"></a>Note  
- Per le chiamate di DOM, il motore di script chiama questo metodo anziché chiamare [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Si tratta a causa dell'elevato numero di metodi univoci e le proprietà nel DOM.  
+ Per le chiamate di DOM, il motore di script chiama questo metodo invece di chiamare [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Si tratta causa dell'elevato numero di metodi univoci e proprietà nel DOM.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   

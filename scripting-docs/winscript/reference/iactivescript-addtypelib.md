@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Documenti Microsoft
+title: IActiveScript::AddTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640871"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092547"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Aggiunge una libreria dei tipi per lo spazio dei nomi per lo script. È simile al `#include` direttiva in C/C++. Consente a un set di elementi predefiniti, ad esempio le definizioni di classe, `typedefs`, denominato costanti da aggiungere all'ambiente di runtime disponibile per lo script.  
+Aggiunge una libreria dei tipi per lo spazio dei nomi per lo script. Ciò è simile al `#include` direttiva in C/C++. Consente un set di elementi predefiniti, ad esempio le definizioni di classe, `typedefs`e da aggiungere all'ambiente di runtime disponibile per lo script di costanti denominate.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -54,7 +54,7 @@ HRESULT AddTypeLib(
   
 |Valore|Significato|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|La libreria dei tipi viene descritto un controllo ActiveX utilizzato dall'host.|  
+|SCRIPTTYPELIB_ISCONTROL|La libreria dei tipi descrive un controllo ActiveX utilizzato dall'host.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -63,8 +63,8 @@ HRESULT AddTypeLib(
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_INVALIDARG`|Un argomento non valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di script non è ancora caricato o inizializzato).|  
-|`TYPE_E_CANTLOADLIBRARY`|Impossibile caricare la libreria dei tipi specificata.|  
+|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
+|`TYPE_E_CANTLOADLIBRARY`|Non è stato possibile caricare la libreria dei tipi specificata.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

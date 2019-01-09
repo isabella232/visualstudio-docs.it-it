@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::ParseLanguageText | Documenti Microsoft
+title: IDebugExpressionContext::ParseLanguageText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e455768b7d38096c64ab61f2b36aeba871ddf0bc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a55dc9ae2ae92a76c2b426d1f36949573b37a265
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729241"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087724"
 ---
 # <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
 Crea un'espressione di debug per il testo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ParseLanguageText(  
    LPCOLESTR           pstrCode,  
    UINT                nRadix,  
@@ -48,19 +48,19 @@ HRESULT ParseLanguageText(
  [in] Radice da utilizzare.  
   
  `pstrDelimiter`  
- [in] Il delimitatore di fine-di--blocco di script. Quando `pstrCode` viene analizzata da un flusso di testo, l'host in genere viene utilizzato un delimitatore, ad esempio due virgolette singole ("), per rilevare la fine del blocco di script. Questo parametro specifica il delimitatore che l'host utilizzato, consentendo il motore di script fornire alcuni condizionale primitivi pre-elaborazione (ad esempio, sostituendo una virgoletta singola ['] con due virgolette singole per l'utilizzo come un delimitatore). Esattamente come (e se) utilizzati dal motore scripting questa informazioni dipendono dal motore di script. Impostare questo parametro su `NULL` se l'host non ha utilizzato un delimitatore per contrassegnare la fine del blocco di script.  
+ [in] Il delimitatore di fine-di--blocco di script. Quando si `pstrCode` viene analizzata da un flusso di testo, l'host utilizza un delimitatore, in genere, ad esempio due virgolette ("), per rilevare la fine del blocco di script. Questo parametro specifica il delimitatore utilizzato dall'host, consentendo il motore di scripting fornire alcuni condizionale pre-elaborazioni primitive (ad esempio, sostituire una virgoletta singola ['] con due virgolette singole per l'utilizzo come un delimitatore). Esattamente come (e se) viene utilizzato il motore scripting queste informazioni dipendono dal motore di script. Impostare questo parametro su `NULL` se l'host non utilizzava un delimitatore per contrassegnare la fine del blocco di script.  
   
  `dwFlags`  
- [in] Combinazione dei flag di testo di debug seguenti:  
+ [in] Combinazione dei flag di testo debug seguenti:  
   
-|Costante|Valore|Descrizione|  
+|Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica che il testo è un'espressione anziché un'istruzione. Questo flag può influenzare le modalità in cui il testo viene analizzato da alcuni linguaggi.|  
-|DEBUG_TEXT_RETURNVALUE|0x00000002|Se un valore restituito è disponibile, e verrà utilizzato dal chiamante.|  
-|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Non consentire gli effetti collaterali. Se questo flag è impostato, la valutazione dell'espressione deve modificare nessuno stato di runtime.|  
-|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Consente i punti di interruzione durante la valutazione del testo. Se questo flag non è stato impostato durante la valutazione del testo vengono ignorati i punti di interruzione.|  
-|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Consente di segnalazioni di errore durante la valutazione del testo. Se questo flag non è quindi gli errori non vengono segnalati all'host durante la valutazione.|  
-|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica l'espressione da valutare per un contesto di codice, anziché eseguire l'espressione stessa|  
+|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica che il testo è un'espressione anziché un'istruzione. Questo flag può influenzare le modalità in cui il testo viene analizzato per alcune lingue.|  
+|DEBUG_TEXT_RETURNVALUE|0x00000002|Se un valore restituito è disponibile, si verrà utilizzato dal chiamante.|  
+|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Non consentire gli effetti collaterali. Se questo flag è impostato, la valutazione dell'espressione dovrebbe modificare nessuno stato di runtime.|  
+|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Consente i punti di interruzione durante la valutazione del testo. Se questo flag non è impostato i punti di interruzione vengono ignorati durante la valutazione del testo.|  
+|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Consente a segnalazioni di errore durante la valutazione del testo. Se questo flag non è impostato quindi gli errori non vengono segnalati all'host durante la valutazione.|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica l'espressione deve essere valutata per un contesto di codice piuttosto che in esecuzione l'espressione stessa|  
   
  `ppe`  
  [out] Restituisce l'espressione di debug per il testo specificato.  
@@ -68,7 +68,7 @@ HRESULT ParseLanguageText(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

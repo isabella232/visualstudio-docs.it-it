@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IActiveScriptProfilerCallback3 | Documenti Microsoft
+title: Interfaccia IActiveScriptProfilerCallback3 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 844ea36bcbb46e5b1e363d63c39a09518fcd22f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eeaa4f6b83f36ac1fd1540ce99a6ccf06a265699
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724961"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092235"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>Interfaccia IActiveScriptProfilerCallback3
-Fornisce un metodo per notificare al profiler che le esecuzioni profilate vengono eseguite nel contesto di un web worker.  
+Fornisce un metodo per notificare al profiler che le esecuzioni profilate vengono eseguite nel contesto di un ruolo web worker.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2  
 ```  
   
@@ -32,7 +32,7 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[Metodo IActiveScriptProfilerCallback3::SetWebWorkerId](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|Notifica al profiler sull'ID di lavoro da utilizzare per questa sessione di profilatura.|  
+|[Metodo IActiveScriptProfilerCallback3::SetWebWorkerId](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|Notifica al profiler sull'ID del ruolo di lavoro da usare per questa sessione di profilatura.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)   

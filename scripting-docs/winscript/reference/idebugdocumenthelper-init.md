@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Init | Documenti Microsoft
+title: 'Idebugdocumenthelper:: Init | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45cd57e4ba9e86bf84f927f487c637d61aa5339b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d4bcb64b7bbb1c61e7f031d872f7d1440fd17833
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726321"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086632"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-Il `Init` metodo inizializza un helper del documento di debug con un nome e attributi iniziali.  
+Il `Init` metodo inizializza un helper di documenti di debug con un nome e gli attributi iniziali.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Init(  
    IDebugApplication*  pda,  
    LPCOLESTR           pszShortName,  
@@ -41,7 +41,7 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Parametri  
  `pda`  
- [in] L'applicazione di debug associata a questo documento.  
+ [in] Il debug dell'applicazione associato al documento.  
   
  `pszShortName`  
  [in] Stringa con terminazione null contenente il nome breve del documento.  
@@ -55,16 +55,16 @@ HRESULT Init(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo inizializza un helper del documento di debug con un nome e attributi iniziali.  
+ Questo metodo inizializza un helper di documenti di debug con un nome e gli attributi iniziali.  
   
- Questo documento non viene visualizzato nella struttura solo `IDebugDocumentHelper::Attach` viene chiamato.  
+ Questo documento non viene visualizzata nell'albero fino alla `IDebugDocumentHelper::Attach` viene chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [Costanti TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

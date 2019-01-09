@@ -10,17 +10,17 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8290d354f811795ba83975c406565d17817fa0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff75135169bbe2fd138a5e55dedbc859194d4455
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866465"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090740"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Procedura: A livello di programmazione allegare file agli elementi di posta elettronica di Outlook
   In questo esempio un file allegato a un nuovo elemento di posta elettronica e lo invia a Armando Pinto. Nell'esempio si presuppone una persona denominata Armando Pinto esiste come destinatario.  

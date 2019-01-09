@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugdatatarget:: Allocatevirtualmemory | Documenti Microsoft'
+title: 'Metodo ijsdebugdatatarget:: Allocatevirtualmemory | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65b29bbf9a3405bcfab779bd877f798a863538d5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4eaf448e0be224f853674084a18f7aa2a6bd5ed7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728401"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086918"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>Metodo IJsDebugDataTarget::AllocateVirtualMemory
-Riserva e/o viene eseguito il commit di un'area di memoria all'interno di spazio degli indirizzi virtuali del processo di destinazione.  
+Riserva e/o impegna un'area di memoria nello spazio degli indirizzi virtuali del processo di destinazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT AllocateVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -40,27 +40,27 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>Parametri  
  `address`  
- [in] L'indirizzo all'interno del processo di destinazione in cui la memoria deve essere eseguito il commit oppure sono riservata. In genere, questo valore è zero, in cui il sistema sceglie un indirizzo.  
+ [in] L'indirizzo nel processo di destinazione in cui la memoria deve essere eseguito il commit o riservata. In genere, questo valore è uguale a zero, nel quale caso il sistema sceglie un indirizzo.  
   
  `size`  
- [in] Le dimensioni dell'area di memoria da allocare, in byte. Il sistema verrà automaticamente arrotondare per eccesso ai limiti della pagina successiva.  
+ [in] Le dimensioni dell'area di memoria da allocare, in byte. Il sistema verrà automaticamente arrotondate per eccesso ai limiti della pagina successiva.  
   
  `allocationType`  
- [in] Indica il tipo di allocazione da eseguire. Si tratta in genere MEM_COMMIT &#124; MEM_RESERVE (0x3000) che si riserva ed esegue il commit di un'allocazione in un unico passaggio.  
+ [in] Indica il tipo di allocazione da eseguire. Si tratta in genere è MEM_COMMIT &#124; MEM_RESERVE (0x3000) che riserva e impegna un'allocazione in un unico passaggio.  
   
  `pageProtection`  
- [in] La protezione della memoria per l'area delle pagine da allocare. Se il commit di pagine, è possibile specificare una delle costanti di protezione della memoria (ad esempio, PAGE_READWRITE, PAGE_EXECUTE).  
+ [in] La protezione della memoria per l'area delle pagine da allocare. Se il commit di pagine, è possibile specificare qualsiasi una delle costanti di protezione dati di memoria (ad esempio PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
- [out] Indirizzo di base della regione allocata di pagine.  
+ [out] Indirizzo di base dell'area allocata delle pagine.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- La funzione inizializza la memoria che allocata a zero, a meno che non viene utilizzato MEM_RESET. Per ulteriori informazioni, vedere l'API Win32 VirtualAlloc.  
+ La funzione inizializza la memoria che assegna a zero, a meno che non sia utilizzato MEM_RESET. Per altre informazioni, vedere l'API Win32 VirtualAlloc.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

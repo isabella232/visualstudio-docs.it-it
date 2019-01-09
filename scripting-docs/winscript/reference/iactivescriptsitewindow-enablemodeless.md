@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless | Documenti Microsoft
+title: IActiveScriptSiteWindow::EnableModeless | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7099fe7d13a1cb3231e67049104722af9373d7a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4cea23890539ca80abf8e3e58b0f8c48b7ca1fc9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724931"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093015"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
 Fa sì che l'host abilitare o disabilitare la finestra principale, nonché eventuali finestre di dialogo non modale.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT EnableModeless(  
     BOOL fEnable  // enable flag  
 );  
@@ -38,15 +38,15 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>Parametri  
  `fEnable`  
- [in] Flag che, se `TRUE`, consente la finestra principale e le finestre di dialogo non modale o, se `FALSE`, li disabilita.  
+ [in] Flag che, se `TRUE`, abilita la finestra principale e le finestre di dialogo non modale oppure, se `FALSE`, li disabilita.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK` se ha esito positivo, o `E_FAIL` se si è verificato un errore.  
+ Restituisce `S_OK` caso di esito positivo o `E_FAIL` se si è verificato un errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo è identico per i `IOleInPlaceFrame::EnableModeless` metodo.  
+ Questo metodo è identico al `IOleInPlaceFrame::EnableModeless` (metodo).  
   
- Chiamate a questo metodo possono essere nidificate.  
+ Chiamate a questo metodo possono essere annidate.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

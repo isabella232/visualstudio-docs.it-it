@@ -1,5 +1,5 @@
 ---
-title: 'Metodo iactivescriptprofilerheapenum:: Getoptionalinfo | Documenti Microsoft'
+title: 'Metodo iactivescriptprofilerheapenum:: Getoptionalinfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724681"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088803"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>Metodo IActiveScriptProfilerHeapEnum::GetOptionalInfo
-Ottiene le informazioni facoltative sull'oggetto specificato (dal set di heap oggetti restituiti dal [metodo iactivescriptprofilercontrol3:: Enumheap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Ottiene le informazioni facoltative sull'oggetto specificato (dal set di oggetti heap restituiti dai [metodo IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- Non è necessario liberare la memoria restituita assegnata agli oggetti restituiti. Chiamare invece il [metodo iactivescriptprofilerheapenum:: Freeobjectandoptionalinfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ Non è necessario liberare la memoria restituita assegnata agli oggetti restituiti. In alternativa, è necessario chiamare il [metodo iactivescriptprofilerheapenum:: Freeobjectandoptionalinfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   
@@ -35,10 +35,10 @@ HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULON
  Il [struttura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) per cui restituire le informazioni.  
   
  `celt`  
- Il numero di [struttura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) strutture da restituire.  
+ I numerosi [struttura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) strutture da restituire.  
   
  `optionalInfo`  
  [out] Matrice di [struttura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md) strutture per l'oggetto specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Valore HRESULT.
+ Il valore HRESULT.

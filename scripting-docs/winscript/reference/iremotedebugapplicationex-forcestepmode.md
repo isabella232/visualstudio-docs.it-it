@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:ForceStepMode | Documenti Microsoft
+title: IRemoteDebugApplicationEx:ForceStepMode | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: add26689122ffe4944b4bbad15106a825d43ccf0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 771c17fdb8f2bea77959bc53b8d98fd10399a142
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728901"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094757"
 ---
 # <a name="iremotedebugapplicationexforcestepmode"></a>IRemoteDebugApplicationEx:ForceStepMode
-Forza il debugger in modalità passo a passo.  
+Forza il debugger in modalità di istruzione singola.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ForceStepMode(  
    IRemoteDebugApplicationThread*  pStepThread  
 );  
@@ -38,7 +38,7 @@ HRESULT ForceStepMode(
   
 #### <a name="parameters"></a>Parametri  
  `pStepThread`  
- [in] Thread per il monitoraggio processo di Debug per passaggio. Se null, PDM Cancella il thread di esecuzione di istruzioni.  
+ [in] Thread per il monitoraggio di Debug del processo al passaggio. Se null, PDM Cancella il relativo avanzamento nell'esecuzione thread.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

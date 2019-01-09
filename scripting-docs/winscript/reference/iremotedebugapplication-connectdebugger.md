@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ConnectDebugger | Documenti Microsoft
+title: IRemoteDebugApplication::ConnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538b7a3f76e6026297839e4a7a37e6c21a72d7d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e6db85ab30d04ebaf24ec0e955aab529ff8799d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729331"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088855"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
-Si connette un debugger all'applicazione.  
+Connette un debugger all'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ConnectDebugger(  
    IApplicationDebugger*  pad  
 );  
@@ -49,7 +49,7 @@ HRESULT ConnectDebugger(
 |`E_FAIL`|Un debugger è già connesso a questa applicazione.|  
   
 ## <a name="remarks"></a>Note  
- Un'applicazione può avere solo un debugger collegato alla volta. Questo metodo non riesce se un debugger è già connesso.  
+ Un'applicazione può avere solo un debugger connesso alla volta. Questo metodo ha esito negativo se un debugger è già connesso.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   

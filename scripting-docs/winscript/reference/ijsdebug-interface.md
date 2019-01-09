@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IJsDebug | Documenti Microsoft
+title: Interfaccia IJsDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16f0da202e937a92a8e76dddc27d9da7bc61c4ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727681"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089414"
 ---
 # <a name="ijsdebug-interface"></a>Interfaccia IJsDebug
 Punto di ingresso per il debug di JavaScript.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 IJsDebug : public IUnknown;  
 ```  
   
@@ -37,7 +37,7 @@ IJsDebug : public IUnknown;
 |[Metodo IJsDebug::OpenVirtualProcess](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metodo factory utilizzato per creare un nuovo oggetto processo virtuale.|  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

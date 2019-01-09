@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onDestroy | Documenti Microsoft
+title: IDebugDocumentTextEvents::onDestroy | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd63128fa5222d829b9f676614ffeef83922db27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3379159948ca1e13c08e70a4851f53c5780f0d89
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089128"
 ---
 # <a name="idebugdocumenttexteventsondestroy"></a>IDebugDocumentTextEvents::onDestroy
-Indica che il documento sottostante è stato eliminato e non è più valido.  
+Indica che il documento sottostante è stata eliminata definitivamente e non è più valido.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onDestroy();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT onDestroy();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo indica che il documento sottostante è stata distrutta e non è più valido.  
+ Questo metodo indica che il documento sottostante è stata eliminata definitivamente e non è più valido.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

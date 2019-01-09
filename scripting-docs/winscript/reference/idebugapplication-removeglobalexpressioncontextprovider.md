@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveGlobalExpressionContextProvider | Documenti Microsoft
+title: IDebugApplication::RemoveGlobalExpressionContextProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791d6a3a237c36c123aea662dc4bb933b97d35d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725971"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093886"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
 Rimuove un provider di contesto dell'espressione globale da questa applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT RemoveGlobalExpressionContextProvider(  
    DWORD_PTR  dwCookie  
 );  
@@ -38,12 +38,12 @@ HRESULT RemoveGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>Parametri  
  `dwCookie`  
- [in] Il cookie restituito dal `AddGlobalExpressionContextProvider` metodo quando il provider di contesto globale è stato aggiunto.  
+ [in] Il cookie restituito dal `AddGlobalExpressionContextProvider` metodo quando è stato aggiunto il provider di contesto globale.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

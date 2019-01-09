@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:SetLocale | Documenti Microsoft
+title: IRemoteDebugApplicationEx:SetLocale | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19b2d58974e7da7bd40dad1faa9e361b0327e4c6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3565a966b74e6af18b2c397790fcd8d923e6bb15
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728961"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095706"
 ---
 # <a name="iremotedebugapplicationexsetlocale"></a>IRemoteDebugApplicationEx:SetLocale
-Imposta la lingua per la localizzazione del debugger.  
+Imposta la lingua per la localizzazione la debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT SetLocale(  
    DWORD  dwLangID  
 );  
@@ -38,12 +38,12 @@ HRESULT SetLocale(
   
 #### <a name="parameters"></a>Parametri  
  `dwLangID`  
- [in] ID della lingua.  
+ [in] L'ID della lingua.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

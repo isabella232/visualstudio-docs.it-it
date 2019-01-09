@@ -1,8 +1,6 @@
 ---
 title: Attività CL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912769"
 ---
 # <a name="cl-task"></a>attività CL
 Esegue il wrapping dello strumento del compilatore Visual C++, *cl.exe*. Il compilatore genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).  

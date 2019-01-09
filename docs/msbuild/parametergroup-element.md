@@ -1,8 +1,6 @@
 ---
 title: Elemento ParameterGroup | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a47c77ecb441d2c1277fee1a7e94e1e9a7991b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a531073ba6f2f55272b719a116caad724d29e53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900137"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916163"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 Contiene un elenco facoltativo di parametri che saranno presenti sull'attività generata da un elemento `UsingTask` `TaskFactory`. Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -46,13 +44,13 @@ Contiene un elenco facoltativo di parametri che saranno presenti sull'attività 
 
 ### <a name="child-elements"></a>Elementi figlio  
 
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Parametro](../msbuild/parameter-element.md)|Contiene informazioni su un parametro specifico per un'attività generata da un elemento `UsingTask` `TaskFactory`. Il nome dell'elemento è il nome del parametro.|  
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Consente di registrare attività in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Possono esistere zero o più elementi `UsingTask` in un progetto. |
 

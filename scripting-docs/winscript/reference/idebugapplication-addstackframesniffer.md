@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Documenti Microsoft
+title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89faa6481bd5e5934ae2d3b85a0bade83949633a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fa444573e418de1a59219eb48b09e64b08d859a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725561"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089895"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Aggiunge un provider di enumeratore di frame dello stack per questa applicazione.  
+Aggiunge un provider di enumeratore frame dello stack per questa applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT AddStackFrameSniffer(  
    IDebugStackFrameSniffer*  pdsfs,  
    DWORD*                    pdwCookie  
@@ -39,7 +39,7 @@ HRESULT AddStackFrameSniffer(
   
 #### <a name="parameters"></a>Parametri  
  `pdsfs`  
- [in] Il provider di enumeratore stack frame da aggiungere a questa applicazione.  
+ [in] Il provider di enumeratore frame dello stack per aggiungere a questa applicazione.  
   
  `pdwCookie`  
  [out] Un cookie utilizzato per rimuovere questo provider di enumeratore stack frame dall'applicazione.  
@@ -47,12 +47,12 @@ HRESULT AddStackFrameSniffer(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Sebbene i motori di linguaggio chiamano in genere questo metodo per esporre i rispettivi stack frame per il debugger, è possibile che altre entità per esporre gli stack frame.  
+ Sebbene motori di linguaggio chiamano in genere questo metodo per esporre i rispettivi stack frame per il debugger, è possibile che altre entità per esporre gli stack frame.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

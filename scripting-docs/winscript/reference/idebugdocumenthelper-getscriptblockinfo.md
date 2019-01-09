@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Documenti Microsoft
+title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fd12aff51c661c2ba5af9ef909bfa481d22101d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726211"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095290"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
 Recupera l'intervallo di caratteri e il motore di script corrispondente a un blocco di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetScriptBlockInfo(  
    DWORD_PTR        dwSourceContext,  
    IActiveScript**  ppasd,  
@@ -44,7 +44,7 @@ HRESULT GetScriptBlockInfo(
  [in] Il contesto di origine per il blocco di script.  
   
  `ppasd`  
- [out] Il motore di script per questo blocco di script.  
+ [out] Il motore di script di questo blocco di script.  
   
  `piCharPos`  
  [out] Posizione di inizio del blocco di script.  
@@ -55,7 +55,7 @@ HRESULT GetScriptBlockInfo(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

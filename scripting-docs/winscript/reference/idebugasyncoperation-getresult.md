@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetResult | Documenti Microsoft
+title: IDebugAsyncOperation::GetResult | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60181904408010f35fa4d99d182216e665583aab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d86e9eb2b934bc6bd4027405d06960cd107f81c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726161"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087477"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-Fornisce il valore restituito e il parametro dell'oggetto restituito dall'operazione di debug sincrono.  
+Fornisce il valore restituito e parametro dell'oggetto restituito dall'operazione di debug sincrono.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetResult(  
    HRESULT*    phrResult,  
    IUnknown**  ppunkResult  
@@ -47,13 +47,13 @@ HRESULT GetResult(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_PENDING`|L'operazione non completata.|  
+|`E_PENDING`|L'operazione non è stata completata.|  
   
 ## <a name="remarks"></a>Note  
- Se l'operazione è stata completata, questo metodo restituisce il `HRESULT` e oggetto parametro da `IDebugSyncOperation::Execute`.  
+ Se l'operazione è stata completata, questo metodo restituisce il `HRESULT` e l'oggetto parametro dalla `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   

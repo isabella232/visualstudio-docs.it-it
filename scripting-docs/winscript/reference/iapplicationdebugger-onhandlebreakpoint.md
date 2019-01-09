@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint | Documenti Microsoft
+title: IApplicationDebugger::onHandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3be067d3b8c3e3268ac2caf1614b70efff6f665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ebcb24b437b2c77f0dc76f5e753974c8dd299d17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725301"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090571"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 Gestisce l'evento punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onHandleBreakPoint(  
    IRemoteDebugApplicationThread*  prpt,  
    BREAKREASON                     br,  
@@ -58,7 +58,7 @@ HRESULT onHandleBreakPoint(
 ## <a name="remarks"></a>Note  
  Questo metodo viene chiamato quando viene raggiunto un punto di interruzione e `IDebugApplication::HandleBreakPoint` viene chiamato.  
   
- L'applicazione rimarrà sospeso finché non viene chiamato il debugger IDE `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ L'applicazione rimarrà sospesa finché non viene chiamato l'IDE di debug `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   

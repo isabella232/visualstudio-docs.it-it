@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Documenti Microsoft
+title: ISetNextStatement::CanSetNextStatement | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5288b0cffc3b8bfca0e995e67d4b3e4bf3a6b2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090129"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Questo metodo determina se il punto di esecuzione, che determina la successiva istruzione del codice da eseguire, è possibile impostare nel percorso specificato.  
+Questo metodo determina se il punto di esecuzione, che determina la successiva istruzione di codice da eseguire, è possibile impostare nel percorso specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CanSetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -48,7 +48,7 @@ HRESULT CanSetNextStatement(
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|L'istruzione successiva può essere aggiornato nel contesto del codice specificato.|  
-|`S_FALSE`|Impossibile aggiornare l'istruzione successiva nel contesto del codice specificato.|  
+|`S_FALSE`|L'istruzione successiva non è possibile aggiornare il contesto del codice specificato.|  
   
 ## <a name="remarks"></a>Note  
   

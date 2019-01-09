@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID | Documenti Microsoft
+title: IActiveScript::GetScriptThreadID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8850319035b7b5e3a9cbbd4bbe4340e1eefacc96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b1c68d60b827e7540711cdf6ba34260fb8642ed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641611"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094874"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-Recupera un identificatore script-modulo di gestione-definito per il thread associato al thread Win32 specificato.  
+Recupera un identificatore scripting-engine-definite per il thread associato al thread Win32 specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetScriptThreadID(  
     DWORD dwWin32ThreadID,       // Win32 thread identifier.  
     SCRIPTTHREADID *pstidThread  // Receives scripting thread. identifier  
@@ -39,10 +39,10 @@ HRESULT GetScriptThreadID(
   
 #### <a name="parameters"></a>Parametri  
  `dwWin32ThreadID` ,  
- [in] Identificatore del thread di un thread Win32 in esecuzione nel processo corrente. Utilizzare il [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) funzione per recuperare l'identificatore del thread del thread attualmente in esecuzione.  
+ [in] Identificatore del thread di un thread Win32 in esecuzione nel processo corrente. Usare la [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) funzione per recuperare l'identificatore del thread del thread attualmente in esecuzione.  
   
  `pstidThread` ,  
- [out] Indirizzo di una variabile che riceve l'identificatore del thread script associato al thread Win32 specificato. L'interpretazione di questo identificatore viene lasciato al motore di script, ma può essere solo una copia dell'identificatore di thread di Windows. Si noti che se il thread Win32 termina, questo identificatore diventa non assegnato e successivamente può essere assegnato a un altro thread.  
+ [out] Indirizzo di una variabile che riceve l'identificatore del thread script associato al thread Win32 specificato. L'interpretazione di questo identificatore viene lasciata al motore di script, ma può essere solo una copia dell'identificatore di thread di Windows. Si noti che se il thread Win32 termina, questo identificatore diventerà non assegnato e successivamente può essere assegnato a un altro thread.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -51,12 +51,12 @@ HRESULT GetScriptThreadID(
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_POINTER`|È stato specificato un puntatore non valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di script non è ancora caricato o inizializzato) e pertanto non è riuscita.|  
+|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato) e pertanto non è riuscita.|  
   
 ## <a name="remarks"></a>Note  
- L'identificatore recuperato può essere utilizzato nelle successive chiamate a metodi di controllo di esecuzione di thread script, ad esempio il [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) metodo.  
+ L'identificatore recuperato può essere utilizzato nelle successive chiamate a metodi di controllo di esecuzione thread dello script, ad esempio la [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) (metodo).  
   
- Questo metodo può essere chiamato dal thread non di base senza callout non in base a oggetti host o al [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) interfaccia.  
+ Questo metodo può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) interfaccia.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

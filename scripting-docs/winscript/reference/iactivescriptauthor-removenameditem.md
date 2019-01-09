@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveNamedItem | Documenti Microsoft
+title: IActiveScriptAuthor::RemoveNamedItem | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f3acc7d61d63ce4fb4fe53729ce43324b9718a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64f62acd02e0901af341a571fb09ba81f3a11f28
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645601"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088829"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
 Rimuove un `NamedItem` oggetto dallo spazio dei nomi dello script del motore di creazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT RemoveNamedItem(  
    LPCOLESTR          pszName  
 );  
@@ -43,13 +43,13 @@ HRESULT RemoveNamedItem(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`S_FALSE`|Il `NamedItem` oggetto non è presente nello spazio dei nomi dello script del motore di creazione.|  
   
 ## <a name="remarks"></a>Note  
- [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) viene utilizzato per inserire il `NamedItem` oggetto nello script di creazione dello spazio dei nomi del motore.  
+ [IActiveScript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) consente di inserire il `NamedItem` oggetto nello script dello spazio dei nomi del motore di creazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   

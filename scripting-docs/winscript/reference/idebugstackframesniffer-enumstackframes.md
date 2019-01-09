@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames | Documenti Microsoft
+title: IDebugStackFrameSniffer::EnumStackFrames | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726791"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089303"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
 Restituisce un enumeratore di stack frame per il thread corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parametri  
  `ppedsf`  
- [out] Enumeratore degli stack frame per il thread corrente.  
+ [out] Enumeratore di stack frame per il thread corrente.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- L'enumeratore di frame dello stack restituisce i frame a partire dall'inizio dello stack, a partire dal frame recentemente inserito.  
+ L'enumeratore di frame dello stack restituisce i frame partire dall'inizio dello stack, a partire da frame recentemente inserito.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

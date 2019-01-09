@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next | Documenti Microsoft
+title: IEnumDebugApplicationNodes::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61bc2b677f12106c9bd8e6c8bec57ae1f7a09605
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07bdd008887676ef2f4cba7e1a67d96e1344f56a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727831"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091130"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
-Recupera un numero di segmenti nella sequenza di enumerazione specificato.  
+Recupera un determinato numero di segmenti nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                    celt,  
    IDebugApplicationNode**  pprddp,  
@@ -46,7 +46,7 @@ HRESULT Next(
  [out] Restituisce una matrice di `IDebugApplicationNode` interfacce che rappresenta i segmenti in corso il recupero.  
   
  `pceltFetched`  
- [out] Il numero effettivo di segmenti recuperati dall'enumeratore.  
+ [out] Il numero effettivo di segmenti recuperate dall'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -56,7 +56,7 @@ HRESULT Next(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo recupera un numero di segmenti nella sequenza di enumerazione specificato.  
+ Questo metodo recupera un determinato numero di segmenti nella sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

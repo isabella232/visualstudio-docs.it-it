@@ -1,5 +1,5 @@
 ---
-title: 'IScriptNode:: CreateChildEntry | Documenti Microsoft'
+title: 'IScriptNode:: CreateChildEntry | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a8ca4ab504a9da2a63d5c70330d50e2c97e09817
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729691"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088231"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-Aggiunge un'istanza figlio `IScriptEntry`.  
+Aggiunge un'istanza figlio di `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CreateChildEntry(  
    ULONG              isn,  
    DWORD              dwCookie,  
@@ -41,24 +41,24 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Parametri  
  `isn`  
- [in] Indice dell'elemento figlio dell'elemento padre.  
+ [in] L'indice dell'elemento figlio del padre.  
   
  `dwCookie`  
- [in] Un valore definito dall'applicazione utilizzato per associare la voce figlio con l'oggetto host.  
+ [in] Un valore definito dall'applicazione usato per associare la voce figlio con l'oggetto host.  
   
  `pszDelimiter`  
- [in] L'indirizzo del delimitatore di fine-di--blocco di script. Per l'analisi, l'host Usa in genere un delimitatore (ad esempio due virgolette singole), per individuare la fine del blocco di script.  
+ [in] L'indirizzo del delimitatore end-di--blocco di script. Per l'analisi, l'host utilizza in genere un delimitatore (ad esempio due virgolette singole), per rilevare la fine del blocco di script.  
   
- Il delimitatore consente lo script di creazione del motore per fornire la pre-elaborazione. Il motore potrebbe sostituire, ad esempio, una virgoletta singola con due virgolette singole da utilizzare come delimitatore. Il motore determina la modalità in cui viene utilizzato il delimitatore.  
+ Il delimitatore consente allo script di creazione motore per garantire la pre-elaborazione. Ad esempio, il motore potrebbe sostituire una virgoletta singola con due virgolette singole da usare come delimitatore. Il motore determina come viene utilizzato il delimitatore.  
   
- Se un delimitatore non contrassegnare la fine del blocco di script, impostato su NULL.  
+ Se un delimitatore non contrassegna la fine del blocco di script, impostato su NULL.  
   
  `ppse`  
- [out] L'indirizzo di una variabile che riceve un puntatore di `IScriptEntry` interfaccia dell'istanza figlio.  
+ [out] L'indirizzo di una variabile che riceve un puntatore al `IScriptEntry` interfaccia dell'istanza figlio.  
   
- Per `IScriptNode` gli oggetti che rappresentano una pagina Web, questo parametro restituisce un `IScriptEntry` istanza che specifica un blocco di script.  
+ Per la `IScriptNode` gli oggetti che rappresentano una pagina Web, questo parametro restituisce un `IScriptEntry` istanza che specifica un blocco di script.  
   
- Per `IScriptEntry` gli oggetti che rappresentano un blocco di script, questo parametro restituisce un `IScriptEntry` istanza che specifica un oggetto funzione.  
+ Per la `IScriptEntry` gli oggetti che rappresentano un blocco di script, questo parametro restituisce un `IScriptEntry` istanza che specifica un oggetto funzione.  
   
  Per `IScriptEntry` gli oggetti che rappresentano una funzione dell'oggetto, questo metodo ha esito negativo.  
   
@@ -67,12 +67,12 @@ HRESULT CreateChildEntry(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il `IScriptNode` interfaccia rappresenta una pagina Web o sui suoi elementi. Il `IScriptEntry` interfaccia (derivata da `IScriptNode`) rappresenta un blocco di script o un oggetto funzione. Il `IScriptScriptlet` interfaccia (derivata da `IScriptEntry`) rappresenta un gestore eventi.  
+ Il `IScriptNode` interfaccia rappresenta una pagina Web o dei relativi elementi. Il `IScriptEntry` interfaccia (che deriva da `IScriptNode`) rappresenta un blocco di script o un oggetto funzione. Il `IScriptScriptlet` interfaccia (che deriva da `IScriptEntry`) rappresenta un gestore eventi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)   

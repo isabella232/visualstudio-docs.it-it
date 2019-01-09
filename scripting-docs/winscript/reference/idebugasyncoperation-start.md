@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Documenti Microsoft
+title: IDebugAsyncOperation::Start | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725941"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094783"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 Fa sì che l'operazione asincrona iniziare.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -49,7 +49,7 @@ HRESULT Start(
 |`E_UNEXPECTED`|Un'operazione è già in sospeso.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo determina `IDebugSyncOperation::Execute` da chiamare in modo asincrono nel thread ottenuto da `IDebugSyncOperation::GetTargetThread`. Questo metodo deve essere chiamato solo da entro il thread del debugger. in caso contrario, non verrà restituito fino al completamento dell'operazione.  
+ Questo metodo determina `IDebugSyncOperation::Execute` alla chiamata asincrona nel thread ottenuto da `IDebugSyncOperation::GetTargetThread`. Questo metodo deve essere chiamato solo da all'interno del thread debugger; in caso contrario, non verrà restituito fino al completamento dell'operazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

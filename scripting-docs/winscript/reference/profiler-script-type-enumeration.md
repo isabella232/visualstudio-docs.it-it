@@ -1,5 +1,5 @@
 ---
-title: Enumerazione PROFILER_SCRIPT_TYPE | Documenti Microsoft
+title: Enumerazione PROFILER_SCRIPT_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 279969ec0b50f705e39d2e29e700adc1e833ead3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac387af4601ff822982c10e61f9813b2db7e8047
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734121"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086909"
 ---
 # <a name="profilerscripttype-enumeration"></a>Enumerazione PROFILER_SCRIPT_TYPE
 Specifica il tipo di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 typedef enum {  
     PROFILER_SCRIPT_TYPE_USER,  
     PROFILER_SCRIPT_TYPE_DYNAMIC,  
@@ -41,10 +41,10 @@ typedef enum {
   
 |Membro|Descrizione|  
 |------------|-----------------|  
-|PROFILER_SCRIPT_TYPE_USER|Specifica il codice di script definiti dall'utente.|  
+|PROFILER_SCRIPT_TYPE_USER|Specifica il codice di script scritto dall'utente.|  
 |PROFILER_SCRIPT_TYPE_DYNAMIC|Specifica il codice di script che viene generato in modo dinamico durante l'esecuzione.|  
-|PROFILER_SCRIPT_TYPE_NATIVE|Specifica il tipo di script per gli oggetti definiti dal motore di script e funzioni native.|  
-|PROFILER_SCRIPT_TYPE_DOM|Specifica una chiamata nel servizio Replica file (DOM, Document Object Model) di Internet Explorer, ad esempio, una chiamata al `document.getElementById` metodo.|  
+|PROFILER_SCRIPT_TYPE_NATIVE|Specifica il tipo di script per le funzioni native e gli oggetti definiti dal motore di script.|  
+|PROFILER_SCRIPT_TYPE_DOM|Specifica una chiamata nel documento oggetto Model (DOM) di Internet Explorer, ad esempio, una chiamata al `document.getElementById` (metodo).|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Script ActiveX Profiler costanti, enumerazioni e strutture](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   

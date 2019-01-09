@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::CreateInstanceAtDebugger | Documenti Microsoft
+title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,22 +18,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a6af315f25aa333ace4be7bb8e3584573f0cfd1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725771"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090922"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Consente la creazione di oggetti nel processo del debugger per codice che è out-of-process al debugger.  
+Consente la creazione di oggetti nel processo del debugger dal codice che è out-of-process al debugger.  
   
 > [!IMPORTANT]
->  Questo metodo non deve essere implementato, perché consente al codice non attendibile creare oggetti arbitrari in un thread del debugger attendibile.  
+>  Questo metodo non deve essere implementato, perché consente codice non attendibile creare oggetti arbitrari in un thread debugger attendibile.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CreateInstanceAtDebugger(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -45,24 +45,24 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parametri  
  `rclsid`  
- [in] Classe (CLSID) di identificatore di oggetto da creare.  
+ [in] Identificatore (CLSID) dell'oggetto per creare la classe.  
   
  `pUnkOuter`  
- [in] Se `NULL`, l'oggetto non sia stata creata come parte di un'aggregazione. In caso contrario, `pUnkOuter` è un puntatore all'oggetto aggregato `IUnknown` interfaccia (il controllo `IUnknown`).  
+ [in] Se `NULL`, l'oggetto non è viene creato come parte di un'aggregazione. In caso contrario, `pUnkOuter` è un puntatore all'oggetto aggregato `IUnknown` interfaccia (il controllo `IUnknown`).  
   
  `dwClsContext`  
- [in] Contesto per l'esecuzione di codice eseguibile. I valori sono tratti dall'enumerazione `CLSCTX`.  
+ [in] Contesto per l'esecuzione di codice eseguibile. I valori sono ricavati dall'enumerazione `CLSCTX`.  
   
  `riid`  
- [in] L'identificatore di interfaccia utilizzata per comunicare con l'oggetto.  
+ [in] L'identificatore di interfaccia utilizzato per comunicare con l'oggetto.  
   
  `ppvObject`  
- [out] Indirizzo della variabile puntatore che riceve il puntatore di interfaccia richiesto `riid`. Dopo la restituzione ha esito positivo, *`ppvObject` contiene il puntatore di interfaccia richiesto. In caso di errore, \* `ppvObject` contiene `NULL`.  
+ [out] Indirizzo della variabile puntatore che riceve il puntatore a interfaccia richiesto `riid`. Dopo la restituzione ha esito positivo, *`ppvObject` contiene il puntatore all'interfaccia richiesta. Nel caso di errore \* `ppvObject` contiene `NULL`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
