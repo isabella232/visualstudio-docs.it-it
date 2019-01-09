@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::RemoveApplication | Documenti Microsoft
+title: IMachineDebugManagerCookie::RemoveApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe0849b2f580eac7759db36335823a737a198e55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9ecd3c8f5b5ebed8419e6e916334552a44646fe9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728721"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087256"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
 Rimuove l'esecuzione di un'applicazione elenco di applicazioni.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwDebugAppCookie,  
    DWORD  dwAppCookie  
@@ -42,17 +42,17 @@ HRESULT RemoveApplication(
  [in] Cookie che identifica l'applicazione di debug.  
   
  `dwAppCookie`  
- [in] Il cookie specificato quando l'applicazione è stato aggiunto all'elenco di applicazioni.  
+ [in] Il cookie specificato quando l'applicazione è stata aggiunta all'elenco di applicazioni.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dal gestore di debug del processo ogni volta che `IProcessDebugManager::RemoveApplication` viene chiamato.  
+ Questo metodo viene chiamato dal gestore di debug processo ogni volta che `IProcessDebugManager::RemoveApplication` viene chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   

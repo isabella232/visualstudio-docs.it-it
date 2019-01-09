@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsDebuggerThread | Documenti Microsoft
+title: IDebugApplicationThread::QueryIsDebuggerThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c3ad00fafa602b7a2f55b0412ae16c82cc2f5bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7ec9e5546a2a957e4842c91e9870ee8d761b2a69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725841"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097344"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
 Determina se il thread è il thread del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT QueryIsDebuggerThread();  
 ```  
   
@@ -40,10 +40,10 @@ HRESULT QueryIsDebuggerThread();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
-|`S_OK`|Il metodo è riuscito ed è il thread del debugger.|  
-|`S_FALSE`|Non è il thread del debugger.|  
+|`S_OK`|Il metodo ha avuto esito positivo e questo è il thread del debugger.|  
+|`S_FALSE`|Non si tratta di thread del debugger.|  
   
 ## <a name="remarks"></a>Note  
  Questo metodo determina se il thread è il thread del debugger.  

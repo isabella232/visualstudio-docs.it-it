@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::GetLanguageInfo | Documenti Microsoft
+title: IDebugExpressionContext::GetLanguageInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68c22d5dfcd16fb3d8f1dc3750bbfb23c4821176
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e47d25c6545aa906400073685e90774482444182
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726681"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093743"
 ---
 # <a name="idebugexpressioncontextgetlanguageinfo"></a>IDebugExpressionContext::GetLanguageInfo
-Restituisce un nome e GUID per la lingua a cui appartiene questo contesto.  
+Restituisce un nome e GUID per la lingua che possiede questo contesto.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetLanguageInfo(  
    BSTR*  pbstrLanguageName,  
    GUID*  pLanguageID  
@@ -39,7 +39,7 @@ HRESULT GetLanguageInfo(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrLanguageName`  
- [out] Il nome della lingua.  
+ [out] Il nome del linguaggio.  
   
  `pLanguageID`  
  [out] Id univoco per la lingua.  
@@ -47,12 +47,12 @@ HRESULT GetLanguageInfo(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce un nome e GUID per la lingua a cui appartiene questo contesto.  
+ Questo metodo restituisce un nome e GUID per la lingua che possiede questo contesto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugExpressionContext](../../winscript/reference/idebugexpressioncontext-interface.md)

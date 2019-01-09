@@ -1,5 +1,5 @@
 ---
-title: Enumerazione ERRORRESUMEACTION | Documenti Microsoft
+title: Enumerazione ERRORRESUMEACTION | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914c1d7aa4d2935ea94322ebd257f4135d79e9c0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640611"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090935"
 ---
 # <a name="errorresumeaction-enumeration"></a>Enumerazione ERRORRESUMEACTION
 Descrive come proseguire a seguito di un errore di runtime.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 typedef enum tagERRORRESUMEACTION {  
    ERRORRESUMEACTION_ReexecuteErrorStatement,  
    ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller,  
@@ -43,8 +43,8 @@ typedef enum tagERRORRESUMEACTION {
 |Membro|Descrizione|  
 |------------|-----------------|  
 |ERRORRESUMEACTION_ReexecuteErrorStatement|Esegue nuovamente l'istruzione che ha generato l'errore.|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Consente di gestire l'errore il motore del linguaggio.|  
-|ERRORRESUMEACTION_SkipErrorStatement|Riprende l'esecuzione del codice che segue l'istruzione che ha generato l'errore.|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Consente il motore del linguaggio di gestire l'errore.|  
+|ERRORRESUMEACTION_SkipErrorStatement|Riprende l'esecuzione di codice che segue l'istruzione che ha generato l'errore.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetStateString | Documenti Microsoft
+title: IDebugApplicationThread::SetStateString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eafe5477759dbad109e5ae6294b477d56f9ee14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4190bef0ca5cbedf709e65fafd1f49911ebb6510
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726201"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090194"
 ---
 # <a name="idebugapplicationthreadsetstatestring"></a>IDebugApplicationThread::SetStateString
 Imposta la descrizione dello stato del thread.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT SetStateString(  
    LPCOLESTR  pstrState  
 );  
@@ -38,12 +38,12 @@ HRESULT SetStateString(
   
 #### <a name="parameters"></a>Parametri  
  `pstrState`  
- [in] Descrizione dello stato del thread.  
+ [in] La descrizione dello stato del thread.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

@@ -2,7 +2,6 @@
 title: Comando Elenca disassembly
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64951810020d99239a47b9c6bdba751b2c0a3dfd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6b175c6b7e0fcd145d58318d89707cfd907acb2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913373"
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
 Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.
@@ -73,4 +72,4 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

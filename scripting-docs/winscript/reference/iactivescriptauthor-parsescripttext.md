@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Documenti Microsoft
+title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e81d96ae817b2117f12cb56fd59759f4c2b849
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c5f9e4969795cedd7da80864c1ad69c0d68f8b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645511"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091806"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Analizza il testo dello script, aggiunge il testo dello script di creazione del motore e crea un `IScriptEntry` oggetto che corrisponde al blocco di script.  
+Analizza il testo dello script, aggiunge il testo dello script del motore di creazione e crea un `IScriptEntry` oggetto che corrisponde al blocco di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
    LPCOLESTR pszCode,  
    LPCOLESTR pszItemName,  
@@ -45,21 +45,21 @@ HRESULT ParseScriptText(
  [in] Il testo dello script da analizzare.  
   
  `pszItemName`  
- [in] L'indirizzo del buffer che contiene il nome dell'elemento associato al blocco di script.  
+ [in] L'indirizzo di buffer che contiene il nome dell'elemento associato al blocco di script.  
   
  `pszDelimiter`  
- [in] L'indirizzo del delimitatore di fine-di--blocco di script. Quando `pszCode` viene analizzata da un flusso di testo, l'host Usa in genere un delimitatore (ad esempio due virgolette singole), per individuare la fine del blocco di script. Impostare questo parametro su NULL se non è disponibile alcun delimitatore per identificare la fine del blocco di script.  
+ [in] L'indirizzo del delimitatore end-di--blocco di script. Quando si `pszCode` viene analizzata da un flusso di testo, l'host utilizza in genere un delimitatore (ad esempio due virgolette singole), per rilevare la fine del blocco di script. Impostare questo parametro su NULL se non è disponibile alcun delimitatore per identificare la fine del blocco di script.  
   
  `dwCookie`  
- [in] Un valore definito dall'applicazione che viene associato alla nuova `IScriptEntry` oggetto.  
+ [in] Un valore definito dall'applicazione che viene associato al nuovo `IScriptEntry` oggetto.  
   
  `dwFlags`  
- [in] Non usato.  
+ [in] Non utilizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

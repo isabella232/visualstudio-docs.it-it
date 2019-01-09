@@ -2,7 +2,6 @@
 title: Eseguire il debug di una violazione di accesso C++ | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/23/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f463f4e14e5be90422f73b299cb927a54fcfcef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe15813489fbdc0f3a9506468f56773fb3f35deb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850375"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il Debug di una violazione di accesso C++?
 ## <a name="problem-description"></a>Descrizione del problema  

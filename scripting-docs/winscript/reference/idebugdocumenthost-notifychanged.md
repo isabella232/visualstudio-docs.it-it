@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::NotifyChanged | Documenti Microsoft
+title: 'Idebugdocumenthost:: Notifychanged | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1890aeb64346994480a7e4ef452543107bd1544e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 26cf42e8d8a534ae89ecc16957188de32d36ba0b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726261"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089882"
 ---
 # <a name="idebugdocumenthostnotifychanged"></a>IDebugDocumentHost::NotifyChanged
-Notifica all'host che è stato salvato il file di origine del documento e che è necessario aggiornare il relativo contenuto.  
+Notifica all'host che è stato salvato il file di origine del documento e che il relativo contenuto deve essere aggiornato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT NotifyChanged();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT NotifyChanged();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo notifica all'host che è stato salvato il file di origine del documento e che è necessario aggiornare il relativo contenuto.  
+ Questo metodo notifica all'host che è stato salvato il file di origine del documento e che il relativo contenuto deve essere aggiornato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

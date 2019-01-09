@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StartDebugSession | Documenti Microsoft
+title: IDebugApplication::StartDebugSession | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea5caead4921206428c2f1f36b74d057c8cef36
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725441"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086489"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Avvia l'ambiente di sviluppo integrato (IDE) debugger predefinito e collega una sessione di debug per questa applicazione, se non è ancora stato connesso.  
+Avvia ambiente di sviluppo integrato (IDE) debugger predefinito e associa una sessione di debug per questa applicazione, se non già collegato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT StartDebugSession();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT StartDebugSession();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene utilizzato per implementare il debug just-in-time.  
+ Questo metodo viene usato per implementare il debug just-in-time.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

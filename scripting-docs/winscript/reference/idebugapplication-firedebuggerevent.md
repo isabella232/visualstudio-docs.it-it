@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FireDebuggerEvent | Documenti Microsoft
+title: IDebugApplication::FireDebuggerEvent | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f78522d885a65ddc8bfb056654aaf559c90d36e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725451"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092183"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Viene generato un evento generico per il debugger `IApplicationDebugger` interfaccia.  
+Viene generato un evento generico del debugger `IApplicationDebugger` interfaccia.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT FireDebuggerEvent(  
    REFGUID    riid,  
    IUnknown*  punk  
@@ -53,9 +53,9 @@ HRESULT FireDebuggerEvent(
 |`E_NOTIMPL`|Il metodo non è attualmente implementato.|  
   
 ## <a name="remarks"></a>Note  
- La semantica del GUID e `IUnknown` sono completamente definita dall'applicazione/debugger.  
+ La semantica del GUID e il `IUnknown` sono completamente definite dell'applicazione/debugger.  
   
- In questo modo per le estensioni personalizzate del modello del debugger. non è attualmente implementata.  
+ Questo metodo consente di estensioni personalizzate del modello del debugger. non è attualmente implementato.  
   
  Questo metodo determina `IApplicationDebugger::onDebuggerEvent` da chiamare.  
   

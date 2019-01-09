@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Documenti Microsoft
+title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725311"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096252"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Visualizza la finestra contenente il documento di debug specificata verso l'alto nel debugger interfaccia utente.  
+Visualizza la finestra che contiene il documento di debug specificato all'inizio nel debugger di interfaccia utente.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -43,13 +43,13 @@ HRESULT BringDocumentToTop(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_INVALIDARG`|Il documento non è noto.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo visualizza la finestra che contiene il documento di debug specificata verso l'alto nel debugger di interfaccia utente.  
+ Questo metodo offre la finestra che contiene il documento di debug specificato all'inizio nel debugger di interfaccia utente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)

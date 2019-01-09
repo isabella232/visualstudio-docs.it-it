@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Skip | Documenti Microsoft
+title: IEnumDebugExpressionContexts::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a0fc242b7bbcd29a5b46d66be5ce4d16a1b2ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7ffc4a6246961c581fa56ca16d0635a116436210
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727961"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096876"
 ---
 # <a name="ienumdebugexpressioncontextsskip"></a>IEnumDebugExpressionContexts::Skip
-Ignora un numero di segmenti in una sequenza di enumerazione specificato.  
+Ignora un determinato numero di segmenti in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -48,7 +48,7 @@ HRESULT Skip(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo ignora un numero di segmenti in una sequenza di enumerazione specificato.  
+ Questo metodo ignora un determinato numero di segmenti in una sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumDebugExpressionContexts](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)

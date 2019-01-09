@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebuggerEvent | Documenti Microsoft
+title: IApplicationDebugger::onDebuggerEvent | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7dec2cea6cfcf11cc756ef730f98feee9ed9bb0e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725291"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092677"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
-Gestisce l'evento applicazione personalizzata.  
+Gestisce l'evento dell'applicazione personalizzata.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onDebuggerEvent(  
    REFIID     riid,  
    IUnknown*  punk  
@@ -39,7 +39,7 @@ HRESULT onDebuggerEvent(
   
 #### <a name="parameters"></a>Parametri  
  `riid`  
- [in] L'identificatore di interfaccia per l'oggetto.  
+ [in] Identificatore di interfaccia per l'oggetto.  
   
  `punk`  
  [in] L'oggetto evento, che implementa l'interfaccia definita da `riid`.  
@@ -53,9 +53,9 @@ HRESULT onDebuggerEvent(
 |`E_NOTIMPL`|Il metodo non è attualmente implementato.|  
   
 ## <a name="remarks"></a>Note  
- La semantica del `IUnknown` è completamente definita dall'applicazione/debugger.  
+ La semantica di `IUnknown` è completamente definito dall'applicazione/debugger.  
   
- In questo modo per le estensioni personalizzate del modello del debugger. non è attualmente implementata.  
+ Questo metodo consente di estensioni personalizzate del modello del debugger. non è attualmente implementato.  
   
  Questo metodo viene chiamato quando `IDebugApplication::FireDebuggerEvent` viene chiamato.  
   

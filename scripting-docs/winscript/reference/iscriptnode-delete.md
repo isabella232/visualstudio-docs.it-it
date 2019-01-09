@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Delete | Documenti Microsoft
+title: IScriptNode::Delete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d1404d90cc1edd882505e463938a2c1a5e8aea8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cce802cc1a6d63001cfbed020592b30a9d8dab1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733661"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094796"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
-Elimina questo albero di oggetti.  
+Elimina questo albero degli oggetti.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Delete();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT Delete();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Dopo il `Delete` metodo viene chiamato, il [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) metodo dovrebbe indicare tale nodo di script non è attivo.  
+ Dopo il `Delete` metodo viene chiamato, il [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) metodo deve indicare tale nodo di script non è attivo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)

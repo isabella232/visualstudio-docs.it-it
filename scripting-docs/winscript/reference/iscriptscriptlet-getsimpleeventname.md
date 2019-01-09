@@ -1,5 +1,5 @@
 ---
-title: 'IScriptScriptlet:: GetSimpleEventName | Documenti Microsoft'
+title: 'IScriptScriptlet:: GetSimpleEventName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec90d2ebdf58f60ba88b90a38830b5df329dead
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01d20df26f2f3f1d2e7735fed5292b29da528ace
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733691"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093268"
 ---
 # <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet:: GetSimpleEventName
-Restituisce il nome di evento semplice che è associato a scriptlet. Questo è un nome di singola parola che non contiene spazi vuoti.  
+Restituisce il nome di evento semplice che è associato un scriptlet. Questo è un nome di singola parola che non contiene gli spazi vuoti.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetSimpleEventName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetSimpleEventName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstr`  
- [out] Un buffer che contiene il nome di evento semplice che è associato il `IScriptScriptlet` oggetto.  
+ [out] Un buffer che contiene il nome dell'evento semplice che è associato il `IScriptScriptlet` oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

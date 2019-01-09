@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType | Documenti Microsoft
+title: IVariantChangeType::ChangeType | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d742d1bd57c85aa75c9ccd60479d08c1a559fb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a02b8a3991ff6d20370cd4a2ea4cd87aa9a1226
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734201"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086580"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Accetta un valore variant e crea una nuova variante con un tipo specificato.  
+Accetta un valore variant e crea una nuova variante con il tipo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ChangeType(  
    VARIANT*  pvarDst,  
    VARIANT*  pvarSrc,  
@@ -41,13 +41,13 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Parametri  
  `pvarDst`  
- [in, out] Una variante di contenere il valore rappresentato da `pvarSrc`, ma con il tipo specificato dal `vtNew`.  
+ [in, out] Una variante che contenga il valore rappresentato da `pvarSrc`, ma con il tipo specificato dal `vtNew`.  
   
  `pvarSrc`  
- [in] Un valore variant da modificare in un nuovo tipo.  
+ [in] Un valore variant per modificare in un nuovo tipo.  
   
  `lcid`  
- [in] Contesto delle impostazioni locali da utilizzare durante la conversione gli argomenti a o da stringhe.  
+ [in] Il contesto delle impostazioni locali da usare durante la conversione di argomenti a o da stringhe.  
   
  `vtNew`  
  [in] Specifica il tipo per `pvarDst` diventi.  
@@ -60,7 +60,7 @@ HRESULT ChangeType(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il `pvarDst` e `pvarSrc` argomenti possono essere uguali, nel qual caso il valore originale viene sovrascritto. Questo metodo passa `pvarDst` per il `VariantClear` funzione e di conseguenza `pvarDst` deve essere inizializzato su un valore valido.  
+ Il `pvarDst` e `pvarSrc` argomenti che può essere uguali, nel qual caso il valore originale viene sovrascritto. Questo metodo passa `pvarDst` per il `VariantClear` funzione e, di conseguenza `pvarDst` deve essere inizializzato su un valore valido.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Documenti Microsoft
+title: IActiveScriptAuthor::GetChars | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645651"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094328"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 Restituisce il set di caratteri di completamento per un contesto di richiesta di completamento.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -41,7 +41,7 @@ HRESULT GetChars(
  `fRequestedList`  
  [in] Il contesto di richiesta di completamento.  
   
-|Costante|Valore|Descrizione|  
+|Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Richiede l'enumerazione di sinistra.|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Richiede il contesto di completamento del membro.|  
@@ -51,7 +51,7 @@ HRESULT GetChars(
  `pbstrChars`  
  [out] I caratteri che corrispondono al contesto di richiesta di completamento.  
   
-|`fRequestedList`parametro|Caratteri restituiti|  
+|`fRequestedList` Parametro|Caratteri restituiti|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  

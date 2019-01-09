@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Skip | Documenti Microsoft
+title: IEnumRemoteDebugApplications::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20fb057cf70e49a1f7324901f5ab77369e77251
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 492c02df40c767ea54e78f6951c1d02c4a69bb32
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727401"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088530"
 ---
 # <a name="ienumremotedebugapplicationsskip"></a>IEnumRemoteDebugApplications::Skip
-Ignora un numero di segmenti in una sequenza di enumerazione specificato.  
+Ignora un determinato numero di segmenti in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -43,12 +43,12 @@ HRESULT Skip(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo ignora un numero di segmenti in una sequenza di enumerazione specificato.  
+ Questo metodo ignora un determinato numero di segmenti in una sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

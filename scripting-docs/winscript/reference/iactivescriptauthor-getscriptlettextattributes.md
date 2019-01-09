@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptletTextAttributes | Documenti Microsoft
+title: IActiveScriptAuthor::GetScriptletTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0973b2943ed76a7baa231a287476b237cd45e257
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645691"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095459"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
 Restituisce gli attributi di testo di scriptlet.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR pszCode,  
    ULONG cch,  
@@ -42,30 +42,30 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parametri  
  `pszCode`  
- [in, size_is (`cch`)] il testo di scriptlet. È la stringa a terminazione null.  
+ [in, size_is (`cch`)] il testo dello scriptlet. Questa stringa non deve essere con terminazione null.  
   
  `cch`  
  [in] La dimensione utilizzata per la `pszCode` e `pattr` parametri.  
   
  `pszDelimiter`  
- [in] L'indirizzo del delimitatore di fine-scriptlet. Quando `pszCode` viene analizzata da un flusso di testo, l'host Usa in genere un delimitatore (ad esempio due virgolette singole), per individuare la fine dello scriptlet. Se non viene utilizzato alcun delimitatore per identificare la fine dello scriptlet, impostare questo parametro su NULL.  
+ [in] L'indirizzo del delimitatore end-of-scriptlet. Quando si `pszCode` viene analizzata da un flusso di testo, l'host utilizza in genere un delimitatore (ad esempio due virgolette singole), per rilevare la fine dello scriptlet. Impostare questo parametro su NULL se non viene usato alcun delimitatore per identificare la fine dello scriptlet.  
   
  `dwFlags`  
- [in] I flag che sono associati gli attributi di testo dello scriptlet. Può essere una combinazione dei valori seguenti.  
+ [in] I flag sono associati gli attributi di testo dello scriptlet. Può essere una combinazione dei valori seguenti.  
   
-|Costante|Valore|Descrizione|  
+|Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Identificare gli identificatori che includono l'attributo SOURCETEXT_ATTR_IDENTIFIER e identificare gli operatori punto che dispongono dell'attributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Identificare gli identificatori che includono l'attributo SOURCETEXT_ATTR_IDENTIFIER e identificare gli operatori di punti che dispongono dell'attributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Identificare l'oggetto corrente con l'attributo SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Identificare il testo contenuto e commento stringa che contiene l'attributo SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Identificare testo contenuto e il commento della stringa che contiene l'attributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out, size_is (`cch`)] le informazioni di colore per il codice di scriptlet.  
+ [in, out, size_is (`cch`)] le informazioni sul colore per il codice di scriptlet.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

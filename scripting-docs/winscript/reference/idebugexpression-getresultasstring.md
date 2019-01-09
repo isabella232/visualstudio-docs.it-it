@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsString | Documenti Microsoft
+title: IDebugExpression::GetResultAsString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728251"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097357"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Restituisce il risultato della valutazione dell'espressione come una stringa e valore restituito dell'operazione.  
+Restituisce il risultato della valutazione dell'espressione come stringa e il valore restituito dell'operazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -47,13 +47,13 @@ HRESULT GetResultAsString(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_PENDING`|L'operazione è ancora in sospeso.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il risultato della valutazione dell'espressione come una stringa e l'operazione `HRESULT`.  
+ Questo metodo restituisce il risultato della valutazione dell'espressione come stringa e l'operazione `HRESULT`.  
   
  Questo metodo restituisce `S_OK` e `phrResult` restituisce `E_ABORT` se `Abort` interrompe l'operazione.  
   

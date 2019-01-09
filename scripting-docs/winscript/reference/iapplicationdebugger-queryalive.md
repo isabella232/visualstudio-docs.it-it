@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::QueryAlive | Documenti Microsoft
+title: IApplicationDebugger::QueryAlive | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48571476407c29b9af949bd6f626d14ea822f2e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 00055eaaf79e24a9f59c380318b9c24fa476f1af
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725321"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096070"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
 Indica se il debugger è reattivo.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
@@ -40,7 +40,7 @@ HRESULT QueryAlive();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

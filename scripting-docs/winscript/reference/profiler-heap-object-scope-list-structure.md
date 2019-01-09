@@ -1,5 +1,5 @@
 ---
-title: Struttura PROFILER_HEAP_OBJECT_SCOPE_LIST | Documenti Microsoft
+title: Struttura PROFILER_HEAP_OBJECT_SCOPE_LIST | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734261"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088569"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Struttura PROFILER_HEAP_OBJECT_SCOPE_LIST
-Questa struttura è associata solo gli oggetti funzione. L'elenco di ambito rappresenta la chiusura per la funzione come un elenco di ambiti in cui ogni ambito è un oggetto dell'heap con un elenco di proprietà associata che rappresenta le variabili in ogni ambito specifico. In alcuni casi, i nomi di oggetti nell'ambito potrebbe non essere disponibile e solo il relativo indice nell'elenco di proprietà è disponibile.  
+Questa struttura è associata solo gli oggetti funzione. L'elenco di ambito rappresenta la chiusura per la funzione come un elenco di ambiti in cui ogni ambito è un oggetto heap con un elenco di proprietà associata che rappresenta le variabili in ogni ambito specifico. In alcuni casi, i nomi degli oggetti nell'ambito potrebbe non essere disponibile e solo il relativo indice nell'elenco di proprietà è disponibile.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   
 ## <a name="members"></a>Membri  
   
-|Membro|Tipo|Descrizione|  
+|Member|Tipo|Descrizione|  
 |------------|----------|-----------------|  
 |count|UINT|Il numero di ambiti|  
 |scopes|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Matrice di ambiti.|

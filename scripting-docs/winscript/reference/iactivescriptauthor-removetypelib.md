@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91d44d2f910a1523d0c45871e01d0258dcdd4138
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 36aac4ef2631dbc82dc64e61021ef6bb3f2ac153
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24645531"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096187"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
-Rimuove lo script di creazione dello spazio dei nomi di modulo di gestione di una libreria dei tipi.  
+Rimuove lo script dello spazio dei nomi del motore di creazione di una libreria dei tipi.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT RemoveTypeLib(  
    REFGUID   rguidTypeLib,  
    DWORD     dwMajor,  
@@ -46,12 +46,12 @@ HRESULT RemoveTypeLib(
  [in] Il numero di versione principale.  
   
  `dwMinor`  
- [in] Numero di versione secondario.  
+ [in] Il numero di versione secondario.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

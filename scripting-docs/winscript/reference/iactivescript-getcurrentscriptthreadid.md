@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID | Documenti Microsoft
+title: IActiveScript::GetCurrentScriptThreadID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5921dc4d0f9a9bf0d505fece0f47354cb16d440c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bac3b5755328e643c26c8f3746af6648d8ac06aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640791"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094633"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-Recupera un identificatore script-modulo di gestione-definito per il thread attualmente in esecuzione. L'identificatore può essere utilizzato nelle successive chiamate ai metodi di controllo dell'esecuzione di script thread, ad esempio il [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) metodo.  
+Recupera un identificatore scripting-engine-definite per il thread attualmente in esecuzione. L'identificatore può essere utilizzato nelle chiamate successive ai metodi di controllo di esecuzione thread dello script, ad esempio la [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) (metodo).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetCurrentScriptThreadID(  
     SCRIPTTHREADID *pstidThread  // receives scripting thread identifier  
 );  
@@ -38,13 +38,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>Parametri  
  `pstidThread`  
- [out] Indirizzo di una variabile che riceve l'identificatore del thread script associato al thread corrente. L'interpretazione di questo identificatore viene lasciato al motore di script, ma può essere solo una copia dell'identificatore di thread di Windows. Se il thread Win32 termina, questo identificatore diventa non assegnato e successivamente può essere assegnato a un altro thread.  
+ [out] Indirizzo di una variabile che riceve l'identificatore del thread script associato al thread corrente. L'interpretazione di questo identificatore viene lasciata al motore di script, ma può essere solo una copia dell'identificatore di thread di Windows. Se il thread Win32 termina, questo identificatore diventa non assegnato e successivamente può essere assegnato a un altro thread.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK` se ha esito positivo, o `E_POINTER` se è stato specificato un puntatore non valido.  
+ Restituisce `S_OK` caso di esito positivo o `E_POINTER` se è stato specificato un puntatore non valido.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo può essere chiamato dal thread non di base senza callout non in base a oggetti host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  
+ Questo metodo può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

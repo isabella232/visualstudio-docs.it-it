@@ -1,5 +1,5 @@
 ---
-title: Enumerazione JsDebugReadMemoryFlags | Documenti Microsoft
+title: Enumerazione JsDebugReadMemoryFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7efb5170bf0314e95b1acded39a897c2236a29ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733711"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094029"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Enumerazione JsDebugReadMemoryFlags
 Flag per specificare il comportamento durante la lettura della memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
@@ -38,11 +38,11 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 |Nome|Descrizione|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Indica che il chiamante richiede l'operazione di lettura avranno esito positivo se solo parte della memoria di lettura è stato completato. Se questo valore è impostato, verrà generato un errore di E_JsDEBUG_INVALID_MEMORY_ADDRESS solo se 'Address' non è valido. Se questo flag è deselezionato, verrà generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS se qualsiasi parte della memoria richiesta è illeggibile.|  
-|`None`|Indica che il chiamante richiede il comportamento predefinito per ReadMemory.|  
+|`JsDebugAllowPartialRead`|Indica che il chiamante desidera che l'operazione di lettura abbia esito positivo se solo parte della memoria di lettura ha esito positivo. Se è impostato, verrà generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS solo se "Indirizzo" non è valido. Se questo flag è cancellato, verrà generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS se qualsiasi parte della memoria richiesta è illeggibile.|  
+|`None`|Indica che il chiamante desidera il comportamento predefinito per ReadMemory.|  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

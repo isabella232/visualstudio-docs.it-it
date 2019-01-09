@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802524"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096447"
 ---
 # <a name="return-statement-outside-of-function"></a>Istruzione 'return' esterna alla funzione
 È stato usato un `return` istruzione nell'ambito globale del codice. Il `return` istruzione deve essere visualizzato solo all'interno del corpo di una funzione.  
   
  Richiamo di una funzione con il `()` operatore è un'espressione. Tutte le espressioni hanno valori. il `return` istruzione viene utilizzata per specificare il valore restituito da una funzione. Il formato generale è:  
   
-```  
+```js
   
 return [ expression ];  
 ```  

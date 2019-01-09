@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: firmare i file con SignTool.exe (ClickOnce) di installazione | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Firmare con SignTool.exe (ClickOnce) i file di installazione | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 845c1511ebb4555fee12c92b5534b11fb23cbb45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845324"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: firmare installazione i file con SignTool.exe (ClickOnce)
-È possibile usare *SignTool.exe* per firmare un programma di installazione (*setup.exe*). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.  
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: Firmare i file di installazione con SignTool.exe (ClickOnce)
+È possibile usare SignTool.exe per firmare un programma di installazione (setup.exe). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.  
   
  Per impostazione predefinita, ClickOnce include manifesti firmati e un programma di installazione firmato. Se tuttavia si vogliono modificare i parametri del programma di installazione in un secondo momento, sarà necessario firmare il programma in un secondo momento. Se si cambiano i parametri dopo la firma del programma di installazione, la firma sarà danneggiata.  
   
@@ -40,31 +38,31 @@ ms.locfileid: "39081501"
   
 2.  Selezionare il progetto in **Esplora soluzioni**.  
   
-3.  Nel **Project** menu, fare clic su *NomeProgetto* **proprietà**.  
+3.  Scegliere  Proprietà **Nome progetto** dal menu Progetto *.  
   
-4.  Nel **Signing** pagina, deseleziona **firma i manifesti ClickOnce**.  
+4.  Nella pagina Firma **deselezionare l'opzione Firma i manifesti ClickOnce**.  
   
-5.  Nel **Publish** pagina, fare clic su **prerequisiti**.  
+5.  Nella pagina Pubblica **, fare clic su Prerequisiti**.  
   
-6.  Verificare che tutti i prerequisiti siano selezionati e quindi fare clic su **OK**.  
+6.  Verificare che siano selezionati tutti i prerequisiti, quindi fare clic su OK **.  
   
-7.  Nel **Publish** pagina, verificare le impostazioni di pubblicazione e quindi fare clic su **pubblica**.  
+7.  Nella pagina Pubblica **verificare le impostazioni di pubblicazione e quindi fare clic su Pubblica**.  
   
      La soluzione pubblica il manifesto dell'applicazione non firmato, il manifesto della distribuzione non firmato, i file specifici della versione e il programma di installazione non firmato nel percorso della cartella di pubblicazione.  
   
-8.  Nel **Publish** pagina, fare clic su **prerequisiti**.  
+8.  Nella pagina Pubblica **, fare clic su Prerequisiti**.  
   
-9. Nel **prerequisiti** della finestra di dialogo deseleziona **Crea programma di installazione per installare i componenti prerequisiti**.  
+9. Nella finestra di dialogo Prerequisiti **deselezionare l'opzione Crea programma di installazione per installare componenti dei prerequisiti**.  
   
-10. Nel **Publish** pagina, verificare le impostazioni di pubblicazione e quindi fare clic su **pubblica**.  
+10. Nella pagina Pubblica **verificare le impostazioni di pubblicazione e quindi fare clic su Pubblica**.  
   
      La soluzione pubblica il manifesto dell'applicazione firmato, il manifesto della distribuzione firmato e i file specifici della versione nel percorso della cartella di pubblicazione. Il programma di installazione non firmato non sarà sovrascritto dal processo di pubblicazione.  
   
 11. Aprire un prompt dei comandi nel sito del cliente.  
   
-12. Passare alla directory che contiene il *.exe* file.  
+12. Passare alla directory che contiene il file con estensione exe.  
   
-13. Accesso di *.exe* file con il comando seguente:  
+13. Firmare il file con estensione exe con il comando seguente:  
   
     ```cmd  
     signtool sign /sha1 CertificateHash Setup.exe  
@@ -79,4 +77,4 @@ ms.locfileid: "39081501"
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: firmare manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

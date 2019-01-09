@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition | Documenti Microsoft
+title: IActiveScriptDebug::EnumCodeContextsOfPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40fd8e2d19d3949ff26811956ae3d203871e5510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: abca643dc4e18f786421959c20804a28cf54ec7b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645591"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097175"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-Utilizzata da un host intelligente per delegare il `IDebugDocumentContext::EnumCodeContexts` metodo.  
+Utilizzato da uno smart host per delegare la `IDebugDocumentContext::EnumCodeContexts` (metodo).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT EnumCodeContextsOfPosition(  
    DWORD_PTR                 dwSourceContext,  
    ULONG                     uCharacterOffset,  
@@ -41,26 +41,26 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>Parametri  
  `dwSourceContext`  
- [in] Il contesto di origine come fornita a `IActiveScriptParse::ParseScriptText` o `IActiveScriptParse::AddScriptlet`.  
+ [in] Il contesto di origine alla stregua `IActiveScriptParse::ParseScriptText` o `IActiveScriptParse::AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Carattere spostato rispetto all'inizio del testo dello script.  
+ [in] Offset rispetto all'inizio del testo dello script di carattere.  
   
  `uNumChars`  
  [in] Numero di caratteri in questo contesto.  
   
  `ppescc`  
- [out] Un enumeratore dei contesti di codice nell'intervallo specificato.  
+ [out] Enumeratore dei contesti di codice nell'intervallo specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- SmartHost utilizzare questo metodo per delegare il `IDebugDocumentContext::EnumCodeContexts` metodo.  
+ Smart host utilizzare questo metodo per delegare la `IDebugDocumentContext::EnumCodeContexts` (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)   

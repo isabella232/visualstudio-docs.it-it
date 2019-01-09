@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerHeapEnum::GetNameIdMap | Documenti Microsoft
+title: IActiveScriptProfilerHeapEnum::GetNameIdMap | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0761517236fbcc05655365d77ce2990e9d1c566
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cdff1983524b9234d536a23378d300a0b815522d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724441"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092638"
 ---
 # <a name="iactivescriptprofilerheapenumgetnameidmap"></a>IActiveScriptProfilerHeapEnum::GetNameIdMap
-Restituisce i nomi di stringa corrispondente a [tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md) valori.  
+Restituisce i nomi di stringa corrispondente [tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md) valori.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetNameIdMap (    [out, size_is(,*pcelt)] LPCWSTR* pNameList[],     [out] UINT *pcelt);  
 ```  
   
@@ -33,7 +33,7 @@ HRESULT GetNameIdMap (    [out, size_is(,*pcelt)] LPCWSTR* pNameList[],     [out
  [out] Matrice di nomi associati [tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md) valori.  
   
  `pcelt`  
- [out] Il numero di nomi nella matrice.  
+ [out] Il numero dei nomi nella matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Valore HRESULT.
+ Il valore HRESULT.

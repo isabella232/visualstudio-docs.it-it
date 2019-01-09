@@ -1,8 +1,6 @@
 ---
-title: Elaborare una scheda, finestra di dialogo Proprietà finestra | Documenti Microsoft
-ms.custom: ''
+title: Elaborare scheda, finestra di dialogo Proprietà finestra | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Process Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d504171b50a717ebb4863e2ab9995e384101d9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 557f471a841aa549ecb67fbe99a40b69465fb4b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968021"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Scheda Processo, finestra di dialogo Proprietà finestra
-Utilizzare il **processo** scheda per identificare il processo della finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero, quindi scegliere **proprietà** dal **vista** menu.  
+Usare la **processo** pressione di tab per identificare il processo della finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
  Le impostazioni seguenti sono disponibili sul **processo** scheda:  
   
-|Voce|Descrizione|  
+|Voce|Description|  
 |-----------|-----------------|  
-|**ID processo**|L'ID del processo di cui il thread che ha creato questa finestra. Scegliere questo valore per visualizzare le proprietà di questo processo.|  
-|**ID thread**|L'ID del thread che ha creato questa finestra. Scegliere questo valore per visualizzare le proprietà di questo thread.|
+|**ID processo**|L'ID del processo che possiede il thread che ha creato questa finestra. Selezionare questo valore per visualizzare le proprietà di questo processo.|  
+|**ID thread**|L'ID del thread che ha creato questa finestra. Selezionare questo valore per visualizzare le proprietà di questo thread.|

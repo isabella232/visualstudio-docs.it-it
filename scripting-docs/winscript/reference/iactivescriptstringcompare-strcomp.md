@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Documenti Microsoft
+title: IActiveScriptStringCompare::StrComp | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725071"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090103"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-Definisce il metodo di confronto di stringhe per il motore di script.  
+Definisce il metodo di confronto di stringhe per il motore di scripting.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -58,13 +58,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_INVALIDARG`|Un argomento non è valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di script non è ancora caricato o inizializzato).|  
+|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
   
 ## <a name="remarks"></a>Note  
  Questo metodo viene chiamato ogni volta che viene eseguito un confronto tra stringhe.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come eseguire l'overload della funzione di confronto di string. L'overload è consentita quando si utilizza [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) impostare SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ Nell'esempio seguente viene illustrato come eseguire l'overload di funzione di confronto di stringa. L'overload è consentito quando si usa [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) impostare SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

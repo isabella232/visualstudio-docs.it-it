@@ -2,7 +2,6 @@
 title: Debug di App web - errori e risoluzione dei problemi
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827417"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: Errori e risoluzione dei problemi
 È possibile che si verifichino i seguenti errori durante il tentativo di eseguire il debug di applicazioni Web.  
@@ -58,4 +57,4 @@ ms.locfileid: "53053651"
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)
+ [Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

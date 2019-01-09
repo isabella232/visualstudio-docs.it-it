@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugframe:: Evaluate | Documenti Microsoft'
+title: 'Metodo ijsdebugframe:: Evaluate | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727451"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091923"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>Metodo IJsDebugFrame::Evaluate
-Valutare un'espressione nel contesto dello stack frame corrente.  
+Valutare un'espressione nel contesto di questo frame dello stack.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -49,10 +49,10 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Restituisce le operazioni seguenti: S_OK: esito positivo della valutazione, * ppDebugProperty contiene i risultati della valutazione. Valutazione di S_FALSE: Genera un errore o l'operazione di valutazione non è supportata, \*pError contiene il messaggio di errore.  
+ Restituisce quanto segue: S_OK: Esito positivo della valutazione, * ppDebugProperty contiene il risultato della valutazione. S_FALSE: La valutazione genera un errore o l'operazione di valutazione non è supportato, \*pError contiene il messaggio di errore.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

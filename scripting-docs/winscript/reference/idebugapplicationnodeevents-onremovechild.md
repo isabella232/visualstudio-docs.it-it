@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Documenti Microsoft
+title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725991"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092202"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
 Gestisce l'evento quando un nodo figlio viene rimosso da un oggetto nodo dell'applicazione di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,7 +38,7 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parametri  
  `prddpChild`  
- [in] Il nodo dell'applicazione figlio che è stato rimosso.  
+ [in] Il nodo figlio dell'applicazione che è stato rimosso.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -50,7 +50,7 @@ HRESULT onRemoveChild(
 ## <a name="remarks"></a>Note  
  Questo metodo gestisce l'evento quando un nodo figlio viene rimosso da un oggetto nodo dell'applicazione di debug.  
   
- I responsabili dell'implementazione di `IDebugApplicationNode` interfaccia generare questo evento.  
+ Gli implementatori del `IDebugApplicationNode` interfaccia generare questo evento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

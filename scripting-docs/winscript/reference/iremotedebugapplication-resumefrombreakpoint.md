@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Documenti Microsoft
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729861"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089076"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-Continua un'applicazione che si trova in un punto di interruzione.  
+Continua un'applicazione che è attualmente disponibile in un punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ResumeFromBreakPoint(  
    IRemoteDebugApplicationThread*  prptFocus,  
    BREAKRESUMEACTION               bra,  
@@ -40,23 +40,23 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parametri  
  `prptFocus`  
- [in] Per l'esecuzione di istruzioni modalità, il thread che deve essere interessati dalla modalità di esecuzione di istruzioni.  
+ [in] Per l'esecuzione di istruzioni modalità, il thread che deve essere interessata dalla modalità di debug passo a passo.  
   
  `bra`  
  [in] L'azione da eseguire dopo il ripristino dell'applicazione.  
   
  `era`  
- [in] L'azione da intraprendere nel caso in cui l'applicazione è stata interrotta a causa di un errore.  
+ [in] L'azione da intraprendere nel caso in cui l'applicazione è stata arrestata a causa di un errore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo continua a un'applicazione che si trova in un punto di interruzione.  
+ Questo metodo continua a un'applicazione che è attualmente disponibile in un punto di interruzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   

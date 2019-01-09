@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetRootApplicationNode | Documenti Microsoft
+title: 'Iactivescriptsitedebug:: Getrootapplicationnode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c837d5ee2e8b75bfe7603370d61385a67080cc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724721"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088517"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
 Ottiene il nodo dell'applicazione nella quale script devono essere aggiunti i documenti.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetRootApplicationNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -43,12 +43,12 @@ HRESULT GetRootApplicationNode(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il nodo dell'applicazione in cui devono essere aggiunti i documenti di script. Il metodo può restituire `NULL` per `ppdanRoot` se documenti di script devono essere di livello principali.  
+ Questo metodo restituisce il nodo dell'applicazione in cui devono essere aggiunti i documenti di script. Il metodo può restituire `NULL` per `ppdanRoot` se documenti di script devono essere di livello superiore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)

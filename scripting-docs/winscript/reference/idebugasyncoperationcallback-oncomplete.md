@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Documenti Microsoft
+title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc55918c25da695f9eab470bf39fc648910ddc97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4909f469b558ef4664a74c4a7926001d20adc40e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725921"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089401"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-Segnala che il risultato è disponibile un'operazione asincrona di debug.  
+Segnala che il risultato è disponibile da un'operazione di debug asincrono.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
@@ -40,7 +40,7 @@ HRESULT onComplete();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

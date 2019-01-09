@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugdatatarget:: FreeVirtualMemory | Documenti Microsoft'
+title: 'Metodo ijsdebugdatatarget:: FreeVirtualMemory | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed5fabfca8ac9b0e9fe0dfba346b0354f4c0576f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086801"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>Metodo IJsDebugDataTarget::FreeVirtualMemory
-Rilascia e/o libera un'area di memoria all'interno di spazio degli indirizzi virtuali del processo di destinazione.  
+Rilascia e/o libera un'area di memoria nello spazio degli indirizzi virtuali del processo di destinazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT FreeVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -38,21 +38,21 @@ HRESULT FreeVirtualMemory(
   
 #### <a name="parameters"></a>Parametri  
  `address`  
- [in] Indirizzo all'interno del processo di destinazione in cui deve essere liberata la memoria.  
+ [in] Indirizzi all'interno del processo di destinazione in cui deve essere liberata la memoria.  
   
  `size`  
  [in] Numero di byte da liberare. Per rilasciare un'area di memoria, questo valore deve essere zero.  
   
  `freeType`  
- [in] Indica il tipo di operazione libero da eseguire. Si tratta in genere MEM_RELEASE (0x8000), che quale rilascia l'area delle pagine specificato. Al termine dell'operazione, le pagine sono in stato libero. MEM_DECOMMIT (0x4000) è invece consente di liberare le pagine senza rilasciarlo.  
+ [in] Indica il tipo di operazione gratuita da eseguire. Si tratta in genere è MEM_RELEASE (0x8000), che rilascia l'area specificata di pagine. Al termine dell'operazione, le pagine sono in stato libero. MEM_DECOMMIT (0x4000) può essere usato invece per liberare le pagine senza rilasciarle.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Per ulteriori informazioni, vedere l'API Win32 VirtualFree.  
+ Per altre informazioni, vedere l'API Win32 VirtualFree.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Documenti Microsoft
+title: IDispError::GetHelpInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728011"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087490"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che descrive l'errore, se possibile.  
+Restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che spiega l'errore, se possibile.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -39,7 +39,7 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrFileName`  
- [out] Stringa contenente il percorso completo del file della Guida. Se è presente alcun file della Guida in linea o si verifica un errore, il valore restituito è NULL.  
+ [out] Stringa contenente il percorso completo del file della Guida. Se è presente alcun file della Guida in linea oppure si verifica un errore, il valore restituito è NULL.  
   
  `pdwContext`  
  [out] L'ID del contesto della Guida per l'errore. Se è presente alcun file della Guida (se `pbstrFileName` è NULL), questo parametro non ha alcun significato.  
@@ -51,11 +51,11 @@ HRESULT GetHelpInfo(
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Si è verificato un errore specifico del provider.|  
-|`E_INVALIDARG`|`pbstrFileName`o `pdwContext` era NULL.|  
-|`E_OUTOFMEMORY`|Il provider è stato in grado di allocare memoria sufficiente nel quale restituire il percorso del file della Guida.|  
+|`E_INVALIDARG`|`pbstrFileName` o `pdwContext` era NULL.|  
+|`E_OUTOFMEMORY`|Il provider non è riuscito ad allocare memoria sufficiente nella quale restituire il percorso del file della Guida.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che descrive l'errore, se possibile.  
+ Questo metodo restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che spiega l'errore, se possibile.  
   
 > [!NOTE]
 >  Questo metodo non è implementato.  

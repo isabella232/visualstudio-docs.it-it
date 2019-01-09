@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close | Documenti Microsoft
+title: IDebugApplication::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a17301842cefac7c7f257a4bc0e437670e28064
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a861e2cbdfedc80747e9390316c47da43b71656
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725501"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087412"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Fa sì che l'applicazione per rilasciare tutti i riferimenti e immettere uno stato inattivo.  
+Fa sì che questa applicazione per rilasciare tutti i riferimenti e passare a uno stato inattivo.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT Close();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- In genere, il proprietario di un'applicazione chiama questo metodo, alla chiusura dell'applicazione.  
+ In genere, il proprietario di un'applicazione chiama questo metodo quando l'applicazione viene chiusa.  
   
  Questo metodo determina `IApplicationDebugger::onClose` da chiamare.  
   

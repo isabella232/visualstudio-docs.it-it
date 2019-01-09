@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Next | Documenti Microsoft
+title: IEnumRemoteDebugApplicationThreads::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8ce0dc7c77cd3b58f388ab63a9d5a3573c93419
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b2aaa1882b5699343d82ecae5fe236574802d7d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729131"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092391"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
-Il `Next` che consente di recuperare un numero di segmenti nella sequenza di enumerazione specificato.  
+Il `Next` metodo recupera un determinato numero di segmenti nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                            celt,  
    IRemoteDebugApplicationThread**  pprdat,  
@@ -46,17 +46,17 @@ HRESULT Next(
  [out] Restituisce una matrice di `IRemoteDebugApplicationThread` interfacce che rappresenta i segmenti in corso il recupero.  
   
  `pceltFetched`  
- [out] Il numero effettivo di segmenti recuperati dall'enumeratore.  
+ [out] Il numero effettivo di segmenti recuperate dall'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo recupera un numero di segmenti nella sequenza di enumerazione specificato.  
+ Questo metodo recupera un determinato numero di segmenti nella sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumRemoteDebugApplicationThreads](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

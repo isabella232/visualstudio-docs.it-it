@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Documenti Microsoft
+title: IScriptEntry::SetBody | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729141"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088582"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Imposta il testo che si trova nel corpo di un `IScriptEntry` blocco di script o un `IScriptScriptlet` scriptlet.  
+Imposta il testo presente nel corpo di un' `IScriptEntry` blocco di script o un `IScriptScriptlet` scriptlet.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -38,16 +38,16 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>Parametri  
  `psz`  
- [in] Per un `IScriptEntry` blocco di script, `psz` è il testo racchiuso tra i tag di script.  
+ [in] Per un `IScriptEntry` blocco di script, `psz` è il testo racchiuso tra tag di script.  
   
- Per un `IScriptEntry` blocco funzione `psz` è il corpo della funzione.  
+ Per un `IScriptEntry` blocco della funzione, `psz` è il corpo della funzione.  
   
  Per un `IScriptScriptlet` oggetto (che deriva da `IScriptEntry`), `psz` è il testo dello script dello scriptlet.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

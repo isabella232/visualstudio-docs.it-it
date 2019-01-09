@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Documenti Microsoft
+title: 'Idebugdocumenthelper:: Definescriptblock | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727001"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087997"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Indica che un determinato intervallo di caratteri è un blocco di script che viene gestito dal motore di script specificato per il supporto.  
+Indica all'helper che un determinato intervallo di caratteri è un blocco di script che viene gestito dal motore di script specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -48,7 +48,7 @@ HRESULT DefineScriptBlock(
  [in] Numero di caratteri nel blocco di script.  
   
  `pas`  
- [in] Il motore di script per questo blocco di script.  
+ [in] Il motore di script di questo blocco di script.  
   
  `fScriptlet`  
  [in] Flag che indica se il blocco di script è scriptlet.  
@@ -64,13 +64,13 @@ HRESULT DefineScriptBlock(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Uno smart host è possibile utilizzare questo metodo quando i documenti contengono blocchi di script incorporati. Un motore di lingua è possibile utilizzare questo metodo quando il codice contiene script incorporati per le altre lingue.  
+ Uno smart host può utilizzare questo metodo quando i documenti contengono blocchi di script incorporati. Un motore del linguaggio può utilizzare questo metodo quando il codice contiene script incorporati per le altre lingue.  
   
- Il motore di script è responsabile di tutte le sintassi colorazione del codice contesto ricerche e nel blocco di script.  
+ Il motore di script è responsabile di tutte le sintassi colorazione e il codice contesto ricerche nel blocco di script.  
   
- Il `DefineScriptBlock` deve essere chiamato dopo il testo è stato aggiunto (ad esempio, usando il `IDebugDocumentHelper::AddDBCSText` (metodo)) ma lo script prima di blocco è stato analizzato (ad esempio, usando il `IActiveScriptParse ::ParseScriptText` (metodo)).  
+ Il `DefineScriptBlock` deve essere chiamato dopo il testo è stato aggiunto (ad esempio, usando il `IDebugDocumentHelper::AddDBCSText` (metodo)) ma prima lo script di blocco è stato analizzato (ad esempio, usando il `IActiveScriptParse ::ParseScriptText` (metodo)).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

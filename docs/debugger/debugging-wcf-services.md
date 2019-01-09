@@ -1,8 +1,6 @@
 ---
-title: Debug dei servizi WCF | Documenti Microsoft
-ms.custom: ''
+title: Debug dei servizi WCF | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8efa769ab7e8fcf55e281f7c29f1f4e04b67f850
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f586cf8761d993d9478775e82ec02d8665bf09b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923916"
 ---
 # <a name="debugging-wcf-services"></a>Debug dei servizi WCF
 ## <a name="in-this-section"></a>In questa sezione  
@@ -33,7 +31,7 @@ ms.locfileid: "31471125"
  [Procedura: Eseguire istruzioni nei servizi WCF](../debugger/how-to-step-into-wcf-services.md)  
  Viene illustrato il supporto del debugger per l'esecuzione in un servizio WCF.  
   
- [Procedura: Eseguire il debug di un servizio WCF indipendente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  Viene descritto come eseguire il debug di un servizio WCF in esecuzione all'esterno di IIS o del server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  

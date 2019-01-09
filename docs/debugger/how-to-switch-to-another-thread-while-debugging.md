@@ -2,7 +2,6 @@
 title: Passare a un altro thread durante il debug
 ms.custom: seodec18
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ace6f26f241ecdc39b88060fc4edc6c2e47d91
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 202c153108558d1bf74a10b41b34c5b164ec1587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990701"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Procedura: Passare a un altro Thread durante il debug in Visual Studio
 Quando si esegue il debug di un'applicazione multithreading, è possibile utilizzare uno dei diversi metodi per passare dal thread che stava lavorando a un altro thread.

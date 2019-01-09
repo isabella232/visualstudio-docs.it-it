@@ -1,5 +1,5 @@
 ---
-title: Costanti SCRIPTTHREADID | Documenti Microsoft
+title: Costanti SCRIPTTHREADID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,32 +18,32 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734191"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097812"
 ---
 # <a name="scriptthreadid-constants"></a>Costanti SCRIPTTHREADID
-Utilizzato per specificare il tipo di thread.  
+Consente di specificare il tipo di thread.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
 ## <a name="constants"></a>Costanti  
   
-|Costante|Valore|Significato|  
+|Costante|Value|Significato|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Il thread attualmente in esecuzione.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Il thread di base. vale a dire il thread in cui la creazione di script del motore è stata creata un'istanza.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Thread di base; vale a dire, il thread in cui la creazione di script del motore è stata creata un'istanza.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Tutti i thread.|  
   
 ## <a name="remarks"></a>Note  
- Il `SCRIPTTHREADID` tipo viene utilizzato da `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, e `IActiveScript::InterruptScriptThread`, ma le costanti possono essere utilizzate esclusivamente `IActiveScript::GetScriptThreadState` e `IActiveScript::InterruptScriptThread`.  
+ Il `SCRIPTTHREADID` tipo viene utilizzato da `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, e `IActiveScript::InterruptScriptThread`, ma le costanti possono essere utilizzate solo da `IActiveScript::GetScriptThreadState` e `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   

@@ -1,8 +1,6 @@
 ---
 title: Modifica e continuazione nella finestra di dialogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.welcome
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3ebec5936249e0d4e9764438060c13411cec8a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985920"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Finestra di dialogo Modifica e continuazione
-(Solo nativo) Questa finestra di dialogo viene visualizzata quando è stato modificato durante il debug del codice e **modifica e continuazione** riconosce perché consente di applicare le modifiche al codice. Per altre informazioni, vedere [modifica e continuazione](../debugger/edit-and-continue.md).  
+(Solo codice nativo) Questa finestra di dialogo viene visualizzata se durante il debug sono state apportate modifiche al codice riconosciute come applicabili dalla funzionalità Modifica e continuazione **. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
   
- **Non visualizzare più questo messaggio**  
- Se si seleziona questa casella di controllo **modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione in futuro. È possibile attivare questo avviso anche in questo caso passando al **opzioni** finestra di dialogo, aprire il **debug** cartella, fare clic sui **modifica e continuazione** , quindi selezionare **Richiamato da comandi di debug** e **Chiedi conferma prima di tutto**.  
+ Non visualizzare più questo messaggio**  
+ Se si seleziona questa casella di controllo, la modalità Modifica e continuazione applicherà le modifiche al codice senza chiedere l'autorizzazione. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo Opzioni **, aprire la cartella Debug**, fare clic sulla pagina Modifica e continuazione **e selezionare Richiama dai comandi di debug** e Chiedi conferma **.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

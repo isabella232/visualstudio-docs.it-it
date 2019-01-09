@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916046"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: usare Python in Visual Studio
 

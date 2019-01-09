@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowserEx | Documenti Microsoft
+title: IDebugHelper::CreatePropertyBrowserEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3590fe05ef82f094dd5706f9f527b247d95eda8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727571"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097734"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-Restituisce un visualizzatore di proprietà che esegue il wrapping di una variante e consente la conversione dei valori di variante o tipi VARTYPE personalizzata alle stringhe.  
+Restituisce un visualizzatore di proprietà che esegue il wrapping di una variante e consente la conversione personalizzata di valori VARIANT o tipi VARTYPE in stringhe.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowserEx(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -42,13 +42,13 @@ HRESULT CreatePropertyBrowserEx(
   
 #### <a name="parameters"></a>Parametri  
  `pvar`  
- [in] Variante radice per esplorare.  
+ [in] Variante di radice da esplorare.  
   
  `bstrName`  
- [in] Nome da assegnare alla radice.  
+ [in] Nome da assegnare la radice.  
   
  `pdat`  
- [in] Thread in cui si desidera richiedere le proprietà. Se questo parametro è NULL, non viene eseguita alcun marshalling.  
+ [in] Il thread su cui si desidera richiedere proprietà. Se questo parametro è NULL, non viene eseguito alcun tipo di marshalling.  
   
  `pdf`  
  [in] Oggetto che fornisce formattazione personalizzata per le varianti.  
@@ -59,12 +59,12 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce un visualizzatore di proprietà che esegue il wrapping di una variante e consente la conversione dei valori di variante o tipi VARTYPE personalizzata alle stringhe.  
+ Questo metodo restituisce un visualizzatore di proprietà che esegue il wrapping di una variante e consente la conversione personalizzata di valori VARIANT o tipi VARTYPE in stringhe.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   

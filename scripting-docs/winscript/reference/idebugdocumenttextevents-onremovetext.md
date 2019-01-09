@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onRemoveText | Documenti Microsoft
+title: IDebugDocumentTextEvents::onRemoveText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81d7345d0832d0f9bfc6942fa5a27db82b45bb95
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727591"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097201"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 Indica che il testo è stato rimosso dal documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onRemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,15 +39,15 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>Parametri  
  `cCharacterPosition`  
- [in] Posizione del carattere del primo carattere è stato rimosso.  
+ [in] Posizione del carattere del primo carattere rimosso.  
   
  `cNumToRemove`  
- [in] Il numero di caratteri è stato rimosso.  
+ [in] Il numero di caratteri rimossi.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

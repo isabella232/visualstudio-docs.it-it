@@ -1,5 +1,5 @@
 ---
-title: Struttura PROFILER_HEAP_OBJECT_RELATIONSHIP | Documenti Microsoft
+title: Struttura PROFILER_HEAP_OBJECT_RELATIONSHIP | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,30 +12,30 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b992b020c0aa42a6f27e484d55fe89a514c0198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e5658f70e6a24151af75f4455fc44c2c756b9e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734211"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091949"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>Struttura PROFILER_HEAP_OBJECT_RELATIONSHIP
 Rappresenta una relazione di un oggetto heap.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_ID relationshipId;    PROFILER_RELATIONSHIP_INFO relationshipInfo;    [switch_type(PROFILER_RELATIONSHIP_INFO), switch_is(relationshipInfo)] union    {        [case(PROFILER_PROPERTY_TYPE_NUMBER)] double numberValue;        [case(PROFILER_PROPERTY_TYPE_STRING)] LPCWSTR stringValue;        [case(PROFILER_PROPERTY_TYPE_HEAP_OBJECT)] PROFILER_HEAP_OBJECT_ID objectId;        [case(PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT)] PROFILER_EXTERNAL_OBJECT_ADDRESS externalObjectAddress;    };} PROFILER_HEAP_OBJECT_RELATIONSHIP;  
 ```  
   
 ## <a name="members"></a>Membri  
   
-|Membro|Valore|Descrizione|  
+|Member|Value|Descrizione|  
 |------------|-----------|-----------------|  
-|relationshipId|[Tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|L'ID della relazione il nome, da [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
+|relationshipId|[Tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|L'ID della relazione il nome, dalla [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
 |relationshipInfo|[Enumerazione PROFILER_RELATIONSHIP_INFO](../../winscript/reference/profiler-relationship-info-enumeration.md)|Informazioni sulla relazione.|  
-|numberValue|double|Il valore del numero. Solo una delle `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` è impostata, in base il `relationshipInfo` valore.|  
-|StringValue|LPCWSTR|Valore stringa.|  
-|objectId|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|L'ID dell'oggetto heap.|  
-|externalObjectAddress|[Tipo PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|L'indirizzo dell'oggetto esterno.|  
+|numberValue|double|Il valore numerico. Solo uno dei `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` è impostato, sulla base di `relationshipInfo` valore.|  
+|stringValue|LPCWSTR|Valore stringa.|  
+|ObjectId|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|ID dell'oggetto heap.|  
+|externalObjectAddress|[Tipo PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|L'indirizzo oggetto esterno.|  
 |Sottostringa|[Struttura PROFILER_PROPERTY_TYPE_SUBSTRING_INFO](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Le informazioni sul tipo di sottostringa.|

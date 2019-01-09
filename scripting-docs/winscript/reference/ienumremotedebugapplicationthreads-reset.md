@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Reset | Documenti Microsoft
+title: IEnumRemoteDebugApplicationThreads::Reset | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b218b04781f8836b7c2f99d71d20716404777a69
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8e53c92f0b53f380d2a854e40a68888e3b7c6297
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728021"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097604"
 ---
 # <a name="ienumremotedebugapplicationthreadsreset"></a>IEnumRemoteDebugApplicationThreads::Reset
 Reimposta una sequenza di enumerazione all'inizio.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Reset();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT Reset();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo riporta una sequenza di enumerazione all'inizio.  
+ Questo metodo reimposta una sequenza di enumerazione all'inizio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumRemoteDebugApplicationThreads](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

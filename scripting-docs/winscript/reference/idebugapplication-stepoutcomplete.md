@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Documenti Microsoft
+title: IDebugApplication::StepOutComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c344f0316bda6ed5ef895c1b88ae7b1a6465e73
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1798d347fff11a49b945519fd20c370eca75d590
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725641"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089921"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Notifica al gestore di debug di processo che un motore di lingua in modalità passo a passo sta per restituire al chiamante.  
+Notifica il gestore di debug di processi che un motore di lingua nella modalità passo a passo sta per essere restituita al relativo chiamante.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT StepOutComplete();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT StepOutComplete();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Motori di linguaggio chiamano questo metodo in modalità passo a passo, prima di restituire al chiamante. Il gestore di debug del processo utilizza questa opportunità per notificare a tutti gli altri motori di script che si devono interrompersi alla prima opportunità. Questa tecnica è il passaggio di più lingue vengono implementate le modalità.  
+ Motori di linguaggio chiamano questo metodo in modalità solo passaggio prima di restituire al chiamante. Il gestore di debug di processi Usa questa opportunità per notificare a tutti gli altri motori di script che interrompano il prima possibile. Questa tecnica è il passaggio tra più linguaggi come vengono implementate le modalità.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

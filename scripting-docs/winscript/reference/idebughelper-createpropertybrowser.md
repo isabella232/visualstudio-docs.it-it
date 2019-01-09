@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Documenti Microsoft
+title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727481"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087750"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
 Restituisce un visualizzatore di proprietà che esegue il wrapping di una variante.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -41,13 +41,13 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parametri  
  `pvar`  
- [in] Variante radice per esplorare.  
+ [in] Variante di radice da esplorare.  
   
  `bstrName`  
- [in] Nome da assegnare alla radice.  
+ [in] Nome da assegnare la radice.  
   
  `pdat`  
- [in] Thread in cui si desidera richiedere le proprietà. Se questo parametro è NULL, non viene eseguita alcun marshalling.  
+ [in] Il thread su cui si desidera richiedere proprietà. Se questo parametro è NULL, non viene eseguito alcun tipo di marshalling.  
   
  `ppdob`  
  [out] Il Visualizzatore proprietà.  
@@ -55,7 +55,7 @@ HRESULT CreatePropertyBrowser(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
