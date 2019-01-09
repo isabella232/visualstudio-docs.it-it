@@ -1,8 +1,6 @@
 ---
 title: Più categorie presenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1481d5a6f22606875b0173bf0d3060bb455f022
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858091"
 ---
 # <a name="multiple-categories-are-present"></a>Più categorie presenti
 La sezione selezionata contiene più di un tipo di attività per un intervallo di tempo specificato. Si noti che vengono visualizzati due colori, uno impilato verticalmente sull'altro. Questi colori rappresentano solo le prime due attività più frequenti nell'intervallo di tempo specificato. Le frequenze di queste due attività sono rappresentate in relazione l'una all'altra come terzi o metà della barra verticale. Per visualizzare ulteriori dettagli, provare fare zoom avanti in questa sezione della visualizzazione dei thread.  

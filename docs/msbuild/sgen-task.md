@@ -1,8 +1,6 @@
 ---
 title: Attività SGen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SGen
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89a5285e304e74aba01f81d8ec9bfc5017677a7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3f19617e71137f6f318f62d13c9119727f5f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939654"
 ---
 # <a name="sgen-task"></a>SGen (attività)
 Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specificato. Questa attività esegue il wrapping dello strumento per la generazione di serializzatori XML *Sgen.exe*. Per altre informazioni, vedere [Strumento per la generazione di serializzatori XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
@@ -34,7 +32,7 @@ Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specif
  Nella tabella che segue vengono descritti i parametri dell'attività `SGen` .  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |-----------------------------| - |
 | `BuildAssemblyName` | Parametro `String` obbligatorio.<br /><br /> Assembly per cui generare il codice di serializzazione. |
 | `BuildAssemblyPath` | Parametro `String` obbligatorio.<br /><br /> Percorso dell'assembly per cui generare il codice di serializzazione. |
