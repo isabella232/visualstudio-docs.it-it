@@ -1,8 +1,6 @@
 ---
 title: Debug del codice gestito | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867040"
 ---
 # <a name="debugging-managed-code"></a>Debug del codice gestito
 
@@ -77,7 +75,7 @@ Vengono fornite considerazioni per il debug di applicazioni di servizio Windows,
 [Debug e profilatura](/dotnet/framework/debug-trace-profile/index)  
 Viene discusso il debug di applicazioni .NET Framework e i requisiti di configurazione.
 
-[Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)  
+[Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 Vengono presentati le tecniche di debug e i problemi più comuni riscontrabili durante il debug di script e applicazioni Web.
 
 [Novità relative al debugger di Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
