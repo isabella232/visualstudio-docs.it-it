@@ -1,8 +1,6 @@
 ---
 title: Elemento OnError (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c33f32e46621bb2f56231b2c992712fd42126f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924553"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 Fa in modo che vengano eseguite una o più destinazioni se l'attributo `ContinueOnError` è `false` per un'attività non riuscita.  
@@ -46,7 +44,7 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
 ### <a name="attributes"></a>Attributi  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
 |`ExecuteTargets`|Attributo obbligatorio.<br /><br /> Le destinazioni da eseguire se un'attività non riesce. Se si specificano più destinazioni, separarle con punto e virgola. Le destinazioni vengono eseguite nell'ordine specificato.|  
@@ -56,7 +54,7 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 

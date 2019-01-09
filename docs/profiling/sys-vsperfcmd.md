@@ -1,8 +1,6 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567510bba3e7503fccb1273c306990eb17a93525
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 94a2fb99a6b43328fcc31a5cba0b1d4f0c3df168
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908808"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 L'opzione *Sys* di **VSPerfCmd.exe** imposta l'evento di profilatura campionato per gli eventi di chiamata del sistema (chiamate di funzione dall'applicazione profilata al sistema operativo) e, facoltativamente, modifica il numero di chiamate del sistema in un intervallo di campionamento rispetto al valore predefinito 10.  

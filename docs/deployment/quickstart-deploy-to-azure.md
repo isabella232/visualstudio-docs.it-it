@@ -1,8 +1,6 @@
 ---
 title: Eseguire la pubblicazione nel servizio app di Azure
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 4e7cf13658c33caf6b58d6a4e661a8431f377845
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853593"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio
 

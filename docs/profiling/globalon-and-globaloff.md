@@ -1,8 +1,6 @@
 ---
 title: GlobalOn e GlobalOff | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1731c47d3de9068affd4c7561e1dae94960b2b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21e821426d5e5a1f10d3e6719e9a47b5c46ea7f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901490"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
 Le opzioni *GlobalOff* e **GlobalOn** di **VSPerfCmd.exe** consentono di sospendere e riprendere la profilatura per tutti i processi e i thread in una sessione di profilatura da riga di comando.  

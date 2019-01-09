@@ -9,12 +9,12 @@ description: Vantaggi dello sviluppo professionale inclusi nelle sottoscrizioni 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7255a0ce281113dd96863d03ad1bebd611ac2c57
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6943c0d0dbd023c0ead9b0f6d59e2fcb1228e8be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855036"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Vantaggi dello sviluppo professionale disponibili nelle sottoscrizioni di Visual Studio
 
@@ -25,7 +25,6 @@ In base al livello di sottoscrizione, è possibile accedere a contenuti di forma
 Per altre informazioni sui vantaggi specifici, vedere queste pagine:
 
 - [DataCamp](vs-datacamp.md)
-- [Xamarin University](vs-xamarin.md)
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
 - [MSDN Magazine](vs-msdn.md)

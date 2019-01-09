@@ -1,8 +1,6 @@
 ---
 title: Nessuna attività di thread da mostrare (visualizzazione dei thread) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nothreadreport
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1bcfbc1a4e2995ca0a8d676b9352b2d7bcba9272
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858321"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nessuna attività di thread da mostrare (Visualizzazione thread)
 Quest'area mostra i dati sui thread non nascosti nell'intervallo di tempo attualmente visibile.  

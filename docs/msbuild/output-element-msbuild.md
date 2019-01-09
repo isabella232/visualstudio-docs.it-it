@@ -1,8 +1,6 @@
 ---
 title: Elemento Output (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 238e863481360671c77b7994fb1d98ac3ee96589
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853268"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Archivia i valori di output dell'attività in elementi e proprietà.  
@@ -48,7 +46,7 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 
 ### <a name="attributes"></a>Attributi  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`TaskParameter`|Attributo obbligatorio.<br /><br /> Nome del parametro di output dell'attività.|  
 |`PropertyName`|È obbligatorio l'attributo `PropertyName` o l'attributo `ItemName`.<br /><br /> Proprietà che riceve il valore del parametro di output dell'attività. Il progetto può quindi fare riferimento alla proprietà con la sintassi $(\<NomeProprietà>). Questo nome di proprietà può essere il nome di una nuova proprietà o un nome già definito nel progetto.<br /><br /> Non è possibile usare questo attributo se si usa anche `ItemName`.|  
@@ -60,7 +58,7 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 

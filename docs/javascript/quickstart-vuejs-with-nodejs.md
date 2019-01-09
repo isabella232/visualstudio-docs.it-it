@@ -4,7 +4,6 @@ description: In questa Guida introduttiva viene spiegato come creare un'app Vue.
 ms.custom: seodec18
 ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -15,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 61554a784c5e3f2abaa8987116854893408b2ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853892"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Vue.js
 
@@ -110,5 +109,5 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - Completare l'[Esercitazione per Node.js e Express](../nodejs/tutorial-nodejs.md)
-- Completare l'[Esercitazione per Node.js e React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- Completare l'[Esercitazione per Node.js e React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
 - [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

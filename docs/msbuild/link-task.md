@@ -1,8 +1,6 @@
 ---
 title: Attività Link | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -32,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857040"
 ---
 # <a name="link-task"></a>Link (attività)
 Esegue il wrapping dello strumento linker di Visual C++, *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).  

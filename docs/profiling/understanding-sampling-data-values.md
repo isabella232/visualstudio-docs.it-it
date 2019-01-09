@@ -1,8 +1,6 @@
 ---
 title: Informazioni sui valori dei dati di campionamento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863472"
 ---
 # <a name="understand-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
 
@@ -53,5 +51,5 @@ Percentuale del numero totale di campioni esclusivi nell'esecuzione della profil
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)  
+[Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)  
 [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

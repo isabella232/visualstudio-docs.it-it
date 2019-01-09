@@ -2,7 +2,6 @@
 title: Comando Imposta thread corrente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentthread
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b02dbc1d22716483acdfd5378316d6297f6b031f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03d253d9be0d8bf5456f1a436d45762d6f030f86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855338"
 ---
 # <a name="set-current-thread-command"></a>Comando Imposta thread corrente
 Imposta il thread specificato come thread corrente.
@@ -47,4 +46,4 @@ Debug.SetCurrentThread index
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

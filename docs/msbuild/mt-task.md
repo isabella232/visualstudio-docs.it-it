@@ -1,8 +1,6 @@
 ---
 title: Attività MT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e4298fa9482674232dea2cae98bb25ba51be30
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6a436423bd55fbcf1a519e56b27c2449c5b3bc9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848824"
 ---
 # <a name="mt-task"></a>attività MT
 Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre informazioni, vedere [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).  
@@ -42,7 +40,7 @@ Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre info
 > [!NOTE]
 >  Nella documentazione di *mt.exe* viene usato un trattino (**-**) come prefisso per le opzioni della riga di comando, ma questo argomento usa una barra (**/**). Entrambi i prefissi sono accettabili.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Parametro **String[]** facoltativo.<br /><br /> Specifica il nome di uno o più file manifesto.<br /><br /> Per altre informazioni, vedere l'opzione **/manifest** in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe) sul sito Web.|  
 |**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Elenco di opzioni della riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività **MT**.<br /><br /> Per altre informazioni, vedere [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  

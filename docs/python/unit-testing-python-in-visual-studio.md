@@ -3,7 +3,6 @@ title: Codice Python negli unit test
 description: Configurazione di unit test per il codice Python in Visual Studio per usufruire delle funzionalità di Esplora test per l'individuazione, l'esecuzione e il debug dei test.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 57076aa4bf86b8053a38e6b8af96b6006bbdfa0a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5f808314639c72f530e64c4ccac08c49439c6818
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858279"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configurare gli unit test per il codice Python
 
