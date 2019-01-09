@@ -1,8 +1,6 @@
 ---
 title: "Procedura: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione tramite la riga di comando | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf21bb9ba2c2b0747a94fbfbfbb0c03e222337a6
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e58bec5034e5a75d2d5ded45a1557b8ea9119f76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882961"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio nativo e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.  

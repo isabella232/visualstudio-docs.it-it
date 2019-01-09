@@ -3,7 +3,6 @@ title: Debug in modalità mista per Python
 description: Eseguire il debug contemporaneamente di C++ e Python in Visual Studio inclusi il passaggio tra gli ambienti, la visualizzazione dei valori e la valutazione delle espressioni.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b654af11ce61cb9331682f8b46e4476c06020ed3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885955"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 

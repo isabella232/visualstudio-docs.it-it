@@ -1,8 +1,6 @@
 ---
 title: Attività Message | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Message
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b61bf9def1ba37667302850527715eed1db4ff
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84f169d221ad8e6920844f2ccc2675277bb4af74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869833"
 ---
 # <a name="message-task"></a>attività Message
 Registra un messaggio durante una compilazione.  
@@ -33,7 +31,7 @@ Registra un messaggio durante una compilazione.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `Message` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Importance`|Parametro `String` facoltativo.<br /><br /> Specifica l'importanza del messaggio. Il valore di questo parametro può essere `high`, `normal` o `low`. Il valore predefinito è `normal`.|  
 |`Text`|Parametro `String` facoltativo.<br /><br /> Testo dell'errore da registrare.|  
