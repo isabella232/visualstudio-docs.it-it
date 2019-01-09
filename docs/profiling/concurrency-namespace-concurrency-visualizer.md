@@ -1,8 +1,6 @@
 ---
 title: Spazio dei nomi Concurrency (visualizzatore di concorrenza) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 781e5251dcb0580c4e6ae36e33e6af2b16f3a79d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823788"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Spazio dei nomi Concurrency (visualizzatore di concorrenza)
 Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'accesso al runtime di concorrenza, un framework di programmazione simultanea per C++. Per altre informazioni, vedere [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime) (Runtime di concorrenza).  
@@ -34,7 +32,7 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>Namespaces  
   
-|nome|Descrizione|  
+|nome|Description|  
 |----------|-----------------|  
 |[Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|  
   

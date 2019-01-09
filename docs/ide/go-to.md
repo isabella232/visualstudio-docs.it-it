@@ -2,7 +2,6 @@
 title: Passare al file, passare al simbolo, passare alla riga
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac8ccada5b515c2af99607fe27ad059fbf00c021
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986362"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -54,12 +53,12 @@ Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli 
 
 Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile specificare un prefisso nella casella di ricerca o selezionare una delle cinque icone di filtro:
 
-Prefisso | Icona | Metodo rapido | Descrizione
+Prefisso | Icona | Metodo rapido | Description
 :-: | - | - | -
 :| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
 f| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Consente di passare al file specificato, visitato di recente
-t| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Consente di passare al tipo specificato
+u| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Consente di passare al tipo specificato
 m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**M** | Consente di passare al membro specificato
 \#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **CTRL**+**1**, **CTRL**+**S** | Consente di passare al simbolo specificato
 
@@ -67,7 +66,7 @@ m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**
 
 Per limitare la ricerca a una posizione specifica, selezionare una delle due icone documento:
 
-Icona | Descrizione
+Icona | Description
 ---- | ---
 ![Documento corrente](media/gotoall_currentdocument.png) | Cerca solo il documento corrente
 ![Documenti esterni](media/gotoall_external.png) | Cerca i documenti esterni oltre a quelli presenti nel progetto e/o nella soluzione
@@ -82,7 +81,7 @@ Se si usa la [notazione Camel](https://en.wikipedia.org/wiki/Camel_case) nel cod
 
 Se si seleziona l'icona a forma di ingranaggio ![Icona Ingranaggio](media/gotoall_gear.png) è possibile modificare il comportamento di questa funzionalità:
 
-Impostazione | Descrizione
+Impostazione | Description
 ------- | ---
 Utilizza scheda anteprima | Visualizza immediatamente l'elemento selezionato nella scheda anteprima dell'IDE
 Mostra dettagli | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra

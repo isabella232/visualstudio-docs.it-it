@@ -3,7 +3,6 @@ title: Aggiornare Visual Studio
 titleSuffix: ''
 description: Informazioni sulla procedura dettagliata di aggiornamento di Visual Studio alla versione più recente.
 ms.date: 04/23/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa929eafc1459d74efae51fac2195d8574eb7567
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6452e2c53c58d0eb863efc509e42445fe1aa23e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828433"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aggiornare Visual Studio 2017 alla versione più recente
 

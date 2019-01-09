@@ -1,8 +1,6 @@
 ---
 title: Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986843"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
 L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectionCmd.exe*) consente di raccogliere tracce dalla riga di comando in modo da poterle visualizzare nel visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  
@@ -40,7 +38,7 @@ L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectio
 
  **CvCollectionCmd /?**  
 
-|Opzione|Descrizione|Parametri|Valori restituiti|  
+|Opzione|Description|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
 |Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](/dotnet/framework/wcf/samples/etw-tracing) necessarie.|  
 |Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
@@ -64,7 +62,7 @@ L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectio
  Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  
 
 
-| Tag | Descrizione | Valori |
+| Tag | Description | Valori |
 |-------------------------| - | - |
 | Config | Delimita il file di configurazione complessivo. | Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion |
 | MajorVersion | Specifica la versione principale del file di configurazione. | Deve essere 1 per progetti [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] . Se è diverso da 1, l'utilità non funzionerà. |

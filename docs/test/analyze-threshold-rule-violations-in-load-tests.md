@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989244"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -39,11 +38,11 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
 |Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
 |Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
-|Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:**  Questo nome è importante quando i test di carico vengono eseguiti in rig.|Yes|
-|Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
+|Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:**  Questo nome è importante quando i test di carico vengono eseguiti in rig.|Sì|
+|Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
 |Counter|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
 |Istanza|L'istanza del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
-|Messaggio|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Yes|
+|Messaggio|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Sì|
 
 > [!NOTE]
 > È possibile ordinare la tabella scegliendo le intestazioni delle colonne.

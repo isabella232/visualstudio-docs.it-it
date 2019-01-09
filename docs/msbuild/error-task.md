@@ -1,8 +1,6 @@
 ---
 title: Attività Error | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Error
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9568b27b65045c1b3a4495adff83f0b972e342f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e55fe148ccb973a6fdcbf0722d354d91cc1816
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833018"
 ---
 # <a name="error-task"></a>attività Error
 Interrompe una compilazione e registra un errore in base a un'istruzione condizionale valutata.  
@@ -34,7 +32,7 @@ Interrompe una compilazione e registra un errore in base a un'istruzione condizi
  Nella tabella che segue vengono descritti i parametri dell'attività `Error` .  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |---------------| - |
 | `Code` | Parametro `String` facoltativo.<br /><br /> Codice errore da associare all'errore. |
 | `File` | Parametro `String` facoltativo.<br /><br /> Il nome del file che contiene l'errore. Se non viene indicato alcun nome file, verrà usato il file contenente l'attività di errore. |

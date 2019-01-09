@@ -2,7 +2,6 @@
 title: Sviluppare codice senza progetti o soluzioni
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5885fc8c62b8da4213446601f37700cc077eda8c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a1275a5c0ada3ddc12fe4257880e16d130243d0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968472"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 

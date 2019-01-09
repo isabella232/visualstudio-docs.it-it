@@ -3,7 +3,6 @@ title: Analizzare i dati d'uso della CPU (ASP.NET)
 description: Misurare le prestazioni delle app nelle app ASP.NET con lo strumento di diagnostica Utilizzo CPU
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837394"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Guida introduttiva: Analizzare i dati d'uso della CPU in Visual Studio (ASP.NET)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina uno strumento che identifica eventuali colli di bottiglia delle prestazioni a causa di un utilizzo intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
@@ -195,7 +194,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati d'uso della CPU
 
 È consigliabile iniziare ad analizzare i dati esaminando l'elenco di funzioni in Utilizzo CPU, identificando le funzioni che svolgono la maggior parte del lavoro e quindi concentrandosi su ognuna di esse.
 

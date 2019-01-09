@@ -1,8 +1,6 @@
 ---
-title: Visualizzazioni dei report di prestazioni | Microsoft Docs
-ms.custom: ''
+title: Visualizzazioni dei rapporti di prestazioni | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - reports, profiling tools
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16082a3d04a27355033fd96f3387652063f00cce
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3b83ed1ae187647f4e1025d18b4973cb1e25b399
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844943"
 ---
 # <a name="performance-report-views"></a>Visualizzazioni dei report di prestazioni
 Questa sezione fornisce informazioni di riferimento relative ai rapporti e alle visualizzazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le visualizzazioni dei file di dati di profilatura sono riportate nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. I rapporti vengono generati tramite lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md).  
