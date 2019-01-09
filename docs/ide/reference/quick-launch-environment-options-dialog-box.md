@@ -2,7 +2,6 @@
 title: Avvio veloce, Ambiente, finestra di dialogo Opzioni
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa33123a813739eeec9678f8393925d1ba12ba3a
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: c3dca4a9eb34a950fe571db4da8c9c30d7f2a08b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893513"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 
@@ -35,7 +34,7 @@ I risultati delle ricerche eseguite in Avvio veloce vengono visualizzati in quat
 
 È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.
 
-|Category|Metodo rapido|Descrizione metodo rapido|
+|Category|Collegamento|Descrizione metodo rapido|
 |--------------|--------------| - |
 |Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|
 |Menu|@menu<br /><br /> Ad esempio, `@menu font`.|Limita la ricerca alle voci di menu.|

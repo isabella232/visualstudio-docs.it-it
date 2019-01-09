@@ -1,8 +1,6 @@
 ---
 title: Attività VCMessage | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f51abd957f5a39cdc3af1f34bf3af28999ab80fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928961"
 ---
 # <a name="vcmessage-task"></a>attività VCMessage
 Registra gli avvisi e i messaggi di errore durante una compilazione.  
@@ -37,7 +35,7 @@ Registra gli avvisi e i messaggi di errore durante una compilazione.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **VCMessage**.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**Argomenti**|Parametro **String** facoltativo.<br /><br /> Elenco delimitato da punto e virgola dei messaggi da visualizzare.|  
 |**Codice**|Parametro **String** obbligatorio.<br /><br /> Un numero di errore che qualifica il messaggio.|  

@@ -1,8 +1,6 @@
 ---
 title: Attività CreateProperty | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b281a33856e1db2b45ccade79f7490cfd808ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71c36b19b0fd44d6668cb497dccafaf12843a492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884737"
 ---
 # <a name="createproperty-task"></a>CreateProperty (attività)
 Popola le proprietà con i valori passati. In questo modo i valori vengono copiati da una proprietà o una stringa a un'altra.  
@@ -34,7 +32,7 @@ Popola le proprietà con i valori passati. In questo modo i valori vengono copia
  Nella tabella che segue vengono descritti i parametri dell'attività `CreateProperty` .  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |------------------| - |
 | `Value` | Parametro di ouput facoltativo `String`.<br /><br /> Specifica il valore da copiare nella nuova proprietà. |
 | `ValueSetByTask` | Parametro di ouput facoltativo `String`.<br /><br /> Contiene lo stesso valore del parametro `Value`. Usare questo parametro solo quando si vuole evitare che la proprietà di output venga impostata da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] quando la destinazione di inclusione viene ignorata perché gli output sono aggiornati. |

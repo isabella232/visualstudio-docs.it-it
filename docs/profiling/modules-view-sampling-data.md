@@ -1,8 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4c4e3d9181fecd3c9aa2d91201deadb09de7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892978"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
 Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni campionate del modulo sono elencate sotto il nodo del modulo.  
@@ -28,7 +26,7 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
   
  Se era in corso l'esecuzione della funzione quando sono stati raccolti i campioni, ovvero la funzione si trovava in cima allo stack di chiamate, le righe di codice sorgente e gli indirizzi delle istruzioni in esecuzione sono elencati sotto il nodo della funzione. Poiché i dati vengono raccolti per una riga di codice sorgente o per un puntatore all'istruzione durante l'esecuzione della riga o dell'istruzione, i valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
@@ -45,4 +43,4 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
+ [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)

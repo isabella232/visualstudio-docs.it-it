@@ -2,7 +2,6 @@
 title: Visualizzare la struttura del codice tramite la visualizzazione delle classi, la gerarchia delle chiamate, il visualizzatore oggetti e la finestra di definizione del codice
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880913"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 

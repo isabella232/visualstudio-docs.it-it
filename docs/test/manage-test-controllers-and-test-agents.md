@@ -2,19 +2,18 @@
 title: Gestire i test controller e gli agenti di test
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891401"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -118,7 +117,7 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 
 |Status|Description|
 |-|-----------------|
-|Test in esecuzione|Sono in esecuzione test|
+|Test in esecuzione|Esecuzione di test|
 |Pronto|Disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
 |Offline|Non disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
 |Disconnesso|L'agente di test non è avviato|
