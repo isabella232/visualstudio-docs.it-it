@@ -1,8 +1,6 @@
 ---
 title: Rapporto di riepilogo per thread | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 737e879f040f503ec367438273d2136670a44e21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869583"
 ---
 # <a name="per-thread-summary-report"></a>Report di riepilogo per thread
 Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non nascosto per ciascuna categoria di attività durante l'intervallo di tempo attualmente visibile. "Esecuzione" indica che il thread è in esecuzione; tutte le altre categorie indicano che il thread è in attesa.  
