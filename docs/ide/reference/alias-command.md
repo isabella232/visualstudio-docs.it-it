@@ -2,7 +2,6 @@
 title: Comando Alias
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.alias
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fa8b14618085ddae67616f5ef3e30fb1b030e45a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930687"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
@@ -79,4 +78,4 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

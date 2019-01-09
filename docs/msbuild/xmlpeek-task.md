@@ -1,8 +1,6 @@
 ---
 title: Attività XmlPeek | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2430d742c07483dd28ca1cd188d9695205e9c91
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 214320724d7bcda2c126d577deabda20a61c6104
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865913"
 ---
 # <a name="xmlpeek-task"></a>Attività XmlPeek
 Restituisce valori come specificato dalla query XPath da un file XML.  
@@ -31,7 +29,7 @@ Restituisce valori come specificato dalla query XPath da un file XML.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `XmlPeek` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Namespaces`|Parametro `String` facoltativo.<br /><br /> Specifica gli spazi dei nomi per i prefissi della query XPath.|  
 |`Query`|Parametro `String` facoltativo.<br /><br /> Specifica la query XPath.|  

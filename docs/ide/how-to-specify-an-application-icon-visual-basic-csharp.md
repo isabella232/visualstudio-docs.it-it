@@ -2,7 +2,6 @@
 title: "Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8da1de87031db962ede178a742325d9206e808c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2839b29d61c7ab87ad0dcbeaacc385c488fce254
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924512"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)
 

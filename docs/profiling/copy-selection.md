@@ -1,8 +1,6 @@
 ---
 title: Copia selezione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.selection.copy
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f0f9e7f7a2d4a11c6f3394cb83be95306a2849c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876640"
 ---
 # <a name="copy-selection"></a>Copia selezione
 Per copiare l'intero stack di chiamate dalla scheda Report, fare clic su **Copia**. È quindi possibile incollare lo stack di chiamate in qualsiasi programma che supporta l'azione.  

@@ -1,8 +1,6 @@
 ---
 title: Attività LIB | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922020"
 ---
 # <a name="lib-task"></a>LIB (attività)
 Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, *lib.exe*. Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per altre informazioni, vedere [Riferimenti a LIB](/cpp/build/reference/lib-reference) ed [Esecuzione di LIB](/cpp/build/reference/running-lib).  
@@ -40,7 +38,7 @@ Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, *lib
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività **LIB**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|Parametro **String[]** facoltativo.<br /><br /> Specifica altri elementi da aggiungere alla riga di comando.|  
 |**AdditionalLibraryDirectories**|Parametro **String[]** facoltativo.<br /><br /> Esegue l'override del percorso delle librerie dell'ambiente. Specificare un nome di directory.<br /><br /> Per altre informazioni, vedere [/LIBPATH (Percorso LIB aggiuntivo)](/cpp/build/reference/libpath-additional-libpath).|  
@@ -59,13 +57,13 @@ Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, *lib
 |**OutputFile**|Parametro **String** facoltativo.<br /><br /> Sostituisce il nome e il percorso predefiniti del programma creato da *lib.exe*.<br /><br /> Questo parametro corrisponde all'opzione **/OUT** di *lib.exe* che accetta un argomento `filename`.|  
 |**RemoveObjects**|Parametro **String[]** facoltativo.<br /><br /> Omette l'oggetto specificato dalla libreria di output. *Lib.exe* crea una libreria di output combinando tutti gli oggetti, in file oggetto o in librerie, quindi eliminando tutti gli oggetti specificati con questa opzione.<br /><br /> Questo parametro corrisponde all'opzione **/REMOVE** di *lib.exe* che accetta un argomento `membername`.|  
 |**Sources**|Parametro `ITaskItem[]` obbligatorio.<br /><br /> Specifica un elenco dei file di origine separati da spazi.|  
-|**SubSystem**|Parametro **String** facoltativo.<br /><br /> Specifica l'ambiente per il file eseguibile. La scelta del sottosistema riguarda il simbolo del punto di ingresso o la funzione di punto di ingresso.<br /><br /> Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.<br /><br /> -   **Console** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Native** - **/SUBSYSTEM:NATIVE**<br />-   **Applicazione EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **Driver servizio di avvio EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **ROM EFI** - **/SUBSYSTEM:EFI_ROM**<br />-   **Runtime EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).|  
+|**SubSystem**|Parametro **String** facoltativo.<br /><br /> Specifica l'ambiente per il file eseguibile. La scelta del sottosistema riguarda il simbolo del punto di ingresso o la funzione di punto di ingresso.<br /><br /> Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.<br /><br /> -   **Console** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Native** - **/SUBSYSTEM:NATIVE**<br />-   **Applicazione EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **Driver servizio di avvio EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **ROM EFI** - **/SUBSYSTEM:EFI_ROM**<br />-   **Runtime EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Per altre informazioni, vedere [/SUBSYSTEM (specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).|  
 |**SuppressStartupBanner**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/NOLOGO** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|  
-|**TargetMachine**|Parametro **String** facoltativo.<br /><br /> Specifica la piattaforma di destinazione per il programma o DLL.<br /><br /> Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Per altre informazioni, vedere [/MACHINE (Specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).|  
+|**TargetMachine**|Parametro **String** facoltativo.<br /><br /> Specifica la piattaforma di destinazione per il programma o DLL.<br /><br /> Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Per altre informazioni, vedere [/MACHINE (specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).|  
 |**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory del log di Tracker.|  
 |**TreatLibWarningAsErrors**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, non consente all'attività **LIB** di generare un file di output se *lib.exe* genera un avviso. Se `false`, viene generato un file di output.<br /><br /> Per altre informazioni, vedere l'opzione **/WX** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|  
 |**UseUnicodeResponseFiles**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, consente al sistema di progetto di generare file di risposta UNICODE quando viene generata la Gestione di librerie. Specificare `true` quando i percorsi dei file nel progetto sono UNICODE.|  
 |**Verbose**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, vengono visualizzati i dettagli sullo stato di avanzamento della sessione, inclusi i nomi dei file con estensione *obj* da aggiungere. Le informazioni vengono inviate all'output standard e possono essere reindirizzate a un file.<br /><br /> Per altre informazioni, vedere l'opzione **/VERBOSE** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
