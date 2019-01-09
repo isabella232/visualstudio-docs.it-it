@@ -2,7 +2,6 @@
 title: Uso di modelli 3D
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d38eb26e40d78ccdca57110d5a7b7966393e7859
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 4c1fd3c3a5067c565924a3580691c386453a23b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850739"
 ---
 # <a name="work-with-3d-models"></a>Uso di modelli 3D
 
@@ -31,7 +30,7 @@ L'Editor dei modelli è l'unico strumento necessario per creare modelli 3D di ba
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor dei modelli per lavorare con modelli 3D.|
 |[Esempi dell'editor di modelli](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor dei modelli per eseguire attività comuni di modellazione 3D.|

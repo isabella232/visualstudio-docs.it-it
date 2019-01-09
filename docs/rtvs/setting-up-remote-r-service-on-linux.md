@@ -3,7 +3,6 @@ title: Configurazione di Remote R Service in Linux
 description: Come configurare Remote R Service in Ubuntu e nel sottosistema di Windows per Linux.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835945"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
 
@@ -38,7 +37,7 @@ In questa sezione vengono descritte le opzioni seguenti:
 - [Computer Ubuntu fisico](#physical-ubuntu-computer)
 - [Macchina virtuale del server Ubuntu o macchina virtuale data science in Azure](#ubuntu-server-vm-or-data-science-vm-on-azure)
 - [Contenitore Docker locale o remoto (compilazione pulita)](#local-or-remote-docker-container-clean-build)
-- [Contenitore in esecuzione in istanze di contenitore di Azure](#container-running-on-azure-container-instances)
+- [Contenitore in esecuzione in Istanze di Azure Container](#container-running-on-azure-container-instances)
 
 In ogni caso, nel computer remoto deve essere installato uno degli interpreti R seguenti:
 
@@ -170,4 +169,3 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
     ```
 1. Usare il comando `az container list` per controllare lo stato. Cercare `provisioningState`: `Succeeded`.
 1. Se il provisioning ha esito positivo, è ora possibile connettersi al contenitore. Cercare l'indirizzo IP pubblico, nel campo `ipAddress`, da usare con le credenziali nel file Docker per connettersi al contenitore da RTVS.
-

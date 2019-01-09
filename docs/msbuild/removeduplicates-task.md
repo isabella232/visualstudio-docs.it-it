@@ -1,8 +1,6 @@
 ---
 title: Attività RemoveDuplicates | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b11ac8c615bce56e4dc1a0299076ef36e1b6b373
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831875"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (attività)
 Rimuove gli elementi duplicati dalla raccolta di elementi specificata.  
@@ -33,7 +31,7 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `RemoveDuplicates` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Filtered`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene una raccolta di elementi con tutti gli elementi duplicati rimossi. Viene rispettato l'ordine degli elementi di input, mantenendo la prima istanza di ogni elemento duplicato.|  
 |`Inputs`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Raccolta di elementi da cui rimuovere gli elementi duplicati.|  

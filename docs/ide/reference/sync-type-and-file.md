@@ -2,7 +2,6 @@
 title: Rinominare un file in modo che corrisponda a un tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42e1d3cad1752649446a35abd863390166a57271
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834581"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring con sincronizzazione di un tipo con un nome di file o un nome di file con un tipo
 
@@ -31,7 +30,7 @@ Questo refactoring si applica a:
 
 **Quando:** è stato rinominato un file o un tipo e non è ancora stato aggiornato il file o il tipo corrispondente.
 
-**Perché:** se si inserisce un tipo in un file con un nome diverso o viceversa, risulta difficile trovare ciò che si sta cercando. Rinominando il tipo o il file, il codice diventa più leggibile e la navigazione più semplice.
+**Perché?:** se si inserisce un tipo in un file con un nome diverso o viceversa, risulta difficile trovare ciò che si sta cercando. Rinominando il tipo o il file, il codice diventa più leggibile e la navigazione più semplice.
 
 ## <a name="how-to"></a>Procedura
 

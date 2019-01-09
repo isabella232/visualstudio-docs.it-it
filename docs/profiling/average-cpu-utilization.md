@@ -1,8 +1,6 @@
 ---
 title: Utilizzo CPU medio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.percentage
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee580cdd708c555682f0309759678dee38ad2b1
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8c4c9eeffe2ac0a3b08d8379a50bb88e3c52cbfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988910"
 ---
 # <a name="average-cpu-utilization"></a>Utilizzo CPU medio
 Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo profilato per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.  

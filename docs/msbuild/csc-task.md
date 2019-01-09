@@ -1,8 +1,6 @@
 ---
 title: Attività Csc | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd360a34c70d3208211b861dae064bd4c5a01595
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838333"
 ---
 # <a name="csc-task"></a>Csc (attività)
 Esegue il wrapping di *csc.exe* e produce file eseguibili (*EXE*), librerie a collegamento dinamico (file *DLL*) o moduli di codice (file *NETMODULE*). Per altre informazioni su *csc.exe*, vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -34,7 +32,7 @@ Esegue il wrapping di *csc.exe* e produce file eseguibili (*EXE*), librerie a co
  Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parametro `String[]` facoltativo.<br /><br /> Specifica directory aggiuntive in cui cercare i riferimenti. Per altre informazioni, vedere [-lib (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Parametro `String` facoltativo.<br /><br /> Specifica uno o più moduli che devono fare parte dell'assembly. Per altre informazioni, vedere [-addmodule (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |

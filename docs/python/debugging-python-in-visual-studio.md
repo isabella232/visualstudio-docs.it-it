@@ -1,9 +1,8 @@
 ---
 title: Debug del codice Python
 description: Visual Studio offre funzionalità di debug avanzate per il codice Python, tra cui l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'analisi delle eccezioni e il debug nella finestra interattiva.
-ms.date: 10/10/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7ed108232fc1dd04785f5eeb68d29fb304607ed7
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561749"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060855"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 

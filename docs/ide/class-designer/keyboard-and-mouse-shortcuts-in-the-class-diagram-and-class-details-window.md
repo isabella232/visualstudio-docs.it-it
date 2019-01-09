@@ -2,7 +2,6 @@
 title: Scelte rapide da tastiera e mouse per Progettazione classi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826734"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -30,7 +29,7 @@ ms.locfileid: "49848501"
 
 Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
-|Combinazione del mouse|Contesto|Descrizione|
+|Combinazione del mouse|Contesto|Description|
 | - |-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 |Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
@@ -58,7 +57,7 @@ Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli clas
 
 Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Chiave|Contesto|Descrizione|
+|Chiave|Contesto|Description|
 |---------|-------------|-----------------|
 |**Tasti di direzione**|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 |**Tasti di direzione**|Forme di primo livello|Consentono di spostare forme nel diagramma.|
