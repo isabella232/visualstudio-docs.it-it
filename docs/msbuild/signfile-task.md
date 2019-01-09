@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220749"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647378"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -40,7 +40,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 > [!WARNING]
 > A partire da Visual Studio 2013 Update 3, questa attività ha una nuova firma che consente di specificare la versione del framework di destinazione per il file. L'utente è incoraggiato a usare la nuova firma, ove possibile, perché il processo di MSBuild usa gli hash SHA-256 solo quando il framework di destinazione è .NET 4.5 o versione successiva. Se il framework di destinazione è .NET 4.0 o versione precedente, l'hash SHA-256 non verrà usato.
   
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`CertificateThumbprint`|Parametro `String` obbligatorio.<br /><br /> Specifica il certificato da usare per la firma. Questo certificato deve trovarsi nell'archivio personale dell'utente corrente.|
 |`SigningTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica i file da firmare con il certificato.|
@@ -73,7 +73,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 ```
 
 > [!NOTE]
-> L'identificazione personale del certificato è l'hash SHA-1 del certificato. Per altre informazioni, vedere [Ottenere l'hash SHA-1 di un certificato CA radice attendibile](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)).
+> L'identificazione personale del certificato è l'hash SHA-1 del certificato. Per altre informazioni, vedere [Ottenere l'hash SHA-1 di un certificato CA radice attendibile](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Se si copia e incolla l'identificazione personale presente nei dettagli del certificato, assicurarsi di non includere il carattere invisibile (3F) aggiuntivo, che può impedire a `SignFile` di trovare il certificato.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività MSBuild](../msbuild/msbuild-task-reference.md)   

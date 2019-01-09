@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91204ea5b4303b38397d90761fd9648159174dd4
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667054"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348408"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>R Tools per Visual Studio
 
@@ -29,7 +29,7 @@ Grazie per l'installazione di R Tools per Visual Studio (RTVS). Verificare l'app
 - [Come installare R Tools per Visual Studio](installing-r-tools-for-visual-studio.md)
 - [Submit and browse bugs and feature requests on GitHib](https://github.com/Microsoft/RTVS/issues) (Inviare ed esaminare i bug e le richieste di funzionalità su GitHib)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE) (Esplorare e contribuire al codice sorgente)
-- Per inviare commenti e suggerimenti senza usare Github (modalità preferita), usare il menu **R Tools > Feedback** in Visual Studio.
+- Per inviare commenti e suggerimenti senza usare GitHub (modalità preferita), usare il menu **R Tools > Feedback** in Visual Studio.
 
 ## <a name="microsoft-r-distributions"></a>Distribuzioni di Microsoft R
 

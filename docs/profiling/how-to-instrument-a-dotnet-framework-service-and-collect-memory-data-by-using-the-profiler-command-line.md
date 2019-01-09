@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eafd91fe97a4e4ceb33b9dc315b8b9d9014d27ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914697"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592872"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e raccogliere dati di memoria. È possibile raccogliere i dati di allocazione della memoria oppure i dati di allocazione della memoria e i dati di durata degli oggetti.  
@@ -26,7 +26,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 > [!NOTE]
 >  Non è possibile profilare un servizio con il metodo di strumentazione se il servizio non può essere riavviato dopo l'avvio del computer, ad esempio un servizio che viene avviato all'avvio del sistema operativo.  
 > 
->  Gli strumenti da riga di comando degli strumenti di profilatura sono disponibili nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. 
 
 ## <a name="start-the-profiling-session"></a>Avviare la sessione di profilatura  
  Per raccogliere dati sulle prestazioni da un servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate e lo strumento [VSInstr.exe](../profiling/vsinstr.md) per creare una copia instrumentata del file binario del servizio.  
@@ -51,7 +51,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
    -   **/globaltracegc** e **/globaltracegclife** abilitano la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.  
 
-       |Opzione|Descrizione|  
+       |Opzione|Description|  
        |------------|-----------------|  
        |**/globaltracegc**|Raccoglie solo i dati di allocazione della memoria.|  
        |**/globaltracegclife**|Raccoglie i dati di allocazione della memoria e i dati di durata degli oggetti.|  
@@ -73,7 +73,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    > [!NOTE]
    >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.  
 
-   | Opzione | Descrizione |
+   | Opzione | Description |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda Processi di Gestione attività di Windows. |
    | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -100,7 +100,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 -   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  

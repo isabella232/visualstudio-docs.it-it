@@ -3,18 +3,18 @@ title: Vantaggio MODERNRequirements nelle sottoscrizioni di Visual Studio | Micr
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni sulla suite di prodotti MODERNRequirements inclusi nelle sottoscrizioni di Visual Studio Enterprise selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942868"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740260"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Vantaggio MODERNRequirements4TFS nelle sottoscrizioni di Visual Studio
 
@@ -88,14 +88,18 @@ Alcune sottoscrizioni di Visual Studio selezionate includono una sottoscrizione 
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | Non disponibile                                                          |N/D     |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                          |N/D     |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                          |N/D     |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                          |N/D     |
 | Visual Studio Dev Essentials | N/D  |Non disponibile                                                          |N/D     |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), FTE.  Non include: Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), FTE.  Non include:  Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 

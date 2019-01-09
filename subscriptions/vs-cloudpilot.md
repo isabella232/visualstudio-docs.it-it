@@ -3,22 +3,22 @@ title: Vantaggio CloudPilot nelle sottoscrizioni di Visual Studio | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio CloudPilot disponibile nelle sottoscrizioni di Visual Studio selezionate
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4b7f7730eef2372ecdb19cbb8d87548705a96042
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897075"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740036"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Vantaggio CloudPilot nelle sottoscrizioni di Visual Studio
 
-È possibile spostare le app in Microsoft Azure in pochi semplici passaggi. In pochi minuti, tutte le modifiche al codice richieste possono essere identificate con precisione fino alla singola riga di codice per la corretta migrazione verso Contenitori, Macchine virtuali, Servizi app, SQL Azure e/o Istanza gestita di database SQL. Viene quindi eseguita la migrazione delle app in Azure tramite procedure guidate basate su ASR, DMA e Servizio Migrazione del database. 
+È possibile spostare le app in Microsoft Azure in pochi semplici passaggi. In pochi minuti è possibile identificare con precisione, fino alla singola riga di codice, tutte le modifiche che è necessario apportare al codice per la corretta migrazione verso contenitori, macchine virtuali, Servizi app, SQL Azure e/o Istanza gestita di database SQL. Viene quindi eseguita la migrazione delle app in Azure tramite procedure guidate basate su ASR, DMA e Servizio Migrazione del database. 
 
 CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare rapidamente e con facilità le applicazioni in Azure.  In una frazione del tempo che una valutazione manuale richiederebbe, CloudPilot determina in modo accurato i costi di migrazione PaaS e IaaS di Azure e fornisce indicazioni dettagliate, fino alla singola riga di codice, sulle modifiche al codice da apportare per l'esecuzione dell'applicazione nel cloud. CloudPilot fornisce assistenza nella valutazione iniziale dello sforzo di migrazione al cloud e nella pianificazione dello sviluppo, nel processo di refactoring con modifiche dettagliate a livello di codice per il cloud e nei test finali sulla base di criteri e controlli tecnologici a livello aziendale.
 
@@ -63,8 +63,8 @@ CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare r
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, | 2 licenze, 90 giorni, analisi illimitate       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | 1 licenza, 30 giorni, un'analisi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 2 licenze, 90 giorni, analisi illimitate       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 licenza, 30 giorni, un'analisi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Dev Essentials | N/D  | Non disponibile | N/D |
@@ -73,8 +73,11 @@ CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare r
 
 
 
-<sup>1</sup> *Include: Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Include:  Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

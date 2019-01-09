@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 13983379dec4ec998172d0d11e0a7810c8cf02c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561681"
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: Eseguire il programma
 Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.
 
- ![collegamento al video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Tutorial 1: Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1) o [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Esercitazione 1: Creare un visualizzatore di immagini in C# - Video 1). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![Collegamento a video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [Esercitazione 1: Creare un visualizzatore immagini in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ## <a name="to-run-your-program"></a>Per eseguire il programma
 
@@ -55,10 +55,10 @@ Barra degli strumenti **Debug**
     -   Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
 
     > [!NOTE]
-    >  Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md).
+    >  Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
+-   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
 
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).
+-   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).

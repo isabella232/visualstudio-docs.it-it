@@ -3,18 +3,18 @@ title: Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio | Micro
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942244"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739536"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -95,22 +95,25 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | 3 mesi                                                            |No.  Disponibile solo per i nuovi sottoscrittori         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |No.  Disponibile solo per i nuovi sottoscrittori         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 mesi                                             |  No.  Disponibile solo per i nuovi sottoscrittori         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 mesi                                              | No.  Disponibile solo per i nuovi sottoscrittori         |
 | Visual Studio Dev Essentials | N/D  | 3 mesi |No.  Disponibile solo per i nuovi sottoscrittori |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Non include: Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Non include:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
 
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>D: Rinnovando la sottoscrizione viene rinnovato anche il vantaggio LinkedIn Learning?
-R: No, l'offerta LinkedIn Learning è disponibile a solo per i nuovi sottoscrittori.
+R:  No, l'offerta LinkedIn Learning è disponibile solo per i nuovi sottoscrittori.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con LinkedIn Learning?  Vedere queste risorse:

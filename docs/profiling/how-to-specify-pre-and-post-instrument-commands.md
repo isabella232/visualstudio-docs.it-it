@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844638"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53593002"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre e post-strumentazione
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre- e post-strumentazione
 
 È possibile specificare i comandi da eseguire prima o dopo che vengano instrumentati i file binari in una sessione di prestazioni. Tutti i comandi eseguibili dalla riga di comando possono essere specificati come eventi pre-strumentazione o post-strumentazione. Ad esempio, è possibile specificare comandi che automatizzano la riapposizione della firma di un assembly con una chiave con nome sicuro in un file batch eseguito dopo la strumentazione dei file binari.
 
@@ -31,21 +31,7 @@ ms.locfileid: "34844638"
 
 La directory di lavoro nella quale vengono eseguiti i comandi dipende dal sistema operativo in cui è in esecuzione [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] e dalla piattaforma di destinazione dell'applicazione profilata.
 
- **Computer a 32 bit**
-
-Nei computer a 32 bit la directory predefinita per gli strumenti di profilatura è *Unità\Programmi\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
-
-**Computer a 64 bit**
-
-Nei computer a 64 bit specificare il percorso in base alla piattaforma di destinazione dell'applicazione profilata:
-
-- La directory predefinita per gli strumenti di profilatura per applicazioni a 32 bit è la seguente:
-
-     *Unità\Programmi (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
-
-- La directory predefinita per gli strumenti di profilatura per applicazioni a 64 bit è la seguente:
-
-     *Unità\Programmi (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
+Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Per specificare comandi pre-strumentazione
 

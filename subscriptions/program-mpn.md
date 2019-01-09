@@ -3,24 +3,24 @@ title: Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner N
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876769"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739452"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Sottoscrizioni per i partner con una competenza MPN
-Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottiene un numero di base di sottoscrizioni di Visual Studio Enterprise. Questo vantaggio di base cambia se il partner ottiene almeno una competenza Gold. La sottoscrizione di Visual Studio Enterprise è un'offerta personalizzata quasi equivalente alla [sottoscrizione cloud annuale di Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ma con alcuni vantaggi rimossi (molti dei quali sono disponibili separatamente per i partner come vantaggi MPN generali anziché come parte delle sottoscrizioni di Visual Studio Enterprise offerte tramite MPN).
+Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottiene un numero di base di sottoscrizioni di Visual Studio Enterprise. Questo vantaggio di base cambia se il partner ottiene almeno una competenza Gold. La sottoscrizione di Visual Studio Enterprise è un'offerta personalizzata quasi equivalente alla [sottoscrizione standard di Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ma con alcuni vantaggi rimossi (molti dei quali sono disponibili separatamente per i partner come vantaggi MPN generali anziché come parte delle sottoscrizioni di Visual Studio Enterprise offerte tramite MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Vantaggio di base Visual Studio quando si ottiene almeno una competenza di qualsiasi tipo
 

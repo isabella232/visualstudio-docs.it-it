@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18ef27d60c5460e43d863b5258bcefe08ee22b17
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388767"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348474"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 
@@ -34,11 +34,11 @@ ms.locfileid: "52388767"
 |Impostare il tipo di carattere e il colore in determinati editor, finestre di dialogo, finestre di strumenti e altri elementi dell’interfaccia utente.|[Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personalizzare il percorso dei file vssettings che archiviano le informazioni sulle impostazioni utente.|[Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Selezionare un linguaggio predefinito per Visual Studio.|[Impostazioni internazionali, Ambiente, finestra di dialogo Opzioni](../../ide/reference/international-settings-environment-options-dialog-box.md)|
-|Per impostare le opzioni di mappatura della tastiera.|[Tastiera, Ambiente, finestra di dialogo Opzioni](../../ide/reference/keyboard-environment-options-dialog-box.md)|
+|Impostare le opzioni di mappatura della tastiera.|[Tastiera, Ambiente, finestra di dialogo Opzioni](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Per specificare se le notifiche sono abilitate.|[Notifiche, Ambiente, finestra di dialogo Opzioni](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Per specificare le opzioni per la finestra Avvio veloce.|[Avvio veloce, Ambiente, finestra di dialogo Opzioni](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Per specificare le opzioni della pagina iniziale.|[Avvio, Ambiente, finestra di dialogo Opzioni](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Per specificare se effettuare il roaming delle impostazioni tra computer.|[Impostazioni sincronizzate, Ambiente, finestra di dialogo Opzioni](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|Per specificare se effettuare il roaming delle impostazioni tra computer.|[Impostazioni sincronizzate, Ambiente, finestra di dialogo Opzioni](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Informazioni su come impostare le opzioni per attività ed elenchi di attività.|[Elenco attività, Ambiente, finestra di dialogo Opzioni](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Modificare le pagine iniziale e di ricerca predefinite modificando l'editor di origine del sistema e configurando le opzioni di Internet Explorer.|[Web Browser, Ambiente, finestra di dialogo Opzioni](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

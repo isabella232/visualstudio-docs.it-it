@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942998"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561668"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.
@@ -128,8 +128,7 @@ Non è possibile usare la valutazione delle espressioni in fase di progettazione
 
 - [Spostarsi nel codice con il Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Debug in Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Debugger Basics](../../debugger/getting-started-with-the-debugger.md) (Nozioni di base sul debugger)
-- [Procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Presentazione del debugger](../../debugger/debugger-feature-tour.md)   
+- [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Uso delle espressioni regolari in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

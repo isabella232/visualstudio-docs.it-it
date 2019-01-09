@@ -1,6 +1,6 @@
 ---
 title: Pubblicare in IIS importando le impostazioni di pubblicazione
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Creare e importare un profilo di pubblicazione per distribuire un'applicazione da Visual Studio in IIS
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808465"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348506"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione in IIS importando le impostazioni di pubblicazione in Visual Studio
 
@@ -41,7 +41,7 @@ Il file delle impostazioni di pubblicazione (*\*.publishsettings*) non corrispon
 
 * È necessario aver installato Visual Studio 2017 e avere il carico di lavoro di sviluppo **ASP.NET** e **.NET Framework**. Per un'app .NET Core, è necessario anche il carico di lavoro **.NET Core**.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  per installarlo gratuitamente.
 
 * Per generare il file delle impostazioni di pubblicazione da IIS, è necessario avere un computer che esegue Windows Server 2012 o Windows Server 2016 e aver configurato correttamente il ruolo Server Web di IIS. È necessario aver installato anche ASP.NET 4.5 o ASP.NET Core. Per ASP.NET Core, vedere [Pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Per ASP.NET 4.5, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 e ASP.NET 4.5).
 

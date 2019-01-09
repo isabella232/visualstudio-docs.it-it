@@ -1,5 +1,5 @@
 ---
-title: "Procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)"
+title: "Procedura: Visualizzare l'ereditarietà tra tipi (Progettazione classi)"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000494"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684483"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedura: Visualizzare l'ereditarietà tra tipi in Progettazione classi
 
-In **Progettazione classi** è possibile visualizzare la relazione di ereditarietà, se disponibile, tra un tipo di base e i relativi tipi derivati nel diagramma classi. Per creare una relazione di ereditarietà tra due tipi, se non ne esiste alcuna, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
+In **Progettazione classi** è possibile visualizzare la relazione di ereditarietà, se disponibile, tra un tipo di base e i relativi tipi derivati nel diagramma classi. Per creare una relazione di ereditarietà, se non ne esiste alcuna, tra due tipi, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Per trovare il tipo di base
 
@@ -50,4 +50,4 @@ In **Progettazione classi** è possibile visualizzare la relazione di ereditarie
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Creare associazioni tra tipi](how-to-create-associations-between-types.md)
-- [Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)
+- [Visualizzazione di tipi e relazioni](designing-and-viewing-classes-and-types.md)

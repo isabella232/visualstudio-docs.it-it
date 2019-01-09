@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: passare dalla notazione membro alla notazione associazione (Progettazione classi)'
+title: 'Procedura: Passare dalla notazione membro alla notazione associazione e viceversa (Progettazione classi)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: db6bcf1d44be4a904b38877717aff589906995a7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957801"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684155"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione in Progettazione classi
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione e viceversa in Progettazione classi
 
 In **Progettazione classi** è possibile modificare il modo in cui il diagramma classi rappresenta una relazione di associazione tra due tipi dalla notazione membro alla notazione associazione e viceversa. I membri visualizzati come linee di associazione spesso offrono una visualizzazione utile della correlazione tra tipi.
 
@@ -48,5 +48,5 @@ Nel diagramma classi, fare clic con il pulsante destro del mouse sulla linea di 
 
 - [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md)
 - [Procedura: Visualizzare l'ereditarietà tra tipi](how-to-view-inheritance-between-types.md)
-- [Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)
+- [Visualizzazione di tipi e relazioni](designing-and-viewing-classes-and-types.md)
 - [Procedura: Visualizzare un'associazione di raccolte](how-to-visualize-a-collection-association.md)

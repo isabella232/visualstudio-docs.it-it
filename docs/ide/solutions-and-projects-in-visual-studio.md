@@ -11,7 +11,6 @@ f1_keywords:
 - vs.addnewitem
 - vs.addexistingitem
 - VS.SolutionExplorer
-- vs.newproject
 - vs.addexistingsolutionitem
 - vs.environment.solutions
 - VS.SolutionExplorer.Solutions
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0d6d5b6e6d8af8d03301c7f9f8e192e8f10df3ef
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159672"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425760"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -56,7 +55,7 @@ In Visual Studio, il file di progetto viene utilizzato da **Esplora soluzioni** 
 
 ## <a name="solutions"></a>Soluzioni
 
-Un progetto è contenuto all'interno di una *soluzione*. Una soluzione contiene uno o più progetti correlati, insieme alle informazioni di compilazione, alle impostazioni della finestra di Visual Studio e a vari file non associati a un progetto particolare. Una soluzione è descritta da un file di testo (estensione *.sln*) con un formato univoco specifico, di cui non è prevista la modifica manuale.
+Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una soluzione non è una "risposta". È semplicemente un contenitore che include uno o più progetti correlati, insieme a informazioni di compilazione, impostazioni della finestra di Visual Studio e a vari file non associati a un progetto particolare. Una soluzione è descritta da un file di testo (con estensione *sln*) con un formato univoco specifico, per il quale non è prevista la modifica manuale.
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 

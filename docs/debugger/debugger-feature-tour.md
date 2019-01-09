@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882666"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561538"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -205,17 +205,17 @@ Per altre informazioni, vedere [Debug live ASP.NET apps using the Snapshot Debug
 
 ## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Visualizzare snapshot con la funzionalità per tornare indietro di IntelliTrace (Visual Studio Enterprise)
 
-La **funzionalità per tornare indietro di IntelliTrace** crea automaticamente uno snapshot dell'applicazione in corrispondenza di ogni punto di interruzione e ogni evento di esecuzione di passaggio del debugger. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
+La **funzionalità per tornare indietro di IntelliTrace** crea automaticamente uno snapshot dell'applicazione in corrispondenza di ogni evento di punto di interruzione ed esecuzione di passaggio del debugger. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
 È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-![Pulsanti Passaggio precedente e Passaggio successivo](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Passaggio precedente e Passaggio successivo")
+![Pulsanti Passo indietro e Passo avanti](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Passo indietro e Passo avanti")
 
 Per altre informazioni, vedere la pagina [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](../debugger/view-historical-application-state.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa esercitazione è stata offerta una breve panoramica di molte funzionalità del debugger. È possibile esaminare queste funzionalità in modo più approfondito usando un'applicazione di esempio
+In questa esercitazione è stata offerta una breve panoramica di molte funzionalità del debugger. È possibile esaminare in modo più approfondito una di queste funzionalità, i punti di interruzione.
 
 > [!div class="nextstepaction"]
-> [Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Informazioni sull'uso dei punti di interruzione](../debugger/using-breakpoints.md)

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 27a76ab16da00fe68b6dffbc072b926bf04fa502
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750786"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441769"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -258,7 +258,7 @@ Nei passaggi precedenti è stato aggiunto al progetto *webpack-config.js*. Ora s
     }
     ```
 
-    Il codice di configurazione webpack indica a Webpack di usare il caricatore TypeScript per eseguire il transpile di JSX.
+    Il codice di configurazione webpack indica a webpack di usare il caricatore TypeScript per eseguire il transpile di JSX.
 
 1. Aprire *tsconfig.json* e sostituire il codice predefinito con il seguente, che specifica le opzioni del compilatore TypeScript:
 

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062816"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803507"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -196,7 +196,7 @@ Il supporto di Python in Visual Studio offre diversi strumenti per spostarsi rap
 
 La barra di spostamento viene visualizzata nella parte superiore di ogni finestra dell'editor e include un elenco di definizioni su due livelli. L'elenco a discesa a sinistra contiene le definizioni di classi e funzioni di primo livello nel file corrente. L'elenco a discesa a destra visualizza un elenco di definizioni all'interno dell'ambito indicato a sinistra. Spostandosi nell'editor, gli elenchi vengono aggiornati in modo da indicare il contesto corrente ed è anche possibile selezionare una voce dagli elenchi per passarvi direttamente.
 
-![Barra di navigazione] nell'editor di Visual Studio(media/code-editing-navigation-bar.png)
+![Barra di spostamento nell'editor di Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Per nascondere la barra di spostamento, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Generale** e deselezionare **Impostazioni** > **Barra di spostamento**.

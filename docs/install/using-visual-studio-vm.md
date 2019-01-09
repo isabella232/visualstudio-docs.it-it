@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: fdebcfcab1907c6e91b2d4926b86038c560d040e
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159971"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425812"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -32,13 +32,13 @@ Gli utenti che non hanno ancora familiarità con Azure possono [creare un accoun
 
 ## <a name="what-configurations-and-versions-are-available"></a>Configurazioni e versioni disponibili
 
-In Azure Marketplace sono disponibili immagini per le versioni più recenti principali: Visual Studio 2017 e Visual Studio 2015. Per ogni versione principale vengono visualizzate la versione definitiva (RTW) rilasciata in origine e le versioni aggiornate più recenti. Per ognuna di queste versioni sono disponibili le edizioni Visual Studio Enterprise e Visual Studio Community. Queste immagini vengono aggiornate almeno una volta al mese in modo da includere gli aggiornamenti più recenti di Visual Studio e Windows. Anche se i nomi delle immagini rimangono invariati, la descrizione di ogni immagine include la versione del prodotto installato e la data di validità dell'immagine.
+In Azure Marketplace sono disponibili immagini per le versioni più recenti principali: Visual Studio 2017 e Visual Studio 2015.  Recentemente è stato aggiunto il supporto per le anteprime della prossima versione principale: Visual Studio 2019.  Per ogni versione principale rilasciata, sono visualizzate la versione definitiva (RTW) rilasciata in origine e le versioni aggiornate più recenti.  Per ognuna di queste versioni sono disponibili le edizioni Visual Studio Enterprise e Visual Studio Community.  Queste immagini vengono aggiornate almeno una volta al mese in modo da includere gli aggiornamenti più recenti di Visual Studio e Windows.  Anche se i nomi delle immagini rimangono invariati, la descrizione di ogni immagine include la versione del prodotto installato e la data di validità dell'immagine.
 
 | Versione di rilascio                                              | Edizioni                     |     Versione del prodotto      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019: Preview (Preview 1)                   |           Enterprise         | Versione 16.0.0 Preview 1 |
-| Visual Studio 2017: Versione più recente (15.9)                    |    Enterprise, Community     |      Versione 15.9.0      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versione 15.0.18     |
+|    Visual Studio 2019: Preview (Preview 1)                   |           Enterprise         | Versione 16.0.0 Preview 1 |
+| Visual Studio 2017: Versione più recente (15.9)                    |    Enterprise, Community     |      Versione 15.9.4      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versione 15.0.20     |
 |   Visual Studio 2015: Versione più recente (Update 3)                      |    Enterprise, Community     |  Versione 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             nessuno             | (Scaduto per la manutenzione)  |
 

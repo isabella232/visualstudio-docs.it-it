@@ -3,18 +3,18 @@ title: Vantaggio IDE di Visual Studio nella sottoscrizione di Visual Studio | Mi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/09/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923563"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739799"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Uso del vantaggio di Visual Studio 2017
 
@@ -63,13 +63,16 @@ Per scaricare l'ambiente IDE:
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Yes          |
-| Visual Studio Professional (Standard, cloud annuale, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Yes          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Yes         |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Sì          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
-| Visual Studio Dev Essentials | N/D  | Community di Visual Studio |Yes |
+| Visual Studio Dev Essentials | N/D  | Community di Visual Studio |Sì |
 
-<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  Non include: MCT Software & Services.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  Non include: MCT Software & Services.*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

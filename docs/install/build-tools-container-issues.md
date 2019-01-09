@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529d967f34a5c99c8416058acad317cdc47d1053
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: d817b7d45c23e813a8d3f80e2b74ea860bb8a3cf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158619"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307765"
 ---
 # <a name="known-issues-for-containers"></a>Problemi noti dei contenitori
 
@@ -27,14 +27,16 @@ Esistono alcuni problemi durante l'installazione di Visual Studio in un contenit
 
 I problemi noti seguenti si verificano quando si installa Visual Studio Build Tools 2017 in un contenitore di Windows.
 
-* Non è possibile installare Visual Studio in un contenitore basato sull'immagine microsoft/windowsservercore:10.0.14393.1593. Le immagini contrassegnate con versioni di Windows più recenti o precedenti dovrebbero funzionare.
-* Non è possibile installare versioni di Windows SDK precedenti alla 10.0.14393. Alcuni pacchetti non vengono installati e i carichi di lavoro che dipendono da tali pacchetti non funzioneranno.
+* Non è possibile installare Visual Studio in un contenitore basato sull'immagine microsoft/windowsservercore:10.0.14393.1593. Le immagini contrassegnate con versioni di Windows precedenti o successive alla versione 10.0.14393 dovrebbero funzionare.
+* Non è possibile installare versioni di Windows SDK precedenti alla versione 10.0.14393. Alcuni pacchetti non vengono installati e i carichi di lavoro che dipendono da tali pacchetti non funzioneranno.
 * Passare `-m 2GB` (o più) durante la compilazione dell'immagine. Alcuni carichi di lavoro richiedono più memoria rispetto al valore predefinito di 1 GB durante l'installazione.
 * Configurare Docker per l'uso di dischi più grandi rispetto all'impostazione predefinita di 20 GB.
 * Passare `--norestart` sulla riga di comando. Alla data di redazione di questo articolo, qualsiasi tentativo di riavviare un contenitore di Windows dall'interno del contenitore restituisce `ERROR_TOO_MANY_OPEN_FILES` all'host.
 * Se si basa l'immagine direttamente su microsoft/windowsservercore, .NET Framework potrebbe non essere installato correttamente e non viene indicato alcun errore di installazione. Il codice gestito potrebbe non essere eseguito dopo il completamento dell'installazione. Basare invece l'immagine su [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o versione successiva. Ad esempio, viene visualizzato un errore durante la compilazione con MSBuild come:
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): errore MSB6003: non è stato possibile eseguire il file eseguibile "csc.exe" dell'attività. Impossibile caricare il file o l'assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' o una delle relative dipendenze. Impossibile trovare il file specificato.
+
+* Non è possibile installare Visual Studio 2017 versione 15.8 o versioni precedenti (qualsiasi prodotto) in mcr<span></span>.microsoft.com/windows/servercore:1809 o versioni successive. Per altre informazioni, vedere https://aka.ms/setup/containers/servercore1809.
 
 ## <a name="build-tools-container"></a>Contenitore di Build Tools
 

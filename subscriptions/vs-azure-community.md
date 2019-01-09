@@ -3,18 +3,18 @@ title: Vantaggio Community di Azure nella sottoscrizione di Visual Studio | Micr
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni sul vantaggio Community di Azure nelle sottoscrizioni di Visual Studio selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937460"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739385"
 ---
 # <a name="azure-community"></a>Community di Azure
 
@@ -54,15 +54,19 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 
 |                                          Livello di sottoscrizione                                           |     Canali      |    Vantaggio    | Rinnovabile? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard, cloud annuale)                           | VL, Azure, Retail |   Un anno    |    Yes     |
-|                          Visual Studio Professional (Standard, cloud annuale)                          | VL, Azure, Retail |   Un anno    |    Yes     |
-|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Un anno    |    Yes     |
-|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Un anno    |    Yes     |
+|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Un anno    |    Sì     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Un anno    |    Sì     |
+|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Un anno    |    Sì     |
+|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Un anno    |    Sì     |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile)Visual Studio Enterprise (cloud mensile), NFR<sup>1</sup> |        Tutti        | Non disponibile |     No     |
 |                                     Visual Studio Dev Essentials                                      |        N/D        | Non disponibile |     No     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup> *Include: Not for Resale (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 

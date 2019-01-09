@@ -3,18 +3,18 @@ title: Vantaggio Office 365 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/4/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244463"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802108"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 nelle sottoscrizioni di Visual Studio
 
@@ -31,7 +31,7 @@ Attenersi alla procedura seguente per il download e l'attivazione di Office 365:
 0. Per installare Office 365, è necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
    > [!div class="mx-imgBorder"]
    > ![Recupera codice di Office 365](_img/vs-office365/vs-office365-get-key.png)
-0. Una finestra visualizza i codici già recuperati e quelli disponibili.  Per ottenere un nuovo codice, fare clic su **Richiedi chiave** nell'elenco **Office Professional Plus 2019**.
+0. Una finestra visualizza i codici già recuperati e quelli disponibili.  Per ottenere un nuovo codice, fare clic su **Claim key** (Richiedi codice) sotto la voce di elenco **Office Professional Plus 2019**.
    > [!div class="mx-imgBorder"]
    > ![Richiedi chiave di Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Prendere nota del codice appena richiesto. È sempre possibile tornare a questo elenco per visualizzarlo di nuovo.
@@ -55,15 +55,20 @@ Se si prevede di sviluppare applicazioni per Office, è opportuno attivare l'[ab
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail| Disponibile       |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponibile       |  Sì          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Non disponibile       |  N/D          |
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | Non disponibile                                                            |  N/D          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                            |  N/D          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 | Visual Studio Dev Essentials | N/D  | Non disponibile |N/D |
 
-<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
+
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 

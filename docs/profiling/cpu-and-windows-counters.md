@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592443"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -97,7 +97,7 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, Ã
 
       **Nota** Fare clic su **Annulla** per tornare alla configurazione di campionamento precedente.
 
-     oppure
+     -oppure-
 
    - Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.
 
@@ -113,7 +113,7 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, Ã
 
 4. Selezionare un gruppo di contatori dall'elenco **Categoria contatori**. Il contatore di Windows per il gruppo viene visualizzato nella casella di riepilogo.
 
-     **Nota** Fare clic su **Annulla** per tornare alla configurazione di raccolta contatori precedente.
+     **Nota:** Fare clic su **Annulla** per tornare alla configurazione di raccolta contatori precedente.
 
 ### <a name="command-line"></a>Riga di comando
 
@@ -127,9 +127,7 @@ Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) Ã¨ po
 
      **\<Directory degli strumenti per le prestazioni di Visual Studio > \VSPerfCmd /QueryCounters.**
 
-     dove  *\<Directory degli strumenti per le prestazioni di Visual Studio>* Ã¨ il percorso alla directory degli strumenti per le prestazioni della propria installazione di Visual Studio, in genere
-
-     *C:\Programmi\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     dove *\<Directory degli strumenti per le prestazioni di Visual Studio>* Ã¨ il percorso della directory degli strumenti per le prestazioni dell'installazione di Visual Studio in uso. Per ottenere il percorso degli strumenti per le prestazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Vedere anche
 

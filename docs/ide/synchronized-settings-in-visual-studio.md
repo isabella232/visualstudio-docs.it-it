@@ -1,23 +1,21 @@
 ---
 title: Sincronizzare le impostazioni
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-f1_keywords:
-- VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7dcddc06233f439547f0725c1fb39fff26152237
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388491"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348419"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -51,11 +49,16 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Disattivare le impostazioni sincronizzate per un computer specifico
 
-Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. Per disattivare le impostazioni sincronizzate in un computer passare alla pagina **Strumenti** > **Opzioni** > **Ambiente** > **Account** e deselezionare **Sincronizza le impostazioni in tutti i dispositivi durante l'accesso a Visual Studio**. Se, ad esempio, si decide di non sincronizzare le impostazioni di Visual Studio nel computer "A", le modifiche delle impostazioni apportate nel computer "A" non verranno visualizzate nel computer "B" o nel computer "C". I computer "B" e "C" continueranno a sincronizzarsi tra di loro, ma non con il computer "A".
+Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. Per disattivare le impostazioni sincronizzate in un computer passare alla pagina **Strumenti** > **Opzioni** > **Ambiente** > **Account** e deselezionare **Sincronizza le impostazioni in tutti i dispositivi durante l'accesso a Visual Studio**.
+
+Se, ad esempio, si decide di non sincronizzare le impostazioni di Visual Studio nel computer "A", le modifiche delle impostazioni apportate nel computer "A" non verranno visualizzate nel computer "B" o nel computer "C". I computer "B" e "C" continueranno a sincronizzarsi tra di loro, ma non con il computer "A".
+
+> [!NOTE]
+> Se si sceglie di non sincronizzare le impostazioni deselezionando l'opzione nella pagina **Strumenti** > **Opzioni** > **Ambiente** > **Account**, altre versioni o edizioni di Visual Studio in uso nello stesso computer non saranno interessate. Tali installazioni side-by-side di Visual Studio continueranno a sincronizzare le impostazioni (a meno che non si deseleziona anche l'opzione).
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizzare le impostazioni tra prodotti e edizioni della famiglia Visual Studio
 
-Le impostazioni possono essere sincronizzate tra tutte le edizioni di Visual Studio, compresa la Community Edition. Le impostazioni vengono sincronizzate anche tra prodotti della famiglia Visual Studio. Tuttavia, ogni prodotto di questa famiglia può avere impostazioni proprie che non vengono condivise con Visual Studio. Ad esempio, impostazioni specifiche di un prodotto nel computer "A" vengono condivise con un altro prodotto nel computer "B", ma non con Visual Studio nei computer "A" o "B".
+Le impostazioni vengono sincronizzate nelle versioni e nelle edizioni di Visual Studio installate *side-by-side*. Le impostazioni vengono sincronizzate anche nei prodotti della famiglia Visual Studio, come ad esempio Blend per Visual Studio. Tuttavia, ogni prodotto di questa famiglia può avere impostazioni proprie che non vengono condivise con Visual Studio. Ad esempio, le impostazioni specifiche per Blend per Visual Studio nel computer "A"non vengono condivise con Visual Studio nei computer "A" o "B".
 
 ## <a name="side-by-side-synchronized-settings"></a>Impostazioni sincronizzate affiancate
 
@@ -78,4 +81,4 @@ Se attualmente sono presenti installazioni side-by-side di Visual Studio 2017 e 
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Impostazioni dell'ambiente](../ide/environment-settings.md)
-- [Ambiente > Account, finestra di dialogo Opzioni](reference/synchronized-settings-environment-options-dialog-box.md)
+- [Ambiente > Account, finestra di dialogo Opzioni](reference/accounts-environment-options-dialog-box.md)

@@ -1,43 +1,49 @@
 ---
 title: Suggerire una funzionalità
-description: Descrive i suggerimenti disponibili in Developer Community, come immettere un suggerimento e come vengono usati i suggerimenti da Microsoft nella roadmap per Visual Studio
-ms.date: 11/15/2018
+description: Descrive i suggerimenti disponibili in Developer Community e spiega come immettere un suggerimento e come vengono usati i suggerimenti da Microsoft nella roadmap per Visual Studio.
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160036"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592456"
 ---
 # <a name="overview-suggest-a-feature"></a>Panoramica: Suggerire una funzionalità
 
-È stata introdotta una nuovissima esperienza per suggerire funzionalità insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com). Si tratta di un nuovo modo di interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
+È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com), consente di suggerire nuove funzionalità. Si tratta di un nuovo modo di interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
 
-Fino a ora, gli utenti di Visual Studio hanno usato il forum User Voice per proporre le proprie idee riguardo a nuove funzionalità. L'esperienza per il *suggerimento di una funzionalità* in Developer Community permette di passare dal forum User Voice a una singola piattaforma per tutti i commenti e suggerimenti che interagisce direttamente con i team dei prodotti Visual Studio.
+![Pulsante Suggest a Feature (Suggerisci funzionalità) in Developer Community](media/suggest-a-feature/suggest-feature-button.png)
+
+È anche possibile iniziare a suggerire una nuova funzionalità direttamente da Visual Studio, scegliendo **Invia un suggerimento** dall'icona **Commenti e suggerimenti** nella parte superiore destra della finestra principale di Visual Studio:
+
+![Menu Invia un suggerimento in Visual Studio](media/suggest-a-feature/provide-suggestion.png)
+
+Se si sceglie **Invia un suggerimento**, si passa a [Developer Community](https://developercommunity.visualstudio.com), in cui è possibile immettere il suggerimento.
+
+## <a name="user-voice"></a>User Voice
+
+Finora, per suggerire idee per nuove funzionalità gli utenti di Visual Studio usavano User Voice. Con l'aggiunta del pulsante *Suggest a feature* (Suggerisci funzionalità) in Developer Community, tutti i commenti e i suggerimenti per il team del prodotto Visual Studio si trovano ora in un'unica posizione.
+
+Il sito User Voice è stato reso di sola lettura. È possibile vedere i post esistenti quando necessario per il contesto, ma tutti i suggerimenti di nuove funzionalità devono essere inviati da Developer Community.
 
 È stata eseguita la migrazione di un set iniziale di idee dal forum User Voice a Developer Community. La migrazione è stata eseguita in base all'impatto sulla community dei commenti e suggerimenti e delle priorità della roadmap dei prodotti. Chi si aspettava di trovare un suggerimento che non è stato incluso, può aggiungerlo liberamente in Developer Community.
 
 ## <a name="votes"></a>Voti
 
-Il sistema di voto in User Voice funziona diversamente da quello in Developer Community. Per mantenere l'integrità dei conteggi di voti di Developer Community e per evitare che i dati vengano falsati, i conteggi di voti di User Voice vengono visualizzati prevalentemente come tag accanto a ogni suggerimento di funzionalità. Passando a votare i suggerimenti nel sito Developer Community migliorato, i nuovi conteggi di voti verranno visualizzati separatamente dai conteggi di voti di User Voice.
-
-## <a name="user-voice"></a>User Voice
-
-Il sito User Voice è ora di sola lettura e può essere consultato per informazioni sul contesto. Tutti i nuovi suggerimenti di funzionalità devono essere inviati in Developer Community.
+Il sistema di voto di Developer Community è diverso da quello di User Voice. Per mantenere l'integrità dei conteggi di voti di Developer Community e per evitare che i dati vengano falsati, i conteggi di voti di User Voice vengono visualizzati prevalentemente come tag accanto a ogni suggerimento di funzionalità. Passando a votare i suggerimenti nel sito Developer Community migliorato, i nuovi conteggi di voti verranno visualizzati separatamente dai conteggi di voti di User Voice.
 
 ## <a name="suggestion-status"></a>Stato dei suggerimenti
 
-Dopo aver inviato un suggerimento di funzionalità, gli stati indicano a che punto si trova il suggerimento inviato all'interno del suo ciclo di vita. Man mano che i commenti e suggerimenti vengono presi in considerazione e avanzano lungo il flusso di lavoro, viene aggiunto un tag con lo stato corrispondente.
-
-I vari stati associati ai suggerimenti delle funzionalità sono elencati di seguito, insieme a una descrizione del significato e agli indicatori di colore.
+Dopo aver inviato un suggerimento di funzionalità, gli stati indicano a che punto si trova il suggerimento inviato all'interno del suo ciclo di vita. Man mano che i commenti e suggerimenti vengono presi in considerazione e avanzano lungo il flusso di lavoro, viene aggiunto un tag con lo stato corrispondente. Sono qui elencati i diversi stati associati ai suggerimenti di nuove funzionalità, con una descrizione del significato e degli indicatori colore.
 
 ![Stato Nuovo per i suggerimenti in Developer Community](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ Il sistema di voto in User Voice funziona diversamente da quello in Developer Co
 Microsoft si impegna a ricevere i suggerimenti delle funzionalità e a intraprendere azioni per fornire esperienze utili ai clienti. Le azioni da intraprendere riguardo ai suggerimenti vengono classificate in ordine di priorità in base all'impatto sulla più ampia community. Anche quando non è possibile rispondere personalmente al suggerimento, i commenti e i suggerimenti vengono indirizzati al team più appropriato e valutati con attenzione.
 
 Il tempo di risposta dipende dallo stato associato al suggerimento. Esaminare la descrizione degli stati in questo documento per identificare i tempi di risposta.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Introducing 'Suggest a Feature' in Developer Community (Visual Studio blog)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (Presentazione di 'Suggest a Feature' (Suggerisci funzionalità) in Developer Community (blog di Visual Studio))

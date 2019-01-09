@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd6f8befce66a117f5f2dcb598a7359ba9c15c0
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882392"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307645"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Eseguire il training dei modelli di intelligenza artificiale in Azure Batch per intelligenza artificiale
 
@@ -54,7 +54,7 @@ Azure Batch per intelligenza artificiale è un servizio gestito che consente ai 
 
     ![Raccolta di esempi](media/train-model/mnist-startup.png)
 
-8. <strong>Fare clic con il pulsante destro del mouse sul progetto **MNIST, **Invia processo</strong>
+8. <strong>Fare clic con il pulsante destro del mouse **sul progetto MNIST**, **Invia processo**</strong>
 
     ![Raccolta di esempi](media/train-model/submit-job.png)
 9. Selezionare il cluster **Azure Batch per intelligenza artificiale** e quindi fare clic su **Importa**. Selezionare il file `AzureBatchAI_TF_MNIST.json` per inserire velocemente alcuni valori predefiniti, ad esempio l'immagine di Docker da usare. Fare quindi clic su **Invia**.

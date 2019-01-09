@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065117"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684821"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -144,7 +144,7 @@ Quando il debugger viene sospeso, è possibile esaminare le variabili e gli stac
 
 ![Verifica del valore di runtime di Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Passare il mouse su una variabile per visualizzarne il valore corrente e i riferimenti. Se viene visualizzato un valore non previsto, è probabile che ci sia un bug nel codice precedente o chiamante. Per i dettagli sul debug, [leggere altre informazioni ](../debugger/getting-started-with-the-debugger.md) sull'uso del debugger.
+Passare il mouse su una variabile per visualizzarne il valore corrente e i riferimenti. Se viene visualizzato un valore non previsto, è probabile che ci sia un bug nel codice precedente o chiamante. Per i dettagli sul debug, [leggere altre informazioni ](../debugger/debugger-feature-tour.md) sull'uso del debugger.
 
 Visual Studio visualizza anche la finestra **Strumenti di diagnostica**, in cui è possibile osservare l'utilizzo della memoria e della CPU dell'app nel corso del tempo. Durante lo sviluppo dell'app, è possibile usare questi strumenti per individuare l'utilizzo intenso della CPU imprevisto o l'allocazione della memoria. Usare contemporaneamente anche la finestra **Espressione di controllo** e i punti di interruzione per determinare la causa di questo utilizzo intenso imprevisto o del mancato rilascio delle risorse. Per altre informazioni, vedere [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +159,5 @@ Per altre informazioni sugli unit test in Visual Studio e su come usarli per cre
 ## <a name="see-also"></a>Vedere anche
 
 - [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
-- [Altre informazioni sull'uso del debugger](../debugger/getting-started-with-the-debugger.md)
+- [Altre informazioni sull'uso del debugger](../debugger/debugger-feature-tour.md)
 - [Generare e correggere il codice](../ide/code-generation-in-visual-studio.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160088"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307706"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installare Build Tools in un contenitore
 
@@ -118,7 +118,7 @@ Visual Studio Build Tools e, in maggior misura Visual Studio, richiedono una gra
 
 Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file è denominato semplicemente "Dockerfile", viene riconosciuto per impostazione predefinita.
 
-> [!NOTE]
+> [!WARNING]
 > Questo Dockerfile di esempio esclude solo le versioni precedenti di Windows SDK che non possono essere installate in contenitori. Con le versioni precedenti il comando di compilazione ha esito negativo.
 
 1. Aprire un prompt dei comandi.
@@ -165,8 +165,12 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > Se si basa l'immagine direttamente su microsoft/windowsservercore, .NET Framework potrebbe non essere installato correttamente e non viene indicato alcun errore di installazione. Il codice gestito potrebbe non essere eseguito dopo il completamento dell'installazione. Basare invece l'immagine su [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o versione successiva. Si noti anche che le immagini più recenti potrebbero usare PowerShell come `SHELL` predefinita impedendo l'esecuzione delle istruzioni `RUN` e `ENTRYPOINT`.
+   > [!WARNING]
+   > Se si basa l'immagine direttamente su microsoft/windowsservercore, .NET Framework potrebbe non essere installato correttamente e non viene indicato alcun errore di installazione. Il codice gestito potrebbe non essere eseguito dopo il completamento dell'installazione. Basare invece l'immagine su [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o versione successiva. Si noti anche che le immagini contrassegnate con la versione 4.7.1 o con versioni successive potrebbero usare PowerShell come `SHELL` predefinita impedendo l'esecuzione delle istruzioni `RUN` e `ENTRYPOINT`.
+   >
+   > Non è possibile installare Visual Studio 2017 versione 15.8 o versioni precedenti (qualsiasi prodotto) in mcr<span></span>.microsoft\.com\/windows\/servercore:1809 o versioni successive. Non viene visualizzato un errore.
+   >
+   > Per altre informazioni, vedere [Problemi noti dei contenitori](build-tools-container-issues.md).
 
 4. Eseguire il comando seguente in tale directory.
 

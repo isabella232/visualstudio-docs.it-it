@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645146"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684980"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -37,7 +37,7 @@ Alcune estensioni offrono anche gli schemi della tastiera:
 
 Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio:
 
-| Tasti di scelta rapida (tutti i profili) | Comando | Descrizione |
+| Tasti di scelta rapida (tutti i profili) | Comando | Description |
 |-|-|-|
 | **CTRL**+**T** | Vai a tutti | Consente di passare a qualsiasi dichiarazione di file/tipo/membro/simbolo |
 | **F12** (o **CTRL**+**clic**) | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
@@ -135,7 +135,7 @@ Sono state aggiunte moltissime nuove funzionalità di debug in Visual Studio 201
 
 - L'*esecuzione fino alla riga selezionata* consente di passare il puntatore del mouse accanto a una riga di codice, fare clic sull'icona verde di riproduzione ed eseguire il programma fino a raggiungere tale riga.
 - Il nuovo **Helper eccezioni** inserisce le informazioni più importanti, ad esempio la variabile "null" in un'eccezione NullReferenceException, al primo livello della finestra di dialogo.
-- Il debug [Torna indietro](../debugger/how-to-use-intellitrace-step-back.md) consente di tornare ai punti di interruzione o ai passaggi precedenti e visualizzare lo stato precedente dell'applicazione.
+- Il debug [Torna indietro](../debugger/view-historical-application-state.md) consente di tornare ai punti di interruzione o ai passaggi precedenti e visualizzare lo stato precedente dell'applicazione.
 - [Debug snapshot](/azure/application-insights/app-insights-snapshot-debugger) consente di esaminare lo stato di un'applicazione Web attiva nel momento in cui è stata generata un'eccezione (è necessario essere in Azure).
 
 ![Nuovo Helper eccezioni in Visual Studio 2017](../ide/media/VSGuide_Debugging.png)

@@ -9,12 +9,12 @@ description: Informazioni su come individuare e scaricare i prodotti Microsoft i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831432"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803214"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.
@@ -30,7 +30,7 @@ I possibili motivi in seguito ai quali determinati prodotti potrebbero non esser
 - **Il prodotto è pubblicamente disponibile.** Alcuni strumenti, SDK, DDK e Service Pack sono disponibili pubblicamente nell'[Area download Microsoft](https://www.microsoft.com/download). Alcuni di tali prodotti potrebbero non essere pubblicati nei Download.
 - **Il prodotto non è ancora stato rilasciato.**  Molte versioni non definitive (beta) e le versioni finali candidate sono disponibili nei download. Non tutte le versioni beta possono tuttavia essere incluse poiché alcune richiedono una registrazione speciale o l'idoneità. Per altre informazioni sui programmi beta tecnici aperti, visitare [Microsoft Connect](http://connect.microsoft.com/).
 - **Il prodotto non è disponibile nel paese richiesto.** Alcuni prodotti Microsoft non sono disponibili a causa di restrizioni regionali.
-- **Software ridondante.** Determinati download e codici Product Key di Office e suite di Office non sono più disponibili negli abbonamenti che includono Office. I download e i codici Product Key sono disponibili per la suite di Office più elevata corrispondente della stessa versione.  Se ad esempio si esegue la ricerca di Powerpoint 2010, non verranno restituiti risultati.  È tuttavia possibile eseguire la ricerca di Office 2010, la suite di Office che conteneva Powerpoint 2010, e scaricare la suite.
+- **Software ridondante.** Determinati download e codici Product Key di Office e suite di Office non sono più disponibili negli abbonamenti che includono Office. I download e i codici Product Key sono disponibili per la suite di Office più elevata corrispondente della stessa versione.  Se ad esempio si esegue la ricerca di PowerPoint 2010, non verranno restituiti risultati.  È tuttavia possibile eseguire la ricerca di Office 2010, la suite di Office che conteneva PowerPoint 2010, e scaricare la suite.
 
 ## <a name="what-do-i-get"></a>Che cosa si ottiene?
 Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'appartenenza ai programmi.  Per chi possiede una sottoscrizione standard di Visual Studio Enterprise, ad esempio, potrebbero essere disponibili download diversi da quelli di chi ha ottenuto la propria sottoscrizione tramite un programma Microsoft Partner Network o BizSpark.  Per altre informazioni sui download disponibili per ogni livello di sottoscrizione, scaricare l'elenco di [Prodotti per livello benefici](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).

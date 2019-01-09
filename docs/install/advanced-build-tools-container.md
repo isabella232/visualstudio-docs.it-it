@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 408c66d87dbc932e09e1d5744ab5595672a00534
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159815"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307632"
 ---
 # <a name="advanced-example-for-containers"></a>Esempio avanzato per i contenitori
 
@@ -28,7 +28,7 @@ Il Dockerfile di esempio seguente usa un tag di versione specifico dell'immagine
 > [!NOTE]
 > Non è possibile installare Visual Studio in microsoft/windowsservercore:10.0.14393.1593, o in qualsiasi immagine basata su di esso, che presenta problemi noti di avvio del programma di installazione in un contenitore. Per altre informazioni, vedere i [problemi noti](build-tools-container-issues.md).
 
-Nell'esempio seguente viene scaricata l'ultima versione di Build Tools 2017. Se si vuole usare una versione precedente di Build Tools che è possibile installare in un contenitore in un secondo momento, è necessario innanzitutto [creare](create-an-offline-installation-of-visual-studio.md) e [mantenere](update-a-network-installation-of-visual-studio.md) un layout.
+Nell'esempio seguente viene scaricata l'ultima versione di Build Tools 2017. Se si vuole usare una versione precedente di Build Tools che è possibile installare in un contenitore in un secondo momento, è necessario prima [creare](create-an-offline-installation-of-visual-studio.md) e [mantenere](update-a-network-installation-of-visual-studio.md) un layout.
 
 ## <a name="install-script"></a>Installazione dello script
 
@@ -91,6 +91,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Non è possibile installare Visual Studio 2017 versione 15.8 o versioni precedenti (qualsiasi prodotto) in mcr<span></span>.microsoft\.com\/windows\/servercore:1809 o versioni successive. Non viene visualizzato un errore.
+   >
+   > Per altre informazioni, vedere [Problemi noti dei contenitori](build-tools-container-issues.md).
 
 Eseguire il comando seguente per creare l'immagine nella cartella di lavoro corrente:
 

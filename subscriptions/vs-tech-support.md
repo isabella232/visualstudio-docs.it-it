@@ -3,18 +3,18 @@ title: Vantaggio Supporto tecnico
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950070"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740433"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
@@ -95,13 +95,18 @@ Dopo aver completato questi passaggi, è possibile selezionare il piano di suppo
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Yes|
-| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Yes         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Yes         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Yes         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Sì|
+| Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Sì         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
 | Visual Studio Dev Essentials | N/D | Non disponibile |N/D|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
 <sup>1</sup> *Include: Imagine Premium. Non include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *Include: Imagine Standard.*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.

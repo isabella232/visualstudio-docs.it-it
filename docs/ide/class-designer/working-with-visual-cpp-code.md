@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 19c3e72dd6f02d97dcb083cd61d7102a6926eb2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958451"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684587"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Usare il codice Visual C++ in Progettazione classi
 
@@ -48,7 +48,7 @@ ms.locfileid: "33958451"
 - Typedef
 
 > [!NOTE]
-> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [UML Class Diagrams: Reference](../../modeling/uml-class-diagrams-reference.md) (Diagrammi classi UML: riferimenti)
+> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [Diagrammi classi UML: informazioni di riferimento](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Risoluzione dei problemi relativi al tipo e alla visualizzazione
 
@@ -112,8 +112,6 @@ Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)
-- [Uso di diagrammi classi](working-with-class-diagrams.md)
 - [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)
 - [Informazioni aggiuntive sugli errori di Progettazione classi](additional-information-about-errors.md)
 - [Classi Visual C++ in Progettazione classi](visual-cpp-classes.md)
