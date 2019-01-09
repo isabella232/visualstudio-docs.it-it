@@ -3,7 +3,6 @@ title: Modello di progetto servizio cloud di Azure per Python
 description: Visual Studio offre modelli per servizi cloud di Azure scritti in Python, tra cui la distribuzione dei ruoli, le dipendenze e la risoluzione dei problemi.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879556"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Progetti servizio cloud di Azure per Python
 

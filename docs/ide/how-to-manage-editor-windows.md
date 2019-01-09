@@ -2,7 +2,6 @@
 title: "Procedura: Gestire le finestre dell'editor"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d9134e7dcaddebbc63ad7fcb5650d5c24a00c6db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866176"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: Gestire le finestre dell'editor
 
