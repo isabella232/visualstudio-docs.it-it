@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924800"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -79,13 +78,13 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**. L'asseg
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
-Questo passaggio consente di creare un'origine dati dal database Northwind usando la Configurazione guidata origine dati **. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+Questo passaggio consente di creare un'origine dati dal database Northwind usando la Configurazione guidata origine dati **. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Nel **Data** dal menu **Mostra origini dati**.
 
-   Verrà visualizzata la finestra Origini dati **.
+   Verrà visualizzata la finestra **Origini dati**.
 
-2. Nella finestra Origini dati **selezionare Aggiungi nuova origine dati** per avviare la Configurazione guidata origine dati **.
+2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
 3. Nel **scegliere un tipo di origine dati** schermata, seleziona **Database**e quindi selezionare **Next**.
 
@@ -119,9 +118,9 @@ Per i dati in questa procedura dettagliata il `Customers` la tabella è in un **
 
 ## <a name="create-the-data-bound-form"></a>Creare il form con associazione a dati
 
-È possibile creare i controlli associati a dati trascinando elementi dalla finestra Origini dati** nel form.
+È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
 
-1. Trascinare il nodo Customers **principale dalla finestra Origini dati** in Form1.
+1. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.
 
      Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 

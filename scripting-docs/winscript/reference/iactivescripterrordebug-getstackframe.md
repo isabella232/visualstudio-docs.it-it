@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetStackFrame | Documenti Microsoft
+title: IActiveScriptErrorDebug::GetStackFrame | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9331738c52453f4ef80b70ab7eebd79907d1f54
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094133"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-Fornisce lo stack frame che è validi per gli errori di runtime.  
+Fornisce lo stack frame che è attiva per gli errori di runtime.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -38,7 +38,7 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parametri  
  `ppdsf`  
- [out] Lo stack frame per l'errore.  
+ [out] Il frame dello stack dell'errore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -48,7 +48,7 @@ HRESULT GetStackFrame(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo fornisce lo stack frame che è validi per errori di run-time.  
+ Questo metodo fornisce stack frame sul quale è in vigore per errori di run-time.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)

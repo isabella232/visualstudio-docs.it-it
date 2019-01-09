@@ -1,5 +1,5 @@
 ---
-title: Enumerazione SCRIPTTHREADSTATE | Documenti Microsoft
+title: Enumerazione SCRIPTTHREADSTATE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733921"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094120"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Enumerazione SCRIPTTHREADSTATE
-Specifica lo stato di un thread in un motore di script. Questa enumerazione viene utilizzata per la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) metodo.  
+Specifica lo stato di un thread in un motore di scripting. Questa enumerazione viene utilizzata per la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) (metodo).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 typedef enum tagSCRIPTTHREADSTATE {  
     SCRIPTTHREADSTATE_NOTINSCRIPT  = 0,  
     SCRIPTTHREADSTATE_RUNNING      = 1  
@@ -41,8 +41,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Thread specificato è attualmente non manutenzione di un evento tramite script, testo dello script di elaborazione eseguita immediatamente, o esecuzione di una macro di script.|  
-|SCRIPTTHREADSTATE_RUNNING|Thread specificato è attivamente la manutenzione di un evento tramite script, testo dello script di elaborazione eseguita immediatamente, o esecuzione di una macro di script.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Thread specificato è attualmente non un evento tramite script, il testo dello script eseguito immediatamente l'elaborazione, di manutenzione o esecuzione di una macro di script.|  
+|SCRIPTTHREADSTATE_RUNNING|Thread specificato è attivamente un evento tramite script, il testo dello script eseguito immediatamente l'elaborazione, di manutenzione o esecuzione di una macro di script.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e codici di errore dello script ActiveX](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

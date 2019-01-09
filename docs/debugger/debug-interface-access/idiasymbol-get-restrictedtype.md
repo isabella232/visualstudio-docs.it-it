@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_restrictedType | Documenti Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_restrictedType | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7668f01644f65dd9af47dc4671720119fdc0b628
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9753fa8d500fcd1b38593b5b2f1f985452340dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953170"
 ---
 # <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Specifica se il `this` puntatore risulta limitato.  
+Specifica se il `this` puntatore viene contrassegnato come con restrizioni.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,7 +29,7 @@ HRESULT get_restrictedType(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Un puntatore a un `BOOL` che specifica se il `this` puntatore risulta limitato.  
+ [out] Un puntatore a un `BOOL` che specifica se il `this` puntatore viene contrassegnato come con restrizioni.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Documenti Microsoft
+title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725961"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091260"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Gestisce un evento indicante che l'oggetto nodo dell'applicazione di debug è stato collegato a un nodo padre.  
+Gestisce un evento per indicare che l'oggetto nodo dell'applicazione di debug è stato collegato a un nodo padre.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -38,19 +38,19 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parametri  
  `prddpParent`  
- [in] Il nodo dell'applicazione di debug che rappresenta l'elemento padre del nodo.  
+ [in] Il nodo dell'applicazione di debug che è l'elemento padre di questo nodo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo gestisce un evento indicante che l'oggetto nodo dell'applicazione di debug è stato collegato a un nodo padre.  
+ Questo metodo gestisce un evento per indicare che l'oggetto nodo dell'applicazione di debug è stato collegato a un nodo padre.  
   
- I responsabili dell'implementazione di `IDebugApplicationNode` interfaccia generare questo evento.  
+ Gli implementatori del `IDebugApplicationNode` interfaccia generare questo evento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   

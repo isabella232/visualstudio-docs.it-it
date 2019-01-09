@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute | Documenti Microsoft
+title: IDebugSyncOperation::Execute | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69e07c646bfa176f5e2dc07539f301a8ef5c5273
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8c10973bddef45321b9942afef05a696010433f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726951"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090220"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-In modo sincrono, esegue l'operazione e restituisce.  
+In modo sincrono esegue l'operazione e restituisce.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Execute(  
    IUnknown**  ppunkResult  
 );  
@@ -43,10 +43,10 @@ HRESULT Execute(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_ABORT`|L'operazione è stata interrotta chiamando il `IDebugSyncOperation::InProgressAbort` metodo.|  
+|`E_ABORT`|L'operazione è stata interrotta chiamando il `IDebugSyncOperation::InProgressAbort` (metodo).|  
   
 ## <a name="remarks"></a>Note  
  Il gestore di eseguire il Debug di processi nelle chiamate di thread di destinazione di `Execute` metodo in modo sincrono.  

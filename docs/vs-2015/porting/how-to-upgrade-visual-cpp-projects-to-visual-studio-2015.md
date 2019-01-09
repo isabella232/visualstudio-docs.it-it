@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945197"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere [Visual C++ Gui
 
 Quando si apre per la prima volta un progetto Visual C++ creato in una versione precedente di Visual Studio, è possibile che venga richiesto di aggiornare il progetto. Nel messaggio viene chiesto se si desidera eseguire l'aggiornamento alla versione più recente del compilatore e delle librerie di Visual C++. Le opzioni per l'aggiornamento dipendono dalla versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usata per creare il progetto.
 
- È possibile usare [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per aprire, modificare e compilare i progetti [!INCLUDE[win8](../includes/win8-md.md)] creati in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ma per creare un nuovo progetto [!INCLUDE[win8](../includes/win8-md.md)], è necessario usare [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Per creare un progetto [!INCLUDE[win81](../includes/win81-md.md)], è necessario usare [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].
+ È possibile usare [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per aprire, modificare e compilare i progetti [!INCLUDE[win8](../includes/win8-md.md)] creati in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ma per creare un nuovo progetto [!INCLUDE[win8](../includes/win8-md.md)] , è necessario usare [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Per creare un progetto [!INCLUDE[win81](../includes/win81-md.md)] , è necessario usare [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].
 
  Per creare un progetto Windows 10, è necessario usare [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)].
 
@@ -38,7 +37,7 @@ Quando si apre per la prima volta un progetto Visual C++ creato in una versione 
 
 -   Se il progetto (con estensione VCPROJ) è stato creato in una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] precedente a [!INCLUDE[vs2010](../includes/vs2010-md.md)], è necessario aggiornare il progetto.
 
--   Se il progetto (con estensione VCXPROJ) è stato creato in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], sono disponibili due opzioni:
+-   Se il progetto (con estensione VCXPROJ) è stato creato in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)],  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] , sono disponibili due opzioni:
 
     -   È possibile ignorare l'aggiornamento. In [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] verrà caricato il progetto senza apportare alcuna modifica se è disponibile l'accesso agli strumenti di Visual C++ in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. È possibile fornire questo accesso installando la versione di Visual Studio con cui il progetto è stato creato nello stesso computer in cui è presente [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Per altre informazioni, vedere [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 

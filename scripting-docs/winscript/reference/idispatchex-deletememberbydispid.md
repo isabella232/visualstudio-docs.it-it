@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID | Documenti Microsoft
+title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: de99e74cf12939a31c99cdc59ce8ad7fd685ae03
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727751"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086866"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Elimina un membro da DISPID.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT DeleteMemberByDispID(  
     DISPID id  
 );  
@@ -38,7 +38,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- Identificatore del membro. Usa `GetDispID` o `GetNextDispID` per ottenere l'identificatore di invio.  
+ Identificatore del membro. Viene utilizzato `GetDispID` o `GetNextDispID` per ottenere l'ID dispatch.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -51,11 +51,11 @@ HRESULT DeleteMemberByDispID(
 ## <a name="remarks"></a>Note  
  Se il membro viene eliminato, deve rimanere valido per il DISPID `GetNextDispID`.  
   
- Se un membro con un nome specificato viene eliminato e successivamente viene ricreato a un membro con lo stesso nome, il DISPID deve essere lo stesso. (Se i nomi dei membri che differiscono solo per i casi sono "stesso" è dipendente dall'oggetto).  
+ Se un membro con un nome specificato viene eliminato e ricreato in un secondo momento un membro con lo stesso nome, il DISPID deve essere lo stesso. (Se i nomi dei membri che differiscono solo per i casi sono "uguali" è dipendente dall'oggetto.)  
   
 ## <a name="example"></a>Esempio  
   
-```  
+```cpp
 BSTR bstrName;  
 DISPID dispid;  
 IDispatchEx *pdex;   

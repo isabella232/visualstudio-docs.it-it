@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Next | Documenti Microsoft
+title: IEnumDebugStackFrames::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e148b5e13bc3d7986451ece11a3a2eada5baa28
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1366a33a9b6ea4bcfe9e0bb61cf8c61500853e7c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728461"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092028"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
-Recupera un numero di segmenti nella sequenza di enumerazione specificato.  
+Recupera un determinato numero di segmenti nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                       celt,  
    DebugStackFrameDescriptor*  prgdsfd,  
@@ -46,7 +46,7 @@ HRESULT Next(
  [out] Restituisce una matrice di `DebugStackFrameDescriptor` interfacce che rappresenta i segmenti in corso il recupero.  
   
  `pceltFetched`  
- [out] Il numero effettivo di segmenti recuperati dall'enumeratore.  
+ [out] Il numero effettivo di segmenti recuperate dall'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -56,7 +56,7 @@ HRESULT Next(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo recupera un numero di segmenti nella sequenza di enumerazione specificato.  
+ Questo metodo recupera un determinato numero di segmenti nella sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)   

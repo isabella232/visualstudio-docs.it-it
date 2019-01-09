@@ -1,8 +1,6 @@
 ---
 title: Manifesto della distribuzione ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,24 +15,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2391888e1955c48c1baafcd62c4337916a1a5322
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 44c42d1b0323e8f2d66f7abab13c8fecbf6a1ae4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911338"
 ---
-# <a name="clickonce-deployment-manifest"></a>Manifesto della distribuzione ClickOnce
+# <a name="clickonce-deployment-manifest"></a>Manifesto di distribuzione ClickOnce
 Un manifesto della distribuzione è un file XML che descrive una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], inclusa l'identificazione della versione corrente dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da distribuire.  
 
  I manifesti della distribuzione dispongono degli elementi e degli attributi riportati di seguito.  
 
 
-| Elemento | Descrizione | Attributi |
+| Elemento | Description | Attributi |
 | - | - | - |
 | [\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md) | Obbligatorio. Elemento di primo livello. | `manifestVersion` |
 | [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obbligatorio. Identifica il manifesto dell'applicazione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<Descrizione > elemento](../deployment/description-element-clickonce-deployment.md) | Obbligatorio. Identifica le informazioni sull'applicazione usate per creare una shell e il **Aggiungi / Rimuovi programmi** nel Pannello di controllo. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<Descrizione > elemento](../deployment/description-element-clickonce-deployment.md) | Obbligatorio. Identifica le informazioni sull'applicazione usate per creare una shell e l'elemento Installazione applicazioni** nel Pannello di controllo. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<distribuzione > elemento](../deployment/deployment-element-clickonce-deployment.md) | Facoltativo. Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'esposizione al sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obbligatorio. Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione. | `SupportUrl` |
 | [\<dipendenza > elemento](../deployment/dependency-element-clickonce-deployment.md) | Obbligatorio. Identifica la versione dell'applicazione da installare per la distribuzione e il percorso del manifesto dell'applicazione. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
@@ -53,7 +51,7 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
  Il file manifesto della distribuzione deve avere un nome sicuro e può anche contenere certificati per la convalida dell'editore.  
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file  
- Il nome di un file manifesto di distribuzione deve terminare con il *Application* estensione.  
+ Il nome di un file manifesto della distribuzione deve terminare con l'estensione application.  
 
 ## <a name="examples"></a>Esempi  
  L'esempio di codice seguente illustra un manifesto della distribuzione.  
@@ -121,4 +119,4 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
 ```  
 
 ## <a name="see-also"></a>Vedere anche  
- [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
+ [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

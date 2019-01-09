@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::AddApplication | Documenti Microsoft
+title: IMachineDebugManager::AddApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77c31084ccc24a6bace18f009eb8372a4f68a428
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e056a62ac498c0b4061ed0982189de9747832ccc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728791"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087074"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
-Aggiunge un'applicazione per l'esecuzione elenco di applicazioni.  
+Aggiunge un'applicazione in esecuzione l'elenco delle applicazioni.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD*                    pdwAppCookie  
@@ -39,20 +39,20 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parametri  
  `pda`  
- [in] Applicazione all'esecuzione elenco di applicazioni.  
+ [in] All'esecuzione applicazione elenco di applicazioni.  
   
  `pdwAppCookie`  
- [out] Un cookie utilizzato per rimuovere l'applicazione di debug machine manager.  
+ [out] Un cookie utilizzato per rimuovere l'applicazione dalla gestione debug del computer.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dal gestore di debug del processo ogni volta che `IProcessDebugManager::AddApplication` viene chiamato.  
+ Questo metodo viene chiamato dal gestore di debug processo ogni volta che `IProcessDebugManager::AddApplication` viene chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   

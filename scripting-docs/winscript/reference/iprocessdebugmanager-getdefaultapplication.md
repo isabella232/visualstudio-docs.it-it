@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication | Documenti Microsoft
+title: IProcessDebugManager::GetDefaultApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27fc46e8a5e07c4eb25c5e246db138a27e5511ae
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ae3b1bec5fc3aba6ad8e53343f929d133f05493
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729031"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091390"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
 Restituisce un oggetto di applicazione predefinito per il processo corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetDefaultApplication(  
    IDebugApplication**  ppda  
 );  
@@ -43,14 +43,14 @@ HRESULT GetDefaultApplication(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
  Questo metodo crea un nuovo oggetto di applicazione di debug e lo aggiunge all'esecuzione elenco di applicazioni, se necessario.  
   
- Motori di linguaggio devono utilizzare l'applicazione specificata dal `GetDefaultApplication` metodo se sono in esecuzione in un host che non fornisce un'applicazione.  
+ Motori di linguaggio devono usare l'applicazione specificata dal `GetDefaultApplication` metodo se sono in esecuzione in un host che non fornisce un'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

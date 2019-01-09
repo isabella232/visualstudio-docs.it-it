@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931177"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ ms.locfileid: "53053999"
      Ad esempio, scegliere **Globale** se il tasto di scelta rapida deve funzionare in tutti i contesti. È possibile utilizzare qualsiasi tasto di scelta rapida non mappato come globale in un altro editor. In caso contrario, la specifica dell'editor avrà la precedenza.
 
     > [!NOTE]
-    >  Non è possibile assegnare i seguenti tasti come parte di un tasto di scelta rapida nel **Global**: Stampa STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, Tab, BLOC MAIUSC, Insert, Home, fine, PGSU, PGGIÙ, il tasto logo Windows, la chiave dell'applicazione, uno qualsiasi dei tasti freccia oppure INVIO; BLOC NUM, eliminare o Cancella sul tastierino numerico; o Ctrl + Alt + Canc.
+    >  Non è possibile assegnare i tasti seguenti nei tasti di scelta rapida in **Globale**: Stampa STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, Tab, BLOC MAIUSC, Insert, Home, fine, PGSU, PGGIÙ, il tasto logo Windows, la chiave dell'applicazione, uno qualsiasi dei tasti freccia oppure INVIO; BLOC NUM, eliminare o Cancella sul tastierino numerico; o Ctrl + Alt + Canc.
 
 6.  Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 

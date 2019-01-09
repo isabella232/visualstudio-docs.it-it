@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc20cce20c07e4fe33cf343cd0cc900a46be5586
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e49d723db8cb444fb9e21640a2e5e9b1eecea268
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950556"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Avviare un'applicazione .NET Framework e sottoporre a profilatura dati di concorrenza** |-   [How to: Launch a .NET Framework Application to Collect Concurrency Data](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md) (Procedura: Avviare un'applicazione .NET Framework per raccogliere dati di concorrenza)|  
-|**Avviare un'applicazione C/C++ e sottoporre a profilatura dati di concorrenza** |-   [How to: Launch a Native Application to Collect Concurrency Data](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md) (Procedura: Avviare un'applicazione nativa per raccogliere dati di concorrenza)|  
-|**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [How to: Attach the Profiler to a .NET Framework Application to Collect Concurrency Data](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md) (Procedura: Connettere il profiler a un'applicazione .NET Framework per raccogliere dati di concorrenza)|  
-|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [How to: Attach the Profiler to a Native Application and Collect Concurrency Data](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md) (Procedura: Connettere il profiler a un'applicazione nativa per raccogliere dati di concorrenza)|  
+|**Avviare un'applicazione .NET Framework e sottoporre a profilatura dati di concorrenza** |-   [Procedura: Avviare un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Avviare un'applicazione C/C++ e sottoporre a profilatura dati di concorrenza** |-   [Procedura: Avviare un'applicazione nativa per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione nativa e raccogliere dati di concorrenza](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Attività correlate  
   

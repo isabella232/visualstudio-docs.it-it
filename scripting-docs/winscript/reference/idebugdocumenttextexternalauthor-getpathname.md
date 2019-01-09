@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Documenti Microsoft
+title: IDebugDocumentTextExternalAuthor::GetPathName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727741"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088842"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
 Restituisce il nome di file e percorso completo del documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,7 +42,7 @@ HRESULT GetPathName(
  [out] Stringa contenente il nome di file e percorso completo.  
   
  `pfIsOriginalFile`  
- [out] Valore booleano che indica se il nome di percorso e il riferimento al documento originale.  
+ [out] Valore booleano che indica se il percorso e nome file, vedere il documento originale.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -50,7 +50,7 @@ HRESULT GetPathName(
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_FAIL`|Impossibile creare il file di origine o determinato.|  
+|`E_FAIL`|Il file di origine non può essere creato o determinato.|  
   
 ## <a name="remarks"></a>Note  
  Questo metodo restituisce il nome di file e percorso completo del documento.  

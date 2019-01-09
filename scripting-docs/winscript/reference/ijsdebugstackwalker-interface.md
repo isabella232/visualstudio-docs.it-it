@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IJsDebugStackWalker | Documenti Microsoft
+title: Interfaccia IJsDebugStackWalker | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbea11bf1188d148818ea8a082bceec76c704c2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d79950c6d5595a0a8a95623a7510c5523f16e41b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728551"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087898"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>Interfaccia IJsDebugStackWalker
-Rappresenta un walker dello stack per un thread specificato.  
+Rappresenta un percorso chiamate dello stack per un thread specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 IJsDebugStackWalker : public IUnknown;  
 ```  
   
@@ -37,10 +37,10 @@ IJsDebugStackWalker : public IUnknown;
 |[Metodo IJsDebugStackWalker::GetNext](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Ottiene il frame successivo.|  
   
 ## <a name="remarks"></a>Note  
- È possibile creare walkers stack solo la destinazione è stato arrestato, mentre una volta ripreso nuovamente il processo di destinazione non sono valida.  
+ Pedoni stack possono essere creati solo quando la destinazione è stato arrestato e non sono valida una volta ripreso anche in questo caso il processo di destinazione.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

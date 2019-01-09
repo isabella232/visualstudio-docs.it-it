@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::SetBreakPoint | Documenti Microsoft
+title: IDebugCodeContext::SetBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a0111deba23f29aa6b7d31a1aed8d729ff4e7fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f7f0199c111e620d9b1783ed8da7163d10f2e20b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725831"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095784"
 ---
 # <a name="idebugcodecontextsetbreakpoint"></a>IDebugCodeContext::SetBreakPoint
 Imposta o cancella un punto di interruzione in questo contesto di codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT SetBreakPoint(  
    BREAKPOINT_STATE  bps  
 );  
@@ -38,7 +38,7 @@ HRESULT SetBreakPoint(
   
 #### <a name="parameters"></a>Parametri  
  `bps`  
- [in] Specifica lo stato del punto di interruzione per il contesto del codice.  
+ [in] Specifica lo stato del punto di interruzione per il contesto di codice.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

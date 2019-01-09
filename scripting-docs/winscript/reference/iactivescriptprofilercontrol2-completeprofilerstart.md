@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::CompleteProfilerStart | Documenti Microsoft
+title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,38 +14,38 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5abd4ee4237991714bfe3d8ba21b083f1a1920cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b307352a3ba6d10ec3ae434536dee82d22504d33
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724501"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091286"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
-Notifica al profiler che è stata avviata l'analisi su tutti i motori di script applicabili. Tramite questo metodo, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia la profilatura.  
+Notifica al profiler che è stata avviata la profilatura su tutti i motori di scripting applicabili. Con questo metodo, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia la profilatura.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT CompleteProfilerStart();  
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Il metodo non accetta parametri.  
+ Il metodo non accetta alcun parametro.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore HRESULT. I valori possibili sono i seguenti:  
+ Restituisce un HRESULT. I valori possibili sono i seguenti:  
   
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_FAIL`|Impossibile avviare la profilatura.|  
-|`S_FALSE`|Profilatura è stata avviata quando uno script non è in esecuzione.|  
+|`E_FAIL`|Profilatura non può essere avviata.|  
+|`S_FALSE`|Profilatura è stata avviata quando uno script non è stato in esecuzione.|  
 |`ACTIVPROF_E_PROFILER_ABSENT`|Profilatura non è abilitata. Non è stato impostato alcun callback.|  
 |`E_OUTOFMEMORY`|Non è possibile ottenere lo stack di chiamate a causa di una condizione di memoria insufficiente.|  
   
 ## <a name="remarks"></a>Note  
- La chiamata `IActiveScriptProfilerControl2::CompleteProfilerStart` assicura che vengano inviati gli eventi per le funzioni già nello stack di chiamate. Questo metodo deve essere chiamato dopo la profilatura viene avviato nel alcun motore di scripting della scheda corrente. Il metodo può essere chiamato per un motore di script.  
+ La chiamata a `IActiveScriptProfilerControl2::CompleteProfilerStart` assicura che vengano inviati gli eventi per le funzioni già nello stack di chiamate. Questo metodo deve essere chiamato dopo la profilatura viene avviata in qualsiasi motore di scripting che si trova nella scheda corrente. Il metodo può essere chiamato per qualsiasi motore di scripting.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
