@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Documenti Microsoft
+title: IScriptScriptlet::GetSubItemName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6962edbc1f639e23e159915ca1aa6ef165433ce0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733701"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096642"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Restituisce l'ultimo identificatore nel nome completo dell'host di scriptlet oggetto.  
+Restituisce l'ultimo identificatore in specificare il nome completo dell'host dell'oggetto di scriptlet.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetSubItemName(  
    BSTR               *pbstr  
 );  
@@ -38,14 +38,14 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstr`  
- [out] Se l'host completo del nome di scriptlet ha più di un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore nel secondo livello.  
+ [out] Se l'host completo del nome di scriptlet ha più di un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore a livello di secondo.  
   
- Se l'host completo del nome di scriptlet dispone di un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore al primo livello.  
+ Se l'host completo del nome di scriptlet include un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore al primo livello.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

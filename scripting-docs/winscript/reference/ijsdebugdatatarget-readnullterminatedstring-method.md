@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugdatatarget:: Readnullterminatedstring | Documenti Microsoft'
+title: 'Metodo ijsdebugdatatarget:: Readnullterminatedstring | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729501"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093327"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>Metodo IJsDebugDataTarget::ReadNullTerminatedString
-Legge il numero specificato di caratteri dalla destinazione.  
+Legge il numero di caratteri specificato dalla destinazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -45,18 +45,18 @@ HRESULT ReadNullTerminatedString(
  [in] dimensione di ogni carattere nella stringa  
   
  `maxCharacters`  
- [in] Numero massimo di caratteri da leggere. maxCharacters dovrebbe essere ragionevole. Qualsiasi richiesta per più di 128MB di memoria avrà esito negativo.  Se la stringa è maggiore di maxCharacters, la stringa di risultato verrà troncata dopo maxCharacters.  
+ [in] Il numero massimo di caratteri da leggere. valore di maxCharacters deve essere accettabile. Qualsiasi richiesta per più di 128MB di memoria avrà esito negativo.  Se la stringa è maggiore di maxCharacters, la stringa di risultato verrà troncata dopo il valore di maxCharacters.  
   
  `pString`  
- [out] La stringa BSTR leggere dalla destinazione.  
+ [out] La stringa BSTR letta dalla destinazione.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Restituisce S_FALSE se non viene troncato.  
+ Restituisce S_FALSE se troncato.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag  
+ **Intestazione:** jscript9diag.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

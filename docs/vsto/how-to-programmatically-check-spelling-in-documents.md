@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], checking spelling
 - spelling checker, documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d300d51d6c244623ff330c5fa443c6a332d6c3f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19dc596851ba8ca8b2ea3ef50e7d151220354e3b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942910"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087763"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Procedura: A livello di codice il controllo ortografico nei documenti
   Per controllare l'ortografia in un documento, usare il <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> (metodo). Questo metodo restituisce un valore booleano che indica se il parametro fornito sia stato digitato correttamente.  

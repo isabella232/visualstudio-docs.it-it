@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Documenti Microsoft
+title: IActiveScript::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,31 +18,31 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640971"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097045"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Fa sì che il motore di script per l'abbandono di tutti gli script caricati, perdono il proprio stato e rilasciare qualsiasi puntatori a interfaccia che dispone di altri oggetti, quindi immettere uno stato chiuso. Sink di evento, il testo script eseguito immediatamente e le chiamate alle macro che sono già in corso vengono completati prima i cambiamenti di stato (utilizzare [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread in esecuzione di script). Questo metodo deve essere chiamato dall'host di creazione prima che l'interfaccia viene rilasciata per evitare problemi relativi ai riferimenti circolari.  
+Fa sì che il motore di scripting abbandonare tutti gli script attualmente caricato, perdono il proprio stato e rilasciare eventuali puntatori a interfaccia che dispone ad altri oggetti, quindi immettere uno stato chiuso. Sink di evento, il testo script eseguito immediatamente e le chiamate alle macro che sono già in corso vengono completati prima i cambiamenti di stato (usare [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread in esecuzione di script). Questo metodo deve essere chiamato dall'host di creazione prima del rilascio dell'interfaccia per evitare problemi relativi ai riferimenti circolari.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT Close(void);  
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di script era già in stato di chiusura).|  
-|`OLESCRIPT_S_PENDING`|Il metodo è stato accodato, ma lo stato non modificato ancora. Quando le modifiche di stato, il sito è richiamata sul [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metodo.|  
-|`S_FALSE`|Il metodo è riuscito, ma lo script è già stato chiuso.|  
+|`OLESCRIPT_S_PENDING`|Il metodo è stato accodato correttamente, ma lo stato non è stato modificato ancora. Quando i cambiamenti di stato, il sito viene richiamata nel [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) (metodo).|  
+|`S_FALSE`|Il metodo ha avuto esito positivo, ma lo script è già stato chiuso.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

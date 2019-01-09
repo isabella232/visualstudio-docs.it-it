@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetExceptionInfo | Documenti Microsoft
+title: IActiveScriptError::GetExceptionInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645721"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096226"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-Recupera le informazioni sull'errore che si sono verificati durante l'esecuzione di uno script il motore di script.  
+Recupera le informazioni sull'errore che si sono verificati durante l'esecuzione il motore di scripting uno script.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp
 HRESULT GetExceptionInfo(  
     EXCEPINFO *pexcepinfo  // structure for exception information  
 );  
@@ -38,10 +38,10 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>Parametri  
  `pexcepinfo`  
- [out] Indirizzo di un `EXCEPINFO` struttura che riceve le informazioni di errore.  
+ [out] Indirizzo di un `EXCEPINFO` struttura che riceve informazioni sugli errori.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK` se ha esito positivo, o `E_FAIL` se si è verificato un errore.  
+ Restituisce `S_OK` caso di esito positivo o `E_FAIL` se si è verificato un errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)
