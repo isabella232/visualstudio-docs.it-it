@@ -1,8 +1,6 @@
 ---
 title: Attività CPPClean | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 749d60c764f522d188b45b4ecf7302d69b6cd64b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fbf575db0289f0b5bbb5fbcd0bf47605871e52c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966372"
 ---
 # <a name="cppclean-task"></a>Attività CPPClean
 Elimina i file temporanei creati da MSBuild al momento della compilazione di un progetto Visual C++. Il processo di eliminazione dei file di compilazione è noto come *pulizia*.  
@@ -34,7 +32,7 @@ Elimina i file temporanei creati da MSBuild al momento della compilazione di un 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **CPPClean**.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**DeletedFiles**|Parametro di ouput facoltativo `ITaskItem[]`.<br /><br /> Definisce una matrice di elementi del file di output MSBuild che può essere usata ed emessa dalle attività.|  
 |**DoDelete**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, vengono puliti i file di compilazione temporanei.|  

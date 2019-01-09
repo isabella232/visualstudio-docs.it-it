@@ -1,8 +1,6 @@
 ---
 title: Sequenza temporale della visualizzazione Core | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14bf030ce1adb1dede9ad2a377d8fb435d75e0c6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64dc3965c94a8427c0a5112d7b08715991cf8cb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949602"
 ---
 # <a name="cores-view-timeline"></a>Sequenza temporale della visualizzazione Core
 Ogni riga della sequenza temporale rappresenta un core processore logico nel sistema profilato. Per ogni riga, l'asse orizzontale indica quale thread era in esecuzione su un core logico in un determinato momento. È possibile passare il mouse su un colore in una sequenza temporale per restituire una descrizione comando che identifica il thread. Per facilitare l'identificazione del thread, la legenda nella parte inferiore della finestra spiega cosa rappresenta ogni colore. Usare lo strumento Zoom per fare zoom avanti e indietro, facendo clic e trascinando o premendo CTRL e muovendo la rotellina del mouse. Quando si passa dalla visualizzazione Core alla visualizzazione thread la coerenza dello zoom viene mantenuta.  

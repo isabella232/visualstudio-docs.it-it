@@ -1,8 +1,6 @@
 ---
 title: Segmento della cronologia vuoto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.empty
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8d87c0574ac2c7671012fff6a81a568d6bff5f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a3411de6fbc4d30f3b8dcb3dbe7a8eeba12e8ad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959371"
 ---
 # <a name="empty-timeline-segment"></a>Segmento della sequenza temporale vuoto
 Nel visualizzatore di concorrenza, il motivo per cui una sezione della sequenza temporale è vuota (presenta uno sfondo bianco) dipende dal tipo di canale.  
@@ -34,4 +32,4 @@ Nel visualizzatore di concorrenza, il motivo per cui una sezione della sequenza 
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)   
- [Controllo Zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)
+ [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)

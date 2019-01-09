@@ -2,19 +2,18 @@
 title: Uso di shim per isolare l'applicazione per il testing unità
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 908a31a50b1af99f7123f292f250f9262a7da62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947335"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usare shim per isolare l'applicazione da altri assembly per il testing unità
 

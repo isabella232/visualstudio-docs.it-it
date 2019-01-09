@@ -1,8 +1,6 @@
 ---
 title: User (VSPerfCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 128fe1f59cc652d0879e346689c9e84f1c1d9e82
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c769081a4b7a166a0c5673dee3467e9413a28eea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947491"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
 L'opzione **User** specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è indicato nella colonna Nome utente nella scheda **Processi** di Gestione attività di Windows.  

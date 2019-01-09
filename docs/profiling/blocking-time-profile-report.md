@@ -1,8 +1,6 @@
 ---
 title: Rapporto profili del tempo di blocco | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946422"
 ---
 # <a name="blocking-time-profile-report"></a>Rapporto profili del tempo di blocco
 I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli stack di chiamate specifici di ogni categoria di blocco, ad esempio "I/O" o "Sincronizzazione". Il rapporto Precedenza elenca i processi che precedevano il processo corrente con il numero di istanze di precedenza. Per compilare il rapporto profili di blocco, lo strumento raccoglie chiamate API di blocco e le accumula in un albero degli stack di chiamate. I dati visualizzati in questi rapporti variano in base all'intervallo di tempo corrente, ai thread nascosti e ai seguenti due filtri che possono essere applicati:  
@@ -33,7 +31,7 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
 ## <a name="blocking-time-report-columns"></a>Colonne del rapporto del tempo di blocco  
  Nella tabella seguente sono riportate le colonne per ogni rapporto del tempo di blocco.  
   
-|Nome colonna|Descrizione|  
+|Nome colonna|Description|  
 |-----------------|-----------------|  
 |**Name**|Nome della funzione per ogni livello dello stack di chiamate.|  
 |**Istanze**|Numero di istanze della chiamata di blocco per il periodo di tempo visibile.|  

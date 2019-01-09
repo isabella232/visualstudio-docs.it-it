@@ -1,8 +1,6 @@
 ---
 title: Attività GetFrameworkSdkPath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkSdkPath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ce43a9b2acae5589e4b746ce4bf2b2a47b0111
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 41a462361b5767048d9e29e3ed87c7ce9eb2f30d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819505"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (attività)
 Recupera il percorso di [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
@@ -33,7 +31,7 @@ Recupera il percorso di [!INCLUDE[winsdklong](../deployment/includes/winsdklong_
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|Parametro di output `String` di sola lettura facoltativo.<br /><br /> Restituisce il percorso di .NET SDK versione 2.0, se presente. In caso contrario restituisce `String.Empty`.|  
 |`FrameworkSdkVersion35Path`|Parametro di output `String` di sola lettura facoltativo.<br /><br /> Restituisce il percorso di .NET SDK versione 3.5, se presente. In caso contrario restituisce `String.Empty`.|  
@@ -41,7 +39,7 @@ Recupera il percorso di [!INCLUDE[winsdklong](../deployment/includes/winsdklong_
 |`Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso della versione più recente di .NET SDK, se sono presenti delle versioni. In caso contrario restituisce `String.Empty`.|  
   
 ## <a name="remarks"></a>Note  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene usata l'attività `GetFrameworkSdkPath` per archiviare il percorso a [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] nella proprietà `SdkPath`.  

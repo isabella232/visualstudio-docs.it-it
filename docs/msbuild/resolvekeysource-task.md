@@ -1,8 +1,6 @@
 ---
 title: Attività ResolveKeySource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveKeySource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 548fd2182292d9e7fdeac59d09dab2977c351d0b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0902bb891d044ab5ad2c657a73f363d8df9e601e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986934"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource (attività)
 Determina l'origine delle chiavi con nome sicuro.  
@@ -33,7 +31,7 @@ Determina l'origine delle chiavi con nome sicuro.
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Nella tabella che segue vengono descritti i parametri dell'attività `ResolveKeySource` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`AutoClosePasswordPromptShow`|Parametro `Int32` facoltativo.<br /><br /> Ottiene o imposta la quantità di tempo in secondi durante i quali visualizzare il messaggio del conto alla rovescia.|  
 |`AutoClosePasswordPromptTimeout`|Parametro `Int32` facoltativo.<br /><br /> Ottiene o imposta la quantità di tempo di attesa, in secondi, prima di chiudere la finestra di dialogo di richiesta della password.|  

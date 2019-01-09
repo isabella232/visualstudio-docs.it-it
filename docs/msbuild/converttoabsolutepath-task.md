@@ -1,8 +1,6 @@
 ---
 title: Attività ConvertToAbsolutePath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ConvertToAbsolutePath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b06ecb8f527602e5db6711ec7023881f7efc9e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8d2d2932b9fc18141b3b16ad2b8c35990351267a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966333"
 ---
 # <a name="converttoabsolutepath-task"></a>attività ConvertToAbsolutePath
 Converte un percorso relativo, o un riferimento, in un percorso assoluto.  
@@ -33,13 +31,13 @@ Converte un percorso relativo, o un riferimento, in un percorso assoluto.
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Nella tabella che segue vengono descritti i parametri dell'attività `ConvertToAbsolutePath` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Paths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Elenco di percorsi relativi da convertire in percorsi assoluti.|  
 |`AbsolutePaths`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Elenco di percorsi assoluti per gli elementi passati.|  
   
 ## <a name="remarks"></a>Note  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   

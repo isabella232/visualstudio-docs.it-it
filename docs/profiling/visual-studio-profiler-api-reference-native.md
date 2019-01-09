@@ -3,7 +3,6 @@ title: Riferimenti per le API del profiler di Visual Studio (native)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945025"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Riferimenti per le API del profiler di Visual Studio (native)
 Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, è necessario includere il file di intestazione *VSPerf.h* e aggiungere il file *VSPerf.lib* nel progetto.  

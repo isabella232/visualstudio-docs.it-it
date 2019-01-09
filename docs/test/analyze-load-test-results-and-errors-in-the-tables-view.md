@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962636"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -81,13 +80,13 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 |**Test**|Nome del test.|Sì|
 |**Totale**|Numero totale relativo a questa richiesta di test delle prestazioni Web emessa durante l'esecuzione del test di carico. Il totale include le richieste riuscite e non riuscite, ma non le richieste memorizzate nella cache, perché non vengono inviate al server Web.|Sì|
 |**Operazione riuscita**|Numero di volte in cui la richiesta è stata emessa ed è riuscita.|No|
-|**Operazione non riuscita**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Yes|
+|**Operazione non riuscita**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
 |**Memorizzata nella cache**|Numero totale di volte in cui la richiesta è già stata memorizzata nella cache.|No|
 |**Richieste/sec**|Frequenza al secondo della richiesta durante l'esecuzione del test di carico.|No|
 |**Richieste riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che sono riuscite.|No|
 |**Richieste non riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che non sono riuscite.|No|
 |**Tempo primo byte**|Tempo medio impiegato per ricevere il primo byte della risposta, misurato dal momento in cui la richiesta è stata inviata al server Web. Le unità sono espresse in secondi.|No|
-|**Tempo di risposta**|Tempo medio impiegato per ricevere l'intera risposta a una richiesta, misurato dal momento in cui la richiesta è stata inviata al server Web. Le unità sono espresse in secondi.|Yes|
+|**Tempo di risposta**|Tempo medio impiegato per ricevere l'intera risposta a una richiesta, misurato dal momento in cui la richiesta è stata inviata al server Web. Le unità sono espresse in secondi.|Sì|
 |**Lunghezza del contenuto**|Lunghezza media del contenuto della risposta alla richiesta. Le unità sono espresse in byte.|Sì|
 
 ## <a name="the-tests-table"></a>Tabella Test
@@ -98,12 +97,12 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
 |Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
-|**Test**|Nome del test.|Yes|
-|**Scenario**|Nome dello scenario.|Yes|
+|**Test**|Nome del test.|Sì|
+|**Scenario**|Nome dello scenario.|Sì|
 |**Totale**|Numero totale di volte in cui il test è stato eseguito nello scenario. Include il numero di volte in cui il test è stato superato e non superato.|Sì|
-|**Operazione riuscita**|Numero totale di volte in cui il test è stato eseguito nello scenario ed è stato superato.|Yes|
-|**Operazione non riuscita**|Numero totale di volte in cui il test è stato eseguito nello scenario e non è stato superato. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Yes|
-|**Test/sec**|Frequenza al secondo del test durante l'esecuzione del test di carico.|Yes|
+|**Operazione riuscita**|Numero totale di volte in cui il test è stato eseguito nello scenario ed è stato superato.|Sì|
+|**Operazione non riuscita**|Numero totale di volte in cui il test è stato eseguito nello scenario e non è stato superato. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
+|**Test/sec**|Frequenza al secondo del test durante l'esecuzione del test di carico.|Sì|
 |**Richieste riuscite/sec**|Frequenza al secondo di questo test durante l'esecuzione del test di carico, per le istanze del test che sono state superate.|No|
 |**Richieste non riuscite/sec**|Frequenza al secondo di questo test durante l'esecuzione del test di carico, per le istanze del test che non sono state superate.|No|
 |**Tempo test**|Tempo medio impiegato per eseguire il test durante il test di carico. Le unità sono espresse in secondi.|Sì|
@@ -124,7 +123,7 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 |-|-|-|
 |**Transazione**|Nome della transazione.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
-|**Test**|Nome del test.|Yes|
+|**Test**|Nome del test.|Sì|
 |**Totale**|Numero totale di transazioni eseguite durante il test di carico.|Sì|
 |**Tempo transazione**|Tempo impiegato per eseguire la transazione durante un'esecuzione dei test di carico. Per i test delle prestazioni Web, il tempo interazione utente è incluso nel calcolo. Le unità sono espresse in secondi.|No|
 |**Tempo di risposta**|Tempo di risposta per la transazione del test delle prestazioni Web nell'esecuzione di un test di carico. Tempo di risposta è diverso da Tempo transazione, in quanto il primo non include gli eventuali tempi interazione utente presenti durante la transazione. Le unità sono espresse in secondi.|No|
@@ -149,8 +148,8 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 |Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
 |Tipo|Il tipo di errore, ad esempio HttpError.|Sì|
-|Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Yes|
-|Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Yes|
+|Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Sì|
+|Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Sì|
 |Ultimo messaggio|Messaggio in cui viene descritto l'errore, ad esempio 404 - NotFound.|Sì|
 
  Per altre informazioni, vedere [Uso delle tabelle di test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).

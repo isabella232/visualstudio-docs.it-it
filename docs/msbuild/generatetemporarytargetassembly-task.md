@@ -1,8 +1,6 @@
 ---
 title: Attività GenerateTemporaryTargetAssembly | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d4b5ee29ed19f121c6da357fa20242f6762e51c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87ec3fff69bd5d8ddf7ffdfdc5590e1c18a02038
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968008"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Attività GenerateTemporaryTargetAssembly
 L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> genera un assembly se in un progetto almeno una pagina [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] fa riferimento a un tipo dichiarato localmente nel progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-| Parametro | Descrizione |
+| Parametro | Description |
 |--------------------------| - |
 | `AssemblyName` | Parametro **String** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto ed è anche il nome dell'assembly di destinazione generato temporaneamente. Se, ad esempio, un progetto genera un eseguibile [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] il cui nome è *WinExeAssembly.exe*, il parametro **AssemblyName** presenterà il valore **WinExeAssembly**. |
 | `CompileTargetName` | Parametro **String** obbligatorio.<br /><br /> Specifica il nome della destinazione [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] usata per generare assembly dai file di codice sorgente. Il valore tipico per **CompileTargetName** è **CoreCompile**. |

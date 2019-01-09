@@ -1,8 +1,6 @@
 ---
 title: Attività GetFrameworkPath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkPath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb85642b7eb6a92c11d3d04d2c44eb6c683cff
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2eeee3865a9b2a607df48ca6d9ade1990401f759
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944863"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (attività)
 Recupera il percorso degli assembly [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -33,7 +31,7 @@ Recupera il percorso degli assembly [!INCLUDE[dnprdnshort](../code-quality/inclu
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkPath` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly della versione 1.1 del framework, se presenti. In caso contrario restituisce `null`.|  
 |`FrameworkVersion20Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly della versione 2.0 del framework, se presenti. In caso contrario restituisce `null`.|  
@@ -45,7 +43,7 @@ Recupera il percorso degli assembly [!INCLUDE[dnprdnshort](../code-quality/inclu
 ## <a name="remarks"></a>Note  
  Se sono installate diverse versioni di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], l'attività restituisce la versione in cui deve essere eseguito [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in base alla progettazione.  
   
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene usata l'attività `GetFrameworkPath` per archiviare il percorso a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nella proprietà `FrameworkPath`.  

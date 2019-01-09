@@ -1,8 +1,6 @@
 ---
 title: Proprietà riservate e note MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac2305b11702e7e8364cc2eedd8446c987def3a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967735"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Proprietà riservate e note MSBuild
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è disponibile un set di proprietà predefinite che archiviano informazioni sul file di progetto e i file binari di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Queste proprietà vengono valutate come le altre proprietà di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ad esempio, per usare la proprietà `MSBuildProjectFile`, è necessario digitare `$(MSBuildProjectFile)`.  
