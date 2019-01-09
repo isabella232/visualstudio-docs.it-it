@@ -1,8 +1,6 @@
 ---
 title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886809"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 
@@ -35,7 +33,7 @@ In questa procedura dettagliata vengono illustrate le operazioni seguenti:
 
 - Conoscenza a livello intermedio di [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Conoscenza a livello intermedio dell'uso degli strumenti della riga di comando
-- Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)
+- Una copia dell'[esempio PeopleTrax](/visualstudio/profiling/performance-explorer)
 - Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilatura dalla riga di comando tramite il metodo di campionamento

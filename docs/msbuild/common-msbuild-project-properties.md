@@ -1,8 +1,6 @@
 ---
 title: Proprietà di progetto MSBuild comuni | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2018
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: a3f01d9d35f8b2c122fb61f4fd9b3a8a22090b21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918771"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione *targets* compresi con MSBuild.  
