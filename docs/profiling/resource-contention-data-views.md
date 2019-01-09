@@ -1,8 +1,6 @@
 ---
 title: Visualizzazioni dei dati sui conflitti di risorse | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320ccc34840cb56646a52f82dc2eb8985fdb5da6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea7cbe0ff412e7955a4a255018e335e1ae6336da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990607"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.  
@@ -27,10 +25,10 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
  [Visualizzazione Riepilogo: dati su conflitti del profiler](../profiling/resource-contention-data-views.md)  
  Visualizza una sequenza temporale grafica dei dati di profilatura ed elenca le funzioni e le risorse che hanno partecipato alla maggior parte degli eventi di blocco.  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
  Visualizza un albero gerarchico che rappresenta i percorsi di esecuzione e i dati sui conflitti di risorse delle funzioni nella profilatura.  
   
- [Visualizzazione moduli](../profiling/modules-view-contention-data.md)  
+ [Visualizzazione Moduli](../profiling/modules-view-contention-data.md)  
  Organizza i dati sui conflitti di thread e risorse in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando si sono verificati gli eventi di blocco.  
   
  [Visualizzazione Chiamante/chiamato: dati sui conflitti](../profiling/caller-callee-view-contention-data.md)  

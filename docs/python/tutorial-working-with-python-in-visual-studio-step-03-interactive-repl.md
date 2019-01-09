@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Passaggio 3 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato alla finestra interattiva REPL di Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986830"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: usare la finestra interattiva REPL
 

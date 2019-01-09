@@ -1,8 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5623cfc9d6f72805e4ced489ef7a786aaad155e6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965084"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -66,7 +64,7 @@ VSPerfCmd /Attach:MyService.exe
 
 Nella tabella seguente sono descritte le opzioni di VSPerfCLREnv per la profilatura tramite strumentazione:
 
-|Opzione|Descrizione|
+|Opzione|Description|
 |------------|-----------------|
 |**TraceOn**|Abilita la profilatura tramite il metodo di strumentazione. Non abilita la profilatura dell'allocazione di memoria o la raccolta dei dati di durata degli oggetti.|
 |**TraceGC**|Abilita la profilatura dell'allocazione di memoria con il metodo di strumentazione. Non abilita la raccolta dei dati di durata degli oggetti.|
@@ -76,7 +74,7 @@ Nella tabella seguente sono descritte le opzioni di VSPerfCLREnv per la profilat
 
 Nella tabella seguente sono descritte le opzioni di VSPerfCLREnv per la profilatura tramite campionamento:
 
-|Opzione|Descrizione|
+|Opzione|Description|
 |------------|-----------------|
 |**SampleOn**|Abilita la profilatura tramite il metodo di campionamento. Non abilita la profilatura dell'allocazione di memoria o la raccolta dei dati di durata degli oggetti.|
 |**SampleGC**|Abilita la profilatura dell'allocazione di memoria con il metodo di campionamento. Non abilita la raccolta dei dati di durata degli oggetti.|
@@ -87,7 +85,7 @@ Nella tabella seguente sono descritte le opzioni di VSPerfCLREnv per la profilat
 
 Per eseguire la profilatura di un servizio gestito, ad esempio un'applicazione Web ASP.NET avviata dal sistema operativo anziché dall'utente, usare le opzioni per la profilatura globale di VSPerfCLREnv. Nella tabella seguente sono descritte le versioni globali delle opzioni di VSPerfCLREnv. Queste opzioni impostano le variabili di ambiente appropriate nel Registro di sistema.
 
-|Opzione|Descrizione|
+|Opzione|Description|
 |------------|-----------------|
 |**GlobalTraceOn**|Abilita la profilatura globale tramite il metodo di strumentazione. Non raccoglie eventi di allocazione della memoria o dati sulla durata degli oggetti.|
 |**GlobalTraceGC**|Abilita la profilatura dell'allocazione di memoria con il metodo di strumentazione. Non abilita la raccolta dei dati di durata degli oggetti.|
@@ -100,7 +98,7 @@ Per eseguire la profilatura di un servizio gestito, ad esempio un'applicazione W
 
  Al termine della profilatura dell'applicazione gestita, usare una delle seguenti opzioni per eliminare le variabili di ambiente che sono state aggiunte da VSPerfCLREnv. Nella tabella seguente viene descritto come eliminare le variabili di ambiente locali e globali:
 
-|Opzione|Descrizione|
+|Opzione|Description|
 |------------|-----------------|
 |**Off**|Elimina le variabili di ambiente per la profilatura .NET standard. Usare questa opzione quando sono state usate le opzioni di VSPerfClrEnv non globali per impostare le variabili di ambiente del profiler.|
 |**GlobalOff**|Elimina le variabili di ambiente per la profilatura .NET globale. Usare questa opzione quando l'applicazione è stata avviata dal sistema operativo anziché dal profiler.|

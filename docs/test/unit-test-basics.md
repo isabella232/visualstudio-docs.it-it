@@ -2,7 +2,6 @@
 title: Nozioni di base sugli unit test
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740351"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060803"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -26,7 +25,7 @@ Gli unit test offrono i risultati migliori in relazione alla qualità del codice
 
 È possibile generare rapidamente progetti di test e metodi di test dal codice oppure creare manualmente i test necessari. Quando si usa IntelliTest per esplorare il codice .NET, è possibile generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Informazioni su come [generare unit test per il codice](generate-unit-tests-for-your-code-with-intellitest.md).
 
-Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
+Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Introduzione
 
@@ -127,7 +126,7 @@ Ogni progetto unit test contiene classi che rispecchiano i nomi delle classe del
 
 -   La classe `AccountInfoTests` contiene i metodi di unit test per la classe `AccountInfo` nel progetto `Accounts`.
 
--   La classe `CheckingAccountTests` contiene i metodi di unit test per la classe `CheckingAccount`.
+-   La classe`CheckingAccountTests` contiene i metodi di unit test per la classe `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Scrivere i test
 

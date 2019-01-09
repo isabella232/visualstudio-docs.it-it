@@ -1,8 +1,6 @@
 ---
 title: Visualizzazione Interazioni tra livelli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf907b11a715f9e108c71daeb6bebd35be9f1212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967096"
 ---
 # <a name="tier-interactions-view"></a>Visualizzazione Interazioni tra livelli
 
@@ -38,7 +36,7 @@ La visualizzazione Interazioni mostra i dati di interazione tra livelli in due r
 
 ## <a name="master-pane"></a>Riquadro master
 
-|Colonna|Descrizione|
+|Colonna|Description|
 |------------|-----------------|
 |**Name**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|
 |**Database**|Nome del database (solo righe di connessione di database).|
@@ -50,7 +48,7 @@ La visualizzazione Interazioni mostra i dati di interazione tra livelli in due r
 
 ## <a name="database-connection-details-pane"></a>Riquadro Dettagli connessione database
 
-|Colonna|Descrizione|
+|Colonna|Description|
 |------------|-----------------|
 |**Testo del comando**|Query SQL della richiesta.|
 |**Conteggio query**|Numero di volte in cui è stata eseguita la query.|
