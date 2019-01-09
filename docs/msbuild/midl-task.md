@@ -1,8 +1,6 @@
 ---
 title: Attività MIDL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 724c4de3ca582a98d22eaf1bcb3a8761bb4eff55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860832"
 ---
 # <a name="midl-task"></a>MIDL (attività)
 Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
@@ -89,7 +87,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -335,7 +333,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**NotSet**|*\<nessuno>*|  
     |**Win32**|**/env win32**|  
@@ -358,7 +356,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -407,7 +405,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  

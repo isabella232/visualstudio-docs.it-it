@@ -2,7 +2,6 @@
 title: Procedure consigliate per i test codificati dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 28781756e46f39aa0925521c0ec0bfacdcca5009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848587"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedure consigliate per i test codificati dell'interfaccia utente
 
