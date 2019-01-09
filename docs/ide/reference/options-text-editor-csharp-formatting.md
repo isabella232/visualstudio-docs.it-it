@@ -2,7 +2,6 @@
 title: Opzioni di formattazione dell'editor C#
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946409"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>Opzioni, Editor di testo, C#, Stile codice, Formattazione
 
@@ -37,7 +36,7 @@ Usare la pagina di opzioni **Formattazione** per impostare le opzioni di formatt
 
 Queste impostazioni influenzano *il momento in cui* l'editor del codice applica le opzioni di formattazione al codice.
 
-|Label|Descrizione|
+|Label|Description|
 |-----------|-----------------|
 |**Formatta automaticamente durante la digitazione**|Quando questa opzione è deselezionata, le opzioni **Formatta automaticamente istruzione dopo :** e **Formatta automaticamente blocco dopo }** sono disabilitate.|
 |**Formatta automaticamente istruzione dopo ;**|Quando questa opzione è selezionata, le istruzioni vengono formattate al completamento in base alle opzioni di formattazione selezionate per l'editor.|
@@ -49,7 +48,7 @@ Queste impostazioni influenzano *il momento in cui* l'editor del codice applica 
 
 Queste impostazioni configurano il comando **Formatta documento** per eseguire una pulizia del codice aggiuntiva in un file. Per altre informazioni su come applicare queste impostazioni, vedere [Format Document command](../code-styles-and-quick-actions.md#format-document-command) (Comando Formatta documento).
 
-|Label|Descrizione|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
+|Label|Description|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
 |-----------|-----------------|-----------------|-----------------|
 |**Applica tutte le regole di formattazione di C# (rientro, ritorno a capo, spaziatura)**|Il comando **Formatta documento** corregge sempre i problemi di formattazione. Questa impostazione non può essere modificata.| [Opzioni di base di EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opzioni di formattazione di EditorConfig .NET](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Formattazione**  > [**Rientro** oppure **Nuove righe** oppure **Spaziatura** oppure **Ritorno a capo**]|
 |**Esegui la pulizia aggiuntiva del codice durante la formattazione**|Se selezionata, applica le correzioni alle regole specificate di seguito nel comando **Edit.FormatDocument**.| N/D |

@@ -1,8 +1,6 @@
 ---
 title: Elementi di progetto MSBuild comuni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b51046ce3a4b589cb77ce27d1e103a6b8a6c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951706"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.  
@@ -33,7 +31,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Riferimenti  
  Rappresenta un riferimento all'assembly (gestito) nel progetto.  
 
-|Nome metadati degli elementi|Descrizione|  
+|Nome metadati degli elementi|Description|  
 |---------------|-----------------|  
 |HintPath|Stringa facoltativa. Percorso relativo o assoluto dell'assembly.|  
 |nome|Stringa facoltativa. Il nome visualizzato dell'assembly, ad esempio "System.Windows.Forms".|  
@@ -45,7 +43,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comreference"></a>COMReference  
  Rappresenta un riferimento a un oggetto COM (non gestito) nel progetto.  
 
-|Nome metadati degli elementi|Descrizione|  
+|Nome metadati degli elementi|Description|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del componente|  
 |GUID|Stringa facoltativa. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -58,14 +56,14 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference  
  Rappresenta un elenco di librerie dei tipi per la destinazione ResolvedComreference.  
 
-|Nome metadati degli elementi|Descrizione|  
+|Nome metadati degli elementi|Description|  
 |---------------|-----------------|  
 |WrapperTool|Stringa facoltativa. Il nome dello strumento wrapper usato per il componente, ad esempio, "tlbimp".|  
 
 ### <a name="nativereference"></a>NativeReference  
  Rappresenta un file manifesto nativo o un riferimento a tale file.  
 
-|Nome metadati degli elementi|Descrizione|  
+|Nome metadati degli elementi|Description|  
 |---------------|-----------------|  
 |nome|Stringa obbligatoria. Il nome base del file manifesto.|  
 |HintPath|Stringa obbligatoria. Il percorso relativo del file manifesto.|  
@@ -73,7 +71,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference  
  Rappresenta un riferimento a un altro progetto.  
 
-|Nome metadati degli elementi|Descrizione|  
+|Nome metadati degli elementi|Description|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del riferimento.|  
 |Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -84,7 +82,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
  Rappresenta i file di origine per il compilatore.  
 
 
-| Nome metadati degli elementi | Descrizione |
+| Nome metadati degli elementi | Description |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
 | AutoGen | Valore booleano facoltativo. Indica se il file è stato generato per il progetto dall'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
@@ -96,7 +94,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
  Rappresenta le risorse da incorporare nell'assembly generato.  
 
 
-| Nome metadati degli elementi | Descrizione |
+| Nome metadati degli elementi | Description |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta |
 | Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
@@ -111,7 +109,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
  Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.  
 
 
-| Nome metadati degli elementi | Descrizione |
+| Nome metadati degli elementi | Description |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
 | Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
@@ -127,7 +125,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.  
 
 
-| Nome metadati degli elementi | Descrizione |
+| Nome metadati degli elementi | Description |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
 | Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |

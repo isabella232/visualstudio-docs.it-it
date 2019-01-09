@@ -1,8 +1,6 @@
 ---
 title: Informazioni sui valori dei dati di strumentazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 10353dabf0ae0e0bbee726c2f816a04c2af99f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991097"
 ---
 # <a name="understand-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
 
@@ -100,4 +98,4 @@ Percentuale dei valori di tempo inclusivo applicazione totali della sessione di 
 ## <a name="see-also"></a>Vedere anche
 
 [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)  
-[Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
+[Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)

@@ -1,8 +1,6 @@
 ---
 title: Attività CallTarget | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546fc47ddb38fabcd0ff84926d942f6ae10d59e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bff9d8967d02f8950cc5518f00baa9551c93ec76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962363"
 ---
 # <a name="calltarget-task"></a>attività CallTarget
 Richiama le destinazioni specificate nel file di progetto.  
@@ -32,7 +30,7 @@ Richiama le destinazioni specificate nel file di progetto.
  Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget` .  
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |---------------------------| - |
 | `RunEachTargetSeparately` | Parametro di input `Boolean` facoltativo.<br /><br /> Se `true`, il motore [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] viene chiamato una volta per ogni destinazione. Se `false`, il motore [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] viene chiamato una volta per compilare tutte le destinazioni. Il valore predefinito è `false`. |
 | `TargetOutputs` | Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene l'output di tutte le destinazioni compilate. |

@@ -3,19 +3,18 @@ title: Finestra REPL interattiva per R
 description: Come usare l'ambiente REPL interattivo per R in Visual Studio, integrato nelle finestre dell'editor.
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a9e475e108fee9134699b0ee80e59fbf3f5eea32
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947075"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Usare la finestra R interattivo
 
@@ -52,7 +51,7 @@ Ecco la finestra interattiva con relativa barra degli strumenti:
 
 Di seguito vengono illustrati i comandi della barra degli strumenti, la maggior parte dei quali hanno combinazioni di tasti e sono anche disponibili nei menu **R Tools** > **Sessione** e **R Tools** > **Directory di lavoro** (oppure come indicato):
 
-| Button | Comando | Combinazione di tasti | Descrizione | 
+| Button | Comando | Combinazione di tasti | Description | 
 | --- | --- | --- | --- |
 | ![Pulsante Reimposta](media/repl-toolbar-01-reset.png) | Reimposta | **CTRL**+**MAIUSC**+**F10** | Reimposta la sessione della finestra interattiva, cancellando tutte le variabili e la cronologia. |
 | ![Pulsante Cancella](media/repl-toolbar-02-clear.png) | Cancella | **CTRL**+**L** | Cancella l'output visualizzato nella finestra interattiva. Non ha alcun effetto sulle variabili della sessione o sulla cronologia. |
@@ -64,7 +63,7 @@ Di seguito vengono illustrati i comandi della barra degli strumenti, la maggior 
 | ![Pulsante Interrompi R](media/repl-toolbar-08-interrupt-r.png)| Interrompi R | **ESC** | Arresta qualsiasi codice in esecuzione nella finestra interattiva, ad esempio il ciclo `while` illustrato nella schermata all'inizio di questa sezione. |
 | ![Pulsante Collega debugger](media/repl-toolbar-09b-attach-debugger.png)| Collega debugger | N/D | Disponibile anche tramite il comando **Debug** > **Collega a R interattivo**. | 
 | ![Pulsante Imposta la directory di lavoro sul percorso del file di origine](media/repl-toolbar-10-set-working-directory-source.png)| Imposta la directory di lavoro sul percorso del file di origine | **CTRL**+**MAIUSC**+**E** | Imposta la directory di lavoro sul file di origine più recentemente caricato nella finestra interattiva tramite `source`. Vedere [Directory di lavoro](#working-directory). |
-| ![Pulsante Imposta la directory di lavoro sul percorso del progetto](media/repl-toolbar-11-set-working-directory-to-project.png) | Imposta la directory di lavoro sul percorso del progetto | **CTRL**+**MAIUSC**+**P** | Imposta la directory di lavoro sulla radice del progetto attualmente caricato in Visual Studio. Vedere [Directory di lavoro](#working-directory). |
+| ![Pulsante Imposta la directory di lavoro sul percorso del progetto](media/repl-toolbar-11-set-working-directory-to-project.png) | Imposta la directory di lavoro sul percorso del progetto | **Ctrl**+**Maiusc**+**P** | Imposta la directory di lavoro sulla radice del progetto attualmente caricato in Visual Studio. Vedere [Directory di lavoro](#working-directory). |
 | (Campo testo) | Seleziona directory di lavoro | N/D | Campo di input diretto per la directory di lavoro. Vedere [Directory di lavoro](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Aree di lavoro e sessioni
