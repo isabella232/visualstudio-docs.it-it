@@ -3,7 +3,6 @@ title: Modelli di elementi per progetti Python
 description: Elenco di riferimento di modelli di elementi per progetti Python disponibili nella finestra di dialogo Aggiungi > Nuovo elemento in Visual Studio.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc08a190dfe146002dc4180f8c9a1fb680a5fb9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 37c39346f7cad79e8008cc72711670159eb84f52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852164"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
