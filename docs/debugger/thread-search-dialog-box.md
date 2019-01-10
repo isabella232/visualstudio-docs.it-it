@@ -1,8 +1,6 @@
 ---
-title: Nella finestra di dialogo Ricerca thread | Documenti Microsoft
-ms.custom: ''
+title: Finestra di dialogo Ricerca thread | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885861"
 ---
 # <a name="thread-search-dialog-box"></a>Finestra di dialogo Ricerca thread
-Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico in [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un **thread** finestra di visualizzazione. Scegliere quindi **trova Thread** dal **ricerca** menu.  
+Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico nel [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un **thread** finestra di visualizzazione. Quindi scegliere **trova Thread** dalle **ricerca** menu.  
   
- Sono disponibili le impostazioni seguenti:  
+ Sono disponibili le seguenti impostazioni:  
   
  **Thread**  
  ID del thread per la ricerca.  
   
  **Modulo**  
- Stringa del modulo da cercare.  
+ La stringa del modulo da cercare.  
   
- **Direzione della ricerca verso l'alto o verso il basso**  
+ **Direzione di ricerca verso l'alto o verso il basso**  
  La direzione iniziale della ricerca.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
@@ -38,16 +36,16 @@ Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per 
  Consente di visualizzare le proprietà di un thread selezionato nella visualizzazione thread.  
   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include le sezioni che descrivono ogni Spy + + menu e finestra di dialogo.  
+ Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.  
   
- [Ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ [La ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Viene illustrato come trovare un thread specifico nella visualizzazione thread.  
   
  [Visualizzazione Thread](../debugger/threads-view.md)  
- Visualizza una struttura di thread attivi  
+ Contiene una visualizzazione albero di thread attivi  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Vengono illustrate le visualizzazioni ad albero Spy + + di windows, i messaggi, thread e processi.  
+ Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
   
  [Uso di Spy++](../debugger/using-spy-increment.md)  
- Vengono presentati lo strumento Spy + + e come può essere usato.
+ Introduce lo strumento Spy + + e spiega come può essere usato.

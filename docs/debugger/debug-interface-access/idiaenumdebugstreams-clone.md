@@ -1,8 +1,6 @@
 ---
 title: Idiaenumdebugstreams | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6247e36ecc34c016cf4b976664f14d6e3fb5bb80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9e22f7fffa3b1eab0726b47b8b4d8a23c91804b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875354"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.  
@@ -27,7 +25,7 @@ Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumerator
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumDebugStreams** ppenum  
 );  
 ```  

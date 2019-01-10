@@ -1,8 +1,6 @@
 ---
-title: Enumerazioni e strutture | Documenti Microsoft
-ms.custom: ''
+title: Strutture ed enumerazioni | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,68 +15,68 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc3b2b74c6539cbbdfd1a7e99c88c0b1e65c5cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988083"
 ---
 # <a name="enumerations-and-structures"></a>Enumerazioni e strutture
-Si tratta di enumerazioni e strutture utilizzate da DIA SDK.  
+Si tratta di enumerazioni e strutture utilizzate dal DIA SDK.  
   
 ## <a name="in-this-section"></a>In questa sezione  
   
 ## <a name="enumerations"></a>Enumerazioni  
- [BasicType (enumerazione)](../../debugger/debug-interface-access/basictype.md)  
+ [Enumerazione BasicType](../../debugger/debug-interface-access/basictype.md)  
  Specifica tipo di base del simbolo.  
   
- [CV_access_e (enumerazione)](../../debugger/debug-interface-access/cv-access-e.md)  
- Specifica l'ambito di visibilità (livello di accesso) di variabili e funzioni membro.  
+ [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)  
+ Specifica l'ambito di visibilità (livello di accesso) di funzioni membro e variabili.  
   
- [CV_call_e (enumerazione)](../../debugger/debug-interface-access/cv-call-e.md)  
+ [Enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)  
  Specifica la convenzione di chiamata per una funzione.  
   
- [CV_CFL_LANG (enumerazione)](../../debugger/debug-interface-access/cv-cfl-lang.md)  
+ [Enumerazione CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)  
  Specifica il linguaggio del codice sorgente dell'applicazione o del modulo collegato.  
   
- [CV_CPU_TYPE_e (enumerazione)](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
+ [Enumerazione CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
  Specifica il processore di destinazione.  
   
- [CV_HREG_e (enumerazione)](../../debugger/debug-interface-access/cv-hreg-e.md)  
+ [Enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)  
  Specifica un registro di destinazione.  
   
- [DataKind (enumerazione)](../../debugger/debug-interface-access/datakind.md)  
- Indica l'ambito di un valore di dati specifico.  
+ [Enumerazione DataKind](../../debugger/debug-interface-access/datakind.md)  
+ Indica l'ambito specifico di un valore di dati.  
   
- [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md)  
- Indica il tipo di informazioni di percorso contenuti in un simbolo.  
+ [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)  
+ Indica il tipo di informazioni di percorso contenute in un simbolo.  
   
- [MemoryTypeEnum (enumerazione)](../../debugger/debug-interface-access/memorytypeenum.md)  
- Specifica il tipo di memoria per l'accesso.  
+ [Enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)  
+ Specifica il tipo di memoria per accedere.  
   
- [NameSearchOptions (enumerazione)](../../debugger/debug-interface-access/namesearchoptions.md)  
+ [Enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)  
  Specifica le opzioni di ricerca per i nomi dei simboli e file.  
   
- [StackFrameTypeEnum (enumerazione)](../../debugger/debug-interface-access/stackframetypeenum.md)  
+ [Enumerazione StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)  
  Specifica il tipo di frame dello stack.  
   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)  
- Specifica il tipo di simbolo.  
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)  
+ Specifica il tipo del simbolo.  
   
- [THUNK_ORDINAL (enumerazione)](../../debugger/debug-interface-access/thunk-ordinal.md)  
+ [Enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)  
  Definisce i tipi di thunk.  
   
- [UdtKind (enumerazione)](../../debugger/debug-interface-access/udtkind.md)  
- Vengono illustrati i vari di tipo definito dall'utente (UDT).  
+ [Enumerazione UdtKind](../../debugger/debug-interface-access/udtkind.md)  
+ Descrive la varietà di tipo definito dall'utente (UDT).  
   
 ## <a name="structures"></a>Strutture  
  [Struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)  
- Descrive una voce nella mappa di un indirizzo.  
+ Descrive una voce in una mappa di indirizzo.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- Specifica le interfacce fornite da DIA SDK.  
+ Specifica le interfacce fornite dal DIA SDK.  
   
  [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  Specifica le costanti che sono disponibili in DIA SDK.  

@@ -1,8 +1,6 @@
 ---
-title: Risoluzione dei problemi e gli errori di debug remoto | Documenti Microsoft
-ms.custom: ''
+title: Remote Debug degli errori e risoluzione dei problemi | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,23 +20,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbac9eea6b3510d670aa00e48c85c8dd5bb0e4b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c89898e5f25c552987ee2d3df1c413c608323c2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928750"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errori e risoluzione dei problemi relativi al debug remoto
 È possibile riscontrare i seguenti errori durante il tentativo di eseguire il debug in modalità remota.  
   
--   [Errore: impossibile eseguire automaticamente l'istruzione sul server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Errore: Non è possibile eseguire automaticamente l'istruzione nel server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
+-   [Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)  
   
 -   [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Errore: il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+-   [Errore: Il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug remoto](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

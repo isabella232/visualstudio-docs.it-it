@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54aad4b8fb2282c1f2d5514f50b67c82ee1c4f53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947741"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Raccolta delle statistiche dell'applicazione per i servizi tramite il metodo di campionamento del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|**Connettere il profiler a un servizio .NET**|-   [How to: Attach the Profiler to a .NET Service to Collect Application Statistics](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md) (Procedura: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione)|  
+|**Connettere il profiler a un servizio .NET**|-   [Procedura: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**Aggiungere dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Connettere il profiler a un servizio C/C++**|-   [How to: Attach the Profiler to a Native Service to Collect Application Statistics](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md) (Procedura: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione)|  
+|**Connettere il profiler a un servizio C/C++**|-   [Procedura: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Attività correlate  
   
@@ -52,7 +52,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
 |**Sottoporre a profilatura applicazioni client autonome**|-   [Raccolta di statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Sottoporre a profilatura applicazioni Web ASP.NET**|-   [Raccolta di statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**Sottoporre a profilatura applicazioni Web ASP.NET**|-   [Raccolta di statistiche dell'applicazione tramite campionamento](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analisi di visualizzazioni dati e di report di campionamento  
  [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)

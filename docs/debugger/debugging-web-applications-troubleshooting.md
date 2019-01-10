@@ -2,7 +2,6 @@
 title: Debug di App web - risoluzione dei problemi | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923585"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: Risoluzione dei problemi
 In questa sezione sono contenute le procedure comuni utilizzabili per risolvere gli errori.  
@@ -37,5 +36,5 @@ In questa sezione sono contenute le procedure comuni utilizzabili per risolvere 
  [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Viene spiegato come risolvere gli errori.  
   
- [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)  
+ [Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Cenni preliminari sul debug delle applicazioni Web quali [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servizi Web XML e progetti ATL Server.

@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback::RestrictRegistryAccess | Documenti Microsoft
-ms.custom: ''
+title: Restrictregistryaccess | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f98a39b96acca7019125e5198a8be729c5fd23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 337656c89148d921544bb55264e1b3d6ed8a72c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844236"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
-Determina se le query del Registro di sistema consente di individuare i percorsi di ricerca di simboli.  
+Determina se query del Registro di sistema possono essere utilizzate per individuare i percorsi di ricerca simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +32,7 @@ HRESULT RestrictRegistryAccess();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Diverso da qualsiasi codice restituito `S_OK` impedisce l'esecuzione di query del Registro di sistema per i percorsi di ricerca di simboli.  
+ Diverso da qualsiasi codice restituito `S_OK` impedisce l'esecuzione di query il Registro di sistema per i percorsi di ricerca simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

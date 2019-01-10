@@ -1,8 +1,6 @@
 ---
 title: Get_indirectvirtualbaseclass | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dcde1aa61ed9ce39fea15a6a21776afba24786
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4328c7b8a1506cb21a9c1af9dcfeb3e32140d9fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957537"
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 Recupera un flag che specifica se il tipo di dati definito dall'utente è una classe base virtuale indiretta.  
@@ -27,7 +25,7 @@ Recupera un flag che specifica se il tipo di dati definito dall'utente è una cl
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_indirectVirtualBaseClass (   
+HRESULT get_indirectVirtualBaseClass (   
    BOOL* pRetVal  
 );  
 ```  
@@ -44,9 +42,9 @@ HRESULT get_indirectVirtualBaseClass (
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Descrizione|  
+|Requisito|Description|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

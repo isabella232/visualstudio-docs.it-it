@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d344fdd444a46b3e0434e70850946ef242864b0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900210"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 
@@ -42,7 +41,7 @@ Creare query TableAdapter con parametri in di **Progettazione Dataset**. È anch
 
 -   Creare un nuovo oggetto TableAdapter aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati. Per altre informazioni, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-     oppure
+     -oppure-
 
 -   Aggiungere una query a un oggetto TableAdapter esistente aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
 
@@ -67,7 +66,7 @@ Creare query TableAdapter con parametri in di **Progettazione Dataset**. È anch
 
 4.  Digitare un nome nella casella **Nuovo nome query** se si intende creare una nuova query.
 
-     oppure
+     -oppure-
 
      Selezionare una query nella casella **Nome query esistente**.
 

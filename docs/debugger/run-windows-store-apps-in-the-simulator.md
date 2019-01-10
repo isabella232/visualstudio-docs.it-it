@@ -1,8 +1,6 @@
 ---
 title: Eseguire App UWP nel simulatore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e9e023bd560a67323a4a2fcf5e42acec6919d6c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: MTE95
+ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886475"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire app UWP nel simulatore
 Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che simula un'app UWP. In genere, è opportuno eseguire il debug nel computer locale, un dispositivo connesso o un computer remoto. Tuttavia, in alcuni scenari, è possibile usare il simulatore di Visual Studio per emulare una dimensione dello schermo fisico diverso e risoluzione. È anche possibile simulare i comuni eventi di rotazione e tocco e simulare le proprietà di connessione di rete.
@@ -151,4 +149,4 @@ Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che sim
  È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Vedere anche
- [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
+ [Eseguire app da Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 5923a3df9241689847444f5748d07f3c5f389ce5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926593"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
@@ -114,7 +113,7 @@ Creare il database di esempio seguendo questa procedura:
 |Controlli del form FillOrCancel|Proprietà|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|Pulsante|Name = btnFindByOrderID|
+|Button|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
 |Button|Name = btnCancelOrder|

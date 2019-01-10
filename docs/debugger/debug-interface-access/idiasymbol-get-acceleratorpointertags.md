@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Documenti Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875459"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Restituisce tutti i valori tag puntatore tasti di scelta rapida che corrispondono a una funzione di stub di C++ AMP tasti di scelta rapida.  
+Restituisce tutti i valori di tag puntatore tasti di scelta rapida che corrispondono a una funzione di stub di tasti di scelta rapida AMP C++.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +34,16 @@ HRESULT get_acceleratorPointerTags(
  [in] Le dimensioni della matrice di output `pPointerTags`.  
   
  `pcnt`  
- [out] Il numero di tag di puntatore tasti di scelta rapida nella funzione stub C++ AMP tasti di scelta rapida.  
+ [out] Il conteggio dei tag di puntatore tasti di scelta rapida nella funzione di stub di tasti di scelta rapida AMP C++.  
   
  `pPointerTags`  
- [out] Oggetto `DWORD` puntatore alla matrice che viene riempito con i valori di tag puntatore tasti di scelta rapida nella funzione stub C++ AMP tasti di scelta rapida.  
+ [out] Oggetto `DWORD` puntatore di una matrice che viene riempito con i valori di tag acceleratore puntatore della funzione di stub di tasti di scelta rapida AMP C++.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato su un `IDiaSymbol` interfaccia che corrisponde a una funzione di stub di C++ AMP tasti di scelta rapida.  
+ Questo metodo viene chiamato su un `IDiaSymbol` interfaccia che corrisponde a una funzione di stub di tasti di scelta rapida AMP C++.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
