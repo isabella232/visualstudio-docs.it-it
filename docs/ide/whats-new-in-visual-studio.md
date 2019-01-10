@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2017.
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881023"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -175,9 +174,9 @@ L'esperienza è stata aggiornata per consentire spostamenti più efficienti e co
 
 * **Novità della versione 15.4**: **Vai a definizione** (**CTRL**+**clic** o **F12**): &ndash; gli utenti che usano il mouse hanno a disposizione un modo più semplice per passare alla definizione di un membro premendo **CTRL** e facendo quindi clic sul membro. È possibile premere **CTRL** e passare il mouse su un simbolo del codice per sottolinearlo e trasformarlo in un collegamento. Per altre informazioni, vedere [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md).
 
-* **Vai a implementazione (**CTRL**+**F12**): consente di spostarsi da qualsiasi tipo o membro di base alle relative implementazioni.
+* **Vai a implementazione** (**CTRL**+**F12**): consente di spostarsi da qualsiasi tipo o membro di base alle relative implementazioni.
 
-* **Vai a tutti** (**CTRL**+**T** o CTRL**+**,**): consente di passare direttamente a qualsiasi dichiarazione di file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
+* **Vai a tutti** (**CTRL**+**T** o **CTRL**+**,**): consente di passare direttamente a qualsiasi dichiarazione di file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
 
   ![Vai a tutti migliorato](../ide/media/vs2017ide-navigation-go-to.png)
 

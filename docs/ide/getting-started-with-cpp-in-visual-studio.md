@@ -4,7 +4,6 @@ description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
@@ -13,12 +12,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 182f020ee5ca8132eb19647fc9f24c834544ac2e
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 6d77732d6bf54e4849be55324e6ac18be2a46f74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820890"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -129,7 +128,7 @@ Il debugger viene avviato e viene eseguito il codice. La finestra della console 
 
    ![Testo Hello nella finestra della console](../ide/media/get-started-cpp-helloapp-window.png)
 
-1. Premere MAIUSC+F5 per arrestare il debug.
+1. Premere **MAIUSC+F5** per arrestare il debug.
 
 Per altre informazioni sul debug di progetti di console, vedere [Progetti di Console](../debugger/debugging-preparation-console-projects.md).
 
