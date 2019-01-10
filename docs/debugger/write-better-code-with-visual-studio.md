@@ -2,10 +2,9 @@
 title: Correggere i bug scrivendo codice C# migliore
 description: Informazioni su come scrivere codice migliore con meno bug
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967576"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Correggere i bug scrivendo meglio C# del codice con Visual Studio
 
-Debug del codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace, ma un potente IDE come Visual Studio può rendere molto più semplice il processo. Un IDE consente di eseguire il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è fornire una visione olistica del processo di debug, in modo da conoscere quando usare l'analizzatore di codice e su quando usare il debugger e quando utilizzare altri strumenti.  
+Debug del codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace, ma un potente IDE come Visual Studio può rendere molto più semplice il processo. Un IDE consente di eseguire il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è fornire una visione olistica del processo di debug, in modo da conoscere quando usare l'analizzatore di codice e su quando usare il debugger e quando utilizzare altri strumenti.
 
 In questo articolo si parla sfruttando l'IDE per rendere più produttiva sessioni di debug. Discussa marginalmente numerose attività, ad esempio:
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

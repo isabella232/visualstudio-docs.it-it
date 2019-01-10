@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959586"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Prima di Visual Studio 2012, Visual Studio usava la sintassi personalizzata di e
 > Nei sistemi operativi Windows, la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di.NET.
 
 > [!TIP]
-> Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4D**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
+> Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: 1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Esempi di espressioni regolari
 
