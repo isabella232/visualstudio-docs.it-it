@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847824"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154421"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Creare un'estensione con un comando di menu
 Questa procedura dettagliata illustra come creare un'estensione con un comando di menu che consente di avviare Blocco note.  
@@ -121,6 +121,6 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
   
 4. Aggiungere i suggerimenti di codice, IntelliSense e altre funzionalità agli editor di codice esistenti: [Estendere l'editor e servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Aggiungere pagine delle proprietà e le opzioni e impostazioni utente per l'estensione: [Estendere le proprietà e la finestra delle proprietà](../extensibility/extending-properties-and-the-property-window.md) e [estendere Ooptions e impostazioni utente](../extensibility/extending-user-settings-and-options.md)  
+5. Aggiungere pagine delle proprietà e le opzioni e impostazioni utente per l'estensione: [Estendere le proprietà e la finestra delle proprietà](../extensibility/extending-properties-and-the-property-window.md) e [estendere opzioni e impostazioni utente](../extensibility/extending-user-settings-and-options.md)  
   
    Altri tipi di estensioni richiedono un po' più operazioni, ad esempio creare un nuovo tipo di progetto ([estendere i progetti](../extensibility/extending-projects.md)), creare un nuovo tipo di editor ([per creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md)), o l'implementazione di estensione in una shell isolata: [Visual Studio isolata shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986570"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154150"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Contrassegnare tutti i campi non serializzabili
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986570"
  Un campo di istanza di un tipo non serializzabile viene dichiarato in un tipo serializzabile.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tipo serializzabile è quello contrassegnato con il <xref:System.SerializableAttribute?displayProperty=fullName> attributo. Quando viene serializzato il tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> eccezione viene generata se un tipo contiene un campo di istanza di un tipo che non è serializzabile.
+ Un tipo serializzabile è quello contrassegnato con il <xref:System.SerializableAttribute?displayProperty=fullName> attributo. Quando viene serializzato il tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> eccezione viene generata se il tipo contiene un campo di istanza di un tipo che non è serializzabile.
+ 
+ Un'eccezione è quando il tipo non usa la serializzazione personalizzata tramite il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia. Tipi che implementano questa interfaccia è fornire la propria logica di serializzazione e pertanto CA2235 non verranno generati per i campi di istanza non serializzabile di tali tipi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, si applicano le <xref:System.NonSerializedAttribute?displayProperty=fullName> attributo sul campo che non è serializzabile.
