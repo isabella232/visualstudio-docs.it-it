@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: usare modifica e continuazione (c#) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Utilizzare Modifica e continuazione (C#) | Microsoft Docs'
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861968"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Procedura: utilizzare Modifica e continuazione (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Procedura: Usare Modifica e continuazione (C#)
 Con modifica e continuazione, è possibile verificare e applicare le modifiche al codice in modalità di interruzione durante il debug, senza dover arrestare e riavviare la sessione di debug.  
 
 Modifica e continuazione per C# viene eseguita automaticamente quando è apportare modifiche al codice in modalità di interruzione, quindi continuare il debug usando **continuazione**, **passaggio**, o **Imposta istruzione successiva**, oppure si valuta una funzione in una finestra del debugger.  

@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_samplerSlot | Documenti Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_samplerSlot | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c51cce25c6bf4ec12c981a0a342a56451eff416
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f48731c7c7abdcd0eb36f24b8d49eead0247cbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985709"
 ---
 # <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
-Recupera lo slot campionatore.  
+Recupera lo slot del campionatore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,7 +29,7 @@ HRESULT get_samplerSlot(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene lo slot campionatore.  
+ [out] Un puntatore a un `DWORD` che contiene lo slot del campionatore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  

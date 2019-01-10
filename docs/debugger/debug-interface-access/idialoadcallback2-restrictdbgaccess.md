@@ -1,8 +1,6 @@
 ---
-title: IDiaLoadCallback2::RestrictDBGAccess | Documenti Microsoft
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictDBGAccess | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75db393822dc6c5d65bbbab4c9ccc64eed9f630
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8238469232656d4fa32b71fbfb7704afd6870b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843856"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Determina se cercando le informazioni di debug da file DBG.  
+Determina se alla ricerca di informazioni di debug è consentita dai file DBG.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +32,7 @@ HRESULT RestrictDBGAccess();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Diverso da qualsiasi valore restituito `S_OK` per impedire cercando le informazioni di debug da file DBG.  
+ Diverso da qualsiasi valore restituito `S_OK` per impedire alla ricerca di informazioni di debug da file DBG.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

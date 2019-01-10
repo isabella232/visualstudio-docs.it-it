@@ -1,8 +1,6 @@
 ---
 title: JIT debug e ottimizzazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8cb56b35092bb958ebf2e6947006acb3d0d240
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841265"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
 **Funzionano delle ottimizzazioni in .NET:** Se si sta tentando di eseguire il debug di codice, è più semplice quando che il codice è **non** ottimizzato. Questo avviene perché quando il codice è ottimizzato, il compilatore e il runtime di apportare modifiche al codice della CPU generato in modo che viene eseguito più velocemente, ma ha un mapping diretto meno a codice sorgente originale. Ciò significa che i debugger sono spesso non è possibile indicare il valore delle variabili locali e l'esecuzione di istruzioni del codice e i punti di interruzione potrebbe non funzionare come previsto.
