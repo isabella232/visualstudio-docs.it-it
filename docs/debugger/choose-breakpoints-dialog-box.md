@@ -1,8 +1,6 @@
 ---
-title: I punti di interruzione, finestra di dialogo Seleziona | Documenti Microsoft
-ms.custom: ''
+title: I punti di interruzione, finestra di dialogo Seleziona | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898791"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Finestra di dialogo Seleziona punti di interruzione
-Il **Seleziona punti di interruzione** la finestra di dialogo viene visualizzata quando si tenta di impostare un punto di interruzione da un input ambiguo nel **nuovo punto di interruzione** la finestra di dialogo. Un esempio comune di input ambiguo è un nome di funzione in overload.  
+Il **Seleziona punti di interruzione** verrà visualizzata la finestra di dialogo quando si prova a impostare un punto di interruzione da un input ambiguo nel **nuovo punto di interruzione** nella finestra di dialogo. Un esempio dell'input ambiguo comune è un nome di funzione in overload.  
   
  **Punti di interruzione**  
- Gli elenchi di possibili punti di interruzione può essere impostate in base all'input ambiguo. È possibile selezionare uno o più punti di interruzione impostato.  
+ Gli elenchi di possibili punti di interruzione può essere impostate in base all'input ambiguo. È possibile selezionare uno o più punti di interruzione da impostare.  
   
  **All**  
- Seleziona tutti i punti di interruzione nella **i punti di interruzione** casella.  
+ Seleziona tutti i punti di interruzione nel **i punti di interruzione** casella.  
   
  **None**  
- Cancella tutti i punti di interruzione nella **i punti di interruzione** casella.  
+ Cancella tutti i punti di interruzione nel **i punti di interruzione** casella.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di punti di interruzione](../debugger/using-breakpoints.md)

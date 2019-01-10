@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932785"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 
@@ -54,10 +53,10 @@ La tabella seguente elenca i [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes
 
 | Origine dati | Generazione di XAML per l'associazione di un controllo all'origine dati | Generazione di codice per l'inserimento dei dati nell'origine dati |
 | - | - | - |
-| Set di dati | Yes | Yes |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Yes | Yes |
-| Service | Yes | No |
-| Object | Yes | No |
+| Set di dati | Sì | Yes |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Yes | Sì |
+| Service | Sì | No |
+| Object | Sì | No |
 
 ### <a name="datasets"></a>Dataset
 

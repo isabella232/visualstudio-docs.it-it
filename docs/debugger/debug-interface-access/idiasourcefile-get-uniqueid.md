@@ -1,8 +1,6 @@
 ---
 title: Get_uniqueid | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c2996513f3e6464d8f94522c2b427213882f6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3eef4e6f435b60f024067e13c884c7742df0ffa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879475"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 Recupera un valore di chiave semplice numero intero univoco per questa immagine.  
@@ -27,7 +25,7 @@ Recupera un valore di chiave semplice numero intero univoco per questa immagine.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_uniqueId (   
+HRESULT get_uniqueId (   
    DWORD* pRetVal  
 );  
 ```  

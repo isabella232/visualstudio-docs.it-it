@@ -1,8 +1,6 @@
 ---
 title: Modifica e continuazione nella finestra di dialogo (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
@@ -21,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c6d598605f229f306571e792c9b4dcfadfbda92
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923718"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Finestra di dialogo Modifica e continuazione (C++)
-La modalità Modifica e continuazione non ha applicato le modifiche apportate al codice nativo. Questa condizione potrebbe essere temporanea. In alcuni casi, la modalità Modifica e continuazione non applica immediatamente le modifiche al codice nativo, ma in seguito durante la sessione di debug, ad esempio al termine della chiamata corrente alla procedura in esecuzione. Per altre informazioni, vedere [modifica e continuazione](../debugger/edit-and-continue.md).  
+La modalità Modifica e continuazione non ha applicato le modifiche apportate al codice nativo. Questa condizione potrebbe essere temporanea. In alcuni casi, la modalità Modifica e continuazione non applica immediatamente le modifiche al codice nativo, ma in seguito durante la sessione di debug, ad esempio al termine della chiamata corrente alla procedura in esecuzione. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
   
  È possibile modificare il codice per correggere l'errore mentre si esegue ancora il debug, interrompere il debug e correggere il codice o ignorare l'errore e continuare il debug. Se si continua senza apportare la correzione, le modifiche al codice non verranno applicate immediatamente.  
   

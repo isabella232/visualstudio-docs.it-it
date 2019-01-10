@@ -1,8 +1,6 @@
 ---
-title: Interfacce (Debug Interface Access SDK) | Documenti Microsoft
-ms.custom: ''
+title: Interfacce (Debug Interface Access SDK) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c7337ae50f85f95f063a47787b8a4be37c9fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 102d3456e1daf3c72f5f6c95c629ca2a42e7542f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907709"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfacce (Debug Interface Access SDK)
-I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella del contenuto e nella pagina dell'interfaccia nell'ordine Vtable.  
+I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella dei contenuti e nella pagina dell'interfaccia nell'ordine Vtable.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
@@ -36,7 +34,7 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Fornisce l'accesso ai record in un flusso di dati di debug.  
   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)  
- Enumera i vari flussi debug contenuti nell'origine dati.  
+ Enumera i vari flussi di debug contenuti nell'origine dati.  
   
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
  Enumera i vari elementi di dati di frame contenuti nell'origine dati.  
@@ -45,10 +43,10 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Consente di enumerare le varie origini inserite contenute nell'origine dati.  
   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
- Enumera i numeri di riga diversi contenuti nell'origine dati.  
+ Enumera i diversi numeri di riga contenuti nell'origine dati.  
   
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
- Enumera i vari contributi sezione contenuti nell'origine dati.  
+ Enumera i vari contributi di sezione contenuti nell'origine dati.  
   
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
  Enumera i vari segmenti contenuti nell'origine dati.  
@@ -57,13 +55,13 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Enumera i vari file di origine contenuti nell'origine dati.  
   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)  
- Enumera i vari stack frame disponibili.  
+ Enumera i vari stack frame disponibile.  
   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
- Enumera i vari simboli contenuti nell'origine dati.  
+ Enumera i simboli diversi contenuti nell'origine dati.  
   
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)  
- Enumera i indirizzo i simboli diversi contenuti nell'origine dati.  
+ Enumera in base all'indirizzo i simboli diversi contenuti nell'origine dati.  
   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
  Enumera le varie tabelle contenute nell'origine dati.  
@@ -75,19 +73,19 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Espone i dettagli degli offset di posizione e la memoria base del modulo o immagine.  
   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
- Accede a codice sorgente del programma archiviate nell'origine dati DIA.  
+ Accede a codice sorgente del programma archiviate nell'origine dei dati DIA.  
   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
- Si accede alle informazioni che descrive il processo di mapping da un blocco di byte di testo da un'immagine a un numero di riga di file di origine.  
+ Si accede alle informazioni che descrive il processo di mapping da un blocco di byte di testo dell'immagine a un numero di riga del file origine.  
   
  [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)  
- Riceve i callback dal simbolo DIA procedura di individuazione, consentendo un'interfaccia utente per creare report sullo stato del tentativo di percorso.  
+ Riceve i callback dal simbolo DIA individuazione di routine, consentendo un'interfaccia utente segnalare lo stato di avanzamento del tentativo di percorso.  
   
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)  
- Riceve i callback dal simbolo DIA procedura di individuazione, che consente le restrizioni da imporre il processo di individuazione.  
+ Riceve i callback dal simbolo DIA individuazione delle procedure, che consente di restrizioni a essere imposti sul processo di individuazione.  
   
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)  
- Consente di leggere le proprietà di un set di proprietà DIA permanente.  
+ Consente di leggere le proprietà persistenti di un set di proprietà DIA.  
   
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)  
  Consente a un'applicazione client fornire i byte di un file eseguibile come specificato dalla posizione del file.  
@@ -96,10 +94,10 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Consente a un'applicazione client fornire i byte di un file eseguibile come specificato da un indirizzo virtuale relativo.  
   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
- Recupera i dati che descrivono un contributo di sezione, vale a dire un blocco di memoria contiguo ha contribuito all'immagine da un modulo.  
+ Recupera i dati che descrivono un contributo di sezione, vale a dire, un blocco di memoria contigue ha contribuito all'immagine da un modulo.  
   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
- Mappa i dati del numero di sezione ai segmenti dello spazio degli indirizzi.  
+ Esegue il mapping dei dati rispetto al numero di sezione ai segmenti dello spazio degli indirizzi.  
   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
  Fornisce un contesto di query per i simboli di debug.  
@@ -111,13 +109,13 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Espone le proprietà di uno stack frame.  
   
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)  
- Fornisce metodi per eseguire uno stack procedono utilizzando il file PDB.  
+ Fornisce metodi per eseguire uno stack procedono con il file PDB.  
   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)  
- Gestisce il contesto di stack tra le chiamate del [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) metodo.  
+ Mantiene dello stack di contesto tra le chiamate dei [Idiaframedata](../../debugger/debug-interface-access/idiaframedata-execute.md) (metodo).  
   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)  
- Facilita la verifica dello stack utilizzando il file di programma debug (PDB) di database.  
+ Semplifica i percorsi nello stack usando il file di database (PDB) di debug programma.  
   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
  Vengono descritte le proprietà di un'istanza del simbolo.  
@@ -130,7 +128,7 @@ I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella de
  Descrive le enumerazioni e strutture utilizzate da varie interfacce di DIA SDK.  
   
  [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- Vengono descritte le costanti disponibili in DIA SDK.  
+ Vengono descritte le costanti disponibile in DIA SDK.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

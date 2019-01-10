@@ -1,8 +1,6 @@
 ---
-title: Utilizzo di Spy + + | Documenti Microsoft
-ms.custom: ''
+title: Utilizzo di Spy + + | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb5356ecfe31bce8c8f429add2e78e495f40cd5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a316f2fa786697511a98ae06e5fc52e86412d6b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943275"
 ---
 # <a name="using-spy"></a>Utilizzo di Spy++
-Spy + + (SPYXX. Con estensione EXE) è un'utilità basate su Win32 che offre una visualizzazione grafica dei processi, thread, windows e i messaggi della finestra del sistema. In questa sezione del Spy + + della Guida include i seguenti argomenti:  
+Spy + + (SPYXX. Con estensione EXE) è un'utilità basata su Win32 che ti offre una visualizzazione grafica dei processi, thread, windows e i messaggi della finestra del sistema. In questa sezione del Spy + + della Guida include i seguenti argomenti:  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Introduzione a Spy++](../debugger/introducing-spy-increment.md)  
@@ -30,23 +28,23 @@ Spy + + (SPYXX. Con estensione EXE) è un'utilità basate su Win32 che offre una
  Viene illustrato come avviare Spy + + dal menu Strumenti.  
   
  [Barra degli strumenti di Spy++](../debugger/spy-increment-toolbar.md)  
- Vengono descritti i comandi disponibili sulla barra degli strumenti di Spy + +.  
+ Descrive i comandi disponibili sulla barra degli strumenti di Spy + +.  
   
  [Procedura: Visualizzare le visualizzazioni di Spy++](../debugger/how-to-display-spy-increment-views.md)  
- Come visualizzare una visualizzazione di Windows, visualizzazione di messaggi, visualizzazione processi e visualizzazione thread.  
+ Come visualizzare una visualizzazione di Windows, visualizzazione di messaggi, visualizzazione dei processi e visualizzazione thread.  
   
  [Procedura: Aggiornare la visualizzazione](../debugger/how-to-refresh-the-view.md)  
  Viene descritto il comando di aggiornamento.  
   
- [Procedura: Modificare i tipi di carattere](../debugger/how-to-change-fonts.md)  
- Viene illustrato come modificare il modo in cui che viene mostrata una visualizzazione.  
+ [Procedura: Modificare i caratteri](../debugger/how-to-change-fonts.md)  
+ Viene illustrato come modificare la modalità di che visualizzazione di una vista.  
   
  [Procedura: Espandere e comprimere alberi di Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
  Viene illustrato come modificare una vista.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Vengono illustrate le visualizzazioni ad albero Spy + + di windows, i messaggi, thread e processi.  
+ Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include le sezioni che descrivono ogni Spy + + menu e finestra di dialogo.
+ Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

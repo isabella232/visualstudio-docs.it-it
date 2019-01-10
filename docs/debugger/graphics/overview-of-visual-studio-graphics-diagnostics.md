@@ -2,19 +2,18 @@
 title: Panoramica di diagnostica della grafica | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831378"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica della grafica di Visual Studio
 *Diagnostica della grafica* di Visual Studio è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Diagnostica della grafica è utilizzabile in applicazioni eseguite in locale nel PC Windows o in un PC o dispositivo remoto.  
@@ -53,7 +52,7 @@ ms.locfileid: "53059113"
 ### <a name="gpu-usage"></a>Utilizzo GPU  
  Diagnostica grafica può anche profilare le prestazioni dell'app Direct3D. Poiché i dati di profilatura sarebbero falsati dalla registrazione di dettagli sugli eventi di grafica, questa funzione è distinta dall'acquisizione dei frame da esaminare con Analizzatore grafica.  
   
- Per altre informazioni, vedere [Utilizzo GPU](gpu-usage.md).  
+ Per altre informazioni, vedere [Utilizzo GPU](/visualstudio/profiling/gpu-usage).  
   
 ### <a name="directx-control-panel"></a>Pannello di controllo DirectX  
  Il pannello di controllo DirectX è un componente che consente di modificare il comportamento di DirectX. È ad esempio possibile abilitare la versione di debug dei componenti di runtime di DirectX, selezionare il tipo di messaggi di debug segnalati e impedire l'uso di determinate funzionalità dell'hardware grafico per emulare hardware meno potente. Questo livello di controllo su DirectX può facilitare il debug e il test dell'app DirectX. È possibile accedere al pannello di controllo DirectX da Visual Studio.  

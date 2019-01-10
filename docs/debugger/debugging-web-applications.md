@@ -1,8 +1,6 @@
 ---
 title: Debug di applicazioni Web | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923040"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
 In questa sezione viene illustrato come eseguire il debug di diversi tipi di applicazioni Web.  
@@ -39,7 +37,7 @@ In questa sezione viene illustrato come eseguire il debug di diversi tipi di app
  Vengono descritti i passaggi necessari per attivare il debug di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)   
+ [Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Esaminare innanzitutto il debugger](../debugger/debugger-feature-tour.md) [debug in Visual Studio](../debugger/index.md)  
  [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)

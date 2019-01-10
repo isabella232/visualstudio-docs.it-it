@@ -1,8 +1,6 @@
 ---
 title: "Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898151"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione
 Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, il cliente ha in genere aggiornare il manifesto di distribuzione e firmare nuovamente la soluzione. Sebbene questo rappresenti il metodo consigliato nella maggior parte dei casi, .NET Framework 3.5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni che possono essere distribuite dai clienti senza la necessità di rigenerare un nuovo manifesto di distribuzione. Per altre informazioni, vedere [le applicazioni di distribuzione ClickOnce per i server di test e produzione senza riapposizione della firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
  Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, l'applicazione può usare la personalizzazione del cliente o conservare le proprie. Ad esempio, se l'applicazione è una singola applicazione proprietaria, si potrebbe essere necessario mantenere la personalizzazione. Se l'applicazione è altamente personalizzata per ogni cliente, si potrebbe voler usare la personalizzazione del cliente. .NET Framework 3.5 consente di conservare la personalizzazione, informazioni sull'editore e la firma di sicurezza quando si concede un'applicazione a un'organizzazione per la distribuzione. Per altre informazioni, vedere [delle applicazioni ClickOnce creare altri utenti possano distribuire](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   
 > [!NOTE]
->  In questa procedura dettagliata creare distribuzioni manualmente usando lo strumento da riga di comando *Mage.exe* o lo strumento con interfaccia grafico *MageUI.exe*. Per altre informazioni sulle distribuzioni manuali, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+>  In questa procedura dettagliata creare distribuzioni manualmente usando lo strumento da riga di comando *Mage.exe* o lo strumento con interfaccia grafico *MageUI.exe*. Per altre informazioni sulle distribuzioni manuali, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire i passaggi in questa procedura dettagliata è necessario quanto segue:  
@@ -131,7 +129,7 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 14. Se si dispone di un certificato archiviato come file nel file system, usare il **Sign come file di certificato** opzione e selezionare il certificato dal file system con i puntini di sospensione (**...** ) pulsante.  
   
-     oppure  
+     -oppure-  
   
      Se il certificato si trova in un archivio di certificati che sono accessibili dal computer, selezionare la **segno con l'opzione certificati archiviati**e selezionare il certificato dall'elenco fornito.  
   

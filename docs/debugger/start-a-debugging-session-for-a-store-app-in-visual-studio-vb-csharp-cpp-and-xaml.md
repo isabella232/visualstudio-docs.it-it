@@ -2,7 +2,6 @@
 title: Avviare una sessione di debug per un'app UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c2ef4e92cddb302e67f99c921750d4e9e83d98e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901986"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Avviare una sessione di debug per un'app UWP
   
@@ -209,4 +208,4 @@ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/i
 > Il modo più semplice per collegare all'app JavaScript consiste nel chiudere tutte le altre App JavaScript. In alternativa, è possibile notare il PID di esecuzione *wwahost.exe* processi Windows Task Manager prima di avviare l'app. Quando si avvia l'app, relativi *wwahost.exe* PID sarà quello che è diverso da quelli annotati in precedenza.  
 
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire il debug di app in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Eseguire il debug di app in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   

@@ -1,8 +1,6 @@
 ---
 title: Generale, debug, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fa13bbeee3289e19acdff7e45fe6e4a99f30d9
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.openlocfilehash: 9fa48ff41739752ff37817192b26483a23579419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829473"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
@@ -140,7 +138,7 @@ Indica a Visual Studio per provare un nuovo modo per avviare Chrome durante il d
 **Carica esportazioni DLL (solo Nativo)**:  
 Carica le tabelle di esportazione DLL. Le informazioni sui simboli delle tabelle di esportazione DLL possono essere utili se usano messaggi Windows, routine Windows (WindowProc), oggetti COM, marshalling o qualsiasi DLL per cui non sono disponibili simboli. La lettura di informazioni di esportazione DLL comporta un sovraccarico. Pertanto questa funzionalità è disattivata per impostazione predefinita.
 
-Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports`, è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](/cpp/build/reference/dash-exports).
+Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports` , è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](/cpp/build/reference/dash-exports).
 
 **Mostra diagramma degli stack in parallelo dal basso verso l'alto**:  
 Controlla la direzione in cui vengono visualizzati gli stack nella finestra **Stack in parallelo**.

@@ -1,8 +1,6 @@
 ---
 title: Usando i dati di IntelliTrace salvati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836910"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.

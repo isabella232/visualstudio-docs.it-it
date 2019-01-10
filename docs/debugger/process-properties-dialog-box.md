@@ -1,8 +1,6 @@
 ---
-title: Nella finestra di dialogo Proprietà elabora | Documenti Microsoft
-ms.custom: ''
+title: Finestra di dialogo Proprietà elabora | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
@@ -13,21 +11,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d14805f0815c7645ff54352cda218edc44efa4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 42f1838aa2dcfcdd9ac070d3b1c03c4e177c195d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898034"
 ---
 # <a name="process-properties-dialog-box"></a>Finestra di dialogo Proprietà processo
-Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un processo specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero, quindi scegliere **proprietà** dal **vista** menu.  
+Per altre informazioni su un processo specifico, usare questa finestra di dialogo. Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
  Nei sistemi operativi Windows 98 e Windows 95, solo una versione modificata del **generale** viene visualizzata la scheda.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Scheda Generale, finestra di dialogo Proprietà processo](../debugger/general-tab-thread-properties-dialog-box.md)  
- Utilizzare questa finestra di dialogo per ulteriori informazioni sul processo selezionato.  
+ Utilizzare questa finestra di dialogo per altre informazioni sul processo selezionato.  
   
  [Scheda Memoria, finestra di dialogo Proprietà processo](../debugger/memory-tab-process-properties-dialog-box.md)  
  Utilizzare questa scheda per visualizzare l'utilizzo della memoria da parte di un processo.  
@@ -40,19 +38,19 @@ Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un 
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Finestra di dialogo Ricerca processi](../debugger/process-search-dialog-box.md)  
- Utilizzato per individuare il nodo per un processo specifico nella vista del processo.  
+ Utilizzato per trovare il nodo per un determinato processo nella visualizzazione processi.  
   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include le sezioni che descrivono ogni Spy + + menu e finestra di dialogo.  
+ Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.  
   
- [Ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ [La ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  Viene illustrato come trovare un processo specifico nella visualizzazione processi.  
   
  [Visualizzazione processi](../debugger/processes-view.md)  
- Consente di visualizzare una visualizzazione albero dei processi attivi.  
+ Consente di visualizzare una visualizzazione struttura ad albero dei processi attivi.  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Vengono illustrate le visualizzazioni ad albero Spy + + di windows, i messaggi, thread e processi.  
+ Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
   
  [Uso di Spy++](../debugger/using-spy-increment.md)  
- Vengono presentati lo strumento Spy + + e come può essere usato.
+ Introduce lo strumento Spy + + e spiega come può essere usato.

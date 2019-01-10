@@ -1,9 +1,7 @@
 ---
 title: Debug di un'app multithread
 description: Eseguire il debug usando la finestra thread e la barra degli strumenti posizione di Debug in Visual Studio
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893707"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Procedura dettagliata: Debug di un'app con multithreading usando la finestra thread
 
@@ -99,7 +97,7 @@ Impostare e rimuovere i flag dei thread da editor del codice sorgente o dal **th
 
 1. Aprire il **posizione di Debug** sulla barra degli strumenti selezionando **View** > **barre degli strumenti** > **posizione di Debug**. È anche possibile fare doppio clic nell'area della barra degli strumenti e selezionare **posizione di Debug**. 
    
-1. Il **posizione di Debug** sulla barra degli strumenti dispone di tre campi: **processo**, **Thread**, e **Stack Frame**. Elenco a discesa la **Thread** elencare e sono il numero di thread. Nel **Thread** elenco, il thread attualmente in esecuzione è contrassegnato da un **>** simbolo. 
+1. Il **posizione di Debug** sulla barra degli strumenti dispone di tre campi: **Processo**, **Thread**, e **Stack Frame**. Elenco a discesa la **Thread** elencare e sono il numero di thread. Nel **Thread** elenco, il thread attualmente in esecuzione è contrassegnato da un **>** simbolo. 
    
 1. Nella finestra del codice sorgente, passare il mouse su un'icona di marcatore del thread nella barra di navigazione e selezionare l'icona del contrassegno (o una delle icone flag vuoti) nel suggerimento dati. L'icona del contrassegno diventa rosso. 
    

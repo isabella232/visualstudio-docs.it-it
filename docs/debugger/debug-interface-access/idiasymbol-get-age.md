@@ -1,8 +1,6 @@
 ---
 title: Get_age | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d523a4dbed5f80fa67085537123e3d5be6fad361
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918651"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Recupera il valore di durata di un file con estensione pdb.  
@@ -27,7 +25,7 @@ Recupera il valore di durata di un file con estensione pdb.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_age (   
+HRESULT get_age (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,9 +45,9 @@ HRESULT get_age (
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Descrizione|  
+|Requisito|Description|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

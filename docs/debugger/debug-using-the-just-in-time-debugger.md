@@ -1,8 +1,6 @@
 ---
 title: Eseguire il debug con il Debugger JIT | Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831550"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il Debugger JIT in Visual Studio
 
@@ -107,7 +105,7 @@ Per abilitare il debug anziché la gestione degli errori di Windows Form standar
 
 Per questo esempio, si renderanno un C# app console in Visual Studio che genera una [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. In Visual Studio, creare un C# app console (**File** > **New** > **progetto** > **C#**  >  **Applicazione console**) denominato *ThrowsNullException*. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+1. In Visual Studio, creare un C# app console (**File** > **New** > **progetto** > **C#**  >  **Applicazione console**) denominato *ThrowsNullException*. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. Quando si apre il progetto in Visual Studio, aprire il *Program.cs* file. Sostituire il metodo Main () con il codice seguente, che stampa una riga nella console e quindi genera un'eccezione NullReferenceException:
    
@@ -198,4 +196,4 @@ Si potrebbero vedere i messaggi di errore seguente durante Just-In-Time di debug
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Opzioni, debug, Just-In-Time nella finestra di dialogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Avviso di sicurezza: Connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
