@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829196"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
