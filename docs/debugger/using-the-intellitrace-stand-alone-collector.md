@@ -1,8 +1,6 @@
 ---
 title: Tramite l'agente di raccolta autonomo IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820916"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Uso dell'agente di raccolta autonomo IntelliTrace
 L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati diagnostici di IntelliTrace per le app nei server di produzione o in altri ambienti senza installare Visual Studio nel computer di destinazione e senza cambiare l'ambiente del sistema di destinazione. L'agente di raccolta autonomo IntelliTrace funziona nelle app Web, SharePoint, WPF e Windows Form. Al termine della raccolta dei dati, eliminare semplicemente l'agente di raccolta per disinstallarlo.
@@ -71,7 +69,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 5.  [Raccogliere i dati da un'applicazione Web o da un'applicazione SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -oppure-
+     oppure
 
      [Raccogliere i dati da un'app gestita](#BKMK_Collect_Data_from_Executables)
 
@@ -366,7 +364,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
    Sì. Per ridurre l'impatto sulle prestazioni, IntelliTrace limita la raccolta dei dati ai valori dei tipi di dati primitivi passati e restituiti dai metodi e ai valori dei tipi di dati primitivi nei campi degli oggetti di primo livello passati e restituiti dai metodi.
 
-   Ad esempio, si supponga di avere una firma del metodo `AlterEmployee` che accetta un `id` Integer e un oggetto `Employee``oldemployee`:
+   Ad esempio, si supponga di avere una firma del metodo `AlterEmployee` che accetta un numero intero `id` e un oggetto `Employee` `oldemployee`:
 
    `public Employee AlterEmployee(int id, Employee oldemployee)`
 

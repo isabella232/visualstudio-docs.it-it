@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: eseguire il Debug da un progetto di DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug da un progetto di DLL | Microsoft Docs'
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854073"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: eseguire il Debug da un progetto DLL in Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: Eseguire il debug da un progetto DLL in Visual Studio (C#, C++, Visual Basic, F#)
 
 Un modo per un progetto di DLL di debug consiste nello specificare app chiamante nelle proprietà del progetto DLL. È quindi possibile avviare il debug dal progetto di DLL stessa. Per usare questo metodo, l'app deve chiamare la stessa DLL nella stessa posizione di quello che configurare. Se l'app Trova e carica una versione diversa della DLL, tale versione non includerà i punti di interruzione. Per altri metodi di debug di DLL, vedere [progetti di DLL di debug](../debugger/debugging-dll-projects.md).
   

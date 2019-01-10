@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951930"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedura: Creare ed eseguire un'installazione automatica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ ms.locfileid: "53065519"
 È possibile eseguire l'applicazione di installazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come un'installazione automatica, cioè invisibile all'utente, su una rete intranet invece che su un supporto tipo DVD. In questo argomento viene descritto come preparare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per questo tipo di installazione da una condivisione di rete.
 
 ## <a name="creating-a-network-image"></a>Creazione di un'immagine di rete
- Innanzitutto, creare un'immagine di rete del supporto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Innanzitutto, creare un'immagine di rete del supporto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 #### <a name="to-create-a-network-image"></a>Per creare un'immagine di rete
 
@@ -178,7 +177,7 @@ ms.locfileid: "53065519"
 
 2.  Immettere il codice Product Key.
 
-     (Per altre informazioni, vedere la [come: individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e il [procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) argomenti.)
+     Per altre informazioni, vedere la pagina [ Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e il [come: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) argomenti.)
 
 ## <a name="see-also"></a>Vedere anche
  [Installare Visual Studio](../install/install-visual-studio-2015.md)

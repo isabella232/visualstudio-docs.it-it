@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsectioncontribs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af4bd0c836d6c63870147d0eeb825c1cbc7b26a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0a6b02218f9d4aba3f9cc3b3785c70594a92457a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864177"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Ignora un determinato numero di contributi di sezione in una sequenza di enumerazione.  
@@ -27,7 +25,7 @@ Ignora un determinato numero di contributi di sezione in una sequenza di enumera
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT Skip(   
+HRESULT Skip(   
    ULONG celt  
 );  
 ```  

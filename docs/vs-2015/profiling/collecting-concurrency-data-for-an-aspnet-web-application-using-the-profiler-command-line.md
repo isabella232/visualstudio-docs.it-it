@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba6fbb03b171b50014aad887ff83d9841f0249
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 9abf64864c9b722f344662200dfc923cc3e192b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914183"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Raccolta di dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|Connettere il profiler a un'applicazione ASP.NET in esecuzione|-   [How to: Attach the Profiler to an ASP.NET Application to Collect Concurrency Data](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md) (Procedura: Connettere il profiler a un'applicazione ASP.NET per raccogliere dati di concorrenza)|  
+|Connettere il profiler a un'applicazione ASP.NET in esecuzione|-   [Procedura: Connettere il profiler a un'applicazione ASP.NET per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Riferimenti  
  [Informazioni di riferimento sugli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)  
@@ -45,7 +45,7 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
 |**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccolta di statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite strumentazione](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite strumentazione](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Profilatura dell'allocazione di memoria e garbage collection**|-   [Collecting Memory Data](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md) (Raccolta di dati relativi alla memoria)|  
   
 ### <a name="profiling-concurrency-issues"></a>Profilatura di problemi di concorrenza  

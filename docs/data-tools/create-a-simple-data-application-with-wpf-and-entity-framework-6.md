@@ -8,15 +8,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 4fa897ff92cb6956bef59dfcb7a860b24d0d8bae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885744"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -355,7 +354,7 @@ Successivamente, sostituire l'intera griglia esterna con questo codice:
 
 Nelle applicazioni Windows Form, ottenere un oggetto di BindingNavigator con i pulsanti per spostarsi tra le righe in un database e l'esecuzione di operazioni CRUD di base. WPF non è incluso un controllo BindingNavigator, ma è abbastanza semplice per crearne uno. È che fare con i pulsanti all'interno di un elemento StackPanel orizzontali e associare i pulsanti con i comandi che sono associati ai metodi nel code-behind.
 
-Esistono quattro parti per la logica di comando: (1) i comandi, (2) le associazioni, (3) i pulsanti e (4) i gestori comando nel code-behind.
+Vi sono quattro parti per la logica di comando: (1) i comandi, (2) le associazioni, (3) i pulsanti e (4) i gestori comando nel code-behind.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Aggiungere i comandi, associazioni e i pulsanti in XAML
 

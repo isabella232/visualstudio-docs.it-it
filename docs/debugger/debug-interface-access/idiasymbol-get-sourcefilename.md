@@ -1,8 +1,6 @@
 ---
 title: Get_sourcefilename | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c13470c39309264121aa88ad5bacd24511c7eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5b0dc635c5f1dff8d8e41426a72df61888c032d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864881"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
 Recupera il nome del file del file di origine compilando.  
@@ -27,7 +25,7 @@ Recupera il nome del file del file di origine compilando.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_sourceFileName (   
+HRESULT get_sourceFileName (   
    BSTR* pRetVal  
 );  
 ```  

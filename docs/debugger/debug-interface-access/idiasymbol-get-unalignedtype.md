@@ -1,8 +1,6 @@
 ---
 title: Get_unalignedtype | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 63094fff1a513b9de0e21fc29ad8aa10fb3746ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966797"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
 Recupera un flag che specifica se il tipo di dati definito dall'utente non è allineato.  
@@ -27,7 +25,7 @@ Recupera un flag che specifica se il tipo di dati definito dall'utente non è al
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_unalignedType (   
+HRESULT get_unalignedType (   
    BOOL* pRetVal  
 );  
 ```  

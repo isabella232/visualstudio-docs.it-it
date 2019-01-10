@@ -1,8 +1,6 @@
 ---
-title: 'Errore: Esecuzione Transact-SQL terminata senza debug | Microsoft Docs'
-ms.custom: ''
+title: 'Errore: Esecuzione di Transact-SQL terminata senza debug | Microsoft Docs'
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: ce27a15766af51a10cf1697f3ed08e6aebf2bb96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863056"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: Esecuzione di Transact-SQL terminata senza debug
 
 Questo errore si verifica quando si sta tentando di eseguire il debug di una Transact-SQL o una routine SQLCLR e il debugger non riceve i messaggi di debug da SQL Server.  
   
@@ -42,7 +40,7 @@ Questo problema riguarda due account:
   
   Per correggere questo errore, è possibile:  
   
-  - Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [procedura: impostare delle autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+  - Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
   - Assicurarsi che il debug SQL sia configurato correttamente.  
   
@@ -51,6 +49,6 @@ Questo problema riguarda due account:
 ## <a name="see-also"></a>Vedere anche
 
 - [Configurazione di debug SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Procedura: impostare le autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Procedura: Impostare autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

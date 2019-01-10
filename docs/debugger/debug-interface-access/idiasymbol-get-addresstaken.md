@@ -1,8 +1,6 @@
 ---
 title: Get_addresstaken | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8244940212237ed6725017cc92d2ba005ccc0d10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cc3f3324bd101e907e3b352606b9036b74657576
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859516"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di questo simbolo.  
@@ -27,7 +25,7 @@ Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di 
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_addressTaken (   
+HRESULT get_addressTaken (   
    BOOL* pRetVal  
 );  
 ```  
@@ -52,9 +50,9 @@ int* B = &A;
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Descrizione|  
+|Requisito|Description|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
