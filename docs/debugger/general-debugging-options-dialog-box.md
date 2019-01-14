@@ -123,7 +123,7 @@ Disattiva tutte le personalizzazioni di visualizzazione della struttura degli og
 **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)**:  
 Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per altre informazioni, vedere [JIT debug e ottimizzazione](../debugger/jit-optimization-and-debugging.md).
 
-**Abilita il debug JavaScript per ASP.NET (Chrome, Edge e Internet Explorer)**:  
+**Abilita il debug JavaScript per ASP.NET (Chrome, Microsoft Edge e Internet Explorer)**:  
 Consente al debugger di script per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato. Disabilitare questa opzione per ripristinare il comportamento legacy.
 
 **Abilita strumenti di sviluppo Edge per app JavaScript per la piattaforma UWP (sperimentale)**:  
