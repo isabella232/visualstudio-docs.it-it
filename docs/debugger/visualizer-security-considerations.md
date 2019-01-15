@@ -1,8 +1,6 @@
 ---
-title: Considerazioni sulla sicurezza del Visualizzatore | Documenti Microsoft
-ms.custom: ''
+title: Considerazioni sulla sicurezza del Visualizzatore | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819562"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
 La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. Attualmente non sono noti attacchi in grado di sfruttare tali rischi, ma gli sviluppatori devono essere a conoscenza della loro esistenza e adottare misure di sicurezza adeguate come descritto in questo argomento al fine di impedire eventuali attacchi futuri.  
@@ -40,7 +38,7 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
  Per ovviare a questa vulnerabilità, tenere presenti le interfacce esposte dal visualizzatore.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)   
- [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Architettura del visualizzatore](../debugger/visualizer-architecture.md)   
+ [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

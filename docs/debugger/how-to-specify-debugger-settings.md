@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: specificare le impostazioni del Debugger | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare le impostazioni del Debugger | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847178"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
-In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni nel **opzioni** nella finestra di dialogo.  
+# <a name="how-to-specify-debugger-settings"></a>Procedura: Specificare le impostazioni del debugger
+In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni, utilizzare la finestra di dialogo **Opzioni**.  
   
 ### <a name="to-set-debugger-options"></a>Per impostare le opzioni del debugger  
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **le opzioni** finestra di dialogo, aprire il **debug** cartella.  
+2.  Nella finestra di dialogo **Opzioni** aprire la cartella **Debug**.  
   
-3.  Nel **debug** cartella, scegliere la categoria di opzioni desiderata.  
+3.  Nella cartella **Debug** scegliere la categoria di opzioni desiderata.  
   
-     Le opzioni più comuni si trovano nel **generale** categoria. Per altre informazioni, vedere [generale, debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md).  
+     Le opzioni utilizzate più frequentemente si trovano nella categoria **Generale**. Per altre informazioni, vedere [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Selezionare o deselezionare l'opzione o le opzioni desiderate. Per visualizzare le informazioni della Guida sulle opzioni, premere F1  
   

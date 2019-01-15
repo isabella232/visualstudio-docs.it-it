@@ -1,8 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5d079310fa8fa579f05e927eb37a0cbd6f2c8cca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853749"
 ---
 # <a name="markprofile"></a>MarkProfile
 Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione *vsp*. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.  
@@ -36,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|Il parametro è minore o uguale a 0. Questi valori sono riservati. L'indicatore e il commento non vengono registrati.|  
 |MARK_ERROR_MODE_NEVER|La modalità di profilatura è stata impostata su NEVER al momento della chiamata della funzione. L'indicatore e il commento non vengono registrati.|  
@@ -60,7 +58,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
- *Intestazione: dichiarata in VSPerf.h*  
+ Intestazione: Dichiarata in *VSPerf.h*  
   
  Libreria di importazione: *VSPerf.lib*  
   

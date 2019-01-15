@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e447bd5c56b166320962a7e495ace26be22efaf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 60fdc5a568f70795aff3388a3b0722807611bfc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985696"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
 Recupera l'indirizzo virtuale (valutazione della vulnerabilità) del blocco.  
@@ -27,7 +25,7 @@ Recupera l'indirizzo virtuale (valutazione della vulnerabilità) del blocco.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_virtualAddress (
  [out] Restituisce l'indirizzo virtuale del blocco.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

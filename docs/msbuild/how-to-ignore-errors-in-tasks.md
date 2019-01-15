@@ -1,8 +1,6 @@
 ---
 title: 'Procedura: Ignorare gli errori nelle attività | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild - "vs-ide-sdk"
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
@@ -11,12 +9,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 3df3a3b40dd67f12bac19f4e69f5293c85bb85f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f271c2d6dae3857818505829cf2da8a109613e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852690"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
 A volte è necessario che una compilazione sia a tolleranza di errore in determinate attività. Se tali attività non critiche hanno esito negativo, si vuole che la compilazione prosegua perché può ugualmente produrre l'output necessario. Se, ad esempio, un progetto usa un'attività `SendMail` per inviare un messaggio di posta elettronica dopo che ogni componente è stato compilato, si può considerare accettabile che la compilazione continui fino al completamento anche quando i server di posta non sono disponibili e i messaggi di stato non possono essere inviati. O anche, ad esempio, se di solito i file intermedi vengono eliminati durante la compilazione, si può considerare accettabile che la compilazione continui fino al completamento anche quando tali file non possono essere eliminati.  

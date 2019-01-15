@@ -1,8 +1,6 @@
 ---
-title: La finestra di dialogo Ricerca messaggi | Documenti Microsoft
-ms.custom: ''
+title: Finestra di dialogo di ricerca del messaggio | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
@@ -12,23 +10,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c125e2659e586d728a18293b9811a4e69743558
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3c1313820ff946499757f8a4240a49d93081e9e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853515"
 ---
 # <a name="message-search-dialog-box"></a>Finestra di dialogo Ricerca messaggi
-Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di un messaggio specifico in [visualizzazione messaggi](../debugger/messages-view.md). Spostare lo stato attivo per visualizzare questa finestra di dialogo, una finestra di visualizzazione di messaggi. Scegliere quindi **Trova messaggio** dal **ricerca** menu.  
+Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di un messaggio specifico in [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo per una finestra di visualizzazione dei messaggi. Quindi scegliere **Trova messaggio** dalle **ricerca** menu.  
   
- Sono disponibili le impostazioni seguenti:  
+ Sono disponibili le seguenti impostazioni:  
   
  **Strumento di ricerca**  
- Lo strumento di trascinamento e rilascio utilizzato per selezionare una finestra.  
+ Lo strumento di trascinamento della selezione utilizzato per selezionare una finestra.  
   
- **Nascondere Spy + +**  
- Rimuove la finestra principale di Spy + + e lascia il **ricerca messaggi** la finestra di dialogo di primo piano rispetto alle altre applicazioni.  
+ **Nascondi Spy + +**  
+ Rimuove la finestra principale di Spy + + e lascia il **ricerca messaggi** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni.  
   
  **Handle**  
  ID univoco del messaggio per la ricerca.  
@@ -37,26 +35,26 @@ Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di u
  Il tipo di messaggio per la ricerca.  
   
  **Messaggio**  
- ID del messaggio per la ricerca.  
+ L'ID del messaggio per la ricerca.  
   
- **Direzione della ricerca verso l'alto o verso il basso**  
+ **Direzione di ricerca verso l'alto o verso il basso**  
  La direzione iniziale della ricerca.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Ricerca di un messaggio nella visualizzazione messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Viene illustrato come trovare un messaggio specifico nella visualizzazione dei messaggi.  
+ [La ricerca di un messaggio nella visualizzazione messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Viene illustrato come individuare un messaggio specifico nella visualizzazione dei messaggi.  
   
  [Apertura della visualizzazione messaggi dalla finestra Trova](../debugger/how-to-open-messages-view-from-find-window.md)  
- Viene illustrato come aprire la visualizzazione messaggi nella finestra di dialogo Trova finestra.  
+ Viene illustrato come aprire la visualizzazione messaggi dalla finestra di dialogo Trova finestra.  
   
  [Visualizzazione messaggi](../debugger/messages-view.md)  
- Consente di visualizzare il flusso di messaggi associato a una finestra di un processo o thread.  
+ Consente di visualizzare il flusso del messaggio associato a una finestra, processo o thread.  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Vengono illustrate le visualizzazioni ad albero Spy + + di windows, i messaggi, thread e processi.  
+ Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
   
  [Uso di Spy++](../debugger/using-spy-increment.md)  
- Vengono presentati lo strumento Spy + + e come può essere usato.  
+ Introduce lo strumento Spy + + e spiega come può essere usato.  
   
  [Finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md)  
  Consente di selezionare quali messaggi sono elencati nella visualizzazione dei messaggi.  
@@ -65,4 +63,4 @@ Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di u
  Consente di visualizzare le proprietà di un messaggio selezionato nella visualizzazione di messaggi.  
   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include le sezioni che descrivono ogni Spy + + menu e finestra di dialogo.
+ Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

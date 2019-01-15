@@ -1,8 +1,6 @@
 ---
 title: Architettura del Visualizzatore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,29 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822956"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:  
   
 - Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio. Il codice del lato debugger crea e visualizza l'interfaccia utente del visualizzatore.  
   
-- Il *ritrasferire al lato* viene eseguito all'interno del processo di debug in Visual Studio (il *dell'oggetto del debug*).  
+- Il *lato oggetto del debug* viene eseguito all'interno del processo sottoposto a debug in Visual Studio (l'*oggetto del debug*).  
   
-  Un visualizzatore è un componente del debugger che consente al debugger da visualizzare (*visualizzare*) il contenuto di un oggetto dati in modo significativo e comprensibile. Alcuni visualizzatori supportano anche la modifica dell'oggetto dati. Scrivendo visualizzatori personalizzati, è possibile estendere il debugger in modo da gestire i tipi di dati personalizzati.  
+  Un visualizzatore è un componente del debugger che consente al debugger di *visualizzare* il contenuto di un oggetto dati in modo significativo e comprensibile. Alcuni visualizzatori supportano anche la modifica dell'oggetto dati. Scrivendo visualizzatori personalizzati, è possibile estendere il debugger in modo da gestire i tipi di dati personalizzati.  
   
-  L'oggetto dati da visualizzare si trova all'interno del processo a cui si esegue il debug (il *dell'oggetto del debug* processo). L'interfaccia utente in cui verranno visualizzati i dati viene creata all'interno del processo del debugger di Visual Studio:  
+  L'oggetto dati da visualizzare si trova all'interno del processo del quale si sta eseguendo il debug, ovvero il processo *oggetto del debug*. L'interfaccia utente in cui verranno visualizzati i dati viene creata all'interno del processo del debugger di Visual Studio:  
   
 |Processo del debugger|Processo oggetto del debug|  
 |----------------------|----------------------|  
 |Interfaccia utente del debugger (Suggerimenti dati, Finestra Espressioni di controllo, Controllo immediato)|Oggetto dati da visualizzare|  
   
- Per visualizzare l'oggetto dati all'interno dell'interfaccia del debugger, è necessario del codice per stabilire la comunicazione tra i due processi. Di conseguenza, l'architettura del visualizzatore è costituita da due parti: *lato debugger* codice e *lato oggetto del debug* codice.  
+ Per visualizzare l'oggetto dati all'interno dell'interfaccia del debugger, è necessario del codice per stabilire la comunicazione tra i due processi. Di conseguenza, l'architettura del visualizzatore è costituita da due parti: il codice del *lato debugger* e il codice del *lato oggetto del debug*.  
   
  Il codice del lato debugger crea un'interfaccia utente che può essere richiamata dall'interfaccia del debugger, ad esempio una finestra Suggerimenti dati, Espressioni di controllo o Controllo immediato. L'interfaccia del visualizzatore viene creata utilizzando la classe <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> e l'interfaccia <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>. Come tutte le API dei visualizzatori, DialogDebuggerVisualizer e IDialogVisualizerService si trovano nello spazio dei nomi <xref:Microsoft.VisualStudio.DebuggerVisualizers>.  
   
@@ -88,8 +86,8 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -oppure-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
- [Procedura dettagliata: Scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Procedura dettagliata: Scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

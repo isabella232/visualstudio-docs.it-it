@@ -1,8 +1,6 @@
 ---
 title: Riferimenti dello Schema di pacchetto e del prodotto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844669"
 ---
-# <a name="product-and-package-schema-reference"></a>Riferimento allo schema di Product e package
+# <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Esempi di dipendenze esterne di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e Microsoft Data Access Components (MDAC). Un file del pacchetto è simile a un file di prodotto ma viene usato per installare i componenti dipendenti dalla lingua di una dipendenza, ad esempio gli assembly localizzati, i contratti di licenza e documentazione.  
   
  Il file di prodotto e i pacchetti è costituito da uno un livello superiore `Product` o `Package` elemento, ognuno dei quali contiene gli elementi seguenti.  
   
-|Elemento|Descrizione|Attributi|  
+|Elemento|Description|Attributi|  
 |-------------|-----------------|----------------|  
 |[\<Product > elemento](../deployment/product-element-bootstrapper.md)|Elemento di primo livello necessario per i file di prodotto.|nessuno|  
 |[\<Pacchetto > elemento](../deployment/package-element-bootstrapper.md)|Elemento di primo livello obbligatorio per i file di pacchetto.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
@@ -160,5 +158,5 @@ Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipende
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

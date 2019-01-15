@@ -2,23 +2,22 @@
 title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6db68827b94deb461fe812e333d3fcbb44afc4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850914"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
-Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A tale scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato, come descritto nella tabella seguente. Per un esempio di test codificato dell'interfaccia utente in cui si attende che un controllo venga abilitato usando il metodo <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vedere [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A tale scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato, come descritto nella tabella seguente. Per un esempio di test codificato dell'interfaccia utente impostato in modo da attendere che un controllo venga abilitato tramite il metodo <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 

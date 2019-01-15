@@ -2,7 +2,6 @@
 title: 'Procedura: Specificare gli eventi di compilazione (Visual Basic)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828865"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 

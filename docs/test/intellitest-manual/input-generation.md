@@ -2,7 +2,6 @@
 title: Esecuzione simbolica dinamica | Strumento di test per sviluppatori Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834672"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
@@ -29,7 +28,7 @@ Le fasi del ciclo sono:
 
 1. IntelliTest esegue il test con l'input **i** scelto e controlla l'esecuzione del test e il programma sottoposto al test.
 
-1. Durante l'esecuzione il programma accetta un percorso specifico, determinato da tutti i rami condizionali del programma. Il set di tutte le condizioni che determinano l'esecuzione è detto *condizione di percorso*, scritta sotto forma di predicato **p: -> {true, false}** sui parametri di input formali. IntelliTest calcola una rappresentazione del predicato.
+1. Durante l'esecuzione il programma accetta un percorso specifico, determinato da tutti i rami condizionali del programma. Il set di tutte le condizioni che determinano l'esecuzione è detto *condizione di percorso*, scritta sotto forma di predicato **p: I -> {true, false}** sui parametri di input formali. IntelliTest calcola una rappresentazione del predicato.
 
 1. IntelliTest imposta **q := (q o p)**. In altre parole registra il fatto che ha rilevato il percorso rappresentato da **p**.
 

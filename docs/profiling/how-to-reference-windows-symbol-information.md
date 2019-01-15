@@ -1,8 +1,6 @@
 ---
 title: 'Procedura: Fare riferimento alle informazioni sui simboli di Windows | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ee80d19dea5956c85c844863ffd41ec94c486486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841677"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
 Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensione *pdb*) per risolvere i nomi simbolici, ad esempio i nomi delle funzioni nei file binari del programma. È possibile seguire questa procedura per scaricare e aggiornare automaticamente i file *pdb* corretti per la versione di Windows nel computer locale.  

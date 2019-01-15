@@ -1,8 +1,6 @@
 ---
 title: Elemento Task (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9cf8ce8a55c0f83731b7eaeb510b32061379036
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831274"
 ---
 # <a name="task-element-msbuild"></a>Elemento Task (MSBuild)
 Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Il nome dell'elemento viene determinato dal nome dell'attività da creare.  
@@ -46,7 +44,7 @@ Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensib
 
 ### <a name="attributes"></a>Attributi  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
 |`ContinueOnError`|Attributo facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md).|  
@@ -54,13 +52,13 @@ Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensib
 
 ### <a name="child-elements"></a>Elementi figlio  
 
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Output](../msbuild/output-element-msbuild.md)|Archivia gli output dell'attività nel file di progetto. Possono esistere zero o più elementi `Output` in un'attività.|  
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 

@@ -1,8 +1,6 @@
 ---
 title: 'Procedura dettagliata: Debug degli errori a causa dello sfondo di Rendering | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828407"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo
 Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostica della grafica per esaminare un oggetto colorato in modo non corretto a causa di un bug dello shader.  
   
  Questa procedura dettagliata illustra come:  
@@ -52,7 +50,7 @@ Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../../code-qu
   
 1. Aprire la finestra **Cronologia pixel grafica** . Scegliere **Cronologia pixel** sulla barra degli strumenti **Diagnostica grafica**.  
   
-2. Selezionare un pixel da esaminare. Nella finestra del documento log grafica selezionare uno dei pixel per l'oggetto colorato correttamente:  
+2. Selezionare un pixel da esaminare. Nella finestra del documento del log di grafica selezionare uno dei pixel nell'oggetto non colorato correttamente:  
   
     ![Selezione di un pixel consente di visualizzare informazioni sulla relativa cronologia. ](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -62,7 +60,7 @@ Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../../code-qu
   
     Si noti che il risultato del pixel shader è nero completamente opaco (0, 0, 0, 1) e che il **unione Output** combinare questo shader pixel con la **Previous** colore del pixel in modo che il  **Risultato** anche è nero completamente opaco.  
   
-   Dopo aver esaminato un pixel colorato in modo non corretto e individuare che l'output del pixel shader non corrisponde al colore previsto, è possibile usare il Debugger HLSL per esaminare il pixel shader e scoprire cosa è successo al colore dell'oggetto. È possibile usare il debugger HLSL per esaminare lo stato delle variabili HLSL durante l'esecuzione, eseguire il codice HLSL un'istruzione alla volta e impostare i punti di interruzione per facilitare la diagnosi del problema.  
+   Dopo aver esaminato un pixel colorato in modo errato e aver appurato che il colore dell'output del pixel shader non è quello previsto, è possibile usare il debugger HLSL per esaminare il pixel shader e scoprire cosa è successo al colore dell'oggetto. È possibile usare il debugger HLSL per esaminare lo stato delle variabili HLSL durante l'esecuzione, eseguire il codice HLSL un'istruzione alla volta e impostare i punti di interruzione per facilitare la diagnosi del problema.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Per esaminare il pixel shader  
   
@@ -84,7 +82,7 @@ Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../../code-qu
   
 2. Individuare la struttura di output del vertex shader, ovvero l'input per il pixel shader. In questo scenario, il nome di questa struttura è `output`. Esaminare il codice di vertex shader e notare che il membro `color` della struttura `output` è stato impostato in modo esplicito su nero completamente opaco, probabilmente a causa delle attività di debug di un utente.  
   
-3. Verificare che il membro del colore non venga mai copiato dalla struttura di input. Poiché il valore di `output.color` è impostato su nero completamente opaco immediatamente prima di `output` struttura viene restituita, è consigliabile assicurarsi che il valore di `output` non è stato correttamente inizializzato in una riga precedente. Eseguire il codice di vertex shader un'istruzione alla volta fino al raggiungimento della riga tramite cui si imposta `output.color` su nero durante l'analisi del valore di `output.color`. Si noti che il valore di `output.color` non viene inizializzato fino a quando non viene impostato su nero. In questo modo viene confermato che la riga di codice tramite cui si imposta `output.color` su nero deve essere modificata, anziché eliminata.  
+3. Verificare che il membro del colore non venga mai copiato dalla struttura di input. Poiché il valore di `output.color` viene impostato su nero completamente opaco immediatamente prima che venga restituita la struttura `output`, è consigliabile verificare se il valore di `output` non sia stato correttamente inizializzato in una riga precedente. Eseguire il codice di vertex shader un'istruzione alla volta fino al raggiungimento della riga tramite cui si imposta `output.color` su nero durante l'analisi del valore di `output.color`. Si noti che il valore di `output.color` non viene inizializzato fino a quando non viene impostato su nero. In questo modo viene confermato che la riga di codice tramite cui si imposta `output.color` su nero deve essere modificata, anziché eliminata.  
   
     ![Il valore di "Color" è nero. ](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

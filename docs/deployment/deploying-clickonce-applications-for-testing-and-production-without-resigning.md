@@ -1,8 +1,6 @@
 ---
 title: Distribuzione di applicazioni ClickOnce per i test e i server di produzione senza riapposizione della firma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,18 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3622d7033ac334ad69a86ffb6e1ba6789658a1f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833122"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuire le applicazioni ClickOnce per i server di test e produzione senza riapposizione della firma
 Questo articolo illustra una funzionalità introdotta in .NET Framework versione 3.5 che consente la distribuzione di applicazioni ClickOnce dalla più percorsi di rete senza riapposizione della firma o la modifica di ClickOnce manifesti ClickOnce.  
   
 > [!NOTE]
->  Riapposizione della firma è ancora il metodo preferito per la distribuzione di nuove versioni delle applicazioni. Se possibile, usare questo metodo. Per altre informazioni, vedere [ *Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
+>  Riapposizione della firma è ancora il metodo preferito per la distribuzione di nuove versioni delle applicazioni. Se possibile, usare questo metodo. Per altre informazioni, vedere [*Mage.exe* (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
  Gli sviluppatori di terze parti e fornitori di software indipendenti possono optare per questa funzionalità, rendendo più semplice per i clienti aggiornare le proprie applicazioni. Questa funzionalità può essere utilizzata nelle situazioni seguenti:  
   
@@ -60,9 +58,9 @@ Questo articolo illustra una funzionalità introdotta in .NET Framework versione
   
   Nel secondo esempio, si pubblica un'applicazione ClickOnce che specifica `deploymentProvider`, e si decide quindi di rimuoverlo. Una volta nella nuova versione senza `deploymentProvider` viene scaricato ai client, non è possibile reindirizzare il percorso usato per gli aggiornamenti fino a quando non si rilascia una versione dell'applicazione che ha `deploymentProvider` ripristinato. Come con il primo esempio `deploymentProvider` inizialmente deve puntare al percorso di aggiornamento corrente, non al nuovo percorso. In questo caso, se si tenta di inserire un `deploymentProvider` che fa riferimento a http://subdomain.adatum.com/MyApplication/, al successivo aggiornamento ha esito negativo.  
   
-## <a name="create-a-deployment"></a>Creare una distribuzione  
- Per istruzioni dettagliate sulla creazione di distribuzioni che possono essere distribuite da diversi percorsi di rete, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
+## <a name="create-a-deployment"></a>Crea una distribuzione  
+ Per istruzioni dettagliate sulla creazione di distribuzioni che possono essere distribuite da diversi percorsi di rete, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
- [*MageUI.exe* (Manifest Generation and Editing Tool, Client grafico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+ [*Mage.exe* (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
+ [*MageUI.exe* (Strumento per la generazione e la modifica di manifesti, client grafico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

@@ -2,7 +2,6 @@
 title: 'Procedura: Modificare il punto pivot di un modello 3D'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8c66d7b16451a2ee3e545b4737b0ecd12c47d413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822304"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedura: Modificare il punto pivot di un modello 3D
 

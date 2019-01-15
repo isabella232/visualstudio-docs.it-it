@@ -1,8 +1,6 @@
 ---
 title: Modifica e continuazione finestra di messaggio di errore | Microsoft Docs
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828670"
 ---
 # <a name="edit-and-continue-error-message"></a>Modifica e continuazione messaggio di errore 
 
@@ -37,7 +35,7 @@ Motivi possibili per questo messaggio di errore includono:
 -   È stato effettuato un tentativo di modificare il codice ottimizzato. Potrebbe essere necessario passare da una build di rilascio a una build di debug.
 -   Tentativo di modificare il codice mentre è in esecuzione, invece che durante la pausa del debugger. Provare [impostando un punto di interruzione](../debugger/using-breakpoints.md)e la modifica del codice durante la pausa.
 -   È stato effettuato un tentativo di modificare il codice gestito quando solo il debug non gestito è abilitato. Modifica e continuazione non funziona con [debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md).
--   Cambiare un codice che non è supportata da modifica e continuazione nel linguaggio di programmazione. Per altre informazioni, vedere gli articoli [supportate modifiche al codice in C# ](supported-code-changes-csharp.md), [non supportate modifiche in Visual Basic modifica e continuazione](unsupported-edits-in-visual-basic-edit-and-continue.md), e [supportate modifiche al codice C++](supported-code-changes-cpp.md).
+-   Cambiare un codice che non è supportata da modifica e continuazione nel linguaggio di programmazione. Per altre informazioni, vedere gli articoli [supportate modifiche al codice in C# ](supported-code-changes-csharp.md), [non supportate modifiche in Visual Basic modifica e continuazione](/visualstudio/debugger/supported-code-changes-csharp), e [supportate modifiche al codice C++](supported-code-changes-cpp.md).
 -   Tentativo di modificare il codice in un'app è collegato, invece di avviare il debug dal **Debug** menu.  
 -   È stato effettuato un tentativo di modificare il codice durante il debug di un ripristino di emergenza. Dr. Watson.  
 -   Tentativo di modificare il codice dopo che si verifica un'eccezione non gestita e l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.  

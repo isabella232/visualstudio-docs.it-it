@@ -1,8 +1,6 @@
 ---
 title: "Errore: Debug non è riuscita perché non è abilitata l'autenticazione integrata di Windows | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
@@ -19,49 +17,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f56cca9fa637efaa66b6dcab4716d4a1900aa61d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837628"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: Errore di debug. L'autenticazione integrata di Windows non è abilitata
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.  
   
- Se è stata abilitata l'autenticazione integrata di Windows e viene ancora visualizzato questo errore, è possibile che questo errore sia dovuto **all'attivazione dell'autenticazione del Digest per i server di dominio Windows** è abilitata. In questa situazione è necessario consultare l'amministratore di rete.  
+ Se l'autenticazione integrata di Windows è stata attivata e l'errore si ripete, è possibile che sia dovuto all'attivazione dell'**autenticazione del digest per i server di dominio Windows**. In questa situazione è necessario consultare l'amministratore di rete.  
   
 ### <a name="to-enable-integrated-windows-authentication"></a>Per attivare l'autenticazione di Windows integrata  
   
 1.  Accedere al server Web mediante un account amministratore.  
   
-2.  Fare clic su **avviare** e quindi fare clic su **Pannello di controllo**.  
+2.  Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
   
-3.  Nelle **Pannello di controllo**, fare doppio clic su **strumenti di amministrazione**.  
+3.  Nel **Pannello di controllo** fare doppio clic sull'icona **Strumenti di amministrazione**.  
   
 4.  Fare doppio clic su **Internet Information Services**.  
   
 5.  Fare clic sul nodo del server Web.  
   
-     Oggetto **siti Web** verrà visualizzata la cartella sotto il nome del server.  
+     Verrà aperta una cartella **Siti Web** sotto il nome del server.  
   
-6.  È possibile configurare l'autenticazione per tutti i siti Web complessivamente o singolarmente. Per configurare l'autenticazione per tutti i siti Web, fare doppio clic il **siti Web** cartella e quindi fare clic su **proprietà**. Per configurare l'autenticazione per un singolo sito Web, aprire il **siti Web** cartella, fare doppio clic su singolo sito Web e quindi fare clic su **proprietà**.  
+6.  È possibile configurare l'autenticazione per tutti i siti Web complessivamente o singolarmente. Per configurare l'autenticazione per tutti i siti Web, fare clic con il pulsante destro del mouse sulla cartella **Siti Web**, quindi scegliere **Proprietà**. Per configurare l'autenticazione per un singolo sito Web, aprire la cartella **Siti Web**, fare clic con il pulsante destro del mouse sul singolo sito Web, quindi scegliere **Proprietà**.  
   
-     Il **proprietà** verrà visualizzata la finestra di dialogo.  
+     Verrà visualizzata la finestra di dialogo **Proprietà**.  
   
-7.  Scegliere il **sicurezza Directory** scheda.  
+7.  Fare clic sulla scheda **Sicurezza directory**.  
   
-8.  Nel **controllo autenticazione e accesso anonimo** fare clic su **modificare**.  
+8.  Nella sezione **Controllo autenticazione e accesso anonimo** fare clic su **Modifica**.  
   
-     Il **metodi di autenticazione** verrà visualizzata la finestra di dialogo.  
+     Verrà visualizzata la finestra di dialogo **Metodi di autenticazione**.  
   
-9. Sotto **l'accesso autenticato**, selezionare **autenticazione Windows integrata**.  
+9. In **Accesso con autenticazione** selezionare **Autenticazione integrata di Windows**.  
   
-10. Fare clic su **OK** per chiudere la **metodi di autenticazione** nella finestra di dialogo.  
+10. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.  
   
-11. Fare clic su **OK** per chiudere la **proprietà** nella finestra di dialogo.  
+11. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.  
   
-12. Chiudi il **Internet Information Services** finestra.  
+12. Chiudere la finestra **Internet Information Services**.  
   
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Per attivare l'autenticazione integrata di Windows in Windows Vista/IIS 7  
   
@@ -71,7 +69,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
     1.  Fare clic su **avviare**, fare clic su **Pannello di controllo** e quindi fare clic su **programmi**.  
   
-    2.  Sotto **programmi e funzionalità**, fare clic su **o disattivazione delle funzionalità Windows attivare**.  
+    2.  In **Programmi e funzionalità** fare clic su **Attivazione o disattivazione delle funzionalità Windows**.  
   
          Verrà visualizzata la finestra di dialogo Controllo di accesso utente e verrà richiesto di immettere l'autorizzazione per continuare.  
   
@@ -79,43 +77,43 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
          Verrà visualizzata la finestra di dialogo Funzionalità Windows.  
   
-    4.  Nell'elenco delle funzionalità, espandere la **Internet Information Services** nodo.  
+    4.  Nell'elenco delle funzionalità espandere il nodo **Internet Information Services**.  
   
-    5.  Sotto **Internet Information Services**, espandere il **servizi World Wide Web** nodo.  
+    5.  In **Internet Information Services** espandere il nodo **Servizi Web**.  
   
-    6.  Sotto **servizi World Wide Web**, fare clic su **sicurezza**.  
+    6.  In **Servizi World Wide Web** fare clic su **Sicurezza**.  
   
-    7.  Fare clic su **Windows autenticazione**.  
+    7.  Scegliere **Autenticazione di Windows**.  
   
-    8.  Sotto **Internet Information Services**, espandere il **strumenti di gestione Web** nodo.  
+    8.  In **Internet Information Services** espandere il nodo **Strumenti di gestione Web**.  
   
-    9. Sotto **strumenti di gestione Web**, espandere il **compatibilità Gestione IIS 6** nodo e selezionare il **IIS 6 Metabase and IIS 6 Configuration Compatibility** casella di controllo.  
+    9. In **Strumenti di gestione Web** espandere il nodo **Compatibilità di gestione con IIS 6**, quindi selezionare la casella di controllo **IIS 6 Metabase and IIS 6 Configuration Compatibility**.  
   
-    10. Sotto **strumenti di gestione Web**, selezionare **Console di gestione IIS** e fare clic su **OK.**  
+    10. In **Strumenti di gestione Web** selezionare **Console di gestione IIS**, quindi scegliere **OK**.  
   
     11. Per rendere effettive queste modifiche, riavviare il computer.  
   
-3.  Fare clic su **avviare** e quindi fare clic su **Pannello di controllo**.  
+3.  Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
   
-4.  Fare clic su **visualizzazione classica**, quindi fare doppio clic su **strumenti di amministrazione**.  
+4.  Selezionare **Visualizzazione classica**, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-5.  Nel **Name** colonna e fare doppio clic su **Internet Information Services (IIS) Manager**.  
+5.  Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)**.  
   
-6.  Nel **connessioni** colonna, espandere il nodo per il server.  
+6.  Nella colonna **Connessioni** espandere il nodo del server.  
   
-     Oggetto **siti Web** verrà visualizzata la cartella sotto il nome del server.  
+     Verrà aperta una cartella **Siti Web** sotto il nome del server.  
   
-7.  Espandere la **siti Web** nodo e fare clic sul sito Web per il quale si desidera abilitare l'autenticazione integrata di Windows.  
+7.  Espandere il nodo **Siti Web**, quindi fare clic sul sito Web per il quale si desidera attivare l'autenticazione integrata di Windows.  
   
-8.  Il titolo del riquadro centrale viene sostituito con il nome del sito Web selezionato. In questo riquadro, sotto il **IIS** intestazione, fare doppio clic su **autenticazione**.  
+8.  Il titolo del riquadro centrale viene sostituito con il nome del sito Web selezionato. Sotto l'intestazione **IIS** di questo riquadro fare doppio clic su **Autenticazione**.  
   
-     Il titolo del riquadro viene sostituito con **autenticazione**.  
+     Il titolo del riquadro viene sostituito con **Autenticazione**.  
   
-9. Nel **Authentication** riquadro, nella **nome** colonna, fare doppio clic su **l'autenticazione di Windows** e quindi fare clic su **abilitare**.  
+9. Nella colonna **Nome** del riquadro **Autenticazione** fare clic con il pulsante destro del mouse su **Autenticazione di Windows**, quindi scegliere **Attiva**.  
   
-10. Chiudi il **Internet Information Services (IIS) Manager** finestra.  
+10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticazione Digest Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Autenticazione digest Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [Esecuzione di applicazioni Web in Windows Vista con IIS 7.0 e Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

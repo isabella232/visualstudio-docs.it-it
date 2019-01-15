@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: specificare i file di Log dettagliati per le distribuzioni di ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare i file di Log dettagliati per le distribuzioni di ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb3214df1cd51baf731f8a16f39b2c5a59933bb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840252"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedura: specificare il file di log dettagliati per le distribuzioni ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedura: Specificare i file di log dettagliati per le distribuzioni ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantiene i file di log attività per tutte le distribuzioni. Questi log documentare i dettagli relativi a installazione, l'inizializzazione, l'aggiornamento e disinstallazione di un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per aumentare il livello di dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] operazioni di scrittura a questi file di log, usare l'Editor del Registro di sistema (*regedit.exe*) per specificare il livello di dettaglio.  
   
 > [!CAUTION]
@@ -43,4 +41,4 @@ ms.locfileid: "39078742"
 4.  Impostare il `LogVerbosityLevel` valore `1`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Risolvere i problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

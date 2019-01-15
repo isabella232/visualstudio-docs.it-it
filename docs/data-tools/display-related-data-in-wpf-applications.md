@@ -32,9 +32,9 @@ In alcune applicazioni, si potrebbe voler usare dati provenienti da più tabelle
 
 ## <a name="to-create-controls-that-display-related-records"></a>Per creare controlli che consentono di visualizzare i record correlati
 
-1. Scegliere Mostra origini dati **dal menu Dati** per aprire la finestra Origini dati **.
+1. Scegliere **Mostra origini dati** dal menu **Dati** per aprire la finestra **Origini dati**.
 
-2. Fare clic su Aggiungi nuova origine dati **e completare la Configurazione guidata origine dati**.
+2. Fare clic su **Aggiungi nuova origine dati** e completare la **Configurazione guidata origine dati**.
 
 3. Aprire la finestra di progettazione WPF e assicurarsi che la finestra di progettazione contiene un contenitore che è un obiettivo di rilascio validi per gli elementi di **Zdroje dat** finestra.
 

@@ -1,9 +1,7 @@
 ---
 title: "Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown"
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,18 +9,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846899"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown
 Nella quinta parte di questa esercitazione si aggiungeranno i gestori dell'evento <xref:System.Windows.Forms.Control.Enter> per semplificare l'inserimento delle risposte ai problemi del quiz. Questo codice selezionerà e cancellerà il valore corrente di ogni controllo <xref:System.Windows.Forms.NumericUpDown> non appena l'esecutore del quiz sceglie il controllo e inizia a immettere un valore diverso.
 
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+>  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-the-default-behavior"></a>Per verificare il comportamento predefinito
 
@@ -72,6 +70,6 @@ Finestra di dialogo **Proprietà**
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 6: Aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).
+-   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 6: Aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).
 
 -   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: Aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

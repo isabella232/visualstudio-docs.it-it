@@ -1,8 +1,6 @@
 ---
 title: Visualizzazione Riepilogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
@@ -17,19 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 5ce66ecc8114d349e0fea241b9f704b1f61de198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842213"
 ---
 # <a name="summary-view"></a>Visualizzazione Riepilogo
 La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.  
 
  Per tutte le visualizzazioni Riepilogo, ad eccezione della visualizzazione Riepilogo dei dati di concorrenza, il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura.  
 
--   Se si specifica un segmento di tempo nel grafico, è possibile rianalizzare i dati per tale segmento o ingrandire la visualizzazione della sequenza temporale fino a selezionare il segmento specificato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni dei report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+-   Se si specifica un segmento di tempo nel grafico, è possibile rianalizzare i dati per tale segmento o ingrandire la visualizzazione della sequenza temporale fino a selezionare il segmento specificato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
 
 -   È possibile fare clic su una funzione in un elenco della visualizzazione Riepilogo per aprire la visualizzazione Dettagli funzione per la funzione. È anche possibile fare clic con il pulsante destro del mouse sulla funzione per accedere ad altre opzioni di visualizzazione.  
 
@@ -40,7 +38,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 
 |||  
 |-|-|  
-|**Mostra tutto il codice**<br /><br /> **Mostra Just My Code**|Non disponibile per il codice nativo o per i dati di profilatura raccolti tramite il metodo di strumentazione. Consente di passare dalla visualizzazione dei dati solo dal codice utente (**Mostra Just My Code**) alla visualizzazione dei dati da tutto il codice, incluso il codice di sistema (**Mostra tutto il codice**). Per impostazione predefinita, i dati sono limitati al codice utente. Per modificare l'impostazione, vedere [Procedura: Filtrare le visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
+|**Mostra tutto il codice**<br /><br /> **Mostra Just My Code**|Non disponibile per il codice nativo o per i dati di profilatura raccolti tramite il metodo di strumentazione. Consente di passare dalla visualizzazione dei dati solo dal codice utente (**Mostra Just My Code**) alla visualizzazione dei dati da tutto il codice, incluso il codice di sistema (**Mostra tutto il codice**). Per impostazione predefinita, i dati sono limitati al codice utente. Per modificare l'impostazione, vedere [Procedura: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
 |**Visualizza materiale sussidiario**|Visualizza gli avvisi delle regola per le prestazioni nella finestra **Elenco errori**. Per altre informazioni, vedere [Usare le regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)|  
 
 ## <a name="report"></a>Report  

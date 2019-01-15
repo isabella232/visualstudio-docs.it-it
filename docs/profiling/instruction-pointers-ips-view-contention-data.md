@@ -1,8 +1,6 @@
 ---
 title: "Visualizzazione Puntatore all'istruzione: dati sui conflitti | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853476"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Visualizzazione dei puntatori all'istruzione: dati sui conflitti
 Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elencati i dati per le istruzioni dell'assembly di cui è stata impedita l'esecuzione durante la profilatura.  
   
  La tabella seguente illustra i valori delle colonne nella visualizzazione Puntatore all'istruzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Tempo di blocco in questa funzione.|  
 |**% tempo blocco esclusivo**|Percentuale di tempo di blocco durante l'esecuzione dell'istruzione.|  
@@ -45,7 +43,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)   
  [Visualizzazione dei puntatori all'istruzione: campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

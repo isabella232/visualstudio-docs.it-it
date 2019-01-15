@@ -1,8 +1,6 @@
 ---
-title: Quando i punti di interruzione è la finestra di dialogo Hit | Documenti Microsoft
-ms.custom: ''
+title: Quando punto di interruzione è nella finestra di dialogo Hit | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.whenbreakpointishit
@@ -19,25 +17,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2d0940764e64f9179eb8346c271afa6136b72f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 560a79892ee50f3d151971f46bcc2c2b7f205d3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845616"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Finestra di dialogo Quando il punto di interruzione viene raggiunto
 Con questa finestra di dialogo, è possibile personalizzare l'azione che si verifica quando viene raggiunto un punto di interruzione.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Stampa un messaggio**  
- Stampa un messaggio, utilizzando la sintassi DebuggerDisplay. Per ulteriori informazioni, vedere [utilizzando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+ Stampa un messaggio, utilizzando la sintassi DebuggerDisplay. Per altre informazioni, vedere [usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
- Questa casella di testo supporta anche parole chiave speciali (ad esempio $ADDRESS) che possono essere utilizzate da soli o tra le parentesi graffe di un'espressione DebuggerDisplay. Le parole chiave disponibili sono elencate nella finestra di dialogo.  
+ Questa casella di testo supporta anche la parole chiave speciali (ad esempio $ADDRESS) che possono essere utilizzate da soli o all'interno di parentesi graffe in un'espressione DebuggerDisplay. Le parole chiave disponibili sono elencate nella finestra di dialogo.  
   
- **Continuare l'esecuzione**  
- Questo controllo è abilitato solo quando **stampa un messaggio** è selezionata. A questo controllo è selezionato, è possibile utilizzare un punto di interruzione come un punto di analisi per tracciare l'esecuzione del programma, anziché l'interruzione quando viene raggiunto il percorso.  
+ **Continua esecuzione**  
+ Questo controllo è attivato solo quando è selezionata l'opzione **Stampa un messaggio**. Questo controllo è selezionata, è possibile usare un punto di interruzione come un punto di analisi per tracciare l'esecuzione del programma, invece di interruzione quando viene raggiunto il percorso.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzando i punti di interruzione](../debugger/using-breakpoints.md)   
+ [Uso di punti di interruzione](../debugger/using-breakpoints.md)   
  [Uso dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

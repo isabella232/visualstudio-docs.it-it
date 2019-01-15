@@ -2,7 +2,6 @@
 title: Usare Progettazione classi
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 6533827c3aa962cf8856752c0482678684e65755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853424"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Progettare e visualizzare classi e tipi con Progettazione classi
 
@@ -50,7 +49,7 @@ I diagrammi classi consentono di comprendere la struttura di classi dei progetti
 
 La prima fase della presentazione di informazioni sui progetti consiste nella creazione di un diagramma classi che comprenda gli elementi da visualizzare. Per altre informazioni, vedere [Aggiungere un diagramma classi](how-to-add-class-diagrams-to-projects.md). È possibile creare più diagrammi classi per un progetto, da usare per mostrare una visualizzazione distinta del progetto, un subset scelto dei tipi del progetto oppure un subset scelto dei membri dei tipi.
 
-Oltre a definire ciò che visualizza ogni diagramma classi, è anche possibile modificare il modo in cui vengono presentate le informazioni. Per altre informazioni, vedere [Procedura: Personalizzare i diagrammi classi](how-to-customize-class-diagrams.md).
+Oltre a definire ciò che ciascun diagramma classi deve mostrare, è anche possibile cambiare il modo in cui vengono presentate le informazioni. Per altre informazioni, vedere [Procedura: Personalizzare diagrammi classi](how-to-customize-class-diagrams.md).
 
 Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in documenti di Microsoft Office e stamparli oppure esportarli come file di immagine. Per altre informazioni, vedere [Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Procedura: Stampare diagrammi classi](how-to-print-class-diagrams.md) e [Procedura: Esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md).
 

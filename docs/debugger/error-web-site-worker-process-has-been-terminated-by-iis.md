@@ -1,8 +1,6 @@
 ---
-title: 'Errore: il processo di lavoro di sito Web è stato terminato da IIS | Microsoft Docs'
-ms.custom: ''
+title: 'Errore: Processo di lavoro del sito Web è stato terminato da IIS | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
@@ -16,47 +14,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 582cf1b5faf0cc62d85e17544aa03c4ede4ab0a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 11911aa23aa703375393b9c22b2f548afceb0633
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836754"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: il processo di lavoro del sito Web è stato terminato da IIS
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: Il processo di lavoro del sito Web è stato terminato da IIS
 L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseguenza, Internet Information Services (IIS) presuppone che il processo di lavoro non risponda e lo termina.  
   
  Per continuare a eseguire il debug è necessario configurare IIS in modo che consenta al processo di lavoro di procedere. Questo messaggio di errore non viene visualizzato con le versioni di IIS precedenti a IIS 7.  
   
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>Per configurare IIS 7 in modo che consenta al processo di lavoro di procedere  
   
-1. Aprire il **strumenti di amministrazione** finestra.  
+1. Aprire la finestra **Strumenti di amministrazione**.  
   
-   1.  Fare clic su **avviare**, quindi scegliere **Pannello di controllo**.  
+   1.  Fare clic su **Start**, quindi scegliere **Pannello di controllo**.  
   
-   2.  Nelle **Pannello di controllo**, scegliere **passare alla visualizzazione classica**, se necessario e quindi fare doppio clic su **strumenti di amministrazione**.  
+   2.  Nel **Pannello di controllo** scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-2. Nel **strumenti di amministrazione** finestra, fare doppio clic su **Internet Information Services (IIS) Manager**.  
+2. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione Internet Information Services (IIS)**.  
   
     Gestione IIS verrà aperto.  
   
-3. Nel **connessioni** riquadro, espandere il \<nome computer > nodo se necessario.  
+3. Nel riquadro **Connessioni** espandere il nodo \<nome computer>, se necessario.  
   
-4. Sotto il \<nome computer > nodo, fare clic su **pool di applicazioni**.  
+4. Nel nodo \<nome computer> fare clic su **Pool di applicazioni**.  
   
-5. Nel **pool di applicazioni** elenco, fare doppio clic il nome del pool in cui viene eseguita l'applicazione e quindi fare clic su **impostazioni avanzate**.  
+5. Nell'elenco **Pool di applicazioni** fare clic con il pulsante destro del mouse sul nome del pool nel quale viene eseguita l'applicazione e quindi fare clic su **Impostazioni avanzate**.  
   
-6. Nel **impostazioni avanzate** finestra di dialogo individuare il **modello di processo** sezione ed eseguire una delle azioni seguenti:  
+6. Nella finestra di dialogo **Impostazioni avanzate** individuare la sezione **Modello di processo** ed eseguire una delle seguenti azioni:  
   
-   - Impostare **Ping abilitato** al **False**.  
+   - Impostare **Ping abilitato** su **False**.  
   
-   - Impostare **massimo tempo di risposta Ping** su un valore maggiore di 90 secondi.  
+   - Impostare **Tempo massimo di risposta ping** su un valore maggiore di 90 secondi.  
   
-     L'impostazione **Ping abilitato** al **False** arresta IIS dalla verifica se il processo di lavoro è ancora in esecuzione e lo mantiene attivo il processo di lavoro fino a quando non si arresta il processo sottoposto a debug. L'impostazione **massimo tempo di risposta Ping** su un valore elevato consente a IIS di continuare a monitorare il processo di lavoro.  
+     L'impostazione di **Ping abilitato** su **False** interrompe il controllo da parte di IIS se il processo di lavoro è in esecuzione e lo mantiene attivo fino a quando il processo sottoposto a debug non viene interrotto manualmente. L'impostazione di **Tempo massimo di risposta ping** su un valore elevato consente a IIS di continuare il monitoraggio del processo di lavoro.  
   
-7. Fare clic su **OK** per chiudere la **impostazioni avanzate** nella finestra di dialogo.  
+7. Scegliere **OK** per chiudere la finestra di dialogo **Impostazioni avanzate**.  
   
-8. Chiudere Gestione IIS e il **strumenti di amministrazione** finestra.  
+8. Chiudere Gestione IIS e la finestra **Strumenti di amministrazione**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

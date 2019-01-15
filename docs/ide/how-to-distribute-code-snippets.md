@@ -2,7 +2,6 @@
 title: 'Procedura: Distribuire frammenti di codice'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836062"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
 
@@ -29,7 +28,7 @@ Per creare estensioni di Visual Studio, è necessario installare Visual Studio S
 
 ## <a name="set-up-the-extension"></a>Configurazione dell'estensione
 
-In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo del file *SNIPPET* è disponibile, quindi non è necessario tornare indietro e crearlo.
+In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo del file *SNIPPET* è disponibile, quindi non è necessario tornare indietro e crearlo.
 
 1. Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File** > **Nuovo** > **Progetto** > **Visual C# (o Visual Basic)** > **Extensibility**).
 
@@ -103,7 +102,7 @@ In questa procedura si userà lo stesso frammento di codice Hello World creato i
 
 4. Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.
 
-5. *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**. Verrà visualizzato il seguente codice aggiunto al file:
+5. *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HelloWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**. Verrà visualizzato il seguente codice aggiunto al file:
 
     ```vb
     Console.WriteLine("Hello, World!")

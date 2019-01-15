@@ -1,8 +1,7 @@
 ---
-title: "Procedura: visualizzare gli URL come collegamenti nell'editor"
+title: "Procedura: Visualizzare gli URL come collegamenti nell'editor"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - URLs, opening
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4e1fb0958006a94fd558beb08aea95b8cf3cd317
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833552"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: Visualizzare gli URL come collegamenti nell'editor
 
 È possibile fare in modo che l'Editor del codice consideri gli URL (Uniform Resource Locator) all'interno del codice come collegamenti attivi. Quando si usa questa funzionalità, gli URL:
 

@@ -1,8 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento di memoria .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5cbae58aeaa1164aab6c254f62e0959da02d31c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a099a30b0a87db8ebae46543528d9af9f28f497a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823024"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Visualizzazione Moduli: dati di campionamento di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento raggruppa i dati di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo sono elencate sotto il nodo del modulo.  
   
  I numeri di riga dei file di origine delle istruzioni per l'allocazione di memoria vengono elencati sotto il nodo della funzione e gli indirizzi delle istruzioni che eseguono l'allocazione vengono elencati sotto il nodo della riga. I valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo dell'istruzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
@@ -43,7 +41,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**% byte esclusivi**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che rappresenta i byte esclusivi del modulo, della funzione, della riga o dell'istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)   
- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
+ [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)

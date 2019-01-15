@@ -28,16 +28,16 @@ ms.locfileid: "53846795"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedura: Visualizzare e nascondere gruppi di registri (C#, C++, Visual Basic, F#)
 
-La finestra Registri **è disponibile solo se il debug a livello di indirizzo è stato attivato nel nodo Debug** della categoria Generale **nella finestra di dialogo Opzioni**.
+La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nel nodo **Debug** della categoria **Generale** nella finestra di dialogo **Opzioni**.
 
-Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra Registri** verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.
+Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra **Registri** verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="display-or-hide-register-groups"></a>Visualizzare o nascondere i gruppi di registri
 
-1.  Fare clic con il pulsante destro del mouse sulla finestra Registri **.
+1.  Fare clic con il pulsante destro del mouse sulla finestra **Registri**.
 
 2.  Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.
 

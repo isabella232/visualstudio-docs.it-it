@@ -1,9 +1,7 @@
 ---
-title: 'Passaggio 1: Creare un progetto Windows Forms Application'
-ms.custom: ''
+title: 'Passaggio 1: Creare un progetto di Windows Forms Application'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bcb82622a7ea303a632865b0c3f964de4b4dc3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 86942dda1990fe8a681ec2832b2474d42d418a63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842057"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: Creare un progetto Windows Forms Application
+# <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: Creare un progetto di Windows Forms Application
 Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella creazione di un progetto di Windows Forms Application.
 
- ![collegamento al video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Tutorial 1: Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1) o [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Esercitazione 1: Creare un visualizzatore di immagini in C# - Video 1). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![Collegamento a video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [Esercitazione 1: Creare un visualizzatore immagini in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ## <a name="to-create-a-windows-forms-application-project"></a>Per creare un progetto di Windows Forms Application
 
@@ -70,6 +68,6 @@ Pulsante della barra degli strumenti **Salva tutto**
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
+-   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
 
 -   Per tornare all'argomento introduttivo, vedere [Esercitazione 1: Creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).

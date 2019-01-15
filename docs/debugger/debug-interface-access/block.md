@@ -1,8 +1,6 @@
 ---
-title: Blocco | Documenti Microsoft
-ms.custom: ''
+title: Blocco | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,34 +14,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce6e33c3631d8cff9fd02b6626614babc8e6d157
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4ec49d3c147d6666c81e5ba1ef6d092de5baf0ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832541"
 ---
 # <a name="block"></a>Blocco
-Ogni blocco di codice è identificato da un `SymTagBlock` simbolo. Simboli di blocco vengono utilizzati per identificare gli ambiti annidati all'interno di funzioni.  
+Ogni blocco di codice è identificato da un `SymTagBlock` simbolo. I simboli di blocco vengono utilizzati per identificare gli ambiti annidati all'interno delle funzioni.  
   
 ## <a name="properties"></a>Proprietà  
- Nella tabella seguente vengono illustrate le proprietà sono valide per questo tipo di simbolo.  
+ Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Descrizione|  
+|Proprietà|Tipo di dati|Description|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset di posizione. Per informazioni dettagliate, vedere il [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte di sezione di percorso. Per informazioni dettagliate, vedere il [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Numero di byte di codice nel blocco.|  
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo della funzione o blocco di inclusione.|  
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte di sezione di percorso. Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Numero di byte del codice nel blocco.|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo del blocco o della funzione contenitore.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Restituisce l'ID del simbolo lessicale padre.|  
-|[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|I blocchi presentano indirizzi statici; Per informazioni dettagliate, vedere [percorsi dei simboli](../../debugger/debug-interface-access/symbol-locations.md).|  
+|[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|I blocchi hanno indirizzi statici; Per informazioni dettagliate, vedere [percorsi di simboli](../../debugger/debug-interface-access/symbol-locations.md).|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Restituisce il nome del blocco (ovvero in genere una stringa vuota).|  
-|[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Restituisce l'indirizzo virtuale di questo blocco rispetto al padre lessicale.|  
+|[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Restituisce l'indirizzo virtuale del blocco rispetto al padre lessicale.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagBlock` (uno del [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) valori).|  
-|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Restituisce l'indirizzo virtuale di questo blocco all'interno dell'eseguibile.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagBlock` (uno dei [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valori).|  
+|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Restituisce l'indirizzo virtuale del blocco all'interno del file eseguibile.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md)   
+ [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)   
  [Percorsi dei simboli](../../debugger/debug-interface-access/symbol-locations.md)

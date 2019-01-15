@@ -1,8 +1,6 @@
 ---
 title: Get_type | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0209a715ece3e1fa760080ad7ccf0803d11950df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9ee35b5884696d2d9faade5ceb2ec16945d3991c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837563"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 Recupera il tipo di frame specifici del compilatore.  
@@ -27,7 +25,7 @@ Recupera il tipo di frame specifici del compilatore.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_type (   
+HRESULT get_type (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_type (
  [out] Restituisce un valore di [enumerazione StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumerazione che indica il tipo di frame specifici del compilatore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

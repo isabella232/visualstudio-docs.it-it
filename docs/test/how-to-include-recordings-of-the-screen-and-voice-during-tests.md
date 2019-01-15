@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832138"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
@@ -24,7 +23,7 @@ Dall'editor di configurazione in Visual Studio è possibile configurare l'adatta
 > [!WARNING]
 > Le registrazioni dello schermo e della voce non supportano configurazioni con più monitor.
 
-La funzionalità di registrazione dello schermo e della voce può essere utilizzata con i test manuali o automatizzati. Ad esempio, se si esegue un test codificato dell'interfaccia utente in modalità remota è necessario registrare il desktop per visualizzare il test nel corso dell'esecuzione. Per altre informazioni su come acquisire una registrazione dello schermo e della voce in modalità remota, vedere [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+La funzionalità di registrazione dello schermo e della voce può essere utilizzata con i test manuali o automatizzati. Ad esempio, se si esegue un test codificato dell'interfaccia utente in modalità remota è necessario registrare il desktop per visualizzare il test nel corso dell'esecuzione. Per altre informazioni sulla modalità di acquisizione di una registrazione dello schermo e della voce in modalità remota, vedere [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

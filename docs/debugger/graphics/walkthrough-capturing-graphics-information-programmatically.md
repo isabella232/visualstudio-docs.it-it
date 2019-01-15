@@ -1,22 +1,20 @@
 ---
-title: 'Procedura dettagliata: Cattura programmatica delle informazioni grafiche | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850687"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.  
   
  L'acquisizione a livello di codice è utile in scenari quali ad esempio:  
@@ -28,7 +26,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/inc
 -   Chiamare `CaptureCurrentFrame`quando un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.  
   
 ##  <a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 10  
- Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle App che usano l'API DirectX 11.2 in Windows 10, che usa il metodo di acquisizione affidabile.
+ Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle app che usano l'API DirectX 11.2 su Windows 10, che usa il metodo di acquisizione affidabile.
   
  Questa sezione illustra l'esecuzione delle attività seguenti:  
   
@@ -56,7 +54,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/inc
     ```  
   
     > [!IMPORTANT]
-    >  Non includere l'intestazione file vsgcapture.h—which supporta l'acquisizione programmatica in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app di Windows 10. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'intestazione d3d11_2.h è inclusa, il compilatore genera un avviso. Se viene inclusa vsgcapture. h prima d3d11_2.h, l'app non verrà avviato.  
+    >  Non includere il file di intestazione vsgcapture.h, che supporta l'acquisizione a livello di codice in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 10. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'intestazione d3d11_2.h è inclusa, il compilatore genera un avviso. Se viene inclusa vsgcapture. h prima d3d11_2.h, l'app non verrà avviato.  
   
     > [!NOTE]
     >  Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.  
@@ -117,6 +115,6 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/inc
 -   Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Visualizzare [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)   
+ [Procedura dettagliata: Acquisizione di informazioni grafiche](walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](capturing-graphics-information.md)   
  [Strumento di acquisizione da riga di comando](command-line-capture-tool.md)

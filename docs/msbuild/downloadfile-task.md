@@ -1,10 +1,8 @@
 ---
 title: Attività DownloadFile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832924"
 ---
 # <a name="downloadfile-task"></a>Attività DownloadFile
 Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTTP).
@@ -40,14 +38,14 @@ Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTT
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `DownloadFile` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`DestinationFileName`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Nome da usare per il file scaricato.  Per impostazione predefinita, il nome del file è derivato dall'elemento `SourceUrl` o server remoto.|
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la cartella di destinazione in cui scaricare il file.  Se non esiste, la cartella viene creata.|
 |`DownloadedFile`|Parametro di ouput facoltativo <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Specifica il file scaricato.|
 |`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per il download, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.|  
 |`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo in millisecondi tra eventuali nuovi tentativi necessari. Il valore predefinito è 5000.|  
-|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, ignora il download dei file invariati. Il valore predefinito è `true`. L'attività `DownloadFile` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica secondo il server remoto. <br /><br />**Nota:** se non tutti i server HTTP indicano la data dell'ultima modifica dei file, il file verrà scaricato nuovamente.|
+|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, ignora il download dei file invariati. Il valore predefinito è `true`. L'attività `DownloadFile` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica secondo il server remoto. <br /><br />**Nota:**  se non tutti i server HTTP indicano la data dell'ultima modifica dei file, il file verrà scaricato nuovamente.|
 |`SourceUrl`|Parametro `String` obbligatorio.<br /><br /> Specifica l'URL da scaricare.|
   
 ## <a name="remarks"></a>Note  
@@ -76,4 +74,4 @@ Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTT
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

@@ -2,7 +2,6 @@
 title: Eseguire il Debug remoto di ASP.NET Core in un Computer IIS remoto | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
-ms.translationtype: MT
+ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830833"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer IIS remoto in Visual Studio 2017
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
@@ -43,7 +42,7 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017 
 
-1. Creare una nuova applicazione ASP.NET Core. (**File > Nuovo > progetto**, quindi selezionare **Visual c# > Web > applicazione Web ASP.NET Core**).
+1. Creare una nuova applicazione ASP.NET Core. (**File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**).
 
     Nel **ASP.NET Core** sezione modelli, selezionare **applicazione Web**.
 
@@ -64,18 +63,18 @@ Se sicurezza avanzata è abilitata in Internet Explorer (è abilitata per impost
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- IIS.NET
+- iis.net
 
 Quando si scarica il software, è possibile ricevere le richieste di concedere l'autorizzazione per caricare vari script del sito web e risorse. Alcune di queste risorse non sono necessarie, ma per semplificare il processo, fare clic su **Add** quando richiesto.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Installare ASP.NET Core in Windows Server
 
-1. Installare il [Hosting di .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) bundle nel sistema di hosting. Installa il bundle di Runtime di .NET Core, libreria di .NET Core e il modulo ASP.NET Core. Per altre istruzioni dettagliate, vedere [pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Installare l'[aggregazione di Hosting di.NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) nel sistema di hosting. L'aggregazione installa il runtime di .NET Core, la libreria di .NET Core e il modulo ASP.NET Core. Per altre istruzioni dettagliate, vedere [pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Se il sistema non ha una connessione a Internet, ottenere e installare il *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* prima di installare il bundle di Hosting di .NET Core Windows Server.
+    > Se nel sistema non è presente una connessione a Internet, ottenere e installare *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* prima di installare l'aggregazione di Hosting di .NET Core Windows Server.
 
-3. Riavviare il sistema (o eseguire **net stop was /y** aggiungendo **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema).
+3. Riavviare il sistema o eseguire **net stop was /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema.
 
 ## <a name="choose-a-deployment-option"></a>Scegliere un'opzione di distribuzione
 
@@ -96,7 +95,7 @@ Se si serve aiuto per distribuire l'app in IIS, prendere in considerazione quest
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file di impostazioni di pubblicazione in IIS in Windows Server
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file delle impostazioni di pubblicazione in IIS in Windows Server
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
@@ -104,7 +103,7 @@ Se si serve aiuto per distribuire l'app in IIS, prendere in considerazione quest
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Dopo che l'app distribuisce correttamente, viene avviata automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS. Per ASP.NET Core, è necessario assicurarsi che il pool di applicazioni di campo per il **DefaultAppPool** è impostata su **nessun codice gestito**.
+Quando la distribuzione è completata, l'app viene avviata automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS. Per ASP.NET Core, è necessario assicurarsi che il campo Pool di applicazioni per **DefaultAppPool** sia impostato su **Nessun codice gestito**.
 
 1. Nel **le impostazioni** della finestra di dialogo Abilita il debug facendo clic **successivo**, scegliere un **Debug** configurazione e quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto la **pubblicare File** opzioni.
 
@@ -121,7 +120,7 @@ Dopo che l'app distribuisce correttamente, viene avviata automaticamente. Se non
 
 1. Aprire l'Explorer di Windows e creare una nuova cartella denominata **C:\Publish**, in cui in seguito si distribuirà il progetto ASP.NET.
 
-2. Se non è già aperto, aprire il **Internet Information Services (IIS) Manager**. (Nel riquadro sinistro di Server Manager, selezionare **IIS**. Fare doppio clic su server e selezionare **Internet Information Services (IIS) Manager**.)
+2. Se non è già aperto, aprire il **Internet Information Services (IIS) Manager**. (Nel riquadro sinistro di Server Manager, selezionare **IIS**. Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
 
 3. Sotto **connessioni** nel riquadro a sinistra, passare alla **siti**.
 
@@ -166,7 +165,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
     > [!TIP]
     > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P). 
 
-3. Impostare il campo qualificatore  **\<nome del computer remoto >: 4022**.
+3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.
     Nella finestra **Processi disponibili** verranno visualizzati alcuni processi.
 
@@ -181,7 +180,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 7. Scegliere **Connetti**.
 
-8. Aprire il sito Web del computer remoto. In un browser, passare a **http://\<nome del computer remoto >**.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
     
     Verrà visualizzata la pagina Web ASP.NET.
 
@@ -189,7 +188,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-## <a name="bkmk_openports"></a> Risoluzione dei problemi: Aprire le porte necessarie in Windows Server
+## <a name="bkmk_openports">Risoluzione dei problemi</a> Aprire le porte necessarie in Windows Server
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, devi verificare che le porte siano aperte.
 
@@ -216,7 +215,7 @@ Porte necessarie:
     Il tipo selezionato deve includere la rete a cui è connesso il computer remoto.
 6. Aggiungere il nome (ad esempio, **IIS**, **distribuzione Web**, o **msvsmon**) per la regola in ingresso e fare clic su **fine**.
 
-    Si dovrebbe vedere la nuova regola nell'elenco Regole connessioni in entrata o in uscita.
+    La nuova regola dovrebbe comparire nell'elenco Regole in ingresso o Regole in uscita.
 
     Se si desidera visualizzare ulteriori dettagli sulla configurazione di Windows Firewall, vedere [configurare il Firewall di Windows per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

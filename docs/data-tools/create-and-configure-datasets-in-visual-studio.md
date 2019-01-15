@@ -2,7 +2,6 @@
 title: Creare e configurare i set di dati
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3cde629114c56f80f0b70e7ef6641bffa7551577
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829235"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
 
@@ -40,7 +39,7 @@ Un set di dati è un set di oggetti che archiviano i dati da un database in memo
 
 4. Scegliere le tabelle o le singole colonne, stored procedure, funzioni e viste dal database che si desidera essere rappresentato nel set di dati.
 
-     ![Selezione degli oggetti di database](../data-tools/media/raddata-chose-objects.png)
+     ![Scegliere gli oggetti di database](../data-tools/media/raddata-chose-objects.png)
 
 5. Scegliere **Fine**.
 
@@ -82,7 +81,7 @@ Questa procedura viene illustrato come aggiungere una tabella dallo stesso datab
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Aggiungere una tabella dati autonomo a un set di dati
 
-1. Aprire il set di dati in Progettazione DataSet **.
+1. Aprire il set di dati in **Progettazione DataSet**.
 
 2. Trascinare un <xref:System.Data.DataTable> classe il **set di dati** scheda della finestra di **della casella degli strumenti** nel **Progettazione Dataset**.
 

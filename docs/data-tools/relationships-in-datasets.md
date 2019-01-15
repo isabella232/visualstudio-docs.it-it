@@ -77,7 +77,7 @@ Le relazioni tra tabelle di dati vengono visualizzati come righe nel **Progettaz
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Per creare una relazione tra due tabelle dati
 
-1.  Aprire il set di dati in Progettazione DataSet **. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.
 
@@ -101,7 +101,7 @@ Le relazioni tra tabelle di dati vengono visualizzati come righe nel **Progettaz
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Per visualizzare un nome della relazione nella finestra di progettazione set di dati
 
-1.  Aprire il set di dati in Progettazione DataSet **. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.
 

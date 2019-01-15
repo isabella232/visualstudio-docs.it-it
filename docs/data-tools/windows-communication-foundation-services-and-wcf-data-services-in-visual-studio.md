@@ -34,15 +34,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9f2202c96799fcc2e258e79f050d15fb474d0aa
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847928"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 
@@ -93,7 +92,7 @@ Dopo aver creato un client WCF, si fa riferimento il servizio nel codice esattam
 
 ## <a name="wcf-tools-in-visual-studio"></a>Strumenti WCF in Visual Studio
 
-Visual Studio offre strumenti che consentono di creare servizi WCF e i client WCF. Per una procedura dettagliata che illustra gli strumenti, vedere [procedura dettagliata: creazione di un semplice servizio WCF in Windows Form](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+Visual Studio offre strumenti che consentono di creare servizi WCF e i client WCF. Per una procedura dettagliata che illustra gli strumenti, vedere [procedura dettagliata: Creazione di un servizio WCF semplice in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
 
 ### <a name="create-and-test-wcf-services"></a>Creare e testare i servizi WCF
 
@@ -131,7 +130,7 @@ Il **Aggiungi riferimento al servizio** nella finestra di dialogo consente di im
 
 Il **riferimenti al servizio configurare** nella finestra di dialogo consente di personalizzare la configurazione per un servizio. È possibile modificare l'indirizzo per un servizio, specificare il livello di accesso, il comportamento asincrono e i tipi di contratto di messaggio e configurare riutilizzo dei tipi.
 
-## <a name="how-to-select-a-service-endpoint"></a>Procedura: selezionare un endpoint di servizio
+## <a name="how-to-select-a-service-endpoint"></a>Procedura: Selezionare un endpoint di servizio
 
 Alcuni servizi Windows Communication Foundation (WCF) espongono più endpoint tramite il quale un client può comunicare con il servizio. Ad esempio, un servizio può esporre un endpoint che utilizza un binding HTTP e il nome utente e la protezione delle password e un secondo endpoint che utilizza FTP e l'autenticazione di Windows. Il primo endpoint potrebbe essere utilizzato da applicazioni che accedono al servizio dall'esterno di un firewall, mentre il secondo può essere usato in una rete intranet.
 
@@ -175,7 +174,7 @@ In tal caso, è possibile specificare il `endpointConfigurationName` come parame
 
 4.  All'interno di `<EndPoint>` applicare un tag, si noterà una `name="` *nomeservizio* `"` parametro (in cui *nomeservizio* rappresenta il nome di un endpoint). Si tratta del nome per l'endpoint che può essere passato al `endpointConfigurationName As String` overload di un costruttore per un riferimento al servizio.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Procedura: chiamare un metodo del servizio in modo asincrono
+## <a name="how-to-call-a-service-method-asynchronously"></a>Procedura: Chiamare un metodo del servizio in modo asincrono
 
 La maggior parte dei metodi nei servizi Windows Communication Foundation (WCF) possono essere chiamati in modo sincrono o asincrono. Chiamata a un metodo in modo asincrono consente all'applicazione di continuare a lavorare durante il metodo viene chiamato quando opera su una connessione lenta.
 
@@ -194,7 +193,7 @@ Per impostazione predefinita, quando viene aggiunto un riferimento al servizio a
 
 3.  Nel **Configura riferimento al servizio** finestra di dialogo, seleziona la **Genera operazioni asincrone** casella di controllo.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Procedura: associare dati restituiti da un servizio
+## <a name="how-to-bind-data-returned-by-a-service"></a>Procedura: Associare i dati restituiti da un servizio
 
 È possibile associare dati restituiti da un servizio Windows Communication Foundation (WCF) a un controllo così come qualsiasi altra origine dati è possibile associare a un controllo. Quando si aggiunge un riferimento a un servizio WCF, se il servizio contiene tipi composti che restituiscono dati, vengono aggiunti automaticamente per il **Zdroje dat** finestra.
 
@@ -228,7 +227,7 @@ Per impostazione predefinita, quando viene aggiunto un riferimento al servizio a
 
 5.  Trascinare il nodo nel form. I controlli vengono aggiunti al modulo, insieme a un <xref:System.Windows.Forms.BindingSource> componenti e una <xref:System.Windows.Forms.BindingNavigator> componente.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procedura: configurare un servizio per riusare i tipi esistenti
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procedura: Configurare un servizio per riusare i tipi esistenti
 
 Quando viene aggiunto un riferimento al servizio a un progetto, tutti i tipi definiti nel servizio vengono generati nel progetto locale. In molti casi, ciò consente di creare tipi duplicati quando un servizio Usa i tipi di .NET Framework comuni o i tipi sono definiti in una libreria condivisa.
 
@@ -254,12 +253,12 @@ Per evitare questo problema, i tipi negli assembly di riferimento sono condivisi
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-| Titolo | Descrizione |
+| Titolo | Description |
 | - | - |
-| [Procedura dettagliata: creazione di un Windows Form semplice](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fornisce informazioni dettagliate sulla creazione e utilizzo dei servizi WCF in Visual Studio. |
+| [Procedura dettagliata: Creazione di un servizio WCF semplice in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fornisce informazioni dettagliate sulla creazione e utilizzo dei servizi WCF in Visual Studio. |
 | [Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fornisce informazioni dettagliate sulla procedura creare e usare WCF Data Services in Visual Studio. |
 | [Uso degli strumenti di sviluppo WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Viene illustrato come creare e testare i servizi WCF in Visual Studio. |
-| | [Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| | [Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md) | Presenta alcuni errori comuni che possono verificarsi con i riferimenti al servizio e come evitarli. |
 | [Debug dei servizi WCF](../debugger/debugging-wcf-services.md) | Vengono descritti problemi di debug comuni e le tecniche che possono verificarsi durante il debug di servizi WCF. |
 | [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti. |

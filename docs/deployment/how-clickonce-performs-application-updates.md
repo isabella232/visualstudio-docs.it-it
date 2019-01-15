@@ -1,8 +1,6 @@
 ---
 title: Come vengono eseguiti gli aggiornamenti dell'applicazione ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f5d9b67633ffa2b14f780b9588f526372a4f5d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 5fc3414660f206aa8f83179e61ed9aa2dcc0098b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845603"
 ---
-# <a name="how-clickonce-performs-application-updates"></a>Come vengono eseguiti gli aggiornamenti dell'applicazione ClickOnce
+# <a name="how-clickonce-performs-application-updates"></a>Come vengono eseguiti gli aggiornamenti di applicazioni con ClickOnce
 ClickOnce Usa le informazioni sulla versione di file specificati nel manifesto di distribuzione di un'applicazione per decidere se aggiornare i file dell'applicazione. Dopo l'inizio di un aggiornamento, ClickOnce Usa una tecnica detta *patch con file* per evitare il download ridondante dei file dell'applicazione.  
   
 ## <a name="file-patching"></a>L'applicazione di patch di file  
