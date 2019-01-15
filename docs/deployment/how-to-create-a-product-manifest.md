@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: creare un manifesto del prodotto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un manifesto del prodotto | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824600"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Procedura: creare un manifesto del prodotto
+# <a name="how-to-create-a-product-manifest"></a>Procedura: Creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Il manifesto del pacchetto contiene gli aspetti specifici della localizzazione del pacchetto. Si tratta di stringhe, contratti di licenza dell'utente finale e i language pack.  
   
- Per altre informazioni sui manifesti di prodotto, vedere [procedura: creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).  
+ Per altre informazioni sui manifesti di prodotto, vedere [come: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)  
   
 ## <a name="create-the-product-manifest"></a>Creare il manifesto del prodotto  
   
 #### <a name="to-create-the-product-manifest"></a>Per creare il manifesto del prodotto  
   
-1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package.  
+1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package..  
   
 2.  In Visual Studio, creare un nuovo file XML denominato *Product*e salvarlo per il *c:\package.* cartella.  
   
@@ -161,4 +159,4 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
