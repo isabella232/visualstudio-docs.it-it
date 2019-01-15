@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: visualizzare le informazioni di traccia WPF | Documenti Microsoft'
-ms.custom: ''
+title: 'Procedura: Visualizzare le informazioni di traccia WPF | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,49 +16,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fc861c627a094f9f5e4e67a6b034ecdd407688
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63708c133a4ce8c7deafc9c6861a9960d8327061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893406"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Procedura: visualizzare le informazioni di traccia WPF
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] può ricevere le informazioni di traccia di debug da applicazioni WPF e visualizzare tali informazioni nella **Output** finestra. Per visualizzare le informazioni di traccia di debug, è necessario abilitare la tracciatura WPF.  
+# <a name="how-to-display-wpf-trace-information"></a>Procedura: Visualizzare le informazioni di traccia WPF
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] è in grado di ricevere informazioni di traccia di debug da applicazioni WPF e di visualizzare tali informazioni nella finestra **Output**. Per visualizzare le informazioni di traccia di debug, la tracciatura WPF deve essere abilitata.  
   
- È possibile abilitare la tracciatura WPF nel file App.Config o a livello di codice utilizzando la classe <xref:System.Diagnostics.PresentationTraceSources>. Un modo più semplice per abilitare la tracciatura WPF è tramite il **opzioni** finestra. La tracciatura WPF per applicazioni Web non è supportata.  
+ È possibile abilitare la tracciatura WPF nel file App.Config o a livello di codice utilizzando la classe <xref:System.Diagnostics.PresentationTraceSources>. Un modo più semplice per abilitare la tracciatura WPF è quello di utilizzare la finestra **Opzioni**. La tracciatura WPF per applicazioni Web non è supportata.  
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Per abilitare o personalizzare le informazioni di traccia WPF  
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **opzioni** aprire la finestra di dialogo, nella casella a sinistra di **debug** nodo.  
+2.  Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
   
-3.  In **debug**, fare clic su **finestra di Output**.  
+3.  In **Debug** fare clic su **Finestra di output**.  
   
-4.  In **impostazioni generali di Output**selezionare **tutto l'output di debug**.  
+4.  In **Impostazioni generali di output** selezionare **Tutto l'output di debug**.  
   
-5.  Nella casella sulla destra ricercare **impostazioni di traccia WPF**.  
+5.  Nella casella sulla destra cercare **Impostazioni di traccia WPF**.  
   
-6.  Aprire il **impostazioni di traccia WPF** nodo.  
+6.  Aprire il nodo **Impostazioni di traccia WPF**.  
   
-7.  In **impostazioni di traccia WPF**, fare clic sulla categoria di impostazioni che si desidera abilitare (ad esempio, **Data Binding**).  
+7.  In **Impostazioni di traccia WPF** fare clic sulla categoria di impostazioni che si desidera abilitare, ad esempio **data binding**.  
   
-     Un controllo elenco a discesa verrà visualizzato nella colonna Impostazioni accanto ad **Data Binding** o qualsiasi categoria selezionata.  
+     Verrà visualizzato un controllo elenco a discesa nella colonna Impostazioni accanto a **Data binding** o qualsiasi categoria selezionata.  
   
-8.  Fare clic sull'elenco a discesa e selezionare il tipo di informazioni di traccia che si desidera visualizzare: **tutti**, **critico**, **errore**, **avviso**,  **Informazioni**, **Verbose**, o **ActivityTracing**.  
+8.  Fare clic sull'elenco a discesa e selezionare il tipo di informazioni di traccia che si desidera visualizzare: **Tutti i**, **critici**, **errore**, **avviso**, **informazioni**, **Verbose**, o **ActivityTracing**.  
   
-     **Critico** abilita la tracciatura di solo eventi critici.  
+     **Critico** abilita solo la tracciatura di eventi Critico.  
   
-     **Errore** abilita la tracciatura di eventi critico ed errore.  
+     **Errore** abilita la tracciatura di eventi Critico ed Errore.  
   
-     **Avviso** abilita la tracciatura di critico, errore e gli eventi di avviso.  
+     **Avviso** abilita la tracciatura di eventi Critico, Errore e Avviso.  
   
-     **Informazioni** abilita la tracciatura di eventi critico, errore, avviso e informazioni.  
+     **Informazioni** abilita la tracciatura di eventi Critico, Errore, Avviso e Informazioni.  
   
-     **Verbose** abilita la tracciatura di eventi critico, errore, avviso, informazioni e dettagliato.  
+     **Dettaglio** abilita la tracciatura di eventi Critico, Errore, Avviso, Informazione e Dettaglio.  
   
-     **ActivityTracing** abilita la tracciatura di eventi di arresto, avvio, Suspend, trasferimento e Resume.  
+     **Attività** abilita la tracciatura di eventi Interrompi, Avvia, Sospendi, Trasferisci e Riprendi.  
   
      Per ulteriori informazioni sul significato di questi livelli di informazioni di traccia, vedere <xref:System.Diagnostics.SourceLevels>.  
   
@@ -70,19 +68,19 @@ ms.locfileid: "31476224"
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **opzioni** aprire la finestra di dialogo, nella casella a sinistra di **debug** nodo.  
+2.  Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
   
-3.  In **debug**, fare clic su **finestra di Output**.  
+3.  In **Debug** fare clic su **Finestra di output**.  
   
-4.  Nella casella sulla destra ricercare **impostazioni di traccia WPF**.  
+4.  Nella casella sulla destra cercare **Impostazioni di traccia WPF**.  
   
-5.  Aprire il **impostazioni di traccia WPF** nodo.  
+5.  Aprire il nodo **Impostazioni di traccia WPF**.  
   
-6.  In **impostazioni di traccia WPF**, fare clic sulla categoria di impostazioni che si desidera abilitare (ad esempio, **Data Binding**).  
+6.  In **Impostazioni di traccia WPF** fare clic sulla categoria di impostazioni che si desidera abilitare, ad esempio **data binding**.  
   
-     Un controllo elenco a discesa verrà visualizzato nella colonna Impostazioni accanto ad **Data Binding** o qualsiasi categoria selezionata.  
+     Verrà visualizzato un controllo elenco a discesa nella colonna Impostazioni accanto a **Data binding** o qualsiasi categoria selezionata.  
   
-7.  Fare clic sull'elenco a discesa e selezionare **Off**.  
+7.  Fare clic sull'elenco a discesa e selezionare **Disattivato**.  
   
 8.  Fare clic su **OK**.  
   

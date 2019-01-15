@@ -1,8 +1,6 @@
 ---
 title: Findchildren | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16033fc289e5a1fe2a8331e927bba51ce1671fd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3d2e0db2ec3f1f8f50dce061900ac086deca7777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916282"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Recupera tutti gli elementi figlio di un identificatore di oggetto padre specificato che corrispondono al tipo di nome e il simbolo.  
@@ -27,7 +25,7 @@ Recupera tutti gli elementi figlio di un identificatore di oggetto padre specifi
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT findChildren (   
+HRESULT findChildren (   
    IDiaSymbol*       parent,  
    SymTagEnum        symtag,  
    LPCOLESTR         name,  
@@ -68,5 +66,5 @@ pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions (enumerazione)](../../debugger/debug-interface-access/namesearchoptions.md)   
+ [Enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)   
  [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

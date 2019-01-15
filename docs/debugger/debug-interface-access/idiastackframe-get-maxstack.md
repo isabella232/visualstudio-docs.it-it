@@ -1,8 +1,6 @@
 ---
 title: Get_maxstack | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e86d897acc3596fdbbf9c217f69de4b0a08d6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3deb8885f9148a870b63309e69a0c08c64a9f3a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986037"
 ---
 # <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
 Recupera il numero massimo di byte inseriti nello stack nel frame.  
@@ -27,7 +25,7 @@ Recupera il numero massimo di byte inseriti nello stack nel frame.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_maxStack (   
+HRESULT get_maxStack (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_maxStack (
  [out] Restituisce il numero massimo di byte inseriti nello stack.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 617d3afece5fbf5da2b347d097df65b5659263f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900113"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 
@@ -54,10 +53,10 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
     |Proprietà|Spiegazione dell'impostazione|
     |--------------| - |
-    |DataSource|Questa proprietà viene impostata da Visual Studio sul <xref:System.Windows.Forms.BindingSource> creato per la tabella trascinata nel controllo (a differenza del <xref:System.Windows.Forms.BindingSource> creato al momento della creazione del controllo).<br /><br /> Se è necessario apportare modifiche, impostare questa opzione il <xref:System.Windows.Forms.BindingSource> della tabella contenente la colonna che si desidera visualizzare.|
-    |DisplayMember|Questa proprietà viene impostata da Visual Studio sulla prima colonna successiva alla chiave primaria con tipo di dati stringa per la tabella che si intende trascinare nel controllo.<br /><br /> Se è necessario apportare modifiche, impostare il nome della colonna da visualizzare.|
-    |ValueMember|Questa proprietà viene impostata da Visual Studio sulla prima colonna che partecipa alla chiave primaria o la prima colonna della tabella nel caso in cui non sia stata definita alcuna chiave.<br /><br /> Se è necessario apportare modifiche, impostare la chiave primaria della tabella con la colonna che si desidera visualizzare.|
-    |SelectedValue|Visual Studio imposta questa proprietà per la colonna originale trascinata dal **Zdroje dat** finestra.<br /><br /> Se è necessario apportare modifiche, impostare la colonna chiave esterna nella tabella correlata.|
+    |**DataSource**|Questa proprietà viene impostata da Visual Studio sul <xref:System.Windows.Forms.BindingSource> creato per la tabella trascinata nel controllo (a differenza del <xref:System.Windows.Forms.BindingSource> creato al momento della creazione del controllo).<br /><br /> Se è necessario apportare modifiche, impostare questa opzione il <xref:System.Windows.Forms.BindingSource> della tabella contenente la colonna che si desidera visualizzare.|
+    |**DisplayMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna successiva alla chiave primaria con tipo di dati stringa per la tabella che si intende trascinare nel controllo.<br /><br /> Se è necessario apportare modifiche, impostare il nome della colonna da visualizzare.|
+    |**ValueMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna che partecipa alla chiave primaria o la prima colonna della tabella nel caso in cui non sia stata definita alcuna chiave.<br /><br /> Se è necessario apportare modifiche, impostare la chiave primaria della tabella con la colonna che si desidera visualizzare.|
+    |**SelectedValue**|Visual Studio imposta questa proprietà per la colonna originale trascinata dal **Zdroje dat** finestra.<br /><br /> Se è necessario apportare modifiche, impostare la colonna chiave esterna nella tabella correlata.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,8 +1,6 @@
 ---
 title: Raccogliere statistiche per le app Web ASP.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, sampling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95991806f10a6b4821c232afcf09c83493fabe60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930674"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Raccogliere statistiche per le app Web ASP.NET
 
@@ -34,7 +32,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|**Connettere il profiler a un'applicazione ASP.NET**|-   [Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Connettere il profiler a un'applicazione ASP.NET**|-   [Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere statistiche sull'applicazione tramite la riga di comando](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Attività correlate  
   

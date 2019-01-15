@@ -1,8 +1,6 @@
 ---
 title: Get_sourcecompression | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ad24a6bf8e4efbcb0c1a0009bb8210247ccb5e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86679c1e97ab50f55e8f887d582e8d8b46a35ae7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912649"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 Recupera l'indicatore della compressione origine usata.  
@@ -27,7 +25,7 @@ Recupera l'indicatore della compressione origine usata.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_sourceCompression (   
+HRESULT get_sourceCompression (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_sourceCompression (
  [out] Restituisce l'indicatore della compressione origine usata. Un valore pari a zero indica che è stata usata alcuna compressione di origine.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Il valore restituito da questo metodo è specifico per il compilatore usato. Ad esempio, un compilatore può utilizzare la compressione di Run-Length codifica o lo stile di Huffman.  

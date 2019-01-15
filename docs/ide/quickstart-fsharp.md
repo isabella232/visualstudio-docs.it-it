@@ -3,7 +3,6 @@ title: 'Guida introduttiva: Creare un servizio Web ASP.NET Core in F#'
 description: Informazioni dettagliate su come creare un servizio Web ASP.NET Core in Visual Studio con F#.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -13,12 +12,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 884dfec4d3b8050fa6059cb0f505e1c7619336f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961871"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Guida introduttiva: Usare Visual Studio per creare il primo servizio Web ASP.NET Core in F#
 

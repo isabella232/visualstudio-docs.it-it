@@ -1,8 +1,6 @@
 ---
-title: 'Errore: Il Server Web è stato bloccato e blocca il verbo DEBUG | Documenti Microsoft'
-ms.custom: ''
+title: 'Errore: Il Server Web è stato bloccato e blocca il verbo DEBUG | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941557"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Errore: il server Web è stato bloccato e blocca il verbo DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Errore: Il verbo DEBUG è bloccato dal server Web, che è stato a sua volta bloccato
 L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quanto è stato eseguito lo strumento di blocco IIS ed è stato installato e attivato URLScan. Questa condizione impedisce la ricezione del verbo DEBUG da parte di IIS.  
   
  URLScan è uno strumento di sicurezza che viene utilizzato con lo strumento di blocco IIS per fornire agli amministratori di siti Web IIS la capacità di disattivare le funzionalità non necessarie e limitare il tipo di richieste HTTP che verranno elaborate dal server. Bloccando richieste HTTP specifiche, lo strumento di sicurezza URLScan impedisce a richieste potenzialmente dannose di raggiungere il server e causare danni.  
@@ -38,7 +36,7 @@ L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quant
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Creare una copia del file e denominarlo **old**.  
+2.  Creare una copia del file e assegnarvi il nome **Urlscan.old**.  
   
 3.  Aprire la copia originale del file Urlscan.ini mediante il Blocco note o l'editore di testo desiderato.  
   
@@ -52,4 +50,4 @@ L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quant
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Errore: il server Web non è in grado di trovare la risorsa richiesta](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [Errore: Impossibile trovare la risorsa richiesta nel server Web](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

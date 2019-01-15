@@ -1,8 +1,6 @@
 ---
 title: Strumento di zoom della visualizzazione Core | Documenti Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c29bacc07268223b9d4e5bf6cef4670c1a1f323
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5bfc05c208a072fbe1e17eeafdebb938b33aaaf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967294"
 ---
 # <a name="cores-view-zoom-tool"></a>Strumento di zoom della visualizzazione Core
 Il controllo Zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale in modo da potersi concentrare sulle aree di particolare interesse. Il controllo fa zoom in avanti al centro della visualizzazione corrente, quindi è opportuno regolare la visualizzazione prima di ingrandire.  

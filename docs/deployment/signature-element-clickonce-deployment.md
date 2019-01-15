@@ -1,8 +1,6 @@
 ---
 title: '&lt;Firma&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: ab91a8dea24c37c58fceddce32eadabca4e11e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858039"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (distribuzione ClickOnce)
 Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.  
@@ -30,8 +28,8 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
   
 ```xml  
   
-      <Signature>   
-   XML signature information   
+      <Signature>   
+   XML signature information   
 </Signature>  
 ```  
   
@@ -73,4 +71,4 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+ [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

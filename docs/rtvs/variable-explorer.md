@@ -3,19 +3,18 @@ title: Esplora variabili per R
 description: Esplora variabili in Visual Studio mostra tutte le variabili con un ambito specifico nella sessione corrente di R.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988936"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 
@@ -71,7 +70,7 @@ Per impostazione predefinita, all'apertura l'ambito di **Esplora variabili** è 
 
 ## <a name="import-data-into-variable-explorer"></a>Importare dati in Esplora variabili
 
-Due comandi sulla barra degli strumenti di **Esplora variabili**, disponibili anche nel menu **R Tools** > **Dati**, consentono di importare set di dati CSV esterni nella sessione di R: **Importa set di dati in una sessione di R da un URL Web** e **Importa set di dati in una sessione di R da un file di testo**.
+Due comandi sulla barra degli strumenti di **Esplora variabili**, disponibili anche nel menu **R Tools** > **Dati**, consentono di importare set di dati CSV esterni nella sessione di R:  **Importa set di dati in una sessione di R da un URL Web** e **Importa set di dati in una sessione di R da un file di testo**.
 
 Dopo avere identificato il file CSV da importare, Visual Studio visualizza la finestra di dialogo **Importa set di dati**, in cui sono disponibili opzioni per controllare la modalità di analisi del file di dati, ovvero per definire il separatore di campo e stabilire come gestire le virgolette. È anche possibile visualizzare un'anteprima del dataframe importato e del file di dati originale:
 

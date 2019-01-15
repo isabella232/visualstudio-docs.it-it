@@ -1,8 +1,6 @@
 ---
-title: Debug del codice di esempio HTML e CSS | Documenti Microsoft
-ms.custom: ''
+title: Debug del codice di esempio HTML e CSS | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947556"
 ---
-# <a name="debug-html-and-css-sample-code"></a>Debug del codice di esempio HTML e CSS
+# <a name="debug-html-and-css-sample-code"></a>Eseguire il debug del codice di esempio HTML e CSS
   
- Il codice in questo argomento è il file di esempio per [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.  
+ Il codice in questo argomento è il file di esempio per [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.  
   
 ## <a name="sample-code"></a>Codice di esempio  
- Il codice HTML seguente viene utilizzato nel \<corpo > tag della Guida introduttiva.  
+ Il codice HTML seguente viene usato nel tag \<body> della guida introduttiva.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -51,7 +49,7 @@ ms.locfileid: "31456793"
 }  
 ```  
   
- Nell'esempio di codice seguente viene illustrato il codice JavaScript completo in default.js. I riferimenti agli spazi dei nomi WinJS per questo codice sono nel file default.html del modello.  
+ Nell'esempio di codice seguente viene illustrato il codice JavaScript completo in default.js. I riferimenti agli spazi dei nomi WinJS necessari per questo codice si trovano nel file default.html del modello.  
   
 ```javascript  
 (function () {  
@@ -103,4 +101,4 @@ ms.locfileid: "31456793"
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

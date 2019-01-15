@@ -1,8 +1,6 @@
 ---
-title: "Procedura: recuperare informazioni sulle stringhe di Query in un'applicazione ClickOnce Online | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Recuperare informazioni sulle stringhe di Query in un'applicazione ClickOnce Online | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ff97e72342e8026cddfe80d383c07ab99e3bc99a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951014"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 La *stringa di query* è la parte di un URL che inizia con un punto interrogativo (?) e contiene informazioni arbitrarie nel formato *nome = valore*. Si supponga di avere un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominata `WindowsApp1` che è ospitare in `servername`e di voler passare un valore per la variabile `username` quando l'applicazione viene avviata. L'aspetto dell'URL potrebbe essere simile al seguente:  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -41,7 +39,7 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
 > [!NOTE]
 >  Prima di decidere se attivare questa funzionalità, vedere la sezione "Sicurezza" più avanti in questo argomento.  
   
- Per informazioni su come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* oppure *MageUI.exe*, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Per informazioni su come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* oppure *MageUI.exe*, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  A partire da .NET Framework 3.5 SP1, è possibile passare argomenti della riga di comando in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] offline. Se si desidera fornire argomenti all'applicazione, è possibile passare parametri al file di collegamento con l'estensione .APPREF-MS.  
@@ -78,7 +76,7 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
  Se l'applicazione è solo online, verrà sempre attivata tramite un URL. Anche in questo caso, tuttavia, l'applicazione deve essere scritta in modo da funzionare correttamente se i parametri della stringa di query mancano o sono danneggiati.  
   
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)  
- Consentire il passaggio di parametri URL all'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se si prevede di ripulire l'input da eventuali caratteri dannosi prima di usarlo. Una stringa incorporata con virgolette, barre o punto e virgola, ad esempio, potrebbe eseguire le operazioni di dati arbitrarie se viene impiegata senza essere filtrata in una query SQL su un database. Per altre informazioni sulla sicurezza delle stringhe di query, vedere [Script exploits overview](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ Consentire il passaggio di parametri URL all'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se si prevede di ripulire l'input da eventuali caratteri dannosi prima di usarlo. Una stringa incorporata con virgolette, barre o punto e virgola, ad esempio, potrebbe eseguire le operazioni di dati arbitrarie se viene impiegata senza essere filtrata in una query SQL su un database. Per altre informazioni sulla sicurezza delle stringhe di query, vedere [Cenni preliminari sugli attacchi tramite script](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -1,9 +1,7 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere una tabella al modulo'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882776"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -91,6 +89,6 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
 -   Per tornare all'argomento introduttivo, vedere [Esercitazione 3: Creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md).

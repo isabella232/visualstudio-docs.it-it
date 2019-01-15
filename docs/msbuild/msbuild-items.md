@@ -1,9 +1,7 @@
 ---
 title: Elementi MSBuild | Microsoft Docs
 description: Usare l'attributo MSBuild Include di ItemGroup per specificare i file da includere in una compilazione
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898700"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere rappresentano file. I file sono specificati nell'attributo `Include`. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.  

@@ -1,8 +1,6 @@
 ---
 title: Idiaenumframedata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c15d0dec0ccaa20e2fcf59f88d68d5febc63eb04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 38655a9dc55f16cf7c1ccddd65ae0793d7a04640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894207"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 Recupera un elemento di dati di frame per mezzo di un indice.  
@@ -27,7 +25,7 @@ Recupera un elemento di dati di frame per mezzo di un indice.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD           index,  
    IDiaFrameData** section  
 );  

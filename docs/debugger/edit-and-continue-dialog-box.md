@@ -25,10 +25,10 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53985920"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Finestra di dialogo Modifica e continuazione
-(Solo codice nativo) Questa finestra di dialogo viene visualizzata se durante il debug sono state apportate modifiche al codice riconosciute come applicabili dalla funzionalità Modifica e continuazione **. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
+(Solo codice nativo) Questa finestra di dialogo viene visualizzata se durante il debug sono state apportate modifiche al codice riconosciute come applicabili dalla funzionalità **Modifica e continuazione**. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
   
- Non visualizzare più questo messaggio**  
- Se si seleziona questa casella di controllo, la modalità Modifica e continuazione applicherà le modifiche al codice senza chiedere l'autorizzazione. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo Opzioni **, aprire la cartella Debug**, fare clic sulla pagina Modifica e continuazione **e selezionare Richiama dai comandi di debug** e Chiedi conferma **.  
+ **Non visualizzare più questo messaggio**  
+ Se si seleziona questa casella di controllo, la modalità **Modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Richiama dai comandi di debug** e **Chiedi conferma**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

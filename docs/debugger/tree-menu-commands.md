@@ -1,8 +1,6 @@
 ---
-title: Struttura ad albero di comandi di Menu | Documenti Microsoft
-ms.custom: ''
+title: Struttura ad albero comandi di Menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Tree menu commands
@@ -12,24 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223821e6884dadd39c03e8af4605f207e6a28a2b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ce1d92bd7a0edd741832c2d5009b671a9d029964
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861679"
 ---
 # <a name="tree-menu-commands"></a>comandi del menu Struttura ad albero
 Il **albero** menu sono disponibili comandi per espandere o comprimere le visualizzazioni.  
   
  **Espandi un livello**  
- Espande l'elemento attualmente selezionato in una vista di sistema tramite la visualizzazione di un livello.  
+ Espande l'elemento attualmente selezionato in una vista di sistema per la visualizzazione di un livello sotto tale.  
   
  **Il ramo**  
  Espande tutti i livelli sotto l'elemento attualmente selezionato.  
   
  **Espandi tutto**  
- Consente di espandere e visualizzare tutti i livelli in una vista di sistema.  
+ Si espande e visualizza tutti i livelli in una vista di sistema.  
   
  **Comprimi**  
- Comprime tutti i livelli sotto l'elemento attualmente selezionato.
+ Consente di comprimere tutti i livelli sotto l'elemento attualmente selezionato.

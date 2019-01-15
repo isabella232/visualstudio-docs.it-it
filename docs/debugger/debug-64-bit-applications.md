@@ -1,8 +1,6 @@
 ---
 title: Il debug di applicazioni a 64 bit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 6f79bd9c0f2bbf2ab3156f5bc49100c9c8aee536
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947361"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 È possibile eseguire il debug di un'applicazione a 64 bit in esecuzione nel computer locale o in un computer remoto.  
@@ -39,14 +37,14 @@ ms.locfileid: "44284081"
   
 1.  Creare una soluzione di Visual Studio, ad esempio un'applicazione console C#.  
   
-2.  Impostare la configurazione su 64 bit tramite Gestione configurazione. Per altre informazioni, vedere [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
+2.  Impostare la configurazione su 64 bit tramite Gestione configurazione. Per altre informazioni, vedere [Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3.  A questo punto verrà avviata la versione a 64 bit del debugger remoto (msvsmon.exe). Questa viene eseguita finché la soluzione con la configurazione a 64 bit è aperta.  
   
 4.  Avviare il debug. L'esperienza dovrebbe corrispondere a quella di una configurazione a 32 bit. Se si verificano errori, vedere la sezione relativa alla risoluzione dei problemi di seguito.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Risoluzione dei problemi di debug a 64 bit  
- Si potrebbe essere visualizzato un errore: "un'operazione di debug a 64 bit richiede più tempo del previsto." In questo caso, Visual Studio ha inviato una richiesta alla versione a 64 bit di msvsmon.exe ed è stato necessario molto tempo per la restituzione del risultato di tale richiesta.  
+ Potrebbe essere visualizzato un errore: "Un'operazione di debug a 64 bit richiede più tempo del previsto." In questo caso, Visual Studio ha inviato una richiesta alla versione a 64 bit di msvsmon.exe ed è stato necessario molto tempo per la restituzione del risultato di tale richiesta.  
   
  Questo errore può avere due cause principali:  
   
@@ -56,7 +54,7 @@ ms.locfileid: "44284081"
   
 ## <a name="see-also"></a>Vedere anche  
  [Applicazioni a 64 bit](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
- [Configurazione di programmi per 64 Bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
- [Supporto a 64 bit dell'IDE di Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
- [Uso dei file Dump](../debugger/using-dump-files.md)   
- [Debug remoto](../debugger/remote-debugging.md)
+ [Configurazione di programmi per processori a 64 bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
+ [Supporto a 64 bit per l'IDE di Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
+ [Uso di file dump](../debugger/using-dump-files.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

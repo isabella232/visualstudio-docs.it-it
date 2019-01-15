@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 676e0ffeec21d453244df4938eea2cb0004ecf9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 643d58d735c2203aad58562405dd9729a775eaab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924998"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale relativo specificato (RVA).  
@@ -25,7 +23,7 @@ Recupera un'enumerazione che consente a un client di eseguire l'iterazione attra
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  
 ```  
@@ -46,6 +44,6 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD           
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)

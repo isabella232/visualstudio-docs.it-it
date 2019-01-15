@@ -2,19 +2,18 @@
 title: Aggiungere un parametro a un'azione rapida per un metodo
 ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0337f9869764f544f5248d4da717af849457b8e8
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: da435d5bf4e0b7239b984263838c275d3b5c9ab3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920219"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Aggiungere un parametro a un metodo tramite un'azione rapida
 
@@ -24,7 +23,7 @@ Questa generazione di codice si applica a:
 
 - Visual Basic
 
-**Che cosa:** permette di aggiungere automaticamente un parametro a un metodo, in base all'utilizzo.
+**Cosa:** permette di aggiungere automaticamente un parametro a un metodo, in base all'utilizzo.
 
 **Quando:** si vuole aggiungere un parametro a un metodo e dichiararlo nel modo corretto automaticamente.
 

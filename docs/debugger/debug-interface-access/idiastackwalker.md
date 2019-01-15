@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalker | Documenti Microsoft
-ms.custom: ''
+title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9c4509e56949d739af3e39e04b89f289edfbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935978"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Fornisce metodi per eseguire uno stack di esaminare l'utilizzo di informazioni nel file con estensione pdb.  
+Fornisce metodi per eseguire uno stack viene descritto l'uso di informazioni nel file con estensione pdb.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,16 +31,16 @@ IDiaStackWalker: IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaStackWalker`.  
   
-|Metodo|Descrizione|  
+|Metodo|Description|  
 |------------|-----------------|  
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Recupera un enumeratore di frame dello stack x86 a piattaforme.|  
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Recupera un enumeratore di frame dello stack per un tipo di piattaforma specifica.|  
   
 ## <a name="remarks"></a>Note  
- Questa interfaccia viene utilizzata per ottenere un elenco di stack frame per un modulo caricato. Ciascuno dei metodi viene passato un [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) oggetto (implementato dall'applicazione client) che fornisce le informazioni necessarie per creare l'elenco di frame dello stack.  
+ Questa interfaccia viene utilizzata per ottenere un elenco di stack frame per un modulo caricato. Ogni metodo viene passata un' [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) oggetto (implementato dall'applicazione client) che fornisce le informazioni necessarie per creare l'elenco di stack frame.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Questa interfaccia viene ottenuta chiamando il `CoCreateInstance` metodo con l'identificatore di classe `CLSID_DiaStackWalker` e l'ID di interfaccia di `IID_IDiaStackWalker`. Nell'esempio viene illustrato come questa interfaccia viene ottenuta.  
+ Questa interfaccia viene ottenuta chiamando il `CoCreateInstance` metodo con l'identificatore di classe `CLSID_DiaStackWalker` e l'ID di interfaccia di `IID_IDiaStackWalker`. Nell'esempio viene illustrato come questa interfaccia è ottenuta.  
   
 ## <a name="example"></a>Esempio  
  In questo esempio viene illustrato come ottenere il `IDiaStackWalker` interfaccia.  

@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3a29c1a9fa21b973bca5db03bae07f608f82014f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888023"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Restituisce il blocco di dati PDATA associato all'indirizzo virtuale.  
@@ -27,7 +25,7 @@ Restituisce il blocco di dati PDATA associato all'indirizzo virtuale.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT pdataForVA(   
+HRESULT pdataForVA(   
    ULONGLONG  va,  
    DWORD      cbData,  
    DWORD*     pcbData,  
@@ -49,7 +47,7 @@ HRESULT pdataForVA(
  [in, out] Un buffer che viene compilato con i dati richiesti. Non può essere `NULL`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è presente alcun PDATA per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è presente alcun PDATA per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  PDATA (della sezione denominata "pdata") di un modulo contiene informazioni sulla gestione delle eccezioni per le funzioni.  

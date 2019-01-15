@@ -1,8 +1,6 @@
 ---
 title: Come è possibile accedere ai codici di errore di Win32? | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.errors
@@ -20,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecddd2a8ca87d4c86b3cdf776fcf2e475efb8836
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: d2ce767465262533e1122a58bb4c51dd6caf0c5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874273"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Come è possibile accedere ai codici di errore di Win32?
 Il file WINERROR.H nella directory INCLUDE della directory di installazione di sistema predefinita contiene le definizioni dei codici di errore per le funzioni API Win32.  
   
- È possibile cercare un codice di errore digitando il codice nel **Watch** finestra o il **controllo immediato** nella finestra di dialogo. Ad esempio:  
+ È possibile cercare un codice di errore digitando tale codice nella finestra **Espressioni di controllo** o nella finestra di dialogo **Controllo immediato**. Ad esempio:  
   
 `0x80000004,hr` 
 
   
 ## <a name="see-also"></a>Vedere anche  
- [Domande frequenti sul codice nativo debug](../debugger/debugging-native-code-faqs.md)   
+ [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)   
  [Debug del codice nativo](../debugger/debugging-native-code.md)

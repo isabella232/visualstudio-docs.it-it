@@ -2,7 +2,6 @@
 title: Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -35,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877903"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 È possibile digitare gli eventi pre-compilazione o post-compilazione per la [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direttamente nella casella di modifica oppure selezionare le macro pre-compilazione e post-compilazione da un elenco di macro disponibili.
@@ -73,7 +72,7 @@ ms.locfileid: "31947973"
 ### <a name="macros"></a>Macro
  È possibile usare una qualsiasi di queste macro per specificare i percorsi dei file o ottenere il nome effettivo del file di input in caso di selezioni multiple. Le macro non fanno distinzione tra maiuscole e minuscole.
 
-|Macro|Descrizione|
+|Macro|Description|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Nome della configurazione di progetto corrente, ad esempio "Debug".|
 |`$(OutDir)`|Percorso della directory del file di output, relativo alla directory del progetto. Viene risolto nel valore per la proprietà Directory di output. Include la barra rovesciata finale "\\".|
@@ -100,4 +99,4 @@ ms.locfileid: "31947973"
 - [Specifica di eventi di compilazione personalizzati in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
 - [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Procedura: Specificare eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Procedura: Specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)

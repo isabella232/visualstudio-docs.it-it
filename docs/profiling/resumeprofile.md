@@ -1,8 +1,6 @@
 ---
 title: ResumeProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c503c0fccf6cd78a01914647294a37e0b86f55e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947907"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 Il metodo `ResumeProfile` decrementa il contatore Suspend/Resume per il livello di profilatura specificato.  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. Gli enumeratori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|  
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|L'ID dell'elemento di profilatura non esiste.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Il livello di profilatura specificato non esiste.|  
@@ -67,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
- *Intestazione: dichiarata in VSPerf.h*  
+ Intestazione: Dichiarata in *VSPerf.h*  
   
  Libreria di importazione: *VSPerf.lib*  
   

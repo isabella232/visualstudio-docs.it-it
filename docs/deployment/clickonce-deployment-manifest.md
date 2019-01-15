@@ -32,7 +32,7 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
 | - | - | - |
 | [\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md) | Obbligatorio. Elemento di primo livello. | `manifestVersion` |
 | [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obbligatorio. Identifica il manifesto dell'applicazione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<Descrizione > elemento](../deployment/description-element-clickonce-deployment.md) | Obbligatorio. Identifica le informazioni sull'applicazione usate per creare una shell e l'elemento Installazione applicazioni** nel Pannello di controllo. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<Descrizione > elemento](../deployment/description-element-clickonce-deployment.md) | Obbligatorio. Identifica le informazioni sull'applicazione usate per creare una shell e l'elemento **Installazione applicazioni** nel Pannello di controllo. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<distribuzione > elemento](../deployment/deployment-element-clickonce-deployment.md) | Facoltativo. Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'esposizione al sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obbligatorio. Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione. | `SupportUrl` |
 | [\<dipendenza > elemento](../deployment/dependency-element-clickonce-deployment.md) | Obbligatorio. Identifica la versione dell'applicazione da installare per la distribuzione e il percorso del manifesto dell'applicazione. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
@@ -51,7 +51,7 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
  Il file manifesto della distribuzione deve avere un nome sicuro e può anche contenere certificati per la convalida dell'editore.  
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file  
- Il nome di un file manifesto della distribuzione deve terminare con l'estensione application.  
+ Il nome di un file manifesto della distribuzione deve terminare con l'estensione *application*.  
 
 ## <a name="examples"></a>Esempi  
  L'esempio di codice seguente illustra un manifesto della distribuzione.  

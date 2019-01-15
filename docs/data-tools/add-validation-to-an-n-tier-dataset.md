@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 5aa324321630d172ddf8fb7938e1bab34a02b8e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868209"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 Aggiunta della convalida a un set di dati è suddivisa in una soluzione a più livelli è essenzialmente uguale all'aggiunta di convalida a un singolo file dataset (un set di dati in un unico progetto). Il percorso suggerito per eseguire la convalida dei dati è durante la <xref:System.Data.DataTable.ColumnChanging> e/o <xref:System.Data.DataTable.RowChanging> gli eventi di una tabella dati.

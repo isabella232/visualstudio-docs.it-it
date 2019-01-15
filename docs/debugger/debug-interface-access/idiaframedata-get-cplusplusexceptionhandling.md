@@ -1,8 +1,6 @@
 ---
 title: Get_cplusplusexceptionhandling | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9c35668e7998cf11773cca9db4bfdbf8af11701
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e2b7ceb69e4d4310330ea356037b7b155ea81f26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959163"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 Recupera un flag che indica se la gestione delle eccezioni C++ è attivo.  
@@ -27,7 +25,7 @@ Recupera un flag che indica se la gestione delle eccezioni C++ è attivo.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_cplusplusExceptionHandling (   
+HRESULT get_cplusplusExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_cplusplusExceptionHandling (
  [out] Restituisce `TRUE` se la gestione delle eccezioni C++ è attivo; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Per determinare se delle eccezioni strutturata gestione è attivo (che è molto diversa dalla gestione delle eccezioni C++), chiamare il [Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) (metodo).  

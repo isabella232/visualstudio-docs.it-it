@@ -1,8 +1,6 @@
 ---
 title: Fasi Pipeline grafica | Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pipeline
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da74af0f77586e518365fa669c84309e7751b319
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a76b782b3abaf92eedccb43104987d16668794d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897995"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata di disegno viene trasformata in ogni fase della pipeline grafica Direct3D.  
@@ -45,76 +43,76 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
   
 #### <a name="to-view-a-shaders-source-code"></a>Per visualizzare il codice sorgente di uno shader  
   
--   Nel **fasi Pipeline grafica** finestra, individuare la fase dello shader che corrisponde allo shader da esaminare. Quindi, sotto l'immagine di anteprima, seguire il collegamento del titolo fase dello shader, ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
+-   Nella finestra **Fasi pipeline grafica** individuare la fase dello shader che corrisponde allo shader da esaminare. Quindi, sotto l'immagine di anteprima, seguire il collegamento del titolo della fase dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
   
     > [!TIP]
-    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio la finestra Cronologia pixel e tabella di oggetto.  
+    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra della cronologia pixel.  
   
 #### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader  
   
--   Nel **fasi Pipeline grafica** finestra, individuare la fase dello shader che corrisponde allo shader da sottoporre a debug. Quindi, sotto l'immagine di anteprima, scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la fase corrispondente, ovvero il primo vertice, primitiva o pixel elaborato durante questa chiamata di disegno. Le chiamate dello shader per uno specifico pixel o vertice sono accessibili tramite il **cronologia Pixel grafica**.  
+-   Nella finestra **Fasi pipeline grafica** individuare la fase dello shader che corrisponde allo shader di cui eseguire il debug. Quindi, sotto l'immagine di anteprima, scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la fase corrispondente, ovvero il primo vertice, primitiva o pixel elaborato durante questa chiamata di disegno. È possibile accedere alle altre chiamate dello shader per uno specifico pixel o vertice tramite la **Cronologia pixel grafica**.  
   
 ### <a name="the-pipeline-stages"></a>Fasi della pipeline  
  Nella finestra Fasi pipeline vengono visualizzate solo le fasi della pipeline che erano attive durante la chiamata di disegno. Ogni fase della pipeline grafica trasforma l'input dalla fase precedente e passa il risultato alla fase successiva. La prima fase, ovvero Assemblaggio input, estrae i dati di indici e vertici forniti dall'app e li usa come input. L'ultima fase, ovvero Unione output, combina i pixel di cui è stato eseguito il rendering con il contenuto corrente del buffer frame o della destinazione di rendering per produrre l'immagine finale visualizzata sullo schermo.  
   
 > [!NOTE]
->  COMPUTE shader non sono supportati nel **fasi Pipeline grafica** finestra.  
+>  I compute shader non sono supportati nella finestra **Fasi pipeline grafica**.  
   
- **Assembler input**  
+ **Assemblaggio input**  
  Assemblaggio input legge i dati di indici e vertici specificati dall'app e li assembla per l'hardware grafico.  
   
- Nella finestra Fasi pipeline, l'output di Assemblaggio input viene visualizzato come modello wireframe. Per esaminare più da vicino al risultato, selezionare **Assembler Input** nel **fasi Pipeline grafica** finestra per visualizzare i vertici assemblati in 3D completo usando l'Editor dei modelli.  
+ Nella finestra Fasi pipeline, l'output di Assemblaggio input viene visualizzato come modello wireframe. Per esaminare in dettaglio i risultati, selezionare **Assemblaggio input** nella finestra **Fasi pipeline grafica** per vedere i vertici assemblati in 3D completo usando l'editor modello.  
   
 > [!NOTE]
->  Se il `POSITION` semantica non è presente nell'output dell'assemblaggio input, quindi viene visualizzato nulla nella **Assembler Input** fase.  
+>  Se la semantica `POSITION` non è presente nell'output dell'assemblaggio input, nella fase **Assemblaggio input** non verrà visualizzato nulla.  
   
- **Vertex Shader**  
+ **Vertex shader**  
  La fase Vertex shader elabora i vertici, in genere eseguendo operazioni come trasformazioni, rivestimento e illuminazione. Produce lo stesso numero di vertici che accetta come input.  
   
- Nella finestra Fasi pipeline, l'output di Vertex shader viene visualizzato come immagine raster wireframe. Per esaminare più da vicino al risultato, selezionare **Vertex Shader** nel **fasi Pipeline grafica** windows per visualizzare i vertici elaborati nell'Editor di immagini.  
+ Nella finestra Fasi pipeline, l'output di Vertex shader viene visualizzato come immagine raster wireframe. Per esaminare in dettaglio i risultati, selezionare **Vertex shader** nella finestra **Fasi pipeline grafica** per vedere i vertici elaborati nell'editor di immagini.  
   
 > [!NOTE]
->  Se il `POSITION` oppure `SV_POSITION` semantica non è presente nell'output di vertex shader, quindi viene visualizzato nulla nella **Vertex Shader** fase.  
+>  Se la semantica `POSITION` o `SV_POSITION` non è presente nell'output di vertex shader, nella fase **Vertex shader** non verrà visualizzato nulla.  
   
- **Hull Shader** (Direct3D 11 e Direct3D 12 solo)  
+ **Hull shader** (solo Direct3D 11 e Direct3D 12)  
  La fase Hull shader elabora i punti di controllo che definiscono una superficie di ordine inferiore, ad esempio un quadrato, un triangolo o una linea. Come output, produce patch geometriche di ordine superiori e costanti patch che vengono passate alla fase del mosaico a funzione fissa.  
   
  La fase Hull shader non viene visualizzata nella finestra Fasi pipeline.  
   
- **Fase del mosaico** (Direct3D 11 e Direct3D 12 solo)  
+ **Fase Mosaico** (solo Direct3D 11 e Direct3D 12)  
  La fase del mosaico è un'unità hardware a funzione fissa (non programmabile) che preelabora il dominio rappresentato dall'output dello Hull shader. Come output, crea uno schema di campionamento del dominio e un set di primitive più piccole, punti, linee e triangoli, che connettono in questi campioni.  
   
  La fase del mosaico non viene visualizzata nella finestra Fasi pipeline.  
   
- **Domain Shader** (Direct3D 11 e Direct3D 12 solo)  
+ **Domain shader** (solo Direct3D 11 e Direct3D 12)  
  La fase Domain shader elabora patch geometriche di ordine superiore provenienti da Hull shader, insieme a fattori a mosaico dalla fase del mosaico. I fattori a mosaico possono essere includere fattori di input della fase di mosaico così come fattori di output. Come output, calcola la posizione del vertice di un punto sulla patch di output in base ai fattori a mosaico.  
   
  La fase Domain shader non viene visualizzata nella finestra Fasi pipeline.  
   
- **Geometry Shader**  
+ **Geometry shader**  
  La fase Geometry shader elabora intere primitive, quali punti, linee o triangoli, insieme a informazioni opzionali sui vertici per le primitive adiacenti. A differenza dei vertex shader, i geometry shader possono produrre più o meno primitive che accettano come input.  
   
- Nella finestra Fasi pipeline, l'output di Geometry Shader viene visualizzato come immagine raster wireframe. Per esaminare più da vicino al risultato, selezionare **Geometry Shader** nel **fasi Pipeline grafica** finestra per visualizzare le primitive elaborate nell'Editor di immagini.  
+ Nella finestra Fasi pipeline, l'output di Geometry Shader viene visualizzato come immagine raster wireframe. Per esaminare in dettaglio i risultati, selezionare **Geometry shader** nella finestra **Fasi pipeline grafica** per vedere le primitive elaborate nell'editor di immagini.  
   
- **Fase Output Stream**  
+ **Fase Output flusso**  
  La fase di output del flusso può intercettare primitive trasformate prima della rasterizzazione e scriverle in memoria. Da questa posizione, i dati possono essere riutilizzati come input per le prime fasi della pipeline grafica o essere nuovamente letti dalla CPU.  
   
  La fase Output flusso non viene visualizzata nella finestra Fasi pipeline.  
   
- **Fase di rasterizzazione**  
+ **Fase Rasterizzazione**  
  La fase di rasterizzazione è un'unità hardware a funzione fissa (non programmabile) che converte le primitive vettoriali, come punti, linee e triangoli, in un'immagine raster, eseguendo una conversione per linee di scansione. Durante la rasterizzazione i vertici vengono trasformati nello spazio del ritaglio omogeneo e tagliati. Come output, viene eseguito il mapping dei pixel shader e gli attributi dei vertici della primitiva vengono interpolati e preparati per il pixel shader.  
   
  La fase di rasterizzazione non viene visualizzata nella finestra Fasi pipeline.  
   
- **Pixel Shader**  
+ **Pixel shader**  
  La fase Pixel shader elabora primitive rasterizzate insieme a dati di vertici interpolati per generare valori per pixel come colore e profondità.  
   
- Nella finestra Fasi pipeline, l'output di Pixel shader viene visualizzato come un'immagine raster a colori. Per esaminare più da vicino al risultato, selezionare **Pixel Shader** nel **fasi Pipeline grafica** finestra per visualizzare le primitive elaborate nell'Editor di immagini.  
+ Nella finestra Fasi pipeline, l'output di Pixel shader viene visualizzato come un'immagine raster a colori. Per esaminare in dettaglio i risultati, selezionare **Pixel shader** nella finestra **Fasi pipeline grafica** per vedere le primitive elaborate nell'editor di immagini.  
   
  **Unione output**  
  La fase di unione output combina l'effetto dei pixel di cui è stato appena eseguito il rendering con il contenuto esistente dei buffer corrispondenti, ad esempio di colori, di profondità e di stencil, per produrre nuovi valori in questi buffer.  
   
- Nella finestra Fasi pipeline, l'output di Unione output viene visualizzato come un'immagine raster a colori. Per poter esaminare i risultati, selezionare **unione Output** nel **fasi Pipeline grafica** finestra per visualizzare il buffer frame unito.  
+ Nella finestra Fasi pipeline, l'output di Unione output viene visualizzato come un'immagine raster a colori. Per esaminare in dettaglio i risultati, selezionare **Unione output** nella finestra **Fasi pipeline grafica** per vedere il buffer frame unito.  
   
 ### <a name="vertex-and-geometry-shader-preview"></a>Vertex e Geometry shader preview  
  Quando si seleziona la fase dello shader vertice o la geometria nel **fasi Pipeline** finestra, è possibile visualizzare gli input e output dallo shader nel riquadro seguente.  In questo caso, sono disponibili informazioni dettagliate sull'elenco di vertici fornito agli shader dopo che vengono assemblati dalla fase di assemblaggio input.  
@@ -127,4 +125,4 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

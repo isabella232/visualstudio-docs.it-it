@@ -1,8 +1,6 @@
 ---
 title: Informazioni sulla finestra registri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: a08b7f3731de490443cc56a418c75974bf9ff722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919534"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra Registri in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -52,5 +50,5 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
  Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra **Registri** verrà visualizzato un menu di scelta rapida in cui sono elencati i gruppi, che è possibile visualizzare o nascondere secondo necessità.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Utilizzare la finestra registri](../debugger/how-to-use-the-registers-window.md)   
+ [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)   
  [Presentazione del debugger](../debugger/debugger-feature-tour.md)

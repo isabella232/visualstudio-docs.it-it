@@ -1,8 +1,6 @@
 ---
 title: '&lt;assembly&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878352"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; elemento (applicazione ClickOnce)
 L'elemento di primo livello per il manifesto dell'applicazione.  
@@ -37,7 +35,7 @@ L'elemento di primo livello per il manifesto dell'applicazione.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento di contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono essere in uno degli spazi dei nomi seguenti:  
   
  `urn:schemas-microsoft-com:asm.v1`  
@@ -48,9 +46,9 @@ L'elemento di primo livello per il manifesto dell'applicazione.
   
  Gli elementi figlio dell'assembly devono essere anche in questi spazi dei nomi, tramite ereditarietà o tramite l'assegnazione di tag.  
   
- Il `assembly` elemento ha l'attributo seguente.  
+ L'elemento `assembly` presenta l'attributo seguente:  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`manifestVersion`|Obbligatorio. Il `manifestVersion` attributo deve essere impostato su `1.0`.|  
   

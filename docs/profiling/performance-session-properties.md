@@ -1,8 +1,6 @@
 ---
 title: Proprietà della sessione di prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8a6cf897d0181717439f7ae3ac6afccb469b06f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961913"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 
@@ -36,17 +34,17 @@ Queste impostazioni consentono di selezionare il metodo di profilatura, aggiunge
 
 Per altre informazioni, vedere:
 
-[Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
+[Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
 
 [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura](../profiling/how-to-set-performance-data-file-name-options.md)
+ [Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.
 
-Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
+Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>Campionamento
 
@@ -63,7 +61,7 @@ Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](..
 ## <a name="binary"></a>Binario
 Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di *My.DLL* e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL*. *My.DLL* viene quindi modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
 
-Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
+Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interazioni tra livelli
 
@@ -75,7 +73,7 @@ Queste impostazioni consentono di raccogliere i dati sulle prestazioni per il co
 
 Per altre informazioni, vedere:
 
-[Procedura: Profilare codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
 [Procedura: Specificare comandi pre- e post-strumentazione](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
@@ -107,7 +105,7 @@ Queste impostazioni consentono di aggiungere opzioni al processo di strumentazio
 
 Per altre informazioni, vedere:
 
-[Procedura: Specificare il Runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Procedura: Specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
 [Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)
 

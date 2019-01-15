@@ -2,7 +2,6 @@
 title: Finestre del debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875806"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Informazioni su Debugger Windows in Visual Studio
 
@@ -35,19 +34,19 @@ ms.locfileid: "53562347"
 |Controllo immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|
 |Stack in parallelo|CTRL+MAIUSC+D, S|[Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
 |Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Thread|CTRL+ALT+H|[Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
-|Moduli|CTRL+ALT+U|[Procedura: Utilizzare la finestra moduli](../debugger/how-to-use-the-modules-window.md)|
+|Thread|CTRL+ALT+H|[Eseguire il debug con la finestra Thread](../debugger/how-to-use-the-threads-window.md)|
+|Moduli|CTRL+ALT+U|[Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
 |Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
-|Debug interattivo di Python|MAIUSC+ALT+I|[Finestra REPL interattiva di Python](../python/python-interactive-repl-in-visual-studio.md)|
+|Debug interattivo di Python|MAIUSC+ALT+I|[Finestra REPL interattiva per Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Console JavaScript|CTRL+ALT+V, C|[Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|
+|DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Processi|CTRL+ALT+Z|[Debug di thread e processi](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Finestra Memoria](../debugger/memory-windows.md)|
-|Disassembly|CTRL+ALT+D|[Procedura: Utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
-|Registri|CTRL+ALT+G|[Procedura: Utilizzare la finestra registri](../debugger/how-to-use-the-registers-window.md)|
+|Disassembly|CTRL+ALT+D|[Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
+|Registri|CTRL+ALT+G|[Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Vedere anche
 

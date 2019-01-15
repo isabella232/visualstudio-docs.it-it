@@ -2,7 +2,6 @@
 title: Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876786"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento
 Questa finestra di dialogo consente di modificare il comportamento predefinito della barra di scorrimento dell'editor del codice. Per visualizzare queste opzioni, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella **Editor di testo** espandere la sottocartella **Tutti i linguaggi** e quindi scegliere **Barre di scorrimento**.

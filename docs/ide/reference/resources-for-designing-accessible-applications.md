@@ -3,7 +3,6 @@ title: Risorse per la progettazione di applicazioni accessibili
 description: Informazioni su come creare applicazioni accessibili semplici da usare da parte di persone affette da disabilità.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959625"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 
@@ -33,21 +32,21 @@ Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supp
 
 * **Tecnologie di riconoscimento vocale Microsoft .NET** Microsoft .NET Speech SDK offre un set di controlli Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un componente aggiuntivo di riconoscimento vocale per Microsoft Internet Explorer, applicazioni di esempio e documentazione. Gli sviluppatori Web possono usare questi strumenti per creare applicazioni [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] abilitate al riconoscimento vocale, eseguirne il debug e distribuirle. Gli strumenti sono completamente integrati in Microsoft Visual Studio e consentono agli sviluppatori di lavorare in un ambiente di sviluppo noto. Per altre informazioni, vedere [Speech Server](/previous-versions/office/developer/speech-technologies/ms950383\(v\=msdn.10\)).
 
-* **Informazioni su SAMI 1.0** La tecnologia Microsoft Synchronized Accessible Media Interchange (SAMI) consente agli sviluppatori di creare didascalie dei contenuti audio per gli elementi multimediali del PC. Per altre informazioni, vedere [Understanding SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0) (Informazioni su SAMI 1.0).
+* **Understanding SAMI 1.0** (Informazioni su SAMI 1.0) La tecnologia Microsoft Synchronized Accessible Media Interchange (SAMI) consente agli sviluppatori di acquisire contenuti audio per gli elementi multimediali del PC. Per altre informazioni, vedere [Understanding SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0) (Informazioni su SAMI 1.0).
 
-## <a name="windows-applications"></a>Applicazioni Windows
+## <a name="windows-applications"></a>Windows (applicazioni)
 
 * **[Procedura dettagliata: Creazione di un'applicazione Windows ad Accesso facilitato](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** L'articolo offre istruzioni dettagliate per includere i cinque requisiti di accessibilità per il logo "Certified for Windows" in un'applicazione Windows di esempio.
 
 * **Linee guida per la progettazione dell'interfaccia utente della tastiera** L'articolo tecnico illustra come progettare un'applicazione Windows che gli utenti possono usare con la tastiera. Per altre informazioni, vedere [Guidelines for keyboard user interface design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (Linee guida per la progettazione dell'interfaccia utente della tastiera).
 
-* **Accessibilità alla console** L'articolo tecnico descrive API ed eventi usati per esporre la console in Windows XP per gli strumenti di accessibilità. Per altre informazioni, vedere [Console accessibility](/previous-versions/windows/desktop/dnacc/console-accessibility) (Accessibilità alla console).
+* **Console Accessibility** (Accessibilità alla console) In questo articolo tecnico vengono descritti gli eventi e le API usati per esporre la console in Windows XP per gli strumenti di accessibilità. Per altre informazioni, vedere [Console accessibility](/previous-versions/windows/desktop/dnacc/console-accessibility) (Accessibilità alla console).
 
 ## <a name="websites"></a>Siti Web
 
 -   [Procedura dettagliata: Linee guida di accessibilità per l'uso di controlli immagine, controlli menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) L'articolo offre istruzioni dettagliate per includere i controlli di accessibilità in una pagina Web di esempio. Contiene inoltre alcuni utili suggerimenti per la progettazione dell'accessibilità per il Web.
 
--   **Creazione di pagine Web accessibili con DHTML** L'articolo tecnico elenca gli elementi HTML 4.0 accessibili oltre a suggerimenti per la progettazione di un Web accessibile. Per altre informazioni, vedere [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Creare pagine Web accessibili con DHTML).
+-   **Creating Accessible Web Pages with DHTML** (Creazione di pagine Web accessibili con DHTML) In questo articolo sono elencati gli elementi HTML 4.0 accessibili oltre a suggerimenti sulla progettazione Web accessibile. Per altre informazioni, vedere [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Creare pagine Web accessibili con DHTML).
 
 ### <a name="third-party-resources"></a>Risorse di terze parti
 

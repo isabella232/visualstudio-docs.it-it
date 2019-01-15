@@ -1,8 +1,6 @@
 ---
 title: '&lt;Pacchetto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868615"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
 Il `Package` elemento è l'elemento XML di primo livello all'interno di un file del pacchetto.  
@@ -142,15 +140,15 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 </Package>  
 ```  
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `Package` elemento è obbligatorio. Include gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |--------------------| - |
 | `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione. |
 | `Name` | Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`. |
-| `LicenseAgreement` | Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere una stringa di testo normale (*txt*) in formato testo. (*RTF*) |
+| `LicenseAgreement` | Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere una stringa di testo normale (*txt*) in formato testo. (*.rtf*) |
 
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente viene illustrato un file del pacchetto completo per la ridistribuzione di [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
@@ -191,4 +189,4 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 ```  
 
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

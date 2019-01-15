@@ -1,8 +1,6 @@
 ---
-title: "Procedura: eseguire il Debug di un'applicazione ClickOnce con autorizzazioni limitate | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921257"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: eseguire il Debug di un'applicazione ClickOnce con autorizzazioni limitate
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
 Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizzazioni di attendibilità totale. È quindi molto probabile che le eccezioni di sicurezza generate durante il debug di un'applicazione ClickOnce siano diverse da quelle restituite all'utente finale quando esegue l'applicazione con autorizzazioni limitate.  
   
  Per rilevare queste eccezioni, è necessario eseguire il debug dell'applicazione con le stesse autorizzazioni dell'utente finale. Il debug con autorizzazioni limitate può essere abilitato nella pagina **Sicurezza** di **Creazione progetti**.  
@@ -61,7 +59,7 @@ Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizz
 6.  Nella casella di testo **Esegui debug dell'applicazione come se fosse stata scaricata dal seguente URL** immettere un URL o un percorso di rete.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

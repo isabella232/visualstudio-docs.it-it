@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: avviare e arrestare la visualizzazione del Log dei messaggi | Documenti Microsoft'
-ms.custom: ''
+title: 'Procedura: Avviare e arrestare la visualizzazione del Log dei messaggi | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926660"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Procedura: avviare e arrestare la visualizzazione del log dei messaggi
-Quando un [visualizzazione messaggi](../debugger/messages-view.md) finestra sia attiva, una **Avvia registrazione** o **Arresta registrazione** scelto verrà visualizzato in Spy + + **messaggi** menu e corrispondente **Avvia registrazione** o **Arresta registrazione** pulsante della barra degli strumenti diventa attivo.  
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Procedura: Avviare e arrestare la visualizzazione del log dei messaggi
+Quando un [visualizzazione messaggi](../debugger/messages-view.md) finestra è attiva, una **Start Logging** o **Arresta registrazione** scelto verrà visualizzato in Spy + + **messaggi** menu e il corrispondente **Start Logging** oppure **Arresta registrazione** pulsante della barra degli strumenti diventa attivo.  
   
 ### <a name="to-start-the-message-log-display"></a>Per avviare la visualizzazione del log dei messaggi  
   
 1.  Dal **messaggi** menu, scegliere **Avvia registrazione**.  
   
-### <a name="to-stop-the-message-log-display"></a>Per interrompere la visualizzazione del log dei messaggi  
+### <a name="to-stop-the-message-log-display"></a>Per arrestare la visualizzazione del log dei messaggi  
   
 1.  Dal **messaggi** menu, scegliere **Arresta registrazione**.

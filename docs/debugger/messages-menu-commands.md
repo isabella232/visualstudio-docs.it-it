@@ -1,8 +1,6 @@
 ---
-title: I comandi di Menu dei messaggi | Documenti Microsoft
-ms.custom: ''
+title: I messaggi di comandi di Menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5d2ff50180a0818f3ef9399747d69d75a55198c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861942"
 ---
 # <a name="messages-menu-commands"></a>comandi del menu Messaggi
 Il **messaggi** menu sono disponibili comandi per il controllo delle visualizzazioni dei messaggi.  
@@ -26,7 +24,7 @@ Il **messaggi** menu sono disponibili comandi per il controllo delle visualizzaz
  Avvia o arresta la visualizzazione dei messaggi.  
   
  **Opzioni di registrazione**  
- Apre il **Opzioni messaggio** della finestra di dialogo in cui è possibile specificare i criteri di ricerca di messaggi.  
+ Apre la **Opzioni messaggio** della finestra di dialogo in cui è possibile specificare i criteri di ricerca di messaggi.  
   
- **Cancella Log**  
- Cancella il contenuto della visualizzazione messaggi attiva.
+ **Cancella log**  
+ Cancella il contenuto della visualizzazione dei messaggi attivo.

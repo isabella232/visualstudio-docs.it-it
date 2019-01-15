@@ -2,7 +2,6 @@
 title: Pagina Sicurezza, Progettazione progetti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75877dfd8620af9d3fdfecb5cfcb10761a739515
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949579"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987953"
 ---
 # <a name="security-page-project-designer"></a>Pagina Sicurezza, Progettazione progetti
 

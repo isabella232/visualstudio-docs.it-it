@@ -1,8 +1,6 @@
 ---
-title: "Procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 265c1d777da7703dbaa0dd7146a3142e8b7ddffa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 6397944a39a0424211c57ddfe1ad045fce730ec3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911663"
 ---
-# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce
+# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un'applicazione, una pagina Web predefinita (Publish. htm) viene generata e pubblicata insieme all'applicazione. Questa pagina contiene il nome di un collegamento a un argomento della Guida che descrive l'applicazione e un collegamento per installare l'applicazione e/o gli eventuali prerequisiti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Il **pagina di pubblicazione** proprietà del progetto consente di specificare un nome per la pagina Web per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
   
- Dopo la pagina di pubblicazione è stata specificata, la volta successiva che si pubblica, verrà copiato nel percorso di pubblicazione; non verrà sovrascritto se si pubblica nuovamente. Se si vuole personalizzare l'aspetto della pagina, è possibile farlo senza doversi preoccupare di perdere le modifiche apportate. Per altre informazioni, vedere [procedura: personalizzare la pagina Web predefinita ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
+ Dopo la pagina di pubblicazione è stata specificata, la volta successiva che si pubblica, verrà copiato nel percorso di pubblicazione; non verrà sovrascritto se si pubblica nuovamente. Se si vuole personalizzare l'aspetto della pagina, è possibile farlo senza doversi preoccupare di perdere le modifiche apportate. Per altre informazioni, vedere [Procedura: Personalizzare la pagina Web predefinita ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
   
  Il **pagina di pubblicazione** proprietà può essere impostata **Publish Options** finestra di dialogo, accessibile dal **Publish** riquadro del **Progettazione progetti**.  
   
@@ -60,6 +58,6 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 5.  Nel **Publish Options** della finestra di dialogo deseleziona le **pagina web di distribuzione aperto dopo la pubblicazione** casella di controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Procedura: personalizzare la pagina Web predefinita ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
+ [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Procedura: Personalizzare la pagina Web predefinita ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

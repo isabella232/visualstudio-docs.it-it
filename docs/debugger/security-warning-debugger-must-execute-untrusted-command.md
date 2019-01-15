@@ -1,8 +1,6 @@
 ---
-title: 'Avviso di sicurezza: Il Debugger deve eseguire un comando non attendibile | Microsoft Docs'
-ms.custom: ''
+title: 'Avviso di sicurezza: Il debugger deve eseguire un comando non attendibile | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.sourceserver.securityalert
@@ -17,34 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e99c56efc5338feeded20621c7467bbf8274bc9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
-ms.translationtype: MT
+ms.openlocfilehash: 3e421521bd40ff4369433b0a0c3c323579e36125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855613"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avviso di sicurezza: il debugger deve eseguire un comando non attendibile
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avviso di sicurezza: Il debugger deve eseguire un comando non attendibile
 Questa finestra di dialogo di avviso viene visualizzata quando si usa il server di origine. Indica che il comando che deve essere eseguito dal debugger per ottenere il codice sorgente non è incluso nell'elenco dei comandi attendibili per il server di origine contenuto nel file srcsvr.ini. Se il comando è valido, è possibile aggiungerlo al file srcsvr.ini. In caso contrario, è opportuno non eseguirlo. Per altre informazioni, vedere [Specifica di file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="message-text"></a>Testo del messaggio  
- **Il debugger deve eseguire questo comando non attendibile per ottenere il codice sorgente dal server di origine.**  
+ **Il debugger deve eseguire il seguente comando non attendibile per ottenere il codice sorgente dal server di origine.**  
   
- **Se il debug dei file di simboli (\*con estensione pdb) è non da un'origine conosciuta e attendibile, questo comando potrebbe essere non valido o pericoloso da eseguire.**  
+ **Se il file del simbolo di debug (\*.pdb) non proviene da un'origine conosciuta e attendibile, questo comando potrebbe essere non valido o pericoloso da eseguire.**  
   
- **Si desidera eseguire questo comando?**  
+ **Eseguire il comando?**  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  Casella di testo  
  Comando del file con estensione pdb da eseguire.  
   
- Run  
+ Esegui  
  Consente l'esecuzione del comando.  
   
  Non eseguire  
  Arresta l'esecuzione del comando e il download del file dal server di origine.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Server di origine](/windows/desktop/Debug/source-server-and-source-indexing)

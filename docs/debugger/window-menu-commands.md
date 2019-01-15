@@ -1,8 +1,6 @@
 ---
-title: Comandi del Menu finestra | Documenti Microsoft
-ms.custom: ''
+title: Comandi del Menu finestra | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window menu commands
@@ -12,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1379bb236b1b29cd5747e67e73abcb1bc069acb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e90d6dc7074ad6d70be783326e7617d0fd7e337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895649"
 ---
 # <a name="window-menu-commands"></a>comandi del menu Finestra
-Il **finestra** menu sono disponibili comandi per gestire le finestre di Spy + +.  
+Il **finestra** menu fornisce comandi per gestire le finestre di Spy + +.  
   
- **CASCADE**  
- Riorganizza tutte le finestre sovrapposte.  
+ **Cascade**  
+ Ridispone tutte le finestre sovrapposte.  
   
  **Affianca orizzontalmente**  
  Ridisporre tutte le finestre in un modello di riquadro orizzontale.  
   
  **Affianca verticalmente**  
- Riorganizza tutte le finestre affiancate verticalmente.  
+ Ridispone tutte le finestre affiancate verticalmente.  
   
  **Disponi icone**  
- Riorganizza le icone di visualizzazione, se sono stati ridotti al minimo di windows.  
+ Riorganizza le icone di visualizzazione, se windows sono state ridotte a icona.  
   
  **Chiudi / Chiudi tutto**  
  Chiude una o tutte le finestre di Spy + +.  
@@ -41,4 +39,4 @@ Il **finestra** menu sono disponibili comandi per gestire le finestre di Spy + +
  Aggiorna la visualizzazione attualmente selezionata.  
   
  **Finestra**  
- Consente la selezione di una finestra specifica.
+ Consente la selezione di una specifica finestra.

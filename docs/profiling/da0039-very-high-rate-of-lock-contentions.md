@@ -1,8 +1,6 @@
 ---
 title: 'DA0039: Frequenza molto elevata di conflitti di blocco | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.39
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4548e190b7008c887ccf1c149a95f52bd8d7892d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d806b6f6bb375dd05cebc56faadc396e3d80516
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962571"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frequenza molto elevata di conflitti di blocco
 

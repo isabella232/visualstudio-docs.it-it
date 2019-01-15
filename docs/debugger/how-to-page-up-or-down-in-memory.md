@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: pagina su o freccia giù in memoria | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Pagina su o freccia giù in memoria | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902227"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Procedura: spostare verso l'alto o verso il basso una pagina di memoria
+# <a name="how-to-page-up-or-down-in-memory"></a>Procedura: Spostarsi verso l'alto o verso il basso in una pagina di memoria
 
-Quando si visualizza il contenuto della memoria in un **memoria** finestra o il **Disassembly** finestra, è possibile usare la barra di scorrimento verticale per spostarsi verso l'alto o verso il basso nello spazio di memoria.  
+Quando si visualizza il contenuto della memoria nella finestra **Memoria** o **Disassembly**, è possibile utilizzare la barra di scorrimento verticale per spostarsi verso l'alto o verso il basso nello spazio di memoria.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Per spostarsi verso l'alto o verso il basso di una pagina di memoria  
   
@@ -49,6 +47,6 @@ Quando si visualizza il contenuto della memoria in un **memoria** finestra o il 
 -   Fare clic sulla freccia all'estremità superiore o inferiore della barra di scorrimento verticale.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Memoria Windows](../debugger/memory-windows.md)   
- [Procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)   
+ [Finestre Memoria](../debugger/memory-windows.md)   
+ [Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)   
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

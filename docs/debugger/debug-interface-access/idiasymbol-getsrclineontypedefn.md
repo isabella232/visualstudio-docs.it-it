@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn | Documenti Microsoft
-ms.custom: ''
+title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3f0a185a04f1cbcfb6b8c53256d23e7beac22f50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911040"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Recupera il numero della riga e file di origine che indicano in cui è definito un tipo definito dall'utente specificato.  
+Recupera il numero di file e riga di origine che indicano in cui è definito un tipo definito dall'utente specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,7 +29,7 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Parametri  
  `ppResult`  
- [out] Oggetto `IDiaLineNumber` oggetto che contiene il numero di riga e file di origine in cui definito dall'utente.  
+ [out] Oggetto `IDiaLineNumber` oggetto che contiene il numero di riga e file di origine in cui definite dall'utente.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  

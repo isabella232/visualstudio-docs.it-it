@@ -2,7 +2,6 @@
 title: Configurazione degli avvisi in Visual Basic
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83ba1314f23ecc2d9166aac6fdc5d722a4fefe95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866569"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 
@@ -52,7 +51,7 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
 ## <a name="examples"></a>Esempi
  Questa tabella di esempi di argomenti della riga di comando descrive la funzione di ogni argomento.
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |--------------|-----------------|
 |`vbc /warnaserror`|Specifica di considerare tutti gli avvisi come errori.|
 |`vbc /warnaserror:42024`|Specifica che l'avviso 42024 va considerato come errore.|

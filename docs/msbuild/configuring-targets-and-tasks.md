@@ -1,8 +1,6 @@
 ---
 title: Configurazione di destinazioni e attività | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6075eea96d217b029f7febb8bcf80aef2a47eb2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ac8dd33ae42a4fd6b1a6cb778f0090e99342e35d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860387"
 ---
 # <a name="configure-targets-and-tasks"></a>Configurare destinazioni e attività
 È possibile configurare le destinazioni e le attività di MSBuild per l'esecuzione out-of-process con MSBuild, in modo che sia possibile specificare come destinazione contesti che differiscono da quello corrente in cui è in esecuzione l'applicazione. Ad esempio, è possibile specificare come destinazione un'applicazione .NET Framework 2.0 a 32 bit mentre nel computer di sviluppo è in esecuzione un sistema operativo .NET Framework 4.5 a 64 bit. Inoltre, è possibile specificare come destinazione computer in cui viene eseguito .NET Framework 4 o versione precedente. La combinazione tra 32 o 64 bit e la versione specifica di .NET Framework viene definita *contesto di destinazione*.  
@@ -28,7 +26,7 @@ ms.locfileid: "39151145"
 ## <a name="targets-and-tasks"></a>Destinazioni e attività  
  In MSBuild vengono eseguite alcune attività di compilazione out-of-process per specificare come destinazione un set più ampio di contesti.  Ad esempio, in un'istanza di MSBuild a 32 bit è possibile eseguire un'attività di compilazione in un processo a 64 bit destinato a un computer a 64 bit. Questa funzionalità è controllata dagli argomenti `UsingTask` e dai parametri `Task`. Questi argomenti e parametri vengono impostati dalle destinazioni installate da .NET Framework 4.5 e non è necessaria alcuna modifica per compilare applicazioni per i vari contesti di destinazione.  
   
- Se si desidera creare un contesto di destinazione personalizzato, è necessario impostare questi argomenti e parametri in modo appropriato. Esaminare il file di .NET Framework 4.5 *Microsoft.Common.targets* e il file *Microsoft.Common.Tasks* per gli esempi.  Per informazioni su come creare un'attività personalizzata in grado di funzionare in più contesti di destinazione o come modificare le attività esistenti, vedere [Procedura: Configurare destinazioni e attività](../msbuild/how-to-configure-targets-and-tasks.md).  
+ Se si desidera creare un contesto di destinazione personalizzato, è necessario impostare questi argomenti e parametri in modo appropriato. Esaminare il file di .NET Framework 4.5 *Microsoft.Common.targets* e il file *Microsoft.Common.Tasks* per gli esempi.  Per informazioni su come creare un'attività personalizzata tramite cui è possibile usare più contesti di destinazione o come modificare le attività esistenti, vedere [Procedura: Configurare destinazioni e attività](../msbuild/how-to-configure-targets-and-tasks.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919469"
 ---
 # <a name="troubleshoot-service-references"></a>Risolvere i problemi relativi ai riferimenti al servizio
 
@@ -31,7 +30,7 @@ Questo argomento elenca i problemi comuni che possono verificarsi quando si lavo
 
 ## <a name="error-returning-data-from-a-service"></a>Errore durante la restituzione dei dati da un servizio
 
-Quando si restituisce un `DataSet` o `DataTable` da un servizio, è possibile ricevere un'eccezione "è stata superata la quota delle dimensioni massime dei messaggi in ingresso". Per impostazione predefinita, il `MaxReceivedMessageSize` proprietà per alcune associazioni è impostata su un valore relativamente basso limita l'esposizione agli attacchi denial of service. È possibile aumentare questo valore per evitare l'eccezione. Per altre informazioni, vedere <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Quando si restituisce un `DataSet` o `DataTable` da un servizio, è possibile ricevere un'eccezione "è stata superata la quota delle dimensioni massime dei messaggi in ingresso". Per impostazione predefinita, il `MaxReceivedMessageSize` proprietà per alcune associazioni è impostata su un valore relativamente basso limita l'esposizione agli attacchi denial of service. È possibile aumentare questo valore per evitare l'eccezione. Per ulteriori informazioni, vedere <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Per correggere l'errore:
 
@@ -49,7 +48,7 @@ Per correggere l'errore:
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Errore di accesso a un servizio su un desktop remoto
 
-Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non ha le autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "la richiesta HTTP non è autorizzata con lo schema di autenticazione client 'Anonimo'. L'intestazione di autenticazione ricevuta dal server: 'NTLM'."
+Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non ha le autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "La richiesta HTTP non è autorizzata con lo schema di autenticazione client 'Anonimo'. L'intestazione di autenticazione ricevuta dal server: 'NTLM'."
 
 Per correggere l'errore:
 
@@ -96,13 +95,13 @@ Quando prova a visualizzare una rappresentazione XML dei dati in un [!INCLUDE[ss
 
 Per correggere questo errore, disabilitare il feed RSS:
 
-1.  In Internet Explorer sul **degli strumenti** menu, fare clic su **Opzioni Internet**.
+1.  In Internet Explorer scegliere **Opzioni Internet** dal menu **Strumenti**.
 
 2.  Nel **contenuti** nella scheda il **feed** fare clic su **impostazioni**.
 
 3.  Nel **impostazioni Feed** della finestra di dialogo deseleziona le **attivare la visualizzazione di lettura feed** casella di controllo e quindi fare clic su **OK**.
 
-4.  Fare clic su **OK** per chiudere la **Opzioni Internet** nella finestra di dialogo.
+4.  Scegliere **OK** per chiudere la finestra di dialogo **Opzioni Internet**.
 
 ## <a name="see-also"></a>Vedere anche
 

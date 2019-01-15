@@ -1,8 +1,6 @@
 ---
-title: "Procedura: usare il Visualizzatore dell'albero WPF | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Usare il Visualizzatore dell'albero WPF | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a478eae1e576ba2556d48f6527f6c9e2dab4ef6
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
-ms.translationtype: MT
+ms.openlocfilehash: 9b5f6d1c1bb1269b46089107a79785d380883f54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929969"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: Usare il visualizzatore dell'albero di WPF
 È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per altre informazioni sulle strutture ad albero visuali, vedere [strutture ad albero in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Per altre informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
@@ -32,7 +30,7 @@ ms.locfileid: "42902163"
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Per aprire il visualizzatore dell'albero di WPF  
   
-1.  In un suggerimento dati, **Watch** finestra **Auto** finestra, oppure **variabili locali** finestra accanto al nome di un oggetto WPF, fare clic sulla freccia accanto all'icona della lente di ingrandimento.  
+1.  In un suggerimento dati, in una finestra **Espressioni di controllo**, **Auto** o **Variabili locali** fare clic sulla freccia della lente d'ingrandimento accanto al nome di un oggetto WPF.  
   
      Verrà visualizzato un elenco di visualizzatori.  
   
@@ -40,15 +38,15 @@ ms.locfileid: "42902163"
   
 ### <a name="to-search-the-visual-tree"></a>Per eseguire ricerche nella struttura ad albero visuale  
   
--   Nel **struttura ad albero visuale** riquadro, digitare la stringa da cercare nel **ricerca** casella.  
+-   Nel riquadro **Struttura ad albero visuale**, digitare la stringa da cercare nella casella **Cerca**.  
   
      Il visualizzatore dell'albero di WPF troverà immediatamente il primo oggetto nella struttura ad albero visuale che corrisponde alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.  
   
-    -   Per passare alla corrispondenza successiva all'interno di struttura ad albero visuale, fare clic su **successivo**.  
+    -   Per passare alla corrispondenza successiva all'interno della struttura ad albero visuale, fare clic su **Successiva**.  
   
-    -   Per tornare alla corrispondenza precedente, fare clic su **Prev**.  
+    -   Per ritornare alla corrispondenza precedente, fare clic su **Prec**.  
   
-    -   Per cancellare i criteri di ricerca, fare clic su **cancellare**.  
+    -   Per cancellare i criteri di ricerca, fare clic su **Cancella**.  
   
 ### <a name="to-search-the-properties-list"></a>Per eseguire ricerche nell'elenco di proprietà  
   
@@ -56,13 +54,13 @@ ms.locfileid: "42902163"
   
      Il visualizzatore dell'albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.  
   
-    -   Per cancellare i criteri di ricerca, fare clic su **cancellare**.  
+    -   Per cancellare i criteri di ricerca, fare clic su **Cancella**.  
   
 ### <a name="to-close-the-visualizer"></a>Per chiudere il visualizzatore  
   
--   Scegliere il **Chiudi** icona nell'angolo superiore destro della finestra di dialogo.  
+-   Fare clic sull'icona **Chiudi** nell'angolo in alto a destra della finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
  [Strutture ad albero in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf)   
  [Panoramica sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview)

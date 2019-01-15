@@ -1,8 +1,6 @@
 ---
 title: Get_undecoratednameex | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb57e8b1e31be835163e67fa12e3cd6556892
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932181"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera o parte di un nome non decorato per C++ decorati nome (collegamento).  
@@ -27,7 +25,7 @@ Recupera o parte di un nome non decorato per C++ decorati nome (collegamento).
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_undecoratedNameEx(   
+HRESULT get_undecoratedNameEx(   
    DWORD undecorateOptions,  
    BSTR* pRetval  
 );  
@@ -52,7 +50,7 @@ HRESULT get_undecoratedNameEx(
 > [!NOTE]
 >  I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.  
   
-|Flag|Valore|Descrizione|  
+|Flag|Value|Description|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|  
@@ -72,7 +70,7 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_TYPE_ONLY|0x2000|L'input è solo un tipo di codifica; compone un dichiaratore astratto.|  
 |UNDNAME_HAVE_PARAMETERS|0x4000|I parametri di modello reali sono disponibili.|  
 |UNDNAME_NO_ECSU|0x8000|Elimina enum, classe o struct/unione.|  
-|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000.|Elimina controllo per i caratteri di identificatore valido.|  
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Elimina controllo per i caratteri di identificatore valido.|  
 |UNDNAME_NO_PTR64|0x20000|Non include ptr64 nell'output.|  
   
 ## <a name="see-also"></a>Vedere anche  

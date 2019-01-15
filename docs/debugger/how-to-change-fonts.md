@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: modificare tipi di carattere | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Modificare i tipi di carattere | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, SpyHelp
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3d372823d3dc3e8d874bfd50e361f23ec056da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 46e9b0584e48dee4a074e1826c795c62f9c612e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944087"
 ---
-# <a name="how-to-change-fonts"></a>Procedura: modificare i tipi di carattere
+# <a name="how-to-change-fonts"></a>Procedura: Modificare i caratteri
 È possibile modificare il tipo di carattere, lo stile del carattere e dimensioni del carattere per le finestre di Spy + +.  
   
 ### <a name="to-change-font-options"></a>Per modificare le opzioni del tipo di carattere  
@@ -33,6 +31,6 @@ ms.locfileid: "49833618"
    Selezionando **salvare imposta come predefinito** causerà tutte le finestre Spy + + future usare questo tipo di carattere.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md)   
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md)   
+ [Uso di Spy++](../debugger/using-spy-increment.md)   
+ [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)

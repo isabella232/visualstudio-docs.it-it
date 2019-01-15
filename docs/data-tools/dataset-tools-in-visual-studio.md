@@ -2,7 +2,6 @@
 title: Strumenti di set di dati
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -49,14 +48,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 8c48420ca03e2e6de8d240fd4f28fbe80bcbcd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863095"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Uso di set di dati in Visual Studio
+# <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 
 > [!NOTE]
 > I set di dati e le classi correlate sono tecnologie .NET legacy dal degli anni 2000 anticipata che consentono alle applicazioni a funzionare con i dati in memoria mentre le applicazioni vengono disconnessi dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e rendere permanenti le modifiche nel database. Anche se i set di dati hanno dimostrato di essere una tecnologia di grande successo, è consigliabile che le nuove applicazioni .NET usano Entity Framework. Entity Framework fornisce un modo più semplice per lavorare con dati tabulari come modelli a oggetti, e ha un'interfaccia di programmazione più semplice.

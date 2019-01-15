@@ -1,8 +1,6 @@
 ---
 title: Panoramica della Cache di ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d846ec60f6cf1722584c4ea93c56c29bc7007b89
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 323b179a81f9bdd66858c1ff2f96b8ce86b30b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865037"
 ---
-# <a name="clickonce-cache-overview"></a>Cenni preliminari sulla cache di ClickOnce
+# <a name="clickonce-cache-overview"></a>Panoramica della cache di ClickOnce
 Tutti i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni, se vengono installati in locale o ospitati online, vengono archiviate nel computer client in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]application *cache*. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache è una famiglia di directory nascoste sotto la directory delle impostazioni locali della cartella documenti e le impostazioni dell'utente corrente. Questa cache contiene tutti i file dell'applicazione, tra cui l'assembly, i file di configurazione, applicazione e le impostazioni utente e directory dei dati. La cache è inoltre responsabile per la migrazione di directory dei dati dell'applicazione alla versione più recente. Per altre informazioni sulla migrazione dei dati, vedere [l'accesso ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
  Fornendo un'unica posizione per l'archiviazione dell'applicazione, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] subentra il compito di gestire l'installazione fisica di un'applicazione da parte dell'utente. La cache anche consente di isolare le applicazioni, mantenendo gli assembly e file di dati per tutte le applicazioni e le relative versioni separano uno da altro. Ad esempio, quando si aggiorna un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un'applicazione, che vengono fornite versione e le relative risorse di dati con le proprie directory nella cache.  
@@ -36,4 +34,4 @@ Tutti i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le app
  Per impostazione predefinita, i computer client sono pari a 250 MB di spazio di archiviazione online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni. File di dati non vengono conteggiati per questo limite. Ingrandire o ridurre la quota in un computer client specifico modificando la chiave del Registro di sistema, un amministratore di sistema **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, che è un valore DWORD che esprime la dimensione della cache in kilobyte. Ad esempio, per ridurre le dimensioni della cache a 50 MB, si sarebbe impostare questo valore su 51200.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Accedere a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

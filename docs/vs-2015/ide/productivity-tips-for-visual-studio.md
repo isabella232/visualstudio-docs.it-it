@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
@@ -14,12 +13,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db89bda465d1a4fc4da1b3066858b270ce50c5bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928854"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +83,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Nelle caselle blu vengono forniti suggerimenti per risolvere gli errori nel codice.
 
-     Figura 1 Errori di Smart tag
+     Figura 1: Errori di Smart tag
 
      ![Suggerimenti Smart Tag errori](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
@@ -160,7 +159,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      È anche possibile gestire i file più facilmente creando un'altra istanza di **Esplora soluzioni** e spostandola in un altro monitor. Per creare un'altra istanza di **Esplora soluzioni**, aprire un menu di scelta rapida in **Esplora soluzioni** e quindi scegliere **Nuova visualizzazione Esplora soluzioni**.
 
--   **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore utilizzato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [Procedura: Modificare i tipi di carattere e colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [come: Modificare i tipi di carattere e colori nell'Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+-   **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore utilizzato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Predefiniti di tasti di scelta rapida per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [come: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [procedura dettagliata: Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)

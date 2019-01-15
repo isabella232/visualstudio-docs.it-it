@@ -1,8 +1,6 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di strumentazione | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 34ae8f845e53fdd80be055c8d0e592d6d01d75e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898099"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione
 I valori di una funzione nell'albero delle chiamate indicano il tempo per le istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore delle istanze della funzione con il tempo inclusivo trascorso totale di tutte le funzioni nell'esecuzione della profilatura.  
@@ -25,7 +23,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 ## <a name="general"></a>Generale  
  Le colonne generali identificano la funzione in una riga della visualizzazione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Nome funzione**|Nome della funzione.|  
 |**Indirizzo funzione**|Indirizzo della funzione.|  
@@ -43,7 +41,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso  
  I valori di tempo inclusivo trascorso indicano il tempo nello stack di chiamate delle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. Il tempo include il tempo dedicato alle funzioni figlio chiamate dalla funzione e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo inclusivo trascorso**|Tempo inclusivo trascorso totale di tutte le chiamate a questa funzione in questo contesto.|  
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo trascorso totale di questa funzione in questo contesto.|  
@@ -54,7 +52,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso  
  I valori di tempo esclusivo trascorso indicano il tempo in cui le istanze di una funzione chiamate dalla funzione padre nell'albero delle chiamate hanno eseguito il codice nel corpo della funzione, vale a dire quando la funzione si trovava in cima allo stack di chiamate. Il tempo include il tempo delle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output. Tuttavia, il tempo non include il tempo trascorso nelle funzioni figlio chiamate dalla funzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo esclusivo trascorso**|Tempo esclusivo trascorso totale di tutte le chiamate a questa funzione in questo contesto.|  
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questa funzione in questo contesto.|  
@@ -65,7 +63,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione  
  I valori di tempo inclusivo applicazione indicano il tempo in cui le istanze di una funzione chiamate dalla funzione padre nell'albero delle chiamate si trovavano nello stack di chiamate. È escluso il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma è incluso il tempo impiegato nelle funzioni figlio chiamate dalla funzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo inclusivo applicazione**|Tempo inclusivo applicazione totale di tutte le chiamate a questa funzione in questo contesto.|  
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo applicazione totale di questa funzione in questo contesto.|  
@@ -76,7 +74,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione  
  I valori di tempo esclusivo applicazione indicano il tempo in cui le istanze di una funzione chiamate dalla funzione padre nell'albero delle chiamate hanno eseguito direttamente il codice nel corpo della funzione, vale a dire quando la funzione si trovava in cima allo stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output. Inoltre, non include il tempo trascorso nelle funzioni figlio chiamate dalla funzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo esclusivo applicazione**|Tempo esclusivo applicazione totale di tutte le chiamate a questa funzione in questo contesto.|  
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo applicazione totale di questa funzione in questo contesto.|  
@@ -85,7 +83,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

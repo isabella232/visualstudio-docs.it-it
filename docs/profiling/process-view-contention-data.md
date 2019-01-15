@@ -1,8 +1,6 @@
 ---
 title: 'Visualizzazione Processo: dati sui conflitti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943889"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
 Nella visualizzazione Processo sono riportati i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.  
@@ -26,7 +24,7 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
   
  La tabella seguente illustra i valori delle colonne nella tabella della visualizzazione Processo.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Ora di inizio**|Numero di millisecondi o di cicli del processore dall'inizio della profilatura all'avvio del processo o del thread.|  
 |**Tempo blocco**|Tempo totale durante il quale è stata impedita l'esecuzione di funzioni del processo o del thread.|  
@@ -41,5 +39,5 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Processo](../profiling/process-view.md)

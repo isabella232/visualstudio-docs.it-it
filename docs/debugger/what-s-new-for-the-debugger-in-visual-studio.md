@@ -1,8 +1,6 @@
 ---
 title: Quali sono le novità relative al Debugger di Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
 ms.date: 01/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,33 +18,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fee8523f48dd94b0ebeacd87dd7d04f6fa172a91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898138"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Quali sono le novità relative al Debugger di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Il debugger include queste nuove funzionalità:
 
-- Novità della versione 15.5, il **Snapshot Debugger** crea uno snapshot delle App nell'ambiente di produzione quando viene eseguito codice che si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
+- Novità della versione 15.5: **Snapshot Debugger** crea uno snapshot delle app in produzione, quando viene eseguito il codice a cui si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
     La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
 
   * Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
   * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
 
-    Per altre informazioni, vedere [il Debug in tempo reale delle App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md).
+    Per altre informazioni, vedere [Debug live ASP.NET apps using the Snapshot Debugger](../debugger/debug-live-azure-applications.md) (Eseguire il debug di app ASP.NET attive usando Snapshot Debugger).
 
 - Novità della versione 15.5, solo in Visual Studio Enterprise **tornare indietro di IntelliTrace** crea automaticamente uno snapshot dell'applicazione in ogni punto di interruzione e il debugger di eventi di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
     È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-    ![Passaggio precedente e inoltrare i pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti Vai indietro e Avanti")
+    ![Pulsanti Passo indietro e Passo avanti](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Passo indietro e Passo avanti")
 
-    Per altre informazioni, vedere la [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md) pagina.
+    Per altre informazioni, vedere la pagina [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](../debugger/view-historical-application-state.md).
 
 - Il **Helper eccezioni** sostituisce le informazioni sulle eccezioni e viene visualizzato in una finestra di dialogo non modale in cui si è verificato l'errore. Il **Helper eccezioni** fornisce un accesso più rapido per eventuali eccezioni interne, un'analisi aggiuntiva dal debugger (se disponibile) e accesso immediato al **impostazioni eccezioni** per l'eccezione. L'Helper eccezioni possono anche essere trascinata in una vista mobile se sta bloccando un elemento che si desidera vedere.
 

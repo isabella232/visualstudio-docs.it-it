@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: eseguire Test e Debug di un visualizzatore | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Test e Debug di un visualizzatore | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41a65fb92615bf8b8e38cc13260187a6abc946f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: bea0f48432f67dc4109f5175c730a06aab4c0143
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927168"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: testare un visualizzatore ed eseguirne il debug
+# <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: Testare un visualizzatore ed eseguirne il debug
 Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il debug.  
   
- Una possibile soluzione per testare un visualizzatore consiste nell'installarlo in Visual Studio e nel chiamarlo da un finestra del debugger. (Vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).) Se si sceglie questa soluzione, sarà necessario utilizzare una seconda istanza di Visual Studio per la connessione e il debug del visualizzatore, che verrà eseguito nella prima istanza del debugger.  
+ Una possibile soluzione per testare un visualizzatore consiste nell'installarlo in Visual Studio e nel chiamarlo da un finestra del debugger. (Vedere [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).) Se si sceglie questa soluzione, sarà necessario utilizzare una seconda istanza di Visual Studio per la connessione e il debug del visualizzatore, che verrà eseguito nella prima istanza del debugger.  
   
- Una soluzione più semplice per il debug di un visualizzatore consiste nell'eseguire il visualizzatore da un driver di test. L'API del Visualizzatore semplificano la creazione di un driver di questo tipo, che viene chiamato il *host di sviluppo del visualizzatore*.  
+ Una soluzione più semplice per il debug di un visualizzatore consiste nell'eseguire il visualizzatore da un driver di test. Utilizzando le API del visualizzatore è possibile creare con facilità un driver di questo tipo, che viene definito *host di sviluppo del visualizzatore*.  
   
 ### <a name="to-create-a-visualizer-development-host"></a>Per creare un host di sviluppo del visualizzatore  
   
@@ -53,9 +51,9 @@ Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il deb
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Per un esempio più esaustivo, vedere [procedura dettagliata: scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Per un esempio più esaustivo, vedere [procedura dettagliata: Scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
+ [Procedura dettagliata: Scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
  [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

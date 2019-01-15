@@ -1,8 +1,6 @@
 ---
 title: Uso dell'attributo DebuggerTypeProxy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c754fdc3b7ae773e71a96936a1c17c6bc5ce
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
-ms.translationtype: MT
+ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889163"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Utilizzo dell'attributo DebuggerTypeProxy
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> specifica un proxy, o stand-in, per un tipo e modifica il modo in cui il tipo viene visualizzato nelle finestre del debugger. Quando si visualizza una variabile che dispone di un proxy, il proxy sostituisce il tipo originale nella **visualizzare**. Nella finestra delle variabili del debugger vengono visualizzati soltanto i membri pubblici del tipo proxy. I membri privati non vengono visualizzati.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> specifica un proxy, o stand-in, per un tipo e modifica il modo in cui il tipo viene visualizzato nelle finestre del debugger. Quando viene visualizzata una variabile che dispone di proxy, questo sostituisce il tipo originale nella **visualizzazione**. Nella finestra delle variabili del debugger vengono visualizzati soltanto i membri pubblici del tipo proxy. I membri privati non vengono visualizzati.
 
 Questo attributo può essere applicato a:
 
@@ -58,7 +56,7 @@ La sintassi per un tipo aperto è simile alla seguente:
 
 Se si utilizza un tipo generico come destinazione in `DebuggerTypeProxy`, è necessario adottare questa sintassi. Il meccanismo di `DebuggerTypeProxy` deduce automaticamente i parametri di tipo.
 
-Per altre informazioni sui tipi aperti e chiusi in c#, vedere la [specifiche del linguaggio c#](/dotnet/csharp/language-reference/language-specification), sezione 20.5.2 relativa nella e tipi chiusi.
+Per altre informazioni sui tipi aperti e chiusi in C# vedere la [ C# specifica del linguaggio](/dotnet/csharp/language-reference/language-specification), sezione 20.5.2 relativa nella e tipi chiusi.
 
 In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è possibile eseguire la stessa operazione in questo linguaggio, ma è necessario utilizzare una rappresentazione del nome del tipo aperto in formato stringa.
 

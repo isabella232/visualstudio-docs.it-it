@@ -1,8 +1,6 @@
 ---
 title: Modifica e continuazione (Visual C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 05/31/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,21 +17,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922994"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C++)
 È possibile usare Modifica e continuazione nei progetti Visual C++. Visualizzare [modifiche di codice supportato (C++)](../debugger/supported-code-changes-cpp.md) per informazioni sulle limitazioni di modifica e continuazione.
   
 Per altre informazioni sui miglioramenti apportati a Visual Studio 2015 Update 3, vedere [C++ Modifica e continuazione in Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).  
   
- Il [/Zo (ottimizzare il debug)](/cpp/build/reference/zo-enhance-optimized-debugging) opzione del compilatore che è stata introdotta in Visual Studio 2013 Update 3 aggiunge altre informazioni ai file con estensione pdb (symbol) per i file binari compilati senza il [/Od (disabilita (Debug)) ](https://msdn.microsoft.com/library/aafb762y.aspx) opzione.  
+ L'opzione del compilatore [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) introdotta in Visual Studio 2013 Update 3 aggiunge altre informazioni ai file PDB (symbol) per i file binari compilati senza l'opzione [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/Zo** Disabilita modifica e continuazione. Visualizzare [procedura: Debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** Disabilita modifica e continuazione. Vedere [Procedura: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Abilitare o disabilitare Modifica e continuazione  
  È consigliabile disabilitare la chiamata automatica di Modifica e continuazione se si apportano modifiche al codice che non si vuole applicare durante la sessione di debug corrente. È anche possibile riabilitare la chiamata automatica di Modifica e continuazione.
@@ -45,18 +43,18 @@ Per altre informazioni sui miglioramenti apportati a Visual Studio 2015 Update 3
 
 2. Scegliere **Opzioni** dal menu **Strumenti**.
   
-3. Nel **le opzioni** finestra di dialogo **Debug > Generale**.
+3. Nella finestra di dialogo **Opzioni** selezionare la cartella **Debug > Generale**.
 
 4. Per abilitare, selezionare **Abilita modifica e continuazione**. Per disabilitare, deselezionare la casella di controllo.
   
 5. Nel gruppo **Modifica e continuazione** selezionare o deselezionare la casella di controllo **Abilita Modifica e continuazione nativo** .  
   
-   La modifica di questa impostazione influisce su tutti i progetti attivi. Non è necessario ricompilare l'applicazione dopo la modifica di questa impostazione. Se si compila l'applicazione dalla riga di comando o da un makefile, ma si esegue il debug nell'ambiente di Visual Studio, è possibile comunque utilizzare Modifica e continuazione se si impostano i **/ZI** opzione.  
+   La modifica di questa impostazione influisce su tutti i progetti attivi. Non è necessario ricompilare l'applicazione dopo la modifica di questa impostazione. Quando si compila l'applicazione dalla riga di comando o da un makefile, ma si esegue il debug nell'ambiente Visual Studio, è comunque possibile usare Modifica e continuazione se si imposta l'opzione **/ZI**.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Come applicare modifiche al codice in modo esplicito  
  In Visual C++, Modifica e continuazione consente di applicare modifiche al codice in due modi: in modo implicito, quando si sceglie un comando di esecuzione, o in modo esplicito, quando si usa il comando **Applica modifiche del codice** .  
   
- Quando si applicano le modifiche al codice in modo esplicito, il programma rimane in modalità di interruzione: non viene eseguito.  
+ Quando si applicano modifiche al codice in modo esplicito, il programma rimane in modalità di interruzione e non viene eseguito.  
   
 -   Per applicare le modifiche al codice in modo esplicito, nel menu **Debug** scegliere **Applica modifiche del codice**.  
   

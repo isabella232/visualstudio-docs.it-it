@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b29e244213876b8b6a093d8fca2af02ca8319909
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955397"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Associare oggetti come origini dati in Visual Studio
 
@@ -136,7 +135,7 @@ Salvare i dati nel database passando i valori dall'oggetto ai metodi DBDirect di
 
 Visual Studio crea metodi DBDirect di che possono essere eseguiti direttamente sul database. Questi metodi non richiedono oggetti DataSet o DataTable.
 
-|Metodo DBDirect di TableAdapter|Descrizione|
+|Metodo DBDirect di TableAdapter|Description|
 | - |-----------------|
 |`TableAdapter.Insert`|Aggiunge nuovi record a un database, consentendo di passare i valori di singole colonne come parametri del metodo.|
 |`TableAdapter.Update`|Aggiorna i record in un database esistenti. Il metodo di aggiornamento richiede valori della colonna originale e nuovi come parametri del metodo. I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare record in questione.<br /><br /> Il `TableAdapter.Update` metodo viene usato anche per risolvere le modifiche in un set di dati nel database, eseguendo un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, o una matrice di <xref:System.Data.DataRow>s come parametri del metodo.|

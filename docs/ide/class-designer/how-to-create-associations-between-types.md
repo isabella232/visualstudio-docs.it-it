@@ -2,7 +2,6 @@
 title: 'Procedura: Creare associazioni tra tipi (Progettazione classi)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 77f957e112835c138a84accbdc7070f1217fc963
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916601"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Procedura: Creare associazioni tra tipi in Progettazione classi
 
@@ -58,4 +57,4 @@ In alternativa, seguire questi passaggi:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Passare dalla notazione membro alla notazione associazione](how-to-change-between-member-notation-and-association-notation.md)
+- [Procedura: Passare dalla notazione membro alla notazione associazione e viceversa](how-to-change-between-member-notation-and-association-notation.md)

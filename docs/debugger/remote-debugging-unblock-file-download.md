@@ -1,8 +1,6 @@
 ---
 title: Sbloccare il download di remote tools
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905345"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procedura: sbloccare il download di remote tools in Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procedura: Sbloccare il download di remote tools in Windows Server
 
 Le impostazioni di sicurezza predefinite in Internet Explorer in Windows Server possono rendere molto tempo per il download di componenti, ad esempio gli strumenti remoti.
 
@@ -34,7 +32,7 @@ Per scaricare gli strumenti di Windows Server, è consigliabile una delle operaz
 
 * Scaricare gli strumenti remoti direttamente nel Server di Windows e accettare le richieste per aggiungere siti attendibili. Siti Web moderni includono spesso molte risorse di terze parti, in modo che ciò può comportare numerose richieste. Inoltre, tutti i collegamenti di reindirizzamento potrebbe essere necessario essere aggiunti manualmente. È possibile scegliere di aggiungere alcuni dei siti attendibili prima di iniziare il download. Passare a **Opzioni Internet > sicurezza > siti attendibili > siti** e aggiungere i seguenti siti.
 
-  * VisualStudio.microsoft.com
+  * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
   * sulle: vuoto
 
@@ -43,10 +41,10 @@ Per scaricare gli strumenti di Windows Server, è consigliabile una delle operaz
   * microsoft.com
   * go.microsoft.com
   * download.microsoft.com
-  * My.VisualStudio.com
-  * Login.microsoftonline.com
+  * my.visualstudio.com
+  * login.microsoftonline.com
   * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
+  * secure.aadcdn.microsoftonline-p.com
   * msft.STS.microsoft.com
   * auth.GFX.ms
   * app.vssps.visualstudio.com

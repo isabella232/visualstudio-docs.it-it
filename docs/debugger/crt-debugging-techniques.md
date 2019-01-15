@@ -1,8 +1,6 @@
 ---
-title: Tecniche di debug CRT | Documenti Microsoft
-ms.custom: ''
+title: Tecniche di debug CRT | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889111"
 ---
 # <a name="crt-debugging-techniques"></a>Tecniche di debug CRT
 Se si effettua il debug di un programma che utilizza la libreria di runtime del linguaggio C, possono essere utili le seguenti tecniche di debug.  
@@ -36,7 +34,7 @@ Se si effettua il debug di un programma che utilizza la libreria di runtime del 
  Viene descritto il supporto per il debug fornito dalla libreria di runtime del linguaggio C e vengono fornite le istruzioni per accedere agli strumenti.  
   
  [Macro per la creazione di report](../debugger/macros-for-reporting.md)  
- Vengono fornite informazioni sul **RPTn** e **RPTFn** (definite in CRTDBG. H), che sostituiscono l'utilizzo di `printf` istruzioni per il debug.  
+ Vengono fornite informazioni sulle macro **_RPTn** e **_RPTFn**, definite in CRTDBG.H, che sostituiscono l'utilizzo di istruzioni `printf` per il debug.  
   
  [Versioni di debug di funzioni di allocazione heap](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Vengono descritte le speciali versioni di debug delle funzioni di allocazione heap, ad esempio: i vantaggi delle chiamate in modo esplicito, come CRT mappa le chiamate, come evitare la conversione, registrazione dei tipi separati di allocazioni nei blocchi client e i risultati della mancata definizione di _DEBUG.  

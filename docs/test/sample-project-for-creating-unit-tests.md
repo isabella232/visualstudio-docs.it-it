@@ -3,7 +3,6 @@ title: Esempio di codice per la creazione di unit test
 description: Questo articolo illustra un codice di esempio che può essere testato con gli unit test in Visual Studio.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b98e8fc926917d4da8bc805110f464ead24d405c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898947"
 ---
 # <a name="sample-code-for-testing"></a>Codice di esempio per i test
 

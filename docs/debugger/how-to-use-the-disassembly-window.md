@@ -2,7 +2,6 @@
 title: Visualizzare il codice Disassembly del debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922234"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly del debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -57,7 +56,7 @@ Il codice assembly si basa principalmente sui registri del processore o, per il 
 
 Per visualizzare le istruzioni di codice macchina nel loro formato numerico non elaborato, anziché come linguaggio assembly, usare il **memoria** finestra o selezionare **byte del codice** dal menu di scelta rapida di **Disassembly**  finestra.
 
-## <a name="use-the-disassembly-window"></a>Utilizzare la finestra Disassembly
+## <a name="use-the-disassembly-window"></a>Usare la finestra Disassembly
 
 Per abilitare il **Disassembly** finestra, sotto **Tools** > **opzioni** (o **strumenti**  >  **Le opzioni**) > **Debugging**, selezionare **Abilita debug a livello di indirizzo**.
 
@@ -74,4 +73,4 @@ Una freccia gialla nel margine sinistro contrassegna il punto di esecuzione corr
 
 * [Procedura: Spostare verso l'alto o verso il basso una pagina di memoria](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
-* [Procedura: Utilizzare la finestra registri](../debugger/how-to-use-the-registers-window.md)
+* [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

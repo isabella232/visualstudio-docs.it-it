@@ -1,8 +1,6 @@
 ---
-title: Tasti di scelta rapida (HTML e JavaScript) | Documenti Microsoft
-ms.custom: ''
+title: Tasti di scelta rapida (HTML e JavaScript) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949469"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
   
  Tasti di scelta rapida in Visual Studio per il debug di App UWP scritte in HTML e JavaScript.  
   
 ## <a name="general-shortcuts"></a>Tasti di scelta rapida generali  
- Questi tasti di scelta rapida funzionano per tutti gli strumenti per App UWP scritte in HTML e JavaScript.  
+ Questi tasti di scelta rapida funzionano per tutti gli strumenti per le app UWP scritte in HTML e JavaScript.  
   
 |Operazione|Collegamento|  
 |------------|--------------|  
@@ -51,12 +49,12 @@ ms.locfileid: "31475496"
 |Operazione|Collegamento|  
 |------------|--------------|  
 |Seleziona elemento|Ctrl+B|  
-|Visualizzare / nascondere le caselle evidenziate della pagina Web quando si utilizza **Seleziona elemento**|CTRL+MAIUSC+I|  
-|Eseguire il commit delle modifiche mediante **modifica HTML**|CTRL+INVIO|  
-|Annullare le modifiche utilizzando **modifica HTML**|ESC|  
+|Visualizzare/nascondere le caselle evidenziate della pagina Web quando si usa **Seleziona elemento**|CTRL+MAIUSC+I|  
+|Eseguire il commit delle modifiche mediante **Modifica HTML**|CTRL+INVIO|  
+|Annullare le modifiche mediante **Modifica HTML**|ESC|  
 |Aumentare il valore CSS selezionato di 1|Freccia SU|  
 |Ridurre il valore CSS selezionato di 1|Freccia GIÙ|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Guida introduttiva: Debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

@@ -1,8 +1,6 @@
 ---
 title: Riferimenti alla riga di comando di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4a692f203a0a120c2ab0da5c745aee8803badc
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 56e37053e92ca009ecdd5ba1f72ce02f1932ee2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935034"
 ---
 # <a name="msbuild-command-line-reference"></a>Riferimenti alla riga di comando di MSBuild
 Quando si usa *MSBuild.exe* per compilare un file di progetto o di soluzione, si possono includere varie opzioni per specificare diversi aspetti del processo.  
@@ -39,13 +37,13 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="arguments"></a>Argomenti  
   
-|Argomento|Descrizione|  
+|Argomento|Description|  
 |--------------|-----------------|  
 |`ProjectFile`|Compila le destinazioni nel file di progetto specificato. Se non si specifica un file di progetto, in MSBuild viene eseguita una ricerca nella directory di lavoro corrente di un nome file la cui estensione termina in *proj* e viene usato il file in questione. È inoltre possibile specificare un file di soluzione di Visual Studio per questo argomento.|  
   
 ## <a name="switches"></a>Opzioni  
   
-|Opzione|Forma breve|Descrizione|  
+|Opzione|Forma breve|Description|  
 |------------|----------------|-----------------|  
 |-help|/? o -h|Visualizza le informazioni sull'utilizzo. Il comando seguente è un esempio:<br /><br /> `msbuild.exe -?`|  
 |-detailedsummary|-ds|Mostra informazioni dettagliate alla fine del log di compilazione sulle configurazioni che sono state compilate e su come sono state pianificate nei nodi.|  
@@ -58,7 +56,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-property:`name`=`value`|/p:`name`=`value`|Imposta o esegue l'override delle proprietà specificate a livello di progetto, dove `name` è il nome della proprietà e `value` è il valore della proprietà. Specificare separatamente ogni proprietà o usare un punto e virgola o una virgola per separare più proprietà, come illustrato nel seguente esempio:<br /><br /> `-property:WarningLevel=2;OutDir=bin\Debug`|  
 |-restore|-r|Esegue la destinazione `Restore` prima di compilare le destinazioni effettive.|
 |-target:`targets`|-t:`targets`|Compila le destinazioni specificate nel progetto. Specificare separatamente ogni destinazione o usare un punto e virgola o una virgola per separare più destinazioni, come illustrato nel seguente esempio:<br /><br /> `-target:Resources;Compile`<br /><br /> Se si specificano tutte le destinazioni usando questa opzione, queste vengono eseguite al posto delle destinazioni nell'attributo `DefaultTargets` nel file di progetto. Per altre informazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md) e [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Una destinazione è un gruppo di attività. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).|  
-|-toolsversion:`version`|-tv:`version`|Specifica la versione del set di strumenti da usare per compilare il progetto, come illustrato nel seguente esempio: `-toolsversion:3.5`<br /><br /> Usando questa opzione è possibile compilare un progetto e specificare una versione diversa dalla versione specificata in [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md). Per altre informazioni, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Per MSBuild 4.5, si possono specificare i seguenti valori per `version`: 2.0, 3.5 e 4.0. Se si specifica 4.0, la proprietà di compilazione `VisualStudioVersion` specifica i subset di strumenti da usare. Per altre informazioni, vedere la sezione relativa ai subset di strumenti in [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Un set di strumenti è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori, come *csc.exe* e *vbc.exe*. Per altre informazioni sui set di strumenti, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md) e [Panoramica del multitargeting di MSBuild](../msbuild/msbuild-multitargeting-overview.md). **Nota:** la versione del set di strumenti non è la stessa del framework di destinazione, vale a dire la versione di .NET Framework con cui è prevista l'esecuzione di un progetto. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).|  
+|-toolsversion:`version`|-tv:`version`|Specifica la versione del set di strumenti da usare per compilare il progetto, come illustrato nel seguente esempio: `-toolsversion:3.5`<br /><br /> Usando questa opzione è possibile compilare un progetto e specificare una versione diversa dalla versione specificata in [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md). Per altre informazioni, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Per MSBuild 4.5, si possono specificare i seguenti valori per `version`: 2.0, 3.5 e 4.0. Se si specifica 4.0, la proprietà di compilazione `VisualStudioVersion` specifica i subset di strumenti da usare. Per altre informazioni, vedere la sezione relativa ai subset di strumenti in [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Un set di strumenti è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori, come *csc.exe* e *vbc.exe*. Per altre informazioni sui set di strumenti, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md) e [Panoramica del multitargeting di MSBuild](../msbuild/msbuild-multitargeting-overview.md). **Nota:**  La versione del set di strumenti non è la stessa del framework di destinazione, vale a dire la versione di .NET Framework con cui è prevista l'esecuzione di un progetto. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).|  
 |-validate:[`schema`]|-val[`schema`]|Convalida il file di progetto e, se la convalida ha esito positivo, compila il progetto.<br /><br /> Se non si specifica `schema`, il progetto viene convalidato in base allo schema predefinito.<br /><br /> Se si specifica `schema`, il progetto viene convalidato in base allo schema specificato.<br /><br /> L'impostazione seguente è un esempio: `-validate:MyExtendedBuildSchema.xsd`|  
 |-verbosity:`level`|-v:`level`|Specifica la quantità di informazioni da visualizzare nel log di compilazione. Ogni logger visualizza gli eventi in base al livello di dettaglio impostato per il logger.<br /><br /> È possibile specificare i seguenti livelli di dettaglio: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` e `diag[nostic]`.<br /><br /> L'impostazione seguente è un esempio: `-verbosity:quiet`|  
 |-version|-ver|Visualizza solo le informazioni sulla versione. Il progetto non viene compilato.|  
@@ -66,7 +64,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>Opzioni per logger  
   
-|Opzione|Forma breve|Descrizione|  
+|Opzione|Forma breve|Description|  
 |------------|----------------|-----------------|  
 |-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passa i parametri specificati al logger di console tramite cui le informazioni sulla compilazione vengono visualizzate nella finestra della console. È possibile specificare i parametri riportati di seguito:<br /><br /> -   **PerformanceSummary**. Visualizza il tempo necessario per attività, destinazioni e progetti.<br />-   **Summary**. Mostra il riepilogo di avvisi ed errori alla fine.<br />-   **NoSummary**. Non mostra il riepilogo di avvisi ed errori alla fine.<br />-   **ErrorsOnly**. Mostra solo gli errori.<br />-   **WarningsOnly**. Mostra solo gli avvisi.<br />-   **NoItemAndPropertyList**. Non mostra l'elenco degli elementi e delle proprietà che verrebbero visualizzati all'inizio di ogni compilazione del progetto se il livello di dettaglio fosse stato impostato su `diagnostic`.<br />-   **ShowCommandLine**. Mostra i messaggi `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Mostra il timestamp come prefisso di ogni messaggio.<br />-   **ShowEventId**. Mostra l'ID evento per ogni evento avviato, completato e per ogni messaggio.<br />-   **ForceNoAlign**. Non allinea il testo alla dimensione del buffer della console.<br />-   **DisableConsoleColor**. Usa i colori predefiniti della console per tutti i messaggi di registrazione.<br />-   **DisableMPLogging**. Disabilita lo stile di registrazione del multiprocessore dell'output quando è in esecuzione in modalità non multiprocessore.<br />-   **EnableMPLogging**. Abilita lo stile di registrazione del multiprocessore anche quando è in esecuzione in modalità non multiprocessore. Questo stile di registrazione è attivato per impostazione predefinita.<br />-   **Verbosity**. Esegue l'override dell'impostazione **-verbosity** per questo logger.<br /><br /> Usare un punto e virgola o una virgola per separare più parametri, come illustrato nell'esempio seguente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|  
 |-distributedFileLogger|-dfl|Registra l'output di compilazione di ogni nodo MSBuild nel relativo file. Il percorso iniziale per questi file è la directory attuale. Per impostazione predefinita, i file vengono denominati *MSBuild\<NodeId>.log*. È possibile usare l'opzione **-fileLoggerParameters** per specificare la posizione dei file e altri parametri per fileLogger.<br /><br /> Se un file di log viene denominato usando l'opzione **-fileLoggerParameters**, nel logger distribuito questo nome verrà usato come modello e l'ID nodo verrà aggiunto a questo nome durante la creazione di un file di log per ogni nodo.|  

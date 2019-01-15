@@ -1,8 +1,6 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b54c52625578b6ba1f7859654804fa1caaad32
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: d83c750cdf08d79fc4402f08cf8a9e3a5ea218f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911468"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; elemento (applicazione ClickOnce)
 Identifica l'applicazione distribuita un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.  
@@ -41,10 +39,10 @@ Identifica l'applicazione distribuita un [!INCLUDE[ndptecclick](../deployment/in
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `assemblyIdentity` elemento è obbligatorio. Non contiene alcun elemento figlio e ha gli attributi seguenti.  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Identifica il nome dell'applicazione.<br /><br /> Se `Name` contiene caratteri speciali, ad esempio le virgolette singole o doppie, l'applicazione potrebbe non riuscire per l'attivazione.|  
 |`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|  
@@ -54,7 +52,7 @@ Identifica l'applicazione distribuita un [!INCLUDE[ndptecclick](../deployment/in
   
 ## <a name="examples"></a>Esempi  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  L'esempio di codice seguente illustra un' `assemblyIdentity` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
   
 ### <a name="code"></a>Codice  

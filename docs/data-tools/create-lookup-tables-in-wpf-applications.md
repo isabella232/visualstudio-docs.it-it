@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947660"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
@@ -37,9 +36,9 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
     -   Set di dati o Entity Data Model.
 
-    -   WCF Data Service, servizio WCF o un servizio web. Per altre informazioni, vedere [procedura: connettersi ai dati in un servizio](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   WCF Data Service, servizio WCF o un servizio web. Per altre informazioni, vedere [Procedura: Connettersi ai dati di un servizio](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Oggetti Per altre informazioni, vedere [associazione agli oggetti in Visual Studio](bind-objects-in-visual-studio.md).
+    -   Oggetti. Per altre informazioni, vedere [associazione agli oggetti in Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Prima di creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come un'origine dati per il progetto.
@@ -48,7 +47,7 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
      Per altre informazioni sulle destinazioni di rilascio validi, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Scegliere Mostra origini dati **dal menu Dati** per aprire la finestra Origini dati **.
+3.  Scegliere **Mostra origini dati** dal menu **Dati** per aprire la finestra **Origini dati**.
 
 4.  Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre o l'oggetto e la tabella figlio correlata o l'oggetto.
 
@@ -94,4 +93,4 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visualizzare dati correlati in applicazioni WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Procedura dettagliata: Visualizzazione di dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md)

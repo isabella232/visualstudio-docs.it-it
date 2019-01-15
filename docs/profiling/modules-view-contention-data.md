@@ -1,8 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati sui conflitti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926399"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
 Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.  
@@ -26,7 +24,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
   
  La tabella seguente descrive i valori delle colonne nella visualizzazione Moduli dei dati sui conflitti.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|- Per una funzione, l'ora in cui è stata impedita l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.<br />- Per un modulo, la somma del tempo di blocco esclusivo delle funzioni nel modulo.<br />- Per una riga o un'istruzione, il periodo durante il quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
 |**% tempo blocco esclusivo**|- Per una funzione o un modulo, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per la funzione o il modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
@@ -45,9 +43,9 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Moduli](../profiling/modules-view.md)   
  [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)   
- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
+ [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)

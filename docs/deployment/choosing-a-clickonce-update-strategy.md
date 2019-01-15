@@ -1,8 +1,6 @@
 ---
 title: Scelta di una strategia di aggiornamento ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4da8dddc667b032c6c284dc62197ff05a1a328f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2e09bdaff6d3b5a584091f05eae7d21b0aba256b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946659"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Scegliere una strategia di aggiornamento ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può fornire il supporto per gli aggiornamenti automatici delle applicazioni. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione legge periodicamente il file manifesto di distribuzione per vedere se sono disponibili aggiornamenti per l'applicazione. In caso affermativo, la nuova versione dell'applicazione viene scaricata ed eseguita. Per maggiore efficienza, vengono scaricati solo i file che risultano modificati.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può fornire il supporto per gli aggiornamenti automatici delle applicazioni. Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] legge periodicamente il file manifesto di distribuzione per verificare l'eventuale disponibilità di aggiornamenti. In caso affermativo, la nuova versione dell'applicazione viene scaricata ed eseguita. Per maggiore efficienza, vengono scaricati solo i file che risultano modificati.  
   
  Quando si progetta un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario determinare la strategia da adottare per controllare la disponibilità di aggiornamenti. È possibile utilizzare tre strategie di base: l'impostazione del controllo della disponibilità di aggiornamenti all'avvio dell'applicazione, l'impostazione del controllo dopo l'avvio dell'applicazione (esecuzione in un thread in background) o la creazione di una specifica interfaccia utente per gli aggiornamenti.  
   
@@ -36,16 +34,16 @@ ms.locfileid: "39081797"
 >  Per gli aggiornamenti dell'applicazione è necessario disporre della connettività di rete. In assenza di una connessione di rete, l'applicazione verrà eseguita senza il controllo della disponibilità di aggiornamenti, indipendentemente dalla strategia di aggiornamento prescelta.  
   
 > [!NOTE]
->  In .NET Framework 2.0 e .NET Framework 3.0, ogni volta che i controlli delle applicazioni per gli aggiornamenti, prima o dopo l'avvio o tramite il \<xref:System.Deployment.Application > API, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. Il `deploymentProvider` elemento corrispondente in Visual Studio per il **percorso di aggiornamento** campo il **aggiornamenti** della finestra di dialogo il **pubblica** scheda. Tale regola è relaxed in .NET Framework 3.5. Per altre informazioni, vedere [distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
+>  In .NET Framework 2.0 e .NET Framework 3.0, ogni volta che i controlli delle applicazioni per gli aggiornamenti, prima o dopo l'avvio o tramite il \<xref:System.Deployment.Application > API, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L'elemento `deploymentProvider` corrisponde in Visual Studio al campo **Posizione aggiornamento** nella finestra di dialogo **Aggiornamenti** della scheda **Pubblica**. Tale regola è relaxed in .NET Framework 3.5. Per altre informazioni, vedere [distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="check-for-updates-after-application-startup"></a>Verificare la presenza di aggiornamenti dopo l'avvio dell'applicazione  
  Se si utilizza questa strategia, l'applicazione tenterà di individuare e leggere il file manifesto di distribuzione in background, mentre è in esecuzione. Se è disponibile un aggiornamento, la volta successiva che l'utente eseguirà l'applicazione verrà chiesto di scaricarlo e installarlo.  
   
  Questa strategia risulta più adatta a connessioni di rete con larghezza di banda limitata o ad applicazioni di maggiori dimensioni che possono richiedere lunghi tempi di download.  
   
- Per attivare questa strategia di aggiornamento, fare clic su **dopo l'avvio dell'applicazione** nel **scegliere quando controllare la disponibilità di aggiornamenti** sezione la **gli aggiornamenti dell'applicazione** finestra di dialogo. Quindi specificare un intervallo di aggiornamento nella sezione **specificare la frequenza con cui controllare l'applicazione di aggiornamenti**.  
+ Per adottare questa strategia di aggiornamento, fare clic su **Dopo l'avvio dell'applicazione** nella sezione **Scegliere quando controllare la disponibilità di aggiornamenti** della finestra di dialogo **Aggiornamenti applicazione**. Specificare quindi un intervallo di aggiornamento nella sezione **Specificare con quale frequenza controllare la disponibilità di aggiornamenti**.  
   
- Si tratta equivale a modificare la **Update** elemento nella distribuzione manifesto come indicato di seguito:  
+ Questa operazione equivale a modificare l'elemento **Update** nel manifesto di distribuzione, come indicato di seguito:  
   
 ```xml  
 <!-- When to check for updates -->  
@@ -61,9 +59,9 @@ ms.locfileid: "39081797"
   
  Questa strategia risulta più adatta a connessioni di rete con larghezza di banda più ampia. Il ritardo nell'avvio dell'applicazione potrebbe essere eccessivamente lungo nel caso di connessioni con larghezza di banda limitata.  
   
- Per attivare questa strategia di aggiornamento, fare clic su **prima dell'avvio dell'applicazione** nel **scegliere quando controllare la disponibilità di aggiornamenti** sezione la **gli aggiornamenti dell'applicazione** finestra di dialogo.  
+ Per adottare questa strategia di aggiornamento, fare clic su **Prima dell'avvio dell'applicazione** nella sezione **Scegliere quando controllare la disponibilità di aggiornamenti** della finestra di dialogo **Aggiornamenti applicazione**.  
   
- Si tratta equivale a modificare la **Update** elemento nella distribuzione manifesto come indicato di seguito:  
+ Questa operazione equivale a modificare l'elemento **Update** nel manifesto di distribuzione, come indicato di seguito:  
   
 ```xml  
 <!-- When to check for updates -->  
@@ -78,11 +76,11 @@ ms.locfileid: "39081797"
  In alcuni casi può essere necessario richiedere agli utenti di eseguire una versione aggiornata dell'applicazione. È ad esempio possibile che sia stata apportata una modifica a una risorsa esterna, quale un servizio Web, che impedisce il corretto funzionamento dell'applicazione. In tal caso, può essere opportuno contrassegnare l'aggiornamento come obbligatorio e impedire che gli utenti eseguano la versione precedente.  
   
 > [!NOTE]
->  Anche se è possibile richiedere aggiornamenti con le altre strategie di aggiornamento, controllare **prima dell'avvio dell'applicazione** è l'unico modo per garantire che non venga eseguita una versione precedente. Se all'avvio viene rilevato l'aggiornamento obbligatorio, è necessario accettare l'aggiornamento o chiudere l'applicazione.  
+>  Anche se è possibile impostare gli aggiornamenti come obbligatori mediante altre strategie, la selezione di **Prima dell'avvio dell'applicazione** è l'unico sistema per garantire che non venga eseguita una versione precedente. Se all'avvio viene rilevato l'aggiornamento obbligatorio, è necessario accettare l'aggiornamento o chiudere l'applicazione.  
   
- Per contrassegnare un aggiornamento come obbligatorio, fare clic su **specificare una versione minima richiesta per questa applicazione** nel **aggiornamenti dell'applicazione** dialogo casella e quindi specificare la versione di pubblicazione (**Major**, **Secondarie**, **compilare**, **revisione**), che consente di specificare il numero di versione minimo dell'applicazione che può essere installato.  
+ Per contrassegnare un aggiornamento come obbligatorio, fare clic su **Specificare la versione minima richiesta per l'applicazione** nella finestra di dialogo **Aggiornamenti applicazione**, quindi specificare la versione della pubblicazione (**Principale**, **Secondario**, **Compila**, **Revisione**) che indica il numero di versione più basso dell'applicazione che è possibile installare.  
   
- Questa è la stessa impostazione di **minimumRequiredVersion** attributo del **distribuzione** elemento nel manifesto di distribuzione; ad esempio:  
+ Questa operazione equivale a impostare l'attributo **minimumRequiredVersion** dell'elemento **Deployment** nel manifesto di distribuzione. Di seguito è riportato un esempio:  
   
 ```xml  
 <deployment install="true" minimumRequiredVersion="1.0.0.0">  
@@ -91,14 +89,14 @@ ms.locfileid: "39081797"
 ## <a name="specify-update-intervals"></a>Specificare gli intervalli di aggiornamento  
  È possibile specificare anche la frequenza con cui dovrà essere effettuato il controllo della disponibilità di aggiornamenti, A tale scopo, specificare che il controllo della disponibilità degli aggiornamenti deve essere eseguito dall'applicazione dopo l'avvio come descritto in "Controllo della disponibilità di aggiornamenti dopo l'avvio dell'applicazione", precedentemente in questo argomento.  
   
- Per specificare l'intervallo di aggiornamento, impostare il **specificare la frequenza con cui controllare l'applicazione di aggiornamenti** delle proprietà nel **gli aggiornamenti dell'applicazione** nella finestra di dialogo.  
+ Per definire l'intervallo di aggiornamento, impostare le proprietà **Specificare con quale frequenza controllare la disponibilità di aggiornamenti** nella finestra di dialogo **Aggiornamenti applicazione**.  
   
- Questa è la stessa impostazione di **maximumAge** e **unit** gli attributi del **Update** elemento nel manifesto di distribuzione.  
+ Questa operazione equivale a impostare gli attributi **maximumAge** e **unit** dell'elemento **Update** nel manifesto di distribuzione.  
   
  Ad esempio è possibile ripetere l'operazione ogni volta che viene eseguita l'applicazione, una volta alla settimana o una volta al mese. Se nel momento specificato non è disponibile una connessione di rete, la disponibilità di aggiornamenti verrà controllata alla successiva esecuzione dell'applicazione.  
   
 ## <a name="provide-a-user-interface-for-updates"></a>Fornire un'interfaccia utente per gli aggiornamenti  
- Quando utilizza questa strategia, lo sviluppatore dell'applicazione fornisce un'interfaccia che consente all'utente di scegliere quando o con quale frequenza dovrà essere effettuato il controllo della disponibilità di aggiornamenti. È ad esempio possibile rendere disponibile un comando "Controlla aggiornamenti adesso" o una finestra di dialogo "Impostazioni di aggiornamento" con opzioni per la selezione di diversi intervalli di aggiornamento. Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione API forniscono un framework per il proprio aggiornamento dell'interfaccia utente di programmazione. Per altre informazioni, vedere lo spazio dei nomi <xref:System.Deployment.Application>.  
+ Quando utilizza questa strategia, lo sviluppatore dell'applicazione fornisce un'interfaccia che consente all'utente di scegliere quando o con quale frequenza dovrà essere effettuato il controllo della disponibilità di aggiornamenti. È ad esempio possibile rendere disponibile un comando "Controlla aggiornamenti adesso" o una finestra di dialogo "Impostazioni di aggiornamento" con opzioni per la selezione di diversi intervalli di aggiornamento. Le API di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] forniscono un framework per la programmazione di un'interfaccia utente personalizzata per gli aggiornamenti. Per altre informazioni, vedere lo spazio dei nomi <xref:System.Deployment.Application>.  
   
  Se per controllare la disponibilità di aggiornamenti l'applicazione utilizza le API distribuzione, si consiglia di bloccare questo controllo come descritto nella sezione successiva "Blocco del controllo della disponibilità di aggiornamenti".  
   
@@ -109,7 +107,7 @@ ms.locfileid: "39081797"
   
  Si consiglia di bloccare anche questo controllo se l'applicazione usa l'API di distribuzione per l'esecuzione di aggiornamenti specifici. vedere "Forniscono un'interfaccia utente per gli aggiornamenti" più indietro in questo argomento.  
   
- Per bloccare il controllo degli aggiornamenti, deselezionare il **controllare la disponibilità di aggiornamenti** casella di controllo nella finestra di dialogo Aggiornamenti applicazione.  
+ Per bloccare il controllo della disponibilità di aggiornamenti, deselezionare la casella di controllo **Controlla aggiornamenti dell'applicazione** nella finestra di dialogo Aggiornamenti applicazione.  
   
  Per bloccare questo controllo, è anche possibile rimuovere il tag `<Subscription>` dal manifesto di distribuzione.  
   
@@ -120,8 +118,8 @@ ms.locfileid: "39081797"
   
 ## <a name="see-also"></a>Vedere anche  
  \<XRef:System.Deployment.Application >   
- [Distribuzione e protezione ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Come vengono eseguiti gli aggiornamenti dell'applicazione ClickOnce](../deployment/how-clickonce-performs-application-updates.md)   
- [Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [Come vengono eseguiti gli aggiornamenti di applicazioni con ClickOnce](../deployment/how-clickonce-performs-application-updates.md)   
+ [Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

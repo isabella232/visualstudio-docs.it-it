@@ -1,8 +1,6 @@
 ---
 title: Eseguire strumenti di profilatura con o senza debugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941414"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -55,7 +53,7 @@ La sessione di diagnostica termina quando si interrompe il debug.
 
 ### <a name="the-events-tab"></a>Scheda Eventi
 
-Durante una sessione di debug, la scheda **Eventi** della finestra **Strumenti di diagnostica** elenca gli eventi di diagnostica che si verificano. I prefissi di categoria come ad esempio **Punto di interruzione**, **File** e altri, consentono di esaminare rapidamente l'elenco per individuare una categoria, o ignorare le categorie non si è interessati.  
+Durante una sessione di debug, la scheda **Eventi** della finestra **Strumenti di diagnostica** elenca gli eventi di diagnostica che si verificano. I prefissi di categoria, come ad esempio **Punto di interruzione**, **File** e altri, consentono di esaminare rapidamente l'elenco per individuare una categoria o ignorare le categorie non si è interessati.  
   
 Usare l'elenco a discesa **Filtra** per filtrare gli eventi da visualizzare, selezionando o deselezionando categorie di eventi specifiche. 
 
@@ -116,17 +114,17 @@ Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli st
 ## <a name="see-also"></a>Vedere anche
 
 Di seguito vengono elencati post di blog e articoli MSDN a cura del team di sviluppo di diagnostica:  
- [MSDN Magazine: Analyze Performance While Debugging in Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx) (Analizzare le prestazioni durante il debug in Visual Studio 2015)
+ [MSDN Magazine: Analizza le prestazioni durante il debug in Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [MSDN Magazine: Use IntelliTrace to Diagnose Issues Faster](https://msdn.microsoft.com/magazine/dn973014.aspx) (Usare IntelliTrace per diagnosticare i problemi più velocemente)
+ [MSDN Magazine: Usa IntelliTrace per una diagnosi più rapida dei problemi](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
  [Post di blog: Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (Diagnosi delle perdite di memoria del gestore eventi con lo strumento Utilizzo memoria in Visual Studio 2015)
   
- [Video: Debug cronologico con IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+ [Video: Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716) (Debug cronologico con IntelliTrace in Microsoft Visual Studio Ultimate 2015)
   
- [Video: Problemi di prestazioni di debug in Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
+ [Video: Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731) (Debug dei problemi di prestazioni in Visual Studio 2015)
   
- [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (Informazioni immediate sulle prestazioni durante il debug in Visual Studio)
+ [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (PerfTips: Informazioni immediate sulle prestazioni durante il debug in Visual Studio)
   
  [Diagnostic Tools debugger window in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/) (Finestra del debugger degli strumenti di diagnostica in Visual Studio 2015)
   

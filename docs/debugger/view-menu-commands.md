@@ -1,8 +1,6 @@
 ---
-title: Visualizzare i comandi di Menu | Documenti Microsoft
-ms.custom: ''
+title: Visualizzare i comandi di Menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - View menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfbcd8d586c1c6d2d3b208c3d7d62b2b333845d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915374"
 ---
 # <a name="view-menu-commands"></a>comandi del menu Visualizza
 Il **vista** menu sono disponibili comandi per il controllo di Spy + + dell'interfaccia utente.  
   
  **Tipo di carattere**  
- Apre il **carattere** della finestra di dialogo in cui è possibile selezionare un tipo di carattere per l'utilizzo della visualizzazione corrente di Spy + +.  
+ Apre la **Font** della finestra di dialogo in cui è possibile selezionare un tipo di carattere per l'uso della visualizzazione corrente di Spy + +.  
   
  **Toolbar**  
  Nasconde o Visualizza la barra degli strumenti.  
@@ -32,4 +30,4 @@ Il **vista** menu sono disponibili comandi per il controllo di Spy + + dell'inte
  Nasconde o Visualizza la barra di stato.  
   
  **Proprietà**  
- Apre il **proprietà** la finestra di dialogo per la visualizzazione attiva.
+ Apre la **proprietà** finestra di dialogo per la visualizzazione attiva.

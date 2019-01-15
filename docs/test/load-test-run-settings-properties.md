@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860205"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 
@@ -54,7 +53,7 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |Proprietà|Definizione|
 |-|----------------|
 |**Tipo archivio**|Modalità di archiviazione dei contatori delle prestazioni ottenuti in un test di carico. Le opzioni sono le seguenti:<br /><br /> -   **Database**: è richiesto un database SQL con un **Archivio risultati test di carico**.<br />-   **Nessuno**.|
-|**Intervallo archiviazione dettagli**|Questa opzione viene usata per determinare i dettagli che verranno archiviati nell'**Archivio risultati test di carico**. Sono disponibili tre valori:<br /><br /> -   **Tutti i singoli dettagli**: consente di raccogliere e archiviare i singoli valori di intervallo per ogni test, transazione e pagina eseguita durante il test di carico nell'**Archivio risultati test di carico**. È necessaria se si intende usare il **Grafico attività utente virtuale** nell'**Analizzatore test di carico**.<br />     Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Nessuno**: Non viene raccolto alcun valore di intervallo singolo. Si tratta del valore predefinito per Visual Studio 2013 Update 4 e versioni successive.<br />-   **Solo statistiche**: consente di raccogliere e archiviare solo le statistiche anziché archiviare i singoli valori di intervallo per ogni test, transazione e pagina eseguita durante il test di carico nell'**Archivio risultati test di carico**.<br /><br /> Per altre informazioni, vedere [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Intervallo archiviazione dettagli**|Questa opzione viene usata per determinare i dettagli che verranno archiviati nell'**Archivio risultati test di carico**. Sono disponibili tre valori:<br /><br /> -   **Tutti i singoli dettagli**: consente di raccogliere e archiviare i singoli valori di intervallo per ogni test, transazione e pagina eseguita durante il test di carico nell'**Archivio risultati test di carico**. È necessaria se si intende usare il **Grafico attività utente virtuale** nell'**Analizzatore test di carico**.<br />     Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Nessuno**: Non viene raccolto alcun valore di intervallo singolo. Si tratta del valore predefinito per Visual Studio 2013 Update 4 e versioni successive.<br />-   **Solo statistiche**: consente di raccogliere e archiviare solo le statistiche anziché archiviare i singoli valori di intervallo per ogni test, transazione e pagina eseguita durante il test di carico nell'**Archivio risultati test di carico**.<br /><br /> Per altre informazioni, vedere [Procedura: Specificare la proprietà relativa all'intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Proprietà della traccia SQL
 
@@ -91,7 +90,7 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |**Dimensione pool di connessioni WebTest**|Consente di specificare il numero massimo di connessioni da stabilire tra l'agente del test di carico e il server Web. Si applica solo al modello **Pool di connessioni**.|
 
 ##  <a name="change-run-setting-properties"></a>Modificare le proprietà delle impostazioni di esecuzione
- È possibile aggiungere altre impostazioni di esecuzione al test di carico con impostazioni di proprietà differenti, per poter eseguire il test di carico con condizioni diverse. Ad esempio, è possibile aggiungere una nuova impostazione test e usare una frequenza di campionamento diversa o specificare una durata dell'esecuzione più lunga. È possibile usare una sola impostazione di esecuzione test per volta ed è necessario specificare quale impostazione di esecuzione test usare contrassegnandola come attiva. Per un esempio, vedere [Procedura: Selezionare l'impostazione di esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+ È possibile aggiungere altre impostazioni di esecuzione al test di carico con impostazioni di proprietà differenti, per poter eseguire il test di carico con condizioni diverse. Ad esempio, è possibile aggiungere una nuova impostazione test e usare una frequenza di campionamento diversa o specificare una durata dell'esecuzione più lunga. È possibile usare una sola impostazione di esecuzione test per volta ed è necessario specificare quale impostazione di esecuzione test usare contrassegnandola come attiva. Per un esempio, vedere [Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Per modificare le impostazioni di esecuzione
 

@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5919ac289dcb7e78031ae433fda2620f62032f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fea19cae4f587ff6a7fb505653db5b3142564868
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940070"
 ---
 # <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
 Recupera l'indirizzo virtuale relativo (RVA) del blocco.  
@@ -27,7 +25,7 @@ Recupera l'indirizzo virtuale relativo (RVA) del blocco.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_relativeVirtualAddress (
  [out] Restituisce l'indirizzo virtuale relativo dell'immagine del blocco.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

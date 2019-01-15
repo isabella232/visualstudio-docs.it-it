@@ -18,23 +18,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23dc346ac1d8495c3aef191ee3228087e1b222c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: d89c3a5582ef1c84c455801d3766d65246e34dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899639"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Uso dei set di dati nelle applicazioni a più livelli
 
-*Le applicazioni dati a più livelli* sono applicazioni mirate ai dati separate in più livelli logici (o *livelli*). In altre parole, un'applicazione dati a più livelli è un'applicazione separata in più progetti, con il livello di accesso ai dati, il livello di logica di business e il livello di presentazione, ciascuno in un progetto distinto. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
+Le *applicazioni dati a più livelli* sono applicazioni mirate ai dati separate in più *livelli* logici. In altre parole, un'applicazione dati a più livelli è un'applicazione separata in più progetti, con il livello di accesso ai dati, il livello di logica di business e il livello di presentazione, ciascuno in un progetto distinto. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
 
 I dataset tipizzati sono stati migliorati in modo da poter generare classi TableAdapter e di dataset in progetti discreti, consentendo di separare rapidamente i livelli dell'applicazione e generare applicazioni dati a più livelli.
 
-Supporto a più livelli nei dataset tipizzati consente lo sviluppo iterativo dell'architettura dell'applicazione in una progettazione a più livelli. Inoltre, si elimina la necessità di separare manualmente il codice in più di un progetto. Avviare la progettazione del livello dati usando il **Progettazione Dataset**. Quando è pronti per richiedere l'architettura dell'applicazione a una progettazione a più livelli, impostare il **DataSetProject** proprietà di un set di dati per generare la classe di set di dati in un progetto separato.
+Supporto a più livelli nei dataset tipizzati consente lo sviluppo iterativo dell'architettura dell'applicazione in una progettazione a più livelli. Inoltre, si elimina la necessità di separare manualmente il codice in più di un progetto. Avviare la progettazione del livello dati usando il **Progettazione Dataset**. Prima di applicare l'architettura dell'applicazione in una progettazione a più livelli, impostare la proprietà **Progetto DataSet** di un set di dati per generare la classe di set di dati in un progetto separato.
 
 ## <a name="reference"></a>Riferimenti
 
@@ -53,4 +52,4 @@ Supporto a più livelli nei dataset tipizzati consente lo sviluppo iterativo del
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md)
-- [A più livelli e le applicazioni remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [Applicazioni a più livelli e remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

@@ -1,8 +1,6 @@
 ---
 title: Attività inline di MSBuild con RoslynCodeTaskFactory | Microsoft Docs
-ms.custom: ''
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887750"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
 Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), l'attività RoslynCodeTaskFactory usa i compilatori Roslyn multipiattaforma per generare assembly di attività in memoria da usare come attività inline.  Le attività RoslynCodeTaskFactory, destinate a .NET Standard, possono funzionare nei runtime di .NET Framework e .NET Core, nonché in altre piattaforme quali Linux e Mac OS.

@@ -2,7 +2,6 @@
 title: Pagina Compilazione, Progettazione progetti (C#)
 ms.date: 06/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908017"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 Usare la pagina **Compilazione** di **Creazione progetti** per specificare le proprietà di configurazione della compilazione del progetto. Questa pagina è applicabile solo ai progetti [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -33,11 +32,11 @@ Per accedere alla pagina **Compilazione**, scegliere un nodo del progetto (non i
 Le opzioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.
 
 > [!NOTE]
-> Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Queste opzioni non sono di conseguenza visualizzate. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
+> Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Queste opzioni non sono di conseguenza visualizzate. Per altre informazioni, vedere [Procedura: Impostare configurazioni di debug e di rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Configurazione** Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possono essere **Attiva (Debug)** (il valore predefinito), **Debug**, **Release** o **Tutte le configurazioni**.
 
-**Piattaforma** Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).
+**Piattaforma** Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Generale
 Le opzioni seguenti consentono di configurare diverse impostazioni del compilatore C#.

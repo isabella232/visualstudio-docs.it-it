@@ -2,7 +2,6 @@
 title: Uso degli asset 3D nel gioco o nell'app
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986765"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usare asset 3D nel gioco o nell'app
 
@@ -90,28 +89,28 @@ Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i 
 
 Quando si usa lo strumento della pipeline di contenuti immagine per generare un asset trama, è possibile comprimere la trama in diversi modi, specificare se i livelli MIP devono essere generati in fase di compilazione e cambiare il nome del file di output.
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converti in formato premoltiplicato per alfa|**Sì** per convertire l'immagine in formato premoltiplicato per alfa nel file di output, altrimenti **No**. Viene modificato solo il file di output, mentre l'immagine di origine resta invariata.|
 |**Genera MIP**|**Sì** per generare una catena MIP completa in fase di compilazione e includerla nel file di output, altrimenti **No**. Se si sceglie **No** e il file di origine contiene già una catena mipmap, nel file di output sarà presente una catena MIP. In caso contrario, non sarà presente alcuna catena MIP.|
-|**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
+|**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti mesh
 
 Quando si usa lo strumento della pipeline di contenuti mesh per generare un asset mesh, è possibile cambiare il nome del file di output.
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
-|**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
+|**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti shader
 
 Quando si usa lo strumento della pipeline di contenuti shader per generare un asset shader, è possibile cambiare il nome del file di output.
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
-|**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
+|**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Caricamento e uso di asset 3D in fase di esecuzione
 
@@ -206,10 +205,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
-|[Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
+|[Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
 |[Procedura: Esportare una trama da usare con app Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descrive gli strumenti di modifica forniti da Visual Studio per la creazione e la manipolazione di asset 3D, tra cui trame e immagini, modelli 3D e shader.|
 |[Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)|Descrive come esportare uno shader dalla finestra di progettazione shader.|

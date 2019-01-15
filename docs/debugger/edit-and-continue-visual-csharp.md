@@ -1,8 +1,6 @@
 ---
-title: Modifica e continuazione (Visual c#) | Documenti Microsoft
-ms.custom: ''
+title: Modifica e continuazione (Visual C#) | Microsoft Docs
 ms.date: 10/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,27 +17,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a731daaf548f76166b4b8e4bcc263780d9d9d33a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7be386a7d792c99ba361d70af1f8aac34c809cf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930973"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
  La funzionalità Modifica e continuazione per C# consente di apportare modifiche al codice in modalità di interruzione durante il debug. Le modifiche possono essere applicate senza terminare e riavviare la sessione di debug. In modalità di esecuzione l'editor del codice sorgente è di sola lettura.  
   
- La modalità Modifica e continuazione supporta la maggior parte delle modifiche che è necessario apportare durante una sessione di debug, con alcune eccezioni. Per ulteriori informazioni, vedere [modifiche al codice supportate (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md).  
+ La modalità Modifica e continuazione supporta la maggior parte delle modifiche che è necessario apportare durante una sessione di debug, con alcune eccezioni. Per altre informazioni, vedere [modifiche al codice supportate (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md).  
 
- Modifica e continuazione è supportata in UWP in x86 e x64 App destinate a .NET Framework 4.6 e Windows 10 desktop o versioni successive (.NET Framework è solo una versione desktop).
+ Modifica e continuazione è supportata nella piattaforma UWP in x86 e x64 App destinate a .NET Framework 4.6 e Windows 10 desktop o versioni successive (.NET Framework è solo una versione desktop).
 
  > [!NOTE]
  > Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5 e Windows 8.1.
   
- Quando l'opzione Modifica e continuazione è abilitata, le modifiche supportate vengono applicate automaticamente quando si utilizza un comando di esecuzione del debugger, ad esempio **continua**, **passaggio**, **Imposta istruzione successiva**, o eseguire una valutazione della funzione in una finestra del debugger.  
+ Nella modalità Modifica e continuazione, le modifiche supportate vengono applicate automaticamente quando si utilizza un comando di esecuzione del debugger, ad esempio **Continua**, **Passaggio** o **Imposta istruzione successiva** oppure si valuta una funzione in una finestra del debugger.  
   
- Per ulteriori informazioni, vedere [procedura: utilizzare Modifica e continuazione (c#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Per altre informazioni, vedere [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: utilizzare Modifica e continuazione (c#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
- [Modifiche al codice supportate (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
+ [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Le modifiche al codice supportate (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)

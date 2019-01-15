@@ -1,8 +1,6 @@
 ---
 title: '&lt;InstallChecks&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8004ccdcbd320479bcc1e343443ebdb017ee77f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865981"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (programma di avvio automatico)
 Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer locale per assicurarsi che siano stati installati tutti i prerequisiti appropriati per un'applicazione.  
@@ -74,12 +72,12 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 ## <a name="assemblycheck"></a>AssemblyCheck  
  Questo elemento è un elemento figlio facoltativo di `InstallChecks`. Per ogni istanza di `AssemblyCheck`, il programma di bootstrap garantirà che l'assembly identificato dall'elemento sia presente nella global assembly cache (GAC). Non contiene elementi e ha gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Name`|Obbligatorio. Il nome completo dell'assembly da verificare.|  
 |`PublicKeyToken`|Obbligatorio. La forma abbreviata della chiave pubblica associato a questo assembly un nome sicuro. Tutti gli assembly memorizzati nella Global Assembly Cache devono avere un nome, una versione e una chiave pubblica.|  
-|`Version`|Obbligatorio. La versione dell'assembly.<br /><br /> Il numero di versione ha il formato \< *versione principale*>.\< *podverze*>.\< *versione build*>.\< *revisione*>.|  
+|`Version`|Obbligatorio. Versione dell'assembly.<br /><br /> Il numero di versione ha il formato \< *versione principale*>.\< *podverze*>.\< *versione build*>.\< *revisione*>.|  
 |`Language`|Facoltativo. La lingua di un assembly localizzato. Il valore predefinito è `neutral`.|  
 |`ProcessorArchitecture`|Facoltativo. Il processore del computer di destinazione dell'installazione. Il valore predefinito è `msil`.|  
 
@@ -88,7 +86,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `ExternalCheck` non contiene elementi e ha gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`PackageFile`|Obbligatorio. Il programma esterno per l'esecuzione. Il programma deve far parte del pacchetto di distribuzione di installazione.|  
@@ -100,7 +98,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
  `FileCheck` non contiene elementi e ha gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |-----------------| - |
 | `Property` | Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md). |
 | `FileName` | Obbligatorio. Il nome del file da trovare. |
@@ -113,7 +111,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `MsiProductCheck` non contiene elementi e ha gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Product`|Obbligatorio. GUID per il prodotto installato.|  
@@ -124,7 +122,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `RegistryCheck` non contiene elementi e ha gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Obbligatorio. Nome della chiave del Registro di sistema.|  
@@ -135,7 +133,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `RegistryFileCheck` non contiene elementi e ha gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Obbligatorio. Nome della chiave del Registro di sistema. Il valore viene interpretato come il percorso di un file, a meno che non la `File` attributo è impostato. Se questa chiave non esiste, `Property` non è impostata.|  
@@ -184,4 +182,4 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
 ## <a name="see-also"></a>Vedere anche  
  [\<I comandi > elemento](../deployment/commands-element-bootstrapper.md)   
- [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

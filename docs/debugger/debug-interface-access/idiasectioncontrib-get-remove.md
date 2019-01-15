@@ -1,8 +1,6 @@
 ---
 title: Get_remove | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d44143994a0516c08e4738749b65bca54ba7a66
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c659d4368d6c2b4760e4c6b0ca977c7f63f51de3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956481"
 ---
 # <a name="idiasectioncontribgetremove"></a>IDiaSectionContrib::get_remove
 Recupera un flag che indica se la sezione è stato rimosso prima di renderlo parte dell'immagine in memoria.  
@@ -27,7 +25,7 @@ Recupera un flag che indica se la sezione è stato rimosso prima di renderlo par
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_remove (   
+HRESULT get_remove (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_remove (
  [out] Restituisce `TRUE` se la sezione non devono essere aggiunti all'immagine in memoria; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

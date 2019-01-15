@@ -2,7 +2,6 @@
 title: 'Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913491"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica
 
@@ -79,7 +78,7 @@ Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella deg
 
 3. Applicare la trama creata nella procedura precedente configurando le proprietà della trama. Impostare il valore della proprietà **Trama** del nodo **Campione trama** su **Trama1**, quindi specificare il file di trama utilizzando la proprietà **Nome file** del gruppo di proprietà **Trama1** nella stessa finestra della proprietà.
 
-   Per ulteriori informazioni su come applicare una trama allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).
+   Per altre informazioni su come applicare una trama allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).
 
    La palla da biliardo dovrebbe ora risultare simile alla seguente:
 
@@ -101,7 +100,7 @@ In computer grafica, i *modelli di illuminazione*, ovvero approssimazioni sempli
 
 - Facoltativamente, è possibile regolare la modalità di comportamento dell'illuminazione configurando la proprietà **MaterialDiffuse** del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
 
-Per altre informazioni su come applicare una illuminazione di Lambert allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-lambert-shader.md).
+Per altre informazioni su come applicare una illuminazione di Lambert allo shader, vedere [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Con l'illuminazione di Lambert applicata, la palla da biliardo dovrebbe risultare simile alla seguente:
 

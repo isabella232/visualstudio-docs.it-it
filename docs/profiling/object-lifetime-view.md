@@ -1,8 +1,6 @@
 ---
 title: Visualizzazione Durata oggetti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8175a8337f15517e0b9c88ae3f5405148a4b22b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934969"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
 La visualizzazione Durata oggetti è disponibile quando viene selezionata la casella di controllo **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** nelle pagine della proprietà **Sessione prestazioni**.  
@@ -34,7 +32,7 @@ La visualizzazione Durata oggetti è disponibile quando viene selezionata la cas
   
 ## <a name="general"></a>Generale  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Nome di classe**|Nome della classe del tipo allocato.|  
 |**ID processo**|ID di processo dell'esecuzione della profilatura.|  
@@ -45,7 +43,7 @@ La visualizzazione Durata oggetti è disponibile quando viene selezionata la cas
 ## <a name="instance-data"></a>Dati per le istanze  
  Questi dati indicano il numero di oggetti del tipo creati durante l'esecuzione della profilatura e la generazione in cui gli oggetti sono stati deallocati dal Garbage Collector.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Istanze**|Numero di allocazioni di oggetti di questo tipo.|  
 |**% istanze totali**|Percentuale del numero totale di allocazioni effettuate durante l'esecuzione della profilatura.|  
@@ -57,7 +55,7 @@ La visualizzazione Durata oggetti è disponibile quando viene selezionata la cas
 ## <a name="size-byte-data"></a>Dati per le dimensioni (byte)  
  Questi dati indicano le dimensioni degli oggetti del tipo creati durante l'esecuzione della profilatura e la quantità di memoria recuperata in ogni generazione in cui gli oggetti sono stati deallocati.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Totale byte allocati**|Numero totale di byte per tutte le istanze del tipo.|  
 |**% byte totali**|Percentuale del numero totale di byte allocati nell'esecuzione della profilatura per le istanze di questo tipo.|  
@@ -68,7 +66,7 @@ La visualizzazione Durata oggetti è disponibile quando viene selezionata la cas
 ## <a name="large-object-heap-data"></a>Dati per l'heap degli oggetti grandi  
  L'allocatore di memoria .NET gestisce gli oggetti molto grandi in una posizione separata dall'heap gestito standard. I dati per l'heap degli oggetti grandi indicano il numero e le dimensioni degli oggetti del tipo che sono stati gestiti in questa posizione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Istanze di heap oggetti grandi raccolte**|Numero di istanze di questo tipo posizionate nell'heap degli oggetti grandi e raccolte durante l'esecuzione della profilatura.|  
 |**Byte di heap oggetti grandi raccolti**|Dimensioni in byte delle istanze di questo tipo posizionate nell'heap degli oggetti grandi e raccolte durante l'esecuzione della profilatura.|  

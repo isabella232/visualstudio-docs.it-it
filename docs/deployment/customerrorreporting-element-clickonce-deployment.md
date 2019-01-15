@@ -1,8 +1,6 @@
 ---
 title: '&lt;customErrorReporting&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c060c419fa72bb5914491a8ee666a9b1a2c6a622
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2fd94ebc54716f68ed6d7f76b87d76529daeb680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876719"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; elemento (distribuzione ClickOnce)
 Specifica un URI da visualizzare quando si verifica un errore.  
@@ -50,4 +48,4 @@ http://www.contoso.com/applications/error.asp? outer=System.Deployment.Applicati
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+ [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

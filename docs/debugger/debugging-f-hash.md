@@ -1,8 +1,6 @@
 ---
-title: 'Debug di F # | Documenti Microsoft'
-ms.custom: ''
+title: Debug di F# | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bb2a9379dd6cd43bb0398ccda2b031b96d56e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0f526eb39a62de33910bfa5e3e1e72220be3ae3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903981"
 ---
 # <a name="debugging-f"></a>Debug di F#
 Il debug di F #è simile al debug di qualsiasi linguaggio gestito, con alcune eccezioni:  
   
--   Il **Auto** non vengono visualizzate le variabili F #.  
+-   Nella finestra **Auto** non vengono visualizzate le variabili F#.  
   
 -   La modifica e la continuazione non sono supportate per F#. La modifica del codice F# durante una sessione di debug è possibile ma deve essere evitata. Poiché le modifiche al codice non vengono applicate durante la sessione di debug, la modifica del codice F# durante il debug provocherà una mancata corrispondenza tra il codice sorgente e il codice in fase di debug.  
   

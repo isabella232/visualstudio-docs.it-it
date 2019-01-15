@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: eseguire il Debug di codice Assembly Inline | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug di codice Assembly Inline | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935424"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Procedura: eseguire il debug di codice assembly inline
+# <a name="how-to-debug-inline-assembly-code"></a>Procedura: Eseguire il debug di codice assembly inline
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
-Per il debug di codice assembly inline sono disponibili le finestre Disassembly **e Registri**.
+Per il debug di codice assembly inline sono disponibili le finestre **Disassembly** e **Registri**.
 
 ## <a name="debug-inline-assembly-code"></a>Eseguire il debug di codice assembly inline
 
-1.  Utilizzare la finestra Disassembly** per visualizzare le istruzioni dell'assembly.
+1.  Usare la finestra **Disassembly** per visualizzare le istruzioni dell'assembly.
 
-2.  Utilizzare la finestra Registri** per visualizzare il contenuto del registro.
+2.  Usare la finestra **Registri** per visualizzare il contenuto del registro.
 
 ## <a name="see-also"></a>Vedere anche
 

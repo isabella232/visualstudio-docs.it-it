@@ -1,8 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945769"
 ---
 # <a name="vsinstr"></a>VSInstr
 Lo strumento VSInstr viene usato per instrumentare i file binari. Viene richiamato tramite la sintassi seguente:  
@@ -35,7 +33,7 @@ VSInstr [/U] filename [/options]
   
  Nella tabella seguente vengono descritte le opzioni dello strumento VSInstr:  
   
-|Opzioni|Descrizione|  
+|Opzioni|Description|  
 |-------------|-----------------|  
 |**Help** o **?**|Visualizza la Guida.|  
 |**U**|Scrive l'output di console reindirizzato come Unicode. Deve essere la prima opzione specificata.|  

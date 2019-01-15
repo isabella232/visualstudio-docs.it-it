@@ -1,8 +1,6 @@
 ---
 title: Riferimento all'API del Visualizzatore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902214"
 ---
 # <a name="visualizer-api-reference"></a>Informazioni di riferimento sulle API del visualizzatore
 
-Le API del visualizzatore vengono fornite per gli utenti che desiderano scrivere un visualizzatore per il debugger di Visual Studio. Un visualizzatore è una piccola applicazione che estende le funzionalità dell'interfaccia utente del debugger di Visual Studio Un visualizzatore può visualizzare e facoltativamente modificare un oggetto dati di un tipo specifico per il quale è stato progettato.  
+Le API del visualizzatore vengono fornite per gli utenti che desiderano scrivere un visualizzatore per il debugger di Visual Studio. Un visualizzatore è una piccola applicazione che estende le funzionalità dell'interfaccia utente del debugger di Visual Studio e consente di visualizzare e facoltativamente modificare un oggetto dati di un tipo specifico per il quale è stato progettato.  
   
 ## <a name="in-this-section"></a>In questa sezione  
   
@@ -44,6 +42,6 @@ Le API del visualizzatore vengono fornite per gli utenti che desiderano scrivere
   
 ## <a name="see-also"></a>Vedere anche
 
- [Procedura dettagliata: Scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
+ [Procedura dettagliata: Scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

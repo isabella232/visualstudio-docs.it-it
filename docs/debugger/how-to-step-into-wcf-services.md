@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: passaggio nei servizi WCF | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Istruzioni nei servizi WCF | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cad65b893867a18133bbf9492a1c1786b24a81ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f361369aef97aaa894a1a1929149356d3177cc3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890735"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Procedura: eseguire istruzioni nei servizi WCF
+# <a name="how-to-step-into-wcf-services"></a>Procedura: Eseguire istruzioni nei servizi WCF
 In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è possibile eseguire istruzioni in un servizio WCF. Se il servizio WCF si trova nella stessa soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] del client, è possibile raggiungere punti di interruzione nel servizio WCF.  
   
  Per consentire il funzionamento, è necessario avere attivato il debug nel file app.config o web.config. Per informazioni su come abilitare il debug e per le limitazioni sull'esecuzione dei servizi WCF, vedere [limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md).  
@@ -34,7 +32,7 @@ In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è pos
   
 1. Creare una soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contenente entrambi i progetti client WCF e servizio WCF.  
   
-2. In Esplora soluzioni, fare clic sul progetto Client WCF e quindi fare clic su **imposta come progetto di avvio**.  
+2. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto Client WCF e scegliere **Imposta come progetto di avvio**.  
   
 3. Attivare il debug nel file app.config o web.config. Per altre informazioni, vedere [limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md).  
   
@@ -45,4 +43,4 @@ In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è pos
 ## <a name="see-also"></a>Vedere anche  
  [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)   
  [Limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Procedura: Eseguire il debug di un servizio WCF indipendente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

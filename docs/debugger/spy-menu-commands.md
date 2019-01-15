@@ -1,8 +1,6 @@
 ---
-title: Controllare i comandi di Menu | Documenti Microsoft
-ms.custom: ''
+title: Comandi del Menu Spy | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy menu commands
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a11b24f5f0f950fabe475a0f0099e76032451fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b0abf9695e0210cdae9785aafcd967513e48bf43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989529"
 ---
 # <a name="spy-menu-commands"></a>Spy (comandi di menu)
-Il **Spy** menu sono disponibili comandi per lavorare con le finestre di Spy + + e viste.  
+Il **Spy** menu sono disponibili comandi per lavorare con Spy + + Windows e le viste.  
   
  **Windows**  
  Apre una nuova visualizzazione di Windows.  
@@ -31,11 +29,11 @@ Il **Spy** menu sono disponibili comandi per lavorare con le finestre di Spy + +
  **Thread**  
  Apre una nuova visualizzazione thread.  
   
- **Messaggi di log**  
- Apre una nuova visualizzazione di messaggi e viene aperta la [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) per la visualizzazione.  
+ **Registra messaggi**  
+ Apre una nuova visualizzazione di messaggi e apre la [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) per la visualizzazione.  
   
- **Trovare la finestra**  
- Consente di visualizzare il **FindWindow** la finestra di dialogo per selezionare una finestra con il mouse.  
+ **Trova finestra**  
+ Consente di visualizzare il **FindWindow** finestra di dialogo per selezionare una finestra con il mouse.  
   
  **File**  
- Chiude l'utilità di Spy + +.
+ Chiudere l'utilità di Spy + +.

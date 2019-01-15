@@ -2,7 +2,6 @@
 title: Personalizzare il layout delle finestre
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: ef1b20741684a8d450d86bf4f41c71516f8eaba6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959326"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizzare il layout delle finestre in Visual Studio
 
@@ -58,7 +57,7 @@ Quando è necessario visualizzare o modificare due percorsi contemporaneamente i
 
 ### <a name="toolbars"></a>Barre degli strumenti
 
-Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [Procedura: personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Disporre e ancorare le finestre
 
@@ -186,4 +185,4 @@ Il roaming di questi layout verrà effettuato automaticamente tra le edizioni di
 
 ## <a name="see-also"></a>Vedere anche
 
-- [How to: Move around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Procedura: Spostarsi all'interno dell'IDE)
+- [Procedura: Spostarsi all'interno dell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

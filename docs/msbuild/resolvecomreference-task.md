@@ -1,8 +1,6 @@
 ---
 title: Attività ResolveComReference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893341"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie in percorsi sul disco.  
@@ -33,7 +31,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `ResolveCOMReference` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`DelaySign`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, la chiave pubblica viene inserita nell'assembly. Se `false`, l'assembly viene firmato completamente.|  
 |`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Matrice di coppie di variabili di ambiente, separate da segni di uguale. Tali variabili vengono passate ai file *tlbimp.exe* e *aximp.exe* compilati in aggiunta al blocco di ambiente regolare, oppure eseguendo l'override selettivo di tale blocco.|  
@@ -56,20 +54,20 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 ## <a name="typelibnames-item-metadata"></a>Metadati dell'elemento TypeLibNames  
  Nella tabella seguente vengono descritti i metadati disponibili per gli elementi passati al parametro `TypeLibNames`.  
   
-|Metadati|Descrizione|  
+|Metadati|Description|  
 |--------------|-----------------|  
 |`GUID`|Metadati di elemento obbligatori.<br /><br /> GUID della libreria dei tipi. Se questi metadati di elemento non vengono specificati, l'attività avrà esito negativo.|  
 |`VersionMajor`|Metadati di elemento obbligatori.<br /><br /> Versione principale della libreria dei tipi. Se questi metadati di elemento non vengono specificati, l'attività avrà esito negativo.|  
 |`VersionMinor`|Metadati di elemento obbligatori.<br /><br /> Versione secondaria della libreria dei tipi. Se questi metadati di elemento non vengono specificati, l'attività avrà esito negativo.|  
 |`LocaleIdentifier`|Metadati di elemento facoltativi.<br /><br /> Identificatore delle impostazioni locali (LCID) per la libreria dei tipi. Viene specificato come valore a 32 bit che identifica la lingua preferita da un utente, un paese o un'applicazione. Se questi metadati di elemento non vengono specificati, l'attività userà l'identificatore delle impostazioni locali predefinito "0".|  
-|`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole usare un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|  
+|`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole fare uso di un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|  
   
 ## <a name="typelibfiles-item-metadata"></a>Metadati dell'elemento TypeLibFiles  
  Nella tabella seguente vengono descritti i metadati disponibili per gli elementi passati al parametro `TypeLibFiles`.  
   
-|Metadati|Descrizione|  
+|Metadati|Description|  
 |--------------|-----------------|  
-|`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole usare un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|  
+|`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole fare uso di un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|  
   
 > [!NOTE]
 >  Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.  

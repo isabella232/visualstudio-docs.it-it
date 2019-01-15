@@ -2,7 +2,6 @@
 title: Pagina Servizi, Progettazione progetti
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952381"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
 
@@ -31,7 +30,7 @@ Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplo
 
 ## <a name="task-list"></a>Elenco attività
 
-[Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Procedura: Configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
@@ -53,7 +52,7 @@ Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplo
 
  **Usa autenticazione basata su form**
 
- Indica che il provider di autenticazione userà l'autenticazione basata su form. L'applicazione quindi deve fornire un'interfaccia utente per l'accesso. Per altre informazioni, vedere [Procedura: implementare l'accesso utente con i servizi dell'applicazione client](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+ Indica che il provider di autenticazione userà l'autenticazione basata su form. L'applicazione quindi deve fornire un'interfaccia utente per l'accesso. Per altre informazioni, vedere [Procedura: Implementare l'accesso utente con i servizi dell'applicazione client](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Percorso servizio di autenticazione**
 

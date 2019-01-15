@@ -2,19 +2,18 @@
 title: Generare un'azione rapida costruttore
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895298"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -30,7 +29,7 @@ Questa generazione di codice si applica a:
 
 **Perché:** si potrebbe dichiarare il costruttore prima di usarlo, tuttavia questa funzionalità consente di generarlo automaticamente, con i parametri appropriati. Inoltre, la modifica di un costruttore esistente richiede l'aggiornamento di tutti i siti di chiamata, a meno che non si usi questa funzionalità per aggiornarli automaticamente.
 
-**Procedura:** esistono diversi modi per generare un costruttore:
+**Come:** esistono diversi modi per generare un costruttore:
 
    - [Generare un costruttore e selezionare i membri](#pick)
    - [Generare un costruttore dai campi selezionati](#selection)

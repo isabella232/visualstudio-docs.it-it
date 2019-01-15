@@ -7,19 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885594"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto>
 
-Questo messaggio viene in genere visualizzato quando un oggetto in **Esplora Server** oppure **Esplora Database** viene copiato negli Appunti, eliminato dal database e incollato nella finestra di progettazione. La visualizzazione del messaggio è pertanto dovuta al fatto che l'oggetto di database non esiste più.
+Questo messaggio viene visualizzato in genere quando un oggetto in **Esplora server** o **Esplora database** viene copiato negli Appunti, eliminato dal database e incollato nella finestra di progettazione. La visualizzazione del messaggio è pertanto dovuta al fatto che l'oggetto di database non esiste più.
 
 Per correggere questo errore, selezionare **OK** per chiudere la finestra di dialogo.
 

@@ -1,8 +1,6 @@
 ---
 title: '&lt;dipendenza&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898623"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dipendenza&gt; elemento (applicazione ClickOnce)
 Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'applicazione.  
@@ -88,7 +86,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 </dependency>  
 ```  
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `dependency` elemento è obbligatorio. Possono esistere più istanze di `dependency` nel manifesto dell'applicazione stessa.  
 
  Il `dependency` elemento non ha attributi e contiene i seguenti elementi figlio.  
@@ -98,7 +96,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 
  `dependentOS` supporta gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`supportUrl`|Facoltativo. Specifica un URL di supporto per la piattaforma di dipendenti. L'URL viene visualizzato all'utente se viene trovata la piattaforma richiesta.|  
 |`description`|Facoltativo. Descrive, in forma leggibile, il sistema operativo descritto dal `dependentOS` elemento.|  
@@ -106,10 +104,10 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="osversioninfo"></a>osVersionInfo  
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentOS` e contiene l'elemento `os` . Questo elemento non ha attributi.  
 
-### <a name="os"></a>sistema operativo  
+### <a name="os"></a>Sistema operativo  
  Obbligatorio. Questo elemento è figlio dell'elemento `osVersionInfo` . Questo elemento ha gli attributi seguenti.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`majorVersion`|Obbligatorio. Specifica il numero di versione principale del sistema operativo.|  
 |`minorVersion`|Obbligatorio. Specifica il numero di versione secondaria del sistema operativo.|  
@@ -117,7 +115,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 |`servicePackMajor`|Obbligatorio. Specifica il numero principale del service pack del sistema operativo.|  
 |`servicePackMinor`|Facoltativo. Specifica il numero secondario di service pack del sistema operativo.|  
 |`productType`|Facoltativo. Identifica il valore del tipo di prodotto. I valori validi sono `server`, `workstation` e `domainController`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `workstation`.|  
-|`suiteType`|Facoltativo. Identifica una famiglia di prodotti disponibile nel sistema, o tipo di configurazione del sistema. I valori validi sono `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, e `terminal`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `professional`.|  
+|`suiteType`|Facoltativo. Identifica una famiglia di prodotti disponibile nel sistema, o tipo di configurazione del sistema. I valori validi sono `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` e `terminal`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `professional`.|  
 
 ### <a name="dependentassembly"></a>dependentAssembly  
  Facoltativo. Contiene il `assemblyIdentity` elemento. Il `dependentOS` e `dependentAssembly` elementi si escludono a vicenda: uno o l'altro necessarie affinché un `dependency` elemento, ma non entrambi.  
@@ -125,7 +123,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
  `dependentAssembly` ha gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |-----------------------| - |
 | `dependencyType` | Obbligatorio. Specifica il tipo di dipendenza. I valori validi sono `preprequisite` e `install`. Un' `install` assembly viene installato come parte di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Oggetto `prerequisite` assembly deve essere presente nella global assembly cache (GAC) prima di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata. |
 | `allowDelayedBinding` | Obbligatorio. Specifica se l'assembly può essere caricato a livello di codice in fase di esecuzione. |
@@ -136,7 +134,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly` e ha l'attributo seguente.  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`name`|Obbligatorio. Identifica il nome dell'applicazione.|  
 |`version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|  
@@ -156,7 +154,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
@@ -164,7 +162,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
  Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`. |
 

@@ -1,8 +1,6 @@
 ---
 title: Proprietà di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987038"
 ---
 # <a name="msbuild-properties"></a>proprietà di MSBuild
 Le proprietà sono coppie nome-valore che possono essere usate per configurare le compilazioni. Le proprietà sono utili per passare i valori alle attività, valutare le condizioni e archiviare i valori a cui si farà riferimento nel file di progetto.  
@@ -46,7 +44,7 @@ Le proprietà sono coppie nome-valore che possono essere usate per configurare l
 ## <a name="reserved-properties"></a>Proprietà riservate  
  In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. Per fare riferimento a queste proprietà, si usa la notazione $, come per qualsiasi altra proprietà. Ad esempio, $(MSBuildProjectFile) restituisce il nome file completo del file di progetto, inclusa l'estensione di file.  
   
- Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="environment-properties"></a>Proprietà dell'ambiente  
  È possibile fare riferimento alle variabili di ambiente nei file di progetto esattamente come si fa riferimento alle proprietà riservate. Ad esempio, per usare la variabile di ambiente `PATH` nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una proprietà di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente.  
@@ -141,7 +139,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)  
- [Procedura:Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md)   
+ [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md)   
  [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
  [Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)   

@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845015"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880598"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
 
@@ -40,7 +39,7 @@ Per creare una connessione al database, fare clic sui **Aggiungi connessione** i
 
 Verrà visualizzata la **Aggiungi connessione** nella finestra di dialogo. In questo caso, è stato immesso il nome dell'istanza di LocalDB di SQL Server.
 
-![Aggiungi nuova connessione](../data-tools/media/raddata-add-new-connection-dialog.png)
+![Aggiungere una nuova connessione](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Modificare il provider
 

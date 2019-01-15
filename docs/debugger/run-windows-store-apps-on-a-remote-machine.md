@@ -1,8 +1,6 @@
 ---
 title: Eseguire il debug di App UWP in computer remoti | Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892251"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Eseguire il debug di App UWP in un computer remoto da Visual Studio
   
@@ -109,6 +107,6 @@ Debug remoto funziona esattamente come il debug locale.
 1. Se necessario, selezionare **Debug** > **Termina debug** oppure premere **MAIUSC**+**F5** per arrestare il debug e Chiudere l'app remota.
   
 ## <a name="see-also"></a>Vedere anche  
- [Opzioni avanzate di distribuzione remoto](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [Test delle app UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Opzioni di distribuzione remota avanzata](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Test delle app UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)   
  [Eseguire il debug di app UWP in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

@@ -1,8 +1,6 @@
 ---
 title: Idiatable | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e4d01ed6e092936fc2d9bc7b8e264215e21dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3e8ba825c0dba1b0218e53f9ad66f6958602d0c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953979"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Recupera un riferimento alla voce specificata nella tabella.  
@@ -27,7 +25,7 @@ Recupera un riferimento alla voce specificata nella tabella.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD      index,  
    IUnknown** element  
 );  
@@ -50,6 +48,6 @@ HRESULT Item (
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [Idiatable](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
