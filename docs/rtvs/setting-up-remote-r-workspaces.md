@@ -3,19 +3,18 @@ title: Aree di lavoro remote per R
 description: Come configurare aree di lavoro R remote e connettersi a tale aree da Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837784"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
@@ -173,7 +172,7 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
 1. Account utente: creare account per ogni utente che accede al computer remoto. È possibile creare account locali standard (senza privilegi) oppure è possibile includere il computer server R nel dominio e aggiungere i gruppi di sicurezza appropriati al gruppo di sicurezza `Users`.
 
-1. Regole del firewall: per impostazione predefinita, `R Host Broker` è in ascolto sulla porta TCP 5444. Pertanto verificare che siano attivate regole firewall di Windows per il traffico in ingresso e in uscita (le regole in uscita sono necessarie per l'installazione di pacchetti e operazioni simili).  Il programma di installazione dei servizi R imposta automaticamente queste regole per il firewall incorporato di Windows. Se si usa un firewall di terze parti, è tuttavia necessario aprire manualmente la porta 5444 per `R Host Broker`.
+1. Regole del firewall: per impostazione predefinita `R Host Broker` è in ascolto sulla porta TCP 5444. Pertanto verificare che siano attivate regole firewall di Windows per il traffico in ingresso e in uscita (le regole in uscita sono necessarie per l'installazione di pacchetti e operazioni simili).  Il programma di installazione dei servizi R imposta automaticamente queste regole per il firewall incorporato di Windows. Se si usa un firewall di terze parti, è tuttavia necessario aprire manualmente la porta 5444 per `R Host Broker`.
 
 1. Configurazione di Azure: se il computer remoto è una macchina virtuale in Azure, aprire la porta 5444 per il traffico in ingresso anche nella rete di Azure, che è indipendente dal firewall di Windows. Per informazioni dettagliate vedere [Filtrare il traffico di rete con gruppi di sicurezza di rete](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) nella documentazione di Azure.
 

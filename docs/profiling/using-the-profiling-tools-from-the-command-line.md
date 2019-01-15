@@ -1,8 +1,6 @@
 ---
 title: Uso degli strumenti per la profilatura dalla riga di comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command line, performance tools
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac28817a7c72b7ecfbbc3c76dd3626f0a24d11c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b606f6d41669550bd84f7d7cdcb7be84e7efda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941888"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Usare gli strumenti per la profilatura dalla riga di comando
 È possibile usare gli strumenti da riga di comando degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per eseguire la profilatura di applicazioni dal prompt dei comandi e automatizzare la profilatura tramite file batch e script. È anche possibile generare file di report dal prompt dei comandi. È possibile usare il profiler autonomo leggero per raccogliere dati nei computer in cui non è installato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -33,10 +31,10 @@ ms.locfileid: "49882327"
   
 | Attività | Contenuto correlato |
 | - | - |
-| **Impostare il percorso dei simboli:** per visualizzare i nomi di funzioni e parametri, il profiler deve avere accesso ai file di simboli (con estensione *pdb*) dei file binari profilati. Questi file devono includere i file di simboli per il sistema operativo Microsoft e le applicazioni da visualizzare nell'analisi. È possibile usare il server di simboli pubblico di Microsoft per assicurarsi di disporre dei file con estensione *pdb* corretti per i file binari Microsoft. | -   [Procedura: specificare percorsi dei file di simboli tramite la riga di comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
+| **Impostare il percorso dei simboli:** per visualizzare i nomi di funzioni e parametri, il profiler deve avere accesso ai file di simboli (con estensione *pdb*) dei file binari sottoposti a profilatura. Questi file devono includere i file di simboli per il sistema operativo Microsoft e le applicazioni da visualizzare nell'analisi. È possibile usare il server di simboli pubblico di Microsoft per assicurarsi di disporre dei file con estensione *pdb* corretti per i file binari Microsoft. | -   [Procedura: Specificare percorsi dei file di simboli dalla riga di comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
 | **Eseguire la profilatura dell'applicazione:** gli strumenti e le opzioni della riga di comando usati per la profilatura di un'applicazione di destinazione dipendono dal tipo di applicazione, dal metodo di profilatura e dal fatto che la destinazione sia un'applicazione gestita o nativa. | -   [Usare i metodi di profilatura dalla riga di comando](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md) |
-| **Creare report XML e CSV:** la profilatura dal prompt dei comandi crea file di dati che possono essere visualizzati nell'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È anche possibile generare file di dati con estensione *xml* o con valori delimitati da virgole (con estensione *csv*) usando lo strumento da riga di comando VSPerfReport. | -   [Creare report del profiler dalla riga di comando](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
-| **Eseguire la profilatura del codice nei computer senza Visual Studio:** è possibile usare il profiler autonomo degli strumenti di profilatura per raccogliere dati per le applicazioni nei computer in cui non è installato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. | -   [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md) |
+| **Creare report con estensione xml e csv:** la profilatura al prompt dei comandi crea file di dati che possono essere visualizzati nell'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È anche possibile generare file di dati con estensione *xml* o con valori delimitati da virgole (con estensione *csv*) usando lo strumento da riga di comando VSPerfReport. | -   [Creare report del profiler dalla riga di comando](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
+| **Eseguire la profilatura del codice nei computer senza Visual Studio:** è possibile usare il profiler autonomo degli Strumenti di profilatura per raccogliere dati per le applicazioni nei computer in cui non è installato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. | -   [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md) |
   
 ## <a name="reference"></a>Riferimenti  
  [Informazioni di riferimento sugli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)  

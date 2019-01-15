@@ -2,7 +2,6 @@
 title: Analizzare l'utilizzo della memoria di JavaScript nelle app UWP | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962376"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.
@@ -99,7 +98,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 -   [Visualizzare le differenze di uno snapshot](#view-a-snapshot-diff). Mostra i valori differenti tra gli snapshot. Queste visualizzazioni mostrano le differenze nelle dimensioni e nei conteggi degli oggetti.  
   
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
- Questi passaggi forniscono un flusso di lavoro che può aiutarti a usare JavaScript Memory Analyzer in modo più efficace. Queste operazioni possono essere utili se ritieni che l'app abbia una perdita di memoria. Per un'esercitazione che consente di eseguire in modo guidato il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Questi passaggi forniscono un flusso di lavoro che può aiutarti a usare JavaScript Memory Analyzer in modo più efficace. Queste operazioni possono essere utili se ritieni che l'app abbia una perdita di memoria. Per un'esercitazione che descriva in dettaglio il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Apri l'app in Visual Studio.  
   
@@ -141,7 +140,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
   
     - Dimensioni heap differenziali (collegamento a sinistra sotto le dimensioni dell'heap). Il testo del collegamento mostra la differenza tra le dimensioni heap dello snapshot corrente e quelle dello snapshot precedente.  
   
-    - Conteggio oggetti differenziale (collegamento a destra sotto il conteggio oggetti). Il testo del collegamento mostra due valori, ad esempio +1858 / -1765. Il primo è il numero di nuovi oggetti aggiunti rispetto allo snapshot precedente, mentre il secondo valore indica il numero di oggetti rimossi dallo snapshot precedente.  
+    - Conteggio oggetti differenziale (collegamento a destra sotto il conteggio oggetti). Il testo del collegamento visualizza due valori (ad esempio +1858/-1765): il primo è il numero di nuovi oggetti aggiunti e il secondo indica il numero di oggetti rimossi dopo la creazione dello snapshot precedente.  
   
       Con questi collegamenti viene aperta una visualizzazione dettagli snapshot differenziale dei tipi sull'heap, ordinati in base alle dimensioni o al conteggio oggetti mantenuti, a seconda del collegamento aperto.  
   
@@ -197,7 +196,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
   
 -   Conteggio oggetti. Questo conteggio mostra solo gli oggetti creati nell'app ed esclude quelli incorporati creati dal runtime JavaScript. Il conteggio di oggetti è un collegamento alla visualizzazione Tipi dei dettagli dello snapshot.  
   
--   Conteggio oggetti differenziale. Sono riportati due valori: il primo è il numero di nuovi oggetti aggiunti rispetto allo snapshot precedente e il secondo valore indica il numero di oggetti rimossi dallo snapshot precedente. Ad esempio, la figura mostra che sono stati aggiunti 1.859 oggetti e che ne sono stati rimossi 1.733 dopo lo snapshot n.1. Questo valore è seguito da una freccia su rossa se il conteggio oggetti totale è aumentato o da una freccia giù verde se è diminuito. Se il conteggio oggetti rimane invariato, verrà visualizzato il testo **Nessuna modifica** anziché un numero. Per il primo snapshot, verrà visualizzato il testo **Linea di base**. Il conteggio oggetti differenziale è collegato alla visualizzazione Tipi delle differenze dello snapshot.  
+-   Conteggio oggetti differenziale. Visualizza due valori: il primo è il numero di nuovi oggetti aggiunti e il secondo indica il numero di oggetti rimossi dopo la creazione dello snapshot precedente. Ad esempio, la figura mostra che sono stati aggiunti 1.859 oggetti e che ne sono stati rimossi 1.733 dopo lo snapshot n.1. Questo valore è seguito da una freccia su rossa se il conteggio oggetti totale è aumentato o da una freccia giù verde se è diminuito. Se il conteggio oggetti rimane invariato, verrà visualizzato il testo **Nessuna modifica** anziché un numero. Per il primo snapshot, verrà visualizzato il testo **Linea di base**. Il conteggio oggetti differenziale è collegato alla visualizzazione Tipi delle differenze dello snapshot.  
   
 -   Schermata creata al momento dell'acquisizione dello snapshot.  
   
@@ -282,7 +281,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
  Poiché ogni visualizzazione dispone di un filtro, il filtro non viene mantenuto quando passi a un'altra visualizzazione.  
   
 ## <a name="find-an-object-in-the-object-tree"></a>Trovare un oggetto nella struttura ad albero di oggetti  
- Nelle visualizzazioni Tipi e Dominatori puoi vedere la relazione di un oggetto specifico con l'oggetto `Global`. Gli oggetti la cui radice è l'oggetto `Global` non verranno sottoposti a Garbage Collection. Puoi trovare con facilità un oggetto noto nella visualizzazione radice senza cercare nell'intero albero di oggetti `Global` . A questo scopo, apri il menu di scelta rapida per un oggetto nella visualizzazione dominatori o tipo e scegli **Mostra in visualizzazione radice**.  
+ Nelle visualizzazioni Tipi e Dominatori puoi vedere la relazione di un oggetto specifico con l'oggetto `Global` . Gli oggetti la cui radice è l'oggetto `Global` non verranno sottoposti a Garbage Collection. Puoi trovare con facilità un oggetto noto nella visualizzazione radice senza cercare nell'intero albero di oggetti `Global` . A questo scopo, apri il menu di scelta rapida per un oggetto nella visualizzazione dominatori o tipo e scegli **Mostra in visualizzazione radice**.  
   
 ## <a name="view-shared-object-references"></a>Visualizzare riferimenti a oggetti condivisi  
  Nelle visualizzazioni Tipi e Dominatori il riquadro inferiore contiene un elenco di riferimenti a oggetti che contiene riferimenti condivisi. Quando scegli un oggetto nel riquadro superiore, nell'elenco dei riferimenti a oggetti vengono visualizzati tutti gli oggetti che puntano a tale oggetto.  
@@ -359,7 +358,7 @@ if (performance && performance.mark) {
   
     -   Con alcuni oggetti viene fornito un metodo `dispose` , oltre a consigli per l'uso. Ad esempio, è necessario chiamare `dispose` in un oggetto [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) se si chiama il metodo `createFiltered` dell'elenco e quindi si esce dalla pagina.  
   
-    -   Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+    -   Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).  
   
 -   Guardare l'ultima parte di [questo video](https://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 su JavaScript Memory Analyzer.  
   

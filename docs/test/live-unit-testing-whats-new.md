@@ -2,7 +2,6 @@
 title: Novità di Live Unit Testing
 ms.date: 10-11-2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2f032d062a751186c0abdaa37e5fb451d981e4c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962756"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novità di Live Unit Testing
 
@@ -35,11 +34,11 @@ A partire da Visual Studio 2017 versione 15.4, Live Unit Testing include miglior
 
 - **Integrazione con le notifiche del centro attività**. L'IDE di Visual Studio consente ora di visualizzare una notifica dell'elaborazione in background di Live Unit Testing nel centro attività, in modo che gli utenti possano stabilire facilmente ciò che accade quando Live Unit Testing è abilitato. Ciò contribuisce a risolvere il problema chiave dell'avvio di Live Unit Testing in una soluzione di grandi dimensioni. In precedenza, per alcuni minuti precedenti la visualizzazione delle icone di code coverage, gli utenti non potevano stabilire se Live Unit Testing fosse effettivamente abilitato e in esecuzione. Ora non è più così.
 
-- **Supporto della versione 1 del framework MSTest**. Live Unit Testing usa tre framework di unit test di grande diffusione: xUnit, NUnit e MSTest. In precedenza, Live Unit Testing funzionava solo quando i progetti di unit test MSTest usavano la versione 2 di MSTest. A partire da Visual Studio 2017 versione 15.4, è supportata anche la versione 1 di MSTest. 
+- **Supporto per la versione 1 del framework MSTest**: Live Unit Testing usa tre framework di testing unità di grande diffusione: xUnit, NUnit e MSTest. In precedenza, Live Unit Testing funzionava solo quando i progetti di unit test MSTest usavano la versione 2 di MSTest. A partire da Visual Studio 2017 versione 15.4, è supportata anche la versione 1 di MSTest. 
 
-- **Prestazioni e affidabilità**: Live Unit Testing ora assicura una migliore capacità di rilevamento da parte del sistema del caricamento completo dei progetti, evitando così che Live Unit Testing venga interrotto. I miglioramenti delle prestazioni di compilazione evitano anche che i progetti MSBuild vengano sottoposti a una nuova valutazione se il sistema rileva che non è stata apportata alcuna modifica al file di progetto.  
+- **Prestazioni e affidabilità**: Live Unit Testing ora assicura una migliore capacità di rilevamento di un eventuale caricamento incompleto dei progetti, evitando così l'arresto anomalo. I miglioramenti delle prestazioni di compilazione evitano anche che i progetti MSBuild vengano sottoposti a una nuova valutazione se il sistema rileva che non è stata apportata alcuna modifica al file di progetto.  
 
-- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. Ora è accessibile da **Strumenti** > **Opzioni** > **Live Unit Testing** selezionando **Delete Persisted Data** (Elimina dati persistenti).
+- **Miglioramenti vari dell'interfaccia utente**:  l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi), disponibile se si fa clic con il pulsante destro del mouse, è stata rinominata in **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing), perché creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. Ora è accessibile da **Strumenti** > **Opzioni** > **Live Unit Testing** selezionando **Delete Persisted Data** (Elimina dati persistenti).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Novità di Live Unit Testing per Visual Studio 2017 versione 15.3
 
@@ -67,4 +66,3 @@ Oltre a queste aggiunte principali, Live Unit Testing include anche i migliorame
 ## <a name="see-also"></a>Vedere anche
 - [Introduzione di Live Unit Testing](live-unit-testing-intro.md)   
 - [Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
-

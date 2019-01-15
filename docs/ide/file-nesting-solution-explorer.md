@@ -3,19 +3,18 @@ title: Regole di annidamento in Esplora soluzioni
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831154"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizzare l'annidamento file in Esplora soluzioni
 
@@ -52,7 +51,7 @@ Si esamineranno ora il nodo **dependentFileProviders** e i suoi nodi figlio. Ogn
 
 * **extensionToExtension**: usare questo tipo di regola per annidare *file.js* in *file.ts*
 
-* **fileSuffixToExtension**: usare questo tipo di regola per annidare *file-vsdoc.js* in *file.js*
+* **fileSuffixToExtension**: usare questo tipo di regola per annidare *file-vsdoc.js* in *file.ts*
 
 * **addedExtension**: usare questo tipo di regola per annidare *file.html.css* in *file.html*
 

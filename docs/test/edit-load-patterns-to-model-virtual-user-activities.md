@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895301"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942096"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -60,7 +59,7 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 
 - **Numero utenti iniziale**: 100
 
-- **Numero massimo utenti**: 2.000
+- **Numero massimo utenti**: 2,000
 
 - **Intervallo passaggi (secondi)**: 1.800
 
@@ -112,10 +111,10 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Specifica del modello di carico iniziale per il test di carico:** quando si crea un test di carico tramite la **Creazione guidata test di carico**, è necessario selezionare un modello di carico.|-   [Cambiare il modello di carico](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**Modifica del modello di carico per il test di carico:** dopo aver creato il test di carico, è possibile modificare il modello di carico tramite l'**Editor test di carico**.|-   [Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Specifica dell'eventuale inclusione di dati della cache Web da parte di utenti virtuali nello scenario di test di carico:** è possibile modificare la proprietà **Percentuale di nuovi utenti** affinché influisca sulla modalità di simulazione con cui il test di carico simula la memorizzazione nella cache Web che verrebbe eseguita da un Web browser per gli utenti virtuali.|-   [Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Specifica del tempo di preparazione passaggio per un modello di carico passaggio**: la proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti).|-   [Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Specifica del modello di carico iniziale per il test di carico:** quando si crea un test di carico usando la **Creazione guidata test di carico**, si seleziona un modello di carico.|-   [Cambiare il modello di carico](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Modifica del modello di carico per il test di carico:** dopo aver creato il test di carico, è possibile modificare il modello di carico nell'**Editor test di carico**.|-   [Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Specifica dell'eventuale inclusione di dati della cache Web da parte di utenti virtuali nello scenario di test di carico:** è possibile modificare la proprietà **Percentuale di nuovi utenti** per influire sul modo in cui il test di carico simula la memorizzazione nella cache Web che verrebbe eseguita da un Web browser per gli utenti virtuali.|-   [Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Specifica del tempo di preparazione passaggio per un modello di carico passaggio:** la proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti).|-   [Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Cambiare il modello di carico
 
