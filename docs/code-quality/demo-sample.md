@@ -1,8 +1,7 @@
 ---
-title: Esempio di progetto di C++ per l'analisi del codice
+title: Esempio di progetto C++ per l'analisi del codice
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
@@ -13,60 +12,60 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: aafbaaf682852adaea8f20a1373ea1ae4b025fad
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
-ms.translationtype: MT
+ms.openlocfilehash: ad5a7d3b2c13b603fd3a9f523563c844dda8b67d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852505"
 ---
-# <a name="sample-c-project-for-code-analysis"></a>Esempio di progetto di C++ per l'analisi del codice
+# <a name="sample-c-project-for-code-analysis"></a>Esempio di progetto C++ per l'analisi del codice
 
-Queste procedure seguenti viene illustrato come creare l'esempio per [procedura dettagliata: codice di analisi C/C++ per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Creano le procedure:
+Le procedure seguenti illustrano come creare un esempio per la [Procedura dettagliata: Analizzare il codice C/C++ per rilevarne i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:
 
-- Una soluzione di Visual Studio denominata CppDemo.
+- Una soluzione di Visual Studio con nome CppDemo.
 
-- Un progetto di libreria statica denominato CodeDefects.
+- Un progetto di libreria statica con nome CodeDefects.
 
-- Un progetto di libreria statica denominata annotazioni.
+- Un progetto di libreria statica con nome Annotations.
 
-Le procedure forniscono inoltre il codice per l'intestazione e *cpp* file per le librerie statiche.
+Le procedure specificano anche il codice per l'intestazione e i file con estensione *cpp* per le librerie statiche.
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Creare la soluzione CppDemo e il progetto CodeDefects
 
-1. Fare clic su di **File** dal menu **New**, quindi fare clic su **nuovo progetto**.
+1. Fare clic sul menu **File**, scegliere **Nuovo** e fare clic su **Nuovo progetto**.
 
-2. Nel **tipi di progetto** struttura ad albero di elenco, se Visual C++ non è la lingua predefinita in Visual Studio espandere **altri linguaggi**.
+2. Nell'elenco ad albero **Tipo progetto** espandere **Altri linguaggi** se Visual C++ non è il linguaggio predefinito in Visual Studio.
 
-3. Espandere **Visual C++**, quindi fare clic su **generale**.
+3. Espandere **Visual C++**, quindi fare clic su **Generale**.
 
-4. In **modelli**, fare clic su **progetto vuoto**.
+4. In **Modelli** fare clic su **Progetto vuoto**.
 
-5. Nel **nome** nella casella di testo **CodeDefects**.
+5. Nella casella di testo **Nome** digitare **CodeDefects**.
 
-6. Selezionare il **Crea directory per soluzione** casella di controllo.
+6. Selezionare la casella di controllo **Crea directory per soluzione**.
 
-7. Nel **Nome soluzione** nella casella di testo **CppDemo**.
+7. Nella casella di testo **Nome soluzione** digitare **CppDemo**.
 
-## <a name="configure-the-codedefects-project-as-a-static-library"></a>Configurare il progetto CodeDefects come una libreria statica
+## <a name="configure-the-codedefects-project-as-a-static-library"></a>Configurare il progetto CodeDefects come libreria statica
 
-1. In Esplora soluzioni fare doppio clic su **CodeDefects** e quindi fare clic su **proprietà**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse su **CodeDefects** e fare clic su **Proprietà**.
 
-2. Espandere **le proprietà di configurazione** e quindi fare clic su **generale**.
+2. Espandere **Proprietà di configurazione** e fare clic su **Generale**.
 
-3. Nel **generale** elenco, selezionare il testo nella colonna accanto a **estensione di destinazione**, quindi digitare **lib**.
+3. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
 
-4. In **impostazioni predefinite progetto**, fare clic sulla colonna accanto a **tipo di configurazione**, quindi fare clic su **libreria statica (lib)**.
+4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)**.
 
-## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere il file di origine e di intestazione al progetto CodeDefects.
+## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere l'intestazione e il file di origine al progetto CodeDefects
 
-1. In Esplora soluzioni, espandere **CodeDefects**, fare doppio clic su **file di intestazione**, fare clic su **Aggiungi**, quindi fare clic su **nuovo elemento**.
+1. In Esplora soluzioni espandere **CodeDefects**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.
 
-2. Nel **Aggiungi nuovo elemento** la finestra di dialogo, fare clic su **codice**, quindi fare clic su **File di intestazione (h)**.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)**.
 
-3. Nel **nome** , digitare **Bug.h** e quindi fare clic su **Aggiungi**.
+3. Nella casella **Nome** digitare **Bug.h** e quindi fare clic su **Aggiungi**.
 
-4. Copiare il codice seguente e incollarlo nella *Bug.h* file nell'editor di Visual Studio.
+4. Copiare il codice seguente e incollarlo nel file *Bug.h* nell'editor di Visual Studio.
 
     ```cpp
     #include <windows.h>
@@ -88,13 +87,13 @@ Le procedure forniscono inoltre il codice per l'intestazione e *cpp* file per le
     const int ACCOUNT_DOMAIN_LEN = 128;
     ```
 
-5. In Esplora soluzioni fare doppio clic su **i file di origine**, scegliere **New**, quindi fare clic su **nuovo elemento**.
+5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.
 
-6. Nel **Aggiungi nuovo elemento** finestra di dialogo, fare clic su **File C++ (. cpp)**
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)**.
 
-7. Nel **nome** digitare **bug** e quindi fare clic su **Aggiungi**.
+7. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.
 
-8. Copiare il codice seguente e incollarlo nella *bug. cpp* file nell'editor di Visual Studio.
+8. Copiare il codice seguente e incollarlo nel file *Bug.cpp* nell'editor di Visual Studio.
 
     ```cpp
     #include <stdlib.h>
@@ -154,33 +153,33 @@ Le procedure forniscono inoltre il codice per l'intestazione e *cpp* file per le
     }
     ```
 
-9. Fare clic su di **File** menu e quindi fare clic su **Salva tutto**.
+9. Fare clic sul menu **File** e quindi fare clic su **Salva tutto**.
 
-## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Aggiungere il progetto di annotazioni e lo configura come una libreria statica
+## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Aggiungere il progetto Annotations e configurarlo come libreria statica
 
-1. In Esplora soluzioni, fare clic su **CppDemo**, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
+1. In Esplora soluzioni fare clic su **CppDemo**, scegliere **Aggiungi** e quindi fare clic su **Nuovo progetto**.
 
-2. Nel **Aggiungi nuovo progetto** finestra di dialogo espandere Visual C++, fare clic su **generale**, quindi fare clic su **progetto vuoto**.
+2. Nella finestra di dialogo **Aggiungi nuovo progetto** espandere Visual C++, fare clic su **Generale** e quindi fare clic su **Progetto vuoto**.
 
-3. Nel **nome** nella casella di testo **annotazioni**, quindi fare clic su **Aggiungi**.
+3. Nella casella di testo **Nome** digitare **Annotations** e quindi fare clic su **Aggiungi**.
 
-4. In Esplora soluzioni fare doppio clic su **annotazioni** e quindi fare clic su **proprietà**.
+4. In Esplora soluzioni fare clic con il pulsante destro del mouse su **Annotations** e fare clic su **Proprietà**.
 
-5. Espandere **le proprietà di configurazione** e quindi fare clic su **generale**.
+5. Espandere **Proprietà di configurazione** e fare clic su **Generale**.
 
-6. Nel **generale** elenco, selezionare il testo nella colonna accanto a **estensione di destinazione**, quindi digitare **lib**.
+6. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
 
-7. In **impostazioni predefinite progetto**, fare clic sulla colonna accanto a **tipo di configurazione**, quindi fare clic su **libreria statica (lib)**.
+7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)**.
 
-## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto di annotazioni
+## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto Annotations
 
-1. In Esplora soluzioni, espandere **annotazioni**, fare doppio clic su **file di intestazione**, fare clic su **Aggiungi**, quindi fare clic su **nuovo elemento**.
+1. In Esplora soluzioni espandere **Annotations**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.
 
-2. Nel **Aggiungi nuovo elemento** la finestra di dialogo, fare clic su **File di intestazione (h)**.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)**.
 
-3. Nel **nome** digitare **Annotations. h** e quindi fare clic su **Aggiungi**.
+3. Nella casella di testo **Nome** digitare **annotations.h** e quindi fare clic su **Aggiungi**.
 
-4. Copiare il codice seguente e incollarlo nella *Annotations. h* file nell'editor di Visual Studio.
+4. Copiare il codice seguente e incollarlo nel file *annotations.h* nell'editor di Visual Studio.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -197,13 +196,13 @@ Le procedure forniscono inoltre il codice per l'intestazione e *cpp* file per le
 
     ```
 
-5. In Esplora soluzioni fare doppio clic su **i file di origine**, scegliere **New**, quindi fare clic su **nuovo elemento**.
+5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.
 
-6. Nel **Aggiungi nuovo elemento** finestra di dialogo, fare clic su **codice** e quindi fare clic su **File C++ (. cpp)**
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)**.
 
-7. Nel **nome** digitare **Annotations. cpp** e quindi fare clic su **Aggiungi**.
+7. Nella casella di testo **Nome** digitare **annotations.cpp** e quindi fare clic su **Aggiungi**.
 
-8. Copiare il codice seguente e incollarlo nella *Annotations. cpp* file nell'editor di Visual Studio.
+8. Copiare il codice seguente e incollarlo nel file *annotations.cpp* nell'editor di Visual Studio.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -232,4 +231,4 @@ Le procedure forniscono inoltre il codice per l'intestazione e *cpp* file per le
 
     ```
 
-9. Fare clic su di **File** menu e quindi fare clic su **Salva tutto**.
+9. Fare clic sul menu **File** e quindi fare clic su **Salva tutto**.

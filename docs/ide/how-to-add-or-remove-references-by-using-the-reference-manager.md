@@ -2,7 +2,6 @@
 title: Aggiungere riferimenti in Gestione riferimenti
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,12 +22,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856280"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -72,7 +71,7 @@ La scheda **Assembly** è costituita da due sottoschede:
 
 1. In **Framework** sono elencati tutti gli assembly che costituiscono il framework di destinazione.
 
-    I progetti per le app Windows 8.x Store contengono riferimenti a tutti gli assembly di [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] di destinazione per impostazione predefinita al momento della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero framework. Nella scheda **Framework**, pertanto, non verranno enumerati gli assembly provenienti dal framework e verrà invece visualizzato il messaggio seguente: "Si è già fatto riferimento a tutti gli assembly del framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework". Per i progetti desktop, nella scheda **Framework** vengono enumerati gli assembly dal framework di destinazione e l'utente dovrà aggiungere i riferimenti necessari all'applicazione.
+    I progetti per le app Windows 8.x Store contengono riferimenti a tutti gli assembly di [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] di destinazione per impostazione predefinita al momento della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero framework. Pertanto nella scheda **Framework** non vengono enumerati gli assembly provenienti dal framework e viene invece visualizzato il messaggio seguente: "Si è già fatto riferimento a tutti gli assembly del framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework". Per i progetti desktop, nella scheda **Framework** vengono enumerati gli assembly dal framework di destinazione e l'utente dovrà aggiungere i riferimenti necessari all'applicazione.
 
 2. In **Estensioni** sono elencati tutti gli assembly che i fornitori esterni di componenti e di controlli hanno sviluppato per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.
 
@@ -155,7 +154,7 @@ La scheda **Windows** elenca tutti gli SDK specifici per le piattaforme nelle qu
 
 È possibile generare un file WinMD in Visual Studio in due modi:
 
-- **Progetti gestiti per app Windows 8.x Store**: i progetti per app Windows 8.x Store possono generare file binari WinMD impostando **Proprietà progetto** > **Tipo di output = file WinMD**. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi `A.B` e `A.B.C`, i nomi possibili per il file WinMD generato saranno *A.winmd* e *A.B.winmd*. Se un utente immette un valore **Proprietà progetto** > **Nome assembly** o **Proprietà progetto** > **Spazio dei nomi** che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file .winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. Impossibile trovare nel runtime i tipi che non esistono in questo spazio dei nomi secondario. In questo assembly, lo spazio dei nomi comune più piccolo è `CSWSClassLibrary1`. Un progetto desktop Visual Basic o C# può usare solo file WinMD generati tramite SDK Windows 8, noti come WinMD del produttore, e non può generare WinMD.
+- **Progetti gestiti per app Windows 8.x Store**: i progetti gestiti per app Windows 8.x Store possono generare file binari WinMD mediante l'impostazione di **Proprietà progetto** > **Tipo di output = File WinMD**. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi `A.B` e `A.B.C`, i nomi possibili per il file WinMD generato saranno *A.winmd* e *A.B.winmd*. Se un utente immette un valore **Proprietà progetto** > **Nome assembly** o **Proprietà progetto** > **Spazio dei nomi** che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file .winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. Impossibile trovare nel runtime i tipi che non esistono in questo spazio dei nomi secondario. In questo assembly, lo spazio dei nomi comune più piccolo è `CSWSClassLibrary1`. Un progetto desktop Visual Basic o C# può usare solo file WinMD generati tramite SDK Windows 8, noti come WinMD del produttore, e non può generare WinMD.
 
 - **Progetti nativi per app Windows 8.x Store**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.
 
@@ -165,7 +164,7 @@ La scheda **Windows** è costituita da due sottogruppi.
 
 Il sottogruppo di **base** elenca tutti i file WinMD (per gli elementi Windows Runtime) nell'SDK per la versione di Windows di destinazione.
 
-I progetti per app Windows 8.x Store contengono riferimenti a tutti i file WinMD in Windows 8 SDK per impostazione predefinita al momento della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero Windows 8 SDK. Di conseguenza, nel sottogruppo di **base** in **Gestione riferimenti** non verrà enumerato alcun assembly da Windows 8 SDK e verrà visualizzato invece il messaggio "‪Si è già fatto riferimento all'SDK Windows. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nell'SDK Windows".
+I progetti per app Windows 8.x Store contengono riferimenti a tutti i file WinMD in Windows 8 SDK per impostazione predefinita al momento della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero Windows 8 SDK. Di conseguenza, nel sottogruppo **Base** in **Gestione riferimenti** non viene enumerato nessun assembly di Windows 8 SDK e viene invece visualizzato il messaggio seguente: "‪Si è già fatto riferimento all'SDK Windows. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nell'SDK Windows".
 
 Per impostazione predefinita, nei progetti desktop il sottogruppo di **base** non viene visualizzato. È possibile aggiungere Windows Runtime aprendo il menu di scelta rapida del nodo del progetto, scegliendo **Scarica progetto**, aggiungendo il frammento seguente e riaprendo il progetto (nel nodo del progetto scegliere **Ricarica progetto**). Quando si richiama la finestra di dialogo **Gestione riferimenti**, viene visualizzato il sottogruppo di **base**.
 

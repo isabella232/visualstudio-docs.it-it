@@ -3,7 +3,6 @@ title: Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dat
 description: Questo carico di lavoro di Visual Studio riunisce Python, R, F# e le rispettive distribuzioni di runtime, inclusa Anaconda.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ebaf77963968edd61aa0109c7b16964af7fac90c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891164"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
@@ -64,11 +63,11 @@ L'esecuzione del codice nella posizione in cui si trovano già i dati offre i va
 
 - **Semplicità di distribuzione**: quando un modello R o Python è pronto, per la sua distribuzione nell'ambiente di produzione è sufficiente incorporarlo in uno script T-SQL. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche di R o Python.
 
-- **Prestazioni e scalabilità di livello aziendale**: è possibile usare funzionalità avanzate di SQL Server come le tabelle in memoria e gli indici columnstore con le API scalabile ad alte prestazioni nei pacchetti RevoScaleR e RevoScalePy. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
+- **Prestazioni e scalabilità di livello aziendale**: è possibile usare funzionalità avanzate di SQL Server come le tabelle in memoria e gli indici columnstore con le API scalabili con prestazioni elevate nei pacchetti RevoScaleR e RevoScalePy. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
 
-- **Ampia estendibilità**: è possibile installare ed eseguire qualsiasi pacchetto R o Python open source tra i più recenti in SQL Server per realizzare applicazioni per l'apprendimento avanzato e AI su enormi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
+- **Ampia estendibilità**: è possibile installare ed eseguire qualsiasi pacchetto R o Python open source tra i più recenti in SQL Server per realizzare applicazioni per Deep Learning e AI su enormi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
 
-- **Disponibilità estesa senza costi aggiuntivi**: sono disponibili integrazioni R e Python in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa l'edizione Express. (Il supporto di R è disponibile in SQL Server 2016 e versioni successive.)
+- **Disponibilità estesa senza costi aggiuntivi**: sono disponibili integrazioni R e Python in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa la Express Edition. (Il supporto di R è disponibile in SQL Server 2016 e versioni successive.)
 
 Per sfruttare al meglio l'integrazione in SQL Server, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Elaborazione ed archiviazione dati** con l'opzione **SQL Server Data Tools**. Questa opzione abilita SQL IntelliSense, l'evidenziazione della sintassi e la distribuzione.
 
