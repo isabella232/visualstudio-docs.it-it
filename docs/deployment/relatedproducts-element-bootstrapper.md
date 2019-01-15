@@ -1,8 +1,6 @@
 ---
 title: '&lt;RelatedProducts&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2ad76eb01e17f76bff0f1f81941675ad670a24ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967385"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (programma di avvio automatico)
 Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono inclusi nel prodotto corrente.  
@@ -51,7 +49,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
 </RelatedProducts>  
 ```  
   
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `RelatedProducts` elemento è figlio di `Product` elemento. Non dispone di attributi.  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  
@@ -59,7 +57,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
   
  `DependsOnProduct` ha l'attributo seguente.  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
   
@@ -71,7 +69,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
   
  `IncludesProduct` ha l'attributo seguente.  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
   

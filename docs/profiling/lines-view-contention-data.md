@@ -1,8 +1,6 @@
 ---
 title: 'Visualizzazione Righe: dati sui conflitti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0afb540a314d1e980e9b0a6ccace0b36145cce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905426"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.  
@@ -40,7 +38,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
   
   La tabella seguente descrive le colonne del rapporto Visualizzazione Righe.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Quantità di tempo durante la quale è stata impedita l'esecuzione del codice nell'istruzione a causa di un evento di conflitto. Non è incluso il tempo di blocco nelle funzioni chiamate dall'istruzione.|  
 |**% tempo blocco esclusivo**|Percentuale di tutto il tempo di blocco nel processo che costituiva il tempo di blocco esclusivo dell'istruzione.|  
@@ -65,7 +63,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Righe](../profiling/lines-view.md)   
  [Visualizzazione Righe: campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)

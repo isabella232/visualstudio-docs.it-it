@@ -3,7 +3,6 @@ title: Suggerimenti sull'accessibilità per Visual Studio
 description: Altre informazioni su suggerimenti e consigli che consentono di rendere l'ambiente di sviluppo integrato (IDE) di Visual Studio più accessibile da usare per tutti gli utenti, compresi gli utenti disabili.
 ms.date: 09/15/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929588"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
 
@@ -50,7 +49,7 @@ L'editor di Visual Studio comprende molte "aree di controllo" del testo che cons
 
 Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre degli strumenti. Le combinazioni di tasti di scelta rapida seguenti consentono di accedervi.
 
-|Funzionalità|Descrizione|Combinazione di tasti|
+|Funzionalità|Description|Combinazione di tasti|
 |-------------|-----------------| - |
 |Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **CTRL** + **TAB**|
 |Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**MAIUSC** + **ALT**|
@@ -60,12 +59,12 @@ Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre
 
 Tra le altre combinazioni di tasti utili ricordiamo le seguenti.
 
-|Funzionalità|Descrizione|Combinazione di tasti|
+|Funzionalità|Description|Combinazione di tasti|
 |-------------|-----------------| - |
-|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **Nota:** scelta rapida standard di Windows|**ALT di sinistra + MAIUSC di sinistra + STAMP**|
-|Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **Nota:** scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
-|Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **Nota:** scelta rapida standard di Windows|**MAIUSC** + **F10**|
-|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Scegliere **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio selezionare **ALT** + **F** + **O** + **P**.  <br><br> **Nota:** scelta rapida standard di Windows|**ALT** + **[lettera]**|
+|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **NOTA:** scelta rapida standard di Windows|**ALT di sinistra + MAIUSC di sinistra + STAMP**|
+|Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **NOTA:** scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
+|Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **NOTA:** scelta rapida standard di Windows|**MAIUSC** + **F10**|
+|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Scegliere **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio selezionare **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** scelta rapida standard di Windows|**ALT** + **[lettera]**|
 |Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL** + **Freccia SU**<br /><br /> e<br /><br /> **CTRL** + **Freccia GIÙ**|
 |Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un form o finestra di progettazione.|**INVIO**|
 |Tastiera, Ambiente, finestra di dialogo Opzioni|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**BACKSPACE**|

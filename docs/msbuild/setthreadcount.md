@@ -1,8 +1,6 @@
 ---
 title: SetThreadCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 apiname:
 - SetThreadCount
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc9a1ae5f7fb51981f3cebc4d6fa658f614de6d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 13e7e2bb1ecabc67f60da7b2d4c68b413fa9cf92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844366"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Imposta il conteggio dei thread globale e assegna tale conteggio al thread corrente.  
@@ -41,4 +39,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  **HRESULT** con il bit **SUCCEEDED** impostato se il conteggio thread è stato aggiornato.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:**  *FileTracker.h*
+ **Intestazione:** *FileTracker.h*

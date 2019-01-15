@@ -2,7 +2,6 @@
 title: Disegnare forme e tracciati
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942645"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 
@@ -85,7 +84,7 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottima n
 ##  <a name="Convert"></a> Convertire una forma in un tracciato
  Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato.
 
- **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Uso di tracciati: convertire una forma in un tracciato).
+ **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: Convertire una forma in un tracciato](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 ##  <a name="Combine"></a> Combinare tracciati
  È possibile combinare forme e tracciati in un unico tracciato.
@@ -98,7 +97,7 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottima n
 |![Escludi sovrapposizione](../designers/media/b1_2.png)|Unisci|![](../designers/media/b1_5.png)|Escludi sovrapposizione|
 |![Sottrai](../designers/media/b1_3.png)|Dividi|![](../designers/media/b1_6.png)|Sottrai|
 
- **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (Uso di tracciati: combinare tracciati).
+ **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: Combinare tracciati](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ##  <a name="Compound"></a> Creare un tracciato composto
  Quando si crea un tracciato composto, eventuali parti del tracciato che si intersecano vengono sottratte dal risultato e il tracciato risultante assume le proprietà visive del percorso situato più in basso.
@@ -107,14 +106,14 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottima n
 
  ![Interrompere un tracciato composto](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (Uso di tracciati: creare un tracciato composto).
+ **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: Creare un tracciato composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ##  <a name="Clipping"></a> Creare un tracciato di ritaglio
  Un tracciato di ritaglio è un tracciato o una forma applicato a un altro oggetto, in modo da nascondere le parti dell'oggetto mascherato esterne al tracciato di ritaglio.
 
  ![Tracciato di ritaglio](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (Uso di tracciati: creare un tracciato di ritaglio).
+ **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: Creare un tracciato di ritaglio](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>Vedere anche
 

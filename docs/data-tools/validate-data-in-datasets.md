@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936191"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di conferma che i valori immessi negli oggetti di data è conforme ai vincoli all'interno dello schema del set di dati. Il processo di convalida verifica anche che questi valori sono i seguenti le regole che sono state stabilite per l'applicazione. È buona norma convalidare i dati prima dell'invio degli aggiornamenti al database sottostante. In questo modo si riduce gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.
@@ -40,9 +39,9 @@ Il modo migliore per aggiungere la convalida per l'applicazione è nel file di c
 ## <a name="validate-data"></a>Convalidare i dati
  L'operazione di convalida all'interno di un set di dati viene eseguita nei modi seguenti:
 
--   Quando si crea il proprio convalida specifiche dell'applicazione in grado di verificare i valori in una singola colonna dati durante le modifiche. Per altre informazioni, vedere [procedura: convalidare i dati durante la modifica delle colonne](validate-data-in-datasets.md).
+-   Quando si crea il proprio convalida specifiche dell'applicazione in grado di verificare i valori in una singola colonna dati durante le modifiche. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle colonne](validate-data-in-datasets.md).
 
--   Tramite la creazione di convalida personalizzata specifici dell'applicazione in grado di verificare i dati dei valori, mentre un intero data la modifica di riga. Per altre informazioni, vedere [procedura: convalidare i dati durante la modifica delle righe](validate-data-in-datasets.md).
+-   Tramite la creazione di convalida personalizzata specifici dell'applicazione in grado di verificare i dati dei valori, mentre un intero data la modifica di riga. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle righe](validate-data-in-datasets.md).
 
 -   Tramite la creazione di chiavi, vincoli unique, e così via come parte della definizione effettiva dello schema del set di dati.
 
@@ -66,7 +65,7 @@ Se l'applicazione usa un dataset tipizzato, è possibile creare gestori eventi f
 
 ## <a name="data-update-events"></a>Eventi di aggiornamento dati
 
-|event|Descrizione|
+|event|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Il valore in una colonna viene modificato. L'evento passa la riga e colonna, con il nuovo valore proposto.|
 |<xref:System.Data.DataTable.ColumnChanged>|Il valore in una colonna è stato modificato. L'evento passa la riga e colonna, insieme al valore proposto.|
@@ -90,7 +89,7 @@ Il <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowCh
 
 -   Rifiutare il valore proposto, impostando l'errore di colonna (<xref:System.Data.DataRow.SetColumnError%2A>) dall'interno del gestore eventi di modifica delle colonne.
 
--   Facoltativamente, usare un <xref:System.Windows.Forms.ErrorProvider> controllo per visualizzare un messaggio di errore all'utente. Per altre informazioni, vedere [sul componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+-   Facoltativamente, usare un <xref:System.Windows.Forms.ErrorProvider> controllo per visualizzare un messaggio di errore all'utente. Per altre informazioni, vedere [Componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.RowChanging> evento.
 
@@ -99,7 +98,7 @@ La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.R
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Per convalidare i dati quando una riga viene modificato (Visual Basic)
 
-1.  Aprire il set di dati nel **Progettazione Dataset**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il <xref:System.Data.DataTable.RowChanging> gestore dell'evento del <xref:System.Data.DataTable> nel file di classe parziale del set di dati.
 
@@ -108,9 +107,9 @@ La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.R
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>Per convalidare i dati quando viene modificata una riga (c#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>Per convalidare i dati quando viene modificata una riga (C#)
 
-1.  Aprire il set di dati nel **Progettazione Dataset**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea un file di classe parziale per il <xref:System.Data.DataTable>.
 
@@ -212,5 +211,5 @@ Passando il <xref:System.Data.DataRowVersion> valore con l'indice di colonna (o 
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Procedura: convalidare dati nel controllo DataGridView di Windows Form](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Procedura: visualizzare le icone di errore di convalida dei form con il componente ErrorProvider di Windows Form](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Procedura: Convalidare i dati nel controllo DataGridView di Windows Form](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Procedura: Visualizzare le icone di errore di convalida dei form con il componente ErrorProvider di Windows Form](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

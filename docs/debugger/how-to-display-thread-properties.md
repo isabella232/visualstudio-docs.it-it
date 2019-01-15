@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: visualizzare le proprietà Thread | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Visualizzare le proprietà Thread | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - thread properties
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc5b8d6dcf3cb6dc2a78bee626633103d5b1b18c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e011da42235fe62c86c7c2a12fee99b439b38421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851378"
 ---
-# <a name="how-to-display-thread-properties"></a>Procedura: visualizzare le proprietà thread
+# <a name="how-to-display-thread-properties"></a>Procedura: Visualizzare le proprietà del thread
 Per altre informazioni su un thread elencato nella [visualizzazione thread](../debugger/threads-view.md), utilizzare il [finestra di dialogo proprietà Thread](../debugger/thread-properties-dialog-box.md).  
   
 ### <a name="to-open-a-thread-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà Thread  

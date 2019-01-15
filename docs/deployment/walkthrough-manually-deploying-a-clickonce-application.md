@@ -1,8 +1,6 @@
 ---
 title: "Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923270"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce
 Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario usare le funzionalità avanzate di distribuzione, ad esempio la distribuzione di applicazioni attendibili, è consigliabile usare il *Mage.exe* lo strumento da riga di comando per creare la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. Questa procedura dettagliata viene descritto come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione con la versione della riga di comando (*Mage.exe*) o la versione con interfaccia grafica (*MageUI.exe*) della generazione del manifesto e Strumento di modifica.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -62,7 +60,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
    È necessario determinare se l'applicazione contiene un manifesto con informazioni di controllo Account utente (UAC), ad esempio un `<dependentAssembly>` elemento. Per esaminare un manifesto dell'applicazione, è possibile utilizzare il Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilità.  
   
-   Se l'applicazione contiene un manifesto con dettagli controllo dell'account utente, è necessario ricompilarla senza le informazioni di controllo dell'account utente. Per un progetto c# in Visual Studio, aprire le proprietà del progetto e selezionare la scheda dell'applicazione. Nel **Manifest** elenco a discesa, seleziona **Crea applicazione senza manifesto**. Per un progetto di Visual Basic in Visual Studio, aprire le proprietà del progetto, selezionare la scheda applicazione e fare clic su **impostazioni di controllo dell'account utente visualizzazione**. Nel file manifesto aperto, rimuovere tutti gli elementi all'interno di singolo `<asmv1:assembly>` elemento.  
+   Se l'applicazione contiene un manifesto con dettagli controllo dell'account utente, è necessario ricompilarla senza le informazioni di controllo dell'account utente. Per un C# del progetto in Visual Studio, aprire le proprietà del progetto e selezionare la scheda dell'applicazione. Nel **Manifest** elenco a discesa, seleziona **Crea applicazione senza manifesto**. Per un progetto di Visual Basic in Visual Studio, aprire le proprietà del progetto, selezionare la scheda applicazione e fare clic su **impostazioni di controllo dell'account utente visualizzazione**. Nel file manifesto aperto, rimuovere tutti gli elementi all'interno di singolo `<asmv1:assembly>` elemento.  
   
 - Determinare se l'applicazione richiede i prerequisiti nei computer client.  
   
@@ -151,7 +149,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
 13. Se si dispone di un certificato archiviato come file nel file system, usare il **firma con file di certificato** opzione e selezionare il certificato dal file system con i puntini di sospensione (**...** ) pulsante. Quindi digitare la password del certificato.  
   
-     oppure  
+     -oppure-  
   
      Se il certificato si trova in un archivio di certificati accessibile dal computer, selezionare la **firma con certificato archiviato** opzione e selezionare il certificato dall'elenco fornito.  
   
@@ -197,6 +195,6 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
 ## <a name="see-also"></a>Vedere anche  
  [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (Manifest Generation and Editing Tool, client grafico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

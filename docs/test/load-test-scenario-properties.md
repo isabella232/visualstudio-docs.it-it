@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843619"
 ---
 # <a name="load-test-scenario-properties"></a>Proprietà di uno scenario di test di carico
 
@@ -44,7 +43,7 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 |Proprietà|Definizione|
 |-|----------------|
 |**Agenti da utilizzare**|Specifica gli agenti che lo scenario deve usare se il test di carico viene eseguito in remoto. È, ad esempio, possibile specificare un determinato set di agenti, in modo da garantire la coerenza quando si analizzano le tendenze delle prestazioni. Gli agenti possono inoltre essere distribuiti geograficamente, in modo che vi sia affinità tra gli script eseguiti e la posizione dell'agente.<br /><br />Gli agenti devono essere separati da virgole, ad esempio "**Agent1, Agent2, Agent3**". Se si lascia vuota la proprietà, significa che nello scenario dovranno essere utilizzati tutti gli agenti disponibili.<br /><br />Per altre informazioni, vedere [Procedura: Specificare agenti di test da usare](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
-|**Applica distribuzione a ritardo velocità**|Valore booleano usato per specificare se si vogliono applicare ritardi di distribuzione tipici nel modello di combinazione di test di velocità dell'utente. Questa proprietà si applica solo se la proprietà **Tipo di combinazione di test** è impostata su **In base alla velocità dell'utente**.<br /><br />Per altre informazioni, vedere [Procedura: Applicare la distribuzione al ritardo velocità](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Applica distribuzione a ritardo velocità**|Valore booleano usato per specificare se si vogliono applicare ritardi di distribuzione tipici nel modello di combinazione di test di velocità dell'utente. Questa proprietà si applica solo se la proprietà **Tipo di combinazione di test** è impostata su **In base alla velocità dell'utente**.<br /><br />Per altre informazioni, vedere [Procedura: Applicare la distribuzione al ritardo velocità](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).|
 |**Commutazione IP**|Valore booleano usato per specificare se viene usata la commutazione IP.<br /><br />La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP diversi. In questo modo si simulano le chiamate provenienti da computer client diversi. La commutazione IP è importante negli scenari di test di una Web farm con bilanciamento del carico. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, è importante che le richieste provengano da un intervallo di indirizzi IP.<br /><br />La commutazione IP è disponibile solo con l'agente di test.|
 |**Numero massimo di iterazioni test**|Valore numerico utilizzato per specificare il numero massimo di test da eseguire nello scenario. Un valore 0 specifica che non viene impostato alcun valore massimo<br /><br />Per altre informazioni, vedere [Configurare iterazioni di test in uno scenario](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Percentuale di nuovi utenti**|Valore numerico che specifica la percentuale di utenti nuovi o che visitano per la prima volta lo scenario.<br /><br />Per altre informazioni, vedere [Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|

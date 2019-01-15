@@ -3,7 +3,6 @@ title: Funzionalità di accessibilità di Visual Studio
 description: Altre informazioni sulle funzionalità di accessibilità e utilità che consentono di rendere più accessibile sia il sistema operativo Windows sia il gruppo sviluppatore Visual Studio a tutti gli utenti, anche agli utenti disabili.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866478"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
@@ -48,13 +47,13 @@ Per altre informazioni, vedere i seguenti argomenti:
 
 -   [Procedura: Impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Procedura: utilizzare esclusivamente la tastiera](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Procedura: Usare esclusivamente la tastiera](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Vedere anche
 

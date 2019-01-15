@@ -1,8 +1,6 @@
 ---
 title: '&lt;punto di ingresso&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56996f83f0ac8d9e7b2bce81ab7e2c8e13faee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e37021c6c8492b0c882a84cbb88fe1cd9b5458e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950264"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto di ingresso&gt; elemento (applicazione ClickOnce)
 Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene eseguita in un computer client.  
@@ -51,12 +49,12 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 </entryPoint>  
 ```  
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  L'elemento `entryPoint` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v2` . Potrebbe essere presente solo un `entryPoint` elemento definito in un manifesto dell'applicazione.  
 
  L'elemento `entryPoint` presenta l'attributo seguente:  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`name`|Facoltativo. Questo valore non viene utilizzato da .NET Framework.|  
 
@@ -67,11 +65,11 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 
  Il `processorArchitecture` attributo di questo elemento e il `processorArchitecture` attributo definito nella `assemblyIdentity` altrove nell'applicazione manifesto deve corrispondere.  
 
-## <a name="commandline"></a>riga di comando  
+## <a name="commandline"></a>commandLine  
  Obbligatorio. Deve essere un figlio di `entryPoint` elemento. Non dispone di alcun elemento figlio e ha gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |--------------| - |
 | `file` | Obbligatorio. Un riferimento locale all'assembly di avvio per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo valore non può contenere barra (/) o una barra rovesciata (\\) separatori del percorso. |
 | `parameters` | Obbligatorio. Descrive l'azione da intraprendere con il punto di ingresso. È l'unico valore valido `run`; se viene fornita una stringa vuota, `run` presuppone. |
@@ -90,12 +88,12 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
 
- Un'applicazione che include l'elemento customUX deve fornire un programma di installazione personalizzato che usa il <xref:System.Deployment.Application.InPlaceHostingManager> classe per eseguire le operazioni di installazione. Un'applicazione con questo elemento non può essere installata facendo doppio clic sul relativo manifesto o setup.exe avvio automatico di prerequisiti. Il programma di installazione personalizzato è possibile creare le voci di menu Start, collegamenti e voci Aggiungi / Rimuovi programmi. Se il programma di installazione personalizzato non crea una voce in Installazione applicazioni, è necessario archiviare l'identificatore della sottoscrizione fornito per il <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> proprietà e consentono all'utente di disinstallare l'applicazione in un secondo momento chiamando il <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> (metodo). Per altre informazioni, vedere [procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Un'applicazione che include l'elemento customUX deve fornire un programma di installazione personalizzato che usa il <xref:System.Deployment.Application.InPlaceHostingManager> classe per eseguire le operazioni di installazione. Un'applicazione con questo elemento non può essere installata facendo doppio clic sul relativo manifesto o setup.exe avvio automatico di prerequisiti. Il programma di installazione personalizzato è possibile creare le voci di menu Start, collegamenti e voci Aggiungi / Rimuovi programmi. Se il programma di installazione personalizzato non crea una voce in Installazione applicazioni, è necessario archiviare l'identificatore della sottoscrizione fornito per il <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> proprietà e consentono all'utente di disinstallare l'applicazione in un secondo momento chiamando il <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> (metodo). Per altre informazioni, vedere [Procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
 
 ## <a name="remarks"></a>Note  
  Questo elemento identifica l'assembly e punto di ingresso per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
 
- Non è possibile usare `commandLine` passare parametri all'interno dell'applicazione in fase di esecuzione. È possibile accedere ai parametri della stringa di query per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione dell'applicazione <xref:System.AppDomain>. Per altre informazioni, vedere [procedura: recuperare le informazioni di stringa di Query in un'applicazione ClickOnce Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Non è possibile usare `commandLine` passare parametri all'interno dell'applicazione in fase di esecuzione. È possibile accedere ai parametri della stringa di query per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione dell'applicazione <xref:System.AppDomain>. Per altre informazioni, vedere [Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
 
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente illustra un' `entryPoint` elemento in un manifesto dell'applicazione per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo esempio di codice è parte di un esempio più esaustivo disponibile per il [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) argomento.  

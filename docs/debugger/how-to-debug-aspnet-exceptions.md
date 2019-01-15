@@ -35,17 +35,17 @@ Il debug delle eccezioni è una parte importante dello sviluppo di una potente a
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Per attivare il debug delle eccezioni ASP.NET con Just My Code  
   
-1.  Scegliere Eccezioni **dal menu Debug**.  
+1.  Scegliere **Eccezioni** dal menu **Debug**.  
   
-     Verrà visualizzata la finestra di dialogo Eccezioni **.  
+     Verrà visualizzata la finestra di dialogo **Eccezioni**.  
   
-2.  Nella riga Eccezioni Common Language Runtime **selezionare Generata** o Non gestita dall'utente **.  
+2.  Nella riga **Eccezioni Common Language Runtime** selezionare **Generata** o **Non gestita dall'utente**.  
   
-     Per utilizzare l'impostazione Non gestita dall'utente **, è necessario attivare Solo codice utente**.  
+     Per utilizzare l'impostazione **Non gestita dall'utente**, è necessario attivare **Just My Code**.  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Procedure ottimali per la gestione delle eccezioni ASP.NET  
   
--   Collocare blocchi `try ... catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Se, ad esempio, l'applicazione effettua chiamate a un Servizio Web XML o direttamente a SQL Server, il codice dovrebbe trovarsi in blocchi try … catch** perché è possibile che si verifichino numerose eccezioni.
+-   Collocare blocchi `try ... catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Se, ad esempio, l'applicazione effettua chiamate a un Servizio Web XML o direttamente a SQL Server, il codice dovrebbe trovarsi in blocchi **try ... catch** perché è possibile che si verifichino numerose eccezioni.
 
 ## <a name="see-also"></a>Vedere anche
 [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

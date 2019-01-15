@@ -42,13 +42,13 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
   
 ### <a name="to-solve-scenario-2"></a>Per risolvere lo scenario 2  
   
-1.  Fare clic sul pulsante Start **e scegliere Pannello di controllo**.  
+1.  Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
   
-2.  Nel Pannello di controllo fare doppio clic sull'icona Strumenti di amministrazione **.  
+2.  Nel Pannello di controllo fare doppio clic sull'icona **Strumenti di amministrazione**.  
   
 3.  Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.  
   
-4.  Nella finestra Criteri di sicurezza locali selezionare Criteri locali **.  
+4.  Nella finestra Criteri di sicurezza locali selezionare **Criteri locali**.  
   
 5.  Nel **i criteri** colonna, fare doppio clic su **accesso alla rete: Modello di condivisione e sicurezza per gli account locali**.  
   

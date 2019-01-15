@@ -75,7 +75,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 
 2.  Fare clic sul pulsante **File applicazione** .
 
-3.  Trovare l'elenco per ClickOnceLibrary.dll. Impostare la casella di riepilogo a discesa **Stato pubblicazione** su **Includi**.
+3.  Trovare l'elenco per *ClickOnceLibrary.dll*. Impostare la casella di riepilogo a discesa **Stato pubblicazione** su **Includi**.
 
 4.  Espandere la casella di riepilogo a discesa **Gruppo** e selezionare **Nuovo**. Immettere il nome `ClickOnceLibrary` come nome del nuovo gruppo.
 
@@ -91,7 +91,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 
 ## <a name="test-the-new-assembly"></a>Testare il nuovo assembly
 
-Per testare l'assembly su richiesta
+Per testare l'assembly su richiesta:
 
 1. Avviare l'applicazione distribuita con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 

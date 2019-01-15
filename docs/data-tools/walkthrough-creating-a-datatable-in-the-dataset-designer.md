@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: creazione di una DataTable in Progettazione DataSet'
+title: 'Procedura dettagliata: Creazione di una DataTable in Progettazione Dataset'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824834"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: Creare un oggetto DataTable in Progettazione Dataset
 
 Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable> (senza un oggetto TableAdapter) usando il **Progettazione Dataset**. Per informazioni sulla creazione di tabelle di dati che includono oggetti TableAdapter, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="create-a-new-windows-forms-application"></a>Creare una nuova applicazione Windows Forms
+## <a name="create-a-new-windows-forms-application"></a>Creare una nuova applicazione Windows Forms Application
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -39,7 +38,7 @@ Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Aggiungere un nuovo set di dati all'applicazione
 
-1.  Nel **Project** dal menu **Aggiungi nuovo elemento**.
+1.  Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
@@ -63,7 +62,7 @@ Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable
 
 2.  Assegnare un nome di colonna `SongID`.
 
-3.  Nel **le proprietà** impostare nella finestra di <xref:System.Data.DataColumn.DataType%2A> proprietà <xref:System.Int16?displayProperty=fullName>.
+3.  Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataColumn.DataType%2A> su <xref:System.Int16?displayProperty=fullName>.
 
 4.  Ripetere questo processo e aggiungere le colonne seguenti:
 
@@ -87,4 +86,4 @@ Per salvare la **nome DataTableWalkthrough** progetto scegliere la **File** dal 
 
 - [Creare e configurare i set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [La convalida dei dati](../data-tools/validate-data-in-datasets.md)
+- [Convalida dei dati](../data-tools/validate-data-in-datasets.md)

@@ -2,7 +2,6 @@
 title: Set di simboli (PDB) e i file di origine nel debugger
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892451"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -156,7 +155,7 @@ Nel **degli strumenti** > **opzioni** > **debug** > **simboli** pagina, è possi
   È possibile limitare i comandi che *SrcSrv* possono eseguire l'app *PDB* file eseguendo i comandi consentiti in un file denominato *SrcSrv*. Sul posto di *SrcSrv* file nella stessa cartella *SrcSrv* e *devenv.exe*.  
   
   >[!IMPORTANT]
-  >I comandi arbitrari possono essere incorporati in un'app *PDB* del file, assicurarsi di inserire solo i comandi da eseguire in un *SrcSrv* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >I comandi arbitrari possono essere incorporati in un'app *PDB* del file, assicurarsi di inserire solo i comandi da eseguire in un *SrcSrv* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
   >
   >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Ad esempio, se è elencato *cmd.exe* nel *SrcSrv*, un utente malintenzionato potrebbe specificare parametri nel *cmd.exe* che potrebbe renderlo pericolosi.  
   
@@ -204,7 +203,7 @@ Impostare il *Web. config* file dell'applicazione ASP.NET in modalità debug. Tr
 
 È possibile usare la **moduli**, **Stack di chiamate**, **variabili locali**, **Auto**, o qualsiasi **Watch** finestra da caricare i simboli o modifica le opzioni dei simboli durante il debug. Per altre informazioni, vedere [acquisire maggiore familiarità con la modalità con cui il debugger si connette all'app](../debugger/debugger-tips-and-tricks.md#modules_window).
 
-### <a name="use-the-modules-window"></a>Utilizzare la finestra moduli
+### <a name="use-the-modules-window"></a>Usare la finestra Moduli
 
 Durante il debug, il **moduli** finestra Mostra i moduli di codice il debugger è trattare come codice utente, o My Code e i simboli di caricamento dello stato. È anche possibile monitorare lo stato di caricamento dei simboli, caricare i simboli e modificare le opzioni dei simboli nel **moduli** finestra.
 

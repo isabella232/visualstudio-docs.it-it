@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99abb7de8955fce6c532b126d883f3b327134a1b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 95d4bdba370c6a369121f4c3cd624bc9f6888c44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832979"
 ---
 # <a name="idiastackframegettype"></a>IDiaStackFrame::get_type
 Recupera il tipo di frame.  
@@ -27,7 +25,7 @@ Recupera il tipo di frame.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_type (   
+HRESULT get_type (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_type (
  [out] Restituisce un valore di [enumerazione StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumerazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

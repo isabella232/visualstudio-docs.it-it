@@ -1,8 +1,6 @@
 ---
 title: Impostazioni dell'applicazione e ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850966"
 ---
-# <a name="clickonce-and-application-settings"></a>Impostazioni applicazione e ClickOnce
+# <a name="clickonce-and-application-settings"></a>Impostazioni dell'applicazione e ClickOnce
 Le impostazioni dell'applicazione per Windows Form semplifica creare, archiviare e gestire applicazioni personalizzate e le preferenze dell'utente nel client. Il documento seguente viene descritto il funzionamento dei file di impostazioni in un'applicazione ClickOnce e modo in cui ClickOnce viene eseguita la migrazione delle impostazioni quando l'utente viene aggiornato alla versione successiva.  
   
  Le informazioni seguenti si applicano solo ai provider di impostazioni dell'applicazione predefinito, il \<xref:System.Configuration.LocalFileSettingsProvider > classe. Se si fornisce un provider personalizzato, tale provider determinerà come archiviare i dati e la modalità di aggiornamento delle impostazioni tra le versioni. Per altre informazioni sui provider di impostazioni dell'applicazione, vedere [architettura Impostazioni applicazione](/dotnet/framework/winforms/advanced/application-settings-architecture).  
@@ -55,7 +53,7 @@ Se si hanno creato le proprie impostazioni applicazione classe wrapper e si desi
  ClickOnce non funziona con le impostazioni di roaming, che consente al file di impostazioni seguire l'utente tra più computer in una rete. Se è necessario che le impostazioni di roaming, è necessario implementare un provider di impostazioni dell'applicazione che archivia le impostazioni di rete o sviluppare le proprie classi di impostazioni personalizzate per archiviare le impostazioni in un computer remoto. Per altre informazioni sul provider di impostazioni, vedere [architettura Impostazioni applicazione](/dotnet/framework/winforms/advanced/application-settings-architecture).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione e protezione ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Cenni preliminari sulle impostazioni dell'applicazione](/dotnet/framework/winforms/advanced/application-settings-overview)   
- [Cenni preliminari sulla cache di ClickOnce](../deployment/clickonce-cache-overview.md)   
- [Accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Cenni preliminari sulle impostazioni delle applicazioni](/dotnet/framework/winforms/advanced/application-settings-overview)   
+ [Panoramica della cache di ClickOnce](../deployment/clickonce-cache-overview.md)   
+ [Accedere a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

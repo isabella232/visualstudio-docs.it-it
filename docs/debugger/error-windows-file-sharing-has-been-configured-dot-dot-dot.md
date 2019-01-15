@@ -1,8 +1,6 @@
 ---
-title: 'Errore: La condivisione di file di Windows è stata configurata... | Documenti Microsoft'
-ms.custom: ''
+title: 'Errore: Condivisione file di Windows è stata configurata... | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942213"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Errore: la condivisione di file di Windows è stata configurata...
+# <a name="error-windows-file-sharing-has-been-configured"></a>Errore: La condivisione di file di Windows è stata configurata...
 La condivisione di file di Windows è stata configurata in modo da connettersi al computer remoto utilizzando un nome utente diverso. Ciò è incompatibile con il debug remoto.  
   
  La condivisione di file è attualmente configurata per la connessione al computer remoto con un nome utente diverso. Il debug remoto non è possibile in uno scenario di questo tipo.  
@@ -40,7 +38,7 @@ La condivisione di file di Windows è stata configurata in modo da connettersi a
   
      . Disconnettersi dal computer remoto, quindi riconfigurare la condivisione file per connettersi a un altro computer con il proprio nome account:  
   
-    1.  Nel **avviare** dal menu **Accessori**, quindi fare clic su **prompt dei comandi**.  
+    1.  Fare clic sul pulsante **Start**, scegliere **Accessori**, quindi **Prompt dei comandi**.  
   
     2.  Al prompt dei comandi di Windows digitare:  
   

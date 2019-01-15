@@ -1,8 +1,6 @@
 ---
 title: Individuare le perdite di memoria con la libreria CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931027"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Individuare le perdite di memoria con la libreria CRT
 
@@ -183,7 +181,7 @@ Il numero di allocazione della memoria indica quando è stato allocato un blocco
 
 È possibile usare il numero di allocazione per impostare un punto di interruzione sull'allocazione di memoria.  
 
-**Per impostare un punto di interruzione dell'allocazione di memoria utilizzando la finestra Espressioni di controllo:**  
+**Per impostare un punto di interruzione dell'allocazione di memoria usando la finestra Espressioni di controllo:**  
 
 1. Impostare un punto di interruzione in prossimità dell'inizio dell'app e avviare il debug.  
    
@@ -201,9 +199,9 @@ Il numero di allocazione della memoria indica quando è stato allocato un blocco
 
 Dopo aver impostato un punto di interruzione su un numero di allocazione della memoria, continuare a eseguire il debug. Assicurarsi che venga eseguito con le stesse condizioni, in modo da non modifica il numero di allocazione della memoria. Quando il programma si interrompe all'allocazione di memoria specificata, usare il **Stack di chiamate** finestra e altre finestre del debugger per determinare le condizioni in cui è stata allocata la memoria. Quindi, è possibile continuare l'esecuzione per osservare ciò che accade all'oggetto e determinare il motivo per cui è in modo corretto non viene deallocata.  
 
-Anche l'impostazione di un punto di interruzione dei dati sull'oggetto può essere utile. Per altre informazioni, vedere [usando i punti di interruzione](../debugger/using-breakpoints.md).  
+Anche l'impostazione di un punto di interruzione dei dati sull'oggetto può essere utile. Per altre informazioni, vedere [Uso di punti di interruzione](../debugger/using-breakpoints.md).  
 
-È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. È possibile impostare:  
+È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. Tra cui:  
 
 ```cpp
 _crtBreakAlloc = 18;  

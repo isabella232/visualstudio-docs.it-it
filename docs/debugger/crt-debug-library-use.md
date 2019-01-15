@@ -1,8 +1,6 @@
 ---
-title: Utilizzo della libreria di Debug CRT | Documenti Microsoft
-ms.custom: ''
+title: Uso della libreria CRT di Debug | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -30,24 +28,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 79f75cf227826ec0f9d35d9a7564bbdc25a3cd0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890904"
 ---
 # <a name="crt-debug-library-use"></a>Utilizzo della libreria di debug CRT
-La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per utilizzare una delle librerie di debug CRT, è necessario collegare con [/debug](/cpp/build/reference/debug-generate-debug-info) e compilare con **/MDd**, **/MTd**, o **/LDd**.  
+La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegarlo con [/debug](/cpp/build/reference/debug-generate-debug-info) e la compilazione con **/MDd**, **/MTd**, oppure **/LDd**.  
   
 ## <a name="remarks"></a>Note  
  Le definizioni e le macro principali del debug CRT sono disponibili nel file di intestazione CRTDBG.h.  
   
- Le funzioni in librerie di debug CRT sono compilate con informazioni di debug ([/Z7, /Zd, /Zi, /ZI (formato informazioni di Debug)](/cpp/build/reference/z7-zi-zi-debug-information-format)) e senza ottimizzazione. Alcune funzioni contengono asserzioni per la verifica di parametri ricevuti e viene fornito il codice sorgente. Grazie a questo codice sorgente è possibile eseguire passo passo le funzioni CRT per accertarsi che funzionino correttamente e rilevare eventuali parametri o stati di memoria errati. Parte della tecnologia CRT è proprietaria e non fornisce codice sorgente per la gestione delle eccezioni, la virgola mobile e alcune altre routine.  
+ Le funzioni delle librerie di debug CRT sono compilate con informazioni di debug [/Z7, /Zd, /Zi, /ZI (Formato informazioni di debug](/cpp/build/reference/z7-zi-zi-debug-information-format)) e senza ottimizzazione. Alcune funzioni contengono asserzioni per la verifica di parametri ricevuti e viene fornito il codice sorgente. Grazie a questo codice sorgente è possibile eseguire passo passo le funzioni CRT per accertarsi che funzionino correttamente e rilevare eventuali parametri o stati di memoria errati. Parte della tecnologia CRT è proprietaria e non fornisce codice sorgente per la gestione delle eccezioni, la virgola mobile e alcune altre routine.  
   
  Quando si implementa Visual C++, è possibile scegliere di installare il codice sorgente della libreria di runtime del linguaggio C sul disco rigido. Se non si installa il codice sorgente, sarà necessario il CD-ROM per eseguire un passaggio alla volta le funzioni CRT.  
   
- Per ulteriori informazioni sulle varie librerie di runtime è possibile utilizzare, vedere [C Run-Time Libraries](/cpp/c-runtime-library/crt-library-features).  
+ Per ulteriori informazioni sulle varie librerie di runtime che è possibile utilizzare, vedere [Librerie di runtime del linguaggio C](/cpp/c-runtime-library/crt-library-features).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)   

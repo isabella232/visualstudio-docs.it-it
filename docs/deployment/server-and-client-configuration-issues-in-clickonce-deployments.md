@@ -1,8 +1,6 @@
 ---
 title: Server e problemi di configurazione Client nelle distribuzioni ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955555"
 ---
-# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi di configurazione server e client nelle distribuzioni ClickOnce
+# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzione contiene un tipo di file che Windows non riconosce, ad esempio un file di Microsoft Word, IIS non le consentirà nemmeno la trasmissione del file e la distribuzione non riuscirà.  
 
  Inoltre, alcuni server Web e Web software applicativo, ad esempio [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], contengono un elenco di file e tipi di file che non è possibile scaricare. Ad esempio, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] impedisce il download di tutte le *Web. config* file. Questi file possono contenere informazioni riservate, ad esempio nomi utente e password.  
@@ -35,11 +33,11 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 
  Alcuni server Web potrebbero bloccare i file con estensioni, ad esempio *. dll*, *config*, e *mdf*. Le applicazioni basate su Windows in genere includono i file con alcune di queste estensioni. Se un utente tenta di eseguire un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che accede a un file bloccato in un server Web, verrà generato un errore. Invece di tutte le estensioni di file, sblocco [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pubblica ogni file dell'applicazione con un *deploy* estensione di file per impostazione predefinita. Pertanto, solo l'amministratore deve configurare il server Web per sbloccare le estensioni di tre file seguenti:  
 
-- *. Application*  
+- *.application*  
 
-- *manifest*  
+- *.manifest*  
 
-- *Deploy* 
+- *.deploy* 
 
   Tuttavia, è possibile disabilitare questa opzione deselezionando le **, l'estensione di file ". deploy"** opzione il [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), nel qual caso è necessario configurare il server Web per sbloccare tutte le estensioni di file utilizzato nell'applicazione.  
 
@@ -51,7 +49,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticazione proxy e ClickOnce  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornisce il supporto per l'autenticazione di Windows integrata proxy a partire da .NET Framework 3.5. Nessun direttive Machine. config specifico sono necessari. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non fornisce supporto per altri protocolli di autenticazione, ad esempio di base o Digest.  
 
- È anche possibile applicare un hotfix per .NET Framework 2.0 per abilitare questa funzionalità. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkId=158730.  
+ È anche possibile applicare un hotfix per .NET Framework 2.0 per abilitare questa funzionalità. Per ulteriori informazioni, vedere http://go.microsoft.com/fwlink/?LinkId=158730.  
 
  Per altre informazioni, vedere [ \<defaultProxy > (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).  
 
@@ -82,7 +80,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="use-third-party-web-servers"></a>Usare i server Web di terze parti  
  Se si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione da un server Web diversi da IIS, si verifichi un problema se il server restituisce il tipo di contenuto non corretto per la chiave [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file, ad esempio il manifesto di distribuzione e il manifesto dell'applicazione. Per risolvere questo problema, vedere la Guida del server Web documentazione su come aggiungere nuovi tipi di contenuto al server e assicurarsi che tutti i mapping dei estensione del nome di file elencati nella tabella seguente sono presenti.  
 
-|Estensione di file|Tipo di contenuto|  
+|Estensione del file|Tipo di contenuto|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -97,9 +95,9 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supporta l'installazione di applicazioni da qualsiasi server Web HTTP 1.1 o un file server. FTP, il File Transfer Protocol, non è supportato per l'installazione di applicazioni. È possibile utilizzare FTP per la pubblicazione solo le applicazioni. Queste differenze sono riepilogate nella tabella seguente:  
 
 
-| Tipo di URL | Descrizione |
+| Tipo di URL | Description |
 |----------| - |
-| FTP: / / | È possibile pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
+| ftp:// | È possibile pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
 | http:// | È possibile installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
 | https:// | È possibile installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
 | file:// | È possibile installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
@@ -107,12 +105,12 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows Firewall  
  Per impostazione predefinita, Windows XP SP2 Abilita il Firewall di Windows. Se si sviluppa l'applicazione in un computer in cui è installato Windows XP, si è ancora in grado di pubblicare ed eseguire [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni dal server locale che esegue IIS. Tuttavia, è possibile accedere il server che esegue IIS da un altro computer, a meno che si apre il Firewall di Windows. Per istruzioni su come la gestione di Windows Firewall, vedere la Guida di Windows.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Abilitare le estensioni del server di FrontPage  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server Abilitare le estensioni del server di FrontPage  
  Estensioni del Server di FrontPage di Microsoft è necessaria per la pubblicazione di applicazioni in un server Web di Windows che usa il protocollo HTTP.  
 
  Per impostazione predefinita, Windows Server non dispone di estensioni del Server di FrontPage installate. Se si desidera utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per pubblicare in un server Web di Windows Server che utilizza il protocollo HTTP con le estensioni del Server di FrontPage, è necessario installare prima le estensioni del Server di FrontPage. È possibile eseguire l'installazione usando lo strumento di amministrazione di gestione Server in Windows Server.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipi di contenuto bloccata  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server Tipi di contenuto bloccato  
  IIS in [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] Blocca tutti i tipi di file, ad eccezione di alcuni tipi di contenuto noti (ad esempio, *htm*, *. HTML*, *txt*e così via). Per abilitare la distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni che utilizzano questo server, è necessario modificare le impostazioni di IIS per consentire il download dei file di tipo *Application*, *manifest*e qualsiasi altro tipo di file personalizzato usato dall'applicazione.  
 
  Se si distribuisce tramite un server IIS, eseguire *inetmgr.exe* e aggiungere nuovi tipi di File per la pagina Web predefinita:  
@@ -136,6 +134,6 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
  Per istruzioni dettagliate per IIS, vedere [come specificare i tipi di documenti aggiuntive per la compressione HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).  
 
 ## <a name="see-also"></a>Vedere anche  
- [Risolvere i problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
+ [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)

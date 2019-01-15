@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: visualizzare documenti Script | Documenti Microsoft'
-ms.custom: ''
+title: 'Procedura: Visualizzare documenti Script | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,25 +15,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MTE95
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867728"
 ---
-# <a name="how-to-view-script-documents"></a>Procedura: visualizzare documenti script
+# <a name="how-to-view-script-documents"></a>Procedura: Visualizzare documenti script
 Nelle versioni precedenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i file script sul lato client generati da uno script sul lato server venivano visualizzati nella finestra Esplora script. La finestra Esplora script era spesso nascosta, per cui la disponibilità di script sul lato client non era sempre ovvia.  
   
  In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] i file script sul lato client generati da uno script sul lato server vengono visualizzati in Esplora soluzioni, visualizzata per impostazione predefinita. La finestra Esplora script è stata eliminata.  
   
- I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. Vengono visualizzati nel **documenti Script** nodo.  
+ I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. Vengono visualizzati nel nodo **Documenti script**.  
   
- I file script sul lato server sono sempre visibili. Vengono visualizzati nel  **\<percorso sito Web >** nodo. Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
+ I file script sul lato server sono sempre visibili. Vengono visualizzati nel nodo **\<Percorso sito Web>**. Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server  
   
-1.  In **Esplora**, aprire il  **\<percorso sito Web >** nodo.  
+1.  In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>**.  
   
 2.  Fare doppio clic sul file script che si desidera visualizzare.  
   
@@ -43,7 +41,7 @@ Nelle versioni precedenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_m
   
 ### <a name="to-view-a-client-side-script-document"></a>Per visualizzare un documento script sul lato client  
   
-1.  In **Esplora**, aprire il **documenti Script** nodo.  
+1.  In **Esplora soluzioni** aprire il nodo **Documenti script**.  
   
 2.  Fare doppio clic sul file script che si desidera visualizzare.  
   

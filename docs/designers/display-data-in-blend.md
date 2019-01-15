@@ -2,7 +2,6 @@
 title: Visualizzare dati in Blend
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924397"
 ---
 # <a name="display-data-in-blend"></a>Visualizzare dati in Blend
 
@@ -43,13 +42,13 @@ Se sono già state create classi che descrivono la struttura dei dati, è possib
 
 Per generare dati di esempio da una classe, aprire un documento XAML e nel pannello **Dati** fare clic sul pulsante **Crea dati di esempio** ![Icona Crea dati di esempio](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e quindi su **Crea dati di esempio da classe**.
 
-**Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Creare dati di esempio da una classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
+**Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Creare un’origine dati XML](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinare il data binding con Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="show-live-data-in-a-wpf-application"></a>Visualizzare dati dinamici in un'applicazione WPF
 
-**Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Creare un'origine dati XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
+**Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Creare un’origine dati XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Visualizzare dati dinamici in un'app di Windows Store o Windows Phone
 

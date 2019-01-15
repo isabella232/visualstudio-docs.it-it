@@ -1,8 +1,6 @@
 ---
 title: Metodo marker_series::write_flag | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faff304831f8f2ffabed925d2ab3dfc5d64c18af
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: ba32b08de607f28a32cedf4050c4b4db439c1a39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840499"
 ---
 # <a name="markerserieswriteflag-method"></a>Metodo marker_series::write_flag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.  

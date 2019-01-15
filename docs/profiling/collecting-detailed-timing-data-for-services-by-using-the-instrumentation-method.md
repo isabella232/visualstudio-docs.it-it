@@ -1,8 +1,6 @@
 ---
 title: Raccolta di dati di intervallo dettagliati per i servizi usando il metodo di strumentazione tramite la riga di comando del profiler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946344"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per i servizi usando il metodo di strumentazione dalla riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i servizi Windows tramite il metodo di strumentazione dalla riga di comando.  
@@ -47,4 +45,3 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di strumentazione  
  [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
-

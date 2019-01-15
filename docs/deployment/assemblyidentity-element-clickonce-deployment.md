@@ -1,8 +1,6 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ee3ae65c107fc3e6fafbacc3b2e20652ae998d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 3749fdbdebaaf48cbbf073486e2e44ae2f2519d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859261"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; elemento (distribuzione ClickOnce)
 Identifica l'assembly principale del [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
@@ -32,8 +30,8 @@ Identifica l'assembly principale del [!INCLUDE[ndptecclick](../deployment/includ
   
 ```xml  
   
-      <assemblyIdentity    
-   name   
+      <assemblyIdentity    
+   name   
    version  
    publicKeyToken  
    processorArchitecture  
@@ -41,10 +39,10 @@ Identifica l'assembly principale del [!INCLUDE[ndptecclick](../deployment/includ
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `assemblyIdentity` elemento è obbligatorio. Non contiene alcun elemento figlio e ha gli attributi seguenti.  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`name`|Obbligatorio. Identifica il nome leggibile dall'utente della distribuzione a scopo informativo.<br /><br /> Se `name` contiene caratteri speciali, ad esempio le virgolette singole o doppie, l'applicazione potrebbe non riuscire per l'attivazione.|  
 |`version`|Obbligatorio. Specifica il numero di versione dell'assembly, nel formato seguente: `major.minor.build.revision`.<br /><br /> Questo valore deve essere incrementato in un manifesto aggiornato per attivare un aggiornamento dell'applicazione.|  
@@ -69,5 +67,5 @@ Identifica l'assembly principale del [!INCLUDE[ndptecclick](../deployment/includ
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md)

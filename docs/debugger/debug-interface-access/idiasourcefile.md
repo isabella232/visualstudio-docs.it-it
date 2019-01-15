@@ -1,8 +1,6 @@
 ---
-title: IDiaSourceFile | Documenti Microsoft
-ms.custom: ''
+title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a810d43df678d79a57a755681907b8c472fdd82d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6ca628689376bce696f49b3d1e01110108f58c0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851209"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Rappresenta un file di origine.  
@@ -27,24 +25,24 @@ Rappresenta un file di origine.
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaSourceFile`.  
   
-|Metodo|Descrizione|  
+|Metodo|Description|  
 |------------|-----------------|  
-|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera un valore di chiave di numeri interi semplice che è univoco per questa immagine.|  
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera un valore di chiave semplice numero intero univoco per questa immagine.|  
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Recupera il nome di file di origine.|  
 |[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Recupera il tipo di checksum.|  
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumeratore dei moduli con i numeri di riga che fa riferimento questo file.|  
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumeratore dei moduli con i numeri di riga che fanno riferimento a questo file.|  
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera i byte di checksum.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il [idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) o [idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) metodi. Vedere l'esempio per informazioni dettagliate.  
+ Ottenere questa interfaccia chiamando il [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) oppure [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) metodi. Vedere l'esempio per i dettagli.  
   
 ## <a name="example"></a>Esempio  
  Questa funzione consente di visualizzare i nomi di tutti i file di origine che contribuiscono alla tabella specificata.  
@@ -83,9 +81,9 @@ void ShowSourceFiles(IDiaTable *pTable)
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
- [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
- [Get_sourcefile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
- [Findfilebyid](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
- [Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+ [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
+ [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
+ [IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
+ [IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
+ [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

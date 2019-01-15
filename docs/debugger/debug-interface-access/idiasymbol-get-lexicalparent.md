@@ -1,8 +1,6 @@
 ---
 title: Get_lexicalparent | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec761202f10f087f440c695d834f80045a0ac331
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8388e2f59935b5a0603d6cd31b3417d8578b39ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820384"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 Recupera un riferimento all'elemento padre lessicale del simbolo.  
@@ -27,7 +25,7 @@ Recupera un riferimento all'elemento padre lessicale del simbolo.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_lexicalParent (   
+HRESULT get_lexicalParent (   
    IDiaSymbol** pRetVal  
 );  
 ```  

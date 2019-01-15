@@ -10,15 +10,14 @@ author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 13bcc65b3d8ffe4872c8b7d5f18b1bbf13bc67c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893328"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
 
@@ -37,7 +36,7 @@ IntelliSense predittivo limita il numero di risultati visualizzati nell'elenco a
 
 ## <a name="enable-faster-project-load"></a>Abilita caricamento più rapido del progetto
 
-**Visual Studio 2017 15.3 e versioni successive**: questa funzionalità è ora denominata **Abilita Caching progetto** ed è stata spostata nella pagina delle proprietà [Impostazioni di progetto di VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
+**Visual Studio 2017 versione 15.3 e successive**: questa funzionalità è ora denominata **Abilita Caching progetto** ed è stata spostata nella pagina delle proprietà [Impostazioni di progetto di VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Questa opzione consente a Visual Studio di memorizzare nella cache i dati di progetto in modo che alla successiva apertura del progetto sia possibile caricare i dati presenti nella cache anziché rielaborare i dati dai file di progetto. L'uso dei dati memorizzati nella cache può accelerare i tempi di caricamento del progetto in modo significativo.
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Altre funzionalità in Visual Studio Marketplace

@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 196bc890458d820b4280144e6f6a76655e7d8c93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cc73c3dc8231665faf77f7697bc4c5ded538c84c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961686"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 Recupera un flag che indica se la gestione delle eccezioni di sistema è in vigore.  
@@ -27,7 +25,7 @@ Recupera un flag che indica se la gestione delle eccezioni di sistema è in vigo
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_systemExceptionHandling (   
+HRESULT get_systemExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_systemExceptionHandling (
  [out] Restituisce `TRUE` se la gestione delle eccezioni di sistema è attivo per questo frame; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  La gestione delle eccezioni di sistema è noto anche come gestione strutturata delle eccezioni. Questo non è la stessa operazione come la gestione delle eccezioni C++.  

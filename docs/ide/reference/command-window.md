@@ -2,7 +2,6 @@
 title: Finestra di comando
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841859"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -110,7 +109,7 @@ Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale val
  L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato. Nell'esempio riportato di seguito viene illustrato come cercare il criterio "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usare le virgolette per nomi di percorso con spazi
- Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"**.
+ Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Program Files"** oppure **"C:\Program Files"**.
 
 ## <a name="see-also"></a>Vedere anche
 

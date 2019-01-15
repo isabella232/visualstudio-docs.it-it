@@ -1,8 +1,6 @@
 ---
-title: "Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4003dd1434d55bb43f52ee02801da0f843563456
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 7bfacf983af73ba8acb1f8f9ed2705ad5cd8e544
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929215"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce
 È possibile distribuire un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] che usa le autorizzazioni predefinite per le aree Internet o Intranet locale. In alternativa, è possibile creare un'area personalizzata per le autorizzazioni specifiche necessarie all'applicazione. È possibile eseguire questa operazione personalizzando le autorizzazioni di sicurezza nella pagina **Sicurezza** di **Creazione progetti**.  
   
 ### <a name="to-customize-a-permission"></a>Per personalizzare un'autorizzazione  
@@ -43,7 +41,7 @@ ms.locfileid: "39077477"
   
 6.  Fare clic su **Modifica XML autorizzazioni**.  
   
-     Il *manifest* file viene aperto nell'Editor XML.  
+     Il file *app.manifest* verrà aperto nell'editor XML.  
   
 7.  Prima dell'elemento `</applicationRequestMinimum>` , aggiungere il codice XML per le autorizzazioni richieste dall'applicazione.  
   

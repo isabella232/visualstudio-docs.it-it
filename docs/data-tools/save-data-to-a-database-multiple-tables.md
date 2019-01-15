@@ -38,7 +38,7 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 -   Impostazione dei controlli degli elementi di [finestra Origini dati](add-new-data-sources.md#data-sources-window). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra Origini dati** nel form.
+-   Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.
 
 -   Modifica di alcuni record in ogni tabella nel set di dati.
 
@@ -74,11 +74,11 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**. L'asseg
 
 4. Denominare il progetto **UpdateMultipleTablesWalkthrough**, quindi scegliere **OK**.
 
-     Il progetto UpdateMultipleTablesWalkthrough **viene creato e aggiunto in Esplora soluzioni**.
+     Il progetto **UpdateMultipleTablesWalkthrough** viene creato e aggiunto in **Esplora soluzioni**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
-Questo passaggio consente di creare un'origine dati dal database Northwind usando la Configurazione guidata origine dati **. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+Questo passaggio consente di creare un'origine dati dal database Northwind usando la **Configurazione guidata origine dati**. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Nel **Data** dal menu **Mostra origini dati**.
 
@@ -92,9 +92,9 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         oppure
+         -oppure-
 
-    -   Selezionare Nuova connessione **per aprire la finestra di dialogo Aggiungi/Modifica connessione**.
+    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
 5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.
 
@@ -104,7 +104,7 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
 8. Selezionare il **clienti** e **ordini** tabelle e quindi selezionare **fine**.
 
-     L'oggetto NorthwindDataSet **viene aggiunto al progetto e le tabelle vengono visualizzate nella finestra Origini dati**.
+     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle vengono visualizzate nella finestra **Origini dati**.
 
 ## <a name="set-the-controls-to-be-created"></a>Impostare i controlli da creare
 
@@ -124,16 +124,16 @@ Per i dati in questa procedura dettagliata il `Customers` la tabella è in un **
 
      Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
-2. Trascinare il nodo Orders **correlato dalla finestra Origini dati** in Form1 **.
+2. Trascinare il nodo **Orders** correlato dalla finestra **Origini dati** in **Form1**.
 
     > [!NOTE]
-    > Il nodo Orders **correlato si trova sotto la colonna Fax** ed è un nodo figlio del nodo Customers **.
+    > Il nodo **Orders** correlato si trova sotto la colonna **Fax** ed è un nodo figlio del nodo **Customers**.
 
      Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un' `OrdersTableAdapter` e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.
 
 ## <a name="add-code-to-update-the-database"></a>Aggiungere il codice per aggiornare il database
 
-È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter Customers **e Orders**. Per impostazione predefinita, un gestore eventi per il **salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.
+È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il **salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.
 
 > [!NOTE]
 > Per maggiore chiarezza, questa procedura dettagliata non utilizza una transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che assicura che tutte le modifiche relative a un database vengano completate prima che eventuali modifiche vanno eseguito il commit. Per altre informazioni, vedere [transazioni e concorrenza](/dotnet/framework/data/adonet/transactions-and-concurrency).

@@ -1,8 +1,6 @@
 ---
 title: Get_write | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c312c0b2c6b4374ad407fa449ddbedfa774233
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f1bba1ac7ffb68205b6ee484bd12c9aa98ef40be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832726"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
 Recupera un flag che indica se il segmento può essere modificato.  
@@ -27,7 +25,7 @@ Recupera un flag che indica se il segmento può essere modificato.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_write (   
+HRESULT get_write (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_write (
  [out] Restituisce `TRUE` se il segmento può essere modificato; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

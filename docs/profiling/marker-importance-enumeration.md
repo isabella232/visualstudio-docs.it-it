@@ -1,8 +1,6 @@
 ---
 title: Enumerazione marker_importance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841690"
 ---
 # <a name="markerimportance-enumeration"></a>Enumerazione marker_importance
 Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.  
@@ -34,7 +32,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Valori  
   
-|nome|Descrizione|  
+|nome|Description|  
 |----------|-----------------|  
 |`critical_importance`|Specifica che il marcatore è di importanza critica.|  
 |`high_importance`|Specifica che il marcatore è di elevata importanza.|  

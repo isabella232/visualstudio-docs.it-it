@@ -1,8 +1,6 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa della Pipeline configurati in modo errato | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863969"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: oggetti mancanti a causa di una pipeline configurata in modo non corretto
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.  
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
@@ -73,7 +71,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
   
 #### <a name="to-examine-device-context"></a>Per esaminare il contesto di dispositivo  
   
-1. Aprire il **contesto di dispositivo d3d11**. Nel **fasi Pipeline grafica** finestra, scegliere il **ID3D11DeviceContext** collegamento che fa parte di `DrawIndexed` chiamata che viene visualizzato nella parte superiore della finestra.  
+1. Aprire il **contesto di dispositivo d3d11**. Nella finestra **Fasi pipeline grafica** fare clic sul collegamento **ID3D11DeviceContext** che fa parte della chiamata `DrawIndexed` visualizzata nella parte superiore della finestra.  
   
 2. Esaminare lo stato del dispositivo visualizzato nella scheda del **contesto di dispositivo d3d11** per verificare che nessun pixel shader era attivo durante la chiamata di disegno. In questo scenario la voce **Informazioni generali shader**, visualizzata sotto **Stato pixel shader**, indica che lo shader è **NULL**:  
   

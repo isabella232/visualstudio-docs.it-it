@@ -1,8 +1,6 @@
 ---
 title: Metadati noti degli elementi di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1ec2d2ade7162f08db954d8a7bebe059a21878
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b46fd624b0ea3517cef75ba381638db2e3d94aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841525"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadati noti degli elementi di MSBuild
 La tabella seguente descrive i metadati assegnati a ogni elemento durante la fase di creazione. In ogni esempio è stata usata la dichiarazione di elemento riportata di seguito per includere il file *C:\MyProject\Source\Program.cs* nel progetto.  
@@ -34,7 +32,7 @@ La tabella seguente descrive i metadati assegnati a ogni elemento durante la fas
 </ItemGroup>  
 ```  
   
-|Metadati degli elementi|Descrizione|  
+|Metadati degli elementi|Description|  
 |-------------------|-----------------|  
 |%(FullPath)|Contiene il percorso completo dell'elemento. Ad esempio:<br /><br /> *C:\MyProject\Source\Program.cs*|  
 |%(RootDir)|Contiene la directory radice dell'elemento. Ad esempio:<br /><br /> *C:\\*|  

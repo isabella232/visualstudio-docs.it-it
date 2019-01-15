@@ -1,8 +1,6 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1e31063bf5cf24fa5b19b1446b4c41f2dd7bd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2a0b09ca7e9693914d94cdc3337cc4ac2759c07c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944363"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa della configurazione non corretta dello stato del dispositivo.  
   
  Questa procedura dettagliata illustra come:  

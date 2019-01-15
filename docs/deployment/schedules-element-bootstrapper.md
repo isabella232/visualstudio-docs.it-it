@@ -1,8 +1,6 @@
 ---
 title: '&lt;Le pianificazioni&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 850c94274f783c306fe31fde4d86c9563c928adf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894298"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Le pianificazioni&gt; elemento (programma di avvio automatico)
 Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora specifica a quali comandi definiti dal `Command` elemento deve essere eseguito.  
@@ -41,15 +39,15 @@ Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora 
 </Schedules>  
 ```  
   
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
- Il `Schedules` elemento è figlio di `Product` elemento. Ciascuna `Product` potrebbe avere al massimo un elemento `Schedules` elemento. Il `Schedules` elemento non ha attributi.  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
+ Il `Schedules` elemento è figlio di `Product` elemento. Ciascuna `Product` potrebbe avere al massimo un elemento `Schedules` elemento. L'elemento `Schedules` non ha attributi.  
   
 ## <a name="schedule"></a>Pianificazione  
  Il `Schedule` elemento è figlio di `Schedules` elemento. Oggetto `Schedules` deve avere almeno un elemento `Schedule` elemento.  
   
  `Schedule` ha l'attributo seguente.  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Il nome dell'elemento di pianificazione. Ciò corrisponde alla `ScheduleName` proprietà del `Command` elemento. Quando un `Command` fa riferimento alla pianificazione specificata, verrà eseguito solo nell'orario indicato da tale `Schedule` elemento. Le pianificazioni inoltre possono essere associate le `FailIf` e `BypassIf` elementi, che limitano l'esecuzione in base alla pianificazione specificata questi test condizionale. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
   
@@ -66,4 +64,4 @@ Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora 
   
 ## <a name="see-also"></a>Vedere anche  
  [\<Product > elemento](../deployment/product-element-bootstrapper.md)   
- [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

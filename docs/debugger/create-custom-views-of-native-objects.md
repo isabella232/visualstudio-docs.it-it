@@ -1,9 +1,7 @@
 ---
 title: Creare viste personalizzate di oggetti nativi
 description: Usare il framework Natvis per personalizzare il modo che Visual Studio visualizza i tipi nativi nel debugger
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821192"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Creare viste personalizzate di oggetti nativi nel debugger
 
@@ -169,7 +167,7 @@ Gli errori vengono visualizzati nei **Output** finestra.
 ##  <a name="BKMK_Syntax_reference"></a> Riferimento per la sintassi di Natvis  
 
 ###  <a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer  
-Il `AutoVisualizer` elemento è il nodo radice del *natvis* e contiene lo spazio dei nomi `xmlns:` attributo. 
+L'elemento `AutoVisualizer` è il nodo radice del file *NATVIS* e contiene l'attributo `xmlns:` dello spazio dei nomi. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +211,7 @@ Nell'esempio seguente viene utilizzata la stessa visualizzazione se l'oggetto è
 </Type>  
 ```  
 
-È possibile fare riferimento a parametri del modello nella voce di visualizzazione usando le macro $T1, $T2 e così via. Per esempi di queste macro, vedere la *natvis* i file forniti con Visual Studio.  
+È possibile fare riferimento a parametri del modello nella voce di visualizzazione usando le macro $T1, $T2 e così via. Per esempi di queste macro, vedere i file *NATVIS* forniti con Visual Studio.  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> Corrispondenza del tipo di visualizzatore  
 Se non è stato possibile convalidare una voce di visualizzazione, viene usata la successiva visualizzazione disponibile.  
@@ -421,7 +419,7 @@ Un elemento `std::vector` visualizza i singoli elementi quando viene espanso nel
 
 Il `ArrayItems` nodo deve avere:  
 
-- Oggetto `Size` espressione (che deve restituire un numero intero) per il debugger di riconoscere la lunghezza della matrice.  
+- Un'espressione `Size` (che deve restituire un numero intero) per consentire al debugger di riconoscere la lunghezza della matrice.  
 - Oggetto `ValuePointer` espressione che punta al primo elemento (che deve essere un puntatore di un tipo di elemento non `void*`).  
 
 Il valore predefinito del limite inferiore della matrice è 0. Per sostituire il valore, usare un `LowerBound` elemento. Il *natvis* file forniti con Visual Studio sono esempi.  
@@ -448,7 +446,7 @@ Il valore predefinito del limite inferiore della matrice è 0. Per sostituire il
 
 - `Direction` Specifica se la matrice è nell'ordine di riga o colonna ordinata. 
 - `Rank` specifica l'ordine di priorità della matrice. 
-- Il `Size` accettati implicito elemento `$i` parametro, che sostituisce con l'indice della dimensione per individuare la lunghezza della matrice in tale dimensione. Nell'esempio precedente, l'espressione `_M_extent.M_base[0]` deve fornire la lunghezza della dimensione 0, `_M_extent._M_base[1]` il 1 ° e così via.  
+- L'elemento `Size` accetta il parametro `$i` implicito che sostituisce con l'indice delle dimensioni per individuare la lunghezza della matrice in quella dimensione. Nell'esempio precedente, l'espressione `_M_extent.M_base[0]` deve fornire la lunghezza della dimensione 0, `_M_extent._M_base[1]` il 1 ° e così via.  
 
 Ecco come un oggetto bidimensionale `Concurrency::array` oggetto esegue la ricerca nella finestra del debugger:  
 
@@ -582,7 +580,7 @@ Ad esempio, il tipo di puntatore intelligente `auto_ptr<vector<int>>` generalmen
 
  ![automatico&#95;ptr&#60;vector&#60;int&#62; &#62; espansione predefinita](../debugger/media/dbg_natvis_expand_expandeditem_default.png "espansione predefinita")  
 
- Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili, che attraversa il `_Myptr` membro. Aggiungendo un `ExpandedItem` elemento, è possibile eliminare il `_Myptr` variabile dalla gerarchia e direttamente visualizzare gli elementi del vettore:  
+ Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili, che attraversa il `_Myptr` membro. Aggiungendo un elemento `ExpandedItem`, è possibile eliminare la variabile `_Myptr` dalla gerarchia e visualizzare direttamente gli elementi del vettore:  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ Nell'esempio seguente mostra come aggregare proprietà dalla classe di base in u
 </Type>  
 ```  
 
-Il **nd** identificatore di formato, che disattiva la visualizzazione corrispondente per la classe derivata, questo caso è necessario. In caso contrario, l'espressione `*(CFrameworkElement*)this` provocherebbe il `CPanel` visualizzazione verrà applicato anche in questo caso, perché le regole di corrispondenza di tipo di visualizzazione predefinita considerarlo come quello più appropriato. Usare la **nd** per indicare al debugger di usare la visualizzazione della classe di base, o l'espansione predefinita se la classe di base non dispone di alcuna visualizzazione identificatore di formato.  
+In questo caso è necessario l'identificatore di formato **nd** che disattiva la corrispondenza della visualizzazione per la classe derivata. In caso contrario, l'espressione `*(CFrameworkElement*)this` provocherebbe il `CPanel` visualizzazione verrà applicato anche in questo caso, perché le regole di corrispondenza di tipo di visualizzazione predefinita considerarlo come quello più appropriato. Usare la **nd** per indicare al debugger di usare la visualizzazione della classe di base, o l'espansione predefinita se la classe di base non dispone di alcuna visualizzazione identificatore di formato.  
 
 ####  <a name="BKMK_Synthetic_Item_expansion"></a> Espansione di elementi Synthetic  
- Mentre il `ExpandedItem` elemento fornisce una visualizzazione più semplice dei dati, eliminando le gerarchie, le `Synthetic` nodo esegue la funzione opposta. Consente di creare un elemento figlio artificiale che non è un risultato di un'espressione. L'elemento artificiale può avere elementi figlio propri. Nell'esempio seguente nella visualizzazione del tipo `Concurrency::array` viene usato un nodo `Synthetic` per mostrare un messaggio di diagnostica all'utente:  
+ Il nodo `ExpandedItem` esegue la funzione opposta rispetto all'elemento `Synthetic`, che fornisce una visualizzazione dei dati più semplice eliminando le gerarchie. Consente di creare un elemento figlio artificiale che non è un risultato di un'espressione. L'elemento artificiale può avere elementi figlio propri. Nell'esempio seguente nella visualizzazione del tipo `Concurrency::array` viene usato un nodo `Synthetic` per mostrare un messaggio di diagnostica all'utente:  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ Il **nd** identificatore di formato, che disattiva la visualizzazione corrispond
  ![Concurrency:: array con espansione dell'elemento Synthetic](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array con espansione dell'elemento Synthetic")  
 
 ###  <a name="BKMK_HResult"></a> Elemento HResult 
- Il `HResult` elemento consente di personalizzare le informazioni visualizzate per un **HRESULT** nelle finestre del debugger. Il `HRValue` elemento deve contenere il valore a 32 bit del **HRESULT** che deve essere personalizzato. Il `HRDescription` elemento contiene le informazioni da visualizzare nella finestra del debugger.  
+ Il `HResult` elemento consente di personalizzare le informazioni visualizzate per un **HRESULT** nelle finestre del debugger. L'elemento `HRValue` deve contenere il valore a 32 bit di **HRESULT** da personalizzare. Il `HRDescription` elemento contiene le informazioni da visualizzare nella finestra del debugger.  
 
 ```xml
 

@@ -1,8 +1,6 @@
 ---
 title: Panoramica delle sessioni di prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867173"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 In questa panoramica vengono illustrate le nozioni di base della profilatura. Gli sviluppatori non esperti di prestazioni potranno notare come gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] possano contribuire ad accrescere rapidamente la produttività e a migliorare le prestazioni del codice. Gli sviluppatori con esperienza nella profilatura possono trovare informazioni su specifici processi e funzionalità degli strumenti di profilatura.  
@@ -77,4 +75,4 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
   
 ## <a name="see-also"></a>Vedere anche  
  [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
- [Procedura dettagliata: Identificare i problemi di prestazioni](../profiling/walkthrough-identifying-performance-problems.md)
+ [Procedura dettagliata: Identificare i problemi di prestazioni](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

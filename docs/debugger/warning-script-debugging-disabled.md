@@ -1,8 +1,6 @@
 ---
-title: 'Avviso: Debug degli Script disabilitato | Documenti Microsoft'
-ms.custom: ''
+title: 'Avviso: Debug degli script disabilitato | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
@@ -17,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9b2cff26e977d6d7e1079e558ed0dc40fa305f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940440"
 ---
-# <a name="warning-script-debugging-disabled"></a>Avviso: debug degli script disabilitato
+# <a name="warning-script-debugging-disabled"></a>Avviso: Debug degli script disabilitato
 Il debug degli script è attualmente disabilitato in Internet Explorer  
   
  Questo avviso viene visualizzato quando si tenta di eseguire il debug dello script senza abilitare il debug degli script in Internet Explorer. Per motivi di sicurezza, il debug degli script è disabilitato in Internet Explorer per impostazione predefinita.  
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Per abilitare il debug di script in Internet Explorer  
   
-1.  In Internet Explorer **strumenti** menu, scegliere **Opzioni Internet**.  
+1.  Scegliere **Opzioni Internet** dal menu **Strumenti** di Internet Explorer.  
   
 2.  Nella finestra di dialogo **Opzioni Internet** fare clic sulla scheda **Avanzate** .  
   
-3.  Nel **avanzate** scheda, cercare il **impostazioni** casella **esplorazione** categoria.  
+3.  Nella casella **Impostazioni** della scheda **Avanzate**, cercare la categoria **Esplorazione**.  
   
-4.  Deselezionare **Disabilita Debugging degli Script (Internet Explorer)**.  
+4.  Deselezionare **Disabilita debugging degli script (Internet Explorer)**.  
   
 5.  Fare clic su **OK**.  
   
@@ -46,4 +44,4 @@ Il debug degli script è attualmente disabilitato in Internet Explorer
      Le nuove impostazioni risulteranno ora attive.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Connettersi a file script](../debugger/how-to-attach-to-script.md)
+ [Procedura: Associare a script](../debugger/how-to-attach-to-script.md)

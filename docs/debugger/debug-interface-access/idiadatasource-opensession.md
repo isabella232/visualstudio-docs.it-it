@@ -1,8 +1,6 @@
 ---
 title: Idiadatasource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843112"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Apre una sessione per eseguire query sui simboli.  
@@ -27,7 +25,7 @@ Apre una sessione per eseguire query sui simboli.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  
@@ -39,10 +37,10 @@ HRESULT openSession (
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Valore|Descrizione|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_UNEXPECTED|Il [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) oggetto non è già stato inizializzato con un'origine dei simboli.|  
-|E_INVALIDARG|Non è valido `ppSession` parametro.|  
+|E_INVALIDARG|Parametro `ppSession` non valido.|  
 |E_OUTOFMEMORY|Memoria insufficiente per aprire la sessione.|  
   
 ## <a name="remarks"></a>Note  

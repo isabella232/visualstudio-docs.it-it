@@ -1,8 +1,7 @@
 ---
-title: "Procedura: firmare manifesti dell'applicazione e di distribuzione"
+title: 'Procedura: Firmare manifesti di applicazione e distribuzione'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852914"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e di distribuzione
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazione e distribuzione
 
 Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i manifesti dell'applicazione e di distribuzione devono essere firmati con una coppia di chiavi pubblica/privata e tramite la tecnologia Authenticode. È possibile firmare i manifesti con un certificato dall'archivio certificati di Windows o un file di chiave.
 
@@ -34,7 +33,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
  La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su file con estensione *exe*. Per altre informazioni, vedere la sezione "Creazione di manifesti non firmati" di questo documento.
 
- Per altre informazioni sulla creazione di file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+ Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta solo file di chiave Scambio informazioni personali con estensione *pfx*. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.
@@ -94,7 +93,7 @@ La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su fi
 
 2.  Nella pagina **Firma** deselezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-3.  Reimpostare la versione di pubblicazione in modo che solo una versione dell'applicazione sia disponibile. Per impostazione predefinita, Visual Studio incrementa automaticamente il numero di revisione della versione di pubblicazione ogni volta che si pubblica un'applicazione. Per altre informazioni vedere [How to: Set the ClickOnce Publish Version](../deployment/how-to-set-the-clickonce-publish-version.md) (Procedura: Reimpostare la versione di pubblicazione ClickOnce).
+3.  Reimpostare la versione di pubblicazione in modo che solo una versione dell'applicazione sia disponibile. Per impostazione predefinita, Visual Studio incrementa automaticamente il numero di revisione della versione di pubblicazione ogni volta che si pubblica un'applicazione. Per altre informazioni, vedere [Procedura: Impostare la versione pubblicazione per un'applicazione ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4.  Pubblicare l'applicazione.
 

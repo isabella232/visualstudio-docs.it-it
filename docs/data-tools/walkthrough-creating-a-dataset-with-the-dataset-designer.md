@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: creazione di un dataset con Progettazione DataSet'
+title: 'Procedura dettagliata: Creazione di un set di dati con Progettazione Dataset'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868521"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: Creare un set di dati con Progettazione Dataset
 
@@ -48,7 +47,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -58,7 +57,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Aggiungere un nuovo set di dati all'applicazione
 
-1.  Nel **Project** dal menu **Aggiungi nuovo elemento**.
+1.  Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
@@ -70,7 +69,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Creare una connessione dati in Esplora Server
 
-1.  Nel **View** menu, fare clic su **Esplora Server**.
+1.  Scegliere **Esplora server** dal menu **Visualizza**.
 
 2.  Nelle **Esplora Server**, fare clic sui **Connetti al Database** pulsante.
 

@@ -1,8 +1,6 @@
 ---
-title: Stato grafica | Documenti Microsoft
-ms.custom: ''
+title: Stato grafica | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968102"
 ---
 # <a name="graphics-state"></a>Stato grafica
 La finestra Stato in Diagnostica della grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.  
@@ -28,7 +26,7 @@ La finestra Stato in Diagnostica della grafica di Visual Studio consente di comp
 ### <a name="state-views"></a>Visualizzazioni stato  
  Si può visualizzare la tabella di stato in vari modi:  
   
-|Visualizza|Descrizione|  
+|Visualizza|Description|  
 |----------|-----------------|  
 |Visualizzazione stato di input API|Questa visualizzazione presenta lo stato con un layout simile a quello degli oggetti Direct3D che compongono lo stato.|  
 |Visualizzazione stato di input logico|Presenta lo stato in una visualizzazione logica che non rispecchia il layout degli oggetti Direct3D che compongono lo stato.|  
@@ -38,22 +36,22 @@ La finestra Stato in Diagnostica della grafica di Visual Studio consente di comp
   
 -   Nell'angolo superiore sinistro della finestra Stato, sotto la barra del titolo, scegliere il pulsante che corrisponde allo stile di visualizzazione da usare.  
   
-    -   **Mostra la visualizzazione dello stato di input API**  
+    -   **Mostra la visualizzazione stato di input API**  
   
     -   **Mostra la visualizzazione stato logico**  
   
-    -   **Mostra visualizzazione stato bloccato**  
+    -   **Mostra la visualizzazione stato bloccato**  
   
 > [!IMPORTANT]
->  È necessario bloccare lo stato nel **API Mostra stato input** o **stato logico** viste per poterlo visualizzare nel **bloccato Mostra visualizzazione stato**.  
+>  È necessario bloccare lo stato nelle visualizzazioni **Stato di input API** o **Stato logico** perché sia mostrato nella **Visualizzazione stato bloccato**.  
   
 ### <a name="state-table-format"></a>Formato della tabella di stato  
  La finestra Stato contiene diverse colonne di informazioni.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
-|nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> Nel **visualizzazione dello stato di input API** e **visualizzazione stato logico** stati, i nomi sono rientrati per mostrare la relazione gerarchica tra stati.<br /><br /> Nel **visualizzazione stato bloccato** stato, vengono visualizzati nomi completi in un elenco semplice.|  
-|Valore|Valore dell'elemento di stato.|  
+|nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|  
+|Value|Valore dell'elemento di stato.|  
 |Tipo|Tipo dell'elemento di stato.|  
   
 ### <a name="changed-state"></a>Stato modificato  

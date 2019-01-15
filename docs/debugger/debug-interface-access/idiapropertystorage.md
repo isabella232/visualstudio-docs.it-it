@@ -1,8 +1,6 @@
 ---
-title: IDiaPropertyStorage | Documenti Microsoft
-ms.custom: ''
+title: IDiaPropertyStorage | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf35e0d753e41794f3924e119c2d7ad2d497f0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8b896cf54f06e84316f67a32c10f66dda21c2cd9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910727"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-Consente di leggere le proprietà di un set di proprietà DIA permanente.  
+Consente di leggere le proprietà persistenti di un set di proprietà DIA.  
   
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-IDiaPropertyStorage : IUnknown  
+IDiaPropertyStorage : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaPropertyStorage`.  
   
-|Metodo|Descrizione|  
+|Metodo|Description|  
 |------------|-----------------|  
 |[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Ottiene un puntatore a un enumeratore per le proprietà all'interno di questo set.|  
 |[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Legge `BOOL` valori in un set di proprietà.|  
@@ -41,14 +39,14 @@ IDiaPropertyStorage : IUnknown
 |[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Legge `DWORD` valori in un set di proprietà.|  
 |[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Legge `LONG` valori in un set di proprietà.|  
 |[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Legge i valori delle proprietà in un set di proprietà.|  
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ottiene corrispondente per i nomi di stringa fornito gli identificatori di proprietà.|  
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ottiene i nomi di stringa corrispondente assegnato gli identificatori di proprietà.|  
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Legge `ULONGLONG` valori in un set di proprietà.|  
   
 ## <a name="remarks"></a>Note  
- Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), a 4 byte `ULONG` valore univoco per tale set. Le proprietà esposte tramite il `IDiaPropertyStorage` interfaccia corrispondono alle proprietà disponibili nell'interfaccia padre. Ad esempio, le proprietà del [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaccia è possibile accedere in base al nome tramite il `IDiaPropertyStorage` interfaccia (si noti tuttavia che anche se la proprietà può essere accessibile, questo non significa la proprietà è valida per un particolare `IDiaSymbol` oggetto).  
+ Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), a quattro byte `ULONG` valore univoco per tale set. Le proprietà esposte tramite il `IDiaPropertyStorage` interfaccia proprietà corrispondono a quelle disponibili nell'interfaccia padre. Ad esempio, le proprietà del [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaccia sono accessibili in base al nome tramite la `IDiaPropertyStorage` interfaccia (si noti tuttavia che anche se la proprietà è accessibile, non significa la proprietà è valida per un particolare `IDiaSymbol` oggetto).  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il `QueryInterface` metodo in un'altra interfaccia. Le interfacce seguenti è possibile eseguire query per il `IDiaPropertyStorage` interfaccia:  
+ Ottenere questa interfaccia mediante la chiamata di `QueryInterface` metodo in un'altra interfaccia. Le interfacce seguenti è possibile eseguire query per il `IDiaPropertyStorage` interfaccia:  
   
 -   [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
@@ -65,7 +63,7 @@ IDiaPropertyStorage : IUnknown
 -   [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrata una funzione che consente di visualizzare tutte le proprietà esposte dal `IDiaPropertyStorage` oggetto. Vedere il [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfaccia per un esempio di come `IDiaPropertyStorage` interfaccia viene ottenuta dal [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaccia.  
+ In questo esempio viene illustrata una funzione che consente di visualizzare tutte le proprietà esposte dal `IDiaPropertyStorage` oggetto. Vedere le [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfaccia per un esempio di come il `IDiaPropertyStorage` interfaccia viene ottenuta dal [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaccia.  
   
 ```C++  
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)  
@@ -130,7 +128,7 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   

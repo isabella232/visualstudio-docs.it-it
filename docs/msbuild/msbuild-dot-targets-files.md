@@ -1,8 +1,6 @@
 ---
 title: File con estensione targets di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 02/24/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,26 +16,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3282495219e92da38fc90c9a98fa115791190d80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 170f80cc1abb12570e01dd9f9b2fcd04d7bff139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902815"
 ---
 # <a name="msbuild-targets-files"></a>File con estensione targets di MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include più file con estensione *targets* che contengono elementi, proprietà, destinazioni e attività per scenari comuni. Questi file vengono automaticamente importati nella maggior parte dei file di progetto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per semplificare la manutenzione e la leggibilità.  
 
  I progetti importano generalmente uno o più file con estensione *targets* per definire il processo di compilazione. Ad esempio, un progetto di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] creato da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] importerà *Microsoft.CSharp.targets* che importa *Microsoft.Common.targets*. Il progetto stesso di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] definirà gli elementi e le proprietà specifici di tale progetto, ma le regole di compilazione standard per un progetto di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] vengono definite nei file con estensione *targets* importati.  
 
- Il valore `$(MSBuildToolsPath)` specifica il percorso di questi file comuni con estensione *targets*. Se la versione di `ToolsVersion` è 4.0, i file si trovano nel percorso seguente: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*  
+ Il valore `$(MSBuildToolsPath)` specifica il percorso di questi file comuni con estensione *targets*. Se `ToolsVersion` è 4.0, i file si trovano nel percorso seguente: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*  
 
 > [!NOTE]
 >  Per informazioni su come creare destinazioni personalizzate, vedere [Destinazioni](../msbuild/msbuild-targets.md). Per informazioni su come usare l'elemento `Import` per inserire un file di progetto in un altro file di progetto, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
 
 ## <a name="common-targets-files"></a>File comuni con estensione targets  
 
-| File con estensione *targets* | Descrizione |
+| File con estensione *targets* | Description |
 |---------------------------------| - |
 | *Microsoft.Common.targets* | Definisce i passaggi nel processo di compilazione standard per i progetti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Importato dai file *Microsoft.CSharp.targets* e *Microsoft.VisualBasic.targets*, che includono l'istruzione seguente: `<Import Project="Microsoft.Common.targets" />` |
 | *Microsoft.CSharp.targets* | Definisce i passaggi nel processo di compilazione standard per i progetti di Visual C#.<br /><br /> Importato da file di progetto di Visual C# (con estensione *csproj*), che includono l'istruzione seguente: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |

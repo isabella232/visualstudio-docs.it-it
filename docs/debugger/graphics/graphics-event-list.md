@@ -1,8 +1,6 @@
 ---
 title: Elenco eventi grafici | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870742"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.  
@@ -110,7 +108,7 @@ Visual Studio 2017 e versioni successiva contengono il **cronologia risorse** fi
 In questa finestra consente di visualizzare la cronologia dell'elemento selezionato nell'elenco eventi.  L'elenco a discesa nella parte superiore è utilizzabile per selezionare altri elementi per visualizzare la cronologia di.  Nella metà superiore della finestra contiene il **eventi di configurazione fotogrammi**.  Questi sono gli eventi che rientrano i *Create* categoria di tipi e sono chiamate che in genere inizializzano e creare la risorsa.  Nella parte inferiore della metà della finestra contiene il **eventi della cornice** sezione.  Si tratta la normale operazione di lettura e scrittura di eventi che si verificano durante l'utilizzo della risorsa.  
 
 
-| Colonna | Descrizione |
+| Colonna | Description |
 |-----------| - |
 | **Type** | Mostra il tipo di voce, in genere *Create*, *lettura* e *scrivere*. |
 | **Visualizza** | Mostra un'anteprima della risorsa in quel momento nel tempo.  Fare doppio clic su Anteprima per aprire una visualizzazione dei dettagli della risorsa in quel momento. |
@@ -119,4 +117,4 @@ In questa finestra consente di visualizzare la cronologia dell'elemento selezion
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+ [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)

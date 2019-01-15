@@ -1,8 +1,6 @@
 ---
-title: Gerarchia dei tipi di simboli di classi | Documenti Microsoft
-ms.custom: ''
+title: Gerarchia dei tipi di simboli delle classi | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,40 +12,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8aeb208c4015d205efbfe018ee324a8ba0ede6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: fa257de86367f2531cce5c57080cd059856fa82a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902854"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Gerarchia di classi dei tipi di simboli
 Nella tabella seguente vengono descritti i tipi di simboli nella gerarchia delle classi.  
   
 ## <a name="symbol-types"></a>Tipi di simboli  
   
-|Tipo di simbolo|Descrizione|  
+|Tipo di simbolo|Description|  
 |-----------------|-----------------|  
 |[UDT](../../debugger/debug-interface-access/udt.md)|Simbolo utilizzato per rappresentare ogni classe, struttura e unione.|  
-|[Enum (Debug Interface Access SDK)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Simbolo per i tipi enumerati.|  
-|[PointerType](../../debugger/debug-interface-access/pointertype.md)|Simbolo per tipi puntatore.|  
-|[ArrayType](../../debugger/debug-interface-access/arraytype.md)|Simbolo per i tipi di matrice.|  
-|[BaseType](../../debugger/debug-interface-access/basetype.md)|Simbolo per tipi di base|  
-|[Typedef (Debug Interface Access SDK)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Simbolo che introduce nomi per gli altri tipi.|  
+|[Enum (Debug Interface Access SDK)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Simboli per i tipi enumerati.|  
+|[PointerType](../../debugger/debug-interface-access/pointertype.md)|Simboli per i tipi di puntatore.|  
+|[ArrayType](../../debugger/debug-interface-access/arraytype.md)|Simboli per i tipi di matrice.|  
+|[BaseType](../../debugger/debug-interface-access/basetype.md)|Simboli per i tipi di base|  
+|[Typedef (Debug Interface Access SDK)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Simbolo che introduce i nomi per gli altri tipi.|  
 |[BaseClass](../../debugger/debug-interface-access/baseclass.md)|Simbolo utilizzato per ogni classe di base di un tipo definito dall'utente (UDT).|  
-|[Friend (Debug Interface Access SDK)](../../debugger/debug-interface-access/friend-debug-interface-access-sdk.md)|Simbolo per classi di tipo friend e le funzioni friend.|  
+|[Friend (Debug Interface Access SDK)](../../debugger/debug-interface-access/friend-debug-interface-access-sdk.md)|Simboli per le funzioni friend e classi friend.|  
 |[FunctionType](../../debugger/debug-interface-access/functiontype.md)|Simbolo per ogni firma della funzione univoco.|  
 |[FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)|Simbolo per ogni parametro a una funzione.|  
-|[VTableShape](../../debugger/debug-interface-access/vtableshape.md)|Simbolo per le dimensioni della tabella virtuale.|  
-|[VTable](../../debugger/debug-interface-access/vtable.md)|Simbolo di una tabella virtuale.|  
-|[CustomType](../../debugger/debug-interface-access/customtype.md)|Simbolo di tipo definito dal fornitore.|  
-|[ManagedType](../../debugger/debug-interface-access/managedtype.md)|Simbolo di un tipo definito nei metadati.|  
-|[Dimensione](../../debugger/debug-interface-access/dimension.md)|Simbolo per le dimensioni di matrice.|  
+|[VTableShape](../../debugger/debug-interface-access/vtableshape.md)|Simboli per le dimensioni della tabella virtuale.|  
+|[VTable](../../debugger/debug-interface-access/vtable.md)|Simbolo per una tabella virtuale.|  
+|[CustomType](../../debugger/debug-interface-access/customtype.md)|Simbolo per il tipo definito dal fornitore.|  
+|[ManagedType](../../debugger/debug-interface-access/managedtype.md)|Simbolo per un tipo definito nei metadati.|  
+|[Dimensione](../../debugger/debug-interface-access/dimension.md)|Simboli per le dimensioni di matrice.|  
   
 > [!NOTE]
->  Ogni simbolo può disporre di proprietà che contengono informazioni sui simboli, nonché a riferimenti ad altri simboli. Queste proprietà sono elencate negli argomenti di simbolo.  
+>  Ciascun simbolo può avere proprietà che contengono informazioni sui simboli, nonché i riferimenti a altri simboli. Queste proprietà sono elencate negli argomenti simbolo singoli.  
   
 ## <a name="see-also"></a>Vedere anche  
- [CV_access_e (enumerazione)](../../debugger/debug-interface-access/cv-access-e.md)   
+ [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)   
  [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

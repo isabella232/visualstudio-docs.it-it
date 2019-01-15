@@ -1,8 +1,6 @@
 ---
 title: Raccolta delle statistiche delle applicazioni autonome tramite la riga di comando del profiler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72efb2481725d7e0da9331b639040d7dacc8298d
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 706e591a96cf5bdd1c13fb0775c8a91e3995cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871258"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per le applicazioni client autonome tramite il metodo di campionamento dalla riga di comando.  
@@ -32,7 +30,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
 |----------|---------------------|  
 |**Avviare un'applicazione tramite profilatura**|-   [Procedura: Avviare un'applicazione autonoma e raccogliere statistiche dell'applicazione](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
 |**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
-|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: connettere il profiler a un'applicazione nativa e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
+|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione nativa e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
 |**Aggiungere dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Attività correlate  
@@ -54,4 +52,3 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di campionamento  
  [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)
-

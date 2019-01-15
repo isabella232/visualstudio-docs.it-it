@@ -1,8 +1,6 @@
 ---
 title: Tecniche di debug MFC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832217"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.  
@@ -99,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
 
- Utilizzo della macro TRACE gestisce in modo appropriato char * e wchar_t\* parametri. Negli esempi seguenti viene illustrato l'utilizzo della macro TRACE, insieme ai diversi tipi di parametri di stringa.  
+ La macro TRACE gestisce in modo appropriato i parametri char* e wchar_t\*. Negli esempi seguenti viene illustrato l'utilizzo della macro TRACE, insieme ai diversi tipi di parametri di stringa.  
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -142,7 +140,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 
 - Se si desidera godere di un maggior controllo sulle caratteristiche di diagnostica della memoria, sarà possibile attivare e disattivare selettivamente singole caratteristiche di diagnostica della memoria impostando il valore della variabile globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.  
 
-  |Valore|Descrizione|  
+  |Value|Description|  
   |-----------|-----------------|  
   |**allocMemDF**|Attiva l'allocatore di memoria diagnostica (impostazione predefinita).|  
   |**delayFreeMemDF**|Liberare memoria quando si chiama `delete` o `free` solo dopo la chiusura del programma. In questo modo il programma allocherà la maggior quantità possibile di memoria.|  
@@ -337,7 +335,7 @@ Phone #: 581-0215
 
  **Allocazioni di non oggetti**  
 
- Si noti che alcune allocazioni sono di oggetti (ad esempio `CPerson`) mentre altre sono allocazioni di non oggetti. "Queste ultime" sono allocazioni di oggetti non derivati da `CObject` o allocazioni di tipi C primitivi, ad esempio `char`, `int`, o `long`. Se la classe derivata da **CObject-** alloca ulteriore spazio, ad esempio per buffer interni, questi oggetti presenteranno allocazioni di oggetti e di non oggetti.  
+ Si noti che alcune allocazioni sono di oggetti (ad esempio `CPerson`) mentre altre sono allocazioni di non oggetti. Queste ultime sono allocazioni di oggetti non derivati da `CObject` o allocazioni di tipi C primitivi, ad esempio `char`, `int` o `long`. Se la classe derivata da **CObject-** alloca ulteriore spazio, ad esempio per buffer interni, questi oggetti presenteranno allocazioni di oggetti e di non oggetti.  
 
  **Prevenzione di perdite di memoria**  
 
@@ -432,9 +430,9 @@ pMyPerson->Dump( afxDump );
 
 3. Creare innanzitutto una nuova configurazione di progetto.  
 
-   1.  Nel  **\<progetto > pagine delle proprietà** della finestra di dialogo fare clic sui **Configuration Manager** pulsante.  
+   1.  Nella finestra di dialogo **Pagine delle proprietà di \<Progetto>** fare clic sul pulsante **Gestione configurazione**.  
 
-   2.  Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nel **Configuration** colonna, selezionare  **\<nuovo... >**.  
+   2.  Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<Nuova...>**.  
 
    3.  Nella [finestra di dialogo Nuova configurazione progetto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))digitare, all'interno della casella **Nome configurazione progetto** , il nome da assegnare alla nuova configurazione, ad esempio "Debug parziale".  
 
@@ -470,11 +468,11 @@ pMyPerson->Dump( afxDump );
 
    4.  Nella finestra di dialogo **Pagine delle proprietà** , sotto la cartella **Impostazioni di configurazione** , aprire la cartella **C/C++** , quindi selezionare la categoria **Generale** .  
 
-   5.  Nella griglia delle proprietà, trovare **formato informazioni di Debug.**  
+   5.  Nella griglia delle proprietà cercare **Formato informazioni di debug.**  
 
    6.  Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.  
 
-   7.  Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando il **Crea/Usa intestazioni precompilate** impostazione nelle  **\<progetto > proprietà** nella finestra di dialogo (**le proprietà di configurazione**  cartella **C/C++** sottocartella **intestazioni precompilate** categoria).  
+   7.  Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/usa intestazioni precompilate** nella finestra di dialogo **Proprietà di \<Progetto>** (cartella **Proprietà di configurazione**, sottocartella **C/C++**, categoria **Intestazioni precompilate**).  
 
 7. Scegliere **Compila** dal menu **Compila** per compilare nuovamente i file di progetto non aggiornati.  
 

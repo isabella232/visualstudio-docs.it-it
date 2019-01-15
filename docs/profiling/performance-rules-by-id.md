@@ -1,8 +1,6 @@
 ---
 title: Regole di prestazioni in base all'ID | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
@@ -10,35 +8,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b997c92dbc5205ec0001ac6d89829646bb01922
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: f3f73285ab62f59b382d3571ad739a81360c2e42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846808"
 ---
 # <a name="performance-rules-by-id"></a>Regole di prestazioni in base all'ID
 
-| Avviso | Descrizione |
+| Avviso | Description |
 | - | - |
-| [DA0001: Usare StringBuilder per le concatenazioni](../profiling/da0001-use-stringbuilder-for-concatenations.md) | Le chiamate a System.String.Concat sono una percentuale significativa dei dati di profilatura. Considerare la possibilità di usare la classe <xref:System.Text.StringBuilder> per costruire stringhe da più di un segmento. |
+| [DA0001: Utilizzare StringBuilder per le concatenazioni](../profiling/da0001-use-stringbuilder-for-concatenations.md) | Le chiamate a System.String.Concat sono una percentuale significativa dei dati di profilatura. Considerare la possibilità di usare la classe <xref:System.Text.StringBuilder> per costruire stringhe da più di un segmento. |
 | [DA0002: VSPerfCorProf.dll mancante](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | Il profiler non è in grado di trovare VSPerfCorProf.dll durante l'esecuzione della profilatura. Questo avviso si verifica quando vengono usati gli strumenti da riga di comando per la raccolta di dati del profiler senza usare lo strumento VSPerfCLREnv.cmd per inizializzare le variabili di ambiente necessarie. |
 | [DA0003: Numero elevato di campioni del kernel](../profiling/da0003-many-kernel-samples.md) | Una parte significativa degli esempi di stack di chiamate raccolti per l'applicazione era in esecuzione in modalità kernel. Si consiglia di profilare l'applicazione usando un altro metodo di profilatura. |
-| [DA0004: Uso elevato del processore](../profiling/da0004-high-processor-usage.md) | L'utilizzo del processore (CPU) è stato enorme durante la profilatura dei dati raccolti usando il metodo di strumentazione. Si consiglia di usare il metodo di profilatura del campionamento per profilare applicazioni associate alla CPU. |
+| [DA0004: Utilizzo elevato del processore](../profiling/da0004-high-processor-usage.md) | L'utilizzo del processore (CPU) è stato enorme durante la profilatura dei dati raccolti usando il metodo di strumentazione. Si consiglia di usare il metodo di profilatura del campionamento per profilare applicazioni associate alla CPU. |
 | [DA0005: Raccolte GC2 frequenti](../profiling/da0005-frequent-gc2-collections.md) | Viene recuperato un numero elevato di oggetti di memoria .NET in Garbage Collection di generazione 2. |
 | [DA0006: Eseguire l'override di Equals() per i tipi di valore](../profiling/da0006-override-equals-parens-for-value-types.md) | Le chiamate al metodo Equals o agli operatori di uguaglianza di un tipo valore pubblico rappresentano una percentuale significativa dei dati di profilatura. Considerare la possibilità di implementare un metodo più efficiente. |
-| [DA0007: Evitare di usare eccezioni per il flusso di controllo](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | Nei dati di profilatura è stato chiamato un numero elevato di gestori di eccezioni di .NET Framework. Considerare la possibilità di usare un'altra logica di flusso di controllo per ridurre il numero di eccezioni generate. |
+| [DA0007: Evitare l'utilizzo di eccezioni per il controllo di flusso](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | Nei dati di profilatura è stato chiamato un numero elevato di gestori di eccezioni di .NET Framework. Considerare la possibilità di usare un'altra logica di flusso di controllo per ridurre il numero di eccezioni generate. |
 | [DA0008: Numero ridotto di campioni raccolti](../profiling/da0008-few-samples-collected.md) | Durante l'esecuzione della profilatura sono stati raccolti solo pochi campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi. |
 | [DA0009: % tempo in JIT elevata](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | Una percentuale significativa del tempo di esecuzione dell'applicazione è stata impiegata nel compilatore JIT (Just In Time). |
 | [DA0010: Funzione GetHashCode dispendiosa](../profiling/da0010-expensive-gethashcode.md) | Le chiamate al metodo GetHashCode del tipo rappresentano una percentuale significativa dei dati di profilatura o il metodo alloca memoria. |
-| [DA0011: Funzione compareTo dispendiosa](../profiling/da0011-expensive-compareto.md) | Il metodo CompareTo del tipo è dispendioso o alloca memoria. |
-| [DA0012: Uso elevato della reflection](../profiling/da0012-significant-amount-of-reflection.md) | Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Ove possibile, considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti. |
-| [DA0013: Uso elevato di String.Split o String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md) | Le chiamate ai metodi System.String.Split o System.String.Substring rappresentano una percentuale significativa dei dati di profilatura. È consigliabile usare System.String.IndexOf o System.String.IndexOfAny se si sta verificando l'esistenza di una sottostringa in una stringa. |
+| [DA0011: Funzione CompareTo dispendiosa](../profiling/da0011-expensive-compareto.md) | Il metodo CompareTo del tipo è dispendioso o alloca memoria. |
+| [DA0012: Utilizzo elevato della reflection](../profiling/da0012-significant-amount-of-reflection.md) | Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Ove possibile, considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti. |
+| [DA0013: Utilizzo elevato di String.Split o String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md) | Le chiamate ai metodi System.String.Split o System.String.Substring rappresentano una percentuale significativa dei dati di profilatura. È consigliabile usare System.String.IndexOf o System.String.IndexOfAny se si sta verificando l'esistenza di una sottostringa in una stringa. |
 | [DA0014: Frequenze molto elevate di paging di memoria attiva su disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) | I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata un'enorme frequenza di paging di memoria attiva da e su disco durante la profilatura. In genere, le frequenze di paging a questo livello avranno un impatto sulle prestazioni e sulla capacità di risposta dell'applicazione. È consigliabile ridurre le allocazioni di memoria rivedendo gli algoritmi. Potrebbe anche essere necessario valutare i requisiti di memoria dell'applicazione o eseguire di nuovo la profilatura in un computer con una maggiore quantità di memoria. |
 | [DA0017: Frequenze elevate di paging di memoria attiva su disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) | I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata una frequenza elevata di paging di memoria attiva da e su disco durante la profilatura. In genere, le frequenze di paging a questo livello avranno un impatto sulle prestazioni e sulla capacità di risposta dell'applicazione. È consigliabile ridurre le allocazioni di memoria rivedendo gli algoritmi. Potrebbe anche essere necessario valutare i requisiti di memoria dell'applicazione o eseguire di nuovo la profilatura in un computer con una maggiore quantità di memoria. |
 | [DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo](../profiling/da0018-32-bit-application-running-at-process-managed-memory-limits.md) | I dati di sistema raccolti durante l'esecuzione della profilatura indicano che gli heap della memoria di .NET Framework hanno quasi raggiunto le dimensioni massime consentite per gli heap gestiti in un processo a 32 bit. Il valore indicato è il valore più elevato osservato degli heap mentre il processo sottoposto a profilatura era attivo. Valutare la possibilità di ottimizzare l'uso delle risorse gestite da parte dell'applicazione. |
 | [DA0021: Frequenza elevata di Garbage Collection di generazione 1](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md) | I dati relativi alle prestazioni di sistema raccolti durante la profilatura indicano che una percentuale significativa della memoria per oggetti .NET Framework è stata recuperata nell'operazione di Garbage Collection di generazione 1 rispetto alla raccolta dei dati di generazione 0. |
-| [DA0022: Frequenza elevata di garbage collection di generazione 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md) | I dati relativi alle prestazioni di sistema raccolti durante la profilatura indicano che una percentuale significativa della memoria per oggetti .NET Framework è stata recuperata nell'operazione di Garbage Collection di generazione 2 rispetto alle operazioni di Garbage Collection di generazione 0 e 1. |
+| [DA0022: Frequenza elevata di Garbage Collection di generazione 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md) | I dati relativi alle prestazioni di sistema raccolti durante la profilatura indicano che una percentuale significativa della memoria per oggetti .NET Framework è stata recuperata nell'operazione di Garbage Collection di generazione 2 rispetto alle operazioni di Garbage Collection di generazione 0 e 1. |
 | [DA0023: Tempo CPU GC elevato](../profiling/da0023-high-gc-cpu-time.md) | I dati sulle prestazioni del sistema raccolti durante la profilatura indicano che il tempo impiegato in Garbage Collection è elevato rispetto al tempo di elaborazione totale dell'applicazione. |
 | [DA0024: Tempo CPU GC eccessivo](../profiling/da0024-excessive-gc-cpu-time.md) | I dati sulle prestazioni del sistema raccolti durante la profilatura indicano che il tempo impiegato in Garbage Collection è eccessivamente elevato rispetto al tempo di elaborazione totale dell'applicazione. |
 | [DA0026: Tempo di elaborazione CPU kernel eccessivo](../profiling/da0026-excessive-kernel-cpu-time-processing.md) | Il tempo CPU proporzionale eseguito in modalità kernel è stato superiore alla quantità di tempo trascorso in modalità utente. Per determinare la causa degli elevati tempi di esecuzione in modalità kernel, eseguire di nuovo la profilatura e abilitare il campionamento del numero di chiamate di sistema (syscalls). |

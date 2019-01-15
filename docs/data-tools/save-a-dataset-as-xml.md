@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a1b0c453f3b48b12c5a77fce86789a66fe77c26
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: fbcacfbb44bb9f5ed4d34637a5aee5f9d014be46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37173997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894048"
 ---
 # <a name="save-a-dataset-as-xml"></a>Salvare un set di dati come XML
 
@@ -35,7 +34,7 @@ La chiamata di <xref:System.Data.DataSet.WriteXml%2A> metodo invia i dati in for
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Per salvare i dati in un set di dati in formato XML a una variabile
 
-- Il <xref:System.Data.DataSet.GetXml%2A> metodo restituisce un <xref:System.String>. Dichiarare una variabile di tipo <xref:System.String> e assegnare i risultati del <xref:System.Data.DataSet.GetXml%2A> (metodo).
+- Il metodo <xref:System.Data.DataSet.GetXml%2A> restituisce un tipo <xref:System.String>. Dichiarare una variabile di tipo <xref:System.String> e assegnare i risultati del <xref:System.Data.DataSet.GetXml%2A> (metodo).
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]

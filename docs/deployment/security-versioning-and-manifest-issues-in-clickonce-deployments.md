@@ -1,8 +1,6 @@
 ---
 title: Sicurezza, controllo delle versioni e i problemi di manifesto nelle distribuzioni ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927142"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Sicurezza, controllo delle versioni e i problemi di manifesto nelle distribuzioni ClickOnce
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 
 Sono disponibili un'ampia gamma di problemi relativi alla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sicurezza, controllo delle versioni dell'applicazione e manifesto sintassi e semantica che può causare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione non corretta.
 
@@ -51,7 +49,7 @@ Se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicaz
 
 Per altre informazioni e istruzioni su come modificare la quota di applicazione online, vedere [Cenni preliminari sulla cache di ClickOnce](../deployment/clickonce-cache-overview.md).
 
-## <a name="versioning-issues"></a>Problemi di controllo delle versioni
+## <a name="versioning-issues"></a>Problemi relativi al controllo delle versioni
 
 Potrebbero verificarsi problemi se si assegna i nomi sicuri per l'assembly e incrementare il numero di versione di assembly in modo da riflettere l'aggiornamento di un'applicazione. Tutti gli assembly compilati con un riferimento a un assembly con nome sicuro deve essere ricompilato o l'assembly verrà effettuato un tentativo di fare riferimento alla versione precedente. L'assembly cercherà questo perché l'assembly tramite il valore della versione precedente di richiesta di associazione.
 
@@ -98,6 +96,6 @@ Se si desidera spostare o copiare un'applicazione, è necessario aggiornare anch
 
 ## <a name="see-also"></a>Vedere anche
 
-[Risolvere i problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
+[Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
 [Applicazioni Securw ClickOnce](../deployment/securing-clickonce-applications.md)  
 [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

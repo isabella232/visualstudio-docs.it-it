@@ -28,11 +28,11 @@ ms.locfileid: "53963453"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: Modificare un valore di registro (C#, C++, Visual Basic, F#)
 
-La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo Debug.  
+La finestra Registri è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.  
   
 ### <a name="to-change-the-value-of-a-register"></a>Per modificare il valore di un registro  
   
-1.  Nella finestra Registri** premere TAB o utilizzare il mouse per spostare il punto di inserimento sul valore che si desidera modificare. Prima di cominciare a digitare, assicurarsi che il cursore si trovi davanti al valore che si desidera sovrascrivere.  
+1.  Nella finestra **Registri** premere TAB o utilizzare il mouse per spostare il punto di inserimento sul valore che si desidera modificare. Prima di cominciare a digitare, assicurarsi che il cursore si trovi davanti al valore che si desidera sovrascrivere.  
   
 2.  Digitare il nuovo valore.  
   

@@ -18,15 +18,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
-ms.translationtype: MT
+ms.openlocfilehash: 260ea65af041e6a50afb163f697d5ff366cff825
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835984"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
@@ -37,13 +36,13 @@ Un componente di TableAdapter inserisce un set di dati con i dati dal database, 
 
 Per informazioni dettagliate sulle operazioni del TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |-----------|-----------------|
 |[Creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Come usare le finestre di progettazione per creare e configurare oggetti TableAdapter|
 |[Creare query TableAdapter con parametri](../data-tools/create-parameterized-tableadapter-queries.md)|Come consentire agli utenti di fornire argomenti all'oggetto TableAdapter procedure o query|
 |[Accedere direttamente al database mediante un oggetto TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Come usare i metodi Dbdirect di TableAdapter|
 |[Disattivare i vincoli durante il riempimento di un set di dati](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Come usare i vincoli foreign key durante l'aggiornamento dati|
-|[Come estendere le funzionalità di un oggetto TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Come aggiungere codice personalizzato per gli oggetti TableAdapter|
+|[Come estendere la funzionalità di un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Come aggiungere codice personalizzato per gli oggetti TableAdapter|
 |[Leggere dati XML in un set di dati](../data-tools/read-xml-data-into-a-dataset.md)|Come lavorare con XML|
 
 <a name="tableadapter-overview"></a>
@@ -91,7 +90,7 @@ La classe TableAdapter non è in parte il [!INCLUDE[dnprdnshort](../code-quality
 
 Di seguito sono i metodi comunemente utilizzati e le proprietà degli oggetti TableAdapter:
 
-|Member|Descrizione|
+|Member|Description|
 |------------|-----------------|
 |`TableAdapter.Fill`|Popola tabella dati associata dell'oggetto TableAdapter con i risultati dell'oggetto TableAdapter `SELECT` comando.|
 |`TableAdapter.Update`|Invia le modifiche nel database e restituisce un intero che rappresenta il numero di righe interessate dall'aggiornamento. Per altre informazioni, vedere [aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -116,7 +115,7 @@ Se non si desidera creare questi metodi diretti, impostare dell'oggetto TableAda
 
 ## <a name="tableadapter-support-for-nullable-types"></a>Supporto di TableAdapter per i tipi nullable
 
-Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Per altre informazioni sui tipi nullable in c#, vedere [usare i tipi nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Per altre informazioni sui tipi nullable in C#, vedere [usare tipi nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -128,16 +127,16 @@ La classe di TableAdapterManager non è in parte il [!INCLUDE[dnprdnshort](../co
 
 Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterManager` classe:
 
-|Member|Descrizione|
+|Member|Description|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|
-|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
-|*tableName* `TableAdapter` proprietà|Rappresenta un oggetto TableAdapter. Il componente TableAdapterManager generato contiene una proprietà per ogni `TableAdapter` gestisce. Ad esempio, un set di dati con una tabella Customers e Orders che genera l'errore con un componente TableAdapterManager contenente `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|
-|Proprietà `UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
+|Proprietà`BackUpDataSetBeforeUpdate` |Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
+|*tableName* `TableAdapter` proprietà|Rappresenta un TableAdapter. Il componente TableAdapterManager generato contiene una proprietà per ogni `TableAdapter` gestisce. Ad esempio, un set di dati con una tabella Customers e Orders che genera l'errore con un componente TableAdapterManager contenente `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|
+|Proprietà`UpdateOrder` |Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
 
 ## <a name="security"></a>Sicurezza
 
-Quando si usano i comandi dei dati con la proprietà CommandType impostata su <xref:System.Data.CommandType.Text>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. Una procedura consigliata consiste nell'utilizzare sempre query con parametri o stored procedure, laddove possibile.
+Quando si usano i comandi dei dati con la proprietà CommandType impostata su <xref:System.Data.CommandType.Text>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. Una procedura consigliata consiste nell'utilizzare sempre query con parametri o stored procedure, laddove possibile.
 
 ## <a name="see-also"></a>Vedere anche
 

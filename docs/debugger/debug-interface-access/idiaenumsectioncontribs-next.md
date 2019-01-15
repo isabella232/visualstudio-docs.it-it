@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsectioncontribs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 915588402264ac6ba7076f3e9cd95b347b946689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936269"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera un determinato numero di contributi vengano effettuati sezione nella sequenza di enumerazione.  
@@ -27,7 +25,7 @@ Recupera un determinato numero di contributi vengano effettuati sezione nella se
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT Next(   
+HRESULT Next(   
    ULONG                celt,   
    IDiaSectionContrib** rgelt,  
    ULONG*               pceltFetched  
@@ -45,7 +43,7 @@ HRESULT Next(
  [out] Restituisce il numero di contributi vengano effettuati sezione nell'enumeratore recuperato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

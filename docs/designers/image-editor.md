@@ -2,7 +2,6 @@
 title: Editor di immagini
 ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899719"
 ---
 # <a name="image-editor"></a>Editor immagini
 
@@ -113,7 +112,7 @@ I comandi che influiscono sullo stato dell'**editor di immagini** si trovano nel
 
 La tabella seguente descrive gli elementi nella barra degli strumenti della **modalità dell'editor di immagini**, elencati nell'ordine di visualizzazione da sinistra verso destra:
 
-|Elemento della barra degli strumenti|Descrizione|
+|Elemento della barra degli strumenti|Description|
 |------------------|-----------------|
 |**Selezione**|Consente di selezionare un'area rettangolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione irregolare**|Consente di selezionare un'area non regolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
@@ -126,10 +125,10 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 |**Griglia**|Abilita o disabilita la griglia che indica i limiti dei pixel. È possibile che la griglia non venga visualizzata finché non si ingrandisce l'immagine con lo zoom.|
 |**Visualizzazione livello MIP successivo**|Attiva il successivo livello MIP più grande in una catena di mapping MIP. Il livello MIP attivo è visualizzato nell'area di progettazione. Questo elemento è disponibile solo per le trame con livelli MIP.|
 |**Visualizzazione livello MIP precedente**|Attiva il successivo livello MIP più piccolo in una catena di mapping MIP. Il livello MIP attivo è visualizzato nell'area di progettazione. Questo elemento è disponibile solo per le trame con livelli MIP.|
-|**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:** abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|
+|**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:**  abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|
 |**Sfondo**|Abilita o disabilita la visualizzazione dello sfondo attraverso parti trasparenti dell'immagine. È possibile configurare la modalità di visualizzazione dello sfondo scegliendo tra le opzioni seguenti:<br /><br /> **Scacchi**<br /> Usa il colore verde insieme al colore di sfondo specificato per visualizzare lo sfondo con un motivo a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.<br /><br /> Sfondo bianco<br /> Usa il bianco per visualizzare lo sfondo.<br /><br /> Sfondo nero<br /> Usa il nero per visualizzare lo sfondo.<br /><br /> Anima sfondo<br /> Esegue lentamente una panoramica del modello a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.|
 |**Proprietà**|Apre o chiude alternativamente la finestra **Proprietà**.|
-|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per eseguire il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP, Windows Advanced Rasterization Platform, di Direct3D 11 per il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizza**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
+|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per eseguire il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP, Windows Advanced Rasterization Platform, di Direct3D 11 per il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizza**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
 
 ### <a name="image-editor-toolbar"></a>Barra degli strumenti dell'editor di immagini
 
@@ -137,7 +136,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 
 La tabella seguente descrive gli elementi nella barra degli strumenti dell'**editor di immagini**, elencati nell'ordine di visualizzazione dall'alto verso il basso:
 
-|Elemento della barra degli strumenti|Descrizione|
+|Elemento della barra degli strumenti|Description|
 |------------------|-----------------|
 |**Matita**|Usa la selezione di colore attiva per disegnare un tratto con aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
 |**Pennello**|Usa la selezione di colore attiva per disegnare un tratto con anti-aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
@@ -160,7 +159,7 @@ Alcuni formati di immagine, ad esempio i formati con estensione *DDS*, DirectDra
 
 La tabella seguente descrive come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
 
-|Strumento|Descrizione|
+|Strumento|Description|
 |----------|-----------------|
 |**Matita**, **Pennello**, **Aerografo**, **Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**, **Testo**|Per fondere la selezione di colore attiva insieme all'immagine, nella finestra **Proprietà** espandere il gruppo di proprietà **Canali** e impostare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.<br /><br /> Per disegnare usando la selezione di colore attiva e lasciare invariato il valore alfa dell'immagine, deselezionare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.|
 |**Riempimento**|Per fondere la selezione di colore attiva insieme all'immagine, basta scegliere l'area da riempire.<br /><br /> Per usare la selezione di colore attiva, incluso il valore del canale alfa, per sovrascrivere l'immagine, tenere premuto **MAIUSC** e scegliere l'area da riempire.|
@@ -171,7 +170,7 @@ La tabella seguente descrive come i diversi tipi di strumenti controllano la mod
 
 La tabella seguente descrive le proprietà dell'immagine:
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |Larghezza|Larghezza dell'immagine.|
 |Altezza|Altezza dell'immagine.|
@@ -216,7 +215,7 @@ Dopo aver selezionato un'area, è possibile ridimensionarla o ridimensionarne i 
 
 La tabella seguente illustra le combinazioni di tasti di modifica valide:
 
-|CTRL|Shift|ALT|Descrizione|
+|CTRL|Shift|ALT|Description|
 |----------|-----------|---------|-----------------|
 ||||Ridimensiona il contenuto dell'area selezionata.|
 ||**MAIUSC**||Ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
@@ -288,7 +287,7 @@ La tabella seguente descrive le proprietà degli strumenti:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce informazioni generali sugli strumenti disponibili in Visual Studio per usare gli asset grafici come trame, immagini, modelli 3D ed effetti shader.|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di Visual Studio per lavorare con i modelli 3D.|

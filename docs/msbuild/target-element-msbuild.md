@@ -1,8 +1,6 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965249"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -58,7 +56,7 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 
 ### <a name="attributes"></a>Attributi  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione.|  
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Se la condizione restituisce `false`, la destinazione non eseguirà il corpo della destinazione o di eventuali destinazioni impostate nell'attributo `DependsOnTargets`. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
@@ -73,7 +71,7 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 
 ### <a name="child-elements"></a>Elementi figlio  
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Possono esistere zero o più attività in una destinazione. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Contiene un set di elementi `Property` definiti dall'utente. A partire da .NET Framework 3.5, un elemento `Target` può contenere elementi `PropertyGroup`. |
@@ -82,7 +80,7 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 

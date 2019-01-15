@@ -1,8 +1,6 @@
 ---
 title: Set_addressmap | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d097ccbe5c893c603aaa2a018f8fcd422f15ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a99a1177208ac747373f2625a9fc76b7f3bc1cdb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954130"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 Fornisce un mapping di indirizzi per supportare le traduzioni di layout di immagine.  
@@ -27,7 +25,7 @@ Fornisce un mapping di indirizzi per supportare le traduzioni di layout di immag
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT set_addressMap (   
+HRESULT set_addressMap (   
    DWORD                     cbData,  
    struct DiaAddressMapEntry data[],  
    BOOL                      imagetoSymbols  
@@ -53,5 +51,5 @@ HRESULT set_addressMap (
 ## <a name="see-also"></a>Vedere anche  
  [Struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

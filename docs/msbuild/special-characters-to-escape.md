@@ -1,8 +1,6 @@
 ---
 title: Caratteri speciali di escape | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57316904aa1075484a4d33c6e2259586c88fe78
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc3c69553912a8881e56c5b33d5d5afa3ef5e4fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847113"
 ---
 # <a name="special-characters-to-escape"></a>Caratteri speciali di escape
 I caratteri speciali devono essere preceduto da un carattere di escape solo se hanno un significato speciale nel contesto in cui vengono usati. Ad esempio, l'asterisco (*) è un carattere speciale solo negli attributi "Include" ed "Exclude" di una definizione di elemento o in una chiamata a <xref:Microsoft.Build.Tasks.CreateItem>. In tutti gli altri casi, l'asterisco viene considerato come un asterisco letterale. Nonostante non sia necessario usare il carattere di escape davanti agli asterischi in ogni parte dei file di progetto, l'operazione non causa problemi.  
@@ -32,7 +30,7 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
   
  Di seguito è riportato l'elenco completo dei caratteri speciali di escape:  
   
-|Carattere|Descrizione|  
+|Carattere|Description|  
 |---------------|-----------------|  
 |%|Segno di percentuale, usato per fare riferimento a metadati.|  
 |$|Segno di dollaro, usato per fare riferimento alle proprietà.|  
@@ -45,5 +43,5 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 |*|Asterisco, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Usare caratteri di escape speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [Procedura: Caratteri di escape speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

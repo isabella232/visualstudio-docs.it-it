@@ -2,7 +2,6 @@
 title: Eseguire il Debug remoto di ASP.NET Core in IIS e Azure | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
-ms.translationtype: MT
+ms.openlocfilehash: 1658e8df9950ed7b9be060663204511a09d8c626
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839096"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio 2017
 
@@ -50,7 +49,7 @@ Non è supportato tra due computer connessi tramite un proxy di debug. Debug tra
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017 
 
-1. Creare una nuova applicazione ASP.NET Core. (Scegliere **File > Nuovo > progetto**, quindi selezionare **Visual c# > Web > applicazione Web ASP.NET Core**).
+1. Creare una nuova applicazione ASP.NET Core. (Scegliere **File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**).
 
     Nel **ASP.NET Core** sezione modelli, selezionare **applicazione Web**.
 
@@ -68,11 +67,11 @@ Da Visual Studio, è possibile pubblicare rapidamente e il debug dell'app a un'i
 
 1. In Visual Studio, fare doppio clic sul nodo del progetto e scegliere **pubblica**.
 
-    Se sono stati configurati tutti i profili di pubblicazione, il **pubblica** viene visualizzato il riquadro. Fare clic su **nuovo profilo**.
+    Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **nuovo profilo**.
 
 1. Scegliere **servizio App di Azure** dalle **Publish** nella finestra di dialogo **Crea nuovo**e seguire le istruzioni per la pubblicazione.
 
-    Per istruzioni dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure usando Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Per istruzioni dettagliate, vedere [Distribuire un'app Web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
     ![Eseguire la pubblicazione nel servizio app di Azure](../debugger/media/remotedbg_azure_app_service_profile.png)
 
@@ -107,18 +106,18 @@ Se sicurezza avanzata è abilitata in Internet Explorer (è abilitata per impost
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- IIS.NET
+- iis.net
 
 Quando si scarica il software, è possibile ricevere le richieste di concedere l'autorizzazione per caricare vari script del sito web e risorse. Alcune di queste risorse non sono necessarie, ma per semplificare il processo, fare clic su **Add** quando richiesto.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Installare ASP.NET Core in Windows Server
 
-1. Installare il [Hosting di .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) bundle nel sistema di hosting. L'aggregazione installerà il Runtime di .NET Core, libreria di .NET Core e il modulo ASP.NET Core. Per altre istruzioni dettagliate, vedere [pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Installare l'[aggregazione di Hosting di.NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) nel sistema di hosting. L'aggregazione installerà il Runtime di .NET Core, la libreria di .NET Core e il modulo di ASP.NET Core. Per altre istruzioni dettagliate, vedere [pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Se il sistema non ha una connessione a Internet, ottenere e installare il *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* prima di installare il bundle di Hosting di .NET Core Windows Server.
+    > Se nel sistema non è presente una connessione a Internet, ottenere e installare *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* prima di installare l'aggregazione di Hosting di .NET Core Windows Server.
 
-3. Riavviare il sistema (o eseguire **net stop was /y** aggiungendo **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema).
+3. Riavviare il sistema o eseguire **net stop was /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema.
 
 ## <a name="choose-a-deployment-option"></a>Scegliere un'opzione di distribuzione
 
@@ -139,7 +138,7 @@ Se si serve aiuto per distribuire l'app in IIS, prendere in considerazione quest
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file di impostazioni di pubblicazione in IIS in Windows Server
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file delle impostazioni di pubblicazione in IIS in Windows Server
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
@@ -147,7 +146,7 @@ Se si serve aiuto per distribuire l'app in IIS, prendere in considerazione quest
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Dopo che l'app distribuisce correttamente, viene avviata automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS. Per ASP.NET Core, è necessario assicurarsi che il pool di applicazioni di campo per il **DefaultAppPool** è impostata su **nessun codice gestito**.
+Quando la distribuzione è completata, l'app viene avviata automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS. Per ASP.NET Core, è necessario assicurarsi che il campo Pool di applicazioni per **DefaultAppPool** sia impostato su **Nessun codice gestito**.
 
 1. Nel **le impostazioni** della finestra di dialogo Abilita il debug facendo clic **successivo**, scegliere un **Debug** configurazione e quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto la **pubblicare File** opzioni.
 
@@ -199,9 +198,9 @@ In questa esercitazione viene usato Visual Studio 2017.
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, è possibile collegare nuovamente allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P). 
+    > In Visual Studio 2017, è possibile collegare nuovamente allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P 
 
-3. Impostare il campo qualificatore  **\<nome del computer remoto >: 4022**.
+3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.
     Nella finestra **Processi disponibili** verranno visualizzati alcuni processi.
 
@@ -219,14 +218,14 @@ In questa esercitazione viene usato Visual Studio 2017.
 
 7. Scegliere **Connetti**.
 
-8. Aprire il sito Web del computer remoto. In un browser, passare a **http://\<nome del computer remoto >**.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
     
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **sulle** pagina.
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-### <a name="bkmk_openports"></a> Risoluzione dei problemi: Aprire le porte necessarie in Windows Server
+### <a name="bkmk_openports">Risoluzione dei problemi</a> Aprire le porte necessarie in Windows Server
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, se la risoluzione dei problemi di distribuzione e l'app è ospitata dietro un firewall, potrebbe essere necessario verificare che le porte appropriate siano aperte.
 
@@ -240,4 +239,3 @@ Porte necessarie:
 
 Inoltre, queste porte devono essere già aperta per l'installazione di ASP.NET:
 - 8172 - (facoltativa) richiesta per la distribuzione Web per distribuire l'app da Visual Studio
-

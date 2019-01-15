@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: aggiornare la visualizzazione | Documenti Microsoft'
-ms.custom: ''
+title: 'Procedura: Aggiornare la visualizzazione | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - refreshing views
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3da7466f7f1ac569378d5ce5053c72c55d4ae68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dc7510986c87115a0f93078fb6788644c984460b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880166"
 ---
-# <a name="how-to-refresh-the-view"></a>Procedura: aggiornare la visualizzazione
-Spy + + accetta "snapshot" delle tabelle di sistema e aggiorna una vista in base a queste informazioni. È importante aggiornare periodicamente le visualizzazioni di sistema. Se si dispone di una vista di Spy + + aprire e la visualizzazione non è stato aggiornato, non noterai tali processi, thread e windows che verranno creati successivamente. È possibile vedere anche gli elementi che non esistono più. Il **aggiornamento** comando è disponibile per tutte le visualizzazioni tranne la visualizzazione di messaggi.  
+# <a name="how-to-refresh-the-view"></a>Procedura: Aggiornare la visualizzazione
+Spy + + cattura un' "istantanea" tabelle di sistema e consente di aggiornare una vista basata su queste informazioni. È importante aggiornare periodicamente le viste di sistema. Se si dispone di una vista di Spy + + aprire e non hanno aggiornato la vista, non noterai tali processi, thread e windows che verranno creati successivamente. Inoltre, è probabile che gli elementi che non esistono più. Il **Aggiorna** comando è disponibile per tutte le viste ad eccezione della visualizzazione di messaggi.  
   
 ### <a name="to-refresh-the-currently-active-view"></a>Per aggiornare la visualizzazione attualmente attiva  
   
--   Scegliere **aggiornamento** dal **finestra** , oppure fare clic di **aggiornare** sulla barra degli strumenti.  
+-   Scegliere **aggiornare** dal **finestra** menu o fare clic il **Aggiorna** pulsante sulla barra degli strumenti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md)   
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md)   
+ [Uso di Spy++](../debugger/using-spy-increment.md)   
+ [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)

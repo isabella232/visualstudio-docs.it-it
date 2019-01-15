@@ -1,8 +1,6 @@
 ---
 title: Eseguire il debug di JavaScript con la console | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840382"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript con la console in Visual Studio
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861826"
 > [!TIP]
 >  Se la finestra Console JavaScript è chiusa, scegliere **Debug**> **Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
   
- Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript, vedere [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
   
 ##  <a name="InteractiveConsole"></a> Debug mediante la finestra Console JavaScript  
  La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.  
@@ -181,7 +179,7 @@ ms.locfileid: "49861826"
   
 13. Scegliere il simbolo della freccia verde per eseguire lo script.  
   
-14. Premere Ctrl + Alt + M per passare dalla richiesta di input della console alla modalità a riga singola e quindi scegliere **Cancella input** ("la X" rossa) per eliminare il codice dalla richiesta di input.  
+14. Premere CTRL+ALT+M per passare dalla richiesta di input della console alla modalità a riga singola, quindi scegliere **Cancella input** ("X" rossa) per eliminare il codice dalla richiesta di input.  
   
 15. Digitare `Data.items.length = 3` al prompt, quindi premere INVIO. Verranno così rimossi gli elementi estranei dai dati.  
   
@@ -191,7 +189,7 @@ ms.locfileid: "49861826"
   
 18. Arresta il debug scegliendo **Debug** > **Arresta debug** o premendo MAIUSC+F5 e poi correggi il codice sorgente.  
   
-     Per la pagina default. HTML completa contenente il codice di esempio corretto, vedere [codice di esempio il Debug di HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Per la pagina default.html completa contenente il codice di esempio corretto, vedere [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Debug interattivo e modalità di interruzione  
  Quando si usano gli strumenti di debug JavaScript, come la finestra Console JavaScript, è possibile usare i punti di interruzione ed eseguire un'istruzione nel codice. Quando un programma in esecuzione nel debugger rileva un punto di interruzione, il debugger sospende temporaneamente l'esecuzione del programma. Quando l'esecuzione viene sospesa, il programma passa dalla modalità di esecuzione alla modalità di interruzione. È possibile riprendere l'esecuzione in qualsiasi momento.  
@@ -239,7 +237,7 @@ ms.locfileid: "49861826"
   
  La modalità a riga singola fornisce la cronologia dell'input. È possibile spostarsi nella cronologia dell'input usando i tasti freccia SU e freccia GIÙ. La modalità a riga singola cancella la richiesta di input quando si eseguono gli script. Per eseguire uno script in modalità a riga singola, premere INVIO.  
   
- La modalità multiriga non cancella la richiesta di input quando si eseguono gli script. Quando passa alla modalità a riga singola dalla modalità multiriga, è possibile cancellare la riga di input premendo **Cancella input** ("X" rossa). Per eseguire uno script in modalità multiriga, premere CTRL+INVIO oppure scegliere il simbolo della freccia nell'angolo inferiore destro della finestra.  
+ La modalità multiriga non cancella la richiesta di input quando si eseguono gli script. Quando si passa alla modalità a riga singola dalla modalità multiriga, è possibile cancellare la riga di input premendo **Cancella input** ("X" rossa). Per eseguire uno script in modalità multiriga, premere CTRL+INVIO oppure scegliere il simbolo della freccia nell'angolo inferiore destro della finestra.  
   
 ##  <a name="Switching"></a> Passaggio a un contesto di esecuzione di script diverso  
  La finestra Console JavaScript consente di interagire con un singolo contesto di esecuzione, che rappresenta una singola istanza dell'host della piattaforma web (WWAHost.exe), per volta. In alcuni scenari, l'app può avviare un'altra istanza dell'host, ad esempio quando si usa un `iframe`, un contratto di condivisione, un Web worker o un controllo `WebView` . Se è in esecuzione un'altra istanza dell'host, è possibile selezionare un contesto di esecuzione diverso durante l'esecuzione dell'app selezionando il contesto di esecuzione nell'elenco **Destinazione** .  
@@ -251,11 +249,11 @@ ms.locfileid: "49861826"
  Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.   
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Il debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Eseguire il debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
+ [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
  [Supporto tecnico e accessibilità](https://visualstudio.microsoft.com/vs/support/)

@@ -1,8 +1,6 @@
 ---
-title: Comandi del Menu? | Documenti Microsoft
-ms.custom: ''
+title: Comandi del Menu? | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922442"
 ---
 # <a name="help-menu-commands"></a>comandi del menu ?
-Il **Guida** menu sono disponibili comandi per aprire i file della Guida.  
+Il **aiutare** menu sono disponibili comandi per aprire i file della Guida.  
   
  **Index**  
  Apre la schermata di contenuto per la Guida di Spy + +.  
   
- **Utilizzo della Guida**  
- Apre un file della Guida che descrive come utilizzare la Guida.  
+ **Uso della Guida**  
+ Apre un file della Guida viene descritto come utilizzare la Guida.  
   
- **Informazioni su Spy + +**  
- Mostra le informazioni di versione e copyright di software di Spy + +.
+ **Informazioni su Spy++**  
+ Mostra le informazioni sul copyright e versione di software per Spy + +.

@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumtables:: Get_count | Documenti Microsoft'
-ms.custom: ''
+title: Idiaenumtables | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f25c7c734afb6f39fceb0584164ddab894a02925
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 05f254abc58471f6fffa810a6b8f2283595efdb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863316"
 ---
 # <a name="idiaenumtablesgetcount"></a>IDiaEnumTables::get_Count
 Recupera il numero di tabelle.  
@@ -27,7 +25,7 @@ Recupera il numero di tabelle.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_Count (    LONG* pRetVal  
+HRESULT get_Count (    LONG* pRetVal  
 );  
   
 ```  

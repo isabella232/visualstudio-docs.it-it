@@ -37,7 +37,7 @@ Può risultare comodo usare la **Trova finestra** finestra di dialogo per selezi
 
 4. Sotto **mostrare**, selezionare **messaggi**.  
 
-5. Premere OK:  
+5. Fare clic su **OK**.  
 
     Uno spazio vuoto [visualizzazione messaggi](../debugger/messages-view.md) viene visualizzata una finestra e un **messaggi** menu viene aggiunto alla barra degli strumenti di Spy + +.  
 

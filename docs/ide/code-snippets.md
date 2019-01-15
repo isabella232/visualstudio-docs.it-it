@@ -2,7 +2,6 @@
 title: Frammenti di codice
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -19,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889228"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -99,7 +98,7 @@ Se si modifica `newPropertyValue` in `m_property`, tutte le istanze di `newPrope
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
 - [Procedura: Distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md)
 - [Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)
 - [Risoluzione dei problemi relativi ai frammenti di codice](../ide/troubleshooting-snippets.md)

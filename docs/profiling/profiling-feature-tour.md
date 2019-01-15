@@ -3,7 +3,6 @@ title: Misurare le prestazioni con gli strumenti di profilatura
 description: Esaminare una breve panoramica dei diversi strumenti di diagnostica disponibili in Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880312"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
+# <a name="quickstart-first-look-at-profiling-tools"></a>Guida introduttiva: Presentazione degli strumenti di profilatura
 
 Visual Studio offre un'ampia gamma di strumenti di profilatura che consentono di diagnosticare diversi tipi di problemi di prestazioni in base al tipo di app.
 
@@ -168,4 +167,4 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |[Memoria JavaScript](../profiling/javascript-memory.md)|No|Sì per HTML, no per XAML|No|
 
 ## <a name="see-also"></a>Vedere anche  
- [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debug in Visual Studio](/visualstudio/debugger/debugger-feature-tour)

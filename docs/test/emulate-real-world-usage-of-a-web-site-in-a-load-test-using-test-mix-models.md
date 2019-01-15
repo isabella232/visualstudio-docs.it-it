@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 33f44051025310072972ef3c15a1d4a4325c0efe
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6e44597fe9a770b76ba043d74f6048dc50a5e031
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950394"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulazione dell'uso reale previsto di un'applicazione o un sito Web in un test di carico usando modelli di combinazione di test
 
@@ -30,16 +29,16 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 
 È possibile specificare una delle seguenti opzioni relative al modello di combinazione di test per lo scenario di test di carico:
 
--   **In base al numero totale di test:** determina quali test delle prestazioni Web o unit test vengono eseguiti quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui una determinata esecuzione dei test è risultata corrispondente alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione. Per altre informazioni, vedere [Percentuale basata sui test avviati](#BasedOnTestsStarted).
+-   **In base al numero totale di test:** determina quale test delle prestazioni Web o quale unit test viene eseguito quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui una determinata esecuzione dei test è risultata corrispondente alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione. Per altre informazioni, vedere [Percentuale basata sui test avviati](#BasedOnTestsStarted).
 
--   **In base al numero di utenti virtuali:** determina la percentuale di utenti virtuali che eseguiranno un determinato test delle prestazioni Web o unit test. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde alla distribuzione assegnata. Utilizzare questo modello di combinazione di test quando si basa la combinazione di test sulla percentuale di utenti che sta eseguendo un determinato test. Per altre informazioni, vedere [Percentuale basata sugli utenti virtuali](#PercentageBasedonVirtualUsers).
+-   **In base al numero di utenti virtuali:** determina la percentuale di utenti virtuali che eseguiranno un test delle prestazioni Web o uno unit test specifico. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde alla distribuzione assegnata. Utilizzare questo modello di combinazione di test quando si basa la combinazione di test sulla percentuale di utenti che sta eseguendo un determinato test. Per altre informazioni, vedere [Percentuale basata sugli utenti virtuali](#PercentageBasedonVirtualUsers).
 
--   **In base alla velocità dell'utente:** nel corso del test di carico ogni test delle prestazioni Web o unit test viene eseguito un numero specificato di volte per utente all'ora. Usare questo modello di combinazione di test quando si vuole che gli utenti virtuali eseguano il test a un ritmo determinato durante il test di carico. Per altre informazioni, vedere [Combinazione di test di velocità](#PacingTestMix).
+-   **In base alla velocità dell'utente:** nel corso del test di carico, ogni test delle prestazioni Web o unit test viene eseguito un numero specificato di volte per utente all'ora. Usare questo modello di combinazione di test quando si vuole che gli utenti virtuali eseguano il test a un ritmo determinato durante il test di carico. Per altre informazioni, vedere [Combinazione di test di velocità](#PacingTestMix).
 
     > [!TIP]
     > Quando scegliere **Combinazione di test di percentuale** e quando **Percentuale basata sugli utenti virtuali**? La differenza tra queste due scelte è importante quando alcuni test nella combinazione di test hanno una durata maggiore rispetto agli altri test. In questa situazione, è consigliabile scegliere **Percentuale basata sugli utenti virtuali**. Questa scelta consente di evitare esecuzioni di test di lunga durata. Se tuttavia i test sono tutti della stessa durata, è possibile scegliere **Combinazione di test di percentuale**.
 
--   **In base all'ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico. Per altre informazioni, vedere [Ordine sequenziale](#SequentialOrder).
+-   **In base a ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico. Per altre informazioni, vedere [Ordine sequenziale](#SequentialOrder).
 
 ###  <a name="BasedOnTestsStarted"></a> Percentuale basata sui test avviati
  Per ogni test della combinazione, è possibile specificare una percentuale che determina la frequenza di esecuzione del test successivo selezionato. Ad esempio, è possibile assegnare i seguenti valori in percentuale a tre test:
@@ -71,11 +70,11 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 #### <a name="apply-distribution-to-pacing-delay"></a>Applicare la distribuzione al ritardo velocità
  È possibile impostare il valore della proprietà **Applica distribuzione a ritardo velocità** in uno scenario di test di carico su True o False:
 
-- **True**: lo scenario applica ritardi di distribuzione statistici tipici specificati dal valore nella colonna **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modificare modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: lo scenario applica ritardi di distribuzione statistici tipici specificati dal valore nella colonna **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
    Presupporre ad esempio di avere il valore **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test** impostato su 2 utenti all'ora. Se la proprietà **Applica distribuzione a ritardo velocità** è impostata su **True**, al tempo di attesa tra i test viene applicata una distribuzione statistica tipica. I test verranno ancora eseguiti in numero di 2 all'ora, ma non trascorreranno necessariamente 30 minuti tra le esecuzioni. Il primo test potrebbe venire eseguito dopo 4 minuti e il secondo test dopo 45 minuti.
 
-- **False**: i test verranno eseguiti al ritmo specificato per il valore della colonna **Test per utente all'ora** della finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modificare modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: i test verranno eseguiti al ritmo specificato per il valore della colonna **Test per utente all'ora** della finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
    Presupporre ad esempio di avere il valore **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test** impostato su 2 utenti all'ora. Se la proprietà **Applica distribuzione a ritardo velocità** è impostata su **False**, non si prevede alcun intervallo di tolleranza nell'esecuzione dei test. Il test verrà eseguito ogni 30 minuti. In questo modo si è certi che verranno eseguiti 2 test all'ora.
 

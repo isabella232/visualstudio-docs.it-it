@@ -1,20 +1,18 @@
 ---
 title: Utilizzo GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941086"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 
@@ -100,17 +98,17 @@ Per trovare le informazioni necessarie, è possibile filtrare il report sull'uti
 
  Di seguito sono disponibili maggiori dettagli:
 
-|Controllo filtro|Descrizione|
+|Controllo filtro|Description|
 |--------------------|-----------------|
 |**Processo**|Nome del processo a cui si è interessati. Questo elenco a discesa contiene tutti i processi che hanno utilizzato la GPU durante la sessione di diagnostica. Il colore associato al processo nell'elenco a discesa è il colore dell'attività del thread nelle sequenze temporali successive.|
 |**Thread**|ID del thread a cui si è interessati. In un'app multithread, queste informazioni consentono di isolare thread specifici che appartengono al processo a cui si è interessati. Gli eventi associati al thread selezionato sono evidenziati in ogni sequenza temporale.|
-|**Schermo**|Numero dello schermo di cui è visualizzata la frequenza di aggiornamento **Nota:** alcuni driver possono essere configurati in modo da presentare più schermi fisici come un unico schermo virtuale di grandi dimensioni. È possibile che nell'elenco sia presente un solo schermo, anche se al computer sono collegati più schermi.|
+|**Schermo**|Numero dello schermo di cui viene visualizzata la frequenza di aggiornamento **Nota:**  Alcuni driver possono essere configurati in modo da presentare più schermi fisici come un unico schermo virtuale di grandi dimensioni. È possibile che nell'elenco sia presente un solo schermo, anche se al computer sono collegati più schermi.|
 |**Filtro**|Parole chiave a cui si è interessati. Nella parte inferiore del report saranno visualizzati solo gli eventi che corrispondono completamente o parzialmente a una parola chiave. È possibile specificare più parole chiave separandole con un punto e virgola (;).|
 |**Hierarchy Sort** (Ordinamento gerarchia)|Casella di controllo che indica se le gerarchie degli eventi, definite mediante marcatori utente, vengono mantenute o ignorate.|
 
  L'elenco eventi nella parte inferiore del report di utilizzo della GPU mostra i dettagli relativi a ogni evento.
 
-|Colonna|Descrizione|
+|Colonna|Description|
 |------------|-----------------|
 |**Nome evento**|Nome dell'evento di grafica. Un evento in genere corrisponde a un evento nella sequenza temporale di un thread della CPU e a un evento in una sequenza temporale della GPU.<br /><br /> Se Utilizzo GPU non è riuscito a determinare il nome di un evento, i nomi degli eventi possono risultare non attribuiti. Per altre informazioni, vedere la nota sotto questa tabella.|
 |**Avvio CPU (ns)**|Momento di avvio dell'evento nella CPU a seguito della chiamata a un'API Direct3D. Il tempo viene misurato in nanosecondi in relazione al momento di avvio dell'app.|

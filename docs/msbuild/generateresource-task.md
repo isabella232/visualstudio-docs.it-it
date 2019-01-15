@@ -1,8 +1,6 @@
 ---
 title: Attività GenerateResource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917501"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
 Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *RESOURCES* di Common Language Runtime, che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file *TXT* o *RESX* in file *RESOURCES*. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -33,7 +31,7 @@ Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `GenerateResource` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`AdditionalInputs`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|  
 |`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Specifica una matrice di coppie nome/valore di variabili di ambiente che devono essere passate al file *resgen.exe* generato, oltre al normale blocco di ambiente (o all'esecuzione selettiva dell'override).|  
@@ -46,7 +44,7 @@ Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *
 |`PublicClass`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, crea una classe di risorse fortemente tipizzata come classe pubblica.|  
 |`References`|Parametro `String[]` facoltativo.<br /><br /> Specifica i riferimenti per il caricamento dei tipi nei file *RESX*. Gli elementi dati dei file *RESX* possono essere di tipo .NET. Se il file *RESX* viene letto, deve essere risolto. In genere, è possibile risolverlo correttamente usando le regole di caricamento dei tipi standard. Hanno la precedenza eventuali assembly specificati in `References`.<br /><br /> Questo parametro non è obbligatorio per le risorse fortemente tipizzate.|  
 |`SdkToolsPath`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe*.|  
-|`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da convertire. Gli elementi passati a questo parametro devono avere una delle estensioni di file seguenti:<br /><br /> -   *TXT*: specifica l'estensione di un file di testo da convertire. I file di testo possono contenere solo risorse di tipo stringa.<br />-   *RESX*: specifica l'estensione di un file di risorse basato su XML da convertire.<br />-   *RESTEXT*: specifica lo stesso formato di *TXT*. Questa diversa estensione consente di distinguere chiaramente i file di origine che contengono risorse dagli altri file di origine nel processo di compilazione.<br />-   *RESOURCES*: specifica l'estensione di un file di risorse da convertire.|  
+|`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da convertire. Gli elementi passati a questo parametro devono avere una delle estensioni di file seguenti:<br /><br /> -   *txt*: specifica l'estensione di un file di testo da convertire. I file di testo possono contenere solo risorse di tipo stringa.<br />-   *.resx*: specifica l'estensione di un file di risorse basato su XML da convertire.<br />-   *.restext*: specifica lo stesso formato dell'estensione *.txt*. Questa diversa estensione consente di distinguere chiaramente i file di origine che contengono risorse dagli altri file di origine nel processo di compilazione.<br />-   *.resources*: specifica l'estensione di un file di risorse da convertire.|  
 |`StateFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il percorso di un file di cache facoltativo usato per accelerare il controllo delle dipendenze dei collegamenti nei file di input *RESX*.|  
 |`StronglyTypedClassName`|Parametro `String` facoltativo.<br /><br /> Specifica il nome della classe di risorse fortemente tipizzata. Se questo parametro non è specificato, viene usato il nome base del file di risorse.|  
 |`StronglyTypedFilename`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il nome del file di origine. Se questo parametro non è specificato, viene usato il nome della classe come nome base e l'estensione viene determinata dal linguaggio. Ad esempio: *MyClass.cs*.|  
@@ -87,7 +85,7 @@ Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *
  Supponendo che l'assembly si chiami myAssembly, il codice seguente genera una risorsa incorporata denominata *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Senza i metadati \<LogicalName>, la risorsa sarebbe denominata *myAssembly.myResource.resources*.  Questo esempio si applica solo a Visual Basic e al processo di compilazione di Visual C#.  

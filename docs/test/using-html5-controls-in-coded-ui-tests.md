@@ -2,19 +2,18 @@
 title: Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883026"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
@@ -34,7 +33,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 
 ## <a name="audio-control"></a>Controllo audio
 
-**Controllo Audio**: le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.
+**Controllo Audio:** le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.
 
 ![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
 
@@ -58,7 +57,7 @@ Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 
 ## <a name="video-control"></a>Controllo video
- **Controllo Video**: le azioni nel controllo Video HTML5 vengono registrate e riprodotte correttamente.
+ **Controllo Video:** le azioni nel controllo Video HTML5 vengono registrate e riprodotte correttamente.
 
  ![Controllo video HTML5](../test/media/codedui_html5_video.png)
 
@@ -81,7 +80,7 @@ Vedere [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/vi
 > Se si riavvolge o si fa avanzare rapidamente il video usando le etichette -30s o +30s, il video verrà aggregato in modo da passare all'ora appropriata.
 
 ## <a name="progressbar"></a>ProgressBar
- **Controllo ProgressBar**: si tratta di un controllo con cui non si può interagire. È possibile aggiungere asserzioni nelle proprietà `Value` e `Max` di questo controllo. Per altre informazioni, vedere [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **Controllo ProgressBar:** si tratta di un controllo con cui non si può interagire. È possibile aggiungere asserzioni nelle proprietà `Value` e `Max` di questo controllo. Per altre informazioni, vedere [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Controllo ProgressBar HTML5](../test/media/codedui_html5_progressbar.png)
 

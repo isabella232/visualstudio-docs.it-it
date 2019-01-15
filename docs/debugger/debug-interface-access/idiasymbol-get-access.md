@@ -1,8 +1,6 @@
 ---
 title: Get_access | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c489debf8b114aa8bf2dedaac8dae1eef183e004
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859503"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 Recupera il modificatore di accesso di un membro di classe.  
@@ -27,7 +25,7 @@ Recupera il modificatore di accesso di un membro di classe.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_access (   
+HRESULT get_access (   
    DWORD* pRetVal  
 );  
 ```  
@@ -44,9 +42,9 @@ HRESULT get_access (
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Descrizione|  
+|Requisito|Description|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,8 +1,6 @@
 ---
 title: Risoluzione dei problemi relativi agli strumenti per le prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 432afd3051d7deb04fe32c02d163e59e324f6b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870836"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Risolvere i problemi relativi agli strumenti per le prestazioni
 Quando si usano gli strumenti di profilatura, potrebbe verificarsi uno dei seguenti problemi:  

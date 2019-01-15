@@ -1,8 +1,6 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ee92eb8418fce37182b78364d08c2570f32da9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 66428fa389b3adc152524d3d17ce7dd8135b1dbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940680"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex
 Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa di un errore che si verifica durante la fase Vertex shader.  
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
@@ -108,7 +106,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
    > [!TIP]
    >  Se si sta eseguendo contemporaneamente il debug dell'app, è possibile impostare un punto di interruzione in questa posizione e tale punto verrà raggiunto durante il rendering del frame successivo. È quindi possibile esaminare i membri di `m_marbleConstantBufferData` per confermare che il valore del membro `projection` viene impostato su tutti zeri quando viene riempito il buffer costante.  
   
-   Dopo aver individuato la posizione in cui il buffer costante viene riempito e scoprire che i relativi valori provengono dalla variabile `m_marbleConstantBufferData`, il passaggio successivo consiste nel trovare la posizione di `m_marbleConstantBufferData.projection` membro è impostato su tutti zeri. È possibile usare **Trova tutti i riferimenti** per individuare rapidamente il codice che cambia il valore di `m_marbleConstantBufferData.projection`.  
+   Dopo aver individuato la posizione in cui viene riempito il buffer costante e scoperto che i relativi valori provengono dalla variabile `m_marbleConstantBufferData`, il passaggio successivo consiste nel trovare la posizione in cui il membro `m_marbleConstantBufferData.projection` viene impostato su tutti zeri. È possibile usare **Trova tutti i riferimenti** per individuare rapidamente il codice che cambia il valore di `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Per trovare la posizione in cui viene impostato il membro projection nel codice sorgente dell'app  
   

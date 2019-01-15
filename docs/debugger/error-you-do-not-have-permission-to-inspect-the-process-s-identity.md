@@ -1,8 +1,6 @@
 ---
-title: "Errore: Non si dispone dell'autorizzazione per controllare il processo di&#39;identità s | Documenti Microsoft"
-ms.custom: ''
+title: 'Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -14,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2424379a016a80d251b53e79799fd0d39e059218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941862"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non si dispone dell'autorizzazione per controllare il processo di&#39;identità s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s
 Non si dispone dell'autorizzazione necessaria per controllare l'identità del processo. Probabilmente l'errore è causato dalla configurazione del sistema.  
   
  Il debugger non è stato in grado di controllare l'identità del processo, un'informazione necessaria per l'esecuzione del debug. Probabilmente Servizi terminal è disabilitato. Per impostazione predefinita, questo servizio è attivato. Per riattivarlo, eseguire la procedura seguente.  
   
 ### <a name="to-enable-terminal-services"></a>Per attivare Servizi terminal  
   
-1.  Fare clic su **avviare** e quindi scegliere **Pannello di controllo**.  
+1.  Fare clic su **Start**, quindi scegliere **Pannello di controllo**.  
   
-2.  Nel Pannello di controllo, scegliere **passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **strumenti di amministrazione**.  
+2.  Nel Pannello di controllo scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-3.  Nel **strumenti di amministrazione** finestra, fare doppio clic su **Gestione Computer**.  
+3.  Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione computer**.  
   
-4.  Nella finestra Gestione Computer espandere il **servizi e applicazioni** nodo.  
+4.  Nella finestra di Gestione computer espandere il nodo **Servizi e applicazioni**.  
   
-5.  Sotto il **servizi e applicazioni**, fare clic su **servizi**.  
+5.  In **Servizi e applicazioni** fare clic su **Servizi**.  
   
      Nel riquadro di destra verrà visualizzato un elenco di servizi.  
   
-6.  Nel **servizi** elenco, fare doppio clic su **servizi Terminal** e quindi scegliere **proprietà**.  
+6.  Nell'elenco **Servizi** fare clic con il pulsante destro del mouse su **Servizi terminal** e quindi scegliere **Proprietà**.  
   
-7.  Nel **proprietà servizi Terminal** finestra, passa al **generale** scheda e impostare **tipo di avvio** a **manuale**.  
+7.  Nel **proprietà servizi Terminal** finestra, passa al **generali** scheda e impostare **tipo di avvio** al **manuale**.  
   
 8.  Fare clic su **OK**.  
   
@@ -52,15 +50,15 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 ### <a name="to-enable-remote-desktop"></a>Per attivare Desktop remoto  
   
-1.  Fare clic su **avviare** e quindi fare doppio clic su **risorse del Computer**.  
+1.  Fare clic su **Start** e quindi fare clic con il pulsante destro del mouse su **Risorse del computer**.  
   
 2.  Scegliere **Proprietà**.  
   
-     Il **le proprietà di sistema** verrà visualizzata la finestra.  
+     Verrà visualizzata la finestra **Proprietà del sistema**.  
   
-3.  Fare clic su **remoto**.  
+3.  Fare clic su **Connessione remota**.  
   
-4.  In **Desktop remoto**selezionare **consentire agli utenti di connettersi in remoto al computer**.  
+4.  In **Desktop remoto** selezionare **Consenti agli utenti di connettersi in remoto al computer**.  
   
 5.  Fare clic su **OK**.  
   

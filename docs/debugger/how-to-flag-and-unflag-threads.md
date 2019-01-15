@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: impostare e rimuovere i flag dei thread | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Impostare e rimuovere i flag dei thread | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d26c87867e071b7dafce80d95e4bc46cb88bb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851404"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Procedura: impostare e rimuovere i flag dei thread
+# <a name="how-to-flag-and-unflag-threads"></a>Procedura: Impostare e rimuovere i flag dei thread
 È possibile contrassegnare un thread che si desidera prestare particolare attenzione mediante un'icona nella **thread**, **stack in parallelo** (visualizzazione thread), **espressioni di controllo parallela**e  **Thread GPU** windows. Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.  
   
 Thread con flag ricevono inoltre un trattamento speciale nel **Thread** elenco le **posizione di Debug** sulla barra degli strumenti e le altre finestre di debug con multithreading. È possibile visualizzare tutti i thread o un solo thread con flag nel **Thread** elenco o in altre finestre.
@@ -36,7 +34,7 @@ Thread con flag ricevono inoltre un trattamento speciale nel **Thread** elenco l
   
 ### <a name="to-unflag-all-threads"></a>Per rimuovere i flag di tutti thread  
   
--   Nel **thread** finestra, fare doppio clic su uno o più thread e quindi fare clic su **Rimuovi flag di tutti i thread**.
+-   Nella finestra **Thread** fare clic con il pulsante destro del mouse su un thread qualsiasi, quindi scegliere **Rimuovi flag di tutti i thread**.
 -   Nel **espressioni di controllo parallela** finestra, seleziona tutti i thread con flag, quindi fare doppio clic e selezionare **Rimuovi flag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag  
@@ -45,19 +43,19 @@ Thread con flag ricevono inoltre un trattamento speciale nel **Thread** elenco l
   
 ### <a name="to-flag-just-my-code"></a>Per contrassegnare Just My Code  
   
-1.  Sulla barra degli strumenti in cima il **thread** finestra, fare clic sull'icona del flag.  
+1.  Fare clic sull'icona del flag nella barra degli strumenti in cima alla finestra **Thread**.  
   
-2.  Nell'elenco a discesa elenco, fare clic su **Contrassegna Just My Code**.  
+2.  Fare clic su **Contrassegna Just My Code** nell'elenco a discesa.  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Per contrassegnare thread associati ai moduli selezionati  
   
-1.  Nella barra degli strumenti di **thread** finestra, fare clic sull'icona del flag.  
+1.  Fare clic sull'icona del flag nella barra degli strumenti della finestra **Thread**.  
   
-2.  Nell'elenco a discesa elenco, fare clic su **Contrassegna selezione moduli personalizzata**.  
+2.  Fare clic su **Contrassegna selezione moduli personalizzata** nell'elenco a discesa.  
   
-3.  Nel **Seleziona moduli** finestra di dialogo, selezionare i moduli desiderati.  
+3.  Selezionare i moduli desiderati nella finestra di dialogo **Seleziona moduli**.  
   
-4.  (Facoltativo) Nel **ricerca** , digitare una stringa da cercare moduli specifici.  
+4.  (Facoltativo) Digitare una stringa per cercare moduli specifici nella casella **Cerca**.  
   
 5.  Fare clic su **OK**.  
   

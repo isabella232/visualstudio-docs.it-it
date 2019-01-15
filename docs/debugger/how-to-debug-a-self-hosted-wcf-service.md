@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: eseguire il Debug di un servizio WCF Self-Hosted | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug di un servizio WCF Self-Hosted | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956127"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedura: eseguire il debug di un servizio WCF indipendente
-Oggetto *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, l'Host del servizio WCF o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Il modo più semplice per eseguire il debug di un servizio WCF indipendente consiste nel configurare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare client e server quando si sceglie **Avvia debug** sul **Debug** menu.  
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedura: Eseguire il debug di un servizio WCF self-hosted
+Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Il modo più semplice per eseguire il debug di un servizio WCF indipendente consiste nel configurare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare client e server quando si sceglie **Avvia debug** sul **Debug** menu.  
   
  Se il servizio WCF è Self-hosting interno o un processo che non può essere avviato in questo modo, ad esempio servizio NT, è possibile utilizzare questo metodo. In alternativa, è possibile eseguire una delle operazioni seguenti:  
   
@@ -47,7 +45,7 @@ Oggetto *servizio indipendente* è un servizio WCF che non viene eseguito in IIS
   
    2.  Fare clic su **Imposta progetti di avvio**.  
   
-   3.  Nel **soluzione \<nome > proprietà** nella finestra di dialogo **progetti di avvio multipli**.  
+   3.  Nella finestra di dialogo **Proprietà \<nome> soluzione** selezionare **Progetti di avvio multipli**.  
   
    4.  Nel **progetti di avvio multipli** griglia, nella riga che corrisponde al progetto server, fare clic su **azione** e scegliere **avviare**.  
   

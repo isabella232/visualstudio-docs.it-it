@@ -1,8 +1,6 @@
 ---
 title: Costanti (Debug Interface Access SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bdc54e15014e05f539c115675a97690e685cb5f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852062"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Costanti (Debug Interface Access SDK)
 Queste costanti di stringa possono essere utilizzate per identificare diverse sezioni di un file di database (PDB) di debug programma tramite il DIA SDK.  
@@ -28,7 +26,7 @@ Queste costanti di stringa possono essere utilizzate per identificare diverse se
 ## <a name="constants"></a>Costanti  
  Di seguito viene dichiarati come macro C/C++.  
   
-|Macro|Valore|  
+|Macro|Value|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L "Simboli"|  
 |`DiaTable_Sections`|L "Sezioni"|  

@@ -1,8 +1,6 @@
 ---
-title: 'Errore: Impossibile connettersi a SQL Server nel computer remoto | Microsoft Docs'
-ms.custom: ''
+title: 'Errore: Non è possibile connettersi a SQL Server nel computer remoto | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlle_dcom_accessdenied
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d714bf188d995fa786fecd1038699f16743a4059
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: db9e2e7c489ace9436f101259cccac144e1a933e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858526"
 ---
-# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Errore: impossibile eseguire la connessione a SQL Server su un computer remoto
+# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Errore: Impossibile connettersi a SQL Server sul computer remoto
 Non è possibile connettersi a SQL Server nel computer remoto *nome*. Accesso negato. Verificare che il debugger remoto sia installato sul computer remoto. Se il computer remoto non è un dominio o se Visual Studio è eseguito come account locale, il computer remoto deve disporre di un account con gli stessi nome utente e password dell'account locale.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
@@ -32,4 +30,4 @@ Non è possibile connettersi a SQL Server nel computer remoto *nome*. Accesso ne
 -   Vedere [Debug remoto](../debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))
+ [Debug di SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

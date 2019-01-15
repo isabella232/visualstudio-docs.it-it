@@ -7,19 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bed9629c40d4d7b7e93ccd250474ea90b44ab7c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 5224866db3fb0499a386bd1d3bea1ac0e6b06f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935398"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Impossibile modificare la finestra di progettazione durante il debug
 
-Questo messaggio viene visualizzato quando viene effettuato un tentativo di modificare gli elementi nel **O/R Designer** quando l'applicazione è in esecuzione in modalità di debug. Quando l'applicazione è in esecuzione in modalità debug, il **O/R Designer** è di sola lettura.
+Questo messaggio viene visualizzato quando si tenta di modificare elementi in **Object Relational Designer** durante l'esecuzione dell'applicazione in modalità di debug. Quando l'applicazione è in esecuzione in tale modalità, **Object Relational Designer** è di sola lettura.
 
 Per correggere questo errore, selezionare **Termina debug** nel **Debug** menu. L'applicazione interrompe il debug, ed è possibile modificare gli elementi di **O/R Designer**.
 

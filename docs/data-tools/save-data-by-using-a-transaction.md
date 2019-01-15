@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: salvare i dati utilizzando una transazione'
+title: 'Procedura: Salvare dati usando una transazione'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918748"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Procedura: salvare i dati utilizzando una transazione
+# <a name="how-to-save-data-by-using-a-transaction"></a>Procedura: Salvare dati usando una transazione
 
 Salvare i dati in una transazione usando il <xref:System.Transactions> dello spazio dei nomi. Usare il <xref:System.Transactions.TransactionScope> oggetto da inserire in una transazione che viene gestita automaticamente.
 
@@ -55,4 +54,4 @@ Per eseguire il rollback della transazione, generare un'eccezione prima di chiam
 ## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
-- [Procedura dettagliata: Salvare dati in una transazione](../data-tools/save-data-in-a-transaction.md)
+- [Procedura dettagliata: Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)

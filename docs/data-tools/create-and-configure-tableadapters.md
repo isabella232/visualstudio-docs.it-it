@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b720072d5ccd695ff1e7006bda5221ae00db06ef
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: a363c9964b88196e31f5ba05a4244fabdf00f90f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966875"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 
@@ -58,7 +57,7 @@ Mappare i parametri dalla stored procedure selezionata alle colonne corrisponden
 > [!NOTE]
 > La stored procedure che è assegnata al comando SELECT viene eseguita chiamando il metodo dell'oggetto TableAdapter tale nome è nel passaggio successivo della procedura guidata. Il metodo predefinito è `Fill`, in modo che il codice che viene in genere utilizzato per l'esecuzione della stored procedure SELECT è `TableAdapter.Fill(tableName)`. Se si modifica il nome predefinito `Fill`, sostituire `Fill` con il nome assegnare e sostituire "TableAdapter" con il nome effettivo dell'oggetto TableAdapter (ad esempio, `CustomersTableAdapter`).
 
-- Selezionando il **Crea metodi per inviare aggiornamenti direttamente al database** opzione è equivalente all'impostazione di `GenerateDBDirectMethods` proprietà su true. L'opzione è disponibile quando l'istruzione SQL originale non fornisce informazioni sufficienti oppure la query non è aggiornabile. Questa situazione può verificarsi, ad esempio, nella **JOIN** query e le query che restituiscono un singolo valore (scalare).
+- Selezionando il **Crea metodi per inviare aggiornamenti direttamente al database** opzione è equivalente all'impostazione di `GenerateDBDirectMethods` proprietà su true. Questa opzione non è disponibile quando l'istruzione SQL originale non fornisce informazioni sufficienti o se la query non è aggiornabile. Questa situazione può verificarsi, ad esempio, nella **JOIN** query e le query che restituiscono un singolo valore (scalare).
 
 Il **opzioni avanzate** nella procedura guidata consentono di:
 
@@ -82,7 +81,7 @@ Nell'esempio seguente illustra come chiamare un'altra query denominata `FillByCi
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Per avviare la configurazione guidata Query TableAdapter con una nuova query
 
-1.  Aprire il set di dati nel **Progettazione Dataset**.
+1.  Aprire il set di dati in **Progettazione DataSet**.
 
 2.  Se si sta creando una nuova query, trascinare un **Query** dall'oggetto il **set di dati** scheda della finestra di **della casella degli strumenti** in un <xref:System.Data.DataTable>, o selezionare **Aggiungi Query**dal menu di scelta rapida dell'oggetto TableAdapter. È anche possibile trascinare un **Query** oggetto in un'area vuota del **Progettazione Dataset**, che consente di creare un oggetto non associato a un TableAdapter <xref:System.Data.DataTable>. Queste query possono restituire valori singoli (scalari) oppure eseguire UPDATE, INSERT, o solo eliminare comandi sul database.
 

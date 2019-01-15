@@ -1,8 +1,6 @@
 ---
 title: 'Procedura: Compilare un progetto con risorse | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934313"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: Compilare un progetto con risorse
 Se si stanno compilando le versioni localizzate di un progetto, tutti gli elementi dell'interfaccia utente devono essere separati in file di risorse per le diverse lingue. Se il progetto usa solo stringhe, i file di risorse possono usare file di testo. In alternativa, è possibile usare i file con estensione *resx* come file di risorse.  

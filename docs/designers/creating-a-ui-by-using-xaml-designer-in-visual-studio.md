@@ -2,7 +2,6 @@
 title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880410"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 
@@ -123,11 +122,11 @@ Specifica dimensioni e risoluzioni di visualizzazione diverse per l'app.
 
 **Orientamento**
 
-Specifica diversi orientamenti per l'app, **Orizzontale** o **Verticale**.
+Specifica diversi orientamenti per l'app: **Orizzontale** o **Verticale**.
 
 **Microsoft Edge**
 
-Specifica diversi allineamenti per i bordi dell'app, ad esempio **Entrambi**, **A sinistra**, **A destra**o **Nessuno**.
+Specifica diversi allineamenti per i bordi dell'app: **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
 
 **Contrasto elevato**
 
@@ -201,4 +200,4 @@ A destra di ogni valore di proprietà è presente un *marcatore della proprietà
 
 - [Uso di elementi in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)
 - [Procedura per creare e applicare una risorsa](../designers/how-to-create-and-apply-a-resource.md)
-- [Procedura dettagliata: binding ai dati nella finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

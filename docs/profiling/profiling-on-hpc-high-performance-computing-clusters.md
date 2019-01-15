@@ -1,8 +1,6 @@
 ---
 title: Profilatura su cluster HPC (High Performance Computing) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856657"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 
@@ -126,7 +124,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="hpc-launch-properties"></a>Proprietà avvio HPC
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |**Nodo head**|Specifica il computer che funge da nodo head HPC nell'esecuzione della profilatura.|
 |**Numero di processi**|Specifica il numero di istanze dell'applicazione da eseguire nell'applicazione profilata.|
@@ -137,7 +135,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="advanced-properties"></a>Proprietà avanzate
 
-| Proprietà | Descrizione |
+| Proprietà | Description |
 |---------------------------------------| - |
 | **Nome progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
 | **Esegui pulizia all'arresto del profiler** | Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE. |
@@ -150,4 +148,3 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 | **Argomenti script pre-profilatura** | Specifica gli argomenti da passare allo script pre-profilatura. |
 | **Script post-profilatura** | Specifica il percorso e il nome file di uno script da eseguire nel computer di sviluppo locale al termine della sessione di profilatura. |
 | **Argomenti script post-profilatura** | Specifica gli argomenti da passare allo script post-profilatura. |
-

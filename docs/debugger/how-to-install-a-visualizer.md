@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: installare un visualizzatore | Documenti Microsoft'
-ms.custom: ''
+title: 'Procedura: Installare un visualizzatore | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87feaebf16168744467137fdf4af54538a316cdf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914571"
 ---
-# <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
+# <a name="how-to-install-a-visualizer"></a>Procedura: Installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.  
   
 > [!NOTE]
@@ -47,5 +45,5 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 4.  Riavviare la sessione di debug.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Procedura: Scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data)

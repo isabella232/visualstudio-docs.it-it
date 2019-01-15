@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Documenti Microsoft
-ms.custom: ''
+title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827978"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 Dato un valore di tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub in un indirizzo virtuale relativo specificato.  
@@ -33,10 +31,10 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Parametri  
  `tagValue`  
- [in] Il valore del tag puntatore per cui sono contenuti i record dei simboli pointee.  
+ [in] Il valore del tag puntatore per il quale i record dei simboli pointee vengono trovati.  
   
  `rva`  
- [in] Rva che viene utilizzato per filtrare i simboli che corrispondono alla variabile pointee con il valore del tag specificato.  
+ [in] il rva che viene usato per filtrare i simboli che corrispondono alla variabile pointee con il valore di tag specificato.  
   
  `ppResult`  
  [out] Un puntatore a un `IDiaEnumSymbols` puntatore a interfaccia che viene inizializzato con il risultato.  

@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989130"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -43,13 +42,13 @@ Quando si dati associa le tabelle di set di dati a controlli in una pagina XAML 
 
 Se si ha familiarità con gli oggetti TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |-----------|-----------------|
 |[Inserire nuovi record in un database](../data-tools/insert-new-records-into-a-database.md)|Come eseguire aggiornamenti e inserimenti usando oggetti TableAdapter o un comando|
 |[Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Come eseguire gli aggiornamenti degli oggetti TableAdapter|
 |[Aggiornamento gerarchico](../data-tools/hierarchical-update.md)|Come eseguire gli aggiornamenti da un set di dati con due o più tabelle correlate|
 |[Gestire un'eccezione di concorrenza](../data-tools/handle-a-concurrency-exception.md)|Come gestire le eccezioni quando due utenti tentano di modificare gli stessi dati in un database nello stesso momento|
-|[Procedura: salvare i dati utilizzando una transazione](../data-tools/save-data-by-using-a-transaction.md)|Come salvare i dati in una transazione utilizzando il sistema. Le transazioni dello spazio dei nomi e un oggetto TransactionScope|
+|[Procedura: Salvare dati usando una transazione](../data-tools/save-data-by-using-a-transaction.md)|Come salvare i dati in una transazione utilizzando il sistema. Le transazioni dello spazio dei nomi e un oggetto TransactionScope|
 |[Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)|Procedura dettagliata che consente di creare un'applicazione Windows Forms per illustrare il salvataggio dei dati a un database all'interno di una transazione|
 |[Salvare dati in un database (a più tabelle)](../data-tools/save-data-to-a-database-multiple-tables.md)|Come modificare i record e salvare le modifiche in più tabelle nel database|
 |[Salvare dati da un oggetto in un database](../data-tools/save-data-from-an-object-to-a-database.md)|Come passare i dati da un oggetto che non è in un set di dati a un database usando un metodo DbDirect di TableAdapter|
@@ -72,21 +71,21 @@ Un set di dati contiene insiemi di tabelle che contengono una raccolta di righe.
 
 Quando si uniscono i set di dati, è possibile passare un argomento booleano (`preserveChanges`) che indica il <xref:System.Data.DataSet.Merge%2A> metodo se si desidera mantenere le modifiche esistenti nel set di dati di destinazione. Poiché i set di dati di gestire più versioni di record, è importante tenere presente che viene eseguita l'unione di più versioni dei record. La tabella seguente illustra le modalità di unione di un record in due set di dati:
 
-|DataRowVersion|Set di dati di destinazione|Set di dati di origine|
+|DataRowVersion|DataSet di destinazione|Set di dati di origine|
 | - | - | - |
 |Originale|James Wilson|James C. Wilson|
 |Corrente|Jim Wilson|James C. Wilson|
 
 Chiama il <xref:System.Data.DataSet.Merge%2A> metodo nella tabella precedente con `preserveChanges=false targetDataset.Merge(sourceDataset)` comporta i seguenti dati:
 
-|DataRowVersion|Set di dati di destinazione|Set di dati di origine|
+|DataRowVersion|DataSet di destinazione|Set di dati di origine|
 | - | - | - |
 |Originale|James C. Wilson|James C. Wilson|
 |Corrente|James C. Wilson|James C. Wilson|
 
 Chiama il <xref:System.Data.DataSet.Merge%2A> metodo con `preserveChanges = true targetDataset.Merge(sourceDataset, true)` comporta i seguenti dati:
 
-|DataRowVersion|Set di dati di destinazione|Set di dati di origine|
+|DataRowVersion|DataSet di destinazione|Set di dati di origine|
 | - | - | - |
 |Originale|James C. Wilson|James C. Wilson|
 |Corrente|Jim Wilson|James C. Wilson|
@@ -94,7 +93,7 @@ Chiama il <xref:System.Data.DataSet.Merge%2A> metodo con `preserveChanges = true
 > [!CAUTION]
 > Nel `preserveChanges = true` scenario, se il <xref:System.Data.DataSet.RejectChanges%2A> metodo viene chiamato su un record nel set di dati di destinazione, quindi viene ripristinato il dati originali dalle *origine* set di dati. Ciò significa che, se si tenta di aggiornare l'origine dati originale con il set di dati di destinazione, potrebbe non essere in grado di trovare la riga originale per l'aggiornamento. È possibile evitare una violazione della concorrenza per la compilazione di un altro set di dati con i record aggiornati dall'origine dati e l'esecuzione di un'unione nell'indice per evitare una violazione della concorrenza. (Una violazione della concorrenza si verifica quando un altro utente modifica un record nell'origine dati dopo che il set di dati è stato compilato.)
 
-## <a name="update-constraints"></a>Aggiornamento dei vincoli
+## <a name="update-constraints"></a>Aggiornare i vincoli
 
 Per apportare modifiche a una riga di dati esistente, aggiungere o aggiornare i dati in singole colonne. Se il set di dati contiene i vincoli (ad esempio le chiavi esterne o i vincoli non nullable), è possibile che il record può essere temporaneamente in uno stato di errore perché venga aggiornata. Vale a dire, può essere in stato di errore dopo aver completato l'aggiornamento di una colonna, ma prima di procedere con quello successivo.
 
@@ -127,7 +126,7 @@ Il <xref:System.Data.DataRow.RowState%2A> proprietà di un <xref:System.Data.Dat
 
 La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowState> enumerazione:
 
-|Valore DataRowState|Descrizione|
+|Valore DataRowState|Description|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection>. (Una riga in questo stato è privo di una versione originale corrispondente in quanto non esisteva quando l'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo è stato chiamato).|
 |<xref:System.Data.DataRowState.Deleted>|La riga è stata eliminata tramite il <xref:System.Data.DataRow.Delete%2A> di un <xref:System.Data.DataRow> oggetto.|
@@ -141,7 +140,7 @@ Set di dati di mantenere più versioni di record. Il <xref:System.Data.DataRowVe
 
 La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowVersion> enumerazione:
 
-|Valore di DataRowVersion|Descrizione|
+|Valore di DataRowVersion|Description|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|La versione corrente di un record contiene tutte le modifiche che sono state eseguite sul record dall'ultima volta <xref:System.Data.DataRow.AcceptChanges%2A> è stato chiamato. Se la riga è stata eliminata, non vi è alcuna versione corrente.|
 |<xref:System.Data.DataRowVersion.Default>|Il valore predefinito di un record, come definito dall'origine dati o lo schema dei set di dati.|
@@ -226,7 +225,7 @@ Per verificare che i dati nell'applicazione in uso soddisfino i requisiti dei pr
 - Nei dati di back-end, inviando i dati all'origine dati, ad esempio, il database e in modo che possa accettare o rifiutare i dati. Se si lavora con un database che dispone di funzionalità per la convalida dei dati e fornendo informazioni sull'errore complesse, può trattarsi un pratico approccio in quanto è possibile convalidare i dati indipendentemente da dove provenga da. Tuttavia, questo approccio potrebbe non soddisfare requisiti di convalida specifiche dell'applicazione. Inoltre, che l'origine dati di convalida dei dati può comportare molti round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generato dal back-end.
 
    > [!IMPORTANT]
-   > Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType.Text>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile.
+   > Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType.Text>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile.
 
 ## <a name="transmit-updates-to-the-data-source"></a>Trasmettere gli aggiornamenti all'origine dati
 
@@ -281,4 +280,4 @@ In un'istruzione UPDATE, è necessario specificare entrambi i valori nuovi (quel
 - [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Convalidare i dati](validate-data-in-datasets.md)
-- [Procedura: aggiungere, modificare ed eliminare entità (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Procedura: Aggiungere, modificare ed eliminare entità (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

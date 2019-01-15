@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: specificare i file da pubblicare mediante ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare i file da pubblicare mediante ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe2e5ab9f2074c1706f14ac52f655921af4b9a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826955"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: specificare i file da pubblicare mediante ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: Specificare i file da pubblicare mediante ClickOnce
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i file di applicazione, tutte le non di codice nel progetto vengono distribuiti insieme all'applicazione. In alcuni casi, si potrebbe non desidera che la pubblicazione di determinati file o che si desidera installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere i file, contrassegnarli come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.  
   
  I file da un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione vengono gestiti nel **i file dell'applicazione** finestra di dialogo, accessibile dal **pubblica** pagina del **Progettazione progetti**.  
@@ -39,7 +37,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
   
 -   I file di dati, ad esempio Database SQL (*mdf* e *mdb*) file XML e i file verranno contrassegnati come file di dati per impostazione predefinita.  
   
--   I riferimenti agli assembly (*. dll* file) vengono designati come indicato di seguito quando si aggiunge il riferimento: se **Copia localmente** viene **False**, è contrassegnata per impostazione predefinita come prerequisito assembly (**prerequisito (Auto)**) che deve essere presente nella Global Assembly Cache prima di installare l'applicazione. Se **Copia localmente** viene **True**, l'assembly è contrassegnato per impostazione predefinita come un assembly dell'applicazione (**Includi (Auto)**) e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nei **i file dell'applicazione** finestra di dialogo (come un *ocx* file) solo se relativo **Isolated** è impostata su **True**. Per impostazione predefinita, verrà incluso.  
+-   I riferimenti agli assembly (*DLL* file) vengono designati come indicato di seguito quando si aggiunge il riferimento: Se **Copia localmente** viene **False**, è contrassegnata per impostazione predefinita come assembly prerequisiti (**prerequisito (Auto)**) che deve essere presente nella Global Assembly Cache prima di installare l'applicazione. Se **Copia localmente** viene **True**, l'assembly è contrassegnato per impostazione predefinita come un assembly dell'applicazione (**Includi (Auto)**) e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nei **i file dell'applicazione** finestra di dialogo (come un *ocx* file) solo se relativo **Isolated** è impostata su **True**. Per impostazione predefinita, verrà incluso.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Per aggiungere file alla finestra di dialogo file applicazione  
   
@@ -51,7 +49,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -63,7 +61,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -75,7 +73,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -87,7 +85,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -104,7 +102,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -116,5 +114,5 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
     >  Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -32,7 +32,7 @@ L'esempio viene installato quando si sceglie la **sviluppo di applicazioni Deskt
 
 Durante l'installazione, l'esempio è nella directory di installazione di Visual Studio, in una sottodirectory denominata \DIA SDK\Samples\DIA2Dump.
 
-## <a name="build-the-sample"></a>Compilare l'esempio.
+## <a name="build-the-sample"></a>Compilare l'esempio
 
 Per impostazione predefinita, la directory di installazione è una directory protetta. Pertanto, che è necessario usare un prompt con privilegi elevati per gli sviluppatori o un'istanza di Visual Studio per compilare e modificare la soluzione di esempio in questa posizione. Per semplificare la compilazione, è consigliabile innanzitutto copiare i file dalla directory di esempio in un'altra directory, ad esempio una cartella nella cartella documenti e quindi compilare l'esempio.
 
@@ -48,7 +48,7 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 1. Nel **directory di inclusione aggiuntive** proprietà, scegliere il controllo a discesa, quindi scegliere **modificare**.
 
-1. Nel **directory di inclusione aggiuntive** finestra di dialogo, nel campo di modifica, immettere il `$(VSInstallDir)DIA SDK\include` directory. Aggiungere la directory per garantire che il compilatore possa trovare il file dia2.h. Scegliere OK** per salvare le modifiche.
+1. Nel **directory di inclusione aggiuntive** finestra di dialogo, nel campo di modifica, immettere il `$(VSInstallDir)DIA SDK\include` directory. Aggiungere la directory per garantire che il compilatore possa trovare il file dia2.h. Scegliere **OK** per salvare le modifiche.
 
 1. Scegli **OK** per salvare le modifiche alle proprietà del progetto.
 

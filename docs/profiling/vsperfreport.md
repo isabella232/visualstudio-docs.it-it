@@ -1,8 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915468"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file con estensione *csv*.  
@@ -49,7 +47,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>Opzioni generali per i report  
  La tabella seguente descritte le opzioni di formattazione dei report generali e le opzioni per selezionare i dati da includere nel report.  
   
-|Opzioni|Descrizione|  
+|Opzioni|Description|  
 |-------------|-----------------|  
 |**U**|L'output del report e l'output di console reindirizzato vengono scritti in formato Unicode. Deve essere la prima opzione specificata.|  
 |**Summary:**[*tipi*]|Crea uno o più tipi di report.<br /><br /> -   `All` - Vengono generati tutti i tipi di report.<br />-   `CallerCallee` - Relazioni padre-figlio tra le funzioni.<br />-   `Function` - Funzioni chiamate.<br />-   `CallTree` - Gerarchia delle funzioni chiamate.<br />-   `Counter` - Tutti i contrassegni insieme ai valori dei contatori delle prestazioni di Windows.<br />-   `Ip` - Istruzioni profilate.<br />-   `Life` - Durata degli oggetti allocati (disponibile quando sono stati raccolti dati sulle allocazioni).<br />-   `Line` - Dati di profilatura delle righe di codice sorgente.<br />-   `Header` - Il report contiene informazioni sull'intestazione di file.<br />-   `Mark` - Tutti i contrassegni.<br />-   `Module` - Moduli profilati.<br />-   `Process` - Processi profilati.<br />-   `Thread` - Thread profilati.<br />-   `Type` -Tipo allocati.<br />-   `Contention` - Conflitti di risorse.<br />-   `RuleWarnings` - Problemi relativi alle regole di prestazioni.<br />-   `ETW` - Tutti gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura. Il file di dati con estensione etl deve essere nella posizione originale o nella directory contenente il file con estensione vsp o vsps.|  
@@ -69,7 +67,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Opzioni di filtro  
  La tabella seguente descrive le opzioni disponibili per filtrare i dati disponibili.  
   
-|Opzioni|Descrizione|  
+|Opzioni|Description|  
 |-------------|-----------------|  
 |**JustMyCode**[**:**[`caller`][,`callee`]]|Mostra solo le chiamate di funzioni dell'applicazione dell'utente. Le chiamate di sistema vengono nascoste.<br /><br /> - Nessun parametro: nasconde tutte le funzioni di sistema.<br />-   `caller` - Mostra un livello di funzioni di sistema che chiamano funzioni dell'applicazione.<br />-   `callee` - Mostra un livello di funzioni di sistema che vengono chiamate da funzioni dell'applicazione dell'utente.|  
 |**StartTime:**[*valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|  
@@ -83,7 +81,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>Opzioni per i report sulle differenze  
  La tabella seguente descrive le opzioni per confrontare i file di report.  
   
-|Opzioni|Descrizione|  
+|Opzioni|Description|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|Confrontare due file di report (con estensione *vsp* o *vsps*). Le opzioni Summary verranno ignorate quando si usa l'opzione Diff.|  
 |**Diff:**[*valore*]|Sotto questo valore di soglia la differenza tra due valori verrà ignorata. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|  

@@ -1,5 +1,5 @@
 ---
-title: Messaggi della finestra di progettazione O-R
+title: Messaggi di Object Relational Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859867"
 ---
 # <a name="or-designer-messages"></a>Messaggi di O/R Designer
 
@@ -23,13 +22,13 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
- [Impossibile creare un'associazione \<nome associazione >-proprietà è elencata due volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Impossibile creare un'associazione \<nome associazione>. La stessa proprietà è elencata più volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Impossibile creare un'associazione \<nome associazione >-tipi di proprietà non corrispondono](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Impossibile creare un'associazione \<nome associazione>. Le proprietà non hanno tipi corrispondenti](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [La modifica del tipo restituito di un metodo DataContext non può essere annullata](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione.](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -41,9 +40,9 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
 
  [Gli oggetti in corso di aggiunta alla finestra di progettazione usano una connessione dati diversa da quella usata per la finestra di progettazione](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [La proprietà \<nome proprietà > non può essere eliminato](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [Impossibile eliminare la proprietà \<nome proprietà>](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [Impossibile eliminare la proprietà \<nome proprietà> perché partecipa all'associazione \<nome associazione>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Impossibile eliminare la classe selezionata perché è usata come tipo restituito per uno o più metodi DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 

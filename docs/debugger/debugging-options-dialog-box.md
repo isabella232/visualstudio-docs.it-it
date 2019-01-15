@@ -1,8 +1,6 @@
 ---
-title: Debug, finestra di dialogo Opzioni | Documenti Microsoft
-ms.custom: ''
+title: Il debug, finestra di dialogo Opzioni | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935112"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
-Il **debug** cartella, nel **opzioni** della finestra di dialogo di **strumenti** menu, sono disponibili le pagine seguenti, che consentono di specificare i debugger opzioni dello strumento.  
+Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal menu **Strumenti** sono contenute le pagine elencate di seguito, che consentono di specificare le impostazioni del debugger.  
   
 -   [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)  
   
@@ -39,7 +37,7 @@ Il **debug** cartella, nel **opzioni** della finestra di dialogo di **strumenti*
   
 -   [Finestra di output, Debug, finestra di dialogo Opzioni](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Simboli, debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+-   [Simboli, Debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md) [debug in Visual Studio](../debugger/index.md)  

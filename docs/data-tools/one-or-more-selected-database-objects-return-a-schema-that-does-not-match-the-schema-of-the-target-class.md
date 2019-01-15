@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 47ccdd1f79930fe29e5a213158462139c15bf0f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944126"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
 
@@ -27,7 +26,7 @@ Quando si trascinano oggetti di database in classi di entità esistenti, i dati 
 
 1. Fare clic su **OK** per chiudere la finestra di dialogo.
 
-2. Selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione (la classe dell'oggetto di database viene trascinato nel **O/R Designer**).
+2. Selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione, ovvero la classe in cui viene rilasciato l'oggetto di database all'interno di **Object Relational Designer**.
 
 ## <a name="see-also"></a>Vedere anche
 

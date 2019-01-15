@@ -2,7 +2,6 @@
 title: Visualizzare la memoria per le variabili nel debugger | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837225"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usare le finestre di memoria nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -49,7 +48,7 @@ Quali altre finestre del debugger, il **memoria** windows sono disponibili solo 
 >[!IMPORTANT]
 >Per abilitare il **memoria** windows **Abilita debug a livello di indirizzo** deve essere selezionato nella **strumenti** > **opzioni** (o **Debug** > **opzioni**) > **debug** > **generale**. 
 
-**Per aprire una finestra memoria**
+**Per aprire una finestra Memoria**
   
 1. Assicurarsi che **abilitare il debug a livello di indirizzo** sia selezionato nel **Tools** > **opzioni** (o **Debug**  >  **Le opzioni**) > **debug** > **generali**. 
    
@@ -81,9 +80,9 @@ Per impostazione predefinita, il **memoria** trattata nella finestra **indirizzo
   
 ## <a name="customize-the-memory-window"></a>Personalizzare la finestra memoria 
 
-Per impostazione predefinita, il contenuto della memoria vengono visualizzati come numeri interi da 1 byte in formato esadecimale e la larghezza della finestra determina il numero di colonne visualizzate. È possibile personalizzare il modo di **memoria** finestra Mostra il contenuto della memoria.  
+Per impostazione predefinita, il contenuto della memoria vengono visualizzati come numeri interi da 1 byte in formato esadecimale e la larghezza della finestra determina il numero di colonne visualizzate. È inoltre possibile personalizzare il modo in cui il contenuto della memoria viene visualizzato nella finestra **Memoria**.  
   
-**Per modificare il formato del contenuto della memoria:**  
+**Per cambiare il formato del contenuto della memoria:**  
   
 -  Fare doppio clic nella **memoria** finestra e scegliere i formati desiderato dal menu di scelta rapida.  
   
@@ -100,7 +99,7 @@ Se non si desidera il contenuto del **memoria** finestra per modificare l'App vi
   >[!NOTE]
   >Live espressione di valutazione e viceversa è attivata per impostazione predefinita, quindi selezionando **Rivaluta automaticamente** lo disattiva. Selezionando **Rivaluta automaticamente** nuovamente riattivato successivamente. 
   
-È possibile nascondere o visualizzare la barra degli strumenti in cima il **memoria** finestra. Non si avrà accesso per il **indirizzo** campo o altri strumenti quando la barra degli strumenti è nascosta.  
+È possibile nascondere o visualizzare la barra degli strumenti nella parte superiore della finestra **Memoria**. Non si avrà accesso per il **indirizzo** campo o altri strumenti quando la barra degli strumenti è nascosta.  
   
 **Per attivare o disattivare la visualizzazione della barra degli strumenti:**  
   
@@ -110,7 +109,7 @@ Se non si desidera il contenuto del **memoria** finestra per modificare l'App vi
 
 Nelle app di codice nativo, è possibile usare i nomi di registro come espressioni attive. È possibile, ad esempio, utilizzare il puntatore dello stack per seguire lo stack.  
   
-**Per seguire un puntatore in memoria:**
+**Per osservare il movimento di un puntatore in memoria:**
   
 1. Nel **memoria** finestra **indirizzo** immettere un'espressione puntatore che si trova nell'ambito corrente. A seconda del linguaggio, può essere necessario dereferenziarla.  
   

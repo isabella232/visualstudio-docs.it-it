@@ -1,8 +1,6 @@
 ---
 title: Novità di MSBuild 15 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2017
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 3712f009262abd9590653af3f3ef4e4e81c87e84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943577"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 

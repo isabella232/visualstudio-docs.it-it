@@ -1,8 +1,6 @@
 ---
 title: Get_issafebuffers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ae68e11669b336d26bb34704861a1a6fe30287
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bb8ff4b0477a4d70cebc42fb99e17c09ac37e062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946370"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Recupera un flag che specifica se viene usata la direttiva del preprocessore per un buffer sicuro. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.  
@@ -27,7 +25,7 @@ Recupera un flag che specifica se viene usata la direttiva del preprocessore per
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_isSafeBuffers(   
+HRESULT get_isSafeBuffers(   
    BOOL* pRetVal)  
 );  
 ```  

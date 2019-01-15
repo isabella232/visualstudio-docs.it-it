@@ -1,8 +1,6 @@
 ---
 title: '&lt;PackageFiles&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990347"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.  
@@ -43,10 +41,10 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 </PackageFiles>  
 ```  
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
  L'elemento `PackageFiles` presenta l'attributo seguente:  
 
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|Facoltativo. Se impostato su `false`, il programma di installazione scaricherà solo i file a cui fa riferimento il `Command` elemento. Se impostato su `true`, verranno scaricati tutti i file.<br /><br /> Se impostato su `IfNotHomesite`, il programma di installazione si comporterà come se `False` se `ComponentsLocation` è impostata su `HomeSite`e in caso contrario, si comportano allo stesso come se `True`. Questa impostazione può essere utile per consentire ai pacchetti che sono essi stessi programmi di bootstrap eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|  
 
@@ -56,7 +54,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
  `PackageFile` ha gli attributi seguenti.  
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |---------------| - |
 | `Name` | Obbligatorio. Il nome del file del pacchetto. Si tratta del nome che il `Command` elemento farà riferimento quando definisce le condizioni in cui viene installato un pacchetto. Questo valore viene anche utilizzato come chiave nel `Strings` tabella per recuperare il nome localizzato che gli strumenti, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà utilizzato per descrivere il pacchetto. |
 | `HomeSite` | Facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione. |
@@ -79,4 +77,4 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 ## <a name="see-also"></a>Vedere anche  
  [\<Product > elemento](../deployment/product-element-bootstrapper.md)   
  [\<Pacchetto > elemento](../deployment/package-element-bootstrapper.md)   
- [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

@@ -1,8 +1,6 @@
 ---
 title: '&lt;fileAssociation&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 78cdb22f2d87b67d5a29e8031358193526fa4b71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866163"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (applicazione ClickOnce)
 Identifica un'estensione di file da associare all'applicazione.  
@@ -39,10 +37,10 @@ Identifica un'estensione di file da associare all'applicazione.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Gli elementi e attributi  
- L'elemento `fileAssociation` è facoltativo. L'elemento ha gli attributi seguenti.  
+## <a name="elements-and-attributes"></a>Elementi e attributi  
+ L'elemento `fileAssociation` è facoltativo. L'elemento presenta gli attributi seguenti.  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`extension`|Obbligatorio. L'estensione di file da associare all'applicazione.|  
 |`description`|Obbligatorio. Descrizione del tipo di file per l'utilizzo dalla shell.|  

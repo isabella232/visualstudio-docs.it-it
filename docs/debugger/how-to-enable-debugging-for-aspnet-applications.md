@@ -2,7 +2,6 @@
 title: Abilitare il debug per le app ASP.NET | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881101"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Eseguire il debug di App ASP.NET o ASP.NET Core in Visual Studio
 
@@ -139,7 +138,7 @@ I progetti ASP.NET *Web. config* per impostazione predefinita, i file che conten
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] rileva automaticamente qualsiasi modifica apportata al *Web. config* file e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS rendere effettive le modifiche.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] rileva automaticamente qualsiasi modifica apportata ai file *web.config* e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS rendere effettive le modifiche.  
   
 Un sito Web può contenere più directory e sottodirectory virtuali, con *Web. config* file in ognuno di essi. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le app ereditano le impostazioni di configurazione *Web. config* file a livelli superiori nel percorso URL. La gerarchica *Web. config* file impostazioni si applicano a tutti [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] App sottostanti nella gerarchia. Impostazione di una configurazione diversa in un *Web. config* file di livello inferiore nella gerarchia di override le impostazioni nel file superiore.  
   
@@ -185,10 +184,9 @@ Esistono diversi modi per pubblicare le App in IIS. Questi passaggi illustrano c
 
 ## <a name="see-also"></a>Vedere anche  
 [Debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)   
-[Procedura: eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)   
-[Procedura: trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
-[Eseguire il debug di applicazioni web distribuite](debugging-deployed-web-applications.md)   
-[Procedura dettagliata: Debug di un web form](walkthrough-debugging-a-web-form.md)   
-[Procedura: eseguire il Debug di eccezioni ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Eseguire il debug di applicazioni web: errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Procedura: Eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)   
+[Procedura: Trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Eseguire il debug di applicazioni Web distribuite](debugging-deployed-web-applications.md)   
+[Procedura dettagliata: Debug di un Web Form](walkthrough-debugging-a-web-form.md)   
+[Procedura: Eseguire il debug di eccezioni ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Eseguire il debug di applicazioni Web: Errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)
