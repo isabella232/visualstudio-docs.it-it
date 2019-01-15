@@ -23,7 +23,7 @@ ms.locfileid: "53863852"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 
-Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere i dati disponibili a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **Zdroje dat** finestra. Questo tipo di origine dati può essere:
+Nel contesto di strumenti di dati .NET in Visual Studio, il termine *data source* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere i dati disponibili a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database dalla finestra **Data Source**. Questo tipo di origine dati può essere:
 
 - Una classe in un modello di Entity Framework che è associato a un tipo di database.
 
@@ -44,12 +44,12 @@ Per creare e modificare origini dati usando il **configurazione guidata origine 
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
 
-Dopo aver creato un'origine dati, viene visualizzato nei **Zdroje dat** finestra degli strumenti.
+Dopo aver creato un'origine dati, viene visualizzato nei **Data source** finestra degli strumenti.
 
 > [!TIP]
-> Per aprire la **Zdroje dat** finestra, assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d**oppure scegliere **View** > **Other Windows** > **Zdroje dat**.
+> Per aprire la finestra **Data source**, assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d**oppure scegliere **View** > **Other Windows** > **Data source**.
 
-È possibile trascinare un'origine dati dal **Zdroje dat** finestra in un'area di progettazione form o controllo. In questo modo boilerplate generazione del codice che consente di visualizzare i dati dall'archivio dati.
+È possibile trascinare un'origine dati dal **Data source** finestra in un'area di progettazione form o controllo. In questo modo boilerplate generazione del codice che consente di visualizzare i dati dall'archivio dati.
 
 La figura seguente mostra un set di dati che è stato eliminato in un form di Windows. Se si seleziona **F5** nell'applicazione, i dati dal database sottostante vengono visualizzati nei controlli del form.
 
@@ -94,11 +94,11 @@ Uno dei seguenti tipi di servizi, è possibile creare un'origine dati:
 - Servizi Web
 
     > [!NOTE]
-    > Gli elementi visualizzati nei **Zdroje dat** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
+    > Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **Data source** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
 
 ## <a name="data-source-for-an-object"></a>Origine dati per un oggetto
 
-È possibile creare un'origine dati da qualsiasi oggetto che espone uno o più proprietà pubbliche eseguendo la **configurazione guidata origine dati** e quindi selezionando il **oggetto** tipo origine dati. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Zdroje dat** finestra. Se si usa Entity Framework e hanno generato un modello, si tratta in cui è trovare le classi di entità che sono le origini dati per l'applicazione.
+È possibile creare un'origine dati da qualsiasi oggetto che espone uno o più proprietà pubbliche eseguendo la **configurazione guidata origine dati** e quindi selezionando il **oggetto** tipo origine dati. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Data source** finestra. Se si usa Entity Framework e hanno generato un modello, si tratta in cui è trovare le classi di entità che sono le origini dati per l'applicazione.
 
 Nel **selezionare gli oggetti dati** , espandere i nodi nella visualizzazione albero per individuare gli oggetti che si desidera associare. Visualizzazione albero contiene nodi per il progetto e per gli assembly e altri progetti di cui vengono fatto riferimento dal progetto.
 
