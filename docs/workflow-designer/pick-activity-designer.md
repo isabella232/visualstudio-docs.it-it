@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946607"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269501"
 ---
 # <a name="pick-activity-designer"></a>ActivityDesigner Pick
 
@@ -30,7 +30,7 @@ Un'attività <xref:System.Activities.Statements.Pick> contiene una raccolta di o
 
 Accesso il **Scegli** ActivityDesigner nel **flusso di controllo** categoria del **della casella degli strumenti**. Il **prelievo** ActivityDesigner può essere trascinato dal **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che vengono in genere posizionate le attività, ad esempio all'interno di un  **Sequenza** ActivityDesigner. Dopo averlo rilasciato in Progettazione flussi di lavoro, viene creato un <xref:System.Activities.Statements.Pick> attività, che per impostazione predefinita contiene due vuoto <xref:System.Activities.Statements.PickBranch> attività come elementi con i nomi visualizzati dei Branch1 e Branch2. I rispettivi <xref:System.Activities.Statements.PickBranch.DisplayName%2A> i valori delle proprietà possono essere modificati nella **PickBranch** intestazione ActivityDesigner o all'interno di **proprietà** finestra per ogni ramo.
 
-Esistono due modi per aggiungere <xref:System.Activities.Statements.PickBranch> attività alla raccolta di un <xref:System.Activities.Statements.Pick> oggetto: trascinando la **PickBranch** della finestra di progettazione dal **della casella degli strumenti** o tramite il menu di scelta rapida da all'interno di **prelievo** nell'area di progettazione. Per informazioni dettagliate, vedere la [PickBranch](../workflow-designer/pickbranch-activity-designer.md) argomento. Si noti che l'unico elemento che possono essere inserito in una **prelievo** ActivityDesigner è un **PickBranch** ActivityDesigner.
+Esistono due modi per aggiungere <xref:System.Activities.Statements.PickBranch> attività alla raccolta di un <xref:System.Activities.Statements.Pick> oggetto: trascinando la **PickBranch** della finestra di progettazione dal **della casella degli strumenti** o tramite il menu di scelta rapida dall'interno di **prelievo** nell'area di progettazione. Per informazioni dettagliate, vedere la [PickBranch](../workflow-designer/pickbranch-activity-designer.md) argomento. Si noti che l'unico elemento che possono essere inserito in una **prelievo** ActivityDesigner è un **PickBranch** ActivityDesigner.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di prelievo in Progettazione flussi di lavoro
 

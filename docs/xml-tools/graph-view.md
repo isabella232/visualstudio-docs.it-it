@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826994"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269904"
 ---
 # <a name="graph-view"></a>Visualizzazione Grafico
 
@@ -42,7 +42,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  Tramite la barra di navigazione nella parte inferiore della visualizzazione grafico viene mostrato dove si trova il nodo selezionato nel set di schemi. Se vengono selezionati più elementi, la barra di navigazione sarà vuota.
 
-## <a name="context-menu"></a>Menu di scelta rapida
+## <a name="context-right-click-menu"></a>Menu di scelta rapida (pulsante destro del mouse)
 
  Nella tabella seguente vengono descritte le opzioni disponibili per tutti i nodi nell'area di progettazione della visualizzazione grafico.
 
@@ -102,9 +102,9 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Consente di attivare i [avvio della vista](../xml-tools/start-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**1**.|
-|**Mostra visualizzazione modello di contenuto**|Consente di attivare i [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**2**.|
-|**Mostra visualizzazione grafico**|Consente di attivare i [visualizzazione grafico](../xml-tools/graph-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **CTRL**+**3**.|
+|**Mostra visualizzazione iniziale**|Consente di attivare i [avvio della vista](../xml-tools/start-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**1**.|
+|**Mostra visualizzazione modello di contenuto**|Consente di attivare i [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**2**.|
+|**Mostra visualizzazione grafico**|Consente di attivare i [visualizzazione grafico](../xml-tools/graph-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**3**.|
 |**Cancella l'area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovere dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|
@@ -141,7 +141,7 @@ Il dispositivo di scorrimento dello Zoom è opaco quando lo selezionarlo, passar
 
 ## <a name="xml-editor-integration"></a>Integrazione dell'editor XML
 
- È possibile passare dalla visualizzazione grafico all'editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice.
+ È possibile passare alternativamente tra la visualizzazione grafico e l'Editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice.
 
  Se si apportano modifiche al set di schemi nell'editor XML, le modifiche saranno sincronizzate nella visualizzazione grafico. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
 

@@ -1,8 +1,6 @@
 ---
-title: 'Procedura: creare un manifesto di pacchetto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un manifesto di pacchetto | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943473"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedura: creare un manifesto di pacchetto
+# <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto di pacchetto
 Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Le funzionalità condivise tra le versioni localizzate che devono essere inserite il manifesto del prodotto.  
   
- Per altre informazioni sui manifesti di pacchetto, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
+ Per altre informazioni sui manifesti di pacchetto, vedere [come: Creare il manifesto di un prodotto](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>Creare il manifesto del pacchetto  
   
 #### <a name="to-create-the-package-manifest"></a>Per creare il manifesto del pacchetto  
   
-1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio viene usato *c:\package*.  
+1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio viene usato *c:\package.*.  
   
 2.  Creare una sottodirectory con il nome delle impostazioni locali, ad esempio *en* per la lingua inglese.  
   
@@ -101,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4710752c4825ce576b20a823735b5ed1e2ebad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd147b5a7b491c17e0ed0024cfe471762e6160b1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900938"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269709"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procedura: Stampare i diagrammi dalla visualizzazione grafico e la visualizzazione modello di contenuto
 
@@ -24,7 +24,7 @@ In questo argomento viene descritto come stampare un diagramma dalla visualizzaz
 
 1.  Aprire un file XSD in Visual Studio e aggiungere alcuni nodi per il [dell'area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Esportare il diagramma in un file XPS tramite il **Esporta diagramma come immagine** voce di menu di contesto nell'area di progettazione della visualizzazione grafico o dalla visualizzazione modello di contenuto.
+2.  Esportare il diagramma in un file XPS tramite il **Esporta diagramma come immagine** voce di menu di scelta rapida nell'area di progettazione della visualizzazione grafico o dalla visualizzazione modello di contenuto.
 
      Quando si esporta un diagramma dalla visualizzazione grafico, l'intera area di progettazione viene esportata nel file XPS. Quando si esporta un diagramma dalla visualizzazione modello di contenuto e più di un nodo viene visualizzato nell'area di progettazione della visualizzazione modello di contenuto, solo il primo nodo viene esportato nel file XPS.
 

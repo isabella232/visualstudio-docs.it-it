@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958743"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di frame dello stack del percorso.  
@@ -27,7 +25,7 @@ Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di f
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT execute (   
+HRESULT execute (   
    IDiaStackWalkFrame* frame  
 );  
 ```  
@@ -39,7 +37,7 @@ HRESULT execute (
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Valore|Descrizione|  
+|Valore|Description|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|Non è possibile eseguire uno stack frame nel codice di prologo.|  
 |E_DIA_SYNTAX|Analizzare l'errore nel programma di frame.|  
