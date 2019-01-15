@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859001"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269813"
 ---
 # <a name="trycatch-activity-designer"></a>ActivityDesigner TryCatch
 
@@ -34,7 +34,7 @@ Il **TryCatch** ActivityDesigner può essere trascinato dalle **della casella de
 
 Fare clic sul pulsante di espansione nell'angolo superiore destro della **TryCatch** finestra di progettazione per visualizzare i **provare**, **intercetta**, e **infine** finestre nel visualizzazione espansa. Per aggiungere un blocco catch, fare clic sui **Aggiungi nuovo catch** sul pulsante **TryCatch** finestra di progettazione. Il pulsante diventa una casella combinata del tipo. Selezionare un tipo di eccezione e premere INVIO per aggiungere il catch. Dopo l'aggiunta di un **Catch**, l'area catch si espande e può rilasciare un'attività nel catch per definire la logica di esecuzione per il catch. Si noti la presenza di una casella di testo a destra dell'area dei catch espansa. Questa casella consente di assegnare un nome alla variabile dell'eccezione. La variabile dell'eccezione può essere utilizzata solo per le attività all'interno della stessa **Catch**.
 
-Il **TryCatch** finestra di progettazione non supporta la modifica **Catch**. Se si desidera modificare il tipo di eccezione, è necessario eliminare il **Catch** e aggiungerne uno nuovo. Oggetto **intercettare** può essere eliminato selezionandolo e l'eliminazione o tramite il **eliminare** menu nel menu di scelta rapida accessibile facendo clic con il pulsante destro.
+Il **TryCatch** finestra di progettazione non supporta la modifica **Catch**. Se si desidera modificare il tipo di eccezione, è necessario eliminare il **Catch** e aggiungerne uno nuovo. Oggetto **intercettare** può essere eliminato selezionandolo e l'eliminazione o selezionando **eliminare** nel menu di scelta rapida che è possibile accedere facendo.
 
 ### <a name="the-trycatch-properties"></a>Proprietà di TryCatch
 

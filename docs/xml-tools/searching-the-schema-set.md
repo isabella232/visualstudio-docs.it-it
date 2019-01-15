@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836569"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270073"
 ---
 # <a name="search-the-schema-set"></a>Cercare nel set di schemi
 

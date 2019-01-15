@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955253"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269224"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per i difetti del codice
 
@@ -98,37 +98,37 @@ Questa procedura dettagliata viene illustrato il processo di uso di analisi del 
 
    1. Successivamente, aggiungere il codice `[assembly: CLSCompliant(true)]` alla fine del file AssemblyInfo.cs.
 
-   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Aggiungere il costruttore seguente alla classe: pubblica demo (String)
+   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: pubblica demo (String)
 
    1. Aggiungere il costruttore `public demo (String s) : base(s) { }` alla classe `demo`.
 
-   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Aggiungere il costruttore seguente alla classe: demo pubblico (String, eccezione)
+   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: demo pubblico (String, eccezione)
 
    1. Aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo`.
 
-   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Aggiungere il costruttore seguente alla classe: protetti demo (SerializationInfo, StreamingContext)
+   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: protetti demo (SerializationInfo, StreamingContext)
 
    1. Aggiungere il codice `using System.Runtime.Serialization;` all'inizio del file Class1.cs.
 
    1. Successivamente, aggiungere il costruttore `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Aggiungere il costruttore seguente alla classe: demos pubblico
+   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: demos pubblico
 
    1. Aggiungere il costruttore `public demo () : base() { }` alla classe `demo` **.**
 
-   [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: Correggere le maiuscole e minuscole del nome dello spazio dei nomi 'testCode' modificandolo in 'TestCode'.
+   [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole del nome dello spazio dei nomi 'testCode' modificandolo in 'TestCode'.
 
    1. Modifica le maiuscole e minuscole dei nomi `testCode` a `TestCode`.
 
-   [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: Correggere le maiuscole e minuscole di tipo nome "demo" modificandolo in "Demo".
+   [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole di tipo nome "demo" modificandolo in "Demo".
 
    1. Modificare il nome del membro da `Demo`.
 
-   [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: Correggere le maiuscole e minuscole del membro nome 'item' modificandolo in 'Item'.
+   [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole del membro nome 'item' modificandolo in 'Item'.
 
    1. Modificare il nome del membro da `Item`.
 
-   [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: Rinominare 'testCode.demo' per terminare con 'Exception'.
+   [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rinominare 'testCode.demo' per terminare con 'Exception'.
 
    1. Modificare il nome della classe e i relativi costruttori in `DemoException`.
 
@@ -152,7 +152,7 @@ Questa procedura dettagliata viene illustrato il processo di uso di analisi del 
 
    1. Nel **File** menu, scegliere **Salva elementi selezionati**e quindi chiudere le pagine delle proprietà.
 
-   [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: Aggiungere un attributo [Serializable] a 'demo' perché questo tipo implementa ISerializable.
+   [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Aggiungere un attributo [Serializable] a 'demo' perché questo tipo implementa ISerializable.
 
    1. Aggiungere il `[Serializable ()]` alla classe `demo`.
 
@@ -183,13 +183,11 @@ Questa procedura dettagliata viene illustrato il processo di uso di analisi del 
 
 ## <a name="exclude-code-analysis-warnings"></a>Escludere gli avvisi dell'analisi codice
 
-### <a name="to-exclude-code-defect-warnings"></a>Per escludere avvisi di difetti del codice
-
 1. Per ognuno degli altri avvisi, eseguire le operazioni seguenti:
 
     1. Selezionare l'avviso nel **elenco errori**.
 
-    1. Dal menu di scelta rapida, scegliere **Suppress** > **nel File di eliminazione**.
+    1. Dal menu di scelta rapida (menu di scelta rapida), scegliere **Suppress** > **nel File di eliminazione**.
 
 1. Ricompilare il progetto.
 

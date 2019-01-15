@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868183"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269553"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti
 
@@ -30,7 +30,7 @@ Questa scheda della finestra di **Scegli elementi della casella degli strumenti*
 
  Il filtro viene applicato in ogni scheda. Ciò significa che non è possibile aggiungere le attività del flusso di lavoro tramite il **componente .NET** scheda. Dovranno essere aggiunti tramite il **System. Activities** scheda stessa.
 
- È possibile deselezionare tutti gli elementi non si desidera visualizzare nel **casella degli strumenti** dalla finestra di dialogo tab oppure in alternativa, è possibile farlo usando la **eliminare** opzione nel menu di scelta rapida nel **della casella degli strumenti** e deprovisioning che fanno riferimento a un assembly non rimuove l'elemento dal **casella degli strumenti**.
+ È possibile deselezionare tutti gli elementi non si desidera visualizzare nel **casella degli strumenti** dalla finestra di dialogo tab oppure in alternativa, è possibile farlo usando la **eliminare** fare clic sulla voce di menu nel **dellacaselladeglistrumenti**e deprovisioning che fanno riferimento a un assembly non rimuove l'elemento dal **casella degli strumenti**.
 
  Quando si crea un'istanza dell'attività trascinandola e rilasciandola nella finestra di progettazione, si aggiunge automaticamente all'elenco degli assembly di riferimento l'assembly che contiene l'elemento. Se inoltre l'attività fa riferimento a un assembly C, C non viene aggiunto all'elenco di assembly di riferimento. Assembly C deve trovarsi nella Global Assembly Cache o nella stessa directory dell'attività B. Nel caso autonomo, l'assembly deve trovarsi nella GAC o nei percorsi di Probe di VS. È quindi solo possibile trascinare e rilasciare le attività nell'area di progettazione flussi di lavoro.
 

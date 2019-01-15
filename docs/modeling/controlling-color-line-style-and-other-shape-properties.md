@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929698"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269319"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controllo delle proprietà Color, Line Style e altre
-Alcune proprietà della forma, ad esempio colore può essere 'esposta' - vale a dire, collegato a una proprietà di dominio della forma. Altri utenti devono essere controllati direttamente.
+
+Alcune proprietà della forma, ad esempio colore può essere 'esposto'. Vale a dire, la proprietà può essere collegata a una proprietà di dominio della forma. Altri utenti devono essere controllati direttamente.
 
 ## <a name="exposing-a-property"></a>Esposizione di una proprietà
  Alcune proprietà della forma, ad esempio colore può essere collegata al valore della proprietà del dominio.
 
- Nella definizione DSL, selezionare una forma, connettore o classe diagramma. Nel menu di scelta rapida, scegliere **Aggiungi esposta**, quindi scegliere Proprietà desiderata, ad esempio il colore di riempimento.
+ Nella definizione DSL, selezionare una forma, connettore o classe diagramma. Nel relativo menu di scelta rapida, scegliere **Aggiungi esposta**, quindi scegliere Proprietà desiderata, ad esempio il colore di riempimento.
 
  A questo punto, la forma presenta una proprietà di dominio che è possibile impostare nel codice programma o un utente.
 
