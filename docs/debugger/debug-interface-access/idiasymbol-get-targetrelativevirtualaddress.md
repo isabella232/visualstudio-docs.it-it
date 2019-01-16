@@ -1,8 +1,6 @@
 ---
 title: Get_targetrelativevirtualaddress | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3426fdf356e61239da2751bd068a38a4172382c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7cbed2157968606ea251527ce78e9860d68710c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848603"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 Recupera l'indirizzo virtuale relativo (RVA) di una destinazione thunk.  
@@ -27,7 +25,7 @@ Recupera l'indirizzo virtuale relativo (RVA) di una destinazione thunk.
 ## <a name="syntax"></a>Sintassi  
   
 ```C++  
-HRESULT get_targetRelativeVirtualAddress (   
+HRESULT get_targetRelativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

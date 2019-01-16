@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837758"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204347"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Impostare le configurazioni Debug e Release in Visual Studio
 
@@ -44,7 +44,7 @@ Progetti di Visual Studio installata versione separata e configurazioni per il p
 
 Nella configurazione di debug, il programma viene compilato con informazioni di debug complete sui simboli e senza ottimizzazione. L'ottimizzazione rende più difficile il debug perché la relazione tra il codice sorgente e le istruzioni generate è più complessa.
 
-La configurazione di rilascio del programma è disponibile alcuna informazione di debug sui simboli ed è perfettamente ottimizzata. Le informazioni di debug possono essere generate in file PDB, [in base alle opzioni del compilatore](#BKMK_symbols_release) utilizzate. Creazione di file con estensione PDB può essere utile se successivamente sarà necessario eseguire il debug della versione di rilascio.
+La configurazione di rilascio del programma è disponibile alcuna informazione di debug sui simboli ed è perfettamente ottimizzata. Per codice gestito e codice C++, le informazioni di debug possono essere generate in file con estensione PDB [a seconda delle opzioni del compilatore](#BKMK_symbols_release) che vengono usate. Creazione di file con estensione PDB può essere utile se successivamente sarà necessario eseguire il debug della versione di rilascio.
 
 Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 

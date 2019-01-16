@@ -7,16 +7,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: bf28747e8bd111767fbe314cbb658a38ef059ae2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872752"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools per .NET
 
@@ -42,7 +41,7 @@ Il flusso di lavoro tipico è il seguente:
 
 5. Aggiungere codice personalizzato per elementi quali le regole di business, ricerca e la convalida dei dati o per sfruttare i vantaggi della funzionalità personalizzata che espone il database sottostante.
 
-È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per eseguire comandi direttamente a un database, anziché utilizzare un modello. In questo caso, si noterà la relativa documentazione: [ADO.NET](/dotnet/framework/data/adonet/index). Si noti che è comunque possibile usare la **configurazione guidata origine dati** e finestre di progettazione per generare il codice di associazione dati quando si popola gli oggetti in memoria e controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.
+È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per eseguire comandi direttamente a un database, anziché utilizzare un modello. In questo caso, è possibile trovare la relativa documentazione: [ADO.NET](/dotnet/framework/data/adonet/index). Si noti che è comunque possibile usare la **configurazione guidata origine dati** e finestre di progettazione per generare il codice di associazione dati quando si popola gli oggetti in memoria e controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.
 
 ## <a name="see-also"></a>Vedere anche
 

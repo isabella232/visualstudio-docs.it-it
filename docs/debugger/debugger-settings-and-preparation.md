@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926859"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269774"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.  
@@ -52,4 +52,4 @@ In questa sezione vengono descritte le impostazioni delle proprietà correlate a
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)  
  [Debug in Visual Studio](../debugger/index.md)  
- [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+ [Presentazione del debugger](../debugger/debugger-feature-tour.md)

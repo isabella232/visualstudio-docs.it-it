@@ -9,18 +9,16 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885594"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204268"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto>
 
 Questo messaggio viene visualizzato in genere quando un oggetto in **Esplora server** o **Esplora database** viene copiato negli Appunti, eliminato dal database e incollato nella finestra di progettazione. La visualizzazione del messaggio è pertanto dovuta al fatto che l'oggetto di database non esiste più.
-
-Per correggere questo errore, selezionare **OK** per chiudere la finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
 

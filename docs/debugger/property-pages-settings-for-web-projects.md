@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 717e57a4c4ba739236fa3b66a444dd854d357dcc
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892663"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204294"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Impostazioni delle pagine delle proprietà per i progetti Web
 È possibile modificare le impostazioni delle proprietà per la configurazione di debug di un sito Web nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
   
-### <a name="configuration-properties-folder-start-options-category"></a>Cartella Proprietà di configurazione (categoria Opzioni di avvio)  
+### <a name="start-options-category"></a>Categoria di opzioni di avvio
   
 | **Impostazione** | **Descrizione** |
 | - | - |

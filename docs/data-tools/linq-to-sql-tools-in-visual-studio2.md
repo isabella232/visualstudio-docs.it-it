@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68b19993448ed68520f267177ca760975cd4d4aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894155"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Strumenti di LINQ to SQL in Visual Studio
 
@@ -42,7 +41,7 @@ Quando si seleziona il *dbml* nel file, Visual Studio visualizza il **O/R Design
 ![Finestra di progettazione di LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> Il **O/R Designer** è un mapper relazionale a oggetti semplice, perché supporta solo le relazioni di mapping 1:1. In altre parole, una classe di entità può presentare solo una relazione di mapping 1:1 con una tabella o visualizzazione di database. Mapping complesso, quale il mapping di una classe di entità a una tabella unita in join, non è supportato. utilizzo di Entity Framework per il mapping complesso. Inoltre, la finestra di progettazione rappresenta un generatore di codice unidirezionale: pertanto, nel file di codice vengono riflesse solo le modifiche apportate all'area di progettazione. Le modifiche manuali al file di codice non vengono riflesse nel **O/R Designer**. Tutte le modifiche apportate manualmente nel file di codice vengono sovrascritte durante il salvataggio della finestra di progettazione e il codice viene rigenerato. Per informazioni su come aggiungere il codice utente ed estendere le classi generate dal **O/R Designer**, vedere [procedura: estendere il codice generato da O/R Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> Il **O/R Designer** è un mapper relazionale a oggetti semplice, perché supporta solo le relazioni di mapping 1:1. In altre parole, una classe di entità può presentare solo una relazione di mapping 1:1 con una tabella o visualizzazione di database. Mapping complesso, quale il mapping di una classe di entità a una tabella unita in join, non è supportato. utilizzo di Entity Framework per il mapping complesso. Inoltre, la finestra di progettazione rappresenta un generatore di codice unidirezionale: pertanto, nel file di codice vengono riflesse solo le modifiche apportate all'area di progettazione. Le modifiche manuali al file di codice non vengono riflesse nel **O/R Designer**. Tutte le modifiche apportate manualmente nel file di codice vengono sovrascritte durante il salvataggio della finestra di progettazione e il codice viene rigenerato. Per informazioni su come aggiungere il codice utente ed estendere le classi generate per il **O/R Designer**, vedere [come: Estendere il codice generato da Object Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Creare e configurare l'oggetto DataContext
 
@@ -50,7 +49,7 @@ Dopo aver aggiunto un **classi LINQ to SQL** elemento a un progetto e aprire il 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Creare classi di entità con mapping a viste e tabelle di database
 
-È possibile creare classi di entità con mappate alle tabelle e viste trascinando le tabelle di database e le viste da **Esplora Server** oppure **Esplora Database** nel **O/R Designer**. Come indicato nella sezione precedente, l'oggetto <xref:System.Data.Linq.DataContext> viene configurato con le informazioni di connessione fornite dal primo elemento trascinato nell'area di progettazione. Se viene aggiunto un elemento successive che usa una connessione diversa per il **O/R Designer**, è possibile modificare la connessione per il <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [Procedura: Creare classi SQL mappate a tabelle e visualizzazioni (O/R Designer) LINQ to](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+È possibile creare classi di entità con mappate alle tabelle e viste trascinando le tabelle di database e le viste da **Esplora Server** oppure **Esplora Database** nel **O/R Designer**. Come indicato nella sezione precedente, l'oggetto <xref:System.Data.Linq.DataContext> viene configurato con le informazioni di connessione fornite dal primo elemento trascinato nell'area di progettazione. Se viene aggiunto un elemento successive che usa una connessione diversa per il **O/R Designer**, è possibile modificare la connessione per il <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [Procedura: Creare classi LINQ to SQL mappate a tabelle e viste (Object Relational Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Creare metodi DataContext che chiamano le stored procedure e funzioni
 
@@ -61,7 +60,7 @@ Dopo aver aggiunto un **classi LINQ to SQL** elemento a un progetto e aprire il 
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurare un oggetto DataContext per utilizzare le stored procedure per salvare i dati tra le classi di entità e un database
 
-Come indicato in precedenza, è possibile creare metodi <xref:System.Data.Linq.DataContext> che chiamano stored procedure e funzioni. Inoltre, è anche possibile assegnare stored procedure utilizzate per l'impostazione predefinita, LINQ al comportamento di runtime SQL, che esegue inserimenti, aggiornamenti ed eliminazioni. Per altre informazioni, vedere [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Come indicato in precedenza, è possibile creare metodi <xref:System.Data.Linq.DataContext> che chiamano stored procedure e funzioni. Inoltre, è anche possibile assegnare stored procedure utilizzate per l'impostazione predefinita, LINQ al comportamento di runtime SQL, che esegue inserimenti, aggiornamenti ed eliminazioni. Per altre informazioni, vedere [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Ereditarietà e Object Relational Designer
 

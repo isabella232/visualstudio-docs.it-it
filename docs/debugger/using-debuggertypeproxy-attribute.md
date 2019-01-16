@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227538"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>Utilizzo dell'attributo DebuggerTypeProxy
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Uso dell'attributo DebuggerTypeProxy (C#, Visual Basic, C++ c++ /CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> specifica un proxy, o stand-in, per un tipo e modifica il modo in cui il tipo viene visualizzato nelle finestre del debugger. Quando viene visualizzata una variabile che dispone di proxy, questo sostituisce il tipo originale nella **visualizzazione**. Nella finestra delle variabili del debugger vengono visualizzati soltanto i membri pubblici del tipo proxy. I membri privati non vengono visualizzati.
 
@@ -33,6 +33,9 @@ Questo attributo può essere applicato a:
 - Strutture
 - Classi
 - Assembly
+
+> [!NOTE]
+> Per il codice nativo, questo attributo è supportato solo in c++ /CLI codice dell'interfaccia della riga.
 
 Una classe proxy del tipo deve disporre di un costruttore che accetta un argomento del tipo sostituito dal proxy. Il debugger crea una nuova istanza della classe proxy del tipo ogni volta che è necessario visualizzare una variabile del tipo di destinazione. Ciò può incidere sulle prestazioni. Di conseguenza, è opportuno eseguire solo gli interventi strettamente necessari nel costruttore.
 

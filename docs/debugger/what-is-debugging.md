@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830969"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204281"
 ---
 # <a name="what-is-debugging"></a>Che cos'è il debug?
 
@@ -44,11 +44,14 @@ Quando si cambia questa impostazione, si modifica il progetto da una configurazi
 
 ## <a name="when-to-use-a-debugger"></a>Quando usare un debugger
 
-Il debugger è uno strumento essenziale per trovare e correggere i bug nelle app. Tuttavia, contesto è king ed è importante sfruttare tutti gli strumenti all'elemento eliminabile che consentono di eliminare rapidamente i bug o errori. In alcuni casi, il diritto "strumento" potrebbe essere una procedura di codifica meglio. Da quando l'utilizzo del debugger e un altro strumento di apprendimento, si apprenderà anche come usare il debugger in modo più efficace. Se si conosce già, è necessario conoscere il debugger, vedere [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md). In caso contrario, fare clic sul collegamento nella **passaggi successivi**.
+Il debugger è uno strumento essenziale per trovare e correggere i bug nelle app. Tuttavia, contesto è king ed è importante sfruttare tutti gli strumenti all'elemento eliminabile che consentono di eliminare rapidamente i bug o errori. In alcuni casi, il diritto "strumento" potrebbe essere una procedura di codifica meglio. Da quando l'utilizzo del debugger e un altro strumento di apprendimento, si apprenderà anche come usare il debugger in modo più efficace.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questo articolo si sono appresi alcuni concetti di debug generali. Successivamente, è possibile iniziare a imparare come eseguire il debug con Visual Studio e spiega come scrivere codice con meno bug. L'articolo seguente illustra C# esempi di codice, ma i concetti si applicano a tutte le lingue supportate da Visual Studio.
+In questo articolo si sono appresi alcuni concetti di debug generali. Successivamente, è possibile iniziare a imparare come eseguire il debug con Visual Studio e spiega come scrivere codice con meno bug. I seguenti articoli show C# esempi di codice, ma i concetti si applicano a tutte le lingue supportate da Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Debug per principianti](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)

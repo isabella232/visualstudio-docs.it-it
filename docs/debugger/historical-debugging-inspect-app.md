@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968631"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227707"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Analizzare un'app con IntelliTrace in Visual Studio di debug cronologico
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Analizzare un'app con IntelliTrace in Visual Studio di debug cronologico (C#, Visual Basic, C++)
+
 È possibile usare [debug cronologico](../debugger/historical-debugging.md) per spostarsi all'indietro e avanti l'esecuzione dell'applicazione e controllare lo stato.  
   
 È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>Esplorare il codice con il debug cronologico  
+## <a name="navigate-your-code-with-historical-debugging"></a>Esplorare il codice con il debug cronologico
+
  Iniziamo con un semplice programma che dispone di un bug. Aggiungere il codice seguente al file App.xaml.cs nell'applicazione:  
   
 ```csharp  

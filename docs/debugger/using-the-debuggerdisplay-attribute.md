@@ -1,9 +1,9 @@
 ---
 title: Uso dell'attributo DebuggerDisplay | Microsoft Docs
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228058"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Utilizzo dell'attributo DebuggerDisplay
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Uso dell'attributo DebuggerDisplay (C#, Visual Basic, C++ c++ /CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.  
   
  L'attributo `DebuggerDisplay` presenta un solo argomento, costituito da una stringa da visualizzare nella colonna del valore per le istanze del tipo. Questa stringa può contenere parentesi graffe (`{` e `}`). Il testo racchiuso tra due parentesi graffe viene valutato come un campo, una proprietà o un metodo.  
@@ -30,6 +30,9 @@ ms.locfileid: "53951680"
   
 > [!IMPORTANT]
 >  Se la casella di controllo **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili** è selezionata nella finestra di dialogo **Strumenti / Opzioni / Debug** , l'attributo `DebuggerDisplay` viene ignorato.  
+
+> [!NOTE]
+> Per il codice nativo, questo attributo è supportato solo in c++ /CLI codice dell'interfaccia della riga.
   
  Nella tabella riportata di seguito vengono visualizzati alcuni utilizzi possibili dell'attributo `DebuggerDisplay` e alcuni output di esempio.  
   
@@ -94,7 +97,7 @@ Il ", nq" suffisso indica l'analizzatore di espressioni per rimuovere le virgole
 |**Name**|**Valore**|**Type**|  
 |--------------|---------------|--------------|  
 |Chiave|"three"|oggetto {string}|  
-|Valore|3|oggetto {int}|  
+|Value|3|oggetto {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  

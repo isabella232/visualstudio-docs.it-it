@@ -16,19 +16,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acddd39df0c91aeef5c425ffa67cb234d76d0473
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ecc9eb2dc437847786022526265bfcc2942ace88
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961351"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153654"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Procedura: Impostare il nome di un thread in codice nativo
-La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. Tale denominazione è utile per tenere traccia dei thread nella finestra **Thread**.
+La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. Denominazione dei thread è utile per identificare i thread di interesse per il **thread** finestra durante il debug di un processo in esecuzione. Se i thread evidente denominato può anche essere utile quando si esegue il debug di finale tramite ispezione dei dump di arresto anomalo del sistema e quando l'analisi delle prestazioni acquisisce usando diversi strumenti.
 
-## <a name="set-a-thread-name"></a>Impostare il nome di un thread
+## <a name="ways-to-set-a-thread-name"></a>Modi per impostare il nome di un thread
 
-Il `SetThreadName` funzione è utile per l'impostazione e la visualizzazione thread se il debugger è collegato al codice in esecuzione. A partire da Visual Studio 2017 versione 15.6, è possibile usare la [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) funzione per impostare e visualizzare i nomi dei thread.
+Esistono due modi per impostare il nome di un thread. Il primo è tramite il [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) (funzione). Il secondo è generando una particolare eccezione mentre il debugger di Visual Studio è collegato al processo. Ogni approccio presenta vantaggi e avvertenze.
+
+Vale la pena notare che _entrambi_ gli approcci possono essere usati insieme, se si desidera, poiché i meccanismi che funzionano sono indipendenti tra loro.
+
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Impostare il nome di un thread usando `SetThreadDescription`
+
+I vantaggi sono:
+ * I nomi dei thread sono visibili quando il debug in Visual Studio, indipendentemente dal fatto se il debugger è stato collegato al processo nel momento in cui viene richiamato SetThreadDescription.
+ * I nomi dei thread sono visibili quando si esegue il debug post mortem, caricando un dump di arresto anomalo del sistema in Visual Studio.
+ * I nomi dei thread sono visibili anche quando si usano altri strumenti, ad esempio la [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) debugger e il [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analizzatore prestazioni.
+
+Avvertenze:
+ * I nomi dei thread sono solo visibile in Visual Studio 2017 versione 15.6 e versioni successive.
+ * Quando i file di dump di debug di un arresto anomalo del sistema finale, sono visibili se l'arresto anomalo del sistema è stato creato in Windows 10 versione 1607, Windows Server 2016 o versioni successive di Windows solo i nomi dei thread.
+ 
+*Esempio:*
 
 ```C++
 #include <windows.h>
@@ -46,11 +61,20 @@ int main()
 }
 ```
 
-## <a name="set-a-thread-name-using-setthreadname"></a>Impostare il nome di un thread usando SetThreadName
+### <a name="set-a-thread-name-by-throwing-an-exception"></a>Impostare il nome di un thread generando un'eccezione
 
-Per impostare il nome di un thread nel programma, è anche possibile usare il `SetThreadName` funzionare, come illustrato nell'esempio di codice seguente. Si noti che il nome del thread viene copiato nel thread in modo da poter rilasciare la memoria per il parametro `threadName` .  Questo metodo Usa un approccio basata sulle eccezioni che funziona solo se il debugger è collegato al momento che viene utilizzato il metodo basata sulle eccezioni. Il nome di un thread impostati tramite questo metodo non sarà disponibile in strumenti di analisi delle prestazioni o dump.
+Un altro modo per impostare il nome di un thread nel programma consiste nel comunicare il nome del thread desiderata per il debugger di Visual Studio generando un'eccezione appositamente configurato. 
 
-Esempio di codice seguente viene illustrato come utilizzare `SetThreadName`:
+I vantaggi sono:
+ * Funziona in tutte le versioni di Visual Studio.
+
+Avvertenze:
+ * Funziona solo se il debugger è collegato al momento che viene utilizzato il metodo basata sulle eccezioni. 
+ * I nomi dei thread impostati utilizzando questo metodo non sarà disponibile in strumenti di analisi delle prestazioni o dump.
+ 
+*Esempio:*
+
+Il `SetThreadName` funzione illustrato di seguito viene illustrato questo approccio basato sull'eccezione. Si noti che il nome del thread verrà copiato automaticamente al thread, in modo che la memoria per il `threadName` parametro può essere rilasciato dopo il `SetThreadName` chiamata è stata completata. 
 
 ```C++
 //  

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944376"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268890"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Impossibile visualizzare il codice sorgente o il disassembly
 Il testo del messaggio di errore è il seguente:  
@@ -36,6 +36,7 @@ Il testo del messaggio di errore è il seguente:
   
 -   È possibile che per aspetti relativi alla sicurezza il debugger non sia stato in grado di leggere lo stack, il thread, il registro e altre informazioni sul contesto dal programma di cui si sta eseguendo il debug. Questa condizione si verifica più spesso se si esegue il debug di un'applicazione Web e non si dispone dell'autorizzazione corretta per accedere alla directory virtuale. Impostare la sicurezza anonima per la directory virtuale e riprovare.  
   
-## <a name="see-also"></a>Vedere anche  
- [Debug in Visual Studio](../debugger/index.md) [Tour delle funzionalità del Debugger](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>Vedere anche
+ [Debug in Visual Studio](../debugger/index.md)  
+ [Presentazione del debugger](../debugger/debugger-feature-tour.md)  
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -2,7 +2,6 @@
 title: Collegamento a processi in esecuzione con il debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 09/27/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899613"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
@@ -210,4 +209,3 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
  [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)   
  [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Debug remoto](../debugger/remote-debugging.md)
- 
