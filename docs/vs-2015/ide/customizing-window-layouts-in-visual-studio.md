@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057562"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53934375"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
  Quando è necessario visualizzare o modificare due percorsi contemporaneamente in un documento, è possibile dividere le finestre. Per dividere il documento in due sezioni che scorrono in modo indipendente, fare clic su **Dividi** nel menu **Finestra** . Fare clic su **Rimuovi divisione** nel menu **Finestra** per ripristinare la visualizzazione singola.
 
 ### <a name="toolbars"></a>Barre degli strumenti
- Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [come: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+ Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Disposizione e ancoraggio delle finestre
  Le finestre dei documenti e le finestre degli strumenti possono essere *ancorate*in modo che abbiano una posizione e una dimensione all'interno della cornice della finestra dell'IDE. È anche possibile renderle mobili come finestre separate indipendenti dell'IDE. Le finestre degli strumenti possono essere ancorate in qualsiasi area all'interno della cornice dell'IDE; alcune di esse possono essere ancorate come finestre a schede nella cornice dell'editor. Le finestre dei documenti possono essere ancorate all'interno della cornice dell'editor e bloccate nella posizione corrente nell'ordine di tabulazione. È possibile ancorare più finestre per renderle mobili in un "raggruppamento" sopra o all'esterno dell'IDE. Le finestre degli strumenti possono anche essere nascoste o ridotte a icona.

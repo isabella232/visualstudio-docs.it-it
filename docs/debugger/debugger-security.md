@@ -1,8 +1,6 @@
 ---
 title: Sicurezza del debugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de928086a2f8cb15d7d904359b573a1f9c4535b2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 59d4e3fedbee4a1af1de1137e63712825eb51dbf
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562321"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53887945"
 ---
 # <a name="debugger-security"></a>Sicurezza del debugger
 La possibilità di eseguire il debug di un altro processo offre grandi potenzialità che altrimenti non si avrebbero, in particolare nel debug remoto. Un debugger dannoso potrebbe causare gravi danni al computer oggetto del debug.  
@@ -39,7 +37,7 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
 ### <a name="managed-debugging-security"></a>Sicurezza del debug gestito  
  Di seguito sono riportati alcuni consigli generali che riguardano il debug gestito.  
   
-- Prestare attenzione a eseguire il collegamento a un processo utente ritenuto non attendibile. Così facendo, infatti, si presuppone che sia attendibile. Quando si prova a eseguire il collegamento a un processo utente ritenuto non attendibile, viene visualizzata una finestra di dialogo contenente un avviso di sicurezza che chiede di confermare l'operazione. Gli "utenti ritenuti attendibili" includono l'utente corrente e un set di utenti standard comunemente definiti nei computer in cui è installato .NET Framework, ad esempio **aspnet**, **localsystem**, **networkservice**e **localservice**. Per altre informazioni, vedere [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+- Prestare attenzione a eseguire il collegamento a un processo utente ritenuto non attendibile. Così facendo, infatti, si presuppone che sia attendibile. Quando si prova a eseguire il collegamento a un processo utente ritenuto non attendibile, viene visualizzata una finestra di dialogo contenente un avviso di sicurezza che chiede di confermare l'operazione. Gli "utenti ritenuti attendibili" includono l'utente corrente e un set di utenti standard comunemente definiti nei computer in cui è installato .NET Framework, ad esempio **aspnet**, **localsystem**, **networkservice**e **localservice**. Per altre informazioni, vedere [avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
   
 - Prestare attenzione nell'eseguire il download di un progetto da Internet e nel caricarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si tratta di un'operazione molto rischiosa anche senza debug. Così facendo si presuppone che il progetto e il codice in esso contenuto siano attendibili.  
   
@@ -73,7 +71,7 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
 ### <a name="symbols-and-source-code"></a>Simboli e codice sorgente  
  Di seguito sono riportati due strumenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che richiedono alcune riflessioni sulla sicurezza:  
   
-- Server di origine che fornisce le versioni di codice sorgente da un repository di codice sorgente. È utile quando non si dispone della versione corrente del codice sorgente di un programma. [Avviso di sicurezza: Il Debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Server di origine che fornisce le versioni di codice sorgente da un repository di codice sorgente. È utile quando non si dispone della versione corrente del codice sorgente di un programma. [Avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
 - Server di simboli che fornisce i simboli necessari per eseguire il debug di un arresto anomalo durante una chiamata di sistema.  
   
@@ -81,5 +79,5 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
   
 ## <a name="see-also"></a>Vedere anche  
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
- [Esaminare innanzitutto il debugger](../debugger/debugger-feature-tour.md) [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Avviso di sicurezza: Il Debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Esaminare innanzitutto il debugger](../debugger/debugger-feature-tour.md) [avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
