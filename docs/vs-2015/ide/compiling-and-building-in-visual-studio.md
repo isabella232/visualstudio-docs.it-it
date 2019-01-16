@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,19 +16,19 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931064"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile utilizzare Visual Studio per sviluppare applicazioni e creare a intervalli frequenti gli assembly e i programmi eseguibili durante il ciclo di sviluppo. Compilando spesso il codice, è possibile identificare più rapidamente errori in fase di compilazione, ad esempio sintassi non corretta, parole chiave non digitate correttamente e tipi non corrispondenti. È inoltre possibile rilevare e risolvere gli errori di runtime, ad esempio errori logici e semantici, compilando frequentemente ed eseguendo le versioni di debug del codice.
 
- Quando un progetto o una soluzione è stato completamente sviluppato e sufficientemente sottoposto a debug, è possibile compilare i relativi componenti in una compilazione di rilascio. Per impostazione predefinita, una compilazione di rilascio è ottimizzata e progettata per essere di dimensioni minori ed essere eseguita più velocemente di una versione di debug. Per altre informazioni, vedere [procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
+ Quando un progetto o una soluzione è stato completamente sviluppato e sufficientemente sottoposto a debug, è possibile compilare i relativi componenti in una compilazione di rilascio. Per impostazione predefinita, una compilazione di rilascio è ottimizzata e progettata per essere di dimensioni minori ed essere eseguita più velocemente di una versione di debug. Per altre informazioni, vedere [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
 
 ## <a name="choosing-a-build-method"></a>Scelta di un metodo di compilazione
  È possibile compilare un'applicazione utilizzando le opzioni di compilazione predefinite nell'IDE, in un prompt dei comandi o tramite Team Foundation Build. Ognuna di queste opzioni utilizza MSBuild come tecnologia sottostante e ogni approccio presenta vantaggi specifici, come illustrato nella tabella seguente.
@@ -58,4 +57,4 @@ ms.locfileid: "53052650"
 -   Migliorare le prestazioni di compilazione utilizzando compilazioni parallele. Per altre informazioni, vedere [Building Multiple Projects in Parallel with MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) (Compilazione di più progetti in parallelo con MSBuild) o il post di blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ottimizzazione del parallelismo di compilazione C++).
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [Come si fa: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Come si fa: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md)

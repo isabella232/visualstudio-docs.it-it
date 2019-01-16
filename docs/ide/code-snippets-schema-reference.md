@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864718"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315592"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -111,7 +111,7 @@ Sono disponibili tre attributi per l'elemento Code:
 
 - L'attributo **Language** - _(obbligatorio)_ specifica il linguaggio del frammento di codice. Il valore può essere uno dei seguenti:
 
-   |Value|Description|
+   |Valore|Description|
    |-----|-----------|
    |`VB`|Identifica un frammento di codice di Visual Basic.|
    |`CSharp`|Identifica un frammento di codice di C#.|
@@ -123,7 +123,7 @@ Sono disponibili tre attributi per l'elemento Code:
 
 - L'attributo **Kind** - _(facoltativo)_ specifica il tipo di codice contenuto nel frammento e la posizione in cui un frammento di codice deve essere inserito per la relativa compilazione. Il valore può essere uno dei seguenti:
 
-   |Value|Description|
+   |Valore|Description|
    |-----|-----------|
    |`method body`|Specifica che il frammento di codice è il corpo di un metodo e deve pertanto essere inserito all'interno di una dichiarazione di metodo.|
    |`method decl`|Specifica che il frammento di codice è un metodo e deve pertanto essere inserito all'interno di una classe o un modulo.|
@@ -547,7 +547,7 @@ Specifica i riferimenti, le importazioni, le dichiarazione e il codice del framm
 |[Elemento Code](../ide/code-snippets-schema-reference.md#code-element)|Elemento obbligatorio. Specifica il codice che si desidera inserire in un file di documentazione. In un elemento `Code` deve essere presente esattamente un elemento `Snippet`.|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Elemento facoltativo. Specifica i valori letterali e gli oggetti che costituiscono le parti modificabili di un frammento di codice. In un elemento `Declarations` possono essere presenti zero elementi `Snippet` oppure uno.|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento facoltativo. Raggruppa singoli elementi `Import`. In un elemento `Imports` possono essere presenti zero elementi `Snippet` oppure uno.|
-||Elemento facoltativo. Raggruppa singoli elementi `Reference`. In un elemento `References` possono essere presenti zero elementi `Snippet` oppure uno.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento facoltativo. Raggruppa singoli elementi `Reference`. In un elemento `References` possono essere presenti zero elementi `Snippet` oppure uno.|
 
 |Elemento padre|Description|
 | - |-----------------|

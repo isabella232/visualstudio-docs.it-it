@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904181"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154063"
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -65,8 +65,8 @@ Di seguito è riportato un elenco completo di argomenti che possono essere usati
 |Target Name|$(TargetName)|Nome file dell'elemento da compilare.|
 |Estensione di destinazione|$(TargetExt)|Estensione di file dell'elemento da compilare.|
 |Directory binaria|$(BinDir)|Posizione finale del file binario in fase di compilazione (definita come unità + percorso).|
-|Directory del progetto|$(ProjDir)|Directory del progetto corrente (unità + percorso).|
-|Nome del file di progetto|$(ProjFileName)|Nome file del progetto corrente (unità + percorso + nome file).|
+|Directory del progetto|$(ProjectDir)|Directory del progetto corrente (unità + percorso).|
+|Nome del file di progetto|$(ProjectFileName)|Nome file del progetto corrente (unità + percorso + nome file).|
 |Directory soluzione|$(SolutionDir)|Directory della soluzione corrente (unità + percorso).|
 |Nome del file della soluzione|$(SolutionFileName)|Nome file della soluzione corrente (unità + percorso + nome file).|
 

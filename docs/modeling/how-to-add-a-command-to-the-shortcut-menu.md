@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a415657c86f6f4a6f54ce4273e49ad6302ae77b4
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987966"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270035"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: Aggiungere un comando al menu di scelta rapida
+
 È possibile aggiungere comandi di menu al linguaggio specifico di dominio (DSL) in modo che gli utenti possano effettuare attività specifiche per il DSL. I comandi sono visualizzati nel menu di scelta rapida quando gli utenti fanno clic con il pulsante destro del mouse sul diagramma. È possibile definire un comando in modo che venga visualizzato nel menu solo in situazioni specifiche, ad esempio solo quando l'utente fa clic su tipi specifici di elementi o su elementi con uno stato specifico.
 
- In sintesi, i passaggi vengono eseguiti nel progetto DslPackage come segue:
+In sintesi, i passaggi vengono eseguiti nel progetto DslPackage come segue:
 
 1. [Dichiarare il comando in Commands. vsct](#VSCT)
 
@@ -32,12 +33,13 @@ ms.locfileid: "53987966"
    Per esempi, vedere la [sito Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  È inoltre possibile modificare il comportamento di alcuni comandi esistenti quali Taglia, Incolla, Seleziona tutto e Stampa eseguendo l'override dei metodi in CommandSet.cs. Per altre informazioni, vedere [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+> È inoltre possibile modificare il comportamento di alcuni comandi esistenti quali Taglia, Incolla, Seleziona tutto e Stampa eseguendo l'override dei metodi in CommandSet.cs. Per altre informazioni, vedere [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
-## <a name="defining-a-command-using-mef"></a>Definizione di un comando usando MEF
- Managed Extension Framework (MEF) fornisce un metodo alternativo per la definizione dei comandi di menu nel menu del diagramma. Il suo scopo principale è di consentire l'estensione di un DSL da parte dell'utente. Gli utenti possono scegliere di installare solo il DSL oppure sia il DSL sia le estensioni. Tuttavia, MEF riduce anche l'attività necessaria per definire i comandi del menu di scelta rapida, dopo l'attività iniziale di abilitazione di MEF sul DSL.
+## <a name="define-a-command-using-mef"></a>Definire un comando usando MEF
 
- Usare il metodo descritto in questo argomento se:
+Managed Extension Framework (MEF) fornisce un metodo alternativo per la definizione dei comandi di menu nel menu del diagramma. Il suo scopo principale è di consentire l'estensione di un DSL da parte dell'utente. Gli utenti possono scegliere di installare solo il DSL oppure sia il DSL sia le estensioni. Tuttavia, MEF riduce anche l'attività necessaria per definire i comandi del menu di scelta rapida, dopo l'attività iniziale di abilitazione di MEF sul DSL.
+
+Usare il metodo descritto in questo argomento se:
 
 1. Si vuole definire comandi di menu in menu diversi da quello di scelta rapida visualizzato facendo clic con il pulsante destro del mouse.
 
@@ -56,7 +58,7 @@ ms.locfileid: "53987966"
 
  Per altre informazioni sui file con estensione vsct, vedere [Visual Studio Command Table (. File Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-#### <a name="to-add-the-command"></a>Per aggiungere il comando
+### <a name="to-add-the-command"></a>Per aggiungere il comando
 
 1.  Nelle **Esplora soluzioni**, sotto il **DslPackage** del progetto, aprire Commands. vsct.
 
@@ -87,7 +89,7 @@ ms.locfileid: "53987966"
     ```
 
     > [!NOTE]
-    >  Ciascun pulsante o gruppo è identificato da un GUID e dall'ID di un numero intero. È possibile creare diversi gruppi e pulsanti con lo stesso GUID. Tuttavia, devono avere ID diversi. I nomi dei GUID e ID vengono convertiti in GUID effettivi e ID numerici nel `<Symbols>` nodo.
+    > Ciascun pulsante o gruppo è identificato da un GUID e dall'ID di un numero intero. È possibile creare diversi gruppi e pulsanti con lo stesso GUID. Tuttavia, devono avere ID diversi. I nomi dei GUID e ID vengono convertiti in GUID effettivi e ID numerici nel `<Symbols>` nodo.
 
 3.  Aggiungere un vincolo di visibilità per il comando in modo che venga caricato solo nel contesto del linguaggio specifico di dominio. Per altre informazioni, vedere [elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md).
 
@@ -134,7 +136,7 @@ ms.locfileid: "53987966"
 
  Poiché la classe del pacchetto è definita in un file generato, aggiornare l'attributo nel file del modello di testo che genera il file Package.cs.
 
-#### <a name="to-update-the-packagett-file"></a>Per aggiornare il file Package.tt
+### <a name="to-update-the-packagett-file"></a>Per aggiornare il file Package.tt
 
 1.  Nella **Esplora soluzioni**, nella **DslPackage** progetto il **GeneratedCode** cartella, aprire il file Package.tt.
 
@@ -145,11 +147,12 @@ ms.locfileid: "53987966"
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ##  <a name="CommandSet"></a> Definire il comportamento del comando
- Il DSL ha già alcuni comandi implementati in una classe parziale che è dichiarata in DslPackage\GeneratedCode\CommandSet.cs. Per aggiungere nuovi comandi è necessario estendere questa classe creando un nuovo file che contiene una dichiarazione parziale della stessa classe. Il nome della classe è in genere  *\<Proprionomedsl >*`CommandSet`. È utile iniziare verificando il nome della classe ed esaminandone i contenuti.
 
- La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Il DSL ha già alcuni comandi implementati in una classe parziale che è dichiarata in DslPackage\GeneratedCode\CommandSet.cs. Per aggiungere nuovi comandi è necessario estendere questa classe creando un nuovo file che contiene una dichiarazione parziale della stessa classe. Il nome della classe è in genere  *\<Proprionomedsl >*`CommandSet`. È utile iniziare verificando il nome della classe ed esaminandone i contenuti.
 
-#### <a name="to-extend-the-commandset-class"></a>Per estendere la classe del set di comandi
+La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+
+### <a name="extend-the-commandset-class"></a>Estendere la classe CommandSet
 
 1.  In Esplora soluzioni, nel progetto DslPackage aprire la cartella GeneratedCode, cercare in CommandSet.tt e aprire il file CommandSet.cs generato. Prendere nota dello spazio dei nomi e del nome della prima classe definita qui. Può, ad esempio, essere visualizzato:
 
@@ -167,8 +170,7 @@ ms.locfileid: "53987966"
 
      **Nota** se si usa il modello di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.
 
-### <a name="extend-the-command-set-class"></a>Estendere la classe di set di comandi
- Il codice del set di comandi deve in genere importare gli spazi dei nomi seguenti:
+Il codice del set di comandi deve in genere importare gli spazi dei nomi seguenti:
 
 ```csharp
 using System;
@@ -180,7 +182,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 using Microsoft.VisualStudio.Modeling.Shell;
 ```
 
- Modificare lo spazio dei nomi e il nome della classe in modo che corrispondano a quelli del file CommandSet.cs generato:
+Modificare lo spazio dei nomi e il nome della classe in modo che corrispondano a quelli del file CommandSet.cs generato:
 
 ```csharp
 namespace Company.Language1 /* Make sure this is correct */
@@ -190,7 +192,7 @@ namespace Company.Language1 /* Make sure this is correct */
   {
 ```
 
- È necessario definire due metodo, uno per stabilire quando sarà visibile il comando nel menu di scelta rapida e l'altro per eseguire il comando. Questi metodi non sono override, ma vengono registrati in un elenco di comandi.
+È necessario definire due metodi, uno per determinare quando il comando sarà visibile nel menu di scelta (contesto) e l'altro per eseguire il comando. Questi metodi non sono override, ma vengono registrati in un elenco di comandi.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Definire quando sarà visibile il comando
  Per ogni comando, definire un metodo `OnStatus...` che stabilisce se il comando sarà visualizzato nel menu e se sarà abilitato o inattivo. Impostare le proprietà `Visible` e `Enabled` del `MenuCommand`, come mostrato nell'esempio seguente. Questo metodo è chiamato allo scopo di costruire il menu di scelta rapida ogni volta che l'utente fa clic con il pulsante destro del mouse sul diagramma, quindi deve funzionare rapidamente.
@@ -218,7 +220,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 } } } }
 ```
 
- I frammenti seguenti sono spesso utili nei metodi OnStatus:
+I frammenti seguenti sono spesso utili nei metodi OnStatus:
 
 - `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
@@ -232,9 +234,9 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.
 
-  Come linea guida generale, creare una dipendenza tra la proprietà `Visible` e il contenuto selezionato e creare una dipendenza tra la proprietà `Enabled` e lo stato degli elementi selezionati.
+Come linea guida generale, creare una dipendenza tra la proprietà `Visible` e il contenuto selezionato e creare una dipendenza tra la proprietà `Enabled` e lo stato degli elementi selezionati.
 
-  Un metodo OnStatus non deve modificare lo stato dello store.
+Un metodo OnStatus non deve modificare lo stato dello store.
 
 ### <a name="define-what-the-command-does"></a>Definire l'azione del comando
  Per ogni comando, definire un metodo `OnMenu...` che esegua l'azione richiesta quando l'utente fa clic sul comando di menu.
@@ -319,7 +321,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="test-the-command"></a>Testare il comando
  Creare ed eseguire il DSL in un'istanza sperimentale di Visual Studio. Il comando viene visualizzato nel menu di scelta rapida nelle situazioni specificate.
 
-#### <a name="to-exercise-the-command"></a>Per verificare il comando
+### <a name="to-exercise-the-command"></a>Per verificare il comando
 
 1.  Nel **Esplora soluzioni** sulla barra degli strumenti, fare clic su **Trasforma tutti i modelli**.
 
@@ -329,8 +331,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4.  Fare clic con il pulsante destro del mouse nel diagramma per verificare che il comando sia abilitato o disabilitato correttamente e visualizzato o nascosto in modo appropriato, a seconda dell'elemento selezionato.
 
-## <a name="troubleshooting"></a>Risoluzione dei problemi
- **Comando non viene visualizzato nel menu:**
+## <a name="troubleshoot"></a>Risolvere i problemi
+
+**Comando non viene visualizzato nel menu:**
 
 - Il comando viene visualizzato solo nelle istanze di debug di Visual Studio, fino a quando si installa il pacchetto DSL. Per altre informazioni, vedere [distribuzione di soluzioni Domain-Specific Language](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -340,17 +343,17 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Impostare un punto di interruzione all'inizio del metodo OnStatus. L'interruzione dovrebbe avvenire quando si fa clic con il pulsante destro del mouse su qualsiasi parte del diagramma.
 
-   **Metodo OnStatus non viene chiamato**:
+**Metodo OnStatus non viene chiamato**:
 
-  -   Assicurarsi che i GUID e gli ID del codice CommandSet corrispondano a quelli della sezione Symbols di Commands.vsct.
+-   Assicurarsi che i GUID e gli ID del codice CommandSet corrispondano a quelli della sezione Symbols di Commands.vsct.
 
-  -   In Commands.vsct verificare che il GUID e l'ID di ogni nodo padre identifichino il gruppo padre corretto.
+-   In Commands.vsct verificare che il GUID e l'ID di ogni nodo padre identifichino il gruppo padre corretto.
 
-  -   In un prompt dei comandi di Visual Studio digitare devenv /rootsuffix exp /setup, quindi riavviare l'istanza di debug di Visual Studio.
+-   In un prompt dei comandi di Visual Studio digitare devenv /rootsuffix exp /setup, quindi riavviare l'istanza di debug di Visual Studio.
 
 - Eseguire il metodo OnStatus per verificare che command.Visible e command.Enabled siano impostati su true.
 
-  **Viene visualizzato il testo del menu errato o un singolo comando in una posizione errata**:
+**Viene visualizzato il testo del menu errato o un singolo comando in una posizione errata**:
 
 - Assicurarsi che la combinazione di GUID e ID sia univoca per questo comando.
 

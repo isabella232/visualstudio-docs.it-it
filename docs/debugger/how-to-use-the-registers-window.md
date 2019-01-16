@@ -2,7 +2,6 @@
 title: Visualizza i valori del registro nel debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,16 +24,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867579"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizza i valori del registro nella finestra di registri (C#, C++, Visual Basic, F#)
 
-Il **registra** finestra consente di visualizzare il contenuto del registro durante il debug di Visual Studio. Per un'introduzione generale ai concetti alla base di registri e i **registra** finestra, vedere [nozioni fondamentali di debug: finestra Registri](../debugger/debugging-basics-registers-window.md).
+Il **registra** finestra consente di visualizzare il contenuto del registro durante il debug di Visual Studio. Per un'introduzione generale ai concetti alla base di registri e i **registra** finestra, vedere [nozioni fondamentali di debug: Finestra Registri](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Informazioni di registro non sono disponibile per App SQL o script.
@@ -56,5 +55,5 @@ Per evitare confusione, nella finestra **Registri** i registri sono organizzati 
 
 ### <a name="see-also"></a>Vedere anche
 
-- [Nozioni fondamentali di debug: finestra registri](../debugger/debugging-basics-registers-window.md)
+- [Informazioni di base sul debug: Finestra Registri](../debugger/debugging-basics-registers-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -3,7 +3,6 @@ title: Informazioni su come eseguire il debug di applicazioni multithreading
 description: Eseguire il debug usando le finestre Espressioni di controllo parallelo e stack in parallelo in Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863290"
 ---
 # <a name="get-started-debugging-multithreaded-applications"></a>Iniziare il debug di applicazioni multithreading
 Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Il completamento di questa esercitazione consentirà di familiarizzare con le funzionalità di Visual Studio per il debug di applicazioni multithreading.
@@ -35,11 +34,11 @@ Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per
 
 Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strumenti di debug con multithreading:
 
-- Usare la **posizione di Debug** sulla barra degli strumenti e il **thread** finestra, vedere [procedura dettagliata: eseguire il Debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
+- Usare la **posizione di Debug** sulla barra degli strumenti e i **thread** finestra, vedere [procedura dettagliata: Eseguire il debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
 
-- Per un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [questa procedura dettagliata: eseguire il Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md). Per suggerimenti di debug generali applicabili a tipi di applicazioni più a thread multipli, leggere tale argomento sia presente uno.
+- Per un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md). Per suggerimenti di debug generali applicabili a tipi di applicazioni più a thread multipli, leggere tale argomento sia presente uno.
   
-È necessario innanzitutto un progetto di applicazione a thread multipli. L'esempio seguente.  
+È necessario innanzitutto un progetto di applicazione a thread multipli. Vedere l'esempio seguente:  
   
 ## <a name="create-a-multithreaded-app-project"></a>Creare un progetto di app a thread multipli  
   
@@ -47,7 +46,7 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Selezionare una lingua: **Visual C#** , **Visual C++**, o **Visual Basic**.  
+2.  Selezione lingua **Visual C#** , **Visual C++**, o **Visual Basic**.  
   
 3.  Sotto **Desktop di Windows**, scegliere **App Console**.  
   
@@ -194,7 +193,7 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     End Class
     ```
   
-7.  Nel **File** dal menu **Salva tutto**.  
+7.  Scegliere **Salva tutto** dal menu **File**.  
   
 ## <a name="debug-the-multithreaded-app"></a>Il debug dell'app a thread multipli  
   
@@ -258,7 +257,7 @@ Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazion
     È possibile eseguire varie azioni da questi menu di scelta rapida, ma per questa esercitazione verrà illustrato più di questi dettagli nel **espressioni di controllo parallela** finestra (sezioni).
 
     > [!NOTE]
-    > Per visualizzare un elenco con informazioni su ogni thread, usare il **thread** finestra invece. Visualizzare [procedura dettagliata: Debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
+    > Per visualizzare un elenco con informazioni su ogni thread, usare il **thread** finestra invece. Vedere [Procedura dettagliata: Eseguire il debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Impostare un'espressione di controllo in una variabile
 
@@ -346,5 +345,5 @@ Può essere utile seguire l'esecuzione di un singolo thread nel debugger. Un mod
 ## <a name="see-also"></a>Vedere anche  
 [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Procedura: usare la finestra Stack paralleli](../debugger/using-the-parallel-stacks-window.md)  
+[Procedura: Usare la finestra Stack paralleli](../debugger/using-the-parallel-stacks-window.md)  
 [Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)  
