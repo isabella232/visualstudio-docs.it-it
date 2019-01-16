@@ -29,10 +29,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51798937"
 ---
 # <a name="javascript-memory"></a>Memoria JavaScript
@@ -52,7 +52,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, ti aiuta a comprendere
   
    Gli oggetti non creati nel codice dell'app vengono esclusi dal filtro. Puoi anche filtrare i dati in base al nome dell'oggetto.  
   
-  Per un'esercitazione che consente di eseguire in modo guidato il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Per un'esercitazione che descriva in dettaglio il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   In questo argomento  
   
@@ -131,7 +131,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, ti aiuta a comprendere
 -   [Visualizzare le differenze di uno snapshot](#SnapshotDiff). Mostra i valori differenti tra gli snapshot. Queste visualizzazioni mostrano le differenze nelle dimensioni e nei conteggi degli oggetti.  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
- Questi passaggi forniscono un flusso di lavoro che può aiutarti a usare JavaScript Memory Analyzer in modo più efficace. Queste operazioni possono essere utili se ritieni che l'app abbia una perdita di memoria. Per un'esercitazione che consente di eseguire in modo guidato il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Questi passaggi forniscono un flusso di lavoro che può aiutarti a usare JavaScript Memory Analyzer in modo più efficace. Queste operazioni possono essere utili se ritieni che l'app abbia una perdita di memoria. Per un'esercitazione che descriva in dettaglio il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Apri l'app in Visual Studio.  
   
@@ -173,7 +173,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, ti aiuta a comprendere
   
     - Dimensioni heap differenziali (collegamento a sinistra sotto le dimensioni dell'heap). Il testo del collegamento mostra la differenza tra le dimensioni heap dello snapshot corrente e quelle dello snapshot precedente.  
   
-    - Conteggio oggetti differenziale (collegamento a destra sotto il conteggio oggetti). Il testo del collegamento mostra due valori, ad esempio +1858 / -1765. Il primo è il numero di nuovi oggetti aggiunti rispetto allo snapshot precedente, mentre il secondo valore indica il numero di oggetti rimossi dallo snapshot precedente.  
+    - Conteggio oggetti differenziale (collegamento a destra sotto il conteggio oggetti). Il testo del collegamento visualizza due valori (ad esempio +1858/-1765): il primo è il numero di nuovi oggetti aggiunti e il secondo indica il numero di oggetti rimossi dopo la creazione dello snapshot precedente.  
   
       Con questi collegamenti viene aperta una visualizzazione dettagli snapshot differenziale dei tipi sull'heap, ordinati in base alle dimensioni o al conteggio oggetti mantenuti, a seconda del collegamento aperto.  
   
@@ -229,7 +229,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, ti aiuta a comprendere
   
 -   Conteggio oggetti. Questo conteggio mostra solo gli oggetti creati nell'app ed esclude quelli incorporati creati dal runtime JavaScript. Il conteggio di oggetti è un collegamento alla visualizzazione Tipi dei dettagli dello snapshot.  
   
--   Conteggio oggetti differenziale. Sono riportati due valori: il primo è il numero di nuovi oggetti aggiunti rispetto allo snapshot precedente e il secondo valore indica il numero di oggetti rimossi dallo snapshot precedente. Ad esempio, la figura mostra che sono stati aggiunti 1.859 oggetti e che ne sono stati rimossi 1.733 dopo lo snapshot n.1. Questo valore è seguito da una freccia su rossa se il conteggio oggetti totale è aumentato o da una freccia giù verde se è diminuito. Se il conteggio oggetti rimane invariato, verrà visualizzato il testo **Nessuna modifica** anziché un numero. Per il primo snapshot, verrà visualizzato il testo **Linea di base**. Il conteggio oggetti differenziale è collegato alla visualizzazione Tipi delle differenze dello snapshot.  
+-   Conteggio oggetti differenziale. Visualizza due valori: il primo è il numero di nuovi oggetti aggiunti e il secondo indica il numero di oggetti rimossi dopo la creazione dello snapshot precedente. Ad esempio, la figura mostra che sono stati aggiunti 1.859 oggetti e che ne sono stati rimossi 1.733 dopo lo snapshot n.1. Questo valore è seguito da una freccia su rossa se il conteggio oggetti totale è aumentato o da una freccia giù verde se è diminuito. Se il conteggio oggetti rimane invariato, verrà visualizzato il testo **Nessuna modifica** anziché un numero. Per il primo snapshot, verrà visualizzato il testo **Linea di base**. Il conteggio oggetti differenziale è collegato alla visualizzazione Tipi delle differenze dello snapshot.  
   
 -   Schermata creata al momento dell'acquisizione dello snapshot.  
   
@@ -406,7 +406,7 @@ if (performance && performance.mark) {
     -   Creare un oggetto test e analizzarlo nelle visualizzazioni di JavaScript Memory Analyzer, ad esempio la visualizzazione Tipi. Ad esempio, puoi collegare un oggetto di grandi dimensioni a un altro oggetto per vedere se un oggetto o un elemento specifico è stato sottoposto a Garbage Collection.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
 
 
 

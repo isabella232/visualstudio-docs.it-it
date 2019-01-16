@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53893552"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Specifica di eventi di compilazione personalizzati in Visual Studio
@@ -31,7 +31,7 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
 -   Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# e F#-consente[procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Visual C# e F#-consente[procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md)
 
 -   Visual C++: [Specifica di eventi di compilazione](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -60,4 +60,4 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
     >  `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
 
 ## <a name="see-also"></a>Vedere anche
- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md) [pre-compilazione/Post-compilazione eventi finestra di dialogo riga di comando](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md) [procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)
+ [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md) [pre-compilazione/Post-compilazione eventi finestra di dialogo riga di comando](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md) [procedura dettagliata: Compilazione di un'applicazione.

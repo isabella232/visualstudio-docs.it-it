@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913891"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creazione da zero di un file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -146,10 +146,10 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -407,7 +407,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[csprcs](../includes/csprcs-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -447,7 +447,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -484,7 +484,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 ```  
   
 ## <a name="whats-next"></a>Argomenti successivi  
- Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per imparare a usare Visual Studio per creare, modificare, compilare e verificare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Vedere anche  
 [Panoramica di MSBuild](msbuild.md)  
