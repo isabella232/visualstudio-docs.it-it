@@ -9,12 +9,12 @@ description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739984"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154434"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -41,20 +41,18 @@ ms.locfileid: "53739984"
    - [Installare](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) l'estensione WhiteSource Bolt da Microsoft Visual Studio Marketplace. Se non si è autorizzati a installare le estensioni, vedere [Install free extensions for Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts) (Installare le estensioni gratuite per Azure DevOps Services).
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+Fare clic sul pulsante **Install** (Installa) verde se si usa Azure DevOps Services o sul pulsante **Download** per Team Foundation Server.  In questo esempio si userà Azure DevOps Services.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![Installazione dell'estensione del vantaggio WhiteSource](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- Selezionare quindi l'organizzazione di Azure DevOps che si vuole usare e fare clic su **Confirm** (Conferma).  Se Azure DevOps Services non è stato ancora configurato, visitare la pagina [Benefits](https://my.visualstudio.com/benefits) (Vantaggi) e attivare il vantaggio Azure DevOps Services.
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![Conferma dell'account del vantaggio WhiteSource](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- Si riceverà la conferma dell'installazione dell'estensione, che è ora pronta all'uso.  Fare clic su **Inizia subito** per tornare alla pagina WhiteSource Bolt e continuare.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![Installazione del vantaggio WhiteSource completata](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. Aprire il dashboard del progetto Azure DevOps, fare clic sul menu **Azure Pipelines** e scegliere **WhiteSource Bolt**.
    > [!div class="mx-imgBorder"]

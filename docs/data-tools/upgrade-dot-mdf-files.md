@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 875208d068c791c0238c110ea0e83b04e18348fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863420"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
 
@@ -63,15 +62,15 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
 2.  Nel **Aggiungi connessione** finestra di dialogo, specificare le informazioni seguenti:
 
-    -   **Zdroj dat**: `Microsoft SQL Server (SqlClient)`
+    -   **Origine dati**: `Microsoft SQL Server (SqlClient)`
 
-    -   **Nome del server**:
+    -   **Nome server**:
 
         -   Usare la versione predefinita: `(localdb)\MSSQLLocalDB`.  Si specificherà ProjectV12 o ProjectV13, a seconda di quale versione di Visual Studio viene installata e quando è stata creata la prima istanza di Local DB. Il **MSSQLLocalDB** nodo **Esplora oggetti di SQL Server** mostra quale versione fa riferimento a.
 
         -   Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, dove V12 è LocalDB 2014 e V13 è LocalDB 2016.
 
-    -   **Collegare un file di database**: il percorso fisico del database primario *mdf* file.
+    -   **Collegare un file di database**: Il percorso fisico del database primario *mdf* file.
 
     -   **Nome logico**: il nome che si desidera utilizzare con il file.
 

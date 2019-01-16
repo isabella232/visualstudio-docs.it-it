@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2dbb785bcc3092872763d23e968cbf699603286
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893552"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Specifica di eventi di compilazione personalizzati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +29,9 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
  Per informazioni specifiche sul linguaggio di programmazione in uso, vedere gli argomenti seguenti:
 
--   Visual Basic:[procedura: specificare eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# e F#-consente[procedura: specificare eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Visual C# e F#-consente[procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++: [Specifica di eventi di compilazione](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
