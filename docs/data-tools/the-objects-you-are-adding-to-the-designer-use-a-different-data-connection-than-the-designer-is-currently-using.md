@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935658"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204307"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Gli oggetti a cui che si aggiunge alla finestra di progettazione utilizzano una connessione dati diversa da quella della finestra di progettazione
 
@@ -22,20 +22,18 @@ Gli oggetti in corso di aggiunta alla finestra di progettazione usano una connes
 
 Quando si aggiungono elementi per il **Object Relational Designer** (**O/R Designer**), tutti gli elementi usano una sola connessione dei dati condivisa. (l'area di progettazione rappresenta l'oggetto <xref:System.Data.Linq.DataContext>, che usa una sola connessione per tutti gli oggetti nell'area). Questo messaggio viene visualizzato se si aggiunge alla finestra di progettazione un oggetto che usa una connessione dati differente da quella attualmente usata per la finestra di progettazione. Per correggere l'errore, è possibile scegliere di mantenere la connessione esistente. In questo caso, l'oggetto selezionato non verrà aggiunto. In alternativa, è possibile scegliere di aggiungere l'oggetto e reimpostare la connessione di <xref:System.Data.Linq.DataContext> sulla nuova connessione.
 
-> [!NOTE]
-> Se si sceglie **Yes**, classi di tutte le entità nel **O/R Designer** viene eseguito il mapping alla nuova connessione.
+## <a name="connection-options"></a>Opzioni di connessione
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Per sostituire la connessione esistente con quella usata per l'oggetto selezionato
+- Per sostituire la connessione esistente con la connessione utilizzata dall'oggetto selezionato, fare clic su **Sì**.
 
-- Scegliere **Sì**.
+   L'oggetto selezionato viene aggiunto per il **O/R Designer**e il *DataContext* è impostato sulla nuova connessione.
 
-    L'oggetto selezionato viene aggiunto per il **O/R Designer**e il *DataContext* è impostato sulla nuova connessione.
+   > [!NOTE]
+   > Se si sceglie **Yes**, classi di tutte le entità nel **O/R Designer** viene eseguito il mapping alla nuova connessione.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Per continuare a usare la connessione esistente e annullare l'aggiunta dell'oggetto selezionato
+- Per continuare a usare la connessione esistente e Annulla aggiunta dell'oggetto selezionato, fare clic su **No**.
 
-- Fare clic su **No**.
-
-    L'azione viene annullata e l'oggetto *DataContext.Connection* resta impostato sulla connessione esistente.
+   L'azione viene annullata e l'oggetto *DataContext.Connection* resta impostato sulla connessione esistente.
 
 ## <a name="see-also"></a>Vedere anche
 

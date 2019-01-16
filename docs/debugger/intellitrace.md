@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227330"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
 È possibile ridurre il tempo richiesto per eseguire il debug dell'applicazione quando si usa IntelliTrace per registrare e tenere traccia della cronologia di esecuzione del codice. È possibile trovare facilmente i bug perché IntelliTrace consente di:
 
@@ -53,7 +53,7 @@ ms.locfileid: "53842408"
 | | |
 |---------------------| - |
 | **Supporto completo** | - Applicazioni Visual Basic e Visual C# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
-| **Supporto limitato** | -App native destinate a supporto di Windows la visualizzazione di snapshot tramite tornare indietro di IntelliTrace. Sono supportati solo gli eventi di eccezione e del debugger.<br />-.NET core e le app ASP.NET Core è supportato per determinati solo eventi (eventi Controller MVC, ADO.NET e HTTPClicent) nel debug locale. Agente di raccolta autonomo non è supportata per le app .NET Core o ASP.NET Core.<br />- App F# su base sperimentale<br />-App della piattaforma UWP supportata solo per gli eventi |
+| **Supporto limitato** | -C + + App destinate a supporto di Windows la visualizzazione di snapshot tramite tornare indietro di IntelliTrace. Sono supportati solo gli eventi di eccezione e del debugger.<br />-.NET core e le app ASP.NET Core è supportato per determinati solo eventi (eventi Controller MVC, ADO.NET e HTTPClient) nel debug locale. Agente di raccolta autonomo non è supportata per le app .NET Core o ASP.NET Core.<br />- App F# su base sperimentale<br />-App della piattaforma UWP supportata solo per gli eventi |
 | **Non supportato** | -Altri linguaggi e script<br />- Windows Services, Silverlight, Xbox o app [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
 > [!NOTE]
@@ -148,7 +148,7 @@ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTr
 È possibile configurare IntelliTrace per acquisire gli snapshot in ogni punto di interruzione e l'evento di passaggio del debugger. IntelliTrace registra lo stato dell'applicazione completo in ogni snapshot, che consente di visualizzare le variabili complesse e valutare le espressioni.
 
 > [!NOTE]
-> Il [agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) nepodporuje snaphots acquisizione.
+> Il [agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) non supporta l'acquisizione degli snapshot.
 
 Visualizzare [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md).
 

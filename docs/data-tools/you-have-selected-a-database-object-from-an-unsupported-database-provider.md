@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894441"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204249"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>È stato selezionato un oggetto di database da un provider di database non supportato
 
@@ -23,17 +23,11 @@ Il **O/R Designer** supporta solo il Provider di dati .NET Framework per SQL Ser
 > [!NOTE]
 > Sono supportate solo connessioni dati che usano il provider di dati .NET Framework per SQL Server.
 
-## <a name="to-correct-this-error"></a>Per correggere l'errore
+## <a name="options"></a>Opzioni
 
-- Fare clic su **OK**.
+- Fare clic su **OK** per continuare a progettare le classi di entità con mapping alla connessione che usa il provider del database non supportato. Quando si usano provider del database non supportati, potrebbe verificarsi un comportamento imprevisto.
 
-   È possibile continuare a progettare le classi di entità che eseguono il mapping alla connessione che utilizza il provider di database non supportato. Quando si usano provider del database non supportati, potrebbe verificarsi un comportamento imprevisto.
-
-    -oppure-
-
-- Fare clic su **Annulla**.
-
-   L'azione viene interrotta. Creare o usare una connessione dati che si avvale del provider .NET Framework per SQL Server.
+- Fare clic su **annullare** per arrestare l'azione. Creare o usare una connessione dati diversa che usa il Provider .NET Framework per SQL Server.
 
 ## <a name="see-also"></a>Vedere anche
 

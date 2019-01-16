@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820916"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227720"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Uso dell'agente di raccolta autonomo IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Tramite l'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
+
 L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati diagnostici di IntelliTrace per le app nei server di produzione o in altri ambienti senza installare Visual Studio nel computer di destinazione e senza cambiare l'ambiente del sistema di destinazione. L'agente di raccolta autonomo IntelliTrace funziona nelle app Web, SharePoint, WPF e Windows Form. Al termine della raccolta dei dati, eliminare semplicemente l'agente di raccolta per disinstallarlo.
 
  IntelliTrace in azione: [Raccogliendo e analizzando dati IntelliTrace in produzione per il debug (video di Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -69,7 +70,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 5.  [Raccogliere i dati da un'applicazione Web o da un'applicazione SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     oppure
+     -oppure-
 
      [Raccogliere i dati da un'app gestita](#BKMK_Collect_Data_from_Executables)
 
@@ -77,7 +78,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installare l'agente di raccolta
 
-1. Nel server dell'app, creare la directory dell'agente di raccolta, ad esempio  **C:\IntelliTraceCollector**
+1. Nel server dell'app creare la directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
 2. Scaricare l'agente di raccolta dall'Area download Microsoft o dalla cartella di installazione di Visual Studio 2013 Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
@@ -85,7 +86,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
      1. Accanto a **IntelliTraceCollector.exe**, scegliere **carica**.
 
-     2. Salvare IntelliTraceCollector.exe nella directory dell'agente di raccolta, ad esempio  **C:\IntelliTraceCollector**
+     2. Salvare IntelliTraceCollector.exe nella directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
      3. Eseguire IntelliTraceCollector.exe. Il file IntelliTraceCollection.cab viene estratto.
 
@@ -97,13 +98,13 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
           **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  Inserire IntelliTraceCollection.cab nella directory dell'agente di raccolta, ad esempio:  **C:\IntelliTraceCollector**
+     2.  Inserire IntelliTraceCollection.cab nella directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
 3. Espandere IntelliTraceCollection.cab:
 
    1.  Nel server dell'app aprire una finestra del prompt dei comandi come amministratore.
 
-   2.  Cercare la directory dell'agente di raccolta, ad esempio:  **C:\IntelliTraceCollector**
+   2.  Cercare la directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
    3.  Usare il comando **expand** , incluso il punto (**.**) alla fine, per espandere IntelliTraceCollection.cab:
 
@@ -118,7 +119,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 2.  Usare il comando di Windows **icacls** per concedere all'amministratore del server le autorizzazioni complete per la directory dell'agente di raccolta. Ad esempio:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IDAmministratore>* `":F`
 
 3.  Per raccogliere dati per un'app Web o un'applicazione SharePoint:
 
@@ -126,7 +127,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
          Ad esempio:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\idutente >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IDUtente>* `":F`
 
     2.  Concedere al pool di applicazioni per l'app Web o l'applicazione SharePoint le autorizzazioni di lettura ed esecuzione per la directory dell'agente di raccolta.
 
@@ -166,7 +167,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Impostare autorizzazioni per la directory di file con estensione iTrace
 
-1. Nel server dell'app, creare la directory di file .iTrace, ad esempio:  **C:\IntelliTraceLogFiles**
+1. Nel server dell'app, creare la directory di file .iTrace, ad esempio: **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - Per evitare il rallentamento dell'app, scegliere una posizione in un disco ad alta velocità locale non troppo attivo.
@@ -190,7 +191,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       -oppure-
+       oppure
 
    - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):
 
@@ -212,7 +213,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1.  Per avviare la raccolta dei dati, aprire una finestra di comando PowerShell come amministratore, quindi eseguire il comando:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Dopo aver eseguito il comando, digitare **Y** per confermare che si vuole iniziare la raccolta dei dati.
@@ -254,7 +255,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1.  Per avviare l'app e raccogliere i dati allo stesso tempo, usare questa sintassi:
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Ad esempio, per raccogliere i dati da un'app denominata **MyApp**:
 

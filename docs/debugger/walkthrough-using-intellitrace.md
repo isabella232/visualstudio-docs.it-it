@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227993"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Visualizza eventi con IntelliTrace in Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visualizzare gli eventi con IntelliTrace in Visual Studio Enterprise (C#, Visual Basic)
+
 È possibile usare IntelliTrace per raccogliere informazioni su eventi o categorie di eventi specifici o su singole chiamate di funzione oltre agli eventi. I passaggi seguenti illustrano come eseguire quest'operazione.  
   
- È possibile usare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).  
+È possibile usare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).  
   
-##  <a name="GettingStarted"></a> Configurare Intellitrace  
+##  <a name="GettingStarted"></a> Configurare IntelliTrace  
+
  È possibile provare a eseguire il debug con soli eventi IntelliTrace. Gli eventi IntelliTrace sono eventi del debugger, eccezioni, eventi .NET Framework e altri eventi di sistema. È possibile attivare o disattivare eventi specifici per il controllo degli eventi che IntelliTrace registra prima di avviare il debug. Per altre informazioni, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Attivare l'evento di IntelliTrace per l'accesso ai file. Andare alla pagina **Strumenti > Opzioni > IntelliTrace > Eventi di IntelliTrace** ed espandere la categoria **File**. Selezionare la categoria di eventi **File** . Saranno selezionati tutti gli eventi relativi ai file (accesso,  chiusura, eliminazione).
@@ -62,13 +64,13 @@ ms.locfileid: "53929390"
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace Update1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 3.  Selezionare l'evento per espandere i dettagli.  
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
   
      È possibile scegliere il collegamento al percorso per aprire il file. Se il nome del percorso completo non è disponibile, viene visualizzata la finestra di dialogo **Apri file** .  
   
@@ -76,7 +78,7 @@ ms.locfileid: "53929390"
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 4.  Se il bug non viene trovato, provare ad analizzare altri eventi. È anche possibile che IntelliTrace registri le informazioni sulle chiamate in modo da eseguire le chiamate alle funzioni. 
   
