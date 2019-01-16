@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836910"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227785"
 ---
-# <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando i dati di IntelliTrace salvati (C#, Visual Basic, C++)
+
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.
 
  Assicurarsi di disporre degli elementi seguenti:

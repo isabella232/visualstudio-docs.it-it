@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Visualizzare documenti Script | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,21 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867728"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204135"
 ---
-# <a name="how-to-view-script-documents"></a>Procedura: Visualizzare documenti script
-Nelle versioni precedenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i file script sul lato client generati da uno script sul lato server venivano visualizzati nella finestra Esplora script. La finestra Esplora script era spesso nascosta, per cui la disponibilità di script sul lato client non era sempre ovvia.  
+# <a name="how-to-view-script-documents-javascript"></a>Procedura: Visualizzare documenti Script (JavaScript)
+
+I file di script sul lato server sono visibili in Esplora soluzioni. I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. File di script sul lato client vengono visualizzati nei **documenti Script** nodo.  
   
- In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] i file script sul lato client generati da uno script sul lato server vengono visualizzati in Esplora soluzioni, visualizzata per impostazione predefinita. La finestra Esplora script è stata eliminata.  
-  
- I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. Vengono visualizzati nel nodo **Documenti script**.  
-  
- I file script sul lato server sono sempre visibili. Vengono visualizzati nel nodo **\<Percorso sito Web>**. Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
+> [!NOTE]
+> Anteriore a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], file di script sul lato client generati da uno script sul lato server venivano visualizzati nella finestra di Esplora Script.
   
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server  
   

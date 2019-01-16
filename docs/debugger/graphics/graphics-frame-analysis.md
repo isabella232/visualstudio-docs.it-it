@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875641"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154376"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.  
@@ -91,7 +91,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="statistical-significance"></a>Rilevanza statistica  
  Per evidenziare le variazioni di rendering con rilevanza maggiore, l'analisi dei frame determina la rilevanza statistica di ogni variante di rendering e mostra in grassetto le varianti più significative. Le varianti che migliorano le prestazioni sono mostrate in verde, mentre quelle che le riducono sono mostrate in rosso. I risultati non significativi a livello statistico sono mostrati in testo normale.  
   
- ![Rilevanza statistica della variante chiamata di disegno](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![La rilevanza statistica della variante chiamata di disegno](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Per determinare la rilevanza statistica, analisi dei Frame Usa il [test t di Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

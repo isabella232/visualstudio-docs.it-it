@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094815"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204418"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
-Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l’esecuzione di un programma. È possibile impostare il debugger quali eccezioni o set di eccezioni per interrompere l'esecuzione e a questo punto si desidera che l'interruzione del debugger. Quando il debugger si interrompe, viene illustrato in cui è stata generata l'eccezione. È anche possibile aggiungere o eliminare le eccezioni. Con una soluzione aperta in Visual Studio, usare **Debug > Windows > Impostazioni eccezioni** per aprire il **impostazioni eccezioni** finestra.
+Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l’esecuzione di un programma. È possibile impostare il debugger quali eccezioni o set di eccezioni per interrompere l'esecuzione e a questo punto si desidera che l'interruzione del debugger (vale a dire, pausa nel debugger). Quando il debugger si interrompe, viene illustrato in cui è stata generata l'eccezione. È anche possibile aggiungere o eliminare le eccezioni. Con una soluzione aperta in Visual Studio, usare **Debug > Windows > Impostazioni eccezioni** per aprire il **impostazioni eccezioni** finestra.
 
-Fornire gestori che rispondono alle eccezioni più importanti. Anche informazioni su come configurare il debugger per interrompere sempre l'esecuzione per alcune eccezioni.
+Fornire gestori che rispondono alle eccezioni più importanti. Se è necessario sapere come aggiungere i gestori delle eccezioni, vedere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md). Inoltre, informazioni su come configurare il debugger per interrompere sempre l'esecuzione per alcune eccezioni.
 
 Quando si verifica un'eccezione, il debugger scrive un messaggio di eccezione nella finestra **Output**. Il debugger può interrompere l'esecuzione nel seguente casi:
 

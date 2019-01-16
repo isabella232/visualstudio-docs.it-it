@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854761"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204203"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La stringa di connessione contiene credenziali con una password in testo non crittografato e non utilizza la sicurezza integrata
 
@@ -25,15 +25,13 @@ Quando si usano connessioni dati in cui sono contenute informazioni riservate, a
 > [!WARNING]
 > Se si imposta in modo esplicito la proprietà **Impostazioni applicazione** presente nelle proprietà **Connessione** su **False**, la password verrà aggiunta nel file DBML.
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Per salvare la stringa di connessione con le informazioni riservate nelle impostazioni dell'applicazione del progetto
+## <a name="save-options"></a>Opzioni di salvataggio
 
-- Scegliere **Sì**.
+- Per salvare la stringa di connessione con le informazioni riservate, scegliere **Sì**.
 
    La stringa di connessione viene archiviata come impostazione dell'applicazione e include le informazioni riservate in testo normale. Il file DBML non contiene le informazioni riservate.
 
-## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Per salvare la stringa di connessione senza le informazioni riservate nelle impostazioni dell'applicazione del progetto
-
-- Fare clic su **No**.
+- Per salvare la stringa di connessione senza le informazioni riservate, scegliere **No**.
 
    La stringa di connessione viene archiviata come impostazione dell'applicazione, ma non viene inclusa la password.
 

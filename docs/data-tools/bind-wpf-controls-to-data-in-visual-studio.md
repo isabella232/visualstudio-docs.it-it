@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932785"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154395"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 
@@ -99,7 +99,7 @@ Visual Studio genera XAML che esegue le operazioni seguenti:
 Quando si trascina un oggetto o a una proprietà di **Zdroje dat** finestra di progettazione, Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] che crea un controllo con associazione a dati (o associa un controllo esistente all'oggetto o una proprietà). Tuttavia, Visual Studio non genera codice per inserire l'oggetto dati. È necessario scrivere questo codice manualmente.
 
 > [!NOTE]
-> Devono essere pubblico e delle classi personalizzate, per impostazione predefinita, dispone di un costruttore senza parametri. Sono classi can'tbe annidati che hanno un "punto" nella relativa sintassi. Per altre informazioni, vedere [XAML e classi personalizzate per WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Devono essere pubblico e delle classi personalizzate, per impostazione predefinita, dispone di un costruttore senza parametri. Non possono essere classi annidate che hanno un "punto" nella relativa sintassi. Per altre informazioni, vedere [XAML e classi personalizzate per WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] che esegue le operazioni seguenti:
 

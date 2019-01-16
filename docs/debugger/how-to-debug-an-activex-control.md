@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924787"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269683"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedura: Eseguire il debug di un controllo ActiveX
 
@@ -62,4 +62,4 @@ Per effettuare il debug di un controllo ActiveX, è necessario specificare un co
 - [Test di proprietà ed eventi con Test Container](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Debug in Visual Studio](../debugger/index.md)
-- [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+- [Presentazione del debugger](../debugger/debugger-feature-tour.md)

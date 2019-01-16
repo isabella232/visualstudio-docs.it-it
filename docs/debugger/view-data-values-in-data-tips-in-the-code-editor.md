@@ -18,18 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898073"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204401"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice
 
-I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
-
-Se si tratta di debug per la prima volta, è possibile leggere [scrivere meglio C# di codice usando Visual Studio](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di leggere questo articolo.
+I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) e [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
   
 ## <a name="work-with-datatips"></a>Lavorare con i suggerimenti dati
 

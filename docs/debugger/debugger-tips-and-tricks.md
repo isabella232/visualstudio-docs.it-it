@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927155"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270060"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni su consigli e suggerimenti relativi alla produttività per il Debugger di Visual Studio
 
-Leggere questo argomento per informazioni su alcuni suggerimenti per la produttività e consigli per il debugger di Visual Studio. Per esaminare le funzionalità di base del debugger, vedere [Debugger Feature Tour](../debugger/debugger-feature-tour.md). In questo argomento illustra alcune aree che non sono inclusi nella presentazione funzionalità.
+Leggere questo argomento per informazioni su alcuni suggerimenti per la produttività e consigli per il debugger di Visual Studio. Per esaminare le funzionalità di base del debugger, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md). In questo argomento illustra alcune aree che non sono inclusi nella presentazione funzionalità.
 
 ## <a name="pin-data-tips"></a>Suggerimenti dati pin
 

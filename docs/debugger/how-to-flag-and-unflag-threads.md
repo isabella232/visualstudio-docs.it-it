@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227291"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Procedura: Impostare e rimuovere i flag dei thread
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedura: Impostare e rimuovere i flag dei thread (C#, Visual Basic, C++)
+
 È possibile contrassegnare un thread che si desidera prestare particolare attenzione mediante un'icona nella **thread**, **stack in parallelo** (visualizzazione thread), **espressioni di controllo parallela**e  **Thread GPU** windows. Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.  
   
 Thread con flag ricevono inoltre un trattamento speciale nel **Thread** elenco le **posizione di Debug** sulla barra degli strumenti e le altre finestre di debug con multithreading. È possibile visualizzare tutti i thread o un solo thread con flag nel **Thread** elenco o in altre finestre.
   
-### <a name="to-flag-or-unflag-a-thread"></a>Per aggiungere o rimuovere flag che contrassegnano un thread 
+### <a name="to-flag-or-unflag-a-thread"></a>Per aggiungere o rimuovere flag che contrassegnano un thread
   
 - Nel **thread** oppure **espressioni di controllo parallela** finestra, trovare il thread si è interessati e fare clic sull'icona del flag per selezionare o deselezionare il flag. 
 - Nel **stack in parallelo** finestra, pulsante destro del mouse su un thread o un gruppo di thread e selezionare **Flag / <thread>**  oppure **Rimuovi flag / <thread>** .

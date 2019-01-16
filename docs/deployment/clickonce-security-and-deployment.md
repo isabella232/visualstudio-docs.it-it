@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923114"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154350"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows ad aggiornamento automatico che possono essere installate ed eseguite con l'interazione utente minima. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e aggiornamento delle applicazioni distribuite con la tecnologia ClickOnce, se è stata sviluppata i progetti con Visual Basic e Visual C#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [distribuzione ClickOnce per applicazioni Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -51,7 +51,7 @@ ms.locfileid: "53923114"
  Per verificare l'autenticità dell'editore dell'applicazione vengono utilizzati i certificati Authenticode. Usando la tecnologia Authenticode per la distribuzione di applicazioni, ClickOnce consente di impedire che un programma dannoso figuri come programmi legittimi provenienti da una fonte definita e attendibile. Facoltativamente, certificati possono essere usati anche per firmare l'applicazione e manifesti della distribuzione per dimostrare che i file non sono stati alterati. Per altre informazioni, vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md). Certificati possono essere usati anche per configurare i computer client per un elenco di autori attendibili. Se un'applicazione proviene da un autore attendibile, può essere installato senza alcuna interazione dell'utente. Per altre informazioni, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Sicurezza dall'accesso di codice  
- Secrity di accesso di codice consente di limitare l'accesso di codice alle risorse protette. Nella maggior parte dei casi, è possibile scegliere le aree Internet o Intranet locale per limitare le autorizzazioni. Usare la **sicurezza** pagina il **ProjectDesigner** per richiedere l'area appropriata per l'applicazione. È anche possibile eseguire il debug di applicazioni con autorizzazioni limitate per emulare l'esperienza utente finale. Per altre informazioni, vedere [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
+ Sicurezza dall'accesso di codice consente di limitare l'accesso di codice alle risorse protette. Nella maggior parte dei casi, è possibile scegliere le aree Internet o Intranet locale per limitare le autorizzazioni. Usare la **sicurezza** pagina il **ProjectDesigner** per richiedere l'area appropriata per l'applicazione. È anche possibile eseguire il debug di applicazioni con autorizzazioni limitate per emulare l'esperienza utente finale. Per altre informazioni, vedere [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Richiesta di attendibilità ClickOnce  
  Se l'applicazione richiede più autorizzazioni rispetto a quelle consentite la zona, all'utente finale può essere richiesto per prendere una decisione di attendibilità. L'utente finale può decidere se sono attendibili per l'esecuzione di applicazioni ClickOnce, ad esempio applicazioni Windows Forms, le applicazioni Windows Presentation Foundation, le applicazioni console, le applicazioni browser XAML e soluzioni Office. Per altre informazioni, vedere [Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  

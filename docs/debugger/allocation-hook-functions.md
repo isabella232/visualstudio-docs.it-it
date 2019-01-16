@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f90e6db9a86457d0a9a0c7c4f61edac5d997414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: a75a425734670267db20bbaf0dc3f7aabb616585
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823921"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154192"
 ---
 # <a name="allocation-hook-functions"></a>Funzioni hook di allocazione
 Una funzione di hook di allocazione, installata tramite [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), viene chiamato ogni volta che viene allocata, riallocata o liberata memoria. È possibile usare questo tipo di hook per numerosi scopi differenti. Usato per verificare come un'applicazione gestisce situazioni di memoria insufficiente, ad esempio per esaminare schemi di allocazione o registrare le informazioni di allocazione per analisi successive.  
@@ -50,7 +50,7 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);  
 ```  
   
- Quando la libreria di runtime chiama la funzione hook, il *nAllocType* l'argomento indica quali allocazione operazione deve essere reso (**HOOK_ALLOC**, **HOOK_REALLOC**, o **HOOK_FREE**). In una versione gratuita o in una riallocazione, `pvData` dispone di un puntatore all'articolo di utente del blocco verrà liberato. Tuttavia per un'allocazione, questo puntatore è null, perché non è stata eseguita l'allocazione. I restanti argomenti contengono la dimensione dell'allocazione in questione, il tipo di blocco, il numero di richiesta sequenziale associato e un puntatore al nome del file. Se disponibile, i argomenti includono anche il numero di riga in cui è stato effettuato l'allocazione. Dopo che la funzione hook ha eseguito l'analisi specifica nonché altre attività definite dall'autore della funzione stessa, essa dovrà restituire il valore **TRUE**, a indicare che l'operazione di allocazione può continuare, oppure il valore **FALSE**, a indicare che l'operazione deve essere interrotta. Una semplice funzione hook di questo tipo può controllare la quantità di memoria allocata fino a tale momento e restituire **FALSE** se tale quantità eccede, anche se di poco, il limite. L'applicazione sarà quindi soggetta agli errori di allocazione che in genere si verificano solo quando la memoria disponibile è molto scarsa. Funzioni hook più complesse possono tenere traccia degli schemi di allocazione, analizzare l'uso della memoria o informare del verificarsi di determinate situazioni.  
+ Quando la libreria di runtime chiama la funzione hook, il *nAllocType* l'argomento indica quali allocazione operazione deve essere reso (**HOOK_ALLOC**, **HOOK_REALLOC**, o **HOOK_FREE**). In una versione gratuita o in una riallocazione, `pvData` dispone di un puntatore all'articolo di utente del blocco verrà liberato. Tuttavia per un'allocazione, questo puntatore è null, perché non è stata eseguita l'allocazione. I restanti argomenti contengono la dimensione dell'allocazione in questione, il tipo di blocco, il numero di richiesta sequenziale associato e un puntatore al nome del file. Se disponibile, gli argomenti includono anche il numero di riga in cui è stato effettuato l'allocazione. Dopo che la funzione hook ha eseguito l'analisi specifica nonché altre attività definite dall'autore della funzione stessa, essa dovrà restituire il valore **TRUE**, a indicare che l'operazione di allocazione può continuare, oppure il valore **FALSE**, a indicare che l'operazione deve essere interrotta. Una semplice funzione hook di questo tipo può controllare la quantità di memoria allocata fino a tale momento e restituire **FALSE** se tale quantità eccede, anche se di poco, il limite. L'applicazione sarà quindi soggetta agli errori di allocazione che in genere si verificano solo quando la memoria disponibile è molto scarsa. Funzioni hook più complesse possono tenere traccia degli schemi di allocazione, analizzare l'uso della memoria o informare del verificarsi di determinate situazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   

@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 75ffa4075c58750834558f38dcd2e2fcacc0d358
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227317"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Impostare un'espressione di controllo per le variabili di thread in parallelo in Visual Studio
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Impostare un'espressione di controllo per le variabili di thread in parallelo in Visual Studio (C#, Visual Basic, C++)
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nella finestra **Espressione di controllo in parallelo**:  
   
 - Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
@@ -34,7 +34,7 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 - Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
   
   > [!TIP]
-  >  Per informazioni sull'attività visualizzato nei **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.  
+  >  Per visualizzare informazioni sulle attività nella **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.  
   
 - Lo spazio vuoto *Aggiungi espressione di controllo* colonne, in cui è possibile immettere espressioni di controllo.  
   

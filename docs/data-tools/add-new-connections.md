@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880598"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154218"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
 
@@ -25,7 +25,7 @@ ms.locfileid: "53880598"
 
 - Cloud Explorer
 
-   Installare manualmente questa finestra come un'estensione di Visual Studio selezionando **degli strumenti** > **estensioni e aggiornamenti** > **Online**  >  **Markeplace di visual Studio**. Fornisce funzionalità specializzate per l'esplorazione e la connessione a servizi di Azure.
+   Installare manualmente questa finestra come un'estensione di Visual Studio selezionando **degli strumenti** > **estensioni e aggiornamenti** > **Online**  >  **Visual Studio Marketplace**. Fornisce funzionalità specializzate per l'esplorazione e la connessione a servizi di Azure.
 
 - Esplora oggetti di SQL Server
 

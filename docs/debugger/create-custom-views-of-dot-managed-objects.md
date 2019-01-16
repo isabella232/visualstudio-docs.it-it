@@ -1,6 +1,6 @@
 ---
-title: Creare viste personalizzate di oggetti gestiti | Microsoft Docs
-ms.date: 11/04/2016
+title: Creare viste personalizzate di oggetti | Microsoft Docs
+ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -10,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -23,31 +23,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 389deb0b6504ca5c7a3716399429f176e5dc7870
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227642"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>Creare viste personalizzate di oggetti gestiti
+# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Creare viste personalizzate di oggetti (C#, Visual Basic, C++)
 È possibile personalizzare la modalità di visualizzazione dei tipi di dati nelle finestre delle variabili del debugger in Visual Studio.  
+
+## <a name="native-code"></a>Codice nativo
+
+Per codice C++, è possibile aggiungere espansioni di tipo di dati personalizzati usando il framework Natvis, come descritto in [creare viste personalizzate di oggetti nativi nel debugger](/visualstudio/debugger/create-custom-views-of-native-objects). Per C + + c++ /CLI codice dell'interfaccia della riga, è anche possibile usare gli attributi, descritti di seguito in questo articolo.
+
+## <a name="attributes"></a>Attributi
+
+In C#, Visual Basic e C++ (C + + / solo il codice dell'interfaccia della riga), è possibile aggiungere espansioni per dati personalizzati utilizzando <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, e <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
   
-## <a name="attributes"></a>Attributi  
- In C# e Visual Basic, è possibile aggiungere espansioni per dati personalizzati tramite <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> e <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
- Nel codice [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] Visual Basic non supporta l'attributo DebuggerBrowsable. Questa limitazione è stata rimossa nelle versioni più recenti di .NET Framework.  
-  
-## <a name="visualizers"></a>Visualizzatori  
- È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
-## <a name="native-code"></a>Codice nativo  
- Per il codice nativo, è possibile aggiungere espansioni per tipi di dati personalizzati al file autoexp.dat, che si trova nella directory Programmi\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. Le istruzioni relative alla sintassi delle regole `autoexp` sono contenute nel file stesso.  
-  
-> [!CAUTION]
->  La struttura di questo file e la sintassi delle regole autoexp possono variare in base alle diverse versioni di Visual Studio.  
-  
- Le visualizzazioni del tipo nativo possono anche essere personalizzate scrivendo un componente aggiuntivo dell'analizzatore di espressioni. Per altre informazioni, vedere [EEAddIn Sample: Espressione di debug del componente aggiuntivo di Analizzatore](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+Nel codice [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] Visual Basic non supporta l'attributo DebuggerBrowsable. Questa limitazione è stata rimossa nelle versioni più recenti di .NET Framework.    
+
+## <a name="visualizers"></a>Visualizzatori
+
+È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data).
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   

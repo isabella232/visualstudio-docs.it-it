@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936509"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204469"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Controllare le variabili con finestre Espressioni di controllo e controllo immediato 
 
@@ -30,7 +30,7 @@ Durante il debug, è possibile usare **Watch** windows e **controllo immediato**
 
 **Espressioni di controllo** windows può visualizzare più variabili in un momento durante il debug. Il **controllo immediato** finestra di dialogo Visualizza una singola variabile alla volta e deve essere chiuso prima di proseguire con il debug.
 
-Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [correggere i bug scrivendo meglio C# codice](../debugger/write-better-code-with-visual-studio.md) e [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
+Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) e [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Osservare le variabili con una finestra Espressioni di controllo
 
