@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837290"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
@@ -91,9 +91,9 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Visualizzazione** Specifica dimensioni e risoluzioni di visualizzazione diverse per l'app.
 
- **Orientamento** specifica diversi orientamenti per l'app: **Panorama applicativo** oppure **verticale**.
+ **Orientamento** specifica diversi orientamenti per l'app: Orizzontale o **Verticale**.
 
- **Bordo** specifica diversi allineamenti per l'app: **Entrambe**, **a sinistra**, **a destra**, oppure **Nessuno**.
+ **Bordo** specifica diversi allineamenti per l'app: Entrambi, **A sinistra**, **A destra** o **Nessuno**.
 
  **Contrasto elevato** Consente di visualizzare in anteprima l'app in base all'impostazione di contrasto selezionata. Se per l'impostazione viene specificato un valore diverso da **Predefinito**, l'impostazione della proprietà `RequestedTheme` in App.xaml verrà sovrascritta.
 
@@ -142,4 +142,4 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
  A destra di ogni valore di proprietà è presente un *marcatore della proprietà* , visualizzato sotto forma di simbolo di casella. L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
 
 ## <a name="see-also"></a>Vedere anche
- [Utilizzo di elementi nella finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md) [come creare e applicare una risorsa](../designers/how-to-create-and-apply-a-resource.md) [procedura dettagliata: Data binding nella finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Utilizzo di elementi nella finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md) [come creare e applicare una risorsa](../designers/how-to-create-and-apply-a-resource.md) [procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

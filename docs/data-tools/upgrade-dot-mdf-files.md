@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53863420"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
@@ -72,7 +72,7 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
     -   **Collegare un file di database**: Il percorso fisico del database primario *mdf* file.
 
-    -   **Nome logico**: il nome che si desidera utilizzare con il file.
+    -   Nome &logico: Il nome che si desidera utilizzare con il file.
 
 3.  Selezionare il pulsante **OK** .
 
