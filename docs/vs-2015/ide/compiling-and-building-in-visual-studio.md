@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931064"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
@@ -57,4 +57,4 @@ ms.locfileid: "53931064"
 -   Migliorare le prestazioni di compilazione utilizzando compilazioni parallele. Per altre informazioni, vedere [Building Multiple Projects in Parallel with MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) (Compilazione di più progetti in parallelo con MSBuild) o il post di blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ottimizzazione del parallelismo di compilazione C++).
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Come si fa: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Come si fa: Creare e rimuovere dipendenze del progetto.

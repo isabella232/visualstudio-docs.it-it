@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934664"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
@@ -80,7 +80,7 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
 -   *CertMgr.exe*, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per altre informazioni, vedere [Certmgr.exe (strumento di gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>Creare un'applicazione ClickOnce  
- Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
  La distribuzione di applicazioni attendibili è specifica per [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]è può essere usata solo con le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   

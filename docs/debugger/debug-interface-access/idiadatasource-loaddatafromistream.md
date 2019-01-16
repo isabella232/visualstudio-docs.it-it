@@ -1,5 +1,5 @@
 ---
-title: Loaddatafromistream | Microsoft Docs
+title: IDiaDataSource::loadDataFromIStream | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef5bdbd070d7be6898fa89a24af2208c2acf1ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880689"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154163"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prepara i dati di debug archiviati in un file di programma del database (con estensione pdb) si accede tramite un flusso di dati in memoria.  
@@ -37,10 +37,10 @@ HRESULT loadDataFromIStream ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Valore|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|  
-|E_INVALIDARG|Invalidparameter.|  
+|E_INVALIDARG|Parametro non valido.|  
 |E_UNEXPECTED|Origine dati è già stata preparata.|  
   
 ## <a name="remarks"></a>Note  

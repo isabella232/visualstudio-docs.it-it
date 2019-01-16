@@ -2,7 +2,6 @@
 title: Impostazioni di progetto per una configurazione di debug C++
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957910"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
-È possibile modificare le impostazioni di progetto per una configurazione di debug C o Visual C++ nel **pagine delle proprietà** finestra di dialogo, come descritto in [come: impostazione del debug e rilascio delle configurazioni](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
+È possibile modificare le impostazioni di progetto per una configurazione di debug C o Visual C++ nel **pagine delle proprietà** finestra di dialogo, come descritto in [come: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
   
 > [!NOTE]
 >  Le impostazioni di progetto di debug nel **proprietà configurazione/Debug** categoria sono diversi per le app UWP e per i componenti scritti in C++. Visualizzare [avviare una sessione di debug (Visual Basic, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  

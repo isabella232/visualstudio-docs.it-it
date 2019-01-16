@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867040"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270206"
 ---
 # <a name="debugging-managed-code"></a>Debug del codice gestito
 
@@ -86,7 +86,7 @@ Vengono forniti collegamenti a sezioni più ampie della documentazione sul debug
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura dettagliata: Controlli di debug personalizzato Windows Form in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[sicurezza del Debugger](../debugger/debugger-security.md)
-[debug in Visual Studio](../debugger/index.md) 
- [ Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+[Procedura dettagliata: Debug di controlli di Windows Form personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Sicurezza del debugger](../debugger/debugger-security.md)  
+[Debug in Visual Studio](../debugger/index.md)  
+[Presentazione del debugger](../debugger/debugger-feature-tour.md)
