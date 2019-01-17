@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugExpression | Documenti Microsoft
+title: Interfaccia IDebugExpression | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,27 +14,27 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e139e09362fc392d1110e26837c52fd4c642c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727791"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345518"
 ---
 # <a name="idebugexpression-interface"></a>Interfaccia IDebugExpression
-Rappresenta un'espressione valutata in modo asincrono. Motori di script è in genere implementano questa interfaccia. In genere, un debugger IDE utilizza questa interfaccia per abilitare una finestra di esecuzione immediata o finestra Espressioni di controllo.  
+Rappresenta un'espressione valutata in modo asincrono. Motori di script in genere implementano questa interfaccia. Un IDE debugger Usa in genere questa interfaccia per abilitare una finestra di esecuzione immediata o finestra Espressioni di controllo.  
   
 > [!NOTE]
 >  Il `IDebugExpression` interfaccia è disponibile solo da uno stack frame.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugExpression` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugExpression` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Avvia la valutazione dell'espressione.|  
+|[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Inizia la valutazione dell'espressione.|  
 |[IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)|Interrompe l'espressione.|  
 |[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Determina se l'operazione è stata completata.|  
-|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Restituisce il risultato della valutazione dell'espressione come una stringa e valore restituito dell'operazione.|  
+|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Restituisce il risultato della valutazione dell'espressione come stringa e il valore restituito dell'operazione.|  
 |[IDebugExpression::GetResultAsDebugProperty](../../winscript/reference/idebugexpression-getresultasdebugproperty.md)|Restituisce il risultato della valutazione dell'espressione come una proprietà di debug e il valore restituito dell'operazione.|

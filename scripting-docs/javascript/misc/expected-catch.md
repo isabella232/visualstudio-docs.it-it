@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801982"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344109"
 ---
 # <a name="expected-catch"></a>Previsto 'catch'
 È stato usato la gestione delle eccezioni **provare** blocca, ma non scritto personalmente associato **catch** istruzione. Meccanismo di gestione delle eccezioni richiede che il codice può avere esito negativo, oltre al codice che non deve essere eseguita se si verifica un'eccezione, essere incapsulati all'interno di un **provare** blocco. Le eccezioni generate dall'interno la **provare** bloccato tramite il **throw** istruzione e rilevata di fuori il **provare** blocco con uno o più **catch**le istruzioni.  

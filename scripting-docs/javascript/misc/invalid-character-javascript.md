@@ -1,5 +1,5 @@
 ---
-title: Carattere non valido (JavaScript) | Documenti Microsoft
+title: Carattere non valido (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633731"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348477"
 ---
 # <a name="invalid-character-javascript"></a>Carattere non valido (JavaScript)
-Composta da un identificatore con un carattere (o caratteri) non riconosciuto come valido per il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilatore. I caratteri validi usare le regole seguenti:  
+Composto da un identificatore con un carattere o caratteri, non è riconosciuto come valido per il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilatore. I caratteri validi usano le regole seguenti:  
   
 -   Il primo carattere deve essere una lettera ASCII (maiuscola o minuscola) o un carattere di sottolineatura (_).  
   

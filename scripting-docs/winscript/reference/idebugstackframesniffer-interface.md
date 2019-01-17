@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugStackFrameSniffer | Documenti Microsoft
+title: Interfaccia IDebugStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726801"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348880"
 ---
 # <a name="idebugstackframesniffer-interface"></a>Interfaccia IDebugStackFrameSniffer
-Consente di enumerare i frame di stack logico noti da un componente. Motori di script è in genere implementano questa interfaccia. Il processo debug manager non utilizza questa interfaccia per trovare tutti gli stack frame associato a un determinato thread.  
+Consente di enumerare gli stack frame logici noti da un componente. Motori di script in genere implementano questa interfaccia. Il processo debug manager non utilizza questa interfaccia per trovare tutti gli stack frame associato a un determinato thread.  
   
 > [!NOTE]
->  Il debugger chiama questa interfaccia dall'interno del thread di interesse. Il motore di script deve identificare il thread corrente e restituisce un enumeratore appropriato.  
+>  Il debugger chiama questa interfaccia dall'interno del thread di interesse. Il motore di scripting deve identificare il thread corrente e restituisce un enumeratore appropriato.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi ereditati da `IUnknown`, `IDebugStackFrameSniffer` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugStackFrameSniffer` interfaccia espone i metodi seguenti.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  

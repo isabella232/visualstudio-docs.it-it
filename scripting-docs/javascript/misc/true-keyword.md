@@ -1,5 +1,5 @@
 ---
-title: True (parola chiave) | Documenti Microsoft
+title: True (parola chiave) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 595cc441f5e2dfde25c6fa4dcbcb016829176625
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633311"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350128"
 ---
 # <a name="true-keyword"></a>Parola chiave True
 Il **True** parola chiave ha un valore uguale a -1.  

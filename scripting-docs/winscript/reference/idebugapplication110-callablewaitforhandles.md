@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Documenti Microsoft
+title: IDebugApplication110::CallableWaitForHandles | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31802d8b86f007139959f3ece3bd1a0260599181
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725351"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350024"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Attende che uno degli handle specificati per ricevere il segnale consentendo chiamata tra thread a questo thread. Questo metodo deve essere chiamato dal thread del debugger.  
+Attende che uno degli handle specificati per ricevere il segnale consentendo chiamata tra thread di essere pubblicata in questo thread. Questo metodo deve essere chiamato dal thread del debugger.  
   
 > [!IMPORTANT]
->  [Interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) è implementata da PDM v 11.0 e versione successiva. Rilevata in activdbg100.h.  
+>  [Interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parametri  
  `handleCount`  
- Il numero di handle di attesa.  
+ Il numero di handle da attendere.  
   
  `pHandles`  
- Il set di handle di attesa.  
+ Il set di handle da attendere.  
   
  `pIndex`  
- Quando il valore HRESULT è S_OK, l'indice in `pHandles` per l'handle è stato segnalato.  
+ Quando il valore HRESULT è S_OK, l'indice in `pHandles` per l'handle segnalato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)

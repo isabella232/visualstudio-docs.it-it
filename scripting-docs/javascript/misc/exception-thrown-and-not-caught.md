@@ -1,5 +1,5 @@
 ---
-title: Eccezione generata e non rilevata | Documenti Microsoft
+title: Eccezione generata e non rilevata | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633121"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349036"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Eccezione generata e non rilevata
-È incluso un `throw` istruzione nel codice, ma non è stato racchiuso tra parentesi una **provare** blocco, o è stato associato alcun **catch** blocco per intercettare l'errore. Le eccezioni vengono generate dall'interno il **provare** bloccato tramite il **generare** istruzione e rilevata di fuori di **provare** blocco con un **catch** istruzione.  
+È incluso un `throw` istruzione nel codice, ma non è stato racchiuso all'interno di un **provare** blocco, o è stato associato alcun **catch** blocco per l'errore intercettato. Le eccezioni generate dall'interno la **provare** bloccato tramite il **throw** istruzione e rilevata di fuori il **provare** blocco con un **catch** istruzione.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Racchiudere il codice che può generare un'eccezione in un **provare** bloccare e verificare che sia presente un corrispondente **catch** blocco.  
+-   Racchiudere il codice che può generare un'eccezione in un **provare** block e assicurarsi che ci sia un corrispondente **catch** blocco.  
   
--   Verificare che l'istruzione catch prevede il formato corretto dell'eccezione.  
+-   Assicurarsi che l'istruzione catch si aspetta che la forma corretta dell'eccezione.  
   
--   Se l'eccezione viene generata nuovamente, assicurarsi che non è un'altra istruzione catch corrispondente.  
+-   Se viene nuovamente generata l'eccezione, assicurarsi che sia presente un'altra istruzione catch corrispondente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto Error](../../javascript/reference/error-object-javascript.md)   
- [Istruzione throw](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw (istruzione)](../../javascript/reference/throw-statement-javascript.md)   
  [Istruzione try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 893b8328affcd0a893840cefddba61a322db315c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801862"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349439"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>L'oggetto non supporta questa proprietà o metodo
 È stato specificato un metodo o una proprietà non esistente per questo oggetto. Non tutti gli oggetti supportano tutte le proprietà e tutti i metodi.  

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348376"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349400"
 ---
 # <a name="expected-"></a>Previsto '{'
 Non sono inclusi la parentesi graffa sinistra che contrassegna l'inizio del corpo della funzione. Il codice che costituisce il corpo di una funzione, anche se si tratta di una singola riga, deve essere contenuto all'interno di parentesi graffe. Si noti che l'utilizzo di parentesi graffe nei corpi delle funzioni è più rigido di cicli.  

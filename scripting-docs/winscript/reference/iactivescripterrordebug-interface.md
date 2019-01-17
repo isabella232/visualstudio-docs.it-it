@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IActiveScriptErrorDebug | Documenti Microsoft
+title: Interfaccia IActiveScriptErrorDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ff2dda33c1e406f87a157173c41015acf96e62a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645751"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345201"
 ---
 # <a name="iactivescripterrordebug-interface"></a>Interfaccia IActiveScriptErrorDebug
-Fornisce informazioni sul contesto di documento per gli errori in fase di compilazione ed eccezioni di runtime. Il `IActiveScriptError::QueryInterface` metodo supporta il `IActiveScriptErrorDebug` interfaccia.  
+Fornisce informazioni sul contesto di documento per le eccezioni di runtime ed errori in fase di compilazione. Il `IActiveScriptError::QueryInterface` metodo supporta il `IActiveScriptErrorDebug` interfaccia.  
   
- Oltre ai metodi ereditati da `IActiveScriptError`, `IActiveScriptErrorDebug` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IActiveScriptError`, il `IActiveScriptErrorDebug` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Fornisce il contesto di documento per questo errore.|  
-|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Fornisce lo stack frame che è validi per gli errori di runtime.|
+|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Fornisce lo stack frame che è attiva per gli errori di runtime.|

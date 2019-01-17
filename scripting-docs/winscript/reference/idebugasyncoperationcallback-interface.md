@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugAsyncOperationCallBack | Documenti Microsoft
+title: Interfaccia IDebugAsyncOperationCallBack | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a776592ba09031e633a82f10e8d0ed9852db4b6e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 84b5ac06d0b284a7a1f65481e0cdf8947117f260
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726441"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347892"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>Interfaccia IDebugAsyncOperationCallBack
-Fornisce gli eventi di stato relativi a stato di avanzamento di un `IDebugAsyncOperation` interfaccia valutazione.  
+Specifica gli eventi di stato associati allo stato di una valutazione di interfaccia `IDebugAsyncOperation`.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi ereditati da `IUnknown`, `IDebugAsyncOperationCallBack` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugAsyncOperationCallBack` interfaccia espone i metodi seguenti.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|Segnala che il risultato è disponibile un'operazione asincrona di debug.|
+|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|Segnala che il risultato è disponibile da un'operazione di debug asincrono.|

@@ -1,5 +1,5 @@
 ---
-title: Argomento replacer non valido | Documenti Microsoft
+title: Argomento replacer non valido | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632861"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346215"
 ---
 # <a name="invalid-replacer-argument"></a>Argomento Replacer non valido
-È stato effettuato un tentativo di richiamare `JSON.stringify` con un argomento che non è valido. Il `replacer` argomento deve essere una funzione o una matrice.  
+È stato eseguito un tentativo di richiamare `JSON.stringify` con un argomento non valido. Il `replacer` argomento deve essere una funzione o una matrice.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Modifica il `replacer` argomento in una funzione o una matrice.  
+-   Modifica il `replacer` argomento per una funzione o una matrice.  
   
 ## <a name="example"></a>Esempio  
  Il codice in questo esempio provoca un errore di runtime perché `memberfilter` è un oggetto anziché una funzione o una matrice.  

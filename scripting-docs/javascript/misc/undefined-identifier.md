@@ -1,5 +1,5 @@
 ---
-title: Identificatore non definito | Documenti Microsoft
+title: Identificatore non definito | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633581"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346137"
 ---
 # <a name="undefined-identifier"></a>Identificatore non definito
-Si è tentato di utilizzare un identificatore che il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] non riconosciuto dal compilatore. Quando si usa, viene restituito il valore non definito:  
+Si è provato a usare un identificatore che il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] non riconosciuto dal compilatore. Quando si usa, viene restituito il valore non definito:  
   
 -   una variabile che non esiste,  
   
--   una variabile dichiarata, ma mai stata assegnato, un valore  
+-   una variabile che è stata dichiarata, ma non ha mai eseguita un valore assegnato a esso,  
   
 -   proprietà dell'oggetto che non esiste.  
   

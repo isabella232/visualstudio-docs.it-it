@@ -1,5 +1,5 @@
 ---
-title: Costanti del Debugger dello Script ActiveX, enumerazioni e strutture | Documenti Microsoft
+title: Costanti del Debugger dello Script ActiveX, enumerazioni e strutture | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642071"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345435"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Costanti, enumerazioni e strutture del debugger di script ActiveX
 Le seguenti costanti, enumerazioni e strutture sono utilizzate dalle interfacce di debug attivo.  
@@ -31,7 +31,7 @@ Le seguenti costanti, enumerazioni e strutture sono utilizzate dalle interfacce 
 |Costanti|Descrizione|  
 |---------------|-----------------|  
 |[Costanti APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Indicano lo stato corrente del debug delle applicazioni e dei thread.|  
-|[Costanti DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Flag utilizzati durante l'opzione [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
+|[Costanti DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Flag di opzioni utilizzati durante [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[Costanti TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)|Descrivono gli attributi del documento.|  
   
 |Enumerazioni|Descrizione|  

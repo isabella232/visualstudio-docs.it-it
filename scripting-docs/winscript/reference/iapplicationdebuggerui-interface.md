@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IApplicationDebuggerUI | Documenti Microsoft
+title: Interfaccia IApplicationDebuggerUI | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725141"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348906"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>Interfaccia IApplicationDebuggerUI
-Implementata dall'ambiente di sviluppo integrato (IDE) di debugger (oltre a `IApplicationDebugger`) per fornire maggiore controllo sull'interfaccia utente (UI) del debugger di un componente esterno.  
+Implementata dall'ambiente di sviluppo integrato (IDE) debugger (oltre a `IApplicationDebugger`) per offrire maggiore controllo sull'interfaccia utente (UI) del debugger di un componente esterno.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IApplicationDebuggerUI` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IApplicationDebuggerUI` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Visualizza la finestra contenente il documento di debug specificata verso l'alto nel debugger interfaccia utente.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Apre la finestra contenente il contesto del documento specificata verso l'alto nell'interfaccia utente del debugger e scorre la finestra nel contesto.|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Visualizza la finestra che contiene il documento di debug specificato all'inizio nel debugger di interfaccia utente.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Visualizza la finestra che contiene il contesto del documento specificato nella parte superiore dell'interfaccia utente del debugger e consente di far scorrere la finestra nel contesto.|

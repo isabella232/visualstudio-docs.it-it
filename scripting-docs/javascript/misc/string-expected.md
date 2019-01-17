@@ -1,5 +1,5 @@
 ---
-title: Prevista stringa | Documenti Microsoft
+title: Prevista stringa | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632801"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346800"
 ---
 # <a name="string-expected"></a>Prevista stringa
-Si è tentato di richiamare il **String.prototype.toString** o **String.prototype.valueOf** su un oggetto di un tipo diverso da `String`. L'oggetto di questo tipo di chiamata deve essere di tipo `String`.  
+Si è provato a richiamare il **String.prototype.toString** oppure **String.prototype.valueOf** metodo in un oggetto di un tipo diverso da `String`. L'oggetto di questo tipo di chiamata deve essere di tipo `String`.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Richiamare solo il **String.prototype.toString** o **String.prototype.valueOf** metodi su oggetti di tipo `String`.  
+-   Richiamare solo le **String.prototype.toString** oppure **String.prototype.valueOf** metodi su oggetti di tipo `String`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto String](../../javascript/reference/string-object-javascript.md)   

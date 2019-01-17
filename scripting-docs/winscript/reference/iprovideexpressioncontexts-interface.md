@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IProvideExpressionContexts | Documenti Microsoft
+title: IProvideExpressionContexts Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 402b439da6f1fa369accacb27f987ac77119e343
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91f4251fec57001ba6c7a4ea1804ec72371418bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728101"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345097"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>Interfaccia IProvideExpressionContexts
-Consente di enumerare i contesti di espressione noti per un determinato componente. Motori di script è in genere implementano questa interfaccia.  
+Consente di enumerare i contesti di espressione noti a un determinato componente. Motori di script in genere implementano questa interfaccia.  
   
- Il gestore di debug del processo utilizza questa interfaccia per trovare tutti i contesti di espressione globale associati a un determinato thread.  
+ Il gestore di debug di processi Usa questa interfaccia per trovare tutti i contesti di espressione globale associati a un determinato thread.  
   
 > [!NOTE]
->  Questa interfaccia viene chiamata dall'interno il thread di interesse. È responsabilità dell'implementatore per identificare il thread corrente e restituisce un enumeratore appropriato.  
+>  Questa interfaccia viene chiamata dall'interno del thread di interesse. Spetta all'implementatore di identificare il thread corrente e restituisce un enumeratore appropriato.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi ereditati da `IUnknown`, `IProvideExpressionContexts` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IProvideExpressionContexts` interfaccia espone i metodi seguenti.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Restituisce un enumeratore dei contesti di espressione noto da questo componente.|
+|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Restituisce un enumeratore dei contesti di espressione noti da questo componente.|

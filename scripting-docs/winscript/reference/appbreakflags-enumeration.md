@@ -1,5 +1,5 @@
 ---
-title: Enumerazione APPBREAKFLAGS | Documenti Microsoft
+title: Enumerazione APPBREAKFLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641681"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349023"
 ---
 # <a name="appbreakflags-enumeration"></a>Enumerazione APPBREAKFLAGS
 Indicano lo stato corrente del debug delle applicazioni e dei thread.  
@@ -36,20 +36,20 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>Membri  
   
-|Membro|Valore|Descrizione|  
+|Member|Value|Descrizione|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Motore del linguaggio deve interrompere immediatamente tutti i thread con BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Motore del linguaggio è presente un'interruzione immediatamente con BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Motore del linguaggio deve interrompere il debug passo a passo thread con BREAKREASON_STEP immediatamente.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Motore del linguaggio deve interrompere immediatamente in tutti i thread con BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Motore del linguaggio deve interrompere immediatamente con BREAKREASON_DEBUGGER_HALT.|  
+|APPBREAKFLAG_STEP|0x00010000|Motore del linguaggio deve interrompere immediatamente nel thread di esecuzione di istruzioni con BREAKREASON_STEP.|  
 |APPBREAKFLAG_NESTED|0x00020000|L'applicazione è in esecuzione annidata in un punto di interruzione.|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Il debugger è l'esecuzione di istruzioni a livello di origine.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Il debugger è l'esecuzione di istruzioni a livello di codice di byte.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Il debugger è l'esecuzione di istruzioni a livello di codice byte.|  
 |APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Il debugger è l'esecuzione di istruzioni a livello di computer.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maschera di separazione dei tipi di passaggi.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maschera per la separazione di tipi di passaggi.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Un punto di interruzione è in corso.|  
   
 ## <a name="remarks"></a>Note  
- Alcuni flag di specifica che i motori di linguaggio devono interrompersi alla successiva opportunità, mentre altri flag di specificare la modalità di esecuzione del debugger.  
+ Alcuni flag di specificare che i motori di linguaggio devono interrompersi alla successiva opportunità, mentre altri flag di specificare la modalità di debug passo a passo del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strutture, enumerazioni e costanti del Debugger dello Script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   

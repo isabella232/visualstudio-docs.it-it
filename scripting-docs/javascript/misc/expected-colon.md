@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802396"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349822"
 ---
 # <a name="expected-"></a>Previsto ':'
 Si ha provato a creare un'espressione che utilizza l'operatore condizionale ternario, ma non include i due punti tra il secondo e terzo operando. Operatore condizionale ternario (tre operandi) richiede i due punti tra il secondo (true) e il terzo (false) operandi.  

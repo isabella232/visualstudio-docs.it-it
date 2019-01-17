@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
-ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531245"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348555"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Impossibile utilizzare 'continue' all'esterno di un ciclo
 Si è provato a usare il **continuare** istruzione di fuori di un ciclo. Il **continuare** istruzione può essere utilizzata solo all'interno del corpo di un oggetto:  

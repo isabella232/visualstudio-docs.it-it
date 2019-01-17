@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f260df5a23ef6b5ef6ef7253726b1fea7bc00269
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855430"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345461"
 ---
 # <a name="active-script-debugger-interfaces"></a>Interfacce del debugger dello script ActiveX
 I file di intestazione activdbg.h e activdbg100.h forniscono le interfacce, le enumerazioni e le strutture elencate in questa sezione. Vengono utilizzati per il debug dello script.  

@@ -1,5 +1,5 @@
 ---
-title: Assegnazione non valida (JavaScript) | Documenti Microsoft
+title: Assegnazione non valida (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632891"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350154"
 ---
 # <a name="illegal-assignment-javascript"></a>Assegnazione non valida (JavaScript)
-Si è tentato di assegnare un valore in un identificatore di sola lettura. È possibile assegnare un valore in un identificatore di sola lettura. Ad esempio, oggetti e gli oggetti COM esterna host definiti.  
+Si è provato ad assegnare un valore in un identificatore di sola lettura. È possibile assegnare un valore in un identificatore di sola lettura. Ad esempio, host definiti gli oggetti e gli oggetti COM esterna.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Non assegna valori a identificatori di sola lettura.  
+-   Non assegnare valori a identificatori di sola lettura.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Operatore di assegnazione (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

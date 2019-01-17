@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugCodeContext | Documenti Microsoft
+title: Interfaccia IDebugCodeContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725761"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349166"
 ---
 # <a name="idebugcodecontext-interface"></a>Interfaccia IDebugCodeContext
 Un'astrazione che rappresenta una posizione nel codice eseguibile.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugCodeContext` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugCodeContext` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Restituisce il contesto di documento associato a questo contesto di codice.|  
+|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Restituisce il contesto del documento associato a questo contesto di codice.|  
 |[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Imposta o cancella un punto di interruzione in questo contesto di codice.|

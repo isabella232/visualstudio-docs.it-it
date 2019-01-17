@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugStackFrameSnifferEx | Documenti Microsoft
+title: Interfaccia IDebugStackFrameSnifferEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56d6e63c41db274634b2593989800ea0392b93a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76f10d6bbb34c61e87a1be0f61dcd7db168274e7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726761"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348490"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>Interfaccia IDebugStackFrameSnifferEx
-Consente di enumerare i frame di stack logico noti da un componente. Motori di script è in genere implementano questa interfaccia. Il processo debug manager non utilizza questa interfaccia per trovare tutti gli stack frame associato a un determinato thread.  
+Consente di enumerare gli stack frame logici noti da un componente. Motori di script in genere implementano questa interfaccia. Il processo debug manager non utilizza questa interfaccia per trovare tutti gli stack frame associato a un determinato thread.  
   
 > [!NOTE]
->  Questa interfaccia viene chiamata dall'interno il thread di interesse. L'implementazione dell'interfaccia deve identificare il thread corrente e restituisce un enumeratore appropriato.  
+>  Questa interfaccia viene chiamata dall'interno del thread di interesse. L'implementazione dell'interfaccia deve identificare il thread corrente e restituisce un enumeratore appropriato.  
   
- Oltre ai metodi ereditati da `IDebugStackFrameSniffer`, `IDebugStackFrameSnifferEx` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IDebugStackFrameSniffer`, il `IDebugStackFrameSnifferEx` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

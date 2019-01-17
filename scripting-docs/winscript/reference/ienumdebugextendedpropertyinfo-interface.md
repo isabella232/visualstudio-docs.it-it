@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IEnumDebugExtendedPropertyInfo | Documenti Microsoft
+title: Interfaccia IEnumDebugExtendedPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728171"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346033"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>Interfaccia IEnumDebugExtendedPropertyInfo
 Enumera `ExtendedDebugPropertyInfo` strutture.  
@@ -33,8 +33,8 @@ Enumera `ExtendedDebugPropertyInfo` strutture.
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione come enumerazione corrente.|  
-|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Ottiene il numero di `ExtendedDebugPropertyInfo` strutture in un enumeratore.|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
+|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Ottiene il numero di `ExtendedDebugPropertyInfo` strutture nell'enumeratore.|  
 |[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Recupera un numero specificato di `ExtendedDebugPropertyInfo` strutture in una sequenza di enumerazione.|  
 |[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Ignora un numero specificato di `ExtendedDebugPropertyInfo` strutture in una sequenza di enumerazione.|  
 |[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|Riporta all'inizio la sequenza di enumerazione.|  

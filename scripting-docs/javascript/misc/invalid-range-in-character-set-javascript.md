@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903634"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346085"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervallo non valido nel set di caratteri (JavaScript)
 Si è provato a creare un'espressione regolare con un intervallo di set di caratteri non validi. Set di caratteri deve essere compresa tra singoli caratteri, ad esempio a-z o 0-9; è possibile includere le classi di caratteri, ad esempio \w in un set di caratteri. Il primo carattere dell'intervallo di inoltre deve precedere il secondo carattere compreso nell'intervallo. Ad esempio:  

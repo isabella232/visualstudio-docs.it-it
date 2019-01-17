@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825504"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348698"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Alla lunghezza della matrice deve essere assegnato un numero positivo finito
 Quando si impostano i **lunghezza** proprietà di un oggetto esistente **matrice** oggetto, è specificata una lunghezza della matrice non è un numero positivo o zero. Questo errore si verifica quando si assegna un valore per il **lunghezza** proprietà di un `Array` oggetto che è negativo o non è un numero (`NaN`). Si noti che [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] converte automaticamente i numeri frazionari in interi.  

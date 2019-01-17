@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError | Documenti Microsoft
+title: IActiveScriptError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a403bf412a0c93a5c435e1a3184202ed68d406ea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 540a4a338ae8ebfcacae66b1890075c20bdee086
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645781"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347099"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Oggetto che implementa questa interfaccia viene passato per il [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) metodo ogni volta che il motore di script rileva un errore non gestito. L'host chiama quindi i metodi su questo oggetto per ottenere informazioni sull'errore che si è verificato.  
+Oggetto che implementa questa interfaccia viene passato per il [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) metodo ogni volta che il motore di scripting rileva un errore non gestito. L'host chiama metodi su questo oggetto per ottenere informazioni sull'errore che si è verificato.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

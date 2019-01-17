@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IMachineDebugManagerCookie | Documenti Microsoft
+title: Interfaccia IMachineDebugManagerCookie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,30 +14,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a03b959a7eb09f3b85530bbba07d1d2dc7f8948a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d315f4ff99d8de6d4e29a40f3d5e134d1274062
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729621"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347086"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>Interfaccia IMachineDebugManagerCookie
 Simile al `IMachineDebugManager` interfaccia, il `IMachineDebugManagerCookie` interfaccia supporta i cookie di debug.  
   
- Questa interfaccia (insieme al `IDebugCookie` interface) consentono di eseguire script in un processo del debugger di script senza richiedere che il debugger di tenere traccia di tali script.  
+ Questa interfaccia (insieme al `IDebugCookie` interface) consentire gli script da eseguire in un processo del debugger dello script senza richiedere che il debugger tenere traccia di tali script.  
   
- Un debugger di script chiama il `IDebugCookie::SetDebugCookie` metodo nel processo di Debug Manager (PDM). Quindi, PDM invia questo cookie insieme a qualsiasi richiesta per aggiungere o rimuovere un'applicazione di script a o dal Machine Debug Manager (MDM), utilizzando i metodi del `IMachineDebugManagerCookie` interfaccia. La gestione dei dispositivi mobili notifica quindi ogni debugger della modifica, ad eccezione di quello con tale cookie.  
+ Un debugger di script chiama il `IDebugCookie::SetDebugCookie` metodo nel processo di Debug Manager (PDM). PDM invia quindi questo cookie insieme a qualsiasi richiesta per aggiungere o rimuovere un'applicazione di script a o dal computer eseguire il Debug Manager (MDM), usando i metodi del `IMachineDebugManagerCookie` interfaccia. MDM quindi comunica a ogni debugger della modifica, eccetto quello che ha tale cookie.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IMachineDebugManagerCookie` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IMachineDebugManagerCookie` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Aggiunge un'applicazione per l'esecuzione elenco di applicazioni.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Aggiunge un'applicazione in esecuzione l'elenco delle applicazioni.|  
 |[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Restituisce un enumeratore dell'elenco corrente delle applicazioni in esecuzione.|  
 |[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Rimuove l'esecuzione di un'applicazione elenco di applicazioni.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [IMachineDebugManager Interface](../../winscript/reference/imachinedebugmanager-interface.md)   
  [Interfaccia IDebugCookie](../../winscript/reference/idebugcookie-interface.md)

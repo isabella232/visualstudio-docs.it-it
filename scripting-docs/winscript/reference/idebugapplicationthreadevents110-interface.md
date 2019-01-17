@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugApplicationThreadEvents110 | Documenti Microsoft
+title: IDebugApplicationThreadEvents110 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aaf312b1730696b812172aeea175619e911d03a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: db20440d4dc797ce9a0f21c3ac0c6c89c5d4e036
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726271"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348243"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>Interfaccia IDebugApplicationThreadEvents110
-Aggiunge gli eventi di più thread. Questi eventi sono solo locali. Ovvero è possibile sottoscrivere li solo nel processo che viene eseguito il debug, usando il [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) di notifica e annullare gli avvisi per i metodi su oggetti di thread dell'applicazione PDM (oggetti che implementano [IDebugApplicationThread Interfaccia](../../winscript/reference/idebugapplicationthread-interface.md)). Si verificano nel thread di che provenienza.  
+Aggiunge più eventi di thread. Questi eventi sono solo locali. Vale a dire, è possibile sottoscrivere li solo nel processo che viene eseguito il debug, usando il [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) consigliarti e annullare i metodi su oggetti di thread dell'applicazione di PDM (oggetti che implementano [IDebugApplicationThread Interfaccia](../../winscript/reference/idebugapplicationthread-interface.md)). Si verificano nel thread da che provengano.  
   
 > [!IMPORTANT]
 >  Questa interfaccia è implementata da PDM v11.0 e versione successiva. Rilevata in activdbg100.h.  
@@ -32,7 +32,7 @@ Aggiunge gli eventi di più thread. Questi eventi sono solo locali. Ovvero è po
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Una chiamata nel thread tramite il thread del PDM cambio è iniziata.|  
-|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Il thread sta per essere ripresa da un punto di interruzione e sarà attivo ancora una volta.|  
-|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Il thread è la sospensione di un punto di interruzione e può gestire le chiamate che richiedono il thread completamente da sospendere.|  
-|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Una chiamata nel thread tramite il thread del PDM cambio è stata completata.|
+|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Una chiamata nel thread con thread di PDM ha iniziato il passaggio.|  
+|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Il thread si riattiva da un punto di interruzione e sarà attivo anche in questo caso.|  
+|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Il thread sta per sospendere per un punto di interruzione e può gestire le chiamate che richiedono il thread completamente da sospendere.|  
+|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Una chiamata nel thread thread di PDM tramite il passaggio è stata completata.|

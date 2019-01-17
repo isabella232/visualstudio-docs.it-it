@@ -1,5 +1,5 @@
 ---
-title: Array o arguments oggetto previsto | Documenti Microsoft
+title: Array o arguments oggetto previsto | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632741"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345357"
 ---
 # <a name="array-or-arguments-object-expected"></a>Previsto oggetto Array o Arguments
-Non è stata fornita una matrice come argomento. Questo errore si applica al **Function.prototype.apply** solo di metodo. Se specificato, il secondo argomento della funzione deve essere un `Array` oggetto o un **argomenti** oggetto.  
+Non è stato fornito una matrice come argomento. Questo errore si applica al **Function.prototype.apply** solo metodo. Se specificato, il secondo argomento della funzione deve essere un' `Array` oggetto o un **argomenti** oggetto.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Specificare un `Array` o **argomenti** oggetto come secondo argomento.  
+-   Specificare un `Array` o un' **argomenti** oggetto come secondo argomento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilizzo di matrici](../../javascript/advanced/using-arrays-javascript.md)   

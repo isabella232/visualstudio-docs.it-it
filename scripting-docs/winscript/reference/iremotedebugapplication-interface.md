@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IRemoteDebugApplication | Documenti Microsoft
+title: IRemoteDebugApplication Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,28 +14,28 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 02ddf409bf25cb86fc742cdc004e2f1b664d22e3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729601"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348763"
 ---
 # <a name="iremotedebugapplication-interface"></a>Interfaccia IRemoteDebugApplication
-Rappresenta un'applicazione in esecuzione. Se è necessario che corrispondono a un processo del sistema operativo. In genere, un debugger è destinato a un'applicazione per il debug. In genere, il gestore di eseguire il Debug di processi implementa l'oggetto applicazione.  
+Rappresenta un'applicazione in esecuzione. Non dovrà corrispondere a un processo del sistema operativo. In genere, un debugger è destinato a un'applicazione per il debug. Il gestore di eseguire il Debug di processi in genere implementa l'oggetto applicazione.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IRemoteDebugApplication` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IRemoteDebugApplication` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Continua un'applicazione che si trova in un punto di interruzione.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Fa sì che l'applicazione di interrompere il debugger al più presto.|  
-|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Si connette un debugger all'applicazione.|  
-|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Disconnette il debugger corrente dall'applicazione.|  
+|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Continua un'applicazione che è attualmente disponibile in un punto di interruzione.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Fa sì che l'applicazione accede al debugger il prima possibile.|  
+|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Connette un debugger all'applicazione.|  
+|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Consente di disconnettere il debugger corrente dall'applicazione.|  
 |[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Restituisce il debugger corrente è connesso all'applicazione.|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Fornisce un meccanismo per il debugger IDE, l'esecuzione out-of-process all'applicazione, per creare oggetti nel processo dell'applicazione.|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Fornisce un meccanismo per il debug dell'IDE, l'esecuzione out-of-process per l'applicazione, per creare oggetti nel processo dell'applicazione.|  
 |[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Indica se l'applicazione è reattiva.|  
 |[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Enumera tutti i thread noti da associare all'applicazione.|  
 |[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Restituisce il nome del nodo dell'applicazione.|  
