@@ -1,8 +1,6 @@
 ---
 title: Strumento di acquisizione da riga di comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775553"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960654"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica della grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.  
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- Il comando nell'esempio precedente consente di acquisire informazioni grafiche della versione desktop di Internet Explorer durante la visualizzazione della pagina Web disponibile all'indirizzo www.fishgl.com che usa l'API WebGL per il rendering del contenuto 3D.  
+ Il comando dell'esempio precedente acquisisce informazioni grafiche della versione desktop di Internet Explorer durante la visualizzazione della pagina Web all'indirizzo www.fishgl.com che usa l'API WebGL per il rendering del contenuto in 3D.  
   
 > [!NOTE]
->  Poiché gli argomenti della riga di comando che segue l'app vengono passati all'App, è necessario specificare gli argomenti per DXCap.exe prima di usare il `-c` opzione.  
+>  Poiché gli argomenti della riga di comando inseriti dopo l'app vengono passati all'app, è necessario specificare gli argomenti per DXCap.exe prima di usare l'opzione `-c`.  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Acquisire informazioni grafiche da un'app UWP.  
  È possibile acquisire informazioni grafiche da un'app UWP.  
@@ -162,16 +160,16 @@ DXCap.exe -e map
   
  Il comando precedente enumera le app UWP che corrispondono a "map"; di seguito è riportato l'output:  
   
- **Creare un pacchetto "Microsoft.BingMaps":**  
- **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe c:\Programmi\Microsoft**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Nome: Microsoft.BingMaps**  
- **Editore: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Versione: 2.1.2914.1734**  
- **Applicazioni offline:**  
- **ID: AppexMaps**  
- **File exe: C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Package "Microsoft.BingMaps":**  
+ **InstallDirectory: C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Name             : Microsoft.BingMaps**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          : 2.1.2914.1734**  
+ **Launchable Applications:**  
+ **Id: AppexMaps**  
+ **Exe C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: No**  
  **AppSpec (per avviare): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** l'ultima riga dell'output per ogni app enumerata Visualizza il comando è possibile usare per acquisire informazioni grafiche da quest'ultimo.  
   
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>Convalida di un file di log di grafica per un dispositivo WARP  
- In modalità di convalida, il file di log di grafica viene riprodotto sia su dispositivo hardware che WARP confrontando i relativi risultati. Ciò consente di identificare gli errori di rendering causati dal driver. Usare - v per convalidare il comportamento corretto dell'hardware grafico per la piattaforma WARP.  
+ In modalità di convalida, il file di log di grafica viene riprodotto sia su dispositivo hardware che WARP confrontando i relativi risultati. Ciò consente di identificare gli errori di rendering causati dal driver. Usare -v per convalidare il comportamento corretto dell'hardware grafico per un dispositivo WARP.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- Per ridurre la quantità di confronti, è possibile specificare un subset di comandi per la convalida da confrontare e gli altri comandi verranno ignorati. Utilizzare - examine per specificare i comandi di cui si desidera confrontare i risultati.  
+ Per ridurre la quantità di confronti, è possibile specificare un subset di comandi per la convalida da confrontare e gli altri comandi verranno ignorati. Usare -examine per specificare i comandi di cui confrontare i risultati.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  

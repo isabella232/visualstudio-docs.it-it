@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305663"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54269917"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 
@@ -80,7 +79,7 @@ Avviare questa procedura dettagliata creando un progetto per un servizio dati WC
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Creare un Entity Data Model per il servizio
 
-Per esporre i dati a un'applicazione usando un servizio dati WCF, è necessario definire un modello di dati per il servizio. WCF Data Services supporta due tipi di modelli di data: Entity Data Model e modelli di dati personalizzate che vengono definiti utilizzando oggetti common language runtime (CLR) che implementano il <xref:System.Linq.IQueryable%601> interfaccia. In questa procedura dettagliata, viene creato un modello Entity Data Model per il modello di dati.
+Per esporre i dati a un'applicazione usando un servizio dati WCF, è necessario definire un modello di dati per il servizio. WCF Data Services supporta due tipi di modelli di dati: Entity Data Model e modelli di dati personalizzate che vengono definiti utilizzando oggetti common language runtime (CLR) che implementano il <xref:System.Linq.IQueryable%601> interfaccia. In questa procedura dettagliata, viene creato un modello Entity Data Model per il modello di dati.
 
 1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
@@ -231,7 +230,7 @@ Creare controlli che visualizzano i record cliente trascinando il `SalesOrderHea
 
 Usare l'oggetto proxy del servizio per caricare i dati di vendita dal servizio. Assegnare quindi i dati restituiti per l'origine dati per il <xref:System.Windows.Data.CollectionViewSource> nella finestra WPF.
 
-1. Nella finestra di progettazione, per creare il `Window_Loaded` gestore dell'evento, fare doppio clic sul testo che legge: **MainWindow**.
+1. Nella finestra di progettazione, per creare il `Window_Loaded` gestore eventi, fare doppio clic sul collegamento: **MainWindow**
 
 2. Sostituire il gestore eventi con il codice seguente. Assicurarsi di sostituire l'indirizzo *localhost* in questo codice con l'indirizzo dell'host locale nel computer di sviluppo.
 
@@ -285,7 +284,7 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
 
 3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **AdventureWorksSalesEditor**.
 
-4. Scegliere **Debug** dal menu di scelta rapida, quindi **Avvia nuova istanza**.
+4. Nel menu di scelta rapida (menu di scelta rapida) sotto **Debug**, fare clic su **Avvia nuova istanza**.
 
      Verrà eseguita l'applicazione. Verificare quanto segue:
 
@@ -307,7 +306,7 @@ Dopo avere completato questa procedura dettagliata, è possibile eseguire le att
 
 - Imparare a usare la finestra **Origini dati** in Visual Studio per associare i controlli WPF ad altri tipi di origini dati. Per altre informazioni, vedere [WPF di associare controlli a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [Procedura dettagliata: Visualizzazione di dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Vedere anche
 
