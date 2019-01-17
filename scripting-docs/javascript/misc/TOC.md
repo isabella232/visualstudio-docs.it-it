@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ae9e416186764e447065061aad4d0449eefb7b1d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348958"
+---
 # [Previsto '{'](expected-left-curly-brace.md)
 # [Previsto identificatore, stringa o numero](expected-identifier-string-or-number.md)
 # [Prevista funzione](function-expected.md)
