@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51760712"
 ---
 # <a name="html-ui-responsiveness"></a>Velocità di risposta dell'interfaccia utente HTML
@@ -79,7 +79,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 6.  Per interrompere la profilatura dell'app e visualizzare i dati raccolti dal profiler, scegli **Arresta raccolta**.  
   
 ##  <a name="IsolateAnIssue"></a> Isolare un problema  
- Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni mediante un'app di esempio per la verifica delle prestazioni, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni usando un'app di test delle prestazioni di esempio, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Isolare un problema di risposta dell'interfaccia utente  
  Questi passaggi forniscono un flusso di lavoro consigliato che può aiutarti a usare il profiler della velocità di risposta dell'interfaccia utente in modo più efficace:  
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
 -   Un evento di navigazione, che si verifica quando passi a una pagina diversa. Una descrizione comando per l'evento mostra l'URL della pagina di destinazione.  
   
 ###  <a name="CPUUtilization"></a> Visualizzare l'utilizzo della CPU  
- Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering**e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#ProfilerEvents) più avanti in questo argomento.  
+ Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering** e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#ProfilerEvents) più avanti in questo argomento.  
   
  Il grafico dell'utilizzo della CPU mostra la quantità di tempo trascorso in tutti i thread dell'app, combinando i valori di utilizzo per una o più CPU in un singolo valore percentuale. Il valore di utilizzo della CPU può superare il 100% quando sono in uso più CPU.  
   
@@ -368,7 +368,7 @@ if (performance.mark && performance.measure) {
 -   Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Analizzare le prestazioni delle app](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analizzare le prestazioni delle applicazioni](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
 
 
 

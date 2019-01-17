@@ -9,21 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966456"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228045"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: Eseguire il debug su un cluster a prestazioni elevate
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: Eseguire il debug in un Cluster ad alte prestazioni (C#, Visual Basic, C++)
+
 Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per requisiti generali di installazione remota, vedere [debug remoto](../debugger/remote-debugging.md).  
   
  Quando si esegue il debug in un cluster ad alte prestazioni, è possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibili per il debug remoto. Poiché, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non è disponibile.  
@@ -34,7 +35,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
   
  Quando si esegue il debug di un'applicazione parallela, è possibile impostare un punto di interruzione in un thread, in un processo o in un computer specifico. A tale scopo, è possibile creare un punto di interruzione normale e quindi aggiungere un apposito filtro.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Per aprire la finestra di dialogo Filtro punto di interruzione  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Per aprire la finestra di dialogo Filtro punto di interruzione
   
 1.  Fare clic con il pulsante destro del mouse su un glifo del punto di interruzione in una finestra di origine, nella finestra **Disassembly**, nella finestra **Stack di chiamate** o nella finestra **Punti di interruzione**.  
   

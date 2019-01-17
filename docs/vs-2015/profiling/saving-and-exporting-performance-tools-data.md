@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768498"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Salvataggio ed esportazione dei dati degli strumenti per le prestazioni
@@ -28,7 +28,7 @@ ms.locfileid: "51768498"
 
 Questo argomento descrive come salvare ed esportare i file di dati delle prestazioni.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Procedura: salvare i file di dati delle prestazioni come file di report analizzato  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Procedura: Salvare i file di dati sulle prestazioni come file di report analizzati  
  È possibile salvare le visualizzazioni filtrate o non filtrate dei file di dati di profilatura (estensione vsp) come file di report analizzato (estensione vsps). Un file di report analizzato può essere visualizzato nella finestra di visualizzazione report ed è notevolmente più piccolo del file con estensione vsp originale. Non è possibile tuttavia applicare un filtro ai dati di un file con estensione vsps. È possibile creare un file di report analizzato da Esplora prestazioni senza aprire il file nell'ambiente di sviluppo integrato (IDE) oppure è possibile aprire e filtrare il file con estensione vsp e quindi salvare i risultati.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Per salvare un report di prestazioni analizzato da Esplora prestazioni  
@@ -51,7 +51,7 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
   
 5.  Fare clic su **Salva**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Procedura: esportare i report degli strumenti per la profilatura in un file con estensione Xml o Csv  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Procedura: Esportare i report degli strumenti di profilatura in un file con estensione xml o csv  
  È possibile esportare una o più visualizzazioni di report da un file di dati di profilatura con estensione vsp o vsps come file delimitato da virgole o file XML. Filtrare i dati nella finestra di visualizzazione report prima dell'esportazione o esportare le visualizzazioni di report dell'intero file di dati dalla finestra **Esplora prestazioni** .  
   
 > [!NOTE]
@@ -69,7 +69,7 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
   
 4.  In **Percorso rapporto esportato**specificare la directory.  
   
-5.  Sotto **formato report esportato**, selezionare (delimitato da virgole) (*. csv) o dati XML (\*. XML).  
+5.  In **Formato del rapporto esportato**, selezionare (Delimitato da virgole) (*.csv) o Dati XML (\*.xml).  
   
 6.  Fare clic su **Esporta**.  
   
@@ -89,7 +89,7 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
   
 6.  In **Percorso rapporto esportato**specificare la directory.  
   
-7.  Sotto **formato report esportato**, selezionare (delimitato da virgole) (*. csv) o dati XML (\*. XML).  
+7.  In **Formato del rapporto esportato**, selezionare (Delimitato da virgole) (*.csv) o Dati XML (\*.xml).  
   
 8.  Fare clic su **Esporta**.  
   

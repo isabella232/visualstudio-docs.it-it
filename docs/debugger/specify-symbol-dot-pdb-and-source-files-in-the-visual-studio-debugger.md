@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892451"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
@@ -155,7 +155,7 @@ Nel **degli strumenti** > **opzioni** > **debug** > **simboli** pagina, è possi
   È possibile limitare i comandi che *SrcSrv* possono eseguire l'app *PDB* file eseguendo i comandi consentiti in un file denominato *SrcSrv*. Sul posto di *SrcSrv* file nella stessa cartella *SrcSrv* e *devenv.exe*.  
   
   >[!IMPORTANT]
-  >I comandi arbitrari possono essere incorporati in un'app *PDB* del file, assicurarsi di inserire solo i comandi da eseguire in un *SrcSrv* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >I comandi arbitrari possono essere incorporati in un'app *PDB* del file, assicurarsi di inserire solo i comandi da eseguire in un *SrcSrv* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Ad esempio, se è elencato *cmd.exe* nel *SrcSrv*, un utente malintenzionato potrebbe specificare parametri nel *cmd.exe* che potrebbe renderlo pericolosi.  
   
@@ -179,7 +179,7 @@ Quando si compila un progetto dall'IDE di Visual Studio con lo standard **Debug*
     
     Il *VC\<x > PDB* archivia tutte le informazioni di debug per i file oggetto singoli file e si trova nella stessa directory del progetto makefile. Ogni volta che viene creato un file oggetto, il compilatore C/C++ unisce le informazioni di debug in *VC\<x > PDB*. Pertanto, anche se ogni file di origine include file di intestazione comuni, ad esempio  *\<Windows. h >*, i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file oggetto. Queste includono informazioni sui tipi ma non sui simboli, ad esempio sulle definizioni delle funzioni.  
   
-  - *\<progetto > con estensione pdb* 
+  - *\<project>.pdb* 
     
     Il  *\<progetto > PDB* file vengono archiviate tutte le informazioni di debug per il progetto *.exe* file e si trova nel *\debug* sottodirectory. Il file *\<project>.pdb* contiene non solo le informazioni sui tipi disponibili nel file *VC\<x>.pdb*, ma tutte le informazioni di debug, inclusi i prototipi di funzione. 
   
