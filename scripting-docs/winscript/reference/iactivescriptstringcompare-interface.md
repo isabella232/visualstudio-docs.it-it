@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IActiveScriptStringCompare | Documenti Microsoft
+title: IActiveScriptStringCompare Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,21 +18,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9aed02fc797317d6231f2192841afd0ad7771ea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53d395ae2b7528e2e4983dc625ca98405d2b3bed
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724891"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344876"
 ---
 # <a name="iactivescriptstringcompare-interface"></a>Interfaccia IActiveScriptStringCompare
-Il `IActiveScriptCompare` interfaccia viene utilizzata per definire il metodo di confronto di stringhe per il motore di script.  
+Il `IActiveScriptCompare` interfaccia viene utilizzata per definire il metodo di confronto di stringhe per il motore di scripting.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|Definisce il metodo di confronto di stringhe per il motore di script.|  
+|[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|Definisce il metodo di confronto di stringhe per il motore di scripting.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce Script ActiveX](../../winscript/reference/active-script-interfaces.md)

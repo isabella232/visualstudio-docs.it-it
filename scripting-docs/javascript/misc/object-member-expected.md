@@ -1,5 +1,5 @@
 ---
-title: Previsto membro dell'oggetto | Documenti Microsoft
+title: Previsto membro dell'oggetto | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633231"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344161"
 ---
 # <a name="object-member-expected"></a>Previsto membro dell'oggetto
-Si è tentato di eseguire un'operazione sul membro dati di un oggetto, ma il membro non esiste.  
+Si è provato a eseguire un'operazione sul membro dati di un oggetto, ma il membro non esiste.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

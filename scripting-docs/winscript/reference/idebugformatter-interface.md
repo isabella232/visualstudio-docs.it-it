@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugFormatter | Documenti Microsoft
+title: Interfaccia IDebugFormatter | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 353a85ab51252c92086fa478d95b2e29ab3db62d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729171"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348035"
 ---
 # <a name="idebugformatter-interface"></a>Interfaccia IDebugFormatter
-Consente a un linguaggio o un IDE per personalizzare la conversione tra tipi VARTYPE e valori VARIANT o stringhe.  
+Consente a un linguaggio o un IDE di personalizzare la conversione tra valori VARIANT o tipi VARTYPE e stringhe.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugFormatter` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugFormatter` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Restituisce una stringa che rappresenta il valore di variante specificato.|  
-|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Restituisce una variabile VARIANT contenente la stringa specificata.|  
+|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Restituisce una variante che contiene la stringa specificata.|  
 |[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Restituisce una stringa che rappresenta il valore VARTYPE specificato.|

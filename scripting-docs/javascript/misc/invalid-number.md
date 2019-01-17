@@ -1,5 +1,5 @@
 ---
-title: Numero non valido | Documenti Microsoft
+title: Numero non valido | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632911"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346813"
 ---
 # <a name="invalid-number"></a>Numero non valido
 Numero non valido (ErrbadNumber 1013)  
   
- Si è tentato di utilizzare un numero che non è valido in JavaScript.  
+ Si è provato a usare un numero non valido in JavaScript.  
   
- Per informazioni sui numeri validi, vedere [numero oggetto](../../javascript/reference/number-object-javascript.md).
+ Per informazioni sui numeri validi, vedere [oggetto Number](../../javascript/reference/number-object-javascript.md).

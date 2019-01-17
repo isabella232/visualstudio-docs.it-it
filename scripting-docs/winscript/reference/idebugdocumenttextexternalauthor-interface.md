@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugDocumentTextExternalAuthor | Documenti Microsoft
+title: Interfaccia IDebugDocumentTextExternalAuthor | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f85ef798a6507c92130cbddae98de87a9924415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727031"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344214"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>Interfaccia IDebugDocumentTextExternalAuthor
-Consente di editor esterni modificare in modo sicuro i documenti basati su file debugger notificando il documento quando viene modificato il file di origine.  
+Consente gli editor esterni modificare in modo sicuro i documenti di debugger basate su file inviando una notifica del documento quando viene modificato il file di origine.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugDocumentTextExternalAuthor` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugDocumentTextExternalAuthor` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

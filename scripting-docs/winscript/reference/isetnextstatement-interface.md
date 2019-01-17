@@ -1,5 +1,5 @@
 ---
-title: Interfaccia ISetNextStatement | Documenti Microsoft
+title: Interfaccia ISetNextStatement | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdd71a427a8ef2c57684eef75a044d0cedf42415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac2d6dd0da14be5a624cff0b55985770b8d70fdf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733621"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344057"
 ---
 # <a name="isetnextstatement-interface"></a>Interfaccia ISetNextStatement
-Questa interfaccia è implementata da un interprete per consentire la gestione processo di Debug per aggiornare l'istruzione corrente. Viene implementato da un oggetto stack frame e PDM ottiene questa interfaccia tramite QueryInterface.  
+Questa interfaccia viene implementata da un interprete per consentire il gestore di eseguire il Debug di processi aggiornare l'istruzione corrente. Viene implementato da un oggetto stack frame e PDM ottiene questa interfaccia tramite QueryInterface.  
   
- interfaccia fornisce i metodi che consentono di impostare il punto di esecuzione, che determina l'istruzione successiva da eseguire.  
+ interfaccia fornisce metodi che sono utili per l'impostazione del punto di esecuzione, che determina l'istruzione successiva da eseguire.  
   
- Oltre ai metodi ereditati da `IUnknown`, `ISetNextStatement` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `ISetNextStatement` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

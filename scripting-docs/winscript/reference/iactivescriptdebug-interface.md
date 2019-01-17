@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942088"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344577"
 ---
 # <a name="iactivescriptdebug-interface"></a>Interfaccia IActiveScriptDebug
 Implementata dai motori di script che supportano il debug. In genere, un oggetto che implementa il `IActiveScriptDebug` implementa anche di interfaccia di `IActiveScript` interfaccia. In questo caso, chiama il `IActiveScript::QueryInterface` metodo per ottenere il `IActiveScriptDebug` interfaccia.  

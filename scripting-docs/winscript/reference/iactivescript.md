@@ -1,5 +1,5 @@
 ---
-title: IActiveScript | Documenti Microsoft
+title: IActiveScript | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,33 +14,33 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68d91a7ad91364d0c2133150d76cdb221929b16b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 340a76dbb6d81c78463fa644dafcbe8097508561
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645681"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346709"
 ---
 # <a name="iactivescript"></a>IActiveScript
-Fornisce i metodi necessari per inizializzare il motore di script. Il motore di script deve implementare il `IActiveScript` interfaccia.  
+Fornisce i metodi necessari per inizializzare il motore di scripting. Il motore di scripting deve implementare il `IActiveScript` interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Segnala al motore di scripting di [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) fornito dall'host al sito.|  
-|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Recupera l'oggetto sito associato con il motore di Script di Windows.|  
-|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Inserisce lo stato specificato il motore di script.|  
-|[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Recupera lo stato corrente del motore di scripting.|  
-|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Fa sì che il motore di script per l'abbandono di tutti gli script caricati, perdono il proprio stato e rilasciare qualsiasi puntatori a interfaccia che dispone di altri oggetti, quindi immettere uno stato chiuso.|  
-|[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Aggiunge il nome di un elemento di livello radice allo spazio dei nomi del motore di script.|  
-|[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Aggiunge una libreria dei tipi nello spazio dei nomi per lo script.|  
+|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Segnala al motore di scripting di [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sito fornito dall'host.|  
+|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Recupera l'oggetto sito associata al motore di Script di Windows.|  
+|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Inserisce il motore di scripting nello stato specificato.|  
+|[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Recupera lo stato corrente del motore di script.|  
+|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Fa sì che il motore di scripting abbandonare tutti gli script attualmente caricato, perdono il proprio stato e rilasciare eventuali puntatori a interfaccia che dispone ad altri oggetti, quindi immettere uno stato chiuso.|  
+|[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Aggiunge il nome di un elemento di livello principale a spazio dei nomi del motore di script.|  
+|[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Aggiunge una libreria dei tipi dello spazio dei nomi per lo script.|  
 |[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Recupera il `IDispatch` interfaccia per l'esecuzione dello script.|  
-|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Recupera un identificatore script-modulo di gestione-definito per il thread attualmente in esecuzione.|  
-|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Recupera un identificatore script-modulo di gestione-definito per il thread associato al thread Win32 Microsoft specificato.|  
-|[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Recupera lo stato corrente di un thread di script.|  
+|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Recupera un identificatore scripting-engine-definite per il thread attualmente in esecuzione.|  
+|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Recupera un identificatore scripting-engine-definite per il thread associato al thread Win32 Microsoft specificato.|  
+|[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Recupera lo stato corrente di un thread dello script.|  
 |[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Interrompe l'esecuzione di un thread in esecuzione di script.|  
-|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Clona il motore di script corrente (meno qualsiasi stato corrente dell'esecuzione), la restituzione di un motore di script caricato che non dispone di alcun sito nel thread corrente.|  
+|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Clona il motore di script corrente (meno qualsiasi stato corrente dell'esecuzione), restituendo un motore di script caricato che non dispone di alcun sito nel thread corrente.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

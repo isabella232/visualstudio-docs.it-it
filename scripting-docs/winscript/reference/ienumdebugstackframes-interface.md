@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IEnumDebugStackFrames | Documenti Microsoft
+title: Interfaccia IEnumDebugStackFrames | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0174839a25695e9594b4cbbf4db6a302f5a2446
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ad0910971e96a70d894fc0e0244e8799b6c525c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728341"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349738"
 ---
 # <a name="ienumdebugstackframes-interface"></a>Interfaccia IEnumDebugStackFrames
-Enumera gli stack frame corrispondente a un thread.  
+Enumera gli stack frame corrispondenti a un thread.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi ereditati da `IUnknown`, `IEnumDebugStackFrames` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IEnumDebugStackFrames` interfaccia espone i metodi seguenti.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Recupera un numero di segmenti nella sequenza di enumerazione specificato.|  
-|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Ignora un numero di segmenti in una sequenza di enumerazione specificato.|  
+|[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Recupera un determinato numero di segmenti nella sequenza di enumerazione.|  
+|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Ignora un determinato numero di segmenti in una sequenza di enumerazione.|  
 |[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
 |[IEnumDebugStackFrames::Clone](../../winscript/reference/ienumdebugstackframes-clone.md)|Crea un enumeratore che contiene lo stesso stato dell'enumeratore corrente.|

@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IRemoteDebugApplicationThreadEx | Documenti Microsoft
+title: IRemoteDebugApplicationThreadEx Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d9998a412aa3ecc9316a2595ac9daf707fd873
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 071a34b16ce9b3cbe7e73f44a01de889d113b7e4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728621"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344232"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>Interfaccia IRemoteDebugApplicationThreadEx
 Rappresenta un thread di esecuzione all'interno di una determinata applicazione.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IRemoteDebugApplicationThreadEx` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IRemoteDebugApplicationThreadEx` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

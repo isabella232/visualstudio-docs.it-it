@@ -1,5 +1,5 @@
 ---
-title: Impossibile trovare l'etichetta | Documenti Microsoft
+title: Impossibile trovare l'etichetta | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,23 +21,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633081"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346975"
 ---
 # <a name="label-not-found"></a>Impossibile trovare l'etichetta
-Si è fatto un riferimento a un'etichetta che non esiste. Etichette può essere utilizzato per contrassegnare blocchi di codice, ma all'interno di un ambito specificato, deve essere univoche.  
+Si è fatto un riferimento a un'etichetta che non esiste. Le etichette può essere usato per contrassegnare i blocchi di codice, ma in un ambito specificato, deve essere univoche.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
 -   Verificare che sia che digitato il nome dell'etichetta.  
   
--   Verificare che tutti i riferimenti alle etichette sono effettuate alle etichette che sono state definite nell'ambito corrente (che include le definizioni in avanti).  
+-   Verificare che tutti i riferimenti alle etichette vengono apportate alle etichette che sono state definite nell'ambito corrente (che include le definizioni di inoltrare).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Labeled (istruzione)](../../javascript/reference/labeled-statement-javascript.md)   
+ [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)   
  [Istruzione switch](../../javascript/reference/switch-statement-javascript.md)   
  [Istruzione break](../../javascript/reference/break-statement-javascript.md)   
  [Istruzione continue](../../javascript/reference/continue-statement-javascript.md)

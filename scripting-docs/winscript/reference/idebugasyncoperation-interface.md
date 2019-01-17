@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugAsyncOperation | Documenti Microsoft
+title: Interfaccia IDebugAsyncOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 157ed1248535855fcb53ca2eb6f49427fea94149
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726101"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349991"
 ---
 # <a name="idebugasyncoperation-interface"></a>Interfaccia IDebugAsyncOperation
-Implementa il gestore di eseguire il Debug di processi di `IDebugAsyncOperation` interfaccia. Un motore di linguaggio chiama il `IDebugApplication::CreateAsyncDebugOperation` per ottenere un riferimento a questa interfaccia. Il motore del linguaggio è possibile utilizzare il `IDebugAsyncOperation` interfaccia per fornire l'accesso asincrono a un'operazione sincrona di debug.  
+Implementa il gestore di eseguire il Debug di processi di `IDebugAsyncOperation` interfaccia. Un motore del linguaggio chiama il `IDebugApplication::CreateAsyncDebugOperation` metodo per ottenere un riferimento a questa interfaccia. Il motore di linguaggio può usare il `IDebugAsyncOperation` interfaccia per fornire l'accesso asincrono a un'operazione di debug sincrono.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugAsyncOperation` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugAsyncOperation` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Restituisce l'operazione sincrona debug associato all'oggetto.|  
+|[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Restituisce l'operazione di debug sincrono associato all'oggetto.|  
 |[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|Fa sì che l'operazione asincrona iniziare.|  
 |[IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)|Annulla un'operazione.|  
 |[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|Determina se l'operazione di debug è stata completata.|  
-|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Fornisce il valore restituito e il parametro dell'oggetto restituito dall'operazione di debug sincrono.|
+|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Fornisce il valore restituito e parametro dell'oggetto restituito dall'operazione di debug sincrono.|

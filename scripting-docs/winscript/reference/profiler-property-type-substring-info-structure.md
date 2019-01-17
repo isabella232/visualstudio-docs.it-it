@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 5f873cdf2ebd394e48c1513135f1acdcd700c283
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089973"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345643"
 ---
 # <a name="profilerpropertytypesubstringinfo-structure"></a>Struttura PROFILER_PROPERTY_TYPE_SUBSTRING_INFO
 Rappresenta le informazioni sul tipo di sottostringa usata nella relazione. Usato nel [struttura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  

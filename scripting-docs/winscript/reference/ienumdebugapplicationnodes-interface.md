@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IEnumDebugApplicationNodes | Documenti Microsoft
+title: Interfaccia IEnumDebugApplicationNodes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf9c4fe6a8d789b1988a9a47b17adcba64b28827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e14b5567d96bccd0badb95f75558e0af329a62a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727651"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344218"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>Interfaccia IEnumDebugApplicationNodes
-Enumera i nodi figlio di un nodo associata a un'applicazione.  
+Enumera i nodi figlio di un nodo associato a un'applicazione.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IEnumDebugApplicationNodes` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IEnumDebugApplicationNodes` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|Recupera un numero di segmenti in una sequenza di enumerazione specificato.|  
-|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Ignora un numero di segmenti in una sequenza di enumerazione specificato.|  
+|[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|Recupera un determinato numero di segmenti in una sequenza di enumerazione.|  
+|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Ignora un determinato numero di segmenti in una sequenza di enumerazione.|  
 |[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
 |[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|Crea un enumeratore che contiene lo stesso stato dell'enumeratore corrente.|

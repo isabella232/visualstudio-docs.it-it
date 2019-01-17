@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugDocumentInfo | Documenti Microsoft
+title: Interfaccia IDebugDocumentInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726381"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349335"
 ---
 # <a name="idebugdocumentinfo-interface"></a>Interfaccia IDebugDocumentInfo
-Fornisce informazioni su un documento, che possono o non può essere creato.  
+Specifica informazioni su un documento del quale è stata creata o meno un'istanza.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugDocumentInfo` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugDocumentInfo` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

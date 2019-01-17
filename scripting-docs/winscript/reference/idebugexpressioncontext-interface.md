@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugExpressionContext | Documenti Microsoft
+title: Interfaccia IDebugExpressionContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,21 +18,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c55a2f270e4c82c578450092e5066b19fe9e606
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 12b997d5edab866f77dcb71f4d5ea0273786c577
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726531"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345981"
 ---
 # <a name="idebugexpressioncontext-interface"></a>Interfaccia IDebugExpressionContext
-Rappresenta un contesto in cui è possano valutare le espressioni. L'oggetto stack frame implementa questa interfaccia.  
+Rappresenta un contesto in cui le espressioni possono essere valutate. L'oggetto stack frame implementa questa interfaccia.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugExpressionContext` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugExpressionContext` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)|Crea un'espressione di debug per il testo specificato.|  
-|[IDebugExpressionContext::GetLanguageInfo](../../winscript/reference/idebugexpressioncontext-getlanguageinfo.md)|Restituisce un nome e GUID per la lingua a cui appartiene questo contesto.|
+|[IDebugExpressionContext::GetLanguageInfo](../../winscript/reference/idebugexpressioncontext-getlanguageinfo.md)|Restituisce un nome e GUID per la lingua che possiede questo contesto.|

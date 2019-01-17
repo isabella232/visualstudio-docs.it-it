@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IActiveScriptProfilerControl2 | Documenti Microsoft
+title: Interfaccia IActiveScriptProfilerControl2 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bc0dfa31b37a6bf99427c8eddfe2bd038da9b9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9dad5d4a90eecdc6c93d86df9f9b18273bc471a4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724751"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349764"
 ---
 # <a name="iactivescriptprofilercontrol2-interface"></a>Interfaccia IActiveScriptProfilerControl2
-Fornisce metodi che aggiungono la possibilità di avviare o interrompere la profilatura quando uno script è in esecuzione.  
+Fornisce metodi che aggiungono la possibilità di avviare o arrestare la profilatura quando si esegue uno script.  
   
 ## <a name="methods"></a>Metodi  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Notifica al profiler che è stata avviata l'analisi su tutti i motori di script applicabili. In questo modo è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia la profilatura.|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Notifica al profiler che si desidera interrompere la profilatura in tutti i motori di script applicabili. In questo modo è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si arresta la profilatura.|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Notifica al profiler che è stata avviata la profilatura su tutti i motori di scripting applicabili. In questo modo è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia la profilatura.|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Notifica al profiler che si desidera interrompere la profilatura su tutti i motori di scripting applicabili. In questo modo è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si arresta la profilatura.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   

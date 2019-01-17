@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IPerPropertyBrowsing2 1 | Documenti Microsoft
+title: IPerPropertyBrowsing2 Interface 1 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728391"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344031"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>Interfaccia IPerPropertyBrowsing2 1
-Accede alle informazioni nelle pagine delle proprietà offerto da un oggetto.  
+Gli accessi le informazioni nelle pagine delle proprietà offerte da un oggetto.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
@@ -34,8 +34,8 @@ Accede alle informazioni nelle pagine delle proprietà offerto da un oggetto.
 |------------|-----------------|  
 |`GetDisplayString`|Restituisce una stringa di testo che descrive la proprietà specificata.|  
 |`MapPropertyToPage`|Restituisce il CLSID della pagina delle proprietà che consente la modifica della proprietà specificata.|  
-|`GetPredefinedStrings`|Restituisce una matrice di stringhe conteggiata (`LPOLESTR` puntatori) Elenca le descrizioni dei valori consentiti in grado di accettare la proprietà specificata.|  
-|`SetPredefinedValue`|Imposta il valore della proprietà sul valore predefinito identificato dal token`dwCookie.`|  
+|`GetPredefinedStrings`|Restituisce una matrice calcolata di stringhe (`LPOLESTR` puntatori) Elenca le descrizioni dei valori consentiti che può accettare la proprietà specificata.|  
+|`SetPredefinedValue`|Imposta il valore della proprietà con il valore predefinito identificato dal token `dwCookie.`|  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: dbgprop.h

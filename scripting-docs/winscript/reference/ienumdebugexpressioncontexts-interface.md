@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IEnumDebugExpressionContexts | Documenti Microsoft
+title: Interfaccia IEnumDebugExpressionContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728361"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347593"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>Interfaccia IEnumDebugExpressionContexts
-Enumera una raccolta di `IDebugExpressionContexts` oggetti.  
+Enumera una raccolta di oggetti `IDebugExpressionContexts`.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IEnumDebugExpressionContexts` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IEnumDebugExpressionContexts` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Recupera un numero di segmenti nella sequenza di enumerazione specificato.|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Ignora un numero di segmenti in una sequenza di enumerazione specificato.|  
+|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Recupera un determinato numero di segmenti nella sequenza di enumerazione.|  
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Ignora un determinato numero di segmenti in una sequenza di enumerazione.|  
 |[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
 |[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Crea un enumeratore che contiene lo stesso stato dell'enumeratore corrente.|

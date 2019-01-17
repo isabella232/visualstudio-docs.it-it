@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094120"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347671"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Enumerazione SCRIPTTHREADSTATE
 Specifica lo stato di un thread in un motore di scripting. Questa enumerazione viene utilizzata per la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) (metodo).  

@@ -1,5 +1,5 @@
 ---
-title: Previsto oggetto JavaScript | Documenti Microsoft
+title: Previsto oggetto JavaScript | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 28514e4f1691364f68c2f60f3cab3bb0c18b1d12
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633041"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348009"
 ---
 # <a name="javascript-object-expected"></a>Previsto oggetto JavaScript
-Si è tentato di passare un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto da una funzione predefinita che prevede un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto. Varie funzioni predefinite richiedono gli oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (in contrapposizione a oggetti definiti dall'host o un componente esterno come un controllo).  
+Si è provato a passare un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto da una funzione predefinita che prevede un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto. Funzioni predefinite diverse richiedono gli oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (anziché gli oggetti definiti dall'host o un componente esterno come un controllo).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare che l'oggetto passato come parametro è di tipo corretto.  
+-   Verificare che l'oggetto a cui che si sta passando come parametro è di tipo corretto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetti e matrici](../../javascript/objects-and-arrays-javascript.md)   

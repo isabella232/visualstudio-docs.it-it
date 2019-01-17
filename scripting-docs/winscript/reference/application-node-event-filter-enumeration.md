@@ -1,5 +1,5 @@
 ---
-title: Enumerazione APPLICATION_NODE_EVENT_FILTER | Documenti Microsoft
+title: Enumerazione APPLICATION_NODE_EVENT_FILTER | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0446265d40fb6277fd155f3ed5822c506ae30bc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641121"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344551"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>Enumerazione APPLICATION_NODE_EVENT_FILTER
-Specifica i tipi di nodi da escludere quando si filtrano i documenti di codice. Utilizzato [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) e [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+Specifica i tipi di nodi da escludere quando si filtrano i documenti di codice. Usato nel [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) e [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Queste costanti vengono implementate da PDM v di 10.0 e versione successiva. Rilevata in activdbg100.h.  
+>  Queste costanti sono implementate da PDM v 10.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,11 +35,11 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 ## <a name="members"></a>Membri  
   
-|Membro|Valore|Descrizione|  
+|Member|Value|Descrizione|  
 |------------|-----------|-----------------|  
-|FILTER_EXCLUDE_NOTHING|0x00000000|Tutti gli eventi di trasmissione.|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Escludere nodi codice anonimo. Questi nodi vengono utilizzati dal runtime di JScript per `new Function([args,] <code>)'`.|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Escludere i nodi di valutazione di codice. Questi nodi vengono utilizzati dal runtime di JScript per il supporto della valutazione.|  
+|FILTER_EXCLUDE_NOTHING|0x00000000|Inviare tutti gli eventi.|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Escludere nodi codice anonimo. Questi nodi vengono usati dal runtime di JScript per `new Function([args,] <code>)'`.|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Escludere nodi codice eval. Questi nodi vengono usati dal runtime di JScript per il supporto valutazione.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

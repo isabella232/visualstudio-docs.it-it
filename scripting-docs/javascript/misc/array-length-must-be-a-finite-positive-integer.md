@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c6589bd2e9bb4acbec5f169087a49e64417dfae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882561"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348594"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>La lunghezza della matrice deve essere pari a un valore integer positivo finito
 Si chiama il **matrice** costruttore con un argomento che non è un numero intero (numeri interi sono costituite da zero e il set di numeri interi positivi).  

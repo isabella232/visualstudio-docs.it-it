@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IProcessDebugManager | Documenti Microsoft
+title: Interfaccia IProcessDebugManager | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26c97fda6fc8657164e22d51eb041017a6239d98
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5feb67b1a616eeaa855b27cb12ea9b3146545ebd
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729221"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345123"
 ---
 # <a name="iprocessdebugmanager-interface"></a>Interfaccia IProcessDebugManager
-Interfaccia principale per la gestione di debug del processo. Questa interfaccia può creare, aggiungere o rimuovere un'applicazione virtuale da un processo. È possibile enumerare gli stack frame e thread dell'applicazione.  
+Interfaccia principale con la gestione del debug dei processi. Questa interfaccia può creare, aggiungere o rimuovere un'applicazione virtuale da un processo. È possibile enumerare gli stack frame e thread dell'applicazione.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IProcessDebugManager` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IProcessDebugManager` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
@@ -32,6 +32,6 @@ Interfaccia principale per la gestione di debug del processo. Questa interfaccia
 |------------|-----------------|  
 |[IProcessDebugManager::CreateApplication](../../winscript/reference/iprocessdebugmanager-createapplication.md)|Crea un nuovo oggetto di applicazione di debug per questa applicazione.|  
 |[IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)|Restituisce un oggetto di applicazione predefinito per il processo corrente.|  
-|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Aggiunge un'applicazione all'elenco del gestore di machine debug delle applicazioni in esecuzione.|  
+|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Aggiunge un'applicazione elenco di gestione debug del computer delle applicazioni in esecuzione.|  
 |[IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)|Rimuove l'esecuzione di un'applicazione elenco di applicazioni.|  
-|[IProcessDebugManager::CreateDebugDocumentHelper](../../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)|Crea un nuovo helper di documento di debug per questa applicazione.|
+|[IProcessDebugManager::CreateDebugDocumentHelper](../../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)|Crea un nuovo helper di documenti di debug per questa applicazione.|

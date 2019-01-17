@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugDocumentTextAuthor | Documenti Microsoft
+title: Interfaccia IDebugDocumentTextAuthor | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726551"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344070"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>Interfaccia IDebugDocumentTextAuthor
-Fornito da documenti di testo che supportano la modifica.  
+Fornito da documenti di testo che supporto la modifica.  
   
- Oltre ai metodi ereditati da `IDebugDocumentText`, `IDebugDocumentTextAuthor` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IDebugDocumentText`, il `IDebugDocumentTextAuthor` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Inserisce il nuovo testo del documento.|  
+|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Inserisce il nuovo testo nel documento.|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Rimuove il testo dal documento.|  
 |[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Sostituisce il testo nel documento.|

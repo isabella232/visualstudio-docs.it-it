@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088569"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344824"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>Struttura PROFILER_HEAP_OBJECT_SCOPE_LIST
 Questa struttura è associata solo gli oggetti funzione. L'elenco di ambito rappresenta la chiusura per la funzione come un elenco di ambiti in cui ogni ambito è un oggetto heap con un elenco di proprietà associata che rappresenta le variabili in ogni ambito specifico. In alcuni casi, i nomi degli oggetti nell'ambito potrebbe non essere disponibile e solo il relativo indice nell'elenco di proprietà è disponibile.  

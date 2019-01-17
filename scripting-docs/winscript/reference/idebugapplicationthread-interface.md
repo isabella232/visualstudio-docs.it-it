@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugApplicationThread | Documenti Microsoft
+title: IDebugApplicationThread Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e731ba866504c9a3c3c9ad081a90a12b161355d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725951"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347788"
 ---
 # <a name="idebugapplicationthread-interface"></a>Interfaccia IDebugApplicationThread
-Consente di motori di linguaggio e host per fornire la sincronizzazione dei thread e per mantenere informazioni sullo stato di debug specifico del thread. Questa interfaccia estende il `IRemoteDebugApplicationThread` interfaccia per fornire l'accesso non remoti per il thread.  
+Consente di motori di linguaggio e gli host per fornire la sincronizzazione dei thread e per mantenere le informazioni sullo stato di debug specifico del thread. Questa interfaccia estende il `IRemoteDebugApplicationThread` interfaccia per fornire l'accesso non remoti per il thread.  
   
- Oltre ai metodi ereditati da `IRemoteDebugApplicationThread`, `IDebugApplicationThread` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IRemoteDebugApplicationThread`, il `IDebugApplicationThread` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

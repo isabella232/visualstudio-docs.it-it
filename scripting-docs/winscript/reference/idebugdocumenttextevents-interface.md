@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugDocumentTextEvents | Documenti Microsoft
+title: Interfaccia IDebugDocumentTextEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 078cd468b64d30c20f48a3392aa4509ed054fc3d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bec89ae81d79fb7b0d822cafe2bf44f0ecd8ad81
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728001"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345659"
 ---
 # <a name="idebugdocumenttextevents-interface"></a>Interfaccia IDebugDocumentTextEvents
-Fornisce gli eventi che indicano le modifiche apportate al documento di testo associata.  
+Specifica eventi che indicano le modifiche per il documento di testo associato.  
   
 > [!NOTE]
->  Il testo del documento viene modificato quando gli eventi su questa interfaccia vengono attivati. I gestori di eventi possono recuperare il testo utilizzando il `IDebugDocumentText` interfaccia.  
+>  Il testo del documento cambia quando gli eventi in questa interfaccia incendi. Gestori di eventi possono recuperare il nuovo testo usando il `IDebugDocumentText` interfaccia.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IDebugDocumentTextEvents` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IDebugDocumentTextEvents` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugDocumentTextEvents::onDestroy](../../winscript/reference/idebugdocumenttextevents-ondestroy.md)|Indica che il documento sottostante è stata distrutta e non è più valido|  
-|[IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)|Indica che è stato aggiunto il nuovo testo al documento|  
+|[IDebugDocumentTextEvents::onDestroy](../../winscript/reference/idebugdocumenttextevents-ondestroy.md)|Indica che il documento sottostante è stata eliminata definitivamente e non è più valido|  
+|[IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)|Indica che il nuovo testo è stato aggiunto al documento|  
 |[IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)|Indica che il testo è stato rimosso dal documento.|  
-|[IDebugDocumentTextEvents::onReplaceText](../../winscript/reference/idebugdocumenttextevents-onreplacetext.md)|Indica che è stato sostituito il testo.|  
+|[IDebugDocumentTextEvents::onReplaceText](../../winscript/reference/idebugdocumenttextevents-onreplacetext.md)|Indica che il testo è stato sostituito.|  
 |[IDebugDocumentTextEvents::onUpdateTextAttributes](../../winscript/reference/idebugdocumenttextevents-onupdatetextattributes.md)|Indica che gli attributi di testo associati all'intervallo di posizione di carattere sottostante sono stati modificati.|  
-|[IDebugDocumentTextEvents::onUpdateDocumentAttributes](../../winscript/reference/idebugdocumenttextevents-onupdatedocumentattributes.md)|Indica che gli attributi del documento modificata.|
+|[IDebugDocumentTextEvents::onUpdateDocumentAttributes](../../winscript/reference/idebugdocumenttextevents-onupdatedocumentattributes.md)|Indica che gli attributi del documento modificato.|

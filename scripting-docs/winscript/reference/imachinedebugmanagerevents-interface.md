@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IMachineDebugManagerEvents | Documenti Microsoft
+title: Interfaccia IMachineDebugManagerEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727631"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344030"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Interfaccia IMachineDebugManagerEvents
-Segnala le modifiche nell'esecuzione elenco applicazione gestito dal gestore di debug macchina. Questa interfaccia può essere utilizzata dal debugger IDE per visualizzare un elenco dinamico di applicazioni.  
+Segnala le modifiche all'elenco di applicazioni in esecuzione gestite dalla gestione del debug del computer. Questa interfaccia è utilizzabile per l'IDE di debug per visualizzare un elenco dinamico delle applicazioni.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IMachineDebugManagerEvents` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, il `IMachineDebugManagerEvents` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Gestisce l'evento quando un'applicazione viene aggiunto all'esecuzione elenco di applicazioni.|  
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Gestisce l'evento quando un'applicazione viene aggiunto all'esecuzione elenco delle applicazioni.|  
 |[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Gestisce l'evento quando un'applicazione viene rimossa l'esecuzione di elenco di applicazioni.|

@@ -1,5 +1,5 @@
 ---
-title: False (Windows Script Technologies) | Documenti Microsoft
+title: False (Windows Script Technologies) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ddf7ae6d3328f00ea3d143251f7fa44e364560a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632851"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344499"
 ---
 # <a name="false-windows-script-technologies"></a>False (Windows Script Technologies)
 Il **False** parola chiave ha un valore uguale a 0.  

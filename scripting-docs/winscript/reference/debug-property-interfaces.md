@@ -1,5 +1,5 @@
 ---
-title: Interfacce della proprietà di debug | Documenti Microsoft
+title: Interfacce della proprietà di debug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,17 +15,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45800a1c8fa570299dc8950b3e8979fe949faaf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641181"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344603"
 ---
 # <a name="debug-property-interfaces"></a>Interfacce della proprietà di debug
 Il file di intestazione DbgProp.h fornisce le interfacce elencate in questa sezione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  Le interfacce, strutture ed enumerazioni seguenti descrivono le proprietà gerarchiche dell'applicazione in fase di debug:  
   
 -   [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  

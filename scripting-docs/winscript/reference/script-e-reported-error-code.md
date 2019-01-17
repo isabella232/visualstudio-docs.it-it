@@ -1,5 +1,5 @@
 ---
-title: Codice di errore SCRIPT_E_REPORTED | Documenti Microsoft
+title: Errore Script_e_reported | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734051"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349205"
 ---
 # <a name="scriptereported-error-code"></a>Codice di errore SCRIPT_E_REPORTED
-Il motore di script ha rilevato un'eccezione non gestita all'host tramite [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). L'host è possibile ignorare questo errore.  
+Il motore di script ha rilevato un'eccezione non gestita nell'host tramite [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). L'host è possibile ignorare questo errore.  
   
 ## <a name="syntax"></a>Sintassi  
   
