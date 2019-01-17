@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 57a149e1584b666d2fadbb522220ea512898bd39
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54316089"
+---
 # [Visual Studio per Mac](/visualstudio/mac/)
 # [Panoramica sull'IDE](ide-tour.md)
 
