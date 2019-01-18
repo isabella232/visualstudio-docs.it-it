@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880410"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270021"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 
@@ -162,7 +162,7 @@ La finestra Struttura documento nella finestra di progettazione XAML permette di
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
-- Usare il menu contestuale per gli elementi selezionati. Lo stesso menu è disponibile anche per gli elementi selezionati nella tavola da disegno.
+- Usare il menu di scelta rapida per gli elementi selezionati. Lo stesso menu è disponibile anche per gli elementi selezionati nella tavola da disegno.
 
 Per visualizzare la finestra **Struttura documento**, scegliere **Visualizza** > **Altre finestre** > **Struttura documento** sulla barra dei menu.
 

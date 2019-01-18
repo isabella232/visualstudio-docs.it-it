@@ -12,10 +12,10 @@ manager: douge
 ms.workload:
 - aspnet
 ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53829196"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
@@ -48,7 +48,7 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creazione di ASP.NET 4.5.2 dell'applicazione nel computer di Visual Studio
   
-1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare <strong>Visual C# > Web > applicazione Web ASP.NET. Nella sezione modelli ASP.NET 4.5.2 selezionare MVC</strong>. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
+1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare <strong>Visual C# > Web > applicazione Web ASP.NET. In **ASP.NET 4.5.2</strong> sezione di modelli, selezionare **MVC**. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
 
 2. Aprire il file HomeController.cs e impostare un punto di interruzione nel metodo `About()` .
 
@@ -80,7 +80,7 @@ Se si desiderano informazioni più dettagliate per installare ASP.NET in IIS, ve
     > [!NOTE]
     > Se si usa Windows Server 2008 R2, installare ASP.NET 4 invece con il seguente comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - runtime di integrazione**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Riavviare il sistema o eseguire **net stop was /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema.
 
