@@ -2,7 +2,7 @@
 title: 'Esercitazione: Introduzione alle app console C#'
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562217"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204431"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Esercitazione: introduzione a un'app console C# in Visual Studio
 
@@ -135,9 +135,11 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 
 È necessario correggere il codice in modo che gestisca i numeri decimali.
 
+1. Premere **CTRL** + **F** per aprire il controllo **Trova e sostituisci**.
+
 1. Sostituire ogni istanza della variabile `int` con `float`.
 
-   Per facilitare l'attività è possibile usare il comando [Trova e sostituisci](../../ide/finding-and-replacing-text.md#find-and-replace-control). Per accedere al comando di ricerca all'interno dell'editor del codice, premere **CRTL**+**F**. Quindi, scegliere il pulsante **Trova successivo** o il pulsante **Trova precedente** nel comando di ricerca. Per accedere alle opzioni di sostituzione, scegliere il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto**.
+    ![Animazione del controllo Trova e sostituisci che illustra come modificare la variabile di tipo int in float](./media/find-replace-control-animation.gif)
 
 1. Eseguire nuovamente l'app Calculator e dividere il numero **42** per il numero **119**.
 
@@ -147,9 +149,7 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 
 Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice, è possibile fare in modo che l'app esegua anche calcoli con numeri decimali.
 
-1. Sostituire ogni istanza della variabile `float` con `double`.
-
-1. Sostituire ogni istanza del metodo `Convert.ToInt32` con `Convert.ToDouble`.
+1. Usare il controllo **Trova e sostituisci** (**CTRL** + **F**) per sostituire ogni istanza della variabile `float` con `double` e quindi sostituire ogni istanza del metodo `Convert.ToInt32` con `Convert.ToDouble`.
 
 1. Eseguire nuovamente l'app Calculator e dividere il numero **42,5** per il numero **119,75**.
 

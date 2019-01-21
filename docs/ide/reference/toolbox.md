@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918612"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269995"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
@@ -40,7 +40,7 @@ La versione di.NET Framework di destinazione del progetto influisce sul set di c
 
 Per impostazione predefinita, la **casella degli strumenti** viene compressa lungo la parte sinistra dell'IDE di Visual Studio e viene visualizzata quando il cursore viene spostato su di essa. È possibile bloccare la **casella degli strumenti**, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della **casella degli strumenti** e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la **casella degli strumenti** facendo clic con il pulsante destro del mouse sulla relativa barra degli strumenti e scegliendo una delle opzioni.
 
-È possibile riordinare gli elementi di una scheda della **casella degli strumenti** o aggiungere schede ed elementi personalizzati usando i comandi seguenti del menu di scelta rapida:
+È possibile riordinare gli elementi di una scheda della **casella degli strumenti** o aggiungere schede ed elementi personalizzati usando i comandi seguenti nel menu di scelta rapida:
 
 - **Rinomina elemento**: rinomina l'elemento selezionato.
 

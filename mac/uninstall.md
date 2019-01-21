@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295670"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204333"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Disinstallazione di Visual Studio per Mac
 
@@ -34,10 +34,11 @@ Le sezioni seguenti offrono informazioni sul download e sull'uso degli script.
 
 È possibile disinstallare contemporaneamente i componenti di Visual Studio e Xamarin usando lo [script di disinstallazione](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
-Questo script di disinstallazione contiene la maggior parte dei comandi che si trovano nell'articolo. Due elementi principali sono stati omessi dallo script, a causa di possibili dipendenze esterne:
+Questo script di disinstallazione contiene la maggior parte dei comandi che si trovano nell'articolo. Tre elementi principali sono stati omessi dallo script, a causa di possibili dipendenze esterne. Per rimuoverli, passare alla sezione pertinente di sotto e procedere manualmente:
 
-- **Disinstallazione di Mono**
-- **Disinstallazione di Android AVD**
+- **[Disinstallazione di Mono](#uninstall-mono-sdk-mdk)**
+- **[Disinstallazione di Android AVD](#uninstall-android-avd)**
+- **[Disinstallazione di Android SDK e Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 Per eseguire lo script, seguire questa procedura:
 
@@ -45,13 +46,13 @@ Per eseguire lo script, seguire questa procedura:
 2. Aprire Terminal e modificare la directory di lavoro in cui lo script è stato scaricato:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Rendere eseguibile lo script ed eseguirlo con **sudo**:
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. Infine, eliminare lo script di disinstallazione.
 
@@ -65,13 +66,13 @@ Per eseguire lo script, seguire questa procedura:
 2. Aprire Terminal e modificare la directory di lavoro in cui lo script è stato scaricato:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Rendere eseguibile lo script ed eseguirlo con **sudo**:
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. Eliminare infine lo script di disinstallazione di .NET Core.
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+Può anche essere necessario rimuovere la directory seguente che contiene diversi file e cartelle di Xamarin. Tuttavia, prima di procedere è necessario tenere presente che questa directory contiene le chiavi di firma di Android. Per altre informazioni, vedere la sezione **[Disinstallazione di Android SDK e Java SDK](#uninstall-android-sdk-and-java-sdk)**:
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Disinstallare Mono SDK (MDK)
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Disinstallare Android SDK e Java SDK
 
 Android SDK è richiesto per lo sviluppo di applicazioni Android. Per rimuovere completamente tutte le parti di Android SDK, individuare il file in **~/Library/Developer/Xamarin/** e spostarlo nel **Cestino**.
+
+> [!WARNING]
+> È necessario tenere presente che le chiavi di firma Android generate da Visual Studio per Mac si trovano in `~/Library/Developer/Xamarin/Keystore`. Assicurarsi di eseguirne il backup in modo appropriato oppure evitare di rimuovere la directory se si vuole mantenere l'archivio chiavi.
 
 Non è necessario disinstallare Java SDK (JDK) poiché è già inserito nel pacchetto come parte di Mac OS X / macOS.
 
