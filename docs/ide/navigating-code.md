@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877432"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269943"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -67,7 +67,7 @@ Trova tutti i riferimenti all'elemento selezionato nella soluzione. Con questa o
 Input | Funzione
 ------------ | ---
 **Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **MAIUSC**+**F12**
-**Mouse** | Selezionare **Trova tutti i riferimenti** dal menu di scelta rapida
+**Mouse** | Scegliere **Trova tutti i riferimenti** dal menu di scelta rapida
 
 ## <a name="reference-highlighting"></a>Evidenziazione dei riferimenti
 

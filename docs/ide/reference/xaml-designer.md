@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964299"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315540"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
 
@@ -57,15 +57,15 @@ Usare questa impostazione per determinare il funzionamento dello zoom quando si 
 |||
 |-|-|
 |**Rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML usando lo scorrimento della rotellina del mouse.|
-|**CTRL + rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML premendo il tasto CTRL mentre si fa scorrere la rotellina del mouse.|
-|**ALT + rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML premendo il tasto ALT mentre si fa scorrere la rotellina del mouse.|
+|**CTRL + rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML premendo il tasto **CTRL** mentre si fa scorrere la rotellina del mouse.|
+|**ALT + rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML premendo il tasto **ALT** mentre si fa scorrere la rotellina del mouse.|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 
 |||
 |-|-|
 |**Assegna automaticamente un nome agli elementi interattivi durante la creazione**|Specifica se viene indicato un nome predefinito per un nuovo elemento interattivo quando se ne aggiunge uno alla finestra di progettazione.|
-|**Inserisci automaticamente le proprietà del layout durante la creazione degli elementi**|Specifica se vengono indicate le proprietà del layout per un nuovo elemento quando se ne aggiunge uno alla finestra di progettazione.|
+|**Inserisci automaticamente le proprietà del layout durante la creazione degli elementi**|Specifica se vengono indicate le proprietà del layout per un nuovo elemento quando se ne aggiunge uno alla finestra di progettazione. Le proprietà di layout sono quelle che influenzano il layout di un controllo, ad esempio, Margin e VerticalAlignment. L'esempio XAML seguente mostra come viene creato un controllo Button, con e senza questa opzione selezionata:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Usa layout basato su quadranti**|Specifica se il controllo attualmente selezionato deve essere allineato ai bordi più vicini del contenitore padre. Se questa casella di controllo è deselezionata, gli allineamenti dei controlli non cambiano durante un'operazione di spostamento o creazione.|
 |**Inserisci automaticamente elementi della casella degli strumenti**|Specifica se i controlli utente e i controlli personalizzati della soluzione corrente vengono visualizzati automaticamente nella casella degli strumenti.|
 
@@ -75,7 +75,7 @@ Usare queste opzioni per determinare le impostazioni quando si modificano i file
 
 |||
 |-|-|
-|**Zoom mediante**|Fare zoom avanti nella finestra di progettazione XAML scorrendo la rotellina del mouse o premendo il tasto CTRL o ALT mentre si fa scorrere la rotellina del mouse.|
+|**Zoom mediante**|Fare zoom avanti nella finestra di progettazione XAML scorrendo la rotellina del mouse o premendo il tasto **CTRL** o **ALT** mentre si fa scorrere la rotellina del mouse.|
 |**Digitare unità**|Specifica se le misurazioni nella finestra di progettazione sono basate su punti o pixel. Poiché le app di Windows universale non supportano i punti, le unità vengono automaticamente convertite in pixel se **Punti** è selezionata.|
 
 ## <a name="artboard-blend-only"></a>Tavola da disegno (solo Blend)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890709"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269800"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È anche possibile aggiungere al codice riferimenti e parametri sostitutivi. È possibile aggiungere il frammento all'installazione di Visual Studio usando il pulsante **Importa** in **Gestione frammenti di codice** (**Strumenti** > **Gestione frammenti di codice**).
@@ -79,7 +79,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
 
      *%USERPROFILE%\Documenti\Visual Studio 2017\Frammenti di codice\Visual Basic\Frammenti di codice*
 
-6.  Testare il frammento aprendo un progetto di Visual Basic e un file di codice. Nel file scegliere **Frammenti** > **Inserisci frammento** dal menu di scelta rapida e selezionare **Frammenti di codice**. Verrà visualizzato un frammento denominato **My Visual Basic Code Snippet** (Frammento di codice Visual Basic). Fare doppio clic.
+6.  Testare il frammento aprendo un progetto di Visual Basic e un file di codice. Nel file scegliere **Frammenti** > **Inserisci frammento** dal menu di scelta rapida e quindi **Frammenti di codice**. Verrà visualizzato un frammento denominato **My Visual Basic Code Snippet** (Frammento di codice Visual Basic). Fare doppio clic.
 
     `Console.WriteLine("Hello, World!")` viene inserito nel file di codice.
 

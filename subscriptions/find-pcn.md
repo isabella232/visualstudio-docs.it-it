@@ -9,12 +9,12 @@ description: Informazioni su come individuare il numero di cliente pubblico (PCN
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637019"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269211"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Come individuare il numero di cliente pubblico (PCN) o il numero di autorizzazione
 
@@ -22,18 +22,13 @@ Per completare il processo di onboarding della propria organizzazione nel portal
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>Per individuare il PCN o il numero di autorizzazione
 
-1.  Accedere a Volume Licensing Service Center (VLSC) in [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
-
-2. Nella scheda Sottoscrizioni selezionare **Sottoscrizioni di Visual Studio**.
+Volume License Service Center non consente più l'accesso al PCN.  Per ottenerlo, contattare il supporto per le sottoscrizioni di Visual Studio.
+1. Visitare https://visualstudio.microsoft.com/subscriptions/support/#talktous
+2. Toccare il pulsante **Account, Subscription and Billing Support** (Supporto per account, sottoscrizione e fatturazione).
     > [!div class="mx-imgBorder"]
-    > ![Scegliere le sottoscrizioni in VLSC](_img/vlsc/vlsc-subscriptions.png)
-
-3. Il PCN o numero di cliente pubblico si trova a metà della pagina.
-    > [!div class="mx-imgBorder"]
-    > ![Individuare il PCN in VLSC](_img/vlsc/vlsc-pcn.png)
-
-    
-Se non viene visualizzata la pagina precedente e si viene reindirizzati alla pagina di accesso di Visual Studio, copiare e incollare il collegamento seguente nel browser: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+    > ![Scegliere il supporto per la sottoscrizione](_img/vlsc/vlsc-pcn.png)
+3. Scegliere il paese nell'elenco a discesa.
+4. Scegliere nell'elenco di opzioni di supporto disponibili nel paese per contattare un agente di supporto che possa eseguire la ricerca del PCN.  
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Se si hanno più PCN, quale usare?
 

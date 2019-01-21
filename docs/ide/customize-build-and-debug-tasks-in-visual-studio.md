@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836333"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270125"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -32,8 +32,8 @@ Personalizzare la codebase senza progetto con i seguenti file *json*:
 
 |Nome file|Scopo|
 |-|-|
-|*tasks.vs.json*|Specificare i comandi di compilazione e le opzioni del compilatore personalizzati, nonché le attività arbitrarie (non correlate alla compilazione).<br>Accessibile tramite il comando **Configura attività** nel menu di scelta rapida **Esplora soluzioni**.|
-|*launch.vs.json*|Specificare gli argomenti della riga di comando per il debug.<br>Accessibile tramite il comando **Impostazioni per debug e avvio** nel menu di scelta rapida **Esplora soluzioni**.|
+|*tasks.vs.json*|Specificare i comandi di compilazione e le opzioni del compilatore personalizzati, nonché le attività arbitrarie (non correlate alla compilazione).<br>Accessibile tramite il comando **Configura attività** nel menu di scelta rapida di **Esplora soluzioni**.|
+|*launch.vs.json*|Specificare gli argomenti della riga di comando per il debug.<br>Accessibile tramite il comando **Impostazioni per debug e avvio** nel menu di scelta rapida di **Esplora soluzioni**.|
 |*VSWorkspaceSettings.json*|Impostazioni generiche che possono influire sulle attività e l'avvio. Ad esempio, con la definizione di `envVars` in *VSWorkspaceSettings.json* vengono aggiunte le variabili di ambiente specificate per i comandi eseguiti esternamente.<br>Questo file viene creato manualmente.|
 
 Questi file *json* si trovano in una cartella nascosta denominata *.vs* nella cartella radice della codebase. I file *tasks.vs.json* e *launch.vs.json* vengono creati da Visual Studio all'occorrenza, quando di sceglie il comando **Configura attività** o **Impostazioni per debug e avvio** per un file o una cartella in **Esplora soluzioni**. Questi file *json* sono nascosti in quanto la maggior parte degli utenti preferisce in genere non archiviarli nel controllo del codice sorgente. Tuttavia, se si vuole avere la possibilità di archiviarli nel controllo del codice sorgente, trascinare i file nella radice della codebase, dove sono visibili.
@@ -47,7 +47,7 @@ Questi file *json* si trovano in una cartella nascosta denominata *.vs* nella ca
 
 ![Menu Configura attività](../ide/media/customize-configure-tasks-menu.png)
 
-Viene così creato (o aperto) il file *tasks.vs.json* nella cartella *.vs*. È possibile definire un'attività di compilazione o un'attività arbitraria in questo file, quindi richiamarla usando il nome specificato dal menu di scelta rapida **Esplora soluzioni**.
+Viene così creato (o aperto) il file *tasks.vs.json* nella cartella *.vs*. È possibile definire un'attività di compilazione o un'attività arbitraria in questo file, quindi richiamarla usando il nome specificato dal menu di scelta rapida di **Esplora soluzioni**.
 
 Le attività personalizzate possono essere aggiunte a singoli file o a tutti i file di un tipo specifico. Ad esempio, i file di pacchetti NuGet possono essere configurati con un'attività "Ripristino pacchetti" oppure si possono configurare tutti i file di origine con un'attività di analisi statica, ad esempio un linter per tutti i file con estensione *js*.
 

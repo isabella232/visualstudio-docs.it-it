@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868904"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269839"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -41,7 +41,7 @@ In Visual Studio 2017 versione 15.4, per gli utenti che preferiscono il mouse è
 
 ## <a name="peek-definition"></a>Visualizza definizione
 
-La funzionalità **Visualizza definizione** consente di visualizzare in anteprima la definizione di un tipo senza abbandonare la posizione corrente nell'editor. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo o del membro e premere **Alt+F12**. Se si preferisce usare il mouse, è possibile selezionare **Visualizza definizione** dal menu di scelta rapida. In Visual Studio 2017 15.4 e versioni successive è disponibile un nuovo modo per visualizzare in anteprima una definizione tramite il mouse. Per prima cosa, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**. Selezionare l'opzione **Apri definizione in visualizzazione rapida** e fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
+La funzionalità **Visualizza definizione** consente di visualizzare in anteprima la definizione di un tipo senza abbandonare la posizione corrente nell'editor. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo o del membro e premere **Alt+F12**. Se si preferisce usare il mouse, è possibile scegliere **Visualizza definizione** dal menu di scelta rapida. In Visual Studio 2017 15.4 e versioni successive è disponibile un nuovo modo per visualizzare in anteprima una definizione tramite il mouse. Per prima cosa, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**. Selezionare l'opzione **Apri definizione in visualizzazione rapida** e fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
 
 ![Impostazione dell'opzione Visualizza definizione con clic del mouse](../ide/media/editor_options_peek_view.png)
 

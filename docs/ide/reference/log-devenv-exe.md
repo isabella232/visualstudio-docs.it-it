@@ -1,6 +1,6 @@
 ---
 title: -Log (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/12/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,30 +13,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d2e6af25b4e0acc4aad88c33861e9d22a775b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6573bb8bb6118a38266c0b76ef435c59e6ccecb
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846126"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227239"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-Registra tutte le attività nel file di log per la risoluzione dei problemi. Il file verrà visualizzato dopo aver chiamato `devenv /log` almeno una volta. Per impostazione predefinita, il file di log è:
 
- *%APPDATA%* \Microsoft\VisualStudio\\*Versione*\ActivityLog.xml
+Registra tutte le attività nel file di log per la risoluzione dei problemi. Il file verrà visualizzato dopo aver chiamato `devenv /log` almeno una volta. Per impostazione predefinita, il file di log è disponibile qui:
 
- dove *Versione* indica la versione di Visual Studio. È tuttavia possibile specificare un percorso e un nome di file diversi.
+**%APPDATA%\\Microsoft\\VisualStudio\\**\<versione\>**\\ActivityLog.xml**
+
+dove \<Versione\> indica la versione di Visual Studio. È tuttavia possibile specificare un percorso e un nome di file diversi.
 
 ## <a name="syntax"></a>Sintassi
 
-```cmd
-Devenv /log Path\NameOfLogFile
+```shell
+devenv /Log NameOfLogFile
 ```
 
-## <a name="remarks"></a>Note
- Questa opzione deve apparire alla fine della riga di comando, dopo tutte le altre opzioni.
+## <a name="arguments"></a>Argomenti
 
- Il log viene scritto per tutte le istanze di Visual Studio richiamate con l'opzione /log. Non vengono registrate le istanze di Visual Studio richiamate senza l'opzione /log.
+- *NameOfLogFile*
+
+  Obbligatorio. Percorso completo e nome del file di log in cui salvare le attività.
+
+## <a name="remarks"></a>Note
+
+Questa opzione deve apparire alla fine della riga di comando, dopo tutte le altre opzioni.
+
+Il log viene scritto solo per tutte le istanze di Visual Studio aperte con l'opzione `/Log`.
+
+## <a name="example"></a>Esempio
+
+Questo esempio indirizza la registrazione al file `MyVSLog.xml` nella home directory dell'utente.
+
+```shell
+devenv /log "%USERPROFILE%\MyVSLog.xml"
+```
 
 ## <a name="see-also"></a>Vedere anche
 

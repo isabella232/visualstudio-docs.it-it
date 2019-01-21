@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947842"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315631"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
 
@@ -121,13 +121,13 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici den
 
 1. Impostare le proprietà specifiche, come descritto nella tabella seguente e quindi selezionare **OK**.
 
-    | Scheda | Proprietà | Valore |
+    | Scheda | Proprietà | Value |
     | --- | --- | --- |
     | **Generale** | **Generale** > **Nome di destinazione** | Specificare il nome del modulo quando si vuole fare riferimento a esso da Python in istruzioni `from...import`. Questo stesso nome viene usato in C++ quando si definisce il modulo per Python. Se si vuole usare il nome del progetto come nome del modulo, lasciare il valore predefinito di **$(ProjectName)**. |
     | | **Generale** > **Estensione di destinazione** | **.pyd** |
     | | **Impostazioni predefinite progetto** > **Tipo di configurazione** | **Libreria dinamica (.dll)** |
     | **C/C++** > **Generale** | **Directory di inclusione aggiuntive** | Aggiungere la cartella *include* di Python nella maniera più appropriata per l'installazione, ad esempio `c:\Python36\include`.  |
-    | **C/C++** > **Preprocessore** | **Definizioni del preprocessore** | Aggiungere `Py_LIMITED_API;` all'inizio della stringa (incluso il punto e virgola). Questa definizione limita alcune delle funzioni che è possibile chiamare da Python e rende il codice più portatile tra versioni diverse di Python. |
+    | **C/C++** > **Preprocessore** | **Definizioni del preprocessore** | **Solo CPython**: aggiungere `Py_LIMITED_API;` all'inizio della stringa (incluso il punto e virgola). Questa definizione limita alcune delle funzioni che è possibile chiamare da Python e rende il codice più portatile tra versioni diverse di Python. Se si lavora con PyBind11, non aggiungere questa definizione. In caso contrario, verranno generati errori di compilazione. |
     | **C/C++** > **Generazione codice** | **Libreria di runtime** | **DLL multithread (/MD)** (vedere l'avviso più avanti) |
     | **Linker** > **Generale** | **Directory librerie aggiuntive** | Aggiungere la cartella *libs* di Python che include i file con estensione *lib* nella maniera più appropriata per l'installazione, ad esempio `c:\Python36\libs`. Assicurarsi di indicare la cartella *libs* che contiene i file con estensione *lib* e *non* la cartella *Lib* che contiene i file con estensione *py*. |
 
@@ -135,7 +135,7 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici den
     > Se la scheda C/C++ non è visualizzata nelle proprietà del progetto, il progetto non include alcun file identificato come file di origine C/C++. Questa condizione può verificarsi se si crea un file di origine senza un'estensione *c* o *cpp*. Ad esempio, se viene digitato per errore `module.coo` invece di `module.cpp` nella precedente finestra di dialogo del nuovo elemento, Visual Studio crea il file ma non imposta il tipo di file su "Codice C/C+," che attiva la scheda delle proprietà C/C++. Tale errore di identificazione permane anche se si rinomina il file con l'estensione `.cpp`. Per impostare correttamente il tipo di file, fare clic con il pulsante destro del mouse sul file in **Esplora soluzioni**, scegliere **Proprietà** e quindi impostare **Tipo di file** su **Codice C/C++**.
 
     > [!Warning]
-    > Impostare sempre l'opzione **C/C++** > **Generazione codice** > **Libreria di runtime** su **DLL multithread (/MD)**, anche per una configurazione di debug, poiché questa è l'impostazione usata per compilare i file binari Python non di debug. Se si imposta l'opzione **DLL di debug multithread (/MDd)**, la creazione di una configurazione **Debug** genera l'errore **C1189: Py_LIMITED_API non è compatibile con Py_DEBUG, Py_TRACE_REFS, e Py_REF_DEBUG**. In aggiunta, se si rimuove `Py_LIMITED_API` per evitare l'errore di compilazione, l'esecuzione di Python si arresta in modo anomalo quando prova a importare il modulo. L'arresto anomalo del sistema si verifica all'interno della chiamata della DLL a `PyModule_Create`, come descritto più avanti, con il messaggio di output **Fatal Python error: PyThreadState_Get: no current thread** (Errore irreversibile di Python: PyThreadState_Get: nessun thread corrente).
+    > Impostare sempre l'opzione **C/C++** > **Generazione codice** > **Libreria di runtime** su **DLL multithread (/MD)**, anche per una configurazione di debug, poiché questa è l'impostazione usata per compilare i file binari Python non di debug. Con CPython, se si imposta l'opzione **DLL di debug multithread (/MDd)**, la creazione di una configurazione **Debug** genera l'errore **C1189: Py_LIMITED_API non è compatibile con Py_DEBUG, Py_TRACE_REFS, e Py_REF_DEBUG**. Inoltre, se si rimuove `Py_LIMITED_API` (obbligatorio con CPython, ma non con PyBind11) per evitare l'errore di compilazione, l'esecuzione di Python si arresta in modo anomalo durante il tentativo di importare il modulo. L'arresto anomalo del sistema si verifica all'interno della chiamata della DLL a `PyModule_Create`, come descritto più avanti, con il messaggio di output **Fatal Python error: PyThreadState_Get: no current thread** (Errore irreversibile di Python: PyThreadState_Get: nessun thread corrente).
     >
     > L'opzione /MDd viene usata per compilare file binari di debug di Python (ad esempio *python_d.exe*), ma la selezione di questa opzione per una DLL di estensione causa sempre un errore di compilazione con `Py_LIMITED_API`.
 

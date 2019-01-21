@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908892"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269826"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -129,7 +129,7 @@ Per creare un progetto temporaneo, in primo luogo scegliere **Strumenti** > **Op
 
 ### <a name="to-permanently-delete-a-solution"></a>Per eliminare in modo permanente una soluzione
 
-1. In **Esplora soluzioni** scegliere **Apri cartella in Esplora file** nel menu di scelta rapida della soluzione da eliminare.
+1. In **Esplora soluzioni** scegliere **Apri cartella in Esplora file** dal menu di scelta rapida della soluzione da eliminare.
 
 1. In Esplora file spostarsi in alto di un livello.
 

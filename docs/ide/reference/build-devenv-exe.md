@@ -1,6 +1,6 @@
 ---
-title: Opzione Build (DevEnv)
-ms.date: 11/04/2016
+title: -Build (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -15,50 +15,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9caddb066d02366cac7ee9e34f2d55c726a69896
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30637a797d8c0845bae9548bb6a48e877d44727b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824444"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269475"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
-Consente di compilare una soluzione con un file di configurazione della soluzione specificato.
+Consente di compilare una soluzione o un progetto con un file di configurazione della soluzione specificato.
 
 ## <a name="syntax"></a>Sintassi
 
-```cmd
-Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
+```shell
+devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argomenti
 
-|||
-|-|-|
-|*SolutionName*|Obbligatorio. Il percorso completo e il nome del file della soluzione.|
-|*SolnConfigName*|Obbligatorio. Nome della configurazione della soluzione da usare per compilare la soluzione indicata in *SolutionName*. Se per la soluzione sono disponibili più piattaforme, è necessario specificare anche la piattaforma, ad esempio **"Debug\|Win32"**.|
-|/project *ProjName*|Facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere nel file di progetto il percorso relativo dalla cartella *SolutionName*, il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.|
-|/projectconfig *ProjConfigName*|Facoltativo. Nome della configurazione di compilazione del progetto da usare per la compilazione del progetto denominato. Se per il progetto sono disponibili più piattaforme, è necessario specificare anche la piattaforma, ad esempio **"Debug\|Win32"**.|
+- *SolutionName*
+
+  Obbligatorio. Il percorso completo e il nome del file della soluzione.
+
+- *SolnConfigName*
+
+  Facoltativo. Nome della configurazione di soluzione (ad esempio `Debug` o `Release`) da usare per compilare la soluzione indicata in *SolutionName*. Se per la soluzione sono disponibili più piattaforme, è necessario specificare anche la piattaforma, ad esempio `Debug|Win32`. Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
+
+- `/Project` *ProjName*
+
+  Facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere nel file di progetto il percorso relativo dalla cartella *SolutionName*, il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la compilazione del progetto denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *SolnConfigName*.
+
+- `/Out` *OutputFilename*
+
+  Facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
 ## <a name="remarks"></a>Note
 
-- L'opzione **/build** esegue la stessa funzione del comando di menu **Compila soluzione** nell'ambiente di sviluppo integrato (IDE).
+- L'opzione `/Build` esegue la stessa funzione del comando di menu **Compila soluzione** nell'ambiente di sviluppo integrato (IDE).
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 
-- Le informazioni di riepilogo sulle compilazioni, inclusi gli errori, possono essere visualizzate nella finestra di comando o in qualsiasi file di log specificato con l'opzione **/out**.
+- Le informazioni di riepilogo sulle compilazioni, compresi gli errori, possono essere visualizzate nella finestra di comando o in qualsiasi file di log specificato con l'opzione `/Out`.
 
-- L'opzione **/build** esegue la compilazione dei soli progetti modificati dopo l'ultima compilazione. Per compilare tutti i progetti in una soluzione, usare [/rebuild](../../ide/reference/rebuild-devenv-exe.md).
+- L'opzione `/Build` esegue la compilazione dei soli progetti modificati dopo l'ultima compilazione. Per compilare tutti i progetti in una soluzione, usare [/rebuild](../../ide/reference/rebuild-devenv-exe.md).
 
-- Se viene visualizzato il messaggio di errore **Configurazione progetto non valida**, assicurarsi di aver specificato la piattaforma di una soluzione o di un progetto, ad esempio **"Debug\|Win32"**.
+- Se viene visualizzato il messaggio di errore **Configurazione progetto non valida**, assicurarsi di aver specificato la piattaforma di una soluzione o di un progetto, ad esempio `Debug|Win32`.
 
 ## <a name="example"></a>Esempio
 
-Il comando seguente compila il progetto "CSharpConsoleApp" usando la configurazione di compilazione "Debug" all'interno della configurazione di soluzione "Debug" di "MySolution".
+Il comando seguente compila il progetto `CSharpWinApp` usando la configurazione della build del progetto `Debug` all'interno di `MySolution`.
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Vedere anche

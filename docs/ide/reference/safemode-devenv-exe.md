@@ -1,6 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,32 +13,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed14c3ec0da75df37c5a006f4e25240ac6630d20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 092cc1fc3267113e862646b7572e9091b8f6ddef
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227200"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Avvia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in modalità sicura caricando soltanto l'ambiente e i servizi predefiniti.
+
+Avvia Visual Studio in modalità sicura caricando soltanto l'ambiente e i servizi predefiniti.
 
 ## <a name="syntax"></a>Sintassi
 
-```cmd
+```shell
 devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Note
- Questa opzione impedisce il caricamento di tutti i pacchetti VSPackage di terze parti all'avvio di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] assicurando un'esecuzione stabile.
 
-## <a name="description"></a>Description
- Nell'esempio seguente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene avviato in modalità sicura.
+Questa opzione impedisce il caricamento di tutti i pacchetti VSPackage di terze parti all'avvio di Visual Studio assicurando un'esecuzione stabile.
 
-## <a name="code"></a>Codice
+## <a name="example"></a>Esempio
 
-```cmd
-Devenv.exe /SafeMode
+L'esempio seguente avvia Visual Studio in modalità sicura.
+
+```shell
+devenv /safemode
 ```
 
 ## <a name="see-also"></a>Vedere anche
