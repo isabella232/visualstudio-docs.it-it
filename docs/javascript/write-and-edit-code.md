@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967427"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398286"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -26,9 +26,6 @@ In questa breve introduzione all'editor di codice di Visual Studio viene illustr
 > Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
 
 Questo articolo presuppone una certa familiarità con lo sviluppo di JavaScript. Se non è questo il caso, è consigliabile vedere prima l'esercitazione [Creare un progetto Node.js e un'app Express in Visual Studio](../javascript/tutorial-nodejs.md).
-
-> [!TIP]
-> Per poter seguire questo articolo, assicurarsi che le impostazioni di JavaScript siano selezionate per Visual Studio. Per informazioni sulla selezione delle impostazioni per l'ambiente di sviluppo integrato (IDE), vedere [Impostazioni dell'ambiente per Visual Studio](../ide/environment-settings.md). Quando si importano le impostazioni, importare quelle per **JavaScript**.
 
 ## <a name="add-a-new-project-file"></a>Aggiungere un nuovo file di progetto
 
@@ -96,7 +93,7 @@ Fare clic con il pulsante destro del mouse su `render` e scegliere **Visualizza 
 
    ![Finestra Visualizza definizione](../javascript/media/write-code-peek-definition.png)
 
-1. Chiudere la finestra di visualizzazione della definizione scegliendo la piccola casella contenente una "x" nell'angolo in alto a destra della finestra popup.
+Chiudere la finestra di visualizzazione della definizione scegliendo la piccola casella contenente una "x" nell'angolo in alto a destra della finestra popup.
 
 ## <a name="use-code-snippets"></a>Usare frammenti di codice
 
