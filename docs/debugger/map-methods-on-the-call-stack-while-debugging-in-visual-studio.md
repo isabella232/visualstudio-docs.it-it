@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960839"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417928"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Creare una mappa visiva dello stack di chiamate durante il debug 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Creare una mappa visiva dello stack di chiamate durante il debug (C#, Visual Basic, C++, JavaScript)
 
 Creare una mappa del codice per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia del codice e concentrarsi sull'individuazione dei bug.
 
@@ -53,7 +53,7 @@ Ecco un rapido controllo di una mappa del codice:
 
 ##  <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
 
-1. In Visual Studio Enterprise C#, Visual Basic, C++, JavaScript o X + + del progetto, avviare il debug, selezionando **eseguire il Debug** > **Avvia debug** oppure premendo **F5**.
+1. In Visual Studio Enterprise C#, Visual Basic, C++ o JavaScript del progetto, avviare il debug, selezionando **eseguire il Debug** > **Avvia debug** oppure premendo **F5**.
    
 1. Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, selezionare **Debug** > **Mappa codici**, oppure premere **Ctrl**+**MAIUSC** +**`**.
 
