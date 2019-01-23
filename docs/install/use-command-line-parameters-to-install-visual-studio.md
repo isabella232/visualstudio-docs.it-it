@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869661"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403967"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
 
@@ -77,7 +77,8 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--help, --?, -h, -?` | Visualizza una versione offline di questa pagina. |
 | `--config <path>` | **Facoltativa** e **novità della versione 15.9**: durante un'operazione di installazione o modifica, determina i carichi di lavoro e i componenti da aggiungere in base a un file di configurazione dell'installazione precedentemente salvato. Questa operazione aggiunge elementi e non rimuove alcun carico di lavoro o componente se non è presente nel file. Inoltre, gli elementi che non si applicano al prodotto non verranno aggiunti. Durante un'operazione di esportazione, ciò determina la posizione in cui salvare il file di configurazione di installazione. |
 
-> Nota: quando si specificano più carichi di lavoro e componenti, è necessario ripetere l'opzione della riga di comando `--add` o `--remove` per ogni elemento.
+> [!IMPORTANT]
+> quando si specificano più carichi di lavoro e componenti, è necessario ripetere l'opzione della riga di comando `--add` o `--remove` per ogni elemento.
 
 | **Opzioni di layout** | **Descrizione** |
 | ----------------------- | --------------- |
