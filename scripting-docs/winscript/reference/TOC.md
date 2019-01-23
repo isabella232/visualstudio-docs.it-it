@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: a4e7ebc12419567fb5a5fe8499fb33cbb0d63d9e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348685"
----
 # [Riferimenti sulle interfacce Windows Script](windows-script-interfaces-reference.md)
 ## [Interfacce Script ActiveX](active-script-interfaces.md)
 ### [Costanti, enumerazioni e codici di errore dello script ActiveX](active-script-constants-enumerations-and-error-codes.md)
