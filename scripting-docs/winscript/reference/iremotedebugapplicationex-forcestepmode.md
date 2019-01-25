@@ -18,36 +18,39 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 771c17fdb8f2bea77959bc53b8d98fd10399a142
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3cb5c94c55709f5ecdbd6bae63ee3366f3dfeb2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790854"
 ---
 # <a name="iremotedebugapplicationexforcestepmode"></a>IRemoteDebugApplicationEx:ForceStepMode
-Forza il debugger in modalità di istruzione singola.  
-  
-## <a name="syntax"></a>Sintassi  
-  
+
+Forza il debugger in modalità di istruzione singola.
+
+## <a name="syntax"></a>Sintassi
+
 ```cpp
-HRESULT ForceStepMode(  
-   IRemoteDebugApplicationThread*  pStepThread  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pStepThread`  
- [in] Thread per il monitoraggio di Debug del processo al passaggio. Se null, PDM Cancella il relativo avanzamento nell'esecuzione thread.  
-  
-## <a name="return-value"></a>Valore restituito  
- Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
-  
-|Valore|Descrizione|  
-|-----------|-----------------|  
-|`S_OK`|Il metodo è riuscito.|  
-  
-## <a name="remarks"></a>Note  
-  
-## <a name="see-also"></a>Vedere anche  
- [Interfaccia IRemoteDebugApplicationEx](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT ForceStepMode(
+   IRemoteDebugApplicationThread*  pStepThread
+);
+```
+
+### <a name="parameters"></a>Parametri
+
+`pStepThread`
+
+[in] Thread per il monitoraggio di Debug del processo al passaggio. Se null, PDM Cancella il relativo avanzamento nell'esecuzione thread.
+
+## <a name="return-value"></a>Valore restituito
+
+Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+
+|Value|Descrizione|
+|-----------|-----------------|
+|`S_OK`|Il metodo è riuscito.|
+
+## <a name="see-also"></a>Vedere anche
+
+- [Interfaccia IRemoteDebugApplicationEx](iremotedebugapplicationex-interface.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800048"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creare un sistema di progetto di base, parte 2
 La prima procedura dettagliata in questa serie [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.  
@@ -184,7 +184,7 @@ ZipProjects:
   
 1. Reimpostare l'istanza sperimentale di Visual Studio SDK.  
   
-    In [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Nel **avviare** menu, trovare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare l'istanza di Microsoft Visual Studio sperimentale**.  
+    On [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Nel **avviare** menu, trovare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare l'istanza di Microsoft Visual Studio sperimentale**.  
   
     Nelle versioni successive di Windows: Nel **avviare** digitare **ripristinare Microsoft Visual Studio \<versione > istanza sperimentale**.  
   
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr una pagina delle proprietà progetto  
+## <a name="create-a-project-property-page"></a>Creare una pagina delle proprietà progetto  
  È possibile creare una pagina delle proprietà per il tipo di progetto in modo che gli utenti possono visualizzare e modificare le proprietà nei progetti basati su modello. Questa sezione illustra come creare una pagina delle proprietà indipendenti dalla configurazione. Questa pagina delle proprietà di base usa una griglia delle proprietà per visualizzare le proprietà pubbliche che esposta nella classe della pagina proprietà.  
   
  Derivare la classe di pagina di proprietà dal `SettingsPage` classe di base. Griglia delle proprietà fornita dal `SettingsPage` classe è a conoscenza dei tipi di dati più primitivi e sa come visualizzarli.  Inoltre, il `SettingsPage` classe in grado di rendere persistenti i valori delle proprietà del file di progetto.  

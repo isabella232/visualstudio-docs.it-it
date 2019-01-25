@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761414"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
-Per visualizzare l'architettura di alto livello, logica del sistema software, creare un *diagramma delle dipendenze* in Visual Studio. Per assicurarsi che il codice rimanga coerente con questa progettazione, convalidare il codice con un diagramma delle dipendenze. È possibile creare diagrammi delle dipendenze per progetti Visual c# e Visual Basic. Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per visualizzare l'architettura di alto livello, logica del sistema software, creare un *diagramma delle dipendenze* in Visual Studio. Per assicurarsi che il codice rimanga coerente con questa progettazione, convalidare il codice con un diagramma delle dipendenze. È possibile creare diagrammi delle dipendenze per progetti Visual c# e Visual Basic. Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Creare un diagramma delle dipendenze](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -116,7 +116,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 
 2.  Usare le seguenti attività per gestire tali collegamenti:
 
-|**Per**|**In Esplora livello**|
+|**Per**|**In Layer Explorer**|
 |-|-|
 |Eliminare il collegamento tra il livello e un artefatto|Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Elimina**.|
 |Spostare il collegamento da un livello a un altro|Trascinare il collegamento dell'elemento in un livello esistente del diagramma.<br /><br /> -oppure-<br /><br /> 1.  Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Taglia**.<br />2.  Nel diagramma delle dipendenze, aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|
@@ -159,6 +159,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
 - [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
