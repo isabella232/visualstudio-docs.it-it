@@ -9,12 +9,12 @@ description: Altre informazioni sul vantaggio LinkedIn Learning incluso come par
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739536"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380217"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -102,7 +102,7 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 | Visual Studio Dev Essentials | N/D  | 3 mesi |No.  Disponibile solo per i nuovi sottoscrittori |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
-<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Non include:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Non include:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 
 > [!NOTE]
@@ -113,7 +113,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>D: Rinnovando la sottoscrizione viene rinnovato anche il vantaggio LinkedIn Learning?
-R:  No, l'offerta LinkedIn Learning è disponibile solo per i nuovi sottoscrittori.
+A:  No, l'offerta LinkedIn Learning è disponibile solo per i nuovi sottoscrittori.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con LinkedIn Learning?  Vedere queste risorse:

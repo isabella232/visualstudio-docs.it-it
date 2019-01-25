@@ -9,12 +9,12 @@ description: Informazioni su come attivare il vantaggio Azure incluso nella sott
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739812"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380137"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -43,7 +43,7 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 |      Visual Studio Enterprise – MCT Software & Services      |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
 | Visual Studio Enterprise - MCT Developer Software & Services |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 
-*Include Not for Resale (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
+*Include Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="faq"></a>Domande frequenti
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: Come si invia una richiesta di supporto tecnico dal portale di Azure?
-R:  L'invio di una richiesta di supporto dal portale di Azure è un processo in tre fasi.
+A:  L'invio di una richiesta di supporto dal portale di Azure è un processo in tre fasi.
 1. Attivare il vantaggio di supporto tecnico e ottenere l'ID di accesso dell'ID di contratto.
 2. Collegare il contratto di supporto alla sottoscrizione di Azure.
 3. Inviare una richiesta di supporto online.
@@ -86,7 +86,7 @@ Vedere la documentazione del [supporto tecnico](vs-tech-support.md) per informaz
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>D: Si riceve un messaggio che informa che l'accesso ad Azure terminerà a breve.  Che cosa si può fare per continuare a usare Azure?
 
-R:  Questo messaggio di posta elettronica viene inviato a coloro che usano il vantaggio Azure associato alla sottoscrizione di Visual Studio quando la sottoscrizione è scaduta o è stata rimossa.  Per continuare a usare Azure, sono disponibili diverse opzioni:
+A:  Questo messaggio di posta elettronica viene inviato a coloro che usano il vantaggio Azure associato alla sottoscrizione di Visual Studio quando la sottoscrizione è scaduta o è stata rimossa.  Per continuare a usare Azure, sono disponibili diverse opzioni:
 
 **Azione consigliata:**
 

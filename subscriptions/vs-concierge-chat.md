@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di V
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740234"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379995"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -49,7 +49,7 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 | Visual Studio Dev Essentials | N/D  | Non disponibile |N/D |
 
-<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Non include:  FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Non include:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -60,7 +60,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>D:  Il servizio di chat è disponibile in più lingue?
-   R: L'assistenza per i problemi relativi ad account, fatturazione e sottoscrizioni è disponibile in più lingue.  L'assistenza per l'individuazione di informazioni e documentazione tecnica per i prodotti è disponibile in inglese.
+   A: L'assistenza per i problemi relativi ad account, fatturazione e sottoscrizioni è disponibile in più lingue.  L'assistenza per l'individuazione di informazioni e documentazione tecnica per i prodotti è disponibile in inglese.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.

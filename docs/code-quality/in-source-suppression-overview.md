@@ -1,6 +1,6 @@
 ---
 title: Non visualizzare gli avvisi dell'analisi codice
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932877"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835058"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi dell'analisi codice
 
@@ -66,17 +66,19 @@ Le proprietà dell'attributo includono:
 
 - **MessageId** -identificatore univoco di un problema per ogni messaggio.
 
-- **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. Gli ambiti supportati includono quanto segue:
+- **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. È supportato [ambiti](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) includono quanto segue:
 
-    - Modulo
+   - `module`
 
-    - Spazio dei nomi
+   - `resource`
 
-    - Risorsa
+   - `type`
 
-    - Tipo
+   - `member`
 
-    - Member
+   - `namespace` -L'ambito deve eliminare gli avvisi per lo spazio dei nomi stesso. Non elimina gli avvisi per i tipi nello spazio dei nomi.
+
+   - `namespaceanddescendants` -(Novità di Visual Studio 2019) questo ambito Elimina gli avvisi in uno spazio dei nomi e tutti i simboli relativi discendenti. Il `namespaceanddescendants` valore è valido solo per gli analizzatori di Roslyn e viene ignorato dall'analisi statica binario, in base al FxCop.
 
 - **Destinazione** : un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome di elemento completo.
 
@@ -151,7 +153,7 @@ Lo strumento di analisi codice gestito viene esaminato `SuppressMessage` gli att
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Quando si elimina un avviso con ambito spazio dei nomi, viene eliminato l'avviso per lo spazio dei nomi stesso. Non elimina l'avviso in base a tipi nello spazio dei nomi.
+> Quando si elimina un avviso con `namespace` ambito, viene eliminato l'avviso per lo spazio dei nomi stesso. Non elimina l'avviso in base a tipi nello spazio dei nomi.
 
 Qualsiasi eliminazione può essere espresse specificando un ambito esplicito. È necessario in tempo reale di queste eliminazioni a livello globale. È possibile specificare l'eliminazione a livello di membro tramite la decorazione di un tipo.
 
@@ -168,5 +170,6 @@ Il file di eliminazione globale conserva le eliminazioni a livello globale o le 
 
 ## <a name="see-also"></a>Vedere anche
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Usare gli analizzatori di Roslyn](../code-quality/use-roslyn-analyzers.md)
