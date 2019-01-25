@@ -11,20 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800956"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e Visual Studio SDK supportano i servizi seguenti. Alcuni pacchetti offrono i propri servizi non elencati qui, ad esempio, servizi di linguaggio non è un GUID del singolo servizio. È necessario utilizzare il nome del linguaggio per trovare il GUID del servizio di linguaggio nel Registro di sistema.  
-  
- Per ottenere l'interfaccia primaria o interfacce con ogni servizio, utilizzare il GUID di servizio è elencato qui o ottenuto da un'altra origine (ad esempio, i servizi di linguaggio).  
-  
-## <a name="the-services"></a>I servizi  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e Visual Studio SDK supportano i servizi seguenti. Alcuni pacchetti offrono i propri servizi non elencati qui, ad esempio, servizi di linguaggio non è un GUID del singolo servizio. È necessario utilizzare il nome del linguaggio per trovare il GUID del servizio di linguaggio nel Registro di sistema.
+
+Per ottenere l'interfaccia primaria o interfacce con ogni servizio, utilizzare il GUID di servizio è elencato qui o ottenuto da un'altra origine (ad esempio, i servizi di linguaggio).
+
+## <a name="the-services"></a>I servizi
+
 | Service | Interfaccia | Visual Studio | Visual Studio 2005 | Descrizione |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Yes | Yes | Utilizzato dai pacchetti VSPackage per ottenere un <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interfaccia da un controllo ActiveX per facilitare il trasferimento di dati asincrono. |
@@ -120,7 +121,7 @@ ms.locfileid: "53964637"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> | Yes | Yes | Consente a un pacchetto VSPackage per la selezione corrente di accedere e gestire contesti dei comandi dell'interfaccia utente. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider> | IVSMDCodeDomProvider | No | Yes | Fornisce l'accesso a un provider model (DOM) documento oggetto di codice che può essere usato nel codice nativo. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService | No | Yes | Fornisce l'accesso al supporto dell'IDE per finestre di progettazione form gestita. Il `IVSMDCodeDomCreator` può essere utilizzato per creare codice DOM provider. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | Ivsmdcodedomprovider | No | Yes | Fornisce l'accesso al servizio windows di proprietà della finestra di progettazione. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | IVSMDPropertyBrowser | No | Yes | Fornisce l'accesso al servizio windows di proprietà della finestra di progettazione. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService> | No | Yes | Fornisce l'accesso a un'interfaccia che può restituire un <xref:System.ComponentModel.Design.ITypeResolutionService> oggetto utilizzabile in codice nativo. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope> | No | Yes | Fornisce un modo per aprire un ambito in un assembly, prendendo in considerazione il blocco in base alle esigenze. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Yes | Yes | Fornisce l'accesso di primo livello alla soluzione corrente. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964637"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Yes | Yes | Consente a un pacchetto VSPackage per aggiungere un URL all'elenco di URL più recente (MRU) e per ottenere un elenco di tutti gli URL nell'elenco MRU. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Yes | Yes | Consente a un pacchetto VSPackage ottenere la cornice della finestra in cui potrebbe essere situato il pacchetto o parte del pacchetto. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Yes | Yes | Fornisce accesso ai file di formato XML documentazione associata a un file di metadati particolare. |
-  
-## <a name="see-also"></a>Vedere anche  
- [COM e i servizi gestiti](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Uso e fornitura di servizi](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Uso e fornitura di servizi](../../extensibility/using-and-providing-services.md)
