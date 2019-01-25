@@ -1,7 +1,7 @@
 ---
 title: Esempi di parametri della riga di comando per l'installazione
 description: Personalizzare questi esempi per creare la propria installazione da riga di comando di Visual Studio.
-ms.date: 11/14/2018
+ms.date: 01/16/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989987"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380162"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017
 
@@ -28,7 +28,9 @@ In ogni esempio `vs_enterprise.exe`, `vs_professional.exe` e `vs_community.exe` 
 > Con tutti i comandi sono richiesti privilegi amministrativi elevati. Se il processo non viene avviato da un prompt dei comandi con privilegi elevati, viene visualizzata una richiesta di Controllo dell'account utente.
 >
 > [!NOTE]
->  Per concatenare più righe in un unico comando, è possibile usare il carattere `^` alla fine di una riga di comando. In alternativa, è possibile riunire tali righe in un'unica riga. In PowerShell, l'equivalente è il carattere apice inverso (`` ` ``).
+> Per concatenare più righe in un unico comando, è possibile usare il carattere `^` alla fine di una riga di comando. In alternativa, è possibile riunire tali righe in un'unica riga. In PowerShell, l'equivalente è il carattere apice inverso (`` ` ``).
+
+Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installare tramite la riga di comando, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md).
 
 ## <a name="using---installpath"></a>Uso di --installPath
 
@@ -83,13 +85,15 @@ In ogni esempio `vs_enterprise.exe`, `vs_professional.exe` e `vs_community.exe` 
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>Uso di --includeRecommended
+## <a name="using---all"></a>Uso di --all
 
 * Per avviare un'installazione interattiva di tutti i carichi di lavoro e di tutti i componenti disponibili in Visual Studio 2017 Enterprise:
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>Uso di --includeRecommended
 
 * Per installare una seconda istanza denominata di Visual Studio 2017 Professional in un computer in cui è già installato Visual Studio 2017 Community, includendo il supporto per lo sviluppo Node.js:
 
@@ -169,3 +173,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C#, Avanzate
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887906"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398299"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
@@ -109,13 +109,17 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 - Mostra separatori di riga routine
 
-   L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione *vb* del progetto nelle posizioni indicate nella tabella seguente:
+   L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione *cs* del progetto nelle posizioni indicate nella tabella seguente:
 
-   |Posizione nel file di origine vb|Esempio di posizione della linea|
+   |Posizione nel file di origine cs|Esempio di posizione della linea|
    |---------------------------------|------------------------------|
    |Dopo la chiusura di un costrutto di dichiarazione di blocco|- Alla fine di una classe, struttura, modulo, interfaccia o enumerazione<br />- Dopo una proprietà, funzione o sub<br />- Non tra le clausole get e set in una proprietà|
    |Dopo un set di costrutti a riga singola|- Dopo le istruzioni di importazione, prima di una definizione di tipo in un file di classe<br />- Dopo le variabili dichiarate in una classe, prima di qualsiasi routine|
    |Dopo le dichiarazioni a riga singola (dichiarazioni non block-level)|- Dopo le istruzioni di importazione, le istruzioni inherits, le dichiarazioni di variabili, le dichiarazioni di eventi, le dichiarazioni di delegati e le istruzioni di dichiarazione di DLL|
+
+## <a name="block-structure-guides"></a>Guide per strutture a blocchi
+
+Selezionare queste caselle di controllo per visualizzare linee verticali punteggiate tra parentesi graffe (**{}**) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
 
 ## <a name="editor-help"></a>Guida Editor
 

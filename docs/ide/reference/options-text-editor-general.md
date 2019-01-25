@@ -1,40 +1,22 @@
 ---
 title: Opzioni, Editor di testo, Generale
-ms.date: 11/04/2016
+ms.date: 01/18/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -48,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871330"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417798"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
 
@@ -75,9 +57,19 @@ Quando questa opzione è selezionata, nel margine di selezione viene visualizzat
 
 ### <a name="auto-detect-utf-8-encoding-without-signature"></a>Rileva automaticamente codifica UTF-8 senza firma
 
-Per impostazione predefinita, l'editor rileva la codifica cercando indicatori dell'ordine dei byte o tag del set di caratteri. Se nel documento corrente non vengono trovati indicatori o tag di questo tipo, l'editor di codice tenterà di rilevare automaticamente la codifica UTF-8 analizzando le sequenze di byte. Per disabilitare il rilevamento automatico della codifica, deselezionare questa opzione.
+Per impostazione predefinita, l'editor rileva la codifica cercando indicatori dell'ordine dei byte o tag del set di caratteri. Se nel documento corrente non vengono trovati indicatori o tag di questo tipo, l'editor del codice tenta di rilevare automaticamente la codifica UTF-8 analizzando le sequenze di byte. Per disabilitare il rilevamento automatico della codifica, deselezionare questa opzione.
 
-## <a name="display"></a>Display
+### <a name="follow-project-coding-conventions"></a>Segui convenzioni di scrittura codice del progetto
+
+Se selezionata, le convenzioni di scrittura del codice specificate del progetto sostituiscono le eventuali convenzioni di scrittura del codice usate per i progetti personali.
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Abilita clic del mouse per eseguire Vai a definizione
+
+Se selezionata, è possibile premere **CTRL** e passare il mouse su un elemento mentre si fa clic del mouse. In questo modo si passa alla definizione dell'elemento selezionato. È anche possibile scegliere **ALT** oppure **CTRL** + **ALT** nell'elenco a discesa **Usa tasto di modifica**.
+
+Selezionare la casella di controllo **Apri definizione in visualizzazione rapida** per visualizzare la definizione dell'elemento selezionato in una finestra senza spostarsi dalla posizione corrente nell'editor del codice. 
+
+## <a name="display"></a>Visualizzazione
 
 ### <a name="selection-margin"></a>Margine selezione
 
@@ -94,6 +86,10 @@ Quando questa opzione è selezionata, viene visualizzato un margine verticale al
 ### <a name="highlight-current-line"></a>Evidenzia riga corrente
 
 Quando questa opzione è selezionata, viene visualizzata una casella grigia intorno alla riga di codice in cui si trova il cursore.
+
+### <a name="show-structure-guide-lines"></a>Mostra guide per strutture
+
+Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai blocchi di codice strutturato, che consentono di identificare facilmente i singoli blocchi di codice.
 
 ## <a name="see-also"></a>Vedere anche
 
