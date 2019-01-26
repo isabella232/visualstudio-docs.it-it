@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea38b05f48969b80f9f8888f8bbd3c6a1a4e5657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971819"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi codice
 Analisi del codice Usa un dizionario predefinito per controllare gli identificatori nel codice per errori di ortografia, grammaticale case e altre convenzioni di denominazione delle linee guida di .NET Framework. È possibile creare un file Xml del dizionario personalizzato per aggiungere, rimuovere o modificare i termini e abbreviazioni acronimi al dizionario predefinito.
@@ -60,19 +60,19 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 ## <a name="custom-dictionary-elements"></a>Elementi del dizionario personalizzato
  È possibile modificare il comportamento nel dizionario di analisi del codice mediante l'aggiunta di condizioni come testo interno degli elementi seguenti nel dizionario personalizzato:
 
-- [Dizionario/parole/riconosciuto/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [Dictionary/Words/Recognized/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
-- [Dizionario/parole/non riconosciuto o Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [Dictionary/Words/Unrecognized/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dizionario/parole/deprecata/Term [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Dizionario/parole/composta/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Dizionario/parole/DiscreteExceptions/termine](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Dizionario/acronimi/CasingExceptions/degli acronimi](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dizionario/parole/riconosciuto/Word
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionary/Words/Recognized/Word
  Per includere un termine nell'elenco dei termini che identifica l'analisi del codice come digitati correttamente, aggiungere il termine come testo interno di un elemento del dizionario e parole/Recognized/di parole. Le condizioni negli elementi di dizionario e parole/Recognized/di parole non sono tra maiuscole e minuscole.
 
  **Esempio**
@@ -94,7 +94,7 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: LE Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 -   [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
@@ -106,7 +106,7 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA2204: Valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dizionario/parole/non riconosciuto o Word
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dictionary/Words/Unrecognized/Word
  Per escludere un termine nell'elenco dei termini che identifica l'analisi del codice come digitati correttamente, aggiungere il termine da escludere come testo interno di un elemento del dizionario/parole/non riconosciuto o Word. Le condizioni negli elementi dizionario/parole/non riconosciuto/Word non sono tra maiuscole e minuscole.
 
  **Esempio**
@@ -128,7 +128,7 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: LE Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 -   [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
@@ -140,7 +140,7 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA2204: Valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dizionario/parole/deprecata/Term [@PreferredAlternate]
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]
  Per includere un termine nell'elenco dei termini che l'analisi del codice identifica come deprecati, aggiungere il termine come testo interno di un elemento del dizionario/parole/deprecate/termine. Un termine obsoleto è una parola che sia stata digitata correttamente, ma non deve essere utilizzata.
 
  Per includere un termine alternativo suggerito nel messaggio di avviso, specificare alternativo nell'attributo dell'elemento termine PreferredAlternate. Se non si desidera suggerire un'alternativa, è possibile lasciare vuoto il valore dell'attributo.
@@ -168,7 +168,7 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: LE Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 -   [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
@@ -176,7 +176,7 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA1726: Utilizzare termini preferiti](../code-quality/ca1726-use-preferred-terms.md)
 
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dizionario/parole/composta/Term [@CompoundAlternate]
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionary/Words/Compound/Term[@CompoundAlternate]
  Il dizionario predefinito identifica alcuni termini come termini discreti, single, anziché un termine composto. Per includere un termine nell'elenco dei termini che identifica l'analisi del codice come una parola composta e specificare le maiuscole e minuscole corrette del periodo di validità, aggiungere il termine come testo interno di un elemento del dizionario/parole/composta/termine. Nell'attributo dell'elemento Term CompoundAlternate, specificare le singole parole che compongono il termine composto sfruttando la prima lettera delle parole singole (maiuscole minuscole Pascal). Si noti che il termine specificato nel testo interno viene automaticamente aggiunto all'elenco di parole/Dictionary/DiscreteExceptions.
 
 - Il termine deprecato nel dizionario o parole/elemento deprecato/termine non distinzione maiuscole/minuscole.
@@ -202,13 +202,13 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: LE Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 -   [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
 -   [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dizionario/parole/DiscreteExceptions/termine
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term
  Per escludere un termine nell'elenco dei termini che identifica l'analisi del codice come un singolo, word discreti quando il termine è controllato dalle regole di maiuscole e minuscole per le parole composte, aggiungere il termine come testo interno di un elemento del dizionario/parole/DiscreteExceptions/termine. Il termine nell'elemento dizionario/parole/DiscreteExceptions/termine non distinzione maiuscole/minuscole.
 
  **Esempio**
@@ -230,9 +230,9 @@ Analisi del codice Usa un dizionario predefinito per controllare gli identificat
 
 -   [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: LE Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+-   [CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dizionario/acronimi/CasingExceptions/degli acronimi
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/Acronyms/CasingExceptions/Acronym
  Per includere un acronimo nell'elenco dei termini che identifica l'analisi del codice come sia stata digitata correttamente e indicare come l'acronimo quando il termine è selezionato per le maiuscole e minuscole delle regole per le parole composte, aggiungere il termine come testo interno di un dizionario/acronimi/CasingExceptions / Elemento Acronym. L'acronimo nell'elemento dizionario/acronimi/CasingExceptions/Acronym è tra maiuscole e minuscole.
 
  **Esempio**

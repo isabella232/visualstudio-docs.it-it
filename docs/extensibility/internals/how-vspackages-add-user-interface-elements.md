@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b83da9cfa04183a1820d8b455d6bc609216cf9cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962688"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975296"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esempio, i menu, barre degli strumenti e finestre degli strumenti di Visual Studio tramite il *vsct* file.  
@@ -195,7 +195,7 @@ priority="0x0100" type="Menu">
 |ToolBar|[Elemento Menus](../../extensibility/menus-element.md), l'IDE, altri pacchetti VSPackage|L'elemento stesso|0 per *n* gruppi|  
 |MenuItem|[Elemento Buttons](../../extensibility/buttons-element.md), l'IDE, altri pacchetti VSPackage|1 per *n* dei gruppi, l'elemento stesso|-0 *n* gruppi|  
 |Button|[Elemento Buttons](../../extensibility/buttons-element.md), l'IDE, altri pacchetti VSPackage|1 per *n* dei gruppi, l'elemento stesso||  
-|Casella combinata|[Elemento combos](../../extensibility/combos-element.md), l'IDE, altri pacchetti VSPackage|1 per *n* dei gruppi, l'elemento stesso||  
+|Combo|[Elemento combos](../../extensibility/combos-element.md), l'IDE, altri pacchetti VSPackage|1 per *n* dei gruppi, l'elemento stesso||  
   
 ### <a name="menu-command-and-group-placement"></a>Menu di scelta, il comando e posizionamento del gruppo  
  Un menu, gruppo o comando può apparire in più di una posizione nell'IDE. Per un elemento venga visualizzato in più posizioni, è necessario aggiungerlo per il `CommandPlacements` sezione come un [elemento CommandPlacement](../../extensibility/commandplacement-element.md). Qualsiasi menu, gruppo o comando può essere aggiunto come un commandplacement. Tuttavia, le barre degli strumenti non può essere posizionate in questo modo perché non possono apparire in più posizioni sensibile al contesto.  

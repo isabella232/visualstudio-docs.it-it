@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d828fbf2bce435c067b6bc1cc66ce379f3304988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6a9c2dcbbee307578f837b8472b1026c0aa7a2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929458"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969579"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installare gli analizzatori .NET Compiler Platform
 
@@ -31,7 +31,7 @@ Visual Studio 2017 include un set di base di .NET Compiler Platform (*Roslyn*) g
 
    > [!NOTE]
    > La pagina www.nuget.org per ogni pacchetto analyzer Mostra è il comando per incollare il **Console di gestione pacchetti**. È anche disponibile un pulsante utile per copiare il testo negli Appunti.
-   > 
+   >
    > ![Pagina di NuGet.org che mostra comando della Console di gestione pacchetti](media/nuget-install-command.png)
 
    Gli assembly dell'analizzatore sono installati e visualizzati **Esplora soluzioni** sotto **riferimenti** > **analizzatori**.

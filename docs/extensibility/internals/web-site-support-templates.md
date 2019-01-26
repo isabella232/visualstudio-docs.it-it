@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875232"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961598"
 ---
 # <a name="web-site-support-templates"></a>Modelli di supporto per siti Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] I modelli di progetto ed elemento di sito Web forniscono gli stub progetti ed elementi riutilizzabili e personalizzabili sito Web che permettono di velocizzare il processo di sviluppo, eliminando la necessità di creare nuovi progetti di siti Web e gli elementi da zero. Per ulteriori informazioni sul [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelli, vedere [creazione Project and Item Templates](../../ide/creating-project-and-item-templates.md).
@@ -80,7 +80,7 @@ ms.locfileid: "53875232"
 
      La pagina HTML per il nuovo servizio Web. L'attributo della lingua specifica la lingua di codebehind e l'attributo CodeBehind specifica il file dipendente che contiene il codice di codebehind associato al servizio.
 
--   Servizio. *Estensione*
+-   Servizio. *extension*
 
      Il file dipendente che implementa la classe del servizio. La lingua di codebehind determina la *estensione* di questo file.
 
@@ -113,7 +113,7 @@ ms.locfileid: "53875232"
 ### <a name="new-class"></a>Nuova classe
  Questo modello crea un nuovo file di origine che definisce una classe vuota in risposta al **Aggiungi una nuova classe** comando.
 
--   Class. *Estensione*
+-   Class. *extension*
 
      File di origine che implementa la classe vuota. La lingua di codebehind determina la *estensione* di questo file.
 
@@ -147,7 +147,7 @@ ms.locfileid: "53875232"
 
      Il contenuto inizio della pagina Web. Questa pagina Web è un file dipendente codebehind associato.
 
--   Codebehind. *Estensione*
+-   Codebehind. *extension*
 
      Il file dipendente che implementa la classe di Web Form. La lingua di codebehind determina la *estensione* di questo file.
 
@@ -176,7 +176,7 @@ ms.locfileid: "53875232"
 
      Il contenuto inizio della pagina master. Questa pagina master è un file dipendente codebehind associato.
 
--   Codebehind. *estensione*
+-   Codebehind.*extension*
 
      Il file dipendente che implementa la classe di pagina master. La lingua di codebehind determina la *estensione* di questo file.
 

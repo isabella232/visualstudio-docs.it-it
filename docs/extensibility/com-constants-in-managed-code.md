@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9280ff451b6a03150184b9d64eb5cb78cad6fdbc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f340308d34558862ba9c073e7a8609bf2af90d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987272"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966206"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
 Il Framework di pacchetto gestito (MPF) rende disponibili al codice gestito alcune costanti COM standard. Queste costanti sono elencate di seguito per riferimento.  

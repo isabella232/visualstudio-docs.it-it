@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811df3ed361a104ad3ca935307e337a291cbf01e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6af40c2af3a16f313ea9eac496198562c7678165
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960009"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Elemento SortOrder (modelli di Visual Studio)
 Specifica un valore che viene usato per disporre il modello, tra gli altri modelli della stessa categoria, così come appare in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<SortOrder >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SortOrder>  
   
 ## <a name="syntax"></a>Sintassi  
   

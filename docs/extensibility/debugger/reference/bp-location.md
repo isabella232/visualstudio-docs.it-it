@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 237d89abeb4d41a2c01a7e7d0eb1ccc1ca7a6ddc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839643"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974045"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Specifica il tipo di struttura utilizzata per descrivere la posizione del punto di interruzione.  
@@ -94,12 +94,12 @@ public struct BP_LOCATION {
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
-|`BPLT_CODE_FILE_LINE`|`string` (un contesto)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|  
-|`BPLT_CODE_FUNC_OFFSET`|`string` (un contesto)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|  
+|`BPLT_CODE_FILE_LINE`|`string` (a context)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|  
+|`BPLT_CODE_FUNC_OFFSET`|`string` (a context)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|  
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
-|`BPLT_CODE_STRING`|`string` (un contesto)|`string` (espressione condizionale)|-|-|  
-|`BPLT_CODE_ADDRESS`|`string` (un contesto)|`string` (modulo URL)|`string` (nome della funzione)|`string` (indirizzo)|  
-|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (un contesto)|`string` (espressione di dati)|`uint` (numero di elementi)|  
+|`BPLT_CODE_STRING`|`string` (a context)|`string` (espressione condizionale)|-|-|  
+|`BPLT_CODE_ADDRESS`|`string` (a context)|`string` (modulo URL)|`string` (nome della funzione)|`string` (indirizzo)|  
+|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (a context)|`string` (espressione di dati)|`uint` (numero di elementi)|  
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Esempio  

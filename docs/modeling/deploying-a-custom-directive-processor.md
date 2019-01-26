@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6563691022fdd1694af69e872aa0d37803c2191c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956168"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -159,7 +159,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
  Questo metodo per installare un processore di direttiva personalizzato è il meno preferito. Non fornisce un modo comodo per abilitare e disabilitare il processore di direttiva e non fornisce un metodo per distribuire il processore di direttiva ad altri utenti.
 
 > [!CAUTION]
->  Una modifica errata del Registro di sistema può provocare gravi danni al sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.
+>  Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Per registrare un processore di direttiva impostando una chiave del Registro di sistema
 

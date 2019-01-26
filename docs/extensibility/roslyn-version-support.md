@@ -7,15 +7,15 @@ helpviewer_keywords:
 - roslyn package versions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51ed47364778f29e450597156f82566ec2094ab6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4040c825f5decf7da58ab92959c62f4bf7ce0a2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869060"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919408"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Riferimento di versione pacchetto della piattaforma del compilatore .NET
 
@@ -31,7 +31,7 @@ Nella tabella seguente viene illustrato quale [pacchetto platform (Roslyn) del c
 | 2.1.0 | Visual Studio 2017 versione 15.1 o versioni successive |
 | 2.2.0 | Visual Studio 2017 versione 15.2 o versione successiva |
 | 2.3.2 | Visual Studio 2017 versione 15.3 o versione successiva |
-| versione 2.4.0 | Visual Studio 2017 versione 15.4 o versioni successive |
+| 2.4.0 | Visual Studio 2017 versione 15.4 o versioni successive |
 | 2.6.1 | Visual Studio 2017 versione 15.5 o versioni successive |
 | 2.7.0 | Visual Studio 2017 versione 15.6 o versione successiva |
 | 2.8.2 | Visual Studio 2017 versione 15.7 o successiva |

@@ -1,5 +1,5 @@
 ---
-title: 'CA1820: Testare le stringhe vuote utilizzando la lunghezza della stringa'
+title: 'CA1820: Testare le stringhe vuote usando la lunghezza di stringa'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3d0e0f25d776a879cfc0ca761ee89fa35e056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3d1d68f3bfee2c0662deafc94c20f1bbf768636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900652"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956260"
 ---
-# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testare le stringhe vuote utilizzando la lunghezza della stringa
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testare le stringhe vuote usando la lunghezza di stringa
 
 |||
 |-|-|
