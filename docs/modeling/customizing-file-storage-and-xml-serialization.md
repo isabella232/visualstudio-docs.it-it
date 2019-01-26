@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918578"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizzare l'archiviazione dei file e la serializzazione XML
 
@@ -290,7 +290,7 @@ I nodi di proprietà XML si trovano sotto i nodi di classe.
 |Proprietà|Descrizione|
 |Proprietà di dominio|Proprietà a cui si applicano i dati di configurazione della serializzazione xml. Sola lettura.|
 |È di Moniker chiave|Se True, la proprietà viene utilizzata come chiave per la creazione di moniker che fanno riferimento alle istanze di questa classe di dominio.|
-|È il qualificatore del Moniker|Se True, la proprietà viene utilizzata per la creazione del qualificatore nei moniker. Se false, e se non è true per questa classe di dominio SerializeId, i moniker sono qualificati dal moniker dell'elemento padre nell'albero di incorporamento.|
+|Is Moniker Qualifier|Se True, la proprietà viene utilizzata per la creazione del qualificatore nei moniker. Se false, e se non è true per questa classe di dominio SerializeId, i moniker sono qualificati dal moniker dell'elemento padre nell'albero di incorporamento.|
 |Rappresentazione|Se Attribute, la proprietà viene serializzata come attributo xml; Se l'elemento è serializzato come elemento. Se Ignore, non è serializzato.|
 |Nome XML|Nome utilizzato per l'attributo o elemento xml che rappresenta la proprietà. Per impostazione predefinita, questa è una versione con caratteri minuscoli del nome della proprietà di dominio.|
 |Note|Note informali associate all'elemento|

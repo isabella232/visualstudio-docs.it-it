@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fbd977b733aa6e8e663cf4a69e577030f5c6106a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 854f282b22427fd805091d39377654b8d988084b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919149"
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
 Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere [informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -36,7 +36,7 @@ Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per i
 |Category|La categoria in cui la proprietà generata viene visualizzata nella **proprietà** finestra nella finestra di progettazione generata. Se questa proprietà è vuota, quindi la proprietà generata viene visualizzata sotto il **Misc** categoria|< Nessuno\>|
 |Descrizione|La descrizione che consente di documentare il codice e viene utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comandi IntelliSense per la proprietà generata nella classe dell'assegnatario di ruolo.|`Description for` *il nome completo del ruolo*|
 |Nome visualizzato|Il nome visualizzato nella finestra di progettazione generata per il ruolo di dominio.|Valore modificato della proprietà Name.|
-|Parola chiave della Guida|La parola chiave facoltativa utilizzata per indicizzare la Guida F1 per il ruolo di dominio.|\<Nessuno >|
+|Parola chiave della Guida|La parola chiave facoltativa utilizzata per indicizzare la Guida F1 per il ruolo di dominio.|\<nessuno>|
 |Nome visualizzato proprietà|Il nome visualizzato nella finestra di progettazione generata per la proprietà di ruolo generato.|Valore della proprietà del nome di proprietà modificato.|
 
 > [!NOTE]

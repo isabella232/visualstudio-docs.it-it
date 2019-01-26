@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5d65617a354bc5e752d138bc2cf80261ba2736a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955155"
 ---
 # <a name="registering-a-legacy-language-service"></a>La registrazione di un servizio di linguaggio Legacy
 Le sezioni seguenti forniscono gli elenchi di voci del Registro di sistema per la lingua diverse opzioni di servizio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -29,9 +29,9 @@ Le sezioni seguenti forniscono gli elenchi di voci del Registro di sistema per l
   
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  
-|(Predefinito)|REG_SZ|*\<GUID &GT;*|GUID del servizio di linguaggio.|  
+|(Predefinito)|REG_SZ|*\<GUID>*|GUID del servizio di linguaggio.|  
 |LangResID|REG_DWORD|0x0-0xffff|Stringa identificatore di risorsa (ResID) per il nome del testo localizzato del linguaggio.|  
-|Pacchetto|REG_SZ|*\<GUID &GT;*|GUID del pacchetto VSPackage.|  
+|Pacchetto|REG_SZ|*\<GUID>*|GUID del pacchetto VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Specifica se il **completamento delle istruzioni** le opzioni presenti nella **opzioni** sono abilitate nella finestra di dialogo.|  
 |ShowSmartIndent|REG_DWORD|0-1|Specifica se l'opzione per selezionare **intelligente** rientri nel **opzioni** nella finestra di dialogo è abilitata.|  
 |RequestStockColors|REG_DWORD|0-1|Specifica se personalizzato o i colori predefiniti vengono utilizzati per colorare le parole chiave.|  
@@ -140,8 +140,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nome della scheda della casella degli strumenti per impostare come predefinito quando l'editor è attivo.|  
 |DisplayName|REG_SZ|resID|Nome da visualizzare nella **aperta con** nella finestra di dialogo. Il nome è un nome o l'ID di risorsa stringa in formato standard.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Utilizzato per il **aperta con** comando di menu. Se non vuoi elenco l'editor di testo predefinito nell'elenco degli editor disponibili per un tipo di file specifico, impostare questo valore su 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Usato per qualsiasi servizio di linguaggio che è possibile aprire un file con il supporto tabella codici. Ad esempio, quando si apre un file con estensione txt con il **Apri con** comando, sono disponibili opzioni per l'utilizzo di editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato il nome della sottochiave è per la factory dell'editor tabella codici; il GUID collegato specificato in questa voce del Registro di sistema specifiche sia per la factory dell'editor regolari. Lo scopo di questa voce è che se l'IDE non si apre un file usando l'editor predefinito, l'IDE proverà a usare l'editor successivo nell'elenco. Questo editor successivo non deve essere la factory dell'editor tabella codici perché la factory dell'editor è fondamentalmente quello utilizzato per la factory dell'editor che non è riuscita.|  
-|Pacchetto|REG_SZ|*\<GUID &GT;*|GUID VSPackage ResID del nome visualizzato.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Usato per qualsiasi servizio di linguaggio che è possibile aprire un file con il supporto tabella codici. Ad esempio, quando si apre un file con estensione txt con il **Apri con** comando, sono disponibili opzioni per l'utilizzo di editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato il nome della sottochiave è per la factory dell'editor tabella codici; il GUID collegato specificato in questa voce del Registro di sistema specifiche sia per la factory dell'editor regolari. Lo scopo di questa voce è che se l'IDE non si apre un file usando l'editor predefinito, l'IDE proverà a usare l'editor successivo nell'elenco. Questo editor successivo non deve essere la factory dell'editor tabella codici perché la factory dell'editor è fondamentalmente quello utilizzato per la factory dell'editor che non è riuscita.|  
+|Pacchetto|REG_SZ|*\<GUID>*|GUID VSPackage ResID del nome visualizzato.|  
   
 ### <a name="example"></a>Esempio  
   
@@ -162,7 +162,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  
 |(Predefinito)|REG_SZ||Non usato.|  
-|*\<GUID &GT;*|REG_SZ|""|Chiave per le visualizzazioni logiche supportate. È possibile avere tutti gli elementi in base alle esigenze. Il nome della voce del Registro di sistema è ciò che è importante, non il valore, che è sempre una stringa vuota.|  
+|*\<GUID>*|REG_SZ|""|Chiave per le visualizzazioni logiche supportate. È possibile avere tutti gli elementi in base alle esigenze. Il nome della voce del Registro di sistema è ciò che è importante, non il valore, che è sempre una stringa vuota.|  
   
 ### <a name="example"></a>Esempio  
   
@@ -184,7 +184,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  
 |(Predefinito)|REG_SZ||Non usato.|  
-|*\<ext >*|REG_DWORD|0-0xffffffff|Priorità relativa delle estensioni. Se due o più lingue condividono la stessa estensione, viene scelta la lingua con priorità più alta.|  
+|*\<ext>*|REG_DWORD|0-0xffffffff|Priorità relativa delle estensioni. Se due o più lingue condividono la stessa estensione, viene scelta la lingua con priorità più alta.|  
   
  Inoltre, selezione predefinita dell'utente corrente per un editor viene archiviata in HKEY_Current_User\Software\Microsoft\VisualStudio\\*x. y*\Default editor\\*ext*. Il GUID del servizio di linguaggio selezionato sia nella voce di personalizzati. Questo ha la precedenza per l'utente corrente.  
   

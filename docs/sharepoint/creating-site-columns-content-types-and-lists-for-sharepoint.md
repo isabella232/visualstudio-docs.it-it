@@ -13,17 +13,17 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ec1bc999025128c0dd68281dfc53e3f6353ae6b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931947"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875550"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creare colonne del sito, i tipi di contenuto ed elenchi per SharePoint
   Visual Studio fornisce modelli di elemento di progetto per molti elementi fondamentali di SharePoint, inclusi *sono elencati* e *tipi di contenuto*, che può incorporare le colonne del sito (o  *campi*). Grazie alle nuove finestre di progettazione per i tipi di contenuto e gli elenchi, la creazione di questi elementi non è mai stata più facile.  

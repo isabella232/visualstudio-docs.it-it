@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f1f54d43c02d02aa2967eaead2de75a664619c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90209173e2710850b174539eb3e292234c04c5c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922363"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 Diverse opzioni di supporto disponibili per i clienti che hanno domande su come estendere l'ambiente di sviluppo integrato (IDE) di Visual Studio.  
@@ -38,7 +38,7 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
 ### <a name="visual-studio-gallery"></a>Visual Studio Gallery  
  Il [Visual Studio Gallery](https://marketplace.visualstudio.com/) è il posto per le estensioni e codice di esempio. È possibile trovare gli strumenti che migliorano la produttività e l'utente esperienza con Visual Studio, le applicazioni di esempio che illustrano come usare i pacchetti VSPackage e Managed Extensibility Framework (MEF) e altri tipi di esempi.  
   
-### <a name="visual-studio-sdk-samples"></a>Esempi di Visual Studio SDK
+### <a name="visual-studio-sdk-samples"></a>Visual Studio SDK Samples
 
 È possibile trovare esempi open source di estensioni di Visual Studio SDK in GitHub all'indirizzo [esempi di Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Questo repository GitHub è contenuti esempi che illustrano diverse funzionalità estensibile in Visual Studio.
 

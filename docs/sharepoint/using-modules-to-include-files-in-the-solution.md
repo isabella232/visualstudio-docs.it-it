@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe8572ea5ac6f2c100d203063dd43b02c78749b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921549"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864189"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Usare i moduli per includere file nella soluzione
   Potrebbe esserci situazioni quando si vuole distribuire i file nel server di SharePoint indipendentemente dal loro tipo di file, ad esempio nuove pagine master. A tale scopo, è possibile usare *moduli* (non deve essere confusa con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione di SharePoint. Quando si distribuisce la soluzione, i file nel modulo vengono copiati nelle cartelle specificate nel server SharePoint.  
@@ -43,8 +43,8 @@ ms.locfileid: "53921549"
   
 |Nome file|Descrizione|  
 |---------------|-----------------|  
-|*Elements. Xml*|File di definizione per il modulo.|  
-|*Sample*|Un file segnaposto che funge da un esempio di un file nel modulo.|  
+|*Elements.xml*|File di definizione per il modulo.|  
+|*Sample.txt*|Un file segnaposto che funge da un esempio di un file nel modulo.|  
   
  Il *Elements* file contiene gli elementi seguenti:  
   

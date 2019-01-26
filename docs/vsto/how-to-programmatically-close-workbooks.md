@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], closing workbooks
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01f188af2ae96cf8622f3614da493891e3dbabe4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 187baa6805050507e8f824593a5b1b4f02666c46
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093145"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864891"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Procedura: A livello di programmazione chiudere cartelle di lavoro
   È possibile chiudere la cartella di lavoro attiva o specificare una cartella di lavoro da chiudere.  
