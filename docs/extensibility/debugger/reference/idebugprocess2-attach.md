@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717be88ebc0b7312bbb4c8a092fbe34969ddfc7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91c43a93749cf4dbb507631af9b2f6169d9d35cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998365"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Collega gestore di sessione di debug (SDM) al processo.  
@@ -58,7 +58,7 @@ int Attach( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra altri valori possibili.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Il processo specificato è già collegato al debugger.|  
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Si è verificata una violazione della sicurezza durante la procedura di collegamento.|  

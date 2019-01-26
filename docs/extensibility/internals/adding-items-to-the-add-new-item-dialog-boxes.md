@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989952"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, il **AddItemTemplates** sezione contiene il percorso e il nome della directory degli elementi reso disponibile nel **Aggiungi nuovo elemento** vengono inseriti nella finestra di dialogo.  
@@ -27,7 +27,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
 
  Il primo GUID è il CLSID per i progetti di questo tipo. il GUID secondo indica il tipo di progetto registrati per i modelli di aggiungere elementi:  
 
- **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
  **@** = #6 
 
@@ -38,7 +38,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
 
 | nome | Tipo | I dati (dal *RGS* file) | Descrizione |
 |------------------|-----------| - | - |
-| @ (Impostazione predefinita) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | ID risorsa per **Aggiungi elemento** modelli. |
+| @ (Impostazione predefinita) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | ID risorsa per **Aggiungi elemento** modelli. |
 | Val TemplatesDir | REG_SZ | % % TEMPLATE_PATH\\&lt;SomeProjectItems&gt; | Percorso degli elementi di progetto visualizzato nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata. |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Determina l'ordine di ordinamento nel nodo della struttura dei file visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo. |
 

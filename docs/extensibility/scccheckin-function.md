@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86530497620dfab79490e6128cff29cb2fb2d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a211c7e3c338c962c75d31871515c4398dd04406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822862"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998469"
 ---
 # <a name="scccheckin-function"></a>Funzione SccCheckin
 Questa funzione controlla nei file precedentemente estratti al sistema di controllo di origine, le modifiche e la creazione di una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.  
@@ -43,7 +43,7 @@ SCCRTN SccCheckin (
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file selezionati da archiviare.  
   
  lpFileNames  
@@ -52,7 +52,7 @@ SCCRTN SccCheckin (
  lpComment  
  [in] Commento da applicare a ogni file selezionati da archiviare. Questo parametro è `NULL` se il controllo del codice sorgente del plug-in una richiesta per un commento.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando, i valori validi sono 0 o `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  

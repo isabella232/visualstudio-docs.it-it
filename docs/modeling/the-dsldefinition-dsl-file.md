@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aff681c72b17882db8f7e97daae45bb5da69347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995869"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -167,7 +167,7 @@ Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio D
 
 Ogni classe di dominio, incluse le relazioni, le forme, i connettori e i diagrammi, può avere questi attributi e nodi figlio:
 
--   **ID.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).
+-   **Id.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).
 
 -   **Name e Namespace.** Questi attributi specificano il nome e lo spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.
 
@@ -209,7 +209,7 @@ Ogni proprietà di dominio può anche avere i seguenti attributi:
 
 -   **IsUIReadOnly**. Questo attributo determina se l'utente può modificare la proprietà nel **proprietà** finestra o tramite un elemento decorator in cui viene presentata la proprietà.
 
--   **Tipo**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.
+-   **Kind**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.
 
 -   **IsElementName**. Se questo attributo è impostato su True, il suo valore viene impostato automaticamente su un valore univoco quando viene creata un'istanza della classe padre. Questo attributo può essere impostato su True solo per una proprietà in ogni classe, che deve essere di tipo String. Nell'esempio Diagramma dei componenti, la proprietà `Name` in `NamedElement` ha `IsElementName` impostato su True. Quando un utente crea un elemento `Component` (che eredita da `NamedElement`), il nome viene inizializzato automaticamente con un valore simile a "Component6".
 
