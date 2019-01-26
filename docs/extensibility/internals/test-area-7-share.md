@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca148ccf4c3ca296fd03e9c3c25e2eacc9b6cf93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2efaad276eec2030b062be5f6508ec9603dcbf89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040697"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividi
 Questa area di test illustra gli elementi di condivisione tra località, tramite il **condivisione** comando.  

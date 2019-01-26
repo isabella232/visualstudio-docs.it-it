@@ -1,5 +1,5 @@
 ---
-title: 'CA2140: Il codice Transparent non deve fare riferimento a elementi SecurityCritical'
+title: 'CA2140: Il codice Transparent non deve far riferimento a elementi SecurityCritical'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 251a12da-0557-47f5-a4f7-0229d590ae7b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d434094cff19cbeac2ba1b363a82ab1577f8220
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a67bd5649bd0f3f06d30f14f233cf3501871c25b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860715"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033004"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Il codice Transparent non deve fare riferimento a elementi SecurityCritical
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Il codice Transparent non deve far riferimento a elementi SecurityCritical
 
 |||
 |-|-|

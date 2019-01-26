@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: df27b6b85cff218526b1a69897b5809ebf28ae20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154421"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041152"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Creare un'estensione con un comando di menu
 Questa procedura dettagliata illustra come creare un'estensione con un comando di menu che consente di avviare Blocco note.  
@@ -98,7 +98,7 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
   
  È possibile trovare il *VSIX* file per questa estensione nel *FirstMenuCommand* nella directory bin. In particolare, se che è stata compilata la configurazione di rilascio, sarà:  
   
- *\<directory del codice > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*  
+ *\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*  
   
  Per installare l'estensione, l'amico deve chiudere tutte le istanze aperte di Visual Studio, quindi fare doppio clic il *VSIX* file, che consente di visualizzare i **programma di installazione VSIX**. I file vengono copiati i *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions* directory.  
   
