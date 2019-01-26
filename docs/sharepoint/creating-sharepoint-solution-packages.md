@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059bf8068ad3a14d01f0a8167900563eebdff215
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966664"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867988"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Creare pacchetti delle soluzioni SharePoint
   Usando la finestra di progettazione del pacchetto, è possibile creare e personalizzare i pacchetti di distribuzione. Ad esempio, è possibile aggiungere elementi di progetto SharePoint e le funzionalità, ripristinare il server IIS, impostare gli ambiti di attivazione di funzionalità e identificare le dipendenze delle funzionalità. La finestra di progettazione genera anche un manifesto, un file XML che descrive ogni pacchetto.  
@@ -37,7 +37,7 @@ ms.locfileid: "53966664"
 |-------------------------------|------------------------------------|  
 |nome|Obbligatorio. Il nome predefinito del pacchetto è impostato su *ProjectName*.|  
 |Reimposta server Web|Facoltativo. Selezionare se si desidera riavviare il server Web dopo il *wsp* file viene installato nel server SharePoint.|  
-|Tipo di Server di distribuzione|Obbligatorio. Per impostazione predefinita, l'ambito è impostato per server applicazioni.<br /><br /> Server applicazioni: Descrive un server che ospita i servizi.<br /><br /> WebFrontEnd: Descrive un server che ospita i siti Web.|  
+|Tipo di Server di distribuzione|Obbligatorio. Per impostazione predefinita, l'ambito è impostato per server applicazioni.<br /><br /> ApplicationServer: Descrive un server che ospita i servizi.<br /><br /> WebFrontEnd: Descrive un server che ospita i siti Web.|  
 |Elementi nella soluzione|Tutti gli elementi di progetto SharePoint e le funzionalità che possono essere aggiunti al pacchetto.|  
 |Elementi nel pacchetto|Facoltativo. Tutti gli elementi di SharePoint e le funzionalità che si desidera distribuire il pacchetto.|  
   

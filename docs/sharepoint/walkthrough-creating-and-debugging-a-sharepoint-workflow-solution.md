@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b2affcb8339027f146a629b47db57154b173591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912990"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871390"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: Creare ed eseguire il debug di una soluzione del flusso di lavoro di SharePoint
   Questa procedura dettagliata viene illustrato come creare un modello di base del flusso di lavoro sequenziale. Il flusso di lavoro controlla una proprietà di una raccolta documenti condivisa per determinare se un documento è stato rivisto. Se il documento è stato rivisto, il flusso di lavoro termina.  
@@ -164,8 +164,8 @@ ms.locfileid: "53912990"
   
     |Proprietà|Value|  
     |--------------|-----------|  
-    |**elemento correlationToken**|**workflowToken**|  
-    |**Richiamato**|**onWorkflowItemChanged**|  
+    |**CorrelationToken**|**workflowToken**|  
+    |**Invoked**|**onWorkflowItemChanged**|  
   
 ## <a name="handle-activity-events"></a>Gestire gli eventi di attività
  Infine, controllare lo stato del documento da ogni attività. Se il documento è stato rivisto, il flusso di lavoro è stata completata.  

@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918784"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874181"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business
 
@@ -32,7 +32,7 @@ Il servizio di integrazione applicativa dei dati (BDC) consente di visualizzare 
 
 Questa procedura dettagliata illustra come creare un modello per il servizio di integrazione applicativa dei dati che restituisce informazioni sui contatti in un database di esempio. Si creerà quindi un elenco esterno in SharePoint con questo modello.
 
-In questa procedura dettagliata vengono illustrate le attività seguenti:
+Questa procedura dettagliata illustra le attività seguenti:
 
 - Creazione di un progetto.
 - Aggiunta di un'entità al modello.
@@ -76,7 +76,7 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 1. Nella barra dei menu, scegliere **degli strumenti** > **Connetti al Database**.
 
-     Il **Aggiungi connessione** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **Aggiungi connessione**.
 
 2. Aggiungere una connessione al database di esempio AdventureWorks di SQL Server.
 
@@ -187,7 +187,7 @@ Aggiungere un metodo Finder specifico per l'entità Contact usando il **Dettagli
     |FirstName|System.String|
     |LastName|System.String|
     |Telefono|System.String|
-    |Indirizzo di posta elettronica|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|

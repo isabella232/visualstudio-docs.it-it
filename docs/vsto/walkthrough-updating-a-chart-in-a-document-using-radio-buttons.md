@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], updating using controls
 - controls [Office development in Visual Studio], updating documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 512edf8c6f694c0c8dc22c3b614f4f9b47145db8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943236"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871416"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.  
@@ -92,28 +92,28 @@ ms.locfileid: "53943236"
   
     |Proprietà|Value|  
     |--------------|-----------|  
-    |**Name**|**Istogramma**|  
+    |**Name**|**columnChart**|  
     |**per**|**Istogramma a colonne**|  
   
 3.  Aggiungere una seconda **pulsante di opzione** all'utente controllare e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**barChart**|  
     |**per**|**Grafico a barre**|  
   
 4.  Aggiungere un terzo **pulsante di opzione** all'utente controllare e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**lineChart**|  
     |**per**|**Grafico a linee**|  
   
 5.  Aggiungere un quarto **pulsante di opzione** all'utente controllare e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
-    |**Name**|**opzione areaBlockChart**|  
+    |**Name**|**areaBlockChart**|  
     |**per**|**Grafico ad area**|  
   
 ## <a name="add-references"></a>Aggiunta di riferimenti  

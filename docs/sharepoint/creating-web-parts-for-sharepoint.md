@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879134"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865885"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
   Utilizzando le web part, è possibile modificare il contenuto, l'aspetto e comportamento delle pagine di un sito di SharePoint utilizzando un browser. Web part sono controlli sul lato server che vengono eseguiti all'interno di una web part page: sono i blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -45,7 +45,7 @@ ms.locfileid: "53879134"
   
 |File|Descrizione|  
 |----------|-----------------|  
-|*Elements. Xml*|Contiene informazioni che usa il file di definizione di funzionalità nel progetto per distribuire la web part.|  
+|*Elements.xml*|Contiene informazioni che usa il file di definizione di funzionalità nel progetto per distribuire la web part.|  
 |file con estensione WebPart|Vengono fornite informazioni richieste da SharePoint per visualizzare la web part in una raccolta web part.|  
 |File di codice|Contiene metodi che aggiungono controlli alla web part e generano contenuto personalizzato all'interno della web part.|  
   
@@ -61,7 +61,7 @@ ms.locfileid: "53879134"
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Inserisce un menu ASP. Per altre informazioni, vedere [Cenni preliminari sul controllo Menu](http://go.microsoft.com/fwlink/?LinkId=235316).|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Inserisce un **LINK** elemento nel *aspx* pagina e si applica uno o più fogli di stile esterni definiti da **CssRegistration**.|  
-|[Attributo DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Inserisce un controllo DateTime nel *aspx* pagina.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Inserisce un controllo DateTime nel *aspx* pagina.|  
 |[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Inserisce una convalida di sicurezza nel *aspx* pagina|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Restituisce una proprietà di un elenco specificato.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Restituisce una proprietà globale del sito Web corrente.|  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b02ecc421c2e6c5876061821c8d87e180a4d9a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b47d90eef38c5aff055b7ba2a05e39f8de17269
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965382"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873665"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Procedura: Accedere a livello di codice ai contatti di Outlook
   Questo esempio vengono trovati tutti i contatti il cui cognome contengano una stringa di ricerca specificato.  

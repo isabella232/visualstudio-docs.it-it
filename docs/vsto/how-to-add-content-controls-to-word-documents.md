@@ -23,15 +23,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbb481fffecc6a6b4848fd4cd771cb5b16406d9a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905280"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871208"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedura: Aggiungere contenuto controlli ai documenti di Word
   Nei progetti di Word a livello di documento, è possibile aggiungere controlli contenuto al documento nel progetto in fase di progettazione o in fase di esecuzione. Nei progetti di componente aggiuntivo VSTO per Word, è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione.  
