@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 814af35e452bce86dd2a6ba780b9fca5fe9bb4d4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939285"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873197"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procedura: Personalizzare un pacchetto della soluzione SharePoint tramite le destinazioni di MSBuild
   Tramite le destinazioni di MSBuild al prompt, è possibile personalizzare come Visual Studio crea il file di pacchetto di SharePoint (*wsp*). Ad esempio è possibile personalizzare le proprietà di MSBuild per modificare la directory intermedia dei pacchetti e i gruppi di elementi di MSBuild con cui si specificano i file enumerati.  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8787e79744dc52d3907f502b5696f4ca91522e01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86db84122876603ccea44be5fc1cd65b47263a92
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921786"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867481"
 ---
 # <a name="create-sharepoint-solutions"></a>Creare soluzioni di SharePoint
   È possibile creare applicazioni di SharePoint in Visual Studio come alternativa alla creazione in SharePoint Designer. Visual Studio promuove lo sviluppo rapido di SharePoint fornendo funzionalità quali strumenti di debug avanzati, IntelliSense, completamento istruzioni e modelli di progetto. Visual Studio sfrutta anche i linguaggi e gli strumenti avanzati basati su .NET Framework. È possibile sviluppare progetti SharePoint con Visual Basic o Visual C# e sviluppare l'app per progetti SharePoint con JavaScript.  
@@ -36,7 +36,7 @@ ms.locfileid: "53921786"
 |![Set di training](../sharepoint/media/vs-icon-training.gif "corsi di formazione")|**Corsi di formazione**<br /><br /> -   [Informazioni sullo sviluppo per SharePoint](/sharepoint/dev/)|  
 |![Forum](../sharepoint/media/vs-icon-forums.gif "forum")|**Forum**<br /><br /> -   [Sviluppo per SharePoint con Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vssharepointdevelopment)<br />-   [SharePoint 2010](https://social.msdn.microsoft.com/Forums/sharepoint/home?category=sharepoint2010,sharepoint)|  
 |![Set di training](../sharepoint/media/vs-icon-training.gif "corsi di formazione")|**Blog**<br /><br /> -   [Blog sullo sviluppo per SharePoint in Visual Studio](https://blogs.msdn.microsoft.com/vssharepointtoolsblog/)|  
-|![Ricerca per categorie I video](../sharepoint/media/vs-icon-howdoivideos.gif "How Do I? Video")|**Ricerca per categorie Video**<br /><br /> -   [Procedura: Creare Web part visive per SharePoint 2010 in Visual Studio 2010?](https://visualstudio.microsoft.com/)<br />-   [Procedura: Creare i tipi di contenuto per SharePoint 2010 in Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Procedura: Creare definizioni di sito per SharePoint 2010 in Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Procedura: Creare un Business Data Connectivity Model per SharePoint 2010 mediante Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|  
+|![Ricerca per categorie I video](../sharepoint/media/vs-icon-howdoivideos.gif "How Do I? Videos")|**Ricerca per categorie Video**<br /><br /> -   [Procedura: Creare Web part visive per SharePoint 2010 in Visual Studio 2010?](https://visualstudio.microsoft.com/)<br />-   [Procedura: Creare i tipi di contenuto per SharePoint 2010 in Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Procedura: Creare definizioni di sito per SharePoint 2010 in Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Procedura: Creare un Business Data Connectivity Model per SharePoint 2010 mediante Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|  
 |![Video di Channel 9](../sharepoint/media/vs-icon-channel9videos.gif "video di Channel 9")|**Video di Channel 9**<br /><br /> -   [Cenni preliminari sullo sviluppo per SharePoint in Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [Procedure consigliate sulla compilazione delle Web part di SharePoint 2010 con Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [Finestre di progettazione pacchetti e funzionalità di SharePoint in Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|  
 |![Centro per sviluppatori](../sharepoint/media/vs-icon-msdndevcenter.gif "Centro per sviluppatori")|**Centri per sviluppatori**<br /><br /> -   [Centro per sviluppatori di Visual Studio](https://visualstudio.microsoft.com/)<br />-   [Centro per sviluppatori di SharePoint](/sharepoint/dev/)<br />-   [Centro per sviluppatori di SharePoint Server](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centro per sviluppatori di SharePoint Designer](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centro per sviluppatori di ASP.NET](https://msdn.microsoft.com/aa336522.aspx)|  
 |![Inviare commenti e suggerimenti](../sharepoint/media/vs-icon-feedback.gif "commenti e suggerimenti")|**Inviare commenti e suggerimenti**<br /><br /> Fornire il feedback su Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Fornire il feedback sulla documentazione relativa a Visual Studio:<br /><br /> -   **Visualizzazione semplice.** Nella parte superiore di qualsiasi argomento è possibile scegliere il collegamento **Valuta questo argomento** per passare alla fine dell'argomento, dove è possibile specificare **Sì** o **No** alla domanda **Questa pagina è stata utile?** È quindi possibile selezionare una o più caselle di controllo visualizzate se si sceglie **No**o fornire altre informazioni nella casella di testo oppure entrambe le possibilità. Al termine, scegliere **Invia** .<br />-   **Visualizzazione senza script.** Nella parte superiore dell'argomento, scegliere il **commenti e suggerimenti** collegamento per fornire commenti e suggerimenti nel forum feedback sulle librerie di espressioni e TechNet.<br />-   **Visualizzazione classica.** Nella parte superiore dell'argomento scegliere il collegamento **Valuta il contenuto** e lascia un commento per fornire commenti e suggerimenti sull'argomento al team della documentazione.|  

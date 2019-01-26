@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, IntelliTrace
 - data collector
 - IntelliTrace
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c36d2781e34f85e46fc8a1a56d384bad713399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865466"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875368"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Eseguire il debug di un'applicazione SharePoint tramite IntelliTrace
 
@@ -295,7 +295,7 @@ Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è 
 
 3. Nella finestra di PowerShell, eseguire la [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando per creare il file. iTrace, arrestare il monitoraggio e riavviare la soluzione di SharePoint.
 
-     **Stop-WebApplicationMonitoring***"\<SitoSharePoint >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Eseguire il debug e correggere la soluzione di SharePoint
 

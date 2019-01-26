@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864742d3e2ded8ca4cb0531989bebfde9f6f3593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0479e6de85d156b8a4302b92d2abf0526029c1da
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827338"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871650"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aggiornamento delle personalizzazioni della barra multifunzione nei progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5
   Se il progetto contiene una personalizzazione della barra multifunzione che è stata creata utilizzando il **sulla barra multifunzione (finestra di progettazione visiva)** dell'elemento di progetto, è necessario apportare le modifiche seguenti al codice del progetto se il framework di destinazione viene modificato nel [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o in un secondo momento.  
@@ -126,7 +126,7 @@ ms.locfileid: "53827338"
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  La tabella seguente elenca i controlli creati a livello di codice e il metodo da usare per creare i controlli nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive.  
   
-|CTRL|Metodo RibbonFactory da usare nei progetti [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|  
+|Control|Metodo RibbonFactory da usare nei progetti [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|  
 |-------------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|  

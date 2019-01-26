@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98cdc452663fd32508496c1fc52a49033a0b4381
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843593"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870061"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: Modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, si potrebbe eseguire un singolo passaggio o modificare l'ordine dei passaggi del processo di distribuzione. È possibile creare o modificare le configurazioni di distribuzione poiché non è possibile modificare le configurazioni predefinite e a livello di codice aggiunte.  
