@@ -1,5 +1,5 @@
 ---
-title: "CA1046: Non eseguire l'overload dell'operatore di uguaglianza sui tipi di riferimento"
+title: "CA1046: Non eseguire l'overload dell'operatore \"uguale a\" per i tipi di riferimento"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14229e6f73e93aa1ca4323ba12d965270e3228cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7d3994c827e7d090ead52d0ea6345ba8d79b2a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904734"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018510"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore di uguaglianza sui tipi di riferimento
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
 
 |||
 |-|-|

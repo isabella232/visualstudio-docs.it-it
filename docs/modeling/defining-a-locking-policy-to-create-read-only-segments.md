@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 548840c3671b0760380c84520fe3a39238dfd19a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866491"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027347"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 L'API di immutabilità del SDK di modellazione di Visual Studio Visualization consente a un programma per bloccare o parte di un modello di linguaggio specifico di dominio (DSL) in modo che è possibile leggere ma non modificato. Questa opzione di sola lettura, ad esempio, potrebbe essere usata in modo che un utente può chiedere i colleghi per aggiungere annotazioni e rivedere un modello DSL ma è possibile impedire loro di modificare l'originale.
@@ -76,7 +76,7 @@ partition.SetLocks(Locks.Delete);
 
   È possibile impostare un blocco su una partizione o archiviare e allo stesso tempo disabilitare il blocco su un singolo elemento.
 
-|Valore|Vale a dire se `IsLocked(Value)` è true|
+|Value|Vale a dire se `IsLocked(Value)` è true|
 |-|-|
 |nessuno|Nessuna restrizione.|
 |Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Ciò non è applicabile alle proprietà che vengono generate dal ruolo di una classe di dominio in una relazione.|
@@ -84,7 +84,7 @@ partition.SetLocks(Locks.Delete);
 |Move|Elemento non può essere spostato tra le partizioni se `element.IsLocked(Move)` è true, o se `targetPartition.IsLocked(Move)` è true.|
 |Eliminare|Un elemento non può essere eliminato se questo blocco è impostato sull'elemento stesso o in uno qualsiasi degli elementi a cui verrebbe propagare l'eliminazione, quali forme e gli elementi incorporati.<br /><br /> È possibile usare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
 |Riordinare|L'ordine dei collegamenti a un assegnatario di ruolo non può essere modificato.|
-|Assegnatario del ruolo|Il set di collegamenti che hanno origine in questo elemento non può essere modificato. Ad esempio, nuovi elementi non possono essere incorporati sotto questo elemento. Questa operazione non influenza i collegamenti per il quale questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e destinazione non sono interessate.|
+|RolePlayer|Il set di collegamenti che hanno origine in questo elemento non può essere modificato. Ad esempio, nuovi elementi non possono essere incorporati sotto questo elemento. Questa operazione non influenza i collegamenti per il quale questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e destinazione non sono interessate.|
 |Tutti|OR bit per bit degli altri valori.|
 
 ## <a name="locking-policies"></a>Criteri di blocchi

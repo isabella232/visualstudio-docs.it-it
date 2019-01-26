@@ -1,5 +1,5 @@
 ---
-title: "CA1043: Usare l'argomento di stringa o integrale per gli indicizzatori"
+title: 'CA1043: Usare un argomento di tipo stringa o integrale per gli indicizzatori'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: d7f14b9e-2220-4f80-b6b8-48c655a05701
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f140e8678bfb03bc29a21b05f6f3bfada76e9e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018564"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Usare l'argomento di stringa o integrale per gli indicizzatori
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Usare un argomento di tipo stringa o integrale per gli indicizzatori
 
 |||
 |-|-|

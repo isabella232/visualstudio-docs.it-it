@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44ff4fb8a8a2e60b047361624ae805910906c19e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022053"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Personalizzare le finestre di codice usando l'API legacy
 Una finestra del codice è un oggetto finestra di documento che supporta uno o più visualizzazioni di testo. Esattamente le stesse funzionalità di una finestra del codice dipendono dal servizio di linguaggio associato. In modalità interfaccia a documenti multipli (MDI), la finestra del codice è la cornice figlio MDI.  

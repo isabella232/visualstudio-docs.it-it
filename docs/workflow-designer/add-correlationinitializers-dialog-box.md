@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67dea88845ffbfab8350e4a1134e09436c95321b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdd41044117e0cbbb132dca637012571e0864e73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043401"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Finestra di dialogo Aggiungi inizializzatori di correlazione
 
@@ -27,7 +27,7 @@ Gli inizializzatori di correlazione della raccolta specificata con questa finest
 - basato su query
 - contesto
 - contesto di callback
-- request / reply
+- request-reply
 
 La tabella seguente descrive gli elementi dell'interfaccia utente di **Aggiungi inizializzatori di correlazione** nella finestra di dialogo:
 

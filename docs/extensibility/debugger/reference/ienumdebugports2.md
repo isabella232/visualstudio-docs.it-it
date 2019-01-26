@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92e8c48cfc7da8a9a167d2b132e2c6bb5449edd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea904df883994bd7ef0a905057b7dac1f3c46fff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852401"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070565"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Questa interfaccia consente di enumerare le porte di un fornitore di computer o la porta.  
