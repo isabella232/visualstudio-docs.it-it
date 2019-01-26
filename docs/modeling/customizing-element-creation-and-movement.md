@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933026"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 
@@ -39,7 +39,7 @@ Anche se le operazioni di creazione potrebbero sembrare può essere diverso dall
 
 La responsabilità di una EMD consiste nel decidere come un oggetto o gruppo di oggetti deve essere unita in una determinata posizione nel modello. In particolare, decide quali relazioni dovrebbero essere istanziati per collegare il gruppo unito nel modello. È anche possibile personalizzare per impostare le proprietà e per creare altri oggetti.
 
-![Linguaggio specifico di dominio&#45;EMD&#95;di tipo Merge](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Una EMD viene generata automaticamente quando si definisce una relazione di incorporamento. Questa impostazione predefinita EMD crea un'istanza della relazione quando gli utenti aggiungono nuove istanze figlio al padre. È possibile modificare questi EMDs predefinito, ad esempio aggiungendo codice personalizzato.
 
@@ -49,7 +49,7 @@ Una EMD viene generata automaticamente quando si definisce una relazione di inco
 
 È possibile aggiungere direttive di merge per le classi di dominio, relazioni di dominio, forme, connettori e i diagrammi. È possibile aggiungere o individuarli in Esplora DSL sotto la classe di dominio ricevente. La classe ricevente è la classe di dominio dell'elemento che si trova già nel modello e a cui verrà unito l'elemento nuovo o copiato.
 
-![Linguaggio specifico di dominio&#45;EMD&#95;dettagli](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 Il **classe di indicizzazione** è la classe di dominio di elementi che possono essere uniti in membri della classe ricevente. Le istanze di sottoclassi della classe di indicizzazione verranno unite anche da questo EMD, a meno che non si imposta **si applica alle sottoclassi** su False.
 

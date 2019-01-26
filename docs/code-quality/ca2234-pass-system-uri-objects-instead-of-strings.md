@@ -1,5 +1,5 @@
 ---
-title: 'CA2234: Passare oggetti System. Uri invece di stringhe'
+title: 'CA2234: Passare oggetti System.Uri invece di stringhe'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: acaed774bbfc797bf5171bfabeb2febbbf37a391
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 072441fbba45272e1374dafb5c485dc172559c3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916588"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934140"
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Passare oggetti System. Uri invece di stringhe
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Passare oggetti System.Uri invece di stringhe
 
 |||
 |-|-|
