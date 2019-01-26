@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80013faf174900c4e94bf452f6f19c0ac9bfbeba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956493"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio Usa il file [Content_Types] XML per installare il pacchetto, ma non installa il file stesso.  
@@ -71,13 +71,13 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
 |htm o html|testo/html|  
-|formato RTF|applicazione/rtf|  
-|PDF|Application/pdf|  
-|GIF|image/gif|  
-|jpg o jpeg|immagine/jpg|  
-|TIFF|immagine/tiff|  
+|rtf|applicazione/rtf|  
+|pdf|Application/pdf|  
+|gif|image/gif|  
+|jpg o jpeg|image/jpg|  
+|tiff|image/tiff|  
 |vsix|Application/zip|  
-|file ZIP|Application/zip|  
+|zip|Application/zip|  
 |dll|application/octet-stream|  
 |tutti gli altri tipi di file|application/octet-stream|  
   

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eff9cb08c07c33ff2af707501f1ee6fac2e01da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95f691e0bfc73c7ce5f1f87d441dbf083173b6c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955118"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.  
@@ -50,7 +50,7 @@ Il programma di installazione di Windows installa e Disinstalla applicazioni o i
  Pacchetto (pacchetto Redist)  
  Un'unità di distribuzione che è costituito da un file con estensione msi e i file di origine esterna a cui questo file potrebbe fare riferimento. Un pacchetto contiene tutte le informazioni necessarie per eseguire l'interfaccia utente e per installare o disinstallare l'applicazione Windows Installer.  
   
- file con estensione msi  
+ .msi File  
  Un file di archiviazione strutturata COM che contiene le istruzioni e i dati necessari per installare un'applicazione. Ogni pacchetto contiene almeno un file con estensione msi. Il file con estensione msi contiene il database di programma di installazione, un flusso di informazioni di riepilogo e possibilmente uno o più trasformazioni e i file di origine interna. Installazione dei file possono essere compressi in un file CAB e archiviati in un flusso di file con estensione msi o archiviati, compressi o non compressi, all'esterno del file con estensione msi sul supporto di origine. Per altre informazioni, vedere [estensioni di File Windows Installer](/windows/desktop/Msi/windows-installer-file-extensions).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Imposizione delle regole di Windows Installer  

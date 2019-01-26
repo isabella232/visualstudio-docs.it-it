@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d6fb91214d0209c2e5745b23ba1466084d2780
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58a7c9cae59bc5a02dcca53afb66c234012e6713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918681"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura e salvataggio di elementi di progetto
 Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e salvataggio dei file di progetti nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Gli argomenti seguenti descrivono i diversi approcci per l'apertura e salvataggio di file.  
