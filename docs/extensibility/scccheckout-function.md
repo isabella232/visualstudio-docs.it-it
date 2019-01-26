@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728382594b1682f93ba1823558f3f9f02689be1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a01ee4e4010782570d267d5b2e35d56fedb45a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984977"
 ---
 # <a name="scccheckout-function"></a>Funzione SccCheckout
 Dato un elenco di nomi completi dei file, questa funzione li estrae nell'unità locale. Il commento viene applicata a tutti i file in corso l'estrazione. L'argomento commento può essere un `null` stringa.  
@@ -43,7 +43,7 @@ SCCRTN SccCheckout (
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file selezionati da estrarre.  
   
  lpFileNames  
@@ -52,7 +52,7 @@ SCCRTN SccCheckout (
  lpComment  
  [in] Commento da applicare a ognuno dei file selezionati in corso l'estrazione.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando (vedere [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  

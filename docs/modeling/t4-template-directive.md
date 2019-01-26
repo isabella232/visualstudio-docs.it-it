@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974253"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
@@ -36,7 +36,7 @@ Esempio:
 `compilerOptions="optimize+"`
 
 Valori validi:
- 
+
 Qualsiasi opzione del compilatore valida.
 
 Ignorato per i modelli (pre-elaborati) della fase di esecuzione.
@@ -46,11 +46,11 @@ Queste opzioni vengono applicate una volta che il modello è stato convertito in
 ## <a name="culture-attribute"></a>attributo Culture
 
 Esempio:
- 
+
 `culture="de-CH"`
 
 Valori validi:
- 
+
 "", la lingua inglese, ovvero l'impostazione predefinita.
 
 Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per altre informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Valori validi:
- 
+
 `true`
- 
+
 `false` (impostazione predefinita)
- 
+
 Se l'attributo `debug` ha valore `true`, il file di codice intermedio conterrà le informazioni che consentono al debugger di identificare in modo più accurato la posizione nel modello in cui si è verificata un'interruzione o un'eccezione.
 
 Per i modelli in fase di progettazione il file di codice intermedio verrà scritto il **% TEMP %** directory.
@@ -88,9 +88,9 @@ hostspecific="true"
 Valori validi:
 
 `true`
- 
+
 `false` (impostazione predefinita)
- 
+
 `trueFromBase`
 
 Se si imposta il valore di questo attributo su `true`, viene aggiunta una proprietà denominata `Host` alla classe generata dal modello di testo. La proprietà è un riferimento all'host del motore di trasformazione e viene dichiarata come <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Se è stato definito un host personalizzato, è possibile eseguirne il cast sul tipo di host personalizzato.

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8b6ea7865bdf9a6fcf3b57f7a463fab83cbbf75b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc5cf725b47c740bc14a57870e589c5de4e8c1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980427"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
 Quando si apre una soluzione Domain-Specific Language Tools (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
@@ -40,7 +40,7 @@ Quando si apre una soluzione Domain-Specific Language Tools (strumenti DSL) in V
 
  Nella tabella seguente illustra alcuni degli elementi del diagramma del modello di dominio.
 
-|**Termine**|**Definizione**|
+|**Term**|**Definizione**|
 |-|-|
 |Classe di dominio|Classi di dominio sono i tipi di elementi nei modelli.<br /><br /> Una classe di dominio può contenere più di una volta in un diagramma, se si tratta della destinazione di più di una relazione.<br /><br /> Per aggiungere una classe di dominio, trascinare lo strumento di classe di dominio dal **casella degli strumenti** per il **Classes and Relationships** lato del diagramma.|
 |Relazione di dominio|Relazioni di dominio sono i tipi di collegamenti tra elementi nei modelli.<br /><br /> Un' *relazione di incorporamento* indica che l'elemento di destinazione è di proprietà o contenuto nell'elemento di origine e viene visualizzato come una linea continua. Ogni elemento in un modello deve essere la destinazione di una relazione di incorporamento, in modo che il modello costituisce una struttura ad albero. Oggetto *fanno riferimento a relazione* indica un collegamento tra elementi del modello generale e viene visualizzato come una linea tratteggiata. Qualsiasi elemento può avere qualsiasi numero di collegamenti di riferimento.<br /><br /> Creare una relazione facendo clic sullo strumento il **casella degli strumenti**, scegliendo la classe di dominio di origine e quindi scegliendo la classe di destinazione.|

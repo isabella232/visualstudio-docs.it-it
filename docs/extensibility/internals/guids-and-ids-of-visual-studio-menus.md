@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 227803e5eb1108079651271823efb615e4b473cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906943"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982897"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menu GUID e ID di Visual Studio
 Questo articolo enumera i valori GUID e ID dei menu e gruppi sulla barra dei menu di Visual Studio. Questi valori sono definiti nella *vsct* i file che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [definiti dall'IDE comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -39,7 +39,7 @@ Questo articolo enumera i valori GUID e ID dei menu e gruppi sulla barra dei men
 |Progetto|IDG_VS_MM_PROJECT|  
 |Compilazione|IDG_VS_MM_BUILDDEBUGRUN|  
 |Formato/Tools|IDG_VS_MM_TOOLSADDINS|  
-|Finestra/Guida/Community|IDG_VS_MM_WINDOWHELP|  
+|Window/Help/Community|IDG_VS_MM_WINDOWHELP|  
 |Componenti aggiuntivi|IDG_VS_MM_MACROS|  
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|  
   
@@ -87,7 +87,7 @@ Questo articolo enumera i valori GUID e ID dei menu e gruppi sulla barra dei men
 |Annullamento/ripristino|IDG_VS_EDIT_UNDOREDO|  
 |Le operazioni Taglia/Copia/Incolla|IDG_VS_EDIT_CUTCOPY|  
 |Seleziona|IDG_VS_EDIT_SELECT|  
-|Vai a|IDG_VS_EDIT_GOTO|  
+|GoTo|IDG_VS_EDIT_GOTO|  
 |Find|IDG_VS_EDIT_FIND|  
 |Oggetti|IDG_VS_EDIT_OBJECTS|  
 |Verbi OLE|IDG_VS_EDIT_OLEVERBS|  
@@ -111,7 +111,7 @@ Questo articolo enumera i valori GUID e ID dei menu e gruppi sulla barra dei men
 |Definire l'architettura di Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
 |Windows dell'organizzazione|IDG_VS_VIEW_ORG_WINDOWS|  
 |Browser di codice|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
-|Sviluppo Windows|IDG_VS_VIEW_DEV_WINDOWS|  
+|Dev Windows|IDG_VS_VIEW_DEV_WINDOWS|  
 |Barre degli strumenti|IDG_VS_VIEW_TOOLBARS|  
 |Simboli|IDG_VS_VIEW_SYMBOLNAVIGATE|  
 |Passare|IDG_VS_VIEW_NAVIGATE|  
@@ -180,7 +180,7 @@ Questo articolo enumera i valori GUID e ID dei menu e gruppi sulla barra dei men
 > [!NOTE]
 >  I nomi dei menu nella barra dei menu di Visual Studio non vengono visualizzati separatamente nella gerarchia perché questi possono essere dedotti dalla convenzione di denominazione per i gruppi nell'IDE, come indicato di seguito: *IDG_VS_\<nome del Menu\>_\<nome gruppo\>*.  
   
-|Gruppo padre|Sottomenu|Gruppi figlio|  
+|Gruppo padre|Submenu|Gruppi figlio|  
 |------------------|-------------|------------------|  
 |IDG_VS_FILE_FILE|IDM_VS_CSCD_NEW|IDG_VS_FILE_NEW_CASCADE|  
 ||IDM_VS_CSCD_OPEN|IDG_VS_FILE_OPENP_CASCADE|  
@@ -193,7 +193,7 @@ Questo articolo enumera i valori GUID e ID dei menu e gruppi sulla barra dei men
 |||IDG_VS_FILE_MOVE_PICKER|  
 |IDG_VS_VIEW_DEV_WINDOWS|IDM_VS_CSCD_FINDRESULTS|IDG_VS_WNDO_FINDRESULTS|  
 ||IDM_VS_CSCD_WINDOWS|IDG_VS_VIEW_CALLBROWSER|  
-|||IDG_VS_WNDO_OTRWNDWS1... 6|  
+|||IDG_VS_WNDO_OTRWNDWS1...6|  
 |||IDG_VS_WNDO_WINDOWS2|  
 |IDG_VS_VIEW_TOOLBARS|IDM_VS_CSCD_COMMANDBARS||  
 |IDG_VS_EDIT_GOTO|IDM_VS_EDITOR_FIND_MENU||  

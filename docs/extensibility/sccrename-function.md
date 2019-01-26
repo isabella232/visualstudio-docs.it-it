@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efd86fcfa728e9dfad05d9feb934bc2b54e5272b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb3605dd27c00821e7920ba12d5d4ce9f2130bd2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896136"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983716"
 ---
 # <a name="sccrename-function"></a>Funzione SccRename
 Questa funzione consente di rinominare un file nel sistema di controllo di origine.  
@@ -49,7 +49,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'operazione di ridenominazione completata correttamente.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto nel controllo del codice sorgente.|  

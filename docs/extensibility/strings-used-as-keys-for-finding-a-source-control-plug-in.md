@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f245a1657883acb63e9721837063c6a8ef245f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835750"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977024"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
 Le stringhe seguenti sono le chiavi per l'accesso del Registro di sistema per trovare informazioni sul controllo del codice sorgente del plug-in.  
@@ -26,7 +26,7 @@ Le stringhe seguenti sono le chiavi per l'accesso del Registro di sistema per tr
   
 ## <a name="string-keys-and-values"></a>Chiavi String e valori  
   
-|Chiave|Value|  
+|Chiave|Valore|  
 |---------|-----------|  
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|  
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
@@ -36,8 +36,8 @@ Le stringhe seguenti sono le chiavi per l'accesso del Registro di sistema per tr
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. CONTROLLO DEL CODICE SORGENTE|  
-|`SCC_KEY`|CONTROLLO DEL CODICE SORGENTE|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
+|`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Un file di controllo del codice sorgente|  
 |`SCC_NSE`|Estensione Namespace|  
 |`SCC_NSE_PREFIX`|Prefisso Protocal|  

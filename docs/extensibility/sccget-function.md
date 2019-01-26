@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0f56292dfdeb56eb770a5cec5abf6c0d6b82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8cff11ca46924b84c61f45fb5c11993313bff9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993741"
 ---
 # <a name="sccget-function"></a>Funzione SccGet
 Questa funzione recupera una copia di uno o più file per la visualizzazione e la compilazione ma non per la modifica. Nella maggior parte dei sistemi, i file vengono contrassegnati come di sola lettura.  
@@ -42,13 +42,13 @@ SCCRTN SccGet(
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file specificato per il `lpFileNames` matrice.  
   
  lpFileNames  
  [in] Matrice di nomi completi di file da recuperare.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
   
  pvOptions  

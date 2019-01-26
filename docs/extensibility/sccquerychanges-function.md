@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6fabc1108f82c1cd2b43bf740e58c4ea9bb613e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b2f1fff6bff9130bc337a4636aea3127d85514b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910883"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993509"
 ---
 # <a name="sccquerychanges-function"></a>Funzione SccQueryChanges
 Questa funzione enumera un elenco di file, che fornisce informazioni sulle modifiche ai nomi per ogni file tramite una funzione di callback.  
@@ -38,7 +38,7 @@ SCCRTN SccQueryChanges(
  pContext  
  [in] Il puntatore di contesto del plug-in controllo di origine.  
   
- nFile  
+ nFiles  
  [in] Numero di file in `lpFileNames` matrice.  
   
  lpFileNames  
@@ -53,7 +53,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Il processo di query completato.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è stata aperta nel controllo del codice sorgente.|  

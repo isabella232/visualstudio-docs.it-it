@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9798f280d271299037c001e71f9c9f5ed1940f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a08e365bf934914fba31af5e7404d4be32b37b5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956472"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996220"
 ---
 # <a name="sccrunscc-function"></a>Funzione SccRunScc
 Questa funzione richiama lo strumento di amministrazione di controllo di origine.  
@@ -40,7 +40,7 @@ SCCRTN SccRunScc(
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file specificato per il `lpFileNames` matrice.  
   
  lpFileNames  
@@ -49,7 +49,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Lo strumento di amministrazione di controllo di origine è stato richiamato.|  
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata.|  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e86b6163a581a2bd7233596b3871a82f356b3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930713"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988766"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e selezione (VSPackage di controllo del codice sorgente)
 Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice sorgente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se più di un controllo del codice sorgente VSPackage è registrato, l'utente può selezionare quale VSPackage da caricare in momenti appropriati. Visualizzare [VSPackage](../../extensibility/internals/vspackages.md) per altre informazioni sui pacchetti VSPackage e come registrarle.  
@@ -41,10 +41,10 @@ Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice
   
 | Nome della chiave | Voci |
 | - | - |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (impostazione predefinita) = rg_sz: {ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (impostazione predefinita) = rg_sz:\<nome descrittivo del pacchetto ><br /><br /> Servizio = rg_sz: {SID_SccPkgService} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (impostazione predefinita) = rg_sz: &\<ID risorsa per nome localizzato ><br /><br /> Pacchetto = rg_sz: {ID_Package} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Si noti che il nome della chiave `SourceCodeControl`, è già usato da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e non è disponibile come scelta per \<PackageName >.) | (impostazione predefinita) = rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (default) = rg_sz:{ID_SccProvider} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (impostazione predefinita) = rg_sz:\<nome descrittivo del pacchetto ><br /><br /> Service = rg_sz:{SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (impostazione predefinita) = rg_sz: &\<ID risorsa per nome localizzato ><br /><br /> Package = rg_sz:{ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Si noti che il nome della chiave `SourceCodeControl`, è già usato da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e non è disponibile come scelta per \<PackageName >.) | (default) = rg_sz:{ID_Package} |
   
 ## <a name="selecting-a-source-control-package"></a>Selezione di un pacchetto controllo del codice sorgente  
  Diversi basato su API dei plug-in del controllo origine plug-in e i pacchetti VSPackage possono essere registrati contemporaneamente di controllo del codice sorgente. È necessario assicurarsi che il processo di selezione di un plug-in del controllo del codice sorgente o un pacchetto VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carica il plug-in o VSPackage al momento opportuno, può rinviare il caricamento dei componenti non necessari fino a quando sono necessari. Inoltre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve rimuovere l'interfaccia utente da altri VSPackage inattivi, incluse le voci di menu, finestre di dialogo e le barre degli strumenti e visualizzare l'interfaccia utente per il pacchetto VSPackage attivo.  

@@ -1,5 +1,5 @@
 ---
-title: Crea o aggiorna i criteri di controllo dell'analisi del codice Standard
+title: Creare o aggiornare i criteri di archiviazione standard di analisi codice
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9231b23f00beb71ae8ba27792148c460575dc828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890339"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997169"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Crea o aggiorna i criteri di controllo dell'analisi del codice Standard
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare i criteri di archiviazione standard di analisi codice
 
 È possibile richiedere che l'analisi del codice deve essere eseguito in tutti i progetti di codice in un progetto Azure DevOps usando i criteri di controllo dell'analisi codice. Richiedere l'analisi del codice, è possibile migliorare la qualità del codice che viene archiviata nella codebase.
 
