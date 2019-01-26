@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, ranges
 - ranges, common tasks
 - workbooks, ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985235b593deef56e74e5bb73604cb7ac366541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 22de14631f530ccf1f1fe04b0bb91d06c98a5044
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961673"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872755"
 ---
 # <a name="work-with-ranges"></a>Lavorare con intervalli
   Le classi <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Interop.Excel.Range> contengono i metodi e le proprietà usati per eseguire attività con intervalli.  
