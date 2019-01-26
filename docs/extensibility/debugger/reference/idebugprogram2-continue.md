@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e5b607588ff10f94db46b86667acc0ae968a16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 225a1d78e3fb6610d9cbcebd1253131f0fe9caf2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028543"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua l'esecuzione di questo programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente (ad esempio, un passaggio) viene mantenuto, e il programma inizia l'esecuzione anche in questo caso.  
   
 > [!NOTE]
->  Questo metodo è deprecato. Usare la [continuazione](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metodo invece.  
+>  Metodo deprecato. Usare la [continuazione](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metodo invece.  
   
 ## <a name="syntax"></a>Sintassi  
   

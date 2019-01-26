@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e83bea1cf503f7b2b7ffaf19452a4f819f023089
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030600"
 ---
-# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Valutazione delle espressioni (Visual Studio Debugging SDK)
+# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Expression evaluation (Visual Studio Debugging SDK)
 Durante la modalità di interruzione, l'IDE deve valutare espressioni semplici che interessa diverse variabili di programma. Per portare a termine la sua valutazione, il motore di debug (DE) deve analizzare e valutare un'espressione che viene immesso in una delle finestre dell'IDE. 
   
  Le espressioni vengono create con il [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metodo e rappresentati da risultante [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia.  

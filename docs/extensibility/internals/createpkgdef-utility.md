@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 312bbab46cfb7dec85e42f425b2363c2442e576b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016226"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 Accetta un file con estensione dll per un'estensione di Visual Studio come parametro e crea un *pkgdef* file di accompagnamento per il *DLL* file. Il *pkgdef* file contiene tutte le informazioni che verrebbe scritto nel Registro di sistema in caso contrario, quando è installata l'estensione.  
@@ -33,7 +33,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```  
   
 ## <a name="arguments"></a>Argomenti  
- **/ out =&lt;nomefile&gt;**  
+ **/out=&lt;FileName&gt;**  
  Obbligatorio. Imposta il nome del *pkgdef* del file di output &lt;FileName&gt;.  
   
  **/codebase**  
@@ -50,7 +50,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  Il *pkgdef* file devono essere installati in una delle seguenti posizioni: 
 
-- *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
 - *%VSInstallDir%\Common7\IDE\Extensions\\*
     

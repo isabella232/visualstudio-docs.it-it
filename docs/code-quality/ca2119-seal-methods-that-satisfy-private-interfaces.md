@@ -1,5 +1,5 @@
 ---
-title: 'CA2119: IMPOSTARE COME Sealed i metodi che soddisfano interfacce private'
+title: 'CA2119: Impostare come sealed i metodi che soddisfano interfacce private'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fbe9e56c1286acc2eb948d0ec692f441bd1975
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26a7aeca52852679797ccd5ce4de356abc289100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029661"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: IMPOSTARE COME Sealed i metodi che soddisfano interfacce private
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Impostare come sealed i metodi che soddisfano interfacce private
 
 |||
 |-|-|

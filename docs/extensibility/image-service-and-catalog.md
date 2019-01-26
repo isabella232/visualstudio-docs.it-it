@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3113280b7a32d9323f1b5a1638123dca8163528f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018813"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigliate per adottare il catalogo di immagini introdotto in Visual Studio 2015 e Visual Studio Image Service.  
@@ -46,7 +46,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 ## <a name="how-it-works"></a>Come funziona
  Il servizio immagini può fornire un'immagine bitmap adatta per qualsiasi framework dell'interfaccia utente supportate:  
   
-- WPF: Oggetto BitmapSource  
+- WPF: BitmapSource  
   
 - Windows Form: System.Drawing.Bitmap  
   
@@ -104,7 +104,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
   
 |||  
 |-|-|  
-|**Sottoelemento**|**Definizione**|  
+|**Subelement**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|  
 |GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID|  
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
@@ -174,8 +174,8 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|\<Dimensioni >|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
-|\<SizeRange >|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
+|\<Size>|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
+|\<SizeRange>|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
 |\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini della larghezza specificata e dell'altezza (espressa in unità di dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima per la larghezza/altezza massima (in unità di dispositivo), inclusi.|  
   
@@ -240,7 +240,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
   
     -   Obbligatorio se si usa la **BrushToColorConverter** per il **ImageThemingUtilities.ImageBackgroundColor** nella UI di WPF.  
   
--   *Microsoft.VisualStudio.Shell. \<VSVersion >,0*  
+-   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*  
   
     -   Obbligatorio se si usa la **IVsUIObject** tipo.  
   
@@ -968,11 +968,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Document|  
         |GlyphForwardType||GoToNext|  
-        |GlyphCallersGraph||Callto://|  
+        |GlyphCallersGraph||CallTo|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
         |GlyphMaybeReference||QuestionMark|  
-        |GlyphMaybeCaller||Callto://|  
+        |GlyphMaybeCaller||CallTo|  
         |GlyphMaybeCall||CallFrom|  
         |GlyphExtensionMethod||ExtensionMethod|  
         |GlyphExtensionMethodInternal||ExtensionMethod|  

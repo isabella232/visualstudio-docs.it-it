@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012274"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Novità di estendibilità di Visual Studio 2017
 
@@ -92,9 +92,9 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 ### <a name="visual-studio-registry"></a>Registro di sistema di Visual Studio
 
 * Visual Studio installato in precedenza, numero di chiavi del Registro di sistema al sistema **HKEY_LOCAL_MACHINE** e **HKEY_CURRENT_USER** hive in una chiave specifica di Visual Studio:
-  * **HKLM\Software\Microsoft\VisualStudio\{versione}**: Chiavi del Registro di sistema create da programmi di installazione MSI ed estensioni per i singoli computer.
-  * **HKCU\Software\Microsoft\VisualStudio\{versione}**: Chiavi del Registro di sistema create da Visual Studio per archiviare le impostazioni specifiche dell'utente.
-  * **HKCU\Software\Microsoft\VisualStudio\{versione} _Config**: Una copia della chiave di Visual Studio HKLM precedente, oltre le chiavi del Registro di sistema dall'unione *pkgdef* file dalle estensioni.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Chiavi del Registro di sistema create da programmi di installazione MSI ed estensioni per i singoli computer.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Chiavi del Registro di sistema create da Visual Studio per archiviare le impostazioni specifiche dell'utente.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Una copia della chiave di Visual Studio HKLM precedente, oltre le chiavi del Registro di sistema dall'unione *pkgdef* file dalle estensioni.
 * Per ridurre l'impatto sul Registro di sistema, Visual Studio Usa ora la [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) per archiviare le chiavi del Registro di sistema in un file binario privato nella funzione *[VSAPPDATA]\privateregistry.bin*. Solo un numero molto ridotto di chiavi specifico di Visual Studio rimane nel Registro di sistema.
 
 * Il codice esistente in esecuzione all'interno del processo di Visual Studio non è compromessa. Visual Studio reindirizzerà tutte le operazioni del Registro di sistema nella chiave specifiche di HKCU Visual Studio nel Registro di sistema privato. Lettura e scrittura in altre posizioni del Registro di sistema continuerà a usare il Registro di sistema.

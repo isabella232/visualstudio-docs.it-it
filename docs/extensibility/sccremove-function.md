@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b07706fd7e74011a87d0eb67c8a158208ac95a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4db8360f6874f8e2c506aefb153c663670fa5cba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818430"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014835"
 ---
 # <a name="sccremove-function"></a>Funzione SccRemove
 Questa funzione Elimina i file dal sistema di controllo di origine.  
@@ -43,7 +43,7 @@ SCCRTN SccRemove(
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file specificato per il `lpFileNames` matrice.  
   
  lpFileNames  
@@ -52,7 +52,7 @@ SCCRTN SccRemove(
  lpComment  
  [in] Il commento da applicare a ogni file rimosso.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando (non usato).  
   
  pvOptions  
@@ -61,7 +61,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|La rimozione è stata completata.|  
 |SCC_E_FILENOTCONTROLLED|Il file selezionato non è incluso nel controllo del codice sorgente.|  
