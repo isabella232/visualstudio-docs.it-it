@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method details
 - BDC [SharePoint development in Visual Studio], BDC Explorer
 - BDC [SharePoint development in Visual Studio], designer
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 533a49db6e528ba75da9cbe232e7875413ed0724
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871491"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati
   È possibile progettare un modello di integrazione applicativa dei dati (BDC) usando la finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo BDC** finestra e il **Esplora integrazione applicativa dei dati**.  

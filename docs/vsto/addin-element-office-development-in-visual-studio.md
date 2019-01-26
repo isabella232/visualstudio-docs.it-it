@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90ad45aa77ce5e383f258c0fcaa10030b46dd1c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867731"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864319"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;componente aggiuntivo&gt; elemento (sviluppo per Office in Visual Studio)
   Il **addin** elemento di `vstav3` dello spazio dei nomi contiene informazioni specifiche per i componenti aggiuntivi VSTO per Microsoft Office e le personalizzazioni a livello di documento sviluppate con Visual Studio.
@@ -50,7 +50,7 @@ ms.locfileid: "53867731"
 </addIn>
 ```
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi
+## <a name="elements-and-attributes"></a>Elementi e attributi
  Il **addin** dell'elemento il `vstav3` dello spazio dei nomi contiene le informazioni sulla soluzione Office e l'applicazione Microsoft Office. Questo elemento deve essere presente nello spazio dei nomi seguente: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Anche gli elementi figlio devono trovarsi in questo spazio dei nomi.
 
  L'elemento `addin` non ha attributi.

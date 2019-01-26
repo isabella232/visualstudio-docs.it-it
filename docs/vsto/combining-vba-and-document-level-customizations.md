@@ -21,15 +21,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa94c6a3b86abe53e374f8d797158bcded55f440
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987888"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866675"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinazione di VBA e le personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.  
@@ -143,7 +143,7 @@ Sub MyMacro()
 End Sub  
 ```  
   
- Questa proprietà rappresenta un modo più pratico per effettuare chiamate nell'assembly di personalizzazione rispetto all'utilizzo diretto del metodo `GetManagedClass`. `CallVSTOAssembly` restituisce un oggetto che rappresenta la classe di elementi host esposta a VBA. I membri e i parametri del metodo dell'oggetto restituito sono visualizzati in IntelliSense.  
+ Questa proprietà rappresenta un modo più pratico per effettuare chiamate nell'assembly di personalizzazione rispetto all'utilizzo diretto del metodo `GetManagedClass` . `CallVSTOAssembly` restituisce un oggetto che rappresenta la classe di elementi host esposta a VBA. I membri e i parametri del metodo dell'oggetto restituito sono visualizzati in IntelliSense.  
   
  La proprietà `CallVSTOAssembly` dispone di una dichiarazione che è simile al codice seguente. Tale codice presuppone che sia stata esposta a VBA la classe di elementi host `Sheet1` in un progetto di cartella di lavoro di Excel denominato `ExcelWorkbook1` .  
   

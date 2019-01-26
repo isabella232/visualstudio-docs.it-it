@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c735bf0ab534e042e595fd12864a06dcf0a30f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87e6f4663a73b1c3f7bfe203833ed62c686298bc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916879"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867767"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Estendere la distribuzione e creazione di pacchetti di SharePoint
   È possibile estendere il processo di creazione di pacchetti e distribuzione per i progetti SharePoint.

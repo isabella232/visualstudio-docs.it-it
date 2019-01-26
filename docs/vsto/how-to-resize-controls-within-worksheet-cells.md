@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed controls, resizing
 - worksheets, resizing
 - Windows Forms controls [Office development in Visual Studio], resizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe63ef8be7c17482f0af864c45b29d8e2dd51189
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927350"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863877"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: Ridimensionare i controlli nelle celle di un foglio di lavoro
   Quando si ridimensiona colonne o righe in un foglio di lavoro, tutti i controlli host all'interno delle celle viene ridimensionato automaticamente per l'altezza o la larghezza della cella che è stata ridimensionata. Controlli Windows Form non vengono ridimensionano automaticamente per impostazione predefinita.  
