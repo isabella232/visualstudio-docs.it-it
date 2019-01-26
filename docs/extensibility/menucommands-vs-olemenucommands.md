@@ -7,13 +7,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-manager: douge
-ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0923b179c3a2237c6923a7f889c802239d824fb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935709"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>Confronto tra oggetti MenuCommand e OleMenuCommand
 È possibile creare comandi di menu dal <xref:System.ComponentModel.Design.MenuCommand> o da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> dell'oggetto e implementare i gestori eventi appropriati. Nella maggior parte dei casi, è possibile usare <xref:System.ComponentModel.Design.MenuCommand>, come avviene nel modello di progetto VSPackage, ma talvolta potrebbe essere necessario usare <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -65,7 +65,7 @@ ms.locfileid: "53926239"
   
    1.  Impostare i campi `guid` e `id` in modo che corrispondano alla coppia GUID:ID del nuovo comando.  
   
-   2.  Impostare l'attributo `priority`.  
+   2.  Impostare l'attributo `priority` .  
   
         L'attributo `priority` viene usato dal file VSCT per determinare la posizione del pulsante tra gli altri oggetti nel gruppo padre.  
   
@@ -207,7 +207,7 @@ ms.locfileid: "53926239"
   
 1. Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> per i comandi validi.  
   
-2. Impostare l'elemento `cmdf` del parametro `prgCmds`.  
+2. Impostare l'elemento `cmdf` del parametro `prgCmds` .  
   
     Il valore dell'elemento `cmdf` è l'unione logica dei valori dell'enumerazione <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> , combinati usando l'operatore logico OR (operatore`|`).  
   
@@ -235,7 +235,7 @@ ms.locfileid: "53926239"
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
-   - Se il comando usa il flag `TEXTCHANGES`, impostare l'elemento `rgwz` del parametro `pCmdText` sul nuovo testo del comando e impostare l'elemento `cwActual` del parametro `pCmdText` sulla dimensione della stringa di comando.  
+   - Se il comando usa il flag `TEXTCHANGES` , impostare l'elemento `rgwz` del parametro `pCmdText` sul nuovo testo del comando e impostare l'elemento `cwActual` del parametro `pCmdText` sulla dimensione della stringa di comando.  
   
      Per le condizioni di errore, il metodo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> deve gestire i casi di errore seguenti:  
   

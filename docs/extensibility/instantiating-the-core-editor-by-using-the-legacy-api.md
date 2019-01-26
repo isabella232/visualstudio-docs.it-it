@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 292e30a094cd78954e48817324a44ebacda7a78a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934534"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Creare un'istanza di editor principale con l'API legacy
 L'editor è responsabile per la modifica funzioni, ad esempio inserimento, eliminazione, copia e Incolla di testo. Combina queste funzioni con le funzioni fornite da servizi di linguaggio, ad esempio di colorazione del testo, il rientro e il completamento delle istruzioni IntelliSense.  

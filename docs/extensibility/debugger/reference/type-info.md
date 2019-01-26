@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6068388cc422d9f72ac873f9650f1c2e1b7a151
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fcc5f5f6b37a632d2e634b22ab3d7032214af462
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934276"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Questa struttura consente di specificare vari tipi di informazioni sul tipo del campo.  
@@ -56,7 +56,7 @@ public struct TYPE_INFO {
  type.typeBuilt  
  [Solo C++] Contiene un [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struttura se `dwKind` è `TYPE_KIND_BUILT`.  
   
- Type.Unused  
+ type.unused  
  Spaziatura interna inutilizzata.  
   
  tipo  

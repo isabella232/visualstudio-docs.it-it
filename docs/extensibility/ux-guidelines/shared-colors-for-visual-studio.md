@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991243"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928906"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che l'elemento dell'interfaccia siano coerenti con funzionalità simili, usare nomi di token esistenti in file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.  
@@ -45,7 +45,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 
 **Pulsante: standard dello stato**
 
-![Pulsante standard](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Pulsante standard
+![Standard button](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Pulsante standard
 
 | Elemento | Nome token: Category. Color |
 | --- | --- |
@@ -98,7 +98,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Bordo del pulsante | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>Controlli casella di controllo  
-![Casella di controllo (con linea rossa)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303 161_CheckboxRedline")<br />Casella di controllo (con linea rossa)  
+![Check box (redline)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303-161_CheckboxRedline")<br />Casella di controllo (con linea rossa)  
 
 | Usare... | Non usare... |
 | --- | --- |
@@ -160,7 +160,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Icona | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>Elenchi a discesa e combinata finestre
-![Casella combinata/Drop-down (con linea rossa)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")<br />Casella combinata/Drop-down (con linea rossa)  
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Casella combinata/Drop-down (con linea rossa)  
 
 | Usare... | Non usare... |
 | --- | --- |
@@ -169,7 +169,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 
 **Elenchi a discesa e combinata caselle: stato predefinito**  
 
-![Casella combinata/a discesa-rilascio predefinito](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303 168_DropDownComboBox")<br />Casella combinata/a discesa-rilascio predefinito
+![Default drop-down/combo box](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />Casella combinata/a discesa-rilascio predefinito
 
 | Elemento | Nome token: Category. Color |
 | --- | --- |
@@ -177,12 +177,12 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Bordo | `CommonControls.ComboBoxBorder` |
 | Testo | `CommonControls.ComboBoxText` |
 | Separatore | `CommonControls.ComboBoxSeparator` |
-| Glifo | `CommonControls.ComboBoxGlyph` |
+| Icona | `CommonControls.ComboBoxGlyph` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackground` |
 
 **Elenchi a discesa e combinata caselle: nello stato disabilitato**  
 
-![Casella combinata/freccia a discesa disabilitata](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")<br />Casella combinata/freccia a discesa disabilitata
+![Disabled drop-down/combo box](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />Casella combinata/freccia a discesa disabilitata
 
 | Elemento | Nome token: Category. Color |
 | --- | --- |
@@ -190,12 +190,12 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Bordo | `CommonControls.ComboBoxBorderDisabled` |
 | Testo | `CommonControls.ComboBoxTextDisabled` |
 | Separatore | `CommonControls.ComboBoxSeparatorDisabled` |
-| Glifo | `CommonControls.ComboBoxGlyphDisabled` |
+| Icona | `CommonControls.ComboBoxGlyphDisabled` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundDisabled` |
 
 **Elenchi a discesa e combinata caselle: passare il puntatore dello stato**  
 
-![Casella combinata/freccia a discesa al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")<br />Casella combinata/a discesa al passaggio del mouse
+![Drop-down/combo box on hover](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")<br />Casella combinata/a discesa al passaggio del mouse
 
 | Elemento | Nome token: Category. Color |
 | --- | --- |
@@ -203,12 +203,12 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Bordo | `CommonControls.ComboBoxBorderHover` |
 | Testo | `CommonControls.ComboBoxTextHover` |
 | Separatore | `CommonControls.ComboBoxSeparatorHover` |
-| Glifo | `CommonControls.ComboBoxGlyphHover` |
+| Icona | `CommonControls.ComboBoxGlyphHover` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundHover` |
 
 **Elenchi a discesa e combinata caselle: lo stato di premuto**  
 
-![Casella combinata a discesa/casella selezionata](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")<br />Casella combinata a discesa/casella selezionata  
+![Pressed drop-down/combo box](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Casella combinata a discesa/casella selezionata  
 
 | Elemento | Nome token: Category. Color |
 | --- | --- |
@@ -216,7 +216,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Bordo | `CommonControls.ComboBoxBorderPressed` |
 | Testo | `CommonControls.ComboBoxTextPressed` |
 | Separatore | `CommonControls.ComboBoxSeparatorPressed` |
-| Glifo | `CommonControls.ComboBoxGlyphPressed` |
+| Icona | `CommonControls.ComboBoxGlyphPressed` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundPressed` |
 
 **Elenchi a discesa e combinata le finestre di visualizzazione dell'elemento elenco: lo stato di premuto**  
@@ -240,7 +240,7 @@ Quando si usa una barra dei comandi di Visual Studio standard nella propria funz
 | Bordo | `CommonControls.ComboBoxBorderFocused` |
 | Testo | `CommonControls.ComboBoxTextFocused` |
 | Separatore | `CommonControls.ComboBoxSeparatorFocused` |
-| Glifo | `CommonControls.ComboBoxGlyphFocused` |
+| Icona | `CommonControls.ComboBoxGlyphFocused` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundFocused` |
 
 **Elenchi a discesa e combinata caselle: selezione di input di testo**  
@@ -331,7 +331,7 @@ Testo esplicativo offre una spiegazione principale notificate all'utente di oper
 #### <a name="secondary-instructional-text"></a>Testo esplicativo secondario
 Nelle pagine di documento con un numero elevato di testo e controlli, testo esplicativo Usa un valore di colore diverso. Ciò consente di trasmettere le informazioni che sono la più importante e ridurre la densità complessiva degli elementi dell'interfaccia utente. (Vedere anche la seguente sezione nel testo del suggerimento.)
 
-![Testo esplicativo secondario](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Testo esplicativo secondario
+![Secondary instructional text](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Testo esplicativo secondario
 
 | Elemento | Nome token: Category. Color |
 | --- | --- |
@@ -411,7 +411,7 @@ Il collegamento ipertestuale è un controllo che non dispone di una coppia primo
 ### <a name="infobars"></a>Barre informazioni  
 Le barre informazioni vengono usate per fornire altre informazioni su un contesto specifico e sono sempre visualizzate nella parte superiore della finestra di un documento o di una finestra degli strumenti.  
 
-![Barra informazioni (con linea rossa)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303 138_InfobarRedline")<br />Barra informazioni (con linea rossa)
+![Infobar (redline)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Barra informazioni (con linea rossa)
 
 | Usare... | Non usare... |
 | --- | --- |
@@ -631,7 +631,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 -   "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.  
 
-![Casella di ricerca (con linea rossa)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303 110_SearchBoxRedline")<br />Casella di ricerca (con linea rossa)  
+![Search box (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Casella di ricerca (con linea rossa)  
 
 | Usare... | Non usare... |
 | --- | --- |
@@ -780,7 +780,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 #### <a name="search-drop-down-lists"></a>Elenchi a discesa di ricerca  
 Il menu di riepilogo a discesa casella di ricerca può essere leggermente più complesso rispetto altri menu di riepilogo a discesa in Visual Studio. Il "ricerche suggerite" e "Opzioni di ricerca" sezioni possono essere visualizzati singolarmente o insieme nel menu di scelta, e ognuno di essi viene colorato separatamente. Una linea separa le due sezioni quando sono visualizzate insieme e un bordo circonda l'intero menu a discesa.  
 
-![Elenco di riepilogo a discesa di ricerca (con linea rossa)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303 124_SearchDropdownRedline")<br />Elenco di riepilogo a discesa di ricerca (con linea rossa)
+![Search drop-down list (redline)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />Elenco di riepilogo a discesa di ricerca (con linea rossa)
 
 | Usare... | Non usare... |
 | --- | --- |
@@ -816,7 +816,7 @@ Il menu di riepilogo a discesa casella di ricerca può essere leggermente più c
 
 **Le opzioni di ricerca: stato predefinito**
 
-![Casella di controllo di ricerca](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303 126_SearchCheckbox")<br />Opzioni di ricerca predefinito (casella di controllo)  
+![Search check box](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />Opzioni di ricerca predefinito (casella di controllo)  
 
 ![Le opzioni di ricerca](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303 127_SearchOptions")<br />Opzioni di ricerca predefinito (collegamento)  
 
@@ -1037,7 +1037,7 @@ La finestra Progettazione manifesto è stata progettata come strumento per sempl
 
 ## <a name="command-structures"></a>Strutture dei comandi  
 
-###  <a name="BKMK_CommandMenus"></a> Menu  
+###  <a name="BKMK_CommandMenus"></a> Menus  
 I menu possono trovarsi in diverse posizioni all'interno di Visual Studio: barra dei menu principale, incorporata in finestre di documento o lo strumento, o sul pulsante destro del mouse in diversi punti dell'IDE. Le implementazioni dei menu associati ad altri elementi dell'interfaccia utente vengono descritte nella sezione relativa al rispettivo elemento. È preferibile usare sempre l'implementazione dei menu standard fornita dall'ambiente di Visual Studio. Tuttavia, in alcuni casi rari si potrebbe non avere accesso ai menu standard di Visual Studio. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri menu in Visual Studio.  
 
 ![Menu di Visual Studio (con linea rossa)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Menu di Visual Studio (con linea rossa)
@@ -1182,7 +1182,7 @@ In generale, usare sempre l'implementazione della barra dei menu standard fornit
 
 ![Sulla barra dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "0303 018_CommandBarRedline")<br />Sulla barra dei comandi (con linea rossa)  
 
-![Pulsante di overflow con linea rossa](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303 019_OverflowButtonRedline")<br />Pulsante di overflow (con linea rossa)  
+![Overflow button redline](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303-019_OverflowButtonRedline")<br />Pulsante di overflow (con linea rossa)  
 
 | Usare... | Non usare... |
 | --- | --- |

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2cfc74b192be01b9b5ce258d2686dda1b8ccc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930004"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creare un sistema di progetto di base, parte 1
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse. I progetti vengono visualizzati come figli di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.  
@@ -74,7 +74,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
   
 3. Verificare l'icona distintivo. Questa icona verrà visualizzata nel **nuovo progetto** finestra di dialogo in un secondo momento nella procedura dettagliata.  
   
-    ![Icona progetto semplice](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4. L'icona di salvare e chiudere l'editor di icona.  
   
@@ -456,7 +456,7 @@ Templates
   
 2. Nel **proprietà** windows, ridurre la bitmap da 16x16 pixel. Rendere la bitmap distintivo.  
   
-    ![Comando progetto semplice](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. Nel **delle proprietà** finestra Modifica il **azione di compilazione** della bitmap da **risorsa incorporata**.  
   

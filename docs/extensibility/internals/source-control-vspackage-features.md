@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77635f360b2602bc2d75d672b26d770877422c02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8cc5e25355758312227687f4319bfa95eb1c7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929757"
 ---
 # <a name="source-control-vspackage-features"></a>Funzionalità dei pacchetti VSPackage di controllo del codice sorgente
 Questa sezione descrive le varie caratteristiche di un pacchetto VSPackage di controllo di origine. Descrive la registrazione e selezione dettagli per questo tipo di un VSPackage e vengono illustrate tre delle funzionalità relativa ai controlli origine principale: è possibile gestire gli eventi Query Edit Query Save (QEQS), di sostituzione di glifi e interfaccia utente personalizzata (UI) per il controllo del codice sorgente funzioni.  
