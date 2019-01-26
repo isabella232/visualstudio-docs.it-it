@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], data
 - BDC [SharePoint development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d04a3fcfac93ffbb6a2a6c60363e4906898e0c7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934440"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865476"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrare i dati aziendali in SharePoint
   È possibile integrare i dati aziendali in SharePoint. I dati aziendali possono provenire da applicazioni server back-end, ad esempio [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel e SAP, o un servizio Web. Gli utenti possono visualizzare, aggiungere, aggiornare o eliminare i dati aziendali usando gli elenchi esterni o Web part dei dati aziendali in SharePoint.  Gli utenti possono accedere anche questi dati in un'applicazione Microsoft Office, ad esempio Microsoft Outlook. Per altre informazioni, vedere [dove possibile è visualizzazione dei dati esterni](http://go.microsoft.com/fwlink/?LinkId=169295).  

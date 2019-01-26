@@ -15,15 +15,15 @@ helpviewer_keywords:
 - exporting Ribbon
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 706c200a1327ed63cc0a37f002f6bb745cbea3ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894061"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876213"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione XML della barra multifunzione
   Il **sulla barra multifunzione (finestra di progettazione visiva)** elemento non supporta tutti i possibili tipi di personalizzazione della barra multifunzione. Per personalizzare la barra multifunzione in modi avanzati, è possibile esportare la barra multifunzione dalla finestra di progettazione XML della barra multifunzione e modificare direttamente il file XML.  
@@ -66,7 +66,7 @@ ms.locfileid: "53894061"
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
- [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
  [XML della barra multifunzione](../vsto/ribbon-xml.md)   
  [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Procedura dettagliata: Creare una scheda personalizzata utilizzando XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  

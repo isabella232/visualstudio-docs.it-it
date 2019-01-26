@@ -16,15 +16,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d364f148fb52412038c57e6f4e732ffe4e2a6e31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b849ec54893dc3505b7ba113d0ef5c6c6117837f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829657"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862681"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Procedura: Aggiungere parti XML personalizzate a documenti usando componenti aggiuntivi VSTO
   È possibile archiviare dati XML nei tipi seguenti di documenti creando una parte XML personalizzata in un componente aggiuntivo VSTO:  

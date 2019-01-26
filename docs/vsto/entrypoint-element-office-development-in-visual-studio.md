@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPoint element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c99b6b052fcb411d3f5972d174f804f3000faabe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902129"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873444"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punto di ingresso&gt; elemento (sviluppo per Office in Visual Studio)
   Ogni elemento `entryPoint` dello spazio dei nomi `vstav3` identifica un assembly di personalizzazione che deve essere eseguito quando l'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] è installata.
@@ -34,7 +34,7 @@ ms.locfileid: "53902129"
 </entryPoint>
 ```
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi
+## <a name="elements-and-attributes"></a>Elementi e attributi
  L'elemento `entryPoint` è obbligatorio e si trova nello spazio dei nomi `vstav3` .
 
  Ogni elemento `entryPoint` può contenere solo un assembly di personalizzazione. Possono essere definiti più elementi `entryPoint` in un manifesto dell'applicazione.

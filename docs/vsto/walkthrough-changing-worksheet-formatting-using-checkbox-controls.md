@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935099"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871026"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: La modifica del foglio di lavoro della formattazione mediante controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base dell'uso di caselle di controllo in un foglio di lavoro di Microsoft Office Excel per modificare la formattazione. Si userà gli strumenti di sviluppo per Office in Visual Studio per creare e aggiungere codice al progetto. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -66,7 +66,7 @@ ms.locfileid: "53935099"
   
 4.  Assicurarsi che **Checkbox1** è visibile nella casella di riepilogo Nome oggetto del **proprietà** finestra e modificare le proprietà seguenti:  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
     |**Name**|**applyBoldFont**|  
     |**per**|**Grassetto**|  

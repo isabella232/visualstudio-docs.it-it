@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958397"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867964"
 ---
 # <a name="debug-office-projects"></a>Eseguire il debug di progetti di Office
   È possibile eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che si usano per altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Le funzionalità del debugger di[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , ad esempio la possibilità di inserire punti di interruzione e visualizzare le variabili nella finestra **Variabili locali** , sono disponibili anche quando si esegue il debug di progetti di Office. Per altre informazioni sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di debug, vedere [eseguire il Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae451b42642cd3c124b3fe9d5df627c2306a2020
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891939"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873873"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione
   Questa procedura dettagliata illustra le nozioni di base dell'uso di pulsanti di opzione in un foglio di lavoro di Microsoft Office Excel per consentire all'utente un modo per passare rapidamente tra le opzioni. In questo caso, le opzioni di modificare lo stile di un grafico.  
@@ -57,7 +57,7 @@ ms.locfileid: "53891939"
 
 4. Aggiungere i dati seguenti per **dei dati per il grafico** cella A4 che rappresenta l'angolo superiore sinistro angolo ed E8 angolo inferiore destro.  
 
-   ||(DOMANDA 1)|(DOMANDA 2)|(DOMANDA 3)|(DOMANDA 4)|  
+   ||Q1|(DOMANDA 2)|Q3|Q4|  
    |-|--------|--------|--------|--------|  
    |Occidentale|500|550|550|600|  
    |Orientale|600|625|675|700|  
@@ -135,14 +135,14 @@ ms.locfileid: "53891939"
 
    | Proprietà | Value |
    |----------|------------------|
-   | **Name** | **Istogramma** |
+   | **Name** | **columnChart** |
    | **per** | **Istogramma a colonne** |
 
 
 3. Aggiungere un secondo pulsante di opzione nel controllo utente e modificare le proprietà seguenti.  
 
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |----------|---------------|
    | **Name** | **barChart** |
    | **per** | **Grafico a barre** |
@@ -161,7 +161,7 @@ ms.locfileid: "53891939"
 
    |Proprietà|Value|  
    |--------------|-----------|  
-   |**Name**|**opzione areaBlockChart**|  
+   |**Name**|**areaBlockChart**|  
    |**per**|**Grafico ad area**|  
 
    Successivamente, scrivere il codice per aggiornare il grafico quando si seleziona un pulsante di opzione.  

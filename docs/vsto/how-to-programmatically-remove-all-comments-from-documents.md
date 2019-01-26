@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], removing comments
 - comments, removing from documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 368779aa5c0edbfcaba3aff2abdf3eba09375f9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08d8769b20bffd5a75fb2232b1024db45b0c7b92
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833410"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870805"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procedura: A livello di codice rimuovere tutti i commenti dai documenti
   Usare il metodo `DeleteAllComments` per rimuovere tutti i commenti da un documento di Microsoft Office Word.  

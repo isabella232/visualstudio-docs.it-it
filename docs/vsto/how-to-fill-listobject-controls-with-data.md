@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a41c9c630eb95fbd0fed2b9ca2f05d56eff65c44
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865583"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Procedura: Riempire controlli ListObject con dati
   È possibile usare il data binding per aggiungere rapidamente dati al documento. Dopo aver associato i dati a un oggetto elenco, è possibile disconnetterlo in modo che visualizzi i dati senza tuttavia essere più associato all'origine dati.  

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b678d0a4a148bbd8a7414c8a7585b50fbc9c01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52d1940b38fbf2cbe24e1e35bc56fb7372f50c89
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855166"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865905"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definire tipi di elemento di progetto SharePoint personalizzati
   Definire un nuovo tipo di elemento di progetto SharePoint quando si desidera creare un nuovo tipo di elemento di progetto SharePoint. Ad esempio, Visual Studio non include elementi di progetto SharePoint per aggiungere campi o azioni personalizzate per un sito di SharePoint. È possibile definire i propri tipi di elementi di progetto SharePoint per la creazione di campi, le azioni personalizzate o altri tipi di componenti di SharePoint.  

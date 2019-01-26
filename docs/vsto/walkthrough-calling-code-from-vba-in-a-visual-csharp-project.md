@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd968d0c963ae4aa46872bf19e97f357361cf248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989030"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871312"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procedura dettagliata: Chiamare il codice da VBA in un oggetto visivo C# progetto
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `Sheet1` , esporre il metodo al codice VBA nella cartella di lavoro e quindi chiamare il metodo dal codice VBA contenuto nella cartella di lavoro.  
@@ -161,7 +161,7 @@ ms.locfileid: "53989030"
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Aggiungere il metodo seguente alla classe `Sheet1`. Questo metodo esegue l'override del metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> per restituire l'istanza corrente della classe `Sheet1` .  
+3.  Aggiungere il metodo seguente alla classe `Sheet1` . Questo metodo esegue l'override del metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> per restituire l'istanza corrente della classe `Sheet1` .  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   

@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cbcdc11eab419c6f98ab1ec823c6073286ffe2f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880861"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868131"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti
   Per configurare un pacchetto per distribuire gli elementi di SharePoint e le funzionalità, è possibile usare Esplora pacchetti. È possibile regolare i elementi di progetto SharePoint e le funzionalità all'interno del file con estensione wsp.  

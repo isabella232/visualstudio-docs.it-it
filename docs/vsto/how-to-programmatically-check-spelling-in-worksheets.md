@@ -12,15 +12,15 @@ helpviewer_keywords:
 - spelling, checking in worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1aa881034458405babbe7777e1d5c689ed1b05c9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4b7537d531197a9f9487bddfe3628cc52077d332
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090506"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862291"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedura: A livello di codice il controllo ortografico nei fogli di lavoro
   A livello di codice è possibile eseguire il controllo ortografico delle parole in un foglio di lavoro. La finestra di dialogo **Controllo ortografia** viene visualizzata automaticamente se si sono parole formulate in modo non corretto nel foglio di lavoro.  

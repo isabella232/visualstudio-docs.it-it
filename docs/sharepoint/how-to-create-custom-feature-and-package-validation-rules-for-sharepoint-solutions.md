@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 794974991216a521bf2ca4afb1e958716a3bf735
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939228"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874081"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedura: Creare pacchetti di funzionalità personalizzate le regole di convalida per le soluzioni SharePoint
   È possibile creare le regole di convalida personalizzata per verificare il pacchetto della soluzione generato da Visual Studio. È possibile eseguire la convalida completa in un'intera funzione o un pacchetto selezionando **Validate** dal menu di scelta rapida di un pacchetto o una funzionalità nel **PackagingExplorer**. Quando si aggiungono nuovi elementi di progetto SharePoint o le funzionalità al progetto per determinare se il pacchetto o la funzionalità sarà in uno stato valido, viene eseguita la convalida parziale.  
@@ -52,7 +52,7 @@ ms.locfileid: "53939228"
   
 -   Microsoft.VisualStudio.SharePoint.  
   
--   Composition.  
+-   System.ComponentModel.Composition.  
   
 ## <a name="deploy-the-extension"></a>Distribuire l'estensione  
  Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [gli strumenti di distribuzione di estensioni per SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  

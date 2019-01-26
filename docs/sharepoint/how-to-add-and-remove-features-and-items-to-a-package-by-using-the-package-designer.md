@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b28db9329debba9e46606d0f57117e4f01a8f26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1cf39b2ec563d76d5fb580e3c3e37a8e47bd4f0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906917"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868404"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti
   Quando si crea una soluzione di SharePoint, Visual Studio aggiunge le funzionalità di SharePoint predefinito per il pacchetto della soluzione. Prima della distribuzione definitiva, è possibile aggiungere e rimuovere elementi di progetto SharePoint e funzionalità per modificare il pacchetto di SharePoint.  

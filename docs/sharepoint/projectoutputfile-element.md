@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectOutputFile element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea476c2d2b73ec9c59f7d3f7cfbc9a0b0cab5bd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69af1992ba07fb75859a8f71bd0ee3eecadeaa0d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948615"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865333"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (elemento)
   Rappresenta l'output di un progetto separato da includere con l'elemento del progetto quando viene distribuito in SharePoint.  
@@ -41,7 +41,7 @@ ms.locfileid: "53948615"
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|**ID progetto**|Obbligatorio **xs: String** attributo.<br /><br /> Il GUID del progetto dipendente che include l'output a cui si desidera includere. Ciò corrisponde alla **ProjectGuid** elemento nel file di progetto dipendente.|  
+|**ProjectId**|Obbligatorio **xs: String** attributo.<br /><br /> Il GUID del progetto dipendente che include l'output a cui si desidera includere. Ciò corrisponde alla **ProjectGuid** elemento nel file di progetto dipendente.|  
 |**ProjectPath**|Obbligatorio **xs: String** attributo.<br /><br /> Il percorso relativo, incluso il nome di file di progetto, del progetto dipendente che include l'output da includere. Questo percorso è relativo alla cartella radice del progetto SharePoint che contiene l'elemento di progetto SharePoint.|  
 |**Destinazione**|Facoltativo **xs: String** attributo.<br /><br /> Il percorso in cui l'output del progetto dipendente verrà distribuito nel server SharePoint, relativo alla cartella radice di distribuzione. Cartella radice di distribuzione è determinata dal tipo di distribuzione specificato per il **tipo** attributo.<br /><br /> Per altre informazioni, vedere le descrizioni per le **percorso di distribuzione** e **Deployment Root** le proprietà di SharePoint elementi nel progetto [SharePoint sviluppare soluzioni](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Type**|Obbligatorio **xs: String** attributo.<br /><br /> Il tipo di distribuzione da usare per l'output del progetto dipendente. Per altre informazioni sui possibili valori, vedere la descrizione per il **tipo di distribuzione** proprietà di elementi di progetto SharePoint in [soluzioni SharePoint sviluppare](../sharepoint/developing-sharepoint-solutions.md).|  
@@ -62,7 +62,7 @@ ms.locfileid: "53948615"
   
 |||  
 |-|-|  
-|**Spazio dei nomi**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Spazio dei nomi**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nome dello schema**|Schema degli elementi di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  

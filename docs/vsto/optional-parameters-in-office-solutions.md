@@ -13,17 +13,17 @@ helpviewer_keywords:
 - missing field [Office development in Visual Studio]
 - optional parameters [Office development in Visual Studio]
 - parameters [Office development in Visual Studio], optional
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34f19c7fa27893b071251f61d01f2dd9c9809d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0a65799bb3a92d1747d365ecd341d1d7835747a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905098"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868261"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametri facoltativi nelle soluzioni Office
   Molti dei metodi nei modelli a oggetti delle applicazioni di Microsoft Office accettano parametri facoltativi. Se si utilizza Visual Basic per sviluppare una soluzione Office in Visual Studio, non è necessario passare un valore per i parametri facoltativi. Infatti, per ogni parametro mancante vengono utilizzati automaticamente i valori predefiniti. Nella maggior parte dei casi, è anche possibile omettere i parametri facoltativi nei progetti Visual c#. Tuttavia, non è possibile omettere facoltativo **ref** i parametri del `ThisDocument` classi nei progetti di Word a livello di documento.  

@@ -4,17 +4,17 @@ ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd28e7a9f0fc04a704d6d3600fb80390d9509de1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898882"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863045"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Procedura: Gestire i conflitti di distribuzione
   È possibile fornire il proprio codice per gestire i conflitti di distribuzione per un elemento di progetto SharePoint. Ad esempio, si potrebbe determinare se tutti i file nell'elemento di progetto corrente esistono già nel percorso di distribuzione e quindi eliminare i file distribuiti prima di distribuita l'elemento del progetto corrente. Per altre informazioni sui conflitti di distribuzione, vedere [estendendo SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

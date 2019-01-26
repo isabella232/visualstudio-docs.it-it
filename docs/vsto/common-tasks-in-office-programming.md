@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 234f5c70c05e058cac084780ab2777d9f302834a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 655cfbf885e9bd629d4417d007d4137db4521b6f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911200"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874003"
 ---
 # <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione Office
   Questo argomento descrive come usare Visual Studio per trovare le risposte alle seguenti categorie di domande frequenti relative alla programmazione delle soluzioni Office.  

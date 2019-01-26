@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], actions panes
 - actions panes [Office development in Visual Studio], binding controls
 - smart documents [Office development in Visual Studio], data binding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd16a9443cbfd612b30872e8850a9f1b00d09108
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d90250abdf727e47bbc9049b00e15a0f2b7978a7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866803"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865840"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Excel
   Questa procedura dettagliata viene descritta l'associazione dati a controlli in un riquadro azioni in Microsoft Office Excel. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.  
