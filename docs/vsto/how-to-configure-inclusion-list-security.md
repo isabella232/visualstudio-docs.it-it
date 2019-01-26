@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895577"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868680"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: Configurare la sicurezza di elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali è data la possibilità di installare le soluzioni Office mediante il salvataggio di una decisione di attendibilità per l'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [soluzioni di Office Trust usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -46,19 +46,19 @@ ms.locfileid: "53895577"
   
 2.  Trovare la chiave del Registro di sistema seguente:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Se la chiave non esiste, crearla.  
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Value|  
+    |Sottochiave del valore stringa|Valore|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Siti non attendibili**|**Disabilitato**|  
-    |**Risorse del computer**|**Enabled**|  
-    |**Intranet locale**|**Enabled**|  
-    |**Siti attendibili**|**Enabled**|  
+    |**UntrustedSites**|**Disabilitato**|  
+    |**MyComputer**|**Enabled**|  
+    |**LocalIntranet**|**Enabled**|  
+    |**TrustedSites**|**Enabled**|  
   
      Per impostazione predefinita **Internet** ha il valore **AuthenticodeRequired** e **siti non attendibili** ha il valore **disabilitato**.  
   
@@ -105,19 +105,19 @@ ms.locfileid: "53895577"
   
 2.  Trovare la chiave del Registro di sistema seguente:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Se la chiave non esiste, crearla.  
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
-    |Sottochiave del valore stringa|Valore|  
+    |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
-    |**Siti non attendibili**|**Disabilitato**|  
+    |**UntrustedSites**|**Disabilitato**|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Risorse del computer**|**AuthenticodeRequired**|  
-    |**Intranet locale**|**AuthenticodeRequired**|  
-    |**Siti attendibili**|**AuthenticodeRequired**|  
+    |**MyComputer**|**AuthenticodeRequired**|  
+    |**LocalIntranet**|**AuthenticodeRequired**|  
+    |**TrustedSites**|**AuthenticodeRequired**|  
   
      Per impostazione predefinita **Internet** ha il valore **AuthenticodeRequired** e **siti non attendibili** ha il valore **disabilitato**.  
   
@@ -164,17 +164,17 @@ ms.locfileid: "53895577"
   
 2.  Se questo non esiste già, creare la chiave del Registro di sistema seguente:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati.  
   
     |Sottochiave del valore stringa|Valore|  
     |-------------------------|-----------|  
-    |**Siti non attendibili**|**Disabilitato**|  
+    |**UntrustedSites**|**Disabilitato**|  
     |**Internet**|**Disabilitato**|  
-    |**Risorse del computer**|**Disabilitato**|  
-    |**Intranet locale**|**Disabilitato**|  
-    |**Siti attendibili**|**Disabilitato**|  
+    |**MyComputer**|**Disabilitato**|  
+    |**LocalIntranet**|**Disabilitato**|  
+    |**TrustedSites**|**Disabilitato**|  
   
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Per disabilitare l'elenco di inclusione a livello di codice  
   

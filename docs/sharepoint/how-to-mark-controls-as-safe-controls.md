@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989374"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875458"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: Contrassegnare i controlli come controlli sicuri
   Per la sicurezza, SharePoint consente di distinguere tra i controlli Web che sono protetti dagli attacchi script injection e Web che non sono. Protetto (controlli), oppure *controlli sicuri*, sono accessibili da utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà di un elemento di progetto SharePoint o in voci di controllo sicure le **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere  
@@ -85,11 +85,11 @@ ms.locfileid: "53989374"
   
 12. Immettere i valori per le proprietà contenute nella tabella seguente.  
   
-    |Nome proprietà|Valore|  
+    |Nome proprietà|Value|  
     |-------------------|-----------|  
     |Spazio dei nomi|Il nome completo dello spazio dei nomi per il controllo, ad esempio **BdcModelProject1.VisualWebPart1**.|  
     |Nome tipo|Button1|  
-    |Nome assembly|Nome di assembly sicuro, ad esempio: Microsoft.Office.SharePoint.ClientExtensions, versione = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nome assembly|Nome di assembly sicuro, ad esempio: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Cancella il **sicuro** casella di controllo.|  
     |Sicurezza Script|Lasciare il **sicurezza Script** casella di controllo.|  
   
@@ -102,11 +102,11 @@ ms.locfileid: "53989374"
   
 15. Immettere i valori per le proprietà contenute nella tabella seguente.  
   
-    |Nome proprietà|Value|  
+    |Nome proprietà|Valore|  
     |-------------------|-----------|  
     |Spazio dei nomi|Il nome completo dello spazio dei nomi per il controllo, ad esempio **BdcModelProject1.VisualWebPart1**.|  
     |Nome tipo|TextBox1|  
-    |Nome assembly|Nome di assembly sicuro, ad esempio: Microsoft.Office.SharePoint.ClientExtensions, versione = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nome assembly|Nome di assembly sicuro, ad esempio: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Selezionare il **sicuro** casella di controllo.|  
     |Sicurezza Script|Selezionare il **sicurezza Script** casella di controllo.|  
   
