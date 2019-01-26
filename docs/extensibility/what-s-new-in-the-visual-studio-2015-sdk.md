@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abf0840b3067b323f9d1552c5cb4261002004406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952842"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945385"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Cosa&#39;s novità di Visual Studio 2015 SDK
 Visual Studio SDK ha le seguenti funzionalità nuove e aggiornate per Visual Studio 2015, aggiornamento di Visual Studio 2015 e Visual Studio 2017.  
   
-## <a name="vs-2015-sdk-update-1"></a>Visual Studio 2015 SDK Update 1  
+## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK Update 1  
  Update 1 include strumenti che semplificano l'estensione andare bene per i temi di colore e il servizio di immagini di Visual Studio.  
   
  Questi argomenti sono sotto il [utilità VSSDK](../extensibility/internals/vssdk-utilities.md) sezione:  

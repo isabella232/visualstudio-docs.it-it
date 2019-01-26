@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55faad5ee76819320384d977100bf02e482b79ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872398"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940128"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -22,7 +22,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
 > [!NOTE]
 > In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Cosa può fare con un linguaggio specifico di dominio?
 

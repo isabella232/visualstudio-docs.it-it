@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951732"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 Queste funzioni e le dichiarazioni sono funzioni di supporto globale per l'implementazione del provider di simboli, analizzatori di espressioni e motori di debug in C++.  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Impostare questa opzione su diversi da zero per visualizzare codice nonuser.|  
 |metricJustMyCodeStepping|Impostare questa opzione su diversi da zero per indicare che l'esecuzione di istruzioni può trovarsi solo nel codice utente.|  
 |metricCLSID|CLSID di un oggetto di un tipo specifico di metrica.|  
-|MetricName|Nome descrittivo per un oggetto di un tipo specifico di metrica.|  
+|metricName|Nome descrittivo per un oggetto di un tipo specifico di metrica.|  
 |metricLanguage|Nome della lingua.|  
   
 ## <a name="registry-locations"></a>Percorsi del Registro di sistema  
@@ -265,7 +265,7 @@ HRESULT EnumMetricSections(
 |*[root versione]*|La versione di Visual Studio (ad esempio, `7.0`, `7.1`, o `8.0`). Tuttavia, questa radice può essere modificata anche usando il **/rootsuffix** passa a **devenv.exe**. Per VSIP, questo modificatore viene in genere **Exp**, pertanto la radice di versione potrebbe essere, ad esempio, 8.0Exp.|  
 |*[metrica root]*|Si tratta `AD7Metrics` o `AD7Metrics(Debug)`, a seconda del fatto che viene utilizzata la versione di debug di dbgmetric.lib. **Nota:**  Se viene usato dbgmetric.lib, questa convenzione di denominazione debba essere rispettata nel caso di differenze tra debug e rilascio versioni che devono essere riflessa nel Registro di sistema.|  
 |*[tipo di metrica]*|Il tipo di metrica da scrivere: `Engine`, `ExpressionEvaluator`, `SymbolProvider`e così via. Questi sono tutti definiti come dbgmetric.h come `metricTypeXXXX`, dove `XXXX` è il nome del tipo specifico.|  
-|*[metrica]*|Il nome di una voce a cui assegnare un valore per impostare la metrica. L'organizzazione effettivo delle metriche dipende dal tipo delle metriche.|  
+|*[metric]*|Il nome di una voce a cui assegnare un valore per impostare la metrica. L'organizzazione effettivo delle metriche dipende dal tipo delle metriche.|  
 |*[valore della metrica]*|Il valore assegnato alla metrica. Il tipo che di valore deve essere (stringa), numero, e così via dipende la metrica.|  
   
 > [!NOTE]
@@ -399,13 +399,13 @@ HRESULT EnumMetricSections(
   
  *[tipi di eccezione]*\  
   
- *[eccezione]*\  
+ *[exception]*\  
   
  *[metrica] = [valore della metrica]*  
   
  *[metrica] = [valore della metrica]*  
   
- *[eccezione]*\  
+ *[exception]*\  
   
  *[metrica] = [valore della metrica]*  
   
@@ -415,14 +415,14 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[guid del motore di debug]*|Il GUID del motore di debug supporta le eccezioni.|  
 |*[tipi di eccezione]*|Un titolo generale per la sottochiave che identifica la classe di eccezioni che possono essere gestiti. Sono nomi tipici **eccezioni C++**, **eccezioni Win32**, **eccezioni Common Language Runtime**, e **dei controlli runtime nativi**. Questi nomi vengono usati anche per identificare una classe particolare di eccezione per l'utente.|  
-|*[eccezione]*|Un nome per un'eccezione: ad esempio, **com_error** oppure **CTRL + INTERR**. Questi nomi vengono usati anche per identificare una particolare eccezione all'utente.|  
+|*[exception]*|Un nome per un'eccezione: ad esempio, **com_error** oppure **CTRL + INTERR**. Questi nomi vengono usati anche per identificare una particolare eccezione all'utente.|  
   
 ## <a name="requirements"></a>Requisiti  
  Questi file si trovano nel [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] directory di installazione SDK (per impostazione predefinita *[unità]* \Programmi\Microsoft Visual Studio 2010 SDK\\).  
   
- Intestazione: includes\dbgmetric.h  
+ Header: includes\dbgmetric.h  
   
- Libreria: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

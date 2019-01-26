@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925209"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935033"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
 Un file di descrizione di directory di modello (con estensione VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file di modello che sono associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione di cui si fa riferimento vengono uniti, anche se file sola VSDIR generalmente è fornito per descrivere più cartelle, le procedure guidate o i file di modello.  
@@ -39,7 +39,7 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 | Campo | Descrizione |
 | - | - |
-| Nome del percorso relativo (RelPathName) | Il nome del file con estensione vsz, un modello o cartella, ad esempio HeaderFile.h o MyWizard. vsz. Questo campo può anche essere un nome utilizzato per rappresentare una cartella. |
+| Relative Path Name (RelPathName) | Il nome del file con estensione vsz, un modello o cartella, ad esempio HeaderFile.h o MyWizard. vsz. Questo campo può anche essere un nome utilizzato per rappresentare una cartella. |
 | {clsidPackage} | Il GUID del pacchetto VSPackage che consente l'accesso alle stringhe localizzate, ad esempio LocalizedName, descrizione, IconResourceId e SuggestedBaseName, nelle risorse di libreria (DLL) DLL satellite del VSPackage. IconResourceId si applica se DLLPath non viene specificato. **Nota:**  Questo campo è facoltativo, a meno che uno o più dei campi precedenti è un identificatore di risorsa. Questo campo è in genere vuoto per i file VSDIR corrispondenti alle procedure guidate di terze parti che non deve essere localizzata del testo. |
 | LocalizedName | Il nome localizzato del file di modello o della procedura guidata. Questo campo può essere una stringa o un identificatore di risorsa nel formato "#ResID". Questo nome viene visualizzato nei **Aggiungi nuovo elemento** nella finestra di dialogo. **Nota:**  Se LocalizedName è un identificatore di risorsa, non sarà necessario {clsidPackage}. |
 | SortPriority | Intero che rappresenta la priorità relativa di questo file di modello o una procedura guidata. Ad esempio, se questo elemento ha un valore pari a 1, questo elemento viene visualizzato accanto agli altri elementi con un valore pari a 1 e prima tutti gli elementi con un valore di ordinamento di 2 o maggiori.<br /><br /> Priorità di ordinamento è relativo agli elementi nella stessa directory. Potrebbe esserci più di un file VSDIR nella stessa directory. In tal caso, gli elementi da tutti i <em>.</em> file VSDir in quella directory vengono uniti. Gli elementi con la stessa priorità vengono elencati in ordine lessicografico tra maiuscole e minuscole del nome visualizzato. Il `_wcsicmp` funzione viene utilizzata per ordinare gli elementi.<br /><br /> Gli elementi non descritti nei file VSDIR includono un numero di priorità maggiore del numero di priorità più alto elencato nei file VSDIR. Il risultato è che questi elementi si trova alla fine dell'elenco visualizzato indipendentemente dal relativo nome. |

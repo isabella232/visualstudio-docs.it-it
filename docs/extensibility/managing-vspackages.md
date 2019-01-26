@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07e3924db75f870910e22aee8c913f5a26a7411
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c44b31eb8f160695589dda79f19e10389490c38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944020"
 ---
 # <a name="manage-vspackages"></a>Gestire i pacchetti VSPackage
 Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, poiché i modelli di progetto ed elemento registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più allo scopo di gestire il pacchetto.  

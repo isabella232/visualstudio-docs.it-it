@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: fafde7c8355b5087c6168345c57540e0356227b1
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 74931c1636ef2e1f512579907c162cb13148ef3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135536"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969025"
 documentType: LandingData
 title: Eseguire la migrazione da FxCop analisi del codice per gli analizzatori di piattaforma del compilatore .NET
 metadata:
@@ -16,7 +16,7 @@ metadata:
   ms.topic: landing-page
   ms.author: gewarren
   author: gewarren
-  manager: douge
+  manager: jillfra
 abstract:
   description: Informazioni su come analizzare il codice per la prima volta, o come eseguire la migrazione da FxCop alla nuova modalità di analisi del codice gestito usando gli analizzatori.
   aside:

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ee9f574b1d0db7a90b2d056456ccb29db0604e1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb5a43224ff94e0e5115265383bff578031793bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846100"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936307"
 ---
 # <a name="customizing-element-tools"></a>Personalizzazione di strumenti elemento
 In alcune definizioni DSL, si rappresenta un singolo concetto come un gruppo di elementi. Ad esempio, se si crea un modello in cui un componente dispone di un set fisso di porte, si vuole che sempre le porte da creare in contemporanea con i propri componenti padre. Pertanto, è necessario personalizzare lo strumento di creazione di elemento in modo che crei un gruppo di elementi anziché uno solo. A tale scopo, è possibile personalizzare come viene inizializzato lo strumento di creazione di elemento.

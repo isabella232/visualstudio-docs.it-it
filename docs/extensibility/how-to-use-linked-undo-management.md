@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 639b95909f5d0cf91721760cac27768cb64e477a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9d3b4e3955b4004b395bf2a8bbcc462036ba236
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874193"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940995"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Procedura: Usare la gestione di annullamento collegato
 Fase di rollback collegata consente all'utente di annullare contemporaneamente le stesse modifiche in più file. Ad esempio, le modifiche simultanee testo su più file di programma, ad esempio un file di intestazione e un file di Visual C++, è una transazione di annullamento collegata. Funzionalità di annullamento collegata è incorporata nell'implementazione dell'ambiente di gestione degli annullamenti, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> consente di modificare questa funzionalità. Fase di rollback collegata è implementata da un'unità di annullamento padre che è possibile collegare gli stack di annullamento separato insieme deve essere considerata come una sola unità di annullamento. La procedura per l'uso di annullamento collegata è descritta in dettaglio nella sezione seguente.  
@@ -34,5 +34,5 @@ Fase di rollback collegata consente all'utente di annullare contemporaneamente l
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
- [Interfaccia IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
+ [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
  [Procedura: Gestione dell'annullamento implementare](../extensibility/how-to-implement-undo-management.md)

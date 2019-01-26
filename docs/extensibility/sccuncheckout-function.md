@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa00faf6fb7605af6098952b2fc592276934d2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acded327d8e1b5b1b2bec0b804e6e72ac157be1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923218"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950572"
 ---
 # <a name="sccuncheckout-function"></a>Funzione SccUncheckout
 Questa funzione Annulla un'operazione di estrazione precedente, ripristinando in questo modo il contenuto del file selezionato o dei file lo stato precedente l'estrazione. Tutte le modifiche apportate al file dopo l'estrazione andranno perdute.  
@@ -42,13 +42,13 @@ SCCRTN SccUncheckout (
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file specificato per il `lpFileNames` matrice.  
   
  lpFileNames  
  [in] Matrice di nomi di percorso locale completo dei file per il quale annullare un'estrazione.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando (non usato).  
   
  pvOptions  

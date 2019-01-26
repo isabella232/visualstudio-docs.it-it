@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc47391c3ab80b0c8752de840c6accfb66f0212
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942671"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936697"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Le notifiche e avanzamento per Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemi di notifica  
@@ -78,7 +78,7 @@ ms.locfileid: "53942671"
 ####  <a name="BKMK_EmbeddedInfobar"></a> Barra informazioni incorporata  
  Una barra informazioni è utilizzabile nella parte superiore di una finestra del documento o una finestra degli strumenti per informare l'utente di uno stato o una condizione. Può anche offrire i comandi in modo che l'utente può avere un modo per effettuare con facilità un'azione. La barra informazioni è un controllo standard della shell. Evitare di creare il proprio, che verrà funzionare e non corrispondere a quelli di altri utenti nell'IDE. Visualizzare [barre informazioni](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) per i dettagli di implementazione e linee guida sull'uso.  
   
- ![Barra informazioni incorporata](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901 03_EmbeddedInfobar")  
+ ![Embedded infobar](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901-03_EmbeddedInfobar")  
   
  **Una barra informazioni incorporata in una finestra del documento, avvisa l'utente che l'IDE è in modalità debug cronologico e l'editor non risponderà esattamente come avviene in modalità di debug standard.**  
   
@@ -516,6 +516,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Filigrane  
  In alcuni casi un intero controllo o finestra è in stato di errore. In questo caso, usare una filigrana per indicare l'errore.  
   
- ![Filigrana](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Convalida del campo della filigrana**

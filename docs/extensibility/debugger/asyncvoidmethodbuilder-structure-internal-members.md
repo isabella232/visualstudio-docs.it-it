@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4aa6a9ab426f3773e7885b449a4b91b284cc0f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fa4eb73257b98a588102bee96c037e2d302e96c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976654"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Struttura AsyncVoidMethodBuilder - membri interni
 In questo argomento vengono descritti i membri interni del <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> classe. Per informazioni generali su questa classe, vedere il <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> argomento di riferimento.  

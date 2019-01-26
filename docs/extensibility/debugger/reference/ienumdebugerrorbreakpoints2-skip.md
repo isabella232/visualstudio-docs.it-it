@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a5a02b38-4e3a-4f0e-b529-f770c3485c8b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd921a978f58d5fa6356ae5d3a1413bcdf5c2d66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed384d7dca15c6485f00f2cf95727a91530ec755
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938932"
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 Ignora il numero specificato di elementi.  
@@ -41,7 +41,7 @@ int Skip(
  [in] Numero di elementi da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione è impostata su Fine e `S_FALSE` viene restituito.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b525602e5f328fefde5e552c9c99a845f369a81a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a4d4224d96cbd886fa0447e1160484596e2641
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984340"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso degli assembly di interoperabilità di Visual Studio
 Assembly di interoperabilità Visual Studio consentono alle applicazioni gestite di accesso alle interfacce COM che forniscono l'estensibilità di Visual Studio. Esistono alcune differenze tra le interfacce COM rette e le versioni di interoperabilità. Ad esempio, HRESULT sono in genere rappresentati come valori int e devono essere gestiti nello stesso modo come eccezioni e i parametri (in particolare i parametri out) vengono considerati in modo diverso.  

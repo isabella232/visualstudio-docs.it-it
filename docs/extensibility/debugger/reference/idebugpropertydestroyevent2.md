@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b8f044b3600e3c6d0b673223751468d5a63075d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8c8dcab44a1732a71d7d7f5a31b76cf50b7b31b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846555"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983391"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando una proprietà associata a uno specifico documento sta per essere eliminata.  

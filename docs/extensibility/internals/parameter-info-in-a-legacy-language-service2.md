@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a11f7416f77aa997d6874457cc3af83ebb761bb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a6720eb2c7b624b9e440469853328c3e0505bb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936255"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
 Informazioni sul parametro di IntelliSense è una descrizione comando che consente di visualizzare la firma di un metodo quando l'utente digita l'elenco dei parametri start carattere (in genere una parentesi di apertura) per l'elenco di parametri di metodo. Quando si immette ogni parametro e il separatore di parametro (in genere una virgola) è tipizzato, la descrizione comando viene aggiornato per mostrare il parametro successivo in grassetto.  
