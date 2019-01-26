@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988571"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Usare i tasti di scelta rapida con un'estensione dell'editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. Procedura dettagliata illustra come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo tramite un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo usando il carattere +.  
@@ -33,7 +33,7 @@ ms.locfileid: "53953011"
   
     Microsoft.VisualStudio.Editor  
   
-    Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
     Microsoft.VisualStudio.Shell.14.0  
   

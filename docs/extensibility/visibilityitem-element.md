@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eca5e797fe41c56cfcdbe1b1678c0824f3b93b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0bfdf54ccd3975864b965182d86923c6c335eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939463"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980921"
 ---
 # <a name="visibilityitem-element"></a>Elemento VisibilityItem
 Il `VisibilityItem` elemento determina la visibilità statica di comandi e le barre degli strumenti. Ogni voce identifica un comando o menu, nonché un contesto dell'interfaccia utente di comando associato. Visual Studio rileva comandi, menu e barre degli strumenti e la visibilità, senza caricare i pacchetti VSPackage che li definiscono. L'IDE Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodo per determinare se un contesto dell'interfaccia utente del comando è attivo.  

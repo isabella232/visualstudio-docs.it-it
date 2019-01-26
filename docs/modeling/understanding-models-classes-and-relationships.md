@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b088b4a697c84ed774877c35539d2b2a99d06853
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980960"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 Un linguaggio specifico di dominio (DSL) è definito dal relativo file di definizione DSL, insieme a qualsiasi codice programma personalizzato che è possibile scrivere. La maggior parte del codice del programma nella soluzione DSL viene generato da questo file.
@@ -137,7 +137,7 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
 |-|-|
 |0.. * (zero a molti)|Ogni istanza della classe di dominio può avere più istanze della relazione o nessuna istanza della relazione.|
 |0..1 (zero a uno)|Ogni istanza della classe di dominio può avere non più di un'istanza della relazione o nessuna istanza della relazione.|
-|1..1 (uno)|Ogni istanza della classe di dominio può avere un'istanza della relazione. È possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe role. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|
+|1..1 (One)|Ogni istanza della classe di dominio può avere un'istanza della relazione. È possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe role. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|
 |1.. * (uno a molti)|Ogni istanza della classe nel ruolo con molteplicità di questo può avere più istanze della relazione e ogni istanza deve avere almeno un'istanza della relazione. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|
 
 ## <a name="domain-relationships-as-classes"></a>Relazioni di dominio come classi
