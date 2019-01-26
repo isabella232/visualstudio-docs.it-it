@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12fd392043ab40354874a0644563cd31282f967d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004633"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
 Il servizio di linguaggio implementa la gestione di finestre di codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra di riepilogo a discesa). Per altre informazioni, vedere [personalizzazione di Windows di codice usando l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa203c04c897a59a6b48471cb792a5680fe2e375
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909801"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013743"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Aggiungere un menu di scelta rapida in una finestra degli strumenti
 Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra degli strumenti. Un menu di scelta rapida è un menu che viene visualizzato quando l'utente fa clic sul pulsante, casella di testo un sfondo della finestra. I comandi in un menu di scelta rapida si comportano come i comandi su altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nella *vsct* file e visualizzarli in risposta al pulsante destro del mouse del mouse.  
