@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928867"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867260"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
   La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede personalizzate, gruppi e controlli alla barra multifunzione di un'applicazione Microsoft Office.
@@ -142,16 +142,16 @@ ms.locfileid: "53928867"
 |-------------|-----------------|
 |**Box**|Un contenitore che organizza i controlli in un gruppo. È possibile aggiungere qualsiasi controllo a una casella, ad eccezione di un separatore, un gruppo o una scheda. Una casella può essere orizzontale o verticale.|
 |**Pulsante**|Un pulsante che avvia un'azione. È possibile aggiungere un pulsante a un gruppo, un gruppo di pulsanti, un elenco di riepilogo a discesa, una raccolta, un menu o un pulsante di menu combinato.|
-|**Gruppo di pulsanti.**|Un gruppo che contiene uno o più pulsanti, interruttori, menu, pulsanti di menu combinato e raccolte. È possibile aggiungere un gruppo di pulsanti a un gruppo o un menu.|
+|**ButtonGroup**|Un gruppo che contiene uno o più pulsanti, interruttori, menu, pulsanti di menu combinato e raccolte. È possibile aggiungere un gruppo di pulsanti a un gruppo o un menu.|
 |**CheckBox**|Una casella selezionata o deselezionata per attivare o disattivare un'opzione.|
 |**ComboBox**|Una casella di modifica è associata una casella di elenco. Gli utenti possono digitare o selezionare le proprie preferenze. Viene visualizzata la selezione corrente. Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> proprietà da aggiungere e rimuovere elementi in fase di esecuzione prima o dopo la barra multifunzione viene caricata nell'applicazione Office.|
-|**Elenco a discesa**|Un elenco di elementi che l'utente può selezionare. L'utente non è possibile digitare un nuovo elemento in un elenco a discesa.<br /><br /> Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> proprietà per aggiungere elementi all'elenco. È possibile aggiungere e rimuovere elementi in fase di esecuzione.<br /><br /> Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> proprietà da aggiungere pulsanti all'elenco. Tuttavia, non è possibile aggiungere e rimuovere pulsanti in fase di esecuzione dopo che è stata caricata nell'applicazione Office.|
-|**Casella di modifica**|Una casella in cui l'utente può digitare testo.|
+|**DropDown**|Un elenco di elementi che l'utente può selezionare. L'utente non è possibile digitare un nuovo elemento in un elenco a discesa.<br /><br /> Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> proprietà per aggiungere elementi all'elenco. È possibile aggiungere e rimuovere elementi in fase di esecuzione.<br /><br /> Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> proprietà da aggiungere pulsanti all'elenco. Tuttavia, non è possibile aggiungere e rimuovere pulsanti in fase di esecuzione dopo che è stata caricata nell'applicazione Office.|
+|**EditBox**|Una casella in cui l'utente può digitare testo.|
 |**Gallery**|Un menu di scelta che presenta una matrice o griglia di scelte visive selezionabili dagli utenti. È possibile controllare il layout delle selezioni nel menu di scelta. Usare la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> e il <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> le proprietà per specificare il numero di righe e colonne che verranno visualizzati gli elementi e i pulsanti della raccolta.|
 |**Etichetta**|Testo che è possibile usare per identificare i controlli della barra multifunzione.|
-|**Menu**|Un elenco di riepilogo a discesa che può contenere uno dei seguenti controlli:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Per aggiungere un controllo a un menu nella finestra di progettazione della barra multifunzione, fare clic sulla freccia in giù nel menu di scelta per esporre l'area di progettazione menu. È quindi possibile trascinare i controlli della barra multifunzione dal **casella degli strumenti** nel menu. Per disporre i controlli, trascinarli nelle posizioni desiderate.<br /><br /> Per aggiungere controlli per la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> dopo che è stata caricata nell'applicazione Office, è necessario impostare il <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> proprietà **true** prima del caricamento della barra multifunzione. Per informazioni su come eseguire questa operazione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
+|**Menu**|Un elenco di riepilogo a discesa che può contenere uno dei seguenti controlli:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-   Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Per aggiungere un controllo a un menu nella finestra di progettazione della barra multifunzione, fare clic sulla freccia in giù nel menu di scelta per esporre l'area di progettazione menu. È quindi possibile trascinare i controlli della barra multifunzione dal **casella degli strumenti** nel menu. Per disporre i controlli, trascinarli nelle posizioni desiderate.<br /><br /> Per aggiungere controlli per la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> dopo che è stata caricata nell'applicazione Office, è necessario impostare il <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> proprietà **true** prima del caricamento della barra multifunzione. Per informazioni su come eseguire questa operazione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
 |**Separatore**|Barra sottile utilizzata per separare gli elementi in un elenco. Quando aggiunta a un gruppo, la barra è verticale. Quando aggiunta a un menu di scelta, la barra è orizzontale.|
-|**SplitButton**|Pulsante associato un menu. Un pulsante di menu combinato può contenere i controlli seguenti:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Analogamente al menu, pulsante di menu combinato ha la propria area di progettazione. Tuttavia, a differenza di un menu, è possibile aggiornare solo gli elementi in un pulsante di menu combinato prima del caricamento della barra multifunzione nell'applicazione Office. Per informazioni su come aggiornare gli elementi in un pulsante di menu combinato, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
+|**SplitButton**|Pulsante associato un menu. Un pulsante di menu combinato può contenere i controlli seguenti:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-   Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Analogamente al menu, pulsante di menu combinato ha la propria area di progettazione. Tuttavia, a differenza di un menu, è possibile aggiornare solo gli elementi in un pulsante di menu combinato prima del caricamento della barra multifunzione nell'applicazione Office. Per informazioni su come aggiornare gli elementi in un pulsante di menu combinato, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Un pulsante che appare premuto o meno.|
 
 ##  <a name="HandleEventsSetProperties"></a> Gestire gli eventi e impostazione delle proprietà

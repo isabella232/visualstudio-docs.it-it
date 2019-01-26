@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baedf731a61a13bd6592298e8505dc4a445819e1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871897"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Procedura: Aggiungere e rimuovere dipendenze di funzionalità
   La funzionalità di SharePoint può dipendere da altre funzionalità per dati o funzionalità. In questi casi, è possibile contrassegnare le altre funzionalità come le dipendenze per la funzionalità. In questo modo, il server SharePoint garantisce che le funzionalità dipendenti vengono attivate prima che la funzionalità viene attivata.  

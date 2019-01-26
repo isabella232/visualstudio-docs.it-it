@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49a570a68d2ce301ff103c3587e3246a725a1f42
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943090"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866276"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: Inserire testo in un documento da un riquadro azioni
   Questa procedura dettagliata illustra come creare un riquadro azioni in un documento di Microsoft Office Word. Nel riquadro azioni contiene due controlli per la raccolta di input e quindi inviano il testo al documento.  
@@ -109,18 +109,18 @@ ms.locfileid: "53943090"
   
 4.  Aggiungere un **Textbox** al controllo del riquadro azioni e modificare le proprietà seguenti.  
   
-    |Proprietà|Value|  
+    |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Name**|**GetName**|  
+    |**Name**|**getName**|  
     |**Dimensione**|**130, 20**|  
   
 5.  Aggiungere un secondo **Label** al controllo del riquadro azioni e modificare le **testo** proprietà **indirizzo**.  
   
 6.  Aggiungere una seconda **Textbox** al controllo del riquadro azioni e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
+    |Proprietà|Value|  
     |--------------|-----------|  
-    |**Name**|**GetAddress**|  
+    |**Name**|**getAddress**|  
     |**Accetta Return**|**True**|  
     |**Multiline**|**True**|  
     |**Dimensione**|**130, 40**|  

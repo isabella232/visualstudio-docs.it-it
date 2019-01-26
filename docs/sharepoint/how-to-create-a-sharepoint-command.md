@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da1b31b7cc1436c90437a9e2b5ef66adfee825b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894850"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867897"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procedura: Creare un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti server in un'estensione degli strumenti di SharePoint, è necessario creare una classe personalizzata *comando SharePoint* per chiamare l'API. Il comando è definito in un assembly che è possibile chiamare direttamente nel modello a oggetti server.  
@@ -30,7 +30,7 @@ ms.locfileid: "53894850"
   
     -   È destinato a .NET Framework 3.5. Per altre informazioni sulla selezione del framework di destinazione, vedere [come: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-    -   Ha come destinazione il AnyCPU o x64 piattaforma. Per impostazione predefinita, la piattaforma di destinazione per i progetti libreria di classi è AnyCPU. Per altre informazioni sulla selezione della piattaforma di destinazione, vedere [come: Configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).  
+    -   Ha come destinazione il AnyCPU o x64 piattaforma. Per impostazione predefinita, la piattaforma di destinazione per i progetti libreria di classi è AnyCPU. Per altre informazioni sulla selezione della piattaforma di destinazione, vedere [come: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).  
   
     > [!NOTE]  
     >  Non è possibile implementare un comando di SharePoint nello stesso progetto che definisce un'estensione degli strumenti di SharePoint, perché i comandi di SharePoint hanno come destinazione la destinazione di estensioni di strumenti .NET Framework 3.5 e SharePoint il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. È necessario definire i comandi di SharePoint che vengono utilizzati per l'estensione in un progetto separato. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
@@ -39,7 +39,7 @@ ms.locfileid: "53894850"
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-    -   Microsoft. SharePoint  
+    -   Microsoft.SharePoint  
   
 3.  In una classe nel progetto, creare un metodo che definisce il comando di SharePoint. Il metodo deve essere conforme alle linee guida seguenti:  
   
@@ -72,7 +72,7 @@ ms.locfileid: "53894850"
   
 -   Microsoft.VisualStudio.SharePoint.Commands  
   
--   Microsoft. SharePoint  
+-   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Il comando di distribuzione  
  Per distribuire il comando, includere il comando assembly nella stessa [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] estensione (*vsix*) pacchetto con l'assembly dell'estensione che usa il comando. È anche necessario aggiungere una voce per l'assembly del comando nel file Extension. vsixmanifest. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
