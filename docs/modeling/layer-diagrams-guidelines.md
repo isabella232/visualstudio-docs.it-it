@@ -9,16 +9,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13ffde9d399e0535f7cf6790f199ba4924156636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924423"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012183"
 ---
 # <a name="dependency-diagrams-guidelines"></a>I diagrammi delle dipendenze: linee guida
 
@@ -31,7 +31,7 @@ Per informazioni su quali edizioni di Visual Studio supportano questa funzionali
 
 ## <a name="what-is-a-dependency-diagram"></a>Che cos'è un diagramma delle dipendenze?
 
-Ad esempio un diagramma architettura tradizionale, un diagramma delle dipendenze identifica i componenti principali o unità funzionali della progettazione e le relative interdipendenze. Ogni nodo nel diagramma, denominato un *layer*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri elementi. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Vedere [diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md).
+Ad esempio un diagramma architettura tradizionale, un diagramma delle dipendenze identifica i componenti principali o unità funzionali della progettazione e le relative interdipendenze. Ogni nodo nel diagramma, denominato un *layer*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri elementi. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Vedere [diagrammi delle dipendenze: informazioni di riferimento](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Come progettare o aggiornare l'app con i diagrammi delle dipendenze
 

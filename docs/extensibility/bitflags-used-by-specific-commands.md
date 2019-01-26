@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875420"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003262"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit usati da comandi specifici
 Il comportamento di un numero di funzioni nell'API dei plug-in controllo di origine può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. I vari flag di bit usati dall'API dei plug-in controllo di origine sono descritte in dettaglio in questo caso, raggruppati per la funzione che li Usa.  
@@ -68,7 +68,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 ## <a name="openproject-flags"></a>Flag OpenProject  
  Questi flag vengono utilizzati per il [SccOpenProject](../extensibility/sccopenproject-function.md) nel `dwFlags` parametro.  
   
-|Valore dell'opzione|Value|Descrizione|  
+|Valore dell'opzione|Valore|Descrizione|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Se il progetto non esiste nel controllo del codice sorgente, è necessario crearla. Se questo flag non è impostato, richiesta utente per il progetto da creare (a meno che non `SCC_OP_SILENTOPEN` flag è specificato).|  
 |SCC_OP_SILENTOPEN|0x00000002L|Non chiedere conferma all'utente di creare un progetto. semplicemente restituire `SCC_E_UNKNOWNPROJECT`.|  
