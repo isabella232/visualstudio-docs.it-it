@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938393"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interazioni di finestra  
@@ -35,7 +35,7 @@ Considerare con attenzione sul tipo contenitore è necessario. Considerazioni su
 | **posizione** | Sempre posizionato all'interno del documento bene e non ancorare intorno ai bordi dell'IDE. È possibile essere "pull" in modo da spostarla separatamente dalla shell di principale. | In genere ancorate intorno ai bordi dell'IDE, ma può essere personalizzato per essere a virgola mobile, nascosta automaticamente (unpinned) o ancorato anche all'interno del documento.|Finestra mobile grande separato dall'IDE. |  
 | **Commit modello** | *Commit ritardato*<br /><br /> Per salvare i dati in un documento, l'utente deve inviare il **File &gt; salvare**, **Salva con nome**, oppure **Salva tutto** comando. Una finestra del documento è presente il concetto dei dati all'interno di esso venga "scritto" quindi eseguito il commit a una delle Salva i comandi. Quando si chiude una finestra del documento, tutti i contenuti vengono salvati su disco o persi. | *Commit immediato*<br /><br /> Non vi è alcun Salva modello. Per finestre di strumento di controllo che assistono nella modifica di un file, il file deve essere aperto nell'editor attivo o nella finestra di progettazione e l'editor o finestra di progettazione è proprietario di salvataggio. | *Commit ritardato o controllo immediato*<br /><br /> In genere, una finestra di dialogo non modale grandi dimensioni richiede un'azione per eseguire il commit delle modifiche e consente un'operazione di "Annullamento", che il rollback di tutte le modifiche apportate all'interno della sessione di finestra di dialogo.  Questo consente di distinguere una finestra di dialogo non modale da una finestra degli strumenti in finestre degli strumenti dispongono sempre di un modello di commit immediato. |  
 | **Visibilità** | *Aprire/creare (file) e Close*<br /><br /> Aprire una finestra del documento viene eseguita tramite l'apertura di un documento esistente o usare un modello per creare un nuovo documento. È presente alcun "Apri \<specifica dell'editor >" comando. | *Nascondere e mostrare*<br /><br /> Finestre degli strumenti a istanza singola possono essere nascoste o visualizzate. Contenuto e gli stati nella finestra degli strumenti persistono se nella visualizzazione o nascosto. Finestre degli strumenti a istanza multipla possono essere chiusa nonché nascoste. Quando viene chiusa una finestra degli strumenti a istanza multipla, viene eliminato il contenuto e lo stato all'interno della finestra degli strumenti. | *Avviato da un comando*<br /><br /> Le finestre di dialogo vengono avviate da un comando basato su attività. |  
-| **Istanze** | *Istanze multiple*<br /><br /> Numerosi editor possono essere aperti al momento stesso e modifica dei file diversi, anche se alcuni editor offre anche lo stesso file sia aperto in più di un editor (usando il **finestra &gt; nuova finestra** comando).<br /><br /> Un singolo editor stia modificando uno o più file contemporaneamente (Progettazione progetti). | *Singolo o più istanze*<br /><br /> Contenuto cambia per riflettere contesto (ad esempio, il Visualizzatore di proprietà) o eseguire il push dello stato attivo/contesto altre finestre (elenco attività, Esplora soluzioni).<br /><br /> Finestre degli strumenti a istanza singola e a istanza multipla devono essere associate alla finestra del documento attivo, a meno che non esiste un motivo a. | *A istanza singola* |  
+| **Istanze** | *Multi-instance*<br /><br /> Numerosi editor possono essere aperti al momento stesso e modifica dei file diversi, anche se alcuni editor offre anche lo stesso file sia aperto in più di un editor (usando il **finestra &gt; nuova finestra** comando).<br /><br /> Un singolo editor stia modificando uno o più file contemporaneamente (Progettazione progetti). | *Singolo o più istanze*<br /><br /> Contenuto cambia per riflettere contesto (ad esempio, il Visualizzatore di proprietà) o eseguire il push dello stato attivo/contesto altre finestre (elenco attività, Esplora soluzioni).<br /><br /> Finestre degli strumenti a istanza singola e a istanza multipla devono essere associate alla finestra del documento attivo, a meno che non esiste un motivo a. | *A istanza singola* |  
 | **Esempi** | **Gli editor di testo**, ad esempio l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione di form o un'area di modellazione<br /><br /> **Layout simile alle finestre di dialogo di controllo**, ad esempio la finestra Progettazione manifesto | Il **Esplora soluzioni** fornisce una soluzione e progetti contenuti all'interno della soluzione<br /><br /> Il **Esplora Server** offre una visualizzazione gerarchica di connessioni server e dei dati che l'utente sceglie di aprire la finestra. Apertura di un oggetto dalla gerarchia di database, ad esempio una query, si apre una finestra del documento e consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** vengono visualizzate le proprietà per l'oggetto selezionato in una finestra del documento o un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchici o nei controlli di finestra di dialogo complessi e consentono all'utente di impostare i valori per tali proprietà. | |  
 
 ##  <a name="BKMK_ToolWindows"></a> Finestre degli strumenti  
@@ -498,7 +498,7 @@ L'utente deve sempre essere in grado di determinare l'effetto di un'operazione d
 | Puntatore del mouse | Comando | Descrizione |  
 | :---: | --- | --- |  
 | ![Passare il mouse sull'icona "nessun rilascio"](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706 01_MouseNoDrop") | Nessun rilascio | Elemento non può essere rilasciato nella posizione specificata. |  
-| ![Icona "copia" del mouse](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706 02_MouseCopy") | Copia | Elemento verrà copiato nel percorso di destinazione. |  
+| ![Mouse "copy" icon](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copia | Elemento verrà copiato nel percorso di destinazione. |  
 | ![Mouse "spostare" sull'icona](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 03_MouseMove") | Move | Elemento verrà spostato nel percorso di destinazione. |  
 | ![Icona "Aggiungi riferimento" del mouse](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706 04_MouseAddRef") | Aggiungi riferimento | Verrà aggiunto un riferimento all'elemento selezionato nel percorso di destinazione. |
 
