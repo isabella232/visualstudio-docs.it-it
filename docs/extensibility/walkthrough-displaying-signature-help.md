@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5923efe859f6fe04468e6659d8df46b8b3d2a1cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981129"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: Visualizzare la Guida di firma
 Supporto per la firma (detta anche *le informazioni sul parametro*) consente di visualizzare la firma di un metodo in una descrizione comando quando un utente digita il carattere iniziale dell'elenco parametri (in genere una parentesi di apertura). Com'è digitati un parametro e il separatore di parametro (in genere una virgola), la descrizione comando viene aggiornato per mostrare il parametro successivo in grassetto. È possibile definire supporto firma nei modi seguenti: nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e visualizzare la Guida di firma per il solo tipo o visualizzare la Guida di firma per un tipo di contenuto esistente (ad esempio, "text"). Questa procedura dettagliata viene illustrato come visualizzare la Guida di firma per il tipo di contenuto "text".  
@@ -43,7 +43,7 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   

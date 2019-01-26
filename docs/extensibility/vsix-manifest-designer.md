@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0559f003ec09b6f3b0a12fd8f429f5dc83e6322d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993562"
 ---
 # <a name="vsix-manifest-designer"></a>Finestra di progettazione del manifesto VSIX
 Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di installazione per un'estensione di Visual Studio.  
@@ -105,7 +105,7 @@ Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di in
   
 - Versione unica & - solo la versione specificata  
   
-  **SDK di estensione**  
+  **Extension SDK**  
   Specifica un'installazione globale che non è nell'ambito di un prodotto specifico e una versione. **Identificatore della piattaforma di destinazione** è la piattaforma, ad esempio "Windows", di destinazione. **Versione piattaforma di destinazione** è la versione, ad esempio 8.0, la piattaforma di destinazione. **Nome del SDK** e **SDK versione** sono rispettivamente il nome e il numero di versione del SDK.  
   
   **Questa estensione VSIX è installato per tutti gli utenti (richiede l'elevazione dei privilegi durante l'installazione)**  

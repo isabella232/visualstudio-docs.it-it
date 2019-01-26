@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5704f741883a3d676b0428b358e14debfa7599
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03ae4578f5305b4b11404d588ed65fe73df24469
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917056"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989757"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 Questo metodo ignora il numero specificato di elementi.  
@@ -41,7 +41,7 @@ int Skip(
  [in] Numero di elementi da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione è impostata su Fine e `S_FALSE` viene restituito.  

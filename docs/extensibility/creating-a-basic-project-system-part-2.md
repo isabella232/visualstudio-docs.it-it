@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5fb99c1b07fd2627f9dab6baed12bce60c79dd9a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988285"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creare un sistema di progetto di base, parte 2
 La prima procedura dettagliata in questa serie [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.  

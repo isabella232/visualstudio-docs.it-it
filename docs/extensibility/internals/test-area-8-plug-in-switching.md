@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62885b117e8b5fe42b1078c6fb8fbb4b68bf03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 460d3afc18c19b7e7e3ed97725d69b5a8b04a382
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986232"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998664"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Area di test 8: Cambio di plug-in
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) è l'interfaccia utente (UI) per modificare il controllo del codice sorgente corrente del plug-in. Questa area di test fornisce i test case per il processo di selezione plug-in da usare per la soluzione controllo del codice sorgente che.  

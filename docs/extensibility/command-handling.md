@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3f9086bba7d5c5adfa42f1297de07a2f50ff7e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988129"
 ---
 # <a name="command-handling"></a>Gestione dei comandi
 L'editor è possibile definire nuovi comandi. I comandi vengono in genere visualizzati in un menu, in una barra degli strumenti o in un menu di scelta rapida.  
@@ -27,7 +27,7 @@ L'editor è possibile definire nuovi comandi. I comandi vengono in genere visual
 ## <a name="add-commands-to-the-editor-context-menu"></a>Aggiungere comandi al menu di scelta rapida editor  
  Per aggiungere un comando di menu di scelta rapida, è innanzitutto necessario definire un set di comandi di menu che appartengono a un gruppo specifico. L'esempio seguente è tratto dal *vsct* file generato come parte della procedura dettagliata [procedura dettagliata: Aggiungere funzionalità a un editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid = "guidCustomEditorCmdSet" id = "IDMX_RTF" priorità = "0x0000" type = "Contesto" >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
  \<Guid padre = "guidCustomEditorCmdSet" id = "0" / >  
   
@@ -35,13 +35,13 @@ L'editor è possibile definire nuovi comandi. I comandi vengono in genere visual
   
  \<ButtonText > menu di scelta rapida di CustomEditor\</ButtonText >  
   
- \<CommandName > CustomEditorContextMenu\</CommandName >  
+ \<CommandName>CustomEditorContextMenu\</CommandName>  
   
  \</ Stringhe di >  
   
- \</ Menu >  
+ \</Menu>  
   
- \<E menu >  
+ \</Menus>  
   
  Il testo precedente aggiunge un comando di menu di scelta rapida con il testo **menu di scelta rapida CustomEditor**. Il GUID del Menu fa parte del set di comandi che viene creato con questo editor. Il tipo è "Context".  
   

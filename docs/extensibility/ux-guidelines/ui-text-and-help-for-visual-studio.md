@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d92a8ae5d0581ae5b36276fcf857371d0ae2f8b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907166"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993444"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e la Guida di Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Testo dell'interfaccia utente e terminologia  
@@ -60,15 +60,15 @@ ms.locfileid: "53907166"
 #### <a name="supplemental-instructions"></a>Istruzioni aggiuntive  
  Istruzioni supplementare forniscono informazioni aggiuntive che consente all'utente di comprendere i controlli o raggruppamenti di controllo. Ciò può anche includere il testo di suggerimento necessario per comprendere quale formato prevede che il controllo di input. Attenersi alle istruzioni aggiuntive solo se necessario. Riservarli per i casi in cui è probabile che l'utente non sarà aiutino a comprendere appieno le ramificazioni della scelta che stanno effettuando.  
   
- ![Testo supplementare in Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601 b_SupplementalText1")  
+ ![Supplemental text in Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")  
   
  **Testo supplementare in Visual Studio**  
   
- ![Testo supplementare in Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601 c_SupplementalText2")  
+ ![Supplemental text in Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")  
   
  **Testo supplementare in Visual Studio**  
   
-#### <a name="infotips"></a>Infotip  
+#### <a name="infotips"></a>InfoTips  
  Spesso, il testo esplicativo potrebbe essere troppo lungo per posizionare posto nell'interfaccia utente o potrebbe essere utile solo per i nuovi utenti, devono disordine agli utenti esperti. In questo caso, il testo esplicativo/informativo deve essere inserito come descrizione comando in una finestra popup.  
   
  Infotip devono essere posizionati vicino i controlli che sono correlati a e deve usare l'icona di InfoTip specifico, che è ancora unobtrusive evidenti.  
@@ -107,7 +107,7 @@ ms.locfileid: "53907166"
   
 -   Quando l'avvio di finestre di dialogo, mantenere gli standard per i puntini di sospensione: nessun puntini di sospensione per la navigazione, quindi sui puntini di sospensione se l'attività richiede un'interfaccia utente aggiuntiva.  
   
-     ![Collegamento alla Guida in Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601 e_HelpLink")  
+     ![Help link in Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601-e_HelpLink")  
   
      **I puntini di sospensione (...) in un collegamento alla Guida indica che l'attività richiede un'interfaccia utente aggiuntiva.**  
   
@@ -140,11 +140,11 @@ ms.locfileid: "53907166"
   
 -   Al posto l'etichetta del controllo:  
   
-     ![Testo in Visual Studio l'hint](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 f_HintText1")  
+     ![Hint text in Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")  
   
 -   Con un verbo, fornendo istruzioni:  
   
-     ![Testo in Visual Studio l'hint](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 g_HintText2")  
+     ![Hint text in Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")  
   
 -   Con il testo che indica una voce di richiesta:  
   
@@ -153,7 +153,7 @@ ms.locfileid: "53907166"
 #### <a name="watermark-text"></a>Testo della filigrana  
  In un'area di progettazione vuota, il testo deve indicare gli elementi da eseguire, oltre a fornire collegamenti per aprire altre finestre correlati, se appropriato:  
   
- ![Il testo in Visual Studio della filigrana](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601 i_WatermarkText")  
+ ![Watermark text in Visual Studio](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601-i_WatermarkText")  
   
  **Esempio di testo della filigrana in Visual Studio**  
   
@@ -245,7 +245,7 @@ ms.locfileid: "53907166"
   
  La lingua del messaggio deve essere:  
   
--   **Dominio appropriato.** Usare l'utente sarà in grado di linguaggio. Anche se i clienti Microsoft sono gli sviluppatori, che spesso non sono il contesto e terminologia che è disponibile.  
+-   **Domain-appropriate.** Usare l'utente sarà in grado di linguaggio. Anche se i clienti Microsoft sono gli sviluppatori, che spesso non sono il contesto e terminologia che è disponibile.  
   
 -   **Attributo specifico.** Evitare di formulazione vaga e assegnare nomi specifici e i percorsi degli oggetti coinvolti. Ad esempio, un messaggio di errore, ad esempio"carattere non valido" non è utile. Il carattere? "File non trovato". Il file?  
   
@@ -281,7 +281,7 @@ ms.locfileid: "53907166"
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Testo esplicativo e supplemento nelle finestre di dialogo  
  Nelle finestre di dialogo che supportano attività complesse, potrebbe essere necessario per fornire testo informativo all'interno di interfaccia utente, spesso nella parte superiore della finestra di dialogo o quasi controlli complessi. Visualizzare [interfaccia utente di testo e la terminologia](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) per informazioni dettagliate sulla scrittura di stile.  
   
-#### <a name="infotips"></a>Infotip  
+#### <a name="infotips"></a>InfoTips  
  Testo esplicativo spesso, potrebbe essere troppo lungo per collocare nella posizione desiderata nell'interfaccia utente o potrebbe essere utile solo per i nuovi utenti, devono disordine agli utenti esperti. In questo caso, il testo esplicativo/informativo deve essere inserito come descrizione comando in una finestra popup.  
   
  Infotip devono essere posizionati vicino i controlli che sono correlati a e deve usare l'icona di InfoTip specifico, che è ancora unobtrusive evidenti.  

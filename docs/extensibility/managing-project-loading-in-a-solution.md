@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f861f765305dc0ea4bdfd83326a5a4888239033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd772667223dace8f08fdd5c4a18c4860b50aaa3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000874"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Caricamento di progetti in una soluzione di gestione
 Soluzioni di Visual Studio possono contenere un numero elevato di progetti. Il comportamento di Visual Studio predefinito consiste nel caricare tutti i progetti in una soluzione al momento che la soluzione è aperta e per non consentire all'utente di accedere a nessuno dei progetti finché non termina il caricamento di tutti gli elementi. Quando il processo di caricamento di progetti a lungo termine più di due minuti, viene visualizzato un indicatore di stato che mostra il numero totale di progetti e il numero di progetti caricati. L'utente può scaricare i progetti mentre si lavora in una soluzione con più progetti, ma questa procedura presenta alcuni svantaggi: i progetti non caricati non vengono compilati come parte di un comando Ricompila soluzione e le descrizioni di IntelliSense dei tipi e membri di chiusi i progetti non vengono visualizzati.  
