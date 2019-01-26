@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929575"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869437"
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
   L'elemento della barra multifunzione (XML) consente di personalizzare una barra multifunzione utilizzando XML. Se si desidera personalizzare la barra multifunzione in modo che non è supportato dall'elemento barra multifunzione (finestra di progettazione visiva), usare l'elemento della barra multifunzione (XML). Per un confronto delle operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/Ribbon-overview.md).  
@@ -117,7 +117,7 @@ ms.locfileid: "53929575"
 |-------------|-----------------|  
 |**customUI**|Rappresenta la barra multifunzione personalizzata nel progetto di componente aggiuntivo VSTO.|  
 |**ribbon**|Rappresenta la barra multifunzione.|  
-|**Schede**|Rappresenta un set di schede della barra multifunzione.|  
+|**tabs**|Rappresenta un set di schede della barra multifunzione.|  
 |**scheda**|Rappresenta una singola scheda della barra multifunzione.|  
 |**group**|Rappresenta un gruppo di controlli nella scheda della barra multifunzione.|  
   

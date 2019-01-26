@@ -5,17 +5,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3ccce49992073f11245929bf7af0b966537bd079
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7807d0495c5f0548178b1bc2ecae12d57cc3b072
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886150"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876122"
 ---
 # <a name="setwefprocessid-method"></a>Metodo SetWefProcessId
   Fornisce l'identificatore di processo che eseguirà il contenuto Web estensioni Framework (WCF).  
@@ -32,7 +32,7 @@ HRESULT SetWefProcessId(
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
-|*cui dwProcessId*|L'identificatore di processo che verrà usato per eseguire il contenuto di WCF.|  
+|*dwProcessId*|L'identificatore di processo che verrà usato per eseguire il contenuto di WCF.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Valore HRESULT che indica se il metodo è stato completato correttamente.  

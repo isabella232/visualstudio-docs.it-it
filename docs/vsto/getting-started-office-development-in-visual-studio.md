@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d0d2868becbdc68f88c8ac191e3a044f3cfc8b10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2fb35fdd7237ee7b9a8ea6ea35525b5177829c65
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955357"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874417"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Ottenere introduttiva (sviluppo per Office in Visual Studio)
   In questa sezione sono contenuti gli argomenti che consentono di iniziare a utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio.  

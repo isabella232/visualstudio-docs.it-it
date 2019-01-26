@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e31a5016ae4dadbf14a80cce891bee0b8e5a0b4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872674"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872417"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: Recuperano una cartella in base al nome
   Questo esempio Ottiene un riferimento a una cartella personalizzata denominata e quindi Visualizza il contenuto della cartella.  
