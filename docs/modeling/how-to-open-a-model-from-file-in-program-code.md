@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 592dd923b3ad65f81f0bc637d77fc1c635043a97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938069"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921196"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: Aprire un modello da file nel codice del programma
 È possibile aprire modelli di linguaggio specifico di dominio in qualsiasi applicazione.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90af8e941eb18a703974859ea4393fd84182077d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60efbb25b0b5b52e1392ce84c16710a78dde7b16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919278"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automazione per gli oggetti di configurazione e SelectedItem
 È possibile automatizzare la compilazione e i processi di elemento selezionato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

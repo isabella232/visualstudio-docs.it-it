@@ -13,15 +13,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4810f347301f8e91b1a3a0498021d152eaf20974
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8600fd67cd28073544824374135c6966e19b63a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878666"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864241"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;le personalizzazioni&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `customizations` dello spazio dei nomi `vstov4` contiene tutte le informazioni sull'installazione e sul caricamento di ogni soluzione Office.
@@ -56,7 +56,7 @@ ms.locfileid: "53878666"
 </customizations>
 ```
 
-## <a name="elements-and-attributes"></a>Gli elementi e attributi
+## <a name="elements-and-attributes"></a>Elementi e attributi
  L'elemento `customizations` contiene informazioni specifiche su ogni soluzione Office. Questo elemento deve essere presente nello spazio dei nomi seguente: `vstov4=urn:schemas-microsoft-com:vsto.v4`. In questo spazio dei nomi devono essere inclusi anche gli elementi figlio dell'assembly.
 
  L'elemento `customizations` non ha attributi.

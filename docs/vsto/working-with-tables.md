@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, tables
 - Word [Office development in Visual Studio], tables
 - documents [Office development in Visual Studio], tables
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68d15eab133eebd31ae9119ad8e512b691fc0f4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e0d8d176aed6456a2a5bef57f906e509e5093dc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829933"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869658"
 ---
 # <a name="work-with-tables"></a>Usare le tabelle
   Gli argomenti in questa sezione forniscono routine dettagliate ed esempi di codice per l'uso di modello a oggetti di Microsoft Office Word da usare con tabelle in progetti di Office. In alcuni casi, le modalità con le quali si eseguono queste attività nei componenti aggiuntivi VSTO sono diverse da quelle usate nelle personalizzazioni a livello di documento.  

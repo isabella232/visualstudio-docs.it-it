@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950816"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875719"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Eseguire il debug delle estensioni per gli strumenti di SharePoint in Visual Studio
   È possibile eseguire il debug di estensioni degli strumenti di SharePoint nell'istanza sperimentale o nell'istanza normale di Visual Studio. Se è necessario risolvere i problemi il comportamento di un'estensione, è inoltre possibile modificare i valori del Registro di sistema per visualizzare informazioni aggiuntive sull'errore e per configurare la modalità di esecuzione dei comandi di SharePoint in Visual Studio.
@@ -113,7 +113,7 @@ ms.locfileid: "53950816"
 
  Per risolvere qualsiasi estensione degli strumenti di SharePoint, è possibile creare e impostare il valore di EnableDiagnostics. La tabella seguente descrive questo valore.
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |EnableDiagnostics|REG_DWORD che specifica se i messaggi di diagnostica vengono visualizzati nei **Output** finestra.<br /><br /> Per visualizzare messaggi di diagnostica, impostare questo valore su 1. Per interrompere la visualizzazione dei messaggi, impostare questo valore su 0 o eliminare questo valore.<br /><br /> Per scrivere messaggi di **Output** estensione degli strumenti finestra di SharePoint, usare il servizio di progetto SharePoint. Per altre informazioni, vedere [usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
 

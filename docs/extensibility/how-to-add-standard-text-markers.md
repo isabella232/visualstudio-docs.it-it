@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80c32827a991a87b582f31ceefd2bfd6dbcc7a8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922350"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procedura: Aggiungere i marcatori di testo standard
 Usare la procedura seguente per creare uno dei tipi di marcatore di testo predefinito forniti con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale.  
@@ -38,7 +38,7 @@ Usare la procedura seguente per creare uno dei tipi di marcatore di testo predef
   
      Ad esempio, i comandi specifici punti di interruzione nel menu di scelta rapida includono **Rimuovi punto di interruzione** attraverso **nuovo punto di interruzione**, come visualizzato nello screenshot seguente.  
   
-     ![Menu di scelta rapida marcatore](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
+     ![Marker Context Menu](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
 2.  Passare di nuovo un testo che identifica il nome del comando personalizzato. Ad esempio, **Rimuovi punto di interruzione** potrebbe essere un comando personalizzato se l'ambiente non ha già fornito. Anche passare di nuovo se il comando è supportato, disponibile e abilitato, e/o un interruttore on / off. L'ambiente Usa queste informazioni per visualizzare il comando personalizzato nel menu di scelta rapida in modo corretto.  
   
