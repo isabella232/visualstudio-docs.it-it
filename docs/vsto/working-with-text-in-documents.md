@@ -10,24 +10,24 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], text
 - text [Office development in Visual Studio]
 - documents [Office development in Visual Studio], text
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31b6acfaa4ff971b9b5fbf4be5e4509a91df60a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac4ca433a942222134705af3b71e6dcace6d60ca
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960891"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864995"
 ---
 # <a name="work-with-text-in-documents"></a>Lavorare con il testo nei documenti
   Gli argomenti di questa sezione contengono le procedure dettagliate e gli esempi di codice per usare il modello a oggetti di Microsoft Office Word per lavorare con il testo in progetti di Office.  
   
  In alcuni casi, le modalità con le quali si eseguono queste attività nei componenti aggiuntivi VSTO sono diverse da quelle usate nelle personalizzazioni a livello di documento.  
   
-|Attività|Procedura|  
+|Attività|Routine|  
 |----------|---------------|  
 |Definire intervalli in base a diversi criteri e selezionarli.|[Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|  
 |Ottenere i caratteri iniziale e finale di un intervallo.|[Procedura: Recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|  

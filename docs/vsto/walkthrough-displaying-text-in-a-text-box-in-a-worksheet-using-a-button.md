@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, displaying text
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d7cf32019d3bfa1e6690512f4f348728a409bbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8bdde07844da26b03bca45f41887d6b4eb64ef
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941610"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863825"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procedura dettagliata: Testo visualizzato in una casella di testo in un foglio di lavoro tramite un pulsante
   Questa procedura dettagliata illustra le nozioni di base dell'uso di pulsanti e caselle di testo in fogli di lavoro di Microsoft Office Excel e come creare progetti di Excel con strumenti di sviluppo per Office in Visual Studio. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  

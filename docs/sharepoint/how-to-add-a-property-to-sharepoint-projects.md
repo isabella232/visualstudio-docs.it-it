@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f898ffd70888f00b508223ec4d3c578cbc4d538
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950472"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869606"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procedura: Aggiungere una proprietà ai progetti SharePoint
   È possibile utilizzare un'estensione di progetto per aggiungere una proprietà a qualsiasi progetto SharePoint. La proprietà viene visualizzata nel **delle proprietà** finestra quando il progetto sia selezionato **Esplora soluzioni**.  
@@ -71,9 +71,9 @@ ms.locfileid: "53950472"
 -    
 -   Microsoft.VisualStudio.Shell
 -     
--   VisualStudio
+-   Microsoft.VisualStudio.Shell.Interop
 -     
--   8.0
+-   Microsoft.VisualStudio.Shell.Interop.8.0
 -     
 -   System.ComponentModel.Composition  
   

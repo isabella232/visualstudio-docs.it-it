@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], reuse a model
 - BDC [SharePoint development in Visual Studio], import a model
 - BDC [SharePoint development in Visual Studio], remove a model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9efe862fcd0844d6b6e0c050d4c647b2d9c705a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa799e54f2fc8be22b78eca837d6aee2e683b1d3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863903"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procedura: Aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint
   È possibile personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati (BDC) usando Visual Studio per aggiungere il file del modello (*bdcm*) a qualsiasi progetto farm di SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).  

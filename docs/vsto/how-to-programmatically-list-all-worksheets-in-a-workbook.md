@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, listing worksheets
 - worksheets, listing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cab3547bb23aa563e2c6b5bfe6a82a93fd5e29e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fafcded82320bc97a1650f16537cea2a8f7bae5f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928724"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874926"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedura: A livello di programmazione elencare tutti i fogli di lavoro in una cartella di lavoro
   La classe <xref:Microsoft.Office.Interop.Excel.Workbook> fornisce un oggetto <xref:Microsoft.Office.Interop.Excel.Worksheets>. Questo oggetto contiene una raccolta di tutti gli oggetti <xref:Microsoft.Office.Interop.Excel.Worksheet> presenti nella cartella di lavoro.  
