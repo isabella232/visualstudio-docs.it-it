@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], properties
 - projects [Office development in Visual Studio], properties
 - Value2 property
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3e2179d10983bc74c8dd9bb692f1eade44dec47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed7698db0c235bb5c49379c4a6fb0312895f4b1a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932217"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866961"
 ---
 # <a name="properties-in-office-projects"></a>Proprietà nei progetti di Office
   Per i progetti di Office in Visual Studio, sono disponibili numerose proprietà importanti, alle quali è possibile accedere dalla finestra **Proprietà** .  

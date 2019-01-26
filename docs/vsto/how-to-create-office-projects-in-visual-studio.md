@@ -20,15 +20,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38be1ae60dd86160bc9b107ffc0bdd19f7a1e56d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902240"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867182"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: Creare progetti di Office in Visual Studio
   È possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare il componente aggiuntivo VSTO e a livello di documento personalizzazioni per le applicazioni Microsoft Office. Per altre informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -61,9 +61,9 @@ ms.locfileid: "53902240"
   
     I percorsi hanno i formati seguenti:  
   
-   * [*unità*\]\:  
+   * [*drive*\]\:  
   
-   * \\\\*Server*\\*condivisione*  
+   * \\\\*Server*\\*Share*  
   
      Non usare i caratteri seguenti nel percorso:  
   
@@ -123,9 +123,9 @@ ms.locfileid: "53902240"
   
     I percorsi hanno i formati seguenti:  
   
-   - [*unità*\]\:  
+   - [*drive*\]\:  
   
-   - \\\\*Server*\\*condivisione*  
+   - \\\\*Server*\\*Share*  
   
      Non usare i caratteri seguenti nel percorso:  
   

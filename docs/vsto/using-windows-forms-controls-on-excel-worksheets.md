@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Excel
 - Excel [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], Window Forms controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abc3e08a867af9b04d7ce1da1449f108a099b238
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 144bcf1d9b0b96944e1493471106fe8aa6c8031b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823419"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871533"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usare i controlli Windows Form nei fogli di lavoro di Excel
   È possibile aggiungere controlli Windows Form per le cartelle di lavoro di Microsoft Office Excel allo stesso modo aggiungere controlli a un Windows Form. Per informazioni generali sull'uso dei controlli nei documenti, vedere [controlli Windows Form nella panoramica di documenti Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  

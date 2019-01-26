@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Project [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ec2a0959e09cac4522697ebe8ab27d58a890f45
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931255"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872768"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procedura dettagliata: Creare il primo aggiuntivo VSTO per Project
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office Project. Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente dai progetti aperti. Per altre informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -75,7 +75,7 @@ ms.locfileid: "53931255"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Per aggiungere un'attività a un nuovo progetto  
   
-1. Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn`. Questo codice definisce un gestore eventi per l'evento `NewProject` della classe `Microsoft.Office.Interop.MSProject.Application`.  
+1. Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice definisce un gestore eventi per l'evento `NewProject` della classe `Microsoft.Office.Interop.MSProject.Application`.  
   
     Quando l'utente crea un nuovo progetto, questo gestore eventi aggiunge un'attività al progetto.  
   

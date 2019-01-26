@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856410"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866831"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizzazione e localizzazione di soluzioni di Excel
   Questa sezione contiene considerazioni speciali per le soluzioni Microsoft Office Excel eseguite in computer che hanno impostazioni di Windows non in inglese. Gli aspetti da considerare per la globalizzazione e la localizzazione di soluzioni Microsoft Office sono gli stessi implicati negli altri tipi di soluzioni create con Visual Studio. Per informazioni generali, vedere [Globalize e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md).
@@ -36,7 +36,7 @@ ms.locfileid: "53856410"
 
  Anche se si usa il formato inglese (Stati Uniti) per i dati passati o modificati da codice gestito, Excel interpreta e visualizza i dati correttamente in base alle impostazioni locali dell'utente finale. In Excel i dati vengono formattati in maniera corretta perché il codice gestito passa l'ID delle impostazioni locali 1033 insieme ai dati, a indicare che i dati sono nel formato inglese (Stati Uniti) e quindi devono essere riformattati in modo da corrispondere alle impostazioni locali dell'utente.
 
- Ad esempio, se gli utenti finali hanno le opzioni internazionali impostare le impostazioni locali lingua tedesca (Germania), si aspettano la data 29 giugno 2005 sia formattato in questo modo: 29.06.2005. Tuttavia, se la soluzione passa la data a Excel sotto forma di stringa, è necessario formattare la data in base al formato inglese (Stati Uniti): 6/29 o 2005. Se la cella viene formattata come una cella di data, Excel visualizzerà la data nel formato della lingua tedesca (Germania).
+ Ad esempio, se gli utenti finali hanno le opzioni internazionali impostare le impostazioni locali lingua tedesca (Germania), si aspettano la data 29 giugno 2005 sia formattato in questo modo: 29.06.2005. Tuttavia, se la soluzione passa la data a Excel sotto forma di stringa, è necessario formattare la data in base al formato inglese (Stati Uniti): 6/29/2005. Se la cella viene formattata come una cella di data, Excel visualizzerà la data nel formato della lingua tedesca (Germania).
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passare gli altri ID delle impostazioni locali per il modello a oggetti Excel
  Common Language Runtime (CLR) passa automaticamente l'ID delle impostazioni locali 1033 a tutti i metodi e le proprietà nel modello a oggetti di Excel che accettano i dati dipendenti dalle impostazioni locali. Non è possibile modificare automaticamente questo comportamento per tutte le chiamate nel modello a oggetti. Tuttavia, è possibile passare un ID delle impostazioni locali diverso a un metodo specifico usando <xref:System.Type.InvokeMember%2A> per chiamare il metodo e passando l'ID delle impostazioni locali al parametro *culture* del metodo.
