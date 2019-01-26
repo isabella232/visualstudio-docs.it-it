@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948771"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000809"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procedura dettagliata: Salvare le impostazioni utente in una pagina iniziale
 È possibile rendere persistenti le impostazioni utente per la pagina iniziale. Seguendo questa procedura dettagliata, è possibile creare un controllo per salvare un'impostazione nel Registro di sistema quando l'utente fa clic su un pulsante e quindi recupera impostata ogni volta che viene caricata la pagina iniziale. Poiché il modello di progetto di pagina iniziale include un controllo utente personalizzabile, e il valore predefinito avviare pagina XAML chiama tale controllo, non è necessario modificare la pagina iniziale di se stesso.  
   
- L'archivio delle impostazioni che viene creata un'istanza di questa procedura dettagliata è un'istanza del <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaccia, che legge e scrive nel percorso seguente del Registro di sistema quando viene chiamata: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<NomeRaccolta >**  
+ L'archivio delle impostazioni che viene creata un'istanza di questa procedura dettagliata è un'istanza del <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaccia, che legge e scrive nel percorso seguente del Registro di sistema quando viene chiamata: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**  
   
  Quando è in esecuzione nell'istanza sperimentale di Visual Studio, l'archivio delle impostazioni legge e scrive **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<NomeRaccolta >.**  
   
@@ -43,7 +43,7 @@ ms.locfileid: "53948771"
   
     -   EnvDTE80  
   
-    -   Interop  
+    -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   

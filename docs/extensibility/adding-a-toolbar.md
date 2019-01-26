@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fa301a146dec9e7ee9b2f7edcaa6480e6bf5fef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9da4631107b9f9b5f4c5ae70bedfb13110e774cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970500"
 ---
 # <a name="add-a-toolbar"></a>Aggiungere una barra degli strumenti
 Questa procedura dettagliata viene illustrato come aggiungere una barra degli strumenti all'IDE di Visual Studio.  
@@ -87,7 +87,7 @@ Questa procedura dettagliata viene illustrato come aggiungere una barra degli st
   
 6.  Fare clic sulla barra dei menu di Visual Studio per ottenere l'elenco delle barre degli strumenti. Selezionare **sulla barra degli strumenti di Test**.  
   
-7.  Si noterà ora la barra degli strumenti ridotta a icona a destra della scheda Cerca nei icona dei file. Quando si fa clic sull'icona, si dovrebbe essere una finestra di messaggio con la dicitura **ToolbarTestCommandPackage. All'interno di IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7.  Si noterà ora la barra degli strumenti ridotta a icona a destra della scheda Cerca nei icona dei file. Quando si fa clic sull'icona, si dovrebbe essere una finestra di messaggio con la dicitura **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

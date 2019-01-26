@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: douge
+manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 0b81d0dc38e4fb6c6bb14860634d41d85aa4dee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91c834e61452667a0af236eddb65355f23234715
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892118"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990537"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Eseguire la migrazione a 64 bit del debugger registrazione della classe COM
 
@@ -25,7 +25,7 @@ Per usare questa tecnica, aggiungere un  **.msvsmon-comclass-def.json* file acca
 
 Ecco un file di msvsmon-comclass-def di esempio che registra uno gestito e una classe nativa:
 
-Nome file: *MyCompany.MyExample.msvsmon-comclass-def.json*
+FileName: *MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

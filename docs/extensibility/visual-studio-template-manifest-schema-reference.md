@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961955"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999470"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimento dello schema del manifesto di modello di Visual Studio
 Questo schema viene descritto il formato del manifesto del modello di Visual Studio (*con estensione vstman*) i file che vengono generati per i modelli di progetto o un elemento di Visual Studio. Lo schema descrive anche la posizione e altre informazioni rilevanti relative al modello.  
@@ -51,7 +51,7 @@ Questo schema viene descritto il formato del manifesto del modello di Visual Stu
   
 -   **RelativePathOnDisk**:  Il percorso relativo del file del modello su disco. Questo percorso definisce anche la posizione del modello nell'albero del modello illustrato nella **nuovo progetto** oppure **nuovo elemento** finestra di dialogo. Per i modelli distribuiti come una directory e i singoli file, questo percorso fa riferimento alla directory contenente i file di modello. Per i modelli distribuiti come un *zip* file, questo percorso deve essere il percorso per il *zip* file.  
   
--   * * VSTemplateHeader: Oggetto [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.  
+-   **VSTemplateHeader: Oggetto [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.  
   
 ### <a name="parent-element"></a>Elemento padre  
  **VSTemplateManifest**  

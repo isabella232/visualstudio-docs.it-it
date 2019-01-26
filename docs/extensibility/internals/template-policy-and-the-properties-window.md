@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff518df5025131a369e0f82da44cb38a7e6a57da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09d8dd21e65d1320aa6de78337ee8959fc42656
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001810"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Criteri dei modelli e finestra Proprietà
 Quando un progetto è contenuto all'interno di un progetto di modello aziendale, tale progetto di modello dell'organizzazione possa applicare criteri. Criteri dei modelli diventa un sistema vincolante che può essere utilizzato per impostare i valori predefiniti per le proprietà, nascondere le proprietà, aggiungere le proprietà e così via.  

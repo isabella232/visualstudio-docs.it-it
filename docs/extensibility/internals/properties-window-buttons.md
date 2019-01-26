@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3229f95f81fe839b0dd84cd7d1294600c21bbc0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d21e8d13ef8af83b12d30b6c78c253f371a11c30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973863"
 ---
 # <a name="properties-window-buttons"></a>Pulsanti della finestra Proprietà
 A seconda del linguaggio di sviluppo e il tipo di prodotto, alcuni pulsanti vengono visualizzati per impostazione predefinita nella barra degli strumenti per la **proprietà** finestra. In tutti i casi, il **Categorized**, **Alphabetized**, **proprietà**, e **pagine delle proprietà** vengono visualizzati i pulsanti. In Visual c# e Visual Basic, il **eventi** pulsante viene anche visualizzato. In alcuni progetti di Visual C++, il **VC + + messaggi** e il **esegue l'override di VC** vengono visualizzati i pulsanti. Pulsanti aggiuntivi potrebbero essere visualizzati per altri tipi di progetto. Per altre informazioni sui pulsanti nel **delle proprietà** finestra, vedere [finestra proprietà](../../ide/reference/properties-window.md).  

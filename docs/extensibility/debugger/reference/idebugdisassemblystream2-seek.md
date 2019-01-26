@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81f17bf830a9d7566ad00b062d81edcd7e1a242a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a2c3cf1a1a5ee17a3ecdb6ed6b097b3ff4dde18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976706"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Sposta il puntatore di lettura nel flusso di disassemblaggio di un determinato numero di istruzioni rispetto alla posizione specificata.  
@@ -56,7 +56,7 @@ int Seek( 
  [in] Il numero di istruzioni da spostare rispetto alla posizione specificata nel `dwSeekStart`. Questo valore può essere negativo per spostarsi all'indietro.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è stata la posizione di ricerca a un punto successivo nell'elenco delle istruzioni disponibili. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è stata la posizione di ricerca a un punto successivo nell'elenco delle istruzioni disponibili. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Se la ricerca è stato in una posizione antecedente l'inizio dell'elenco, la posizione di lettura è impostata per la prima istruzione nell'elenco. Se il vedere è stato in una posizione dopo la fine dell'elenco, la posizione di lettura viene impostata all'ultima istruzione nell'elenco.  

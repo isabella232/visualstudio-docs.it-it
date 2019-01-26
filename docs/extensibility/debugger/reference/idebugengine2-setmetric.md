@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90d53f8ab2ba01eaab075fb2d95d0cf4a60ccd26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f50732b6e271ac3bf51eb2cde4549cd7396fb4b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849807"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998196"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 Questo metodo imposta un valore del Registro di sistema noto come una metrica.  

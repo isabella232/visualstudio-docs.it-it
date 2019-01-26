@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22a57c07be39a4867f746c7f5f5dfe844daab69b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0785f1c31a1c4a6eed530a0fc9457d1343b6ce61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878614"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996857"
 ---
 # <a name="selection-context-objects"></a>Oggetti del contesto di selezione
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) usa un oggetto di contesto di selezione globale per determinare che cosa deve essere visualizzata nell'IDE. Ogni finestra dell'IDE può avere un proprio oggetto di contesto di selezione il push nel contesto di selezione globale. L'IDE aggiorna il contesto di selezione globale con i valori da una finestra quando tale finestra ha lo stato attivo. Per altre informazioni, vedere [commenti e suggerimenti all'utente](../../extensibility/internals/feedback-to-the-user.md).  

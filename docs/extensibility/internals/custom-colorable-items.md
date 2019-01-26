@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974019"
 ---
 # <a name="custom-colorable-items"></a>Elementi colorabili personalizzati
 È possibile sostituire l'elenco dei tipi per colorare, quali parole chiave e i commenti, mediante l'implementazione di elementi colorabili personalizzati come parte del servizio di linguaggio.  

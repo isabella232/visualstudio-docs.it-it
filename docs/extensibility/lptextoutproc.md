@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55c65b7344169f14679d8eb9493cec2e4569af65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956842"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009999"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Quando l'utente esegue un'operazione di controllo codice sorgente all'interno dell'ambiente di sviluppo integrato (IDE), il plug-in del controllo del codice sorgente potrebbe essere necessario trasmettere i messaggi di stato o di errore relativi al funzionamento. Il plug-in può visualizzare il proprio le finestre di messaggio per questo scopo. Tuttavia, per più facile integrazione, il plug-in possono passare stringhe all'IDE, che quindi li visualizza in modo nativo per la visualizzazione di informazioni sullo stato. Il meccanismo per questo è il `LPTEXTOUTPROC` puntatore a funzione. L'IDE implementa questa funzione (descritta in dettaglio più avanti) per la visualizzazione di errore e stato.  
@@ -45,7 +45,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  Tipo di messaggio. La tabella seguente elenca i valori supportati per questo parametro.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Il messaggio è considerato informazioni, avviso o errore.|  
 |`SCC_MSG_STATUS`|Il messaggio Mostra lo stato e può essere visualizzato nella barra di stato.|  
@@ -59,7 +59,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>Valore restituito  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|Zobrazilo se la stringa o l'operazione è stata completata correttamente.|  
 |SCC_MSG_RTN_CANCEL|L'utente desidera annullare l'operazione.|  
