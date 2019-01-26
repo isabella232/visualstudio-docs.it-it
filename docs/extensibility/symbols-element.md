@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeeaff19eb0eb479cdb7faa441c2cde8f60f52d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 201faded164eba9a82ef412924b327aba762b14b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027022"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
 Definisce i GUID e gli ID usati da altri elementi VSCT. Per codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati da [elemento Extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento simboli per definire queste informazioni.  
@@ -47,7 +47,7 @@ Definisce i GUID e gli ID usati da altri elementi VSCT. Per codice non gestito, 
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|GuidSymbol|Definisce un simbolo GUID. GuidSymbol ha due attributi obbligatori: nome e valore. Il nome è il nome del simbolo e il valore è il valore del GUID sotto forma di stringa.<br /><br /> Ad esempio:\<GuidSymbol name = "guidVsPackage1Pkg" value = "{c5f54698-101a-4846-84d3-dc748f9cd848}" / >|  
+|GuidSymbol|Definisce un simbolo GUID. GuidSymbol ha due attributi obbligatori: nome e valore. Il nome è il nome del simbolo e il valore è il valore del GUID sotto forma di stringa.<br /><br /> For example:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|  
 |IDSymbol|Definisce un simbolo. IDSymbol ha due attributi obbligatori: nome e valore. Il nome è il nome del simbolo e il valore è il valore del simbolo sotto forma di stringa.<br /><br /> Ad esempio:\<IDSymbol name = "MyMenuGroup" value = "0x1020" / >|  
   
 ### <a name="parent-elements"></a>Elementi padre  

@@ -7,25 +7,25 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0172f9412bff791ae2446d6cffcd9d302c7c3ef8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dfe0405406405dc1e09e18c49f7de7b4aecd7fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923627"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013327"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
 La sezione di riferimento include una panoramica concettuale dell'API, una Guida che illustra la sintassi e sull'utilizzo per tutti gli elementi di API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico per categoria.  
   
  La tabella seguente illustra i comuni `HRESULT` valori restituiti dai metodi.  
   
-|nome|Descrizione|Value|  
+|nome|Descrizione|Valore|  
 |----------|-----------------|-----------|  
 |S_OK|Operazione completata.|0x00000000|  
-|E_UNEXPECTED|Errore imprevisto.|0x8000ffff|  
+|E_UNEXPECTED|Errore imprevisto.|0x8000FFFF|  
 |E_NOTIMPL|Non implementato.|0x80004001|  
 |E_OUTOFMEMORY|Memoria insufficiente per completare l'operazione.|0x8007000E|  
 |E_INVALIDARG|Uno o più argomenti non sono validi.|0x80070057|  

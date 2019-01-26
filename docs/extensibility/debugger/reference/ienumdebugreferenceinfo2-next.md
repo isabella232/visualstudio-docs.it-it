@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 70b31a57-1701-4757-9e7e-63ec60a71b3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2ae764ec5dfd1c7d1ae9c3e514037955b009742
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5043de69946153396e8d69865bb9f0cd9e082882
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852849"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003111"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
 Restituisce il set successivo di elementi dall'enumerazione.  
@@ -51,7 +51,7 @@ int Next(
  [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)   

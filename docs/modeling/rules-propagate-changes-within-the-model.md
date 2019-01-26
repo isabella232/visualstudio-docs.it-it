@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aded621c89f6d351c6abb9bbe1744de51673e6b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925550"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070799"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando viene apportata una modifica a qualsiasi elemento nella finestra di Store, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio aggiungendo un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o i diagrammi. Molte funzionalità incorporate sono definite da regole: ad esempio, le regole di assicurano che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.

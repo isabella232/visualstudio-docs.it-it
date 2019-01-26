@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f2deb04f14af93846b0b5a9e13dca14eb5ed710
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818875"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020152"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>I dati del documento e visualizzazione documento negli editor personalizzati
 Un editor personalizzato è costituita da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggeriscono i nomi, l'oggetto dati del documento rappresenta i dati di testo da visualizzare. Analogamente, l'oggetto visualizzazione del documento (o "visualizzazione") rappresenta una o più finestre in cui visualizzare l'oggetto dati del documento.  

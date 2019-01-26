@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914608"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027711"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 
@@ -83,7 +83,7 @@ Vedere: [Esposizione di colori per gli utenti finali](../../extensibility/ux-gui
 
 In alcuni casi, è opportuno consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o l'area di progettazione. Personalizzabili componenti dell'interfaccia utente sono disponibili nel **i tipi di carattere e colori** sezione del **Tools &gt; opzioni** finestra di dialogo in cui gli utenti possono scegliere di modificare il colore primo piano, il colore di sfondo o entrambi.
 
-![Gli strumenti &gt; finestra di dialogo Opzioni](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />Strumenti &gt; finestra di dialogo Opzioni
+![Tools &gt; Options dialog](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />Strumenti &gt; finestra di dialogo Opzioni
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor Service
 

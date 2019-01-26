@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b373fd51087526c30243391b6b0b32ad27e15ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866907"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027425"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Pattern compositi combinano gli elementi di interazione e progettazione di configurazioni distinte. Alcuni dei modelli compositi più importanti in Visual Studio per quanto riguarda la coerenza includono:  
@@ -73,13 +73,13 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 |Campione|HEX|RGB|  
 |------------|---------|---------|  
-|![Campione 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|& 71B252|113,178,82|  
-|![Campione BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|& BF3F00|191,63,0|  
-|![Campione FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|& FCB714|252,183,20|  
-|![Campione 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|& 903F8B|144,63,139|  
-|![Campione 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|& 117AD1|17,122,209|  
-|![Campione 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|& 79D7F2|121,215,242|  
-|![Campione B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|& B5B5B5|181,181,181|  
+|![Swatch 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113,178,82|  
+|![Swatch BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191,63,0|  
+|![Swatch FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252,183,20|  
+|![Swatch 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|  
+|![Swatch 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17,122,209|  
+|![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
+|![Swatch B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
 
 ##  <a name="BKMK_OnObjectUI"></a> Per gli oggetti dell'interfaccia utente e la lettura  
  In questa sezione fornisce il contesto di visualizzazione, noto anche come visualizzazione rapida codice, un tipo di interfaccia utente per gli oggetti univoci a Visual Studio.  
@@ -396,7 +396,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 | Stato | Aspetto | Dettagli su Visual |
 |-------------------------|---------------| - |
-| **Non selezionato** | Impostazione predefinita | ![Predefinito dello stato del pulsante](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
+| **Non selezionato** | Impostazione predefinita | ![Default button state](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Selezione primaria** | Ridimensionabile | ![Selezione primaria con quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize") |
 | **Selezione primaria** | Non ridimensionabile | ![Selezione primaria senza quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize") |
 | **Selezione primaria** | Bloccato | ![Selezione primaria bloccata](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked") |
