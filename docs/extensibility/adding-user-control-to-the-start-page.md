@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d66735c516d9c083ae13606f415136c9a2e817bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946529"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Aggiungi controllo utente nella pagina iniziale
 Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL a una pagina iniziale personalizzata. L'esempio aggiunge un controllo utente alla soluzione, si basa il controllo utente e quindi si fa riferimento all'assembly compilato dalla pagina iniziale *XAML* file. Una nuova scheda contiene il controllo utente, che funziona come un Web browser di base.  

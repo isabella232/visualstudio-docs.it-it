@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953510"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 
@@ -98,7 +98,7 @@ Anziché modificare direttamente il file XML del manifesto, è possibile usare i
 
   ![aggiungere il prerequisito di roslyn](media/add-roslyn-prerequisite.png)
 
-* Premere **OK**.
+* Fare clic su **OK**.
 
 ## <a name="update-debug-settings-for-the-project"></a>Aggiornare le impostazioni di Debug per il progetto
 
@@ -117,9 +117,9 @@ Potrebbe essere simile: *C:\Programmi\Microsoft file (x86) \Microsoft Visual Stu
   * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]*.
   * Rinominare *VSIX* al *zip* visualizzare facilmente il contenuto.
 * Verificare l'esistenza di tre file:
-  * *Extension. vsixmanifest*
-  * *manifest*
-  * *Catalog. JSON*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Controllare quando vengono installati tutti i prerequisiti obbligatori
 
@@ -129,7 +129,7 @@ Verificare che il progetto VSIX viene installato correttamente in un computer co
 
 Tentativo di installare l'estensione:
 
-* In Visual Studio 2017
+* On Visual Studio 2017
 
 ![Programma di installazione VSIX in Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
@@ -175,7 +175,7 @@ L'elenco dei componenti ordinati per prodotto Visual Studio si trova [gli ID di 
 
 Se si è certi che il componente contiene un file binario specifico, scaricare il [componenti -> del foglio di calcolo di mapping dei tipi binari](https://aka.ms/vs2017componentid-binaries).
 
-### <a name="vs2017-componentbinarymappingxlsx"></a>Visual Studio 2017-ComponentBinaryMapping.xlsx
+### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
 Esistono quattro colonne nel foglio di Excel: **Nome del componente**, **ComponentId**, **versione**, e **binario / nomi File**.  È possibile usare i filtri per cercare e trovare i file binari e componenti specifici.
 

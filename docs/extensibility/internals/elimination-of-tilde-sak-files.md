@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701bb929bae7b5103e274810cf0ad3a222118781
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951274"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminazione di ~ file SAK
 In origine controllo plug-in API 1.2, il *~ SAK* i file sono stati sostituiti dai flag funzionalità e nuove funzioni di rilevare la presenza di un'origine di controllo del plug-in supporta le *MSSCCPRJ* file ed estrazioni condivise.  
@@ -45,7 +45,7 @@ Per i plug-in che supportano funzioni avanzate disponibili nella versione 1.2 AP
   
  Se un controllo del codice sorgente del plug-in supporta la creazione e uso di un' *Mssccprj. scc* del file, quindi dichiara il `SCC_CAP_SCCFILE` funzionalità e implementa la [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Questa funzione viene chiamata con un elenco di file. La funzione restituisce `TRUE' or 'FALSE` per ogni file indicare se Visual Studio deve utilizzare un *Mssccprj. scc* per tale file. Se il plug-in del controllo del codice sorgente viene scelto di non supportare queste nuove funzionalità e le funzioni, è possibile usare la chiave del Registro di sistema seguente per disabilitare la creazione di questi file:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
 >  Se questa chiave del Registro di sistema è impostata su *dword:00000000*è equivalente alla chiave in corso inesistenti e Visual Studio continua a tentare di creare i file temporanei. Tuttavia, se la chiave del Registro di sistema è impostata su *dword:00000001*, Visual Studio non tenta di creare i file temporanei. In alternativa, si presuppone che il plug-in del controllo del codice sorgente non supporta il *Mssccprj. scc* file e non supporta estrazioni condivise.  

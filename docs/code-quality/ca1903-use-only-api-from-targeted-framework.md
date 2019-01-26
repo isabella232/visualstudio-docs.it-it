@@ -1,5 +1,5 @@
 ---
-title: "CA1903: Usare l'API solo framework di destinazione"
+title: 'CA1903: Usare solo API della versione di .NET Framework di destinazione'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb85029cb9c3c419b88a31be88d8e1cfbd16142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2483ebbaab2009d514ecb1ecec31f8ac78d35b6a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943994"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usare l'API solo framework di destinazione
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usare solo API della versione di .NET Framework di destinazione
 
 |||
 |-|-|
@@ -42,8 +42,8 @@ ms.locfileid: "53908983"
 |||
 |-|-|
 |Quando è il framework di destinazione|Viene attivato in caso di utilizzo di membri introdotti in|
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
+|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
+|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/D|
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978269"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 In questa sezione fornisce informazioni approfondite sulle estensioni di Visual Studio, tra cui architettura di Visual Studio, componenti, servizi, schemi, utilità e simili.
@@ -102,7 +102,7 @@ In questa sezione fornisce informazioni approfondite sulle estensioni di Visual 
 ## <a name="properties-and-options"></a>Proprietà e le opzioni
  Il **proprietà** finestra vengono visualizzate le proprietà di uno o più elementi selezionati: [Estensione delle proprietà](../../extensibility/internals/extending-properties.md) pagine Opzioni contengono set di opzioni che si riferiscono a un determinato componente, ad esempio un pacchetto VSPackage o un linguaggio di programmazione: [Opzioni e le pagine di opzioni](../../extensibility/internals/options-and-options-pages.md). Le impostazioni sono le funzionalità in genere correlati dell'interfaccia utente che possono essere importate ed esportate: [Supporto per le impostazioni utente](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Servizi di Visual Studio
+## <a name="visual-studio-services"></a>Visual Studio Services
  Un servizio fornisce un set specifico di interfacce per i componenti da utilizzare. Visual Studio offre un set di servizi che può essere utilizzato da tutti i componenti, incluse le estensioni. Ad esempio, servizi Visual Studio abilitare finestre degli strumenti per essere visualizzato o nascosto in modo dinamico, abilitare l'accesso alla Guida in linea, barra di stato o eventi dell'interfaccia utente. Editor di Visual Studio fornisce anche servizi che possono essere importati tramite le estensioni dell'editor. Per altre informazioni, vedere [sull'utilizzo e la fornitura di servizi](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>Debugger

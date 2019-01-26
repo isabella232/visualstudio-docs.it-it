@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68f90e406a06069403b76749977c5546b10ed790
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 282c3575de351079feba95b3d4f6985f0cf57327
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936892"
 ---
 # <a name="sccdiff-function"></a>Funzione SccDiff
 Questa funzione consente di visualizzare (o facoltativamente appena Cerca) le differenze tra il file corrente (nel disco locale) e la relativa versione ultimo stato archiviato nell'origine del sistema di controllo.  
@@ -44,7 +44,7 @@ SCCRTN SccDiff(
  lpFileName  
  [in] Nome del file per il quale viene richiesta la differenza.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando. Per informazioni dettagliate, vedere la sezione Osservazioni.  
   
  pvOptions  
@@ -53,7 +53,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|La versione di copia e il server di lavoro sono identici.|  
 |SCC_I_FILESDIFFERS|La copia di lavoro è diverso dalla versione di controllo del codice sorgente.|  
