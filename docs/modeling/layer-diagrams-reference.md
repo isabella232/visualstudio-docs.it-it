@@ -17,16 +17,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 473bbcfa7d9c83b8011fc849a246c30b86cce6a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980219"
 ---
 # <a name="dependency-diagrams-reference"></a>I diagrammi delle dipendenze: riferimenti
 
@@ -59,7 +59,7 @@ Nella tabella seguente vengono descritti gli elementi che è possibile usare in 
 
 |**Forma**|**Elemento**|**Descrizione**|
 |-|-|-|
-|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **Non è consentito Namespace dipendenze** -specifica che gli artefatti associati a questo livello non possono dipendere da spazi dei nomi specificati.<br />-   **Forbidden Namespaces** -specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificato.<br />-   **Required Namespaces** -specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
+|1|**Layer**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **Non è consentito Namespace dipendenze** -specifica che gli artefatti associati a questo livello non possono dipendere da spazi dei nomi specificati.<br />-   **Forbidden Namespaces** -specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificato.<br />-   **Required Namespaces** -specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
 |2|**dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> -   **Direzione** -specifica la direzione della dipendenza.|
 |3|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> -   **Direzione** -specifica la direzione della dipendenza.|
 |4|**Commentoo**|Usato per aggiungere note generali al diagramma o elementi nel diagramma.|
@@ -93,7 +93,7 @@ Nel diagramma delle dipendenze, aprire il menu di scelta rapida per uno o più l
 |**Colonna in Esplora livello**|**Descrizione**|
 |-|-|
 |**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
-|**Livello**|Livello collegato all'elemento|
+|**Layer**|Livello collegato all'elemento|
 |**Supporta la convalida**|Se **True**, quindi il processo di convalida dei livelli può verificare che il progetto sia conforme alla dipendenze da o verso questo elemento.<br /><br /> Se **False**, quindi il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md).|
 |**Identificatore**|Riferimento all'elemento collegato|
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 931c4b29bd5f90b23492cba854644435a7e99bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845337"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980882"
 ---
 # <a name="naming-warnings"></a>avvisi di denominazione
 Gli avvisi di denominazione supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione di .NET Framework.
@@ -49,6 +49,6 @@ Gli avvisi di denominazione supportano la conformità alle convenzioni di denomi
 |[CA1716: Gli identificatori non devono corrispondere a parole chiave](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Un nome di spazio dei nomi o di tipo corrisponde a una parola chiave riservata in un linguaggio di programmazione. Gli identificatori di spazi dei nomi e tipi non devono corrispondere a parole chiave definite dai linguaggi con destinazione Common Language Runtime.|
 |[CA1726: Utilizzare termini preferiti](../code-quality/ca1726-use-preferred-terms.md)|Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine "Flag" o "Flags".|
 |[CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)|Per convenzione, i nomi dei parametri usano le iniziali maiuscole e minuscole e lo spazio dei nomi, il tipo e i nomi dei membri utilizzare la convenzione Pascal maiuscole e minuscole.|
-|[CA1702: LE Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Il nome di un identificatore contiene più parole, fra cui almeno una che sembra essere composta e digitata in modo non corretto con distinzione tra maiuscole e minuscole.|
+|[CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Il nome di un identificatore contiene più parole, fra cui almeno una che sembra essere composta e digitata in modo non corretto con distinzione tra maiuscole e minuscole.|
 |[CA1712: Prefisso nei valori di enumerazione con il nome di tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)|Nomi dei membri dell'enumerazione non hanno il prefisso con il nome del tipo perché le informazioni sul tipo è previsto il supporto da strumenti di sviluppo.|
 |[CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)|Per convenzione, i nomi dei tipi che estendono determinati tipi di base o implementano determinate interfacce o dei tipi derivati da questi tipi hanno un suffisso che è associato il tipo di base o interfaccia.|

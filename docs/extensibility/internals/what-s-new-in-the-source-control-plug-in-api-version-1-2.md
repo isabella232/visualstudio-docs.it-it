@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f323bde8719090815e76cf9887630930e5151da7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80bfefacf73e1ed7209ee7b40eec4c180e16904d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915296"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949701"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Cosa&#39;plug-in versione 1.2 dell'API di controllo s nuove nell'origine
 Questa sezione evidenzia la funzionalità di controllo codice sorgente avanzate nell'API di plug-in del controllo origine versione 1.2. Di seguito sono elencate le nuove funzionalità nella versione 1.2:  

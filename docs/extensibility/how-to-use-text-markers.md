@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825f567098d86a0f643de84eef395e5404d3b0f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e484ba24eb1ebb8e92f07fb28b2e807ab5460cbc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895701"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967469"
 ---
 # <a name="how-to-use-text-markers"></a>Procedura: Usare marcatori di testo
 Marcatori di testo possono essere applicati per modificare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> oggetto.  
