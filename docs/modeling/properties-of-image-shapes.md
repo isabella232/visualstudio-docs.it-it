@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f1f18a0957c3ee2c67fb9a316460a8883e146f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822257"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918209"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 
@@ -34,7 +34,7 @@ ms.locfileid: "53822257"
 
 - .wmf
 
-- EMF
+- .emf
 
 - .png
 
@@ -54,7 +54,7 @@ Forme d'immagine hanno le proprietà elencate nella tabella seguente.
 |Spessore del contorno|Lo spessore del contorno di questa forma.|0.03125|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|
 |Modificatore di accesso|Il modificatore di accesso della forma geometria (pubblico o interno).|Public|
-|Attributi personalizzati|Consente di aggiungere attributi alla classe del codice sorgente che viene generata da questa forma.|\<Nessuno >|
+|Attributi personalizzati|Consente di aggiungere attributi alla classe del codice sorgente che viene generata da questa forma.|\<nessuno>|
 |Genera l'errore doppia derivati|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma dell'immagine (`none`, `abstract` o `sealed`).|none|
@@ -62,15 +62,15 @@ Forme d'immagine hanno le proprietà elencate nella tabella seguente.
 |nome|Il nome di questa forma.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi che è affiliato a questa forma.|Spazio dei nomi corrente|
 |Tipo della descrizione comando|La posizione in cui è definito la descrizione comando (fissata, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene usata come descrizione comando; se la variabile, la descrizione comando è definito nel codice personalizzato.|none|
-|Note|Note informali associate a questa forma.|\<Nessuno >|
+|Note|Note informali associate a questa forma.|\<nessuno>|
 |Altezza iniziale|Altezza iniziale della forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1,5|
 |Colore di riempimento esposte come proprietà<br /><br /> Modalità di sfumatura riempimento esposto<br /><br /> Esposizione del colore del contorno come proprietà<br /><br /> Esposta dello stile di tratteggio di struttura come proprietà<br /><br /> Esposti come proprietà dello spessore del contorno<br /><br /> Espone il colore del testo|Se `True`, l'utente può impostare la proprietà specificata di una forma. Per procedere, fare doppio clic la definizione della forma e fare clic su **Aggiungi esposta**.|False|
-|Descrizione|Consente di documentare la finestra di progettazione generata.|\<Nessuno >|
-|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<Nessuno >|
-|Testo della descrizione comando fissa|Testo che viene usato per una descrizione comando fissa.|\<Nessuno >|
-|Parola chiave della Guida|La parola chiave utilizzata per indicizzare la Guida F1 per questo elemento.|\<Nessuno >|
-|Image|Il percorso del file di immagine che viene usato per questa forma.|\<Nessuno >|
+|Descrizione|Consente di documentare la finestra di progettazione generata.|\<nessuno>|
+|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<nessuno>|
+|Testo della descrizione comando fissa|Testo che viene usato per una descrizione comando fissa.|\<nessuno>|
+|Parola chiave della Guida|La parola chiave utilizzata per indicizzare la Guida F1 per questo elemento.|\<nessuno>|
+|Image|Il percorso del file di immagine che viene usato per questa forma.|\<nessuno>|
 
 ## <a name="see-also"></a>Vedere anche
 

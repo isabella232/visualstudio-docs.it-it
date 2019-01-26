@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73ac76c8b6b8cf96e447d072b7d8b73611bb6e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc3cfd145b35729362a30c3055806ba769782ef2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961546"
 ---
 # <a name="source-control-integration-essentials"></a>Nozioni fondamentali sull'integrazione del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di integrazione del controllo codice sorgente: un controllo del codice sorgente del plug-in che fornisce funzionalità di base e viene creato usando l'API dei plug-in del controllo origine (precedentemente noto come API MSSCCI) e una soluzione di integrazione del controllo codice sorgente basato sul pacchetto VSPackage che fornisce la funzionalità più affidabili.  

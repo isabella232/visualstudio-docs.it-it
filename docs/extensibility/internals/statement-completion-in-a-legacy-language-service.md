@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cea1348dd78197333aa41c6c51aba320e5d762b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0310f515a444d0ff68fe971463602c484763848b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965679"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Completamento delle istruzioni in un servizio di linguaggio legacy
 Completamento delle istruzioni è il processo mediante il quale il servizio di linguaggio consente agli utenti di completare una parola chiave del linguaggio o l'elemento che è stato avviato la digitazione nell'editor principale. Questo argomento illustra come funziona il completamento delle istruzioni e come implementarlo nel servizio di linguaggio.  

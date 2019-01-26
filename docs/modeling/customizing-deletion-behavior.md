@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e72d5165319eab7062c6a3f4106f232dca23808
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969602"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizzazione del comportamento di eliminazione
 L'eliminazione di un elemento in genere determina l'eliminazione anche degli elementi correlati. Tutte le relazioni a esso connesse ed eventuali elementi figlio vengono eliminati. Questo comportamento è definito *propagazione eliminazioni*. È possibile personalizzare la propagazione dell'eliminazione, ad esempio per fare in modo che vengano eliminati altri elementi correlati. Scrivendo codice programma, è possibile far dipendere la propagazione dell'eliminazione dallo stato del modello. È inoltre possibile fare in modo che un'eliminazione comporti altre modifiche.
@@ -281,7 +281,7 @@ partial class NestedShapesSampleDocData
 }
 ```
 
-## <a name="unmerge"></a> Operazione di divisione
+## <a name="unmerge"></a> UnMerge
  Viene chiamata l'operazione che associa un elemento figlio all'elemento padre *merge*. Si verifica quando un nuovo elemento o gruppi di elementi vengono creati dalla casella degli strumenti o spostati da un'altra parte del modello oppure copiati dagli Appunti. Oltre a creare una relazione di incorporamento tra l'elemento padre e il nuovo elemento figlio, l'operazione di unione può anche impostare altre relazioni, creare elementi ausiliari e impostare valori di proprietà negli elementi. L'operazione di unione è incapsulata in una direttiva di unione degli elementi (EMD).
 
  Una EMD incapsula anche il complementari *Dividi* o `MergeDisconnect` operazione. Se è presente un cluster di elementi che è stato costruito tramite un'operazione di unione, per rimuovere un elemento dal cluster è consigliabile usare l'operazione di divisione associata, nel caso in cui si voglia mantenere la coerenza dello stato degli elementi rimanenti. Per l'operazione di divisione vengono usate in genere le tecniche descritte nelle sezioni precedenti.

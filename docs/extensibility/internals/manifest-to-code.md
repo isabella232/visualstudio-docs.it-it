@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967547"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Il manifesto per lo strumento di codice è un'applicazione console che accetta un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto di immagini in C++, C#, i file VB o con estensione vsct da Visual Studio estensioni. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini richiedente da Visual Studio Image Service direttamente o per passare i valori del manifesto tramite le API, se il codice non gestisce la propria interfaccia utente e per il rendering.  
@@ -33,7 +33,7 @@ Il manifesto per lo strumento di codice è un'applicazione console che accetta u
 |/imageIdClass|Il nome del imageIdClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h.<br /><br /> Valore predefinito: \<Percorso del manifesto > \MyImageIds. \<Lang Ext >|Facoltativo|  
 |/monikerClass|Il nome del monikerClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h. Questo viene ignorato per il linguaggio VSCT.<br /><br /> Valore predefinito: \<Percorso del manifesto > \MyMonikers. \<Lang Ext >|Facoltativo|  
 |/classAccess|Il modificatore di accesso per il imageIdClass e il monikerClass. Assicurarsi che il modificatore di accesso è valido per il linguaggio specificato. Questo viene ignorato per l'opzione di linguaggio VSCT.<br /><br /> Valore predefinito: Public|Facoltativo|  
-|/Namespace|Lo spazio dei nomi definito all'interno del wrapper di codice. Questo viene ignorato per l'opzione di linguaggio VSCT. il '. 'o':: ' sono separatori di spazio dei nomi valido, indipendentemente dall'opzione di linguaggio scelto.<br /><br /> Valore predefinito: MyImages|Facoltativo|  
+|/namespace|Lo spazio dei nomi definito all'interno del wrapper di codice. Questo viene ignorato per l'opzione di linguaggio VSCT. il '. 'o':: ' sono separatori di spazio dei nomi valido, indipendentemente dall'opzione di linguaggio scelto.<br /><br /> Valore predefinito: MyImages|Facoltativo|  
 |/noLogo|Impostazione di questo flag arresta prodotto e informazioni sul copyright di stampare le informazioni.|Facoltativo|  
 |/?|Stampare le informazioni della Guida.|Facoltativo|  
 |/help|Stampare le informazioni della Guida.|Facoltativo|  

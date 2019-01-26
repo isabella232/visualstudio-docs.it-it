@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b036142e119157d04dcf971a4bbbba984394956
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 140fc5cc5db1ff7cb0b92bccf664e9b3d4ed4baa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987784"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930472"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentazione.  
@@ -60,7 +60,7 @@ Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsi
   finestra di progettazione  
   Un'interfaccia di programmazione che consente agli utenti di modificare gli elementi dell'interfaccia utente (moduli, pulsanti e altri controlli).  
   
-  Oggetto DocData  
+  DocData  
   Un oggetto COM che incapsula i dati sottostanti di un documento in un mondo in cui è presente la separazione di documento/visualizzazione (ad esempio, nel caso dell'editor di testo, questa sarebbe il buffer di testo sottostante tutte le visualizzazioni dell'editor di testo). Se l'oggetto EditorFactory non fornisce questo oggetto, l'IDE produce uno per suo conto. La responsabilità di questo oggetto consiste nel gestire la persistenza dei dati e la semantica di condivisione per più viste attraverso questa stessa `DocData`. Se il `DocData` oggetto supporta la `IOleCommandTarget` interfaccia, è inclusa nel routing dei comandi dell'UIShell.  
   
   DocObject  

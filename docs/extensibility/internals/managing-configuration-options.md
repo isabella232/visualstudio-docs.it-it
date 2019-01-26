@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c515270e530428e7d23ce6c8ea698024eecf145d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d54fbcf42786e7c31244dc0c37f4986e36096e17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877666"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958486"
 ---
 # <a name="managing-configuration-options"></a>Gestione delle opzioni di configurazione
 Quando si crea un nuovo tipo di progetto, è necessario gestire impostazioni di configurazione di progetto e soluzione che determinano il modo in cui il progetto verrà compilato, nel pacchetto, distribuite ed eseguite. Gli argomenti seguenti descrivono la configurazione di progetto e soluzione.  

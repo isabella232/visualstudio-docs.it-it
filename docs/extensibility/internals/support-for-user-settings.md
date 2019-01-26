@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930908"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964249"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
 Un pacchetto VSPackage può definire uno o più categorie di impostazioni, che sono gruppi di variabili di stato che rendono persistenti quando un utente sceglie il **Importa/Esporta impostazioni** comando le **Tools** menu. Per abilitare la persistenza, si usano le impostazioni API nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

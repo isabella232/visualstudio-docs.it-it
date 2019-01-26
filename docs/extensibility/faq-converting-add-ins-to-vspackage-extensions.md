@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d15e6872a418cfc2a3cf5dded5b873429075d276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977187"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage
 I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Di seguito sono riportate le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio per un'estensione VSIX.  
@@ -50,7 +50,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
   
      Verrà visualizzata una seconda istanza di Visual Studio. Questa seconda istanza è chiamata istanza sperimentale e potrebbe non presentare le stesse impostazioni dell'istanza di Visual Studio che si sta usando per scrivere il codice. La prima volta che si esegue l'istanza sperimentale, verrà richiesto di accedere a Visual Studio Online e specificare il tema e il profilo.  
   
-     Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **All'interno di Testvspackagepackage**.  
+     Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?  
  Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:  

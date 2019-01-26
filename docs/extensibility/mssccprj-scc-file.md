@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 028490e6c23051496202fad2d85b0d11cc434218
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964288"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. File SCC
 Quando si inserisce una soluzione di Visual Studio o un progetto nel controllo del codice sorgente usare l'IDE, l'IDE riceve due tipi principali di informazioni. Le informazioni provengano da controllo del codice sorgente del plug-in forma di stringhe. Queste stringhe "AuxPath" e "ProjName", sono opache per l'IDE, ma vengono utilizzati per il plug-in per individuare la soluzione o progetto in controllo della versione. L'IDE in genere Ottiene queste stringhe la prima volta chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e quindi li salva nel file di soluzione o il progetto per le chiamate successive al [SccOpenProject](../extensibility/sccopenproject-function.md). Se si incorpora nei file di soluzione e progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente di rami, fork, o copia i file di soluzione e progetto in controllo della versione. Per assicurarsi che i file di soluzione e progetto puntino alla posizione corretta nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe devono essere opaca, potrebbe non sempre essere chiaro come devono essere aggiornati.  
@@ -42,23 +42,23 @@ Quando si inserisce una soluzione di Visual Studio o un progetto nel controllo d
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Un'illustrazione del MSSCCPRJ. Formato del file di controllo del codice sorgente  
  Seguito è riportato un esempio del *Mssccprj. scc* formato di file (i numeri di riga vengono forniti solo come guida e non devono essere incluse nel corpo del file):  
   
- [Riga 1] `SCC = This is a Source Code Control file`  
+ [Line 1] `SCC = This is a Source Code Control file`  
   
- [Riga 2]  
+ [Line 2]  
   
- [Riga 3] `[TestApp.sln]`  
+ [Line 3] `[TestApp.sln]`  
   
- [Riga 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Riga 5] `SCC_Project_Name = "$/TestApp"`  
+ [Line 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Riga 6]  
+ [Line 6]  
   
- [Riga 7] `[TestApp.csproj]`  
+ [Line 7] `[TestApp.csproj]`  
   
- [Riga 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Riga 9] `SCC_Project_Name = "$/TestApp"`  
+ [Line 9] `SCC_Project_Name = "$/TestApp"`  
   
  La prima riga indica lo scopo del file e funge da firma per tutti i file di questo tipo. Questa riga dovrebbe essere esattamente come in tutti i *Mssccprj. scc* file:  
   

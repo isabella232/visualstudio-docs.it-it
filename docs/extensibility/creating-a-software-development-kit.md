@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7abb030ab98976a6e55a5d297cf510f01842e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922841"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929127"
 ---
 # <a name="create-a-software-development-kit"></a>Creare un software development kit
 Un software development kit (SDK) è una raccolta di API che è possibile fare riferimento come un singolo elemento in Visual Studio. Il **gestione riferimenti** nella finestra di dialogo sono elencati tutti gli SDK pertinenti al progetto. Quando si aggiunge un SDK a un progetto, le API sono disponibili in Visual Studio.  
@@ -57,7 +57,7 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
 | *DesignTime* cartella | Contiene i file che sono necessari solo in fase di pre-run/debug. Quali documenti XML, librerie, intestazioni, i file binari in fase di progettazione della casella degli strumenti, gli elementi di MSBuild e così via<br /><br /> Documentazione XML, in teoria, vengono posizionate nel *\DesignTime* cartella, ma la documentazione XML per i riferimenti continueranno a essere inseriti accanto ai file di riferimento in Visual Studio. Ad esempio, il documento XML per un riferimento<em>\References\\[configurazione]\\[arch]\sample.dll</em> saranno *\References\\[configurazione]\\[arch]\sample.xml*, e la versione localizzata di tale documento saranno *\References\\[configurazione]\\[arch]\\[locale]\sample.xml*. |
 | *Configurazione* cartella | Possono essere presenti solo tre cartelle: *Eseguire il debug*, *delle vendite al dettaglio* e *CommonConfiguration*. Gli autori SDK possono inserire i file sotto *CommonConfiguration* se lo stesso set di file del SDK devono essere usati, indipendentemente dalla configurazione che sarà destinati al consumer SDK. |
 | *Architettura* cartella | Qualsiasi tipo supportato *architettura* cartella può esistere. Visual Studio supporta le seguenti architetture: x86, x64, ARM e neutral. Nota: Esegue il mapping di Win32 per x86 e AnyCPU esegue il mapping a neutro.<br /><br /> MSBuild cerca solo in *\CommonConfiguration\neutral* per gli SDK di piattaforma. |
-| *Sdkmanifest* | Questo file illustra la procedura Visual Studio devono usare il SDK. Esaminare il manifesto SDK per [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Nome visualizzato:** Il valore che consente di visualizzare il Visualizzatore oggetti nell'elenco di ricerca.<br /><br /> **PlatformIdentity:** L'esistenza di questo attributo indica a Visual Studio e MSBuild che il SDK è un SDK della piattaforma e che i riferimenti aggiunti da quest'ultimo non devono essere copiati localmente.<br /><br /> **TargetFramework:** Questo attributo viene utilizzato da Visual Studio per garantire che solo i progetti che hanno come destinazione il Framework stesso come specificato nel valore di questo attributo può utilizzare il SDK.<br /><br /> **MinVSVersion:** Questo attributo viene utilizzato da Visual Studio per utilizzare solo gli SDK che si applicano a esso.<br /><br /> **Informazioni di riferimento:** Questo attributo deve essere specificato per solo tali riferimenti che contengono controlli. Per informazioni su come specificare se un riferimento contiene i controlli, vedere di seguito. |
+| *SDKManifest.xml* | Questo file illustra la procedura Visual Studio devono usare il SDK. Esaminare il manifesto SDK per [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Il valore che consente di visualizzare il Visualizzatore oggetti nell'elenco di ricerca.<br /><br /> **PlatformIdentity:** L'esistenza di questo attributo indica a Visual Studio e MSBuild che il SDK è un SDK della piattaforma e che i riferimenti aggiunti da quest'ultimo non devono essere copiati localmente.<br /><br /> **TargetFramework:** Questo attributo viene utilizzato da Visual Studio per garantire che solo i progetti che hanno come destinazione il Framework stesso come specificato nel valore di questo attributo può utilizzare il SDK.<br /><br /> **MinVSVersion:** Questo attributo viene utilizzato da Visual Studio per utilizzare solo gli SDK che si applicano a esso.<br /><br /> **Informazioni di riferimento:** Questo attributo deve essere specificato per solo tali riferimenti che contengono controlli. Per informazioni su come specificare se un riferimento contiene i controlli, vedere di seguito. |
 
 ##  <a name="ExtensionSDKs"></a> SDK di estensione  
  Le sezioni seguenti descrivono ciò che è necessario eseguire per distribuire un SDK di estensione.  
@@ -131,7 +131,7 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
 
 6. *Architettura* cartella: sono supportate le seguenti architetture: x86, x64, ARM, neutro. Esegue il mapping di Win32 per x86 e AnyCPU esegue il mapping a neutro.  
 
-### <a name="sdkmanifestxml"></a>Sdkmanifest  
+### <a name="sdkmanifestxml"></a>SDKManifest.xml  
  Questo file illustra la procedura Visual Studio devono usare il SDK. Di seguito è riportato un esempio.  
 
 ```  
@@ -162,7 +162,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Il nome del prodotto SDK globale. Ad esempio, il [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK è denominata "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", che appartengono alla stessa famiglia della famiglia di prodotti SDK, "Microsoft.WinJS". Questo attributo consente a Visual Studio e MSBuild realizzare tale connessione. Se questo attributo non esiste, il nome del SDK viene utilizzato come il nome della famiglia di prodotti.  
 
-3. Formato di FrameworkIdentity: Specifica una dipendenza da uno o più librerie dei componenti Windows che il valore di questo attributo viene inserito nel manifesto dell'app consumer. Questo attributo è applicabile solo per le librerie dei componenti di Windows.  
+3. FrameworkIdentity: Specifica una dipendenza da uno o più librerie dei componenti Windows che il valore di questo attributo viene inserito nel manifesto dell'app consumer. Questo attributo è applicabile solo per le librerie dei componenti di Windows.  
 
 4. TargetFramework: Specifica gli SDK disponibili in Gestione riferimenti e casella degli strumenti. Questo è un elenco delimitato da punto e virgola di moniker del framework di destinazione, ad esempio ".NET Framework, versione = v2.0; .NET Framework, versione = v4.5.1". Se vengono specificate più versioni dello stesso framework di destinazione, gestione riferimenti Usa la versione minima specificata a scopo di filtro. Ad esempio, se ".NET Framework, versione = v2.0; .NET Framework, versione = v4.5.1" viene specificato, verrà utilizzato Gestione riferimenti ".NET Framework, versione = v2.0". Se viene specificato un profilo di framework di destinazione specifica, solo tale profilo verrà utilizzato da Gestione riferimenti a scopo di filtro. Ad esempio, quando "Silverlight, versione = v4.0, profilo = WindowsPhone" viene specificato, gestione riferimenti vengono applicati filtri alle solo il profilo di Windows Phone. un progetto destinato alla versione completa di Silverlight 4.0 Framework non vede il SDK in Gestione riferimenti.  
 

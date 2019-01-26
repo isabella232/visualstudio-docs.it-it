@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857215"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974149"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio tramite la riga di comando
 
@@ -92,13 +92,13 @@ Accede al computer un server di pubblicazione.
 |---------|---------|
 |personalAccessToken (obbligatorio | Token di accesso personale usato per autenticare il server di pubblicazione. |
 |Nome editore (obbligatorio) | Il nome del server di pubblicazione (ad esempio, l'identificatore). |
-|Sovrascrivere | Specifica che qualsiasi server di pubblicazione esistente devono essere sovrascritti con il nuovo token di accesso personale. |
+|overwrite | Specifica che qualsiasi server di pubblicazione esistente devono essere sovrascritti con il nuovo token di accesso personale. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
 ```
 
-### <a name="logout"></a>disconnessione
+### <a name="logout"></a>logout
 
 Registra un server di pubblicazione dal computer.
 
@@ -206,7 +206,7 @@ In questo caso, si userà un'estensione VSPackage predefinito, ma gli stessi pas
 
 1. Aggiornare l'estensione vsixmanifest con le informazioni corrette sul nome del prodotto, autore e versione.
 
-   ![Aggiorna estensione vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![update extension vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Compilare l'estensione **rilascio** modalità. L'estensione verrà ora essere compresso come un progetto VSIX nella cartella \bin\Release.
 

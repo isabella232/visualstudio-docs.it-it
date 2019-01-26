@@ -1,5 +1,5 @@
 ---
-title: 'CA2225: Overload degli operatori hanno alternative con nome'
+title: 'CA2225: Gli overload degli operatori hanno alternative con nome'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965133"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Overload degli operatori hanno alternative con nome
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Gli overload degli operatori hanno alternative con nome
 
 |||
 |-|-|
@@ -44,9 +44,9 @@ ms.locfileid: "53954805"
 |+ (binario)|+|+ (binario)|Aggiunta|
 |+=|+=|+=|Aggiunta|
 |&|E|&|BitwiseAnd|
-|&=|E =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|Or|&#124;|BitwiseOr|
-|&#124;=|O =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/D|--|Operatore di conversione|
 |/|/|/|Dividi|
 |/=|/=|/=|Dividi|
@@ -57,8 +57,8 @@ ms.locfileid: "53954805"
 |>=|>=|>=|Compare|
 |++|N/D|++|Operatore di incremento|
 |<>|!=|Equals|
-|<<|<<|<<|MAIUSC|
-|<<=|<<=|<<=|MAIUSC|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|Compare|
 |<=|<=|\<=|Compare|
 |&&|N/D|&&|LogicalAnd|
@@ -69,13 +69,13 @@ ms.locfileid: "53954805"
 |* (binario)|*|*|Per|
 |*=|N/D|*=|Per|
 |~|non|~|OnesComplement|
-|>>|>>|>>|MAIUSC destro|
-=|N/D|>>=|MAIUSC destro|
+|>>|>>|>>|RightShift|
+=|N/D|>>=|RightShift|
 |-(binario)|-(binario)|-(binario)|Sottrai|
 |-=|N/D|-=|Sottrai|
 |true|IsTrue|N/D|IsTrue (proprietà)|
 |-(unario)|N/D|-|negate)|
-|+ (unario)|N/D|+|Segno più|
+|+ (unario)|N/D|+|Plus|
 |False|IsFalse|False|IsTrue (proprietà)|
 
  N/d = = non possono essere sottoposti a overload nella lingua selezionata.

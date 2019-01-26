@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b703e220a0eaff175a08c884e309c49982fc795a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa71b9397a1f8af11f65558e024d2611d96aa47e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827468"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961270"
 ---
 # <a name="sccsetoption-function"></a>Funzione SccSetOption
 La funzione imposta le opzioni che controllano il comportamento del controllo del codice sorgente del plug-in.  
@@ -45,7 +45,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'opzione è stata impostata.|  
 |SCC_I_SHARESUBPROJOK|Restituito se `nOption` era `SCC_OPT_SHARESUBPROJ` e il controllo del codice sorgente del plug-in consente l'IDE impostare la cartella di destinazione.|  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b97fb2ff4d0f8babcb3616f48fb04aab67143c91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a418fdcb005965a5a972da05ddbc87a598f0ec64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927015"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Recupera un determinato numero di attributi personalizzati in una sequenza di enumerazione.  
@@ -51,7 +51,7 @@ int Next(
  [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
