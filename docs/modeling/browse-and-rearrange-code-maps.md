@@ -19,16 +19,16 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9bec9a2ceaee03d73f02511c84393902dd66839b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd9c431bdac6eb258084944bcff80c86e81796f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042699"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Cercare e ridisporre le mappe del codice
 
@@ -283,7 +283,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
     |-|-|
     |Colore di sfondo|**Sfondo**|
     |Colore del contorno|**Tratto**|
-    |Colore del testo (una lettera "f" viene visualizzata per mostrare il risultato)|**In primo piano**|
+    |Colore del testo (una lettera "f" viene visualizzata per mostrare il risultato)|**Foreground**|
     |Icona|**Icone**|
 
      Il **selezione Set colori** oppure **selezione Set icone** verrà visualizzata la finestra di dialogo per selezionare un colore o icona.

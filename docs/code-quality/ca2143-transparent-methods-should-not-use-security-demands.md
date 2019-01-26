@@ -1,5 +1,5 @@
 ---
-title: 'CA2143: I metodi Transparent non devono utilizzare SecurityDemand'
+title: 'CA2143: I metodi Transparent non devono usare SecurityDemand'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff92d7ed697db2f692ed17426bdb5dad38164cf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08a7c4d6d7c71954869311b402eed65492391432
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954565"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043077"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: I metodi Transparent non devono utilizzare SecurityDemand
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: I metodi Transparent non devono usare SecurityDemand
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53954565"
  Un tipo trasparente o un metodo è contrassegnato in modo dichiarativo con un <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` richiesta o il metodo chiama il <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> (metodo).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il codice trasparente per la sicurezza non deve essere responsabile della verifica della sicurezza di un'operazione, pertanto non deve richiedere autorizzazioni. Il codice trasparente per la sicurezza deve utilizzare richieste complete per prendere decisioni relative alla sicurezza e il codice critico per la sicurezza non deve basarsi sul codice trasparente per l'esecuzione della richiesta completa. Invece, qualsiasi codice che esegue controlli di sicurezza, ad esempio richieste di sicurezza, deve essere richiamabile da codice trasparente.
+ Il codice trasparente per la sicurezza non deve essere responsabile della verifica della sicurezza di un'operazione, pertanto non deve richiedere autorizzazioni. Il codice trasparente per la sicurezza deve usare richieste complete per prendere decisioni relative alla sicurezza e il codice critico per la sicurezza non deve basarsi sul codice trasparente per l'esecuzione della richiesta completa. Invece, qualsiasi codice che esegue controlli di sicurezza, ad esempio richieste di sicurezza, deve essere richiamabile da codice trasparente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  In generale, per correggere una violazione di questa regola, contrassegnare il metodo con il <xref:System.Security.SecuritySafeCriticalAttribute> attributo. È anche possibile rimuovere la richiesta.

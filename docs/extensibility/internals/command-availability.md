@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30a4992bed527b017f66f42067f88ec127fb9ed3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915870"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070604"
 ---
 # <a name="command-availability"></a>Disponibilità dei comandi
 
@@ -28,7 +28,7 @@ I contesti dei comandi seguenti sono i più comuni:
 
 - IDE: I comandi forniti dall'IDE sono sempre disponibili.
 
-- Pacchetto di Visual Studio: I VSPackage possono definire quando i comandi devono essere visualizzate o nascoste.
+- VSPackage: I VSPackage possono definire quando i comandi devono essere visualizzate o nascoste.
 
 - Progetto: I comandi di progetto vengono visualizzati solo per il progetto attualmente selezionato.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a1fbd07498f77cde5004dc23df9a2edbfb2e92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cf098d0dcd8ccb638738707476c37713e6aa6eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040606"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Aggiungere un controller di menu per una barra degli strumenti
 Questa procedura dettagliata si basa sulle [aggiungere una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) procedura dettagliata e viene illustrato come aggiungere un controller di menu per la finestra degli strumenti. I passaggi illustrati in questo caso è possibile applicare anche alla barra degli strumenti che viene creato nel [aggiungere una barra degli strumenti](../extensibility/adding-a-toolbar.md) procedura dettagliata.  

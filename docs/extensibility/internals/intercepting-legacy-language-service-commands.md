@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6e0b44c383cfd6499a3c23423bbce21db4ff876
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bb888e83f10d887c15b9ebf9fd67acad28f8e4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965113"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037759"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Intercettazione dei comandi dei servizi di linguaggio legacy
 Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è possibile avere language service intercetta comandi in caso contrario, è necessario gestire la visualizzazione di testo. Ciò è utile per il comportamento specifico del linguaggio che non gestisce la visualizzazione di testo. È possibile intercettare questi comandi mediante l'aggiunta di uno o più filtri di comando per la visualizzazione di testo dal servizio di linguaggio.  

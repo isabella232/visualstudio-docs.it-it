@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852453"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038344"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'estensione di Visual Studio
 
@@ -36,7 +36,7 @@ Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono vali
 
 1. Aggiornare l'estensione *vsixmanifest* con le informazioni corrette sul nome del prodotto, autore e versione.
 
-   ![Aggiorna estensione vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![update extension vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Compilare l'estensione **rilascio** modalità. L'estensione è ora fornita come un progetto VSIX nella cartella \bin\Release.
 
@@ -126,7 +126,7 @@ Marketplace supporta la concessione di autorizzazioni aggiuntive agli utenti per
   
    * **Collaboratore**: L'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di pubblicazione o gestire l'accesso.
   
-   * **Proprietario**: L'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
+   * **Owner**: L'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione da Visual Studio Marketplace
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1484840998b7834af55b0f9a026b899aea4f3f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09433968c8a735538ce276c854a38449735c2045
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868339"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043622"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 È necessario consigliare i pacchetti VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che sono installati e deve essere caricato. Questo processo viene eseguito scrivendo informazioni nel Registro di sistema. Ovvero un tipico processo di un programma di installazione.  
@@ -56,5 +56,5 @@ ms.locfileid: "53868339"
 - Codice di registrazione automatica è possibile negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se il componente sia specificata come esecuzione dall'origine ed è elencato nella tabella SelfReg. Ciò può causare l'installazione del componente su errori durante un'installazione amministrativa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Programma di installazione di Windows](/windows/desktop/Msi/windows-installer-portal)   
+ [Windows Installer](/windows/desktop/Msi/windows-installer-portal)   
  [Registrazione del pacchetto gestito](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

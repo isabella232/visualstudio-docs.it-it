@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04a31171b2aca3de8284bb93257c106b80780242
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040812"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Creare un'estensione con un pacchetto VSPackage
 Questa procedura dettagliata illustra come creare un progetto VSIX e aggiungere un elemento di progetto VSPackage. Si userà il pacchetto VSPackage per ottenere il servizio Shell dell'interfaccia utente per visualizzare una finestra di messaggio.  

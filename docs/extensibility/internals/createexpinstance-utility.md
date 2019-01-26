@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1a9f73f396fffe93903f4295428a011c5b5e8d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961102"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042543"
 ---
 # <a name="createexpinstance-utility"></a>Utilità CreateExpInstance
 Usare la **CreateExpInstance** utilità per creare, ripristinare o eliminare un'istanza sperimentale di Visual Studio. È possibile utilizzare l'istanza sperimentale per eseguire il debug e testare le estensioni di Visual Studio senza modificare il prodotto sottostante.  
@@ -33,16 +33,16 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="parameters"></a>Parametri  
  **/ Creazione** crea l'istanza sperimentale.  
   
- **/ Reset**  
+ **/Reset**  
  Elimina l'istanza sperimentale e quindi ne crea uno nuovo.  
   
  **/Clean**  
  Elimina l'istanza sperimentale.  
   
- **/ VSInstance**  
+ **/VSInstance**  
  Il nome della directory che contiene l'istanza di Visual Studio di base da copiare.  
   
- **/ RootSuffix**  
+ **/RootSuffix**  
  Suffisso da aggiungere al nome della directory istanza sperimentale.  
   
 ## <a name="remarks"></a>Note  
@@ -56,7 +56,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  L'esempio seguente ripristina l'istanza sperimentale predefinita di Visual Studio:  
   
- **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix Exp =**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../../extensibility/internals/vspackages.md)

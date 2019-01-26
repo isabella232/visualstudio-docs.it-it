@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff2b19407ec63ea1227aba2affdad77f302dc129
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5ca684540c43ac6628a21c95493180f8f22cf46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868654"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043752"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architettura dei plug-in del controllo del codice sorgente
 È possibile aggiungere il supporto del controllo di origine per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) che implementa e collegando un plug-in del controllo del codice sorgente. L'IDE si connette il controllo del codice sorgente del plug-in tramite l'API dei plug-in del controllo origine ben definito. L'IDE espone la funzionalità controllo della versione del sistema di origine, fornendo un'interfaccia utente (UI) che include le barre degli strumenti e comandi di menu. Il plug-in del controllo del codice sorgente implementa la funzionalità di controllo di origine.  
