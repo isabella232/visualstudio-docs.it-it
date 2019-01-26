@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0bee04719a9c984f300d34da09a6b9f6adbb81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06bfb109ce58ee822a32bc3a92d7e6e45578fb05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005504"
 ---
 # <a name="manage-universal-windows-projects"></a>Gestire i progetti Windows universali
 Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.1, consentendo agli sviluppatori di utilizzare il codice e altri asset su entrambe le piattaforme. Il codice condiviso e le risorse vengono mantenute in un progetto condiviso, mentre il codice specifico della piattaforma e le risorse vengono mantenute in progetti separati, uno per Windows e l'altro per Windows Phone. Per altre informazioni sulle App Windows universali, vedere [le app Windows universali](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Estensioni di Visual Studio che gestiscono i progetti devono essere consapevoli che i progetti di app universali di Windows dispongono di una struttura che differisce dalle App a singola piattaforma. Questa procedura dettagliata illustra come spostare il progetto condiviso e gestire gli elementi condivisi.  

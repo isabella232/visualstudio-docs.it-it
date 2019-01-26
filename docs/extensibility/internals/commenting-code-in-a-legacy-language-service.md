@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1e3599a085fdc176fab83b55d664456c26d8bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4172516ebfdd39dc7504a81c8698337c9d84d5a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886708"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041880"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Commentare il codice in un servizio di linguaggio legacy
 I linguaggi di programmazione in genere forniscono un mezzo per inserire annotazioni o commenti nel codice. Un commento è una sezione di testo che fornisce informazioni aggiuntive sul codice, ma viene ignorato durante la compilazione o interpretazione.  

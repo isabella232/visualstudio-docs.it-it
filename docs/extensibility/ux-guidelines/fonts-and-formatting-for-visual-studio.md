@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7cecbe627d432e24f12b334747d4e4ec55c1c73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020165"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -161,7 +161,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="155-environment-font"></a>Tipo di carattere ambiente 155%  
- **Viene visualizzata come:** 14pt Segoe interfaccia utente    
+ **Viene visualizzata come:** 14 pt Segoe UI    
  **Utilizzo per:** intestazioni di sezione nel documento e dell'interfaccia utente o i report  
   
  **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
@@ -181,7 +181,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="133-environment-font"></a>Tipo di carattere ambiente 133%  
- **Viene visualizzata come:** 12 pt Segoe interfaccia utente    
+ **Viene visualizzata come:** 12 pt Segoe UI    
  **Utilizzo per:** più piccole sezioni in finestre di dialogo firma e documenti e dell'interfaccia utente  
   
  **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
@@ -201,7 +201,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="122-environment-font"></a>Tipo di carattere ambiente 122%  
- **Viene visualizzata come:** 11 pt Segoe interfaccia utente    
+ **Viene visualizzata come:** 11 pt Segoe UI    
  **Utilizzo per:** sezione intestazioni nelle finestre di dialogo firma, dall'alto nodi nella visualizzazione ad albero, navigazione tramite tabulazione verticale  
   
  **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:  
@@ -427,19 +427,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Intestazioni di sezione nel documento e dell'interfaccia utente<br />-Report<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 14pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**Utilizzo:**<br /><br /> -Intestazioni di sezione nel documento e dell'interfaccia utente<br />-Report<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 14 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Tipo di carattere ambiente 133%  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Più piccole sezioni in finestre di dialogo firma<br />-Sottotitoli inferiori nel documento e dell'interfaccia utente<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 12 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**Utilizzo:**<br /><br /> -Più piccole sezioni in finestre di dialogo firma<br />-Sottotitoli inferiori nel documento e dell'interfaccia utente<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 12 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Tipo di carattere ambiente 122%  
   
 |||  
 |-|-|  
-|**Utilizzo:**<br /><br /> -Intestazioni di sezione nelle finestre di dialogo firma<br />-Primi nodi nella visualizzazione ad albero<br />-Navigazione tramite tabulazione verticale<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 11 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Utilizzo:**<br /><br /> -Intestazioni di sezione nelle finestre di dialogo firma<br />-Primi nodi nella visualizzazione ad albero<br />-Navigazione tramite tabulazione verticale<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 11 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Tipo di carattere ambiente + grassetto  
   
@@ -451,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilizzo:** Qualsiasi altro testo<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:** Corsivo in grassetto o corsivo|**Viene visualizzata come:** pt 9 Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**Utilizzo:** Qualsiasi altro testo<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:** Corsivo in grassetto o corsivo|**Viene visualizzata come:** 9 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Spaziatura interna e la spaziatura  
  Intestazioni richiedono spazio attorno a esse per concedere loro l'enfasi appropriato. Questo spazio varia a seconda delle dimensioni del punto e cos'altro è in prossimità di intestazione, ad esempio una regola orizzontale o di una riga di testo nel tipo di carattere ambiente.  

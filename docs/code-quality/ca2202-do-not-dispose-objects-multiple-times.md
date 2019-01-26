@@ -1,5 +1,5 @@
 ---
-title: 'CA2202: Non eliminare oggetti più volte'
+title: 'CA2202: Non eliminare gli oggetti più volte'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac1e6aafd9894cd59db1a1d842d560d4b7229860
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d65e9466a57e28b8e0322fc45401fb6e2333aaf7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822126"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012261"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Non eliminare oggetti più volte
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Non eliminare gli oggetti più volte
 
 |||
 |-|-|

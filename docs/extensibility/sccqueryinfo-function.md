@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eefee11ed4db6e359688f2220c330bdbe81be1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eccb75d593208b63681f585a37daa1665cdf9f4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966038"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006828"
 ---
 # <a name="sccqueryinfo-function"></a>Funzione SccQueryInfo
 Questa funzione Ottiene informazioni sullo stato per un set di file selezionati nel controllo del codice sorgente.  
@@ -37,7 +37,7 @@ SCCRTN SccQueryInfo(
  pvContext  
  [in] La struttura del contesto plug-in del controllo origine.  
   
- nFile  
+ nFiles  
  [in] Numero di file specificato per il `lpFileNames` matrice e la lunghezza del `lpStatus` matrice.  
   
  lpFileNames  
@@ -49,7 +49,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Query completata.|  
 |SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente causato da problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  

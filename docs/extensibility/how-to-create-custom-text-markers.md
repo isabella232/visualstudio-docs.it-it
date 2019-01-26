@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93128e22d3bb70a0ff9cfb9b5b56e8c4e7c463f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030392"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedura: Creare i marcatori di testo personalizzato
 Se si desidera creare un marcatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire i passaggi seguenti:  
@@ -32,7 +32,7 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
   
 1. Creare una voce del Registro di sistema come indicato di seguito:  
   
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione > \Text Editor\External marcatori\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**  
   
     *\<MarkerGUID >* è un `GUID` utilizzato per identificare il marcatore da aggiungere  
   

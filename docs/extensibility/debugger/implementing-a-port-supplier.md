@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e59ad83499e69bcf257ae212c18b14fba208f3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985524"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025813"
 ---
 # <a name="implement-a-port-supplier"></a>Implementare un fornitore di porte
 Un fornitore di porte fornisce porte di richiesta al gestore di sessione di debug (SDM). Durante il debug in un computer non DCOM o quando un nuovo dispositivo richiede il supporto è necessario implementare un fornitore di porte. Ad esempio, per offrire debug in un telefono cellulare, è possibile impostare backup di un fornitore di porte che fornisce le porte, connettersi al telefono cellulare (magari tramite una connessione di cella o di runtime di integrazione), che enumera i processi e i programmi in esecuzione sul telefono.  

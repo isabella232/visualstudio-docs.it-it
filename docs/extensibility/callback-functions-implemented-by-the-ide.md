@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3dd5196fae42079249f0632a065aacbf504938a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e6b3ccdbca62b9a770fd6146ba1b88e5ca54d9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017656"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funzioni di callback implementate dall'IDE
 Per semplificare l'integrazione con l'ambiente di sviluppo integrato (IDE) come facile come possibili e per offrire un'esperienza unificata per l'utente finale, il plug-in del controllo del codice sorgente può usare le funzioni di callback implementate dall'IDE. Il plug-in può chiamare queste funzioni in momenti appropriati durante un'operazione di controllo del codice sorgente per passare le informazioni dell'IDE; l'IDE può quindi visualizzare queste informazioni come gli elementi incorporati nell'interfaccia utente nativa. L'utente ha un'esperienza meno frammentata in questo scenario rispetto a se il plug-in usati la propria interfaccia utente.  

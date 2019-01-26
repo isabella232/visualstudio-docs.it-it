@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72660ab5a3c3aedd888f22bdf7db1ef635d5bc34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843294"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069551"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
 Ogni configurazione può supportare un set di processi di compilazione che generano gli elementi di output, ad esempio file eseguibile o una risorsa. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che si collegano i tipi correlati dell'output, ad esempio file eseguibili (.exe,. dll, con estensione LIB) e i file di origine (. idl, file con estensione h).  

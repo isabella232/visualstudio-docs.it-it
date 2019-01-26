@@ -1,5 +1,5 @@
 ---
-title: 'CA1401: P-Invoke non deve essere visibili'
+title: 'CA1401: I P/Invoke non devono essere visibili'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e52140f07cb72eca62a1a52a01ae37e3e6a53382
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a139dd44c470422554dd2d5ccb42ab61a9d84637
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021403"
 ---
-# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invoke non devono essere visibili
+# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: I P/Invoke non devono essere visibili
 
 |||
 |-|-|

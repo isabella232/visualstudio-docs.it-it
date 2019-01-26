@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f6b8b9b220a9fa81ea8cf43de18bcf3820f5336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016681"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare e cercare i manifesti dell'immagine, consentendo all'utente di modificarli in modo identico a Visual Studio. L'utente potrà modificare in background, dimensioni, DPI, contrasto elevato e altre impostazioni. Inoltre, lo strumento visualizza le informazioni di caricamento per ogni manifesto di immagini e Visualizza informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:  
@@ -70,7 +70,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
   
 |||  
 |-|-|  
-|**Sottoelemento**|**Definizione**|  
+|**Subelement**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente.|  
 |GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID.|  
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo.|  
@@ -131,15 +131,15 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |-|-|  
 |**Attributo**|**Definizione**|  
 |URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) utilizzando l'applicazione: / / / autorità<br /><br /> -Riferimento a una risorsa un componente assoluto<br /><br /> -Un percorso di un file contenente una risorsa nativa|  
-|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> - *Contrasto elevato*: L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
+|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> - *HighContrast*: L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
   
  Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:  
   
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|\<Dimensioni >|Valore|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
-|\<SizeRange >|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
+|\<Size>|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
+|\<SizeRange>|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
 |\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini della larghezza specificata e dell'altezza (espressa in unità di dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima per la larghezza/altezza massima (in unità di dispositivo), inclusi.|  
   

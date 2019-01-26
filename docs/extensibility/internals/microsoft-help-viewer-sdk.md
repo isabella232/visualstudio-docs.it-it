@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023915"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -66,7 +66,7 @@ Stringhe lingua supportate (non maiuscole / minuscole):
 
 -   cplusplus o Visual c++ o c + +
 
--   JScript
+-   jscript
 
 -   Visual Basic o Visual Basic
 
@@ -298,25 +298,25 @@ Impostare i valori del Registro di sistema seguenti per abilitare F1 Fallback pe
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-        "VendorContent" runasppl"=DWORD:00000001
+        "VendorContent"=dword:00000001
 
    -   Per i sistemi operativi a 64 bit:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-        "VendorContent" runasppl"=DWORD:00000001
+        "VendorContent"=dword:00000001
 
 2. Registrare lo spazio dei nomi partner sotto la chiave del Registro di sistema della Guida 2.3:
 
    - Per i sistemi operativi a 32 bit:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\< spazio dei nomi\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
       "località"="offline"
 
    - Per i sistemi operativi a 64 bit:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\< spazio dei nomi\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
       "località"="offline"
 
@@ -340,7 +340,7 @@ Un utente quindi possibile registrare CustomLibrary come lo spazio dei nomi nell
 
 Aggiungere la seguente chiave del Registro di sistema e il valore:
 
-Chiave della Guida HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Output di Debug visualizzato nel valore delle vendite al dettaglio: SÌ
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help key: Output di Debug visualizzato nel valore delle vendite al dettaglio: SÌ
 
 Nell'IDE, sotto la voce di menu della Guida, selezionare "Debug contesto Guida in linea"
 
@@ -351,20 +351,20 @@ Nella tabella seguente, qualsiasi stringa che viene visualizzato tra parentesi q
 
 | Proprietà (rappresentazione HTML) | Descrizione |
 | - | - |
-| \< contenuto name="Microsoft.Help.Locale META" = "[codice della lingua]" / > | Imposta le impostazioni locali per questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta e deve essere inserito sopra degli altri tag di Microsoft Help. Se non viene utilizzato questo tag, il testo del corpo dell'argomento è indicizzato con word breaker che è associato a impostazioni locali del prodotto, in caso affermativo; in caso contrario, il en-us word breaker viene utilizzato. Questo tag è conforme a RFC 4646 ISOC. Per garantire il corretto funzionamento di Microsoft Help, usare questa proprietà anziché l'attributo Language generale. |
-| \< contenuto name="Microsoft.Help.TopicLocale META" = "[codice della lingua]" / > | Imposta le impostazioni locali per questo argomento quando vengono utilizzate anche altre impostazioni locali. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Quando il catalogo contiene contenuto in più lingue, usare questo tag. Negli argomenti di più di un catalogo possono avere lo stesso ID, ma ognuno deve specificare un TopicLocale univoco. L'argomento che specifica un TopicLocale che corrispondono a quelle del catalogo è l'argomento che viene visualizzato nella tabella dei contenuti. Tuttavia, tutte le versioni localizzate dell'argomento vengono visualizzate nei risultati della ricerca. |
+| \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | Imposta le impostazioni locali per questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta e deve essere inserito sopra degli altri tag di Microsoft Help. Se non viene utilizzato questo tag, il testo del corpo dell'argomento è indicizzato con word breaker che è associato a impostazioni locali del prodotto, in caso affermativo; in caso contrario, il en-us word breaker viene utilizzato. Questo tag è conforme a RFC 4646 ISOC. Per garantire il corretto funzionamento di Microsoft Help, usare questa proprietà anziché l'attributo Language generale. |
+| \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | Imposta le impostazioni locali per questo argomento quando vengono utilizzate anche altre impostazioni locali. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Quando il catalogo contiene contenuto in più lingue, usare questo tag. Negli argomenti di più di un catalogo possono avere lo stesso ID, ma ognuno deve specificare un TopicLocale univoco. L'argomento che specifica un TopicLocale che corrispondono a quelle del catalogo è l'argomento che viene visualizzato nella tabella dei contenuti. Tuttavia, tutte le versioni localizzate dell'argomento vengono visualizzate nei risultati della ricerca. |
 | \< TITLE > [Title] \< /title > | Specifica il titolo di questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Se il corpo dell'argomento non contiene un titolo \<div > sezione, questo titolo viene visualizzata nell'argomento e nella tabella dei contenuti. |
-| \< nome metadati = "Microsoft.Help.Keywords" contenuto = "[aKeywordPhrase]" / > | Specifica il testo di un collegamento che viene visualizzato nel riquadro dell'indice del Visualizzatore della Guida. Quando si fa clic sul collegamento, viene visualizzato l'argomento. È possibile specificare più parole chiave di indice per un argomento, oppure è possibile omettere questo tag se si preferisce non collegamenti a questo argomento per visualizzati nell'indice. Le parole chiave "K" dalle versioni precedenti della Guida in linea possono essere convertite in questa proprietà. |
-| \< contenuto name="Microsoft.Help.Id META" = "[TopicID]" / > | Imposta l'identificatore per questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. L'ID deve essere univoco tra gli argomenti nel catalogo con le stesse impostazioni locali. In un altro argomento, è possibile creare un collegamento all'argomento usando questo ID. |
-| \< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ > | Specifica la parola chiave F1 per questo argomento. È possibile specificare più parole chiave F1 per un argomento, oppure è possibile omettere questo tag se non si desidera in questo argomento deve essere visualizzato quando un utente dell'applicazione preme F1. In genere, viene specificata solo una parola chiave F1 per un argomento. Le parole chiave "F" dalle versioni precedenti della Guida in linea possono essere convertite in questa proprietà. |
-| \< nome metadati = "Descrizione" content = "[argomento description]" / > | Fornisce una breve descrizione del contenuto in questo argomento. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Questa proprietà è accessibile direttamente dalla libreria di query. non viene archiviato nel file di indice. |
-| contenuto name="Microsoft.Help.TocParent META" = "[parent_Id]" / > | Specifica l'argomento principale di questo argomento nel sommario. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Il valore è Microsoft.Help.Id dell'elemento padre. Un argomento può avere una sola posizione nella tabella dei contenuti. "-1" è considerato l'ID di argomento per la radice del sommario. In [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], tale pagina è home page di Help Viewer. Questo è lo stesso motivo che aggiungiamo specificamente TocParent =-1 per alcuni argomenti per garantire che vengono visualizzati nella parte superiore a livello. Home page di Help Viewer è una pagina di sistema e pertanto non sostituibili. Se un VSP tenta di aggiungere una pagina con l'ID di -1, potrebbe richiedere di essere aggiunti al set di contenuto, ma il Visualizzatore della Guida verrà sempre utilizzata la tabella di sistema - Help Viewer-home page |
-| \< contenuto name="Microsoft.Help.TocOrder META" = "[numero intero positivo]" / > | Specifica dove il sommario in questo argomento viene visualizzato nel relativo relativi argomenti di peer. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Il valore è un numero intero. Un argomento che specifica un valore minore numero intero viene visualizzata sopra un argomento che specifica un valore integer di valore superiore. |
-| \< contenuto name="Microsoft.Help.Product META" = "[product code]" / > | Specifica del prodotto descritte in questo argomento. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Queste informazioni possono inoltre essere specificate come un parametro che viene passato all'indicizzatore della Guida. |
-| \< contenuto name="Microsoft.Help.ProductVersion META" = "[numero versione]" / > | Specifica la versione del prodotto descritte in questo argomento. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Queste informazioni possono inoltre essere specificate come un parametro che viene passato all'indicizzatore della Guida. |
-| \< contenuto name="Microsoft.Help.Category META" = "[string]" / > | Utilizzato dai prodotti per identificare le sezioni di contenuto. È possibile identificare più sottosezioni per un argomento oppure è possibile omettere questo tag se si desidera evitare che i collegamenti per identificare delle sezioni secondarie. Questo tag viene usato per archiviare gli attributi per TargetOS e TargetFrameworkMoniker quando un argomento viene convertito da una versione precedente della Guida in linea. Il formato del contenuto è AttributeName:AttributeValue. |
+| \< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/> | Specifica il testo di un collegamento che viene visualizzato nel riquadro dell'indice del Visualizzatore della Guida. Quando si fa clic sul collegamento, viene visualizzato l'argomento. È possibile specificare più parole chiave di indice per un argomento, oppure è possibile omettere questo tag se si preferisce non collegamenti a questo argomento per visualizzati nell'indice. Le parole chiave "K" dalle versioni precedenti della Guida in linea possono essere convertite in questa proprietà. |
+| \< meta name="Microsoft.Help.Id" content="[TopicID]"/> | Imposta l'identificatore per questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. L'ID deve essere univoco tra gli argomenti nel catalogo con le stesse impostazioni locali. In un altro argomento, è possibile creare un collegamento all'argomento usando questo ID. |
+| \< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/> | Specifica la parola chiave F1 per questo argomento. È possibile specificare più parole chiave F1 per un argomento, oppure è possibile omettere questo tag se non si desidera in questo argomento deve essere visualizzato quando un utente dell'applicazione preme F1. In genere, viene specificata solo una parola chiave F1 per un argomento. Le parole chiave "F" dalle versioni precedenti della Guida in linea possono essere convertite in questa proprietà. |
+| \< meta name="Description" content="[topic description]" /> | Fornisce una breve descrizione del contenuto in questo argomento. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Questa proprietà è accessibile direttamente dalla libreria di query. non viene archiviato nel file di indice. |
+| meta name="Microsoft.Help.TocParent" content="[parent_Id]"/> | Specifica l'argomento principale di questo argomento nel sommario. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Il valore è Microsoft.Help.Id dell'elemento padre. Un argomento può avere una sola posizione nella tabella dei contenuti. "-1" è considerato l'ID di argomento per la radice del sommario. In [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], tale pagina è home page di Help Viewer. Questo è lo stesso motivo che aggiungiamo specificamente TocParent =-1 per alcuni argomenti per garantire che vengono visualizzati nella parte superiore a livello. Home page di Help Viewer è una pagina di sistema e pertanto non sostituibili. Se un VSP tenta di aggiungere una pagina con l'ID di -1, potrebbe richiedere di essere aggiunti al set di contenuto, ma il Visualizzatore della Guida verrà sempre utilizzata la tabella di sistema - Help Viewer-home page |
+| \< meta name="Microsoft.Help.TocOrder" content="[positive integer]"/> | Specifica dove il sommario in questo argomento viene visualizzato nel relativo relativi argomenti di peer. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Il valore è un numero intero. Un argomento che specifica un valore minore numero intero viene visualizzata sopra un argomento che specifica un valore integer di valore superiore. |
+| \< meta name="Microsoft.Help.Product" content="[product code]"/> | Specifica del prodotto descritte in questo argomento. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Queste informazioni possono inoltre essere specificate come un parametro che viene passato all'indicizzatore della Guida. |
+| \< meta name="Microsoft.Help.ProductVersion" content="[version number]"/> | Specifica la versione del prodotto descritte in questo argomento. Se questo tag viene usato in un argomento, deve essere utilizzata una sola volta. Queste informazioni possono inoltre essere specificate come un parametro che viene passato all'indicizzatore della Guida. |
+| \< meta name="Microsoft.Help.Category" content="[string]"/> | Utilizzato dai prodotti per identificare le sezioni di contenuto. È possibile identificare più sottosezioni per un argomento oppure è possibile omettere questo tag se si desidera evitare che i collegamenti per identificare delle sezioni secondarie. Questo tag viene usato per archiviare gli attributi per TargetOS e TargetFrameworkMoniker quando un argomento viene convertito da una versione precedente della Guida in linea. Il formato del contenuto è AttributeName:AttributeValue. |
 | \< contenuto name="Microsoft.Help.TopicVersion META ="[numero versione argomento]"/ > | Specifica la versione dell'argomento quando sono presenti più versioni in un catalogo. Poiché Microsoft.Help.Id non è garantito l'univocità, questo tag è obbligatorio in presenza di più di una versione di un argomento in un catalogo, ad esempio, quando un catalogo contiene un argomento per .NET Framework 3.5 e un argomento per .NET Framework 4 ed entrambi hanno la stessa Micro soft. Help.Id. |
-| \< nome metadati = "SelfBranded" content = "[TRUE o FALSE]" / > | Specifica se in questo argomento Usa il pacchetto di personalizzazione di gestione librerie della Guida all'avvio o un pacchetto di personalizzazione specifici per l'argomento. Questo tag deve essere TRUE o FALSE. Se è TRUE, il pacchetto di personalizzazione per l'argomento associato sostituisce il pacchetto di personalizzazione che viene impostato quando viene avviata Gestione librerie della Guida in modo che l'argomento viene eseguito il rendering come previsto anche se differisce dal rendering di altro contenuto. Se è FALSE, l'argomento corrente viene eseguito il rendering in base al pacchetto di personalizzazione che viene impostato quando viene avviata Gestione librerie della Guida. Per impostazione predefinita, Gestione librerie della Guida si presuppone self-branding deve essere false, a meno che la variabile SelfBranded è dichiarata come TRUE. Pertanto, non è necessario dichiarare \<nome meta = "SelfBranded" content = "FALSE" / >. |
+| \< meta name="SelfBranded" content="[TRUE or FALSE]"/> | Specifica se in questo argomento Usa il pacchetto di personalizzazione di gestione librerie della Guida all'avvio o un pacchetto di personalizzazione specifici per l'argomento. Questo tag deve essere TRUE o FALSE. Se è TRUE, il pacchetto di personalizzazione per l'argomento associato sostituisce il pacchetto di personalizzazione che viene impostato quando viene avviata Gestione librerie della Guida in modo che l'argomento viene eseguito il rendering come previsto anche se differisce dal rendering di altro contenuto. Se è FALSE, l'argomento corrente viene eseguito il rendering in base al pacchetto di personalizzazione che viene impostato quando viene avviata Gestione librerie della Guida. Per impostazione predefinita, Gestione librerie della Guida si presuppone self-branding deve essere false, a meno che la variabile SelfBranded è dichiarata come TRUE. Pertanto, non è necessario dichiarare \<nome meta = "SelfBranded" content = "FALSE" / >. |
 
 ### <a name="creating-a-branding-package"></a>Creazione di un pacchetto del marchio
 La versione di Visual Studio include un numero di diversi prodotti Visual Studio, tra cui la Isolated e shell integrata per partner di Visual Studio.  Ognuno di questi prodotti richiede un certo livello di basate su argomenti di contenuto della Guida di personalizzazione univoche per il prodotto, il supporto.  Negli argomenti di Visual Studio, ad esempio, necessario avere una presentazione del marchio coerenti, mentre SQL Studio, che esegue il wrapping della Shell di ISO, richiede la propria univoco della Guida contenuto della personalizzazione per ogni argomento.  Un Partner Shell integrata può essere opportuno relativi argomenti della Guida per rientrare il principale contenuto della Guida del prodotto Visual Studio, mantenendo le proprie informazioni personalizzate distintive di argomento del.
@@ -431,7 +431,7 @@ Il file Branding.xml contiene un elenco di elementi usati per il rendering in mo
 
 Nota: le variabili indicate da "{n}" sono le dipendenze del codice, rimozione o modifica di questi valori causerà errori ed eventualmente l'arresto anomalo dell'applicazione. Gli identificatori di localizzazione (esempio _locID="codesnippet.n") sono inclusi nel pacchetto di personalizzazione di Visual Studio.
 
-**Branding.Xml**
+**Branding.xml**
 
 
 | | |
@@ -472,7 +472,7 @@ Nota: le variabili indicate da "{n}" sono le dipendenze del codice, rimozione o 
 | **Elemento** | **Valore** |
 | LinkTableTitle | Tabella dei collegamenti |
 | TopicEnuLinkText | Visualizzare la versione inglese\</a > di questo argomento disponibile nel computer. |
-| TopicOnlineLinkText | Visualizza questo argomento \<href = "{0}" {1}> online\</a > |
+| TopicOnlineLinkText | View this topic \<a href="{0}" {1}>online\</a> |
 | OnlineText | Online |
 | Funzionalità: | **Controllo Audio video** |
 | Utilizza: | Visualizzare gli elementi e il testo per il contenuto video |
@@ -512,7 +512,7 @@ Nota: le variabili indicate da "{n}" sono le dipendenze del codice, rimozione o 
 | HomePageHelpSettingsText | \<p > il valore impostato corrente è la Guida locale. Help Viewer Visualizza il contenuto installato nel computer. \<br / > per modificare l'origine del contenuto della Guida, nella barra dei menu di Visual Studio, scegliere \<span style = "{0}" > Guida in linea, Imposta preferenza Guida\</span >.\< br / > \< /p > |
 | MegaByte | MB |
 
-**Branding.js**
+**branding.js**
 
 Il file branding.js contiene codice JavaScript usato dagli elementi di personalizzazione di Visual Studio Help Viewer.  Di seguito è riportato un elenco degli elementi di personalizzazione e la funzione di supporto JavaScript.  Tutte le stringhe da localizzare per questo file sono definite nella sezione "Stringhe localizzabili" nella parte superiore di questo file.  File ICL è stato creato per le stringhe di percorso all'interno del file branding.js.
 
@@ -523,10 +523,10 @@ Il file branding.js contiene codice JavaScript usato dagli elementi di personali
 |Ottenere il linguaggio del codice utente|setUserPreferenceLang|esegue il mapping di un indice & al linguaggio del codice|
 |Impostare e ottenere i valori dei cookie|getCookie, setCookie||
 |Membri ereditati|changeMembersLabel|Espandi/Comprimi membro ereditato|
-|Quando si SelfBranded = False|onLoad|Leggere la stringa di query per verificare se è una richiesta di stampa.  Impostare tutte le codesnippets concentrarsi scheda Preferiti utente.  Se è una richiesta di stampa, quindi impostare isPrinterFriendly su true. Verificare la modalità a contrasto elevato.|
+|When SelfBranded=False|onLoad|Leggere la stringa di query per verificare se è una richiesta di stampa.  Impostare tutte le codesnippets concentrarsi scheda Preferiti utente.  Se è una richiesta di stampa, quindi impostare isPrinterFriendly su true. Verificare la modalità a contrasto elevato.|
 |Frammento di codice|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
-||Scheda Modifica vengono||
+||ChangeTab||
 ||setCodesnippetLang||
 ||setCurrentLang||
 ||CopyToClipboard||
@@ -545,7 +545,7 @@ Il file branding.js contiene codice JavaScript usato dagli elementi di personali
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||styleRectify (styleName, styleValue)||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||SUBTITLE(ID)||
 
@@ -556,23 +556,23 @@ Il pacchetto di personalizzazione contiene un set di file HTM che supportano sce
 ||||
 |-|-|-|
 |**File**|**Usare**|**Origine del contenuto visualizzato**|
-|Homepage|Si tratta di una pagina che consente di visualizzare contenuto attualmente installato e qualsiasi altro messaggio appropriato da presentare all'utente sulla loro contenuto.  Questo file contiene il contenuto aggiuntivo meta data attributo "Microsoft.Help.Id" = "-1" che consente di collocare questo contenuto nella parte superiore del sommario contenuto locale.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, tag \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, tag \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, tag \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Titolo sezione tag Branding.xml\<HomePageInstalledBooks >, i dati generati dall'applicazione, \<HomePageNoBooksInstalled > quando non vengono installata nessuna documentazione.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Titolo sezione tag Branding.xml \<HomePageHelpSettings >, sezione testo \<HomePageHelpSettingsText >.|
+|homepage.htm|Si tratta di una pagina che consente di visualizzare contenuto attualmente installato e qualsiasi altro messaggio appropriato da presentare all'utente sulla loro contenuto.  Questo file contiene il contenuto aggiuntivo meta data attributo "Microsoft.Help.Id" = "-1" che consente di collocare questo contenuto nella parte superiore del sommario contenuto locale.||
+||<META_HOME_PAGE_TITLE_ADD />|Branding.XML, tag \<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, tag \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, tag \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Titolo sezione tag Branding.xml\<HomePageInstalledBooks >, i dati generati dall'applicazione, \<HomePageNoBooksInstalled > quando non vengono installata nessuna documentazione.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Titolo sezione tag Branding.xml \<HomePageHelpSettings >, sezione testo \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Quando un argomento è presente nel set di locale, ma per qualche motivo non può essere visualizzato (contenuto danneggiato).||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, tag \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, tag \<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.XML, tag \<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml, tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Quando un argomento non viene trovato nel contenuto locale impostare, né disponibile online||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, tag \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Tag, branding.XML \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.XML, tag \<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
 ||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, tag \<TopicNotFoundText >|
 |contentnotinstalled.htm|Quando non è presente contenuto locale per il prodotto installato.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, tag \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, tag \<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, tag \<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, tag \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, tag \<ContentNotInstalledText>|
 
 **File CSS**
 
@@ -591,7 +591,7 @@ Il contenuto di Visual Studio consente di visualizzare un logo di Visual Studio,
 ||||
 |-|-|-|
 |**File**|**Usare**|**Esempi**|
-|Clear.gif|Utilizzato per il rendering Area comprimibile||
+|clear.gif|Utilizzato per il rendering Area comprimibile||
 |footer_slice.gif|Presentazione di piè di pagina||
 |info_icon.gif|Utilizzato quando si visualizzano informazioni|Dichiarazione di non responsabilità|
 |online_icon.gif|Questa icona è da associare collegamenti online||
@@ -724,7 +724,7 @@ Definire l'archivio del contenuto nel Registro di sistema. Per la Shell integrat
 
    Legenda: Valore stringa LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
-- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-us
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
    Legenda: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione
 
@@ -801,7 +801,7 @@ Per testare questo come se distribuita:
 
     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell integrata:
 
-    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-Stati Uniti
+    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
     Legenda: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione. Per ISO Shell, si tratta del nome del catalogo.
 

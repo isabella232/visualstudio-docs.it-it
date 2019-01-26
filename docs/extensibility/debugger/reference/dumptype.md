@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b0e2dde4826682be2ffbd907c97369e1586e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab7d66ecae911faf8cc42a840ac853d585fc80bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012576"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Specifica la quantità di stato del programma (ad esempio thread in esecuzione, gli stack frame e indirizzo dell'istruzione corrente) per eseguire il dump.  

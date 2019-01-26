@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6e192d9bf22f2cd299164c1782db208d250e773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028696"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 È possibile usare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), invece di usare un diagramma DSL. In questo argomento illustra l'associazione di un Windows Form a un linguaggio DSL, utilizzando la visualizzazione e Visual Studio SDK di modellazione.
@@ -70,7 +70,7 @@ ms.locfileid: "53869927"
 ## <a name="updating-the-dsl-definition"></a>L'aggiornamento della definizione DSL
  Nell'esempio di che definizione DSL viene usata in questa procedura dettagliata.
 
- ![Linguaggio specifico di dominio&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Per aggiornare la definizione DSL
 
@@ -301,7 +301,7 @@ ms.locfileid: "53869927"
 
     Dovrebbe essere possibile modificare il nome dell'elemento nella visualizzazione griglia dei dati. È anche possibile eliminarlo da tale posizione.
 
-   ![Linguaggio specifico di dominio&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informazioni sul codice per aggiungere un elemento
  Per i pulsanti del nuovo elemento, il seguente codice alternativo è leggermente più semplice.

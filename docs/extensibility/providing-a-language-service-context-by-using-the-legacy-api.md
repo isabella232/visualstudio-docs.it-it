@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8406d0ca1615ef1f784312827e3a21d0a96b04a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016564"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fornire un contesto del servizio linguaggio con l'API legacy
 Sono disponibili due opzioni per un servizio di linguaggio fornire contesto utente utilizzando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale: fornire il contesto di marcatore di testo o forniscono tutto il contesto utente. Di seguito vengono illustrate le differenze tra ogni.  
@@ -42,7 +42,7 @@ Sono disponibili due opzioni per un servizio di linguaggio fornire contesto uten
   
   Il diagramma seguente illustra come contesto viene fornito per un servizio di linguaggio che implementa `IVsLanguageContextProvider`.  
   
-  ![Immagine di LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  ![LangServiceImplementation2 graphic](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
   Contesto per un servizio di linguaggio  
   
   Come si può notare nel diagramma, il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor di testo principale dispone di un contenitore di contesto associato a esso. Questo elenco di contesti punta a tre elenchi di sottocontesti separato: servizio di linguaggio editor predefinito e marcatore di testo. I linguaggio del servizio e il testo marcatore elenchi di sottocontesti contengono gli attributi e parole chiave per il servizio di linguaggio, se il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfaccia viene implementata e marcatori di testo se il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaccia è implementata. Se non si implementa una di queste interfacce, l'editor fornisce contesto per la parola chiave in corrispondenza del cursore nell'elenco di sottocontesti editor predefinito.  

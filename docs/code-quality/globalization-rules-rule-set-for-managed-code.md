@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0c0eb4edfb58d740692f2afff187659a665b234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dea6c153196223f91726eaaedcace4f62c2868c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015264"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Set di regole delle Regole di globalizzazione per codice gestito
 È possibile usare le regole di globalizzazione Microsoft set di regole per concentrarsi sui problemi che potrebbero compromettere i dati nell'applicazione vengano visualizzati correttamente nel, le impostazioni locali, lingue e culture diverse. È consigliabile includere questo set di regole se l'applicazione sia localizzata, globalizzato, o entrambi.
@@ -30,5 +30,5 @@ ms.locfileid: "53936984"
 |[CA1306](../code-quality/ca1306-set-locale-for-data-types.md)|Specificare le impostazioni locali per i tipi di dati|
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|Specificare StringComparison|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizzare le stringhe in lettere maiuscole|
-|[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Utilizza StringComparison ordinale|
+|[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Usare StringComparison ordinale|
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|
