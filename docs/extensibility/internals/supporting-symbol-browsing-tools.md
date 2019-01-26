@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ba75a0b62f2b0cbac1d7c60875dd322d0feaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d051809d02624f686f3ffc5408441d18e890854
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001485"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Supporto degli strumenti di esplorazione dei simboli
 **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate** e **risultati ricerca simbolo** strumenti forniscono le funzionalità in Visual Studio di visualizzazione dei simboli. Questi strumenti visualizzare visualizzazioni dell'albero gerarchico dei simboli e mostrano le relazioni tra i simboli dell'albero. I simboli possono rappresentare gli spazi dei nomi, oggetti, classi, membri di classi e altri elementi del linguaggio contenuti nei vari componenti. I componenti includono progetti di Visual Studio, esterni [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] componenti e le librerie dei tipi (tlb). Per altre informazioni, vedere [Viewing the Structure of Code](../../ide/viewing-the-structure-of-code.md) (Visualizzazione della struttura del codice).  
