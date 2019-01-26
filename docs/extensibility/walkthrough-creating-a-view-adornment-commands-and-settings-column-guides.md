@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958741"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947410"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procedura dettagliata: Creare un'area di controllo di visualizzazione, i comandi e le impostazioni (guide di colonne)
 È possibile estendere l'editor di testo o codice di Visual Studio con i comandi e visualizzare gli effetti. Questo articolo illustra come iniziare a usare una funzionalità di estensione più diffusi, guide di colonne. Le guide di colonna sono visivamente chiara linee disegnate su visualizzazione dell'editor di testo che consentono di gestire il codice per la larghezza delle colonne specifiche. In particolare, codice formattato può essere importante per gli esempi si includere nei documenti, post di blog, o i report di bug.
@@ -318,7 +318,7 @@ namespace ColumnGuides
 
 ```
 
-La maggior parte di questo codice crea e analizza il formato delle impostazioni: "RGB (\<int >,\<int >,\<int >) \<int >, \<int >,...".  I numeri interi alla fine sono le colonne in base uno in cui si desidera guide di colonne. Guide alla colonna acquisisce tutte le sue impostazioni in una stringa di valore di singola impostazione.
+La maggior parte di questo codice crea e analizza il formato delle impostazioni: "RGB(\<int>,\<int>,\<int>) \<int>, \<int>, ...".  I numeri interi alla fine sono le colonne in base uno in cui si desidera guide di colonne. Guide alla colonna acquisisce tutte le sue impostazioni in una stringa di valore di singola impostazione.
 
 Esistono alcune parti del codice degna. La riga di codice seguente ottiene il wrapper gestito di Visual Studio per l'archiviazione delle impostazioni. Nella maggior parte, ciò consente di astrarre tramite il Registro di sistema di Windows, ma questa API è indipendente dal meccanismo di archiviazione.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717820bdd16daf9c32b32d873035a652d68f6348
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e02c061e6f85ad25e6cd9509b8a86a977a78cbba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965100"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978516"
 ---
 # <a name="sccaddfromscc-function"></a>Funzione SccAddFromScc
 Questa funzione consente di individuare i file già presenti nel sistema di controllo di origine e successivamente rendere tali file che fanno parte del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comuni nel progetto corrente senza copiare il file. Alla matrice restituita di file, `lplpFileNames`, contiene l'elenco di file che l'utente desidera aggiungere al progetto IDE.  
@@ -49,7 +49,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|I file sono stati correttamente che si trova e aggiunto al progetto.|  
 |SCC_I_OPERATIONCANCELED|Operazione annullata senza alcun effetto.|  

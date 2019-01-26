@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477d18f3cb5f187b61d78d779339e2c43c402a43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854737"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949948"
 ---
 # <a name="sccpopulatedirlist-function"></a>Funzione SccPopulateDirList
 Questa funzione determina le directory e, facoltativamente, i file vengono archiviati nel controllo del codice sorgente, dato un elenco di directory da esaminare.  
@@ -51,13 +51,13 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in] Valore che deve essere passato alla funzione di callback invariato.  
   
- Opzioni  
+ fOptions  
  [in] Una combinazione di valori che controllano il modo in cui vengono elaborate le directory (vedere la sezione "PopulateDirList flags" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).  
   
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'operazione è stata completata.|  
 |SCC_E_UNKNOWNERROR|Si è verificato un errore.|  
