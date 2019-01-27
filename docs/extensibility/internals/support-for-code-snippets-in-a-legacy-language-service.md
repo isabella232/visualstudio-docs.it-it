@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948986"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è un frammento di codice che viene inserito nel file di origine. Il frammento di codice è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo il frammento di codice viene inserito e può avere valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Immediatamente dopo l'inserimento del frammento, il servizio di linguaggio possibile formattare il frammento di codice.  
@@ -85,11 +85,11 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|% LCID %|ID impostazioni locali.|  
-|% InstallRoot %|Cartella di installazione radice per Visual Studio, ad esempio, C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Cartella contenente il progetto corrente.|  
-|% ProjItem %|Cartella contenente l'elemento del progetto corrente.|  
-|% TestDocs %|Nella cartella di impostazioni dell'utente, ad esempio, C:\Documents and Settings \\\ *[username]* \My Studio\8.|  
+|%LCID%|ID impostazioni locali.|  
+|%InstallRoot%|Cartella di installazione radice per Visual Studio, ad esempio, C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Cartella contenente il progetto corrente.|  
+|%ProjItem%|Cartella contenente l'elemento del progetto corrente.|  
+|%TestDocs%|Nella cartella di impostazioni dell'utente, ad esempio, C:\Documents and Settings \\\ *[username]* \My Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>L'abilitazione di frammenti di codice per il servizio di linguaggio  
  È possibile abilitare i frammenti di codice per il servizio di linguaggio aggiungendo il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> dell'attributo per il pacchetto VSPackage (vedere [la registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) per informazioni dettagliate). Il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> e <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> i parametri sono facoltativi, ma è consigliabile includere la `SearchPaths` parametro denominato per informare il **Gestione frammenti di codice** di percorso dei frammenti di codice.  
