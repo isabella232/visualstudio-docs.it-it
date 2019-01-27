@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877562"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933750"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in una forma in un linguaggio specifico di dominio (DSL). È possibile visualizzare l'elemento decorator e scompaiano a seconda dello stato delle proprietà nel modello. In una forma che rappresenta una persona, ad esempio, si potrebbero hanno icone diverse che vengono visualizzati in base alla relativa al sesso dell'utente, numero di elementi figlio e così via.

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 286ec5b71691777af601c00e26c2db5772bd5f1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993975"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Il manifesto dallo strumento di risorse è un'applicazione console che accetta un elenco di risorse grafiche (file con estensione PNG o XAML) e genera un file .imagemanifest che consente a tali immagini da utilizzare con il servizio di immagini di Visual Studio. Inoltre, questo strumento è utilizzabile per aggiungere immagini a un .imagemanifest esistente. Questo strumento è utile per l'aggiunta di supporto ad alta risoluzione e dei temi per le immagini a un'estensione di Visual Studio. Il file .imagemanifest generato deve essere incluso in e distribuito come parte di un'estensione di Visual Studio (VSIX).  
@@ -45,7 +45,7 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
   
 -   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   

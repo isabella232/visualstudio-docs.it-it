@@ -17,15 +17,15 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e80fbe0244c897f626c6fba248447881a92594a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917384"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868456"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architettura delle personalizzazioni a livello di documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] include progetti per la creazione di personalizzazioni a livello di documento per Microsoft Office Word e Microsoft Office Excel. Questo argomento descrive gli aspetti seguenti delle personalizzazioni a livello di documento:  
@@ -85,7 +85,7 @@ ms.locfileid: "53917384"
   
 |Excel|Word|  
 |-----------|----------|  
-|Cartella di lavoro di Excel (*xlsx*)<br /><br /> Cartella di lavoro con attivazione macro di Excel (*xlsm*)<br /><br /> Cartella di lavoro binaria di Excel (*xlsb*)<br /><br /> Cartella di lavoro di Excel 97-2003 (*xls*)<br /><br /> Modello di Excel (*xltx*)<br /><br /> Modello di Excel con attivazione macro (*xltm*)<br /><br /> Modello di Excel 97-2003 (*xlt*)|Documento di Word (*docx*)<br /><br /> Documento di Word con attivazione macro (*docm*)<br /><br /> Documento di Word 97-2003 (*doc*)<br /><br /> Modello di Word (*dotx*)<br /><br /> Modello di Word con attivazione macro (*dotm*)<br /><br /> Modello di Word 97-2003 (*dot*)|  
+|Excel workbook (*.xlsx*)<br /><br /> Cartella di lavoro con attivazione macro di Excel (*xlsm*)<br /><br /> Cartella di lavoro binaria di Excel (*xlsb*)<br /><br /> Cartella di lavoro di Excel 97-2003 (*xls*)<br /><br /> Modello di Excel (*xltx*)<br /><br /> Modello di Excel con attivazione macro (*xltm*)<br /><br /> Modello di Excel 97-2003 (*xlt*)|Documento di Word (*docx*)<br /><br /> Documento di Word con attivazione macro (*docm*)<br /><br /> Documento di Word 97-2003 (*doc*)<br /><br /> Modello di Word (*dotx*)<br /><br /> Modello di Word con attivazione macro (*dotm*)<br /><br /> Modello di Word 97-2003 (*dot*)|  
   
  Si consiglia di progettare le estensioni di codice gestito solo per documenti nei formati supportati. In caso contrario, è possibile che alcuni eventi non vengano generati all'apertura del documento nell'applicazione. Ad esempio, il <xref:Microsoft.Office.Tools.Excel.Workbook.Open> non viene generato quando si usano le estensioni di codice gestito con cartelle di lavoro salvati in formato XML di Excel del foglio di calcolo o nella pagina web (*htm*; *HTML*) formato.  
   
