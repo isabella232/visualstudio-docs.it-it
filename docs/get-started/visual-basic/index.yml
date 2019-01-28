@@ -1,23 +1,25 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: c9110582a80de3031ed4d2698a4f1afcf31e3b72
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 6c68bfe6d5216c6730a4b42713c5124b8075e9e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442908"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946425"
 documentType: LandingData
-title: Visual Studio | Visual Basic
+title: Esercitazioni di Visual Studio | Visual Basic
 metadata:
   title: Sviluppo per Visual Basic con Visual Studio | Microsoft Docs
   description: Esercitazioni e articoli concettuali sullo sviluppo di app Visual Basic con Visual Studio.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
   ms.date: 10/30/2018
   ms.author: ghogen
+abstract:
+  description: Questa pagina contiene collegamenti a esercitazioni di base per l'apprendimento di Visual Studio per utenti di Visual Basic. Per la documentazione completa di Visual Studio, vedere <a href="/visualstudio/ide/">Visual Studio</a>. Per la documentazione del linguaggio Visual Basic, vedere <a href=/dotnet/visual-basic>Guida a Visual Basic</a>.
 sections:
 - title: Introduzione
   items:
