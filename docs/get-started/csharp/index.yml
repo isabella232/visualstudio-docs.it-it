@@ -1,18 +1,18 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f65c4c6ea5ed255f40467839e5fa41c879d422f2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 7da3e8111a16a8003331de0c388805c459cefa07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014069"
 documentType: LandingData
-title: Visual Studio | C#
+title: Esercitazioni di Visual Studio | C#
 metadata:
   title: Sviluppo per C# con Visual Studio | Microsoft Docs
   description: Esercitazioni e articoli concettuali sullo sviluppo di app C# con Visual Studio.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
@@ -20,6 +20,8 @@ metadata:
   ms.author: ghogen
   dev_langs:
   - CSharp
+abstract:
+  description: Questa pagina contiene collegamenti a esercitazioni di base per la creazione di app C# per utenti di Visual Basic. Per la documentazione completa di Visual Studio, vedere <a href="/visualstudio/ide/">Visual Studio</a>. Per la documentazione del linguaggio C# vedere la <a href="/dotnet/csharp">Guida di C#</a>.
 sections:
 - title: Introduzione
   items:

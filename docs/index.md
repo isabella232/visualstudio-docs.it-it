@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Documentazione di Visual Studio | Microsoft Docs
 titleSuffix: ''
-description: 'Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.'
+description: Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032211"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -101,7 +107,7 @@ ms.custom: seodec18
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h2>Scegliere un linguaggio</h2>
+                                                <h2>Eseguire un'esercitazione</h2>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
