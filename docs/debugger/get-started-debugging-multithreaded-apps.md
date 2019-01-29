@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863290"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227980"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Iniziare il debug di applicazioni multithreading
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Iniziare il debug di applicazioni multithreading (C#, Visual Basic, C++)
 Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Il completamento di questa esercitazione consentirà di familiarizzare con le funzionalità di Visual Studio per il debug di applicazioni multithreading.
 
 | | |

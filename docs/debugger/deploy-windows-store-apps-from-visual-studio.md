@@ -14,10 +14,10 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53821315"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
@@ -28,7 +28,7 @@ La funzionalità di distribuzione di Visual Studio compila e registra le app UWP
 
 - Quando la destinazione è un dispositivo remoto, Visual Studio copia i file necessari nel computer remoto e registra l'app su questo dispositivo.
 
-La distribuzione avviene automaticamente quando esegui il debug dell'app da Visual Studio usando l'opzione Avvia debug** (tastiera: F5) o la **Avvia senza eseguire debug** opzione (tastiera: CTRL+F5 Puoi distribuire l'app anche manualmente. Ecco gli scenari in cui la distribuzione manuale può essere utile:
+La distribuzione avviene automaticamente quando si esegue il debug dell'app da Visual Studio usando l'opzione **Avvia debug** (tastiera: F5) oppure l'opzione **Avvia senza eseguire debug** (tastiera: CTRL+F5). Puoi distribuire l'app anche manualmente. Ecco gli scenari in cui la distribuzione manuale può essere utile:
 
 - Test ad hoc su un computer locale o remoto.
 
