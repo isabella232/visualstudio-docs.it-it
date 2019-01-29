@@ -1,8 +1,6 @@
 ---
 title: Creazione di visualizzatori di dati personalizzato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607822"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204388"
 ---
-# <a name="create-custom-data-visualizers"></a>Creazione di visualizzatori dati personalizzati 
+# <a name="create-custom-data-visualizers"></a>Creazione di visualizzatori dati personalizzati
  Oggetto *visualizer* fa parte di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaccia utente del debugger che consente di visualizzare una variabile o un oggetto in modo appropriato al relativo tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come apparirebbe in una finestra del browser. Un visualizzatore di bitmap interpreta una struttura di bitmap e visualizza il grafico da che essa rappresentato. Alcuni visualizzatori consentono di modificare, nonché visualizzare i dati.
 
  Il debugger di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] include sei visualizzatori standard. Il testo, HTML, XML e JSON utilizzati visualizzatori per oggetti stringa. Il Visualizzatore dell'albero di WPF consente di visualizzare le proprietà di una struttura visiva di oggetti WPF. Il Visualizzatore di dataset funziona per gli oggetti DataSet, DataView e DataTable. 
@@ -48,7 +46,7 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
   
 - Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio e crea e visualizza l'interfaccia utente del visualizzatore.  
   
-- Il *ritrasferire al lato* viene eseguito all'interno del processo di debug in Visual Studio (il *dell'oggetto del debug*). L'oggetto dati da visualizzare (ad esempio, un oggetto stringa) è presente nel processo oggetto del debug. Il lato oggetto del debug invia l'oggetto al lato debugger, che lo visualizza nell'interfaccia utente creati.  
+- Il *lato oggetto del debug* viene eseguito all'interno del processo sottoposto a debug in Visual Studio (l'*oggetto del debug*). L'oggetto dati da visualizzare (ad esempio, un oggetto stringa) è presente nel processo oggetto del debug. Il lato oggetto del debug invia l'oggetto al lato debugger, che lo visualizza nell'interfaccia utente creati.  
 
 Il lato debugger riceve l'oggetto dati da un *provider di oggetti* che implementa il <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaccia. Il lato oggetto del debug invia l'oggetto tramite il *origine dell'oggetto*, che deriva da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
@@ -84,9 +82,9 @@ Specificare il codice lato oggetto del debug utilizzando il <xref:System.Diagnos
   
 ## <a name="see-also"></a>Vedere anche
   
- [Procedura dettagliata: scrivere un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Procedura dettagliata: Scrivere un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [Procedura dettagliata: scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [Procedura dettagliata: Scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
  [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)  
   
