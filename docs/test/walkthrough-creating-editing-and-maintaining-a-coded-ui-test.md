@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7659de6e90ca13172459b1bcc1e305e14a91cfc
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878234"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231961"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -354,11 +354,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="videos"></a>Video
 
-![collegamento a video](../data-tools/media/playvideo.gif) [Get started with coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230573)(Introduzione ai test codificati dell'interfaccia utente)
-
-![collegamento a video](../data-tools/media/playvideo.gif) [Maintenance and debugging of coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230574)(Manutenzione e debug di test codificati dell'interfaccia utente)
-
-![collegamento a video](../data-tools/media/playvideo.gif) [Codifica manuale dei test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230575)
+![collegamento a video](../data-tools/media/playvideo.gif) [Get started with coded UI tests](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)(Introduzione ai test codificati dell'interfaccia utente)
 
 ## <a name="faq"></a>Domande frequenti
 

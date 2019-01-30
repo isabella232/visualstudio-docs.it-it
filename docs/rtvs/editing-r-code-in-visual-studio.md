@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918602"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modificare il codice R in Visual Studio
 
@@ -40,7 +40,7 @@ Per modificare questo comportamento, vedere l'impostazione **Avanzate** > **Cont
 
 ## <a name="edit-and-organize-code"></a>Modificare e organizzare il codice
 
-Durante la digitazione del codice, RTVS offre il completamento automatico come descritto nella pagina su [IntelliSense](r-intellisense.md). Esegue anche la formattazione automatica, completando ad esempio il codice con graffe e parentesi: 
+Durante la digitazione del codice, RTVS offre il completamento automatico come descritto nella pagina su [IntelliSense](r-intellisense.md). Esegue anche la formattazione automatica, completando ad esempio il codice con graffe e parentesi:
 
 ![Animazione della formattazione inline](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Le opzioni nella scheda **R** > **Avanzate** sono specifiche di RTVS:
 | | Elenco di completamento dopo la digitazione del primo carattere | Attivato | Visualizza l'elenco di completamento dopo aver digitato i primi caratteri. Se l'opzione è disattivata, viene visualizzato un elenco di completamento selezionando **Modifica** > **IntelliSense** > **Elenca membri** (**CTRL**+**J**). |
 | | Elenco di completamento con il tasto **TAB** | Disattivato | Richiama l'elenco di completamento digitando uno o più caratteri e premendo **TAB**. |
 | | Corrispondenza con nomi di argomento parzialmente digitati | Disattivato | Durante la digitazione dei nomi di un argomento in una chiamata di funzione, la firma visualizza una descrizione che meglio corrisponde all'argomento. |
-| Finestra interattiva | Controllo della sintassi nella console R | Disattivato | Applica il controllo della sintassi nella finestra interattiva. Il controllo della sintassi non funziona correttamente se viene applicato a istruzioni su più righe. | 
+| Finestra interattiva | Controllo della sintassi nella console R | Disattivato | Applica il controllo della sintassi nella finestra interattiva. Il controllo della sintassi non funziona correttamente se viene applicato a istruzioni su più righe. |
 | struttura | Struttura del codice | Attivato | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. |
 | Controllo della sintassi | Mostra errori di sintassi | Attivato | Abilita il controllo automatico della sintassi del codice. |

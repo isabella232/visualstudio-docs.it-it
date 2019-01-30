@@ -2,22 +2,22 @@
 title: Esercitazione sull'uso di Python in Visual Studio, passaggio 1, creare un progetto
 titleSuffix: ''
 description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916046"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231870"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: usare Python in Visual Studio
 
@@ -61,7 +61,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene un singo
 
     (1) In grassetto viene visualizzato il progetto con il nome assegnato in precedenza nella finestra di dialogo **Nuovo progetto**. Sul disco questo progetto è rappresentato nella cartella del progetto da un file con estensione *.pyproj*.
 
-    (2) Al primo livello è presente una *soluzione* che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata su disco da un file con estensione *sln*, è un contenitore per uno o più progetti correlati. Ad esempio, se si scrive un'estensione C++ per l'applicazione Python, il progetto C++ può risiedere nella stessa soluzione. La soluzione può contenere anche un progetto per un servizio web, insieme ai progetti per i programmi di test dedicati. 
+    (2) Al primo livello è presente una *soluzione* che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata su disco da un file con estensione *sln*, è un contenitore per uno o più progetti correlati. Ad esempio, se si scrive un'estensione C++ per l'applicazione Python, il progetto C++ può risiedere nella stessa soluzione. La soluzione può contenere anche un progetto per un servizio web, insieme ai progetti per i programmi di test dedicati.
 
     (3) Nel progetto si possono vedere i file di origine, in questo caso un solo file con estensione *py*. Se si seleziona un file, le rispettive proprietà vengono visualizzate nella finestra **Proprietà**. Facendo doppio clic su un file, questo verrà aperto nel modo più appropriato.
 

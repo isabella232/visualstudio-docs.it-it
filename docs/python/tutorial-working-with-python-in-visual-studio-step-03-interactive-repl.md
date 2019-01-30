@@ -2,22 +2,22 @@
 title: Esercitazione sull'uso di Python in Visual Studio, passaggio 3, finestra interattiva REPL
 titleSuffix: ''
 description: Passaggio 3 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato alla finestra interattiva REPL di Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986830"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231883"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: usare la finestra interattiva REPL
 
@@ -74,7 +74,7 @@ La finestra **Interattiva** di Visual Studio per Python offre un'esperienza comp
     ![Modifica di un'istruzione precedente nella finestra interattiva](media/vs-getting-started-python-16-interactive6.png)
 
 1. Ripetere il processo per sperimentare con impostazioni diverse i passaggi fino a individuare un valore desiderato. È anche possibile rendere la ripetizione dell'onda aumentando l'intervallo, ad esempio, `range(0, 1800, 12)`.
- 
+
 1. Quando si è soddisfatti del codice scritto nella finestra **Interattiva**, selezionarlo, fare clic con il pulsante destro del mouse e scegliere **Copia codice** (**CTRL**+**MAIUSC**+**C**) quindi incollarlo nell'editor. Questa funzionalità speciale di Visual Studio omette automaticamente qualsiasi output, così come i prompt `>>>` e `...`. Ad esempio, nell'immagine seguente viene illustrato l'uso del comando **Copia codice** su una selezione che include prompt e output:
 
     ![Comando copia codice della finestra interattiva su una selezione con prompt e output](media/vs-getting-started-python-17-interactive7.png)

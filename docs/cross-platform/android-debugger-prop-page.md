@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 789f7a1c-38b4-41d0-809b-14f4d96c8116
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.AndroidDebugger.DebuggerType
 - VC.Project.AndroidDebugger.AndroidDeviceID
@@ -15,16 +15,16 @@ f1_keywords:
 - VC.Project.AndroidDebugger.LaunchActivity
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: be240ed2cea05194d51040fd29a17de9a4472fc9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9a4d7baa970008c2de7a3bc28966f7edbad68b21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036173"
 ---
 # <a name="android-debugger-properties"></a>Proprietà del debugger Android
 
-Proprietà | Descrizione | Scelte
+Proprietà | Description | Scelte
 --- | ---| ---
 Tipo di debugger | Specifica quale tipo di codice sottoporre al debug. | **Solo nativo**<br>**Solo Java**<br>
 Destinazione di debug | Specifica l'emulatore o il dispositivo da usare per il debug. Se non ci sono emulatori in esecuzione, usare il gestore di dispositivi virtuali Android AVD Manager per avviare un dispositivo.

@@ -1,22 +1,22 @@
 ---
 title: Usare modelli CookieCutter con Python
 description: Visual Studio supporta l'estensione grafica Cookiecutter per individuare modelli per il codice Python e creare progetti da tali modelli.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958235"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231792"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
@@ -60,7 +60,7 @@ Dopo aver installato il modello in locale, Cookiecutter visualizza una pagina di
 
 ![Pagina delle opzioni di Cookiecutter](media/cookiecutter-template-options.png)
 
-Ogni modello di Cookiecutter definisce un set proprio di opzioni e specifica un valore predefinito per ognuna (visualizzato come testo suggerito in ogni campo di immissione). Un valore predefinito può essere un frammento di codice, spesso quando è un valore dinamico che usa altre opzioni. 
+Ogni modello di Cookiecutter definisce un set proprio di opzioni e specifica un valore predefinito per ognuna (visualizzato come testo suggerito in ogni campo di immissione). Un valore predefinito può essere un frammento di codice, spesso quando è un valore dinamico che usa altre opzioni.
 
 È possibile personalizzare i valori predefiniti per opzioni specifiche con un file di configurazione dell'utente. Quando l'estensione Cookiecutter rileva un file di configurazione dell'utente, sovrascrive i valori predefiniti del modello con i valori predefiniti della configurazione dell'utente. Questo comportamento è trattato nella sezione [User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) (Configurazione dell'utente) della documentazione di Cookiecutter.
 
