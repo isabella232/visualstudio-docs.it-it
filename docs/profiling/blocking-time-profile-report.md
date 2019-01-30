@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5559584b02bf5338fb50fd41527c6958b0b05a21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946422"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037460"
 ---
 # <a name="blocking-time-profile-report"></a>Rapporto profili del tempo di blocco
 I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli stack di chiamate specifici di ogni categoria di blocco, ad esempio "I/O" o "Sincronizzazione". Il rapporto Precedenza elenca i processi che precedevano il processo corrente con il numero di istanze di precedenza. Per compilare il rapporto profili di blocco, lo strumento raccoglie chiamate API di blocco e le accumula in un albero degli stack di chiamate. I dati visualizzati in questi rapporti variano in base all'intervallo di tempo corrente, ai thread nascosti e ai seguenti due filtri che possono essere applicati:  
