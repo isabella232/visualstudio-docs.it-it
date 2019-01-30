@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a4e29425e710818dee68e28dcc306c3c14ab85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 709019ecc38558a324f48fc98ec803f7f328f963
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927506"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037138"
 ---
 # <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati sui conflitti
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Ogni nodo della funzione elenca tutte le funzioni che ha chiamato, il numero di volte per cui la funzione è stata bloccata e il tempo per il quale la funzione è stata bloccata perché in conflitto per una risorsa con altri thread o processi.  
