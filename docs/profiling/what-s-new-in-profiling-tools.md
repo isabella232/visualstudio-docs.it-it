@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1822ec74903c8baa75ce437b0115cecdfb911c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865479"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026945"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità negli strumenti di profilatura di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -24,7 +24,7 @@ Gli strumenti di diagnostica includono nuove visualizzazioni che consentono di i
 
 Per altre informazioni, vedere le [Note sulla versione per [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
 
-È stata aggiunta agli strumenti una scheda **Riepilogo**, che consente di concentrarsi sulle aree principali per l'analisi delle prestazioni. Questa scheda mostra il numero di eventi si sono verificati, consente di creare snapshot dell'heap e consente di abilitare rapidamente la raccolta dei dati di utilizzo della CPU. Questa visualizzazione mostra eventuali eventi di [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) o di [Analisi interfaccia utente](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis). Inoltre, per Visual Studio Enterprise, questa visualizzazione mostra anche gli eventi di IntelliTrace.
+È stata aggiunta agli strumenti una scheda **Riepilogo**, che consente di concentrarsi sulle aree principali per l'analisi delle prestazioni. Questa scheda mostra il numero di eventi si sono verificati, consente di creare snapshot dell'heap e consente di abilitare rapidamente la raccolta dei dati di utilizzo della CPU. Questa visualizzazione mostra eventuali eventi di [Application Insights](/azure/azure-monitor/app/visual-studio) o di [Analisi interfaccia utente](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis). Inoltre, per Visual Studio Enterprise, questa visualizzazione mostra anche gli eventi di IntelliTrace.
 
 ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

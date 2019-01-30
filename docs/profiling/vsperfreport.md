@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56dbbded2f141ab2e4be02c81f4e40fd6f523809
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915468"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020802"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file con estensione *csv*.  

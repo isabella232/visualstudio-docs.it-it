@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927515"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -163,7 +163,7 @@ I singoli modelli di pagina *about.html*, *contact.html* e *index.html* estendon
 
 Come indicato all'inizio di questo articolo, Visual Studio offre un modello "Progetto Web Flask/Jade", che consente di creare un'applicazione visivamente identica a quella generata da "Progetto Web Flask". La differenza principale è che in questo caso viene usato il motore del modello Jade, che è un'estensione Jinja che implementa gli stessi concetti con un linguaggio più conciso. In particolare, Jade usa parole chiave anziché tag racchiusi tra delimitatori, ad esempio {% %}, e consente di fare riferimento agli stili CSS e agli elementi HTML che usano le parole chiave.
 
-Per abilitare Jade, il modello di progetto per prima cosa include il pacchetto pyjade in *requirements.txt*. 
+Per abilitare Jade, il modello di progetto per prima cosa include il pacchetto pyjade in *requirements.txt*.
 
 Il file *\_\_init\_\_.py* dell'app contiene la riga
 

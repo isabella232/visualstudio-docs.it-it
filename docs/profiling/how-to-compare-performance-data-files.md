@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743184a0f28df90e703ce355ecf5c2642036d2ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 868ee74ba01014514f5b6bec10fba0fc044f34e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928536"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedura: Confrontare i file di dati delle prestazioni
 È possibile confrontare i risultati di due diversi file di dati del profiler, con estensione *vsp* o *vsps*, creando un report o una visualizzazione di confronto "Diff". Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.  

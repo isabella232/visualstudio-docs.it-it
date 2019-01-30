@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9d5465c7-f862-47a7-b249-4116605075a6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43da603670f2eccca408b8a47b13c8a9b9ea79ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b41cd976ddd637faf00ee50a3ec208d2b3d513f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950024"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924941"
 ---
 # <a name="markerserieswritealert-method"></a>Metodo marker_series::write_alert
 Scrive un avviso nel file di traccia del visualizzatore di concorrenza.  

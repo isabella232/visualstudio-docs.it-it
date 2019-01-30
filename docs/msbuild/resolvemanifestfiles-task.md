@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319d1e5003cf6a46bc7590b3dfcb5d68a1cda767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e3d5fd327e6ef9db5029697d502d27574a8a8f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043219"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles (attività)
 Risolve gli elementi seguenti del processo di compilazione nei file per la generazione del manifesto: elementi compilati, dipendenze, satelliti, contenuto, simboli di debug e documentazione.  

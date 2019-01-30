@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb210a438a4f9cbc171b270f06c615e050fb71fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 288dd093a4e6cfcdf9cfce7971e967c021549734
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967326"
 ---
 # <a name="thread-details-view---contention-data"></a>Visualizzazione Dettagli thread: dati sui conflitti
 La visualizzazione Dettagli thread presenta un grafico della sequenza temporale degli eventi di blocco nel thread selezionato di un'esecuzione della profilatura causati da conflitti relativi alle risorse. Si verifica un evento di blocco quando il thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso a una risorsa.  

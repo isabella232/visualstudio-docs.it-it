@@ -1,22 +1,22 @@
 ---
 title: Gestire progetti di applicazioni Python
 description: I progetti in Visual Studio gestiscono le dipendenze tra i file e la complessità delle relazioni in un'applicazione.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825292"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231935"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -113,7 +113,7 @@ In presenza delle condizioni seguenti i file collegati vengono ignorati:
 
 Per aggiungere un elemento esistente come collegamento, fare clic con il pulsante destro del mouse sulla cartella del progetto in cui aggiungere il file e quindi scegliere **Aggiungi** > **Elemento esistente**. Nella finestra di dialogo visualizzata, selezionare un file e scegliere **Aggiungi come collegamento** nell'elenco a discesa del pulsante **Aggiungi**. Questo comando crea un collegamento nella cartella selezionata, purché non siano presenti file in conflitto. Il collegamento non verrà aggiunto se però è già presente un file con lo stesso nome o nel progetto esiste già un collegamento a tale file.
 
-Se si prova a collegare un file già esistente nelle cartelle di progetto, questo viene aggiunto come un file normale e non come collegamento. Per convertire un file in un collegamento, selezionare **File** > **Salva con nome** per salvare il file in un percorso esterno alla gerarchia del progetto. Visual Studio lo converte automaticamente in un collegamento. Analogamente, è possibile usare **File** > **Salva con nome** anche per riconvertire un collegamento in un file e salvarlo in un punto qualsiasi all'interno della gerarchia del progetto. 
+Se si prova a collegare un file già esistente nelle cartelle di progetto, questo viene aggiunto come un file normale e non come collegamento. Per convertire un file in un collegamento, selezionare **File** > **Salva con nome** per salvare il file in un percorso esterno alla gerarchia del progetto. Visual Studio lo converte automaticamente in un collegamento. Analogamente, è possibile usare **File** > **Salva con nome** anche per riconvertire un collegamento in un file e salvarlo in un punto qualsiasi all'interno della gerarchia del progetto.
 
 Se si sposta un file collegato in **Esplora soluzioni**, viene spostato solo il collegamento, mentre il file effettivo rimane nella posizione originale. Analogamente, l'eliminazione di un collegamento implica solo la rimozione del collegamento e non del file.
 
