@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013002"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -206,7 +206,8 @@ Dato un progetto con la seguente configurazione:
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Risoluzione del messaggio "Il servizio JavaScript Language Service è stato disabilitato per i progetti seguenti"
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Risoluzione del messaggio "Il servizio JavaScript Language Service è stato disabilitato per i progetti seguenti"
 Quando si apre un progetto JavaScript che contiene un volume enorme di contenuto, è possibile che venga visualizzato il messaggio "Il servizio JavaScript Language Service è stato disabilitato per i progetti seguenti"". Nella maggior parte dei casi, il volume elevato dell'origine JavaScript è dovuto all'inclusione di librerie con codice sorgente che supera il limite di progetto di 20 MB.
 
 È possibile ottimizzare semplicemente il progetto aggiungendo un file `tsconfig.json` alla radice del progetto per indicare al servizio di linguaggio quali file possono essere ignorati. Usare l'esempio riportato di seguito per escludere le directory più comuni in cui sono archiviate le librerie:
@@ -231,7 +232,7 @@ Quando si apre un progetto JavaScript che contiene un volume enorme di contenuto
 }
 ```
 
-Aggiungere più directory se opportuno, ad esempio le directory "vendor" o "wwwroot/lib". 
+Aggiungere più directory se opportuno, ad esempio le directory "vendor" o "wwwroot/lib".
 
 > [!NOTE]
 > La proprietà del compilatore `disableSizeLimit` può essere usata anche per disabilitare il limite di controllo di 20 MB. Adottare alcune particolari precauzioni quando si usa questa proprietà perché disabilitando il limite, il servizio di linguaggio potrebbe arrestarsi in modo anomalo.

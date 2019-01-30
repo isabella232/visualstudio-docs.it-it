@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d9b76f779af88a6ad02dc61d73a0beb31691c03a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8d763961ff7b6565728784a36ea35a7be476b77
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043284"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tramite il metodo di campionamento dalla riga di comando.  

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947075"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921183"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Usare la finestra R interattivo
 
@@ -51,24 +51,24 @@ Ecco la finestra interattiva con relativa barra degli strumenti:
 
 Di seguito vengono illustrati i comandi della barra degli strumenti, la maggior parte dei quali hanno combinazioni di tasti e sono anche disponibili nei menu **R Tools** > **Sessione** e **R Tools** > **Directory di lavoro** (oppure come indicato):
 
-| Button | Comando | Combinazione di tasti | Description | 
+| Button | Comando | Combinazione di tasti | Description |
 | --- | --- | --- | --- |
 | ![Pulsante Reimposta](media/repl-toolbar-01-reset.png) | Reimposta | **CTRL**+**MAIUSC**+**F10** | Reimposta la sessione della finestra interattiva, cancellando tutte le variabili e la cronologia. |
 | ![Pulsante Cancella](media/repl-toolbar-02-clear.png) | Cancella | **CTRL**+**L** | Cancella l'output visualizzato nella finestra interattiva. Non ha alcun effetto sulle variabili della sessione o sulla cronologia. |
 | ![Pulsanti Cronologia](media/repl-toolbar-03-history.png) | Comando Cronologia precedente<br/>Comando Cronologia successiva | **Freccia SU**, **Freccia GIÙ**<br/>**ALT**+**Freccia SU**, **ALT**+**Freccia GIÙ** | Scorre la cronologia, con determinati comportamenti per i blocchi di codice su più righe. Vedere [Cronologia](#history). |
 | ![Pulsante Carica area di lavoro](media/repl-toolbar-04-load-workspace.png) | Carica area di lavoro | N/D | Carica un'area di lavoro precedentemente salvata (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
 | ![Pulsante Salva area di lavoro come](media/repl-toolbar-05-save-workspace-as.png)| Salva area di lavoro come | N/D | Salva lo stato corrente della sessione come area di lavoro (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
-| ![Pulsante Script R di origine](media/repl-toolbar-06-source-r-script.png) | Script R di origine | **CTRL**+**MAIUSC**+**S** | Chiama `source` con lo script R attualmente attivo nell'editor di Visual Studio, che esegue il codice.  Questo pulsante viene visualizzato solo se è aperto un file R nell'editor di Visual Studio. | 
+| ![Pulsante Script R di origine](media/repl-toolbar-06-source-r-script.png) | Script R di origine | **CTRL**+**MAIUSC**+**S** | Chiama `source` con lo script R attualmente attivo nell'editor di Visual Studio, che esegue il codice.  Questo pulsante viene visualizzato solo se è aperto un file R nell'editor di Visual Studio. |
 | ![Pulsante Script R di origine con eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R di origine con eco | **CTRL**+**MAIUSC**+**INVIO** | È simile allo script R di origine, ma visualizza il contenuto dello script nella finestra interattiva. |
 | ![Pulsante Interrompi R](media/repl-toolbar-08-interrupt-r.png)| Interrompi R | **ESC** | Arresta qualsiasi codice in esecuzione nella finestra interattiva, ad esempio il ciclo `while` illustrato nella schermata all'inizio di questa sezione. |
-| ![Pulsante Collega debugger](media/repl-toolbar-09b-attach-debugger.png)| Collega debugger | N/D | Disponibile anche tramite il comando **Debug** > **Collega a R interattivo**. | 
+| ![Pulsante Collega debugger](media/repl-toolbar-09b-attach-debugger.png)| Collega debugger | N/D | Disponibile anche tramite il comando **Debug** > **Collega a R interattivo**. |
 | ![Pulsante Imposta la directory di lavoro sul percorso del file di origine](media/repl-toolbar-10-set-working-directory-source.png)| Imposta la directory di lavoro sul percorso del file di origine | **CTRL**+**MAIUSC**+**E** | Imposta la directory di lavoro sul file di origine più recentemente caricato nella finestra interattiva tramite `source`. Vedere [Directory di lavoro](#working-directory). |
 | ![Pulsante Imposta la directory di lavoro sul percorso del progetto](media/repl-toolbar-11-set-working-directory-to-project.png) | Imposta la directory di lavoro sul percorso del progetto | **Ctrl**+**Maiusc**+**P** | Imposta la directory di lavoro sulla radice del progetto attualmente caricato in Visual Studio. Vedere [Directory di lavoro](#working-directory). |
 | (Campo testo) | Seleziona directory di lavoro | N/D | Campo di input diretto per la directory di lavoro. Vedere [Directory di lavoro](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Aree di lavoro e sessioni
 
-L'esecuzione di codice nella finestra interattiva crea un contesto nella sessione corrente. Il contesto è costituito da variabili globali, definizioni di funzione, carichi di libreria e così via. Questo contesto viene collettivamente denominato *area di lavoro*. È possibile salvare e caricare aree di lavoro in qualsiasi momento. 
+L'esecuzione di codice nella finestra interattiva crea un contesto nella sessione corrente. Il contesto è costituito da variabili globali, definizioni di funzione, carichi di libreria e così via. Questo contesto viene collettivamente denominato *area di lavoro*. È possibile salvare e caricare aree di lavoro in qualsiasi momento.
 
 La selezione del pulsante **Salva area di lavoro come** o l'uso del comando **R Tools** > **Sessione** > **Salva area di lavoro come** richiede un percorso e un nome file (l'estensione predefinita è *RData*).
 
