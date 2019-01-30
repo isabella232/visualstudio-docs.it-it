@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944626"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024097"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introduzione a R Tools per Visual Studio
 
-Dopo aver installato R Tools per Visual Studio (RTVS), da [How to install R Tools for Visual Studio](installing-r-tools-for-visual-studio.md) (Procedura: Installare R Tools per Visual Studio), è possibile farsi rapidamente un'idea dell'esperienza offerta da tali strumenti. 
+Dopo aver installato R Tools per Visual Studio (RTVS), da [How to install R Tools for Visual Studio](installing-r-tools-for-visual-studio.md) (Procedura: Installare R Tools per Visual Studio), è possibile farsi rapidamente un'idea dell'esperienza offerta da tali strumenti.
 
 ## <a name="create-an-r-project"></a>Creare un progetto R
 
@@ -93,7 +93,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
 
 > [!Tip]
 > È consigliabile imparare a eseguire le modifiche e premere **CTRL**+**INVIO** oppure selezionare tutto con **CTRL**+**A** e quindi premere **CTRL**+**INVIO** per eseguire il codice rapidamente. Questa procedura è molto più efficiente rispetto all'uso del mouse per le stesse operazioni.
-> 
+>
 > È anche possibile trascinare e rilasciare la finestra del tracciato fuori dalla cornice di Visual Studio e posizionarlo in qualsiasi punto dello schermo. È quindi possibile ridimensionare la finestra dei tracciati alle dimensioni volute e quindi salvarla in un'immagine o in un file con estensione pdf.
 
 1. Aggiungere altre righe di codice da includere in un secondo tracciato:

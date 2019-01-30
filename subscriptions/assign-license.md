@@ -2,19 +2,19 @@
 title: Assegnare licenze alle sottoscrizioni di Visual Studio | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970123"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -46,7 +46,7 @@ Di seguito viene descritto come assegnare una licenza di sottoscrizione di Visua
 
     Se si vuole aggiungere le proprie note di riferimento alla sottoscrizione, è possibile aggiungerle nella sezione **Aggiungi riferimento**.
    > [!div class="mx-imgBorder"]
-   > ![Aggiungere le proprie note di riferimento a ogni sottoscrizione](media/add-subscriber-reference-notes.png) 
+   > ![Aggiungere le proprie note di riferimento a ogni sottoscrizione](media/add-subscriber-reference-notes.png)
 
     Dopo aver selezionato le opzioni e aver immesso i dati per il sottoscrittore, scegliere **Aggiungi** nella parte inferiore di **Aggiungi sottoscrittore**.
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ Di seguito viene descritto come assegnare una licenza di sottoscrizione di Visua
 
 4. Dopo aver aggiunto il sottoscrittore, viene inviato automaticamente al nuovo sottoscrittore un messaggio di posta elettronica di assegnazione con altre istruzioni. È possibile inviare nuovamente il messaggio di posta elettronica di assegnazione in qualunque momento selezionando il sottoscrittore e facendo clic sul pulsante **Invia di nuovo** nel menu superiore.
    > [!div class="mx-imgBorder"]
-   > ![Inviare di nuovo il messaggio di attivazione a uno o più utenti in qualsiasi momento](media/resend-subscriber-activation-emails.png) 
+   > ![Inviare di nuovo il messaggio di attivazione a uno o più utenti in qualsiasi momento](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Assegnazioni in blocco
 
@@ -65,7 +65,7 @@ Di seguito viene descritto come assegnare una licenza di sottoscrizione di Visua
 2. L'assegnazione in blocco usa un modello di Microsoft Excel per caricare i sottoscrittori. Nella finestra di dialogo Upload Multiple Subscriber (Carica più sottoscrittori), fare clic su **Download** per scaricare il modello.
    > [!div class="mx-imgBorder"]
    > ![Scaricare il modello di Excel per caricare più sottoscrittori](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
 

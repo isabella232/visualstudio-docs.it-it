@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2b2f4602e56a89452635ebe0ad94dbc1664c2fb3
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 90fc485810c147ebb686382fca6bde4fd183d5ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53835344"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988857"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Profilatura tramite riga di comando di applicazioni Web ASP.NET
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sulle prestazioni per le applicazioni Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] tramite gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalla riga di comando.  

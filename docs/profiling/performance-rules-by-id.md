@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f73285ab62f59b382d3571ad739a81360c2e42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ccb684de1bf45f1f9afd13f1b2dd454b94f89fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935111"
 ---
 # <a name="performance-rules-by-id"></a>Regole di prestazioni in base all'ID
 
@@ -31,7 +31,7 @@ ms.locfileid: "53846808"
 | [DA0010: Funzione GetHashCode dispendiosa](../profiling/da0010-expensive-gethashcode.md) | Le chiamate al metodo GetHashCode del tipo rappresentano una percentuale significativa dei dati di profilatura o il metodo alloca memoria. |
 | [DA0011: Funzione CompareTo dispendiosa](../profiling/da0011-expensive-compareto.md) | Il metodo CompareTo del tipo è dispendioso o alloca memoria. |
 | [DA0012: Utilizzo elevato della reflection](../profiling/da0012-significant-amount-of-reflection.md) | Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Ove possibile, considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti. |
-| [DA0013: Utilizzo elevato di String.Split o String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md) | Le chiamate ai metodi System.String.Split o System.String.Substring rappresentano una percentuale significativa dei dati di profilatura. È consigliabile usare System.String.IndexOf o System.String.IndexOfAny se si sta verificando l'esistenza di una sottostringa in una stringa. |
+| [DA0013: Utilizzo elevato di String.Split/String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md) | Le chiamate ai metodi System.String.Split o System.String.Substring rappresentano una percentuale significativa dei dati di profilatura. È consigliabile usare System.String.IndexOf o System.String.IndexOfAny se si sta verificando l'esistenza di una sottostringa in una stringa. |
 | [DA0014: Frequenze molto elevate di paging di memoria attiva su disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) | I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata un'enorme frequenza di paging di memoria attiva da e su disco durante la profilatura. In genere, le frequenze di paging a questo livello avranno un impatto sulle prestazioni e sulla capacità di risposta dell'applicazione. È consigliabile ridurre le allocazioni di memoria rivedendo gli algoritmi. Potrebbe anche essere necessario valutare i requisiti di memoria dell'applicazione o eseguire di nuovo la profilatura in un computer con una maggiore quantità di memoria. |
 | [DA0017: Frequenze elevate di paging di memoria attiva su disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) | I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata una frequenza elevata di paging di memoria attiva da e su disco durante la profilatura. In genere, le frequenze di paging a questo livello avranno un impatto sulle prestazioni e sulla capacità di risposta dell'applicazione. È consigliabile ridurre le allocazioni di memoria rivedendo gli algoritmi. Potrebbe anche essere necessario valutare i requisiti di memoria dell'applicazione o eseguire di nuovo la profilatura in un computer con una maggiore quantità di memoria. |
 | [DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo](../profiling/da0018-32-bit-application-running-at-process-managed-memory-limits.md) | I dati di sistema raccolti durante l'esecuzione della profilatura indicano che gli heap della memoria di .NET Framework hanno quasi raggiunto le dimensioni massime consentite per gli heap gestiti in un processo a 32 bit. Il valore indicato è il valore più elevato osservato degli heap mentre il processo sottoposto a profilatura era attivo. Valutare la possibilità di ottimizzare l'uso delle risorse gestite da parte dell'applicazione. |

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891842"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980362"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.  

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992386"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -31,11 +31,11 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 | Standard | REPL predefinito, comunica direttamente con Python | Modifica standard (su più righe e così via). | Sì, tramite `$attach` | No |
 | Debug | REPL predefinito, comunica con il processo Python di cui è in corso il debug | Modifica standard | Solo debug | No |
 | IPython | REPL comunica con il back-end di IPython | Comandi IPython, vantaggi di Pylab | No | Sì, inline in REPL |
-| IPython senza Pylab | REPL comunica con il back-end di IPython | IPython standard | No | Sì, finestra separata | 
+| IPython senza Pylab | REPL comunica con il back-end di IPython | IPython standard | No | Sì, finestra separata |
 
 Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Usare la finestra REPL in modalità IPython](interactive-repl-ipython.md).
 
-Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione, passaggio 3: usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione, passaggio 3: usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 |   |   |
 |---|---|

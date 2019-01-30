@@ -2,22 +2,22 @@
 title: Esercitazione sull'uso di Python in Visual Studio, passaggio 2, scrivere ed eseguire codice
 titleSuffix: ''
 description: Passaggio 2 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato alla modifica del codice e all'esecuzione di un progetto.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935144"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231779"
 ---
 # <a name="step-2-write-and-run-code"></a>Passaggio 2: scrivere ed eseguire codice
 
@@ -46,7 +46,7 @@ Anche se **Esplora soluzioni** si trova nell'area di gestione dei file di proget
     ![Colorazione della sintassi ed evidenziazione degli errori di IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti** > **Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** ed **Editor di testo**. Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo. 
+    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti** > **Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** ed **Editor di testo**. Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo.
 
 1. Eseguire il codice scritto fino a questo punto premendo **CTRL**+**F5** o selezionando la voce di menu **Debug** > **Avvia senza eseguire debug**. Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
 

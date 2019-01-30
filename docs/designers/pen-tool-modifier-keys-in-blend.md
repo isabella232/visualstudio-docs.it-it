@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6608ede14ab35697462777fcd7b8f4a58e68358
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4239deccfb77bccc2a6f6637d5daf3176e1a3dab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948245"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Penna in Blend
 Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile usare per modificare un tracciato mentre viene creato con lo strumento **Penna** ![strumento Penna](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.

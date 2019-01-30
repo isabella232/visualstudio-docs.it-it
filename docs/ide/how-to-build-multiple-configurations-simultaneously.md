@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3e5fb1eea1d8bf821bf55b50ccfc1db488249b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2edd27174964f1fbddf452a3cb468915d9fc93f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010272"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Procedura: Compilare più configurazioni contemporaneamente
 

@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c2bad7353808577c7f0ce3b3f9068944db094ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891060"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031552"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -50,7 +50,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2.  Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Visual Studio Test Controller** e quindi scegliere **Arresta**.
 
-     -oppure-
+     oppure
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
@@ -96,7 +96,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2.  Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Agente di test di Visual Studio** e quindi scegliere **Arresta**.
 
-     -oppure-
+     oppure
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 

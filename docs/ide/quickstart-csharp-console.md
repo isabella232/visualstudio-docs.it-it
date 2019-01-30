@@ -9,17 +9,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c41aac277136de164ba7148e26fc9c0f422b2eef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853918"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014614"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app console C#
 
@@ -49,7 +49,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
 ## <a name="create-the-application"></a>Creare l'applicazione
 
-Dopo la selezione del modello di progetto C# e l'assegnazione di un nome al progetto, in Visual Studio viene creata una semplice applicazione "Hello World". 
+Dopo la selezione del modello di progetto C# e l'assegnazione di un nome al progetto, in Visual Studio viene creata una semplice applicazione "Hello World".
 
 A tale scopo viene chiamato il metodo <xref:System.Console.WriteLine%2A> per visualizzare la stringa letterale "Hello World!" nella finestra della console.
 

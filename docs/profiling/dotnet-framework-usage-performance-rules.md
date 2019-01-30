@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa14a9b5a1ce36acc1869cded5e955a78f0a9ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b92ae0ad9d60ac24047b136e67d7659cb680ecc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002457"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Regole di prestazioni per l'utilizzo di .NET Framework
 Le regole di prestazioni nella categoria relativa all'utilizzo di .NET Framework identificano metodi specifici ottimizzabili e modelli di utilizzo più generici, ad esempio Garbage Collection e conflitti di blocco, che possono essere analizzati per risolvere i problemi relativi alle prestazioni.  
@@ -27,7 +27,7 @@ Le regole di prestazioni nella categoria relativa all'utilizzo di .NET Framework
 |[DA0010: Funzione GetHashCode dispendiosa](../profiling/da0010-expensive-gethashcode.md)|Le chiamate al metodo `GetHashCode` del tipo rappresentano una percentuale significativa dei dati di profilatura o la memoria viene allocata dal metodo `GetHashCode`. Ridurre la complessità del metodo.|  
 |[DA0011: Funzione CompareTo dispendiosa](../profiling/da0011-expensive-compareto.md)|Il metodo `CompareTo` del tipo è dispendioso o la memoria viene allocata dal metodo. Ridurre la complessità del metodo `CompareTo`.|  
 |[DA0012: Utilizzo elevato della reflection](../profiling/da0012-significant-amount-of-reflection.md)|Le chiamate a metodi <xref:System.Reflection?displayProperty=fullName> come <xref:System.Reflection.IReflect.InvokeMember%2A> e <xref:System.Reflection.IReflect.GetMember%2A> o ai metodi del tipo, ad esempio <xref:System.Type.InvokeMember%2A>, rappresentano una percentuale significativa dei dati di profilatura. Ove possibile considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti.|  
-|[DA0013: Utilizzo elevato di String.Split o String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md)|Le chiamate ai metodi <xref:System.String.Split%2A?displayProperty=fullName> o <xref:System.String.Substring%2A> rappresentano una parte significativa dei dati di profilatura. È consigliabile usare <xref:System.String.IndexOf%2A> o <xref:System.String.IndexOfAny%2A> se si sta testando l'esistenza di una sottostringa in una stringa.|  
+|[DA0013: Utilizzo elevato di String.Split/String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md)|Le chiamate ai metodi <xref:System.String.Split%2A?displayProperty=fullName> o <xref:System.String.Substring%2A> rappresentano una parte significativa dei dati di profilatura. È consigliabile usare <xref:System.String.IndexOf%2A> o <xref:System.String.IndexOfAny%2A> se si sta testando l'esistenza di una sottostringa in una stringa.|  
 |[DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo](../profiling/da0018-32-bit-application-running-at-process-managed-memory-limits.md)|I dati di sistema raccolti durante l'esecuzione della profilatura indicano che gli heap della memoria di .NET Framework hanno quasi raggiunto le dimensioni massime che gli heap gestiti possono avere in un processo a 32 bit. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della memoria di .NET e ottimizzare l'utilizzo delle risorse gestite dall'applicazione.|  
 |[DA0021: Frequenza elevata di Garbage Collection di generazione 1](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|Viene recuperato un numero relativamente elevato di oggetti di memoria .NET in Garbage Collection di generazione 1. Se troppi oggetti di breve durata sono presenti in Garbage Collection di generazione 0, il costo di gestione della memoria può diventare eccessivo.|  
 |[DA0022: Frequenza elevata di Garbage Collection di generazione 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|Viene recuperato un numero elevato di oggetti di memoria .NET in Garbage Collection di generazione 2. Se Garbage Collection di generazione 1 contiene troppi oggetti di breve durata, il costo di gestione della memoria può diventare eccessivo. Questa regola viene attivata quando la frequenza di conflitti di blocco supera il valore di soglia superiore della regola DA0005.|  

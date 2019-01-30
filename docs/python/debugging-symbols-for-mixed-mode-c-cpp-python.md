@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010155"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installare i simboli di debug per interpreti Python
 
@@ -51,7 +51,7 @@ Se i simboli sono stati scaricati separatamente, eseguire i passaggi riportati d
 
 1. Selezionare il menu **Strumenti** > **Opzioni** e passare a **Debug** > **Simboli**.
 
-1. Selezionare il pulsante **Aggiungi** sulla barra degli strumenti (evidenziata nell'immagine), immettere la cartella in cui sono stati espansi i simboli scaricati, ovvero dove si trova *python.pdb*, ad esempio *c:\python34\Symbols* nell'immagine, e selezionare **OK**. 
+1. Selezionare il pulsante **Aggiungi** sulla barra degli strumenti (evidenziata nell'immagine), immettere la cartella in cui sono stati espansi i simboli scaricati, ovvero dove si trova *python.pdb*, ad esempio *c:\python34\Symbols* nell'immagine, e selezionare **OK**.
 
     ![Opzioni per i simboli del debugger in modalità mista](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Se i simboli sono stati scaricati separatamente, eseguire i passaggi riportati d
 
 ## <a name="official-distributions"></a>Distribuzioni ufficiali
 
-| Versione di Python | Download | 
-| --- | --- | 
-| 3.5 e versioni successive | Installare i simboli usando il programma di installazione di Python. | 
+| Versione di Python | Download |
+| --- | --- |
+| 3.5 e versioni successive | Installare i simboli usando il programma di installazione di Python. |
 | 3.4.4 | [32 bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

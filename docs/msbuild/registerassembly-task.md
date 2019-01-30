@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4242ed9b1e18879c724b996baa393e0371e115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f8e6c880d6213c2b64d46011dc890a0c2de44f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039358"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly (attività)
 Legge i metadati all'interno dell'assembly specificato e aggiunge le voci necessarie al Registro di sistema, consentendo ai client COM di creare classi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in modo trasparente. Il comportamento di questa attività è simile, ma non identico, a quello di [Regasm.exe (strumento di registrazione dell'assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

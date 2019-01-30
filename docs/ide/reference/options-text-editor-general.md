@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417798"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989744"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
 
@@ -67,7 +67,7 @@ Se selezionata, le convenzioni di scrittura del codice specificate del progetto 
 
 Se selezionata, è possibile premere **CTRL** e passare il mouse su un elemento mentre si fa clic del mouse. In questo modo si passa alla definizione dell'elemento selezionato. È anche possibile scegliere **ALT** oppure **CTRL** + **ALT** nell'elenco a discesa **Usa tasto di modifica**.
 
-Selezionare la casella di controllo **Apri definizione in visualizzazione rapida** per visualizzare la definizione dell'elemento selezionato in una finestra senza spostarsi dalla posizione corrente nell'editor del codice. 
+Selezionare la casella di controllo **Apri definizione in visualizzazione rapida** per visualizzare la definizione dell'elemento selezionato in una finestra senza spostarsi dalla posizione corrente nell'editor del codice.
 
 ## <a name="display"></a>Visualizzazione
 
