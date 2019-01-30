@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66dc3cfcdd8cf815ba8f7744b36e0c04a750d49a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990576"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -65,14 +65,14 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto)** . La finestra visualizzata riporta le proprietà del progetto:
 
 
-| Scheda | Proprietà | Description | 
-| --- | --- | --- | 
-| Esegui | File di avvio | Nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug** > **Avvia debug** oppure **Debug** > **Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. | 
-| | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. | 
-| | Percorso progetto remoto | Percorso di un'area di lavoro remota. | 
-| | Trasferisci file durante l'esecuzione | Indica se i file di progetto, soggetti al filtro in **File da trasferire**, devono essere copiati in un'area di lavoro remota a ogni esecuzione. | 
-| | File da trasferire | Nomi di file e caratteri jolly che indicano i file specifici da copiare un'area di lavoro remota se l'opzione **Trasferisci file durante l'esecuzione** è selezionata. | 
-| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere un file di impostazioni al progetto usando il comando di menu **File** > **Aggiungi nuovo elemento**. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. | 
+| Scheda | Proprietà | Description |
+| --- | --- | --- |
+| Esegui | File di avvio | Nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug** > **Avvia debug** oppure **Debug** > **Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. |
+| | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. |
+| | Percorso progetto remoto | Percorso di un'area di lavoro remota. |
+| | Trasferisci file durante l'esecuzione | Indica se i file di progetto, soggetti al filtro in **File da trasferire**, devono essere copiati in un'area di lavoro remota a ogni esecuzione. |
+| | File da trasferire | Nomi di file e caratteri jolly che indicano i file specifici da copiare un'area di lavoro remota se l'opzione **Trasferisci file durante l'esecuzione** è selezionata. |
+| Impostazioni | (File Settings.R) | Le impostazioni dei progetti R vengono ereditate dai file *Settings.R* o **.Settings.R* che si trovano all'interno del progetto. Se non esistono file di impostazioni, è possibile aggiungere variabili, salvare la pagina. Un file *Settings.R* predefinito verrà automaticamente creato. È anche possibile aggiungere un file di impostazioni al progetto usando il comando di menu **File** > **Aggiungi nuovo elemento**. <br/> Le impostazioni vengono memorizzate come codice R e il file può essere originato prima di eseguire altri moduli, pre-popolando in questo modo l'ambiente con le impostazioni predefinite. |
 
 ## <a name="r-specific-project-commands"></a>Comandi di progetto specifici di R
 
@@ -84,7 +84,7 @@ I progetti di Visual Studio supportano diversi comandi generali sia tramite il m
 | Apri cartella superiore | Apre Esplora risorse in corrispondenza del percorso del file selezionato. |
 | Aggiungi script R | Crea e apre un nuovo file *.R* con nome predefinito. È anche possibile usare il comando **Aggiungi** > **Nuovo elemento** per creare file *.R* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates). |
 | Aggiungi R Markdown | Crea e apre un nuovo documento *.rmd* con nome predefinito. È anche possibile usare il comando **Aggiungi** > **Nuovo elemento** per creare file con estensione *rmd* e diversi altri tipi di file. Vedere [Modelli di elemento specifici di R](#r-specific-item-templates).  |
-| Pubblica stored procedure | Avvia il processo di pubblicazione di eventuali stored procedure presenti all'interno di script R. Vedere [Usare stored procedure di SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Pubblica stored procedure | Avvia il processo di pubblicazione di eventuali stored procedure presenti all'interno di script R. Vedere [Usare stored procedure di SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Modelli di elemento specifici di R
 
@@ -97,7 +97,7 @@ RTVS include diversi modelli per tipi di file specifici. È possibile accedere a
 | --- | --- |
 | Script R | Un file di testo che contiene gli stessi comandi che è possibile immettere nella riga di comando R. |
 | R Markdown | File contenente un documento [R Markdown](rmarkdown-with-r-in-visual-studio.md). |
-| Impostazioni R | File che contiene le impostazioni applicazione R. | 
+| Impostazioni R | File che contiene le impostazioni applicazione R. |
 | Documentazione di R | File di documentazione di R generico che contiene solo i campi nome, alias e titolo. |
 | Documentazione di R (funzione) | File di documentazione di R contenente molti campi con commenti di descrizione di una funzione. |
 | Documentazione di R (set di dati) | File di documentazione di R contenente molti campi con commenti di descrizione di un set di dati. |
