@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4c9eeffe2ac0a3b08d8379a50bb88e3c52cbfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 332202d5062b081227619f4007e011f611b6192e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036940"
 ---
 # <a name="average-cpu-utilization"></a>Utilizzo CPU medio
 Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo profilato per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.  
