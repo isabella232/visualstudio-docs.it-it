@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4303336fe12f817bdb2843d03f9e936a5b1736c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964734"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069147"
 ---
 # <a name="current-tab"></a>Scheda Corrente
 Facendo clic sulla scheda **Corrente**, è possibile visualizzare uno stack di chiamate (se disponibile) che è più vicino al punto di selezione corrente nella sequenza temporale se è selezionato un segmento di thread della CPU.  In questo caso, il punto di selezione è rappresentato da una freccia nera (o punto di inserimento) sopra la sequenza temporale. Quando viene selezionato un segmento di blocco, il punto di inserimento non viene visualizzato perché non è in esecuzione. Tuttavia, il segmento è ancora evidenziato e viene visualizzato uno stack di chiamate.  

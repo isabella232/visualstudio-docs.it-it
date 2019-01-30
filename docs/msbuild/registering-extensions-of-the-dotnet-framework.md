@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48322adffff68d1eecb0d44da7e8f78d39d82203
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd05cbfb1cd6bf158a0e491d87903fd43fb0bbc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986069"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043297"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrare estensioni di .NET Framework
 È possibile sviluppare un assembly per estendere una versione specifica di .NET Framework. Per poter visualizzare l'assembly nella finestra di dialogo **Aggiungi riferimenti**, è necessario aggiungere la cartella che lo contiene al Registro di sistema.  

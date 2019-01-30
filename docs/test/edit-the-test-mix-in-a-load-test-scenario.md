@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8a54c20d90edacbd29169320bc746e5b9cb724f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f23eed6c7b5c9063b6590e121d1b52627a685a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905319"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945086"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 

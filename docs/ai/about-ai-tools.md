@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for AI
+titleSuffix: ''
 description: Panoramica di Visual Studio Tools for AI
 keywords: ai, visual studio
 author: lisawong19
@@ -11,12 +12,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800930"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -46,5 +47,5 @@ Questa estensione rende più facile eseguire il training di modelli nel computer
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 Questa estensione supporta attualmente i sistemi operativi Windows a 64 bit
 
-# <a name="support"></a>Supporto
+## <a name="support"></a>Supporto
 Il supporto per questa estensione viene fornito tramite lo [strumento di gestione dei problemi Microsoft in GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). È possibile inviare una segnalazione di bug, un suggerimento di funzionalità o partecipare a discussioni.

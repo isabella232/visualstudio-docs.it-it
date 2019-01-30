@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899756"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043713"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Sviluppare il codice JavaScript e TypeScript in Visual Studio senza soluzioni o progetti
 
@@ -32,9 +32,9 @@ Per iniziare, selezionare **Apri cartella** dalla pagina iniziale che appare qua
 
 ## <a name="npm-integration"></a>Integrazione di npm
 
-Se la cartella aperta contiene un file *package.json*, è possibile fare clic con il pulsante destro del mouse su *package.json* per visualizzare un menu di scelta rapida specifico per npm. 
+Se la cartella aperta contiene un file *package.json*, è possibile fare clic con il pulsante destro del mouse su *package.json* per visualizzare un menu di scelta rapida specifico per npm.
 
-![Menu npm in Esplora soluzioni](../javascript/media/solution-explorer-npm-ctx.png) 
+![Menu npm in Esplora soluzioni](../javascript/media/solution-explorer-npm-ctx.png)
 
 Nel menu di scelta rapida è possibile gestire i pacchetti installati da npm nello stesso modo in cui si [gestiscono i pacchetti npm](npm-package-management.md) quando si usa un file di progetto.
 
@@ -43,7 +43,8 @@ Inoltre, il menu consente anche di eseguire gli script definiti nell'elemento `s
 ## <a name="build-and-debug"></a>Compilazione e debug
 
 ### <a name="packagejson"></a>package.json
-Se il file *package.json* nella cartella specifica un elemento `main`, il comando **Debug** sarà disponibile nel menu di scelta rapida per *package.json*. Facendo clic sul comando si avvia *node.exe* con lo script specificato come argomento.
+Se il file *package.json* nella cartella specifica un elemento `main`, il comando **Debug** sarà disponibile nel menu di scelta rapida per *package.json*.
+Facendo clic sul comando si avvia *node.exe* con lo script specificato come argomento.
 
 ### <a name="javascript-files"></a>File JavaScript
 Per eseguire il debug dei file JavaScript, fare clic con il pulsante destro del mouse su un file e selezionare **Debug** dal menu di scelta rapida. In questo modo viene avviato *node.exe* con quel file JavaScript come argomento.

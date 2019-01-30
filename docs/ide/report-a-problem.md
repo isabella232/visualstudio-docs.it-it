@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01686d3e0bbc034095ae1b4ec54e5995fc6462f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958732"
 ---
 # <a name="overview-report-a-problem"></a>Panoramica: Segnalare un problema
 
@@ -63,7 +63,7 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 
 - - -
 
-![Stato Chiuso - Risolto per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Stato Chiuso - Risolto per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Chiuso - Risolto** indica che è stata rilasciata una correzione per il problema. Il problema ora è anche contrassegnato con un tag "corretto in:" che specifica la versione di rilascio.
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156a0614ad47839187056e4e0a24b5ee2f7ae2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3777be5701e9876352db41a5454d5e12668f6f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932117"
 ---
 # <a name="msbuild-response-files"></a>File di risposta MSBuild
 I file di risposta (con estensione *rsp*) sono file di testo che contengono opzioni della riga di comando di *MSBuild.exe*. Ogni opzione può essere su una riga separata oppure tutte le opzioni possono essere sulla stessa riga. Le righe di commento sono precedute da un simbolo **#**. L'opzione **@** viene usata per passare un altro file di risposta a *MSBuild.exe*.  

@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b58f22983d11e44a863c834188cc938282c2626
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9a3158708215303be4dc0bd66202a165cf3a5d4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955713"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opzioni, Editor di testo, F#, Avanzate
 
@@ -23,12 +23,12 @@ Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni de
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
-Selezionare questa casella di controllo per visualizzare linee verticali punteggiate tra parentesi graffe (**{}**) nel codice. In questo modo è possibile identificare facilmente i singoli blocchi di codice.
-  
+Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai blocchi di codice strutturato, che consentono di identificare facilmente i singoli blocchi di codice.
+
 ## <a name="outlining"></a>struttura
 
 Selezionare questa casella di controllo per delineare automaticamente la struttura del file di codice, creando blocchi comprimibili del codice.
-  
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

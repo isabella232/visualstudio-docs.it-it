@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56493da196a0d53ead738b2eff6d10a2f9328c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929325"
 ---
 # <a name="static-helper-classes"></a>Classi helper statiche
 
@@ -131,7 +131,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +149,8 @@ In genere IntelliTest prova a raggiungere tutti i percorsi di esecuzione del cod
 
 **Esempio**
 
-Questo esempio visualizza l'implementazione del metodo **PexAssume.Arrays.ElementsAreNotNull**. Nel metodo si ignorano i vincoli relativi alla lunghezza del valore della matrice, per evitare che IntelliTest tenti di generare diverse dimensioni di matrice. I vincoli vengono ignorati solo in questo contesto. Se il codice testato funziona in modo diverso per lunghezze della matrice diverse, IntelliTest non può generare matrici con dimensioni diverse dai vincoli del codice testato.
+Questo esempio visualizza l'implementazione del metodo **PexAssume.Arrays.ElementsAreNotNull**.
+Nel metodo si ignorano i vincoli relativi alla lunghezza del valore della matrice, per evitare che IntelliTest tenti di generare diverse dimensioni di matrice. I vincoli vengono ignorati solo in questo contesto. Se il codice testato funziona in modo diverso per lunghezze della matrice diverse, IntelliTest non può generare matrici con dimensioni diverse dai vincoli del codice testato.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

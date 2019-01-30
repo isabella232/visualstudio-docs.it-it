@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959814"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
 Questo documento descrive le pagine, o raccolte di proprietà, associate alla categoria **Ambiente**, `DTE.Properties("Environment", <Property Page>)`, della finestra di dialogo **Opzioni**. Il titolo di ogni sottosezione rappresenta la chiamata usata per accedere alla raccolta Proprietà e la tabella di ogni sottosezione elenca le proprietà della raccolta.
@@ -49,7 +49,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="documents"></a>Documenti
  `DTE.Properties("Environment", "Documents")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Determina se la finestra del documento corrente verrà riutilizzata per l'apertura di un nuovo file se il documento corrente viene salvato. `false` indica di aprire sempre una nuova finestra per ogni documento aperto.|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Determina se l'ambiente ricarica automaticamente i file aperti nell'IDE quando il sistema operativo notifica all'IDE che i file sono stati modificati su disco.|
@@ -101,14 +101,14 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="keyboard"></a>Tastiera
  `DTE.Properties("Environment", "Keyboard")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |Scheme|Get/Set (String)|Restituisce una stringa contenente uno schema predefinito, una stringa contenente il percorso completo del file con estensione vsk caricato o "(Predefinito)" se non viene caricato alcun file con estensione vsk.|
 
 ## <a name="projects-and-solution"></a>Progetti e soluzioni
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Determina se l'IDE salva tutto prima dell'anteprima o dell'esecuzione di un progetto compilato.|
 |ProjectsLocation|Get/Set (String)|Determina la directory predefinita in cui i nuovi progetti vengono salvati dalla finestra di dialogo **Aggiungi progetto**.|
@@ -141,7 +141,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|Specifica se viene visualizzata una finestra di conferma quando si eliminano attività dall'**Elenco attività**.|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Specifica se viene visualizzato un avviso all'aggiunta di un'attività definita dall'utente che non verrà visualizzata.|
@@ -151,7 +151,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="web-browser"></a>Web browser
  `DTE.Properties("Environment", "WebBrowser")`
 
-|Nome degli elementi delle proprietà|Value|Description|
+|Nome degli elementi delle proprietà|Valore|Description|
 | - |-----------|-----------------|
 |HomePage|Get/Set (String)|Rappresenta l'URL della home page.|
 |SearchPage|Get/Set (String)|Rappresenta l'URL della pagina di ricerca.|

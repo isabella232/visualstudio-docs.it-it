@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be37dc46b603d8193e45b8aa11d9b0cd78d9891
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f43a01902801e6d3af9b6611ac2181acbcf398f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841067"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070487"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 È possibile usare lo strumento VSPerfMon per raccogliere dati sulle prestazioni per un'applicazione. In genere, questo strumento viene avviato da *VSPerfCmd.exe*. VSPerfMon visualizza informazioni aggiuntive sul collegamento o lo scollegamento di processi che non sono disponibili tramite lo strumento VSPerfCmd. Per visualizzare queste informazioni, avviare VSPerfMon in una finestra separata. Per richiamare VSPerfMon, usare la sintassi seguente:  

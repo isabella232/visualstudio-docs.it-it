@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1590bbbe53a164ff9e59b887f7161b45a7d62361
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 3e3936af89d7f59a47f01a68d17a672e67a5752e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988961"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
 
@@ -93,7 +93,7 @@ In questa esercitazione si eseguono le attività seguenti:
         public int Y { get; private set; }
         public int Height { get; set; }
         public int Width { get; set; }
-   
+
         // Virtual method
         public virtual void Draw()
         {
@@ -192,7 +192,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
     Quando viene impostato il punto di interruzione viene visualizzato un cerchio rosso.
 
-    I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. 
+    I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
 2. Premere **F5** o il pulsante **Avvia debug**![Avvia debug](../../debugger/media/dbg-tour-start-debugging.png "Avvia debug"). Viene avviata l'app e viene eseguito il debugger fino alla riga di codice in cui è impostato il punto di interruzione.
 

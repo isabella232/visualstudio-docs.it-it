@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959723"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
@@ -47,7 +47,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Dopo aver ordinato:
 
    ```csharp
@@ -58,7 +58,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Separa gruppi di direttive using
 
    Se selezionata, il comando **Rimuovi e ordina using** nel menu di scelta rapida separa le direttive `using` inserendo una riga vuota tra gruppi di direttive che hanno lo stesso spazio dei nomi radice.
@@ -73,28 +73,28 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Dopo aver ordinato:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Suggerisci le direttive using per i tipi in assembly di riferimento 
-- Suggerisci le direttive using per i tipi in pacchetti NuGet 
+
+- Suggerisci le direttive using per i tipi in assembly di riferimento
+- Suggerisci le direttive using per i tipi in pacchetti NuGet
 
    Se queste opzioni sono selezionate, è disponibile un'[azione rapida](../quick-actions.md) per installare un pacchetto NuGet e aggiungere una direttiva `using` per i tipi senza riferimenti.
 
    ![Azione rapida per installare il pacchetto NuGet in Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Evidenziazione
 
 - Evidenzia riferimenti a simbolo sotto il cursore

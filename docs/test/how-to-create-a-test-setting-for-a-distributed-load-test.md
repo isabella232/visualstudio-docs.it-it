@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4e145834210ea3c9aa2addd0673befe497592cda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37910ab925265a70d8d3b7e96f1b0f07dc698745
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932636"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: Creare un'impostazione di test per un test di carico distribuito
 

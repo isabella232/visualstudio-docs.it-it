@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a5da139d9d4e1ddc797f48f55e120906f03109b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861160"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019723"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare le colonne delle visualizzazioni dei report
 Gli strumenti per le prestazioni in Visual Studio Team System Development Edition sono completamente integrati nell'ambiente di sviluppo integrato (IDE) per fornire un'esperienza utente. L'elenco seguente indica le visualizzazioni che possono essere personalizzate aggiungendo, rimuovendo e ridisponendo le colonne:  

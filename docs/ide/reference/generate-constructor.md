@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8f72638db2403b67a52ed5bc4ff005189526d7e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938354"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -27,7 +27,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si introduce un nuovo costruttore e si vuole dichiararlo in modo corretto, automaticamente, oppure si vuole modificare un costruttore esistente.
 
-**Perché:** si potrebbe dichiarare il costruttore prima di usarlo, tuttavia questa funzionalità consente di generarlo automaticamente, con i parametri appropriati. Inoltre, la modifica di un costruttore esistente richiede l'aggiornamento di tutti i siti di chiamata, a meno che non si usi questa funzionalità per aggiornarli automaticamente.
+**Perché?:** si potrebbe dichiarare il costruttore prima di usarlo, tuttavia questa funzionalità consente di generarlo automaticamente, con i parametri appropriati. Inoltre, la modifica di un costruttore esistente richiede l'aggiornamento di tutti i siti di chiamata, a meno che non si usi questa funzionalità per aggiornarli automaticamente.
 
 **Come:** esistono diversi modi per generare un costruttore:
 

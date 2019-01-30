@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948202"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gestire i pacchetti npm in Visual Studio
 
@@ -36,7 +36,7 @@ Il modo più semplice di installare i pacchetti npm è usare la finestra di inst
 
 ![Installare nuovi pacchetti npm da esplora soluzioni](../javascript/media/solution-explorer-install-package.png)
 
-In questa finestra è possibile eseguire la ricerca di un pacchetto, specificare le opzioni ed eseguire l'installazione. 
+In questa finestra è possibile eseguire la ricerca di un pacchetto, specificare le opzioni ed eseguire l'installazione.
 
 ![Ricerca del pacchetto npm](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ Fare clic con il pulsante destro del mouse su un nodo del pacchetto o sul nodo *
 Nella finestra è possibile usare comandi simili al seguente per installare un pacchetto:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Per impostazione predefinita, npm viene eseguito nella home directory del progetto. Se sono presenti più progetti nella soluzione, specificare il nome o il percorso del progetto tra parentesi quadre. 
+ > Per impostazione predefinita, npm viene eseguito nella home directory del progetto. Se sono presenti più progetti nella soluzione, specificare il nome o il percorso del progetto tra parentesi quadre.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Se il progetto non contiene un file package.json, usare `.npm init -y` per creare un nuovo file package.json con le voci predefinite. 
+ > Se il progetto non contiene un file package.json, usare `.npm init -y` per creare un nuovo file package.json con le voci predefinite.

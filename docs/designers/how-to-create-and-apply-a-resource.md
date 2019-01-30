@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a14f2d38ddbb5f24ef3906ea00f7569629b1f64
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 32b39cbdd98aa58c369fed3dee7347dc66383b2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54268513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042010"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Avvio rapido: Applicazione di stili ai controlli](http://go.microsoft.com/fwlink/?LinkID=248239) e [Avvio rapido: Modelli di controllo](http://go.microsoft.com/fwlink/?LinkID=247982).

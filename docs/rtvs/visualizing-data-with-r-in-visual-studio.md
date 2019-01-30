@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc568c6e2e28d27516ac5a92d7ccd01d3704bb7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009934"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Creare tracciati visivi dei dati con R
 
@@ -38,7 +38,7 @@ Le finestre dei tracciati sono indipendenti dai progetti di Visual Studio e rima
 
 La generazione di un tracciato usa la finestra dei tracciati "attiva", salvando gli eventuali tracciati precedenti nella cronologia dei tracciati (vedere [Cronologia dei tracciati](#plot-history)). Ad esempio, immettere `plot(100:1)` e il primo tracciato viene sostituito con una riga verso il basso.
 
-Come tutte le altre finestre di Visual Studio, la finestra dei tracciati supporta i layout personalizzati (vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Le finestre dei tracciati possono essere ancorate in diverse posizioni all'interno della cornice di Visual Studio, ridimensionate all'interno di essa o interamente estratte per il ridimensionamento separato. 
+Come tutte le altre finestre di Visual Studio, la finestra dei tracciati supporta i layout personalizzati (vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Le finestre dei tracciati possono essere ancorate in diverse posizioni all'interno della cornice di Visual Studio, ridimensionate all'interno di essa o interamente estratte per il ridimensionamento separato.
 
 In tutti i casi il ridimensionamento di una finestra dei tracciati esegue nuovamente il rendering del tracciato per offrire la migliore qualità di immagine. In genere è consigliabile ridimensionare un tracciato prima di esportarlo in un file o negli Appunti con i comandi descritti nella sezione successiva.
 
@@ -46,7 +46,7 @@ In tutti i casi il ridimensionamento di una finestra dei tracciati esegue nuovam
 
 La barra degli strumenti della finestra dei tracciati contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu **R Tools** > **Tracciati**.
 
-| Button | Comando | Description | 
+| Button | Comando | Description |
 | --- | --- | --- |
 | ![Pulsante Nuova finestra dei tracciati](media/plotting-toolbar-01-new-plot-window.png) | Nuova finestra dei tracciati | Crea una finestra dei tracciati separata con la propria cronologia. Vedere [Più finestre dei tracciati](#multiple-plot-windows). |
 | ![Pulsante di attivazione della finestra dei tracciati](media/plotting-toolbar-02-activate-plot-window.png) | Attiva finestra dei tracciati | Imposta la finestra dei tracciati corrente come finestra attiva, in modo che i comandi `plot` successivi vengano sottoposti a rendering per quella finestra. Vedere [Più finestre dei tracciati](#multiple-plot-windows). Vedere [Più finestre dei tracciati](#multiple-plot-windows). |
@@ -54,8 +54,8 @@ La barra degli strumenti della finestra dei tracciati contiene i comandi applica
 | ![Pulsanti della cronologia dei tracciati](media/plotting-toolbar-04-plot-history-arrows.png) | Tracciato precedente/successivo |  Passa al tracciato precedente o successivo nella cronologia. È anche possibile passare alla cronologia con CTRL+ ALT+F11 (Precedente) e CTRL+ALT F12 (Successivo). Vedere [Cronologia dei tracciati](#plot-history). |
 | ![Pulsante Salva come immagine](media/plotting-toolbar-05-save-as-image.png)| Salva come immagine | Richiede un nome di file e salva il tracciato corrente (il contenuto della finestra nelle dimensioni della finestra) in un file di immagine. I formati disponibili sono `.png`, `.jpg`, `.bmp` e `.tif`. |
 | ![Pulsante Salva come PDF](media/plotting-toolbar-06-save-as-pdf.png)| Salva come PDF | Salva il tracciato corrente in un file PDF, usando le dimensioni della finestra corrente. Il tracciato verrà nuovamente sottoposto a rendering in caso di ridimensionamento del PDF. |
-| ![Pulsante Copia come bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copia come bitmap | Copia il tracciato negli Appunti come bitmap raster, usando le dimensioni della finestra corrente. | 
-| ![Pulsante Copia come metafile](media/plotting-toolbar-08-copy-as-metafile.png)| Copia come metafile | Copia il tracciato negli Appunti come un [metafile di Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Pulsante Copia come bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copia come bitmap | Copia il tracciato negli Appunti come bitmap raster, usando le dimensioni della finestra corrente. |
+| ![Pulsante Copia come metafile](media/plotting-toolbar-08-copy-as-metafile.png)| Copia come metafile | Copia il tracciato negli Appunti come un [metafile di Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
 | ![Pulsante Rimuovi tracciato](media/plotting-toolbar-09-remove-plot.png)| Rimuovi tracciato | Rimuove il tracciato corrente dalla cronologia. |
 | ![Pulsante Cancella tutti i tracciati](media/plotting-toolbar-10-clear-all-plots.png) | Cancella tutti i tracciati | Rimuove tutti i tracciati dalla cronologia (richiede una conferma). |
 
@@ -84,7 +84,7 @@ La durata della cronologia dei tracciati in tutte le finestre è associata alla 
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Modificare a livello di programmazione le finestre dei tracciati
 
-È possibile modificare a livello di programmazione le finestre dei tracciati dal codice R, usando i numeri dei dispositivi per identificare specifiche finestre dei tracciati. 
+È possibile modificare a livello di programmazione le finestre dei tracciati dal codice R, usando i numeri dei dispositivi per identificare specifiche finestre dei tracciati.
 
 - `dev.list()`: elenca tutti i dispositivi di grafica all'interno della sessione di R corrente.
 - `dev.new()`: crea un nuovo dispositivo di grafica (una nuova finestra dei tracciati).

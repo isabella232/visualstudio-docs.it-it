@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935463"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069915"
 ---
 # <a name="exploration-bounds"></a>Limiti di esplorazione
 
@@ -106,7 +106,7 @@ Ad esempio, ogni percorso nel codice seguente usa n+1 condizioni:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ Numero massimo di percorsi univoci che IntelliTest prenderà in considerazione d
 
 La motivazione alla base di questo limite di esplorazione è che qualsiasi codice che contiene cicli o ricorsioni potrebbe avere un numero infinito di percorsi di esecuzione, quindi IntelliTest deve essere limitato durante la [generazione di input](input-generation.md).
 
-Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel modo seguente: 
+Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel modo seguente:
 
 * IntelliTest chiamerà un metodo di test con parametri al massimo **MaxRuns** volte con input di test diversi.
-* Se il codice eseguito è deterministico, IntelliTest userà un percorso di esecuzione diverso ogni volta. Tuttavia, in alcune condizioni il codice eseguito può seguire un percorso di esecuzione già usato in precedenza, con input diversi. 
+* Se il codice eseguito è deterministico, IntelliTest userà un percorso di esecuzione diverso ogni volta. Tuttavia, in alcune condizioni il codice eseguito può seguire un percorso di esecuzione già usato in precedenza, con input diversi.
 * IntelliTest conta i percorsi di esecuzione univoca che trova: questo numero è limitato dall'opzione **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>

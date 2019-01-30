@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7dd85cc1a4fb00acfc6d6f7afde05917552f6c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7590cec386fbb455284b59d1d37f32b2eaa56546
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854334"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012170"
 ---
 # <a name="configure-performance-sessions"></a>Configurare le sessioni di prestazioni
 Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile raccogliere un'ampia gamma di dati sulle prestazioni per un numero elevato di tipi di applicazioni. In questa sezione viene illustrato come usare le proprietà della Creazione guidata sessione di prestazioni della sessione di prestazioni e del file binario di destinazione per configurare gli strumenti di profilatura per raccogliere i dati di interesse. Le proprietà di configurazione degli strumenti per la profilatura possono essere usate anche per controllare quanti dati vengono raccolti in un'esecuzione di profilatura. Per altre informazioni, vedere [Controllare la raccolta dati](../profiling/controlling-data-collection.md).  

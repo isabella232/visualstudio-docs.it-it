@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e6dc6e35ca6388926030412dbbb5380e054b1e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939885"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930408"
 ---
 # <a name="performance-report-view-filter"></a>Filtro delle visualizzazioni dei rapporti di prestazioni
 La finestra del **filtro delle visualizzazioni dei rapporti del profiler** si trova nella parte superiore della finestra **Report prestazioni**. Se non è visibile, fare clic sul pulsante **Mostra filtro**.  
@@ -28,7 +28,7 @@ La finestra del **filtro delle visualizzazioni dei rapporti del profiler** si tr
 |E/O|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|  
 |Campo|Selezionare il campo da usare nella clausola filtro dall'elenco dei campi dati disponibili nel file di rapporto corrente.|  
 |Operatore|Scegliere l'operatore che specifica la relazione da impostare tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|  
-|Valore|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|  
+|Value|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|  
   
  È possibile aggiungere clausole filtro fino a ottenere risultati ottimali. Fare clic su **Esegui filtro** per applicare il filtro al file di dati.  
   

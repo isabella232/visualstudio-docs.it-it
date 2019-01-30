@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b97ad15c6064f1c27eba252173f9afdfc33eda8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838333"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009687"
 ---
 # <a name="csc-task"></a>Csc (attività)
 Esegue il wrapping di *csc.exe* e produce file eseguibili (*EXE*), librerie a collegamento dinamico (file *DLL*) o moduli di codice (file *NETMODULE*). Per altre informazioni su *csc.exe*, vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).  

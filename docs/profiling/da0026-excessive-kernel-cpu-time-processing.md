@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20abd86d12db44dac1a2b3a7772e90dee1b2721f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a22f797f8099da7b33afb0e0b6f05bd932f67c1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855455"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971964"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Tempo di elaborazione CPU kernel eccessivo
 
@@ -38,4 +38,4 @@ ms.locfileid: "53855455"
  La percentuale relativamente elevata del tempo impiegato dall'applicazione in modalità kernel può giustificare l'esecuzione di ulteriori analisi. Un'applicazione in modalità utente passa alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema. È possibile analizzare i tipi di chiamate di sistema effettuati dall'applicazione e le funzioni responsabili di tali chiamate selezionando l'opzione per raccogliere stack di chiamate campione in base alle chiamate di sistema.  
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- Per analizzare i tipi di chiamate di sistema effettuati dall'applicazione, eseguire nuovamente il profilo e selezionare l'opzione per raccogliere campioni in base alle chiamate al sistema. Se si eseguono gli strumenti di profilatura nell'IDE, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md) per altre informazioni. Se gli strumenti di profilatura vengono eseguiti dalla riga di comando, vedere la sezione **Opzioni dell'intervallo di campionamento** dell'articolo relativo a [VSPerfCmd](../profiling/vsperfcmd.md) nei riferimenti agli strumenti della riga di comando degli strumenti di profilatura.
+ Per analizzare i tipi di chiamate di sistema effettuati dall'applicazione, eseguire nuovamente il profilo e selezionare l'opzione per raccogliere campioni in base alle chiamate al sistema. Vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md) per altre informazioni. Se gli strumenti di profilatura vengono eseguiti dalla riga di comando, vedere la sezione **Opzioni dell'intervallo di campionamento** dell'articolo relativo a [VSPerfCmd](../profiling/vsperfcmd.md) nei riferimenti agli strumenti della riga di comando degli strumenti di profilatura.

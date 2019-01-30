@@ -1,5 +1,5 @@
 ---
-title: Creare un progetto in Visual Studio Tools for AI
+title: Creare un progetto
 description: Creare un progetto usando un esempio dalla raccolta di Azure Machine Learning
 keywords: ai, visual studio, azure machine learning
 author: lisawong19
@@ -11,14 +11,14 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797463"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Creare un progetto AI dalla raccolta di Azure Machine Learning in Visual Studio
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Creare un progetto AI dalla raccolta di Azure Machine Learning in Visual Studio
 
 Azure Machine Learning è integrato con Visual Studio Tools for AI. È possibile usarlo per inviare processi di machine learning a destinazioni di calcolo remote come macchine virtuali di Azure, cluster Spark e così via. Vedere altre informazioni su [Sperimentazione di Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 

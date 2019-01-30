@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d7cfcb3a288103bd79ff0196073411e81c3bf8b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943117"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Come configurare un ambiente Python in Servizio app di Azure (Windows)
 
@@ -126,7 +126,7 @@ Le `<appSettings>` definite di seguito sono disponibili come variabili di ambien
 
 - Il valore per `PYTHONPATH` può essere esteso liberamente, ma deve includere la directory radice dell'app.
 - `WSGI_HANDLER` deve puntare a un'app WSGI importabile dall'app.
-- `WSGI_LOG` è facoltativo ma consigliato per il debug dell'app. 
+- `WSGI_LOG` è facoltativo ma consigliato per il debug dell'app.
 
 Vedere [Pubblicare in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) per dettagli aggiuntivi sui contenuti di *web.config* per app Web Bottle, Flask e Django.
 

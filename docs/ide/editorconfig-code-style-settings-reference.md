@@ -12,17 +12,17 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956090"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
@@ -993,7 +993,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Description |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i metodi |
 | when_on_single_line | Preferisce membri con corpo di espressione per i metodi quando sono a riga singola |
@@ -1013,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Description |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i costruttori |
 | when_on_single_line | Preferisce membri con corpo di espressione per i costruttori quando sono a riga singola |
@@ -1033,7 +1033,7 @@ public Customer(int age) { Age = age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Description |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli operatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli operatori quando sono a riga singola |
@@ -1055,7 +1055,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Description |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le proprietà |
 | when_on_single_line | Preferisce membri con corpo di espressione per le proprietà quando sono a riga singola |
@@ -1075,7 +1075,7 @@ public int Age { get { return _age; }}
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Description |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli indicizzatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli indicizzatori quando sono a riga singola |
@@ -1095,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Description |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le funzioni di accesso |
 | when_on_single_line | Preferisce membri con corpo di espressione per le funzioni di accesso quando sono a riga singola |

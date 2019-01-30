@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18f2ea8db1e3f68ef20db09b8b129a50272e44f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80935ade646d9687a5ec7b0e1fe7f83e9c99e89c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031747"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>Attività CreateCSharpManifestResourceName
 Crea un nome di manifesto nello stile di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.  

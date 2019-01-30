@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c681ab49ba7fe6de60aa68cdec923cdf9f677fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841226"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947621"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *microsoft.common.tasks*, un file *microsoft.common.targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.

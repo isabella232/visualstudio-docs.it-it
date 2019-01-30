@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918368"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
 Strumenti R per Visual Studio (RTVS) si integra con l'esperienza di debug completa di Visual Studio (vedere [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour) (Debug in Visual Studio). Questo supporto include punti di interruzione, collegamento a processi in esecuzione, esame e controllo delle variabili ed esame dello stack di chiamate. In questo articolo vengono quindi esaminati gli aspetti del debug che sono univoci per R e RTVS.
 
-Avviare il debugger per il file di avvio R in un progetto R è un'operazione identica a quella per altri tipi di progetto: usare **Debug** > **Avvia debug**, **F5** o il **file di avvio di origine** nella barra degli strumenti di debug: 
+Avviare il debugger per il file di avvio R in un progetto R è un'operazione identica a quella per altri tipi di progetto: usare **Debug** > **Avvia debug**, **F5** o il **file di avvio di origine** nella barra degli strumenti di debug:
 
 ![Pulsante di avvio del debugger per R](media/debugger-start-button.png)
 

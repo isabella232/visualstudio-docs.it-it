@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953185"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida introduttiva: Creare un progetto da un modello di Cookiecutter
 
@@ -26,7 +26,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-py
 
 1. Avviare Visual Studio.
 
-1. Selezionare **File** > **Nuovo** > **From Cookiecutter** (Da Cookiecutter). Questo comando apre una finestra in Visual Studio in cui è possibile esplorare i modelli. 
+1. Selezionare **File** > **Nuovo** > **From Cookiecutter** (Da Cookiecutter). Questo comando apre una finestra in Visual Studio in cui è possibile esplorare i modelli.
 
     ![Nuovo progetto da un modello di Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-py
 
 1. Al termine del processo, viene visualizzato il messaggio **I file sono stati creati.** Selezionare il comando **Apri in Esplora soluzioni** per aprire il progetto.
 
-1. Premere **CTRL**+**F5** o selezionare **Debug** > **Avvia senza eseguire debug** per eseguire il programma. 
+1. Premere **CTRL**+**F5** o selezionare **Debug** > **Avvia senza eseguire debug** per eseguire il programma.
 
     ![Output del progetto del modello python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
