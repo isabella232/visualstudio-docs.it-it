@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e349437ddf785ae8ec57b4625cb97f4427b57f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a7960c871ff27a9b9825b47611df101ab625083
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830037"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961374"
 ---
 # <a name="callercallee-view"></a>visualizzazione Chiamante/Chiamato
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie:  
