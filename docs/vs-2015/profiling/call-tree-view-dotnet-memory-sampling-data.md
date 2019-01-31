@@ -1,27 +1,22 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6667d0e0ad76210434f40eaf89e4790430ffb0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758617"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787665"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
   
  Quando imposti il nodo radice, elimini dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo che si stava visualizzando, fare clic con il pulsante destro del mouse nella finestra della visualizzazione Albero delle chiamate e selezionare **Reimposta radice**.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
@@ -62,6 +57,3 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
  [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

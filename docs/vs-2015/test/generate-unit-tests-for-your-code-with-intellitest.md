@@ -1,26 +1,21 @@
 ---
 title: Generare unit test per il codice con IntelliTest | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790509"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
   
      Per i test che vengono superati verificare che i risultati indicati nella colonna dei risultati corrispondano a quanto previsto per il codice. Per i test che non vengono superati correggere il codice nel modo appropriato. Eseguire quindi di nuovo IntelliTest per verificare le correzioni.  
   
-### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Rendere persistenti: salvare gli unit test come gruppo di regressione  
+### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Rendere persistente: salvare gli unit test come gruppo di regressione  
   
 1.  Selezionare le righe dei dati da salvare con lo unit test con parametri in un progetto di test.  
   
@@ -67,7 +62,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
   
      Se il codice del metodo viene modificato, eseguire di nuovo IntelliTest per mantenere gli unit test sincronizzati con le modifiche apportate.  
   
-### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Fornire assistenza: usare IntelliTest per concentrarsi sull'esplorazione del codice  
+### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Offrire assistenza: usare IntelliTest per concentrarsi sull'esplorazione del codice  
   
 1.  In presenza di codice più complesso, IntelliTest consente di concentrarsi sull'esplorazione del codice. Se ad esempio si ha un metodo che contiene un'interfaccia come parametro ed è presente più di una classe che implementa tale interfaccia, IntelliTest trova tali classi e segnala un avviso.  
   
@@ -92,7 +87,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
   
 ##  <a name="QandALink"></a> Domande e risposte  
   
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per il codice non gestito?  
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per codice non gestito?  
  **R:** No, IntelliTest funziona solo con codice gestito.  
   
 ### <a name="q-when-does-a-generated-test-pass-or-fail"></a>D: Quando un test generato viene considerato superato o non superato?  
@@ -123,7 +118,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
  Se si aggiunge un'asserzione e si esegue di nuovo IntelliTest, verrà verificata la validità dell'asserzione e il test verrà considerato non superato se l'asserzione non è valida.  
   
 ###  <a name="NoRun"></a> D: È possibile generare unit test con parametri senza eseguire prima IntelliTest?  
- **R:** Sì, fare clic con il pulsante destro del mouse nella classe o nel metodo, quindi scegliere **Crea IntelliTest**.  
+ **R:** Sì, fare clic con il pulsante destro del mouse nella classe o nel metodo e scegliere **Crea IntelliTest**.  
   
  ![Fare clic con il pulsante destro del mouse sull'editor e scegliere Crea IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -140,6 +135,3 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
   
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>D: È possibile reperire maggiori informazioni sulla modalità di generazione dei test?  
  **R:** Sì, per ottenere una panoramica dettagliata, leggere questo [post di blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-
-
-

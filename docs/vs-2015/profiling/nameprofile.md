@@ -1,14 +1,9 @@
 ---
 title: NameProfile | Documenti Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
 - NameProfileA
@@ -16,13 +11,13 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7e56788c36e8c77ec134ed24a7636475c54da664
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752262"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. I valori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|  
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|  
@@ -70,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|L'elemento di profilatura specificato non esiste.|  
 |NAME_ERROR_INVALID_NAME|Il nome non è valido.|  
@@ -142,6 +137,3 @@ void ExerciseNameProfile()
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

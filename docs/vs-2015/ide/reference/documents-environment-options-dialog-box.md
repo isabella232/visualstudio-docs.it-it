@@ -1,14 +1,9 @@
 ---
 title: Documenti, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,13 +32,13 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778578"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documenti, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49246207"
 Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** dal menu **Strumenti** e selezionare **Documenti** nel nodo **Ambiente**. Se l'opzione **Documenti** non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  
   
 > [!NOTE]
->  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Riutilizza la finestra del documento corrente, se salvato**  
  Quando l'opzione viene selezionata, il documento corrente viene chiuso se è stato salvato e nella stessa finestra viene aperto un nuovo documento. Se non è stato salvato, il documento corrente rimane aperto e il nuovo documento viene aperto in una finestra separata. Quando l'opzione non viene selezionata, i nuovi documenti vengono sempre aperti in finestre separate.  
@@ -95,6 +90,3 @@ Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei 
  [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)  (Ambiente, finestra di dialogo Opzioni)  
  [File esterni](../../ide/reference/miscellaneous-files.md)   
  [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
-
-
-

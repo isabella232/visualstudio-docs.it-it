@@ -1,14 +1,9 @@
 ---
 title: Informazioni sui valori dei dati su conflitti di risorse | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
@@ -16,13 +11,13 @@ ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64bad925b7d0ac6170a4ac581fc327450aa2dd04
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5983396924f38c31b6dafcd42b762042e1880e8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784116"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Informazioni sui valori dei dati su conflitti di risorse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo
 - [Visualizzazione Dettagli risorsa](../profiling/resource-details-view-contention-data.md)  
   
   Per altre informazioni sulla seconda modalità di profilatura della concorrenza, vedere [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md).
-
-
-

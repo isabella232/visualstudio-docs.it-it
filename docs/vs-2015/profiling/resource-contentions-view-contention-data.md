@@ -1,14 +1,9 @@
 ---
 title: 'Visualizzazione dei conflitti di risorse: dati sui conflitti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dddc9c85731137c6499e976b4b571396af297f7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804134"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
   
 ## <a name="navigating-the-resource-allocation-view"></a>Esplorazione della visualizzazione Assegnazione risorse  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome della risorsa o della funzione.|  
 |**Tempo blocco esclusivo**|- Per una risorsa, il tempo totale per cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, il tempo per cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.|  
@@ -65,6 +60,3 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
 |**ID processo**|ID del processo (PID) del processo in cui era in esecuzione la funzione.|  
 |**Nome processo**|Nome del processo.|  
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-
-
-

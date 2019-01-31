@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2a78284cbdfa33953f6675c7d6e7ceee29a0eab4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932194"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Uso dell'attributo DebuggerDisplay (C#, Visual Basic, C++ c++ /CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.  

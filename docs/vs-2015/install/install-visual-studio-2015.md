@@ -3,10 +3,7 @@ title: Installare Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828056"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799177"
 ---
 # <a name="install-visual-studio-2015"></a>Installare Visual Studio 2015
 
@@ -65,7 +62,7 @@ Prima di entrare nei dettagli, ecco un elenco dei collegamenti richiesti più fr
 |**Aggiornamenti**|Visual Studio 2015 Update 3|
 |**Linguaggi di programmazione**|Visual C++<br />Visual F#<br />Python Tools per Visual Studio|
 |**Windows e sviluppo Web**|Strumenti di pubblicazione ClickOnce<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools per Visual Studio (3rd Party)<br />Kit di sviluppo di Silverlight<br />Strumenti per lo sviluppo di app universali di Windows<br />SDK e strumenti di Windows 10<br />Strumenti di Windows 8.1 e Windows Phone 8.0/8.1<br />SDK e strumenti di Windows 8.1|
-|**Sviluppo multipiattaforma per dispositivi mobili**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Visual C++ Mobile Development per iOS/Android<br />Clang con Microsoft CodeGen|
+|**Sviluppo multipiattaforma per dispositivi mobili**|C#/ .NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Visual C++ Mobile Development per iOS/Android<br />Clang con Microsoft CodeGen|
 |**Software Development Kit e strumenti comuni**|Android Native Development Kit (3rd Party)<br /> Android SDK [3rd Party]<br />Le API di installazione di Android SDK (3rd Party)<br />Apache Ant (3rd Party)<br /> Java SE Development Kit (3rd Party)<br /> Joyent Node. js (3rd Party)|
 |**Strumenti comuni**|GIT per Windows (3rd Party)<br />Estensione GitHub per Visual Studio (3rd Party)<br /> Strumenti di estendibilità in Visual Studio|
 
@@ -83,7 +80,7 @@ Prima di entrare nei dettagli, ecco un elenco dei collegamenti richiesti più fr
 |Debug di programmi|SeDebugPrivilege|
 |Gestione registro di controllo e di protezione|SeSecurityPrivilege|
 
- Per altre informazioni sui requisiti di questo account amministratore locale, vedere l'articolo della Knowledge Base, [L'installazione di SQL Server non riesce se l'account di configurazione non ha determinati diritti utente](https://support.microsoft.com/en-us/kb/2000257).
+ Per altre informazioni sui requisiti di questo account amministratore locale, vedere l'articolo della Knowledge Base, [L'installazione di SQL Server non riesce se l'account di configurazione non ha determinati diritti utente](https://support.microsoft.com/kb/2000257).
 
 ###  <a name="BKMK_Media"></a> Usando i supporti di installazione
  Per installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nella directory radice sui supporti di installazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , eseguire il file di installazione per l'edizione preferita:

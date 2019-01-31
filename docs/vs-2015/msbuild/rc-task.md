@@ -1,14 +1,9 @@
 ---
 title: Attività RC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
 - vc.task.rc
@@ -27,13 +22,13 @@ ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04bd592f919ab3ced11b36dceba7ce4178927884
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 075b3d9201cc17537d62bbe467cc8fa6d3558c35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773101"
 ---
 # <a name="rc-task"></a>Attività RC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows, 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività RC. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Parametro **String[]** facoltativo.<br /><br /> Aggiunge una directory all'elenco delle directory in cui vengono cercati i file di inclusione.<br /><br /> Per altre informazioni, vedere l'opzione **/I** in [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso di RC (riga di comando RC)) nel sito Web MSDN.|  
 |**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni della riga di comando, ad esempio **"**_/opzione1/opzione2/opzione #_". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività **RC**.<br /><br /> Per altre informazioni, vedere le opzioni in [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso di RC (riga di comando RC)) nel sito Web MSDN.|  
@@ -63,6 +58,3 @@ Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows, 
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752913"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
  **CvCollectionCmd /?**  
   
-|Opzione|Descrizione|Parametri|Valori restituiti|  
+|Opzione|Description|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Indica se è possibile avviare la raccolta.|Nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non sono in corso raccolte, ma sono già state abilitate una o più delle sessioni [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
+|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non sono in corso raccolte, ma sono già state abilitate una o più delle sessioni [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
 |Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
 |Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
 |Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
@@ -69,7 +64,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 ### <a name="configuration-file-tags"></a>Tag del file di configurazione  
  Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  
   
-|Tag|Descrizione|Valori|  
+|Tag|Description|Valori|  
 |---------|-----------------|------------|  
 |Config|Delimita il file di configurazione complessivo.|Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|Specifica la versione principale del file di configurazione.|Deve essere 1 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 1, l'utilità non funzionerà.|  
@@ -81,7 +76,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 |MarkerProvider|Specifica un singolo provider marcatori.|Deve contenere gli elementi seguenti:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Può includere questi elementi:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Livello|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
 |GUID|Identificatore univoco globale del provider marcatori ETW.|Un valore GUID.|  
-|Name|Specifica la descrizione del provider marcatori.|Una stringa.|  
+|nome|Specifica la descrizione del provider marcatori.|Stringa.|  
 |Categories|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
 |IsEnabled|Imposta un valore che determina se il provider marcatori è abilitato per la raccolta.|-   True<br />-   False|  
 |FilterConfig|Specifica l'elenco di opzioni di configurazione degli eventi ETW filtrati dalla raccolta.|Può includere gli elementi seguenti:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  
@@ -158,6 +153,3 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 </LocalConfig>  
   
 ```
-
-
-

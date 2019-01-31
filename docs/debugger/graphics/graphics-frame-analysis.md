@@ -6,15 +6,15 @@ f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: aaa4a034b6b53397999f9f6d5149742f6fa6e229
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154376"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986332"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.  

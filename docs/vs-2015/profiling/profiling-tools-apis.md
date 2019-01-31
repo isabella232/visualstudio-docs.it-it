@@ -1,25 +1,20 @@
 ---
 title: API per strumenti di profilatura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10b97169440814366141670768561ce314498191
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801157"
 ---
 # <a name="profiling-tools-apis"></a>API per strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51769240"
  <xref:Microsoft.VisualStudio.Profiler>  
  Descrive i metodi degli strumenti di profilatura .NET.  
   
- [Procedura dettagliata: uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)  
+ [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)  
  Informazioni su come usare i metodi degli strumenti di profilatura .NET in questo esempio completo.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
@@ -41,6 +36,3 @@ ms.locfileid: "51769240"
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplora prestazioni](../profiling/performance-explorer.md)
-
-
-

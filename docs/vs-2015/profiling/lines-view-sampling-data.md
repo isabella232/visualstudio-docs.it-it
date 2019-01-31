@@ -1,27 +1,22 @@
 ---
 title: 'Visualizzazione Righe: dati di campionamento | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c4cd360e120b9747a16234aa28c42912de4254b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ade498586f7d0a675ad2fe770a21435604ec57d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752538"
 ---
 # <a name="lines-view---sampling-data"></a>Visualizzazione Righe: dati di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
   
   Per definizione, un'istruzione non chiama altre funzioni. Vengono quindi elencati solo valori esclusivi.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
@@ -69,6 +64,3 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
-
-
-
