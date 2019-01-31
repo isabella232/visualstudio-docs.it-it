@@ -1,14 +1,9 @@
 ---
 title: Attività XmlPoke | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cdf136574e3aad3e1af365491d560678edc80b36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e635c7b57bc8653184e5a929c2a87f228056fb82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782564"
 ---
 # <a name="xmlpoke-task"></a>Attività XmlPoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Imposta i valori come specificato da una query XPath in un file XML.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `XmlPoke` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Namespaces`|Parametro `String` facoltativo.<br /><br /> Specifica gli spazi dei nomi per i prefissi della query XPath.|  
 |`Query`|Parametro `String` facoltativo.<br /><br /> Specifica la query XPath.|  
@@ -51,6 +46,3 @@ Imposta i valori come specificato da una query XPath in un file XML.
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

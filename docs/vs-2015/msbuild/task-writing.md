@@ -1,14 +1,9 @@
 ---
 title: Scrittura di attività | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
@@ -17,13 +12,13 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794282"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +163,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  La seguente classe di [!INCLUDE[csprcs](../includes/csprcs-md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. L'attività restituisce `true`, che indica che ha avuto esito positivo.  
   
 ### <a name="code"></a>Codice  
@@ -192,7 +187,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  La seguente classe di [!INCLUDE[csprcs](../includes/csprcs-md.md)] rappresenta un'attività che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. L'attività restituisce `true`, che indica che ha avuto esito positivo.  
   
 ### <a name="code"></a>Codice  
@@ -250,7 +245,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  Questa classe di [!INCLUDE[csprcs](../includes/csprcs-md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. Ha una proprietà stringa obbligatoria e genera un evento che viene visualizzato da tutti i logger registrati.  
   
 ### <a name="code"></a>Codice  
@@ -258,7 +253,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  L'esempio seguente illustra un file di progetto che richiama l'attività dell'esempio precedente, SimpleTask3.  
   
 ### <a name="code"></a>Codice  
@@ -277,6 +272,3 @@ namespace SimpleTask2
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

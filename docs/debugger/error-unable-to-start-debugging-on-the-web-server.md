@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804249700ff813de5a45e44787af4f39d4a82ad2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938460"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: Impossibile avviare il debug sul server Web
 
@@ -51,7 +51,7 @@ Il `Unable to start debugging on the Web server` messaggio è generico. In gener
 - [Il server remoto ha restituito un errore](#server_error)
 - [Non è possibile avviare il debug di ASP.NET](#aspnet)
 - [Il debugger non può connettersi al computer remoto](#cannot_connect)
-- [Per verificare gli errori di configurazione comuni, consultare la Guida. Esecuzione della pagina Web all'esterno del debugger può fornire ulteriori informazioni.](#see_help)
+- [ Per verificare gli errori di configurazione comuni, consultare la Guida. Esecuzione della pagina Web all'esterno del debugger può fornire ulteriori informazioni.](#see_help)
 
 ## <a name="IISlist"></a> IIS non include un sito Web che corrisponde al lancio url
 
@@ -61,7 +61,7 @@ Il `Unable to start debugging on the Web server` messaggio è generico. In gener
 
 ## <a name="web_server_config"></a> Il server Web non è configurato in modo corretto
 
-- Vedere [errore: Il server Web non è configurato in modo corretto](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- Vedere [errore: ](../debugger/error-the-web-server-is-not-configured-correctly.md) Il server Web non è configurato in modo corretto
 
 ## <a name="unabletoconnect"></a> Impossibile connettersi al server Web
 

@@ -1,14 +1,9 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Formattazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
@@ -17,13 +12,13 @@ ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794410"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opzioni, Editor di testo, JavaScript, Formattazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Opzione|Descrizione|  
+|Opzione|Description|  
 |------------|-----------------|  
 |**Formatta riga completata dopo INVIO**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto INVIO.|  
 |**Formatta istruzione completata dopo ;**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto punto e virgola.|  
@@ -50,17 +45,17 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Opzione|Descrizione|  
+|Opzione|Description|  
 |------------|-----------------|  
 |**Inserisci parentesi graffa aperta su nuova riga per le funzioni**|Quando questa opzione è selezionata, l'editor di codice sposta la parentesi graffa aperta associata a una funzione in una nuova riga.|  
 |**Inserisci parentesi graffa aperta su nuova riga per i blocchi di controllo**|Quando questa opzione è selezionata, l'editor di codice sposta in una nuova riga la parentesi graffa aperta associata a un blocco di controllo, ad esempio ai blocchi `if` e `while`.|  
   
 ## <a name="spacing"></a>Spacing (Spaziatura)  
- Queste opzioni determinano come vengono inseriti spazi nella **origine** visualizzazione.  
+ Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella visualizzazione **Origine**.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Opzione|Descrizione|  
+|Opzione|Description|  
 |------------|-----------------|  
 |**Inserisci spazio dopo virgola di delimitazione**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo le virgole di delimitazione.|  
 |**Inserisci spazio dopo punto e virgola nell'istruzione 'for'**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo ogni punto e virgola nella prima riga di un ciclo `for`.|  
@@ -71,6 +66,3 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
   
 ## <a name="see-also"></a>Vedere anche  
  [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

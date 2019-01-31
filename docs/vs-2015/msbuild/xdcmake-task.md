@@ -1,14 +1,9 @@
 ---
 title: Attività XDCMake | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: caf3803edff01e6ffe650f18aaccef99fc50728f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792889"
 ---
 # <a name="xdcmake-task"></a>Attività XDCMake
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività **XDCMake**.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|Parametro **String[]** facoltativo.<br /><br /> Consente di specificare uno o più file aggiuntivi con estensione xdc da unire.<br /><br /> Per altre informazioni, vedere la descrizione di **File di documentazione aggiuntivi** in [Pagina delle proprietà dello strumento generatore di documenti XML](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0). Vedere anche le opzioni **/old** e **/Fs** della riga di comando per xdcmake.exe.|  
 |**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, "*/opzione1 /opzione2 /opzione#*". Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XDCMake**.<br /><br /> Per altre informazioni, vedere [Riferimento a XDCMake](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Pagina delle proprietà dello strumento generatore di documenti XML](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e l'opzione della riga di comando per la visualizzazione della Guida (**/?**) relativa a xdcmake.exe.|  
@@ -60,6 +55,3 @@ Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

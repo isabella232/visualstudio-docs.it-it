@@ -1,14 +1,9 @@
 ---
 title: Attività MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772337"
 ---
 # <a name="msbuild-task"></a>Attività MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `MSBuild` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`BuildInParallel`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, i progetti specificati nel parametro `Projects` vengono compilati in parallelo, se possibile. Il valore predefinito è `false`.|  
 |`Projects`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file di progetto da compilare.|  
@@ -51,8 +46,8 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 |`SkipNonexistentProjects`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, i file di progetto che non esistono sul disco verranno ignorati. In caso contrario, tali progetti genereranno un errore.|  
 |`StopOnFirstFailure`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, quando la compilazione di uno dei progetti non riesce, non verranno compilati altri progetti. Questo parametro non è attualmente supportato con la compilazione in parallelo (con più processori).|  
 |`TargetAndPropertyListSeparators`|Parametro `String[]` facoltativo.<br /><br /> Specifica un elenco di destinazioni e proprietà come metadati dell'elemento `Project`. Il carattere di escape verrà rimosso dai separatori prima dell'elaborazione. Ad esempio, %3B (";" preceduto da un carattere di escape) verrà considerato come ";" non preceduto da un carattere di escape.|  
-|`TargetOutputs`|Parametro di output di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Restituisce gli output delle destinazioni compilate da tutti i file di progetto. Vengono restituiti solo gli output dalle destinazioni specificate, non tutti gli output esistenti nelle destinazioni da cui le destinazioni dipendono.<br /><br /> Il parametro `TargetOutputs` contiene anche i metadati seguenti:<br /><br /> -   `MSBuildSourceProjectFile`: il file di progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] contenente la destinazione che imposta gli output.<br />-   `MSBuildSourceTargetName`: destinazione che imposta gli output. **Nota:** per identificare gli output da ogni file di progetto o destinazione separatamente, eseguire l'attività `MSBuild` separatamente per ogni file di progetto o destinazione. Se si esegue l'attività `MSBuild` solo una volta per compilare tutti i file di progetto, gli output di tutte le destinazioni vengono raccolte in una sola matrice.|  
-|`Targets`|Parametro `String` facoltativo.<br /><br /> Specifica la destinazione o le destinazioni da compilare nei file di progetto. Usare un punto e virgola per separare le voci di un elenco di nomi di destinazione. Se nessuna destinazione viene specificata nell'attività `MSBuild`, vengono compilate le destinazioni predefinite specificate nei file di progetto. **Nota:** le destinazioni devono essere presenti in tutti i file di progetto. In caso contrario, si verifica un errore di compilazione.|  
+|`TargetOutputs`|Parametro di output di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Restituisce gli output delle destinazioni compilate da tutti i file di progetto. Vengono restituiti solo gli output dalle destinazioni specificate, non tutti gli output esistenti nelle destinazioni da cui le destinazioni dipendono.<br /><br /> Il parametro `TargetOutputs` contiene anche i metadati seguenti:<br /><br /> -   `MSBuildSourceProjectFile`: il file di progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] contenente la destinazione che imposta gli output.<br />-   `MSBuildSourceTargetName`: destinazione che imposta gli output. **Nota:**  per identificare gli output da ogni file di progetto o destinazione separatamente, eseguire l'attività `MSBuild` separatamente per ogni file di progetto o destinazione. Se si esegue l'attività `MSBuild` solo una volta per compilare tutti i file di progetto, gli output di tutte le destinazioni vengono raccolte in una sola matrice.|  
+|`Targets`|Parametro `String` facoltativo.<br /><br /> Specifica la destinazione o le destinazioni da compilare nei file di progetto. Usare un punto e virgola per separare le voci di un elenco di nomi di destinazione. Se nessuna destinazione viene specificata nell'attività `MSBuild`, vengono compilate le destinazioni predefinite specificate nei file di progetto. **Nota:**  le destinazioni devono essere presenti in tutti i file di progetto. In caso contrario, si verifica un errore di compilazione.|  
 |`ToolsVersion`|Parametro `String` facoltativo.<br /><br /> Specifica la `ToolsVersion` da usare quando si compilano i progetti passati a questa attività.<br /><br /> Consente a un'attività [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di compilare un progetto destinato a una versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] diversa da quella specificata nel progetto. I valori validi sono `2.0`, `3.0` e `3.5`. Il valore predefinito è `3.5`.|  
 |`UnloadProjectsOnCompletion`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il progetto verrà scaricato al termine dell'operazione.|  
 |`UseResultsCache`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il risultato memorizzato nella cache verrà restituito, se presente. Se l'attività MSBuild viene eseguita, il risultato verrà memorizzato nella cache in un ambito (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> come elenco di elementi di compilazione.|  
@@ -198,6 +193,3 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616a426192b15353b2d30a8f910619f5333cb5fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48babdee829eec50a8b8582e5b48e78b691f1073
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979049"
 ---
 # <a name="threads-view"></a>Visualizzazione Thread
 Visualizzazione thread è un elenco semplice di tutti i thread associati alle finestre nel sistema. Vengono visualizzati l'ID di Thread e nome del modulo per ogni thread. I processi non vengono inclusi, ma è possibile trovare facilmente il processo che possiede il thread selezionato.  

@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952314"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -92,7 +92,7 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         -oppure-
+         oppure
 
     -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
@@ -153,7 +153,7 @@ Per i dati in questa procedura dettagliata il `Customers` la tabella è in un **
 
 2. Apportare alcune modifiche ai dati di uno o più record di ogni tabella.
 
-3. Selezionare il **salvare** pulsante.
+3. Selezionare il pulsante **Salva**.
 
 4. Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.
 

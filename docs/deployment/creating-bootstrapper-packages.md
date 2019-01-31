@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 0c39e3652e2f519a95420d58d855924ccc94174c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53878390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980336"
 ---
 # <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (*.msi*) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile o prerequisito, che viene visualizzato nei **prerequisiti** finestra di dialogo di ClickOnce è un pacchetto di programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito. 

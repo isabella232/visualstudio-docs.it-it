@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98985877a2a85e56e9e1861c3baeaf0c87ad0f9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952093"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debug e processo di hosting
 Il processo di hosting di Visual Studio migliora le prestazioni del debugger e offre ulteriori funzionalità, ad esempio il debug in contesti di attendibilità parziale e la valutazione delle espressioni per la fase di progettazione. Se necessario, è possibile disabilitare il processo di hosting. Nelle sezioni riportate di seguito vengono descritte alcune differenze tra l'esecuzione del debug con e senza processo di hosting.

@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Usare caratteri XML riservati nei file di progetto | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, using reserved XML characters
 - MSBuild, reserved XML characters
@@ -16,15 +11,15 @@ ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: de8e6693b56a36f9b795b132e0181aa0531c7f33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9943378043c7ddd5787d32b331334555b27cd947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780640"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: utilizzare caratteri XML riservati nei file di progetto
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: Usare caratteri XML riservati nei file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -81,5 +76,3 @@ Quando si creano file di progetto, potrebbe essere necessario usare caratteri XM
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md) [MSBuild](msbuild.md)
-
-

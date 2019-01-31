@@ -1,25 +1,20 @@
 ---
 title: Nodi delle trame | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252356"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779840"
 ---
 # <a name="texture-nodes"></a>Nodi di trama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Nella finestra di progettazione shader i nodi delle trame effettuano il campiona
 |**Dimensioni di trama**|Restituisce la larghezza e l'altezza di una mappa di trama 2D.<br /><br /> È possibile usare le dimensioni della trama per prendere in considerazione la larghezza e l'altezza della trama in uno shader.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Larghezza e altezza della trama, espresse come vettore. La larghezza viene memorizzata nel primo elemento del vettore. L'altezza viene memorizzata nel secondo elemento.|**Trama**<br /> Registro di trama associato alle dimensioni della trama.|  
 |**Differenza texel**|Restituisce la differenza (distanza) tra i texel di una mappa di trama 2D.<br /><br /> È possibile usare questo valore per eseguire un campionamento in base ai pixel adiacenti in una trama.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> La differenza (distanza) tra un texel e il texel successivo (spostandosi in diagonale nella direzione positiva), espresso come un vettore nello spazio di trama normalizzato. È possibile derivare le posizioni di tutti i texel adiacenti in modo selettivo ignorando o negando le coordinate V o U della differenza.|**Trama**<br /> Registro di trama associato alla differenza di texel.|  
 |**Campione trama**|Prende un campione di colore da una mappa di trama 2D alle coordinate specificate.<br /><br /> È possibile usare una mappa di trama per fornire dettagli di colore sulla superficie di un oggetto.<br /><br /> **Input:**<br /><br /> `UV`: `float2`<br /> Coordinate in cui viene eseguito il campionamento.<br /><br /> **Output:**<br /><br /> `Output`: `float4`<br /> Esempio di colore.|**Trama**<br /> Registro di trama associato al campionatore.|
-
-
-

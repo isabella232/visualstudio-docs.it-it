@@ -1,14 +1,9 @@
 ---
 title: Attività Warning | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Warning
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0447c3803de6845dcfb02a30270cfe9b96b96f0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 010ab0d98fa384a7b3a5d18e54a8409d5aa165b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771920"
 ---
 # <a name="warning-task"></a>Attività Warning
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Registra un avviso durante una compilazione in base a un'istruzione condizionale
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `Warning`.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Code`|Parametro `String` facoltativo.<br /><br /> Il codice di avviso da associare all'avviso.|  
 |`File`|Parametro `String` facoltativo.<br /><br /> Specifica il file pertinente, se presente. Se non viene indicato alcun file, verrà usato il file contenente l'attività Warning.|  
@@ -74,6 +69,3 @@ Registra un avviso durante una compilazione in base a un'istruzione condizionale
 ## <a name="see-also"></a>Vedere anche  
  [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)  (Recupero di log di compilazione)  
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

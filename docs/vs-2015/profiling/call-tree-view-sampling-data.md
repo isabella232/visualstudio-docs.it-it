@@ -1,14 +1,9 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di campionamento | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
@@ -16,13 +11,13 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc324b621bfc3e472d6eb86227a6081e3384d2af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779226"
 ---
 # <a name="call-tree-view---sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
   
  Quando imposti il nodo radice, elimini dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo originale, fare clic con il pulsante destro del mouse nella finestra della visualizzazione Albero delle chiamate e selezionare **Reimposta radice**.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
@@ -61,11 +56,8 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**% esempi inclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che erano esempi inclusivi di questa funzione quando è stata chiamata dalla funzione padre nell'albero delle chiamate.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Albero delle chiamate: dati di campionamento del profiler](../profiling/call-tree-view-sampling-data.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione albero delle chiamate: dati di campionamento del profiler](../profiling/call-tree-view-sampling-data.md)   
  [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

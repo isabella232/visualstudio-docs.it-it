@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36feec786ba0bba71723073fb990054cc0206847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0c1ed6e2fdd461b0fdf502c01089aeafd9a87cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916679"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925630"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API di grafica e le statistiche di memoria
 <!-- VERSIONLESS --> Visual Studio 2017 e versioni successiva supporta gli strumenti di grafica API statistiche e le statistiche di memoria.  Questi due strumenti consentono di visualizzare diverse parti di informazioni su utilizzo dell'API Direct3D, così come il consumo di memoria GPU di varie risorse.

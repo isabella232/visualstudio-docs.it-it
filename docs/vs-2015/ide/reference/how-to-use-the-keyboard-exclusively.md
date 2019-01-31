@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Usare esclusivamente la tastiera | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -20,22 +15,22 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782621"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: utilizzare esclusivamente la tastiera
+# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: Usare esclusivamente la tastiera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prevede molte combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per un elenco completo delle combinazioni di tasti usate in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Controlli della casella degli strumenti  
  È possibile aggiungere controlli della casella degli strumenti a un form o a una finestra di progettazione tramite la tastiera.  
@@ -106,6 +101,3 @@ ms.locfileid: "49862164"
  [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)   
  [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
-
-
-

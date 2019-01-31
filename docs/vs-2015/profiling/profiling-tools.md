@@ -1,27 +1,22 @@
 ---
 title: Strumenti di profilatura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780844"
 ---
 # <a name="profiling-tools"></a>Strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
  [IntelliTrace](../debugger/intellitrace.md) consente di registrare eventi specifici, esaminare i dati della finestra **Variabili locali** durante gli eventi del debugger e le chiamate di funzioni, nonché gli errori di debug difficili da riprodurre.  IntelliTrace è principalmente uno strumento di debug, ma offre anche informazioni che possono essere usate per l'analisi delle prestazioni. È possibile usare questo strumento solo in Visual Studio Enterprise con applicazioni desktop, universali di Windows ASP.NET in C#. IntelliTrace è disponibile nella finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**).  
   
 ## <a name="profiling-in-production"></a>Profilatura in fase di produzione  
- L'approccio consigliato per la profilatura in fase di produzione è eseguire la profilatura dalla [riga di comando usando vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) per raccogliere un profilo della CPU. Per il supporto per la profilatura remota nei servizi app di Azure, è possibile eseguire la profilatura da [Esplora Server o il portale di Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ L'approccio consigliato per la profilatura in fase di produzione è eseguire la profilatura dalla [riga di comando usando vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) per raccogliere un profilo della CPU. Per il supporto per la profilatura remota nei servizi app di Azure, è possibile eseguire la profilatura da [Esplora Server o il portale di Kudu](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Quale strumento utilizzare?  
  Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Studio e i diversi tipi di progetto con cui possono essere usati:  
@@ -103,6 +98,3 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
   
 ## <a name="see-also"></a>Vedere anche  
  [IDE di Visual Studio](../ide/visual-studio-ide.md)
-
-
-

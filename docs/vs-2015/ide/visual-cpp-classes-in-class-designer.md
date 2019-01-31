@@ -1,14 +1,9 @@
 ---
 title: Classi Visual C++ in Progettazione classi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787076"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- È anche possibile trascinare solo la classe B sul diagramma classi, fare clic col pulsante destro del mouse sulla forma classe relativa a B e quindi fare clic su **Mostra classi base** per visualizzare la relativa classe di base, ovvero A.  
+ È anche possibile trascinare solo la classe B sul diagramma classi, fare clic col pulsante destro del mouse sulla forma classe relativa a B e quindi fare clic su **Mostra classi base** per visualizzare la relativa classe di base, Un   
   
 ## <a name="multiple-inheritance"></a>Ereditarietà multipla  
  Progettazione classi supporta la visualizzazione di relazioni di ereditarietà da classi multiple. L'*ereditarietà multipla* viene usata quando una classe derivata presenta attributi di più di una classe di base. Di seguito è riportato un esempio di ereditarietà multipla:  
@@ -59,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere Visualizzazione classi, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.  
   
- Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Classi astratte  
  Progettazione classi supporta le classi astratte, note anche come "classi di base astratte". Si tratta di classi per le quali non viene mai creata un'istanza, ma da cui è possibile derivare altre classi. Usando un esempio citato in "Ereditarietà multipla" più indietro in questo documento, è possibile creare un'istanza della classe `Bird` come singoli oggetti, come illustrato di seguito:  
@@ -163,7 +158,7 @@ typedef struct
   
  La tabella seguente illustra alcuni esempi di ereditarietà del modello.  
   
-|Code, elemento|Visualizzazione di Progettazione classi|  
+|Elemento del codice|Visualizzazione di Progettazione classi|  
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Classe<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Classe<br /><br /> (B è contenuto all'interno della classe C in **Tipi annidati**)<br /><br /> `C<T>`<br /><br /> Classe modello|  
   
@@ -178,9 +173,6 @@ typedef struct
  [Uso del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [Classi e struct](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [Tipi di classe anonimi](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
  [Più classi base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
  [Modelli](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-
