@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be26ff3c1c878cee5f2760897f3652de30c52d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883311"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004786"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: La valutazione della funzione &#39;funzione&#39; scaduta e deve essere interrotta in modo non sicuro
 
@@ -33,9 +33,9 @@ Esistono diverse soluzioni possibili per questo problema.
 Il messaggio di errore indicherà il nome della funzione di cui che il debugger ha tentato di chiamare. Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamare il getter della proprietà o il metodo ToString. Provare una delle operazioni seguenti:
  
 * Modificare il metodo in un altro tipo di codice diverso da un getter della proprietà o metodo ToString e il problema non viene più visualizzato.
-    -oppure-
-* (Per ToString) Definire un attributo DebuggerDisplay sul tipo e sarà possibile utilizzare il debugger di valutare un valore diverso da ToString.
     oppure
+* (Per ToString) Definire un attributo DebuggerDisplay sul tipo e sarà possibile utilizzare il debugger di valutare un valore diverso da ToString.
+    -oppure-
 * (Per un getter proprietà) Inserire il `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo della proprietà. Ciò può essere utile se si dispone di un metodo che deve rimanere una proprietà per motivi di compatibilità delle API, ma deve essere effettivamente un metodo.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Soluzione 2 Avere il codice di destinazione di porre il debugger per interrompere la valutazione
@@ -46,6 +46,6 @@ Il messaggio di errore indicherà il nome della funzione di cui che il debugger 
  
 Se le soluzioni precedenti non risolvono il problema, passare a **degli strumenti** > **opzioni**e deselezionare l'impostazione **debug**  >   **Generali** > **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**. Questo verrà disabilitata la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>&Soluzione Abilitare la modalità di compatibilità gestita
+### <a name="solution-4-enable-managed-compatibility-mode"></a>Soluzione: '' Abilitare la modalità di compatibilità gestita
 
 Se si passa al motore di debug legacy, è possibile eliminare questo errore. Passare a **strumenti** > **opzioni**, quindi selezionare l'impostazione **debug** > **generale**  >  **Utilizza modalità di compatibilità gestita**. Per altre informazioni, vedere [opzioni di debug generali](../debugger/general-debugging-options-dialog-box.md).

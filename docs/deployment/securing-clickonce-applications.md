@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35814b1227f9a03fe40c9d41e7809dac54a0f1fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944272"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932818"
 ---
 # <a name="secure-clickonce-applications"></a>Proteggere le applicazioni ClickOnce
 Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono soggette ai vincoli di sicurezza dall'accesso di codice in .NET Framework che consentono di limitare l'accesso del codice alle risorse e alle operazioni protette. Per poter scrivere correttamente le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è quindi importante comprendere le implicazioni di questo tipo di sicurezza. Le applicazioni possono usare l'attendibilità totale o le aree parziali, ad esempio le aree Internet e Intranet, per limitare l'accesso.  
@@ -66,7 +66,7 @@ Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Gli argomenti delle stringhe di query sono disabilitati per impostazione predefinita. Per attivarli, nel manifesto di distribuzione dell'applicazione deve essere impostato l'attributo `trustUrlParameters` . Questo valore può essere impostato da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e da MageUI.exe. Per informazioni dettagliate su come abilitare il passaggio di stringhe di query, vedere [come: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
+ Gli argomenti delle stringhe di query sono disabilitati per impostazione predefinita. Per attivarli, nel manifesto di distribuzione dell'applicazione deve essere impostato l'attributo `trustUrlParameters` . Questo valore può essere impostato da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e da MageUI.exe. Per informazioni dettagliate su come abilitare il passaggio di stringhe di query, vedere [come: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Non passare mai argomenti recuperati tramite una stringa di query direttamente a un database o alla riga di comando senza verificare che gli argomenti siano sicuri. Sono considerati non sicuri gli argomenti che includono caratteri di escape di database o da riga di comando che possono consentire a un utente malintenzionato di modificare l'applicazione eseguendo comandi arbitrari.  
   

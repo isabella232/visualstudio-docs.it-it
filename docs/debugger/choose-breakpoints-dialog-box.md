@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d2fe6b19312714815efc1e499bf89eacdaaff67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992581"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Finestra di dialogo Seleziona punti di interruzione
 Il **Seleziona punti di interruzione** verrà visualizzata la finestra di dialogo quando si prova a impostare un punto di interruzione da un input ambiguo nel **nuovo punto di interruzione** nella finestra di dialogo. Un esempio dell'input ambiguo comune è un nome di funzione in overload.  

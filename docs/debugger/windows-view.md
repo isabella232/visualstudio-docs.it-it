@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f728551f97c0b402cb4a9f8294a5401759cb338c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019359"
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
 Alla prima apertura Spy + +, Windows Vista sono riportati un albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati il nome di classe e di handle di finestra. La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre figlio del desktop e sono elencate in base alla gerarchia delle finestre standard. Finestre di pari livello visualizzato negli elenchi espandibili su un livello rientrati sotto padri.  

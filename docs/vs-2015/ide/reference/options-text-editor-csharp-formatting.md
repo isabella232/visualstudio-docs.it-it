@@ -1,14 +1,9 @@
 ---
 title: Opzioni, Editor di testo, C#, Formattazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines
@@ -30,13 +25,13 @@ ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9acd9d882fb2cf0decff4c9f4ab657cf831e74ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800768"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opzioni, Editor di testo, C#, Formattazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,14 +40,14 @@ ms.locfileid: "49281255"
 Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa finestra di dialogo, scegliere **Opzioni** dal menu **Strumenti**, espandere **Editor di testo**, espandere **C#** e quindi fare clic su **Formattazione**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Impostazioni generali  
  Le impostazioni generali hanno effetto sulla modalità con la quale l'editor del codice applica le opzioni di formattazione al codice.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Label|Descrizione|  
+|Label|Description|  
 |-----------|-----------------|  
 |**Formatta automaticamente istruzione completata dopo l'immissione di ;**|Quando questa opzione è selezionata, vengono formattate le istruzioni al completamento in base alle opzioni di formattazione selezionate per l'editor del codice. Deselezionare questa opzione se non si vuole modificare le istruzioni con l'editor di codice.|  
 |**Formatta automaticamente blocco completato dopo l'immissione di }**|Quando l'opzione è selezionata, i blocchi di codice vengono formattati in base alle opzioni di formattazione selezionate per l'editor di codice subito dopo il completamento del blocco. Deselezionare questa opzione se non si vuole modificare i blocchi con l'editor di codice.|  
@@ -66,6 +61,3 @@ Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di f
   
 ## <a name="see-also"></a>Vedere anche  
  [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

@@ -1,22 +1,18 @@
 ---
 title: Importare un progetto XCode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: b0e42c167e87f19781f9544e20e7870789af4ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d04c82a5122aae263676a43367105d44e3aa75a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788798"
 ---
 # <a name="import-an-xcode-project"></a>Importare un progetto XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,4 +76,3 @@ Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili multipiattafo
     Per importare il progetto XCode usando le impostazioni della procedura guidata, scegliere **Importa**.  
   
    La procedura guidata Importa da Xcode crea progetti in Visual Studio che corrispondono alle destinazioni del progetto XCode selezionato. Il codice che può essere condiviso con altri progetti C++ è suddiviso in progetti di codice condiviso e di libreria statica distinti. Il codice rimanente viene inserito in progetti di libreria e di applicazioni iOS, che possono essere compilati in remoto da Visual Studio. Per altre informazioni sullo spostamento di codice tra Visual Studio e XCode, vedere [Sincronizzare le modifiche tra XCode e Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
-

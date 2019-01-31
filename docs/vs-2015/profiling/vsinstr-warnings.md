@@ -1,14 +1,9 @@
 ---
 title: Avvisi di VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
 - warnings
@@ -19,20 +14,20 @@ ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: be30404e4fb9cff6c53bb3afbdedb4ce03ba2d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765135"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834323"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La tabella seguente elenca gli avvisi generati dallo strumento VSInstr.exe. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.  
   
-|Numero di avviso|Descrizione|  
+|Numero di avviso|Description|  
 |--------------------|-----------------|  
 |**VSP2000**|Errore interno Impossibile ottenere il nome del file di modulo per questo eseguibile.|  
 |**VSP2001**|\<nome assembly> è un assembly con nome sicuro. Deve essere firmato di nuovo prima dell'esecuzione.<br /><br /> Questo avviso viene visualizzato quando un assembly firmato viene instrumentato. È possibile usare lo strumento sn.exe per firmare nuovamente il file binario o disattivare temporaneamente il requisito del nome sicuro. Per altre informazioni, vedere [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
@@ -52,6 +47,3 @@ La tabella seguente elenca gli avvisi generati dallo strumento VSInstr.exe. Per 
   
 ## <a name="see-also"></a>Vedere anche  
  [VSInstr](../profiling/vsinstr.md)
-
-
-

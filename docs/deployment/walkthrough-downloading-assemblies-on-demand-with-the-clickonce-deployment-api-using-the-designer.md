@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878601"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919304"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: Scaricare gli assembly su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce
 Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono scaricati alla prima esecuzione dell'applicazione. Alcune parti dell'applicazione possono tuttavia essere usate da un set limitato di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime.
@@ -79,7 +79,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 
 4.  Espandere la casella di riepilogo a discesa **Gruppo** e selezionare **Nuovo**. Immettere il nome `ClickOnceLibrary` come nome del nuovo gruppo.
 
-5.  Continuare a pubblicare l'applicazione come descritto in [come: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+5.  Continuare a pubblicare l'applicazione come descritto in [come: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce mediante lo Strumento per la generazione e la modifica di manifesti - Client grafico (MageUI.exe)
 

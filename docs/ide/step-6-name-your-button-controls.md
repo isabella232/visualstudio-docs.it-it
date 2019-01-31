@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820358"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043596"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 Nel modulo c'è un solo oggetto <xref:System.Windows.Forms.PictureBox>. Quando è stato aggiunto, l'IDE lo ha automaticamente denominato **pictureBox1**. C'è un solo oggetto <xref:System.Windows.Forms.CheckBox>, denominato **checkBox1**. Presto si scriverà del codice che farà riferimento ai controlli CheckBox e PictureBox. Poiché è presente uno solo di ognuno di questi controlli, sarà possibile riconoscerlo quando si vedrà **pictureBox1** o **checkBox1** nel codice.
