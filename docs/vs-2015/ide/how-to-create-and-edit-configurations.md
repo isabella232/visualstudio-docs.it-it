@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Creare e modificare le configurazioni | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -23,15 +18,15 @@ ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767331"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Procedura: creare e modificare le configurazioni
+# <a name="how-to-create-and-edit-configurations"></a>Procedura: Creare e modificare le configurazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per una soluzione è possibile creare diverse configurazioni della build. È possibile, ad esempio, configurare una compilazione di debug che i tester possono usare per trovare e correggere problemi. È anche possibile configurare tipi diversi di compilazioni da distribuire a clienti diversi.  
@@ -58,7 +53,7 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
   
      Verrà aperta la finestra **Pagine delle proprietà**.  
   
-     È possibile impostare alcune proprietà per le configurazioni. Per una configurazione di rilascio, ad esempio, è possibile specificare che quando si effettua la compilazione della soluzione il codice deve essere ottimizzato. Per una configurazione di debug, poi, è possibile specificare che il simbolo di compilazione condizionale `DEBUG` deve essere incluso. Per altre informazioni sulle impostazioni della pagina proprietà, vedere [Introduzione a Progettazione progetti](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     È possibile impostare alcune proprietà per le configurazioni. Per una configurazione di rilascio, ad esempio, è possibile specificare che quando si effettua la compilazione della soluzione il codice deve essere ottimizzato. Per una configurazione di debug, poi, è possibile specificare che il simbolo di compilazione condizionale `DEBUG` deve essere incluso. Per altre informazioni sulle impostazioni della pagina proprietà, vedere [Introduzione a Progettazione progetti](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Creazione e modifica di configurazioni di progetto  
   
@@ -131,7 +126,4 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
 ## <a name="see-also"></a>Vedere anche  
  [Understanding Build Configurations](../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  
  [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [(NIB) Procedura: Modificare le proprietà del progetto e le impostazioni di configurazione](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

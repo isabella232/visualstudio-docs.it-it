@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 41704ad1f43dadee1efd16102281173215bad4e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933784"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966166"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedura: Estendere il codice generato da Object Relational Designer
 Codice generato per il **O/R Designer** viene rigenerato quando vengono apportate modifiche alle classi di entità e altri oggetti nell'area di progettazione. A causa di questa rigenerazione, in genere tutto il codice aggiunto al codice generato viene sovrascritto quando la finestra di progettazione rigenera il codice. Il **O/R Designer** offre la possibilità di generare file di classe parziale in cui è possibile aggiungere il codice che non vengano sovrascritti. Un esempio di aggiunta di codice personalizzato al codice generato per il **O/R Designer** viene aggiunta la convalida dei dati a LINQ alle classi di SQL (entity). Per altre informazioni, vedere [Procedura: Aggiungere la convalida a classi di entità](../data-tools/how-to-add-validation-to-entity-classes.md).

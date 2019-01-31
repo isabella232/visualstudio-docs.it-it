@@ -1,26 +1,21 @@
 ---
 title: Eseguire unit test con Esplora test | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805108"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Visualizzare il codice sorgente di un metodo di test  
- Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri Test** dal menu di scelta rapida (tastiera: F12).  
+ Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e scegliere **Apri test** dal menu di scelta rapida (tastiera: F12).  
   
  ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
@@ -133,9 +128,9 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
   
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test  
   
-|Raggruppa|Descrizione|  
+|Gruppo|Description|  
 |-----------|-----------------|  
-|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|  
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|  
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|  
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|  
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|  
@@ -149,7 +144,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
   
  Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:  
   
-|Tratto|Descrizione|  
+|Tratto|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|  
@@ -182,7 +177,7 @@ TEST_METHOD(Method1)
   
 ### <a name="c-trait-attribute-macros"></a>Macro di attributo di tratto C++  
   
-|Macro|Descrizione|  
+|Macro|Description|  
 |-----------|-----------------|  
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|  
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|  
@@ -208,7 +203,7 @@ TEST_METHOD(Method1)
 > [!NOTE]
 >  Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.  
   
-|Qualificatore|Descrizione|  
+|Qualificatore|Description|  
 |---------------|-----------------|  
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|  
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|  
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Percorso file**|Cerca le corrispondenze nel nome file completo dei file di origine test.|  
 |**Nome completo**|Cerca le corrispondenze nel nome file completo di spazi dei nomi, classi e metodi di test.|  
 |**Output**|Cerca nei messaggi di errore definiti dall'utente che vengono scritti in stdout (standard output) o stderr (stderr). La sintassi per specificare i messaggi di output è definita dal framework di unit test.|  
-|**Risultato**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|  
+|**Risultato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|  
   
  Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Risorse esterne  
   
 ###  <a name="BKMK_Guidance"></a> Materiale sussidiario  
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 2: Testing unità Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire unit test del codice](../test/unit-test-your-code.md)   
  [Eseguire uno unit test come processo a 64 bit](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

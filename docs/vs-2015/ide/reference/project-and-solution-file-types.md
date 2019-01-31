@@ -1,14 +1,9 @@
 ---
 title: Tipi di file di soluzioni e di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - File Properties.CopyToOutputDirectory
 - File Properties.CustomToolNamespace
@@ -34,13 +29,13 @@ ms.assetid: 0ba5007b-465d-4efa-b1e4-f0ee68527649
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773336"
 ---
 # <a name="project-and-solution-file-types"></a>Tipi di file di soluzioni e di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "49283043"
 ## <a name="solution-files-sln-and-suo"></a>File di soluzione (.sln e .suo)  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa due tipi di file (.sln e .suo) per archiviare le impostazioni specifiche delle soluzioni. Questi file, noti collettivamente come file di soluzione, forniscono a Esplora soluzioni le informazioni necessarie per visualizzare un'interfaccia grafica per la gestione dei file. Consentono all'utente di concentrarsi sui progetti e sugli obiettivi finali anziché sull'ambiente stesso ogni volta che si riprendono le attività di sviluppo.  
   
-|Estensione|Nome|Descrizione|  
+|Estensione|nome|Description|  
 |---------------|----------|-----------------|  
 |sln|Soluzione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]|Organizza progetti, elementi di progetto ed elementi della soluzione nella soluzione.|  
 |suo|Solution User Options|Tiene traccia delle personalizzazioni a livello dell'utente apportate in Visual Studio, ad esempio i punti di interruzione.|  
@@ -68,6 +63,3 @@ ms.locfileid: "49283043"
   
 ## <a name="see-also"></a>Vedere anche  
  [Solutions and Projects](../../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)
-
-
-

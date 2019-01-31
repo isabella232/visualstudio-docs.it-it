@@ -1,14 +1,9 @@
 ---
 title: Uso dell'elenco attività | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801170"
 ---
 # <a name="using-the-task-list"></a>Utilizzo dell'elenco attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Usare **Elenco attività** per tenere traccia dei commenti di codice che usano t
   
 #### <a name="to-open-the-task-list"></a>Per aprire Elenco attività  
   
--   Nel menu **Visualizza** scegliere **Elenco attività** (tastiera: CTRL+\\,T).  
+-   Nel **View** menu, scegliere **elenco attività** (tastiera: CTRL+\\, T).  
   
      ![Finestra Elenco attività](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ Usare **Elenco attività** per tenere traccia dei commenti di codice che usano t
  Poiché `TODO` è un token predefinito, questo commento verrà visualizzato come attività `TODO` nell'elenco.  
   
 ###  <a name="customTokens"></a> Token personalizzati  
- Per impostazione predefinita, Visual Studio include i seguenti token: HACK, TODO, UNDONE, NOTE. I token non fanno distinzione tra maiuscole e minuscole.  
+ Per impostazione predefinita, Visual Studio include i seguenti token: HACK, TODO, ANNULLATO, NOTA. I token non fanno distinzione tra maiuscole e minuscole.  
   
  È inoltre possibile creare token personalizzati.  
   
@@ -127,12 +122,9 @@ Usare **Elenco attività** per tenere traccia dei commenti di codice che usano t
   
 #### <a name="to-create-a-shortcut"></a>Per creare un collegamento  
   
--   Posizionare il puntatore nella parte del codice in cui si desidera aggiungere un collegamento. Scegliere **Modifica &#124; Segnalibri &#124; Aggiungi collegamento Elenco attività** o premere (tastiera: Ctrl+K, Ctrl+H).  
+-   Posizionare il puntatore nella parte del codice in cui si desidera aggiungere un collegamento. Scegli **modifica &#124; segnalibri &#124; Aggiungi collegamento Elenco attività** o premere (tastiera: CTRL+K, CTRL+H  
   
      Per spostarsi tra i collegamenti nel codice, scegliere un collegamento nell'elenco, quindi fare clic su **Attività successiva** o **Attività precedente** nel menu di scelta rapida.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Elenco attività, Ambiente, finestra di dialogo Opzioni](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

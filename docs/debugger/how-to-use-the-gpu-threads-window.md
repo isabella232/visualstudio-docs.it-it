@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 4c246aec092cbaea8d5caf22cb8f204d32533ddb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952821"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: Utilizzare la finestra thread GPU (C++)
 Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni eseguite nella GPU, vedere [Panoramica di C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  

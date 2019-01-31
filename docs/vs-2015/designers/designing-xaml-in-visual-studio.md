@@ -1,24 +1,20 @@
 ---
 title: Progettazione di XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870229"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754186"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Progettazione di XAML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +41,7 @@ Visual Studio e Blend per Visual Studio offrono strumenti visivi per la creazion
 
      ![Esperienza di ricaricamento file](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Impostazioni e layout sincronizzati:** i layout personalizzati consentono di salvare e applicare personalizzazioni di layout delle finestre degli strumenti. Quando si effettua l’accesso con lo stesso account Microsoft, Visual Studio sincronizzerà queste personalizzazioni e le preferenze per Visual Studio e Blend per Visual Studio tra più computer. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+-   **Impostazioni e layout sincronizzati:** i layout personalizzati consentono di salvare e applicare personalizzazioni di layout delle finestre degli strumenti. Quando si effettua l’accesso con lo stesso account Microsoft, Visual Studio sincronizzerà queste personalizzazioni e le preferenze per Visual Studio e Blend per Visual Studio tra più computer. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 -   **Esplora soluzioni comune:** Esplora soluzioni offre una visualizzazione organizzata dei progetti e dei relativi file, nonché l'accesso immediato ai comandi associati. Con Esplora soluzioni è più facile lavorare con progetti di grandi imprese. Vedere [Solutions and Projects](../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)
 

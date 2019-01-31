@@ -1,14 +1,9 @@
 ---
 title: Visualizzazioni dei dati sui conflitti di risorse | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
 - concurrency profiling method views
@@ -16,13 +11,13 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1d7af4382444b6db644d6b106bb4b695b49d3cce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1d672d90254626cfef9bd87bfef9dcf2426aa346
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756600"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,6 +61,3 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 ## <a name="reference"></a>Riferimenti  
  [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)  
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
-
-
-

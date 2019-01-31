@@ -1,14 +1,9 @@
 ---
-title: 'Procedura dettagliata: Creazione di un ambiente di compilazione con più computer | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione di più Computer di compilazione ambiente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,15 +11,15 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769074"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per creare un ambiente di compilazione all'interno dell'organizzazione, è possibile installare Visual Studio in un computer host, quindi copiare i file e le impostazioni in un altro computer in modo che quest'ultimo possa partecipare alle compilazioni. Non è necessario installare Visual Studio nel secondo computer.  
@@ -431,6 +426,3 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 ## <a name="see-also"></a>Vedere anche  
  [Preparazione di un computer per il test per l'esecuzione di un file eseguibile di debug](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)
-
-
-

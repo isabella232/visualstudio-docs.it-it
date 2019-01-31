@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8453f00dda843f6940c518b7ed3ea83c8c261476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f185aebdd23bffbcf7b793a9e3fbda4a0b55271
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959369"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
 Per eseguire il debug, è possibile usare la **RPTn** e **RPTFn** macro, definite in CRTDBG. H, per sostituire l'uso di `printf` istruzioni. Non devi inclose nella **#ifdef**s, poiché essi vengono automaticamente eliminate nel rilascio quando compilare **debug** non è definito.  

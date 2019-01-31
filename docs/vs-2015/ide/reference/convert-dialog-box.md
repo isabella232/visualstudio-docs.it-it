@@ -1,14 +1,9 @@
 ---
 title: Finestra di dialogo Converti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
 - JLCA_Conversion_F1
@@ -19,13 +14,13 @@ ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5d08c18daf91e9fa4d879d9a2f12242a1c75b8ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282997"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758567"
 ---
 # <a name="convert-dialog-box"></a>Finestra di dialogo Converti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,8 +41,5 @@ La finestra di dialogo **Converti** consente di selezionare uno strumento di con
 2.  Selezionare lo strumento appropriato per l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [NOTINBUILD - Procedura: Aggiornare un progetto da Visual Basic 6.0](http://msdn.microsoft.com/en-us/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD - procedura: Aggiornare un progetto da Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
-
-
-

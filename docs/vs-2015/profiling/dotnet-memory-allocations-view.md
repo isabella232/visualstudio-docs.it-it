@@ -1,14 +1,9 @@
 ---
 title: Visualizzazione Allocazioni per la memoria .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798807"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
   
 -   Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul tipo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome della funzione o del tipo allocato.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
@@ -64,6 +59,3 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
 |**% byte inclusivi**|- Per una funzione, la percentuale di tutta la memoria allocata nell'esecuzione della profilatura che rappresenta allocazioni del tipo padre da parte della funzione.<br />- Per un tipo, la percentuale di tutta la memoria allocata nell'esecuzione della profilatura che è stata allocata per le istanze del tipo.|  
 |**Byte esclusivi**|- Per una funzione, il numero di byte di memoria allocati dalla funzione per gli oggetti del tipo padre. Questo numero non include la memoria allocata dalle funzioni figlio.<br />- Per un tipo, il numero totale di byte allocati nell'esecuzione della profilatura per le istanze del tipo.|  
 |**% byte esclusivi**|- Per una funzione, la percentuale di tutta la memoria allocata nell'esecuzione della profilatura che rappresenta allocazioni esclusive del tipo padre da parte della funzione.<br />- Per un tipo, la percentuale di tutta la memoria allocata nell'esecuzione della profilatura che è stata allocata per le istanze del tipo.|
-
-
-

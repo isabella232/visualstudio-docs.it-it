@@ -1,14 +1,9 @@
 ---
 title: Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775827"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49247910"
 ##  <a name="MouseClassDesigner"></a> Uso del mouse in Progettazione classi  
  Nei diagrammi classi sono supportate le operazioni del mouse seguenti:  
   
-|Combinazione del mouse|Contesto|Descrizione|  
+|Combinazione del mouse|Contesto|Description|  
 |-----------------------|-------------|-----------------|  
 |Doppio clic|Elementi forma|Apre l'editor del codice.|  
 ||Connettore simbolo|Espande/comprime il simbolo.|  
@@ -70,7 +65,7 @@ ms.locfileid: "49247910"
 ##  <a name="KeyboardClassDesigner"></a> Uso della tastiera in Progettazione classi  
  Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:  
   
-|Chiave|Contesto|Descrizione|  
+|Chiave|Contesto|Description|  
 |---------|-------------|-----------------|  
 |Tasti di direzione|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|  
 ||Forme di primo livello|Consentono di spostare forme nel diagramma.|  
@@ -116,6 +111,3 @@ ms.locfileid: "49247910"
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione e configurazione di membri di tipi (Progettazione classi)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

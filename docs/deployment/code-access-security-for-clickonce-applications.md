@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018345"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sicurezza dall'accesso di codice per applicazioni ClickOnce
 Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vincoli di sicurezza per l'accesso al codice. Per poter scrivere correttamente le applicazioni ClickOnce è quindi importante comprendere le implicazioni di questo tipo di sicurezza.  
@@ -56,7 +56,7 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
   
  Come punto di partenza per la configurazione delle autorizzazioni, è possibile selezionare un'area di sicurezza dall'elenco **Area** nella pagina **Sicurezza** . Se l'applicazione potrebbe essere potenzialmente distribuita da più aree, selezionare l'area con il minor numero di autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Le proprietà che è possibile impostare variano in base al set di autorizzazioni. Non tutti i set di autorizzazioni dispongono di proprietà configurabili. Per altre informazioni sull'elenco completo di autorizzazioni che l'applicazione può richiedere, vedere <xref:System.Security.Permissions>. Per altre informazioni su come impostare le autorizzazioni per una zona personalizzata, vedere [come: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ Le proprietà che è possibile impostare variano in base al set di autorizzazioni. Non tutti i set di autorizzazioni dispongono di proprietà configurabili. Per altre informazioni sull'elenco completo di autorizzazioni che l'applicazione può richiedere, vedere <xref:System.Security.Permissions>. Per altre informazioni su come impostare le autorizzazioni per una zona personalizzata, vedere [come: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Eseguire il debug di un'applicazione con autorizzazioni limitate  
  È probabile che uno sviluppatore usi le autorizzazioni di attendibilità totale nel computer di sviluppo. Quindi, quando esegue il debug dell'applicazione, non visualizzerà le stesse eccezioni di sicurezza visualizzate dagli utenti quando eseguono la stessa operazione con autorizzazioni limitate.  
