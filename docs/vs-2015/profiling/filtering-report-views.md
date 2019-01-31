@@ -1,27 +1,22 @@
 ---
 title: Filtro delle visualizzazioni report | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b5ce703fdc3b0d20feda83b59706e7c4792d2ade
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793087"
 ---
 # <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51753438"
   
  È anche possibile limitare un report a un intervallo di tempo usando la sequenza temporale grafica della visualizzazione Riepilogo. Vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Per escludere il codice di sistema e di terze parti da un report, vedere [Procedura: Filtrare visualizzazioni report degli strumenti per la profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Per escludere il codice di sistema e di terze parti da un report, vedere [Procedura: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedure  
   
@@ -42,7 +37,7 @@ ms.locfileid: "51753438"
   
 2.  Per ogni clausola da aggiungere a un filtro, selezionare o immettere i valori nei campi seguenti di una riga.  
   
-    |Campo|Descrizione|  
+    |Campo|Description|  
     |-----------|-----------------|  
     |**And/Or**|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|  
     |**Campo**|Selezionare il campo del report da usare nella clausola del filtro dall'elenco di campi dati visualizzato.|  
@@ -101,6 +96,3 @@ ms.locfileid: "51753438"
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione delle visualizzazioni dei rapporti degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Attività AL (Assembly Linker) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758648"
 ---
 # <a name="al-assembly-linker-task"></a>Attività AL (Assembly Linker)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ L'attività AL esegue il wrapping di AL.exe, uno strumento distribuito con [!INC
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `AL` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`AlgorithmID`|Parametro `String` facoltativo.<br /><br /> Specifica un algoritmo per generare un hash per tutti i file di un assembly su più file, ad eccezione del file contenente il manifesto dell'assembly. Per altre informazioni, vedere la documentazione relativa all'opzione `/algid` di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`BaseAddress`|Parametro `String` facoltativo.<br /><br /> Specifica l'indirizzo in corrispondenza del quale caricare una DLL nel computer dell'utente in fase di esecuzione. Il caricamento delle applicazioni risulta più veloce se si specifica l'indirizzo di base delle DLL, anziché lasciare al sistema operativo il compito di rilocare le DLL nello spazio di processo. Questo parametro corrisponde all'opzione /base [address] di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
@@ -103,6 +98,3 @@ L'attività AL esegue il wrapping di AL.exe, uno strumento distribuito con [!INC
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
  [Attività](../msbuild/msbuild-tasks.md)
-
-
-

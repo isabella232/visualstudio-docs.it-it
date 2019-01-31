@@ -1,27 +1,22 @@
 ---
 title: SDK del visualizzatore di concorrenza | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769320"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +85,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Per usare un nuovo provider marcatori in un progetto C++ o C  
   
-1.  Usare la funzione `CvInitProvider` per inizializzare un PCV_PROVIDER.  Il costruttore accetta un GUID* e PCV_PROVIDER*\*.  
+1.  Usare la funzione `CvInitProvider` per inizializzare un PCV_PROVIDER.  Il costruttore accetta un GUID\* e PCV_PROVIDER\*.  
   
 2.  Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo immettere il GUID usato per creare il provider e una descrizione del provider.  
   
@@ -129,12 +124,9 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Descrizione|  
+|Titolo|Description|  
 |-----------|-----------------|  
 |[Riferimento alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|  
 |[Riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Viene descritta l'API del visualizzatore di concorrenza per il codice gestito.|  
 |[Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)|Informazioni di riferimento sulle visualizzazioni e sui rapporti dei file di dati di profilatura che sono generati tramite il metodo di concorrenza e che includono dati di esecuzione thread.|
-
-
-

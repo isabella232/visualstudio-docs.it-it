@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d590e98fc781093c6461bea78665ec0000875b7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21329a89e5ca6971143de9cf76d357be0f86e9ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992594"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Errore: Controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto
 Questo errore si verifica quando il servizio di amministrazione IIS non risponde. In questo modo viene indicato che l'installazione di IIS presenta un problema. Verificare innanzitutto che il servizio sia in esecuzione tramite lo strumento **Servizi** in **Strumenti di amministrazione**.  
@@ -30,7 +30,7 @@ Questo errore si verifica quando il servizio di amministrazione IIS non risponde
   
 -   Reinstallare IIS tramite il pannello di controllo **Installazione applicazioni**.  
   
--   -oppure-  
+-   oppure  
   
 -   Disinstallare IIS dal computer mediante Installazione applicazioni in Pannello di controllo. Se è stato disinstallato IIS ma si verificano ancora problemi, controllare il Registro di sistema e accertarsi che questa chiave non esista più:  
   

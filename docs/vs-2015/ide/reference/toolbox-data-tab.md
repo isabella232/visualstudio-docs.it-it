@@ -1,14 +1,9 @@
 ---
 title: Casella degli strumenti, scheda Dati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
 - Data tab, Toolbox
@@ -17,13 +12,13 @@ ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768958"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,14 +27,14 @@ ms.locfileid: "53648561"
 Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La scheda **Dati** della **Casella degli strumenti** viene visualizzata quando si crea un progetto a cui è associata una finestra di progettazione. Per impostazione predefinita, la **Casella degli strumenti** viene visualizzata nell'ambiente di sviluppo integrato di Visual Studio; se è necessario visualizzare la **Casella degli strumenti**, selezionare **Casella degli strumenti** dal menu **Visualizza**.  
   
 > [!TIP]
->  La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [creazione di applicazioni dati con Visual Studio](http://msdn.microsoft.com/en-us/28edce21-220a-484c-b461-a75b0232d293).  
+>  La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [creazione di applicazioni dati con Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente  
  Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.  
   
 |nome|Description|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|Aggiunge un'istanza di un set di dati tipizzato o non tipizzato al form o al componente. Quando si trascina questo oggetto in una finestra di progettazione, viene visualizzata una finestra di dialogo che consente di selezionare una classe Dataset tipizzata esistente o di specificare che si vuole creare un nuovo set di dati non tipizzato vuoto. **Nota:**  Non si usa la <xref:System.Data.DataSet> dell'oggetto sul **casella degli strumenti** per creare un nuovo schema di dataset tipizzato e una classe. Per altre informazioni, vedere [Create and configure datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).|  
+|<xref:System.Data.DataSet>|Aggiunge un'istanza di un set di dati tipizzato o non tipizzato al form o al componente. Quando si trascina questo oggetto in una finestra di progettazione, viene visualizzata una finestra di dialogo che consente di selezionare una classe Dataset tipizzata esistente o di specificare che si vuole creare un nuovo set di dati non tipizzato vuoto. **Nota:**  l'oggetto <xref:System.Data.DataSet> nella **Casella degli strumenti** non viene usato per creare una nuova classe e un nuovo schema di set di dati tipizzato. Per altre informazioni, vedere [Create and configure datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).|  
 |<xref:System.Windows.Forms.DataGridView>|Offre un sistema efficiente e flessibile per visualizzare i dati in formato tabulare.|  
 |<xref:System.Windows.Forms.BindingSource>|Semplifica il processo di associazione dei controlli a un'origine dati sottostante.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Rappresenta l’interfaccia utente di spostamento e modifica per i controlli associati a dati contenuti in un form.|  

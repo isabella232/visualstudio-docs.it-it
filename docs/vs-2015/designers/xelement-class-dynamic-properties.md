@@ -1,25 +1,20 @@
 ---
 title: Proprietà dinamiche della classe XElement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 15e3ad45f9588c7e43a58e40e6f75419ad505e04
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b6d4c2d7b83ede687e7335627770a5576003463
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796155"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Proprietà dinamiche della classe XElement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ In questa sezione vengono descritte le proprietà dinamiche della <xref:System.X
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Argomento|Descrizione|  
+|Argomento|Description|  
 |-----------|-----------------|  
 |[Attributo](../designers/attribute-xelement-dynamic-property.md)|Ottiene un indicizzatore usato per recuperare l'attributo che corrisponde a un nome espanso specificato.|  
 |[Elemento](../designers/element-xelement-dynamic-property.md)|Ottiene un indicizzatore usato per recuperare l'elemento figlio che corrisponde a un nome espanso specificato.|  
@@ -41,6 +36,3 @@ In questa sezione vengono descritte le proprietà dinamiche della <xref:System.X
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   
  [Proprietà dinamiche in LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)   
  [Proprietà dinamiche della classe XAttribute](../designers/xattribute-class-dynamic-properties.md)
-
-
-

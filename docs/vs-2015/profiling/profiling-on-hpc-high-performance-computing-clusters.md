@@ -1,14 +1,9 @@
 ---
 title: Profilatura su cluster HPC (High Performance Computing) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802314"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilatura su cluster HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ ms.locfileid: "51809155"
 |||  
 |-|-|  
 |*%HeadNode%*|Nome del nodo head del cluster.|  
-|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] il percorso è: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Nel [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] supporti di installazione, il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] supporti di installazione, il percorso è: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Esecuzione della profilatura su un nodo di calcolo HPC  
  È possibile configurare una sessione di profilatura tramite la Creazione guidata sessione di prestazioni HPC per specificare informazioni sul cluster HPC e sulla destinazione. Eventuali opzioni aggiuntive possono essere impostate nelle pagine delle proprietà della sessione di prestazioni. Gli strumenti di profilatura distribuiscono automaticamente i file binari di destinazione necessari e avviano il profiler e l'applicazione HPC.  
@@ -131,7 +126,7 @@ ms.locfileid: "51809155"
   
 ### <a name="hpc-launch-properties"></a>Proprietà avvio HPC  
   
-|Proprietà|Descrizione|  
+|Proprietà|Description|  
 |--------------|-----------------|  
 |**Nodo head**|Specifica il computer che funge da nodo head HPC nell'esecuzione della profilatura.|  
 |**Numero di processi**|Specifica il numero di istanze dell'applicazione da eseguire nell'applicazione profilata.|  
@@ -142,7 +137,7 @@ ms.locfileid: "51809155"
   
 ### <a name="advanced-properties"></a>Proprietà avanzate  
   
-|Proprietà|Descrizione|  
+|Proprietà|Description|  
 |--------------|-----------------|  
 |**Nome progetto**|Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] corrente.|  
 |**Esegui pulizia all'arresto del profiler**|Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE.|  
@@ -155,6 +150,3 @@ ms.locfileid: "51809155"
 |**Argomenti script pre-profilatura**|Specifica gli argomenti da passare allo script pre-profilatura.|  
 |**Script post-profilatura**|Specifica il percorso e il nome file di uno script da eseguire nel computer di sviluppo locale al termine della sessione di profilatura.|  
 |**Argomenti script post-profilatura**|Specifica gli argomenti da passare allo script post-profilatura.|
-
-
-

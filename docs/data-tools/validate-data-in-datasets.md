@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936191"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004396"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di conferma che i valori immessi negli oggetti di data è conforme ai vincoli all'interno dello schema del set di dati. Il processo di convalida verifica anche che questi valori sono i seguenti le regole che sono state stabilite per l'applicazione. È buona norma convalidare i dati prima dell'invio degli aggiornamenti al database sottostante. In questo modo si riduce gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.

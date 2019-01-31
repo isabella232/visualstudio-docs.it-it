@@ -1,14 +1,9 @@
 ---
 title: Finestra di dialogo Informazioni assembly | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAssemblyInfo
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8526dfbe970c43e1ab55534c13a1e6708b2b4693
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d05e1fd9afa2097a3e216421b5b0f3d23bfc518
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778776"
 ---
 # <a name="assembly-information-dialog-box"></a>Finestra di dialogo Informazioni assembly
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,6 +65,3 @@ ms.locfileid: "49248027"
 ## <a name="see-also"></a>Vedere anche  
  [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)  (Pagina Applicazione, Creazione progetti (Visual Basic))  
  [Attributi](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
-
-
-

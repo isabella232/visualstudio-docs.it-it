@@ -1,14 +1,9 @@
 ---
 title: Gestione dei riferimenti in un progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -27,13 +22,13 @@ ms.assetid: 05d1c51b-44f3-4973-8a11-6c919b08ad62
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763650"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 ## <a name="references-to-shared-components-at-run-time"></a>Riferimenti a componenti condivisi in fase di esecuzione  
  In fase di esecuzione i componenti devono trovarsi nel percorso di output del progetto o nella [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Se il progetto contiene un riferimento a un oggetto che non è in uno di questi percorsi, è necessario copiare il riferimento al percorso di output del progetto quando si compila il progetto. La <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> proprietà indica se la copia deve essere eseguita. Se il valore è **True**, il riferimento viene copiato nella directory del progetto quando si compila quest'ultimo. Se il valore è **False**, il riferimento non viene copiato.  
   
- Se si distribuisce un'applicazione che contiene un riferimento a un componente personalizzato registrato nella GAC (Global Assembly Cache), tale componente non verrà distribuito con l'applicazione, indipendentemente dall'impostazione di <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] era possibile impostare la proprietà <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> su un riferimento per garantire che l'assembly venisse distribuito. A questo punto, è necessario aggiungere manualmente l'assembly nella cartella \Bin. Con questa operazione è possibile mettere tutto il codice personalizzato sotto controllo, riducendo il rischio di pubblicare codice personalizzato con cui non si ha familiarità.  
+ Se si distribuisce un'applicazione che contiene un riferimento a un componente personalizzato registrato nella GAC (Global Assembly Cache), tale componente non verrà distribuito con l'applicazione, indipendentemente dall'impostazione di <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]era possibile impostare la proprietà <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> su un riferimento per garantire che l'assembly venisse distribuito. A questo punto, è necessario aggiungere manualmente l'assembly nella cartella \Bin. Con questa operazione è possibile mettere tutto il codice personalizzato sotto controllo, riducendo il rischio di pubblicare codice personalizzato con cui non si ha familiarità.  
   
  Per impostazione predefinita, la proprietà <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> è impostata su **False** se l'assembly o il componente si trova nella Global Assembly Cache o un componente del framework. In caso contrario, il valore è impostato su **True**. I riferimenti da progetto a progetto sono sempre impostati su **True**.  
   
@@ -113,7 +108,7 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 ## <a name="project-to-project-references"></a>Riferimenti da progetto a progetto  
  I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile crearli tramite la scheda **Progetto** . Visual Studio può trovare un assembly se viene specificato un percorso al progetto.  
   
- In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Per altre informazioni, vedere [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) e [procedura: creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).  
+ In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Per altre informazioni, vedere [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) e [come: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.  
@@ -125,4 +120,3 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [Programmazione con gli assembly](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
-

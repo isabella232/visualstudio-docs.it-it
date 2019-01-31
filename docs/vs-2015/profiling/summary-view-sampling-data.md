@@ -1,14 +1,9 @@
 ---
 title: 'Visualizzazione Riepilogo: dati di campionamento | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method, Summary view
 - Summary view
@@ -16,13 +11,13 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5e470cee87a2d83f72df369d79ac337fce5412ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8570692ec620ee50cd24f3fa95ceec8b21172919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803085"
 ---
 # <a name="summary-view---sampling-data"></a>Visualizzazione Riepilogo: dati di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +28,14 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 >  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
   
 ## <a name="timeline-graph"></a>Grafico della sequenza temporale  
- Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra la percentuale di utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni dei rapporti dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra la percentuale di utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 ## <a name="hot-path"></a>Percorso critico  
  In **Percorso critico** viene visualizzato il percorso di esecuzione in cui è stata raccolta la maggior parte dei campioni. È possibile fare clic su una funzione per attivare la visualizzazione Dettagli funzione per la funzione. Per visualizzare altre visualizzazioni per la funzione, fare clic con il pulsante destro del mouse sulla funzione e scegliere una visualizzazione nell'elenco.  
   
  Il **Percorso critico** include i dati seguenti per ogni funzione:  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome della funzione.|  
 |**% esempi inclusivi**|Percentuale di tutti i campioni che si sono verificati durante l'esecuzione di questa funzione o di una funzione chiamata da questa funzione.|  
@@ -53,7 +48,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
   
  L'opzione **Funzioni che svolgono più lavoro individuale** include i dati seguenti per ogni funzione:  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome della funzione.|  
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione di codice da parte della funzione nel corpo della funzione. Da questa percentuale sono esclusi i campioni raccolti durante l'esecuzione delle funzioni chiamate da questa funzione.|  
@@ -61,6 +56,3 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Riepilogo](../profiling/summary-view-dotnet-memory-data.md)   
  [Visualizzazione Riepilogo](../profiling/summary-view-instrumentation-data.md)
-
-
-

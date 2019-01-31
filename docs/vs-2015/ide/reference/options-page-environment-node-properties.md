@@ -1,14 +1,9 @@
 ---
 title: Pagina delle opzioni, Proprietà del nodo Ambiente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
@@ -16,13 +11,13 @@ ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753516"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="general"></a>Generale  
  `DTE.Properties("Environment", "General")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |ShowStatusBar|Get/Set (Boolean)|Determina se viene visualizzata o meno la barra di stato.|  
 |WindowMenuContainsNItems|Get/Set (Short)|Determina la modalità di contenimento delle finestre di documento nella parte inferiore del menu Finestre.|  
@@ -48,7 +43,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="add-inmacros-security"></a>Sicurezza macro/componenti aggiuntivi  
  `DTE.Properties("Environment", "AddinMacrosSecurity")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Valore|Description|  
 |------------------------|-----------|-----------------|  
 |MacrosEnabled|Get/Set (Boolean)|Consente l'esecuzione delle macro.|  
 |AddinsEnabled|Get/Set (Boolean)|Consente il caricamento dei componenti aggiuntivi.|  
@@ -57,7 +52,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="documents"></a>Documenti  
  `DTE.Properties("Environment", "Documents")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Valore|Description|  
 |------------------------|-----------|-----------------|  
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Determina se la finestra del documento corrente verrà riutilizzata per l'apertura di un nuovo file se il documento corrente viene salvato. `false` indica di aprire sempre una nuova finestra per ogni documento aperto.|  
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Determina se l'ambiente ricarica automaticamente i file aperti nell'IDE quando il sistema operativo notifica all'IDE che i file sono stati modificati su disco.|  
@@ -74,7 +69,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="extension-manager"></a>Gestione estensioni  
  `DTE.Properties("Environment", "ExtensionManager")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Valore|Description|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (Boolean)|Carica le estensioni per utente quando Visual Studio viene eseguito con credenziali di amministratore. Dopo la modifica di questo valore, è necessario riavviare Visual Studio.|  
 |EnableOnline|Get/Set (Boolean)|Consente l'accesso alle estensioni di Visual Studio Gallery.|  
@@ -83,7 +78,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="find-and-replace"></a>Trova e sostituisci  
  `DTE.Properties("Environment", "FindAndReplace")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |ShowWarningMessages|Get/Set (Boolean)|Visualizza messaggi di avviso.|  
 |InitializeFromEditor|Get/Set (Boolean)|Inserisce automaticamente il testo dell'editor nella casella **Trova**.|  
@@ -93,7 +88,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="import-and-export-settings"></a>Importa/Esporta impostazioni  
  `DTE.Properties("Environment", "Import and Export Settings")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |TrackTeamSettings|Get/Set (Boolean)|Usa le impostazioni nel file specificato da TeamSettingsFile.|  
 |TeamSettingsFile|Get/Set (String)|Nome del file che include le impostazioni del team.|  
@@ -102,21 +97,21 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="international-settings"></a>Impostazioni internazionali  
  `DTE.Properties("Environment", "International")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |Linguaggio|Get/Set (String)|Valore LCID per la lingua corrente per Visual Studio.|  
   
 ## <a name="keyboard"></a>Tastiera  
  `DTE.Properties("Environment", "Keyboard")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Valore|Description|  
 |------------------------|-----------|-----------------|  
 |Scheme|Get/Set (String)|Restituisce una stringa contenente uno schema predefinito, una stringa contenente il percorso completo del file con estensione vsk caricato o "(Predefinito)" se non viene caricato alcun file con estensione vsk.|  
   
 ## <a name="projects-and-solution"></a>Progetti e soluzioni  
  `DTE.Properties("Environment", "ProjectsAndSolution")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |OnRunOrPreview|Get/Set (String)|Determina se l'IDE salva tutto prima dell'anteprima o dell'esecuzione di un progetto compilato.|  
 |ProjectsLocation|Get/Set (String)|Determina la directory predefinita in cui i nuovi progetti vengono salvati dalla finestra di dialogo **Aggiungi progetto**.|  
@@ -139,9 +134,9 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="startup"></a>Avvio  
  `DTE.Properties("Environment", "Startup")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Valore|Description|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Azione da eseguire all'avvio, da <xref:EnvDTE.vsStartUp>, con valori compresi tra 0 e 5:<br /><br /> - 0: Apri home page<br />- 1: Carica ultima soluzione caricata<br />- 2: Mostra finestra **Apri progetto**<br />- 3: Mostra finestra **Nuovo progetto**<br />- 4: Visualizza ambiente vuoto<br />- 5: Mostra pagina iniziale|  
+|OnStartUp|Get/Set (Enum)|Azione da eseguire all'avvio, da <xref:EnvDTE.vsStartUp>, con valori compresi tra 0 e 5:<br /><br /> -   0: Apri home page<br />-   1: Carica ultima soluzione caricata<br />-   2: Mostra finestra **Apri progetto**<br />-   3: Mostra finestra **Nuovo progetto**<br />-   4: Visualizza ambiente vuoto<br />-   5: Mostra pagina iniziale|  
 |StartPageRSSUrl|Get/Set (String)|URL del feed RSS usato all'avvio.|  
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Aggiorna la pagina iniziale dopo ogni passaggio dell'intervallo specificato in StartPageRefreshInterval.|  
 |StartPageRefreshInterval|Get/Set (Short)|Intervallo in minuti per l'aggiornamento della pagina iniziale.|  
@@ -149,7 +144,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="tasklist"></a>TaskList  
  `DTE.Properties("Environment", "TaskList")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |ConfirmTaskDeletion|Get/Set (Boolean)|Specifica se viene visualizzata una finestra di conferma quando si eliminano attività dall'**Elenco attività**.|  
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Specifica se viene visualizzato un avviso all'aggiunta di un'attività definita dall'utente che non verrà visualizzata.|  
@@ -159,7 +154,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="web-browser"></a>Web browser  
  `DTE.Properties("Environment", "WebBrowser")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Valore|Description|  
 |------------------------|-----------|-----------------|  
 |HomePage|Get/Set (String)|Rappresenta l'URL della home page.|  
 |SearchPage|Get/Set (String)|Rappresenta l'URL della pagina di ricerca.|  
@@ -172,6 +167,3 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
  [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
-
-
-

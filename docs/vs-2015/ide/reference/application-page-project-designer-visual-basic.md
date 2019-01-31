@@ -1,14 +1,9 @@
 ---
 title: Pagina Applicazione, Creazione progetti (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774860"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 > [!NOTE]
 >  I pacchetti prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono installati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario specificare manualmente i prerequisiti in modo che vi sia corrispondenza.  
   
- Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) (Procedura: Destinare una versione di .NET Framework) e [Visual Studio Multi-Targeting Overview](../../ide/visual-studio-multi-targeting-overview.md) (Cenni preliminari sul multitargeting di Visual Studio).  
+ Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Tipo di applicazione**  
  Specifica il tipo di applicazione da compilare. Per app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.  
@@ -87,7 +82,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
   
  Se l'opzione **Abilita framework applicazione** è selezionata (impostazione predefinita), questo elenco ha come intestazione **Modulo di avvio** e mostra solo moduli, poiché il framework applicazione supporta solo moduli di avvio, non oggetti.  
   
- Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per altre informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.  
+ Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per ulteriori informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.  
   
  Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.  
   
@@ -116,7 +111,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  Le impostazioni seguenti sono disponibili nella sezione **Proprietà framework applicazione Windows**. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Nella sezione successiva sono descritte le impostazioni **Proprietà framework applicazione Windows**per le applicazioni Windows Presentation Foundation (WPF).  
   
  **Attiva stili di visualizzazione XP**  
- Consente di abilitare o disabilitare gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Per impostazione predefinita questi stili sono abilitati. Per altre informazioni sugli stili di visualizzazione di Windows XP, vedere [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0) (Funzionalità di Windows XP e controlli Windows Forms).  
+ Consente di abilitare o disabilitare gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Per impostazione predefinita questi stili sono abilitati. Per altre informazioni sugli stili di visualizzazione di Windows XP, vedere [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0) (Funzionalità di Windows XP e controlli Windows Forms).  
   
  **Rendi a istanza singola**  
  Selezionare questa casella di controllo per impedire agli utenti di eseguire più istanze dell'applicazione. Per impostazione predefinita, questa casella di controllo è deselezionata. Questa impostazione consente l'esecuzione di più istanze dell'applicazione.  
@@ -166,6 +161,3 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
   
 ## <a name="see-also"></a>Vedere anche  
 [Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

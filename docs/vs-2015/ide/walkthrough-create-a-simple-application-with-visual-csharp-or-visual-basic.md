@@ -1,27 +1,22 @@
 ---
-title: "Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic | Microsoft Docs"
-ms.custom: ''
+title: "Procedura dettagliata: Creare un'applicazione semplice con oggetto visivo C# o Visual Basic | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802616"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: Creare un'applicazione semplice con oggetto visivo C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Completando questa procedura dettagliata, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Durante la procedura gli utenti potranno creare una semplice applicazione in stile "Hello, World", progettare l'interfaccia utente, aggiungere codice ed eseguire il debug degli errori, acquisendo al contempo ulteriori informazioni su come lavorare in IDE (Integrated Development Environment).  
@@ -35,14 +30,14 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
  [Eseguire il debug e il test dell'applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Questa procedura dettagliata è basata su Visual Studio Professional, che offre il modello Applicazione WPF in cui compilare il progetto. Il modello è disponibile anche in Visual Studio Express per Windows Desktop, ma non in Visual Studio Express per Windows e Visual Studio Express per il Web. Per informazioni introduttive su come usare Visual Studio Express per Windows, visitare il [Centro per sviluppatori per app di Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Per informazioni introduttive su come usare Visual Studio Express per il Web, vedere [Get Started with ASP.NET](http://www.asp.net/get-started)(Introduzione ad ASP.NET). Inoltre, l'edizione di Visual Studio e le impostazioni usate determinano i nomi e le posizioni di alcuni elementi dell'interfaccia utente. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Questa procedura dettagliata è basata su Visual Studio Professional, che offre il modello Applicazione WPF in cui compilare il progetto. Il modello è disponibile anche in Visual Studio Express per Windows Desktop, ma non in Visual Studio Express per Windows e Visual Studio Express per il Web. Per informazioni introduttive su come usare Visual Studio Express per Windows, visitare il [Centro per sviluppatori per app di Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Per informazioni introduttive su come usare Visual Studio Express per il Web, vedere [Get Started with ASP.NET](http://www.asp.net/get-started)(Introduzione ad ASP.NET). Inoltre, l'edizione di Visual Studio e le impostazioni usate determinano i nomi e le posizioni di alcuni elementi dell'interfaccia utente. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_ConfigureIDE"></a> Configurare IDE  
  Quando si avvia Visual Studio per la prima volta, viene chiesto di effettuare l'accesso con un Account di servizio Microsoft (MSA). Per informazioni, vedere [Sign into Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)(Accedere a Visual Studio). Non è necessario accedere adesso ed è possibile farlo in seguito.  
   
  All'avvio di Visual Studio, scegliere quindi una combinazione di impostazioni che applichi un set di personalizzazioni predefinite all'IDE. Ogni combinazione di impostazioni è stata progettata per semplificare lo sviluppo di applicazioni.  
   
- In questa procedura dettagliata si presume che sia stata applicata l'opzione **Impostazioni generali per lo sviluppo**, che richiede la quantità minima di personalizzazione possibile per IDE. Se si è già scelto C# o Visual Basic (entrambi costituiscono un'ottima scelta), non è necessario modificare le impostazioni.  Se si vogliono modificare le impostazioni, è possibile usare l' **Importazione/Esportazione guidata delle impostazioni**. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ In questa procedura dettagliata si presume che sia stata applicata l'opzione **Impostazioni generali per lo sviluppo**, che richiede la quantità minima di personalizzazione possibile per IDE. Se si è già scelto C# o Visual Basic (entrambi costituiscono un'ottima scelta), non è necessario modificare le impostazioni.  Se si vogliono modificare le impostazioni, è possibile usare l' **Importazione/Esportazione guidata delle impostazioni**. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Dopo aver aperto Visual Studio, sarà possibile identificare la finestre degli strumenti, i menu, le barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, la maggiore parte del tempo verrà dedicata a questa area centrale.  
   
@@ -52,7 +47,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
  È possibile apportare personalizzazioni aggiuntive a Visual Studio, ad esempio modificare il tipo di carattere e la dimensione del testo nell'editor o il tema di colore di IDE, mediante la finestra di dialogo **Opzioni** . A seconda della combinazione di impostazioni applicata, alcuni elementi della finestra di dialogo potrebbero non essere visualizzati automaticamente. È possibile assicurarsi che tutte le opzioni possibili vengano visualizzate selezionando la casella di controllo **Mostra tutte le impostazioni** .  
   
- Figura 3: finestra di dialogo Opzioni  
+ Figura 3: Opzioni (finestra di dialogo)  
   
  ![Finestra di dialogo Opzioni con l'opzione Mostra tutte le impostazioni](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -72,7 +67,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    ![IDE con tema scuro applicato](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   Il tema colori usato per le immagini nel resto di questa procedura dettagliata è Chiaro. Per altre informazioni sulla personalizzazione dell'IDE, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Il tema colori usato per le immagini nel resto di questa procedura dettagliata è Chiaro. Per altre informazioni sulla personalizzazione dell'IDE, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Creare una semplice applicazione  
   
@@ -97,9 +92,9 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
     ![Creare un progetto WPF in Visual C&#35;, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. In WPF Designer vengono illustrate una visualizzazione Progettazione e una visualizzazione XAML suddivise di MainWindow.xaml. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione.  È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. Per altre informazioni, vedere [Progettazione WPF per gli sviluppatori di Windows Form](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca). In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.  
+   Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. In WPF Designer vengono illustrate una visualizzazione Progettazione e una visualizzazione XAML suddivise di MainWindow.xaml. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione.  È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. Per altre informazioni, vedere [Progettazione WPF per gli sviluppatori di Windows Form](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.  
   
-   Figura 5: elementi di progetto  
+   Figura 5: Elementi di progetto  
   
    ![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -137,7 +132,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.  
   
-   Figura 7: finestra Greetings con il controllo TextBlock  
+   figure Finestra Greetings con TextBlock (controllo)  
   
    ![Controllo TextBlock nel modulo Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -167,7 +162,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
     La finestra dovrebbe risultare simile alla seguente:  
   
-    Figura 8: RadioButtons nella finestra Greetings.  
+    Figura 8. Pulsanti di opzione nella finestra Greetings.  
   
     ![Modulo Greetings con Textblock e due RadioButtons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -195,7 +190,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.  
   
-   Figura 9: interfaccia utente finale di Greetings  
+   figure Interfaccia utente finale di Greetings  
   
    ![Messaggi Greetings con etichette del controllo](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
@@ -264,7 +259,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
     ![Avviare il comando di debug dal menu Debug](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Verrà visualizzata una finestra di dialogo in cui è indicato che si è verificata un'eccezione IOException: Impossibile individuare la risorsa 'mainwindow.xaml'.  
+    Verrà visualizzata una finestra di dialogo, che indica che si è verificato verificata un'eccezione IOException: Impossibile individuare la risorsa 'mainwindow.xaml'.  
   
 2. Scegliere il pulsante **OK** , quindi arrestare il debugger.  
   
@@ -340,6 +335,3 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
  [Novità di Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   
  [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md)  (Introduzione allo sviluppo con Visual Studio)  
  [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)
-
-
-
