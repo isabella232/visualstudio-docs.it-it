@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2050b3014030cc7fe8687e46a6260e6147440a4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953107"
 ---
 # <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Esempi di dipendenze esterne di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e Microsoft Data Access Components (MDAC). Un file del pacchetto è simile a un file di prodotto ma viene usato per installare i componenti dipendenti dalla lingua di una dipendenza, ad esempio gli assembly localizzati, i contratti di licenza e documentazione.  

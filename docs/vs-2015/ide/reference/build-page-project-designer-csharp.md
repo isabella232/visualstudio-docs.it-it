@@ -1,14 +1,9 @@
 ---
 title: Pagina Compilazione, Creazione progetti (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805321"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,13 +35,13 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
  Le opzioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.  
   
 > [!NOTE]
->  Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Queste opzioni non sono di conseguenza visualizzate. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+>  Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Queste opzioni non sono di conseguenza visualizzate. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **Configurazione**  
  Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possono essere **Attiva (Debug)** (il valore predefinito), **Debug**, **Release** o **Tutte le configurazioni**.  
   
  **Piattaforma**  
- Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).  
+ Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Generale  
  Le opzioni seguenti consentono di configurare diverse impostazioni del compilatore C#.  
@@ -109,9 +104,9 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
  Le impostazioni riportate di seguito sono usate per configurare le opzioni di output del processo di compilazione.  
   
  **Percorso output**  
- Specifica il percorso dei file di output per la configurazione del progetto. Immettere il percorso dell'output di compilazione in questa casella, oppure scegliere il pulsante **Sfoglia** per specificare un percorso. Si noti che il percorso è relativo. Se si immette un percorso assoluto, sarà salvato come relativo. Il percorso predefinito è bin\Debug o bin\Release\\. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica il percorso dei file di output per la configurazione del progetto. Immettere il percorso dell'output di compilazione in questa casella, oppure scegliere il pulsante **Sfoglia** per specificare un percorso. Si noti che il percorso è relativo. Se si immette un percorso assoluto, sarà salvato come relativo. Il percorso predefinito è bin\Debug o bin\Release\\. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
- Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Scegliendo il comando **Compila** dal menu **Debug** (F5) la compilazione verrà inserita nel percorso di debug indipendentemente dal **Percorso output** specificato. Il comando **Compila** del menu **Compila** la inserisce invece nel percorso specificato. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Scegliendo il comando **Compila** dal menu **Debug** (F5) la compilazione verrà inserita nel percorso di debug indipendentemente dal **Percorso output** specificato. Il comando **Compila** del menu **Compila** la inserisce invece nel percorso specificato. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **File di documentazione XML**  
  Specifica il nome di un file in cui saranno elaborati i commenti relativi alla documentazione. Per altre informazioni, vedere [/doc (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
@@ -128,6 +123,3 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
 ## <a name="see-also"></a>Vedere anche  
  [Project Properties Reference](../../ide/reference/project-properties-reference.md)  (Riferimenti alle proprietà di progetto)  
  [Opzioni del compilatore C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
-
-
-

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a57e0bacdbe12b889879eaca417127953f90beb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc95b38e755ec9d8e1b14be3c1045d5be0f0bd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951495"
 ---
 # <a name="window-search-dialog-box"></a>Finestra di dialogo Ricerca finestre
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per una finestra specifica nella [Windows Vista](../debugger/windows-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo alla finestra di visualizzazione di Windows. Quindi scegliere **Trova finestra** dalle **ricerca** menu.  

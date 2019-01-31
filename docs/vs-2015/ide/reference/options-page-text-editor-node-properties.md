@@ -1,14 +1,9 @@
 ---
 title: Pagina delle opzioni, Proprietà del nodo Editor di testo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241904"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767992"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Editor di testo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 ## <a name="general"></a>Generale  
  `DTE.Properties("TextEditor", "General")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Se `True`, premendo escape in presenza di una selezione si determina lo spostamento del punto di inserimento nella posizione in cui è iniziata l'azione che ha creato la selezione. `False` consente di spostare il punto di inserimento all'altra estremità della selezione.|  
 |DragNDropTextEditing|Get/Set (Boolean)|Determina se è possibile trascinare un'area di testo selezionata da una posizione a un'altra nel documento tramite operazioni Copia o Taglia/Incolla.|  
@@ -54,7 +49,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
   
  Le opzioni dell'editor `PlainText` influiscono sulle impostazioni dell'editor al momento della modifica dei file di testo. Ogni linguaggio di programmazione e il pacchetto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano impostazioni specifiche dell'**editor di testo**. Ad esempio, per visualizzare o modificare le impostazioni dell'editor di [!INCLUDE[csprcs](../../includes/csprcs-md.md)], utilizzare `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Per le impostazioni dell'editor di **Script SQL** usare `DTE.Properties("TextEditor", "SQL ")`.  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |AutoListMembers|Get/Set (Boolean)|Determina se l'elenco di membri disponibile viene visualizzato automaticamente quando viene digitato un punto dopo un riferimento a una variabile.|  
 |AutoListParams|Get/Set (Boolean)|Determina se la descrizione di un elenco di argomenti viene visualizzata automaticamente quando viene digitata una parentesi "(" dopo il nome di una funzione.|  
@@ -63,7 +58,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 |WordWrap|Get/Set (Boolean)|Determina se nella visualizzazione esiste un ritorno a capo delle righe lunghe alla fine delle parole. Impostando questo valore su `true`, l'elemento della proprietà `VirtualSpace` presente in questo elenco verrà impostato su `false`.|  
 |WordWrapGlyphs|Get/Set (Boolean)|Consente di visualizzare un glifo alla fine di una riga, a indicare un ritorno a capo automatico nella riga successiva.|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|Determina se nell'editor vengono sottolineati gli URL e se è sufficiente fare clic sul pulsante sinistro del mouse per passare all'URL nel browser registrato del sistema.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina lo stile di rientro: Predefinito, Intelligenti o Nessuno.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>) |Determina lo stile di rientro: Predefinito, Intelligente o Nessuno.|  
 |TabSize|Get/Set (Long)|Rappresenta il numero di spazi che equivale a una tabulazione. L'impostazione di un intero esterno all'intervallo compreso tra 1 e 60 (inclusi) ha esito negativo.|  
 |InsertTabs|Get/Set (Boolean)|Se `True`, i caratteri di tabulazione vengono utilizzati per i rientri.|  
 |IndentSize|Get/Set (Long)|Rappresenta il numero di spazi che equivale a un livello di rientro. L'impostazione di un valore integer esterno all'intervallo compreso tra 1 e 60 (inclusi) ha esito negativo.|  
@@ -76,6 +71,3 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
  [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Pagina delle opzioni, Proprietà del nodo Ambiente](../../ide/reference/options-page-environment-node-properties.md)   
  [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5147a170-41ce-4727-8ace-c318e8d11647
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8b1dc7d54cc913a1ed1986576fa559c7134bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c08137af6e26cf5970d055a04ba6a5c5ce92c62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868261"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969733"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (Debug Interface Access SDK)
 Funzioni friend e classi Friend sono identificate da `SymTagFriend` simboli. Sono figli del padre di tipi definiti dall'utente (UDT) e hanno una [Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) proprietà.  

@@ -1,14 +1,9 @@
 ---
 title: Elemento Parameter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 632973aab0447ffcd8d2bff5e752683223ea3838
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4c53528159d2950378c56e1da22d81393235f716
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803382"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`ParameterType`|Attributo facoltativo.<br /><br /> Il tipo .NET del parametro, ad esempio, "System.String".|  
 |`Output`|Attributo booleano facoltativo.<br /><br /> Se `true`, il parametro è un parametro di output per l'attività. Per impostazione predefinita, il valore è `false`.|  
@@ -64,7 +59,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti sull'attività generata da un oggetto `UsingTask``TaskFactory`.|  
   
@@ -88,6 +83,3 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
  [Attività](../msbuild/msbuild-tasks.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

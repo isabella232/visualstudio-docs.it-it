@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 892c9f3b200466b22d847063ce2a60cf63301e5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 285ec62b5cfa0fbff081ccf994633663f69b847a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915075"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987521"
 ---
 # <a name="symbol-locations"></a>Percorsi dei simboli
 La maggior parte dei simboli dispongono di un percorso definito all'interno del file di immagine. Viene specificato il percorso del simbolo con un valore compreso il [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) enumerazione. Il simbolo può supportare proprietà aggiuntive in base alla relativa posizione.  
