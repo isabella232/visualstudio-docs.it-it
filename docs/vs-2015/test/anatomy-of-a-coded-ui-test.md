@@ -1,26 +1,21 @@
 ---
 title: Composizione di un test codificato dell'interfaccia utente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7595a967a6dae091da6c5a7613a27c602cc1381e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35222fc9e320bafbaafe1bc19e174649142252c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781177"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,8 @@ Quando si crea un test codificato dell'interfaccia utente in un progetto di test
 |File|Sommario|Modificabile?|  
 |----------|--------------|---------------|  
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sezione delle dichiarazioni](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parziale, generata automaticamente)<br /><br /> [Metodi](#UIMapMethods)<br /><br /> [Proprietà](#UIMapProperties)|No|  
-|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Yes|  
-|[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Yes|  
+|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Sì|  
+|[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Sì|  
 |[UIMap.uitest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|  
   
 ###  <a name="UIMapDesignerFile"></a> UIMap.Designer.cs  
@@ -288,6 +283,3 @@ public void MyTestCleanup()
  [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)   
  [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

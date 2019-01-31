@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986800"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Tramite l'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
 
@@ -191,7 +191,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       oppure
+       -oppure-
 
    - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):
 

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f75cf227826ec0f9d35d9a7564bbdc25a3cd0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c7bf00946542b8cb29354f7e03688baaac33fb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941879"
 ---
 # <a name="crt-debug-library-use"></a>Utilizzo della libreria di debug CRT
 La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegarlo con [/debug](/cpp/build/reference/debug-generate-debug-info) e la compilazione con **/MDd**, **/MTd**, oppure **/LDd**.  

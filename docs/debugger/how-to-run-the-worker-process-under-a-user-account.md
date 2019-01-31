@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffa05e3333d2fba1a1ac8a454b3a6e890ad8b605
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985617"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: Eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.  

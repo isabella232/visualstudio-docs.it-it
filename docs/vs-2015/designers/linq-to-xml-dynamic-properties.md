@@ -1,25 +1,20 @@
 ---
 title: Proprietà dinamiche in LINQ to XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59eece0ffae18b72504c258fd3134c7dc8e952d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6fce9bca76b604413dc5bd4962760ee4ce08a6ea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790613"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Proprietà dinamiche in LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Contenuto della sezione vengono fornite informazioni di riferimento relative all
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Argomento|Descrizione|  
+|Argomento|Description|  
 |-----------|-----------------|  
 |[Proprietà dinamiche della classe XAttribute](../designers/xattribute-class-dynamic-properties.md)|Vengono forniti dettagli sulle proprietà dinamiche esposte dalla classe <xref:System.Xml.Linq.XAttribute>.|  
 |[Proprietà dinamiche della classe XElement](../designers/xelement-class-dynamic-properties.md)|Vengono forniti dettagli sulle proprietà dinamiche esposte dalla classe <xref:System.Xml.Linq.XElement>.|  
@@ -54,6 +49,3 @@ Contenuto della sezione vengono fornite informazioni di riferimento relative all
  [Data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [Panoramica di associazioni dati WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
  [Introduzione alle query LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)
-
-
-

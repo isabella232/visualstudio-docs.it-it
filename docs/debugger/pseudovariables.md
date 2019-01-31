@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e7056c3535e05febfa8de2ddd57385fc73ec182
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7f5eadd7072a3b250fa117909f4d5b2e9c2868f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988063"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925435"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo variabili nel debugger di Visual Studio
 Le pseudo variabili sono termini usati per visualizzare determinate informazioni in una finestra delle variabili o nella finestra di dialogo **Controllo immediato**. È possibile immettere una pseudo variabile in modo analogo all'immissione di una variabile normale. Tuttavia, le pseudo variabili non sono variabili e non corrispondono a nomi di variabili presenti nel programma.  
