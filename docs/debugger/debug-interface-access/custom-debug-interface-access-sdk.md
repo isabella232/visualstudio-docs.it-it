@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa6934fbed6780fb9a8a3be6685dbb7bcf0fbc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b5764ec6d996e4e76d509e0cfe65ec34237d581
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931310"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (Debug Interface Access SDK)
 Alcuni compilatori di introducono i simboli che non sono identificati da uno qualsiasi dei tipi di simboli lessicale standard. Questi simboli sono identificati da un `SymTagCustom` tag.  

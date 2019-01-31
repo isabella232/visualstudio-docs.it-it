@@ -1,14 +1,9 @@
 ---
 title: Gestione delle risorse delle applicazioni (.NET) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784775"
 ---
 # <a name="managing-application-resources-net"></a>Gestione delle risorse delle applicazioni (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ I file di risorse sono file che fanno parte di un'applicazione ma non vengono co
 ## <a name="working-with-resources"></a>Uso delle risorse  
  Aprire la finestra delle proprietà del progetto in un progetto di codice gestito. A questo scopo, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**oppure digitare **proprietà del progetto** nella finestra **Avvio veloce** o premere ALT+INVIO nella finestra **Esplora soluzioni** . Selezionare la scheda **Risorse** . È possibile aggiungere un file RESX, se non è ancora presente nel progetto, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.  
   
- Per informazioni su come usare le risorse nei progetti C++, vedere [How to: Create a Resource](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716) (Procedura: Creare una risorsa).
-
+ Per informazioni su come usare le risorse nei progetti C++, vedere [come: Creare una risorsa](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)

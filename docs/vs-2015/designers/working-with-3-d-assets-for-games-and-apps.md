@@ -1,27 +1,22 @@
 ---
 title: Utilizzo di risorse 3D per giochi e app | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797595"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilizzo di risorse tridimensionali per giochi e app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +51,9 @@ Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Descrizione|  
+|Titolo|Description|  
 |-----------|-----------------|  
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con immagini e texture.|  
 |[Uso dei modelli tridimensionali](../designers/working-with-3-d-models.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|  
 |[Uso degli shader](../designers/working-with-shaders.md)|Viene descritto come usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per creare e modificare gli effetti di shader personalizzati.|  
 |[Uso delle risorse tridimensionali nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare le risorse, quali risorse sono state create con l'Editor immagini, l'Editor modello o la finestra di progettazione shader nel gioco o nell'app.|
-
-
-

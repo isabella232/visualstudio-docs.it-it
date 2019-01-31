@@ -9,13 +9,13 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764848"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
  Ora che si è acquisita familiarità con l'editor ed è stato creato il codice, è possibile iniziare il debug del codice. In Visual Studio 2015, come per la maggior parte degli IDE, il debug viene eseguito in due fasi: la compilazione del codice per rilevare e risolvere gli errori relativi al progetto e al compilatore e l'esecuzione del codice nell'ambiente per rilevare e risolvere gli errori dinamici e di runtime.
 
 ### <a name="configuring-a-build"></a>Configurazione di una compilazione
- Esistono due tipi di base di configurazione della build: **Eseguire il debug** e **rilascio**. La prima configurazione produce un file eseguibile più lento e di dimensioni maggiori che offre un'esperienza di debug del runtime interattiva più completa, ma che non deve essere mai distribuito. La seconda configurazione compila un file eseguibile più veloce e ottimizzato, adatto alla distribuzione (almeno dal punto di vista del compilatore).
+ Sono disponibili due tipi di base per la configurazione della build: **Debug** e **Release**. La prima configurazione produce un file eseguibile più lento e di dimensioni maggiori che offre un'esperienza di debug del runtime interattiva più completa, ma che non deve essere mai distribuito. La seconda configurazione compila un file eseguibile più veloce e ottimizzato, adatto alla distribuzione (almeno dal punto di vista del compilatore).
 
  La configurazione predefinita della build è **Debug**.
 
@@ -184,7 +184,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
  ![Finestra di Visual Studio 2015 Diagnostic Tools](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "Vs_ide_gs_debug_diagnostic_tools")
 
 ### <a name="running-unit-tests"></a>Esecuzione di unit test
- Gli unit test sono programmi che verificano i percorsi di codice nell'applicazione o nel servizio. Visual Studio 2015 installa i framework per unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework per unit test per creare unit test, eseguirli e riportare i risultati dei test. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Quando si usa Visual Studio 2015 Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
+ Gli unit test sono programmi che verificano i percorsi di codice nell'applicazione o nel servizio. Visual Studio 2015 installa i framework per unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e riportare i risultati dei test. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Quando si usa Visual Studio 2015 Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
 
  Per iniziare, vedere [Generate unit tests for your code with IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) (Generare unit test per il codice con IntelliTest).
 

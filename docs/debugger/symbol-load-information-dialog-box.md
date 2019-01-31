@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d320d814f1c20e1aee9b13c83c01be8290a5ead6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81fc367fc55b3e4eef89731896cf18f4db5dc744
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019450"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
 La finestra di dialogo **Informazioni sul caricamento simboli** viene visualizzata quando si fa clic con il pulsante destro del mouse nella finestra **Moduli** e si sceglie **Informazioni sul caricamento simboli**.  

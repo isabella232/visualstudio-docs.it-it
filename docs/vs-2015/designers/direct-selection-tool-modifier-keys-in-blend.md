@@ -1,25 +1,20 @@
 ---
 title: Tasti di modifica strumento Selezione diretta in Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dfe69bcc678cbd6f06f8afc8d7e175b124f423ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776288"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Selezione diretta in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile u
  [Tasti di modifica della tavola da disegno](../designers/artboard-modifier-keys-in-blend.md)   
  [Tasti di modifica strumento Penna](../designers/pen-tool-modifier-keys-in-blend.md)   
  [Disegnare forme e tracciati](../designers/draw-shapes-and-paths.md)
-
-
-

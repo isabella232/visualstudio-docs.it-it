@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 733d1d3f1c105116a97d198a9bb4fa1bf1c1c2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08cf47310c9743d1071dd46a30e5c04372ca5cb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885210"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996727"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 Si modificano i dati in tabelle di dati proprio come si modificano i dati in una tabella in qualsiasi database. Può includere il processo di inserimento, aggiornamento ed eliminazione di record nella tabella. In un form con associazione a dati, è possibile specificare quali campi sono modificabili dall'utente. In questi casi, l'infrastruttura di associazione dati gestisce tutto il rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare tali modifiche nel database, è necessario utilizzare gli oggetti e metodi che eseguono il rilevamento delle modifiche per l'utente.

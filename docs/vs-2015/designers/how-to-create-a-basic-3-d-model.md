@@ -1,27 +1,22 @@
 ---
 title: 'Procedura: Creare un modello 3D di base | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760771"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Procedura: Creare un modello tridimensionale di base
+# <a name="how-to-create-a-basic-3-d-model"></a>Procedura: Creare un modello 3D di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo documento viene illustrato come utilizzare l'editor modello per creare un modello 3D di base.  
@@ -79,12 +74,9 @@ In questo documento viene illustrato come utilizzare l'editor modello per creare
   
    ![Modello completato della casa semplificata](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
-   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per informazioni, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per altre informazioni, vedere [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Creare un modello di terreno 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Procedura: Modello di terreno 3D](../designers/how-to-model-3-d-terrain.md)   
  [Editor dei modelli](../designers/model-editor.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)
-
-
-

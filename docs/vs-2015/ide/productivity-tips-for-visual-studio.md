@@ -1,24 +1,20 @@
 ---
 title: Suggerimenti relativi alla produttività | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785687"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +115,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
 -   **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella [Avvio veloce, Ambiente, finestra di dialogo Opzioni](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave per gli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
 
-     Figura 3. Elenco di risultati di avvio rapidi per `new project`
+     Figura 3: Elenco di risultati di avvio rapidi per `new project`
 
      ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
