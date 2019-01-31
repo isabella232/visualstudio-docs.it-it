@@ -1,14 +1,9 @@
 ---
 title: Procedure consigliate per l'uso dei frammenti di codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
@@ -16,13 +11,13 @@ ms.assetid: a293ec17-4dd7-4a99-8eeb-99f44a822a8b
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770322"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'utilizzo dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49919910"
 Il codice in un frammento illustra solo il modo più semplice per eseguire un'operazione. Per la maggior parte delle applicazioni, il codice deve essere modificato per essere adattato all'applicazione.  
   
 ## <a name="handling-exceptions"></a>Gestione delle eccezioni  
- In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Vedere ad esempio [Procedura: Gestire un'eccezione usando Try/Catch (Guida per programmatori C#)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) e [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) (Istruzione Try...Catch...Finally).  
+ In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Per esempi, vedere [Procedura: Gestire un'eccezione usando try/catch (C# Guida per programmatori)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) e [Try... Catch... Istruzione finally](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Percorsi dei file  
  Quando i percorsi dei file vengono adattati all'applicazione, considerare quanto segue:  
@@ -75,6 +70,3 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
  [Visual Basic IntelliSense Code Snippets](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)  (Frammenti di codice IntelliSense di Visual Basic)  
  [Securing Applications](../ide/securing-applications.md)  (Protezione delle applicazioni)  
  [Frammenti di codice](../ide/code-snippets.md)
-
-
-

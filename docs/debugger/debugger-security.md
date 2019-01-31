@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d4e3fedbee4a1af1de1137e63712825eb51dbf
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: aa69e2af329d5066c97f5400db346b89a1549e41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53887945"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937009"
 ---
 # <a name="debugger-security"></a>Sicurezza del debugger
 La possibilità di eseguire il debug di un altro processo offre grandi potenzialità che altrimenti non si avrebbero, in particolare nel debug remoto. Un debugger dannoso potrebbe causare gravi danni al computer oggetto del debug.  

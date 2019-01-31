@@ -1,14 +1,9 @@
 ---
 title: Filtro delle visualizzazioni dei rapporti di prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
 - Profiler Report View filter, profiling tools
@@ -16,13 +11,13 @@ ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 26ab5282ece99700b035c45abe4f3a7c6ffee82a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774633"
 ---
 # <a name="performance-report-view-filter"></a>Filtro delle visualizzazioni dei rapporti di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ La finestra del filtro delle visualizzazioni dei rapporti del profiler si trova 
   
  È possibile modificare ogni clausola filtro per perfezionare i risultati. Nel generatore di filtri sono disponibili le colonne seguenti.  
   
-|Elemento del filtro|Descrizione|  
+|Elemento del filtro|Description|  
 |-----------------|-----------------|  
 |E/O|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|  
 |Campo|Selezionare il campo da usare nella clausola filtro dall'elenco dei campi dati disponibili nel file di rapporto corrente.|  
@@ -47,6 +42,3 @@ La finestra del filtro delle visualizzazioni dei rapporti del profiler si trova 
 ## <a name="see-also"></a>Vedere anche  
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

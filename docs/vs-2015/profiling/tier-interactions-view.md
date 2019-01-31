@@ -1,14 +1,9 @@
 ---
 title: Visualizzazione Interazioni tra livelli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b69144569738dc09368453faef13f5f38428df2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791936"
 ---
 # <a name="tier-interactions-view"></a>Visualizzazione Interazioni tra livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ## <a name="master-pane"></a>Riquadro master  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|  
 |**Database**|Nome del database (solo righe di connessione di database).|  
@@ -56,7 +51,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ## <a name="database-connection-details-pane"></a>Riquadro Dettagli connessione database  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Testo del comando**|Query SQL della richiesta.|  
 |**Conteggio query**|Numero di volte in cui è stata eseguita la query.|  
@@ -64,6 +59,3 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
 |**Tempo massimo trascorso**|Tempo massimo impiegato per l'esecuzione di un'istanza della query.|  
 |**Tempo minimo trascorso**|Tempo minimo impiegato per l'esecuzione di un'istanza della query.|  
 |**Tempo medio trascorso**|Tempo medio impiegato per l'esecuzione di un'istanza della query.|
-
-
-

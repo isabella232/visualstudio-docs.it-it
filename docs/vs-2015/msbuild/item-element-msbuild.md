@@ -1,14 +1,9 @@
 ---
 title: Elemento Item (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1dfec558a9958d980d25d4160c4b7f2ce269cbb5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b45d0e9494700d03c0e96ccd0708e2754b4f7a2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797025"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Include`|Attributo obbligatorio.<br /><br /> Il file o carattere jolly da includere nell'elenco di elementi.|  
 |`Exclude`|Attributo facoltativo.<br /><br /> Il file o carattere jolly da escludere dall'elenco di elementi.|  
@@ -68,13 +63,13 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Possono esistere zero o più elementi `ItemMetadata` in un elemento.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento di raggruppamento per elementi.|  
   
@@ -101,6 +96,3 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
  [Elementi](../msbuild/msbuild-items.md)   
  [Proprietà di MSBuild](msbuild-properties1.md)   
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

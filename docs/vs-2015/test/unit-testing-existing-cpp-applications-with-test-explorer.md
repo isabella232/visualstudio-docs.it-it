@@ -1,24 +1,19 @@
 ---
 title: Esecuzione di unit test delle applicazioni C++ esistenti con Esplora test | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8dab39c5718b8872df5e81281ba9dda886ebf313
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3952f73c214c0d7070005f28140e048136279215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760223"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testing unità delle applicazioni C++ esistenti con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +158,7 @@ ms.locfileid: "49941204"
    }  
    ```  
   
-   Per altre informazioni, vedere [Testing unità di codice nativo con Esplora test](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
+   Per altre informazioni, vedere [Testing unità di codice nativo con Esplora test](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
   
 ## <a name="run-the-tests"></a>Eseguire i test  
   
@@ -171,7 +166,4 @@ ms.locfileid: "49941204"
   
 2. In Esplora test scegliere **Esegui tutto**.  
   
-   Per altre informazioni, vedere [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md).
-
-
-
+   Per altre informazioni, vedere [avvio rapido: Sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)

@@ -1,14 +1,9 @@
 ---
 title: Avvio veloce, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
 - vs.quicklaunch
@@ -19,13 +14,13 @@ ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e012e5ec4d9326cb1e6732ed78a8de8a60aeda8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782281"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ ms.locfileid: "49269061"
  **Avvio veloce** è abilitato per impostazione predefinita quando si installa Visual Studio. Nella barra dei menu è possibile mostrare o nascondere **Avvio veloce** scegliendo **Strumenti**, **Opzioni**. Espandere il nodo **Ambienti** e quindi scegliere **Avvio veloce**. Selezionare o deselezionare la casella di controllo **Abilita avvio veloce**. In questa pagina è anche possibile abilitare o disabilitare le categorie di ricerca.  
   
 ## <a name="category-list"></a>Elenco di categorie  
- I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in quattro categorie: **Usati di recente**, **Menu**, **Opzioni** e **Documenti aperti** con un'indicazione del numero di elementi in ogni categoria. Per scorrere i risultati della ricerca per categoria, premere CTRL+Q per mostrare tutti i risultati della categoria successiva. Dopo che viene visualizzata l'ultima categoria, premendo CTRL+Q è possibile visualizzare alcuni risultati di ogni categoria. È possibile usare CTRL+MAIUSC+Q per spostarsi tra le categorie in ordine inverso. Per visualizzare tutti i risultati della ricerca in una categoria, scegliere il nome della categoria.  
+ I risultati delle ricerche eseguite in Avvio veloce vengono visualizzati in quattro categorie: **Usati di recente**, **Menu**, **Opzioni** e **Documenti aperti** con un'indicazione del numero di elementi nella categoria. Per scorrere i risultati della ricerca per categoria, premere CTRL+Q per mostrare tutti i risultati della categoria successiva. Dopo che viene visualizzata l'ultima categoria, premendo CTRL+Q è possibile visualizzare alcuni risultati di ogni categoria. È possibile usare CTRL+MAIUSC+Q per spostarsi tra le categorie in ordine inverso. Per visualizzare tutti i risultati della ricerca in una categoria, scegliere il nome della categoria.  
   
  È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.  
   
-|Category|Metodo rapido|Descrizione metodo rapido|  
+|Category|Collegamento|Descrizione metodo rapido|  
 |--------------|--------------|--------------------------|  
 |Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|  
 |Menu|@menu<br /><br /> Ad esempio, `@menu font`.|Limita la ricerca alle voci di menu.|  
@@ -58,6 +53,3 @@ ms.locfileid: "49269061"
 ## <a name="see-also"></a>Vedere anche  
  [Elementi generali dell'interfaccia utente (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
-
-
-
