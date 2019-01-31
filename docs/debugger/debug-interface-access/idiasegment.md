@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4cc24d64d3d1b1f8ab3e4182c21d451763b15e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96eab5c753b0c84784b04eb4a7546557bdc77eca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847191"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986891"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Esegue il mapping dei dati rispetto al numero di sezione ai segmenti dello spazio degli indirizzi.  

@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e5b0d5abde8ae58628f05765c170b9979738275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2cd72eef70ac25108358d1e37b414a618e8fe88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968754"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Creare applicazioni ClickOnce per la distribuzione da parte di terzi
 Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di distribuire le applicazioni stesse. Molti di essi sufficiente includere la loro applicazione con ClickOnce e quindi passare i file a un cliente, ad esempio un'azienda di grandi dimensioni. Il cliente si assume la responsabilità per ospitare l'applicazione nella propria rete. Questo argomento illustra alcuni dei problemi relativi a tali distribuzioni nelle versioni di .NET Framework precedenti alla versione 3.5. Viene quindi illustrata una nuova soluzione fornita utilizzando la nuova funzionalità "Usa manifesto per l'attendibilità" in .NET Framework 3.5. Infine, si conclude con strategie consigliate per la creazione di distribuzioni di ClickOnce per i clienti che ancora usano versioni precedenti di .NET Framework.  
