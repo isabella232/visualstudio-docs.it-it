@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888452"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984704"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Distribuire componenti COM con ClickOnce
 Distribuzione di componenti COM legacy è tradizionalmente difficile. I componenti devono essere registrati a livello globale e pertanto possono causare effetti collaterali indesiderati applicazioni sovrapposte. Questa situazione non è in genere un problema in applicazioni .NET Framework perché i componenti sono completamente isolati a un'applicazione o sono compatibili con side-by-side. Visual Studio consente di distribuire i componenti COM isolati nel Windows XP o versioni successive del sistema operativo.  
@@ -163,7 +163,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 - Il componente gestisce un dispositivo fisico o virtuale per il sistema, ad esempio, un driver di dispositivo per uno spooler di stampa.  
   
-- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; vedere [come: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
+- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; visualizzare [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   In alcuni casi, potrebbe essere possibile per lo sviluppatore del componente, riprogettare per COM senza registrazione. Se questo non è possibile, è possibile compilare e pubblicare applicazioni che dipendono da essi tramite lo schema di registrazione standard usando il programma di bootstrap. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
   
