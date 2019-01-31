@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8b510a07ff60420cc81aed073e7f42445e924d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0abf694bcfb0adf13e3da4fb92bcdc9c180a68fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825516"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023145"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
 Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possibile testare la distribuzione per un numero di prerequisiti che devono essere disponibili nel computer client per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] esecuzione dell'applicazione. Queste dipendenze includono la versione minima richiesta del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella global assembly cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], tuttavia, non è possibile installare uno di questi prerequisiti stesso. Se un prerequisito non viene trovato, semplicemente arresta l'installazione e visualizza una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.  
