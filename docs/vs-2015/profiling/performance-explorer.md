@@ -1,14 +1,9 @@
 ---
 title: Esplora prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -18,13 +13,13 @@ ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784100"
 ---
 # <a name="performance-explorer"></a>Esplora prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +37,16 @@ Gli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] strumenti di profilatura di Vis
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
 |**Nuove tecniche per Windows 8**|[Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
-|**Comprendere i concetti di profilatura:** apprendere i concetti e termini che verranno usati per raccogliere, visualizzare e analizzare le prestazioni del codice tramite gli strumenti di profilatura.|[Panoramiche](../profiling/overviews-performance-tools.md)|  
-|**Accesso rapido e procedure:** imparare le procedure di base che verranno usate quando si raccolgono, visualizzano e analizzano le prestazioni del codice tramite gli strumenti di profilatura. Provare con procedure dettagliate pratiche.|[Introduzione](../profiling/getting-started-with-performance-tools.md)|  
-|**Configurare una sessione di profilatura:** apprendere metodi avanzati per specificare i progetti o i file binari per il profilo, selezionare un metodo di profilatura, scegliere i dati sulle prestazioni da raccogliere e impostare altre opzioni delle sessioni di profilatura.|[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)|  
-|**Controllare i dati raccolti dal profiler:** imparare a usare le proprietà delle sessioni di prestazioni e le procedure interattive per avviare e interrompere la profilatura e a limitare i dati sulle prestazioni raccolti alle sole informazioni desiderate.|[Controllo della raccolta di dati](../profiling/controlling-data-collection.md)|  
-|**Individuare problemi di prestazioni:** apprendere come visualizzare e analizzare i dati sulle prestazioni raccolti nella finestra di visualizzazione dei rapporti degli strumenti di profilatura.|[Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)|  
-|**Analizzare le variazioni delle prestazioni:** imparare a confrontare due file di dati del profiler per analizzare le variazioni delle prestazioni.|[Confronto tra file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)|  
+|**Comprendere i concetti di profilatura:** apprendere i concetti e i termini che verranno usati per raccogliere, visualizzare e analizzare le prestazioni del codice tramite gli strumenti di profilatura.|[Panoramiche](../profiling/overviews-performance-tools.md)|  
+|**Accesso rapido e procedure:** apprendere le procedure di base che verranno usate quando si raccolgono, visualizzano e analizzano le prestazioni del codice tramite gli strumenti di profilatura. Provare con procedure dettagliate pratiche.|[Introduzione](../profiling/getting-started-with-performance-tools.md)|  
+|**Configurare una sessione di profilatura:** apprendere metodi avanzati per specificare i progetti o i file binari di cui eseguire la profilatura, selezionare un metodo di profilatura, scegliere i dati sulle prestazioni da raccogliere e impostare altre opzioni della sessione di profilatura.|[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)|  
+|**Controllare i dati raccolti dal profiler:** imparare a usare le proprietà delle sessioni di prestazioni e le procedure interattive per avviare e interrompere la profilatura e apprendere come limitare alle sole informazioni desiderate i dati sulle prestazioni raccolti.|[Controllo della raccolta di dati](../profiling/controlling-data-collection.md)|  
+|**Individuare problemi di prestazioni:**: apprendere come visualizzare e analizzare i dati sulle prestazioni raccolti nella finestra di visualizzazione del report Strumenti di profilatura.|[Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)|  
+|**Analizzare le variazioni delle prestazioni:**: imparare a confrontare due file di dati del profiler per analizzare le variazioni delle prestazioni.|[Confronto tra file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)|  
 |**Salvare e condividere i risultati:** apprendere come salvare i dati di profilatura per l'archiviazione o la condivisione.|[Salvataggio ed esportazione dei dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)|  
-|**Automatizzare la profilatura:** imparare a usare gli strumenti di profilatura dalla riga di comando.|[Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
-|**Controllare la profilatura a livello di programmazione:** apprendere come usare le API degli strumenti di profilatura native e gestite per controllare la raccolta di dati direttamente dal codice sorgente.|[API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)|  
+|**Automatizzare la profilatura:** imparare a usare gli strumenti di profilatura al prompt dei comandi.|[Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
+|**Controllare la profilatura a livello di codice:** apprendere come usare le API degli strumenti di profilatura native e gestite per controllare la raccolta di dati direttamente dal codice sorgente.|[API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)|  
 |**Risoluzione dei problemi di profilatura**|[Risoluzione dei problemi relativi agli strumenti per le prestazioni](../profiling/troubleshooting-performance-tools-issues.md)|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Profiling Tools](../profiling/profiling-tools.md) (Strumenti di profilatura)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Panoramica del data binding WPF con LINQ to XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774178"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Associazione dati in Windows Presentation Foundation  
  L'associazione dati WPF consente a un elemento dell'interfaccia utente di associare una delle proprietà a un'origine dati. Un semplice esempio di questo comportamento è <xref:System.Windows.Controls.Label> il cui testo presenta il valore di una proprietà pubblica in un oggetto definito dall'utente. L'associazione dati WPF si basa sui componenti seguenti:  
   
-|Componente|Descrizione|  
+|Componente|Description|  
 |---------------|-----------------|  
 |Destinazione di associazione|Elemento dell'interfaccia utente da associare all'origine dati. Gli elementi visivi di WPF sono derivati dalla classe <xref:System.Windows.UIElement>.|  
 |Proprietà di destinazione|*Proprietà di dipendenza* della destinazione di associazione che riflette il valore dell'origine del data binding. Le proprietà della dipendenza sono supportate direttamente dalla classe <xref:System.Windows.DependencyObject>, da cui deriva <xref:System.Windows.UIElement>.|  
-|Origine di associazione|Oggetto di origine per uno o più valori forniti all'elemento dell'interfaccia utente per la presentazione. In WPF sono automaticamente supportati i seguenti tipi di origini di associazione: oggetti CLR, oggetti dati ADO.NET, dati XML (provenienti da query XPath o LINQ to XML) o un altro oggetto <xref:System.Windows.DependencyObject>.|  
+|Origine di associazione|Oggetto di origine per uno o più valori forniti all'elemento dell'interfaccia utente per la presentazione. WPF supporta automaticamente i tipi di origini di associazione seguenti: oggetti CLR, oggetti dati ADO.NET, dati XML (provenienti da query XPath o LINQ to XML) o un altro oggetto <xref:System.Windows.DependencyObject>.|  
 |Percorso di origine|Proprietà dell'origine di associazione che si risolve nel valore o set di valori a cui deve essere associata.|  
   
  Quello della proprietà della dipendenza è un concetto specifico di WPF che rappresenta una proprietà di un elemento dell'interfaccia utente elaborato dinamicamente. Ad esempio, le proprietà di dipendenza includono spesso valori predefiniti o specificati da un elemento padre. Queste proprietà speciali sono supportate da istanze della classe <xref:System.Windows.DependencyProperty> e non da campi come con proprietà standard. Per altre informazioni, vedere [Panoramica sulle proprietà di dipendenza](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
@@ -61,7 +56,7 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
   Per altre informazioni sul data binding in WPF, vedere [Associazione dati (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Proprietà dinamiche nelle classi LINQ to XML  
- La maggior parte delle classi LINQ to XML non è qualificata come origine dati dinamica WPF appropriata. Alcune delle informazioni più utili sono disponibili solo tramite metodi, non tramite proprietà, e le proprietà di queste classi non implementano le notifiche delle modifiche. Per supportare il data binding WPF, in LINQ to XML viene esposto un set di *proprietà dinamiche*.  
+ La maggior parte delle classi LINQ to XML non sono qualificate come origini di dati dinamici WPF appropriate. Alcune delle informazioni più utili sono disponibili solo tramite i metodi (e non proprietà) e le proprietà di queste classi non implementano le notifiche di modifica. Per supportare il data binding WPF, in LINQ to XML viene esposto un set di *proprietà dinamiche*.  
   
  Queste proprietà dinamiche sono proprietà speciali di runtime che duplicano la funzionalità dei metodi e delle proprietà esistenti nelle classi <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement>. Sono state aggiunte a queste classi unicamente per consentirne l'uso come origini dati dinamiche per WPF. Per soddisfare questa esigenza, tutte queste proprietà dinamiche implementano le notifiche delle modifiche. Un riferimento dettagliato per queste proprietà dinamiche è presentato nella sezione successiva, [Proprietà dinamiche di LINQ to XML](../designers/linq-to-xml-dynamic-properties.md).  
   
@@ -99,6 +94,3 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
  [XAML in WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
  [Associazione dati (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [Utilizzo dei markup del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=98685)
-
-
-

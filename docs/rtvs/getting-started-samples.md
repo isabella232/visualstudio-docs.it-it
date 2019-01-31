@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ebd1c8363c9801a9ac16a3b10a702de5954a14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837459"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023262"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Progetti di esempio di R Tools per Visual Studio
 
@@ -48,7 +48,7 @@ Come per tutti gli esempi, aprire il file, posizionare il cursore nella parte su
 
     ![Tracciato di esempio Benchmark](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` crea un modello di previsione della domanda per noleggi di biciclette basato su un set di dati cronologico, usando Microsoft ML Server. 
+- `Bike_Rental_Estimation_with_MRS` crea un modello di previsione della domanda per noleggi di biciclette basato su un set di dati cronologico, usando Microsoft ML Server.
 
 - `Data_Exploration` contiene tre script:
 
@@ -59,7 +59,7 @@ Come per tutti gli esempi, aprire il file, posizionare il cursore nella parte su
       ![Output dell'uso dell'esempio ggplot2.R](media/samples-3d-interactive.png)
 
 - `Datasets` include tre file con estensione *csv* usati da altri esempi
-- `Flight_Delays_Prediction_with_R` e `Flight_Delays_Prediction_with_MRS` illustrano come prevedere i ritardi dei voli con R, l'apprendimento automatico e lo storico delle prestazioni nei tempi stabiliti, nonché i dati meteorologici. 
+- `Flight_Delays_Prediction_with_R` e `Flight_Delays_Prediction_with_MRS` illustrano come prevedere i ritardi dei voli con R, l'apprendimento automatico e lo storico delle prestazioni nei tempi stabiliti, nonché i dati meteorologici.
 - `Machine learning` contiene tre esempi per apprendere a prevedere i ritardi dei voli e i prezzi delle abitazioni e del noleggio di biciclette. Insieme questi esempi illustrano l'applicazione di R e Microsoft ML Server a problemi concreti. Illustra anche come usare diversi modelli comuni di apprendimento automatico e distribuirli come un servizio Web di Azure tramite un'area di lavoro di [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/).
 
 - `R_MRO_MRS_Comparison` è un confronto in sei parti che illustra similitudini e differenze di R, Microsoft R Open e Microsoft ML Server con comandi, sintassi, costrutti e prestazioni.

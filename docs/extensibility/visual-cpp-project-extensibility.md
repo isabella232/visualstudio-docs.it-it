@@ -1,6 +1,6 @@
 ---
 title: Estensibilità di progetto Visual C++
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013704"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232052"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -274,6 +274,8 @@ Il Microsoft.Cpp.Common.Tasks.dll implementa queste attività:
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Se si dispone di uno strumento che esegue la stessa azione di uno strumento esistente e che dispone di simili opzioni della riga di comando (come clang-cl e CL), è possibile usare la stessa operazione per entrambi.
 
 Se è necessario creare una nuova attività per uno strumento di compilazione, è possibile scegliere tra le opzioni seguenti:
@@ -294,11 +296,14 @@ Se è necessario creare una nuova attività per uno strumento di compilazione, �
 
 La compilazione incrementale MSBuild predefinito è destinato a uso `Inputs` e `Outputs` attributi. Se specificate, MSBuild chiama la destinazione solo se uno degli input ha un timestamp più recente rispetto a tutti gli output. Poiché i file di origine spesso includono o importano altri file e compilare strumenti producono output diversi a seconda delle opzioni dello strumento, è difficile specificare tutti i possibili input e output nelle destinazioni di MSBuild.
 
-Per gestire questo problema, la compilazione C++ Usa una tecnica diversa per supportare le compilazioni incrementali. Quasi tutte le destinazioni non specificare input e output e di conseguenza, eseguire sempre durante la compilazione. Le attività di chiamata da destinazioni di scrivono informazioni su tutti i valori di input e output in *tlog* file TLog con estensione. File TLog vengono utilizzati per le compilazioni successive per verificare cosa è stato modificato e deve essere ricompilato e che cosa è aggiornata.
+Per gestire questo problema, la compilazione C++ Usa una tecnica diversa per supportare le compilazioni incrementali. Quasi tutte le destinazioni non specificare input e output e di conseguenza, eseguire sempre durante la compilazione. Le attività di chiamata da destinazioni di scrivono informazioni su tutti i valori di input e output in *tlog* file TLog con estensione. File TLog vengono utilizzati per le compilazioni successive per verificare cosa è stato modificato e deve essere ricompilato e che cosa è aggiornata. File TLog sono anche l'unica origine per la verifica di aggiornamento di compilazione predefinito nell'IDE.
 
 Per determinare tutti gli input e output, le attività degli strumenti nativi usano tracker.exe e il [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) classe fornita da MSBuild.
 
 Microsoft.Build.CPPTasks.Common.dll definisce il `TrackedVCToolTask` classe base astratta pubblica. La maggior parte delle attività degli strumenti nativi sono derivata da questa classe.
+
+A partire da Visual Studio 2017 update 15.8, è possibile usare il `GetOutOfDateItems` attività implementate in Microsoft.Cpp.Common.Tasks.dll per produrre file TLog per destinazioni personalizzate con note di input e output.
+In alternativa, è possibile crearli usando la `WriteLinesToFile` attività. Vedere le `_WriteMasmTlogs` di destinazione `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* come esempio.
 
 ## <a name="tlog-files"></a>file TLog
 
@@ -314,7 +319,6 @@ Il [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) cl
 
 File TLog da riga di comando contengono informazioni sulle righe di comando usate nella compilazione. Vengono usati solo per le compilazioni incrementali, i controlli non aggiornati, in modo che il formato interno è determinato dall'attività di MSBuild che li produce.
 
-Se vengono creati file TLog da un'attività, è consigliabile usare queste classi helper per crearli. Tuttavia, poiché la verifica di aggiornamento predefinito a questo punto si basa esclusivamente sui file TLog, in alcuni casi è preferibile produzione degli stessi in una destinazione senza un'attività. È possibile scriverli usando le `WriteLinesToFile` attività. Vedere le `_WriteMasmTlogs` di destinazione `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* come esempio.
 
 ### <a name="read-tlog-format"></a>Formato di tlog di lettura
 

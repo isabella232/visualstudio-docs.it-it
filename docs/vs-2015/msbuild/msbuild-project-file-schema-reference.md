@@ -1,14 +1,9 @@
 ---
 title: Informazioni di riferimento sullo schema del file di progetto di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772586"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Riferimenti dello schema del file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,5 +63,3 @@ Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbui
  [Condizioni](../msbuild/msbuild-conditions.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-
