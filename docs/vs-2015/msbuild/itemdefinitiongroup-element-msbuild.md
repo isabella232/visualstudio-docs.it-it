@@ -1,14 +1,9 @@
 ---
 title: Elemento ItemDefinitionGroup (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 534bad91ad4b909d798def84630cf54b64cd6ccf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 91a98d16e755daeb3fb514a47a741f5ac99abe12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793006"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +49,19 @@ L'elemento `ItemDefinitionGroup` consente di definire un set di definizioni di e
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemDefinitionGroup`.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
@@ -94,6 +89,3 @@ L'elemento `ItemDefinitionGroup` consente di definire un set di definizioni di e
 ## <a name="see-also"></a>Vedere anche  
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elementi](../msbuild/msbuild-items.md)
-
-
-

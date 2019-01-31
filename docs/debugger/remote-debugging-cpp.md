@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269761"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231571"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un progetto Visual C++ in Visual Studio di debug remoto
 Per eseguire il debug di un'applicazione di Visual Studio in un altro computer, installare ed eseguire remote tools sul computer in cui si distribuirà l'app, configurare il progetto per connettersi al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.
@@ -67,7 +67,7 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) 
   
 5. Apportare le seguenti modifiche alle proprietà:  
   
-   |Impostazione|Value|
+   |Impostazione|Valore|
    |-|-|  
    |Comando remoto|C:\remotetemp\mymfc.exe|  
    |Directory di lavoro|C:\remotetemp|  
@@ -96,9 +96,11 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) 
 11. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.  
   
     > [!TIP]
-    >  In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.  
+    > In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.
   
-    Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (in **Esplora soluzioni** fare clic su **Aggiungi > Nuova cartella**). Aggiungere i file alla cartella (in **Esplora soluzioni** fare clic su **Aggiungi > Elemento esistente**, quindi selezionare i file). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.
+    Se si dispone di file non di codice che sono richieste dall'applicazione, è possibile specificarli nella **i file aggiuntivi da distribuire** nel **Debugger Windows remoto** pagina.
+
+    In alternativa, è possibile includere i file nel progetto e impostare il **contenuti** proprietà **Sì** nel **proprietà** pagina per ogni file. Questi file vengono copiati il **Directory di distribuzione** specificato per il **Debugger Windows remoto** pagina. È inoltre possibile modificare il **tipo di elemento** al **copia File** e specificare proprietà aggiuntive sono se sono necessari i file da copiare in una sottocartella della **Directory di distribuzione**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti 
 

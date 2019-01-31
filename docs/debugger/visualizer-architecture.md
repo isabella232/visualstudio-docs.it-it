@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 895b8b0b77504c6fe76295d7d95114249bf69b83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922130"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:  

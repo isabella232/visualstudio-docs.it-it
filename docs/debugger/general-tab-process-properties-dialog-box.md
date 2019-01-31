@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52822d3cc503c948c7c1fdc320d850d9e1f84ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41667abc250bc2b2ffc869b714fafbcae8f21297
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931960"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà processo
 Usare la **generale** pressione di tab per altre informazioni su un processo specifico. Per visualizzare il [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  

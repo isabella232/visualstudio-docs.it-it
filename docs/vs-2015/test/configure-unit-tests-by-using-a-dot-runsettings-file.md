@@ -1,24 +1,19 @@
 ---
 title: Configurare unit test usando un file con estensione runsettings | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8d9b03c3b3e418a59c5cea40d61c1ad4c5024d1d
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792154"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurazione di unit test usando un file con estensione runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,6 +165,3 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
 ## <a name="see-also"></a>Vedere anche  
  [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md)  (Personalizzazione dell'analisi del code coverage)  
  [Specifica delle impostazioni test di Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Pagina Applicazione, Creazione progetti (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778646"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 > [!NOTE]
 >  I pacchetti dei prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.  
   
- Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) (Procedura: Destinare una versione di .NET Framework) e [Visual Studio Multi-Targeting Overview](../../ide/visual-studio-multi-targeting-overview.md) (Cenni preliminari sul multitargeting di Visual Studio).  
+ Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Tipo di applicazione**  
  Specifica il tipo di applicazione da compilare. Per app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.  
@@ -108,6 +103,3 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 ## <a name="see-also"></a>Vedere anche  
 [Managing Application Properties](../../ide/application-properties.md) (Gestione delle proprietà delle applicazioni)  
  [Scrittura di codice nelle soluzioni Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0) 
-
-
-

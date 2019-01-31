@@ -1,14 +1,9 @@
 ---
 title: Attività GenerateTrustInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a20a50e74f702c1c015f29abde81b2e24a5551b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4f1cf52286de97980eb269c3b52055be4455c38d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790152"
 ---
 # <a name="generatetrustinfo-task"></a>Attività GenerateTrustInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `GenerateTrustInfo` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`ApplicationDependencies`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica gli assembly dipendenti.|  
 |`BaseManifest`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il manifesto di base da cui generare l'attendibilità dell'applicazione.|  
@@ -52,6 +47,3 @@ Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri 
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Elemento Property (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8b9ebd5207b4fc4a6274090b91e8fa3ab0b20cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 958692d9227017eba0901ddb48a19502af9ec452
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769195"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Contiene un nome un valore della propriet√† definiti dall'utente. Ogni propriet√
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
+|Attributo|Description|  
 |---------------|-----------------|  
 |`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
   
@@ -60,7 +55,7 @@ Contiene un nome un valore della propriet√† definiti dall'utente. Ogni propriet√
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento di raggruppamento per le propriet√†.|  
   
@@ -85,6 +80,3 @@ Contiene un nome un valore della propriet√† definiti dall'utente. Ogni propriet√
 ## <a name="see-also"></a>Vedere anche
 [Propriet√† di MSBuild](msbuild-properties1.md)  
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

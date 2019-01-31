@@ -1,25 +1,20 @@
 ---
 title: Nodi della finestra di progettazione shader| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793264"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Gli articoli di questa sezione della documentazione contengono informazioni sui 
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Descrizione|  
+|Titolo|Description|  
 |-----------|-----------------|  
 |[Nodi costanti](../designers/constant-nodes.md)|Vengono descritti i nodi che è possibile usare per rappresentare i valori letterali e le informazioni di stato vertex interpolate nei calcoli dello shader. Poiché lo stato vertex è interpolato e quindi diverso per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione diversa della costante.|  
 |[Nodi Parameter](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|  
@@ -57,6 +52,3 @@ Gli articoli di questa sezione della documentazione contengono informazioni sui 
 |[Nodi di matematica](../designers/math-nodes.md)|Descrive i nodi che è possibile usare per eseguire operazioni algebriche, logiche, trigonometriche e altre operazioni matematiche che eseguono il mapping direttamente alle istruzioni di HLSL.|  
 |[Nodi utilità](../designers/utility-nodes.md)|Descrive i nodi che è possibile usare per eseguire calcoli di illuminazione comuni e altre operazioni comuni che non eseguono il mapping direttamente alle istruzioni di HLSL.|  
 |[Nodi del filtro](../designers/filter-nodes.md)|Descrivei i nodi che è possibile usare per eseguire il filtraggio della trama e del colore.|
-
-
-

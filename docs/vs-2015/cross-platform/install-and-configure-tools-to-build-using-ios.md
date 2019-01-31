@@ -1,27 +1,22 @@
 ---
 title: Installare e configurare gli strumenti per la compilazione con iOS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792863"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51787809"
 È possibile usare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma per modificare, eseguire il debug e distribuire codice iOS al simulatore iOS o a un dispositivo iOS. Tuttavia, a causa di restrizioni di licenza, il codice deve essere compilato ed eseguito in modalità remota su Mac. Per compilare ed eseguire le app iOS usando Visual Studio, è necessario installare e configurare l'agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), sul Mac. L'agente remoto gestisce le richieste di compilazione da parte di Visual Studio ed esegue l'app su un dispositivo iOS connesso a Mac o nel simulatore iOS su Mac.  
   
 > [!NOTE]
->  Per informazioni sull'uso dei servizi di Mac ospitati nel cloud anziché su Mac, vedere [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/). Le istruzioni riguardano la compilazione con Visual Studio Tools per Apache Cordova. Per usare le istruzioni per compilare con Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma, sostituire l'agente vcremote per vs-mda-remote.  
+>  Per informazioni sull'uso dei servizi di Mac ospitati nel cloud anziché su Mac, vedere [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Le istruzioni riguardano la compilazione con Visual Studio Tools per Apache Cordova. Per usare le istruzioni per compilare con Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma, sostituire l'agente vcremote per vs-mda-remote.  
   
  Dopo aver installato gli strumenti per la compilazione con iOS, consultare questo argomento per informazioni su come configurare e aggiornare rapidamente l'agente remoto per lo sviluppo di iOS in Visual Studio e sul Mac.  
   
@@ -247,4 +242,3 @@ ms.locfileid: "51787809"
   
 ## <a name="see-also"></a>Vedere anche  
  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
-

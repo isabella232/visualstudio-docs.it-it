@@ -1,26 +1,21 @@
 ---
-title: 'Procedura: Configurare unit test destinati a una versione precedente di .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Configurare Unit test destinati a una versione precedente di .NET Framework | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892792"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795860"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: Configurare unit test destinati a una versione precedente di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione predefinita viene impostata come destinazione la versione più recente di .NET Framework. Inoltre, se si esegue l'aggiornamento di progetti di test da versioni precedenti di Visual Studio, questi vengono aggiornati in modo da usare la versione più recente di .NET Framework come destinazione. Modificando le proprietà del progetto, è possibile ridefinire in modo esplicito la destinazione del progetto per le versioni precedenti di .NET Framework.  
@@ -131,10 +126,7 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 8.  In Esplora soluzioni selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test Visual C++.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Creare soluzioni di SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [Compilazione e debug delle soluzioni SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Panoramica delle sessioni di prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
 - performance sessions
@@ -16,13 +11,13 @@ ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b71f507e783552e066d41fe74e63fbc6b6146338
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803140"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +79,3 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
 ## <a name="see-also"></a>Vedere anche  
  [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
  [Procedura dettagliata: Identificazione dei problemi di prestazioni](../profiling/walkthrough-identifying-performance-problems.md)
-
-
-

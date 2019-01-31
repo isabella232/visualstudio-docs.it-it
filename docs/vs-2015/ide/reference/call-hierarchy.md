@@ -1,14 +1,9 @@
 ---
 title: Gerarchia di chiamata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774774"
 ---
 # <a name="call-hierarchy"></a>Gerarchia di chiamata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Finestra Gerarchia di chiamata
 ## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida  
  La tabella seguente descrive i vari comandi del menu di scelta rapida disponibili quando si fa clic con il pulsante destro del mouse su un nodo nel riquadro della visualizzazione struttura ad albero.  
   
-|Comando del menu di scelta rapida|Descrizione|  
+|Comando del menu di scelta rapida|Description|  
 |-----------------------|-----------------|  
 |**Aggiungi come nuova radice**|Aggiunge il nodo selezionato al riquadro della visualizzazione struttura ad albero come un nuovo nodo radice. Questo permette di concentrare l'attenzione su un sottoalbero specifico.|  
 |**Rimuovi radice**|Rimuove il nodo radice selezionato dal riquadro di visualizzazione albero. Questa opzione è disponibile solo da un nodo radice.<br /><br /> È anche possibile usare il pulsante della barra degli strumenti **Rimuovi radice** per rimuovere il nodo radice selezionato.|  
@@ -74,6 +69,3 @@ Finestra Gerarchia di chiamata
 |**Trova tutti i riferimenti**|Esegue il comando Trova tutti i riferimenti nel nodo selezionato. Questo comando consente di trovare tutte le righe di codice nel progetto che fanno riferimento a una classe o a un membro.<br /><br /> È anche possibile usare MAIUSC + F12 per eseguire il comando Trova tutti i riferimenti nel nodo selezionato.|  
 |**Copia**|Copia il contenuto del nodo selezionato (ma non i sottonodi).|  
 |**Aggiorna**|Comprime il nodo selezionato in modo che espandendolo nuovamente vengano visualizzate le informazioni più recenti.|
-
-
-

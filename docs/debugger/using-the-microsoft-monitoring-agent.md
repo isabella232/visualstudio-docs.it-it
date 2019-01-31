@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227577"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923779"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso di Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -89,7 +89,7 @@ ms.locfileid: "54227577"
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    oppure  
+    -oppure-  
   
 - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):  
   
@@ -247,7 +247,7 @@ ms.locfileid: "54227577"
   
     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    -oppure-  
+    oppure  
   
     **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   

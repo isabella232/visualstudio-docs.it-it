@@ -1,14 +1,9 @@
 ---
 title: Casella degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -20,13 +15,13 @@ ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799798"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ L'opzione **Casella degli strumenti** visualizza le icone per i controlli e altr
  La **Casella degli strumenti** visualizza solo gli elementi appropriati per il tipo di file che si sta usando. È possibile cercare all'interno della casella degli strumenti per restringere ulteriormente gli elementi visualizzati. Se il progetto richiede un controllo non supportato dal profilo client, è possibile impostare il progetto per l'intero framework di destinazione modificando le proprietà del progetto.  
   
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Guida sulle schede della casella degli strumenti  
  I documenti seguenti includono altre informazioni su specifiche schede della **Casella degli strumenti**.  
@@ -58,6 +53,3 @@ L'opzione **Casella degli strumenti** visualizza le icone per i controlli e altr
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso della Casella degli strumenti](../../ide/using-the-toolbox.md)
-
-
-

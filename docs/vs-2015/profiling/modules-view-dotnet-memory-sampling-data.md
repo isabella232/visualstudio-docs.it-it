@@ -1,27 +1,22 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento di memoria .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b9a02e5579eb5dc82f2e1f21a10444c329a317f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804095"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Visualizzazione Moduli: dati di campionamento di memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
   
  I numeri di riga dei file di origine delle istruzioni per l'allocazione di memoria vengono elencati sotto il nodo della funzione e gli indirizzi delle istruzioni che eseguono l'allocazione vengono elencati sotto il nodo della riga. I valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo dell'istruzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
@@ -49,10 +44,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**% byte esclusivi**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che rappresenta i byte esclusivi del modulo, della funzione, della riga o dell'istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
-
-
-

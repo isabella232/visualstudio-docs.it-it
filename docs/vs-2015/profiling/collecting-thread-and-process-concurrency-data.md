@@ -1,14 +1,9 @@
 ---
 title: Raccolta di dati di concorrenza di thread e processi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
@@ -16,13 +11,13 @@ ms.assetid: fa03d381-a9ee-408c-876d-05111e29225b
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: df473bea51edd157e3856d274663b72dcc11bc23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cf8a9de5f2a7e520a745fab81197016d6e1bd15d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777012"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Raccolta di dati di concorrenza di thread e processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +45,8 @@ Il metodo di profilatura della concorrenza degli strumenti di profilatura di [!I
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|Nella pagina **Generale** specificare i dettagli di denominazione per il file di dati di profilatura (con estensione vsp) generato.|-   [How to: Set Performance Data File Name Options](../profiling/how-to-set-performance-data-file-name-options.md) (Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura)|  
-|Se il codice contiene più progetti Exe, nella pagina **Avvia** specificare l'applicazione da avviare.|-   [How to: Specify the Binary to Start](../profiling/how-to-specify-the-binary-to-start.md) (Procedura: Specificare il file binario da avviare)|  
+|Nella pagina **Generale** specificare i dettagli di denominazione per il file di dati di profilatura (con estensione vsp) generato.|-   [Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|Se il codice contiene più progetti Exe, nella pagina **Avvia** specificare l'applicazione da avviare.|-   [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)|  
 |Nella pagina **Interazione tra livelli** aggiungere i dati delle chiamate ADO.NET per l'esecuzione della profilatura.|-   [Raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)|  
-|Nella pagina **Contatori Windows** specificare uno o più contatori di prestazioni del sistema operativo da aggiungere ai dati di profilatura come contrassegni.|-   [How to: Collect Windows Counter Data](../profiling/how-to-collect-windows-counter-data.md) (Procedura: Raccogliere i dati dei contatori Windows)|  
-|Nella pagina **Avanzate** specificare la versione del runtime di .NET Framework da sottoporre a profilatura se i moduli dell'applicazione usano più versioni di questo. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.|-   [How to: Specify the .NET Framework Runtime](../profiling/how-to-specify-the-dotnet-framework-runtime.md) (Procedura: Specificare il runtime di .NET Framework)|
-
-
-
+|Nella pagina **Contatori Windows** specificare uno o più contatori di prestazioni del sistema operativo da aggiungere ai dati di profilatura come contrassegni.|-   [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)|  
+|Nella pagina **Avanzate** specificare la versione del runtime di .NET Framework da sottoporre a profilatura se i moduli dell'applicazione usano più versioni di questo. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.|-   [Procedura: Specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

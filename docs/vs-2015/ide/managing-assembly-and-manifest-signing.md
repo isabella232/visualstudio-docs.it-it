@@ -1,14 +1,9 @@
 ---
 title: Gestione delle firme di assembly e manifesti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - signing manifests [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755464"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ La firma con nome sicuro offre un'identità univoca globale per un componente so
 > [!WARNING]
 >  Proteggere sempre il file di chiave con una password per impedire ad altri di usarlo. È possibile proteggere le chiavi usando provider o archivi certificati.  
   
- È anche possibile fare riferimento a una chiave già creata. Per altre informazioni sulla creazione delle chiavi, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ È anche possibile fare riferimento a una chiave già creata. Per altre informazioni sulla creazione delle chiavi, vedere [come: Creare una coppia di chiavi pubblica/privata](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
  Se si ha accesso solo a una chiave pubblica, è possibile usare il ritardo della firma per rinviare l'assegnazione della chiave. Per abilitare il ritardo della firma selezionare la casella di controllo **Ritarda firma**. Un progetto con firma ritardata non verrà eseguito e non sarà possibile eseguirne il debug. Tuttavia, è possibile ignorare la verifica durante lo sviluppo usando [Sn.exe (strumento Nome sicuro)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con l'opzione `-Vr`.  
   
@@ -75,6 +70,3 @@ La firma con nome sicuro offre un'identità univoca globale per un componente so
 ## <a name="see-also"></a>Vedere anche  
  [Assembly con nomi sicuri](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [Assembly con nome sicuro (firma degli assembly) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
-
-
-

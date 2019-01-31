@@ -1,14 +1,9 @@
 ---
 title: Configurazione di sessioni di prestazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
 - common tasks, profiling tools
@@ -18,13 +13,13 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774696"
 ---
 # <a name="configuring-performance-sessions"></a>Configurazione di sessioni di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +33,12 @@ Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|**Impostare le opzioni di profilatura di base:** è necessario configurare [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] per usare il server dei simboli Microsoft. Ciò consente di avere accesso ai simboli, come ad esempio i nomi di parametri e funzioni, per la versione corrente di Windows e per altre applicazioni Microsoft. È anche possibile specificare altre opzioni generali prima di avviare una sessione di profilatura, ad esempio autorizzazioni di sistema per gli strumenti di profilatura e i nomi dei file di dati di profilatura.|-   [How to: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md) (Procedura: Fare riferimento alle informazioni sui simboli di Windows)<br />-   [How to: Serialize Symbol Information](../profiling/how-to-serialize-symbol-information.md) (Procedura: Serializzare le informazioni sui simboli)<br />-   [How to: Set the Current Session](../profiling/how-to-set-the-current-session.md) (Procedura: Impostare la sessione corrente)<br />-   [How to: Set Permissions](../profiling/how-to-set-permissions.md) (Procedura: Impostare le autorizzazioni)<br />-   [How to: Set Performance Data File Name Options](../profiling/how-to-set-performance-data-file-name-options.md) (Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura)|  
-|**Specificare i dati che si vuole raccogliere:** le procedure per configurare una sessione di profilatura variano a seconda del tipo di applicazione di destinazione che si vuole profilare e del tipo di dati sulle prestazioni che si vuole raccogliere.|-   [How to: Choose Collection Methods](../profiling/how-to-choose-collection-methods.md) (Procedura: Scegliere un metodo di raccolta)<br />-   [Collecting Performance Statistics by Using Sampling](../profiling/collecting-performance-statistics-by-using-sampling.md) (Raccolta di statistiche sulle prestazioni tramite il campionamento)<br />-   [Collecting .NET Memory Allocation and Lifetime Data](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) (Raccolta di dati di durata e allocazione di memoria .NET)<br />-   [Collecting Detailed Timing Data by Using Instrumentation](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md) (Raccolta di dati di intervallo dettagliati tramite la strumentazione)<br />-   [How to: Profile JavaScript Code in Web Pages](../profiling/how-to-profile-javascript-code-in-web-pages.md) (Procedura: Profilare codice JavaScript nelle pagine Web)<br />-   [Collecting Thread and Process Concurrency Data](../profiling/collecting-thread-and-process-concurrency-data.md) (Raccolta di dati di concorrenza di thread e processi)<br />-   [Collecting Additional Performance Data](../profiling/collecting-additional-performance-data.md) (Raccolta di dati aggiuntivi relativi alle prestazioni)|  
-|**Impostare le opzioni di configurazione avanzata:** quando si esegue la profilatura delle applicazioni .NET Framework che caricano più versioni di common language runtime (CLR), è possibile specificare di quale versione eseguire la profilatura. Quando in una sessione di prestazioni si hanno più file con estensione exe, è possibile impostare l'ordine di avvio dei file binari.|-   [How to: Specify the .NET Framework Runtime](../profiling/how-to-specify-the-dotnet-framework-runtime.md) (Procedura: Specificare il runtime di .NET Framework)<br />-   [How to: Specify the Binary to Start](../profiling/how-to-specify-the-binary-to-start.md) (Procedura: Specificare il file binario da avviare)|  
+|**Impostare le opzioni di profilatura di base:** è necessario configurare [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] per usare il server dei simboli Microsoft. Ciò consente di avere accesso ai simboli, come ad esempio i nomi di parametri e funzioni, per la versione corrente di Windows e per altre applicazioni Microsoft. È anche possibile specificare altre opzioni generali prima di avviare una sessione di profilatura, ad esempio autorizzazioni di sistema per gli strumenti di profilatura e i nomi dei file di dati di profilatura.|-   [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Procedura: Serializzare le informazioni sui simboli](../profiling/how-to-serialize-symbol-information.md)<br />-   [Procedura: Impostare la sessione corrente](../profiling/how-to-set-the-current-session.md)<br />-   [Procedura: Impostare le autorizzazioni](../profiling/how-to-set-permissions.md)<br />-   [Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|**Specificare i dati che si vogliono convertire:** le procedure per configurare una sessione di profilatura variano a seconda del tipo di applicazione di destinazione che si vuole profilare e del tipo di dati sulle prestazioni che si vogliono raccogliere.|-   [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)<br />-   [Collecting Performance Statistics by Using Sampling](../profiling/collecting-performance-statistics-by-using-sampling.md) (Raccolta di statistiche sulle prestazioni tramite il campionamento)<br />-   [Collecting .NET Memory Allocation and Lifetime Data](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) (Raccolta di dati di durata e allocazione di memoria .NET)<br />-   [Collecting Detailed Timing Data by Using Instrumentation](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md) (Raccolta di dati di intervallo dettagliati tramite la strumentazione)<br />-   [Procedura: Profilare codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [Collecting Thread and Process Concurrency Data](../profiling/collecting-thread-and-process-concurrency-data.md) (Raccolta di dati di concorrenza di thread e processi)<br />-   [Collecting Additional Performance Data](../profiling/collecting-additional-performance-data.md) (Raccolta di dati aggiuntivi relativi alle prestazioni)|  
+|**Impostare le opzioni di configurazione avanzata:** quando si esegue la profilatura delle applicazioni .NET Framework che caricano più versioni di Common Language Runtime (CLR), è possibile specificare di quale versione eseguire la profilatura. Quando in una sessione di prestazioni si hanno più file con estensione exe, è possibile impostare l'ordine di avvio dei file binari.|-   [Procedura: Specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)|  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Controlling Data Collection](../profiling/controlling-data-collection.md) (Controllo della raccolta di dati)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplora prestazioni](../profiling/performance-explorer.md)
-
-
-
