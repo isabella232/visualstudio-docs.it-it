@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: dfc0482152b3da0b52950ab6389cc9f7d9e83e3a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53867579"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974280"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizza i valori del registro nella finestra di registri (C#, C++, Visual Basic, F#)
 
-Il **registra** finestra consente di visualizzare il contenuto del registro durante il debug di Visual Studio. Per un'introduzione generale ai concetti alla base di registri e i **registra** finestra, vedere [nozioni fondamentali di debug: Finestra Registri
+Il **registra** finestra consente di visualizzare il contenuto del registro durante il debug di Visual Studio. Per un'introduzione generale ai concetti alla base di registri e i **registra** finestra, vedere [nozioni fondamentali di debug: Finestra Registri](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Informazioni di registro non sono disponibile per App SQL o script.
