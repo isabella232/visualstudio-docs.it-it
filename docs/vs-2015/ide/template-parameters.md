@@ -1,14 +1,9 @@
 ---
 title: Parametri di modello | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238901"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787092"
 ---
 # <a name="template-parameters"></a>Parametri di template
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 ## <a name="custom-template-parameters"></a>Parametri di modello personalizzati  
  Oltre ai parametri di modello riservati predefiniti usati per la sostituzione dei parametri, è possibile specificare i propri valori e parametri di modello. Per altre informazioni, vedere [Elemento CustomParameters (modelli di Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)  
   
-## <a name="example-replacing-files-names"></a>Esempio: sostituzione di nomi di file  
+## <a name="example-replacing-files-names"></a>Esempio: Sostituire i nomi di file  
  È possibile specificare nomi di file variabili per gli elementi del progetto usando un parametro con l'attributo `TargetFileName`. Ad esempio, è possibile specificare che il file EXE usi il nome del progetto, specificato da `$projectname$`, come nome del file.  
   
 ```  
@@ -93,7 +88,7 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Esempio: uso del nome del progetto per il nome dello spazio dei nomi  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Esempio: Usando il nome del progetto per il nome del Namespace  
  Per usare il nome del progetto per lo spazio dei nomi in un file di classe di Visual C#, Class1.cs, usare la sintassi seguente:  
   
 ```  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)
-
-
-

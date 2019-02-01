@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e08171c02288f89e706c80ab6dfd5ef9538318c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 8d40df6c68b9d62ab6e96483357e45e5c8c122a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227941"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019593"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Visualizza attività e i thread nella finestra Stack in parallelo (C#, Visual Basic, C++)
 
@@ -46,7 +46,7 @@ Il **stack in parallelo** finestra dispone di controlli della barra degli strume
 
 ![Barra degli strumenti nella finestra Stack in parallelo](../debugger/media/parallel_stackstoolbar.png "barra degli strumenti stack in parallelo")  
   
-|Icona|Control|Description|  
+|Icona|Control|Descrizione|  
 |-|-|-|  
 |![Casella combinata thread/attività](media/parallel_toolbar1.png "casella combinata thread/attività")|**Thread**/**attività** pole se seznamem|Consente di passare dalla visualizzazione degli stack di chiamate dei thread alla visualizzazione degli stack di chiamate delle attività e viceversa. Per altre informazioni, vedere [Visualizzazione Attività](#tasks-view) e [Visualizzazione Thread](#threads-view).|  
 |![Mostra icona solo con contrassegno](media/parallel_toolbar2.png "icona Mostra solo con contrassegno")|Mostra solo con contrassegno|Mostra gli stack di chiamate per i thread contrassegnati in altre finestre del debugger, ad esempio la **thread GPU** finestra e il **espressioni di controllo parallela** finestra.|  
@@ -57,7 +57,7 @@ Il **stack in parallelo** finestra dispone di controlli della barra degli strume
 ### <a name="stack-frame-icons"></a>Icone di stack Frame
 Le icone seguenti forniscono informazioni sui frame dello stack attivi e correnti in tutte le visualizzazioni:
 
-|Icona|Description|  
+|Icona|Descrizione|  
 |-|-|  
 |![Freccia gialla](media/icon_parallelyellowarrow.gif)|Indica la posizione corrente (stack frame attivo) del thread corrente.|
 |![Icona thread](media/icon_parallelthreads.gif)|Indica la posizione corrente (stack frame attivo) di un thread non correnti.|
@@ -68,7 +68,7 @@ Sono disponibili le seguenti voci di menu di scelta rapida facendo clic su un me
 
 ![Menu di scelta rapida nella finestra Stack in parallelo](../debugger/media/parallel_contmenu.png "menu di scelta rapida nella finestra Stack in parallelo")  
 
-|Voce di menu|Description|  
+|Voce di menu|Descrizione|  
 |-|-|  
 |**Flag**|Contrassegna l'elemento selezionato.|  
 |**Rimuovi flag**|Rimuove il flag dall'elemento selezionato.|  
@@ -98,7 +98,7 @@ La figura seguente mostra un thread che va da Main a Managed per eseguire la tra
 
 La tabella seguente descrive le principali funzionalità dei **thread** Vista:  
   
-|Callout|Nome elemento|Description|  
+|Callout|Nome elemento|Descrizione|  
 |-|-|-|  
 |1|Segmento o nodo dello stack di chiamate|Contiene una serie di metodi per uno o più thread. Se il frame non contiene alcuna riga freccia connessa a esso, il frame viene illustrato l'intero percorso di chiamate per i thread.|  
 |2|Evidenziazione blu|Indica il percorso di chiamate del thread corrente.|  

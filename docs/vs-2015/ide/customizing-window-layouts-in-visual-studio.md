@@ -1,13 +1,9 @@
 ---
 title: Personalizzazione del layout della finestra
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -27,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802029"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +77,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
   Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancoraggio delle finestre
  Quando si seleziona e si trascina la barra del titolo di una finestra degli strumenti oppure la scheda della finestra del documento, viene visualizzata una guida a forma di rombo. Durante l'operazione di trascinamento, quando il cursore si trova sopra una delle frecce nel rombo, viene visualizzata un'area ombreggiata che mostra la posizione in cui verrà ancorata la finestra se viene rilasciato il mouse in quel preciso momento.
@@ -181,9 +177,9 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Tipi di finestre](../misc/kinds-of-windows.md)|Vengono illustrate le differenze tra le finestre degli strumenti e le finestre di documento nell'IDE.|
 |[Procedura: Disporre e ancorare le finestre](../misc/how-to-arrange-and-dock-windows.md)|Viene descritto come ancorare, nascondere automaticamente e affiancare le finestre, nonché come reimpostarne il layout.|
 |[Procedura: Spostarsi all'interno dell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Descrive come è possibile scorrere tra le finestre aperte nell'IDE, in ordine di utilizzo. Descrive inoltre come è possibile passare a documenti specifici.|
-|[Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Include informazioni sulle combinazioni di impostazioni e sull'effetto di tali impostazioni sul layout delle finestre, sui tasti di scelta rapida e su altri elementi dell'IDE.|
+|[Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Include informazioni sulle combinazioni di impostazioni e sull'effetto di tali impostazioni sul layout delle finestre, sui tasti di scelta rapida e su altri elementi dell'IDE.|

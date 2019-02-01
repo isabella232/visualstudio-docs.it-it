@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78580cad30447419734afd9ef8c8fbc490e516e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbd7a4c9b3f1524e3552ea7c0c2dd636b09c0f2b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967313"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Errore: Il processo di destinazione è stato terminato con codice di &#39;codice&#39; durante la valutazione della funzione &#39;(funzione)&#39;
 
@@ -35,7 +35,7 @@ Il messaggio di errore indicherà il nome della funzione che il debugger ha tent
 Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamata il getter della proprietà o `ToString` (metodo). Provare una delle operazioni seguenti:
  
 * Modificare il metodo in un altro tipo di codice diverso da un getter della proprietà o metodo ToString e il problema non viene più visualizzato.
-    -oppure-
+    oppure
 * (Per `ToString`) definire un `DebuggerDisplay` attributo sul tipo e si può avere il debugger valuta un elemento diverso da `ToString`.
     -oppure-
 * (Per un getter proprietà) Inserire il `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo della proprietà. Ciò può essere utile se si dispone di un metodo che deve rimanere una proprietà per motivi di compatibilità delle API, ma deve essere effettivamente un metodo.

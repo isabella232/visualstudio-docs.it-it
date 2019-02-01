@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ad2399cf43b8e86bd45e9c33dd421eeb55416f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c926da377688b1248daa01f015cda7914434a36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828813"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013899"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Descrizione&gt; elemento (distribuzione ClickOnce)
 Identifica le informazioni sull'applicazione usate per creare una shell e un **Aggiungi / Rimuovi programmi** nel Pannello di controllo.  
@@ -41,7 +41,7 @@ Identifica le informazioni sull'applicazione usate per creare una shell e un **A
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
  L'elemento `description` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v1` . Non contiene alcun elemento figlio e ha gli attributi seguenti.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`publisher`|Obbligatorio. Identifica il nome della società usato per il posizionamento delle icone in di Windows **avviare** dal menu e i **Aggiungi / Rimuovi programmi** nel Pannello di controllo, durante la distribuzione è configurata per l'installazione.|  
 |`product`|Obbligatorio. Identifica il nome del prodotto completo. Utilizzato come titolo dell'icona installata in di Windows **avviare** menu.|  

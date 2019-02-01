@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821192"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997325"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Creare viste personalizzate di oggetti nativi nel debugger
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework consente di personalizzare la modalità di visu
 
 Natvis sostituisce il *autoexp. dat* file nelle versioni precedenti di Visual Studio con la sintassi XML, funzionalità di diagnostica migliorate, controllo delle versioni e più file di supporto.  
 
-Natvis non funziona per:
-
-- I progetti desktop Windows C++ con **tipo di Debugger** impostata su **Mixed** sotto **le proprietà di configurazione** > **debug**. 
-- [Debug in modalità mista](how-to-debug-in-mixed-mode.md) per le app desktop di Windows in modalità di compatibilità gestita (**Tools** > **opzioni** > **debug**  >  **Generali** > **utilizza modalità di compatibilità gestita**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Visualizzazioni di Natvis
 

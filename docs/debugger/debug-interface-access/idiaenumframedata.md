@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65917b88144bfe86c9159772588888c590e2cd7e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 55aba0ff827bde1be1736e7b4dc4e57eb249e144
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53876289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014718"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Enumera i vari elementi di dati di frame contenuti nell'origine dati.  
@@ -31,7 +31,7 @@ IDiaEnumFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaEnumFrameData`.  
   
-|Metodo|Description|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Recupera il `IEnumVARIANT Interface` versione l'enumeratore.|  
 |[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Recupera il numero di elementi di frame di dati.|  

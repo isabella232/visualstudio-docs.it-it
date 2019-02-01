@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dac1a48db34f1b3a5a9dbdbac4469344f3e5383
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001722"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce
 Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario usare le funzionalità avanzate di distribuzione, ad esempio la distribuzione di applicazioni attendibili, è consigliabile usare il *Mage.exe* lo strumento da riga di comando per creare la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. Questa procedura dettagliata viene descritto come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione con la versione della riga di comando (*Mage.exe*) o la versione con interfaccia grafica (*MageUI.exe*) della generazione del manifesto e Strumento di modifica.  

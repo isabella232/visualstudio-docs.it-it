@@ -70,15 +70,15 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900672b7b335880df9c5a17c8b15a8c6394ae67e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95d69b89dd9b0d3b3aa37187ce69cc57c303cd53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934744"
 ---
 # <a name="crt-debug-heap-details"></a>Informazioni dettagliate sull'heap di debug CRT
 In questo argomento vengono fornite informazioni dettagliate sull'heap di debug CRT.  
@@ -190,7 +190,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  Il flag **_crtDbgFlag** contiene i seguenti campi di bit:  
   
-|Campo di bit|Impostazione predefinita<br /><br /> predefinito|Description|  
+|Campo di bit|Impostazione predefinita<br /><br /> predefinito|Descrizione|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|Attivato|Attiva l'allocazione di debug. Quando questo bit è off, le allocazioni rimangono concatenate ma vengono assegnate al tipo di blocco **_IGNORE_BLOCK**.|  
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Disattivato|Impedisce l'effettiva liberazione della memoria, ad esempio per simulare condizioni di poca memoria. Quando questo bit è on, i blocchi liberati vengono mantenuti nell'elenco collegato dell'heap di debug, ma vengono contrassegnati come **_FREE_BLOCK** e riempiti con uno speciale valore byte.|  
@@ -300,7 +300,7 @@ typedef struct _CrtMemState
   
  Le funzioni elencate di seguito indicano lo stato e il contenuto dell'heap e utilizzano tali informazioni per il rilevamento di perdite di memoria e altri problemi.  
   
-|Funzione|Description|  
+|Funzione|Descrizione|  
 |--------------|-----------------|  
 |[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Salva uno snapshot dell'heap in una struttura **_CrtMemState** fornita dall'applicazione.|  
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Confronta due strutture dello stato della memoria, salva le differenze tra di esse in una terza struttura di stato e restituisce TRUE se i due stati sono differenti.|  

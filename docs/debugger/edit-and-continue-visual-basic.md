@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e1305a67fa4347a8b39b677c5be31ada257b65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d36ab4ed41b790fd43cfe97c67f39b07782ab0ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016509"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifica e continuazione (Visual Basic)
 Modifica e continuazione è una funzionalità per il debug di [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] che consente di apportare modifiche al codice mentre viene eseguito in modalità di interruzione. Dopo aver applicato le modifiche al codice, è possibile riprendere l'esecuzione del codice con le nuove modifiche già inserite e verificarne l'effetto.  
