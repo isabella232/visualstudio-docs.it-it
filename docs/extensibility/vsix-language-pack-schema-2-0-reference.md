@@ -28,7 +28,7 @@ Lo schema del Language Pack VSIX fornisce informazioni sull'installazione locali
 
 L'elemento radice del file language pack è `<PackageLanguagePackManifest>`, con un attributo `Version`, ovvero la versione del formato language pack. Questo articolo descrive la versione 2.0 del formato language pack, che viene specificato nel manifesto impostando il `Version` sul valore dell'attributo `Version="2.0.0"`. L'elemento radice contiene esattamente un elemento figlio `<Metadata>` elemento.
 
-### <a name="packagelanguagepackmanifest-element"></a>Elemento http://schemas.microsoft.com/Developer/VSX-schema/2011}}packagelanguagepackmanifest
+### <a name="packagelanguagepackmanifest-element"></a>Elemento packagelanguagepackmanifest
 
 All'interno di `<PackageLanguagePackManifest>` elemento deve essere presente l'elemento seguente:
 

@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53924267"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993165"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: Creare un'applicazione dati a più livelli
 Le applicazioni dati *a più livelli* sono applicazioni con accesso ai dati e sono separate in più *livelli logici*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +49,7 @@ Durante questa procedura dettagliata, si eseguire la procedura seguente:
 
 -   Scrivere il codice per popolare le tabelle dati.
 
-![collegamento a video](../data-tools/media/playvideo.gif) per una versione video di questo argomento, vedere [Video How to: Creazione di un'applicazione dati a più livelli
+![collegamento a video](../data-tools/media/playvideo.gif) per una versione video di questo argomento, vedere [Video How to: Creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Prerequisiti
 Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
@@ -123,7 +123,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
      Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-     -oppure-
+     oppure
 
      Selezionare **nuova connessione** per aprire il **Aggiungi connessione** nella finestra di dialogo.
 
