@@ -1,25 +1,20 @@
 ---
 title: Nodi di utilità | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5907b388e59b136a2d89b02348e7ac3d2b25d63c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783863"
 ---
 # <a name="utility-nodes"></a>Nodi utilità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Nella finestra di progettazione shader, i nodi di utilità rappresentano utili e
 |**Mascheramento vettore**|Nasconde i componenti del vettore specificato.<br /><br /> È possibile usare questo valore per rimuovere canali di colore specifici da un valore di colore o per evitare un effetto su componenti specifici nei calcoli successivi.<br /><br /> **Input:**<br /><br /> `Vector`: `float4`<br /> Vettore da nascondere.<br /><br /> **Output:**<br /><br /> `Output`: `float4`<br /> Vettore nascosto.|**Rosso / X**<br /> **False** per nascondere il componente rosso (x); in caso contrario **True**.<br /><br /> **Verde / Y**<br /> **False** per nascondere il componente verde (y); in caso contrario **True**.<br /><br /> **Blu / Z**<br /> **False**per nascondere il componente blu (z); in caso contrario **True**.<br /><br /> **Alfa / W**<br /> **False** per nascondere il componente alfa (w); in caso contrario **True**.|  
 |**Vettore riflesso**|Calcola il vettore riflesso per il pixel corrente nello spazio tangente, in base alla posizione della camera.<br /><br /> È possibile usare questo valore per calcolare i riflessi, le coordinate della mappa cubi e i contributi di illuminazione speculare.<br /><br /> **Input:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> Normale alla superficie del pixel corrente, definita nello spazio tangente del pixel corrente. È possibile usare questa impostazione per intervenire sulla normale alla superficie apparente, come nel mapping di normali.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Vettore riflesso.|nessuno|  
 |**Speculare**|Calcola il contributo di illuminazione speculare, in base al modello di illuminazione Phong, usando la normale alla superficie specificata.<br /><br /> L'illuminazione speculare dà un aspetto brillante e riflettente a un oggetto, ad esempio acqua, plastica o metalli.<br /><br /> **Input:**<br /><br /> `Surface Normal`: `float3`<br /> Normale alla superficie del pixel corrente, definita nello spazio tangente del pixel corrente. È possibile usare questa impostazione per intervenire sulla normale alla superficie apparente, come nel mapping di normali.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Contributo di colore delle evidenziazioni speculari.|nessuno|
-
-
-

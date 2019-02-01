@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Pulire una compilazione | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,15 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780747"
 ---
-# <a name="how-to-clean-a-build"></a>Procedura: pulire una compilazione
+# <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -113,6 +108,3 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
  [Attività RemoveDir](../msbuild/removedir-task.md)   
  [Attività Csc](../msbuild/csc-task.md)   
  [Destinazioni](../msbuild/msbuild-targets.md)
-
-
-

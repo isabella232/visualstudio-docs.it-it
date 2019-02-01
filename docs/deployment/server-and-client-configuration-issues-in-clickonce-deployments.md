@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30547a985f752d2302e7d8cd33203a9261c3445c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955555"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003256"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzione contiene un tipo di file che Windows non riconosce, ad esempio un file di Microsoft Word, IIS non le consentirà nemmeno la trasmissione del file e la distribuzione non riuscirà.  
@@ -95,7 +95,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supporta l'installazione di applicazioni da qualsiasi server Web HTTP 1.1 o un file server. FTP, il File Transfer Protocol, non è supportato per l'installazione di applicazioni. È possibile utilizzare FTP per la pubblicazione solo le applicazioni. Queste differenze sono riepilogate nella tabella seguente:  
 
 
-| Tipo di URL | Description |
+| Tipo di URL | Descrizione |
 |----------| - |
 | ftp:// | È possibile pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
 | http:// | È possibile installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |

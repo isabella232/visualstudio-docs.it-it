@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: d7784e6bde19a556d31394f3443dbf4494042481
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53892451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005306"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -213,7 +213,7 @@ Durante il debug, il **moduli** finestra Mostra i moduli di codice il debugger �
 1. Nel **moduli** finestra, fare doppio clic sul **stato simboli** oppure **File di simboli** intestazioni o qualsiasi modulo. 
 1. Nel menu di scelta rapida, selezionare una delle opzioni seguenti:  
   
-|Opzione|Description|  
+|Opzione|Descrizione|  
 |------------|-----------------|  
 |**Carica simboli**|Viene visualizzata per i moduli con i simboli ignorati, non è stati trovati o non è stati caricati. Tenta di caricare i simboli dai percorsi specificati nella **le opzioni** > **debug** > **simboli** pagina. Se il file di simboli non trovato o non caricato, viene avviata **Esplora File** quindi è possibile specificare un nuovo percorso da cercare.|  
 |**Informazioni sul caricamento simboli**|Mostra la posizione di un file di simboli caricato o i percorsi cercati se il debugger non è possibile trovare il file.|  

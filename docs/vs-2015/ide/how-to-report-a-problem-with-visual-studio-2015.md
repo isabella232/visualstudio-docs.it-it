@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064060"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834439"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Come segnalare un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere [come segnalare
 
 Se si verifica un problema con Visual Studio 2015, è necessario conoscere in modo che Microsoft possa diagnosticarlo e risolverlo.  Con lo strumento **Segnala un problema** è possibile raccogliere informazioni dettagliate sul problema e inviarle a Microsoft in pochi clic.
 
- Microsoft rispetta la privacy degli utenti. Per informazioni su come vengono gestiti i dati inviati a Microsoft, vedere [Informativa sulla privacy della famiglia dei prodotti Microsoft Visual Studio](https://www.visualstudio.com/en-us/dn948229).
+ Microsoft rispetta la privacy degli utenti. Per informazioni sul trattamento dei dati inviati a Microsoft, vedere l'[Informativa sulla privacy Microsoft per aziende e sviluppatori](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Aprire lo strumento Segnala un problema
  Fare clic sull'icona dei commenti e suggerimenti utente accanto ad **Avvio veloce** sulla barra del titolo oppure fare clic su **? &#124; Commenti e suggerimenti &#124; Segnala un problema**.

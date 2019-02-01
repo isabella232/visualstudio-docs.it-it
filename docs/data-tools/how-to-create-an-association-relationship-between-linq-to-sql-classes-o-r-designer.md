@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65ec6298b9bdc2aeaec6df0f209cd460f4e70b4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860452"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001330"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione tra classi LINQ to SQL (O/R Designer)
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.
@@ -27,7 +27,7 @@ Quando si usa la finestra di dialogo **Editor di associazione** per creare un'as
 ## <a name="association-properties"></a>Proprietà dell'associazione
 Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational Designer**, nella finestra **Proprietà** è possibile configurare alcune proprietà (l'associazione rappresenta la linea tra le classi correlate). Nella tabella seguente vengono descritte le proprietà di un'associazione.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Cardinality**|Controlla se l'associazione è uno-a-molti o uno-a-uno.|
 |**Child Property**|Specifica se creare una proprietà nella chiave esterna dell'associazione nell'elemento padre, che è una raccolta o un riferimento a record figlio. Ad esempio, nell'associazione tra `Customer` e `Order`, se il **Child Property** è impostata su **True**, una proprietà denominata `Orders` viene creato nella classe padre.|

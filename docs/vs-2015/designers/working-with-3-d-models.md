@@ -1,25 +1,20 @@
 ---
 title: Utilizzo dei modelli 3D | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd22a3efecab0e544ddab7fff4ab795020ba0a4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5d52f517e40ff7f61db904b81104bf1940938d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798452"
 ---
 # <a name="working-with-3-d-models"></a>Utilizzo dei modelli tridimensionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49251062"
 |-----------|-----------------|  
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor modello per lavorare con modelli 3D.|  
 |[Esempi dell'editor di modello](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor modello per eseguire attività comuni di modellazione 3D.|
-
-
-

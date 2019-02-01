@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eb9f759b-98a5-45fc-b085-91f1f2666e72
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0653e11a778963cae223eaa1490317a6ffde9a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37e24bfff95080c2105a243b44d565b18319a6bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936399"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936424"
 ---
 # <a name="annotation"></a>Annotazione
 Un codice di programma di posizione può essere annotato con un `SymTagAnnotation` simbolo.  
@@ -26,7 +26,7 @@ Un codice di programma di posizione può essere annotato con un `SymTagAnnotatio
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte di sezione di percorso. Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  

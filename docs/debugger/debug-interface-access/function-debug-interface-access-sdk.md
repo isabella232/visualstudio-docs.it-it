@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a05da24165a574d8743c78f9d07c513d72b5434
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1612353a1b278cb8bd81894bdec262308c241214
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904075"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069330"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funzione (Debug Interface Access SDK)
 Ogni funzione è identificata da un `SymTagFunction` simbolo.  
@@ -25,7 +25,7 @@ Ogni funzione è identificata da un `SymTagFunction` simbolo.
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
-|Proprietà|`Data type`|Description|  
+|Proprietà|`Data type`|Descrizione|  
 |--------------|-----------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Uno dei valori del [enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md), se la funzione è una funzione membro.|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  

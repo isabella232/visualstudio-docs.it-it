@@ -1,25 +1,20 @@
 ---
 title: Sviluppare app per la piattaforma UWP (Universal Windows Platform) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787018"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +49,9 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
   
   Per sviluppare app di Windows universale con Visual Studio 2015 su una piattaforma diversa da Windows 10, sono presenti alcune restrizioni:  
   
-- Windows 8.1: non è possibile eseguire l'app localmente (solo in un dispositivo Windows 10 remoto). È possibile usare gli emulatori in Visual Studio, ma non il simulatore.  
+- Windows 8.1: È possibile eseguire l'app localmente (solo in un dispositivo Windows 10 remoto). È possibile usare gli emulatori in Visual Studio, ma non il simulatore.  
   
-- Windows 7: non è possibile eseguire l'app localmente (solo in un dispositivo Windows 10 remoto). Non è possibile usare gli emulatori né il simulatore di Visual Studio.  
+- Windows 7: È possibile eseguire l'app localmente (solo in un dispositivo Windows 10 remoto). Non è possibile usare gli emulatori né il simulatore di Visual Studio.  
   
   È possibile usare la finestra di progettazione XAML solo se la piattaforma di sviluppo è Windows 10.  
   
@@ -66,4 +61,3 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
  Se si hanno app di Windows Store 8.1 o Windows Phone 8.1 oppure app di Windows universale create con Visual Studio 2015 RC, [trasferire le app esistenti](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) per usare la versione più recente della piattaforma UWP (Universal Windows Platform).  
   
  Dopo aver creato l'app di Windows universale, è necessario [creare un pacchetto dell'app](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) per installarla in un dispositivo Windows 10 o inviarla al Windows Store.
-

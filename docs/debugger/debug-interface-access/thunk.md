@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934a261c182c9aeeb4b14f99aa7cedf892890f5d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1012053d3c63f9da18120dd3ccaa652ffc2301a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843567"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070370"
 ---
 # <a name="thunk"></a>Thunk
 Ciascuna `thunk` è identificato da un `SymTagThunk` tag.  
@@ -26,7 +26,7 @@ Ciascuna `thunk` è identificato da un `SymTagThunk` tag.
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Attributo di modificatore di accesso, una delle [enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) valori (solo in DIA SDK 8.0 o versione successiva).|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026359"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fornisce un contesto di query per i simboli di debug.  
@@ -31,7 +31,7 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono illustrati i metodi di `IDiaSession`.  
   
-|Metodo|Description|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera l'indirizzo di caricamento del file eseguibile che corrisponde ai simboli in questo archivio dei simboli. Questo è lo stesso valore passato per il `put_loadAddress` (metodo).|  
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Imposta l'indirizzo di caricamento del file eseguibile che corrisponde ai simboli in questo archivio dei simboli. **Nota:**  È importante chiamare questo metodo quando si riceve un `IDiaSession` dell'oggetto e prima di iniziare a utilizzare l'oggetto.|  

@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9e2e7c489ace9436f101259cccac144e1a933e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a737c9b993a6ffa523cbaa19929821f7d3c2acaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858526"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023171"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Errore: Impossibile connettersi a SQL Server sul computer remoto
 Non è possibile connettersi a SQL Server nel computer remoto *nome*. Accesso negato. Verificare che il debugger remoto sia installato sul computer remoto. Se il computer remoto non è un dominio o se Visual Studio è eseguito come account locale, il computer remoto deve disporre di un account con gli stessi nome utente e password dell'account locale.  
