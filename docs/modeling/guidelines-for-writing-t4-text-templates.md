@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a302eb05e6b4c763740f03baea4aa8bd41c72891
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959892"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571161"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 Queste linee guida generali potrebbero essere utile se si sta generando codice programma o altre risorse dell'applicazione in Visual Studio. Le regole non sono corretti.
@@ -48,7 +48,8 @@ Attendere un codice scritto a mano inoltre al codice generato. È insolito per u
 
   In altri linguaggi generati, ad esempio XML, usare il `<#@include#>` direttiva per creare semplici combinazioni di contenuto generata e scritto a mano. Nei casi più complessi, potrebbe essere necessario scrivere un passaggio di post-elaborazione che combina il file generato con tutti i file scritti a mano.
 
-  Spostare il materiale comune in file di inclusione o modelli in fase di esecuzione per evitare la ripetizione simile blocchi di testo e il codice in più modelli, usano il `<#@ include #>` direttiva. Per altre informazioni, vedere [direttiva Include T4](../modeling/t4-include-directive.md).
+  Materiale comune spostarvi i file di inclusione o i modelli in fase di esecuzione.
+  Per evitare la ripetizione simile blocchi di testo e il codice in più modelli, usare il `<#@ include #>` direttiva. Per altre informazioni, vedere [direttiva Include T4](../modeling/t4-include-directive.md).
 
   È possibile anche creare modelli di testo in fase di esecuzione in un progetto separato e possono essere chiamati dal modello in fase di progettazione. A questo scopo, usare il `<#@ assembly #>` direttiva per accedere al progetto separato. Per esempi, vedere ["ereditarietà nel testo" modelli nel Blog di Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -57,13 +58,15 @@ Attendere un codice scritto a mano inoltre al codice generato. È insolito per u
 
   È possibile inserire i metodi in una classe astratta che può ereditare il modello. La classe astratta deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Per altre informazioni, vedere [direttiva Template T4](../modeling/t4-template-directive.md).
 
-  Generare il codice, non configuration file un metodo per la scrittura di un'applicazione di variabili consiste nello scrivere codice programma generico che accetta un file di configurazione. Un'applicazione scritta in questo modo è molto flessibile e può essere riconfigurata quando cambiano i requisiti aziendali, senza ricompilare l'applicazione. Tuttavia, uno svantaggio di questo approccio è che l'applicazione sarà ottimali rispetto a un'applicazione più specifica. Inoltre, il codice programma sarà più difficile da leggere e gestire, in parte perché deve sempre fare i conti con i tipi più generici.
+  Generare il codice, non i file di configurazione.
+  Un metodo per la scrittura di un'applicazione di variabili consiste nello scrivere codice programma generico che accetta un file di configurazione. Un'applicazione scritta in questo modo è molto flessibile e può essere riconfigurata quando cambiano i requisiti aziendali, senza ricompilare l'applicazione. Tuttavia, uno svantaggio di questo approccio è che l'applicazione sarà ottimali rispetto a un'applicazione più specifica. Inoltre, il codice programma sarà più difficile da leggere e gestire, in parte perché deve sempre fare i conti con i tipi più generici.
 
   Al contrario, un'applicazione cui parti variabili vengono generati prima della compilazione può essere fortemente tipizzata. Questo rende molto più semplice e più affidabile per scrivere il codice scritto a mano e integrarla con generato parti del software.
 
   Per ottenere i massimi vantaggi della generazione del codice, provare a generare codice programma anziché i file di configurazione.
 
-  Usare una cartella del codice generato inserire i modelli e i file generati in una cartella di progetto denominata **il codice generato**per renderlo cancellare che questi non sono file che devono essere modificati direttamente. Se si crea codice personalizzato per eseguire l'override o aggiungere le classi generate, inserire tali classi in una cartella denominata **codice personalizzato**. La struttura di un progetto tipico è simile alla seguente:
+  Usare una cartella del codice generato.
+  Inserire i modelli e i file generati in una cartella di progetto denominata **il codice generato**, per renderla cancellare che questi non sono file che devono essere modificati direttamente. Se si crea codice personalizzato per eseguire l'override o aggiungere le classi generate, inserire tali classi in una cartella denominata **codice personalizzato**. La struttura di un progetto tipico è simile alla seguente:
 
 ```
 MyProject
@@ -79,7 +82,8 @@ MyProject
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Linee guida per i modelli T4 (pre-elaborato) in fase di esecuzione
- Spostare il materiale comune nei modelli ereditati è possibile utilizzare l'ereditarietà per condividere i metodi e i blocchi di testo tra i modelli di testo T4. Per altre informazioni, vedere [direttiva Template T4](../modeling/t4-template-directive.md).
+ Spostare il materiale comune in modelli ereditati.
+È possibile utilizzare l'ereditarietà per condividere i metodi e i blocchi di testo tra i modelli di testo T4. Per altre informazioni, vedere [direttiva Template T4](../modeling/t4-template-directive.md).
 
  È anche possibile usare file di inclusione che dispongono di modelli in fase di esecuzione.
 
@@ -96,7 +100,8 @@ Ogni modello di runtime genera una definizione di classe parziale con lo stesso 
 
  `private string ComputeTotal() { ... }`
 
- Attendere un codice personalizzato: forniscono punti di estensione per provare a generare metodi virtuali in \<funzionalità della classe & + Blocca & >. In questo modo un singolo modello da utilizzare in molti contesti senza alcuna modifica. Anziché modificare il modello, è possibile costruire una classe derivata che fornisce la logica aggiuntiva minima. La classe derivata può essere codice normale, o può essere un modello in fase di esecuzione.
+ Attendere un codice personalizzato: forniscono punti di estensione.
+Si consiglia di generare i metodi virtuali in \<funzionalità della classe & + Blocca & >. In questo modo un singolo modello da utilizzare in molti contesti senza alcuna modifica. Anziché modificare il modello, è possibile costruire una classe derivata che fornisce la logica aggiuntiva minima. La classe derivata può essere codice normale, o può essere un modello in fase di esecuzione.
 
  Ad esempio, in MyStandardRunTimeTemplate.tt:
 
@@ -117,9 +122,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Linee guida per tutti i modelli T4
- Raccolta dei dati separata dalla generazione di testo tenta di evitare di combinare calcolo e i blocchi di testo. In ogni modello di testo, usare il primo \<codice & blocco & > per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o il primo \<funzionalità della classe & + block & >, evitare di espressioni lunghe ed evitare i cicli e istruzioni condizionali a meno che non contengono blocchi di testo. Questa pratica rende più facile da leggere e gestire il modello.
+ Separare la raccolta dei dati dalla generazione di testo.
+Provare a evitare di combinare calcolo e i blocchi di testo. In ogni modello di testo, usare il primo \<codice & blocco & > per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o il primo \<funzionalità della classe & + block & >, evitare di espressioni lunghe ed evitare i cicli e istruzioni condizionali a meno che non contengono blocchi di testo. Questa pratica rende più facile da leggere e gestire il modello.
 
- Non usare `.tt` per includere file utilizzano un'estensione nome file diverso, ad esempio `.ttinclude` i file di inclusione. Usare `.tt` solo per i file che si desidera essere elaborati come fase di esecuzione o in fase di progettazione modelli di testo. In alcuni casi, Visual Studio riconosce `.tt` i file e imposta automaticamente le relative proprietà per l'elaborazione.
+ Non usare `.tt` i file di inclusione.
+Usare un'estensione nome file diverso, ad esempio `.ttinclude` i file di inclusione. Usare `.tt` solo per i file che si desidera essere elaborati come fase di esecuzione o in fase di progettazione modelli di testo. In alcuni casi, Visual Studio riconosce `.tt` i file e imposta automaticamente le relative proprietà per l'elaborazione.
 
  Ogni modello di avvio come prototipo fissato.
 Scrivere un esempio di codice o del testo che si vuole generare e verificare che sia corretto. Quindi passare l'estensione con estensione tt e inserire in modo incrementale il codice che modifica il contenuto, vedere il modello.
