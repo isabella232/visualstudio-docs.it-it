@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Escludere o includere funzioni brevi nella strumentazione | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, instrument events
 - profiling tools, include short functions
@@ -17,13 +12,13 @@ ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd17b5c383736f2c11977e117ee59a1a6fa9e571
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d37984b6535e353053ba6ee71090797e4ce119d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801661"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedura: Escludere o includere funzioni brevi nella strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
 ## <a name="see-also"></a>Vedere anche  
  [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
-
-
-

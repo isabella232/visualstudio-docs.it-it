@@ -1,32 +1,27 @@
 ---
 title: Unit test per metodi generici | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771465"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile generare unit test per metodi generici procedendo esattamente come per altri metodi, come descritto in [Procedura: Creare ed eseguire uno unit test](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Le sezioni seguenti forniscono informazioni ed esempi relativi alla creazione di unit test per metodi generici.  
+È possibile generare unit test per metodi generici procedendo esattamente come per altri metodi, come descritto in [come: Creare ed eseguire uno Unit Test](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Le sezioni seguenti forniscono informazioni ed esempi relativi alla creazione di unit test per metodi generici.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argomenti di tipo e vincoli di tipo  
  Quando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera uno unit test per una classe generica, ad esempio `MyList<T>`, vengono generati due metodi: un helper generico e un metodo di test. Se `MyList<T>` dispone di uno o più vincoli di tipo, l'argomento di tipo deve soddisfare tutti i vincoli. Per assicurarsi che il codice generico sottoposto a test funzioni come previsto per tutti gli input consentiti, il metodo di test chiama il metodo helper generico con tutti i vincoli che si desidera testare.  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Composizione di uno unit test](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Composizione di uno unit test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)
-
-
-

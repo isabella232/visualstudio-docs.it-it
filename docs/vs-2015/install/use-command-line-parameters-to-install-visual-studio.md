@@ -3,11 +3,8 @@ title: Usare i parametri della riga di comando per installare Visual Studio 2015
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -16,13 +13,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922181"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794039"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,16 +37,16 @@ Quando si installa Visual Studio 2015 da un prompt dei comandi è possibile usar
 |Parametro|Description|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|Visualizza i parametri della riga di comando.|
-|**/ AddRemoveFeatures**|Specifica le funzionalità da aggiungere o rimuovere dal prodotto installato.|
-|**/ AdminFile** *Admindeployment*|Installa Visual Studio tramite il file di dati specificato per l'installazione amministrativa.|
-|**/ /Chainingpackage** *BundleName*|Specifica quale bundle è concatenato a questo bundle. Può anche essere usato per specificare una coorte nel programma Analisi utilizzo software.|
-|**/Createadminfile \<nomefile >**|Specifica il percorso per creare un file di controllo che può essere usato con /AdminFile|
-|**/ /Custominstallpath** *DirectoryInstallazione*|Installa tutti i pacchetti con destinazione modificabile nella directory specificata.|
+|**/AddRemoveFeatures**|Specifica le funzionalità da aggiungere o rimuovere dal prodotto installato.|
+|**/AdminFile** *AdminDeployment.xml*|Installa Visual Studio tramite il file di dati specificato per l'installazione amministrativa.|
+|**/ChainingPackage** *BundleName*|Specifica quale bundle è concatenato a questo bundle. Può anche essere usato per specificare una coorte nel programma Analisi utilizzo software.|
+|**/CreateAdminFile \<filename>**|Specifica il percorso per creare un file di controllo che può essere usato con /AdminFile|
+|**/CustomInstallPath** *InstallationDirectory*|Installa tutti i pacchetti con destinazione modificabile nella directory specificata.|
 |**/ForceRestart**|Riavvia sempre il computer dopo l'installazione.|
 |**/full**|Installa tutte le funzionalità del prodotto.|
 |**/Installselectableitems \<nome dell'elemento 1 > [;\< nome dell'elemento 2 >]**|Elenco di elementi dell'albero per la selezione da controllare nella schermata di selezione dell'installazione guidata.|
 |**/l**<br /><br /> **/ Accedere** *nomefile*|Specifica un percorso per il file di log.|
-|**/layout** *directory*|Copia i file sul supporto di installazione nella directory specificata.|
+|**/layout** *Directory*|Copia i file sul supporto di installazione nella directory specificata.|
 |**/NoCacheOnlyMode**|Impedisce il prepopolamento della cache del pacchetto.|
 |**/NoRefresh**|Impedisce il controllo nelle versioni più recenti di questo prodotto della disponibilità di versioni aggiornate richieste o consigliate.|
 |**/norestart**|Impedisce il riavvio dell'applicazione di installazione dal computer durante o dopo l'installazione. Per i codici restituiti da cercare, vedere la sezione della [Guida per l'amministratore di Visual Studio](../install/visual-studio-administrator-guide.md).|

@@ -1,5 +1,5 @@
 ---
-title: Get_issplitted | Microsoft Docs
+title: IDiaSymbol::get_isSplitted | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d02c67f9cd7e8c82e08cc3490f546c103cfb7a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cb5005472243632d4e4e189ca57715cc7d3d030
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927376"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967128"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Recupera un flag che specifica se il simbolo di dati è stata suddivisa in un'aggregazione o una raccolta di altri simboli. il compilatore considera i simboli come entità separate, anche se sono in effetti parte di un simbolo di dimensioni maggiori.  
@@ -48,7 +48,7 @@ HRESULT get_isSplitted(
 |Requisito|Description|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
-|Versione:|DIA SDK 8.0|  
+|Versione:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

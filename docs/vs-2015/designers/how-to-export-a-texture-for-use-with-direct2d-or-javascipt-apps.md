@@ -1,25 +1,20 @@
 ---
-title: 'Procedura: Esportare una trama da usare con app Direct2D o Javascript | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Esportare una trama da usare con Direct2D o App JavaScript | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e2b08760e567f6e000e191703695ee0703da7215
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781480"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedura: Esportare una trama da usare con app Direct2D o Javascript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
 ## <a name="rendering-conventions-in-direct2d"></a>Convenzioni di rendering in Direct2D  
  Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni di rendering interne di Direct2D seguenti:  
   
--   Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sul valore alfa premoltiplicato, vedere [Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
+-   Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sui valori alfa premoltiplicati, vedere [Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)  
   
 -   La trama deve essere fornita in formato dds, usando uno dei formati di compressione a blocchi seguenti:  
   
@@ -55,7 +50,7 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Per creare una trama compatibile con le convenzioni di rendering Direct2D  
   
-1. Iniziare con una trama di base. Caricare un'immagine esistente oppure crearne una nuova, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per supportare la compressione a blocchi in formato dds, specificare una trama con valori di larghezza e altezza multipli di quattro, ad esempio 100x100, 128x128 o 256x192. Poiché il mapping MIP non è supportato, la trama non deve essere quadrata e le dimensioni non devono essere una potenza di due.  
+1. Iniziare con una trama di base. Caricare un'immagine esistente oppure crearne una nuova, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md) Per supportare la compressione a blocchi in formato dds, specificare una trama con valori di larghezza e altezza multipli di quattro, ad esempio 100x100, 128x128 o 256x192. Poiché il mapping MIP non è supportato, la trama non deve essere quadrata e le dimensioni non devono essere una potenza di due.  
   
 2. Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama appena creato e quindi scegliere **Proprietà**. Nella pagina **Proprietà di configurazione**, **Generale**, impostare la proprietà **Tipo di elemento** su **Image Content Pipeline** (Pipeline di contenuti immagine). Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No**, quindi scegliere il pulsante **Applica**. Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).  
   
@@ -71,6 +66,3 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
 6. Fare clic sul pulsante **OK** .  
   
    Quando si compila il progetto, la pipeline di contenuti immagine converte l'immagine di origine dal formato di lavoro al formato di output specificato, generando anche il valore alfa premoltiplicato, e il risultato viene copiato nella directory di output del progetto.
-
-
-

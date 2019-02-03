@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968339"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009895"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
 È possibile modificare il formato in cui viene visualizzato il valore nella **Watch** finestra usando identificatori di formato.  
@@ -74,9 +74,9 @@ int main() {
 |su|Stringa Unicode (codifica UTF-16) (con le virgolette)|\<posizione > L "hello world"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Stringa Unicode (codifica UTF-16) (senza virgolette)|\<posizione > L "hello world"|hello world|  
 |bstr|Stringa binaria di BSTR (tra virgolette)|\<posizione > L "hello world"|L"hello world"|  
-|env|Blocco di ambiente (stringa con terminazione Null doppia)|\<posizione > L "=:: =::/\\\\"|L "=:: =::/\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|Stringa UTF-32 (tra virgolette)|\<posizione > U "hello world"|u"hello world"|  
-|**s32b**|stringa UTF-32 (senza virgolette)|\<posizione > U "hello world"|hello world|  
+|env|Blocco di ambiente (stringa con terminazione Null doppia)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|Stringa UTF-32 (tra virgolette)|\<location> U"hello world"|u"hello world"|  
+|**s32b**|stringa UTF-32 (senza virgolette)|\<location> U"hello world"|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
 |**hv**|Tipo di puntatore: indica che il valore del puntatore in esame è il risultato dell'allocazione di heap di una matrice, ad esempio `new int[3]`.|\<posizione>{\<primo membro>}|\<posizione > {\<primo membro >, \<secondo membro >,...}|  
 |**na**|Elimina l'indirizzo di memoria di un puntatore a un oggetto.|\<posizione>, {member=value…}|{member=value…}|  
