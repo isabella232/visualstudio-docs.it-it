@@ -1,27 +1,22 @@
 ---
-title: "Procedura: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Connettere il Profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8100f04471b0fd5886bed5c5ea815632cb0031db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760178"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un servizio .NET Framework e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.  
@@ -70,7 +65,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
    > [!NOTE]
    >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.  
 
-   |                                 Opzione                                  |                                                                                                                                          Descrizione                                                                                                                                           |
+   |                                 Opzione                                  |                                                                                                                                          Description                                                                                                                                           |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |      Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda Processi di Gestione attività di Windows.       |
    |              [/crosssession](../profiling/crosssession.md)              | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se il servizio è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna ID sessione nella scheda Processi di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -89,7 +84,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
      Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa 100 campioni al secondo in un processore da 1 GHz. È possibile specificare una delle opzioni seguenti per modificare l'intervallo dei cicli di clock o per specificare un evento di campionamento diverso.  
 
-   |Evento di campionamento|Descrizione|  
+   |Evento di campionamento|Description|  
    |------------------|-----------------|  
    |[/timer](../profiling/timer.md) **:** `Interval`|Imposta l'intervallo di campionamento sul numero di cicli di clock non interrotti specificato da `Interval`.|  
    |[/pf](../profiling/pf.md)[**:**`Interval`]|Imposta l'evento di campionamento sugli errori di pagina. Se si specifica `Interval`, imposta il numero di errori di pagina tra campioni. Il valore predefinito è 10.|  
@@ -105,7 +100,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 -   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
-    |Opzione|Descrizione|  
+    |Opzione|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
@@ -122,7 +117,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     -   Arrestare il servizio.  
 
-         oppure  
+         -oppure-  
 
     -   Digitare **VSPerfCmd /detach**  
 
@@ -139,6 +134,3 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 ## <a name="see-also"></a>Vedere anche  
  [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)   
  [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)
-
-
-

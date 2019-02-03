@@ -1,5 +1,5 @@
 ---
-title: Get_notreached | Microsoft Docs
+title: IDiaSymbol::get_notReached | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc228f239ae8ed051c90cf8e9ee57a098e49a86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b3ef7418a232c5c6fa06062fbe6214f55e40b8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859894"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008530"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 Recupera un flag che specifica se la funzione o l'etichetta non viene mai raggiunto.  
@@ -45,7 +45,7 @@ HRESULT get_notReached(
 |Requisito|Description|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
-|Versione:|DIA SDK 8.0|  
+|Versione:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

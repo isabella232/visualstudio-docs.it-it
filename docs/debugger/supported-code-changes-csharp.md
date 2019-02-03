@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 865b5c220a410c9b0d744263820a50dd1bb9395a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878627"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945060"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Le modifiche al codice supportate (C# e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -37,7 +37,7 @@ La tabella seguente illustra le modifiche apportate a C# e il codice Visual Basi
 |espressioni di Async/await|Aggiungi o modifica|[Sì](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Oggetti dinamici|Aggiungi o modifica|No|
 |espressioni lambda|Aggiungi o modifica|[Sì](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Espressioni LINQ|Aggiungi o modifica|[Uguale a espressioni lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|LINQ expressions|Aggiungi o modifica|[Uguale a espressioni lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
 > Funzionalità del linguaggio più recenti, ad esempio l'interpolazione di stringhe e gli operatori condizionali con valori null sono in genere supportate in modifica e continuazione. Per informazioni aggiornate, vedere la [supportato modifica Enc](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) pagina.

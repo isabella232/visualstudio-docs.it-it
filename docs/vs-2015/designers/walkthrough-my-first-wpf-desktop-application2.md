@@ -1,30 +1,25 @@
 ---
-title: 'Procedura dettagliata: Prima applicazione desktop WPF | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Il primo Applicazione2 di Desktop WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795945"
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Applicazione desktop WPF
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Prima applicazione desktop WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzione allo sviluppo di Windows Presentation Foundation (WPF). Verrà creata un'applicazione di base che include gli elementi comuni alla maggior parte delle applicazioni desktop WPF: markup XAML, code-behind, definizioni delle applicazioni, controlli, layout, data binding e stili.  
+name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzione allo sviluppo di Windows Presentation Foundation (WPF). Si creerà un'applicazione di base che include gli elementi che sono comuni alla maggior parte delle applicazioni desktop WPF: Markup XAML, code-behind, definizioni delle applicazioni, controlli, layout, associazione dati e stili.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Creazione del progetto di applicazione  
  In questa sezione verrà creata l'infrastruttura dell'applicazione, che include il progetto e una finestra principale o un modulo.  
@@ -647,17 +642,17 @@ name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzion
   
      Questo codice XAML aggiunge gli stili seguenti:  
   
-    -   `headerTextStyle`: per formattare il titolo della pagina `Label`.  
+    -   `headerTextStyle`: : per formattare il titolo della pagina `Label`.  
   
-    -   `labelStyle`: per formattare i controlli `Label` .  
+    -   `labelStyle`: : per formattare i controlli `Label` .  
   
-    -   `columnHeaderStyle`: per formattare `DataGridColumnHeader`.  
+    -   `columnHeaderStyle`: : per formattare `DataGridColumnHeader`.  
   
-    -   `listHeaderStyle`: per formattare i controlli `Border` dell'intestazione dell'elenco.  
+    -   `listHeaderStyle`: : per formattare i controlli `Border` dell'intestazione dell'elenco.  
   
-    -   `listHeaderTextStyle`: per formattare **Label**dell'intestazione dell'elenco.  
+    -   `listHeaderTextStyle`: : per formattare **Label**dell'intestazione dell'elenco.  
   
-    -   `buttonStyle`: per formattare `Button` nella pagina **ExpenseItHome.xaml** .  
+    -   `buttonStyle`: : per formattare `Button` nella pagina **ExpenseItHome.xaml** .  
   
 3.  Aprire **ExpenseItHome.xaml** e sostituire tutto il contenuto tra gli elementi `<Grid>` e `</Grid>` con il codice XAML seguente  
   
@@ -981,8 +976,5 @@ name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzion
 - [Documenti in WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
- [Creare applicazioni desktop moderne con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-
+ [Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md) (Creare moderne applicazioni desktop con Windows Presentation Foundation)

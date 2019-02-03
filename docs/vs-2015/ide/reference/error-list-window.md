@@ -1,14 +1,9 @@
 ---
 title: Finestra Elenco errori | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,19 +15,19 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785771"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-NOTA]
+NOTA
 >  L'elenco degli errori consente di visualizzare informazioni su un messaggio di errore specifico. È possibile copiare il testo della stringa di errore o il numero di errore nella finestra di output. Per visualizzare la finestra di output, selezionare i tasti Ctrl+Alt+O. Vedere [Finestra di output](../../ide/reference/output-window.md).  
   
  È possibile sviluppare applicazioni più velocemente usando la finestra **Elenco errori**. Ad esempio, è possibile effettuare le attività seguenti:  
@@ -56,7 +51,7 @@ NOTA]
   Per ordinare l'elenco, fare clic sull'intestazione di una colonna. Per ordinare nuovamente l'elenco in base a una colonna aggiuntiva, fare clic sull'intestazione di un'altra colonna tenendo premuto il tasto MAIUSC. Per selezionare le colonne da visualizzare e quelle da nascondere, scegliere **Mostra colonne** dal menu di scelta rapida. Per modificare l'ordine di visualizzazione delle colonne, trascinare l'intestazione di una colonna verso sinistra o verso destra.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, fare clic su **Strumenti/Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, fare clic su **Strumenti/Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtri Elenco errori  
  Esistono due tipi di filtro in due caselle a discesa, una sul lato destro della barra degli strumenti e una a sinistra della barra degli strumenti. Nell'elenco a discesa sul lato sinistro della barra degli strumenti viene specificato il set di file di codice da usare (**Intera soluzione**, **Documenti aperti**, **Progetto corrente**, **Documento corrente**).  
@@ -89,7 +84,7 @@ NOTA]
  Codice  
  Restituisce il codice di errore.  
   
- Descrizione  
+ Description  
  Visualizza il testo della voce.  
   
  Progetto  
@@ -100,6 +95,3 @@ NOTA]
   
  Linea  
  Visualizza la riga in cui si è verificato l'errore.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Analizzare il consumo di energia nelle app dello Store | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790353"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizzare il consumo di energia nelle app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Il profiler **Utilizzo di energia** consente di analizzare il consumo di energia
  Al momento dell'esecuzione del metodo, verrà aggiunto un contrassegno utente ai dati di profilatura con un messaggio.  
   
 > [!NOTE]
-> - Windows LoggingChannel implementa il [iclosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) interface (proiettata come [System. IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) in c# e VB). Per evitare perdite di risorse del sistema operativo, chiamare [Loggingchannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in c# e VB) quando si usa più un canale di registrazione.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementa l'interfaccia [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proiettata come [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) in C# e VB). Per evitare un consumo eccessivo di risorse del sistema operativo, chiamare [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (Windows.Foundation.Diagnostics.LoggingChannel.Dispose in C# e VB) quando non si usa più un canale di registrazione.  
 >   -   Ogni canale di registrazione aperto deve avere un nome univoco. Il tentativo di creare un nuovo canale di registrazione con lo stesso nome di uno non eliminato genera un'eccezione.  
   
  Per esempi, vedere [Esempio di LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) in Windows SDK.  
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> Altre risorse  
   
--   Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) e per [HTML e JavaScript](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) nel Centro sviluppatori Windows vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'applicazione per ridurre il costo del traffico di rete.  
+-   Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e per [HTML e JavaScript](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) nel Centro sviluppatori Windows vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'applicazione per ridurre il costo del traffico di rete.  
   
      Il simulatore di Visual Studio per le app di Windows Store consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   Gli strumenti **Temporizzazione funzione JavaScript** e **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [Analizzare l'utilizzo della CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
-
-
-

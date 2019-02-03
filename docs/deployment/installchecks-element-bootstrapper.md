@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023577"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (programma di avvio automatico)
 Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer locale per assicurarsi che siano stati installati tutti i prerequisiti appropriati per un'applicazione.  
@@ -168,7 +168,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |Proprietà|Note|Valori possibili|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Numero di versione del sistema operativo Windows 9 X.|4.10 = Windows 98|  
-|`VersionNT`|Numero di versione del sistema operativo basato su Windows NT.|ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT`|Numero di versione del sistema operativo basato su Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|Numero di versione del sistema operativo a 64 bit basati su Windows NT.|Come indicato in precedenza.|  
 |`VersionMsi`|Numero di versione del servizio Windows Installer.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|Specifica se un utente dispone di privilegi di amministratore in un sistema operativo basato su Windows NT.|0 non = privilegi di amministratore<br /><br /> 1 = i privilegi di amministratore|  
