@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 423a153c42b8ca07cd3a78e7ab78721fa6fd67e3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a4b94a26b8f22ee87e42a1f890c58ab1299524f
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935670"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571083"
 documentType: LandingData
 title: Sviluppo per Azure con Visual Studio
 metadata:
@@ -19,7 +19,7 @@ metadata:
   ms.author: ghogen
   ms.custom: seodec18
 sections:
-- title: Pubblicare in Azure
+- title: Distribuire nel Servizio app di Azure
   items:
   - type: paragraph
     text: Distribuire l'app di Azure negli ambienti di gestione temporanea o produzione con Visual Studio oppure configurare l'integrazione e la distribuzione continue (CI/CD).
@@ -32,17 +32,12 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: Pubblicare un'app ASP.NET Core in Azure
+      title: Distribuire un'app ASP.NET Core in Azure
     - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NET.svg
-      title: Pubblicare un'app Web ASP.NET in Azure
-    - href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-      title: Pubblicare funzioni di Azure
+      title: Distribuire un'app Web ASP.NET in Azure
     - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
       html: <p></p>
       image:
@@ -57,8 +52,8 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
-      title: Pubblicare un'app Web ASP.NET in una macchina virtuale di Azure
-- title: Servizi app di Azure e Funzioni di Azure
+      title: Distribuire un'app Web ASP.NET in una macchina virtuale di Azure
+- title: Servizi app di Azure, App per la logica e Funzioni di Azure
   items:
   - type: paragraph
     text: Esercitazioni per la creazione di app Web e funzioni serverless ospitate in Azure
@@ -72,7 +67,12 @@ sections:
       image:
         src: https://docs.microsoft.com/azure/media/index/AppService.svg
       title: ASP.NET Core
-    - href: /azure/azure-functions/functions-develop-vs
+    - href: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+      html: <p>Creare flussi di lavoro automatizzati e scalabili con App per la logica di Azure.</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/LogicApp.svg
+      title: App per la logica di Azure
+    - href: /azure/azure-functions/functions-create-your-first-function-visual-studio
       html: <p>Elaborare eventi con codice serverless</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
@@ -95,8 +95,8 @@ sections:
       href: /visualstudio/containers
     - image:
         src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      text: Strumenti di Docker in Visual Studio
-      href: /visualstudio/docker/vs-azure-tools-docker-setup
+      text: Strumenti per contenitori in Visual Studio
+      href: /visualstudio/docker/docker-tools
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
       text: Strumenti di Kubernetes
@@ -178,10 +178,10 @@ sections:
         src: https://docs.microsoft.com//media/common/i_code-performance.svg
       title: Analizzare le prestazioni
     - href: vs-azure-tools-publishing-a-cloud-service.md
-      html: <p>Pubblicare un servizio cloud in Azure</p>
+      html: <p>Distribuire un servizio cloud in Azure</p>
       image:
         src: https://docs.microsoft.com//media/common/i_deploy.svg
-      title: Pubblica
+      title: Distribuzione
     - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
       html: <p>Monitorare e diagnosticare servizi cloud e macchine virtuali in esecuzione in Azure</p>
       image:
