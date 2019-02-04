@@ -225,7 +225,7 @@ In questa esercitazione viene usato Visual Studio 2017.
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-### <a name="bkmk_openports">Risoluzione dei problemi</a> Aprire le porte necessarie in Windows Server
+### <a name="bkmk_openports"></a> Risoluzione dei problemi Aprire le porte necessarie in Windows Server
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, se la risoluzione dei problemi di distribuzione e l'app è ospitata dietro un firewall, potrebbe essere necessario verificare che le porte appropriate siano aperte.
 
