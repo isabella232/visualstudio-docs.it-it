@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eef3d0732921bdd22b5753db6d7f769371bc335a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021598"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione
 Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, il cliente ha in genere aggiornare il manifesto di distribuzione e firmare nuovamente la soluzione. Sebbene questo rappresenti il metodo consigliato nella maggior parte dei casi, .NET Framework 3.5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni che possono essere distribuite dai clienti senza la necessità di rigenerare un nuovo manifesto di distribuzione. Per altre informazioni, vedere [le applicazioni di distribuzione ClickOnce per i server di test e produzione senza riapposizione della firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -129,7 +129,7 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 14. Se si dispone di un certificato archiviato come file nel file system, usare il **Sign come file di certificato** opzione e selezionare il certificato dal file system con i puntini di sospensione (**...** ) pulsante.  
   
-     -oppure-  
+     oppure  
   
      Se il certificato si trova in un archivio di certificati che sono accessibili dal computer, selezionare la **segno con l'opzione certificati archiviati**e selezionare il certificato dall'elenco fornito.  
   

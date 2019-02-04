@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca628689376bce696f49b3d1e01110108f58c0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4bbbf35ab49eeee730a4c96f8cd66ff50142376
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851209"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043102"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Rappresenta un file di origine.  
@@ -31,7 +31,7 @@ IDiaSourceFile : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaSourceFile`.  
   
-|Metodo|Description|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera un valore di chiave semplice numero intero univoco per questa immagine.|  
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Recupera il nome di file di origine.|  

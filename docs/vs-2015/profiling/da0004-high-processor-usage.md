@@ -1,14 +1,9 @@
 ---
 title: 'DA0004: Utilizzo elevato del processore | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -18,13 +13,13 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762524"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Utilizzo elevato del processore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51764035"
 Id regola | DA0004 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodi di profilatura | Campionamento di strumentazione |  
-| Messaggio | L'utilizzo del processore è costantemente superiore al 75%. È consigliabile usare la modalità di campionamento per le applicazioni basate sulla CPU. |  
+| Messaggio | L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
@@ -45,7 +40,3 @@ Id regola | DA0004 |
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Ad eccezione dei casi in cui è necessaria la temporizzazione della funzione o si è più interessati a comprendere l'input/output che i colli di bottiglia del processore, è consigliabile eseguire nuovamente la profilatura dell'applicazione usando il metodo di campionamento anziché il metodo di strumentazione.
-
-
-
-

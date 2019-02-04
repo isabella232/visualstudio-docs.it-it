@@ -1,5 +1,5 @@
 ---
-title: Get_localbasepointerregisterid | Microsoft Docs
+title: IDiaSymbol::get_localBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 040905a1e61f84e36bc2f01191a69ca1eceda0f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f640b21ea40daff03a847e0fc1f0644b3b348537
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896760"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920995"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 Recupera l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.  

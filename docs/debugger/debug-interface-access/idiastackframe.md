@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 486d25b8-a590-41c1-bdb5-faff3ae35632
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c2d2567eac66e15b3c096f3b4d6932347c65fac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998807"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Espone le proprietà di uno stack frame.  
@@ -31,7 +31,7 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Metodi supportati da questa interfaccia sono i seguenti:  
   
-|Metodo|Description|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Recupera un flag che indica che il puntatore di base viene allocato per il codice in questo intervallo di indirizzi. Metodo deprecato.|  
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Recupera la base di indirizzo del frame.|  

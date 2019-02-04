@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120b5b6818900b8f177a7358d9ef0cee7bb88482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836166"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992620"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Trovare il nome del processo ASP.NET
 
@@ -35,7 +35,7 @@ Eseguire il debug di un in esecuzione [!INCLUDE[vstecasp](../code-quality/includ
    
     - *w3wp.exe* è IIS 6.0 e versioni successive. 
     - *aspnet_wp.exe* sia le versioni precedenti di IIS.
-    - *IISExpress.exe* è IISExpress.
+    - *iisexpress.exe* is IISExpress.
     - *dotnet.exe* è ASP.NET Core.
     - *Inetinfo.exe* è meno recente applicazioni ASP in esecuzione in-process. 
 

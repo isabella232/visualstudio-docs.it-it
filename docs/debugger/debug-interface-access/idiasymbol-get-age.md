@@ -1,5 +1,5 @@
 ---
-title: Get_age | Microsoft Docs
+title: IDiaSymbol::get_age | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60d05654-e832-4a2e-a4a7-fe9922c459fe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d523a4dbed5f80fa67085537123e3d5be6fad361
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f826d7ef54473d45ef63d90c7de07cdee7257322
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029765"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Recupera il valore di durata di un file con estensione pdb.  
@@ -45,7 +45,7 @@ HRESULT get_age ( 
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Description|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  

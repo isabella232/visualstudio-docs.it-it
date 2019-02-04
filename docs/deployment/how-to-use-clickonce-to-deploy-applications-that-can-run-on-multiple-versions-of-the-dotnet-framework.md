@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 790864b44725287774b4ed3d0eefe2cfa9821179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975439"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
 È possibile distribuire un'applicazione destinata a più versioni di .NET Framework tramite la tecnologia di distribuzione ClickOnce. Ciò richiede di generare e aggiornare i manifesti dell'applicazione e della distribuzione.  
@@ -59,9 +59,9 @@ ms.locfileid: "53943116"
     |----------------------------|---------|  
     |4 Client|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
     |4 Completo|\<Framework targetVersion = "4.0" profile = supportedRuntime "Completo" = "4.0.30319" / >|  
-    |3.5 Client|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
-    |3.5 Completo|\<Framework targetVersion = "3.5" profile = supportedRuntime "Completo" = "2.0.50727" / >|  
-    |3.0|\<Framework targetVersion = supportedRuntime "3.0" = "2.0.50727" / >|  
+    |3.5 Client|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|  
+    |3.5 Completo|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Per modificare il file app. config per elencare le versioni di runtime di .NET Framework compatibili  
   
@@ -74,9 +74,9 @@ ms.locfileid: "53943116"
     |Versione di runtime di .NET framework|XML|  
     |------------------------------------|---------|  
     |4 Client|\<versione supportedRuntime = sku "v4.0.30319" = ". NETFramework, versione = v4.0, profilo = Client "/ >|  
-    |4 Completo|\<versione supportedRuntime = sku "v4.0.30319" = ". NETFramework, versione = v4.0 "/ >|  
-    |3.5 Completo|\<version="v2.0.50727"/ supportedRuntime >|  
-    |3.5 Client|\<versione supportedRuntime = sku "v2.0.50727" = "Client" / >|  
+    |4 Completo|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
+    |3.5 Completo|\<supportedRuntime version="v2.0.50727"/>|  
+    |3.5 Client|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Per modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework  
   

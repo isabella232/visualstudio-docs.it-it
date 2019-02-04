@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa81baae882376aae99eedd1fdf825c863fd70c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932402"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
@@ -118,7 +118,7 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
    - Per trovare i processi in esecuzione in tutti gli account utente, selezionare la **Mostra i processi di tutti gli utenti** casella di controllo.
       
      >[!NOTE]
-     >Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: Connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
       
 5. Nel **Collega a** campo, assicurarsi che sia elencato il tipo di codice si prevede di eseguire il debug. Il valore predefinito **automatica** l'impostazione funziona per la maggior parte dei tipi di app. 
   
@@ -161,7 +161,7 @@ Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visu
 |Il debug remoto di ASP.NET 4 o 4.5 in un server IIS|Utilizzare gli strumenti remoti e **Connetti a processo**|*w3wp.exe*|Vedere [Remote Debug ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Debug remoto di ASP.NET Core in un server IIS|Utilizzare gli strumenti remoti e **Connetti a processo**|*dotnet.exe*|Per la distribuzione di app, vedere [pubblicazione su IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per eseguire il debug, vedere [Remote Debug ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Eseguire il debug di script sul lato client in un server IIS locale, per tipi di app supportati |Usare **Connetti a processo**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debug degli script deve essere abilitato. Per Chrome, è necessario eseguire anche Chrome in modalità di debug e selezionare **Webkit code** nel **collegare a** campo.|
-|Il debug di un C#, Visual Basic o C++ app nel computer locale|Usare uno [debug standard](../debugger/debugger-feature-tour.md) o **Connetti a processo**|*\<NomeApp > .exe*|Nella maggior parte degli scenari, usare il debug standard e non **Connetti a processo**.|
+|Il debug di un C#, Visual Basic o C++ app nel computer locale|Usare uno [debug standard](../debugger/debugger-feature-tour.md) o **Connetti a processo**|*\<appname>.exe*|Nella maggior parte degli scenari, usare il debug standard e non **Connetti a processo**.|
 |Debug remoto di un'app desktop di Windows|Remote tools|N/D| Vedere [eseguire il debug remoto un C# o un'app Visual Basic](../debugger/remote-debugging-csharp.md) oppure [remoto il debug di un'app C++](../debugger/remote-debugging-cpp.md)|
 |Eseguire il debug di un'app ASP.NET nel computer locale dopo avere avviato l'app senza il debugger|Usare **Connetti a processo**|*iiexpress.exe*|Questo potrebbe essere utile per rendere l'app di caricare più veloce, ad esempio, ad esempio, la profilatura. |
 |Eseguire il debug di altri tipi di app supportati in un processo del server|Se il server è remoto, utilizzare gli strumenti remoti, e **Connetti a processo**|*Chrome.exe*, *iexplore.exe*, o di altri processi|Se necessario, è possibile utilizzare Monitoraggio risorse per semplificare l'identificazione del processo. Vedere [Debug remoto](../debugger/remote-debugging.md).|

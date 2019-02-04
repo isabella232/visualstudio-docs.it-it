@@ -1,33 +1,28 @@
 ---
 title: Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 0c8cbe8992a1035e2fb4a26feb9a77b5546bfa56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762859"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Visual C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlink/p/?LinkId=536383) è un componente installabile di Visual Studio 2015. Include modelli multipiattaforma di Visual Studio e installa gli SDK e gli strumenti multipiattaforma per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo argomento descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma mediante Visual Studio. Per una panoramica del componente, vedere [Visual C++ per dispositivi mobili multipiattaforma](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+http://go.microsoft.com/fwlink/p/?LinkId=536383)Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma è un componente installabile di Visual Studio 2015. Include modelli multipiattaforma di Visual Studio e installa gli SDK e gli strumenti multipiattaforma per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo argomento descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma mediante Visual Studio. Per una panoramica del componente, vedere [Visual C++ per dispositivi mobili multipiattaforma](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Requisiti](#Requirements)   
  [Ottenere gli strumenti](#GetTheTools)   
@@ -44,7 +39,7 @@ Visual C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlin
   
   Per compilare le app per specifiche piattaforme del dispositivo sono necessari alcuni requisiti aggiuntivi:  
   
-- Gli emulatori Windows Phone e l'emulatore di Microsoft Visual Studio per Android richiedono un computer in grado di eseguire Hyper-V. Per poter installare ed eseguire gli emulatori, è prima necessario abilitare la funzionalità Hyper-V in Windows. Per altre informazioni, vedere i [requisiti di sistema](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) dell'emulatore.  
+- Gli emulatori Windows Phone e l'emulatore di Microsoft Visual Studio per Android richiedono un computer in grado di eseguire Hyper-V. Per poter installare ed eseguire gli emulatori, è prima necessario abilitare la funzionalità Hyper-V in Windows. Per altre informazioni, vedere i [requisiti di sistema](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) dell'emulatore.  
   
 - Gli emulatori Android x86 inclusi in Android SDK offrono i risultati migliori nei computer in grado di eseguire il driver HAXM Intel. A questo scopo è necessario un processore Intel x64 con supporto di VT-x e della funzionalità del bit di disattivazione dell'esecuzione (XD, Execute Disable Bit). Per altre informazioni, vedere le [istruzioni di installazione per Intel® Hardware Accelerated Execution Manager - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
@@ -142,4 +137,3 @@ Visual C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlin
 ## <a name="see-also"></a>Vedere anche  
  [Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ per dispositivi mobili multipiattaforma](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
-

@@ -1,14 +1,9 @@
 ---
 title: Finestra di dialogo Progetti e soluzioni, Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -16,13 +11,13 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758201"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Progetti e soluzioni, Opzioni (finestra di dialogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49246194"
 Imposta il percorso predefinito delle cartelle di progetto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e determina il comportamento predefinito della finestra **Output**, dell'**Elenco attività** e di **Esplora soluzioni** durante lo sviluppo e la compilazione dei progetti. Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni**, espandere **Progetti e soluzioni** e fare clic su **Generale**.  
   
 > [!NOTE]
->  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Impostazioni  
  **Percorso progetti**  
@@ -64,13 +59,10 @@ Imposta il percorso predefinito delle cartelle di progetto [!INCLUDE[vsprvs](../
  Se si prova a creare un nuovo progetto o ad aprire un progetto esistente in una posizione non completamente attendibile (ad esempio, in un percorso UNC o un percorso HTTP), verrà visualizzato un messaggio. Usare questa opzione per specificare se il messaggio viene visualizzato ogni volta che si prova a creare o ad aprire un progetto in una posizione non completamente attendibile.  
   
  **Mostra finestra di output a inizio compilazione**  
- Consente di visualizzare automaticamente la finestra di Output nell'IDE all'inizio delle compilazioni della soluzione. Per altre informazioni, vedere [Procedura: Controllare la finestra di output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Questa opzione è attivata per impostazione predefinita.  
+ Consente di visualizzare automaticamente la finestra di Output nell'IDE all'inizio delle compilazioni della soluzione. Per altre informazioni, vedere [Procedura: Controllare la finestra di output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) Questa opzione è attivata per impostazione predefinita.  
   
  **Richiedi ridenominazione simbolica quando vengono rinominati i file**  
  Se selezionata, viene visualizzata una finestra di messaggio che richiede se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve rinominare anche tutti i riferimenti nel progetto all'elemento di codice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-
-
-

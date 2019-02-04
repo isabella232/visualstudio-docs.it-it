@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7dae0859970d5a9a70abb0bed20630348b270a7f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031283"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilare applicazioni ClickOnce dalla riga di comando
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], è possibile compilare progetti dalla riga di comando, anche se sono stati creati nell'ambiente di sviluppo integrato (IDE). In effetti, è possibile ricompilare un progetto creato con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in un altro computer che dispone solo di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installato. In questo modo di riprodurre una build con un processo automatizzato, ad esempio, in una compilazione centrale lab o tramite tecniche di scripting avanzate esula dall'ambito di compilazione del progetto stesso.  
@@ -78,7 +78,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Pubblica proprietà  
  Quando si pubblica l'applicazione nelle procedure precedenti, le proprietà seguenti vengono inserite nel file di progetto per la pubblicazione guidata. Queste proprietà influiscono direttamente sul modo in cui il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] viene prodotto l'applicazione.  
   
- Nelle *CmdLineDemo.vbproj* / *CmdLineDemo.csproj*:  
+ In *CmdLineDemo.vbproj* / *CmdLineDemo.csproj*:  
   
 ```xml  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
@@ -157,7 +157,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL SupportUrl, PublishURL e proprietà UpdateURL  
  Nella tabella seguente mostra le quattro opzioni di URL per la distribuzione ClickOnce.  
   
-|Opzione URL|Description|  
+|Opzione URL|Descrizione|  
 |----------------|-----------------|  
 |`PublishURL`|Obbligatorio se si pubblica l'applicazione ClickOnce per un sito Web.|  
 |`InstallURL`|Facoltativo. Impostare questa opzione di URL, se il sito dell'installazione è diverso da quella di `PublishURL`. Ad esempio, è possibile impostare il `PublishURL` a un percorso FTP e impostare il `InstallURL` a un URL Web.|  

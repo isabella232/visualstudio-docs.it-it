@@ -6,15 +6,15 @@ helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988142"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procedura: Sbloccare il download di remote tools in Windows Server
 
@@ -34,7 +34,7 @@ Per scaricare gli strumenti di Windows Server, è consigliabile una delle operaz
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
-  * sulle: vuoto
+  * about:blank
 
   Per le versioni precedenti del debugger in my.visualstudio.com, aggiungere questi siti aggiuntivi per assicurarsi che tale account di accesso ha esito positivo:
 
@@ -43,13 +43,13 @@ Per scaricare gli strumenti di Windows Server, è consigliabile una delle operaz
   * download.microsoft.com
   * my.visualstudio.com
   * login.microsoftonline.com
-  * Login.Live.com
+  * login.live.com
   * secure.aadcdn.microsoftonline-p.com
-  * msft.STS.microsoft.com
-  * auth.GFX.ms
+  * msft.sts.microsoft.com
+  * auth.gfx.ms
   * app.vssps.visualstudio.com
   * vlscppe.microsoft.com
-  * query.Prod.cms.RT.microsoft.com
+  * query.prod.cms.rt.microsoft.com
 
     Se si sceglie di aggiungere questi domini durante il download di remote tools, scegli **Add** quando richiesto.
 
