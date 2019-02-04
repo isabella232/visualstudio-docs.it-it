@@ -1,14 +1,9 @@
 ---
 title: Riferimento dello schema dei frammenti di codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
 - snippets [Visual Studio], schema reference
@@ -18,13 +13,13 @@ ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188121"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753563"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -280,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Elemento Author](../ide/code-snippets-schema-reference.md#author)|Elemento facoltativo. Nome della persona o della società che ha creato il frammento di codice. In un elemento `Author` possono essere presenti zero elementi `Header` oppure uno.|  
 |[Elemento Description](../ide/code-snippets-schema-reference.md#description)|Elemento facoltativo. Descrizione del frammento di codice. In un elemento `Description` possono essere presenti zero elementi `Header` oppure uno.|  
-|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl)|Elemento facoltativo. URL contenente altre informazioni sul frammento di codice. In un elemento Header possono essere presenti zero elementi `HelpURL` o uno. **Nota:** in Visual Studio l'elemento `HelpUrl` non viene usato. L'elemento fa parte dell'XML Schema dei frammenti di codice IntelliSense e ogni frammento di codice che contiene l'elemento verrà convalidato, anche se il valore dell'elemento non verrà mai usato.|  
+|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl)|Elemento facoltativo. URL contenente altre informazioni sul frammento di codice. In un elemento Header possono essere presenti zero elementi `HelpURL` o uno. **Nota:**  In Visual Studio l'elemento `HelpUrl` non viene usato. L'elemento fa parte dell'XML Schema dei frammenti di codice IntelliSense e ogni frammento di codice che contiene l'elemento verrà convalidato, anche se il valore dell'elemento non verrà mai usato.|  
 |[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords)|Elemento facoltativo. Raggruppa gli elementi `Keyword`. In un elemento `Keywords` possono essere presenti zero elementi `Header` oppure uno.|  
 |[Elemento Shortcut](../ide/code-snippets-schema-reference.md#shortcut)|Elemento facoltativo. Specifica il testo di collegamento che può essere usato per inserire il frammento. In un elemento `Shortcut` possono essere presenti zero elementi `Header` oppure uno.|  
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes)|Elemento facoltativo. Raggruppa gli elementi `SnippetType`. In un elemento `SnippetTypes` possono essere presenti zero elementi `Header` oppure uno. In assenza di elementi `SnippetTypes`, il frammento di codice è sempre valido.|  
@@ -665,7 +660,4 @@ is a great color. I love Blue.
   
 ## <a name="see-also"></a>Vedere anche  
  [Frammenti di codice](../ide/code-snippets.md)   
- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
-
-
-
+ [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).

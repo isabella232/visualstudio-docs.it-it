@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e37021c6c8492b0c882a84cbb88fe1cd9b5458e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1d315a76ab66414dff42c00e62fb1e963722c32
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010298"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto di ingresso&gt; elemento (applicazione ClickOnce)
 Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene eseguita in un computer client.  
@@ -54,7 +54,7 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 
  L'elemento `entryPoint` presenta l'attributo seguente:  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`name`|Facoltativo. Questo valore non viene utilizzato da .NET Framework.|  
 
@@ -69,7 +69,7 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
  Obbligatorio. Deve essere un figlio di `entryPoint` elemento. Non dispone di alcun elemento figlio e ha gli attributi seguenti.  
 
 
-| Attributo | Description |
+| Attributo | Descrizione |
 |--------------| - |
 | `file` | Obbligatorio. Un riferimento locale all'assembly di avvio per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo valore non può contenere barra (/) o una barra rovesciata (\\) separatori del percorso. |
 | `parameters` | Obbligatorio. Descrive l'azione da intraprendere con il punto di ingresso. È l'unico valore valido `run`; se viene fornita una stringa vuota, `run` presuppone. |

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 68f84fff-7cd3-4636-b929-7063a45009f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e501fc6160f21237f85ea0f43cd94b23b9b7b3bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93004453a90471ad9ec7a185653a727555f57ddb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999080"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 Se una funzione ha un punto definito in cui il debug è alla fine, il debug di punto di partenza è identificato da un simbolo con un `SymTagFuncDebugEnd` tag.  
@@ -26,7 +26,7 @@ Se una funzione ha un punto definito in cui il debug è alla fine, il debug di p
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte di sezione di percorso. Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|  

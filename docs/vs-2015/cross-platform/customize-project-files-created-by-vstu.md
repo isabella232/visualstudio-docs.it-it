@@ -1,25 +1,20 @@
 ---
 title: Personalizzare i file di progetto creati con VSTU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
 caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 51e03c97326409b4c793c48e6c151b059ad38e89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 14b04de6ea4c945b67bada257d7822790b683b38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772944"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizzare i file di progetto creati con VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,5 +70,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esempio: callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md)
-
+ [Esempio: callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md).

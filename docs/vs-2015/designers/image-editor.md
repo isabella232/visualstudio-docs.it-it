@@ -1,14 +1,9 @@
 ---
 title: Editor di immagini | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768303"
 ---
 # <a name="image-editor"></a>Editor di immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,10 +111,10 @@ Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](.
 |**Griglia**|Abilita o disabilita la griglia che indica i limiti dei pixel. È possibile che la griglia non venga visualizzata finché non si ingrandisce l'immagine con lo zoom.|  
 |**Visualizzazione livello MIP successivo**|Attiva il successivo livello MIP più grande in una catena di mapping MIP. Il livello MIP attivo è visualizzato nell'area di progettazione. Questo elemento è disponibile solo per le trame con livelli MIP.|  
 |**Visualizzazione livello MIP precedente**|Attiva il successivo livello MIP più piccolo in una catena di mapping MIP. Il livello MIP attivo è visualizzato nell'area di progettazione. Questo elemento è disponibile solo per le trame con livelli MIP.|  
-|**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:** abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|  
+|**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:**  abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|  
 |**Sfondo**|Abilita o disabilita la visualizzazione dello sfondo attraverso parti trasparenti dell'immagine. È possibile configurare la modalità di visualizzazione dello sfondo scegliendo tra le opzioni seguenti:<br /><br /> **Scacchi**<br /> Usa il colore verde insieme al colore di sfondo specificato per visualizzare lo sfondo con un motivo a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.<br /><br /> Sfondo bianco<br /> Usa il bianco per visualizzare lo sfondo.<br /><br /> Sfondo nero<br /> Usa il nero per visualizzare lo sfondo.<br /><br /> Anima sfondo<br /> Esegue lentamente una panoramica del modello a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.|  
 |**Proprietà**|Apre o chiude alternativamente la finestra **Proprietà**.|  
-|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato DDS per salvare l'immagine.<br /><br /> **Visualizzazione**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|  
+|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato DDS per salvare l'immagine.<br /><br /> **Visualizzazione**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:**  È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|  
   
  Di seguito è illustrata la barra degli strumenti **Editor di immagini**.  
   
@@ -141,7 +136,7 @@ Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](.
 |**Taglia**|Taglia l'immagine in base alla selezione attiva.|  
   
 ### <a name="working-with-mip-levels"></a>Uso dei livelli MIP  
- Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+ Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Uso della trasparenza  
  Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano la trasparenza. Esistono diversi modi di usare la trasparenza, a seconda dello strumento in uso. Per specificare il livello di trasparenza per una selezione di colore, nella finestra **Proprietà** impostare la componente **A** (alpha) di tale selezione di colore. Ecco come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:  
@@ -279,6 +274,3 @@ Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](.
 |[Working with 3-D Assets for Games and Apps](../designers/working-with-3-d-assets-for-games-and-apps.md) (Uso di risorse 3D per giochi e app)|Fornisce informazioni generali sugli strumenti disponibili in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per usare le risorse grafiche come trame, immagini, modelli 3D ed effetti shader.|  
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|  
 |[Finestra di progettazione shader](../designers/shader-designer.md)|Descrive come utilizzare Progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con shader.|
-
-
-

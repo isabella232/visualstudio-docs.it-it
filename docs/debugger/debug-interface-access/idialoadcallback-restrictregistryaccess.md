@@ -1,5 +1,5 @@
 ---
-title: Restrictregistryaccess | Microsoft Docs
+title: IDiaLoadCallback::RestrictRegistryAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de4760c3-a746-4bab-8065-1388fed31b67
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 337656c89148d921544bb55264e1b3d6ed8a72c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab01afeec0539dbb6f7ccd4e41f265e3430eb923
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920045"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 Determina se query del Registro di sistema possono essere utilizzate per individuare i percorsi di ricerca simbolo.  

@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata | Microsoft Docs
+title: IDiaFrameData::execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b8a301bd4f16cd3fb6f1b6fcec90e0f1cf3f47c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992022"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di frame dello stack del percorso.  
@@ -37,7 +37,7 @@ HRESULT execute ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Valore|Description|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|Non è possibile eseguire uno stack frame nel codice di prologo.|  
 |E_DIA_SYNTAX|Analizzare l'errore nel programma di frame.|  

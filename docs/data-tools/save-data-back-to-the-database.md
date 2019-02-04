@@ -17,16 +17,16 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3bbb8b93eb4b2f0cc1078224118b41caa590df6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989130"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966959"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -42,7 +42,7 @@ Quando si dati associa le tabelle di set di dati a controlli in una pagina XAML 
 
 Se si ha familiarità con gli oggetti TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Inserire nuovi record in un database](../data-tools/insert-new-records-into-a-database.md)|Come eseguire aggiornamenti e inserimenti usando oggetti TableAdapter o un comando|
 |[Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Come eseguire gli aggiornamenti degli oggetti TableAdapter|
@@ -126,7 +126,7 @@ Il <xref:System.Data.DataRow.RowState%2A> proprietà di un <xref:System.Data.Dat
 
 La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowState> enumerazione:
 
-|Valore DataRowState|Description|
+|Valore DataRowState|Descrizione|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection>. (Una riga in questo stato è privo di una versione originale corrispondente in quanto non esisteva quando l'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo è stato chiamato).|
 |<xref:System.Data.DataRowState.Deleted>|La riga è stata eliminata tramite il <xref:System.Data.DataRow.Delete%2A> di un <xref:System.Data.DataRow> oggetto.|
@@ -140,7 +140,7 @@ Set di dati di mantenere più versioni di record. Il <xref:System.Data.DataRowVe
 
 La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowVersion> enumerazione:
 
-|Valore di DataRowVersion|Description|
+|Valore di DataRowVersion|Descrizione|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|La versione corrente di un record contiene tutte le modifiche che sono state eseguite sul record dall'ultima volta <xref:System.Data.DataRow.AcceptChanges%2A> è stato chiamato. Se la riga è stata eliminata, non vi è alcuna versione corrente.|
 |<xref:System.Data.DataRowVersion.Default>|Il valore predefinito di un record, come definito dall'origine dati o lo schema dei set di dati.|

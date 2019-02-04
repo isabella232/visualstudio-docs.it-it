@@ -1,5 +1,5 @@
 ---
-title: Get_remove | Microsoft Docs
+title: IDiaSectionContrib::get_remove | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fd30ab7b-022b-4402-a42a-2d38e274c1b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c659d4368d6c2b4760e4c6b0ca977c7f63f51de3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3baca305a96fbb7268058e930ae443215410b626
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919850"
 ---
 # <a name="idiasectioncontribgetremove"></a>IDiaSectionContrib::get_remove
 Recupera un flag che indica se la sezione è stato rimosso prima di renderlo parte dell'immagine in memoria.  

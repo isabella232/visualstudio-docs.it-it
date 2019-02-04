@@ -1,5 +1,5 @@
 ---
-title: Loadandvalidatedatafrompdb | Microsoft Docs
+title: IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bb10e46d9007878282338aff0379c57eca2aba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4961895ab75a8989646a1fde1afa853df8e5b386
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911702"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943630"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Consente di aprire e verifica che il file di programma (PDB) del database corrisponda le informazioni sulla firma fornite e prepara il file con estensione PDB come un'origine dati di debug.  
@@ -49,7 +49,7 @@ HRESULT loadAndValidateDataFromPdb ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Valore|Description|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il file di formato non è valido.|  
 |E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|  

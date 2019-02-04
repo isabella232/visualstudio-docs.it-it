@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e9a85afd2024cb2ec723df053ebeca89ff52822
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831550"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020619"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il Debugger JIT in Visual Studio
 
@@ -56,7 +56,7 @@ Il debug JIT può comunque essere abilitato anche se Visual Studio non è più p
 
 2.  Nel **dell'Editor del Registro di sistema** finestra, individuare ed eliminare le voci del Registro di sistema seguenti:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +64,7 @@ Il debug JIT può comunque essere abilitato anche se Visual Studio non è più p
 
 3.  Se il computer è in esecuzione un sistema operativo a 64 bit, anche eliminare le voci del Registro di sistema seguenti:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -168,7 +168,7 @@ Se Just-In-Time di debug non viene avviato durante l'arresto anomalo di un'app, 
   La correzione consiste nell'aggiungere un **valore DWORD** dei **automatico**, con **dati valore** di **1**, chiavi del Registro di sistema seguenti:
   
   
-  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug.**
+  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
   - (Per i computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 

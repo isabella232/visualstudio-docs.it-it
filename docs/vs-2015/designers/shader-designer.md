@@ -1,14 +1,9 @@
 ---
 title: Finestra di progettazione shader | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805461"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +81,7 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
 |**Anteprima con teiera**|Se abilitata, viene usato un modello di teiera per visualizzare in anteprima lo shader. È possibile abilitare una sola forma di anteprima alla volta.|  
 |**Casella degli strumenti**|Consente di visualizzare o nascondere la **casella degli strumenti**.|  
 |**Proprietà**|Consente di visualizzare o nascondere la finestra **Proprietà**.|  
-|**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Esporta**: consente l'esportazione di uno shader in diversi formati.<br /><br /> **Esporta come**: esporta lo shader come codice sorgente HLSL o come bytecode shader compilato. Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md).<br /><br /> **Motori grafica**: consente la selezione del renderer usato per visualizzare l'area di progettazione.<br /><br /> **Rendering con D3D11**: usa Direct3D 11 per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Rendering con D3D11**: usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Visualizza**: consente la selezione di informazioni aggiuntive sulla finestra di progettazione shader.<br /><br /> **Frequenza dei fotogrammi**: se abilitata, consente di visualizzare la frequenza dei fotogrammi corrente nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo.  Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.|  
+|**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Esporta**: consente l'esportazione di uno shader in diversi formati.<br /><br /> **Esporta come**: esporta lo shader come codice sorgente HLSL o come bytecode shader compilato. Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)<br /><br /> **Motori grafica**: consente la selezione del renderer usato per visualizzare l'area di progettazione.<br /><br /> **Rendering con D3D11**: usa Direct3D 11 per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Rendering con D3D11WARP**: usa Direct3D 11 WARP (Windows Advanced Rasterization Platform) per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Visualizza**: consente la selezione di informazioni aggiuntive sulla finestra di progettazione shader.<br /><br /> **Frequenza dei fotogrammi**: se abilitata, consente di visualizzare la frequenza dei fotogrammi corrente nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo.  Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.|  
   
 > [!TIP]
 >  È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.  
@@ -134,11 +129,11 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
 |Parametro|Proprietà|  
 |---------------|----------------|  
 |**Trama 1** - **Trama 8**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Nome file**: percorso completo del file della trama associato a questo registro di trama.|  
-|**Ambiente materiale**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: colore con riflessione diffusa del pixel corrente, in base all'illuminazione indiretta, ovvero alla luce ambientale.|  
-|**Materiale diffuso**|**Accesso**: **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Value**: colore che descrive il modo in cui il pixel corrente diffonde l'illuminazione diretta.|  
+|**Ambiente materiale**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: colore con riflessione diffusa del pixel corrente, in base all'illuminazione indiretta ovvero alla luce ambientale.|  
+|**Materiale diffuso**|**Accesso**: **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**:  Colore che descrive il modo in cui il pixel corrente diffonde l'illuminazione diretta.|  
 |**Materiale emissivo**|**Accesso**:                              **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: contributo di colore del pixel corrente, in base all'illuminazione autofornita.|  
-|**Materiale speculare**|**Accesso**:                              **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.|  
-|**Materiale potenza speculare**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: esponente che definisce l'intensità delle evidenziazioni speculari nel pixel corrente.|  
+|**Materiale speculare**|**Accesso**:                              **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: Colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.|  
+|**Materiale potenza speculare**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: Esponente che definisce l'intensità delle evidenziazioni speculari nel pixel corrente.|  
   
 #### <a name="time-based-effects"></a>Effetti basati sul tempo  
  Alcuni shader hanno un componente temporale che anima l'effetto. Per vedere come apparirà l'effetto, è necessario aggiornare l'anteprima più volte al secondo. Per impostazione predefinita, l'anteprima viene aggiornata solo quando lo shader viene modificato; per modificare questo comportamento in modo da poter visualizzare gli effetti basati sul tempo, è necessario abilitare il rendering in tempo reale.  
@@ -159,7 +154,7 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
  È possibile esportare gli shader come codice sorgente HLSL o come bytecode shader compilato. Il codice sorgente HLSL viene esportato in un file di testo con estensione HLSL. Il bytecode di shader può essere esportato in un file binario non elaborato con estensione CSO o in un file di intestazione C++ (con estensione H) che codifica il bytecode di shader in una matrice.  
   
- Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md).  
+ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)  
   
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera  
   
@@ -193,6 +188,3 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
 |[Working with 3-D Assets for Games and Apps](../designers/working-with-3-d-assets-for-games-and-apps.md) (Uso di risorse 3D per giochi e app)|Fornisce una panoramica degli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a cui attingere per poter utilizzare trame e immagini, modelli 3D ed effetti shader.|  
 |[Editor immagini](../designers/image-editor.md)|Descrive come utilizzare l'editor di immagini di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con trame e immagini.|  
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|
-
-
-

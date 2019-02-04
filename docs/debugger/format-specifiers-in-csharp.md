@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe922960b0571593cc15581c29244798fd0f671e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018735"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formattare gli identificatori in C# nel debugger di Visual Studio
 È possibile modificare il formato in cui viene visualizzato il valore nella **Watch** finestra usando identificatori di formato. È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato verrà visualizzato in una [suggerimento dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella sezione delle opzioni di formato specificato.  
