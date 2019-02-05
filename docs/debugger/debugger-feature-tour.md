@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042062"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -185,7 +185,7 @@ In questo esempio l'**Helper eccezioni** visualizza un'eccezione `System.Argumen
 
 In questo esempio l'errore è stato restituito dalla chiamata di `DirectoryInfo` a causa di una stringa vuota archiviata nella variabile `value`.
 
-L'Helper eccezioni è un'ottima funzionalità che può facilitare il debug degli errori. La funzionalità consente di eseguire anche altre operazioni, ad esempio visualizzare i dettagli dell'errore e aggiungere un'espressione di controllo. Oppure, se necessario, è possibile modificare le condizioni che determinano la generazione di una particolare eccezione. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md).
+L'Helper eccezioni è un'ottima funzionalità che può facilitare il debug degli errori. La funzionalità consente di eseguire anche altre operazioni, ad esempio visualizzare i dettagli dell'errore e aggiungere un'espressione di controllo. Oppure, se necessario, è possibile modificare le condizioni che determinano la generazione di una particolare eccezione. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > L'Helper eccezioni sostituisce Informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

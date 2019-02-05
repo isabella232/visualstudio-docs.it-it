@@ -1,5 +1,5 @@
 ---
-title: "Guida introduttiva: Creare per la prima volta un'app Node.js con Visual Studio"
+title: 'Guida introduttiva: Usare Visual Studio per creare la prima app Node.js'
 description: In questa guida introduttiva verrà creata un'app Node.js in Visual Studio
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
@@ -9,19 +9,19 @@ ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f11396527208862428483744bc1ac3b02583f4c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131856"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955492"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Guida introduttiva: Creare per la prima volta un'app Node.js con Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Node.js
 
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà una semplice applicazione Web Node.js. Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 

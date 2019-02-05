@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936619"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
-IntelliTest genera input per gli [unit test con parametri](test-generation.md#parameterized-unit-testing) analizzando le condizioni di ramo nel programma. Gli input di test vengono scelti in base alla loro capacità di attivare nuovi comportamenti di creazione rami del programma. L'analisi è un processo incrementale. Ottimizza un predicato **q: I -> {true, false}** sui parametri di input di test formali **I**. **q** rappresenta l'insieme di comportamenti già osservati da IntelliTest. Inizialmente **q: = false** perché non è ancora stato osservato nessun comportamento.
+IntelliTest genera input per gli [unit test con parametri](test-generation.md#parameterized-unit-testing) analizzando le condizioni di ramo nel programma.
+Gli input di test vengono scelti in base alla loro capacità di attivare nuovi comportamenti di creazione rami del programma.
+L'analisi è un processo incrementale. Ottimizza un predicato **q: I -> {true, false}** sui parametri di input di test formali **I**. **q** rappresenta l'insieme di comportamenti già osservati da IntelliTest.
+Inizialmente **q: = false** perché non è ancora stato osservato nessun comportamento.
 
 Le fasi del ciclo sono:
 
-1. IntelliTest determina input **i** come **q(i)=false** mediante un [risolutore di vincoli](#constraint-solver). 
+1. IntelliTest determina input **i** come **q(i)=false** mediante un [risolutore di vincoli](#constraint-solver).
    Per costruzione, l'input **i** adotta un percorso di esecuzione non rilevato in precedenza. Inizialmente ciò significa che **i** può essere qualsiasi input, perché non è ancora stato scoperto nessun percorso di esecuzione.
 
 1. IntelliTest esegue il test con l'input **i** scelto e controlla l'esecuzione del test e il programma sottoposto al test.
@@ -55,7 +58,8 @@ IntelliTest usa il risolutore di vincoli [Z3](https://github.com/Z3Prover/z3/wik
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Code coverage dinamico
 
-Come effetto collaterale del monitoraggio in fase di esecuzione, IntelliTest consente di raccogliere dati di code coverage dinamico. Il termine *dinamico* indica che IntelliTest agisce solo su codice già eseguito, pertanto non può specificare valori assoluti per il coverage come fanno altri strumenti. 
+Come effetto collaterale del monitoraggio in fase di esecuzione, IntelliTest consente di raccogliere dati di code coverage dinamico.
+Il termine *dinamico* indica che IntelliTest agisce solo su codice già eseguito, pertanto non può specificare valori assoluti per il coverage come fanno altri strumenti.
 
 Ad esempio, quando IntelliTest segnala come code coverage dinamico 5/10 blocchi di base, ciò significa che sono stati analizzati cinque blocchi su dieci e che dieci è il numero totale di blocchi in tutti i metodi raggiunti finora dall'analisi (e non di tutti i metodi esistenti nell'assembly sottoposto a test).
 In una fase successiva dell'analisi, man mano che vengono rilevati altri metodi raggiungibili, è possibile che aumentino sia il numeratore (5) che il denominatore (10) della frazione di questo esempio.
@@ -80,8 +84,7 @@ IntelliTest consente di monitorare le istruzioni completate quando esegue un tes
 Pertanto IntelliTest deve essere in grado di creare oggetti di determinati tipi e di impostare i valori dei campi di tali oggetti. Se la classe è [visible](#visibility) e ha un costruttore predefinito [visible](#visibility), IntelliTest può creare un'istanza della classe.
 Se tutti i campi della classe sono [visible](#visibility), IntelliTest può impostare i campi automaticamente.
 
-Se il tipo non è visibile o i campi non sono [visible](#visibility), IntelliTest richiede un apporto esterno per creare oggetti e impostare stati interessanti al fine di ottenere il massimo code coverage. IntelliTest potrebbe usare la reflection per creare e inizializzare istanze in modo arbitrario, ma in genere questo approccio non è  
-consigliabile perché può impostare stati dell'oggetto che non possono mai verificarsi durante l'esecuzione normale del programma. IntelliTest si basa invece sui suggerimenti specificati dall'utente.
+Se il tipo non è visibile o i campi non sono [visible](#visibility), IntelliTest richiede un apporto esterno per creare oggetti e impostare stati interessanti al fine di ottenere il massimo code coverage. Sebbene IntelliTest possa usare la reflection per creare e inizializzare istanze in modo arbitrario, questo approccio non è solitamente consigliabile poiché può impostare l'oggetto in uno stato che non può mai verificarsi durante la normale esecuzione del programma. IntelliTest si basa invece sui suggerimenti specificati dall'utente.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Visibility
@@ -108,7 +111,7 @@ Le regole sono le seguenti:
 
 Come testare un metodo che ha un parametro di un tipo di interfaccia? O di una classe non sealed? IntelliTest non può determinare quali implementazioni verranno usate dopo la chiamata di questo metodo. È anche possibile che al momento del test non sia disponibile un'implementazione reale.
 
-La risposta convenzionale è l'uso di *oggetti fittizi* con comportamento esplicito. 
+La risposta convenzionale è l'uso di *oggetti fittizi* con comportamento esplicito.
 
 Un oggetto fittizio implementa un'interfaccia (o estende una classe non sealed). Non rappresenta un'implementazione reale, ma solo un collegamento che consente l'esecuzione di test usando l'oggetto fittizio. Il suo comportamento è definito manualmente in ogni test case nel quale viene usato. Esistono numerosi strumenti che semplificano la definizione degli oggetti fittizi e del comportamento previsto, ma questo comportamento va comunque definito manualmente.
 
@@ -129,7 +132,8 @@ Il procedimento di IntelliTest con i valori **struct** è simile a quello usato 
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Matrici e stringhe
 
-IntelliTest consente di monitorare le istruzioni completate mentre esegue un test e il programma sottoposto a test. In particolare rileva quando il programma dipende dalla lunghezza di una stringa o di una matrice (e dai limiti inferiori e dalle lunghezze di una matrice multidimensionale). Rileva anche l'uso dei diversi elementi di una stringa o una matrice. Quindi usa un [risolutore di vincoli](#constraint-solver) per determinare le lunghezze e i valori degli elementi con i quali il test e il programma possono originare comportamenti interessanti.
+IntelliTest consente di monitorare le istruzioni completate mentre esegue un test e il programma sottoposto a test. In particolare rileva quando il programma dipende dalla lunghezza di una stringa o di una matrice (e dai limiti inferiori e dalle lunghezze di una matrice multidimensionale).
+Rileva anche l'uso dei diversi elementi di una stringa o una matrice. Quindi usa un [risolutore di vincoli](#constraint-solver) per determinare le lunghezze e i valori degli elementi con i quali il test e il programma possono originare comportamenti interessanti.
 
 IntelliTest prova a ridurre al minimo le dimensioni delle matrici e delle stringhe necessarie per attivare i comportamenti di programma interessanti.
 

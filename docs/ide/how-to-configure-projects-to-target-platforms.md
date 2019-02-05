@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: configurare progetti per le piattaforme di destinazione'
+title: 'Procedura: Configurare progetti per le piattaforme di destinazione'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cb76611e7259b5cbee88f9ffe4da2dd222b56ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017747"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: configurare progetti per le piattaforme di destinazione
+# <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: Configurare progetti per le piattaforme di destinazione
 
 Visual Studio consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per altre informazioni sul supporto delle piattaforme a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps).
 

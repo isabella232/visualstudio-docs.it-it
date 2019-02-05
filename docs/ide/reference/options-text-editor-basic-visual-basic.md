@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998261"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opzioni, editor di testo, di base (Visual Basic), avanzato
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) include le proprietà seguenti:
@@ -40,18 +40,18 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
 - Inserisci prima le direttive 'System' durante l'ordinamento delle direttive using
 
    Se selezionato, il comando **Rimuovi e ordina using** nel menu di scelta rapida ordina le direttive `using` e posiziona gli spazi dei nomi "System" all'inizio dell'elenco.
-   
+
 - Separa gruppi di direttive using
 
    Se selezionata, il comando **Rimuovi e ordina using** nel menu di scelta rapida separa le direttive `using` inserendo una riga vuota tra gruppi di direttive che hanno lo stesso spazio dei nomi radice.
-   
-- Suggerisci le direttive using per i tipi in assembly di riferimento 
-- Suggerisci le direttive using per i tipi in pacchetti NuGet 
+
+- Suggerisci le direttive using per i tipi in assembly di riferimento
+- Suggerisci le direttive using per i tipi in pacchetti NuGet
 
    Se queste opzioni sono selezionate, è disponibile un'[azione rapida](../quick-actions.md) per installare un pacchetto NuGet e aggiungere una direttiva `using` per i tipi senza riferimenti.
 
    ![Azione rapida per installare il pacchetto NuGet in Visual Studio](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Evidenziazione
 
@@ -77,7 +77,7 @@ L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una line
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
-Selezionare queste caselle di controllo per visualizzare linee verticali punteggiate tra parentesi graffe (**{}**) nel codice. In questo modo è possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
+Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai blocchi di codice strutturato, che consentono di identificare facilmente i singoli blocchi di codice. Ad esempio, verrà visualizzata una riga tra `Sub` e `EndSub` in un'istruzione `Sub`.
 
 ## <a name="editor-help"></a>Guida Editor
 

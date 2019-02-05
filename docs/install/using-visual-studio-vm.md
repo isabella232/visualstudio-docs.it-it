@@ -13,15 +13,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836624"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926748"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -35,7 +35,7 @@ In Azure Marketplace sono disponibili immagini per le versioni più recenti prin
 
 | Versione di rilascio                                              | Edizioni                     |     Versione del prodotto      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Preview (Preview 1)                   |           Enterprise         | Versione 16.0.0 Preview 1 |
+|    Visual Studio 2019: Anteprima (Preview 2)                   |           Enterprise         | Versione 16.0.0 Preview 2 |
 | Visual Studio 2017: Versione più recente (15.9)                    |    Enterprise, Community     |      Versione 15.9.4      |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versione 15.0.20     |
 |   Visual Studio 2015: Versione più recente (Update 3)                      |    Enterprise, Community     |  Versione 14.0.25431.01   |

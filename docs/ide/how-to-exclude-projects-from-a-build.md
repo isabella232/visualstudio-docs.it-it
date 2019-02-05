@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: escludere progetti da una compilazione'
+title: 'Procedura: Escludere progetti da una compilazione'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e203fd9f1515e212591afe11c246cdeb78201b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74d938ead94444edd74bd9afdbc6021211b6ba0b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001943"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Procedura: escludere progetti da una compilazione
+# <a name="how-to-exclude-projects-from-a-build"></a>Procedura: Escludere progetti da una compilazione
 
 È possibile compilare una soluzione senza compilare tutti i progetti contenuti al suo interno. Ad esempio, si può escludere un progetto che causa l'interruzione della compilazione. Sarà possibile compilare il progetto in seguito, dopo avere esaminato e risolto i problemi.
 

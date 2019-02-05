@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821101"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231948"
 ---
 # <a name="installation"></a>Installazione
 
@@ -199,21 +199,32 @@ pip3.5 install Theano==0.9.0
 Per installare PyTorch, eseguire il comando seguente in un terminale:
 
 - **Windows**
-    - Non è ancora disponibile un pacchetto ufficiale. È possibile scaricare un [pacchetto Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all) di terze parti.
-    - Decomprimerlo nella directory principale, ad esempio "C:\Utenti\test\pytorch".
-    - Aggiungere "C:\Utenti\test\pytorch\Lib\site-packages" alla variabile di ambiente % PYTHONPATH%.
+
+   Non è ancora disponibile un pacchetto ufficiale. È possibile scaricare un pacchetto di terze parti da [Anaconda](https://anaconda.org/pytorch/repo?type=all) o [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+   - Decomprimerlo nella directory principale, ad esempio *C:\Utenti\test\pytorch*.
+   - Aggiungere *C:\Utenti\test\pytorch\Lib\site-packages* alla variabile di ambiente %PYTHONPATH%.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > I file binari macOS non supportano CUDA. Se necessario, eseguire l'installazione dai file di origine
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Il pacchetto singolo supporta sia GPU che CPU.
 

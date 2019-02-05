@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dabfb6b9209ff57249ceb79460c2bc75e7d63bf6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026181"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 
@@ -43,7 +43,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 3.  Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere uno dei valori seguenti e quindi scegliere il pulsante **OK**.
 
-    |Livello di dettaglio|Descrizione|
+    |Livello di dettaglio|DESCRIZIONE|
     | - |-----------------|
     |**Quiet**|Visualizza solo un riepilogo della compilazione.|
     |**Minimo**|Visualizza un riepilogo della compilazione e gli errori, gli avvisi e i messaggi classificati con priorità elevata.|

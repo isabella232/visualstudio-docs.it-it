@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927229"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003412"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
 
@@ -48,7 +48,7 @@ Sono state aggiunte nuove funzionalità per gli amministratori del cloud che ren
 
     ![Aggiungere un nuovo indirizzo di posta elettronica di notifica](media/add-new-subscriber-notification-email.png)
 
-  * **Preferenze di comunicazione**: scegliere la lingua che si vuole usare per l'invio di e-mail di assegnazione.
+  * **Preferenze di comunicazione**: scegliere la lingua che si vuole usare per l'invio di messaggi di posta elettronica di assegnazione.
 
     ![Modificare la lingua usata per l'invio dei messaggi di posta elettronica di notifica](media/change-subscriber-communication-preference.png)
 
@@ -56,7 +56,7 @@ Sono state aggiunte nuove funzionalità per gli amministratori del cloud che ren
 
     ![Aggiungere le proprie note di riferimento a ogni sottoscrizione](media/add-subscriber-reference-notes.png)
 
-* [**Nuovo invio di e-mail di assegnazione**](resend-assignment-email.md): possibilità di inviare di nuovo una notifica tramite posta elettronica a tutti gli utenti nel proprio elenco di sottoscrittori e per tutte le volte che si vuole.
+* [**Invia di nuovo messaggio**](resend-assignment-email.md): possibilità di inviare di nuovo una notifica tramite posta elettronica a tutti gli utenti nell'elenco di sottoscrittori e per tutte le volte che si vuole.
 
   ![Inviare di nuovo il messaggio di attivazione a uno o più utenti in qualsiasi momento](media/resend-subscriber-activation-emails.png)
 
