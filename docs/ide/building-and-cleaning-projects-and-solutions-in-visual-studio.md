@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942753"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 
@@ -118,7 +118,7 @@ Effettuare uno dei passaggi seguenti:
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
-- [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Riferimenti alla compilazione in C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)

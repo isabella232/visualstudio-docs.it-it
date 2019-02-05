@@ -1,32 +1,32 @@
 ---
-title: 'Esercitazione: Introduzione alle app console C#'
+title: "Esercitazione: Creare un'app console C# semplice"
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204431"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936957"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Esercitazione: introduzione a un'app console C# in Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare un'app console C# semplice in Visual Studio
 
-In questa esercitazione per C# si userà Visual Studio per creare ed eseguire un'app console ed esplorare alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio](../visual-studio-ide.md).
+In questa esercitazione per C# si userà Visual Studio per creare ed eseguire un'app console ed esplorare nello stesso tempo alcune funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio.
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -42,19 +42,58 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 ### <a name="add-a-workgroup-optional"></a>Aggiungere un gruppo di lavoro (facoltativo)
 
-Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è possibile ottenerlo aggiungendo il carico di lavoro **Sviluppo multipiattaforma .NET Core**. Per scoprire come eseguire questa operazione, vedere la sezione "[Che cos'è un carico di lavoro e come si aggiunge?](#workload)" nelle Domande frequenti.
+Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è possibile ottenerlo aggiungendo il carico di lavoro **Sviluppo multipiattaforma .NET Core**. Ecco come fare.
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Opzione 1: usare la finestra di dialogo Nuovo progetto
+
+1. Fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
+
+   ![Fare clic sul collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
+
+   ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
+
+1. Chiudere la finestra di dialogo **Nuovo progetto** e sulla barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
+
+1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
 ## <a name="create-the-app"></a>Creare l'app
 
-Per prima cosa, si aggiungerà il codice necessario per creare una calcolatrice di base. Successivamente, si modificherà il codice per aggiungere funzionalità. In seguito, si procederà al debug dell'app per trovare eventuali errori e correggerli. Infine, si perfezionerà il codice per renderlo più efficiente.
+Prima di tutto si esamineranno alcuni calcoli matematici integer di base in C#. Si aggiungerà quindi il codice necessario per creare una calcolatrice di base. Successivamente, si modificherà il codice per aggiungere funzionalità. In seguito, si procederà al debug dell'app per trovare eventuali errori e correggerli. E infine si perfezionerà il codice per renderlo più efficiente.
 
-Si inizia aggiungendo al progetto il codice per la calcolatrice di base.
+Si inizierà con alcuni calcoli matematici integer in C#.
 
 1. Nell'editor del codice, eliminare il codice "Hello World" predefinito.
 
     ![Eliminare il codice Hello World predefinito dalla nuova app Calculator](./media/csharp-console-calculator-deletehelloworld.png)
 
-   In particolare, eliminare tutto il codice visibile nell'editor del codice.
+   In particolare, eliminare la riga con la dicitura `Console.WriteLine("Hello World!");`.
+
+1. Al suo posto digitare il codice seguente:
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. Scegliere **Calculator** per eseguire il programma oppure premere **F5**.
+
+   ![Scegliere il pulsante Calculator per eseguire l'app dalla barra degli strumenti](./media/csharp-console-calculator-button.png)
+
+   Si apre una finestra della console che visualizza la somma di 42 + 119.
+
+1. Provare ora a modificare la riga di codice `int c = a + b;` con un operatore diverso, ad esempio `-` per la sottrazione, `*` per la moltiplicazione o */* per la divisione.
+
+    Si noti che quando si cambia l'operatore e si esegue il programma, anche il risultato cambia.
+
+Si continuerà aggiungendo un set più complesso di codice di calcolo al progetto.
+
+1. Eliminare tutto il codice visualizzato nell'editor del codice.
 
 1. Digitare o incollare il codice seguente nell'editor del codice:
 
@@ -165,7 +204,10 @@ L'app Calculator di partenza è stata migliorata, ma non comprende ancora funzio
 
 Ad esempio, se si tenta di dividere un numero per zero oppure di immettere un carattere alfabetico quando l'app si aspetta un carattere numerico (o viceversa), l'app smette di funzionare e restituisce un errore.
 
-Ora si procederà quindi ad esaminare alcuni comuni errori di input dell'utente, a individuarli nel [debugger](../../debugger/debugger-feature-tour.md) e a risolverli nel codice.
+Si procederà ora a esaminare alcuni errori di input comuni degli utenti, individuandoli nel debugger e risolvendoli nel codice.
+
+>[!TIP]
+>Per altre informazioni sul debugger e sul suo funzionamento, vedere la pagina [Presentazione del debugger di Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Correggere l'errore di divisione per zero
 
@@ -209,7 +251,7 @@ Per correggere questo errore, è necessario effettuare il refactoring del codice
 
 #### <a name="revise-the-code"></a>Rivedere il codice
 
-Anziché affidare la gestione dell'intero codice alla classe `program`, si dividerà l'app in due classi: `calculator` e `program`.  
+Anziché affidare la gestione dell'intero codice alla classe `program`, si dividerà l'app in due classi: `calculator` e `program`.
 
 La classe `calculator` si occuperà di gestire la maggior parte del lavoro di calcolo mentre la classe `program` gestirà l'interfaccia utente e il lavoro di acquisizione degli errori.
 
@@ -483,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>Domande frequenti con risposta rapida
-
-Ecco una rapida serie di domande frequenti per evidenziare alcuni concetti chiave. Le Domande frequenti includono anche risposte a domande che potrebbero sorgere quando si seguono le procedure descritte nell'esercitazione.
-
-### <a name="what-is-c"></a>Che cos'è C#?
-
-C# è un linguaggio di programmazione che viene eseguito in .NET Framework e .NET Core. Con C# è possibile creare applicazioni Windows, applicazioni server client, applicazioni database, servizi Web XML, componenti distribuiti e altro ancora.
-
-### <a name="what-is-visual-studio"></a>Che cos'è Visual Studio?
-
-Visual Studio è una suite integrata per lo sviluppo di strumenti di produttività per gli sviluppatori. Si può immaginare Visual Studio come un programma utilizzabile per creare programmi e applicazioni.
-
-### <a name="what-is-a-console-app"></a>Che cos'è un'app console?
-
-Un'app console riceve input e visualizza output in una finestra della riga di comando, detta anche console.
-
-### <a name="what-is-net-core"></a>Informazioni su .NET Core
-
-.NET Core è il passaggio successivo nell'evoluzione di .NET Framework. Mentre .NET Framework consentiva di condividere codice tra linguaggi di programmazione diversi, .NET Core aggiunge la possibilità di condividere codice tra piattaforme diverse. E, ciliegina sulla torta, è open source.
-
-.NET Framework e .NET Core includono entrambi librerie di funzionalità precompilate. Includono anche un Common Language Runtime (CLR), che opera come macchina virtuale in cui eseguire il codice.
-
-### <a id="workload"></a>Che cos'è un carico di lavoro e come si aggiunge?
-
-In Visual Studio un carico di lavoro rappresenta un set di opzioni e modelli di programmazione che è possibile usare per personalizzare l'installazione di Visual Studio. Un carico di lavoro installa solo gli strumenti necessari per il linguaggio di programmazione e la piattaforma di propria scelta. Ecco come installarlo.
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Opzione 1: usare la finestra di dialogo Nuovo progetto
-
-1. Fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
-
-   ![Fare clic sul collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
-
-   ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
-
-1. Chiudere la finestra di dialogo **Nuovo progetto** e sulla barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
-
-1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
-
 ## <a name="next-steps"></a>Passaggi successivi
 
 L'esercitazione è stata completata. Per altre informazioni, continuare con le esercitazioni seguenti.
@@ -534,4 +534,5 @@ L'esercitazione è stata completata. Per altre informazioni, continuare con le e
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione video C# Fundamentals for Absolute Beginners (Concetti di base su C# per principianti)](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Esercitazione video: C# Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169) (Concetti di base su C# per principianti)
+* [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)

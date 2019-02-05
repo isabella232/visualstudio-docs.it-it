@@ -3,18 +3,18 @@ title: Vantaggio Pluralsight nelle sottoscrizioni di Visual Studio | Microsoft D
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.topic: Get-Started-Article
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380314"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089240"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -71,17 +71,17 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 
 |                          Livello di sottoscrizione                          |     Canali      |    Vantaggio    |   Rinnovabile?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 mesi    | Non<sup>2</sup> |
-|         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Non<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 mesi    | Non<sup>2</sup> |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 mesi    | Non<sup>2</sup> |
-|                     Visual Studio Dev Essentials                     |        N/D         |   1 mese    |       No       |
+|          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 mesi    | Sì<sup>2</sup> |
+|         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Sì<sup>2</sup> |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 mesi    | No  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 mesi    | No  |
+|                     Visual Studio Dev Essentials                     |        N/D         |   1 mese    |       No        |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
 |             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
 
 <sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato.*
+<sup>2</sup>  *Il vantaggio Pluralsight nelle sottoscrizioni di Visual Studio selezionate viene rinnovato al rinnovo della sottoscrizione. Ad esempio, se si ha una sottoscrizione annuale che viene rinnovata ogni anno, il vantaggio sarà disponibile per ogni anno di rinnovo. Se si ha una sottoscrizione pluriennale, il vantaggio Pluralsight sarà disponibile una sola volta per la durata della sottoscrizione.  Se si rinnova una sottoscrizione pluriennale, il vantaggio sarà disponibile nuovamente dopo il rinnovo.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -106,9 +106,6 @@ A: Sì, in qualità di sottoscrittore di Visual Studio l'utente può accedere ai
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>D: Cosa accade alla scadenza della sottoscrizione di Pluralsight?
 A:  Al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight.  Contattare [Pluralsight](http://www.pluralsight.com) per dettagli completi.
-
-### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>D: La mia azienda rinnova la sottoscrizione a Visual Studio attraverso un contratto Enterprise. Il vantaggio Pluralsight viene reimpostato?
-A:  No.  Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato.  Questo vale per tutti i canali di acquisto, tra cui la vendita al dettaglio, il cloud e i contratti multilicenza.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  [Pluralsight Help Center](https://help.pluralsight.com/help) fornisce assistenza in merito all'esecuzione dei corsi Pluralsight o all'uso del sito Web di Pluralsight.

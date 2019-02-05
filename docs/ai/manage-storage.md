@@ -1,4 +1,19 @@
 ---
+title: Esplorare lo spazio di archiviazione per caricare dati
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: 44803eea573860074f67d2e97f1160614f452ac5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766381"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Esplorare lo spazio di archiviazione per caricare dati o per scaricare modelli e log
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2a9dabddaddaa6d19bbf6e73e2ddcb0011c559ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012224"
 ---
 # <a name="understand-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 
@@ -31,12 +31,12 @@ ms.locfileid: "32425361"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
- [Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md) Viene illustrato come configurare un progetto per una determinata piattaforma di destinazione.
+ [Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md) Descrive come configurare un progetto per una determinata piattaforma di destinazione.
 
- [Procedura: Configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Viene illustrato come configurare un progetto per più piattaforme di destinazione.
+ [Procedura: Configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Descrive come configurare un progetto per più piattaforme di destinazione.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
+- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

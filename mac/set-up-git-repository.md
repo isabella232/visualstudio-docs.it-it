@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796970"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -68,7 +68,10 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
 6. Fare clic su **OK** e quindi su **Pubblica** dalla finestra di dialogo di avviso.
 
-7. Se non si sono ancora immesse le credenziali Git nelle preferenze di Visual Studio per Mac, immetterle ora. Per prima cosa, è necessario creare un token di accesso che viene usato al posto di una password. Se non è stato creato un token di accesso, seguire i passaggi descritti nella documentazione relativa ai [token di accesso](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) Git.
+7. Nella finestra **Credenziali GIT** immettere il nome utente e la password GitHub. 
+
+> [!NOTE]
+> Se per l'account è abilitata l'autenticazione a due fattori, è necessario creare un token di accesso, che verrà usato al posto della password. Se non è stato creato un token di accesso, seguire i passaggi descritti nella documentazione relativa ai [token di accesso](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) Git.
 
 8. Inserire il nome utente e il token di accesso personale, quindi premere **OK**:
 

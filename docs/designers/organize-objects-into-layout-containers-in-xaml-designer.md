@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829308"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231818"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 
@@ -30,19 +30,7 @@ I pannelli di layout non vengono però usati unicamente per organizzare gli ogge
 
 Per definire inizialmente la pagina, scegliere uno dei seguenti pannelli di layout. La pagina può comunque contenere più pannelli di layout. Si può infatti iniziare con un pannello di layout di tipo **Grid** e quindi aggiungerne uno di tipo **StackPanel** a un'area del pannello **Grid** in modo da disporre i controlli verticalmente in tale elemento.
 
-I seguenti pannelli di layout sono quelli più usati, ma ne esistono altri. Tutti i controlli sono disponibili nel pannello **Asset**.
-
-- [Griglia](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+I seguenti pannelli di layout sono quelli più usati, ma ne esistono altri. Tutti i pannelli sono disponibili nella **casella degli strumenti** in Visual Studio o nel pannello **Asset** in Blend per Visual Studio.
 
 ### <a name="grid"></a>Grid
 
@@ -92,15 +80,7 @@ Consente di disporre gli oggetti in modo sequenziale da sinistra verso destra. Q
 
 È possibile aggiungere oggetti anche ai controlli di layout, che pur includendo un minor numero di funzionalità rispetto a un pannello di layout, possono risultare utili per determinati scenari.
 
-I seguenti controlli di layout sono quelli più diffusi, ma ne esistono altri. Tutti i controlli sono disponibili nel pannello **Asset**.
-
-- [Bordo](#Border)
-
-- [Popup](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+I seguenti controlli di layout sono quelli più diffusi, ma ne esistono altri. Tutti i pannelli sono disponibili nella **casella degli strumenti** in Visual Studio o nel pannello **Asset** in Blend per Visual Studio.
 
 ### <a name="border"></a>Bordo
 

@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927337"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232065"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -40,7 +40,7 @@ La finestra **Ambienti Python** di Visual Studio (illustrata di seguito in un'am
 
 ![Visualizzazione espansa della finestra Ambienti Python](media/environments-expanded-view.png)
 
-Usare il comando **Apri finestra interattiva** per eseguire in modo interattivo Python all'interno del contesto di Visual Studio. Usare il comando **Apri in PowerShell** per aprire una finestra di comando separata nella cartella dell'ambiente selezionato. Da tale finestra di comando è possibile eseguire qualsiasi script Python. 
+Usare il comando **Apri finestra interattiva** per eseguire in modo interattivo Python all'interno del contesto di Visual Studio. Usare il comando **Apri in PowerShell** per aprire una finestra di comando separata nella cartella dell'ambiente selezionato. Da tale finestra di comando è possibile eseguire qualsiasi script Python.
 
 Per ulteriori informazioni:
 
@@ -140,7 +140,7 @@ Per ulteriori informazioni:
 
 Il carico di lavoro Python include Azure SDK per Python, che semplifica l'utilizzo dei servizi di Azure da app Windows, Mac OS X e Linux.
 
-Per altre informazioni, vedere [Azure SDK per Python](azure-sdk-for-python.md).
+Per altre informazioni, vedere [Azure SDK per Python](/python/azure/?view=azure-python).
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Training su Python in Microsoft Virtual Academy
 

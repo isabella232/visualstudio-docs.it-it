@@ -1,22 +1,22 @@
 ---
-title: "Procedura dettagliata: Compilare un'applicazione"
+title: "Procedura dettagliata: Creare un'applicazione"
 ms.date: 09/25/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672782"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926675"
 ---
-# <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Compilare un'applicazione
+# <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
 Completando questa procedura dettagliata è possibile acquisire familiarità con numerose opzioni che possono essere configurate quando si compilano applicazioni con Visual Studio. Verrà illustrato come creare una configurazione della build personalizzata, nascondere alcuni messaggi di avviso e aumentare le informazioni di output di compilazione per un'applicazione di esempio.
 
@@ -26,7 +26,7 @@ Scaricare l'esempio [Introduzione alla creazione di applicazioni WPF](https://co
 
 ## <a name="create-a-custom-build-configuration"></a>Creare una configurazione della build personalizzata
 
-Quando si crea una soluzione, le configurazioni della build di versione e di debug e le relative destinazioni della piattaforma predefinite sono definite automaticamente per la soluzione. È quindi possibile personalizzare queste configurazioni o crearne di proprie. Le configurazioni della build specificano il tipo di compilazione. Le piattaforme di compilazione specificano il sistema operativo a cui è rivolta un'applicazione per la configurazione. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md), [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) e [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md).
+Quando si crea una soluzione, le configurazioni della build di versione e di debug e le relative destinazioni della piattaforma predefinite sono definite automaticamente per la soluzione. È quindi possibile personalizzare queste configurazioni o crearne di proprie. Le configurazioni della build specificano il tipo di compilazione. Le piattaforme di compilazione specificano il sistema operativo a cui è rivolta un'applicazione per la configurazione. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md), [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) e [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md).
 
 È possibile modificare o creare configurazioni e impostazioni piattaforma usando la finestra di dialogo **Gestione configurazione**. In questa procedura si creerà una configurazione della build per il test.
 
@@ -130,7 +130,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
    ![Finestra di output, avvisi di compilazione di Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Per altre informazioni, vedere [Procedura: Non visualizzare avvisi del compilatore](../ide/how-to-suppress-compiler-warnings.md).
+   Per altre informazioni, vedere [Procedura: Non visualizzare gli avvisi del compilatore](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Visualizzare dettagli di compilazione aggiuntivi nella finestra di output
 
@@ -224,6 +224,6 @@ La procedura è stata completata. Questa procedura dettagliata è stata completa
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Procedura dettagliata: Compilazione di un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
-- [Procedura dettagliata: Usare MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)

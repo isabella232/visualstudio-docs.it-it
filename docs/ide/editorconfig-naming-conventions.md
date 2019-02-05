@@ -7,16 +7,16 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50fe9249baae6d881c2d67ebc0a65a0c6335cbd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898661"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935358"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -85,7 +85,7 @@ Per descrivere i modificatori dei simboli a cui si vuole applicare la regola di 
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
+L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola. Una regola di denominazione ricercherà solo le firme corrispondenti con tutti i modificatori specificati in `required_modifiers`. Se si omette questa proprietà, viene usato il valore predefinito di un elenco vuoto, ovvero non viene richiesto alcun modificatore specifico per trovare una corrispondenza. Ciò significa che i modificatori di un simbolo non hanno alcun effetto sull'applicazione di questa regola.
 
 - `abstract` o `must_inherit`
 - `async`

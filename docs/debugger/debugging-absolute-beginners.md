@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204508"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918203"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -64,7 +64,7 @@ Quando si esegue un'app normalmente, errori e risultati non corretti sono visibi
 
 L'esecuzione di un'app all'interno di un debugger, o in *modalità di debug*, consente al debugger di monitorare attivamente tutto ciò che accade durante l'esecuzione del programma. Consente anche di sospendere l'app in un punto qualsiasi per esaminarne lo stato e di eseguire quindi il codice riga per riga per controllare ogni dettaglio durante l'esecuzione.
 
-In Visual Studio si entra in modalità di debug usando **F5** oppure il comando di menu **Debug** > **Avvia debug** o il pulsante **Avvia debug** ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti di debug. In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio si entra in modalità di debug usando **F5** oppure il comando di menu **Debug** > **Avvia debug** o il pulsante **Avvia debug** ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti di debug. In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 Se non è stata restituita un'eccezione, probabilmente si ha già un'idea di dove cercare il problema nel codice. In questi casi si usano i *punti di interruzione* con il debugger per avere l'opportunità di esaminare il codice più attentamente. I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio deve sospendere il codice in esecuzione in modo da consentire di esaminare i valori delle variabili, il comportamento della memoria o la sequenza di esecuzione del codice.
 
