@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f34f686b91d6a140e975c13eec72e8703a1b47ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91e32cdae7310a99021946315279736bddb094a8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945251"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690138"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica codice
 
@@ -49,46 +49,58 @@ I risultati vengono generati e il **risultati metrica codice** viene visualizzat
 
 ## <a name="command-line-code-metrics"></a>Metrica del codice della riga di comando
 
-È possibile generare dati di metrica codice dalla riga di comando per C# e i progetti di Visual Basic per le app .NET Framework, .NET Core e .NET Standard. Gli strumenti da riga di comando codice metriche viene chiamato *Metrics.exe*.
+È possibile generare dati di metrica codice dalla riga di comando per C# e i progetti di Visual Basic per le app .NET Framework, .NET Core e .NET Standard. Per eseguire la metrica del codice dalla riga di comando, installare il [Microsoft.CodeAnalysis.Metrics mobileengagement](#microsoftcodeanalysismetrics-nuget-package) o compilare il [Metrics.exe](#metricsexe) eseguibile se stessi.
 
-Per ottenere il *Metrics.exe* eseguibile, è necessario [generarlo manualmente](#generate-the-executable). Nel prossimo futuro, una [versione pubblicata del *Metrics.exe* saranno disponibili](https://github.com/dotnet/roslyn-analyzers/issues/1756) in modo che non è necessario crearlo manualmente.
+### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pacchetto Microsoft.CodeAnalysis.Metrics NuGet
 
-### <a name="generate-the-executable"></a>Generare il file eseguibile
-
-Per generare il file eseguibile *Metrics.exe*, seguire questa procedura:
-
-1. Clona il [dotnet/roslyn-analizzatori](https://github.com/dotnet/roslyn-analyzers) repository.
-2. Come amministratore, aprire il prompt dei comandi per gli sviluppatori per Visual Studio.
-3. Dalla radice del **analizzatori di roslyn** repo, eseguire il comando seguente: `Restore.cmd`
-4. Passare alla directory *src\Tools*.
-5. Eseguire il comando seguente per compilare il **Metrics.csproj** progetto:
-
-   ```shell
-   msbuild /m /v:m /p:Configuration=Release Metrics.csproj
-   ```
-
-   Un eseguibile denominato *Metrics.exe* viene generato nel *artifacts\bin* directory sotto la radice del repository.
-
-   > [!TIP]
-   > Per compilare *Metrics.exe* nelle [modalità legacy](#legacy-mode), eseguire il comando seguente:
-   >
-   > ```shell
-   > msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
-   > ```
-
-### <a name="usage"></a>Utilizzo
-
-Per eseguire *Metrics.exe*, fornire un progetto o file di soluzione e un output XML come argomenti. Ad esempio:
+Il modo più semplice per generare dati di metrica codice dalla riga di comando consiste nell'installazione di [Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) pacchetto NuGet. Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Ad esempio:
 
 ```shell
-C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
-Loading ConsoleApp20.csproj...
-Computing code metrics for ConsoleApp20.csproj...
-Writing output to 'report.xml'...
-Completed Successfully.
+C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
+Microsoft (R) Build Engine version 16.0.360-preview+g9781d96883 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/22/2019 4:29:57 PM.
+Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" on node 1 (Metrics target(s))
+.
+Metrics:
+  C:\source\repos\ClassLibrary3\packages\Microsoft.CodeMetrics.2.6.4-ci\build\\..\Metrics\Metrics.exe /project:C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj /out:ClassLibrary3.Metrics.xml
+  Loading ClassLibrary3.csproj...
+  Computing code metrics for ClassLibrary3.csproj...
+  Writing output to 'ClassLibrary3.Metrics.xml'...
+  Completed Successfully.
+Done Building Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" (Metrics target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
 ```
 
-### <a name="output"></a>Output
+È possibile sostituire il nome del file di output specificando `/p:MetricsOutputFile=<filename>`. È anche possibile ottenere [stile legacy](#previous-versions) dei dati di metrica di codice specificando `/p:LEGACY_CODE_METRICS_MODE=true`. Ad esempio:
+
+```shell
+C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
+Microsoft (R) Build Engine version 16.0.360-preview+g9781d96883 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/22/2019 4:31:00 PM.
+The "MetricsOutputFile" property is a global property, and cannot be modified.
+Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" on node 1 (Metrics target(s))
+.
+Metrics:
+  C:\source\repos\ClassLibrary3\packages\Microsoft.CodeMetrics.2.6.4-ci\build\\..\Metrics.Legacy\Metrics.Legacy.exe /project:C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj /out:Legacy.xml
+  Loading ClassLibrary3.csproj...
+  Computing code metrics for ClassLibrary3.csproj...
+  Writing output to 'Legacy.xml'...
+  Completed Successfully.
+Done Building Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" (Metrics target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+```
+
+### <a name="code-metrics-output"></a>Output di metrica codice
 
 L'output XML generato viene espresso nel formato seguente:
 
@@ -124,7 +136,7 @@ L'output XML generato viene espresso nel formato seguente:
                   <Metric Name="LinesOfCode" Value="7" />
                 </Metrics>
                 <Members>
-                  <Method Name="void Program.Main(string[] args)" File="C:\Users\mavasani\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
+                  <Method Name="void Program.Main(string[] args)" File="C:\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
                     <Metrics>
                       <Metric Name="MaintainabilityIndex" Value="100" />
                       <Metric Name="CyclomaticComplexity" Value="1" />
@@ -143,27 +155,55 @@ L'output XML generato viene espresso nel formato seguente:
 </CodeMetricsReport>
 ```
 
-### <a name="tool-differences"></a>Differenze dello strumento
+### <a name="metricsexe"></a>Metrics.exe
 
-Le versioni precedenti di Visual Studio, tra cui Visual Studio 2015, includevano uno strumento di metriche di codice della riga di comando denominato *Metrics.exe*. Questa versione precedente dello strumento ha eseguito un'analisi binaria, vale a dire, un'analisi basata su assembly. Il nuovo strumento analizza il codice sorgente invece. Poiché il nuovo *Metrics.exe* è origine basata su codice, i risultati sono diversi da quello generato dalle versioni precedenti di *Metrics.exe* e IDE di Visual Studio 2017.
+Se non si desidera installare il pacchetto NuGet, è possibile generare e usare la *Metrics.exe* eseguibile direttamente. Per generare il *Metrics.exe* eseguibile:
 
-Il nuovo *Metrics.exe* strumento può calcolare le metriche anche in presenza di errori del codice sorgente, purché la soluzione e progetto può essere caricati.
+1. Clona il [dotnet/roslyn-analizzatori](https://github.com/dotnet/roslyn-analyzers) repository.
+2. Come amministratore, aprire il prompt dei comandi per gli sviluppatori per Visual Studio.
+3. Dalla radice del **analizzatori di roslyn** repo, eseguire il comando seguente: `Restore.cmd`
+4. Passare alla directory *src\Tools*.
+5. Eseguire il comando seguente per compilare il **Metrics.csproj** progetto:
 
-#### <a name="metric-value-differences"></a>Differenze di valore della metrica
+   ```shell
+   msbuild /m /v:m /p:Configuration=Release Metrics.csproj
+   ```
 
-Il `LinesOfCode` metrica è più accurato e affidabile nelle nuove *Metrics.exe*. È indipendente da eventuali differenze codegen e non cambia quando il runtime o un set di strumenti di modifica. Il nuovo *Metrics.exe* conta le righe effettive di codice, tra cui le righe vuote e i commenti.
+   Un eseguibile denominato *Metrics.exe* viene generato nel *artifacts\bin* directory sotto la radice del repository.
 
-Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` utilizzare le stesse formule come le versioni precedenti di *Metrics.exe*, ma la nuova *Metrics.exe* conta il numero di `IOperations` (logico istruzioni di origine) anziché le istruzioni in linguaggio intermedio (IL). I numeri sarà leggermente diversi rispetto alle versioni precedenti di *Metrics.exe* e dai risultati metrica codice dell'IDE di Visual Studio 2017.
+#### <a name="metricsexe-usage"></a>Utilizzo di Metrics.exe
 
-### <a name="legacy-mode"></a>Modalità legacy
+Per eseguire *Metrics.exe*, fornire un progetto o file di soluzione e un output XML come argomenti. Ad esempio:
 
-È anche possibile scegliere di compilare *Metrics.exe* nelle *modalità legacy*. La versione in modalità legacy dello strumento genera i valori delle metriche per le versioni precedenti dello strumento generato più vicini. Inoltre, in modalità legacy *Metrics.exe* genera la metrica del codice per lo stesso set di metodo che le versioni precedenti della metrica del codice generato dallo strumento per i tipi. Ad esempio, non genera dati di metrica codice per gli inizializzatori di campo e proprietà. Modalità legacy è utile per le versioni precedenti compatibilità o se si dispone di controlli check-in di codice basato su metrica del codice numeri. Il comando per compilare *Metrics.exe* in modalità legacy è:
+```shell
+C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
+Loading ConsoleApp20.csproj...
+Computing code metrics for ConsoleApp20.csproj...
+Writing output to 'report.xml'...
+Completed Successfully.
+```
+
+#### <a name="legacy-mode"></a>Modalità legacy
+
+È possibile scegliere di compilare *Metrics.exe* nelle *modalità legacy*. La versione in modalità legacy dello strumento genera i valori delle metriche che più si avvicinano a quelle [le versioni precedenti dello strumento generato](#previous-versions). Inoltre, in modalità legacy *Metrics.exe* genera la metrica del codice per lo stesso set di metodo che le versioni precedenti della metrica del codice generato dallo strumento per i tipi. Ad esempio, non genera dati di metrica codice per gli inizializzatori di campo e proprietà. Modalità legacy è utile per le versioni precedenti compatibilità o se si dispone di controlli check-in di codice basato su metrica del codice numeri. Il comando per compilare *Metrics.exe* in modalità legacy è:
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
 Per altre informazioni, vedere [abilita la generazione di metrica del codice in modalità legacy](https://github.com/dotnet/roslyn-analyzers/pull/1841).
+
+### <a name="previous-versions"></a>Versioni precedenti
+
+Le versioni precedenti di Visual Studio, tra cui Visual Studio 2015, includevano uno strumento di metriche di codice della riga di comando che è stato chiamato anche *Metrics.exe*. Questa versione precedente dello strumento ha eseguito un'analisi binaria, vale a dire, un'analisi basata su assembly. Il nuovo strumento analizza il codice sorgente invece. Poiché il nuovo strumento di metriche di codice della riga di comando è basato sul codice sorgente, i risultati sono diversi da quello generato dalle versioni precedenti di *Metrics.exe* e IDE di Visual Studio 2017.
+
+Il nuovo strumento di metriche di codice della riga di comando Calcola metriche anche in presenza di errori del codice sorgente, purché la soluzione e progetto può essere caricati.
+
+#### <a name="metric-value-differences"></a>Differenze di valore della metrica
+
+Il `LinesOfCode` metrica è più accurate e affidabili nel nuovo strumento di metriche di codice della riga di comando. È indipendente da eventuali differenze codegen e non cambia quando il runtime o un set di strumenti di modifica. Il nuovo strumento conta le righe effettive di codice, inclusi i commenti e le righe vuote.
+
+Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` utilizzare le stesse formule come le versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di `IOperations` (istruzioni di origine logica) anziché intermedio istruzioni in linguaggio (IL). I numeri sarà leggermente diversi rispetto alle versioni precedenti di *Metrics.exe* e dai risultati metrica codice dell'IDE di Visual Studio 2017.
 
 ## <a name="see-also"></a>Vedere anche
 

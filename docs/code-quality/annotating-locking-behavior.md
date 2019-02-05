@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835292"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690313"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -105,6 +105,19 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 |`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Il parametro della funzione con annotazioni è l'operando di destinazione di una delle varie funzioni Interlocked.  Tali operandi devono avere le proprietà aggiuntive specifiche.|
 |`_Write_guarded_by_(expr)`|Annota una variabile e indica se la variabile è modificata, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock e RAII annotazioni
+ Blocchi intelligenti in genere il wrapping dei blocchi nativi e gestiscono la durata. Nella tabella seguente sono elencate le annotazioni che possono essere utilizzate con blocchi intelligenti e scrittura del codice con il supporto per il modello RAII `move` semantica.
+
+|Annotazione|Descrizione|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Indica l'utilità di analisi presuppongono che un blocco smart è stato acquisito. Questa annotazione prevede un blocco di tipo riferimento come relativo parametro.|
+|`_Analysis_assume_smart_lock_released_`|Indica l'analizzatore di presumere che è stato rilasciato un blocco intelligente. Questa annotazione prevede un blocco di tipo riferimento come relativo parametro.|
+|`_Moves_lock_(target, source)`|Descrive `move constructor` operazione che trasferisce lo stato di blocco dal `source` dell'oggetto per il `target`. Il `target` viene considerato un oggetto appena costruito, in modo che qualsiasi stato aveva in precedenza verrà perso e sostituito dal `source` dello stato. Il `source` viene anche reimpostata su uno stato pulito senza destinazione conteggi o gli alias di blocco, ma con gli alias che punta a esso rimangono invariati.|
+|`_Replaces_lock_(target, source)`|Descrive `move assignment operator` semantica in cui viene rilasciato il blocco di destinazione prima di trasferire lo stato dell'origine. Ciò può essere considerato come una combinazione di `_Moves_lock_(target, source)` preceduto da un `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Illustra la versione standard `swap` comportamento che si presuppone che gli oggetti `left` e `right` relativo stato di exchange. Lo stato scambiato include destinazione conteggio e gli alias di blocco, se presente. Gli alias che puntano al `left` e `right` oggetti restano invariati.|
+|`_Detaches_lock_(detached, lock)`|Descrive uno scenario in cui un tipo di wrapper di blocco consente la dissociazione con la risorsa indipendente. È simile al modo in cui `std::unique_ptr` funziona con il relativo puntatore interno: consente ai programmatori per estrarre il puntatore del mouse e lasciare il contenitore di puntatore intelligente in uno stato pulito. Una logica simile è supportata da `std::unique_lock` e può essere implementata nei wrapper blocco personalizzato. Il blocco scollegato mantiene lo stato (blocco aliasing e numero di destinazione, se presente), mentre il wrapper viene reimpostato per contenere zero conteggio dei blocchi e nessuna destinazione aliasing, mantenendo il proprio alias. Non vi è alcuna operazione sui conteggi dei blocchi (rilascio e l'acquisizione). Questa annotazione si comporta esattamente come `_Moves_lock_` ad eccezione del fatto che deve essere l'argomento scollegato `return` anziché `this`.|
 
 ## <a name="see-also"></a>Vedere anche
 
