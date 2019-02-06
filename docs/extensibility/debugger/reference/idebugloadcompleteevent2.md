@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029156"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742392"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando viene caricato un programma, ma prima che venga eseguito qualsiasi codice.  
@@ -33,10 +33,7 @@ IDebugLoadCompleteEvent2 : IUnknown
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
  La Germania crea e invia l'oggetto evento per segnalare che un programma è stato caricato correttamente. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando associato al programma in fase di debug.  
-  
-## <a name="remarks"></a>Note  
- Questo evento è un evento di arresto e deve avere il `EVENT_STOPPING` flag impostato sugli attributi dell'evento.  
-  
+   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
   

@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eb7059f5a0ecaf07858e6a24b62296383494725c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979556"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742475"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un Host del modello di testo personalizzato
 
-Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore oppure *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
+Oggetto *host del modello di testo* offre un ambiente che consente la *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore oppure *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
 È possibile scrivere un host personalizzato se si desidera utilizzare il *trasformazione del modello testo* funzionalità dall'esterno di Visual Studio o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Per la documentazione dei singoli metodi, vedere <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
