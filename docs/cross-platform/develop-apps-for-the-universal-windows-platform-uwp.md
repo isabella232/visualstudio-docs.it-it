@@ -10,12 +10,12 @@ ms.author: shoag
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981694"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483796"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Windows, è possibile eseguire la stessa app su qualsiasi dispositivo Windows 10, dai telefoni ai desktop. È possibile creare queste app di Windows universale usando Visual Studio e gli strumenti di sviluppo di app di Windows universale.
@@ -39,7 +39,7 @@ La piattaforma UWP (Universal Windows Platform) è semplicemente una raccolta di
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 supporta lo sviluppo UWP solo in Windows 10. Per altre informazioni, vedere [Selezione della piattaforma](/visualstudio/productinfo/vs2017-compatibility-vs) e [Requisiti di sistema](/visualstudio/productinfo/vs2017-system-requirements-vs) di Visual Studio.
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Sarà anche necessario il carico di lavoro di sviluppo della piattaforma UWP (Universal Windows Platform).
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Sarà anche necessario il carico di lavoro di sviluppo della piattaforma UWP (Universal Windows Platform).
 
      ![Carico di lavoro UWP (Universal Windows Platform)](media/uwp_workload.png)
 
