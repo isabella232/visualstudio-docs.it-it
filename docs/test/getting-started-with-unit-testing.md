@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999756"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424382"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
-Visual Studio consente di definire ed eseguire gli unit test per mantenere l'integrità del codice, garantire il code coverage e individuare gli errori e i problemi prima dei clienti.
+Visual Studio consente di definire ed eseguire unit test per mantenere l'integrità del codice, garantire il code coverage e individuare gli errori e i problemi prima dei clienti. Eseguire gli unit test di frequente per assicurarsi che il codice funzioni correttamente.
 
 ## <a name="create-unit-tests"></a>Creare unit test
 
-Creare unit test ed eseguirli frequentemente per assicurarsi che il codice funzioni correttamente.
+Questa sezione descrive a livello generale come creare un progetto di unit test.
+
+> [!TIP]
+> Il progetto sottoposto al test, "HelloWorld", è un progetto di esempio per cui non è prevista la visualizzazione di alcuna parte di codice. Se si vuole creare un progetto "HelloWorld" di cui eseguire il test, vedere [Creare la prima app console C#](../ide/quickstart-csharp-console.md). Per la procedura dettagliata, vedere l'articolo [Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Creare un progetto di unit test.
 
@@ -150,6 +153,7 @@ Di seguito sono illustrati i passaggi per abilitare i framework di test di terze
 
 ## <a name="see-also"></a>Vedere anche
 
+* [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Comando Crea unit test](create-unit-tests-menu.md)
 * [Generare unit test per il codice con IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md)

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020568"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571187"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -35,7 +35,7 @@ In questo passaggio viene descritto come:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Passaggio 2-1: Creare un'app con una struttura predefinita
 
-Un'app Django è un pacchetto Python separato che contiene un set di file correlati per uno scopo specifico. Un progetto Django può contenere un numero qualsiasi di app e questa caratteristica corrisponde al fatto che un host Web può gestire un numero qualsiasi di punti di ingresso da un unico nome di dominio. Ad esempio, un progetto Django per un dominio come contoso.com può contenere un'app per www.contoso.com, una seconda app per support.contoso.com e una terza per docs.contoso.com. In questo caso, il progetto Django gestisce le impostazioni e il routing degli URL a livello di sito (nei rispettivi file *urls.py* e *settings.py*), mentre ogni app ha stile e comportamento distinti tramite il routing interno, i modelli, le visualizzazioni, i file statici e l'interfaccia amministrativa corrispondenti.
+Un'app Django è un pacchetto Python separato che contiene un set di file correlati per uno scopo specifico. Un progetto Django può contenere un numero qualsiasi di app e questa caratteristica corrisponde al fatto che un host Web può gestire un numero qualsiasi di punti di ingresso da un unico nome di dominio. Ad esempio, un progetto Django per un dominio come contoso.com può contenere un'app per `www.contoso.com`, una seconda app per support.contoso.com e una terza per docs.contoso.com. In questo caso, il progetto Django gestisce le impostazioni e il routing degli URL a livello di sito (nei rispettivi file *urls.py* e *settings.py*), mentre ogni app ha stile e comportamento distinti tramite il routing interno, i modelli, le visualizzazioni, i file statici e l'interfaccia amministrativa corrispondenti.
 
 Un'app Django inizia in genere con un set standard di file. Visual Studio fornisce modelli di elemento per inizializzare un'app Django all'interno di un progetto Django, insieme a un comando di menu integrato che ha lo stesso scopo:
 
@@ -49,7 +49,7 @@ Usando uno dei due metodi, creare un'app denominata "HelloDjangoApp". Il risulta
 
 ![File dell'app Django in Esplora soluzioni](media/django/step02-django-app-in-solution-explorer.png)
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | --- | --- |
 | **\_\_init\_\_.py** | File che identifica l'app come pacchetto. |
 | **migrations** | Cartella in cui Django archivia gli script che aggiornano il database per l'allineamento alle modifiche apportate ai modelli. Gli strumenti di migrazione di Django applicano quindi le modifiche necessarie a qualsiasi versione precedente del database in modo che corrisponda ai modelli correnti. Usando le migrazioni, è possibile concentrarsi sui modelli e lasciare a Django la gestione dello schema di database sottostante. Le migrazioni vengono descritte nel passaggio 6. Per il momento, la cartella contiene semplicemente un file *\_\_init\_\_.py*, che indica che la cartella definisce il proprio pacchetto Python. |

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031760"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424278"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
 
@@ -25,7 +25,7 @@ I parametri dei modelli vengono scritti nel formato $*parametro*$. Per un elenco
 
 Nella sezione seguente viene illustrato come modificare un modello in modo da sostituire il nome di uno spazio dei nomi con il "nome di progetto sicuro".
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Per usare un parametro per sostituire il nome dello spazio dei nomi
+## <a name="example---namespace-name"></a>Esempio - nome dello spazio dei nomi
 
 1. Inserire il parametro in uno o più dei file di codice nel modello. Ad esempio:
 

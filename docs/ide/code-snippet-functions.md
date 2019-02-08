@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020464"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483718"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
 
@@ -28,13 +28,13 @@ Con i frammenti di codice C# è possibile usare tre funzioni. Le funzioni sono s
 
 Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.
 
-|Funzione|Description|Linguaggio|
+|Funzione|Descrizione|Linguaggio|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|C#|
 |`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Riduce il parametro *TypeName* alla forma più semplice nel contesto in cui il frammento è stato richiamato.|C#|
+|`SimpleTypeName(TypeName)`|Riduce il parametro *TypeName* alla forma più semplice nel contesto in cui il frammento è stato richiamato.|C#|
 
-## <a name="example"></a>Esempio
+## <a name="generateswitchcases-example"></a>Esempio GenerateSwitchCases
 
 L'esempio seguente illustra come usare la funzione `GenerateSwitchCases`. Quando questo frammento viene inserito e un'enumerazione viene immessa nel valore letterale `$switch_on$`, il valore letterale `$cases$` genera un'istruzione `case` per ogni valore presente nell'enumerazione.
 
@@ -76,7 +76,7 @@ L'esempio seguente illustra come usare la funzione `GenerateSwitchCases`. Quando
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="classname-example"></a>Esempio ClassName
 
 L'esempio seguente illustra come usare la funzione `ClassName`. Quando questo frammento viene inserito, il valore letterale `$classname$` viene sostituito con il nome della classe contenitore nella posizione corrispondente nel file di codice.
 
@@ -123,7 +123,7 @@ L'esempio seguente illustra come usare la funzione `ClassName`. Quando questo fr
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="simpletypename-example"></a>Esempio SimpleTypeName
 
 In questo esempio viene illustrato come usare la funzione `SimpleTypeName`. Quando questo frammento viene inserito in un file di codice, il valore letterale `$SystemConsole$` verrà sostituito con la forma più semplice del tipo <xref:System.Console> nel contesto in cui il frammento è stato richiamato.
 

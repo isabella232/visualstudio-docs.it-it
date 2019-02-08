@@ -1,6 +1,6 @@
-# <a name="visual-studio-2017-documentation"></a>Documentazione di Visual Studio 2017
+# <a name="visual-studio-documentation"></a>Documentazione di Visual Studio
 
-Introduzione Questo repository contiene i file di origine per la documentazione tecnica di Visual Studio 2017. Gli argomenti sono pubblicati in [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
+Introduzione Questo repository contiene i file di origine per la documentazione tecnica di Visual Studio. Gli argomenti sono pubblicati in [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
 Questo repository è stato spostato il 23 giugno 2017 da https://github.com/Microsoft/vsdocs. Il traffico verso gli URL precedenti viene reindirizzato qui.
 

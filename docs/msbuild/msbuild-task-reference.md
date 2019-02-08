@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951287"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483978"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [Attività di Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -28,7 +28,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività dispone anche dei parametri seguenti:  
 
 
-| Parametro | Description |
+| Parametro | Descrizione |
 |-------------------| - |
 | `Condition` | Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` usata dal motore di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per determinare se l'attività verrà eseguita. Per altre informazioni sulle condizioni supportate da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere [Condizioni](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
@@ -130,7 +130,10 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività GetAssemblyIdentity](../msbuild/getassemblyidentity-task.md)  
  Recupera le identità degli assembly dai file specificati ed estrae le informazioni sulle identità.  
 
- [Attività GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
+ [Attività GetFileHash](../msbuild/getfilehash-task.md)  
+ Calcola i checksum del contenuto di un file o di un set di file.
+
+[Attività GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
  Recupera il percorso degli assembly [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
 
  [Attività GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
 
  [Attività Vbc](../msbuild/vbc-task.md)  
  Richiama il compilatore Basic per creare librerie eseguibili a collegamento dinamico o moduli di codice.  
+
+ [Attività VerifyFileHash](../msbuild/verifyfilehash-task.md)  
+ Verifica che un file corrisponda all'hash file previsto.
 
  [Attività Warning](../msbuild/warning-task.md)  
  Registra un avviso durante una compilazione in base a un'istruzione condizionale valutata.  

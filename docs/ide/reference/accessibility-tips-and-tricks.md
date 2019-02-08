@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010389"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484134"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
 
@@ -41,7 +41,7 @@ Per alcuni, alcuni colori sono più difficili da vedere. Se si desidera aumentar
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Usare le annotazioni per rivelare informazioni utili sul proprio codice
 
-L'editor di Visual Studio comprende molte "aree di controllo" del testo che consentono di conoscere caratteristiche e funzionalità in determinati punti su una riga di codice, come lampadine, controlli durante la digitazione per errori e avvisi, segnalibri e altro ancora. È possibile usare il set di comandi "Mostra annotazioni riga" per scoprire queste aree di controllo e spostarsi dall'una all'altra.
+L'editor di Visual Studio comprende molte "aree di controllo" del testo che consentono di conoscere caratteristiche e funzionalità in determinati punti su una riga di codice, come icone a forma di cacciavite e lampadina, controlli durante la digitazione per errori e avvisi, segnalibri e altro ancora. È possibile usare il set di comandi "Mostra annotazioni riga" per scoprire queste aree di controllo e spostarsi dall'una all'altra.
 
   ![Usare il set di comandi Mostra annotazioni riga](media/show-line-annotations-command-set.png)
 
@@ -49,7 +49,7 @@ L'editor di Visual Studio comprende molte "aree di controllo" del testo che cons
 
 Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre degli strumenti. Le combinazioni di tasti di scelta rapida seguenti consentono di accedervi.
 
-|Funzionalità|Description|Combinazione di tasti|
+|Funzionalità|Descrizione|Combinazione di tasti|
 |-------------|-----------------| - |
 |Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **CTRL** + **TAB**|
 |Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**MAIUSC** + **ALT**|
@@ -59,7 +59,7 @@ Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre
 
 Tra le altre combinazioni di tasti utili ricordiamo le seguenti.
 
-|Funzionalità|Description|Combinazione di tasti|
+|Funzionalità|Descrizione|Combinazione di tasti|
 |-------------|-----------------| - |
 |IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **NOTA:** scelta rapida standard di Windows|**ALT di sinistra + MAIUSC di sinistra + STAMP**|
 |Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **NOTA:** scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
