@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979062"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484186"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -99,7 +99,7 @@ Per avviare l'operazione **Aggiungi using**, posizionare il cursore sul riferime
 
 ![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png)
 
-Fare clic sull'icona lampadina e quindi scegliere **using System.Xml;** per aggiungere automaticamente la direttiva using.
+Fare clic sull'icona di lampadina di errore, quindi scegliere **using System.Xml;** per aggiungere automaticamente la direttiva using.
 
 ### <a name="remove-and-sort-usings"></a>Opzione Rimuovi e ordina using
 
@@ -123,7 +123,7 @@ La funzionalità di **generazione dall'utilizzo** consente di usare le classi e 
 
 Viene visualizzata una sottolineatura ondulata rossa sotto ogni identificatore non definito. Quando si posiziona il puntatore del mouse sull'identificatore, viene visualizzato un messaggio di errore in una descrizione comando. Per visualizzare le opzioni appropriate, è possibile utilizzare le procedure seguenti:
 
-- Fare clic sull'identificatore non definito. Verrà visualizzata la lampadina delle **Azioni rapide** sotto l'identificatore. Fare clic sulla lampadina.
+- Fare clic sull'identificatore non definito. Verrà visualizzata la lampadina di errore di **Azioni rapide** sotto l'identificatore. Fare clic sulla lampadina di errore.
 
 - Fare clic sull'identificatore non definito e premere **CTRL**+**.** (**CTRL** + punto).
 

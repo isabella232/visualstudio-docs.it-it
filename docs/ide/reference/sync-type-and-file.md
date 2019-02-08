@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948180"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742430"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring con sincronizzazione di un tipo con un nome di file o un nome di file con un tipo
 
@@ -31,6 +31,9 @@ Questo refactoring si applica a:
 **Quando:** è stato rinominato un file o un tipo e non è ancora stato aggiornato il file o il tipo corrispondente.
 
 **Perché?:** se si inserisce un tipo in un file con un nome diverso o viceversa, risulta difficile trovare ciò che si sta cercando. Rinominando il tipo o il file, il codice diventa più leggibile e la navigazione più semplice.
+
+> [!NOTE]
+> Questo refactoring non è ancora disponibile per i progetti .NET Standard e .NET Core.
 
 ## <a name="how-to"></a>Procedura
 
@@ -62,8 +65,6 @@ Questo refactoring si applica a:
    - Visual Basic: Nell'esempio seguente il file **Employee.vb** è stato rinominato in **Person.vb** in modo che corrisponda al nome del tipo.
 
        ![Risultato inline Visual Basic](media/synctype-result-vb.png)
-
-> ![NOTA] Questo refactoring non è ancora disponibile per i progetti .NET Standard e .NET Core.
 
 ## <a name="see-also"></a>Vedere anche
 

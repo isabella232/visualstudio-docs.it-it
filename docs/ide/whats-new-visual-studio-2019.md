@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090107"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483705"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Novità di Visual Studio 2019 Preview
 
@@ -40,7 +40,7 @@ Ecco un riepilogo generale delle funzionalità offerte da Visual Studio:
 * **[Innovazione continua](#continuous-innovation)**. Codifica semplificata con supporto intelligente basato sul cloud.
 
 > [!NOTE]
-> Per un elenco completo delle nuove funzionalità di Visual Studio 2019 Preview, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Per un elenco completo delle nuove funzionalità di Visual Studio 2019 Preview, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Per una panoramica delle novità della seconda anteprima, vedere il post di blog [Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) (Visual Studio 2019 Preview 2 è ora disponibile).
 
 ## <a name="personal-and-team-productivity"></a>Produttività personale e in team
 
@@ -82,6 +82,8 @@ Probabilmente la finestra Espressioni di controllo è già stata usata in preced
 
    ![Nuova finestra Espressioni di controllo e funzionalità di formattazione dei valori in Visual Studio 2019](media/search-watch-window.png)
 
+Per altre informazioni, vedere il post di blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Miglioramenti di Visual Studio 2019: Ricerca di oggetti e proprietà nelle finestre Espressione di controllo, Auto e Variabili locali).
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) è un servizio per sviluppatori che consente di condividere una codebase e il relativo contesto con un collega e ottenere collaborazione bidirezionale immediata direttamente all'interno di Visual Studio. Con Live Share un collega può leggere, esplorare, modificare ed eseguire il debug di un progetto condiviso da un altro utente, in modo facile e sicuro.
@@ -110,7 +112,7 @@ La versione di anteprima di Visual Studio 2019 supporta la creazione di applicaz
 
 Se si usano monitor configurati con fattori di scala per lo schermo differenti o ci si connette in remoto a un computer con fattori di scala per lo schermo diversi dal dispositivo principale, si può notare che Visual Studio sembra sfocato o esegue il rendering con una scala errata.
 
-Con la versione di Visual Studio 2019 Preview 1, Visual Studio si sta gradatamente trasformando in un'applicazione sensibile ai valori del monitor (PMA). Visual Studio sarà sempre più in grado di eseguire correttamente il rendering, indipendentemente dai fattori di scala per lo schermo in uso.
+Con la versione di Visual Studio 2019 Preview, Visual Studio si sta gradatamente trasformando in un'applicazione sensibile ai valori del monitor (PMA). Visual Studio sarà sempre più in grado di eseguire correttamente il rendering, indipendentemente dai fattori di scala per lo schermo in uso.
 
    ![Rendering sensibile ai valori del monitor (PMA) in Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 

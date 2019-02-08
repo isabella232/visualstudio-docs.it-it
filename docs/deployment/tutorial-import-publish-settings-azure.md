@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bfb9c93c3cf69b13c7879b25e6855f421fbea9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98498b59f01bbd8a72a52695203d80a995497823
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003863"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690463"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -37,9 +37,9 @@ Il file delle impostazioni di pubblicazione (*\*.publishsettings*) non corrispon
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* È necessario aver installato Visual Studio 2017 e avere il carico di lavoro di sviluppo **ASP.NET** e **.NET Framework**. Per un'app .NET Core, è necessario anche il carico di lavoro **.NET Core**.
+* È necessario aver installato Visual Studio 2017 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  per installarlo gratuitamente.
 
 * Creare un servizio app di Azure. Per istruzioni dettagliate, vedere [Distribuire un'app Web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
@@ -47,9 +47,9 @@ Il file delle impostazioni di pubblicazione (*\*.publishsettings*) non corrispon
 
 1. Nel computer che esegue Visual Studio scegliere **File** > **Nuovo progetto**.
 
-1. In **Visual C#** o **Visual Basic** scegliere **Web**, quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET (.NET Framework)** oppure (solo C#) **Applicazione Web ASP.NET Core** e infine fare clic su **OK**.
+1. In **Visual C#** o **Visual Basic** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET (.NET Framework)** oppure (solo per C#) **Applicazione Web ASP.NET Core** e quindi fare clic su **OK**.
 
-    Se non vengono visualizzati i modelli di progetto specificati, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Vedere i prerequisiti descritti in questo articolo per identificare i carichi di lavoro di Visual Studio che è necessario installare.
+    Se non vengono visualizzati i modelli di progetto specificati, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico di lavoro **Sviluppo ASP.NET e Web**.
 
 1. Scegliere **MVC** (.NET Framework) o **Applicazione Web (MVC)** (per .NET Core) e verificare che l'opzione **Nessuna autenticazione** sia selezionata, quindi fare clic su **OK**.
 

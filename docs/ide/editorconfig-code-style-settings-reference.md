@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956090"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742521"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
@@ -328,7 +328,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
 
-| Value | Description |
+| Value | Descrizione |
 | ----- |:----------- |
 | always | Preferisce che vengano specificati i modificatori dell'accessibilità |
 | for\_non\_interface_members | Preferisce modificatori dell'accessibilità da dichiarare, fatta eccezione per i membri di interfaccia pubblica. È lo stesso di **always** ed è stato aggiunto per correzioni future se C# aggiunge metodi di interfaccia predefiniti. |
@@ -993,7 +993,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Description |
+| Value | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i metodi |
 | when_on_single_line | Preferisce membri con corpo di espressione per i metodi quando sono a riga singola |
@@ -1013,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Description |
+| Value | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i costruttori |
 | when_on_single_line | Preferisce membri con corpo di espressione per i costruttori quando sono a riga singola |
@@ -1033,7 +1033,7 @@ public Customer(int age) { Age = age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Description |
+| Valore | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli operatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli operatori quando sono a riga singola |
@@ -1055,7 +1055,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Description |
+| Value | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le proprietà |
 | when_on_single_line | Preferisce membri con corpo di espressione per le proprietà quando sono a riga singola |
@@ -1075,7 +1075,7 @@ public int Age { get { return _age; }}
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Description |
+| Value | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli indicizzatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli indicizzatori quando sono a riga singola |
@@ -1095,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Description |
+| Valore | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le funzioni di accesso |
 | when_on_single_line | Preferisce membri con corpo di espressione per le funzioni di accesso quando sono a riga singola |
@@ -1390,6 +1390,7 @@ Nell'elenco seguente sono illustrate le regole delle convenzioni di formattazion
 - Impostazioni di formattazione .NET
     - [Organizzare direttive using](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - Impostazioni di formattazione C#
     - [Opzioni dei caratteri di nuova riga](#newline)
         - csharp_new_line_before_open_brace
@@ -1432,6 +1433,7 @@ Nella tabella seguente sono riportati il nome della regola, i linguaggi applicab
 | Nome regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Visual Studio versione 2017 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# e Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# e Visual Basic | true | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1460,6 +1462,34 @@ Esempio di file *.editorconfig*:
 dotnet_sort_system_directives_first = true
 ```
 
+**dotnet\_separate\_import\_directive\_groups**
+
+- Quando questa regola è impostata su **True**, inserire una riga vuota tra i gruppi di direttive using.
+- Quando questa regola è impostata su **False**, non inserire una riga vuota tra i gruppi di direttive using.
+
+Esempi di codice:
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+Esempio di file *.editorconfig*:
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
+```
+
 ### <a name="c-formatting-settings"></a>Impostazioni di formattazione C#
 
 Le regole di formattazione illustrate in questa sezione si applicano solo al codice C#.
@@ -1484,7 +1514,7 @@ Nella tabella seguente sono riportati i nomi delle regole relative alla "nuova r
 
 Questa regola riguarda il posizionamento di una parentesi graffa di apertura `{` nella stessa riga del codice precedente o in una nuova riga. Per questa regola, non specificare **true** o **false**. Specificare invece **all**, **none** oppure uno o più elementi di codice, ad esempio **methods** o **properties**, per definire quando applicare questa regola. L'elenco completo dei valori consentiti è riportato nella tabella seguente:
 
-| Value | Description
+| Valore | Descrizione
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>Per più tipi di valore, separarli con ",". | Richiede le parentesi graffe in una nuova riga per gli elementi di codice specificati (anche noto come stile "Allman") |
 | tutti | Richiede le parentesi graffe in una nuova riga per tutte le espressioni (stile "Allman") |
@@ -1749,7 +1779,7 @@ default:
 
 Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
 
-| Valore | Description |
+| Value | Descrizione |
 | ----- |:----------- |
 | flush_left | Le etichette vengono posizionate nella colonna più a sinistra |
 | one_less_than_current | Le etichette vengono posizionate con un rientro minore rispetto al contesto corrente |
@@ -1892,7 +1922,7 @@ MyMethod(argument);
 
 Questa regola accetta uno o più valori dalla tabella seguente:
 
-| Value | Description |
+| Value | Descrizione |
 | ----- |:------------|
 | control_flow_statements | Inserisce uno spazio tra le parentesi delle istruzioni del flusso di controllo |
 | espressioni | Inserisce uno spazio tra le parentesi delle espressioni |
@@ -1979,7 +2009,7 @@ class C :I
 
 La regola accetta un solo valore della tabella seguente:
 
-| Value | Description |
+| Value | Descrizione |
 | ----- |:------------|
 | before_and_after | Inserire uno spazio prima e dopo l'operatore binario |
 | none | Rimuovere gli spazi prima e dopo l'operatore binario |
@@ -2193,6 +2223,7 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:none

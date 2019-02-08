@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924600"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484199"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
 1. Nel menu **File** selezionare **Aggiungi** > **Nuovo progetto**.
+
+   > [!TIP]
+   > È possibile aggiungere un altro progetto a una soluzione esistente in altri due modi. È possibile fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**. Oppure, è possibile scegliere **File** > **Nuovo** > **Progetto** e quindi nella finestra di dialogo **Nuovo progetto** selezionare l'opzione **Aggiungi a soluzione**:
+   >
+   > ![Opzione Aggiungi a soluzione nella finestra di dialogo Nuovo progetto](media/add-to-solution.png)
 
 2. Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e quindi scegliere **Test**.
 

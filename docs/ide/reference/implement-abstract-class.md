@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3e4267e806d0dea1b8d00ca2836982fbfdb9d58
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c9927f810dabd028cba311a576e2bbc33a398f5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030639"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483952"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementare una classe astratta in Visual Studio
 
@@ -47,8 +47,8 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
    ![Anteprima dell'implementazione della classe](media/abstract-preview-cs.png)
 

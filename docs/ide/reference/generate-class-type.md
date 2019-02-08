@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 718d8cb497435050b82943da3f0ca466e33b945a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 167c4380f67a51d3e03f2e4241c0c384781ddb43
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954839"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483939"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -52,8 +52,8 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione della classe](media/class-preview-cs.png)
 
@@ -71,7 +71,7 @@ Questa generazione di codice si applica a:
 
    ![Genera tipo](media/class-newtype-cs.png)
 
-   Selection | Description
+   Selection | Descrizione
    --- | ---
    Accedi a | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Kind | Può essere impostato come *classe* o *struct*.

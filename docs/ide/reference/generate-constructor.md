@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8f72638db2403b67a52ed5bc4ff005189526d7e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 746a0099d16196e9cbc2b98d18667acae57777f9
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938354"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483575"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -49,7 +49,7 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
+      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
 
    ![Anteprima della generazione di un costruttore](media/constructor1-preview-cs.png)
 
@@ -80,7 +80,7 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
+      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
 
       ![Anteprima della generazione di un costruttore](media/constructor2-preview-cs.png)
 
@@ -108,8 +108,8 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di un costruttore](media/constructor-preview-cs.png)
 
@@ -142,8 +142,8 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di un costruttore](media/constructor4-preview-cs.png)
 
@@ -169,7 +169,7 @@ Questa generazione di codice si applica a:
       - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
+      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
 
    ![Anteprima della generazione di un costruttore](media/constructor5-preview-cs.png)
 
@@ -181,5 +181,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione codice](../code-generation-in-visual-studio.md)
+- [Generazione di codice](../code-generation-in-visual-studio.md)
 - [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

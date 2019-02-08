@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985916"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424214"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
@@ -69,17 +69,20 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Per creare un modello per più progetti da una soluzione esistente
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Creare un modello per più progetti da una soluzione esistente
 
 1. Creare una soluzione e aggiungere due o più progetti.
 
 1. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
 
+   > [!TIP]
+   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio `$ext_safeprojectname$`.
+
 1. Nel menu **Progetto** scegliere**Esporta modello**.
 
    Viene aperta l'**Esportazione guidata modelli**.
 
-1. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare il progetto che si vuole esportare in un modello e quindi scegliere **Avanti**.
+1. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare uno dei progetti che si vuole esportare in un modello e quindi scegliere **Avanti**. È possibile ripetere questi passaggi per ogni progetto della soluzione.
 
 1. Nella pagina **Selezionare le opzioni del modello** immettere il nome e una descrizione, un'icona e un'immagine di anteprima facoltative per il modello. Scegliere **Fine**.
 

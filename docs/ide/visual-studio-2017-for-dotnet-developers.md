@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941392"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484095"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -36,7 +36,7 @@ Alcune estensioni offrono anche gli schemi della tastiera:
 
 Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio:
 
-| Tasti di scelta rapida (tutti i profili) | Comando | Description |
+| Tasti di scelta rapida (tutti i profili) | Comando | Descrizione |
 |-|-|-|
 | **CTRL**+**T** | Vai a tutti | Consente di passare a qualsiasi dichiarazione di file/tipo/membro/simbolo |
 | **F12** (o **CTRL**+**clic**) | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
@@ -81,7 +81,7 @@ Visual Studio 2017 offre una funzionalità denominata **Vai a tutti** (**CTRL**+
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Servono ulteriori refactoring e correzioni del codice
 
-Visual Studio 2017 include molti refactoring, azioni di generazione del codice e correzioni del codice. Le sottolineature rosse rappresentano errori, quelle verdi rappresentano gli avvisi e tre punti grigi rappresentano suggerimenti per il codice. È possibile accedere alle correzioni del codice facendo clic sull'icona lampadina/cacciavite o premendo **CTRL**+**.** oppure **ALT**+**INVIO**. Ogni correzione è dotata di una finestra di anteprima che mostra come funziona la correzione in un diff di codice live.
+Visual Studio 2017 include molti refactoring, azioni di generazione del codice e correzioni del codice. Le sottolineature rosse rappresentano errori, quelle verdi rappresentano gli avvisi e tre punti grigi rappresentano suggerimenti per il codice. È possibile accedere alle correzioni del codice facendo clic sull'icona lampadina o cacciavite o premendo **CTRL**+**.** oppure **ALT**+**INVIO**. Ogni correzione è dotata di una finestra di anteprima che mostra come funziona la correzione in un diff di codice live.
 
 - Le correzioni rapide e i refactoring più comuni includono:
   - *Rinomina*
@@ -155,7 +155,7 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 | Funzionalità | Dettagli | Abilitazione |
 |-|-|-|
 | Individuare il file in Esplora soluzioni | Evidenzia il file attivo in **Esplora soluzioni** | **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Tieni traccia degli elementi attivi in Esplora soluzioni** |
-| Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza un'icona a forma di lampadina con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Suggerisci le direttive using per i tipi in assembly di riferimento** e **Suggerisci le direttive using per i tipi in pacchetti NuGet** |
+| Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza una lampadina di errore con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Suggerisci le direttive using per i tipi in assembly di riferimento** e **Suggerisci le direttive using per i tipi in pacchetti NuGet** |
 | Abilita analisi della soluzione completa | Visualizza tutti gli errori della soluzione in **Elenco errori** | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita analisi della soluzione completa** |
 | Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita spostamento a origini decompilate** |
 | Modalità di terminazione/suggerimento | Modifica il comportamento del completamento in IntelliSense. Gli sviluppatori con esperienza IntelliJ tendono a cambiare l'impostazione predefinita in questo punto | **Menu** > **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** |

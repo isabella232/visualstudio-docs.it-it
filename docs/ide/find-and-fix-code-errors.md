@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017097"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483770"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -89,9 +89,9 @@ Eventuali avvisi nuovi o aggiornati vengono visualizzati nella scheda **Elenco e
 
 ![Elenco di errori con avvisi di Visual Studio](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usare le lampadine per correggere o effettuare il refactoring del codice
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Usare Azioni rapide per correggere o effettuare il refactoring del codice
 
-Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. Oppure, quando il cursore si trova sulla riga con la linea ondulata colorata premere **CTRL**+**.** oppure selezionare l'icona a forma di lampadina o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
+Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. Oppure, quando il cursore si trova sulla riga con la linea ondulata colorata premere **CTRL**+**.** oppure selezionare l'icona a forma di lampadina, di lampadina di errore o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
 
 ![Anteprima di lampadina di Visual Studio](../ide/media/quick-actions-options.png)
 

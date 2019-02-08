@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992633"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424240"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 
@@ -102,7 +102,7 @@ Immettere il segno di maggiore di (>) per aggiungere comandi di Visual Studio ne
 
 Quando fa clic su qualsiasi riga precedente nel **immediato** finestra, si passa automaticamente in modalità indicatore. Questa modalità consente di selezionare, modificare e copiare il testo dei comandi precedenti in qualsiasi editor di testo e incollarlo nella riga corrente.
 
-## <a name="the-equals-sign"></a>Segno di uguale (=)
+## <a name="the-equals-sign-"></a>Segno di uguale (=)
 
 La finestra usata per immettere il comando `EvaluateStatement` determina se interpretare un segno di uguale (=) come operatore di confronto o come operatore di assegnazione.
 

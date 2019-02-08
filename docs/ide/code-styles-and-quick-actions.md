@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039055"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483991"
 ---
 # <a name="code-style-preferences"></a>Preferenze di stile per il codice
 
@@ -31,7 +31,7 @@ Quando viene selezionata, ogni voce dell'elenco visualizza un'anteprima della pr
 
 ## <a name="preference-and-severity"></a>Preferenza e gravità
 
-Per ogni voce è possibile impostare i valori **Preferenza** e **Gravità** usando i menu a discesa disponibili per ogni riga. La gravità può essere impostata su **Nessuno**, **Suggerimento**, **Avviso** o **Errore**. Se si vogliono abilitare le [Azioni rapide](../ide/quick-actions.md) per uno stile di codice, assicurarsi che l'opzione **Gravità** sia impostata su un valore diverso da **Nessuno**. L'icona a forma di lampadina di **Azioni rapide** ![icona lampadina piccola](media/vs2015_lightbulbsmall.png) viene visualizzata quando si usa uno stile non preferito ed è possibile scegliere un'opzione nell'elenco **Azioni rapide** per riscrivere automaticamente il codice con lo stile preferito.
+Per ogni voce è possibile impostare i valori **Preferenza** e **Gravità** usando i menu a discesa disponibili per ogni riga. La gravità può essere impostata su **Nessuno**, **Suggerimento**, **Avviso** o **Errore**. Se si vogliono abilitare le [Azioni rapide](../ide/quick-actions.md) per uno stile di codice, assicurarsi che l'opzione **Gravità** sia impostata su un valore diverso da **Nessuno**. L'icona a forma di lampadina **lampadina**, di lampadina di errore ![lampadina di errore](media/screwdriver.png) o di cacciavite **cacciavite** di ![Azioni rapide](media/vs2015_lightbulbsmall.png) viene visualizzata quando si usa uno stile non preferito ed è possibile scegliere un'opzione nell'elenco ![Azioni rapide](media/error-bulb.png) per riscrivere automaticamente il codice con lo stile preferito.
 
 ## <a name="editorconfig-files"></a>File EditorConfig
 

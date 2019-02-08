@@ -1,6 +1,6 @@
 ---
 title: Creare un progetto di unit test
-ms.date: 11/04/2016
+ms.date: 01/29/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,41 +8,41 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e90aa1f8fe13bc7ee99f3ac20b1813ca2a6c9672
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 813829e1e4024a38415cd9cef6da9fa7ca2ed87b
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996814"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424408"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
 Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esempio, si crea un progetto unit test per ogni progetto di codice del prodotto. Il progetto test può essere nella stessa soluzione del codice di produzione o in una soluzione separata. È possibile avere più progetti unit test in una soluzione.
 
 > [!NOTE]
-> Il percorso degli unit test per un codice nativo e la struttura del progetto test possono essere diversi da quelli descritti in questo argomento. Per altre informazioni, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).
+> Il percorso degli unit test per un codice nativo e la struttura del progetto test possono essere diversi da quelli descritti in questo articolo. Per altre informazioni, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="to-create-a-unit-test-project"></a>Per creare un progetto unit test:
+## <a name="to-create-a-unit-test-project"></a>Per creare un progetto di unit test
 
-1.  Nel menu **File** scegliere **Nuovo** e quindi **Progetto** oppure premere **CTRL**+**MAIUSC**+**N**.
+1. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**. Oppure premere **CTRL**+**MAIUSC**+**N**.
 
-2.  Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
+2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
 
-3.  Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Per testare il progetto Accounts dell'esempio, assegnare al progetto il nome **AccountsTests**.
+3. Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Assegnare il nome al progetto e scegliere **OK**.
 
-4.  Nel progetto unit test, aggiungere un riferimento al codice sottoposto a test.  Di seguito viene illustrato come creare il riferimento a un progetto codice nella stessa soluzione:
+4. Nel progetto unit test, aggiungere un riferimento al codice sottoposto a test. Per aggiungere un riferimento a un progetto nella stessa soluzione:
 
-    1.  Selezionare il progetto in **Esplora soluzioni**.
+   1. Selezionare il progetto di test in **Esplora soluzioni**.
 
-    2.  Scegliere **Aggiungi riferimento** dal menu **Progetto**.
+   2. Scegliere **Aggiungi riferimento** dal menu **Progetto**.
 
-    3.  Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto codice e chiudere la finestra di dialogo.
+   3. In **Gestione riferimenti** selezionare il nodo **Soluzione** in **Progetti**. Selezionare il progetto di codice da testare, quindi selezionare **OK**.
 
-5.  Se il codice che si vuole testare è in un altro percorso, vedere [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md) per informazioni sull'aggiunta di riferimenti.
+   Se il codice che si vuole testare è in un altro percorso, vedere [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md) per informazioni sull'aggiunta di riferimenti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
- Vedere una delle sezioni seguenti:
+Vedere una delle sezioni seguenti:
 
 **Scrittura di unit test**
 
