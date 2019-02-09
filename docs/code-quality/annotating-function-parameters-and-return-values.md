@@ -1,7 +1,6 @@
 ---
 title: Annotazione di parametri di funzione e valori restituiti
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -126,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921017"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923930"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e i puntatori alle strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di uso comune per le annotazioni. Per le annotazioni aggiuntive che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)

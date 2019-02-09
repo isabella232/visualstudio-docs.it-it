@@ -11,44 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4cc5cf725b47c740bc14a57870e589c5de4e8c1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980427"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936901"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
 Quando si apre una soluzione Domain-Specific Language Tools (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
 
  ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
- Nella tabella seguente viene illustrato come vengono usate le parti dell'interfaccia utente.
+ La tabella seguente spiega come vengono usate le diverse parti dell'interfaccia utente.
 
 |**Elemento**|**Definizione**|
 |-|-|
-|Diagramma|Il diagramma mostra il modello di dominio.<br /><br /> Il diagramma presenta due lati. Lato "uno" definisce i tipi degli elementi nei modelli. L'altro lato definisce come i modelli verranno visualizzato sullo schermo.|
-|Casella degli strumenti|Trascinare gli strumenti dalla casella degli strumenti per aggiungere classi di dominio e definire i tipi al diagramma. Per aggiungere mappe delle forme, connettori e relazioni, fare clic sullo strumento, quindi fare clic sul nodo di origine nel diagramma, quindi il nodo di destinazione.|
-|Esplora DSL|**Esplora DSL** viene visualizzato quando una definizione DSL è la finestra attiva. Viene illustrato il linguaggio DSL come una struttura ad albero. DSL Explorer consente di modificare le funzionalità del modello che non vengono visualizzate nel diagramma. Ad esempio, è possibile aggiungere gli elementi della casella degli strumenti e attivare il processo di convalida usando il **DSL Explorer**.|
-|Finestra Dettagli DSL|Il **dettagli DSL** finestra Mostra le proprietà del dominio gli elementi del modello che consentono di controllare come vengono visualizzati gli elementi e come gli elementi vengono copiati ed eliminati.<br /><br /> -Per impostazione predefinita, il **dettagli DSL** accanto a verrà visualizzata la finestra di **elenco errori** e **Output** windows.|
+|Diagramma|Il diagramma visualizza il modello di dominio.<br /><br /> Il diagramma presenta due lati. Un lato definisce i tipi degli elementi nei modelli. L'altro lato definisce il modo in cui i modelli verranno visualizzati sullo schermo.|
+|Casella degli strumenti|Trascinare gli strumenti dalla casella degli strumenti per aggiungere classi di dominio e tipi di forma al diagramma. Per aggiungere relazioni, connettori e mapping di forme, fare clic sullo strumento, sul nodo di origine sul diagramma e quindi sul nodo di destinazione.|
+|Esplora DSL|La **finestra di esplorazione DSL** viene visualizzata quando la finestra attiva corrisponde a una definizione DSL. Il linguaggio DSL viene visualizzato sotto forma di albero. La finestra di esplorazione DSL consente di modificare le caratteristiche del modello non visualizzate nel diagramma. È ad esempio possibile usare la **finestra di esplorazione DSL** per aggiungere elementi della casella degli strumenti e attivare il processo di convalida.|
+|Finestra Dettagli DSL|La finestra **Dettagli DSL** visualizza le proprietà degli elementi del modello di dominio che consentono di controllare la modalità di visualizzazione degli elementi, nonché la modalità di copia ed eliminazione di questi.<br /><br /> - Per impostazione predefinita, la finestra **Dettagli DSL** è visualizzata accanto alle finestre **Elenco errori** e **Output**.|
 
-## <a name="the-domain-model-diagram"></a>Il diagramma del modello di dominio
- Il diagramma del modello di dominio è suddivisa in due parti. Un lato del diagramma illustra gli elementi e relazioni nel modello. Viene illustrato l'altro lato come il modello deve essere visualizzato e include le forme che consentono di visualizzare gli elementi e le proprietà del diagramma del modello. Nell'immagine seguente mostra gli elementi del diagramma.
+## <a name="the-domain-model-diagram"></a>Diagramma del modello di dominio
+ Il diagramma del modello di dominio è diviso in due parti. Un lato del diagramma illustra gli elementi e le relazioni nel modello. L'altro lato, che illustra come deve essere visualizzato il modello, include le forme usate per visualizzare gli elementi e le proprietà del diagramma del modello. L'immagine seguente illustra gli elementi del diagramma.
 
  ![Progettazione DSL con corsia](../modeling/media/dsl_desinger.png)
 
- Nella tabella seguente illustra alcuni degli elementi del diagramma del modello di dominio.
+ La tabella seguente spiega alcuni elementi del diagramma del modello di dominio.
 
 |**Term**|**Definizione**|
 |-|-|
-|Classe di dominio|Classi di dominio sono i tipi di elementi nei modelli.<br /><br /> Una classe di dominio può contenere più di una volta in un diagramma, se si tratta della destinazione di più di una relazione.<br /><br /> Per aggiungere una classe di dominio, trascinare lo strumento di classe di dominio dal **casella degli strumenti** per il **Classes and Relationships** lato del diagramma.|
-|Relazione di dominio|Relazioni di dominio sono i tipi di collegamenti tra elementi nei modelli.<br /><br /> Un' *relazione di incorporamento* indica che l'elemento di destinazione è di proprietà o contenuto nell'elemento di origine e viene visualizzato come una linea continua. Ogni elemento in un modello deve essere la destinazione di una relazione di incorporamento, in modo che il modello costituisce una struttura ad albero. Oggetto *fanno riferimento a relazione* indica un collegamento tra elementi del modello generale e viene visualizzato come una linea tratteggiata. Qualsiasi elemento può avere qualsiasi numero di collegamenti di riferimento.<br /><br /> Creare una relazione facendo clic sullo strumento il **casella degli strumenti**, scegliendo la classe di dominio di origine e quindi scegliendo la classe di destinazione.|
-|Forme e connettori|Forme specificano come gli elementi del modello devono essere visualizzati in un diagramma DSL., connettori di specificare le righe in un diagramma DSL che può essere utilizzato per visualizzare le relazioni.<br /><br /> Per creare una forma o connettore, trascinare lo strumento per la **Diagram Elements** lato del diagramma.|
-|Mappe delle forme|Una mappa della forma viene visualizzata come una riga nel diagramma del modello di dominio, una forma di collegamento alla classe di dominio che viene visualizzato, o un connettore per la relazione di dominio che viene visualizzato.|
+|Classe di dominio|Le classi di dominio sono i tipi degli elementi nei modelli.<br /><br /> Una classe di dominio può comparire più volte in un diagramma, se è la destinazione di più relazioni.<br /><br /> Per aggiungere una classe di dominio, trascinare lo strumento Classe di dominio dalla **Casella degli strumenti** al lato **Classi e relazioni** del diagramma.|
+|Relazione di dominio|Le relazioni di dominio sono i tipi dei collegamenti tra gli elementi nei modelli.<br /><br /> Una *relazione di incorporamento* indica che l'elemento di destinazione è di proprietà dell'elemento di origine o è contenuto all'interno di esso. Tale relazione viene visualizzata con una linea continua. Ogni elemento in un modello deve essere la destinazione di una relazione di incorporamento, in modo che il modello abbia l'aspetto di un albero. Una *relazione di riferimento* indica un collegamento generale tra elementi del modello generale e viene visualizzata con una linea tratteggiata. Tutti gli elementi possono avere un numero qualsiasi di collegamenti di riferimento.<br /><br /> Creare una relazione facendo clic sullo strumento nella **Casella degli strumenti**, sulla classe di dominio di origine e quindi sulla classe di destinazione.|
+|Forme e connettori|Le forme specificano in che modo gli elementi del modello devono essere visualizzati in un diagramma DSL. I connettori specificano le linee che è possibile usare in un diagramma DSL per visualizzare le relazioni.<br /><br /> Per creare una forma o un connettore, trascinare lo strumento sul lato **Elementi diagramma** del diagramma.|
+|Mappe delle forme|Un mapping di forme ha l'aspetto di una linea che, nel diagramma del modello di dominio, collega una forma alla classe di dominio che visualizza, o un connettore alla relazione di dominio che visualizza.|
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli strumenti di linguaggio specifico di dominio](../modeling/overview-of-domain-specific-language-tools.md)
-- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Personalizzazione ed estensione di un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
