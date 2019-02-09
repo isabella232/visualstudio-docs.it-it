@@ -1,7 +1,6 @@
 ---
 title: Aggiungere controlli ai documenti di Office in fase di esecuzione
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 01daa9a0446cc35090e6e47787b338cc74a9b1c8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869187"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944962"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Aggiungere controlli ai documenti di Office in fase di esecuzione
   È possibile aggiungere controlli a un documento di Microsoft Office Word e di una cartella di lavoro di Microsoft Office Excel in fase di esecuzione. È inoltre possibile rimuoverli in fase di esecuzione. I controlli che si aggiunge o rimuove in fase di esecuzione sono noti *controlli dinamici*.  

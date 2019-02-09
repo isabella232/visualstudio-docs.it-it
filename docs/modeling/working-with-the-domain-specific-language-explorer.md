@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 295b7c2bb0c146e567ab752f693b8dba9aa08517
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a27558ea21569e4e31bdbb3ea2c238ce863efda3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069356"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907737"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
 Il **DSL Explorer** visualizza diversi tipi di informazioni in una visualizzazione struttura ad albero. Per altre informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).
@@ -44,4 +43,4 @@ Il **DSL Explorer** visualizza diversi tipi di informazioni in una visualizzazio
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,7 +1,6 @@
 ---
 title: Riferimento di controllo linee guida per la base di C++
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949473"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Riferimento di controllo linee guida per la base di C++
 
@@ -202,10 +201,10 @@ Vedere [gsl linee guida di base di C++: Visualizzazioni](https://github.com/isoc
 
 [C26446 USE_GSL_AT](c26446.md) preferiscono usare `gsl::at()` anziché l'operatore di indice è deselezionata. Vedere [linee guida di base di C++:  Bounds.4: Non usare le funzioni di libreria standard e tipi che non sono al controllo dei limiti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) provare a usare `gsl::finally` se azione finale è intenzionale. Vedere [linee guida di base di C++:  Gsl: Le utilità](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY ](c26448.md) provare a usare `gsl::finally` se azione finale è intenzionale. Vedere [linee guida di base di C++:  GSL.util: Le utilità](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` o `std::string_view` creato da una variabile temporanea non saranno validi quando il file temporaneo viene invalidato. Vedere [linee guida di base di C++: Gsl: Viste](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` o `std::string_view` creato da una variabile temporanea non saranno validi quando il file temporaneo viene invalidato. Vedere [linee guida di base di C++: GSL.view: Viste](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 
 ## <a name="deprecated-warnings"></a>Avvisi deprecati

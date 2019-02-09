@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 16ff6a60182ec6f3cbaff45bac54a4bec3ffbd52
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932324"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913054"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 Gli autori di un linguaggio specifico di dominio possono definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo. Ad esempio, se il linguaggio specifico di dominio consente agli utenti di disegnare l'albero genealogico di determinate persone e dei relativi antenati, è possibile scrivere un vincolo per garantire che le date di nascita dei figli siano successive a quelle dei genitori.

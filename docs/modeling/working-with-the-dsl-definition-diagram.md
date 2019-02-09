@@ -16,13 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6924e73d97b282b4027244c542684c2090520437
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039242"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954180"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilizzo del diagramma di definizione DSL
 Il diagramma di un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definizione è uno strumento importante per la definizione di linguaggio specifico di dominio. Consente di aggiungere elementi al modello di dominio e definire relazioni sul diagramma ed è possibile modificare il layout del diagramma per renderlo più leggibile.
@@ -73,4 +72,4 @@ Il diagramma di un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definizione �
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

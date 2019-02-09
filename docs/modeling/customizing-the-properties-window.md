@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c02bdb890ed6e65db4916efa9899e967a1ce897c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936294"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942596"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile personalizzare l'aspetto e il comportamento della finestra Proprietà. Nella definizione DSL, si definiscono le proprietà di dominio in ogni classe di dominio. Per impostazione predefinita, quando si seleziona un'istanza della classe, in un diagramma o in Esplora modelli, ogni proprietà di dominio è elencato nella finestra Proprietà. Ciò consente di visualizzare e modificare i valori delle proprietà di dominio, anche se non li mappata a campi della forma nel diagramma.

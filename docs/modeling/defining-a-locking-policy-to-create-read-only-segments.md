@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 548840c3671b0760380c84520fe3a39238dfd19a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027347"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944629"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 L'API di immutabilità del SDK di modellazione di Visual Studio Visualization consente a un programma per bloccare o parte di un modello di linguaggio specifico di dominio (DSL) in modo che è possibile leggere ma non modificato. Questa opzione di sola lettura, ad esempio, potrebbe essere usata in modo che un utente può chiedere i colleghi per aggiungere annotazioni e rivedere un modello DSL ma è possibile impedire loro di modificare l'originale.
@@ -76,7 +75,7 @@ partition.SetLocks(Locks.Delete);
 
   È possibile impostare un blocco su una partizione o archiviare e allo stesso tempo disabilitare il blocco su un singolo elemento.
 
-|Value|Vale a dire se `IsLocked(Value)` è true|
+|Valore|Vale a dire se `IsLocked(Value)` è true|
 |-|-|
 |nessuno|Nessuna restrizione.|
 |Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Ciò non è applicabile alle proprietà che vengono generate dal ruolo di una classe di dominio in una relazione.|

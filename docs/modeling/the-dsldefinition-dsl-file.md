@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4aff681c72b17882db8f7e97daae45bb5da69347
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 876868d8c2faf483f1033bab1ff8ac14f6e9ab10
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995869"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956909"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -580,6 +579,6 @@ Le mappe dei connettori possono anche contenere mappe degli elementi Decorator.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
