@@ -1,7 +1,6 @@
 ---
 title: Cenni preliminari sull'analisi del codice per C/C++
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896396"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947640"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analisi del codice per C/C++: Panoramica
 
@@ -37,7 +36,7 @@ Lo strumento di analisi del codice C/C++ fornisce informazioni sui possibili err
 
 Lo strumento di analisi codice è completamente integrato nell'IDE di Visual Studio.
 
-Durante il processo di compilazione, tutti gli avvisi generati per il codice sorgente vengono visualizzati nell'elenco errori. È possibile passare al codice sorgente che ha causato l'avviso ed è possibile visualizzare informazioni aggiuntive sulla causa e le possibili soluzioni del problema.
+Durante il processo di compilazione, tutti gli avvisi generati a causa del codice sorgente vengono visualizzati nell'Elenco errori. È possibile passare al codice sorgente che ha causato l'avviso e visualizzare informazioni aggiuntive sulla causa e le possibili soluzioni del problema.
 
 ## <a name="command-line-support"></a>Supporto della riga di comando
 
@@ -55,15 +54,15 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="annotation-support"></a>Supporto delle annotazioni
 
-Annotazioni di migliorano l'accuratezza dell'analisi del codice. Le annotazioni forniscono informazioni aggiuntive sulle condizioni di pre-elaborazione e post-sui parametri della funzione e i tipi restituiscono. Per altre informazioni, vedere [Procedura: Specificare informazioni aggiuntive sul codice usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Le annotazioni rendono più precisa l'analisi del codice, in quanto offrono informazioni aggiuntive sulle pre- e post-condizioni in parametri di funzione e tipi restituiti. Per altre informazioni, vedere [Procedura: Specificare informazioni aggiuntive sul codice usando __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
-## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Eseguire lo strumento di analisi come parte di criteri di archiviazione
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Eseguire lo strumento di analisi come parte dei criteri di archiviazione
 
-È possibile richiedere che tutte le origine codice archiviazioni soddisfino determinati criteri. In particolare, si desidera assicurarsi che l'analisi è stata eseguita come un passaggio di compilazione locale più recente. Per altre informazioni su come abilitare un criterio di controllo dell'analisi codice, vedere [creazione e uso analisi codice Check-In Criteri](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+È possibile che tutte le archiviazioni del codice sorgente debbano soddisfare determinati criteri, in particolare, assicurarsi che l'analisi sia stata eseguita come parte del processo di compilazione locale più recente. Per altre informazioni su come abilitare i criteri di archiviazione dell'analisi codice, vedere [Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integrazione di Team Build
 
-È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi di codice come passaggio del [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo di compilazione. Per altre informazioni, vedere [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi del codice come parte del processo di compilazione di [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Per altre informazioni, vedere [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vedere anche
 
