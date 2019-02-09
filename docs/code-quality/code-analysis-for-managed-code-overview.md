@@ -1,7 +1,6 @@
 ---
 title: Analisi del codice statico per il codice gestito
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ae73deb4bc4dfba550df2c663d8f77a4b1efcf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030080"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909141"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi codice statico per il codice gestito in Visual Studio
 
@@ -35,13 +34,13 @@ Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come
 
 È possibile eseguire l'analisi del codice sul progetto manualmente o automaticamente.
 
-Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilita analisi codice su compilazione** nella pagina delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilita analisi codice su compilazione** nella pagina delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Abilitare e disabilitare l'analisi codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<progetto >**.
 
 ## <a name="rule-sets"></a>Set di regole
 
-Regole di analisi codice per il codice gestito vengono raggruppate in [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). È possibile usare uno dei set di regole standard Microsoft oppure è possibile [creare un set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare esigenze specifiche.
+Le regole per l'analisi del codice gestito vengono raggruppate in [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). È possibile usare uno dei set di regole standard Microsoft oppure è possibile [creare un set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare esigenze specifiche.
 
 ## <a name="suppress-warnings"></a>Non visualizzare gli avvisi
 
@@ -80,4 +79,4 @@ A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione
 
 - [Panoramica degli analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Uso di set di regole per raggruppare regole di analisi del codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Procedura: Abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Procedura: Abilitare e disabilitare l'analisi codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
