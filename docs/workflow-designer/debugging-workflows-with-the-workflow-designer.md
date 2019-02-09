@@ -2,7 +2,6 @@
 title: Debug dei flussi di lavoro mediante Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06ee7101dcb6b227f8e7f0228730fb0668695b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1270e57ae6c9235311569c04ebb982157ea3b608
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998846"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953945"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Eseguire il debug dei flussi di lavoro con la finestra di progettazione del flusso di lavoro
 

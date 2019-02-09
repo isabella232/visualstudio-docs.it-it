@@ -1,5 +1,5 @@
 ---
-title: Usando i controlli delle linee guida di base di C++
+title: Uso dei correttori Linee guida di base di C++
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -7,15 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820238"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914997"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Usando i controlli delle linee guida di base di C++
+# <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. I controlli delle linee guida di base vengono installati per impostazione predefinita in Visual Studio 2017 e vengono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Il progetto di linee guida di base di C++

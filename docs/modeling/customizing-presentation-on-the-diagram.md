@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cada6491e0c4af20197848302ff0cf7006acd3ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99cd0704c74da1e3f31363c5847260e39d844a41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068915"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944442"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personalizzazione della presentazione nel diagramma
 Il diagramma è l'area di presentazione principale di una finestra di progettazione di linguaggio specifico di dominio. In genere, gli utenti usano il diagramma per costruire i modelli. È possibile personalizzare il diagramma come descritto negli argomenti seguenti.

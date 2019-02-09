@@ -1,7 +1,6 @@
 ---
 title: 'CA1050: Dichiarare i tipi negli spazi dei nomi'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1050
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 97cc36e7b454484f4fcdfb3d3be499e48af9c407
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018839"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953361"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Dichiarare i tipi negli spazi dei nomi
 

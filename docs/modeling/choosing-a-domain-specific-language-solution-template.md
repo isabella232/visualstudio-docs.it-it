@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071072"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913314"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Scelta di un modello di soluzione per un linguaggio specifico di dominio
 Per creare una soluzione domain-specific language, scegliere uno dei modelli di soluzione che sono disponibili nella procedura guidata finestra di progettazione di linguaggio specifico di dominio. Scegliendo il modello che rispecchia maggiormente la lingua che si desidera creare, è possibile ridurre al minimo le modifiche da apportare alla soluzione di partenza.
