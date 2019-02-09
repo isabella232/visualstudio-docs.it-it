@@ -3,17 +3,16 @@ layout: LandingPage
 title: Analisi codice
 description: Informazioni su come usare Visual Studio 2017 per analizzare la qualità del codice.
 ms.date: 12/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
-ms.openlocfilehash: 811925de93c3be02800c1c7ce4f6f40565881c13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99d1ab0dd6eea79380b33fec76a2ba1869559f3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970903"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949015"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Analisi codice in Visual Studio
 
