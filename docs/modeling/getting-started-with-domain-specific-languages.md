@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 55faad5ee76819320384d977100bf02e482b79ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93a121a103d18d886fafa2368d8669276a8010e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940128"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938285"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -394,7 +393,7 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
  È possibile usare la stessa procedura per installare il linguaggio DSL nel computer in modo che non è necessario utilizzare l'istanza sperimentale di Visual Studio.
 
- Per altre informazioni, vedere [distribuzione di soluzioni Domain-Specific Language](../modeling/deploying-domain-specific-language-solutions.md).
+ Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ##  <a name="Reset"></a> Rimozione di vecchi DSL sperimentale
  Se è stato creato sperimentale linguaggi specifici di dominio che non sono più necessarie, è possibile rimuoverli dal computer, reimpostando l'istanza sperimentale di Visual Studio.

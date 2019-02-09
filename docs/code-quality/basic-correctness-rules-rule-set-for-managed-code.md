@@ -1,7 +1,6 @@
 ---
 title: Set di regole base di correttezza per codice gestito
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 937a41f6d308e9c3ff8a99f925cd75c95c17fb24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012482"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937268"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 Il set di regole regole base di correttezza è incentrato sulla presenza di errori logici e gli errori più comuni nell'utilizzo di API del framework. Le regole base di correttezza includono le regole nel set di regole regole minime. Per altre informazioni, vedere [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) è necessario includere questo set di regole per espandere l'elenco degli avvisi segnalati dalle regole minime consigliate.

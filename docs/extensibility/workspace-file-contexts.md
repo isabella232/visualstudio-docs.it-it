@@ -2,18 +2,17 @@
 title: Contesti di file dell'area di lavoro in Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826864"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939190"
 ---
 # <a name="workspace-file-contexts"></a>Contesti di file dell'area di lavoro
 
@@ -27,7 +26,7 @@ Gli scenari più comuni per i contesti di file sono correlati alla compilazione,
 
 ## <a name="file-context-lifecycle"></a>Ciclo di vita del contesto file
 
-Cicli di vita per un `FileContext` sono non deterministici. In qualsiasi momento, un componente può richiedere in modo asincrono per alcuni set di tipi di contesto. I provider che supportano un subset dei tipi di contesto richiesta verranno eseguite query. Il `IWorkspace` istanza agisce come intermediario tra i consumer e provider tramite il <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> (metodo). I consumer potrebbe essere un contesto di richiesta ed eseguire un'azione a breve termine basata sul contesto, mentre altri potrebbero richiedere un contesto e mantenere un riferimento lunga. 
+Cicli di vita per un `FileContext` sono non deterministici. In qualsiasi momento, un componente può richiedere in modo asincrono per alcuni set di tipi di contesto. I provider che supportano un subset dei tipi di contesto richiesta verranno eseguite query. Il `IWorkspace` istanza agisce come intermediario tra i consumer e provider tramite il <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> (metodo). I consumer potrebbe essere un contesto di richiesta ed eseguire un'azione a breve termine basata sul contesto, mentre altri potrebbero richiedere un contesto e mantenere un riferimento lunga.
 
 Potrebbero verificarsi modifiche ai file che causano un contesto di file a diventare obsoleto. Il provider può attivare un evento di `FileContext` per notificare i consumer degli aggiornamenti. Ad esempio, se viene fornito un contesto di compilazione per alcuni file, ma una modifica su disco invalida tale contesto, il producer originale può richiamare l'evento. Consumer ancora riferimento che `FileContext` può quindi rieseguire una query per un nuovo `FileContext`.
 

@@ -1,5 +1,5 @@
 ---
-title: Personalizzare le mappe codice modificando i file DGML
+title: Personalizzare le mappe del codice modificando i file DGML
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,13 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 903471fe5ab22613b39e8d6d0a921a687779ba46
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933893"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937942"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 

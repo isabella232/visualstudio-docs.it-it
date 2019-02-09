@@ -10,16 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 2d99fc575bffb6bf6af72be7e09b642cdf7f1b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040999"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935589"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connettere un Host a un processore di direttiva generato
 
@@ -67,7 +66,7 @@ In questa procedura dettagliata, è utilizzare la procedura guidata finestra di 
 
    -   Nome della società: Fabrikam
 
-   Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [come: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [come: Creare una soluzione per un linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Scegliere **Compila soluzione** dal menu **Compila**.
 

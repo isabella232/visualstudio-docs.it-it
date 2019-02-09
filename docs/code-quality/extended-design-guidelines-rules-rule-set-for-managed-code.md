@@ -1,7 +1,6 @@
 ---
 title: Set di regole Regole estese delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9aeddeed26542b32ed1517939b9f93e3ec7bdbb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017032"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918169"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 Il set di regole delle linee guida di progettazione estesa Microsoft consente di espandere le regole di progettazione di base delle linee guida per ottimizzare i problemi di usabilità e facilità di gestione che vengono segnalati. Extra attenzione è rivolta alle linee guida sulla denominazione. È consigliabile includere questa regola impostata se il progetto contiene codice di libreria o se si desidera applicare gli standard ottimali per la scrittura di codice che è facile da gestire.
