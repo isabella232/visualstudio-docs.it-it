@@ -1,7 +1,6 @@
 ---
 title: Annotazioni di struct e classi
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -25,12 +24,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d3a964020cf9b5c885e52a948ad1fc229d44db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e37d1ad27fab77e5aff1064ecc83e67ee7cc739d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948933"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935056"
 ---
 # <a name="annotating-structs-and-classes"></a>Annotazioni di struct e classi
 È possibile annotare i membri struct e di classe utilizzando le annotazioni che operano come invarianti, si presume che siano true per qualsiasi chiamata di funzione o entrata/uscita di funzione che include la struttura contenitore come parametro o valore restituito.

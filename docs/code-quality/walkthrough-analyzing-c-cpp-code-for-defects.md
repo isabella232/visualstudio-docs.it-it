@@ -1,7 +1,6 @@
 ---
-title: 'Procedura dettagliata: Analisi del codice C/C++ per i difetti'
+title: "Procedura dettagliata: Analisi del codice C/C++ per l'identificazione degli errori"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829511"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919677"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura dettagliata: Analisi del codice C/C++ per i difetti
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura dettagliata: Analisi del codice C/C++ per l'identificazione degli errori
 
 Questa procedura dettagliata illustra come analizzare il codice C/C++ per i potenziali difetti di codice usando lo strumento di analisi codice per il codice C/C++.
 

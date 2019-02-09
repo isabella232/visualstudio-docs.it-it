@@ -1,7 +1,6 @@
 ---
 title: Risoluzione dei problemi degli strumenti di qualità
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio ALM, developing the application
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fb0a08f82ff415e11903ccfc7bddc6516818a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cdef5a6d8ff725155fce84450b2d6494705de03a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017695"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938800"
 ---
 # <a name="troubleshooting-quality-tools"></a>Risoluzione dei problemi degli strumenti di qualità
 

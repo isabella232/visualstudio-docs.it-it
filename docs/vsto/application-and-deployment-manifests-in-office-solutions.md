@@ -1,7 +1,6 @@
 ---
 title: Manifesti dell'applicazione e distribuzione nelle soluzioni Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9deabada5a9e3d69c3d3a9a821abf7d6b8dcf56e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875615"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949564"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifesti dell'applicazione e distribuzione nelle soluzioni Office
   Un manifesto dell'applicazione è un file XML che fornisce informazioni usate da una soluzione Office per individuare e aggiornare i relativi assembly. Un manifesto dell'applicazione può essere usato con un manifesto di distribuzione, costituito da un file XML archiviato nel server, che fornisce le informazioni necessarie per individuare la versione più recente del manifesto dell'applicazione e degli assembly.

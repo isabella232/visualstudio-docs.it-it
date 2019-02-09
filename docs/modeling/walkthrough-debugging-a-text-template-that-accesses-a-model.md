@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004500"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938111"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: Debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono i modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile ricevere errori quando il motore di trasformazione del modello al codice sorgente oppure durante la compilazione del codice generato. La procedura riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
@@ -32,7 +31,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
 
 - Nome della società: Fabrikam
 
-  Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [come: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [come: Creare una soluzione per un linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Creazione di un modello di testo
  Aggiungere un modello di testo alla soluzione.

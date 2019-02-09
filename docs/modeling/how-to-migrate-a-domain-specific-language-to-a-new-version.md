@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c2ff1a820e5ac8492b627ac61ddfa234c71b5890
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbc7694ca7e2b000392aa18dcd45284560ed84ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932337"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924422"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti di definiscono e usano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che è stato distribuito con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
