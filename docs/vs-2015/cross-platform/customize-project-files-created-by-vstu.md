@@ -70,4 +70,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esempio: callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md).
+ [Esempio: callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md)

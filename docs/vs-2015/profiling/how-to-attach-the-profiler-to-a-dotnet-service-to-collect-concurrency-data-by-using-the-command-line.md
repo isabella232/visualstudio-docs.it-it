@@ -1,25 +1,20 @@
 ---
-title: 'Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Connettere il Profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b4f4d940f2bb65fe27c826e4ce06d1ead6626d37
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34db2b987f64329ead90ab6570fd98b78eb4934f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799686"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,6 +107,3 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 2.  Arrestare il profiler. Tipo:  
   
      **VSPerfCmd**  [Shutdown](../profiling/shutdown.md)
-
-
-

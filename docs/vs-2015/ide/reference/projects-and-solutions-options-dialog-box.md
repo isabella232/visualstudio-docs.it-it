@@ -59,7 +59,7 @@ Imposta il percorso predefinito delle cartelle di progetto [!INCLUDE[vsprvs](../
  Se si prova a creare un nuovo progetto o ad aprire un progetto esistente in una posizione non completamente attendibile (ad esempio, in un percorso UNC o un percorso HTTP), verrà visualizzato un messaggio. Usare questa opzione per specificare se il messaggio viene visualizzato ogni volta che si prova a creare o ad aprire un progetto in una posizione non completamente attendibile.  
   
  **Mostra finestra di output a inizio compilazione**  
- Consente di visualizzare automaticamente la finestra di Output nell'IDE all'inizio delle compilazioni della soluzione. Per altre informazioni, vedere [Procedura: Controllare la finestra di output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) Questa opzione è attivata per impostazione predefinita.  
+ Consente di visualizzare automaticamente la finestra di Output nell'IDE all'inizio delle compilazioni della soluzione. Per altre informazioni, vedere [Procedura: Controllare la finestra di output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Questa opzione è attivata per impostazione predefinita.  
   
  **Richiedi ridenominazione simbolica quando vengono rinominati i file**  
  Se selezionata, viene visualizzata una finestra di messaggio che richiede se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve rinominare anche tutti i riferimenti nel progetto all'elemento di codice.  

@@ -35,7 +35,7 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
   
 3.  Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Questa è l'impostazione predefinita.  
   
-     oppure  
+     -oppure-  
   
      Per includere le funzioni brevi nella strumentazione, deselezionare **Escludi funzioni brevi da strumentazione**.  
   

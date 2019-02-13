@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54753246"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: Gestire il ritorno a capo automatico nell'editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire la modalità A capo automatico nell'editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   

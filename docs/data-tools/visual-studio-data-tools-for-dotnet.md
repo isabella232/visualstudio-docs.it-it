@@ -5,17 +5,17 @@ ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a8cca5d3ff93612e17750caa303db386616a6573
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923480"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools per .NET
 
@@ -41,7 +41,7 @@ Il flusso di lavoro tipico è il seguente:
 
 5. Aggiungere codice personalizzato per elementi quali le regole di business, ricerca e la convalida dei dati o per sfruttare i vantaggi della funzionalità personalizzata che espone il database sottostante.
 
-È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per eseguire comandi direttamente a un database, anziché utilizzare un modello. In questo caso, è possibile trovare la relativa documentazione: [ADO.NET](/dotnet/framework/data/adonet/index). Si noti che è comunque possibile usare la **configurazione guidata origine dati** e finestre di progettazione per generare il codice di associazione dati quando si popola gli oggetti in memoria e controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.
+È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per eseguire comandi direttamente a un database, anziché utilizzare un modello. In questo caso, si noterà la relativa documentazione: [ADO.NET](/dotnet/framework/data/adonet/index). Si noti che è comunque possibile usare la **configurazione guidata origine dati** e finestre di progettazione per generare il codice di associazione dati quando si popola gli oggetti in memoria e controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -22,7 +22,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799108"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: Modificare i tipi di carattere e i colori dell'editor.
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: modificare i tipi di carattere e i colori utilizzati nell'editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -58,4 +58,4 @@ ms.locfileid: "54799108"
  [Customizing the Editor](../../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  
  [Text Editor Options Dialog Box](../../ide/reference/text-editor-options-dialog-box.md)  (Finestra di dialogo Opzioni editor di testo)  
  [Scrittura di codice](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

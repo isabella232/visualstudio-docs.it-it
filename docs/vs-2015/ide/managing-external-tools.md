@@ -1,14 +1,9 @@
 ---
 title: Gestione di strumenti esterni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
@@ -61,13 +56,13 @@ ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763323"
 ---
 # <a name="managing-external-tools"></a>Gestione di strumenti esterni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,14 +78,14 @@ ms.locfileid: "49244487"
   
 3.  Strumento di traccia ATL/MFC: mostra i messaggi di traccia di debug nelle origini ATL e MFC.  
   
-4.  PreEmptive Dotfuscator e Analytics: protegge programmi .NET da attacchi di reverse engineering.  
+4.  PreEmptive Dotfuscator e Analitica: Protegge programmi .NET da attacchi di reverse engineering.  
   
-5.  SPY++: mostra processi, thread, finestre e messaggi graficamente.  
+5.  SPY++ Consente di visualizzare graficamente i processi, thread, windows e i messaggi della finestra.  
   
-6.  Editor configurazione servizi WCF: consente di creare e modificare le impostazioni di configurazione dei servizi WCF.  
+6.  Editor configurazione servizio &WCF Consente di creare e modificare le impostazioni di configurazione per i servizi WCF.  
   
 > [!WARNING]
->  È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Aggiunta di nuovi strumenti  
  È possibile aggiungere uno strumento esterno al menu **Strumenti**. Aprire la finestra di dialogo **Strumenti esterni**, fare clic su **Aggiungi**, quindi inserire le informazioni. L'immissione seguente consente ad esempio di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:  
@@ -128,11 +123,3 @@ ms.locfileid: "49244487"
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti per la compilazione in C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
-
-
-
-
-
-
-
-

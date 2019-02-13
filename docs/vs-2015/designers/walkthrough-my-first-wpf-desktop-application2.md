@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54795945"
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Prima applicazione desktop WPF
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Applicazione desktop WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzione allo sviluppo di Windows Presentation Foundation (WPF). Si creerà un'applicazione di base che include gli elementi che sono comuni alla maggior parte delle applicazioni desktop WPF: Markup XAML, code-behind, definizioni delle applicazioni, controlli, layout, associazione dati e stili.  
@@ -642,17 +642,17 @@ name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzion
   
      Questo codice XAML aggiunge gli stili seguenti:  
   
-    -   `headerTextStyle`: : per formattare il titolo della pagina `Label`.  
+    -   `headerTextStyle`: per formattare il titolo della pagina `Label`.  
   
-    -   `labelStyle`: : per formattare i controlli `Label` .  
+    -   `labelStyle`: per formattare i controlli `Label` .  
   
-    -   `columnHeaderStyle`: : per formattare `DataGridColumnHeader`.  
+    -   `columnHeaderStyle`: per formattare `DataGridColumnHeader`.  
   
-    -   `listHeaderStyle`: : per formattare i controlli `Border` dell'intestazione dell'elenco.  
+    -   `listHeaderStyle`: per formattare i controlli `Border` dell'intestazione dell'elenco.  
   
-    -   `listHeaderTextStyle`: : per formattare **Label**dell'intestazione dell'elenco.  
+    -   `listHeaderTextStyle`: per formattare **Label**dell'intestazione dell'elenco.  
   
-    -   `buttonStyle`: : per formattare `Button` nella pagina **ExpenseItHome.xaml** .  
+    -   `buttonStyle`: per formattare `Button` nella pagina **ExpenseItHome.xaml** .  
   
 3.  Aprire **ExpenseItHome.xaml** e sostituire tutto il contenuto tra gli elementi `<Grid>` e `</Grid>` con il codice XAML seguente  
   
@@ -977,4 +977,4 @@ name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzion
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
- [Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md) (Creare moderne applicazioni desktop con Windows Presentation Foundation)
+ [Creare applicazioni desktop moderne con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

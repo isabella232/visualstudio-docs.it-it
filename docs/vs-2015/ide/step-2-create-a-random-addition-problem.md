@@ -1,25 +1,20 @@
 ---
-title: 'Passaggio 2: creare un problema di addizione casuale | Microsoft Docs'
-ms.custom: ''
+title: 'Passaggio 2: Creare un problema con addizione casuale | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 47429cb995dd7374276a9e2872d1b80ed452281a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804656"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: creare un problema di addizione casuale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,6 +100,3 @@ Problema con addizione casuale
 -   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 3: aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md).  
   
 -   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
-
-
-

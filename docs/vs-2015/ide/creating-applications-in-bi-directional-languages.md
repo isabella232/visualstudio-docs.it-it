@@ -1,14 +1,9 @@
 ---
 title: Creare applicazioni in lingue bidirezionali | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -17,13 +12,13 @@ ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763453"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creazione di applicazioni in lingue bidirezionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ ms.locfileid: "49248495"
 -   Codice e testo letterale. Nell'editor di codice (che è anche l'editor di testo) è possibile usare l'arabo o l'ebraico per assegnare nomi a classi, funzioni, variabili, proprietà, valori letterali stringa, attributi e così via. Tuttavia l'editor non supporta l'ordine di lettura da destra a sinistra: il testo inizia sempre sul margine sinistro.  
   
     > [!TIP]
-    >  È consigliabile inserire i valori letterali stringa nei file di risorse anziché specificarli a livello di codice nei programmi. Per altre informazioni, vedere [Procedura dettagliata: Localizzazione di Windows Form](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    >  È consigliabile inserire i valori letterali stringa nei file di risorse anziché specificarli a livello di codice nei programmi. Per altre informazioni, vedere [Procedura dettagliata: Localizzazione di Windows Form](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     >  È necessario mantenere la coerenza nei riferimenti a oggetti denominati in queste lingue. Se ad esempio si usano le linee kashida quando si assegna una variabile in arabo, è sempre necessario usare la notazione kashida nei riferimenti a tale variabile. In caso contrario si verificheranno degli errori.  
@@ -96,4 +91,3 @@ ms.locfileid: "49248495"
  [Supporto bidirezionale per applicazioni Web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Globalizzazione di applicazioni](../ide/globalizing-applications.md)   
  [Localizzazione di applicazioni](../ide/localizing-applications.md)
-

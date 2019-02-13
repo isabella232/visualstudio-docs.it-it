@@ -32,16 +32,16 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847928"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919941"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 
@@ -92,7 +92,7 @@ Dopo aver creato un client WCF, si fa riferimento il servizio nel codice esattam
 
 ## <a name="wcf-tools-in-visual-studio"></a>Strumenti WCF in Visual Studio
 
-Visual Studio offre strumenti che consentono di creare servizi WCF e i client WCF. Per una procedura dettagliata che illustra gli strumenti, vedere [procedura dettagliata: Creazione di un servizio WCF semplice in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+Visual Studio offre strumenti che consentono di creare servizi WCF e i client WCF. Per una procedura dettagliata che illustra gli strumenti, vedere [procedura dettagliata: Creazione di un servizio WCF semplice in Windows Forms
 
 ### <a name="create-and-test-wcf-services"></a>Creare e testare i servizi WCF
 
@@ -253,7 +253,7 @@ Per evitare questo problema, i tipi negli assembly di riferimento sono condivisi
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-| Titolo | Description |
+| Titolo | Descrizione |
 | - | - |
 | [Procedura dettagliata: Creazione di un servizio WCF semplice in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fornisce informazioni dettagliate sulla creazione e utilizzo dei servizi WCF in Visual Studio. |
 | [Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fornisce informazioni dettagliate sulla procedura creare e usare WCF Data Services in Visual Studio. |

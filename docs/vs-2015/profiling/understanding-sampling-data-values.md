@@ -53,5 +53,5 @@ Il metodo di profilatura di *campionamento* degli strumenti di profilatura di [!
  Percentuale del numero totale di campioni esclusivi nell'esecuzione della profilatura che sono campioni esclusivi della funzione o dell'intervallo di dati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)   
+ [How to: Choose Collection Methods](../profiling/how-to-choose-collection-methods.md)  (Procedura: Scegliere un metodo di raccolta)  
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

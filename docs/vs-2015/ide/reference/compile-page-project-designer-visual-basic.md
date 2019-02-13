@@ -1,14 +1,9 @@
 ---
 title: Pagina Compilazione, Creazione progetti (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778912"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +40,21 @@ Usare la pagina **Compilazione** in Creazione progetti per specificare le istruz
  Le impostazioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.  
   
 > [!NOTE]
->  Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Gli elenchi **Configurazione** e **Piattaforma** non vengono pertanto visualizzati. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+>  Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Gli elenchi **Configurazione** e **Piattaforma** non vengono pertanto visualizzati. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **Configurazione**  
- Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Eseguire il debug e il rilascio delle configurazione del progetto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) e [Procedura: creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).  
+ Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Debug e Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) e [come: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Piattaforma**  
- Specifica le impostazioni della piattaforma da visualizzare o modificare. È possibile specificare **Qualsiasi CPU** (impostazione predefinita), **x64** o **x86**. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica le impostazioni della piattaforma da visualizzare o modificare. È possibile specificare **Qualsiasi CPU** (impostazione predefinita), **x64** o **x86**. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
 ## <a name="compiler-configuration-options"></a>Opzioni di configurazione del compilatore  
  Le impostazioni seguenti consentono di impostare le opzioni di configurazione del compilatore.  
   
  **Percorso dell'output di compilazione**  
- Specifica il percorso dei file di output per la configurazione del progetto. Digitare il percorso dell'output di compilazione in questa casella oppure fare clic sul pulsante **Sfoglia** per selezionare un percorso. Si noti che il percorso è relativo. Se si immette un percorso assoluto, sarà salvato come relativo. Il percorso predefinito è bin\Debug\ o bin\Release\\. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica il percorso dei file di output per la configurazione del progetto. Digitare il percorso dell'output di compilazione in questa casella oppure fare clic sul pulsante **Sfoglia** per selezionare un percorso. Si noti che il percorso è relativo. Se si immette un percorso assoluto, sarà salvato come relativo. Il percorso predefinito è bin\Debug\ o bin\Release\\. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
- Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Scegliendo il comando **Compila** dal menu **Debug** (F5) la compilazione verrà inserita nel percorso di debug indipendentemente dal **Percorso output** specificato. Il comando **Compila** del menu **Compila** la inserisce invece nel percorso specificato. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Scegliendo il comando **Compila** dal menu **Debug** (F5) la compilazione verrà inserita nel percorso di debug indipendentemente dal **Percorso output** specificato. Il comando **Compila** del menu **Compila** la inserisce invece nel percorso specificato. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **Option Explicit**  
  Specifica se consentire la dichiarazione implicita delle variabili. Selezionare **On** per richiedere la dichiarazione esplicita delle variabili. In questo modo il compilatore segnala errori se le variabili non vengono dichiarate prima dell'uso. Selezionare **Off** per consentire la dichiarazione implicita delle variabili.  
@@ -175,11 +170,8 @@ Usare la pagina **Compilazione** in Creazione progetti per specificare le istruz
   Fare clic su questo pulsante per accedere alla finestra di dialogo **Impostazioni del compilatore avanzate**. Usare la finestra di dialogo **Impostazioni del compilatore avanzate** per specificare le proprietà avanzate di configurazione della compilazione per un progetto. Questa finestra di dialogo si applica esclusivamente ai progetti Visual Basic. Per altre informazioni, vedere [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire il debug e il rilascio delle configurazione del progetto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Gestione delle proprietà di compilazione](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Eseguire il debug e il rilascio delle configurazione del progetto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Gestione delle proprietà di compilazione](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)  (Compilatore da riga di comando di Visual Basic)  
  [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

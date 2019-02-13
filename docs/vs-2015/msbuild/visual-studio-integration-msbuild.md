@@ -1,14 +1,9 @@
 ---
 title: Integrazione di Visual Studio (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763310"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ Visual Studio ospita [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pe
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  A tale scopo, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono analizzate le condizioni negli elementi `PropertyGroup`, `ItemGroup`, `Import`, Property e Item.  
   
 ## <a name="additional-build-actions"></a>Operazioni di compilazione aggiuntive  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di modificare il nome del tipo di elemento di un file in un progetto mediante la proprietà **Azione di compilazione** della finestra [Proprietà file](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). I nomi dei tipi di elementi`Compile`, `EmbeddedResource`, `Content`e `None` sono sempre elencati in questo menu, insieme a tutti gli altri nomi di tipi di elementi già presenti nel progetto. Per accertarsi che tutti i nomi dei tipi di elementi personalizzati siano sempre disponibili in questo menu, è possibile aggiungerli a un tipo di elemento denominato `AvailableItemName`. Ad esempio, aggiungendo il codice riportato di seguito al file di progetto verrà aggiunto il tipo personalizzato `JScript` a questo menu per tutti i progetti che lo importano:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di modificare il nome del tipo di elemento di un file in un progetto mediante la proprietà **Azione di compilazione** della finestra [Proprietà file](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). I nomi dei tipi di elementi`Compile`, `EmbeddedResource`, `Content`e `None` sono sempre elencati in questo menu, insieme a tutti gli altri nomi di tipi di elementi già presenti nel progetto. Per accertarsi che tutti i nomi dei tipi di elementi personalizzati siano sempre disponibili in questo menu, è possibile aggiungerli a un tipo di elemento denominato `AvailableItemName`. Ad esempio, aggiungendo il codice riportato di seguito al file di progetto verrà aggiunto il tipo personalizzato `JScript` a questo menu per tutti i progetti che lo importano:  
   
 ```  
 <ItemGroup>  
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Attività Csc](../msbuild/csc-task.md)   
  [Attività Vbc](../msbuild/vbc-task.md)
-
-
-

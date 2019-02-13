@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227980"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231974"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Iniziare il debug di applicazioni multithreading (C#, Visual Basic, C++)
 Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Il completamento di questa esercitazione consentirà di familiarizzare con le funzionalità di Visual Studio per il debug di applicazioni multithreading.
@@ -36,7 +36,7 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
 
 - Usare la **posizione di Debug** sulla barra degli strumenti e i **thread** finestra, vedere [procedura dettagliata: Eseguire il debug di un'applicazione multithreading](../debugger/how-to-use-the-threads-window.md).
 
-- Per un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md). Per suggerimenti di debug generali applicabili a tipi di applicazioni più a thread multipli, leggere tale argomento sia presente uno.
+- Per un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [procedura dettagliata: Debug di un'applicazione parallela Per suggerimenti di debug generali applicabili a tipi di applicazioni più a thread multipli, leggere tale argomento sia presente uno.
   
 È necessario innanzitutto un progetto di applicazione a thread multipli. Vedere l'esempio seguente:  
   
@@ -106,39 +106,37 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     ```
   
 7.  Scegliere **Salva tutto** dal menu **File**.  
+
+8. (Solo Visual Basic) In Esplora soluzioni (riquadro a destra), fare clic sul nodo del progetto, scegliere **proprietà**. Sotto il **Application** scheda, modificare il **oggetto di avvio** a **semplice**.
   
 ## <a name="debug-the-multithreaded-app"></a>Il debug dell'app a thread multipli  
   
@@ -205,8 +205,8 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     Console.WriteLine()
     ```
 
-1. Fare clic sul margine a sinistra del `Thread.Sleep` o `this_thread::sleep_for` istruzione per inserire un nuovo punto di interruzione.  
+1. Fare clic sul margine a sinistra del `Thread.Sleep` o `std::this_thread::sleep_for` istruzione per inserire un nuovo punto di interruzione.  
   
     Nella barra di navigazione, un cerchio rosso indica che un punto di interruzione è impostato in questa posizione. 
   

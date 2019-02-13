@@ -1,24 +1,19 @@
 ---
-title: Guida introduttiva allo sviluppo basato su test con Esplora test | Microsoft Docs
-ms.custom: ''
+title: 'Avvio rapido: Sviluppo con Esplora Test basato su test | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797965"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -293,6 +288,3 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
      Tutti i test hanno ancora esito positivo.  
   
      ![Esplora unit test con tre test superati](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-
-
-

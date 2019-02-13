@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei rapporti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e85e765ed80b37c7c688f9c0f25e3b7e8782a42f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a532a4ddf877e49a6cf355d182d41ed723b2f5d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800329"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni report
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,6 +84,3 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
  [Procedura: Escludere o includere funzioni brevi nella strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)   
  [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md)
-
-
-
