@@ -1,7 +1,6 @@
 ---
 title: Panoramica del data binding WPF con LINQ to XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da32989ebabb4ef6507f45c652755514f4963ef6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984782"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923379"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 
@@ -36,7 +35,7 @@ In questa documentazione viene descritto il secondo scenario.
 
 L'associazione dati WPF consente a un elemento dell'interfaccia utente di associare una delle proprietà a un'origine dati. Un semplice esempio di questo comportamento è <xref:System.Windows.Controls.Label> il cui testo presenta il valore di una proprietà pubblica in un oggetto definito dall'utente. L'associazione dati WPF si basa sui componenti seguenti:
 
-|Componente|Description|
+|Componente|Descrizione|
 |---------------|-----------------|
 |Destinazione di associazione|Elemento dell'interfaccia utente da associare all'origine dati. Gli elementi visivi di WPF sono derivati dalla classe <xref:System.Windows.UIElement>.|
 |Proprietà di destinazione|*Proprietà di dipendenza* della destinazione di associazione che riflette il valore dell'origine del data binding. Le proprietà della dipendenza sono supportate direttamente dalla classe <xref:System.Windows.DependencyObject>, da cui deriva <xref:System.Windows.UIElement>.|
