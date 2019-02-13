@@ -1,7 +1,6 @@
 ---
 title: 'Passaggio 3: Aggiungere un timer per il conto alla rovescia'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d07265ec978b6bf444d1d98407ddace991c162df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935046"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940711"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.

@@ -2,19 +2,18 @@
 title: Debug di codice R
 description: Visual Studio offre un'esperienza di debug completa per R, inclusi punti di interruzione, collegamenti, stack di chiamate e ispezione delle variabili.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918368"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933951"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
@@ -54,7 +53,7 @@ Quando il debugger si arresta, viene arrestato anche il prompt del browser di am
 
 Il browser ambiente supporta un numero di comandi speciali:
 
-| Comando | Description |
+| Comando | Descrizione |
 | --- | --- |
 | n | next: esegue l'istruzione successiva nel file di codice (uguale a step over). |
 | s | step into: esegue l'istruzione successiva nel file di codice, passando all'ambito della funzione se l'istruzione successiva è una chiamata di funzione. |
