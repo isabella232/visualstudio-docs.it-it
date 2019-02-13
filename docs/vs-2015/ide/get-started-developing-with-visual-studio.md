@@ -1,33 +1,29 @@
 ---
 title: Introduzione allo sviluppo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
 caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b9e2f3bf3525977689bcc5bbf917722da76ea9e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 957e1d771723578b425e4eafbb2aa7c912b230e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805352"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introduzione allo sviluppo con Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il prodotto, queste pagine sono utili per iniziare a scrivere codice.
 
--   **[Creare App web](https://www.visualstudio.com/features/modern-web-tooling-vs):** Strumenti per creare e distribuire applicazioni web moderne.
+-   **[Creare app Web](https://www.visualstudio.com/features/modern-web-tooling-vs):** strumenti per creare e distribuire applicazioni Web moderne.
 
      [Do a tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://docs.asp.net/) (Esplorare i documenti) &#124;                                   [Watch a video](http://www.asp.net/vnext) (Guardare un video)
 
@@ -43,19 +39,19 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
      [Load a sample](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) (Caricare un esempio) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn707595.aspx) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/library/dn707591.aspx) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Series/ConnectOn-Demand/239) (Guardare un video)
 
--   **[Creare giochi con DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**  : Introduzione alla creazione di giochi (Universal Windows Platform) con DirectX.
+-   **[Creare giochi con DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**: introduzione alla creazione di giochi per la piattaforma UWP (Universal Windows Platform) con DirectX.
 
      [Load a sample](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) (Caricare un esempio) &#124;                     [Do a tutorial](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01) (Guardare un video)
 
--   **[Creare giochi con Unity](../cross-platform/visual-studio-tools-for-unity.md)**  : Introduzione alla creazione di giochi multipiattaforma con il framework Unity.
+-   **[Creare giochi con Unity](../cross-platform/visual-studio-tools-for-unity.md)**: introduzione alla creazione di giochi multipiattaforma con il framework Unity.
 
      [Load a sample](http://unity3d.com/learn/resources/downloads) (Caricare un esempio) &#124;                     [Do a tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) (Esplorare i documenti) &#124;     [Watch a video](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em) (Guardare un video)
 
--   **[Rendere Windows Universal App per piattaforme](https://dev.windows.com/windows-apps)**  : Introduzione alla creazione di App per la piattaforma Windows universale (XBox, PC, Tablet, Windows Phone, Surface Hub e Internet delle cose).
+-   **[Creare app per la piattaforma UWP](https://dev.windows.com/windows-apps)** : iniziare a creare app per la piattaforma UWP (Universal Windows Platform): Xbox, PC, tablet, Windows Phone, Surface Hub e Internet delle cose.
 
      [Load a sample](https://github.com/Microsoft/Windows-universal-samples) (Caricare un esempio) &#124;                     [Do a tutorial](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://dev.windows.com) (Esplorare i documenti) &#124;     [Watch a video](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10) (Guardare un video)
 
--   **[Creare applicazioni desktop](https://dev.windows.com/desktop)**  : Fare clic qui per iniziare a creare applicazioni desktop tradizionali eseguite in PC Windows.
+-   **[Creare applicazioni desktop](https://dev.windows.com/desktop)** : visitare questa pagina per iniziare a creare applicazioni desktop tradizionali eseguite in PC Windows.
 
      [Load a sample](https://github.com/microsoft/windows-classic-samples) (Caricare un esempio) &#124;                     [Do a tutorial](https://msdn.microsoft.com/library/dd492171.aspx) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://dev.windows.com/desktop) (Esplorare i documenti)
 
