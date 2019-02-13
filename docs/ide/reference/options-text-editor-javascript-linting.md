@@ -1,7 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Linting
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c62970ab6377ddaaf295007fd49ba8be7dd225
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74cd522da1d29ce7f9a58737fc44ecec0909ed1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026282"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934003"
 ---
 # <a name="options-text-editor-javascript-linting"></a>Opzioni, Editor di testo, JavaScript, Linting
 
@@ -31,7 +30,7 @@ Queste opzioni consentono di abilitare l'analisi statica del codice JavaScript e
 
 ### <a name="uielement-list"></a>Elenco UIElement
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
 |**Abilita ESLint**|Quando questa opzione è selezionata, l'editor del codice consente l'analisi statica del codice.|
 |**Esegui il lint di tutti i file inclusi nel progetto, anche se chiusi**|Quando questa opzione è selezionata, i file chiusi vengono analizzati, a meno che le informazioni di diagnostica non vengano generate solo per i file aperti.|
