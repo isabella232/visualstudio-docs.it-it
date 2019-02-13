@@ -3,14 +3,15 @@ title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 99ad6cfcda7bf271853aff5c095bbb0664b3b592
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 3bfc0b9f6d7ba65b2b2023d9641992a27aa11ed8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315829"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917000"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Presentazione di Visual Studio 2017 per Mac
 
@@ -102,6 +103,11 @@ I file con modifiche non sottoposte a commit presentano un'annotazione nelle rel
 ![File con modifiche non sottoposte a commit nel riquadro della soluzione](media/ide-tour-image23.png)
 
 Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](/visualstudio/mac/version-control).
+
+## <a name="related-video"></a>Video correlato
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
+
 
 ## <a name="see-also"></a>Vedere anche
 

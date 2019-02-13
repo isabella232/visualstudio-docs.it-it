@@ -15,13 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d1d5899211283301bde2944eb07b67b6d7b59a4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012625"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970556"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -39,7 +38,7 @@ Vengono forniti molti grafici incorporati. È possibile usare i grafici incorpor
 
 Nella tabella seguente sono riportati i grafici incorporati disponibili per l'analisi dei risultati dei test di carico.
 
-|Nome grafico|Description|
+|Nome grafico|Descrizione|
 |-|-|
 |Indicatori chiave|Contatori che descrivono gli aspetti di base delle prestazioni del test, ad esempio carico utente, velocità effettiva e tempo di risposta.|
 |Tempo di risposta per test|Dati relativi alla quantità di tempo richiesta per l'esecuzione dei test.|

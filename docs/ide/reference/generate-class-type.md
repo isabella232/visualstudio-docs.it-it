@@ -1,7 +1,6 @@
 ---
 title: Generare una classe o un tipo
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 167c4380f67a51d3e03f2e4241c0c384781ddb43
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483939"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953165"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -73,8 +72,8 @@ Questa generazione di codice si applica a:
 
    Selection | Descrizione
    --- | ---
-   Accedi a | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
-   Kind | Può essere impostato come *classe* o *struct*.
+   Accesso | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
+   Tipo | Può essere impostato come *classe* o *struct*.
    nome | Questo non può essere modificato e sarà il nome già digitato.
    Progetto | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
    Nome file | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
