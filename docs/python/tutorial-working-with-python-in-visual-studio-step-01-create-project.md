@@ -3,7 +3,6 @@ title: Esercitazione sull'uso di Python in Visual Studio, passaggio 1, creare un
 titleSuffix: ''
 description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231870"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155214"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: usare Python in Visual Studio
 
@@ -79,5 +78,3 @@ In questa esercitazione si inizia con un semplice progetto che contiene un singo
 - [Progetti Python in Visual Studio](managing-python-projects-in-visual-studio.md)
 - [Informazioni sul linguaggio Python in python.org](https://www.python.org)
 - [Python per utenti meno esperti](https://www.python.org/about/gettingstarted/) (python.org)
-- [Corsi gratuiti per Python in Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python Questions (Domande principali su Python) alla Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

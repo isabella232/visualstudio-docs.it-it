@@ -1,7 +1,6 @@
 ---
 title: Editor dei modelli
 ms.date: 04/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686d5a52b7cbf3a442d2ec330089331018a9716d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 13e19cb22740ff5b8dbd42b5cc5f769a211f6f04
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966033"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908829"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 
@@ -87,7 +86,7 @@ Di seguito viene riportata la barra degli strumenti della **modalità editor dei
 
 In questa tabella vengono descritti gli elementi disponibili nella barra degli strumenti della **modalità editor dei modelli** nell'ordine di visualizzazione da sinistra verso destra.
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
 |**Seleziona**|Consente di selezionare i punti, i bordi, le facce oppure gli oggetti nella scena, a seconda della modalità di selezione attiva.|
 |**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
@@ -115,7 +114,7 @@ Di seguito è illustrata la barra degli strumenti dell'**editor dei modelli**:
 
 Nella tabella seguente vengono descritti gli elementi disponibili nella barra degli strumenti dell'**editor dei modelli** nell'ordine di visualizzazione dall'alto verso il basso.
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
 |**Trasla**|Sposta la selezione.|
 |**Scala**|Modifica la dimensione della selezione.|
@@ -133,7 +132,7 @@ Per la scena 3D viene eseguito il rendering in base alla visualizzazione, che pu
 
 Nella tabella indicata di seguito vengono descritti i controlli di visualizzazione principali.
 
-|Controllo di visualizzazione|Description|
+|Controllo di visualizzazione|Descrizione|
 |------------------|-----------------|
 |**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
 |**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto **CTRL**.|
@@ -142,7 +141,7 @@ Nella tabella indicata di seguito vengono descritti i controlli di visualizzazio
 
 La visualizzazione viene determinata dalla fotocamera virtuale, ma è definita anche da una proiezione. La proiezione definisce la modalità di conversione in pixel di forme e oggetti nella visualizzazione nell'area di progettazione. Nella barra degli strumenti dell'**editor dei modelli** è possibile scegliere una proiezione di tipo **Prospettiva** oppure **Ortografico**.
 
-|Proiezione|Description|
+|Proiezione|Descrizione|
 |----------------|-----------------|
 |**Prospettiva**|Nella proiezione Prospettiva gli oggetti più lontani dal punto di vista appaiono di dimensioni inferiori e convergono in un punto a distanza.|
 |**Ortografico**|Nella proiezione Ortografico gli oggetti sembrano avere le stesse dimensioni, indipendentemente dalla distanza dal punto di vista. Non viene visualizzata alcuna convergenza. Se è abilitata la proiezione di tipo **Ortografico** non è possibile usare la modalità **Orbita** per posizionare arbitrariamente la visualizzazione.|
@@ -242,7 +241,7 @@ L'aspetto di un oggetto è determinato dall'interazione dell'illuminazione nella
 
 L'editor modello fornisce i materiali predefiniti indicati di seguito.
 
-|Materiale|Description|
+|Materiale|Descrizione|
 |--------------|-----------------|
 |**Non illuminato**|Esegue il rendering di una superficie senza illuminazione simulata.|
 |**Lambert**|Esegue il rendering di un'area con luce di ambiente simulata e illuminazione diffusa.|
@@ -252,7 +251,7 @@ A ognuno di questi materiali viene applicata una trama sulla superficie di un og
 
 Per modificare il modo in cui un determinato oggetto risponde alle differenti sorgenti di luce nella scena, è possibile modificare le proprietà di illuminazione del materiale indipendentemente dagli altri oggetti che lo utilizzano. In questa tabella vengono descritte le proprietà di illuminazione comuni.
 
-|Proprietà di illuminazione|Description|
+|Proprietà di illuminazione|Descrizione|
 | - |-----------------|
 |**Di ambiente**|Descrive in che modo la superficie è interessata da luce ambientale.|
 |**Diffusa**|Descrive in che modo la superficie è interessata da luce direzionale e puntiforme.|
@@ -335,7 +334,7 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Offre informazioni generali sugli strumenti disponibili in Visual Studio per usare gli asset grafici come trame, immagini, modelli 3D ed effetti shader.|
 |[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|

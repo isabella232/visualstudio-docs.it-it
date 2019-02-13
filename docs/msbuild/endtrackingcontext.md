@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60db5058f3a084a4d24f3b3a1d83e615a9071d8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f380b57b95cfc0601984794bf02ad4ed145bac5
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920254"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853339"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
-Consente di terminare il contesto di verifica corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT WINAPI EndTrackingContext();  
-```  
-  
-## <a name="return-value"></a>Valore restituito  
- **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di verifica è terminato.  
-  
-## <a name="requirements"></a>Requisiti  
- **Intestazione:** *FileTracker.h*  
-  
-## <a name="see-also"></a>Vedere anche  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+Consente di terminare il contesto di verifica corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT WINAPI EndTrackingContext();
+```
+
+## <a name="return-value"></a>Valore restituito
+**HRESULT** con il bit **SUCCEEDED** impostato se il contesto di verifica è terminato.
+
+## <a name="requirements"></a>Requisiti
+**Intestazione:** *FileTracker.h*
+
+## <a name="see-also"></a>Vedere anche
+[StartTrackingContext](../msbuild/starttrackingcontext.md)

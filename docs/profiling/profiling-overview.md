@@ -8,20 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0531d016b2ddcc90348dcbfd2ef80525ac400e5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039813"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155630"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Panoramica degli strumenti per la misurazione delle prestazioni in Visual Studio
 
 Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizzo della memoria e della CPU e altri problemi a livello di applicazione. Con questi strumenti è possibile accumulare i dati, ad esempio i valori delle variabili, le chiamate di funzione e gli eventi relativi a un periodo di tempo, ad esempio, il tempo di esecuzione dell'applicazione. È possibile visualizzare lo stato dell'applicazione in momenti diversi durante l'esecuzione del codice o eseguire un'analisi finale delle prestazioni dell'applicazione.
-
-| | |
-|---------|---------|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sull'uso degli strumenti di diagnostica che illustra come analizzare l'utilizzo della CPU e l'utilizzo della memoria. |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

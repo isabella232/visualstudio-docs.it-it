@@ -11,13 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1edf37a6c6c22591f0a4f857e9ff38a701b8ddff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919916"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929232"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per test controller e agenti di test
 
@@ -29,7 +28,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 -   Test controller: *QTController.exe.config*
 
-    |Nome della chiave|Description|Value|
+    |Nome della chiave|Descrizione|Value|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Numero di secondi di attesa per la richiesta di ping dell'agente prima che la connessione venga considerata persa.|"n" secondi.|
     |AgentSyncTimeoutInSeconds|Quando si avvia l'esecuzione di un test di sincronizzazione, il numero di secondi di attesa per la sincronizzazione di tutti gli agenti prima di interrompere l'esecuzione.|"n" secondi.|
@@ -38,7 +37,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 -   Agente di test: *QTAgentService.exe.config*
 
-    |Nome della chiave|Description|Valore|
+    |Nome della chiave|Descrizione|Value|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Numero di secondi tra tentativi di connessione al controller.|"n" secondi. Valore predefinito: "30" (trenta secondi).|
     |RemotingTimeoutSeconds|Tempo massimo che una chiamata remota può durare in secondi.|"n" secondi. Valore predefinito: "600" (dieci minuti).|

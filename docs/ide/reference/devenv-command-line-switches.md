@@ -1,7 +1,6 @@
 ---
 title: Opzioni della riga di comando devenv
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bc159ffb4fe330f52cf8364fc9f0d07b4bc5979
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016200"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908465"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -63,7 +62,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili alle regole per altre 
 
 Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed eseguire l'attività descritta.
 
-|Switch della riga di comando|Description|
+|Switch della riga di comando|Descrizione|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Avvia l'IDE ed esegue il comando specificato.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Carica un eseguibile C++ sotto il controllo del debugger. Questa opzione non è disponibile per gli eseguibili Visual Basic o C#. Per altre informazioni, vedere [Automatically start a process in the debugger](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger) (Avviare automaticamente un processo nel debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -79,7 +78,7 @@ Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed es
 
 Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 
-|Switch della riga di comando|Description|
+|Switch della riga di comando|Descrizione|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Visualizza la Guida per le opzioni `devenv` nella **finestra del prompt dei comandi**.<br /><br /> Questa opzione non accetta argomenti.|
 |[/Build](build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> `devenv mysln.sln /build`|

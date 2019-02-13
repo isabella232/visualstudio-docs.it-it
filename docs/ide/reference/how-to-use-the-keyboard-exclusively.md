@@ -2,7 +2,6 @@
 title: 'Procedura: Usare esclusivamente la tastiera'
 description: Informazioni su come usare le combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio.
 ms.date: 08/22/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9f82d9b19d1a256a9fb3e8fa8671025ee267ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981493"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921419"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: Usare esclusivamente la tastiera
 

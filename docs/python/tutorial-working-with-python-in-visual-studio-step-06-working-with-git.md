@@ -3,7 +3,6 @@ title: Esercitazione sull'uso di Python in Visual Studio, passaggio 6, usare Git
 titleSuffix: ''
 description: Passaggio 6 di un'esercitazione di base per l'uso di Python in Visual Studio, dedicato alle funzionalità di Visual Studio correlate a Git.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d7d792300a55c1ad7dee0b25f523f5574c6bca8
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 386821867b1f7290fd195322a699eb161536a06b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231743"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919859"
 ---
 # <a name="step-6-work-with-git"></a>Passaggio 6: usare Git
 

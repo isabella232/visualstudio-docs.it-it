@@ -1,7 +1,6 @@
 ---
 title: Override di Gestione contenuto della Guida
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961426"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918546"
 ---
 # <a name="help-content-manager-overrides"></a>Override di Gestione contenuto della Guida
 
@@ -32,11 +31,11 @@ ms.locfileid: "54961426"
 
 ### <a name="registry-key-values"></a>Valori delle chiavi del Registro di sistema
 
-|Valore della chiave del Registro di sistema|Tipo|Dati|Description|
+|Valore della chiave del Registro di sistema|Tipo|Dati|Descrizione|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|stringa|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint di servizio univoco|
+|NewContentAndUpdateService|string|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint di servizio univoco|
 |UseOnlineHelp|dword|`0` per specificare la Guida locale, `1` per specificare la Guida online|Impostare la Guida online o offline come predefinita|
-|OnlineBaseUrl|stringa|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint F1 univoco|
+|OnlineBaseUrl|string|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint F1 univoco|
 |OnlineHelpPreferenceDisabled|dword|`0` per abilitare o `1` per disabilitare l'opzione di preferenza della Guida online|Disabilitare l'opzione di preferenza della Guida online|
 |DisableManageContent|dword|`0` per abilitare o `1` per disabilitare la scheda **Gestisci contenuto** in Help Viewer|Disabilitare la scheda **Gestisci contenuto**|
 |DisableFirstRunHelpSelection|dword|`0` per abilitare o `1` per disabilitare le funzionalità della Guida configurate al primo avvio di Visual Studio|Disabilitare l'installazione del contenuto al primo avvio di Visual Studio|
@@ -57,7 +56,7 @@ ms.locfileid: "54961426"
 
 È possibile controllare i due comportamenti seguenti impostando i valori di chiavi del Registro di sistema nell'Editor del Registro di sistema.
 
-|Attività|Chiave del Registro di sistema|Value|Dati|
+|Attività|Chiave del Registro di sistema|Valore|Dati|
 |----------|-----|------|----|
 |Eseguire l'override della priorità del processo BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (in un computer a 64 bit)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** o **low**|
 |Puntare all'archivio del contenuto locale nella condivisione di rete|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|

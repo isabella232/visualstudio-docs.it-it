@@ -2,7 +2,6 @@
 title: Installare il supporto Python
 description: Procedura relativa all'installazione di Python Tools for Visual Studio (PTVS) in Visual Studio 2017, 2015, 2013, 2012 e 2010, inclusi le opzioni e i percorsi di installazione.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31fc5a4ffd9f6c973597e59bac6c89823b30d80b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991177"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155487"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Come installare il supporto di Python in Visual Studio in Windows
 
@@ -57,7 +56,7 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
     ![Opzioni di sviluppo Python nel programma di installazione di Visual Studio](media/installation-python-options.png)
 
-    | Opzione | Description |
+    | Opzione | Descrizione |
     | --- | --- |
     | Distribuzioni di Python | Scegliere qualsiasi combinazione delle varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di installazione di Visual Studio in qualsiasi momento per aggiungere o rimuovere le distribuzioni.  **Nota**: se è stata installata una distribuzione al di fuori del programma di installazione di Visual Studio, non occorre selezionare l'opzione equivalente qui. Visual Studio rileva automaticamente le installazioni esistenti di Python. Vedere [Finestra Ambienti Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Inoltre, se è disponibile una versione di Python più recente rispetto a quella indicata nel programma di installazione, è possibile installare tale versione separatamente e Visual Studio la rileverà. |
     | **Supporto modello Cookiecutter** | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Usare l'estensione Cookiecutter](using-python-cookiecutter-templates.md). |
@@ -69,10 +68,6 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 1. Al termine dell'operazione, il programma di installazione specifica le opzioni per modificare, avviare, ripristinare o disinstallare Visual Studio. Il pulsante **Modifica** diventa **Aggiorna** quando sono disponibili aggiornamenti di Visual Studio per i componenti installati. L'opzione **Modifica** diventa disponibile nel menu a discesa. È anche possibile avviare Visual Studio e il programma di installazione dal menu **Start** di Windows eseguendo una ricerca su "Visual Studio".
 
     ![Avvio, modifica, modifica o disinstallazione di Visual Studio dal programma di installazione](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sull'installazione del supporto Python in Visual Studio.|
 
 ### <a name="troubleshooting"></a>Risoluzione dei problemi
 

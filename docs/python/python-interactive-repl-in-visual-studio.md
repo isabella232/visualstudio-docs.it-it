@@ -1,8 +1,7 @@
 ---
 title: Finestra interattiva di Python (REPL)
 description: Usare la finestra interattiva (REPL) per lo sviluppo rapido di codice Python in Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992386"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155656"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -26,7 +25,7 @@ In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per
 
 In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
-| REPL | Description | Modifica | Debug | Immagini |
+| REPL | Descrizione | Modifica | Debug | Immagini |
 | --- | --- | --- | --- | --- |
 | Standard | REPL predefinito, comunica direttamente con Python | Modifica standard (su più righe e così via). | Sì, tramite `$attach` | No |
 | Debug | REPL predefinito, comunica con il processo Python di cui è in corso il debug | Modifica standard | Solo debug | No |
@@ -36,10 +35,6 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Usare la finestra REPL in modalità IPython](interactive-repl-ipython.md).
 
 Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione, passaggio 3: usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
-
-|   |   |
-|---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) sulla finestra **interattiva** (2 min e 22 sec).|
 
 ## <a name="open-an-interactive-window"></a>Aprire una finestra interattiva
 
@@ -78,7 +73,7 @@ L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per cr
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
-| Metacomando | Description |
+| Metacomando | Descrizione |
 | --- | --- |
 | `$$` | Inserisce un commento ed è quindi utile per aggiungere commenti al codice durante la sessione. |
 | `$attach` | Collega il debugger di Visual Studio al processo della finestra REPL per abilitare il debug. |

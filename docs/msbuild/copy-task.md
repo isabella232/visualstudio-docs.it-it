@@ -21,95 +21,95 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec29eae7b2989af0ce7c4629ac708553de99e3df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995622"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853547"
 ---
 # <a name="copy-task"></a>Copy (attività)
-Copia i file in un nuovo percorso del file system.  
-  
-## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .  
-  
-|Parametro|Description|  
-|---------------|-----------------|  
-|`CopiedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi copiati correttamente.|  
-|`DestinationFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|  
-|`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica la directory in cui si vogliono copiare i file. Deve trattarsi di una directory, non di un file. Se la directory non esiste, viene creata automaticamente.|  
-|`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Sovrascrivi file anche se sono contrassegnati come file di sola lettura|  
-|`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** la ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|  
-|`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo tra eventuali nuovi tentativi necessari. Imposta come valore predefinito l'argomento RetryDelayMillisecondsDefault, che viene passato al costruttore CopyTask.|  
-|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. <br /><br /> **Nota:**  se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|  
-|`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|  
-|`UseHardlinksIfPossible`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono creati dei collegamenti reali per i file copiati invece di copiare i file.|  
-  
-## <a name="warnings"></a>Avvisi  
- Gli avvisi vengono registrati, inclusi:  
-  
--   `Copy.DestinationIsDirectory`  
-  
--   `Copy.SourceIsDirectory`  
-  
--   `Copy.SourceFileNotFound`  
-  
--   `Copy.CreatesDirectory`  
-  
--   `Copy.HardLinkComment`  
-  
--   `Copy.RetryingAsFileCopy`  
-  
--   `Copy.FileComment`  
-  
--   `Copy.RemovingReadOnlyAttribute`  
-  
-## <a name="remarks"></a>Note  
- È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.  
-  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MySourceFiles Include="a.cs;b.cs;c.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="CopyFiles">  
-        <Copy  
-            SourceFiles="@(MySourceFiles)"  
-            DestinationFolder="c:\MyProject\Destination"  
-        />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree*, mantenendo al tempo stesso la struttura di directory.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MySourceFiles Include="c:\MySourceTree\**\*.*"/>  
-    </ItemGroup>  
-  
-    <Target Name="CopyFiles">  
-        <Copy  
-            SourceFiles="@(MySourceFiles)"  
-            DestinationFiles="@(MySourceFiles->'c:\MyDestinationTree\%(RecursiveDir)%(Filename)%(Extension)')"  
-        />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+Copia i file in un nuovo percorso del file system.
+
+## <a name="parameters"></a>Parametri
+Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .
+
+|Parametro|Descrizione|
+|---------------|-----------------|
+|`CopiedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi copiati correttamente.|
+|`DestinationFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|
+|`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica la directory in cui si vogliono copiare i file. Deve trattarsi di una directory, non di un file. Se la directory non esiste, viene creata automaticamente.|
+|`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Sovrascrivi file anche se sono contrassegnati come file di sola lettura|
+|`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** la ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|
+|`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo tra eventuali nuovi tentativi necessari. Imposta come valore predefinito l'argomento RetryDelayMillisecondsDefault, che viene passato al costruttore CopyTask.|
+|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. <br /><br /> **Nota:**  se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|
+|`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|
+|`UseHardlinksIfPossible`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono creati dei collegamenti reali per i file copiati invece di copiare i file.|
+
+## <a name="warnings"></a>Avvisi
+Gli avvisi vengono registrati, inclusi:
+
+- `Copy.DestinationIsDirectory`
+
+- `Copy.SourceIsDirectory`
+
+- `Copy.SourceFileNotFound`
+
+- `Copy.CreatesDirectory`
+
+- `Copy.HardLinkComment`
+
+- `Copy.RetryingAsFileCopy`
+
+- `Copy.FileComment`
+
+- `Copy.RemovingReadOnlyAttribute`
+
+## <a name="remarks"></a>Note
+È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.
+
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Esempio
+Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MySourceFiles Include="a.cs;b.cs;c.cs"/>
+    </ItemGroup>
+
+    <Target Name="CopyFiles">
+        <Copy
+            SourceFiles="@(MySourceFiles)"
+            DestinationFolder="c:\MyProject\Destination"
+        />
+    </Target>
+
+</Project>
+```
+
+## <a name="example"></a>Esempio
+Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree*, mantenendo al tempo stesso la struttura di directory.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MySourceFiles Include="c:\MySourceTree\**\*.*"/>
+    </ItemGroup>
+
+    <Target Name="CopyFiles">
+        <Copy
+            SourceFiles="@(MySourceFiles)"
+            DestinationFiles="@(MySourceFiles->'c:\MyDestinationTree\%(RecursiveDir)%(Filename)%(Extension)')"
+        />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Vedere anche
+[Attività](../msbuild/msbuild-tasks.md)  
+[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

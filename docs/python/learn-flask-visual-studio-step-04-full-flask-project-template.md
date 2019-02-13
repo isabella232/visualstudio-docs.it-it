@@ -3,7 +3,6 @@ title: Informazioni sull'esercitazione Flask in Visual Studio, passaggio 4, mode
 titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità offerte dai modelli Progetto Web Flask e Progetto Web Flask/Jade.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927515"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908920"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 

@@ -2,7 +2,6 @@
 title: Debug del codice Python
 description: Visual Studio offre funzionalità di debug avanzate per il codice Python, tra cui l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'analisi delle eccezioni e il debug nella finestra interattiva.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036069"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155877"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -27,10 +26,6 @@ Vedere anche gli articoli seguenti sul debug nei vari scenari:
 - [Debug remoto di Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Debug in modalità mista di Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Simboli per il debug in modalità mista](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) per una dimostrazione del debug di Python (3m 32s).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -71,7 +66,7 @@ Quando si impostano le condizioni, è anche possibile impostare un'**azione** e 
 
 Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di interruzione, sono disponibili varie opzioni per eseguire il codice istruzione per istruzione oppure eseguire blocchi di codice prima di una nuova interruzione. Questi comandi sono disponibili in diverse posizioni, tra cui la barra degli strumenti di debug superiore, il menu **Debug**, il menu di scelta rapida nell'editor del codice e tramite i tasti di scelta rapida, tenendo presente però che non tutti i comandi sono accessibili da tutte le posizioni:
 
-| Funzionalità | Tasto o combinazione di tasti | Description |
+| Funzionalità | Tasto o combinazione di tasti | Descrizione |
 | --- | --- | --- |
 | **Continue** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
 | **Esegui istruzione** | **F11** | Esegue l'istruzione successiva e si arresta. Se l'istruzione successiva è una chiamata a una funzione, il debugger si arresta in corrispondenza della prima riga della funzione chiamata. |
@@ -137,7 +132,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="launch-mode-options"></a>Opzioni di Modalità di avvio
 
-| Opzione | Description |
+| Opzione | Descrizione |
 | --- | --- |
 | **Utilità di avvio Python standard** | Usa il codice di debug scritto in Python portabile che è compatibile con CPython, IronPython e varianti quali Stackless Python. Offre un'esperienza ottimale per il debug di codice Python puro. Si tratta dell'utilità di avvio usata quando ci si collega a un processo *python.exe* in esecuzione. Questa utilità di avvio include anche il [debug in modalità mista](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) per CPython, che consente di passare in modo trasparente dal codice C/C++ al codice Python e viceversa. |
 | **Utilità di avvio Web** | Esegue il browser predefinito all'avvio e consente di eseguire il debug di modelli. Per altre informazioni, vedere la sezione [Web template debugging](python-web-application-project-templates.md#debugging) (Debug di modelli Web). |
@@ -146,7 +141,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opzioni di esecuzione (percorsi di ricerca, argomenti di avvio e variabili di ambiente)
 
-| Opzione | Description |
+| Opzione | Descrizione |
 | --- | --- |
 | **Percorsi di ricerca** | Questi valori corrispondono a quanto visualizzato nel nodo **Percorsi di ricerca** del progetto in **Esplora soluzioni**. È possibile modificare qui questo valore, ma è più facile usare **Esplora soluzioni** che consente di sfogliare le cartelle e converte automaticamente i percorsi nel formato relativo. |
 | **Argomenti dello script** | Questi argomenti vengono aggiunti al comando usato per avviare lo script e vengono visualizzati dopo il nome del file di script. Il primo elemento definito qui risulta disponibile per lo script come `sys.argv[1]`, il secondo come `sys.argv[2]`e così via. |
@@ -166,7 +161,7 @@ La finestra **Debug interattivo Python** (**Debug** > **Finestre** > **Debug int
 
 La finestra **Debug interattivo** supporta speciali metacomandi in aggiunta ai [comandi REPL standard](python-interactive-repl-in-visual-studio.md#meta-commands):
 
-| Comando | Argomenti | Description |
+| Comando | Argomenti | Descrizione |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Avvia l'esecuzione del programma a partire dall'istruzione corrente. |
 | `$down`, `$d` | Sposta il frame corrente di un livello verso il basso nell'analisi dello stack. |

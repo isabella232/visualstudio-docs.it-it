@@ -2,7 +2,6 @@
 title: Misurare le prestazioni del codice Python
 description: Usare il profiler di Visual Studio per verificare le prestazioni del codice Python quando si usano interpreti basati su CPython.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d598ce08942ed159b7e03a282ccf9f378f89c889
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979543"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155136"
 ---
 # <a name="profile-python-code"></a>Profilare il codice Python
 
@@ -31,10 +30,6 @@ Per avviare la profilatura, si usa il comando di menu **Analizza** > **Avvia pro
 Quando si fa clic su **OK**, viene eseguito il profiler e si apre un report di prestazioni che illustra in che modo viene impiegato il tempo nell'applicazione:
 
 ![Report di prestazioni del profiler](media/profiling-results.png)
-
-|   |   |
-|---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) per una dimostrazione della profilatura di Python (3m 00s).|
 
 > [!Note]
 > Al momento, Visual Studio supporta solo questo livello di profilatura dell'applicazione completa, ma Microsoft sarà certamente lieta di ricevere commenti e suggerimenti sulle funzionalità future. Usare il [pulsante **Commenti sul prodotto**](#feedback) nella parte inferiore della pagina.

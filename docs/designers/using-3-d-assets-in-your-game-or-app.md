@@ -1,7 +1,6 @@
 ---
 title: Uso degli asset 3D nel gioco o nell'app
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a292e1bdd25a07029ab90d9f2ba5bbfc08bed2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942373"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908621"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usare asset 3D nel gioco o nell'app
 
@@ -89,7 +88,7 @@ Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i 
 
 Quando si usa lo strumento della pipeline di contenuti immagine per generare un asset trama, è possibile comprimere la trama in diversi modi, specificare se i livelli MIP devono essere generati in fase di compilazione e cambiare il nome del file di output.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converti in formato premoltiplicato per alfa|**Sì** per convertire l'immagine in formato premoltiplicato per alfa nel file di output, altrimenti **No**. Viene modificato solo il file di output, mentre l'immagine di origine resta invariata.|
@@ -100,7 +99,7 @@ Quando si usa lo strumento della pipeline di contenuti immagine per generare un 
 
 Quando si usa lo strumento della pipeline di contenuti mesh per generare un asset mesh, è possibile cambiare il nome del file di output.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
@@ -108,7 +107,7 @@ Quando si usa lo strumento della pipeline di contenuti mesh per generare un asse
 
 Quando si usa lo strumento della pipeline di contenuti shader per generare un asset shader, è possibile cambiare il nome del file di output.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
@@ -205,7 +204,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
 |[Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
