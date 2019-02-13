@@ -4,7 +4,6 @@ description: Informazioni dettagliate su come creare un'app console C# in Visual
 ms.custom: seodec18, get-started
 ms.date: 01/25/2019
 ms.technology: vs-ide-general
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f303b67365b5f824fe1ee114921ddc94c333922
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424525"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156072"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare un'app console C# semplice in Visual Studio
 
@@ -534,5 +533,4 @@ L'esercitazione è stata completata. Per altre informazioni, continuare con le e
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione video: C# Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169) (Concetti di base su C# per principianti)
 * [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)

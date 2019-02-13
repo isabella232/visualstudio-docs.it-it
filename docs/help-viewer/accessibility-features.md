@@ -1,7 +1,6 @@
 ---
 title: Accessibilità di Help Viewer
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility features [Help Viewer]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7aca674968251418242b57625fb9e0b8b3561e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 808b3902747198697aa6a1147bd1c04c85dd96a6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940804"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913701"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funzionalità di accessibilità di Help Viewer
 Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Questo argomento fornisce le informazioni sulle funzionalità, i prodotti e i servizi in grado di rendere Microsoft Help Viewer accessibile agli utenti con diverse abilità.

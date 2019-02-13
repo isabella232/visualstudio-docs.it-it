@@ -13,16 +13,15 @@ helpviewer_keywords:
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742521"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911871"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
@@ -1033,7 +1032,7 @@ public Customer(int age) { Age = age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli operatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli operatori quando sono a riga singola |
@@ -1095,7 +1094,7 @@ public T this[int i] { get { return _values[i]; } }
 
 La regola accetta valori dalla tabella seguente:
 
-| Valore | Descrizione |
+| Value | Descrizione |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le funzioni di accesso |
 | when_on_single_line | Preferisce membri con corpo di espressione per le funzioni di accesso quando sono a riga singola |
@@ -1433,7 +1432,7 @@ Nella tabella seguente sono riportati il nome della regola, i linguaggi applicab
 | Nome regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Visual Studio versione 2017 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# e Visual Basic | true | 15.3 |
-| dotnet_separate_import_directive_groups | C# e Visual Basic | true | 15.5 |
+| dotnet_separate_import_directive_groups | C# e Visual Basic | False | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -2009,7 +2008,7 @@ class C :I
 
 La regola accetta un solo valore della tabella seguente:
 
-| Value | Descrizione |
+| Valore | Descrizione |
 | ----- |:------------|
 | before_and_after | Inserire uno spazio prima e dopo l'operatore binario |
 | none | Rimuovere gli spazi prima e dopo l'operatore binario |

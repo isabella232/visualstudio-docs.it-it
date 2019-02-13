@@ -18,71 +18,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2bb63fefe98426d63a7dd682c8a66c1d9b594c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909999"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
-Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come figlio di un elemento `ItemGroup`.  
-  
- \<Project>  
- \<ItemGroup>  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<ItemGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemGroup>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
-  
-|Attributo|Description|  
-|---------------|-----------------|  
-|`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
-  
-### <a name="child-elements"></a>Elementi figlio  
-  
-|Elemento|Description|  
-|-------------|-----------------|  
-|[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-| Elemento | Description |
+Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come figlio di un elemento `ItemGroup`.
+
+\<Project>  
+\<ItemGroup>
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<ItemGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemGroup>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+
+|Attributo|Descrizione|
+|---------------|-----------------|
+|`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
+
+### <a name="child-elements"></a>Elementi figlio
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
+
+### <a name="parent-elements"></a>Elementi padre
+
+| Elemento | Descrizione |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 | [Destinazione](../msbuild/target-element-msbuild.md) | A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md). |
-  
-## <a name="example"></a>Esempio  
- L'esempio di codice seguente illustra le raccolte di elementi definite dall'utente `Res` e `CodeFiles` in un elemento `ItemGroup`. Ogni elemento nella raccolta di elementi `Res` contiene un elemento [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) figlio definito dall'utente.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Res Include = "Strings.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-        <Res Include = "Dialogs.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-  
-        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />  
-        <CodeFiles Include="..\..\Resources\Constants.cs" />  
-    </ItemGroup>  
-...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Elementi](../msbuild/msbuild-items.md)   
- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)
+
+## <a name="example"></a>Esempio
+L'esempio di codice seguente illustra le raccolte di elementi definite dall'utente `Res` e `CodeFiles` in un elemento `ItemGroup`. Ogni elemento nella raccolta di elementi `Res` contiene un elemento [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) figlio definito dall'utente.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Res Include = "Strings.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+        <Res Include = "Dialogs.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+
+        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />
+        <CodeFiles Include="..\..\Resources\Constants.cs" />
+    </ItemGroup>
+...
+</Project>
+```
+
+## <a name="see-also"></a>Vedere anche
+[Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)  
+[Elementi](../msbuild/msbuild-items.md)  
+[Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

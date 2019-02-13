@@ -1,7 +1,6 @@
 ---
 title: Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a67b683f92a7fc05f8c6c25cead9921959aa550
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b5363d71082128c13146c445fe312424be7e4340
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959356"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907361"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori
 Questo documento descrive le proprietà di tipi di carattere e colori per una finestra degli strumenti registrata per la visualizzazione in **Tipi di carattere e colori** nella categoria **Ambiente** della finestra di dialogo **Opzioni**. Supporta la natura dinamica dei gruppi di elementi colorabili, che possono cambiare se vengono installati o disinstallati pacchetti VSPackage.
@@ -35,7 +34,7 @@ Questo documento descrive le proprietà di tipi di carattere e colori per una fi
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|Nome degli elementi delle proprietà|Value|Description|
+|Nome degli elementi delle proprietà|Value|Descrizione|
 | - |-----------|-----------------|
 |FontFamily|Get/Set (String)|Il tipo di carattere da usare, ad esempio "Courier New".|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>) |Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo. |
