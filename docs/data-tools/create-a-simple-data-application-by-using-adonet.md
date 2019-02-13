@@ -9,15 +9,14 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 833f4fba621c41a51adca1368c784df313419f97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945515"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929401"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
@@ -60,7 +59,7 @@ Creare il database di esempio seguendo questa procedura:
 
 7. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
 
-     Dopo un breve periodo di tempo, termina l'esecuzione di query e vengono creati gli oggetti di database. Il database contiene due tabelle: Clienti e ordini. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere i dati quando si esegue l'applicazione che verrà creata. Il database contiene inoltre quattro stored procedure semplici.
+     Dopo un breve periodo di tempo, termina l'esecuzione di query e vengono creati gli oggetti di database. Il database contiene due tabelle: clienti e ordini. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere i dati quando si esegue l'applicazione che verrà creata. Il database contiene inoltre quattro stored procedure semplici.
 
 ## <a name="create-the-forms-and-add-controls"></a>Creare i form e aggiungere i controlli
 

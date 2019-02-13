@@ -7,16 +7,15 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 6c764887701e00d27123904c45e408101acb39df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930558"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
 
@@ -24,7 +23,7 @@ C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini d
 
 Per connettersi al database SQL, le applicazioni C++ native possono usare i driver ODBC e OLE DB e il provider ADO che sono inclusi in Windows. Questi possono connettersi a qualsiasi database che supporta tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornito per compatibilità con le versioni precedenti. Per altre informazioni su queste tecnologie di dati, vedere [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-Per sfruttare i vantaggi di funzionalità personalizzate in SQL Server 2005 e versioni successive, usare il [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client). Il client nativo contiene anche il driver ODBC di SQL Server e il provider OLE DB per SQL Server in una libreria di collegamento dinamico (DLL). Che supportano applicazioni che utilizzano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server. SQL Server Native Client viene installato con SQL Server Data Tools. La Guida di programmazione è qui: [Programmazione client nativo di SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
+Per sfruttare i vantaggi di funzionalità personalizzate in SQL Server 2005 e versioni successive, usare il [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client). Il client nativo contiene anche il driver ODBC di SQL Server e il provider OLE DB per SQL Server in una libreria di collegamento dinamico (DLL). Che supportano applicazioni che utilizzano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server. SQL Server Native Client viene installato con SQL Server Data Tools. La Guida di programmazione è qui: [SQL Server native client programming](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Per connettersi al database locale tramite ODBC e SQL Native Client da un'applicazione C++
 

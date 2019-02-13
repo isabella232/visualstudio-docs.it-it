@@ -13,15 +13,14 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 10cefc462fbc8ee2173ab0c79c315f2206234de5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e7762b50d486f50ed59f489ef45641908d61612
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946165"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933106"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
 
@@ -34,7 +33,7 @@ Per impostazione predefinita, `DBDirect` metodi vengono creati in un oggetto Tab
 > [!NOTE]
 > Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per il `DBDirect` metodi da creare. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati da una tabella che non dispone di una colonna chiave primaria definita, non genera `DBDirect` metodi.
 
-|Metodo DBDirect di TableAdapter|Description|
+|Metodo DBDirect di TableAdapter|Descrizione|
 | - |-----------------|
 |`TableAdapter.Insert`|Aggiunge nuovi record a un database e consente di passare i valori di singole colonne come parametri del metodo.|
 |`TableAdapter.Update`|Aggiorna i record in un database esistenti. Il `Update` metodo accetta i valori originale e della nuova colonna come parametri del metodo. I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare record in questione.<br /><br /> Il `TableAdapter.Update` metodo viene usato anche per risolvere le modifiche in un set di dati nel database eseguendo un' <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, o una matrice di <xref:System.Data.DataRow>s come parametri del metodo.|
