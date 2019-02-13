@@ -1,7 +1,6 @@
 ---
 title: Usare un ambiente lab per DevOps
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6bf618f8d7f93ca19e788fe8e6e9e1486548fa06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35bc798052bac30f76e76983d0a5dc0bdf4f1fa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000221"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956129"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -29,7 +28,7 @@ Un ambiente lab è una raccolta di computer virtuali e fisici che è possibile u
 
 Ecco alcuni esempi di topologie comuni di ambienti lab:
 
-| Topologia | Description |
+| Topologia | Descrizione |
 |---|---|
 |![Topologia solo server](../media/topology_backend.png)| Questo ambiente lab ha una *topologia server*, che è spesso usata per eseguire test manuali su applicazioni server e che consente ai tester di usare i propri computer client per verificare i bug nell'ambiente. In una topologia di back-end, l'ambiente lab contiene solo i server. Quando si usa questo tipo di topologia in genere si esegue la connessione ai server nell’ambiente lab usando un computer client che non fa parte dell’ambiente.|
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
@@ -115,7 +114,7 @@ Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzion
 
 Di seguito sono riportati alcuni concetti aggiuntivi che è necessario conoscere prima di continuare:
 
-|Termine|Description|
+|Termine|Descrizione|
 |-|-----------------|
 |Centro Lab|L'area di Microsoft Test Manager in cui creare e gestire ambienti lab.|
 |Lab del progetto Azure DevOps|La raccolta di ambienti lab che sono stati configurati in modo da connettersi a essi ed eseguire le macchine virtuali.|

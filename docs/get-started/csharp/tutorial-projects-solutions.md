@@ -1,7 +1,6 @@
 ---
 title: Progetti e soluzioni di esercitazione in C#
 ms.date: 12/12/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -12,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3cf4a4160ababa6164cbf0148c018554294aa75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 515cd501044b1b83f8adbd365e13336322c20f3f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424538"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931299"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Informazioni su progetti e soluzioni con C#
 

@@ -2,7 +2,6 @@
 title: Definire comandi di menu personalizzati per i progetti Python
 description: Modificando i file di progetto e delle destinazioni è possibile aggiungere comandi personalizzati al menu di scelta rapida del progetto Python in Visual Studio per richiamare programmi eseguibili, script, moduli, frammenti di codice inline e pip.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5ef751610510e6b167d2aa7975196d17cb1b72b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965562"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943090"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
@@ -132,7 +131,7 @@ Per fare riferimento alle proprietà o alle variabili di ambiente del progetto n
 
 ### <a name="target-attributes"></a>Attributi Target
 
-| Attributo | Obbligatorio | Description |
+| Attributo | Obbligatorio | Descrizione |
 | --- | --- | --- |
 | nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
 | Label | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
@@ -142,7 +141,7 @@ Per fare riferimento alle proprietà o alle variabili di ambiente del progetto n
 
 Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minuscole.
 
-| Attributo | Obbligatorio | Description |
+| Attributo | Obbligatorio | Descrizione |
 | --- | --- | --- |
 | TargetType | Sì | Specifica il contenuto dell'attributo Target e come viene usato insieme all'attributo Arguments:<ul><li>**executable**: esegue il file eseguibile specificato in Target, aggiungendo il valore indicato in Arguments, come se venisse immesso direttamente nella riga di comando. Il valore deve contenere solo un nome di programma senza argomenti.</li><li>**script**: esegue *python.exe* con il nome di file contenuto in Target, seguito dal valore indicato in Arguments.</li><li>**module**: esegue `python -m` seguito dal nome del modulo contenuto in Target e dal valore indicato in Arguments.</li><li>**code**: esegue il codice inline contenuto in Target. Il valore di Arguments viene ignorato.</li><li>**pip**: esegue `pip` con il comando contenuto in Target seguito da Arguments. Se ExecuteIn è impostato su "output", tuttavia, pip presuppone il comando `install` e usa Target come nome del pacchetto.</li></ul> |
 | destinazione | Sì | Nome del file, nome del modulo, codice o comando pip da usare, a seconda di TargetType. |

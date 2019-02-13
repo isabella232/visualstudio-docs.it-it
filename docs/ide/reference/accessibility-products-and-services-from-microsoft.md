@@ -2,7 +2,6 @@
 title: Prodotti e servizi Microsoft per l'accessibilità
 description: Informazioni sui prodotti e servizi Microsoft che rendono sistemi operativi, programmi e applicazioni più accessibili a tutti gli utenti, comprese le persone con disabilità.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -20,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb85431916a844724e7bfd4b69a6d269045db5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034557"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932092"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
 

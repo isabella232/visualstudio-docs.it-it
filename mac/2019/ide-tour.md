@@ -3,14 +3,15 @@ title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 54b3c3ac265f00ba0fb5a9d95e65ed3913eb5c9c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315839"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911780"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>Presentazione di Visual Studio 2019 per Mac Preview
 
@@ -107,6 +108,10 @@ Per altre informazioni sul controllo della versione in Visual Studio, vedere l'a
 
 - [Installare Visual Studio per Mac](installation.md)
 - [Esaminare i carichi di lavoro disponibili](/visualstudio/mac/workloads/)
+
+## <a name="related-video"></a>Video correlato
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
 ## <a name="see-also"></a>Vedere anche
 
