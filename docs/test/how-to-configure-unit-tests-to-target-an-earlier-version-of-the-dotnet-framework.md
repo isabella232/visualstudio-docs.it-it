@@ -1,19 +1,18 @@
 ---
 title: Unit test con la versione precedente di .NET Framework come destinazione
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 5ba499cb9d4e18740f2f3cef791766b1e3a33e38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0afa278bb7530905d4837ba06644731dcae52635
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950609"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916700"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: Configurare unit test che abbiano una versione precedente di .NET Framework come destinazione
 

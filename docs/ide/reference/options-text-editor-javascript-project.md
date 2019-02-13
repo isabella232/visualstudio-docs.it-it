@@ -1,7 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Progetto
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2fc32a173f1c05fc200c9acd9b37ad2307a3a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031812"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936746"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opzioni, Editor di testo, JavaScript, Progetto
 
@@ -61,7 +60,7 @@ Queste opzioni determinano il modo in cui l'editor gestisce i file TypeScript ch
 
 ### <a name="uielement-list"></a>Elenco UIElement
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
 |**Framework React**|Quando questa opzione è selezionata, l'editor del codice genera un file con estensione *js*.|
 |**Preserve**|Quando questa opzione è selezionata, l'editor del codice mantiene JSX come parte dell'output e genera un file con estensione *jsx*.|

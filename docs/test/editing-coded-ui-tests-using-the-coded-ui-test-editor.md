@@ -1,7 +1,6 @@
 ---
 title: Modifica di test codificati dell'interfaccia utente
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
@@ -12,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 260e2779618f4683756132ca15e708ffee87830a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918056"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956324"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -126,7 +125,7 @@ Dopo avere completato la suddivisione del metodo, salvare le modifiche nel file 
 
 - È possibile rinominare il nuovo metodo. Selezionarlo nel riquadro **Azioni** dell'interfaccia utente e scegliere il pulsante **Rinomina** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente.
 
-   -oppure-
+   oppure
 
    Aprire il menu di scelta rapida per il nuovo metodo di test e scegliere **Rinomina**.
 

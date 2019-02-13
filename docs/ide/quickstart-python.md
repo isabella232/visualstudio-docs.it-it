@@ -1,8 +1,7 @@
 ---
 title: "Guida introduttiva: usare Visual Studio per creare un'app Web Python"
 description: In questa guida introduttiva vengono usati Visual Studio e il framework Flask per compilare un'app Web semplice in Python.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -11,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fa182d504fba8a939d44684f1611debec448593
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690489"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987431"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 

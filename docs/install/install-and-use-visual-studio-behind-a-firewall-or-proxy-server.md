@@ -3,7 +3,6 @@ title: Installare e usare prodotti protetti da un firewall o un server proxy
 description: Verificare le URL di dominio, le porte e i protocolli da aggiungere in un elenco di elementi consentiti o aprire se l'organizzazione usa un firewall o un server proxy
 ms.date: 07/10/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b85e77cf8c1f9c3ac2b51539eec2af55b4ca858
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018111"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954647"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -82,7 +81,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere all'elenco degli elementi consentiti e le porte e i protocolli che è possibile aprire.
 
-| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Description |
+| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Descrizione |
 | - | - | - | - | - |
 | URL<br>risoluzione | go.microsoft.com<br><br>aka.ms | | | Usato per abbreviare gli URL, risolti quindi in URL più lunghi |
 | Pagina iniziale | vsstartpage.blob.core.windows.net | | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale in Visual Studio |

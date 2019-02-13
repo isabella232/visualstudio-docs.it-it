@@ -2,7 +2,6 @@
 title: Modelli di applicazione Web per Python
 description: Visual Studio offre modelli per applicazioni Web Python usando i framework Bottle, Flask e Django. Sono supportate le configurazioni di debug e la pubblicazione in Servizio app di Azure.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 214db7bcc2dca01917228598f2103a5bd90bbc37
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 81684f8069189f6ee3deed48d9f2a6718b01d7b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231714"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957900"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -40,7 +39,7 @@ Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e ri
 
 Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una quantità minima più o meno grande di codice boilerplate e le dipendenze necessarie dichiarate in un file *requirements.txt*.
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle vuoto** | Genera un'app minima in *app.py* con una home page per `/` e una pagina `/hello/<name>` che restituisce `<name>` usando un modello di pagina inline molto breve. |
 | **Progetto Web Django vuoto** | Genera un progetto Django con la struttura fondamentale del sito Django ma nessuna app Django. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 1 dell'esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
@@ -50,7 +49,7 @@ Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una q
 
 Tutti i modelli **Progetto Web \<framework>** creano un'app Web di base con una struttura identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle** | Genera un'app i cui file statici sono contenuti nella cartella *static* e gestiti tramite codice in *app.py*. Il routing per le singole pagine è specificato in *routes.py* e la cartella *views* contiene i modelli di pagina.|
 | **Progetto Web Django** | Genera un progetto Django e un'app Django con tre pagine, il supporto dell'autenticazione e un database SQLite (ma nessun modello dati). Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 4 dell'esercitazione su Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -61,7 +60,7 @@ Tutti i modelli **Progetto Web \<framework>** creano un'app Web di base con una 
 
 I modelli **Progetto Web \<framework> di sondaggi** creano un'app Web di base attraverso la quale gli utenti possono votare domande di sondaggi diversi. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle di sondaggi** | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli di dati e il codice dell'archivio dati sono contenuti nella cartella *models* e il file *settings.py* contiene codice per determinare l'archivio dati usato. |
 | **Progetto Web Django di sondaggi** | Genera un progetto Django e un'app Django con tre pagine e un database SQLite. Include le personalizzazioni per l'interfaccia amministrativa Django che consentono a un amministratore autenticato di creare e gestire i sondaggi. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 6 dell'esercitazione su Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |

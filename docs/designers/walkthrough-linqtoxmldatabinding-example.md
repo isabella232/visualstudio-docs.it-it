@@ -1,7 +1,6 @@
 ---
 title: 'Procedura dettagliata: esempio LinqToXmlDataBinding'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17323482bfd300dc226ae21354a3dd11bd0c1753
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011023"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931728"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Procedura dettagliata: esempio LinqToXmlDataBinding
 In questa procedura dettagliata viene descritto l'esempio LinqToXmlDataBinding e viene illustrata parte del contenuto più interessante dei due file di origine principali, ovvero *L2DBForm.xaml* e *L2DBForm.xaml.cs*.
@@ -41,7 +40,7 @@ In questa procedura dettagliata viene descritto l'esempio LinqToXmlDataBinding e
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Codice sorgente di L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)|Vengono forniti il contenuto e la descrizione del codice XAML del file L2DBForm.xaml.|
 |[Codice sorgente di L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Vengono forniti il contenuto e la descrizione del codice sorgente C# del file L2DBForm.xaml.cs.|

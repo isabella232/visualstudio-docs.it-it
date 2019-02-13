@@ -1,7 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C/C++, Avanzate
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
@@ -15,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e5b78f6642cf458e9099d421d7b4a20540ab8c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6136c9c1cd2bb169c08fc314dcd7cb327d143125
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903045"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933964"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 Modificando queste opzioni è possibile modificare il comportamento correlato a IntelliSense e il database di esplorazione quando si programma in C o C++.

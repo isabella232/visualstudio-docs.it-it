@@ -1,7 +1,6 @@
 ---
 title: Tasti di modifica della tavola da disegno in Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5723552a7716e7bfc846e209baa3a6f4001cf49b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb5d461045bd555b87b42c7de8e5c669952392d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930727"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
 Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] per individuarli. La tabella seguente elenca i tasti di scelta rapida che modificano un'azione, ad esempio il ridimensionamento di un oggetto.

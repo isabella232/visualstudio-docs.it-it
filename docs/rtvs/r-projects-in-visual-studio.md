@@ -2,19 +2,18 @@
 title: Progetti R
 description: Come creare una gestione di progetti di R in Visual Studio inclusi proprietà, comandi di progetto e modelli.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 66dc3cfcdd8cf815ba8f7744b36e0c04a750d49a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990576"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936187"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -38,7 +37,7 @@ Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente n
 
 Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto specifiche di R non altrimenti gestite da Visual Studio:
 
-| Proprietà | Impostazione predefinita | Description |
+| Proprietà | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Versione | 1.0 | La versione di R Tools per Visual Studio usata per creare il progetto. |
 | RestoreWorkspace | Impostazione predefinita | Carica automaticamente le variabili precedenti dell'area di lavoro dal file `.RData` nella directory del progetto. |
@@ -65,7 +64,7 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto)** . La finestra visualizzata riporta le proprietà del progetto:
 
 
-| Scheda | Proprietà | Description |
+| Scheda | Proprietà | Descrizione |
 | --- | --- | --- |
 | Esegui | File di avvio | Nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug** > **Avvia debug** oppure **Debug** > **Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. |
 | | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. |
@@ -78,7 +77,7 @@ Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante de
 
 I progetti di Visual Studio supportano diversi comandi generali sia tramite il menu di scelta rapida che tramite il menu **Progetto**. Per i dettagli su queste funzionalità generali, vedere [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Si ricorda però che per i progetti R, R Tools per Visual Studio (RTVS) aggiunge diversi comandi specifici al menu di scelta rapida nonché file e cartelle all'interno del progetto.
 
-| Comando | Description |
+| Comando | Descrizione |
 | --- | --- |
 | Imposta directory di lavoro qui | Imposta la directory di lavoro della finestra interattiva R sulla cartella del progetto, che può essere usata anche in qualsiasi sottocartella all'interno di un progetto. |
 | Apri cartella superiore | Apre Esplora risorse in corrispondenza del percorso del file selezionato. |
@@ -93,7 +92,7 @@ RTVS include diversi modelli per tipi di file specifici. È possibile accedere a
 > [!Note]
 > I comandi **Aggiungi** > **Nuovo elemento** visualizzano anche tipi di file generici non elencati nella tabella, mentre con **File** > **Nuovo** > **File**, tali tipi si trovano nella scheda **Generale**.
 
-| Tipo di file | Description |
+| Tipo di file | Descrizione |
 | --- | --- |
 | Script R | Un file di testo che contiene gli stessi comandi che è possibile immettere nella riga di comando R. |
 | R Markdown | File contenente un documento [R Markdown](rmarkdown-with-r-in-visual-studio.md). |

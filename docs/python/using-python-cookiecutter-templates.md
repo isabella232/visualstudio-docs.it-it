@@ -2,7 +2,6 @@
 title: Usare modelli CookieCutter con Python
 description: Visual Studio supporta l'estensione grafica Cookiecutter per individuare modelli per il codice Python e creare progetti da tali modelli.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231792"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957978"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
@@ -36,7 +35,7 @@ L'uso di Cookiecutter include la ricerca e la selezione di un modello, la clonaz
 
 Nella home page di Cookiecutter viene visualizzato un elenco di modelli tra cui scegliere, organizzati nei gruppi seguenti:
 
-| Gruppo | Description |
+| Gruppo | Descrizione |
 | --- | --- |
 | **Installato** | Modelli installati nel computer locale. Quando si usa un modello online, il repository corrispondente viene clonato automaticamente in una sottocartella di file *~/.cookiecutter*. È possibile eliminare un modello installato selezionato premendo **CANC**. |
 | **Consigliati** | Modelli caricati dal feed consigliato. Il feed predefinito è a cura di Microsoft. Vedere [Opzioni di Cookiecutter](#cookiecutter-options) di seguito per altri dettagli sulla personalizzazione del feed. |
@@ -80,7 +79,7 @@ Le opzioni di Cookiecutter sono disponibili tramite **Strumenti** > **Opzioni** 
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
-| Opzione | Description |
+| Opzione | Descrizione |
 | --- | --- |
 | **URL del feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Visualizza la Guida** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
@@ -96,10 +95,10 @@ Il rendering predefinito delle variabili di un modello dipende dal tipo di dati 
 
 È possibile migliorare il rendering specificando metadati aggiuntivi nel file *cookiecutter.json* specifico per Visual Studio (ignorato dall'interfaccia della riga di comando di Cookiecutter). Tutte le proprietà sono facoltative:
 
-| Proprietà | Description |
+| Proprietà | Descrizione |
 | --- | --- |
 | Label | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
-| Description | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
+| Descrizione | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
 | URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Facendo clic sul collegamento ipertestuale, il browser predefinito dell'utente verrà aperto su tale URL. |
 | Selector | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: casella di testo con un pulsante **...** che consente di visualizzare una finestra di dialogo per la connessione a un database.</li></ul> |
 

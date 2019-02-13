@@ -1,7 +1,6 @@
 ---
 title: 'Passaggio 6: Aggiungere un timer'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5b1a83c377b58bd42f03e3898243b3e956e31b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 10581b66a22946012bb6f1ac86423fd92ca534cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957810"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
