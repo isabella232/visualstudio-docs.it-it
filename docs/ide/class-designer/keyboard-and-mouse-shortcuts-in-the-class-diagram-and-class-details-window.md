@@ -1,7 +1,6 @@
 ---
 title: Scelte rapide da tastiera e mouse per Progettazione classi
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826734"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951930"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -29,7 +28,7 @@ ms.locfileid: "53826734"
 
 Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
-|Combinazione del mouse|Contesto|Description|
+|Combinazione del mouse|Contesto|Descrizione|
 | - |-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 |Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
@@ -57,7 +56,7 @@ Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli clas
 
 Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Chiave|Contesto|Description|
+|Chiave|Contesto|Descrizione|
 |---------|-------------|-----------------|
 |**Tasti di direzione**|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 |**Tasti di direzione**|Forme di primo livello|Consentono di spostare forme nel diagramma.|

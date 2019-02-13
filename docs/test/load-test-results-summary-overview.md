@@ -14,13 +14,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 38be19487e72dfab9af64837fb3723cb0bceb06e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952132"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928725"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
@@ -49,7 +48,7 @@ Il riepilogo del test di carico è suddiviso in sezioni. Le sezioni iniziali son
 
 Le ultime sezioni sono riportate alla fine del riepilogo e possono essere compresse per ridurre le dimensioni del riepilogo. Tali sezioni sono le seguenti:
 
-- Risultati del test
+- Risultati dei test
 
 - Risultati pagina
 

@@ -3,7 +3,6 @@ title: Esercitazione sull'uso di Python in Visual Studio, passaggio 5, installar
 titleSuffix: ''
 description: Passaggio 5 della procedura dettagliata di base sulle funzionalità di Visual Studio, che illustra le funzionalità di Visual Studio per la gestione dei pacchetti in un ambiente Python.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7df99346d30c4255aaf9c08648f185b732c3ae32
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231402"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934757"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Passaggio 5: installare pacchetti nell'ambiente Python
 

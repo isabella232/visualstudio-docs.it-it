@@ -9,15 +9,14 @@ ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfbc185a8bc0a340f41f7fae1b6075846bd9f46b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028656"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927711"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 Per cercare un record specifico in un set di dati, usare il `FindBy` metodo sull'oggetto DataTable, scrivere il proprio istruzione foreach per eseguire un ciclo in raccolta di righe della tabella oppure usare [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

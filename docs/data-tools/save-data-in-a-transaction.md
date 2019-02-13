@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Salvare i dati in una transazione'
+title: 'Procedura dettagliata: Salvare dati in una transazione'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b06e433c5c412ba97d0cd04c670a39cc4bb7ec8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc2626ba0efab60921ed721b9f06fec28c66f58b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946075"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932274"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare i dati in una transazione
+# <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
 
 Questa procedura dettagliata illustra come salvare i dati in una transazione usando il <xref:System.Transactions> dello spazio dei nomi. In questa procedura dettagliata, si creerà un'applicazione Windows Form. Si userà la configurazione guidata origine dati per creare un set di dati per le due tabelle nel database di esempio Northwind. Si aggiungeranno dati controlli associati a un modulo di Windows, e si modificherà il codice di BindingNavigator pulsante Salva aggiornare il database all'interno di un ambito di transazione.
 
@@ -75,7 +74,7 @@ Questo passaggio Usa la **configurazione guidata origine dati** per creare un'or
 
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         -oppure-
+         oppure
 
     -   Selezionare **Nuova connessione** per avviare la finestra di dialogo **Aggiungi/Modifica connessione** e creare una connessione al database Northwind.
 

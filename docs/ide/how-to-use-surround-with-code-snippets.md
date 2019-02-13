@@ -1,7 +1,6 @@
 ---
 title: Come usare frammenti di codice racchiusi | Microsoft Docs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac5cef701ddab84e30ad6e4eb85881da6f51b5e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032684"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952268"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: Usare frammenti di codice racchiusi
 

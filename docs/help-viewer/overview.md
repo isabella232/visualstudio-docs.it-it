@@ -1,7 +1,6 @@
 ---
 title: Documentazione della Guida offline
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_general
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac5b6fed30689a69fe90bc0972f8cb292f7691b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987661"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938998"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -54,7 +53,7 @@ Per installare Help Viewer, vedere [Installazione di Microsoft Help Viewer](../h
 
 ### <a name="navigation-tabs"></a>Schede di spostamento
 
-|Scheda|Description|
+|Scheda|Descrizione|
 |---|-----------|
 |Sommario|Visualizza il contenuto installato come una gerarchia (sommario). È possibile specificare criteri per filtrare i titoli visualizzati.|
 |Indice|Visualizza un elenco alfabetico di termini indicizzati. È possibile eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.|

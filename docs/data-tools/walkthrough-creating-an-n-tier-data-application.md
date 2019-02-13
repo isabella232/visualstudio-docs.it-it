@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creazione di un'applicazione dati a più livelli"
+title: "Procedura dettagliata: creazione di un'applicazione dati a più livelli"
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,14 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993165"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933015"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: Creare un'applicazione dati a più livelli
 Le applicazioni dati *a più livelli* sono applicazioni con accesso ai dati e sono separate in più *livelli logici*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
@@ -105,7 +104,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
  Il passaggio successivo consiste nella creazione di un dataset tipizzato. I dataset tipizzati sono creati con la classe dataset (incluso `DataTables` classi) e il `TableAdapter` classi in un singolo progetto. Tutte le classi vengono generate in un unico file. Quando si separa il set di dati e TableAdapter in progetti diversi, è la classe di set di dati che viene spostata in altro progetto, lasciando il `TableAdapter` classi nel progetto originale. Pertanto, è possibile creare il set di dati nel progetto che alla fine conterrà gli oggetti TableAdapter (il progetto DataAccessTier). Creare il set di dati usando il **configurazione guidata origine dati**.
 
 > [!NOTE]
-> Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+> Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Per creare il dataset
 
@@ -123,7 +122,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
      Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-     oppure
+     -oppure-
 
      Selezionare **nuova connessione** per aprire il **Aggiungi connessione** nella finestra di dialogo.
 
@@ -155,7 +154,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 5. Scegliere **Compila soluzione** dal menu **Compila**.
 
-   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (`DataEntityTier`) contiene il set di dati tipizzato: *NorthwindDataSet* (o *NorthwindDataSet.Dataset.Designer.cs*).
+   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (`DataEntityTier`) contiene il set di dati tipizzato: *NorthwindDataSet* (o  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.

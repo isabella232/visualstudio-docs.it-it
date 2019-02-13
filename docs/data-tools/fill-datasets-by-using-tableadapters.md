@@ -17,15 +17,14 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b069e1ed40c4bd110cba87886ea21ea90a96774b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006164"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937994"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
@@ -36,7 +35,7 @@ Un componente di TableAdapter inserisce un set di dati con i dati dal database, 
 
 Per informazioni dettagliate sulle operazioni del TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Come usare le finestre di progettazione per creare e configurare oggetti TableAdapter|
 |[Creare query TableAdapter con parametri](../data-tools/create-parameterized-tableadapter-queries.md)|Come consentire agli utenti di fornire argomenti all'oggetto TableAdapter procedure o query|
@@ -90,7 +89,7 @@ La classe TableAdapter non è in parte il [!INCLUDE[dnprdnshort](../code-quality
 
 Di seguito sono i metodi comunemente utilizzati e le proprietà degli oggetti TableAdapter:
 
-|Member|Description|
+|Member|Descrizione|
 |------------|-----------------|
 |`TableAdapter.Fill`|Popola tabella dati associata dell'oggetto TableAdapter con i risultati dell'oggetto TableAdapter `SELECT` comando.|
 |`TableAdapter.Update`|Invia le modifiche nel database e restituisce un intero che rappresenta il numero di righe interessate dall'aggiornamento. Per altre informazioni, vedere [aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -127,7 +126,7 @@ La classe di TableAdapterManager non è in parte il [!INCLUDE[dnprdnshort](../co
 
 Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterManager` classe:
 
-|Member|Description|
+|Member|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|
 |Proprietà`BackUpDataSetBeforeUpdate` |Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
