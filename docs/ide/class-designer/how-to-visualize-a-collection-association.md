@@ -1,7 +1,6 @@
 ---
 title: "Procedura: Visualizzare un'associazione di raccolte (Progettazione classi)"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925394"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910949"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procedura: Visualizzare un'associazione di raccolte in Progettazione classi
 

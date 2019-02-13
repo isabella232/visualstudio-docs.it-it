@@ -1,7 +1,6 @@
 ---
 title: Servizi e prodotti per l'accessibilità (Blend)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a4f50e710073c0dfe230f34d188056c20eaaab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d9a442c976538ae47a3ea95795ebb82ca2cbb5f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922990"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920431"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Servizi e prodotti per l'accessibilità (Blend)
 Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Le sezioni seguenti forniscono informazioni sulle funzionalità, i prodotti e i servizi che rendono più accessibile Microsoft Windows per utenti con disabilità:

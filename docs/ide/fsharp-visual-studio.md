@@ -2,7 +2,6 @@
 title: Strumenti F#
 description: Informazioni sulle funzionalità di Visual Studio supportate in F#.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eaaf9f82bea6fdba86b6404cfc0ab36384805ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920630"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955860"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -59,7 +58,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 **Creazione progetti** è costituito da diverse pagine delle proprietà di progetto raggruppate per funzionalità correlate. Le pagine disponibili per i progetti F#, per la maggior parte un subset dei progetti disponibili per altri linguaggi, sono descritte nella tabella seguente. Sono presenti collegamenti alla pagina **Creazione progetti** C# corrispondente.
 
-|Pagina Creazione progetti|Collegamenti correlati|Description|
+|Pagina Creazione progetti|Collegamenti correlati|Descrizione|
 | - |-------------|-----------|
 |Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET Framework a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
 |Compilazione|[Pagina Compilazione, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
@@ -73,7 +72,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 La tabella seguente riepiloga le impostazioni specifiche di F#:
 
-|Pagina Creazione progetti|Impostazione|Description|
+|Pagina Creazione progetti|Impostazione|Descrizione|
 | - |-------|-----------|
 |Compilazione|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
 |Compilazione|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|
@@ -82,7 +81,7 @@ La tabella seguente riepiloga le impostazioni specifiche di F#:
 
 F# supporta le funzionalità seguenti degli editor di codice e di testo di Visual Studio:
 
-|Funzionalità|Description|Supporto in F#|
+|Funzionalità|Descrizione|Supporto in F#|
 |-------|-----------|----------------|
 |Commento automatico|Consente di impostare o rimuovere commenti da sezioni di codice.|Sì|
 |Formattazione automatica|Riformatta il codice con rientri e stile standard.|No|
@@ -114,7 +113,7 @@ Per informazioni generali sulla modifica di codice in Visual Studio e sulle funz
 
 La tabella seguente riepiloga le funzionalità di IntelliSense supportate e non supportate in F#:
 
-|Funzionalità|Description|Supporto in F#|
+|Funzionalità|Descrizione|Supporto in F#|
 |-------|-----------|----------------|
 |Implementazione automatica di interfacce|Genera stub di codice per metodi di interfaccia.|Sì|
 |Frammenti di codice|Inserisce codice da una libreria di costrutti di codifica comuni in argomenti.|No|
@@ -134,7 +133,7 @@ Per informazioni generali su IntelliSense, vedere [Usare IntelliSense](using-int
 
 La tabella seguente riepiloga le funzionalità disponibili quando si esegue il debug di codice F#:
 
-|Funzionalità|Description|Supporto in F#|
+|Funzionalità|Descrizione|Supporto in F#|
 |-------|-----------|----------------|
 |Auto (finestra)|Visualizza le variabili automatiche o temporanee.|No|
 |Punti di interruzione|Consente di sospendere l'esecuzione del codice in corrispondenza di punti specifici durante il debug.|Sì|
@@ -153,7 +152,7 @@ Per informazioni generali sul debugger di Visual Studio, vedere [Debug in Visual
 
 La tabella seguente riepiloga il supporto per F# di Strumenti di Visual Studio.
 
-|Strumento|Description|Supporto in F#|
+|Strumento|Descrizione|Supporto in F#|
 |----|-----------|----------------|
 |Gerarchia di chiamata|Visualizza la struttura annidata delle chiamate di funzione nel codice.|No|
 |Metrica del codice|Raccoglie informazioni sul codice, ad esempio il numero di righe.|No|

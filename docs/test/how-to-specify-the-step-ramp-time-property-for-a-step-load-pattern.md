@@ -8,13 +8,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 32ba2fb204a4452df61d63015959be977c358f00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931284"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916713"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio
 

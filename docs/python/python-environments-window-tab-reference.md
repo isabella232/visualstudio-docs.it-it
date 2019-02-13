@@ -2,7 +2,6 @@
 title: Informazioni di riferimento sulla finestra Ambienti Python
 description: Dettagli su ognuna delle schede visualizzate nella finestra Ambienti Python in Visual Studio.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa82d2d475d540dfdda31c7dea1bd4681aaeb7a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982390"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909986"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -35,7 +34,7 @@ Include informazioni di base e comandi per l'ambiente:
 
 ![Scheda Panoramica di Ambienti Python](media/environments-overview-tab.png)
 
-| Comando | Description |
+| Comando | Descrizione |
 | --- | --- |
 | **Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti)** | Imposta l'ambiente attivo, facendo sì che Visual Studio (2017 versione 15.5 e precedenti) non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
 | **Visit the distributor's website (Visita il sito Web del server di distribuzione)** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
@@ -61,7 +60,7 @@ Se disponibile, contiene i dettagli descritti nella tabella seguente. Se questa 
 
 ![Scheda Configura di Ambienti Python](media/environments-configure-tab.png)
 
-| Campo | Description |
+| Campo | Descrizione |
 | --- | --- |
 | **Descrizione** | Nome da assegnare all'ambiente. |
 | **Percorso di prefisso** | Percorso della cartella di base dell'interprete. Se si compila questo valore e si fa clic su **Rilevamento automatico**, Visual Studio prova a compilare automaticamente gli altri campi. |
