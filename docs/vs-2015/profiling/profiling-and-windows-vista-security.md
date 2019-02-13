@@ -48,4 +48,4 @@ A seconda delle impostazioni delle autorizzazioni di accesso utente di [!INCLUDE
 ## <a name="see-also"></a>Vedere anche  
  [Panoramiche](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Procedura: Connettersi a un processo in esecuzione](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Procedura: eseguire la connessione a un processo in esecuzione](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

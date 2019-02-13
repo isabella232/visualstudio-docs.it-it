@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Scegliere un metodo di raccolta | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -17,13 +12,13 @@ ms.assetid: c87cfd3a-0fc7-49ae-9c05-d8480891cc63
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ca8018b572671f349c058e314b26f7897e421b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792876"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: scegliere un metodo di raccolta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,6 +100,3 @@ Gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sup
  [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
-
-
-

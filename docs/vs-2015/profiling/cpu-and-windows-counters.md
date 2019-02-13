@@ -1,14 +1,9 @@
 ---
 title: Contatori CPU e Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800440"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
   
       **Nota** Fare clic su **Annulla** per tornare alla configurazione di campionamento precedente.  
   
-     oppure  
+     -oppure-  
   
    - Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.  
   
@@ -139,6 +134,3 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
  [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)  (Procedura: Scegliere eventi di campionamento)  
  [How to: Collect CPU Counter Data](../profiling/how-to-collect-cpu-counter-data.md)  (Procedura: Raccogliere i dati dei contatori CPU)  
  [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)
-
-
-

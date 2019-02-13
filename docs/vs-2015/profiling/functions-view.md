@@ -30,7 +30,7 @@ La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.
   
  Per impostazione predefinita, le funzioni vengono elencate per nome. Per visualizzare le funzioni per modulo, fare clic con il pulsante destro del mouse nella finestra Visualizzazione Funzioni e quindi selezionare **Mostra in visualizzazione Modulo**. Verrà visualizzata la visualizzazione Modulo.  
   
- Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)  
+ Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md).  
   
  Le colonne disponibili nella visualizzazione Funzioni dipendono dal metodo di profilatura (campionamento o strumentazione) usato per raccogliere i dati e dal fatto che i dati della memoria .NET siano stati raccolti o meno durante l'esecuzione della profilatura.  
   

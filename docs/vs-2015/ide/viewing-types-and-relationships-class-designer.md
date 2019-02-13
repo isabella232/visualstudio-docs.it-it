@@ -1,14 +1,9 @@
 ---
 title: Visualizzazione dei tipi e delle relazioni (Progettazione classi) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: c4f46d94-9972-42ac-ae63-6ff306369965
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d426c1146ae3862318b265c2e36b334b4761d2d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769000"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Visualizzazione dei tipi e delle relazioni (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49240760"
 Progettazione classi usa i diagrammi classi per visualizzare i dettagli dei tipi, ad esempio i membri che li costituiscono e le relazioni che condividono. La visualizzazione di queste entità è effettivamente una visualizzazione dinamica nel codice. Ciò significa che è possibile modificare i tipi nella finestra di progettazione e quindi visualizzare le modifiche riflesse nel codice sorgente dell'entità. Analogamente, il diagramma classi viene mantenuto sincronizzato con le modifiche apportate alle entità nel codice.  
   
 > [!NOTE]
->  Se il progetto contiene un diagramma classi e fa riferimento a un tipo che si trova in un altro progetto, il diagramma classi non visualizza il tipo di riferimento fino a quando non si compila il progetto per quel tipo. Allo stesso modo, il diagramma non visualizza le modifiche apportate al codice dell'entità esterna fino a quando non si ricompila il progetto per l'entità. Per informazioni sui tipi negli assembly di riferimento e i file di sola lettura, vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Se il progetto contiene un diagramma classi e fa riferimento a un tipo che si trova in un altro progetto, il diagramma classi non visualizza il tipo di riferimento fino a quando non si compila il progetto per quel tipo. Allo stesso modo, il diagramma non visualizza le modifiche apportate al codice dell'entità esterna fino a quando non si ricompila il progetto per l'entità. Per informazioni sui tipi negli assembly di riferimento e i file di sola lettura, vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md)  
@@ -58,6 +53,3 @@ Progettazione classi usa i diagrammi classi per visualizzare i dettagli dei tipi
  [Procedura: Personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
  [Uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

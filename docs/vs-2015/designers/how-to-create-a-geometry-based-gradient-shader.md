@@ -1,25 +1,20 @@
 ---
 title: 'Procedura: Creare uno shader con sfumatura basata sulla geometria | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797537"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,19 +65,16 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione **Anteprima degli shader** in [Finestra di progettazione shader](../designers/shader-designer.md).  
   
- La figura seguente illustra lo shader descritto in questo documento applicato alla scena 3D illustrata in [Procedura: Creare un modello di terreno 3D](../designers/how-to-model-3-d-terrain.md). L'intensità del colore aumenta con l'altezza del punto nello spazio globale.  
+ Nella figura seguente illustra lo shader descritto in questo documento applicato alla scena 3D illustrata in [come: Modello di terreno 3D](../designers/how-to-model-3-d-terrain.md). L'intensità del colore aumenta con l'altezza del punto nello spazio globale.  
   
  ![Effetto sfumatura applicato a un modello di terreno 3D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- Per altre informazioni su come applicare uno shader a un modello 3D, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Per altre informazioni su come applicare uno shader a un modello 3D, vedere [come: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
- [Procedura: Creare un modello di terreno 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Procedura: Modello di terreno 3D](../designers/how-to-model-3-d-terrain.md)   
  [Procedura: Creare uno shader con trama in scala di grigi](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)
-
-
-

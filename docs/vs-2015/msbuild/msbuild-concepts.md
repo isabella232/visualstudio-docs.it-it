@@ -1,27 +1,22 @@
 ---
 title: Concetti relativi a MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, concepts
 ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 54c8fcd52a6d3650726281f55c3d6192c089ce78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770866"
 ---
 # <a name="msbuild-concepts"></a>Concetti relativi a MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,4 @@ ms.locfileid: "49174122"
 |[Procedura dettagliata: creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo.|  
 |[Procedura dettagliata: uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)|Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'ambiente di sviluppo integrato (IDE) di Visual Studio.|  
 |[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)|Collegamenti a documenti che contengono informazioni di riferimento.|  
-|[MSBuild](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Presenta una panoramica di XML Schema per un file di progetto e illustra come controllare i processi che compilano il software.|
-
-
-
+|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Presenta una panoramica di XML Schema per un file di progetto e illustra come controllare i processi che compilano il software.|

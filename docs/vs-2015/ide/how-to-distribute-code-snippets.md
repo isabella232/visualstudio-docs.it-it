@@ -1,27 +1,22 @@
 ---
 title: 'Procedura: Distribuire frammenti di codice | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799032"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: distribuire i frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49185705"
  Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Trovare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [download di Visual Studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  
   
 ## <a name="setting-up-the-extension"></a>Configurazione dell'estensione  
- In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo .snippet verrà fornito in modo che non sia necessario tornare indietro e crearlo.  
+ In questa procedura si userà lo stesso frammento di codice Hello World creato [procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo .snippet verrà fornito in modo che non sia necessario tornare indietro e crearlo.  
   
 1.  Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File / Nuovo / Progetto / Visual C# (o Visual Basic / Extensibility**)  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49185705"
   
 4.  Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.  
   
-5.  HelloWorldVB dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa HelloWorldVB. Verrà visualizzato il seguente codice aggiunto al file:  
+5.  HelloWorldVB dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** che contiene un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa HelloWorldVB. Verrà visualizzato il seguente codice aggiunto al file:  
   
     ```vb  
     Console.WriteLine("Hello, World!")  
@@ -109,6 +104,3 @@ ms.locfileid: "49185705"
   
 ## <a name="see-also"></a>Vedere anche  
  [Frammenti di codice](../ide/code-snippets.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Pagina Pubblica, Progettazione progetti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dcd6660ff431bee76fb7f595ed243104136684d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778604"
 ---
 # <a name="publish-page-project-designer"></a>Pagina Pubblica, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,16 +51,16 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
  Per le applicazioni Web Browser WPF, l'opzione **Applicazione disponibile anche offline** è disabilitata, perché tali applicazioni sono disponibili solo online.  
   
  **File applicazione**  
- Apre [Application Files Dialog Box](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8)che consente di specificare come e dove vengono installati i singoli file.  
+ Apre [Application Files Dialog Box](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)che consente di specificare come e dove vengono installati i singoli file.  
   
  **Prerequisiti**  
  Apre il [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md)che consente di specificare i componenti necessari, ad esempio .NET Framework, da installare insieme all'applicazione.  
   
  **Aggiornamenti**  
- Apre [Application Updates Dialog Box](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)che consente di specificare il comportamento di aggiornamento per l'applicazione. Non è disponibile quando è selezionata l'opzione **Applicazione disponibile solo online** .  
+ Apre [Application Updates Dialog Box](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)che consente di specificare il comportamento di aggiornamento per l'applicazione. Non è disponibile quando è selezionata l'opzione **Applicazione disponibile solo online** .  
   
  **Opzioni**  
- Apre [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)che consente di specificare altre opzioni di pubblicazione avanzate.  
+ Apre [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)che consente di specificare altre opzioni di pubblicazione avanzate.  
   
  **Versione di pubblicazione**  
  Imposta il numero della versione di pubblicazione per l'applicazione. Quando viene modificato il numero di versione, l'applicazione viene pubblicata come aggiornamento. Ogni parte della versione di pubblicazione (**Principale**, **Secondaria**, **Compilazione**, **Revisione**) può avere un valore massimo di 65355 (<xref:System.UInt16.MaxValue>), il massimo consentito da <xref:System.Version>.  
@@ -76,7 +71,7 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
  Facoltativo. Quando questa opzione è selezionata (impostazione predefinita), la parte **Revisione** del numero di versione viene incrementata di un'unità ogni volta che viene pubblicata l'applicazione. In questo modo l'applicazione viene pubblicata come aggiornamento.  
   
  **Pubblicazione guidata**  
- Apre [Publish Wizard](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872). Il completamento della Pubblicazione guidata ha lo stesso effetto dell'esecuzione del comando **Pubblica** del menu **Compila** .  
+ Apre [Publish Wizard](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Il completamento della Pubblicazione guidata ha lo stesso effetto dell'esecuzione del comando **Pubblica** del menu **Compila** .  
   
  **Pubblica**  
  Pubblica l'applicazione usando le impostazioni correnti. Equivale al pulsante **Fine** della **Pubblicazione guidata**.  
@@ -98,6 +93,3 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
  [Procedura: Specificare il nome di un'applicazione ClickOnce per il menu Start](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [Sicurezza e distribuzione di ClickOnce](../../deployment/clickonce-security-and-deployment.md)
-
-
-

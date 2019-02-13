@@ -1,14 +1,9 @@
 ---
 title: Refactoring di classi e tipi (Progettazione classi) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207961"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782126"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring di classi e tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49207961"
 Quando si effettua il refactoring del codice, si modifica la struttura interna di quest'ultimo e il modo in cui i relativi oggetti vengono progettati, rendendo il codice più comprensibile, gestibile ed efficiente senza modificarne il comportamento esterno. Per ridurre le operazioni necessarie e la possibilità di introdurre bug durante il refactoring del codice Visual C# .NET, Visual Basic .NET o C++ nel progetto di Visual Studio, usare Progettazione classi e la finestra Dettagli classe.  
   
 > [!NOTE]
->  I file di un progetto possono essere di sola lettura perché il progetto è sotto il controllo del codice sorgente e non è stato estratto, perché si tratta di un progetto a cui si fa riferimento o perché i file sono contrassegnati come di sola lettura sul disco. Quando si lavora in un progetto in uno di questi stati, è possibile salvare il lavoro in vari modi a seconda dello stato del progetto. Ciò vale per il refactoring del codice e anche per il codice che viene modificato in altro modo, ad esempio tramite modifica diretta. Per altre informazioni, vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  I file di un progetto possono essere di sola lettura perché il progetto è sotto il controllo del codice sorgente e non è stato estratto, perché si tratta di un progetto a cui si fa riferimento o perché i file sono contrassegnati come di sola lettura sul disco. Quando si lavora in un progetto in uno di questi stati, è possibile salvare il lavoro in vari modi a seconda dello stato del progetto. Ciò vale per il refactoring del codice e anche per il codice che viene modificato in altro modo, ad esempio tramite modifica diretta. Per altre informazioni, vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Attività comuni  
   
@@ -99,6 +94,3 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 |-----------|-----------------|  
 |[Visualizzazione dei tipi e delle relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[Progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md)||
-
-
-

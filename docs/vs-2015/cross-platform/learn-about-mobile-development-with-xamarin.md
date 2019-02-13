@@ -1,21 +1,17 @@
 ---
 title: Informazioni sullo sviluppo per dispositivi mobili con Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 329c684dcc09a15ec86f80493d9f084e486b7cfe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733181"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781696"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +42,17 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
   ![Relazione tra computer di sviluppo Windows e Mac in un ambiente Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Informazioni di base: Come sono strutturati i progetti  
+## <a name="essentials-how-projects-are-structured"></a>Nozioni fondamentali Struttura dei progetti  
  *10-30 minuti*  
   
-1.  [Opzioni di condivisione del codice](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). È consigliabile usare l'opzione relativa alle librerie di classi portabili, poiché offre il migliore supporto per l'uso delle sole API .NET che sono supportate in tutte le piattaforme di destinazione. La maggior parte del codice relativo alla logica di business si troverà nella libreria di classi portabile, incluso l'accesso ai database, le chiamate alle API REST e le chiamate ai componenti di Xamarin portatili (vedere [Deeper Dive: Xamarin Components](#components) alle fine di questo argomento). Anche il codice dell'interfaccia utente comune scritto con Xamarin.Forms può risiedere in una PCL.  
+1.  [Opzioni di condivisione del codice](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). È consigliabile usare l'opzione relativa alle librerie di classi portabili, poiché offre il migliore supporto per l'uso delle sole API .NET che sono supportate in tutte le piattaforme di destinazione. Gran parte del codice per la logica di business si troverà nella libreria di classi Portabile, incluso l'accesso ai database, le chiamate alle API REST e le chiamate ai componenti di Xamarin portatili (vedere [Deeper Dive: I componenti di Xamarin](#components) alla fine di questo argomento). Anche il codice dell'interfaccia utente comune scritto con Xamarin.Forms può risiedere in una PCL.  
   
-2.  (Facoltativo) Nel [case study relativo a Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) vengono descritte alcune procedure consigliate per la progettazione e la struttura di un'app completa, ad esempio come strutturare il progetto con una libreria di classi portabile per il codice condiviso che separa il livello dati, il livello di accesso ai dati e il livello business.  
+2.  (Facoltativo) [Case Study: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) vengono descritte alcune procedure consigliate per la progettazione e la struttura di un'app completa, come strutturare il progetto con una libreria di classi Portabile per il codice condiviso che separa i dati, l'accesso ai dati e il livello business.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Concetti di base: Livelli dell'interfaccia utente Xamarin Native e Xamarin.Forms  
  *10-40 minuti*  
   
- Xamarin offre due metodi per creare app native di alto livello: Xamarin Native e Xamarin.Forms.  
+ Xamarin offre due sistemi per creare eccezionali app native. Xamarin Native e xamarin. Forms.  
   
  Con Xamarin Native occorre scrivere codice separato per l'interfaccia utente per ogni piattaforma di destinazione: iOS, Android e Windows.  Con questo approccio è possibile accedere direttamente alle API specifiche della piattaforma e realizzare così un'esperienza dell'interfaccia utente personalizzata per ogni piattaforma.  È anche disponibile l'accesso completo alle finestre di progettazione e ai controlli nativi per ogni piattaforma, per facilitare la creazione dell'interfaccia utente corrispondente.  
   
@@ -76,7 +72,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) fornisce una breve panoramica e informazioni sui vantaggi e gli svantaggi di Xamarin.Forms rispetto ai livelli dell'interfaccia utente nativa (ovvero, Xamarin.iOS e Xamarin.Android).  
   
-2.  I primi tre minuti del video di James Montemagno su [Xamarin.Forms: app iOS, Android e Windows native con C# e XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel 9, 13 minuti e 3 secondi) forniscono un'altra panoramica ed è possibile continuare a guardare il video per assistere ad alcune demo.  
+2.  I primi tre minuti del video di James Montemagno [xamarin. Forms: Native App iOS, Android e Windows con C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel 9, 13m3s) forniscono un'altra Panoramica ed è possibile continuare a guardare alcune demo.  
   
 3.  (Facoltativo) [Introduzione a Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
@@ -91,7 +87,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 1.  **Emulatore Android.** A seconda della versione di Windows in uso, è consigliabile usare Visual Studio Emulator for Android di Microsoft o Xamarin Player, che offrono entrambi prestazioni elevate e supportano un'ampia gamma di funzionalità dei dispositivi:  
   
-    -   **Computer con Windows 8 +:** è consigliabile usare [Visual Studio Emulator for Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx)di Microsoft, installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
+    -   **Computer Windows 8 e versioni successive:** È consigliabile usare di Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), che viene installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
   
     -   **Windows 7 o versioni precedenti e Windows in esecuzione su Mac OS X**: usare [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
   
@@ -99,8 +95,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 3.  **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-##  <a name="components"></a> Deeper Dive: Xamarin Components  
+##  <a name="components"></a> Approfondimento: Componenti di Xamarin  
  *10 minuti*  
   
  Numerose funzionalità estese sono disponibili per le app Xamarin mediante i componenti di Xamarin. All'indirizzo [http://components.xamarin.com/](http://components.xamarin.com/) è disponibile per il download il catalogo completo, che include i componenti per controlli aggiuntivi dell'interfaccia utente e per l'autenticazione, oltre a un'ampia gamma di servizi cloud come Microsoft Azure e molto altro ancora.
-

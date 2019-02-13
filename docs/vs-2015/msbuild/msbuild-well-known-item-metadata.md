@@ -1,14 +1,9 @@
 ---
 title: Metadati noti degli elementi di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8d83c6eaf441b72bc3774f4117653826da47613
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abf45460ec924aea7a6c1c18244aa7661c52d42f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790187"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadati noti degli elementi di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ La tabella seguente descrive i metadati assegnati a ogni elemento durante la fas
  [Elementi](../msbuild/msbuild-items.md)   
  [Suddivisione in batch](../msbuild/msbuild-batching.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
-
-
-

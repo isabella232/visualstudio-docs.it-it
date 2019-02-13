@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
@@ -16,13 +11,13 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760266"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Aggiungere un diagramma di classi al progetto Visual C# .NET, Visual Basic .NET 
   
 1.  In Esplora soluzioni aprire il menu di scelta rapida del file di classe e quindi scegliere **Visualizza diagramma classi**.  
   
-     oppure  
+     -oppure-  
   
      In **Visualizzazione classi** aprire il menu di scelta del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.  
   
@@ -61,6 +56,3 @@ Aggiungere un diagramma di classi al progetto Visual C# .NET, Visual Basic .NET 
  [Designing Classes and Types (Class Designer)](../ide/designing-classes-and-types-class-designer.md)  (Progettazione di classi e tipi (Progettazione classi))  
  [Viewing Types and Relationships (Class Designer)](../ide/viewing-types-and-relationships-class-designer.md)  (Visualizzazione dei tipi e delle relazioni (Progettazione classi))  
  [Uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

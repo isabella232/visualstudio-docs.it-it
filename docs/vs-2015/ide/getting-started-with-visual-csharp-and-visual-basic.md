@@ -1,13 +1,8 @@
 ---
-title: Introduzione a Visual c# e Visual Basic | Microsoft Docs
-ms.custom: ''
+title: Introduzione a Visual C# e Visual Basic | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
@@ -20,13 +15,13 @@ ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788281"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Guida introduttiva a Visual C# e Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Documentazione di riferimento ideale per chi non ha familiarità con Visual C# o
   
  [Esercitazione 3: creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md)  
  Compilare un gioco di abbinamenti, in cui il giocatore deve riuscire ad abbinare coppie di icone nascoste. Imparare a contenere oggetti utilizzando un oggetto `List`, `foreach`, tenere traccia dello stato di un form utilizzando variabili di riferimento, compilare un gestore di evento che è possibile utilizzare con più oggetti e attivare un timer esattamente una volta all'avvio.
-
-
-

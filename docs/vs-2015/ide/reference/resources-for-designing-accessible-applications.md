@@ -1,14 +1,9 @@
 ---
 title: Risorse per la progettazione di applicazioni accessibili | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761672"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supp
   
 ## <a name="windows-applications"></a>Applicazioni Windows  
   
--   [Procedura dettagliata: creazione di un'applicazione Windows ad Accesso facilitato](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) L'argomento offre istruzioni dettagliate per includere i cinque requisiti di accessibilità per il logo Certified for Windows in un'applicazione Windows di esempio.  
+-   [Procedura dettagliata: Creazione di un'applicazione basata su Windows accessibile](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) in questo argomento vengono fornite istruzioni dettagliate per includere i cinque requisiti di accessibilità per il logo Certified per Windows in un'applicazione Windows di esempio.  
   
 -   **Guidelines for Keyboard User Interface Design** (Linee guida per la progettazione dell'interfaccia utente) In questo articolo tecnico viene illustrato come progettare un'interfaccia utente per un'applicazione Windows che gli utenti possono usare con la tastiera. Per altre informazioni, vedere [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -64,6 +59,3 @@ Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supp
   
 ## <a name="see-also"></a>Vedere anche  
  [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)
-
-
-

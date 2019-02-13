@@ -1,25 +1,20 @@
 ---
 title: Application Lifecycle Management (ALM) con app Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778591"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con app Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +27,17 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
  La tabella seguente identifica le funzionalità ALM di Visual Studio che sono o meno applicabili quando si lavora con Unity. Per informazioni dettagliate sulle funzionalità fare riferimento alla documentazione collegata.  
   
 ## <a name="agile-tools"></a>Strumenti Agile:  
- Collegamento di riferimento: **[Lavoro](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (usando Visual Studio Team Services o TFS, incluso Team Explorer Everywhere)  
+ Collegamento di riferimento: **[Work](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (usando Visual Studio Team Services o TFS, incluso Team Explorer Everywhere)  
   
  Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.  
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
-|Gestione di backlog e sprint|Yes||  
+|Gestione di backlog e sprint|Sì||  
 |Verifica del lavoro|Sì||  
 |Collaborazione nella chat team|Sì||  
 |Bacheche Kanban|Sì||  
-|Segnalare e visualizzare lo stato di avanzamento|Yes||  
+|Segnalare e visualizzare lo stato di avanzamento|Sì||  
   
 ## <a name="modeling"></a>Modellazione  
  Collegamento di riferimento: **[Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)**  
@@ -64,11 +59,11 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
-|[Usare il controllo della versione di Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Yes|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|  
-|[Introduzione a Git in Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Yes|Vedere le note dopo la tabella.|  
-|[Analisi del codice/migliorare la qualità del codice (riferimenti, modifiche suggerite e così via)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Yes||  
-|[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Yes||  
-|[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Yes||  
+|[Usare il controllo della versione di Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Sì|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|  
+|[Introduzione a Git in Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sì|Vedere le note dopo la tabella.|  
+|[Analisi del codice/migliorare la qualità del codice (riferimenti, modifiche suggerite e così via)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Sì||  
+|[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Sì||  
+|[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Sì||  
   
  Considerazioni speciali per il controllo della versione con Unity:  
   
@@ -106,9 +101,9 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
-|[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
-|[Ricerca del codice duplicato mediante il rilevamento del clone di codice](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
-|[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
+|[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|  
+|[Ricerca del codice duplicato mediante il rilevamento del clone di codice](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|  
+|[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|  
 |[Esplora prestazioni](../profiling/performance-explorer.md)|No|Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (sito Web di Unity).|  
 |[Analizzare i problemi relativi alla memoria .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Gli Strumenti di Visual Studio non includono per il framework Mono, usato da Unity, per la profilatura. Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentazione di Unity).|  
   
@@ -126,7 +121,4 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
-|Analisi degli arresti anomali, telemetria e distribuzione beta|Yes|HockeyApp risulta particolarmente utile per gestire la distribuzione beta e ottenere report sugli arresti anomali.<br /><br /> Per la telemetria di script C#, è possibile usare qualsiasi framework di analisi, a condizione che venga eseguito nella versione di .NET usata da Unity. Tuttavia, consente l'analisi solo all'interno degli script di gioco e non più in profondità nel motore di Unity. Attualmente non è disponibile un plug-in per Application Insights, ma sono disponibili plug-in per altre soluzioni di analisi, ad esempio [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) e [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). I servizi come Unity Analytics che riconoscono la natura di un progetto Unity forniscono naturalmente analisi più significative rispetto ai framework generici.|
-
-
-
+|Analisi degli arresti anomali, telemetria e distribuzione beta|Sì|HockeyApp risulta particolarmente utile per gestire la distribuzione beta e ottenere report sugli arresti anomali.<br /><br /> Per la telemetria di script C#, è possibile usare qualsiasi framework di analisi, a condizione che venga eseguito nella versione di .NET usata da Unity. Tuttavia, consente l'analisi solo all'interno degli script di gioco e non più in profondità nel motore di Unity. Attualmente non è disponibile un plug-in per Application Insights, ma sono disponibili plug-in per altre soluzioni di analisi, ad esempio [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) e [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). I servizi come Unity Analytics che riconoscono la natura di un progetto Unity forniscono naturalmente analisi più significative rispetto ai framework generici.|

@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: Applicare uno shader a un modello 3D | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Applicare uno Shader a un modello 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793465"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Procedura: Applicare uno shader a un modello tridimensionale
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Procedura: Applicare uno Shader a un modello 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo documento illustra come usare l'editor dei modelli per applicare uno shader DGSL (Directed Graph Shader Language) a un modello 3D.  
@@ -37,7 +32,7 @@ Questo documento illustra come usare l'editor dei modelli per applicare uno shad
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>Per applicare uno shader a un modello 3D  
   
-1. Iniziare con una scena 3D contenente uno o più modelli. Se non si ha una scena 3D adatta, crearne una come descritto in [Procedura: Creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md). È necessario avere anche uno shader DGSL da applicare al modello. Se non si ha uno shader adatto, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md) e assicurarsi di salvarlo in un file prima di continuare.  
+1. Iniziare con una scena 3D contenente uno o più modelli. Se non si ha una scena 3D adatta, crearne uno come descritto [come: Creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md). È necessario avere anche uno shader DGSL da applicare al modello. Se non si ha uno shader adatto, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md) e assicurarsi che è stato salvato in un file prima di continuare.  
   
 2. In modalità **Seleziona** selezionare il modello a cui si vuole applicare lo shader e, nella finestra **Proprietà**, specificare lo shader DGSL da applicare al modello nella proprietà **Nome file** del gruppo di proprietà **Effetto**.  
   
@@ -52,6 +47,3 @@ Questo documento illustra come usare l'editor dei modelli per applicare uno shad
  [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md)   
  [Editor dei modelli](../designers/model-editor.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)
-
-
-

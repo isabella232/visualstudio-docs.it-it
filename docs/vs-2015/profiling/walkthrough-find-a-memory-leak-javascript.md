@@ -1,14 +1,9 @@
 ---
-title: 'Procedura dettagliata: trovare una perdita di memoria (JavaScript) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Trovare una perdita di memoria (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780934"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procedura dettagliata: trovare una perdita di memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
     - Questo oggetto è rimasto dallo snapshot n. 2 e rappresenta una potenziale perdita di memoria.  
   
-      In questa fase è bene avere una certa conoscenza dell'app. La scelta del pulsante **Perdita memoria** dovrebbe eliminare un elemento DIV e aggiungerne un altro, pertanto il codice non sembra funzionare. La sezione successiva spiega come risolvere questo problema.  
+      Una conoscenza dell'app consente a questo punto: Scegliere il **perdita memoria** pulsante dovrebbe eliminare un elemento DIV e aggiungere un elemento, in modo che il codice non sembra funzionare correttamente (vale a dire le perdite di memoria). La sezione successiva spiega come risolvere questo problema.  
   
     > [!TIP]
     >  Talvolta, individuare un oggetto relativamente all'oggetto `Global` può aiutare a identificare quell'oggetto. A questo scopo, apri il menu di scelta rapida per l'identificatore e scegli **Mostra in visualizzazione radice**.  
@@ -293,6 +288,3 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 ## <a name="see-also"></a>Vedere anche  
  [Memoria JavaScript](../profiling/javascript-memory.md)
-
-
-

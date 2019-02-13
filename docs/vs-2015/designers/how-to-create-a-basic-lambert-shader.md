@@ -1,25 +1,20 @@
 ---
 title: 'Procedura: Creare uno shader con Lambert di base | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792008"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procedura: Creare uno shader con Lambert di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +59,11 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  ![Illuminazione Lambert applicata a un modello.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
- Per altre informazioni su come applicare uno shader a un modello 3D, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Per altre informazioni su come applicare uno shader a un modello 3D, vedere [come: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
  [Procedura: Creare uno shader con Phong di base](../designers/how-to-create-a-basic-phong-shader.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)
-
-
-

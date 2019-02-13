@@ -1,24 +1,19 @@
 ---
 title: Testare app di Windows Store 8.1 e UWP con test codificati dell'interfaccia utente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799297"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testare app di Windows Store 8.1 e UWP con test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -329,6 +324,3 @@ Usare questa procedura guidata per creare test dell'interfaccia utente per app U
 ## <a name="see-also"></a>Vedere anche  
  [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)   
  [Impostare una proprietà di automazione univoca dei controlli Windows Store per il test](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
-
-

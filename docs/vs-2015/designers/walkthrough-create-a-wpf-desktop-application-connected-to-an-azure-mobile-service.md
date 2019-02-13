@@ -1,27 +1,22 @@
 ---
-title: "Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure | Microsoft Docs"
-ms.custom: ''
+title: "Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803731"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare Windows Presentation Foundation (WPF) per creare rapidamente un'applicazione desktop moderna che usa un servizio mobile di Azure per archiviare e fornire i dati.  
@@ -576,6 +571,3 @@ ms.locfileid: "49270610"
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Prima applicazione desktop WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md) (Creare moderne applicazioni desktop con Windows Presentation Foundation)
-
-
-

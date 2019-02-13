@@ -36,7 +36,7 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
 ## <a name="rendering-conventions-in-direct2d"></a>Convenzioni di rendering in Direct2D  
  Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni di rendering interne di Direct2D seguenti:  
   
--   Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sui valori alfa premoltiplicati, vedere [Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)  
+-   Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sul valore alfa premoltiplicato, vedere [Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
   
 -   La trama deve essere fornita in formato dds, usando uno dei formati di compressione a blocchi seguenti:  
   
@@ -50,7 +50,7 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Per creare una trama compatibile con le convenzioni di rendering Direct2D  
   
-1. Iniziare con una trama di base. Caricare un'immagine esistente oppure crearne una nuova, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md) Per supportare la compressione a blocchi in formato dds, specificare una trama con valori di larghezza e altezza multipli di quattro, ad esempio 100x100, 128x128 o 256x192. Poiché il mapping MIP non è supportato, la trama non deve essere quadrata e le dimensioni non devono essere una potenza di due.  
+1. Iniziare con una trama di base. Caricare un'immagine esistente oppure crearne una nuova, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per supportare la compressione a blocchi in formato dds, specificare una trama con valori di larghezza e altezza multipli di quattro, ad esempio 100x100, 128x128 o 256x192. Poiché il mapping MIP non è supportato, la trama non deve essere quadrata e le dimensioni non devono essere una potenza di due.  
   
 2. Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama appena creato e quindi scegliere **Proprietà**. Nella pagina **Proprietà di configurazione**, **Generale**, impostare la proprietà **Tipo di elemento** su **Image Content Pipeline** (Pipeline di contenuti immagine). Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No**, quindi scegliere il pulsante **Applica**. Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).  
   

@@ -1,14 +1,9 @@
 ---
 title: Finestra di dialogo Impostazioni avanzate per i servizi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779136"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Finestra di dialogo Impostazioni avanzate per i servizi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ I servizi delle applicazioni client offrono accesso semplificato a servizi di ac
 ## <a name="task-list"></a>Elenco attività  
  [Procedura: Configurare i servizi delle applicazioni client](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38) (Procedura: Lavorare offline con servizi delle applicazioni client)  
+ [Procedura: Lavorare Offline con servizi delle applicazioni Client](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Salva hash della password localmente per consentire l'accesso offline**  
- Specifica se un modulo crittografato della password dell'utente sarà memorizzato nella cache locale per consentire all'utente di accedere quando l'applicazione è in modalità offline. Per altre informazioni, vedere [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38) (Procedura: Lavorare offline con servizi delle applicazioni client). Questa opzione è selezionata per impostazione predefinita.  
+ Specifica se un modulo crittografato della password dell'utente sarà memorizzato nella cache locale per consentire all'utente di accedere quando l'applicazione è in modalità offline. Per altre informazioni, vedere [Procedura: Lavorare Offline con servizi delle applicazioni Client](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Questa opzione è selezionata per impostazione predefinita.  
   
  **Richiedi agli utenti di accedere di nuovo a ogni scadenza del cookie del server**  
  Specifica se gli utenti precedentemente autenticati vengono automaticamente riautenticati quando l'applicazione accede al servizio ruoli o profili e il cookie di autenticazione server è scaduto. Selezionare questa opzione per negare l'accesso ai servizi dell'applicazione e richiedere esplicitamente una nuova autenticazione se il cookie è scaduto. Questa opzione è utile per applicazioni distribuite in percorsi pubblici al fine di garantire che gli utenti che escono dall'applicazione non rimangano autenticati a tempo indeterminato mentre questa continua a essere eseguita. Per impostazione predefinita, questa opzione è deselezionata.  
@@ -59,7 +54,4 @@ I servizi delle applicazioni client offrono accesso semplificato a servizi di ac
  [Servizi applicazioni client](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [Services Page, Project Designer](../../ide/reference/services-page-project-designer.md)  (Pagina Servizi, Creazione progetti)  
  [Procedura: Configurare i servizi delle applicazioni client](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38) (Procedura: Lavorare offline con servizi delle applicazioni client)
-
-
-
+ [Procedura: Lavorare Offline con servizi delle applicazioni Client](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

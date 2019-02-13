@@ -1,14 +1,9 @@
 ---
 title: Profilatura rapida di sito Web con VSPerfASPNETCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,13 +11,13 @@ ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760297"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,6 +100,3 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
 |------------|-----------------|  
 |**/Output:** `VspFile`|Per impostazione predefinita, il file dei dati di profilatura (con estensione vsp) viene creato nella directory corrente con il nome file **PerformanceReport.vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|  
 |**/PackSymbols:Off**|Per impostazione predefinita, VsPerfASPNETCmd incorpora simboli, ovvero nomi di funzione e di parametro e così via, nel file con estensione vsp. L'incorporamento di simboli può aumentare notevolmente le dimensioni del file di dati di profilatura. Se si avrà accesso ai file con estensione pdb contenenti i simboli quando si analizzano i dati, usare l'opzione /packsymbols:off per disabilitare l'incorporamento dei simboli.|
-
-
-

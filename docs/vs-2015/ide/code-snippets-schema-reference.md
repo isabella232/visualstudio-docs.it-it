@@ -275,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Elemento Author](../ide/code-snippets-schema-reference.md#author)|Elemento facoltativo. Nome della persona o della società che ha creato il frammento di codice. In un elemento `Author` possono essere presenti zero elementi `Header` oppure uno.|  
 |[Elemento Description](../ide/code-snippets-schema-reference.md#description)|Elemento facoltativo. Descrizione del frammento di codice. In un elemento `Description` possono essere presenti zero elementi `Header` oppure uno.|  
-|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl)|Elemento facoltativo. URL contenente altre informazioni sul frammento di codice. In un elemento Header possono essere presenti zero elementi `HelpURL` o uno. **Nota:**  In Visual Studio l'elemento `HelpUrl` non viene usato. L'elemento fa parte dell'XML Schema dei frammenti di codice IntelliSense e ogni frammento di codice che contiene l'elemento verrà convalidato, anche se il valore dell'elemento non verrà mai usato.|  
+|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl)|Elemento facoltativo. URL contenente altre informazioni sul frammento di codice. In un elemento Header possono essere presenti zero elementi `HelpURL` o uno. **Nota:** in Visual Studio l'elemento `HelpUrl` non viene usato. L'elemento fa parte dell'XML Schema dei frammenti di codice IntelliSense e ogni frammento di codice che contiene l'elemento verrà convalidato, anche se il valore dell'elemento non verrà mai usato.|  
 |[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords)|Elemento facoltativo. Raggruppa gli elementi `Keyword`. In un elemento `Keywords` possono essere presenti zero elementi `Header` oppure uno.|  
 |[Elemento Shortcut](../ide/code-snippets-schema-reference.md#shortcut)|Elemento facoltativo. Specifica il testo di collegamento che può essere usato per inserire il frammento. In un elemento `Shortcut` possono essere presenti zero elementi `Header` oppure uno.|  
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes)|Elemento facoltativo. Raggruppa gli elementi `SnippetType`. In un elemento `SnippetTypes` possono essere presenti zero elementi `Header` oppure uno. In assenza di elementi `SnippetTypes`, il frammento di codice è sempre valido.|  
@@ -660,4 +660,4 @@ is a great color. I love Blue.
   
 ## <a name="see-also"></a>Vedere anche  
  [Frammenti di codice](../ide/code-snippets.md)   
- [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
+ [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)

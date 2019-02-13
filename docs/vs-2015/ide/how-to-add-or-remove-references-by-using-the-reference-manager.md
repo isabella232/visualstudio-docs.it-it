@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756986"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,16 +154,16 @@ ms.locfileid: "49917556"
   
  È possibile generare un file WinMD in Visual Studio in due modi:  
   
-- **Progetti gestiti per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: i progetti di app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] possono generare file binari WinMD impostando Proprietà progetto &#124; Output Type = WinMD File. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi A.B e A.B.C, i nomi possibili per il file WinMD generato saranno A.winmd e A.B.winmd. Se un utente immette un valore Proprietà progetti &#124; Nome assembly o Proprietà progetti &#124; Spazio dei nomi che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. I tipi che non esistono in uno spazio dei nomi secondario del nome file non potranno essere individuati in fase di esecuzione. In questo assembly, lo spazio dei nomi comune più piccolo è "CSWSClassLibrary1". Un progetto desktop Visual Basic o Visual C# può utilizzare solo file WinMD che sono generati utilizzando i [!INCLUDE[win8](../includes/win8-md.md)] SDK, noti come WinMD del produttore, e non può generare WinMD.  
+- **Progetti gestiti per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: i progetti di app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] possono generare file binari WinMD impostando Proprietà progetto &#124; Output Type = WinMD File. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi A.B e A.B.C, i nomi possibili per il file WinMD generato saranno A.winmd e A.B.winmd. Se un utente immette una proprietà del progetto &#124; nome Assembly o proprietà del progetto &#124; valore di Namespace che è disgiunto dal set di spazi dei nomi nel progetto o nessuno spazio dei nomi superset all'interno di un progetto, viene generato un avviso di compilazione: 'A. winmd' non è un nome di file winmd valido per questo assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. I tipi che non esistono in uno spazio dei nomi secondario del nome file non potranno essere individuati in fase di esecuzione. In questo assembly, lo spazio dei nomi comune più piccolo è "CSWSClassLibrary1". Un progetto desktop Visual Basic o Visual C# può utilizzare solo file WinMD che sono generati utilizzando i [!INCLUDE[win8](../includes/win8-md.md)] SDK, noti come WinMD del produttore, e non può generare WinMD.  
   
-- **Progetti nativi per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] progetti nativi per app**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.  
   
   La scheda Windows è costituita da due sottogruppi.  
   
 ### <a name="core-subgroup"></a>Sottogruppo di base  
  Nel Sottogruppo di base sono elencati tutti i file WinMD (per gli elementi Windows Runtime) nell'SDK per la versione di Windows di destinazione.  
   
- I progetti per applicazioni di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contengono riferimenti a tutti i file WinMD in [!INCLUDE[win8](../includes/win8-md.md)] SDK per impostazione predefinita all'atto della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella Riferimenti in**Esplora soluzioni** indica il riferimento all'intero SDK [!INCLUDE[win8](../includes/win8-md.md)]. Di conseguenza, nel Sottogruppo di base in Gestione riferimenti non verrà enumerato alcuno degli assembly da [!INCLUDE[win8](../includes/win8-md.md)] SDK e verrà visualizzato invece un messaggio: "‪Si è già fatto riferimento al Windows SDK. Utilizzare il Visualizzatore oggetti per esplorare i riferimenti nel Windows SDK".  
+ I progetti per applicazioni di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contengono riferimenti a tutti i file WinMD in [!INCLUDE[win8](../includes/win8-md.md)] SDK per impostazione predefinita all'atto della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella Riferimenti in**Esplora soluzioni** indica il riferimento all'intero SDK [!INCLUDE[win8](../includes/win8-md.md)]. Di conseguenza, il sottogruppo di base in Gestione riferimenti non verrà enumerato alcuno degli assembly dal [!INCLUDE[win8](../includes/win8-md.md)] SDK e verrà invece visualizzato un messaggio: "‪Si è già fatto riferimento all'SDK Windows. Utilizzare il Visualizzatore oggetti per esplorare i riferimenti nel Windows SDK".  
   
  Nei progetti desktop, il Sottogruppo di base non viene visualizzato per impostazione predefinita. È possibile aggiungere Windows Runtime aprendo il menu di scelta rapida del nodo del progetto, scegliendo **Scarica progetto**, aggiungendo il frammento seguente e riaprendo il progetto (nel nodo del progetto scegliere **Ricarica progetto**). Quando si apre la finestra di dialogo **Gestione riferimenti**, viene visualizzato il sottogruppo di base.  
   
@@ -221,8 +216,5 @@ ms.locfileid: "49917556"
  La barra di ricerca della finestra di dialogo **Gestione riferimenti** viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, non verrà restituito alcun risultato a meno che la soluzione non sia costituita da un nome di progetto contenente il termine "sistema".  
   
 ## <a name="see-also"></a>Vedere anche  
- [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [(NIB) Procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)
-
-
-
