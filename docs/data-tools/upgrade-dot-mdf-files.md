@@ -12,15 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cf68127d875ba4c785f10319cabdd96a3c11adc2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996194"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943779"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
 
@@ -70,9 +69,9 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
         -   Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, dove V12 è LocalDB 2014 e V13 è LocalDB 2016.
 
-    -   **Collegare un file di database**: Il percorso fisico del database primario *mdf* file.
+    -   **Collegare un file di database**: il percorso fisico del database primario *mdf* file.
 
-    -   Nome &logico: Il nome che si desidera utilizzare con il file.
+    -   **Nome logico**: il nome che si desidera utilizzare con il file.
 
 3.  Selezionare il pulsante **OK** .
 

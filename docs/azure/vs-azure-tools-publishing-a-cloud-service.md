@@ -4,18 +4,17 @@ description: Informazioni su come pubblicare progetti di servizi cloud di Azure 
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: bfc284b06274bfae625dcaa0dbebb5fc7d414b64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 440e5198cf05168cffb43ba8c81453413e7754dd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55140546"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911702"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Pubblicazione di un servizio cloud con Visual Studio
 
@@ -80,7 +79,7 @@ La procedura seguente presuppone che si stia utilizzando la procedura guidata **
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Abilitare Distribuzione Web quando si pubblica l'applicazione
 
-1. Per abilitare l'opzione **Abilita Distribuzione Web per tutti i ruoli Web** , è prima necessario configurare le connessioni di Desktop remoto. Selezionare **Abilita Desktop remoto per tutti i ruoli** e quindi specificare le credenziali usate per connettersi in remoto nella casella **Configurazione Desktop remoto** visualizzata. Vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+1. Per abilitare l'opzione **Abilita Distribuzione Web per tutti i ruoli Web**, è prima necessario configurare le connessioni di Desktop remoto. Selezionare **Abilita Desktop remoto per tutti i ruoli** e quindi specificare le credenziali usate per connettersi in remoto nella casella **Configurazione Desktop remoto** visualizzata. Vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
 1. Per abilitare Distribuzione Web per tutti i ruoli web nell'applicazione, selezionare **Abilita Distribuzione Web per tutti i ruoli web**.
 

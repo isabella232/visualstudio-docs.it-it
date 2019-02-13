@@ -70,7 +70,7 @@ Una stringa di connessione è un'impostazione che fornisce informazioni di conne
 
 Per creare una stringa di connessione, selezionare **Aggiungi impostazione** e impostare **Tipo** su "Stringa di connessione".
 
-Per le stringhe di connessione nuove o esistenti, selezionare **...** * a destra del campo **Valore** per aprire la finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**:
+Per le stringhe di connessione nuove o esistenti, selezionare **...*** a destra del campo **Valore** per aprire la finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**:
 
 1. In **Connetti con** scegliere l'opzione **Sottoscrizione** per selezionare un account di archiviazione da una sottoscrizione. Visual Studio otterrà quindi le credenziali dell'account di archiviazione automaticamente dal file `.publishsettings`.
 1. Se si seleziona **Credenziali immesse manualmente**, è possibile specificare il nome e la chiave dell'account direttamente, usando le informazioni presenti nel portale di Azure. Per copiare la chiave dell'account:
