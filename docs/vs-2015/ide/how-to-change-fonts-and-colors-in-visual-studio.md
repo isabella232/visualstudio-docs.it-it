@@ -1,13 +1,9 @@
 ---
-title: 'Procedura: Modificare tipi di carattere e colori'
-ms.custom: ''
+title: 'Procedura: modificare tipi di carattere e colori'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -15,21 +11,21 @@ ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 017494f4241c74f2c319f918433f1072b7097a9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53915361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760347"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori in Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile personalizzare il colore della cornice e delle finestre degli strumenti dell'IDE in Visual Studio in diversi modi.
 
 > [!TIP]
->  Per informazioni su come modificare i colori dell'editor del codice, vedere [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Per informazioni su come modificare i colori dell'editor del codice, vedere [Procedura: Modificare i tipi di carattere e i colori usati nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Modificare il tema colori dell'IDE
 
@@ -70,4 +66,4 @@ ms.locfileid: "53915361"
 5.  Nell'elenco **Dimensione** scegliere una dimensione di testo, quindi fare clic sul pulsante **OK**.
 
 ## <a name="see-also"></a>Vedere anche
- [Funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [come: Modificare i tipi di carattere e i colori dell'editor.
+ [Funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [come: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

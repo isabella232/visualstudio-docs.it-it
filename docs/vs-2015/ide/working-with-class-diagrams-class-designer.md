@@ -1,14 +1,9 @@
 ---
 title: Utilizzo dei diagrammi classi (Progettazione classi) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams
 - documentation, using class diagrams
@@ -20,13 +15,13 @@ ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306709"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834100"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilizzo dei diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +69,4 @@ I diagrammi classi consentono di comprendere la struttura delle classi dei proge
 ## <a name="see-also"></a>Vedere anche  
  [Viewing Types and Relationships (Class Designer)](../ide/viewing-types-and-relationships-class-designer.md)  (Visualizzazione dei tipi e delle relazioni (Progettazione classi))  
  [Procedura: Personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [Procedura: Rimuovere le forme dei tipi dai diagrammi classi (Progettazione classi)](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
-
-
-
+ [Procedura: Rimuovere le forme dei tipi dai diagrammi classi (Progettazione classi)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

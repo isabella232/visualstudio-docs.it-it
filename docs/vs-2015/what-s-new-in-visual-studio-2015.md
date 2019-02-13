@@ -3,10 +3,7 @@ title: Novità di Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790733"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -183,18 +180,18 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 ### <a name="notification-hub"></a>Hub di notifica
  L'interfaccia utente per l'hub di notifica è stata semplificata per consentire di eseguire facilmente un'analisi rapida. Sono stati aggiunti altri tipi di notifiche tra cui quelle per problemi di prestazioni, problemi di rendering e arresti anomali del sistema e ora è possibile scegliere di non visualizzare più una notifica. Per altre informazioni, vedere [Notifiche di Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Individuare che cosa è successo al codice (solo edizioni Enterprise e Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: cercare informazioni sul codice (solo Enterprise e Professional Edition)
  CodeLens consente di rimanere concentrati sulle proprie attività mentre si cercano informazioni sul codice senza uscire dall'editor. È possibile esaminare le modifiche e altri riferimenti della cronologia per elementi di lavoro, bug, revisioni del codice e così via per il codice archiviato in Visual Studio Team Services (VSTS) o in Team Foundation Server (TFS).
 
  In Visual Studio Enterprise e Visual Studio Professional ora è possibile:
 
 - Ottenere la cronologia per un intero file di codice nell'editor di Visual Studio.
 
-   ![CodeLens Ottieni dettagli dei file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: ottenere i dettagli sul file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Visualizzare un grafico che mostra le persone che hanno modificato il codice. consentendo di individuare i criteri delle modifiche del team e di valutarne l'impatto.
 
-   ![CodeLens Vedere cronologia delle modifiche di codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: visualizzare la cronologia delle modifiche del codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
 
 - Individuare facilmente la data delle ultime modifiche apportate al codice.
 

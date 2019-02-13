@@ -1,13 +1,9 @@
 ---
 title: Compilazione e creazione di build
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
@@ -15,13 +11,13 @@ ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53931064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779449"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ ms.locfileid: "53931064"
 |Uso di Team Foundation Build|- È possibile automatizzare il processo di compilazione. È possibile ad esempio compilare uno o più progetti di notte o ogni volta che il codice viene controllato. È inoltre possibile compilare progetti nei server di compilazione condivisi anziché nel computer di sviluppo.<br />- È possibile specificare rapidamente il codice da compilare, i test da eseguire e altre opzioni comuni.<br />- È possibile modificare il flusso di lavoro di compilazione e, se necessario, creare attività di compilazione per eseguire attività estremamente personalizzate.|[Compilare l'applicazione](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>Compilazione nell'IDE
- Quando si crea un progetto, vengono definite le relative configurazioni di compilazione predefinite a cui viene assegnata una configurazione di compilazione della soluzione per fornire un contesto per le compilazioni. Le configurazioni per la soluzione definiscono il modo in cui i progetti nella soluzione vengono compilati e distribuiti. Le configurazioni di progetto sono un set di proprietà di progetto univoche per una piattaforma e un tipo di compilazione (ad esempio versione Win32). È possibile modificare le configurazioni predefinite e creare configurazioni personalizzate. Per altre informazioni, vedere [Introduzione a Creazione progetti](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7) e [NIB procedura: Modificare le proprietà del progetto e le impostazioni di configurazione](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Quando si crea un progetto, vengono definite le relative configurazioni di compilazione predefinite a cui viene assegnata una configurazione di compilazione della soluzione per fornire un contesto per le compilazioni. Le configurazioni per la soluzione definiscono il modo in cui i progetti nella soluzione vengono compilati e distribuiti. Le configurazioni di progetto sono un set di proprietà di progetto univoche per una piattaforma e un tipo di compilazione (ad esempio versione Win32). È possibile modificare le configurazioni predefinite e creare configurazioni personalizzate. Per altre informazioni, vedere [Introduzione a Progettazione progetti](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) e [Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Nell'IDE è possibile eseguire le attività aggiuntive seguenti:
 
@@ -57,4 +53,4 @@ ms.locfileid: "53931064"
 -   Migliorare le prestazioni di compilazione utilizzando compilazioni parallele. Per altre informazioni, vedere [Building Multiple Projects in Parallel with MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) (Compilazione di più progetti in parallelo con MSBuild) o il post di blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ottimizzazione del parallelismo di compilazione C++).
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Come si fa: Creare e rimuovere dipendenze del progetto.
+ [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Come si fa: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md)

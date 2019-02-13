@@ -1,25 +1,20 @@
 ---
 title: 'Passaggio 1: creare un progetto di Windows Forms Application | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: add477fd77731f81da4cc0ee94f7f7d0c7a09cb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780469"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: creare un progetto di Windows Forms Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,6 +73,3 @@ Pulsante della barra degli strumenti Salva tutto
 -   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: eseguire il programma](../ide/step-2-run-your-program.md).  
   
 -   Per tornare all'argomento introduttivo, vedere [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md) (Esercitazione 1: creare un visualizzatore di immagini).
-
-
-

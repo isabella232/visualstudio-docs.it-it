@@ -1,11 +1,7 @@
 ---
 title: Ottimizzare i tempi di avvio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing startup time [Visual Studio]
@@ -14,13 +10,13 @@ ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a17b8955d6c81c182523a7616f927eabd8703632
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780275"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ Se Visual Studio rileva un avvio lento, viene visualizzato un messaggio popup ch
 
 ![Gestisci prestazioni di Visual Studio -finestra popup](../ide/media/vside-perfdialog-popup.PNG "Gestisci prestazioni di Visual Studio - finestra popup")
 
-Il **Gestisci prestazioni di Visual Studio** nella finestra di dialogo ha due categorie: Estensioni e finestre degli strumenti
+La finestra di dialogo **Gestisci prestazioni di Visual Studio** include due categorie: **Estensioni** e **Finestre degli strumenti**.
 
 ### <a name="control-extensions"></a>Controllare le estensioni
 Se un'estensione sta rallentando l'avvio di Visual Studio, essa viene visualizzata nella finestra di dialogo **Gestisci prestazioni di Visual Studio** quando si sceglie uno dei tipi di estensione. Se l'impatto sul tempo di avvio (indicato nella sezione **Impatto**) è eccessivamente elevato, è possibile scegliere di disabilitare sempre l'estensione all'avvio scegliendo il pulsante **Disabilita**. È possibile riabilitare l'estensione per le sessioni future mediante il Gestore estensioni o la finestra di dialogo Gestisci prestazioni di Visual Studio.
@@ -47,8 +43,8 @@ Oltre alle estensioni di avvio, è anche possibile disabilitare le estensioni ca
 ### <a name="control-tool-windows"></a>Controllare le finestre degli strumenti
 Se una finestra degli strumenti sta rallentando l'avvio di Visual Studio, è possibile scegliere di lasciare il comportamento predefinito (senza alcun vantaggio per la velocità di avvio) oppure ignorarlo scegliendo uno dei due comportamenti seguenti:
 
-- Non visualizzare la finestra all'avvio Se si sceglie questa opzione, la finestra degli strumenti specificata verrà sempre chiusa all'apertura di Visual Studio, anche se lasciato aperto in una sessione precedente. È possibile aprire la finestra degli strumenti dal menu.
-- Nascondi automaticamente la finestra all'avvio Se una finestra degli strumenti è stata lasciata aperta in una sessione precedente, questa opzione verrà compresso gruppo della finestra degli strumenti all'avvio per evitarne l'inizializzazione della finestra degli strumenti. Questa è una scelta ottimale se si usa spesso una finestra degli strumenti, poiché la finestra degli strumenti rimane disponibile senza compromettere il tempo di avvio di Visual Studio.
+- **Non visualizzare la finestra all'avvio:** se si sceglie questa opzione, la finestra degli strumenti specificata verrà sempre chiusa all'apertura di Visual Studio, anche se era stata lasciata aperta in una sessione precedente. È possibile aprire la finestra degli strumenti dal menu.
+- **Nascondi automaticamente la finestra all'avvio:** se una finestra degli strumenti è stata lasciata aperta in una sessione precedente, scegliendo questa opzione il gruppo della finestra degli strumenti viene compresso all'avvio per evitarne l'inizializzazione. Questa è una scelta ottimale se si usa spesso una finestra degli strumenti, poiché la finestra degli strumenti rimane disponibile senza compromettere il tempo di avvio di Visual Studio.
 
 ![Gestisci prestazioni di Visual Studio -finestre degli strumenti](../ide/media/vside-perfdialog-toolwindows.PNG "Gestisci prestazioni di Visual Studio - finestre degli strumenti")
 
