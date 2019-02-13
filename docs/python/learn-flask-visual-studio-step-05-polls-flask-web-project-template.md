@@ -3,7 +3,6 @@ title: Informazioni sull'esercitazione Flask in Visual Studio, passaggio 5, mode
 titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità dei modelli Progetto Web Flask di sondaggi e Progetto Web Flask/Jade di sondaggi.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b265224198cff87f808a946d4fa1397ec1db0e7
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 38b77b4461303cd4bf21b98c63c1ae0b93a4cdc6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231922"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913392"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello Progetto Web Flask di sondaggi
 

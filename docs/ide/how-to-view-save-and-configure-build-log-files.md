@@ -1,7 +1,6 @@
 ---
 title: 'Procedura: Visualizzare, salvare e configurare file di log di compilazione | Microsoft Docs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabfb6b9209ff57249ceb79460c2bc75e7d63bf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026181"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925228"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 
@@ -43,7 +42,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 3.  Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere uno dei valori seguenti e quindi scegliere il pulsante **OK**.
 
-    |Livello di dettaglio|DESCRIZIONE|
+    |Livello di dettaglio|Descrizione|
     | - |-----------------|
     |**Quiet**|Visualizza solo un riepilogo della compilazione.|
     |**Minimo**|Visualizza un riepilogo della compilazione e gli errori, gli avvisi e i messaggi classificati con priorità elevata.|
