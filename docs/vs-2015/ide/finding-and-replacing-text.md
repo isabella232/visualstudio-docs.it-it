@@ -1,14 +1,9 @@
 ---
 title: Ricerca e sostituzione di testo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273442"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756878"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,10 @@ ms.locfileid: "49273442"
  Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.  
   
 ### <a name="creating-custom-search-folder-sets"></a>Creazione di set personalizzati di cartelle di ricerca  
- È possibile definire un ambito di ricerca scegliendo il **Seleziona cartelle di ricerca** pulsante (sembra **...** ) accanto al **Cerca in** casella. Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca ed è possibile salvare la specifica in modo da poterla riutilizzare successivamente. È possibile specificare le cartelle in un computer remoto solo se è stato eseguito il mapping della relativa unità nel computer locale.  
+ È possibile definire un ambito di ricerca scegliendo il pulsante **Seleziona cartelle di ricerca** (simile a **...** ) accanto alla casella **Cerca in**. Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca ed è possibile salvare la specifica in modo da poterla riutilizzare successivamente. È possibile specificare le cartelle in un computer remoto solo se è stato eseguito il mapping della relativa unità nel computer locale.  
   
 ### <a name="creating-custom-component-sets"></a>Creazione di set di componenti personalizzati  
  È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi (.dll, .tlb, .olb, .exe o .ocx). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

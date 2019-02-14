@@ -1,5 +1,5 @@
 ---
-title: Get_undecoratednameex | Microsoft Docs
+title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928829"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera o parte di un nome non decorato per C++ decorati nome (collegamento).  
@@ -50,7 +50,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.  
   
-|Flag|Value|Description|  
+|Flag|Valore|Descrizione|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|  

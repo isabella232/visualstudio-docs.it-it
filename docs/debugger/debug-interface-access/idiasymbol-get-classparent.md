@@ -1,5 +1,5 @@
 ---
-title: Get_classparent | Microsoft Docs
+title: IDiaSymbol::get_classParent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f91ff64337fd9a1d18fa9ae63743437fa1287b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b224b0311da78b709f7782f4f66e02869c595d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864816"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992841"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Recupera un riferimento all'elemento padre classe del simbolo.  
@@ -42,7 +42,7 @@ HRESULT get_classParent ( 
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Description|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  

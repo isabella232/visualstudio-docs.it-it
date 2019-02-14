@@ -1,14 +1,9 @@
 ---
 title: Proprietà file, JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909733"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780369"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49909733"
   
 - **Contenuto** - Il file è incluso nel manifesto di pacchetto. Ad esempio, questa impostazione è il valore predefinito di un file .htm, .js, .css, immagine, audio o video.  
   
-- **Manifesto** : il file non è incluso nel manifesto del pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.  
+- **Manifesto** - Il file non è incluso nel manifesto di pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.  
   
 - **Risorsa** - Il file non è incluso nel manifesto di pacchetto. Il contenuto del file viene invece indicizzato nel file di indice risorse (PRI) che va inserito nel manifesto di pacchetto. Viene usato generalmente per i file di risorse.  
   
@@ -96,13 +91,10 @@ ms.locfileid: "49909733"
  Visualizza il percorso al file SDK cui viene fatto riferimento.  
   
 ### <a name="uri"></a>URI  
- Consente di visualizzare l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.  
+ Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.  
   
 ### <a name="version"></a>Versione  
  Visualizza la versione del riferimento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [NIB: Proprietà del progetto (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB: Proprietà del progetto (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

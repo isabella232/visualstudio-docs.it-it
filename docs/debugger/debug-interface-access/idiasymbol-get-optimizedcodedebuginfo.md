@@ -42,7 +42,7 @@ HRESULT get_optimizedCodeDebugInfo(
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Description|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
   

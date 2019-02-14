@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Creare modelli di elementi | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,13 +13,13 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788248"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: creare modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +155,7 @@ I passaggi inclusi nella [prima procedura](../ide/how-to-create-item-templates.m
   
 7.  In Esplora risorse selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere Invia a, quindi Cartella compressa. I file selezionati verranno compressi in un file ZIP.  
   
-8.  Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2015, la directory predefinita è... \Users\\< nomeutente\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Per altre informazioni, vedere Procedura: individuare e organizzare modelli di progetto e modelli di elementi.  
+8.  Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2015, la directory predefinita è... \Utenti\\<nomeutente\>\Documenti\Visual Studio 2015\Templates\ItemTemplates\\. Per altre informazioni, vedere Procedura: individuare e organizzare modelli di progetto e modelli di elementi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   

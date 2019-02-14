@@ -61,13 +61,13 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
  L'elemento `deployment` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v1` . L'elemento presenta gli attributi seguenti.  
 
 
-| Attributo | Description |
+| Attributo | Descrizione |
 |--------------------------| - |
 | `install` | Obbligatorio. Specifica se l'applicazione definisce una presenza in di Windows **avviare** dal menu e nel Pannello di controllo **Aggiungi / Rimuovi programmi** dell'applicazione. I valori validi sono `true` e `false`. Se `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eseguirà sempre la versione più recente di questa applicazione dalla rete e non riconoscerà il `subscription` elemento. |
 | `minimumRequiredVersion` | Facoltativo. Specifica la versione minima dell'applicazione che è possibile eseguire sul client. Se il numero di versione dell'applicazione è inferiore al numero di versione specificato nel manifesto di distribuzione, l'applicazione non verrà eseguita. I numeri di versione devono essere specificati nel formato `N.N.N.N`, dove `N` è un intero senza segno. Se il `install` attributo è `false`, `minimumRequiredVersion` non deve essere impostato. |
 | `mapFileExtensions` | Facoltativo. Il valore predefinito è `false`. Se `true`, tutti i file nella distribuzione devono avere l'estensione. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rimuoverà questa estensione questi file, non appena li scarica dal server Web. Se si pubblica l'applicazione usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], questa estensione aggiunta automaticamente a tutti i file. Questo parametro consente di tutti i file all'interno di un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione per essere scaricato da un server Web che impedisce la trasmissione dei file che terminano con "unsafe" estensioni, ad esempio .exe. |
 | `disallowUrlActivation` | Facoltativo. Il valore predefinito è `false`. Se `true`, impedisce a un'applicazione installata in corso l'avvio facendo clic sull'URL o immettendo l'URL in Internet Explorer. Se il `install` attributo non è presente, questo attributo viene ignorato. |
-| `trustURLParameters` | Facoltativo. Il valore predefinito è `false`. Se `true`, l'URL può contenere parametri di stringa di query che vengono passati all'applicazione, molto come argomenti della riga di comando vengono passati a un'applicazione della riga di comando. Per altre informazioni, vedere [Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se il `disallowUrlActivation` attributo è `true`, `trustUrlParameters` deve essere escluso dal manifesto o impostata esplicitamente su `false`. |
+| `trustURLParameters` | Facoltativo. Il valore predefinito è `false`. Se `true`, l'URL può contenere parametri di stringa di query che vengono passati all'applicazione, molto come argomenti della riga di comando vengono passati a un'applicazione della riga di comando. Per altre informazioni, vedere [procedura: recuperare le informazioni di stringa di Query in un'applicazione ClickOnce Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se il `disallowUrlActivation` attributo è `true`, `trustUrlParameters` deve essere escluso dal manifesto o impostata esplicitamente su `false`. |
 
  Il `deployment` elemento contiene anche i seguenti elementi figlio.  
 
@@ -87,7 +87,7 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
 
  Il `expiration` elemento supporta gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`maximumAge`|Obbligatorio. Identifica la modalità precedente dovrebbe diventare l'aggiornamento corrente prima che l'applicazione esegue una verifica dell'aggiornamento. L'unità di tempo è determinata dal `unit` attributo.|  
 |`unit`|Obbligatorio. Identifica l'unità di tempo per `maximumAge`. Le unità valide sono `hours`, `days`, e `weeks`.|  
@@ -98,7 +98,7 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
  Questo elemento è figlio dell'elemento `deployment` e ha l'attributo seguente.  
 
 
-| Attributo | Description |
+| Attributo | Descrizione |
 |------------| - |
 | `codebase` | Obbligatorio. Identifica la posizione del manifesto di distribuzione che viene usato per aggiornare, come Uniform Resource Identifier (URI), il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo elemento consente inoltre di percorsi di aggiornamento per le installazioni basate sul CD di inoltro. Deve essere un URI valido. |
 

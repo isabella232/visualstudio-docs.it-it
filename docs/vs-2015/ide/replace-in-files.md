@@ -1,14 +1,9 @@
 ---
 title: Sostituisci nei file | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -20,21 +15,21 @@ ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779242"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sostituisci nei file * * consente di cercare nel codice di un set specificato di file una stringa o un'espressione e modificare alcune o tutte le corrispondenze trovate. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.  
+Sostituisci nei file consente di cercare una stringa o un'espressione nel codice di un determinato set di file e di modificare alcune o tutte le corrispondenze trovate. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  È possibile usare uno dei metodi seguenti per visualizzare l'opzione **Sostituisci nei file** nella finestra **Trova e sostituisci**.  
   
@@ -99,6 +94,3 @@ Sostituisci nei file * * consente di cercare nel codice di un set specificato di
  [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)   
  [Cerca nei file](../ide/find-in-files.md)   
  [Comandi di Visual Studio](../ide/reference/visual-studio-commands.md)
-
-
-

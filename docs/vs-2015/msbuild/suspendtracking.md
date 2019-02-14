@@ -1,14 +1,9 @@
 ---
 title: SuspendTracking | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - SuspendTracking
 api_location:
@@ -21,13 +16,13 @@ ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37f70e4776a2a93a593214c18ab07f4fcfcf0bcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 91a72045e7e03a21bd827be1501251db823ca6ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782545"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,10 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- [Un HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con [riuscito] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) bit impostato se verifica è stata sospesa.  
+ <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> con il bit SUCCEEDED impostato se la verifica è stata sospesa.  
   
 ## <a name="requirements"></a>Requisiti  
  **Intestazione:** FileTracker.h  
   
 ## <a name="see-also"></a>Vedere anche  
  [ResumeTracking](../msbuild/resumetracking.md)
-
-
-

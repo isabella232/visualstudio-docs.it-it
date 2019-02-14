@@ -1,26 +1,21 @@
 ---
 title: Uso di code coverage per determinare la quantità di codice testato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782659"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Uso di code coverage per determinare la quantità di codice testato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Per determinare quale percentuale del codice del progetto viene effettivamente t
   
 2.  Per vedere quali righe sono state eseguite, scegliere l'icona ![Mostra colorazione code coverage](../test/media/codecoverage-showcoloringicon.png "Icona Mostra colorazione code coverage")**Mostra colorazione code coverage**.  
   
-     Per modificare i colori o per usare il grassetto, scegliere **Strumenti**, **Opzioni**, **Ambiente**, **Tipi di carattere e colori**, **Visualizza impostazioni per: Editor di testo**. In **Elementi visualizzati** regolare gli elementi di code coverage.  
+     Per modificare i colori o per usare il grassetto, scegliere **degli strumenti**, **opzioni**, **ambiente**, **Fonts and Colors**, **Mostra impostazioni per: Editor di testo**. In **Elementi visualizzati** regolare gli elementi di code coverage.  
   
 3.  Se i risultati mostrano un code coverage basso, esaminare quali parti del codice non vengono analizzate e scrivere altri test per includerle nel code coverage. I team di sviluppo in genere mirano a coprire l'80% del code coverage. In alcune situazioni, un code coverage basso è accettabile. Ad esempio, un code coverage basso è accettabile quando il codice viene generato da un modello standard.  
   
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     Se si dispone di più di una definizione di origine del test, ripetere questo passaggio per ciascuna di esse.  
   
-   - <em>Non è presente alcun campo denominato **tipo di File di impostazioni di esecuzione</em>*. *  
+   - <em>Non è presente alcun campo denominato *Tipo di file di impostazioni esecuzione test</em>.*  
   
       In **Test automatizzati** selezionare **Assembly di test** e premere il pulsante con i puntini di sospensione **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test** in **Test Runner** scegliere **Visual Studio Test Runner**.  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Risorse esterne  
   
 ### <a name="guidance"></a>Materiale sussidiario  
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 2: Testing unità Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md)  (Personalizzazione dell'analisi del code coverage)  
  [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md)   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)
-
-
-

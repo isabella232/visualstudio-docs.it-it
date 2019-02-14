@@ -3,7 +3,6 @@ title: 'Esercitazione: Introduzione a Visual Basic'
 description: Informazioni dettagliate su come creare un'app console Visual Basic in Visual Studio.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424499"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155695"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: Introduzione a Visual Basic in Visual Studio
 
@@ -142,10 +141,10 @@ Un'app console riceve input e visualizza output in una finestra della riga di co
 L'esercitazione è stata completata. Per altre informazioni, vedere l'esercitazione seguente.
 
 > [!div class="nextstepaction"]
-> [Esercitazione video: Visual Basic fundamentals for absolute beginners](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507) (Concetti di base di Visual Basic per principianti)
+> [Compilare una libreria .NET Standard con Visual Basic e .NET Core SDK in Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Novità di Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense per i file di codice di Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Procedure dettagliate relative al linguaggio Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Informazioni di riferimento per il linguaggio Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [IntelliSense per i file di codice di Visual Basic](../../ide/visual-basic-specific-intellisense.md)

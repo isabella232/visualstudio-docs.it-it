@@ -26,7 +26,7 @@ Il [VTable](../../debugger/debug-interface-access/vtable.md) simbolo include un 
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Se la classe dell'oggetto VTable è contrassegnata come costante.|  
 |[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Numero di voci in VTable.|  

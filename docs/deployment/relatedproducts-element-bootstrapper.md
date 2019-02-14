@@ -57,7 +57,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
   
  `DependsOnProduct` ha l'attributo seguente.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
   
@@ -69,7 +69,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
   
  `IncludesProduct` ha l'attributo seguente.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
   

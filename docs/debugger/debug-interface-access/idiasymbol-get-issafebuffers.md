@@ -1,5 +1,5 @@
 ---
-title: Get_issafebuffers | Microsoft Docs
+title: IDiaSymbol::get_isSafeBuffers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8ff4b0477a4d70cebc42fb99e17c09ac37e062
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 623163353f0e1c95c073eeef91518617ba68c658
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946370"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922639"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Recupera un flag che specifica se viene usata la direttiva del preprocessore per un buffer sicuro. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.  

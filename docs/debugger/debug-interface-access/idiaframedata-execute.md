@@ -37,7 +37,7 @@ HRESULT execute ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|Non è possibile eseguire uno stack frame nel codice di prologo.|  
 |E_DIA_SYNTAX|Analizzare l'errore nel programma di frame.|  

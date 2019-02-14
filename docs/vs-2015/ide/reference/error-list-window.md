@@ -84,7 +84,7 @@ NOTA
  Codice  
  Restituisce il codice di errore.  
   
- Description  
+ Descrizione  
  Visualizza il testo della voce.  
   
  Progetto  

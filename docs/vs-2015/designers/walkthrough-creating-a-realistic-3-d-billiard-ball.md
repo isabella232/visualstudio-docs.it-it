@@ -1,27 +1,22 @@
 ---
-title: 'Procedura dettagliata: creazione di una palla da biliardo tridimensionale realistica | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione di una palla da biliardo 3D realistica | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793305"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procedura dettagliata: creazione di una palla da biliardo tridimensionale realistica
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo 3D realistici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata viene illustrato come creare una palla da biliardo tridimensionale realistica utilizzando la Modalità progettazione shader e l'editor di immagini in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'aspetto tridimensionale della palla da biliardo viene raggiunto combinando diverse tecniche di shader con le risorse appropriate di trama.  
@@ -193,7 +188,7 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
   
    ![Layout della mappa cubo dell'ambiente](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   L'immagine nella parte superiore è la faccia del cubo Y (+ Y) positiva; al centro, da sinistra a destra, è il – X, + Z, + X e – Z; facce del cubo nella parte inferiore è la faccia del cubo-Y.  
+   L'immagine nella parte superiore è la faccia del cubo Y (+Y) positiva, al centro, da sinistra a destra, ci sono le facce del cubo -X, +Z e -Z, mentre nella parte inferiore c'è la faccia del cubo -Y.  
   
    Ora è possibile modificare lo shader per integrare l'esempio di mappa cubo nel resto dello shader.  
   
@@ -221,10 +216,7 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Editor di immagini](../designers/image-editor.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)
-
-
-

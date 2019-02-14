@@ -31,7 +31,7 @@ IDiaAddressMap : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaAddressMap`.  
   
-|Metodo|Description|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Indica se è stato definito un mapping di indirizzi per una determinata sessione.|  
 |[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Specifica se la mappa indirizzi deve essere utilizzata per convertire gli indirizzi di simboli.|  

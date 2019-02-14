@@ -1,14 +1,9 @@
 ---
 title: 'DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0030
 - vs.performance.rules.DA0030
@@ -17,13 +12,13 @@ ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 16d6275074b3cae6b186fe9bb113e32c33e284af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801479"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51796753"
 Id regola | DA0030 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i modelli di utilizzo di database e i dati chiave accederà ritardi. Provare a profilatura nuovamente l'applicazione con l'opzione profilatura interazione tra livelli abilitata. |  
+| Messaggio | La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i modelli di utilizzo di database e i dati chiave accederà ritardi. Abilitare l'opzione Profilatura interazione tra livelli e provare a eseguire di nuovo la profilatura dell'applicazione.  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  
@@ -48,6 +43,3 @@ Id regola | DA0030 |
  Questa regola è solo a scopo informativo e potrebbe non richiedere azione correttiva.  
   
  Per informazioni sull'aggiunta di dati di interazione tra livelli ai dati di profilatura dall'IDe di Visual Studio, vedere [Raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md). Per informazioni sull'aggiunta di dati di interazione tra livelli dalla riga di comando, vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md).
-
-
-

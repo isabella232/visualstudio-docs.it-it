@@ -1,14 +1,9 @@
 ---
 title: Informazioni di riferimento su MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f1bded7e322387363bddb6b3aa2e6d7913d2da8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773173"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ ms.locfileid: "49292304"
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Cenni preliminari su MSBuild](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c) introduce [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e vengono forniti collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
+ [MSBuild ](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c): offre una panoramica di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e i collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
   
  <xref:Microsoft.Build.Conversion>  
  Contiene informazioni di riferimento sullo spazio dei nomi Conversion  
@@ -100,6 +95,3 @@ ms.locfileid: "49292304"
   
  <xref:Microsoft.Build.Utilities>  
  Contiene informazioni di riferimento sullo spazio dei nomi Utilities
-
-
-

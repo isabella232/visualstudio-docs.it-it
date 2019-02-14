@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e6854a099548b8db97b26a2b3fe70c7870fb2af2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894129"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964938"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Espone i dettagli degli offset di posizione e la memoria base del modulo o immagine.  
@@ -31,7 +31,7 @@ IDiaImageData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaImageData`.  
   
-|Metodo|Description|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera la posizione nella memoria virtuale del modulo relativo all'applicazione.|  
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera la posizione nella memoria virtuale dell'immagine.|  

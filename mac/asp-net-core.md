@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296476"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910987"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -41,7 +42,7 @@ Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un n
 
 ![Vista del nuovo progetto ASP.NET Core vuoto](media/asp-net-core-image4.png)
 
-Progetto ASP.NET Core vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Crea anche una cartella Dependencies (Dipendenze), che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni di MSBuild per la compilazione del progetto:
+Il progetto per un'applicazione Web vuota di ASP.NET Core crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Crea anche una cartella Dependencies (Dipendenze), che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni di MSBuild per la compilazione del progetto:
 
 ![Riquadro della soluzione che visualizza le dipendenze](media/asp-net-core-image12.png)
 
@@ -236,3 +237,7 @@ Per altre informazioni sui passaggi successivi, fare riferimento alle guide segu
 - Documentazione di [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).
+
+## <a name="related-video"></a>Video correlato
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

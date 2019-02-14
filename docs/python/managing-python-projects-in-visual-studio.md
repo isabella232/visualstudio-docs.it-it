@@ -2,7 +2,6 @@
 title: Gestire progetti di applicazioni Python
 description: I progetti in Visual Studio gestiscono le dipendenze tra i file e la complessità delle relazioni in un'applicazione.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231935"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155864"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -37,8 +36,7 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 
 |   |   |
 |---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) per un'introduzione ai progetti Python (2m 17s). |
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Vedere anche [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Approfondimenti: usare il controllo del codice sorgente con i progetti Python) su youtube.com, 8 minuti e 55 secondi. |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Approfondimenti: usare il controllo del codice sorgente con i progetti Python) su youtube.com, 8 minuti e 55 secondi. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Aggiungere file, assegnare un file di avvio e impostare gli ambienti
 
@@ -65,7 +63,7 @@ In Visual Studio sono disponibili diverse opzioni per configurare un progetto Py
 
 La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 (non tutti i modelli sono disponibili nelle versioni precedenti):
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | [**Da codice Python esistente**](#create-project-from-existing-files) | Crea un progetto di Visual Studio da codice Python esistente in una struttura di cartelle.  |
 | **Applicazione Python** | Struttura di progetto di base per una nuova applicazione Python che contiene un solo file di origine vuoto. Per impostazione predefinita, il progetto viene eseguito nell'interprete della console dell'ambiente globale predefinito, che è possibile modificare [assegnando un altro ambiente](selecting-a-python-environment-for-a-project.md). |

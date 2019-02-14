@@ -1,14 +1,9 @@
 ---
 title: 'DA0014: Frequenze molto elevate di paging di memoria attiva su disco | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAMemoryBound
 - vs.performance.DA0014
@@ -18,13 +13,13 @@ ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba6695b4705a29264f29fa79d23a63062151a62e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 124f640fd5bf049280638408b4b6101e24e8c58b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784438"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frequenze molto elevate di paging di memoria attiva su disco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51730595"
 Id regola | DA0014 |  
 | Categoria | La memoria e Paging |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | È stata rilevata una frequenza molto elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria. |  
+| Messaggio | È stata rilevata una frequenza molto elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria.  
 | Tipo di regola | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.  
@@ -54,6 +49,3 @@ Id regola | DA0014 |
  Se si raccolgono dati del profilo per un'applicazione ASP.NET in un scenario del test di carico, provare a eseguire nuovamente il test di carico su un computer configurato con memoria fisica (o RAM) aggiuntiva.  
   
  È consigliabile ridurre le allocazioni di memoria rivedendo gli algoritmi ed evitando API che usano molta memoria, ad esempio String.Concat e String.Substring.
-
-
-

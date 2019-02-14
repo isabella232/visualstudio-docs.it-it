@@ -1,14 +1,9 @@
 ---
-title: 'Procedura dettagliata: creazione di un frammento di codice | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione di un frammento di codice | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,18 +15,18 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790113"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procedura dettagliata: creazione di un frammento di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È anche possibile aggiungere al codice riferimenti e parametri sostitutivi. È possibile aggiungere il frammento all'installazione di Visual Studio con il pulsante Importa in Gestione frammenti di codice (**Gestione frammenti di codice o strumenti**).  
+Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È anche possibile aggiungere al codice riferimenti e parametri sostitutivi. È possibile aggiungere il frammento all'installazione di Visual Studio usando il pulsante Importa in Gestione frammenti di codice (**Strumenti**, Gestione frammenti di codice... ).  
   
 > [!TIP]
 >  Per informazioni su come scrivere frammenti di codice più facilmente, cercare nel sito Web CodePlex strumenti della community, ad esempio [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
@@ -78,7 +73,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>Per aggiungere un frammento di codice a Visual Studio  
   
-1.  È possibile aggiungere frammenti di codice personalizzati all'installazione di Visual Studio tramite Gestione frammenti di codice. Aprire Gestione frammenti di codice (**Gestione frammenti di codice o strumenti**).  
+1.  È possibile aggiungere frammenti di codice personalizzati all'installazione di Visual Studio tramite Gestione frammenti di codice. Aprire Gestione frammenti di codice (**Strumenti**, Gestione frammenti di codice...).  
   
 2.  Fare clic sul pulsante **Importa**.  
   
@@ -268,6 +263,3 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
-
-
-

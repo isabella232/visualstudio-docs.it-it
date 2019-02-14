@@ -1,14 +1,9 @@
 ---
 title: 'DA0007: Evitare di utilizzare eccezioni per il flusso di controllo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -18,13 +13,13 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a86c36c55d11f91daff8e876e852daed2f222307
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770834"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evitare di utilizzare eccezioni per il flusso di controllo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51737091"
 Id regola | DA0007 |  
 | Categoria di |. Utilizzo di NET Framework |  
 | Metodi di profilatura | Tutti i |  
-| Messaggio | Un numero elevato di eccezioni viene generato in modo coerente. Provare a ridurre l'utilizzo di eccezioni nella logica di programma. |  
+| Messaggio | Un numero elevato di eccezioni viene generato in modo coerente. Provare a ridurre l'utilizzo di eccezioni nella logica di programma.  
 | Tipo di messaggio | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.  
@@ -49,6 +44,3 @@ Id regola | DA0007 |
  Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione Contrassegni. Trovare la colonna che contiene le misurazioni **Eccezioni CLR .NET(@ProcessInstance)\\Eccezioni/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui la gestione delle eccezioni risulta più frequente rispetto alle altre fasi. Usando un profilo di campionamento, provare a identificare le istruzioni throw e i blocchi try/catch che generano eccezioni frequenti. Se necessario, aggiungere logica ai blocchi catch per individuare le eccezioni che vengono gestite più spesso. Dove possibile, sostituire le istruzioni throw o i blocchi catch eseguiti frequentemente con una logica di controllo di flusso o un codice di convalida a bassa complessità.  
   
  Ad esempio, se si rileva che l'applicazione sta gestendo eccezioni DivideByZeroException frequenti, per migliorare le prestazioni dell'applicazione è possibile aggiungere logica al programma per verificare la presenza di denominatori con valori zero.
-
-
-

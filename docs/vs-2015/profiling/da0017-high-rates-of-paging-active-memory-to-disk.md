@@ -1,14 +1,9 @@
 ---
 title: 'DA0017: Frequenze elevate di paging di memoria attiva su disco | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
@@ -17,13 +12,13 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6a7fbe924ee3d0f5dbd142d8e7f7020c6eed1ee5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803488"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Frequenze elevate di paging di memoria attiva su disco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51766580"
 Id regola | DA0017 |  
 | Categoria | La memoria e Paging |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | È stata rilevata una frequenza elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria. |  
+| Messaggio | È stata rilevata una frequenza elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria.  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
@@ -54,6 +49,3 @@ Id regola | DA0017 |
  Se si raccolgono dati del profilo per un'applicazione ASP.NET in un scenario del test di carico, provare a eseguire nuovamente il test di carico su un computer configurato con memoria fisica (o RAM) aggiuntiva.  
   
  È consigliabile ridurre le allocazioni di memoria rivedendo gli algoritmi ed evitando API che usano molta memoria, ad esempio String.Concat e String.Substring.
-
-
-

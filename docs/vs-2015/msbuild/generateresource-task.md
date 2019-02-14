@@ -1,14 +1,9 @@
 ---
 title: Attività GenerateResource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796906"
 ---
 # <a name="generateresource-task"></a>Attività GenerateResource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +57,11 @@ Converte file con estensione txt o resx (formato di risorsa basato su XML) in fi
 |`StronglyTypedNamespace`|Parametro `String` facoltativo.<br /><br /> Specifica lo spazio dei nomi da usare per l'origine della classe generata per la risorsa fortemente tipizzata. Se questo parametro non è specificato, tutte le risorse fortemente tipizzate vengono incluse nello spazio dei nomi globale.|  
 |`TLogReadFiles`|Parametro di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene una matrice di elementi che rappresentano i log di rilevamento delle operazioni di lettura.|  
 |`TLogWriteFiles`|Parametro di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene una matrice di elementi che rappresentano i log di rilevamento delle operazioni di scrittura.|  
-|`ToolArchitecture`|[String] facoltativo (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Consente di determinare se per la generazione di ResGen.exe è necessario o meno usare Tracker.exe.<br /><br /> Deve essere analizzabile rispetto a un membro dell'enumerazione <xref:Microsoft.Build.Utilities.ExecutableType>. Se `String.Empty`, viene usata un'euristica per determinare un'architettura predefinita. Deve essere analizzabile rispetto a un membro dell'enumerazione Microsoft.Build.Utilities.ExecutableType.|  
+|`ToolArchitecture`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String facoltativo.<br /><br /> Consente di determinare se per la generazione di ResGen.exe è necessario o meno usare Tracker.exe.<br /><br /> Deve essere analizzabile rispetto a un membro dell'enumerazione <xref:Microsoft.Build.Utilities.ExecutableType>. Se `String.Empty`, viene usata un'euristica per determinare un'architettura predefinita. Deve essere analizzabile rispetto a un membro dell'enumerazione Microsoft.Build.Utilities.ExecutableType.|  
 |`TrackerFrameworkPath`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il percorso della posizione appropriata di .NET Framework in cui è contenuto il file FileTracker.dll.<br /><br /> Se questo parametro è impostato, l'utente si assume la responsabilità di assicurarsi che il numero di bit del file FileTracker.dll passato corrisponda al numero di bit del file ResGen.exe che intende usare. In caso contrario, la posizione appropriata viene stabilita dall'attività in base alla versione corrente di .NET Framework.|  
 |`TrackerLogDirectory`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica la directory intermedia in cui verranno inseriti i log di rilevamento risultanti dall'esecuzione di questa attività.|  
 |`TrackerSdkPath`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il percorso della posizione appropriata di Windows SDK in cui è contenuto il file Tracker.exe.<br /><br /> Se questo parametro è impostato, l'utente si assume la responsabilità di assicurarsi che il numero di bit del file Tracker.exe passato corrisponda al numero di bit del file ResGen.exe che intende usare. In caso contrario, la posizione appropriata viene stabilita dall'attività in base alla versione corrente di Windows SDK.|  
-|`TrackFileAccess`|Facoltativo [Boolean] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|  
+|`TrackFileAccess`|Parametro [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|  
 |`UseSourcePath`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che è necessario usare la directory del file di input per risolvere i percorsi di file relativi.|  
   
 ## <a name="remarks"></a>Note  
@@ -94,7 +89,7 @@ Converte file con estensione txt o resx (formato di risorsa basato su XML) in fi
  Supponendo che l'assembly si chiami myAssembly, il codice seguente genera una risorsa incorporata denominata someQualifier.someResource.resources:  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Senza il metadato \<LogicalName>, la risorsa verrebbe denominata myAssembly.myResource.resources.  Questo esempio si applica solo a Visual Basic e al processo di compilazione di Visual C#.  
@@ -102,6 +97,3 @@ Converte file con estensione txt o resx (formato di risorsa basato su XML) in fi
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

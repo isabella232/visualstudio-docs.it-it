@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae06a978f1ce75ce174ea610453d8b9b7acc713a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968141"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986670"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pubbliche API non gestite da dfshim.  
@@ -52,7 +52,7 @@ ms.locfileid: "53968141"
   
 ### <a name="parameters"></a>Parametri  
   
-|Parametro|Description|Tipo|  
+|Parametro|Descrizione|Tipo|  
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|Un puntatore al `ActivationURL`.|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|Un puntatore al `PathToDeploymentManifest`.|LPCWSTR|  
@@ -80,11 +80,11 @@ ms.locfileid: "53968141"
   
 ### <a name="parameters"></a>Parametri  
   
-|Parametro|Description|Tipo|  
+|Parametro|Descrizione|Tipo|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Un puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto della distribuzione.|LPCWSTR|  
-|`data`|Riservato per utilizzi futuri. Deve essere NULL.|LPVOID|  
-|`flags`|Riservato per utilizzi futuri. Deve essere 0.|DWORD|  
+|`data`|Riservato per usi futuri. Deve essere NULL.|LPVOID|  
+|`flags`|Riservato per usi futuri. Deve essere 0.|DWORD|  
   
 ### <a name="return-value"></a>Valore restituito  
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  

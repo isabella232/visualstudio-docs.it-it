@@ -1,14 +1,9 @@
 ---
 title: 'DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,13 +12,13 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773287"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51722257"
 Id regola | DA0018 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | Gestire le allocazioni di memoria per raggiungere il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria. |  
+| Messaggio | Gestire le allocazioni di memoria per raggiungere il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.  
 | Tipo di regola | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
@@ -59,7 +54,7 @@ Id regola | DA0018 |
   
 - ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
   
-   oppure  
+   -oppure-  
   
 - esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
   
@@ -74,6 +69,3 @@ Id regola | DA0018 |
   Per limitare i vincoli della memoria virtuale sull'architettura alla dimensione della parte privata di uno spazio degli indirizzi del processo, provare a eseguire questo processo a 32 bit su un computer a 64 bit.  Un processo a 32 bit su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
   
   Un processo a 64 bit eseguito su un computer a 64 bit può acquisire fino a 8 TB di memoria virtuale. È consigliabile compilare di nuovo l'applicazione in modo che venga eseguita come un'applicazione a 64 bit nativa. Questa regola è solo a scopo informativo e potrebbe non richiedere azione correttiva.
-
-
-

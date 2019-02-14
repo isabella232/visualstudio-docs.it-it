@@ -24,7 +24,7 @@ Definisce la propria presenza se un'istanza predefinita del [classe VsgDbg](vsgd
 #define VSG_NODEFAULT_INSTANCE  
 ```  
   
-## <a name="value"></a>Value  
+## <a name="value"></a>Valore  
  Simbolo del preprocessore che tramite la propria presenza o assenza determina se viene fornita un'istanza predefinita della classe `VsgDbg`. Se questo simbolo è definito, non viene fornita alcuna istanza predefinita della classe `VsgDbg`; in caso contrario, viene fornita e inizializzata un'istanza predefinita prima dell'esecuzione del programma.  
   
  L'interfaccia di acquisizione programmatica viene fornita tramite un puntatore con ambito globale, `g_pVsgDbg`.  

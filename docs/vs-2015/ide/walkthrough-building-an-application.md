@@ -1,25 +1,20 @@
 ---
-title: "Procedura dettagliata: compilazione di un'applicazione | Microsoft Docs"
-ms.custom: ''
+title: "Procedura dettagliata: Compilazione di un'applicazione | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799155"
 ---
 # <a name="walkthrough-building-an-application"></a>Procedura dettagliata: compilazione di un'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
 4.  Fare clic sul pulsante **OK** .  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Creare una configurazione della build personalizzata  
- Quando si crea una soluzione, le configurazioni della build di versione e di debug e le relative destinazioni della piattaforma predefinite sono definite automaticamente per la soluzione. È quindi possibile personalizzare queste configurazioni o crearne di proprie. Le configurazioni della build specificano il tipo di compilazione. Le piattaforme di compilazione specificano il sistema operativo a cui è rivolta un'applicazione per la configurazione. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md), [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) ed [Eseguire il debug e il rilascio delle configurazioni del progetto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Quando si crea una soluzione, le configurazioni della build di versione e di debug e le relative destinazioni della piattaforma predefinite sono definite automaticamente per la soluzione. È quindi possibile personalizzare queste configurazioni o crearne di proprie. Le configurazioni della build specificano il tipo di compilazione. Le piattaforme di compilazione specificano il sistema operativo a cui è rivolta un'applicazione per la configurazione. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md), [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) ed [Eseguire il debug e il rilascio delle configurazioni del progetto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  È possibile modificare o creare configurazioni e impostazioni piattaforma usando la finestra di dialogo **Gestione configurazione**. In questa procedura si creerà una configurazione della build per il test.  
   
@@ -98,7 +93,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 4. Nell'elenco **Piattaforma soluzione attiva** scegliere **Nuova**.  
   
-5. Nel **nuova piattaforma soluzione** finestra di dialogo, scegliere **x64**e non copiare le impostazioni da x86 piattaforma.  
+5. 5. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.  
   
     ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -125,7 +120,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
   ![Finestra Output di Visual Basic ](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Figura 2: Avvisi di Visual C#  
+  Figura 2: Visual C# avvisi  
   
   ![Finestra Output di Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
 ##  <a name="BKMK_releasebuild"></a> Creare una build di versione  
  È possibile compilare una versione dell'applicazione di esempio ottimizzata per la spedizione. Per la build di versione, si specificherà che il file eseguibile venga copiato in una condivisione di rete prima dell'avvio della compilazione.  
   
- Per altre informazioni, vedere [Procedura: Modificare la directory dell'output compilato](../ide/how-to-change-the-build-output-directory.md) e [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Per altre informazioni, vedere [Procedura: Modificare la Directory di Output di compilazione](../ide/how-to-change-the-build-output-directory.md) e [compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Per specificare una build di versione per Visual Basic  
   
@@ -262,8 +257,5 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Compilazione di un progetto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Cenni preliminari sulla precompilazione del progetto di applicazione Web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Cenni preliminari sulla precompilazione del progetto di applicazione Web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [Procedura dettagliata: uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

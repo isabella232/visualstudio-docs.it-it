@@ -1,14 +1,9 @@
 ---
 title: 'DA0505: Byte privati medi allocati per il processo sottoposto a profilatura | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -17,13 +12,13 @@ ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60f1bce7fe6f0199928e68dcc86b5062e327209a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fde4228538a26a4601dc7eb5638a4b803dafbacb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793048"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Byte privati medi allocati per il processo sottoposto a profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51789954"
 Id regola | DA0505 |  
 | Categoria | Gestione delle risorse |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | Dati raccolti a solo scopo informativo. Il contatore di byte privati di processo misura la memoria virtuale allocata dal processo sottoposto a profilatura che non può essere condivisa con altri processi. Il valore restituito viene calcolata la media per tutti gli intervalli di misurazione. |  
+| Messaggio | Dati raccolti a solo scopo informativo. Il contatore di byte privati di processo misura la memoria virtuale allocata dal processo sottoposto a profilatura che non può essere condivisa con altri processi. Il valore restituito corrisponde al valore medio rilevato per tutti gli intervalli di misurazione.  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
@@ -49,6 +44,3 @@ Id regola | DA0505 |
   
 ## <a name="how-to-use-rule-data"></a>Come usare i dati della regola  
  Usare il valore indicato per confrontare le prestazioni di versioni o compilazioni diverse del programma o per ottenere informazioni sulle prestazioni dell'applicazione in scenari di profilatura diversi.
-
-
-

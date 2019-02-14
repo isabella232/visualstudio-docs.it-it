@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f93f0031d9f81bed03713500019ca8ef031d80aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcbf6a02784273070d0e8d3ecbc961b5d546a906
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935775"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920098"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni numeriche della riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, dal simbolo del padre specificato e è contenuta all'interno di indirizzo virtuale relativo specificato (RVA).  

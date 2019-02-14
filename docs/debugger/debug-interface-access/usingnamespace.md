@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e8e1beb5-7cb9-43b4-9ff4-760d5f91ea2d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0f198439c1de41abd763397297e54ca6b359c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f07555299318d57cb3e57e50cb616611659424ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952171"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 Alcuni simboli potrebbe essere definite dallo spazio dei nomi e successivamente verrebbe identificate da un `SymTagUsingNameSpace` tag.  
@@ -28,7 +28,7 @@ Alcuni simboli potrebbe essere definite dallo spazio dei nomi e successivamente 
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simboli per l'inclusione compilando, blocco o una funzione.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo lessicale padre.|  

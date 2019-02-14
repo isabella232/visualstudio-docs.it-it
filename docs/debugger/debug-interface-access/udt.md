@@ -1,5 +1,5 @@
 ---
-title: TIPO DEFINITO DALL'UTENTE | Microsoft Docs
+title: UDT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a220125b22fd60b6547418a976f00e2ddd6b49aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ae70fae7299bb12f5fcf401f4a9ba386fe7204
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942109"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987544"
 ---
 # <a name="udt"></a>UDT
 Ogni classe, struttura e unione è identificato da un `SymTagUDT` simbolo. Ogni membro, funzione, i dati, o tipo annidato e ogni classe di base, viene visualizzato come un elemento figlio alla classe del tipo definito dall'utente (UDT).  
@@ -29,7 +29,7 @@ Ogni classe, struttura e unione è identificato da un `SymTagUDT` simbolo. Ogni 
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Simbolo per il padre di classe, se presente.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID del simbolo classe padre.|  

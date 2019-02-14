@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2370f8e394727c0a4f83488a77096b10cb36746c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eab1e5d8ab9a4e1644c8eb1a99d1aab4fdf6d9e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928074"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;I comandi&gt; elemento (programma di avvio automatico)
 Il `Commands` elemento implementa test descritti dagli elementi di sotto la `InstallChecks` elemento e dichiara il pacchetto il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bootstrapper deve installare se il test ha esito negativo.  
@@ -68,14 +68,14 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `Commands` elemento è obbligatorio. L'elemento presenta l'attributo seguente:  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Reboot`|Facoltativo. Determina se è necessario riavviare il sistema se uno qualsiasi dei pacchetti di restituire un codice di uscita del riavvio. L'elenco seguente mostra i valori validi:<br /><br /> `Defer`. Il riavvio viene posticipato fino alla fase successiva.<br /><br /> `Immediate`. Causa il riavvio immediato se uno dei pacchetti ha restituito un codice di uscita di riavvio.<br /><br /> `None`. Fa sì che tutte le richieste di riavvio verrà ignorato.<br /><br /> Il valore predefinito è `Immediate`.|  
   
 ## <a name="command"></a>Comando  
  L'elemento `Command` è un elemento figlio dell'elemento `Commands`. Oggetto `Commands` elemento può avere uno o più `Command` elementi. L'elemento presenta gli attributi seguenti.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`PackageFile`|Obbligatorio. Il nome del pacchetto da installare deve uno o più delle condizioni specificate da `InstallConditions` restituiscono false. Il pacchetto deve essere definito nello stesso file usando un `PackageFile` elemento.|  
 |`Arguments`|Facoltativo. Un set di argomenti della riga di comando da passare al file del pacchetto.|  
@@ -92,7 +92,7 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
   
  `BypassIf` ha gli attributi seguenti.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà da testare. La proprietà deve avere stata precedentemente definita da un elemento figlio del `InstallChecks` elemento. Per altre informazioni, vedere [ \<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md).|  
 |`Compare`|Obbligatorio. Il tipo di confronto da eseguire. L'elenco seguente mostra i valori validi:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
@@ -104,7 +104,7 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
   
  `FailIf` ha gli attributi seguenti.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Property`|Obbligatorio. Il nome della proprietà da testare. La proprietà deve avere stata precedentemente definita da un elemento figlio del `InstallChecks` elemento. Per altre informazioni, vedere [ \<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md).|  
 |`Compare`|Obbligatorio. Il tipo di confronto da eseguire. L'elenco seguente mostra i valori validi:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
@@ -118,7 +118,7 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
 ## <a name="exitcode"></a>ExitCode  
  Il `ExitCode` elemento è figlio di `ExitCodes` elemento. Il `ExitCode` elemento determina ciò che l'installazione deve eseguire in risposta a un codice di uscita da un pacchetto. `ExitCode` non contiene elementi figlio e ha gli attributi seguenti.  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Value`|Obbligatorio. Il valore del codice di uscita per cui questo `ExitCode` elemento si applica.|  
 |`Result`|Obbligatorio. Come l'installazione deve reagire in questo codice di uscita. L'elenco seguente mostra i valori validi:<br /><br /> `Success`. Contrassegna come è stato installato il pacchetto.<br /><br /> `SuccessReboot`. Contrassegna come è stato installato il pacchetto e determina il riavvio del sistema.<br /><br /> `Fail`. Contrassegna il pacchetto come non riuscita.<br /><br /> `FailReboot`. Contrassegna il pacchetto come non superato e determina il riavvio del sistema.|  
