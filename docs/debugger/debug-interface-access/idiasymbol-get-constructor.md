@@ -1,5 +1,5 @@
 ---
-title: Get_constructor | Microsoft Docs
+title: IDiaSymbol::get_constructor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f2cf1e0-f817-4ca0-b782-3341362c46a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd380adab64dbc082fde9346d9e4c7767c9a4e55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81a684ac12a277036e5392cd3a76b4e55eee634f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928535"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 Recupera un flag che specifica se il tipo di dati definito dall'utente ha un costruttore o distruttore.  
@@ -42,7 +42,7 @@ HRESULT get_constructor ( 
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Description|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  

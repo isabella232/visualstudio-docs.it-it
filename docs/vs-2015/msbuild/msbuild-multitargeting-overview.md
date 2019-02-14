@@ -1,25 +1,20 @@
 ---
 title: Panoramica del multitargeting di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800380"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Cenni preliminari sul multitargeting di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49243822"
 Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework e in una qualunque delle tante piattaforme di sistema. Ad esempio, è possibile compilare un'applicazione da eseguire in .NET Framework 2.0 in una piattaforma a 32 bit e compilare la stessa applicazione da eseguire in .NET Framework 4.5 in una piattaforma a 64 bit.  
   
 > [!IMPORTANT]
->  Nonostante il nome "multitargeting", un progetto può essere indirizzato un solo framework e solo un'unica piattaforma alla volta.  
+>  Nonostante il nome "multitargeting", un progetto può essere destinato a un solo framework e a una sola piattaforma per volta.  
   
  Di seguito sono riportate alcune delle funzionalità di definizione destinazione di MSBuild:  
   
@@ -56,6 +51,3 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
  Possono verificarsi errori se si tenta di fare riferimento a un assembly che non fa parte del contesto di destinazione. Per altre informazioni su questi errori e su come agire al riguardo, vedere [Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
-
-
-

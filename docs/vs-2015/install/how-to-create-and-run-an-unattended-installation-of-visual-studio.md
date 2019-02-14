@@ -1,13 +1,9 @@
 ---
 title: "Procedura: Creare ed eseguire un'installazione automatica | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio, unattended
 - unattended installation, Visual Studio
@@ -15,13 +11,13 @@ ms.assetid: 3867b5dc-ed34-4ee2-be32-a42e7e320517
 caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803562"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedura: Creare ed eseguire un'installazione automatica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,16 +59,16 @@ ms.locfileid: "53951930"
 
  Lo schema del file AdminDeployment contiene i seguenti elementi:
 
-|Elemento|Attributo|Valori|Description|
+|Elemento|Attributo|Valori|Descrizione|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Path*|Si comporta come la sostituzione del percorso nell'interfaccia utente dell'applicazione di installazione. Questo elemento viene ignorato se Visual Studio è già installato.|
-|BundleCustomizations|NoWeb|Sì&#124;predefinito|Se il valore di questo elemento è Sì, l'applicazione di installazione non tenta mai di accedere al Web durante l'azione di installazione.|
-|SelectableItemCustomization|Hidden|Sì&#124;No|Se il valore di questo elemento è Sì, nasconde un elemento selezionabile nell'albero della personalizzazione.|
-|SelectableItemCustomization|Selezionato|Sì&#124;No|Seleziona o deseleziona un elemento selezionabile nell'albero della personalizzazione.|
+|BundleCustomizations|NoWeb|yes&#124;default|Se il valore di questo elemento è Sì, l'applicazione di installazione non tenta mai di accedere al Web durante l'azione di installazione.|
+|SelectableItemCustomization|Hidden|Yes&#124;No|Se il valore di questo elemento è Sì, nasconde un elemento selezionabile nell'albero della personalizzazione.|
+|SelectableItemCustomization|Selezionato|Yes&#124;No|Seleziona o deseleziona un elemento selezionabile nell'albero della personalizzazione.|
 |BundleCustomizations|Feed|Path|Percorso del feed che l'utente vuole usare.  Questo feed viene usato per le successive operazioni di modifica nel computer ("Default" per impostazione predefinita).|
-|BundleCustomizations|SuppressRefreshPrompt|Sì&#124;predefinito|Impedisce che all'utente venga richiesto di aggiornare l'installazione se è disponibile una versione più recente.|
-|BundleCustomizations|NoRefresh|Sì&#124;predefinito|Non aggiorna l'installazione se è disponibile una versione più recente.|
-|BundleCustomizations|NoCacheOnlyMode|Sì&#124;predefinito|Impedisce il prepopolamento della cache del pacchetto.|
+|BundleCustomizations|SuppressRefreshPrompt|yes&#124;default|Impedisce che all'utente venga richiesto di aggiornare l'installazione se è disponibile una versione più recente.|
+|BundleCustomizations|NoRefresh|yes&#124;default|Non aggiorna l'installazione se è disponibile una versione più recente.|
+|BundleCustomizations|NoCacheOnlyMode|yes&#124;default|Impedisce il prepopolamento della cache del pacchetto.|
 
 > [!WARNING]
 >  L'applicazione di installazione rispetterà lo stato selezionato di un elemento selezionabile anche se è nascosto. Ad esempio, se si desidera installare sempre un elemento selezionabile, è possibile contrassegnarlo come nascosto e selezionato.

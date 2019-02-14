@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1b66bc0a-7979-416f-bf7f-e5df91584c91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff43ecd996820047cc9412cb476c198d7512f0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 521b7576293be30a1ce4e305ef355ef79e79a4f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960464"
 ---
 # <a name="customtype"></a>CustomType
 Tipi definiti dal fornitore (tipi specifici del compilatore) sono identificati da un `SymTagCustomType` simbolo.  
@@ -25,7 +25,7 @@ Tipi definiti dal fornitore (tipi specifici del compilatore) sono identificati d
 ## <a name="properties"></a>Proprietà  
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Description|  
+|Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Identificatore dell'OEM.|  
 |[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|ID interno dell'OEM|  

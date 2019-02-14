@@ -1,25 +1,20 @@
 ---
 title: Uso di Strumenti di Visual Studio Tools per Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777381"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 3.  Individuare il metodo di cui eseguire l'overload. Nella finestra Crea metodo script iniziare a digitare il nome del metodo nella casella di testo. Verrà visualizzato un elenco di metodi il cui nome corrisponde a quello immesso.  
   
-4.  Scegliere il metodo di cui eseguire l'overload. Quando il metodo voluto viene visualizzato nell'elenco, selezionarlo con il mouse o i tasti freccia e quindi premere **Invio**. Se è l'unico metodo presente nell'elenco, è sufficiente premere **invio**. Il metodo verrà inserito nel codice.  
+4.  Scegliere il metodo di cui eseguire l'overload. Quando il metodo voluto viene visualizzato nell'elenco, selezionarlo con il mouse o i tasti freccia e quindi premere **Invio**. Se è l'unico metodo presente nell'elenco, è sufficiente premere **Invio**. Il metodo verrà inserito nel codice.  
   
 ### <a name="unity-project-explorer"></a>Esplora progetti Unity  
  È possibile usare Esplora progetti Unity per spostarsi nel progetto Unity all'interno di Visual Studio.  
@@ -193,4 +188,3 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
      I file PDB sono necessari per il debug perché contengono i simboli di debug della DLL e consentono di eseguire il mapping del codice della DLL al formato del relativo codice sorgente. Visual Studio Tools per Unity userà le informazioni della DLL e dei file PDB per creare un file DLL.MDB, che corrisponde al formato dei simboli di debug usato dal motore di scripting di Unity.  
   
 4. Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.
-

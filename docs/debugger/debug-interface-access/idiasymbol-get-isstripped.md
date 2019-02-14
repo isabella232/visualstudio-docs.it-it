@@ -45,7 +45,7 @@ HRESULT get_isStripped(
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Description|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v8.0|  

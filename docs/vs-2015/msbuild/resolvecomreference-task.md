@@ -1,14 +1,9 @@
 ---
 title: Attività ResolveComReference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801427"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`ResolvedAssemblyReferences`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i riferimenti all'assembly risolti.|  
 |`ResolvedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file con nomi completi su disco che corrispondono alle posizioni fisiche delle librerie dei tipi fornite come input per questa attività.|  
 |`ResolvedModules`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.|  
-|`SdkToolsPath`|[String] facoltativo (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
+|`SdkToolsPath`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String facoltativo.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
 |`StateFile`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il file di cache per i timestamp dei componenti COM. Se non presente, ogni esecuzione genererà nuovamente tutti i wrapper.|  
 |`TargetFrameworkVersion`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica la versione del framework di destinazione del progetto.<br /><br /> Il valore predefinito è `String.Empty`. Tale valore indica che non viene applicato alcun filtro a un riferimento in base al framework di destinazione.|  
 |`TargetProcessorArchitecture`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag tlbimp.exe /machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
@@ -89,6 +84,3 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

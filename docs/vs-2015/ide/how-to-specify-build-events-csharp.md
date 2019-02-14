@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: Specificare gli eventi di compilazione (C#) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare eventi di compilazione (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -19,13 +14,13 @@ ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781085"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: specificare eventi di compilazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49872018"
 6.  Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.  
   
     > [!NOTE]
-    >  Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dal [pre-compilazione/Post-compilazione riga di comando finestra di dialogo eventi](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con puntini di sospensione (**...** ) per visualizzare una casella di modifica.  
+    >  Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.  
   
      La sintassi dell'evento di compilazione può includere qualsiasi comando che sia valido in un prompt dei comandi o in un file bat. Perché vengano sicuramente eseguiti tutti i comandi successivi, il nome di un file batch deve essere preceduto da `call`.  
   
@@ -193,6 +188,3 @@ ms.locfileid: "49872018"
  [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)
-
-
-

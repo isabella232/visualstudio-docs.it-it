@@ -3,21 +3,18 @@ title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780679"
 ---
 # <a name="visual-studio-ide"></a>IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +92,7 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 
  Se il progetto contiene un'interfaccia utente basata su XAML, la finestra di progettazione predefinita è Blend per Visual Studio, un sofisticato strumento di grafica perfettamente integrato con Visual Studio.
 
- ![Tavola da disegno](../ide/media/b5-artboard.png "b5_artboard")
+ ![Artboard](../ide/media/b5-artboard.png "b5_artboard")
 
 |||
 |-|-|
@@ -136,7 +133,7 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 
 8. L'opzione del menu di scelta rapida **Vai a definizione** visualizza direttamente la posizione in cui è definita la funzione o l'oggetto. Facendo clic con il pulsante destro del mouse nell'editor sono disponibili anche altri comandi di spostamento.
 
-9. Uno strumento correlato, [Visualizzatore oggetti](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), consente di controllare gli assembly .NET o Windows Runtime nel sistema per vedere quali tipi contengono e quali metodi e proprietà contengono questi tipi.
+9. Uno strumento correlato, [Visualizzatore oggetti](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), consente di controllare gli assembly .NET o Windows Runtime nel sistema per vedere quali tipi contengono e quali metodi e proprietà contengono questi tipi.
 
      ![Visualizzatore oggetti con System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ L'output di compilazione, inclusi i messaggi di errore o di completamento, viene
 
  La [Immediate Window](../ide/reference/immediate-window.md) consente di digitare un'espressione e visualizzare immediatamente il risultato.
 
- La finestra [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) registra ogni chiamata al metodo e altri eventi in un programma .NET in esecuzione e aiuta a individuare rapidamente la causa di un problema.
+ La finestra [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) registra ogni chiamata al metodo e altri eventi in un programma .NET in esecuzione e aiuta a individuare rapidamente la causa di un problema.
 
  Per altre informazioni, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -172,7 +169,7 @@ L'output di compilazione, inclusi i messaggi di errore o di completamento, viene
 ## <a name="connecting-to-cloud-services-and-databases"></a>Connessione ai database e ai servizi cloud
  La finestra [Esplora server](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) di Visual Studio include le risorse di tutti gli account gestiti con l'account di personalizzazione (l'account usato per la connessione), tra cui le istanze di SQL Server, Azure, Salesforce.com, Office 365 e i siti Web.
 
- ![Esplora server](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Server Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  Visual Studio include [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT), che consente di compilare, eseguire il debug, mantenere ed eseguire il refactoring dei database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
@@ -196,7 +193,7 @@ L'output di compilazione, inclusi i messaggi di errore o di completamento, viene
 |||
 |-|-|
 |[Account utente e aggiornamenti](../ide/user-accounts-and-updates.md)|[Personalizzazione dell'IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Procedura: Spostarsi all'interno dell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[How to: Move Around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Procedura: Spostarsi all'interno dell'IDE)|[Introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Solutions and Projects](../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)|
 |[Writing Code](../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)|[Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Profiling Tools](../profiling/profiling-tools.md) (Strumenti di profilatura)|[Migliorare la qualità del codice](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

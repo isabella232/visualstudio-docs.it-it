@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995687"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 
@@ -45,10 +45,10 @@ Affinché l'applicazione per installare ed eseguire correttamente, prima di tutt
 
 - La versione minima di tutti gli assembly che devono essere preinstallati nella global assembly cache (GAC), come specificato dalle dichiarazioni delle dipendenze degli assembly nel manifesto dell'assembly.  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
 
 > [!NOTE]
->  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe*, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe*, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
 
  Se si usa Visual Studio e ClickOnce per distribuire l'applicazione, i pacchetti del programma di avvio automatico selezionati per impostazione predefinita variano a seconda della versione di .NET Framework inclusa nella soluzione. Se invece si cambia la versione .NET Framework di destinazione, è necessario aggiornare manualmente le opzioni nella finestra di dialogo **Prerequisiti**.  
 
@@ -72,13 +72,13 @@ Affinché l'applicazione per installare ed eseguire correttamente, prima di tutt
  Se si modificano le opzioni di avvio automatico, è necessario modificare il programma di avvio senza segno e quindi accedere in seguito il file di programma di avvio automatico.  
 
 
-| Argomento della riga di comando | Description |
+| Argomento della riga di comando | Descrizione |
 | - | - |
 | **-?, -h, -help** | Visualizza una finestra di dialogo della Guida. |
-| **-url - componentsurl** | Visualizza l'URL archiviato e l'URL dei componenti per questa configurazione. |
-| **-url =** `location` | Imposta l'URL in cui *Setup.exe* cercherà l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl =** `location` | Imposta l'URL in cui *Setup.exe* cercherà le dipendenze, ad esempio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Quando `true`, le dipendenze vengono scaricate dal percorso preferito sul sito del fornitore. Questa impostazione sostituisce il **- componentsurl** impostazione. Quando `false`, le dipendenze vengono scaricate dall'URL specificato da **- componentsurl**. |
+| **-url, -componentsurl** | Visualizza l'URL archiviato e l'URL dei componenti per questa configurazione. |
+| **-url=** `location` | Imposta l'URL in cui *Setup.exe* cercherà l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
+| **-componentsurl=** `location` | Imposta l'URL in cui *Setup.exe* cercherà le dipendenze, ad esempio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-homesite=** `true` **&#124;** `false` | Quando `true`, le dipendenze vengono scaricate dal percorso preferito sul sito del fornitore. Questa impostazione sostituisce il **- componentsurl** impostazione. Quando `false`, le dipendenze vengono scaricate dall'URL specificato da **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Supporto del sistema operativo  
  Il programma di bootstrap di Visual Studio non è supportato in Windows Server 2008 Server Core o Windows Server 2008 R2 Server Core, in quanto forniscono un ambiente server a bassa manutenzione con funzionalità limitata. Ad esempio, l'opzione di installazione Server Core supporta solo il profilo di .NET Framework 3.5 Server Core, che non è possibile eseguire le funzionalità di Visual Studio che dipendono da .NET Framework completo.  

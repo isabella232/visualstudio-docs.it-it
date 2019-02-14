@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296307"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853638"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
-MSbuild è un motore di compilazione, sviluppato da Microsoft, che consente la compilazione di applicazioni, principalmente di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. L'implementazione xbuild, tuttavia, è stata eliminata gradualmente a favore dell'uso di MSBuild in tutti i sistemi operativi.
+MSBuild è un motore di compilazione, sviluppato da Microsoft, che consente la compilazione di applicazioni, principalmente di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. L'implementazione xbuild, tuttavia, è stata eliminata gradualmente a favore dell'uso di MSBuild in tutti i sistemi operativi.
 
-**MSbuild** è il sistema principalmente usato per la compilazione dei progetti in Visual Studio per Mac.
+**MSBuild** viene usato principalmente come sistema di compilazione per i progetti in Visual Studio per Mac.
 
 Il funzionamento di MSBuild si basa su un set di input, ad esempio file di origine, che vengono trasformati in output, ad esempio file eseguibili, tramite la chiamata a strumenti quali il compilatore.
 

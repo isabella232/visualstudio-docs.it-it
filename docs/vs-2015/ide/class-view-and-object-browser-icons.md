@@ -1,14 +1,9 @@
 ---
 title: Icone di Visualizzazione classi e Visualizzatore oggetti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785049"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Classe View * * e il **Visualizzatore oggetti** visualizzare icone che rappresentano le entità di codice, ad esempio, gli spazi dei nomi, classi, funzioni e variabili. Nella tabella seguente vengono illustrate e descritte le icone.  
+In **Visualizzazione classi** e Visualizzatore oggetti vengono visualizzate le icone che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili. Nella tabella seguente vengono illustrate e descritte le icone.  
   
 |Icona|Descrizione|Icona|Descrizione|  
 |----------|-----------------|----------|-----------------|  
@@ -68,6 +63,3 @@ Classe View * * e il **Visualizzatore oggetti** visualizzare icone che rappresen
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: Get_write | Microsoft Docs
+title: IDiaSegment::get_write | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fcda988-6be1-4b2f-8660-b59aa78fc35d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1bba1ac7ffb68205b6ee484bd12c9aa98ef40be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a2a5e1e56ed72bc744180a3600b24e12b2c8c5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928498"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
 Recupera un flag che indica se il segmento può essere modificato.  

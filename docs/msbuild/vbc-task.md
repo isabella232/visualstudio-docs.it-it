@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969668"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768431"
 ---
 # <a name="vbc-task"></a>Vbc (attività)
 Esegue il wrapping di *vbc.exe*, che genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni su *vbc.exe*, vedere [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -32,7 +32,7 @@ Esegue il wrapping di *vbc.exe*, che genera file eseguibili (*EXE*), librerie a 
  Nella tabella che segue vengono descritti i parametri dell'attività `Vbc` .  
 
 
-| Parametro | Description |
+| Parametro | Descrizione |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parametro `String[]` facoltativo.<br /><br /> Specifica cartelle aggiuntive in cui eseguire la ricerca degli assembly specificati nell'attributo References. |
 | `AddModules` | Parametro `String[]` facoltativo.<br /><br /> Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questo parametro corrisponde all'opzione [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) del compilatore *vbc.exe*. |
@@ -51,7 +51,7 @@ Esegue il wrapping di *vbc.exe*, che genera file eseguibili (*EXE*), librerie a 
 | `Imports` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Importa gli spazi dei nomi dalle raccolte di elementi specificati. Questo parametro corrisponde all'opzione [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) del compilatore *vbc.exe*. |
 | `KeyContainer` | Parametro `String` facoltativo.<br /><br /> Specifica il nome del contenitore di chiavi crittografiche. Questo parametro corrisponde all'opzione [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) del compilatore *vbc.exe*. |
 | `KeyFile` | Parametro `String` facoltativo.<br /><br /> Specifica il nome del file contenente la chiave di crittografia. Per altre informazioni, vedere [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Specifica la versione del linguaggio: "9" o "10". |
+| `LangVersion` | Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Specifica la [versione del linguaggio](/dotnet/visual-basic/language-reference/configure-language-version), ad esempio "15.5". |
 | `LinkResources` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Crea un collegamento a una risorsa .NET Framework nel file di output. Il file di risorse non viene inserito nel file di output. Questo parametro corrisponde all'opzione [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) del compilatore *vbc.exe*. |
 | `MainEntryPoint` | Parametro `String` facoltativo.<br /><br /> Specifica la classe o il modulo che contiene la procedura `Sub Main`. Questo parametro corrisponde all'opzione [-main](/dotnet/visual-basic/reference/command-line-compiler/main) del compilatore *vbc.exe*. |
 | `ModuleAssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica l'assembly di cui il modulo fa parte. |

@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: Risolvere i problemi relativi ai modelli | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Problemi relativi ai modelli | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793206"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedura: risolvere i problemi relativi ai modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili div
 5.  Verificare che il codice XML del file con estensione vstemplate rispetti lo schema di modello [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni sullo schema del file con estensione vstemplate, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Per ottenere supporto IntelliSense durante la creazione del file con estensione vstemplate, aggiungere un `xmlns` dell'attributo per il `VSTemplate` elemento e assegnarle un valore di http://schemas.microsoft.com/developer/vstemplate/2005.  
+    >  Per ottenere il supporto IntelliSense durante la creazione del file con estensione `xmlns`vstemplate`VSTemplate`, aggiungere un attributo http://schemas.microsoft.com/developer/vstemplate/2005 all'elemento  e assegnare all'attributo il valore .  
   
 6.  Salvare e chiudere il file vstemplate.  
   
@@ -71,6 +66,3 @@ Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili div
  [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

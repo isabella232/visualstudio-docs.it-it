@@ -1,14 +1,9 @@
 ---
 title: Attività GenerateDeploymentManifest | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8ad0b9919c5c567662d78573573f1bf046c93552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792942"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Attività GenerateDeploymentManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,8 @@ Genera un manifesto di distribuzione [!INCLUDE[ndptecclick](../includes/ndpteccl
 |`DeploymentUrl`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso di aggiornamento per l'applicazione. Se questo parametro non è specificato, non viene definito alcun percorso di aggiornamento per l'applicazione. Se tuttavia il parametro `UpdateEnabled` è impostato su `true`, è necessario specificare il percorso di aggiornamento. Il valore specificato deve essere un percorso URL o UNC completo.|  
 |`Description`|Parametro `String` facoltativo.<br /><br /> Specifica una descrizione facoltativa per l'applicazione.|  
 |`DisallowUrlActivation`|Parametro `Boolean` facoltativo.<br /><br /> Specifica se l'applicazione deve essere eseguita automaticamente quando viene aperta tramite un URL. Se il parametro è impostato su `true`, è possibile avviare l'applicazione solo dal menu Start. Il valore predefinito di questo parametro è `false`. Questo input è applicabile solo quando il valore del parametro `Install` è impostato su `true`.|  
-|`EntryPoint`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica il punto di ingresso per l'assembly del manifesto generato. Per un manifesto di distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] questo input specifica il manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> In [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], per generare un manifesto dell'applicazione l'attività [GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) richiede un `EntryPoint`. Gli assembly o i manifesti nativi non richiedono un `EntryPoint`. Questo requisito è stato applicato con l'errore di compilazione: "MSB3185: EntryPoint non specificato per il manifesto".<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] non genera questo errore quando non è specificato il parametro `EntryPoint` dell'attività. In alternativa, viene inserito il tag \<customHostSpecified> come figlio del tag \<entryPoint>, ad esempio:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> È possibile aggiungere dipendenze DLL al manifesto dell'applicazione seguendo questa procedura:<br /><br /> 1.  Risolvere i riferimenti all'assembly con una chiamata a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passare l'output dell'attività precedente e l'assembly stesso a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passare le dipendenze usando il parametro `Dependencies` a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|[String] facoltativo (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le installazioni ClickOnce.|  
+|`EntryPoint`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica il punto di ingresso per l'assembly del manifesto generato. Per un manifesto di distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] questo input specifica il manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> In [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], per generare un manifesto dell'applicazione l'attività [GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) richiede un `EntryPoint`. Gli assembly o i manifesti nativi non richiedono un `EntryPoint`. Questo requisito è stato applicato con l'errore di compilazione: "MSB3185: EntryPoint non specificato per il manifesto."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] non genera questo errore quando non è specificato il parametro `EntryPoint` dell'attività. In alternativa, viene inserito il tag \<customHostSpecified> come figlio del tag \<entryPoint>, ad esempio:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> È possibile aggiungere dipendenze DLL al manifesto dell'applicazione seguendo questa procedura:<br /><br /> 1.  Risolvere i riferimenti all'assembly con una chiamata a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passare l'output dell'attività precedente e l'assembly stesso a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passare le dipendenze usando il parametro `Dependencies` a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`ErrorReportUrl`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String facoltativo.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le installazioni ClickOnce.|  
 |`InputManifest`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML di input da usare come base per il generatore del manifesto. In questo modo è possibile applicare nel manifesto di output dati strutturati, ad esempio definizioni del manifesto personalizzate. L'elemento radice del documento XML deve essere un nodo assembly nello spazio dei nomi asmv1.|  
 |`Install`|Parametro `Boolean` facoltativo.<br /><br /> Specifica se si tratta di un'applicazione installata o di un'applicazione disponibile solo online. Se il parametro è impostato su `true`, l'applicazione verrà installata nel menu Start dell'utente e potrà essere rimossa mediante la finestra di dialogo Installazione applicazioni. Se il parametro è invece impostato su `false`, l'applicazione è destinata all'uso online da una pagina Web. Il valore predefinito di questo parametro è `true`.|  
 |`MapFileExtensions`|Parametro `Boolean` facoltativo.<br /><br /> Specifica se viene usato il mapping dell'estensione di file deploy. Se il parametro è impostato su `true`, tutti i file di programma vengono pubblicati con l'estensione di file deploy. Questa opzione è utile per la sicurezza del server Web, per limitare il numero di estensioni di file che è necessario sbloccare per attivare la distribuzione delle applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Il valore predefinito di questo parametro è `false`.|  
@@ -76,6 +71,3 @@ Genera un manifesto di distribuzione [!INCLUDE[ndptecclick](../includes/ndpteccl
  [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)   
  [Attività SignFile](../msbuild/signfile-task.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
-
-

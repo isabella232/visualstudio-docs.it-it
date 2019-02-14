@@ -1,14 +1,9 @@
 ---
 title: Riferimenti alla riga di comando di MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a1827166829686801743ccc98156a0009e50dc3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e56784e960729292c46d9b1241fc7e3504c6e434
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777495"
 ---
 # <a name="msbuild-command-line-reference"></a>Riferimenti alla riga di comando di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |/preprocess[:`filepath`]|/pp[:`filepath`]|Crea un singolo file di progetto aggregato effettuando l'inlining di tutti i file che vengono importati durante una compilazione, contrassegnandone i limiti. È possibile usare questa opzione per determinare più facilmente quali file vengono importati, da dove i file vengono importati e quali file contribuiscono alla compilazione. Quando si usa questa opzione, il progetto non viene compilato.<br /><br /> Se si specifica un oggetto `filepath`, il file di progetto aggregato viene restituito come output al file. In caso contrario, l'output viene visualizzato nella finestra della console.<br /><br /> Per informazioni su come usare l'elemento `Import` per inserire un file di progetto in un altro file di progetto, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).|  
 |/property:`name`=`value`|/p:`name`=`value`|Imposta o esegue l'override delle proprietà specificate a livello di progetto, dove `name` è il nome della proprietà e `value` è il valore della proprietà. Specificare separatamente ogni proprietà o usare un punto e virgola o una virgola per separare più proprietà, come illustrato nel seguente esempio:<br /><br /> `/property:WarningLevel=2;OutDir=bin\Debug`|  
 |/target:`targets`|/t:`targets`|Compila le destinazioni specificate nel progetto. Specificare separatamente ogni destinazione o usare un punto e virgola o una virgola per separare più destinazioni, come illustrato nel seguente esempio:<br /><br /> `/target:Resources;Compile`<br /><br /> Se si specificano tutte le destinazioni usando questa opzione, queste vengono eseguite al posto delle destinazioni nell'attributo `DefaultTargets` nel file di progetto. Per altre informazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md) e [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Una destinazione è un gruppo di attività. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).|  
-|/toolsversion:`version`|/tv:`version`|Specifica la versione del set di strumenti da usare per compilare il progetto, come illustrato nel seguente esempio: `/toolsversion:3.5`<br /><br /> Usando questa opzione, è possibile compilare un progetto e specificare una versione diversa da quella specificata nella [Project Element (MSBuild)](../msbuild/project-element-msbuild.md). Per altre informazioni, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Per MSBuild 4.5, si possono specificare i seguenti valori per `version`: 2.0, 3.5 e 4.0. Se si specifica 4.0, la proprietà di compilazione `VisualStudioVersion` specifica i subset di strumenti da usare. Per altre informazioni, vedere la sezione relativa ai subset di strumenti in [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Un set di strumenti è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori come csc.exe e vbc.exe. Per altre informazioni sui set di strumenti, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md) e [Panoramica del multitargeting di MSBuild](../msbuild/msbuild-multitargeting-overview.md). **Nota:** la versione di strumenti diverso da quello del Framework di destinazione, vale a dire la versione di .NET Framework in cui un progetto viene compilato per l'esecuzione. Per altre informazioni, vedere [Framework e piattaforma di destinazione di MSBuild](../msbuild/msbuild-target-framework-and-target-platform.md).|  
+|/toolsversion:`version`|/tv:`version`|Specifica la versione del set di strumenti da usare per compilare il progetto, come illustrato nel seguente esempio: `/toolsversion:3.5`<br /><br /> Usando questa opzione è possibile compilare un progetto e specificare una versione diversa dalla versione specificata in [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md). Per altre informazioni, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).<br /><br /> Per MSBuild 4.5, si possono specificare i seguenti valori per `version`: 2.0, 3.5 e 4.0. Se si specifica 4.0, la proprietà di compilazione `VisualStudioVersion` specifica i subset di strumenti da usare. Per altre informazioni, vedere la sezione relativa ai subset di strumenti in [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Un set di strumenti è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori come csc.exe e vbc.exe. Per altre informazioni sui set di strumenti, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md) e [Panoramica del multitargeting di MSBuild](../msbuild/msbuild-multitargeting-overview.md). **Nota:** la versione del set di strumenti non è la stessa del framework di destinazione, vale a dire la versione di .NET Framework con cui è prevista l'esecuzione di un progetto. Per altre informazioni, vedere [Framework e piattaforma di destinazione di MSBuild](../msbuild/msbuild-target-framework-and-target-platform.md).|  
 |/validate:[`schema`]|/val[`schema`]|Convalida il file di progetto e, se la convalida ha esito positivo, compila il progetto.<br /><br /> Se non si specifica `schema`, il progetto viene convalidato in base allo schema predefinito.<br /><br /> Se si specifica `schema`, il progetto viene convalidato in base allo schema specificato.<br /><br /> L'impostazione seguente è un esempio: `/validate:MyExtendedBuildSchema.xsd`|  
 |/verbosity:`level`|/v:`level`|Specifica la quantità di informazioni da visualizzare nel log di compilazione. Ogni logger visualizza gli eventi in base al livello di dettaglio impostato per il logger.<br /><br /> È possibile specificare i seguenti livelli di dettaglio: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` e `diag[nostic]`.<br /><br /> L'impostazione seguente è un esempio: `/verbosity:quiet`|  
 |/version|/ver|Visualizza solo le informazioni sulla versione. Il progetto non viene compilato.|  
@@ -97,6 +92,3 @@ msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ## <a name="see-also"></a>Vedere anche  
  [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
  [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)
-
-
-

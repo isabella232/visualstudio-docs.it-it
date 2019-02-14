@@ -1,14 +1,9 @@
 ---
 title: 'DA0002: VSPerfCorProf.dll mancante | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -18,13 +13,13 @@ ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bb1359b525b286dbc88cbd3d8eecaef27060ab23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5723506415a0ddbf816b896e23e93eaa706bf7e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792923"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll mancante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51809467"
 Id regola | DA0002 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodi di profilatura | Profilatura tramite gli strumenti da riga di comando VSPerfCmd e VSPerfASPNETCmd |  
-| Messaggio | Sembra che il file è stato raccolto senza impostare correttamente le variabili di ambiente con VSPerfCLREnv. cmd. I simboli per i file binari gestiti non possono essere risolti. |  
+| Messaggio | Sembra che il file è stato raccolto senza impostare correttamente le variabili di ambiente con VSPerfCLREnv. cmd. La risoluzione dei simboli per i file binari gestiti potrebbe non essere effettuata.  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  
@@ -43,6 +38,3 @@ Id regola | DA0002 |
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Quando si profilano applicazioni gestite usando gli strumenti da riga di comando negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], eseguire lo strumento da riga di comando [VSPerfCLREnv](../profiling/vsperfclrenv.md) prima di iniziare la raccolta dei dati.
-
-
-

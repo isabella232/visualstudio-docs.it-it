@@ -1,5 +1,5 @@
 ---
-title: Get_checksumtype | Microsoft Docs
+title: IDiaSourceFile::get_checksumType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bee821a1ecd0179d3ea64e3d1e1f7efca92d64f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825914"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928971"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Recupera il tipo di checksum.  
@@ -40,7 +40,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>Note  
  Il tipo di checksum è un valore che può essere mappato a un algoritmo di checksum. Ad esempio, il formato di file PDB standard in genere può avere uno dei valori seguenti:  
   
-|Tipo di checksum|Etichetta CryptoAPI|Description|  
+|Tipo di checksum|Etichetta CryptoAPI|Descrizione|  
 |-------------------|---------------------|-----------------|  
 |0|\<nessuno>|Checksum non presente.|  
 |1|`CALG_MD5`|checksum generato con l'algoritmo hash MD5.|  

@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923977"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767906"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 La tabella seguente elenca gli avvisi generati dallo strumento *VSInstr.exe*. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.  
   
-|Numero di avviso|Description|  
+|Numero di avviso|Descrizione|  
 |--------------------|-----------------|  
-|**VSP1026**|Code coverage non è supportato nelle librerie che non fanno riferimento a MSCorLib. Ciò è vero spesso per le librerie portabili.|  
+|**VSP1026**|Code coverage non è supportato nelle librerie che non fanno riferimento a MSCorLib. Ciò è vero spesso per le librerie portabili.<br /><br />L'opzione della riga di comando [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) è obbligatoria per .NET Core.|  
 |**VSP2000**|Errore interno Impossibile ottenere il nome del file di modulo per questo eseguibile.|  
 |**VSP2001**|\<nome assembly> è un assembly con nome sicuro. Deve essere firmato di nuovo prima dell'esecuzione.<br /><br /> Questo avviso viene visualizzato quando un assembly firmato viene instrumentato. È possibile usare lo strumento *sn.exe* per firmare nuovamente il file binario o disattivare temporaneamente il requisito del nome sicuro. Per altre informazioni, vedere [Sn.exe (strumento Nome sicuro)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Impossibile trovare la funzione \<nome funzione> nel file \<nome file><br /><br /> Questo avviso viene visualizzato quando non è possibile individuare una funzione nel file specificato.|  

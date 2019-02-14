@@ -1,49 +1,176 @@
 ---
-title: Correggere i bug scrivendo codice C# migliore
-description: Informazioni su come scrivere codice migliore con meno bug
+title: Tecniche e strumenti di debug CRT
+description: Scrivere codice migliore con meno bug tramite Visual Studio per risolvere le eccezioni, correggere gli errori e migliorare il codice
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 11/20/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961715"
 ---
-# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Correggere i bug scrivendo meglio C# del codice con Visual Studio
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debug tecniche e strumenti che consentono di scrivere codice migliore
 
-Debug del codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace, ma un potente IDE come Visual Studio può rendere molto più semplice il processo. Un IDE consente di eseguire il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è fornire una visione olistica del processo di debug, in modo da conoscere quando usare l'analizzatore di codice e su quando usare il debugger e quando utilizzare altri strumenti.
+Correzione di bug e gli errori nel codice può richiedere molto tempo e talvolta frustrazione: attività. Serve tempo per imparare a eseguire il debug in modo efficace, ma un potente IDE come Visual Studio può rendere molto più semplice il processo. Un IDE consente di correggere gli errori e il debug del codice più rapidamente e non solo che, ma può anche agevolare la scrittura di codice migliorato con meno bug. L'obiettivo di questo articolo è offrire una visione olistica del processo di "correzione degli errori", in modo da conoscere quando usare l'analizzatore di codice, quando usare il debugger, come correzione delle eccezioni e come codice per un intent. Se si conosce già è necessario usare il debugger, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md).
 
-In questo articolo si parla sfruttando l'IDE per rendere più produttiva sessioni di debug. Discussa marginalmente numerose attività, ad esempio:
+In questo articolo si parla sfruttando l'IDE per rendere più produttiva la scrittura di codice sessioni. Discussa marginalmente numerose attività, ad esempio:
 
 * Preparare il codice per il debug, sfruttando analizzatore del codice dell'IDE
 
 * Per la risoluzione delle eccezioni (errori di run-time)
 
-* Come ridurre al minimo i bug mediante la codifica per finalità
+* Come ridurre al minimo i bug mediante la codifica per intent (utilizzando il metodo assert)
 
 * Quando usare il debugger
 
 Per dimostrare queste attività, abbiamo illustrato alcuni dei tipi più comuni degli errori e i bug che incontrano quando si tenta di eseguire il debug delle app. Anche se il codice di esempio è C#, le informazioni concettuali sono applicabili a livello generale a C++, Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in linguaggio C#.
 
-## <a name="follow-along-using-the-sample-app"></a>Seguire la procedura usando l'app di esempio
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Creare un'app di esempio con alcuni degli errori in essa
 
-Se si preferisce, è possibile creare un'app console .NET Core o .NET Framework che contiene i bug esatti ed errori descritti in precedenza, è possibile proseguire e apportare le correzioni manualmente.
+Il codice seguente contiene alcuni bug che è possibile correggere mediante l'IDE di Visual Studio. In questo caso l'app è una semplice app che simula recupero dei dati JSON da un'operazione, la deserializzazione di dati a un oggetto e l'aggiornamento di un elenco semplice con i nuovi dati.
 
-Per creare l'app, aprire Visual Studio e scegli **File > Nuovo progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**. Digitare un nome come **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto. Incollare il [esempi di codice](#sample-code) al progetto *Program.cs* file.
+Per creare l'app
 
-> [!NOTE]
-> Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
+1. Aprire Visual Studio e scegli **File > Nuovo progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**.
+
+    > [!NOTE]
+    > Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
+
+2. Nel **Name** , digitare **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto.
+
+3. Sostituire il codice del progetto predefinito *Program.cs* file con il codice di esempio seguente.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.IO;
+
+namespace Console_Parse_JSON
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var localDB = LoadRecords();
+            string data = GetJsonData();
+
+            User[] users = ReadToObject(data);
+
+            UpdateRecords(localDB, users);
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                List<User> result = localDB.FindAll(delegate (User u) {
+                    return u.lastname == users[i].lastname;
+                    });
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
+                }
+            }
+
+            Console.ReadKey();
+        }
+
+        // Deserialize a JSON stream to a User object.
+        public static User[] ReadToObject(string json)
+        {
+            User deserializedUser = new User();
+            User[] users = { };
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
+
+            users = ser.ReadObject(ms) as User[];
+
+            ms.Close();
+            return users;
+        }
+
+        // Simulated operation that returns JSON data.
+        public static string GetJsonData()
+        {
+            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
+            return str;
+        }
+
+        public static List<User> LoadRecords()
+        {
+            var db = new List<User> { };
+            User user1 = new User();
+            user1.firstname = "Joe";
+            user1.lastname = "Smith";
+            user1.totalpoints = 41;
+
+            db.Add(user1);
+
+            User user2 = new User();
+            user2.firstname = "Pete";
+            user2.lastname = "Peterson";
+            user2.totalpoints = 30;
+
+            db.Add(user2);
+
+            return db;
+        }
+        public static void UpdateRecords(List<User> db, User[] users)
+        {
+            bool existingUser = false;
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                foreach (var item in db)
+                {
+                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
+                    {
+                        existingUser = true;
+                        item.totalpoints += users[i].points;
+
+                    }
+                }
+                if (existingUser == false)
+                {
+                    User user = new User();
+                    user.firstname = users[i].firstname;
+                    user.lastname = users[i].lastname;
+                    user.totalpoints = users[i].points;
+
+                    db.Add(user);
+                }
+            }
+        }
+    }
+
+    [DataContract]
+    internal class User
+    {
+        [DataMember]
+        internal string firstname;
+
+        [DataMember]
+        internal string lastname;
+
+        [DataMember]
+        // internal double points;
+        internal string points;
+
+        [DataMember]
+        internal int totalpoints;
+    }
+}
+```
 
 ## <a name="find-the-red-and-green-squiggles"></a>Trovare le linee a zigzag rosse e verdi.
 
@@ -65,9 +192,9 @@ Si noti che questo errore viene visualizzata un'icona lampadina in basso a sinis
 
 Quando si fa clic su questo elemento, Visual Studio aggiunge il `using System.Text` istruzione all'inizio del *Program.cs* file e la sottolineatura rossa scomparirà. (Quando non si è certi cosa farà una correzione suggerita, scegliere il **Anteprima modifiche** collegamento a destra prima di applicare la correzione.)
 
-L'errore precedente è uno standard comune che in genere, risolvere aggiungendo una nuova `using` istruzione nel codice. Esistono diversi errori comuni, in modo analoghi a questo, ad esempio ```The type or namespace `Name` cannot be found.``` questi tipi di errore potrebbero indicare un riferimento all'assembly mancante (il pulsante destro del progetto, scegliere **Add** > **riferimento**), un nome scritto male o in una raccolta manca che è necessario aggiungere tramite NuGet (fare clic sul progetto e scegliere **Gestisci pacchetti NuGet**).
+L'errore precedente è uno standard comune che in genere, risolvere aggiungendo una nuova `using` istruzione nel codice. Esistono diversi errori comuni, in modo analoghi a questo, ad esempio ```The type or namespace `Name` cannot be found.``` questi tipi di errore potrebbero indicare un riferimento all'assembly mancante (il pulsante destro del progetto, scegliere **Add** > **riferimento**), un nome scritto male o in una raccolta manca che è necessario aggiungere (per C#, fare clic sul progetto e scegliere **Gestisci pacchetti NuGet**).
 
-## <a name="fix-the-errors-and-warnings"></a>Risolvere gli errori e avvisi
+## <a name="fix-the-remaining-errors-and-warnings"></a>Risolvere gli errori e avvisi rimanenti
 
 Esistono alcune altre sottolineature esaminare nel codice seguente. In questo caso, viene visualizzato un errore di conversione tipo comune. Quando passa il mouse sulla sottolineatura, noterete che il codice sta tentando di convertire una stringa in un integer, che non è supportato solo se si aggiunge codice esplicito per effettuare la conversione.
 
@@ -128,7 +255,7 @@ Quando si raggiunge un'eccezione, è necessario (e risposte) un paio di domande:
 
 * Questa eccezione è qualcosa che gli utenti possono incontrare?
 
-Se è il primo, correggere il bug. (Nell'app di esempio, che si intende correggere i dati errati.) Se si tratta del secondo, si potrebbe essere necessario gestire l'eccezione nel codice utilizzando un `try/catch` blocco (prendiamo in esame gli altri possibili correzioni nella sezione successiva). Nell'app di esempio, sostituire il codice seguente:
+Se è il primo, correggere il bug. (Nell'app di esempio, che si intende correggere i dati errati.) Se si tratta del secondo, si potrebbe essere necessario gestire l'eccezione nel codice utilizzando un `try/catch` blocco (prendiamo in esame gli altri possibili strategie nella sezione successiva). Nell'app di esempio, sostituire il codice seguente:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -277,131 +404,6 @@ Per informazioni su come usare le funzionalità essenziali del debugger, vedere 
 ## <a name="fix-performance-issues"></a>Correggi problemi di prestazioni
 
 I bug di un altro tipo includono codice inefficiente che fa sì che l'app a esecuzione lenta o usare troppa memoria. Ottimizzazione delle prestazioni è in genere, è eseguire in un secondo momento nell'ambiente di sviluppo di app. Tuttavia, è possibile eseguire in problemi di prestazioni all'inizio (ad esempio, noterete che l'esecuzione di alcune parti dell'applicazione risulta rallentata), e potrebbe essere necessario testare l'app con gli strumenti di profilatura sin dall'inizio. Per altre informazioni su strumenti, ad esempio lo strumento utilizzo CPU e l'analizzatore di memoria per la profilatura, vedere [descrive gli strumenti di profilatura](../profiling/profiling-feature-tour.md).
-
-## <a name="sample-code"></a> Codice di esempio
-
-Il codice seguente contiene alcuni bug che è possibile correggere mediante l'IDE di Visual Studio. In questo caso l'app è una semplice app che simula recupero dei dati JSON da un'operazione, la deserializzazione di dati a un oggetto e l'aggiornamento di un elenco semplice con i nuovi dati.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-using System.IO;
-
-namespace Console_Parse_JSON_DotNetCore
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var localDB = LoadRecords();
-            string data = GetJsonData();
-
-            User[] users = ReadToObject(data);
-
-            UpdateRecords(localDB, users);
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                List<User> result = localDB.FindAll(delegate (User u) {
-                    return u.lastname == users[i].lastname;
-                    });
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
-                }
-            }
-
-            Console.ReadKey();
-        }
-
-        // Deserialize a JSON stream to a User object.
-        public static User[] ReadToObject(string json)
-        {
-            User deserializedUser = new User();
-            User[] users = { };
-            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
-
-            users = ser.ReadObject(ms) as User[];
-
-            ms.Close();
-            return users;
-        }
-
-        // Simulated operation that returns JSON data.
-        public static string GetJsonData()
-        {
-            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
-            return str;
-        }
-
-        public static List<User> LoadRecords()
-        {
-            var db = new List<User> { };
-            User user1 = new User();
-            user1.firstname = "Joe";
-            user1.lastname = "Smith";
-            user1.totalpoints = 41;
-
-            db.Add(user1);
-
-            User user2 = new User();
-            user2.firstname = "Pete";
-            user2.lastname = "Peterson";
-            user2.totalpoints = 30;
-
-            db.Add(user2);
-
-            return db;
-        }
-        public static void UpdateRecords(List<User> db, User[] users)
-        {
-            bool existingUser = false;
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                foreach (var item in db)
-                {
-                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
-                    {
-                        existingUser = true;
-                        item.totalpoints += users[i].points;
-
-                    }
-                }
-                if (existingUser == false)
-                {
-                    User user = new User();
-                    user.firstname = users[i].firstname;
-                    user.lastname = users[i].lastname;
-                    user.totalpoints = users[i].points;
-
-                    db.Add(user);
-                }
-            }
-        }
-    }
-
-    [DataContract]
-    internal class User
-    {
-        [DataMember]
-        internal string firstname;
-
-        [DataMember]
-        internal string lastname;
-
-        [DataMember]
-        // internal double points;
-        internal string points;
-
-        [DataMember]
-        internal int totalpoints;
-    }
-}
-```
 
 ## <a name="next-steps"></a>Passaggi successivi
 

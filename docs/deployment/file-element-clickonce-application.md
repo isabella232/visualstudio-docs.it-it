@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828303"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984717"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file&gt; elemento (applicazione ClickOnce)
 Identifica tutti i file scaricata e usata dall'applicazione.  
@@ -86,7 +86,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
  L'elemento `file` è facoltativo. L'elemento presenta gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`name`|Obbligatorio. Identifica il nome del file.|  
 |`size`|Obbligatorio. Specifica la dimensione, espressa in byte, del file.|  
@@ -94,10 +94,10 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 |`optional`|Facoltativo. Specifica se il file deve essere download quando l'applicazione è la prima esecuzione, o se il file deve risiedere solo nel server fino a quando non viene richiesto dall'applicazione su richiesta. Se `false` o non definito, il file viene scaricato quando l'applicazione o della prima esecuzione installata. Se `true`, un `group` deve essere specificato per il manifesto dell'applicazione sia valido. `optional` non può essere true se `writeableType` viene specificato con il valore `applicationData`.|  
 |`writeableType`|Facoltativo. Specifica che questo file è un file di dati. Attualmente, l'unico valore valido è `applicationData`.|  
 
-## <a name="typelib"></a>libreria dei tipi  
+## <a name="typelib"></a>typelib  
  Il `typelib` elemento è un elemento figlio facoltativo dell'elemento file. L'elemento descrive la libreria dei tipi a cui appartiene il componente COM. L'elemento presenta gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`tlbid`|Obbligatorio. GUID assegnato alla libreria dei tipi.|  
 |`version`|Obbligatorio. Il numero di versione della libreria dei tipi.|  
@@ -108,7 +108,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="comclass"></a>comClass  
  Il `comClass` costituisce un elemento figlio facoltativo di `file` elemento, ma è obbligatorio se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento presenta gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`clsid`|Obbligatorio. L'ID di classe del componente COM espresso come GUID.|  
 |`description`|Facoltativo. Nome della classe.|  
@@ -124,7 +124,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
  Il `comInterfaceExternalProxyStub` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento contiene gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`iid`|Obbligatorio. L'ID interfaccia (IID) che verrà servita da questo proxy. IID deve avere tra parentesi quadre.|  
 |`baseInterface`|Facoltativo. IID dell'interfaccia da cui l'interfaccia fa `iid` è derivato.|  
@@ -136,7 +136,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  Il `comInterfaceProxyStub` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento contiene gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`iid`|Obbligatorio. L'ID interfaccia (IID) che verrà servita da questo proxy. IID deve avere tra parentesi quadre.|  
 |`baseInterface`|Facoltativo. IID dell'interfaccia da cui l'interfaccia fa `iid` è derivato.|  
@@ -149,7 +149,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="windowclass"></a>windowClass  
  Il `windowClass` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento fa riferimento a una classe di finestra definita dal componente COM che deve essere installata una versione applicato. L'elemento contiene gli attributi seguenti.  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`versioned`|Facoltativo. Controlla se la finestra interna classe nome usato nella registrazione contiene la versione dell'assembly che contiene la classe della finestra. Il valore di questo attributo può essere `yes` o `no`. Il valore predefinito è `yes`. Il valore `no` deve essere utilizzato solo se la stessa classe della finestra è definita da un componente side-by-side ed un'equivalente non-side-by-side e si desidera trattarli come la classe della finestra stessa. Si noti che si applicano le regole normali sulla registrazione delle classi di finestra, ovvero solo il primo componente che registra la classe di finestra saranno in grado di registrare, perché non dispone di una versione applicata.|  
 
@@ -160,14 +160,14 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 
  Se un manifesto contiene un file che non è stato eseguito l'hashing, tale manifesto non può essere digitale firmato, perché gli utenti non è possibile verificare il contenuto di un file senza hash.  
 
-## <a name="dsigtransforms"></a>dsig: Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
 
-## <a name="dsigtransform"></a>dsig: Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
 
 
-| Attributo | Description |
+| Attributo | Descrizione |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
@@ -175,7 +175,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
  Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.  
 
 
-| Attributo | Description |
+| Attributo | Descrizione |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`. |
 

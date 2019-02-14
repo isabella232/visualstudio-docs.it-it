@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a51984484f2120bd853e90b3dabff6928c2dce1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958746"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.  
@@ -44,7 +44,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
  L'elemento `PackageFiles` presenta l'attributo seguente:  
 
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|Facoltativo. Se impostato su `false`, il programma di installazione scaricherà solo i file a cui fa riferimento il `Command` elemento. Se impostato su `true`, verranno scaricati tutti i file.<br /><br /> Se impostato su `IfNotHomesite`, il programma di installazione si comporterà come se `False` se `ComponentsLocation` è impostata su `HomeSite`e in caso contrario, si comportano allo stesso come se `True`. Questa impostazione può essere utile per consentire ai pacchetti che sono essi stessi programmi di bootstrap eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|  
 
@@ -54,7 +54,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
  `PackageFile` ha gli attributi seguenti.  
 
 
-| Attributo | Description |
+| Attributo | Descrizione |
 |---------------| - |
 | `Name` | Obbligatorio. Il nome del file del pacchetto. Si tratta del nome che il `Command` elemento farà riferimento quando definisce le condizioni in cui viene installato un pacchetto. Questo valore viene anche utilizzato come chiave nel `Strings` tabella per recuperare il nome localizzato che gli strumenti, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà utilizzato per descrivere il pacchetto. |
 | `HomeSite` | Facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione. |

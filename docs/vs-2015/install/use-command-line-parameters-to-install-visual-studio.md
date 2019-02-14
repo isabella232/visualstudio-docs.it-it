@@ -34,7 +34,7 @@ Quando si installa Visual Studio 2015 da un prompt dei comandi è possibile usar
 ## <a name="list-of-command-line-parameters"></a>Elenco dei parametri della riga di comando
  Per i parametri della riga di comando di Visual Studio non si fa distinzione tra maiuscole e minuscole.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|Visualizza i parametri della riga di comando.|
 |**/AddRemoveFeatures**|Specifica le funzionalità da aggiungere o rimuovere dal prodotto installato.|
@@ -59,7 +59,7 @@ Quando si installa Visual Studio 2015 da un prompt dei comandi è possibile usar
 |**/repair**|Ripristina Visual Studio.|
 |**/SuppressRefreshPrompt**|Impedisce la visualizzazione della finestra di dialogo che informa della disponibilità dell'aggiornamento. In tal modo, l'installazione guidata accetterà automaticamente eventuali versioni aggiornate richieste o consigliate.|
 |**/u**<br /><br /> **/Uninstall**|Disinstalla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|**/Uninstall /Force**<br /><br /> **/u /force**|Disinstalla Visual Studio e tutte le funzionalità condivise con altri prodotti. **Avviso:**  Se si usa questo parametro, altri prodotti installati nello stesso computer potrebbero smettere di funzionare correttamente.|
+|**/Uninstall /Force**<br /><br /> **/u /force**|Disinstalla Visual Studio e tutte le funzionalità condivise con altri prodotti. **Avviso:** se si usa questo parametro, altri prodotti installati nello stesso computer potrebbero smettere di funzionare correttamente.|
 
 ## <a name="see-also"></a>Vedere anche
  [Guida di Visual Studio Administrator](../install/visual-studio-administrator-guide.md)
