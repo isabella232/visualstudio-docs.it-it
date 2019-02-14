@@ -1,11 +1,7 @@
 ---
 title: Aggiunta di supporto di altri linguaggi all'editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -18,13 +14,13 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758815"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Aggiunta del supporto di altri linguaggi all'editor di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +72,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 
  In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla propria situazione:
 
-|Nome cartella|Description|
+|Nome cartella|Descrizione|
 |-----------------|-----------------|
 |\\*\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, **\Matlab**.|
 |\Syntaxes|Cartella della grammatica. Contiene i file della grammatica con estensione json per il linguaggio, ad esempio **Matlab.json**.|
@@ -84,7 +80,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 
  In Windows %userprofile% si risolve nel percorso c:\Users\\*\<nome utente>*. Se nel sistema non esiste la cartella delle estensioni, è necessario crearla. Se la cartella esiste già, verrà nascosta.
 
- Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate: Introduzione al linguaggio grammatiche: Come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [note sulla creazione di una grammatica del linguaggio e un tema personalizzato per un Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate: introduzione alle grammatiche dei linguaggi: come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata nell'HTML) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note sulla creazione della grammatica di un linguaggio e di un tema personalizzato per un bundle TextMate).
 
 ## <a name="see-also"></a>Vedere anche
  [Visual Studio 2013 passare a miglioramenti](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [questa procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md) [procedura dettagliata: visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
