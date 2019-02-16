@@ -13,79 +13,79 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af52b8f1047e806a3a64902584ad44ed534a3b83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8dee855b76f214f5fe1c230464a1ab4420f46240
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944696"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317931"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Ottiene la risoluzione di punto di interruzione che descrive il punto di interruzione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetBreakpointResolution(   
-   IDebugBreakpointResolution2** ppBPResolution  
-);  
-```  
-  
-```csharp  
-int GetBreakpointResolution(   
-   out IDebugBreakpointResolution2 ppBPResolution  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppBPResolution`  
- [out] Restituisce il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfaccia che rappresenta uno dei seguenti:  
-  
--   L'oggetto di risoluzione dei punti di interruzione che descrive la posizione nel codice in cui è stato associato un punto di interruzione del codice.  
-  
--   Il percorso dei dati in cui è associato un punto di interruzione dei dati.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato viene impostato su `BPS_DELETED` (in parte il [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione).  
-  
-## <a name="remarks"></a>Note  
- Chiamare il [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) metodo per determinare se la risoluzione del punto di interruzione per dati o codice.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CBoundBreakpoint` oggetto che espone il [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaccia.  
-  
-```  
-HRESULT CBoundBreakpoint::GetBreakpointResolution(  
-    IDebugBreakpointResolution2** ppBPResolution)  
-{    
-   HRESULT hr;    
-  
-   if (ppBPResolution)    
-   {    
-      // Verify that the bound breakpoint has not been deleted. If   
-      // deleted, then return hr = E_BP_DELETED.    
-      if (m_state != BPS_DELETED)    
-      {    
-         // Query for the IDebugBreakpointResolution2 interface.    
-         hr = m_pBPRes->QueryInterface(IID_IDebugBreakpointResolution2,  
-                                       (void **)ppBPResolution);  
-         assert(hr == S_OK);    
-      }    
-      else    
-      {    
-         hr = E_BP_DELETED;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+Ottiene la risoluzione di punto di interruzione che descrive il punto di interruzione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetBreakpointResolution( 
+    IDebugBreakpointResolution2** ppBPResolution
+);
+```
+
+```csharp
+int GetBreakpointResolution( 
+    out IDebugBreakpointResolution2 ppBPResolution
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`ppBPResolution`  
+[out] Restituisce il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfaccia che rappresenta uno dei seguenti:
+
+- L'oggetto di risoluzione dei punti di interruzione che descrive la posizione nel codice in cui è stato associato un punto di interruzione del codice.
+
+- Il percorso dei dati in cui è associato un punto di interruzione dei dati.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato viene impostato su `BPS_DELETED` (in parte il [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione).
+
+## <a name="remarks"></a>Note
+Chiamare il [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) metodo per determinare se la risoluzione del punto di interruzione per dati o codice.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CBoundBreakpoint` oggetto che espone il [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaccia.
+
+```
+HRESULT CBoundBreakpoint::GetBreakpointResolution(
+    IDebugBreakpointResolution2** ppBPResolution)
+{
+    HRESULT hr;
+
+    if (ppBPResolution)
+    {
+        // Verify that the bound breakpoint has not been deleted. If
+        // deleted, then return hr = E_BP_DELETED.
+        if (m_state != BPS_DELETED)
+        {
+            // Query for the IDebugBreakpointResolution2 interface.
+            hr = m_pBPRes->QueryInterface(IID_IDebugBreakpointResolution2,
+                                          (void **)ppBPResolution);
+            assert(hr == S_OK);
+        }
+        else
+        {
+            hr = E_BP_DELETED;
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
+[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)  
+[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

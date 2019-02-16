@@ -12,43 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cdce09791eb0925654a03a6a3e2520f06924365
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ab7a0b226b7a8fac779e5c5109700a37e60d9d0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970370"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315703"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
-Contiene i dati per il percorso di un punto di interruzione in una riga specifica in un file di codice sorgente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-typedef struct _BP_LOCATION_CODE_FILE_LINE {   
-   BSTR                     bstrContext;  
-   IDebugDocumentPosition2* pDocPos;  
-} BP_LOCATION_CODE_FILE_LINE;  
-```  
-  
-## <a name="members"></a>Membri  
- `bstrContext`  
- Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.  
-  
- `pDocPos`  
- Il [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta la posizione del documento del punto di interruzione.  
-  
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+Contiene i dati per il percorso di un punto di interruzione in una riga specifica in un file di codice sorgente.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+typedef struct _BP_LOCATION_CODE_FILE_LINE {
+    BSTR                     bstrContext;
+    IDebugDocumentPosition2* pDocPos;
+} BP_LOCATION_CODE_FILE_LINE;
+```
+
+## <a name="members"></a>Membri
+`bstrContext`  
+Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.
+
+`pDocPos`  
+Il [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta la posizione del documento del punto di interruzione.
+
+## <a name="remarks"></a>Note
+Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
+
+## <a name="requirements"></a>Requisiti
+Intestazione: msdbg.h
+
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+[Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
+[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
