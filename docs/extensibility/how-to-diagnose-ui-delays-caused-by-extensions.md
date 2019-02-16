@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957442"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317120"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedura: Diagnosticare i ritardi dell'interfaccia utente causati dalle estensioni
 
@@ -102,7 +102,7 @@ Successivamente, aprire il file di traccia. È possibile eseguire questa operazi
 Quindi, selezionare il file di traccia nel riquadro a sinistra e aprirlo scegliendone **aprire** dal menu di scelta rapida.
 
 > [!NOTE]
-> Per impostazione predefinita PerfView restituisce un archivio Zip. Quando si apre *trace.zip*, viene automaticamente decomprime l'archivio e verrà visualizzata la traccia. È possibile saltare questo passaggio se si deseleziona il **Zip** finestra durante la raccolta delle tracce. Tuttavia, se si prevede di trasferire e utilizzo delle tracce in diversi computer, è consigliabile evitare se si deseleziona il **Zip** casella. Senza questa opzione, PDB obbligatorio per gli assembly Ngen di accompagnamento non la traccia e pertanto i simboli da assembly Ngen non verranno risolti in computer di destinazione. (Vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) per altre informazioni sui file PDB per gli assembly Ngen.) 
+> Per impostazione predefinita PerfView restituisce un archivio Zip. Quando si apre *trace.zip*, viene automaticamente decomprime l'archivio e verrà visualizzata la traccia. È possibile saltare questo passaggio se si deseleziona il **Zip** finestra durante la raccolta delle tracce. Tuttavia, se si prevede di trasferire e utilizzo delle tracce in diversi computer, è consigliabile evitare se si deseleziona il **Zip** casella. Senza questa opzione, PDB obbligatorio per gli assembly Ngen di accompagnamento non la traccia e pertanto i simboli da assembly Ngen non verranno risolti in computer di destinazione. (Vedere [questo post di blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) per altre informazioni sui file PDB per gli assembly Ngen.) 
 
 Può richiedere diversi minuti prima che PerfView elaborare e aprire la traccia. Dopo aver aperta la traccia, viene visualizzato un elenco delle varie "visualizzazioni" sotto di esso.
 
