@@ -11,59 +11,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f7660611e72a858f80579ec864924b0f9de62e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edeb41acadd34046497412dde5c61eb249a0bfc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928451"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315937"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
-Recupera il nome del modulo in fase di debug.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetModuleName(   
-   BSTR *pbstrModuleName  
-);  
-```  
-  
-```csharp  
-public int GetModuleName (  
-   string pbstrModuleName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pbstrModuleName`  
- [out] Nome del modulo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugBeforeSymbolSearchEventBase** oggetto che espone le [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaccia.  
-  
-```cpp  
-STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if (m_bstrModuleName)  
-    {  
-  
-        *pbstrModuleName = SysAllocString( m_bstrModuleName);  
-  
-        if (*pbstrModuleName)  
-        {  
-            hRes = S_OK;  
-        }  
-    }  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
+Recupera il nome del modulo in fase di debug.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetModuleName(
+    BSTR *pbstrModuleName
+);
+```
+
+```csharp
+public int GetModuleName (
+    string pbstrModuleName
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`pbstrModuleName`  
+[out] Nome del modulo.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugBeforeSymbolSearchEventBase** oggetto che espone le [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaccia.
+
+```cpp
+STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)
+{
+    HRESULT hRes = E_FAIL;
+
+    if (m_bstrModuleName)
+    {
+
+        *pbstrModuleName = SysAllocString( m_bstrModuleName);
+
+        if (*pbstrModuleName)
+        {
+            hRes = S_OK;
+        }
+    }
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)

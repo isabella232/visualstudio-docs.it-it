@@ -12,71 +12,71 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd000e439a3ed52681fe9fb8c24fcb32266453d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5fb592ddd5a9bbac22a2248bbe5922b64f30193
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963021"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315846"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-Crea un enumeratore dei punti di interruzione che sono state associate su questo evento.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT EnumBoundBreakpoints(   
-   IEnumDebugBoundBreakpoints2** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumBoundBreakpoints(   
-   out IEnumDebugBoundBreakpoints2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppEnum`  
- [out] Restituisce un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) associato da questo evento oggetto che enumera tutti i punti di interruzione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti punti di interruzione associate; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- L'elenco dei punti di interruzione associati sia per quelli associati a questo evento e potrebbe non essere l'intero elenco di punti di interruzione associato da un punto di interruzione in sospeso. Per ottenere un elenco di tutti i punti di interruzione associato a un punto di interruzione in sospeso, chiamare il [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) metodo per ottenere l'oggetto associato [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) dell'oggetto e quindi chiamare il [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) metodo per ottenere un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) oggetto che contiene tutti i punti di interruzione associati per il punto di interruzione in sospeso.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CBreakpointSetDebugEventBase** oggetto che espone le [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfaccia.  
-  
-```cpp  
-STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(  
-    IEnumDebugBoundBreakpoints2 **ppEnum)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( ppEnum )  
-    {  
-        if ( m_pEnumBound )  
-        {  
-            hRes = m_pEnumBound->Clone(ppEnum);  
-  
-            if ( EVAL(S_OK == hRes) )  
-                (*ppEnum)->Reset();  
-        }  
-        else  
-            hRes = E_FAIL;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
- [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)   
- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
+Crea un enumeratore dei punti di interruzione che sono state associate su questo evento.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT EnumBoundBreakpoints( 
+    IEnumDebugBoundBreakpoints2** ppEnum
+);
+```
+
+```csharp
+int EnumBoundBreakpoints( 
+    out IEnumDebugBoundBreakpoints2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`ppEnum`  
+[out] Restituisce un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) associato da questo evento oggetto che enumera tutti i punti di interruzione.
+
+## <a name="return-value"></a>Valore restituito
+Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti punti di interruzione associate; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+L'elenco dei punti di interruzione associati sia per quelli associati a questo evento e potrebbe non essere l'intero elenco di punti di interruzione associato da un punto di interruzione in sospeso. Per ottenere un elenco di tutti i punti di interruzione associato a un punto di interruzione in sospeso, chiamare il [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) metodo per ottenere l'oggetto associato [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) dell'oggetto e quindi chiamare il [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) metodo per ottenere un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) oggetto che contiene tutti i punti di interruzione associati per il punto di interruzione in sospeso.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CBreakpointSetDebugEventBase** oggetto che espone le [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfaccia.
+
+```cpp
+STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(
+    IEnumDebugBoundBreakpoints2 **ppEnum)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( ppEnum )
+    {
+        if ( m_pEnumBound )
+        {
+            hRes = m_pEnumBound->Clone(ppEnum);
+
+            if ( EVAL(S_OK == hRes) )
+                (*ppEnum)->Reset();
+        }
+        else
+            hRes = E_FAIL;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)  
+[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)  
+[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)  
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)  
+[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)

@@ -12,71 +12,71 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa34a3ab8920b719ecc52a9abdf987e14782078
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7cc7231e218af855d3cc24eebe694b21ba1b40a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998131"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315469"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
-Descrive le condizioni in cui viene attivato un punto di interruzione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-typedef struct _BP_CONDITION {   
-   IDebugThread2* pThread;  
-   BP_COND_STYLE  styleCondition;  
-   BSTR           bstrContext;  
-   BSTR           bstrCondition;  
-   UINT           nRadix;  
-} BP_CONDITION;  
-```  
-  
-```csharp  
-public struct BP_CONDITION {   
-   public IDebugThread2 pThread;  
-   public uint          styleCondition;  
-   public string        bstrContext;  
-   public string        bstrCondition;  
-   public uint          nRadix;  
-};  
-```  
-  
-## <a name="members"></a>Membri  
- `pThread`  
- Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.  
-  
- `styleCondition`  
- Un valore compreso il [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumerazione che indica lo stile di questa condizione di punto di interruzione.  
-  
- `bstrContext`  
- La posizione del punto di interruzione.  
-  
- `bstrCondition`  
- La condizione di attivazione del punto di interruzione.  
-  
- `nRadix`  
- Radice da usare nella valutazione di tutte le informazioni numeriche.  
-  
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.  
-  
- Questa struttura viene anche passata come parametro per il [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metodi.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)
+Descrive le condizioni in cui viene attivato un punto di interruzione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+typedef struct _BP_CONDITION {
+    IDebugThread2* pThread;
+    BP_COND_STYLE  styleCondition;
+    BSTR           bstrContext;
+    BSTR           bstrCondition;
+    UINT           nRadix;
+} BP_CONDITION;
+```
+
+```csharp
+public struct BP_CONDITION {
+    public IDebugThread2 pThread;
+    public uint          styleCondition;
+    public string        bstrContext;
+    public string        bstrCondition;
+    public uint          nRadix;
+};
+```
+
+## <a name="members"></a>Membri
+`pThread`  
+Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.
+
+`styleCondition`  
+Un valore compreso il [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumerazione che indica lo stile di questa condizione di punto di interruzione.
+
+`bstrContext`  
+La posizione del punto di interruzione.
+
+`bstrCondition`  
+La condizione di attivazione del punto di interruzione.
+
+`nRadix`  
+Radice da usare nella valutazione di tutte le informazioni numeriche.
+
+## <a name="remarks"></a>Note
+Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.
+
+Questa struttura viene anche passata come parametro per il [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metodi.
+
+## <a name="requirements"></a>Requisiti
+Intestazione: msdbg.h
+
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+[Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
+[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
+[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)  
+[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)  
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
+[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

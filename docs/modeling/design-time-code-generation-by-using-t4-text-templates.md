@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c31a33abd5767207f9c2406907961379f84bae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6370bdcba922ec1c1b358a773e4f891ea41230e3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924469"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318045"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 Modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o database che contiene informazioni chiave sui requisiti dell'applicazione.
@@ -294,7 +294,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Se è stato installato il SDK di modellazione di Visual Studio, è possibile avere tutti i modelli di trasformare automaticamente ogni volta che si esegue una compilazione. A tale scopo, modificare il file di progetto (con estensione csproj o vbproj) in un editor di testo e quindi aggiungere le righe seguenti vicino alla fine del file, dopo eventuali altre istruzioni `<import>`:
 
 > [!NOTE]
-> In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

@@ -12,76 +12,79 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f701a541077f3bdb53374deec0562fd68e5c7b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ccc05c58eafe6f8902b3f8ac09b90dc771a3009
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024370"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315689"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!` Rappresenta i motivi che **modifica e continuazione** non è disponibile.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-enum tagEncUnavailableReason {  
-   ENCUN_NONE,  
-   ENCUN_INTEROP,  
-   ENCUN_SQLCLR,  
-   ENCUN_MINIDUMP,  
-   ENCUN_EMBEDDED,  
-   ENCUN_ATTACH,  
-   ENCUN_WIN64  
-};  
-typedef enum tagEncUnavailableReason EncUnavailableReason;  
-```  
-  
-```csharp  
-public enum EncUnavailableReason {  
-   ENCUN_NONE,  
-   ENCUN_INTEROP,  
-   ENCUN_SQLCLR,  
-   ENCUN_MINIDUMP,  
-   ENCUN_EMBEDDED,  
-   ENCUN_ATTACH,  
-   ENCUN_WIN64  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- ENCUN_NONE  
- Nessun motivo specifico per cui modifica e continuazione non è disponibile.  
-  
- ENCUN_INTEROP  
- Modifica e continuazione non è disponibile durante una chiamata di interoperabilità.  
-  
- ENCUN_SQLCLR  
- Modifica e continuazione non è disponibile durante una chiamata di procedura SQL che usa Common Language Runtime (CLR).  
-  
- ENCUN_MINIDUMP  
- Modifica e continuazione non è disponibile durante l'elaborazione di un minidump.  
-  
- ENCUN_EMBEDDED  
- Modifica e continuazione non è disponibile durante l'elaborazione del codice incorporato.  
-  
- ENCUN_ATTACH  
- Modifica e continuazione non è disponibile perché la sessione è stata collegata a, non viene avviata da, il debugger.  
-  
- ENCUN_WIN64  
- Modifica e continuazione non è disponibile durante l'elaborazione di codice Windows a 64 bit.  
-  
-## <a name="remarks"></a>Note  
- Questa enumerazione è per uso interno solo da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. Il [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) metodi come implementato da un fornitore di porte personalizzato devono sempre restituire `E_NOTIMPL`.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.idl  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)   
- [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)
+`This is for internal use only!` Rappresenta i motivi che **modifica e continuazione** non è disponibile.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+enum tagEncUnavailableReason {
+    ENCUN_NONE,
+    ENCUN_INTEROP,
+    ENCUN_SQLCLR,
+    ENCUN_MINIDUMP,
+    ENCUN_EMBEDDED,
+    ENCUN_ATTACH,
+    ENCUN_WIN64
+};
+typedef enum tagEncUnavailableReason EncUnavailableReason;
+```
+
+```csharp
+public enum EncUnavailableReason {
+    ENCUN_NONE,
+    ENCUN_INTEROP,
+    ENCUN_SQLCLR,
+    ENCUN_MINIDUMP,
+    ENCUN_EMBEDDED,
+    ENCUN_ATTACH,
+    ENCUN_WIN64
+};
+```
+
+#### <a name="parameters"></a>Parametri
+ENCUN_NONE  
+Nessun motivo specifico per cui modifica e continuazione non è disponibile.
+
+ENCUN_INTEROP  
+Modifica e continuazione non è disponibile durante una chiamata di interoperabilità.
+
+ENCUN_SQLCLR  
+Modifica e continuazione non è disponibile durante una chiamata di procedura SQL che usa Common Language Runtime (CLR).
+
+ENCUN_MINIDUMP  
+Modifica e continuazione non è disponibile durante l'elaborazione di un minidump.
+
+ENCUN_EMBEDDED  
+Modifica e continuazione non è disponibile durante l'elaborazione del codice incorporato.
+
+ENCUN_ATTACH  
+Modifica e continuazione non è disponibile perché la sessione è stata collegata a, non viene avviata da, il debugger.
+
+ENCUN_WIN64  
+Modifica e continuazione non è disponibile durante l'elaborazione di codice Windows a 64 bit.
+
+## <a name="remarks"></a>Note
+Questa enumerazione è per uso interno solo da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. Il [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) metodi come implementato da un fornitore di porte personalizzato devono sempre restituire `E_NOTIMPL`.
+
+## <a name="requirements"></a>Requisiti
+Intestazione: msdbg.idl
+
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+
+[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
+
+[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)
+

@@ -10,96 +10,96 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421fcc14316ae463b83daee16f528cc3ee573ebe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ba3d10fc129edfa5ac159bcf394cdbe734d65dba
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944618"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317640"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Recupera il valore di checksum di documento per una richiesta di punto di interruzione specificata l'identificatore univoco dell'algoritmo di checksum da utilizzare.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetChecksum(   
-   REFGUID        guidAlgorithm,  
-   CHECKSUM_DATA *pChecksumData  
-);  
-```  
-  
-```csharp  
-public int GetChecksum(   
-   ref Guid               guidAlgorithm,  
-   out enum_CHECKSUM_DATA pChecksumData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `guidAlgorithm`  
- [in] Identificatore univoco dell'algoritmo di checksum.  
-  
- `pChecksumData`  
- [out] Checksum di documento per la richiesta di punto di interruzione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene mostrata una funzione che controlla se il valore di checksum di un documento che sta per essere associato, corrisponde a uno dall'interfaccia utente.  
-  
-```cpp  
-bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
-{  
-    bool fRet = false;  
-    HRESULT hRes;  
-  
-    // Get the checksum for the document we are about to bind to from the pdb side  
-    GUID guidAlgorithmId;  
-    BYTE *pChecksum = NULL;  
-    ULONG cNumBytes = 0;  
-  
-    hRes = pContext->GetDocumentChecksumAndAlgorithmId(&guidAlgorithmId, &pChecksum, &cNumBytes);  
-  
-    if ( S_OK == hRes )  
-    {  
-        // Get checksum data for the document from the UI (request) side  
-        CComPtr<IDebugBreakpointChecksumRequest2> pChecksumRequest;  
-  
-        hRes = pPending->GetChecksumRequest(&pChecksumRequest);  
-  
-        if ( S_OK == hRes )  
-        {  
-            CHECKSUM_DATA data;  
-  
-            hRes = pChecksumRequest->GetChecksum(guidAlgorithmId, &data);  
-  
-            if ( S_OK == hRes )  
-            {  
-                if ( data.ByteCount == cNumBytes && memcmp(data.pBytes, pChecksum, cNumBytes) == 0 )  
-                    fRet = true;  
-                else  
-                    fRet = false;  
-  
-                // Free up data allocated for checksum data  
-                CoTaskMemFree(data.pBytes);  
-            }  
-            else  
-                fRet = true; // checksums not available - user disabed checksums  
-        }  
-        else  
-            fRet = true; // we couldn't get checksum from UI - default to past behavior  
-  
-        // free up space allocated for checksum from pdb  
-        CoTaskMemFree(pChecksum);  
-    }  
-    else  
-        fRet = true; // we don't have a checksum to compare with.  
-  
-    return ( fRet );  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)
+Recupera il valore di checksum di documento per una richiesta di punto di interruzione specificata l'identificatore univoco dell'algoritmo di checksum da utilizzare.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetChecksum(
+    REFGUID        guidAlgorithm,
+    CHECKSUM_DATA *pChecksumData
+);
+```
+
+```csharp
+public int GetChecksum(
+    ref Guid               guidAlgorithm,
+    out enum_CHECKSUM_DATA pChecksumData
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`guidAlgorithm`  
+[in] Identificatore univoco dell'algoritmo di checksum.
+
+`pChecksumData`  
+[out] Checksum di documento per la richiesta di punto di interruzione.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene mostrata una funzione che controlla se il valore di checksum di un documento che sta per essere associato, corrisponde a uno dall'interfaccia utente.
+
+```cpp
+bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)
+{
+    bool fRet = false;
+    HRESULT hRes;
+
+    // Get the checksum for the document we are about to bind to from the pdb side
+    GUID guidAlgorithmId;
+    BYTE *pChecksum = NULL;
+    ULONG cNumBytes = 0;
+
+    hRes = pContext->GetDocumentChecksumAndAlgorithmId(&guidAlgorithmId, &pChecksum, &cNumBytes);
+
+    if ( S_OK == hRes )
+    {
+        // Get checksum data for the document from the UI (request) side
+        CComPtr<IDebugBreakpointChecksumRequest2> pChecksumRequest;
+
+        hRes = pPending->GetChecksumRequest(&pChecksumRequest);
+
+        if ( S_OK == hRes )
+        {
+            CHECKSUM_DATA data;
+
+            hRes = pChecksumRequest->GetChecksum(guidAlgorithmId, &data);
+
+            if ( S_OK == hRes )
+            {
+                if ( data.ByteCount == cNumBytes && memcmp(data.pBytes, pChecksum, cNumBytes) == 0 )
+                    fRet = true;
+                else
+                    fRet = false;
+
+                // Free up data allocated for checksum data
+                CoTaskMemFree(data.pBytes);
+            }
+            else
+                fRet = true; // checksums not available - user disabed checksums
+        }
+        else
+            fRet = true; // we couldn't get checksum from UI - default to past behavior
+
+        // free up space allocated for checksum from pdb
+        CoTaskMemFree(pChecksum);
+    }
+    else
+        fRet = true; // we don't have a checksum to compare with.
+
+    return ( fRet );
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)
