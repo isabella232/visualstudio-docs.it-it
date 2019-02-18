@@ -6,18 +6,17 @@ ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966166"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909604"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedura: Estendere il codice generato da Object Relational Designer
-Codice generato per il **O/R Designer** viene rigenerato quando vengono apportate modifiche alle classi di entità e altri oggetti nell'area di progettazione. A causa di questa rigenerazione, in genere tutto il codice aggiunto al codice generato viene sovrascritto quando la finestra di progettazione rigenera il codice. Il **O/R Designer** offre la possibilità di generare file di classe parziale in cui è possibile aggiungere il codice che non vengano sovrascritti. Un esempio di aggiunta di codice personalizzato al codice generato per il **O/R Designer** viene aggiunta la convalida dei dati a LINQ alle classi di SQL (entity). Per altre informazioni, vedere [Procedura: Aggiungere la convalida a classi di entità](../data-tools/how-to-add-validation-to-entity-classes.md).
+Codice generato per il **O/R Designer** viene rigenerato quando vengono apportate modifiche alle classi di entità e altri oggetti nell'area di progettazione. A causa di questa rigenerazione, in genere tutto il codice aggiunto al codice generato viene sovrascritto quando la finestra di progettazione rigenera il codice. Il **O/R Designer** offre la possibilità di generare file di classe parziale in cui è possibile aggiungere il codice che non vengano sovrascritti. Un esempio di aggiunta di codice personalizzato al codice generato per il **O/R Designer** viene aggiunta la convalida dei dati a LINQ alle classi di SQL (entity). Per altre informazioni, vedere [procedura: aggiungere la convalida a classi di entità](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,5 +47,5 @@ Codice generato per il **O/R Designer** viene rigenerato quando vengono apportat
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procedura dettagliata: Creazione di LINQ alle classi di SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

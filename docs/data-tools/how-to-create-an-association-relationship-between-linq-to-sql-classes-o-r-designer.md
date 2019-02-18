@@ -6,17 +6,16 @@ ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001330"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907789"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione tra classi LINQ to SQL (O/R Designer)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: creare un'associazione tra classi LINQ to SQL (O/R Designer)
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.
 
 Quando si usa la finestra di dialogo **Editor di associazione** per creare un'associazione, è necessario selezionare una classe padre e una classe figlio. La classe padre è la classe di entità che contiene la chiave primaria, mentre la classe figlio è la classe di entità che contiene la chiave esterna. Se, ad esempio, le classi di entità sono state create con mapping al `Northwind Customers` e `Orders` tabelle, il `Customer` classe sarebbe la classe padre e il `Order` classe sarebbe la classe figlio.

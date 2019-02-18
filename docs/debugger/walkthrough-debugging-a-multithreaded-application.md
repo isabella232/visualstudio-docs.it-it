@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: bb0df0c4b04665eaf771437fd72712c77b1f2d46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54228019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942555"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualizzare i thread nel debugger di Visual Studio usando la finestra thread (C#, Visual Basic, C++)
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione che sta eseguendo il debug. Per istruzioni dettagliate su come usare il **thread** finestra, vedere [procedura dettagliata: Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md).
@@ -36,13 +36,13 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
 ## <a name="use-the-threads-window"></a>Usare la finestra Thread 
  Il **thread** finestra contiene una tabella in cui ogni riga descrive un thread separato nell'applicazione. Per impostazione predefinita, nella tabella sono elencati tutti i thread dell'applicazione, ma è possibile filtrare l'elenco per visualizzare solo i thread desiderati. Ogni colonna descrive un tipo di informazioni diverso. È possibile inoltre nascondere alcune colonne. Se si visualizzano tutte le colonne, vengono visualizzate le colonne seguenti, da sinistra a destra:  
   
-- **Flag** In questo articolo etichetta, è possibile contrassegnare un thread a cui si desidera prestare particolare attenzione. Per informazioni su come contrassegnare un thread, vedere [come: Impostare e rimuovere i flag dei thread  
+- **Flag** In questo articolo etichetta, è possibile contrassegnare un thread a cui si desidera prestare particolare attenzione. Per informazioni su come contrassegnare un thread, vedere [procedura: Flag e rimuovere i flag dei thread](../debugger/how-to-flag-and-unflag-threads.md).  
   
-- -   Thread corrente In questo articolo etichetta, una freccia gialla indica che il thread corrente. Un contorno freccia indica il contesto di debug correnti per un thread non correnti.
+- **Thread corrente**: In questo articolo etichetta, una freccia gialla indica che il thread corrente. Un contorno freccia indica il contesto di debug correnti per un thread non correnti.
   
 - **ID**: Visualizza il numero di identificazione per ogni thread.  
   
-- -   ID gestito Visualizza i numeri di identificazione gestiti per i thread gestiti.  
+- **ID gestito**: visualizza i numeri di identificazione gestiti per i thread gestiti.  
   
 - **Categoria**. Visualizza la categoria di thread come thread dell'interfaccia utente, gestori delle chiamate a procedura remota o thread di lavoro. Una categoria speciale identifica il thread principale dell'applicazione.  
   
@@ -50,17 +50,17 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
 - **location**: Mostra in cui il thread è in esecuzione. È possibile espandere questo percorso per visualizzare lo stack di chiamate completo per il thread.  
   
-- -   Priorità Colonna avanzata (nascosta per impostazione predefinita) che consente di visualizzare la priorità o precedenza assegnata dal sistema per ogni thread.  
+- **Priorità**: colonna avanzata (nascosta per impostazione predefinita) che consente di visualizzare la priorità o precedenza assegnata dal sistema per ogni thread.  
   
-- -   Maschera di affinità Colonna avanzata (nascosta per impostazione predefinita) che mostra la maschera di affinità processori per ogni thread. In un sistema con più processori, la maschera di affinità determina in quali processori è possibile eseguire un thread.  
+- **Maschera di affinità**: colonna avanzata (nascosta per impostazione predefinita) che mostra la maschera di affinità processori per ogni thread. In un sistema con più processori, la maschera di affinità determina in quali processori è possibile eseguire un thread.  
   
-- -   Numero sospesi Colonna avanzata (nascosta per impostazione predefinita) che visualizza il numero sospesi. Questo conteggio determina se un thread può essere eseguito. Per altre informazioni sui conteggi sospesi, vedere [bloccare e sbloccare i thread](#freeze-and-thaw-threads).  
+- **Numero sospesi**: colonna avanzata (nascosta per impostazione predefinita) che visualizza il numero sospesi. Questo conteggio determina se un thread può essere eseguito. Per altre informazioni sui conteggi sospesi, vedere [bloccare e sbloccare i thread](#freeze-and-thaw-threads).  
   
-- -   Nome processo Colonna avanzata (nascosta per impostazione predefinita) che consente di visualizzare il processo a cui appartiene ogni thread. I dati in questa colonna possono essere utili quando si esegue il debug più processi.  
+- **Il nome del processo**: colonna avanzata (nascosta per impostazione predefinita) che consente di visualizzare il processo a cui appartiene ogni thread. I dati in questa colonna possono essere utili quando si esegue il debug più processi.  
 
-- ID processo Colonna avanzata (nascosta per impostazione predefinita) che visualizza l'ID del processo a cui appartiene ogni thread. 
+- **ID del processo**: ID di colonna avanzata (nascosta per impostazione predefinita) consente di visualizzare il processo a cui appartiene ogni thread. 
 
-- Qualificatore di trasporto Colonna avanzata (nascosta per impostazione predefinita) che identifica in modo univoco identifica il computer a cui è connesso il debugger. 
+- **Qualificatore di trasporto**: colonna avanzata (nascosta per impostazione predefinita) che identifica in modo univoco il computer a cui è connesso il debugger. 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Per visualizzare la finestra Thread in modalità di interruzione o di esecuzione  
   
@@ -71,7 +71,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
 -   Sulla barra degli strumenti in cima il **thread** finestra, seleziona **colonne**. Quindi, selezionare o deselezionare il nome della colonna che si desidera visualizzare o nascondere.  
 
 ## <a name="display-flagged-threads"></a>Visualizzare i thread con flag  
- È possibile contrassegnare un thread a cui si vuole prestare particolare attenzione mediante un'icona nella finestra **Thread**. Per altre informazioni, vedere [Procedura: Impostare e rimuovere i flag dei thread](../debugger/how-to-flag-and-unflag-threads.md). Nella finestra **Thread** è possibile scegliere di visualizzare tutti i thread o solo i thread con flag.  
+ È possibile contrassegnare un thread a cui si vuole prestare particolare attenzione mediante un'icona nella finestra **Thread**. Per altre informazioni, vedere [procedura: impostare e rimuovere i flag dei thread](../debugger/how-to-flag-and-unflag-threads.md). Nella finestra **Thread** è possibile scegliere di visualizzare tutti i thread o solo i thread con flag.  
   
 ### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag  
   

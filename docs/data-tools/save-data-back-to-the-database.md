@@ -18,15 +18,14 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3bbb8b93eb4b2f0cc1078224118b41caa590df6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966959"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928660"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -280,4 +279,4 @@ In un'istruzione UPDATE, è necessario specificare entrambi i valori nuovi (quel
 - [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Convalidare i dati](validate-data-in-datasets.md)
-- [Procedura: Aggiungere, modificare ed eliminare entità (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Procedura: Aggiungere, modificare ed eliminare entità (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

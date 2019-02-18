@@ -13,20 +13,19 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c80b145db83053edcbdb8f03f4eb703e201974
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957507"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940321"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 Aggiunta della convalida a un set di dati è suddivisa in una soluzione a più livelli è essenzialmente uguale all'aggiunta di convalida a un singolo file dataset (un set di dati in un unico progetto). Il percorso suggerito per eseguire la convalida dei dati è durante la <xref:System.Data.DataTable.ColumnChanging> e/o <xref:System.Data.DataTable.RowChanging> gli eventi di una tabella dati.
 
- Il set di dati fornisce la funzionalità per creare classi parziali a cui è possibile aggiungere il codice utente per gli eventi di modifica delle colonne e righe delle tabelle di dati nel set di dati. Per altre informazioni sull'aggiunta di codice a un set di dati in una soluzione a più livelli, vedere [aggiungere codice al set di dati in applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [aggiungere codice agli oggetti TableAdapter in applicazioni a più livelli](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Per altre informazioni sulle classi parziali, vedere [come: Dividere una classe in classi parziali (Progettazione classi)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) oppure [classi e metodi parziali](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Il set di dati fornisce la funzionalità per creare classi parziali a cui è possibile aggiungere il codice utente per gli eventi di modifica delle colonne e righe delle tabelle di dati nel set di dati. Per altre informazioni sull'aggiunta di codice a un set di dati in una soluzione a più livelli, vedere [aggiungere codice al set di dati in applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [aggiungere codice agli oggetti TableAdapter in applicazioni a più livelli](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Per altre informazioni sulle classi parziali, vedere [procedura: dividere una classe in classi parziali (Progettazione classi)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) oppure [classi e metodi parziali](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Quando si separano i set di dati da oggetti TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente il progetto di set di dati.
@@ -54,7 +53,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Per aggiungere la convalida durante le modifiche ai valori di colonna singola
 
-1.  Aprire il set di dati facendo doppio clic il *XSD* del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Aprire il set di dati facendo doppio clic il *XSD* del file in **Esplora soluzioni**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Fare doppio clic sulla colonna da convalidare. Questa azione viene creata la <xref:System.Data.DataTable.ColumnChanging> gestore dell'evento.
 
@@ -110,7 +109,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Per aggiungere la convalida durante la modifica a intere righe
 
-1.  Aprire il set di dati facendo doppio clic il *XSD* del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Aprire il set di dati facendo doppio clic il *XSD* del file in **Esplora soluzioni**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Fare doppio clic sulla barra del titolo della tabella di dati nella finestra di progettazione.
 

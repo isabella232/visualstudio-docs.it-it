@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847961"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939840"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
@@ -32,7 +31,7 @@ I sottotitoli intelligente è controllato dall'espressione regolare immessa nel 
 
 La tabella seguente descrive i valori del Registro di sistema che controllano le etichette della didascalia.
 
-|Elemento Registro di sistema|Description|
+|Elemento Registro di sistema|Descrizione|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|L'espressione regolare che è utilizzare in modo che corrispondano ai modelli.|
 |**SmartCaptionReplacement**|Il formato per visualizzare tutti i gruppi di una corrispondenza con il **SmartCaptionExpression**.|
@@ -42,14 +41,14 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 
 |Elemento Registro di sistema|Valore predefinito|Descrizione|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Corrisponde a una lettera minuscola seguita da una lettera maiuscola o un carattere di sottolineatura.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Corrisponde a una lettera minuscola seguita da una lettera maiuscola o un carattere di sottolineatura.|
 |**SmartCaptionReplacement**|**$1 $2**|Il **1 dollaro** rappresenta tutti i caratteri corrispondenti nella prima delle parentesi dell'espressione e il **$2** rappresenta tutti i caratteri parentesi secondo una corrispondenza. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
 |**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, rende il suffisso `Company Name:`|
 
 > [!CAUTION]
 > È necessario prestare molta attenzione quando si esegue alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si usa l'Editor del Registro di sistema in modo non corretto, si possono causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti utilizzando l'Editor del Registro di sistema in modo non corretto. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
 >
-> L'articolo della Knowledge Base seguente contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [Descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> L'articolo della Knowledge Base seguente contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificare il comportamento di sottotitoli codificato intelligente della finestra Origini dati
 

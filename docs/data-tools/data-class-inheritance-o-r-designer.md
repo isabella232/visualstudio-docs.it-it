@@ -6,15 +6,14 @@ ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0e95466baa4e16e4620ff387a11d4e723399a38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953393"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935680"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Ereditarietà delle classi di dati (Object Relational Designer)
 
@@ -28,7 +27,7 @@ Quando si configura l'ereditarietà nelle classi dell'entità usando [!INCLUDE[v
 
 Nella tabella seguente sono elencate le proprietà di ereditarietà e le rispettive descrizioni:
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Proprietà Discriminator**|Proprietà (mappata alla colonna) che determina a quale classe appartiene il record corrente.|
 |**Valore discriminante classe di base**|Valore (nella colonna definita come **proprietà del discriminatore**) che determina che un record fa parte della classe di base.|
@@ -37,14 +36,14 @@ Nella tabella seguente sono elencate le proprietà di ereditarietà e le rispett
 
 La creazione di un modello a oggetti che usa l'ereditarietà e corrisponde ai dati relazionali può generare una certa confusione. Questo argomento fornisce informazioni sui concetti di base e sulle proprietà singole richieste per la configurazione dell'ereditarietà. Gli argomenti seguenti forniscono una spiegazione più chiara di come configurare l'ereditarietà con il **O/R Designer**.
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
-|[Procedura: Configurare l'ereditarietà usando Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Viene descritto come configurare le classi di entità che usano l'ereditarietà a tabella singola tramite il **O/R Designer**.|
+|[Procedura: Configurare l'ereditarietà usando O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Viene descritto come configurare le classi di entità che usano l'ereditarietà a tabella singola tramite il **O/R Designer**.|
 |[Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Vengono fornite istruzioni dettagliate su come configurare le classi di entità che usano l'ereditarietà a tabella singola tramite il **O/R Designer**.|
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procedura dettagliata: Creazione di LINQ alle classi di SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [Introduzione](/dotnet/framework/data/adonet/sql/linq/getting-started)
