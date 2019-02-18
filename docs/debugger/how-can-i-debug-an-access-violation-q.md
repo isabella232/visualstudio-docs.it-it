@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di una violazione di accesso C++ | Microsoft Docs
 ms.custom: seodec18
-ms.date: 05/23/2017
+ms.date: 02/05/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
@@ -19,56 +19,65 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fe410eddd345dd80d270cd9c6a3eb29213d4389
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9ceb160c93e79d43428685d7b0e82a8a0670cc01
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926566"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767802"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il Debug di una violazione di accesso C++?
-## <a name="problem-description"></a>Descrizione del problema  
- Il programma genera una violazione di accesso. Come è possibile effettuarne il debug?  
+
+## <a name="problem-description"></a>Descrizione del problema
+
+Il programma genera una violazione di accesso. Come è possibile effettuarne il debug?  
   
-## <a name="solution"></a>Soluzione  
- Se si riceve un avviso di violazione di accesso su una riga di codice che dereferenzia più puntatori, può essere difficile individuare il puntatore che ha causato la violazione di accesso. A partire da Visual Studio 2015 Update 1, la finestra di dialogo di eccezione ora specifica esplicitamente il puntatore che ha causato la violazione di accesso.  
+## <a name="solution"></a>Soluzione
+
+Se si riceve un avviso di violazione di accesso su una riga di codice che dereferenzia più puntatori, può essere difficile individuare il puntatore che ha causato la violazione di accesso. A partire da Visual Studio 2015 Update 1, la finestra di dialogo di eccezione ora specifica esplicitamente il puntatore che ha causato la violazione di accesso.  
   
- Ad esempio, con il codice seguente si dovrebbe ottenere una violazione di accesso:  
-  
-```C++  
+Ad esempio, con il codice seguente si dovrebbe ottenere una violazione di accesso:  
+
+```C++
 #include <iostream>  
 using namespace std;  
   
-class ClassB {  
-public:  
-        ClassC* C;  
-        ClassB() {  
-                C = new ClassC();  
-        }  
-     void printHello() {  
-                cout << "hello world";  
-        }  
-};  
-  
-class ClassA {  
-public:  
-    ClassB* B;  
-      ClassA() {  
-                B = nullptr;  
-        }  
-};  
-  
-int main() {  
-    ClassA* A = new ClassA();  
-      A->B->printHello();  
-}  
+class ClassC {
+public:
+  void printHello() {
+    cout << "hello world";
+  }
+};
+
+class ClassB {
+public:
+  ClassC* C;
+  ClassB() {
+    C = new ClassC();
+  }
+};
+
+class ClassA {
+public:
+  ClassB* B;
+  ClassA() {
+    // Uncomment to fix
+    // B = new ClassB();
+  }
+};
+
+int main() {
+  ClassA* A = new ClassA();
+  A->B->C->printHello();
+
+}
 ```  
+
+Se si esegue questo codice in Visual Studio 2015 Update 1, dovrebbe comparire la finestra di dialogo di eccezione seguente:  
   
- Se si esegue questo codice in Visual Studio 2015 Update 1, dovrebbe comparire la finestra di dialogo di eccezione seguente:  
+![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
   
- ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
-  
- Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che sia passato in modo corretto e che non si stia creando accidentalmente una [copia superficiale](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).  
+Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che sia passato in modo corretto e che non si stia creando accidentalmente una [copia superficiale](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)

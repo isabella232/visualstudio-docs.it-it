@@ -10,15 +10,14 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c23097bfdf122d5b10cdf3b03cd020db5b62c0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989640"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910025"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Usare un modello concettuale (WCF Data Services)
 
@@ -27,22 +26,22 @@ Quando si usa un modello concettuale per descrivere i dati in un database, è po
  È possibile utilizzare i modelli concettuali con le applicazioni Data Services WCF. Gli argomenti seguenti illustrano come eseguire query sui dati tramite un modello concettuale.
 
 
-| Argomento | Description |
+| Argomento | Descrizione |
 | - | - |
 | [Procedura: Eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Viene illustrato come eseguire query su un servizio dati da un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dell'applicazione. |
-| [Procedura: Risultati della query di progetto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
+| [Procedura: Proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
 
  Quando si usa un modello concettuale, è possibile definire il tipo di dati è valido nella lingua corrispondente al dominio. È possibile definire dati validi nel modello oppure è possibile aggiungere la convalida per le operazioni eseguite su un'entità o un servizio dati.
 
  Negli argomenti riportati di seguito viene illustrato come aggiungere la convalida alle applicazioni WCF Data Services.
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Procedura: Intercettare messaggi del servizio dati](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Viene illustrato come aggiungere la convalida a un'operazione del servizio dati.|
 
  Gli argomenti seguenti illustrano come creare, aggiornare ed eliminare i dati eseguendo operazioni su entità.
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Procedura: Aggiungere, modificare ed eliminare entità](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Viene illustrato come creare, aggiornare ed eliminare i dati di entità in un servizio dati.|
 |[Procedura: Definire le relazioni tra entità](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Viene illustrato come creare o modificare le relazioni in un servizio dati.|

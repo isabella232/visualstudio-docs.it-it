@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9a85afd2024cb2ec723df053ebeca89ff52822
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020619"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921432"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il Debugger JIT in Visual Studio
 
@@ -40,7 +39,7 @@ Il debug Just-In-Time funziona per le app desktop di Windows. Non funziona per l
 
    ![Abilitare o disabilitare il debug JIT](../debugger/media/dbg-jit-enable-or-disable.png "abilitare o disabilitare il debug JIT")
 
-1. Nel **Abilita debug JIT per questi tipi di codice** , selezionare i tipi di codice da debug per eseguire il debug Just-In-Time: **Managed**, **nativo**, e/o **Script**.
+1. Nel **Abilita debug JIT per questi tipi di codice** , selezionare i tipi di codice da debug per eseguire il debug Just-In-Time: **gestito**, **Native**, e/o  **Script**.
    
 1. Scegliere **OK**.
 
@@ -105,7 +104,7 @@ Per abilitare il debug anziché la gestione degli errori di Windows Form standar
 
 Per questo esempio, si renderanno un C# app console in Visual Studio che genera una [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. In Visual Studio, creare un C# app console (**File** > **New** > **progetto** > **C#**  >  **Applicazione console**) denominato *ThrowsNullException*. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](/visualstudio/get-started/csharp/tutorial-wpf)
+1. In Visual Studio, creare un C# app console (**File** > **New** > **progetto** > **C#**  >  **Applicazione console**) denominato *ThrowsNullException*. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: creare una semplice applicazione](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Quando si apre il progetto in Visual Studio, aprire il *Program.cs* file. Sostituire il metodo Main () con il codice seguente, che stampa una riga nella console e quindi genera un'eccezione NullReferenceException:
    
@@ -159,7 +158,7 @@ Se Just-In-Time di debug non viene avviato durante l'arresto anomalo di un'app, 
 
   - **Segnalazione errori HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
     
-  - (Per i computer a 64 bit): **Segnalazione errori HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
+  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows segnalazione errori**
   
   Per altre informazioni, vedere [. Le impostazioni di segnalazione errori Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
   
@@ -170,7 +169,7 @@ Se Just-In-Time di debug non viene avviato durante l'arresto anomalo di un'app, 
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - (Per i computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Si potrebbero vedere i messaggi di errore seguente durante Just-In-Time di debug:
 
@@ -193,7 +192,8 @@ Si potrebbero vedere i messaggi di errore seguente durante Just-In-Time di debug
     Per risolvere questo problema, usare l'installazione di Visual Studio per reinstallare o riparare l'installazione di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Opzioni, debug, Just-In-Time nella finestra di dialogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Avviso di sicurezza: la connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

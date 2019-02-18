@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894155"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931637"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Strumenti di LINQ to SQL in Visual Studio
 
@@ -49,7 +48,7 @@ Dopo aver aggiunto un **classi LINQ to SQL** elemento a un progetto e aprire il 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Creare classi di entità con mapping a viste e tabelle di database
 
-È possibile creare classi di entità con mappate alle tabelle e viste trascinando le tabelle di database e le viste da **Esplora Server** oppure **Esplora Database** nel **O/R Designer**. Come indicato nella sezione precedente, l'oggetto <xref:System.Data.Linq.DataContext> viene configurato con le informazioni di connessione fornite dal primo elemento trascinato nell'area di progettazione. Se viene aggiunto un elemento successive che usa una connessione diversa per il **O/R Designer**, è possibile modificare la connessione per il <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [Procedura: Creare classi LINQ to SQL mappate a tabelle e viste (Object Relational Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+È possibile creare classi di entità con mappate alle tabelle e viste trascinando le tabelle di database e le viste da **Esplora Server** oppure **Esplora Database** nel **O/R Designer**. Come indicato nella sezione precedente, l'oggetto <xref:System.Data.Linq.DataContext> viene configurato con le informazioni di connessione fornite dal primo elemento trascinato nell'area di progettazione. Se viene aggiunto un elemento successive che usa una connessione diversa per il **O/R Designer**, è possibile modificare la connessione per il <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [procedura: creare classi LINQ to SQL mappate a tabelle e visualizzazioni (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Creare metodi DataContext che chiamano le stored procedure e funzioni
 
@@ -60,15 +59,15 @@ Dopo aver aggiunto un **classi LINQ to SQL** elemento a un progetto e aprire il 
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurare un oggetto DataContext per utilizzare le stored procedure per salvare i dati tra le classi di entità e un database
 
-Come indicato in precedenza, è possibile creare metodi <xref:System.Data.Linq.DataContext> che chiamano stored procedure e funzioni. Inoltre, è anche possibile assegnare stored procedure utilizzate per l'impostazione predefinita, LINQ al comportamento di runtime SQL, che esegue inserimenti, aggiornamenti ed eliminazioni. Per altre informazioni, vedere [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Come indicato in precedenza, è possibile creare metodi <xref:System.Data.Linq.DataContext> che chiamano stored procedure e funzioni. Inoltre, è anche possibile assegnare stored procedure utilizzate per l'impostazione predefinita, LINQ al comportamento di runtime SQL, che esegue inserimenti, aggiornamenti ed eliminazioni. Per altre informazioni, vedere [procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Ereditarietà e Object Relational Designer
 
-Analogamente ad altri oggetti, classi LINQ to SQL può usare l'ereditarietà ed essere derivate da altre classi. In un database le relazioni di ereditarietà vengono create in diversi modi. Il **O/R Designer** supporta il concetto di ereditarietà a tabella singola come viene spesso implementato nei sistemi relazionali. Per altre informazioni, vedere [Procedura: Configurare l'ereditarietà usando Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Analogamente ad altri oggetti, classi LINQ to SQL può usare l'ereditarietà ed essere derivate da altre classi. In un database le relazioni di ereditarietà vengono create in diversi modi. Il **O/R Designer** supporta il concetto di ereditarietà a tabella singola come viene spesso implementato nei sistemi relazionali. Per altre informazioni, vedere [procedura: configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Query LINQ to SQL
 
-Le classi di entità create per il **O/R Designer** progettate per l'utilizzo con [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Per altre informazioni, vedere [Procedura: Richiedere informazioni](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Le classi di entità create per il **O/R Designer** progettate per l'utilizzo con [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Per altre informazioni, vedere [procedura: cercare informazioni](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separare il codice della classe entità e DataContext generato in diversi spazi dei nomi
 
