@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780679"
 ---
 # <a name="visual-studio-ide"></a>IDE di Visual Studio
@@ -111,7 +111,7 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 
  ![Greetingsconsoleapp. cpp nell'editor di codice](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C + +")
 
- L'editor di testo ha un alto livello di interazione (se richiesto) e molte funzionalità per la produttività che consentono di scrivere codice in modo più rapido ed efficace. Le funzionalità variano in base alla lingua e non è necessario usare uno di essi (digitando "Editor" in avvio veloce) per l'attivazione o disattivazione delle funzionalità: Alcune delle funzionalità di produttività comuni sono:
+ L'editor di testo ha un alto livello di interazione (se richiesto) e molte funzionalità per la produttività che consentono di scrivere codice in modo più rapido ed efficace. Le funzionalità variano in base al linguaggio e non è necessario usare alcun linguaggio (digitando "Editor" in Avvio veloce) per attivarle o disattivarle. Alcune delle funzionalità di produttività usate più di frequente sono:
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) include operazioni come la ridenominazione intelligente delle variabili, lo spostamento delle righe di codice selezionate in funzioni separate, lo spostamento di codice in altre posizioni, il riordinamento dei parametri di funzione e molto altro.
 

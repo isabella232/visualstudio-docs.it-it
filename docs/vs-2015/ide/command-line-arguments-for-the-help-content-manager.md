@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778630"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per la Gestione contenuto della Guida
@@ -57,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/skuId|No|Specifica il codice di riferimento del prodotto (SKU) dall'origine dell'installazione e filtra i libri identificati dall'opzione /SourceURI.|  
 |/membership|No|-   **Minimum**: installa un set minimo del contenuto della Guida in base allo SKU specificato usando l'opzione /skuId. Il mapping tra lo SKU e il set del contenuto viene esposto nell'API del servizio.<br />-   **Recommended**: installa un set di libri consigliati per lo SKU specificato usando l'argomento /skuId. L'origine dell'installazione è l'API del servizio o il file MSHA.<br />-   **Full**: installa l'intero set di libri per lo SKU specificato usando l'argomento /skuId. L'origine dell'installazione è l'API del servizio o il file MSHA.|  
 |/locationpath|No|Specifica la cartella predefinita per il contenuto della Guida locale. Questa opzione deve essere usata solo per installare o rimuovere il contenuto. Se si specifica questa opzione, è necessario specificare anche l'opzione /silent.|  
-|/silent|No|Installa o rimuove il contenuto della Guida senza chiedere conferma all'utente o visualizzare l'interfaccia utente, nemmeno l'icona nell'area di notifica dello stato. L'output viene registrato in un file nella directory %Temp%. **Importante:**  Per installare automaticamente il contenuto, è necessario usare file CAB con firma digitale, non file mshc.|  
+|/silent|No|Installa o rimuove il contenuto della Guida senza chiedere conferma all'utente o visualizzare l'interfaccia utente, nemmeno l'icona nell'area di notifica dello stato. L'output viene registrato in un file nella directory %Temp%. **Importante:**  per installare automaticamente il contenuto, è necessario usare file con firma digitale con estensione cab, anziché file con estensione mshc.|  
 |/launchingApp|No|Definisce il contesto dell'applicazione e del catalogo quando viene avviato il visualizzatore della Guida senza l'applicazione padre. Gli argomenti per questa opzione sono *CompanyName*, *ProductName* e *VersionNumber* (ad esempio `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Questa opzione è necessaria per l'installazione del contenuto con il parametro /silent.|  
 |/wait *secondi*|No|Sospende le operazioni di installazione, disinstallazione e aggiornamento. Se un'operazione è già in corso per il catalogo, il processo attenderà il numero specificato di secondi per continuare. Usare 0 per restare in attesa in modo indefinito.|  
 |/?|No|Elenca le opzioni e le relative descrizioni per lo strumento da riga di comando per Gestione contenuto della Guida.|  

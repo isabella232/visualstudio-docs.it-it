@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2440d6af45f08a3b53cf531a357cc807d4b22fc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804453"
 ---
 # <a name="createproperty-task"></a>Attività CreateProperty
@@ -35,12 +35,12 @@ Popola le proprietà con i valori passati. In questo modo i valori vengono copia
 ## <a name="attributes"></a>Attributi  
  Nella tabella che segue vengono descritti i parametri dell'attività `CreateProperty` .  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`Value`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica il valore da copiare nella nuova proprietà.|  
 |`ValueSetByTask`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene lo stesso valore del parametro `Value`. Usare questo parametro solo quando si vuole evitare che la proprietà di output venga impostata da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] quando la destinazione di inclusione viene ignorata perché gli output sono aggiornati.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  

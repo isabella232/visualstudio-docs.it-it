@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54754971"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
@@ -69,7 +69,7 @@ La riga di comando devenv consente di impostare varie opzioni per l'ambiente di 
 ## <a name="devenv-switches"></a>Opzioni devenv  
  Usare le opzioni della riga di comando seguenti per visualizzare l'IDE ed eseguire l'attività descritta.  
   
-|Switch della riga di comando|Description|  
+|Switch della riga di comando|Descrizione|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Avvia l'IDE ed esegue il comando specificato.|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Carica un eseguibile [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] sotto il controllo del debugger. Questa opzione non è disponibile per gli eseguibili [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Per altre informazioni, vedere [Automatically start a process in the debugger](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger) (Avviare automaticamente un processo nel debugger).|  
@@ -86,7 +86,7 @@ La riga di comando devenv consente di impostare varie opzioni per l'ambiente di 
   
  Usare le opzioni della riga di comando seguenti per eseguire l'attività descritta. Queste opzioni della riga di comando non visualizzano l'IDE.  
   
-|Switch della riga di comando|Description|  
+|Switch della riga di comando|Descrizione|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Visualizza la guida per le opzioni devenv nella **finestra del prompt dei comandi**.<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> **Devenv myproj.csproj /build**|  

@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798987"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio
@@ -91,7 +91,7 @@ ms.locfileid: "54798987"
      Ad esempio, scegliere **Globale** se il tasto di scelta rapida deve funzionare in tutti i contesti. È possibile utilizzare qualsiasi tasto di scelta rapida non mappato come globale in un altro editor. In caso contrario, la specifica dell'editor avrà la precedenza.
 
     > [!NOTE]
-    >  Non è possibile assegnare i tasti seguenti nei tasti di scelta rapida in **Globale**: Stampa STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, Tab, BLOC MAIUSC, Insert, Home, fine, PGSU, PGGIÙ, il tasto logo Windows, la chiave dell'applicazione, uno qualsiasi dei tasti freccia oppure INVIO; BLOC NUM, eliminare o Cancella sul tastierino numerico; o Ctrl + Alt + Canc.
+    >  Non è possibile assegnare i seguenti tasti come tasti di scelta rapida in **Globale**: STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, TAB, BLOC MAIUSC, INS, HOME, FINE, PGSU, PGGIÙ, il tasto logo di Windows, il tasto MENU SCELTA RAPIDA, i tasti Freccia oppure INVIO; BLOC NUM, CANC o CANC sul tastierino numerico oppure la combinazione CTRL+ALT+CANC.
 
 6.  Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 

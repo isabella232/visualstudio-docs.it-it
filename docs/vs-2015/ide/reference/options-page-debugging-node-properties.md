@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782197"
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
@@ -25,7 +25,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="general"></a>Generale  
  `DTE.Properties("Debugging", "General")`  
   
-|Nome degli elementi delle proprietà|Value|Description|  
+|Nome degli elementi delle proprietà|Value|Descrizione|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Determina se il debugger richiede l'autorizzazione prima di eliminare tutti i punti di interruzione in un progetto.|  
 |BreakAllProcesses|Get/Set (Boolean)|Determina se il debugger interrompe tutti i processi ogni volta che un singolo processo si interrompe.|  
@@ -55,7 +55,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="edit-and-continue"></a>Modifica e continuazione  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|Nome degli elementi delle proprietà|Value|Description|  
+|Nome degli elementi delle proprietà|Valore|Descrizione|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (Boolean)|Determina se è abilitata la funzionalità Modifica e continuazione. Questa opzione si applica a tutti i linguaggi che supportano Modifica e continuazione.|  
 |InvokedByCommands|Get/Set (Boolean)|Determina se la funzionalità Modifica e continuazione applica automaticamente le modifiche al codice quando l'utente seleziona un comando di debug, ad esempio **Passaggio** o **Continua**. Questa opzione si applica solo al codice nativo.|  
@@ -67,7 +67,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="just-in-time"></a>JIT  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Nome degli elementi delle proprietà|Value|Description|  
+|Nome degli elementi delle proprietà|Value|Descrizione|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice gestito.|  
 |JitNative|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice nativo.|  
@@ -76,7 +76,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="native"></a>Nativo  
  `DTE.Properties("Debugging", "Native")`  
   
-|Nome degli elementi delle proprietà|Value|Description|  
+|Nome degli elementi delle proprietà|Value|Descrizione|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|Determina se il debugger carica le tabelle di esportazione DLL.|  
 |EnableRPC|Get/Set (Boolean)|Determina se il debugger è in grado di eseguire istruzioni per le chiamate a procedure remote (RPC) COM.|  

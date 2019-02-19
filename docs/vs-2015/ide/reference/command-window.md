@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788347"
 ---
 # <a name="command-window"></a>Finestra di comando
@@ -120,7 +120,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 >Edit.Find ^^t /regex  
 ```  
   
- L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato. Nell'esempio riportato di seguito viene illustrato come cercare il criterio "^t".  
+ L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato. L'esempio riportato di seguito illustra come cercare il criterio "^t".  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usare le virgolette per nomi di percorso con spazi  
  Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"**.  

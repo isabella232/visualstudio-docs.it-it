@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800765"
 ---
 # <a name="securing-applications"></a>Protezione delle applicazioni
@@ -30,7 +30,7 @@ Sebbene la maggior parte delle applicazioni presentino problematiche di sicurezz
  [Procedure di sicurezza consigliate](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  Vengono fornite informazioni sulle funzionalità di sicurezza disponibili in Visual C++.  
   
- [NON INCLUSO NELLA BUILD: Sicurezza e programmazione (C# e Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [Sicurezza e programmazione (C# e Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Vengono fornite informazioni sui tre principali problemi di sicurezza per gli sviluppatori Visual Basic e C#: privilegi, applicazioni Web e installazione di Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Sicurezza delle applicazioni mobili  
@@ -57,7 +57,7 @@ Sebbene la maggior parte delle applicazioni presentino problematiche di sicurezz
  [Considerazioni sulla sicurezza per JScript](http://msdn.microsoft.com/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
  Vengono descritti alcuni problemi di sicurezza che i programmatori JScript potrebbero rilevare.  
   
- [Procedura: Usare la sicurezza del trasporto](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [Procedura: Usare le funzionalità di sicurezza a livello di trasporto](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Viene descritto come usare la sicurezza del trasporto per l'autenticazione quando ci si connette a un servizio WCF.  
   
 ## <a name="securing-desktop-applications"></a>Sicurezza di applicazioni desktop  

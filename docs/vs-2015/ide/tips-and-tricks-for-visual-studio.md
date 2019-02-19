@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771179"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
@@ -139,7 +139,7 @@ ms.locfileid: "54771179"
 
 ##  <a name="BKMK_ALM"></a> Gestione del ciclo di vita delle applicazioni
 
-Vedere [tasti di scelta rapida: Visual Studio Online, TFS portale web e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+Vedere [Scelte rapide da tastiera: Visual Studio Online, portale Web TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Vedere anche
 

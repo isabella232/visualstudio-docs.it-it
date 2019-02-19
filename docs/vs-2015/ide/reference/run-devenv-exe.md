@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 120ff132ac33a156cdf734ee0e17f4cfade9380c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768893"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -42,7 +42,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
  `ProjectName`  
  Obbligatorio. Percorso completo e nome del file di progetto.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Compila ed esegue il progetto o la soluzione specificati in base alle impostazioni specificate per la configurazione della soluzione attiva. Questa opzione avvia l'ambiente di sviluppo integrato (IDE) e lo mantiene attivo al termine dell'esecuzione del progetto o della soluzione.  
   
 -   Racchiudere le stringhe che includono spazi tra virgolette doppie.  

@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775917"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Supporto a 64 bit per IDE di Visual Studio
@@ -30,7 +30,7 @@ ms.locfileid: "54775917"
 
 -   [Prerequisiti per la distribuzione di applicazioni a 64 bit](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Procedura: Creare un file Windows Installer per una piattaforma a 64 bit](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+-   [Procedura: Creare un programma di installazione di Windows per una piattaforma a 64 bit](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Configurazione di progetti come applicazioni a 64 bit
  Gli argomenti seguenti descrivono la configurazione di progetti da compilare come applicazioni a 64 bit.
@@ -40,7 +40,7 @@ ms.locfileid: "54775917"
 ## <a name="debugging-a-64-bit-application"></a>Debug di un'applicazione a 64 bit
  Modifica e continuazione non funziona quando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] è in esecuzione in un sistema operativo Windows a 64 bit. Gli argomenti seguenti descrivono il debug di applicazioni a 64 bit.
 
--   [Procedura: Eseguire il debug su piattaforme a 64 bit](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+-   [How to: Debug on 64-bit Platforms](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5) (Procedura: Eseguire il debug su piattaforme a 64 bit)
 
 -   [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)
 

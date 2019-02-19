@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eff3d6234d4d7b9ae34824d4fec5b8ae0816a20c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796598"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concetti avanzati relativi a MSBuild
@@ -26,7 +26,7 @@ Nei documenti di questa sezione viene descritto come utilizzare le tecniche avan
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Description|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Batch MSBuild](../msbuild/msbuild-batching.md)|Viene descritto come compilare in batch destinazioni e attività in base ai metadati dell'elemento.|  
 |[Trasformazioni](../msbuild/msbuild-transforms.md)|Viene illustrato come utilizzare le trasformazioni per abilitare l'analisi delle dipendenze.|  

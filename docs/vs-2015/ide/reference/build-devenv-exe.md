@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 58e48676cb8719cca5da1989342642669c6565cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778484"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -46,7 +46,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
  /projectconfig `ProjConfigName`  
  Facoltativo. Nome della configurazione di compilazione del progetto da usare per la compilazione del `/project` denominato.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questa opzione esegue la stessa funzione del comando di menu **Compila soluzione** nell'ambiente di sviluppo integrato (IDE).  
   
  Racchiudere le stringhe che includono spazi tra virgolette doppie.  

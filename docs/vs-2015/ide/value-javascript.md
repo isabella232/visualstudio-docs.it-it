@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ac74dde41a2d6cea0a768cfc89838cc34ce41afd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799142"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
@@ -72,7 +72,7 @@ Specifica le informazioni sulla documentazione per `get` e `set` funzioni per EC
   `description`  
   Facoltativo. Descrizione della proprietà.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Usare le proprietà di ECMAScript 5 il [ \<riepilogo >](../ide/summary-javascript.md) elemento.  
   
  Usare la `<value>` elemento immediatamente prima di `get` o `set` (funzione).  

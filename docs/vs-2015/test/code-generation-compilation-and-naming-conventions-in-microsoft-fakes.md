@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54783371"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ##  <a name="BKMK_External_resources"></a> Risorse esterne  
   
 ###  <a name="BKMK_Guidance"></a> Materiale sussidiario  
- [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 2: Testing unità Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

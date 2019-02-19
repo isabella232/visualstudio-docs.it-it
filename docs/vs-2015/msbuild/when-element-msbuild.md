@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93fd259e00d7a8f849b97cb97c3f950cd95f57ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54761542"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
@@ -56,13 +56,13 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |Condizione|Attributo obbligatorio.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento facoltativo.<br /><br /> Valuta gli elementi figlio per selezionare una sezione del codice da eseguire. Possono esistere zero o più elementi `Choose` in un elemento `When`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento facoltativo.<br /><br /> Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Possono esistere zero o più elementi `ItemGroup` in un elemento `When`.|  
@@ -70,11 +70,11 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Se l'`Condition` attributo restituisce true, gli elementi figlio `ItemGroup` e `PropertyGroup` dell'elemento `When` vengono eseguiti e tutti gli elementi `When` successivi vengono ignorati.  
   
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md) (Costrutti condizionali).  

@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1edbcddd27f2c3637e0e56dd9b4841e17ace16af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767563"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -38,7 +38,7 @@ Devenv /debugexe ExecutableFile
   
  Se il file con estensione exe non viene trovato o non esiste, non viene visualizzato alcun avviso o errore e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene avviato normalmente.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Le stringhe che seguono il parametro `ExecutableFile` vengono passate al file come argomenti.  
   
 ## <a name="example"></a>Esempio  

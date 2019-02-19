@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800788"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Suggerimenti sull'accessibilità
@@ -33,7 +33,7 @@ ms.locfileid: "54800788"
 ## <a name="common-windows-shortcut-key-combinations"></a>Combinazioni di tasti comuni di Windows  
  Per eseguire attività all'interno di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è possibile usare molte delle combinazioni di tasti standard di Windows. Tra queste combinazioni di tasti sono incluse le seguenti:  
   
-|Description|Combinazione di tasti|  
+|Descrizione|Combinazione di tasti|  
 |-----------------|---------------------|  
 |Consente di attivare e disattivare l'impostazione Contrasto elevato|**ALT di sinistra + MAIUSC di sinistra + STAMP**|  
 |Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo|**BARRA SPAZIATRICE**|  
@@ -44,13 +44,13 @@ ms.locfileid: "54800788"
 ## <a name="hidden-visual-studio-shortcut-key-combinations"></a>Combinazioni di tasti nascoste di Visual Studio  
  Alcune funzionalità prevedono combinazioni di tasti che non vengono visualizzate nella finestra di dialogo Opzioni del riquadro Ambiente\Tastiera. Tra queste combinazioni di tasti sono incluse le seguenti:  
   
-|Funzionalità|Description|Combinazione di tasti|  
+|Funzionalità|Descrizione|Combinazione di tasti|  
 |-------------|-----------------|---------------------|  
 |Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti|**CTRL** + **Freccia SU**<br /><br /> e<br /><br /> **CTRL** + **Freccia GIÙ**|  
 |Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un modulo o una finestra di progettazione|**INVIO**|  
 |Tastiera, Ambiente, finestra di dialogo Opzioni|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**|**BACKSPACE**|  
 |Tutte le finestre degli strumenti|Consente di selezionare il primo pulsante della barra degli strumenti della finestra|**MAIUSC** + **ALT**|  
-|Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard|**ALT**, **CTRL** + **scheda** **Nota:**  Premere **CTRL** + **scheda** nuovo per selezionare il primo pulsante nella barra degli strumenti dell'IDE successivo.|  
+|Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard|**ALT**, **CTRL** + **TAB** **Nota:** premere nuovamente **CTRL** + **TAB** per selezionare il primo pulsante della successiva barra degli strumenti dell'IDE.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)

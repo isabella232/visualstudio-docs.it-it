@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796877"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
@@ -35,7 +35,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="reference"></a>Riferimenti  
  Rappresenta un riferimento all'assembly (gestito) nel progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |HintPath|Stringa facoltativa. Percorso relativo o assoluto dell'assembly.|  
 |nome|Stringa facoltativa. Il nome visualizzato dell'assembly, ad esempio "System.Windows.Forms".|  
@@ -47,7 +47,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="comreference"></a>COMReference  
  Rappresenta un riferimento a un oggetto COM (non gestito) nel progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del componente|  
 |GUID|Stringa facoltativa. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -60,14 +60,14 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="comfilereference"></a>COMFileReference  
  Rappresenta un elenco di librerie dei tipi per la destinazione ResolvedComreference.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |WrapperTool|Stringa facoltativa. Il nome dello strumento wrapper usato per il componente, ad esempio, "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Rappresenta un file manifesto nativo o un riferimento a tale file.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |nome|Stringa obbligatoria. Il nome base del file manifesto.|  
 |HintPath|Stringa obbligatoria. Il percorso relativo del file manifesto.|  
@@ -75,7 +75,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="projectreference"></a>ProjectReference  
  Rappresenta un riferimento a un altro progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del riferimento.|  
 |Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -84,32 +84,32 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="compile"></a>Compile  
  Rappresenta i file di origine per il compilatore.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |AutoGen|Valore booleano facoltativo. Indica se il file è stato generato per il progetto dall'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |Collegamento|Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del file di progetto.|  
-|Visible|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Sempre<br />3.  PreserveNewest|  
+|Visibile|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Rappresenta le risorse da incorporare nell'assembly generato.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
 |LastGenOutput|Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento.|  
 |CustomToolNamespace|Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice.|  
 |Collegamento|Stringa facoltativa. Il percorso di annotazione che viene visualizzato se il file si trova fisicamente fuori dall'influenza del progetto.|  
-|Visible|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Sempre<br />3.  PreserveNewest|  
+|Visibile|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
 |LogicalName|Stringa obbligatoria. Nome logico della risorsa incorporata.|  
   
 ### <a name="content"></a>Content  
  Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
@@ -118,21 +118,21 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 |Collegamento|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |PublishState|Stringa obbligatoria. Lo stato di pubblicazione del contenuto, che può essere:<br /><br /> - Impostazione predefinita<br />- Incluso<br />- Escluso<br />- DataFile<br />- Prerequisito|  
 |IsAssembly|Valore booleano facoltativo. Specifica se il file è un assembly.|  
-|Visible|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Sempre<br />3.  PreserveNewest|  
+|Visibile|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="none"></a>nessuno  
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.  
   
-|Nome elemento|Description|  
+|Nome elemento|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
 |LastGenOutput|Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento.|  
 |CustomToolNamespace|Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice.|  
 |Collegamento|Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto.|  
-|Visible|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Sempre<br />3.  PreserveNewest|  
+|Visibile|Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|CopyToOutputDirectory|Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
  Rappresenta il manifesto dell'applicazione di base per la compilazione e contiene informazioni sulla protezione di distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  

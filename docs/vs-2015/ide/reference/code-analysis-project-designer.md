@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e5ae21fcbe215a7abaec247201f2af44caa740f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764826"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
@@ -67,4 +67,4 @@ Contiene lo strumento di analisi del codice che è possibile scegliere di esegui
 ## <a name="see-also"></a>Vedere anche  
  [Avvisi dell'analisi del codice gestito](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Panoramica dell'analisi codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [Procedura dettagliata: Analisi del codice gestito per individuarne i difetti](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+ [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

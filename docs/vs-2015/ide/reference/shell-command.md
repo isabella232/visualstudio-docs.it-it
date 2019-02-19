@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 62b4a3e83b368a015cee30284acee0dbab39ca36
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779308"
 ---
 # <a name="shell-command"></a>Comando Shell
@@ -55,7 +55,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  /outputwindow [oppure] /output [oppure] /out [oppure] /o  
  Facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.  
   
  È possibile usare l'alias predefinito `Shell` invece di `Tools.Shell`.  

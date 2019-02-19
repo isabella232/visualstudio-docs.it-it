@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37cb183f8b48211da87b03128d5839cf64aca985
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a4482069d16ef6f0f64472b838057949890a6d3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069736"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335155"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procedura: Fornire l'automazione per windows
+
 È possibile fornire l'automazione per finestre degli strumenti e documenti. Automazione fornendo è consigliabile ogni volta che si desidera rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non fornisce già un oggetto di automazione pronte all'uso, come accade con un elenco di attività.
 
 ## <a name="automation-for-tool-windows"></a>Automazione per finestre degli strumenti
- L'ambiente fornisce l'automazione in una finestra degli strumenti, restituendo uno standard <xref:EnvDTE.Window> dell'oggetto come illustrato nella procedura seguente:
 
-### <a name="to-provide-automation-for-tool-windows"></a>Per fornire l'automazione per finestre degli strumenti
+L'ambiente fornisce l'automazione in una finestra degli strumenti, restituendo uno standard <xref:EnvDTE.Window> dell'oggetto come illustrato nella procedura seguente:
 
-1.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodo tramite l'ambiente con <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> come `VSFPROPID` parametro per ottenere il `Window` oggetto.
+1.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodo tramite l'ambiente con [__VSFPROPID. VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>) come `VSFPROPID` parametro per ottenere il `Window` oggetto.
 
 2.  Quando un chiamante richiede un oggetto di automazione specifico del VSPackage per la finestra degli strumenti tramite <xref:EnvDTE.Window.Object%2A>, l'ambiente chiama `QueryInterface` per `IExtensibleObject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, o `IDispatch` interfacce. Entrambe `IExtensibleObject` e `IVsExtensibleObject` forniscono un <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> (metodo).
 
@@ -35,10 +35,11 @@ ms.locfileid: "55069736"
 4.  Se il chiamante `QueryInterface` per `IExtensibleObject` e `IVsExtensibleObject` ha esito negativo, l'ambiente chiama `QueryInterface` per `IDispatch`.
 
 ## <a name="automation-for-document-windows"></a>Automazione per le finestre dei documenti
- Uno standard <xref:EnvDTE.Document> oggetto è anche disponibile dall'ambiente, sebbene un editor può avere una propria implementazione del <xref:EnvDTE.Document> oggetto implementando `IExtensibleObject` interfaccia e risponde alle `GetAutomationObject`.
 
- Inoltre, un editor può fornire un oggetto di automazione specifico del VSPackage, recuperato tramite il <xref:EnvDTE.Document.Object%2A> metodo, implementando la `IVsExtensibleObject` o `IExtensibleObject` interfacce. Il [esempi di VSSDK](http://aka.ms/vs2015sdksamples) contribuisce a un oggetto di automazione specifiche del documento RTF.
+Uno standard <xref:EnvDTE.Document> oggetto è anche disponibile dall'ambiente, sebbene un editor può avere una propria implementazione del <xref:EnvDTE.Document> oggetto implementando `IExtensibleObject` interfaccia e risponde alle `GetAutomationObject`.
+
+Inoltre, un editor può fornire un oggetto di automazione specifico del VSPackage, recuperato tramite il <xref:EnvDTE.Document.Object%2A> metodo, implementando la `IVsExtensibleObject` o `IExtensibleObject` interfacce. Il [esempi di VSSDK](http://aka.ms/vs2015sdksamples) contribuisce a un oggetto di automazione specifiche del documento RTF.
 
 ## <a name="see-also"></a>Vedere anche
-    
-<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 355ca018f1bf5192d6eb65b3fc218c8d1076563b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54777625"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET
@@ -33,7 +33,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
   
 ## <a name="general"></a>Generale  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Nome funzione**|Nome della funzione.|  
 |**Indirizzo funzione**|Indirizzo della funzione.|  
@@ -51,7 +51,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
   
 ## <a name="net-memory-allocation-values"></a>Valori di allocazione della memoria .NET  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Allocazioni esclusive**|- Per la funzione corrente, il numero di oggetti creati durante l'esecuzione di codice nel corpo della funzione, vale a dire quando la funzione si trovava in cima allo stack di chiamate. Il numero non include gli oggetti creati nelle funzioni chiamate da questa funzione.<br />- Per una funzione chiamante, il numero delle allocazioni esclusive della funzione corrente generate da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il numero di oggetti creati dalle istanze di questa funzione chiamate dalla funzione corrente. Questo numero non include gli oggetti creati dalle funzioni chiamate dalla funzione chiamata.|  
 |**% allocazioni esclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|  
@@ -65,7 +65,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso  
  I valori relativi al tempo inclusivo trascorso indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo inclusivo trascorso**|- Per la funzione corrente, il tempo dedicato alla funzione. Il valore include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo inclusivo trascorso della funzione corrente generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in questa funzione generato da chiamate dalla funzione corrente. Il valore include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|  
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo trascorso di questa funzione in questo contesto.|  
@@ -76,7 +76,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso  
  I valori relativi al tempo esclusivo trascorso indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. Il tempo include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma non include il tempo trascorso nelle funzioni figlio.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo esclusivo trascorso**|- Per la funzione corrente, il tempo dedicato all'esecuzione del corpo della funzione. Il valore esclude il tempo trascorso nelle funzioni figlio ma include le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo esclusivo trascorso della funzione corrente generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in questa funzione generato da chiamate dalla funzione corrente. Il valore esclude il tempo dedicato alle funzioni figlio della funzione chiamata ma include le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|  
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questa funzione in questo contesto.|  
@@ -87,7 +87,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione  
  I valori relativi al tempo inclusivo applicazione indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma include il tempo trascorso nelle funzioni figlio.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo inclusivo applicazione**|- Per la funzione corrente, il tempo dedicato alla funzione e alle relative funzioni figlio. Il valore esclude il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo inclusivo applicazione della funzione corrente generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in questa funzione e nelle relative funzioni figlio generato da chiamate dalla funzione corrente. Il valore non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|  
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo applicazione totale di questa funzione in questo contesto.|  
@@ -98,7 +98,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione  
  I valori di tempo esclusivo applicazione indicano il tempo dedicato alla funzione, escluso il tempo trascorso nelle funzioni figlio. Il tempo indicato esclude anche il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo esclusivo applicazione**|- Per la funzione corrente, il tempo dedicato all'esecuzione del corpo della funzione. Il valore non include il tempo trascorso nelle funzioni figlio né le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo esclusivo applicazione della funzione corrente che è stato generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in questa funzione generato da chiamate dalla funzione corrente. Il valore non include il tempo trascorso nelle funzioni figlio della funzione chiamata né le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|  
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo applicazione totale di questa funzione in questo contesto.|  
@@ -107,7 +107,7 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)   
  [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)

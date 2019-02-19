@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7523db6598a32c76944c22bfdabe56ee288c6b43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771082"
 ---
 # <a name="add-existing-project-command"></a>Comando Aggiungi progetto esistente
@@ -41,7 +41,7 @@ File.AddExistingProject filename
   
  Se non viene specificato un nome file, il comando aprirà la finestra di dialogo in cui l'utente potrà selezionare un progetto.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.  
   
 ## <a name="example"></a>Esempio  

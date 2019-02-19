@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b45d0e9494700d03c0e96ccd0708e2754b4f7a2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54797025"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
@@ -51,7 +51,7 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Include`|Attributo obbligatorio.<br /><br /> Il file o carattere jolly da includere nell'elenco di elementi.|  
 |`Exclude`|Attributo facoltativo.<br /><br /> Il file o carattere jolly da escludere dall'elenco di elementi.|  
@@ -63,17 +63,17 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Possono esistere zero o più elementi `ItemMetadata` in un elemento.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento di raggruppamento per elementi.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Gli elementi `Item` definiscono gli input nel sistema di compilazione e vengono raggruppati in raccolte di elementi in base ai relativi nomi definiti dall'utente. Queste raccolte di elementi possono essere usate come parametri per le [attività](../msbuild/msbuild-tasks.md), che a loro volta usano i singoli elementi nelle raccolte per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
   
  L'uso della notazione `@(`*myType*`)` consente di espandere una raccolta di elementi di tipo *myType* in un elenco di stringhe delimitato da punto e virgola e di passarla a un parametro. Se il parametro è di tipo `string`, il valore del parametro è l'elenco di elementi, separati da punti e virgola. Se il parametro è una matrice di stringhe (`string[]`), ogni elemento viene inserito nella matrice in base alla posizione dei punti e virgola. Se il parametro dell'attività è di tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, il valore è il contenuto della raccolta di elementi con eventuali metadati associati. Per delimitare ciascun elemento usando un carattere diverso da un punto e virgola, usare la sintassi `@(`*myType*`, '`*separatore*`')`.  

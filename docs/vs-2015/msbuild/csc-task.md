@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54766189"
 ---
 # <a name="csc-task"></a>Attività Csc
@@ -35,7 +35,7 @@ Esegue il wrap di CSC.exe e produce file eseguibili (con estensione EXE), librer
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Parametro `String[]` facoltativo.<br /><br /> Specifica directory aggiuntive in cui cercare i riferimenti. Per altre informazioni, vedere [/lib (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/b0efcc88-e8aa-4df4-a00b-8bdef70b7673).|  
 |`AddModules`|Parametro `String` facoltativo.<br /><br /> Specifica uno o più moduli che devono fare parte dell'assembly. Per altre informazioni, vedere [/addmodule (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/ed604546-0dc2-4bd4-9a3e-610a8d973e58).|  
@@ -82,7 +82,7 @@ Esegue il wrap di CSC.exe e produce file eseguibili (con estensione EXE), librer
 |`Win32Manifest`|Parametro `String` facoltativo.<br /><br /> Specifica il manifesto Win32 da includere.|  
 |`Win32Resource`|Parametro `String` facoltativo.<br /><br /> Inserisce un file di risorsa Win32 (estensione RES) nel file di output . Per altre informazioni, vedere [/win32res (C# Compiler Options)](http://msdn.microsoft.com/library/3c33f750-6948-4c7e-a27e-bef98f77255b).|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe `Microsoft.Build.Tasks.ManagedCompiler`, che eredita dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/tooltaskextension-base-class.md) (Classe di base TaskExtension).  
   
 ## <a name="example"></a>Esempio  

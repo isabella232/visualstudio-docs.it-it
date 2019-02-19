@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790007"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
@@ -28,7 +28,7 @@ Con i frammenti di codice [!INCLUDE[csprcs](../includes/csprcs-md.md)] è possib
 ## <a name="functions"></a>Funzioni  
  Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.  
   
-|Funzione|Description|Linguaggio|  
+|Funzione|Descrizione|Linguaggio|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
 |`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  

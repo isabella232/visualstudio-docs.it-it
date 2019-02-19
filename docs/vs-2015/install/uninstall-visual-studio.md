@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834829"
 ---
 # <a name="uninstall-visual-studio"></a>Disinstallare Visual Studio
@@ -43,7 +43,7 @@ Questa pagina descrive la procedura di disinstallazione di Visual Studio 2015, u
 1.  Individuare il file .exe Visual Studio (ad esempio, cercare "vs_enterprise.exe").
 
     > [!NOTE]
-    >  Il file deve essere in una sottocartella di "%ProgramData%\Package Cache", ad esempio: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  Il file deve trovarsi in una sottocartella di "%ProgramData%\Package Cache", ad esempio: Cache C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Eseguire il file .exe tramite il / disinstallare/forzare i parametri della riga di comando.
 
@@ -73,7 +73,7 @@ Questa pagina descrive la procedura di disinstallazione di Visual Studio 2015, u
 
 2. Installare o reinstallare la versione precedente di Visual Studio che si desidera utilizzare.
 
-   Anche se si installa una versione precedente di Visual Studio, il programma di installazione potrebbe comunque provare a usare una versione più recente o release se disponibile. Per informazioni più dettagliate, vedere il [come: Installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) argomento.
+   Anche se si installa una versione precedente di Visual Studio, il programma di installazione potrebbe comunque provare a usare una versione più recente o release se disponibile. Per informazioni più dettagliate, vedere la [procedura: installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) argomento.
 
 ## <a name="see-also"></a>Vedere anche
  [Installare Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

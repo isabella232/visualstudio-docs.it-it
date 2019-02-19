@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037837"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335246"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: Implementare progetti annidati
 
@@ -65,7 +65,7 @@ Quando si crea un tipo di progetto annidato, esistono alcuni passaggi aggiuntivi
      Poiché i progetti padre e figlio vengono creata un'istanza a livello di codice, è possibile impostare proprietà per i progetti annidati a questo punto.
 
     > [!NOTE]
-    > Non solo si ricevono le informazioni sul contesto dal progetto annidato, ma è anche possibile richiedere se il progetto principale dispone di alcun contesto per quell'elemento controllando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. In tal modo, è possibile aggiungere gli attributi della Guida dinamica aggiuntivi e le opzioni di menu specifiche per singoli progetti annidati.
+    > Non solo si ricevono le informazioni sul contesto dal progetto annidato, ma è anche possibile richiedere se il progetto principale dispone di alcun contesto per quell'elemento controllando [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). In tal modo, è possibile aggiungere gli attributi della Guida dinamica aggiuntivi e le opzioni di menu specifiche per singoli progetti annidati.
 
 10. La gerarchia viene compilata per la visualizzazione nel **Esplora soluzioni** con una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> (metodo).
 

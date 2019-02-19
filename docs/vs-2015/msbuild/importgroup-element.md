@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4d700bb6d8aebec1ff78e1e0289b89ae4cd0c91a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769419"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
@@ -47,23 +47,23 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Import](../msbuild/import-element-msbuild.md)|Importa il contenuto di un file di progetto in un altro file di progetto.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente mostra l'elemento `ImportGroup`.  

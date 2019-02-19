@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775872"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
@@ -48,8 +48,8 @@ Per motivi di sicurezza è necessario, quando possibile, eseguire Visual Studio 
 ||Utilizzo dell'emulatore per eseguire il debug di progetti di servizio cloud per Microsoft Azure.|[Debug di un servizio cloud in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Configurazione di un firewall per il debug remoto.|[Impostare Remote Tools sul dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Strumenti per le prestazioni|Profilatura di un'applicazione.|[Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)|
-|Distribuzione|Distribuzione di un'applicazione Web in Internet Information Services (IIS) su un computer locale.|[Distribuzione di un'applicazione Web ASP.NET su un Provider di Hosting utilizzando Visual Studio o Visual Web Developer: Distribuzione in IIS come ambiente di Test](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Invio di feedback a Microsoft|Modifica delle modalità di partecipazione al programma Analisi utilizzo software di Visual Studio.|[Procedura: Inviare commenti e suggerimenti](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Distribuzione|Distribuzione di un'applicazione Web in Internet Information Services (IIS) su un computer locale.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (Distribuzione di un'applicazione Web ASP.NET a un provider di hosting usando Visual Studio o Visual Web Developer: distribuzione a IIS come ambiente di test)|
+|Invio di feedback a Microsoft|Modifica delle modalità di partecipazione al programma Analisi utilizzo software di Visual Studio.|[How to: Send Feedback](../misc/how-to-send-feedback-about-visual-studio.md) (Procedura: Inviare commenti e suggerimenti)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Esecuzione di Visual Studio come amministratore
  È possibile avviare Visual Studio con autorizzazioni amministrative ogni volta che si avvia l'IDE oppure modificare il collegamento dell'applicazione in modo che venga eseguita sempre con autorizzazioni amministrative. Per altre informazioni, vedere la Guida di Windows.

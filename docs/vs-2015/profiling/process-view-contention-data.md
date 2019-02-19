@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796778"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
@@ -27,7 +27,7 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
   
  La tabella seguente illustra i valori delle colonne nella tabella della visualizzazione Processo.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Ora di inizio**|Numero di millisecondi o di cicli del processore dall'inizio della profilatura all'avvio del processo o del thread.|  
 |**Tempo blocco**|Tempo totale durante il quale è stata impedita l'esecuzione di funzioni del processo o del thread.|  
@@ -42,5 +42,5 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Processo](../profiling/process-view.md)

@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54766556"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;field&gt; (JavaScript)
@@ -86,7 +86,7 @@ Specifica le informazioni sulla documentazione, inclusa una descrizione, per un 
   `description`  
   Facoltativo. Una descrizione per il campo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il `name` attributo è obbligatorio quando si esegue la documentazione di un campo in una funzione del costruttore. Per tutti gli altri scenari, tutti gli attributi per il `<field>` elemento sono facoltativi.  
   
  Quando si esegue la documentazione di una funzione del costruttore, il `<field>` immediatamente prima della dichiarazione di campo deve essere presente l'elemento. Il `name` attributo deve corrispondere al nome di campo che viene usato nel codice sorgente. Per i membri di oggetto, il `name` attributo può essere omessa se la `<field>` elemento viene visualizzato immediatamente prima della dichiarazione di membro oggetto.  

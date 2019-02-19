@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creare un'applicazione semplice con oggetto visivo C# o Visual Basic | Microsoft Docs"
+title: "Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802616"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: Creare un'applicazione semplice con oggetto visivo C# o Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Completando questa procedura dettagliata, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Durante la procedura gli utenti potranno creare una semplice applicazione in stile "Hello, World", progettare l'interfaccia utente, aggiungere codice ed eseguire il debug degli errori, acquisendo al contempo ulteriori informazioni su come lavorare in IDE (Integrated Development Environment).  
@@ -47,7 +47,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
  È possibile apportare personalizzazioni aggiuntive a Visual Studio, ad esempio modificare il tipo di carattere e la dimensione del testo nell'editor o il tema di colore di IDE, mediante la finestra di dialogo **Opzioni** . A seconda della combinazione di impostazioni applicata, alcuni elementi della finestra di dialogo potrebbero non essere visualizzati automaticamente. È possibile assicurarsi che tutte le opzioni possibili vengano visualizzate selezionando la casella di controllo **Mostra tutte le impostazioni** .  
   
- Figura 3: Opzioni (finestra di dialogo)  
+ Figura 3: finestra di dialogo Opzioni  
   
  ![Finestra di dialogo Opzioni con l'opzione Mostra tutte le impostazioni](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -94,7 +94,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. In WPF Designer vengono illustrate una visualizzazione Progettazione e una visualizzazione XAML suddivise di MainWindow.xaml. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione.  È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. Per altre informazioni, vedere [Progettazione WPF per gli sviluppatori di Windows Form](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.  
   
-   Figura 5: Elementi di progetto  
+   Figura 5: elementi di progetto  
   
    ![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -132,7 +132,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.  
   
-   figure Finestra Greetings con TextBlock (controllo)  
+   Figura 7: finestra Greetings con il controllo TextBlock  
   
    ![Controllo TextBlock nel modulo Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
     La finestra dovrebbe risultare simile alla seguente:  
   
-    Figura 8. Pulsanti di opzione nella finestra Greetings.  
+    Figura 8: RadioButtons nella finestra Greetings.  
   
     ![Modulo Greetings con Textblock e due RadioButtons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -190,7 +190,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.  
   
-   figure Interfaccia utente finale di Greetings  
+   Figura 9: interfaccia utente finale di Greetings  
   
    ![Messaggi Greetings con etichette del controllo](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
@@ -259,7 +259,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
     ![Avviare il comando di debug dal menu Debug](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Verrà visualizzata una finestra di dialogo, che indica che si è verificato verificata un'eccezione IOException: Impossibile individuare la risorsa 'mainwindow.xaml'.  
+    Verrà visualizzata una finestra di dialogo in cui è indicato che si è verificata un'eccezione IOException: Impossibile individuare la risorsa 'mainwindow.xaml'.  
   
 2. Scegliere il pulsante **OK** , quindi arrestare il debugger.  
   

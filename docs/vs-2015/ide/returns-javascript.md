@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81a9a42a104adb2a9d9a9aba483e2588d7332868
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801776"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;returns&gt; (JavaScript)
@@ -75,7 +75,7 @@ Specifica le informazioni sulla documentazione per il risultato di una chiamata 
   `description`  
   Facoltativo. Descrizione del valore restituito.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il `<returns>` elemento deve essere inserito nel corpo della funzione prima di qualsiasi istruzione.  
   
 ## <a name="example"></a>Esempio  

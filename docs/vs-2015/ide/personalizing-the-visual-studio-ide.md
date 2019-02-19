@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778445"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizzazione dell'IDE di Visual Studio
@@ -36,10 +36,10 @@ Questa sezione illustra come personalizzare Visual Studio in vari modi per offri
  Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Personalizzazione della pagina iniziale per Visual Studio](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ### <a name="environment-color-themes"></a>Temi colore dell'ambiente
- Per modificare il tema colori tra chiaro, scuro e blu, digitare "ambiente" in **Avvio veloce** e scegliere **Ambiente &#124; Generale**. Per modificare le opzioni relative alla colorazione nell'editor, digitare `environment` in **Avvio veloce** e scegliere **Ambiente &#124; Tipi di carattere e colori**. Vedere anche [Procedura: Modificare tipi di carattere e colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Per modificare il tema colori tra chiaro, scuro e blu, digitare "ambiente" in **Avvio veloce** e scegliere **Ambiente &#124; Generale**. Per modificare le opzioni relative alla colorazione nell'editor, digitare `environment` in **Avvio veloce** e scegliere **Ambiente &#124; Tipi di carattere e colori**. Vedere anche [Procedura: modificare tipi di carattere e colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menu e barre degli strumenti
- Per aggiungere o rimuovere voci di menu o elementi della barra degli strumenti, vedere [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Per aggiungere o rimuovere voci di menu o elementi della barra degli strumenti, vedere [Procedura: personalizzare menu e barre degli strumenti in Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Utilizzo di maiuscole e minuscole nel menu principale
  A seguito di una richiesta comune, è possibile modificare l'uso di maiuscole e minuscole nel menu principale tra **Tutte Iniziali Maiuscole** e **TUTTE MAIUSCOLE** digitando `environment` in **Avvio rapido** e scegliendo **Ambiente &#124; Generale**.

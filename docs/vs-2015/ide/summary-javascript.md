@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81d41918d61bbe95cfe19d2382535449a47deb8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775814"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -38,7 +38,7 @@ Specifica la descrizione di una funzione o di un metodo.
  `description`  
  Facoltativo. Descrizione della funzione o del metodo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Gli elementi utilizzati per annotare le funzioni, tra cui [ \<riepilogo >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), e [ \<restituisce >](../ide/returns-javascript.md), deve essere inserito nel corpo della funzione prima di qualsiasi istruzione.  
   
 ## <a name="example"></a>Esempio  

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Estendere il processo di compilazione | Microsoft Docs'
+title: 'Procedura: estendere il processo di compilazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758665"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: estendere il processo di compilazione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 
@@ -56,10 +56,10 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
    Nella tabella seguente sono indicate tutte le destinazioni in Microsoft.Common.targets di cui è possibile eseguire l'override in totale sicurezza.
 
-|Target Name|Description|
+|Target Name|Descrizione|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
-|`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:**  Il `BeforeBuild` e `AfterBuild` destinazioni sono già definite nei commenti alla fine della maggior parte dei file di progetto. Questo agevola l'aggiunta di eventi di pre-compilazione e post-compilazione al file di progetto.|
+|`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:** le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto. Questo agevola l'aggiunta di eventi di pre-compilazione e post-compilazione al file di progetto.|
 |`BeforeRebuild`, `AfterRebuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la ricompilazione. L'ordine di esecuzione delle destinazioni in Microsoft.Common.targets è: `BeforeRebuild`, `Clean`, `Build` e quindi `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pulitura.|
 |`BeforePublish`, `AfterPublish`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pubblicazione.|
@@ -120,7 +120,7 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
 ### <a name="commonly-overridden-dependson-properties"></a>Proprietà "DependsOn" comunemente sottoposte a override
 
-|Nome proprietà|Description|
+|Nome proprietà|Descrizione|
 |-------------------|-----------------|
 |`BuildDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire destinazioni personalizzate prima o dopo l'intero processo di compilazione.|
 |`CleanDependsOn`|Proprietà di cui eseguire l'override se si vuole pulire l'output del processo di compilazione personalizzato.|

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796983"
 ---
 # <a name="average-cpu-utilization"></a>Utilizzo CPU medio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo profilato per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.  
+Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo sottoposto a profilatura per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Core](../profiling/cores-view.md)   

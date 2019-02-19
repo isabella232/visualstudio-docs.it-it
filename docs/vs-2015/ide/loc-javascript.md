@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758525"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
@@ -38,7 +38,7 @@ Specifica il percorso e il tipo del file sidecar che fornisce informazioni di In
  `format`  
  Facoltativo. Il tipo di file sidecar utilizzato per la localizzazione. Usare `messagebundle` per specificare l'utilizzo di aggregazioni di messaggio definito dai metadati Ajax Open. `messagebundle` è il formato consigliato. Tuttavia, questo formato non è supportato in Microsoft Ajax o in file con estensione winmd. Usare `vsdoc` per specificare il formato di localizzazione .NET Framework standard che viene utilizzato da Microsoft Ajax e Windows Runtime. L'attributo è facoltativo. `vsdoc` rappresenta il formato predefinito.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il `<loc>` deve essere presente l'elemento nella parte superiore del file nella stessa sezione di `<reference>` elemento. Le regole di utilizzo per il `<loc>` elemento sono gli stessi di `<reference>` elemento. Per altre informazioni, vedere la sezione "Riferimenti direttive" nella [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
   
  Visual Studio elabora un singolo `<loc>` (elemento) per ogni file con estensione js. Se più `<loc>` gli elementi sono presenti, solo una singola `<loc>` elemento viene usato. Comportamento per determinare a quali `<loc>` elemento da utilizzare non è definito.  

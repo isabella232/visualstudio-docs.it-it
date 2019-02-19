@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758361"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
@@ -189,7 +189,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  Di seguito è riportato un elenco di funzioni di proprietà MSBuild:  
   
-|Firma funzione|Description|  
+|Firma funzione|Descrizione|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Esegue l'addizione di due valori Double.|  
 |long Add(long a, long b)|Esegue l'addizione di due valori Long.|  

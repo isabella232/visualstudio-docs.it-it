@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b25e7bb0f6498e9160dd8602648ced28b3bb9fed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780514"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -38,7 +38,7 @@ Devenv /edit [file1[ file2]]
  `file2`  
  Facoltativo. Uno o più file aggiuntivi da aprire nell'istanza esistente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Se non è stato specificato alcun file ed è presente un'istanza di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], l'istanza esistente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] riceve lo stato attivo. Se non è stato specificato alcun file e non è presente un'istanza di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], verrà creata una nuova istanza di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] con un layout di finestra semplificato.  
   
  Se l'istanza esistente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è in uno stato modale, ad esempio, se la [finestra di dialogo Opzioni](../../ide/reference/options-dialog-box-visual-studio.md) è aperta, il file verrà aperto nell'istanza esistente quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] esce dallo stato modale.  

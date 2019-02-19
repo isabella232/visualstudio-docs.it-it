@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Gestire configurazioni della Build applicando le impostazioni di Visual Basic Developer | Microsoft Docs'
+title: 'Procedura: Gestire configurazioni della build applicando le impostazioni di Visual Basic Developer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784787"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: Gestire configurazioni della build applicando le impostazioni di Visual Basic Developer
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per impostazione predefinita, tutte le opzioni di configurazione della build avanzate sono nascoste tramite l'applicazione di impostazioni di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer. Questo argomento illustra come abilitare manualmente tali impostazioni.  

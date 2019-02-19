@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801157"
 ---
 # <a name="profiling-tools-apis"></a>API per strumenti di profilatura
@@ -28,7 +28,7 @@ ms.locfileid: "54801157"
  <xref:Microsoft.VisualStudio.Profiler>  
  Descrive i metodi degli strumenti di profilatura .NET.  
   
- [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)  
+ [Procedura dettagliata: uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)  
  Informazioni su come usare i metodi degli strumenti di profilatura .NET in questo esempio completo.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

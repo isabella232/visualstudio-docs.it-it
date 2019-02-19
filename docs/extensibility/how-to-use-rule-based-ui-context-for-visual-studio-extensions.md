@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824288"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335350"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedura: Usare regole in base al contesto dell'interfaccia utente per le estensioni di Visual Studio
+
 Visual Studio consente il caricamento di VSPackage durante determinati noto <xref:Microsoft.VisualStudio.Shell.UIContext>s vengono attivati. Tuttavia, questi contesti dell'interfaccia utente non sono bene più capillare, che non lascia gli autori delle estensioni nessuna scelta ma per il prelievo di un contesto dell'interfaccia utente disponibili che viene attivato prima del punto di lo desiderano VSPackage da caricare. Per un elenco di contesti dell'interfaccia utente ben noti, vedere <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
- Caricamento dei pacchetti può avere un impatto sulle prestazioni e caricarli prima di quanto necessario non è la procedura consigliata. Visual Studio 2015 ha introdotto il concetto dei contesti di interfaccia utente basata su regole, un meccanismo che consente agli autori di estensioni definire le condizioni precise in cui viene attivato un contesto dell'interfaccia utente e vengono caricati i pacchetti VSPackage associati.  
+Caricamento dei pacchetti può avere un impatto sulle prestazioni e caricarli prima di quanto necessario non è la procedura consigliata. Visual Studio 2015 ha introdotto il concetto dei contesti di interfaccia utente basata su regole, un meccanismo che consente agli autori di estensioni definire le condizioni precise in cui viene attivato un contesto dell'interfaccia utente e vengono caricati i pacchetti VSPackage associati.  
   
 ## <a name="rule-based-ui-context"></a>Contesto dell'interfaccia utente basata su regole  
- Una "regola" è costituito da un nuovo contesto dell'interfaccia utente (un GUID) e un'espressione booleana che fa riferimento a uno o più "condizioni" combinata con logica "and", "or", "non" operazioni. "Condizioni" vengono valutate dinamicamente in fase di esecuzione e l'espressione viene rivalutata ogni volta che una delle modifiche apportate al relativo termini. Quando l'espressione restituisce true, viene attivato il contesto dell'interfaccia utente associato. In caso contrario, il contesto dell'interfaccia utente è disattivato.  
+
+Una "regola" è costituito da un nuovo contesto dell'interfaccia utente (un GUID) e un'espressione booleana che fa riferimento a uno o più "condizioni" combinata con logica "and", "or", "non" operazioni. "Condizioni" vengono valutate dinamicamente in fase di esecuzione e l'espressione viene rivalutata ogni volta che una delle modifiche apportate al relativo termini. Quando l'espressione restituisce true, viene attivato il contesto dell'interfaccia utente associato. In caso contrario, il contesto dell'interfaccia utente è disattivato.  
   
- Contesto dell'interfaccia utente basata su regole può essere usato in vari modi:  
+Contesto dell'interfaccia utente basata su regole può essere usato in vari modi:  
   
 1. Specificare i vincoli di visibilità per comandi e finestre degli strumenti. È possibile nascondere le finestre degli strumenti di comandi/fino a quando non viene soddisfatta la regola di contesto dell'interfaccia utente.  
   
@@ -124,30 +126,30 @@ Visual Studio consente il caricamento di VSPackage durante determinati noto <xre
 ```  
   
 ## <a name="term-types"></a>Tipi di termine  
- Ecco i vari tipi di termini che sono supportati:  
+
+Ecco i vari tipi di termini che sono supportati:  
   
 |Termine|Descrizione|  
 |-|-|  
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Il GUID si riferisce a un contesto dell'interfaccia utente. Al termine sarà true ogni volta che il contesto dell'interfaccia utente è attivo e false in caso contrario.|  
-|HierSingleSelectionName:\<modello >|Al termine sarà true ogni volta che la selezione nella gerarchia attiva è un singolo elemento e il nome dell'elemento selezionato corrisponde all'espressione regolare .net specificato da "pattern".|  
-|UserSettingsStoreQuery:\<query >|"query" rappresenta un percorso completo nell'archivio delle impostazioni utente, che deve restituire un valore diverso da zero. La query viene suddivisa in un "collection" e "propertyName" nell'ultima barra.|  
-|ConfigSettingsStoreQuery:\<query >|"query" rappresenta un percorso completo nell'archivio delle impostazioni di configurazione, che deve restituire un valore diverso da zero. La query viene suddivisa in un "collection" e "propertyName" nell'ultima barra.|  
-|ActiveProjectFlavor:\<Generators\projecttypeguid >|Al termine verrà attivato ogni volta che il progetto attualmente selezionato è flavored (valore aggregato) e dispone di una versione che corrisponde al tipo di progetto specificato GUID.|  
-|ActiveEditorContentType:\<contentType >|Al termine sarà true quando il documento selezionato è un editor di testo con il tipo di contenuto specificato.|  
+|HierSingleSelectionName:\<pattern>|Al termine sarà true ogni volta che la selezione nella gerarchia attiva è un singolo elemento e il nome dell'elemento selezionato corrisponde all'espressione regolare .net specificato da "pattern".|  
+|UserSettingsStoreQuery:\<query>|"query" rappresenta un percorso completo nell'archivio delle impostazioni utente, che deve restituire un valore diverso da zero. La query viene suddivisa in un "collection" e "propertyName" nell'ultima barra.|  
+|ConfigSettingsStoreQuery:\<query>|"query" rappresenta un percorso completo nell'archivio delle impostazioni di configurazione, che deve restituire un valore diverso da zero. La query viene suddivisa in un "collection" e "propertyName" nell'ultima barra.|  
+|ActiveProjectFlavor:\<projectTypeGuid>|Al termine verrà attivato ogni volta che il progetto attualmente selezionato è flavored (valore aggregato) e dispone di una versione che corrisponde al tipo di progetto specificato GUID.|  
+|ActiveEditorContentType:\<contentType>|Al termine sarà true quando il documento selezionato è un editor di testo con il tipo di contenuto specificato.|  
 |ActiveProjectCapability:\<espressione >|Il termine è true quando le funzionalità del progetto attivo corrispondono all'espressione specificata. Un'espressione può essere simile a VB &#124; CSharp.|  
-|SolutionHasProjectCapability:\<espressione >|Analogamente al precedente ma termine è true quando si dispone di qualsiasi progetto caricato corrispondente all'espressione.|  
-|SolutionHasProjectFlavor:\<Generators\projecttypeguid >|Al termine sarà true ogni volta che una soluzione di progetto che è flavored (valore aggregato) che ha una versione che corrisponde al tipo di progetto specificato GUID.|
+|SolutionHasProjectCapability:\<Expression>|Analogamente al precedente ma termine è true quando si dispone di qualsiasi progetto caricato corrispondente all'espressione.|  
+|SolutionHasProjectFlavor:\<projectTypeGuid>|Al termine sarà true ogni volta che una soluzione di progetto che è flavored (valore aggregato) che ha una versione che corrisponde al tipo di progetto specificato GUID.|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilità con l'estensione tra versioni  
- Contesti dell'interfaccia utente basata su regole è una nuova funzionalità di Visual Studio 2015 e potrebbe non essere trasferito a versioni precedenti. Non porting alle versioni precedenti creano un problema con le estensioni/pacchetti destinati a più versioni di Visual Studio. Tali versioni dovranno essere caricato automaticamente in Visual Studio 2013 e versioni precedenti, ma possono trarre vantaggio dal basato su regole di contesti dell'interfaccia utente per evitare che viene caricato automaticamente in Visual Studio 2015.  
+
+Contesti dell'interfaccia utente basata su regole è una nuova funzionalità di Visual Studio 2015 e potrebbe non essere trasferito a versioni precedenti. Non porting alle versioni precedenti creano un problema con le estensioni/pacchetti destinati a più versioni di Visual Studio. Tali versioni dovranno essere caricato automaticamente in Visual Studio 2013 e versioni precedenti, ma possono trarre vantaggio dal basato su regole di contesti dell'interfaccia utente per evitare che viene caricato automaticamente in Visual Studio 2015.  
   
- Per supportare tali pacchetti, AutoLoadPackages voci nel Registro di sistema possono ora specificare un flag nel relativo campo valore per indicare che la voce deve essere ignorata in Visual Studio 2015 e versioni successive. Questa operazione può essere eseguita mediante l'aggiunta di un'opzione di flag per <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Ora è possono aggiungere i pacchetti VSPackage **SkipWhenUIContextRulesActive** possibilità loro <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attributo per indicare la voce deve essere ignorata in Visual Studio 2015 e versioni successive.  
-  
+Per supportare tali pacchetti, AutoLoadPackages voci nel Registro di sistema possono ora specificare un flag nel relativo campo valore per indicare che la voce deve essere ignorata in Visual Studio 2015 e versioni successive. Questa operazione può essere eseguita mediante l'aggiunta di un'opzione di flag per <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Ora è possono aggiungere i pacchetti VSPackage **SkipWhenUIContextRulesActive** possibilità loro <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attributo per indicare la voce deve essere ignorata in Visual Studio 2015 e versioni successive.  
 ## <a name="extensible-ui-context-rules"></a>Regole di contesto dell'interfaccia utente estendibile  
- In alcuni casi, i pacchetti non è possibile usare regole statiche di contesto dell'interfaccia utente. Ad esempio, si supponga di che avere un pacchetto che supportano l'estendibilità in modo che lo stato del comando si basa sui tipi di editor che sono supportati dai provider di MEF importati. Il comando è abilitato se c'è un'estensione che supportano il tipo di modifica corrente. In questi casi, il pacchetto stesso non è possibile usare una regola di contesto dell'interfaccia utente statica, poiché le condizioni cambierebbero a seconda di quale MEF sono disponibili estensioni.  
+
+In alcuni casi, i pacchetti non è possibile usare regole statiche di contesto dell'interfaccia utente. Ad esempio, si supponga di che avere un pacchetto che supportano l'estendibilità in modo che lo stato del comando si basa sui tipi di editor che sono supportati dai provider di MEF importati. Il comando è abilitato se c'è un'estensione che supportano il tipo di modifica corrente. In questi casi, il pacchetto stesso non è possibile usare una regola di contesto dell'interfaccia utente statica, poiché le condizioni cambierebbero a seconda di quale MEF sono disponibili estensioni.  
   
- Per supportare tali pacchetti, i contesti dell'interfaccia utente basata su regole supportano un'espressione hardcoded "*" che indica tutte le condizioni che seguono viene poi unito o. In questo modo per il pacchetto master definire un contesto dell'interfaccia utente basata su regole noto e associare il relativo stato di comandi a questo contesto. In un secondo momento qualsiasi estensione MEF per il pacchetto master di destinazione possa aggiungere relative condizioni per gli editor che supporta senza alcun impatto sugli altri termini o l'espressione master.  
+Per supportare tali pacchetti, i contesti dell'interfaccia utente basata su regole supportano un'espressione hardcoded "*" che indica tutte le condizioni che seguono viene poi unito o. In questo modo per il pacchetto master definire un contesto dell'interfaccia utente basata su regole noto e associare il relativo stato di comandi a questo contesto. In un secondo momento qualsiasi estensione MEF per il pacchetto master di destinazione possa aggiungere relative condizioni per gli editor che supporta senza alcun impatto sugli altri termini o l'espressione master.  
   
- Il costruttore <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentazione viene illustrata la sintassi per le regole di contesto dell'interfaccia utente estendibili.
+Il costruttore <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentazione viene illustrata la sintassi per le regole di contesto dell'interfaccia utente estendibili.

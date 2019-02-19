@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Creare ed eseguire un'installazione automatica | Microsoft Docs"
+title: "Procedura: creare ed eseguire un'installazione automatica | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803562"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedura: Creare ed eseguire un'installazione automatica di Visual Studio
@@ -114,7 +114,7 @@ ms.locfileid: "54803562"
 
 2. Aprire il menu **Start** , quindi scegliere **Esegui**.
 
-3. Immettere il seguente testo: \\\\*ServerName*\IDEinstall\vs_*prodotto*.exe /AdminFile PathToAdmindeployment.xml File
+3. Immettere il testo seguente: \\ \\ *ServerName*\IDEinstall\vs_*prodotto*.exe /AdminFile PathToAdmindeployment.xml File
 
     AdditionalParametersAsNeeded
 
@@ -173,7 +173,7 @@ ms.locfileid: "54803562"
 
 2.  Immettere il codice Product Key.
 
-     Per altre informazioni, vedere la pagina [ Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e il [come: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) argomenti.)
+     (Per altre informazioni, vedere la [come: individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e il [procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) argomenti.)
 
 ## <a name="see-also"></a>Vedere anche
  [Installare Visual Studio](../install/install-visual-studio-2015.md)

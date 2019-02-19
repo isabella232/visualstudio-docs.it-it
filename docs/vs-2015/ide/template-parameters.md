@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787092"
 ---
 # <a name="template-parameters"></a>Parametri di template
@@ -74,7 +74,7 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 ## <a name="custom-template-parameters"></a>Parametri di modello personalizzati  
  Oltre ai parametri di modello riservati predefiniti usati per la sostituzione dei parametri, è possibile specificare i propri valori e parametri di modello. Per altre informazioni, vedere [Elemento CustomParameters (modelli di Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)  
   
-## <a name="example-replacing-files-names"></a>Esempio: Sostituire i nomi di file  
+## <a name="example-replacing-files-names"></a>Esempio: sostituzione di nomi di file  
  È possibile specificare nomi di file variabili per gli elementi del progetto usando un parametro con l'attributo `TargetFileName`. Ad esempio, è possibile specificare che il file EXE usi il nome del progetto, specificato da `$projectname$`, come nome del file.  
   
 ```  
@@ -88,7 +88,7 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Esempio: Usando il nome del progetto per il nome del Namespace  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Esempio: uso del nome del progetto per il nome dello spazio dei nomi  
  Per usare il nome del progetto per lo spazio dei nomi in un file di classe di Visual C#, Class1.cs, usare la sintassi seguente:  
   
 ```  

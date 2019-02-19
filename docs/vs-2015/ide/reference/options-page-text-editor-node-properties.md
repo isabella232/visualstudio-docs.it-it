@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767992"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Editor di testo
@@ -30,7 +30,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 ## <a name="general"></a>Generale  
  `DTE.Properties("TextEditor", "General")`  
   
-|Nome degli elementi delle proprietà|Value|Description|  
+|Nome degli elementi delle proprietà|Valore|Descrizione|  
 |------------------------|-----------|-----------------|  
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Se `True`, premendo escape in presenza di una selezione si determina lo spostamento del punto di inserimento nella posizione in cui è iniziata l'azione che ha creato la selezione. `False` consente di spostare il punto di inserimento all'altra estremità della selezione.|  
 |DragNDropTextEditing|Get/Set (Boolean)|Determina se è possibile trascinare un'area di testo selezionata da una posizione a un'altra nel documento tramite operazioni Copia o Taglia/Incolla.|  
@@ -49,7 +49,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
   
  Le opzioni dell'editor `PlainText` influiscono sulle impostazioni dell'editor al momento della modifica dei file di testo. Ogni linguaggio di programmazione e il pacchetto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano impostazioni specifiche dell'**editor di testo**. Ad esempio, per visualizzare o modificare le impostazioni dell'editor di [!INCLUDE[csprcs](../../includes/csprcs-md.md)], utilizzare `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Per le impostazioni dell'editor di **Script SQL** usare `DTE.Properties("TextEditor", "SQL ")`.  
   
-|Nome degli elementi delle proprietà|Value|Description|  
+|Nome degli elementi delle proprietà|Value|Descrizione|  
 |------------------------|-----------|-----------------|  
 |AutoListMembers|Get/Set (Boolean)|Determina se l'elenco di membri disponibile viene visualizzato automaticamente quando viene digitato un punto dopo un riferimento a una variabile.|  
 |AutoListParams|Get/Set (Boolean)|Determina se la descrizione di un elenco di argomenti viene visualizzata automaticamente quando viene digitata una parentesi "(" dopo il nome di una funzione.|  
@@ -58,7 +58,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 |WordWrap|Get/Set (Boolean)|Determina se nella visualizzazione esiste un ritorno a capo delle righe lunghe alla fine delle parole. Impostando questo valore su `true`, l'elemento della proprietà `VirtualSpace` presente in questo elenco verrà impostato su `false`.|  
 |WordWrapGlyphs|Get/Set (Boolean)|Consente di visualizzare un glifo alla fine di una riga, a indicare un ritorno a capo automatico nella riga successiva.|  
 |EnableLeftClickForURLs|Get/Set (Boolean)|Determina se nell'editor vengono sottolineati gli URL e se è sufficiente fare clic sul pulsante sinistro del mouse per passare all'URL nel browser registrato del sistema.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>) |Determina lo stile di rientro: Predefinito, Intelligente o Nessuno.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>) |Determina lo stile di rientro: Predefinito, Intelligenti o Nessuno.|  
 |TabSize|Get/Set (Long)|Rappresenta il numero di spazi che equivale a una tabulazione. L'impostazione di un intero esterno all'intervallo compreso tra 1 e 60 (inclusi) ha esito negativo.|  
 |InsertTabs|Get/Set (Boolean)|Se `True`, i caratteri di tabulazione vengono utilizzati per i rientri.|  
 |IndentSize|Get/Set (Long)|Rappresenta il numero di spazi che equivale a un livello di rientro. L'impostazione di un valore integer esterno all'intervallo compreso tra 1 e 60 (inclusi) ha esito negativo.|  
