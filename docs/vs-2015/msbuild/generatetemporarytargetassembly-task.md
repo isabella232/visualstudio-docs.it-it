@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774683"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Attività GenerateTemporaryTargetAssembly
@@ -34,7 +34,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`AssemblyName`|Parametro **String** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto ed è anche il nome dell'assembly di destinazione generato temporaneamente. Se, ad esempio, un progetto genera un eseguibile [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] il cui nome è **WinExeAssembly.exe**, il parametro **AssemblyName** presenterà il valore **WinExeAssembly**.|  
 |`CompileTargetName`|Parametro **String** obbligatorio.<br /><br /> Specifica il nome della destinazione [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] usata per generare assembly dai file di codice sorgente. Il valore tipico per **CompileTargetName** è **CoreCompile**.|  
@@ -46,7 +46,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>
 |`ReferencePath`|Parametro **ITaskItem[]** facoltativo.<br /><br /> Specifica un elenco di assembly, per percorso e nome file, a cui fanno riferimento i tipi compilati nell'assembly di destinazione temporaneo.|  
 |`ReferencePathTypeName`|Parametro **String** obbligatorio.<br /><br /> Specifica il parametro usato dal parametro di destinazione della compilazione (**CompileTargetName**), che specifica l'elenco di riferimenti ad assembly (**ReferencePath**). Il valore appropriato è **ReferencePath**.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il primo passaggio di compilazione del markup, eseguito da [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila i file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] in formato binario. Il compilatore necessita quindi dell'elenco degli assembly a cui si fa riferimento in cui sono contenuti i tipi usati dai file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]. Se tuttavia un file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] usa un tipo definito nello stesso progetto, non viene creato un assembly corrispondente per il progetto fino a quando quest'ultimo non viene compilato. Pertanto, non è possibile fornire un riferimento all'assembly durante il primo passaggio di compilazione del markup.  
   
  **MarkupCompilePass1** rinvia la conversione dei file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] che contengono riferimenti a tipi dello stesso progetto a un secondo passaggio di compilazione del markup, eseguito da [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Prima dell'esecuzione di **MarkupCompilePass2**, viene generato un assembly temporaneo contenente i tipi usati dai file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] di cui è stato rinviato il passaggio di compilazione del markup. Un riferimento all'assembly generato viene fornito a **MarkupCompilePass2** mentre viene eseguito, in modo da consentire la conversione in formato binario dei file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] con compilazione rinviata.  

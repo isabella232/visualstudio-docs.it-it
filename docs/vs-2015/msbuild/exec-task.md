@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782507"
 ---
 # <a name="exec-task"></a>Attività Exec
@@ -35,7 +35,7 @@ Esegue il programma o il comando specificato con gli argomenti specificati.
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività `Exec`.  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`Command`|Parametro `String` obbligatorio.<br /><br /> Uno o più comandi da eseguire. Possono essere comandi di sistema, ad esempio attrib, o file eseguibili, ad esempio program.exe, runprogram.bat o setup.msi.<br /><br /> Questo parametro può contenere più righe di comandi. In alternativa, è possibile includere più comandi in un file batch ed eseguirlo tramite questo parametro.|  
 |`CustomErrorRegularExpression`|Parametro `String` facoltativo.<br /><br /> Specifica un'espressione regolare usata per individuare eventuali righe di errore nell'output dello strumento. È particolarmente utile per gli strumenti che consentono la generazione di output con formattazione insolita.|  
@@ -48,7 +48,7 @@ Esegue il programma o il comando specificato con gli argomenti specificati.
 |`StdOutEncoding`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica la codifica del flusso di output standard dell'attività acquisito. Il valore predefinito è la codifica dell'output della console corrente.|  
 |`WorkingDirectory`|Parametro `String` facoltativo.<br /><br /> Specifica la directory in cui verrà eseguito il comando.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questa attività è utile nei casi in cui non è disponibile un'attività [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] specifica per il processo che si vuole eseguire. A differenza di un'attività più specifica, tuttavia, con l'attività `Exec` non è possibile raccogliere l'output dallo strumento o dal comando eseguito.  
   
  Anziché richiamare direttamente un processo, l'attività `Exec` chiama cmd.exe.  

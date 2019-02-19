@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793087"
 ---
 # <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
@@ -25,7 +25,7 @@ ms.locfileid: "54793087"
   
  È anche possibile limitare un report a un intervallo di tempo usando la sequenza temporale grafica della visualizzazione Riepilogo. Vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Per escludere il codice di sistema e di terze parti da un report, vedere [Procedura: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Per escludere il codice di sistema e di terze parti da un report, vedere [Procedura: Filtrare visualizzazioni report degli strumenti per la profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedure  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54793087"
   
 2.  Per ogni clausola da aggiungere a un filtro, selezionare o immettere i valori nei campi seguenti di una riga.  
   
-    |Campo|Description|  
+    |Campo|Descrizione|  
     |-----------|-----------------|  
     |**And/Or**|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|  
     |**Campo**|Selezionare il campo del report da usare nella clausola del filtro dall'elenco di campi dati visualizzato.|  

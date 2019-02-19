@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8bf0e41f750a7003f3d267b2bd17dcf6dc2d4a3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800849"
 ---
 # <a name="project-properties-reference"></a>Riferimenti alle proprietà di progetto
@@ -27,7 +27,7 @@ Altre informazioni su come configurare e personalizzare le proprietà del proget
   
 ## <a name="project-properties-pages"></a>Pagine delle proprietà del progetto  
   
-|Titolo|Description|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Pagina Applicazione, Creazione progetti (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].|  
 |[Pagina Applicazione, Creazione progetti (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[csprcs](../../includes/csprcs-md.md)].|  

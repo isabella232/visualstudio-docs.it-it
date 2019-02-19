@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di più Computer di compilazione ambiente | Microsoft Docs'
+title: 'Procedura dettagliata: Creazione di un ambiente di compilazione con più computer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769074"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più Computer
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per creare un ambiente di compilazione all'interno dell'organizzazione, è possibile installare Visual Studio in un computer host, quindi copiare i file e le impostazioni in un altro computer in modo che quest'ultimo possa partecipare alle compilazioni. Non è necessario installare Visual Studio nel secondo computer.  

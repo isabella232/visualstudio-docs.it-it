@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780424"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, Scheda HTML
@@ -32,9 +32,9 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
   
 ## <a name="tasks"></a>Attività  
   
--   [Procedura: Gestire la finestra Casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [Procedura: gestire la finestra Casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Procedura: Organizzare le schede della casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+-   [Procedura: modificare le schede della Casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Elementi dell'interfaccia utente  
  Per impostazione predefinita, nella scheda HTML sono disponibili i seguenti strumenti.  
@@ -42,7 +42,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
  **Puntatore**  
  ![Puntatore pagina HTML finestra di progettazione mobile ASP.NET](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- Questo strumento viene selezionato per impostazione predefinita quando si fa clic su una delle schede della casella degli strumenti e non è possibile eliminarlo. Il puntatore consente di trascinare oggetti nell'area di visualizzazione Progettazione, ridimensionarli e riposizionarli nella pagina o nel form. Per altre informazioni, vedere [Procedura: Gestire la finestra Casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [come: Organizzare le schede della casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+ Questo strumento viene selezionato per impostazione predefinita quando si fa clic su una delle schede della casella degli strumenti e non è possibile eliminarlo. Il puntatore consente di trascinare oggetti nell'area di visualizzazione Progettazione, ridimensionarli e riposizionarli nella pagina o nel form. Per altre informazioni, vedere [Procedura: gestire la finestra Casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  **Input (Pulsante)**  
  ![Pulsante pagina Web HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -55,7 +55,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Procedura: Creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [mappa del contenuto per i controlli Server Web pulsante](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, e <xref:System.Web.UI.WebControls.Button>.  
+ Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: procedura: creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Mappa del contenuto per i controlli Server Web pulsante](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, e <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Reimposta)**  
  ![Screenshot HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -126,7 +126,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [come: Impostare un controllo Server Web nella casella di testo per l'immissione della Password](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), e [procedura dettagliata: Pagina convalida dell'Input utente in un Web Form](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Procedura: impostare un controllo server Web TextBox per l'immissione di una password](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Procedura dettagliata: convalida dell'input dell'utente in una pagina Web Form](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
 >  Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere "Securing Connections with SSL" (Protezione delle connessioni con SSL) in [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guida operativa di IIS). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -225,7 +225,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
   
  È possibile creare un elemento `select` aumentando il valore della proprietà Size.  
   
- Per altre informazioni, vedere [sintassi dichiarativa per il controllo Server HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Procedura: Creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sul controllo Server Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo Server Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, e <xref:System.Web.UI.WebControls.DropDownList>.  
+ Per altre informazioni, vedere [sintassi dichiarativa per il controllo Server HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: procedura: creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Panoramica del controllo Server Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo Server Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, e <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Righello orizzontale**  
  ![Elemento righello orizzontale pagina HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  

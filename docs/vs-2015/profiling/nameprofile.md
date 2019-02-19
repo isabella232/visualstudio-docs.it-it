@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752262"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. I valori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
   
-|Enumerator|Description|  
+|Enumerator|Descrizione|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|  
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
-|Enumerator|Description|  
+|Enumerator|Descrizione|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|L'elemento di profilatura specificato non esiste.|  
 |NAME_ERROR_INVALID_NAME|Il nome non è valido.|  
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Il testo del nome supera i 32 caratteri, incluso il carattere null e pertanto è stato troncato.|  
 |NAME_OK|Il nome è stato registrato correttamente.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  A ogni processo o thread è possibile assegnare un solo nome. Dopo aver assegnato un nome a un elemento di profilatura, le chiamate successive a NameProfile per tale elemento vengono ignorate.  
   
  Se lo stesso nome viene assegnato a thread o processi diversi, il report includerà i dati da tutti gli elementi di tale livello con lo stesso nome.  
