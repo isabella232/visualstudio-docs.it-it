@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787393"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Visualizzazione Funzioni: dati di strumentazione di memoria .NET
@@ -25,7 +25,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
   
 ## <a name="general"></a>Generale  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Nome funzione**|Nome della funzione.|  
 |**Indirizzo funzione**|Indirizzo della funzione.|  
@@ -44,7 +44,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
   
  I valori di memoria esclusivi indicano il numero e le dimensioni di oggetti creati dalla funzione, ma non dalle relative funzioni figlio.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Allocazioni inclusive**|Numero totale di oggetti creati in questa funzione e in funzioni chiamate da questa funzione.|  
 |**% allocazioni inclusive**|Percentuale di tutti gli oggetti allocati nell'esecuzione della profilatura che rappresentavano allocazioni inclusive di questa funzione.|  
@@ -58,7 +58,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso  
  I valori relativi al tempo inclusivo trascorso indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo inclusivo trascorso**|Tempo inclusivo trascorso totale di tutte le chiamate a questa funzione.|  
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo trascorso di questa funzione.|  
@@ -69,7 +69,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso  
  I valori relativi al tempo esclusivo trascorso indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. Il tempo include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma non include il tempo trascorso nelle funzioni figlio.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo esclusivo trascorso**|Tempo esclusivo trascorso totale di tutte le chiamate a questa funzione.|  
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questa funzione.|  
@@ -80,7 +80,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione  
  I valori relativi al tempo inclusivo applicazione indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma include il tempo trascorso nelle funzioni figlio.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo inclusivo applicazione**|Tempo inclusivo applicazione totale di tutte le chiamate a questa funzione.|  
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo applicazione totale di questa funzione.|  
@@ -91,7 +91,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione  
  I valori relativi al tempo esclusivo applicazione indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, né il tempo trascorso nelle funzioni figlio.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo esclusivo applicazione**|Tempo esclusivo applicazione totale di tutte le chiamate a questa funzione.|  
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo applicazione totale di questa funzione.|  
@@ -100,7 +100,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Funzioni - Campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Funzioni](../profiling/functions-view-instrumentation-data.md)   
  [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)

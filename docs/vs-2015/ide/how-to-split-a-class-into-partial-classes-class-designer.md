@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 15c57de4a8f51283692b21bcaa148c86bb4deb2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775792"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Procedura: Dividere una classe in classi parziali (Progettazione classi)
+# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Procedura: dividere una classe in classi parziali (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile dividere la dichiarazione di una classe o struttura in più dichiarazioni usando la parola chiave `Partial` in Visual Basic o la parola chiave `partial` in Visual C#. Si può usare il numero di dichiarazioni parziali desiderato, in un numero qualsiasi di file di origine differenti oppure in un singolo file di origine. Tutte le dichiarazioni, tuttavia, devono trovarsi nello stesso assembly e nello stesso spazio dei nomi.  

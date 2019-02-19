@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778870"
 ---
 # <a name="markerseries-class"></a>Classe marker_series
@@ -35,14 +35,14 @@ class marker_series;
   
 ### <a name="public-constructors"></a>Costruttori pubblici  
   
-|nome|Description|  
+|nome|Descrizione|  
 |----------|-----------------|  
 |[Costruttore marker_series::marker_series](../profiling/marker-series-marker-series-constructor.md)|Inizializza una nuova istanza della classe `marker_series`.|  
 |[Distruttore marker_series::~marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.|  
   
 ### <a name="public-methods"></a>Metodi pubblici  
   
-|nome|Description|  
+|nome|Descrizione|  
 |----------|-----------------|  
 |[Metodo marker_series::is_enabled](../profiling/marker-series-is-enabled-method.md)|Determina se il provider è stato abilitato da una sessione.|  
 |[Metodo marker_series::write_alert](../profiling/marker-series-write-alert-method.md)|Scrive un avviso nel file di traccia del visualizzatore di concorrenza.|  

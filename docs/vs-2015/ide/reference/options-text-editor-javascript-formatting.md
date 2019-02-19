@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794410"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opzioni, Editor di testo, JavaScript, Formattazione
@@ -33,7 +33,7 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Opzione|Description|  
+|Opzione|Descrizione|  
 |------------|-----------------|  
 |**Formatta riga completata dopo INVIO**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto INVIO.|  
 |**Formatta istruzione completata dopo ;**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto punto e virgola.|  
@@ -45,7 +45,7 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Opzione|Description|  
+|Opzione|Descrizione|  
 |------------|-----------------|  
 |**Inserisci parentesi graffa aperta su nuova riga per le funzioni**|Quando questa opzione è selezionata, l'editor di codice sposta la parentesi graffa aperta associata a una funzione in una nuova riga.|  
 |**Inserisci parentesi graffa aperta su nuova riga per i blocchi di controllo**|Quando questa opzione è selezionata, l'editor di codice sposta in una nuova riga la parentesi graffa aperta associata a un blocco di controllo, ad esempio ai blocchi `if` e `while`.|  
@@ -55,7 +55,7 @@ Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impo
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Opzione|Description|  
+|Opzione|Descrizione|  
 |------------|-----------------|  
 |**Inserisci spazio dopo virgola di delimitazione**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo le virgole di delimitazione.|  
 |**Inserisci spazio dopo punto e virgola nell'istruzione 'for'**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo ogni punto e virgola nella prima riga di un ciclo `for`.|  

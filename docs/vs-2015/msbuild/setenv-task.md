@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c5066709002c815e2cdad549d424af549eb0bca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784422"
 ---
 # <a name="setenv-task"></a>Attività SetEnv
@@ -36,7 +36,7 @@ Imposta o elimina il valore di una variabile di ambiente specificata.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **SetEnv**.  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|  
 |**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|  
@@ -44,7 +44,7 @@ Imposta o elimina il valore di una variabile di ambiente specificata.
 |**Destinazione**|Parametro **String** facoltativo.<br /><br /> Specifica il percorso di archiviazione di una variabile di ambiente. Specificare "`User`" o "`Machine`".<br /><br /> Per altre informazioni, vedere "Enumerazione EnvironmentVariableTarget" sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**Valore**|Parametro **String** facoltativo.<br /><br /> Valore assegnato alla variabile di ambiente specificata dal parametro **Name**. Se **Value** è vuoto e la variabile esiste, la variabile viene eliminata. Se la variabile non esiste, non si verifica alcun errore anche se non è possibile eseguire l'operazione.<br /><br /> Per altre informazioni, vedere "Metodo Environment::SetEnvironmentVariable" sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)

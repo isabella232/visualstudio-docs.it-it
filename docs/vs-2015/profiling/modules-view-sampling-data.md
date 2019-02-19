@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784457"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
@@ -29,7 +29,7 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
   
  Se era in corso l'esecuzione della funzione quando sono stati raccolti i campioni, ovvero la funzione si trovava in cima allo stack di chiamate, le righe di codice sorgente e gli indirizzi delle istruzioni in esecuzione sono elencati sotto il nodo della funzione. Poiché i dati vengono raccolti per una riga di codice sorgente o per un puntatore all'istruzione durante l'esecuzione della riga o dell'istruzione, i valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  

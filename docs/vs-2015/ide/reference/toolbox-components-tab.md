@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775888"
 ---
 # <a name="toolbox-components-tab"></a>Casella degli strumenti, Scheda Componenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Consente di visualizzare i componenti che è possibile aggiungere alle finestre di progettazione di [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Oltre ai componenti [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclusi in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ad esempio i componenti <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, in questa scheda è possibile aggiungere componenti personalizzati o di terze parti. Per altre informazioni, vedere [Procedura: Organizzare le schede della casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+Consente di visualizzare i componenti che è possibile aggiungere alle finestre di progettazione di [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Oltre ai componenti [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclusi in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ad esempio i componenti <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, in questa scheda è possibile aggiungere componenti personalizzati o di terze parti. Per altre informazioni, vedere [Procedura: modificare le schede della Casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Per visualizzare questa scheda, scegliere **Casella degli strumenti** dal menu **Visualizza**. Nella **Casella degli strumenti** selezionare la scheda **Componenti**.  
   
@@ -42,7 +42,7 @@ Consente di visualizzare i componenti che è possibile aggiungere alle finestre 
  Crea un'istanza del componente <xref:System.Diagnostics.EventLog> che consente di interagire con i log di sistema e i log eventi personalizzati, ad esempio scrivendo eventi e leggendo dati. Per altre informazioni, vedere [Introduzione al componente EventLog](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
- Crea un'istanza del componente <xref:System.IO.FileSystemWatcher> che consente di monitorare le modifiche apportate a una directory o a un file a cui si ha accesso. Per altre informazioni, vedere [Procedura: Configurare le istanze del componente FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
+ Crea un'istanza del componente <xref:System.IO.FileSystemWatcher> che consente di monitorare le modifiche apportate a una directory o a un file a cui si ha accesso. Per altre informazioni, vedere [Procedura: configurare istanze del componente FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
   
  **HelpProvider**  
  Crea un'istanza del componente `System.Windows.Forms.HelpProvider` che offre informazioni della Guida, anche in finestre popup.  

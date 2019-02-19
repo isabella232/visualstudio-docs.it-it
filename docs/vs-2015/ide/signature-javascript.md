@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780317"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;signature&gt; (JavaScript)
@@ -45,7 +45,7 @@ Raggruppa un set di elementi correlati per una funzione o un metodo per fornire 
  `locid`  
  Facoltativo. L'identificatore per le informazioni di localizzazione sul campo. L'identificatore è un membro ID o corrisponde alla `name` valore in un bundle di messaggio definito dai metadati OpenAjax dell'attributo. Il tipo di identificatore dipende dal formato specificato nella [ \<loc >](../ide/loc-javascript.md) tag.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Usare uno `<signature>` descrizione della funzione nel file con estensione js oppure usare uno di overload per ogni elemento `<signature>` (elemento) per ogni ID membro esterno specificato.  
   
  Il `<signature>` elemento deve essere inserito nel corpo della funzione prima di qualsiasi istruzione. Quando si usa [ \<riepilogo >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), oppure [ \<restituisce >](../ide/returns-javascript.md) gli elementi con la `<signature>` elemento, inserire gli altri elementi all'interno di `<signature>` blocco.  
