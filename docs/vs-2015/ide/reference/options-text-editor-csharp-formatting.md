@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800768"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opzioni, Editor di testo, C#, Formattazione
@@ -47,7 +47,7 @@ Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di f
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Label|Description|  
+|Label|Descrizione|  
 |-----------|-----------------|  
 |**Formatta automaticamente istruzione completata dopo l'immissione di ;**|Quando questa opzione è selezionata, vengono formattate le istruzioni al completamento in base alle opzioni di formattazione selezionate per l'editor del codice. Deselezionare questa opzione se non si vuole modificare le istruzioni con l'editor di codice.|  
 |**Formatta automaticamente blocco completato dopo l'immissione di }**|Quando l'opzione è selezionata, i blocchi di codice vengono formattati in base alle opzioni di formattazione selezionate per l'editor di codice subito dopo il completamento del blocco. Deselezionare questa opzione se non si vuole modificare i blocchi con l'editor di codice.|  
@@ -56,7 +56,7 @@ Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di f
 ## <a name="preview-window"></a>Finestra di anteprima  
  I riquadri delle opzioni **Rientro**, **Nuove righe**, **Spaziatura** e **Ritorno a capo** visualizzano una finestra di anteprima. La finestra di anteprima illustra l'effetto di ogni opzione. Per usare la finestra di anteprima, selezionare un'opzione di formattazione. La finestra di anteprima illustra un esempio dell'opzione selezionata. Se si modifica questa impostazione, ad esempio si seleziona o deseleziona una casella di controllo, la finestra di anteprima viene aggiornata per visualizzare l'effetto della nuova impostazione.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Le opzioni di rientro nelle pagine **Tabulazioni** per ogni lingua solo determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme INVIO alla fine di una riga. Le opzioni di rientro in **Formattazione** si applicano quando il codice viene formattato automaticamente, ad esempio quando si inserisce codice nel file ed è selezionata l'opzione **Modifica rientro dopo operazione Incolla** o quando il blocco da formattare viene digitato manualmente.  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758581"
 ---
 # <a name="item-functions"></a>Funzioni degli elementi
@@ -55,7 +55,7 @@ A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in g
 ## <a name="intrinsic-item-functions"></a>Funzioni intrinseche degli elementi  
  Nella tabella seguente sono elencate le funzioni intrinseche disponibili per gli elementi.  
   
-|Funzione|Esempio|Description|  
+|Funzione|Esempio|Descrizione|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Restituisce il numero di elementi.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Restituisce l'equivalente di `Path.DirectoryName` per ogni elemento.|  

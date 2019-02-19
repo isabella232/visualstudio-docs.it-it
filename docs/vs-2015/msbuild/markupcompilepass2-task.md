@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54777092"
 ---
 # <a name="markupcompilepass2-task"></a>Attività MarkupCompilePass2
@@ -33,7 +33,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> esegue la co
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Parametro **Boolean** facoltativo.<br /><br /> Specifica se eseguire l'attività in un <xref:System.AppDomain> separato. Se il parametro restituisce **false** l'attività viene eseguita più rapidamente e nello stesso <xref:System.AppDomain> di [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]. Se il parametro restituisce **true** l'attività viene eseguita più lentamente e in un secondo <xref:System.AppDomain> isolato da [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)].|  
 |`AssembliesGeneratedDuringBuild`|Parametro **String[]** facoltativo.<br /><br /> Specifica i riferimenti ad assembly che vengono modificati durante il processo di compilazione. Ad esempio, una soluzione [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] può contenere un progetto che fa riferimento all'output compilato di un altro progetto. In questo caso, l'output compilato del secondo progetto può essere aggiunto a **AssembliesGeneratedDuringBuild**.<br /><br /> Nota: **AssembliesGeneratedDuringBuild** deve contenere riferimenti al set completo di assembly generati da una soluzione di compilazione.|  
@@ -48,7 +48,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> esegue la co
 |`RootNamespace`|Parametro **String** facoltativo.<br /><br /> Specifica lo spazio dei nomi radice per le classi all'interno del progetto. **RootNamespace** viene usato anche come spazio dei nomi predefinito di un file di codice gestito generato quando il file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] non include l'attributo `x:Class`.|  
 |`XAMLDebuggingInformation`|Parametro **Boolean** facoltativo.<br /><br /> Se **true**, le informazioni diagnostiche verranno generate e incluse nel file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] compilato per agevolare il debug.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Prima di eseguire **MarkupCompilePass2**, è necessario generare un assembly temporaneo che contenga i tipi usati dai file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] il cui passaggio di compilazione del markup è stato rinviato. L'assembly temporaneo viene generato mediante l'esecuzione dell'attività **GenerateTemporaryTargetAssembly**.  
   
  Al momento dell'esecuzione, a <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> viene specificato un riferimento all'assembly temporaneo generato. Questo consente la compilazione in formato binario dei file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] la cui compilazione era stata rinviata nel primo passaggio di compilazione del markup.  

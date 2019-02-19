@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 59605af2d0ebb7ed094602e9f300dc8dbc3b7ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799832"
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisiti (finestra di dialogo)
@@ -34,7 +34,7 @@ In questa finestra di dialogo vengono indicati i componenti dei prerequisiti ins
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |**Crea programma di installazione per installare componenti dei prerequisiti**|Nel programma di installazione dell'applicazione (Setup.exe) include i componenti dei prerequisiti che verranno installati prima dell'applicazione, in ordine di dipendenza. Questa opzione è selezionata per impostazione predefinita. Se l'opzione non è selezionata, non viene creato alcun programma Setup.exe.|  
 |**Scegliere i prerequisiti da installare**|Specifica se installare i componenti come [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], Crystal Reports e così via.<br /><br /> Ad esempio, selezionando la casella di controllo accanto a **SQL Server 2005 Express Edition SP2**, si specifica che il programma di installazione deve verificare se tale componente è già installato nel computer di destinazione e, in caso contrario, installarlo.<br /><br /> Per informazioni dettagliate su ciascun pacchetto di prerequisiti, vedere la tabella Informazioni sui prerequisiti più avanti in questo argomento.|  
@@ -46,7 +46,7 @@ In questa finestra di dialogo vengono indicati i componenti dei prerequisiti ins
 ## <a name="prerequisites-information"></a>Informazioni sui prerequisiti  
  I componenti dei prerequisiti che sono visualizzati nella finestra di dialogo **Prerequisiti** potrebbero differire da quelli presenti nell'elenco seguente. I pacchetti dei prerequisiti elencati nella **finestra di dialogo Prerequisiti** vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|Con questo pacchetto vengono installati gli elementi seguenti:<br /><br /> -   .NET Framework versioni 2.0, 3.0 e 3.5.<br />-   Supporto per tutte le versioni di .NET Framework nei sistemi operativi a 32 bit (x86) e a 64 bit (x64).<br />-   Language Pack per ciascuna versione di .NET Framework installata con il pacchetto.<br />-   Service Pack per .NET Framework 2.0 e 3.0.<br /><br /> .NET Framework 3.0 viene fornito con Windows Vista e .NET Framework 3.5 viene fornito con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. .NET Framework 3.5 è necessario per tutti i progetti Visual Basic e Visual C# che vengono compilati per i sistemi operativi a 32 bit e per i quali il framework di destinazione è impostato su **.NET Framework 3.5**, oltre che per i progetti Visual Basic e Visual C# compilati per i sistemi operativi a 64 bit. IA64 non è supportato. Si noti che i progetti Visual Basic e Visual C# vengono compilati per qualsiasi architettura della CPU per impostazione predefinita. Per altre informazioni, vedere [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Ridistribuzione di .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) e [Prerequisiti per la distribuzione di applicazioni a 64 bit](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Questo elemento è selezionato per impostazione predefinita.|  
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile è un sottoinsieme della versione completa di .NET Framework 3.5 SP1 destinata alle applicazioni client. Fornisce un sottoinsieme semplificato delle funzionalità di Windows Presentation Foundation (WPF), Windows Form, Windows Communication Foundation (WCF) e ClickOnce. In questo modo, è possibile rendere disponibili scenari di distribuzione rapidi per WPF, Windows Form, WCF e applicazioni console destinate a .NET Framework Client Profile. Per altre informazioni, vedere [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).|  

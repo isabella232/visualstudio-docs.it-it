@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771030"
 ---
 # <a name="vsinstr"></a>VSInstr
@@ -36,7 +36,7 @@ VSInstr [/U] filename [/options]
   
  Nella tabella seguente vengono descritte le opzioni dello strumento VSInstr:  
   
-|Opzioni|Description|  
+|Opzioni|Descrizione|  
 |-------------|-----------------|  
 |**Help** o **?**|Visualizza la Guida.|  
 |**U**|Scrive l'output di console reindirizzato come Unicode. Deve essere la prima opzione specificata.|  
@@ -47,7 +47,7 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|Elenca le funzioni nell'immagine specificata. Non viene eseguita alcuna strumentazione.|  
 |**ExcludeSmallFuncs**|Esclude dalla strumentazione le funzioni piccole, ovvero funzioni brevi che non effettuano alcuna chiamata di funzione. L'opzione **ExcludeSmallFuncs** riduce il sovraccarico di strumentazione, aumentando la velocità di strumentazione.<br /><br /> L'esclusione delle piccole funzioni riduce inoltre la dimensione del file con estensione vsp e il tempo necessario per l'analisi.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Inserisce un contrassegno del profilo (un identificatore usato per delimitare i dati nei report) che è possibile usare per identificare l'inizio o la fine di un intervallo di dati nel file di report con estensione vsp.<br /><br /> **Before** - Subito prima dell'ingresso nella funzione di destinazione.<br /><br /> **After** - Subito dopo l'uscita dalla funzione di destinazione.<br /><br /> **Top** - Subito dopo l'ingresso nella funzione di destinazione.<br /><br /> **Bottom** - Subito prima di ogni restituzione del controllo nella funzione di destinazione.<br /><br /> `funcname` - Nome della funzione di destinazione.<br /><br /> `Markid` - Numero intero positivo (long) da usare come identificatore del contrassegno del profilo.|  
-|**Coverage**|Esegue la strumentazione di tipo code coverage. Può essere che può essere utilizzato solo con le opzioni seguenti: **Verbose**, **OutputPath**, **Exclude** e **Logfile**.|  
+|**Coverage**|Esegue la strumentazione di tipo code coverage. Può essere usato solo con le seguenti opzioni: **Verbose**, **OutputPath**, **Exclude** e **Logfile**.|  
 |**Verbose**|L'opzione **Verbose** consente di visualizzare informazioni dettagliate sul processo di strumentazione.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Elimina tutti gli avvisi o avvisi specifici.<br /><br /> `Message Number` - Numero di avviso. Se `Message Number` viene omesso, vengono eliminati tutti gli avvisi.<br /><br /> Per altre informazioni, vedere [Avvisi di VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Specifica il livello di profilatura delle seguenti opzioni di controllo della raccolta dei dati di VSInstr:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** -Specifica le funzioni di controllo della raccolta dei dati a livello di thread. La profilatura viene avviata o arrestata solo per il thread corrente. Lo stato di profilatura degli altri thread non è interessato. Il valore predefinito è Thread.<br /><br /> **Process** -Specifica le funzioni di controllo della raccolta dei dati di profilatura a livello di processo. La profilatura viene avviata o arrestata per tutti i thread nel processo corrente. Lo stato di profilatura di altri processi non è interessato.<br /><br /> **Global** -Specifica le funzioni di controllo della raccolta dei dati (su diversi processi) a livello globale.<br /><br /> Se non si specifica il livello di profilatura, si verifica un errore.|  

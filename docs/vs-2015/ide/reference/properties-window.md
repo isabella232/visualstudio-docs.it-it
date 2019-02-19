@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753532"
 ---
 # <a name="properties-window"></a>Finestra Proprietà
@@ -61,7 +61,7 @@ Usare questa finestra per visualizzare e modificare in fase di progettazione le 
 > [!NOTE]
 >  Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando si attiva un modulo o una finestra di progettazione controlli nel contesto di un progetto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Quando si modificano i file XAML, gli eventi vengono visualizzati in una scheda separata della finestra Proprietà.  
   
- Messages  
+ Messaggi  
  Elenca tutti i messaggi di Windows. Consente di aggiungere o eliminare funzioni specifiche del gestore per i messaggi visualizzati per la classe selezionata.  
   
 > [!NOTE]

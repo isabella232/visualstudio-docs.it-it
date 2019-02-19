@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791708"
 ---
 # <a name="full-text-search-tips"></a>Suggerimenti per la ricerca full-text
@@ -32,7 +32,7 @@ Uno dei metodi più utili per l'individuazione delle informazioni nella Guida co
 ### <a name="general-guidelines"></a>Indicazioni generali  
  Nella tabella seguente sono elencate alcune regole di base e linee guida per lo sviluppo di query di ricerca nella Guida.  
   
-|Sintassi|Description|  
+|Sintassi|Descrizione|  
 |------------|-----------------|  
 |Distinzione fra maiuscole e minuscole|Le ricerche non distinguono tra maiuscole e minuscole. Sviluppare i criteri di ricerca usando indifferentemente caratteri maiuscoli o minuscoli. Ad esempio, "OLE" e "ole" restituiscono gli stessi risultati.|  
 |Combinazioni di caratteri|Non è possibile cercare solo singole lettere (a-z) o numeri (0-9). Se si tenta di cercare determinate parole riservate, come ad esempio "e", "da" e "con", queste verranno ignorate. Per altre informazioni, vedere "Parole ignorate nelle ricerche (parole non significative)" più avanti in questo argomento.|  
