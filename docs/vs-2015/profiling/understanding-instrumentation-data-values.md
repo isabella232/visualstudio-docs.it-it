@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54762908"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
@@ -100,4 +100,4 @@ Il metodo di profilatura *Strumentazione* di [!INCLUDE[vsprvs](../includes/vsprv
   
 ## <a name="see-also"></a>Vedere anche  
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   
- [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+ [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)

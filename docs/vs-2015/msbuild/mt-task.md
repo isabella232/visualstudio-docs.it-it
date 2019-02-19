@@ -26,10 +26,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805474"
 ---
 # <a name="mt-task"></a>Attività MT
@@ -72,7 +72,7 @@ Esegue il wrapping dello strumento manifesto Microsoft, mt.exe. Per altre inform
 |**UpdateFileHashesSearchPath**|Parametro `String` facoltativo.<br /><br /> Specifica il percorso di ricerca da usare quando si aggiornano gli hash dei file. Usare questo parametro con il parametro **UpdateFileHashesMT** dell'attività.<br /><br /> Per altre informazioni, vedere il parametro **UpdateFileHashes** in questa tabella.|  
 |**VerboseOutput**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, visualizza informazioni dettagliate sul debug.<br /><br /> Per altre informazioni, vedere l'opzione **/verbose** in "Mt.exe" sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)

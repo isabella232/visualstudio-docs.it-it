@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bf6f6b9dbd227dbdf28781fc9ac206ca1d8a91b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790484"
 ---
 # <a name="markupcompilepass1-task"></a>Attività MarkupCompilePass1
@@ -34,7 +34,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte i f
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`AllGeneratedFiles`|Parametro di output **ITaskItem[]** facoltativo.<br /><br /> Contiene un elenco completo dei file generati dall'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>.|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Parametro **Boolean** facoltativo.<br /><br /> Specifica se eseguire l'attività in un <xref:System.AppDomain> separato. Se il parametro restituisce **false** l'attività viene eseguita più rapidamente e nello stesso <xref:System.AppDomain> di [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]. Se il parametro restituisce **true** l'attività viene eseguita più lentamente e in un secondo <xref:System.AppDomain> isolato da [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)].|  
@@ -65,7 +65,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte i f
 |`UICulture`|Parametro **String** facoltativo.<br /><br /> Specifica l'assembly satellite per le impostazioni cultura dell'interfaccia utente in cui vengono incorporati i file in formato binario [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] generati. Se **UICulture** non è impostato, i file in formato binario [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] generati verranno incorporati nell'assembly principale.|  
 |`XAMLDebuggingInformation`|Parametro **Boolean** facoltativo.<br /><br /> Se **true**, le informazioni diagnostiche verranno generate e incluse nel file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] compilato per agevolare il debug.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> in genere compila [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] in formato binario e genera file di codice. Se un file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] contiene riferimenti a tipi definiti nello stesso progetto, la relativa compilazione in formato binario verrà rinviata da **MarkupCompilePass1** a un secondo passaggio di compilazione del markup (**MarkupCompilePass2**). La compilazione di tali file deve essere rinviata poiché è necessario attendere la compilazione dei tipi definiti localmente a cui si fa riferimento. Se tuttavia un file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ha un attributo `x:Class`, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> genera il file di codice specifico della lingua necessario.  
   
  Un file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] è localizzabile se contiene elementi che usano l'attributo `x:Uid`:  

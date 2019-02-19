@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787076"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- È anche possibile trascinare solo la classe B sul diagramma classi, fare clic col pulsante destro del mouse sulla forma classe relativa a B e quindi fare clic su **Mostra classi base** per visualizzare la relativa classe di base, Un   
+ È anche possibile trascinare solo la classe B sul diagramma classi, fare clic col pulsante destro del mouse sulla forma classe relativa a B e quindi fare clic su **Mostra classi base** per visualizzare la relativa classe di base, ovvero A.  
   
 ## <a name="multiple-inheritance"></a>Ereditarietà multipla  
  Progettazione classi supporta la visualizzazione di relazioni di ereditarietà da classi multiple. L'*ereditarietà multipla* viene usata quando una classe derivata presenta attributi di più di una classe di base. Di seguito è riportato un esempio di ereditarietà multipla:  
