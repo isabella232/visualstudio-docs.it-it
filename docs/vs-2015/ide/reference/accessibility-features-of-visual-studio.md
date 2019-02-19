@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778513"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
@@ -48,7 +48,7 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 
 -   [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Vedere anche
  [Prodotti e servizi Microsoft per l'accessibilità](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

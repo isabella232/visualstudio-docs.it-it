@@ -11,10 +11,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764848"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
@@ -22,7 +22,7 @@ ms.locfileid: "54764848"
 
 Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e la compilazione di un progetto. Questo argomento spiega come iniziare a usare il set di base delle funzionalità dell'interfaccia utente di debug.
 
- Nota: I collegamenti a funzionalità più avanzate e ad argomenti per specifiche piattaforme o funzionalità sono disponibili nella parte inferiore della pagina.
+ Nota: i collegamenti a funzionalità più avanzate e ad argomenti per specifiche piattaforme o funzionalità sono disponibili nella parte inferiore della pagina.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Il codice non funziona. Come si risolve il problema?
  Ora che si è acquisita familiarità con l'editor ed è stato creato il codice, è possibile iniziare il debug del codice. In Visual Studio 2015, come per la maggior parte degli IDE, il debug viene eseguito in due fasi: la compilazione del codice per rilevare e risolvere gli errori relativi al progetto e al compilatore e l'esecuzione del codice nell'ambiente per rilevare e risolvere gli errori dinamici e di runtime.
@@ -44,7 +44,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
 
  Per iniziare, usare semplicemente **Debug** e **x86** rispettivamente come configurazione e piattaforma della build. Al termine dell'operazione di codifica e debug, modificare la configurazione su **Release** e impostare una piattaforma specifica come destinazione. Le versioni precedenti di Visual Studio specificavano una piattaforma predefinita **AnyCPU** per i progetti di codice .NET.
 
- Nota: Quando si compila il progetto, i valori di configurazione e piattaforma vengono usati anche per determinare il percorso della directory del progetto da creare per archiviare il file eseguibile. Solitamente, il percorso è **\<percorso-del-progetto>\\<nome-progetto>\\<configurazione\>\\<piattaforma\>**. Ad esempio, un progetto con una configurazione di `Debug` e una piattaforma `x86` si troverebbe in `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Questa funzionalità è utile se si usano strumenti o script personalizzati per gestire questi file eseguibili compilati.
+ Nota: quando si compila il progetto, i valori di configurazione e piattaforma vengono usati anche per determinare il percorso della directory del progetto da creare per archiviare il file eseguibile, Solitamente, il percorso è **\<percorso-del-progetto>\\<nome-progetto>\\<configurazione\>\\<piattaforma\>**. Ad esempio, un progetto con una configurazione di `Debug` e una piattaforma `x86` si troverebbe in `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Questa funzionalità è utile se si usano strumenti o script personalizzati per gestire questi file eseguibili compilati.
 
 ### <a name="building-your-code"></a>Compilazione del codice
  Dopo aver configurato la compilazione, è possibile passare alla compilazione effettiva del progetto. Il modo più semplice è premere F7, ma è anche possibile avviare la compilazione selezionando **Compila->Compila soluzione** dal menu principale.

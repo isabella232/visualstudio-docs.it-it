@@ -12,20 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec1a46b619eecc08e08c74535430f9a0d7bfc3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957054"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335298"
 ---
 # <a name="project-property-user-interface"></a>Interfaccia utente delle proprietà del progetto
+
 Un sottotipo di progetto è possibile usare gli elementi nel progetto **pagine delle proprietà** nella finestra di dialogo come vengono forniti dal progetto di base, nascondere o rendere intere pagine e controlli di sola lettura, come fornito o aggiungere pagine specifici del sottotipo di progetto per il **Pagine delle proprietà** nella finestra di dialogo.
 
 ## <a name="extending-the-project-property-dialog-box"></a>Estendere la finestra di dialogo delle proprietà del progetto
- Un sottotipo di progetto implementa estensioni di automazione e visualizzare oggetti configurazione di progetto. Implementare questi dispositivi Extender di <xref:EnvDTE.IFilterProperties> interfaccia apportare determinate proprietà nascosta o di sola lettura. Il **pagine delle proprietà** finestra di dialogo del progetto di base, implementato dal progetto di base, rispetta il filtro eseguite da dispositivi Extender di automazione.
 
- Il processo di estensione una **proprietà del progetto** nella finestra di dialogo viene indicata di seguito:
+Un sottotipo di progetto implementa estensioni di automazione e visualizzare oggetti configurazione di progetto. Implementare questi dispositivi Extender di <xref:EnvDTE.IFilterProperties> interfaccia apportare determinate proprietà nascosta o di sola lettura. Il **pagine delle proprietà** finestra di dialogo del progetto di base, implementato dal progetto di base, rispetta il filtro eseguite da dispositivi Extender di automazione.
+
+Il processo di estensione una **proprietà del progetto** nella finestra di dialogo viene indicata di seguito:
 
 -   Il progetto di base recupera le estensioni dal sottotipo del progetto mediante l'implementazione di <xref:EnvDTE80.IInternalExtenderProvider> interfaccia. L'esplorazione, automazione dei progetti e oggetti di esplorazione di configurazione di progetto del progetto di base tutti i implementano questa interfaccia.
 
@@ -39,11 +41,11 @@ Un sottotipo di progetto è possibile usare gli elementi nel progetto **pagine d
 
 -   Un sottotipo di progetto può determinare il CATID appropriato per gli oggetti estensibili varie del progetto di base in fase di esecuzione tramite il recupero dei seguenti <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valori:
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Per determinare il CATID per l'ambito del progetto, il sottotipo di progetto recupera proprietà sopra menzionate per [VSITEMID. Radice](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) dal `VSITEMID typedef`. Un sottotipo di progetto anche possibile controllare quali **pagine delle proprietà** pagine delle finestre di dialogo vengono visualizzati per il progetto dipendente sia configurazione indipendenti. Alcuni sottotipi di progetto potrebbe essere necessario rimuovere le pagine predefinite e aggiungere pagine specifiche sottotipo di progetto. Per abilitare questa opzione, il progetto client gestito chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metodo per le proprietà seguenti:
 

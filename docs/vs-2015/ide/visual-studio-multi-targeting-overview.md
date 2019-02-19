@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768880"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Cenni preliminari sul multitargeting di Visual Studio
@@ -60,7 +60,7 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
 >  La definizione della destinazione del framework non garantisce che l'applicazione verrà eseguita correttamente. È necessario testare l'applicazione per assicurarsi che venga eseguita la versione di destinazione. Non è possibile usare come destinazione versioni di framework precedenti a .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Selezione di una versione del framework di destinazione
- Quando si crea un progetto, selezionare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco dei modelli di progetto disponibili viene filtrato in base alla selezione. In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Quando si crea un progetto, selezionare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco dei modelli di progetto disponibili viene filtrato in base alla selezione. In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  Nelle edizioni Express di Visual Studio, non è possibile impostare il framework di destinazione nella finestra di dialogo **Nuovo progetto**.

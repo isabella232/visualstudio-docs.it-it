@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834586"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Visualizzazione Puntatore all'istruzione: dati sui conflitti
@@ -25,7 +25,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
   
  La tabella seguente illustra i valori delle colonne nella visualizzazione Puntatore all'istruzione.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Tempo di blocco in questa funzione.|  
 |**% tempo blocco esclusivo**|Percentuale di tempo di blocco durante l'esecuzione dell'istruzione.|  
@@ -46,7 +46,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
+ [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
  [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)   
  [Visualizzazione Puntatore all'istruzione - Campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

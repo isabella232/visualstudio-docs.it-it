@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f6e1bf48d80362a4f51e10583c5827eff8fe932
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758319"
 ---
 # <a name="copy-task"></a>Attività Copy
@@ -38,15 +38,15 @@ Copia i file in un nuovo percorso del file system.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`CopiedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi copiati correttamente.|  
 |`DestinationFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|  
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica la directory in cui si vogliono copiare i file. Deve trattarsi di una directory, non di un file. Se la directory non esiste, viene creata automaticamente.|  
 |`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Sovrascrivi file anche se sono contrassegnati come file di sola lettura|  
-|`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** la ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|  
+|`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** La ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|  
 |`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo tra eventuali nuovi tentativi necessari. Imposta come valore predefinito l'argomento RetryDelayMillisecondsDefault, che viene passato al costruttore CopyTask.|  
-|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. **Nota:**  se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|  
+|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. **Nota:** Se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|  
 |`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|  
 |`UseHardlinksIfPossible`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono creati dei collegamenti reali per i file copiati invece di copiare i file.|  
   
@@ -69,7 +69,7 @@ Copia i file in un nuovo percorso del file system.
   
 -   `Copy.RemovingReadOnlyAttribute`  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.  
   
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  

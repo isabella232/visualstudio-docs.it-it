@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b93a2b4dcc541f32c16766da0dd9dd19a4fdfe0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54759756"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;deprecated&gt; (JavaScript)
@@ -40,7 +40,7 @@ Specifica una funzione o un metodo deprecato.
  `description`  
  Facoltativo. Descrizione della funzione o metodo che verrà deprecato.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Gli elementi utilizzati per annotare le funzioni, tra cui `<deprecated>`, deve essere inserito nel corpo della funzione prima di qualsiasi istruzione. Quando si contrassegna una funzione come deprecati, si consiglia di sostituire relativi [ \<riepilogo >](../ide/summary-javascript.md) elemento con la `<deprecated>` elemento.  
   
 ## <a name="example"></a>Esempio  

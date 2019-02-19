@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785687"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
@@ -79,13 +79,13 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Nelle caselle blu vengono forniti suggerimenti per risolvere gli errori nel codice.
 
-     Figura 1: Errori di Smart tag
+     Figura 1: errori di smart tag
 
      ![Suggerimenti Smart Tag errori](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      Nelle caselle rosse vengono forniti suggerimenti per effettuare il refactoring del codice.
 
-     Figura 2: Smart tag di refactoring
+     Figura 2: refactoring degli smart tag
 
      ![Suggerimenti Smart Tag errori](../ide/media/productivity-redsmarttags.png "Productivity_BlueSmartTags")
 
@@ -115,7 +115,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
 -   **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella [Avvio veloce, Ambiente, finestra di dialogo Opzioni](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave per gli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
 
-     Figura 3: Elenco di risultati di avvio rapidi per `new project`
+     Figura 3: elenco risultati di Avvio veloce per `new project`
 
      ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -151,11 +151,11 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Per bloccare un file, scegliere la scheda del file e quindi scegliere il pulsante **Attiva/disattiva stato di blocco**.
 
--   **Spostamento di documenti e finestre in altri monitor**. Se si utilizza più di un monitor durante lo sviluppo delle applicazioni, è possibile gestire più facilmente le parti dell'applicazione spostando i file aperti nell'editor in un altro monitor. È anche possibile spostare le finestre degli strumenti, come le finestre del debugger, in un altro monitor e ancorare le finestre degli strumenti e dei documenti per creare raggruppamenti. Per altre informazioni, vedere [Procedura: Disporre e ancorare le finestre](../misc/how-to-arrange-and-dock-windows.md).
+-   **Spostamento di documenti e finestre in altri monitor**. Se si utilizza più di un monitor durante lo sviluppo delle applicazioni, è possibile gestire più facilmente le parti dell'applicazione spostando i file aperti nell'editor in un altro monitor. È anche possibile spostare le finestre degli strumenti, come le finestre del debugger, in un altro monitor e ancorare le finestre degli strumenti e dei documenti per creare raggruppamenti. Per altre informazioni, vedere [How to: Arrange and Dock Windows](../misc/how-to-arrange-and-dock-windows.md) (Procedura: Disporre e ancorare le finestre).
 
      È anche possibile gestire i file più facilmente creando un'altra istanza di **Esplora soluzioni** e spostandola in un altro monitor. Per creare un'altra istanza di **Esplora soluzioni**, aprire un menu di scelta rapida in **Esplora soluzioni** e quindi scegliere **Nuova visualizzazione Esplora soluzioni**.
 
--   **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore utilizzato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+-   **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore utilizzato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [How to: Change Fonts and Colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Procedura: Modificare i tipi di carattere e i colori) e [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) (Procedura: Modificare i tipi di carattere e i colori nell'editor).
 
 ## <a name="see-also"></a>Vedere anche
- [Predefiniti di tasti di scelta rapida per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [come: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [procedura dettagliata: Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
+ [Predefiniti di tasti di scelta rapida per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [procedura: personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [procedura dettagliata: creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [suggerimenti sull'accessibilità e Suggerimenti](../ide/reference/accessibility-tips-and-tricks.md)

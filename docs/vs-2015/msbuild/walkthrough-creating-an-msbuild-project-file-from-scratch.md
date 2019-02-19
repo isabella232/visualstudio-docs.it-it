@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769432"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creazione da zero di un file di progetto MSBuild
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -402,7 +402,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[csprcs](../includes/csprcs-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -442,7 +442,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -479,7 +479,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 ```  
   
 ## <a name="whats-next"></a>Argomenti successivi  
- Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per imparare a usare Visual Studio per creare, modificare, compilare e verificare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Vedere anche  
 [Panoramica di MSBuild](msbuild.md)  

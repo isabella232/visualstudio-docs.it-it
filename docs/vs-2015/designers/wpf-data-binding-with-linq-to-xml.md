@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 47040aab2969f2480db8a35d1740babdf3093666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769507"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>data binding WPF con LINQ to XML
@@ -23,7 +23,7 @@ Contenuto della sezione vengono fornite informazioni sull'utilizzo di LINQ to XM
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Argomento|Description|  
+|Argomento|Descrizione|  
 |-----------|-----------------|  
 |[Panoramica dei data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|Vengono presentate le funzionalità di associazione dati dinamiche disponibili nello spazio dei nomi <xref:System.Xml.Linq> e viene descritto come usare queste funzionalità come origine dati per i componenti dell'interfaccia utente in WPF.|  
 |[Proprietà dinamiche in LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)|Vengono fornite informazioni di riferimento sulle proprietà dinamiche esposte dalle classi <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement>.|  

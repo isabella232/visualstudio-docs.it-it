@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979647"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335498"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Accedere alla visualizzazione di testo usando l'API legacy
 Una visualizzazione di testo è una presentazione del testo archiviato in un buffer di testo. È possibile accedere alla visualizzazione di testo con l'API legacy, come illustrato nella sezione seguente.
@@ -23,7 +23,7 @@ Una visualizzazione di testo è una presentazione del testo archiviato in un buf
 ## <a name="text-view-object"></a>Oggetto visualizzazione di testo
  Ogni visualizzazione è associato un proprio buffer di testo e la visualizzazione è una finestra sui dati nel buffer. Il diagramma seguente mostra le interfacce principali dell'oggetto di visualizzazione del testo, che è rappresentato dal <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Visualizzazione oggetto testo di Visual Studio](../extensibility/media/vstextview.gif "oggetto vstextview") oggetto visualizzazione di testo
+ ![Oggetto TextView di Visual Studio](../extensibility/media/vstextview.gif)
 
  La vista è un modo per presentare il testo nel buffer. Include funzionalità quali ritorno a capo automatico e la modalità struttura, in modo che ciò che viene visualizzato nella vista non è una rappresentazione esatta del testo nel buffer.
 

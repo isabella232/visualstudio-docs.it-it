@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758648"
 ---
 # <a name="al-assembly-linker-task"></a>Attività AL (Assembly Linker)
@@ -35,7 +35,7 @@ L'attività AL esegue il wrapping di AL.exe, uno strumento distribuito con [!INC
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `AL` .  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`AlgorithmID`|Parametro `String` facoltativo.<br /><br /> Specifica un algoritmo per generare un hash per tutti i file di un assembly su più file, ad eccezione del file contenente il manifesto dell'assembly. Per altre informazioni, vedere la documentazione relativa all'opzione `/algid` di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`BaseAddress`|Parametro `String` facoltativo.<br /><br /> Specifica l'indirizzo in corrispondenza del quale caricare una DLL nel computer dell'utente in fase di esecuzione. Il caricamento delle applicazioni risulta più veloce se si specifica l'indirizzo di base delle DLL, anziché lasciare al sistema operativo il compito di rilocare le DLL nello spazio di processo. Questo parametro corrisponde all'opzione /base [address] di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
@@ -72,7 +72,7 @@ L'attività AL esegue il wrapping di AL.exe, uno strumento distribuito con [!INC
 |`Win32Icon`|Parametro `String` facoltativo.<br /><br /> Inserisce nell'assembly un file icona (.ico). Il file .ico determina l'aspetto desiderato del file di output in Esplora File. Questo parametro corrisponde all'opzione `/win32icon` di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Win32Resource`|Parametro `String` facoltativo.<br /><br /> Inserisce nel file di output una risorsa Win32 (file .res). Per altre informazioni, vedere la documentazione relativa all'opzione `/win32res` di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/tooltaskextension-base-class.md) (Classe di base TaskExtension).  
   
 ## <a name="example"></a>Esempio  

@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752966"
 ---
 # <a name="html-ui-responsiveness"></a>Velocità di risposta dell'interfaccia utente HTML
@@ -74,7 +74,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 6.  Per interrompere la profilatura dell'app e visualizzare i dati raccolti dal profiler, scegli **Arresta raccolta**.  
   
 ##  <a name="IsolateAnIssue"></a> Isolare un problema  
- Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni usando un'app di test delle prestazioni di esempio, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni mediante un'app di esempio per la verifica delle prestazioni, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Isolare un problema di risposta dell'interfaccia utente  
  Questi passaggi forniscono un flusso di lavoro consigliato che può aiutarti a usare il profiler della velocità di risposta dell'interfaccia utente in modo più efficace:  
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
 -   Un evento di navigazione, che si verifica quando passi a una pagina diversa. Una descrizione comando per l'evento mostra l'URL della pagina di destinazione.  
   
 ###  <a name="CPUUtilization"></a> Visualizzare l'utilizzo della CPU  
- Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering** e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#ProfilerEvents) più avanti in questo argomento.  
+ Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering**e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#ProfilerEvents) più avanti in questo argomento.  
   
  Il grafico dell'utilizzo della CPU mostra la quantità di tempo trascorso in tutti i thread dell'app, combinando i valori di utilizzo per una o più CPU in un singolo valore percentuale. Il valore di utilizzo della CPU può superare il 100% quando sono in uso più CPU.  
   

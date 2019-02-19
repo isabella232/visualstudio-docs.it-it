@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758470"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
@@ -36,7 +36,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
   
 ## <a name="list-of-common-properties-and-parameters"></a>Elenco delle proprietà e dei parametri comuni  
   
-|Nome della proprietà o del parametro|Description|  
+|Nome della proprietà o del parametro|Descrizione|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|Specifica le cartelle aggiuntive nelle quali i compilatori devono cercare gli assembly di riferimento.|  
 |AddModules|Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questa proprietà è equivalente all'opzione del compilatore `/addModules`.|  

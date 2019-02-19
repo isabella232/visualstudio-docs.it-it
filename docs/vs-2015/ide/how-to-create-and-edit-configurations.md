@@ -20,13 +20,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767331"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Procedura: Creare e modificare le configurazioni
+# <a name="how-to-create-and-edit-configurations"></a>Procedura: creare e modificare le configurazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per una soluzione è possibile creare diverse configurazioni della build. È possibile, ad esempio, configurare una compilazione di debug che i tester possono usare per trovare e correggere problemi. È anche possibile configurare tipi diversi di compilazioni da distribuire a clienti diversi.  
@@ -126,4 +126,4 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
 ## <a name="see-also"></a>Vedere anche  
  [Understanding Build Configurations](../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  
  [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [(NIB) Procedura: Modificare le proprietà del progetto e le impostazioni di configurazione](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
