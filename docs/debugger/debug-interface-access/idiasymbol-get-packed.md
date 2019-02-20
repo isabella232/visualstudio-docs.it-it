@@ -40,7 +40,7 @@ HRESULT get_packed ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Compressi significa che tutti i membri del tipo in questione vengono posizionati come vicini possibili, senza spazi intermedi in linea con i limiti di memoria.  
   
 ## <a name="see-also"></a>Vedere anche  

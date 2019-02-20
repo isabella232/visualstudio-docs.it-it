@@ -1,25 +1,20 @@
 ---
-title: 'Passaggio 4: creare il layout del form con un controllo TableLayoutPanel | Microsoft Docs'
-ms.custom: ''
+title: 'Passaggio 4: Creare il layout del form con un controllo TableLayoutPanel | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763271"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: creare il layout del form con un controllo TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ Finestra Proprietà con il controllo TableLayoutPanel
      ![Finestra Proprietà con Fill selezionato](../ide/media/express-docktable.png "Express_DockTable")  
 Finestra Proprietà con Fill selezionato  
   
-     Il termine *ancoraggio* in Visual Studio indica l'associazione di una finestra un'altra finestra o area nell'IDE. Ad esempio, la finestra proprietà può essere non ancorata, vale a dire, scollegati e mobile all'interno di Visual Studio: o può essere ancorata a **Esplora soluzioni**.  
+     Il termine *ancoraggio* in Visual Studio indica l'associazione di una finestra un'altra finestra o area nell'IDE. La finestra Proprietà può essere ad esempio non ancorata, vale a dire non è collegata ed è mobile all'interno di Visual Studio, oppure può essere ancorata a **Esplora soluzioni**.  
   
 7.  Dopo aver impostato la proprietà **Dock** di TableLayoutPanel su **Fill**, il pannello riempie l'intero form. Se si ridimensiona nuovamente il form, TableLayoutPanel resta ancorato e viene ridimensionato correttamente.  
   
@@ -98,6 +93,3 @@ Form1 con TableLayoutPanel ridimensionato
 -   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md).  
   
 -   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: impostare le proprietà del form](../ide/step-3-set-your-form-properties.md).
-
-
-

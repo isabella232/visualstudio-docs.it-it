@@ -1,14 +1,9 @@
 ---
-title: Visual Studio Administrator Guide | Microsoft Docs
-ms.custom: ''
+title: Guida dell'amministratore di Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,20 +12,20 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722819"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834877"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di amministratore di Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-È possibile distribuire Visual Studio 2015 in una rete purché ogni computer di destinazione soddisfi le [requisiti di installazione minimi](http://www.microsoft.com/visualstudio/eng/products/2013-editions). È possibile creare una condivisione di rete eseguendo il file di installazione con l'opzione /layout (come descritto nel [creare un'installazione Offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) pagina) e quindi copiarla dal computer locale alla condivisione di rete. Se si usa un'immagine ISO, è possibile montare l'immagine ISO e condividerla o copiarla in una condivisione di rete.  
+È possibile distribuire Visual Studio 2015 in una rete purché ogni computer di destinazione soddisfi le [requisiti di installazione minimi](http://www.microsoft.com/visualstudio/eng/products/2013-editions). È possibile creare una condivisione di rete eseguendo il file di installazione con l'opzione /layout, come descritto nella pagina [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md), quindi copiarla dal computer locale alla condivisione di rete. Se si usa un'immagine ISO, è possibile montare l'immagine ISO e condividerla o copiarla in una condivisione di rete.  
   
  Si noti che le installazioni da una condivisione di rete "ricordano" la posizione di origine da cui provengono. Ciò significa che per il ripristino di un computer client potrebbe essere necessario tornare alla condivisione di rete client da cui è stato installato in origine il client. Scegliere con attenzione il percorso di rete in modo che si allinei alla durata di esecuzione dei client di Visual Studio 2015 prevista all'interno dell'organizzazione.  
   
@@ -40,7 +35,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di 
 ## <a name="avoiding-reboots"></a>Evitare i riavvii  
  È possibile ridurre i riavvii assicurandosi di soddisfare i requisiti appropriati di Visual Studio prima di distribuire Visual Studio. Per .NET Framework, si potrebbe essere necessario riavviare i computer che eseguono Windows 8 se in essi viene distribuito Visual Studio 2015 senza prima aver installato .NET Framework 4.6.  
   
- Per l'emulazione di dispositivi Windows e Android può essere necessario riavviare i computer se la funzionalità Hyper-V di Windows non è già attivata. Per lo sviluppo Web può essere necessario riavviare i computer se la funzionalità Server Web di Windows non è già attivata. Per lo sviluppo di Office può essere necessario riavviare i computer se la funzionalità Windows Identify Foundation di Windows non è già attivata. riavviare i computer se la funzionalità Server Web di Windows non è già attivata. Per lo sviluppo di Office può essere necessario riavviare i computer se la funzionalità Windows Identity Foundation di Windows non è già attivata. Per altre informazioni su come automatizzare il rilevamento e l'installazione delle funzionalità di Windows, vedere la pagina relativa all' [installazione di un ruolo del server su un server che esegue un'installazione Server Core di Windows Server 2008 R2](https://technet.microsoft.com/library/ee441260(v=ws.10).aspx).  
+ Per l'emulazione di dispositivi Windows e Android può essere necessario riavviare i computer se la funzionalità Hyper-V di Windows non è già attivata. Per lo sviluppo Web può essere necessario riavviare i computer se la funzionalità Server Web di Windows non è già attivata. Per lo sviluppo di Office può essere necessario riavviare i computer se la funzionalità Windows Identity Foundation di Windows non è già attivata. riavviare i computer se la funzionalità Server Web di Windows non è già attivata. Per lo sviluppo di Office può essere necessario riavviare i computer se la funzionalità Windows Identity Foundation di Windows non è già attivata. Per altre informazioni su come automatizzare il rilevamento e l'installazione delle funzionalità di Windows, vedere la pagina relativa all' [installazione di un ruolo del server su un server che esegue un'installazione Server Core di Windows Server 2008 R2](https://technet.microsoft.com/library/ee441260(v=ws.10).aspx).  
   
 ## <a name="error-return-codes"></a>Codici di errore restituiti  
  La tabella seguente riporta codici di errore importanti. È possibile usare questi codici di errore nell'automazione per decidere se è necessario un riavvio e se l'installazione è riuscita. Se si riceve un codice di errore, prendere in considerazione la risoluzione dei problemi nel [installazione di Visual Studio](../install/install-visual-studio-2015.md) pagina.  

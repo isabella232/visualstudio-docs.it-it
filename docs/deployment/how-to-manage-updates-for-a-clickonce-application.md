@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 591f69ddc1ac163858c3d3a2b2ce8721c27e16b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955908"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono cercare gli aggiornamenti automaticamente o a livello di codice. Gli sviluppatori, è necessario un numero elevato di flessibilità nello specificare come e quando vengono eseguiti controlli di aggiornamento, se gli aggiornamenti sono obbligatori e in cui controllare la disponibilità di aggiornamenti.  
@@ -101,7 +101,7 @@ ms.locfileid: "53945899"
   
 5.  Nel **percorso di aggiornamento** immettere il percorso di aggiornamento con un URL completo, utilizzando il formato *http://Hostname/ApplicationName*, o un percorso UNC nel formato  *\\\Server\ ApplicationName*, oppure fare clic sui **Sfoglia** per cercare il percorso di aggiornamento. Il percorso di aggiornamento è in cui l'applicazione avrà un aspetto di una versione aggiornata di se stesso.  
   
-6.  Creare un pulsante, voce di menu o un altro elemento dell'interfaccia utente in un Form Windows che gli utenti selezioneranno per cercare gli aggiornamenti. Dal gestore eventi dell'elemento, chiamare un metodo per verificare e installare gli aggiornamenti. È possibile trovare un esempio di Visual Basic e Visual C# per tale metodo nel codice [procedura: Controllo programmatico degli aggiornamenti delle applicazioni attraverso l'API per la distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)  
+6.  Creare un pulsante, voce di menu o un altro elemento dell'interfaccia utente in un Form Windows che gli utenti selezioneranno per cercare gli aggiornamenti. Dal gestore eventi dell'elemento, chiamare un metodo per verificare e installare gli aggiornamenti. È possibile trovare un esempio di Visual Basic e Visual C# per tale metodo nel codice [procedura: verificare la presenza di aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Compilare l'applicazione.  
   
@@ -110,5 +110,5 @@ ms.locfileid: "53945899"
  [Finestra di dialogo Aggiornamenti applicazione](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Pubblicazione ClickOnce aplications](../deployment/publishing-clickonce-applications.md)   
- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Procedura: Controllo programmatico degli aggiornamenti delle applicazioni attraverso l'API per la distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Procedura: Pubblicare un'applicazione ClickOnce tramite la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Procedura: Controllare gli aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

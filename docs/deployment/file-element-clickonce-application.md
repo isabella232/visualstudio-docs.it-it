@@ -182,7 +182,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="dsigdigestvalue"></a>dsig:  
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
 
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questo elemento identifica tutti gli i file che costituiscono l'applicazione e, in particolare, i valori hash per la verifica dei file. Questo elemento può includere anche i dati sull'isolamento modello COM (Component Object) associati al file. Se viene modificato un file, file manifesto dell'applicazione deve inoltre essere aggiornato per riflettere la modifica.  
 
 ## <a name="example"></a>Esempio  

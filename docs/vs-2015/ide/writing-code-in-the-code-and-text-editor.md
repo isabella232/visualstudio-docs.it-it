@@ -1,14 +1,9 @@
 ---
 title: Scrittura di codice nell'Editor di testo e del codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794241"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
  ![Pulsanti di navigazione per spostarsi avanti e indietro](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping è possibile visualizzare l'anteprima del codice quando si sposta il cursore verso l'alto e verso il basso nella barra di scorrimento. Per altre informazioni, vedere [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping, è possibile visualizzare l'anteprima del codice quando il cursore si sposta su e giù la barra di scorrimento, per altre informazioni, vedere [come: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
  I comandi seguenti sono metodi di spostamento specifici per il codice:  
 
 |||  
 |-|-|  
-|Vai a \<numero di riga>|(**Modifica/Vai a** o CTRL + G): spostarsi a uno specifico numero di riga nel documento attivo.|  
-|Passa a|(**Modifica/Passa a** o CTRL + ,): trova un simbolo o un file nella soluzione attiva. Consente di ottenere un buon numero di risultati corrispondenti da una query. È possibile cercare parole chiave contenute in un simbolo usando la convenzione Camel e i caratteri di sottolineatura per dividere il simbolo in parole chiave.|  
+|Vai a \<numero di riga>|(**Modifica/Vai a** o CTRL + G): Spostare in un numero di riga specifico nel documento attivo.|  
+|Passa a|(**Modifica/passa a** o CTRL +,): Trova un simbolo o del file della soluzione attiva. Consente di ottenere un buon numero di risultati corrispondenti da una query. È possibile cercare parole chiave contenute in un simbolo usando la convenzione Camel e i caratteri di sottolineatura per dividere il simbolo in parole chiave.|  
 |Trova tutti i riferimenti|(Menu di scelta rapida): trova tutti i riferimenti all'elemento selezionato nella soluzione|  
-|Vai a definizione|(Menu di scelta rapida o F12): trova la definizione dell'elemento selezionato.|  
-|Visualizza definizione|(Menu di scelta rapida o Alt+F12): trova la definizione dell'elemento selezionato e la visualizza in una finestra popup. Per altre informazioni, vedere [Procedura: Visualizzare e modificare il codice utilizzando la finestra Visualizza definizione (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Vai a definizione|(menu di scelta rapida o F12): Trova la definizione dell'elemento selezionato.|  
+|Visualizza definizione|(menu di scelta rapida o ALT+F12): Trova la definizione dell'elemento selezionato e lo visualizza in una finestra popup. Per altre informazioni, vedere [Procedura: Visualizzare e modificare il codice utilizzando la finestra Visualizza definizione (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Metodo successivo, Metodo precedente|(**Modifica/Metodo successivo, Metodo precedente**) Nei file di codice di Visual Basic, usare questi comandi per spostare il punto di inserimento in metodi diversi.|  
 |Evidenziazione di riferimenti|Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per spostarsi al simbolo evidenziato successivo o precedente, premere CTRL+MAIUSC+ freccia GIÙ o CTRL+MAIUSC+freccia SU. È possibile modificare il colore di evidenziazione in **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori/Riferimento evidenziato.**|  
 |Trova informazioni relative al codice|È possibile trovare informazioni relative a codice specifico, ad esempio modifiche, autori delle modifiche, riferimenti, bug, elementi di lavoro, revisioni del codice e stato dello unit test quando si usa CodeLens nell'editor del codice. CodeLens funziona come una visualizzazione preliminare quando si usa Visual Studio Enterprise con Team Foundation Server. Vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -161,7 +156,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
   In una classe parziale i membri definiti al di fuori del file di codice corrente possono non essere disponibili.  
 
 ## <a name="find-code-using-navigate-to"></a>Trovare codice con Passa a
-"Passa a" comando Visual Studio consente di eseguire una ricerca mirata del codice che consentono di trovare rapidamente gli elementi specificati nel file di codice, percorsi di file e i simboli del codice. A differenza di altri strumenti di ricerca nel testo, ad esempio Trova o Cerca nei file, Passa a limita la ricerca alle aree in cui si trova il codice effettivo, ad esempio file, form e moduli di codice. Se ad esempio si cerca una stringa in un'applicazione Web ASP.NET usando Trova o Cerca nei file nell'intera soluzione, si potrebbero ottenere diversi risultati, incluse istanze della stringa nelle note sul codice. Con passa a, tuttavia, si potrebbe ottengono solo una singola funzione, ignorando tutte le istanze della stringa nei commenti del codice.
+Il comando Passa a di Visual Studio esegue una ricerca mirata del codice per consentire all'utente di trovare rapidamente gli elementi specificati in file di codice, percorsi file e simboli di codice. A differenza di altri strumenti di ricerca nel testo, ad esempio Trova o Cerca nei file, Passa a limita la ricerca alle aree in cui si trova il codice effettivo, ad esempio file, form e moduli di codice. Se ad esempio si cerca una stringa in un'applicazione Web ASP.NET usando Trova o Cerca nei file nell'intera soluzione, si potrebbero ottenere diversi risultati, incluse istanze della stringa nelle note sul codice. Con passa a, tuttavia, si potrebbe ottengono solo una singola funzione, ignorando tutte le istanze della stringa nei commenti del codice.
 
 ### <a name="navigate-code-using-navigate-to"></a>Esplorare il codice con Passa a
 
@@ -190,7 +185,7 @@ Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 ## <a name="customize-the-editor"></a>Personalizzare l'editor  
  **Importare ed esportare le impostazioni**: è possibile condividere le impostazioni con un altro sviluppatore, renderle conformi a uno standard o ripristinare le impostazioni predefinite di Visual Studio usando **Importazione/Esportazione guidata delle impostazioni** nel menu **Strumenti** . È possibile modificare le impostazioni generali o le impostazioni specifiche di un linguaggio o di un progetto.  
 
- **Mapping della tastiera**: è possibile definire i nuovi tasti di scelta o ridefinire quelli esistenti nelle impostazioni Strumenti/Opzioni/Ambiente/Tastiera. Per altre informazioni sui tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+ **Mapping della tastiera**: È possibile definire nuovi tasti di scelta o ridefinire quelli esistenti nelle impostazioni strumenti/opzioni/ambiente/tastiera. Per altre informazioni sui tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
  Per informazioni sulle opzioni dell'editor specifiche di un linguaggio, vedere:  
 
@@ -236,5 +231,3 @@ Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
 ## <a name="see-also"></a>Vedere anche  
  [IDE di Visual Studio](../ide/visual-studio-ide.md)
-
-
