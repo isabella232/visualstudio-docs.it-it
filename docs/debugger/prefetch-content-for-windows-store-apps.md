@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fe9d698e5732c0dfe4c9282e6cfac683e0d4d8b0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 693c63e7d1094974643d17c3899a7c7c93f9f5d0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984223"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315794"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Eseguire il debug delle App UWP con contenuto preletto in Visual Studio
   
@@ -28,9 +28,9 @@ ms.locfileid: "54984223"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>Per forzare il precaricamento delle risorse specificate di ContentPrefetcher  
  Questa procedura presuppone che tu abbia già impostato la funzionalità ContentPrefetcher e specificato gli URI di contenuto da precaricare nel progetto dell'app. Per forzare il precaricamento del contenuto quando le risorse specificate sono nuove o modificate, avviare e arrestare l'app prima di scegliere il comando **Trigger prelettura applicazioni Windows Store**. Prima di tutto esegui l'app per registrare gli URI. Il comando **Trigger prelettura applicazioni Windows Store** forza la funzionalità ContentPrefetcher a scaricare il contenuto e ad aggiungerlo nella cache. Nelle esecuzioni successive dell'app, puoi presupporre che il contenuto sia stato precaricato.  
   
-1. Avvia l'app per registrare gli URI del contenuto caricati in background con l'app. Scegli **Avvia debug**  (Tasto di scelta rapida: F5) dal menu **Debug** .  
+1. Avvia l'app per registrare gli URI del contenuto caricati in background con l'app. Scegliere **Avvia debug** (Tasto di scelta rapida: F5) dal menu **Debug**.  
   
-2. Nel **Debug** menu, scegliere **arresta debug** (tasto di scelta rapida: MAIUSC + F5).  
+2. Scegliere **Termina debug** dal menu **Debug** (Tasto di scelta rapida: MAIUSC+F5).  
   
 3. Scegli **Altre destinazioni debug** dal menu **Debug**, quindi scegli **Trigger prelettura applicazioni Windows Store**.  
   
@@ -40,4 +40,4 @@ ms.locfileid: "54984223"
 >  Ripeti questi passaggi quando aggiungi o modifichi il contenuto Web specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Post di blog: Trigger prelettura per le app di Windows Store in Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+ [Post di blog: trigger prelettura applicazioni per Windows Store Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

@@ -11,77 +11,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59264db018b0098227abbcc44d8c697ffd57593d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60ea9a6f498a776bc8db0b7ee0fe12aa3c23e19f
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948505"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412929"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-Recupera il nome dell'assembly dato il modulo e un dominio applicazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-[C++]  
-HRESULT GetAssemblyName(  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule,  
-   BSTR*   pbstrName  
-);  
-```  
-  
-```  
-[C#]  
-int GetAssemblyName(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ulAppDomainID`  
- [in] Identificatore per il dominio dell'applicazione.  
-  
- `guidModule`  
- [in] Identificatore univoco per il modulo.  
-  
- `pbstrName`  
- [out] Restituisce il nome dell'assembly.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::GetAssemblyName(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    BSTR* pbstrName  
-)  
-{  
-    HRESULT hr = S_OK;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-    CComPtr<IMetaDataImport> pMetadata;  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::GetMetadataForModule );  
-  
-    IfFalseGo( pbstrName, E_INVALIDARG );  
-    *pbstrName = NULL;  
-  
-    IfFailGo( GetMetadata( idModule, &pMetadata ) );  
-    IfFailGo( GetAssemblyName( pMetadata, 0, pbstrName ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::GetMetadataForModule, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Recupera il nome dell'assembly dato il modulo e un dominio applicazione.
+
+## <a name="syntax"></a>Sintassi
+
+```
+[C++]
+HRESULT GetAssemblyName(
+    ULONG32 ulAppDomainID,
+    GUID    guidModule,
+    BSTR*   pbstrName
+);
+```
+
+```
+[C#]
+int GetAssemblyName(
+    uint   ulAppDomainID,
+    Guid   guidModule,
+    string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`ulAppDomainID`  
+[in] Identificatore per il dominio dell'applicazione.
+
+`guidModule`  
+[in] Identificatore univoco per il modulo.
+
+`pbstrName`  
+[out] Restituisce il nome dell'assembly.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
+
+```cpp
+HRESULT CDebugSymbolProvider::GetAssemblyName(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    BSTR* pbstrName
+)
+{
+    HRESULT hr = S_OK;
+    Module_ID idModule(ulAppDomainID, guidModule);
+    CComPtr<IMetaDataImport> pMetadata;
+
+    METHOD_ENTRY( CDebugSymbolProvider::GetMetadataForModule );
+
+    IfFalseGo( pbstrName, E_INVALIDARG );
+    *pbstrName = NULL;
+
+    IfFailGo( GetMetadata( idModule, &pMetadata ) );
+    IfFailGo( GetAssemblyName( pMetadata, 0, pbstrName ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::GetMetadataForModule, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

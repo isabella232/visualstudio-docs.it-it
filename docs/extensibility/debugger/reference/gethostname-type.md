@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f78e592597b4b35ab2c8c98bf99c40dd07d4c5af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f158cdaba17c030ce830c8adf26b6985c9b86dad
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956857"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413436"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
-Specifica il tipo del nome host.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-enum enum_GETHOSTNAME_TYPE {   
-   GHN_FRIENDLY_NAME = 0,  
-   GHN_FILE_NAME     = 1  
-};  
-typedef DWORD GETHOSTNAME_TYPE;  
-```  
-  
-```csharp  
-public enum enum_GETHOSTNAME_TYPE {   
-   GHN_FRIENDLY_NAME = 0,  
-   GHN_FILE_NAME     = 1  
-};  
-```  
-  
-## <a name="members"></a>Membri  
- GHN_FRIENDLY_NAME  
- Specifica un nome descrittivo dell'host.  
-  
- GHN_FILE_NAME  
- Specifica un nome file dell'host.  
-  
-## <a name="remarks"></a>Note  
- Questi valori vengono passati come argomento per il [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodo per recuperare un nome host in formati diversi.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+Specifica il tipo del nome host.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+enum enum_GETHOSTNAME_TYPE {
+    GHN_FRIENDLY_NAME = 0,
+    GHN_FILE_NAME     = 1
+};
+typedef DWORD GETHOSTNAME_TYPE;
+```
+
+```csharp
+public enum enum_GETHOSTNAME_TYPE {
+    GHN_FRIENDLY_NAME = 0,
+    GHN_FILE_NAME     = 1
+};
+```
+
+## <a name="members"></a>Membri
+GHN_FRIENDLY_NAME  
+Specifica un nome descrittivo dell'host.
+
+GHN_FILE_NAME  
+Specifica un nome file dell'host.
+
+## <a name="remarks"></a>Note
+Questi valori vengono passati come argomento per il [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodo per recuperare un nome host in formati diversi.
+
+## <a name="requirements"></a>Requisiti
+Intestazione: msdbg.h
+
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
