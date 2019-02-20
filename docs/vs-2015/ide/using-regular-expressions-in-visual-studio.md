@@ -1,13 +1,9 @@
 ---
 title: Uso di espressioni regolari
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -22,13 +18,13 @@ ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8ede92874833ca54f44740f518994dac1d6a822f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774512"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ Prima di Visual Studio 2012, Visual Studio usava la sintassi personalizzata di e
 > Nei sistemi operativi Windows, la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di.NET.
 
 > [!TIP]
-> Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: 1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
+> Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Esempi di espressioni regolari
 
@@ -73,7 +69,7 @@ Ecco alcuni esempi:
 |                                                                                                           Trovare la corrispondenza con qualsiasi spazio vuoto.                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` trova la frase "Public Interface".                                                 |
 |                                                                                                             Trovare la corrispondenza con qualsiasi carattere numerico                                                                                                             |                                                         \d                                                         |                                                `\d` trova "3" in "3456", "2" in 23" e "1" in "1".                                                |
 |                                                                                                              Trovare la corrispondenza con un carattere Unicode                                                                                                              |                              \uXXXX dove XXXX specifica il valore del carattere Unicode.                              |                                                            `\u0065` trova il carattere "e".                                                            |
-|                                                                                                                 Trovare la corrispondenza con un identificatore                                                                                                                 |                                         \b (*\w+&#124;[\w-[0-9\\*]] \w\*) \b                                          |                                                       Trova "type1" ma non &type1" o "#define".                                                       |
+|                                                                                                                 Trovare la corrispondenza con un identificatore                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       Trova "type1" ma non &type1" o "#define".                                                       |
 |                                                                                                            Trovare la corrispondenza con una stringa tra virgolette                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Trova qualsiasi stringa racchiusa tra virgolette singole o doppie.                                                     |
 |                                                                                                             Trovare la corrispondenza con un numero esadecimale                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Trova "0xc67f", ma non "0xc67fc67f".                                                           |
-|                                                                                                             Trovare la corrispondenza con numeri interi e decimali                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Trova "1.333".                                                                      |
+|                                                                                                             Trovare la corrispondenza con numeri interi e decimali                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     Trova "1.333".                                                                      |

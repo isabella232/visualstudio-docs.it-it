@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2882cd6db93da4222f8ed12d1847aa5b39a288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960654"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995219"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica della grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.  
@@ -93,7 +93,7 @@ DXCap.exe -info
  `-info`  
  Visualizza le informazioni sul computer e sulle DLL di acquisizione.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  DXCap.exe funziona in tre modalità:  
   
  Modalità di acquisizione (-c)  
@@ -169,7 +169,7 @@ DXCap.exe -e map
  **Version          : 2.1.2914.1734**  
  **Launchable Applications:**  
  **Id: AppexMaps**  
- **Exe C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: No**  
  **AppSpec (per avviare): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** l'ultima riga dell'output per ogni app enumerata Visualizza il comando è possibile usare per acquisire informazioni grafiche da quest'ultimo.  
   

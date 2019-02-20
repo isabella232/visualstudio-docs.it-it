@@ -1,14 +1,9 @@
 ---
 title: Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951268"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793763"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Modificare le proprietà di un'azione dell'interfaccia utente
   
  Per modificare le proprietà di un'azione dell'interfaccia utente, nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente un'azione dell'interfaccia utente di cui si vogliono modificare le proprietà, selezionare l'azione dell'interfaccia utente e quindi modificare le proprietà usando la finestra Proprietà.  
   
- Ad esempio, se un server non è disponibile e al Web browser è associata l'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx’>'**, è possibile sostituire l'URL con `‘http://Contoso2/default.aspx’`.  
+ Ad esempio, se un server non è disponibile e al Web browser è associata un'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx’>**, è possibile sostituire l'URL con `‘http://Contoso2/default.aspx’`.  
   
  ![Proprietà del controllo](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modificare le proprietà del controllo  
@@ -125,7 +120,7 @@ Modificare le proprietà del controllo
  *Altre informazioni*  
  **Problemi importanti**  
   
-- ![Icona di avviso](../test/media/caution.gif "caution") **Avviso**: quando si suddivide un metodo, è necessario modificare qualsiasi codice che chiama il metodo esistente in modo che chiami anche il nuovo metodo che si sta per creare se si vuole che queste azioni dell'interfaccia utente siano incluse. Quando si suddivide un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio che avvisa che è necessario modificare qualsiasi codice chiami il metodo esistente in modo che chiami anche il nuovo metodo che si sta per creare. Scegliere **Sì**.  
+- ![Icona di attenzione](../test/media/caution.gif "cautela") **avviso:** Se si suddivide un metodo, è necessario modificare qualsiasi codice che chiama il metodo esistente in modo che chiami anche il nuovo metodo che si sta per creare, se si vuole che queste azioni dell'interfaccia utente restino incluse. Quando si suddivide un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio che avvisa che è necessario modificare qualsiasi codice chiami il metodo esistente in modo che chiami anche il nuovo metodo che si sta per creare. Scegliere **Sì**.  
   
   **Suggerimenti**  
   
@@ -133,7 +128,7 @@ Modificare le proprietà del controllo
   
 - ![Suggerimento](../test/media/tip.png "Tip") È possibile rinominare il nuovo metodo. Selezionarlo nel riquadro Azioni dell'interfaccia utente e scegliere il pulsante **Rinomina** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente.  
   
-   oppure  
+   -oppure-  
   
    Aprire il menu di scelta rapida per il nuovo metodo di test e scegliere **Rinomina**.  
   
@@ -149,7 +144,7 @@ Modificare le proprietà del controllo
  *Altre informazioni*  
  **Problemi importanti**  
   
-- ![Icona di avviso](../test/media/caution.gif "caution") **Avviso**: dopo aver spostato il metodo, non è più possibile modificarlo tramite l'Editor di test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor di codice. Quando si sposta un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio che avvisa che il metodo verrà spostato dal file UIMap.uitest al file UIMap.cs o UIMap.vb e che non sarà più possibile modificare il metodo usando l'Editor di test codificati dell'interfaccia utente. Scegliere **Sì**.  
+- ![Icona di attenzione](../test/media/caution.gif "cautela") **avviso:** Dopo aver spostato un metodo, non è più possibile modificarlo mediante l'editor di test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor di codice. Quando si sposta un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio che avvisa che il metodo verrà spostato dal file UIMap.uitest al file UIMap.cs o UIMap.vb e che non sarà più possibile modificare il metodo usando l'Editor di test codificati dell'interfaccia utente. Scegliere **Sì**.  
   
   **Suggerimenti**  
   
@@ -167,7 +162,7 @@ Modificare le proprietà del controllo
  *Altre informazioni*  
  **Problemi importanti**  
   
-- ![Icona di avviso](../test/media/caution.gif "caution") **Avviso**: prima di individuare un controllo dell'interfaccia utente, verificare che l'applicazione associata al test sia in esecuzione.  
+- ![Icona di attenzione](../test/media/caution.gif "cautela") **avviso:** Prima di individuare un controllo dell'interfaccia utente, verificare che l'applicazione associata al test sia in esecuzione.  
   
   **Suggerimenti**  
   
@@ -185,7 +180,7 @@ Modificare le proprietà del controllo
  *Altre informazioni*  
  **Problemi importanti**  
   
--   ![Icona di avviso](../test/media/caution.gif "caution") **Avviso**: prima di individuare i controlli dell'interfaccia utente, verificare che l'applicazione associata al test sia in esecuzione.  
+-   ![Icona di attenzione](../test/media/caution.gif "cautela") **avviso:** Prima di individuare i controlli dell'interfaccia utente, verificare che l'applicazione associata al test sia in esecuzione.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Inserimento di un ritardo prima di un'azione dell'interfaccia utente  
  Talvolta, potrebbe essere necessario fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, venga nascosto l'indicatore di stato e così via. Usando l'Editor di test codificati dell'interfaccia utente, è possibile inserire un ritardo prima di un'azione dell'interfaccia utente per raggiungere questo risultato. È possibile specificare il numero di secondi di ritardo desiderati.  
@@ -210,7 +205,7 @@ Modificare le proprietà del controllo
 ## <a name="external-resources"></a>Risorse esterne  
   
 ### <a name="guidance"></a>Materiale sussidiario  
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 2: Testing unità Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>Domande frequenti  
  [Domande frequenti sui test codificati dell'interfaccia utente - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -226,6 +221,3 @@ Modificare le proprietà del controllo
  [Creazione di un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generazione di un test codificato dell'interfaccia utente da una registrazione delle azioni esistente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

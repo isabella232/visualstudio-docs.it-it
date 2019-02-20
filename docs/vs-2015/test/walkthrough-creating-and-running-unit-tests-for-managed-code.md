@@ -1,14 +1,9 @@
 ---
-title: 'Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784660"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -182,7 +177,7 @@ using BankAccountNS;
   
  Analizzando il metodo sottoposto a test, si determina che esistono almeno tre comportamenti che devono essere controllati:  
   
-1. Il metodo genera un'eccezione [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) se la quantità di debito è superiore al saldo.  
+1. Il metodo genera un oggetto [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) se la quantità di debito è superiore al saldo.  
   
 2. Genera `ArgumentOutOfRangeException` anche se la quantità di debito è minore di zero.  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  In questa sezione finale, le operazioni eseguite per migliorare il codice di test hanno portato a metodi di test più affidabili e informativi. Soprattutto, l'analisi aggiuntiva ha anche condotto a un codice migliore nel progetto sottoposto a test.
-
-
-
