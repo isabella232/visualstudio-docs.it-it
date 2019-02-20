@@ -53,7 +53,7 @@ Esegue il wrapping di vbc.exe, un compilatore che genera file eseguibili con est
 |`Imports`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Importa gli spazi dei nomi dalle raccolte di elementi specificati. Questo parametro corrisponde all'opzione [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) del compilatore vbc.exe.|  
 |`KeyContainer`|Parametro `String` facoltativo.<br /><br /> Specifica il nome del contenitore di chiavi crittografiche. Questo parametro corrisponde all'opzione [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) del compilatore vbc.exe.|  
 |`KeyFile`|Parametro `String` facoltativo.<br /><br /> Specifica il nome del file contenente la chiave di crittografia. Per altre informazioni, vedere [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String facoltativo.<br /><br /> Specifica la versione del linguaggio: "9" o "10".|  
+|`LangVersion`|Parametro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Specifica la versione del linguaggio: "9" o "10".|  
 |`LinkResources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Crea un collegamento a una risorsa .NET Framework nel file di output. Il file di risorse non viene inserito nel file di output. Questo parametro corrisponde all'opzione [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) del compilatore vbc.exe.|  
 |`MainEntryPoint`|Parametro `String` facoltativo.<br /><br /> Specifica la classe o il modulo che contiene la procedura `Sub Main`. Questo parametro corrisponde all'opzione [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) del compilatore vbc.exe.|  
 |`ModuleAssemblyName`|Parametro `String` facoltativo.<br /><br /> Specifica l'assembly di cui il modulo fa parte.|  
@@ -90,7 +90,7 @@ Esegue il wrapping di vbc.exe, un compilatore che genera file eseguibili con est
 |`Win32Icon`|Parametro `String` facoltativo.<br /><br /> Inserisce un file con estensione ICO nell'assembly, che dà al file di output l'aspetto voluto in Esplora file. Questo parametro corrisponde all'opzione [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) del compilatore vbc.exe.|  
 |`Win32Resources`|Parametro `String` facoltativo.<br /><br /> Inserisce un file di risorsa Win32 (estensione RES) nel file di output . Questo parametro corrisponde all'opzione [/win32resource](http://msdn.microsoft.com/library/e226946d-19ce-4cc9-91f5-aed24f77aa2b) del compilatore vbc.exe.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/tooltaskextension-base-class.md) (Classe di base TaskExtension).  
   
 ## <a name="example"></a>Esempio  

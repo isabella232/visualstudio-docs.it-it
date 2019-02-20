@@ -114,7 +114,7 @@ Usare la pagina delle proprietà **Formattazione** per specificare la formattazi
 |**Parentesi graffe di chiusura per MarkupExtensions**|Specifica se una parentesi graffa di chiusura dell'estensione del markup (}) viene generata automaticamente quando si digita il carattere di parentesi graffa di apertura ({).|  
 |**Virgole per separare i parametri di MarkupExtension**|Specifica se vengono generate le virgole quando si digita più di un parametro in un'estensione di markup.|  
 
-## <a name="default-view"></a>visualizzazione predefinita  
+## <a name="default-view"></a>Visualizzazione predefinita  
  Usare questa impostazione per verificare se la visualizzazione Progettazione appare quando vengono caricati documenti XAML.  
 
 |||  

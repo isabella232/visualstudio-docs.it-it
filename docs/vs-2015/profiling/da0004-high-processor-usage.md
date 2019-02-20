@@ -27,7 +27,7 @@ ms.locfileid: "54762524"
 Id regola | DA0004 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodi di profilatura | Campionamento di strumentazione |  
-| Messaggio | L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.  
+| Messaggio | L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di usare la modalità di campionamento per le applicazioni basate sulla CPU.|  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

@@ -26,7 +26,7 @@ ms.locfileid: "54834351"
 Id regola | DA0021 |  
 | Categoria di |. Utilizzo di NET Framework |  
 | Metodi di profilatura | Tutti i |  
-| Messaggio | È una frequenza elevata di garbage collection di generazione 1 che si verificano. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.  
+| Messaggio | È una frequenza elevata di garbage collection di generazione 1 che si verificano. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

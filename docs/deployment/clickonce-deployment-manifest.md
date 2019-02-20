@@ -40,7 +40,7 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
 | [\<Firma > elemento](../deployment/signature-element-clickonce-deployment.md) | Facoltativo. Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione. | nessuno |
 | [\<customErrorReporting > elemento](../deployment/customerrorreporting-element-clickonce-deployment.md) | Facoltativo. Specifica un URI da visualizzare quando si verifica un errore. | URI |
 
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il file manifesto della distribuzione identifica una distribuzione dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], incluse la versione corrente e altre impostazioni della distribuzione. Fa riferimento al manifesto dell'applicazione, che descrive la versione corrente dell'applicazione e tutti i file contenuti all'interno della distribuzione.  
 
  Per altre informazioni, vedere [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  

@@ -35,7 +35,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 |------------|-----------------|  
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Legge il numero specificato di byte a partire dall'offset specificato da un file eseguibile.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  L'applicazione client implementa questa interfaccia per fornire i byte del file eseguibile con un offset assoluto nel file dell'eseguibile. Per usare un indirizzo virtuale relativo, implementare il [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfaccia.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  

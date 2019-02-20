@@ -34,7 +34,7 @@ HRESULT put_loadAddress ( 
  `NewVal`  
  [in] Carica l'indirizzo del file eseguibile.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Proprietà dei simboli indirizzo virtuale (valutazione della vulnerabilità) vengono calcolate utilizzando il valore di questo metodo. Gli indirizzi virtuali non vengono calcolati solo se questa proprietà è impostata su diverso da zero.  
   
 > [!NOTE]

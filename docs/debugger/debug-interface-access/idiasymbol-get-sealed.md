@@ -40,7 +40,7 @@ HRESULT get_sealed( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Una classe sealed non può essere utilizzata come classe base. Metodo sealed non può essere sottoposto a override.  
   
 ## <a name="requirements"></a>Requisiti  

@@ -31,7 +31,7 @@ ms.locfileid: "54804359"
 # <a name="find-in-files"></a>Cerca nei file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cerca nei file consente di eseguire ricerche in un set di file specificato. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.  
+Cerca nei file** consente di eseguire ricerche in un set di file specificato. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.  
   
  Per visualizzare **Cerca nei file** nella finestra **Trova e sostituisci** è possibile usare uno dei metodi seguenti.  
   

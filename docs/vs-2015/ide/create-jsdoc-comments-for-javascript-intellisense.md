@@ -1,25 +1,20 @@
 ---
 title: Creare commenti JSDoc per IntelliSense per JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758510"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Creare commenti JSDoc per IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +27,14 @@ IntelliSense in Visual Studio visualizza le informazioni aggiunte a uno script t
 
 |  Tag JSDoc   |                       Sintassi                        |                                                     Note                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *Descrizione*              |                                   Specifica una funzione o un metodo deprecato.                                   |
-| @description |             @description *Descrizione*              |                              Specifica la descrizione di una funzione o di un metodo.                               |
+| @deprecated  |              @deprecated *description*              |                                   Specifica una funzione o un metodo deprecato.                                   |
+| @description |             @description *descrizione*              |                              Specifica la descrizione di una funzione o di un metodo.                               |
 |    @param    | @param {*tipo*} *parameterName*<em>descrizione</em> | Specifica le informazioni relative a un parametro in una funzione o un metodo.<br /><br /> TypeScript supporta anche @paramTag. |
-|  @property   |          @property {*tipo*} *propertyName*          |   Specifica le informazioni, inclusa una descrizione, relative a un campo o a un membro definito per un oggetto.    |
-|   @returns   |                  @returns {*tipo*}                  |           Specifica un valore restituito.<br /><br /> Per TypeScript, usare @returnType invece di @returns.           |
-|   @summary   |               @summary *Descrizione*                |                   Specifica la descrizione di una funzione o metodo (uguale a @description).                   |
-|    @type     |                   @type {*tipo*}                    |                                Specifica il tipo di una costante o di una variabile.                                |
-|   @typedef   |         @typedef {*tipo*} *Nometipopersonalizzato*          |                                            Specifica un tipo personalizzato.                                            |
+|  @property   |          @property {*type*} *propertyName*          |   Specifica le informazioni, inclusa una descrizione, relative a un campo o a un membro definito per un oggetto.    |
+|   @returns   |                  @returns {*type*}                  |           Specifica un valore restituito.<br /><br /> Per TypeScript, usare @returnType invece di @returns.           |
+|   @summary   |               @summary *description*                |                   Specifica la descrizione di una funzione o metodo (uguale a @description).                   |
+|    @type     |                   @type {*type*}                    |                                Specifica il tipo di una costante o di una variabile.                                |
+|   @typedef   |         @typedef {*type*} *customTypeName*          |                                            Specifica un tipo personalizzato.                                            |
 
 ### <a name="examples"></a>Esempi  
  L'esempio seguente illustra l'uso del @description, @param, e @return tag JSDoc per una funzione denominata `getArea`.  
@@ -73,7 +68,7 @@ function getForecast(Weather) {
 var w = new Weather();  
 ```  
 
- L'esempio seguente illustra l'uso del @type tag JSDoc. Come illustrato in questo esempio, l'accesso single asterischi (*) che seguono la coppia di asterischi iniziale (\*\*) non sono necessarie.  
+ L'esempio seguente illustra l'uso del @type tag JSDoc. Come illustra questo esempio, gli asterischi singoli (*) che seguono la coppia di asterischi iniziale (\*\*) non sono obbligatori.  
 
 ```javascript  
 /**  
@@ -92,6 +87,3 @@ const RED = 'FF0000';
 function old() {  
 }  
 ```
-
-
-

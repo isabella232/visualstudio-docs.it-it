@@ -102,7 +102,7 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
 |------------| - |
 | `codebase` | Obbligatorio. Identifica la posizione del manifesto di distribuzione che viene usato per aggiornare, come Uniform Resource Identifier (URI), il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo elemento consente inoltre di percorsi di aggiornamento per le installazioni basate sul CD di inoltro. Deve essere un URI valido. |
 
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  È possibile configurare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione cercare gli aggiornamenti all'avvio, cercare gli aggiornamenti dopo l'avvio o non controllare mai gli aggiornamenti. Per analizzare gli aggiornamenti all'avvio, assicurarsi che il `beforeApplicationStartup` elemento esiste sotto il `update` elemento. Per cercare gli aggiornamenti dopo l'avvio, assicurarsi che il `expiration` elemento esiste nel `update` elemento e che siano stati specificati gli intervalli di aggiornamento.  
 
  Per disabilitare il controllo degli aggiornamenti, rimuovere il `subscription` elemento. Quando si specifica nel manifesto di distribuzione mai cercare gli aggiornamenti, è possibile comunque manualmente cercare gli aggiornamenti usando il <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> (metodo).  

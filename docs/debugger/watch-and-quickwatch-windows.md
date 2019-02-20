@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002521"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Controllare le variabili con finestre Espressioni di controllo e controllo immediato 
 
@@ -30,7 +30,7 @@ Durante il debug, è possibile usare **Watch** windows e **controllo immediato**
 
 **Espressioni di controllo** windows può visualizzare più variabili in un momento durante il debug. Il **controllo immediato** finestra di dialogo Visualizza una singola variabile alla volta e deve essere chiuso prima di proseguire con il debug.
 
-Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) e [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
+Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Osservare le variabili con una finestra Espressioni di controllo
 
@@ -280,5 +280,5 @@ Per osservare il `a` variabile,
 
 ## <a name="see-also"></a>Vedere anche
  [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)  
+ [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)  
  [Presentazione di debug](../debugger/debugger-feature-tour.md) [finestre del Debugger](../debugger/debugger-windows.md)

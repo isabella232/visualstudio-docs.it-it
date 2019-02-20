@@ -91,7 +91,7 @@ ms.locfileid: "54780369"
  Visualizza il percorso al file SDK cui viene fatto riferimento.  
   
 ### <a name="uri"></a>URI  
- Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.  
+ Visualizza l'URI che deve essere incluso nei file HTML o JavaScript del progetto per includere il file come file di origine.  
   
 ### <a name="version"></a>Versione  
  Visualizza la versione del riferimento.  

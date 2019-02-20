@@ -29,7 +29,7 @@ ms.locfileid: "54803540"
 Id regola | DA0029 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Profilatura dalla riga di comando |  
-| Messaggio | Durante la raccolta è stata rilevata una versione CLR non supportata. È possibile che i simboli gestiti non vengano risolti correttamente.  
+| Messaggio | Durante la raccolta è stata rilevata una versione CLR non supportata. È possibile che i simboli gestiti non vengano risolti correttamente.|  
 | Tipo di regola | Le informazioni. |  
   
 ## <a name="cause"></a>Causa  

@@ -169,7 +169,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="dsigdigestvalue"></a>dsig:  
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
 
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Tutti gli assembly usati dall'applicazione devono avere una corrispondente `dependency` elemento. Gli assembly dipendenti non includono gli assembly che devono essere preinstallati nella global assembly cache degli assembly di piattaforma.  
 
 ## <a name="example"></a>Esempio  

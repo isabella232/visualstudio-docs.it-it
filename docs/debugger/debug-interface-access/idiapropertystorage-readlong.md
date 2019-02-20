@@ -41,7 +41,7 @@ HRESULT ReadDLONG ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `LONG`.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Oggetto `LONG` è definito da Windows come un intero con segno a 32 bit.  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -40,7 +40,7 @@ HRESULT get_value ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  La variante fornita deve essere inizializzata prima che venga passata al metodo. Per altre informazioni, vedere l'esempio.  
   
 ## <a name="example"></a>Esempio  

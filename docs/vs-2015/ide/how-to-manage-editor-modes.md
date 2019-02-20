@@ -1,14 +1,9 @@
 ---
-title: "Procedura: Gestire le modalità dell'editor | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Gestire le modalità dell'Editor | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -29,13 +24,13 @@ ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781034"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedura: gestire le modalità dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49229216"
 È possibile visualizzare l'editor di Visual Studio Code in diverse modalità.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="enabling-full-screen-mode"></a>Abilitazione della modalità Schermo intero  
  È possibile nascondere tutte le caselle degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **Schermo intero**.  
@@ -72,8 +67,5 @@ ms.locfileid: "49229216"
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing the Editor](../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  
- [Procedura: disporre e ancorare Windows](../misc/how-to-arrange-and-dock-windows.md)   
+ [Procedura: Disporre e ancorare le finestre](../misc/how-to-arrange-and-dock-windows.md)   
  [Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
-
-
-

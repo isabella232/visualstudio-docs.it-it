@@ -45,7 +45,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Restituisce il blocco di dati PDATA associato all'indirizzo virtuale specificato.|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Recupera l'indirizzo virtuale iniziale di un file eseguibile, dato un indirizzo virtuale in una posizione nello spazio di memoria dell'eseguibile.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questa interfaccia viene chiamata dal codice DIA per ottenere informazioni sull'eseguibile per costruire un elenco di frame dello stack durante l'esecuzione del programma.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  

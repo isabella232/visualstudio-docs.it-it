@@ -40,7 +40,7 @@ HRESULT get_hasEHa(
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  È possibile combinare asincrona o non strutturate gestione delle eccezioni con la gestione delle eccezioni di tipo C++, ma necessaria un'opzione del compilatore specifici, /EHa, per abilitarlo.  
   
 ## <a name="requirements"></a>Requisiti  

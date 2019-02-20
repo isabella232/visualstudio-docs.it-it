@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788190"
 ---
 # <a name="watch-command"></a>Comando Watch
@@ -37,7 +37,7 @@ Debug.Watch[index]
  `index`  
  Obbligatorio. Il numero di istanza della finestra Espressioni di controllo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `index` deve essere di tipo Integer. I valori validi sono 1, 2, 3 e 4.  
   
 ## <a name="example"></a>Esempio  
@@ -48,8 +48,8 @@ Debug.Watch[index]
   
 ## <a name="see-also"></a>Vedere anche  
  [Finestre Auto e Variabili locali](../../debugger/autos-and-locals-windows.md)   
- [Procedura: Modificare un valore in una finestra delle variabili](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
- [Procedura: Utilizzare la finestra di dialogo Controllo immediato](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Procedura: modificare un valore in una finestra variabili](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
+ [Procedura: usare la finestra di dialogo Controllo immediato](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  

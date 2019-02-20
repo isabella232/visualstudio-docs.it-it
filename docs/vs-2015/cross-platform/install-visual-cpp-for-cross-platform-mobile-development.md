@@ -22,7 +22,7 @@ ms.locfileid: "54762859"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-http://go.microsoft.com/fwlink/p/?LinkId=536383)Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma è un componente installabile di Visual Studio 2015. Include modelli multipiattaforma di Visual Studio e installa gli SDK e gli strumenti multipiattaforma per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo argomento descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma mediante Visual Studio. Per una panoramica del componente, vedere [Visual C++ per dispositivi mobili multipiattaforma](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma]http://go.microsoft.com/fwlink/p/?LinkId=536383) è un componente installabile di Visual Studio 2015. Include modelli multipiattaforma di Visual Studio e installa gli SDK e gli strumenti multipiattaforma per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo argomento descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma mediante Visual Studio. Per una panoramica del componente, vedere [Visual C++ per dispositivi mobili multipiattaforma](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Requisiti](#Requirements)   
  [Ottenere gli strumenti](#GetTheTools)   

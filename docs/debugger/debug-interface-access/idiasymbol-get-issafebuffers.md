@@ -40,7 +40,7 @@ HRESULT get_isSafeBuffers( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Dia2.h  

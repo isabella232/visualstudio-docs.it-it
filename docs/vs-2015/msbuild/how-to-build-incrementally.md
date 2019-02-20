@@ -52,7 +52,7 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
 </Target>  
 ```  
   
- Quando gli input e gli output sono specificati in una destinazione, ogni output può essere mappato solo a un input oppure potrebbe non esserci alcun mapping diretto tra gli output e gli input. Nell'[attività Csc](../msbuild/csc-task.md) precedente, ad esempio, l'output hello.exe non può essere mappato a un singolo input, ma dipende da tutti gli elementi.  
+ Quando gli input e gli output sono specificati in una destinazione, ogni output può essere mappato solo a un input oppure potrebbe non esserci alcun mapping diretto tra gli output e gli input. Nell'[attività Csc](../msbuild/csc-task.md) precedente ad esempio, non è possibile eseguire il mapping dell'output hello.exe a un singolo input, perché dipende da tutti gli elementi.  
   
 > [!NOTE]
 >  Una destinazione senza mapping diretto tra input e output verrà sempre compilata con maggiore frequenza rispetto a una destinazione in cui ogni output corrisponde a un solo input perché [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] non può determinare quali output debbano essere ricompilati se alcuni input sono stati modificati.  

@@ -37,7 +37,7 @@ HRESULT get_imageAlign ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Le immagini sono allineate a limiti di memoria specifica a seconda di come l'immagine è stato caricato e creato. L'allineamento è in genere nei limiti di 1, 2, 4, 8, 16, 32 o 64 byte. L'allineamento dell'immagine può essere impostato con una chiamata per il [Put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  

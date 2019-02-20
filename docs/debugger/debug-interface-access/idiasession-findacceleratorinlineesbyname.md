@@ -43,7 +43,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questa funzione ricerca inline solo all'interno delle funzioni di stub di tasti di scelta rapida. Ignora i record di procedure native C++.  
   
 ## <a name="see-also"></a>Vedere anche  

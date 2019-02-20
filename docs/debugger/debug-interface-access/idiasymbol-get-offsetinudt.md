@@ -40,7 +40,7 @@ HRESULT get_offsetInUdt( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questa funzione viene utilizzata solo nei record locale in una build ottimizzata.  
   
 ## <a name="requirements"></a>Requisiti  

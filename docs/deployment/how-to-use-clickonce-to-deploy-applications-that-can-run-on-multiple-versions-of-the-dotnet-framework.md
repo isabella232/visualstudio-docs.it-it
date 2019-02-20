@@ -100,7 +100,7 @@ ms.locfileid: "54975439"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Per aggiornare e firmare nuovamente l'applicazione e distribuzione di manifesti  
   
--   Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

@@ -40,7 +40,7 @@ HRESULT get_offset ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  L'offset è da un certo punto noto stabilito in precedenza. Ad esempio, l'offset per un `LocIsBitField` tipo di percorso è in genere dall'inizio della classe che contiene.  
   
 ## <a name="requirements"></a>Requisiti  

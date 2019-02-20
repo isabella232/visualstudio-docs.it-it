@@ -45,7 +45,7 @@ HRESULT set_imageHeaders ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il `IMAGE_SECTION_HEADER` struttura è dichiarato in Winnt. h e rappresenta il formato dell'intestazione sezione del file eseguibile.  
   
  I calcoli di indirizzo virtuale relativo variano a seconda di `IMAGE_SECTION_HEADER` valori. In genere, il DIA recupera queste informazioni dal file di database (con estensione pdb) di programma. Se questi valori sono mancanti, il DIA non riesce a calcolare indirizzi virtuali relativi e la [Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) restituzione del metodo `FALSE`. Il client deve quindi chiamare il [Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metodo per consentire i calcoli di indirizzo virtuale relativo dopo aver fornito le intestazioni di immagine mancante dall'immagine di se stesso.  

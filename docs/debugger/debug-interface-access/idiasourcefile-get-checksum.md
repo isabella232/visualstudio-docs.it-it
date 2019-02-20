@@ -45,7 +45,7 @@ HRESULT get_checksum ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Per determinare il tipo di algoritmo di checksum utilizzata per generare i byte di checksum, chiamare il [Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) (metodo).  
   
  Il valore di checksum viene solitamente generato dall'immagine del file di origine in modo che le modifiche nel file di origine vengono applicate le modifiche nei byte checksum. Se i byte di checksum non corrispondono a un checksum generato dall'immagine del file, caricare quindi il file deve essere considerato danneggiato o manomesso.  

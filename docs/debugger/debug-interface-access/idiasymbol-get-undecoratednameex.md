@@ -44,13 +44,13 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il `undecorateOptions` può essere una combinazione dei flag seguenti.  
   
 > [!NOTE]
 >  I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.  
   
-|Flag|Valore|Descrizione|  
+|Flag|Value|Descrizione|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|  

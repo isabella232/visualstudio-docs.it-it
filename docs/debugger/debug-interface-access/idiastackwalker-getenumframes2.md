@@ -46,7 +46,7 @@ Recupera un enumeratore di frame dello stack per un tipo di piattaforma specific
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Per ottenere un elenco di frame dello stack per semplicemente x86 piattaforma, chiamare il [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  

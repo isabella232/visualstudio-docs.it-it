@@ -37,7 +37,7 @@ La tabella seguente illustra le modifiche apportate a C# e il codice Visual Basi
 |espressioni di Async/await|Aggiungi o modifica|[Sì](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Oggetti dinamici|Aggiungi o modifica|No|
 |espressioni lambda|Aggiungi o modifica|[Sì](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ expressions|Aggiungi o modifica|[Uguale a espressioni lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Espressioni LINQ|Aggiungi o modifica|[Uguale a espressioni lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
 > Funzionalità del linguaggio più recenti, ad esempio l'interpolazione di stringhe e gli operatori condizionali con valori null sono in genere supportate in modifica e continuazione. Per informazioni aggiornate, vedere la [supportato modifica Enc](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) pagina.

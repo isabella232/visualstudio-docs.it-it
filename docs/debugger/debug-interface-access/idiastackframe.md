@@ -50,7 +50,7 @@ IDiaStackFrame : IUnknown
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni di sistema è in vigore.|  
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Recupera il tipo di frame.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Uno stack frame è un'astrazione di una chiamata di funzione durante l'esecuzione.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  

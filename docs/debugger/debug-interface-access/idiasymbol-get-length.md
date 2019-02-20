@@ -40,7 +40,7 @@ HRESULT get_length ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Se il [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) del simbolo è `LocIsBitField`, la lunghezza restituita da questo metodo è espressa in bit; in caso contrario, la lunghezza è espressa in byte per tutti gli altri tipi di percorso.  
   
 ## <a name="example"></a>Esempio  

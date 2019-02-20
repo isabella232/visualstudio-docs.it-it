@@ -54,7 +54,7 @@ I simboli con `SymTagTypedef` tag introducono i nomi per gli altri tipi.
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID del simbolo a forma di tabella virtuale.|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se questo typedef è contrassegnato come volatile.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Poiché un typedef può rappresentare una classe, puntatore o tipo definito dall'utente (UDT), il simbolo per un typedef condivide le stesse proprietà di uno di questi altri tipi di simboli.  
   
 ## <a name="see-also"></a>Vedere anche  

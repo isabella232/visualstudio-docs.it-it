@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 10592c4d42afbb1545ea938d981b30b3b37437ea
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55012966"
@@ -94,7 +94,7 @@ typedef enum CV_CPU_TYPE_e { 
 } CV_CPU_TYPE_e;  
 ```  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  

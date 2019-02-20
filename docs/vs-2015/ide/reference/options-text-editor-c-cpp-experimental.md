@@ -1,5 +1,5 @@
 ---
-title: Opzioni, Editor di testo, C/C++, Sperimentale | Microsoft Docs
+title: Opzioni, Editor di testo, C-C++, Sperimentale | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: reference
 f1_keywords:

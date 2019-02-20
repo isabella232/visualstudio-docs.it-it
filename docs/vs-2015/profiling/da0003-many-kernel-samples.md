@@ -27,7 +27,7 @@ ms.locfileid: "54782634"
 Id regola | DA0003 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodi di profilatura | Campionamento |  
-| Messaggio | Presente un numero elevato di campioni in modalità Kernel. Questa circostanza potrebbe indicare un volume elevato di attività I/O oppure un rapporto elevato di cambi di contesto. Si consiglia di profilare nuovamente l'applicazione utilizzando la modalità strumentazione.  
+| Messaggio | Presente un numero elevato di campioni in modalità Kernel. Questa circostanza potrebbe indicare un volume elevato di attività I/O oppure un rapporto elevato di cambi di contesto. Si consiglia di profilare nuovamente l'applicazione usando la modalità strumentazione.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  

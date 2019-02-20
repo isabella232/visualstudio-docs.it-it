@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c77135fe5ab8e6971bac7cb17d8fa98e5c20577a
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54986566"
@@ -42,7 +42,7 @@ typedef enum CV_access_e { 
  CV_public  
  Membro dispone di accesso pubblico.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il `friend` identificatore di accesso non viene incluso qui perché è in genere usato dalle funzioni non membro che dispongono dell'accesso agli elementi privati e protetti della classe. Usare la [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) metodo per individuare i simboli con `SymTagFriend` accesso.  
   
 ## <a name="requirements"></a>Requisiti  

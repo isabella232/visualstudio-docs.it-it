@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1e968cd89c66e0f8c13dbb0468e66e06ca53e273
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54999132"
@@ -38,7 +38,7 @@ struct DiaAddressMapEntry { 
  `rvaTo`  
  L'indirizzo virtuale relativo `rva` viene mappato a nella figura B.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Una mappa indirizzo fornisce una conversione dal layout di un'immagine (A) in un'altra (B). Matrice di `DiaAddressMapEntry` strutture vengono ordinate `rva` definisce un mapping di indirizzi.  
   
  Per convertire un indirizzo `addrA`, nell'immagine A un indirizzo, `addrB`, nella figura B, eseguire la procedura seguente:  

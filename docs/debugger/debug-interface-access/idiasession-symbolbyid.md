@@ -41,7 +41,7 @@ HRESULT symbolById ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  L'identificatore specificato è un valore univoco usato internamente dal DIA SDK per rendere univoco tutti i simboli.  
   
  Questo metodo può essere utilizzato, ad esempio, per recuperare il simbolo che rappresenta il tipo di simbolo di un altro (vedere l'esempio).  

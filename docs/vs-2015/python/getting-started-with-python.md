@@ -27,11 +27,11 @@ Python è un linguaggio di programmazione più diffusi che viene usato da molte 
 
 Come linguaggio di programmazione, Python è:
   
-- Affidabilità
+- Attendibile.
 - In genere è utile per lo scripting di programmi rapidi, app script, le app desktop, server web, servizi web e calcolo scientifico.
-- Facile da imparare e con un buon design in modo da semplificare la scrittura di codice (molte università lo usano per i corsi di programmazione introduttivi)
+- Facile da imparare e con un buon design in modo da semplificare la scrittura di codice. Molte università lo usano per i corsi di programmazione introduttivi.
 - Flessibile, che supportano gli stili di programmazione imperativi, funzionali e orientata agli oggetti.
-- Gratuito e open source
+- Gratuito e open source.
 - Funziona bene con tutti i principali sistemi operativi.  
 - Supportato da numerose librerie gratuite, utili e ben progettate.  
 - Supportato da un numero elevato di documentazione, esempi e una community di sviluppatori.  

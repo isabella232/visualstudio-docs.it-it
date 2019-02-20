@@ -1,12 +1,8 @@
 ---
 title: Comunicazioni con Microsoft | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
@@ -14,13 +10,13 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 198953116a6489c0e771a66b463e44da48590a4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785939"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ Siamo interessati alle tue idee per migliorare la nostra documentazione. Non pos
  Usare il pulsante per l'invio di commenti e suggerimenti (**Questa pagina è stata utile?**) nella parte inferiore della pagina. Questo pulsante si trova in tutte le pagine MSDN. Se non si riesce a trovare una risposta, segnalare quali informazioni si stanno cercando.  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Segnalare un problema con Visual Studio  
- Se si verificano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte, un comportamento imprevisto e così via, segnalare il problema a Microsoft facendo clic sull'icona di commenti e suggerimenti accanto a **avvio veloce**, oppure scegliendo  **Guida &#124; Invia commenti e suggerimenti &#124; segnala un problema** dal menu principale. Per altre informazioni, vedere [come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
+ Se si verificano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte, un comportamento imprevisto e così via, segnalare il problema a Microsoft facendo clic sull'icona di commenti e suggerimenti accanto a **avvio veloce**, oppure scegliendo  **Guida &#124; Invia commenti e suggerimenti &#124; segnala un problema** dal menu principale. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Inviare suggerimenti sulle funzionalità di Visual Studio  
  Se si individuano eventuali aree di miglioramento, è possibile indicarle a Microsoft. Scegliere **Suggerimento** per suggerire una funzionalità o una modifica al team di Visual Studio. Il suggerimento verrà inserito automaticamente in [UserVoice](https://visualstudio.uservoice.com) dove altri utenti possono votarlo.  

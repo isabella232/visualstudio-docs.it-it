@@ -26,7 +26,7 @@ ms.locfileid: "54767486"
 Id regola | DA0506 |  
 | Categoria | Monitoraggio delle risorse |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | Dati raccolti a solo scopo informativo. Il contatore di byte privati di processo misura la memoria virtuale allocata dal processo sottoposto a profilatura che non può essere condivisa con altri processi. Il valore restituito corrisponde al valore massimo osservato per tutti gli intervalli di misurazione.  
+| Messaggio | Dati raccolti a solo scopo informativo. Il contatore di byte privati di processo misura la memoria virtuale allocata dal processo sottoposto a profilatura che non può essere condivisa con altri processi. Il valore indicato corrisponde al valore massimo osservato per tutti gli intervalli di misurazione.|  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

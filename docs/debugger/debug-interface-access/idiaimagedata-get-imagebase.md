@@ -37,7 +37,7 @@ HRESULT get_imageBase ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  A causa di conflitti di base di immagine, un'immagine può essere riassegnata automaticamente in una posizione di memoria inutilizzata al momento del caricamento. Questo metodo restituisce l'hint di base (percorso consigliato per la memoria) che è stato archiviato nel modulo in fase di compilazione.  
   
 ## <a name="see-also"></a>Vedere anche  

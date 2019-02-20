@@ -1,25 +1,20 @@
 ---
-title: 'Procedura: Eseguire la ricerca di argomenti | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Ricerca di argomenti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799080"
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: eseguire la ricerca di argomenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,12 @@ ms.locfileid: "49248289"
   
      Per impostazione predefinita, una ricerca restituisce un massimo di 200 risultati che vengono visualizzati nell'area corrispondente.  
   
-     Ulteriori informazioni sulla versione per ogni risultato sembrare a seconda del contenuto.  
+     È possibile che vengano visualizzate informazioni aggiuntive sulla versione per ogni risultato, a seconda del contenuto.  
   
 4.  Per visualizzare un argomento, scegliere il titolo dall'elenco dei risultati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Full-Text Search Tips](../ide/full-text-search-tips.md)  (Suggerimenti per la ricerca full-text)  
  [Operatori logici nelle espressioni di ricerca](../ide/logical-operators-in-search-expressions.md)   
- [Operatori di ricerca nelle espressioni di ricerca avanzati](../ide/advanced-search-operators-in-search-expressions.md)   
+ [Operatori di ricerca avanzati nelle espressioni di ricerca](../ide/advanced-search-operators-in-search-expressions.md)   
  [Procedura: Personalizzare i risultati della ricerca](../ide/how-to-customize-search-results.md)
-
-
-

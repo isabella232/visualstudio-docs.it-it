@@ -53,7 +53,7 @@ HRESULT findChildrenExByVA ( 
 ## <a name="return-value"></a>Valore restituito  
  Restituisce `S_OK` se almeno un figlio del simbolo è stato trovato, o restituisce `S_FALSE` se nessun elemento figlio sono stato trovato; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I simboli locali che vengono restituiti includono informazioni sull'intervallo in tempo reale.  
   
 ## <a name="requirements"></a>Requisiti  

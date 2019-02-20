@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 34866bf7d43908d2fc7227f35f7df18f8942f981
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55033181"
@@ -98,7 +98,7 @@ typedef enum CV_CFL_LANG { 
  CV_CFL_HLSL  
  Lingua dell'applicazione è High Level Shader Language.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  

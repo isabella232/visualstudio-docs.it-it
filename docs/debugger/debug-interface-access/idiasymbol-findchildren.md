@@ -49,7 +49,7 @@ HRESULT findChildren ( 
 ## <a name="return-value"></a>Valore restituito  
  Restituisce `S_OK` se almeno un figlio del simbolo è stato trovato, o restituisce `S_FALSE` se nessun elemento figlio sono stato trovato; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questo metodo è identico alla chiamata di [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md) metodo con questo simbolo come primo parametro.  
   
 ## <a name="see-also"></a>Vedere anche  

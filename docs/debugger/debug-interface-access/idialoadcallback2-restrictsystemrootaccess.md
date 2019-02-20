@@ -31,7 +31,7 @@ HRESULT RestrictSystemRootAccess();
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Diverso da qualsiasi codice restituito `S_OK` impedisce la ricerca la radice di sistema per i file con estensione pdb.  
   
 ## <a name="see-also"></a>Vedere anche  

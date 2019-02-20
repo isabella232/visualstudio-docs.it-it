@@ -18,7 +18,7 @@ ms.locfileid: "54784141"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Uso di shim per isolare l'applicazione da altri assembly per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I tipi shim sono una delle due tecnologie che il framework Microsoft Fakes usa per permettere agli utenti di isolare dall'ambiente i componenti sottoposti a test. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Ciò rende i test più semplici da scrivere.  
+I tipi shim** sono una delle due tecnologie che il framework Microsoft Fakes usa per consentire agli utenti di isolare dall'ambiente i componenti sottoposti a test. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Ciò rende i test più semplici da scrivere.  
   
  Utilizzare gli shim per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare tra loro i componenti della soluzione, è consigliabile utilizzare gli stub.  
   

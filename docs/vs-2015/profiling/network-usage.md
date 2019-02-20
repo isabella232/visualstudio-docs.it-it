@@ -1,25 +1,20 @@
 ---
 title: Utilizzo della rete | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759909"
 ---
 # <a name="network-usage"></a>Utilizzo della rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
 1. Aprire il progetto in Visual Studio.  
   
-2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere Rete e quindi **Avvia**.  
+2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere **Rete** e quindi **Avvia**.  
   
 3. Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
@@ -80,8 +75,5 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti di profilatura senza il debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog di Visual Studio: controllo di rete di introduzione a Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Blog di Visual Studio: Introduzione al controllo di rete di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Video di Channel 9: Strumenti di diagnostica di Visual Studio - Nuovo Profiler di rete](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-

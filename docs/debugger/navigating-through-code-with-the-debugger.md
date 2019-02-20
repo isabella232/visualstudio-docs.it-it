@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204489"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070617"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger di Visual Studio
 
-Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) e [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
+Il debugger di Visual Studio consentono di spostarsi nel codice per controllare lo stato di un'app e visualizzare il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per visualizzare rapidamente il codice da esaminare. Familiarità con i comandi di navigazione del debugger e tasti di scelta rapida rende più veloce e semplice trovare e risolvere i problemi delle app.  Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
   
 ## <a name="basic-debugging"></a>Debug di base  
 
@@ -79,7 +79,7 @@ In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà es
 
 Potrebbe non rilevante una funzione durante il debug o si conosce funziona, come il codice ben collaudato della libreria. È possibile usare i comandi seguenti da ignorare nel codice. Le funzioni eseguono comunque, ma li ignora il debugger.  
   
-|Comando di tasti|Comando del menu Debug|Description|  
+|Comando di tasti|Comando del menu Debug|Descrizione|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione **Esegui istruzione/routine** esegue il codice, quindi viene sospesa alla prima riga del codice dopo che la funzione chiamata viene restituita.|  
 |**MAIUSC**+**F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando termina la funzione corrente. Il debugger passa attraverso la funzione corrente.|  
@@ -186,5 +186,5 @@ Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e l
 
 ## <a name="see-also"></a>Vedere anche
  [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)  
+ [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)  
  [Presentazione di debug](../debugger/debugger-feature-tour.md) 

@@ -39,7 +39,7 @@ IDiaSourceFile : IUnknown
 |[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumeratore dei moduli con i numeri di riga che fanno riferimento a questo file.|  
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera i byte di checksum.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
  Ottenere questa interfaccia chiamando il [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) oppure [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) metodi. Vedere l'esempio per i dettagli.  

@@ -40,7 +40,7 @@ HRESULT get_liveRangeLength ( 
 > [!NOTE]
 >  Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Dia2.h  

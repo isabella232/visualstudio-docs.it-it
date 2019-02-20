@@ -40,7 +40,7 @@ HRESULT get_arrayIndexType ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Alcuni linguaggi possono specificare il tipo utilizzato come indice per una matrice. Il simbolo restituito da questo metodo specifica tale tipo.  
   
 ## <a name="requirements"></a>Requisiti  

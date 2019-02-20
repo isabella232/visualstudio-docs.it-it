@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 948fb65e3d98ddf1e821c67cc72c065c946a6e34
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55036147"
@@ -178,7 +178,7 @@ enum SymTagEnum { 
  `SymTagHLSLType`  
  Indica che il simbolo è un tipo High Level Shader Language.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Tutti i simboli all'interno di un file di debug hanno un tag di identificazione che specifica il tipo del simbolo.  
   
  I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) (metodo).  

@@ -41,7 +41,7 @@ IDiaInjectedSource : IUnknown
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Recupera l'indicatore della compressione origine usata.|  
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Recupera i byte del codice sorgente.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Origine inserita è testo che viene inserito durante la compilazione. Ciò non significa che il preprocessore `#include` usato in C++.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  

@@ -26,7 +26,7 @@ ms.locfileid: "54768971"
 Rule Id|TODO|  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | È stata misurata relativamente elevata quantità di tempo di CPU in modalità kernel. Per determinare la causa, abilitare il campionamento SysCall.  
+| Messaggio | È stata misurata relativamente elevata quantità di tempo di CPU in modalità kernel. Provare ad analizzare l'origine abilitando il campionamento SysCall.|  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

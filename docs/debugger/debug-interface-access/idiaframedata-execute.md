@@ -44,7 +44,7 @@ HRESULT execute ( 
 |E_DIA_FRAME_ACCESS|Non è possibile registri di accesso o la memoria.|  
 |E_DIA_VALUE|Errore nel calcolo di un valore (ad esempio, la divisione per zero).|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questo metodo viene chiamato durante il debug di rimozione dello stack. Il [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) oggetto viene implementato dall'applicazione client per ricevere gli aggiornamenti per i registri e fornire i metodi utilizzati dal `execute` (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  

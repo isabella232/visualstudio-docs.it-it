@@ -37,7 +37,7 @@ HRESULT put_relativeVirtualAddressEnabled ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Gli indirizzi per gli oggetti di debug descritti dalle interfacce DIA e rispetto all'immagine del file eseguibile base, possono essere recuperati come indirizzi virtuali relativi.  
   
  L'uso di RVA è abilitato quando segmenti vengono inizialmente caricati da un file PDB. Per ottenere lo stato corrente dell'utilizzo di RVA, chiamare il [Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) (metodo).  

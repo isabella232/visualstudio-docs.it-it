@@ -27,7 +27,7 @@ ms.locfileid: "54770834"
 Id regola | DA0007 |  
 | Categoria di |. Utilizzo di NET Framework |  
 | Metodi di profilatura | Tutti i |  
-| Messaggio | Un numero elevato di eccezioni viene generato in modo coerente. Provare a ridurre l'utilizzo di eccezioni nella logica di programma.  
+| Messaggio | Un numero elevato di eccezioni viene generato in modo coerente. Provare a ridurre l'uso di eccezioni nella logica di programma.|  
 | Tipo di messaggio | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.  

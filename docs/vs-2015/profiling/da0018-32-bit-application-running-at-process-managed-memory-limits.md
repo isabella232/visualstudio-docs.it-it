@@ -26,7 +26,7 @@ ms.locfileid: "54773287"
 Id regola | DA0018 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | Gestire le allocazioni di memoria per raggiungere il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.  
+| Messaggio | Gestire le allocazioni di memoria per raggiungere il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.|  
 | Tipo di regola | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

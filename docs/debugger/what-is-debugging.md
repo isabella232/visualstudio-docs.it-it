@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204281"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919330"
 ---
 # <a name="what-is-debugging"></a>Che cos'è il debug?
 
@@ -54,4 +54,4 @@ In questo articolo si sono appresi alcuni concetti di debug generali. Successiva
 > [Debug per principianti](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [Correggere i bug scrivendo codice C# migliore](../debugger/write-better-code-with-visual-studio.md)
+> [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)

@@ -40,7 +40,7 @@ HRESULT get_age ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il periodo di validità non corrisponde necessariamente su qualsiasi valore di tempo noto; in genere utilizzato per determinare se un file con estensione PDB non è sincronizzato con un file .exe corrispondente.  
   
 ## <a name="requirements"></a>Requisiti  

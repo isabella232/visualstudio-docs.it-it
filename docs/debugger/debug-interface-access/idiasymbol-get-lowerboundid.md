@@ -40,7 +40,7 @@ HRESULT get_lowerBoundId ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
   
 ## <a name="see-also"></a>Vedere anche  

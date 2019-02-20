@@ -126,7 +126,7 @@ Identifica la versione dell'applicazione per l'installazione e la posizione del 
 ## <a name="dsigdigestvalue"></a>dsig:  
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
 
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Manifesti di distribuzione hanno in genere un singolo `assemblyIdentity` elemento che identifica il nome e la versione del manifesto dell'applicazione.  
 
 ## <a name="example"></a>Esempio  

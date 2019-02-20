@@ -26,7 +26,7 @@ ms.locfileid: "54801479"
 Id regola | DA0030 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i modelli di utilizzo di database e i dati chiave accederà ritardi. Abilitare l'opzione Profilatura interazione tra livelli e provare a eseguire di nuovo la profilatura dell'applicazione.  
+| Messaggio | La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i modelli di utilizzo di database e i dati chiave accederà ritardi. Usare l'opzione Abilita profilatura interazione tra livelli per ripetere la profilatura dell'applicazione.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  

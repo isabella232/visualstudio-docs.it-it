@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54802058"
 ---
-# <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Creare i commenti della documentazione XML per JavaScript IntelliSense
+# <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Creare commenti in formato documentazione XML per IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *Commenti in formato documentazione XML* sono JavaScript commenti aggiungere uno script per fornire informazioni sugli elementi di codice, ad esempio variabili, funzioni e campi. In Visual Studio, queste descrizioni di testo vengono visualizzate con IntelliSense quando si fa riferimento la funzione di script.  

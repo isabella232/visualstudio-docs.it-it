@@ -26,7 +26,7 @@ ms.locfileid: "54779117"
 # <a name="concurrency-visualizer"></a>Visualizzatore di concorrenze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-NOTA
+NOTA]
 >  Il Visualizzatore di concorrenza è un'estensione facoltativa di Visual Studio. Scaricare il Visualizzatore di concorrenza e gli strumenti di raccolta del visualizzatore di concorrenza dai collegamenti seguenti:  
 > 
 > - Scaricare l'estensione              [Visualizzatore di concorrenza](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  

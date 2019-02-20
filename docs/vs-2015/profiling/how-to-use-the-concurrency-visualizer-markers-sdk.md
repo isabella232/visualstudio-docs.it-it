@@ -96,7 +96,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Aggiungere il codice per creare tre intervalli nella serie di marcatori predefiniti e scrivere un flag, un messaggio e un avviso, uno per ogni intervallo. Viene creato un oggetto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> tramite la chiamata al metodo statico <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Per scrivere nella serie predefinita, vengono usati i metodi statici di scrittura della classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Aggiungere il codice per creare tre intervalli nella serie di marcatori predefiniti e scrivere un flag, un messaggio e un avviso, uno per ogni intervallo. Viene creato un oggetto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> tramite la chiamata al metodo statico [EnterSpan](<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->). Per scrivere nella serie predefinita, vengono usati i metodi statici di scrittura della classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   

@@ -40,7 +40,7 @@ HRESULT get_baseType ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Prima di tutto ottenere il tipo del simbolo ed quindi interrogazione che restituito per il tipo di base, è possibile determinare il tipo di base per un simbolo. Si noti che alcuni simboli potrebbero non avere un tipo di base, ad esempio, un nome di struttura.  
   
 ## <a name="example"></a>Esempio  

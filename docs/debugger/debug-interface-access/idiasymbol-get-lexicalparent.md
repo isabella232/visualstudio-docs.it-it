@@ -40,7 +40,7 @@ HRESULT get_lexicalParent ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Lessicale padre di un simbolo è la funzione o modulo che lo contiene. Ad esempio, lessicale padre di un parametro di funzione o variabile locale è la funzione stessa mentre lessicale padre della funzione è il modulo in che è definito.  
   
  I simboli possibili che possono essere visualizzati come elementi padre lessicali sono documentati in [gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  

@@ -37,7 +37,7 @@ HRESULT get_uniqueId ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Confronto delle chiavi anziché stringhe consente di velocizzare l'elaborazione di numeri di riga.  
   
 ## <a name="see-also"></a>Vedere anche  
