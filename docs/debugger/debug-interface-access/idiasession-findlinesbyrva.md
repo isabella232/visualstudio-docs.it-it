@@ -12,58 +12,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9310c60e73f3d51ab93e5fe0b40a5d871681175e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986618"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227183"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Recupera le righe che contengono un indirizzo virtuale relativo specificato (RVA) in un modulo specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT findLinesByRVA (   
-   DWORD                 rva,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `rva`  
- [in] Specifica l'indirizzo come un RVA.  
-  
- `length`  
- [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.  
-  
- `ppResult`  
- [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="example"></a>Esempio  
- In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti nella funzione specificata usando l'indirizzo virtuale relativo della funzione e la lunghezza.  
-  
-```C++  
-IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
-{  
-    IDiaEnumLineNumbers* pEnum = NULL;  
-    DWORD                rva;  
-    ULONGLONG            length;  
-  
-    if (pFunc->get_relativeVirtualAddress ( &rva ) == S_OK)  
-    {  
-        pFunc->get_length ( &length );  
-        pSession->findLinesByRVA( rva, static_cast<DWORD>( length ), &pEnum );  
-    }  
-    return(pEnum);  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+Recupera le righe che contengono un indirizzo virtuale relativo specificato (RVA) in un modulo specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT findLinesByRVA ( 
+    DWORD                 rva,
+    DWORD                 length,
+    IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`rva`  
+[in] Specifica l'indirizzo come un RVA.
+
+`length`  
+[in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.
+
+`ppResult`  
+[out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="example"></a>Esempio
+In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti nella funzione specificata usando l'indirizzo virtuale relativo della funzione e la lunghezza.
+
+```C++
+IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)
+{
+    IDiaEnumLineNumbers* pEnum = NULL;
+    DWORD                rva;
+    ULONGLONG            length;
+
+    if (pFunc->get_relativeVirtualAddress ( &rva ) == S_OK)
+    {
+        pFunc->get_length ( &length );
+        pSession->findLinesByRVA( rva, static_cast<DWORD>( length ), &pEnum );
+    }
+    return(pEnum);
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)

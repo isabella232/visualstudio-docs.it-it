@@ -12,133 +12,133 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50d38204155e12f65856f60e2b9df7f10837b515
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: f3ca5cc1806aa1b53a3646c1b67320037ed56983
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920931"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227290"
 ---
 # <a name="idiatable"></a>IDiaTable
-Enumera una tabella di origine dati DIA.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-IDiaTable : IEnumUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IDiaTable`.  
-  
-|Metodo|Descrizione|  
-|------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|  
-|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Recupera il nome della tabella.|  
-|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Recupera il numero di elementi nella tabella.|  
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Recupera un riferimento a un indice voce specifica.|  
-  
-## <a name="remarks"></a>Osservazioni  
- Questa interfaccia implementerà il `IEnumUnknown` i metodi di enumerazione nello spazio dei nomi Interop. Il `IEnumUnknown` è molto più efficiente per scorrere il contenuto della tabella di interfaccia di enumerazione il [Idiatable](../../debugger/debug-interface-access/idiatable-get-count.md) e [Idiatable](../../debugger/debug-interface-access/idiatable-item.md) metodi.  
-  
- L'interpretazione del `IUnknown` interfaccia restituita dal `IDiaTable::Item` metodo o il `Next` metodo (nello spazio dei nomi Interop) dipende dal tipo di tabella. Ad esempio, se il `IDiaTable` interfaccia rappresenta un elenco di origini inserite, la `IUnknown` interfaccia deve essere eseguita una query per il [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaccia.  
-  
-## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-item.md) oppure [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-next.md) metodi.  
-  
- Le interfacce seguenti sono implementate con il `IDiaTable` interfaccia (vale a dire, è possibile eseguire una query di `IDiaTable` interfaccia per una delle interfacce seguenti):  
-  
--   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
-  
--   [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
-  
--   [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-  
--   [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
-  
--   [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
-  
--   [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
-  
--   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
-  
-## <a name="example"></a>Esempio  
- La prima funzione `ShowTableNames`, vengono visualizzati i nomi di tutte le tabelle nella sessione. La seconda funzione `GetTable`, esegue la ricerca di tutte le tabelle per una tabella che implementa un'interfaccia specificata. La terza funzione `UseTable`, viene illustrato come utilizzare il `GetTable` (funzione).  
-  
+Enumera una tabella di origine dati DIA.
+
+## <a name="syntax"></a>Sintassi
+
+```
+IDiaTable : IEnumUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+Nella tabella seguente sono illustrati i metodi di `IDiaTable`.
+
+|Metodo|Descrizione|
+|------------|-----------------|
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|
+|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Recupera il nome della tabella.|
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Recupera il numero di elementi nella tabella.|
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Recupera un riferimento a un indice voce specifica.|
+
+## <a name="remarks"></a>Osservazioni
+Questa interfaccia implementerà il `IEnumUnknown` i metodi di enumerazione nello spazio dei nomi Interop. Il `IEnumUnknown` è molto più efficiente per scorrere il contenuto della tabella di interfaccia di enumerazione il [Idiatable](../../debugger/debug-interface-access/idiatable-get-count.md) e [Idiatable](../../debugger/debug-interface-access/idiatable-item.md) metodi.
+
+L'interpretazione del `IUnknown` interfaccia restituita dal `IDiaTable::Item` metodo o il `Next` metodo (nello spazio dei nomi Interop) dipende dal tipo di tabella. Ad esempio, se il `IDiaTable` interfaccia rappresenta un elenco di origini inserite, la `IUnknown` interfaccia deve essere eseguita una query per il [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaccia.
+
+## <a name="notes-for-callers"></a>Note per i chiamanti
+Ottenere questa interfaccia chiamando il [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-item.md) oppure [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-next.md) metodi.
+
+Le interfacce seguenti sono implementate con il `IDiaTable` interfaccia (vale a dire, è possibile eseguire una query di `IDiaTable` interfaccia per una delle interfacce seguenti):
+
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+
+## <a name="example"></a>Esempio
+La prima funzione `ShowTableNames`, vengono visualizzati i nomi di tutte le tabelle nella sessione. La seconda funzione `GetTable`, esegue la ricerca di tutte le tabelle per una tabella che implementa un'interfaccia specificata. La terza funzione `UseTable`, viene illustrato come utilizzare il `GetTable` (funzione).
+
 > [!NOTE]
->  `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
-  
-```C++  
-void ShowTableNames(IDiaSession *pSession)  
-{  
-    CComPtr<IDiaEnumTables> pTables;  
-    if ( FAILED( psession->getEnumTables( &pTables ) ) )  
-    {  
-        Fatal( "getEnumTables" );  
-    }  
-    CComPtr< IDiaTable > pTable;  
-    while ( SUCCEEDED( hr = pTables->Next( 1, &pTable, &celt ) )  
-            && celt == 1 )  
-    {  
-        CDiaBSTR bstrTableName;  
-        if ( pTable->get_name( &bstrTableName ) != 0 )  
-        {  
-            Fatal( "get_name" );  
-        }  
-        printf( "Found table: %ws\n", bstrTableName );  
-    }  
-  
-// Searches the list of all tables for a table that supports  
-// the specified interface.  Use this function to obtain an  
-// enumeration interface.  
-HRESULT GetTable(IDiaSession* pSession,  
-                 REFIID       iid,  
-                 void**       ppUnk)  
-{  
-    CComPtr<IDiaEnumTables> pEnumTables;  
-    HRESULT hResult;  
-  
-    if (FAILED(pSession->getEnumTables(&pEnumTables)))  
-        Fatal("getEnumTables");  
-  
-    CComPtr<IDiaTable> pTable;  
-    ULONG celt = 0;  
-    while (SUCCEEDED(hResult = pEnumTables->Next(1, &pTable, &celt)) &&  
-           celt == 1)  
-    {  
-        if (pTable->QueryInterface(iid, (void**)ppUnk) == S_OK)  
-        {  
-            return S_OK;  
-        }  
-        pTable = NULL;  
-    }  
-  
-    if (FAILED(hResult))  
-        Fatal("EnumTables->Next");  
-  
-    return E_FAIL;  
-}  
-  
-// This function shows how to use the GetTable function.  
-void UseTable(IDiaSession *pSession)  
-{  
-    CComPtr<IDiaEnumSegments> pEnumSegments;  
-    if (SUCCEEDED(GetTable(pSession, __uuidof(IDiaEnumSegments), &pEnumSegments)))  
-    {  
-        // Do something with pEnumSegments.  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
-  
- Libreria: diaguids.lib  
-  
- DLL: MSDIA80  
-  
-## <a name="see-also"></a>Vedere anche  
- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
- [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
+> `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.
+
+```C++
+void ShowTableNames(IDiaSession *pSession)
+{
+    CComPtr<IDiaEnumTables> pTables;
+    if ( FAILED( psession->getEnumTables( &pTables ) ) )
+    {
+        Fatal( "getEnumTables" );
+    }
+    CComPtr< IDiaTable > pTable;
+    while ( SUCCEEDED( hr = pTables->Next( 1, &pTable, &celt ) )
+            && celt == 1 )
+    {
+        CDiaBSTR bstrTableName;
+        if ( pTable->get_name( &bstrTableName ) != 0 )
+        {
+            Fatal( "get_name" );
+        }
+        printf( "Found table: %ws\n", bstrTableName );
+    }
+
+// Searches the list of all tables for a table that supports
+// the specified interface.  Use this function to obtain an
+// enumeration interface.
+HRESULT GetTable(IDiaSession* pSession,
+                 REFIID       iid,
+                 void**       ppUnk)
+{
+    CComPtr<IDiaEnumTables> pEnumTables;
+    HRESULT hResult;
+
+    if (FAILED(pSession->getEnumTables(&pEnumTables)))
+        Fatal("getEnumTables");
+
+    CComPtr<IDiaTable> pTable;
+    ULONG celt = 0;
+    while (SUCCEEDED(hResult = pEnumTables->Next(1, &pTable, &celt)) &&
+           celt == 1)
+    {
+        if (pTable->QueryInterface(iid, (void**)ppUnk) == S_OK)
+        {
+            return S_OK;
+        }
+        pTable = NULL;
+    }
+
+    if (FAILED(hResult))
+        Fatal("EnumTables->Next");
+
+    return E_FAIL;
+}
+
+// This function shows how to use the GetTable function.
+void UseTable(IDiaSession *pSession)
+{
+    CComPtr<IDiaEnumSegments> pEnumSegments;
+    if (SUCCEEDED(GetTable(pSession, __uuidof(IDiaEnumSegments), &pEnumSegments)))
+    {
+        // Do something with pEnumSegments.
+    }
+}
+```
+
+## <a name="requirements"></a>Requisiti
+Intestazione: Dia2.h
+
+Libreria: diaguids.lib
+
+DLL: MSDIA80
+
+## <a name="see-also"></a>Vedere anche
+[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
+[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)  
+[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

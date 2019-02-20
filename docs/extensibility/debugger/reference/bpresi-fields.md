@@ -12,65 +12,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b19dbf2d103d76ca01a3843c1cfc0072c0e23ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0784d26f4d5ae6bd8edd9b6565644a6cd513db78
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006203"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413059"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
-Specifica le informazioni da recuperare sulla corretta risoluzione di un punto di interruzione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-enum enum_BPRESI_FIELDS {   
-   BPRESI_BPRESLOCATION = 0x0001,  
-   BPRESI_PROGRAM       = 0x0002,  
-   BPRESI_THREAD        = 0x0004,  
-   BPRESI_ALLFIELDS     = 0xffffffff  
-};  
-typedef DWORD BPRESI_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_BPRESI_FIELDS {   
-   BPRESI_BPRESLOCATION = 0x0001,  
-   BPRESI_PROGRAM       = 0x0002,  
-   BPRESI_THREAD        = 0x0004,  
-   BPRESI_ALLFIELDS     = 0xffffffff  
-};  
-```  
-  
-## <a name="members"></a>Membri  
- BPRESI_BPRESLOCATION  
- Initialize/usare la `bpResLocation` campo (punto di interruzione risoluzione percorso) della finestra di [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura.  
-  
- BPRESI_PROGRAM  
- Initialize/usare la `pProgram` campo il `BP_RESOLUTION_INFO` struttura.  
-  
- BPRESI_THREAD  
- Initialize/usare la `pThread` campo il `BP_RESOLUTION_INFO` struttura.  
-  
- BPRESI_ALLFIELDS  
- Specifica tutti i campi.  
-  
-## <a name="remarks"></a>Note  
- Passato per il [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodo per indicare quali campi della [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura devono essere inizializzate.  
-  
- Questi flag vengono usanti anche per indicare quali campi del `BP_RESOLUTION_INFO` struttura siano usati e validi quando viene restituita tale struttura.  
-  
- Questi valori possono essere combinati con un bit per bit `OR`.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+Specifica le informazioni da recuperare sulla corretta risoluzione di un punto di interruzione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+enum enum_BPRESI_FIELDS {
+    BPRESI_BPRESLOCATION = 0x0001,
+    BPRESI_PROGRAM       = 0x0002,
+    BPRESI_THREAD        = 0x0004,
+    BPRESI_ALLFIELDS     = 0xffffffff
+};
+typedef DWORD BPRESI_FIELDS;
+```
+
+```csharp
+public enum enum_BPRESI_FIELDS {
+    BPRESI_BPRESLOCATION = 0x0001,
+    BPRESI_PROGRAM       = 0x0002,
+    BPRESI_THREAD        = 0x0004,
+    BPRESI_ALLFIELDS     = 0xffffffff
+};
+```
+
+## <a name="members"></a>Membri
+BPRESI_BPRESLOCATION  
+Initialize/usare la `bpResLocation` campo (punto di interruzione risoluzione percorso) della finestra di [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura.
+
+BPRESI_PROGRAM  
+Initialize/usare la `pProgram` campo il `BP_RESOLUTION_INFO` struttura.
+
+BPRESI_THREAD  
+Initialize/usare la `pThread` campo il `BP_RESOLUTION_INFO` struttura.
+
+BPRESI_ALLFIELDS  
+Specifica tutti i campi.
+
+## <a name="remarks"></a>Note
+Passato per il [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodo per indicare quali campi della [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura devono essere inizializzate.
+
+Questi flag vengono usanti anche per indicare quali campi del `BP_RESOLUTION_INFO` struttura siano usati e validi quando viene restituita tale struttura.
+
+Questi valori possono essere combinati con un bit per bit `OR`.
+
+## <a name="requirements"></a>Requisiti
+Intestazione: msdbg.h
+
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
+[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

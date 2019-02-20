@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408864d2f105762cbaede528f8794595a34b3b29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973330"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317055"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -43,7 +43,7 @@ ms.locfileid: "54973330"
 
 |||
 |-|-|
-|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> - Mostrare gli eventi passati.<br />- Mostrare le informazioni sulle chiamate con gli eventi passati.<br />- Salvare la sessione di IntelliTrace.<br />- Controllare i dati raccolti da IntelliTrace.|- [Esaminare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debug cronologico](../debugger/historical-debugging.md)|
+|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> - Mostrare gli eventi passati.<br />- Mostrare le informazioni sulle chiamate con gli eventi passati.<br />- Salvare la sessione di IntelliTrace.<br />- Controllare i dati raccolti da IntelliTrace.|- [Esaminare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procedura dettagliata: uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debug cronologico](../debugger/historical-debugging.md)|
 |**Raccogliere i dati IntelliTrace durante una sessione di test in Test Manager**|- [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Raccogliere dati IntelliTrace dalle applicazioni distribuite**|- [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Avviare il debug da un file di log IntelliTrace (file .iTrace).**|- [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)|
@@ -52,7 +52,7 @@ ms.locfileid: "54973330"
 
 | | |
 |---------------------| - |
-| **Supporto completo** | - Applicazioni Visual Basic e Visual C# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Supporto completo** | - Applicazioni Visual Basic e Visual C# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
 | **Supporto limitato** | -C + + App destinate a supporto di Windows la visualizzazione di snapshot tramite tornare indietro di IntelliTrace. Sono supportati solo gli eventi di eccezione e del debugger.<br />-.NET core e le app ASP.NET Core è supportato per determinati solo eventi (eventi Controller MVC, ADO.NET e HTTPClient) nel debug locale. Agente di raccolta autonomo non è supportata per le app .NET Core o ASP.NET Core.<br />- App F# su base sperimentale<br />-App della piattaforma UWP supportata solo per gli eventi |
 | **Non supportato** | -Altri linguaggi e script<br />- Windows Services, Silverlight, Xbox o app [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
@@ -141,7 +141,7 @@ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTr
 
     - [Usare i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)
 
-    - [Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+    - [Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **Acquisisci snapshot**
 
@@ -186,7 +186,7 @@ La raccolta di informazioni sulle chiamate potrebbe rallentare significativament
 
 ### <a name="blogs"></a>Blog
 
-[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
+[Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>Forum
 
