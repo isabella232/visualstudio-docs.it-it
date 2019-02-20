@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155994"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317224"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Benvenuti all'IDE di Visual Studio | C#
 
@@ -122,18 +122,6 @@ Al primo avvio di Visual Studio, è possibile scegliere facoltativamente di [acc
 Per informazioni su altri modi per personalizzare l'IDE, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Creare un programma
-
-Visual Studio verrà prima di tutto configurato per usare impostazioni di ambiente su misura per gli sviluppatori C#.
-
-1. Nella barra dei menu scegliere **Strumenti** > **Importa/Esporta impostazioni**.
-
-2. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** nella prima pagina e quindi scegliere **Avanti**.
-
-3. Nella pagina **Salvare le impostazioni correnti** selezionare un'opzione per salvare o meno le impostazioni correnti e quindi scegliere **Avanti**. (Se non è stata personalizzata alcuna impostazione, selezionare **No, ripristina solo le impostazioni sovrascrivendo le impostazioni correnti**.)
-
-4. Nella pagina **Scegliere una raccolta di impostazioni predefinita** scegliere **Visual C#** e quindi scegliere **Fine**.
-
-5. Nella pagina **Reimpostazione completa** scegliere **Chiudi**.
 
 In questa sezione viene descritta in dettaglio la procedura per creare un programma semplice.
 
@@ -303,4 +291,4 @@ Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli i
 
 - Scoprire [altre funzionalità di Visual Studio](../../ide/advanced-feature-overview.md)
 - Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Leggere il [Blog di Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Leggere il [Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/)

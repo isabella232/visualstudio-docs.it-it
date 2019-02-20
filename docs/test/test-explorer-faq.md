@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935121"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318316"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -107,7 +107,7 @@ Tutti i progetti di test devono includere il riferimento NuGet all'adattatore di
 
 Il **progetto di test{} non fa riferimento ad alcun adattatore NuGet .NET. L'individuazione o l'esecuzione dei test potrebbe non funzionare per questo progetto. È consigliabile fare riferimento agli adattatori di test NuGet in ogni progetto di test .NET nella soluzione.**
 
-Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i pacchetti NuGet dell'adattatore di test. Questo requisito migliora notevolmente le prestazioni e causa meno problemi con l'integrazione continua. Altre informazioni sulla deprecazione dell'estensione dell'adattatore di test .NET sono disponibili nelle [note sulla versione](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i pacchetti NuGet dell'adattatore di test. Questo requisito migliora notevolmente le prestazioni e causa meno problemi con l'integrazione continua. Altre informazioni sulla deprecazione dell'estensione dell'adattatore di test .NET sono disponibili nelle [note sulla versione](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 > [!NOTE]
 > Se si usa l'adattatore di test NUnit 2 e non si può eseguire la migrazione a NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 in **Strumenti** > **Opzioni** > **Test**.

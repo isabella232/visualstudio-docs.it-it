@@ -12,17 +12,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935004"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318589"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
 > [!TIP]
-> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disponibili le seguenti funzionalità che rendono Visual Studio più accessibile per gli utenti con disabilità:
 

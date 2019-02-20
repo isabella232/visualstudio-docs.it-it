@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f6316332ce74ddcd291612524cab2b2019606d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954478"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315872"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 
@@ -72,4 +72,4 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 
 - [Ottimizzare le prestazioni di Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)
+- [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)
