@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016534"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318420"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni su consigli e suggerimenti relativi alla produttività per il Debugger di Visual Studio
 
@@ -77,9 +77,9 @@ Modificando il flusso di esecuzione è possibile eseguire operazioni come testar
 3. Trovare la variabile nel **variabili locali** finestra (**Debug > Windows > variabili locali**), la variabile e scegliere **Crea ID oggetto**.
 
     ![Creare un ID di oggetto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Questa variabile è l'ID oggetto.
-  
+
 5.  Fare doppio clic la variabile dell'ID oggetto e scegli **Aggiungi espressione di controllo**.
 
 Per altre informazioni, vedere [creare un ID di oggetto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Se è necessario eseguire il debug di tipi di problemi comuni per le app a threa
 #### <a name="to-show-threads-in-your-source-code"></a>Per visualizzare i thread nel codice sorgente
 
 1.  Durante il debug, fare clic sui **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") nel **Debug** sulla barra degli strumenti.
-  
+
 2.  All'estrema sinistra della finestra, In questa riga, viene visualizzato un *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che due fili. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
 
     Si noti che un marcatore del thread potrebbe essere parzialmente nascosta da un punto di interruzione.
-  
+
 3.  Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati. in cui è indicato il nome e il numero ID di ciascun thread interrotto.
 
     È anche possibile visualizzare il percorso del thread dei [finestra Stack in parallelo](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Per scoprire come il debugger consente di classificare il codice come codice ute
 
 Per altri suggerimenti e consigli e informazioni più dettagliate, vedere questi post di blog:
 
-- [7 HACK noti minori per il debug in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 strumenti utili nascosti in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 HACK noti minori per il debug in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 strumenti utili nascosti in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Vedere anche
 [Tasti di scelta rapida](../ide/tips-and-tricks-for-visual-studio.md)

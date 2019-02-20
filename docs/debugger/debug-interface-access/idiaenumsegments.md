@@ -12,66 +12,66 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 426d8dc998bfdf6859735e508595f9661b5c38d2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39ac47f107c7365e2932d36084b2fc114934daba
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939218"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227355"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
-Enumera i vari segmenti contenuti nell'origine dati.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-IDiaEnumSegments : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IDiaEnumSegments`.  
-  
-|Metodo|Description|  
-|------------|-----------------|  
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|  
-|[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Recupera il numero di segmenti.|  
-|[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Recupera un segmento per mezzo di un indice.|  
-|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Recupera un determinato numero di segmenti nella sequenza di enumerazione.|  
-|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Ignora un determinato numero di segmenti in una sequenza di enumerazione.|  
-|[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
-|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
-  
-## <a name="remarks"></a>Note  
-  
-## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il `QueryInterface` metodo su un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) oggetto. Vedere l'esempio per i dettagli.  
-  
-## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come ottenere il `IDiaEnumSections` interfaccia da una tabella. Per un esempio più completo dell'uso di segmenti, vedere la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interfaccia.  
-  
-```C++  
-void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
-{  
-    CComPtr<IDiaEnumSegments> pSegments;  
-    if ( SUCCEEDED( pTable->QueryInterface(  
-                                __uuidof( IDiaEnumSegments ),  
-                                (void**)&pSegments )  
-                  )  
-       )  
-    {  
-        // Do something with this enumeration  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
-  
- Libreria: diaguids.lib  
-  
- DLL: MSDIA80  
-  
-## <a name="see-also"></a>Vedere anche  
- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Enumera i vari segmenti contenuti nell'origine dati.
+
+## <a name="syntax"></a>Sintassi
+
+```
+IDiaEnumSegments : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+Nella tabella seguente sono illustrati i metodi di `IDiaEnumSegments`.
+
+|Metodo|Descrizione|
+|------------|-----------------|
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|
+|[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Recupera il numero di segmenti.|
+|[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Recupera un segmento per mezzo di un indice.|
+|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Recupera un determinato numero di segmenti nella sequenza di enumerazione.|
+|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Ignora un determinato numero di segmenti in una sequenza di enumerazione.|
+|[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
+|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
+
+## <a name="remarks"></a>Osservazioni
+
+## <a name="notes-for-callers"></a>Note per i chiamanti
+Ottenere questa interfaccia chiamando il `QueryInterface` metodo su un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) oggetto. Vedere l'esempio per i dettagli.
+
+## <a name="example"></a>Esempio
+In questo esempio viene illustrato come ottenere il `IDiaEnumSections` interfaccia da una tabella. Per un esempio più completo dell'uso di segmenti, vedere la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interfaccia.
+
+```C++
+void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
+{
+    CComPtr<IDiaEnumSegments> pSegments;
+    if ( SUCCEEDED( pTable->QueryInterface(
+                                __uuidof( IDiaEnumSegments ),
+                                (void**)&pSegments )
+                  )
+       )
+    {
+        // Do something with this enumeration
+    }
+}
+```
+
+## <a name="requirements"></a>Requisiti
+Intestazione: Dia2.h
+
+Libreria: diaguids.lib
+
+DLL: MSDIA80
+
+## <a name="see-also"></a>Vedere anche
+[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaTable](../../debugger/debug-interface-access/idiatable.md)  
+[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

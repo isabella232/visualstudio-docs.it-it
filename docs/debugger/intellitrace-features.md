@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035237"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317770"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funzionalità IntelliTrace (C#, Visual Basic, C++)
 
@@ -105,21 +105,21 @@ Quando si salvano i dati di IntelliTrace per file, è possibile ottenere un file
 
 ## <a name="blogs"></a>Blog
 
-[IntelliTrace in Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[IntelliTrace in Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[Procedura dettagliata del debug attivo tramite IntelliTrace in Visual Studio 2015 (Editor di testo)](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[Procedura dettagliata del debug attivo tramite IntelliTrace in Visual Studio 2015 (Editor di testo)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[Procedura dettagliata del debug attivo tramite IntelliTrace in Visual Studio 2015 (Social Club)](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[Procedura dettagliata del debug attivo tramite IntelliTrace in Visual Studio 2015 (Social Club)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[IntelliTrace in Visual Studio Enterprise 2015 ora supporta!](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[IntelliTrace in Visual Studio Enterprise 2015 ora supporta!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[Raccogliere i dati da un servizio windows utilizzando l'agente di raccolta autonomo IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[Raccogliere i dati da un servizio windows utilizzando l'agente di raccolta autonomo IntelliTrace](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[Modifica il piano di raccolta IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[Modifica il piano di raccolta IntelliTrace](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[TraceSource personalizzato e il debug mediante IntelliTrace](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[TraceSource personalizzato e il debug mediante IntelliTrace](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Agente di raccolta autonomo IntelliTrace e pool di applicazioni in esecuzione in account di Active Directory](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Agente di raccolta autonomo IntelliTrace e pool di applicazioni in esecuzione in account di Active Directory](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>Forum
 
