@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768832"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335538"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Riferimento alla migrazione e all'aggiornamento di un progetto per Visual Studio 2017
 
@@ -34,7 +35,7 @@ Varia periodicamente anche il supporto per alcuni tipi di progetto. È possibile
 
 Questo articolo offre informazioni dettagliate relative solo ai tipi di progetto di cui Visual Studio 2017 può eseguire la migrazione. L'articolo esclude i tipi di progetto che non sono più supportati in Visual Studio 2017 e di cui non è possibile eseguire la migrazione. L'articolo esclude anche i tipi di progetto supportati che non evidenziano problemi di migrazione. L'elenco è disponibile in [Selezione della piattaforma e compatibilità](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Determinati tipi di progetto richiedono l'installazione dei carichi di lavoro appropriati usando il programma di installazione di Visual Studio. Se non è installato il carico di lavoro, Visual Studio non segnala un tipo di progetto sconosciuto o incompatibile. In tal caso, controllare le opzioni di installazione e riprovare. Anche in questo caso, vedere l'articolo [Selezione della piattaforma e compatibilità](/visualstudio/productinfo/vs2017-compatibility-vs) per informazioni dettagliate sul supporto del progetto in Visual Studio 2017.
 
 ## <a name="project-types"></a>Tipi di progetto

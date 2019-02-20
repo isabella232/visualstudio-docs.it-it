@@ -16,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921419"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315534"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: Usare esclusivamente la tastiera
 
 > [!TIP]
-> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prevede molte combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per un elenco completo delle combinazioni di tasti usate in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
 

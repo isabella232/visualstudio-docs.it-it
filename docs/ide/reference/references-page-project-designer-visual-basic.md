@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970751"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335130"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 
@@ -32,12 +31,6 @@ Per accedere alla pagina **Riferimenti**, scegliere un nodo del progetto (non il
 ## <a name="uielement-list"></a>Elenco UIElement
 
 Le opzioni seguenti consentono di selezionare o rimuovere riferimenti e spazi dei nomi importati del progetto.
-
-**Riferimenti inutilizzati**
-
-Fare clic su questo pulsante per accedere alla finestra di dialogo **Riferimenti inutilizzati**.
-
-La finestra di dialogo **Riferimenti inutilizzati** consente di rimuovere i riferimenti inclusi nel progetto ma non usati effettivamente dal codice. Contiene una griglia in cui sono elencati **Nome riferimento**, **Percorso** e altre informazioni sui riferimenti allo spazio dei nomi inutilizzati nel progetto. Nella griglia selezionare i riferimenti allo spazio dei nomi che si vuole rimuovere dal progetto e fare clic su **Rimuovi**.
 
 **Percorsi riferimento**
 
