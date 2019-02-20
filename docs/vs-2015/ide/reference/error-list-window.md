@@ -27,7 +27,7 @@ ms.locfileid: "54785771"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-NOTA
+NOTA]
 >  L'elenco degli errori consente di visualizzare informazioni su un messaggio di errore specifico. È possibile copiare il testo della stringa di errore o il numero di errore nella finestra di output. Per visualizzare la finestra di output, selezionare i tasti Ctrl+Alt+O. Vedere [Finestra di output](../../ide/reference/output-window.md).  
   
  È possibile sviluppare applicazioni più velocemente usando la finestra **Elenco errori**. Ad esempio, è possibile effettuare le attività seguenti:  

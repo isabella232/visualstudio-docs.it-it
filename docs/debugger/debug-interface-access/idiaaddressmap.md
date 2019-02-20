@@ -42,7 +42,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Set di intestazioni per abilitare la conversione degli indirizzi virtuale relativi dell'immagine.|  
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fornisce un mapping di indirizzi per supportare le traduzioni di layout di immagine.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il controllo specificato da questa interfaccia è incapsulato in due set di dati è fornire: esegue il mapping di indirizzi o un'immagine di intestazioni. La maggior parte dei client utilizzano le [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metodo per trovare le informazioni di debug appropriati per un'immagine e il metodo può in genere individuare tutti i dati di intestazioni e le mappe necessari se stesso. Alcuni client tuttavia implementare l'elaborazione specializzata e la ricerca di dati. Tali client utilizzano i metodi del `IDiaAddressMap` interfaccia per fornire il DIA SDK con i risultati della ricerca.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  

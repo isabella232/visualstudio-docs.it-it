@@ -44,7 +44,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  Identifica il contesto di verifica. Questo nome viene usato per creare il nome del file di log.  
   
 ## <a name="return-value"></a>Valore restituito  
- <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> con il bit SUCCEEDED impostato se il contesto di rilevamento è stato creato.  
+ [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il bit [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) impostato se il contesto di verifica è stato creato.  
   
 ## <a name="requirements"></a>Requisiti  
  **Intestazione:** FileTracker.h

@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a967581a2b5da2354908f6f5d6a2f5a35d7fa1c
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55040021"
@@ -70,7 +70,7 @@ enum DataKind { 
  DataIsConstant  
  Elemento dati è un valore costante.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono restituiti per il [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  

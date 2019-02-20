@@ -26,7 +26,7 @@ ms.locfileid: "54787355"
 Id regola | DA0502 |  
 | Categoria | Monitoraggio delle risorse |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | Questa regola è solo a scopo informativo. Il contatore di tempo processore Process()\\% misura il consumo di CPU del processo sottoposto a profilatura. Il valore restituito corrisponde al valore massimo osservato per tutti gli intervalli di misurazione.  
+| Messaggio | Questa regola è solo a scopo informativo. Il contatore di tempo processore Process()\\% misura il consumo di CPU del processo sottoposto a profilatura. Il valore indicato corrisponde al valore massimo osservato per tutti gli intervalli di misurazione.|  
 | Tipo di regola | Informativo |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

@@ -1,14 +1,9 @@
 ---
 title: Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
@@ -16,13 +11,13 @@ ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f235e79b7173ec37e5ecfdf2dd3f0d1d2ae1ea40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8acdea7f4c524e6a8697b502efe610fb95a27680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753307"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "49257673"
 È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Per informazioni sulla procedura|Vedere|  
 |----------------------------------|---------|  
 |Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Specificare la sicurezza per i componenti aggiuntivi.|[Componente aggiuntivo sicurezza, ambiente, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Specificare la sicurezza per i componenti aggiuntivi.|[Sicurezza componenti aggiuntivi, Ambiente, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Modificare le impostazioni predefinite per il salvataggio e il recupero automatici dei file|[Salvataggio automatico, Ambiente, finestra di dialogo Opzioni](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Personalizzare l'esecuzione degli aggiornamenti e la modalità di gestione delle estensioni.|[Estensioni e aggiornamenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  
@@ -54,6 +49,3 @@ ms.locfileid: "49257673"
   
 ## <a name="see-also"></a>Vedere anche  
  [Finestra di dialogo Opzioni](../../ide/reference/options-dialog-box-visual-studio.md)
-
-
-

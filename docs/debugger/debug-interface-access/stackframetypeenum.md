@@ -54,7 +54,7 @@ enum StackFrameTypeEnum {
  `FrameTypeUnknown`  
  Frame che non ha le informazioni di debug.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono restituiti da una chiamata per il [Idiastackframe](../../debugger/debug-interface-access/idiastackframe-get-type.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  

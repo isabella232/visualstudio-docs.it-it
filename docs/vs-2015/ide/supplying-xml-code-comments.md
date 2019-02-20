@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780498"
 ---
 # <a name="supplying-xml-code-comments"></a>Inserimento di commenti al codice XML
@@ -27,7 +27,7 @@ ms.locfileid: "54780498"
 
 È possibile rendere disponibili commenti nei file di codice sorgente come IntelliSense. Quando si aggiunge l'opzione /doc alla riga di comando del compilatore Visual Basic, C# o C++, viene generato un file con estensione xml che funge da base per la documentazione IntelliSense.  
   
- Per altre informazioni sulla documentazione di codice in Visual Basic, vedere [come: Creare documentazione XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Per altre informazioni sulla documentazione di codice in Visual Basic, vedere [How to: Create XML Documentation](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230) (Procedura: Creare documentazione di XML).  
   
  Per altre informazioni sulla documentazione di codice in C#, vedere [Commenti relativi alla documentazione XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   

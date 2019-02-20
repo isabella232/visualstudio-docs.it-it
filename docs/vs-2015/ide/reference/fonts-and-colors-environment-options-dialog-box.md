@@ -192,7 +192,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
 |**Attributo XML**|Nomi di attributi.|  
 |**Virgolette per l'attributo XML**|Virgolette per gli attributi XML.|  
 |**Valore dell'attributo XML**|Contenuto degli attributi XML.|  
-|**Sezione CData XML**|Contenuto di \<![CDATA[...]]>.|  
+|**Sezione CData XML**|Contenuto di \<![CDATA[…]]>.|  
 |**Commento XML**|Contenuto di \<!-- -->.|  
 |**Delimitatore XML**|Delimitatori di sintassi XML, tra cui <, <?, <!, \<!--, -->, ?\>, \<![, ]]> e [, ].|  
 |**Attributo documento XML**|Valore di un attributo di documentazione XML, come \<param name="I"> dove la "I" è colorata.|  

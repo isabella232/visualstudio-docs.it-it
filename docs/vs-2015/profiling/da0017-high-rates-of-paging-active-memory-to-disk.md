@@ -26,7 +26,7 @@ ms.locfileid: "54803488"
 Id regola | DA0017 |  
 | Categoria | La memoria e Paging |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | È stata rilevata una frequenza elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria.  
+| Messaggio | È stata rilevata una frequenza elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria.|  
 | Tipo di regola | Informazioni |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

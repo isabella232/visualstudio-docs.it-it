@@ -37,7 +37,7 @@ HRESULT get_cplusplusExceptionHandling ( 
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Gestione delle eccezioni C++ non è uguale a strutturato o la gestione delle eccezioni di sistema.  
   
  Per determinare se è strutturata delle eccezioni sono attivo, chiamare il [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (metodo).  

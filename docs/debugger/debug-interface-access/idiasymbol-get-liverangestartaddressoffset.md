@@ -40,7 +40,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 > [!NOTE]
 >  Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  L'indirizzo costituita dalla sezione e offset è l'inizio dell'intervallo in cui il simbolo è valido.  
   
  Per ottenere la parte della sezione dell'indirizzo, usare [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  

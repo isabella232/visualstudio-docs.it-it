@@ -47,7 +47,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`ResolvedAssemblyReferences`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i riferimenti all'assembly risolti.|  
 |`ResolvedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file con nomi completi su disco che corrispondono alle posizioni fisiche delle librerie dei tipi fornite come input per questa attività.|  
 |`ResolvedModules`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.|  
-|`SdkToolsPath`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String facoltativo.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
+|`SdkToolsPath`|Parametro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
 |`StateFile`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il file di cache per i timestamp dei componenti COM. Se non presente, ogni esecuzione genererà nuovamente tutti i wrapper.|  
 |`TargetFrameworkVersion`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica la versione del framework di destinazione del progetto.<br /><br /> Il valore predefinito è `String.Empty`. Tale valore indica che non viene applicato alcun filtro a un riferimento in base al framework di destinazione.|  
 |`TargetProcessorArchitecture`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag tlbimp.exe /machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
@@ -55,7 +55,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`TypeLibNames`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i nomi delle librerie dei tipi da risolvere. Gli elementi inclusi in questo parametro devono contenere alcuni metadati dell'elemento. Per altre informazioni, vedere la sezione "Metadati dell'elemento TypeLibNames" riportata di seguito.|  
 |`WrapperOutputDirectory`|Parametro `String` facoltativo.<br /><br /> Percorso su disco in cui viene inserito l'assembly di interoperabilità generato. Se questi metadati di elemento non vengono specificati, l'attività userà il percorso assoluto della directory in cui si trova il file di progetto.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="typelibnames-item-metadata"></a>Metadati dell'elemento TypeLibNames  
  Nella tabella seguente vengono descritti i metadati disponibili per gli elementi passati al parametro `TypeLibNames`.  
@@ -78,7 +78,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 > [!NOTE]
 >  Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di tali parametri aggiuntivi e le relative descrizioni, vedere [Classe di base Task](../msbuild/task-base-class.md).  
   
 ## <a name="see-also"></a>Vedere anche  

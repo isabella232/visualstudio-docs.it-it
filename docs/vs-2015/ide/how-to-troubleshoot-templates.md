@@ -39,7 +39,7 @@ Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili div
 5.  Verificare che il codice XML del file con estensione vstemplate rispetti lo schema di modello [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni sullo schema del file con estensione vstemplate, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Per ottenere il supporto IntelliSense durante la creazione del file con estensione `xmlns`vstemplate`VSTemplate`, aggiungere un attributo http://schemas.microsoft.com/developer/vstemplate/2005 all'elemento  e assegnare all'attributo il valore .  
+    >  Per ottenere il supporto IntelliSense durante la creazione del file con estensione vstemplate, aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnare all'attributo il valore http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6.  Salvare e chiudere il file vstemplate.  
   

@@ -27,7 +27,7 @@ ms.locfileid: "54800405"
 Id regola | DA0008 NUMERO RIDOTTO |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | Sono stati raccolti solo pochi campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.  
+| Messaggio | Sono stati raccolti solo pochi campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  

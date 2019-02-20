@@ -47,7 +47,7 @@ HRESULT get_classParent ( 
 |Intestazione:|Dia2.h|  
 |Versione:|DIA SDK v7.0|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I tipi di simboli che possono essere padri di classe sono documentati in [gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Vedere anche  

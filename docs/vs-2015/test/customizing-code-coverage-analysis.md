@@ -1,24 +1,19 @@
 ---
 title: Personalizzazione dell'analisi code coverage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890166"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768033"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizzazione dell'analisi code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +101,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="regular-expressions"></a>Espressioni regolari  
  Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:  
   
-1. **\.\\*** corrisponde a una stringa di caratteri  
+1. **\.\\*** corrisponde a una stringa composta da caratteri qualsiasi  
   
 2. **\\.** corrisponde a un punto "."  
   
@@ -158,7 +153,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
   
   **Corrispondenza di un nome di funzione**  
   
-  L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Di seguito è riportato un esempio:  
+  L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Ad esempio,  
   
 - C# o Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -207,7 +202,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
   
 3. Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Selezionare il file con estensione **runsettings**.  
   
-   - <em>Ma **Assembly di Test</em>* viene visualizzato al posto di **origine Test**. Quando si prova ad impostare il campo Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
+   - <em>Viene visualizzato **Assembly di test</em>* anziché **Origine test**. Quando si prova ad impostare il campo **Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
   
       In **Test automatizzati** selezionare **Assembly di test** e scegliere **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test**, impostare **Test Runner** su **Visual Studio Test Runner**.  
   
@@ -333,6 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Vedere anche  
  [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)
-
-
-

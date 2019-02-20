@@ -1,25 +1,20 @@
 ---
 title: Guida dell'amministratore di Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799705"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 ## <a name="deploying-local-help-content-from-the-internet"></a>Distribuzione del contenuto della Guida locale da Internet  
  È possibile usare il servizio del pacchetto con il contenuto MSDN per distribuire il contenuto della Guida locale da Internet ai computer client. Usare la sintassi seguente:  
   
- \\<*percorso*> \v2.2\HlpCtntmgr.exe /operation \< *name*> /catalogname \< *nome catalogo*> /locale \<  *impostazioni locali*>  
+ \\<*percorso*>\v2.2\HlpCtntmgr.exe /operation \<*nome*> /catalogname \<*nome catalogo*> /locale \<*impostazioni locali*>  
   
  Per altre informazioni sulla sintassi della riga di comando di HlpCtntMgr.exe, vedere [Argomenti della riga di comando per Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
@@ -100,13 +95,13 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 1. In Help Viewer scegliere la scheda **Gestisci contenuto**.  
   
-2. Sotto **la documentazione disponibile**, passare al set di documenti di Visual Studio.  
+2. In **Documentazione disponibile** passare al set di documenti di Visual Studio.  
   
 3. Scegliere **Rimuovi** accanto a ogni elemento secondario.  
   
-4. Scegli **avviare** disinstallare  
+4. Scegliere **Avvia** per disinstallare  
   
-5. Passare a *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 e verificare che la cartella contenga solo il file Catalogtype.  
+5. Passare a *n*:\\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 e verificare che la cartella contenga solo il file catalogType.xml.  
   
    Dopo aver rimosso tutto il contenuto della Guida locale di Visual Studio installato in precedenza, si è pronti per scaricare il set di contenuti di base.  
   
@@ -114,7 +109,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 1. In Help Viewer scegliere la scheda **Gestisci contenuto**.  
   
-2. Sotto **la documentazione disponibile**, passare al set di documenti a cui si desidera scaricare e quindi scegliere **Add**.  
+2. In **Documentazione disponibile** passare al set di documenti che si vuole scaricare e scegliere **Aggiungi**.  
   
 3. Scegliere **Avvia**.  
   
@@ -132,7 +127,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 4.  Digitare quanto segue:  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *nomecartella*> \ /y /e /k /o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nome cartella*>\ /y /e /k /o  
   
      Ad esempio: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
@@ -142,7 +137,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 1.  Creare una condivisione di rete e copiare il contenuto della Guida in tale posizione.  
   
-     Ad esempio, copiare il contenuto di c:\VS12Help a in \\\myserver\VS12Help.  
+     Ad esempio copiare il contenuto di c:\VS12Help in \\\myserver\VS12Help.  
   
 2.  Creare un file .bat che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti.  
   
@@ -207,8 +202,5 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 3.  Eseguire il file .bat nei computer locali in cui deve essere installato il contenuto della Guida.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Argomenti della riga di comando per Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md)   
+ [Argomenti della riga di comando per la Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Ovverride di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md)
-
-
-

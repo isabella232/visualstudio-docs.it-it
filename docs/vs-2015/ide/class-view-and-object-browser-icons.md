@@ -28,7 +28,7 @@ ms.locfileid: "54785049"
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In **Visualizzazione classi** e Visualizzatore oggetti vengono visualizzate le icone che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili. Nella tabella seguente vengono illustrate e descritte le icone.  
+In Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate le icone che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili. Nella tabella seguente vengono illustrate e descritte le icone.  
   
 |Icona|Descrizione|Icona|Descrizione|  
 |----------|-----------------|----------|-----------------|  

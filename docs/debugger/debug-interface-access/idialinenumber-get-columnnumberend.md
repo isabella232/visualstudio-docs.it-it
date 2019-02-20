@@ -37,7 +37,7 @@ HRESULT get_columnNumberEnd ( 
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il valore della colonna restituito da questo metodo è un offset nella riga in cui la posizione successiva all'ultimo carattere dell'istruzione nella riga in byte.  
   
 ## <a name="see-also"></a>Vedere anche  

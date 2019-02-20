@@ -46,7 +46,7 @@ HRESULT ReadExecutableAt ( 
  data[]  
  [in, out] Matrice che viene compilata con byte letti dal file.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questo metodo viene chiamato dal codice di supporto di DIA per caricare i byte di dati da un eseguibile usando un offset di file assoluto. Questo metodo viene chiamato supportare le [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  

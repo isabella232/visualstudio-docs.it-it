@@ -27,7 +27,7 @@ ms.locfileid: "54792923"
 Id regola | DA0002 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodi di profilatura | Profilatura tramite gli strumenti da riga di comando VSPerfCmd e VSPerfASPNETCmd |  
-| Messaggio | Sembra che il file è stato raccolto senza impostare correttamente le variabili di ambiente con VSPerfCLREnv. cmd. La risoluzione dei simboli per i file binari gestiti potrebbe non essere effettuata.  
+| Messaggio | Sembra che il file è stato raccolto senza impostare correttamente le variabili di ambiente con VSPerfCLREnv. cmd. I simboli per i file binari gestiti potrebbero non essere risolti.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  

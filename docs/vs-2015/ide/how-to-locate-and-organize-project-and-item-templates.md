@@ -51,7 +51,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
   La directory seguente, ad esempio, contiene i modelli di progetto personalizzati di [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
-  C:\Documents and Settings\NomeUtente\Documenti\Visual Studio \\Versione\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Documents and Settings\NomeUtente\Documenti\\<Visual Studio Versione\>\Templates\ProjectTemplates\Visual C#\  
   
   I modelli personalizzati non includono una sottodirectory per i modelli localizzati. È possibile modificare la directory predefinita per i modelli personalizzati nella finestra di dialogo **Opzioni**, in **Ambiente/Progetti e soluzioni**.  
   
@@ -117,7 +117,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
 1. Creare una cartella nella cartella del linguaggio della directory dei modelli di progetto personalizzati. Ad esempio, per creare una categoria HelloWorld per i modelli di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
   
-    \Documenti\Visual Studio \\Versione\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \Documenti\\<Visual Studio Versione\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Inserire nella nuova cartella tutti modelli di questa categoria.  
   
@@ -131,7 +131,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
 1.  Creare una cartella nella cartella del linguaggio della directory dei modelli di elemento personalizzati. Ad esempio, per creare una categoria HelloWorld per i modelli di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
   
-     \Documenti\Visual Studio \\Versione\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \Documenti\\<Visual Studio Versione\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Inserire nella nuova cartella tutti modelli di questa categoria.  
   

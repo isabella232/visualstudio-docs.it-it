@@ -1,14 +1,9 @@
 ---
 title: Frammenti di codice Visual C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787105"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 |classe|Crea una dichiarazione di classe.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
 |ctor|Crea un costruttore per la classe contenitore.|All'interno di una classe.|  
 |cw|Crea una chiamata a <xref:System.Console.WriteLine%2A>.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|do|Crea una [scopo](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` ciclo.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|do|Crea un ciclo [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
 |else|Crea un blocco [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
 |enum|Crea una dichiarazione [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
 |equals|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|  
@@ -83,10 +78,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md)   
  [Frammenti di codice](../ide/code-snippets.md)   
- [Procedura: Creare un nuovo frammento con sostituzioni](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Procedura: Creare un nuovo frammento con sostituzioni](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parametri di modello](../ide/template-parameters.md)   
- [Procedura: usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)   
- [Procedura: Ripristinare refactoring di frammenti C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Procedura: Usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Procedura: Ripristino C# Refactoring di frammenti](../ide/how-to-restore-csharp-refactoring-snippets.md)

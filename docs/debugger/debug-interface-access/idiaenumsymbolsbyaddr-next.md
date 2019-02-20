@@ -45,7 +45,7 @@ HRESULT Next ( 
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori simboli. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questo metodo aggiorna la posizione di enumeratore per il numero di elementi recuperati.  
   
 ## <a name="see-also"></a>Vedere anche  

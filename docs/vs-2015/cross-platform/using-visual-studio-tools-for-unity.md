@@ -66,7 +66,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 3.  Individuare il metodo di cui eseguire l'overload. Nella finestra Crea metodo script iniziare a digitare il nome del metodo nella casella di testo. Verrà visualizzato un elenco di metodi il cui nome corrisponde a quello immesso.  
   
-4.  Scegliere il metodo di cui eseguire l'overload. Quando il metodo voluto viene visualizzato nell'elenco, selezionarlo con il mouse o i tasti freccia e quindi premere **Invio**. Se è l'unico metodo presente nell'elenco, è sufficiente premere **Invio**. Il metodo verrà inserito nel codice.  
+4.  Scegliere il metodo di cui eseguire l'overload. Quando il metodo voluto viene visualizzato nell'elenco, selezionarlo con il mouse o i tasti freccia e quindi premere **Invio**. Se è l'unico metodo presente nell'elenco, è sufficiente premere **INVIO**. Il metodo verrà inserito nel codice.  
   
 ### <a name="unity-project-explorer"></a>Esplora progetti Unity  
  È possibile usare Esplora progetti Unity per spostarsi nel progetto Unity all'interno di Visual Studio.  

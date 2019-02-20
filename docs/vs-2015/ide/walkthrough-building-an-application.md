@@ -93,7 +93,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 4. Nell'elenco **Piattaforma soluzione attiva** scegliere **Nuova**.  
   
-5. 5. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.  
+5. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.  
   
     ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   

@@ -141,7 +141,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |`FileName`|Facoltativo. Il nome di un file. Se specificato, si presuppone che il valore ottenuto dalla chiave del Registro di sistema da un percorso di directory e questo nome viene aggiunto a esso. Se non specificato, il valore restituito dal Registro di sistema viene considerato il percorso completo in un file.|  
 |`SearchDepth`|Facoltativo. La profondità in corrispondenza del quale eseguire la ricerca nelle sottocartelle per il file specificato. La ricerca è depth-first. Il valore predefinito è 0, che limita la ricerca per la cartella di primo livello specificata dal valore della chiave del Registro di sistema.|  
 
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Mentre gli elementi sotto `InstallChecks` definire i test da eseguire, essi non vengono eseguiti. Per eseguire i test, è necessario creare `Command` elementi di sotto di `Commands` elemento.  
 
 ## <a name="example"></a>Esempio  

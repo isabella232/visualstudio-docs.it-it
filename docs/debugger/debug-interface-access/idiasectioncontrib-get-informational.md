@@ -37,7 +37,7 @@ HRESULT get_informational(
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  La sezione .directive contiene in genere informazioni.  
   
 ## <a name="see-also"></a>Vedere anche  

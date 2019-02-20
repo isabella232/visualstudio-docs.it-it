@@ -40,7 +40,7 @@ HRESULT get_addressSection ( 
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Per i membri statici che si trova in una DLL esterna, la sezione restituita da questo metodo può essere 0, poiché questo metodo si basa su come ottenere l'indirizzo virtuale del membro. Indirizzi virtuali sono validi solo se il [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metodo nella [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaccia è stata richiamata con un parametro diverso da zero che specifica l'indirizzo di caricamento della DLL.  
   
  Per ottenere la parte offset di un indirizzo, chiamare il [Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) (metodo).  

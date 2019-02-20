@@ -155,7 +155,7 @@ I passaggi inclusi nella [prima procedura](../ide/how-to-create-item-templates.m
   
 7.  In Esplora risorse selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere Invia a, quindi Cartella compressa. I file selezionati verranno compressi in un file ZIP.  
   
-8.  Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2015, la directory predefinita è... \Utenti\\<nomeutente\>\Documenti\Visual Studio 2015\Templates\ItemTemplates\\. Per altre informazioni, vedere Procedura: individuare e organizzare modelli di progetto e modelli di elementi.  
+8.  Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita in Visual Studio 2015 è... \Utenti\\<nomeutente\>\Documenti\Visual Studio 2015\Templates\ItemTemplates\\. Per altre informazioni, vedere Procedura: individuare e organizzare modelli di progetto e modelli di elementi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   

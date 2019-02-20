@@ -26,7 +26,7 @@ ms.locfileid: "54771069"
 Id regola | DA0024 |  
 | Categoria di |. Utilizzo di NET Framework |  
 | Metodo di profilatura | Tutti i |  
-| Messaggio | % Time in GC è molto elevata. Indica un sovraccarico di Garbage Collection.  
+| Messaggio | % Time in GC è molto elevata. Indica un sovraccarico di Garbage Collection.|  
 | Tipo di regola | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

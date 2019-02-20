@@ -40,7 +40,7 @@ HRESULT get_isAggregated(
 > [!NOTE]
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il [Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) metodo `TRUE` per il simbolo del padre dei simboli aggregati.  
   
 ## <a name="requirements"></a>Requisiti  

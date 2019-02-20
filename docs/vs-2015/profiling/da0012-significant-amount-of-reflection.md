@@ -27,7 +27,7 @@ ms.locfileid: "54770773"
 Id regola | DA0012 |  
 | Categoria di |. Utilizzo di NET Framework |  
 | Metodi di profilatura | Campionamento |  
-| Messaggio | Si usi la Reflection in modo eccessivo. L'operazione è dispendiosa.  
+| Messaggio | Si usi la Reflection in modo eccessivo. L'operazione è dispendiosa.|  
 | Tipo di regola | Avviso |  
   
 ## <a name="cause"></a>Causa  

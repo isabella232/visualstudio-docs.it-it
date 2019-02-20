@@ -41,7 +41,7 @@ HRESULT put_registerValue ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Nonostante le dimensioni del valore, un'implementazione deve archiviare solo registro in genere conserva. Ad esempio, un registro a 8 bit deve conservare solo i bit più bassi 8-del valore specificato.  
   
 ## <a name="see-also"></a>Vedere anche  

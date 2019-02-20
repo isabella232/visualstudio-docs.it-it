@@ -44,7 +44,7 @@ ms.locfileid: "54986670"
 ### <a name="return-value"></a>Valore restituito  
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
   
-### <a name="remarks"></a>Note  
+### <a name="remarks"></a>Osservazioni  
  La chiamata a CleanOnlineAppCache avvierà il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] del servizio se non è già in esecuzione.  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
@@ -68,7 +68,7 @@ ms.locfileid: "54986670"
 ### <a name="return-value"></a>Valore restituito  
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.  
   
-### <a name="remarks"></a>Note  
+### <a name="remarks"></a>Osservazioni  
  I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non deve essere vuoto.  
   
  È responsabilità del chiamante per pulire l'URL di attivazione. Ad esempio, aggiungendo caratteri di escape in cui sono necessari o rimuovendo la stringa di query.  

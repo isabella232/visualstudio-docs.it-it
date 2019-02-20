@@ -40,7 +40,7 @@ Per dimostrare queste attività, abbiamo illustrato alcuni dei tipi più comuni 
 
 Il codice seguente contiene alcuni bug che è possibile correggere mediante l'IDE di Visual Studio. In questo caso l'app è una semplice app che simula recupero dei dati JSON da un'operazione, la deserializzazione di dati a un oggetto e l'aggiornamento di un elenco semplice con i nuovi dati.
 
-Per creare l'app
+Per creare l'app:
 
 1. Aprire Visual Studio e scegli **File > Nuovo progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**.
 

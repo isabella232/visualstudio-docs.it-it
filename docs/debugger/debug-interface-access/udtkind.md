@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: eaca67dd56fa34993e46693d6274bc4b7b593006
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54929406"
@@ -46,7 +46,7 @@ enum UdtKind { 
  UdtInterface  
  Tipo definito dall'utente è un'interfaccia.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono restituiti per il [Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  

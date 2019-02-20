@@ -46,7 +46,7 @@ enum MemoryTypeEnum {
  `MemTypeAny`  
  Accede a qualsiasi tipo di memoria.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono passati per il [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) metodo per limitare l'accesso a diversi tipi di memoria.  
   
 ## <a name="requirements"></a>Requisiti  

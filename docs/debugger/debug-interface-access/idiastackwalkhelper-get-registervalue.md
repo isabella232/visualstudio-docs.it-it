@@ -41,7 +41,7 @@ HRESULT get_registerValue ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Nonostante le dimensioni del `pRetVal` parametro, un'implementazione deve archiviare solo registro in genere conserva. Un registro a 8 bit, ad esempio, contiene solo i bit più bassi 8-del valore specificato. Questo valore a 8 bit viene espanso a 64-bit quando restituito da questo metodo.  
   
 ## <a name="see-also"></a>Vedere anche  

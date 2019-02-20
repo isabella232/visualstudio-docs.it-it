@@ -1,14 +1,9 @@
 ---
 title: Estensione di IntelliSense in JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797447"
 ---
 # <a name="extending-javascript-intellisense"></a>Estensione di IntelliSense in JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 |Funzione|Descrizione|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|Aggiunge un gestore eventi per un evento di IntelliSense.<br /><br /> `type` è un valore stringa. I valori validi includono `statementcompletion`, `signaturehelp`, e `statementcompletionhint`.<br /><br /> `handler` è una funzione del gestore eventi che riceve un oggetto evento di uno dei tipi seguenti:<br /><br /> -   `CompletionEvent`, usato per il `statementcompletion` evento.<br />-   `SignatureHelpEvent`, usato per il `signaturehelp` evento.<br />-   `CompletionHintEvent`, usato per il `statementcompletionhint` evento.<br /><br /> Per esempi che usano questa funzione, vedere [esempi di codice](#CodeExamples).|  
+|`addEventListener(type, handler);`|Aggiunge un gestore eventi per un evento di IntelliSense.<br /><br /> `type` è un valore stringa. I valori validi includono `statementcompletion`, `signaturehelp` e `statementcompletionhint`.<br /><br /> `handler` è una funzione del gestore eventi che riceve un oggetto evento di uno dei tipi seguenti:<br /><br /> -   `CompletionEvent`, usato per il `statementcompletion` evento.<br />-   `SignatureHelpEvent`, usato per il `signaturehelp` evento.<br />-   `CompletionHintEvent`, usato per il `statementcompletionhint` evento.<br /><br /> Per esempi che usano questa funzione, vedere [esempi di codice](#CodeExamples).|  
 |`annotate(obj, doc);`|Specifica la documentazione per un oggetto copiando i commenti della documentazione da un oggetto in un altro oggetto.<br /><br /> `obj` Specifica l'oggetto da cui copiare la documentazione.<br /><br /> `doc` Specifica l'oggetto da cui copiare la documentazione.<br /><br /> Per un esempio che illustra come usare questa funzione, vedere [aggiunta di annotazioni IntelliSense](#Annotations).|  
 |`getFunctionComments(func);`|Restituisce i commenti per una funzione specificata.<br /><br /> `func` Specifica la funzione per il quale vengono restituiti i commenti.<br /><br /> È possibile impostare il `func` parametro usando `completionItem.value`.<br /><br /> L'oggetto restituito `functionComments` oggetto include i membri seguenti: `above`, `inside`, e `paramComment`. Per altre informazioni, vedere la [functionComments proprietà](#FunctionComments) proprietà.<br /><br /> `getFunctionComments` può essere chiamato solo da all'interno di uno dei gestori di eventi che sono registrati per `addEventListener`.<br /><br /> Per un esempio che illustra come usare questa funzione, vedere \\ \\ *il percorso di installazione di Visual Studio*\JavaScript\References\showPlainComments.js.|  
 |`logMessage(msg);`|Invia i messaggi diagnostici nella finestra di Output.<br /><br /> `msg` è una stringa che contiene il messaggio.<br /><br /> Per un esempio che illustra come usare questa funzione, vedere [invio di messaggi nella finestra di Output](#Logging).|  
@@ -214,7 +209,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Valore restituito: oggetto  
   
-###  <a name="Target"></a> Proprietà di destinazione  
+###  <a name="Target"></a> Proprietà target  
  Restituisce un oggetto che rappresenta l'elemento a sinistra del carattere trigger, ovvero un punto (.). Per le funzioni, `target` restituisce la funzione di cui vengono richieste informazioni sul parametro. Questa proprietà è disponibile per il `statementcompletion` e `signaturehelp` oggetti evento.  
   
  Valore restituito: oggetto  
@@ -491,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, si noterà che l'icona per lo spazio dei nomi è stato modificato da "{}", come viene usato in c#.  
+4.  In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, si noterà che l'icona per lo spazio dei nomi è stato modificato da "{}", come viene usato in C#.  
   
      ![Esempio che illustra l'uso della proprietà del glifo](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
@@ -553,6 +548,3 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="see-also"></a>Vedere anche  
  [IntelliSense per JavaScript](../ide/javascript-intellisense.md)   
  [Completamento delle istruzioni per gli identificativi](../ide/statement-completion-for-identifiers.md)
-
-
-

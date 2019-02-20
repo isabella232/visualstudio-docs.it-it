@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9963a36e8e9054103ea1517cb476670b0c6656f7
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55012638"
@@ -57,7 +57,7 @@ typedef enum CV_call_e { 
  CV_CALL_CLRCALL  
  Specifica una convenzione di chiamata di funzioni usata da Common Language Runtime (CLR) (noto anche come un codice gestito convenzione di chiamata).  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  

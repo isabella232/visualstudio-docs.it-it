@@ -31,7 +31,7 @@ HRESULT RestrictOriginalPathAccess ();
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Diverso da qualsiasi codice restituito `S_OK` impedisce alla ricerca di un file con estensione pdb nella directory di debug originale. La directory di debug è il percorso del file di simboli compilato nel file eseguibile quando si attiva il debug. Questo percorso non è necessariamente lo stesso come il percorso in cui è presente il file eseguibile.  
   
 ## <a name="see-also"></a>Vedere anche  
