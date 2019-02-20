@@ -10,18 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967573"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335033"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Eseguire il debug di servizi di Azure in Visual Studio
 
 È possibile usare Visual Studio per eseguire il debug di servizi di Azure in diversi scenari:
 
 - Per eseguire il debug di un'app di produzione ospitata in servizio App di Azure, vedere [Debug live App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md).
+
+- Per eseguire il debug di un'app di produzione ospitata in una macchina virtuale di Azure o un set di scalabilità di macchine virtuali di Azure, vedere [usando il Debugger di Snapshot di set di scalabilità di macchine virtuali di Azure e Debug in tempo reale le macchine virtuali di Azure ASP.NET](../debugger/debug-live-azure-virtual-machines.md).
+
+- Per eseguire il debug di un'app di produzione ospitata in Azure Kubernetes Service, vedere [Debug live di servizi di Kubernetes Azure ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-kubernetes.md).
 
 - Eseguire il debug di un'app di produzione con Application Insights e ospitate nel servizio App di Azure o Service Fabric, vedere [snapshot di Debug per le eccezioni nelle app .NET](/azure/application-insights/app-insights-snapshot-debugger).
 

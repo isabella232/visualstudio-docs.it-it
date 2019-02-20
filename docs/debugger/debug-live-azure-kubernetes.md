@@ -1,25 +1,26 @@
 ---
-title: Il debug in tempo reale delle app di Azure ASP.NET
+title: Eseguire il debug in tempo reale i servizi Kubernetes Azure ASP.NET
 description: Informazioni su come impostare punti di ancoraggio e visualizzare gli snapshot con il Debugger di Snapshot.
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335597"
+ms.locfileid: "56335982"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Il debug in tempo reale delle app di Azure ASP.NET usando il Debugger di Snapshot
+# <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug in tempo reale i servizi di Kubernetes ASP.NET di Azure usando il Debugger di Snapshot
 
 Quando viene eseguito codice che si è interessati, il Debugger di Snapshot crea uno snapshot delle App nell'ambiente di produzione. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
@@ -34,55 +35,43 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Debugger di snapshot è disponibile solo per Visual Studio 2017 Enterprise versione 15.5 o versione successiva con il **carico di lavoro sviluppo di Azure**. (Sotto la **singoli componenti** scheda, disponibile in **debug e test** > **Snapshot debugger**.)
+* Debugger di snapshot per servizi di Azure Kubernetes è solo disponibile in anteprima di Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro sviluppo di Azure**. (Sotto la **singoli componenti** scheda, disponibile in **debug e test** > **Snapshot debugger**.)
 
-    Se non è già installato, installarlo [Visual Studio 2017 Enterprise versione 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) o versione successiva. Se sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire l'installazione di Visual Studio e verificare il componente Debugger di Snapshot **carico di lavoro sviluppo ASP.NET e web**.
+    Se non è già installato, installarlo [Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/).
 
-* Piano di servizio App di Azure Basic o superiore.
+* Raccolta di snapshot è disponibile per le app web di servizi di Kubernetes di Azure seguenti:
+  * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Debian 9.
+  * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Alpine 3.8.
+  * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Ubuntu 18.04.
 
-* La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
-  * Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
-  * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
+    > [!NOTE]
+    > Che consentono di abilitare il supporto per Snapshot Debugger nel servizio contenitore di AZURE è disponibile un' [repository che contiene un set di Dockerfile che illustrano l'installazione nelle immagini Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Aprire il progetto e avviare il Debugger di Snapshot
 
 1. Aprire il progetto che desidera eseguire il debug di snapshot.
 
     > [!IMPORTANT]
-    > Eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* che viene pubblicato in servizio App di Azure.
-::: moniker range="< vs-2019"
+    > Eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* che viene pubblicato nel servizio Kubernetes di Azure.
 
-2. In Cloud Explorer (**Visualizza > Cloud Explorer**), il progetto viene distribuito il servizio App di Azure e scegliere **collegare Snapshot Debugger**.
+1. Collegare il Debugger di Snapshot. È possibile usare uno dei diversi metodi:
 
-   ![Avviare il debugger di snapshot](../debugger/media/snapshot-launch.png)
-
-    La prima volta che si seleziona **collegare Snapshot Debugger**, viene chiesto di installare l'estensione del sito Snapshot Debugger in servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure.
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. Collegare il Debugger di Snapshot. È possibile usare uno dei diversi metodi:
-
-    * Scegliere **Debug > Collega Snapshot Debugger...** . Selezionare il progetto viene distribuito il servizio App di Azure e un account di archiviazione di Azure e quindi fare clic su **Attach**.
+    * Scegliere **Debug > Collega Snapshot Debugger...** . Selezionare la risorsa AKS è distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
   
       ![Avviare il debugger di snapshot dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Fare clic con il pulsante destro sul progetto, quindi scegliere **Publish**, quindi nella pagina di pubblicazione fare clic su **collegare Snapshot Debugger**. Selezionare il progetto viene distribuito il servizio App di Azure e un account di archiviazione di Azure e quindi fare clic su **Attach**.
+    * Fare clic con il pulsante destro sul progetto, quindi scegliere **Publish**, quindi nella pagina di pubblicazione fare clic su **collegare Snapshot Debugger**. Selezionare la risorsa AKS è distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
     ![Avviare il debugger di snapshot dalla pagina di pubblicazione](../debugger/media/snapshot-publish-attach.png)
 
-    * In modalità di Debug dal menu a discesa di destinazione **Snapshot Debugger**, fare clic su **F5** e, se necessario seleziona il progetto viene distribuito il servizio App di Azure e un'archiviazione di Azure dell'account e quindi fare clic su  **Collegare**.
+    * In modalità di Debug dal menu a discesa di destinazione **Snapshot Debugger**, fare clic su **F5** e, se necessario seleziona la risorsa AKS è distribuito l'app web e un'archiviazione di Azure dell'account e quindi fare clic su  **Collegare**.
     ![Avviare il debugger di snapshot dal menu a discesa scegliere F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Con Cloud Explorer (**Visualizza > Cloud Explorer**), fare doppio clic il progetto viene distribuito il servizio App di Azure e selezionare un account di archiviazione di Azure e quindi fare clic su **collegare Snapshot Debugger**.
+    * Con Cloud Explorer (**Visualizza > Cloud Explorer**), fare doppio clic su un account di archiviazione di Azure e la risorsa AKS è distribuito l'app web e quindi fare clic su **collegare Snapshot Debugger**.
   
       ![Avviare il debugger di snapshot di Cloud Explorer](../debugger/media/snapshot-launch.png)
 
-    La prima volta che si seleziona **collegare Snapshot Debugger**, viene chiesto di installare l'estensione del sito Snapshot Debugger in servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure.
-::: moniker-end
-
-   Visual Studio è ora in modalità di debug snapshot.
-
-  > [!NOTE]
-  > L'estensione del sito Application Insights supporta anche il debug di Snapshot. Se viene visualizzato un messaggio di errore "estensione aggiornata del sito", vedere [risoluzione dei problemi di suggerimenti e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per l'aggiornamento dei dettagli.
+    > [!NOTE]
+    > L'estensione del sito Application Insights supporta anche il debug di Snapshot. Se viene visualizzato un messaggio di errore "estensione aggiornata del sito", vedere [risoluzione dei problemi di suggerimenti e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per l'aggiornamento dei dettagli.
 
    ![Modalità di debug snapshot](../debugger/media/snapshot-message.png)
 
@@ -96,7 +85,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
    ![Impostare un punto di ancoraggio](../debugger/media/snapshot-set-snappoint.png)
 
-2. Fare clic su **Avvia raccolta** per attivare il punto di ancoraggio.
+1. Fare clic su **Avvia raccolta** per attivare il punto di ancoraggio.
 
    ![Attivare il punto di ancoraggio](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +152,7 @@ Oltre a eseguire uno snapshot quando viene raggiunto un punto di ancoraggio, è 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa esercitazione si è appreso come usare il Debugger di Snapshot per i servizi App. È possibile leggere altre informazioni su questa funzionalità.
+In questa esercitazione si è appreso come usare il Debugger di Snapshot per Kubernetes di Azure. È possibile leggere altre informazioni su questa funzionalità.
 
 > [!div class="nextstepaction"]
 > [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)
