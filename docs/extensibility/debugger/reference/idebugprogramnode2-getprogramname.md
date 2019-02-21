@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e3c3f2b3ace78eae718a719b1b8b8f6aca721e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d6f678adc135e85f8808cef36d819733033447e4
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989770"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450373"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
-Ottiene il nome del programma.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetProgramName (   
-   BSTR* pbstrProgramName  
-);  
-```  
-  
-```csharp  
-int GetProgramName (   
-   out string pbstrProgramName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pbstrProgramName`  
- [out] Restituisce il nome del programma.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Il nome di un programma non è la stessa operazione come il percorso del programma, anche se il nome del programma può essere parte di tale percorso.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia. Il `MakeBstr` funzione alloca una copia della stringa specificata come BSTR.  
-  
-```cpp  
-HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    
-   if (!pbstrProgramName)    
-      return E_INVALIDARG;    
-  
-   // Assign the member program name to the passed program name.    
-   *pbstrProgramName = MakeBstr(m_pszProgramName);    
-   return NOERROR;    
-}    
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+Ottiene il nome del programma.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetProgramName (
+    BSTR* pbstrProgramName
+);
+```
+
+```csharp
+int GetProgramName (
+    out string pbstrProgramName
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`pbstrProgramName`  
+[out] Restituisce il nome del programma.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+Il nome di un programma non è la stessa operazione come il percorso del programma, anche se il nome del programma può essere parte di tale percorso.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia. Il `MakeBstr` funzione alloca una copia della stringa specificata come BSTR.
+
+```cpp
+HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
+    if (!pbstrProgramName)
+        return E_INVALIDARG;
+
+    // Assign the member program name to the passed program name.
+    *pbstrProgramName = MakeBstr(m_pszProgramName);
+    return NOERROR;
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

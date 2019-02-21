@@ -10,60 +10,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a3af886e5035281260aa1bcdfd88d931e674c93
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77fe5e06562292eaef477b77d05f685c7c1f9d35
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954475"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450191"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-Recupera l'indice del parametro generico.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetIndex(  
-   DWORD* pIndex  
-);  
-```  
-  
-```csharp  
-int GetIndex(  
-   out uint pIndex  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pIndex`  
- [out] Valore di indice del parametro generico.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Ad esempio, per Dictionary(K,V), K è indice 0, V indice 1.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugGenericParamFieldType** oggetto che espone le [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaccia.  
-  
-```cpp  
-HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  
-{  
-    HRESULT hr = S_OK;  
-  
-    METHOD_ENTRY( CDebugGenericParamFieldType::GetIndex );  
-  
-    IfFalseGo(pIndex, E_INVALIDARG );  
-    IfFailGo( this->LoadProps() );  
-    *pIndex = m_index;  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugGenericParamFieldType::GetIndex, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+Recupera l'indice del parametro generico.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetIndex(
+    DWORD* pIndex
+);
+```
+
+```csharp
+int GetIndex(
+    out uint pIndex
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`pIndex`  
+[out] Valore di indice del parametro generico.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+Ad esempio, per Dictionary(K,V), K è indice 0, V indice 1.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugGenericParamFieldType** oggetto che espone le [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaccia.
+
+```cpp
+HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)
+{
+    HRESULT hr = S_OK;
+
+    METHOD_ENTRY( CDebugGenericParamFieldType::GetIndex );
+
+    IfFalseGo(pIndex, E_INVALIDARG );
+    IfFailGo( this->LoadProps() );
+    *pIndex = m_index;
+
+Error:
+
+    METHOD_EXIT( CDebugGenericParamFieldType::GetIndex, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

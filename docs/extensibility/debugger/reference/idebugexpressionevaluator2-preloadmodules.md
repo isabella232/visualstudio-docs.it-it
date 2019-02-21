@@ -11,68 +11,68 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 996bb82851e3429e0caa39fe1a30f5c8970dc4a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e5db35150814665f5e75b5b42a2a27447c40a75
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974383"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450048"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Precarica i moduli designati dal provider di simbolo specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT PreloadModules (  
-   IDebugSymbolProvider* pSym  
-);  
-```  
-  
-```csharp  
-int PreloadModules (  
-   IDebugSymbolProvider pSym  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pSym`  
- [in] Provider di simboli per il quale i moduli verranno precaricati.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo facoltativo viene utilizzato quando si esegue questa operazione associa un processo di hosting. L'analizzatore di Espressioni offre la possibilità di "riscaldamento" durante la connessione.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **ExpressionEvaluatorPackage** oggetto che espone le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaccia.  
-  
-```cpp  
-STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  
-(  
-    IDebugSymbolProvider *pSym  
-)  
-{  
-    HRESULT hr = NOERROR;  
-    RuntimeMemberDescriptor  * prtMemberDesc;  
-    RuntimeClassDescriptor *prtClassDesc;  
-    CComPtr<IDebugClassField> pClassField;  
-    IfFalseGo(pSym,E_INVALIDARG);  
-  
-    prtMemberDesc = &(g_rgRTLangMembers[StandardModuleAttributeCtor]);  
-    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);  
-    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);  
-  
-    pClassField = NULL;  
-    prtMemberDesc = &(g_rgRTLangMembers[LoadAssembly]);  
-    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);  
-    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);  
-  
-Error:  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Precarica i moduli designati dal provider di simbolo specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT PreloadModules (
+    IDebugSymbolProvider* pSym
+);
+```
+
+```csharp
+int PreloadModules (
+    IDebugSymbolProvider pSym
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`pSym`  
+[in] Provider di simboli per il quale i moduli verranno precaricati.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+Questo metodo facoltativo viene utilizzato quando si esegue questa operazione associa un processo di hosting. L'analizzatore di Espressioni offre la possibilità di "riscaldamento" durante la connessione.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **ExpressionEvaluatorPackage** oggetto che espone le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaccia.
+
+```cpp
+STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules
+(
+    IDebugSymbolProvider *pSym
+)
+{
+    HRESULT hr = NOERROR;
+    RuntimeMemberDescriptor  * prtMemberDesc;
+    RuntimeClassDescriptor *prtClassDesc;
+    CComPtr<IDebugClassField> pClassField;
+    IfFalseGo(pSym,E_INVALIDARG);
+
+    prtMemberDesc = &(g_rgRTLangMembers[StandardModuleAttributeCtor]);
+    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);
+    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);
+
+    pClassField = NULL;
+    prtMemberDesc = &(g_rgRTLangMembers[LoadAssembly]);
+    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);
+    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);
+
+Error:
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
