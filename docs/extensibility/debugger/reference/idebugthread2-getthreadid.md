@@ -12,49 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b7e0a2e2754361899a65e66ecac8a75be55722
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c77e2d5de5105b964beea0ad880358b59e10fab7
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949441"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450114"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-Ottiene l'identificatore di thread di sistema.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetThreadId (   
-   DWORD* pdwThreadId  
-);  
-```  
-  
-```csharp  
-int GetThreadId (   
-   out uint pdwThreadId  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pdwThreadId`  
- [out] Restituisce l'identificatore di thread di sistema.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Un ID thread viene usato per identificare un thread tra tutti gli altri thread in un processo.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaccia.  
-  
-```cpp  
-HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
-   *pdwThreadId = GetCurrentThreadId();    
-   return NOERROR;    
-}    
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+Ottiene l'identificatore di thread di sistema.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetThreadId (
+    DWORD* pdwThreadId
+);
+```
+
+```csharp
+int GetThreadId (
+    out uint pdwThreadId
+);
+```
+
+#### <a name="parameters"></a>Parametri
+`pdwThreadId` [out] Restituisce l'identificatore di thread di sistema.
+
+## <a name="return-value"></a>Valore restituito
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+Un ID thread viene usato per identificare un thread tra tutti gli altri thread in un processo.
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaccia.
+
+```cpp
+HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
+    *pdwThreadId = GetCurrentThreadId();
+    return NOERROR;
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

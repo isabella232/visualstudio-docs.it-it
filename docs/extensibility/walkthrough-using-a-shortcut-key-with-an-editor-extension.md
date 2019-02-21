@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d484ae5bffad903258b7f6f5d4561a23dcba1f5d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988571"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450490"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Usare i tasti di scelta rapida con un'estensione dell'editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. Procedura dettagliata illustra come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo tramite un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo usando il carattere +.  
@@ -47,12 +47,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 Nel file di classe KeyBindingTestTextViewCreationListener.cs, modificare il nome del AdornmentLayer dal **KeyBindingTest** al **PurpleCornerBox**:
   
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
+```csharp  
+[Export(typeof(AdornmentLayerDefinition))]  
+[Name("PurpleCornerBox")]  
+[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+public AdornmentLayerDefinition editorAdornmentLayer;  
+```  
 
 ## <a name="handle-typechar-command"></a>Comando TYPECHAR handle
 Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in un'estensione dell'editor è stata l'implementazione un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> basato su filtro di comando. Visual Studio 2017 versione 15.6 è stato introdotto un approccio semplificato moderne basato sui gestori di comando dell'editor. Due sezioni successive illustrano come gestire un comando usando sia l'approccio legacy e moderna.

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866831"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450178"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizzazione e localizzazione di soluzioni di Excel
   Questa sezione contiene considerazioni speciali per le soluzioni Microsoft Office Excel eseguite in computer che hanno impostazioni di Windows non in inglese. Gli aspetti da considerare per la globalizzazione e la localizzazione di soluzioni Microsoft Office sono gli stessi implicati negli altri tipi di soluzioni create con Visual Studio. Per informazioni generali, vedere [Globalize e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md).
@@ -47,7 +47,7 @@ ms.locfileid: "54866831"
  È tuttavia necessario assicurarsi che tutte le parti del codice che interagiscono con il testo del documento continuino a corrispondere alla lingua del testo e che i segnalibri, gli intervalli denominati e gli altri campi visualizzati si adattino alle eventuali riformattazioni del documento di Office necessarie per rispettare le differenze nella grammatica e nella lunghezza del testo. Per i modelli di documenti che contengono testo relativamente breve, si potrebbe voler considerare la memorizzazione del testo nei file di risorse e quindi caricando il testo in fase di esecuzione.
 
 ### <a name="text-direction"></a>Direzione del testo
- In Excel, è possibile impostare una proprietà del foglio di lavoro per il rendering del testo da destra a sinistra. Controlli host, o qualsiasi controllo che ha un `RightToLeft` proprietà, che viene inserito automaticamente nella finestra di progettazione corrispondono a queste impostazioni in fase di esecuzione. I documenti di Word non hanno una specifica impostazione per il testo bidirezionale (è possibile modificare solo l'allineamento del testo) a cui mappare i controlli, che devono quindi essere impostati individualmente. È possibile scrivere codice per esaminare tutti i controlli e imporre il rendering del testo da destra a sinistra.
+ In Excel, è possibile impostare una proprietà del foglio di lavoro per il rendering del testo da destra a sinistra. Controlli host, o qualsiasi controllo che ha un `RightToLeft` proprietà, che viene inserito automaticamente nella finestra di progettazione corrispondono a queste impostazioni in fase di esecuzione. Word non hanno un'impostazione di documento per il testo bidirezionale (è sufficiente modificare l'allineamento del testo), in modo che questa impostazione non è possibile mappare i controlli. che devono quindi essere impostati individualmente. È possibile scrivere codice per esaminare tutti i controlli e imporre il rendering del testo da destra a sinistra.
 
 ### <a name="change-culture"></a>Modificare le impostazioni cultura
  Il codice di personalizzazione a livello di documento in genere condivide il thread principale dell'interfaccia utente di Excel, per cui tutte le modifiche apportate alle impostazioni cultura del thread influiscono su qualsiasi altro elemento in esecuzione su tale thread. La modifica non è limitata alla personalizzazione.
