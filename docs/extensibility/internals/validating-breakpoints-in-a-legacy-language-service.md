@@ -11,92 +11,92 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 355101179e54839fbe5060ce2bc5cdf583ec7d3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603040"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Convalida dei punti di interruzione in un servizio di linguaggio legacy
-Un punto di interruzione indica che l'esecuzione del programma deve essere interrotta in un particolare punto mentre è in esecuzione in un debugger. Un utente può inserire un punto di interruzione su una qualsiasi riga nel file di origine, poiché l'editor non dispone di alcuna conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. Quando il debugger viene avviato, tutti i punti di interruzione contrassegnate (denominati in sospeso i punti di interruzione) sono associati nella posizione appropriata nel programma in esecuzione. Allo stesso tempo che i punti di interruzione vengono convalidate per assicurarsi che fungono da indicatore percorsi di codice valido. Ad esempio, un punto di interruzione in un commento non è valido, perché non è presente codice in tale posizione nel codice sorgente. Il debugger disabilita i punti di interruzione non validi.  
-  
- Poiché il servizio di linguaggio conosce il codice sorgente viene visualizzato, è possibile convalidare i punti di interruzione prima che il debugger viene avviato. È possibile eseguire l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> per restituire un intervallo che specifica un percorso valido per un punto di interruzione. La posizione del punto di interruzione viene comunque convalidata quando il debugger viene avviato, ma l'utente viene informato di punti di interruzione non validi senza attendere che il debugger deve caricare.  
-  
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementazione del supporto per la convalida dei punti di interruzione  
-  
--   Il <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo è data la posizione del punto di interruzione. L'implementazione deve decidere se il percorso sia valido e indicare questo restituendo un intervallo di testo che identifica il codice associato la posizione di riga del punto di interruzione.  
-  
--   Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> se il percorso sia valido, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se non è valido.  
-  
--   Se il punto di interruzione è valido e il punto di interruzione viene evidenziato l'intervallo di testo.  
-  
--   Se il punto di interruzione non è valido, un messaggio di errore viene visualizzato nella barra di stato.  
-  
-### <a name="example"></a>Esempio  
- In questo esempio viene illustrata un'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo che chiama il parser per ottenere l'intervallo di codice (se presente) in corrispondenza della posizione specificata.  
-  
- Questo esempio si presuppone che sia stato aggiunto un `GetCodeSpan` metodo per il <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe che convalida l'intervallo di testo e restituisce `true` se è un percorso valido punto di interruzione.  
-  
-```csharp  
-using Microsoft VisualStudio;  
-using Microsoft.VisualStudio.Package;  
-using Microsoft.VisualStudio.TextManager.Interop;  
-  
-namespace TestLanguagePackage  
-{  
-    class TestLanguageService : LanguageService  
-    {  
-        public override int ValidateBreakpointLocation(IVsTextBuffer buffer,  
-                                                       int line,  
-                                                       int col,  
-                                                       TextSpan[] pCodeSpan)  
-        {  
-            int retval = VSConstants.S_FALSE;  
-            if (pCodeSpan != null)  
-            {  
-                // Initialize span to current line by default.  
-                pCodeSpan[0].iStartLine = line;  
-                pCodeSpan[0].iStartIndex = col;  
-                pCodeSpan[0].iEndLine = line;  
-                pCodeSpan[0].iEndIndex = col;  
-            }  
-  
-            if (buffer != null)  
-            {  
-                IVsTextLines textLines = buffer as IVsTextLines;  
-                if (textLines != null)  
-                {  
-                    Source src = this.GetSource(textLines);  
-                    if (src != null)  
-                    {  
-                        TokenInfo tokenInfo = new TokenInfo();  
-                        string text = src.GetText();  
-                        ParseRequest req = CreateParseRequest(src,  
-                                                              line,  
-                                                              col,  
-                                                              tokenInfo,  
-                                                              text,  
-                                                              src.GetFilePath(),  
-                                                              ParseReason.CodeSpan,  
-                                                              null);  
-                        req.Scope = this.ParseSource(req);  
-                        TestAuthoringSink sink = req.Sink as TestAuthoringSink;  
-  
-                        TextSpan span = new TextSpan();  
-                        if (sink.GetCodeSpan(out span))  
-                        {  
-                            pCodeSpan[0] = span;  
-                            retval = VSConstants.S_OK;  
-                        }  
-                    }  
-                }  
-            }  
-            return retval;  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Funzionalità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)
+Un punto di interruzione indica che l'esecuzione del programma deve essere interrotta in un particolare punto mentre è in esecuzione in un debugger. Un utente può inserire un punto di interruzione su una qualsiasi riga nel file di origine, poiché l'editor non dispone di alcuna conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. Quando il debugger viene avviato, tutti i punti di interruzione contrassegnate (denominati in sospeso i punti di interruzione) sono associati nella posizione appropriata nel programma in esecuzione. Allo stesso tempo che i punti di interruzione vengono convalidate per assicurarsi che fungono da indicatore percorsi di codice valido. Ad esempio, un punto di interruzione in un commento non è valido, perché non è presente codice in tale posizione nel codice sorgente. Il debugger disabilita i punti di interruzione non validi.
+
+ Poiché il servizio di linguaggio conosce il codice sorgente viene visualizzato, è possibile convalidare i punti di interruzione prima che il debugger viene avviato. È possibile eseguire l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> per restituire un intervallo che specifica un percorso valido per un punto di interruzione. La posizione del punto di interruzione viene comunque convalidata quando il debugger viene avviato, ma l'utente viene informato di punti di interruzione non validi senza attendere che il debugger deve caricare.
+
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementazione del supporto per la convalida dei punti di interruzione
+
+-   Il <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo è data la posizione del punto di interruzione. L'implementazione deve decidere se il percorso sia valido e indicare questo restituendo un intervallo di testo che identifica il codice associato la posizione di riga del punto di interruzione.
+
+-   Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> se il percorso sia valido, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se non è valido.
+
+-   Se il punto di interruzione è valido e il punto di interruzione viene evidenziato l'intervallo di testo.
+
+-   Se il punto di interruzione non è valido, un messaggio di errore viene visualizzato nella barra di stato.
+
+### <a name="example"></a>Esempio
+ In questo esempio viene illustrata un'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo che chiama il parser per ottenere l'intervallo di codice (se presente) in corrispondenza della posizione specificata.
+
+ Questo esempio si presuppone che sia stato aggiunto un `GetCodeSpan` metodo per il <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe che convalida l'intervallo di testo e restituisce `true` se è un percorso valido punto di interruzione.
+
+```csharp
+using Microsoft VisualStudio;
+using Microsoft.VisualStudio.Package;
+using Microsoft.VisualStudio.TextManager.Interop;
+
+namespace TestLanguagePackage
+{
+    class TestLanguageService : LanguageService
+    {
+        public override int ValidateBreakpointLocation(IVsTextBuffer buffer,
+                                                       int line,
+                                                       int col,
+                                                       TextSpan[] pCodeSpan)
+        {
+            int retval = VSConstants.S_FALSE;
+            if (pCodeSpan != null)
+            {
+                // Initialize span to current line by default.
+                pCodeSpan[0].iStartLine = line;
+                pCodeSpan[0].iStartIndex = col;
+                pCodeSpan[0].iEndLine = line;
+                pCodeSpan[0].iEndIndex = col;
+            }
+
+            if (buffer != null)
+            {
+                IVsTextLines textLines = buffer as IVsTextLines;
+                if (textLines != null)
+                {
+                    Source src = this.GetSource(textLines);
+                    if (src != null)
+                    {
+                        TokenInfo tokenInfo = new TokenInfo();
+                        string text = src.GetText();
+                        ParseRequest req = CreateParseRequest(src,
+                                                              line,
+                                                              col,
+                                                              tokenInfo,
+                                                              text,
+                                                              src.GetFilePath(),
+                                                              ParseReason.CodeSpan,
+                                                              null);
+                        req.Scope = this.ParseSource(req);
+                        TestAuthoringSink sink = req.Sink as TestAuthoringSink;
+
+                        TextSpan span = new TextSpan();
+                        if (sink.GetCodeSpan(out span))
+                        {
+                            pCodeSpan[0] = span;
+                            retval = VSConstants.S_OK;
+                        }
+                    }
+                }
+            }
+            return retval;
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Funzionalità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)

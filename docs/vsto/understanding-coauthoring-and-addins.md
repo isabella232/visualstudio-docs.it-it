@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870035"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631965"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Comprendere i componenti aggiuntivi e creazione condivisa
 
@@ -26,4 +26,4 @@ Creazione condivisa è una funzionalità del desktop di Excel per Windows che co
 Nota: Creazione condivisa per Windows Desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Gli utenti che hanno acquistato una licenza perpetua per Office 2016 o versioni precedenti non sono attualmente disponibili per la funzionalità di modifica condivisa. (Excel Online, Excel per Android, in Excel per iOS e dispositivi mobili di Excel in di Windows Store supportano anche creazione condivisa).
 
 ## <a name="see-also"></a>Vedere anche
-[Soluzioni Excel](./excel-solutions.md)
+- [Soluzioni Excel](./excel-solutions.md)

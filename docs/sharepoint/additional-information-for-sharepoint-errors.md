@@ -16,35 +16,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e459f042838fa92e9b4bbc1608bb36dfd4c8dc9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875758"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628910"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informazioni aggiuntive sugli errori di SharePoint
-  È possibile trovare assistenza nella risoluzione dei problemi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errori e avvisi nella risoluzione dei problemi negli argomenti e i forum pubblici di strumenti di SharePoint.  
-  
+  È possibile trovare assistenza nella risoluzione dei problemi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errori e avvisi nella risoluzione dei problemi negli argomenti e i forum pubblici di strumenti di SharePoint.
+
 ## <a name="troubleshoot-errors-and-issues"></a>Risoluzione dei problemi e gli errori
- Per assistenza con alcuni errori comuni e altri problemi nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di SharePoint, vedere gli argomenti seguenti:  
-  
--   [Risolvere i problemi di soluzioni SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  
--   [Il debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md)  
-  
--   [Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
-  
+ Per assistenza con alcuni errori comuni e altri problemi nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di SharePoint, vedere gli argomenti seguenti:
+
+-   [Risolvere i problemi di soluzioni SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+
+-   [Il debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+
+-   [Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+
 ## <a name="other-resources"></a>Altre risorse
- La tabella seguente elenca i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] forum e altre risorse disponibili di strumenti di SharePoint.  
-  
-|Termine|Definizione|  
-|----------|----------------|  
-|[Sviluppo per SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Forum dedicato a domande sullo sviluppo di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Forum di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Forum dedicato a domande sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Guida e supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?LinkID=108287)|È possibile accedere agli articoli di Microsoft Knowledge Base (KB), a download e ad aggiornamenti, a servizi di supporto su Web e ad altri servizi.|  
-  
- Se non è possibile trovare le risposte necessarie, è possibile accedere a opzioni di supporto online, ad esempio il tentativo di contattare il servizio supporto tecnico clienti Microsoft o eseguire ricerche negli articoli della Knowledge Base. Per altre informazioni, vedere la [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) pagina.  
-  
+ La tabella seguente elenca i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] forum e altre risorse disponibili di strumenti di SharePoint.
+
+|Termine|Definizione|
+|----------|----------------|
+|[Sviluppo per SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Forum dedicato a domande sullo sviluppo di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Forum di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Forum dedicato a domande sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Guida e supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?LinkID=108287)|È possibile accedere agli articoli di Microsoft Knowledge Base (KB), a download e ad aggiornamenti, a servizi di supporto su Web e ad altri servizi.|
+
+ Se non è possibile trovare le risposte necessarie, è possibile accedere a opzioni di supporto online, ad esempio il tentativo di contattare il servizio supporto tecnico clienti Microsoft o eseguire ricerche negli articoli della Knowledge Base. Per altre informazioni, vedere la [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) pagina.
+
 ## <a name="see-also"></a>Vedere anche
- [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+- [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

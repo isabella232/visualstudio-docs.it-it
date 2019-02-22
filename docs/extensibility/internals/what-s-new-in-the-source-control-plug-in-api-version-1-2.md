@@ -11,31 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bfefacf73e1ed7209ee7b40eec4c180e16904d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ab98719f13ed787947a5e1d8a06d2080718eb0e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949701"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614824"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Cosa&#39;plug-in versione 1.2 dell'API di controllo s nuove nell'origine
-Questa sezione evidenzia la funzionalità di controllo codice sorgente avanzate nell'API di plug-in del controllo origine versione 1.2. Di seguito sono elencate le nuove funzionalità nella versione 1.2:  
-  
-## <a name="changes"></a>Modifiche  
- [Eliminazione di file ~SAK](../../extensibility/internals/elimination-of-tilde-sak-files.md)  
- Viene illustrato come l'API 1.2 plug-in controllo di origine interagisce con i file temporanei.  
-  
- [Applicazione delle impostazioni attraverso più connessioni di progetto](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md)  
- Illustra come un plug-in del controllo del codice sorgente può utilizzare un'operazione batch per eseguire la stessa operazione di controllo di origine in più progetti o più contesti di connessione.  
-  
- [Creazione di cartelle contenitore padre per le soluzioni](../../extensibility/internals/creating-parent-container-folders-for-solutions.md)  
- Viene spiegato come il plug-in origine controllo API versione 1.2 consente all'utente di specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti Web all'interno della soluzione.  
-  
- [Confronto facoltativo della cartella di progetto locale con l'archivio del controllo del codice sorgente](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md)  
- Viene illustrato il modo in cui l'API 1.2 plug-in controllo di origine confronta le versioni dei file.  
-  
- [Rimozione delle informazioni del controllo del codice sorgente dai file con estensione proj e sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)  
- Viene illustrato come il plug-in origine controllo API versione 1.2 archivia le informazioni sui progetti e soluzioni.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Introduzione](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+Questa sezione evidenzia la funzionalità di controllo codice sorgente avanzate nell'API di plug-in del controllo origine versione 1.2. Di seguito sono elencate le nuove funzionalità nella versione 1.2:
+
+## <a name="changes"></a>Modifiche
+- [Eliminazione di ~ SAK file](../../extensibility/internals/elimination-of-tilde-sak-files.md) spiega come l'API 1.2 plug-in controllo di origine interagisce con i file temporanei.
+
+- [Applicazione delle impostazioni tra più connessioni progetto](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md) illustra come un plug-in del controllo del codice sorgente può utilizzare un'operazione batch per eseguire la stessa operazione di controllo di origine in più progetti o più contesti di connessione.
+
+- [Creazione di cartelle contenitore padre per le soluzioni](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) spiega in che modo il plug-in origine controllo API versione 1.2 consente all'utente di specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti Web all'interno della soluzione.
+
+- [Facoltativo confronto del progetto cartella locale a origine controllo Store](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md) illustra il modo in cui l'API 1.2 plug-in controllo di origine confronta le versioni dei file.
+
+- [Rimozione delle informazioni di controllo di origine da. Proj e. File sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) spiega come il plug-in origine controllo API versione 1.2 archivia le informazioni sui progetti e soluzioni.
+
+## <a name="see-also"></a>Vedere anche
+- [Introduzione](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

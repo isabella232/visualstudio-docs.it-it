@@ -12,26 +12,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a101f59615c29499905fee9bef1249b399a573e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b82be9d7f376c1fbc0bc5b24534298a917d07b2e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951040"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624347"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Visualizzare i file usando il comando Apri con
-Un progetto può chiedere l'IDE per visualizzare il **aperta con** nella finestra di dialogo. Questa richiesta chiede all'utente di aprire un file con una selezione dell'editor standard. I passaggi seguenti descrivono questo processo:  
-  
-1.  Le chiamate di progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, specificando il valore `OSE_UseOpenWithDialog` per il `OSEOpenDocEditor` parametro.  
-  
-2.  Basato sull'estensione del nome file del documento, l'IDE determina quale editor elencate nel controllo del Registro di sistema può aprire il documento specificato e visualizza queste informazioni nel **Apri con** nella finestra di dialogo.  
-  
+Un progetto può chiedere l'IDE per visualizzare il **aperta con** nella finestra di dialogo. Questa richiesta chiede all'utente di aprire un file con una selezione dell'editor standard. I passaggi seguenti descrivono questo processo:
+
+1.  Le chiamate di progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, specificando il valore `OSE_UseOpenWithDialog` per il `OSEOpenDocEditor` parametro.
+
+2.  Basato sull'estensione del nome file del documento, l'IDE determina quale editor elencate nel controllo del Registro di sistema può aprire il documento specificato e visualizza queste informazioni nel **Apri con** nella finestra di dialogo.
+
     > [!NOTE]
-    >  Progetti con un editor intrinseco che deve essere incluso nel **aperta con** nella finestra di dialogo deve registrare una factory dell'editor per ogni tali editor. Editor intrinseco funzionare solo insieme a un particolare tipo di progetto, che viene applicato nell'implementazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> (metodo). L'IDE include una factory dell'editor predefinita per l'editor di testo principale e l'editor binario. L'IDE crea anche un'istanza di una factory dell'editor per conto di ogni associazione di file Windows registrati. Un esempio di file di questo tipo è Microsoft Word.  
-  
-3.  Non appena l'utente seleziona un elemento dal **Apri con** finestra di dialogo, quindi l'IDE si apre il documento chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> (metodo). Per altre informazioni, vedere [Procedura: Aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Aprire e salvare elementi del progetto](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Visualizzare i file usando il comando Apri File](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Procedura: Apri editor standard](../../extensibility/how-to-open-standard-editors.md)
+    >  Progetti con un editor intrinseco che deve essere incluso nel **aperta con** nella finestra di dialogo deve registrare una factory dell'editor per ogni tali editor. Editor intrinseco funzionare solo insieme a un particolare tipo di progetto, che viene applicato nell'implementazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> (metodo). L'IDE include una factory dell'editor predefinita per l'editor di testo principale e l'editor binario. L'IDE crea anche un'istanza di una factory dell'editor per conto di ogni associazione di file Windows registrati. Un esempio di file di questo tipo è Microsoft Word.
+
+3.  Non appena l'utente seleziona un elemento dal **Apri con** finestra di dialogo, quindi l'IDE si apre il documento chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> (metodo). Per altre informazioni, vedere [Procedura: Aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md).
+
+## <a name="see-also"></a>Vedere anche
+- [Aprire e salvare elementi del progetto](../../extensibility/internals/opening-and-saving-project-items.md)
+- [Visualizzare i file usando il comando Apri File](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+- [Procedura: Apri editor standard](../../extensibility/how-to-open-standard-editors.md)

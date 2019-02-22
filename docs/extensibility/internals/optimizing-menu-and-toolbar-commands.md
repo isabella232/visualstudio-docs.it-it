@@ -14,23 +14,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c68822c2dc640008079b0d518fb5774be9a46ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037746"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631510"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Ottimizzazione dei comandi di menu e barre degli strumenti
-L'aggiunta di pacchetti VSPackage e i comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe essere un'interfaccia utente piena. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce metodi per ridurre al minimo la confusione di comando dell'interfaccia utente.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Miglioramento della disponibilità dei comandi](../../extensibility/internals/making-commands-available.md)  
- Vengono fornite linee guida generali per ridurre al minimo affollare del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente quando si aggiungono pacchetti VSPackage.  
-  
- [Linee guida per il posizionamento](../../extensibility/internals/command-placement-guidelines.md)  
- Fornisce linee guida specifiche per l'implementazione di un pacchetto VSPackage in base alle dimensioni del set di comandi.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)  
+L'aggiunta di pacchetti VSPackage e i comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe essere un'interfaccia utente piena. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce metodi per ridurre al minimo la confusione di comando dell'interfaccia utente.
+
+## <a name="in-this-section"></a>In questa sezione
+- [Miglioramento della disponibilità dei comandi](../../extensibility/internals/making-commands-available.md)
+
+ Vengono fornite linee guida generali per ridurre al minimo affollare del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente quando si aggiungono pacchetti VSPackage.
+
+- [Linee guida per il posizionamento](../../extensibility/internals/command-placement-guidelines.md)
+
+ Fornisce linee guida specifiche per l'implementazione di un pacchetto VSPackage in base alle dimensioni del set di comandi.
+
+## <a name="related-sections"></a>Sezioni correlate
+- [Comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  Spiega come creare un'interfaccia utente che include menu, barre degli strumenti e caselle combinate di comandi.

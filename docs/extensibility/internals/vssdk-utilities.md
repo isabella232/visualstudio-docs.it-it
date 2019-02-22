@@ -10,21 +10,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23ad70d270dde4fbc0aa8997ca439b386096a1bf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e6fdfeb646e4f6e1bef76392b0c68fd4a16b9b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011078"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624880"
 ---
 # <a name="vssdk-utilities"></a>Utilità VSSDK
-Negli argomenti di questa sezione vengono descritti gli strumenti forniti con VSSDK.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Utilità RegPkg](../../extensibility/internals/regpkg-utility.md)  
-  [Utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md)  
-  [Utilità CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)  
-  [Strumenti dei temi di colore](../../extensibility/internals/color-theming-tools.md)  
-  [Strumenti per il servizio immagini](../../extensibility/internals/image-service-tools.md)  
-  
+Negli argomenti di questa sezione vengono descritti gli strumenti forniti con VSSDK.
+
+## <a name="in-this-section"></a>In questa sezione
+
+- [Utilità RegPkg](../../extensibility/internals/regpkg-utility.md)
+- [Utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md)
+- [Utilità CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)
+- [Strumenti dei temi di colore](../../extensibility/internals/color-theming-tools.md)
+- [Strumenti per il servizio immagini](../../extensibility/internals/image-service-tools.md)
+
 ## <a name="related-sections"></a>Sezioni correlate

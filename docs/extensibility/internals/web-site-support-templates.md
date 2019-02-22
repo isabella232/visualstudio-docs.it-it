@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618198"
 ---
 # <a name="web-site-support-templates"></a>Modelli di supporto per siti Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] I modelli di progetto ed elemento di sito Web forniscono gli stub progetti ed elementi riutilizzabili e personalizzabili sito Web che permettono di velocizzare il processo di sviluppo, eliminando la necessità di creare nuovi progetti di siti Web e gli elementi da zero. Per ulteriori informazioni sul [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelli, vedere [creazione Project and Item Templates](../../ide/creating-project-and-item-templates.md).
@@ -185,4 +185,4 @@ ms.locfileid: "54961598"
      Il file di modello che determina il contenuto della nuova pagina master e il file dei dipendenti, se presente.
 
 ## <a name="see-also"></a>Vedere anche
- [Supporto per siti Web](../../extensibility/internals/web-site-support.md)
+- [Supporto per siti Web](../../extensibility/internals/web-site-support.md)

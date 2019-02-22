@@ -13,55 +13,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45c1f5b7299a279d5ceaab3d51fcb63dab8fe1f2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653957"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selezione e valuta nell'IDE
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) gestisce le informazioni sugli utenti oggetti attualmente selezionati tramite selezione *contesto*. Con il contesto di selezione, i pacchetti VSPackage possono essere incluse nella valuta verifica in due modi:  
-  
--   Propagando le informazioni di valuta sui pacchetti VSPackage all'IDE.  
-  
--   Monitorando selezioni attualmente attiva degli utenti all'interno dell'IDE.  
-  
-## <a name="selection-context"></a>Contesto di selezione  
- Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalmente tiene traccia della valuta IDE nel proprio oggetto di contesto di selezione globale. Nella tabella seguente mostra gli elementi che costituiscono il contesto di selezione.  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|Gerarchia corrente.|In genere il progetto corrente. una gerarchia corrente di NULL indica che la soluzione nel suo complesso è corrente.|  
-|ID dell'elemento corrente|L'elemento selezionato all'interno della gerarchia corrente; Quando sono presenti le selezioni multiple in una finestra del progetto, possono esserci più elementi correnti.|  
-|Corrente `SelectionContainer`|Contiene uno o più oggetti per cui la finestra Proprietà visualizzazione delle proprietà.|  
-  
- Inoltre, l'ambiente mantiene due elenchi globali:  
-  
--   Un elenco di identificatori di comando dell'interfaccia utente attivi  
-  
--   Un elenco di tipi di elementi attualmente attivo.  
-  
-### <a name="window-types-and-selection"></a>Selezione e tipi di finestre  
- Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE windows sono organizzati in due tipi generali:  
-  
-- Windows tipo di gerarchia  
-  
-- Finestre cornice, ad esempio le finestre dei documenti e finestre  
-  
-  L'IDE rileva valuta in modo diverso per ognuno di questi tipi di finestra.  
-  
-  La finestra di tipo di progetto più comune è Esplora soluzioni, che controlla l'IDE. Tiene traccia di una finestra del tipo di progetto della gerarchia globale e l'ID dell'elemento del contesto di selezione globale e la finestra si basa sulla selezione dell'utente per determinare la gerarchia corrente. Per windows: tipo di progetto, l'ambiente fornisce il servizio globale <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, tramite quale VSPackage possono monitorare i valori correnti per gli elementi aperti. Proprietà nell'ambiente di esplorazione è determinata dal servizio globale.  
-  
-  Finestre cornice, utilizzano d'altra parte, dell'oggetto documento all'interno della finestra cornice per inserire il valore di SelectionContext (il trio di gerarchia/ID dell'elemento/SelectionContainer). . Finestre cornice usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> per questo scopo. Oggetto documento può effettuare il push solo i valori per il contenitore di selezione, lasciando i valori locali per la gerarchia e ItemID invariato, come avviene per i documenti figlio MDI.  
-  
-### <a name="events-and-currency"></a>Gli eventi e valuta  
- Due tipi di eventi possono verificarsi che influiscono sulla nozione dell'ambiente di valuta:  
-  
--   Eventi che vengono propagati a livello globale e modificare il contesto di selezione finestra cornice. Esempi di questo tipo di evento includono una finestra figlio MDI viene aperta una finestra degli strumenti globale in corso l'apertura o una finestra degli strumenti del tipo di progetto in corso l'apertura.  
-  
--   Eventi che modificano gli elementi viene tracciati nel contesto di selezione finestra cornice. Ad esempio la modifica di selezione all'interno di un DocObject o la modifica di selezione in una finestra del tipo di progetto.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Oggetti di contesto di selezione](../../extensibility/internals/selection-context-objects.md)   
- [Commenti e suggerimenti per l'utente](../../extensibility/internals/feedback-to-the-user.md)
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) gestisce le informazioni sugli utenti oggetti attualmente selezionati tramite selezione *contesto*. Con il contesto di selezione, i pacchetti VSPackage possono essere incluse nella valuta verifica in due modi:
+
+-   Propagando le informazioni di valuta sui pacchetti VSPackage all'IDE.
+
+-   Monitorando selezioni attualmente attiva degli utenti all'interno dell'IDE.
+
+## <a name="selection-context"></a>Contesto di selezione
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalmente tiene traccia della valuta IDE nel proprio oggetto di contesto di selezione globale. Nella tabella seguente mostra gli elementi che costituiscono il contesto di selezione.
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|Gerarchia corrente.|In genere il progetto corrente. una gerarchia corrente di NULL indica che la soluzione nel suo complesso è corrente.|
+|ID dell'elemento corrente|L'elemento selezionato all'interno della gerarchia corrente; Quando sono presenti le selezioni multiple in una finestra del progetto, possono esserci più elementi correnti.|
+|Corrente `SelectionContainer`|Contiene uno o più oggetti per cui la finestra Proprietà visualizzazione delle proprietà.|
+
+ Inoltre, l'ambiente mantiene due elenchi globali:
+
+-   Un elenco di identificatori di comando dell'interfaccia utente attivi
+
+-   Un elenco di tipi di elementi attualmente attivo.
+
+### <a name="window-types-and-selection"></a>Selezione e tipi di finestre
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE windows sono organizzati in due tipi generali:
+
+- Windows tipo di gerarchia
+
+- Finestre cornice, ad esempio le finestre dei documenti e finestre
+
+  L'IDE rileva valuta in modo diverso per ognuno di questi tipi di finestra.
+
+  La finestra di tipo di progetto più comune è Esplora soluzioni, che controlla l'IDE. Tiene traccia di una finestra del tipo di progetto della gerarchia globale e l'ID dell'elemento del contesto di selezione globale e la finestra si basa sulla selezione dell'utente per determinare la gerarchia corrente. Per windows: tipo di progetto, l'ambiente fornisce il servizio globale <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, tramite quale VSPackage possono monitorare i valori correnti per gli elementi aperti. Proprietà nell'ambiente di esplorazione è determinata dal servizio globale.
+
+  Finestre cornice, utilizzano d'altra parte, dell'oggetto documento all'interno della finestra cornice per inserire il valore di SelectionContext (il trio di gerarchia/ID dell'elemento/SelectionContainer). . Finestre cornice usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> per questo scopo. Oggetto documento può effettuare il push solo i valori per il contenitore di selezione, lasciando i valori locali per la gerarchia e ItemID invariato, come avviene per i documenti figlio MDI.
+
+### <a name="events-and-currency"></a>Gli eventi e valuta
+ Due tipi di eventi possono verificarsi che influiscono sulla nozione dell'ambiente di valuta:
+
+-   Eventi che vengono propagati a livello globale e modificare il contesto di selezione finestra cornice. Esempi di questo tipo di evento includono una finestra figlio MDI viene aperta una finestra degli strumenti globale in corso l'apertura o una finestra degli strumenti del tipo di progetto in corso l'apertura.
+
+-   Eventi che modificano gli elementi viene tracciati nel contesto di selezione finestra cornice. Ad esempio la modifica di selezione all'interno di un DocObject o la modifica di selezione in una finestra del tipo di progetto.
+
+## <a name="see-also"></a>Vedere anche
+- [Oggetti del contesto di selezione](../../extensibility/internals/selection-context-objects.md)
+- [Commenti e suggerimenti per l'utente](../../extensibility/internals/feedback-to-the-user.md)

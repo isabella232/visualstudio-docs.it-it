@@ -11,30 +11,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0310f515a444d0ff68fe971463602c484763848b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965679"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622800"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Completamento delle istruzioni in un servizio di linguaggio legacy
-Completamento delle istruzioni è il processo mediante il quale il servizio di linguaggio consente agli utenti di completare una parola chiave del linguaggio o l'elemento che è stato avviato la digitazione nell'editor principale. Questo argomento illustra come funziona il completamento delle istruzioni e come implementarlo nel servizio di linguaggio.  
-  
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare il completamento delle istruzioni, vedere [procedura dettagliata: Visualizzazione del completamento istruzioni](../../extensibility/walkthrough-displaying-statement-completion.md).  
-  
+Completamento delle istruzioni è il processo mediante il quale il servizio di linguaggio consente agli utenti di completare una parola chiave del linguaggio o l'elemento che è stato avviato la digitazione nell'editor principale. Questo argomento illustra come funziona il completamento delle istruzioni e come implementarlo nel servizio di linguaggio.
+
+ Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare il completamento delle istruzioni, vedere [procedura dettagliata: Visualizzazione del completamento istruzioni](../../extensibility/walkthrough-displaying-statement-completion.md).
+
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
-  
-## <a name="implementing-statement-completion"></a>Implementazione di completamento istruzioni  
- Nell'editor principale, il completamento delle istruzioni attiva un'interfaccia utente speciale in modo interattivo consente più facilmente e rapidamente scrittura codice. Completamento delle istruzioni facilita mediante la visualizzazione di classi o gli oggetti pertinenti quando sono necessari, che consente di evitare di dover ricordare elementi specifici o che sia necessario cercarli in un argomento di riferimento della Guida.  
-  
- Per implementare il completamento delle istruzioni, il linguaggio deve avere un trigger di completamento istruzione, che può essere analizzato. Ad esempio, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Usa un operatore punto (.), mentre [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] viene utilizzata una freccia (->) operatore. Un servizio di linguaggio possa usare più di un trigger per avviare il completamento delle istruzioni. Questi trigger vengono programmati nel filtro di comando.  
-  
-## <a name="command-filters-and-triggers"></a>Filtri di comando e trigger  
- Filtri di comando di intercettare le occorrenze del trigger o del trigger. Per aggiungere il filtro di comando per la visualizzazione, implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia e collegarlo alla visualizzazione chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> (metodo). È possibile usare lo stesso filtro di comando (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) per tutti gli aspetti del servizio linguaggio, ad esempio il completamento delle istruzioni, i marcatori di errore e i suggerimenti di metodo. Per altre informazioni, vedere [intercetta comandi del servizio di linguaggio Legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md).  
-  
- Quando il trigger viene immesso nell'editor, in particolare, il buffer di testo, quindi chiama il servizio di linguaggio il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> (metodo). In questo modo l'editor visualizzare l'interfaccia utente in modo che l'utente può scegliere tra i candidati di completamento istruzione. Questo metodo richiede l'implementazione <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> e il <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> flag come parametri. Verrà visualizzato l'elenco di elementi di completamento in una casella di riepilogo dello scorrimento. Quando l'utente continua a digitare, la selezione all'interno della casella di elenco viene aggiornata per riflettere che la corrispondenza più vicina ai più recenti caratteri tipizzati. L'editor principale implementa l'interfaccia utente per il completamento delle istruzioni, ma il servizio di linguaggio deve implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfaccia per definire un set di elementi di completamento candidato per l'istruzione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Intercettazione dei comandi dei servizi di linguaggio legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+>  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+
+## <a name="implementing-statement-completion"></a>Implementazione di completamento istruzioni
+ Nell'editor principale, il completamento delle istruzioni attiva un'interfaccia utente speciale in modo interattivo consente più facilmente e rapidamente scrittura codice. Completamento delle istruzioni facilita mediante la visualizzazione di classi o gli oggetti pertinenti quando sono necessari, che consente di evitare di dover ricordare elementi specifici o che sia necessario cercarli in un argomento di riferimento della Guida.
+
+ Per implementare il completamento delle istruzioni, il linguaggio deve avere un trigger di completamento istruzione, che può essere analizzato. Ad esempio, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Usa un operatore punto (.), mentre [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] viene utilizzata una freccia (->) operatore. Un servizio di linguaggio possa usare più di un trigger per avviare il completamento delle istruzioni. Questi trigger vengono programmati nel filtro di comando.
+
+## <a name="command-filters-and-triggers"></a>Filtri di comando e trigger
+ Filtri di comando di intercettare le occorrenze del trigger o del trigger. Per aggiungere il filtro di comando per la visualizzazione, implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia e collegarlo alla visualizzazione chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> (metodo). È possibile usare lo stesso filtro di comando (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) per tutti gli aspetti del servizio linguaggio, ad esempio il completamento delle istruzioni, i marcatori di errore e i suggerimenti di metodo. Per altre informazioni, vedere [intercetta comandi del servizio di linguaggio Legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md).
+
+ Quando il trigger viene immesso nell'editor, in particolare, il buffer di testo, quindi chiama il servizio di linguaggio il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> (metodo). In questo modo l'editor visualizzare l'interfaccia utente in modo che l'utente può scegliere tra i candidati di completamento istruzione. Questo metodo richiede l'implementazione <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> e il <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> flag come parametri. Verrà visualizzato l'elenco di elementi di completamento in una casella di riepilogo dello scorrimento. Quando l'utente continua a digitare, la selezione all'interno della casella di elenco viene aggiornata per riflettere che la corrispondenza più vicina ai più recenti caratteri tipizzati. L'editor principale implementa l'interfaccia utente per il completamento delle istruzioni, ma il servizio di linguaggio deve implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfaccia per definire un set di elementi di completamento candidato per l'istruzione.
+
+## <a name="see-also"></a>Vedere anche
+- [Intercettazione dei comandi dei servizi di linguaggio legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
