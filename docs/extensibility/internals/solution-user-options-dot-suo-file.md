@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd77c125f6ac7b7efa8d0979658c7933dc1b9ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f529a3861ed6061b428818140ad90d6ca79991af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936992"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600867"
 ---
 # <a name="solution-user-options-suo-file"></a>File delle opzioni utente della soluzione (con estensione suo)
-Il file (con estensione suo) opzioni utente della soluzione contiene le opzioni di soluzione per ogni utente. Questo file non deve essere archiviato al controllo del codice sorgente.  
-  
- Il file (con estensione suo) opzioni utente della soluzione è un'archiviazione strutturata o istruzione composta, file archiviati in un formato binario. Con il nome del flusso in corso la chiave che verrà usata per identificare le informazioni nel file con estensione suo è salvare le informazioni utente in flussi. Il file opzioni utente della soluzione viene usato per archiviare le impostazioni delle preferenze utente e viene creato automaticamente quando Visual Studio salva una soluzione.  
-  
- Quando l'ambiente si apre un file con estensione suo, enumera tutti i pacchetti VSPackage attualmente caricati. Se un pacchetto VSPackage implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface, quindi l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> metodo nel pacchetto VSPackage chiedendo di caricare tutti i relativi dati dal file con estensione suo.  
-  
- È responsabilità del VSPackage conoscere ciò che crea un flusso potrebbero essere state scritte nel file con estensione suo. Per ogni flusso che è stata scritta, il pacchetto VSPackage chiama nuovamente nell'ambiente tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> per caricare un flusso specifico identificato dalla chiave, ovvero il nome del flusso. L'ambiente chiama quindi tornare a VSPackage per leggere tale flusso specifico passando il nome del flusso e un `IStream` puntatore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> (metodo).  
-  
- A questo punto, in cui viene effettuata un'altra chiamata a `LoadUserOptions` per verificare se esiste un'altra sezione del file con estensione suo che deve essere letto. Questo processo continua finché tutti i flussi di dati nel file con estensione suo sono stati letti ed elaborati dall'ambiente.  
-  
- Quando la soluzione viene salvata o chiuso, l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> metodo con un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> (metodo). Un `IStream` contenente le informazioni da salvare binarie viene passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> metodo, che quindi scrive le informazioni per il file con estensione suo e chiama il `SaveUserOptions` metodo per verificare se esiste un altro flusso di informazioni per scrivere il suo file.  
-  
- Questi due metodi, `SaveUserOptions` e `WriteUserOptions`, vengono chiamati in modo ricorsivo per ogni flusso di informazioni da salvare nel file con estensione suo, passando il puntatore a `IVsSolutionPersistence`. Tali metodi vengono chiamati in modo ricorsivo per consentire la scrittura di più flussi per il file con estensione suo. In tal modo, le informazioni utente sono persistenti con la soluzione e vengano garantito che sia presente alla successiva apertura della soluzione.  
-  
-## <a name="see-also"></a>Vedere anche  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
- [Soluzioni](../../extensibility/internals/solutions.md)
+Il file (con estensione suo) opzioni utente della soluzione contiene le opzioni di soluzione per ogni utente. Questo file non deve essere archiviato al controllo del codice sorgente.
+
+ Il file (con estensione suo) opzioni utente della soluzione è un'archiviazione strutturata o istruzione composta, file archiviati in un formato binario. Con il nome del flusso in corso la chiave che verrà usata per identificare le informazioni nel file con estensione suo è salvare le informazioni utente in flussi. Il file opzioni utente della soluzione viene usato per archiviare le impostazioni delle preferenze utente e viene creato automaticamente quando Visual Studio salva una soluzione.
+
+ Quando l'ambiente si apre un file con estensione suo, enumera tutti i pacchetti VSPackage attualmente caricati. Se un pacchetto VSPackage implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface, quindi l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> metodo nel pacchetto VSPackage chiedendo di caricare tutti i relativi dati dal file con estensione suo.
+
+ È responsabilità del VSPackage conoscere ciò che crea un flusso potrebbero essere state scritte nel file con estensione suo. Per ogni flusso che è stata scritta, il pacchetto VSPackage chiama nuovamente nell'ambiente tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> per caricare un flusso specifico identificato dalla chiave, ovvero il nome del flusso. L'ambiente chiama quindi tornare a VSPackage per leggere tale flusso specifico passando il nome del flusso e un `IStream` puntatore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> (metodo).
+
+ A questo punto, in cui viene effettuata un'altra chiamata a `LoadUserOptions` per verificare se esiste un'altra sezione del file con estensione suo che deve essere letto. Questo processo continua finché tutti i flussi di dati nel file con estensione suo sono stati letti ed elaborati dall'ambiente.
+
+ Quando la soluzione viene salvata o chiuso, l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> metodo con un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> (metodo). Un `IStream` contenente le informazioni da salvare binarie viene passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> metodo, che quindi scrive le informazioni per il file con estensione suo e chiama il `SaveUserOptions` metodo per verificare se esiste un altro flusso di informazioni per scrivere il suo file.
+
+ Questi due metodi, `SaveUserOptions` e `WriteUserOptions`, vengono chiamati in modo ricorsivo per ogni flusso di informazioni da salvare nel file con estensione suo, passando il puntatore a `IVsSolutionPersistence`. Tali metodi vengono chiamati in modo ricorsivo per consentire la scrittura di più flussi per il file con estensione suo. In tal modo, le informazioni utente sono persistenti con la soluzione e vengano garantito che sia presente alla successiva apertura della soluzione.
+
+## <a name="see-also"></a>Vedere anche
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
+- [Soluzioni](../../extensibility/internals/solutions.md)

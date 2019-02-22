@@ -11,28 +11,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20e8dcb947b84652f818ab38ed441e39e27942e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033401"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616885"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Gerarchie in Visual Studio
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) consente di visualizzare un progetto come un *gerarchia*. Nell'IDE di una gerarchia è una struttura ad albero dei nodi, in cui ogni nodo dispone di un set di proprietà associate. Oggetto *gerarchia del progetto* è un contenitore che contiene gli elementi del progetto, relazioni, degli elementi e delle proprietà dell'elemento associato e i comandi.  
-  
- Nelle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è gestire le gerarchie di progetto usando l'interfaccia della gerarchia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia reindirizza i comandi richiamati dagli elementi del progetto nella finestra gerarchia appropriata anziché il gestore di comandi standard.  
-  
-## <a name="project-hierarchies"></a>Gerarchie di progetto  
- Ogni gerarchia del progetto contiene elementi che è possibile visualizzare e modificare. Questi elementi variano a seconda del tipo di progetto. Ad esempio, un progetto di database potrà contenere stored procedure, viste di database e tabelle di database. Un progetto di linguaggio di programmazione, d'altra parte, probabilmente includerà i file di origine e file di risorse per le finestre di dialogo e bitmap. Le gerarchie possono essere annidate, che offre una maggiore flessibilità quando si crea una gerarchia del progetto.  
-  
- Quando si crea un nuovo tipo di progetto, il tipo di progetto consente di controllare il set completo di elementi che possono essere modificate in esso. Tuttavia, i progetti possono contenere elementi per cui non hanno supporto per la modifica. Ad esempio, i progetti Visual C++ possono contenere i file HTML, anche se Visual C++ non fornisce un editor personalizzato per il tipo di file HTML.  
-  
- Gerarchie di gestiscono la persistenza di elementi in che essi contenuti. L'implementazione della gerarchia debba controllare qualsiasi proprietà speciali che interessano la persistenza degli elementi all'interno della gerarchia. Ad esempio, se gli elementi rappresentano gli oggetti in un repository anziché i file, l'implementazione della gerarchia debba controllare la persistenza di tali oggetti. L'IDE stesso indirizza la gerarchia per salvare gli elementi in conformità con input utente, ma l'IDE non controlla le eventuali azioni necessarie per salvare tali elementi. Al contrario, il progetto è nel controllo.  
-  
- Quando un utente apre un elemento in un editor, la gerarchia dei controlli di tale elemento è selezionata e diventa nella gerarchia attiva. La gerarchia selezionata determina il set di comandi disponibili per agire sull'elemento. Rilevamento dello stato attivo utente in questo modo consente alla gerarchia in modo da riflettere il contesto dell'utente corrente.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Tipi di progetto](../../extensibility/internals/project-types.md)   
- [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [Esempi di VSSDK](http://aka.ms/vs2015sdksamples)
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) consente di visualizzare un progetto come un *gerarchia*. Nell'IDE di una gerarchia è una struttura ad albero dei nodi, in cui ogni nodo dispone di un set di proprietà associate. Oggetto *gerarchia del progetto* è un contenitore che contiene gli elementi del progetto, relazioni, degli elementi e delle proprietà dell'elemento associato e i comandi.
+
+ Nelle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è gestire le gerarchie di progetto usando l'interfaccia della gerarchia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia reindirizza i comandi richiamati dagli elementi del progetto nella finestra gerarchia appropriata anziché il gestore di comandi standard.
+
+## <a name="project-hierarchies"></a>Gerarchie di progetto
+ Ogni gerarchia del progetto contiene elementi che è possibile visualizzare e modificare. Questi elementi variano a seconda del tipo di progetto. Ad esempio, un progetto di database potrà contenere stored procedure, viste di database e tabelle di database. Un progetto di linguaggio di programmazione, d'altra parte, probabilmente includerà i file di origine e file di risorse per le finestre di dialogo e bitmap. Le gerarchie possono essere annidate, che offre una maggiore flessibilità quando si crea una gerarchia del progetto.
+
+ Quando si crea un nuovo tipo di progetto, il tipo di progetto consente di controllare il set completo di elementi che possono essere modificate in esso. Tuttavia, i progetti possono contenere elementi per cui non hanno supporto per la modifica. Ad esempio, i progetti Visual C++ possono contenere i file HTML, anche se Visual C++ non fornisce un editor personalizzato per il tipo di file HTML.
+
+ Gerarchie di gestiscono la persistenza di elementi in che essi contenuti. L'implementazione della gerarchia debba controllare qualsiasi proprietà speciali che interessano la persistenza degli elementi all'interno della gerarchia. Ad esempio, se gli elementi rappresentano gli oggetti in un repository anziché i file, l'implementazione della gerarchia debba controllare la persistenza di tali oggetti. L'IDE stesso indirizza la gerarchia per salvare gli elementi in conformità con input utente, ma l'IDE non controlla le eventuali azioni necessarie per salvare tali elementi. Al contrario, il progetto è nel controllo.
+
+ Quando un utente apre un elemento in un editor, la gerarchia dei controlli di tale elemento è selezionata e diventa nella gerarchia attiva. La gerarchia selezionata determina il set di comandi disponibili per agire sull'elemento. Rilevamento dello stato attivo utente in questo modo consente alla gerarchia in modo da riflettere il contesto dell'utente corrente.
+
+## <a name="see-also"></a>Vedere anche
+- [Tipi di progetto](../../extensibility/internals/project-types.md)
+- [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [Esempi di VSSDK](http://aka.ms/vs2015sdksamples)

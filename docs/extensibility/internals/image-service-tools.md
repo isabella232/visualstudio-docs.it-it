@@ -8,18 +8,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65ce034c5d014fc50e8bfc2a1d2d10f14ed0dca0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 83ab203b8d03202dd905e1472c747ccc6fc0027e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953864"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602988"
 ---
 # <a name="image-service-tools"></a>Strumenti per il servizio immagini
-il SDK di Visual Studio include diversi strumenti per aiutare i generatori di estensione per usare il servizio di immagini di Visual Studio.  
-  
--   Il [manifesto dalle risorse](../../extensibility/internals/manifest-from-resources.md) strumento accetta un elenco di risorse grafiche (file con estensione PNG o XAML) e genera un file manifesto dell'immagine.  
-  
--   Il [manifesto al codice](../../extensibility/internals/manifest-to-code.md) strumento prende un file manifesto dell'immagine e genera un file wrapper da utilizzare nei file C++, c#, VB o con estensione vsct.  
-  
+il SDK di Visual Studio include diversi strumenti per aiutare i generatori di estensione per usare il servizio di immagini di Visual Studio.
+
+-   Il [manifesto dalle risorse](../../extensibility/internals/manifest-from-resources.md) strumento accetta un elenco di risorse grafiche (file con estensione PNG o XAML) e genera un file manifesto dell'immagine.
+
+-   Il [manifesto al codice](../../extensibility/internals/manifest-to-code.md) strumento prende un file manifesto dell'immagine e genera un file wrapper da utilizzare nei file C++, c#, VB o con estensione vsct.
+
 -   Il [Visualizzatore della libreria di immagini](../../extensibility/internals/image-library-viewer.md) può caricare, modifica e ricerca di manifesti dell'immagine.

@@ -14,36 +14,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a95c0b2724e6c58a6d515fd1536f1f0bf7f69357
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c42fc5ec197447a8def80d3aab7bb74def2db5e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874445"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619381"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Procedura: Creare un'estensione di progetto SharePoint
-  Creare un'estensione di progetto quando si desidera aggiungere funzionalità a qualsiasi progetto SharePoint aperto in Visual Studio. Per altre informazioni, vedere [estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
+  Creare un'estensione di progetto quando si desidera aggiungere funzionalità a qualsiasi progetto SharePoint aperto in Visual Studio. Per altre informazioni, vedere [estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
-### <a name="to-create-a-project-extension"></a>Per creare un'estensione di progetto  
+### <a name="to-create-a-project-extension"></a>Per creare un'estensione di progetto
 
-1.  Creare un progetto Libreria di classi.  
+1.  Creare un progetto Libreria di classi.
 
-2.  Aggiungere riferimenti agli assembly riportati di seguito:  
+2.  Aggiungere riferimenti agli assembly riportati di seguito:
 
-    -   Microsoft.VisualStudio.SharePoint  
+    -   Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition  
+    -   System.ComponentModel.Composition
 
-3.  Creare una classe che implementi l'interfaccia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.  
+3.  Creare una classe che implementi l'interfaccia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.
 
-4.  Aggiungere il <xref:System.ComponentModel.Composition.ExportAttribute> alla classe. Questo attributo consente a Visual Studio di individuare e caricare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementazione. Passare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> tipo al costruttore dell'attributo.  
+4.  Aggiungere il <xref:System.ComponentModel.Composition.ExportAttribute> alla classe. Questo attributo consente a Visual Studio di individuare e caricare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementazione. Passare il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> tipo al costruttore dell'attributo.
 
-5.  Nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metodo, utilizzare i membri del *projectService* parametro per definire il comportamento dell'estensione. Questo parametro è un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto che fornisce accesso agli eventi definiti nel <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfaccia.  
+5.  Nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metodo, utilizzare i membri del *projectService* parametro per definire il comportamento dell'estensione. Questo parametro è un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto che fornisce accesso agli eventi definiti nel <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfaccia.
 
-## <a name="example"></a>Esempio  
- Esempio di codice seguente viene illustrato come creare un'estensione di progetto semplice che gestisce la maggior parte degli eventi di progetto SharePoint che sono definiti dal <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfaccia. Per testare il codice, creare un progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quindi aggiungere altri progetti alla soluzione, modificare i valori di proprietà di progetto, eliminare o escludere un progetto. L'estensione invia una notifica degli eventi mediante la scrittura di messaggi per il **Output** finestra e **elenco errori** finestra.  
+## <a name="example"></a>Esempio
+ Esempio di codice seguente viene illustrato come creare un'estensione di progetto semplice che gestisce la maggior parte degli eventi di progetto SharePoint che sono definiti dal <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interfaccia. Per testare il codice, creare un progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quindi aggiungere altri progetti alla soluzione, modificare i valori di proprietà di progetto, eliminare o escludere un progetto. L'estensione invia una notifica degli eventi mediante la scrittura di messaggi per il **Output** finestra e **elenco errori** finestra.
 
-  ```vb  
+  ```vb
     Imports Microsoft.VisualStudio.SharePoint
     Imports System.ComponentModel
     Imports System.ComponentModel.Composition
@@ -109,10 +109,10 @@ ms.locfileid: "54874445"
             project.ProjectService.Logger.WriteLine(message, LogCategory.Message)
         End Sub
       End Class
-    End Namespace  
-    ```  
+    End Namespace
+    ```
 
-    ```csharp  
+    ```csharp
     using Microsoft.VisualStudio.SharePoint;
     using System;
     using System.ComponentModel;
@@ -182,25 +182,25 @@ ms.locfileid: "54874445"
             project.ProjectService.Logger.WriteLine(message, LogCategory.Message);
         }
      }
-  }  
-  ```  
+  }
+  ```
 
-Questo esempio Usa il servizio di progetto SharePoint in cui per scrivere il messaggio il **Output** finestra e **elenco errori** finestra. Per altre informazioni, vedere [usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
+Questo esempio Usa il servizio di progetto SharePoint in cui per scrivere il messaggio il **Output** finestra e **elenco errori** finestra. Per altre informazioni, vedere [usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
- Per esempi che illustrano come gestire le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> e <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> eventi, vedere [come: Aggiungere una voce di menu di scelta rapida ai progetti SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) e [come: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ Per esempi che illustrano come gestire le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> e <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> eventi, vedere [come: Aggiungere una voce di menu di scelta rapida ai progetti SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) e [come: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
 
-## <a name="compile-the-code"></a>Compilare il codice  
- In questo esempio vengono richiesti riferimenti agli assembly seguenti:  
+## <a name="compile-the-code"></a>Compilare il codice
+ In questo esempio vengono richiesti riferimenti agli assembly seguenti:
 
--   Microsoft.VisualStudio.SharePoint  
+-   Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition  
+-   System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>Distribuire l'estensione  
- Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [gli strumenti di distribuzione di estensioni per SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Distribuire l'estensione
+ Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [gli strumenti di distribuzione di estensioni per SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Procedura: Aggiungere una voce di menu di scelta rapida ai progetti SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Procedura: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Procedura dettagliata: Creare un'estensione di progetto SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+- [Estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Procedura: Aggiungere una voce di menu di scelta rapida ai progetti SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [Procedura: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [Procedura dettagliata: Creare un'estensione di progetto SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)

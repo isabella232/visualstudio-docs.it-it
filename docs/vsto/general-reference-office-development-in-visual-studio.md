@@ -14,41 +14,49 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0502d26419da855d147fae9dc7fc2d14c241b092
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 70a34a4f0e9785277743d2870b23e33f848912b4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875901"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641091"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Riferimenti generali (sviluppo per Office in Visual Studio)
-  In questa sezione contiene dettagli tecnici sui progetti di Microsoft Office in Visual Studio.  
-  
-> [!NOTE]  
->  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)  
- Elenca gli assembly di interoperabilità primari che sono disponibili per l'installazione con Office e fornisce una breve descrizione di ognuno.  
-  
- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)  
- Descrive come i manifesti dell'applicazione vengono usate nelle soluzioni Office.  
-  
- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)  
- Viene descritto come i manifesti della distribuzione vengono usate le soluzioni Office.  
-  
- [Riferimento all'interfaccia utente &#40;sviluppo per Office in Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
- Elenca argomenti che illustrano le opzioni visualizzate in diverse finestre di dialogo, windows e altre interfacce utente.  
-  
- [I messaggi di errore &#40;sviluppo per Office in Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
- Elenca argomenti che illustrano i messaggi di errore per i progetti di Office.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Vengono forniti collegamenti alle informazioni sull'installazione, i modelli di progetto, assembly di interoperabilità primari di Office e nuove funzionalità di sviluppo per Office.  
-  
- [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)  
- Descrive gli esempi di codice e dettagliate per la creazione di progetti di Office in Visual Studio, che consentono di apprendere e sperimentare con la sintassi, struttura e le tecniche usate per creare soluzioni Office.  
-  
- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
- Vengono forniti collegamenti a informazioni su come iniziare a creare progetti di Office con Visual Studio.  
+  In questa sezione contiene dettagli tecnici sui progetti di Microsoft Office in Visual Studio.
+
+> [!NOTE]
+>  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
+
+ Elenca gli assembly di interoperabilità primari che sono disponibili per l'installazione con Office e fornisce una breve descrizione di ognuno.
+
+- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
+
+ Descrive come i manifesti dell'applicazione vengono usate nelle soluzioni Office.
+
+- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
+
+ Viene descritto come i manifesti della distribuzione vengono usate le soluzioni Office.
+
+- [Riferimento all'interfaccia utente &#40;sviluppo per Office in Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+
+ Elenca argomenti che illustrano le opzioni visualizzate in diverse finestre di dialogo, windows e altre interfacce utente.
+
+- [I messaggi di errore &#40;sviluppo per Office in Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+
+ Elenca argomenti che illustrano i messaggi di errore per i progetti di Office.
+
+## <a name="related-sections"></a>Sezioni correlate
+- [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+
+ Vengono forniti collegamenti alle informazioni sull'installazione, i modelli di progetto, assembly di interoperabilità primari di Office e nuove funzionalità di sviluppo per Office.
+
+- [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)
+
+ Descrive gli esempi di codice e dettagliate per la creazione di progetti di Office in Visual Studio, che consentono di apprendere e sperimentare con la sintassi, struttura e le tecniche usate per creare soluzioni Office.
+
+- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+
+ Vengono forniti collegamenti a informazioni su come iniziare a creare progetti di Office con Visual Studio.

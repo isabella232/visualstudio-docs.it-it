@@ -14,33 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b21acc054b94b272c172d95e0ed20f67691ea11
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e7a422e9548fabefa2066fb439c01e382586cd36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633675"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedura: A livello di codice usare le finestre di dialogo di Word in modalità nascosta
-  È possibile eseguire operazioni complesse con una chiamata al metodo richiamando le finestre di dialogo predefinite in Microsoft Office Word senza che vengano visualizzate all'utente. Tale scopo, è possibile utilizzare il <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodo per il <xref:Microsoft.Office.Interop.Word.Dialog> oggetti senza chiamare il <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> (metodo).  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="examples"></a>Esempi  
- Gli esempi di codice seguenti illustrano come usare il **Imposta pagina** finestra di dialogo in modalità nascosta a set di proprietà di installazione di più pagine senza input dell'utente. Gli esempi usano un <xref:Microsoft.Office.Interop.Word.Dialog> oggetto per configurare una dimensione di pagina personalizzato. Le impostazioni specifiche per l'installazione di pagina, ad esempio il margine superiore, il margine inferiore e così via, sono disponibili come proprietà di associazione tardiva del <xref:Microsoft.Office.Interop.Word.Dialog> oggetto. Queste proprietà vengono create dinamicamente dal Word in fase di esecuzione.  
-  
- Nell'esempio seguente viene illustrato come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** è disattivata e nei progetti Visual c# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In questi progetti, è possibile usare funzionalità di associazione tardiva nei compilatori Visual Basic e Visual c#. Per usare questo esempio, eseguirlo dal `ThisDocument` o `ThisAddIn` classe nel progetto.  
-  
+  È possibile eseguire operazioni complesse con una chiamata al metodo richiamando le finestre di dialogo predefinite in Microsoft Office Word senza che vengano visualizzate all'utente. Tale scopo, è possibile utilizzare il <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodo per il <xref:Microsoft.Office.Interop.Word.Dialog> oggetti senza chiamare il <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> (metodo).
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="examples"></a>Esempi
+ Gli esempi di codice seguenti illustrano come usare il **Imposta pagina** finestra di dialogo in modalità nascosta a set di proprietà di installazione di più pagine senza input dell'utente. Gli esempi usano un <xref:Microsoft.Office.Interop.Word.Dialog> oggetto per configurare una dimensione di pagina personalizzato. Le impostazioni specifiche per l'installazione di pagina, ad esempio il margine superiore, il margine inferiore e così via, sono disponibili come proprietà di associazione tardiva del <xref:Microsoft.Office.Interop.Word.Dialog> oggetto. Queste proprietà vengono create dinamicamente dal Word in fase di esecuzione.
+
+ Nell'esempio seguente viene illustrato come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** è disattivata e nei progetti Visual c# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In questi progetti, è possibile usare funzionalità di associazione tardiva nei compilatori Visual Basic e Visual c#. Per usare questo esempio, eseguirlo dal `ThisDocument` o `ThisAddIn` classe nel progetto.
+
  [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
- [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]  
-  
- Nell'esempio seguente viene illustrato come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** si trova in. In questi progetti, è necessario usare la reflection per accedere alle proprietà con associazione tardiva. Per usare questo esempio, eseguirlo dal `ThisDocument` o `ThisAddIn` classe nel progetto.  
-  
- [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: A livello di codice usare finestre di dialogo predefinite in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
- [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)   
- [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md)   
- [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
- [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
+ [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
+
+ Nell'esempio seguente viene illustrato come eseguire questa attività nei progetti Visual Basic in cui **Option Strict** si trova in. In questi progetti, è necessario usare la reflection per accedere alle proprietà con associazione tardiva. Per usare questo esempio, eseguirlo dal `ThisDocument` o `ThisAddIn` classe nel progetto.
+
+ [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: A livello di codice usare finestre di dialogo predefinite in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
+- [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
+- [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md)
+- [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)
+- [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)

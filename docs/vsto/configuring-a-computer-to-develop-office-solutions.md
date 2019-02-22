@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78b66e1d7e9520f4aa54d8bcee54803659f9f6f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e559ddfec8570077a78fe980632366b4a57605de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863435"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632953"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurare un computer per sviluppare soluzioni Office
 
@@ -41,16 +41,15 @@ Se si installa una versione supportata di Visual Studio, .NET Framework e Micros
 
      Per assicurarsi che questi strumenti vengono installati, avviare il programma di installazione di Visual Studio e scegliere il **Modify** pulsante. Selezionare la casella di controllo **Microsoft Office Developer Tools** , quindi scegliere il pulsante **Aggiorna** .
 
-- Assicurarsi che non si esegue una versione di Office a portata di a portata di clic. Vedere [Procedura: Verificare se Outlook è un'applicazione a portata di clic in un computer](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
+- Assicurarsi che non si esegue una versione di Office a portata di a portata di clic. Vedere [How to: Verificare se Outlook è un'applicazione a portata di clic in un computer](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Assicurarsi che si esegue solo una versione di Microsoft Office.
 
 Se si continua a verificarsi problemi, vedere [supporto aggiuntivo per gli errori nelle soluzioni Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
 ## <a name="see-also"></a>Vedere anche
-
-[Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Procedura: Configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Procedura: Installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md)
+- [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Procedura: Configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [Procedura: Installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md)

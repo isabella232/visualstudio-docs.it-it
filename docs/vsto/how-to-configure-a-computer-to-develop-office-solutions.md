@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99dd7bea33fa534be8dceb0fb888ac50e23cd01d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865589"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653970"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Procedura: Configurare un computer per sviluppare soluzioni Office
-  Per configurare un computer di sviluppo in modo tale da poter utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio, seguire le istruzioni in questo argomento. Per seguire la procedura, è necessario disporre dei privilegi amministrativi sul computer di sviluppo.  
-  
-### <a name="to-configure-the-development-computer"></a>Per configurare il computer di sviluppo  
-  
-1.  Installare una versione di Visual Studio che includa gli strumenti di sviluppo di Office. Gli strumenti di sviluppo di Office vengono installati per impostazione predefinita. Se si personalizza l'installazione di Visual Studio, selezionare le funzionalità da installare, verificare che **Microsoft Office Developer Tools** selezionata durante l'installazione. Per altre informazioni sulle versioni di Visual Studio che include Office developer tools, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
-  
-2.  Installare una versione di Office supportata dagli strumenti di sviluppo di Office in Visual Studio. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
-  
-     Assicurarsi inoltre di installare gli assembly di interoperabilità primari per la versione di Office installata. Per impostazione predefinita, gli assembly di interoperabilità primari vengono installati con Office. Se si modifica il programma di installazione di Office, assicurarsi che il **Supporto programmabilità .NET** funzione è selezionata per le applicazioni di destinazione.  
-  
-3.  Se si utilizza una versione inglese di Visual Studio ma usano le impostazioni di lingua diversa dall'inglese per Windows, è possibile installare il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] language pack in modo da vedere [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] messaggi nella stessa lingua di Windows. Le versioni non in lingua inglese di Visual Studio installano automaticamente il language pack. Il language pack è disponibile il [area download Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Quali sono le novità nello sviluppo per Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
- [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Procedura: Installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+  Per configurare un computer di sviluppo in modo tale da poter utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio, seguire le istruzioni in questo argomento. Per seguire la procedura, è necessario disporre dei privilegi amministrativi sul computer di sviluppo.
+
+### <a name="to-configure-the-development-computer"></a>Per configurare il computer di sviluppo
+
+1.  Installare una versione di Visual Studio che includa gli strumenti di sviluppo di Office. Gli strumenti di sviluppo di Office vengono installati per impostazione predefinita. Se si personalizza l'installazione di Visual Studio, selezionare le funzionalità da installare, verificare che **Microsoft Office Developer Tools** selezionata durante l'installazione. Per altre informazioni sulle versioni di Visual Studio che include Office developer tools, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+
+2.  Installare una versione di Office supportata dagli strumenti di sviluppo di Office in Visual Studio. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+
+     Assicurarsi inoltre di installare gli assembly di interoperabilità primari per la versione di Office installata. Per impostazione predefinita, gli assembly di interoperabilità primari vengono installati con Office. Se si modifica il programma di installazione di Office, assicurarsi che il **Supporto programmabilità .NET** funzione è selezionata per le applicazioni di destinazione.
+
+3.  Se si utilizza una versione inglese di Visual Studio ma usano le impostazioni di lingua diversa dall'inglese per Windows, è possibile installare il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] language pack in modo da vedere [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] messaggi nella stessa lingua di Windows. Le versioni non in lingua inglese di Visual Studio installano automaticamente il language pack. Il language pack è disponibile il [area download Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).
+
+## <a name="see-also"></a>Vedere anche
+- [Quali sono le novità nello sviluppo per Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+- [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Procedura: Installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

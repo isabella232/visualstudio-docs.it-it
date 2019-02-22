@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4165a367a029bc0d226f7fce55f3b2929d0f965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936283"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629677"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configurazione del progetto per la gestione della distribuzione
-La distribuzione è l'atto di spostano fisicamente gli elementi di output da un processo di compilazione nella posizione prevista per il debug e l'installazione. Ad esempio, un'applicazione Web potrebbe essere compilata in un computer locale e quindi inserita nel server.  
-  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due metodi che proietta può essere coinvolto nella distribuzione:  
-  
-- L'oggetto del processo di distribuzione.  
-  
-- Come la gestione del processo di distribuzione.  
-  
-  Prima di poter distribuire soluzioni, è necessario aggiungere innanzitutto un progetto di distribuzione per configurare le opzioni di distribuzione. Se il progetto di distribuzione non esiste già, viene chiesto se si vuole crearne uno quando si seleziona **Distribuisci soluzione** dalle **compilazione** menu o la scelta della soluzione. Facendo clic su **Yes** apre il **Aggiungi nuovo progetto** finestra di dialogo con il **remoto distribuzione guidata del** progetto selezionato.  
-  
-  Distribuzione remota guidata viene richiesto per il tipo di applicazione (Windows o Web), i gruppi di output del progetto da includere, eventuali file aggiuntivi da includere e si desidera distribuire in computer remoto. L'ultima pagina della procedura guidata visualizza un riepilogo delle opzioni selezionate.  
-  
-  I progetti che sono oggetto di un processo di distribuzione producono gli elementi di output che devono essere spostati in un ambiente alternativo. Questi output vengono descritti gli elementi come parametri per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interfaccia, il cui primaria allo scopo se consentire o meno i progetti di raggruppare gli output. Per altre informazioni sull'implementazione di `IVsProjectCfg2`, vedere [configurazione del progetto per l'Output](../../extensibility/internals/project-configuration-for-output.md).  
-  
-  Progetti di distribuzione, che gestiscono il processo di distribuzione, abilitare il comando Distribuisci e rispondono quando si seleziona questo comando. Implementano progetti di distribuzione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia per eseguire la distribuzione e di effettuare chiamate al <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> eventi dello stato di distribuzione di interfaccia al report.  
-  
-  Le configurazioni è possono specificare le dipendenze che interessano le relative operazioni di compilazione o distribuzione. Compilare o distribuire le dipendenze sono progetti che devono essere compilati o distribuiti prima o dopo le configurazioni vengono compilate o distribuite. Vengono descritte le dipendenze di compilazione tra i progetti con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> l'interfaccia e distribuire le dipendenze con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaccia. Per altre informazioni, vedere [configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)   
- [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)   
- [Configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md)
+La distribuzione è l'atto di spostano fisicamente gli elementi di output da un processo di compilazione nella posizione prevista per il debug e l'installazione. Ad esempio, un'applicazione Web potrebbe essere compilata in un computer locale e quindi inserita nel server.
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due metodi che proietta può essere coinvolto nella distribuzione:
+
+- L'oggetto del processo di distribuzione.
+
+- Come la gestione del processo di distribuzione.
+
+  Prima di poter distribuire soluzioni, è necessario aggiungere innanzitutto un progetto di distribuzione per configurare le opzioni di distribuzione. Se il progetto di distribuzione non esiste già, viene chiesto se si vuole crearne uno quando si seleziona **Distribuisci soluzione** dalle **compilazione** menu o la scelta della soluzione. Facendo clic su **Yes** apre il **Aggiungi nuovo progetto** finestra di dialogo con il **remoto distribuzione guidata del** progetto selezionato.
+
+  Distribuzione remota guidata viene richiesto per il tipo di applicazione (Windows o Web), i gruppi di output del progetto da includere, eventuali file aggiuntivi da includere e si desidera distribuire in computer remoto. L'ultima pagina della procedura guidata visualizza un riepilogo delle opzioni selezionate.
+
+  I progetti che sono oggetto di un processo di distribuzione producono gli elementi di output che devono essere spostati in un ambiente alternativo. Questi output vengono descritti gli elementi come parametri per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interfaccia, il cui primaria allo scopo se consentire o meno i progetti di raggruppare gli output. Per altre informazioni sull'implementazione di `IVsProjectCfg2`, vedere [configurazione del progetto per l'Output](../../extensibility/internals/project-configuration-for-output.md).
+
+  Progetti di distribuzione, che gestiscono il processo di distribuzione, abilitare il comando Distribuisci e rispondono quando si seleziona questo comando. Implementano progetti di distribuzione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia per eseguire la distribuzione e di effettuare chiamate al <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> eventi dello stato di distribuzione di interfaccia al report.
+
+  Le configurazioni è possono specificare le dipendenze che interessano le relative operazioni di compilazione o distribuzione. Compilare o distribuire le dipendenze sono progetti che devono essere compilati o distribuiti prima o dopo le configurazioni vengono compilate o distribuite. Vengono descritte le dipendenze di compilazione tra i progetti con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> l'interfaccia e distribuire le dipendenze con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaccia. Per altre informazioni, vedere [configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md).
+
+## <a name="see-also"></a>Vedere anche
+- [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
+- [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)
+- [Configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md)

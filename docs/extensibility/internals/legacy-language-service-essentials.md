@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2369348552ca8eaaceed92e4373fa3d934d383d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031029"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616872"
 ---
 # <a name="legacy-language-service-essentials"></a>Nozioni fondamentali sui servizi di linguaggio legacy
-È necessario fornire un servizio di linguaggio per integrare un linguaggio di programmazione in Visual Studio. In questo argomento illustra le funzionalità disponibili in servizi di linguaggio legacy.  
+È necessario fornire un servizio di linguaggio per integrare un linguaggio di programmazione in Visual Studio. In questo argomento illustra le funzionalità disponibili in servizi di linguaggio legacy.
 
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).  
+ Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+>  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
 
- Servizi di linguaggio legacy forniscono le funzionalità seguenti:  
+ Servizi di linguaggio legacy forniscono le funzionalità seguenti:
 
-|Funzionalità|Descrizione|  
-|-------------|-----------------|  
-|Colorazione della sintassi|Fa sì che la visualizzazione dell'editor visualizzare diversi colori e stili di carattere per gli elementi di una lingua diversi. Questa distinzione può rendere più facile da leggere e modificare i file.<br /><br /> Per informazioni generali, vedere [colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Per informazioni su questa funzionalità nel framework di pacchetto gestito (MPF), vedere [colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
-|Completamento istruzioni|Completa un'istruzione o parola chiave che l'utente ha avviato la digitazione. Completamento istruzioni consente agli utenti di immettere istruzioni difficile più facilmente con più rapido e meno probabilità di errore.<br /><br /> Per informazioni generali, vedere [completamento delle istruzioni in un servizio di linguaggio Legacy](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [completamento delle parole in un servizio di linguaggio Legacy](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
-|Corrispondenza parentesi graffe|Evidenziazioni abbinate caratteri, ad esempio le parentesi graffe. Quando l'utente digita un carattere di chiusura, ad esempio "}", corrispondenza parentesi graffe vengono evidenziate corrispondente carattere, di apertura, ad esempio "{". Quando sono presenti diversi livelli di caratteri di inclusione, questa funzionalità consente agli utenti di confermare che i caratteri che lo contiene sono abbinati correttamente.<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [corrispondenza delle parentesi graffe in un servizio di linguaggio Legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|  
-|Descrizioni comandi informazioni parametro|Visualizza un elenco di firme possibili per il metodo di overload che l'utente attualmente sta digitando.<br /><br /> Per informazioni generali, vedere [informazioni sui parametri in un servizio di linguaggio Legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [informazioni sui parametri in un servizio di linguaggio Legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|  
-|Indicatori di errore|Visualizza una sottolineatura rossa ondulata, noto anche come un ondulata, sotto il testo che è sintatticamente corretto. Gli indicatori di errore vengono in genere usati per informare gli utenti delle parole chiave con errori di ortografia, le parentesi non chiusa, caratteri non validi ed errori simili.<br /><br /> Nelle classi di MPF, gli indicatori di errore vengono gestiti automaticamente nel <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> metodo di <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|  
+|Funzionalità|Descrizione|
+|-------------|-----------------|
+|Colorazione della sintassi|Fa sì che la visualizzazione dell'editor visualizzare diversi colori e stili di carattere per gli elementi di una lingua diversi. Questa distinzione può rendere più facile da leggere e modificare i file.<br /><br /> Per informazioni generali, vedere [colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Per informazioni su questa funzionalità nel framework di pacchetto gestito (MPF), vedere [colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
+|Completamento istruzioni|Completa un'istruzione o parola chiave che l'utente ha avviato la digitazione. Completamento istruzioni consente agli utenti di immettere istruzioni difficile più facilmente con più rapido e meno probabilità di errore.<br /><br /> Per informazioni generali, vedere [completamento delle istruzioni in un servizio di linguaggio Legacy](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [completamento delle parole in un servizio di linguaggio Legacy](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
+|Corrispondenza parentesi graffe|Evidenziazioni abbinate caratteri, ad esempio le parentesi graffe. Quando l'utente digita un carattere di chiusura, ad esempio "}", corrispondenza parentesi graffe vengono evidenziate corrispondente carattere, di apertura, ad esempio "{". Quando sono presenti diversi livelli di caratteri di inclusione, questa funzionalità consente agli utenti di confermare che i caratteri che lo contiene sono abbinati correttamente.<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [corrispondenza delle parentesi graffe in un servizio di linguaggio Legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
+|Descrizioni comandi informazioni parametro|Visualizza un elenco di firme possibili per il metodo di overload che l'utente attualmente sta digitando.<br /><br /> Per informazioni generali, vedere [informazioni sui parametri in un servizio di linguaggio Legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [informazioni sui parametri in un servizio di linguaggio Legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
+|Indicatori di errore|Visualizza una sottolineatura rossa ondulata, noto anche come un ondulata, sotto il testo che è sintatticamente corretto. Gli indicatori di errore vengono in genere usati per informare gli utenti delle parole chiave con errori di ortografia, le parentesi non chiusa, caratteri non validi ed errori simili.<br /><br /> Nelle classi di MPF, gli indicatori di errore vengono gestiti automaticamente nel <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> metodo di <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|
 
- Molte di queste funzionalità richiedono il servizio di linguaggio per analizzare il codice sorgente. È spesso possibile riutilizzare la suddivisione in token e l'analisi del codice per il compilatore o l'interprete.  
+ Molte di queste funzionalità richiedono il servizio di linguaggio per analizzare il codice sorgente. È spesso possibile riutilizzare la suddivisione in token e l'analisi del codice per il compilatore o l'interprete.
 
- Le funzionalità seguenti sono correlate al supporto per linguaggi di programmazione, ma non fanno parte di servizi di linguaggio:  
+ Le funzionalità seguenti sono correlate al supporto per linguaggi di programmazione, ma non fanno parte di servizi di linguaggio:
 
 
 | Funzionalità | Descrizione |
