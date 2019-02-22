@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d387bbc54d1eb1619ddffbf7e96308834d125826
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911091"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270654"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -798,11 +798,17 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 | Edit.ExpandCurrentRegion | **CTRL+M, CTRL+E** |
 | Edit.FormatDocument | **CTRL+K, CTRL+D** |
 | Edit.FormatSelection | **CTRL+K, CTRL+F** |
+| Edit.GotoAll | **Ctrl+T**<br /><br /> oppure<br /><br /> **CTRL+,** |
 | Edit.GotoBrace | **CTRL+]** |
 | Edit.GotoBraceExtend | **CTRL+MAIUSC+]** |
+| Edit.GotoRecent | **CTRL+T,R** |
+| Edit.GotoNextIssueinFile | **ALT+PGGIÙ** |
+| Edit.GotoPreviousIssueinFile  **ALT+PGSU** |
 | Edit.HideSelection | **CTRL+M, CTRL+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **CTRL+I** |
+| Edit.InsertCaretsatAllMatching | **MAIUSC+ALT+;** | 
+| Edit.InsertNextMatchingCaret | **MAIUSC+ALT+.** | 
 | Edit.InsertTab | **TAB** |
 | Edit.LineCut | **CTRL+L** |
 | Edit.LineDelete | **CTRL+MAIUSC+L** |
@@ -845,7 +851,8 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 | Edit.SelectCurrentWord | **CTRL+W** |
 | Edit.SelectionCancel | **ESC** |
 | Edit.SelectToLastGoBack | **CTRL+=** |
-| Edit.ShowCodeLensMenu | **ALT+\`** |
+| Edit.ShowCodeLensMenu | **CTRL+K, CTRL+\`** |
+| Edit.ShowNavigateMenu | **ALT+\`** |
 | Edit.StopHidingCurrent | **CTRL+M, CTRL+U** |
 | Edit.StopOutlining | **CTRL+M, CTRL+P** |
 | Edit.SwapAnchor | **CTRL+K, CTRL+A** |

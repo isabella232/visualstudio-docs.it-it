@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937721"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316457"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolare codice sottoposto a test con Microsoft Fakes
 
@@ -35,7 +35,8 @@ Fakes è di due tipi:
 -   Un progetto .NET Framework
 
 > [!NOTE]
-> I progetti .NET Standard non sono supportati.
+> - I progetti .NET Standard non sono supportati.
+> - La profilatura con Visual Studio non è disponibile per i test che usano Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Scegliere tra i tipi stub e shim
 In genere, un progetto di Visual Studio viene considerato un componente perché le classi vengono sviluppate e aggiornate contemporaneamente. Considerare l'uso di stub e shim per le chiamate che il progetto effettua ad altri progetti della soluzione o ad altri assembly a cui fa riferimento.

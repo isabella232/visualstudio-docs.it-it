@@ -3,14 +3,14 @@ title: Impostazione di un repository Git
 description: Uso di Git e Subversion in Visual Studio per Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796970"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317348"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -87,9 +87,45 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
 ## <a name="publishing-a-new-project"></a>Pubblicazione di un nuovo progetto
 
-La finestra di dialogo del nuovo progetto può essere usata per pubblicare un nuovo progetto usando Git. Per abilitarla, selezionare la casella di controllo **Usa GIT per il controllo della versione**, come illustrato nella schermata seguente. Verrà inizializzato il repository e verrà aggiunto un file con estensione gitignore facoltativo:
+È possibile usare la finestra di dialogo Nuovo progetto per creare un nuovo progetto con un repository Git locale. Per abilitarlo, selezionare la casella di controllo **Usa GIT per il controllo della versione**, come illustrato nello screenshot seguente. Verrà inizializzato il repository e verrà aggiunto un file con estensione gitignore facoltativo:
 
-![Eseguire il push delle modifiche nel repository remoto](media/version-control-git12.png)
+![Creare un nuovo progetto con il supporto Git](media/version-control-git-publish-new1.png)
+
+Seguire questa procedura per eseguire il push del nuovo repository locale in un nuovo repository GitHub:
+
+> [!NOTE]
+> Se non è ancora stato creato un repository GitHub, vedere la sezione [Creazione di un repository remoto su GitHub](#creating-a-remote-repo-on-github).
+
+1. Creare il primo commit passando a **Controllo della versione > Revisione della soluzione e commit** nella barra dei menu.
+
+2. Nella scheda Stato scegliere **Commit** nella parte superiore sinistra.
+
+3. Scrivere un messaggio di commit, ad esempio "First Commit", quindi fare clic su **Commit**:
+
+    ![Eseguire il commit delle modifiche iniziali nel repository Git](media/version-control-git-publish-new2.png)
+
+4. Nella barra dei menu passare quindi a **Controllo della versione > Gestisci rami ed origini remote**.
+
+5. Passare alla scheda **Origini remote**, quindi fare clic su **Aggiungi**.
+
+6. Nella finestra **Origine remota** aggiungere i dettagli del repository GitHub precedentemente creato e fare clic su **OK**:
+
+    ![Configurare le origini remote per il repository Git](media/version-control-git-publish-new3.png)
+
+7. Chiudere la finestra **Configurazione del repository GIT**, quindi nella barra dei menu passare a **Controllo della versione > Esegui push delle modifiche**.
+
+8. Nella finestra **Esegui push nel repository** fare clic sul pulsante **Esegui push delle modifiche**:
+
+    ![Eseguire il push delle modifiche nel repository remoto](media/version-control-git-publish-new4.png)
+
+9. Quando richiesto, immettere il nome utente e la password di GitHub.
+
+> [!NOTE]
+> Se per l'account è abilitata l'autenticazione a due fattori, è necessario creare un token di accesso, che verrà usato al posto della password. Se non è stato creato un token di accesso, seguire i passaggi descritti nella documentazione relativa ai [token di accesso](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) Git.
+
+Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHub remoto:
+
+![Conferma di operazione push completata](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>Estrazione di un repository esistente
 

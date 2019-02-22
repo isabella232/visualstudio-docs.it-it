@@ -24,25 +24,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ba6a9407b87640879c3d591f1a6aafad1ee42a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918936"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318457"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] offre funzionalità di modifica complete di JavaScript, implementabili all'istante. Visual Studio, gestito da un servizio di linguaggio basato su TypeScript, offre una modalità IntelliSense più completa, il supporto di funzionalità JavaScript aggiornate e funzioni di produttività migliorate quali Vai a definizione, il refactoring e altro ancora.
+Visual Studio 2017 include potenti strumenti di modifica per JavaScript pronti all'uso. Visual Studio, gestito da un servizio di linguaggio basato su TypeScript, offre una modalità IntelliSense più completa, il supporto di funzionalità JavaScript aggiornate e funzioni di produttività migliorate quali Vai a definizione, il refactoring e altro ancora.
 
 > [!NOTE]
-> Il servizio di linguaggio JavaScript in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa un nuovo motore (denominato "Salsa"). Per i dettagli proseguire la lettura di questo argomento. È anche possibile leggere [questo post di blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). Le nuove funzioni di modifica si applicano principalmente anche a Visual Studio Code. Per altre informazioni vedere la [documentazione di Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript).
+> JavaScript Language Service in Visual Studio 2017 usa un nuovo motore per il servizio di linguaggio (denominato "Salsa"). Per i dettagli proseguire la lettura di questo argomento. È anche possibile leggere [questo post di blog](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Le nuove funzioni di modifica si applicano principalmente anche a Visual Studio Code. Per altre informazioni vedere la [documentazione di Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript).
 
 Per altre informazioni sulla funzionalità IntelliSense generale di Visual Studio, vedere [Uso di IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità del servizio di linguaggio JavaScript in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Novità di JavaScript Language Service in Visual Studio 2017
 
-A partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] JavaScript IntelliSense visualizza più informazioni relative agli elenchi di parametri e membri.
+A partire da Visual Studio 2017, JavaScript IntelliSense visualizza una quantità molto più elevata di informazioni su elenchi di parametri e membri.
 Le nuove informazioni sono specificate dal servizio di linguaggio TypeScript, che usa l'analisi statica in background per un'interpretazione più approfondita del codice.
 Per ottenere le informazioni necessarie, TypeScript usa diverse fonti:
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155383"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227761"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
@@ -178,5 +178,5 @@ Un problema sconosciuto di vue-cli 3.0 impedisce l'automatizzazione del processo
 ## <a name="see-also"></a>Vedere anche
 
 - [Guida introduttiva di Vue](https://vuejs.org/v2/guide).
-- [Progetto CLI Vue] (https://github.com/vuejs/vue-cli(.
+- [Progetto Vue CLI](https://github.com/vuejs/vue-cli).
 - [Documentazione sulla configurazione di webpack](https://webpack.js.org/configuration/).
