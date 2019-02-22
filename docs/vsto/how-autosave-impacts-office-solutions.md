@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601382"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Modalità salvataggio automatico influisce sulle soluzioni Office
 
@@ -27,5 +27,4 @@ Salvataggio automatico è una funzionalità per Excel, PowerPoint e Word che con
 > Salvataggio automatico per Windows Desktop Word, Excel e PowerPoint è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Se è stata acquistata una licenza perpetua per Office 2016 o versioni precedenti, si ha attualmente l'accesso alla funzionalità di modifica condivisa. (Excel Online, Excel per Android, in Excel per iOS e dispositivi mobili di Excel in di Windows Store supporta questa funzionalità, tuttavia).
 
 ## <a name="see-also"></a>Vedere anche
-
-[Sviluppare soluzioni Office](./developing-office-solutions.md)
+- [Sviluppare soluzioni Office](./developing-office-solutions.md)

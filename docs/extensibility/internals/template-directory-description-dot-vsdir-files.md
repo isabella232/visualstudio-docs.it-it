@@ -12,29 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935033"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605692"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
-Un file di descrizione di directory di modello (con estensione VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file di modello che sono associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione di cui si fa riferimento vengono uniti, anche se file sola VSDIR generalmente è fornito per descrivere più cartelle, le procedure guidate o i file di modello.  
+Un file di descrizione di directory di modello (con estensione VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file di modello che sono associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione di cui si fa riferimento vengono uniti, anche se file sola VSDIR generalmente è fornito per descrivere più cartelle, le procedure guidate o i file di modello.
 
- Tutte le cartelle (secondarie), i file di cui vengono fatto riferimento nel file VSDIR e il file VSDIR stesso si trovano nella stessa directory. Quando l'IDE viene eseguita una procedura guidata o si visualizza una cartella o il file nei **nuovo progetto** oppure **Aggiungi nuovo elemento** finestre di dialogo, l'IDE esamina la directory che contiene i file eseguiti per determinare se un file VSDIR presente. Se viene trovato un file VSDIR, l'IDE legge in modo da determinare se contiene una voce del file o cartella visualizzata o eseguita. Se viene trovata una voce, l'IDE Usa le informazioni nella visualizzazione del contenuto o l'esecuzione della procedura guidata.  
+ Tutte le cartelle (secondarie), i file di cui vengono fatto riferimento nel file VSDIR e il file VSDIR stesso si trovano nella stessa directory. Quando l'IDE viene eseguita una procedura guidata o si visualizza una cartella o il file nei **nuovo progetto** oppure **Aggiungi nuovo elemento** finestre di dialogo, l'IDE esamina la directory che contiene i file eseguiti per determinare se un file VSDIR presente. Se viene trovato un file VSDIR, l'IDE legge in modo da determinare se contiene una voce del file o cartella visualizzata o eseguita. Se viene trovata una voce, l'IDE Usa le informazioni nella visualizzazione del contenuto o l'esecuzione della procedura guidata.
 
- Esempio di codice seguente si trova nel file SourceFiles.vsdir nel \<EnvSDK > chiave del Registro di sistema \BscPrj\BscPrj\BscPrjProjectItems\Source_Files:  
+ Esempio di codice seguente si trova nel file SourceFiles.vsdir nel \<EnvSDK > chiave del Registro di sistema \BscPrj\BscPrj\BscPrjProjectItems\Source_Files:
 
-```  
-HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127  
-SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
-```  
+```
+HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
+SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
+```
 
- In questo caso, due record sono in un unico file. Una nuova riga (ritorno a capo) consente di separare ogni record. Ogni riga rappresenta un tipo di file diverso. Una barra verticale (&#124;) separa i campi in ogni record. Una singola directory può contenere più file VSDIR che hanno nomi di file diversi oppure è possibile avere un file VSDIR per ogni tipo di file.  
+ In questo caso, due record sono in un unico file. Una nuova riga (ritorno a capo) consente di separare ogni record. Ogni riga rappresenta un tipo di file diverso. Una barra verticale (&#124;) separa i campi in ogni record. Una singola directory può contenere più file VSDIR che hanno nomi di file diversi oppure è possibile avere un file VSDIR per ogni tipo di file.
 
-## <a name="fields"></a>Campi  
- La tabella seguente elenca i campi specificati per ogni record.  
+## <a name="fields"></a>Campi
+ La tabella seguente elenca i campi specificati per ogni record.
 
 
 | Campo | Descrizione |
@@ -49,20 +49,20 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Flag (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Consente di abilitare o disabilitare il **nome** e **posizione** nei campi le **Aggiungi nuovo elemento** nella finestra di dialogo. Il valore della **flag** campo è l'equivalente decimale della combinazione dei flag di bit richiesto.<br /><br /> Quando un utente seleziona un elemento nel **New** scheda, il progetto determina se il campo del nome e il campo della posizione vengono visualizzate quando il **Aggiungi nuovo elemento** prima di tutto verrà visualizzata la finestra di dialogo. Un elemento, tramite un file VSDIR, può controllare solo se i campi sono abilitati e disabilitate quando l'elemento è selezionato. |
 | SuggestedBaseName | Rappresenta il nome predefinito per il file, una procedura guidata o un modello. Questo campo è una stringa o un identificatore di risorsa nel formato "#ResID". L'IDE Usa questo valore per fornire un nome predefinito per l'elemento. Questo valore di base viene aggiunto con un valore integer per rendere il nome univoco, ad esempio MyFile21.asp.<br /><br /> Nell'elenco precedente, descrizione, DLLPath, IconResourceId, flag e SuggestedBaseNumber si applicano solo ai file di modello e procedura guidata. Questi campi non sono applicano alle cartelle. Questo aspetto è illustrato nel codice nel file BscPrjProjectItems il \<EnvSDK > chiave del Registro di sistema \BscPrj\BscPrj\BscPrjProjectItems. Questo file contiene tre record, una per ogni cartella, con quattro campi per ogni record: RelPathName, {clsidPackage}, LocalizedName e SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Quando si crea un file della procedura guidata, è necessario inoltre tenere presente quanto segue.  
+ Quando si crea un file della procedura guidata, è necessario inoltre tenere presente quanto segue.
 
--   Qualsiasi campo non obbligatori per i quali non sono presenti dati significativi deve contenere il valore 0 (zero) come segnaposto.  
+-   Qualsiasi campo non obbligatori per i quali non sono presenti dati significativi deve contenere il valore 0 (zero) come segnaposto.
 
--   Se viene fornito alcun nome localizzato, viene utilizzato il nome di percorso relativo nel file della procedura guidata.  
+-   Se viene fornito alcun nome localizzato, viene utilizzato il nome di percorso relativo nel file della procedura guidata.
 
--   DLLPath sostituisce clsidPackage per le icone.  
+-   DLLPath sostituisce clsidPackage per le icone.
 
--   Se è definita alcuna icona, l'IDE sostituisce l'icona predefinita per un file con estensione.  
+-   Se è definita alcuna icona, l'IDE sostituisce l'icona predefinita per un file con estensione.
 
--   Se non viene specificato alcun nome di base, viene utilizzato 'Project'.  
+-   Se non viene specificato alcun nome di base, viene utilizzato 'Project'.
 
--   Se si elimina il file con estensione vsz, cartelle o file di modello, è necessario rimuovere anche i record associati dal file VSDIR.  
+-   Se si elimina il file con estensione vsz, cartelle o file di modello, è necessario rimuovere anche i record associati dal file VSDIR.
 
-## <a name="see-also"></a>Vedere anche  
- [Procedure guidate](../../extensibility/internals/wizards.md)   
- [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)
+## <a name="see-also"></a>Vedere anche
+- [Procedure guidate](../../extensibility/internals/wizards.md)
+- [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)
