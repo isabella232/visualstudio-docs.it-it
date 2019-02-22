@@ -15,35 +15,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 466b316340f922d13ed559791d1340912c4cecfd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 12fc82fd0c04e9f05ff55be24c3527ca95a357fb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862915"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596010"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: Mostra errori dell'interfaccia utente del componente aggiuntivo
-  Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente Microsoft Office (UI) e ha esito negativo, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile usare questi messaggi per determinare perché non viene visualizzata una barra multifunzione personalizzata, oppure perché viene visualizzata una barra multifunzione ma senza controlli.  
-  
- [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
-  
-## <a name="to-show-vsto-add-in-user-interface-errors"></a>Per visualizzare gli errori dell'interfaccia utente dei componenti aggiuntivi VSTO  
-  
-1.  Avviare l'applicazione.  
-  
-2.  Scegliere la scheda **File** .  
-  
-3.  Fare clic su **Opzioni**.  
-  
-4.  Nel riquadro delle categorie fare clic su **Avanzate**.  
-  
-5.  Nel riquadro dei dettagli selezionare **Mostra errori dell'interfaccia utente dei componenti aggiuntivi**, quindi fare clic su **OK**.  
-  
-    > [!NOTE]  
-    >  Per Outlook, la casella di controllo **Mostra errori dell'interfaccia utente dei componenti aggiuntivi** si trova nella sezione **Sviluppo** del riquadro dei dettagli. Per altre applicazioni, la casella di controllo si trova nella sezione **Generale** del riquadro dei dettagli.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)   
- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
- [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
- [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)  
+  Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente Microsoft Office (UI) e ha esito negativo, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile usare questi messaggi per determinare perché non viene visualizzata una barra multifunzione personalizzata, oppure perché viene visualizzata una barra multifunzione ma senza controlli.
+
+ [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
+
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>Per visualizzare gli errori dell'interfaccia utente dei componenti aggiuntivi VSTO
+
+1.  Avviare l'applicazione.
+
+2.  Scegliere la scheda **File** .
+
+3.  Fare clic su **Opzioni**.
+
+4.  Nel riquadro delle categorie fare clic su **Avanzate**.
+
+5.  Nel riquadro dei dettagli selezionare **Mostra errori dell'interfaccia utente dei componenti aggiuntivi**, quindi fare clic su **OK**.
+
+    > [!NOTE]
+    >  Per Outlook, la casella di controllo **Mostra errori dell'interfaccia utente dei componenti aggiuntivi** si trova nella sezione **Sviluppo** del riquadro dei dettagli. Per altre applicazioni, la casella di controllo si trova nella sezione **Generale** del riquadro dei dettagli.
+
+## <a name="see-also"></a>Vedere anche
+- [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
+- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
+- [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
+- [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
