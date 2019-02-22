@@ -11,30 +11,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 238716c697ef97c740d8d6a82d48b8ff5e25ae68
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024630"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629145"
 ---
 # <a name="automation-support-for-options-pages"></a>Supporto di automazione per le pagine di opzioni
-I VSPackage possono fornire personalizzata **opzioni** alle finestre di dialogo per il **Tools** menu (**opzioni del menu Strumenti** pagine) in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e può renderli disponibili per l'automazione modello.  
-  
-## <a name="tools-options-pages"></a>Opzioni del menu Strumenti (pagine)  
- Per creare un **ToolsOptions** pagina, un pacchetto VSPackage deve fornire un'implementazione del controllo utente restituita all'ambiente tramite l'implementazione di VSPackage del <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> (metodo). (Oppure, per codice gestito, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> (metodo).) 
-  
- È facoltativo, ma fortemente consigliato, per consentire l'accesso a questa nuova pagina tramite il modello di automazione. È possibile farlo con i passaggi seguenti:  
-  
-1. Estendere il <xref:EnvDTE._DTE.Properties%2A> oggetto tramite l'implementazione di un oggetto derivato IDispatch.  
-  
-2. Restituiscono un'implementazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo (o per il codice gestito il <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> (metodo)) per l'oggetto derivato IDispatch.  
-  
-3. Quando un consumer di automazione chiama il <xref:EnvDTE._DTE.Properties%2A> metodo su un oggetto personalizzato **opzione** pagina delle proprietà, l'ambiente Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo per ottenere un oggetto personalizzato **opzioni del menu Strumenti** automazione della pagina implementazione.  
-  
-4. L'oggetto di automazione del pacchetto VSPackage viene quindi usato per fornire a ogni <xref:EnvDTE.Property> restituito da <xref:EnvDTE._DTE.Properties%2A>.  
-  
-   Per un esempio di implementazione di una classe personalizzata **ToolsOptions** pagina, vedere [esempi di VSSDK](http://aka.ms/vs2015sdksamples).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Esporre oggetti del progetto](../../extensibility/internals/exposing-project-objects.md)
+I VSPackage possono fornire personalizzata **opzioni** alle finestre di dialogo per il **Tools** menu (**opzioni del menu Strumenti** pagine) in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e può renderli disponibili per l'automazione modello.
+
+## <a name="tools-options-pages"></a>Opzioni del menu Strumenti (pagine)
+ Per creare un **ToolsOptions** pagina, un pacchetto VSPackage deve fornire un'implementazione del controllo utente restituita all'ambiente tramite l'implementazione di VSPackage del <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> (metodo). (Oppure, per codice gestito, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> (metodo).)
+
+ È facoltativo, ma fortemente consigliato, per consentire l'accesso a questa nuova pagina tramite il modello di automazione. È possibile farlo con i passaggi seguenti:
+
+1. Estendere il <xref:EnvDTE._DTE.Properties%2A> oggetto tramite l'implementazione di un oggetto derivato IDispatch.
+
+2. Restituiscono un'implementazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo (o per il codice gestito il <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> (metodo)) per l'oggetto derivato IDispatch.
+
+3. Quando un consumer di automazione chiama il <xref:EnvDTE._DTE.Properties%2A> metodo su un oggetto personalizzato **opzione** pagina delle proprietà, l'ambiente Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo per ottenere un oggetto personalizzato **opzioni del menu Strumenti** automazione della pagina implementazione.
+
+4. L'oggetto di automazione del pacchetto VSPackage viene quindi usato per fornire a ogni <xref:EnvDTE.Property> restituito da <xref:EnvDTE._DTE.Properties%2A>.
+
+   Per un esempio di implementazione di una classe personalizzata **ToolsOptions** pagina, vedere [esempi di VSSDK](http://aka.ms/vs2015sdksamples).
+
+## <a name="see-also"></a>Vedere anche
+- [Esporre oggetti del progetto](../../extensibility/internals/exposing-project-objects.md)

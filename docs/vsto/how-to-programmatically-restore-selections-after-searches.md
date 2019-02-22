@@ -14,45 +14,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 684c373204c5cfadd3cfcd705993aaa7a40bce5f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 672c66fef5d7400601ce69270b5cd4f525b34c7d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875212"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607902"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Procedura: A livello di programmazione ripristinare le selezioni dopo le ricerche
-  Se si trova e Sostituisci testo in un documento, è possibile ripristinare la selezione dell'utente originale dopo la ricerca è stata completata.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
- Il codice della procedura di esempio usa due <xref:Microsoft.Office.Interop.Word.Range> oggetti. Uno archivi corrente <xref:Microsoft.Office.Interop.Word.Selection>, e uno di essi imposta l'intero documento da usare come intervallo di ricerca.  
-  
-## <a name="to-restore-the-users-original-selection-after-a-search"></a>Per ripristinare la selezione dell'utente originale dopo una ricerca  
-  
-1. Creare il <xref:Microsoft.Office.Interop.Word.Range> oggetti per il documento e la selezione corrente.  
-  
+  Se si trova e Sostituisci testo in un documento, è possibile ripristinare la selezione dell'utente originale dopo la ricerca è stata completata.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+ Il codice della procedura di esempio usa due <xref:Microsoft.Office.Interop.Word.Range> oggetti. Uno archivi corrente <xref:Microsoft.Office.Interop.Word.Selection>, e uno di essi imposta l'intero documento da usare come intervallo di ricerca.
+
+## <a name="to-restore-the-users-original-selection-after-a-search"></a>Per ripristinare la selezione dell'utente originale dopo una ricerca
+
+1. Creare il <xref:Microsoft.Office.Interop.Word.Range> oggetti per il documento e la selezione corrente.
+
     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
-    [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
-  
-2. Eseguire la ricerca e sostituzione.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]
+
+2. Eseguire la ricerca e sostituzione.
+
     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
-    [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
-  
-3. Selezionare l'intervallo di inizio per ripristinare la selezione dell'utente originale.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]
+
+3. Selezionare l'intervallo di inizio per ripristinare la selezione dell'utente originale.
+
     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
-    [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
-  
-   L'esempio seguente mostra il metodo completo.  
-  
-## <a name="example"></a>Esempio  
+    [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]
+
+   L'esempio seguente mostra il metodo completo.
+
+## <a name="example"></a>Esempio
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]
- [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Procedura: A livello di codice impostare le opzioni di ricerca in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Procedura: Ciclo a livello di programmazione tramite gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: Cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Procedura: A livello di codice impostare le opzioni di ricerca in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Procedura: Ciclo a livello di programmazione tramite gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

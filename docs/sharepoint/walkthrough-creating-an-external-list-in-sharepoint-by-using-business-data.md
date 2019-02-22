@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874181"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600298"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business
 
@@ -186,7 +186,7 @@ Aggiungere un metodo Finder specifico per l'entità Contact usando il **Dettagli
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Telefono|System.String|
+    |Phone|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -276,7 +276,7 @@ Altre informazioni su come progettare modelli per il servizio di integrazione ap
 
 ## <a name="see-also"></a>Vedere anche
 
-[Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)  
-[Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)
+[creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)
+[Cenni preliminari sugli strumenti di progettazione di modelli di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

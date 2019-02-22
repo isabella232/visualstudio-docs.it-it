@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb66051d3a1ab0119f4b80a68f0f2990e569fe8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb5472776bc9c4a4d6bb0ccd8830cba5eea3d04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929770"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640263"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Salvataggio permanente e tabella documenti in esecuzione
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, i progetti sono completamente responsabili per la gestione di elementi di progetto, che sono portare a termine usando il servizio, la persistenza <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. I documenti sono l'unità di base di persistenza nell'ambiente di Visual Studio. I progetti di coordinare l'apertura, salvataggio e ridenominazione dei documenti con la tabella documenti in esecuzione (RDT), una risorsa che controlla lo stato di tutti i documenti aperti.  
-  
-## <a name="managing-persistence"></a>Gestione della persistenza  
- Progetti consentono di controllare il servizio di persistenza dell'ambiente mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> interfaccia. Mentre l'ambiente chiede mai direttamente un documento in modo permanente se stessa, viene richiesto il progetto proprietario (o gerarchia) per salvare il documento. Questo rende possibile per il progetto salvare i dati di elemento di progetto in file locali, i file remoti, un database, un repository o altro supporto.  
-  
- L'ambiente globale conserva RDT. L'ambiente mantiene le voci per tutte le finestre aperte e i documenti nella RDT, che rende possibile per poter ricevano le notifiche speciali, ad esempio quando viene chiusa una soluzione. Inoltre, RDT rende possibile per l'ambiente rilevare i nodi corrispondenti nella **Esplora soluzioni**. RDT mantiene un record per ogni oggetto aperto, persistente, inclusi i file di progetto e i documenti di elementi di progetto.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Tabella documenti in esecuzione](../../extensibility/internals/running-document-table.md)   
- [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, i progetti sono completamente responsabili per la gestione di elementi di progetto, che sono portare a termine usando il servizio, la persistenza <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. I documenti sono l'unità di base di persistenza nell'ambiente di Visual Studio. I progetti di coordinare l'apertura, salvataggio e ridenominazione dei documenti con la tabella documenti in esecuzione (RDT), una risorsa che controlla lo stato di tutti i documenti aperti.
+
+## <a name="managing-persistence"></a>Gestione della persistenza
+ Progetti consentono di controllare il servizio di persistenza dell'ambiente mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> interfaccia. Mentre l'ambiente chiede mai direttamente un documento in modo permanente se stessa, viene richiesto il progetto proprietario (o gerarchia) per salvare il documento. Questo rende possibile per il progetto salvare i dati di elemento di progetto in file locali, i file remoti, un database, un repository o altro supporto.
+
+ L'ambiente globale conserva RDT. L'ambiente mantiene le voci per tutte le finestre aperte e i documenti nella RDT, che rende possibile per poter ricevano le notifiche speciali, ad esempio quando viene chiusa una soluzione. Inoltre, RDT rende possibile per l'ambiente rilevare i nodi corrispondenti nella **Esplora soluzioni**. RDT mantiene un record per ogni oggetto aperto, persistente, inclusi i file di progetto e i documenti di elementi di progetto.
+
+## <a name="see-also"></a>Vedere anche
+- [Tabella documenti in esecuzione](../../extensibility/internals/running-document-table.md)
+- [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

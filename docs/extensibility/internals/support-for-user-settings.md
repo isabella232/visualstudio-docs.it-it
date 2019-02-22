@@ -12,43 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964249"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622722"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
-Un pacchetto VSPackage può definire uno o più categorie di impostazioni, che sono gruppi di variabili di stato che rendono persistenti quando un utente sceglie il **Importa/Esporta impostazioni** comando le **Tools** menu. Per abilitare la persistenza, si usano le impostazioni API nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+Un pacchetto VSPackage può definire uno o più categorie di impostazioni, che sono gruppi di variabili di stato che rendono persistenti quando un utente sceglie il **Importa/Esporta impostazioni** comando le **Tools** menu. Per abilitare la persistenza, si usano le impostazioni API nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
- Una voce del Registro di sistema che si intende un punto di impostazioni personalizzato e un GUID definisce la categoria di impostazioni di VSPackage. Un pacchetto VSPackage può supportare più categorie di impostazioni, ognuno definito da un punto di impostazioni personalizzato.  
+ Una voce del Registro di sistema che si intende un punto di impostazioni personalizzato e un GUID definisce la categoria di impostazioni di VSPackage. Un pacchetto VSPackage può supportare più categorie di impostazioni, ognuno definito da un punto di impostazioni personalizzato.
 
--   Le implementazioni di impostazioni che si basano sugli assembly di interoperabilità (usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) devono creare punto di impostazioni personalizzato modificando il Registro di sistema o utilizzando uno script di registrazione (file con estensione RGS). Per altre informazioni, vedere [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).  
+-   Le implementazioni di impostazioni che si basano sugli assembly di interoperabilità (usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) devono creare punto di impostazioni personalizzato modificando il Registro di sistema o utilizzando uno script di registrazione (file con estensione RGS). Per altre informazioni, vedere [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
--   Codice che usa il Framework di pacchetto gestito (MPF) debba creare punti di impostazioni personalizzati collegando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage per ogni punto di impostazioni personalizzato.  
+-   Codice che usa il Framework di pacchetto gestito (MPF) debba creare punti di impostazioni personalizzati collegando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage per ogni punto di impostazioni personalizzato.
 
-     Se un pacchetto VSPackage singolo supporta diversi punti di impostazioni personalizzati, ogni punto di impostazioni personalizzato viene implementato da una classe distinta e ciascuno viene registrato da un'istanza univoca del <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Di conseguenza, le impostazioni di implementazione della classe possono supportare più di una categoria di impostazioni.  
+     Se un pacchetto VSPackage singolo supporta diversi punti di impostazioni personalizzati, ogni punto di impostazioni personalizzato viene implementato da una classe distinta e ciascuno viene registrato da un'istanza univoca del <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Di conseguenza, le impostazioni di implementazione della classe possono supportare più di una categoria di impostazioni.
 
-## <a name="custom-settings-point-registry-entry-details"></a>Dettagli delle voci del Registro di sistema di punto di impostazioni personalizzate  
- Punti di impostazioni personalizzati vengono creati in una voce del Registro di sistema nel percorso seguente: HKLM\Software\Microsoft\VisualStudio\\*\<versione >* \UserSettings\\`<CSPName>`, dove `<CSPName>` è il nome del punto di impostazioni personalizzato supporta il pacchetto VSPackage e  *\<versione >* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ad esempio 8.0.  
+## <a name="custom-settings-point-registry-entry-details"></a>Dettagli delle voci del Registro di sistema di punto di impostazioni personalizzate
+ Punti di impostazioni personalizzati vengono creati in una voce del Registro di sistema nel percorso seguente: HKLM\Software\Microsoft\VisualStudio\\*\<versione >* \UserSettings\\`<CSPName>`, dove `<CSPName>` è il nome del punto di impostazioni personalizzato supporta il pacchetto VSPackage e  *\<versione >* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ad esempio 8.0.
 
 > [!NOTE]
->  Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sostituito con un'alternativa radice quando il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è ambiente di sviluppo integrato (IDE) inizializzato. Per altre informazioni, vedere [opzioni della riga di comando](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+>  Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sostituito con un'alternativa radice quando il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è ambiente di sviluppo integrato (IDE) inizializzato. Per altre informazioni, vedere [opzioni della riga di comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
- La struttura della voce del Registro di sistema è illustrata di seguito:  
+ La struttura della voce del Registro di sistema è illustrata di seguito:
 
- HKLM\Software\Microsoft\VisualStudio\\*\<versione >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<versione >* \UserSettings\
 
- `<CSPName`> = '#12345' s  
+ `<CSPName`> = '#12345' s
 
- Pacchetto = '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}'  
+ Pacchetto = '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}'
 
- Categoria = '{YYYY YYYYYY aaaa aaaa YYYYYYYYY}'  
+ Categoria = '{YYYY YYYYYY aaaa aaaa YYYYYYYYY}'
 
- ResourcePackage = '{ZZZZ ZZZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = '{ZZZZ ZZZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
 
- AlternateParent = CategoryName  
+ AlternateParent = CategoryName
 
 
 | nome | Tipo | Dati | Descrizione |

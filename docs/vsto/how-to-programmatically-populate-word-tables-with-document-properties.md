@@ -13,88 +13,88 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfc5885ffc3c16c937781b991e1d8d83b632bbb6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862850"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631588"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: A livello di codice compilare tabelle di Word con le proprietà documento
-  L'esempio seguente crea una tabella di Microsoft Office Word nella parte superiore del documento e la popola con le proprietà del documento host.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="populate-tables-in-a-document-level-customization"></a>Popolare le tabelle in una personalizzazione a livello di documento  
-  
-### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento  
-  
-1. Impostare l'intervallo nella parte superiore del documento.  
-  
+  L'esempio seguente crea una tabella di Microsoft Office Word nella parte superiore del documento e la popola con le proprietà del documento host.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="populate-tables-in-a-document-level-customization"></a>Popolare le tabelle in una personalizzazione a livello di documento
+
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento
+
+1. Impostare l'intervallo nella parte superiore del documento.
+
     [!code-vb[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#90)]
-    [!code-csharp[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#90)]  
-  
-2. Inserire un titolo per la tabella e includere i segni di paragrafo.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#90)]
+
+2. Inserire un titolo per la tabella e includere i segni di paragrafo.
+
     [!code-vb[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#91)]
-    [!code-csharp[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#91)]  
-  
-3. Aggiungere la tabella al documento nell'intervallo.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#91)]
+
+3. Aggiungere la tabella al documento nell'intervallo.
+
     [!code-vb[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#92)]
-    [!code-csharp[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#92)]  
-  
-4. Formattare la tabella e applicare uno stile.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#92)]
+
+4. Formattare la tabella e applicare uno stile.
+
     [!code-vb[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#93)]
-    [!code-csharp[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#93)]  
-  
-5. Inserire le proprietà del documento nelle celle.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#93)]
+
+5. Inserire le proprietà del documento nelle celle.
+
     [!code-vb[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#94)]
-    [!code-csharp[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#94)]  
-  
-   L'esempio seguente mostra la procedura completa. Per usare questo codice, eseguirlo dalla classe `ThisDocument` nel progetto.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#94)]
+
+   L'esempio seguente mostra la procedura completa. Per usare questo codice, eseguirlo dalla classe `ThisDocument` nel progetto.
+
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
-   [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
-  
-## <a name="populate-tables-in-a-vsto-add-in"></a>Popolare le tabelle in un componente aggiuntivo VSTO  
-  
-### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento  
-  
-1. Impostare l'intervallo nella parte superiore del documento.  
-  
+   [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
+
+## <a name="populate-tables-in-a-vsto-add-in"></a>Popolare le tabelle in un componente aggiuntivo VSTO
+
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento
+
+1. Impostare l'intervallo nella parte superiore del documento.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#90)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#90)]  
-  
-2. Inserire un titolo per la tabella e includere i segni di paragrafo.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#90)]
+
+2. Inserire un titolo per la tabella e includere i segni di paragrafo.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#91)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#91)]  
-  
-3. Aggiungere la tabella al documento nell'intervallo.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#91)]
+
+3. Aggiungere la tabella al documento nell'intervallo.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#92)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#92)]  
-  
-4. Formattare la tabella e applicare uno stile.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#92)]
+
+4. Formattare la tabella e applicare uno stile.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#93)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#93)]  
-  
-5. Inserire le proprietà del documento nelle celle.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#93)]
+
+5. Inserire le proprietà del documento nelle celle.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#94)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#94)]  
-  
-   L'esempio seguente mostra la procedura completa. Per usare questo codice, eseguirlo dalla classe `ThisAddIn` nel progetto.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#94)]
+
+   L'esempio seguente mostra la procedura completa. Per usare questo codice, eseguirlo dalla classe `ThisAddIn` nel progetto.
+
    [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
-   [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: A livello di codice, creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md)   
- [Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
+   [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: A livello di codice, creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md)
+- [Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
