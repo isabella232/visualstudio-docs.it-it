@@ -13,38 +13,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 670c4855806dcc5d781da8479963f6705ba99fd3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 3e31e5307acb8dadd627cc0a7a0c65572c7ab219
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869148"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653983"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Procedura: A livello di codice aprire documenti esistenti
-  Il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo apre il documento di Microsoft Office Word esistente, specificato da un nome di file e percorso completo. Questo metodo restituisce un <xref:Microsoft.Office.Interop.Word.Document> che rappresenta il documento aperto.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="to-open-a-document"></a>Per aprire un documento  
-  
--   Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo di <xref:Microsoft.Office.Interop.Word.Documents> raccolta e specificare un percorso del documento.  
-  
+  Il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo apre il documento di Microsoft Office Word esistente, specificato da un nome di file e percorso completo. Questo metodo restituisce un <xref:Microsoft.Office.Interop.Word.Document> che rappresenta il documento aperto.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="to-open-a-document"></a>Per aprire un documento
+
+-   Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo di <xref:Microsoft.Office.Interop.Word.Documents> raccolta e specificare un percorso del documento.
+
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
-     [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]  
-  
-## <a name="to-open-a-document-as-read-only"></a>Per aprire un documento in sola lettura  
-  
--   Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo, fornire un percorso del documento e impostare il *ReadOnly* argomento **True** nella chiamata al metodo.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
+
+## <a name="to-open-a-document-as-read-only"></a>Per aprire un documento in sola lettura
+
+-   Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo, fornire un percorso del documento e impostare il *ReadOnly* argomento **True** nella chiamata al metodo.
+
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
-     [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]  
-  
-## <a name="compile-the-code"></a>Compilare il codice  
- Questo esempio di codice presenta i requisiti seguenti:  
-  
--   Un documento denominato *NewDocument. doc* deve essere presente in una directory denominata *Test* nell'unità C.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)   
- [Procedura: Chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)   
- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
+
+## <a name="compile-the-code"></a>Compilare il codice
+ Questo esempio di codice presenta i requisiti seguenti:
+
+-   Un documento denominato *NewDocument. doc* deve essere presente in una directory denominata *Test* nell'unità C.
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)
+- [Procedura: Chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

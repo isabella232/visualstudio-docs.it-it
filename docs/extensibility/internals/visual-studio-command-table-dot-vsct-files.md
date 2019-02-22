@@ -11,37 +11,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc265778fcc159a860bda9aa2d7ddafc5342dbd9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 48196badc0d10435760a8af7ac5029e83d9de232
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927307"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630977"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>File Visual Studio Command Table (con estensione vsct)
-Un file di configurazione di tabella comandi è un file di testo che descrive il set di comandi che contiene un pacchetto VSPackage. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando compilatore tabella (VSCT) compila i file di configurazione basato su XML (file con estensione vsct) in file di output (con estensione CTO) tabella comando binary. I file con estensione CTO risultanti sono identici a quelli che vengono creati tramite il compilatore di tabella (CTC) comandi per compilare i file di configurazione con estensione CTC. Tuttavia, i file con estensione vsct basato su XML presenta alcuni vantaggi, ad esempio un editor XML e XML IntelliSense.  
-  
- Per altre informazioni sulla sintassi e semantica dei file con estensione vsct, vedere [Progettazione tabella comandi XML (. File Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Progettazione di file (con estensione vsct) della tabella di comandi XML](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
- Descrive come progettare i file con estensione vsct.  
-  
- [Procedura: Creare una. File Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
- Confronta i metodi per la creazione di un file con estensione vsct. Descrive il processo per la creazione manuale di un nuovo file con estensione vsct.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Riferimenti sullo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
- Fornisce informazioni dettagliate su ogni sezione del file di configurazione XML di tabella comandi.  
-  
- [Command Table Configuration (. File CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c)  
- Viene presentata una panoramica del formato di file con estensione CTC deprecate.  
-  
- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Descrive la specifica di formato di tabella comandi.  
-  
- [Risorse nei pacchetti VSPackage](../../extensibility/internals/resources-in-vspackages.md)  
- Viene descritto come usare le risorse gestite e nei pacchetti VSPackage gestiti.  
-  
- [Comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)  
+Un file di configurazione di tabella comandi è un file di testo che descrive il set di comandi che contiene un pacchetto VSPackage. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando compilatore tabella (VSCT) compila i file di configurazione basato su XML (file con estensione vsct) in file di output (con estensione CTO) tabella comando binary. I file con estensione CTO risultanti sono identici a quelli che vengono creati tramite il compilatore di tabella (CTC) comandi per compilare i file di configurazione con estensione CTC. Tuttavia, i file con estensione vsct basato su XML presenta alcuni vantaggi, ad esempio un editor XML e XML IntelliSense.
+
+ Per altre informazioni sulla sintassi e semantica dei file con estensione vsct, vedere [Progettazione tabella comandi XML (. File Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+
+## <a name="in-this-section"></a>In questa sezione
+ [Progettazione di file (con estensione vsct) della tabella di comandi XML](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+
+ Descrive come progettare i file con estensione vsct.
+
+ [Procedura: Creare una. File Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
+
+ Confronta i metodi per la creazione di un file con estensione vsct. Descrive il processo per la creazione manuale di un nuovo file con estensione vsct.
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Riferimenti sullo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+
+ Fornisce informazioni dettagliate su ogni sezione del file di configurazione XML di tabella comandi.
+
+ [Command Table Configuration (. File CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) viene presentata una panoramica del formato di file con estensione CTC deprecate.
+
+ [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+
+ Descrive la specifica di formato di tabella comandi.
+
+ [Risorse nei pacchetti VSPackage](../../extensibility/internals/resources-in-vspackages.md)
+
+ Viene descritto come usare le risorse gestite e nei pacchetti VSPackage gestiti.
+
+ [Comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  Spiega come creare un'interfaccia utente che include menu, barre degli strumenti e caselle combinate di comandi.

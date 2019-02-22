@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa5817bb7c20cf58457281667dda76ac43608647
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875338"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607023"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: Creare una web part per SharePoint tramite una finestra di progettazione
 
@@ -187,6 +187,6 @@ Gli eventi da tutti i calendari specificati vengono visualizzati nella visualizz
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Procedura: Creare una web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[come: Creare una web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

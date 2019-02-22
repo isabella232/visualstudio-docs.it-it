@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a80212a2de88a5896caf0b655b9710afbce096f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005956"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598999"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
-In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in controllo di origine al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Il controllo del codice sorgente pacchetto VSPackage implementa alcune di queste interfacce e usato da altri utenti per eseguire attività di controllo di origine.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfacce implementate da e per pacchetti VSPackage di controllo di origine  
- Le interfacce seguenti sono descritti nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], e il controllo del codice sorgente pacchetto VSPackage implementa un subset di essi a seconda del relativo set di funzionalità desiderate. Alcune interfacce sono contrassegnate come obbligatorio e deve essere implementata da ogni controllo del codice sorgente VSPackage.  
-  
- Per tali interfacce che non implementa un pacchetto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce un'implementazione predefinita. Si noti che l'implementazione predefinita è progettato per il caso in cui non è registrato alcun pacchetto VSPackage e nessun progetto sono controllato. Un controllo del codice sorgente scritto correttamente. pacchetto VSPackage implementa le interfacce di tutte le necessarie anziché lasciarla per l'implementazione predefinita di tali interfacce.  
-  
- Un controllo del codice sorgente VSPackage deve implementare un servizio privato che incapsula alcune o tutte le interfacce seguenti.  
-  
- Le interfacce sono:  
-  
--   Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.  
-  
--   Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.  
-  
--   Facoltativo: l'entità può implementare questa interfaccia per fornire un set di funzionalità più avanzato.  
-  
+In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in controllo di origine al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Il controllo del codice sorgente pacchetto VSPackage implementa alcune di queste interfacce e usato da altri utenti per eseguire attività di controllo di origine.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfacce implementate da e per pacchetti VSPackage di controllo di origine
+ Le interfacce seguenti sono descritti nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], e il controllo del codice sorgente pacchetto VSPackage implementa un subset di essi a seconda del relativo set di funzionalità desiderate. Alcune interfacce sono contrassegnate come obbligatorio e deve essere implementata da ogni controllo del codice sorgente VSPackage.
+
+ Per tali interfacce che non implementa un pacchetto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce un'implementazione predefinita. Si noti che l'implementazione predefinita è progettato per il caso in cui non è registrato alcun pacchetto VSPackage e nessun progetto sono controllato. Un controllo del codice sorgente scritto correttamente. pacchetto VSPackage implementa le interfacce di tutte le necessarie anziché lasciarla per l'implementazione predefinita di tali interfacce.
+
+ Un controllo del codice sorgente VSPackage deve implementare un servizio privato che incapsula alcune o tutte le interfacce seguenti.
+
+ Le interfacce sono:
+
+-   Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.
+
+-   Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.
+
+-   Facoltativo: l'entità può implementare questa interfaccia per fornire un set di funzionalità più avanzato.
+
 | Interfaccia | Scopo | Implementato da | Implementare? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Editor di chiamare questa interfaccia prima di modificare o salvare un file. Il controllo del codice sorgente pacchetto VSPackage può estrarre il file o nega l'operazione se l'estrazione ha esito negativo. | Controllo del codice sorgente VSPackage | Consigliato |
@@ -60,6 +60,6 @@ In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Questa interfaccia viene utilizzata per salvare l'origine delle impostazioni di controllo nel file di soluzione (sln). Le impostazioni includono il percorso e flag di stato di controllo di origine. | Controllo del codice sorgente VSPackage | Consigliato |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Questa interfaccia viene utilizzata per salvare le impostazioni di controllo di origine nel file di opzioni (con estensione suo) della soluzione. Ciò può includere impostazioni di controllo di origine specifici dell'utente, ad esempio posizione di inserimento dell'utente corrente. | Controllo del codice sorgente VSPackage | Consigliato |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Questa interfaccia viene utilizzata per monitorare gli eventi per eseguire operazioni quali l'archiviazione dei file di progetto prima della chiusura di soluzioni, o per ottenere nuovi file dal controllo del codice sorgente quando si apre un progetto. | Controllo del codice sorgente VSPackage | Consigliato |
-  
-## <a name="see-also"></a>Vedere anche  
- [Elementi di progettazione](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Elementi di progettazione](../../extensibility/internals/source-control-vspackage-design-elements.md)

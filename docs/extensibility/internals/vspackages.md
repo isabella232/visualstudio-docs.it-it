@@ -10,24 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b6fdb8f7eda6dd5a23c7c5653c8f7d5c2ec157
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77ceb38f50e47fe56fdb164ed0ea6330b776db3d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599455"
 ---
 # <a name="vspackages"></a>VSPackages
-I VSPackage sono moduli software che estendono il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) fornendo elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Definizione del percorso di file VSPackage nella shell di Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Viene illustrato come specificare il percorso del pacchetto VSPackage nella shell di Visual Studio.  
-  
- [Risorse nei pacchetti VSPackage](../../extensibility/internals/resources-in-vspackages.md)  
- Viene illustrato come gestire le risorse nei pacchetti VSPackage.  
-  
- [Procedure consigliate per la sicurezza nei pacchetti VSPackage](../../extensibility/internals/best-practices-for-security-in-vspackages.md)  
- Consente di creare prodotti più sicuri grazie alla conoscenza delle vulnerabilità di sicurezza.  
-  
+I VSPackage sono moduli software che estendono il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) fornendo elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione.
+
+## <a name="in-this-section"></a>In questa sezione
+- [Definizione del percorso di file VSPackage nella shell di Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
+
+ Viene illustrato come specificare il percorso del pacchetto VSPackage nella shell di Visual Studio.
+
+- [Risorse nei pacchetti VSPackage](../../extensibility/internals/resources-in-vspackages.md)
+
+ Viene illustrato come gestire le risorse nei pacchetti VSPackage.
+
+- [Procedure consigliate per la sicurezza nei pacchetti VSPackage](../../extensibility/internals/best-practices-for-security-in-vspackages.md)
+
+ Consente di creare prodotti più sicuri grazie alla conoscenza delle vulnerabilità di sicurezza.
+
 ## <a name="related-sections"></a>Sezioni correlate
